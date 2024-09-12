@@ -37,7 +37,7 @@ Use of Microsoft 365 Copilot and Microsoft Copilot involves prompts (entered by 
 
 - **Your data is private:** We won’t use your data except as you instruct. Our commitments to [privacy](https://www.microsoft.com/trust-center/privacy) include support for [GDPR](/compliance/regulatory/gdpr), [ISO/IEC 27018](/compliance/regulatory/offering-ISO-27018)<sup>[2]</sup>, and our [Data Protection Addendum](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA).
 
-- **Your access controls and policies apply to Copilot:** Copilot respects your [identity model](microsoft-365-copilot-privacy.md#how-does-microsoft-365-copilot-protect-organizational-data) and [permissions](microsoft-365-copilot-privacy.md#how-does-microsoft-365--copilot-use-your-proprietary-organizational-data), inherits your [sensitivity labels](/purview/sensitivity-labels#sensitivity-labels-and-microsoft-365-copilot), applies your [retention](/purview/retention-policies-copilot) policies, supports [audit](/purview/audit-search?tabs=microsoft-purview-portal) of interactions, and follows your administrative settings. The specific controls and policies will vary depending on the underlying subscription plan.
+- **Your access controls and policies apply to Copilot:** Copilot respects your [identity model](microsoft-365-copilot-privacy.md#how-does-microsoft-365-copilot-protect-organizational-data) and [permissions](microsoft-365-copilot-privacy.md#how-does-microsoft-365-copilot-use-your-proprietary-organizational-data), inherits your [sensitivity labels](/purview/sensitivity-labels#sensitivity-labels-and-microsoft-365-copilot), applies your [retention](/purview/retention-policies-copilot) policies, supports [audit](/purview/audit-search?tabs=microsoft-purview-portal) of interactions, and follows your administrative settings. The specific controls and policies will vary depending on the underlying subscription plan.
 
 - **You're protected against AI security risks:** We help safeguard against AI-focused risks such as [harmful content](microsoft-365-copilot-privacy.md#how-does-copilot-block-harmful-content) and [prompt injections](microsoft-365-copilot-privacy.md#does-copilot-block-prompt-injections-jailbreak-attacks).
 
@@ -61,6 +61,7 @@ In addition to prompts and responses, web search queries (different from Microso
 - The Bing search service operates separately from Microsoft 365 and has different data-handling practices covered by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) between each user and Microsoft, together with the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement). The means that Microsoft acts as an independent data controller responsible for complying with all applicable laws and controller obligations. This approach is consistent with other [optional connected experiences that rely on Bing](/microsoft-365-apps/privacy/optional-connected-experiences#experiences-that-rely-on-bing).  
 
 - [Learn more about data, privacy, and security of web queries](manage-public-web-access.md)
+
 
 ## Copilot plugins in Microsoft 365 Copilot
 

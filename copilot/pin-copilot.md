@@ -51,7 +51,7 @@ Administrators can change this behavior by selecting an option for pinning Micro
 :::image type="content" source="media/copilot-not-pin.png" alt-text="Screenshot showing the option to not Pin Copilot to the navigation bar.":::
 
 > [!NOTE]
-> Users with a license for Copilot for Microsoft 365 will have it pinned by default.
+> Users with a license for Microsoft 365 Copilot will have it pinned by default.
 
 ## User experience
 
@@ -71,6 +71,6 @@ To learn more about the Microsoft Copilot announcement, see [Frequently asked qu
 
 ## More resources
 
-- [Data, Privacy, and Security for Microsoft Copilot for Microsoft 365](microsoft-365-copilot-privacy.md)
-- [Copilot for Microsoft 365 technical documentation hub](index.yml)
+- [Data, Privacy, and Security for Microsoft 365 Copilot](microsoft-365-copilot-privacy.md)
+- [Microsoft 365 Copilot technical documentation hub](index.yml)
 - [Copilot Lab](https://copilot.cloud.microsoft/)
