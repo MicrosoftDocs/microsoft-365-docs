@@ -150,13 +150,13 @@ If you turn off connected experiences that analyze your content on Windows or Ma
 - OneNote
 - Word
 
-Similarly, Microsoft 365 Copilot features in those apps on Windows or Mac devices won’t be available if you turn off the use of connected experiences for Microsoft 365 Apps.
+There is also a privacy control that turns off all connected experiences, including connected experiences that analyze your content. If you use that privacy control, Microsoft 365 Copilot features won’t be available for certain apps on certain devices as described above.
 
 #### Privacy control for optional connected experiences
 
 If you turn off optional connected experiences in your organization, Microsoft 365 Copilot features that are optional connected experiences won’t be available to your users. For example, [web grounding](manage-public-web-access.md) won’t be available to your users. For a list of Microsoft 365 Copilot features that are optional connected experiences, see [Overview of optional connected experiences in Office](/microsoft-365-apps/privacy/optional-connected-experiences).
 
-Similarly, Microsoft 365 Copilot features that are optional connected experiences won’t be available if you turn off the use of connected experiences in Microsoft 365 Apps.
+There is also a privacy control that turns off all connected experiences, including optional connected experiences. If you use that privacy control, Microsoft 365 Copilot features that are optional connected experiences won’t be available.
 
 ### About the content that Microsoft 365 Copilot creates
 
