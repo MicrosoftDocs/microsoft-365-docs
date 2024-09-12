@@ -9,7 +9,6 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
 - scotvorg
-- essentials-manage
 description: "Learn how to notify staff when an appointment or booking is created or updated." 
 ---
 

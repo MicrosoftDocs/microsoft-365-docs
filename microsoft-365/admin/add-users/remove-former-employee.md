@@ -39,8 +39,6 @@ A question we often get is, "What should I do to secure data and protect access 
 
 ## Before you begin
 
-You need to be a global administrator to complete the steps in this solution.
-
 To complete the steps in this series, you use these Microsoft 365 capabilities and features.
 
 |Product or component|Capability or feature|

@@ -16,6 +16,7 @@ metadata:
   author: samanro #Required; your GitHub user alias, with correct capitalization.
   ms.author: samanro #Required; microsoft alias of author; optional team alias.
   ms.date: 09/21/2023 #Required; mm/dd/yyyy format.
+  ms.custom: [copilot-learning-hub]
 
 
 # additionalContent section (Optional; Remove if not applicable.)
@@ -69,6 +70,8 @@ additionalContent:
               url: /purview/ai-microsoft-purview
             - text: Isolation controls
               url: /compliance/assurance/assurance-microsoft-365-isolation-controls
+            - text: Transparency Note
+              url: microsoft-365-copilot-transparency-note.md  
         # Card
         - title: Manage Copilot for Microsoft 365
           links:
@@ -102,10 +105,12 @@ additionalContent:
 #            - text: Copilot for Microsoft 365 - Security & Privacy
 #              url: index.yml
         # Card
-        - title: End user Copilot resources
+        - title: Resources for your end users
           links:
             - text: Copilot Lab
               url: https://copilot.cloud.microsoft
+            - text: Microsoft Copilot Academy
+              url: /viva/learning/academy-copilot/
 #            - text: Use additional data sources with Microsoft 365 Chat
 #              url: https://go.microsoft.com/fwlink/?linkid=2250210
         # Card

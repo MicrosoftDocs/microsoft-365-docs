@@ -29,7 +29,7 @@ Both methods use cross-tenant synchronization in Microsoft Entra ID.
 
 If you want to synchronize the same users with all the other tenants in a multitenant organization, we recommend sharing users in the Microsoft 365 admin center. This creates the necessary configurations in Microsoft Entra ID for you.
 
-If you want to synchronize different users to different tenants or synchronize Entra groups, then you must configure cross-tenant synchronization directly in Microsoft Entra ID.
+If you want to synchronize different users to different tenants or use Entra groups to determine which users are in scope for provisioning, then you must configure cross-tenant synchronization directly in Microsoft Entra ID.
 
 While you can create multiple cross-tenant synchronization configurations for a single external tenant, we recommend that you only use one for ease of administration.
 
