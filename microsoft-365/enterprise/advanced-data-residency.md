@@ -4,14 +4,13 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.reviewer: deanw
-ms.date: 02/29/2024
+ms.date: 09/05/2024
 audience: ITPro
 ms.topic: overview
 ms.service: microsoft-365-enterprise
 ms.subservice: advanced-data-residency
 ms.collection:
 - must-keep
-- essentials-overview
 ms.localizationpriority: medium
 search.appverid:
 - MET150
