@@ -115,8 +115,8 @@ To ensure data is secure, review SharePoint site access and permissions. Priorit
 
 ✅ ??What about OneDrive??
 
-https://learn.microsoft.com/en-us/sharepoint/change-external-sharing-site
-https://learn.microsoft.com/en-us/sharepoint/user-external-sharing-settings
+[change external sharing](/sharepoint/change-external-sharing-site)
+[external sharing settings](/sharepoint/user-external-sharing-settings)
 
 ### Copilot and multiple account access
 
