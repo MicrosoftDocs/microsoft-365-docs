@@ -40,7 +40,7 @@ This method requires a one-time setup by the administrator.
 1. Enable the inherited dev key for the **Microsoft Teams Assignments** app in the list.  There will be two versions of the Microsoft Teams Assignments app listed: 
      - To deploy the app visible in the Course Navigation for all courses by default, enable the **"Microsoft Teams Assignments"** app with ID **170000000001876**
      - To deploy the app with the Course Navigation placement hidden by default, enable the **"Microsoft Teams Assignments (Course Nav Disabled)"** app with ID **170000000001877**
-1. Toggle the **State** switch to **On** for the option navigation visible state option you wish to deploy.
+1. Toggle the **State** switch to **On** for the app version you wish to deploy.
 1. Copy the ID you've enabled to the clipboard: You will need this app ID in step 12 below (or Option 2 step 4).
 1. Select the **OK** button to confirm your choice.
 1. In the **Admin** navigation, select the **Settings** link, and then choose the **Apps** tab.
