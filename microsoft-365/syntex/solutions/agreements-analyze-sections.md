@@ -40,9 +40,9 @@ To analyze the section revisions, follow these steps:
 
     Selecting **View details** provides further information on the revised section. It contains three parts:
 
-       - **Text difference** – Shows the changes made to the modified section.
-       - **Summary** – Provides an AI-generated summary of the changes made to the section.
-       - **Suggestions** – Provides suggestions to align the revised section with the source template.
+    - **Text difference** – Shows the changes made to the modified section.
+    - **Summary** – Provides an AI-generated summary of the changes made to the section.
+    - **Suggestions** – Provides suggestions to align the revised section with the source template.
 
 5. After you make changes in the relevant section’s details pane, select **Refresh results** to see the latest analysis.
 
