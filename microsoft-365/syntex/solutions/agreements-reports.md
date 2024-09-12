@@ -26,18 +26,17 @@ The **Report** tab in the Agreements app provides a comprehensive overview of al
 
 There are six reports available in the Agreements app. They are:
 
-- Split of agreements by category showing the number of agreements in every category.
+- **Categories** – Split of agreements by category showing the number of agreements in every category.
 
-- Split of agreements that are in progress across draft & approval stages.
+- **In-progress agreements** – Split of agreements that are in progress across draft and approval stages.
 
-- Split of agreements that are active, about to expire soon or expired.
+- **Signed agreements** – Split of agreements that are active, about to expire soon, or expired.
 
-- List of top five first parties by number of agreements.
+- **Top 5 first parties** – List of top five first parties by number of agreements.
 
-- List of top five second parties by number of agreements.
+- **Top 5 second parties** – List of top five second parties by number of agreements.
 
-- Split of agreements that will expire within four years.
-
+- **Agreements expiring within 4 years** – Split of agreements that will expire within four years.
 
 <br>
 
