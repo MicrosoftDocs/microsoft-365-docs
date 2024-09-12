@@ -22,7 +22,7 @@ By installing and using the Teams Assignments LTI, educators and students can tr
 
 ## Deploy the Teams Assignments app in Schoology Learning
 
-1. Access the **Teams Assignments** app in the [**App Center**](https://app.schoology.com/apps) by copying this direct link into a browser  'https://_\<apps\>_.schoology.com/apps/profile/7314774244'  and replacing the _\<apps\>_  portion of the URL with your organizations custom subdomain (for example:  districtXYZ.schoology.com/apps/profile/7314774244). Then browse to the app store profile.
+1. Access the **Teams Assignments** app in the [**App Center**](https://app.schoology.com/apps) by copying this direct link into a browser: 'https://_\<apps\>_.schoology.com/apps/profile/7314774244' and replacing the _\<apps\>_ portion of the URL with your organizations custom subdomain (for example: districtXYZ.schoology.com/apps/profile/7314774244). Then browse to the app store profile.
 
 1. Select **Login** in the upper right to log into your Schoology Learning instance as an administrator with access to install and configure the app.
 
