@@ -22,6 +22,9 @@ ms.date:
 
 # Limit access to Microsoft Teams when frontline workers are off shift
 
+> [!NOTE]
+> This feature is currently being rolled out and might not be available in your organization yet. To stay on top of upcoming Teams features, check out the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap).
+
 ## Overview
 
 Working time is a feature that allows admins to limit access to Microsoft Teams for shift workers on Android and iOS mobile devices. These controls are designed for bring-your-own-device (BYOD) or company-owned dedicated device scenarios for frontline workers. [Learn more about frontline device scenarios](flw-devices.md#deployment-models).
