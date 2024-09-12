@@ -22,7 +22,7 @@ ms.custom: [copilot-learning-hub]
 Microsoft 365 Copilot is a sophisticated processing and orchestration engine that provides AI-powered productivity capabilities by coordinating the following components:
 
 - Large language models (LLMs)
-- Content in Microsoft Graphs, such as emails, chats, and documents that you have permission to access.
+- Content in Microsoft Graph, such as emails, chats, and documents that you have permission to access.
 - The Microsoft 365 productivity apps that you use every day, such as Word and PowerPoint.
 
 For an overview of how these three components work together, see [Microsoft 365 Copilot overview](microsoft-365-copilot-overview.md). For links to other content related to Microsoft 365 Copilot, see [Microsoft 365 Copilot documentation](index.yml).
