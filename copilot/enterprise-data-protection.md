@@ -60,7 +60,7 @@ In addition to prompts and responses, web search queries (different from Microso
 
 - The Bing search service operates separately from Microsoft 365 and has different data-handling practices covered by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) between each user and Microsoft, together with the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement). The means that Microsoft acts as an independent data controller responsible for complying with all applicable laws and controller obligations. This approach is consistent with other [optional connected experiences that rely on Bing](/microsoft-365-apps/privacy/optional-connected-experiences#experiences-that-rely-on-bing).  
 
-- [Learn more about data, privacy, and security of web queries](manage-public-web-access.md)
+- [Learn more about data, privacy, and security of web queries in Microsoft 365 Copilot and Microsoft Copilot](manage-public-web-access.md)
 
 
 ## Copilot plugins in Microsoft 365 Copilot
