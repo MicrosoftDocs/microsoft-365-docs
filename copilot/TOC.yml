@@ -1,18 +1,14 @@
-- name: Microsoft Copilot for Microsoft 365 documentation
+- name: Microsoft 365 Copilot documentation
   href: index.yml
   items:
     - name: Get started
       items:
         - name: Overview of Microsoft 365 Copilot 
           href: microsoft-365-copilot-overview.md
-        - name: "Get ready: Prepare your data and environment"
-          href: microsoft-365-copilot-get-ready.md
         - name: Set up Microsoft 365 Copilot
           href: microsoft-365-copilot-setup.md
     - name: Deploy and enable
       items: 
-        - name: Pilot key scenarios to create critical mass
-          href: microsoft-365-copilot-pilot.md
         - name: Requirements for Microsoft 365 Copilot
           href: microsoft-365-copilot-requirements.md
         - name: Understand licensing for Microsoft 365 Copilot
@@ -41,7 +37,7 @@
           href: /viva/goals/copilot-intro?bc=/microsoft-365/copilot/breadcrumb/toc.json&toc=/microsoft-365/copilot/toc.json
     - name: "Trust: Data, Privacy, and Security"
       items:
-        - name: Data, privacy, and security for Microsoft Copilot for Microsoft 365
+        - name: Data, privacy, and security for Microsoft 365 Copilot
           href: microsoft-365-copilot-privacy.md
         - name: Data, privacy, and security for web queries in Microsoft 365 Copilot
           href: manage-public-web-access.md
@@ -49,10 +45,6 @@
           href: /security/zero-trust/zero-trust-microsoft-365-copilot?bc=/microsoft-365/copilot/breadcrumb/toc.json&toc=/microsoft-365/copilot/toc.json
         - name: Enterprise data protection
           href: enterprise-data-protection.md
-        - name: FAQ
-          href: microsoft-365-copilot-faq.yml
-        - name: Microsoft 365 Copilot and Responsible AI
-          href: microsoft-365-copilot-responsible-ai.md
         - name: Transparency Note
           href: microsoft-365-copilot-transparency-note.md    
     - name: Extend and build

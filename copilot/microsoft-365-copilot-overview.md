@@ -36,7 +36,7 @@ Microsoft 365 Copilot:
 
 To learn more, see:
 
-- [Your new way of working: Copilot for Microsoft 365](https://www.microsoft.com/microsoft-365/blog/2024/03/28/your-new-way-of-working-copilot-for-microsoft-365)
+- [Your new way of working: Microsoft 365 Copilot](https://www.microsoft.com/microsoft-365/blog/2024/03/28/your-new-way-of-working-copilot-for-microsoft-365)
 - [Microsoft 365 Copilot intro](https://www.microsoft.com/microsoft-365/business/copilot-for-microsoft-365)
 
 This article describes how Microsoft 365 Copilot works, the components it uses, and the Copilot features in Microsoft 365 apps.
@@ -57,7 +57,7 @@ Let's take a look:
 
     Copilot only accesses data that an individual user is authorized to access, based on, for example, existing Microsoft 365 role-based access controls. Copilot doesn't access data that the user doesn't have permission to access.
 
-    To learn more, see [Data stored about user interactions with Microsoft Copilot for Microsoft 365](microsoft-365-copilot-privacy.md#data-stored-about-user-interactions-with-microsoft-copilot-for-microsoft-365).
+    To learn more, see [Data stored about user interactions with Microsoft 365 Copilot](microsoft-365-copilot-privacy.md#data-stored-about-user-interactions-with-microsoft-copilot-for-microsoft-365).
 
 3. Copilot sends the grounded prompt to the LLM. The LLM uses the prompt to generate a response that is contextually relevant to the user's task.
 

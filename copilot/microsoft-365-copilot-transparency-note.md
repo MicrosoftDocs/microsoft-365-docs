@@ -1,6 +1,6 @@
 ---
-title: "Transparency Note for Copilot for Microsoft 365"
-description: "Transparency Note for Copilot for Microsoft 365"
+title: "Transparency Note for Microsoft 365 Copilot"
+description: "Transparency Note for Microsoft 365 Copilot"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -16,7 +16,7 @@ hideEdit: true
 ms.date: 09/03/2024
 ---
 
-# Transparency Note for Copilot for Microsoft 365
+# Transparency Note for Microsoft 365 Copilot
 
 ## What is a Transparency Note?
 
@@ -24,13 +24,13 @@ An AI system includes not only the technology, but also the people who will use 
 
 Microsoft's Transparency Notes are part of a broader effort at Microsoft to put our AI Principles into practice. To find out more, see the [Microsoft AI principles](https://www.microsoft.com/ai/responsible-ai).
 
-## The Basics of Copilot for Microsoft 365
+## The Basics of Microsoft 365 Copilot
 
 ### Introduction
 
-[Copilot for Microsoft 365](microsoft-365-copilot-overview.md) is an AI-powered productivity tool that uses large language models (LLMs) and integrates data with [Microsoft Graph](/graph/) and Microsoft 365 apps and services. It works alongside popular Microsoft 365 apps such as Word, Excel, PowerPoint, Outlook, Teams, and more.
+[Microsoft 365 Copilot](microsoft-365-copilot-overview.md) is an AI-powered productivity tool that uses large language models (LLMs) and integrates data with [Microsoft Graph](/graph/) and Microsoft 365 apps and services. It works alongside popular Microsoft 365 apps such as Word, Excel, PowerPoint, Outlook, Teams, and more.
 
-Copilot for Microsoft 365 uses a combination of models provided by Azure OpenAI Service. This allows us to match the specific needs of each feature – for example, speed, creativity – to the right model, so that Copilot for Microsoft 365 can provide real-time intelligent assistance that enables users to enhance their creativity, productivity, and skills.
+Microsoft 365 Copilot uses a combination of models provided by Azure OpenAI Service. This allows us to match the specific needs of each feature – for example, speed, creativity – to the right model, so that Microsoft 365 Copilot can provide real-time intelligent assistance that enables users to enhance their creativity, productivity, and skills.
 
 For additional, detailed information about the LLMs provided to Microsoft by OpenAI, refer to their public documentation, available at [Models - OpenAI API](https://platform.openai.com/docs/models).
 
@@ -38,19 +38,19 @@ For additional, detailed information about the LLMs provided to Microsoft by Ope
 
 |Term  |Description  |
 |---------|---------|
-|User Prompt     |A User Prompt is the text sent to Copilot for Microsoft 365 to execute a specific task or provide information. For example, a user might input the following prompt: Write an email congratulating my team on the end of the fiscal year. |
-|Processing     |Processing of a user prompt in Copilot for Microsoft 365 involves several steps, including responsible AI checks, to ensure that Copilot for Microsoft 365 provides relevant and actionable responses.         |
-|Grounding     |Grounding refers to the process of providing input sources to the LLM related to the user prompt. By enabling Copilot for Microsoft 365 to access data to use as input sources – such as data from the Microsoft Graph or Bing – Copilot for Microsoft 365 may deliver more accurate, contextually relevant responses to users.          |
+|User Prompt     |A User Prompt is the text sent to Microsoft 365 Copilot to execute a specific task or provide information. For example, a user might input the following prompt: Write an email congratulating my team on the end of the fiscal year. |
+|Processing     |Processing of a user prompt in Microsoft 365 Copilot involves several steps, including responsible AI checks, to ensure that Microsoft 365 Copilot provides relevant and actionable responses.         |
+|Grounding     |Grounding refers to the process of providing input sources to the LLM related to the user prompt. By enabling Microsoft 365 Copilot to access data to use as input sources – such as data from the Microsoft Graph or Bing – Microsoft 365 Copilot may deliver more accurate, contextually relevant responses to users.          |
 |Microsoft Graph     |Microsoft Graph is the gateway to data and intelligence in Microsoft 365. It includes information about the relationships between users, activities, and an organization’s data.          |
-|Microsoft Graph Connectors     |Microsoft Graph Connectors offer a way to bring content from external services into Microsoft Graph, enabling external data to power Microsoft 365 intelligent experiences such as Microsoft Search and Copilot for Microsoft 365.         |
-|Indexing     |Microsoft uses both lexical and semantic indexing of Microsoft Graph data to ground responses for Copilot for Microsoft 365 in enterprise data. Indexing interprets user prompts to produce contextually relevant responses. For more on indexing, see [System Behavior](#system-behavior).         |
-|Enriched prompt|A prompt is enriched when additional instructions are added to a user's inputted prompt to guide Copilot for Microsoft 365 in generating a more specific and relevant response. |
-|Content of interactions|The term used to describe the user’s prompt and Copilot for Microsoft 365’s response to that prompt.|
+|Microsoft Graph Connectors     |Microsoft Graph Connectors offer a way to bring content from external services into Microsoft Graph, enabling external data to power Microsoft 365 intelligent experiences such as Microsoft Search and Microsoft 365 Copilot.         |
+|Indexing     |Microsoft uses both lexical and semantic indexing of Microsoft Graph data to ground responses for Microsoft 365 Copilot in enterprise data. Indexing interprets user prompts to produce contextually relevant responses. For more on indexing, see [System Behavior](#system-behavior).         |
+|Enriched prompt|A prompt is enriched when additional instructions are added to a user's inputted prompt to guide Microsoft 365 Copilot in generating a more specific and relevant response. |
+|Content of interactions|The term used to describe the user’s prompt and Microsoft 365 Copilot’s response to that prompt.|
 |Large Language Model (LLM)|Large language models (LLMs) in this context are AI models that are trained on large amounts of text data to predict words in sequences. LLMs are capable of performing a variety of tasks, such as text generation, summarization, translation, classification, and more.|
-|LLM Response|The content generated by the LLM as a response to the user prompt that is returned to Copilot for Microsoft 365.|
-|Post-processing|The processing Copilot for Microsoft 365 does after it receives a response from the LLM. This post-processing includes additional grounding calls to Microsoft Graph, responsible AI, security, compliance, and privacy checks.|
+|LLM Response|The content generated by the LLM as a response to the user prompt that is returned to Microsoft 365 Copilot.|
+|Post-processing|The processing Microsoft 365 Copilot does after it receives a response from the LLM. This post-processing includes additional grounding calls to Microsoft Graph, responsible AI, security, compliance, and privacy checks.|
 |Responsible AI|Microsoft’s policy, research, and engineering practices that are grounded in our AI principles and operationalized through our Responsible AI standard. |
-|Extensions|Extensions are applications developed by Microsoft and other providers that users and organizations can install to add new skills and knowledge to Copilot for Microsoft 365. This includes web grounding and Bing search. For more information about the use of AI in extensions, refer to those offerings directly. |
+|Extensions|Extensions are applications developed by Microsoft and other providers that users and organizations can install to add new skills and knowledge to Microsoft 365 Copilot. This includes web grounding and Bing search. For more information about the use of AI in extensions, refer to those offerings directly. |
 |Red team testing|Techniques used by experts to assess the limitations and vulnerabilities of a system and to test the effectiveness of planned mitigations. Red team testing is used to identify potential risks and is distinct from systematic measurement of risks.  |
 
 ## Capabilities
@@ -70,17 +70,17 @@ For additional, detailed information about the LLMs provided to Microsoft by Ope
 |Copilot in OneNote|Copilot in OneNote enables users to draft plans, generate ideas, create lists, and organize information to help them find what they need in the OneNote app.<br/><br/> For more information, see [Frequently asked questions about Copilot in OneNote](https://support.microsoft.com/office/2d9136e0-132a-4d4c-ab0e-39cf3ed914cc).  |
 |Microsoft Copilot with Graph-grounded chat|Microsoft Copilot with Graph-grounded chat combines the power of Large Language Models with the Internet, work content and context, and other apps, to help users draft content, catch up on what’s missed, and get answers to questions via prompts.  |
 |Intelligent Search|Intelligent Search enables search in Dataverse applications such as Dynamics 365 Sales, Service, and Finance & Operations using natural language.|
-|Power Platform Connectors|Power Platform Connectors allow customers to access real time data from a collection of business and personal productivity applications in the Copilot for Microsoft 365 experience.|
-|Microsoft Graph Connectors|Microsoft Graph Connectors enable connections to external data sources, including up to 500 items per Copilot for Microsoft 365 license. |
-|Microsoft Purview|Microsoft Purview is a solution that helps organizations manage and protect their data. It provides a unified platform for data governance, information protection, risk management, and compliance. Customers can extend Microsoft Purview capabilities provided by customers’ Microsoft subscriptions (for example, Microsoft 365 E3 or E5 subscriptions) to Copilot for Microsoft 365 data and interactions.|
+|Power Platform Connectors|Power Platform Connectors allow customers to access real time data from a collection of business and personal productivity applications in the Microsoft 365 Copilot experience.|
+|Microsoft Graph Connectors|Microsoft Graph Connectors enable connections to external data sources, including up to 500 items per Microsoft 365 Copilot license. |
+|Microsoft Purview|Microsoft Purview is a solution that helps organizations manage and protect their data. It provides a unified platform for data governance, information protection, risk management, and compliance. Customers can extend Microsoft Purview capabilities provided by customers’ Microsoft subscriptions (for example, Microsoft 365 E3 or E5 subscriptions) to Microsoft 365 Copilot data and interactions.|
 
 ### System Behavior
 
-Copilot for Microsoft 365 uses a combination of LLMs to summarize, predict, and generate content. These LLMs include pre-trained models, such as Generative Pre-Trained Transformers (GPT) like GPT-4 from OpenAI, designed to excel in these tasks.
+Microsoft 365 Copilot uses a combination of LLMs to summarize, predict, and generate content. These LLMs include pre-trained models, such as Generative Pre-Trained Transformers (GPT) like GPT-4 from OpenAI, designed to excel in these tasks.
 
 The capabilities that users see in Microsoft 365 applications appear as additional features, functionality, and prompting capabilities. LLMs and proprietary Microsoft technologies work together in an underlying system that helps people securely access, use, and manage their organizational data.
 
-- **Microsoft 365 apps** (such as Word, Excel, PowerPoint, Outlook, OneNote, Teams, and Loop) operate with Copilot for Microsoft 365 to support users in the flow of their work. For example, Copilot in Word is designed to assist users specifically in the process of creating, understanding, and editing documents. In a similar way, Copilot in the other apps helps users in the context of their work within those apps.
+- **Microsoft 365 apps** (such as Word, Excel, PowerPoint, Outlook, OneNote, Teams, and Loop) operate with Microsoft 365 Copilot to support users in the flow of their work. For example, Copilot in Word is designed to assist users specifically in the process of creating, understanding, and editing documents. In a similar way, Copilot in the other apps helps users in the context of their work within those apps.
 
 - **Microsoft Graph** has long been fundamental to Microsoft 365. It includes information about the relationships between users, activities, and an organization’s data. Microsoft Graph API brings more context from customer signals into the prompt, such as information from emails, chats, documents, and meetings. For more information, see [Overview of Microsoft Graph](/graph/overview) and [Major services and features in Microsoft Graph](/graph/overview-major-services).
 
@@ -88,27 +88,27 @@ The capabilities that users see in Microsoft 365 applications appear as addition
 
 - **Semantic index** is an index generated from content in Microsoft Graph. It's used to aid in the processing of user prompts to produce contextually relevant responses. It allows organizations to search through billions of vectors (mathematical representations of features or attributes) and return related results. The semantic index is designed to respect individual users’ security context, and only content that a user can access is shown. Semantic index is built on Microsoft’s comprehensive approach to security, compliance, privacy, and respects all organizational boundaries within the customer’s tenant. For more information, see [Semantic index for Copilot](/MicrosoftSearch/semantic-index-for-copilot).
 
-#### Here's an explanation of how Microsoft Copilot for Microsoft 365 works:
+#### Here's an explanation of how Microsoft 365 Copilot works:
 
-- Copilot for Microsoft 365 receives an input prompt from a user in an app, such as Word or PowerPoint.
+- Microsoft 365 Copilot receives an input prompt from a user in an app, such as Word or PowerPoint.
 
-- Copilot for Microsoft 365 then processes the user prompt, which improves the specificity of the prompt, to help the user get answers that are relevant and actionable to their specific task. The prompt can include text from input files or other content discovered by Copilot for Microsoft 365 using the Graph, and Copilot for Microsoft 365 sends this prompt to the LLM for processing. Copilot for Microsoft 365 only accesses data that an individual user has existing access to, based on, for example, existing Microsoft 365 role-based access controls.
+- Microsoft 365 Copilot then processes the user prompt, which improves the specificity of the prompt, to help the user get answers that are relevant and actionable to their specific task. The prompt can include text from input files or other content discovered by Microsoft 365 Copilot using the Graph, and Microsoft 365 Copilot sends this prompt to the LLM for processing. Microsoft 365 Copilot only accesses data that an individual user has existing access to, based on, for example, existing Microsoft 365 role-based access controls.
 
-- Copilot for Microsoft 365 takes the response from the LLM and post-processes it. This post-processing includes other grounding calls to Microsoft Graph, responsible AI checks such as content classifiers, security, compliance and privacy checks, and command generation.
+- Microsoft 365 Copilot takes the response from the LLM and post-processes it. This post-processing includes other grounding calls to Microsoft Graph, responsible AI checks such as content classifiers, security, compliance and privacy checks, and command generation.
 
-- Copilot for Microsoft 365 returns the response to the app, where the user can review and assess the response.
+- Microsoft 365 Copilot returns the response to the app, where the user can review and assess the response.
 
-The data is encrypted while it's stored and isn't used to train Azure OpenAI Service [foundation LLMs](https://blogs.microsoft.com/on-the-issues/2024/03/28/data-protection-responsible-ai-azure-copilot/), including those used by Copilot for Microsoft 365. For more information about this, see [Data, Privacy, and Security for Microsoft Copilot for Microsoft 365](microsoft-365-copilot-privacy.md).
+The data is encrypted while it's stored and isn't used to train Azure OpenAI Service [foundation LLMs](https://blogs.microsoft.com/on-the-issues/2024/03/28/data-protection-responsible-ai-azure-copilot/), including those used by Microsoft 365 Copilot. For more information about this, see [Data, Privacy, and Security for Microsoft 365 Copilot](microsoft-365-copilot-privacy.md).
 
 ### Extensibility & customization
 
-Copilot for Microsoft 365 offers features to help users unlock productivity and creativity. Its adaptability means that it can be customized to meet the unique needs of different organizations. The ability to extend its capabilities through extensions makes it a continually evolving asset that can adapt to the ever-changing landscape of business needs. Learn more about customizing Copilot for Microsoft 365 at [Copilot | Microsoft Developer](https://developer.microsoft.com/copilot). For more information about the use of AI in extensions, refer to those offerings directly.
+Microsoft 365 Copilot offers features to help users unlock productivity and creativity. Its adaptability means that it can be customized to meet the unique needs of different organizations. The ability to extend its capabilities through extensions makes it a continually evolving asset that can adapt to the ever-changing landscape of business needs. Learn more about customizing Microsoft 365 Copilot at [Copilot | Microsoft Developer](https://developer.microsoft.com/copilot). For more information about the use of AI in extensions, refer to those offerings directly.
 
 ### Use Cases
 
-Copilot for Microsoft 365 is a general-purpose service, designed to assist with a wide variety of everyday tasks across any organization by connecting with work data and integrating with the apps customers use every day. For example:
+Microsoft 365 Copilot is a general-purpose service, designed to assist with a wide variety of everyday tasks across any organization by connecting with work data and integrating with the apps customers use every day. For example:
 
-- **Chat and conversation interaction & creation**: Users can interact with Copilot for Microsoft 365 with Graph-grounded chat and generate responses drawn from trusted documents such as internal company documentation or tech support documentation.
+- **Chat and conversation interaction & creation**: Users can interact with Microsoft 365 Copilot with Graph-grounded chat and generate responses drawn from trusted documents such as internal company documentation or tech support documentation.
 
 - **Search**: Users can search trusted source documents such as internal company documentation.
 
@@ -118,11 +118,11 @@ Copilot for Microsoft 365 is a general-purpose service, designed to assist with 
 
 - **Captioning or transcription**: Users can transcribe audio files into text for natural language understanding or analytic tasks like summarization. Examples include Teams meeting transcripts and videos on Microsoft Stream.
 
-Microsoft provides detailed guidance focusing on common use cases and scenarios, to help customers accelerate the integration of Copilot for Microsoft 365 capabilities into their organizations. Learn more at [Microsoft Copilot Scenario Library – Microsoft Adoption](https://adoption.microsoft.com/copilot-scenario-library/).
+Microsoft provides detailed guidance focusing on common use cases and scenarios, to help customers accelerate the integration of Microsoft 365 Copilot capabilities into their organizations. Learn more at [Microsoft Copilot Scenario Library – Microsoft Adoption](https://adoption.microsoft.com/copilot-scenario-library/).
 
 #### Considerations when choosing a use case
 
-We encourage users to review all content generated by Copilot for Microsoft 365 before putting it to use. Additionally, there are certain scenarios that we recommend avoiding. In some cases, meaningful human oversight and review can further reduce the risk of harmful outcomes.
+We encourage users to review all content generated by Microsoft 365 Copilot before putting it to use. Additionally, there are certain scenarios that we recommend avoiding. In some cases, meaningful human oversight and review can further reduce the risk of harmful outcomes.
 
 - **Avoid use or misuse of the system could result in significant physical or psychological injury to an individual**. For example, scenarios that diagnose patients or prescribe medications have the potential to cause significant harm.
 
@@ -132,94 +132,94 @@ We encourage users to review all content generated by Copilot for Microsoft 365 
 
 ## Limitations
 
-### Specific Limitations of Copilot for Microsoft 365
+### Specific Limitations of Microsoft 365 Copilot
 
-1. **Integration and Compatibility**: While Copilot for Microsoft 365 is designed to integrate seamlessly with Microsoft 365 applications, there can be limitations or issues with compatibility in certain environments, especially with third party (non-Microsoft) apps and customized or non-standard configurations.
+1. **Integration and Compatibility**: While Microsoft 365 Copilot is designed to integrate seamlessly with Microsoft 365 applications, there can be limitations or issues with compatibility in certain environments, especially with third party (non-Microsoft) apps and customized or non-standard configurations.
 
-2. **Customization and flexibility**: While Copilot for Microsoft 365 can be tailored, there are limitations on how much it can be customized to fit specific organizational needs or workflows. Organizations might find certain features or responses to be rigid or not fully aligned with organizational requirements.
+2. **Customization and flexibility**: While Microsoft 365 Copilot can be tailored, there are limitations on how much it can be customized to fit specific organizational needs or workflows. Organizations might find certain features or responses to be rigid or not fully aligned with organizational requirements.
 
-3. **Dependence on internet connectivity**: Copilot for Microsoft 365 relies on internet connectivity to function. Any disruption in connectivity can impact the availability and performance of the service.
+3. **Dependence on internet connectivity**: Microsoft 365 Copilot relies on internet connectivity to function. Any disruption in connectivity can impact the availability and performance of the service.
 
-4. **User training and adoption**: Effective use of Copilot for Microsoft 365 requires users to understand its capabilities and limitations. There might be a learning curve, and users need to be trained to effectively interact with and benefit from the service.
+4. **User training and adoption**: Effective use of Microsoft 365 Copilot requires users to understand its capabilities and limitations. There might be a learning curve, and users need to be trained to effectively interact with and benefit from the service.
 
 5. **Resource intensity**: Running advanced AI models requires significant computational resources, which can impact performance, especially in resource-constrained environments. Users might experience latency or performance issues during peak usage times.
 
-6. **Legal and compliance considerations**: Organizations need to consider their particular legal and compliance obligations when using Copilot for Microsoft 365, especially in regulated industries. Microsoft is examining regulatory requirements that apply to Microsoft as a provider of the technology and addressing them within the product through a process of continuous improvement.
+6. **Legal and compliance considerations**: Organizations need to consider their particular legal and compliance obligations when using Microsoft 365 Copilot, especially in regulated industries. Microsoft is examining regulatory requirements that apply to Microsoft as a provider of the technology and addressing them within the product through a process of continuous improvement.
 
-7. **Bias, stereotyping, and ungrounded content**: Despite intensive training by OpenAI and the implementation of responsible AI controls by Microsoft on both user prompts and LLM outputs, AI services are fallible and probabilistic. This makes it challenging to comprehensively block all inappropriate content, leading to potential biases, stereotypes, or ungroundedness in AI-generated content. For more on the known limitations of AI-generated content, see the [Transparency Note for Azure OpenAI Service](/legal/cognitive-services/openai/transparency-note), which includes references to the LLMs behind Copilot for Microsoft 365.
+7. **Bias, stereotyping, and ungrounded content**: Despite intensive training by OpenAI and the implementation of responsible AI controls by Microsoft on both user prompts and LLM outputs, AI services are fallible and probabilistic. This makes it challenging to comprehensively block all inappropriate content, leading to potential biases, stereotypes, or ungroundedness in AI-generated content. For more on the known limitations of AI-generated content, see the [Transparency Note for Azure OpenAI Service](/legal/cognitive-services/openai/transparency-note), which includes references to the LLMs behind Microsoft 365 Copilot.
 
-## Copilot for Microsoft 365 performance
+## Microsoft 365 Copilot performance
 
-In many AI systems, performance is often defined in relation to accuracy—that is, how often the AI system offers a correct prediction or output. With Copilot for Microsoft 365, two different users might look at the same output and have different opinions of how useful or relevant it is, which means that performance for these systems must be defined more flexibly. We broadly consider performance to mean that the application performs as users expect.
+In many AI systems, performance is often defined in relation to accuracy—that is, how often the AI system offers a correct prediction or output. With Microsoft 365 Copilot, two different users might look at the same output and have different opinions of how useful or relevant it is, which means that performance for these systems must be defined more flexibly. We broadly consider performance to mean that the application performs as users expect.
 
-### Best practices for improving the Copilot for Microsoft 365 experience
+### Best practices for improving the Microsoft 365 Copilot experience
 
-To improve the performance in relation to the accuracy of Copilot for Microsoft 365 output, we recommend that organizations consider the following:
+To improve the performance in relation to the accuracy of Microsoft 365 Copilot output, we recommend that organizations consider the following:
 
-- **Write good prompts.** Writing good prompts is key to getting better outcomes with Copilot for Microsoft 365. Just like there are techniques to help people communicate effectively with a human, there are guidelines that may help users get better results with Copilot for Microsoft 365 when writing prompts. For example: include details, structure prompts, provide positive instructions, iterate and regenerate, and always review and verify AI-generated responses. For more information, see [Get better results with Copilot prompting](https://support.microsoft.com/topic/77251d6c-e162-479d-b398-9e46cf73da55).
+- **Write good prompts.** Writing good prompts is key to getting better outcomes with Microsoft 365 Copilot. Just like there are techniques to help people communicate effectively with a human, there are guidelines that may help users get better results with Microsoft 365 Copilot when writing prompts. For example: include details, structure prompts, provide positive instructions, iterate and regenerate, and always review and verify AI-generated responses. For more information, see [Get better results with Copilot prompting](https://support.microsoft.com/topic/77251d6c-e162-479d-b398-9e46cf73da55).
 
-- **Allow referencing of web content.** Allowing Copilot for Microsoft 365 to reference web content can improve the quality, accuracy, and relevance of Copilot for Microsoft 365 responses where a response would benefit from current, public information from the web.   Note, however, that when Copilot for Microsoft 365 references web content, it does so via the Bing Search service, and data-handling practices for Bing Search queries are different from how data is handled by Copilot for Microsoft 365. The use of Bing is covered by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) between each user and Microsoft, together with the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
+- **Allow referencing of web content.** Allowing Microsoft 365 Copilot to reference web content can improve the quality, accuracy, and relevance of Microsoft 365 Copilot responses where a response would benefit from current, public information from the web.   Note, however, that when Microsoft 365 Copilot references web content, it does so via the Bing Search service, and data-handling practices for Bing Search queries are different from how data is handled by Microsoft 365 Copilot. The use of Bing is covered by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) between each user and Microsoft, together with the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
-- **Extend grounding in Microsoft Graph.** Copilot for Microsoft 365 uses data from Microsoft Graph to ground responses in organization-specific data like emails, chats, files, and calendars. By extending Microsoft Graph with organizational data from sources like CRM systems, or external file repositories, organizations can include additional context-specific, relevant information that further enhances the richness and accuracy of Copilot for Microsoft 365 responses.
+- **Extend grounding in Microsoft Graph.** Microsoft 365 Copilot uses data from Microsoft Graph to ground responses in organization-specific data like emails, chats, files, and calendars. By extending Microsoft Graph with organizational data from sources like CRM systems, or external file repositories, organizations can include additional context-specific, relevant information that further enhances the richness and accuracy of Microsoft 365 Copilot responses.
 
 ## Mapping, measuring, and managing risks
 
-Like other transformational technologies, harnessing the benefits of AI isn't risk-free, and a core part of Microsoft’s responsible AI program is designed to identify potential risks, measure their propensity to occur, and build mitigations to manage them. Guided by our AI Principles and our Responsible AI Standard, and building on learnings from other generative AI products and our centralized mitigation infrastructure (for example, [Azure AI Content Safety](/azure/ai-services/content-safety/)), we seek to map, measure, and manage potential risks and misuse of Copilot for Microsoft 365 while securing the transformative and beneficial uses that the new experience provides. In the sections below we describe our iterative approach to map, measure, and manage potential risks.
+Like other transformational technologies, harnessing the benefits of AI isn't risk-free, and a core part of Microsoft’s responsible AI program is designed to identify potential risks, measure their propensity to occur, and build mitigations to manage them. Guided by our AI Principles and our Responsible AI Standard, and building on learnings from other generative AI products and our centralized mitigation infrastructure (for example, [Azure AI Content Safety](/azure/ai-services/content-safety/)), we seek to map, measure, and manage potential risks and misuse of Microsoft 365 Copilot while securing the transformative and beneficial uses that the new experience provides. In the sections below we describe our iterative approach to map, measure, and manage potential risks.
 
 ### Map
 
-At the model level, our work began with exploratory analyses of GPT-4 in the late summer of 2022. This included conducting extensive red team testing in collaboration with OpenAI. This testing was designed to assess how the latest technology would work without any additional safeguards applied to it. Our specific intention at this time was to identify risks, surface potential avenues for misuse, and identify capabilities and limitations. Our combined learnings across OpenAI and Microsoft contributed to advances in model development and, for us at Microsoft, informed our understanding of risks and contributed to early mitigation strategies for all of our generative AI technologies, including Copilot for Microsoft 365.
+At the model level, our work began with exploratory analyses of GPT-4 in the late summer of 2022. This included conducting extensive red team testing in collaboration with OpenAI. This testing was designed to assess how the latest technology would work without any additional safeguards applied to it. Our specific intention at this time was to identify risks, surface potential avenues for misuse, and identify capabilities and limitations. Our combined learnings across OpenAI and Microsoft contributed to advances in model development and, for us at Microsoft, informed our understanding of risks and contributed to early mitigation strategies for all of our generative AI technologies, including Microsoft 365 Copilot.
 
-In addition to model-level red team testing, a multidisciplinary team of experts conducted application-level red team testing on Copilot for Microsoft 365 experiences before making them publicly available. This process helped us better understand how the system could be exploited and improve our mitigations. Post-release, the new AI experiences in Copilot for Microsoft 365 are integrated into the engineering organization’s existing production measurement and testing infrastructure.
+In addition to model-level red team testing, a multidisciplinary team of experts conducted application-level red team testing on Microsoft 365 Copilot experiences before making them publicly available. This process helped us better understand how the system could be exploited and improve our mitigations. Post-release, the new AI experiences in Microsoft 365 Copilot are integrated into the engineering organization’s existing production measurement and testing infrastructure.
 
 ### Measure
 
-Red team testing can surface instances of specific risks, but in production users will have millions of different kinds of interactions with Copilot for Microsoft 365. Moreover, interactions are contextual and often multi-turn, and identifying harmful content within an interaction is a complex task. To better understand and address the potential for risks for our generative AI services, including Copilot for Microsoft 365 experiences, we developed responsible AI evaluations specific to those new AI experiences for measuring potential risks like jailbreaks, harmful content, and ungrounded content.
+Red team testing can surface instances of specific risks, but in production users will have millions of different kinds of interactions with Microsoft 365 Copilot. Moreover, interactions are contextual and often multi-turn, and identifying harmful content within an interaction is a complex task. To better understand and address the potential for risks for our generative AI services, including Microsoft 365 Copilot experiences, we developed responsible AI evaluations specific to those new AI experiences for measuring potential risks like jailbreaks, harmful content, and ungrounded content.
 
-As an illustrative example, the updated partially automated measurement pipeline for harmful content includes two major innovations: conversation simulation and automated, human-verified conversation annotation. First, responsible AI experts built templates to capture the structure and content of conversations that could result in different types of harmful content. These templates were then given to a conversational agent, which interacted as a hypothetical user with Copilot for Microsoft 365, generating simulated conversations. To identify whether these simulated conversations contained harmful content, we took guidelines that are typically used by expert linguists to label data and modified them for use by LLMs to label conversations at scale, refining the guidelines until there was significant agreement between model-labeled conversations and human-labeled conversations. Finally, we used the model-labeled conversations to understand the effectiveness of Copilot for Microsoft 365 at mitigating harmful content.  
+As an illustrative example, the updated partially automated measurement pipeline for harmful content includes two major innovations: conversation simulation and automated, human-verified conversation annotation. First, responsible AI experts built templates to capture the structure and content of conversations that could result in different types of harmful content. These templates were then given to a conversational agent, which interacted as a hypothetical user with Microsoft 365 Copilot, generating simulated conversations. To identify whether these simulated conversations contained harmful content, we took guidelines that are typically used by expert linguists to label data and modified them for use by LLMs to label conversations at scale, refining the guidelines until there was significant agreement between model-labeled conversations and human-labeled conversations. Finally, we used the model-labeled conversations to understand the effectiveness of Microsoft 365 Copilot at mitigating harmful content.  
 
 Our measurement pipelines enable us to rapidly perform measurement for potential risks at scale. As we identify new issues through the preview period and ongoing red team testing, we continue to expand and improve the measurement sets to assess additional risks.
 
 ### Manage
 
-As we identified potential risks and misuse through processes like red team testing and measured them, we developed mitigations to reduce the potential for harm. Below, we describe some of those mitigations. We'll continue monitoring the Copilot for Microsoft 365 experiences to improve product performance and mitigations.
+As we identified potential risks and misuse through processes like red team testing and measured them, we developed mitigations to reduce the potential for harm. Below, we describe some of those mitigations. We'll continue monitoring the Microsoft 365 Copilot experiences to improve product performance and mitigations.
 
-- **Phased release, continual evaluation.** We're committed to learning and improving our responsible AI approach continuously as our technologies and user behavior evolve.  We're making changes to Copilot for Microsoft 365 regularly to improve product performance, improve existing mitigations, and implement new mitigations in response to our learnings. 
+- **Phased release, continual evaluation.** We're committed to learning and improving our responsible AI approach continuously as our technologies and user behavior evolve.  We're making changes to Microsoft 365 Copilot regularly to improve product performance, improve existing mitigations, and implement new mitigations in response to our learnings. 
 
-- **Grounding in business data.** A known risk with large language models is their ability to generate ungrounded content—content that appears correct but isn't present in source materials. An important mitigation in Copilot for Microsoft 365 is to ground AI-generated content in relevant business data that the user has access to based on their permissions. For example, based on the user prompt, Copilot for Microsoft 365 is provided with relevant business documents to ground its response in those documents. However, in summarizing content from various sources, Copilot for Microsoft 365 may include information in its response that isn't present in its input sources. In other words, it may produce ungrounded results. Users should always take caution and use their best judgment when using outputs from Copilot for Microsoft 365. We have taken several measures to mitigate the risk that users may over-rely on ungrounded AI-generated content. Where possible, responses in Copilot for Microsoft 365 that are based on business documents include references to the sources for users to verify the response and learn more. Users are also provided with explicit notice that they're interacting with an AI system and advised to check the source materials to help them use their best judgment. 
+- **Grounding in business data.** A known risk with large language models is their ability to generate ungrounded content—content that appears correct but isn't present in source materials. An important mitigation in Microsoft 365 Copilot is to ground AI-generated content in relevant business data that the user has access to based on their permissions. For example, based on the user prompt, Microsoft 365 Copilot is provided with relevant business documents to ground its response in those documents. However, in summarizing content from various sources, Microsoft 365 Copilot may include information in its response that isn't present in its input sources. In other words, it may produce ungrounded results. Users should always take caution and use their best judgment when using outputs from Microsoft 365 Copilot. We have taken several measures to mitigate the risk that users may over-rely on ungrounded AI-generated content. Where possible, responses in Microsoft 365 Copilot that are based on business documents include references to the sources for users to verify the response and learn more. Users are also provided with explicit notice that they're interacting with an AI system and advised to check the source materials to help them use their best judgment. 
 
-- **AI-based classifiers and metaprompting to mitigate potential risks or misuse.** The use of LLMs may produce problematic content that could lead to harm. Examples could include output related to self-harm, violence, graphic content, protected material, inaccurate information, hateful speech, or text that could relate to illegal activities. Classifiers such as those available in Azure AI Content Safety and metaprompting are two examples of mitigations that have been implemented in Copilot for Microsoft 365 to help reduce the risk of these types of content. Classifiers classify text to flag different types of potentially harmful content in user prompts or generated responses. Copilot for Microsoft 365 uses AI-based classifiers and content filters. Flags lead to potential mitigations, such as not returning generated content to the user or diverting the user to a different topic. Metaprompting involves giving instructions to the model to guide its behavior, including so that the system behaves in accordance with Microsoft's AI Principles and user expectations. For example, the metaprompt may include a line such as “communicate in the user’s language of choice.” 
+- **AI-based classifiers and metaprompting to mitigate potential risks or misuse.** The use of LLMs may produce problematic content that could lead to harm. Examples could include output related to self-harm, violence, graphic content, protected material, inaccurate information, hateful speech, or text that could relate to illegal activities. Classifiers such as those available in Azure AI Content Safety and metaprompting are two examples of mitigations that have been implemented in Microsoft 365 Copilot to help reduce the risk of these types of content. Classifiers classify text to flag different types of potentially harmful content in user prompts or generated responses. Microsoft 365 Copilot uses AI-based classifiers and content filters. Flags lead to potential mitigations, such as not returning generated content to the user or diverting the user to a different topic. Metaprompting involves giving instructions to the model to guide its behavior, including so that the system behaves in accordance with Microsoft's AI Principles and user expectations. For example, the metaprompt may include a line such as “communicate in the user’s language of choice.” 
 
-- **Prompt enrichment.** In some cases, a user's prompt may be ambiguous. When this happens, Copilot for Microsoft 365 may use the LLM to help build out more details in the prompt to help ensure users get the response they're seeking. Such prompt enrichment doesn't rely on any knowledge of the user or their prior searches, but instead on the LLM.
+- **Prompt enrichment.** In some cases, a user's prompt may be ambiguous. When this happens, Microsoft 365 Copilot may use the LLM to help build out more details in the prompt to help ensure users get the response they're seeking. Such prompt enrichment doesn't rely on any knowledge of the user or their prior searches, but instead on the LLM.
 
-- **User-centered design and user experience interventions.** User-centered design and user experiences are an essential aspect of Microsoft’s approach to responsible AI. The goal is to root product design in the needs and expectations of users. As users interact with Copilot for Microsoft 365 for the first time, we offer various touchpoints designed to help them understand the capabilities of the system, disclose to them that Copilot for Microsoft 365 is powered by AI, and communicate limitations.  
+- **User-centered design and user experience interventions.** User-centered design and user experiences are an essential aspect of Microsoft’s approach to responsible AI. The goal is to root product design in the needs and expectations of users. As users interact with Microsoft 365 Copilot for the first time, we offer various touchpoints designed to help them understand the capabilities of the system, disclose to them that Microsoft 365 Copilot is powered by AI, and communicate limitations.  
 
-- **AI disclosure.** Copilot for Microsoft 365 provides several touchpoints for meaningful AI disclosure where users are notified that they're interacting with an AI system as well as opportunities to learn more about Copilot for Microsoft 365. For example, when using Copilot for Microsoft 365 in the Word app, AI-generated content is given alongside notice that AI-generated content may contain errors. Empowering users with this knowledge can help them avoid over-relying on AI-generated outputs and learn about the system’s strengths and limitations.
+- **AI disclosure.** Microsoft 365 Copilot provides several touchpoints for meaningful AI disclosure where users are notified that they're interacting with an AI system as well as opportunities to learn more about Microsoft 365 Copilot. For example, when using Microsoft 365 Copilot in the Word app, AI-generated content is given alongside notice that AI-generated content may contain errors. Empowering users with this knowledge can help them avoid over-relying on AI-generated outputs and learn about the system’s strengths and limitations.
 
-- **Media provenance.** For all images created with Designer's editing features from within Copilot for Microsoft 365, we have implemented content credentials, provenance based on the C2PA standard, to help people identify whether images were edited or generated with AI. Provenance metadata can be viewed on the [Content Credentials site](https://contentcredentials.org/verify).
+- **Media provenance.** For all images created with Designer's editing features from within Microsoft 365 Copilot, we have implemented content credentials, provenance based on the C2PA standard, to help people identify whether images were edited or generated with AI. Provenance metadata can be viewed on the [Content Credentials site](https://contentcredentials.org/verify).
 
-- **Feedback and ongoing evaluation.** The Copilot for Microsoft 365 experience builds on existing tooling that allows users to submit feedback about our products. Users can submit feedback about content generated by Copilot for Microsoft 365 by using the pane that appears after selecting thumbs up or thumbs down buttons on responses. Feedback submitted by users is used to improve our offerings as part of our commitment to improving product performance. Customer admins can review feedback submitted in the Microsoft 365 admin center. We also continually improve and test the performance of Copilot for Microsoft 365 and specific mitigations as part of our ongoing evaluation and improvement of the service. Learn more at [Providing feedback about Microsoft Copilot with Microsoft 365 apps](https://support.microsoft.com/topic/c481c26a-e01a-4be3-bdd0-aee0b0b2a423).
+- **Feedback and ongoing evaluation.** The Microsoft 365 Copilot experience builds on existing tooling that allows users to submit feedback about our products. Users can submit feedback about content generated by Microsoft 365 Copilot by using the pane that appears after selecting thumbs up or thumbs down buttons on responses. Feedback submitted by users is used to improve our offerings as part of our commitment to improving product performance. Customer admins can review feedback submitted in the Microsoft 365 admin center. We also continually improve and test the performance of Microsoft 365 Copilot and specific mitigations as part of our ongoing evaluation and improvement of the service. Learn more at [Providing feedback about Microsoft Copilot with Microsoft 365 apps](https://support.microsoft.com/topic/c481c26a-e01a-4be3-bdd0-aee0b0b2a423).
 
 Our approach to mapping, measuring and managing risks will continue to evolve as we learn more, and we're already making improvements based on feedback we’ve received from customers.
 
-## Evaluating and integrating Copilot for Microsoft 365 for your organization
+## Evaluating and integrating Microsoft 365 Copilot for your organization
 
 ### Deployment & adoption optimization
 
-Microsoft provides tools like the Microsoft Copilot Dashboard for Microsoft 365 customers and reports in the Microsoft 365 admin center. These tools are designed to help organizations measure usage, adoption, and the impact of Copilot for Microsoft 365. For example:
+Microsoft provides tools like the Microsoft Copilot Dashboard for Microsoft 365 customers and reports in the Microsoft 365 admin center. These tools are designed to help organizations measure usage, adoption, and the impact of Microsoft 365 Copilot. For example:
 
-- **Copilot for Microsoft 365 usage report** enables administrators to view a summary of how users’ adoption, retention, and engagement are with Copilot for Microsoft 365, and the activity of every user in an organization
+- **Microsoft 365 Copilot usage report** enables administrators to view a summary of how users’ adoption, retention, and engagement are with Microsoft 365 Copilot, and the activity of every user in an organization
 
-- **Adoption Score** offers administrators insights into how their organization works with Copilot for Microsoft 365. It provides a score on a 100-point scale, a dashboard view of adoption data & trends, and a tool for creating user surveys to gather feedback.
+- **Adoption Score** offers administrators insights into how their organization works with Microsoft 365 Copilot. It provides a score on a 100-point scale, a dashboard view of adoption data & trends, and a tool for creating user surveys to gather feedback.
 
 - **The Experience Insights (preview) dashboard** shows data across usage to give a fuller view of an organization's experience with Microsoft 365 including insights into training, apps and services data, and user feedback.
 
-## Learn more about Copilot for Microsoft 365
+## Learn more about Microsoft 365 Copilot
 
-- [Microsoft Copilot for Microsoft 365 overview](microsoft-365-copilot-overview.md)
+- [Microsoft 365 Copilot overview](microsoft-365-copilot-overview.md)
 - [The Copilot System: Explained by Microsoft](https://www.youtube.com/watch?v=E5g20qmeKpg)
-- [Data, Privacy, and Security for Microsoft Copilot for Microsoft 365](microsoft-365-copilot-privacy.md)
-- [Extensibility of Microsoft Copilot for Microsoft 365](microsoft-365-copilot-privacy.md#extensibility-of-microsoft-copilot-for-microsoft-365)
+- [Data, Privacy, and Security for Microsoft 365 Copilot](microsoft-365-copilot-privacy.md)
+- [Extensibility of Microsoft 365 Copilot](microsoft-365-copilot-privacy.md#extensibility-of-microsoft-copilot-for-microsoft-365)
 
 ## Learn more about Responsible AI
 
