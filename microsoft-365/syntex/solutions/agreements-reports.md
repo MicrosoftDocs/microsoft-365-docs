@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssathyamoort
-ms.date: 09/01/2024
+ms.date: 09/12/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -22,6 +22,8 @@ description: Learn about the reports available for the SharePoint Agreements AI 
 
 The **Report** tab in the Agreements app provides a comprehensive overview of all agreements, their statuses, and other essential metrics.
 
+   ![A screenshot of the Reports page.](../../media/content-understanding/agreements-reports.png)
+
 There are six reports available in the Agreements app. They are:
 
 - Split of agreements by category showing the number of agreements in every category.
@@ -36,7 +38,6 @@ There are six reports available in the Agreements app. They are:
 
 - Split of agreements that will expire within four years.
 
-   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
 
 <br>
 
