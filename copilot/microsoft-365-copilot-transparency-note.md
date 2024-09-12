@@ -219,7 +219,7 @@ Microsoft provides tools like the Microsoft Copilot Dashboard for Microsoft 365 
 - [Microsoft 365 Copilot overview](microsoft-365-copilot-overview.md)
 - [The Copilot System: Explained by Microsoft](https://www.youtube.com/watch?v=E5g20qmeKpg)
 - [Data, Privacy, and Security for Microsoft 365 Copilot](microsoft-365-copilot-privacy.md)
-- [Extensibility of Microsoft 365 Copilot](microsoft-365-copilot-privacy.md#extensibility-of-microsoft-copilot-for-microsoft-365)
+- [Extensibility of Microsoft 365 Copilot](microsoft-365-copilot-privacy.md#extensibility-of-microsoft-365-copilot)
 
 ## Learn more about Responsible AI
 

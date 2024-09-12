@@ -37,7 +37,7 @@ Use of Microsoft 365 Copilot and Microsoft Copilot involves prompts (entered by 
 
 - **Your data is private:** We won’t use your data except as you instruct. Our commitments to [privacy](https://www.microsoft.com/trust-center/privacy) include support for [GDPR](/compliance/regulatory/gdpr), [ISO/IEC 27018](/compliance/regulatory/offering-ISO-27018)<sup>[2]</sup>, and our [Data Protection Addendum](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA).
 
-- **Your access controls and policies apply to Copilot:** Copilot respects your [identity model](microsoft-365-copilot-privacy.md#how-does-microsoft-copilot-for-microsoft-365-protect-organizational-data) and [permissions](microsoft-365-copilot-privacy.md#how-does-microsoft-copilot-for-microsoft-365-use-your-proprietary-organizational-data), inherits your [sensitivity labels](/purview/sensitivity-labels#sensitivity-labels-and-microsoft-copilot-for-microsoft-365), applies your [retention](/purview/retention-policies-copilot) policies, supports [audit](/purview/audit-search?tabs=microsoft-purview-portal) of interactions, and follows your administrative settings. The specific controls and policies will vary depending on the underlying subscription plan.
+- **Your access controls and policies apply to Copilot:** Copilot respects your [identity model](microsoft-365-copilot-privacy.md#how-does-microsoft-365-copilot-protect-organizational-data) and [permissions](microsoft-365-copilot-privacy.md#how-does-microsoft-365-copilot-use-your-proprietary-organizational-data), inherits your [sensitivity labels](/purview/sensitivity-labels#sensitivity-labels-and-microsoft-365-copilot), applies your [retention](/purview/retention-policies-copilot) policies, supports [audit](/purview/audit-search?tabs=microsoft-purview-portal) of interactions, and follows your administrative settings. The specific controls and policies will vary depending on the underlying subscription plan.
 
 - **You're protected against AI security risks:** We help safeguard against AI-focused risks such as [harmful content](microsoft-365-copilot-privacy.md#how-does-copilot-block-harmful-content) and [prompt injections](microsoft-365-copilot-privacy.md#does-copilot-block-prompt-injections-jailbreak-attacks).
 
@@ -64,7 +64,7 @@ In addition to prompts and responses, web search queries (different from Microso
 
 ## Copilot plug-ins and extensions in Microsoft 365 Copilot
 
-When you’re using plugins to help Microsoft 365 Copilot to provide more relevant information, check the privacy statement and terms of use of the plugin to determine how it will handle your organization’s data. For more information, see [Extensibility of Microsoft 365 Copilot](microsoft-365-copilot-privacy.md#extensibility-of-microsoft-copilot-for-microsoft-365).
+When you’re using plugins to help Microsoft 365 Copilot to provide more relevant information, check the privacy statement and terms of use of the plugin to determine how it will handle your organization’s data. For more information, see [Extensibility of Microsoft 365 Copilot](microsoft-365-copilot-privacy.md#extensibility-of-microsoft-365-copilot).
 
 ## Footnotes
 

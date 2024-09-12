@@ -34,14 +34,14 @@ For an overview of how these three components work together, see [Microsoft 365 
 
 The information in this article is intended to help provide answers to the following questions:
 
-- [How does Microsoft 365 Copilot use your proprietary organizational data?](#how-does-microsoft-copilot-for-microsoft-365-use-your-proprietary-organizational-data)
-- [How does Microsoft 365 Copilot protect organizational information and data?](#how-does-microsoft-copilot-for-microsoft-365-protect-organizational-data)
-- [What data is stored about user interactions with Microsoft 365 Copilot?](#data-stored-about-user-interactions-with-microsoft-copilot-for-microsoft-365)
-- [What data residency commitments does Microsoft Copilot make?](#microsoft-copilot-for-microsoft-365-and-data-residency)
-- [What extensibility options are available for Microsoft 365 Copilot](#extensibility-of-microsoft-copilot-for-microsoft-365)
+- [How does Microsoft 365 Copilot use your proprietary organizational data?](#how-does-microsoft-365-copilot-use-your-proprietary-organizational-data)
+- [How does Microsoft 365 Copilot protect organizational information and data?](#how-does-microsoft-365-copilot-protect-organizational-data)
+- [What data is stored about user interactions with Microsoft 365 Copilot?](#data-stored-about-user-interactions-with-microsoft-365-copilot)
+- [What data residency commitments does Microsoft Copilot make?](#microsoft-365-copilot-and-data-residency)
+- [What extensibility options are available for Microsoft 365 Copilot](#extensibility-of-microsoft-365-copilot)
 - [How does Microsoft 365 Copilot meet regulatory compliance requirements?](#meeting-regulatory-compliance-requirements)
-- [Do controls for connected experiences in Microsoft 365 Apps apply to Microsoft 365 Copilot?](#microsoft-copilot-for-microsoft-365-and-policy-settings-for-connected-experiences)
-- [Can I trust the content that Microsoft 365 Copilot creates? Who owns that content?](#about-the-content-that-microsoft-copilot-for-microsoft-365-creates)
+- [Do controls for connected experiences in Microsoft 365 Apps apply to Microsoft 365 Copilot?](#microsoft-365-copilot-and-policy-settings-for-connected-experiences)
+- [Can I trust the content that Microsoft 365 Copilot creates? Who owns that content?](#about-the-content-that-microsoft-365-copilot-creates)
 - [What are Microsoft's commitments to using AI responsibly?](#committed-to-responsible-ai)
 
 > [!NOTE]
@@ -59,7 +59,7 @@ Microsoft 365 Copilot only surfaces organizational data to which individual user
 When you enter prompts using Microsoft 365 Copilot, the information contained within your prompts, the data they retrieve, and the generated responses remain within the Microsoft 365 service boundary, in keeping with our current privacy, security, and compliance commitments. Microsoft 365 Copilot uses Azure OpenAI services for processing, not OpenAI’s publicly available services. Azure OpenAI doesn't cache customer content and Copilot modified prompts for Microsoft 365 Copilot.
 
 > [!NOTE]
-> - When you’re using plugins to help Microsoft 365 Copilot to provide more relevant information, check the privacy statement and terms of use of the plugin to determine how it will handle your organization’s data. For more information, see [Extensibility of Microsoft 365 Copilot](#extensibility-of-microsoft-copilot-for-microsoft-365).
+> - When you’re using plugins to help Microsoft 365 Copilot to provide more relevant information, check the privacy statement and terms of use of the plugin to determine how it will handle your organization’s data. For more information, see [Extensibility of Microsoft 365 Copilot](#extensibility-of-microsoft-365-copilot).
 > - When you’re using the web content plugin, Microsoft 365 Copilot parses the user’s prompt and identifies terms where web grounding would improve the quality of the response. Based on these terms, Copilot generates a search query that it sends to the Bing Search service. For more information, [Data, privacy, and security for web queries in Microsoft 365 Copilot](/microsoft-365-copilot/manage-public-web-access).
 
 Abuse monitoring for Microsoft 365 Copilot occurs in real-time, without providing Microsoft any standing access to customer data, either for human or for automated review. While abuse moderation, which includes human review of content, is available in Azure OpenAI, Microsoft 365 Copilot services have opted out of it. Microsoft 365 data isn’t collected or stored by Azure OpenAI.
