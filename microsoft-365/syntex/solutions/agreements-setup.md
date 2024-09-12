@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssathyamoort
-ms.date: 09/01/2024
+ms.date: 09/12/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -20,6 +20,7 @@ description: Learn how to set up licensing tools for the SharePoint Agreements A
 
 # Set up the SharePoint Agreements AI solution
 
+<!---
 ## Get and assign licenses
 
 You must be a SharePoint Administrator or Global Administrator to activate the SharePoint Agreements AI solution, purchase licenses, and assign the licenses to users.
@@ -59,6 +60,7 @@ Assigning licenses to users is performed the same way as assigning other license
 3. Select the users who you would like to assign the license to. In the user information panel, go to **Licenses and apps** and assign the new **SharePoint Content Solution - Agreements (Preview)** license.
 
    ![A screenshot of the user information panel showing license options.](../../media/content-understanding/agreements-assign-licenses.png)
+--->
 
 ## Set up workspaces
 
