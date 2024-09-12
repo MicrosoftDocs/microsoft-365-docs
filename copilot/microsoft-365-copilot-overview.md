@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 09/10/2024
+ms.date: 09/12/2024
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-copilot
@@ -122,6 +122,7 @@ Some of these features include:
 ## Related content
 
 - [Understand licensing for Microsoft 365 Copilot](microsoft-365-copilot-licensing.md)
+- [Get started with Microsoft 365 Copilot](microsoft-365-copilot-setup.md)
 - [Read about Data, Privacy, and Security for Microsoft 365 Copilot](microsoft-365-copilot-privacy.md)
 - [Learn more about Copilot Lab](https://copilot.cloud.microsoft/prompts)
 - Watch:
