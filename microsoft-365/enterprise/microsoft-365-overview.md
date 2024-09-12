@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 03/18/2024
+ms.date: 09/12/2024
 audience: ITPro
 ms.topic: overview
 ms.service: microsoft-365-enterprise
@@ -58,17 +58,6 @@ If you have Microsoft 365 E3, you can also get these add-ons:
 Microsoft 365 E3 users can use these add-ons to take advantage of some of the additional features Microsoft 365 E5 includes.
 
 For more information, see [Features and capabilities for each plan](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).
-
-## Get the big picture
-
-The [Microsoft 365 for enterprise poster](https://download.microsoft.com/download/f/4/a/f4a4b49c-1dea-4299-a2cb-65bc08abdcb2/Microsoft365Enterprise.pdf) is a central location for you to view:
-
-- The benefits of Microsoft 365 for enterprise, and how apps and services map to its value pillars.
-- Microsoft 365 for enterprise plans and which components they contain.
-- The key components of the Microsoft modern workplace, which Microsoft 365 for enterprise enables.
-- The [Microsoft 365 Productivity Library](https://www.microsoft.com/microsoft-365/success/) and representative scenarios for some common organization departments.
-
-You can also [download a copy of the poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft365Enterprise.pdf).
 
 ## Transition your entire organization
 
@@ -136,3 +125,5 @@ To learn more about Microsoft 365 and work toward a Microsoft 365 certification,
 ## See also
 
 [Microsoft 365 for enterprise product page](https://www.microsoft.com/microsoft-365/enterprise)
+
+[Microsoft 365 Productivity Library](https://www.microsoft.com/microsoft-365/success/)
