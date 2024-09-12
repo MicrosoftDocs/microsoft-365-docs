@@ -175,7 +175,7 @@ To add an onmicrosoft.com domain:
 
     ![Screenshot of Add onmicrosoft domain.](../../media/add-an-onmicrosoftcom-domain-page.png)
    
-       > [!NOTE]
+    > [!NOTE]
     > Make sure to verify the spelling and accuracy of the domain name you entered. You are limited to five onmicrosoft.com domains, and currently they cannot be deleted once they are created.     
 
 1. Select **Add domain**. When successfully added, you'll see a message stating this.
