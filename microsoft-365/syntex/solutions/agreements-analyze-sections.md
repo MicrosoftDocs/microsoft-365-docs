@@ -1,9 +1,9 @@
 ---
 title: Analyze section revisions in the SharePoint Agreements AI solution
-ms.author: shrganguly
-author: shreyaganguly
-manager: ericfern
-ms.reviewer: ssathyamoort
+ms.author: chucked
+author: chuckedmonson
+manager: jtremper
+ms.reviewer: ssathyamoort, neilh, shrganguly
 ms.date: 09/01/2024
 audience: admin
 ms.topic: conceptual
@@ -15,7 +15,7 @@ ms.collection:
     - m365initiative-syntex
 ms.localizationpriority:  medium
 ROBOTS: NOINDEX, NOFOLLOW
-description: Learn how to get started with the SharePoint Agreements AI solution.
+description: Learn how to analyze section revisions with the SharePoint Agreements AI solution.
 ---
 
 # Analyze section revisions in the SharePoint Agreements AI solution
@@ -46,10 +46,12 @@ To analyze the section revisions, follow these steps:
 
 5. After you make changes in the relevant section’s details pane, select **Refresh results** to see the latest analysis.
 
-6. Based on the analysis, you can either modify the section and use the **Refresh results** option to re-run the analysis, or ignore the revision if it's not needed for the document.
-
-Approvers can also use the section revision analysis option to get a comprehensive view of the section modifications before approving the document and proceeding to the next step.
+6. Based on the analysis, you can either modify the section and use the **Refresh results** option to rerun the analysis, or ignore the revision if it's not needed for the document.
 
 > [!NOTE]
 >The suggestions and summary provided are not legal advice from Microsoft. The section information defined by your organization is used to perform the revision analysis.
 
+<br>
+
+> [!div class="nextstepaction"]
+> [See the complete list of help documentation.](agreements-overview.md#help-documentation)
