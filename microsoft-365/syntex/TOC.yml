@@ -251,6 +251,8 @@
           href: solutions/agreements-manage-sections.md
         - name: Create an agreement
           href: solutions/agreements-create-agreement.md
+        - name: Analyze section revisions
+          href: solutions/agreements-analyze-sections.md
         - name: View reports 
           href: solutions/agreements-reports.md
         - name: Receive notifications 
