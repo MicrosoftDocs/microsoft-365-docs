@@ -22,7 +22,7 @@ ms.custom: [copilot-learning-hub]
 Microsoft 365 Copilot is a sophisticated processing and orchestration engine that provides AI-powered productivity capabilities by coordinating the following components:
 
 - Large language models (LLMs)
-- Content in Microsoft Graph, such as emails, chats, and documents that you have permission to access.
+- Content in Microsoft Graphs, such as emails, chats, and documents that you have permission to access.
 - The Microsoft 365 productivity apps that you use every day, such as Word and PowerPoint.
 
 For an overview of how these three components work together, see [Microsoft 365 Copilot overview](microsoft-365-copilot-overview.md). For links to other content related to Microsoft 365 Copilot, see [Microsoft 365 Copilot documentation](index.yml).
@@ -150,13 +150,13 @@ If you turn off connected experiences that analyze your content on Windows or Ma
 - OneNote
 - Word
 
-There is also a privacy control that turns off all connected experiences, including connected experiences that analyze your content. If you use that privacy control, Microsoft 365 Copilot features won’t be available for certain apps on certain devices as described above.
+There's also a privacy control that turns off all connected experiences, including connected experiences that analyze your content. If you use that privacy control, Microsoft 365 Copilot features won’t be available for certain apps on certain devices as described above.
 
 #### Privacy control for optional connected experiences
 
 If you turn off optional connected experiences in your organization, Microsoft 365 Copilot features that are optional connected experiences won’t be available to your users. For example, [web grounding](manage-public-web-access.md) won’t be available to your users. For a list of Microsoft 365 Copilot features that are optional connected experiences, see [Overview of optional connected experiences in Office](/microsoft-365-apps/privacy/optional-connected-experiences).
 
-There is also a privacy control that turns off all connected experiences, including optional connected experiences. If you use that privacy control, Microsoft 365 Copilot features that are optional connected experiences won’t be available.
+There's also a privacy control that turns off all connected experiences, including optional connected experiences. If you use that privacy control, Microsoft 365 Copilot features that are optional connected experiences won’t be available.
 
 ### About the content that Microsoft 365 Copilot creates
 
