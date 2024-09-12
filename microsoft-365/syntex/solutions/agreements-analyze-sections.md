@@ -1,5 +1,5 @@
 ---
-title: Introduction to the SharePoint Agreements AI solution
+title: Analyze section revisions in the SharePoint Agreements AI solution
 ms.author: shrganguly
 author: shreyaganguly
 manager: ericfern
@@ -18,26 +18,38 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Learn how to get started with the SharePoint Agreements AI solution.
 ---
 
- ## Analyse section revisions ##
+# Analyze section revisions in the SharePoint Agreements AI solution
 
-Section Revision analysis is a powerful tool that gives you an AI-powered analysis of section revisions to avoid inconsistencies with company approved language. This feature is designed to detect when changes have been made to an embedded section and to provide a summary of the changes, and provide suggestions, thereby enabling the agreement creator or reviewer to take the next best action based on the analysis.
+Section revision analysis is an AI-powered feature that helps maintain consistency with company-approved language. It detects changes in embedded sections, summarizes these changes, and offers suggestions.
 
-Once you have created a document using a template using [create an agreement](agreements-create-template.md), and as per the business requirement from internal and external stakeholders have made changes to any of the sections, you can choose to run Analyse section revisions.
+This feature helps agreement creators and reviewers take the best next steps based on the analysis. Approvers can also benefit from using this feature to get a comprehensive view of the section modifications before approving the document and proceeding to the next step.
 
-To analyse the section revisions, do the following steps:
+Once you [create a document using a template](agreements-create-template.md), and make changes to any sections based on business requirements from internal and external stakeholders, you can run the **Analyze section revisions** feature.
 
-1. With the Word document open and the Agreements > Generate Documents pane open, select Analyse Section Revision to start the analysis. It takes a short period of time for the AI based analysis to complete, where all the sections that are revised from the source template are identified and a short summary of the revisions is presented for every revised section. 
-1. Once you are in the pane, and you make further modifications in the sections, you can click on _Refresh results_ to view the latest analysis.
-1. You can click on View details to review changes of any particular section of your interest.
-1. Clicking View details provides further information on the revised section. It contains three parts -
-   - Text difference - It presents the textual difference of the section that was modified
-   - Summary - It presents an AI-generated summary of the modifications that were made in the section.
-   - Suggestions - It presents suggestions to align the revised section with the one present in the source template.
-1. Once you are in the relevant section's details pane and you make further modifications to the section. Click on Refresh result to view the latest analysis.
-1. Based on the analysis, the agreement creator / reviewer now has the option of modifying the section and using the Refresh result option to re-run the analysis, or if the revision is in fact desired for the specific document and it can also be safely ignored.
+To analyze the section revisions, follow these steps:
 
-The section revision analysis option is also available for approvers who can approve the document so that they can get a comprehensive view of the section modifications before approving the document and proceed to next step.
+1. Open the Microsoft Word document you want to analyze.
 
->[!Note]
->The suggestions and the summary are not legal advice by Microsoft. We use the section defined by your organization to provide the revision analysis._
+2. Select **Agreements** > **Generate Documents**, and then select **Analyze section revisions** to start the analysis.
+
+    It takes a short period of time for the AI based analysis to complete. The feature  identifies all the revised sections from the source template and provides a brief summary for each one.
+
+3. To make further modifications in the sections, select **Refresh results** to view the latest analysis.
+
+4. Select **View details** to review changes of any section that interests you.
+
+    Selecting **View details** provides further information on the revised section. It contains three parts:
+
+       - **Text difference** – Shows the changes made to the modified section.
+       - **Summary** – Provides an AI-generated summary of the changes made to the section.
+       - **Suggestions** – Provides suggestions to align the revised section with the source template.
+
+5. After you make changes in the relevant section’s details pane, select **Refresh results** to see the latest analysis.
+
+6. Based on the analysis, you can either modify the section and use the **Refresh results** option to re-run the analysis, or ignore the revision if it's not needed for the document.
+
+Approvers can also use the section revision analysis option to get a comprehensive view of the section modifications before approving the document and proceeding to the next step.
+
+> [!NOTE]
+>The suggestions and summary provided are not legal advice from Microsoft. The section information defined by your organization is used to perform the revision analysis.
 
