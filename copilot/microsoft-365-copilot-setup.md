@@ -115,8 +115,8 @@ To ensure data is secure, review SharePoint site access and permissions. Priorit
 
 ✅ ??What about OneDrive??
 
-https://learn.microsoft.com/en-us/sharepoint/change-external-sharing-site
-https://learn.microsoft.com/en-us/sharepoint/user-external-sharing-settings
+[change external sharing](/sharepoint/change-external-sharing-site)
+[external sharing settings](/sharepoint/user-external-sharing-settings)
 
 ### Copilot and multiple account access
 
@@ -221,7 +221,7 @@ In the [Microsoft Purview portal](https://purview.microsoft.com), you can use th
 
 The privacy settings in your Microsoft 365 apps can affect the availability of Microsoft 365 Copilot features. To ensure that users can access Copilot features, review the privacy settings in your Microsoft 365 apps.
 
-For more information, see [Microsoft 365 Copilot and policy settings for connected experiences](microsoft-365-copilot-privacy.md#microsoft-copilot-for-microsoft-365-and-policy-settings-for-connected-experiences).
+For more information, see [Microsoft 365 Copilot and policy settings for connected experiences](microsoft-365-copilot-privacy.md#microsoft-365-copilot-and-policy-settings-for-connected-experiences).
 
 ## Step 4 - Update channels
 

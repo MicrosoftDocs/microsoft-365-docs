@@ -36,7 +36,7 @@ Before you can assign Copilot licenses, you need to make sure that you've alread
 To assign and manage Copilot licenses, you can use the Microsoft 365 admin center. Here are the steps:
 
 1. Sign in to the Microsoft 365 admin center and go to **Billing** > **Licenses**.
-2. Select **Copilot for Microsoft 365**.
+2. Select **Microsoft 365 Copilot**.
 3. In the product details page, assign licenses to users and manage their access to Copilot and other apps and services.
 4. To check if a user has been added, go to **Users** and then **Active Users**. The user will be displayed along with their active license.
 
