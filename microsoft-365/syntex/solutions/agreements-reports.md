@@ -20,7 +20,7 @@ description: Learn about the reports available for the SharePoint Agreements AI 
 
 # View reports in the SharePoint Agreements AI solution
 
-The **Report** tab in the Agreements app provides a comprehensive overview of all agreements, their statuses, and other essential metrics.
+The **Reports** tab in the Agreements app provides a comprehensive overview of all agreements, their statuses, and other essential metrics.
 
    ![A screenshot of the Reports page.](../../media/content-understanding/agreements-reports.png)
 
