@@ -241,8 +241,12 @@
       items: 
         - name: Overview
           href: solutions/agreements-overview.md
-        - name: Admin setup
-          href: solutions/agreements-setup.md
+            - name: Admin setup
+              items:
+                - name: Get and assign licenses
+                  href: solutions/agreements-license-requirements.md
+                - name: Set up the solution
+                  href: solutions/agreements-setup.md
         - name: Create a template
           href: solutions/agreements-create-template.md
         - name: Update a template
