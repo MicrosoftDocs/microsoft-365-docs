@@ -16,14 +16,11 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 09/10/2024
+ms.date: 09/13/2024
 
 ---
 
 # Set up for targeted communications for your frontline
-
-> [!IMPORTANT]
-> This feature is currently in public preview. You can map your frontline attributes to enable targeted communications and view your mapped values in the Teams admin center. However, automatic tags isn't available in the Teams client yet. Soon, your users will be able to use automatic tags in Teams to reach groups of people by department or job title.
 
 ## Overview
 
