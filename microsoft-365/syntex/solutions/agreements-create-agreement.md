@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssathyamoort
-ms.date: 09/01/2024
+ms.date: 09/12/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -32,9 +32,9 @@ To create an agreement from a template, follow these steps:
 
 3. Select **Find templates** to view list of published templates that match the information you provided. If more than one template matches the information you provided, you can preview the templates and select the template you'd like to use.
 
-4. Provide a file name for the agreement on the right panel under the **Details** section.
+4. On the **Details** panel, provide a file name for the agreement.
 
-   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
+   ![A screenshot of an agreement showing the details panel.](../../media/content-understanding/agreements-details-panel.png)
 
 5. Select **Edit** to generate the new agreement. The agreement opens in Microsoft Word from where you can provide values for fields and send the document for workflow.
 
@@ -56,9 +56,9 @@ To create an agreement from Microsoft Word, follow these steps:
 
 ### Fill in field values while generating an agreement
 
-1. In Microsoft Word, on the **Generate documents** panel, select **Fill fields**  to display list of fields set up in the template.
+1. In Microsoft Word, on the **Generate documents** panel, select **Fill fields** to display list of fields set up in the template.
 
-   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
+   ![A screenshot of the Generate documents panel.](../../media/content-understanding/agreements-generate-documents.png)
 
 2. Enter the values for all fields marked as mandatory. You can also provide values for fields not marked as mandatory.
 
