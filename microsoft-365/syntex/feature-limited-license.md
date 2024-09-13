@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: karlha
-ms.date: 08/01/2024
+ms.date: 09/13/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -38,7 +38,7 @@ This License governs the limited time use of the following features, individuall
 
 **EVALUATION PERIOD**
 
-This Limited Time License is effective on your acceptance and terminates on the earlier of (i) 30 days following first general availability of a commercial release of the Features in a Microsoft product or a future Microsoft product or (ii) September 20, 2024.
+This Limited Time License is effective on your acceptance and terminates on the earlier of (i) 30 days following first general availability of a commercial release of the Features in a Microsoft product or a future Microsoft product or (ii) December 31, 2024.
 
 After the Evaluation Period, Microsoft reserves the right to require an additional SKU for these capabilities.   You won't be billed for use during the Evaluation Period.
 
