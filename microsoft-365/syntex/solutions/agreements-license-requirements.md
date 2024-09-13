@@ -24,18 +24,7 @@ To activate the SharePoint Agreements AI solution on your tenant, the tenant adm
 
 ## Obtain the SharePoint Agreements AI license
 
-The license is applied via the regular marketplace process for adding products to the tenant.
-
-1. Add the license by following the guidance in [Buy or remove licenses for a Microsoft business subscription](/microsoft-365/commerce/licenses/buy-licenses).
-
-2. Add the product **SharePoint Content Solution - Agreements (Preview) Trial** to your products.
-
-    > [!NOTE]
-    > The license name of the product name is subject to change in the future.
-
-3. After adding the product, you'll see it on the **Your products** page.
-
-   ![A screenshot of the Your products page after adding SharePoint Content Solution - Agreements (Preview) Trial.](../../media/content-understanding/agreements-product-license.png)
+SharePoint Agreements AI Solution is available for selective General Availability (GA). The selective GA is by invitation only. Contact your Microsoft representative or submit your nomination for the selective GA here: [Sign up for selective GA](https://aka.ms/AgreementsSelectiveGA).
 
 ## Assign the SharePoint Agreements AI license to a user
 
