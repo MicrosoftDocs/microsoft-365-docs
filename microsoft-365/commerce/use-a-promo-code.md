@@ -22,22 +22,38 @@ ms.custom:
 - okr_SMB
 search.appverid: MET150
 description: "Learn how to apply a promotional code to a new Microsoft 365 for business subscription to reduce the price, and how to troubleshoot promo code errors."
-ms.date: 02/23/2024
+ms.date: 09/05/2024
 ---
 
 # Use a promo code to reduce the price of a new Microsoft 365 for business subscription
 
-When you buy a Microsoft 365 for business subscription, you can use a promotional code (promo code) to reduce the price. This article explains how to apply a promo code to a new subscription, describes the [Promo code terms](#promo-code-terms), and provides  [troubleshooting help for promo codes](#troubleshooting-promo-codes).
-  
-## Apply a promo code to your subscription
+When you buy a Microsoft 365 for business subscription, you can use a promotional code (promo code) to reduce the price. This article explains how to apply a promo code to a new subscription, describes the [Promo code terms](#promo-code-terms), and provides [troubleshooting help for promo codes](#troubleshooting-promo-codes).
 
-1. Begin your purchase by either buying a new subscription or adding services to an existing subscription.
-2. When you check out, select **Have a promo or discount code?**, then enter your promo code in the box.
-3. Select **Apply promo code**. You should see a confirmation that the promo code was successfully applied. If you see a different message, see [Troubleshooting promo codes](#troubleshooting-promo-codes).
-4. Continue checking out. The order confirmation page displays your discount code included with the order amount.
+## Before you begin
+
+You must be at least a Billing Administrator to do the task described in this article. For more information, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles).
+
+## Apply a promo code to a new subscription
+
+[Find out what type of billing account you have](./manage-billing-accounts.md).
+
+**If you have an MOSA billing account type:**
+
+1. Log into the [Microsoft 365 Admin Center](https://go.microsoft.com/fwlink/p/?linkid=2024339).
+   - If you're using the **Simplified view**, select **Billing**, then select **Add more products**. 
+   - If you're using the **Dashboard view**, go to the **Billing** > [Purchase services](https://go.microsoft.com/fwlink/p/?linkid=868433) page.
+2. On the **Purchase services** page, find the plan that you want to Buy, and select **Details**.
+3. On the next page, enter the number of licenses that you want to buy and select **Buy now**.
+4. When you check out, scroll to the bottom and select **Have a promo or discount code?**, then enter your promo code in the box.
+5. Select **Apply promo code**. You should see a confirmation that the promo code was successfully applied. If you see a different message, see [Troubleshooting promo codes](#troubleshooting-promo-codes).
+6. Continue checking out. The order confirmation page displays your discount code included with the order amount.
 
 At any time after you complete your purchase, the discount created by your promo code appears on your invoice. To learn more, see [View your invoice in the Microsoft 365 admin center](billing-and-payments/view-your-bill-or-invoice.md).
-  
+
+**If you have an MCA billing account type:**
+
+Promo codes are not supported on MCA billing accounts.  Promotional discounts are published directly inside of the product catalog to customers.
+
 ## Promo code terms
 
 The following guidelines apply to promo codes for Microsoft 365 for business subscriptions.
