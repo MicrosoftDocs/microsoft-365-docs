@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 09/11/2024
+ms.date: 09/12/2024
 audience: Admin
 ms.topic: get-started
 ms.service: microsoft-365-copilot
@@ -18,12 +18,9 @@ ms.collection:
 description: "Learn how to prepare your organization for Microsoft 365 Copilot. You should assign licenses, optimize SharePoint search, give enough access, prevent oversharing, use sensitivity labels, create a pilot group, and more."
 ---
 
-# Get started with Microsoft 365 Copilot - DRAFT
+# Get started with Microsoft 365 Copilot
 
-> [!CAUTION]
-> This article is being restructured.
-
-[Microsoft 365 Copilot](https://www.microsoft.com/microsoft-365/blog/2023/03/16/introducing-microsoft-365-copilot-a-whole-new-way-to-work/) is an AI-powered productivity tool that uses large language models (LLMs). It integrates with your data, with Microsoft Graph, and with Microsoft 365 Apps.
+[Microsoft 365 Copilot](microsoft-365-copilot-overview.md) is an AI-powered productivity tool that uses large language models (LLMs). It integrates with your data, with Microsoft Graph, and with Microsoft 365 Apps.
 
 It works alongside popular Microsoft 365 Apps, like Word, Excel, PowerPoint, Outlook, Teams, and more. Copilot provides real-time intelligent assistance, enabling users to enhance their creativity, productivity, and skills.
 
@@ -31,17 +28,18 @@ This article covers how you can prepare your organization for Copilot.
 
 ## Before you begin
 
-This section describes the prerequisites (licensing and admin centers access), and apps that can use Copilot.
+This section gives an overview of the prerequisites (licensing and admin centers access), and apps that can use Copilot. There might be more requirements at [Microsoft Copilot 365 requirements](microsoft-365-copilot-requirements.md).
 
 ### Prerequisites
 
 - This article uses the following admin centers. These admin centers require a specific role to complete the tasks in the article.
 
-  - [Microsoft 365 admin center](https://admin.microsoft.com): There are different roles, depending on the task you need to complete. To learn more about roles, see [Commonly used Microsoft 365 admin center roles](/microsoft-365/admin/add-users/about-admin-roles#commonly-used-microsoft-365-admin-center-roles).
-  - [SharePoint admin center](https://go.microsoft.com/fwlink/?linkid=2185219): Sign in as the [SharePoint administrator](/sharepoint/sharepoint-admin-role).
-  - [Microsoft Purview portal](https://purview.microsoft.com) or [Microsoft Purview compliance portal](https://compliance.microsoft.com)
+  - **[Microsoft 365 admin center](https://admin.microsoft.com)**: There are different roles, depending on the task you need to complete. To learn more about roles, see [Commonly used Microsoft 365 admin center roles](/microsoft-365/admin/add-users/about-admin-roles#commonly-used-microsoft-365-admin-center-roles).
+  - **[SharePoint admin center](https://go.microsoft.com/fwlink/?linkid=2185219)**: Sign in as the [SharePoint administrator](/sharepoint/sharepoint-admin-role).
+  - **[Microsoft Purview portal](https://purview.microsoft.com)**: There are different roles, depending on the task you need to complete. To learn more, see:
 
     - [Permissions required to create and manage sensitivity labels](/purview/get-started-with-sensitivity-labels#permissions-required-to-create-and-manage-sensitivity-labels)
+    - [Roles and role groups in Microsoft Defender for Office 365 and Microsoft Purview](/defender-office-365/scc-permissions)
 
 - You must have an appropriate **subscription plan to purchase Microsoft 365 Copilot**.
 
@@ -113,10 +111,15 @@ To ensure data is secure, review SharePoint site access and permissions. Priorit
     - Educate site admins on the site-level controls they can use to [restrict members from sharing](/sharepoint/change-external-sharing-site).
     - Make sure that [Site Owners receive a request to access the site](https://support.microsoft.com/office/set-up-and-manage-access-requests-94b26e0b-2822-49d4-929a-8455698654b3).
 
-✅ ??What about OneDrive??
+✅ **Manage sharing settings for OneDrive** ??
 
-[change external sharing](/sharepoint/change-external-sharing-site)
-[external sharing settings](/sharepoint/user-external-sharing-settings)
+When a user saves a file to OneDrive, it's in the end user's personal storage. The user has full control over the file and can share it with others. To ensure data security, review OneDrive sharing features.
+
+When files are shared with other users, the file data can show up in Copilot results (??). In OneDrive, you can prevent oversharing by using the following features:
+
+- [Manage sharing settings for SharePoint and OneDrive at the organization-level](/sharepoint/turn-external-sharing-on-or-off)
+- [Change the sharing settings for a site](/sharepoint/change-external-sharing-site)
+- [Change the external sharing setting for a user's OneDrive](/sharepoint/user-external-sharing-settings)
 
 ### Copilot and multiple account access
 
@@ -152,11 +155,11 @@ As an admin, you can:
 
 ✅ Use sensitivity labels to protect your data
 
-In the [Microsoft Purview portal](https://purview.microsoft.com), you can create [sensitivity labels](/purview/create-sensitivity-label) (**Information protection** > **Sensitivity labels**). Use these labels to identify how sensitive the data is in your organization. When they are applied to items such as documents and emails, they add an extra layer of protection and can affect Copilot results.
+In the [Microsoft Purview portal](https://purview.microsoft.com), you can create [sensitivity labels](/purview/create-sensitivity-label) (**Information protection** > **Sensitivity labels**). Use these labels to identify how sensitive the data is in your organization. When they're applied to items like documents and emails, the labels add an extra layer of protection and can affect Copilot results.
 
 :::image type="content" source="media/purview-labels-sensitivity.png" alt-text="Screenshot showing the Microsoft Purview screen for sensitivity labels." lightbox="media/purview-labels-sensitivity.png":::
 
-The additional protection includes:
+The extra later of protection includes:
 
 - Copilot Business Chat can reference data from different types of items. The sensitivity label with the highest priority is visible to users.
 
@@ -164,7 +167,7 @@ The additional protection includes:
 
 With sensitivity labels, you can:
 
-1. **Create labels or activate default labels**: If you don't already have sensitivity labels, you might be eligible to have some [default labels](/purview/mip-easy-trials#default-sensitivity-labels) automatically created for you, such as Public, General, and Confidential. The default labels are suitable for items such as files, emails, and meetings. You can modify these and always create your own labels.
+1. **Create labels or activate default labels**: If you don't already have sensitivity labels, you might be eligible to have some [default labels](/purview/mip-easy-trials#default-sensitivity-labels) automatically created for you, like Public, General, and Confidential. The default labels are suitable for items like files, emails, and meetings. You can modify the default labels and always create your own labels.
 
     To learn more, see:
 
@@ -177,11 +180,11 @@ With sensitivity labels, you can:
 
     For a more detailed strategy to deploy and drive adoption, see [Step 7 - Deploy to some users and measure adoption](#step-7---deploy-to-some-users-and-measure-adoption) (in this article).
 
-3. **Apply your sensitivity labels**: First, [enable sensitivity labels for files in SharePoint and OneDrive](/purview/sensitivity-labels-sharepoint-onedrive-files). Then, with a publishing label policy, you can configure a default label and users can manually apply your labels. To label at scale, use [autolabeling](/purview/apply-sensitivity-label-automatically) to automatically apply labels based on sensitivite information detected.
+3. **Enable and apply sensitivity labels**: [Enable sensitivity labels for files in SharePoint and OneDrive](/purview/sensitivity-labels-sharepoint-onedrive-files). Then, with a publishing label policy, you can configure a default label and users can manually apply your labels. To label at scale, use [autolabeling](/purview/apply-sensitivity-label-automatically) to automatically apply labels based on sensitive information detected.
 
-    For more information about the different ways that you can apply sensitivity labels, see [Common scenarios for sensivity labels](/purview/get-started-with-sensitivity-labels#common-scenarios-for-sensitivity-labels).
+    For more information about the different ways that you can apply sensitivity labels, see [Common scenarios for sensitivity labels](/purview/get-started-with-sensitivity-labels#common-scenarios-for-sensitivity-labels).
 
-    One of the available labeling methods is to apply sensitiivty labels based on content found in documents when you use [data loss prevention (DLP) policies](/purview/dlp-learn-about-dlp). DLP policies can automatically apply sensitivity labels when specific types of information is identified in a document, such as personal data that includes addresses, tax information, or passport numbers.
+    One of the available labeling methods is to apply sensitivity labels based on content found in documents when you use [data loss prevention (DLP) policies](/purview/dlp-learn-about-dlp). DLP policies can automatically apply sensitivity labels when specific types of information are identified in a document, like personal data that includes addresses, tax information, or passport numbers.
 
     With DLP policies, you can also:
 
@@ -206,9 +209,9 @@ In the [Microsoft Purview portal](https://purview.microsoft.com), you can use th
 
   Configure retention policies to retain the Copilot prompts and responses if this data is needed for compliance reasons, even if users delete their chat history. To learn more, see [Learn about retention for Copilot](/purview/retention-policies-copilot).
 
-- **eDiscovery and commmunication compliance**
+- **eDiscovery and communication compliance**
 
-  Use eDiscovery and communication compliance policies to analyze Copilot user prompts and responses to detect inappropriate or risky interactions, or sharing of confidential information.
+  Use eDiscovery and communication compliance policies to analyze Copilot user prompts and responses. The policies can detect inappropriate or risky interactions, or sharing of confidential information.
 
   To learn more, see [Microsoft Purview eDiscovery solutions](/purview/ediscovery) and [Configure a communication compliance policy to detect for Copilot interactions](/purview/communication-compliance-copilot?tabs=purview-portal).
 
@@ -221,7 +224,7 @@ In the [Microsoft Purview portal](https://purview.microsoft.com), you can use th
 
 The privacy settings in your Microsoft 365 apps can affect the availability of Microsoft 365 Copilot features. To ensure that users can access Copilot features, review the privacy settings in your Microsoft 365 apps.
 
-For more information, see [Microsoft 365 Copilot and policy settings for connected experiences](microsoft-365-copilot-privacy.md#microsoft-365-copilot-and-policy-settings-for-connected-experiences).
+For more information, see [Microsoft 365 Copilot and privacy controls for connected experiences](microsoft-365-copilot-privacy.md#microsoft-365-copilot-and-privacy-controls-for-connected-experiences).
 
 ## Step 4 - Update channels
 

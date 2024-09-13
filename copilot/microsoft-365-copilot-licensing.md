@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 09/04/2024
+ms.date: 09/12/2024
 audience: Admin
 ms.topic: get-started
 ms.service: microsoft-365-copilot
@@ -19,7 +19,7 @@ description: "Understand which plans include Microsoft 365 Copilot, licensing re
 
 # Understand licensing requirements for Microsoft 365 Copilot
 
-Microsoft 365 Copilot is available as an add-on plan with one of the following licensing prerequisites:
+Microsoft 365 Copilot is available as an [add-on plan](https://www.microsoft.com/microsoft-365/microsoft-copilot) with one of the following licensing prerequisites:
 
 **For Business and Enterprise:**
 

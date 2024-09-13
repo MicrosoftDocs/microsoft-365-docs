@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 10/05/2023
+ms.date: 09/12/2024
 audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-copilot
@@ -28,11 +28,11 @@ The following are the prerequisites for using Microsoft 365 Copilot. Microsoft 3
 
 ### Microsoft 365 Apps
 
-[Microsoft 365 Apps](/deployoffice/about-microsoft-365-apps) must be deployed. Use the [Microsoft 365 Apps setup guide](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide) in the Microsoft 365 admin center to deploy to your users.
+[Microsoft 365 Apps](/deployoffice/about-microsoft-365-apps) must be deployed. In the Microsoft 365 admin center, use the [Microsoft 365 Apps setup guide](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide) to deploy to your users.
 
 > [!NOTE]
 > - For Copilot to work in Word Online, Excel Online, and PowerPoint Online, you need to have third-party cookies enabled.
-> - Review your privacy settings for Microsoft 365 Apps because those settings might have an effect on the availability of Microsoft 365 Copilot features. For more information, see [Microsoft 365 Copilot and policy settings for connected experiences](microsoft-365-copilot-privacy.md#microsoft-365-copilot-and-policy-settings-for-connected-experiences).
+> - Review your privacy settings for Microsoft 365 Apps because those settings might have an effect on the availability of Microsoft 365 Copilot features. For more information, see [Microsoft 365 Copilot and privacy controls for connected experiences](microsoft-365-copilot-privacy.md#microsoft-365-copilot-and-privacy-controls-for-connected-experiences).
 > - Copilot isn't available when using device-based licensing for Microsoft 365 Apps for enterprise.
 
 ### Microsoft Entra ID
@@ -48,7 +48,7 @@ Some features in Microsoft 365 Copilot, such as file restore and OneDrive manage
 Microsoft 365 Copilot works with classic Outlook and new Outlook (for [Windows](https://support.microsoft.com/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) and [Mac](https://support.microsoft.com/office/the-new-outlook-for-mac-6283be54-e74d-434e-babb-b70cefc77439)). Users can switch to the new Outlook by selecting **Try the new Outlook** in their existing Outlook client.
 
 > [!IMPORTANT]
-> Microsoft 365 Copilot is only supported on primary mailboxes that are hosted on Exchange Online. It is not available on a user’s archive mailbox, group mailboxes, or shared and delegate mailboxes that they have access to.
+> Microsoft 365 Copilot is only supported on primary mailboxes that are hosted on Exchange Online. It is not available on a user's archive mailbox, group mailboxes, or shared and delegate mailboxes that they have access to.
 
 ### Microsoft Teams
 
