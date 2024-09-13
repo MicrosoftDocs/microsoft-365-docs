@@ -7,7 +7,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: loop
 ms.reviewer: michalbr
-ms.date: 08/21/2023
+ms.date: 09/13/2024
 ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection: 
@@ -80,7 +80,7 @@ The .loop files can only be opened as links in your browser, such as in Loop, an
 If you disable these experiences as outlined in the [Settings management](loop-components-configuration.md#settings-management-in-cloud-policy) section, the following experience-changes apply:
 - The create/insert entry point within Teams messaging and Outlook email is hidden. The users won't be able to create new .loop files.
 - Existing messages will no longer render as an interactive Loop component, instead they render as a hyperlink. No interactive content will be displayed within the app that Loop components are disabled.
-- When you click on the hyperlink or browse to a .loop file in OneDrive and click it to open, it opens in a separate browser tab in the Loop component viewer and editor. You'll still be able to edit the file.
+- When you click on the hyperlink or browse to a .loop file in OneDrive and click it to open, it opens in a separate browser tab in the Loop component viewer and editor. You'll still be able to edit the file if you have edit permissions.
 
 ## Known issues
 
@@ -88,7 +88,7 @@ If you disable these experiences as outlined in the [Settings management](loop-c
 - With your tenant's default file permissions set to *Specific people* (only the people the user specifies), creating a Loop component in a group chat with more than 20 members requires the sender to manually select the permission options for the component.
 - Searching for Loop components in Teams search or Outlook email search returns a link to the Loop component, not the message itself that contained the Loop component link.
 - Loop components are disabled in most federated environments.
-- External recipients of emails aren't able to view or collaborate on a Loop component.
+- External recipients of emails aren't able to view or collaborate on a Loop component unless your organization has enabled sharing with the receipients of that email.
 - Loop components don't load if the file was moved to a different library. If the file is moved to a different folder within the same library, then the Loop components continue to load in the message containing the link to the Loop component.
 
 ## Related topics
