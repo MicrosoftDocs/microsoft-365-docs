@@ -68,7 +68,7 @@ When you’re using plugins to help Microsoft 365 Copilot to provide more releva
 
 ## Footnotes
 
-<sup>[1]</sup> The specific controls will vary depending on the underlying subscription plans.
+<sup>[1]</sup> The specific controls will vary depending on a customer's Microsoft subscription plans.
 
 <sup>[2]</sup> Microsoft 365 Copilot supports HIPAA compliance for properly configured implementations. Microsoft Copilot is under review and doesn't support HIPAA compliance at this time.
 
