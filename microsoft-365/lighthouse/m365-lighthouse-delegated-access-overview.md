@@ -26,8 +26,14 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 Microsoft 365 Lighthouse provides delegated relationship insights across all your customer tenants in a single view. You can create and manage Granular Delegated Administrative Privileges (GDAP) relationships from the Delegated access page. Data is available for any customer tenant in Lighthouse, regardless of the customers' licensing, user count, or geographic region. To access these insights, select **Permissions** > **Delegated access** in the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com).
 
-> [!NOTE]
-> To manage GDAP relationships from the Delegated access page, you must hold the Administrator role in Lighthouse. 
+The following table outlines the role requirements to manage GDAP relationships from the Delegated access page.
+
+|  | Admin Agent<br>in Partner Center | Groups Administrator<br>in Microsoft Entra ID | User Administrator<br>in Microsoft Entra ID | Privileged Role Administrator<br>in Microsoft Entra ID |
+|--|:--:|:--:|:--:|:--:|
+| View data on the Delegated access page | &check; |  |  |  |
+| Create and edit Lighthouse GDAP templates |  | &check; | &check; |  |
+| Assign Lighthouse GDAP templates to customer tenants | &check; |  |  |  |
+| Set up Just-in-Time (JIT) access |  |  |  | Just-in-Time (JIT) |
 
 :::image type="content" source="../media/m365-lighthouse-delegated-access-overview/m365-lighthouse-delegated-access-page.png" alt-text="Screenshot of Delegated access page." lightbox="../media/m365-lighthouse-delegated-access-overview/m365-lighthouse-delegated-access-page.png":::
 
