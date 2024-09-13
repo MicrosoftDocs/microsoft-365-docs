@@ -1,5 +1,5 @@
 ---
-ms.date: 08/21/2023
+ms.date: 09/31/2024
 title: "Manage Loop components in OneDrive and SharePoint"
 ms.reviewer: dancost, tonchan
 ms.author: jenz
