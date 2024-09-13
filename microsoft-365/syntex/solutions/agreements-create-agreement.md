@@ -24,11 +24,11 @@ description: Learn how to create an agreement with the SharePoint Agreements AI 
 
 To create an agreement from a template, follow these steps:
 
-1. From the Agreements app in Microsoft Teams, select the **Create an agreement** card on the home tab, or select the **+New Agreement** button on the **Agreements** tab.
+1. From the Agreements app in Microsoft Teams, select the **Create an agreement** card on the home tab, or select the **New Agreement** button on the **Agreements** tab.
 
-2. Provide the required details, and then select **Find templates**.
+2. On the **Create a new agreement** page, provide the required details, and then select **Find templates**.
 
-   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
+   ![A screenshot of Create a new agreement page.](../../media/content-understanding/agreements-create-agreement.png)
 
 3. Select **Find templates** to view list of published templates that match the information you provided. If more than one template matches the information you provided, you can preview the templates and select the template you'd like to use.
 
