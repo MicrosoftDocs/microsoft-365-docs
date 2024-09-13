@@ -43,9 +43,6 @@ conceptualContent:
             - url: microsoft-365-copilot-privacy.md
               itemType: concept
               text: How Microsoft 365 Copilot protects organizational data
-            - url: manage-public-web-access.md
-              itemType: concept
-              text: Data storage, access, and boundaries in Copilot scenarios
         # Card
         - title: Get ready for Microsoft 365 Copilot
           links:
