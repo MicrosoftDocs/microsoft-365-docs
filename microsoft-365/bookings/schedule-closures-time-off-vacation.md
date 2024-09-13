@@ -11,7 +11,6 @@ ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
-- essentials-manage
 description: "Schedule office closures and employee time off from the Bookings calendar so that employees are marked as unavailable for bookings during the specified times."
 ---
 

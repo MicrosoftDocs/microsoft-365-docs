@@ -8,7 +8,7 @@ manager: scotv
 ms.date: 12/19/2023
 audience: Admin
 ms.topic: article
-ms.service: microsoft-365-business
+ms.service: microsoft-365-basic-mobility-security
 ms.localizationpriority: medium
 ms.collection:
 - Tier3

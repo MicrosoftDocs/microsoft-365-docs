@@ -20,6 +20,7 @@ ms.collection:
 - magic-ai-copilot
 - essentials-overview
 description: "Learn about how Microsoft Copilot for Microsoft 365 works."
+ms.custom: [copilot-learning-hub]
 ---
 
 # Microsoft Copilot for Microsoft 365 overview
