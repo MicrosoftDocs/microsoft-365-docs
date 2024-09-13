@@ -20,7 +20,7 @@ description: Learn about the licensing requirements for the SharePoint Agreement
 
 # Licensing requirements for the SharePoint Agreements AI solution
 
-To activate the SharePoint Agreements AI solution on your tenant, the tenant administrator must first add a product license. After you obtain the product license, individual user licenses can be assigned to the users who will use the SharePoint Agreements AI product within the business.
+To activate the SharePoint Agreements AI solution on your tenant, the tenant administrator must first add a product license. After you obtain the product license, individual user licenses can be assigned to the users who will use the SharePoint Agreements AI product within your organization.
 
 ## Obtain the SharePoint Agreements AI license
 
