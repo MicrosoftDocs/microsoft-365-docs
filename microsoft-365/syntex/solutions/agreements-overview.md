@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssathyamoort
-ms.date: 09/01/2024
+ms.date: 09/12/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -27,7 +27,15 @@ The SharePoint Agreements AI solution is an end-to-end solution, powered by AI, 
 
 ![A screenshot of Agreements app showing the home page.](../../media/content-understanding/agreements-home.png)
 
-## Benefits of using SharePoint Agreements AI
+## Features of the SharePoint Agreements AI solution
+
+- **Agreements app in Microsoft Teams**. This app serves as the central hub for managing your agreements. It allows you to create new templates, generate agreements from these templates, and upload signed agreements. Additionally, it provides insights on agreements nearing expiration.
+
+- **Agreements tab in Microsoft Word**. This feature assists in authoring templates and agreements. You can add fields and sections to your templates and incorporate approval workflows, ensuring that generated agreements are automatically routed for approval. The tab also enables you to draft new agreements from published templates by filling in the required fields.
+
+- **AI capabilities**. The AI functionality helps manage the entire lifecycle of your agreements. When you upload signed agreements, the AI extracts key information, such as the second party’s name and expiration date, making your agreements organized and easily searchable.
+
+## Benefits of using SharePoint Agreements AI solution
 
 With SharePoint Agreements AI, you can:
 
