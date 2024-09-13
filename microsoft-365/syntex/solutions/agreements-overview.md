@@ -55,7 +55,7 @@ With SharePoint Agreements AI, you can:
 
 |Article  |Description  |
 |---------|---------|
-|[Licensing requirements](agreements-license-requirements.md)    |Learn how to get and assigned licenses for the SharePoint Agreements AI solution.         |
+|[Licensing requirements](agreements-license-requirements.md)    |Learn how to get and assign licenses for the SharePoint Agreements AI solution.         |
 |[Set up the solution](agreements-setup.md)    |Learn how to set up and manage workspaces, add the Agreements app in Microsoft Teams, and more.         |
 |[Create a template](agreements-create-template.md)    |Learn how to create and publish templates, set up fields and sections, configure workflows, and more.         |
 |[Update a template](agreements-update-template.md)    |Learn how to find and edit existing templates, and publish updates to a template.         |
