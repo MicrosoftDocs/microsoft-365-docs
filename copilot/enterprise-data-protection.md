@@ -62,7 +62,7 @@ In addition to prompts and responses, web search queries (different from Microso
 
 - [Learn more about data, privacy, and security of web queries in Microsoft 365 Copilot and Microsoft Copilot](manage-public-web-access.md)
 
-## Copilot plugins in Microsoft 365 Copilot
+## Plugins in Microsoft 365 Copilot
 
 When you’re using plugins to help Microsoft 365 Copilot to provide more relevant information, check the privacy statement and terms of use of the plugin to determine how it will handle your organization’s data. For more information, see [Extensibility of Microsoft 365 Copilot](microsoft-365-copilot-privacy.md#extensibility-of-microsoft-365-copilot).
 
