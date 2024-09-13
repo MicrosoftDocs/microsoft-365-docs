@@ -37,7 +37,7 @@ This generated search query is different from the user’s original prompt—it 
 
 - When a user enters a prompt into Copilot inside an Office application (for example, writing a prompt into Copilot in Microsoft Word while a relevant document is open).
 
-- When the user explicitly references a specific document in their prompt (for example, asking Copilot about a specific document from copilot.microsoft.com).
+- When the user explicitly references a specific document in their prompt (for example, asking Copilot about a specific document from copilot.cloud.microsoft).
 
 The following information isn't included in the generated query sent to the Bing search service:
 
@@ -68,7 +68,7 @@ The user can see results from both. Additionally, if the results are from the we
 The following table provides multiple examples of a user's prompt and the generated search queries sent to Bing. It also explains how Microsoft 365 Copilot and Microsoft Copilot formulate a response. Brackets indicate placeholders for specific information referenced by the user or inferred by Copilot.
 
 > [!NOTE]
-> Unlike Microsoft 365 Copilot, Microsoft Copilot does not have access to Microsoft Graph data. For examples of purely web-based user prompts for Microsoft Copilot, see [Generated search queries](/copilot/privacy-and-protections#generated-search-queries).
+> Unlike with Microsoft 365 Copilot, users can't invoke organizational content like files, emails, or chats, when prompting in Microsoft Copilot chat. For examples of purely web-based user prompts for Microsoft Copilot, see [Generated search queries](/copilot/privacy-and-protections#generated-search-queries).
 
 | User prompt                                                                                   | Generated search queries                                                               | How Copilot provides a response                                                                                                                                                                                                                                                                                                               |
 |-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
