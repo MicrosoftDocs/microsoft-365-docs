@@ -109,7 +109,7 @@ You can assign existing licenses or buy extra subscriptions through existing agr
 
 [!INCLUDE [office-365-operated-by-21vianet-admin-center-link](../../includes/office-365-operated-by-21vianet-admin-center-link.md)]
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page. For some customers, the page is named **Marketplace**.
 2. Find and select the product that you want to buy, then select **Buy**.
 3. Complete the remaining steps to complete your purchase.
 4. To export a list of users to reference in the next step, follow the steps in [View who has licenses for a self-service purchase or trial subscription](#view-who-has-licenses-for-a-self-service-purchase-or-trial-subscription).
