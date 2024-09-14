@@ -54,6 +54,7 @@ If you encounter any problems during GDAP setup and need guidance, see [Troubles
 4. In the **Create a template** pane, enter a name for the template and an optional description.
 
 5. Under **Support roles**, Lighthouse includes five default support roles: Account manager, Service desk agent, Specialist, Escalation engineer, and Administrator. For each support role that you want to use, do the following:
+    
     1. Select **Edit** to open the **Edit support role** pane.
 
     2. Update the support role name and description, as needed, to align with the support roles in your partner organization.
@@ -74,8 +75,29 @@ If you encounter any problems during GDAP setup and need guidance, see [Troubles
     > Each GDAP template requires you to assign at least one role-assignable security group to a support role. 
 
 7. Do one of the following:
-    - Select **Use an existing security group**, choose one or more security groups from the list, and then select **Save**.
-    - Select **Create a new security group**, enter a name and optional description for the new security group, add users to the security group, and then select **Save**.
+ 
+    - To use an existing security group, select **Use an existing security group**, choose one or more security groups from the list, and then select **Save**.
+
+    - To create a new security group, select **Create a new security group**, and then do the following:
+ 
+        1. Enter a name and optional description for the new security group.
+    
+        2. If applicable, select **Create a just-in-time (JIT) access policy for this security group**, and then define the user eligibility expiration, JIT access duration, and JIT approver security group.
+         
+            > [!NOTE]
+            > - To create a just-in-time (JIT) access policy for a new security group, you must have a Microsoft Entra ID P2 license. If you're unable to select the checkbox to create a JIT access policy, verify that you have a Microsoft Entra ID P2 license.
+            > - The associated JIT approver security group must be role-assignable (requires a Microsoft Entra ID P1 license). If you're not seeing a security group appear, confirm that the security group is role-assignable in Microsoft Entra ID. For more information on how to manage role assignments, see [Use Microsoft Entra groups to manage role assignments](/entra/identity/role-based-access-control/groups-concept).
+    
+        3. Add users to the security group, and then select **Save**.
+        
+            > [!NOTE]
+            > Users who are part of a JIT agent security group are not automatically given access to GDAP roles in Microsoft Entra ID. These users must first request access from the <a href="https://myaccess.microsoft.com/#/access-packages" target="_blank">My Access portal</a> and a member of the JIT approver security group must review the JIT access request.
+    
+        4. If you created a JIT access policy for the security group, you can review the policy created in the <a href="https://portal.azure.com/#view/Microsoft_AAD_ERM/DashboardBlade/%7E/elmEntitlement" target="_blank">Microsoft Entra ID Governance portal</a>. 
+        
+            For more information on how JIT agents can request access, see [Tutorial: Manage access to resources in entitlement management](/azure/active-directory/governance/entitlement-management-access-package-first).
+
+            For more information on how approvers can approve requests, see [Approve or deny requests for Microsoft Entra roles in Privileged Identity Management](entra/id-governance/privileged-identity-management/pim-approval-workflow). 
 
 8. When you're done defining the support roles and security groups, select **Save** in the **Create a template** pane to save the GDAP template.
 
