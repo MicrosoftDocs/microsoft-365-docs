@@ -36,11 +36,11 @@ The SharePoint Agreements AI solution is an end-to-end solution, powered by AI, 
 - **AI capabilities**. The AI functionality helps manage the entire lifecycle of your agreements. When you upload signed agreements, the AI extracts key information, such as the second party’s name and expiration date, making your agreements organized and easily searchable.
 
 > [!NOTE]
-> SharePoint Agreements AI Solution is available for selective General Availability (GA). The selective GA is by invitation only. Contact your Microsoft representative or submit your nomination for the selective GA here: [Sign up for selective GA](http://aka.ms/AgreementsSelectiveGA).
+> SharePoint Agreements AI Solution is available for selective General Availability (GA). The selective GA is by invitation only. Contact your Microsoft representative or submit your nomination for the selective GA here: [Sign up for selective GA](https://aka.ms/AgreementsSelectiveGA).
 
 ## Benefits of using SharePoint Agreements AI
 
-With SharePoint Agreements AI, you can
+With SharePoint Agreements AI, you can:
 
 - **Centrally manage** your agreements in one place using familiar tools.
   
