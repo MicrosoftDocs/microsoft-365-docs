@@ -86,6 +86,7 @@ If you encounter any problems during GDAP setup and need guidance, see [Troubles
          
             > [!NOTE]
             > - To create a just-in-time (JIT) access policy for a new security group, you must have a Microsoft Entra ID P2 license. If you're unable to select the checkbox to create a JIT access policy, verify that you have a Microsoft Entra ID P2 license.
+            >
             > - The associated JIT approver security group must be role-assignable (requires a Microsoft Entra ID P1 license). If you're not seeing a security group appear, confirm that the security group is role-assignable in Microsoft Entra ID. For more information on how to manage role assignments, see [Use Microsoft Entra groups to manage role assignments](/entra/identity/role-based-access-control/groups-concept).
     
         3. Add users to the security group, and then select **Save**.
