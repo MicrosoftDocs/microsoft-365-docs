@@ -38,7 +38,7 @@ description: View the health status of Microsoft 365 services before you call su
 
 You can view the health of your Microsoft services, including Office on the web, Microsoft Teams, Exchange Online, and Microsoft Dynamics 365 on the **Service health** page in the  [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339). If you're experiencing problems with a cloud service, you can check the service health to determine whether this is a known issue with a resolution in progress before you call support or spend time troubleshooting.
 
-If you're unable to sign in to the admin center, you can use the [service status page](https://status.cloud.microsoft) to check for known issues preventing you from logging into your tenant. Also, sign up to follow us at [@MSFT365status](https://twitter.com/MSFT365Status) on **X** (Twitter) to see information on certain events.
+If you're unable to sign in to the admin center, you can use the [service status page](https://status.cloud.microsoft) to check for known issues preventing you from logging into your tenant. Also, sign up to follow us at [@MSFT365status](https://x.com/MSFT365Status) on **X** (Twitter) to see information on certain events.
 
 ## How to check service health
 
