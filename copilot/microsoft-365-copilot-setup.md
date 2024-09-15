@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 09/12/2024
+ms.date: 09/16/2024
 audience: Admin
 ms.topic: get-started
 ms.service: microsoft-365-copilot
@@ -47,9 +47,12 @@ This section gives an overview of the prerequisites (licensing and admin centers
 
   Microsoft 365 Copilot licenses are available as an add-on to other licensing plans. To learn more, see [Understand licensing for Microsoft 365 Copilot](microsoft-365-copilot-licensing.md).
 
-- More licenses might be required to use some of the features describes in this article, like Microsoft Purview.
+- More licenses might be required to use some of the features describes in this article, like Microsoft Purview and SharePoint Advanced Management.
 
-  To learn more about Purview license options, see [Microsoft Purview service description](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-purview-service-description).
+  To learn more, see:
+
+  - [Microsoft Purview service description](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-purview-service-description)
+  - [Microsoft SharePoint Premium - SharePoint Advanced Management overview](/sharepoint/advanced-management#licensing)
 
 ### App requirements
 
@@ -77,7 +80,6 @@ To get started, see:
 
 - [Learn more about search in SharePoint](/sharepoint/overview-of-search)
 - [Make sure content can be found](/sharepoint/make-sure-content-can-be-found)
-- [Restrict SharePoint Search](/sharepoint/restricted-sharepoint-search)
 
 Microsoft 365 Copilot allows users to find and access their content through natural language prompting. Copilot ensures data security and privacy by following existing obligations and integrating with your organization's policies. It uses your Microsoft Graph content with the same access controls as other Microsoft 365 services.
 
@@ -85,7 +87,7 @@ To learn more about privacy with Microsoft 365 Copilot, see [Data, Privacy, and
 
 ## Step 2 - Apply principles of Just Enough Access
 
-### SharePoint and OneDrive??
+### SharePoint and OneDrive
 
 ✅ **Check permissions and site access in SharePoint admin center**
 
@@ -99,27 +101,23 @@ To ensure data is secure, review SharePoint site access and permissions. Priorit
 
 1. In the **Membership** tab, review access to site owners, members, and visitors. Ensure that only the necessary users have access to the site.
 
-1. Reduce accidental oversharing at the organization level and site level:
+✅ **Manage sharing settings for SharePoint and OneDrive**
 
-    At the organization level:
+When files are shared with other users, the file data can show up in Copilot results. You can prevent oversharing by using the following features:
 
-    - Update [sharing links](/sharepoint/turn-external-sharing-on-or-off#file-and-folder-links) for your tenant from organization-wide sharing to specific people links.
+1. Reduce accidental oversharing at the organization level:
+
+    - Update [sharing settings for SharePoint and OneDrive](/sharepoint/turn-external-sharing-on-or-off) for your tenant from organization-wide sharing to specific people links.
     - To reduce risks around accidental misuse, hide broad-scope permissions from your end users. For example, use the SharePoint `Set-SPOTenant` PowerShell cmdlet to [hide "Everyone Except External Users" in the People Picker control](/powershell/module/sharepoint-online/set-spotenant) so end users can't use it.
+    - Use [Restricted SharePoint Search](/sharepoint/restricted-sharepoint-search). It gives you time to review & audit site permissions. It can be a temporary solution to give your organization time to adopt Copilot.
 
-    At the site level:
+2. Reduce accidental oversharing at the site level:
 
     - Educate site admins on the site-level controls they can use to [restrict members from sharing](/sharepoint/change-external-sharing-site).
     - Make sure that [Site Owners receive a request to access the site](https://support.microsoft.com/office/set-up-and-manage-access-requests-94b26e0b-2822-49d4-929a-8455698654b3).
+    - [Change the external sharing setting for a user's OneDrive](/sharepoint/user-external-sharing-settings). When a user saves a file to OneDrive, it's in the end user's personal storage. The user has full control over the file and can share it with others. To ensure data security, review OneDrive sharing features.
 
-✅ **Manage sharing settings for OneDrive** ??
-
-When a user saves a file to OneDrive, it's in the end user's personal storage. The user has full control over the file and can share it with others. To ensure data security, review OneDrive sharing features.
-
-When files are shared with other users, the file data can show up in Copilot results (??). In OneDrive, you can prevent oversharing by using the following features:
-
-- [Manage sharing settings for SharePoint and OneDrive at the organization-level](/sharepoint/turn-external-sharing-on-or-off)
-- [Change the sharing settings for a site](/sharepoint/change-external-sharing-site)
-- [Change the external sharing setting for a user's OneDrive](/sharepoint/user-external-sharing-settings)
+SharePoint Advanced Management has more features to help you get ready for Copilot. To learn more, see [Get ready for Copilot for Microsoft 365 with SharePoint Advanced Management (SAM)](/sharepoint/get-ready-copilot-sharepoint-advanced-management).
 
 ### Copilot and multiple account access
 
@@ -153,7 +151,7 @@ As an admin, you can:
 
 ### Sensitivity labels from Microsoft Purview
 
-✅ Use sensitivity labels to protect your data
+✅ **Use sensitivity labels to protect your data**
 
 In the [Microsoft Purview portal](https://purview.microsoft.com), you can create [sensitivity labels](/purview/create-sensitivity-label) (**Information protection** > **Sensitivity labels**). Use these labels to identify how sensitive the data is in your organization. When they're applied to items like documents and emails, the labels add an extra layer of protection and can affect Copilot results.
 
@@ -197,7 +195,7 @@ To learn more about sensitivity labels, see [Learn about sensitivity labels](/pu
 
 ### Copilot activity and Microsoft Purview
 
-✅ Audit Copilot activity, create retention policies, and use eDiscovery and communication compliance
+✅ **Audit Copilot activity, create retention policies, and use eDiscovery and communication compliance**
 
 In the [Microsoft Purview portal](https://purview.microsoft.com), you can use the following features to search for specific content and activities that include Copilot prompts and responses.
 
