@@ -136,6 +136,8 @@ To insert the added field into the content of a template, follow these steps:
 
    ![A screenshot showing an opened document and the Manage templates panel.](../../media/content-understanding/agreements-insert-field-2.png)
 
+   ![A screenshot showing an opened document and the Manage templates panel.](../../media/content-understanding/agreements-insert-field.png)
+
 3. To identify or review the multiple field insertions in the template, use the left and right arrows at the bottom of the field card.
 
    ![A screenshot showing an opened document and the Manage templates panel showing how to insert multiple field.](../../media/content-understanding/agreements-insert-multiple-fields.png)
