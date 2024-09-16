@@ -140,7 +140,7 @@ You can set the **Value** parameter for **AllowSelfServicePurchase** to allow or
 
 The following table describes the settings for the **Value** parameter.
 
-| **Setting** | **Impact** |
+| Setting | Impact |
 |---|---|
 | Enabled | Users can make self-service purchases and acquire trials for the product. |
 | OnlyTrialsWithoutPaymentMethod | Users can't make self-service purchases but can acquire free trials for products that don't require them to add a payment method. After the trial expires, a user can't buy the paid version of the product. |
