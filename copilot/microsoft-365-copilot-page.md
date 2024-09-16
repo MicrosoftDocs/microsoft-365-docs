@@ -74,7 +74,7 @@ This control allows you to control how non-Microsoft apps and first party apps c
 
 ### Optional connected experiences for Microsoft 365 Copilot and Microsoft Copilot
 
-Copilot can make use of cloud-backed services, called optional connected experiences, to provide additional functionality to Copilot users. For example, Copilot can reference web content to improve the quality of its responses to user prompts. For Copilot to use these cloud-backed services, optional connected experiences must be on. For more information, see [Microsoft 365 Copilot and privacy controls for connected experiences](microsoft-365-copilot-privacy.md#microsoft-365-copilot-and-privacy-controls-for-connected-experiences).
+Copilot can make use of cloud-backed services, called optional connected experiences, to provide additional functionality to Copilot users. For example, Copilot can [reference web content](manage-public-web-access.md) to improve the quality of its responses to user prompts. For Copilot to use these cloud-backed services, optional connected experiences must be on. For more information, see [Microsoft 365 Copilot and privacy controls for connected experiences](microsoft-365-copilot-privacy.md#microsoft-365-copilot-and-privacy-controls-for-connected-experiences).
 
 ### Data, Security, and Compliance
 
