@@ -74,9 +74,9 @@ This section gives an overview of the prerequisites (licensing and admin centers
 
 ✅ **Optimize your SharePoint content for search**
 
-When a user makes a request to Copilot, it processes the request then generates a response with LLMs. LLMs leverage content from Microsoft Graph and web content (optional).
+When a user makes a request to Copilot, it processes the request and then generates a response with LLMs. LLMs leverage content from Microsoft Graph and web content (optional).
 
-Content in Microsoft Graph includes emails, files, meetings, chats, calendars, and contacts. A significant portion of this data is [stored as SharePoint ](/sharepoint/get-ready-copilot-sharepoint-advanced-management#copilot-and-sharepoint). Copilot gathers SharePoint content in the same way SharePoint Search gathers content.
+Content in Microsoft Graph includes emails, files, meetings, chats, calendars, and contacts. A significant portion of this data is [stored in SharePoint](/sharepoint/get-ready-copilot-sharepoint-advanced-management#copilot-and-sharepoint). Copilot gathers SharePoint content in the same way SharePoint Search gathers content.
 
 To get the most out of Copilot and get the best results, optimize your SharePoint content for search:
 
@@ -92,7 +92,9 @@ To learn more about privacy with Microsoft 365 Copilot, see [Data, Privacy, and
 
 ### Prevent sharing and control access with SharePoint and OneDrive
 
-To get ready for your organization’s Microsoft 365 Copilot adoption, there are a few [highly recommended steps you can take with SharePoint and OneDrive](/sharepoint/get-ready-copilot-sharepoint-advanced-management). To start, you can:
+To get ready for your organization’s Microsoft 365 Copilot adoption, there are a few [highly recommended steps you can take with SharePoint and OneDrive](/sharepoint/get-ready-copilot-sharepoint-advanced-management).
+
+To start, you can:
 
 ✅ **Reduce accidental oversharing with SharePoint sharing settings**
 
@@ -102,7 +104,7 @@ To minimize accidental content oversharing with Copilot results, implement shari
 
     - Update [sharing settings for SharePoint and OneDrive](/sharepoint/turn-external-sharing-on-or-off) for your tenant from organization-wide sharing to specific people links.
     - Consider hiding broad-scope permissions from your end users. For example, use the SharePoint `Set-SPOTenant` PowerShell cmdlet to [hide "Everyone Except External Users" in the People Picker control](/powershell/module/sharepoint-online/set-spotenant) so end users can't use it.
-    - Use [Restricted SharePoint Search(RSS)](/sharepoint/restricted-sharepoint-search) to temporarily restrict Copilot results up to 100 selected SharePoint sites. Child sites of Hub sites are not counted toward the 100 limit.
+    - Use [Restricted SharePoint Search (RSS)](/sharepoint/restricted-sharepoint-search) to temporarily restrict Copilot results up to 100 selected SharePoint sites. Child sites of Hub sites aren't counted toward the 100 limit.
 
       RSS gives you time to review & audit site permissions. It should be used only as a temporary solution to give your organization time to adopt Copilot. 
 
@@ -126,11 +128,11 @@ To ensure data is secure, review SharePoint site access and permissions. Priorit
 
 ✅ **Identify sites with potentially overshared content and control access**
 
-1. Use the following SharePoint Advanced Management(SAM) activity-based reports to quickly identify most actively overshared sites:
+1. Use the following SharePoint Advanced Management (SAM) activity-based reports to quickly identify the most actively overshared sites:
 
-- [Usage of "Everyone Except External Users"](/sharepoint/data-access-governance-reports#content-shared-with-everyone-except-external-users-eeeu-reports) 
-- [Usage of “People in your organization" sharing links](/sharepoint/data-access-governance-reports#sharing-links-reports) 
-- [Usage of "Anyone" sharing links](/sharepoint/data-access-governance-reports#sharing-links-reports) 
+    - [Usage of "Everyone Except External Users"](/sharepoint/data-access-governance-reports#content-shared-with-everyone-except-external-users-eeeu-reports) 
+    - [Usage of “People in your organization" sharing links](/sharepoint/data-access-governance-reports#sharing-links-reports) 
+    - [Usage of "Anyone" sharing links](/sharepoint/data-access-governance-reports#sharing-links-reports) 
 
 2. [Initiate a Site Access Review](/sharepoint/restricted-access-control) for site owners to confirm overshared content and take remediation steps. SharePoint admins can use the [Restricted Access Control Policy](/sharepoint/restricted-access-control) to restrict access to a site with overshared content.
 
