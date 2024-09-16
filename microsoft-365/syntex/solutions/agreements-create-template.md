@@ -140,7 +140,7 @@ To insert the added field into the content of a template, follow these steps:
 
 3. To identify or review the multiple field insertions in the template, use the left and right arrows at the bottom of the field card.
 
-   ![A screenshot showing an opened document and the Manage templates panel showing how to insert multiple field.](../../media/content-understanding/agreements-insert-multiple-fields.png)
+   ![A screenshot showing an opened document and the Manage templates panel showing how to insert multiple field.](../../media/content-understanding/agreements-insert-multiple-fields-2.png)
 
 4. To delete the field or view more details and perform additional actions, select **More options** (**...**) on the field card.
 
