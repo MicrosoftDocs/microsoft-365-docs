@@ -78,7 +78,7 @@ When a user makes a request to Copilot, it processes the request then generates 
 Content in Microsoft Graph includes emails, files, meetings, chats, calendars, and contacts. A significant portion of them is [stored as SharePoint ](/sharepoint/get-ready-copilot-sharepoint-advanced-management#copilot-and-sharepoint). Copilot gather SharePoint content in the same way of SharePoint Search does. To get the most out of Copilot and get the best results, optimize your SharePoint content for search by:
 - [Making sure the content can be found](/sharepoint/make-sure-content-can-be-found)
 - [Making sure the search results look great](/sharepoint/make-search-results-look-great)
-- [Planning your content](learn.microsoft.com/microsoftsearch/plan-your-content)
+- [Planning your content](/microsoftsearch/plan-your-content)
 
 Microsoft 365 Copilot allows users to find and access their content through natural language prompting. Copilot ensures data security and privacy by following existing obligations and integrating with your organization's policies. It uses your Microsoft Graph content with the same access controls as other Microsoft 365 services.
 
@@ -126,7 +126,7 @@ You can use SharePoint Advanced Management(SAM) activity based reports to quickl
 - [Usage of “People in your organization" sharing links](/sharepoint/data-access-governance-reports#sharing-links-reports) 
 - [Usage of "Anyone" sharing links](/sharepoint/data-access-governance-reports#sharing-links-reports) 
 
-You can then [initiate a Site Access Review]((/sharepoint/restricted-access-control)) for site owners to confirm overshared content and take remediation steps. Meanwhile, you as the SharePoint admin can use the [Restricted Access Control Policy](/sharepoint/restricted-access-control) to restrict access to a site with overshared content.
+You can then [initiate a Site Access Review](/sharepoint/restricted-access-control) for site owners to confirm overshared content and take remediation steps. Meanwhile, you as the SharePoint admin can use the [Restricted Access Control Policy](/sharepoint/restricted-access-control) to restrict access to a site with overshared content.
 
 For business-critical sites, you can:
 
@@ -134,7 +134,8 @@ For business-critical sites, you can:
 - Consider blocking downloads from selected sites via a block download policy. Or specifically [block the download of Teams meeting recordings and transcripts](/microsoftteams/block-download-meeting-recording).
 - Finally, consider applying encryption action with "extract rights" enforced on business-critical office documents. Learn more [here](/purview/ai-microsoft-purview).
 
-> [!NOTE] SharePoint Advanced Management has more features to help you get ready for Copilot fast and at scale. To learn more, see [Get ready for Copilot for Microsoft 365 with SharePoint Advanced Management (SAM)](/sharepoint/get-ready-copilot-sharepoint-advanced-management).
+> [!NOTE] 
+> SharePoint Advanced Management has features to help you get ready for Copilot more timely and at scale. To learn more, see [Get ready for Copilot for Microsoft 365 with SharePoint Advanced Management (SAM)](/sharepoint/get-ready-copilot-sharepoint-advanced-management).
 
 ### Copilot and multiple account access
 
