@@ -132,7 +132,7 @@ To insert the added field into the content of a template, follow these steps:
 
 1. Select the content of the template (any text in the document) that you want to replace with a field or place the cursor at a specific location in the template where you want to insert the field.
 
-2. To insert the field only at the specified selection, select **Insert**. To insert the field at all similar places in the document, select the down arrow icon next to the **Insert** button and select **Insert at all similar places**. This action inserts the field at all locations with text that exactly matches the selected text.
+2. To insert the field only at the specified selection, on the **Manage templates** panel, i in the **First party** section, select **Insert**. To insert the field at all similar places in the document, select the down arrow icon next to the **Insert** button and select **Insert at all similar places**. This action inserts the field at all locations with text that exactly matches the selected text.
 
    ![A screenshot showing an opened document and the Manage templates panel.](../../media/content-understanding/agreements-insert-field.png)
 
