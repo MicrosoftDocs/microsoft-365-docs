@@ -74,8 +74,6 @@ Before setting up a workspace for SharePoint Agreements AI, you'll need:
 
 - The user implementing the steps in the document needs to be either a SharePoint Administrator or a Global Administrator.
 
-- Enable Azure pay-as-you-go in your tenant. For more information, see [Configure Microsoft Syntex for pay-as-you-go billing.](/microsoft-365/syntex/syntex-azure-billing).
-
 - Download and install latest [SharePoint Online Management Shell](https://www.microsoft.com/en-in/download/details.aspx?id=35588).
 
     > [!NOTE]
@@ -104,6 +102,18 @@ Before setting up a workspace for SharePoint Agreements AI, you'll need:
     - \<User> is the email address of the owner of the new workspace.
     - \<Workspace Name> is the name you would like for the new workspace.
 
+4. The final PowerShell steps enable approvals workflow. Run the following set of commands on the newly created SharePoint site.
+
+     `$script = '{"$schema":"https://developer.microsoft.com/json-schemas/sp/site-design-script-actions.schema.json","actions":[{"verb":"createSPList","listName":"Modern Template Library","templateType":101,"subactions": 
+      [{"verb":"enableApprovals"}]},{"verb":"createSPList","listName":"Section Library","templateType":101,"subactions":[{"verb":"enableApprovals"}]}]}'`
+
+     `$SiteScriptResult = Add-SPOSiteScript -Title 'Enable Approvals for Template and Sections Library' -Content $script`
+
+     `$SiteDesignResult = Add-SPOSiteDesign -Title 'Enable Approvals for Template and Sections Library' -WebTemplate STS -SiteScripts $SiteScriptResult.Id`
+
+     `Invoke-SPOSiteDesign -Identity $SiteDesignResult.Id -WebUrl $AgreementsSiteUrl`
+       
+
 ## Add the Agreements app in Microsoft Teams
 
 1. Launch Microsoft Teams.
@@ -120,9 +130,9 @@ Before setting up a workspace for SharePoint Agreements AI, you'll need:
 
 5. For ease of access, you can right-click **Agreements** and pin the app to the left navigation menu.
 
-## Set up the workspace
+## Configure the workspace
 
-After the workspace is created, the owner of the workspace can assign users to specific roles within the Agreements workspace.  
+After the workspace is created, the owner of the workspace can assign users to specific roles within the Agreements workspace and also create agreements categories.  
 
 ### Assign roles
 
@@ -133,6 +143,8 @@ The following roles can be assigned:
 - **Workspace member**. This role can manage templates and has access to all agreements.
 
 - **Template manager**. This role can manage templates and will not have access to all agreements by default.
+
+- **Creator**. This role can only access their own documents and generally work with other roles to generate agreements. They may also be agreements approvers.
 
 ### Manage roles
 
@@ -162,6 +174,7 @@ To manage categories in the Agreements app:
 
    All the existing categories available in your workspace are displayed. You can rename an existing category or create new categories as needed.
 
+   ![A screenshot showing category management.](../../media/content-understanding/agreements-manage-categories.png)
 
 <br>
 
