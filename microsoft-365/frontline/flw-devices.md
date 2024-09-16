@@ -17,7 +17,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 07/12/2024
+ms.date: 09/16/2024
 ---
 
 # Overview of device management for frontline workers
@@ -210,6 +210,12 @@ With app protection policies, you can add access control safeguards, such as:
 - Ensure the device’s operating system is up to date.
 
 In a shared devices deployment, you can use app protection policies to ensure that data doesn't leak to apps that don't support shared device mode. In BYOD scenarios, app protection policies are helpful because they allow you to protect your data at the app level without having to manage the entire device.
+
+#### Limit access to Teams when frontline workers are off shift
+
+With the working time feature, you can use app protection policies to limit access to Teams for shift workers on BYOD or company-owned dedicated devices. This feature lets you can block access or show a warning message when frontline workers access Teams during nonworking time.
+
+To learn more, see [Limit access to Teams when frontline workers are off shift](flw-working-time.md).
 
 ## Related articles
 
