@@ -77,7 +77,7 @@ On their first access of any Teams Assignments flow, users must sign in using th
 - Canvas and Microsoft 365 admins can contact Microsoft [Education Support](https://aka.ms/edusupport) to help resolve configuration and deployment issues, for themselves or on behalf of users.
 - Admins can learn about [other Microsoft 365 and Teams LMS integrations](https://aka.ms/LTIAdminDocs) available.
 - Educators can take the [Teams Assignments LTI Microsoft Learn course](https://aka.ms/AssignmentsLTICourse) to learn to use the integration and get more help on Microsoft Teams Assignments.
-- Educators and Learners can contact support, or give feedback directly from the app through the help and feedback menu
+- Educators and Learners can contact support, or give feedback directly from the app through the help and feedback menu.
 
 ![image](https://github.com/user-attachments/assets/157dcee7-141b-47e3-879b-60efa2fb0621)
 
