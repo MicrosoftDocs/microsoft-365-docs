@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssathyamoort
-ms.date: 09/01/2024
+ms.date: 09/16/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -134,11 +134,7 @@ To insert the added field into the content of a template, follow these steps:
 
 2. To insert the field only at the specified selection, select **Insert**. To insert the field at all similar places in the document, select the down arrow icon next to the **Insert** button and select **Insert at all similar places**. This action inserts the field at all locations with text that exactly matches the selected text.
 
-   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
-
 3. To identify or review the multiple field insertions in the template, use the left and right arrows at the bottom of the field card.
-
-   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
 
 4. To delete the field or view more details and perform additional actions, select **More options** (**...**) on the field card.
 
