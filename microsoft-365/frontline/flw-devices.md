@@ -17,7 +17,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 07/12/2024
+ms.date: 09/16/2024
 ---
 
 # Overview of device management for frontline workers
