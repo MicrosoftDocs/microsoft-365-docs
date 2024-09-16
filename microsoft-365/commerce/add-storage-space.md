@@ -73,8 +73,8 @@ You can buy the Office 365 Extra File Storage add-on in the Microsoft 365 admin 
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center.</a>
     - If you’re using the **Simplified view**, select **Billing**, then select **Add more products**.
-    - If you’re using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
-2. On the **Purchase services** page, under **View by category**, select **Office 365**.
+    - If you’re using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page. For some customers, the page is named **Marketplace**.
+2. Under **View by category**, select **Office 365**.
 3. Find **Office 365 Extra File Storage**, then select **Details**.
 4. Enter the number of gigabytes of storage that you want, select a subscription length and billing frequency, then select **Buy**.
 5. In the **Checkout** pane, choose the billing profile that you want to use, or add a new one.
