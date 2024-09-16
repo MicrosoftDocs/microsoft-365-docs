@@ -145,7 +145,7 @@ To ensure data quality, we perform daily data validation checks for the past thr
 | Uses Teams chat                   | Indicates whether the user has participated in at least one chat using Teams in the past 30 days.                              |
 | Uses Outlook Email                | Indicates whether the user has sent at least one email using Outlook in the past 30 days.                                    |
 | Uses Office docs                  | Indicates whether the user has collaborated on at least one document or file using OneDrive or sharepoint in the past 30 days. |
-| Suggested candidate for Copilot      | These users in your organization are the most likely to use Copilot features based on their Microsoft 365 app activity. |
+| Suggested candidate for Copilot      | These users are the most likely in your organization to use Copilot features if assigned a license based on their Microsoft 365 app activity. Each week, the top 25% of eligible users in your organization are flagged in this column based on their use of the Microsoft 365 app where Copilot brings value (such as Microsoft Teams and Outlook). In general, users with higher Microsoft 365 app usage intensity will be flagged as suggested candidates. Users not tagged in this column can still benefit from Copilot; this column is simply intended to help organizations prioritize users for license assignment as part of initial Copilot rollout.  |
 
 ## Make the user-specific data anonymous
 
