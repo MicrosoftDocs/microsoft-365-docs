@@ -1,5 +1,5 @@
 ---
-title: "Copilot for Microsoft 365 admin"
+title: "Microsoft 365 Copilot admin"
 f1.keywords:
 - NOCSH
 ms.author: camillepack
@@ -19,12 +19,12 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Learn about Copilot for Microsoft 365 admin and how it can help simplify admin tasks."
+description: "Learn about Microsoft 365 Copilot admin and how it can help simplify admin tasks."
 ---
 
-# Copilot for Microsoft 365 admin - overview
+# Microsoft 365 Copilot admin - overview
 
-Copilot for Microsoft 365 admin harnesses the value of generative AI to boost IT admins' productivity by simplifying administration of Microsoft 365 and Microsoft 365 Copilot, and empowering you to focus on more strategic priorities. Copilot for Microsoft 365 admin helps admins perform tasks across different Microsoft 365 services using natural language interactions, contextual guidance, and proactive suggestions. Copilot for Microsoft 365 admin also leverages the power of Copilot to provide transferable skills across different admin centers and surfaces, breaking the barriers of switching between multiple admin tools and interfaces.
+Microsoft 365 Copilot admin harnesses the value of generative AI to boost IT admins' productivity by simplifying administration of Microsoft 365 and Microsoft 365 Copilot, and empowering you to focus on more strategic priorities. Microsoft 365 Copilot admin helps admins perform tasks across different Microsoft 365 services using natural language interactions, contextual guidance, and proactive suggestions. Microsoft 365 Copilot admin also leverages the power of Copilot to provide transferable skills across different admin centers and surfaces, breaking the barriers of switching between multiple admin tools and interfaces.
 
 ## Before you begin
 
@@ -32,17 +32,17 @@ You must have a Microsoft 365 Copilot license enabled for your tenant. To learn 
 
 ## Get started
 
-Copilot for Microsoft 365 admin is currently available in an invite-only preview. To use Copilot for Microsoft 365 admin,
+Microsoft 365 Copilot admin is currently available in an invite-only preview. To use Microsoft 365 Copilot admin,
 
 1. Sign in to the Microsoft 365 admin center, or one of the specialized admin centers like Teams, SharePoint, or Exchange.
 
-2. Select the Copilot button in the upper right shell to launch Copilot for Microsoft 365 admin.
+2. Select the Copilot button in the upper right shell to launch Microsoft 365 Copilot admin.
 
-## How can I use Copilot for Microsoft 365 admin?
+## How can I use Microsoft 365 Copilot admin?
 
 You can use Copilot to help manage your organization and focus on what’s important.
 
-With Copilot for Microsoft 365 admin, you can:
+With Microsoft 365 Copilot admin, you can:
 
 **Search** your users based on natural language queries. Copilot returns a list where you can view the list in active users or export the list to a CSV file for further analysis.
 
@@ -95,12 +95,12 @@ To maintain your security and privacy, Copilot doesn't make any configuration ch
 
 ### How can IT admins enable the feature?
 
-In preview, Copilot is automatically enabled for select customers who have purchased Copilot for Microsoft 365.
+In preview, Copilot is automatically enabled for select customers who have purchased Microsoft 365 Copilot.
 
-### Which admin roles can use Copilot for Microsoft 365 admin?
+### Which admin roles can use Microsoft 365 Copilot admin?
 
 It will be available to all admins, and respect role-based access controls (RBAC) within the admin center, only surfacing information and controls that the particular admin has access to. Copilot doesn't make any configuration changes on behalf of an admin, keeping security integrity intact.
 
 ### Are there differences with how Copilot treats prompts from the admin center or admin vs. Users?
 
-No. Copilot for Microsoft 365 admin handles prompts in the same way as Copilot for Microsoft 365.
+No. Microsoft 365 Copilot admin handles prompts in the same way as Microsoft 365 Copilot.
