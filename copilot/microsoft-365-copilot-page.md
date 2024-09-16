@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 10/31/2023
+ms.date: 09/16/2024
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-copilot
@@ -72,9 +72,9 @@ Microsoft 365 Copilot is powered by an advanced processing and orchestration eng
 
 This control allows you to control how non-Microsoft apps and first party apps can work with Microsoft 365 Copilot.
 
-### Improved responses with web content in Microsoft 365 Copilot
+### Optional connected experiences for Microsoft 365 Copilot and Microsoft Copilot
 
-This control allows you to enable or disable Copilot's ability to access the public web to get the latest information available when responding to prompts. Note that this is a separate control from Copilot capabilities with enterprise data protection. Learn more about [how to Manage access to web content in Microsoft 365 Copilot responses](manage-public-web-access.md).
+Copilot can make use of cloud-backed services, called optional connected experiences, to provide additional functionality to Copilot users. For example, Copilot can reference web content to improve the quality of its responses to user prompts. For Copilot to use these cloud-backed services, optional connected experiences must be on. For more information, see [Microsoft 365 Copilot and privacy controls for connected experiences](microsoft-365-copilot-privacy.md#microsoft-365-copilot-and-privacy-controls-for-connected-experiences).
 
 ### Data, Security, and Compliance
 
