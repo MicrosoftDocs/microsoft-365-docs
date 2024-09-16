@@ -94,7 +94,7 @@ If you encounter any problems during GDAP setup and need guidance, see [Troubles
             > [!NOTE]
             > Users who are part of a JIT agent security group are not automatically given access to GDAP roles in Microsoft Entra ID. These users must first request access from the <a href="https://myaccess.microsoft.com/#/access-packages" target="_blank">My Access portal</a> and a member of the JIT approver security group must review the JIT access request.
     
-        4. If you created a JIT access policy for the security group, you can review the policy created in the <a href="https://portal.azure.com/#view/Microsoft_AAD_ERM/DashboardBlade/%7E/elmEntitlement" target="_blank">Microsoft Entra ID Governance portal</a>. 
+        4. If you created a JIT access policy for the security group, you can review the created policy in the <a href="https://portal.azure.com/#view/Microsoft_AAD_ERM/DashboardBlade/%7E/elmEntitlement" target="_blank">Microsoft Entra ID Governance portal</a>. 
         
             For more information on how JIT agents can request access, see [Tutorial: Manage access to resources in entitlement management](/azure/active-directory/governance/entitlement-management-access-package-first).
 
