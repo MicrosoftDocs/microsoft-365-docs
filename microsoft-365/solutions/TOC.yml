@@ -419,6 +419,28 @@
           href: apps-protect-step-5.md  
         - name: Step 6. Use app protection actions
           href: apps-protect-step-6.md
+    - name: Assign and deploy apps using Microsoft Intune
+      items: 
+      - name: Overview
+        href: apps-assign-overview.md
+      - name: Understand app management
+        href: apps-assign-management.md
+      - name: Understand app assignments
+        href: apps-assign-assignments.md
+      - name: Understand app deployment
+        href: apps-assign-deployment.md
+      - name: Assign apps to your organization
+        items: 
+        - name: Assign apps overview      
+          href: apps-assign-steps-overview.md     
+        - name: Step 1. Confirm users, devices, or groups
+          href: apps-assign-step-1.md
+        - name: Step 2. Assign apps to users, devices, or groups
+          href: apps-assign-step-2.md
+        - name: Step 3. Verify and monitor app assignments
+          href: apps-assign-step-3.md
+        - name: Step 4. Troubleshoot app deployment issues
+          href: apps-assign-step-4.md
 
 - name: Compliance
   items:
