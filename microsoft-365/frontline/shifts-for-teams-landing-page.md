@@ -82,7 +82,7 @@ Here’s an overview of what frontline managers and workers can do in Shifts.
 |---------|---------|---------|
 |Create a schedule for their team. <br/>Supported methods:<ul><li>Manually create shifts and time off one by one.</li><li>Bulk creation of shifts and time off through Excel import and copy/paste.</li></ul> | Yes | Not available in Shifts.<sup>1</sup> |
 |Create open shifts for workers on their own team to request. <br/>Supported methods:<ul><li>Manually create shifts and time off one by one.</li><li>Bulk creation of shifts and time off through Excel import and copy/paste.</li></ul> | Yes | Not available in Shifts.<sup>1</sup> |
-|Create open shifts for workers on other teams (locations) to request. <br/>Supported methods:<ul><li>Manually create shifts and time off one by one.</li><li>Bulk creation of shifts and time off through Excel import and copy/paste.</li></ul> | Yes | No |
+|Create open shifts for workers on other teams (locations) to request. (Preview)<br/>Supported methods:<ul><li>Manually create shifts and time off one by one.</li><li>Bulk creation of shifts and time off through Excel import and copy/paste.</li></ul> | Yes | No |
 |Update and delete shifts, time off, and open shifts.<br/>Only manual one by one changes are supported.| Yes | Not available in Shifts.<sup>1</sup> |
 |Manage Shifts settings for the team. | Yes<sup>2</sup>| No<sup>3</sup>|
 |Create schedule groups to organize workers based on common characteristics within a team. For example, department or job type. | Yes | No<sup>4</sup>|
@@ -99,11 +99,11 @@ Here’s an overview of what frontline managers and workers can do in Shifts.
 |---------|---------|---------|
 |View their own and their team's schedule. | Yes | Yes |
 |View open shifts available in their schedule groups. | Yes | Yes |
-|Create requests for open shifts at their own location for manager's approval. | Yes | Yes<sup>1</sup>|
-|Create requests for open shifts at other locations for manager's approval at that location. | Yes | No|
-|Create time-off requests for manager's approval. Currently, after the request is approved, the time off applies only to the team in which the worker requested it.| Yes | Yes<sup>1</sup>|
-|Create a request to swap a shift with a coworker on the same team. | Yes | Yes<sup>1</sup>|
-|Create a request to offer a shift to a coworker on the same team.| Yes | Yes<sup>1</sup>|
+|Request open shifts at their own location for manager's approval. | Yes | Yes<sup>1</sup>|
+|Request open shifts at other locations for manager's approval at that location. (Preview) | Yes | No|
+|Request time off. Currently, after the request is approved by a manager, the time off applies only to the team in which the worker requested it.| Yes | Yes<sup>1</sup>|
+|Request to swap a shift with a coworker on the same team. | Yes | Yes<sup>1</sup>|
+|Request to offer a shift to a coworker on the same team.| Yes | Yes<sup>1</sup>|
 |Clock in and out of shifts and breaks.| Yes | Yes<sup>1</sup><sup>,</sup><sup>2</sup>|
 |Edit timecard entries for clock in/out and breaks on mobile. | Yes | Yes |
 
