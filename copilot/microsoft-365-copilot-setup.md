@@ -72,14 +72,13 @@ This section gives an overview of the prerequisites (licensing and admin centers
 
 ## Step 1 - Optimize search in SharePoint
 
-✅ **Optimize your SharePoint data for search**
+✅ **Optimize your SharePoint content for search**
 
-To get the most out of Copilot and get the best results, optimize your SharePoint data and content for search. This step helps users get the information they need when using Copilot.
-
-To get started, see:
-
-- [Learn more about search in SharePoint](/sharepoint/overview-of-search)
-- [Make sure content can be found](/sharepoint/make-sure-content-can-be-found)
+When a user makes a request to Copilot, it processes the request then generates a response with Large Language Models (LLMs) by leveraging content from Microsoft Graph and web content (optional).
+Content in Microsoft Graph includes emails, files, meetings, chats, calendars, and contacts. A significant portion of them is [stored as SharePoint ](/sharepoint/get-ready-copilot-sharepoint-advanced-management#copilot-and-sharepoint). Copilot gather SharePoint content in the same way of SharePoint Search does. To get the most out of Copilot and get the best results, optimize your SharePoint content for search by:
+- [Making sure the content can be found](/sharepoint/make-sure-content-can-be-found)
+- [Making sure the search results look great](/sharepoint/make-search-results-look-great)
+- [Planning your content](/microsoftsearch/plan-your-content)
 
 Microsoft 365 Copilot allows users to find and access their content through natural language prompting. Copilot ensures data security and privacy by following existing obligations and integrating with your organization's policies. It uses your Microsoft Graph content with the same access controls as other Microsoft 365 services.
 
@@ -87,7 +86,25 @@ To learn more about privacy with Microsoft 365 Copilot, see [Data, Privacy, and
 
 ## Step 2 - Apply principles of Just Enough Access
 
-### SharePoint and OneDrive
+### Prevent sharing and control access with SharePoint and OneDrive
+
+To get ready for your organization’s Microsoft 365 Copilot adoption, there are a few [highly recommended steps you can take with SharePoint and OneDrive](/sharepoint/get-ready-copilot-sharepoint-advanced-management). To start, you can:
+
+✅ **Reduce accidental oversharing with SharePoint sharing settings**
+
+To minimize accidental content oversharing via Copilot results, implement the best practice sharing settings at both the organization and site levels:
+
+1. At the organization level:
+
+    - Update [sharing settings for SharePoint and OneDrive](/sharepoint/turn-external-sharing-on-or-off) for your tenant from organization-wide sharing to specific people links.
+    - Consider hide broad-scope permissions from your end users. For example, use the SharePoint `Set-SPOTenant` PowerShell cmdlet to [hide "Everyone Except External Users" in the People Picker control](/powershell/module/sharepoint-online/set-spotenant) so end users can't use it.
+    - Use [Restricted SharePoint Search(RSS)](/sharepoint/restricted-sharepoint-search) to temporarily restrict Copilot results to up to 100 selected SharePoint sites (child sites of Hub sites are not counted toward the 100 limit).RSS gives you time to review & audit site permissions. It should be used only as a temporary solution to give your organization time to adopt Copilot. 
+
+2. Reduce accidental oversharing at the site level:
+
+    - Educate site admins on the site-level controls they can use to [restrict members from sharing](/sharepoint/change-external-sharing-site).
+    - Make sure that [Site Owners receive a request to access the site](https://support.microsoft.com/office/set-up-and-manage-access-requests-94b26e0b-2822-49d4-929a-8455698654b3).
+    - [Change the external sharing setting for a user's OneDrive](/sharepoint/user-external-sharing-settings). When a user saves a file to OneDrive, it's in the end user's personal storage. The user has full control over the file and can share it with others. To ensure data security, review OneDrive sharing features.
 
 ✅ **Check permissions and site access in SharePoint admin center**
 
@@ -101,23 +118,24 @@ To ensure data is secure, review SharePoint site access and permissions. Priorit
 
 1. In the **Membership** tab, review access to site owners, members, and visitors. Ensure that only the necessary users have access to the site.
 
-✅ **Manage sharing settings for SharePoint and OneDrive**
+✅ **Identify sites with potentially overshared content and control access** *
 
-When files are shared with other users, the file data can show up in Copilot results. You can prevent oversharing by using the following features:
+You can use SharePoint Advanced Management(SAM) activity based reports to quickly identify most actively overshared sites, by running three individual reports:
 
-1. Reduce accidental oversharing at the organization level:
+- [Usage of "Everyone Except External Users"](/sharepoint/data-access-governance-reports#content-shared-with-everyone-except-external-users-eeeu-reports) 
+- [Usage of “People in your organization" sharing links](/sharepoint/data-access-governance-reports#sharing-links-reports) 
+- [Usage of "Anyone" sharing links](/sharepoint/data-access-governance-reports#sharing-links-reports) 
 
-    - Update [sharing settings for SharePoint and OneDrive](/sharepoint/turn-external-sharing-on-or-off) for your tenant from organization-wide sharing to specific people links.
-    - To reduce risks around accidental misuse, hide broad-scope permissions from your end users. For example, use the SharePoint `Set-SPOTenant` PowerShell cmdlet to [hide "Everyone Except External Users" in the People Picker control](/powershell/module/sharepoint-online/set-spotenant) so end users can't use it.
-    - Use [Restricted SharePoint Search](/sharepoint/restricted-sharepoint-search). It gives you time to review & audit site permissions. It can be a temporary solution to give your organization time to adopt Copilot.
+You can then [initiate a Site Access Review](/sharepoint/restricted-access-control) for site owners to confirm overshared content and take remediation steps. Meanwhile, you as the SharePoint admin can use the [Restricted Access Control Policy](/sharepoint/restricted-access-control) to restrict access to a site with overshared content.
 
-2. Reduce accidental oversharing at the site level:
+For business-critical sites, you can:
 
-    - Educate site admins on the site-level controls they can use to [restrict members from sharing](/sharepoint/change-external-sharing-site).
-    - Make sure that [Site Owners receive a request to access the site](https://support.microsoft.com/office/set-up-and-manage-access-requests-94b26e0b-2822-49d4-929a-8455698654b3).
-    - [Change the external sharing setting for a user's OneDrive](/sharepoint/user-external-sharing-settings). When a user saves a file to OneDrive, it's in the end user's personal storage. The user has full control over the file and can share it with others. To ensure data security, review OneDrive sharing features.
+- Use [Restricted Access Control (RAC)](/sharepoint/restricted-access-control) to proactively protect against oversharing. Even better: as part of your custom site provisioning process, configure RAC policy on new sites from the get-go and proactively avoid oversharing forever.
+- Consider blocking downloads from selected sites via a block download policy. Or specifically [block the download of Teams meeting recordings and transcripts](/microsoftteams/block-download-meeting-recording).
+- Finally, consider applying encryption action with "extract rights" enforced on business-critical office documents. Learn more [here](/purview/ai-microsoft-purview).
 
-SharePoint Advanced Management has more features to help you get ready for Copilot. To learn more, see [Get ready for Copilot for Microsoft 365 with SharePoint Advanced Management (SAM)](/sharepoint/get-ready-copilot-sharepoint-advanced-management).
+> [!NOTE]
+> SharePoint Advanced Management has more features to help you get ready for Copilot fast and at scale. To learn more, see [Get ready for Copilot for Microsoft 365 with SharePoint Advanced Management (SAM)](/sharepoint/get-ready-copilot-sharepoint-advanced-management).
 
 ### Copilot and multiple account access
 
