@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssathyamoort
-ms.date: 09/18/2024
+ms.date: 09/16/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -63,7 +63,7 @@ These field values help in filtering and searching the sections faster during te
 > [!NOTE]
 > You cannot change the workspace after the section is created.
 
-### Insert fields
+## Insert fields
 
 To insert fields in a section, follow these steps:
 
@@ -73,7 +73,7 @@ To insert fields in a section, follow these steps:
 
     To understand how to create a new field that isn't present in the list, see [Set up fields](agreements-create-template.md#set-up-fields).
 
-    ![](media/image5.png)
+    - ![](media/image5.png)
 
 3. After you add the field, either highlight the text in the document that you want to link to the field, or position the cursor at the exact spot in the template where you want the field to be inserted.
 
@@ -108,7 +108,7 @@ To edit a section, follow these steps:
 
 ## Configure section settings
 
-Once you have created a section, you can choose to configure settings that will control how document authors can modify the content of the section.
+Sections have configurable settings that allow the section creator to add control to what agreements authors can do when creating an agreement from a template containing the section. 
 
 To configure the settings, follow these steps:
 
@@ -116,17 +116,22 @@ To configure the settings, follow these steps:
 
 2. Edit the section to configure or [create a new section](agreements-manage-sections.md#create-a-new-section).
 
-3. Select **Settings** to choose section edit permissions for document authors. There are two options:
+3. Select **Settings** to set edit permissions and other behaviour of the section for document generation. There are two configurable settings elements:
 
+- Choose section edit permissions for document authors
    - **Editable** (default selection) – Document authors can edit the section content during document generation flow.
    - **Read-only** – Document authors can't modify the content of the section. It's locked for further edits.
 
+- Choose if document authors can choose to replace this section with another section from the same category.
+   - **Replaceable** - Document authors can replace this section with a different section from the same category.
+   - **Non-replaceable** (default selection) - Document authors cannot replace the section with another section from the same category.
+
 > [!NOTE]
-> This setting doesn't apply when this section gets inserted into a template. Template authors can modify or format content of any inserted section. The changes will stay only in the scope of the template and will not get updated in the published section.
+> These settings don't apply when a section gets inserted into a template. Template authors can modify or format content of any inserted section. The changes will stay only in the scope of the template and will not get updated in the published section.
 
 ![](media/image8.png)
 
-## Request approval to publish
+## Request approval before publishing the section
 
 Once you have made the relevant changes to section and configured section settings, you can optionally choose to send a draft section for approval before publishing the section.
 
