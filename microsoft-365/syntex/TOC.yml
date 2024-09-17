@@ -237,6 +237,33 @@
         - name: Admin setup 
           href: ocr.md
 
+    - name: Agreements AI solution 
+      items: 
+        - name: Overview
+          href: solutions/agreements-overview.md
+        - name: Admin setup
+          items:
+            - name: Get and assign licenses
+              href: solutions/agreements-license-requirements.md
+            - name: Set up the solution
+              href: solutions/agreements-setup.md
+        - name: Create a template
+          href: solutions/agreements-create-template.md
+        - name: Update a template
+          href: solutions/agreements-update-template.md
+        - name: Manage sections
+          href: solutions/agreements-manage-sections.md
+        - name: Create an agreement
+          href: solutions/agreements-create-agreement.md
+        - name: Analyze section revisions
+          href: solutions/agreements-analyze-sections.md
+        - name: View reports 
+          href: solutions/agreements-reports.md
+        - name: Receive notifications 
+          href: solutions/agreements-notifications.md
+        - name: Import an agreement 
+          href: solutions/agreements-import-agreement.md
+
     - name: Microsoft 365 Archive
       href: /microsoft-365/archive
 
