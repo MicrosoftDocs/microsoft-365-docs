@@ -43,7 +43,7 @@ By installing and using the Teams Assignments LTI, educators and students can tr
 > - Going to the [**Organization Apps list**](https://app.schoology.com/apps/school_apps), selecting the **Install/Remove** button, and choosing the courses in which to install the app.
 
 ## Use Teams Assignments in Schoology Learning
-
+- On their first access of any Teams Assignments flow, users must sign in using their Microsoft 365 account.
 - Users in Schoology Learning should have their email address populated with the UPN or primary email address from Microsoft 365/Microsoft Entra. This is required for grades to sync from Teams Assignments to the students in the Schoology Learning gradebook.
 - A Microsoft class team needs to be connected to the Schoology Learning course section that uses Teams Assignments. The class team should have the same users and roles as the course section, with teachers as owners of the team and students as members in the team.
 
@@ -52,5 +52,25 @@ By installing and using the Teams Assignments LTI, educators and students can tr
 
 > [!TIP]
 > Defining categories in Grade Setup and marking a category as the default (yellow star icon) ensures that Teams Assignments linked in Schoology have a category assigned automatically.
+
+## Recommended browser settings
+
+- Cookies should be allowed for Microsoft Assignments app.
+- Popups shouldn't be blocked for Microsoft Assignments app.
+
+> [!NOTE]
+>
+> - Cookies aren't allowed by default in the Chrome browser incognito mode and will need to be allowed.
+> - The Microsoft Assignments LTI app also works in the InPrivate mode in Microsoft Edge browser. Ensure that you haven't blocked cookies, which are allowed by default.
+
+## Getting help for admins and educators
+
+- Canvas and Microsoft 365 admins can contact Microsoft [Education Support](https://aka.ms/edusupport) to help resolve configuration and deployment issues, for themselves or on behalf of users.
+- Admins can learn about [other Microsoft 365 and Teams LMS integrations](https://aka.ms/LTIAdminDocs) available.
+- Educators can take the [Teams Assignments LTI Microsoft Learn course](https://aka.ms/AssignmentsLTICourse) to learn to use the integration and get more help on Microsoft Teams Assignments.
+- Educators and Learners can contact support, or give feedback directly from the app through the help and feedback menu
+
+![image](https://github.com/user-attachments/assets/157dcee7-141b-47e3-879b-60efa2fb0621)
+
 
 Learning Tools Interoperability® (LTI®) is a trademark of the 1EdTech Consortium, Inc. ([www.imsglobal.org](https://www.imsglobal.org/))
