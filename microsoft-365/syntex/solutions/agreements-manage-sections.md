@@ -73,7 +73,7 @@ To insert fields in a section, follow these steps:
 
     To understand how to create a new field that isn't present in the list, see [Set up fields](agreements-create-template.md#set-up-fields).
 
-    - ![](media/image5.png)
+    ![](media/image5.png)
 
 3. After you add the field, either highlight the text in the document that you want to link to the field, or position the cursor at the exact spot in the template where you want the field to be inserted.
 
