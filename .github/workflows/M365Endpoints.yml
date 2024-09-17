@@ -63,7 +63,7 @@ jobs:
             TargetOrganization: "MicrosoftDocs"
             TargetRepository: "microsoft-365-docs-pr"
             TargetPath: "microsoft-365/includes"
-            EndpointsContentOwner: "dstrome"
+            EndpointsContentOwner: "kelleyvice-msft"
           run: |
 
             # GetServiceInstanceEndpoints
@@ -162,7 +162,7 @@ jobs:
                 $script:RepoDir = $env:TargetPath # The target directory in the remote repository
                 $script:EndpointsContentOwner = $env:EndpointsContentOwner
 
-                $script:PrDescription = "@dstrome`n`nThis is an automated pull request to update M365 Endpoints include files in **$RepoDir**. Before merging this PR, confirm the following:`n`n- There are no more than **$($siHash.count)** files in the PR`n- The only files in the pull request end with **$($OutFileSuffix.Trim())**`n- There are no obvious formatting issues with the content`n- The pull request is from **$TargetBranch** to **$DefaultBranch**`n`nIf issues are found with the PR, remove the **Sign off** label and add the **Back to submitter** label, assign the PR to **$EndpointsContentOwner**, and @-mention **$EndpointsContentOwner** with instructions on how to resolve the issue.`n`nIf no issues are found, merge the PR. If you have questions, email marveldocs-admins."
+                $script:PrDescription = "@MicrosoftDocs/marveldocs-pubops`n`nThis is an automated pull request to update M365 Endpoints include files in **$RepoDir**. Before merging this PR, confirm the following:`n`n- There are no more than **$($siHash.count)** files in the PR`n- The only files in the pull request end with **$($OutFileSuffix.Trim())**`n- There are no obvious formatting issues with the content`n- The pull request is from **$TargetBranch** to **$DefaultBranch**`n`nIf issues are found with the PR, remove the **Sign off** label and add the **Back to submitter** label, assign the PR to **$EndpointsContentOwner**, and @-mention **$EndpointsContentOwner** with instructions on how to resolve the issue.`n`nAcrolinx issues can be ignored per exception: https://office.visualstudio.com/MAX/_workitems/edit/9352479`n`nIf no issues are found, merge the PR. If you have questions, email marveldocs-admins."
 
             } # end Set-ScriptOptions function
 
