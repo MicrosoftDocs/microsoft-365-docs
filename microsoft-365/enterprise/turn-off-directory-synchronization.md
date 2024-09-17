@@ -40,7 +40,7 @@ To turn off Directory synchronization:
   
 1. First, install the required software and connect to your Microsoft 365 subscription. For instructions, see [Connect with the Microsoft Graph PowerShell module for Windows PowerShell](/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-microsoft-graph-powershell).
 
-2. Use **Update-MgBetaOrganization** to disable directory synchronization:
+2. Use **Update-MgOrganization** to disable directory synchronization:
 
   ```powershell
     # Install v1.0 and beta Microsoft Graph PowerShell modules 
@@ -62,7 +62,7 @@ To turn off Directory synchronization:
     }
     
     # Perform the update
-    Update-MgBetaOrganization -OrganizationId $organizationId -BodyParameter $params 
+    Update-MgOrganization -OrganizationId $organizationId -BodyParameter $params 
     
     # Check that the command worked
     Get-MgOrganization | Select OnPremisesSyncEnabled
