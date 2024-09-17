@@ -38,17 +38,10 @@ landingContent:
             url: https://www.linkedin.com/learning/search?keywords=syntex&upsellOrderOrigin=default_guest_learning&trk=homepage-learning_learning-search-bar_search-submit
       - linkListType: whats-new
         links:
-          - text: Autofill columns
-            url: autofill-overview.md
-          - text: Content model Graph API
-            url: /graph/api/resources/contentmodel?view=graph-rest-beta
-          - text: Document processing Graph API
-            url: /graph/api/resources/documentprocessingjob?view=graph-rest-beta
-          - text: Sensitive information prebuilt model
-            url: prebuilt-model-sensitive-info.md
           - text: Track and manage eSignature requests using Approvals in Teams
             url: esignature-approvals.md
-
+          - text: SharePoint Agreements AI solution
+            url: solutions/agreements-overview.md
 
 # Card 2
   - title: Get started
