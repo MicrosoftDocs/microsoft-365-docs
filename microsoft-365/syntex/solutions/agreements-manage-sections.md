@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssathyamoort
-ms.date: 09/16/2024
+ms.date: 09/18/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -63,7 +63,7 @@ These field values help in filtering and searching the sections faster during te
 > [!NOTE]
 > You cannot change the workspace after the section is created.
 
-## Insert fields
+### Insert fields
 
 To insert fields in a section, follow these steps:
 
@@ -126,7 +126,7 @@ To configure the settings, follow these steps:
 
 ![](media/image8.png)
 
-## Request approval before publishing the section
+## Request approval to publish
 
 Once you have made the relevant changes to section and configured section settings, you can optionally choose to send a draft section for approval before publishing the section.
 
