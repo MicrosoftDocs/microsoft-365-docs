@@ -112,7 +112,6 @@ Before setting up a workspace for SharePoint Agreements AI, you'll need to ensur
      `$SiteDesignResult = Add-SPOSiteDesign -Title 'Enable Approvals for Template and Sections Library' -WebTemplate STS -SiteScripts $SiteScriptResult.Id`
 
      `Invoke-SPOSiteDesign -Identity $SiteDesignResult.Id -WebUrl $AgreementsSiteUrl`
-       
 
 ## Add the Agreements app in Microsoft Teams
 
@@ -160,13 +159,13 @@ To manage roles in a workspace:
 
     Here, you can add or remove users.
 
-   ![A screenshot showing adding users to a role.](../../media/content-understanding/agreements-add-users-to-roles.png)
+   ![A screenshot of the Edit workspace owners page to add users to a role.](../../media/content-understanding/agreements-add-users-to-roles.png)
 
 ### Manage categories
 
 To manage categories in the Agreements app:
 
-1. As a workspace owner, launch the Agreements App in Teams as the tab.
+1. As a workspace owner, launch the Agreements App in Teams.
 
 2. Go to the **Setup & access** tab.
 
@@ -174,7 +173,7 @@ To manage categories in the Agreements app:
 
    All the existing categories available in your workspace are displayed. You can rename an existing category or create new categories as needed.
 
-   ![A screenshot showing category management.](../../media/content-understanding/agreements-manage-categories.png)
+   ![A screenshot showing the Categories page on the Setup & access tab.](../../media/content-understanding/agreements-manage-categories.png)
 
 <br>
 
