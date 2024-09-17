@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssathyamoort
-ms.date: 09/12/2024
+ms.date: 09/18/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -21,7 +21,7 @@ description: Learn how to get started with the SharePoint Agreements AI solution
 # Introduction to the SharePoint Agreements AI solution
 
 > [!NOTE]
-> For the complete list of articles to help you set up and use this feature, see [Help documentation](#help-documentation).
+> SharePoint Agreements AI solution is available for selective General Availability (GA). The selective GA is by invitation only. Contact your Microsoft representative or submit your nomination for the selective GA here: [Sign up for selective GA](https://aka.ms/AgreementsSelectiveGA). For a list of articles to help you set up and use this feature, see [Help documentation](#help-documentation).
 
 The SharePoint Agreements AI solution is an end-to-end solution, powered by AI, to help streamline and simplify your agreements, such as nondisclosure agreements and statements of work. From drafting to execution, this solution is ready to integrate seamlessly into your flow of work. Centralize your agreements in the new Agreements app in Microsoft Teams, draft agreements with native Microsoft Word capabilities, and gain valuable AI-driven insights, making management of your agreements more efficient.
 
@@ -34,10 +34,10 @@ The SharePoint Agreements AI solution is an end-to-end solution, powered by AI, 
 - **Agreements tab in Microsoft Word**. This feature assists in authoring templates and agreements. You can add fields and sections to your templates and incorporate approval workflows, ensuring that generated agreements are automatically routed for approval. The tab also enables you to draft new agreements from published templates by filling in the required fields.
 
 - **AI capabilities**. The AI functionality helps manage the entire lifecycle of your agreements. When you create a new agreement from a template, you get AI-based section revision summary that helps you review changes faster. When you upload signed agreements, the AI extracts key information, such as the second party’s name and expiration date, making your agreements organized and easily searchable.
-
+<!---
 > [!NOTE]
-> SharePoint Agreements AI Solution is available for selective General Availability (GA). The selective GA is by invitation only. Contact your Microsoft representative or submit your nomination for the selective GA here: [Sign up for selective GA](https://aka.ms/AgreementsSelectiveGA).
-
+> SharePoint Agreements AI solution is available for selective General Availability (GA). The selective GA is by invitation only. Contact your Microsoft representative or submit your nomination for the selective GA here: [Sign up for selective GA](https://aka.ms/AgreementsSelectiveGA).
+--->
 ## Benefits of using SharePoint Agreements AI
 
 With SharePoint Agreements AI, you can:
