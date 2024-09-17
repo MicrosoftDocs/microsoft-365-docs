@@ -62,7 +62,7 @@ jobs:
             AccessToken: ${{ secrets.MARVEL_REPO_ACCESS_TOKEN }}
             TargetOrganization: "MicrosoftDocs"
             TargetRepository: "microsoft-365-docs-pr"
-            TargetPath: "microsoft365/includes"
+            TargetPath: "microsoft-365/includes"
             EndpointsContentOwner: "dstrome"
           run: |
 
