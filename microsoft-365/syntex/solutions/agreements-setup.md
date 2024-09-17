@@ -72,7 +72,7 @@ Before setting up a workspace for SharePoint Agreements AI, you need to ensure:
 
 - The user implementing the steps in the article needs to be either a Global Administrator or SharePoint Administrator.
 
-    [!INCLUDE [global-administrator-note](../includes/global-administrator-note.md)]
+    [!INCLUDE [global-administrator-note](../../includes/global-administrator-note.md)]
 
 - User accounts are available with the [SharePoint Content Solution - Agreements (Preview) license](agreements-license-requirements.md#assign-license-to-a-user).
 
