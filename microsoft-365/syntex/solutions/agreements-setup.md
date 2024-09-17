@@ -68,13 +68,13 @@ Workspaces are grouped areas where templates, snippets, and agreements live. Eac
 
 ### Prerequisites
 
-Before setting up a workspace for SharePoint Agreements AI, you'll need to ensure:  
+Before setting up a workspace for SharePoint Agreements AI, you need to ensure:  
 
 - The user implementing the steps in the article needs to be either a Global Administrator or SharePoint Administrator.
 
-- User accounts are available with the [SharePoint Content Solution - Agreements (Preview) license](#assign-the-licenses).
+- User accounts are available with the [SharePoint Content Solution - Agreements (Preview) license](agreements-license-requirements.md#assign-license-to-a-user).
 
-- You have downloaded and installed the latest [SharePoint Online Management Shell](https://www.microsoft.com/en-in/download/details.aspx?id=35588).
+- You have downloaded and installed the latest [SharePoint Online Management Shell](https://www.microsoft.com/download/details.aspx?id=35588).
 
     > [!NOTE]
     > You must be a SharePoint Administrator or Global Administrator to create sites through the SharePoint Online Management Shell.
@@ -141,9 +141,9 @@ The following roles can be assigned:
 
 - **Workspace member**. This role can manage templates and has access to all agreements.
 
-- **Template manager**. This role can manage templates and will not have access to all agreements by default.
+- **Template manager**. This role can manage templates and won't have access to all agreements by default.
 
-- **Creator**. This role can only access their own documents and generally work with other roles to generate agreements. They may also be agreements approvers.
+- **Creator**. This role can only access their own documents and generally work with other roles to generate agreements. They might also be agreement approvers.
 
 ### Manage roles
 
