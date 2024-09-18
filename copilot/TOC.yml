@@ -56,7 +56,7 @@
         - name: Service description
           href: /office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot?toc=%2Fcopilot%2Fmicrosoft-365%2Ftoc.json&bc=%2Fcopilot%2Fmicrosoft-365%2Fbreadcrumb%2Ftoc.json
         - name: Technical training for Microsoft 365 Copilot
-          href: /training/paths/prepare-your-organization-microsoft-365-copilot/?toc=%2Fcopilot%2Fmicrosoft-365%2Ftoc.json&bc=%2Fcopilot%2Fmicrosoft-365%2Fbreadcrumb%2Ftoc.json
+          href: /training/paths/prepare-your-organization-microsoft-365-copilot/
         - name: "Copilot lab: End user resources"
           href: https://copilot.cloud.microsoft/
         - name: Provide Copilot feedback to Microsoft
