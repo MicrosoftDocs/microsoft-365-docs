@@ -93,6 +93,20 @@ You can continue to manage access to Office add-ins and Teams apps via the follo
 
 You can continue to deploy [Deploy and manage Office Add-ins](/microsoft-365/admin/manage/office-addins) and [Teams Apps via Teams admin center](/microsoftteams/manage-apps).
 
+## Find support information for apps
+
+In the Integrated Apps page, when evaluating an app, you can review the Terms of Use and Privacy Policy of the application before you make it available to your users.
+
+You can access this information in the following ways:
+
+- For publicly available Store apps, the Terms of Use and Privacy Policy are available on [AppSource](https://appsource.microsoft.com). Search for an application and navigate to its **Details + Support** tab to see the **Legal** section for the links.
+
+   :::image type="content" source="../../media/app-support-legal-info.png" alt-text="{alt-text}":::
+
+- For a custom app, contact the app developer who initiated the request to upload the custom app. For Copilot agents submitted via Microsoft Copilot Studio, Teams Toolkit, or any other source, requester's contact details are available in the app details pane in `Requested Apps` tab.
+
+- You can view the same information of an app in the Teams admin center as well. For details, see [how to find support information for an app](/microsoftteams/manage-apps#support-information-for-apps).
+
 ## Frequently asked questions
 
 ### Which administrator role do I need to access Integrated apps?
