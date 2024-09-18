@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
-ms.date: 05/11/2023
+ms.date: 09/18/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -33,7 +33,7 @@ In addition to the controls available to you in the Integrated Apps portal, admi
 
 ## How to block a Teams app on Teams
 
-1. Sign into Microsoft 365 admin center as a Global Administrator or Azure Application Admin.
+1. Sign into Microsoft 365 admin center as a global administrator.
 2. Select **Settings**, and then select **Integrated Apps**.
 3. Select the **Available Apps** list.
 4. Select an app with the status **Some or all users in the organization can install** from the **Available Apps** list to open the overview pane. These apps will always have only Teams listed as host product.
@@ -44,7 +44,7 @@ When the admin blocks such an app, it's blocked for all users in the organizatio
 
 ## How to unblock a Teams app on Teams?
 
-1. Sign into Microsoft 365 admin center as a Global Administrator or Azure Application Admin.
+1. Sign into Microsoft 365 admin center as a global administrator.
 2. Select **Settings**, and then select **Integrated Apps**.
 3. Select the **Blocked Apps** list.
 4. Select an app from the **Blocked Apps** list to open the overview pane.
