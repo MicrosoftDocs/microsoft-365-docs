@@ -20,9 +20,9 @@ description: Learn how to create an agreement with the SharePoint Agreements AI 
 
 # Create an agreement with the SharePoint Agreements AI solution
 
-## Create an agreement from a template
+## Create an agreement from a published template
 
-To create an agreement from a template, follow these steps:
+To create an agreement from a published template, follow these steps:
 
 1. From the Agreements app in Microsoft Teams, select the **Create an agreement** card on the home tab, or select the **New Agreement** button on the **Agreements** tab.
 
@@ -69,13 +69,11 @@ To create an agreement from Microsoft Word, follow these steps:
 
 4. If there are no errors, a summary of all required fields with their values is displayed.
 
-5. To go back to the **Fill fields** section, where you can edit the populated field values, select **Edit fields**. Once done, select **Next** again and repeat the process as needed.  
+5. You can also modify section content if there are sections in the template marked as editable.
 
-6. If there are sections in the template marked as editable, you can modify the section content.
+6. Once you're done making all changes, select **Next** to set the document to read-only mode to prevent any further edits.
 
-7. Once you're done making all changes, select **Next** to set the document to read-only mode to prevent any further edits.
-
-## Set up the workflow for an agreement
+## Send the agreement for workflow
 
 Template creators have the option to configure two workflows: approval and eSignature. Any agreement generated from such a template needs to go through the workflow stages configured at the template level.
 
@@ -83,8 +81,6 @@ Template creators have the option to configure two workflows: approval and eSign
 > If the workflow is not configured with the template, you can still request approvals for documents generated from templates.
 
 ## Request approvals
-
-For documents where mandatory approvals are configured, follow these steps:
 
 1. After you fill in the fields, the next step is to send the document for approval.
 
