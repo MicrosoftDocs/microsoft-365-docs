@@ -34,4 +34,4 @@ When the "SharePoint Content Solution - Agreements Trial" licenses are available
 <br>
 
 > [!div class="nextstepaction"]
-> [See the complete list of help documentation.](solutions/agreements-overview.md#help-documentation)
+> [See the complete list of help documentation.](agreements-overview.md#help-documentation)
