@@ -229,6 +229,9 @@ To request approval before publishing the section, follow these steps:
 
 8. You can cancel the sent approval request by selecting **Cancel request** or select **Edit section**, which will cancel all running flows and unlock the template for further edits, and the document will return to **Draft** state.
 
+##Sharing published templates
+Once a tempalte is published, workspace owners, workspace members and template managers can create agreements from it. You can also share the template with read only permission to users not in the workspace. This will give those users the ability to create agreements from the template.
+
 <br>
 
 > [!div class="nextstepaction"]
