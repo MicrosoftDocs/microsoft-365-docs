@@ -116,20 +116,17 @@ To configure the settings, follow these steps:
 
 2. Edit the section to configure or [create a new section](agreements-manage-sections.md#create-a-new-section).
 
-3. Select **Settings** to set edit permissions and other behaviour of the section for document generation. There are two configurable settings elements:
+3. Select **Settings** to set edit permissions and other behaviour of the section for document generation.
 
 - Choose section edit permissions for document authors
    - **Editable** (default selection) – Document authors can edit the section content during document generation flow.
    - **Read-only** – Document authors can't modify the content of the section. It's locked for further edits.
 
-- Choose if document authors can choose to replace this section with another section from the same category.
-   - **Replaceable** - Document authors can replace this section with a different section from the same category.
-   - **Non-replaceable** (default selection) - Document authors cannot replace the section with another section from the same category.
+![](media/image8.png)
 
 > [!NOTE]
 > These settings don't apply when a section gets inserted into a template. Template authors can modify or format content of any inserted section. The changes will stay only in the scope of the template and will not get updated in the published section.
 
-![](media/image8.png)
 
 ## Request approval before publishing the section
 
@@ -155,11 +152,11 @@ To request approval before publishing the section, follow these steps:
 
 6. After you configure the approval request, select **Send**.** The section document is marked as read-only once the approval request starts. Approvers who don't have access to the section will be granted view permissions.
 
-    ![A screenshot of a computer Description automatically generated.](media/image10.png)
+    ![](media/image10.png)
 
 7. Once the approval request is sent, you can track the request status (Approval in progress, Approval completed) through the Word pane by reloading the section management pane or selecting **Refresh**. Optionally, you can also track the request by selecting the **Sent** tab in the Approvals app in Microsoft Teams.
 
-    ![A screenshot of a computer Description automatically generated.](media/image11.png)
+    ![](media/image11.png)
 
 8. If you need to make changes in the section after it has been sent for approval, you can cancel the sent approval request. To do so, select **Cancel request** or select **Edit section**, which will cancel the current approval request and unlock the section for further edits. The section returns to Draft state.
 
