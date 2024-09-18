@@ -122,11 +122,10 @@ To configure the settings, follow these steps:
    - **Editable** (default selection) – Document authors can edit the section content during document generation flow.
    - **Read-only** – Document authors can't modify the content of the section. It's locked for further edits.
 
-![](media/image8.png)
+   ![A screenshot of the Agreements tab in Word showing the Manage sections panel.](../../media/content-understanding/agreements-manage-sections.png)
 
 > [!NOTE]
 > These settings don't apply when a section gets inserted into a template. Template authors can modify or format content of any inserted section. The changes will stay only in the scope of the template and will not get updated in the published section.
-
 
 ## Request approval before publishing the section
 
@@ -146,7 +145,7 @@ To request approval before publishing the section, follow these steps:
 
 4. Create the approval request.
 
-    ![](media/image9.png)
+   ![A screenshot of the Agreements tab in Word showing the Manage sections panel.](../../media/content-understanding/agreements-approval-request.png)
 
 5. Fill in the name of the request, the approvers (who needs to approve it), the approval order, any additional information, and choose **Notify via email** if you want to send email notifications along with Teams notification.
 
