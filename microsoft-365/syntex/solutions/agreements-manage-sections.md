@@ -118,8 +118,10 @@ To configure the settings, follow these steps:
 
 3. Select **Settings** to set edit permissions and other behaviour of the section for document generation.
 
-- Choose section edit permissions for document authors
+4. Under **Settings**, choose the section edit permissions for document authors:
+
    - **Editable** (default selection) – Document authors can edit the section content during document generation flow.
+
    - **Read-only** – Document authors can't modify the content of the section. It's locked for further edits.
 
    ![A screenshot of the Agreements tab in Word showing the Manage sections panel.](../../media/content-understanding/agreements-manage-sections.png)
