@@ -151,7 +151,7 @@ To request approval before publishing the section, follow these steps:
 
 6. After you configure the approval request, select **Send**.** The section document is marked as read-only once the approval request starts. Approvers who don't have access to the section will be granted view permissions.
 
-    ![](media/image10.png)
+   ![A screenshot of the Manage sections panel showing the Send approval request.](../../media/content-understanding/agreements-send-approval.png)
 
 7. Once the approval request is sent, you can track the request status (Approval in progress, Approval completed) through the Word pane by reloading the section management pane or selecting **Refresh**. Optionally, you can also track the request by selecting the **Sent** tab in the Approvals app in Microsoft Teams.
 
