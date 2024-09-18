@@ -87,7 +87,7 @@ Before setting up a workspace for SharePoint Agreements AI, you need to ensure:
 
 2. Connect to your tenant by running the following command:
 
-    `Connect-SPOService -Url "https://\<tenantName>-admin.sharepoint.com"`
+    ```Connect-SPOService -Url "https://\<tenantName>-admin.sharepoint.com"```
 
     Replace \<tenantName> with the name of your SharePoint tenant.
 
@@ -96,7 +96,7 @@ Before setting up a workspace for SharePoint Agreements AI, you need to ensure:
 
 3. Run the following command to create a new SharePoint site and set it as an Agreements workspace.
 
-    `New-SPOSite -Url "\<URL>" -Owner "\<user>" -StorageQuota 1000 -Title "<Workspace Name>" -EnableAgreementsSolution -Template "STS#3"`
+    ```New-SPOSite -Url "\<URL>" -Owner "\<user>" -StorageQuota 1000 -Title "<Workspace Name>" -EnableAgreementsSolution -Template "STS#3"```
 
     Where:
 
@@ -105,15 +105,16 @@ Before setting up a workspace for SharePoint Agreements AI, you need to ensure:
     - \<Workspace Name> is the name you would like for the new workspace.
 
 4. The final PowerShell steps enable approvals workflow. Run the following set of commands on the newly created SharePoint site.
+   
+```
+     $script = '{"$schema":"https://developer.microsoft.com/json-schemas/sp/site-design-script-actions.schema.json","actions":[{"verb":"createSPList","listName":"Modern Template Library","templateType":101,"subactions":[{"verb":"enableApprovals"}]},{"verb":"createSPList","listName":"Section Library","templateType":101,"subactions":[{"verb":"enableApprovals"}]}]}
 
-     `$script = '{"$schema":"https://developer.microsoft.com/json-schemas/sp/site-design-script-actions.schema.json","actions":[{"verb":"createSPList","listName":"Modern Template Library","templateType":101,"subactions": 
-      [{"verb":"enableApprovals"}]},{"verb":"createSPList","listName":"Section Library","templateType":101,"subactions":[{"verb":"enableApprovals"}]}]}'`
+     $SiteScriptResult = Add-SPOSiteScript -Title 'Enable Approvals for Template and Sections Library' -Content $script
 
-     `$SiteScriptResult = Add-SPOSiteScript -Title 'Enable Approvals for Template and Sections Library' -Content $script`
+     $SiteDesignResult = Add-SPOSiteDesign -Title 'Enable Approvals for Template and Sections Library' -WebTemplate STS -SiteScripts $SiteScriptResult.Id
 
-     `$SiteDesignResult = Add-SPOSiteDesign -Title 'Enable Approvals for Template and Sections Library' -WebTemplate STS -SiteScripts $SiteScriptResult.Id`
-
-     `Invoke-SPOSiteDesign -Identity $SiteDesignResult.Id -WebUrl $AgreementsSiteUrl`
+     Invoke-SPOSiteDesign -Identity $SiteDesignResult.Id -WebUrl $AgreementsSiteUrl
+```
 
 ## Add the Agreements app in Microsoft Teams
 
