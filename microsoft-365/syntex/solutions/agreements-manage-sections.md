@@ -157,13 +157,15 @@ To request approval before publishing the section, follow these steps:
 
    ![A screenshot of the Send for approval confirmation screen.](../../media/content-understanding/agreements-approval-confirmation.png)
 
-8. Once the approval request is sent, you can track the request status (Approval in progress, Approval completed) through the Word pane by reloading the section management pane or selecting **Refresh**. Optionally, you can also track the request by selecting the **Sent** tab in the Approvals app in Microsoft Teams.
+8. Once the approval request is sent, you can track the request status (**Approval in progress**, **Approval completed**) through the Word pane by reloading the **Manage sections** panel or selecting **Refresh**. Optionally, you can also track the request by selecting the **Sent** tab in the Approvals app in Microsoft Teams.
 
-    ![](media/image11.png)
+   ![A screenshot of the Manage sections panel showing the approval in progress.](../../media/content-understanding/agreements-approval-in-progress.png)
 
-9. If you need to make changes in the section after it has been sent for approval, you can cancel the sent approval request. To do so, select **Cancel request** or select **Edit section**, which will cancel the current approval request and unlock the section for further edits. The section returns to Draft state.
+9. If you need to make changes in the section after it has been sent for approval, you can cancel the sent approval request. To do so, select **Cancel request** or select **Edit section**. On the confirmation screen, select **Cancel**.
 
-    ![](media/image12.png)
+   ![A screenshot of the Cancel approval request confirmation screen.](../../media/content-understanding/agreements-cancel-approval-confirmation.png)
+
+    This will cancel the current approval request and unlock the section for further edits. The section returns to **Draft** state.
 
 ## Publish a section
 
