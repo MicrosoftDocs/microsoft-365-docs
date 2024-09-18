@@ -6,7 +6,7 @@ ms.author: jtremper
 author: jacktremper
 manager: pamgreen
 audience: Admin
-ms.topic: article
+ms.topic: solution-overview
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: 

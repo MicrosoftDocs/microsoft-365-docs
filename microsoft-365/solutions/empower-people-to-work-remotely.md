@@ -7,7 +7,7 @@ ms.author: bcarter
 manager: dansimp
 ms.date: 04/22/2024
 audience: ITPro
-ms.topic: article
+ms.topic: solution-overview
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
