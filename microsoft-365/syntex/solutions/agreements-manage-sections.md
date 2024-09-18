@@ -116,7 +116,7 @@ To configure the settings, follow these steps:
 
 2. Edit the section to configure or [create a new section](agreements-manage-sections.md#create-a-new-section).
 
-3. Select **Settings** to set edit permissions and other behaviour of the section for document generation.
+3. Select **Settings** to set edit permissions and other behavior of the section for document generation.
 
 4. Under **Settings**, choose the section edit permissions for document authors:
 
@@ -149,21 +149,21 @@ To request approval before publishing the section, follow these steps:
 
    ![A screenshot of the Agreements tab in Word showing the Manage sections panel.](../../media/content-understanding/agreements-approval-request.png)
 
-5. Fill in the name of the request, the approvers (who needs to approve it), the approval order, any additional information, and choose **Notify via email** if you want to send email notifications along with Teams notification.
+5. Fill in the name of the request, the approvers (who needs to approve it), the approval order, any additional information, and choose **Notify approvers via email** if you want to send email notifications along with Teams notification.
 
-6. After you configure the approval request, select **Send**.** The section document is marked as read-only once the approval request starts. Approvers who don't have access to the section will be granted view permissions.
-
+6. After you configure the approval request, select **Send**. The section document is marked as read-only once the approval request starts. Approvers who don't have access to the section will be granted view permissions.
+<!---
    ![A screenshot of the Manage sections panel showing the Send approval request.](../../media/content-understanding/agreements-send-approval.png)
-
-7. On the confirmation screen, select **Send for approval**.
+--->
+7. On the **Send for approval?** confirmation screen, select **Send for approval**.
 
    ![A screenshot of the Send for approval confirmation screen.](../../media/content-understanding/agreements-approval-confirmation.png)
 
 8. Once the approval request is sent, you can track the request status (**Approval in progress**, **Approval completed**) through the Word pane by reloading the **Manage sections** panel or selecting **Refresh**. Optionally, you can also track the request by selecting the **Sent** tab in the Approvals app in Microsoft Teams.
-
+<!---
    ![A screenshot of the Manage sections panel showing the approval in progress.](../../media/content-understanding/agreements-approval-in-progress.png)
-
-9. If you need to make changes in the section after it has been sent for approval, you can cancel the sent approval request. To do so, select **Cancel request** or select **Edit section**. On the confirmation screen, select **Cancel**.
+--->
+9. If you need to make changes in the section after it has been sent for approval, you can cancel the sent approval request. To do so, select **Cancel request** or select **Edit section**. On the **Cancel approval request?** confirmation screen, select **Cancel**.
 
    ![A screenshot of the Cancel approval request confirmation screen.](../../media/content-understanding/agreements-cancel-approval-confirmation.png)
 
