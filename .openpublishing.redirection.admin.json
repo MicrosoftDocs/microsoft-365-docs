@@ -1,6 +1,11 @@
 {
    "redirections": [
      {
+       "source_path": "microsoft-365/admin/manage/manage-plugins-for-copilot-in-integrated-apps.md",
+       "redirect_url": "/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps",
+       "redirect_document_id": false
+     },
+	 {
        "source_path": "microsoft-365/admin/manage/servicenow-aad-oauth-token.md",
        "redirect_url": "/microsoft-365/admin/manage/servicenow-authentication",
        "redirect_document_id": false
