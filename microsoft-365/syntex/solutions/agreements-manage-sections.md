@@ -129,7 +129,7 @@ To configure the settings, follow these steps:
 > [!NOTE]
 > These settings don't apply when a section gets inserted into a template. Template authors can modify or format content of any inserted section. The changes will stay only in the scope of the template and will not get updated in the published section.
 
-## Request approval before publishing the section
+## Request approval to publish the section
 
 Once you have made the relevant changes to section and configured section settings, you can optionally choose to send a draft section for approval before publishing the section.
 
