@@ -11,7 +11,6 @@ ms.service: microsoft-365-backup
 ms.custom: backup
 search.appverid:
 ms.collection:
-    - essentials-overview
 ms.localizationpriority:  medium
 description: Set up third-party billing for Microsoft 365 Backup Storage.
 ---
