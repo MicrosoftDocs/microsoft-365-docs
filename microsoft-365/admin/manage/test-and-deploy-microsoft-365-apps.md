@@ -99,7 +99,7 @@ In the Integrated Apps page, when evaluating an app, you can review the Terms of
 
 You can access this information in the following ways:
 
-- For publicly available Store apps, the Terms of Use and Privacy Policy are available on [AppSource](https://appsource.microsoft.com). Search for an application and navigate to its **Details + Support** tab to see the **Legal** section for the links.
+- For publicly available Store apps, links to Terms of Use, Privacy Policy, and Support are available on [AppSource](https://appsource.microsoft.com). Search for an application and navigate to its **Details + Support** tab for the links.
 
    :::image type="content" source="../../media/app-support-legal-info.png" alt-text="{alt-text}":::
 
