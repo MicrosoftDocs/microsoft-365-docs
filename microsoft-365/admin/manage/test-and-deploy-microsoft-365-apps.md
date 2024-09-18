@@ -101,7 +101,7 @@ You can access this information in the following ways:
 
 - For publicly available Store apps, links to Terms of Use, Privacy Policy, and Support are available on [AppSource](https://appsource.microsoft.com). Search for an application and navigate to its **Details + Support** tab for the links.
 
-   :::image type="content" source="../../media/app-support-legal-info.png" alt-text="{alt-text}":::
+   :::image type="content" source="../../media/app-support-legal-info.png" alt-text="Screenshot to show how to find app support information on AppSource website.":::
 
 - For a custom app, contact the app developer who initiated the request to upload the custom app. For Copilot agents submitted via Microsoft Copilot Studio, Teams Toolkit, or any other source, requester's contact details are available in the app details pane in `Requested Apps` tab.
 
