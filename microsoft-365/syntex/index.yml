@@ -4,11 +4,11 @@ title: Microsoft Syntex documentation # < 60 chars
 summary: Microsoft Syntex is a Microsoft 365 service that uses advanced content artificial intelligence (AI) and machine learning to provide an end-to-end intelligent document processing solution for your organization.
 metadata:
   title: Microsoft Syntex documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: This page contains links to some important topics related to Microsoft Syntex features. Start here to learn about compliance for Syntex. # Required; article description that is displayed in search results. < 160 chars.
+  description: This page contains links to some important information related to Microsoft Syntex features. Start here to learn about compliance for Microsoft Syntex. # Required; article description that is displayed in search results. < 160 chars.
   services: 
   ms.service: microsoft-syntex #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
-  ms.collection: m365initiative-syntex, essentials-navigation, essentials-navigation
+  ms.collection: m365initiative-syntex, essentials-navigation
   ms.custom: intro-hub-or-landing
   author: chuckedmonson #Required; your GitHub user alias, with correct capitalization.
   ms.author: chucked #Required; microsoft alias of author; optional team alias.
@@ -22,19 +22,19 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card 1
-  - title: About Syntex
+  - title: About Microsoft Syntex
     linkLists:
       - linkListType: overview
         links:
-          - text: What is Syntex?
+          - text: What is Microsoft Syntex?
             url: syntex-overview.md
-          - text: Syntex models
+          - text: Microsoft Syntex models
             url: model-types-overview.md
       - linkListType: learn
         links:
-          - text: Introduction to Syntex
+          - text: Introduction to Microsoft Syntex
             url: /training/modules/syntex-intro
-          - text: Syntex on LinkedIn Learning
+          - text: Microsoft Syntex on LinkedIn Learning
             url: https://www.linkedin.com/learning/search?keywords=syntex&upsellOrderOrigin=default_guest_learning&trk=homepage-learning_learning-search-bar_search-submit
       - linkListType: whats-new
         links:
@@ -50,7 +50,7 @@ landingContent:
         links:
           - text: Licensing
             url: syntex-licensing.md
-          - text: Set up Syntex
+          - text: Set up Microsoft Syntex
             url: set-up-microsoft-syntex.md
       - linkListType: how-to-guide
         links:
@@ -62,7 +62,7 @@ landingContent:
             url: create-local-model.md
 
 # Card 3
-  - title: Syntex services
+  - title: Microsoft Syntex services
     linkLists:
       - linkListType: overview
         links:
@@ -104,7 +104,7 @@ landingContent:
             url: /graph/api/resources/documentprocessingjob?view=graph-rest-beta
           - text: Unstructured model REST API
             url: /sharepoint/dev/apis/syntex/syntex-model-rest-api
-          - text: PowerShell for Syntex
+          - text: PowerShell for Microsoft Syntex
             url: powershell-syntex-intro.md
           - text: SharePoint Advanced Management
             url: /sharepoint/advanced-management
