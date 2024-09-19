@@ -1,9 +1,9 @@
 ---
-title: Set up the SharePoint Agreements AI solution
+title: Set up SharePoint Agreements AI
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
-ms.reviewer: ssathyamoort
+ms.reviewer: ssathyamoort, rk-menon
 ms.date: 09/18/2024
 audience: admin
 ms.topic: conceptual
@@ -18,54 +18,17 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Learn how to set up licensing tools for the SharePoint Agreements AI solution.
 ---
 
-# Summary
-There are a few steps tp setting up the solution.
-1. A Global admin needs to get and assign the required licenses. [SharePoint Content Solution - Agreements (Preview) license](agreements-license-requirements.md#assign-license-to-a-user).
-2. A SharePoint Admin needs to create a workspace.
-3. Workspace owners can then configure their workspace.
-4. Deploy the Agreements app in teams.
+# Set up SharePoint Agreements AI
 
-<!---
-## Get and assign licenses
+There are a few steps to setting up the solution.
 
-You must be a SharePoint Administrator or Global Administrator to activate the SharePoint Agreements AI solution, purchase licenses, and assign the licenses to users.
+1. A Global Administrator [gets and assign the required SharePoint Content Solution - Agreements (Preview) license](agreements-license-requirements.md#assign-license-to-a-user).
 
-> [!NOTE]
-> While in preview, these licenses are 100% discounted for up to 25 users for six months.
+2. A SharePoint Administrator [creates a workspace](#create-workspaces).
 
-### Get the licenses
+3. Workspace owners [configure their workspace](#configure-the-workspace).
 
-1. Your Microsoft representative will provide you with a promo code link. Select the link and sign in as a Global Administrator.
-
-   ![A screenshot of sign-in page.](../../media/content-understanding/agreements-sign-in.png)
-
-2. On the **Checkout** page, provide your contact and billing information. This step requires a credit card, and the card won't be charged during preview.
-
-   ![A screenshot of Checkout page showing the contact and billing information.](../../media/content-understanding/agreements-checkout.png)
-
-3. In the **Items in this order** section, choose the number of licenses you would like. The promotional link will give you 100% discount on up to 25 licenses for six months.
-
-    > [!IMPORTANT]
-    > By default, the number of licenses is set to 1. Change this to 25 licenses to get the most out of the promo code.
-
-   ![A screenshot of Checkout page showing the Items in this order section.](../../media/content-understanding/agreements-items-in-order.png)
-
-4. In the **Summary** section, select **Place order**.
-
-   ![A screenshot of Checkout page showing the Place order button.](../../media/content-understanding/agreements-place-order.png)
-
-### Assign the licenses
-
-Assigning licenses to users is performed the same way as assigning other licenses, such as Microsoft 365 E3 or Microsoft 365 E5.
-
-1. Sign in to the [Microsoft 365 admin portal](https://admin.microsoft.com/) as a Global Administrator.
-
-2. Go to **Users** > **Active users**.
-
-3. Select the users who you would like to assign the license to. In the user information panel, go to **Licenses and apps** and assign the new **SharePoint Content Solution - Agreements (Preview)** license.
-
-   ![A screenshot of the user information panel showing license options.](../../media/content-understanding/agreements-assign-licenses.png)
---->
+4. The [Agreements app is added in Microsoft Teams](#add-the-agreements-app-in-microsoft-teams).
 
 ## Create workspaces
 
@@ -81,7 +44,7 @@ Before setting up a workspace for SharePoint Agreements AI, you need to ensure:
 
 - User accounts are available with the [SharePoint Content Solution - Agreements (Preview) license](agreements-license-requirements.md#assign-license-to-a-user).
 
-- You have downloaded and installed the latest [SharePoint Online Management Shell](https://www.microsoft.com/download/details.aspx?id=35588).
+- You download and install the latest [SharePoint Online Management Shell](https://www.microsoft.com/download/details.aspx?id=35588).
 
     > [!NOTE]
     > You must be a SharePoint Administrator or Global Administrator to create sites through the SharePoint Online Management Shell.
@@ -129,10 +92,12 @@ $script = '{"$schema":"https://developer.microsoft.com/json-schemas/sp/site-desi
 ```
 
 ## Deploy the Agreements app to users in Microsoft Teams
+
 As a global administrator or a Teams administrator, you can follow the steps outlined in the [Manage your apps in the Microsoft Teams Admin Center](/microsoftteams/manage-apps) to deploy the Agreements app to all users or specific users in your organization.
 
 ## Add the Agreements app in Microsoft Teams
-Follow the steps below (no administrator privileges needed) to the Agreements App in Teams:
+
+To add the Agreements app in Microsoft Teams, follow these steps (no administrator privileges needed):
 
 1. Launch Microsoft Teams.
 
