@@ -243,10 +243,10 @@
           href: solutions/agreements-overview.md
         - name: Admin setup
           items:
-            - name: User prerequisites
-              href: solutions/agreements-user-prereqs.md
             - name: Get and assign licenses
               href: solutions/agreements-license-requirements.md
+            - name: User prerequisites
+              href: solutions/agreements-user-prereqs.md
             - name: Set up the solution
               href: solutions/agreements-setup.md
         - name: Create a template
