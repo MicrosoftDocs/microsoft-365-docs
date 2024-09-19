@@ -1,5 +1,5 @@
 ---
-title: Analyze section revisions in the SharePoint Agreements AI solution
+title: Analyze section revisions in SharePoint Agreements AI
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -18,7 +18,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Learn how to analyze section revisions with the SharePoint Agreements AI solution.
 ---
 
-# Analyze section revisions in the SharePoint Agreements AI solution
+# Analyze section revisions in SharePoint Agreements AI
 
 Section revision analysis is an AI-powered feature that helps maintain consistency with company-approved language. It detects changes in embedded sections, summarizes these changes, and offers suggestions.
 
