@@ -43,8 +43,8 @@ To create a section in Microsoft Word, follow these steps:
    ![A screenshot of the Enter section details page.](../../media/content-understanding/agreements-sections-enter-details.png)
 
     - **Name** – Enter a name for the section.
+    - **Workspace** – Choose the workspace where to save the section. This section, once published, is only available to be inserted in templates for this workspace. You can't change the workspace after creating the section.
     - **Description** – Enter a description of the section.
-    - **Workspace** – Choose the workspace where to save the section. This section, once published, -s only available to be inserted in templates for this workspace. You can't change the Workspace after creating the section.
     - **Category** – Choose a category from the list of categories that are configured for the selected workspace.
     - **Language** – Choose the language in which the section is or will be written.
     - **Countries or regions** – Select the country or region where the section is applicable.
