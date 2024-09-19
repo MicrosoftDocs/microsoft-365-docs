@@ -23,11 +23,15 @@ description: Learn how to get started with the SharePoint Agreements AI solution
 > [!NOTE]
 > SharePoint Agreements AI is available for selective General Availability (GA). The selective GA is by invitation only. Contact your Microsoft representative or submit your nomination for the selective GA here: [Sign up for selective GA](https://aka.ms/AgreementsSelectiveGA). For a list of articles to help you set up and use this feature, see [Help documentation](#help-documentation).
 
-SharePoint Agreements AI is an end-to-end solution, powered by AI, to help streamline and simplify your agreements, such as nondisclosure agreements and statements of work. From drafting to execution, the solution is ready to integrate seamlessly into your flow of work. Centralize your agreements in the new Agreements app in Microsoft Teams, draft agreements with native Microsoft Word capabilities, and gain valuable AI-driven insights, making management of your agreements more efficient.
+## Overview
+
+SharePoint Agreements AI is an end-to-end solution, powered by AI, to help streamline and simplify your agreements, such as nondisclosure agreements and statements of work. From drafting to execution, the solution is ready to integrate seamlessly into your flow of work.
+
+Centralize your agreements in the new Agreements app in Microsoft Teams, draft agreements with native Microsoft Word capabilities, and gain valuable AI-driven insights, making management of your agreements more efficient.
 
 ![A screenshot of Agreements app showing the home page.](../../media/content-understanding/agreements-home.png)
 
-## What you get with SharePoint Agreements AI
+## What you get
 
 With SharePoint Agreements AI, you get:
 
@@ -37,7 +41,7 @@ With SharePoint Agreements AI, you get:
 
 - **AI capabilities**. Manage the entire lifecycle of your agreements with value adding features powered by AI. Review agreements faster with AI-based section revision insights that describe how an agreement deviates from the original section. When you upload signed agreements, AI helps identify key properties such as the second party’s name and expiration date, helping organize your agreements and making them easily searchable.
 
-## What you can do with SharePoint Agreements AI
+## What you can do
 
 With SharePoint Agreements AI, you can:
 
