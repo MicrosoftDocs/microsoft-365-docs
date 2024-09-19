@@ -30,13 +30,13 @@ To create a section in Microsoft Word, follow these steps:
 
 1. Go to the **Agreements** tab in Word, and select **Manage sections**.
 
-    ![](media/image1.png)
+   ![A screenshot of the Agreements tab in Word showing the Manage sections option.](../../media/content-understanding/agreements-action-options.png)
 
 2. To create a section from blank Word document, select **Create a section** from the right panel.
 
 3. To create a section from an existing Word document, open the document, and then **Convert this document to a section** from the right panel.
 
-    ![](media/image2.png)
+   ![A screenshot of the Manage sections panel showing the Create and edit sections option.](../../media/content-understanding/agreements-sections-create-edit.png)
 
 4. Provide the following details to create a section and save it in the section library.
 
