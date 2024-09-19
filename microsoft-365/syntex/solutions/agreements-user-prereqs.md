@@ -1,8 +1,8 @@
 ---
-title: Prerequisites for using the SharePoint Agreements AI solution
-ms.author: neilh 
-author: neilhodgkinson
-manager: vijshar
+title: Prerequisites for using SharePoint Agreements AI
+ms.author: chucked
+author: chuckedmonson
+manager: jtremper
 ms.reviewer: ssathyamoort, neilh
 ms.date: 09/18/2024
 audience: admin
@@ -18,7 +18,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Learn about the user prerequisites for the SharePoint Agreements AI solution.
 ---
 
-# Prerequisites for using the SharePoint Agreements AI solution
+# Prerequisites for using SharePoint Agreements AI
 
 The SharePoint Agreements AI solution has several prerequisites to ensure users can fully use all of its features.
 
