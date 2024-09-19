@@ -81,7 +81,7 @@ Add-ins are supported in three desktop platforms: Windows, Mac, and Online Offic
 
 It can take up to 24 hours for an add-in to show up for client for all users.
 
-Currently, Exchange admins, Global admins, and Azure Application admins can deploy add-ins from Integrated apps.
+Currently, Exchange admins and Global admins can deploy add-ins from Integrated apps.
 
 ## Deploy your Office add-ins
 

@@ -103,7 +103,7 @@ The following table lists the available products and their **ProductId**. It als
 | Power Automate RPA* | CFQ7TTC0LSGZ | No |
 | Power BI Premium (standalone)* | CFQ7TTC0H6RP | No |
 | Power BI Pro* | CFQ7TTC0H9MP | No |
-| Project Plan 1* | CFQ7TTC0HDB1 | Yes |
+| Planner Plan 1* | CFQ7TTC0HDB1 | Yes |
 | Project Plan 3* | CFQ7TTC0HDB0 | No |
 | Python in Excel | CFQ7TTC0S3X1 | No |
 | Teams Exploratory | CFQ7TTC0J1FV | Yes |
