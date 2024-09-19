@@ -18,7 +18,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Learn how to set up licensing tools for the SharePoint Agreements AI solution.
 ---
 
-# Set up the SharePoint Agreements AI solution
+# Summary
+There are a few steps tp setting up the solution.
+1. A Global admin needs to get and assign the required licenses. [SharePoint Content Solution - Agreements (Preview) license](agreements-license-requirements.md#assign-license-to-a-user).
+2. A SharePoint Admin needs to create a workspace.
+3. Workspace owners can then configure their workspace.
+4. Deploy the Agreements app in teams.
 
 <!---
 ## Get and assign licenses
@@ -62,9 +67,9 @@ Assigning licenses to users is performed the same way as assigning other license
    ![A screenshot of the user information panel showing license options.](../../media/content-understanding/agreements-assign-licenses.png)
 --->
 
-## Set up workspaces
+## Create workspaces
 
-Workspaces are grouped areas where templates, snippets, and agreements live. Each workspace maps to a SharePoint site. Permissions are also defined at a workspace level. We recommend creating one workspace for every business line. For example, you could have one workspace each for your Legal, Procurement, and Human Resources departments.
+Workspaces are grouped areas where templates, snippets, and agreements are stored. Each workspace maps to a SharePoint site. Permissions are also defined at a workspace level. You can create one workspace for every business line. For example, you could have one workspace each for your Legal, Procurement, and Human Resources departments.
 
 ### Prerequisites
 
@@ -90,11 +95,12 @@ Before setting up a workspace for SharePoint Agreements AI, you need to ensure:
     ```Connect-SPOService -Url "https://\<tenantName>-admin.sharepoint.com"```
 
     Replace \<tenantName> with the name of your SharePoint tenant.
+   ex: ```Connect-SPOService -Url "https://contosoelectronics-admin.sharepoint.com"```
 
    > [NOTE]
    > The Connect-SPOService might require the use of modern authentication to connect. For information about how to add modern authentication flow to your SPO-Connect cmdlet, see the [Connect-SPOService documentation](/powershell/module/sharepoint-online/connect-sposervice).
 
-3. Run the following command to create a new SharePoint site and set it as an Agreements workspace.
+4. Run the following command to create a new SharePoint site and set it as an Agreements workspace.
 
     ```New-SPOSite -Url "\<URL>" -Owner "\<user>" -StorageQuota 1000 -Title "<Workspace Name>" -EnableAgreementsSolution -Template "STS#3"```
 
@@ -103,11 +109,17 @@ Before setting up a workspace for SharePoint Agreements AI, you need to ensure:
     - \<URL> is the target URL of the new site.  
     - \<User> is the email address of the owner of the new workspace.
     - \<Workspace Name> is the name you would like for the new workspace.
+  
+    ex: ```New-SPOSite -Url "https://contosoelectronics.sharepoint.com/teams/LegalAgreements" -Owner "megan@contosoelectronics.onmicrosoft.com" -StorageQuota 1000 -Title "Legal agreements" -EnableAgreementsSolution -Template "STS#3"```
 
-4. The final PowerShell steps enable approvals workflow. Run the following set of commands on the newly created SharePoint site.
+5. The final PowerShell steps enable approvals workflow. Run the following set of commands on the newly created SharePoint site.
    
 ```
-     $script = '{"$schema":"https://developer.microsoft.com/json-schemas/sp/site-design-script-actions.schema.json","actions":[{"verb":"createSPList","listName":"Modern Template Library","templateType":101,"subactions":[{"verb":"enableApprovals"}]},{"verb":"createSPList","listName":"Section Library","templateType":101,"subactions":[{"verb":"enableApprovals"}]}]}
+     $AgreementsSiteUrl = "\<URL>"
+```
+Remember to replace \<URL> with the URL of the newly created SharePoint site
+```
+$script = '{"$schema":"https://developer.microsoft.com/json-schemas/sp/site-design-script-actions.schema.json","actions":[{"verb":"createSPList","listName":"Modern Template Library","templateType":101,"subactions":[{"verb":"enableApprovals"}]},{"verb":"createSPList","listName":"Section Library","templateType":101,"subactions":[{"verb":"enableApprovals"}]}]}
 
      $SiteScriptResult = Add-SPOSiteScript -Title 'Enable Approvals for Template and Sections Library' -Content $script
 
@@ -116,7 +128,11 @@ Before setting up a workspace for SharePoint Agreements AI, you need to ensure:
      Invoke-SPOSiteDesign -Identity $SiteDesignResult.Id -WebUrl $AgreementsSiteUrl
 ```
 
+## Deploy the Agreements app to users in Microsoft Teams
+As a global administrator or a Teams administrator, you can follow the steps outlined in the [Manage your apps in the Microsoft Teams Admin Center](/microsoftteams/manage-apps) to deploy the Agreements app to all users or specific users in your organization.
+
 ## Add the Agreements app in Microsoft Teams
+Follow the steps below (no administrator privileges needed) to the Agreements App in Teams:
 
 1. Launch Microsoft Teams.
 
@@ -134,19 +150,7 @@ Before setting up a workspace for SharePoint Agreements AI, you need to ensure:
 
 ## Configure the workspace
 
-After the workspace is created, the owner of the workspace can assign users to specific roles within the Agreements workspace and also create agreements categories.  
-
-### Assign roles
-
-The following roles can be assigned:
-
-- **Workspace owner**. This role can assign additional users to roles, create and manage categories, and manage templates.
-
-- **Workspace member**. This role can manage templates and has access to all agreements.
-
-- **Template manager**. This role can manage templates and won't have access to all agreements by default.
-
-- **Creator**. This role can only access their own documents and generally work with other roles to generate agreements. They might also be agreement approvers.
+Workspace owners can configure their workspace from the Agreements App. They can assign users to different roles in the workspace and manage the categories available in the workspace. 
 
 ### Manage roles
 
