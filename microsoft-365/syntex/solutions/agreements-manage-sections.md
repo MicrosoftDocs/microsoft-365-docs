@@ -38,9 +38,9 @@ To create a section in Microsoft Word, follow these steps:
 
    ![A screenshot of the Manage sections panel showing the Create and edit sections option.](../../media/content-understanding/agreements-sections-create-edit.png)
 
-4. Provide the following details to create a section and save it in the section library.
+4. On the **Enter section details** panel, enter the required details to create a section and save it in the section library.
 
-    ![](media/image3.png)
+   ![A screenshot of the Enter section details page.](../../media/content-understanding/agreements-sections-enter-details.png)
 
     - **Name** – Enter a name for the section.
     - **Description** – Enter a description of the section.
