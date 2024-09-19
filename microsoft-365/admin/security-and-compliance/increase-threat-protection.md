@@ -42,7 +42,7 @@ Check out all of our small business content on [Small business help & learning](
 
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
-This article suggests top tasks for small businesses that have a Microsoft 365 subscription to increase protection against phishing, malware, and other threats. These recommendations are also appropriate for organizations with an increased need for security, like law offices and health care clinics.
+This article is for small businesses that have a Microsoft 365 subscription and suggests top tasks to increase protection against phishing, malware, and other threats. These recommendations are also appropriate for organizations with an increased need for security, like law offices and health care clinics.
 
 Before you begin, note your current Microsoft Secure Score. The goal isn't to achieve the maximum score, but to be aware of opportunities to protect your small organization that don't negatively affect productivity for your users. Microsoft Secure Score analyzes your organization's security based on your regular activities and security settings, and assigns a score. To increase your score, complete the actions recommended in this article.
 
