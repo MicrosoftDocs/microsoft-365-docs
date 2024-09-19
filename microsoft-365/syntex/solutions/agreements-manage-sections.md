@@ -46,7 +46,7 @@ To create a section in Microsoft Word, follow these steps:
     - **Description** – Enter a description of the section.
     - **Workspace** – Choose the workspace where to save the section. This section, once published, -s only available to be inserted in templates for this workspace. You can't change the Workspace after creating the section.
     - **Category** – Choose a category from the list of categories that are configured for the selected workspace.
-    - **Language** – Choose the language in which the section will be or is written.
+    - **Language** – Choose the language in which the section is or will be written.
     - **Countries or regions** – Select the country or region where the section is applicable.
     - **Tags** – Enter keywords to better identify or search sections.
 
@@ -73,19 +73,13 @@ To insert fields in a section, follow these steps:
 
     To understand how to create a new field that isn't present in the list, see [Set up fields](agreements-create-template.md#set-up-fields).
 
-    - ![](media/image5.png)
-
 3. After you add the field, either highlight the text in the document that you want to link to the field, or position the cursor at the exact spot in the template where you want the field to be inserted.
 
 4. To insert the field only at the specified selection, select **Insert**. To insert the field at all similar places in the document, use the down arrow icon next to the **Insert** button, and then select **Insert at all similar places**. This inserts the field at all locations with text that exactly matches the selected text.
 
-    ![](media/image6.png)
-
 5. To identify or review the multiple field insertions in the template, use the left and right arrows at the bottom of the field card.
 
-    ![](media/image7.png)
-
-6. To delete the field or to view more details and perform additional actions, select **More options** (***...***) on the field card.
+6. To delete the field or to view more details and perform other actions, select **More options** (***...***) on the field card.
 
 ## Edit an existing section
 
@@ -155,7 +149,7 @@ To request approval before publishing the section, follow these steps:
 <!---
    ![A screenshot of the Manage sections panel showing the Send approval request.](../../media/content-understanding/agreements-send-approval.png)
 --->
-7. On the **Send for approval?** confirmation screen, select **Send for approval**.
+7. On the **Send for approval** confirmation screen, select **Send for approval**.
 
    ![A screenshot of the Send for approval confirmation screen.](../../media/content-understanding/agreements-approval-confirmation.png)
 
@@ -163,15 +157,15 @@ To request approval before publishing the section, follow these steps:
 <!---
    ![A screenshot of the Manage sections panel showing the approval in progress.](../../media/content-understanding/agreements-approval-in-progress.png)
 --->
-9. If you need to make changes in the section after it has been sent for approval, you can cancel the sent approval request. To do so, select **Cancel request** or select **Edit section**. On the **Cancel approval request?** confirmation screen, select **Cancel**.
+9. If you need to make changes in the section after it has been sent for approval, you can cancel the sent approval request. To do so, select **Cancel request** or select **Edit section**. On the **Cancel approval request** confirmation screen, select **Cancel**.
 
    ![A screenshot of the Cancel approval request confirmation screen.](../../media/content-understanding/agreements-cancel-approval-confirmation.png)
 
-    This will cancel the current approval request and unlock the section for further edits. The section returns to **Draft** state.
+    This cancels the current approval request and unlock the section for further edits. The section returns to **Draft** state.
 
 ## Publish a section
 
-Once you have added all the relevant fields and made the necessary configurations, you can publish the section to make it available for other users.
+Once you add all the relevant fields and made the necessary configurations, you can publish the section to make it available for other users.
 
 Select **Publish** to publish the section to be used by other users in the organization to configure templates. Only published sections can be inserted in templates.
 
