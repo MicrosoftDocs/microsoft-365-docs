@@ -1,5 +1,5 @@
 ---
-title: Manage sections in the SharePoint Agreements AI solution
+title: Manage sections in SharePoint Agreements AI
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -18,7 +18,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Learn about the approval notifications in the SharePoint Agreements AI solution.
 ---
 
-# Manage sections in the SharePoint Agreements AI solution
+# Manage sections in SharePoint Agreements AI
 
 Sections are reusable blocks of content that can be inserted in a template. They can form one of the core building blocks of your templates. You can create sections once and use them across multiple templates.
 

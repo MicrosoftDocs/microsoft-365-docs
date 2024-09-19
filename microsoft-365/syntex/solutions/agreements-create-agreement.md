@@ -1,5 +1,5 @@
 ---
-title: Create an agreement with the SharePoint Agreements AI solution
+title: Create an agreement in SharePoint Agreements AI
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -18,7 +18,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Learn how to create an agreement with the SharePoint Agreements AI solution.
 ---
 
-# Create an agreement with the SharePoint Agreements AI solution
+# Create an agreement in SharePoint Agreements AI
 
 ## Create an agreement from a published template
 
