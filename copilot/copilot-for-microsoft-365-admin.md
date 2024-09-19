@@ -73,11 +73,11 @@ In preview, Copilot is automatically enabled for select customers who have purch
 ### How can IT admins disable the feature?
 
 If you would like to exclude certain admins from this functionality, or opt your tenant out of the preview, you can easily do so
-via a [security group](/../../create-groups/create-groups.md#seucrity-groups). Start by [creating a security group](/../../create-groups/create-groups.md) with the following name: "**CopilotForM365AdminExclude**", no description or additional settings are required. The Copilot for Microsoft 365 admin experience will then be disabled for any admins added to this group.
+via a security group. Start by creating a security group with the following name: "**CopilotForM365AdminExclude**", no description or additional settings are required. The Copilot for Microsoft 365 admin experience will then be disabled for any admins added to this group.
 
 ### Which admin roles can use Copilot for Microsoft 365 admin?
 
-It will be available to all admins, and respect [role-based access controls](/../../add-users/about-admin-roles.md) (RBAC) within the admin center, only surfacing information and controls that the particular admin has access to. Copilot doesn't make any configuration changes on behalf of an admin, keeping security integrity intact.
+It will be available to all admins, and respect role-based access controls (RBAC) within the admin center, only surfacing information and controls that the particular admin has access to. Copilot doesn't make any configuration changes on behalf of an admin, keeping security integrity intact.
 
 ### Does Copilot for Microsoft 365 admin support audit logging?
 
