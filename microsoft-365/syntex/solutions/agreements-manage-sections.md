@@ -97,8 +97,8 @@ To edit a section, follow these steps:
 
 5. When you have made all the changes to the draft version, you can choose to [republish the section](agreements-manage-sections.md#publish-a-section), which replaces the current published version of the section with the latest one.
 
-> [!NOTE]
-> Once the draft section is republished, an email notification is sent to all template creators who have used the previous published version of the section. This is to inform them of the latest published version so that they can choose to pull in the latest changes in their template. Documents already generated from those templates will have no effect on the update.
+   > [!NOTE]
+   > After the draft section is republished, an email notification is sent to all template creators who used the previous version. This informs them of the new version, allowing them to update their templates if they choose. Documents already generated from those templates will not be affected by the update.
 
 ## Configure section settings
 
@@ -120,8 +120,8 @@ To configure the settings, follow these steps:
 
    ![A screenshot of the Agreements tab in Word showing the Manage sections panel.](../../media/content-understanding/agreements-manage-sections.png)
 
-> [!NOTE]
-> These settings don't apply when a section gets inserted into a template. Template authors can modify or format content of any inserted section. The changes will stay only in the scope of the template and will not get updated in the published section.
+   > [!NOTE]
+   > These settings don't apply when a section gets inserted into a template. Template authors can modify or format content of any inserted section. The changes will stay only in the scope of the template and will not get updated in the published section.
 
 ## Request approval to publish the section
 
