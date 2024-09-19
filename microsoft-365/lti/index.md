@@ -32,6 +32,9 @@ These tools include:
 
 For general information on managing Microsoft LTI apps, see [Manage Microsoft LTI apps for any LMS](manage-microsoft-one-lti.md).
 
+> [!NOTE]
+> The Microsoft LMS integrations require M365 Academic licensing for Faculty and Students (ex: A1, A3, A5).  Please visit the [Microsoft Education Licensing](https://www.microsoft.com/licensing/product-licensing/microsoft-365-education) page for more information on obtaining M365 Academic licensing for your organization.
+
 ## OneDrive LTI apps
 
 Learn more about using Microsoft OneDrive with your Learning Management System (LMS).
