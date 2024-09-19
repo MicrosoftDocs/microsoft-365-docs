@@ -52,13 +52,13 @@ To create a section in Microsoft Word, follow these steps:
 
 These field values help in filtering and searching the sections faster during template configuration or section management.
 
-1. Select **Save** to create and save the section in the Draft state. A separate copy of the document is created and saved in the section library. The original file is unaffected.
+5. Select **Save** to create and save the section in the Draft state. A separate copy of the document is created and saved in the section library. The original file is unaffected.
 
-2. After you save the section, the newly created section is opened in a new Word window and the section management panel opens up on the right-hand side of the Word canvas.
+6. After you save the section, the newly created section is opened in a new Word window and the section management panel opens up on the right-hand side of the Word canvas.
 
-    ![](media/image4.png)
+   ![A screenshot of an opened Word document and the Manage sections panel.](../../media/content-understanding/agreements-document-and-manage-sections.png)
 
-3. You can edit **Description**, **Category**, **Language**, **Countries or regions**, or **Tags** values from the **Edit details** option after you create the section.
+7. You can edit **Description**, **Category**, **Language**, **Countries or regions**, or **Tags** values from the **Edit details** option after you create the section.
 
 > [!NOTE]
 > You cannot change the workspace after the section is created.
