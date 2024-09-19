@@ -245,10 +245,10 @@
           items:
             - name: Get and assign licenses
               href: solutions/agreements-license-requirements.md
-            - name: User prerequisites
-              href: solutions/agreements-user-prereqs.md
             - name: Set up the solution
               href: solutions/agreements-setup.md
+            - name: Get users ready
+              href: solutions/agreements-user-prereqs.md
         - name: Create a template
           href: solutions/agreements-create-template.md
         - name: Update a template
