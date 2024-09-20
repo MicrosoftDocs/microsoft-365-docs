@@ -1,5 +1,5 @@
 ---
-title: Receive approval notifications for the SharePoint Agreements AI solution
+title: Receive approval notifications in SharePoint Agreements AI
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -18,7 +18,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Learn about the approval notifications in the SharePoint Agreements AI solution.
 ---
 
-# Receive approval notifications for the SharePoint Agreements AI solution
+# Receive approval notifications in SharePoint Agreements AI
 
 When a template or agreement creator sends the template or agreements for approval, two notification flows can be invoked. One flow is required and is via the Approvals app in Microsoft Teams. The second flow is optional and is via email.
 
