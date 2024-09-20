@@ -22,23 +22,23 @@ description: Learn about the user prerequisites for the SharePoint Agreements AI
 
 The SharePoint Agreements AI solution has several prerequisites to ensure users can fully use all of its features.
 
-## Software licensing
+## Software licenses
 
-Users of the solution need to be licensed for access to the following products:
+Users of the solution need to be have a license to access the following products:
 
- - SharePoint Content Solution – Agreements Trial
  - Microsoft SharePoint Online
  - Microsoft Teams
  - Microsoft Word
 
+In addition, users must also be assigned the **SharePoint Content Solution – Agreements Trial** license.
+
 ### Microsoft Word specific requirements
 
-Several features of the SharePoint Agreements AI solution require a new tab to be added to the Microsoft Word ribbon. This tab is titled **Agreements** and shows automatically when the correct user licensing is in place.
+Several features of SharePoint Agreements AI can be found on the new require a new tab **Agreements**. To get access to this tab, the following are the requirements:
 
-The **Agreements** tab requires a minimum version and update channel of Microsoft Word.
-
-The Microsoft Word minimum version needs to be September 2024 (16.0.17830.20000) or later, and the update channel needs to be set to the Current Channel (CC) or the Monthly Enterprise Channel (MEC).
-
+ - Users must be assigned the **SharePoint Content Solution – Agreements Trial** license.
+ - Microsoft Word must be updated to be September 2024 (16.0.17830.20000) or later, and the update channel must be set to the Currnet Channel (CC) or the Monthly Enterprise Channel (MEC).
+ 
 To learn more about how to determine the Microsoft Word version and update channel, see [Overview of update channels for Microsoft 365 apps](https://learn.microsoft.com/en-us/microsoft-365-apps/updates/overview-update-channels).
 
 <br>
