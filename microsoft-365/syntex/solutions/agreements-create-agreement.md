@@ -62,8 +62,8 @@ To create an agreement from Microsoft Word, follow these steps:
 
 2. Enter the values for all fields marked as mandatory. You can also provide values for fields not marked as mandatory.
 
-    > [!NOTE]
-    > Some fields might be present in the document content, while some might not be present. These are configured in the template.
+> [!NOTE]
+> Some fields might be present in the document content, while some might not be present. These are configured in the template.
 
 3. Select **"Next"** to review and confirm that the correct information has been entered for all the fields.
 
