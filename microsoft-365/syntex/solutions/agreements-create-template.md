@@ -101,14 +101,14 @@ There are a few standard fields that come with SharePoint Agreements AI. These f
 
 To create a new field, select **Create a new field**. When creating the field, you can provide a name for the field, mark the field as a required field, add a description, and select the type of field. Fields include the following types:
 
-    - Single line of text
-    - Multiple lines of text
-    - Number
-    - Date and time
-    - Hyperlink
-    - Email
-    - Table
-    - SharePoint List
+- Single line of text
+- Multiple lines of text
+- Number
+- Date and time
+- Hyperlink
+- Email
+- Table
+- SharePoint List
 
 ### Associate a field to a list or library
 
@@ -181,7 +181,7 @@ To set up a mandatory approval workflow, follow these steps:
 
    ![A screenshot of the Delete approval flow button on the Manage templates panel.](../../media/content-understanding/agreements-delete-approval.png)
 
-## Configure a SharePoint eSignature workflow
+### Configure a SharePoint eSignature workflow
 
 After creating or editing a template, you can set up a SharePoint eSignature flow. This ensures that every document generated from the template is automatically sent for signatures according to the specified flow. The SharePoint Agreements AI solution uses SharePoint eSignature to set up and send signature requests to recipients. For more information, see [Overview of SharePoint eSignature](/microsoft-365/syntex/esignature-overview).
 
