@@ -63,7 +63,7 @@ You can also create a template in Microsoft Word.
 
 9. You can now set up fields, sections, and workflows for this template.
 
-## Set up fields
+## Add fields to a template
 
 Fields are areas of the template that should be filled in when generating agreements from the template. When configuring the template, you can define as many fields as you like. For example, the name of a contractor can occur multiple times in a consulting agreement document. You can create a field named "Contractor Name" and associate it with all occurrences of the name throughout the document when you generate a template.
 
@@ -81,7 +81,7 @@ There are a few standard fields that come with SharePoint Agreements AI. These f
 
 - **Expiration type** – This type can either be single date, where the agreement expires on a specific date, or evergreen, where the agreement never expires.
 
-### Add fields to the template
+To add fields to a template, follow these steps:
 
 1. On the **Manage templates** panel, select **Set up fields**.
 
@@ -139,11 +139,9 @@ To associate a field to a SharePoint list or library, follow these steps:
 
 You can also allow users to manually input values with the **Document authors can type in values manually for this field** option. The values input by the authors are only used to generate the document. They won't be added to the SharePoint list.
 
-## Set up sections
+## Insert a section to a template
 
 Sections are reusable blocks of content that can be used across templates. For more information, see [Manage sections](agreements-manage-sections.md).
-
-### Insert a section
 
 To insert published sections into your template, follow these steps:
 
@@ -228,7 +226,7 @@ To request approval before publishing the section, follow these steps:
 
 8. You can cancel the sent approval request by selecting **Cancel request** or select **Edit section**, which will cancel all running flows and unlock the template for further edits, and the document will return to **Draft** state.
 
-## Share published templates
+### Share published templates
 
 Once a template is published, workspace owners, workspace members, and template managers can create agreements from it. You can also share the template with read-only permission to users not in the workspace. This gives those users the ability to create agreements from the template.
 
