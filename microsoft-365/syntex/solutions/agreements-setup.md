@@ -57,8 +57,8 @@ Before setting up a workspace for SharePoint Agreements AI, you need to ensure:
 
     ```Connect-SPOService -Url "https://\<tenantName>-admin.sharepoint.com"```
 
-    Replace \<tenantName> with the name of your SharePoint tenant.
-   ex: ```Connect-SPOService -Url "https://contosoelectronics-admin.sharepoint.com"```
+    Replace \<tenantName> with the name of your SharePoint tenant. <br><br>
+    Example: ```Connect-SPOService -Url "https://contosoelectronics-admin.sharepoint.com"```
 
    > [NOTE]
    > The Connect-SPOService might require the use of modern authentication to connect. For information about how to add modern authentication flow to your SPO-Connect cmdlet, see the [Connect-SPOService documentation](/powershell/module/sharepoint-online/connect-sposervice).
@@ -73,7 +73,7 @@ Before setting up a workspace for SharePoint Agreements AI, you need to ensure:
     - \<User> is the email address of the owner of the new workspace.
     - \<Workspace Name> is the name you would like for the new workspace.
   
-    ex: ```New-SPOSite -Url "https://contosoelectronics.sharepoint.com/teams/LegalAgreements" -Owner "megan@contosoelectronics.onmicrosoft.com" -StorageQuota 1000 -Title "Legal agreements" -EnableAgreementsSolution -Template "STS#3"```
+    Example: ```New-SPOSite -Url "https://contosoelectronics.sharepoint.com/teams/LegalAgreements" -Owner "megan@contosoelectronics.onmicrosoft.com" -StorageQuota 1000 -Title "Legal agreements" -EnableAgreementsSolution -Template "STS#3"```
 
 5. The final PowerShell steps enable approvals workflow. Run the following set of commands on the newly created SharePoint site.
    
