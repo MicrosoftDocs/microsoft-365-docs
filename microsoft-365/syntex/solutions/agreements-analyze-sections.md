@@ -28,13 +28,11 @@ Once you [create a document using a template](agreements-create-template.md), an
 
 To analyze the section revisions, follow these steps:
 
-1. Open the Microsoft Word document you want to analyze.
+1. Open the agreement you want to analyze.
 
 2. Select **Agreements** > **Generate Documents**, and then select **Analyze section revisions** to start the analysis.
 
-    It takes a short period of time for the AI based analysis to complete. The feature  identifies all the revised sections from the source template and provides a brief summary for each one.
-
-3. To make further modifications in the sections, select **Refresh results** to view the latest analysis.
+3. Once the analysis is complete, you can see a summary of changes. 
 
 4. Select **View details** to review changes of any section that interests you.
 
@@ -44,9 +42,7 @@ To analyze the section revisions, follow these steps:
     - **Summary** – Provides an AI-generated summary of the changes made to the section.
     - **Suggestions** – Provides suggestions to align the revised section with the source template.
 
-5. After you make changes in the relevant section’s details pane, select **Refresh results** to see the latest analysis.
-
-6. Based on the analysis, you can either modify the section and use the **Refresh results** option to rerun the analysis, or ignore the revision if it's not needed for the document.
+6. After you make changes in the relevant section’s details pane, select **Refresh results** to see the latest analysis.
 
 > [!NOTE]
 >The suggestions and summary provided are not legal advice from Microsoft. The section information defined by your organization is used to perform the revision analysis.

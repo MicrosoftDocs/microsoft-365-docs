@@ -24,17 +24,15 @@ Templates have their own lifecycle management requirements and will change over 
 
 ## Choose a template to edit
 
-1. In Microsoft Word, on the **Home** tab, select **Add-ins**, and then select **Agreements**.
+1. In Microsoft Word, open the Agreements tab, select **Manage templates**.
 
-2. In the Agreements app, select **Manage templates** to open the **Manage templates** panel.
+2. In the panel, select **Edit a template**.
 
-3. In the **Get started** section, select **Edit a template**.
+3. Choose the appropriate workspace to see the Modern Template Library for that workspace.
 
-4. Choose the appropriate workspace to see the Modern Template Library for that workspace.
+4. Select **Modern Template Library** to show a list of all the templates for editing.
 
-5. Select **Modern Template Library** to show a list of all the templates for editing.
-
-6. Select the template you want to edit, and then select **Open template**.
+5. Select the template you want to edit, and then select **Open template**.
 
 ## Prepare to edit the template
 
@@ -42,12 +40,12 @@ When you open the template for editing, the right-hand panel in Word will displa
 
 ## Edit the template
 
-After you select **Edit template**, you're presented with the same experience as when you [create a template](agreements-create-template#configure-an-approval-workflow-for-documents-generated-from-the-template) flow. In this case, the fields, sections, conditional sections, and any workflow that is already in place from the original template.
+After you select **Edit template**, you're presented with the same experience as when you [create a template](agreements-create-template#configure-an-approval-workflow-for-documents-generated-from-the-template) flow. In this case, the fields, sections, conditional sections, and any workflow that is already in place from the original template will be displayed.
 
-You can make modifications as desired to update the elements of the template and then publish it so that document authors can use it to generate new agreements.
+You can make modifications as desired to update the elements of the template. Once you are done with your changes, publish the template for the changes to take effect.
 
 > [!NOTE]
-> Until you publish the template with the changes, the changes won't reflect in new documents generated from the template. All documents generated from the template follow the details as provided in the last published version of the template.
+> Until you publish the template with the changes, the changes won't reflect in new documents generated from the template. All documents generated from the template will be based off the last published version of the template.
 
 <br>
 
