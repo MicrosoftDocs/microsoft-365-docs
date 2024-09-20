@@ -24,8 +24,8 @@ description: Learn how to create a template with the SharePoint Agreements AI so
 
 Once you create and publish a template, users with access to the template can start generating agreements from it. Users will be asked to input values for fields, and sent it for approval or eSignature based on the workflow configured with the template.
 
-    > [!NOTE]
-    > You can always edit a published template. However, you need to re-publish the template for the changes to take effect. Documents will be created based of the last published version of the template.
+> [!NOTE]
+> You can always edit a published template. However, you need to re-publish the template for the changes to take effect. Documents will be created based of the last published version of the template.
 
 ## Create a new template from the Agreements app
 
@@ -43,8 +43,8 @@ Once you create and publish a template, users with access to the template can st
 
 5. Select **Open in Word** to set up fields, insert sections, configure workflows, request approvals, and publish it once it's ready.
 
-    > [!NOTE]
-    > You can't change the name of the template or the workspace where the template is stored after a draft template is created.
+> [!NOTE]
+> You can't change the name of the template or the workspace where the template is stored after a draft template is created.
 
 ### Create a template in Microsoft Word
 
