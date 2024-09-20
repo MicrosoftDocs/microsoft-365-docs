@@ -29,7 +29,7 @@ Where the loop content was originally created determines its storage location. S
 
 ## Loop app's usage of organization's storage quota
 
-Loop app workspaces are stored inside your tenant. Loop workspaces and pages count against your tenant's storage quota, starting November 2023. During the Loop app's Public Preview in 2023, Loop app content did **not** use your existing storage quota.
+Loop app workspaces are stored inside your tenant. Loop workspaces and pages count against your tenant's storage quota, starting November 2023.
 
 ## Content permissions mechanism
 
@@ -83,17 +83,37 @@ There are other types of groups and membership lists in the Microsoft ecosystem,
 
 ### In the Loop app
 
-The Loop app is designed for shared workspaces and personal workspaces.
+The Loop app is designed for both shared and personal workspaces.
 
-Shared workspaces are permissioned with a roster. If the owner leaves the company, the workspace becomes ownerless, remains in the tenant, and isn't automatically deleted. If the creator of the workspace is the person who left the company, then others can't delete the workspace.
+#### Shared Workspaces
 
-Personal workspaces are also permissioned with a roster, but there's only one person in them by design. When a user leaves a company, their personal workspaces become ownerless, remain in the tenant, and aren't automatically deleted.
+- Shared workspaces are permissioned with a roster. If the owner leaves the company, the workspace becomes ownerless, remains in the tenant, and isn't automatically deleted.
+- If the creator of the workspace is the person who left the company, others cannot delete the workspace.
+
+#### Personal Workspaces
+
+- There are currently two types of personal workspaces: Ideas and Copilot Pages.
+- Personal content is private by default, allowing users to work without forced sharing or coauthoring, similar to OneDrive.
+
+##### Ideas
+
+- Ideas is a tenant-owned personal workspace, permissioned with a roster but designed for single-person use.
+- When a user leaves the company, like a shared workspace, their Ideas workspace becomes ownerless, remains in the tenant, and is not automatically deleted.
+
+##### Copilot Pages
+
+- Copilot Pages is a user-owned workspace, created only by Copilot, and is lifecycle managed with the user account.
+- Copilot Pages is deleted when the user account is deleted from the organization.
+- User-owned workspaces cannot be permanently reassigned to a new owner. These workspaces follow the same cleanup schedule as OneDrive: 30 days active, then soft deleted, and permanently purged 93 days after soft deletion.
+- Admins can recover content during the soft delete period using the SharePoint Admin Center or PowerShell.
+
+Note: A feature for IT admins to assign additional temporary custodians during the cleanup period of user-owned workspaces to make copies of content is not yet available.
 
 ### In Loop components created in Microsoft 365 outside of the Loop app
 
-Loop components created outside of the Loop are stored in the OneDrive of the person who created the component. Therefore, if that user leaves the organization, the standard OneDrive IT policy is applied.
+Loop components created outside of Loop are stored in the OneDrive of the person who created the component. Therefore, if that user leaves the organization, the standard OneDrive IT policy is applied.
 
-## Management of Loop app's storage
+## Management of Loop content
 
 For more information, see [available admin capabilities](/microsoft-365/loop/loop-compliance-summary#available-admin-capabilities) section of the [Summary of governance, lifecycle, and compliance capabilities](/microsoft-365/loop/loop-compliance-summary).
 
