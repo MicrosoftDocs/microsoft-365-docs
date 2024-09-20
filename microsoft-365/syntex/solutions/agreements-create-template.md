@@ -37,7 +37,7 @@ Once you create and publish a template, users with access to the template can st
 
 3. On the **Create a template** page, provide a name for the template, select the workspace where the template will be stored and the category that the template belongs to. Set values for the country or region and the language for the template.
 
-   ![A screenshot of the Create a template page.](../../media/content-understanding/agreements-create-template.png)
+   ![A screenshot of the Create a template page.](../../media/content-understanding/Agreementes-app-CreateTemplate.png)
 
 4. You can also provide a description and tags for the template.
 
@@ -83,15 +83,13 @@ There are a few standard fields that come with SharePoint Agreements AI. These f
 
 1. On the **Manage templates** panel, select **Set up fields**.
 
-   ![A screenshot of the Manage templates panel.](../../media/content-understanding/agreements-manage-templates.png)
+   ![A screenshot of the Manage templates panel.](../../media/content-understanding/Agreements-template-fields.png)
 
 2. Here, you can search for and reuse an existing field or create a new one.
 
 3. To insert the field into the content of the document, select the text from the main content area or place the cursor where you'd like to replace with the field, and select **Insert** from the field card on the **Manage templates** panel. You can also choose to insert this field at all similar instances throughout the document. You can review all field insertions in the template with the left and right arrow keys within the field card.
 
-   ![A screenshot showing an opened document and the Manage templates panel.](../../media/content-understanding/agreements-insert-field-2.png)
-
-   ![A screenshot showing an opened document and the Manage templates panel showing how to insert multiple field.](../../media/content-understanding/agreements-insert-multiple-fields-2.png)
+   ![A screenshot showing an opened document and the Manage templates panel.](../../media/content-understanding/Agreements-insert-field-selection.png)
 
 4. To delete the field or view more details and perform other actions, select **More options** (**...**) on the field card.
 
@@ -118,16 +116,14 @@ You can associate fields to a SharePoint list or library. If you do so, users wi
 To associate a field to a SharePoint list or library, follow these steps when creating a new field:
 
 1.Choose **SharePoint List** in the **Type** section. Click the **Select** button.
-
-   ![A screenshot of Type section showing the SharePoint list option.](../../media/content-understanding/agreements-sharepoint-list.png)
-
+   
 2. On the **Select a list** page, select the SharePoint site and the list you want to use.
 
-   ![A screenshot of Select a list page.](../../media/content-understanding/agreements-select-list.png)
+   ![A screenshot of Select a list page.](../../media/content-understanding/Agreements-list-selection-dialog.png)
 
 3. On the **Select a column from the list** page, select the column name you want to associate with the field, and then select **Save**.
 
- ![A screenshot showing the list field associated with the field.](../../media/content-understanding/agreements-list-field.png)
+![A screenshot showing the field associated with a SharePoint list.](../../media/content-understanding/Agreements-list-panel.png)
 
 You can also allow users to manually input values with the **Document authors can type in values manually for this field** option. The values input by the authors are only used to generate the document. They won't be added to the SharePoint list.
 
@@ -157,17 +153,15 @@ To set up a mandatory approval workflow on a template, follow these steps:
 
 1. On the **Manage templates** panel, in the **Configure workflows** section, select **Configure required approvals**.
 
-   ![A screenshot of the Configure workflows section on the Manage templates panel.](../../media/content-understanding/agreements-configure-workflows.png)
+   ![A screenshot of the Configure workflows section on the Manage templates panel.](../../media/content-understanding/agreements-setup-approvals.png)
 
 2. Set the name of the approval request. The name can be modified by document authors when they'll be prompted to send the approval request after document authoring is completed.
 
 3. Select **Approvers** (who needs to approve it) and decide the approval order. Once the changes are done, select **Setup approval flow**. Multiple approvers can be added to a level, and only one of them needs to approve for the request to move to next level.
 
-   ![A screenshot of the Approvers section on the Manage templates panel.](../../media/content-understanding/agreements-approvers.png)
+   ![A screenshot of the Approvers section on the Manage templates panel.](../../media/content-understanding/Agreements-approval-setup.png)
 
 4. Once your modifications are complete, select **Save changes**. You can delete the already saved approval flow by selecting **Delete approval flow**.
-
-   ![A screenshot of the Delete approval flow button on the Manage templates panel.](../../media/content-understanding/agreements-delete-approval.png)
 
 5. Finally, publish the template for the changes to take effect.
 
@@ -183,8 +177,8 @@ To set up a mandatory signature workflow, follow these steps:
 
 3. Place your cursor where you want the signature to appear in the document, then insert the fields for signature, initials, and date.
 
-    > [!NOTE]
-    > You only need to insert the signature field locations in the template. During document generation, authors will have to assign signatory email addresses to the fields and send the PDF version of this document for signing.
+> [!NOTE]
+> You only need to insert the signature field locations in the template. During document generation, authors will have to assign signatory email addresses to the fields and send the PDF version of this document for signing.
 
 4. You can add multiple instances of the same signature field across the template and then navigate through its occurrences.
 
