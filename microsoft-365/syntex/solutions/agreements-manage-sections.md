@@ -30,17 +30,11 @@ To create a section in Microsoft Word, follow these steps:
 
 1. Go to the **Agreements** tab in Word, and select **Manage sections**.
 
-   ![A screenshot of the Agreements tab in Word showing the Manage sections option.](../../media/content-understanding/agreements-action-options.png)
-
 2. To create a section from blank Word document, select **Create a section** from the right panel.
 
 3. To create a section from an existing Word document, open the document, and then **Convert this document to a section** from the right panel.
 
-   ![A screenshot of the Manage sections panel showing the Create and edit sections option.](../../media/content-understanding/agreements-sections-create-edit.png)
-
 4. On the **Enter section details** panel, enter the required details to create a section and save it in the section library.
-
-   ![A screenshot of the Enter section details page.](../../media/content-understanding/agreements-sections-enter-details.png)
 
     - **Name** – Enter a name for the section.
     - **Workspace** – Choose the workspace where to save the section. Once published, this section will only be available to be inserted in templates in the workspace you choose. You can't change the workspace after creating the section.
@@ -55,8 +49,6 @@ These details help in filtering and searching the sections faster during templat
 5. Select **Save** to create and save the section in the Draft state. A separate copy of the document is created and saved in the section library.
 
 6. After you save the section, the newly created section is opened in a new Word window and the section management panel opens up on the right-hand side of the Word canvas.
-
-   ![A screenshot of an opened Word document and the Manage sections panel.](../../media/content-understanding/agreements-document-and-manage-sections.png)
 
 7. You can edit **Description**, **Category**, **Language**, **Countries or regions**, or **Tags** values from the **Edit details** option after you create the section.
 
@@ -101,10 +93,8 @@ To configure the settings, follow these steps:
 
    - **Read-only** – Document authors can't modify the content of the section. It's locked for further edits.
 
-   ![A screenshot of the Agreements tab in Word showing the Manage sections panel.](../../media/content-understanding/agreements-manage-sections.png)
-
-   > [!NOTE]
-   > These settings don't apply when a section gets inserted into a template. Template authors can modify or format content of any inserted section. The changes will stay only in the scope of the template and will not get updated in the published section.
+> [!NOTE]
+> These settings don't apply when a section gets inserted into a template. Template authors can modify or format content of any inserted section. The changes will stay only in the scope of the template and will not get updated in the published section.
 
 ## Publish the section
 Once you are done setting up the section, you must publish it. Only published sections can be inserted into templates.
@@ -124,29 +114,15 @@ To request approval before publishing the section, follow these steps:
 
 4. Create the approval request.
 
-   ![A screenshot of the Agreements tab in Word showing the Manage sections panel.](../../media/content-understanding/agreements-approval-request.png)
-
 5. Fill in the name of the request, the approvers (who needs to approve it), the approval order, any additional information, and choose **Notify approvers via email** if you want to send email notifications along with Teams notification.
 
 6. After you configure the approval request, select **Send**. The section document is marked as read-only once the approval request starts. Approvers who don't have access to the section will be granted view permissions.
-<!---
-   ![A screenshot of the Manage sections panel showing the Send approval request.](../../media/content-understanding/agreements-send-approval.png)
---->
+
 7. On the **Send for approval** confirmation screen, select **Send for approval**.
 
 8. Once the approval request is sent, you can track the request status (**Approval in progress**, **Approval completed**) through the Word pane by reloading the **Manage sections** panel or selecting **Refresh**. Optionally, you can also track the request by selecting the **Sent** tab in the Approvals app in Microsoft Teams.
 
 9. If you need to make changes in the section after it has been sent for approval, you can cancel the sent approval request. To do so, select **Cancel request** or select **Edit section**. On the **Cancel approval request?** confirmation screen, select **Cancel**.
-
-10. Once the approval request is sent, you can track the request status (**Approval in progress**, **Approval completed**) through the Word pane by reloading the **Manage sections** panel or selecting **Refresh**. Optionally, you can also track the request by selecting the **Sent** tab in the Approvals app in Microsoft Teams.
-<!---
-   ![A screenshot of the Manage sections panel showing the approval in progress.](../../media/content-understanding/agreements-approval-in-progress.png)
---->
-11. If you need to make changes in the section after it has been sent for approval, you can cancel the sent approval request. To do so, select **Cancel request** or select **Edit section**. On the **Cancel approval request** confirmation screen, select **Cancel**.
-
-   ![A screenshot of the Cancel approval request confirmation screen.](../../media/content-understanding/agreements-cancel-approval-confirmation.png)
-
-    This cancels the current approval request and unlock the section for further edits. The section returns to **Draft** state.
 
 ## Update sections
 
