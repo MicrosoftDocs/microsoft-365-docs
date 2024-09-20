@@ -46,13 +46,13 @@ To import an agreement, follow these steps:
 
    ![A screenshot of the agreement page showing the Confirm fields panel.](../../media/content-understanding/agreements-confirm-fields.png)
 
-    > [!NOTE]
-    > The values in the fields can't be changed later.
+> [!NOTE]
+> The values in the fields can't be changed later.
 
 6. Select **Save** to confirm the import. The imported agreement will be visible in the list of agreements.
 
-    > [!NOTE]
-    > It might take a few hours for the new agreement to be indexed and show up in the list of agreements.
+> [!NOTE]
+> It might take a few hours for the new agreement to be indexed and show up in the list of agreements.
 
 <br>
 
