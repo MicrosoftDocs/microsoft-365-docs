@@ -30,7 +30,7 @@ Microsoft 365 Lighthouse audit logs record actions that generate a change in Lig
 
 To view audit logs, you must have one of the following roles:
 
-- Microsoft Entra role: Global Administrator of partner tenant
+- Microsoft Entra role: Global Administrator in partner tenant
 
 - Microsoft Partner Center role: Admin Agent
  
