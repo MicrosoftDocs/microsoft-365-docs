@@ -20,9 +20,9 @@ description: Learn how to create a template with the SharePoint Agreements AI so
 
 # Create a template in SharePoint Agreements AI
 
-**Templates** serve as a predefined structure that standardizes the creation of documents and agreements. It ensures consistency and uniformity across various documents within the workspace, streamlining the creation process and reducing the likelihood of errors. Templates can include specific sections, formatting, and content guidelines that align with the organization's requirements and branding.
+Templates serve as a predefined structure that standardizes the creation of documents and agreements. They ensure consistency and uniformity across various documents within the workspace, streamlining the creation process and reducing the likelihood of errors. Templates can include specific sections, formatting, and content guidelines that align with the organization's requirements and branding.
 
-Once you create and publish a template, users with access to the template can start generating agreements from it. Users will be asked to input values for fields, and sent it for approval or eSignature based on the workflow configured with the template.
+Once you create and publish a template, users with access to the template can start [generating agreements](agreements-create-agreement.md) from it. Users will be asked to [input values for fields](#add-fields-to-a-template), and sent it for approval or eSignature based on the [workflow configured](#configure-a-workflow) with the template.
 
 > [!NOTE]
 > You can always edit a published template. However, you need to re-publish the template for the changes to take effect. Documents will be created based of the last published version of the template.
@@ -32,12 +32,14 @@ Once you create and publish a template, users with access to the template can st
 1. Go to the Agreements app in Microsoft Teams, and then select **Create a template**.
 
 2. Optionally, you can select **Pick a file** to create a template from an existing document.
- - If you pick a file, the content of the file will be copied over to the template.
- - If not, a blank template will be created for you.
+
+   - If you pick a file, the content of the file will be copied over to the template.
+
+   - If not, a blank template will be created for you.
 
 3. On the **Create a template** page, provide a name for the template, select the workspace where the template will be stored and the category that the template belongs to. Set values for the country or region and the language for the template.
 
-   ![A screenshot of the Create a template page.](../../media/content-understanding/Agreementes-app-CreateTemplate.png)
+   ![A screenshot of the Create a template page.](../../media/content-understanding/agreements-create-template.png)
 
 4. You can also provide a description and tags for the template.
 
@@ -62,7 +64,7 @@ You can also create a template in Microsoft Word.
 
 6. Select **Save** to create the draft template.
 
-8. You can now add content to the template and set up fields, sections, and workflows for this template.
+7. You can now add content to the template and set up fields, sections, and workflows for this template.
 
 ## Add fields to a template
 
@@ -71,6 +73,7 @@ Fields are areas of the template that should be filled in when generating agreem
 Fields can either be added to the content of the document, or kept as other properties for the template. You can also define if a field needs to be provided when agreements are created off the template, or if the field is optional.
 
 ### Standard fields
+
 There are a few standard fields that come with SharePoint Agreements AI. These fields include:
 
 - **First party** – The first party on the agreement.
@@ -86,7 +89,6 @@ To add fields to a template, follow these steps:
    ![A screenshot of the Manage templates panel.](../../media/content-understanding/Agreements-template-fields.png)
 
 2. Here, you can search for and reuse an existing field or create a new one.
-
 
 3. To insert the field into the content of the document, select the text from the main content area or place the cursor where you'd like to replace with the field, and select **Insert** from the field card on the **Manage templates** panel. You can also choose to insert this field at all similar instances throughout the document. You can review all field insertions in the template with the left and right arrow keys within the field card.
 
@@ -124,7 +126,7 @@ To associate a field to a SharePoint list or library, follow these steps when cr
 
 3. On the **Select a column from the list** page, select the column name you want to associate with the field, and then select **Save**.
 
-![A screenshot showing the field associated with a SharePoint list.](../../media/content-understanding/Agreements-list-panel.png)
+   ![A screenshot showing the field associated with a SharePoint list.](../../media/content-understanding/Agreements-list-panel.png)
 
 You can also allow users to manually input values with the **Document authors can type in values manually for this field** option. The values input by the authors are only used to generate the document. They won't be added to the SharePoint list.
 
@@ -176,8 +178,8 @@ To set up a mandatory signature workflow, follow these steps:
 
 3. Place your cursor where you want the signature to appear in the document, then insert the fields for signature, initials, and date.
 
-> [!NOTE]
-> You only need to insert the signature field locations in the template. During document generation, authors will have to assign signatory email addresses to the fields and send the PDF version of this document for signing.
+   > [!NOTE]
+   > You only need to insert the signature field locations in the template. During document generation, authors will have to assign signatory email addresses to the fields and send the PDF version of this document for signing.
 
 4. You can add multiple instances of the same signature field across the template and then navigate through its occurrences.
 
