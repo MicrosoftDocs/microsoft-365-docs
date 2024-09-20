@@ -65,6 +65,8 @@ These field values help in filtering and searching the sections faster during te
 
 ## Insert fields
 
+You can create and insert fields into sections just like you do with templates. Follow the same steps to set up fields in your section.
+
 To insert fields in a section, follow these steps:
 
 1. On the **Manage sections** panel, select **Add fields**.
@@ -123,13 +125,13 @@ To configure the settings, follow these steps:
    > [!NOTE]
    > These settings don't apply when a section gets inserted into a template. Template authors can modify or format content of any inserted section. The changes will stay only in the scope of the template and will not get updated in the published section.
 
-## Request approval to publish the section
+## Publish the section
+Once you are done setting up the section, you must publish it. Only published sections can be inserted into templates.
 
+## Request approval before publishing the section
 Once you have made the relevant changes to section and configured section settings, you can optionally choose to send a draft section for approval before publishing the section.
 
 The Agreements AI solution uses the Approvals app in Microsoft Teams to send approval requests. For more information, see [Approvals in Microsoft Teams](/power-automate/teams/native-approvals-in-teams).
-
-Once the section state is Published, it becomes available for template creators to insert it during [template configuration flow](agreements-create-template.md#insert-a-section).
 
 To request approval before publishing the section, follow these steps:
 
@@ -151,23 +153,38 @@ To request approval before publishing the section, follow these steps:
 --->
 7. On the **Send for approval** confirmation screen, select **Send for approval**.
 
-   ![A screenshot of the Send for approval confirmation screen.](../../media/content-understanding/agreements-approval-confirmation.png)
-
 8. Once the approval request is sent, you can track the request status (**Approval in progress**, **Approval completed**) through the Word pane by reloading the **Manage sections** panel or selecting **Refresh**. Optionally, you can also track the request by selecting the **Sent** tab in the Approvals app in Microsoft Teams.
+
+9. If you need to make changes in the section after it has been sent for approval, you can cancel the sent approval request. To do so, select **Cancel request** or select **Edit section**. On the **Cancel approval request?** confirmation screen, select **Cancel**.
+
+10. Once the approval request is sent, you can track the request status (**Approval in progress**, **Approval completed**) through the Word pane by reloading the **Manage sections** panel or selecting **Refresh**. Optionally, you can also track the request by selecting the **Sent** tab in the Approvals app in Microsoft Teams.
 <!---
    ![A screenshot of the Manage sections panel showing the approval in progress.](../../media/content-understanding/agreements-approval-in-progress.png)
 --->
-9. If you need to make changes in the section after it has been sent for approval, you can cancel the sent approval request. To do so, select **Cancel request** or select **Edit section**. On the **Cancel approval request** confirmation screen, select **Cancel**.
+11. If you need to make changes in the section after it has been sent for approval, you can cancel the sent approval request. To do so, select **Cancel request** or select **Edit section**. On the **Cancel approval request** confirmation screen, select **Cancel**.
 
    ![A screenshot of the Cancel approval request confirmation screen.](../../media/content-understanding/agreements-cancel-approval-confirmation.png)
 
     This cancels the current approval request and unlock the section for further edits. The section returns to **Draft** state.
 
-## Publish a section
+## Update sections
 
-Once you add all the relevant fields and made the necessary configurations, you can publish the section to make it available for other users.
+If you need to update the content of a published section due to changes in organizational standards, policy updates, or other business needs, you can do so by editing the published section. You can also resume editing a draft section by choosing the Edit section option.
 
-Select **Publish** to publish the section to be used by other users in the organization to configure templates. Only published sections can be inserted in templates.
+To edit a section, follow these steps:
+
+1. Go to the **Agreements** tab in Word, and select **Manage sections**.
+
+2. Select **Edit a section**.
+
+3. If a draft section is selected, you can change the content and configure settings, and then choose to publish the section. Once you add all the relevant fields and made the necessary configurations, you can publish the section to make it available for other users.
+
+4. If a published section is selected, and you choose to edit the section, and then a new draft version of the same section is created. The published version is still available to use by template authors during template configuration.
+
+5. When you have made all the changes to the draft version, you can choose to [republish the section](agreements-manage-sections.md#publish-a-section), which replaces the current published version of the section with the latest one.
+
+> [!NOTE]
+> Once the draft section is republished, an email notification is sent to all template creators who have used the previous published version of the section. This is to inform them of the latest published version so that they can choose to pull in the latest changes in their template. Documents already generated from those templates will have no effect on the update.
 
 <br>
 
