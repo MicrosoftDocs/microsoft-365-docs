@@ -113,6 +113,8 @@ Note: A feature for IT admins to assign additional temporary custodians during t
 
 Loop components created outside of Loop are stored in the OneDrive of the person who created the component. Therefore, if that user leaves the organization, the standard OneDrive IT policy is applied.
 
+For more information on the storage location of components based on where they are created, see [Loop Storage](/microsoft-365/loop/loop-compliance-summary#loop-storage).
+
 ## Management of Loop content
 
 For more information, see [available admin capabilities](/microsoft-365/loop/loop-compliance-summary#available-admin-capabilities) section of the [Summary of governance, lifecycle, and compliance capabilities](/microsoft-365/loop/loop-compliance-summary).
