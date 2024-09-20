@@ -28,15 +28,11 @@ To import an agreement, follow these steps:
 
     - On the **Home** tab, select the **Import an agreement** card.
 
-       ![A screenshot of Home tab showing the Import an agreement card.](../../media/content-understanding/agreements-import-card.png)
-
     - On the **Agreements** tab, select the **Import** button.
-
-       ![A screenshot of Agreements tab showing the Import option.](../../media/content-understanding/agreements-import-option.png)
 
 2. On the **Import signed agreements** page, browse to and pick the file that you want to import. The file must be a PDF.
 
-   ![A screenshot of Import signed agreements page.](../../media/content-understanding/agreements-import-signed.png)
+   ![A screenshot of Import signed agreements page.](../../media/content-understanding/Agreements-import-dilog.png)
 
 3. Choose the workspace where the agreement should be stored, and then pick the category to which the agreement belongs.
 
@@ -44,7 +40,7 @@ To import an agreement, follow these steps:
 
 5. Once processing is complete, review the extracted values and confirm if they're correct. If a field isn't applicable, leave it blank.
 
-   ![A screenshot of the agreement page showing the Confirm fields panel.](../../media/content-understanding/agreements-confirm-fields.png)
+   ![A screenshot of the agreement page showing the Confirm fields panel.](../../media/content-understanding/Agreements-import-fields.png)
 
 > [!NOTE]
 > The values in the fields can't be changed later.
