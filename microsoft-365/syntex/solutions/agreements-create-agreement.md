@@ -34,8 +34,6 @@ To create an agreement from a published template, follow these steps:
 
 4. On the **Details** panel, provide a file name for the agreement.
 
-   ![A screenshot of an agreement showing the details panel.](../../media/content-understanding/agreements-details-panel.png)
-
 5. Select **Edit** to generate the new agreement. The agreement opens in Microsoft Word from where you can provide values for fields and send the document for workflow.
 
 ## Create an agreement from a template in Word
