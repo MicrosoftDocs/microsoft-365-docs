@@ -39,8 +39,9 @@ Roles are assigned at a workspace level. Currently, SharePoint Agreements AI sup
 2.	**Workspace member** – these users are part of the workspace. They can manage sections and templates and have access to all agreements within their workspace. They cannot manage categories nor roles.
 3.	**Template manager** – these users can manage templates but will not have access to all agreements within the workspace. They can read and use sections in their templates and will only have access to those agreements they create or are explicitly shared with them.
 
-###Managing roles:
-Workspace owners can manage the above roles in their workspace through the Agreements app in Teams. 
+### Managing roles:
+Workspace owners can manage the above roles in their workspace through the Agreements app in Teams. Go to the Setup & access tab in the agreements app, and then navigate to the Roles page. Here, you can see and manage the list of users assigned to the above roles
+![A screenshot of Agreements app showing the role management page.](../../media/content-understanding/agreements-roles.png)
 
 > [!NOTE]
 > To give other users access to generate agreements from published templates, share the template with at least read only privileges with the users. They can create agreements from published templates shared with them and will only have access to agreements in the workspace that they create or are shared with them. 
