@@ -18,23 +18,28 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Learn how to create a template with the SharePoint Agreements AI solution.
 ---
 
-# Create a template in SharePoint Agreements AI
+# Templates
 
-Templates serve as a standard format for consistently generating agreements. You can convert an existing agreement to a template or start with a blank document.
+**Templates** serve as a predefined structure that standardizes the creation of documents and agreements. It ensures consistency and uniformity across various documents within the workspace, streamlining the creation process and reducing the likelihood of errors. Templates can include specific sections, formatting, and content guidelines that align with the organization's requirements and branding.
 
-## Create a new template or use an existing agreement
+Once you create and publish a template, users with access to the template can start generating agreements from it. Users will be asked to input values for fields, and sent it for approval or eSignature based on the workflow configured with the template.
 
-To create a new template, follow these steps:
+    > [!NOTE]
+    > You can always edit a published template. However, you need to re-publish the template for the changes to take effect. Documents will be created based of the last published version of the template.
+
+## Create a new template from the Agreements app
 
 1. Go to the Agreements app in Microsoft Teams, and then select **Create a template**.
 
 2. Optionally, you can select **Pick a file** to create a template from an existing document.
+ - If you pick a file, the content of the file will be copied over to the template.
+ - If not, a blank template will be created for you.
 
-3. On the **Create a template** page, provide a name for the template, pick values for the workspace, category, country or region, and language applicable to the template.
+3. On the **Create a template** page, provide a name for the template, select the workspace where the template will be stored and the category that the template belongs to. Set values for the country or region and the language for the template.
 
    ![A screenshot of the Create a template page.](../../media/content-understanding/agreements-create-template.png)
 
-4. You can also optionally provide a description and tags.
+4. You can also provide a description and tags for the template.
 
 5. Select **Open in Word** to set up fields, insert sections, configure workflows, request approvals, and publish it once it's ready.
 
@@ -47,21 +52,17 @@ You can also create a template in Microsoft Word.
 
 1. Go to the **Agreements** tab in Word, and then select **Manage templates**.
 
-2. To create a new blank template, select **Create new template**.
+2. To create a new blank template, select **Create new template**. If you want to convert an existing document into a template, select **Convert this document to template**.
 
-3. If you want to convert an existing document into a template, select **Convert this document to template**.
+3. You can provide a user-friendly name and a description for the template.
 
-4. Optionally, you can provide a user-friendly name and a description for the template.
+4. Select the workspace where the template will be stored and the category that the template belongs to.
 
-5. Select the workspace where the template will be stored and the category that the template belongs to.
+5. Set values for the country or region and the language for the template.
 
-6. Set values for the country or region and the language for the template.
+6. Select **Save** to create the draft template.
 
-7. Select **Save** to create the draft template.
-
-8. If you started with a new template, copy or enter the content you'd like into the template file.
-
-9. You can now set up fields, sections, and workflows for this template.
+8. You can now add content to the template and set up fields, sections, and workflows for this template.
 
 ## Set up fields
 
@@ -69,16 +70,13 @@ Fields are areas of the template that should be filled in when generating agreem
 
 Fields can either be added to the content of the document, or kept as other properties for the template. You can also define if a field needs to be provided when agreements are created off the template, or if the field is optional.
 
+### Standard fields
 There are a few standard fields that come with SharePoint Agreements AI. These fields include:
 
 - **First party** – The first party on the agreement.
-
 - **Second party** – The second party on the agreement.
-
 - **Effective date**  –The date on which the agreement comes into effect.
-
 - **Expiration date** – The date on which the agreement expires.
-
 - **Expiration type** – This type can either be single date, where the agreement expires on a specific date, or evergreen, where the agreement never expires.
 
 ### Add fields to the template
@@ -89,7 +87,7 @@ There are a few standard fields that come with SharePoint Agreements AI. These f
 
 2. Here, you can search for and reuse an existing field or create a new one.
 
-3. To insert the field into the content of the document, select the text from the agreement or place the cursor where you'd like to replace with the field, and select **Insert** from the field card on the **Manage templates** panel. You can also choose to insert this field at all similar instances throughout the document. You can review all field insertions in the template with the left and right arrow keys within the field card.
+3. To insert the field into the content of the document, select the text from the main content area or place the cursor where you'd like to replace with the field, and select **Insert** from the field card on the **Manage templates** panel. You can also choose to insert this field at all similar instances throughout the document. You can review all field insertions in the template with the left and right arrow keys within the field card.
 
    ![A screenshot showing an opened document and the Manage templates panel.](../../media/content-understanding/agreements-insert-field-2.png)
 
@@ -112,30 +110,24 @@ To create a new field, select **Create a new field**. When creating the field, y
 
 ### Associate a field to a list or library
 
-You can associate fields to a SharePoint list or library. If you do so, users are provided the list of values in the list to pick from, rather than being asked to type in the value for the fields manually.
+You can associate fields to a SharePoint list or library. If you do so, users will be provided the list of values in the list to pick from, rather than being asked to type in the value for the fields manually.
 
 > [!NOTE]
 > If you associate fields with multiple columns of the same list or library, users can pick values for the fields that correspond to a single row in the list or library. For example, if you have a list that has the list of states and countries or regions, and you associate two fields, state and country to these columns, the value for country will be automatically picked up once the user selects the state.
 
-To associate a field to a SharePoint list or library, follow these steps:
+To associate a field to a SharePoint list or library, follow these steps when creating a new field:
 
-1. On the **Manage templates** panel, in the **Type** section, select **SharePoint List**. Then, use the **Select** button to choose a SharePoint column.
+1.Choose **SharePoint List** in the **Type** section. Click the **Select** button.
 
    ![A screenshot of Type section showing the SharePoint list option.](../../media/content-understanding/agreements-sharepoint-list.png)
 
-2. On the **Select a list** page, select the SharePoint site and the list you want to use, and then select **Next**.
+2. On the **Select a list** page, select the SharePoint site and the list you want to use.
 
    ![A screenshot of Select a list page.](../../media/content-understanding/agreements-select-list.png)
 
 3. On the **Select a column from the list** page, select the column name you want to associate with the field, and then select **Save**.
 
-   ![A screenshot of the Select a column from the list page.](../../media/content-understanding/agreements-select-column.png)
-
-4. If you want to see the original page of lists again, select **Go to the list in SharePoint** at the bottom of the list.
-
-5. When you're done, you see that the list field is associated with the column.
-
-   ![A screenshot showing the list field associated with the field.](../../media/content-understanding/agreements-list-field.png)
+ ![A screenshot showing the list field associated with the field.](../../media/content-understanding/agreements-list-field.png)
 
 You can also allow users to manually input values with the **Document authors can type in values manually for this field** option. The values input by the authors are only used to generate the document. They won't be added to the SharePoint list.
 
@@ -149,13 +141,11 @@ To insert published sections into your template, follow these steps:
 
 1. From the **Manage templates** panel, select **Insert sections**.
 
-2. Pick the relevant section for your template from the list, and then choose **Select**.
+2. Pick the relevant section for your template from the list..
 
-3. Optionally, you can edit section content after it's placed in the template as needed, if the section is marked as **Editable**.
+3. You can insert as many sections as you'd like. The list of sections inserted will be displayed under the **Insert sections** part.
 
-4. You can insert as many sections as you'd like. The list of sections inserted will be displayed under the **Insert sections** part.
-
-5. You can also remove the section from the template by selecting the **Delete** option.
+4. You can also remove the section from the template by selecting the **Delete** option.
 
 ## Configure a workflow
 
@@ -163,9 +153,7 @@ Create customizable workflows that apply to all documents when created with the 
 
 ### Configure an approval workflow for documents generated from the template
 
-After you create or edit a template, you can set up an approval process to send all documents from that template to the approvers.
-
-To set up a mandatory approval workflow, follow these steps:
+To set up a mandatory approval workflow on a template, follow these steps:
 
 1. On the **Manage templates** panel, in the **Configure workflows** section, select **Configure required approvals**.
 
@@ -177,9 +165,11 @@ To set up a mandatory approval workflow, follow these steps:
 
    ![A screenshot of the Approvers section on the Manage templates panel.](../../media/content-understanding/agreements-approvers.png)
 
-4. Once set up, you can also choose to later modify the approval request. Once your modifications are complete, select **Save changes** to save the updated flow. You can delete the already saved approval flow by selecting **Delete approval flow**.
+4. Once your modifications are complete, select **Save changes**. You can delete the already saved approval flow by selecting **Delete approval flow**.
 
    ![A screenshot of the Delete approval flow button on the Manage templates panel.](../../media/content-understanding/agreements-delete-approval.png)
+
+5. Finally, publish the template for the changes to take effect.
 
 ### Configure a SharePoint eSignature workflow
 
