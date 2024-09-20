@@ -28,7 +28,7 @@ To help you manage your tenant list in Microsoft 365 Lighthouse, you can apply c
 
 ## Before you begin
 
-You must be a Global Administrator of the partner tenant.
+You must be a Global Administrator in the partner tenant.
 
 ## Create a tag
 
