@@ -20,9 +20,9 @@ description: Learn about the approval notifications in the SharePoint Agreements
 
 # Manage sections in SharePoint Agreements AI
 
-Sections are reusable blocks of content that can be inserted in a template. They can form one of the core building blocks of your templates. You can create sections once and use them across multiple templates.
+Sections are reusable blocks of content that ensure the use of consistent language across your agreements. You can define a section and use it across multiple templates. For example, you may have a section for privacy clause or payment terms for your purchase agreements, while you can have a section for relocation package for your full-time employee templates. Sections are saved as Microsoft Word documents in the section library on your Agreements site.
 
-Sections could be any standardized content section such as clauses (for example, payment terms or confidentiality clause) or phrases that are written in organization approved language. Sections are saved as Microsoft Word documents in the section library on your Agreements site.
+Sections can also have fields, set up in the same manner as fields for templates.
 
 ## Create a new section
 
@@ -43,16 +43,16 @@ To create a section in Microsoft Word, follow these steps:
    ![A screenshot of the Enter section details page.](../../media/content-understanding/agreements-sections-enter-details.png)
 
     - **Name** – Enter a name for the section.
-    - **Workspace** – Choose the workspace where to save the section. This section, once published, is only available to be inserted in templates for this workspace. You can't change the workspace after creating the section.
+    - **Workspace** – Choose the workspace where to save the section. Once published, this section will only be available to be inserted in templates in the workspace you choose. You can't change the workspace after creating the section.
     - **Description** – Enter a description of the section.
     - **Category** – Choose a category from the list of categories that are configured for the selected workspace.
     - **Language** – Choose the language in which the section is or will be written.
     - **Countries or regions** – Select the country or region where the section is applicable.
     - **Tags** – Enter keywords to better identify or search sections.
 
-These field values help in filtering and searching the sections faster during template configuration or section management.
+These details help in filtering and searching the sections faster during template configuration or section management.
 
-5. Select **Save** to create and save the section in the Draft state. A separate copy of the document is created and saved in the section library. The original file is unaffected.
+5. Select **Save** to create and save the section in the Draft state. A separate copy of the document is created and saved in the section library.
 
 6. After you save the section, the newly created section is opened in a new Word window and the section management panel opens up on the right-hand side of the Word canvas.
 
@@ -82,25 +82,6 @@ To insert fields in a section, follow these steps:
 5. To identify or review the multiple field insertions in the template, use the left and right arrows at the bottom of the field card.
 
 6. To delete the field or to view more details and perform other actions, select **More options** (***...***) on the field card.
-
-## Edit an existing section
-
-If you need to update the content of a published section due to changes in organizational standards, policy updates, or other business needs, you can do so by editing the published section. You can also resume editing a draft section by choosing the Edit section option.
-
-To edit a section, follow these steps:
-
-1. Go to the **Agreements** tab in Word, and select **Manage sections**.
-
-2. Select **Edit a section**.
-
-3. If a draft section is selected, you can change the content and configure settings, and then choose to publish the section.
-
-4. If a published section is selected, and you choose to edit the section, and then a new draft version of the same section is created. The published version is still available to use by template authors during template configuration.
-
-5. When you have made all the changes to the draft version, you can choose to [republish the section](agreements-manage-sections.md#publish-a-section), which replaces the current published version of the section with the latest one.
-
-   > [!NOTE]
-   > After the draft section is republished, an email notification is sent to all template creators who used the previous version. This informs them of the new version, allowing them to update their templates if they choose. Documents already generated from those templates will not be affected by the update.
 
 ## Configure section settings
 
