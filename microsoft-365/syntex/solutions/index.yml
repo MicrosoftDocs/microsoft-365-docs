@@ -1,0 +1,77 @@
+### YamlMime:Landing
+
+title: SharePoint Agreements AI documentation # < 60 chars
+summary: SharePoint Agreements AI is an end-to-end solution, powered by AI, to help streamline and simplify your business agreements, and seamlessly integrated into your flow of work. 
+metadata:
+  title: SharePoint Agreements AI documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: This page contains links to some important topics related to the SharePoint Agreements AI solution. Start here to learn about how to set up and use SharePoint Agreements AI in your organization. # Required; article description that is displayed in search results. < 160 chars.
+  services: 
+  ms.service: microsoft-365-backup #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page # Required
+  ms.collection: essentials-navigation
+  ms.custom: intro-hub-or-landing
+  author: chuckedmonson #Required; your GitHub user alias, with correct capitalization.
+  ms.author: chucked #Required; microsoft alias of author; optional team alias.
+  ms.date: 09/20/2024 #Required; mm/dd/yyyy format
+  ms.localizationpriority: medium
+  titleSuffix: Microsoft Syntex
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card 1
+  - title: About SharePoint Agreements AI
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Learn about SharePoint Agreements AI
+            url: agreements-overview.md
+
+# Card 2
+  - title: Get started
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Get and assign licenses
+            url: agreements-license-requirements.md
+          - text: Set up the solution
+            url: agreements-setup.md
+          - text: Get users ready
+            url: agreements-user-prereqs.md
+
+# Card 3
+  - title: Working with templates
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Create a template
+            url: agreements-create-template.md
+          - text: Update a template
+            url: agreements-update-template.md
+          - text: Manage sections in a template
+            url: agreements-manage-sections.md
+
+# Card 4
+  - title: Create an agreement
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Create an agreement
+            url: agreements-create-agreement.md
+          - text: Analyze section revisions
+            url: agreements-analyze-sections.md
+          - text: Receive notifications
+            url: agreements-notifications.md
+          - text: Import an agreement
+            url: agreements-import-agreement.md
+
+# Card 5
+  - title: Reporting
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: View activity reports
+            url: agreements-reports.md
+
