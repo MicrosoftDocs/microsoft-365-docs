@@ -20,6 +20,8 @@ description: Learn how to set up licensing tools for the SharePoint Agreements A
 
 # Set up SharePoint Agreements AI
 
+## Overview
+
 There are a few steps to setting up the solution.
 
 1. A Global Administrator [gets and assign the required SharePoint Content Solution - Agreements (Preview) license](agreements-license-requirements.md#assign-license-to-a-user).
@@ -28,26 +30,26 @@ There are a few steps to setting up the solution.
 
 3. Workspace owners [configure their workspace](#configure-the-workspace).
 
-4. The [Agreements app is added in Microsoft Teams](#add-the-agreements-app-in-microsoft-teams).
+4. Deploy the [Agreements app to Microsoft Teams](#add-the-agreements-app-in-microsoft-teams).
 
 ## Create workspaces
 
-Workspaces are grouped areas where templates, snippets, and agreements are stored. Each workspace maps to a SharePoint site. Permissions are also defined at a workspace level. You can create one workspace for every business line. For example, you could have one workspace each for your Legal, Procurement, and Human Resources departments.
+**Workspaces** allow you to organize and manage agreements across your organization. When you create a workspace, a SharePoint site is created and is assigned to the workspace. You can create a workspaces for business processes or departments in your organization that manages agreements. For example, you can have one workspace for your procurement team, and another one for your human resources team. Agreements, templates and other files exist within the workspace and are stored in the corresponding SharePoint site. Roles are assigned to users at a workspace level, and permissions can be managed at a workspace level. 
 
 ### Prerequisites
 
-Before setting up a workspace for SharePoint Agreements AI, you need to ensure:  
+Before creating a workspace for SharePoint Agreements AI, you need to ensure:  
 
 - The user implementing the steps in the article needs to be either a Global Administrator or SharePoint Administrator.
 
-    [!INCLUDE [global-administrator-note](../../includes/global-administrator-note.md)]
+   [!INCLUDE global-administrator-note]
 
-- User accounts are available with the [SharePoint Content Solution - Agreements (Preview) license](agreements-license-requirements.md#assign-license-to-a-user).
+- The [SharePoint Content Solution - Agreements (Preview) license](agreements-license-requirements.md#assign-license-to-a-user) is assigned to users in your organization.
 
-- You download and install the latest [SharePoint Online Management Shell](https://www.microsoft.com/download/details.aspx?id=35588).
+- Download and install the latest [SharePoint Online Management Shell](https://www.microsoft.com/download/details.aspx?id=35588).
 
-    > [!NOTE]
-    > You must be a SharePoint Administrator or Global Administrator to create sites through the SharePoint Online Management Shell.
+> [!NOTE]
+> You must be a SharePoint Administrator or Global Administrator to create sites through the SharePoint Online Management Shell.
 
 ### Create a workspace
 
@@ -57,13 +59,14 @@ Before setting up a workspace for SharePoint Agreements AI, you need to ensure:
 
     ```Connect-SPOService -Url "https://\<tenantName>-admin.sharepoint.com"```
 
-    Replace \<tenantName> with the name of your SharePoint tenant. <br><br>
+    where \<tenantName> is the name of your SharePoint tenant. <br><br>
+    
     Example: ```Connect-SPOService -Url "https://contosoelectronics-admin.sharepoint.com"```
 
    > [NOTE]
    > The Connect-SPOService might require the use of modern authentication to connect. For information about how to add modern authentication flow to your SPO-Connect cmdlet, see the [Connect-SPOService documentation](/powershell/module/sharepoint-online/connect-sposervice).
 
-4. Run the following command to create a new SharePoint site and set it as an Agreements workspace.
+3. Run the following command to create a new SharePoint site and set it as an Agreements workspace.
 
     ```New-SPOSite -Url "\<URL>" -Owner "\<user>" -StorageQuota 1000 -Title "<Workspace Name>" -EnableAgreementsSolution -Template "STS#3"```
 
@@ -75,7 +78,7 @@ Before setting up a workspace for SharePoint Agreements AI, you need to ensure:
   
     Example: ```New-SPOSite -Url "https://contosoelectronics.sharepoint.com/teams/LegalAgreements" -Owner "megan@contosoelectronics.onmicrosoft.com" -StorageQuota 1000 -Title "Legal agreements" -EnableAgreementsSolution -Template "STS#3"```
 
-5. The final PowerShell steps enable approvals workflow. Run the following set of commands on the newly created SharePoint site.
+4. Run the following set of commands on the newly created SharePoint site. These steps enable the approval workflow on your site. 
    
 ```
      $AgreementsSiteUrl = "\<URL>"
@@ -84,30 +87,30 @@ Remember to replace \<URL> with the URL of the newly created SharePoint site
 ```
 $script = '{"$schema":"https://developer.microsoft.com/json-schemas/sp/site-design-script-actions.schema.json","actions":[{"verb":"createSPList","listName":"Modern Template Library","templateType":101,"subactions":[{"verb":"enableApprovals"}]},{"verb":"createSPList","listName":"Section Library","templateType":101,"subactions":[{"verb":"enableApprovals"}]}]}
 
-     $SiteScriptResult = Add-SPOSiteScript -Title 'Enable Approvals for Template and Sections Library' -Content $script
+$SiteScriptResult = Add-SPOSiteScript -Title 'Enable Approvals for Template and Sections Library' -Content $script
 
-     $SiteDesignResult = Add-SPOSiteDesign -Title 'Enable Approvals for Template and Sections Library' -WebTemplate STS -SiteScripts $SiteScriptResult.Id
+$SiteDesignResult = Add-SPOSiteDesign -Title 'Enable Approvals for Template and Sections Library' -WebTemplate STS -SiteScripts $SiteScriptResult.Id
 
-     Invoke-SPOSiteDesign -Identity $SiteDesignResult.Id -WebUrl $AgreementsSiteUrl
+Invoke-SPOSiteDesign -Identity $SiteDesignResult.Id -WebUrl $AgreementsSiteUrl
 ```
 
 ## Deploy the Agreements app to users in Microsoft Teams
 
-As a global administrator or a Teams administrator, you can follow the steps outlined in the [Manage your apps in the Microsoft Teams Admin Center](/microsoftteams/manage-apps) to deploy the Agreements app to all users or specific users in your organization.
+As a global administrator or a Teams administrator, you can follow [manage the Agreements app in the Microsoft Teams Admin Center](/microsoftteams/manage-apps) and deploy the app to all users or specific users in your organization.
 
 ## Add the Agreements app in Microsoft Teams
 
-To add the Agreements app in Microsoft Teams, follow these steps (no administrator privileges needed):
+To add the Agreements app to Microsoft Teams, follow these steps (no administrator privileges needed):
 
 1. Launch Microsoft Teams.
 
 2. On the left navigation menu, select **Apps**.
 
-   ![A screenshot of Microsoft Teams showing the add Apps button.](../../media/content-understanding/agreements-teams-add-apps.png)
+   ![A screenshot of Microsoft Teams showing the add Apps button.](../../media/content-understanding/AgreementsAddApp.png)
 
 3. Search for **Agreements**, and then select **Add**.
 
-   ![A screenshot of adding the Agreements app in Teams.](../../media/content-understanding/agreements-add-agreements-app.png)
+   ![A screenshot of adding the Agreements app in Teams.](../../media/content-understanding/AgreementsAppStore.png)
 
 4. You'll see the Agreements app on the left navigation menu.
 
@@ -115,7 +118,7 @@ To add the Agreements app in Microsoft Teams, follow these steps (no administrat
 
 ## Configure the workspace
 
-Workspace owners can configure their workspace from the Agreements App. They can assign users to different roles in the workspace and manage the categories available in the workspace. 
+Workspace owners can configure the workspace from the Agreements App. They can assign users to different roles in the workspace and manage the categories available in the workspace. 
 
 ### Manage roles
 
@@ -127,10 +130,8 @@ To manage roles in a workspace:
 
 3. From the left navigation menu, select the **Roles** option.
 
-4. Select the role you would like to manage.
-
-    Here, you can add or remove users.
-
+4. Select the role you would like to manage. You can now manage the list of users assinged to each role.
+    
    ![A screenshot of the Edit workspace owners page to add users to a role.](../../media/content-understanding/agreements-add-users-to-roles.png)
 
 ### Manage categories

@@ -241,6 +241,8 @@
       items: 
         - name: Overview
           href: solutions/agreements-overview.md
+        - name: Key concepts
+          href: solutions/Key&#32concepts.md
         - name: Admin setup
           items:
             - name: Get and assign licenses

@@ -25,17 +25,17 @@ description: Learn how to get started with the SharePoint Agreements AI solution
 
 ## Overview
 
-SharePoint Agreements AI is an end-to-end solution, powered by AI, to help streamline and simplify your agreements, such as nondisclosure agreements and statements of work. From drafting to execution, the solution is ready to integrate seamlessly into your flow of work.
+SharePoint Agreements AI is an end-to-end solution, powered by AI, to help streamline and simplify your agreements, such as nondisclosure agreements (NDAs) and statements of work (SOWs). From drafting to execution, the solution is ready to integrate seamlessly into your flow of work.
 
-Centralize your agreements in the new Agreements app in Microsoft Teams, draft agreements with native Microsoft Word capabilities, and gain valuable AI-driven insights, making management of your agreements more efficient.
+Centralize your agreements in the new Agreements app in Microsoft Teams, draft agreements with native Microsoft Word capabilities, and gain valuable AI-driven insights, making management of your agreements easier and more efficient.
 
-![A screenshot of Agreements app showing the home page.](../../media/content-understanding/agreements-home.png)
+![A screenshot of Agreements app showing the home page.](../../media/content-understanding/agreements-homepage.png)
 
 ## What you get
 
 With SharePoint Agreements AI, you get:
 
-- **Agreements app in Microsoft Teams**. This app serves as the central hub for managing your agreements. You can create new templates, generate agreements from these templates, and upload signed agreements. Additionally, you can gain valuable insights on agreements.
+- **Agreements app in Microsoft Teams**. This app serves as the central hub for managing your agreements giving you access to all your agreements in one place. You can create new templates, generate agreements from these templates, and upload signed agreements. Additionally, you can gain valuable insights on agreements.
 
 - **Agreements tab in Microsoft Word**. With the new capabilities in Microsoft Word, you can author templates and generate agreements. You can add fields and sections to your templates and incorporate approval workflows, ensuring that generated agreements are automatically routed for approval. Users can then generate new agreements from published templates easily by just filling in the required fields.
 
@@ -55,6 +55,7 @@ With SharePoint Agreements AI, you can:
 
 |Article  |Description  |
 |---------|---------|
+|[Key concepts](Key&#32concepts.md)    |Learn the key concepts in SharePoint Agreements AI.         |
 |[Licensing requirements](agreements-license-requirements.md)    |Learn how to get and assign licenses for SharePoint Agreements AI.         |
 |[Set up the solution](agreements-setup.md)    |Learn how to set up and manage workspaces, add the Agreements app in Microsoft Teams, and more.         |
 |[Get users ready](agreements-user-prereqs.md)    |Learn how to get users ready to use all of the  solution features.         |

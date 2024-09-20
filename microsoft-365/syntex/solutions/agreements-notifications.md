@@ -1,5 +1,5 @@
 ---
-title: Receive approval notifications in SharePoint Agreements AI
+title: Approval notifications in SharePoint Agreements AI
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -18,31 +18,23 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Learn about the approval notifications in the SharePoint Agreements AI solution.
 ---
 
-# Receive approval notifications in SharePoint Agreements AI
+# Approval notifications in SharePoint Agreements AI
 
-When a template or agreement creator sends the template or agreements for approval, two notification flows can be invoked. One flow is required and is via the Approvals app in Microsoft Teams. The second flow is optional and is via email.
+Agreement approval notifications will be sent through the Approvals App in Teams. Agreement creators can also choose to notify via email.
 
 The process to configure and send approvals is provided in [Create a template with the SharePoint Agreements AI solution](agreements-create-template.md). This article provides the actions a recipient of the notification for an approval request can take.
 
-## Receive a notification by Approvals app
+## View requests in the Approvals app
 
-1. You receive an approval notification as a pop-up notification in the lower right of your screen. The notification indicates that you have an action to perform in the Approvals app in Microsoft Teams.
+1. When a request for approval is sent to you, you will receive an approval notification as a notification in Microsoft Teams.
 
-2. To acknowledge the notification, go to the [Approvals app in Microsoft Teams](/power-automate/teams/native-approvals-in-teams#use-the-approvals-app-in-teams). If you expect to commonly receive such notifications, right-click the app and pin it to the left-hand quick launch.
+2. You can also go to the [Approvals app in Microsoft Teams](/power-automate/teams/native-approvals-in-teams#use-the-approvals-app-in-teams) to see all your current approvals regardless of status. You can filter the requests by status (**Requested**, **Approved**, or **Canceled**). 
 
-3. The Approvals app shows all the current approvals regardless of status. Filter on the request status (**Requested**, **Approved**, or **Canceled**) or on the custom values. Use the **Requested** status and your own name to show the results if you have many approval requests.
+3. You can select the request title to see more details about the request.
+     For requests where you are the approver, you can **Approve**, **Reject** or **Reassign** the requset. You can also provide additional comments before taking an action.
+     For requests you created, you can choose to **Follow up** or **Cancel the request**.
 
-4. When you locate the approval request, select the request title to open a dialog that includes the link to the file, information about other approvers and actions, including **Approve** or **Reject**, **Cancel request**, **Follow up**, or **Reassign**. At this point, you can add additional comments before taking an action.
-
-5. After you select the appropriate action (for example, **Approve**), the status of the request changes. In addition, if email notification has been set up, the originator of the request receives an update notification via email.
-
-## Receive a notification by email
-
-1. When you receive a notification by email, the email has the title “Action requested: \<username> sent you an approval request."
-
-2. The message contains a link to view the document and take appropriate action. It also indicates which user the workflow is pending action on.
-
-3. Select the link to open the document in Microsoft Word. The right-hand panel contains the approval workflow details, including the required approval stages. If the document being approved is a template and it's approved by the user, then the option to publish the template is also available.
+4. You can also open the agreement in Microsoft Word by selecting the link.
 
 <br>
 
