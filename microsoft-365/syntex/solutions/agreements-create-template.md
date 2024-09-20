@@ -30,17 +30,13 @@ To create a new template, follow these steps:
 
 2. Optionally, you can select **Pick a file** to create a template from an existing document.
 
-3. On the **Create a template** page, provide a name for the template.
+3. On the **Create a template** page, provide a name for the template, pick values for the workspace, category, country or region and language applicable to the tempalte
 
    ![A screenshot of the Create a template page.](../../media/content-understanding/agreements-create-template.png)
 
-4. Select the workspace where the template will be stored and the category that the template belongs to.
+4. You can also optionally provide a description and tags.
 
-5. Set the values for country/region and language for the template.
-
-6. You can also optionally provide a description and tags.
-
-7. Select **Open in Word** to set up fields, insert sections, configure workflows, request approvals, and publish it once it's ready.
+5. Select **Open in Word** to set up fields, insert sections, configure workflows, request approvals, and publish it once it's ready.
 
     > [!NOTE]
     > You can't change the name of the template or the workspace where the template is stored after a draft template is created.
@@ -55,7 +51,7 @@ You can also create a template in Microsoft Word.
 
 3. If you want to convert an existing document into a template, select **Convert this document to template**.
 
-4. Provide a user-friendly name and a description for the template.
+4. Optionally, you can provide a user-friendly name and a description for the template.
 
 5. Select the workspace where the template will be stored and the category that the template belongs to.
 
@@ -63,33 +59,42 @@ You can also create a template in Microsoft Word.
 
 7. Select **Save** to create the draft template.
 
-## Set up fields
+If you started with a new template, copy or enter the content you'd like into the template file.
 
-Once the template's draft is shown in Word on the **Manage templates** panel, you can set up new fields or use existing fields.
+You can now set up fields, sections and workflows for this template.
 
+#Fields
+
+Fields are areas of the template that should be filled in when generating agreements from the template. When configuring the template, you can define as may fields as you like. 
 For example, the name of a contractor can occur multiple times in a consulting agreement document. You can create a field named "Contractor Name" and associate it with all occurrences of the name throughout the document when you generate a template.
 
-### Create and reuse fields
+Fields can either be added to the content of the document, or kept as additional properties for the template. You can also define if a field needs to be provided when agreements are created off the template, or if the field is optional.
+
+There are a few standard fields that come out of the box with SharePoint Agreements AI. These are 
+1. First party - the first party on the agreement.
+2. Second party - the second party on the agreement.
+3. Effective date - the date on which the agreement will come into effect.
+4. Expiration date - the date on which the agreement will expire.
+5. Expiration type - this can either be single date, where the agreement expires on a specific date, or evergreen, where the agreement never expires.
+
+### Add fields to the template
 
 1. On the **Manage templates** panel, select **Set up fields**.
 
    ![A screenshot of the Manage templates panel.](../../media/content-understanding/agreements-manage-templates.png)
 
-2. Enter the name of the field in the search box. If the field name is already available, it populates the field name in the search result.
+2. Here, you can search for and reuse an existing fields or create a new one.
 
-3. Now select the field name. It's displayed as a card on the **Manage templates** panel with an option to insert a field to replace content in the template.
+3. To insert the field into the content of the document, select the text from the agreement or place the cursor where you'd like to replace with the field, and click on Insert from the field card on the manage template panel. You can also choose to insert this field at all similar instances throughout the document. You can review all field insertions in the template with the left and right arrows within the field card.
 
-   ![A screenshot of the Set up fields section showing the Create a new field option on the Manage templates panel.](../../media/content-understanding/agreements-setup-fields.png)
+   ![A screenshot showing an opened document and the Manage templates panel.](../../media/content-understanding/agreements-insert-field-2.png)
+   ![A screenshot showing an opened document and the Manage templates panel showing how to insert multiple field.](../../media/content-understanding/agreements-insert-multiple-fields-2.png)
 
-   ![A screenshot of the Set up fields section showing a created field on the Manage templates panel.](../../media/content-understanding/agreements-setup-fields-2.png)
+4. To delete the field or view more details and perform additional actions, select **More options** (**...**) on the field card.
 
-4. If you don't find the field in the search results, you can create a new field and associate it with different data types.
+#### Create a new field
 
-5. To create a new field, select **Create a new field at** the bottom of search results.
-
-6. On the **Manage templates** panel, select **Create a new field**.
-
-7. You can mark the field as a required field, add a description, and select the type of field. Fields include the following types:
+To create a new field, select **Create a new field**. When creating the field, you can provide a name for the field, mark the field as a required field, add a description, and select the type of field. Fields include the following types:
 
     - Single line of text
     - Multiple lines of text
@@ -100,9 +105,11 @@ For example, the name of a contractor can occur multiple times in a consulting a
     - Table
     - SharePoint list
 
-   ![A screenshot of Types section of the Manage templates panel.](../../media/content-understanding/agreements-field-types.png)
-
 ## Associate a field to a list or library
+
+You can associate fields to a SharePoint list or library. If you do so, users will be provided the list of values in the list to pick from, rather than being asked to type in the value for the fields manually. 
+Note: If you associate fields with multiple columns of the same list or library, users can pick values for the fields that correspond to a single row in the list or library.
+For example, if you have a list that has the list of states and countries, and you associate two fields, state & country to these columns, the value for country will be automatically picked up once the user selects the state. 
 
 To associate a field to a SharePoint list or library, follow these steps:
 
@@ -110,7 +117,7 @@ To associate a field to a SharePoint list or library, follow these steps:
 
    ![A screenshot of Type section showing the SharePoint list option.](../../media/content-understanding/agreements-sharepoint-list.png)
 
-2. On the **Select a list** page, select the list location and the list you want to use, and then select **Next**.
+2. On the **Select a list** page, select the SharePoint site and the list you want to use, and then select **Next**.
 
    ![A screenshot of Select a list page.](../../media/content-understanding/agreements-select-list.png)
 
@@ -124,49 +131,31 @@ To associate a field to a SharePoint list or library, follow these steps:
 
    ![A screenshot showing the list field associated with the field.](../../media/content-understanding/agreements-list-field.png)
 
-If you want users to be able to add inputs manually, in addition to choosing from a list, select **Document authors can type in values manually for this field**. In this case, the default for the manual input data type is single line of text. Also, the values input by the authors are only used to generate the document. They won't be added to the SharePoint list.
+You can also allow users to manually input values with the **Document authors can type in values manually for this field** option. Note that the values input by the authors are only used to generate the document. They won't be added to the SharePoint list.
 
-### Insert the field into the template
+## Sections
+Sections are reusable blocks of content that be used across templates. See [Manage Sections](/microsoft-365/syntex/solutions/agreements-manage-sections) for more details.
 
-To insert the added field into the content of a template, follow these steps:
-
-1. Select the content of the template (any text in the document) that you want to replace with a field or place the cursor at a specific location in the template where you want to insert the field.
-
-2. To insert the field only at the specified selection, on the **Manage templates** panel, select **Insert**. To insert the field at all similar places in the document, select the down arrow icon next to the **Insert** button and select **Insert at all similar places**. This action inserts the field at all locations with text that exactly matches the selected text.
-
-   ![A screenshot showing an opened document and the Manage templates panel.](../../media/content-understanding/agreements-insert-field-2.png)
-
-3. To identify or review the multiple field insertions in the template, use the left and right arrows at the bottom of the field card.
-
-   ![A screenshot showing an opened document and the Manage templates panel showing how to insert multiple field.](../../media/content-understanding/agreements-insert-multiple-fields-2.png)
-
-4. To delete the field or view more details and perform additional actions, select **More options** (**...**) on the field card.
-
-## Insert a section
-
-Sections are reusable blocks of content that can be inserted in a template. They can form one of the core building blocks of your templates. You can create sections once and use them across multiple templates. Once you create a new template or edit an existing template, you can choose to insert new or remove already inserted published sections.
-
-To insert a section into the content of a template, follow these steps:
+### Insert a section
+You can insert publised sections into your tempalte. 
 
 1. From the **Manage templates** panel, select **Insert sections**.
 
-2. Choose **Select a section from library.** This takes you to the list of published sections.
+2. Pick the relevant section for your template from the list, and then choose **Select**.
 
-3. Pick the relevant section for your template from the list, and then choose **Select**.
+3. Optionally, you can edit section content after it's placed in the template as needed, if the section is marked as **Editable**.
 
-4. Optionally, you can edit section content after it's placed in the template as needed, if the section is marked as **Editable**.
+4. You can insert as many sections as you'd like. The list of sections inserted will be displayed under the **Insert sections** part.
 
-5. You can insert as many sections as possible. The list of sections inserted will be displayed under the **Insert sections** section. You can select the relevant section, and the Word document will autoscroll to the canvas section where the section is inserted.
+5. You can also remove the section from the template by selecting the **Delete** option.
 
-6. At any time, you can delete the section from the template by selecting the **Delete** option.
-
-## Configure workflows
+## Configure a workflow
 
 Create customizable workflows that apply to all documents when created with the template.
 
 ### Configure an approval workflow for documents generated from the template
 
-Once you create a new template or edit an existing template, you can configure an approval flow so that all documents generated from the template are approved by the set of approvers before it can proceed to the next step.
+Once you create a new template or edit an existing template, you can configure an approval flow so that all documents generated from the template are sent to the approvers.
 
 To set up a mandatory approval workflow, follow these steps:
 
@@ -205,11 +194,13 @@ To set up a mandatory signature workflow, follow these steps:
 
 6. Once set up, you can also choose to later modify the signature request. Once your modifications are complete, select **Save changes** to save the updated flow. You can delete the already saved signature flow by selecting **Delete signature flow**.
 
+## Publish the template
+
+When you're done configuring your template, you can publish the template. Once the template state is **Published**, it becomes available for document authors to use it for document generation.
+
 ## Request approval before publishing a template
 
-Once you have made the relevant changes to a template and configured for your business need, you can optionally choose to send a draft template for approval before publishing the template. The SharePoint Agreements AI solution uses the Approvals app in Teams to send approval requests. For more information, see [Approvals in Microsoft Teams](/power-automate/teams/native-approvals-in-teams).
-
-Once the template state is **Published**, it becomes available for document authors to use it for document generation.
+You can also request an approval on a template before publishing the template. The SharePoint Agreements AI solution uses the Approvals app in Teams to send approval requests. For more information, see [Approvals in Microsoft Teams](/power-automate/teams/native-approvals-in-teams).
 
 To request approval before publishing the section, follow these steps:
 
@@ -229,8 +220,9 @@ To request approval before publishing the section, follow these steps:
 
 8. You can cancel the sent approval request by selecting **Cancel request** or select **Edit section**, which will cancel all running flows and unlock the template for further edits, and the document will return to **Draft** state.
 
-##Sharing published templates
-Once a tempalte is published, workspace owners, workspace members and template managers can create agreements from it. You can also share the template with read only permission to users not in the workspace. This will give those users the ability to create agreements from the template.
+## Share published templates
+
+Once a template is published, workspace owners, workspace members, and template managers can create agreements from it. You can also share the template with read-only permission to users not in the workspace. This gives those users the ability to create agreements from the template.
 
 <br>
 
