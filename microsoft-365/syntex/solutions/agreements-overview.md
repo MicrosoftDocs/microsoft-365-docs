@@ -29,7 +29,7 @@ SharePoint Agreements AI is an end-to-end solution, powered by AI, to help strea
 
 Centralize your agreements in the new Agreements app in Microsoft Teams, draft agreements with native Microsoft Word capabilities, and gain valuable AI-driven insights, making management of your agreements more efficient.
 
-![A screenshot of Agreements app showing the home page.](../../media/content-understanding/agreements-home.png)
+![A screenshot of Agreements app showing the home page.](../../media/content-understanding/agreements-homepage.png)
 
 ## What you get
 
