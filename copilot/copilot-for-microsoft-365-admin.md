@@ -23,7 +23,7 @@ description: "Learn about Copilot for Microsoft 365 admin and how it can help si
 
 # Copilot for Microsoft 365 admin (Preview)
 
-Microsoft 365 Copilot harnesses the value of generative AI to boost IT admins' productivity by simplifying administration of Microsoft 365 and Microsoft 365 Copilot, and empowering you to focus on more strategic priorities. Copilot for Microsoft 365 admin helps admins perform tasks across different Microsoft 365 services using natural language interactions, contextual guidance, and proactive suggestions. Copilot for Microsoft 365 admin also leverages the power of Copilot to provide transferable skills across different admin centers and surfaces, breaking the barriers of switching between multiple admin tools and interfaces.
+Copilot for Microsoft 365 admin harnesses the value of generative AI to boost IT admins' productivity by simplifying administration of Microsoft 365 and Microsoft 365 Copilot, and empowering you to focus on more strategic priorities. Copilot for Microsoft 365 admin helps admins perform tasks across different Microsoft 365 services using natural language interactions, contextual guidance, and proactive suggestions. Copilot for Microsoft 365 admin also leverages the power of Copilot to provide transferable skills across different admin centers and surfaces, breaking the barriers of switching between multiple admin tools and interfaces.
 
 >[!NOTE]
 > Copilot for Microsoft 365 admin is currently available in an invite-only preview.
