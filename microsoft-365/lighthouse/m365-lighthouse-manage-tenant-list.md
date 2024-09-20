@@ -24,7 +24,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Manage your tenant list in Microsoft 365 Lighthouse
 
-To help you manage your tenant list in Microsoft 365 Lighthouse, you can apply custom tags to your tenants. These tags can be used to organize your tenants and can also help you filter the existing views and insights available to relevant sets of tenants. You can manage your tags from the Tenants page. Once created and assigned, you can go to any page in Lighthouse that has a Tenants filter and use it to filter the data based on a tag.
+To help you manage your tenant list in Microsoft 365 Lighthouse, you can apply custom tags to your tenants. These tags can be used to organize your tenants and can also help you filter the existing views and insights available to relevant sets of tenants. You can manage your tags from the Tenants page. Once tags are created and assigned, you can go to any page in Lighthouse that has a Tenants filter and use it to filter the data based on a tag.
 
 ## Before you begin
 
