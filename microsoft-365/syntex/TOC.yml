@@ -237,7 +237,7 @@
         - name: Admin setup 
           href: ocr.md
 
-    - name: Agreements AI solution 
+    - name: SharePoint Agreements AI
       items: 
         - name: Overview
           href: solutions/agreements-overview.md
@@ -247,6 +247,8 @@
               href: solutions/agreements-license-requirements.md
             - name: Set up the solution
               href: solutions/agreements-setup.md
+            - name: Get users ready
+              href: solutions/agreements-user-prereqs.md
         - name: Create a template
           href: solutions/agreements-create-template.md
         - name: Update a template

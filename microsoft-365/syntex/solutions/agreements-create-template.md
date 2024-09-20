@@ -1,5 +1,5 @@
 ---
-title: Create a template with the SharePoint Agreements AI solution
+title: Create a template in SharePoint Agreements AI
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -18,7 +18,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Learn how to create a template with the SharePoint Agreements AI solution.
 ---
 
-# SharePoint Agreements AI Templates
+# Create a template in SharePoint Agreements AI
 
 Templates serve as a standard format for consistently generating agreements. You can convert an existing agreement to a template or start with a blank document.
 
@@ -92,7 +92,8 @@ There are a few standard fields that come out of the box with SharePoint Agreeme
 
 4. To delete the field or view more details and perform additional actions, select **More options** (**...**) on the field card.
 
-#### Creating a new field
+#### Create a new field
+
 To create a new field, select **Create a new field**. When creating the field, you can provide a name for the field, mark the field as a required field, add a description, and select the type of field. Fields include the following types:
 
     - Single line of text
@@ -132,10 +133,10 @@ To associate a field to a SharePoint list or library, follow these steps:
 
 You can also allow users to manually input values with the **Document authors can type in values manually for this field** option. Note that the values input by the authors are only used to generate the document. They won't be added to the SharePoint list.
 
-# Sections
+## Sections
 Sections are reusable blocks of content that be used across templates. See [Manage Sections](/microsoft-365/syntex/solutions/agreements-manage-sections) for more details.
 
-## Insert a section
+### Insert a section
 You can insert publised sections into your tempalte. 
 
 1. From the **Manage templates** panel, select **Insert sections**.
@@ -148,7 +149,7 @@ You can insert publised sections into your tempalte.
 
 5. You can also remove the section from the template by selecting the **Delete** option.
 
-## Configure workflows
+## Configure a workflow
 
 Create customizable workflows that apply to all documents when created with the template.
 
@@ -193,8 +194,9 @@ To set up a mandatory signature workflow, follow these steps:
 
 6. Once set up, you can also choose to later modify the signature request. Once your modifications are complete, select **Save changes** to save the updated flow. You can delete the already saved signature flow by selecting **Delete signature flow**.
 
-##Publish your tempalte
-When you're all done configuring your tempalte, you can publish the tempalte. Once the template state is **Published**, it becomes available for document authors to use it for document generation.
+## Publish the template
+
+When you're done configuring your template, you can publish the template. Once the template state is **Published**, it becomes available for document authors to use it for document generation.
 
 ## Request approval before publishing a template
 
@@ -217,6 +219,10 @@ To request approval before publishing the section, follow these steps:
 7. Once the approval request is sent, you can track the request status (**Approval in progress** or **Approval completed**) through the Word pane by reloading the template management pane or selecting **Refresh**. You can also view the request later by selecting the **Sent** tab in the Approvals app in Teams.
 
 8. You can cancel the sent approval request by selecting **Cancel request** or select **Edit section**, which will cancel all running flows and unlock the template for further edits, and the document will return to **Draft** state.
+
+## Share published templates
+
+Once a template is published, workspace owners, workspace members, and template managers can create agreements from it. You can also share the template with read-only permission to users not in the workspace. This gives those users the ability to create agreements from the template.
 
 <br>
 
