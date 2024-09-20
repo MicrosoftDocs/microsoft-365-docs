@@ -48,8 +48,8 @@ Before creating a workspace for SharePoint Agreements AI, you need to ensure:
 
 - Download and install the latest [SharePoint Online Management Shell](https://www.microsoft.com/download/details.aspx?id=35588).
 
-    > [!NOTE]
-    > You must be a SharePoint Administrator or Global Administrator to create sites through the SharePoint Online Management Shell.
+> [!NOTE]
+> You must be a SharePoint Administrator or Global Administrator to create sites through the SharePoint Online Management Shell.
 
 ### Create a workspace
 
@@ -106,11 +106,11 @@ To add the Agreements app to Microsoft Teams, follow these steps (no administrat
 
 2. On the left navigation menu, select **Apps**.
 
-   ![A screenshot of Microsoft Teams showing the add Apps button.](../../media/content-understanding/agreements-teams-add-apps.png)
+   ![A screenshot of Microsoft Teams showing the add Apps button.](../../media/content-understanding/AgreementsAddApp.png)
 
 3. Search for **Agreements**, and then select **Add**.
 
-   ![A screenshot of adding the Agreements app in Teams.](../../media/content-understanding/agreements-add-agreements-app.png)
+   ![A screenshot of adding the Agreements app in Teams.](../../media/content-understanding/AgreementsAppStore.png)
 
 4. You'll see the Agreements app on the left navigation menu.
 
