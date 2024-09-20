@@ -34,16 +34,25 @@ jobs:
                     "ThirdPartyNotices", 
                     ".acrolinx-config.edn", 
                     ".gitattributes", 
-                    "ProtectedFiles.yml", 
                     "AutoLabelAssign.yml", 
-                    "LiveMergeCheck.yml",                 
-                    "PrFileCount.yml", 
+                    "AutoLabelMsftContributor.yml",
                     "BackgroundTasks.yml",
-                    "Shared-ProtectedFiles.yml", 
+                    "compare-live-main.yml",
+                    "LiveMergeCheck.yml",    
+                    "M365Endpoints.yml",             
+                    "PrFileCount.yml", 
+                    "ProtectedFiles.yml", 
+                    "Stale.yml",
+                    "TierManagement.yml",
+                    "workflow-status-report.yml",
                     "Shared-AutoLabelAssign.yml", 
+                    "Shared-AutoLabelMsftContributor.yml",
+                    "Shared-ExtractPayload.yml", 
                     "Shared-LiveMergeCheck.yml", 
                     "Shared-PrFileCount.yml", 
-                    "Shared-ExtractPayload.yml" 
+                    "Shared-ProtectedFiles.yml", 
+                    "Shared-Stale.yml",
+                    "Shared-TierManagement.yml"
                 ]'
             ApproverList: '["user1"]'
             
