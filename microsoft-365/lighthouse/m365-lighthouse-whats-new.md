@@ -150,7 +150,7 @@ To learn more, see "Optimize your renewal conversations with simplified renewal 
 
 ### Microsoft Copilot opportunities in Sales Advisor
 
-We've added Microsoft Copilot opportunities to Sales Advisor to help you identify customers who are eligible to buy Microsoft Copilot for Microsoft 365. Microsoft Copilot is an AI companion that works everywhere you do and intelligently adapts to your needs.
+We've added Microsoft Copilot opportunities to Sales Advisor to help you identify customers who are eligible to buy Microsoft 365 Copilot. Microsoft Copilot is an AI companion that works everywhere you do and intelligently adapts to your needs.
 
 To access Copilot opportunities, in the left navigation pane in Microsoft 365 Lighthouse, select **Sales Advisor (Project Orland)** > **Opportunities**, and then select the **Customer growth** tab.
 

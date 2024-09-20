@@ -95,12 +95,15 @@ The following table lists the available products and their **ProductId**. It als
 | Product | ProductId | Is trial without payment method enabled? |
 |-----------------------------|--------------|--------------|
 | Clipchamp Premium | CFQ7TTC0N8SS | No |
+| Microsoft 365 Copilot | CFQ7TTC0MM8R | No |
+| Microsoft 365 F3 | CFQ7TTC0LH05 | No |
+| Microsoft Purview Discovery | CFQ7TTC0N8SL | Yes |
 | Power Apps per user* | CFQ7TTC0LH2H | No |
 | Power Automate per user* | CFQ7TTC0LH3L | No |
-| Power Automate RPA* | CFQ7TTC0LSGZ  | No |
-| Power BI Premium (standalone)* | CFQ7TTC0H6RP  | No |
+| Power Automate RPA* | CFQ7TTC0LSGZ | No |
+| Power BI Premium (standalone)* | CFQ7TTC0H6RP | No |
 | Power BI Pro* | CFQ7TTC0H9MP | No |
-| Project Plan 1* | CFQ7TTC0HDB1 | Yes |
+| Planner Plan 1* | CFQ7TTC0HDB1 | Yes |
 | Project Plan 3* | CFQ7TTC0HDB0 | No |
 | Python in Excel | CFQ7TTC0S3X1 | No |
 | Teams Exploratory | CFQ7TTC0J1FV | Yes |
@@ -108,8 +111,6 @@ The following table lists the available products and their **ProductId**. It als
 | Visio Plan 1* | CFQ7TTC0HD33 | Yes |
 | Visio Plan 2* | CFQ7TTC0HD32 | No |
 | Viva Goals (self-service trials only) | CFQ7TTC0PW0V | Yes |
-| Microsoft 365 F3 | CFQ7TTC0LH05 | No |
-| Microsoft Purview Discovery | CFQ7TTC0N8SL | Yes |
 
 *These IDs have changed. If you previously blocked products using the old IDs, they're automatically blocked using the new IDs. No other work is required.
 
@@ -130,10 +131,6 @@ The following table lists the available third-party offer types. These offer typ
 | Dynamics 365 Dataverse Apps | DYNAMICSCE |
 | Dynamics 365 Business Central | DYNAMICSBC |
 
-
-
-
-
 ## View or set the status for AllowSelfServicePurchase
 
 You can set the **Value** parameter for **AllowSelfServicePurchase** to allow or prevent users from making a self-service purchase. You can also use the **OnlyTrialsWithoutPaymentMethod** value to allow users to try products that have no payment required trials. Refer to the product list above to see which products have these trials enabled. Users can only buy the product after the trial is over if **AllowSelfServicePurchase** is enabled.
@@ -143,7 +140,7 @@ You can set the **Value** parameter for **AllowSelfServicePurchase** to allow or
 
 The following table describes the settings for the **Value** parameter.
 
-| **Setting** | **Impact** |
+| Setting | Impact |
 |---|---|
 | Enabled | Users can make self-service purchases and acquire trials for the product. |
 | OnlyTrialsWithoutPaymentMethod | Users can't make self-service purchases but can acquire free trials for products that don't require them to add a payment method. After the trial expires, a user can't buy the paid version of the product. |
