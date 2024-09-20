@@ -89,9 +89,11 @@ To add fields to a template, follow these steps:
 
 2. Here, you can search for and reuse an existing field or create a new one.
 
-3. To insert the field into the content of the document, select the text from the agreement or place the cursor where you'd like to replace with the field, and select **Insert** from the field card on the **Manage templates** panel. You can also choose to insert this field at all similar instances throughout the document. You can review all field insertions in the template with the left and right arrow keys within the field card.
+3. To insert the field into the content of the document, select the text from the agreement or place the cursor where you'd like to replace with the field, and select **Insert** from the field card on the **Manage templates** panel.
 
    ![A screenshot showing an opened document and the Manage templates panel.](../../media/content-understanding/agreements-insert-field-2.png)
+
+    You can also choose to insert this field at all similar instances throughout the document. You can review all field insertions in the template with the left and right arrow keys within the field card.
 
    ![A screenshot showing an opened document and the Manage templates panel showing how to insert multiple field.](../../media/content-understanding/agreements-insert-multiple-fields-2.png)
 
