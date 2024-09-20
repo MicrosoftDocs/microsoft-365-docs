@@ -42,7 +42,7 @@ To view audit logs, you must have one of the following roles:
 1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Audit logs**.
 
     > [!NOTE]
-    > It might take up to 1 hour to see new logs. Go to the respective service to see the most recent changes.
+    > It might take up to an hour to see new logs. Go to the respective service to see the most recent changes.
 
 2. Select a tab to view specific logs: **Audit logs**, **Graph logs**, **Directory logs**, **Sign-in logs**.
 
