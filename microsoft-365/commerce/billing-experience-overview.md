@@ -24,7 +24,7 @@ ms.custom:
 search.appverid: MET150
 ROBOTS: NOINDEX NOFOLLOW
 description: "Learn about the new billing experience for business subscription in the Microsoft 365 admin center."
-ms.date: 10/10/2023
+ms.date: 09/19/2024
 ---
 
 # Overview of the new Microsoft billing experience for business subscriptions
