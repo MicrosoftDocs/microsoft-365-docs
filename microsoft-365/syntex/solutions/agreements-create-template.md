@@ -30,7 +30,7 @@ To create a new template, follow these steps:
 
 2. Optionally, you can select **Pick a file** to create a template from an existing document.
 
-3. On the **Create a template** page, provide a name for the template, pick values for the workspace, category, country or region and language applicable to the tempalte
+3. On the **Create a template** page, provide a name for the template, pick values for the workspace, category, country or region, and language applicable to the template.
 
    ![A screenshot of the Create a template page.](../../media/content-understanding/agreements-create-template.png)
 
@@ -55,7 +55,7 @@ You can also create a template in Microsoft Word.
 
 5. Select the workspace where the template will be stored and the category that the template belongs to.
 
-6. Set values for the country/region and language for the template.
+6. Set values for the country or region and the language for the template.
 
 7. Select **Save** to create the draft template.
 
@@ -67,19 +67,19 @@ You can also create a template in Microsoft Word.
 
 Fields are areas of the template that should be filled in when generating agreements from the template. When configuring the template, you can define as many fields as you like. For example, the name of a contractor can occur multiple times in a consulting agreement document. You can create a field named "Contractor Name" and associate it with all occurrences of the name throughout the document when you generate a template.
 
-Fields can either be added to the content of the document, or kept as additional properties for the template. You can also define if a field needs to be provided when agreements are created off the template, or if the field is optional.
+Fields can either be added to the content of the document, or kept as other properties for the template. You can also define if a field needs to be provided when agreements are created off the template, or if the field is optional.
 
-There are a few standard fields that come with SharePoint Agreements AI. These include:
+There are a few standard fields that come with SharePoint Agreements AI. These fields include:
 
 - **First party** – The first party on the agreement.
 
 - **Second party** – The second party on the agreement.
 
-- **Effective date**  –The date on which the agreement will come into effect.
+- **Effective date**  –The date on which the agreement comes into effect.
 
-- **Expiration date** – The date on which the agreement will expire.
+- **Expiration date** – The date on which the agreement expires.
 
-- **Expiration type** – This can either be single date, where the agreement expires on a specific date, or evergreen, where the agreement never expires.
+- **Expiration type** – This type can either be single date, where the agreement expires on a specific date, or evergreen, where the agreement never expires.
 
 ### Add fields to the template
 
@@ -87,7 +87,7 @@ There are a few standard fields that come with SharePoint Agreements AI. These i
 
    ![A screenshot of the Manage templates panel.](../../media/content-understanding/agreements-manage-templates.png)
 
-2. Here, you can search for and reuse an existing fields or create a new one.
+2. Here, you can search for and reuse an existing field or create a new one.
 
 3. To insert the field into the content of the document, select the text from the agreement or place the cursor where you'd like to replace with the field, and select **Insert** from the field card on the **Manage templates** panel. You can also choose to insert this field at all similar instances throughout the document. You can review all field insertions in the template with the left and right arrow keys within the field card.
 
@@ -95,7 +95,7 @@ There are a few standard fields that come with SharePoint Agreements AI. These i
 
    ![A screenshot showing an opened document and the Manage templates panel showing how to insert multiple field.](../../media/content-understanding/agreements-insert-multiple-fields-2.png)
 
-4. To delete the field or view more details and perform additional actions, select **More options** (**...**) on the field card.
+4. To delete the field or view more details and perform other actions, select **More options** (**...**) on the field card.
 
 ### Create a new field
 
@@ -112,7 +112,7 @@ To create a new field, select **Create a new field**. When creating the field, y
 
 ### Associate a field to a list or library
 
-You can associate fields to a SharePoint list or library. If you do so, users will be provided the list of values in the list to pick from, rather than being asked to type in the value for the fields manually.
+You can associate fields to a SharePoint list or library. If you do so, users are provided the list of values in the list to pick from, rather than being asked to type in the value for the fields manually.
 
 > [!NOTE]
 > If you associate fields with multiple columns of the same list or library, users can pick values for the fields that correspond to a single row in the list or library. For example, if you have a list that has the list of states and countries or regions, and you associate two fields, state and country to these columns, the value for country will be automatically picked up once the user selects the state.
@@ -137,11 +137,11 @@ To associate a field to a SharePoint list or library, follow these steps:
 
    ![A screenshot showing the list field associated with the field.](../../media/content-understanding/agreements-list-field.png)
 
-You can also allow users to manually input values with the **Document authors can type in values manually for this field** option. Note that the values input by the authors are only used to generate the document. They won't be added to the SharePoint list.
+You can also allow users to manually input values with the **Document authors can type in values manually for this field** option. The values input by the authors are only used to generate the document. They won't be added to the SharePoint list.
 
 ## Set up sections
 
-Sections are reusable blocks of content that be used across templates. For more information, see See [Manage sections](agreements-manage-sections.md) for more details.
+Sections are reusable blocks of content that can be used across templates. For more information, see [Manage sections](agreements-manage-sections.md).
 
 ### Insert a section
 
@@ -163,7 +163,7 @@ Create customizable workflows that apply to all documents when created with the 
 
 ### Configure an approval workflow for documents generated from the template
 
-Once you create a new template or edit an existing template, you can configure an approval flow so that all documents generated from the template are sent to the approvers.
+After you create or edit a template, you can set up an approval process to send all documents from that template to the approvers.
 
 To set up a mandatory approval workflow, follow these steps:
 
@@ -183,7 +183,7 @@ To set up a mandatory approval workflow, follow these steps:
 
 ## Configure a SharePoint eSignature workflow
 
-Once you create a new template or edit an existing one, you can configure a SharePoint eSignature flow so that all documents generated from the template must be sent for signatures as designated in the assigned flow. The SharePoint Agreements AI solution uses SharePoint eSignature to set up and send signature requests to recipients. For more information, see [Overview of SharePoint eSignature](/microsoft-365/syntex/esignature-overview).
+After creating or editing a template, you can set up a SharePoint eSignature flow. This ensures that every document generated from the template is automatically sent for signatures according to the specified flow. The SharePoint Agreements AI solution uses SharePoint eSignature to set up and send signature requests to recipients. For more information, see [Overview of SharePoint eSignature](/microsoft-365/syntex/esignature-overview).
 
 To set up a mandatory signature workflow, follow these steps:
 
