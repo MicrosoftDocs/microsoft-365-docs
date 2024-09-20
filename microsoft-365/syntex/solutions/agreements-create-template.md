@@ -139,7 +139,7 @@ To associate a field to a SharePoint list or library, follow these steps:
 
 You can also allow users to manually input values with the **Document authors can type in values manually for this field** option. The values input by the authors are only used to generate the document. They won't be added to the SharePoint list.
 
-## Add a section to a template
+## Add sections to a template
 
 Sections are reusable blocks of content that can be used across templates. For more information, see [Manage sections](agreements-manage-sections.md).
 
