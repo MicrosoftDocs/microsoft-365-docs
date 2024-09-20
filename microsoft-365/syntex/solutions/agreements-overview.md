@@ -55,7 +55,7 @@ With SharePoint Agreements AI, you can:
 
 |Article  |Description  |
 |---------|---------|
-|[Key concepts](Key&#32concepts.md)    |Learn the key concepts in SharePoint Agreements AI.         |
+|[Key concepts](key-concepts.md)    |Learn the key concepts in SharePoint Agreements AI.         |
 |[Licensing requirements](agreements-license-requirements.md)    |Learn how to get and assign licenses for SharePoint Agreements AI.         |
 |[Set up the solution](agreements-setup.md)    |Learn how to set up and manage workspaces, add the Agreements app in Microsoft Teams, and more.         |
 |[Get users ready](agreements-user-prereqs.md)    |Learn how to get users ready to use all of the  solution features.         |
