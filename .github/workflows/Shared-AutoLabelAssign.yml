@@ -574,7 +574,15 @@ jobs:
                             # Don't add assignments to PRs in excluded branches listed in $ExcludedBranchList
                             If (!$ExcludedBranchList.Contains($TargetBranch)) {
 
-                                Set-PrAssignee -IssueUrl $IssueUrl -GitHubAssignees $FormattedMetadata.AuthorMetadata
+                                Try {
+
+                                    Set-PrAssignee -IssueUrl $IssueUrl -GitHubAssignees $FormattedMetadata.AuthorMetadata 
+
+                                } Catch {
+                                 
+                                    Write-Host "Error setting PR assignee. GitHub may return an `"Unprocessable entity (422)`" error periodically. This can be ignored. Error: $($Error[0])"
+                                
+                                }
 
                             } Else {
 
