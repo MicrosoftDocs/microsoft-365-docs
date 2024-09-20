@@ -238,7 +238,6 @@
           href: ocr.md
 
     - name: SharePoint Agreements AI
-      href: solutions/index.yml
       items: 
         - name: Overview
           href: solutions/agreements-overview.md
