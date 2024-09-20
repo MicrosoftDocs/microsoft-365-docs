@@ -52,16 +52,19 @@ To view audit logs, you must have one of the following roles:
         - **Time range** - Last day, last 7 days, last 30 days.
         - **Activity** - Microsoft 365 activity type that corresponds to the action taken. For more information, see the [Activities](#activities) table.
         - **Initiated by** - Who initiated the action.
+
     - Graph logs tab
         - **Tenants** - Tenant tags or customer tenant names.
         - **Time range** - Last day, last 7 days, last 30 days.
         - **Request type** - Type of request that the Microsoft Graph service received and processed for a tenant.
         - **Response code** - The HTTP response status code for the event.
+
     - Directory logs tab
         - **Tenants** - Tenant tags or customer tenant names.
         - **Time range** - Last day, last 7 days, last 30 days.
         - **Type** - User management, Group management, Device management, App management, Role management, Policy management
         - **Operation type** - Add, Assign, Update, Unassign, Delete Service API
+
     - Sign-in logs tab 
         - **Tenants** - Tenant tags or customer tenant names.
         - **Time range** - Last day, last 7 days, last 30 days.
