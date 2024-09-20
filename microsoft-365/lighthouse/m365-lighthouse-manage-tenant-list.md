@@ -93,7 +93,7 @@ You can also remove a tag from multiple tenants by selecting the checkbox next t
 
 ## Next steps
 
-After you create and assign tags, you can use them to filter your tenants. Go to any page in Lighthouse that has a Tenants filter, select the filter, and then enter a tag to filter by or browse tags and select one or more tags from list. You can also create new tags to support specific views based on each page.
+After you create and assign tags, you can use them to filter your tenants. Go to any page in Lighthouse that has a Tenants filter, select the filter, and then enter a tag to filter by or browse tags and select one or more tags from the list. You can also create new tags to support specific views based on each page.
 
 ## Related content
 
