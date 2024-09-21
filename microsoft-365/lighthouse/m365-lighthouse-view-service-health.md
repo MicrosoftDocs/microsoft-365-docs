@@ -26,7 +26,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 You can view service health for the tenants you manage in Microsoft 365 Lighthouse. Service health includes incidents and advisories for several services, including Microsoft Intune, Microsoft Entra identity services, and mobile device management (MDM) cloud services. You can also see how many of your managed tenants are affected by incidents. For example, if one of your tenants is experiencing problems, you can check the Service health page to determine whether it's a known issue with a resolution in progress or whether a recent change might be impacting them. Checking service health could save you time troubleshooting and reduce support calls.
 
-If you can't sign in to Lighthouse, you can use the [Microsoft 365 service health status page](https://status.office365.com/) to check for known issues preventing you from logging in to your partner tenant. Also, sign up to follow [@MSFT365status](https://twitter.com/MSFT365Status) on Twitter to see information on specific service incidents.
+If you can't sign in to Lighthouse, you can use the [Microsoft Service Health Status](https://status.cloud.microsoft/) page to check for known issues preventing you from logging in to your partner tenant. Also, sign up to follow [@MSFT365status](https://twitter.com/MSFT365Status) on Twitter to see information on specific service incidents.
 
 ## Before you begin
 

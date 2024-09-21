@@ -28,11 +28,11 @@ Microsoft 365 Lighthouse audit logs record actions that generate a change in Lig
 
 ## Before you begin
 
-To view audit logs, you must have one of the following roles:
+To view audit logs, you must hold one of the following roles:
 
-- Microsoft Entra role: Global Administrator in partner tenant
+- Microsoft Entra Global Administrator in your partner tenant
 
-- Microsoft Partner Center role: Admin Agent
+- Partner Center Admin agent
  
 > [!CAUTION]
 > To help keep your organization secure, Microsoft recommends that you use roles with the minimum level of permissions needed to perform a job. Global Administrator is a highly privileged role that should be limited to scenarios where you can't use a less-privileged role.
@@ -44,7 +44,7 @@ To view audit logs, you must have one of the following roles:
     > [!NOTE]
     > It might take up to an hour to see new logs. Go to the respective service to see the most recent changes.
 
-2. Select a tab to view specific logs: **Audit logs**, **Graph logs**, **Directory logs**, **Sign-in logs**.
+2. Select one of the following tabs to view specific logs: **Audit logs**, **Graph logs**, **Directory logs**, **Sign-in logs**.
 
 2. Filter the logs, as needed, by using the following options:
     - Audit logs tab
