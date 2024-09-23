@@ -34,7 +34,7 @@ You can also manage **AllowSelfServicePurchase** settings in the Microsoft 365 a
 
 You can use the **MSCommerce** PowerShell module to:
 
-- View the default state of the **AllowSelfServicePurchase** parameter value&emdash;whether it's enabled, disabled, or allows trials without a payment method
+- View the default state of the **AllowSelfServicePurchase** parameter value&mdash;whether it's enabled, disabled, or allows trials without a payment method
 - View a list of applicable products and whether self-service purchase is enabled, disabled, or allows trials without a payment method
 - View or modify the current setting for a specific product to either enable or disable it
 - View or modify the setting for trials without payment methods
