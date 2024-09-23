@@ -86,13 +86,13 @@ To add fields to a template, follow these steps:
 
 1. On the **Manage templates** panel, select **Set up fields**.
 
-   ![A screenshot of the Manage templates panel.](../../media/content-understanding/Agreements-template-fields.png)
+   ![A screenshot of the Manage templates panel.](../../media/content-understanding/agreements-template-fields.png)
 
 2. Here, you can search for and reuse an existing field or create a new one.
 
 3. To insert the field into the content of the document, select the text from the main content area or place the cursor where you'd like to replace with the field, and select **Insert** from the field card on the **Manage templates** panel. You can also choose to insert this field at all similar instances throughout the document. You can review all field insertions in the template with the left and right arrow keys within the field card.
 
-   ![A screenshot showing an opened document and the Manage templates panel.](../../media/content-understanding/Agreements-insert-field-selection.png)
+   ![A screenshot showing an opened document and the Manage templates panel.](../../media/content-understanding/agreements-insert-field-selection.png)
 
 4. To delete the field or view more details and perform other actions, select **More options** (**...**) on the field card.
 
@@ -118,15 +118,15 @@ You can associate fields to a SharePoint list or library. If you do so, users wi
 
 To associate a field to a SharePoint list or library, follow these steps when creating a new field:
 
-1.Choose **SharePoint List** in the **Type** section. Click the **Select** button.
-   
+1. In the **Type** section, choose **SharePoint List**, and then choose **Select**.
+
 2. On the **Select a list** page, select the SharePoint site and the list you want to use.
 
-   ![A screenshot of Select a list page.](../../media/content-understanding/Agreements-list-selection-dialog.png)
+   ![A screenshot of Select a list page.](../../media/content-understanding/agreements-list-selection-dialog.png)
 
 3. On the **Select a column from the list** page, select the column name you want to associate with the field, and then select **Save**.
 
-   ![A screenshot showing the field associated with a SharePoint list.](../../media/content-understanding/Agreements-list-panel.png)
+   ![A screenshot showing the field associated with a SharePoint list.](../../media/content-understanding/agreements-list-panel.png)
 
 You can also allow users to manually input values with the **Document authors can type in values manually for this field** option. The values input by the authors are only used to generate the document. They won't be added to the SharePoint list.
 
@@ -138,7 +138,7 @@ To insert published sections into your template, follow these steps:
 
 1. From the **Manage templates** panel, select **Insert sections**.
 
-2. Pick the relevant section for your template from the list..
+2. Pick the relevant section for your template from the list.
 
 3. You can insert as many sections as you'd like. The list of sections inserted will be displayed under the **Insert sections** part.
 
@@ -160,7 +160,7 @@ To set up a mandatory approval workflow on a template, follow these steps:
 
 3. Select **Approvers** (who needs to approve it) and decide the approval order. Once the changes are done, select **Setup approval flow**. Multiple approvers can be added to a level, and only one of them needs to approve for the request to move to next level.
 
-   ![A screenshot of the Approvers section on the Manage templates panel.](../../media/content-understanding/Agreements-approval-setup.png)
+   ![A screenshot of the Approvers section on the Manage templates panel.](../../media/content-understanding/agreements-approval-setup.png)
 
 4. Once your modifications are complete, select **Save changes**. You can delete the already saved approval flow by selecting **Delete approval flow**.
 
