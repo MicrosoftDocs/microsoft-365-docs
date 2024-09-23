@@ -115,7 +115,7 @@ To add the Agreements app to Microsoft Teams, follow these steps (no administrat
 
 ## Configure the workspace
 
-Workspace owners can configure the workspace from the Agreements App. They can assign users to different roles in the workspace and manage the categories available in the workspace. 
+Workspace owners can configure the workspace from the Agreements app. They can assign users to different roles in the workspace and manage the categories available in the workspace.
 
 ### Manage roles
 
@@ -128,7 +128,7 @@ To manage roles in a workspace:
 3. From the left navigation menu, select the **Roles** option.
 
 4. Select the role you would like to manage. You can now manage the list of users assinged to each role.
-    
+
    ![A screenshot of the Edit workspace owners page to add users to a role.](../../media/content-understanding/agreements-add-users-to-roles.png)
 
 ### Manage categories
