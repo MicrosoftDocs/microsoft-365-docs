@@ -24,7 +24,7 @@ description: Learn how to set up licensing tools for the SharePoint Agreements A
 
 There are a few steps to setting up the solution.
 
-1. A Global Administrator [gets and assign the required SharePoint Content Solution - Agreements (Preview) license](agreements-license-requirements.md#assign-license-to-a-user).
+1. A Global Administrator [proures and assign the required SharePoint Content Solution - Agreements (Preview) license](agreements-license-requirements.md#assign-license-to-a-user).
 
 2. A SharePoint Administrator [creates a workspace](#create-workspaces).
 
@@ -34,7 +34,7 @@ There are a few steps to setting up the solution.
 
 ## Create workspaces
 
-**Workspaces** allow you to organize and manage agreements across your organization. When you create a workspace, a SharePoint site is created and is assigned to the workspace. You can create a workspaces for business processes or departments in your organization that manages agreements. For example, you can have one workspace for your procurement team, and another one for your human resources team. Agreements, templates and other files exist within the workspace and are stored in the corresponding SharePoint site. Roles are assigned to users at a workspace level, and permissions can be managed at a workspace level. 
+**Workspaces** allow you to organize and manage agreements across your organization. When you create a workspace, a SharePoint site is created and is assigned to the workspace. You can create workspaces for business processes or departments in your organization that manage agreements. For example, you can have one workspace for your procurement team, and another one for your human resources team. Agreements, templates and other files exist within the workspace and are stored in the corresponding SharePoint site. Roles are assigned to users at a workspace level, and permissions can be managed at a workspace level. 
 
 ### Prerequisites
 
@@ -42,7 +42,7 @@ Before creating a workspace for SharePoint Agreements AI, you need to ensure:
 
 - The user implementing the steps in the article needs to be either a Global Administrator or SharePoint Administrator.
 
-   [!INCLUDE global-administrator-note]
+[!INCLUDE global-administrator-note]
 
 - The [SharePoint Content Solution - Agreements (Preview) license](agreements-license-requirements.md#assign-license-to-a-user) is assigned to users in your organization.
 
