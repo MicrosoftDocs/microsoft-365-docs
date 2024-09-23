@@ -105,6 +105,8 @@ Both methods let you do the following tasks:
 > [!NOTE]
 > You must be a Global admin to do the following steps.
 
+[!INCLUDE [ga-roles-limitation](../../includes/ga-roles-limitation.md)]
+
 You can use the Microsoft 365 admin center to manage self-service purchases and trials for users in your organization.
 
 1. In the Microsoft 365 admin center, so to the **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Org settings</a> page.
