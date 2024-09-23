@@ -103,7 +103,7 @@ Both methods let you do the following tasks:
 ### Use the Microsoft 365 admin center to allow or block self-service purchases and trials
 
 > [!NOTE]
-> You must be a Global admin to do the following steps.
+> You must be a Global Administrator to do the following steps.
 
 [!INCLUDE [ga-roles-limitation](../../includes/ga-roles-limitation.md)]
 
