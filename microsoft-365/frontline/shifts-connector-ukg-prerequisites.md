@@ -3,7 +3,7 @@ title: Prerequisites and requirements for the Teams Shifts connector for UKG Pro
 author: lana-chin
 ms.author: v-chinlana
 manager: jtremper
-ms.reviewer: imarquesgil
+ms.reviewer: harrywong
 ms.topic: conceptual
 audience: admin
 ms.service: microsoft-365-frontline
