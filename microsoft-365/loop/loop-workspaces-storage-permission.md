@@ -111,7 +111,7 @@ Note: A feature for IT admins to assign additional temporary custodians during t
 
 ### In Loop components created in Microsoft 365 outside of the Loop app
 
-Loop components created outside of Loop are stored in the OneDrive of the person who created the component, or if created in a place with shared storage like a Teams channel, they are stored in the SharePoint folder for that channel. When stored in OneDrive, if that user leaves the organization, the standard OneDrive IT policy is applied.
+Loop components created outside of Loop are stored in the OneDrive of the person who created the component, or if created in a place with shared storage like a Teams channel, they are stored in the SharePoint folder for that channel. When stored in OneDrive, if that user leaves the organization, the standard OneDrive IT policy is applied. When stored in SharePoint, the standard SharePoint IT policy is applied.
 
 For more information on the storage location of components based on where they are created, see [Loop Storage](/microsoft-365/loop/loop-compliance-summary#loop-storage).
 
