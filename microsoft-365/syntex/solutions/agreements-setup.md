@@ -64,6 +64,7 @@ Before creating a workspace for SharePoint Agreements AI, you need to ensure:
    - \<tenantName> is the name of your SharePoint tenant. <br><br>
 
    Example: ```Connect-SPOService -Url "https://contosoelectronics-admin.sharepoint.com"```
+
 <br>
 
    > [NOTE]
