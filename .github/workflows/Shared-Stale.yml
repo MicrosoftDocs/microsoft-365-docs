@@ -46,6 +46,8 @@ jobs:
           If you're ready to merge this PR, add the <b>Sign off</b> label to have the PR reviewed and merged by PubOps. 
           <p/> 
           If you're not ready to merge this PR yet and want to keep it open, click on <b>Update branch</b> at the bottom of this PR to bring it up to date with the main branch. 
+          <p/>
+          If the changes in this PR are no longer needed, click on <b>Close</b> at the bottom of the page. Please also delete the branch by clicking on <b>Delete branch</b>.
           <p/> 
           To view a list of any open, inactive, PRs assigned to you, click <a href="https://github.com/search?q=is%3Apr+assignee%3A%40me+state%3Aopen+label%3A%22Inactive%22&type=pullrequests">Inactive PRs</a>. 
           <p/> 
@@ -53,10 +55,19 @@ jobs:
           <p/> 
           PS: Mention <b>@marveldocs-pubops</b> in the comments if you need assistance.
         close-pr-message: >
-          This pull request has been inactive for a further 14 days and is now being closed. If you decide to continue working on your changes, that's no problem. Simply select the <b>Reopen pull request</b> button at the bottom of the pull request.
-          <br/>
-          Thank you!
-          <br/>
+          <h2>Closing inactive PR</h2>
+          This pull request has been inactive for a further 14 days and is now being closed. 
+          <p/>
+          <h3>Instructions for writer</h3>
+          <p/>
+          If you decide to continue working on your changes, that's no problem. Simply select the <b>Reopen pull request</b> button at the bottom of the pull request.
+          <p/>
+          If the changes in this PR are no longer needed, please also delete the branch by clicking on <b>Delete branch</b>.
+          <p/>
+          <b>Warning</b> This branch may be subject to automatic deletion at a future date. Changes in the deleted branch will be lost.
+          <p/> 
+          Thank you! 
+          <p/> 
           PS: Mention <b>@marveldocs-pubops</b> in the comments if you need assistance.
 
 #   stale-public:
