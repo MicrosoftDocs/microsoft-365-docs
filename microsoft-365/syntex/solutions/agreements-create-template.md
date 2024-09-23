@@ -22,7 +22,7 @@ description: Learn how to create a template with the SharePoint Agreements AI so
 
 Templates serve as a predefined structure that standardizes the creation of documents and agreements. They ensure consistency and uniformity across various documents within the workspace, streamlining the creation process and reducing the likelihood of errors. Templates can include specific sections, formatting, and content guidelines that align with the organization's requirements and branding.
 
-Once you create and publish a template, users with access to the template can start [generating agreements](agreements-create-agreement.md) from it. Users will be asked to [input values for fields](#add-fields-to-a-template), and sent it for approval or eSignature based on the [workflow configured](#configure-a-workflow) with the template.
+Once you create and publish a template, users with access to the template can start [generating agreements](agreements-create-agreement.md) from it. Users will be asked to [input values for fields](#add-fields-to-a-template), and send it for approval or eSignature based on the [workflow configured](#configure-a-workflow) with the template.
 
 > [!NOTE]
 > You can always edit a published template. However, you need to re-publish the template for the changes to take effect. Documents will be created based of the last published version of the template.
