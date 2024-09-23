@@ -3,7 +3,7 @@ title: Deploy Shifts to your frontline teams at scale
 author: lana-chin
 ms.author: v-chinlana
 manager: jtremper
-ms.reviewer: arnavgupta, imarquesgil
+ms.reviewer: arnavgupta
 ms.topic: conceptual
 audience: admin
 ms.service: microsoft-365-frontline
