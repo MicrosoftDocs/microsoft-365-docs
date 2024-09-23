@@ -46,7 +46,7 @@ To create a section in Microsoft Word, follow these steps:
     - **Countries or regions** – Select the country or region where the section is applicable.
     - **Tags** – Enter keywords to better identify or search sections.
 
-These details help in filtering and searching the sections faster during template configuration or section management.
+   These details help in filtering and searching the sections faster during template configuration or section management.
 
 5. Select **Save** to create and save the section in the Draft state. A separate copy of the document is created and saved in the section library.
 
