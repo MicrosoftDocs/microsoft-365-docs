@@ -60,10 +60,10 @@ To create an agreement from Microsoft Word, follow these steps:
 
 2. Enter the values for all fields marked as mandatory. You can also provide values for fields not marked as mandatory.
 
-> [!NOTE]
-> Some fields might be present in the document content, while some might not be present. These are configured in the template.
+   > [!NOTE]
+   > Some fields might be present in the document content, while some might not be present. These are configured in the template.
 
-3. Select **"Next"** to review and confirm that the correct information has been entered for all the fields.
+3. Select **Next** to review and confirm that the correct information has been entered for all the fields.
 
 4. If there are no errors, a summary of all required fields with their values is displayed.
 
@@ -80,25 +80,23 @@ Template creators have the option to configure two workflows: approval and eSign
 
 ## Request approvals
 
-1. After you fill in the fields, the next step is to send the document for approval.
+After you fill in the fields, the next step is to send the document for approval.
 
-2. With the agreement open in Microsoft Word, on the **Generate documents** panel, select **Request approvals**.
+1. With the agreement open in Microsoft Word, on the **Generate documents** panel, select **Request approvals**.
 
-3. You can change the name of the request, add additional approvers as needed, and provide more details about the agreement.
+2. You can change the name of the request, add additional approvers as needed, and provide more details about the agreement.
 
-4. Select **Send** to send the document for approval.
+3. Select **Send** to send the document for approval.
 
 The document is set to read-only, and the document will be shared with the approver.
 
-For documents where mandatory approvals aren't configured, follow these steps:
+For documents where mandatory approvals aren't configured, you can still choose to add approvers as needed.
 
-1. While you don't require approval for these documents, you can still choose to add approvers as needed.
+1. With the agreement open in Microsoft Word, on the **Generate documents** panel, select **Request approvals**.
 
-2. With the agreement open in Microsoft Word, on the **Generate documents** panel, select **Request approvals**.
+2. You can provide the name of the request, add approvers as needed, and provide more details about the agreement.
 
-3. You can provide the name of the request, add approvers as needed, and provide more details about the agreement.
-
-4. Select **Send** to send the document for approval.
+3. Select **Send** to send the document for approval.
 
 The document is set as read-only, and the document will be shared with the approver.
 
