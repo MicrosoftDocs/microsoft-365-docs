@@ -34,7 +34,7 @@ There are a few steps to setting up the solution.
 
 ## Create workspaces
 
-**Workspaces** allow you to organize and manage agreements across your organization. When you create a workspace, a SharePoint site is created and is assigned to the workspace. You can create a workspaces for business processes or departments in your organization that manages agreements. For example, you can have one workspace for your procurement team, and another one for your human resources team. Agreements, templates and other files exist within the workspace and are stored in the corresponding SharePoint site. Roles are assigned to users at a workspace level, and permissions can be managed at a workspace level. 
+Workspaces allow you to organize and manage agreements across your organization. When you create a workspace, a SharePoint site is created and is assigned to the workspace. You can create a workspaces for business processes or departments in your organization that manages agreements. For example, you can have one workspace for your procurement team, and another one for your human resources team. Agreements, templates and other files exist within the workspace and are stored in the corresponding SharePoint site. Roles are assigned to users at a workspace level, and permissions can be managed at a workspace level. 
 
 ### Prerequisites
 
@@ -42,7 +42,7 @@ Before creating a workspace for SharePoint Agreements AI, you need to ensure:
 
 - The user implementing the steps in the article needs to be either a Global Administrator or SharePoint Administrator.
 
-   [!INCLUDE global-administrator-note]
+   [!INCLUDE [global-administrator-note](../../includes/global-administrator-note.md)]
 
 - The [SharePoint Content Solution - Agreements (Preview) license](agreements-license-requirements.md#assign-license-to-a-user) is assigned to users in your organization.
 
@@ -57,11 +57,13 @@ Before creating a workspace for SharePoint Agreements AI, you need to ensure:
 
 2. Connect to your tenant by running the following command:
 
-    ```Connect-SPOService -Url "https://\<tenantName>-admin.sharepoint.com"```
+   ```Connect-SPOService -Url "https://\<tenantName>-admin.sharepoint.com"```
 
-    where \<tenantName> is the name of your SharePoint tenant. <br><br>
-    
-    Example: ```Connect-SPOService -Url "https://contosoelectronics-admin.sharepoint.com"```
+   Where:
+
+   - \<tenantName> is the name of your SharePoint tenant. <br><br>
+
+   Example: ```Connect-SPOService -Url "https://contosoelectronics-admin.sharepoint.com"```
 
    > [NOTE]
    > The Connect-SPOService might require the use of modern authentication to connect. For information about how to add modern authentication flow to your SPO-Connect cmdlet, see the [Connect-SPOService documentation](/powershell/module/sharepoint-online/connect-sposervice).
