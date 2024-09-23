@@ -24,7 +24,7 @@ description: Learn how to set up licensing tools for the SharePoint Agreements A
 
 There are a few steps to setting up the solution.
 
-1. A Global Administrator [gets and assign the required SharePoint Content Solution - Agreements (Preview) license](agreements-license-requirements.md#assign-license-to-a-user).
+1. A Global Administrator [proures and assign the required SharePoint Content Solution - Agreements (Preview) license](agreements-license-requirements.md#assign-license-to-a-user).
 
 2. A SharePoint Administrator [creates a workspace](#create-workspaces).
 
@@ -68,9 +68,11 @@ Before creating a workspace for SharePoint Agreements AI, you need to ensure:
    > [!NOTE]
    > The Connect-SPOService might require the use of modern authentication to connect. For information about how to add modern authentication flow to your SPO-Connect cmdlet, see the [Connect-SPOService documentation](/powershell/module/sharepoint-online/connect-sposervice).
 
-3. Run the following command to create a new SharePoint site and set it as an Agreements workspace.
+4. Run the following command to create a new SharePoint site and set it as an Agreements workspace.
 
-    ```New-SPOSite -Url "\<URL>" -Owner "\<user>" -StorageQuota 1000 -Title "<Workspace Name>" -EnableAgreementsSolution -Template "STS#3"```
+    ```
+   New-SPOSite -Url "\<URL>" -Owner "\<user>" -StorageQuota 1000 -Title "<Workspace Name>" -EnableAgreementsSolution -Template "STS#3"
+    ```
 
     Where:
 
@@ -78,9 +80,13 @@ Before creating a workspace for SharePoint Agreements AI, you need to ensure:
     - \<User> is the email address of the owner of the new workspace.
     - \<Workspace Name> is the name you would like for the new workspace.
   
-    Example: ```New-SPOSite -Url "https://contosoelectronics.sharepoint.com/teams/LegalAgreements" -Owner "megan@contosoelectronics.onmicrosoft.com" -StorageQuota 1000 -Title "Legal agreements" -EnableAgreementsSolution -Template "STS#3"```
+    Example:
+   ```
+   New-SPOSite -Url "https://contosoelectronics.sharepoint.com/teams/LegalAgreements" -Owner "megan@contosoelectronics.onmicrosoft.com" -StorageQuota 1000 -Title "Legal agreements" -EnableAgreementsSolution -Template "STS#3"
+   ```
 
 4. Run the following set of commands on the newly created SharePoint site. These steps enable the approval workflow on your site.
+
 
    ```$AgreementsSiteUrl = "\<URL>"```
 
@@ -93,7 +99,7 @@ Before creating a workspace for SharePoint Agreements AI, you need to ensure:
 
 ## Deploy the Agreements app to users in Microsoft Teams
 
-As a global administrator or a Teams administrator, you can follow [manage the Agreements app in the Microsoft Teams Admin Center](/microsoftteams/manage-apps) and deploy the app to all users or specific users in your organization.
+As a Global administrator or a Teams administrator, you can follow [manage the Agreements app in the Microsoft Teams Admin Center](/microsoftteams/manage-apps) and deploy the app to all users or specific users in your organization.
 
 ## Add the Agreements app in Microsoft Teams
 

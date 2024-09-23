@@ -20,7 +20,7 @@ description: Learn about the user prerequisites for the SharePoint Agreements AI
 
 # User prerequisites for using SharePoint Agreements AI
 
-The SharePoint Agreements AI solution has several prerequisites to ensure users can fully use all of its features.
+The SharePoint Agreements AI solution has several prerequisites to ensure users can take full advantage of its features.
 
 ## Software licenses
 
@@ -34,7 +34,7 @@ In addition, users must also be assigned the **SharePoint Content Solution – A
 
 ### Microsoft Word specific requirements
 
-Several features of SharePoint Agreements AI can be found on the new require a new tab **Agreements**. To get access to this tab, the following are the requirements:
+Several features of SharePoint Agreements AI can be found on the new tab **Agreements**. The following are the requirements to get access to this tab:
 
  - Users must be assigned the **SharePoint Content Solution – Agreements Trial** license.
  - Microsoft Word must be updated to be September 2024 (16.0.17830.20000) or later, and the update channel must be set to the Currnet Channel (CC) or the Monthly Enterprise Channel (MEC).

@@ -24,6 +24,8 @@ Sections are reusable blocks of content that ensure the use of consistent langua
 
 Sections can also have fields, set up in the same manner as fields for templates.
 
+Once a section is inserted into a template, all documents generated from that template will have the content of this section included in it. You can also choose to keep the sections read-only or editable in generated documents.  
+
 ## Create a new section
 
 To create a section in Microsoft Word, follow these steps:
@@ -89,9 +91,9 @@ To configure the settings, follow these steps:
 
 4. Under **Settings**, choose the section edit permissions for document authors:
 
-   - **Editable** (default selection) – Document authors can edit the section content during document generation flow.
+   - **Editable** (selected by default) – Document authors can edit the section in the generated document.
 
-   - **Read-only** – Document authors can't modify the content of the section. It's locked for further edits.
+   - **Read-only** – Document authors can't modify the content of the section in the generated document.
 
 > [!NOTE]
 > These settings don't apply when a section gets inserted into a template. Template authors can modify or format content of any inserted section. The changes will stay only in the scope of the template and will not get updated in the published section.
