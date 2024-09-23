@@ -65,9 +65,7 @@ Before creating a workspace for SharePoint Agreements AI, you need to ensure:
 
    Example: ```Connect-SPOService -Url "https://contosoelectronics-admin.sharepoint.com"```
 
-<br>
-
-   > [NOTE]
+   > [!NOTE]
    > The Connect-SPOService might require the use of modern authentication to connect. For information about how to add modern authentication flow to your SPO-Connect cmdlet, see the [Connect-SPOService documentation](/powershell/module/sharepoint-online/connect-sposervice).
 
 3. Run the following command to create a new SharePoint site and set it as an Agreements workspace.
