@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 08/15/2024
+ms.date: 09/23/2024
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-copilot
@@ -50,18 +50,39 @@ Administrators can change this behavior by selecting an option for pinning Micro
 
 :::image type="content" source="media/copilot-not-pin.png" alt-text="Screenshot showing the option to not Pin Copilot to the navigation bar.":::
 
+Global administrators can make changes to Microsoft Copilot pinning settings at any time. Changes take up to 48 hours to go into effect.
+
 > [!NOTE]
-> Users with a license for Microsoft 365 Copilot will have it pinned by default.
+> Users with a license for Microsoft 365 Copilot will have Microsoft Copilot pinned by default.
 
 ## User experience
 
-Users can personalize their navigation bar by choosing to pin or unpin Microsoft Copilot. In the selected pinning scenarios described previously, users will see a prompt for pinning Microsoft Copilot to the navigation bar:
+Users can personalize their navigation bar by choosing to pin or unpin Microsoft Copilot. Users can adjust the pinning settings within their application preferences, and these choices are specific to Teams, Outlook, the Microsoft 365 web app ([microsoft365.com](https://www.office.com/) and [m365.cloud.microsoft](https://m365.cloud.microsoft/)), Microsoft 365 desktop app, and Microsoft 365 mobile app.
 
-:::image type="content" source="media/pin-and-continue.png" alt-text="Screenshot showing the prompt for users to pin Copilot." lightbox="media/pin-and-continue.png":::
+A message asking to pin Microsoft Copilot can appear if a user:
 
-Users can adjust the pinning settings within their application preferences, and these choices are specific to Teams, Outlook, the Microsoft 365 web app ([microsoft365.com](https://www.office.com/) and [m365.cloud.microsoft](https://m365.cloud.microsoft/)), Microsoft 365 desktop app, and Microsoft 365 mobile app.  
+- Navigates to [https://microsoft.com/copilot](https://microsoft.com/copilot), [https://microsoft365.com](https://microsoft365.com), or [https://m365.cloud.microsoft/](https://microsoft365.com), and selects **Settings** > **Pin Copilot**.  
+- Opens Outlook, Teams, or the Microsoft 365 app on web or desktop.
 
-For example, if admins choose to pin Microsoft Copilot for all users, but an individual user decides to unpin it from Teams or Outlook or the Microsoft 365 app, Microsoft Copilot will no longer appear on the navigation bar for that user.
+In the selected pinning scenarios described previously, users will see a prompt for pinning Microsoft Copilot to the navigation bar in the Microsoft 365 app on web and mobile:
+
+:::image type="content" source="media/pinning-desktop20thsep.png" alt-text="Screenshot showing the prompt for users to pin Copilot." lightbox="media/pinning-desktop20thsep.png":::
+
+The Microsoft Copilot pinning notification provides users with three options:
+
+- **Ask me later**
+- **Decline**
+- **Pin and Continue**
+
+If a user selects **Ask me later**, the same message will be shown to a user up to three more times, with the pinning dialog shown for a maximum of once per user session. On the final message, the 'Ask me later' button is replaced by a ‘Don’t show again’ button. If the user selects **Don’t show again**, there are no additional notifications to pin Microsoft Copilot.  
+
+If a user selects **Decline**, there are no additional notifications to pin Microsoft Copilot.
+
+If a user opens the Microsoft 365 mobile app, they will see two options: **Pin and Continue** or **Decline**:
+
+:::image type="content" source="media/pinning-mobile20thsep.png" alt-text="Screenshot showing the prompt that appears on mobile interfaces for users to pin Copilot." lightbox="media/pinning-mobile20thsep.png":::
+
+Users with a paid version of Microsoft 365 Copilot will not see any pinning messages. They see a welcome screen when they visit Copilot for the first time.
 
 ## When Microsoft Copilot will be pinned in each app
 
