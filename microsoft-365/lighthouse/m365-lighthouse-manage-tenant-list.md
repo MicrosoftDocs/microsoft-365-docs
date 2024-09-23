@@ -24,7 +24,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Manage your tenant list in Microsoft 365 Lighthouse
 
-To help you manage your tenant list in Microsoft 365 Lighthouse, you can apply custom tags to your tenants. These tags can be used to organize your tenants and can also help you filter the existing views and insights available to relevant sets of tenants. You can manage your tags from the Tenants page. Once tags are created and assigned, you can go to any page in Lighthouse that has a Tenants filter and use it to filter the data based on a tag.
+To help you manage your tenant list in Microsoft 365 Lighthouse, you can apply custom tags to your tenants. These tags can be used to organize your tenants and can also help you filter the existing views and insights available to relevant sets of tenants. You can manage your tags from the **Tenants** page. Once tags are created and assigned, you can go to any page in Lighthouse that has a Tenants filter and use it to filter the data based on a tag.
 
 ## Before you begin
 
@@ -64,7 +64,7 @@ You must be a Global Administrator in the partner tenant.
 
     Tags that are already assigned to the tenant have a check mark next to the tag name. 
 
-You can also assign a tag to multiple tenants by selecting the checkbox next to each tenant in the list that you want to tag, selecting **Assign Tags**, and then selecting a tag from the list.
+To assign a tag to multiple tenants, select the checkbox next to each tenant in the list that you want to tag, select **Assign Tags**, and then select a tag from the list.
 
 > [!NOTE]
 > You can create up to 30 unique Tags and assign them to as many tenants as needed.
@@ -83,17 +83,17 @@ You can also assign a tag to multiple tenants by selecting the checkbox next to 
 
 1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Tenants**.
 
-2. From the list of tenants, select the three dots (more actions) next to the tenant that you want to edit, and then select **Tags**.
+2. From the list of tenants, select the three dots (more actions) next to the tenant that has a tag you want to remove, and then select **Tags**.
 
 4. Select the tag you want to remove.
 
     Tags that are currently assigned to the tenant have a check mark next to the name. 
 
-You can also remove a tag from multiple tenants by selecting the checkbox next to each tenant in the list that has a tag you want to remove, selecting **Assign Tags**, and then selecting a checked tag from the list.
+To remove a tag from multiple tenants, select the checkbox next to each tenant in the list that has a tag you want to remove, select **Assign Tags**, and then select a checked tag from the list.
 
 ## Next steps
 
-After you create and assign tags, you can use them to filter your tenants. Go to any page in Lighthouse that has a Tenants filter, select the filter, and then enter a tag to filter by or browse tags and select one or more tags from the list. You can also create new tags to support specific views based on each page.
+After you create and assign tags, you can use those tags to filter your tenants. Go to any page in Lighthouse that has a Tenants filter, select the filter, and then enter a tag to filter by or browse tags and select one or more tags from the list. You can also create new tags to support specific views based on each page.
 
 ## Related content
 
