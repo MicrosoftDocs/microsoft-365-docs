@@ -24,7 +24,7 @@ description: Learn how to set up licensing tools for the SharePoint Agreements A
 
 There are a few steps to setting up the solution.
 
-1. A Global Administrator [procures and assigns the required SharePoint Content Solution - Agreements (Preview) license](agreements-license-requirements.md#assign-license-to-a-user).
+1. A Global Administrator [procures and assigns the required SharePoint Content Solution - Agreements Trial license](agreements-license-requirements.md#assign-license-to-a-user).
 
 2. A SharePoint Administrator [creates a workspace](#create-workspaces).
 
