@@ -48,8 +48,8 @@ Before creating a workspace for SharePoint Agreements AI, you need to ensure:
 
 - Download and install the latest [SharePoint Online Management Shell](https://www.microsoft.com/download/details.aspx?id=35588).
 
-> [!NOTE]
-> You must be a SharePoint Administrator or Global Administrator to create sites through the SharePoint Online Management Shell.
+   > [!NOTE]
+   > You must be a SharePoint Administrator or Global Administrator to create sites through the SharePoint Online Management Shell.
 
 ### Create a workspace
 
