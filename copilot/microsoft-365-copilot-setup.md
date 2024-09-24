@@ -1,11 +1,11 @@
 ---
-title: "Get started with Microsoft 365 Copilot"
+title: "Get your organization and data ready for Microsoft 365 Copilot"
 f1.keywords:
 - NOCSH
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 09/16/2024
+ms.date: 09/24/2024
 audience: Admin
 ms.topic: get-started
 ms.service: microsoft-365-copilot
@@ -15,16 +15,19 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 - essentials-get-started
-description: "Learn how to prepare your organization for Microsoft 365 Copilot. You should assign licenses, optimize SharePoint search, give enough access, prevent oversharing, use sensitivity labels, create a pilot group, and more."
+description: Learn how IT administrators can prepare their organization for Microsoft 365 Copilot. Admin cans assign licenses, optimize SharePoint search, give enough access, prevent oversharing, use sensitivity labels, create a pilot group, and more.
 ---
 
-# Get started with Microsoft 365 Copilot
+# Get started with Microsoft 365 Copilot - admin guide
 
 [Microsoft 365 Copilot](microsoft-365-copilot-overview.md) is an AI-powered productivity tool that uses large language models (LLMs). It integrates with your data, with Microsoft Graph, and with Microsoft 365 Apps.
 
 It works alongside popular Microsoft 365 Apps, like Word, Excel, PowerPoint, Outlook, Teams, and more. Copilot provides real-time intelligent assistance, enabling users to enhance their creativity, productivity, and skills.
 
-This article covers how you can prepare your organization for Copilot.
+This article covers how IT admins can prepare their organization for Copilot.
+
+> [!TIP]
+> If you're an end user, then the [Copilot Lab](https://copilot.cloud.microsoft/prompts) is a good resource.
 
 ## Before you begin
 
@@ -248,7 +251,7 @@ In the [Microsoft Purview portal](https://purview.microsoft.com), you can use th
 
 The privacy settings in your Microsoft 365 apps can affect the availability of Microsoft 365 Copilot features. To ensure that users can access Copilot features, review the privacy settings in your Microsoft 365 apps.
 
-For more information, see [Microsoft 365 Copilot and privacy controls for connected experiences](microsoft-365-copilot-privacy.md#microsoft-365-copilot-and-privacy-controls-for-connected-experiences).
+To learn more, see [Microsoft 365 Copilot and privacy controls for connected experiences](microsoft-365-copilot-privacy.md#microsoft-365-copilot-and-privacy-controls-for-connected-experiences).
 
 ## Step 4 - Update channels
 
@@ -266,7 +269,7 @@ Your options:
 
 - **Preview** channels include **Current Channel (Preview)** and **Beta Channel**.
 
-  Preview channels are a great option to validate the product before rolling out to the rest of organization. To learn more, see [Overview of update channels](/deployoffice/updates/overview-update-channels) and [Microsoft 365 Insider channels](/deployoffice/insider/compare-channels).
+  Preview channels are a great option to validate the product before rolling out to the rest of organization. To learn more, see [Overview of update channels](/deployoffice/updates/overview-update-channels) and [Microsoft 365 Insider channels](/deployoffice/insider/compare-channels).
 
 There are multiple ways you can manage channels for user devices. To learn more, see [Change update channel of Microsoft 365 to enable Copilot](/deployoffice/updates/change-channel-for-copilot).
 
@@ -274,13 +277,16 @@ There are multiple ways you can manage channels for user devices. To learn more,
 
 ✅ **Assign Copilot licenses using the Microsoft 365 admin center**
 
-The next step is to assign licenses. You can assign to individual users or to groups of users, and also reassign licenses to other users. You can manage Microsoft 365 Copilot licenses in the Microsoft 365 admin center.
+The next step is to assign licenses so users can start using Copilot. You can manage Microsoft 365 Copilot licenses in the Microsoft 365 admin center. You can assign to individual users or to groups of users, and also reassign licenses to other users.
 
-- To access license management in the [Microsoft 365 admin center](https://admin.microsoft.com), see **Billing** > **Licenses**.
+- To access license management in the [Microsoft 365 admin center](https://admin.microsoft.com), select **Billing** > **Licenses**.
 
-To learn more about enabling Copilot in your organization, see [Enable users for Microsoft 365 Copilot](microsoft-365-copilot-enable-users.md).
+When licenses are assigned, Copilot shows up in the Microsoft 365 apps, like Word and Excel. To use Copilot, users sign into the app with their work or school account and the file must be editable (not read only).
 
-You can also assign licenses in bulk to [groups of users through the Azure admin center](/entra/identity/users/licensing-groups-assign) or [assign licenses to users with PowerShell](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell). For more information, see [Assign Microsoft 365 licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users).
+To learn more, see:
+
+- Enable Copilot in your organization at [Enable users for Microsoft 365 Copilot](microsoft-365-copilot-enable-users.md).
+- You can assign licenses in bulk to [groups of users through the Azure admin center](/entra/identity/users/licensing-groups-assign) or [assign licenses to users with PowerShell](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell). For more information, see [Assign Microsoft 365 licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users).
 
 ## Step 6 - Configure settings for Copilot
 
