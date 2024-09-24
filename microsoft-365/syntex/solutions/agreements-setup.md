@@ -57,7 +57,9 @@ Before creating a workspace for SharePoint Agreements AI, you need to ensure:
 
 2. Connect to your tenant by running the following command:
 
-   ```Connect-SPOService -Url "https://\<tenantName>-admin.sharepoint.com"```
+   ```
+   Connect-SPOService -Url "https://\<tenantName>-admin.sharepoint.com"
+   ```
 
    Where:
 
