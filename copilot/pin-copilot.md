@@ -80,7 +80,7 @@ If a user selects **Decline**, there are no additional notifications to pin Micr
 
 If a user opens the Microsoft 365 mobile app, they will see two options: **Pin and Continue** or **Decline**:
 
-:::image type="content" source="media/pinning-mobile20thsep.png" alt-text="Screenshot showing the prompt that appears on mobile interfaces for users to pin Copilot." lightbox="media/pinning-mobile20thsep.png":::
+:::image type="content" source="media/pinning-mobile20thsep-small.png" alt-text="Screenshot showing the prompt that appears on mobile interfaces for users to pin Copilot." lightbox="media/pinning-mobile20thsep.png":::
 
 Users with a paid version of Microsoft 365 Copilot will not see any pinning messages. They see a welcome screen when they visit Copilot for the first time.
 
