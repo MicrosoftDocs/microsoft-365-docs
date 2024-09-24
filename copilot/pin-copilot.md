@@ -71,12 +71,12 @@ In the selected pinning scenarios described previously, users will see a prompt 
 The Microsoft Copilot pinning notification provides users with three options:
 
 - **Ask me later**
-- **Decline**
+- **Do not Pin**
 - **Pin and Continue**
 
 If a user selects **Ask me later**, the same message will be shown to a user up to three more times, with the pinning dialog shown for a maximum of once per user session. On the final message, the 'Ask me later' button is replaced by a ‘Don’t show again’ button. If the user selects **Don’t show again**, there are no additional notifications to pin Microsoft Copilot.  
 
-If a user selects **Decline**, there are no additional notifications to pin Microsoft Copilot.
+If a user selects **Do not Pin**, there are no additional notifications to pin Microsoft Copilot.
 
 If a user opens the Microsoft 365 mobile app, they will see two options: **Pin and Continue** or **Decline**:
 
