@@ -25,7 +25,7 @@ Templates serve as a predefined structure that standardizes the creation of docu
 Once you create and publish a template, users with access to the template can start [generating agreements](agreements-create-agreement.md) from it. Users will be asked to [input values for fields](#add-fields-to-a-template), and send it for approval or eSignature based on the [workflow configured](#configure-a-workflow) with the template.
 
 > [!NOTE]
-> You can always edit a published template. However, you need to re-publish the template for the changes to take effect. Documents will be created based of the last published version of the template.
+> You can always edit a published template. However, you need to republish the template for the changes to take effect. Documents will be created based of the last published version of the template.
 
 ## Create a new template from the Agreements app
 
@@ -37,7 +37,7 @@ Once you create and publish a template, users with access to the template can st
 
    - If not, a blank template will be created for you.
 
-3. On the **Create a template** page, provide a name for the template, select the workspace where the template will be stored and the category that the template belongs to. Set values for the country or region and the language for the template.
+3. On the **Create a template** page, provide a name for the template, select the workspace where the template will be stored, and the category that the template belongs to. Set values for the country or region and the language for the template.
 
    ![A screenshot of the Create a template page.](../../media/content-understanding/agreements-create-template.png)
 
@@ -70,7 +70,7 @@ You can also create a template in Microsoft Word.
 
 Fields are areas of the template that should be filled in when generating agreements from the template. When configuring the template, you can define as many fields as you like. For example, the name of a contractor can occur multiple times in a consulting agreement document. You can create a field named "Contractor Name" and associate it with all occurrences of the name throughout the document when you generate a template.
 
-Fields can either be added to the content of the document, or kept as other properties for the template. You can also define if a field needs to be provided when agreements are created off the template, or if the field is optional.
+Fields can either be added to the content of the document, or kept as other properties for the template. You can also define if a field needs to be provided when agreements are created from the template, or if the field is optional.
 
 ### Standard fields
 
@@ -158,7 +158,7 @@ To set up a mandatory approval workflow on a template, follow these steps:
 
 2. Set the name of the approval request. The name can be modified by document authors when they'll be prompted to send the approval request after document authoring is completed.
 
-3. Select **Approvers** (who needs to approve it) and decide the approval order. Once the changes are done, select **Setup approval flow**. Multiple approvers can be added to a level, and only one of them needs to approve for the request to move to next level.
+3. Select **Approvers** (who needs to approve it) and decide the approval order. Once the changes are done, select **Setup document approval flow**. Multiple approvers can be added to a level, and only one of them needs to approve for the request to move to next level.
 
    ![A screenshot of the Approvers section on the Manage templates panel.](../../media/content-understanding/agreements-approval-setup.png)
 
@@ -168,7 +168,7 @@ To set up a mandatory approval workflow on a template, follow these steps:
 
 ### Configure a SharePoint eSignature workflow
 
-After creating or editing a template, you can set up a SharePoint eSignature flow. This ensures that every document generated from the template is automatically sent for signatures according to the specified flow. The SharePoint Agreements AI solution uses SharePoint eSignature to set up and send signature requests to recipients. For more information, see [Overview of SharePoint eSignature](/microsoft-365/syntex/esignature-overview).
+After creating or editing a template, you can set up a SharePoint eSignature flow. This ensures that every document generated from the template is automatically sent for signatures according to the specified flow. SharePoint Agreements AI uses SharePoint eSignature to set up and send signature requests to recipients. For more information, see [Overview of SharePoint eSignature](/microsoft-365/syntex/esignature-overview).
 
 To set up a mandatory signature workflow, follow these steps:
 
@@ -207,7 +207,7 @@ To request approval before publishing the section, follow these steps:
 
 5. Fill in the name of the request and the approvers (who needs to approve it). Decide approval order, add any additional information, and then select **Notify via email** if you want to send email notifications along with Teams notification.
 
-6. After configuring the approval request, select **Send**. The template document is marked as read-only once approval request starts and those approvers who don't have access to the template will be granted view permissions.
+6. After configuring the approval request, select **Send**. The template document is marked as read-only once the approval request starts, and those approvers who don't have access to the template will be granted view permissions.
 
 7. Once the approval request is sent, you can track the request status (**Approval in progress** or **Approval completed**) through the Word pane by reloading the template management pane or selecting **Refresh**. You can also view the request later by selecting the **Sent** tab in the Approvals app in Teams.
 
