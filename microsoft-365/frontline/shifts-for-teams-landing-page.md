@@ -6,7 +6,7 @@ author: lana-chin
 ms.author: v-chinlana
 manager: jtremper
 audience: admin
-ms.reviewer: imarquesgil
+ms.reviewer: harrywong
 f1.keywords:
 - NOCSH
 ms.service: microsoft-365-frontline
