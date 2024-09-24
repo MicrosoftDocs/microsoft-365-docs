@@ -44,7 +44,7 @@ Before creating a workspace for SharePoint Agreements AI, you need to ensure:
 
    [!INCLUDE [global-administrator-note](../../includes/global-administrator-note.md)]
 
-- The [SharePoint Content Solution - Agreements (Preview) license](agreements-license-requirements.md#assign-license-to-a-user) is assigned to users in your organization.
+- The [SharePoint Content Solution - Agreements Trial license](agreements-license-requirements.md#assign-license-to-a-user) is assigned to users in your organization.
 
 - Download and install the latest [SharePoint Online Management Shell](https://www.microsoft.com/download/details.aspx?id=35588).
 
