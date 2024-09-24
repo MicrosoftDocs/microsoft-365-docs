@@ -84,8 +84,9 @@ Before creating a workspace for SharePoint Agreements AI, you need to ensure:
 
 4. Run the following set of commands on the newly created SharePoint site. These steps enable the approval workflow on your site.
 
-
-   ```$AgreementsSiteUrl = "\<URL>"```
+   ```
+   $AgreementsSiteUrl = "\<URL>"
+   ```
 
    Remember to replace \<URL> with the URL of the newly created SharePoint site.
 
