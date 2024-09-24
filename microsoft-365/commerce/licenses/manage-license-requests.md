@@ -41,9 +41,7 @@ To see and manage license requests, use the **Requests** tab on the **Licensing*
 
 ## Before you begin
 
-You must be a Global Administrator to perform the tasks in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
-
-[!INCLUDE [ga-roles-limitation](../../includes/ga-roles-limitation.md)]
+You must be at least a User Administrator or a License Administrator to do the tasks in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
 ## Use your own request process
 
