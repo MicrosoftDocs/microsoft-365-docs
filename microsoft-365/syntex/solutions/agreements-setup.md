@@ -80,10 +80,7 @@ Before creating a workspace for SharePoint Agreements AI, you need to ensure:
     - \<User> is the email address of the owner of the new workspace.
     - \<Workspace Name> is the name you would like for the new workspace.
   
-    Example:
-   ```
-   New-SPOSite -Url "https://contosoelectronics.sharepoint.com/teams/LegalAgreements" -Owner "megan@contosoelectronics.onmicrosoft.com" -StorageQuota 1000 -Title "Legal agreements" -EnableAgreementsSolution -Template "STS#3"
-   ```
+    Example: ```New-SPOSite -Url "https://contosoelectronics.sharepoint.com/teams/LegalAgreements" -Owner "megan@contosoelectronics.onmicrosoft.com" -StorageQuota 1000 -Title "Legal agreements" -EnableAgreementsSolution -Template "STS#3"```
 
 4. Run the following set of commands on the newly created SharePoint site. These steps enable the approval workflow on your site.
 
