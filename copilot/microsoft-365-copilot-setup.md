@@ -281,7 +281,7 @@ The next step is to assign licenses so users can start using Copilot. You can ma
 
 - To access license management in the [Microsoft 365 admin center](https://admin.microsoft.com), select **Billing** > **Licenses**.
 
-  When licenses are assigned, Copilot shows up in the Microsoft 365 apps, like Word and Excel. To use Copilot, users sign into the app with their work or school account and the file must be editable (not read only).
+When licenses are assigned, Copilot shows up in the Microsoft 365 apps, like Word and Excel. To use Copilot, users sign into the app with their work or school account and the file must be editable (not read only).
 
 To learn more, see:
 
