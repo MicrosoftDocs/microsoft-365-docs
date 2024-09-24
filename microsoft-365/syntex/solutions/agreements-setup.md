@@ -98,7 +98,7 @@ Before creating a workspace for SharePoint Agreements AI, you need to ensure:
 
 As a Global administrator or a Teams administrator, you can [manage the Agreements app in the Microsoft Teams Admin Center](/microsoftteams/manage-apps) and deploy the app to all users or specific users in your organization.
 
-## Add the Agreements app in Microsoft Teams
+### Add the Agreements app in Microsoft Teams
 
 To add the Agreements app to Microsoft Teams, follow these steps (no administrator privileges needed):
 
