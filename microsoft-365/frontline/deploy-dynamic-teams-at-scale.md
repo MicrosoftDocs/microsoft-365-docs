@@ -3,7 +3,7 @@ title: Deploy frontline dynamic teams at scale
 author: lana-chin
 ms.author: v-chinlana
 manager: jtremper
-ms.reviewer: aaglick
+ms.reviewer: arnavgupta, aaglick
 ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
@@ -16,7 +16,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 06/27/2024
+ms.date: 09/13/2024
 
 ---
 
@@ -24,16 +24,13 @@ ms.date: 06/27/2024
 
 ## Overview
 
-> [!NOTE]
-> Mapping frontline attributes to the department and job titles in your organization to enable [targeted communications](set-up-targeted-communications.md) is currently in public preview.
-
 Frontline teams are a collection of people, content, and tools within an organization for different frontline worker locations. Membership of frontline dynamic teams is determined and managed by a set of Microsoft Entra attributes. [Learn more about Microsoft Entra attributes](/azure/active-directory/external-identities/customers/how-to-define-custom-attributes).
 
 In the setup process, you define the following information with Microsoft Entra attributes:
 
 - Who your frontline workers are
 - What locations they work at
-- (Preview) Department and job titles of your frontline workers (optional)
+- Department and job titles of your frontline workers (optional)
 
 You also determine team structure and team owners.
 
@@ -46,21 +43,51 @@ Check out this [Microsoft Mechanics video](https://www.youtube.com/watch?v=gdkTn
 > [!NOTE]
 > If you would like to provide feedback and improve this feature, please fill out [this form](https://forms.microsoft.com/r/DWaJXA6Dax).
 
-## Prerequisites
+## Before you begin
 
-> [!IMPORTANT]
-> The admin running the deployment process must be a Global admin.
+### Prerequisites
 
 - Users must have a Microsoft 365 F3, F1, E3, or E5 license. If a user doesn't have one of these licenses, they need a Microsoft Entra ID P1 add-on license to use dynamic teams. [Learn more about frontline licensing](flw-licensing-options.md).
 - Ensure you can define your frontline workers and their work locations through data available in Microsoft Entra ID. If you don't have this data in Microsoft Entra ID, you can sync it through a [human capital management (HCM) connector](/azure/active-directory/app-provisioning/plan-cloud-hr-provision) or [use the PowerShell solution](deploy-teams-at-scale.md) to create static teams at scale.
-- If you want to enable [targeted communications](set-up-targeted-communications.md) (Preview), ensure you can map the attributes of your frontline workers through data available in Microsoft Entra ID. If user profile information doesn’t yet include job title or department, you can add it. [Learn more about how to add or update a user’s profile information in Microsoft Entra ID](/entra/fundamentals/how-to-manage-user-profile-info).  
+- If you want to enable [targeted communications](set-up-targeted-communications.md), ensure you can map the attributes of your frontline workers through data available in Microsoft Entra ID. If user profile information doesn’t yet include job title or department, you can add it. [Learn more about how to add or update a user’s profile information in Microsoft Entra ID](/entra/fundamentals/how-to-manage-user-profile-info). 
 
-When evaluating the right solution for your organization, we recommend you do the following:
+### Admin role to run the deployment
 
-  1. Plan your frontline deployment.
-  1. Test the deploy tools&mdash;dynamic team creation (the process described in this article) or static team creation (using the [PowerShell solution](deploy-teams-at-scale.md)). Keep in mind that static teams aren't managed automatically.
-  1. Deploy to a pilot location.
-  1. Deploy to a broader set of locations using a phased approach.
+To complete the steps in this article, you must be a Global Administrator or a Teams Administrator who is assigned a custom role (as described in this section) in Microsoft Entra ID with specific permissions.
+
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. This helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use a less-privileged role.
+
+To give Teams Administrators the ability to complete setup and deploy frontline dynamic teams, follow these steps to create the custom role and assign it to Teams Administrators.
+
+#### Create the custom role
+
+1. Sign in to the Microsoft Entra admin center as at least a [Privileged Role Administrator](/entra/identity/role-based-access-control/permissions-reference#privileged-role-administrator).
+1. Go to the [Roles and administrators](https://entra.microsoft.com/#view/Microsoft_AAD_IAM/RolesManagementMenuBlade/~/AllRoles) page, and then select **New custom role**.
+1. On the **Basics** tab:
+    1. Provide a name for the role. Optionally, enter a description.
+    1. Make sure **Baseline permissions** is set to **Start from scratch** (the default setting).
+1. On the **Permissions** tab, select the following permissions:
+    - **microsoft.directory/groups/create**
+    - **microsoft.directory/groups/dynamicMembershipRule/update**
+    - **microsoft.directory/servicePrincipals/create**
+1. On the **Review + create** tab, review the role definition, and then choose **Create**.
+
+    :::image type="content" source="media/dtas-custom-role.png" alt-text="Screenshot of the Review + create tab for reviewing the role definition of the new custom role." lightbox="media/dtas-custom-role.png":::
+
+#### Assign the custom role
+
+1. Sign in to the Microsoft Entra admin center as at least a [Privileged Role Administrator](/entra/identity/role-based-access-control/permissions-reference#privileged-role-administrator).
+1. Go to the [Roles and administrators](https://entra.microsoft.com/#view/Microsoft_AAD_IAM/RolesManagementMenuBlade/~/AllRoles) page, and then select the name of the new custom role you created.
+1. Choose **Add assignments**.
+1. Under **Select member(s)**, choose **No member selected**.
+
+    :::image type="content" source="media/dtas-custom-role-members.png" alt-text="Screenshot of the No member selected option.":::
+1. Select the Teams Administrators to which you want to assign the custom role. Choose **Next**.
+1. On the **Setting** tab, set **Assignment type** as **Active**.
+
+    :::image type="content" source="media/dtas-custom-role-assignment-type.png" alt-text="Screenshot of the Setting tab, showing assignment type and justification.":::
+1. Provide a justification, and then choose **Assign**.
 
 ## Set up your frontline dynamic teams
 
@@ -99,7 +126,7 @@ When evaluating the right solution for your organization, we recommend you do th
     > [!NOTE]
     > After your teams are deployed, you can also add more team owners through the [PowerShell solution](deploy-teams-at-scale.md) or by using any other manual methods.
 
-1. (Preview) On the Map frontline attributes page, select the Microsoft Entra attributes that most accurately reflect the departments and job titles in your organization. You can set the **Department attribute**, **Job title attribute**, or both.
+1. On the Map frontline attributes page, select the Microsoft Entra attributes that most accurately reflect the departments and job titles in your organization. You can set the **Department attribute**, **Job title attribute**, or both.
 
     > [!NOTE]
     > This step is optional. If you choose not to map frontline attributes, leave the values as **None**. You can always come back and map them later on the [Dynamic teams settings page](#edit-your-frontline-team-settings).
@@ -167,7 +194,7 @@ You can manage your teams when changes happen in your organization.
     |--------|-----------------------------------|------------------------------|
     |Define your frontline worker attribute. |All existing frontline teams will be members that have the new Microsoft Entra attribute defined. |All new frontline teams members will have the new Microsoft Entra attribute defined. |
     |Choose the values applicable to your frontline Microsoft Entra attribute. |All existing frontline team members will reflect your updated values. |All new teams will be populated with members who have the updated Microsoft Entra attributes that you defined. |
-    |(Preview) Map your frontline attributes for department and job title. |All existing frontline team members will reflect the Microsoft Entra attribute you defined for department and job title. |All new frontline team members will use the Microsoft Entra attribute you defined for department and job title.|
+    |Map your frontline attributes for department and job title. |All existing frontline team members will reflect the Microsoft Entra attribute you defined for department and job title. |All new frontline team members will use the Microsoft Entra attribute you defined for department and job title.|
     |Define your frontline locations. | Existing teams will continue to persist. If a team is no longer tied to a location, there will be no users in that team, and users are put in their respective location teams. |You can create new frontline teams based on the locations defined by your new Microsoft Entra attribute. |
     |Set your team name prefix. |All existing team names will be updated to reflect the prefix and location name if that was changed. |All new teams will have the updated naming convention. |
     |Select your team template. |No updates to the team structure will occur. |All new teams will use the updated team template. |

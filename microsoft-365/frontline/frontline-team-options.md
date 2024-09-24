@@ -4,7 +4,7 @@ author: lana-chin
 ms.author: v-chinlana
 manager: jtremper
 ms.reviewer: arnavgupta
-ms.topic: how-to
+ms.topic: conceptual
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
@@ -16,7 +16,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 03/22/2024
+ms.date: 08/23/2024
 ---
 
 # How to find the best frontline team solution for your organization
@@ -27,7 +27,7 @@ Frontline teams are a collection of people, content, and tools within an organiz
 
 ### Licensing
 
-For dynamic groups, users need one of the following licenses: Microsoft 365 F1, F3, E3, or E5. If a user doesn't have one of these licenses, they'll need a Microsoft Entra ID P1 add-on license to leverage dynamic teams. [Learn more about frontline licensing](flw-licensing-options.md).
+For dynamic groups, users need one of the following licenses: Microsoft 365 F1, F3, E3, or E5. If a user doesn't have one of these licenses, they'll need a Microsoft Entra ID P1 add-on license to use dynamic teams. [Learn more about frontline licensing](flw-licensing-options.md).
 
 ### Key considerations
 
@@ -36,7 +36,7 @@ For dynamic groups, users need one of the following licenses: Microsoft 365 F1, 
 
 ## When should I choose dynamic teams?
 
-Dynamic teams ensure your team membership is always up to date based on attributes you define in Microsoft Entra ID. As frontline employees onboard, offboard, or change locations, team membership will reflect the updates from Microsoft Entra ID.  
+Dynamic teams ensure your team membership is always up to date based on attributes you define in Microsoft Entra ID. As frontline employees onboard, offboard, or change locations, team membership reflects the updates from Microsoft Entra ID.  
 
 You should use dynamic frontline teams if:
 
@@ -60,3 +60,12 @@ You should use static teams if:
 - Your users don't have the [required license](#licensing) for dynamic teams.
 
 [Learn more about deploying static frontline teams with PowerShell](deploy-teams-at-scale.md).
+
+## Frontline team deployment best practices
+
+When evaluating the right solution for your organization, we recommend you do the following:
+
+  1. Plan your frontline deployment.
+  1. Test the deploy tools&mdash;[dynamic team creation in the Teams admin center](deploy-dynamic-teams-at-scale.md) or [static team creation using the PowerShell solution](deploy-teams-at-scale.md). Keep in mind that static teams aren't managed automatically.
+  1. Deploy to a pilot location.
+  1. Deploy to a broader set of locations using a phased approach.

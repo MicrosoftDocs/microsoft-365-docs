@@ -47,19 +47,19 @@ To sign up and purchase Microsoft 365 Apps for business, complete the following 
 > The person who signs up for Microsoft 365 for business (usually the business owner) automatically becomes the technical administrator of the organization. You can add other people as admins if you want help managing your Microsoft 365 services. Check out [Assign admin roles](../add-users/assign-admin-roles.md) for more info.
 
 1. On the [For business page](https://go.microsoft.com/fwlink/?linkid=2181424), see what's included in Microsoft 365. Under Microsoft 365 Apps for business, select **Buy now**.
-2. On the **You've selected Microsoft 365 Apps for business** page, enter an email address that you already use. This can be any address you want Microsoft to use to communicate with you during setup. It is also the address where we'll send you information about your bill and renewals. Then select, **Set up account**.
+2. On the **You've selected Microsoft 365 Apps for business** page, enter an email address that you already use. This can be any address you want Microsoft to use to communicate with you during setup. It's also the address where we send you information about your bill and renewals. Then select, **Set up account**.
 3. Enter your name, business phone number, business size, company name, and location. Select **Next**.
 
    > [!NOTE]
    > We display your company name in the admin center. This is where you manage Microsoft 365 users, licenses and other features and services. We also include it in any internal SharePoint site URLs.
 
-4. Help us make sure this is you. Enter a number that we can use to reach you and select **Send Verification Code**. You'll receive a text. Enter your code and select **Verify**.
+4. Help us make sure this is you. Enter a number that we can use to reach you and select **Send Verification Code**. You receive a text. Enter your code and select **Verify**.
 
-5. Decide how you'll sign in to Microsoft 365. You can [sign in with your current personal email](#option-1-sign-in-with-your-outlook-hotmail-yahoo-gmail-or-other-email-account) or [create a new account](#option-2-add-a-domain) by adding a domain.
+5. Decide how you sign in to Microsoft 365. You can [sign in with your current personal email](#option-1-sign-in-with-your-outlook-hotmail-yahoo-gmail-or-other-email-account) or [create a new account](#option-2-add-a-domain) by adding a domain.
 
 ## Choosing the right business subscription
 
-When signing up for Microsoft 365 Apps for Business, you have 2 options for how to get started. Evaluate three key factors to choose which best meets your needs:
+When signing up for Microsoft 365 Apps for Business, you have two options for how to get started. Evaluate three key factors to choose which best meets your needs:
 
 - Which apps and services do you want to use straight away?
 

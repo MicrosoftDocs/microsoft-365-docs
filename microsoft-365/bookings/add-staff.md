@@ -3,13 +3,12 @@ title: "Add team members to Bookings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 09/14/2023
+ms.date: 07/11/2024
 audience: Admin
 ms.topic: how-to
 ms.service: bookings
 ms.localizationpriority: medium
-ms.collection: 
-- Tier1
+ms.collection:
 - scotvorg
 - essentials-manage
 description: "Use this page to create your staff list and to manage staff member details such as name, phone number, and email address."
@@ -40,7 +39,7 @@ Although Bookings is a feature of Microsoft 365, not all of your staff members a
     > [!NOTE]
     > To add staff from outside of your organization, manually fill in their email and other information. Staff from outside your tenant will not be able to share free/busy information with Bookings.
 
-4. For each staff member, select a role: Team member, Scheduler, Viewer, or Guest.
+4. For each staff member, select a role: Team member, Scheduler, Viewer, or Guest. To learn more about staff roles, see [Understanding staff roles](staff-roles.md).
 
 5. Select **Notify all staff via email when a booking assigned to them is created or changed** to enable staff emails. The following is an example email:
 
@@ -50,12 +49,12 @@ Although Bookings is a feature of Microsoft 365, not all of your staff members a
 
     For example, if a staff member has a team meeting or a personal appointment scheduled for 3pm on a Wednesday, Bookings will show that staff member as unavailable to be booked in that time slot. That time will appear as busy or tentative in the Bookings Page view, as shown in the below example.
 
-    :::image type="content" source="media/bookings-busy-tentative-view-2.png" alt-text="A view of a Bookings Page.":::
+    :::image type="content" source="media/bookings-busy-tentative-view-2.png" alt-text="A view of a Bookings Page." lightbox="media/bookings-busy-tentative-view-2.png":::
 
     > [!IMPORTANT]
     > This setting is turned on by default. We highly recommend leaving this setting on to avoid double-bookings and to optimize the availability of your staff members.
 
-7. Select **Use business hours** to set all bookable times for your staff members to be only within the business hours that you set in the **Business hours** section on the Business Information page.
+7. Select **Use business hours** to set all bookable times for your staff members to be only within the business hours that you set in the **Business hours** section on the Business Information page. To learn more about configuring staff availability, see [Configure staff availability in Microsoft Bookings](staff-availability.md).
 
     By deselecting this box, staff can be given custom hours that further limit when they can be booked. This is helpful for scenarios where a staff member may only be on site Tuesdays and Wednesdays, or they dedicate their mornings for one type of appointments, and their afternoons for other types.
 

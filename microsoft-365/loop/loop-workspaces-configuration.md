@@ -110,7 +110,7 @@ In case you create a new policy configuration or change the configuration for an
 - If there were no policy configurations before the change, then it takes 24 hours for the change to be reflected.
 
 > [!NOTE]
-> In order to target only a group of users in your organization to be able to create and view Loop content in workspaces, create a second group that targets All users, set this group to Disabled, and make it a lower priority than your target group that is set to Enabled. This will override the default Not Configured state to Disabled for all users but your target group.
+> In order to target only a group of users in your organization to be able to create and view Loop content in workspaces, create a second group that targets All users, set this group to Disabled, and make it a priority number that evaluates *after* your first target group that is set to Enabled. In Cloud Policy, priority 0 evaluates first, followed by priority 1, then 2, and so on. This configuration will override the default Not Configured state to Disabled for all users but your target group.
 
 ## Related topics
 

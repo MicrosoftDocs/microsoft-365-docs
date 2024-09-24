@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 11/01/2023
+ms.date: 08/13/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -20,11 +20,11 @@ description: Learn how to apply a sensitivity label to a model in Microsoft Synt
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
-You can easily apply a [sensitivity label](../compliance/sensitivity-labels.md) to unstructured document processing models in Microsoft Syntex. 
+You can easily apply a [sensitivity label](../compliance/sensitivity-labels.md) to unstructured document processing models in Microsoft Syntex.
 
-Sensitivity labels let you apply encryption to the documents that your models identify. For example, you want your model to not only identify any financial documents that contain bank account numbers or credit card numbers that are uploaded to your document library, but also to apply a sensitivity label that's configured with encryption settings to restrict who can access that content and how it can be used. Syntex models honor the [label order](../compliance/apply-sensitivity-label-automatically.md#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label) rules and also don't overwrite an existing label that was manually applied by a user to the file. 
+Sensitivity labels let you apply encryption to the documents that your models identify. For example, you want your model to not only identify any financial documents that contain bank account numbers or credit card numbers that are uploaded to your document library, but also to apply a sensitivity label that's configured with encryption settings to restrict who can access that content and how it can be used. Syntex models honor the [label order](../compliance/apply-sensitivity-label-automatically.md#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label) rules and also don't overwrite an existing label that was manually applied by a user to the file.
 
-You can apply a pre-existing sensitivity label to your model through your model settings on your model's home page. The label must already be published to be available for selection from model settings. Labels apply to Office files for Word (.docx), PowerPoint (.pptx), and Excel (.xlsx). 
+You can apply a pre-existing sensitivity label to your model through your model settings on your model's home page. The label must already be published to be available for selection from model settings. Labels apply to Office files for Word (.docx), PowerPoint (.pptx), and Excel (.xlsx).
 
 > [!Important]
 > For sensitivity labels to be available to apply to your models, they need to be [created and published in the Microsoft Purview compliance portal](../admin/security-and-compliance/set-up-compliance.md).

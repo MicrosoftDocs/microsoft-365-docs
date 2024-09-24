@@ -29,7 +29,7 @@ Both methods use cross-tenant synchronization in Microsoft Entra ID.
 
 If you want to synchronize the same users with all the other tenants in a multitenant organization, we recommend sharing users in the Microsoft 365 admin center. This creates the necessary configurations in Microsoft Entra ID for you.
 
-If you want to synchronize different users to different tenants or synchronize Entra groups, then you must configure cross-tenant synchronization directly in Microsoft Entra ID.
+If you want to synchronize different users to different tenants or use Entra groups to determine which users are in scope for provisioning, then you must configure cross-tenant synchronization directly in Microsoft Entra ID.
 
 While you can create multiple cross-tenant synchronization configurations for a single external tenant, we recommend that you only use one for ease of administration.
 
@@ -139,6 +139,8 @@ This procedure updates the *MTO_Sync_\<TenantID\>* synchronization configuration
 
 Calendar sharing allows users in each multitenant organization (MTO) tenant to view free/busy (time only) calendar availability information.
 
+> [!NOTE]
+> Calendar sharing via Multitenant collaboration portal is currently not available in Microsoft 365 GCC, GCC High, DoD, or Microsoft 365 China (operated by 21Vianet).
 > [!IMPORTANT]
 > Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
 

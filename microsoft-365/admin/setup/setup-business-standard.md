@@ -47,7 +47,7 @@ In this article, we'll walk you through the steps of adding an existing domain y
 
 ## Before you begin
 
-To add, modify or remove domains you must be a global administrator. For more info, see [About admin roles](../add-users/about-admin-roles.md).
+To add, modify or remove domains you must be a [domain name administrator](/entra/identity/role-based-access-control/permissions-reference).
 
 > [!IMPORTANT]
 > The person who signs up for Microsoft 365 for business (usually the business owner) automatically becomes the technical administrator of the organization. You can add other people as admins if you want help managing your Microsoft 365 services. Check out [Assign admin roles](../add-users/assign-admin-roles.md) for more info.

@@ -1,7 +1,7 @@
 ### YamlMime:FAQ
 metadata:
-  ms.date: 03/25/2024
-  title: "Microsoft Bookings Frequently Asked Questions"
+  ms.date: 07/30/2024
+  title: "Shared Bookings Frequently Asked Questions"
   ms.author: kwekua
   author: kwekuako
   manager: scotv
@@ -14,8 +14,8 @@ metadata:
   - scotvorg
   - essentials-compliance
   - essentials-privacy
-  description: "Microsoft Bookings frequently asked questions."
-title: Microsoft Bookings Frequently Asked Questions
+  description: "Shared Bookings frequently asked questions."
+title: Shared Bookings Frequently Asked Questions (FAQ)
 summary: |
 
 sections:
@@ -360,7 +360,7 @@ sections:
              > [!NOTE]
              > This setting shares your free/busy information with Bookings and with other users in your organization. It doesn't include any other information.
           
-             :::image type="content" alt-text="Image of calendar-sharing screen with Can view when I'm busy enabled." source="../media/bookings-view-busy.png" lightbox="../media/bookings-view-busy.png":::
+             :::image type="content" alt-text="Image of calendar-sharing screen with Can view when I'm busy enabled." source="../media/bookings-view-busy.png":::
           
           1. Select **Done**.
           

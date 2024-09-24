@@ -16,13 +16,14 @@ ms.collection:
 - scotvorg 
 - M365-subscription-management
 - Adm_O365
-description: "Learn how to assign Microsoft 365 Apps licenses to groups for use with devices."
 ms.custom: 
 - commerce_licensing
 - AdminSurgePortfolio
 - okr_SMB
 - admindeeplinkMAC
+- GAUpdates
 search.appverid: MET150
+description: "Learn how to assign Microsoft 365 Apps licenses to groups for use with devices."
 ms.date: 12/19/2023
 ---
 # Manage Microsoft 365 Apps licenses for devices
@@ -36,10 +37,9 @@ To begin, you create a group in the Microsoft Entra admin center, and then assig
 
 ## Before you begin
 
-You must be a global admin to perform the tasks in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+You must be a Global Administrator to perform the tasks in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
-> [!NOTE]
-> If you're the person who signed up for the subscription, you're automatically a global admin.
+[!INCLUDE [ga-roles-limitation](../../includes/ga-roles-limitation.md)]
 
 ## Assign licenses to devices
 

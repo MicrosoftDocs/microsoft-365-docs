@@ -109,4 +109,4 @@ If you're using a third-party MDM solution, check the documentation for options 
 
 ## Related articles
 
-- [Frontline device management overview](flw-devices.md)
+- [Overview of device management for frontline workers](flw-devices.md)

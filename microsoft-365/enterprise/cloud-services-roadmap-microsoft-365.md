@@ -48,7 +48,6 @@ To manage your cloud services:
   - [Skype for Business](/SkypeForBusiness/skype-for-business-online)
   - [Teams](/MicrosoftTeams/quality-of-experience-review-guide)
   - [Viva Engage](https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe)
-- [Perform performance tuning for your cloud services](tune-microsoft-365-performance.md)
 
 ## How Microsoft does cloud services for Microsoft 365
 

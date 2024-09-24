@@ -32,9 +32,3 @@ jobs:
         secrets:
           AccessToken: ${{ secrets.GITHUB_TOKEN }}
           TeamReadAccessToken: ${{ secrets.ORG_READTEAMS_TOKEN }}
-            
-            
-        
-          
-
-            

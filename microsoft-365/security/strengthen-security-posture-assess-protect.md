@@ -9,7 +9,7 @@ author: siosulli
 manager: deniseb
 audience: Admin
 description: Learn how to strengthen your organization's security posture - assess and protect.
-ms.topic: tutorial
+ms.topic: solution-overview
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 search.appverid: 
@@ -23,7 +23,7 @@ ms.collection:
 - highpri
 - tier1
 - ContentEnagagementFY24
-ms.date: 09/18/2023
+ms.date: 08/28/2024
 ---
 
 # Strengthen your security posture - Assess and protect

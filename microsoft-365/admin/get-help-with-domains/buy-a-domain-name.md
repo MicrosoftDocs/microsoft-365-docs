@@ -38,7 +38,7 @@ Check out all of our small business content on [Small business help & learning](
 > [!NOTE]
 > If your organization uses Microsoft 365 operated by 21Vianet in China, see [How to buy a domain for Microsoft 365 operated by 21Vianet](#how-to-buy-a-domain-for-microsoft-365-operated-by-21vianet).
 
- *To Add, modify or remove domains you **must** be a **Global Administrator** of a [business or enterprise plan](https://products.office.com/business/office). These changes affect the whole tenant. *Customized administrators* or *regular users* won't be able to make these changes.*  
+ *To Add, modify or remove domains you **must** be a **Domain Name Administrator** of a [business or enterprise plan](https://products.office.com/business/office). These changes affect the whole tenant. *Customized administrators* or *regular users* can't make these changes.*  
 
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for.
   
@@ -77,10 +77,10 @@ You can choose from the following top-level domains for your domain.
 > When you select **Buy domain**, you may be redirected to your Microsoft partner's website if the tenant is purchased/managed through a Microsoft partner.
 
 ## Domain Privacy
-We offer a free Domain Privacy Subscription with the purchase of a domain. This keeps your contact information attached to the registration of your domain with ICANN private. [Learn more.](https://whois.icann.org/en/privacy-and-proxy-services)
+We offer a free Domain Privacy Subscription with the purchase of a domain that keeps your contact information attached to the registration of your domain with ICANN private. [Learn more.](https://whois.icann.org/en/privacy-and-proxy-services)
   
 ## Buy a domain from another domain registrar
-If you want to buy a domain from a domain registrar other than [GoDaddy](https://www.godaddy.com), we recommend you use one below that supports automatic setup (Domain Connect).
+If you want to buy a domain from a domain registrar other than [GoDaddy](https://www.godaddy.com), we recommend you use one listed that supports automatic setup (Domain Connect).
 
 - [Aruba](https://hosting.aruba.it/en/home.aspx)  
 - [1&amp;1 IONOS](https://www.1and1.com/)
@@ -104,7 +104,7 @@ Request the transfer at the registrar that you want to move your domain to. Look
 
 ## How to buy a domain for Microsoft 365 operated by 21Vianet
 
-If you don't already have your own domain, you can easily buy one online at a domain name registrar, domain reseller, or even at your current Internet provider. You get a domain name when you sign up for Microsoft 365 operated by 21Vianet, for example, contoso.partner.onmschina.cn. But you may want to use a custom domain name, like fourthcoffee.com.
+If you don't already have your own domain, you can easily buy one online at a domain name registrar, domain reseller, or even at your current Internet provider. You get a domain name when you sign up for Microsoft 365 operated by 21Vianet, for example, contoso.partner.onmschina.cn. But you might want to use a custom domain name, like fourthcoffee.com.
   
 To set up a domain in Microsoft 365, you must own a domain and change some of the DNS records for your domain.
   

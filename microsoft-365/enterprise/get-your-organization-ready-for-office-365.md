@@ -3,7 +3,7 @@ title: "Plan for Microsoft 365 Enterprise"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 08/12/2019
+ms.date: 08/12/2024
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -13,6 +13,8 @@ ms.collection:
 - scotvorg
 - Ent_O365
 - M365-subscription-management
+- essentials-get-started
+- must-keep
 f1.keywords:
 - CSH
 ms.custom: 

@@ -1354,6 +1354,76 @@
       "source_path": "microsoft-365/enterprise/sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md",
       "redirect_url": "/microsoft-365/enterprise/index",
       "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissio.md",
+      "redirect_url": "/microsoft-365/enterprise/manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-dap-p",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/maintain-group-membership-with-microsoft-365-powershell.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/configure-skype-for-business-for-hybrid-modern-authentication.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md",
+      "redirect_url": "/microsoft-365/enterprise/manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-dap-p",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/deploy-update-channels-examples-rapid-deploy.md",
+      "redirect_url": "/microsoft-365/enterprise/deploy-update-channels-examples",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/assign-per-user-skype-for-business-online-policies-with-microsoft-365-powershell.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/enabling-sp-multigeo-satellite-geolocation.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md",
+      "redirect_url": "/microsoft-365/enterprise/hybrid-solutions",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/high-availability-federated-authentication-phase-1-configure-azure.md",
+      "redirect_url": "/microsoft-365/enterprise/hybrid-solutions",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/high-availability-federated-authentication-phase-2-configure-domain-controllers.md",
+      "redirect_url": "/microsoft-365/enterprise/hybrid-solutions",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md",
+      "redirect_url": "/microsoft-365/enterprise/hybrid-solutions",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/high-availability-federated-authentication-phase-4-configure-web-application-pro.md",
+      "redirect_url": "/microsoft-365/enterprise/hybrid-solutions",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/high-availability-federated-authentication-phase-5-configure-federated-authentic.md",
+      "redirect_url": "/microsoft-365/enterprise/hybrid-solutions",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/tune-microsoft-365-performance.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
    }
   ]
 }

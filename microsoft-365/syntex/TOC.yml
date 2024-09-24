@@ -69,6 +69,8 @@
                   href: choose-library-view.md
                 - name: View processing status 
                   href: processing-status.md
+                - name: Set a page range
+                  href: page-range.md
                 - name: Analyze model usage
                   href: model-usage-analytics.md
 
@@ -102,6 +104,8 @@
                   href: choose-library-view.md
                 - name: View processing status 
                   href: processing-status.md
+                - name: Set a page range
+                  href: page-range.md
                 - name: Analyze model usage
                   href: model-usage-analytics.md
 
@@ -256,6 +260,8 @@
           href: content-processing-create-rules.md
         - name: Set a content type 
           href: content-processing-content-type.md
+        - name: Translate a file 
+          href: content-processing-translate.md
 
     - name: Premium taxonomy features
       items:
@@ -312,9 +318,9 @@
     - name: Extensibility
       items: 
         - name: Content model Graph API 
-          href: /graph/api/resources/contentmodel?view=graph-rest-beta
+          href: /graph/api/resources/contentmodel
         - name: Document processing Graph API 
-          href: /graph/api/resources/documentprocessingjob?view=graph-rest-beta
+          href: /graph/api/resources/documentprocessingjob
         - name: Unstructured model REST API 
           href: /sharepoint/dev/apis/syntex/syntex-model-rest-api
         - name: Syntex PowerShell

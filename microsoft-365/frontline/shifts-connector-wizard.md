@@ -3,7 +3,7 @@ title: Use the Shifts connector wizard to connect Shifts to Blue Yonder Workforc
 author: lana-chin
 ms.author: v-chinlana
 manager: jtremper
-ms.reviewer: imarquesgil
+ms.reviewer: harrywong
 ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
@@ -53,7 +53,7 @@ With Blue Yonder WFM as your system of record, your frontline workers can effici
 
 Before you get started, make sure you meet all the following prerequisites.
 
-- You're a Microsoft 365 global admin.
+- You're a Microsoft 365 Global Administrator.
 
 [!INCLUDE [shifts-connector-blue-yonder-prerequisites](includes/shifts-connector-blue-yonder-prerequisites.md)]
 

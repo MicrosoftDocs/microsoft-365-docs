@@ -28,11 +28,13 @@ ms.date: 05/21/2024
 
 # Use AllowSelfServicePurchase for the MSCommerce PowerShell module
 
-The **MSCommerce** PowerShell module is now available on [PowerShell Gallery](https://aka.ms/allowselfservicepurchase-powershell-gallery). The module includes a **PolicyID** parameter value for **AllowSelfServicePurchase** that lets you control whether users in your organization can make self-service purchases of Microsoft or select third party offers.
+The **MSCommerce** PowerShell module is available in the [PowerShell Gallery](https://aka.ms/allowselfservicepurchase-powershell-gallery). The module includes a **PolicyID** parameter value for **AllowSelfServicePurchase** that lets you control whether users in your organization can make self-service purchases of Microsoft or select third-party offers.
+
+You can also manage **AllowSelfServicePurchase** settings in the Microsoft 365 admin center. For more information, see [Manage self-service purchases and trials (for admins)](manage-self-service-purchases-admins.md).
 
 You can use the **MSCommerce** PowerShell module to:
 
-- View the default state of the **AllowSelfServicePurchase** parameter value—whether it's enabled, disabled, or allows trials without a payment method
+- View the default state of the **AllowSelfServicePurchase** parameter value&mdash;whether it's enabled, disabled, or allows trials without a payment method
 - View a list of applicable products and whether self-service purchase is enabled, disabled, or allows trials without a payment method
 - View or modify the current setting for a specific product to either enable or disable it
 - View or modify the setting for trials without payment methods
@@ -72,7 +74,7 @@ To connect to the PowerShell module with your credentials, run the following com
 Connect-MSCommerce
 ```
 
-This command connects the current PowerShell session to a Microsoft Entra tenant. The command prompts you for a username and password for the tenant you want to connect to. If multi-factor authentication is enabled for your credentials, you use the interactive option to sign in.
+This command connects the current PowerShell session to a Microsoft Entra tenant. The command prompts you for a username and password for the tenant you want to connect to. If multifactor authentication is enabled for your credentials, you use the interactive option to sign in.
 
 ## View details for AllowSelfServicePurchase
 
@@ -95,12 +97,15 @@ The following table lists the available products and their **ProductId**. It als
 | Product | ProductId | Is trial without payment method enabled? |
 |-----------------------------|--------------|--------------|
 | Clipchamp Premium | CFQ7TTC0N8SS | No |
+| Microsoft 365 Copilot | CFQ7TTC0MM8R | No |
+| Microsoft 365 F3 | CFQ7TTC0LH05 | No |
+| Microsoft Purview Discovery | CFQ7TTC0N8SL | Yes |
 | Power Apps per user* | CFQ7TTC0LH2H | No |
 | Power Automate per user* | CFQ7TTC0LH3L | No |
-| Power Automate RPA* | CFQ7TTC0LSGZ  | No |
-| Power BI Premium (standalone)* | CFQ7TTC0H6RP  | No |
+| Power Automate RPA* | CFQ7TTC0LSGZ | No |
+| Power BI Premium (standalone)* | CFQ7TTC0H6RP | No |
 | Power BI Pro* | CFQ7TTC0H9MP | No |
-| Project Plan 1* | CFQ7TTC0HDB1 | Yes |
+| Planner Plan 1* | CFQ7TTC0HDB1 | Yes |
 | Project Plan 3* | CFQ7TTC0HDB0 | No |
 | Python in Excel | CFQ7TTC0S3X1 | No |
 | Teams Exploratory | CFQ7TTC0J1FV | Yes |
@@ -108,14 +113,12 @@ The following table lists the available products and their **ProductId**. It als
 | Visio Plan 1* | CFQ7TTC0HD33 | Yes |
 | Visio Plan 2* | CFQ7TTC0HD32 | No |
 | Viva Goals (self-service trials only) | CFQ7TTC0PW0V | Yes |
-| Microsoft 365 F3 | CFQ7TTC0LH05 | No |
-| Microsoft Purview Discovery | CFQ7TTC0N8SL | Yes |
 
 *These IDs have changed. If you previously blocked products using the old IDs, they're automatically blocked using the new IDs. No other work is required.
 
 ## View a list of self-service purchase "third party offer types" and their status
 
-To view a list of all available self-service purchase third party offer types and the status of each, run the following command:
+To view a list of all available self-service purchase third-party offer types and the status of each, run the following command:
 
 ```powershell
 Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase -Scope OfferType
@@ -123,16 +126,12 @@ Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase -Scope OfferTyp
 
 The following table lists the available third-party offer types. These offer types can be enabled or disabled for self-service purchase.
 
-| Offer Type| Id |
+| Offer Type| ID |
 |-----------------------------|--------------|
 | Software as a Service | SaaS |
 | Power BI Visuals | POWERBIVISUALS |
 | Dynamics 365 Dataverse Apps | DYNAMICSCE |
 | Dynamics 365 Business Central | DYNAMICSBC |
-
-
-
-
 
 ## View or set the status for AllowSelfServicePurchase
 
@@ -143,7 +142,7 @@ You can set the **Value** parameter for **AllowSelfServicePurchase** to allow or
 
 The following table describes the settings for the **Value** parameter.
 
-| **Setting** | **Impact** |
+| Setting | Impact |
 |---|---|
 | Enabled | Users can make self-service purchases and acquire trials for the product. |
 | OnlyTrialsWithoutPaymentMethod | Users can't make self-service purchases but can acquire free trials for products that don't require them to add a payment method. After the trial expires, a user can't buy the paid version of the product. |
@@ -173,7 +172,7 @@ To allow users to try a specific product without a payment method, run the follo
 Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Value "OnlyTrialsWithoutPaymentMethod" 
 ```
 
-To get the policy setting for a specific third party offer type, run the following command:
+To get the policy setting for a specific third-party offer type, run the following command:
 
 ```powershell
 Get-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -OfferType <ID>
@@ -181,13 +180,11 @@ Get-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -OfferType <ID>
 
 To enable the policy setting for a specific third-party offer type, run the following command:
 
-
 ```powershell
 Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -OfferType <ID> -Value "Enabled"
 ```
 
 To disable the policy setting for a specific third-party offer type, run the following command:
-
 
 ```powershell
 Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -OfferType <ID> -Value "Disabled"
@@ -206,7 +203,6 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $pr
 
 If there are multiple values for the product, you can run the command individually for each value as shown in the following example:
 
-
 ```powershell
 Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[0].ProductID -Value "Disabled"
 Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[1].ProductID -Value "Disabled"
@@ -221,7 +217,7 @@ You see the following error message:
 
 > HandleError : Failed to retrieve policy with PolicyId 'AllowSelfServicePurchase', ErrorMessage - The underlying connection was closed: An unexpected error occurred on a send.
 
-This may be due to an older version of Transport Layer Security (TLS). When you connect to this service, you must use TLS 1.2 or greater
+This error might be due to an older version of Transport Layer Security (TLS). When you connect to this service, you must use TLS 1.2 or greater
 
 ### Solution
 

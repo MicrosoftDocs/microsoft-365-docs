@@ -15,6 +15,7 @@ metadata:
   ms.custom: 
   - commerce_vl
   - admindeeplinkMAC
+  - GAUpdates
   search.appverid: MET150
   ms.localizationpriority: medium
   description: "Online service activation for Open program Frequently Asked Questions"
@@ -57,8 +58,11 @@ sections:
         answer: |
           The organization name associated with your work or school account is taken from the License ID of the service you're activating. If an account exists, the organization name is prepopulated in the Organizational Account set-up and already linked to your organization from the original online service order. The registration process validates whether your organization has an account. 
         
-          If the field for **Company** is available, finish the registration process to sign in and activate the service. If this field isn't available, you must register the organization. You must be a Global administrator to register an organization for an account.
-          
+          If the field for **Company** is available, finish the registration process to sign in and activate the service. If this field isn't available, you must register the organization. You must be a Global Administrator to register an organization for an account.
+
+          > [!CAUTION] 
+          > Global Administrators have almost unlimited access to your organization's settings and most of its data. To help keep your organization secure, we recommend that you limit the number of Global Administrators as much as possible.
+
           When you request a work or school account, your request is sent to your organization Tenant administrator who grants or denies your registration request. Use this work or school account when you sign in to Microsoft 365 admin center
 
       - question: |

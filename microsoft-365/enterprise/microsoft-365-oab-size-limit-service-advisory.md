@@ -3,7 +3,7 @@ title: "Service advisories for OAB size limits in Exchange Online monitoring"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 10/25/2022
+ms.date: 08/09/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -15,6 +15,7 @@ ms.collection:
 - scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
+- must-keep
 ms.custom: 
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE

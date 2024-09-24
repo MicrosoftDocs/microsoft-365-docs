@@ -11,7 +11,6 @@ ms.service: microsoft-365-backup
 ms.custom: backup
 search.appverid:
 ms.collection:
-    - essentials-overview
 ms.localizationpriority:  medium
 description: Overview for third-party developers for Microsoft 365 Backup Storage.
 ---

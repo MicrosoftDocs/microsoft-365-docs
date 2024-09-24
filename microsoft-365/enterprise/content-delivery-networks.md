@@ -201,5 +201,3 @@ Using CDNs only makes sense in a SharePoint context and should be avoided with S
 [Use the Microsoft 365 content delivery network with SharePoint](use-microsoft-365-cdn-with-spo.md)
 
 [Microsoft Trust Center](https://www.microsoft.com/trustcenter)
-
-[Tune Microsoft 365 performance](tune-microsoft-365-performance.md)
