@@ -24,7 +24,7 @@ description: Learn how to set up licensing tools for the SharePoint Agreements A
 
 There are a few steps to setting up the solution.
 
-1. A Global Administrator [proures and assign the required SharePoint Content Solution - Agreements (Preview) license](agreements-license-requirements.md#assign-license-to-a-user).
+1. A Global Administrator [procures and assigns the required SharePoint Content Solution - Agreements (Preview) license](agreements-license-requirements.md#assign-license-to-a-user).
 
 2. A SharePoint Administrator [creates a workspace](#create-workspaces).
 
@@ -34,7 +34,7 @@ There are a few steps to setting up the solution.
 
 ## Create workspaces
 
-Workspaces allow you to organize and manage agreements across your organization. When you create a workspace, a SharePoint site is created and is assigned to the workspace. You can create a workspaces for business processes or departments in your organization that manages agreements. For example, you can have one workspace for your procurement team, and another one for your human resources team. Agreements, templates and other files exist within the workspace and are stored in the corresponding SharePoint site. Roles are assigned to users at a workspace level, and permissions can be managed at a workspace level. 
+Workspaces allow you to organize and manage agreements across your organization. When you create a workspace, a SharePoint site is created and is assigned to the workspace. You can create workspaces for business processes or departments in your organization that manages agreements. For example, you can have one workspace for your procurement team, and another one for your human resources team. Agreements, templates, and other files exist within the workspace and are stored in the corresponding SharePoint site. Roles are assigned to users at a workspace level, and permissions can be managed at a workspace level.
 
 ### Prerequisites
 
@@ -115,7 +115,7 @@ To add the Agreements app to Microsoft Teams, follow these steps (no administrat
 
    ![A screenshot of adding the Agreements app in Teams.](../../media/content-understanding/agreements-app-store.png)
 
-4. You'll see the Agreements app on the left navigation menu.
+4. You see the Agreements app on the left navigation menu.
 
 5. For ease of access, you can right-click **Agreements** and pin the app to the left navigation menu.
 
@@ -133,7 +133,7 @@ To manage roles in a workspace:
 
 3. From the left navigation menu, select the **Roles** option.
 
-4. Select the role you would like to manage. You can now manage the list of users assinged to each role.
+4. Select the role you would like to manage. You can now manage the list of users assigned to each role.
 
    ![A screenshot of the Edit workspace owners page to add users to a role.](../../media/content-understanding/agreements-add-users-to-roles.png)
 
