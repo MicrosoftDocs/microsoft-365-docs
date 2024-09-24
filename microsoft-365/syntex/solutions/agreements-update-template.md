@@ -24,7 +24,7 @@ Templates have their own lifecycle management requirements and will change over 
 
 ## Choose a template to edit
 
-1. In Microsoft Word, select the **Agreements** tab, and then select **Manage templates**.
+1. Go to the **Agreements** tab in Microsoft Word, and select **Manage templates**.
 
 2. In the panel, select **Edit a template**.
 
