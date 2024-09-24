@@ -137,6 +137,6 @@ Use the following resources to extend Shifts capabilities for your frontline wor
 
 ## Training for end users
 
-|&nbsp; |&nbsp; |&nbsp; |&nbsp; |&nbsp; |&nbsp; |
-| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-|:::image type="icon" source="/office/media/icons/get-started-teams.png":::  |  [Video: What is Shifts?](https://support.office.com/article/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821) |:::image type="icon" source="/office/media/icons/calendar.png"::: |  [Video: Create a shifts schedule](https://support.microsoft.com/office/create-a-shifts-schedule-2b94ca38-36db-4a1c-8fee-f8f0fec9a984) |:::image type="icon" source="/office/media/icons/blocks-teams.png":::|  [Video: Manage a Shifts schedule](https://support.microsoft.com/office/manage-and-view-a-shifts-schedule-63acda7b-ea39-441a-b1c6-c404a72e79f7) |
+|&nbsp; |&nbsp;  |&nbsp; |&nbsp; |
+|---------|---------|---------|---------|
+|:::image type="icon" source="/office/media/icons/arrow-right-2-teams.png"::: [Shifts end user documentation](https://support.microsoft.com/office/get-started-in-shifts-5f3e30d8-1821-4904-be26-c3cd25a497d6)|:::image type="icon" source="/office/media/icons/get-started-teams.png"::: [Video: What is Shifts?](https://support.office.com/article/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821)|:::image type="icon" source="/office/media/icons/calendar.png":::[Video: Create a shifts schedule](https://support.microsoft.com/office/create-a-shifts-schedule-2b94ca38-36db-4a1c-8fee-f8f0fec9a984)|:::image type="icon" source="/office/media/icons/blocks-teams.png":::[Video: Manage a Shifts schedule](https://support.microsoft.com/office/manage-and-view-a-shifts-schedule-63acda7b-ea39-441a-b1c6-c404a72e79f7)|
