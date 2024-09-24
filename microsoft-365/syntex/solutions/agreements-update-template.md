@@ -24,7 +24,7 @@ Templates have their own lifecycle management requirements and will change over 
 
 ## Choose a template to edit
 
-1. In Microsoft Word, open the Agreements tab, select **Manage templates**.
+1. In Microsoft Word, select the **Agreements** tab, and then select **Manage templates**.
 
 2. In the panel, select **Edit a template**.
 
@@ -36,13 +36,13 @@ Templates have their own lifecycle management requirements and will change over 
 
 ## Prepare to edit the template
 
-When you open the template for editing, the right-hand panel in Word will display various details. The details include the template’s status (draft or published); metadata such as location, languages, and other fields; and information about sections and conditional sections. At the top of the panel, select **Edit template**.
+When you open the template for editing, the right-hand panel in Word displays various details. The details include the template’s status (**Draft** or **Published**); metadata such as location, languages, and other fields; and information about sections and conditional sections. At the top of the panel, select **Edit template**.
 
 ## Edit the template
 
-After you select **Edit template**, you're presented with the same experience as when you [create a template](agreements-create-template#configure-an-approval-workflow-for-documents-generated-from-the-template) flow. In this case, the fields, sections, conditional sections, and any workflow that is already in place from the original template will be displayed.
+After you select **Edit template**, you're presented with the same experience as when you [create a template](agreements-create-template#configure-an-approval-workflow-for-documents-generated-from-the-template) flow. In this case, the fields, sections, conditional sections, and any workflow that is already in place from the original template is displayed.
 
-You can make modifications as desired to update the elements of the template. Once you are done with your changes, publish the template for the changes to take effect.
+You can make modifications as needed to update the elements of the template. Once you're done with your changes, publish the template for the changes to take effect.
 
 > [!NOTE]
 > Until you publish the template with the changes, the changes won't reflect in new documents generated from the template. All documents generated from the template will be based off the last published version of the template.
