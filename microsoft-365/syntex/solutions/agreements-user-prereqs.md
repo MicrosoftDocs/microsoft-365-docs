@@ -26,7 +26,7 @@ The SharePoint Agreements AI solution has several prerequisites to ensure users 
 
 Users of the solution need to have a license to access the following products:
 
- - Microsoft SharePoint Online
+ - SharePoint in Microsoft 365
  - Microsoft Teams
  - Microsoft Word
 
