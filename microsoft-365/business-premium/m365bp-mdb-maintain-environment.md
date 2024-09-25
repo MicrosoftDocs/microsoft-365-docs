@@ -8,7 +8,7 @@ manager: deniseb
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business-security
-ms.date: 07/23/2024
+ms.date: 08/29/2024
 ms.localizationpriority: medium
 ms.collection:
 - M365-Campaigns
@@ -143,7 +143,7 @@ The following table summarizes remediation actions that are available for device
 
 ## General admin tasks
 
-Maintaining your environment includes managing user accounts, managing devices, and keeping things up to date and working correctly. Admin tasks are typically performed by global admins and tenant admins. [Learn more about admin roles](../admin/add-users/about-admin-roles.md).
+Maintaining your environment includes managing user accounts, managing devices, and keeping things up to date and working correctly. Admin tasks are typically performed by global administrators and tenant administrators. [Learn more about admin roles](../admin/add-users/about-admin-roles.md).
 
 > [!IMPORTANT]
 > Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.

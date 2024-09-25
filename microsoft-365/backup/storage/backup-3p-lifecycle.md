@@ -11,7 +11,6 @@ ms.service: microsoft-365-backup
 ms.custom: backup
 search.appverid:
 ms.collection:
-    - essentials-overview
 ms.localizationpriority:  medium
 description: Application lifecycle for Microsoft 365 Backup Storage.
 ---

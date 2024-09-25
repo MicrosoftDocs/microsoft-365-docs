@@ -75,13 +75,7 @@ Your company might need multiple domain names for different purposes. For exampl
 
 Follow these steps to add, set up, or continue setting up a domain. 
 
-::: moniker range="o365-worldwide"
-
-
-
-1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
-
-::: moniker-end
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
     
 2. Go to the **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
 
@@ -168,26 +162,26 @@ To add an onmicrosoft.com domain:
 
 1. In the Microsoft 365 admin center, select **Settings**, and then select <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
 
-2. Select an existing *.onmicrosoft.com* domain.
+1. Select an existing *.onmicrosoft.com* domain.
 
     ![Domains page.](../../media/onmicrosoft-domains.png)
-  
-
-3. On the **Overview** tab, select **Add onmicrosoft.com domain**.
+   
+   
+1. On the **Overview** tab, select **Add onmicrosoft.com domain**.
 
     ![Screenshot of domain properties.](../../media/add-onmicrosoft.comdomain.png)
-
-4. On the **Add onmicrosoft domain** page, in the **Domain name** box, enter the name for your new onmicrosoft.com domain. 
+   
+1. On the **Add onmicrosoft domain** page, in the **Domain name** box, enter the name for your new onmicrosoft.com domain. 
 
     ![Screenshot of Add onmicrosoft domain.](../../media/add-an-onmicrosoftcom-domain-page.png)
-
+   
     > [!NOTE]
     > Make sure to verify the spelling and accuracy of the domain name you entered. You are limited to five onmicrosoft.com domains, and currently they cannot be deleted once they are created.     
 
-5. Select **Add domain**. When successfully added, you'll see a message stating this.
-    
-    ![Screenshot of domain added successfully.](../../media/domain-added.png)
+1. Select **Add domain**. When successfully added, you'll see a message stating this.
 
+    ![Screenshot of domain added successfully.](../../media/domain-added.png)
+   
 You can set any domain you own as your default domain.
 
 For more information on how to add an onmicrosoft.com domain, see [Add or replace your onmicrosoft.com domain](add-or-replace-your-onmicrosoftcom-domain.md).

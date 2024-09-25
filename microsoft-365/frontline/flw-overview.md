@@ -7,7 +7,7 @@ ms.author: v-chinlana
 manager: jtremper
 ms.reviewer: arnavgupta
 audience: admin
-ms.topic: overview
+ms.topic: solution-overview
 ms.service: microsoft-365-frontline
 ms.localizationpriority: high
 ms.collection: 

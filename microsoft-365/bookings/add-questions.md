@@ -10,7 +10,6 @@ ms.service: bookings
 ms.collection: 
 - Tier1
 - scotvorg
-- essentials-manage
 ms.localizationpriority: medium
 description: "If you need to ask customers questions when they book an appointment with you online, you can add custom questions and required questions to the booking page."
 ---

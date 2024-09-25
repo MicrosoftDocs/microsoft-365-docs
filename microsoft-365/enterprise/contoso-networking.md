@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: kvice
 manager: scotv
-ms.date: 07/29/2024
+ms.date: 09/06/2024
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -122,6 +122,6 @@ Learn how Contoso is [leveraging its on-premises Active Directory Domain Service
 
 [Networking roadmap for Microsoft 365](networking-roadmap-microsoft-365.md)
 
-[Microsoft 365 for enterprise overview](microsoft-365-overview.md)
+[Microsoft 365 network connectivity principles](microsoft-365-network-connectivity-principles.md)
 
-[Test lab guides](m365-enterprise-test-lab-guides.md)
+[Microsoft 365 for enterprise overview](microsoft-365-overview.md)

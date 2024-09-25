@@ -11,7 +11,6 @@ ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
-- essentials-manage
 description: "Set buffer time before or after an appointment in Microsoft Bookings to allow time for cleaning up or resetting equipment."
 ---
 

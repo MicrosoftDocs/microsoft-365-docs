@@ -11,7 +11,6 @@ ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
-- essentials-manage
 description: "Use Power Automate Bookings Connectors to create custom workflows with appointment triggers."
 ---
 

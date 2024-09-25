@@ -25,7 +25,7 @@ ms.custom:
   - m365solution-removeemployee
   - admindeeplinkEXCHANGE
   - has-azure-ad-ps-ref, azure-ad-ref-level-one-done
-description: "Global administrators can block a former employee from logging in and block their access to Microsoft 365 services."
+description: "Block a former employee from logging in and block their access to Microsoft 365 services."
 ---
 
 # Step 1 - Prevent a former employee from logging in and block access to Microsoft 365 services
