@@ -97,7 +97,7 @@ The people picker experience shows all users regardless of their _Geography_ loc
 
 Microsoft Teams is a Multi-Geo service. OneDrive files and recently viewed files are shown regardless of the user's _Geography_ location. @ mentions work with users from all _Geography_ locations.
 
-## Microsoft 365 Person experience in a multi-geo environment 
+## Microsoft 365 Person experience
 
 The **Microsoft 365 Person** encompasses the complete set of properties, attributes and associated people contacts that are representative of a user in the Microsoft 365 tenant. The Microsoft 365 Person dataset is mastered and stored in the Primary Data Location of the user.
 
