@@ -120,8 +120,8 @@ Microsoft 365 Copilot users can manage web grounding in work chat by following t
 
 1. Select the plugin menu at the bottom right of the chat input box in Microsoft 365 Copilot when using work chat.
 
-:::image type="content" source="media/copilot-prompt-box.png" alt-text="Image showing a cursor pointing to the plugin menu in the chat input box in Microsoft 365 Copilot.":::
+   :::image type="content" source="media/copilot-prompt-box.png" alt-text="Image showing a cursor pointing to the plugin menu in the chat input box in Microsoft 365 Copilot.":::
 
 2. Disable the web content plugin.
 
-:::image type="content" source="media/copilot-web-toggle.png" alt-text="Image showing a cursor pointing to the web content plugin toggle enabled.":::
+   :::image type="content" source="media/copilot-web-toggle.png" alt-text="Image showing a cursor pointing to the web content plugin toggle enabled.":::
