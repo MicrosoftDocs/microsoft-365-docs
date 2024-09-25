@@ -34,7 +34,7 @@ Streamline and simplify communications for your frontline. After you map your at
 
 ## Prerequisites
 
-- To use [targeted announcements in Viva Connections](#targeted-announcements-in-viva-connections), your frontline teams must be created through the [deploy frontline dynamic teams](deploy-dynamic-teams-at-scale.md) experience in the Teams admin center.
+- To use [targeted announcements in Viva Connections](#targeted-announcements-in-viva-connections), your frontline teams must be created through the [deploy frontline dynamic teams](deploy-dynamic-teams-at-scale.md) experience and you must define a [frontline operational hierarchy](deploy-frontline-operational-hierarchy.md) in the Teams admin center.
 
 - To use [automatic tags](#automatic-tags), tags must be turned on for your organization. In the Teams admin center, go to **Teams** > **Teams settings**. Under **Tagging**, check that the **Who can manage tags** setting is set to an option other than **Not enabled**. [Learn more about how to turn on tags for your organization](/microsoftteams/manage-tags).
 
