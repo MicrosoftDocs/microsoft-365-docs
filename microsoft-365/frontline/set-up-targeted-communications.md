@@ -90,8 +90,17 @@ To allow frontline teams to use automatic tags in Teams, team owners must select
 
 ## Targeted announcements in Viva Connections
 
+Announcements allow you to create and share targeted, time-sensitive messages in the Viva Connections app.
+
+- On Teams mobile, employees get a notification on the lock screen of their device alerting them of a new announcement.
+- In the Viva Connections mobile experience, the announcement appears at the top of the dashboard.
+
+Frontline managers can target announcements to specific groups of workers based on their location, department, and job title. When drafting an announcement, they can filter the audience by choosing location, department, and job title properties, which are created from your mapped attribute values.
+
+To learn more, see [Use announcements in Viva Connections](/viva/connections/announcements-viva-connections).
 
 ## Related articles
 
 - [Deploy frontline dynamic teams at scale](deploy-dynamic-teams-at-scale.md)
 - [Manage tags in Teams](/microsoftteams/manage-tags)
+- [Use announcements in Viva Connections](/viva/connections/announcements-viva-connections)
