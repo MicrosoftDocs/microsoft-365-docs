@@ -48,8 +48,8 @@ Before creating a workspace for SharePoint Agreements AI, you need to ensure:
 
 - Download and install the latest [SharePoint Online Management Shell](https://www.microsoft.com/download/details.aspx?id=35588).
 
-   > [!NOTE]
-   > You must be a SharePoint Administrator or Global Administrator to create sites through the SharePoint Online Management Shell.
+> [!NOTE]
+> You must be a SharePoint Administrator or Global Administrator to create sites through the SharePoint Online Management Shell.
 
 ### Create a workspace
 
@@ -58,22 +58,25 @@ Before creating a workspace for SharePoint Agreements AI, you need to ensure:
 2. Connect to your tenant by running the following command:
 
    ```
-   Connect-SPOService -Url "https://\<tenantName>-admin.sharepoint.com"
+   Connect-SPOService -Url "https://<tenantName>-admin.sharepoint.com"
    ```
 
    Where:
 
    - \<tenantName> is the name of your SharePoint tenant. <br><br>
 
-   Example: ```Connect-SPOService -Url "https://contosoelectronics-admin.sharepoint.com"```
+   Example:
+   ```
+   Connect-SPOService -Url "https://contosoelectronics-admin.sharepoint.com"
+   ```
 
-   > [!NOTE]
-   > The Connect-SPOService might require the use of modern authentication to connect. For information about how to add modern authentication flow to your SPO-Connect cmdlet, see the [Connect-SPOService documentation](/powershell/module/sharepoint-online/connect-sposervice).
+> [!NOTE]
+> The Connect-SPOService might require the use of modern authentication to connect. For information about how to add modern authentication flow to your SPO-Connect cmdlet, see the [Connect-SPOService documentation](/powershell/module/sharepoint-online/connect-sposervice).
 
 4. Run the following command to create a new SharePoint site and set it as an Agreements workspace.
 
     ```
-   New-SPOSite -Url "\<URL>" -Owner "\<user>" -StorageQuota 1000 -Title "<Workspace Name>" -EnableAgreementsSolution -Template "STS#3"
+   New-SPOSite -Url "<URL>" -Owner "<user>" -StorageQuota 1000 -Title "<Workspace Name>" -EnableAgreementsSolution -Template "STS#3"
     ```
 
     Where:
@@ -86,16 +89,14 @@ Before creating a workspace for SharePoint Agreements AI, you need to ensure:
 
 4. Run the following set of commands on the newly created SharePoint site. These steps enable the approval workflow on your site.
 
-   ```
-   $AgreementsSiteUrl = "\<URL>"
-   ```
+   Remember to replace \<URL> with the URL of the newly created SharePoint site in the first step.
 
-   Remember to replace \<URL> with the URL of the newly created SharePoint site.
-
-   ```$script = '{"$schema":"https://developer.microsoft.com/json-schemas/sp/site-design-script-actions.schema.json","actions":[{"verb":"createSPList","listName":"Modern Template Library","templateType":101,"subactions":[{"verb":"enableApprovals"}]},{"verb":"createSPList","listName":"Section Library","templateType":101,"subactions":[{"verb":"enableApprovals"}]}]}
+   ```
+   $AgreementsSiteUrl = "<URL>"
+   $script = '{"$schema":"https://developer.microsoft.com/json-schemas/sp/site-design-script-actions.schema.json","actions":[{"verb":"createSPList","listName":"Modern Template Library","templateType":101,"subactions":[{"verb":"enableApprovals"}]},{"verb":"createSPList","listName":"Section Library","templateType":101,"subactions":[{"verb":"enableApprovals"}]}]}
    $SiteScriptResult = Add-SPOSiteScript -Title 'Enable Approvals for Template and Sections Library' -Content $script
    $SiteDesignResult = Add-SPOSiteDesign -Title 'Enable Approvals for Template and Sections Library' -WebTemplate STS -SiteScripts $SiteScriptResult.Id
-   Invoke-SPOSiteDesign -Identity $SiteDesignResult.Id -WebUrl $AgreementsSiteUrl```
+   ```
 
 ## Deploy the Agreements app to users in Microsoft Teams
 
