@@ -55,7 +55,7 @@ By default, document translation is turned on for libraries in all SharePoint si
 
     c. By default, document translation for OneDrive is turned on. If you want to turn it off, in the **OneDrive** section, select **Edit**. On the **Where can document translation be used?** panel, in the **OneDrive** section, clear the **Available in OneDrive** checkbox.
 
-       ![Screenshot showing the Where can document translation be used? panel, and the  Available in OneDrive checkbox selected.](../media/content-understanding/translation-onedrive-selected.png)
+    ![Screenshot showing the Where can document translation be used? panel, and the Available in OneDrive checkbox selected.](../media/content-understanding/translation-onedrive-selected.png)
 
     d. Select **Save**.
 
