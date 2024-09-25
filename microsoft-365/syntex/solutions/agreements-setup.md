@@ -44,12 +44,12 @@ Before creating a workspace for SharePoint Agreements AI, you need to ensure:
 
    [!INCLUDE [global-administrator-note](../../includes/global-administrator-note.md)]
 
-- The [SharePoint Content Solution - Agreements Trial license](agreements-license-requirements.md#assign-license-to-a-user) is assigned to users in your organization.
+- The [SharePoint Content Solution - Agreements Trial license](agreements-license-requirements.md#assign-the-license-to-users) is assigned to users in your organization.
 
 - Download and install the latest [SharePoint Online Management Shell](https://www.microsoft.com/download/details.aspx?id=35588).
 
-> [!NOTE]
-> You must be a SharePoint Administrator or Global Administrator to create sites through the SharePoint Online Management Shell.
+   > [!NOTE]
+   > You must be a SharePoint Administrator or Global Administrator to create sites through the SharePoint Online Management Shell.
 
 ### Create a workspace
 
@@ -65,13 +65,10 @@ Before creating a workspace for SharePoint Agreements AI, you need to ensure:
 
    - \<tenantName> is the name of your SharePoint tenant. <br><br>
 
-   Example:
-   ```
-   Connect-SPOService -Url "https://contosoelectronics-admin.sharepoint.com"
-   ```
+   Example: ```Connect-SPOService -Url "https://contosoelectronics-admin.sharepoint.com"```
 
-> [!NOTE]
-> The Connect-SPOService might require the use of modern authentication to connect. For information about how to add modern authentication flow to your SPO-Connect cmdlet, see the [Connect-SPOService documentation](/powershell/module/sharepoint-online/connect-sposervice).
+   > [!NOTE]
+   > The Connect-SPOService might require the use of modern authentication to connect. For information about how to add modern authentication flow to your SPO-Connect cmdlet, see the [Connect-SPOService documentation](/powershell/module/sharepoint-online/connect-sposervice).
 
 4. Run the following command to create a new SharePoint site and set it as an Agreements workspace.
 
