@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 09/16/2024
+ms.date: 09/25/2024
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-copilot
@@ -23,7 +23,7 @@ description: "Learn how to manage Microsoft 365 Copilot and Microsoft 365 access
 
 # Data, privacy, and security for web queries in Microsoft 365 Copilot and Microsoft Copilot
 
-Microsoft 365 Copilot chat and [Microsoft Copilot](/copilot/overview) chat have an optional feature that allows Copilot to reference web content when responding to user prompts. Allowing Microsoft 365 Copilot and Microsoft Copilot to reference web content improves the quality of Copilot responses by grounding them in the latest information from the web (referred to as “web grounding”).
+Microsoft 365 Copilot chat and [Microsoft Copilot](/copilot/overview) chat have an optional feature that allows Copilot to reference web content when responding to user prompts. Allowing Microsoft 365 Copilot and Microsoft Copilot to reference web content improves the quality of Copilot responses by grounding them in the latest information from the web (referred to as "web grounding").
 
 ## Web grounding
 
@@ -48,6 +48,10 @@ The following information isn't included in the generated query sent to the Bing
 - Entire web pages or PDFs summarized by Copilot in Microsoft Edge (only for Microsoft Copilot)
 
 - Any identifying information based on the user's Microsoft Entra ID (for example, username, domain, or tenant ID)
+
+> [!NOTE]
+> We’re making some improvements to web search query transparency in the near future. For more information, see
+[Introducing web search query transparency for Microsoft 365 Copilot and Microsoft Copilot](https://techcommunity.microsoft.com/t5/microsoft-365-copilot/introducing-web-search-query-transparency-for-microsoft-365/ba-p/4253080).
 
 The user's prompts and Copilot's responses are stored within Microsoft 365 and never leave the service boundary for both Microsoft 365 Copilot and Microsoft Copilot.
 
