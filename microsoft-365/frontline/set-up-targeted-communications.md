@@ -24,7 +24,7 @@ ms.date: 09/13/2024
 
 ## Overview
 
-Setting up targeted communications in Microsoft Teams enables you to deliver personalized communications experiences, such as [automatic tags](#automatic-tags), to your frontline teams.
+Setting up targeted communications in Microsoft Teams enables you to deliver personalized communications experiences, such as [automatic tags](#automatic-tags) and [targeted announcements in Viva Connections](#targeted-announcments-in-viva-connections), to your frontline teams.
 
 To set up targeted communications, you identify and map your frontline attributes by choosing one Microsoft Entra attribute each for **Department** and **Job title** that represents the departments and job titles in your organization. The mapped attribute values, which are pulled from user profile data stored in Microsoft Entra ID, are used to identify, and target communications to specific groups of people based on their department or job title.
 
@@ -34,7 +34,9 @@ Streamline and simplify communications for your frontline. After you map your at
 
 ## Prerequisites
 
-To use [automatic tags](#automatic-tags), tags must be turned on for your organization. In the Teams admin center, go to **Teams** > **Teams settings**. Under **Tagging**, check that the **Who can manage tags** setting is set to an option other than **Not enabled**. [Learn more about how to turn on tags for your organization](/microsoftteams/manage-tags).
+- To use [targeted announcements in Viva Connections](#targeted-announcements-in-viva-connections), your frontline teams must be created through the [deploy frontline dynamic teams](deploy-dynamic-teams-at-scale.md) experience in the Teams admin center.
+
+- To use [automatic tags](#automatic-tags), tags must be turned on for your organization. In the Teams admin center, go to **Teams** > **Teams settings**. Under **Tagging**, check that the **Who can manage tags** setting is set to an option other than **Not enabled**. [Learn more about how to turn on tags for your organization](/microsoftteams/manage-tags).
 
 ## Set up targeted communications
 
@@ -85,6 +87,9 @@ To allow frontline teams to use automatic tags in Teams, team owners must select
 :::image type="content" source="media/targeted-comms-automatic-tags-setting.png" alt-text="Screenshot of the option in team settings to @mention groups based on job title or department" lightbox="media/targeted-comms-automatic-tags-setting.png":::
 
 [Learn more about using tags in Teams](https://support.microsoft.com/office/using-tags-in-microsoft-teams-667bd56f-32b8-4118-9a0b-56807c96d91e).
+
+## Targeted announcements in Viva Connections
+
 
 ## Related articles
 
