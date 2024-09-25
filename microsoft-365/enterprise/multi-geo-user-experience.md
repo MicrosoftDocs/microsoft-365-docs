@@ -103,7 +103,7 @@ The **Microsoft 365 Person** encompasses the complete set of properties, attribu
 
 There are two constituents of the Microsoft 365 Person data:
 
-- Microsoft 365 Profile ([profile resource type](https://learn.microsoft.com/graph/api/resources/profile?view=graph-rest-beta&preserve-view=true)), which constitutes the information that can be viewed by other users within the tenant about the Microsoft 365 person. This includes the user's Microsoft Entra ID details along with other information like position and photo (https://aka.ms/profileimage). The fields and attributes that are exposed can be controlled by the tenant admin (/graph/add-properties-profilecard).
+- Microsoft 365 Profile ([profile resource type](https://learn.microsoft.com/graph/api/resources/profile?view=graph-rest-beta&preserve-view=true)), which constitutes the information that can be viewed by other users within the tenant about the Microsoft 365 person. This includes the user's Microsoft Entra ID details along with other information like position and photo ([Get profilePhoto](https://aka.ms/profileimage)). The fields and attributes that are exposed can be controlled by the tenant admin (./graph/add-properties-profilecard).
 
 - My Microsoft 365 People dataset ([contact resource type](https://learn.microsoft.com/graph/api/resources/contact?view=graph-rest-1.0&preserve-view=true)), which represents the list of the user's Microsoft 365 contacts along with the user’s version of their contacts' Microsoft 365 profile. This edited or unedited version of another user’s profile will always remain private in the current user’s mailbox and won't be replicated anywhere.
 
