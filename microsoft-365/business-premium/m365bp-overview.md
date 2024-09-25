@@ -7,9 +7,9 @@ author: chrisda
 manager: deniseb
 ms.reviewer: nehabha
 ms.audience: Admin
-ms.topic: overview
-ms.service: microsoft-365-business
-ms.date: 11/02/2023
+ms.topic: solution-overview
+ms.service: microsoft-365-business-security
+ms.date: 05/31/2024
 ms.localizationpriority: medium
 ms.collection:
 - M365-Campaigns
@@ -17,7 +17,7 @@ ms.collection:
 - m365solution-smb
 - highpri
 - m365-security
-- tier1
+- tier2
 - essentials-overview
 - essentials-get-started
 ms.custom:
@@ -35,7 +35,7 @@ Microsoft 365 Business Premium—with its world class [productivity and cybersec
 
 You are your organization's first and best defense against hackers and cyberattackers, including random individuals, organized crime, or highly sophisticated nation states. The task before you is this: let Microsoft 365 Business Premium help secure your organization's future! Approach this task by taking on the following six goals:
 
-:::image type="content" source="media/sixmissions.png" alt-text="Diagram listing your six goals.":::
+:::image type="content" source="media/sixmissions.png" alt-text="Diagram listing your six goals." lightbox="media/sixmissions.png":::
 
 |What to do|How to do it|
 |---|---|

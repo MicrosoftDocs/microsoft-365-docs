@@ -1,5 +1,5 @@
 ---
-title: "Additional network security requirements for Office 365 GCC High and DoD"
+title: "Additional network security requirements for Office 365 Government Community Cloud (GCC) High and DoD"
 ms.author: dzazzo
 author: dzazzo-msft
 manager: dzazzo
@@ -18,7 +18,7 @@ search.appverid:
 - OGD150
 - MOE150
 ms.assetid: 
-description: "Summary: Office 365 GCC High and DoD have additional network security requirements"
+description: "Summary: Office 365 GCC High and DoD have extra network security requirements."
 hideEdit: true
 ---
 
@@ -26,11 +26,11 @@ hideEdit: true
 
 *This article applies to Office 365 GCC High, Office 365 DOD, Microsoft 365 GCC High, and Microsoft 365 DOD.*
 
-Office 365 GCC High and DOD are secure cloud environments to meet the needs of the United States Government and its suppliers and contractors.  These cloud environments have additional network restrictions on which external endpoints the services are permitted to access.
+Office 365 GCC High and DOD are secure cloud environments to meet the needs of the United States Government and its suppliers and contractors. These cloud environments have extra network restrictions on which external endpoints the services are permitted to access.
 
-GCC High and DOD customers planning to use federated identities or hybrid coexistence may require Microsoft to permit inbound and/or outbound access to your existing on-premises deployments.  Examples of these activities include:
+GCC High and DOD customers planning to use federated identities or hybrid coexistence might require Microsoft to permit inbound and/or outbound access to your existing on-premises deployments. Examples of these activities include:
 
-* Use of federated identities (with Active Directory Federation Services or similar supported STS)
+* Use of federated identities (with Active Directory Federation Services or similar supported Security token service (STS))
 * Hybrid coexistence with an on-premises Exchange Server or Skype for Business deployment
 * Migration of existing user content from an on-premises system
 
@@ -48,10 +48,10 @@ Send an email to [Office 365 Government Allow-List Requests](mailto:o365gwlt@mic
 The body of your message should include the following data:
 
 * Your Microsoft Online Services tenant name (for example, contoso.onmicrosoft.com, fabrikam.onmicrosoft.us)
-* An email distribution list that Microsoft will communicate with for on-going communications related to network changes and/or follow up for invalid subnets
+* An email distribution list that Microsoft communicates with for on-going communications related to network changes and/or follow up for invalid subnets
 * Indicate whether you plan to use Microsoft Teams hybrid coexistence with your on-premises deployments
-* Federated identity system externally accessible URL (for example, sts.contoso.com) and IP address range in CIDR notation (for example,. 10.1.1.0/28)
-* On-Premises PKI Certificate Revocation List URL and IP address range in CIDR notation
+* Federated identity system externally accessible URL (for example, sts.contoso.com) and IP address range in CIDR (Classless Inter-Domain Routing) notation (for example, 10.1.1.0/28)
+* On-Premises public key infrastructure (PKI) Certificate Revocation List URL and IP address range in CIDR notation
 * Externally accessible URL and IP address range for Exchange Server on-premises deployment in CIDR notation
 * Externally accessible URL and IP address range for Skype for Business on-premises deployment in CIDR notation
 
@@ -62,5 +62,5 @@ For security and compliance reasons, keep in mind the following restrictions on 
 * Subnet ranges can’t be larger than /24
 * We **cannot** accommodate requests to allow access to commercial cloud services (commercial Office 365, Google G-Suite, Amazon Web Services, etc.)
 
-Once your request has been received and approved by Microsoft, there's a three-week SLA for implementation and can’t be expedited.  You'll receive an initial acknowledgment when we’ve received your request and a final acknowledgment once it has been completed.
+Once Microsoft receives and approves your request, there's a three-week service-level agreement (SLA) for implementation and can’t be expedited. You receive an initial acknowledgment when we receive your request and a final acknowledgment once it's complete.
 

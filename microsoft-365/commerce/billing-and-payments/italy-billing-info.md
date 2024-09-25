@@ -69,6 +69,16 @@ If a Codice Fiscale/Tax ID isn't provided, e-invoices aren't issued by SDI per I
 
 For details about making a payment, see [Payment information for Italy](/legal/pay/italy).
 
+## Tax FAQ
+
+###  Why is there a 22% tax rate on my invoice now from Microsoft Srl Italy compared to last month’s invoice from Microsoft Ireland?
+
+This is a result of the Billing entity change from Microsoft Ireland to Microsoft Srl. Prior to the change, purchases were considered cross-border and the presence of a VAT ID resulted in Reverse Charge (0% tax). With local invoicing, transactions are not cross-border and the tax rate of 22% applies.  Partners in Italy were invoiced from Microsoft Srl Italy on September 1, 2023. Customer Led and Field Led migrated to Microsoft Srl Italy on March 1, 2024.
+
+### My invoice does not reflect split payments. How do I correct this?
+
+If you are subject to split payments and the invoice issued by Microsoft Srl Italy is incorrectly issued without the split payment requirements, [contact support for assistance](/microsoft-365/admin/get-help-support).
+
 ## Related content
 
 [View your invoice in the Microsoft 365 admin center](view-your-bill-or-invoice.md) (article)\

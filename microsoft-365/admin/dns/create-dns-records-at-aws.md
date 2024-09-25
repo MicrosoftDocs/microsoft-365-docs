@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: nkagole
 author: nataliekagole
 manager: scotv
-ms.date: 02/18/2020
+ms.date: 08/12/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -46,27 +46,27 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 
 1. To get started, go to your domains page at AWS by using [this link](https://console.aws.amazon.com/route53/home). You'll be prompted to log in first.
 
-1. On the landing page, under **Domains**, select **Registered domains**.
+2. On the landing page, under **Domains**, select **Registered domains**.
 
-1. Under **Domain Name**, select the domain you want to set up in Microsoft 365.
+3. Under **Domain Name**, select the domain you want to set up in Microsoft 365.
 
     **Note**: If you haven't created a hosted zone for your domain, select **Create hosted zone** and complete the steps before moving to the next step.
 
-   :::image type="content" source="../../media/dns-aws/aws-domains-1.png" alt-text="Select the name of the domain you want to verify.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-1.png" alt-text="Screenshot of Registered Domains where you select the Domain Name for the domain verification TXT record.":::
 
-1. Select **Manage DNS**.
+4. Select **Hosted Zones** in the top left navigation panel.
 
    :::image type="content" source="../../media/dns-aws/aws-domains-2.png" alt-text="Select Manage DNS from the drop-down list.":::
 
-1. Under **Domain name**, select the domain name for the hosted zone version of the domain you want to verify.
+5. Under **Hosted zone name**, select the domain name for the hosted zone version of the domain you want to verify.
 
-   :::image type="content" source="../../media/dns-aws/aws-domains-3.png" alt-text="Select the name of the domain you want to verify.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-3.png" alt-text="Screenshot of Hosted zones where you select the Domain name for the domain verification TXT record.":::
 
-1. Select **Create record**.
+6. Select **Create record**.
 
-   :::image type="content" source="../../media/dns-aws/aws-domains-create-record.png" alt-text="Select Create record.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-create-record.png" alt-text="Screenshot of where you select Create record to add a domain verification TXT record.":::
 
-1. In the boxes for the new record, type or copy and paste the values from the following table.
+7. In the boxes for the new record, type or copy and paste the values from the following table.
 
     (Choose the **Type** and **Routing policy** values from the drop-down lists.)
 
@@ -77,13 +77,13 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
     |:-----|:-----|:-----|:-----|:-----|
     |(Leave this field empty.)|TXT - Used to verify email senders|MS=ms*XXXXXXXX* <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table in Microsoft 365. [How do I find this?](../get-help-with-domains/information-for-dns-records.md)|300|Simple|
 
-1. Select **Create records**.
+8. Select **Create records**.
 
-   :::image type="content" source="../../media/dns-aws/aws-domains-txt-create-records.png" alt-text="Select Create records.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-txt-create-records.png" alt-text="Screenshot of where you select Create records to add a domain verification TXT record.":::
 
    Wait a few minutes before you continue, so that the record you just created can update across the Internet.
 
-Now that you've added the record at your domain registrar's site, you'll go back to Microsoft and request a search for the record. When Microsoft finds the correct TXT record, your domain is verified.
+Now that you've added the record at your domain registrar's site, you'll go back to Microsoft and request a search for the record. When Microsoft finds the correct TXT record, your domain is **verified**.
 
 To verify the record in Microsoft 365:
 
@@ -91,7 +91,7 @@ To verify the record in Microsoft 365:
 
 1. On the Domains page, select the domain that you're verifying, and select **Start setup**.
 
-    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Select Start setup.":::
+    :::image type="content" source="../../media/dns-aws/aws-domains-start-setup.png"  alt-text="Select Start setup.":::
 
 1. Select **Continue**.
 
@@ -110,19 +110,19 @@ To verify the record in Microsoft 365:
 
     **Note**: If you haven't created a hosted zone for your domain, select **Create hosted zone** and complete the steps before moving to the next step.
 
-   :::image type="content" source="../../media/dns-aws/aws-domains-1.png" alt-text="Select the name of the domain.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-1.png" alt-text="Screenshot of Registered Domains where you select the Domain Name for the MX record.":::
 
-1. Select **Manage DNS**.
+1. Select **Hosted Zones** in the top left navigation panel.
 
    :::image type="content" source="../../media/dns-aws/aws-domains-2.png" alt-text="Select Manage DNS from the drop-down list.":::
 
-1. Under **Domain name**, select the domain name for the hosted zone version of the domain you want to verify.
+1. Under **Hosted zone name**, select the domain name for the hosted zone version of the domain you want to verify.
 
-   :::image type="content" source="../../media/dns-aws/aws-domains-3.png" alt-text="Select the name of the domain.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-3.png" alt-text="Select the domain name for the hosted zone version of the domain.":::
 
 1. Select **Create record**.
 
-   :::image type="content" source="../../media/dns-aws/aws-domains-create-record.png" alt-text="Select Create record.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-create-record.png" alt-text="Screenshot of where you select Create record to add an MX record.":::
 
 1. In the boxes for the new record, type or copy and paste the values from the following table.
 
@@ -137,7 +137,7 @@ To verify the record in Microsoft 365:
 
 1. Select **Create records**.
 
-   :::image type="content" source="../../media/dns-aws/aws-domains-mx-create-records.png" alt-text="Select Create records.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-mx-create-records.png" alt-text="Screenshot of where you select Create records to add an MX record":::
 
 1. If there are any other MX records, remove them by selecting the record, and then selecting **Delete**.
 
@@ -151,7 +151,7 @@ To verify the record in Microsoft 365:
 
     **Note**: If you haven't created a hosted zone for your domain, select **Create hosted zone** and complete the steps before moving to the next step.
 
-   :::image type="content" source="../../media/dns-aws/aws-domains-1.png" alt-text="Select the name of the domain.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-1.png" alt-text="Screenshot of Registered Domains where you select the Domain Name for the CNAME record.":::
 
 1. Select **Manage DNS**.
 
@@ -159,11 +159,11 @@ To verify the record in Microsoft 365:
 
 1. Under **Domain name**, select the domain name for the hosted zone version of the domain you want to verify.
 
-   :::image type="content" source="../../media/dns-aws/aws-domains-3.png" alt-text="Select the name of the domain.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-3.png" alt-text="Screenshot of Hosted zones where you select the Domain name for the MX record.":::
 
 1. Select **Create record**.
 
-   :::image type="content" source="../../media/dns-aws/aws-domains-create-record.png" alt-text="Select Create record.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-create-record.png" alt-text="Screenshot of where you select Create record to add a CNAME record":::
 
 1. In the boxes for the new record, type or copy and paste the values from the following table.
 
@@ -175,7 +175,7 @@ To verify the record in Microsoft 365:
 
 1. Select **Create records**.
 
-   :::image type="content" source="../../media/dns-aws/aws-domains-cname-create-records.png" alt-text="Select Create records.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-cname-create-records.png" alt-text="Screenshot of where you select Create records to add a CNAME record":::
 
 ## Add a TXT record for SPF to help prevent email spam
 
@@ -190,7 +190,7 @@ To verify the record in Microsoft 365:
 
     **Note**: If you haven't created a hosted zone for your domain, select **Create hosted zone** and complete the steps before moving to the next step.
 
-   :::image type="content" source="../../media/dns-aws/aws-domains-1.png" alt-text="Select the name of the domain.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-1.png" alt-text="Screenshot of Registered Domains where you select the Domain Name for the SPF TXT record.":::
 
 1. Select **Manage DNS**.
 
@@ -198,11 +198,11 @@ To verify the record in Microsoft 365:
 
 1. Under **Domain name**, select the domain name for the hosted zone version of the domain you want to verify.
 
-   :::image type="content" source="../../media/dns-aws/aws-domains-3.png" alt-text="Select the name of the domain.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-3.png" alt-text="Screenshot of Hosted zones where you select the Domain name for the SPF TXT record.":::
 
 1. Select **Create record**.
 
-   :::image type="content" source="../../media/dns-aws/aws-domains-create-record.png" alt-text="Select Create record.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-create-record.png" alt-text="Screenshot of where you select Create record to add an SPF TXT record.":::
 
 1. In the boxes for the new record, type or copy and paste the values from the following table.
 
@@ -214,7 +214,7 @@ To verify the record in Microsoft 365:
 
 1. Select **Create records**.
 
-   :::image type="content" source="../../media/dns-aws/aws-domains-txt-create-records.png" alt-text="Select Create records.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-txt-create-records.png" alt-text="Screenshot of where you select Create records to add an SPF TXT record.":::
 
 ## Advanced option: Skype for Business
 
@@ -230,7 +230,7 @@ Only select this option if your organization uses Skype for Business for online 
 
     **Note**: If you haven't created a hosted zone for your domain, select **Create hosted zone** and complete the steps before moving to the next step.
 
-   :::image type="content" source="../../media/dns-aws/aws-domains-1.png" alt-text="Select the name of the domain.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-1.png" alt-text="Screenshot of Registered Domains where you select the Domain Name for the SRV records for Skype for Business.":::
 
 1. Select **Manage DNS**.
 
@@ -238,11 +238,11 @@ Only select this option if your organization uses Skype for Business for online 
 
 1. Under **Domain name**, select the domain name for the hosted zone version of the domain you want to verify.
 
-   :::image type="content" source="../../media/dns-aws/aws-domains-3.png" alt-text="Select the name of the domain.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-3.png" alt-text="Screenshot of Hosted zones where you select the Domain name for the SRV records for Skype for Business.":::
 
 1. Select **Create record**.
 
-   :::image type="content" source="../../media/dns-aws/aws-domains-create-record.png" alt-text="Select Create record.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-create-record.png" alt-text="Screenshot of where you select Create record to add an SRV record.":::
 
 1. In the boxes for the new record, type or copy and paste the values from the following table.
 
@@ -255,7 +255,7 @@ Only select this option if your organization uses Skype for Business for online 
 
 1. To add the other SRV record, select **Add another record**, create a record using the values from the next row in the table, and then again select **Create records**.
 
-   :::image type="content" source="../../media/dns-aws/aws-domians-srv-create-records.png" alt-text="Select Create records.":::
+   :::image type="content" source="../../media/dns-aws/aws-domians-srv-create-records.png" alt-text="Screenshot of where you select Create records to add an SRV record.":::
 
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records](../get-help-with-domains/find-and-fix-issues.md).
@@ -270,19 +270,19 @@ Only select this option if your organization uses Skype for Business for online 
 
     **Note**: If you haven't created a hosted zone for your domain, select **Create hosted zone** and complete the steps before moving to the next step.
 
-   :::image type="content" source="../../media/dns-aws/aws-domains-1.png" alt-text="Select the name of the domain.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-1.png" alt-text="Screenshot of Registered Domains where you select the Domain Name for the CNAME records for Skype for Business.":::
 
 1. Select **Manage DNS**.
 
-   :::image type="content" source="../../media/dns-aws/aws-domains-2.png" alt-text="Select Manage DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-2.png" alt-text="Screenshot of Registered Domains where you select Manage DNS for the CNAME records for Skype for Business.":::
 
 1. Under **Domain name**, select the domain name for the hosted zone version of the domain you want to verify.
 
-   :::image type="content" source="../../media/dns-aws/aws-domains-3.png" alt-text="Select the name of the domain.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-3.png" alt-text="Screenshot of Hosted zones where you select the Domain name for the CNAME records for Skype for Business.":::
 
 1. Select **Create record**.
 
-   :::image type="content" source="../../media/dns-aws/aws-domains-create-record.png" alt-text="Select Create record.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-create-record.png" alt-text="Screenshot of where you select Create record to add CNAME records for Skype for Business.":::
 
 1. In the boxes for the new record, type or copy and paste the values from the following table.
 
@@ -297,7 +297,7 @@ Only select this option if your organization uses Skype for Business for online 
 
 1. Select **Create records**.
 
-   :::image type="content" source="../../media/dns-aws/aws-domains-cname-create-records.png" alt-text="Select Create records.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-cname-create-records.png" alt-text="Screenshot of where you select Create records to add CNAME records for Skype for Business.":::
 
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
@@ -316,7 +316,7 @@ This service helps you secure and remotely manage mobile devices that connect to
 
     **Note**: If you haven't created a hosted zone for your domain, select **Create hosted zone** and complete the steps before moving to the next step.
 
-   :::image type="content" source="../../media/dns-aws/aws-domains-1.png" alt-text="Select the name of the domain.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-1.png" alt-text="Screenshot of Registered Domains where you select the Domain Name for the  CNAME records for Mobile Device Management.":::
 
 1. Select **Manage DNS**.
 
@@ -324,11 +324,11 @@ This service helps you secure and remotely manage mobile devices that connect to
 
 1. Under **Domain name**, select the domain name for the hosted zone version of the domain you want to verify.
 
-   :::image type="content" source="../../media/dns-aws/aws-domains-3.png" alt-text="Select the name of the domain.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-3.png" alt-text="Screenshot of Hosted zones where you select the Domain name for the CNAME records for Mobile Device Management.":::
 
 1. Select **Create record**.
 
-   :::image type="content" source="../../media/dns-aws/aws-domains-create-record.png" alt-text="Select Create record.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-create-record.png" alt-text="Screenshot of where you select Create record to add CNAME records for Mobile Device Management.":::
 
 1. In the boxes for the new record, type or copy and paste the values from the following table.
 
@@ -343,7 +343,7 @@ This service helps you secure and remotely manage mobile devices that connect to
 
 1. Select **Create records**.
 
-   :::image type="content" source="../../media/dns-aws/aws-domains-cname-create-records.png" alt-text="Select Create records.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-cname-create-records.png" alt-text="Screenshot of where you select Create records to add CNAME records for Mobile Device Management.":::
 
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).

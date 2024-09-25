@@ -1,7 +1,7 @@
 ---
-ms.date: 08/23/2023
+ms.date: 01/01/2024
 title: Merge topics in Topics
-ms.author: ninay
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 audience: admin
@@ -10,8 +10,7 @@ ms.topic: article
 ms.collection: 
 - m365initiative-viva-topics
 - highpri
-ms.service: viva 
-ms.subservice: viva-topics 
+ms.service: viva-topics 
 search.appverid:
 - MET150   
 ms.localizationpriority:  medium

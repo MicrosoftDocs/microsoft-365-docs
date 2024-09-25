@@ -7,6 +7,7 @@ ms.date: 04/05/2024
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
+ms.subservice: network
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -25,20 +26,20 @@ The Microsoft 365 network connectivity test tool is located at <https://connecti
 > [!NOTE]
 > This document mentions the URL (<https://connectivity.office.com>) for the Global version of this tool. For other versions, please refer to the table below for the corresponding URLs.
 
-|Feature|Global service <https://connectivity.office.com>|US Government L4| US Government L5 (DOD) | China operated by 21Vianet <https://connectivity.sovcloud.cn>|
-|:--|:--|:--|:--|:--|
-|Anonymous test|✅|✖️|✖️|✅|
-|Print report | ✅|✖️|✖️|✅|
-|Login| ✅|✖️|✖️|✖️|
-|Save report |  ✅|✖️|✖️|✖️|
-|View report |  ✅|✖️|✖️|✖️|
-|Share report in tenant | ✅|✖️|✖️|✖️|
-|Share report to public |  ✅|✖️|✖️|✖️|
-|Network health status | ✅|✖️|✖️|✅|
-|Multi-languages support: English, Chinese Simplified, Chinese Traditional, Japanese| ✅|✖️|✖️|✅|
-|Testing from the command line|  ✅|✖️|✖️|✖️|
-|FAQ|  ✅|✖️|✖️|✅|
-|Community forum|  ✅|✖️|✖️|✅|
+|Feature|Global service <https://connectivity.office.com>|US Government (GCC)  <https://connectivity.office.com>| China operated by 21Vianet <https://connectivity.sovcloud.cn>|
+|:--|:--|:--|:--|
+|Anonymous test|✅|✅|✅|
+|Print report | ✅|✅|✅|
+|Login| ✅|✖️|✅|
+|Save report |  ✅|✖️|✅|
+|View report |  ✅|✖️|✅|
+|Share report in tenant | ✅|✖️|✅|
+|Share report to public |  ✅|✖️|✅|
+|Network health status | ✅|✅|✅|
+|Multi-languages support: English, Chinese Simplified, Chinese Traditional, Japanese| ✅|✅|✅|
+|Testing from the command line|  ✅|✖️|✅|
+|FAQ|  ✅|✅|✅|
+|Community forum|  ✅|✅|✅|
 
 > [!IMPORTANT]
 > It's important to sign in to your Microsoft 365 tenant as all test reports are shared with your administrator and uploaded to the tenant while you are signed in.
@@ -296,7 +297,7 @@ You can double select on the executable to start the testing and a command promp
 
 ### Launching from the Command Prompt
 
-In a CMD.EXE command prompt window, you can type the path and name of the executable to run it. The filename is Microsoft.Connectivity.Test.exe.
+In a CMD.EXE command prompt window, you can type the path and name of the executable to run it. The filename is MicrosoftConnectivityTest.exe.
 
 ### Launching from Windows Task Scheduler
 

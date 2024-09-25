@@ -7,6 +7,7 @@ ms.date: 03/15/2024
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 ms.collection:
 - scotvorg 
@@ -65,8 +66,6 @@ Install the [Teams PowerShell module](/microsoftteams/teams-powershell-install).
 For more information, see:
 
 - [Manage Skype for Business Online policies with PowerShell](manage-skype-for-business-online-policies-with-microsoft-365-powershell.md)
-
-- [Assign per-user Skype for Business Online policies with PowerShell](assign-per-user-skype-for-business-online-policies-with-microsoft-365-powershell.md)
 
 ## See also
 

@@ -1,18 +1,20 @@
 ---
-title: "Optimize page weight in SharePoint Online modern site pages"
+title: "Optimize page weight in SharePoint modern site pages"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 03/11/2020
+ms.date: 06/28/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 ms.collection:
 - scotvorg 
 - Ent_O365
 - Strat_O365_Enterprise
 - SPO_Content
+- must-keep
 f1.keywords:
 - CSH
 ms.custom: 
@@ -21,24 +23,24 @@ ms.custom:
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: Learn how to use the Page Diagnostics tool to optimize page weight in SharePoint Online modern site pages.
+description: Learn how to use the Page Diagnostics tool to optimize page weight in SharePoint modern site pages.
 ---
 
-# Optimize page weight in SharePoint Online modern site pages
+# Optimize page weight in SharePoint modern site pages
 
-SharePoint Online modern site pages contain serialized code that is required to render page content of the page, including images, text, objects in the content area underneath navigation/command bars and other HTML code that forms the framework of the page. Page weight is a measurement of this HTML code, and should be limited to ensure optimal page load times.
+SharePoint modern site pages contain serialized code that is required to render page content of the page, including images, text, objects in the content area underneath navigation/command bars and other HTML code that forms the framework of the page. Page weight is a measurement of this HTML code, and should be limited to ensure optimal page load times.
 
 This article will help you understand how to reduce page weight in your modern site pages.
 
 >[!NOTE]
->For more information about performance in SharePoint Online modern portals, see [Performance in the modern SharePoint experience](/sharepoint/modern-experience-performance).
+>For more information about performance in SharePoint modern portals, see [Performance in the modern SharePoint experience](/sharepoint/modern-experience-performance).
 
 ## Use the Page Diagnostics for SharePoint tool to analyze page weight
 
-The Page Diagnostics for SharePoint tool is a browser extension for the new Microsoft Edge (https://www.microsoft.com/edge) and Chrome browsers that analyzes both SharePoint Online modern portal and classic publishing site pages. The tool provides a report for each analyzed page showing how the page performs against a defined set of performance criteria. To install and learn about the Page Diagnostics for SharePoint tool, visit [Use the Page Diagnostics tool for SharePoint Online](page-diagnostics-for-spo.md).
+The Page Diagnostics for SharePoint tool is a browser extension for the new Microsoft Edge (https://www.microsoft.com/edge) and Chrome browsers that analyzes both SharePoint modern portal and classic publishing site pages. The tool provides a report for each analyzed page showing how the page performs against a defined set of performance criteria. To install and learn about the Page Diagnostics for SharePoint tool, visit [Use the Page Diagnostics tool for SharePoint](page-diagnostics-for-spo.md).
 
 >[!NOTE]
->The Page Diagnostics tool only works for SharePoint Online, and cannot be used on a SharePoint system page.
+>The Page Diagnostics tool only works for SharePoint in Microsoft 365, and cannot be used on a SharePoint system page.
 
 When you analyze a SharePoint site page with the Page Diagnostics for SharePoint tool, you can see information about page in the **Page weight under 500KB** result of the _Diagnostic tests_ pane. The result will appear in green if the page weight is under the baseline value, and red if the page weight exceeds the baseline value.
 
@@ -75,12 +77,10 @@ Before you make page revisions to remediate performance issues, make a note of t
 
 ## Related topics
 
-[Tune SharePoint Online performance](tune-sharepoint-online-performance.md)
-
-[Tune Office 365 performance](tune-microsoft-365-performance.md)
+[Tune SharePoint performance](tune-sharepoint-online-performance.md)
 
 [Performance in the modern SharePoint experience](/sharepoint/modern-experience-performance)
 
 [Content delivery networks](content-delivery-networks.md)
 
-[Use the Office 365 Content Delivery Network (CDN) with SharePoint Online](use-microsoft-365-cdn-with-spo.md)
+[Use the Office 365 Content Delivery Network (CDN) with SharePoint](use-microsoft-365-cdn-with-spo.md)

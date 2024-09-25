@@ -73,7 +73,7 @@ After your school's eligibility is verified, you can buy subscriptions at academ
 
 1. Go to the Microsoft 365 admin center.
     - If you're using the **Simplified view**, select the **Subscriptions** tab, then select **Add more products.**
-    - If you're using the **Dashboard view**, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
+    - If you're using the **Dashboard view**, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page. For some customers, the page is named **Marketplace**.
 2. To view academic offers, select the **Education** tab.
 
     > [!NOTE]
@@ -95,7 +95,7 @@ You can find the expiration date for your free trial subscription on the **Your 
 
 ## My school isn't eligible. What do I do now?
 
-If your school doesn't qualify as a Microsoft Qualified Academic Institution, you can still buy commercial offers in the admin center on the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page. If your organization is a nonprofit group, your group might be eligible for subscriptions for nonprofits. To learn more, see [Discounts and donations for nonprofits](https://www.microsoft.com/nonprofits/eligibility).
+If your school doesn't qualify as a Microsoft Qualified Academic Institution, you can still buy commercial offers in the admin center on the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.  For some customers, the page is named **Marketplace**. If your organization is a nonprofit group, your group might be eligible for subscriptions for nonprofits. To learn more, see [Discounts and donations for nonprofits](https://www.microsoft.com/nonprofits/eligibility).
 
 If you have questions about your school's academic eligibility decision, [contact support](../../admin/get-help-support.md).
 

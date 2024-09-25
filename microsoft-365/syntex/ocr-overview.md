@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: kkameth
-ms.date: 10/16/2023
+ms.date: 08/13/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -21,7 +21,7 @@ description: Learn about optical character recognition in Microsoft Syntex.
 # Overview of optical character recognition in Microsoft Syntex
 
 > [!NOTE]
-> Through June 2024, you can try out optical character recognition and other selected Syntex services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out Microsoft Syntex and explore its services](promo-syntex.md).
+> Through June 2025, you can try out optical character recognition and other selected Syntex services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out Microsoft Syntex and explore its services](promo-syntex.md).
 
 The optical character recognition (OCR) service in Microsoft Syntex lets you extract printed or handwritten text from images and documents. Examples of images include posters, drawings, and product labels. Examples of documents include articles, reports, forms, and invoices.
 

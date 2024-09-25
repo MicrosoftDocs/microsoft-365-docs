@@ -7,6 +7,7 @@ ms.date: 04/05/2024
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
+ms.subservice: network
 ms.localizationpriority: medium
 ms.reviewer: pandrew1
 search.appverid:
@@ -33,7 +34,7 @@ The Microsoft 365 Admin Center now includes aggregated network connectivity metr
 > ![Network performance page.](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
 
 > [!NOTE]
-> Network connectivity in the Admin Center supports tenants in WW Commercial but not GCC Moderate, GCC High, DoD or China.
+> Network connectivity in the Admin Center supports tenants in WW Commercial and China (Operated by 21Vianet, released on 2024-09-23), but not GCC Moderate, GCC High, or DoD.
 
 When you first navigate to the network performance page, you have to configure your locations in order to see the map of global network performance, a network assessment scoped to the entire tenant, percentage of your users working remotely vs onsite, and a list of current issues to take action on and/or to research further. From the overview pane, you can drill down to view specific network performance metrics and issues by location. For more information, see [Network performance overview in the Microsoft 365 Admin Center](#network-connectivity-overview-in-the-microsoft-365-admin-center).
 
@@ -241,7 +242,7 @@ If you've uploaded building data to your Call Quality Dashboard, you can add tho
 
 ### What role is needed to access Network Connectivity in Microsoft 365 Admin Center?
 
-You'll need the Network Administrator or Global Administrator role.
+You'll need the Network Administrator role.
 
 ### What is a Microsoft 365 service front door?
 

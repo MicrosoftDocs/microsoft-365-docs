@@ -1,10 +1,10 @@
 ---
-title: Create a rule to move or copy a file from one document library to another in Microsoft Syntex
+title: Create a rule to move or copy a file from one document library to another
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 06/10/2023
+ms.date: 04/12/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -16,7 +16,7 @@ ms.localizationpriority:  medium
 description: Learn how to create a rule to move or copy a file to another SharePoint document library in Microsoft Syntex.
 ---
 
-# Create a rule to move or copy a file from one document library to another in Microsoft Syntex
+# Create a rule to move or copy a file from one document library to another
 
 Document libraries can have multiple move and copy rules to support moving and copying files to different destination libraries based on metadata criteria. 
 

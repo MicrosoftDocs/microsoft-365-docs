@@ -7,15 +7,15 @@ author: siosulli
 manager: deniseb
 audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-business
-ms.date: 07/19/2023
+ms.service: microsoft-365-business-security
+ms.date: 05/31/2024
 ms.localizationpriority: medium
 ms.reviewer: nehabha
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security
-- tier1
+- tier2
 ---
 
 # Device groups and categories in Microsoft 365 Business Premium
@@ -79,7 +79,7 @@ Use the device category name when you create the Microsoft Entra ID security gro
 
 ## Create dynamic device groups in Microsoft Entra ID
 
-You can also go to the Microsoft Entra ID portal ([https://entra.microsoft.com](https://entra.microsoft.com)) from the Microsoft 365 admin center. In the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com/)), choose **All admin centers**, and then choose **Microsoft Entra**.
+You can also go to the Microsoft Entra ID portal (<https://entra.microsoft.com>) from the Microsoft 365 admin center. In the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com/)), choose **All admin centers**, and then choose **Microsoft Entra**.
 
 In the Microsoft Entra ID portal, you can create dynamic groups based on the device category and device category name. Use dynamic group rules to automatically add and remove devices. If a device's attributes change, the system looks at your dynamic group rules for the directory to see if the device meets the rule requirements (is added) or no longer meets the rules requirements (is removed).
 

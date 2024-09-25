@@ -3,7 +3,7 @@ title: "Microsoft 365 admin center email apps usage reports"
 ms.author: efrene
 author: efrene
 manager: scotv
-ms.date: 02/18/2020
+ms.date: 06/24/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -26,13 +26,13 @@ description: "Learn how to get an email apps usage report to find out how many e
 
 # Microsoft 365 Reports in the admin center - Email apps usage
 
-The Microsoft 365 Reports dashboard shows you the activity overview across the products in your organization. It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md). In the email apps usage report, you can see how many email apps are connecting to Exchange Online. You can also see the version information of Outlook apps that users are using, which will allow you to follow up with those who are using unsupported versions to install supported versions of Outlook.
+The Microsoft 365 Reports dashboard shows you the activity overview across the products in your organization. It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md). In the email apps usage report, you can see how many email apps are connecting to Exchange Online. You can also see the version information of Outlook apps that users are using. This allows you to follow up with those who are using unsupported versions to install supported versions of Outlook.
   
 ## How to get to the email apps report
 
 1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page.
-2. Select **View More** under **Email activity**. 
-3. From the **Email activity** drop-down list, select **Exchange** \> **Email apps usage**.
+2. Select **View More** under **Email activity**.
+3. Select **Email app usage** tab.
   
 ## Interpret the email apps report
 
@@ -40,7 +40,7 @@ You can get a view into email apps activity by looking at the **Users** and **Cl
   
 ![Email clients used.](../../media/email-apps-report.png)
 
-The **Email apps usage** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table will show data for up to 28 days from the current date (not the date the report was generated). The data in each report usually covers up to the last 24 to 48 hours.
+The **Email apps usage** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table shows data for up to 28 days from the current date (not the date the report was generated). The data in each report usually covers up to the last 24 to 48 hours.
 
 The **Users** view shows you the number of unique users that connected to Exchange Online using any email app. 
 
@@ -52,9 +52,9 @@ On the Users chart, the Y axis is the total count of unique users that connected
 
 On the Apps chart, the Y axis is the total count of unique users who used a specific app during the reporting period. And the X axis is the list of apps in your organization. 
 
-On the Versions chart, the Y axis is the total count of unique users using a specific version of Outlook desktop. If the report can't resolve the version number of Outlook, the quantity will show as **Undetermined**. And the X axis is the list of apps in your organization.
+On the Versions chart, the Y axis is the total count of unique users using a specific version of Outlook desktop. If the report can't resolve the version number of Outlook, the quantity shows as **Undetermined**. And the X axis is the list of apps in your organization.
 
-You can filter the series you see on the chart by selecting an item in the legend. You might not see all the items in the list below in the columns until you add them.
+You can filter the series you see on the chart by selecting an item in the legend. You might not see all the items in the list in the columns until you add them.
  
 |Item|Description|
 |:-----|:-----|
@@ -62,7 +62,7 @@ You can filter the series you see on the chart by selecting an item in the legen
 |Last activity date | The latest date the user read or sent an email message. |
 |Mac mail, Mac Outlook, Outlook, Outlook mobile, and Outlook on the web | Examples of email apps you may have in your organization. |
    
-If your organization's policies prevents you from viewing reports where user information is identifiable, you can change the privacy setting for all these reports. Check out the **How do I hide user level details?** section in the [Activity Reports in the Microsoft 365 admin center](activity-reports.md). 
+If your organization's policies prevent you from viewing reports where user information is identifiable, you can change the privacy setting for all these reports. Check out the **How do I hide user level details?** section in the [Activity Reports in the Microsoft 365 admin center](activity-reports.md). 
 
 Select **Choose columns** to add or remove columns from the report.  
 

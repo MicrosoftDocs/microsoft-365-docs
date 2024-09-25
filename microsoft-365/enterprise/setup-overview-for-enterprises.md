@@ -3,10 +3,11 @@ title: "Deploy Microsoft 365 Enterprise for your organization"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 11/19/2019
+ms.date: 09/05/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -15,6 +16,8 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - M365-subscription-management
+- essentials-get-started
+- must-keep
 f1.keywords:
 - CSH
 ms.custom: 
@@ -32,7 +35,7 @@ This article describes two deployment options, whether you want help or are doin
 
 ## Guided Microsoft 365 Enterprise setup process with FastTrack
 
-**[FastTrack for Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365)** is the best method for deploying Microsoft 365. FastTrack guides you through the most common deployment configurations and can answer questions along the way. 
+**[FastTrack for Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365)** is the best method for deploying Microsoft 365. FastTrack guides you through the most common deployment configurations and can answer questions along the way.
 
 To access a series of setup guides, sign in to your Microsoft 365 subscription, and then go to [Setup guidance](https://aka.ms/o365fasttrack).
 
@@ -74,4 +77,4 @@ To deploy Microsoft 365 Enterprise on your own after completing your planning, t
    Includes short videos that help your users get the most out of Microsoft 365 quickly.
 
 > [!NOTE]
-> These steps are also for businesses and [nonprofits](https://go.microsoft.com/fwlink/?LinkId=627221) that want to start with a custom deployment of Microsoft 365 Enterprise. 
+> These steps are also for businesses and [nonprofits](https://go.microsoft.com/fwlink/?LinkId=627221) that want to start with a custom deployment of Microsoft 365 Enterprise.

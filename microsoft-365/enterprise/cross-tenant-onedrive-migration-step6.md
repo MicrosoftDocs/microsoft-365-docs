@@ -23,10 +23,13 @@ This is Step 6 in a solution designed to complete a Cross-tenant OneDrive migrat
 - Step 1: [Connect to the source and the target tenants](cross-tenant-onedrive-migration-step1.md)
 - Step 2: [Establish trust between the source and the target tenant](cross-tenant-onedrive-migration-step2.md)
 - Step 3: [Verify trust has been established](cross-tenant-onedrive-migration-step3.md)
-- Step 4: [Pre-create users and groups](cross-tenant-onedrive-migration-step4.md)  
+- Step 4: [Precreate users and groups](cross-tenant-onedrive-migration-step4.md)  
 - Step 5: [Prepare identity mapping](cross-tenant-onedrive-migration-step5.md)
 - **Step 6: [Start a Cross-tenant OneDrive migration](cross-tenant-onedrive-migration-step6.md)**
 - Step 7: [Post migration steps](cross-tenant-onedrive-migration-step7.md)
+
+>[!IMPORTANT]
+>Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
 
 Now you're ready to start your OneDrive migration.  Before starting any cross-tenant migration, do the following steps.
 
@@ -36,7 +39,7 @@ Now you're ready to start your OneDrive migration.  Before starting any cross-te
    Get-SPOCrossTenantCompatibilityStatus –PartnerCrossTenantHostURL [Target tenant hostname]
    ```
 
-2. To start the migration, a SharePoint Online Admin or Microsoft 365 Global Admin of the source tenant must run the following command:
+2. To start the migration, a SharePoint Admin or Microsoft 365 Global Admin of the source tenant must run the following command:
 
 ```PowerShell
 Start-SPOCrossTenantUserContentMove  -SourceUserPrincipalName <...> -TargetUserPrincipalName <...> -TargetCrossTenantHostUrl <...>
@@ -57,16 +60,16 @@ Start-SPOCrossTenantUserContentMove -SourceUserPrincipalName DiegoS@M365x016651.
 
 To Schedule a migration for a later time, you can use and append the above command with the one of the following parameters. 
 
-These commands can be useful when planning bulk batches of OneDrive migrations.  You can queue/migrate up to 4,000 OneDrive migrations per batch.  If your user count exceeds 4,000, create separate batches, and schedule them to run once the current batch is close to completion.
+These commands can be useful when planning bulk batches of OneDrive migrations. You can queue/migrate up to 4,000 OneDrive migrations per batch. If your user count exceeds 4,000, create separate batches, and schedule them to run once the current batch is close to completion.
 
 |Parameter|Description|
 |---|---|
 |PreferredMoveBeginDate|The migration will likely begin at this specified time. Time must be specified in Coordinated Universal Time (UTC).|
 |PreferredMoveEndDate|The migration will likely be completed by this specified time, on a best effort basis. Time must be specified in Coordinated Universal Time (UTC).|
 
-## OneDrive status pre-migration
+## OneDrive status premigration
 
-Before you start the migration, the users current source OneDrive status is similar to the example below.  This example is from the users source tenant, showing their current files and folders.
+Before you start the migration, the users current source OneDrive status is similar to the example below. This example is from the users source tenant, showing their current files and folders.
 
 :::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-status-premigration.png" alt-text="pre-migration status":::
 

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 11/07/2022
+ms.date: 06/14/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -33,7 +33,7 @@ Organizational messages enable IT admins to deliver clear, actionable messages i
 Organizational messages for Adoption Score will initially roll out to Communication, Content Collaboration, Mobility, and more to follow to support all People Experience categories. Check out the [2022 Ignite session](https://ignite.microsoft.com/en-US/sessions/ff17a80f-2fa6-4e52-b92c-745f0ca8d574?source=sessions) for a detailed demonstration and feature description.
 
 > [!NOTE]
-> The feature is currently in preview. If you encounter any bugs or have any suggestions, please give us feedback in the Microsoft 365 admin center. We appreciate your feedback and will reach out to you as fast as we can.
+> The feature is currently in preview. If you encounter any bugs or have any suggestions, give us feedback in the Microsoft 365 admin center. We appreciate your feedback and will reach out to you as fast as we can.
 
 ## Who can use the feature?
 
@@ -45,13 +45,13 @@ For a successful preview experience, you need to be one of the following admin r
 
 The organizational message writer role is the new built-in role that allows assigned admins to view and configure messages. The global administrator can assign the organizational message writer role to admin:
 
-1. Go to **Roles** \> **Role assignments**
+1. Go to **Roles** \> **Role assignments**.
 
-2. Search for and select **Organizational message writer**
+2. Search for and select **Organizational message writer**.
 
-3. Under **Assigned**, select **Add users** or **Add groups**
+3. Under **Assigned**, select **Add users** or **Add groups**.
 
-4. Choose a group of admins you'd like to assign the role to, and select **Add**
+4. Choose a group of admins you'd like to assign the role to, and select **Add**.
 
 ## Where will the messages appear?
 
@@ -97,7 +97,7 @@ In the Microsoft 365 admin center, go to **Reports** \> **Adoption Score.**
 
 We currently have organizational messages for three people experience categories: Communication, Content collaboration, and Mobility. In each category, you'll find available actions to take under the **How can I impact my score** section. Select **See what action you can take** \> **Create message** to start the process.
 
-To see all available organizational messages, go to the **Action (Preview)** tab next to **Overview**. There are currently five available messages for you to create. Choose one and select **Create message** to start.
+To see all available organizational messages, go to the **Actions** tab next to **Overview**. Choose one of the available messages listed and select **Create message** to start.
 
 ## Capabilities
 

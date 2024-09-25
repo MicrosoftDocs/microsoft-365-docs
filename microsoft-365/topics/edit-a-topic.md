@@ -1,7 +1,7 @@
 ---
-ms.date: 09/27/2023
+ms.date: 01/01/2024
 title: Edit an existing topic in Topics
-ms.author: sunar
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 audience: admin
@@ -11,8 +11,7 @@ ms.collection:
   - m365initiative-viva-topics
   - highpri
   - Tier1
-ms.service: viva 
-ms.subservice: viva-topics 
+ms.service: viva-topics 
 search.appverid:
 - MET150   
 ms.localizationpriority:  medium

@@ -4,11 +4,11 @@ f1.keywords: NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: hongda
+ms.reviewer: soranm
 audience: Admin
-ms.topic: conceptual
+ms.topic: reference
 ms.service: microsoft-365-business
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection:
 - Tier3
 - Adm_O365
@@ -16,9 +16,12 @@ ms.collection:
 - must-keep
 ROBOTS: NOINDEX, NOFOLLOW 
 description: "Learn how to view the Japanese katakana glossary for the Microsoft 365 admin center."
-ms.date: 10/19/2023
+ms.date: 10/18/2023
 ---
-<!-- DO NOT MAKE CHANGES TO THIS ARTICLE WITHOUT FIRST CONTACTING THE MS.REVIEWER -->
+<!-- DO NOT MAKE CHANGES TO THIS ARTICLE WITHOUT FIRST CONTACTING THE MS.AUTHOR AND MS.REVIEWER -->
+<!-- THIS CONTENT IS MACHINE TRANSLATED FROM THE ORIGINAL JAPANESE AND MUST REMAIN UNTOUCHED -->
+<!-- DO NOT MAKE CHANGES TO THIS ARTICLE WITHOUT FIRST CONTACTING THE MS.AUTHOR AND MS.REVIEWER -->
+<!-- SERIOUSLY, JUST DON'T -->
 
 # Microsoft 365 admin center katakana glossary
 
@@ -135,13 +138,13 @@ In Microsoft 365, it refers to the state of being viewable or editable by all us
 
 Refers to sending comments or requests to Microsoft from users of the service.
 
-For matters that require customer support attention in accordance with your support contract, please use the "Help and Support" link at the top of the page. For non-support related issues such as usability or new feature suggestions, please use this feedback form to send your suggestions. The development team looks directly at the content. The more specific your comments and requests are, the more likely it will be implemented.
+For matters that require customer support attention in accordance with your support contract, please use the "Help and Support" link at the top of the page, and for non-support related issues such as usability or new feature suggestions, please use this feedback form to send your suggestions. The development team looks directly at the content. The more specific your comments and requests are, the more likely it will be implemented.
 
 ## Privacy
 
 ![Privacy](../media/katanaglossary/010_privacy_updated.png)
 
-A function to set the scope of disclosure of files and information related to the protection of personal information. Different disclosure ranges can be set, such as making files and information available to everyone in the organization (public), or only available to a few designated people (private).
+A function to set the scope of disclosure of files and information related to the protection of personal information. Different disclosure ranges can be set, such as making files and information available to everyone in the organization (public), or just available to a few designated people (private).
 
 [Manage data privacy and data protection with Microsoft Priva and Microsoft Purview](../solutions/data-privacy-protection.md)
 

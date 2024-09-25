@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
-ms.date: 09/05/2023
+ms.date: 09/18/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -35,7 +35,7 @@ The following sections tell you more about the management tools available for th
 
 ## Before you begin
 
-The following controls on Integrated Apps in the Microsoft 365 Admin Center are only available to Global Admins and Azure Application Admins. Check your credentials before you proceed.
+The following controls on Integrated Apps in the Microsoft 365 Admin Center are only available to Global Admins. Check your credentials before you proceed.
 
 ## Controls for managing Teams apps that work on Outlook and the Microsoft 365 App
 
@@ -49,7 +49,7 @@ As an admin, you can manage Teams apps that work on Outlook and the Microsoft 36
 
 As an admin, you can now deploy these apps on Outlook, and Microsoft 365 (formerly known as Office.com) to a specific set of users, the entire organization, or just to yourself from Integrated Apps on Microsoft 365 admin center. Deploying an app means that it is preinstalled for the selected users on the applicable hosts of the app.
 
-1. Sign into Microsoft 365 admin center as a Global Administrator or Azure Application Admin.
+1. Sign into Microsoft 365 admin center as a Global Administrator.
 2. Select **Settings** and then select **Integrated Apps**.
 3. Select **Get apps** in the **Deployed Apps** list. This action opens up AppSource in embedded form from where you can select the app that you want to deploy.
 4. Next, you see the deployment screen where general information about the app is given and the applicable products on which the app is deployed.
@@ -57,7 +57,7 @@ As an admin, you can now deploy these apps on Outlook, and Microsoft 365 (former
 6. Next, accept permissions if there are any. Then select **Next**.
 7. Review and finish the deployment of the app. This app is now preinstalled for all selected users in the applicable hosts.
 
-As a Global Administrator or Azure Application Admin, you can also initiate deployment of an app from its overview pane in the Available Apps list on Integrated Apps.  
+As a Global Administrator, you can also initiate deployment of an app from its overview pane in the Available Apps list on Integrated Apps.  
 1. Select the app you wish to deploy from the **Available Apps** list on **Integrated Apps**. 
 2. Next, select **Deploy app** in the overview pane.  
 3. Complete the deployment steps as listed above.  
@@ -87,7 +87,7 @@ The following sections tell you more about the tools available for managing avai
 
 ### How to see the available and blocked apps in your organization
 
-1. Sign into Microsoft 365 admin center as a Global Administrator or Azure Application Admin.
+1. Sign into Microsoft 365 admin center as a Global Administrator.
 2. Select **Settings**, then select **Integrated Apps**.
 3. Select the **Available Apps** or **Blocked Apps** list. Here you can view the status of all apps in the public catalog, as well as any custom line-of-business apps uploaded from Teams admin center or Microsoft 365 admin center.
 4. Select an app to view more details about the app, applicable host products, and availability status within your organization.
@@ -127,7 +127,7 @@ When you choose to unblock an app, the app reverts to the last saved state of av
 
 As an admin, you can control which apps can be installed and used by which users in your organization. By changing the availability, you're deciding how end users in your organization can install these apps from the store and use them on Outlook and the Microsoft 365 App. Admins can edit the availability of all 1P and 3P store apps and LOB apps uploaded by them.
 
-1. Sign into the Microsoft 365 admin center as a Global Administrator or Azure Application Admin.
+1. Sign into the Microsoft 365 admin center as a Global Administrator.
 2. Select **Settings**, then select **Integrated Apps**.
 3. Select the **Available Apps** list.
 4. Next, select the app you want to edit. This launches the app’s overview pane.
@@ -148,7 +148,7 @@ As an admin, you can control which apps can be installed and used by which users
 
 As an admin, you can control the default state of any new and incoming app in your organization. The default setting for any organization is set to **All users in the organization can install**. You can change this default setting on Integrated Apps in the Microsoft 365 admin center.
 
-1. Sign into the Microsoft 365 admin center as a Global Administrator or Azure Application Admin.
+1. Sign into the Microsoft 365 admin center as a Global Administrator.
 2. Select **Settings**, then select **Integrated Apps**.
 3. Select the **Available Apps** list.
 4. Next, select the Settings icon to open the **Customize default settings** pane.
@@ -203,7 +203,7 @@ You can also upload custom line of business apps and deploy/pre-install them for
 
 Whenever a custom line of business app is uploaded, it is made available to all users in the organization for installation and use by default. You can edit the availability of this custom line of business app from the Available apps list. For more information, see the section about [how to manage availability of an app in your organization](#how-to-manage-the-availability-of-an-app-in-your-organization).  
 
-As a Global Administrator or Azure Application Admin, you can also initiate deployment of a custom app (uploaded from Teams Admin Centre) from its overview pane in the Available Apps list on Integrated Apps. 
+As a Global Administrator, you can also initiate deployment of a custom app (uploaded from Teams Admin Centre) from its overview pane in the Available Apps list on Integrated Apps. 
 
 1. Once the app is uploaded from Teams Admin Center, it will show up in the **Available Apps** list on **Integrated Apps** with the availability status of **All users in the organization can install**.
 2. Select the app from the **Available Apps** list on **Integrated Apps**.

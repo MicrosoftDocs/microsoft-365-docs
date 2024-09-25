@@ -7,13 +7,13 @@ author: chrisda
 manager: deniseb
 audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-business
-ms.date: 11/01/2023
+ms.service: microsoft-365-business-security
+ms.date: 06/07/2024
 ms.localizationpriority: medium
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
-- tier1
+- tier2
 ms.custom:
 - MiniMaven
 search.appverid:
@@ -27,7 +27,7 @@ description: "Setup overview for Microsoft 365 for Campaigns or other businesses
 
 This article describes how to get Microsoft 365 for Campaigns (a special offering for campaigns and political parties in the USA), how to complete the basic setup process, and identify next steps.
 
-:::image type="content" source="media/mission1.png" alt-text="Diagram showing the Sign in and set up phase highlighted.":::
+:::image type="content" source="media/mission1.png" alt-text="Diagram showing the Sign in and set up phase highlighted." lightbox="media/mission1.png":::
 
 ## Get Microsoft 365 for Campaigns
 
@@ -73,7 +73,6 @@ There's no minimum time commitment when you sign up for Microsoft 365 for Campai
 
 3. After we've verified that you represent a national-level political campaign or party, you'll receive an email invitation from Microsoft. Your invite includes a sign-up link specific to your organization.
 
-
 After you have subscribed to Microsoft 365 for Campaigns, your next step is to get everything set up.
 
 ## Before you begin your setup process
@@ -83,7 +82,7 @@ Make sure that you meet the following requirements before you begin your setup p
 |Requirement|Description|
 |---|---|
 |Subscription|Microsoft 365 Business Premium or Microsoft 365 for Campaigns <br/><br/> To start a trial or purchase your subscription, see the following resources: <ul><li>[Get Microsoft 365 Business Premium](m365-business-premium-setup.md#sign-up-for-microsoft-365-business-premium)</li><li>[Get Microsoft 365 for Campaigns](#get-microsoft-365-for-campaigns)</li></ul>|
-|Permissions|To complete the initial setup process, you must be a Global Admin. [Learn more about admin roles](../admin/add-users/about-admin-roles.md).|
+|Permissions|To complete the initial setup process, you must have an appropriate role assigned. [Learn more about admin roles](../admin/add-users/about-admin-roles.md).|
 |Browser requirements|Microsoft Edge, Safari, Chrome or Firefox. [Learn more about browser requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy).|
 |Operating systems (client)|**Windows**:  Windows 10 or 11 Pro <br/> **macOS**: One of the three most recent versions of macOS|
 |Operating systems (servers)|Windows Server or Linux Server <br/> (Requires an additional license, such as [Microsoft Defender for Business servers](../security/defender-business/get-defender-business.md#how-to-get-microsoft-defender-for-business-servers).)|
@@ -92,10 +91,6 @@ Make sure that you meet the following requirements before you begin your setup p
 > For more detailed information about Microsoft 365, Office, and system requirements, see [Microsoft 365 and Office Resources](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
 
 ## Sign in to Microsoft 365 for Campaigns
-
-If you signed up for Microsoft 365 for Campaigns, you're designated as the Microsoft 365 admin (also referred to as the Global Administrator). This allows you to sign in and initiate the system.
-
-Here's how to sign in:
 
 1. Find the username and password we sent to the email address you used when you [signed up for Microsoft 365 for Campaigns](m365-campaigns-sign-up.md).
 
@@ -109,7 +104,7 @@ Here's how to sign in:
 
 Users who have been added to your Microsoft 365 for Campaigns (or Microsoft 365 Business Premium) subscription can sign in using the following steps:
 
-1. Go to [https://office.com](https://office.com).
+1. Go to <https://office.com>.
 
 2. Sign in using the username and password for the account. Users will have this information in the email they receive when they are added as users. If they can't find the email, see [user didn't receive invite email](../admin/simplified-signup/admin-invite-business-standard.md#i-shared-an-email-invite-but-the-user-didnt-receive-the-email).
 
@@ -124,7 +119,7 @@ You can customize your sign-in page with your branding. You can also add text to
 
 ## Customize the text on your sign-in page
 
-To update the customizable elements on the sign-in page, you have to be a global admin. For specific instructions, see [add company branding](/azure/active-directory/fundamentals/customize-branding) article.
+To update the customizable elements on the sign-in page, you must have an appropriate role assigned. For specific instructions, see [add company branding](/azure/active-directory/fundamentals/customize-branding) article.
 
 The elements you can update are:
 
@@ -139,7 +134,7 @@ For examples of privacy and consent notices, see Appendix A in [Searching and Se
 
 To help your staff learn about steps to protect your campaign from cyber threats, use this downloadable guide:
 
-[![Image for secure your help protect your campaign info graphic.](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pdf)
+[:::image type="content" source="media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png" alt-text="Image for secure your help protect your campaign info graphic.":::](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pdf)
 
 [PDF](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pptx)
 

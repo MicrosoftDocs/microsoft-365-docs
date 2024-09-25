@@ -47,7 +47,7 @@ In this article, we'll walk you through the steps of adding an existing domain y
 
 ## Before you begin
 
-To add, modify or remove domains you must be a global administrator. For more info, see [About admin roles](../add-users/about-admin-roles.md).
+To add, modify or remove domains you must be a [domain name administrator](/entra/identity/role-based-access-control/permissions-reference).
 
 > [!IMPORTANT]
 > The person who signs up for Microsoft 365 for business (usually the business owner) automatically becomes the technical administrator of the organization. You can add other people as admins if you want help managing your Microsoft 365 services. Check out [Assign admin roles](../add-users/assign-admin-roles.md) for more info.
@@ -94,7 +94,7 @@ To set up services, you have to update records at your DNS host or domain regist
 
 2. Follow the steps in the wizard and email and other services will be set up for you.
 
-    When the signup process is complete, you'll be directed to the admin center, where you'll follow a wizard to install Microsoft 365 apps, add your domain, add users, and assign licenses. After you complete the initial setup, you can use the **Setup** page in the admin center to continue setting up and configuring the services that come with your subscriptions.
+    When the signup process is complete, you'll be directed to the admin center, where you'll follow a wizard to install apps in Microsoft 365, add your domain, add users, and assign licenses. After you complete the initial setup, you can use the **Setup** page in the admin center to continue setting up and configuring the services that come with your subscriptions.
 
     For more information about the setup wizard and the admin center **Setup** page, see [Difference between the setup wizard and the Setup page](o365-setup-wizard-and-setup-page.md).
 
@@ -106,7 +106,7 @@ To set up services, you have to update records at your DNS host or domain regist
 
 1. From the **How you'll sign in** page on the Microsoft 365 Business Standard sign up, choose **Create a new business email account (advanced)**.
 
-2. Follow the steps to buy a new domain and enter the domain name you want to use (like contoso.com). After you've completed buying your domain, you can [add users and licenses](../add-users/add-users.md) and install your Microsoft 365 apps in the admin center.
+2. Follow the steps to buy a new domain and enter the domain name you want to use (like contoso.com). After you've completed buying your domain, you can [add users and licenses](../add-users/add-users.md) and install your Microsoft 365 productivity apps in the admin center.
 
 ## Finish setting up
 

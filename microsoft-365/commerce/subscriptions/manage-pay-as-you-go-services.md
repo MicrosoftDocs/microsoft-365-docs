@@ -25,7 +25,7 @@ ms.custom:
 search.appverid: MET150
 ROBOTS: noindex, nofollow
 description: "Learn how to buy a subscription with a calling plan and enable overage for Microsoft Teams calls."
-ms.date: 10/13/2023
+ms.date: 09/10/2024
 ---
 
 # Enable pay-as-you-go for your subscription
@@ -46,7 +46,7 @@ If you already have a subscription, you can use the Microsoft 365 admin center t
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
    - If you're using the **Simplified view**, select **Subscriptions**, then select **Add more products**.
-   - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
+   - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page. For some customers, the page is named **Marketplace**.
 2. Search for the pay-as-you-go product that you want to buy, like **Microsoft Teams Calling Plan pay-as-you-go**, then select **Details**. Pay-as-you-go products have the **PAY-AS-YOU-GO AVAILABLE** tag.
 3. On the product details page, review the available plans for the product and select one that has the **PAY-AS-YOU-GO** tag.
 4. Enter the number of licenses that you want to buy, select the **Subscription length** and **Billing frequency**, then select **Buy**.

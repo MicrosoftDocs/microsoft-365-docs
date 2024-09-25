@@ -4,8 +4,8 @@ metadata:
   title: "Centralized Deployment FAQ"
   f1.keywords:
   - NOCSH
-  ms.author: kwekua
-  author: kwekua
+  ms.author: efrene
+  author: efrene
   manager: scotv
   audience: Admin
   ms.topic: faq
@@ -33,9 +33,9 @@ sections:
       - question: |
           How do I know if my organization is set up for Centralized Deployment?
         answer: |
-          Centralized deployment of add-ins requires that users are using Microsoft 365 apps for enterprise (and are signed into Microsoft 365 using their organizational log-in credentials) and have Exchange Online mailboxes. Your subscription directory must either be in, or federated to, Microsoft Entra ID. 
+          Centralized deployment of add-ins requires that users are using apps in Microsoft 365 for enterprise (and are signed into Microsoft 365 using their organizational log-in credentials) and have Exchange Online mailboxes. Your subscription directory must either be in, or federated to, Microsoft Entra ID. 
            
-          Centralized Deployment is only supported for online mailboxes. It does not support deployment to on-premises Exchange mailboxes.
+          Centralized Deployment is only supported for online mailboxes. It doesn't support deployment to on-premises Exchange mailboxes.
           
           You can use the [Centralized Deployment Compatibility Checker](centralized-deployment-of-add-ins.md#centralized-deployment-compatibility-checker) to determine if your subscription is eligible. 
             
@@ -44,7 +44,7 @@ sections:
         answer: |
           Centralized Deployment supports assignments to individual users, groups, and everyone in the tenant. Centralized Deployment can be used for users in top-level groups or groups without parent groups, but not for users in nested groups or groups that have parent groups. Centralized Deployment is also part of most Microsoft Entra groups, including Microsoft 365 Groups, distribution lists, dynamic groups, and security groups. 
           
-          It is better to use groups assignments instead of individual user assignment for easier management.
+          It's better to use groups assignments instead of individual user assignment for easier management.
            
           For more details, see [User and Group assignments](./centralized-deployment-of-add-ins.md?view=o365-worldwide#user-and-group-assignments).
            
@@ -73,7 +73,7 @@ sections:
           Yes. Centralized Deployment provides admins the flexibility to choose one of three deployment methods for Outlook add-ins during add-in deployment:
                    
           **Fixed**
-          The add-in will be automatically deployed to the assigned users and they will not be able to remove it from their ribbon.
+          The add-in will be automatically deployed to the assigned users and they won't be able to remove it from their ribbon.
           
           **Available**
           Users can install the add-in in Outlook by choosing **Home > Get More add-ins > Admin-managed**.
@@ -114,7 +114,7 @@ sections:
       - question: |
           Which admin role do I need to manage add-ins for my organization? 
         answer: |
-          Global Admin is the recommended role with complete access to the add-in management lifecycle. If you're the person who purchased your Microsoft 365 Business subscription, you are the Global admin.
+          Global Admin is the recommended role with complete access to the add-in management lifecycle. If you're the person who purchased your Microsoft 365 Business subscription, you're the Global admin.
 
           Your subscription comes with a set of admin roles that you can assign to other users in your organization. Each admin role maps to common business functions and gives people in your organization permissions to perform specific tasks in the Microsoft 365 admin center.  
            
@@ -124,3 +124,8 @@ sections:
           How many add-ins can I deploy?
         answer: |
           A total of 200 Excel, Outlook, PowerPoint, and Word add-ins can be deployed by admins within their tenant.
+
+      - question: |
+          Why do add-in deployment times for Word, Excel, and PowerPoint differ compared to Outlook add-ins?
+        answer: |
+          There are architectural differences between add-in deployments for Word, Excel, and PowerPoint vs Outlook.

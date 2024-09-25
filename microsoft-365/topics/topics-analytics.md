@@ -1,7 +1,7 @@
 ---
-ms.date: 11/21/2023
+ms.date: 01/01/2024
 title: Analytics for Topics
-ms.author: mithunas
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller

@@ -1,0 +1,81 @@
+### YamlMime:Landing
+
+title: Microsoft 365 Backup documentation # < 60 chars
+summary: Microsoft 365 Backup provides a reliable solution to help you recover and restore your data quickly and easily in case of malicious or accidental data deletion. 
+metadata:
+  title: Microsoft 365 Backup documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: This page contains links to some important topics related to Microsoft 365 Backup features. Start here to learn about how to set up and use Microsoft 365 Backup in your organization. # Required; article description that is displayed in search results. < 160 chars.
+  services: 
+  ms.service: microsoft-365-backup #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page # Required
+  ms.collection: essentials-navigation
+  ms.custom: intro-hub-or-landing
+  author: chuckedmonson #Required; your GitHub user alias, with correct capitalization.
+  ms.author: chucked #Required; microsoft alias of author; optional team alias.
+  ms.date: 07/31/2024 #Required; mm/dd/yyyy format
+  ms.localizationpriority: medium
+  titleSuffix: Microsoft 365 Backup
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card 1
+  - title: About Microsoft 365 Backup
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Learn about Microsoft 365 Backup
+            url: backup-overview.md
+          - text: FAQs
+            url: backup-faq.md
+
+# Card 2
+  - title: Get started
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Set up Microsoft 365 Backup
+            url: backup-setup.md
+          - text: Manage billing and invoices
+            url: backup-billing.md
+          - text: Pricing model
+            url: backup-pricing.md
+
+# Card 3
+  - title: Manage backups
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Create, view, and edit backup policies
+            url: backup-view-edit-policies.md
+          - text: Restore data
+            url: backup-restore-data.md
+          - text: Offboard usage
+            url: backup-offboarding.md
+
+# Card 4
+  - title: Data privacy & protection
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Privacy, security, & compliance
+            url: backup-privacy-security.md
+
+# Card 5
+  - title: More solutions
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Microsoft 365 Backup Storage for developers
+            url: storage/backup-3p-overview.md
+          - text: Microsoft 365 Archive
+            url: /microsoft-365/archive
+          - text: SharePoint Advanced Management
+            url: /sharepoint/advanced-management
+          - text: SharePoint Embedded
+            url: /sharepoint/dev/embedded/overview
+          - text: Microsoft Syntex
+            url: /microsoft-365/syntex/
+

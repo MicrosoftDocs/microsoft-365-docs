@@ -1,7 +1,7 @@
 ---
-ms.date: 12/07/2023
+ms.date: 01/01/2024
 title: Use Topics cards in the Viva Connections dashboard
-ms.author: akashravi
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller
@@ -10,8 +10,7 @@ ms.topic: article
 ms.collection:
   - m365initiative-viva-topics
   - Tier1
-ms.service: viva 
-ms.subservice: viva-topics 
+ms.service: viva-topics
 search.appverid:
     - MET150  
 ms.localizationpriority:  medium

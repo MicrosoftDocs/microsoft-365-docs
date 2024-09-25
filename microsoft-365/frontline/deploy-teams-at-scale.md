@@ -17,7 +17,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 10/10/2023
+ms.date: 06/27/2024
 ---
 
 # Deploy frontline static teams at scale with PowerShell for frontline workers
@@ -30,7 +30,7 @@ You can use PowerShell to deploy up to 500 teams and add up to 25 users per team
 
 Deploying Teams at scale enables you to:
 
-- Create teams using pre-built templates or your own custom templates.
+- Create teams using prebuilt templates or your own custom templates.
 - Add users to teams as owners or members.
 - Manage teams at scale by adding or removing users from existing teams.
 - Stay notified through email, including completion, status, and errors (if any). You can choose to notify up to five people about the status of each batch of teams you deploy. Team owners and members are automatically notified when they're added to a team.
@@ -48,7 +48,7 @@ Follow these steps to deploy up to 500 teams at a time.
 
 ### Step 1: Prepare your CSV files
 
-You'll need to create two CSV files for each batch of teams that you deploy:
+Create two CSV files for each batch of teams that you deploy:
 
 - **A CSV file that defines the teams you're creating**. This file must have a title line, and must contain these required columns, in the following order, starting with the first column:
 
@@ -57,7 +57,7 @@ You'll need to create two CSV files for each batch of teams that you deploy:
     |**Team Name**|The name of the team.|
     |**Existing Team ID**|If you're adding or removing users from an existing team, specify the team ID of the team.|
     |**Visibility**|Whether the team is public (anyone in your organization can join) or private (users need approval from the team owners to join). Options are **Public** and **Private**.|
-    |**Team Template ID**|If you're creating a team from a pre-built or custom template, specify the team template ID. See [Get started with team templates in the Teams admin center](/microsoftteams/get-started-with-teams-templates-in-the-admin-console) for a list pre-built team templates and IDs. If you want to use the standard default team template, leave this blank.|
+    |**Team Template ID**|If you're creating a team from a prebuilt or custom template, specify the team template ID. See [Get started with team templates in the Teams admin center](/microsoftteams/get-started-with-teams-templates-in-the-admin-console) for a list prebuilt team templates and IDs. If you want to use the standard default team template, leave this blank.|
 
 - **A CSV file that maps the users you're adding to each team**. This file must have a title line, and must contain these required columns, in the following order, starting with the first column:
 
@@ -69,9 +69,12 @@ You'll need to create two CSV files for each batch of teams that you deploy:
     |**ActionType**|Whether you're adding or removing the user from the team. Options are `AddMember` and `RemoveMember`.|
     |**Owner or Member**|Whether the user is a team owner or team member. Options are `Owner` and `Member`.|
 
+    > [!NOTE]
+    > In this CSV file, you can also assign multiple users as team owners for any team, including dynamic frontline teams that you created in the Teams admin center through the [deploy frontline dynamic teams experience](deploy-dynamic-teams-at-scale.md).
+
 #### Examples
 
-Use the following examples to help you create your CSV files. Here, we've named the files, Teams.csv and Users.csv.
+Use the following examples to help you create your CSV files. Here, we named the files, Teams.csv and Users.csv.
 
 **Teams.csv**
 
@@ -136,7 +139,7 @@ Follow these steps to install and connect to the latest version of the Teams Pow
 
 ### Step 3: Deploy your teams
 
-Now that you've created your CSV files and set up your environment, you're ready to deploy your teams.
+Now that you created your CSV files and set up your environment, you're ready to deploy your teams.
 
 You use the [New-CsBatchTeamsDeployment](/powershell/module/teams/New-CsBatchTeamsDeployment) cmdlet to submit a batch of teams to create. An orchestration ID is generated for each batch. You can then use the [Get-CsBatchTeamsDeploymentStatus](/powershell/module/teams/Get-CsBatchTeamsDeploymentstatus) cmdlet to track the progress and status of each batch.
 
@@ -146,7 +149,7 @@ You use the [New-CsBatchTeamsDeployment](/powershell/module/teams/New-CsBatchTea
     New-CsBatchTeamsDeployment -TeamsFilePath "Your CSV file path" -UsersFilePath "Your CSV file path" -UsersToNotify "Email addresses" 
     ```
 
-    The recipients will receive email notifications about deployment status. The email contains the orchestration ID for the batch you submitted and any errors that may have occurred.
+    The recipients will receive email notifications about deployment status. The email contains the orchestration ID for the batch you submitted and any errors that might have occurred.
 
     For example:
 

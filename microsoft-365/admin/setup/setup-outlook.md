@@ -34,7 +34,7 @@ Check out this video and others on our [YouTube channel](https://go.microsoft.co
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/9fe86884-8a83-42cc-bca9-61a12e6dad31?autoplay=false]
 
-After installing the Microsoft 365 apps, you'll want set up Outlook to start using email, calendar, and contacts. Here's how.
+After installing the apps in Microsoft 365, you'll want set up Outlook to start using email, calendar, and contacts. Here's how.
 
 1. Open the Start menu. Search for Outlook, and choose it.
 2. Enter your Microsoft 365 email address, and select  **Connect**.

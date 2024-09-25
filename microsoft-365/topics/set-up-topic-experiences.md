@@ -1,19 +1,18 @@
 ---
-ms.date: 10/6/2023
+ms.date: 09/03/2024
 title: Set up and manage Topics
-ms.author: mithunas
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller
 audience: admin
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.collection:
   - m365initiative-viva-topics
   - highpri
   - Tier1
   - essentials-get-started
-ms.service: viva 
-ms.subservice: viva-topics 
+ms.service: viva-topics 
 search.appverid:
 - MET150  
 ms.localizationpriority:  medium
@@ -24,9 +23,9 @@ description: Learn how to set up Topics and manage your settings.
 
 You can use the Microsoft 365 admin center to set up and configure [Topics](topic-experiences-overview.md).
 
-It is important to plan the best way to set up and configure topics in your environment. Be sure to read [Plan for Topics](plan-topic-experiences.md) before you begin the procedures in this article.
+It's important to plan the best way to set up and configure topics in your environment. Be sure to read [Plan for Topics](plan-topic-experiences.md) before you begin the procedures in this article.
 
-You must be [subscribed to a license that includes Topics](https://www.microsoft.com/microsoft-viva/topics) and be a global administrator, or both SharePoint administrator and groups administrator to access the Microsoft 365 admin center and set up Topics.
+You must be [subscribed to a license that includes Topics](https://www.microsoft.com/microsoft-viva/topics) and be both SharePoint administrator and groups administrator to access the Microsoft 365 admin center and set up Topics.
 
 > [!IMPORTANT]
 > If you have configured SharePoint to [require managed devices](/sharepoint/control-access-from-unmanaged-devices), you must set up Topics from a managed device.
@@ -37,9 +36,9 @@ You must assign licenses for the users who will be using Topics. Only users with
 
 To assign licenses:
 
-1. In the Microsoft 365 admin center, under **Users**, select **Active users**.
+1. In the Microsoft 365 admin center, search for **Users**, and select **Active users**.
 
-2. Select the users that you want to license, and select **Licenses and apps**.
+2. Select the users that you want to license, and select **Manage product licenses**.
 
 3. Under **Licenses**, select **Viva Topics**.
 
@@ -59,22 +58,6 @@ Note that users must also have an Exchange Online license to use Topics.
 > [!NOTE]
 > The first time topic discovery is enabled, it may take up to two weeks for all suggested topics to appear in the Manage Topics view. Topic discovery continues as new content or updates to content are made. It is normal to have fluctuations in the number of suggested topics in your organization as Viva Topics evaluates new information.
 
-To set up Topics:
-
-1. In the [Microsoft 365 admin center](https://admin.microsoft.com), select **Setup**, and then choose **Microsoft Viva**.
-
-   ![Screenshot of the Microsoft Viva setup card.](../media/topics/viva-setup.png)
-
-2. Select **Viva Topics**.
-
-   [![Screenshot of the Viva admin page.](../media/topics/viva-new-admin.png)](../media/topics/viva-new-admin.png#lightbox)
-
-3. This will take you to the Topics admin page. Choose **Deploy Topics in 2 steps** to enable Topics for your organization. This will bring up the setup pane.
-
-### Alternative setup path
-
-You can take either path through your Microsoft 365 admin center to set up Topics.
-
 1. In the [Microsoft 365 admin center](https://admin.microsoft.com), select **Setup**.
 
 2. Under **Files and content**, select **Connect people to knowledge with Viva Topics**.
@@ -93,7 +76,7 @@ You can take either path through your Microsoft 365 admin center to set up Topic
 1. Choose which SharePoint sites Topics can source information from.
     - **All sites**: All SharePoint sites in your organization. This includes current and future sites.
     - **All, except selected sites**: Type the names of the sites you want to exclude.  You can also upload a list of sites that you want to opt out from discovery. Sites created in future will be included as sources for topic discovery.
-    - **Only selected sites**: Type the names of the sites you want to include. You can also upload a list of sites. Sites created in the future will not be included as sources for topic discovery.
+    - **Only selected sites**: Type the names of the sites you want to include. You can also upload a list of sites. Sites created in the future won't be included as sources for topic discovery.
     - **No sites**: Do not include any SharePoint sites.
 
 2. Then choose **Next**.
@@ -119,7 +102,7 @@ On the **Topic center** page, you can create your topic center site where users 
 
 Review the settings you've chosen. Once everything is correct, choose **Finish**. You can manage your settings later by going back to your Topics setup page and choosing **Manage Topics**.
 
-Note that topics won't show up for your users immediately.You can monitor the number of topics found in your [analytics page](topics-analytics.md).
+Note that topics won't show up for your users immediately. You can monitor the number of topics found in your [analytics page](topics-analytics.md).
 
 By default, the only person who can manage Topics for your organization is the admin. You can change this setting by following the steps to [manage topics](#manage-topics) and going to the [**Topic permissions**](#topic-permissions) section.
 
@@ -145,7 +128,7 @@ On the Topic discovery page, you'll choose how Viva Topics sources and identifie
 1. In the **Select SharePoint topic sources** section, select which SharePoint sites will be crawled as sources for your topics during discovery. Choose from:
     - **All sites**: All SharePoint sites in your organization. This includes current and future sites.*
     - **All, except selected sites**: Type the names of the sites you want to exclude.  You can also upload a list of sites that you want to opt out from discovery. Sites created in future will be included as sources for topic discovery.
-    - **Only selected sites**: Type the names of the sites you want to include. You can also upload a list of sites. Sites created in the future will not be included as sources for topic discovery.
+    - **Only selected sites**: Type the names of the sites you want to include. You can also upload a list of sites. Sites created in the future won't be included as sources for topic discovery.
     - **No sites**: Do not include any SharePoint sites.
 
 2. Select **Save**.

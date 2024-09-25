@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: nkagole
 author: nataliekagole
 manager: scotv
-ms.date: 08/06/2020
+ms.date: 08/07/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -44,7 +44,7 @@ Sign in as a global administrator, follow these steps to get a code at Microsoft
 
 3. At the top of the page, select **Transfer domain**.
 
-4. On the **Choose where to transfer your domain** page, select **A different registrar**, and then click **Next**.
+4. On the **Choose where to transfer your domain** page, select **A different registrar**, and then select **Next**.
 
 5. On the **Unlock domain transfer** page, select **Unlock transfer for <_your domain_>**, and then select **Next**.
 
@@ -52,7 +52,7 @@ Sign in as a global administrator, follow these steps to get a code at Microsoft
 
 7. Copy the authorization code and wait about 30 minutes for your domain transfer status to change to **Unlocked for transfer** on the **Registration** tab before you proceed with next steps.
 
-8. Go to the website of the domain registrar you want to manage your domain name going forward. Follow directions for transferring a domain (search for help on their website). This usually means paying transfer fees and giving the Authcode to the new registrar so they can initiate the transfer. Microsoft will email you to confirm we’ve received the transfer request, and the domain will transfer within 5 days.
+8. Go to the website of the domain registrar you want to manage your domain name going forward. Follow directions for transferring a domain (search for help on their website). This usually means paying transfer fees and giving the Authcode to the new registrar so they can initiate the transfer. Microsoft emails you to confirm we’ve received the transfer request, and the domain will transfer within five days.
 
     You can find the authorization code **Registration** tab on the **Domains** page in Microsoft 365.
 
@@ -61,7 +61,7 @@ Sign in as a global administrator, follow these steps to get a code at Microsoft
 
 9. After the transfer is complete, you'll renew your domain at the new domain registrar.
 
-10. To finish the process, go back to the **Domains** page in the admin center, and then select **Complete domain transfer**. This will mark the domain as no longer purchased from Microsoft 365, and will disable the domain subscription. It will not remove the domain from the tenant, and will not affect existing users and mailboxes on the domain.
+10. To finish the process, go back to the **Domains** page in the admin center, and then select **Complete domain transfer**. This marks the domain as no longer purchased from Microsoft 365, and will disable the domain subscription. It will not remove the domain from the tenant, and won't affect existing users and mailboxes on the domain.
 
 > [!NOTE]
 > Microsoft 365 purchased domains are not eligible for nameserver changes or transferring the domain between Microsoft 365 organizations. If either of these are required, the domain registration must be transferred to another registrar.

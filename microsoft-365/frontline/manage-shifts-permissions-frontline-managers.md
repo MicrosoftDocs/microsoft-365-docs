@@ -5,7 +5,7 @@ ms.author: v-chinlana
 manager: jtremper
 ms.topic: conceptual
 audience: admin
-ms.reviewer: imarquesgil
+ms.reviewer: harrywong
 ms.service: microsoft-365-frontline
 search.appverid: MET150
 searchScope:
@@ -48,9 +48,9 @@ The following table lists the settings and schedule group capabilities that are 
 |Team time zone|Set the team's time zone and closest city.||
 |Start of week|Set the day of the week for schedules to start.||
 |Copying shifts|Set whether shifts activities are automatically included when copying shifts.||
-|Open shifts|Turn on or turn off the ability to create and request open shifts.|✔️&sup1;|
-|Swap shifts|Turn on or off workers' ability to swap shifts with each other. |✔️&sup1;|
-|Offer shift|Turn on or off workers' ability to offer shifts to coworkers.|✔️&sup1;|
+|Open shifts|Turn on or turn off the ability to create and request open shifts.|✔️<sup>1</sup>|
+|Swap shifts|Turn on or off workers' ability to swap shifts with each other. |✔️<sup>1</sup>|
+|Offer shift|Turn on or off workers' ability to offer shifts to coworkers.|✔️<sup>1</sup>|
 |Time-off requests|Turn on or turn off workers' ability to request time off.|✔️|
 |Time-off reasons|Add and edit time-off reasons for the team.|✔️|
 |Time clock|Turn on or turn off time clock for the team.|✔️|
@@ -61,7 +61,7 @@ The following table lists the settings and schedule group capabilities that are 
 |Manage schedule groups|Add, rename, and delete schedule groups.|✔️|
 |Manage schedule group membership|Add and remove team members from schedule groups.||
 
-&sup1;You manage these three capabilities through the `CanModifyShiftRequestsCapabilities` parameter.
+<sup>1</sup>You manage these three capabilities through the `CanModifyShiftRequestsCapabilities` parameter.
 
 You can also use the [Create or replace schedule](/graph/api/team-put-schedule?view=graph-rest-1.0) Graph API to define Shifts settings and the [Create schedulingGroup](/graph/api/schedule-post-schedulinggroups?view=graph-rest-1.0) Graph API to manage schedule groups and membership.  
 

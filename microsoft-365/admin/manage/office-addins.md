@@ -81,7 +81,7 @@ Add-ins are supported in three desktop platforms: Windows, Mac, and Online Offic
 
 It can take up to 24 hours for an add-in to show up for client for all users.
 
-Currently, Exchange admins, Global admins, and Azure Application admins can deploy add-ins from Integrated apps.
+Currently, Exchange admins and Global admins can deploy add-ins from Integrated apps.
 
 ## Deploy your Office add-ins
 
@@ -242,8 +242,8 @@ When updating a manifest, the typical changes are to an add-in's icon and text. 
 
 Updates for add-ins happen as follows:
 
-- **Line-of-business add-in**: In this case, where an admin explicitly uploaded a manifest, the add-in requires that the admin upload a new manifest file to support metadata changes. The next time the relevant Microsoft 365 apps start, the add-in will update. The web application can change at any time.
-- **Office Store add-in**: When an admin selected an add-in from the Office Store, if an add-in updates in the Office Store, the next time the relevant Microsoft 365 apps start, the add-in will update. The web application can change at any time.
+- **Line-of-business add-in**: In this case, where an admin explicitly uploaded a manifest, the add-in requires that the admin upload a new manifest file to support metadata changes. The next time the relevant Microsoft 365 productivity apps start, the add-in will update. The web application can change at any time.
+- **Office Store add-in**: When an admin selected an add-in from the Office Store, if an add-in updates in the Office Store, the next time the relevant Microsoft 365 productivity apps start, the add-in will update. The web application can change at any time.
 
 > [!NOTE]
 > For Word, Excel, and PowerPoint use a [SharePoint App Catalog](/sharepoint/dev/sp-add-ins/publish-sharepoint-add-ins) to deploy add-ins to users in an on-premises environment with no connection to Microsoft 365 and/or support for SharePoint add-ins required. For Outlook use Exchange control panel to deploy in an on-premises environment without a connection to Microsoft 365.

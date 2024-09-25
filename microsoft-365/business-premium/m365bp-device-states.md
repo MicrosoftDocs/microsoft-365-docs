@@ -7,11 +7,11 @@ author: siosulli
 manager: deniseb
 audience: Admin
 ms.topic: conceptual
-ms.service: microsoft-365-business
-ms.date: 10/26/2022
+ms.service: microsoft-365-business-security
+ms.date: 05/31/2024
 ms.localizationpriority: medium
 ms.collection:
-- tier1
+- tier2
 ms.custom:
 - MiniMaven
 search.appverid:

@@ -7,7 +7,7 @@ manager: scotv
 ms.date: 10/25/2023
 audience: Admin
 ms.topic: article
-ms.service: microsoft-365-business
+ms.service: microsoft-365-basic-mobility-security
 ms.localizationpriority: medium
 ms.collection:
 - Tier3
@@ -16,7 +16,9 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - basic-mobility-security
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- basic-mobility-security
 description: "Remove groups or policies to turn off Basic Mobility and Security."
 ---
 

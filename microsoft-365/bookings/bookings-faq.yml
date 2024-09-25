@@ -1,7 +1,7 @@
 ### YamlMime:FAQ
 metadata:
-  ms.date: 03/25/2024
-  title: "Microsoft Bookings Frequently Asked Questions"
+  ms.date: 07/30/2024
+  title: "Shared Bookings Frequently Asked Questions"
   ms.author: kwekua
   author: kwekuako
   manager: scotv
@@ -14,8 +14,8 @@ metadata:
   - scotvorg
   - essentials-compliance
   - essentials-privacy
-  description: "Microsoft Bookings frequently asked questions."
-title: Microsoft Bookings Frequently Asked Questions
+  description: "Shared Bookings frequently asked questions."
+title: Shared Bookings Frequently Asked Questions (FAQ)
 summary: |
 
 sections:
@@ -280,7 +280,7 @@ sections:
       - question: |
           Where is Bookings data stored?
         answer: |
-          Bookings is a Microsoft 365 app, meaning all data is stored within the Microsoft 365 platform and in Exchange. Bookings follows all data storage policies that are set by Microsoft, which are the same policies that all Microsoft 365 apps follow. Bookings uses shared mailboxes in Exchange to store customer, staff, service, and appointment details. Compliance policies for shared mailboxes in Exchange also apply for Bookings mailboxes. All customer data (including information provided by customers when booking) is captured in Bookings and is stored within the app, thus it's stored within Exchange. Microsoft Bookings uses the same policies used by Microsoft 365, which you can find [here.](https://www.microsoft.com/online/legal/v2/?docid=22&langid=en-us)
+          Bookings is a Microsoft 365 app, meaning all data is stored within the Microsoft 365 platform and in Exchange. Bookings follows all data storage policies that are set by Microsoft, which are the same policies that all apps in Microsoft 365 follow. Bookings uses shared mailboxes in Exchange to store customer, staff, service, and appointment details. Compliance policies for shared mailboxes in Exchange also apply for Bookings mailboxes. All customer data (including information provided by customers when booking) is captured in Bookings and is stored within the app, thus it's stored within Exchange. Microsoft Bookings uses the same policies used by Microsoft 365, which you can find [here.](https://www.microsoft.com/online/legal/v2/?docid=22&langid=en-us)
           
       - question: |
           Is there a way to centrally manage Bookings calendars for all users?
@@ -360,8 +360,7 @@ sections:
              > [!NOTE]
              > This setting shares your free/busy information with Bookings and with other users in your organization. It doesn't include any other information.
           
-             > [!div class="mx-imgBorder"]
-             > ![Image of calendar-sharing screen with Can view when I'm busy enabled](../media/bookings-view-busy.png)
+             :::image type="content" alt-text="Image of calendar-sharing screen with Can view when I'm busy enabled." source="../media/bookings-view-busy.png":::
           
           1. Select **Done**.
           

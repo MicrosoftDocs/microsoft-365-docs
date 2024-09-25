@@ -6,7 +6,7 @@ ms.author: brianday
 manager: rolowe
 ms.topic: overview
 ms.date: 07/18/2022
-ms.service: office-365
+ms.service: microsoft-365-enterprise
 ms.custom: template-overview
 ---
 
@@ -23,7 +23,7 @@ Cross-Tenant Identity Mapping removes the need to export large data sets from a 
 
 With Cross-Tenant Identity Mapping, data remains within the Microsoft security boundary and is securely copied directly from the source organization to the target organization using specially configured **Organization Relationships** serving as a unidirectional trust.
 
-Using Cross-Tenant Identity Mapping will reduce mistakes when configuring target objects for a migration by automatically configuring values such as _ExchangeGuid_, _ArchiveGuid_, and all necessary _X500 proxy addresses_.
+Using Cross-Tenant Identity Mapping reduces mistakes when configuring target objects for a migration by automatically configuring values such as _ExchangeGuid_, _ArchiveGuid_, and all necessary _X500 proxy addresses_.
 
 Some additional benefits of using Cross-Tenant Identity Mapping:
 
@@ -41,13 +41,13 @@ We would like to provide information commonly asked so you may evaluate if you w
 - Data processing (storage, compute, transfer, etc.) is currently within the European Union, and within the Exchange Online home region of the organizations participating in the migration.
   - For Multi-Geo enabled organizations, the organization's home geo for Exchange Online will be used.
 - This feature can currently only be enabled in the worldwide Microsoft 365 offering. It doesn't work in GCC, GCC High, DoD, Office 365 by 21 Vianet, etc.
-- Cross-Tenant Identity Mapping does **not** create the Mail Enabled User objects in the target tenant for you. These objects must still be created with a minimal attribute set. Once created, then Cross-Tenant Identity Mapping will decorate their attributes correctly for a mailbox migration to proceed.
+- Cross-Tenant Identity Mapping does **not** create the Mail Enabled User objects in the target tenant for you. These objects must still be created with a minimal attribute set. Once created, then Cross-Tenant Identity Mapping decorates their attributes correctly for a mailbox migration to proceed.
 - Some familiarity with PowerShell is currently required as the feature is PowerShell-based
 - The feature communicates over an encrypted connection to a REST endpoint.
 - The feature currently requires the Global Administrator role for initial setup. This behavior may change in a future update.
 - Organizational Relationships are used as a dual handshake approach to ensure both organizations have authorized this transaction type to take place.
 - It works with cloud-only or hybrid organizations.
-- Target organizations in a hybrid configuration will require Microsoft supported on-premises object management tools to modify any Mail Enabled User objects synchronized from the on-premises directory.
+- Target organizations in a hybrid configuration require Microsoft supported on-premises object management tools to modify any Mail Enabled User objects synchronized from the on-premises directory.
 
 ## What does participating in the private preview entail?
 

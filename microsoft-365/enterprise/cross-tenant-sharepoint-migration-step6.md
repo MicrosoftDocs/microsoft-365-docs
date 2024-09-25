@@ -35,16 +35,16 @@ Now you're ready to start your SharePoint migration. Before starting any cross-t
 
 ## Start a SharePoint Cross-tenant site migration
 
-1. Ensure you have verified the compatibility status. If you see a status of either **Compatible** or **Warning**  on your source tenant, you may continue. Run:
+1. Make sure you've verified the compatibility status. If you see a status of either **Compatible** or **Warning**  on your source tenant, you may continue. Run:
 
    ```powershell
    Get-SPOCrossTenantCompatibilityStatus –PartnerCrossTenantHostURL [Target tenant hostname]
    ```
 
-2. To start the migration, a SharePoint Online Admin or Microsoft 365 Global Admin of the source tenant must run the following command:
+2. To start the migration, a SharePoint Admin or Microsoft 365 Global Admin of the source tenant must run the following command:
 
    ```PowerShell
-   Start-SPOCrossTenantGroupContentMove  -SourceSiteUrl <…> -TargetSiteUrl <…> -TargetCrossTenantHostUrl| <…>
+   Start-SPOCrossTenantSiteContentMove-SourceSiteUrl <…> -TargetSiteUrl <…> -TargetCrossTenantHostUrl <…>
    ```
 
    |Parameters|Description|
@@ -60,7 +60,7 @@ Now you're ready to start your SharePoint migration. Before starting any cross-t
    ```powershell
    Get-SPOCrossTenantCompatibilityStatus –PartnerCrossTenantHostURL [Target tenant hostname]
 
-2. To start the migration, a SharePoint Online Admin or Microsoft 365 Global Admin of the source tenant must run the following command:
+2. To start the migration, a SharePoint Admin or Microsoft 365 Global Admin of the source tenant must run the following command:
 
    ```powershell
    Start-SPOCrossTenantGroupContentMove  -SourceGroupAlias <…> -TargetGroupAlias <…> -TargetCrossTenantHostUrl <…>
@@ -82,7 +82,7 @@ For example:
 Start-SPOCrossTenantGroupContentMove  -SourceGroupAlias <…> -TargetGroupAlias <…> -TargetCrossTenantHostUrl <…> -PreferredMoveBeginDate <…>
 ```
 
-These commands can be useful when planning bulk batches of site migrations.  You can queue and migrate up to 4,000 migrations per batch.  If your count exceeds 4,000, then separate batches can be created and scheduled to run once the current batch is close to completion.
+These commands can be useful when planning bulk batches of site migrations. You can queue and migrate up to 4,000 migrations per batch. If your count exceeds 4,000, then separate batches can be created and scheduled to run once the current batch is close to completion.
 
 |Parameter|Description|
 |---|---|
@@ -91,7 +91,7 @@ These commands can be useful when planning bulk batches of site migrations.  Yo
 
 ## SharePoint status pre-migration
 
-Before you begin the migration, the users current source SharePoint status will be similar to the example below.  This example is from the users source tenant, showing their current files and folders.
+Before you begin the migration, the users current source SharePoint status will be similar to the following. This example is from the users source tenant, showing their current files and folders.
 
 :::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-status-premigration.png" alt-text="pre-migration status":::
 
@@ -124,7 +124,7 @@ Get-SPOCrossTenantUserContentMoveState -PartnerCrossTenantHostURL [Target URL]
 Example:
 
 ```Powershell
-Get-SPOCrossTenantUserContentMoveState -PartnerCrossTenantHostURL  https://m365x946316-my.sharepoint.com/
+Get-SPOCrossTenantUserContentMoveState -PartnerCrossTenantHostURL https://m365x946316-my.sharepoint.com/
 ```
 
 **Target command:**
@@ -136,7 +136,7 @@ Get-SPOCrossTenantUserContentMoveState -PartnerCrossTenantHostURL [Source URL]
 Example:
 
 ```powershell
-Get-SPOCrossTenantUserContentMoveState -PartnerCrossTenantHostURL  https://m365x016551-my.sharepoint.com/
+Get-SPOCrossTenantUserContentMoveState -PartnerCrossTenantHostURL https://m365x016551-my.sharepoint.com/
 ```
 
 To find the status of a specific user's migration, use the *SourceUserPrincipalName* parameter:

@@ -7,6 +7,7 @@ ms.date: 01/24/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 ms.collection: 
 - scotvorg
@@ -52,5 +53,4 @@ For more information, see the following articles.
 
 ## Groups
 - [Manage security groups](manage-security-groups-with-microsoft-365-powershell.md)
-- [Maintain security group membership](maintain-group-membership-with-microsoft-365-powershell.md)
 - [Manage Microsoft 365 groups](manage-microsoft-365-groups-with-powershell.md)

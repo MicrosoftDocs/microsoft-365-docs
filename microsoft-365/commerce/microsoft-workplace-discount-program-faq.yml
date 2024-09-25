@@ -46,14 +46,13 @@ sections:
           
           - Lebanon, Macao SAR, Russia and Venezuela: This offer is not available in these markets.
           - China and Hong Kong SAR: a one-year subscription is available in these markets. For China, visit [Microsoft 365 in China](https://www.microsoftstore.com.cn/home-use-program/invite). For Hong Kong SAR, visit [Buy Microsoft 365 at a discounted price](https://www.microsoftestore.com.hk/partner/hup?locale=en_HK).
-          - Discounts on select Surface devices and accessories are offered to eligible companies in select markets. 
           
       - question: |
           How does an organization qualify for Microsoft Workplace Discount Program benefits?
         answer: |
           For employees to take advantage of the Microsoft Workplace Discount Program benefit, they must have a valid corporate email address and an active Microsoft Account, and your organization must meet one of the following criteria:
           
-          - Customers who have active Software Assurance for qualifying Microsoft 365 apps
+          - Customers who have active Software Assurance for qualifying apps in Microsoft 365
           - Customers who have Microsoft 365/Microsoft 365 E3/E5 From Software Assurance
           - Commercial and government customers who have purchased 2,000 or more licenses of one or a mix of Microsoft 365 E3/E5
           - Education and non-profit customers

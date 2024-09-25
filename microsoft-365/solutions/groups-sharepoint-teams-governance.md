@@ -2,8 +2,8 @@
 title: Microsoft Teams, SharePoint, and Microsoft 365 Groups integration (IT Admins)
 ms.reviewer: rahulnayak
 ms.date: 07/28/2023
-ms.author: mikeplum
-author: MikePlumleyMSFT
+ms.author: jtremper
+author: jacktremper
 manager: pamgreen
 audience: Admin
 ms.topic: article

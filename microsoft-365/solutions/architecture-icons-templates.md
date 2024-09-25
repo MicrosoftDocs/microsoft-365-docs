@@ -12,7 +12,7 @@ ms.custom:
 f1.keywords: NOCSH
 ms.collection: 
 - highpri
-ms.date: 09/22/2022
+ms.date: 04/30/2024
 ---
 
 # Microsoft 365 architecture templates and icons

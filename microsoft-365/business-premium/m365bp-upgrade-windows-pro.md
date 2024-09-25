@@ -7,12 +7,12 @@ author: chrisda
 manager: deniseb
 audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-business
+ms.service: microsoft-365-business-security
 ms.collection:
-- tier1
+- tier2
 - m365-security
-ms.date: 04/20/2023
-localization_priority: Normal
+ms.date: 05/31/2024
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150

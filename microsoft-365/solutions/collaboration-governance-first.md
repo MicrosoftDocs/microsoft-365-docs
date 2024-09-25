@@ -2,8 +2,8 @@
 title: Create your collaboration governance plan
 ms.reviewer: rahulnayak
 ms.date: 07/27/2023
-ms.author: mikeplum
-author: MikePlumleyMSFT
+ms.author: jtremper
+author: jacktremper
 manager: pamgreen
 audience: Admin
 ms.topic: article

@@ -108,7 +108,7 @@ As you manage your team site, you might need to add or remove users.
   
 ## Next steps
 
-To edit files that are stored on your team site from your tablet or phone, you must set up Microsoft 365 apps on your devices. If you don't install the Microsoft 365 apps for your tablet or phone, you'll be able to view the files but not edit them. 
+To edit files that are stored on your team site from your tablet or phone, you must set up apps in Microsoft 365 on your devices. If you don't install the apps for your tablet or phone, you'll be able to view the files but not edit them.
     
   - [Install and set up Microsoft 365 on an Android](https://support.microsoft.com/office/cafe9d6f-8b0c-4b03-b20a-12438a82a22d).
   - [Install and set up Microsoft 365 on an iPhone or iPad](https://support.microsoft.com/office/9df6d10c-7281-4671-8666-6ca8e339b628).

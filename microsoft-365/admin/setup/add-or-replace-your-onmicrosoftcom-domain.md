@@ -49,11 +49,11 @@ It serves as a default email routing address for your Microsoft 365 environment.
 
 You can change your fallback domain in the Microsoft 365 admin center. Common reasons customers change their fallback domain include:
 
-- Not knowing the company name to use when they first signed up for Microsoft 365. Now that they know the company name, they want their users to have login account names that are appropriate. 
-- They want to change how their SharePoint URLs look like when they create a new site. SharePoint URLs in your Microsoft 365 environment are created based on your fallback domain name. If you did not use the correct company name when you first signed up, your SharePoint URLs for your sites will continue to use that name when you create new SharePoint sites. 
+- Not knowing the company name to use when they first signed up for Microsoft 365. Now that they know the company name, they want their users to have sign in account names that are appropriate. 
+- They want to change how their SharePoint URLs look like when they create a new site. SharePoint URLs in your Microsoft 365 environment are created based on your fallback domain name. If you didn't use the correct company name when you first signed up, your SharePoint URLs for your sites continue to use that name when you create new SharePoint sites.
 
 
-While you can add additional onmicrosoft.com domains, only one onmicrosoft.com domain can be used as your fallback domain. The steps in this article describe how to:
+While you can add more onmicrosoft.com domains, only one onmicrosoft.com domain can be used as your fallback domain. The steps in this article describe how to:
 - Create a new onmicrosoft.com domain
 - Assign it as your fallback domain
 
@@ -62,7 +62,7 @@ While you can add additional onmicrosoft.com domains, only one onmicrosoft.com d
   
 ## Before you begin
 
-To add, modify, or remove domains, you **must** be a **Domain Name Administrator** or **Global Administrator** of a [business or enterprise plan](https://products.office.com/business/office). These changes affect the whole tenant; *Customized administrators* or *regular users* won't be able to make these changes.
+To add, modify, or remove domains, you **must** be a **Domain Name Administrator** of a [business or enterprise plan](https://products.office.com/business/office). These changes affect the whole tenant; *Customized administrators* or *regular users* aren't able to make these changes.
 
 
 ## Add a new onmicrosoft.com domain
@@ -83,7 +83,7 @@ To add, modify, or remove domains, you **must** be a **Domain Name Administrator
     > [!NOTE]
     > Make sure to verify the spelling and accuracy of the domain name you entered. You are limited to five onmicrosoft.com domains, and currently they cannot be deleted once they are created.     
 
-5. Select **Add domain**. When successfully added, you will see a message stating this. 
+5. Select **Add domain**. When successfully added, you'll see a message stating this.
     
     ![Screenshot of domain added successfully.](../../media/domain-added.png)
 
@@ -95,11 +95,11 @@ To add, modify, or remove domains, you **must** be a **Domain Name Administrator
 > [!NOTE]
 > Before changing your fallback domain to a new onmicrosoft.com domain, you may want to consider changing your onmicrosoft.com SharePoint domain. Creating an additional onmicrosoft domain and using it as your fallback domain will not do a rename for SharePoint Online. Your existing SharePoint and OneDrive URLs will remain the same.  You are able to change your.onmicrosoft SharePoint domain through the PowerShell steps provided in [SharePoint domain rename preview](/sharepoint/change-your-sharepoint-domain-name) (currently available to any tenant with less than 10,000 sites).
 
-After you have created your new onmicrosoft.com domain, do the following to change it to your fallback domain.
+After you create your new onmicrosoft.com domain, do the following to change it to your fallback domain.
 
 1. In the Microsoft 365 admin center, select **Settings**, and then select **Domains**. 
 
-2. Select the new onmicrosoft.com domain you had created.
+2. Select the new onmicrosoft.com domain that you created.
 
     ![Select a domains.](../../media/onmicrosoft-domains-added.png) 
 
@@ -107,7 +107,7 @@ After you have created your new onmicrosoft.com domain, do the following to chan
  
     ![Screenshot of selecting a new fallback domain.](../../media/new-fallback.png) 
 
-4. A message will display on the page stating that your fallback domain has changed to the new domain.
+4. A message displays on the page stating that your fallback domain has changed to the new domain.
 
     ![Successfully added new fallback domain.](../../media/fallback-success.png) 
 

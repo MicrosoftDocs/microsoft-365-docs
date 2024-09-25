@@ -53,7 +53,7 @@ When you convert a user's mailbox to a shared mailbox, all of the existing email
 
 ## Use the Exchange admin center to convert a mailbox
 
-1. Go to the <a href="https://admin.exchange.microsoft.com/#/homepage" target="_blank"> Exchange admin center</a>.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
 
 2. Select **Recipients** \> **Mailboxes**.
 

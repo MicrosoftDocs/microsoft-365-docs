@@ -7,6 +7,7 @@ ms.date: 03/01/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -20,7 +21,6 @@ ms.custom:
   - seo-marvel-apr2020
   - admindeeplinkMAC
   - has-azure-ad-ps-ref
-  - azure-ad-ref-level-one-done
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: "Summary: Use PowerShell for Microsoft 365 to add an alternate domain name to an existing customer tenant."
 ---
@@ -64,7 +64,7 @@ This command creates the domain in Microsoft Entra ID but doesn't associate it w
 >[!NOTE]
 > The Azure Active Directory module is being replaced by the Microsoft Graph PowerShell SDK. You can use the Microsoft Graph PowerShell SDK to access all Microsoft Graph APIs. For more information, see [Get started with the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started).
 
-First, use a **Microsoft Entra DC admin**, **Cloud Application Admin**, or **Global admin** account to [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md).
+First, use a **Microsoft Entra DC admin** or **Cloud Application Admin** account to [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md).
 
 Assigning and removing licenses for a user requires the **Domain.ReadWrite.All** permission scope or one of the other permissions listed in the ['Assign license' Graph API reference page](/graph/api/user-assignlicense).
 
@@ -82,14 +82,14 @@ New-MgDomain -Id <customer TenantId> -DomainNameReferences <FQDN of new domain>
 
 ### Get the data for the DNS TXT verification record
 
- Microsoft 365 will generate the specific data that you need to place into the DNS TXT verification record. To get the data, run this command.
+ Microsoft 365 generates the specific data that you need to place into the DNS TXT verification record. To get the data, run this command.
 
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 (Get-MgDomainVerificationDnsRecord -DomainId <domain ID, i.e. contoso.com> | Where-Object {$_.RecordType -eq "Txt"}).AdditionalProperties.text
 ```
 
-This will give you output like:
+This command gives you output like:
 
  `MS=ms########`
 
@@ -106,7 +106,7 @@ Confirm the successful creation of the TXT record via nslookup. Follow this synt
 nslookup -type=TXT <FQDN of registered domain>
 ```
 
-This will give you output like:
+This command gives you output like:
 
  `Non-authoritative answer:`
 
@@ -122,7 +122,7 @@ In this last step, you validate to Microsoft 365 that you own the publically reg
 Confirm-MgDomain -DomainId <FQDN of new domain> -InputObject @{TenantId=<customer TenantId>}
 ```
 
-This command won't return any output, so to confirm that this worked, run this command.
+This command doesn't return any output, so to confirm that the command worked, run this command.
 
 ```powershell
 Get-MgDomain -DomainId <FQDN of new domain>

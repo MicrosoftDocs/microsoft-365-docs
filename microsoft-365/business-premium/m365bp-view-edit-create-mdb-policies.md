@@ -7,15 +7,15 @@ author: siosulli
 manager: deniseb
 audience: Admin
 ms.topic: overview
-ms.service: microsoft-365-business
-ms.date: 07/19/2023
+ms.service: microsoft-365-business-security
+ms.date: 05/31/2024
 ms.localizationpriority: medium
 ms.reviewer: nehabha
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security
-- tier1
+- tier2
 ---
 
 # View and edit device protection policies
@@ -47,7 +47,7 @@ These policies are part of Microsoft Defender for Business, included in your Mic
 
 ## Working with device policies in the Microsoft Defender portal
 
-The following details apply to working with your policies in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
+The following details apply to working with your policies in the Microsoft Defender portal (<https://security.microsoft.com>).
 
 :::image type="content" source="media/m365defender.png" alt-text="Screenshot of the Microsoft Defender portal." lightbox="media/m365defender.png":::
 
@@ -55,7 +55,7 @@ The following details apply to working with your policies in the Microsoft Defen
 
 ### View existing device protection policies in Microsoft Defender XDR
 
-1. In the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**).
+1. In the Microsoft Defender portal (<https://security.microsoft.com>), in the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**).
 
     :::image type="content" source="../media/mdb-deviceconfiguration.png" lightbox="../media/mdb-deviceconfiguration.png" alt-text="The Device configuration page.":::
 
@@ -69,7 +69,7 @@ The following details apply to working with your policies in the Microsoft Defen
 
 ### Edit an existing device protection policy in Microsoft Defender XDR
 
-1. In the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**).
+1. In the Microsoft Defender portal (<https://security.microsoft.com>), in the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**).
 
 2. Select an operating system tab (for example, **Windows clients**), and then review the list of policies under the **Next-generation protection** and **Firewall** categories.
 
@@ -102,7 +102,7 @@ The following details apply to working with your policies in the Microsoft Defen
 
 ### Create a new device protection policy in Microsoft Defender XDR
 
-1. In the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**).
+1. In the Microsoft Defender portal (<https://security.microsoft.com>), in the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**).
 
 2. Select an operating system tab (for example, **Windows clients**), and then review the list of **Next-generation protection** policies.
 
@@ -132,13 +132,13 @@ The following details apply to working with your policies in the Microsoft Defen
 
 ## Working with device policies in the Microsoft Intune admin center
 
-Use the following information to create and manage device policies in Intune, done through Endpoint security in the Microsoft Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com)).
+Use the following information to create and manage device policies in Intune, done through Endpoint security in the Microsoft Intune admin center (<https://intune.microsoft.com>).
 
 :::image type="content" source="media/intune-admin-center.png" alt-text="Screenshot of the Intune admin center." lightbox="media/intune-admin-center.png":::
 
 ### Create policies in Intune
 
-1. In the Microsoft Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com)), select **Endpoint security** and the type of policy you want to configure, and then select **Create Policy**.
+1. In the Microsoft Intune admin center (<https://intune.microsoft.com>), select **Endpoint security** and the type of policy you want to configure, and then select **Create Policy**.
 
 2. Choose from the following policy types:
 
@@ -166,13 +166,13 @@ Use the following information to create and manage device policies in Intune, do
 
 ### Duplicate a policy in Intune
 
-1. In the Microsoft Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com)), select the policy that you want to copy. Next, select **Duplicate** or select the ellipsis **(...)** to the right of the policy and select **Duplicate**.
+1. In the Microsoft Intune admin center (<https://intune.microsoft.com>), select the policy that you want to copy. Next, select **Duplicate** or select the ellipsis **(...)** to the right of the policy and select **Duplicate**.
 
 2. Provide a New name for the policy, and then select **Save**.
 
 ### Edit a policy in Intune
 
-1. In the Microsoft Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com)), select a policy, and then select **Properties**.
+1. In the Microsoft Intune admin center (<https://intune.microsoft.com>), select a policy, and then select **Properties**.
 
 2. Select **Settings** to expand a list of the configuration settings in the policy. You can't modify the settings from this view, but you can review how they're configured.
 

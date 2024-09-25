@@ -7,7 +7,7 @@ manager: scotv
 ms.reviewer: stutisingh
 ms.date: 07/17/2023
 audience: Admin
-ms.topic: article
+ms.topic: concept-article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
