@@ -1,7 +1,7 @@
 ---
 title: "User experience in a multi-geo environment"
 ms.reviewer:
-ms.date: 12/11/2023
+ms.date: 09/25/2024
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -97,8 +97,14 @@ The people picker experience shows all users regardless of their _Geography_ loc
 
 Microsoft Teams is a Multi-Geo service. OneDrive files and recently viewed files are shown regardless of the user's _Geography_ location. @ mentions work with users from all _Geography_ locations.
 
-## User profiles
+## Microsoft 365 Person experience in a multi-geo environment 
 
-User profile information is mastered in the user's _Geography_ location. When selecting a user, you'll be directed to the appropriate _Geography_ location for the user, where you'll see their full profile details.
+The **Microsoft 365 Person** encompasses the complete set of properties, attributes and associated people contacts that are representative of a user in the Microsoft 365 tenant. The Microsoft 365 Person dataset is mastered and stored in the Primary Data Location of the user.
 
-If Office Delve is turned off, you'll see the classic profile experience in SharePoint, which isn't Multi-Geo aware.
+There are two constituents of the Microsoft 365 Person data:
+
+- Microsoft 365 Profile (https://learn.microsoft.com/en-us/graph/api/resources/profile?view=graph-rest-beta), which constitutes the information that can be viewed by other users within the tenant about the Microsoft 365 person. This includes the user's Entra ID details along with other information like position and photo (https://aka.ms/profileimage). The fields and attributes that are exposed can be controlled by the tenant admin (https://learn.microsoft.com/en-us/graph/add-properties-profilecard).
+
+- My Microsoft 365 People dataset which represents the list of the user's Microsoft 365 contacts (https://learn.microsoft.com/en-us/graph/api/resources/contact?view=graph-rest-1.0) along with the user’s version of their contacts' Microsoft 365 profile. This edited or unedited version of another user’s profile will always remain private in the current user’s mailbox and will not be replicated anywhere.
+
+To enable discovery, rich people search, and full fidelity collaboration experiences, the Microsoft 365 profile of users in the tenant is replicated across geos when a Multi-Geo tenant is first set up (for instance, to provide the Global Address List) and in response to user actions. Examples of user actions include direct and indirect interactions with one or more users in the tenant via activities like joining the Organization, creating and\or joining Teams meetings, sharing and\or co-editing files, profile card lookup, and adding of contacts as described in [Add, find, edit, or delete a contact in Outlook](https://support.microsoft.com/office/add-find-edit-or-delete-a-contact-in-outlook-e1dc4548-3bd6-4644-aecd-47b5728f7b0d#:~:text=information%20any%20time.-,Select%20the%20contact%20from%20the%20list%2C%20then%20select%20Edit%20contact,and%20begin%20adding%20more%20information.&text=someone's%20profile%20card-,In%20Mail%2C%20open%20an%20email%20message%20in%20the%20reading%20pane,card%2C%20select%20Add%20to%20contacts.). The replicated Microsoft 365 profiles of other users from an interaction\collaboration are stored in the Microsoft 365 People dataset of the target user shard.
