@@ -62,20 +62,7 @@ The following table represents which apps and services are currently connected t
 |**Viva Insights**|Yes|Yes|Yes|Yes|
 |**Viva Pulse**|Yes|Yes|Yes|Yes|
 
-## Before you begin
-
-Your devices must be on a minimum build number listed in the following table to use these policies.
-
-|**Build #**|**Win32**|**iOS**|**Android**|**Mac**|**Web**|
-|:-----|:-----|:-----|:-----|:-----|:-----|
-|In-product feedback|At least Version 2010|At least 2.42|At least 16.0.13328|At least 16.42|Publicly available|
-|In-product surveys|At least Version 2010|At least 2.42|At least 16.0.13426|At least 16.42|Pending rollout|
-|Metadata collection|At least Version 2010|At least 2.42|At least 16.0.13328|At least 16.42|Publicly available|
-|Customer engagement|At least Version 2010|At least 2.42|At least 16.0.13426|At least 16.42|Pending rollout|
-
-## Specific policies you can configure
-
-### Feedback policies
+## Feedback policies
 
 |**Policy name**|**Default state**|**Control summary**|
 |:-----|:-----|:-----|
@@ -103,7 +90,7 @@ You can find these policy settings under User Configuration\Policies\Administrat
 > [!NOTE]
 > It takes a few hours for the client applications to update.
 
-### User experience examples
+## User experience examples
 
 :::image type="content" source="../../media/feedbackexamplesfg1.png" alt-text="Screenshot: Example of user feedback submission to Microsoft":::
 
