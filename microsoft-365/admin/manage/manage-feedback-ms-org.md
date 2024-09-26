@@ -31,7 +31,7 @@ As the admin of a Microsoft 365 organization, there are several policies to help
 
 To learn more about the types of feedback and how Microsoft uses user feedback, see [Learn about Microsoft feedback for your organization](../misc/feedback-user-control.md).
 
-The table below represents which apps and services are currently connected to the feedback policies shown in the feedback policies table below. See below the table for screenshot examples.
+The following table represents which apps and services are currently connected to the feedback policies shown in the [Feedback policies table](#feedback-policies). For examples of in-product feedback and surveys, see [Feedback types](/microsoft-365/admin/misc/feedback-user-control#feedback-types).
 
 |**Apps & Services**|**In-product feedback** <br> |**In-product surveys** <br> |**Metadata collection** <br> |**Customer engagement** <br> |
 |:-----|:-----|:-----|:-----|:-----|
@@ -62,12 +62,9 @@ The table below represents which apps and services are currently connected to th
 |**Viva Insights**|Yes|Yes|Yes|Yes|
 |**Viva Pulse**|Yes|Yes|Yes|Yes|
 
-
-[See here for some examples of in-product surveys and feedback.](/microsoft-365/admin/misc/feedback-user-control#in-product-surveys)
-
 ## Before you begin
 
-Your devices must be on a minimum build number to use these policies. See the table below for more information.
+Your devices must be on a minimum build number listed in the following table to use these policies.
 
 |**Build #**|**Win32**|**iOS**|**Android**|**Mac**|**Web**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
@@ -85,9 +82,9 @@ Your devices must be on a minimum build number to use these policies. See the ta
 |Allow users to access feedback portal|On|Manage user access to the feedback portal where users can follow up on their feedback and participate in community feedback.|
 |Allow users to submit feedback to Microsoft|On|Controls feedback entry points across applications.|
 |Allow users to receive and respond to in-product surveys from Microsoft|On|Controls survey prompts within product.|
-|Allow users to include screenshots and attachments when they submit feedback to Microsoft|On|Allows users to choose relevant files, screen recordings and screenshots to help Microsoft better understand and troubleshoot their feedback.|
+|Allow users to include screenshots and attachments when they submit feedback to Microsoft|On|Allows users to choose relevant files, screen recordings, and screenshots to help Microsoft better understand and troubleshoot their feedback.|
 |Allow Microsoft to follow up on feedback submitted by users|On|Determines if user can share contact info with feedback/survey for follow-up by Microsoft. Also allows users to get notified of feedback status changes. Users can manage communications settings in the feedback portal.|
-|Allow users to include log files and content samples when feedback is submitted to Microsoft|On|Allows users to include Microsoft generated files such as additional log files and content samples when relevant to feedback they are submitting. Examples may include [Microsoft 365 Copilot](https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/) prompt and response interactions.|
+|Allow users to include log files and content samples when feedback is submitted to Microsoft|On|Allows users to include Microsoft generated files such as additional log files and content samples when relevant to feedback they're submitting. Examples may include [Microsoft 365 Copilot](https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/) prompt and response interactions.|
 
 > [!NOTE]
 > The **Allow users to access the feedback portal** policy is a cloud policy. This policy isn't defined in ADMX and doesn't have a corresponding registry key available to set the policy. You should create a cloud policy to enforce it. This is a cloud policy because the feedback portal is a web application that makes a call to the cloud policy service, which is also a web application, requesting the policies for the person who signs in. If this policy is configured, the feedback portal will receive the configured policy value in the response from the cloud policy service.
