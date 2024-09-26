@@ -39,6 +39,8 @@
         href: flw-devices.md
       - name: Manage shared devices
         href: flw-shared-devices.md
+      - name: Limit access to Teams when workers are off shift
+        href: flw-working-time.md
       - name: Sign in to Teams
         href: /microsoftteams/sign-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
       - name: Sign out of Teams
