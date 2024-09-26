@@ -50,6 +50,8 @@ Translation in Syntex is available for [all supported languages and dialects](/a
 
 - Password-protected files aren't translated.
 
+- Translation actions are also available in OneDrive.
+
 - On-demand translation on folders will be available in a future release.
 
 ### Frequently asked questions
