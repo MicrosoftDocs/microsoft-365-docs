@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: anrasto, shrganguly
-ms.date: 06/12/2024
+ms.date: 09/26/2024
 ms.topic: conceptual
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
@@ -47,6 +47,8 @@ By default, content assembly is available for libraries on all SharePoint sites.
 
 3. On the **Automate content processes with Syntex** page, select **Go to Syntex settings**.
 
-4. On the Syntex page, under **Document & image services**, select **Content assembly**.
+4. On the Syntex page, in the **Document & image services** section, select **Content assembly**.
 
-5. On the **Content assembly** pane;, select **No sites**, and then select **Save**.
+5. On the **Content assembly** panel, select **Edit**.
+
+6 On the **Which SharePoint sites should show the option to create templates and generate documents**, select **No libraries**, and then select **Save**.
