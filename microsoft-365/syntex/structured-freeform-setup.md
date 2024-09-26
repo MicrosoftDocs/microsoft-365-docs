@@ -48,7 +48,7 @@ By default, structured and default document processing is turned on for librarie
 
 3. On the **Automate content processes with Syntex** page, select **Go to Syntex settings**.
 
-4. On the Syntex page, under **Documents & images**, select **Structured and freeform document processing**.
+4. On the Syntex page, in the **Document & image services** section, select **Structured and freeform document processing**.
 
 5. On the **Structured and freeform document processing** panel:
 
