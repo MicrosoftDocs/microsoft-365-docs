@@ -48,7 +48,7 @@ By default, unstructured document processing is turned on for libraries in all S
 
 3. On the **Automate content processes with Syntex** page, select **Go to Syntex settings**.
 
-4. On the Syntex page, under **Documents & images**, select ***Unstructured document processing**.
+4. On the Syntex page, in the **Document & image services** section, select ***Unstructured document processing**.
 
 5. On the **Unstructured document processing** panel:
 
