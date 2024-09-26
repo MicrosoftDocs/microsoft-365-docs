@@ -58,7 +58,6 @@ The table below represents which apps and services are currently connected to th
 |**Viva Goals**|Yes|Yes|Yes|Yes|
 |**Viva Insights**|Yes|Yes|Yes|Yes|
 |**Viva Pulse**|Yes|Yes|Yes|Yes|
-|**Whiteboard**|Yes|Yes|Yes|Yes|
 
 
 [See here for some examples of in-product surveys and feedback.](/microsoft-365/admin/misc/feedback-user-control#in-product-surveys)
