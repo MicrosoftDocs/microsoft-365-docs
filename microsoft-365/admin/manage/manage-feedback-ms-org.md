@@ -62,9 +62,7 @@ The following table represents which apps and services are currently connected t
 |**Viva Insights**|Yes|Yes|Yes|Yes|
 |**Viva Pulse**|Yes|Yes|Yes|Yes|
 
-## Specific policies you can configure
-
-### Feedback policies
+## Feedback policies
 
 |**Policy name**|**Default state**|**Control summary**|
 |:-----|:-----|:-----|
@@ -92,7 +90,7 @@ You can find these policy settings under User Configuration\Policies\Administrat
 > [!NOTE]
 > It takes a few hours for the client applications to update.
 
-### User experience examples
+## User experience examples
 
 :::image type="content" source="../../media/feedbackexamplesfg1.png" alt-text="Screenshot: Example of user feedback submission to Microsoft":::
 
