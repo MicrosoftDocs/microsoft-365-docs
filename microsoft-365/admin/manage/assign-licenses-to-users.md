@@ -31,7 +31,7 @@ ms.custom:
 - GAUpdates
 search.appverid: MET150
 description: "Learn how to assign or unassign licenses for your users in the Microsoft 365 admin center."
-ms.date: 10/20/2023
+ms.date: 09/23/2024
 ---
 
 # Assign or unassign licenses for users in the Microsoft 365 admin center
