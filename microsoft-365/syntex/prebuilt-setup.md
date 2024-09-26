@@ -50,7 +50,7 @@ Follow these steps to limit on which sites users can create prebuilt models to p
 
 3. On the **Automate content processes with Syntex** page, select **Go to Syntex settings**.
 
-4. On the Syntex page, under **Documents & images**, select **Prebuilt document processing**.
+4. On the Syntex page, in the **Document & image services** section, select **Prebuilt document processing**.
 
 5. On the **Prebuilt document processing** panel:
 
