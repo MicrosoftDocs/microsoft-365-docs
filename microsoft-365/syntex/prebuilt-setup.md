@@ -54,7 +54,7 @@ Follow these steps to limit on which sites users can create prebuilt models to p
 
 5. On the **Prebuilt document processing** panel:
 
-    a. On the **Sites** tab, choose which site or sites on which this service should be enabled.
+    a. On the **Sites** tab, choose the site or sites on which this service should be enabled.
 
     > [!NOTE]
     > Disabling a site after a model is made available to process files on that site will not disable the model. Models can still be used to process files and incur charges. A model can be made available to process files by being created on that site or in a content center.
