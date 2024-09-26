@@ -3,7 +3,7 @@ title: Plan for multitenant organizations in Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 08/17/2023
+ms.date: 06/24/2024
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -19,11 +19,13 @@ description: Learn how to plan for multitenant organizations in Microsoft 365.
 # Plan for multitenant organizations in Microsoft 365
 
 > [!NOTE]
-> Multitenant organizations is not available in Microsoft 365 GCC, GCC High, DoD, or Microsoft 365 China (operated by 21Vianet).
-
+> Multitenant organizations is not available in Microsoft 365 China (operated by 21Vianet).
 If your organization manages multiple Microsoft 365 tenants, you can set up a multitenant organization in Microsoft 365 to facilitate collaboration and resource access between tenants. Creating a multitenant organization and synchronizing users between tenants provides a more seamless collaboration experience between the users in different tenants when [searching for each other](/microsoft-365/enterprise/multi-tenant-people-search), using Microsoft Teams and meetings, and collaborating on files.
 
 The tenant that creates the multitenant organization is known as the *owner* while other tenants that join the multitenant organization are known as *members*. Once the global administrator in the owner tenant creates the multitenant organization, they can invite member tenants. A global administrator in each member tenant can then join the multitenant organization.
+
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
 
 While you configure Microsoft 365 multitenant organizations in the Microsoft 365 admin center, much of the supporting infrastructure is in Microsoft Entra ID. For details about how multitenant organizations work in Microsoft Entra ID, see [What is a multitenant organization in Microsoft Entra ID?](/azure/active-directory/multi-tenant-organizations/multi-tenant-organization-overview) and [Topologies for cross-tenant synchronization](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-topology).
 

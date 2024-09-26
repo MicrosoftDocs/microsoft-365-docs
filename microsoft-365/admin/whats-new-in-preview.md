@@ -84,7 +84,7 @@ Use this data to decide which help articles and training resources to share with
 
 There are a couple of ways to get the Experience insights dashboard page:
 
-- If you’re a member of the Global admin or Global reader roles, when you sign in to the Microsoft 365 admin center, you’ll see a one-time prompt to go to the Experience insights (preview) dashboard. You can access it at any time by selecting Experience insights (preview) from the admin home page.
+- If you’re a member of the Global reader roles, when you sign in to the Microsoft 365 admin center, you’ll see a one-time prompt to go to the Experience insights (preview) dashboard. You can access it at any time by selecting Experience insights (preview) from the admin home page.
 
 - If you’re a member of the Reports reader role or the User Experience success manager roles, once you sign into the admin center, you’ll automatically go to the Experience insights (preview) dashboard page. You can switch back to the admin center Dashboard view by selecting that option in the top right.
 

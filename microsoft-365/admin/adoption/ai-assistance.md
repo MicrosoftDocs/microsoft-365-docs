@@ -29,7 +29,7 @@ description: "Learn about the AI assistance category in Adoption Score."
 
 With AI rapidly entering the day-to-day experience of people in your organization, you'll see a new People Experiences category called AI assistance, set to roll out in the coming weeks.
 
-First, it offers a score, on a 100-point scale, to quickly assess how well people in your organization are adopting Microsoft Copilot for Microsoft 365.
+First, it offers a score, on a 100-point scale, to quickly assess how well people in your organization are adopting Microsoft 365 Copilot.
 
 You can dive deeper into what makes up your AI assistance score by looking at the specific features and activities that drive impact, like how well your organization is using Copilot to summarize and create content in your organization, including Teams meetings, Chat, email in Outlook, documents in Word or PowerPoint, and more.
 
@@ -93,7 +93,15 @@ In this section, you can upload Copilot survey results to have them displayed in
 
 Use this feature to provide your organizational leaders with a centralized location for insights on how users feel about the AI assistance they receive from Copilot.
 
+This feature is only available for Global administrators. Users without this role cannot see it in the Microsoft 365 admin center.
+
 ### Upload survey data
+
+To access the Sentiment survey upload feature in the Microsoft 365 admin center, follow these steps:
+
+1. In the Microsoft 365 admin center, go to **Reports** > **Adoption Score**.
+2. Navigate to AI assistance and select **View details**.
+3. On the AI assistance page, navigate to **Assess Copilot sentiment for your org** and select **Record survey results**.
 
 :::image type="content" source="../../media/as-upload-survey.png" alt-text="Screenshot showing the dashboard to upload survey data for Copilot sentiment" lightbox="../../media/as-upload-survey.png":::
 

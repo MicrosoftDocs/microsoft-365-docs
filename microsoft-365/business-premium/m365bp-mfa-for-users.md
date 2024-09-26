@@ -30,7 +30,7 @@ Multifactor authentication (MFA) provides increased security because instead of 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR]
 
-See more at [Set up multifactor authentication in Microsoft 365 Business Premium](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)
+See more at [Set up your Microsoft 365 sign-in for multi-factor authentication](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
 
 ## Use the Outlook app on your devices
 

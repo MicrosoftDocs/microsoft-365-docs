@@ -3,7 +3,7 @@ title: Step 2. Optimal networking for your Microsoft 365 for enterprise tenants
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 04/05/2024
+ms.date: 08/15/2024
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -23,7 +23,7 @@ description: "Optimize the network access to your Microsoft 365 tenants."
 
 # Step 2. Optimal networking for your Microsoft 365 for enterprise tenants
 
-Microsoft 365 for enterprise includes cloud productivity apps such as Teams and Exchange Online, and Microsoft Intune, along with many identity and security services of Microsoft Azure. All of these cloud-based services rely on the security, performance, and reliability of connections from client devices on your on-premises network or any location on the Internet. 
+Microsoft 365 for enterprise includes cloud productivity apps such as Teams and Exchange Online, and Microsoft Intune, along with many identity and security services of Microsoft Azure. All of these cloud-based services rely on the security, performance, and reliability of connections from client devices on your on-premises network or any location on the Internet.
 
 To optimize network access for your tenant, you need to:
 
@@ -78,7 +78,7 @@ If your remote workers are using a traditional VPN client to obtain remote acces
 
 ![Network traffic from VPN clients without tunneling.](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-before-tunneling.png)
 
-In this illustration, Microsoft 365 traffic must take an indirect route through your organization, which could be forwarded to a Microsoft Global Network front door far away from the VPN client's physical location. This indirect path adds latency to the network traffic and decreases overall performance. 
+In this illustration, Microsoft 365 traffic must take an indirect route through your organization, which could be forwarded to a Microsoft Global Network front door far away from the VPN client's physical location. This indirect path adds latency to the network traffic and decreases overall performance.
 
 With split tunneling, you can configure your VPN client to exclude specific types of traffic from being sent over the VPN connection to the organization network.
 
@@ -92,7 +92,7 @@ In this illustration, the VPN client sends and receives crucial Microsoft 365 cl
 
 For more information and guidance, see [Optimize Office 365 connectivity for remote users using VPN split tunneling](../enterprise/microsoft-365-vpn-split-tunnel.md).
 
-## Using Network Insights (preview)
+## Using Network Insights
 
 Network insights are performance metrics collected from your Microsoft 365 tenant that help you design network perimeters for your office locations. Each insight provides live details about the performance characteristics for a specified issue for each geographic location where on-premises users are accessing your tenant.
 
@@ -109,9 +109,6 @@ These are the specific network insights for each office location:
 - [Use of a non-optimal SharePoint Online service front door](../enterprise/office-365-network-mac-perf-insights.md#use-of-a-nonoptimal-sharepoint-service-front-door)
 - [Low download speed from SharePoint front door](../enterprise/office-365-network-mac-perf-insights.md#low-download-speed-from-sharepoint-front-door)
 - [China user optimal network egress](../enterprise/office-365-network-mac-perf-insights.md#china-user-optimal-network-egress)
-
-> [!IMPORTANT]
-> Network insights, performance recommendations and assessments in the Microsoft 365 Admin Center is currently in preview status. It is only available for Microsoft 365 tenants that have been enrolled in the feature preview program.
 
 For more information, see [Microsoft 365 Network Insights](../enterprise/office-365-network-mac-perf-insights.md).
 

@@ -38,7 +38,7 @@ Before you deploy for the first time or migrate to Microsoft 365, you can use th
 
 Once you have Microsoft 365 deployed, you can optimize your performance by using the articles in this section. If you experience performance degradation you can also use these articles to troubleshoot issues.
   
- **[Tune Office 365 performance](tune-microsoft-365-performance.md)**: For information about using network address translation with Office 365, see [NAT support with Office 365](nat-support-with-microsoft-365.md). Also, take a look at the [top 10 tips for optimizing and troubleshooting your Office 365 network connectivity](/archive/blogs/onthewire/top-10-tips-for-optimising-troubleshooting-your-office-365-network-connectivity).
+ For information about using network address translation with Office 365, see [NAT support with Office 365](nat-support-with-microsoft-365.md). Also, take a look at the [top 10 tips for optimizing and troubleshooting your Office 365 network connectivity](/archive/blogs/onthewire/top-10-tips-for-optimising-troubleshooting-your-office-365-network-connectivity).
   
  **[Tune Exchange Online performance](tune-exchange-online-performance.md)**: Use these articles to fine tune Exchange Online performance.
 

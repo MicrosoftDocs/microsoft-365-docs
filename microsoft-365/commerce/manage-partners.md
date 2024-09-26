@@ -20,6 +20,7 @@ ms.custom:
 - commerce_purchase
 - AdminSurgePortfolio
 - admindeeplinkMAC
+- GAUpdates
 search.appverid: MET150
 description: "Learn how to work with Microsoft-certified solution providers (partners) to buy and manage products and services for your organization or school."
 ms.date: 06/03/2024
@@ -29,13 +30,13 @@ ms.date: 06/03/2024
 
 You can work with Microsoft-certified solution providers (partners) to buy and manage products and services for your organization or school. There are a few steps involved in getting things set up.
 
-1. Admins find and contact a partner using the form at <a href="https://www.microsoft.com/solution-providers/home" target="_blank">https://www.microsoft.com/solution-providers/home</a>.
+1. Admins find and contact a partner at <a href="https://appsource.microsoft.com/marketplace/partner-dir" target="_blank">https://appsource.microsoft.com/marketplace/partner-dir</a>.
 2. Partners send an email request to customers to establish a partner relationship.
 3. Customers accept the invitation in Microsoft 365 admin center and start working with the partner.
 
 ## Before you begin
 
-You must be either a Global or Billing admin to do these steps. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).
+You must be at least a Billing Administrator to do these steps. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).
 
 ## What can a partner do for my organization or school?
 

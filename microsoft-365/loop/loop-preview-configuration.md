@@ -3,14 +3,14 @@ ms.date: 02/29/2024
 title: "Manage Loop app preview"
 ROBOTS: NOINDEX, NOFOLLOW
 ms.reviewer: dancost, rekeys
-ms.author: jtremper
-author: jacktremper
-manager: dansimp
+ms.author: jenz
+author: jenzamora
+manager: jtremper
 recommendations: true
 audience: Admin
 f1.keywords:
 - NOCSH
-ms.service: sharepoint-online
+ms.service: loop
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.collection:
@@ -45,7 +45,7 @@ If you prefer, you can also create other types of groups to use with Cloud Polic
 
 ## Configuring preview user accounts in Cloud Policy
 
-The Loop app oreview gate checks the following [Cloud Policy](/deployoffice/admincenter/overview-cloud-policy) setting:
+The Loop app preview gate checks the following [Cloud Policy](/deployoffice/admincenter/overview-cloud-policy) setting:
 
 - **Enable preview features for Loop**
 

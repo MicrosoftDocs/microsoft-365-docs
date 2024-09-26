@@ -3,7 +3,7 @@ title: "Delay loading images and JavaScript in SharePoint"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/3/2019
+ms.date: 08/01/2024
 audience: Admin
 ms.topic: troubleshooting
 ms.service: microsoft-365-enterprise
@@ -13,6 +13,7 @@ ms.collection:
 - scotvorg
 - Ent_O365
 - SPO_Content
+- must-keep
 f1.keywords:
 - CSH
 ms.custom: 

@@ -64,7 +64,7 @@ You can choose to trust conditional access settings from all other Microsoft 365
 If you want to trust conditional access settings from all organizations, follow this procedure.
 
 To trust conditional access settings from all Microsoft Entra organizations
-1. Sign in to [Microsoft Entra ID](https://entra.microsoft.com) using a Global Administrator or Security Administrator account.
+1. Sign in to [Microsoft Entra ID](https://entra.microsoft.com) using a Security Administrator account.
 1. Expand **External Identities**, and then select **Cross-tenant access settings**.
 1. Select the **Default settings** tab.
 1. Under **Inbound access settings**, select **Edit inbound defaults**.
@@ -77,7 +77,7 @@ To trust conditional access settings from all Microsoft Entra organizations
 If you want to trust conditional access settings from a specific organization, follow this procedure.
 
 To trust conditional access settings from a specific organization
-1. Sign in to [Microsoft Entra ID](https://entra.microsoft.com) using a Global Administrator or Security Administrator account.
+1. Sign in to [Microsoft Entra ID](https://entra.microsoft.com) using a Security Administrator account.
 1. Expand **External Identities**, and then select **Cross-tenant access settings**.
 1. Select the **Inbound access** settings for the organization where you want to trust conditional access settings.
 1. Select the **Trust settings** tab.

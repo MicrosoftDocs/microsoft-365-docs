@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: sharonchoi
-ms.date: 5/13/2024
+ms.date: 08/29/2024
 audience: Admin
 ms.topic: whats-new
 ms.service: microsoft-365-lighthouse
@@ -32,6 +32,44 @@ We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighth
 >
 > To see which new features are currently available in your partner tenant, go to the **Home** page of Microsoft 365 Lighthouse, and then either select the **What's new** link in the upper-right corner of the page or select **What's new** on the **What's new & learning resources** card.
 
+## August 2024
+
+### Access mailbox storage information from the tenant details page
+
+Our enhanced tenant details page now lets you track mailbox storage usage for users and shared mailboxes in your customer tenants. This feature provides insights into storage consumption, which helps with license resource optimization and planning.
+
+To access mailbox storage information, in the left navigation pane in Lighthouse, select **Tenants**, and then select any tenant in the list to open the tenant details page. From there, select either the **Overview** tab or the **Users** tab, and then select **Mailbox storage usage**.
+
+[Go to the Tenants page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/Tenants.ReactView) (once there, select a tenant)
+
+### Alert improvements
+
+Alert rules for Microsoft Defender for Endpoint alerts now include the option to filter by alert status. You can update existing alert rules to exclude **Resolved** endpoint alerts.
+
+To reduce the likelihood of reactivation, a Microsoft 365 Lighthouse alert in the **Dismissed** state will no longer move to the **Resolved** state. 
+
+[Go to the Alerts page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/ManagedTenantAlerts.ReactView)
+
+To learn more, see [Overview of the Alerts page in Microsoft 365 Lighthouse](m365-lighthouse-alerts-overview.md).
+
+## June 2024
+
+### Access key information from enhanced tenant details page
+
+We're thrilled to announce a major upgrade to the tenant details page that lets you access key information related to your customer tenants from a single location. You no longer need to view multiple pages to get basic information. Our revamped **Customer information** section provides a centralized place for tracking key customer data and notes to help you stay proactive and optimize resources.
+
+Wondering how much storage your customer tenant users are consuming? You can now monitor mailbox storage usage right from the tenant details page. Want to easily monitor the Microsoft subscriptions you've sold to customers? See subscription details, renewal dates, and any associated services&mdash;all in one place.
+
+Plus, in the coming months we'll roll out even more enhancements:
+
+- Quick navigation: Jump directly to the details page of any tenant from any page in Lighthouse.
+- Customer-facing report: Get ready for a long-awaited feature—a comprehensive report that you can share directly with your customers.
+- And more...stay tuned.
+ 
+To check out the recent enhancements, in the left navigation pane in Lighthouse, select **Tenants**, and then select any tenant in the list to open the tenant details page. 
+
+[Go to the Tenants page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/Tenants.ReactView) (once there, select a tenant to view the enhanced tenant details page)
+
 ## May 2024
 
 ### Improved tenant details page
@@ -51,6 +89,14 @@ You no longer need to have a Microsoft Entra ID P1 license to manage the Lightho
 [Go to the Lighthouse permissions page now ](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/RBAC.ReactView)
 
 To learn more, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md).
+
+### View and set up new users
+
+We've added a **New users** page that shows you all new users across your managed tenants in Microsoft 365 Lighthouse. You can use this page to track and ensure that all recently onboarded users across your tenants have been properly set up with licenses, groups, and more.
+
+To access this new page, go to **Users** > **Account management** > **New users**. The **New users** page also lets you quickly add a new user to any of your tenants. 
+
+[Go to the New users page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/Users.ReactView)
 
 ### Apps & services usage on the Tenants page
 
@@ -104,7 +150,7 @@ To learn more, see "Optimize your renewal conversations with simplified renewal 
 
 ### Microsoft Copilot opportunities in Sales Advisor
 
-We've added Microsoft Copilot opportunities to Sales Advisor to help you identify customers who are eligible to buy Microsoft Copilot for Microsoft 365. Microsoft Copilot is an AI companion that works everywhere you do and intelligently adapts to your needs.
+We've added Microsoft Copilot opportunities to Sales Advisor to help you identify customers who are eligible to buy Microsoft 365 Copilot. Microsoft Copilot is an AI companion that works everywhere you do and intelligently adapts to your needs.
 
 To access Copilot opportunities, in the left navigation pane in Microsoft 365 Lighthouse, select **Sales Advisor (Project Orland)** > **Opportunities**, and then select the **Customer growth** tab.
 
@@ -566,7 +612,7 @@ You can now view usage data for Microsoft 365 services from within Microsoft 365
 
 These insights can help inform your customer engagements and deliver more value to your customers by empowering you to help them understand which services their users actively use and where there may be opportunities to enhance their security or productivity.
 
-For more information, see [Overview of the Tenants page in Microsoft 365 Lighthouse: Microsoft 365 services usage section](m365-lighthouse-tenants-page-overview.md#microsoft-365-services-usage-section).
+For more information, see [Overview of the Tenants page in Microsoft 365 Lighthouse: Apps and services usage](m365-lighthouse-tenants-page-overview.md#apps-and-services-usage).
 
 <a name='exchange-online-protection-and-microsoft-365-defender-for-office-365-default-baseline-step'></a>
 

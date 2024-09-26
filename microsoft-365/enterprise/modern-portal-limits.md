@@ -3,7 +3,7 @@ title: "SharePoint modern portal site limits"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 10/9/2019
+ms.date: 06/27/2024
 audience: Admin
 ms.topic: interactive-tutorial
 ms.service: microsoft-365-enterprise
@@ -13,6 +13,7 @@ ms.collection:
 - scotvorg
 - Strat_O365_Enterprise
 - SPO_Content
+- must-keep
 f1.keywords:
 - CSH
 ms.custom:
@@ -63,8 +64,6 @@ Many of the guidelines in this article focus on minimizing and optimizing calls 
 [Creating a healthy SharePoint portal](/sharepoint/portal-health)
 
 [Tune SharePoint performance](tune-sharepoint-online-performance.md)
-
-[Tune Office 365 performance](tune-microsoft-365-performance.md)
 
 [SharePoint limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
 

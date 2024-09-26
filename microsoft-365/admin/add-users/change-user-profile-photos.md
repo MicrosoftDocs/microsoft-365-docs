@@ -24,7 +24,7 @@ ms.custom:
   - AdminTemplateSet
   - has-azure-ad-ps-ref
 search.appverid:
-description: "Learn how a Microsoft 365 global admin can add, update, and remove the pictures in user account profiles and Microsoft 365 Group profiles."
+description: "Learn how a Microsoft 365 admin can add, update, and remove the pictures in user account profiles and Microsoft 365 Group profiles."
 ---
 
 # Change user profile photos and settings
@@ -38,7 +38,10 @@ This article explains how to manage profile photos and photo update settings on 
 
 ## Before you begin
 
-You must be a [global admin](about-admin-roles.md) to complete these steps.
+You must be a [Global Administrator](about-admin-roles.md) to complete these steps.
+
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
 
 You can't remove existing user photos using the Microsoft 365 admin center. You can only use Microsoft Graph PowerShell.
 

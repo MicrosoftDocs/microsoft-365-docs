@@ -42,13 +42,15 @@ After an [Azure subscription is linked to Microsoft Syntex](syntex-azure-billing
 
 By default, taxonomy tagging is available for libraries on all SharePoint sites. Follow these steps to limit which sites users can apply taxonomy tagging.
 
-1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>, and then select **Use content AI with Microsoft Syntex**.
+1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>.
 
-2. On the **Use content AI with Microsoft Syntex** page, select **Manage Microsoft Syntex**.
+2. Under **Files and content**, select **Automate content processes with Syntex**.
 
-3. On the **Manage Microsoft Syntex** page, select **Taxonomy tagging**.
+3. On the **Automate content processes with Syntex** page, select **Go to Syntex settings**.
 
-4. On the **Taxonomy tagging** page:
+4. On the Syntex page, under **Document & image services**, select **Taxonomy tagging**.
+
+5. On the **Taxonomy tagging** panel:
 
     a. Choose which site or sites this service should be enabled for.
 

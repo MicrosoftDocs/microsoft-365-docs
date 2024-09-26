@@ -17,7 +17,7 @@ description: "The Microsoft 365 admin center lets you manage some Microsoft Intu
 
 # Admin roles for Intune in the Microsoft 365 admin center
 
-Your Microsoft 365 or Office 365 subscription comes with a set of admin roles that you can assign to any users in your organization using the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. Each admin role maps to common business functions and gives people in your organization permissions to do specific tasks in the admin centers. Given this, these roles are only a subset of all the roles available in the Intune admin center, which includes additional roles specific to Intune itself.
+Your Microsoft 365 or Office 365 subscription comes with a set of admin roles that you can assign to any users in your organization using the Microsoft 365 admin center at <https://admin.microsoft.com>. Each admin role maps to common business functions and gives people in your organization permissions to do specific tasks in the admin centers. Given this, these roles are only a subset of all the roles available in the Intune admin center, which includes additional roles specific to Intune itself.
 
 Before adding specific Intune roles, roles must be assigned in Microsoft Entra ID. To see these roles, sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) \> **Tenant administration** \> **Roles** \> **All roles**. You can manage the role on the following pages:
 

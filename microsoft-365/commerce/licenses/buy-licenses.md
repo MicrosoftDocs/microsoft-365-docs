@@ -24,6 +24,7 @@ ms.custom:
 - AdminTemplateSet
 - adminvideo
 - admindeeplinkMAC
+- GAUpdates
 search.appverid: MET150
 description: "Learn how to buy more licenses or reduce the number of licenses for your business subscription in the Microsoft 365 admin center."
 ms.date: 02/22/2024
@@ -31,27 +32,33 @@ ms.date: 02/22/2024
 
 # Buy or remove licenses for a Microsoft business subscription
 
-Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
-
-As an admin, you can add or remove licenses for your business subscriptions in the Microsoft 365 admin center.
+As an admin, you can buy or remove licenses for your business subscriptions in the Microsoft 365 admin center.
 
 ## Before you begin
 
 - [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
 - If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a Billing account owner or contributor, or a Billing profile owner or contributor to do the tasks in this article.
-- If you have a Microsoft Online Subscription Agreement (MOSA) billing account type, you must be a Global or Billing admin to complete the tasks in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+- If you have a Microsoft Online Subscription Agreement (MOSA) billing account type, you must be at least a Billing Administrator to complete the tasks in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 - You can [add users and assign licenses at the same time](../../admin/add-users/add-users.md).
 - If you bought your subscription through a Microsoft representative, contact them directly to increase or reduce your license count.
 - You can't reduce the number of licenses for your subscription if all licenses are currently assigned to users. To reduce the number of licenses, first [unassign one or more licenses from users](../../admin/manage/assign-licenses-to-users.md), then remove the licenses from the subscription.
 
 > [!NOTE]
-> If you're the person who signed up for the subscription, you're automatically a Billing account owner or Global admin.
+> If you're the person who signed up for the subscription, you're automatically a Billing account owner.
 
 ## Buy or remove licenses if you have an MCA billing account type
 
 [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
 
 If you have an MCA billing account type, you can buy more licenses for your subscription at any time. However, you can only remove licenses from your subscription if it’s within seven days of buying or renewing your subscription. For more information, see [Remove licenses from your subscription](#remove-licenses-from-your-subscription).
+
+### Watch: Buy new licenses
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/p/?linkid=2198206).
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4KWvE]
+
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
 ### Buy more licenses for your subscription
 
@@ -67,6 +74,14 @@ If you buy licenses in the middle of your billing period, you have seven days fr
    - If recurring billing is turned off, you can only make the change now.
 5. To change the number of licenses, under **New quantity** in the **Total licenses** box, enter the total number of licenses that you want for this subscription. For example, if you have 100 licenses and you want to add five more, enter 105.
 6. Select **Save**.
+
+### Watch: Remove existing licenses
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/p/?linkid=2276120).
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4L53r]
+
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
 ### Remove licenses from your subscription
 

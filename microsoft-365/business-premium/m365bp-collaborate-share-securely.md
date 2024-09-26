@@ -26,7 +26,7 @@ description: "An overview on how to collaborate and share files and communicate 
 
 # Collaborate and share securely with Microsoft 365 Business Premium
 
-:::image type="content" source="media/mission5.png" alt-text="Diagram with Collaborate And Share Securely highlighted.":::
+:::image type="content" source="media/mission5.png" alt-text="Diagram with Collaborate And Share Securely highlighted." lightbox="media/mission5.png":::
 
 The best way to collaborate and share securely is to use Microsoft Teams, and Teams is included in Microsoft 365 Business Premium. With Teams, all your files and communications are in a protected environment. With Teams, you can help set up and configure secure file sharing and communication within your organization.
 

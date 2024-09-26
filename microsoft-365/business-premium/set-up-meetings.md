@@ -29,7 +29,7 @@ Make sure members of the organization use Microsoft Teams for all meetings. Team
 
 With Teams, you don't need to be a member of the organization or even have an account to join a meeting. You can schedule and run online meetings where you can share your screen, share files, assign tasks, and more. Political campaigns can include staff, volunteers, or guests that are outside your organization. You can easily meet with clients, staff or partners over Microsoft Teams, and in a secure and worry-free environment.
 
-[![An illustration of two users in a meeting.](../media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)
+[:::image type="content" source="media/HostOnlineMeeting-thumb-358x201.png" alt-text="An illustration of two users in a meeting.":::](https://go.microsoft.com/fwlink/?linkid=2078712)
 
 Download an infographic in [PDF](https://go.microsoft.com/fwlink/?linkid=2078712) or [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515) to get a quick overview of how to join or host an online meeting with Microsoft Teams.
 

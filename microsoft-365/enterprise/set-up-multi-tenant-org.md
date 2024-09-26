@@ -3,7 +3,7 @@ title: Set up a multitenant org in Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 08/17/2023
+ms.date: 06/24/2024
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -29,7 +29,10 @@ When each external tenant accepts the invitation to join the multitenant organiz
 
 ## Set up a new multitenant organization
 
-To set up a new multitenant org in Microsoft 365
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
+
+To set up a new multitenant org in Microsoft 365:
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) as a global administrator.
 1. Expand **Settings** and select **Org settings**.
@@ -48,7 +51,10 @@ The next step after each external tenant accepts the invitation to join the mult
 
 ## Add a tenant to your multitenant organization
 
-To add a tenant to your multitenant organization
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
+
+To add a tenant to your multitenant organization:
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) as a global administrator.
 1. Expand **Settings** and select **Org settings**.

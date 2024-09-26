@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: twerner
 author: twernermsft
 manager: scotv
-ms.date: 01/06/2021
+ms.date: 08/29/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -47,7 +47,7 @@ Add your Google Workspace domain to Microsoft 365 for business so you can keep u
 1. In the Microsoft 365 admin center, in the left nav, select **Show all** > **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
 1. Choose **Add domain**, enter your domain name then select **Use this domain**. 
 1. Choose, **Add a TXT record to the domains DNS records**, select **Continue**, and copy the TXT value. 
-1. Go back to the [Google Admin Console](https://admin.google.com), choose **Domains**, **Manage domains**, **View Details**, **Manage domain**, **DNS**, and  then scroll down to **Custom resource records**. 
+1. Go back to the **_formerly Google Admin_**, now [Squarespace Console](https://domains.squarespace.com), choose **Domains**, **Manage domains**, **View Details**, **Manage domain**, **DNS**, and  then scroll down to **Custom resource records**. 
 1. Open the record type drop-down, choose **TXT**, paste the TXT value you copied then select **Add**. 
 
     The update usually takes effect within a few minutes but may take up to 48 hours. 

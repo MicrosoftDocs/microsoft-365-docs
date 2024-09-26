@@ -3,7 +3,7 @@ title: "Service advisories for eDiscovery cmdlet exception spike in Exchange Onl
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 07/28/2023
+ms.date: 07/25/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -15,6 +15,7 @@ ms.collection:
 - scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
+- must-keep
 ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH

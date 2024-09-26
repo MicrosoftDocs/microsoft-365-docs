@@ -77,7 +77,7 @@ Switch to a subscription that includes the Microsoft 365 productivity apps. See 
 
 **Option 2: Buy individual, one-time purchases of Office, or buy Office through a volume license**
 
- - Buy an individual, one-time purchase of Microsoft 365. See [Microsoft 365 Family &amp; Business](https://www.microsoft.com/microsoft-365/buy/compare-all-microsoft-365-products-b) or [Office Professional](https://www.microsoft.com/microsoft-365/p/office-professional-2019/CFQ7TTC0K7C5/)
+ - Buy an individual, one-time purchase of Microsoft 365. See [Microsoft 365 Family &amp; Business](https://www.microsoft.com/microsoft-365/buy/compare-all-microsoft-365-products-b)
 
      OR
 

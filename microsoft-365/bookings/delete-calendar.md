@@ -11,7 +11,6 @@ ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
-- essentials-manage
 - must-keep
 description: "Use the Microsoft 365 admin center or Windows PowerShell to delete Bookings calendars."
 ---

@@ -25,7 +25,7 @@ The content assembly service for Microsoft Syntex is set up in the Microsoft 365
 
 ### Licensing
 
-Before you can use content assembly in Syntex, you must first link an Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). Content assembly in Syntex is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md).
+Before you can use content assembly in Microsoft Syntex, you must first link an Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). Content assembly in Syntex is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md).
 
 ### Permissions
 
@@ -41,10 +41,12 @@ After an [Azure subscription is linked to Microsoft Syntex](syntex-azure-billing
 
 By default, content assembly is available for libraries on all SharePoint sites. To turn off content assembly on all sites, follow these steps.
 
-1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>, and then select **Use content AI with Microsoft Syntex**.
+1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>.
 
-2. On the **Use content AI with Microsoft Syntex** page, select **Manage Microsoft Syntex**.
+2. Under **Files and content**, select **Automate content processes with Syntex**.
 
-3. On the **Manage Microsoft Syntex** page, select **Content assembly**.
+3. On the **Automate content processes with Syntex** page, select **Go to Syntex settings**.
 
-4. On the **Content assembly** page, select **No sites**, and then select **Save**.
+4. On the Syntex page, under **Document & image services**, select **Content assembly**.
+
+5. On the **Content assembly** pane;, select **No sites**, and then select **Save**.

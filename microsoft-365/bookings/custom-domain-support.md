@@ -3,7 +3,7 @@ title: "Custom domain support in Shared Bookings"
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 05/23/2024
+ms.date: 06/14/2024
 audience: Admin
 ms.topic: how-to
 ms.service: bookings
@@ -12,7 +12,6 @@ ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
-- essentials-manage
 description: "Learn how to configure custom domain support in Shared Bookings."
 ---
 

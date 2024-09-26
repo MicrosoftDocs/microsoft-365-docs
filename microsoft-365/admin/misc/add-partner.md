@@ -21,6 +21,7 @@ ms.custom:
 - commerce_subscriptions
 - AdminSurgePortfolio
 - AdminTemplateSet
+- GAUpdates
 search.appverid:
 - BCS160
 - MET150
@@ -49,10 +50,10 @@ A Microsoft authorized partner can act as your subscription advisor and provide 
 
 - [Find out what type of billing account you have](../../commerce/manage-billing-accounts.md#view-my-billing-accounts).
 - If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a Billing account owner or contributor, a Billing profile owner or contributor, or an Invoice manager to do the tasks in this article. For information about billing account and billing profile roles, see [Understand your Microsoft business billing account](../../commerce/manage-billing-accounts.md) and [Manage your Microsoft business billing profiles](../../commerce/billing-and-payments/manage-billing-profiles.md).
-- If you have a Microsoft Online Subscription Agreement (MOSA), you must be a Global or Billing admin to do the tasks in this article. For more information, see [About admin roles in the Microsoft 365 admin center](../add-users/about-admin-roles.md).
+- If you have a Microsoft Online Subscription Agreement (MOSA), you must be at least a Billing Administrator to do the tasks in this article. For more information, see [About admin roles in the Microsoft 365 admin center](../add-users/about-admin-roles.md).
 
 > [!NOTE]
-> If you're the person who signed up for the subscription, you're automatically a Billing account owner or Global admin.
+> If you're the person who signed up for the subscription, you're automatically a Billing account owner.
 
 ::: moniker range="o365-worldwide"
 
@@ -72,8 +73,8 @@ As an admin for Office 365, you can create or edit users, reset user passwords, 
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
     - If you're using the **Simplified view**, select **Subscriptions**, then select **Add more products.**
-    - If you're using the **Dashboard view**, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">**Purchase services**</a> page.
-2. On the **Purchase services** page, select the plan that you want to buy, and then select **Details**.
+    - If you're using the **Dashboard view**, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">**Purchase services**</a> page. For some customers, the page is named **Marketplace**.
+2. Select the plan that you want to buy, and then select **Details**.
 3. Select the product that you want to buy, and then select **Buy**.
 4. To add a new partner, expand **Need help with your order?** and select **Get assistance from a Microsoft Partner**.<br/>
 Follow the steps on the providers page to either search for, or to get matched with a partner.

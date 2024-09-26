@@ -17,7 +17,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 10/10/2023
+ms.date: 06/27/2024
 ---
 
 # Deploy frontline static teams at scale with PowerShell for frontline workers
@@ -68,6 +68,9 @@ Create two CSV files for each batch of teams that you deploy:
     |**Team Name**|The name of the team.|
     |**ActionType**|Whether you're adding or removing the user from the team. Options are `AddMember` and `RemoveMember`.|
     |**Owner or Member**|Whether the user is a team owner or team member. Options are `Owner` and `Member`.|
+
+    > [!NOTE]
+    > In this CSV file, you can also assign multiple users as team owners for any team, including dynamic frontline teams that you created in the Teams admin center through the [deploy frontline dynamic teams experience](deploy-dynamic-teams-at-scale.md).
 
 #### Examples
 

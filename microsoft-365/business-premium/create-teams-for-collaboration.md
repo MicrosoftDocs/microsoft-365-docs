@@ -49,7 +49,7 @@ For example, a business, legal firm, or healthcare practice might create the fol
 
 1. **An external communications team or teams:** Coordinate with your vendors, partners, or clients without allowing them into anything sensitive. Set up different channels for specific groups.
 
-![Diagram of a Microsoft Teams window with three separate teams to allow for secure communication and collaboration within a business.](../media/m365-democracy-teams-business-collab.png)
+:::image type="content" source="media/m365-democracy-teams-business-collab.png" alt-text="Diagram of a Microsoft Teams window with three separate teams to allow for secure communication and collaboration within a business" lightbox="media/m365-democracy-teams-business-collab.png":::
 
 And campaigns could create the following teams to communicate and collaborate securely:
 
@@ -59,7 +59,7 @@ And campaigns could create the following teams to communicate and collaborate se
 
 3. **A partners team:** Coordinate with your vendors, partners, or volunteers without allowing them into anything sensitive.
 
-![Diagram of a Microsoft Teams window with three separate teams to allow for secure communication and collaboration within a campaign.](../media/m365-democracy-teams-collab.png)
+:::image type="content" source="media/m365-democracy-teams-collab.png" alt-text="Diagram of a Microsoft Teams window with three separate teams to allow for secure communication and collaboration within a campaign." lightbox="media/m365-democracy-teams-collab.png":::
 
 When you create a team, here's what else gets created:
 
@@ -104,7 +104,7 @@ Learn more about Microsoft Teams at [Microsoft Teams technical documentation](/m
 ## Admin settings
 
 > [!NOTE]
-> You must be an admin to create an organization-wide team. For more information, see [What is an Admin in Microsoft 365?](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US).
+> You must be an admin to create an organization-wide team. For more information, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
 
 ## Next step
 

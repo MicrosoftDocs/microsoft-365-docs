@@ -67,8 +67,6 @@ For more information, see:
 
 - [Manage Skype for Business Online policies with PowerShell](manage-skype-for-business-online-policies-with-microsoft-365-powershell.md)
 
-- [Assign per-user Skype for Business Online policies with PowerShell](assign-per-user-skype-for-business-online-policies-with-microsoft-365-powershell.md)
-
 ## See also
 
 [Manage Microsoft 365 with PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)

@@ -7,7 +7,7 @@ f1.keywords:
 manager: laurawi
 ms.date: 01/03/2024
 audience: ITPro
-ms.topic: article
+ms.topic: solution-overview
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:

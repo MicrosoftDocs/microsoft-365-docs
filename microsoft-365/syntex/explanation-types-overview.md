@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 11/17/2023
+ms.date: 09/09/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -30,7 +30,7 @@ These explanation types are available:
 
 - [**Regular expression**](#regular-expression): Uses a pattern-matching notation to find specific character patterns. For example, you can use a regular expression to find all instances of an *email address* pattern in a set of documents.
 
-- [**Proximity**](#proximity): Describes how close explanations are to each other. For example, a *street number* phrase list goes right before the *street name* phrase list, with no tokens in between (you'll learn about tokens later in this article). Using the proximity type requires you to have at least two explanations in your model or the option will be disabled.
+- [**Proximity**](#proximity): Describes how close explanations are to each other. For example, a *street number* phrase list goes right before the *street name* phrase list, with no tokens in between (you learn about tokens later in this article). Using the proximity type requires you to have at least two explanations in your model or the option will be disabled.
 
 ## Phrase list
 
@@ -109,13 +109,13 @@ To add a regular expression explanation type:
 
 2. You can either type an expression in the **Regular expression** text box or select **Add a regular expression from a template**.
 
-   When you add a regular expression by using a template, it automatically adds the name and the regular expression to the text box. For example, if you choose the **Email address** template, the **Create an explanation** panel will be populated.
+   When you add a regular expression by using a template, it automatically adds the name and the regular expression to the text box. For example, if you choose the **Email address** template, the **Create an explanation** panel is populated.
 
    ![Screenshot showing the Create an explanation panel with Email address template applied.](../media/content-understanding/create-regular-expression-email.png)
 
 ### Limitations
 
-The following table shows inline character options that currently are not available for use in regular expression patterns.
+The following table shows inline character options that currently aren't available for use in regular expression patterns.
 
 |Option|State|Current functionality|
 |---|---|---|
@@ -192,7 +192,7 @@ You can choose the following options for this setting:
 
    ![Beginning of file.](../media/content-understanding/beginning-of-file.png)
 
-    In the viewer, you can manually adjust the select box to include the location where the phase occurs. The **End position** value will update to show the number of tokens your selected area includes. You can update the **End position** value as well to adjust the selected area.
+    In the viewer, you can manually adjust the select box to include the location where the phase occurs. The **End position** value updates to show the number of tokens your selected area includes. You can update the **End position** value as well to adjust the selected area.
 
    ![Beginning of file position box.](../media/content-understanding/beginning-box.png)
 
@@ -200,7 +200,7 @@ You can choose the following options for this setting:
 
    ![End of file.](../media/content-understanding/end-of-file.png)
 
-    In the viewer, you can manually adjust the select box to include the location where the phase occurs. The **Starting position** value will update to show the number of tokens your selected area includes. You can update the Starting position value as well to adjust the selected area.
+    In the viewer, you can manually adjust the select box to include the location where the phase occurs. The **Starting position** value updates to show the number of tokens your selected area includes. You can update the Starting position value as well to adjust the selected area.
 
    ![End of file end box.](../media/content-understanding/end-box.png)
 
@@ -212,11 +212,11 @@ You can choose the following options for this setting:
 
 ## Considerations when configuring explanations
 
-When training a classifier there a few things to keep in mind that will produce more predictable results:
+When training a classifier, there a few things to keep in mind that will produce more predictable results:
 
-- The more documents you train with, the more accurate the classifier will be.  When possible, use more than 5 good documents and use more than 1 bad document.  If the libraries you're working with have several different document types in it, several of each type lead to more predictable results.
-- Labeling the document plays an important role in the training process.  They are used together with explanations to train the model.  You may see some anomalies when training a classifier with documents that don't have a lot of content in them.  The explanation may not match anything in the document but since it was labeled as a "good" document you may see it be a match during training.
-- When creating explanations, it uses OR logic in combination with the label to determine if it is a match.  Regular expression that uses AND logic may be more predictable.  Here is a sample regular expression to use on real documents as your training them.  Note the text highlighted in red is the phrase(s) you would be looking for.
+- The more documents you train with, the more accurate the classifier will be.  When possible, use more than five good documents and use more than one bad document. If the libraries you're working with have several different document types in it, several of each type lead to more predictable results.
+- Labeling the document plays an important role in the training process. They're used together with explanations to train the model. You might see some anomalies when training a classifier with documents that don't have much content in them. The explanation might not match anything in the document but since it was labeled as a "good" document you may see it be a match during training.
+- When creating explanations, it uses OR logic in combination with the label to determine if it's a match. Regular expression that uses AND logic might be more predictable. Here's a sample regular expression to use on real documents as your training them. Note the text highlighted in red is the phrase or phrases you would be looking for.
 
     <pre>(?=.*network provider)(?=.*participating providers).*</pre>
 

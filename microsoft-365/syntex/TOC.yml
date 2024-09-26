@@ -39,12 +39,14 @@
               href: prebuilt-overview.md
             - name: Admin setup
               href: prebuilt-setup.md
-            - name: Use a contracts model 
+            - name: Contracts
               href: prebuilt-model-contract.md
-            - name: Use an invoices model 
+            - name: Invoices
               href: prebuilt-model-invoice.md
-            - name: Use a receipts model 
+            - name: Receipts
               href: prebuilt-model-receipt.md
+            - name: Sensitive information 
+              href: prebuilt-model-sensitive-info.md
             - name: Manage your model
               items:
                 - name: Apply a model
@@ -67,6 +69,8 @@
                   href: choose-library-view.md
                 - name: View processing status 
                   href: processing-status.md
+                - name: Set a page range
+                  href: page-range.md
                 - name: Analyze model usage
                   href: model-usage-analytics.md
 
@@ -100,6 +104,8 @@
                   href: choose-library-view.md
                 - name: View processing status 
                   href: processing-status.md
+                - name: Set a page range
+                  href: page-range.md
                 - name: Analyze model usage
                   href: model-usage-analytics.md
 
@@ -210,6 +216,8 @@
           href: esignature-send-requests.md
         - name: Review and sign a request 
           href: esignature-review-sign-requests.md
+        - name: Track and manage using Approvals 
+          href: esignature-approvals.md
         - name: Troubleshoot a request 
           href: esignature-troubleshoot.md
 
@@ -232,7 +240,7 @@
     - name: Microsoft 365 Archive
       href: /microsoft-365/archive
 
-    - name: Microsoft 365 Backup (Preview)
+    - name: Microsoft 365 Backup
       href: /microsoft-365/backup
 
     - name: Annotations
@@ -252,6 +260,8 @@
           href: content-processing-create-rules.md
         - name: Set a content type 
           href: content-processing-content-type.md
+        - name: Translate a file 
+          href: content-processing-translate.md
 
     - name: Premium taxonomy features
       items:
@@ -290,7 +300,7 @@
               href: scenario-document-compliance.md
         - name: Assess your environment
           href: adoption-assessment-tool.md 
-        - name: Solution aite templates
+        - name: Solution site templates
           href: site-templates.md 
         - name: Solutions
           items:
@@ -308,7 +318,9 @@
     - name: Extensibility
       items: 
         - name: Content model Graph API 
-          href: /graph/api/resources/contentmodel?view=graph-rest-beta
+          href: /graph/api/resources/contentmodel
+        - name: Document processing Graph API 
+          href: /graph/api/resources/documentprocessingjob
         - name: Unstructured model REST API 
           href: /sharepoint/dev/apis/syntex/syntex-model-rest-api
         - name: Syntex PowerShell

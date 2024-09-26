@@ -4,7 +4,7 @@ ms.author: chucked
 author: lkueter
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 03/25/2024
+ms.date: 08/23/2024
 audience: admin
 ms.topic: overview
 ms.custom: intro-overview
@@ -86,7 +86,7 @@ You create *modern templates* based on the business documents you use most. You 
       ![Icon for Receipts model.](../media/content-understanding/trained-receipts-model.png) 
    :::column-end:::
    :::column span="3":::
-      Use a [prebuilt model](prebuilt-overview.md) to save time processing and extracting information from [contracts](prebuilt-model-contract.md), [invoices](prebuilt-model-invoice.md), or [receipts](prebuilt-model-receipt.md). Prebuilt models are pretrained to recognize common business documents and the structured information in the documents.
+      Use a [prebuilt model](prebuilt-overview.md) to save time processing and extracting information from [contracts](prebuilt-model-contract.md), [invoices](prebuilt-model-invoice.md), and [receipts](prebuilt-model-receipt.md), and detecting and extracting [sensitive information](prebuilt-model-sensitive-info.md) from documents. Prebuilt models are pretrained to recognize common business documents and the structured information in the documents.
    :::column-end:::
 :::row-end:::
 
@@ -161,7 +161,6 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
 
 [Learn more about translation in Microsoft Syntex.](translation-overview.md)
 
-
 ### SharePoint eSignature
 
 :::row:::
@@ -188,6 +187,12 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
 
 [Learn more about using the OCR service in Microsoft Syntex.](ocr-overview.md)
 
+### Autofill columns
+
+Autofill columns automatically extract, summarize, or generate content from files uploaded to a SharePoint document library. By using large language models through generative AI, autofill columns can save metadata automatically, streamlining the process of managing files and their associated information.
+
+[Learn more about using autofill columns in Microsoft Syntex.](autofill-overview.md)
+
 ### Microsoft 365 Archive
 
 :::row:::
@@ -201,7 +206,7 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
 
 [Learn more about Microsoft 365 Archive (Preview).](archive/archive-overview.md)
 
-### Microsoft 365 Backup (Preview)
+### Microsoft 365 Backup
 
 :::row:::
    :::column span="3":::

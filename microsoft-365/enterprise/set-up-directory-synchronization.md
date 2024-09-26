@@ -3,7 +3,7 @@ title: "Set up directory synchronization for Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/18/2023
+ms.date: 07/16/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -82,7 +82,7 @@ You can also review the Microsoft Entra Connect [version release history](/azure
 
 Before you begin, make sure you have:
 
-- The user name and password of a Microsoft 365 global admin
+- The user name and password of a Microsoft 365 account with the Hybrid Identity Administrator role enabled
 - The user name and password of an AD DS domain administrator
 - Which authentication method (PHS, PTA, federated)
 - Whether you want to use [Microsoft Entra seamless single sign-on (SSO)](/azure/active-directory/hybrid/how-to-connect-sso)

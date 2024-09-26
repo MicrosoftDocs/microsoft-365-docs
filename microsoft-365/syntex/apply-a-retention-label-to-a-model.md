@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 11/01/2023
+ms.date: 08/13/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -33,7 +33,7 @@ You can easily apply a [retention label](../compliance/retention.md) to unstruct
 
 Retention labels let you apply retention settings to the documents that your models identify.  For example, you want your model to not only identify any *Insurance notice* documents that are uploaded to your document library, but to also apply a *Business* retention tag to them so that these documents can't be deleted from the document library for the specified time period (the next five months, for example).
 
-You can apply a pre-existing retention label to your model through your model settings on your model's home page. 
+You can apply a pre-existing retention label to your model through your model settings on your model's home page.
 
 ## Add a retention label to an unstructured document processing model or a prebuilt model
 

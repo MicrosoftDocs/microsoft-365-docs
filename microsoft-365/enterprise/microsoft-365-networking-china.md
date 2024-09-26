@@ -105,7 +105,7 @@ However, data from other Microsoft 365 services — and other traffic in Teams, 
 
 ### Identifying Teams real-time media network traffic
 
-For configuring a network device or a VPN/SDWAN setup, you need to exclude only the Teams real-time media audio and video traffic. The traffic details can be found  for ID 11 on the official list of [Office 365 URLs and IP address ranges](urls-and-ip-address-ranges.md#skype-for-business-online-and-microsoft-teams). All other network configurations should remain as-is.
+For configuring a network device or a VPN/SDWAN setup, you need to exclude only the Teams real-time media audio and video traffic. The traffic details can be found  for ID 11 on the official list of [Office 365 URLs and IP address ranges](urls-and-ip-address-ranges.md). All other network configurations should remain as-is.
 
 Microsoft is continually working to improve the Microsoft 365 user experience and the performance of clients over the widest possible range of network architectures and characteristics. Visit the [Office 365 Networking Tech Community](https://techcommunity.microsoft.com/t5/office-365-networking/bd-p/Office365Networking) to start or join a conversation, find resources, and submit feature requests and suggestions
 

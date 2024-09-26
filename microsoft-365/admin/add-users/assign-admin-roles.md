@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 12/15/2023
+ms.date: 06/25/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -35,6 +35,8 @@ A Microsoft 365 subscription comes with a set of admin roles that you can assign
 > If you're the person who purchased your Microsoft business subscription, you are the global admin. This means you have unlimited control over the products in your subscriptions and you can access most data.
 
 When you add new users, if you don't assign them an admin role then they are in the *user role* and don't have admin privileges to any of the Microsoft admin centers. But if you need help getting things done, you can assign an admin role to a user. For example, if you need someone to help reset passwords, you shouldn't assign them the global admin role, you should assign them the password admin role. Having too many global admins, with unlimited access to your data and online business, is a security risk.
+
+To help keep your organization secure, Microsoft recommends that you use roles with the minimum level of permissions needed to perform a job. Global administrator is a highly privileged role that should be limited to scenarios where you can't use a less-privileged role.
 
 You can assign users to a role in two different ways:
 
@@ -104,7 +106,6 @@ You can export the admin list as well as search and filter by role.
 - Use Search to search for an admin role and see your users who are assigned to that role.
 
 - Use Filter to change your view of displayed admin roles.
-
 
 ## Check admin roles in your organization
 

@@ -3,7 +3,7 @@ title: "Microsoft 365 Connectivity Optics"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 04/26/2021
+ms.date: 08/02/2024
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -13,6 +13,7 @@ ms.collection:
 - scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
+- must-keep
 f1.keywords:
 - CSH
 ms.custom: 

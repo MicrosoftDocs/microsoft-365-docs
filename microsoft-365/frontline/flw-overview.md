@@ -7,7 +7,7 @@ ms.author: v-chinlana
 manager: jtremper
 ms.reviewer: arnavgupta
 audience: admin
-ms.topic: overview
+ms.topic: solution-overview
 ms.service: microsoft-365-frontline
 ms.localizationpriority: high
 ms.collection: 
@@ -82,7 +82,7 @@ Safeguard your business with best-in-class security and compliance features. Mic
 |Capability |More information |
 |-----------|---------------------|
 |Manage identities and access |<ul><li>[Microsoft Entra ID overview](/entra/fundamentals/whatis)</li></ul>|
-|Secure endpoints and apps across device types and operating systems |<ul><li>[Microsoft Intune overview](/mem/intune/fundamentals/what-is-intune)</li><li>[Frontline worker device management overview in Microsoft Intune](/mem/solutions/frontline-worker/frontline-worker-overview)</li><li>[Manage devices with Intune overview](/microsoft-365/solutions/manage-devices-with-intune-overview)</li><li>[Manage mobile devices for frontline workers](flw-devices.md)</li></ul>|
+|Secure endpoints and apps across device types and operating systems |<ul><li>[Overview of device management for frontline workers](flw-devices.md)</li><li>[Manage shared devices](flw-shared-devices.md)</li><li>[Microsoft Intune overview](/mem/intune/fundamentals/what-is-intune)</li><li>[Frontline worker device management overview in Microsoft Intune](/mem/solutions/frontline-worker/frontline-worker-overview)</li><li>[Manage devices with Intune overview](/microsoft-365/solutions/manage-devices-with-intune-overview)</li></ul>|
 
 ## Deploy and manage at scale
 

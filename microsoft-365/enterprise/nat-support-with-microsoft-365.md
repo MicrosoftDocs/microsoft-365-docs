@@ -3,7 +3,7 @@ title: "NAT support with Office 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 1/24/2017
+ms.date: 06/26/2024
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-enterprise
@@ -12,6 +12,7 @@ ms.localizationpriority: medium
 ms.collection: 
 - scotvorg
 - Ent_O365
+- must-keep
 f1.keywords:
 - CSH
 ms.custom: 

@@ -6,7 +6,7 @@ ms.author: brianday
 manager: rolowe
 ms.topic: overview
 ms.date: 07/18/2022
-ms.service: office-365
+ms.service: microsoft-365-enterprise
 ms.custom: template-overview
 ---
 

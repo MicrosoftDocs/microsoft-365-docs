@@ -25,7 +25,7 @@ description: "Know what to watch for in email. Train your team to guard against 
 
 # Use email securely with Microsoft 365 Business Premium
 
-:::image type="content" source="media/mission4.png" alt-text="Diagram with Use email securely highlighted.":::
+:::image type="content" source="media/mission4.png" alt-text="Diagram with Use email securely highlighted." lightbox="media/mission4.png":::
 
 Microsoft 365 Business Premium includes features that help protect against threats. However, users play a role in using email securely, too. Email can contain malicious attacks that are cloaked as harmless communications. Email systems are especially vulnerable, because email is handled by everyone in the organization, and safety relies on people making consistently good decisions with those communications.
 

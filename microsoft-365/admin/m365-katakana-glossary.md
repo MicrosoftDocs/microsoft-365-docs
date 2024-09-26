@@ -4,11 +4,11 @@ f1.keywords: NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: hongda
+ms.reviewer: soranm
 audience: Admin
-ms.topic: conceptual
+ms.topic: reference
 ms.service: microsoft-365-business
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection:
 - Tier3
 - Adm_O365
@@ -16,19 +16,22 @@ ms.collection:
 - must-keep
 ROBOTS: NOINDEX, NOFOLLOW 
 description: "Learn how to view the Japanese katakana glossary for the Microsoft 365 admin center."
-ms.date: 10/19/2023
+ms.date: 10/18/2023
 ---
-<!-- DO NOT MAKE CHANGES TO THIS ARTICLE WITHOUT FIRST CONTACTING THE MS.REVIEWER -->
+<!-- DO NOT MAKE CHANGES TO THIS ARTICLE WITHOUT FIRST CONTACTING THE MS.AUTHOR AND MS.REVIEWER -->
+<!-- THIS CONTENT IS MACHINE TRANSLATED FROM THE ORIGINAL JAPANESE AND MUST REMAIN UNTOUCHED -->
+<!-- DO NOT MAKE CHANGES TO THIS ARTICLE WITHOUT FIRST CONTACTING THE MS.AUTHOR AND MS.REVIEWER -->
+<!-- SERIOUSLY, JUST DON'T -->
 
 # Microsoft 365 admin center katakana glossary
 
-We added explanations to the main katakana terms used in the Microsoft 365 Management Center. For more detailed information, refer to the text in the link on each item.
+Explanations have been added to the main katakana terms used in the Microsoft 365 Management Center. For more detailed information, please refer to the text in the link on each item.
 
 ## Account
 
 ![Account](../media/katanaglossary/001_account.png)
 
-Refers to an identifying name assigned to an individual within an organization/company for using Microsoft 365. It's created for each organization/company and a separate account is assigned to each individual. Use this account to use Microsoft 365 services.
+Refers to an identifying name assigned to an individual within an organization/company for the purpose of using Microsoft 365. It is created for each organization/company and a separate account is usually assigned to each individual. Use this account to use Microsoft 365 services.
 
 [Add users and assign licenses](add-users/add-users.md)
 
@@ -36,7 +39,7 @@ Refers to an identifying name assigned to an individual within an organization/c
 
 ![Add-on](../media/katanaglossary/002_1_addon.png)
 
-This isn't a stand-alone offering by itself, but an extra feature to a service that is subscribed to by subscription. It provides more advanced and new features.
+This is not a stand-alone offering by itself, but an additional feature to a service that is subscribed to by subscription. It provides more advanced and new features.
 
 [Purchase or manage add-ons](../commerce/buy-or-edit-an-add-on.md)
 
@@ -56,7 +59,7 @@ Also referred to as an original domain. An Internet domain dedicated to an organ
 
 ![Cloud storage](../media/katanaglossary/004_cloudstorage.png)
 
-A place or device for storing files on the Internet. It can be beneficial when an individual uses the same file from multiple terminals or devices, or when multiple people work together. It's suitable for referencing and modifying files from different environments such as PCs and mobile devices, internal and remotely.
+A place or device for storing files on the Internet. It can be beneficial when an individual uses the same file from multiple terminals or devices, or when multiple people work together. It is suitable for referencing and modifying files from different environments such as PCs and mobile devices, internal and remotely.
 
 ## Groups
 
@@ -74,9 +77,9 @@ Various groups
 
 ![Global administrator](../media/katanaglossary/006_globaladmin.png)
 
-The global administrator has the authority to change, delete, or set new settings for all setting items.
+The global administrator, usually has the authority to change, delete, or set new settings for all setting items.
 
-If you wish to appoint an administrator with limited administrative functions (for example, you want to give them administrative functions but not allow them to purchase new services.), refer to the following article.
+If you wish to appoint an administrator with limited administrative functions (e.g. you want to give them administrative functions but not allow them to purchase new services.), please refer to the following article.
 
 [About the administrator role of the Microsoft 365 Management Center](add-users/about-admin-roles.md)
 
@@ -96,7 +99,7 @@ Cooperating with several different organizations and people toward a common purp
 
 ## Service (online service)
 
-A computer or software function that is provided over a network (Internet). It's distinguished from software that is executed directly on the PC at your disposal.
+A computer or software function that is provided over a network (Internet). It is distinguished from software that is executed directly on the PC at your disposal.
 
 ## Website address
 
@@ -104,7 +107,7 @@ In Microsoft 365, it refers to the URL of the SharePoint site.
 
 ## Sign-in
 
-To make the service available for use from the account via authentication, or to allow the service to recognize the user. Microsoft 365 services become available by signing in.
+To make the service available for use from the account via authentication, or to allow the service to recognize the user. Microsoft 365 services becomes available by signing in.
 
 ## Subscription
 
@@ -117,7 +120,7 @@ A system to prevent confidential and personal information of organizations, empl
 ## Domain
 
 The part of a website or e-mail address that corresponds to an address on the Internet used for a website or e-mail address.
-For example: contoso.com part of www.contoso.com and mail@contoso.com.
+E.g.: contoso.com part of www.contoso.com and mail@contoso.com.
 
 ## Training and guide
 
@@ -127,7 +130,7 @@ Refers to learning texts and videos for using and managing Microsoft 365 provide
 
 ## Public
 
-In Microsoft 365, it refers to the state of being viewable or editable by all users in the organization. For example: Public group: A group in which anyone in the organization can participate.
+In Microsoft 365, it refers to the state of being viewable or editable by all users in the organization. E.g.: Public group: A group in which anyone in the organization can participate.
 
 ## Give feedback
 
@@ -135,25 +138,25 @@ In Microsoft 365, it refers to the state of being viewable or editable by all us
 
 Refers to sending comments or requests to Microsoft from users of the service.
 
-For matters that require customer support attention in accordance with your support contract, use the "Help and Support" link at the top of the page. For non-support related issues such as usability or new feature suggestions, use this feedback form to send your suggestions. The development team looks directly at the content. The more specific your comments and requests are, the more likely it will be implemented.
+For matters that require customer support attention in accordance with your support contract, please use the "Help and Support" link at the top of the page, and for non-support related issues such as usability or new feature suggestions, please use this feedback form to send your suggestions. The development team looks directly at the content. The more specific your comments and requests are, the more likely it will be implemented.
 
 ## Privacy
 
 ![Privacy](../media/katanaglossary/010_privacy_updated.png)
 
-A function to set the scope of disclosure of files and information related to the protection of personal information. Different disclosure ranges can be set, such as making files and information available to everyone in the organization (public), or only available to a few designated people (private).
+A function to set the scope of disclosure of files and information related to the protection of personal information. Different disclosure ranges can be set, such as making files and information available to everyone in the organization (public), or just available to a few designated people (private).
 
 [Manage data privacy and data protection with Microsoft Priva and Microsoft Purview](../solutions/data-privacy-protection.md)
 
 ## Private
 
-A state in which only certain people within an organization can view, modify, etc. The owner or administrator of that information or group can set which people are granted permission to connect. For example: Private group
+A state in which only certain people within an organization can view, modify, etc. The owner or administrator of that information or group can set which people are granted permission to connect. E.g.: Private group
 
 ## Billing profile
 
 ![Billing profile](../media/katanaglossary/011_billpayments.png)
 
-Billing information and other information related to Microsoft 365 payments are stored. It's used to pay for products and services purchased from Microsoft. Note: Billing profiles aren't used for products and services purchased from Microsoft.com or the Management Center.
+Billing information and other information related to Microsoft 365 payments are stored. It is used to pay for products and services purchased from Microsoft. Note: Billing profiles are not used for products and services purchased from Microsoft.com or the Management Center.
 
 [Understanding the billing profile](../commerce/billing-and-payments/manage-billing-profiles.md)
 

@@ -53,7 +53,7 @@ Groups have the following roles:
 - **Members** - Members can access everything in the group, but can't change group settings. By default group members can invite guests to join your group, though you can [control that setting](manage-guest-access-in-groups.md).
 - **Guests** - Group guests are members who are from outside your organization.
 
-Only global admins, user admins, and groups admins can create and manage groups in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Microsoft 365 admin center</a>. You can't be a delegated admin (for example, a consultant who is an admin on behalf of).
+User admins and groups admins can create and manage groups in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Microsoft 365 admin center</a>. You can't be a delegated admin (for example, a consultant who is an admin on behalf of).
 
 As an administrator, you can:
 
@@ -122,4 +122,3 @@ Microsoft 365 groups work with Microsoft Entra ID. The groups features you get d
 [Learn about Microsoft 365 Groups](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2) (article)\
 [Manage Microsoft 365 Groups with PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md) (article)\
 [SharePoint Online Limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits) (article)\
-[Organize groups and channels in Microsoft Stream](/stream/groups-channels-organization) (article)
