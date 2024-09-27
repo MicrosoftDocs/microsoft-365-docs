@@ -87,7 +87,7 @@ If you encounter any problems during GDAP setup and need guidance, see [Troubles
         
             For more information on how JIT agents can request access, see [Request access to an access package in entitlement management](/entra/id-governance/entitlement-management-request-access).
 
-            For more information on how approvers can approve requests, see [Approve or deny requests for Microsoft Entra roles in Privileged Identity Management](entra/id-governance/privileged-identity-management/pim-approval-workflow). 
+            For more information on how approvers can approve requests, see [Approve or deny requests for Microsoft Entra roles in Privileged Identity Management](/entra/id-governance/privileged-identity-management/pim-approval-workflow). 
 
 8. When you're done defining the support roles and security groups, select **Save** in the **Create a template** pane to save the GDAP template.
 
