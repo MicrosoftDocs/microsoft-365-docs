@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 06/12/2024
+ms.date: 09/26/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -47,12 +47,12 @@ By default, autofill columns is turned on for libraries in all SharePoint sites.
 
 3. On the **Automate content processes with Syntex** page, select **Go to Syntex settings**.
 
-4. On the Syntex page, under **Document & image services**, select **Autofill columns**.
+4. On the Syntex page, in the **Document & image services** section, select **Autofill columns**.
 
 5. On the **Autofill columns** panel:
 
-    a. Choose which site or sites this service should be enabled for.
+    a. Choose the site or sites on which this service should be enabled.
 
-    b. To restrict user access to this service, under **Sites where autofill columns can be used when it's turned on**, select **Edit**. On the **Where can autofill columns be used?** panel, change the setting from **All sites** to **Selected sites (up to 100)** or **No sites**. For selected sites, follow the instructions to select the sites or upload a CSV listing of the sites. You can then manage site access permissions for the sites you selected.
+    b. To restrict user access to this service, under **Sites where Autofill can be used when it's turned on**, select **Edit**. On the **Where can autofill columns be used?** panel, change the setting from **All sites** to **Selected sites (up to 100)** or **No sites**. For selected sites, follow the instructions to select the sites or upload a CSV listing of the sites. You can then manage site access permissions for the sites you selected.
 
     c. Select **Save**.
