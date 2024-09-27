@@ -96,7 +96,7 @@ To update Microsoft Defender Antivirus on a single device:
 
 4. In the device details pane, select **Update antivirus**.
 
-You can get updates for multiple devices by selecting the checkbox next to each device name in the list and then select **Update antivirus**.
+To get updates for multiple devices, select the checkbox next to each device name in the list, and then select **Update antivirus**.
 
 If you need to create a new policy, select **Update policy** in the device details pane. Lighthouse will redirect you to the Microsoft Intune admin center. For more information about creating a policy, see [Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy).
 
