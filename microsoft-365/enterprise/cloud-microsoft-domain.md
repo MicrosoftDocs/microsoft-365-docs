@@ -42,7 +42,7 @@ To ensure that customers and users can treat everything under the *.cloud.micros
 Since 2023, *.cloud.microsoft and other domains related to the domain unification initiative are part of the [Microsoft 365 network guidance on domains and service endpoints](/microsoft-365/enterprise/urls-and-ip-address-ranges). Customers who use the Microsoft 365 web service API to automate network settings have been getting the network settings since then. Customers who manually update endpoints should ensure that *.cloud.microsoft and other required domains are included in their allow-list to prevent connectivity and service incidents for their users. 
 
 ## Microsoft product and service URLs
-|**Service**|**URL**|
+| Service | URL |
 |:-----|:-----|
 |Microsoft 365 Copilot Business Chat |[m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat)|
 |Microsoft Excel | [excel.cloud.microsoft](https://excel.cloud.microsoft)|
