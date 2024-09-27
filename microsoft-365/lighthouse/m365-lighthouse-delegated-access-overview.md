@@ -34,10 +34,10 @@ The following table outlines the role or roles that you must hold to manage GDAP
 
 |  | Admin Agent<br>in Partner Center | Groups Administrator<br>in Microsoft Entra&nbsp;ID | User Administrator<br>in Microsoft Entra&nbsp;ID | Privileged Role Administrator<br>in Microsoft Entra&nbsp;ID |
 |--|:--:|:--:|:--:|:--:|
-| View data on the Delegated access page | &check; |  |  |  |
-| Create and edit Lighthouse GDAP templates |  | &check; | &check; |  |
-| Assign Lighthouse GDAP templates to customer tenants | &check; |  |  |  |
-| Set up Just-in-Time (JIT) access |  |  |  | &check; |
+| **View data on the Delegated access page** | &check; |  |  |  |
+| **Create and edit Lighthouse GDAP templates** |  | &check; | &check; |  |
+| **Assign Lighthouse GDAP templates to customer tenants** | &check; |  |  |  |
+| **Set up Just-in-Time (JIT) access** |  |  |  | &check; |
 
 ## GDAP templates tab
 
