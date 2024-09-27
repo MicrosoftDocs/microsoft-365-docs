@@ -124,7 +124,7 @@ Some updates may require a device to restart to install correctly.
 
 4. In the device details pane, select **Restart device**.
 
-You can also restart multiple devices by selecting the checkbox next to each device name in the list and then select **Restart device**.
+To restart multiple devices, select the checkbox next to each device name in the list, and then select **Restart device**.
 
 ## Related content
 

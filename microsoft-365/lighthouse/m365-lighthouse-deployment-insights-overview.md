@@ -108,7 +108,6 @@ In this example, all customer tenants have 100 users and have been assigned a ba
 - K – Not complete, with 1 newly detected user with a status of **Not Licensed** for all tasks
 - L – Not complete, with 1 user with from which all licenses have been unassigned
 
-
 | Tenant | Baseline         | Deployment plan status | Task progress | Dismissed tasks | Not licensed tasks | Regressed tasks | User progress | Users excluded | User exclusions |
 |--------|------------------|------------------------|---------------|-----------------|--------------------|-----------------|---------------|----------------|-----------------|
 | A      | Default baseline | Complete               | 10/10         | 0               | 0                  | 0               | 100/100       | 0              | 0               |
@@ -192,7 +191,7 @@ Select any task from the list to open the deployment insights details pane for t
 
 | **Column**          | **Description**                                                     |
 |---------------------|---------------------------------------------------------------------|
-| Tenant              | The name of the customer tenant.                                             |
+| Tenant              | The name of the customer tenant.                                    |
 | Task status         | The deployment status of the task for the tenant.                   |
 | Total users         | The number of users who are assigned to the task.                   |
 | Compliant users     | The number of users who are **Compliant**.                          |

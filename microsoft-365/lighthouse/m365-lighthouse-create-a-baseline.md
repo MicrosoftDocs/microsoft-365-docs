@@ -119,7 +119,7 @@ Lighthouse admins must review the extracted configuration and remove any tenant-
 11. Select **Create**.
 
 > [!NOTE]
-> To edit a deployment task, select the pencil icon in the **Action** column. To delete a deployment task, select the trash icon in the **Action** column. To make a task higher or lower priority, select an arrow in the **Priority** column.
+> To edit a deployment task, select the pencil icon in the **Action** column. To delete a deployment task, select the trash can icon in the **Action** column. To make a task higher or lower priority, select an arrow in the **Priority** column.
 
 ## Next steps
 
