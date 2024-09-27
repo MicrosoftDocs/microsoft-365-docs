@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 01/19/2024
+ms.date: 09/26/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -50,7 +50,7 @@ Translation in Syntex is available for [all supported languages and dialects](/a
 
 - Password-protected files aren't translated.
 
-- Translation actions are also available in OneDrive.
+- Translation actions are also available in OneDrive for documents stored in your **My files** location.
 
 - On-demand translation on folders will be available in a future release.
 
