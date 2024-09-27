@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: taylorau
-ms.date: 08/16/2024
+ms.date: 09/26/2024
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-lighthouse
@@ -32,16 +32,9 @@ If you encounter any problems during GDAP setup and need guidance, see [Troubles
 
 ## Before you begin
 
-- You need specific permissions in the partner tenant:
-
-  - To establish GDAP security groups, add users, and create GDAP templates, you must be an Administrator in Lighthouse. This role can be assigned from the **Lighthouse permissions** page by someone in your partner tenant who has the appropriate permissions.
-
-  - To create and complete GDAP relationships, in addition to being an Administrator in Lighthouse, you must also be an Admin agent in Partner Center.
+- You must hold specific roles in Microsoft Entra ID and/or Partner Center, as outlined in the [Delegated Access Role Requirements table](m365-lighthouse-delegated-access-overview.md#role-requirements).
 
 - The customers you manage in Lighthouse need to be set up in Partner Center with either a reseller relationship or an existing GDAP relationship.
-
-> [!NOTE]
-> Lighthouse GDAP templates use role-assignable security groups. A Microsoft Entra ID P1 license is required to add users to these groups. To enable Just-in-Time (JIT) roles, Microsoft Entra IDE Governance or a Microsoft Entra ID P2 license is required.
 
 ## Set up GDAP
 
@@ -63,16 +56,14 @@ If you encounter any problems during GDAP setup and need guidance, see [Troubles
         - Use the Microsoft Entra roles that Microsoft recommends. 
         - Set the filter to **All** and select your preferred Microsoft Entra roles.
       
-        To learn more, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference).
-        > [!NOTE]
-        > Certain Microsoft Entra roles can't be added to multiple support roles—for example, the Microsoft Entra roles for the Administrator support role can't be added to any other support role.   
+        To learn more, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference). 
 
     4. Select **Save**.
 
 6. For each support role that you want to use, select the **Add or create a security group** icon next to the support role to open the **Select or create a security group** pane. If you don't want to use a particular support role, don't assign any security groups to it.
  
     > [!NOTE]
-    > Each GDAP template requires you to assign at least one role-assignable security group to a support role. 
+    > Each GDAP template requires you to assign at least one security group to a support role. 
 
 7. Do one of the following:
  
@@ -85,18 +76,16 @@ If you encounter any problems during GDAP setup and need guidance, see [Troubles
         2. If applicable, select **Create a just-in-time (JIT) access policy for this security group**, and then define the user eligibility expiration, JIT access duration, and JIT approver security group.
          
             > [!NOTE]
-            > - To create a just-in-time (JIT) access policy for a new security group, you must have a Microsoft Entra ID P2 license. If you're unable to select the checkbox to create a JIT access policy, verify that you have a Microsoft Entra ID P2 license.
-            >
-            > - The associated JIT approver security group must be role-assignable (requires a Microsoft Entra ID P1 license). If you're not seeing a security group appear, confirm that the security group is role-assignable in Microsoft Entra ID. For more information on how to manage role assignments, see [Use Microsoft Entra groups to manage role assignments](/entra/identity/role-based-access-control/groups-concept).
+            > To create a just-in-time (JIT) access policy for a new security group, you must have a Microsoft Entra ID P2 license. If you're unable to select the checkbox to create a JIT access policy, verify that you have a Microsoft Entra ID P2 license.
     
         3. Add users to the security group, and then select **Save**.
         
             > [!NOTE]
             > Users who are part of a JIT agent security group are not automatically given access to GDAP roles in Microsoft Entra ID. These users must first request access from the <a href="https://myaccess.microsoft.com/#/access-packages" target="_blank">My Access portal</a> and a member of the JIT approver security group must review the JIT access request.
     
-        4. If you created a JIT access policy for the security group, you can review the created policy in the <a href="https://portal.azure.com/#view/Microsoft_AAD_ERM/DashboardBlade/%7E/elmEntitlement" target="_blank">Microsoft Entra ID Governance portal</a>. 
+        4. If you created a JIT access policy for the security group, you can review the created policy on the <a href="https://entra.microsoft.com/#view/Microsoft_Azure_IdentityGovernance/Dashboard.ReactView" target="_blank">Identity Governance dashboard</a> in the Microsoft Entra admin center. 
         
-            For more information on how JIT agents can request access, see [Tutorial: Manage access to resources in entitlement management](/azure/active-directory/governance/entitlement-management-access-package-first).
+            For more information on how JIT agents can request access, see [Request access to an access package in entitlement management](/entra/id-governance/entitlement-management-request-access).
 
             For more information on how approvers can approve requests, see [Approve or deny requests for Microsoft Entra roles in Privileged Identity Management](entra/id-governance/privileged-identity-management/pim-approval-workflow). 
 
@@ -104,7 +93,7 @@ If you encounter any problems during GDAP setup and need guidance, see [Troubles
 
    The new template now appears in the list of templates on the **GDAP templates** tab of the **Delegated access** page. 
 
-9. Follow steps 3 through 8 to create additional GDAP templates, as needed.
+9. Follow steps 3 through 8 to create more GDAP templates, as needed.
 
 10. On the **GDAP templates** tab of the **Delegated access** page, select the three dots (more actions) next to a template in the list, and then select **Assign template**.
 
@@ -121,7 +110,7 @@ If you encounter any problems during GDAP setup and need guidance, see [Troubles
 
 ## Obtain customer approval to administer their products
 
-As part of the GDAP setup process, a GDAP relationship request link is generated for each customer who doesn't have an existing GDAP relationship with your partner organization. You'll need to send the link to the appropriate customer contact so they can approve the GDAP relationship before you can administer their products for them.
+As part of the GDAP setup process, a GDAP relationship request link is generated for each customer who doesn't have an existing GDAP relationship with your partner organization. You need to send the link to the appropriate customer contact so they can approve the GDAP relationship before you can administer their products for them.
 
 1. On the **Delegated access** page, select the **Relationships** tab.
 
@@ -143,9 +132,12 @@ Once you complete GDAP setup, you can update or change roles, security groups, o
 
 2. On the **GDAP templates** tab, make any necessary changes to the GDAP templates or their associated configurations, and then save your changes.
 
+3. Assign the updated GDAP template to the appropriate customer tenants so those tenants have the updated configurations from the template.
+
 ## Related content
 
 [Overview of permissions](m365-lighthouse-overview-of-permissions.md) (article)\
+[Overview of the Delegated access page in Microsoft 365 Lighthouse](m365-lighthouse-delegated-access-overview.md) (article)\
 [Troubleshoot error messages and problems](m365-lighthouse-troubleshoot.md) (article)\
 [Configure portal security](m365-lighthouse-configure-portal-security.md) (article)\
 [Introduction to granular delegated admin privileges (GDAP)](/partner-center/gdap-introduction) (article)\
