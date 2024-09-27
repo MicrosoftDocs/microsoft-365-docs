@@ -32,7 +32,7 @@ Microsoft 365 Lighthouse provides delegated relationship insights across all you
 
 The following table outlines the role or roles that you must hold to manage GDAP relationships from the Delegated access page.
 
-|  | Admin Agent<br>in Partner Center | Groups Administrator<br>in Microsoft&nbsp;Entra&nbsp;ID | User Administrator<br>in Microsoft&nbsp;Entra&nbsp;ID | Privileged Role Administrator<br>in Microsoft&nbsp;Entra&nbsp;ID |
+|  | Admin Agent<br>in Partner Center | Groups Administrator<br>in Microsoft Entra&nbsp;ID | User Administrator<br>in Microsoft Entra&nbsp;ID | Privileged Role Administrator<br>in Microsoft Entra&nbsp;ID |
 |--|:--:|:--:|:--:|:--:|
 | **View data on the Delegated access page** | &check; |  |  |  |
 | **Create and edit Lighthouse GDAP templates** |  | &check; | &check; |  |
