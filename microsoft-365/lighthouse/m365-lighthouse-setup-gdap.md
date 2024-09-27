@@ -132,7 +132,7 @@ Once you complete GDAP setup, you can update or change roles, security groups, o
 
 2. On the **GDAP templates** tab, make any necessary changes to the GDAP templates or their associated configurations, and then save your changes.
 
-3. Assign the updated GDAP template to the appropriate customer tenants so those tenants have the updated configurations from the template.
+3. Assign the updated GDAP templates to the appropriate customer tenants so those tenants have the updated configurations from the templates.
 
 ## Related content
 
