@@ -82,7 +82,7 @@ A quick scan searches common locations where malware could be, such as registry 
 
 4. In the device details pane, select **Run full scan** or **Run quick scan**.
 
-You can also scan multiple devices by selecting the checkbox next to each device name in the list and then select **Run full scan** or **Run quick scan**.
+To scan multiple devices, select the checkbox next to each device name in the list, and then select **Run full scan** or **Run quick scan**.
 
 ## Get updates for Microsoft Defender Antivirus
 
