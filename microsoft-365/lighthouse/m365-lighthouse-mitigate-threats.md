@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: ragovind
-ms.date: 06/21/2023
+ms.date: 09/27/2024
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-lighthouse
@@ -102,7 +102,7 @@ If you need to create a new policy, select **Update policy** in the device detai
 
 ## Check pending antivirus actions on a device
 
-When consecutive actions are applied to a device, you'll receive an action pending message. To check which actions are pending on a device:
+When consecutive actions are applied to a device, you'll receive an action-pending message. To check which actions are pending on a device:
 
 1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Devices** > **Threat management**.
 
@@ -122,14 +122,14 @@ Some updates may require a device to restart to install correctly.
 
 3. From the list of devices, select a device.
 
-4. In the device details pane, select **Reboot device**.
+4. In the device details pane, select **Restart device**.
 
-You can also restart multiple devices by selecting the checkbox next to each device name in the list and then select **Reboot device**.
+You can also restart multiple devices by selecting the checkbox next to each device name in the list and then select **Restart device**.
 
 ## Related content
 
 [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) (article)\
 [Overview of the Threat management page in Microsoft 365 Lighthouse](m365-lighthouse-threat-management-page-overview.md) (article)\
 [Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy) (article)\
-[Turn on Microsoft Defender Antivirus](/mem/intune/user-help/turn-on-defender-windows) (article)\
+[Enable and configure Microsoft Defender Antivirus always-on protection](/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus) (article)\
 [Microsoft Security Intelligence](https://www.microsoft.com/wdsi/threats) (web page)
