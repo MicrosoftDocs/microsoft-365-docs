@@ -49,7 +49,7 @@ sections:
       - question: |
           Where are my MPSA contracts?
         answer: |
-          Microsoft Products and Services Agreement (MPSA) license information is managed in the [Microsoft Business Center](https://businessaccount.microsoft.com/Customer) or [Microsoft Store for Business](https://businessstore.microsoft.com/store). No MPSA information is displayed in this contracts list. To learn more about the MPSA, see [Volume licensing](https://www.microsoft.com/Licensing/MPSA/default.aspx).
+          Microsoft Products and Services Agreement (MPSA) license information is managed in the [Microsoft Business Center](https://businessaccount.microsoft.com/Customer). No MPSA information is displayed in this contracts list. To learn more about the MPSA, see [Microsoft Products and Services Agreement](https://www.microsoft.com/en-us/Licensing/MPSA?rtc=1).
 
       - question: |
           Why are some Licensing IDs for my organization not displayed in the list?
