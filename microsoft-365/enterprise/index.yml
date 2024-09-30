@@ -68,7 +68,7 @@ conceptualContent:
         - url: /deployoffice/overview-update-channels
           itemType: concept
           text: Microsoft 365 Apps for enterprise
-        - url: /intune/apps/apps-enterprise-app-management
+        - url: /mem/intune/apps/apps-enterprise-app-management
           itemType: get-started
           text: Apps with Intune
         - url: /office365/
