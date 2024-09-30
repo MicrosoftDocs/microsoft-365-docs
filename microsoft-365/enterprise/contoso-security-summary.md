@@ -122,7 +122,7 @@ To follow security best practices and Microsoft 365 for enterprise deployment re
 
 - Device management with Microsoft Intune
 
-  Contoso uses [Microsoft Intune](/intune/introduction-intune) to enroll, manage, and configure access to mobile devices and the apps that run on them. Device-based Conditional Access policies also require approved apps and compliant PCs and mobile devices.
+  Contoso uses [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) to enroll, manage, and configure access to mobile devices and the apps that run on them. Device-based Conditional Access policies also require approved apps and compliant PCs and mobile devices.
 
 ## Security management
 
