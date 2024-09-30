@@ -25,7 +25,7 @@ search.appverid:
 description: "Learn how to get the Microsoft 365 Copilot usage report and gain insights into the Microsoft 365 Copilot activity in your organization."
 ---
 
-# Microsoft 365 reports in the Admin Center – Microsoft 365 Copilot usage
+# Microsoft 365 reports in the admin center – Microsoft 365 Copilot usage
 
 The Microsoft 365 Usage dashboard shows you the activity overview across the Microsoft 365 productivity apps in your organization. It enables you to drill into individual product-level reports to give you more granular insight about the activities within each app. To view all reports, check out the [Reports overview article](activity-reports.md).
 
