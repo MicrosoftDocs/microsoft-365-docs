@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 08/30/2024
+ms.date: 09/25/2024
 audience: admin
 ms.topic: conceptual
 ms.custom: setup
@@ -40,7 +40,7 @@ After an [Azure subscription is linked to Microsoft Syntex](syntex-azure-billing
 
 ## Manage sites
 
-By default, structured and default document processing is turned on for libraries in all SharePoint sites. Follow these steps to manage which SharePoint sites users can use to create custom models to process files.
+By default, structured and default document processing is turned on for libraries in all SharePoint sites. Follow these steps to limit on which sites users can create custom models to process files.
 
 1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>.
 
@@ -48,16 +48,16 @@ By default, structured and default document processing is turned on for librarie
 
 3. On the **Automate content processes with Syntex** page, select **Go to Syntex settings**.
 
-4. On the Syntex page, under **Document & image services**, select **Structured and freeform document processing**.
+4. On the Syntex page, in the **Document & image services** section, select **Structured and freeform document processing**.
 
 5. On the **Structured and freeform document processing** panel:
 
-    a. Choose which site or sites this service should be enabled for.
+    a. On the **Sites** tab, choose the site or sites on which this service should be enabled.
 
     > [!NOTE]
     > Disabling a site after a model is made available to process files on that site will not disable the model. Models can still be used to process files and incur charges. A model can be made available to process files by being created either on that site or in a content center.
 
-    b. To restrict user access to this service, under **Sites where models can be created**, select **Edit**. On the **Where can prebuilt models be used?** panel, select **No sites** or **Selected sites (up to 100)** and follow the instructions to either select the sites or upload a CSV file listing a maximum of 100 sites. You can then manage site access permissions for the sites you selected.
+    b. To restrict user access to this service, under **Sites where models can be created**, select **Edit**. On the **Sites where models can be created** panel, select **No sites** or **Selected sites (up to 100)** and follow the instructions to either select the sites or upload a CSV file listing a maximum of 100 sites. You can then manage site access permissions for the sites you selected. If you don't want the service available on any sites, select **No sites**.
 
     > [!NOTE]
     > You must be a member of any site that you want to include in the CSV file.
@@ -70,11 +70,9 @@ When the structured and freeform document processing service is turned off, stru
 
 Follow these steps to turn off structured and freeform document processing.
 
-1. On the **Manage Microsoft Syntex** page, select **Structured and freeform document processing**.
+1. On the **Structured and freeform document processing** panel, on the **Settings** tab, turn the **Status** to **Off**.
 
-2. On the **Structured and freeform document processing** page, under **Status**, turn the toggle to **Off**.
-
-    ![Screenshot of a Structured and freeform document processing panel showing the Status toggle.](../media/content-understanding/turn-off-service.png)
+2. On the **Turn off structured and freeform document processing?** panel, select **Turn off**.
 
     > [!NOTE]
     > For multi-geo environments, when the service is turned off, the service is off for all geos.
@@ -121,7 +119,7 @@ Your tenant comes with a default Power Platform environment. To make the default
 
 If you plan to use a custom Power Platform environment, you must install the *AI Builder for Project Cortex* app in this environment. See [Manage Dynamics 365 apps](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view) for details and look for the *AI Builder for Project Cortex* app in the list of Dynamics 365 apps. The environment must not be of the Sandbox type.
 
-If you have [AI Builder credits available](/power-platform/admin/capacity-add-on) to the environment, these credits will be used first. For both custom and default Power Platform environments, once the credits are exhausted, the processing transactions are charged to the meter.
+If you have [AI Builder credits available](/power-platform/admin/capacity-add-on) to the environment, these credits are used first. For both custom and default Power Platform environments, once the credits are exhausted, the processing transactions are charged to the meter.
 
 When using a custom environment, model creators must be assigned the Environment Maker security role. Model users must have permission to use (not edit) the model file in SharePoint libraries. For more information, see [Assign a security role to a user](/power-platform/admin/assign-security-roles). Custom security roles can be created to specifically grant access to the AI Builder tables as the Environment Maker role so those users can create models. You don't need to assign users this role if you're using the default Power Platform environment.
 
