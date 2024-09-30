@@ -37,7 +37,7 @@ If you turn-off self-service purchases in your organization, you can set up lice
 > [!NOTE]
 > If you block users from making self-service purchases, Microsoft doesn't send them marketing emails. Also, if they're using a trial version of a product, they don't see prompts to buy it. To learn more, see [Manage self-service purchases (Admin)](../subscriptions/manage-self-service-purchases-admins.md).
 
-To see and manage license requests, use the **Requests** tab on the **Licensing** page in the admin center. The list shows the name of the product requested, name of the person requesting a license, date requested, and status of the request. You can filter the list to show requests that are pending or completed. Requests are held for 30 days.
+To see and manage license requests, use the **Requests** tab on the **Licensing** page in the admin center. The list shows the name of the product requested, name of the person requesting a license, date requested, and status of the request. You can filter the list to show requests that are pending or completed. Requests are held for 12 months.
 
 ## Before you begin
 
