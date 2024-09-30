@@ -80,7 +80,7 @@ conceptualContent:
 additionalContent:
   # Supports up to 3 sections
   sections:
-    - title: Additional resources # < 60 chars (optional)
+    - title: Other resources # < 60 chars (optional)
       summary: Learn more about other Microsoft 365 features and resources. # < 160 chars (optional)
       items:
         # Card
