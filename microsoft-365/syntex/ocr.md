@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: kkameth
-ms.date: 06/12/2024
+ms.date: 09/26/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -56,12 +56,12 @@ Follow these steps to manage which SharePoint sites have OCR enabled for Microso
 
 3. On the **Automate content processes with Syntex** page, select **Go to Syntex settings**.
 
-4. On the Syntex page, under **Document & image services**, select **Optical character recognition**.
+4. On the Syntex page, in the **Document & image services** section, select **Optical character recognition**.
 
 5. On the **Optical character recognition** panel:
 
-    a. Choose which site or sites this service should be enabled for.
+    a. Choose the site or sites on which this service should be enabled.
 
-    b. To restrict user access to this service, select **No sites** or **Selected sites** and follow the instructions to either select the sites or upload a CSV listing a maximum of 100 sites. Be sure to add your content center site if you want it to be included. You can then manage site access permissions for the sites you selected.
+    b. To restrict user access to this service, under **Select the SharePoint libraries where you would like to enable optical character recognition**, select **No sites** or **Selected sites (up to 100)**. Follow the instructions to either select the sites or upload a CSV listing a maximum of 100 sites. Be sure to add your content center site if you want it to be included. You can then manage site access permissions for the sites you selected.
 
     c. Select **Save**.

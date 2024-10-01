@@ -69,6 +69,11 @@ Admins can enable or disable Copilot extensibility for their org by using a sett
 - **No Users**: This option means that no users in the organization can access Copilot agents, and the third party agents are disabled in the Copilot agents flyout. This option also hides Copilot agents from the list of Available and Deployed apps on the Integrated Apps page.
 - **Specific Users**: This option lets you select specific users or groups in your organization to have access to Copilot agents. So while all or specific users in your organization may have permissions to install and use apps from the Available apps and Deployed apps lists, only the users or groups you select in this setting can use Copilot agents.
 
+> [!NOTE]
+>
+> - Once extensibility is disabled in the tenant, it can take up to 24 hours for agents to disappear for users.
+> - The Microsoft pinned Visual Creator agent will still be visible even when extensibility is disabled.
+
 ## Deploy or remove Copilot agents
 
 Admins can deploy or remove Copilot agents across the whole organization or for specific users or groups by using the same gestures and controls that work for any other app in the Microsoft 365 admin center. Admins can select a Copilot agent from the list of Available or Deployed apps and select **Deploy** or **Remove**. Admins can also choose to deploy or remove the agents for everyone or specific users or groups. Deploying or removing an agent affects its availability and functionality in Copilot and in the other host products, such as Outlook, Teams, or Microsoft 365.

@@ -3,7 +3,7 @@ title: Use PowerShell to manage your Shifts connection to Blue Yonder Workforce 
 author: lana-chin
 ms.author: v-chinlana
 manager: jtremper
-ms.reviewer: imarquesgil
+ms.reviewer: harrywong
 ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline

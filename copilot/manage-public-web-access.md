@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 09/16/2024
+ms.date: 09/25/2024
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-copilot
@@ -23,7 +23,7 @@ description: "Learn how to manage Microsoft 365 Copilot and Microsoft 365 access
 
 # Data, privacy, and security for web queries in Microsoft 365 Copilot and Microsoft Copilot
 
-Microsoft 365 Copilot chat and [Microsoft Copilot](/copilot/overview) chat have an optional feature that allows Copilot to reference web content when responding to user prompts. Allowing Microsoft 365 Copilot and Microsoft Copilot to reference web content improves the quality of Copilot responses by grounding them in the latest information from the web (referred to as “web grounding”).
+Microsoft 365 Copilot chat and [Microsoft Copilot](/copilot/overview) chat have an optional feature that allows Copilot to reference web content when responding to user prompts. Allowing Microsoft 365 Copilot and Microsoft Copilot to reference web content improves the quality of Copilot responses by grounding them in the latest information from the web (referred to as "web grounding").
 
 ## Web grounding
 
@@ -48,6 +48,10 @@ The following information isn't included in the generated query sent to the Bing
 - Entire web pages or PDFs summarized by Copilot in Microsoft Edge (only for Microsoft Copilot)
 
 - Any identifying information based on the user's Microsoft Entra ID (for example, username, domain, or tenant ID)
+
+> [!NOTE]
+> We’re making some improvements to web search query transparency in the near future. For more information, see
+[Introducing web search query transparency for Microsoft 365 Copilot and Microsoft Copilot](https://techcommunity.microsoft.com/t5/microsoft-365-copilot/introducing-web-search-query-transparency-for-microsoft-365/ba-p/4253080).
 
 The user's prompts and Copilot's responses are stored within Microsoft 365 and never leave the service boundary for both Microsoft 365 Copilot and Microsoft Copilot.
 
@@ -88,7 +92,7 @@ Generated search queries sent to the Bing search service have the user and tenan
 - Answers or features like Rich Captions
 - Social features like Auto Suggest, Trending, and Zero Input
 
-The Bing search service operates separately from Microsoft 365 and has different data-handling practices. The use of Bing is covered by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) between each user and Microsoft, together with the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement). The [Microsoft Products and Services Data Protection Addendum (DPA)](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA) doesn't apply to the use of web content plugin in Microsoft 365 Copilot, Microsoft Copilot, or the Bing search service.
+The Bing search service operates separately from Microsoft 365 and has different data-handling practices. The use of Bing is covered by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) between each user and Microsoft, together with the [Microsoft Privacy Statement](https://www.microsoft.com/privacy/privacystatement). The [Microsoft Products and Services Data Protection Addendum (DPA)](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA) doesn't apply to the use of web content plugin in Microsoft 365 Copilot, Microsoft Copilot, or the Bing search service.
 
 ## Controls available to manage web grounding
 
@@ -120,8 +124,8 @@ Microsoft 365 Copilot users can manage web grounding in work chat by following t
 
 1. Select the plugin menu at the bottom right of the chat input box in Microsoft 365 Copilot when using work chat.
 
-:::image type="content" source="media/copilot-prompt-box.png" alt-text="Image showing a cursor pointing to the plugin menu in the chat input box in Microsoft 365 Copilot.":::
+   :::image type="content" source="media/copilot-prompt-box.png" alt-text="Image showing a cursor pointing to the plugin menu in the chat input box in Microsoft 365 Copilot.":::
 
 2. Disable the web content plugin.
 
-:::image type="content" source="media/copilot-web-toggle.png" alt-text="Image showing a cursor pointing to the web content plugin toggle enabled.":::
+   :::image type="content" source="media/copilot-web-toggle.png" alt-text="Image showing a cursor pointing to the web content plugin toggle enabled.":::
