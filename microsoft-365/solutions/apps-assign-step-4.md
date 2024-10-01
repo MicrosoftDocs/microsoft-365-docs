@@ -70,4 +70,7 @@ For more information, see [Protecting application extensions](/mem/intune/apps/a
 
 Once you have reviewed and completed the steps provided in this solution, you're ready to manage and maintain the managed apps your organization uses.
 
-For more information about deploying Intune, see [Get started with your Microsoft Intune deployment](/mem/intune/fundamentals/get-started-with-intune).
+For more information related to managing and maintaining apps with Intune, see the following topics:
+- [Microsoft Intune app management](/mem/intune/apps/app-management)
+- [App management troubleshooting documentation](/troubleshoot/mem/intune/app-management/app-management)
+- [Get started with your Microsoft Intune deployment](/mem/intune/fundamentals/get-started-with-intune)
