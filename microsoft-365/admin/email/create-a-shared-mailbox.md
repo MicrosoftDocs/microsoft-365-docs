@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 08/21/2023
+ms.date: 09/30/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -25,11 +25,6 @@ ms.custom:
 - business_assist
 - has-azure-ad-ps-ref
 - azure-ad-ref-level-one-done
-search.appverid:
-- BCS160
-- MET150
-- MOE150
-ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: "Create a shared mailbox to enable multiple users in your business to share the responsibility of reading and answering email sent to one address."
 ---
 
@@ -55,7 +50,7 @@ Before creating a shared mailbox, be sure to read [About shared mailboxes](about
 
 ::: moniker range="o365-worldwide"
 
-2. In the admin center, go to the **Teams & Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a> page.
+2. In the admin center, go to the **Teams & Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a> page. Select **Show all** in the left navigation pane if you don't see **Teams & Groups**.
 
 ::: moniker-end
 
@@ -64,14 +59,14 @@ Before creating a shared mailbox, be sure to read [About shared mailboxes](about
 2. In the [admin center](https://go.microsoft.com/fwlink/p/?linkid=850627), go to the **Teams & Groups** \> **Shared mailboxes** page.
 
 ::: moniker-end
-    
+
 3. On the **Shared mailboxes** page, select **+ Add a shared mailbox**. Enter a name for the shared mailbox. This chooses the email address, but you can edit it if needed.
   
 4. Select **Save changes**. It may take a few minutes before you can add members.
 
 5. Under **Next steps**, select **Add members to this mailbox**. Members are the people who will be able to view the incoming mail to this shared mailbox, and the outgoing replies.
 
-6. Select the **Add members** button. Select the people who you want to use this shared mailbox, and then select **Add**. and then **Close**.
+6. Select the **Add members** button. Select the people who you want to use this shared mailbox, and then select **Add**. and then close.
 
 You have a shared mailbox and it includes a shared calendar. Go on to the next step: [Block sign-in for the shared mailbox account](#block-sign-in-for-the-shared-mailbox-account).
 
