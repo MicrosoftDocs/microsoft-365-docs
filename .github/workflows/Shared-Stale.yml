@@ -23,7 +23,39 @@ jobs:
     runs-on: ubuntu-latest
     if: inputs.RepoVisibility == 'private' 
     steps:
+
+    - name: Get selected month
+      id: get-month
+      shell: pwsh
+      run: |
+
+        # Define the starting week date and starting month date
+        $StartingWeekDate = Get-Date "2024-11-04"
+        $StartingMonthDate = Get-Date "2024-05-01"
+
+        # Get the current date
+        $CurrentDate = Get-Date
+
+        # Calculate the number of weeks passed since the starting week date. If the current date is before the starting week date, the number of weeks passed is 0
+        $DaysDifference = ($CurrentDate - $StartingWeekDate).Days
+        $WeeksPassed = [math]::Max(0, [int]($DaysDifference / 7))
+
+        # Calculate the month selected by subtracting the number of weeks passed from the starting month date
+        $MonthSelectedDate = $StartingMonthDate.AddMonths(-$WeeksPassed)
+
+        # Format the output date
+        $FriendlyFormattedMonthSelected = $MonthSelectedDate.ToString("MMMM d, yyyy")
+        $WorkflowFormattedMonthSelected = $MonthSelectedDate.ToString("yyyy-MM-ddT00:00:00Z")
+
+        # Output the result
+        Write-Host "For the current date $($CurrentDate.ToString('MMMM d, yyyy')), the month selected should be $FriendlyFormattedMonthSelected."
+        Write-Host "Workflow-formatted date: $WorkflowFormattedMonthSelected"
+
+        echo "SelectedMonth=$WorkflowFormattedMonthSelected" >> $env:GITHUB_OUTPUT
+
+
     - uses: actions/stale@v9
+      if: endsWith(steps.get-month.outputs.SelectedMonth, 'Z') # Make sure there's a date before running otherwise the stale action will run as if start-date doesn't exist. 
       with:
         repo-token: ${{ secrets.AccessToken }} 
         debug-only: ${{ inputs.RunDebug }}
@@ -32,7 +64,7 @@ jobs:
         days-before-issue-close: -1
         days-before-pr-stale: 90
         days-before-pr-close: 14
-        start-date: '2024-05-01T00:00:00Z'
+        start-date: ${{ steps.get-month.outputs.SelectedMonth }}
         stale-pr-label: Inactive
         close-pr-label: Auto Closed
         exempt-pr-labels: Keep open
@@ -69,6 +101,18 @@ jobs:
           Thank you! 
           <p/> 
           PS: Mention <b>@marveldocs-pubops</b> in the comments if you need assistance.
+
+    - name: Error on missing date
+      if: endsWith(steps.get-month.outputs.SelectedMonth, 'Z') == false
+      shell: pwsh
+      env:
+        SelectedMonth: ${{ steps.get-month.outputs.SelectedMonth}}
+      run: |
+
+        $SelectedMonth = $env:SelectedMonth
+        Write-Error "The value in SelectedMonth, `"$SelectedMonth`", isn't a valid datetime. The stale action wasn't run."
+        exit 1
+
 
 #   stale-public:
 #     name: Stale check - public repos
