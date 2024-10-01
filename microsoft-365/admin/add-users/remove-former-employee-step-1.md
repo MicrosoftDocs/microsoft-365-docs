@@ -78,6 +78,6 @@ If you have email as part of your Microsoft 365 subscription, sign in to the <a 
 
 ## Related content
 
-[Exchange admin center in Exchange Online](/exchange/exchange-admin-center) (article)\
+[Exchange admin center in Exchange Online](/exchange/exchange-admin-center) (article)
 
 [Restore a user](restore-user.md) (article)
