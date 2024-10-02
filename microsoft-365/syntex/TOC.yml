@@ -243,6 +243,8 @@
           href: solutions/agreements-overview.md
         - name: Key concepts
           href: solutions/agreements-key-concepts.md
+        - name: Frequently asked questions
+          href: solutions/agreements-faq.md
         - name: Admin setup
           items:
             - name: Get and assign licenses
