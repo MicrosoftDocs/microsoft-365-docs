@@ -3,7 +3,7 @@ title: "Microsoft 365 admin center Microsoft 365 Copilot usage"
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 06/06/2024
+ms.date: 10/02/2024
 audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-copilot
@@ -34,7 +34,7 @@ In the Microsoft 365 Copilot usage report, which is in continuous enhancement, y
 ## How do I get to the Microsoft 365 Copilot usage report?
 
 1. In the admin center, go to **Reports** > **Usage**.
-1. Select the **Microsoft 365 Copilot5** page.
+1. Select the **Microsoft 365 Copilot** page.
 1. Select the Usage tab to view adoption and usage metrics.
 
 ## Interpret the Microsoft 365 Copilot usage report
