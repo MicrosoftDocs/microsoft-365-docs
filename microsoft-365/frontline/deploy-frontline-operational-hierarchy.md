@@ -16,7 +16,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 12/04/2023
+ms.date: 10/02/2024
 ---
 
 # Deploy your frontline operational hierarchy
