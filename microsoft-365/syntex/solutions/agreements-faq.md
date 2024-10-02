@@ -20,7 +20,8 @@ description: Get answers to frequently asked questions about the SharePoint Agre
 
 # Frequently asked questions about SharePoint Agreements AI
 
-#### What is SharePoint Agremeents AI?
+#### What is SharePoint Agreements AI?
+
 SharePoint Agreements AI is an end-to-end solution, powered by AI, to help streamline and simplify your agreements, such as nondisclosure agreements (NDAs) and statements of work (SOWs). From drafting to execution, the solution is ready to integrate seamlessly into your flow of work.
 
 
