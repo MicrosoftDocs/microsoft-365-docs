@@ -30,7 +30,7 @@ Microsoft 365 Lighthouse lets you change or reset user passwords. You can reset 
 
 1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Users** > **Account management**.
 
-2. On the **Search users** tab, enter the user's name in the search box and press **Enter**.
+2. On the **Search users** tab, enter all or part of the user's name in the search box and press **Enter**.
 
 3. From the search results list, select the checkbox next to one or more users in the list, and then select **Reset password**.
 

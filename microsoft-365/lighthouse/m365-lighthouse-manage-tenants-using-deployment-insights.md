@@ -36,7 +36,7 @@ Microsoft 365 Lighthouse provides deployment insights within and across the tena
 
 1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Deployment** > **Deployment insights**.
 
-2. On the **Deployment insights** page, review the following areas to gather insight on customer tenants' deployment progress.
+2. On the **Deployment insights** page, review the following areas to gather insights on customer tenants' deployment progress.
 
 |Area                |Description                             |
 |--------------------|----------------------------------------|
@@ -45,7 +45,7 @@ Microsoft 365 Lighthouse provides deployment insights within and across the tena
 |Tenants tab     | Provides detailed deployment progress for each tenant. You can use various data points from the table to determine the appropriate action. For example, the **Not licensed tasks** column indicates the number of tasks for which the tenant is not licensed. To resolve the issue, you can add a license or exclude the user from the task. The **Regressed tasks** column indicates that a task status changed from a **Compliant** or **Dismissed** state. You can go to the specific tenant deployment plan and take the appropriate action.        |
 |Tasks tab     |  Provides deployment progress for all tasks, including how many tenants the task is assigned to. For tasks that are **Not compliant** or **Not licensed**, you can take action to resolve the issue.       |
 
-For additional solutions for common deployment issues, see the [Deploying baselines section in Microsoft 365 Lighthouse frequently asked questions (FAQs](m365-lighthouse-faq.yml#deploying-baselines).
+For additional solutions for common deployment issues, see the [Deploying baselines section in Microsoft 365 Lighthouse frequently asked questions (FAQs)](m365-lighthouse-faq.yml#deploying-baselines).
 
 ## Review regressed tasks
 
