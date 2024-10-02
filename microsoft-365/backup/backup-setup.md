@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 07/31/2024
+ms.date: 09/26/2024
 ms.topic: conceptual
 ms.service: microsoft-365-backup
 ms.custom: backup
@@ -24,7 +24,7 @@ Get started with Microsoft 365 Backup by following these simple three steps in t
 
 ## Step 1: Set up pay-as-you-go billing
 
-Microsoft 365 Backup is a pay-as-you-go offering that charges based on consumption, unlike traditional user-based licenses. To set up pay-as-you-go for Microsoft 365 Backup, you'll need to have this information:
+Microsoft 365 Backup is a pay-as-you-go offering that charges based on consumption, unlike traditional user-based licenses. To set up pay-as-you-go for Microsoft 365 Backup, you need to have this information:
 
 > [!div class="checklist"]
 > * **Valid Azure subscription**. An Azure subscription provides a logical container for your resources. Each Azure resource is associated with only one subscription. Creating a subscription is the first step in adopting Azure. To learn more about Azure, see [Azure fundamental concepts](/azure/cloud-adoption-framework/ready/considerations/fundamental-concepts).
@@ -56,17 +56,17 @@ To turn on Microsoft 365 Backup, you need to go to the Microsoft 365 admin cente
 
 3. On the **Automate content processes with Syntex** page, select **Go to Syntex settings**.
 
-4. On the Microsoft Syntex page, in the left navigation, select **Storage**. From the list of products, select **Backup**.
+4. On the Syntex page, in the **Syntex services for** section, select **Storage**. From the list of products, select **Backup**.
 
-5. By default, the feature is turned off. On the **Backup** panel, select **Turn on** to enable Microsoft 365 Backup for your organization.
+5. On the **Backup** panel, select **Turn on**.
 
-6. Review the applicable [terms of service for Microsoft 365](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/all) and select **Confirm**.
-
+6. On **Turn on Backup** panel, review the applicable [terms of service for Microsoft 365](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/all), and then select **Save**.
+<!---
     ![Screenshot of the Turn on Backup panel and the Confirm button.](../media/m365-backup/backup-setup-turn-on.png)
-
+--->
 ## Step 3: Create backup policies to protect your data
 
-Now that you have enabled Microsoft 365 Backup for your organization, follow through to create policies and start protecting your content.
+Now that Microsoft 365 Backup is enabled for your organization, follow through to create policies and start protecting your content.
 
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home).
 
@@ -324,7 +324,7 @@ Only tenant-level admins can create and manage backups using Microsoft 365 Backu
 
 - **Protection units** – SharePoint sites, OneDrive accounts, or Exchange Online mailboxes backed up by the Microsoft 365 Backup tool.
 
-- **Restore point** – A prior point in time from which you can restore a version of your content and metadata. If the protection unit from a prior point in time is identical to the present state of your data, then a restore from that point has no affect on your current data.
+- **Restore point** – A prior point in time from which you can restore a version of your content and metadata. If the protection unit from a prior point in time is identical to the present state of your data, then a restore from that point has no effect on your current data.
 
 - **RPO** – Recovery point objective, or how close in time the most recent restore point is to an impacting event.
 

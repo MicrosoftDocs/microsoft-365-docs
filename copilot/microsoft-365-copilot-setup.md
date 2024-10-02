@@ -148,36 +148,6 @@ For business-critical sites, there are features in SharePoint Advanced Managemen
 > [!NOTE]
 > SharePoint Advanced Management has more features to help you get ready for Copilot fast and at scale. To learn more, see [Get ready for Copilot for Microsoft 365 with SharePoint Advanced Management (SAM)](/sharepoint/get-ready-copilot-sharepoint-advanced-management).
 
-### Copilot and multiple account access
-
-✅ **Can use tenant restrictions and MDM policies to block personal accounts**
-
-For users with multiple Microsoft accounts (work/school account or personal account), Copilot features work seamlessly in Excel, Word, PowerPoint, and OneNote when:
-
-- One of those accounts signs into a Windows session, and
-- One of those accounts has a Copilot Pro or Microsoft 365 Copilot license assigned
-
-For example:
-
-- A user has a Microsoft 365 Copilot license and is on their work machine. On the work machine, the user can open a document from their personal OneDrive, and use Copilot in the personal document.
-- A user has a Copilot Pro license and signs in to their work device with their personal Microsoft account (MSA). On the work device, the user can use Copilot with Office files stored on their OneDrive (work or personal) or in SharePoint document libraries.
-
-As an admin, you can:
-
-- Use a [Microsoft Entra tenant restriction](/entra/external-id/tenant-restrictions-v2) that blocks users from adding a personal Microsoft account to their work device. This feature prevents users with Copilot Pro from seeing and using Copilot features in their personal Microsoft 365 apps on their work device.
-
-  You need to create tenant restriction policies for each Microsoft 365 app. To learn more, see [Set up tenant restrictions](/entra/external-id/tenant-restrictions-v2).
-
-- Prevent Microsoft 365 apps from using your work/school Microsoft Entra accounts on end users personally owned devices that use Copilot. Specifically, you can use compliance and Conditional Access policies that prevent users from accessing resources on noncompliant devices.
-
-  For more information on using Microsoft Intune for these policies, see:
-
-  - [Use compliance policies to set rules for devices you manage with Intune](/mem/intune/protect/device-compliance-get-started)
-  - [Common ways to use Conditional Access with Intune](/mem/intune/protect/conditional-access-intune-common-ways-use)
-
-> [!NOTE]
-> In sovereign tenants where Microsoft 365 Copilot is not available, users are blocked from using Copilot features. They're blocked even if a device has multiple accounts signed in and one of those accounts has Copilot.
-
 ### Sensitivity labels from Microsoft Purview
 
 ✅ **Use sensitivity labels to protect your data**

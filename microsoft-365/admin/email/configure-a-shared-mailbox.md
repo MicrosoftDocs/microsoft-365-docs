@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 08/21/2023
+ms.date: 09/30/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -116,13 +116,11 @@ To learn more about litigation hold, see [Create a Litigation Hold](../../compli
 
 1. In the Microsoft 365 admin center, go to **Teams & groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a>.
 
-2. Select the shared mailbox you want to edit, then select **Members** > **Customize permissions**.
-
-   Select Edit next to the permission you want to change for a member.
+2. Select the shared mailbox you want to edit, then under Manage mailbox permissions, select one of the permissions.
 
 3. Do one of the following:
-   - To give that permission to an additional member, select **Add permissions**, search for or select a member to add, and then select **Save**.
-   - To remove the permission from a member, use the Search box to search for the member if necessary,  select the **X** next to the member's name, and then select **Save**.
+   - To give that permission to an additional member, select **Add permissions**, search for or select a member to add, and then select **Add**.
+   - To remove the permission from a member, select the user, and then select **Remove permissions**.
 
 ## Show or hide a shared mailbox in the global address list
 

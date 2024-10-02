@@ -69,6 +69,11 @@ Admins can enable or disable Copilot extensibility for their org by using a sett
 - **No Users**: This option means that no users in the organization can access Copilot agents, and the third party agents are disabled in the Copilot agents flyout. This option also hides Copilot agents from the list of Available and Deployed apps on the Integrated Apps page.
 - **Specific Users**: This option lets you select specific users or groups in your organization to have access to Copilot agents. So while all or specific users in your organization may have permissions to install and use apps from the Available apps and Deployed apps lists, only the users or groups you select in this setting can use Copilot agents.
 
+> [!NOTE]
+>
+> - Once extensibility is disabled in the tenant, it can take up to 24 hours for agents to disappear for users.
+> - The Microsoft pinned Visual Creator agent will still be visible even when extensibility is disabled.
+
 ## Deploy or remove Copilot agents
 
 Admins can deploy or remove Copilot agents across the whole organization or for specific users or groups by using the same gestures and controls that work for any other app in the Microsoft 365 admin center. Admins can select a Copilot agent from the list of Available or Deployed apps and select **Deploy** or **Remove**. Admins can also choose to deploy or remove the agents for everyone or specific users or groups. Deploying or removing an agent affects its availability and functionality in Copilot and in the other host products, such as Outlook, Teams, or Microsoft 365.
@@ -87,6 +92,12 @@ Admins can block or unblock Copilot agents for the complete organization or spec
 ## View and consent to permissions and data access
 
 For detailed information about how Microsoft 365 Copilot uses, protects, and shares organizational information to power extensibility, see [Data, Privacy, and Security for Microsoft 365 Copilot](/microsoft-365-copilot/microsoft-365-copilot-privacy).
+
+## Ensuring a secure implementation of Declarative Agents in Microsoft 365
+
+Microsoft 365 customers and partners can build declarative agents that extend Microsoft 365 Copilot with custom instructions, grounding knowledge, and actions invoked via REST API descriptions configured by the declarative agent. At runtime, Microsoft 365 Copilot reasons over a combination of the user’s prompt, custom instructions that are part of the declarative agent, and data which was provided by custom actions. All of this data might influence the behavior of the system, and such processing comes with security risks, specifically that if a custom action can provide data from untrusted sources (such as emails or support tickets), an attacker might be able to craft a message payload which causes your agent to behave in a way they control – incorrectly answering questions or even invoking custom actions. While Microsoft takes many measures to prevent such attacks, organizations should only enable declarative agents that use trusted knowledge sources and connect to trusted REST APIs via custom actions. If the use of untrusted data sources is necessary, design the declarative agent around the possibility of breach and don't give it the ability to perform sensitive operations without careful human intervention.
+
+Microsoft 365 provides organizations with extensive controls governing who can acquire and use integrated apps and the specific apps enabled for groups or individuals within a Microsoft 365 tenant, including those apps that include declarative agents. Tools like Copilot Studio, which enable users to create their own declarative agents, also include extensive controls that allow admins to govern connectors used for both knowledge and custom actions.
 
 ## Publish Copilot agents
 
