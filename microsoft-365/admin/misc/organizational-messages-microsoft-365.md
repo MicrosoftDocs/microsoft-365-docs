@@ -383,3 +383,29 @@ All messages have a state that indicates their creation or delivery status, incl
 8. **Rejected** – message was reviewed, and an Approver admin disallowed it from proceeding to a Scheduled or Active state.
 
 9. **Pending approval** – message is awaiting review by an Approver admin.
+
+### How does localization work in Organizational messages?
+
+**For premade messages**, your message will be delivered to end users who have their related product language set to one of the following:
+
+- en-US
+- de-DE
+- es
+- fr-FR
+- it-IT
+- ja-JP
+- ko-KR
+- nl-NL
+- pl-PL
+- pt-BR
+- pt-PT
+- ru-RU
+- tr-TR
+- zh-Hans
+- zh-Hant
+
+For example, if the Organizational Messages Writer (admin) selects message A to be sent to their end users, then any end users with their product language set to one of the above languages will qualify to receive the message A.
+
+**For customized messages**, your message will only be delivered in the language in which it was created within the Microsoft 365 admin center.  
+
+For example, if the Organizational Messages Writer (admin) has their Microsoft 365 admin center product language set to French when they create their message B from scratch, end users with related product language set to English will not receive the message B.  However, end users with French set as their related product language will qualify to receive the message B.
