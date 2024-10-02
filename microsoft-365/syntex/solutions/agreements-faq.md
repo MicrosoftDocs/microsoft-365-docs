@@ -1,9 +1,9 @@
 ---
-title: Frequently asked questions
-ms.author: rammenon
-author: rammenon
-manager: vijshar
-ms.reviewer: ssathyamoort, neilh, shrganguly
+title: Frequently asked questions about SharePoint Agreements AI
+ms.author: chucked
+author: chuckedmonson
+manager: jtremper
+ms.reviewer: ssathyamoort, neilh, shrganguly, rammenon
 ms.date: 09/18/2024
 audience: admin
 ms.topic: conceptual
@@ -15,10 +15,10 @@ ms.collection:
     - m365initiative-syntex
 ms.localizationpriority:  medium
 ROBOTS: NOINDEX, NOFOLLOW
-description: Learn how to analyze section revisions with the SharePoint Agreements AI solution.
+description: Get answers to frequently asked questions about the SharePoint Agreements AI solution.
 ---
 
-# Frequently Asked Questions
+# Frequently asked questions about SharePoint Agreements AI
 
 #### What is SharePoint Agremeents AI?
 SharePoint Agreements AI is an end-to-end solution, powered by AI, to help streamline and simplify your agreements, such as nondisclosure agreements (NDAs) and statements of work (SOWs). From drafting to execution, the solution is ready to integrate seamlessly into your flow of work.
