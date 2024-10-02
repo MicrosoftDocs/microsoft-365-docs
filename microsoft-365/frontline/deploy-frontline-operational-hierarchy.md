@@ -134,3 +134,7 @@ You can download a CSV file that lists the errors, along with details that inclu
 ## Delete your hierarchy
 
 To delete your hierarchy, [upload](#upload-your-hierarchy) a blank CSV file.
+
+## Related articles
+
+- [Use announcements in Viva Connections](/viva/connections/announcements-viva-connections)
