@@ -51,7 +51,7 @@ Organizational messages’ centralized experience within Microsoft 365 admin cen
 
 - Configure delivery schedules and parameters for messages
 
-- Assign targeting via Entra user groups and advanced targeting options
+- Assign targeting via Microsoft Entra user groups and advanced targeting options
 
 - Manage messages created in Microsoft 365 admin center and other portals
 
@@ -75,7 +75,7 @@ Before working with organizational messages, make sure your team satisfies the f
 
   - [Organizational Messages Approver](/entra/identity/role-based-access-control/permissions-reference#organizational-messages-approver)
 
-- **Message recipients** anyone in your organization who might receive messages from your authors must have access to the Microsoft products to which the messages are configured to be delivered. (End users aren't required to have any Entra roles to receive organizational messages.)
+- **Message recipients** anyone in your organization who might receive messages from your authors must have access to the Microsoft products to which the messages are configured to be delivered. (End users aren't required to have any Microsoft Entra roles to receive organizational messages.)
 
   - For example, any message configured to be delivered to a Windows channel, like Windows Spotlight, requires that recipients use **Windows 11 Enterprise**.
 
@@ -90,7 +90,7 @@ There are three basic experiences to familiarize yourself with within the organi
 
 1. **Manage** – this is where you and your team will be able to see most of your organizational messages created in various portals, including Intune/Microsoft Endpoint Manager. Your team will also be able to execute various functions on each message, view details, and conduct approval flows in the ‘Manage’ area.
 
-2. **Create a message** – this wizard is where anyone with the above-described “Organizational Messages Writer” Entra role can go to create either fully customized or templatized messages.
+2. **Create a message** – this wizard is where anyone with the above-described “Organizational Messages Writer” Microsoft Entra role can go to create either fully customized or templatized messages.
 
 3. **Review activity** – This is where your admins can go to see the performance activity of messages that are or have been delivering to your users.
 
@@ -108,7 +108,7 @@ You can review and control the messages from anyone in their organization using 
 
 ### How to continue creating a draft message (Modify)
 
-If you have the Organizational Messages Writer Entra role as described above, you can edit or otherwise complete a saved ‘draft’ message in your tenant. To do so:
+If you have the Organizational Messages Writer Microsoft Entra role as described above, you can edit or otherwise complete a saved ‘draft’ message in your tenant. To do so:
 
 1. Filter Status to **Draft**.
 
@@ -120,7 +120,7 @@ If you have the Organizational Messages Writer Entra role as described above, yo
 
 ### How to approve or reject a ‘pending approval’ message
 
-If you have the Organizational Messages Approver Entra role as described above, you can review and approve or reject messages from your colleagues that are in the ‘pending approval’ state. To approve or reject a ‘pending approval’ message:
+If you have the Organizational Messages Approver Microsoft Entra role as described above, you can review and approve or reject messages from your colleagues that are in the ‘pending approval’ state. To approve or reject a ‘pending approval’ message:
 
 1. Filter Status to **Pending approval**.
 
@@ -134,7 +134,7 @@ If you have the Organizational Messages Approver Entra role as described above, 
 
 ### How to overcome a rejected message (Withdraw)
 
-If you have the Organizational Messages Writer Entra role as described above, you can overcome a rejection from the approvers in your tenant. To do so:
+If you have the Organizational Messages Writer Microsoft Entra role as described above, you can overcome a rejection from the approvers in your tenant. To do so:
 
 1. Filter status to **Rejected**.
 
@@ -157,7 +157,7 @@ If you have the Organizational Messages Writer Entra role as described above, yo
 > [!IMPORTANT]
 > Organizational messages delivers messages to end users within the time windows configured by admins via Microsoft 365 admin center experiences.  However, occasionally, messages may not be delivered as expected due to system or user device conditions, such as urgent messages not being delivered to devices that are disconnected from the internet.  In such instances, our system will continue trying to deliver messages as possible and appropriate.
 
-Users with the Organizational Messages Writer Entra role described previously will have access to the **Create a message** button and capability in the centralized experience. Selecting this button will invoke the wizard, which includes these primary creation steps:
+Users with the Organizational Messages Writer Microsoft Entra role described previously will have access to the **Create a message** button and capability in the centralized experience. Selecting this button invokes the wizard, which includes these primary creation steps:
 
 - **Objective** for selecting the nature or purpose of your new message.
 
@@ -316,7 +316,7 @@ The Organizational messages centralized experience is the ‘one-stop-shop’ fo
 
 ### How do admins get the required permissions?
 
- Reach out to a Global admin and ask them to assign you Organizational Messages Writer or Organizational Message Approver Entra role to you following these steps:
+ Reach out to a Global admin and ask them to assign you Organizational Messages Writer or Organizational Message Approver Microsoft Entra role to you following these steps:
 
 1. Global Admin of target testing tenant goes to **Microsoft 365 Admin Center > Active Users**.
 
@@ -383,3 +383,29 @@ All messages have a state that indicates their creation or delivery status, incl
 8. **Rejected** – message was reviewed, and an Approver admin disallowed it from proceeding to a Scheduled or Active state.
 
 9. **Pending approval** – message is awaiting review by an Approver admin.
+
+### How does localization work in Organizational messages?
+
+**For premade messages**, your message will be delivered to end users who have their related product language set to one of the following:
+
+- en-US
+- de-DE
+- es
+- fr-FR
+- it-IT
+- ja-JP
+- ko-KR
+- nl-NL
+- pl-PL
+- pt-BR
+- pt-PT
+- ru-RU
+- tr-TR
+- zh-Hans
+- zh-Hant
+
+For example, if the Organizational Messages Writer (admin) selects message A to be sent to their end users, then any end users with their product language set to one of the above languages will qualify to receive the message A.
+
+**For customized messages**, your message will only be delivered in the language in which it was created within the Microsoft 365 admin center.  
+
+For example, if the Organizational Messages Writer (admin) has their Microsoft 365 admin center product language set to French when they create their message B from scratch, end users with related product language set to English will not receive the message B. However, end users with French set as their related product language will qualify to receive the message B.
