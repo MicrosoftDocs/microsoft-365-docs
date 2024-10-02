@@ -16,7 +16,7 @@
          "redirect_document_id":false
       },
       {
-         "source_path":"/microsoft-365/bookings/comparison-chart.md",
+         "source_path":"microsoft-365/bookings/comparison-chart.md",
          "redirect_url":"/microsoft-365/bookings/bookings-overview",
          "redirect_document_id":false
       }
