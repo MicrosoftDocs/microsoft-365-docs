@@ -1,7 +1,7 @@
 ---
 title: "User experience in a multi-geo environment"
 ms.reviewer:
-ms.date: 12/11/2023
+ms.date: 09/25/2024
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -49,9 +49,9 @@ Users have their OneDrive provisioned in their preferred data location. If a use
 
 ## OneDrive iOS and Android 
 
-The OneDrive iOS and Android mobile apps show you your OneDrive files and files shared with you regardless of their _Geography_ location. Search from the OneDrive mobile apps show relevant results from all _Geography_ locations. Download the latest version of these apps.
+The OneDrive iOS and Android mobile apps show you your OneDrive files and files shared with you regardless of their _Geography_ location. Searches from the OneDrive mobile apps show relevant results from all _Geography_ locations. Download the latest version of these apps.
 
-For more information, see Use [OneDrive on iOS](https://support.office.com/article/08d5c5b2-ccc6-40eb-a244-fe3597a3c247) and [Use OneDrive for Android](https://support.office.com/article/eee1d31c-792d-41d4-8132-f9621b39eb36) for more information.
+For more information, see [Use OneDrive on iOS](https://support.office.com/article/08d5c5b2-ccc6-40eb-a244-fe3597a3c247) and [Use OneDrive for Android](https://support.office.com/article/eee1d31c-792d-41d4-8132-f9621b39eb36) for more information.
 
 ## OneDrive mobile client
 
@@ -81,9 +81,9 @@ In SharePoint Multi-Geo, your SharePoint home is hosted in the location where th
 
 All of these components show up for the user regardless of the _Geography_ location where the content is hosted, so long as the user has permissions to said content. 
 
-**Features Links**
+**Featured Links**
 
-Admins may configure Featured links in SharePoint home as appropriate to each _Geography_ location. This allows the admin to feature in the SP Home for each region the links that are appropriate for users in the region. 
+Admins can configure Featured links in SharePoint home as appropriate to each _Geography_ location. This allows the admin to feature in the SP Home for each region the links that are appropriate for users in the region. 
 
 ## SharePoint mobile client
 
@@ -91,14 +91,20 @@ The SharePoint mobile client is multi-geo aware and will display pertinent conte
 
 ## Sharing
 
-The people picker experience shows all users regardless of their _Geography_ location. This allows a user to share with another user in their same geo or in any other of your _Tenant's_ _Geography_ locations. Content from different _Geography_ locations show up in the **Shared with Me** view in the user's OneDrive, Word, Excel, PowerPoint, and Office.com and can be accessed with single sign-On experience regardless of which _Geography_ location it's hosted in.
+The people picker experience shows all users regardless of their _Geography_ location. This allows a user to share with another user in their same geo or in any other of your _Tenant's_ _Geography_ locations. Content from different _Geography_ locations shows up in the **Shared with Me** view in the user's OneDrive, Word, Excel, PowerPoint, and Office.com and can be accessed with single sign-On experience regardless of which _Geography_ location it's hosted in.
 
 ## Microsoft Teams experience
 
 Microsoft Teams is a Multi-Geo service. OneDrive files and recently viewed files are shown regardless of the user's _Geography_ location. @ mentions work with users from all _Geography_ locations.
 
-## User profiles
+## Microsoft 365 Person experience
 
-User profile information is mastered in the user's _Geography_ location. When selecting a user, you'll be directed to the appropriate _Geography_ location for the user, where you'll see their full profile details.
+The **Microsoft 365 Person** encompasses the complete set of properties, attributes and associated people contacts that are representative of a user in the Microsoft 365 tenant. The Microsoft 365 Person dataset is mastered and stored in the Primary Data Location of the user.
 
-If Office Delve is turned off, you'll see the classic profile experience in SharePoint, which isn't Multi-Geo aware.
+There are two constituents of the Microsoft 365 Person data:
+
+- Microsoft 365 Profile ([profile resource type](/graph/api/resources/profile?view=graph-rest-beta&preserve-view=true)), which constitutes the information that can be viewed by other users within the tenant about the Microsoft 365 person. This includes the user's Microsoft Entra ID details along with other information like position and photo ([Get profilePhoto](https://aka.ms/profileimage)). The fields and attributes that are exposed can be controlled by the tenant admin ([Add or remove custom attributes on a profile card using the profile card API](/graph/add-properties-profilecard)).
+
+- My Microsoft 365 People dataset ([contact resource type](/graph/api/resources/contact?view=graph-rest-1.0&preserve-view=true)), which represents the list of the user's Microsoft 365 contacts along with the user’s version of their contacts' Microsoft 365 profile. This edited or unedited version of another user’s profile will always remain private in the current user’s mailbox and won't be replicated anywhere.
+
+To enable discovery, rich people search, and full fidelity collaboration experiences, the Microsoft 365 profile of users in the tenant is replicated across geos when a Multi-Geo tenant is first set up (for instance, to provide the Global Address List) and in response to user actions. Examples of user actions include direct and indirect interactions with one or more users in the tenant via activities like joining the Organization, creating and\or joining Teams meetings, sharing and\or co-editing files, profile card lookup, and adding of contacts as described in [Add, find, edit, or delete a contact in Outlook](https://support.microsoft.com/office/add-find-edit-or-delete-a-contact-in-outlook-e1dc4548-3bd6-4644-aecd-47b5728f7b0d#:~:text=information%20any%20time.-,Select%20the%20contact%20from%20the%20list%2C%20then%20select%20Edit%20contact,and%20begin%20adding%20more%20information.&text=someone's%20profile%20card-,In%20Mail%2C%20open%20an%20email%20message%20in%20the%20reading%20pane,card%2C%20select%20Add%20to%20contacts.). The replicated Microsoft 365 profiles of other users from an interaction\collaboration are stored in the Microsoft 365 People dataset of the target user shard.

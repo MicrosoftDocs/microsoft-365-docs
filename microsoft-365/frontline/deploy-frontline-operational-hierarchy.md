@@ -16,7 +16,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 12/04/2023
+ms.date: 10/02/2024
 ---
 
 # Deploy your frontline operational hierarchy
@@ -28,7 +28,7 @@ ms.date: 12/04/2023
 
 Setting up your frontline operational hierarchy enables you to map your organization’s structure of frontline teams and locations to a hierarchy in the Teams admin center. You can organize your organization’s teams by country, region, area, city, district, and so on. Using a CSV file, you can connect each of your frontline teams and locations to parent teams to build this hierarchy. Admins can also define metadata in the CSV file that ranges from department information to brand information metadata for each team and location.
 
-The operational hierarchy coupled with this metadata will enable numerous frontline apps and experiences in the future, like task publishing and additional frontline capabilities that are coming soon. Start setting up your operational hierarchy today to get the full value of these upcoming features as they're released.
+The operational hierarchy coupled with this metadata enables frontline apps and experiences, like [targeted announcements in Viva Connections](/viva/connections/announcements-viva-connections), and numerous frontline capabilities, like task publishing, in the future. Start setting up your operational hierarchy today to get the full value of these upcoming features as they're released.
 
 > [!IMPORTANT]
 > If your organization already set up and uploaded a hierarchy through PowerShell to support task publishing, you should continue to [use PowerShell to make updates to your hierarchy for task publishing](/microsoftteams/set-up-your-team-hierarchy). Using the Teams admin center isn't supported yet. Soon, you'll be able to define, manage, and update your hierarchy for task publishing in the Teams admin center, along with PowerShell.
@@ -71,7 +71,7 @@ The CSV file must contain the following three columns, in the following order, s
 | Column name   | Required | Description   |
 ----------------|----------|---------------|
 | DisplayName    | Yes      | The name of the node. The name can be up to 100 characters long and contain only the characters A-Z, a-z, and 0-9. Node names must be unique.|
-| ParentName    | Yes       | The name of the parent node. The value you specify here must match the value in the **DisplayName** field of the parent node exactly. If you want to add more than one parent node, separate each parent node name with a semicolon (;). You can add up to 25 parent nodes, and each parent node name can be up to 2500 characters long. A node can have multiple parent nodes only if the parent nodes are root nodes. <br><br>**IMPORTANT** Be careful not to create a loop where a parent higher up in the hierarchy references a child node lower in the hierarchy. This structure isn't supported. |
+| ParentName    | Yes       | The name of the parent node. The value you specify here must match the value in the **DisplayName** field of the parent node exactly. If you want to add more than one parent node, separate each parent node name with a semicolon (;). You can add up to 25 parent nodes, and each parent node name can be up to 2,500 characters long. A node can have multiple parent nodes only if the parent nodes are root nodes. <br><br>**IMPORTANT** Be careful not to create a loop where a parent higher up in the hierarchy references a child node lower in the hierarchy. This structure isn't supported. |
 | TeamId        | Yes, if the team is a leaf node.| The ID of the team you want to link a node to. Each node must refer to a unique team, so each TeamId value can appear only one time in the hierarchy file.|
 
 > [!NOTE]
@@ -134,3 +134,7 @@ You can download a CSV file that lists the errors, along with details that inclu
 ## Delete your hierarchy
 
 To delete your hierarchy, [upload](#upload-your-hierarchy) a blank CSV file.
+
+## Related articles
+
+- [Use announcements in Viva Connections](/viva/connections/announcements-viva-connections)
