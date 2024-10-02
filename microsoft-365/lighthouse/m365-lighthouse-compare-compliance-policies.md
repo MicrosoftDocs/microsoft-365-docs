@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: ragovind
-ms.date: 06/21/2023
+ms.date: 10/01/2024
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-lighthouse
@@ -36,7 +36,7 @@ Make sure devices have a Microsoft Intune license and are enrolled in Microsoft 
 
 2. Select the **Policies** tab.
 
-3. From the **Filters** dropdown list, select an operating system or platform.
+3. From the **OS** filter, select an operating system or platform.
 
    > [!NOTE]
    > You can only compare policies with the same operating system or platform.
@@ -55,7 +55,7 @@ You can filter the results to see **Settings that differ**, **Settings that matc
 
 3. From the list of policies, select the policy that you want to view.
 
-4. In the policy details pane, select **View this policy in Microsoft Endpoint Manager**.
+4. In the policy details pane, select **View this policy in Microsoft Intune admin center**.
 
 5. In the Microsoft Intune admin center, edit the policy settings as needed.
 
