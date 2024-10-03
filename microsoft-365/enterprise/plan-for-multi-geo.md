@@ -1,7 +1,7 @@
 ---
 title: "Plan for Microsoft 365 Multi-Geo"
 ms.reviewer:
-ms.date: 12/11/2023
+ms.date: 10/02/2024
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -28,7 +28,7 @@ This guidance is for administrators of _Tenants_ preparing their Microsoft 365 _
 
 In a Multi-Geo configuration, your Microsoft 365 _Tenant_ consists of a _Primary Provisioned Geography_ location and multiple _Satellite Geography_ locations. You retain a single _Tenant_ that spans across multiple _Geography_ locations retaining single-tenant administration and full-fidelity collaboration experiences across _Geographies_. 
 
-To help you understand the basic concepts of the Multi-Geo configuration, review terms in the Definitions section of the [Overview and Definitions page](m365-dr-overview.md).
+To help you understand the basic concepts of Multi-Geo configuration, review terms in the Definitions section of the [Overview and Definitions page](m365-dr-overview.md).
 
 Enabling Multi-Geo requires four key steps:
 
@@ -54,11 +54,11 @@ Each user should have a _preferred data location_ (PDL) set so that Microsoft 36
 
 Create a list of your users and include their user principal name (UPN) and the Preferred Data Location code. Include your test user and your initial pilot group to start with. You'll need this list for the configuration procedures.
 
-If your users are synchronized from an on-premises Active Directory system to Microsoft Entra ID, then you must set the preferred data location as an Active Directory attribute and synchronize it by using Microsoft Entra Connect. You can't directly configure the preferred data location for synchronized users using [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview). The steps to set up PDL in Active Directory and Synchronize it are covered in [Microsoft Entra Connect Sync: Configure preferred data location for Microsoft 365 resources](/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
+If your users are synchronized from an on-premises Active Directory system to Microsoft Entra ID, then you must set the preferred data location as an Active Directory attribute and synchronize it by using Microsoft Entra Connect. You can't directly configure the preferred data location for synchronized users using [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview). The steps to set up PDL in Active Directory and synchronize it are covered in [Microsoft Entra Connect Sync: Configure preferred data location for Microsoft 365 resources](/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
 
 The administration of a Multi-Geo _Tenant_ can differ from a non-multi-geo _Tenant_ in some scenarios. For example, many SharePoint and OneDrive settings and services are multi-geo aware. We recommend that you review [Administering a multi-geo environment](administering-a-multi-geo-environment.md) before you proceed with your configuration.
 
-Read [User experience in a multi-geo environment](multi-geo-user-experience.md) for details about your end users' experience in a Multi-Geo environment.
+Read [User experience in a multi-geo environment](multi-geo-user-experience.md) for details about your end users' experience in a multi-geo environment.
 
 To get started configuring Microsoft 365 Multi-Geo, see [Configure Microsoft 365 Multi-Geo](multi-geo-tenant-configuration.md).
 
