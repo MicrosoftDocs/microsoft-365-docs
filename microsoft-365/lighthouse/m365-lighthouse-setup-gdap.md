@@ -110,7 +110,7 @@ If you encounter any problems during GDAP setup and need guidance, see [Troubles
 
 ## Obtain customer approval to administer their products
 
-As part of the GDAP setup process, a GDAP relationship request link is generated for each customer who doesn't have an existing GDAP relationship with your partner organization. You need to send the link to an administrator in the customer tenant so they can select the link to approve the GDAP relationship before you can administer their products for them.
+As part of the GDAP setup process, a GDAP relationship request link is generated for each customer who doesn't have an existing GDAP relationship with your partner organization. Before you can administer products for them, you need to send the link to an administrator in the customer tenant so they can select the link to approve the GDAP relationship.
 
 1. On the **Delegated access** page, select the **Relationships** tab.
 
