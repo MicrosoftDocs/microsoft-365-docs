@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
+ms.date: 10/01/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -22,7 +23,6 @@ search.appverid:
 - MET150
 description: "Learn about Microsoft 365 Business Premium, a subscription service that takes care of the IT part for you."
 feedback_system: None
-ms.date: 10/06/2023
 ---
 
 # Microsoft 365 Business Premium
@@ -40,7 +40,6 @@ Microsoft 365 Business Premium is a subscription service that lets you run your 
 When you sign up for Microsoft 365 Business Premium, you get all the same productivity tools you get with Microsoft 365 Business Standard, and the following security features:
 
 **Safeguard your data**
-
 
 |Feature|Description|
 | --- | --- |
