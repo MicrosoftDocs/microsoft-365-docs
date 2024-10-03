@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 08/21/2023
+ms.date: 10/02/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -33,9 +33,9 @@ For more information about changing user contact information or removing former 
   
 ## Update your phone number
   
-1. Browse to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
-2.Go to **Users** > **Active users**.
+2. Go to **Users** > **Active users**.
 
 3. Select your admin account and choose **Manage contact information** under **Contact information**.
 
@@ -45,7 +45,7 @@ For more information about changing user contact information or removing former 
   
 1. Browse to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
-2.Go to **Users** > **Active users**.
+2. Go to **Users** > **Active users**.
 
 3. Select your admin account and choose **Manage username and email** under **Username and email**.
 
