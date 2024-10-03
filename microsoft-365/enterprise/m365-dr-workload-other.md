@@ -66,7 +66,7 @@ See the [Static data location information for select workloads](#static-data-loc
 
 ## Project for the web
 
-See [Power Apps for Data Residency](#power-Apps-for-microsoft-365).
+See [Power Apps for Data Residency](#power-apps-for-microsoft-365).
 
 
 ## Power Apps for Microsoft 365
