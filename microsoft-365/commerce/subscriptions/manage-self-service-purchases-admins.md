@@ -121,7 +121,7 @@ You can use the Microsoft 365 admin center to manage self-service purchases and 
 The **MSCommerce** PowerShell module includes a **PolicyID** parameter value for **AllowSelfServicePurchase**. This parameter lets you control whether users in your organization can make purchases or start trials, and for which products. The module lets you do the same tasks available in the Microsoft 365 admin center, only from the command line. In addition, the module lets you view the default state of the **AllowSelfServicePurchase** parameter value for each product.
 
 > [!IMPORTANT]
-> When you use the **AllowSelfServicePurchase** policy, it controls both purchases and trials. For a list of the products available, see [View a list of self-service purchase products and their status](allowselfservicepurchase-powershell.md#view-a-list-of-self-service-purchase-products-and-their-status).
+> When you use the **AllowSelfServicePurchase** policy, it controls both purchases and trials. For a list of the products available, see [View a list of self-service purchase Microsoft products and their status](allowselfservicepurchase-powershell.md#view-a-list-of-self-service-purchase-microsoft-products-and-their-status).
 
 For more information, see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).
 
