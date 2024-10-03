@@ -37,17 +37,18 @@ Roles are assigned at a workspace level. Currently, SharePoint Agreements AI sup
 | Role | Description | Permissions  | Recommendation   |
 | --- | --- | --- | --- |
 | Workspace owner | These users own the workspace. They're responsible for managing categories, templates, and roles, and have access to all agreements created within their workspace. | Role management, category management, read/write to all agreements, templates, and sections. | Assign this role to users who will manage the workspace. |
-| Workspace member | These users are part of the workspace. They can manage sections and templates, and have access to all agreements within their workspace. They can't manage categories nor roles. | Read/write to all agreements, templates, and sections. | Assign this role to users who will create and manage templates and sections. |
+| Workspace member | These users are part of the workspace. They can manage sections and templates, and have access to all agreements within their workspace. They can't manage categories nor roles. | Read/write to all agreements, templates, and sections. | Assign this role to users who will create and manage templates and sections and will manage all agreements in the workspace. |
 | Template manager | These users can manage templates, but won't have access to all agreements within the workspace. | Read all sections and read/write to all templates. Access to only agreements they create or are shared with them. | Assign this role to those users who can help manage your templates, when you don't want them to have access to all agreements in your workspace. |
+
+> [!NOTE]
+> You can allow users to generate agreements without being assinged a role in the workspace. To do so, share the published template(s) from Word (with at least read-only privileges with the users). These users can then create agreements, and will only have access to agreements that they create or are shared with them.
+
 
 ### Manage roles
 
 Workspace owners can manage these roles in their workspace through the Agreements app in Microsoft Teams. In the Agreements app, go to the **Setup & access** tab, and then navigate to the **Roles** page. Here, you can see and manage the list of users assigned to the roles.
 
 ![A screenshot of Agreements app showing the role management page.](../../media/content-understanding/agreements-roles.png)
-
-> [!NOTE]
-> To give other users access to generate agreements from published templates, share the template with at least read-only privileges with the users. They can create agreements from published templates shared with them, and will only have access to agreements in the workspace that they create or are shared with them.
 
 <br>
 
