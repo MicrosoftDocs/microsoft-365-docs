@@ -48,7 +48,11 @@ To use the **MSCommerce** PowerShell module, you need:
     [!INCLUDE [ga-roles-limitation](../../includes/ga-roles-limitation.md)]
 - The Global reader role for your tenant to see a read-only list of **MSCommerce** product policies.
 
-## Install the MSCommerce PowerShell module
+### Get started with the MSCommerce PowerShell module
+
+To get started using the **MSCommerce** PowerShell module, you must install it, import it into a PowerShell session, and then connect to it with your credentials.
+
+### Install the MSCommerce PowerShell module
 
 You install the **MSCommerce** PowerShell module on your Windows 10 device once and then import it into each PowerShell session you start. Download the **MSCommerce** PowerShell module from the [PowerShell Gallery](https://aka.ms/allowselfservicepurchase-powershell-gallery).
 
@@ -58,7 +62,7 @@ To install the **MSCommerce** PowerShell module with **PowerShellGet**, run the 
 Install-Module -Name MSCommerce
 ```
 
-## Import MSCommerce into the PowerShell session
+### Import MSCommerce into the PowerShell session
 
 After you install the module on your Windows 10 device, you then import it into each PowerShell session that you start. To import it into a PowerShell session, run the following command:
 
@@ -66,7 +70,7 @@ After you install the module on your Windows 10 device, you then import it into 
 Import-Module -Name MSCommerce
 ```
 
-## Connect to MSCommerce with your credentials
+### Connect to MSCommerce with your credentials
 
 To connect to the PowerShell module with your credentials, run the following command.
 
