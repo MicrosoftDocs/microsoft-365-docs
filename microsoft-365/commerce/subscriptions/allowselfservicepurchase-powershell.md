@@ -126,7 +126,7 @@ The following table lists the available products and their **ProductId**. It als
 
 ### View or set the status for AllowSelfServicePurchase for Microsoft products
 
-You can set the **Value** parameter for **AllowSelfServicePurchase** to allow or prevent users from making a self-service purchase of a Microsoft product. You can also use the **OnlyTrialsWithoutPaymentMethod** value to allow users to try products that have no payment required trials. To see which products have these trials enabled, see the product list in [View a list of self-service purchase Microsoft products and their status](). Users can only buy the product after the trial is over if **AllowSelfServicePurchase** is enabled.
+You can set the **Value** parameter for **AllowSelfServicePurchase** to allow or prevent users from making a self-service purchase of a Microsoft product. You can also use the **OnlyTrialsWithoutPaymentMethod** value to allow users to try products that have no payment required trials. To see which products have these trials enabled, see the product list in [View a list of self-service purchase Microsoft products and their status](#view-a-list-of-self-service-purchase-microsoft-products-and-their-status). Users can only buy the product after the trial is over if **AllowSelfServicePurchase** is enabled.
 
 > [!NOTE]
 > Changing the value for **AllowSelfServicePurchase** or **OnlyTrialsWithoutPaymentMethod** only impacts trials or purchases made for the specified product from that point forward. Existing trials or purchases for the specified product aren't affected.
