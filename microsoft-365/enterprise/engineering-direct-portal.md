@@ -90,8 +90,8 @@ The **Diagnostics** page hosts diagnostic tools for self-service issue resolutio
 In this section:
 
 - [Visual Mail Flow](#visual-mail-flow)
-- [DKIM Diagnostic Tool](#dkim-diagnostic-tool)
-- [Editing Auto Archive in Outlook](#editing-auto-archive-in-outlook)
+- [Validate DKIM Signing Configuration](#validate-dkim-signing-configuration)
+- [Auto Archive Detection](#auto-archive-detection)
 
 ### Visual Mail Flow
 
@@ -142,9 +142,9 @@ Select a tree node to view a flyout with other details, including recipients pro
 
 If Visual Mail Flow can’t help you resolve the issue, contact Microsoft Support for further help.
 
-### DKIM Diagnostic Tool
+### Validate DKIM Signing Configuration
 
-The DKIM (DomainKeys Identified Mail) diagnostic tool in Microsoft Admin Center is designed to help administrators verify and troubleshoot DKIM configurations for their domain. DKIM is an email authentication method that enhances email security by allowing receiving mail servers to verify the authenticity of the sender's email through a digital signature. This verification process helps prevent email spoofing and ensures the integrity of the message. 
+The Validate DKIM (DomainKeys Identified Mail) Signing Configuration tool in Microsoft Admin Center is designed to help administrators verify and troubleshoot DKIM configurations for their domain. DKIM is an email authentication method that enhances email security by allowing receiving mail servers to verify the authenticity of the sender's email through a digital signature. This verification process helps prevent email spoofing and ensures the integrity of the message. 
 
 The DKIM diagnostic tool is used to: 
 
@@ -217,9 +217,9 @@ If you encounter issues with the DKIM diagnostic tool or need further assistance
 
 By using the DKIM diagnostic tool effectively, you can ensure that your email authentication is robust and that your messages are protected from spoofing and tampering.
 
-### Editing Auto Archive in Outlook
+### Auto Archive Detection
 
-Auto Archive in Outlook helps manage your mailbox by automatically archiving or deleting old items. This feature can be configured differently in Outlook Desktop and Outlook on the Web (OWA). Editing Auto Archive settings in Outlook can help you effectively manage your mailbox, keeping it organized and free of clutter. Whether you are using Outlook Desktop or Outlook on the Web, the steps provided will guide you through the process of configuring Auto Archive to suit your needs.
+Auto Archive Detection helps manage your mailbox by automatically archiving or deleting old items. This feature can be configured differently in Outlook Desktop and Outlook on the Web (OWA). Editing Auto Archive settings in Outlook can help you effectively manage your mailbox, keeping it organized and free of clutter. Whether you are using Outlook Desktop or Outlook on the Web, the steps provided will guide you through the process of configuring Auto Archive to suit your needs.
 
 Follow the steps below to enable and customize Auto Archive settings based on your version of Outlook. 
 
