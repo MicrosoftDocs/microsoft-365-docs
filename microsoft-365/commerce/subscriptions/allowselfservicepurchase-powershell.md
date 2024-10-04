@@ -48,7 +48,7 @@ To use the **MSCommerce** PowerShell module, you need:
     [!INCLUDE [ga-roles-limitation](../../includes/ga-roles-limitation.md)]
 - The Global reader role for your tenant to see a read-only list of **MSCommerce** product policies.
 
-### Get started with the MSCommerce PowerShell module
+## Get started with the MSCommerce PowerShell module
 
 To get started using the **MSCommerce** PowerShell module, you must install it, import it into a PowerShell session, and then connect to it with your credentials.
 
