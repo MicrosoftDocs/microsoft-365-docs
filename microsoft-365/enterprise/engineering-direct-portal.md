@@ -190,17 +190,17 @@ This diagnostic tool is particularly useful in the following scenarios:
   **Slide 1: No Configuration Created nor Enabled**
 
     - Description: DKIM signing configuration for the domain has not been created. Emails may use default domain settings. 
-    - Action Required: Create the necessary DKIM signing configuration. Follow the PowerShell link provided in the diagnostic output to create the configuration. Then, configure DKIM using the steps outlined in the [Use DKIM to validate outbound email](/exchange/email-security/use-dkim-to-validate-outbound-email) article. 
+    - Action Required: Create the necessary DKIM signing configuration. Follow the PowerShell link provided in the diagnostic output to create the configuration. Then, configure DKIM using the steps outlined in the [Set up DKIM to sign mail from your Microsoft 365 domain](/defender-office-365/email-authentication-dkim-configure) article. 
 
   **Slide 2: Configured but Possibly Published Incorrectly**
 
     - Description: DKIM configuration entries for the domain are either not published or published incorrectly. 
-    - Action Required: Check the DNS entries for errors. Ensure that CNAME records correctly point to the Microsoft published public key entry as specified in the DKIM configuration. Correct any issues with the CNAME publishing and refer to the [Use DKIM to validate outbound email](/exchange/email-security/use-dkim-to-validate-outbound-email) article for further instructions. 
+    - Action Required: Check the DNS entries for errors. Ensure that CNAME records correctly point to the Microsoft published public key entry as specified in the DKIM configuration. Correct any issues with the CNAME publishing and refer to the [Set up DKIM to sign mail from your Microsoft 365 domain](/defender-office-365/email-authentication-dkim-configure) article for further instructions. 
 
   **Slide 3: Created but Not Enabled**
 
     - Description: DKIM signing configuration for the domain has been created but not yet enabled. 
-    - Action Required: Enable DKIM signing for the domain. Follow the steps in the [Use DKIM to validate outbound email](/exchange/email-security/use-dkim-to-validate-outbound-email) article to enable and validate the configuration. 
+    - Action Required: Enable DKIM signing for the domain. Follow the steps in the [Set up DKIM to sign mail from your Microsoft 365 domain](/defender-office-365/email-authentication-dkim-configure) article to enable and validate the configuration. 
 
   **Slide 4: Properly Created and Correct DNS Entries Enabled**
 
@@ -212,7 +212,7 @@ This diagnostic tool is particularly useful in the following scenarios:
 If you encounter issues with the DKIM diagnostic tool or need further assistance, consider the following steps: 
 
 - The diagnostic output includes specific details about configuration errors. Use these details to pinpoint and correct issues. 
-- Refer to the [Use DKIM to validate outbound email](/exchange/email-security/use-dkim-to-validate-outbound-email) article for comprehensive guidance on DKIM configuration. 
+- Refer to the [Set up DKIM to sign mail from your Microsoft 365 domain](/defender-office-365/email-authentication-dkim-configure) article for comprehensive guidance on DKIM configuration. 
 - If issues persist, contact Microsoft support for further assistance. 
 
 By using the DKIM diagnostic tool effectively, you can ensure that your email authentication is robust and that your messages are protected from spoofing and tampering.
