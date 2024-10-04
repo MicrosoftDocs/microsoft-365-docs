@@ -90,7 +90,9 @@ The **Diagnostics** page hosts diagnostic tools for self-service issue resolutio
 In this section:
 
 [Visual Mail Flow](#visual-mail-flow)
+
 [DKIM Diagnostic Tool](#dkim-diagnostic-tool)
+
 [Editing Auto Archive in Outlook](#editing-auto-archive-in-outlook)
 
 ### Visual Mail Flow
@@ -129,7 +131,7 @@ The Visual Mail Flow diagnostic result includes:
 
 The **Visual Mail Flow Tree** is an interactive display showing the stages an email went through, with the ability to zoom, drag, and view detailed node information. By examining the tree, you can gain a detailed understanding of how Exchange Online processed the email. In some cases, you might notice that the tree node is split into multiple child nodes. This is due to Exchange Online's bifurcation feature, which separates recipients into multiple sets to process them separately during mail flow.
 
-![Enginering direct portal visual mail flow page](../media/eng-direct-portal/eng-direct-portal-visual-mail-flow.png)
+![Engineering direct portal visual mail flow page](../media/eng-direct-portal/eng-direct-portal-visual-mail-flow.png)
 
 #### Investigating Further
 
@@ -138,7 +140,7 @@ Select a tree node to view a flyout with other details, including recipients pro
 > [!TIP]
 > Emails sent to many recipients or large groups will take a longer time to query or could time out. Querying emails with fewer recipients could improve your experience.
 
-![Enginering direct portal visual mail flow item page](../media/eng-direct-portal/eng-direct-portal-visual-mail-flow-item.png)
+![Engineering direct portal visual mail flow item page](../media/eng-direct-portal/eng-direct-portal-visual-mail-flow-item.png)
 
 If Visual Mail Flow can’t help you resolve the issue, contact Microsoft Support for further help.
 
@@ -166,22 +168,22 @@ This diagnostic tool is particularly useful in the following scenarios:
 
   Navigate to Microsoft Admin Center: 
 
-  - Log in to the Microsoft Admin Center. 
-  - Go to the Diagnostics section. 
+    - Log in to the Microsoft Admin Center. 
+    - Go to the Diagnostics section. 
 
   Select DKIM Diagnostic: 
 
-  - Choose the DKIM Diagnostic tool from the list of available diagnostics. 
+    - Choose the DKIM Diagnostic tool from the list of available diagnostics. 
 
 - **Step 2: Input Required Information** 
 
   Tenant: 
 
-  - The tool will automatically pull the default tenant information from the HTML. 
+    - The tool will automatically pull the default tenant information from the HTML. 
 
   Vanity Domain: 
 
-  - Select the domain you want to test from the dropdown list of available domains. 
+    - Select the domain you want to test from the dropdown list of available domains. 
 
 - **Step 3: Review Diagnostic Results** 
 
@@ -189,23 +191,23 @@ This diagnostic tool is particularly useful in the following scenarios:
 
   **Slide 1: No Configuration Created nor Enabled**
 
-  - Description: DKIM signing configuration for the domain has not been created. Emails may use default domain settings. 
-  - Action Required: Create the necessary DKIM signing configuration. Follow the PowerShell link provided in the diagnostic output to create the configuration. Then, configure DKIM using the steps outlined in the Use DKIM to validate outbound email article. 
+    - Description: DKIM signing configuration for the domain has not been created. Emails may use default domain settings. 
+    - Action Required: Create the necessary DKIM signing configuration. Follow the PowerShell link provided in the diagnostic output to create the configuration. Then, configure DKIM using the steps outlined in the Use DKIM to validate outbound email article. 
 
   **Slide 2: Configured but Possibly Published Incorrectly**
 
-  - Description: DKIM configuration entries for the domain are either not published or published incorrectly. 
-  - Action Required: Check the DNS entries for errors. Ensure that CNAME records correctly point to the Microsoft published public key entry as specified in the DKIM configuration. Correct any issues with the CNAME publishing and refer to the Use DKIM to validate outbound email article for further instructions. 
+    - Description: DKIM configuration entries for the domain are either not published or published incorrectly. 
+    - Action Required: Check the DNS entries for errors. Ensure that CNAME records correctly point to the Microsoft published public key entry as specified in the DKIM configuration. Correct any issues with the CNAME publishing and refer to the Use DKIM to validate outbound email article for further instructions. 
 
   **Slide 3: Created but Not Enabled**
 
-  - Description: DKIM signing configuration for the domain has been created but not yet enabled. 
-  - Action Required: Enable DKIM signing for the domain. Follow the steps in the Use DKIM to validate outbound email article to enable and validate the configuration. 
+    - Description: DKIM signing configuration for the domain has been created but not yet enabled. 
+    - Action Required: Enable DKIM signing for the domain. Follow the steps in the Use DKIM to validate outbound email article to enable and validate the configuration. 
 
   **Slide 4: Properly Created and Correct DNS Entries Enabled** 
 
-  - Description: DKIM signing configuration is correctly created and enabled with accurate DNS entries. 
-  - Action Required: No further action is required. Your DKIM configuration is properly set up, and your emails should be authenticated correctly by recipient systems. 
+    - Description: DKIM signing configuration is correctly created and enabled with accurate DNS entries. 
+    - Action Required: No further action is required. Your DKIM configuration is properly set up, and your emails should be authenticated correctly by recipient systems. 
 
 #### Troubleshooting and Support 
 
