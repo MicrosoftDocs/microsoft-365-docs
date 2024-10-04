@@ -100,7 +100,7 @@ To view a list of available self-service purchase Microsoft products and the sta
 Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
 ```
 
-The following table lists the available products and their **ProductId**. It also indicates which products have a trial available and don't require a payment method. If applicable, all other trials require a payment method. For the products that have trial without payment method enabled, you can enable the trial, while keeping the ability to purchase the product disabled. For sample commands, see View or set the status for **AllowSelfServicePurchase**.
+The following table lists the available products and their **ProductId**. It also indicates which products have a trial available and don't require a payment method. If applicable, all other trials require a payment method. For the products that have trial without payment method enabled, you can enable the trial, while keeping the ability to purchase the product disabled. For sample commands, see [View or set the status for AllowSelfServicePurchase for Microsoft products](#view-or-set-the-status-for-allowselfservicepurchase-for-microsoft-products).
 
 | Product | ProductId | Is trial without payment method enabled? |
 |-----------------------------|--------------|--------------|
