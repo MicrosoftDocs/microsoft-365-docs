@@ -146,7 +146,7 @@ If Visual Mail Flow can’t help you resolve the issue, contact Microsoft Suppor
 
 The Validate DKIM (DomainKeys Identified Mail) Signing Configuration tool in Microsoft Admin Center is designed to help administrators verify and troubleshoot DKIM configurations for their domain. DKIM is an email authentication method that enhances email security by allowing receiving mail servers to verify the authenticity of the sender's email through a digital signature. This verification process helps prevent email spoofing and ensures the integrity of the message. 
 
-The DKIM diagnostic tool is used to: 
+The Validate DKIM Signing Configuration tool is used to: 
 
 - Validate the DKIM signing configuration for a domain. 
 - Identify issues with DKIM setup, such as missing, incorrect, or improperly enabled configurations. 
@@ -162,16 +162,16 @@ This diagnostic tool is particularly useful in the following scenarios:
 
 #### Steps and Outputs
 
-- **Step 1: Access the DKIM Diagnostic Tool**
+- **Step 1: Access the Validate DKIM Signing Configuration Tool**
 
   Navigate to Microsoft Admin Center: 
 
     - Log in to the Microsoft Admin Center. 
     - Go to the Diagnostics section. 
 
-  Select DKIM Diagnostic: 
+  Select Validate DKIM Signing Configuration: 
 
-    - Choose the DKIM Diagnostic tool from the list of available diagnostics. 
+    - Choose the Validate DKIM Signing Configuration tool from the list of available diagnostics. 
 
 - **Step 2: Input Required Information**
 
@@ -209,13 +209,13 @@ This diagnostic tool is particularly useful in the following scenarios:
 
 #### Troubleshooting and Support
 
-If you encounter issues with the DKIM diagnostic tool or need further assistance, consider the following steps: 
+If you encounter issues with the Validate DKIM Signing Configuration tool or need further assistance, consider the following steps: 
 
 - The diagnostic output includes specific details about configuration errors. Use these details to pinpoint and correct issues. 
 - Refer to the [Set up DKIM to sign mail from your Microsoft 365 domain](/defender-office-365/email-authentication-dkim-configure) article for comprehensive guidance on DKIM configuration. 
 - If issues persist, contact Microsoft support for further assistance. 
 
-By using the DKIM diagnostic tool effectively, you can ensure that your email authentication is robust and that your messages are protected from spoofing and tampering.
+By using the Validate DKIM Signing Configuration tool effectively, you can ensure that your email authentication is robust and that your messages are protected from spoofing and tampering.
 
 ### Auto Archive Detection
 
