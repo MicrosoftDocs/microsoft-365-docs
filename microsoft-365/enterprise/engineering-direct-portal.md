@@ -89,11 +89,9 @@ The **Diagnostics** page hosts diagnostic tools for self-service issue resolutio
 
 In this section:
 
-[Visual Mail Flow](#visual-mail-flow)
-
-[DKIM Diagnostic Tool](#dkim-diagnostic-tool)
-
-[Editing Auto Archive in Outlook](#editing-auto-archive-in-outlook)
+- [Visual Mail Flow](#visual-mail-flow)
+- [DKIM Diagnostic Tool](#dkim-diagnostic-tool)
+- [Editing Auto Archive in Outlook](#editing-auto-archive-in-outlook)
 
 ### Visual Mail Flow
 
@@ -154,17 +152,17 @@ The DKIM diagnostic tool is used to:
 - Identify issues with DKIM setup, such as missing, incorrect, or improperly enabled configurations. 
 - Provide actionable insights to help resolve configuration issues and ensure email messages are properly authenticated and trusted by recipient systems. 
 
-#### Scenarios for Use 
+#### Scenarios for Use
 
 This diagnostic tool is particularly useful in the following scenarios: 
 
-- Initial Setup: After configuring DKIM for a new domain, use the tool to verify that the setup is complete and correct. 
-- Troubleshooting: If emails from your domain are being marked as spam or are not passing DKIM validation, use the tool to diagnose potential configuration issues. 
-- Configuration Updates: When updating DKIM settings or DNS records, use the tool to confirm that changes have been applied correctly. 
+- **Initial Setup:** After configuring DKIM for a new domain, use the tool to verify that the setup is complete and correct. 
+- **Troubleshooting:** If emails from your domain are being marked as spam or are not passing DKIM validation, use the tool to diagnose potential configuration issues. 
+- **Configuration Updates:** When updating DKIM settings or DNS records, use the tool to confirm that changes have been applied correctly. 
 
-#### Steps and Outputs 
+#### Steps and Outputs
 
-- **Step 1: Access the DKIM Diagnostic Tool** 
+- **Step 1: Access the DKIM Diagnostic Tool**
 
   Navigate to Microsoft Admin Center: 
 
@@ -175,7 +173,7 @@ This diagnostic tool is particularly useful in the following scenarios:
 
     - Choose the DKIM Diagnostic tool from the list of available diagnostics. 
 
-- **Step 2: Input Required Information** 
+- **Step 2: Input Required Information**
 
   Tenant: 
 
@@ -185,82 +183,82 @@ This diagnostic tool is particularly useful in the following scenarios:
 
     - Select the domain you want to test from the dropdown list of available domains. 
 
-- **Step 3: Review Diagnostic Results** 
+- **Step 3: Review Diagnostic Results**
 
   After running the diagnostic, you will receive one of the following results, depending on the status of your DKIM configuration: 
 
   **Slide 1: No Configuration Created nor Enabled**
 
     - Description: DKIM signing configuration for the domain has not been created. Emails may use default domain settings. 
-    - Action Required: Create the necessary DKIM signing configuration. Follow the PowerShell link provided in the diagnostic output to create the configuration. Then, configure DKIM using the steps outlined in the Use DKIM to validate outbound email article. 
+    - Action Required: Create the necessary DKIM signing configuration. Follow the PowerShell link provided in the diagnostic output to create the configuration. Then, configure DKIM using the steps outlined in the [Use DKIM to validate outbound email](/exchange/email-security/use-dkim-to-validate-outbound-email) article. 
 
   **Slide 2: Configured but Possibly Published Incorrectly**
 
     - Description: DKIM configuration entries for the domain are either not published or published incorrectly. 
-    - Action Required: Check the DNS entries for errors. Ensure that CNAME records correctly point to the Microsoft published public key entry as specified in the DKIM configuration. Correct any issues with the CNAME publishing and refer to the Use DKIM to validate outbound email article for further instructions. 
+    - Action Required: Check the DNS entries for errors. Ensure that CNAME records correctly point to the Microsoft published public key entry as specified in the DKIM configuration. Correct any issues with the CNAME publishing and refer to the [Use DKIM to validate outbound email](/exchange/email-security/use-dkim-to-validate-outbound-email) article for further instructions. 
 
   **Slide 3: Created but Not Enabled**
 
     - Description: DKIM signing configuration for the domain has been created but not yet enabled. 
-    - Action Required: Enable DKIM signing for the domain. Follow the steps in the Use DKIM to validate outbound email article to enable and validate the configuration. 
+    - Action Required: Enable DKIM signing for the domain. Follow the steps in the [Use DKIM to validate outbound email](/exchange/email-security/use-dkim-to-validate-outbound-email) article to enable and validate the configuration. 
 
-  **Slide 4: Properly Created and Correct DNS Entries Enabled** 
+  **Slide 4: Properly Created and Correct DNS Entries Enabled**
 
     - Description: DKIM signing configuration is correctly created and enabled with accurate DNS entries. 
     - Action Required: No further action is required. Your DKIM configuration is properly set up, and your emails should be authenticated correctly by recipient systems. 
 
-#### Troubleshooting and Support 
+#### Troubleshooting and Support
 
 If you encounter issues with the DKIM diagnostic tool or need further assistance, consider the following steps: 
 
-- Review the Error Details: The diagnostic output includes specific details about configuration errors. Use these details to pinpoint and correct issues. 
-- Consult Documentation: Refer to the Use DKIM to validate outbound email article for comprehensive guidance on DKIM configuration. 
-- Contact Support: If issues persist, contact Microsoft support for further assistance. 
+- The diagnostic output includes specific details about configuration errors. Use these details to pinpoint and correct issues. 
+- Refer to the [Use DKIM to validate outbound email](/exchange/email-security/use-dkim-to-validate-outbound-email) article for comprehensive guidance on DKIM configuration. 
+- If issues persist, contact Microsoft support for further assistance. 
 
 By using the DKIM diagnostic tool effectively, you can ensure that your email authentication is robust and that your messages are protected from spoofing and tampering.
 
-### Editing Auto Archive in Outlook 
+### Editing Auto Archive in Outlook
 
 Auto Archive in Outlook helps manage your mailbox by automatically archiving or deleting old items. This feature can be configured differently in Outlook Desktop and Outlook on the Web (OWA). Editing Auto Archive settings in Outlook can help you effectively manage your mailbox, keeping it organized and free of clutter. Whether you are using Outlook Desktop or Outlook on the Web, the steps provided will guide you through the process of configuring Auto Archive to suit your needs.
 
 Follow the steps below to enable and customize Auto Archive settings based on your version of Outlook. 
 
-#### For Outlook Desktop 
+#### For Outlook Desktop
 
-1. Open Outlook: Launch the Outlook application on your computer. 
-1. Go to File: Click on the "File" tab located in the top left corner of the window. 
-1. Options: From the menu that appears, select "Options." 
-1. Advanced: In the Outlook Options window, click on "Advanced" found in the left sidebar. 
-1. AutoArchive Settings: Under the "AutoArchive" section, click on "AutoArchive Settings." 
-1. Configure AutoArchive: 
+1. Launch the Outlook application on your computer.
+1. Click on the **File** tab located in the top left corner of the window.
+1. From the menu that appears, select **Options**.
+1. In the Outlook Options window, click on **Advanced** found in the left sidebar.
+1. Under the "AutoArchive" section, click on **AutoArchive Settings**.
+1. Configure AutoArchive:
 
     - Run AutoArchive every X days: Check this box and set the frequency for how often you want Auto Archive to run. 
     - Prompt before AutoArchive runs: If you wish to receive a reminder before Auto Archive runs, check this option. 
     - Delete expired items: Check this box if you want to permanently delete old items.
 
-1. Choose Actions: Decide what actions you want Auto Archive to take: 
+1. Choose Actions: Decide what actions you want Auto Archive to take:
 
-    - Move items to the archive folder: Archives items in a designated folder. 
-    - Permanently delete old items: Removes items without archiving. 
-    - Archive items older than a specific number of months: Specify the age of items to be archived. 
+    - Move items to the archive folder: Archives items in a designated folder.
+    - Permanently delete old items: Removes items without archiving.
+    - Archive items older than a specific number of months: Specify the age of items to be archived.
 
-1. Set Archive Folder: Specify the folder where you want archived items to be stored. 
+1. Set Archive Folder: Specify the folder where you want archived items to be stored.
 
-1. After making your selections, click **OK** to save your settings. Click **OK** again to exit the Options window. 
+1. After making your selections, click **OK** to save your settings. Click **OK** again to exit the Options window.
 
-#### For Outlook on the Web (OWA) 
+#### For Outlook on the Web (OWA)
 
-1. Log in: Navigate to your Outlook on the web and sign in with your credentials. 
+1. Navigate to your Outlook on the web and sign in with your credentials. 
 
-1. Settings: Click on the gear icon in the top right corner to open the settings menu. 
+1. Click on the gear icon in the top right corner to open the settings menu. 
 
-1. View all Outlook settings: At the bottom of the settings panel, click on "View all Outlook settings." 
+1. At the bottom of the settings panel, click on **View all Outlook settings**. 
 
-1. Mail: In the settings window, select "Mail," then go to "Cleanup." 
+1. In the settings window, select **Mail**, then go to **Cleanup**. 
 
-1. Auto Archive: Locate the Auto Archive settings and configure them according to your preferences. 
+1. Locate the Auto Archive settings and configure them according to your preferences. 
 
-1. Save: Save your changes to apply the new settings. 
+1. Save your changes to apply the new settings. 
 
 ## More information
 
