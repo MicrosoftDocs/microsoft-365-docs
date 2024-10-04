@@ -13,7 +13,7 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 hideEdit: true
-ms.date: 10/01/2024
+ms.date: 10/04/2024
 ms.custom: [copilot-learning-hub]
 ---
 
@@ -60,7 +60,7 @@ When you enter prompts using Microsoft 365 Copilot, the information contained wi
 
 > [!NOTE]
 > - When you’re using plugins to help Microsoft 365 Copilot to provide more relevant information, check the privacy statement and terms of use of the plugin to determine how it will handle your organization’s data. For more information, see [Extensibility of Microsoft 365 Copilot](#extensibility-of-microsoft-365-copilot).
-> - When you’re using the web content plugin, Microsoft 365 Copilot parses the user’s prompt and identifies terms where web grounding would improve the quality of the response. Based on these terms, Copilot generates a search query that it sends to the Bing Search service. For more information, [Data, privacy, and security for web queries in Microsoft 365 Copilot and Microsoft Copilot](/microsoft-365-copilot/manage-public-web-access).
+> - When you’re using the web content plugin, Microsoft 365 Copilot parses the user’s prompt and identifies terms where web search would improve the quality of the response. Based on these terms, Copilot generates a search query that it sends to the Bing Search service. For more information, [Data, privacy, and security for web queries in Microsoft 365 Copilot and Microsoft Copilot](/microsoft-365-copilot/manage-public-web-access).
 
 While abuse monitoring, which includes human review of content, is available in Azure OpenAI, Microsoft 365 Copilot services have opted out of it. For information about content filtering, see the [How does Copilot block harmful content?](#how-does-copilot-block-harmful-content) section later in this article.
 
@@ -154,7 +154,7 @@ There's also a privacy control that turns off all connected experiences, includi
 
 #### Privacy control for optional connected experiences
 
-If you turn off optional connected experiences in your organization, Microsoft 365 Copilot features that are optional connected experiences won’t be available to your users. For example, [web grounding](manage-public-web-access.md) won’t be available to your users. For a list of Microsoft 365 Copilot features that are optional connected experiences, see [Experiences for Microsoft 365 Copilot](/microsoft-365-apps/privacy/optional-connected-experiences#experiences-for-microsoft-365-copilot).
+If you turn off optional connected experiences in your organization, Microsoft 365 Copilot features that are optional connected experiences won’t be available to your users. For example, [web search](manage-public-web-access.md) won’t be available to your users. For a list of Microsoft 365 Copilot features that are optional connected experiences, see [Experiences for Microsoft 365 Copilot](/microsoft-365-apps/privacy/optional-connected-experiences#experiences-for-microsoft-365-copilot).
 
 There's also a privacy control that turns off all connected experiences, including optional connected experiences. If you use that privacy control, Microsoft 365 Copilot features that are optional connected experiences won’t be available.
 
