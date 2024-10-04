@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: taylorau
-ms.date: 09/26/2024
+ms.date: 10/03/2024
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-lighthouse
@@ -110,7 +110,7 @@ If you encounter any problems during GDAP setup and need guidance, see [Troubles
 
 ## Obtain customer approval to administer their products
 
-As part of the GDAP setup process, a GDAP relationship request link is generated for each customer who doesn't have an existing GDAP relationship with your partner organization. You need to send the link to the appropriate customer contact so they can approve the GDAP relationship before you can administer their products for them.
+As part of the GDAP setup process, a GDAP relationship request link is generated for each customer who doesn't have an existing GDAP relationship with your partner organization. Before you can administer products for them, you need to send the link to an administrator in the customer tenant so they can select the link to approve the GDAP relationship.
 
 1. On the **Delegated access** page, select the **Relationships** tab.
 
@@ -118,9 +118,9 @@ As part of the GDAP setup process, a GDAP relationship request link is generated
 
 3. Select the GDAP relationship that shows a **Pending** status to open the relationship details pane.
 
-4. Select either **Open in email** or **Copy email to clipboard**, edit the text if needed (but don't edit the link URL that they need to select to give you administration permission), and then send the GDAP relationship request to your customer.
+4. Select either **Open in email** or **Copy email to clipboard**, edit the text if needed (but don't edit the link URL that they need to select to give you administration permission), and then send the GDAP relationship request email to an administrator in the customer tenant.
 
-Once the GDAP relationship request is approved, the GDAP template settings are applied. It might take up to an hour after relationship approval for changes to appear in Lighthouse.
+Once the administrator in the customer tenant selects the link to approve the GDAP relationship, the GDAP template settings are applied. It might take up to an hour after relationship approval for changes to appear in Lighthouse.
  
 GDAP relationships are visible in Partner Center and the security groups are visible in Microsoft Entra ID.
 
