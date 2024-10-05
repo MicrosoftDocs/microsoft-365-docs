@@ -28,7 +28,7 @@ SharePoint Agreements AI is an end-to-end solution that gives you the flexibilit
 
 **Templates** serve as a predefined structure that standardizes the creation of documents and agreements. It ensures consistency and uniformity across various documents within the workspace, streamlining the creation process and reducing the likelihood of errors. Templates can include specific sections, formatting, and content guidelines that align with the organization's requirements and branding.
 
-**Sections** are reusable blocks of content that ensure the use of consistent language across your agreements. You can define a section and use it across multiple templates. For example, you might have a section for privacy clause or payment terms for your purchase agreements, and you can have a section for a relocation package for your full-time employee templates.
+**Sections** are reusable blocks of content that ensure the use of consistent language across your agreements. You can define a section and use it across multiple templates. For example, you might have a section for a privacy clause or payment terms for your purchase agreements, and you can have a section for a relocation package for your full-time employee templates.
 
 ## Roles
 
