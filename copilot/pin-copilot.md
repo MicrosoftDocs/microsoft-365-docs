@@ -50,6 +50,8 @@ Administrators can change this behavior by selecting an option for pinning Micro
 
 :::image type="content" source="media/copilot-not-pin.png" alt-text="Screenshot showing the option to not Pin Copilot to the navigation bar.":::
 
+When you uncheck the 'Allow users to be asked whether they want to pin it' option, Microsoft Copilot will no longer appear in the App Launcher.
+
 Global administrators can make changes to Microsoft Copilot pinning settings at any time. Changes take up to 48 hours to go into effect.
 
 > [!NOTE]

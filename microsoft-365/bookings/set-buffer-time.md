@@ -3,7 +3,7 @@ title: "Set Bookings buffer time"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 05/24/2024
+ms.date: 10/02/2024
 audience: Admin
 ms.topic: how-to
 ms.service: bookings
