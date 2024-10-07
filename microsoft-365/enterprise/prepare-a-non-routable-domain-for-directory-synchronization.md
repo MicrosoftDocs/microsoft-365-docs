@@ -3,7 +3,7 @@ title: "Prepare a nonroutable domain for directory synchronization"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/5/2023
+ms.date: 10/07/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
