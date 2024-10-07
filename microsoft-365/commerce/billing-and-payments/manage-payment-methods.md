@@ -65,6 +65,8 @@ If you have an MOSA billing account type, you can replace the payment method for
    - If you're using the **Simplified view**, select **Billing**, then select **View payment methods**.
    - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page, and select the **Payment methods** tab.
 2. Select **Add a payment method**.
+   > [!NOTE]
+   > For customers in India, when you add a new payment method, we generate a one-time password for you. When prompted, enter the password to save the new payment method.
 3. On the **Add a payment method** page, enter the information for the new payment method, then select **Save**.
 4. To use the new payment method to pay for all subscriptions currently paid for with another payment method, select **Replace an existing payment method**.
 5. Select the payment method you want to replace, then select **Replace**.
