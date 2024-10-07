@@ -13,6 +13,18 @@
       href: flw-deploy-overview.md
     - name: Start with a pilot deployment
       href: flw-pilot.md
+    - name: Set up and manage frontline devices
+      items:
+      - name: Frontline device management overview
+        href: flw-devices.md
+      - name: Manage shared devices
+        href: flw-shared-devices.md
+      - name: Limit access to Teams when workers are off shift
+        href: flw-working-time.md
+      - name: Sign in to Teams
+        href: /microsoftteams/sign-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+      - name: Sign out of Teams
+        href: /microsoftteams/sign-out-of-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
     - name: Set up Microsoft 365 and Teams
       items: 
       - name: Set up Microsoft 365 and related services
@@ -33,18 +45,6 @@
         href: set-up-targeted-communications.md 
       - name: Deploy Shifts at scale
         href: deploy-shifts-at-scale.md
-    - name: Manage devices
-      items:
-      - name: Frontline device management overview
-        href: flw-devices.md
-      - name: Manage shared devices
-        href: flw-shared-devices.md
-      - name: Limit access to Teams when workers are off shift
-        href: flw-working-time.md
-      - name: Sign in to Teams
-        href: /microsoftteams/sign-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
-      - name: Sign out of Teams
-        href: /microsoftteams/sign-out-of-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
     - name: Configure Teams settings for frontline workers
       items: 
       - name: Tailor Teams apps for your frontline workers
