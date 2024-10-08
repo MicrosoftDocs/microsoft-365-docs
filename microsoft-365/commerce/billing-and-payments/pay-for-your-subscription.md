@@ -154,7 +154,7 @@ As of September 30, 2022, Microsoft and other online merchants no longer store c
 
 ### UPI and NetBanking payment options
 
-The admin center supports two alternate payment options for customers in India:
+The admin center supports two alternate payment options for customers in India who have an MOSA billing account type:
 
 - UPI (Unified Payments Interface) payment is a real-time payment method.
 - NetBanking (Internet Banking) provides customers with access to banking services on an online platform.
