@@ -21,7 +21,7 @@ description: Learn how to get started with the SharePoint Agreements AI solution
 # Introduction to SharePoint Agreements AI
 
 > [!NOTE]
-> SharePoint Agreements AI is now Generally Available (GA) for early access customers. This limited GA is by invitation only. Contact your Microsoft representative or submit your nomination for the selective GA here: [Sign up for limited GA](https://aka.ms/AgreementsSelectiveGA). For a list of articles to help you set up and use this feature, see [Help documentation](#help-documentation).
+> SharePoint Agreements AI is now Generally Available (GA) for early access customers. This limited GA is by invitation only. Contact your Microsoft representative or submit your nomination for the limited GA here: [Sign up for limited GA](https://aka.ms/AgreementsSelectiveGA). For a list of articles to help you set up and use this feature, see [Help documentation](#help-documentation).
 
 ## Overview
 
@@ -35,7 +35,7 @@ Centralize your agreements in the new Agreements app in Microsoft Teams, draft a
 
 With SharePoint Agreements AI, you can:
 
-- **Centrally manage** your agreements in one place using familiar tools. Agreements AI provides a Microsoft Teams app to manage all your agreements. You can view agreement lists, track their status, and receive expiring agreement reports.
+- **Centrally manage** your agreements in one place using familiar tools. Agreements AI provides a [Microsoft Teams Agreements app](https://teams.microsoft.com/l/app/fc0c5127-1a8c-4d12-9500-c142ca453b83?source=app-details-dialog) to manage all your agreements. You can view agreement lists, track their status, and receive expiring agreement reports.
   
 - **Simplify your agreements process** from template to eSignature. Native capabilities in Microsoft Word allow drafting templates by adding fields. Reusable sections from the sections library can be included to ensure consistent language across all agreements. Agreements can then be generated from these templates by filling in field values and routing them for eSignature.
   
