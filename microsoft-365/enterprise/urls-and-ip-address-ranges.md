@@ -69,7 +69,7 @@ Data columns shown are:
 
 | ID | Category | Domain name| Purpose | Ports |
 |---|---|---|---|---|
-|184|Required|*.cloud.microsoft|Dedicated to authenticated user facing Microsoft SaaS product experiences.|TCP: 443,80|
+|184|Required|*.cloud.microsoft|Dedicated to authenticated user facing Microsoft SaaS product experiences.|**TCP:** 443,80|
 |||*.static.microsoft|Dedicated to static (not customer generated) content hosted on CDNs.||
 |||*.usercontent.microsoft|Content used in Microsoft 365 experiences that requires domain isolation from applications.||
 
