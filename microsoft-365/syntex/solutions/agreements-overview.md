@@ -21,7 +21,7 @@ description: Learn how to get started with the SharePoint Agreements AI solution
 # Introduction to SharePoint Agreements AI
 
 > [!NOTE]
-> SharePoint Agreements AI is available for selective General Availability (GA). The selective GA is by invitation only. Contact your Microsoft representative or submit your nomination for the selective GA here: [Sign up for selective GA](https://aka.ms/AgreementsSelectiveGA). For a list of articles to help you set up and use this feature, see [Help documentation](#help-documentation).
+> SharePoint Agreements AI is now Generally Available (GA) for early access customers. This limited GA is by invitation only. Contact your Microsoft representative or submit your nomination for the selective GA here: [Sign up for limited GA](https://aka.ms/AgreementsSelectiveGA). For a list of articles to help you set up and use this feature, see [Help documentation](#help-documentation).
 
 ## Overview
 
@@ -31,25 +31,17 @@ Centralize your agreements in the new Agreements app in Microsoft Teams, draft a
 
 ![A screenshot of Agreements app showing the home page.](../../media/content-understanding/agreements-homepage.png)
 
-## What you get
-
-With SharePoint Agreements AI, you get:
-
-- **Agreements app in Microsoft Teams**. This app serves as the central hub for managing your agreements giving you access to all your agreements in one place. You can create new templates, generate agreements from these templates, and upload signed agreements. Additionally, you can gain valuable insights on agreements.
-
-- **Agreements tab in Microsoft Word**. With the new capabilities in Microsoft Word, you can author templates and generate agreements. You can add fields and sections to your templates and incorporate approval workflows, ensuring that generated agreements are automatically routed for approval. Users can then generate new agreements from published templates easily by just filling in the required fields.
-
-- **AI capabilities**. Manage the entire lifecycle of your agreements with value adding features powered by AI. Review agreements faster with AI-based section revision insights that describe how an agreement deviates from the original section. When you upload signed agreements, AI helps identify key properties such as the second party’s name and expiration date, helping organize your agreements and making them easily searchable.
-
 ## What you can do
 
 With SharePoint Agreements AI, you can:
 
-- **Centrally manage** your agreements in one place using familiar tools.
+- **Centrally manage** your agreements in one place using familiar tools. Agreements AI provides a Microsoft Teams app to manage all your agreements. You can view agreement lists, track their status, and receive expiring agreement reports.
   
-- **Optimize operations** and simplify your agreement management process with templates, sections, and workflow.
+- **Simplify your agreements process** from template to eSignature. Native capabilities in Microsoft Word allow drafting templates by adding fields. Reusable sections from the sections library can be included to ensure consistent language across all agreements. Agreements can then be generated from these templates by filling in field values and routing them for eSignature.
   
-- **Get AI-powered insights** and streamline your agreements from draft to eSignature.  
+- **Gain operational efficiencies** by automatically routing agreements for approval. The approval workflow in templates can be configured by adding one or more approvers. When agreements are generated from templates, approvers receive notifications via email or Microsoft Teams.
+  
+- **Get AI-powered insights** infused into the flow of work. Use AI to quickly review agreements and highlight deviations from the original sections. Uploading signed agreements lets AI identify key details like the second party's name and expiration date, making them organized and searchable. 
 
 ## Help documentation
 
