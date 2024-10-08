@@ -62,6 +62,8 @@ Data columns shown are:
 
 - **Ports**: Lists the TCP or UDP ports that are combined with listed IP addresses to form the network endpoint. You may notice some duplication in IP address ranges where there are different ports listed.
 
+## [Microsoft 365 Unified Domains](cloud-microsoft-domain.md)
+
 > [!NOTE]
 > In response to customer feedback and to streamline endpoint management, Microsoft has initiated the process of consolidating Microsoft 365 apps and services into a select group of dedicated, secured, and purpose-managed domains within the **.microsoft** top level domain (TLD). 
 > 
