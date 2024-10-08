@@ -1,7 +1,7 @@
 ---
 title: "Microsoft 365 Multi-Geo"
 ms.reviewer:
-ms.date: 12/11/2023
+ms.date: 10/07/2024
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -10,7 +10,9 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.subservice: multi-tenant
 ms.custom: seo-marvel-apr2020
-ms.collection: Strat_SP_gtc
+ms.collection: 
+- Strat_SP_gtc
+- must-keep
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
