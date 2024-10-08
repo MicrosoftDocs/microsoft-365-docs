@@ -10,12 +10,12 @@ f1.keywords:
 - NOCSH
 ms.service: microsoft-365-frontline
 ms.collection: 
-  - M365-collaboration
-  - microsoftcloud-manufacturing
-  - m365-frontline
-  - highpri
-  - m365solution-manufacturing
-  - m365solution-overview
+- M365-collaboration
+- microsoftcloud-manufacturing
+- m365-frontline
+- highpri
+- m365solution-manufacturing
+- m365solution-overview
 ms.localizationpriority: high
 search.appverid: MET150
 searchScope:
