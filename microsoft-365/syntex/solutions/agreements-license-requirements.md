@@ -18,13 +18,17 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Learn about the licensing requirements for the SharePoint Agreements AI solution.
 ---
 
+> [!NOTE]
+> SharePoint Agreements AI is now Generally Available (GA) for early adoption customers. While we are still determining the licensing model for Agreements AI solution, we will provide early adoption customers with a trial license for **SharePoint Content Solution - Agreements Trial** to activate Agreements AI solution. Contact your Microsoft representative or submit your nomination here to obtain trial licenses: [Sign up for limited GA](https://aka.ms/AgreementsSelectiveGA). If your nomination is selected, a Microsoft representative will reach out to you within 7 business days.
+
 # Licensing requirements for SharePoint Agreements AI
 
-To activate the SharePoint Agreements AI solution on your tenant, the tenant administrator must first get the **SharePoint Content Solution - Agreements Trial** license. After you obtain the license, you need to assign the license to users who will use the solution within your organization.
+To activate the SharePoint Agreements AI solution in your tenant, the tenant administrator must first get the **SharePoint Content Solution - Agreements Trial** license. After you obtain the license, you need to assign the license to users who will use the solution within your organization.
+
 
 ## Get the license
 
-SharePoint Agreements AI is available for selective General Availability (GA). The selective GA is by invitation only. Contact your Microsoft representative or submit your nomination here to obtain licenses: [Sign up for selective GA](https://aka.ms/AgreementsSelectiveGA).
+SharePoint Agreements AI is now General Availability (GA) for early adoption customers. This limited GA is by invitation only. Contact your Microsoft representative or submit your nomination here to obtain licenses: [Sign up for selective GA](https://aka.ms/AgreementsSelectiveGA).
 
 ## Assign the license to users
 
