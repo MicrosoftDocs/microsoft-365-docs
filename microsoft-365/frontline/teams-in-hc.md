@@ -14,13 +14,13 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: high
 ms.collection: 
-  - M365-collaboration
-  - Teams_ITAdmin_Healthcare
-  - microsoftcloud-healthcare
-  - m365solution-healthcare
-  - m365solution-overview
-  - m365-frontline
-  - highpri
+- M365-collaboration
+- Teams_ITAdmin_Healthcare
+- microsoftcloud-healthcare
+- m365solution-healthcare
+- m365solution-overview
+- m365-frontline
+- highpri
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
