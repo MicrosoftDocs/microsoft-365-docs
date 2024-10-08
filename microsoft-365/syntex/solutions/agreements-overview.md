@@ -35,13 +35,13 @@ Centralize your agreements in the new Agreements app in Microsoft Teams, draft a
 
 With SharePoint Agreements AI, you can:
 
-- **Centrally manage** your agreements in one place using familiar tools. Agreements AI provides a [Microsoft Teams Agreements app](https://teams.microsoft.com/l/app/fc0c5127-1a8c-4d12-9500-c142ca453b83?source=app-details-dialog) to manage all your agreements. You can view agreement lists, track their status, and receive expiring agreement reports.
+- **Centrally manage** your agreements in one place using familiar tools. SharePoint Agreements AI provides the [Agreements app in Microsoft Teams](https://teams.microsoft.com/l/app/fc0c5127-1a8c-4d12-9500-c142ca453b83?source=app-details-dialog) to manage all your agreements. You can view agreement lists, track their status, and receive expiring agreement reports.
   
 - **Simplify your agreements process** from template to eSignature. Native capabilities in Microsoft Word allow drafting templates by adding fields. Reusable sections from the sections library can be included to ensure consistent language across all agreements. Agreements can then be generated from these templates by filling in field values and routing them for eSignature.
   
 - **Gain operational efficiencies** by automatically routing agreements for approval. The approval workflow in templates can be configured by adding one or more approvers. When agreements are generated from templates, approvers receive notifications via email or Microsoft Teams.
   
-- **Get AI-powered insights** infused into the flow of work. Use AI to quickly review agreements and highlight deviations from the original sections. Uploading signed agreements lets AI identify key details like the second party's name and expiration date, making them organized and searchable. 
+- **Get AI-powered insights** infused into the flow of work. Use AI to quickly review agreements and highlight deviations from the original sections. Uploading signed agreements lets AI identify key details like the second party's name and expiration date, making them organized and searchable.
 
 ## Help documentation
 
