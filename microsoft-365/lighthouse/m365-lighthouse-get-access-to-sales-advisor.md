@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: taylorau, stutisingh
+ms.reviewer: taylorau, pawan
 ms.date: 07/17/2023
 audience: Admin
 ms.topic: how-to

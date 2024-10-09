@@ -4,7 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: katmartin
+ms.reviewer: ebamoh
 ms.date: 06/21/2023
 audience: Admin
 ms.topic: conceptual
