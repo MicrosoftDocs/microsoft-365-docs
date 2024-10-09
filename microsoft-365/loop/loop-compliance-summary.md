@@ -75,7 +75,7 @@ Where the Loop content was originally created determines its storage location:
 |Retention policies  |**[Retention policies](/microsoft-365/compliance/retention-policies-sharepoint)** are enforced.|**[Retention policies](/microsoft-365/compliance/retention-policies-sharepoint)** configured for *all SharePoint sites* are enforced and can be individually overridden per Loop workspace.|
 |Retention labels  |**[Retention label](/purview/retention#retention-labels)** support is available through OneDrive or SharePoint.|**Not Yet Available**:  <br>**[Retention label](/purview/retention#retention-labels)** is supported, but an end-user configurable experience to view or update the retention label for on each page or component isn't yet available.|
 |***Data Classification***|---|---|
-|Information Protection  |**[Sensitivity Labeling](/microsoft-365/compliance/information-protection)** is available for all Loop pages and components.|**[Sensitivity Labeling](/microsoft-365/compliance/information-protection)** is available for all Loop pages and components, and admin configurable for each Loop workspace via PowerShell.  <br><br>**Not Yet Available**:  <br>**[Sensitivity Labeling](/microsoft-365/compliance/information-protection)** is configurable per Loop workspace by administrators, but not yet configurable in the Loop app by end users on each Loop workspace.|
+|Information Protection  |**[Sensitivity labeling](/purview/sensitivity-labels-loop)** is available for Loop pages and components.|**[Sensitivity labeling](/purview/sensitivity-labels-loop)** is available for Loop pages and components, and admin configurable for each Loop workspace via PowerShell.  <br><br>**Not Yet Available**:  <br>**[Sensitivity labeling](/purview/sensitivity-labels-loop)** is configurable per Loop workspace by administrators, but not yet configurable in the Loop app by end users on each Loop workspace.|
 |Data Loss Prevention  |**[Data Loss Prevention](/microsoft-365/compliance/dlp-learn-about-dlp)** (DLP) rules are enforced on content with end-user policy tip support.|**[Data Loss Prevention](/microsoft-365/compliance/dlp-learn-about-dlp)** (DLP) rules are enforced on content with end-user policy tip support.|
 
 
@@ -110,7 +110,7 @@ The following sections detail capabilities that are **not yet available** for Mi
 - Retention labels aren't yet available for Loop workspace content.
 
 ### Data Classification not yet available
-- While sensitivity labels can be configured on each Loop page or component, **Sensitivity Labels** can't be configured at the Loop workspace level. An admin can set the Loop workspace sensitivity label using PowerShell and the workspace sensitivity label is viewable in the SharePoint Embedded admin center.
+- While sensitivity labels can be configured on each Loop page or component, sensitivity labels can't be configured at the Loop workspace level. An admin can set the Loop workspace sensitivity label using PowerShell and the workspace sensitivity label is viewable in the SharePoint Embedded admin center.
 
 
 ## Managing Loop in your organization
