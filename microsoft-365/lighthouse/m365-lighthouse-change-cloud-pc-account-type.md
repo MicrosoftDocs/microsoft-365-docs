@@ -11,7 +11,7 @@ ms.topic: how-to
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
-- Tier2
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
