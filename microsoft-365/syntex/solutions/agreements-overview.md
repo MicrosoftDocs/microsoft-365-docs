@@ -21,7 +21,7 @@ description: Learn how to get started with the SharePoint Agreements AI solution
 # Introduction to SharePoint Agreements AI
 
 > [!NOTE]
-> SharePoint Agreements AI is now Generally Available (GA) for early access customers. This limited GA is by invitation only. Contact your Microsoft representative or submit your nomination for the limited GA here: [Sign up for limited GA](https://aka.ms/AgreementsSelectiveGA). For a list of articles to help you set up and use this feature, see [Help documentation](#help-documentation).
+> SharePoint Agreements AI is now generally available for early access customers. Contact your Microsoft representative or submit your nomination for the limited GA here: [Sign up for limited GA](https://aka.ms/AgreementsSelectiveGA). For a list of articles to help you set up and use this feature, see [Help documentation](#help-documentation).
 
 ## Overview
 
