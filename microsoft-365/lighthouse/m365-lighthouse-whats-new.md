@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: sharonchoi
-ms.date: 08/29/2024
+ms.date: 10/07/2024
 audience: Admin
 ms.topic: whats-new
 ms.service: microsoft-365-lighthouse
@@ -31,6 +31,47 @@ We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighth
 > Features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, you should see it soon.
 >
 > To see which new features are currently available in your partner tenant, go to the **Home** page of Microsoft 365 Lighthouse, and then either select the **What's new** link in the upper-right corner of the page or select **What's new** on the **What's new & learning resources** card.
+
+## September 2024
+
+### Delegated access page
+
+We've simplified management of granular delegated administrative privileges (GDAP) in Microsoft 365 Lighthouse by removing the GDAP Setup tool and replacing it with the **Delegated access** page. This new page lets you do the following:
+
+- Create and assign Lighthouse GDAP templates to customer tenants in bulk or singularly.
+- Manage security groups with GDAP permissions.
+- View the status of your GDAP relationships with customers.
+- Identify the nearest expiration date of each GDAP relationship.
+
+To create security groups, you must be a Groups Administrator in the partner tenant. To change user membership in groups, you must be a User Administrator in the partner tenant. To create GDAP relationships, you must be an Admin agent in Partner Center.
+
+To access the **Delegated access** page, in the left navigation pane in Lighthouse, select **Permissions** > **Delegated access**.
+
+[Go to the Delegated access page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/DelegatedAccess.ReactView)
+
+For details on how to set up GDAP, see [Set up GDAP in Microsoft 365 Lighthouse](m365-lighthouse-setup-gdap.md).
+
+To learn more about delegated access, see [Overview of the Delegated access page in Microsoft 365 Lighthouse](m365-lighthouse-delegated-access-overview.md).
+
+### Use Copilot insights in Lighthouse to drive Copilot success
+
+The new **Copilot insights** page lets you easily manage and monitor Copilot success across your customer tenants&mdash;all in one place. In addition to recommending customers who are likely to find value from Copilot, the page shows Copilot usage and license assignment and provides links to key resources for you to become a Copilot expert, including Copilot Lab, learning paths, and training videos. Coming soon, the page will also show deployment progress for tasks that we specifically recommend for enabling Copilot.
+
+Moreover, Copilot insights help you pinpoint customers who may need Copilot setup guidance or training. Use the insights to ensure all Copilot users are enabled and set up for success.
+
+To access this new page, in the left navigation pane in Lighthouse, select **Copilot insights**.
+
+[Go to the Copilot insights page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/CopilotInsights.ReactView)
+
+### New default baseline deployment task to enable Microsoft Teams transcription
+
+We added a new deployment task to the default baseline that lets you enable automatic transcription in Microsoft Teams in the customer tenant.
+
+Transcription allows users to play back meeting recordings with closed captions and review important discussion items in the transcript. Transcription and captions help create inclusive content for viewers.
+
+Clone this new deployment task to add it to your custom baseline and then go to the deployment plan of your customer tenant to deploy the configuration.
+
+To learn more about transcription and captions, see [Admins - Manage transcription and captions for Teams meetings](/microsoftteams/meeting-transcription-captions).
 
 ## August 2024
 

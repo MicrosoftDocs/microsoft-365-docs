@@ -3,7 +3,7 @@ title: "Engineering Direct Portal in the Microsoft 365 Admin Center"
 author: kelleyvice-msft
 ms.author: kvice  
 manager: scotv
-ms.date: 08/07/2024  
+ms.date: 10/04/2024
 ms.topic: article
 ms.service: microsoft-365-business  
 ms.subservice: m365-admin-center  
@@ -56,7 +56,7 @@ Once in the portal, you'll see the **Overview** page. This page contains several
 - **Insights: Escalation Trend Per Week by Status**: A monthly view of escalations by open and closed for the last six months. This is a focused view of all reactive issues, filtered by all issues that have a Microsoft engineering element.
 - **Request A Feature**: Allows you to submit feedback or a request to the Engineering Direct Portal team. Feedback can be both related to the portal itself and its functionality, and any broader engineering features you would like to see in Engineering Direct. Feature requests submitted via this method are visible to users in your private **MyFeedback** section of the feedback portal.
 
-![Enginering direct portal overview page](../media/eng-direct-portal/eng-direct-portal-overview.png)
+![Engineering direct portal overview page](../media/eng-direct-portal/eng-direct-portal-overview.png)
 
 ## Insights Page
 
@@ -79,15 +79,21 @@ The **Insights** page provides detailed metrics, visuals, and lists on both your
     - **Escalate to Engineering – true or false** - represents whether the customer raised the issue directly to engineering
     - **Product** – service product
 
-![Enginering direct portal insights page](../media/eng-direct-portal/eng-direct-portal-insights.png)
+![Engineering direct portal insights page](../media/eng-direct-portal/eng-direct-portal-insights.png)
 
 ## Diagnostics Page
 
-The **Diagnostics** page hosts diagnostic tools for self-service issue resolution within your environment. One notable tool is **Visual Mail Flow**, which helps investigate email-related issues.
+The **Diagnostics** page hosts diagnostic tools for self-service issue resolution within your environment.
 
-![Enginering direct portal diagnostics page](../media/eng-direct-portal/eng-direct-portal-diagnostics.png)
+![Engineering direct portal diagnostics page](../media/eng-direct-portal/eng-direct-portal-diagnostics.png)
 
-### Using Visual Mail Flow
+In this section:
+
+- [Visual Mail Flow](#visual-mail-flow)
+- [Validate DKIM Signing Configuration](#validate-dkim-signing-configuration)
+- [Auto Archive Detection](#auto-archive-detection)
+
+### Visual Mail Flow
 
 Visual Mail Flow enables you to examine issues related to mail flow, such as email submission, group expansion, processing by transport agents (such as AntiSpam, mail flow rules, Data Loss Prevention), and delivery.
 
@@ -99,7 +105,7 @@ Some common situations where Visual Mail Flow can be useful:
 - Identifying mail flow rules applied to an email and their actions
 - Identifying Data Loss Prevention rules applied to an email and their actions
 
-### Input Requirements
+#### Input Requirements
 
 To use Visual Mail Flow, you need either the email's Message ID *or* the Network Message ID. You can locate either the message ID or the network message ID by opening the email in question, go to **File** -> **Properties** -> **Internet headers**. You can parse through the headers to find either the message ID or network ID. Alternatively, you can copy/paste the entire internet header box and use a tool like [Message Header Analyzer](https://mha.azurewebsites.net/) to parse this information for you.
 
@@ -109,11 +115,11 @@ To use Visual Mail Flow, you need either the email's Message ID *or* the Network
 - **Message ID**: Found in the email header with the "Message-ID:" token. Users can provide this information to help investigate specific messages. Be sure to include the full message ID. This might include angle brackets (<>). Although the form varies depending on the email system, here's an example of what a message ID would look like: `<08f1e0f806a47b4ac109109ae6ef@server.domain>`.
 - **Network Message ID**: Found in the email header with the "X-MS-Exchange-Organization-Network-Message-Id:" token. An example of a network message ID is `4d4c1224-7398-4e8e-949f-ce1932c4ab9d`.
 
-### Running the Diagnostic
+#### Running the Diagnostic
 
 Enter either the Message ID or Network Message ID, then select **Troubleshoot** to start the diagnosis. Results are generated in approximately 30 seconds.
 
-### Understanding the Results
+#### Understanding the Results
 
 The Visual Mail Flow diagnostic result includes:
 
@@ -123,18 +129,136 @@ The Visual Mail Flow diagnostic result includes:
 
 The **Visual Mail Flow Tree** is an interactive display showing the stages an email went through, with the ability to zoom, drag, and view detailed node information. By examining the tree, you can gain a detailed understanding of how Exchange Online processed the email. In some cases, you might notice that the tree node is split into multiple child nodes. This is due to Exchange Online's bifurcation feature, which separates recipients into multiple sets to process them separately during mail flow.
 
-![Enginering direct portal visual mail flow page](../media/eng-direct-portal/eng-direct-portal-visual-mail-flow.png)
+![Engineering direct portal visual mail flow page](../media/eng-direct-portal/eng-direct-portal-visual-mail-flow.png)
 
-### Investigating Further
+#### Investigating Further
 
 Select a tree node to view a flyout with other details, including recipients processed and node-specific properties for troubleshooting mail flow issues. The flyout contains other details for you to review and investigate. It contains a common “Recipients” property to show which recipients this node processed, and more node-specific properties that vary between nodes to help better troubleshoot mail flow issues.
 
 > [!TIP]
 > Emails sent to many recipients or large groups will take a longer time to query or could time out. Querying emails with fewer recipients could improve your experience.
 
-![Enginering direct portal visual mail flow item page](../media/eng-direct-portal/eng-direct-portal-visual-mail-flow-item.png)
+![Engineering direct portal visual mail flow item page](../media/eng-direct-portal/eng-direct-portal-visual-mail-flow-item.png)
 
 If Visual Mail Flow can’t help you resolve the issue, contact Microsoft Support for further help.
+
+### Validate DKIM Signing Configuration
+
+The Validate DKIM (DomainKeys Identified Mail) Signing Configuration tool in Microsoft Admin Center is designed to help administrators verify and troubleshoot DKIM configurations for their domain. DKIM is an email authentication method that enhances email security by allowing receiving mail servers to verify the authenticity of the sender's email through a digital signature. This verification process helps prevent email spoofing and ensures the integrity of the message. 
+
+The Validate DKIM Signing Configuration tool is used to: 
+
+- Validate the DKIM signing configuration for a domain. 
+- Identify issues with DKIM setup, such as missing, incorrect, or improperly enabled configurations. 
+- Provide actionable insights to help resolve configuration issues and ensure email messages are properly authenticated and trusted by recipient systems. 
+
+#### Scenarios for Use
+
+This diagnostic tool is particularly useful in the following scenarios: 
+
+- **Initial Setup:** After configuring DKIM for a new domain, use the tool to verify that the setup is complete and correct. 
+- **Troubleshooting:** If emails from your domain are being marked as spam or are not passing DKIM validation, use the tool to diagnose potential configuration issues. 
+- **Configuration Updates:** When updating DKIM settings or DNS records, use the tool to confirm that changes have been applied correctly. 
+
+#### Steps and Outputs
+
+- **Step 1: Access the Validate DKIM Signing Configuration Tool**
+
+  Navigate to Microsoft Admin Center: 
+
+    - Log in to the Microsoft Admin Center. 
+    - Go to the Diagnostics section. 
+
+  Select Validate DKIM Signing Configuration: 
+
+    - Choose the Validate DKIM Signing Configuration tool from the list of available diagnostics. 
+
+- **Step 2: Input Required Information**
+
+  Tenant: 
+
+    - The tool will automatically pull the default tenant information from the HTML. 
+
+  Vanity Domain: 
+
+    - Select the domain you want to test from the dropdown list of available domains. 
+
+- **Step 3: Review Diagnostic Results**
+
+  After running the diagnostic, you will receive one of the following results, depending on the status of your DKIM configuration: 
+
+  **Slide 1: No Configuration Created nor Enabled**
+
+    - Description: DKIM signing configuration for the domain has not been created. Emails may use default domain settings. 
+    - Action Required: Create the necessary DKIM signing configuration. Follow the PowerShell link provided in the diagnostic output to create the configuration. Then, configure DKIM using the steps outlined in the [Set up DKIM to sign mail from your Microsoft 365 domain](/defender-office-365/email-authentication-dkim-configure) article. 
+
+  **Slide 2: Configured but Possibly Published Incorrectly**
+
+    - Description: DKIM configuration entries for the domain are either not published or published incorrectly. 
+    - Action Required: Check the DNS entries for errors. Ensure that CNAME records correctly point to the Microsoft published public key entry as specified in the DKIM configuration. Correct any issues with the CNAME publishing and refer to the [Set up DKIM to sign mail from your Microsoft 365 domain](/defender-office-365/email-authentication-dkim-configure) article for further instructions. 
+
+  **Slide 3: Created but Not Enabled**
+
+    - Description: DKIM signing configuration for the domain has been created but not yet enabled. 
+    - Action Required: Enable DKIM signing for the domain. Follow the steps in the [Set up DKIM to sign mail from your Microsoft 365 domain](/defender-office-365/email-authentication-dkim-configure) article to enable and validate the configuration. 
+
+  **Slide 4: Properly Created and Correct DNS Entries Enabled**
+
+    - Description: DKIM signing configuration is correctly created and enabled with accurate DNS entries. 
+    - Action Required: No further action is required. Your DKIM configuration is properly set up, and your emails should be authenticated correctly by recipient systems. 
+
+#### Troubleshooting and Support
+
+If you encounter issues with the Validate DKIM Signing Configuration tool or need further assistance, consider the following steps: 
+
+- The diagnostic output includes specific details about configuration errors. Use these details to pinpoint and correct issues. 
+- Refer to the [Set up DKIM to sign mail from your Microsoft 365 domain](/defender-office-365/email-authentication-dkim-configure) article for comprehensive guidance on DKIM configuration. 
+- If issues persist, contact Microsoft support for further assistance. 
+
+By using the Validate DKIM Signing Configuration tool effectively, you can ensure that your email authentication is robust and that your messages are protected from spoofing and tampering.
+
+### Auto Archive Detection
+
+Auto Archive Detection helps manage your mailbox by automatically archiving or deleting old items. This feature can be configured differently in Outlook Desktop and Outlook on the Web (OWA). Editing Auto Archive settings in Outlook can help you effectively manage your mailbox, keeping it organized and free of clutter. Whether you are using Outlook Desktop or Outlook on the Web, the steps provided will guide you through the process of configuring Auto Archive to suit your needs.
+
+Follow the steps below to enable and customize Auto Archive settings based on your version of Outlook. 
+
+#### For Outlook Desktop
+
+1. Launch the Outlook application on your computer.
+1. Click on the **File** tab located in the top left corner of the window.
+1. From the menu that appears, select **Options**.
+1. In the Outlook Options window, click on **Advanced** found in the left sidebar.
+1. Under the "AutoArchive" section, click on **AutoArchive Settings**.
+1. Configure AutoArchive:
+
+    - Run AutoArchive every X days: Check this box and set the frequency for how often you want Auto Archive to run. 
+    - Prompt before AutoArchive runs: If you wish to receive a reminder before Auto Archive runs, check this option. 
+    - Delete expired items: Check this box if you want to permanently delete old items.
+
+1. Choose Actions: Decide what actions you want Auto Archive to take:
+
+    - Move items to the archive folder: Archives items in a designated folder.
+    - Permanently delete old items: Removes items without archiving.
+    - Archive items older than a specific number of months: Specify the age of items to be archived.
+
+1. Set Archive Folder: Specify the folder where you want archived items to be stored.
+
+1. After making your selections, click **OK** to save your settings. Click **OK** again to exit the Options window.
+
+#### For Outlook on the Web (OWA)
+
+1. Navigate to your Outlook on the web and sign in with your credentials. 
+
+1. Click on the gear icon in the top right corner to open the settings menu. 
+
+1. At the bottom of the settings panel, click on **View all Outlook settings**. 
+
+1. In the settings window, select **Mail**, then go to **Cleanup**. 
+
+1. Locate the Auto Archive settings and configure them according to your preferences. 
+
+1. Save your changes to apply the new settings. 
 
 ## More information
 
