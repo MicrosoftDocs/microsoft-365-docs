@@ -77,6 +77,9 @@ If your subscription or billing profile is paid by wire transfer, at the end of 
 
 If you have an MCA billing account type, and you have a billing profile that's paid by wire transfer, you can also use a credit card or debit card to make a one-time payment by using the **Pay now** button on your invoice.
 
+> [!NOTE]
+> It can take up to 10 business days to process a wire transfer payment.
+
 ## Paying with a billing profile
 
 If you have an MCA billing account type, you can use a credit card or debit card to back the billing profile that pays for your subscriptions. We use the associated billing profile to pay for all subscriptions that use that billing profile.
