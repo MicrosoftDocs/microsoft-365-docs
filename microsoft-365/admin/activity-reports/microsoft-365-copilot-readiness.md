@@ -39,7 +39,7 @@ In the Microsoft 365 Copilot readiness report, which is in continuous enhancemen
 
 ## Interpret the Readiness section in the Microsoft 365 Copilot report
 
-You can use this report to see how ready your organization is to adopt Microsoft 365 Copilot. The Readiness section is set up to show your data over the past 28 days. Currently this portion does not include any other time period options, but we'll be rolling out updates soon to enable 7-day, 30-day, 90-day, and 180-day periods.
+You can use this report to see how ready your organization is to adopt Microsoft 365 Copilot. The Readiness section is set up to show your data over the past 28 days.
 
 You can see the following summary charts in this report:
 
