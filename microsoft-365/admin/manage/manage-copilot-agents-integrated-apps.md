@@ -34,7 +34,7 @@ description: "Learn how to manage Copilot agents in the Integrated apps page in 
 >
 > - You must have Microsoft 365 Copilot license to use Copilot agents.
 > - The capability is enabled by default in all Microsoft 365 Copilot licensed tenants.
-> - Admins can disable this functionality for a user or a group. Also, admins control how individual agents are approved for use and which agents are enabled.
+> - Admins can manage how individual agents are approved for use and which agents are enabled.
 
 Microsoft 365 Copilot is a new experience in Microsoft 365 that combines the power of large language models with your data and apps in Microsoft 365 to capture natural language commands to produce content and analyze data. It enables access to and use of third-party apps, such as Jira, [Dynamics 365](/microsoft-365-copilot/extensibility/overview-business-applications), or Bing Web Search. Admins can manage Copilot agents in the same way as they manage any other app in the Integrated apps section of the Microsoft 365 admin center. Admins can enable, disable, assign, block, or remove Copilot agents for their organization, and manage Copilot capabilities and data privacy.
 
@@ -46,13 +46,12 @@ Microsoft Copilot Studio is a low-code development platform that offers a graphi
 
 However, before these agents can become available to users, the agents must undergo a streamlined process of submission and approval. To learn more, see [Publish Copilot agents](#publish-copilot-agents).
 
-When Copilot extensibility is enabled, users can see third party agents in Copilot that allows them to access the Copilot. The hub Copilot experience shows the list of agents that are available and deployed for the user. Users can toggle it on or off to restrict access of Copilot to any specific agents during the interaction. Users can also add or remove agents in their Copilot experience by right-clicking on the agents and selecting the appropriate option. Users can only access the agents that are allowed by the admin and that they have installed or been assigned to.
+The hub Copilot experience shows the list of agents that are available and deployed for the user. Users can toggle it on or off to restrict access of Copilot to any specific agents during the interaction. Users can also add or remove agents in their Copilot experience by right-clicking on the agents and selecting the appropriate option. Users can only access the agents that are allowed by the admin and that they have installed or been assigned to.
 
 ## Manage Copilot agents in the Microsoft 365 admin center
 
 Admins can manage Copilot agents as apps in the Integrated apps section of the Microsoft 365 admin center, where they can see the list of available, deployed, or blocked apps for their organization. They are able to:
 
-- Enable or disable Copilot extensibility for the complete organization through Microsoft 365 admin center settings.
 - Make a Copilot agent available to specific users or groups.
 - Block or unblock Copilot agents for the complete organization.
 - Deploy or remove Copilot agents for the complete organization or specific users or groups.
@@ -60,19 +59,6 @@ Admins can manage Copilot agents as apps in the Integrated apps section of the M
 Admins can view Copilot agents from the list of available, deployed, or blocked apps on the Integrated apps page by using the filter option of **Host products > Copilot**.
 
 You can also check if a specific app has Copilot support by selecting it from apps list and checking if the app overview mentions **Copilot** as a host product.
-
-## Enable or disable Copilot extensibility
-
-Admins can enable or disable Copilot extensibility for their org by using a setting in the tenant default options in the Integrated Apps section of the Microsoft 365 admin center. This setting lets you control who can access Copilot agents in their organization. The setting has three options:
-
-- **All Users**: This is the default option and it means that all users in the organization can access Copilot agents, subject to the existing app policies and user assignments.
-- **No Users**: This option means that no users in the organization can access Copilot agents, and the third party agents are disabled in the Copilot agents flyout. This option also hides Copilot agents from the list of Available and Deployed apps on the Integrated Apps page.
-- **Specific Users**: This option lets you select specific users or groups in your organization to have access to Copilot agents. So while all or specific users in your organization may have permissions to install and use apps from the Available apps and Deployed apps lists, only the users or groups you select in this setting can use Copilot agents.
-
-> [!NOTE]
->
-> - Once extensibility is disabled in the tenant, it can take up to 24 hours for agents to disappear for users.
-> - The Microsoft pinned Visual Creator agent will still be visible even when extensibility is disabled.
 
 ## Deploy or remove Copilot agents
 
@@ -95,7 +81,7 @@ For detailed information about how Microsoft 365 Copilot uses, protects, and sha
 
 ## Ensuring a secure implementation of Declarative Agents in Microsoft 365
 
-Microsoft 365 customers and partners can build declarative agents that extend Microsoft 365 Copilot with custom instructions, grounding knowledge, and actions invoked via REST API descriptions configured by the declarative agent. At runtime, Microsoft 365 Copilot reasons over a combination of the user’s prompt, custom instructions that are part of the declarative agent, and data which was provided by custom actions. All of this data might influence the behavior of the system, and such processing comes with security risks, specifically that if a custom action can provide data from untrusted sources (such as emails or support tickets), an attacker might be able to craft a message payload which causes your agent to behave in a way they control – incorrectly answering questions or even invoking custom actions. While Microsoft takes many measures to prevent such attacks, organizations should only enable declarative agents that use trusted knowledge sources and connect to trusted REST APIs via custom actions. If the use of untrusted data sources is necessary, design the declarative agent around the possibility of breach and don't give it the ability to perform sensitive operations without careful human intervention.
+Microsoft 365 customers and partners can build declarative agents that extend Microsoft 365 Copilot with custom instructions, grounding knowledge, and actions invoked via REST API descriptions configured by the declarative agent. At runtime, Microsoft 365 Copilot reasons over a combination of the user's prompt, custom instructions that are part of the declarative agent, and data which was provided by custom actions. All of this data might influence the behavior of the system, and such processing comes with security risks, specifically that if a custom action can provide data from untrusted sources (such as emails or support tickets), an attacker might be able to craft a message payload which causes your agent to behave in a way they control - incorrectly answering questions or even invoking custom actions. While Microsoft takes many measures to prevent such attacks, organizations should only enable declarative agents that use trusted knowledge sources and connect to trusted REST APIs via custom actions. If the use of untrusted data sources is necessary, design the declarative agent around the possibility of breach and don't give it the ability to perform sensitive operations without careful human intervention.
 
 Microsoft 365 provides organizations with extensive controls governing who can acquire and use integrated apps and the specific apps enabled for groups or individuals within a Microsoft 365 tenant, including those apps that include declarative agents. Tools like Copilot Studio, which enable users to create their own declarative agents, also include extensive controls that allow admins to govern connectors used for both knowledge and custom actions.
 
@@ -111,7 +97,7 @@ The publishing process involves the following steps:
 1. You can select a pending application to see more details and metadata, such as the description, requester, request date, and the status. These details help you to make an informed decision on whether to publish or reject the application.
 1. You can approve or disapprove any pending application by selecting **Publish** or **Reject**.
 
-   1. If the application is approved, it becomes available to the org users based on the org default settings and Copilot default settings. The application also becomes part of the `Available apps` list in the admin center, where admins can manage user assignments and other settings as any other app.
+   1. If the application is approved, it becomes available to the org users based on the org default settings for custom apps. The application also becomes part of the `Available apps` list in the admin center, where admins can manage user assignments and other settings as any other app.
 
    1. If the application is disapproved, it is removed from the `Pending approval` list in the admin center, and the status is shared with Copilot Studio. The developer can make changes and resubmit the application for approval.
 
