@@ -3,7 +3,7 @@ title: "Microsoft 365 endpoints"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 01/19/2024
+ms.date: 10/10/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -50,6 +50,7 @@ To automate getting the latest list of endpoints for your Microsoft 365 cloud, s
 For more endpoints, see these articles:
 
 - [Additional endpoints not included in the Web service](additional-office365-ip-addresses-and-urls.md)
+- [Unified cloud.microsoft domain for Microsoft 365 apps](cloud-microsoft-domain.md)
 - [Network requests in Office 2016 for Mac](network-requests-in-office-2016-for-mac.md)
 
 If you're a network equipment vendor, join the [Office 365 Networking Partner Program](microsoft-365-networking-partner-program.md). Enroll in the program to build Microsoft 365 network connectivity principles into your products and solutions.
