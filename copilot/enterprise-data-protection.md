@@ -13,13 +13,10 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 hideEdit: true
-ms.date: 09/16/2024
+ms.date: 10/10/2024
 ---
 
 # Enterprise data protection in Microsoft 365 Copilot and Microsoft Copilot
-
-> [!IMPORTANT]
-> The following information applies to Microsoft 365 Copilot currently and will start rolling out to Microsoft Copilot in the second half of September 2024 for users signed in with a Microsoft Entra account.
 
 ## What is enterprise data protection in Microsoft 365 Copilot and Microsoft Copilot?
 
@@ -35,7 +32,7 @@ Use of Microsoft 365 Copilot and Microsoft Copilot involves prompts (entered by 
 
 - **We secure your data:** We help protect your data with [encryption](/purview/office-365-encryption-in-the-microsoft-cloud-overview) at rest and in transit, rigorous physical security controls, and data [isolation](/compliance/assurance/assurance-microsoft-365-isolation-controls) between tenants.
 
-- **Your data is private:** We won’t use your data except as you instruct. Our commitments to [privacy](https://www.microsoft.com/trust-center/privacy) include support for [GDPR](/compliance/regulatory/gdpr), [ISO/IEC 27018](/compliance/regulatory/offering-ISO-27018)<sup>[3]</sup>, and our [Data Protection Addendum](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA).
+- **Your data is private:** We won’t use your data except as you instruct. Our commitments to [privacy](https://www.microsoft.com/trust-center/privacy) include support for [GDPR](/compliance/regulatory/gdpr), [ISO/IEC 27018](/compliance/regulatory/offering-ISO-27018), and our [Data Protection Addendum](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA).
 
 - **Your access controls and policies apply to Copilot:** Copilot respects your [identity model](microsoft-365-copilot-privacy.md#how-does-microsoft-365-copilot-protect-organizational-data) and [permissions](microsoft-365-copilot-privacy.md#how-does-microsoft-365-copilot-use-your-proprietary-organizational-data), inherits your [sensitivity labels](/purview/sensitivity-labels#sensitivity-labels-and-microsoft-365-copilot), applies your [retention](/purview/retention-policies-copilot) policies, supports [audit](/purview/audit-search?tabs=microsoft-purview-portal) of interactions, and follows your administrative settings. The specific controls and policies will vary depending on the underlying subscription plan.
 
@@ -71,5 +68,3 @@ When you’re using plugins to help Microsoft 365 Copilot to provide more releva
 <sup>[1]</sup> The specific controls will vary depending on a customer's Microsoft subscription plans.
 
 <sup>[2]</sup> Microsoft 365 Copilot supports HIPAA compliance for properly configured implementations. Microsoft Copilot is under review and doesn't support HIPAA compliance at this time.
-
-<sup>[3]</sup> Microsoft 365 Copilot runs on the ISO 27018 certified Microsoft 365 platform. Microsoft Copilot will start rolling out to the same platform in the second half of September 2024, for users signed in with a Microsoft Entra account.
