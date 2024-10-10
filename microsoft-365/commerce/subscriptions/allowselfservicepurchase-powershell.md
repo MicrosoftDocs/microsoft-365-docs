@@ -23,7 +23,7 @@ search.appverid:
 - MET150
 description: "Learn how to use the AllowSelfServicePurchase PowerShell cmdlet to turn self-service purchase on or off."
 ROBOTS: NOINDEX, NOFOLLOW
-ms.date: 10/04/2024
+ms.date: 10/10/2024
 ---
 
 # Use AllowSelfServicePurchase for the MSCommerce PowerShell module
@@ -90,7 +90,7 @@ Get-MSCommercePolicy -PolicyId AllowSelfServicePurchase
 
 ## Use AllowSelfServicePurchase with Microsoft products
 
-This section contains information about how to view a list of self-service purchase for Microsoft products and their status, and how to set the status. For information about third-party offer types, see [Use AllowSelfServicePurchase with third-party offer types](#use-allowselfservicepurchase-with-third-party-offer-types).
+This section contains information about how to view a list of Microsoft products for self-service purchase, their current status, and how to set the status. For information about third-party offer types, see [Use AllowSelfServicePurchase with third-party offer types](#use-allowselfservicepurchase-with-third-party-offer-types).
 
 ### View a list of self-service purchase Microsoft products and their status
 
@@ -231,9 +231,9 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $pr
 If there are multiple values for the product, you can run the command individually for each value as shown in the following example:
 
 ```powershell
-Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[0].ProductID -Value "Disabled"
+foreach ($id in $product.ProductID) {UpdateUpdate-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[0].ProductID -Value "Disabled"
 Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[1].ProductID -Value "Disabled"
-Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -OfferType SaaS -Value "Disabled"
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -OfferType SaaS -Value "Disabled"}
 ```
 
 ## Troubleshoot HandleError: Failed to retrieve policy with PolicyId 'AllowSelfServicePurchase'
@@ -242,7 +242,7 @@ In some cases, you might see the following error message:
 
 > HandleError : Failed to retrieve policy with PolicyId 'AllowSelfServicePurchase', ErrorMessage - The underlying connection was closed: An unexpected error occurred on a send.
 
-This error might be due to an older version of Transport Layer Security (TLS). When you connect to this service, you must use TLS 1.2 or greater
+This error might be due to an older version of Transport Layer Security (TLS). When you connect to this service, you must use TLS 1.2 or greater.
 
 To resolve this error, upgrade to TLS 1.2. The following syntax updates the ServicePointManager Security Protocol to allow TLS1.2:
 
