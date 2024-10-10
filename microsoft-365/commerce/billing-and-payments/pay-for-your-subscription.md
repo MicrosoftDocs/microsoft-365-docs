@@ -77,6 +77,9 @@ If your subscription or billing profile is paid by wire transfer, at the end of 
 
 If you have an MCA billing account type, and you have a billing profile that's paid by wire transfer, you can also use a credit card or debit card to make a one-time payment by using the **Pay now** button on your invoice.
 
+> [!NOTE]
+> It can take up to 10 business days to process a wire transfer payment.
+
 ## Paying with a billing profile
 
 If you have an MCA billing account type, you can use a credit card or debit card to back the billing profile that pays for your subscriptions. We use the associated billing profile to pay for all subscriptions that use that billing profile.
@@ -154,7 +157,7 @@ As of September 30, 2022, Microsoft and other online merchants no longer store c
 
 ### UPI and NetBanking payment options
 
-The admin center supports two alternate payment options for customers in India:
+The admin center supports two alternate payment options for customers in India who have an MOSA billing account type:
 
 - UPI (Unified Payments Interface) payment is a real-time payment method.
 - NetBanking (Internet Banking) provides customers with access to banking services on an online platform.
