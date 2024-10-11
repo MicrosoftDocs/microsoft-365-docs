@@ -51,7 +51,7 @@ To ensure that users in your organization access Copilot with enterprise data pr
 
 ### Manage agents that work with Microsoft 365 Copilot
 
-To learn more about managing agents that work with Microsoft 365 Copilot, including how to control the integration of non-Microsoft apps and first-party apps, see [Manage Copilot agents in Integrated Apps](../microsoft-365/admin/manage/manage-copilot-agents-integrated-apps.md).
+To learn more about managing agents that work with Microsoft 365 Copilot, including how to control the integration of non-Microsoft apps and first-party apps, see [Manage Copilot agents in Integrated Apps](/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps.md).
 
 ### Optional connected experiences for Microsoft 365 Copilot and Microsoft Copilot
 
@@ -81,7 +81,7 @@ To learn more, see [Pin Microsoft Copilot to the navigation bar](pin-copilot.md)
 
 Give users the flexibility to acquire this product without an administrator's help. This can help admins understand and manage the demand.
 
-To learn more, see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](../microsoft-365/commerce/subscriptions/allowselfservicepurchase-powershell.md).
+To learn more, see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](/microsoft-365/commerce/subscriptions/allowselfservicepurchase-powershell.md).
 
 ### Copilot in Teams meetings
 
