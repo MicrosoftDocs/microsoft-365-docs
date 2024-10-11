@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: iswillia
-ms.date: 04/16/2024
+ms.date: 10/11/2024
 audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-lighthouse
@@ -59,7 +59,7 @@ These principles guide Microsoft's approach to data access. They emphasize respo
 In Lighthouse, data access relationships play a pivotal role in governing how MSPs interact with customer data. These relationships define the foundation for ethical and transparent data handling. The two key data access relationship types in Lighthouse include:
 
 - **Delegated admin relationship**
-    - **Role:** Delegated admins perform administrative tasks on behalf of customers.
+    - **Role:** Delegated admins perform administrative tasks on behalf of customers to support customer success.
     - **Purpose:** This type of relationship streamlines routine actions like user management and service monitoring.
     - **Value added:** Fine-grained permissions ensure controlled access.
 
@@ -80,7 +80,7 @@ Data access relationships intersect with the following data feature areas:
 
 - **Customer success insights**<br>
     These features include opportunities and subscription renewals and enable MSPs to offer proactive guidance and recommendations to their customers.
-    - **Data source:** Lighthouse uses anonymized tenant-level usage data, which combines subscription information with aggregated insights. This approach ensures valuable analytics while safeguarding individual privacy.
+    - **Data source:** Lighthouse uses anonymized tenant-level usage data, which combines subscription information with aggregated insights. This approach ensures valuable analytics while safeguarding individual privacy. Lighthouse surfaces customer success insights from customers who have an active reseller relationship or delegated admin relationship with the MSP.
     - **Example:** By using the subscription renewals feature, an MSP can proactively connect with their customer to discuss their needs and take the appropriate actions to prevent a service interruption.
 
 - **Customer management**<br>
