@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: katmartin
+ms.reviewer: aakash
 ms.date: 04/09/2024
 audience: Admin
 ms.topic: conceptual
