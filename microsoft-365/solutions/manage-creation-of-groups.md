@@ -53,6 +53,7 @@ The steps in this article won't prevent members of certain roles from creating G
 - SharePoint Administrator: SharePoint admin center, Microsoft Entra ID
 - Teams Service Administrator: Teams admin center, Microsoft Entra ID
 - User Administrator: Microsoft 365 admin center, Microsoft Entra ID
+- Yammer Administrator: Microsoft Entra ID
 
 If you're a member of one of these roles, you can create Microsoft 365 Groups for restricted users, and then assign the user as the owner of the group.
 
