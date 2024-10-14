@@ -37,6 +37,8 @@ Consolidating authenticated user-facing Microsoft 365 experiences to a single do
 
 To ensure that customers and users can treat everything under the *.cloud.microsoft domain as fully trusted, the entire domain hierarchy is isolated, purpose built, and dedicated to hosting only secure and compliant Microsoft product experiences. The domain is managed to the highest standards of domain security and reputation, and is kept free of scenarios such as third-party websites, IaaS/PaaS resources (such as file and blob storage), and hosting of active content, code or scripts that may affect the trust and integrity of products and applications residing in the domain.
 
+The `.microsoft` gTLD is on the HTTP Strict-Transport-Security preload list in all popular browsers, meaning that all non-secure HTTP requests are automatically upgraded to use HTTPS, and users are blocked from overriding certificate errors that could indicate an active network attacker is attempting to compromise the security of the connection. All *.cloud.microsoft subdomains inherit this protection.
+
 ## Requirements for admins
 
 Since 2023, *.cloud.microsoft and other domains related to the domain unification initiative are part of the [Microsoft 365 network guidance on domains and service endpoints](/microsoft-365/enterprise/urls-and-ip-address-ranges). Customers who use the Microsoft 365 web service API to automate network settings have been getting the network settings since then. Customers who manually update endpoints should ensure that *.cloud.microsoft and other required domains are included in their allow-list to prevent connectivity and service incidents for their users. 
