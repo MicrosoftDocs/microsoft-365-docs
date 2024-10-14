@@ -55,7 +55,7 @@ To learn more about delegated access, see [Overview of the Delegated access page
 
 ### Use Copilot insights in Lighthouse to drive Copilot success
 
-The new **Copilot insights** page lets you easily manage and monitor Copilot success across your customer tenants&mdash;all in one place. In addition to recommending customers who are likely to find value from Copilot, the page shows Copilot usage and license assignment and provides links to key resources for you to become a Copilot expert, including Copilot Lab, learning paths, and training videos. Coming soon, the page will also show deployment progress for tasks that we specifically recommend for enabling Copilot.
+The new **Copilot insights** page lets you easily manage and monitor Copilot success across your customer tenants&mdash;all in one place. In addition to recommending customers who are likely to find value from Copilot, the page shows Copilot usage and license assignment and provides links to key resources for you to become a Copilot expert, including Copilot Lab, learning paths, and training videos. The page also shows deployment progress for tasks that we specifically recommend for enabling Copilot.
 
 Moreover, Copilot insights help you pinpoint customers who may need Copilot setup guidance or training. Use the insights to ensure all Copilot users are enabled and set up for success.
 
