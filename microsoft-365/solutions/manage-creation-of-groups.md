@@ -114,10 +114,9 @@ Import-Module Microsoft.Graph.Beta.Groups
 
 Connect-MgGraph -Scopes "Directory.ReadWrite.All", "Group.Read.All"
 
-$GroupName = ""
 $AllowGroupCreation = "False"
 
-$settingsObjectID = (Get-MgBetaDirectorySetting | Where-object -Property Displayname -Value "Group.Unified" -EQ).id
+$settingsObjectID = (Get-MgBetaDirectorySetting | Where-object -Property DisplayName -Value "Group.Unified" -EQ).Id
 
 if(!$settingsObjectID)
 {
@@ -136,8 +135,8 @@ if(!$settingsObjectID)
     $settingsObjectID = (Get-MgBetaDirectorySetting | Where-object -Property Displayname -Value "Group.Unified" -EQ).Id
 }
 
- 
-$groupId = (Get-MgBetaGroup | Where-object {$_.displayname -eq $GroupName}).Id
+# Get the group id of the group will be allowed to create groups from Microsoft Entra ID
+$groupId = "" 
 
 $params = @{
 	templateId = "62375ab9-6b52-47ed-826b-58e47e0e304b"
@@ -156,7 +155,6 @@ $params = @{
 Update-MgBetaDirectorySetting -DirectorySettingId $settingsObjectID -BodyParameter $params
 
 (Get-MgBetaDirectorySetting -DirectorySettingId $settingsObjectID).Values
-
 ```
 
 The last line of the script will display the updated settings:
