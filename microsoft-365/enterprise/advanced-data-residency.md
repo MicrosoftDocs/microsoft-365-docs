@@ -35,7 +35,7 @@ The following workloads are included in ADR. For more information, see:
 - [Microsoft Defender for Office P1 and Exchange Online Protection](m365-dr-workload-mdo-p1.md)
 - [Office for the Web](m365-dr-workload-office-for-web.md)
 - [Viva Connections](m365-dr-workload-viva-connections.md)
-- [Viva Topics](m365-dr-workload-viva-topics.md)
+- [Viva Topics](m365-dr-workload-viva-topics.md)*
 - [Microsoft Purview](m365-dr-workload-purview.md)
   - [Audit (Standard)](m365-dr-workload-purview.md#purview-audit-standard)
   - [Audit (Premium)](m365-dr-workload-purview.md#purview-audit-premium)
@@ -45,6 +45,9 @@ The following workloads are included in ADR. For more information, see:
   - [Data Loss Prevention](m365-dr-workload-purview.md#information-protection---data-loss-prevention-dlp)
   - [Office Message Encryption](m365-dr-workload-purview.md#information-protection---office-message-encryption)
   - [Information Barriers](m365-dr-workload-purview.md#risk-and-compliance---information-barriers)
+
+> [!NOTE]
+> *Viva Topics will be retired on February 22, 2025. Therefore, as of October 31, 2024, Viva Topics will not be supported as part of ADR and migrations starting with upcoming local region launches (Taiwan, New Zealand) and for new customers in existing local regions. For more details, please visit [aka.ms/TopicsFebSupport](https://aka.ms/TopicsFebSupport).
 
 ## Licensing and Purchase
 
