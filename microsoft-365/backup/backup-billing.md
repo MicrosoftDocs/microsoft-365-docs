@@ -114,6 +114,12 @@ To view tags:
 
         - **applications** shows a list of app IDs.
 
+        - Exchange mailbox - Not available.
+
+        - OneDrive account - SiteId of the corresponding OneDrive site.
+
+        - SharePoint site - SiteId of the corresponding SharePoint site.
+
     - Azure cost analysis - filter by tag.
 
 4. In the left navigation, select **Billing** to see monthly invoices.

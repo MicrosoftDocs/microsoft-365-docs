@@ -40,7 +40,7 @@ Sales Advisor is built for sellers. Customer-facing roles in partner's organizat
 - Report viewer gives access to most reporting data sets but not too sensitive data, such as revenue and customer or employee personal information.
 - A Global admin or an Account admin can assign users these roles, which are assigned either for an entire company or for a specific Microsoft Cloud Partner Program location.
 
-For more information, see [CPP role-based access](/partner-center/insights-roles).
+For more information, see [CPP role-based access - Partner Center](/partner-center/insights-roles).
 
 ## Get access to Sales Advisor
 
@@ -66,5 +66,5 @@ Once you have access to Sales Advisor, you can start reviewing insights on the O
 
 [Overview of Sales Advisor](m365-lighthouse-sales-advisor-overview.md) (article)\
 [Understand opportunities and data in Sales Advisor](m365-lighthouse-understanding-opportunities-and-data.md) (article)\
-[CPP role-based access](/partner-center/insights-roles) (article)\
-[Roles with access to the Insights dashboard](/partner-center/partner-center-insights) (article)
+[CPP role-based access - Partner Center](/partner-center/insights-roles) (article)\
+[Roles with access to the Insights dashboard - Partner Center](/partner-center/partner-center-insights) (article)
