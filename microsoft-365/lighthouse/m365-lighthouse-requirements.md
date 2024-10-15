@@ -36,7 +36,7 @@ In addition, each customer tenant must meet the following requirements to be act
 
 - Must have delegated access set up for the partner to be able to manage the customer tenant
     > [!NOTE]
-    > Either granular delegated admin privileges (GDAP) or a delegated admin privileges (DAP) relationship is required to onboard customers to Lighthouse. An indirect reseller relationship is no longer required to onboard to Lighthouse. If DAP and GDAP coexist in a customer tenant, GDAP permissions take precedence for MSP technicians in GDAP-enabled security groups.
+    > Either granular delegated administrative privileges (GDAP) or a delegated administrative privileges (DAP) relationship is required to onboard customers to Lighthouse. An indirect reseller relationship is no longer required to onboard to Lighthouse. If DAP and GDAP coexist in a customer tenant, GDAP permissions take precedence for MSP technicians in GDAP-enabled security groups.
     > [!NOTE]
     > To use Lighthouse to view opportunities in Sales Advisor, you don't need additional delegated access permissions from the customer.
 - Must have at least one Enterprise, Business, Frontline, or Education subscription of Microsoft 365, Office 365, Exchange Online, Windows 365 Business, or Microsoft Defender for Business
