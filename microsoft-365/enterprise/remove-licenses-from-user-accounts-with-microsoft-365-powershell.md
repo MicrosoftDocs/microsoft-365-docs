@@ -84,11 +84,12 @@ foreach($user in $licensedUsers)
 }
 ```
 
-To remove a specific license from a list of users in a text file, perform the following steps. This example removes the **SPE_E5** (Microsoft 365 Enterprise E5) license from the user accounts defined in the text file C:\My Documents\Accounts.txt.
+To remove a specific license from a list of users in a `CSV` file, perform the following steps. This example removes the **SPE_E5** (Microsoft 365 Enterprise E5) license from the user accounts defined in the `CSV` file C:\My Documents\Accounts.csv.
 
-  1. Create and save a text file to C:\My Documents\Accounts.txt that contains one account on each line like this:
+  1. Create and save a CSV file to C:\My Documents\Accounts.csv that contains one account on each line under the `UserPrincipalName` header like this:
 
      ```powershell
+     UserPrincipalName
      akol@contoso.com
      tjohnston@contoso.com
      kakers@contoso.com
@@ -97,11 +98,10 @@ To remove a specific license from a list of users in a text file, perform the fo
   2. Use the following command:
 
      ```powershell
-     $x=Get-Content "C:\My Documents\Accounts.txt"
+     $usersList = Import-CSV -Path "C:\My Documents\Accounts.csv"
      $e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'
-     for ($i=0; $i -lt $x.Count; $i++)
-     {
-     Set-MgUserLicense -UserId $x[$i] -RemoveLicenses @($e5Sku.SkuId) -AddLicenses @{}
+     foreach($user in $usersList) {
+       Set-MgUserLicense -UserId $user.UserPrincipalName -RemoveLicenses @($e5Sku.SkuId) -AddLicenses @{}
      }
      ```
 
