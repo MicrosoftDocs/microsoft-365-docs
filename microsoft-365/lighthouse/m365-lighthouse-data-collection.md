@@ -33,7 +33,7 @@ Lighthouse collects data from MSPs when a user from the partner tenant uses Ligh
 The data collected from partner tenants is divided into two categories: diagnostic data and usage data.
 
 - **Diagnostic data:** This data captures the performance and reliability of Lighthouse, such as errors, crashes, or failures. Diagnostic data helps identify and resolve issues that affect the service quality or user experience.
-- **Usage data:** This data reflects the actions and preferences of the partner when using Lighthouse, such as specifying contacts or websites for customers, creating custom baselines, deploying deployment tasks, or setting up granular delegated admin privileges (GDAP) relationships. Usage data helps Lighthouse customize and optimize the service for each MSP based on their input.
+- **Usage data:** This data reflects the actions and preferences of the partner when using Lighthouse, such as specifying contacts or websites for customers, creating custom baselines, deploying deployment tasks, or setting up granular delegated administrative privileges (GDAP) relationships. Usage data helps Lighthouse customize and optimize the service for each MSP based on their input.
 
 Some examples of the diagnostic data that are collected are:
 

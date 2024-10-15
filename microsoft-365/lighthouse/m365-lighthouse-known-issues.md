@@ -50,15 +50,15 @@ This article lists the known issues for Microsoft 365 Lighthouse by feature area
 | ---------------- | ---------------- | ---------------- |
 | **Retry provisioning error** | MSP technicians get a "You don't have permissions to do this" error message when attempting to retry provisioning of a Cloud PC. | To work around this issue, sign in to the customer tenant and then reprovision Cloud PCs from the Microsoft Endpoint Manger admin center. For instructions, see [Reprovision a Cloud PC](/windows-365/enterprise/reprovision-cloud-pc). |
 
-## Delegated admin privileges (DAP)
+## Delegated administrative privileges (DAP)
 
 | Issue | Description | Solution |
 | ---------------- | ---------------- | ---------------- |
 | **Permissions delay when changing DAP roles** | If an MSP technician is added to or removed from the Admin Agent or Helpdesk Agent group, there may be a delay in reflecting the appropriate permissions within Lighthouse. | The issue will resolve within 30 minutes. No additional steps are required. |
 
-## Granular delegated admin privileges (GDAP)
+## Granular delegated administrative privileges (GDAP)
 
-Either granular delegated admin privileges (GDAP) plus an indirect reseller relationship or a delegated admin privileges (DAP) relationship is required to onboard customers to Lighthouse. If DAP and GDAP coexist in a customer tenant, GDAP permissions take precedence for MSP technicians in GDAP-enabled security groups. Customers with GDAP-only relationships (without indirect reseller relationships) currently can't onboard to Lighthouse, but will be able to onboard in a future release.<br><br>
+Either granular delegated administrative privileges (GDAP) plus an indirect reseller relationship or a delegated administrative privileges (DAP) relationship is required to onboard customers to Lighthouse. If DAP and GDAP coexist in a customer tenant, GDAP permissions take precedence for MSP technicians in GDAP-enabled security groups. Customers with GDAP-only relationships (without indirect reseller relationships) currently can't onboard to Lighthouse, but will be able to onboard in a future release.<br><br>
 
 | Issue | Description | Solution |
 | ---------------- | ---------------- | ---------------- |
