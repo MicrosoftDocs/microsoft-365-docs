@@ -8,6 +8,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: bookings
 ms.localizationpriority: medium
+ms.custom: asset-status-to-be-retired
 ms.collection: 
 - Tier1
 - scotvorg
