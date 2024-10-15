@@ -28,7 +28,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 Microsoft 365 Lighthouse permissions are primarily managed by the following:
 
 - Lighthouse role-based access control (RBAC) in the partner tenant
-- Granular Delegated Admin Privileges (GDAP) in the customer tenant
+- Granular delegated administrative privileges (GDAP) in the customer tenant
 
 To use Lighthouse, you need a combination of roles assigned via RBAC and GDAP.
 
@@ -89,7 +89,7 @@ For more information about setting up a GDAP relationship with a customer tenant
 
 For more information about least-privileged roles by task, see [Least-privileged roles - Partner Center](/partner-center/gdap-least-privileged-roles-by-task) and [Least privileged roles by task in Microsoft Entra ID](/azure/active-directory/roles/delegate-by-task).  
 
-For more information about GDAP or Delegated Admin Privileges (DAP) deprecation, see [GDAP frequently asked questions - Partner Center](/partner-center/gdap-faq), [Delegated administration privileges (DAP) FAQ - Partner Center](/partner-center/dap-faq), or search the [Partner Center announcements](/partner-center/announcements/) for dates and timelines.
+For more information about GDAP or delegated administrative privileges (DAP) deprecation, see [GDAP frequently asked questions - Partner Center](/partner-center/gdap-faq), [Delegated administration privileges (DAP) FAQ - Partner Center](/partner-center/dap-faq), or search the [Partner Center announcements](/partner-center/announcements/) for dates and timelines.
 
 The following tasks in Lighthouse have specific Microsoft Entra role requirements:
 
