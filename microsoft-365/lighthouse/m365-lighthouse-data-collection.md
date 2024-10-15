@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: iswillia
-ms.date: 4/19/2024
+ms.date: 10/11/2024
 audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-lighthouse
@@ -33,7 +33,7 @@ Lighthouse collects data from MSPs when a user from the partner tenant uses Ligh
 The data collected from partner tenants is divided into two categories: diagnostic data and usage data.
 
 - **Diagnostic data:** This data captures the performance and reliability of Lighthouse, such as errors, crashes, or failures. Diagnostic data helps identify and resolve issues that affect the service quality or user experience.
-- **Usage data:** This data reflects the actions and preferences of the partner when using Lighthouse, such as specifying contacts or websites for customers, creating custom baselines, deploying deployment tasks, or setting up granular delegated admin privileges (GDAP) relationships. Usage data helps Lighthouse customize and optimize the service for each MSP based on their input.
+- **Usage data:** This data reflects the actions and preferences of the partner when using Lighthouse, such as specifying contacts or websites for customers, creating custom baselines, deploying deployment tasks, or setting up granular delegated administrative privileges (GDAP) relationships. Usage data helps Lighthouse customize and optimize the service for each MSP based on their input.
 
 Some examples of the diagnostic data that are collected are:
 
@@ -60,6 +60,7 @@ The following table summarizes the types of data that Lighthouse collects from c
 | Data category | Data source | Data scope | Data purpose |
 | ---------------- | ---------------- | ---------------- |---------------- |
 |Cloud PC management | Windows 365 | Various types of data related to Cloud PC device and user management, such as: <ul><li>Metadata of Cloud PC devices, such as device name, device ID, device group, device status, and device configuration </li><li>Metadata of cloud PC users, such as username, user ID, user group, user role, and user assignment</li><li> Metadata of cloud PC connections, such as connection name, connection type, connection status, and connection details</li></ul> | Helps MSPs manage Cloud PC devices and users across customer tenants.<br><br>Helps MSPs measure and improve Cloud PC performance and user experience across customer tenants.|
+| Microsoft Copilot | Copilot<br><br>Microsoft Entra | Various types of data related to Copilot, such as: <ul><li>Copilot services usage</li><li>Metadata of subscriptions and license assignment count</li></ul> | Helps MSPs manage Copilot enablement and adoption across customer tenants.<br><br>Helps MSPs enhance customer productivity and success using AI. | 
 | Device management | Microsoft Intune | Various types of data related to device enrollment, device compliance, app protection, and device configuration, such as:<ul><li>Metadata of enrolled devices</li><li>Metadata of app protection policies</li><li>Metadata of device configuration profiles</li></ul> <br>Comparison of device compliance status and app protection policies with the baseline configuration | Helps MSPs manage devices across customer tenants.<br><br>Helps MSPs measure and improve device compliance and app protection across customer tenants.|
 | Device performance | Endpoint analytics |Metadata of device performance, such as device name, device ID, device group, startup performance score, restart frequency, sign-in duration, battery life, and app reliability<br><br>Metadata of device recommendations, such as name, type, impact, status, and details | Helps MSPs manage device performance across customer tenants.<br><br>Helps MSPs measure and improve device productivity and user experience across customer tenants. |
 | App management* (Preview) | Microsoft 365 Apps admin center | Metadata related to Microsoft 365 apps management, such as update channel, build and version number, and installed Microsoft 365 apps and add-ins.<br><br>Metadata of Office devices, such as OS, storage, RAM, system architecture (for example, 64-bit), last signed-in user, devices on an unsupported build, devices not on the latest build, and devices using cloud update. | Helps MSPs manage Microsoft 365 app health across customer tenants.<br><br>Helps MSPs measure and improve Office device productivity and Microsoft 365 app user experience across customer tenants. |
