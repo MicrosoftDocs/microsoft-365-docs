@@ -47,7 +47,7 @@ The following workloads are included in ADR. For more information, see:
   - [Information Barriers](m365-dr-workload-purview.md#risk-and-compliance---information-barriers)
 
 > [!NOTE]
-> *Viva Topics will be retired on February 22, 2025. Therefore, as of October 31, 2024, Viva Topics will not be supported as part of ADR and migrations starting with upcoming local region launches (Taiwan, New Zealand) and for new customers in existing local regions. For more details, please visit [aka.ms/TopicsFebSupport](https://aka.ms/TopicsFebSupport).
+> *Viva Topics will be retired on February 22, 2025. Therefore, as of October 31, 2024, Viva Topics will no longer be a supported workload in ADR. Starting with the upcoming local region launches in Taiwan and New Zealand, Viva Topics customer data will not be migrated to new local regions, nor will new customers have Viva Topics stored in existing local regions. For more details, please visit [aka.ms/TopicsFebSupport](https://aka.ms/TopicsFebSupport).
 
 ## Licensing and Purchase
 
