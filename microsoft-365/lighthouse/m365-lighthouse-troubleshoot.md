@@ -73,7 +73,7 @@ This article describes error messages and problems that you might encounter whil
 
 **Resolution:** The following table describes the different tenant statuses that require action and explains how to resolve them.
 
-Either granular delegated admin privileges (GDAP) plus an indirect reseller relationship or a delegated admin privileges (DAP) relationship is required to onboard customers to Lighthouse. If DAP and GDAP coexist in a customer tenant, GDAP permissions take precedence for MSP technicians in GDAP-enabled security groups. Coming soon, customers with GDAP-only relationships (without indirect reseller relationships) will be able to onboard to Lighthouse.<br><br>
+Either granular delegated administrative privileges (GDAP) plus an indirect reseller relationship or a delegated administrative privileges (DAP) relationship is required to onboard customers to Lighthouse. If DAP and GDAP coexist in a customer tenant, GDAP permissions take precedence for MSP technicians in GDAP-enabled security groups. Coming soon, customers with GDAP-only relationships (without indirect reseller relationships) will be able to onboard to Lighthouse.<br><br>
 
 | Status | Description | Resolution |
 |--|--|--|
@@ -92,7 +92,7 @@ If you confirmed that your customer tenant meets the onboarding criteria and the
 
 **Resolution:** Make sure that an admin from your partner tenant assigned you to the correct GDAP security group in Microsoft Entra ID and assigned you the correct role in Partner Center. Also, keep in mind that some actions in Lighthouse require you to be a Global Administrator. To learn more about the GDAP roles and what each role can do, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). For a detailed description of all Microsoft Entra built-in roles and permissions for GDAP, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference).
 
-For customers with DAP relationships, the partner admin will need to assign you to either the Admin agent or Helpdesk agent role in Partner Center. For a detailed description of all Partner Center roles and permissions, see [Assign roles and permissions to users](/partner-center/permissions-overview).
+For customers with DAP relationships, the partner admin will need to assign you to either the Admin agent or Helpdesk agent role in Partner Center. For a detailed description of all Partner Center roles and permissions, see [Assign roles and permissions to users - Partner Center](/partner-center/permissions-overview).
 
 ### I don't see complete data in certain areas of Lighthouse, or I can't perform certain tasks, or I can't access certain tenants
 
@@ -106,7 +106,7 @@ For customers with DAP relationships, the partner admin will need to assign you 
 
 **Cause:** You don't have the required roles to set up GDAP in Lighthouse, or settings in the partner or customer tenants are preventing you from completing GDAP setup.
 
-**Resolution:** Make sure you have the required roles to run GDAP Setup, including Global Administrator (assigned in Microsoft Entra ID) and Admin agent (assigned in Partner Center). Also, make sure your account meets security requirements to run GDAP Setup, including making sure you're not a Risky User and that you have multifactor authentication (MFA) set up. To check for and remediate risks in your account, see [Remediate risks and unblock users](/azure/active-directory/identity-protection/howto-identity-protection-remediate-unblock). For instructions on how to mandate MFA, see [Mandating MFA for your partner tenant](/partner-center/partner-security-requirements-mandating-mfa).
+**Resolution:** Make sure you have the required roles to run GDAP Setup, including Global Administrator (assigned in Microsoft Entra ID) and Admin agent (assigned in Partner Center). Also, make sure your account meets security requirements to run GDAP Setup, including making sure you're not a Risky User and that you have multifactor authentication (MFA) set up. To check for and remediate risks in your account, see [Remediate risks and unblock users](/azure/active-directory/identity-protection/howto-identity-protection-remediate-unblock). For instructions on how to mandate MFA, see [Mandating MFA for your partner tenant - Partner Center](/partner-center/partner-security-requirements-mandating-mfa).
 
 You should also make sure Conditional Access policies configured in the customer tenants aren't blocking your ability to establish a GDAP relationship with them. For step-by-step guidance on how to confirm this, see [What is the recommended next step if the conditional access policy set by the customer blocks all external access?](/partner-center/gdap-bulk-migration-tool-faq#what-is-the-recommended-next-step-if-the-conditional-access-policy-set-by-the-customer-blocks-all-external-access-including-csps-access-aobo-to-the-customers-tenant).
 
