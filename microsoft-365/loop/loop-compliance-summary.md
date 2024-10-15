@@ -74,8 +74,8 @@ Where the Loop content was originally created determines its storage location:
 |***Microsoft 365 retention and deletion***|---|---|
 |Retention policies  |**[Retention policies](/purview/create-retention-policies?tabs=other-retention)** are enforced for all .loop files.|**[Retention policies](/purview/create-retention-policies?tabs=other-retention)** configured for all SharePoint sites are enforced for all .loop files or alternatively can be configured per Loop workspace *.|
 |Retention labels  |**[Retention labels](/purview/retention#retention-labels)** are supported for .loop files by [applying published labels](/purview/create-apply-retention-labels?tabs=spo-onedrive) in OneDrive or SharePoint, or [automatically](/purview/apply-retention-labels-automatically) applying the labels.|**Not Yet Available**:  <br>**[Retention labels](/purview/retention#retention-labels)** are supported for components and pages, but an end-user experience to view or update a retention label isn't yet available.|
-|***Data Classification***|---|---|
-|Information Protection  |**[Sensitivity labeling](/purview/sensitivity-labels-loop)** is available for Loop pages and components.|**[Sensitivity labeling](/purview/sensitivity-labels-loop)** is available for Loop pages and components, and admin configurable for each Loop workspace via PowerShell and rollimg out in the Loop app for end users on each Loop workspace.|
+|***Information Protection***|---|---|
+|Sensitivity labels  |**[Sensitivity labeling](/purview/sensitivity-labels-loop)** is available for Loop pages and components.|**[Sensitivity labeling](/purview/sensitivity-labels-loop)** is available for Loop pages and components, and admin configurable for each Loop workspace via PowerShell and rolling out in the Loop app for end users on each Loop workspace.|
 |Data Loss Prevention  |**[Data Loss Prevention](/purview/dlp-learn-about-dlp)** (DLP) rules are enforced on content with end-user policy tip support.|**[Data Loss Prevention](/purview/dlp-learn-about-dlp)** (DLP) rules are enforced on content with end-user policy tip support.|
 
 <a name="loop-workspace-url"></a>
