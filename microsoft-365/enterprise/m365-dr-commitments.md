@@ -79,7 +79,7 @@ The following customer data is stored at rest in the _Local Region Geography_:
 - The administration configuration data is stored within the _Local Region Geography_.
 
 > [!NOTE]
-> *Viva Topics will be retired on February 22, 2025. Therefore, as of October 31, 2024, Viva Topics will not be supported as part of ADR and migrations starting with upcoming local region launches (Taiwan, New Zealand) and for new customers in existing local regions. For more details, please visit [aka.ms/TopicsFebSupport](https://aka.ms/TopicsFebSupport).
+> *Viva Topics will be retired on February 22, 2025. Therefore, as of October 31, 2024, Viva Topics will no longer be a supported workload in ADR. Starting with the upcoming local region launches in Taiwan and New Zealand, Viva Topics customer data will not be migrated to new local regions, nor will new customers have Viva Topics stored in existing local regions. For more details, please visit [aka.ms/TopicsFebSupport](https://aka.ms/TopicsFebSupport).
 
 ## Purview Audit (Standard)
 
