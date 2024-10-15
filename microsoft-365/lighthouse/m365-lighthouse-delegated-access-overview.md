@@ -86,6 +86,6 @@ The Relationships tab also includes the following options:
 [Set up GDAP in Microsoft 365 Lighthouse](m365-lighthouse-setup-gdap.md) (article)\
 [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md) (article)\
 [Configure Microsoft 365 Lighthouse portal security](m365-lighthouse-configure-portal-security.md) (article)\
-[Introduction to granular delegated admin privileges (GDAP)](/partner-center/gdap-introduction) (article)\
+[Introduction to granular delegated admin privileges (GDAP) - Partner Center](/partner-center/gdap-introduction) (article)\
 [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference) (article)\
 [Learn about groups and access rights in Microsoft Entra ID](/azure/active-directory/fundamentals/concept-learn-about-groups) (article)

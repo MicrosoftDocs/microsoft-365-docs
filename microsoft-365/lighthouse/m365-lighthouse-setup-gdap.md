@@ -140,7 +140,7 @@ Once you complete GDAP setup, you can update or change roles, security groups, o
 [Overview of the Delegated access page in Microsoft 365 Lighthouse](m365-lighthouse-delegated-access-overview.md) (article)\
 [Troubleshoot error messages and problems in Microsoft 365 Lighthouse](m365-lighthouse-troubleshoot.md) (article)\
 [Configure Microsoft 365 Lighthouse portal security](m365-lighthouse-configure-portal-security.md) (article)\
-[Introduction to granular delegated admin privileges (GDAP)](/partner-center/gdap-introduction) (article)\
+[Introduction to granular delegated admin privileges (GDAP) - Partner Center](/partner-center/gdap-introduction) (article)\
 [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference) (article)\
 [Learn about groups and access rights in Microsoft Entra ID](/azure/active-directory/fundamentals/concept-learn-about-groups) (article)\
 [What is Microsoft Entra entitlement management?](/azure/active-directory/governance/entitlement-management-overview) (article)

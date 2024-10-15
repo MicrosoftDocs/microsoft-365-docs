@@ -58,7 +58,7 @@ sections:
 
       - question: How do I sign up for Microsoft 365 Lighthouse?
         answer: |
-          To sign up for Lighthouse, you'll need to be enrolled in the Cloud Solution Provider (CSP) program as an Indirect Reseller or Direct Bill partner. For instructions on how to sign up, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md). To learn more about the CSP program, see the [Cloud Solution Provider program overview](/partner-center/csp-overview).
+          To sign up for Lighthouse, you'll need to be enrolled in the Cloud Solution Provider (CSP) program as an Indirect Reseller or Direct Bill partner. For instructions on how to sign up, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md). To learn more about the CSP program, see the [Cloud Solution Provider program overview - Partner Center](/partner-center/csp-overview).
 
       - question: Will Microsoft 365 Lighthouse work if my customer tenants have a mix of subscriptions?
         answer: |
