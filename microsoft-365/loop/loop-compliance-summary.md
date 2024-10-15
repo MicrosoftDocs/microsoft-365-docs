@@ -78,8 +78,7 @@ Where the Loop content was originally created determines its storage location:
 |Information Protection  |**[Sensitivity labeling](/purview/sensitivity-labels-loop)** is available for Loop pages and components.|**[Sensitivity labeling](/purview/sensitivity-labels-loop)** is available for Loop pages and components, and admin configurable for each Loop workspace via PowerShell and rollimg out in the Loop app for end users on each Loop workspace.|
 |Data Loss Prevention  |**[Data Loss Prevention](/purview/dlp-learn-about-dlp)** (DLP) rules are enforced on content with end-user policy tip support.|**[Data Loss Prevention](/purview/dlp-learn-about-dlp)** (DLP) rules are enforced on content with end-user policy tip support.|
 
-<sup>\*</sup>
-You can specify an individual workspace as you specify a SharePoint site, by its URL. To locate this value, sign in to the SharePoint admin center with the [SharePoint Embedded admininstrator role](/sharepoint/dev/embedded/concepts/admin-exp/adminrole) and view the details of individual Loop containers by navigating to **Containers** > **Active containers**.
+<sup>\*</sup> If you need to specify an individual Loop workspace for a retention policy, or any other compliance feature, specify the workspace as you do a SharePoint site, by its URL. To locate the workspace URL, sign in to the SharePoint admin center with the [SharePoint Embedded admininstrator role](/sharepoint/dev/embedded/concepts/admin-exp/adminrole). Then view the details of individual Loop workspaces by navigating to **Containers** > **Active containers**.
 
 ## Summary of governance, data lifecycle, and compliance capabilities **not yet available**
 
