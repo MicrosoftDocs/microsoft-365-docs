@@ -1,4 +1,4 @@
----
+--- 
 title: "Set up the Standard or Targeted release options"
 f1.keywords:
 - CSH
