@@ -79,7 +79,7 @@ Where the Loop content was originally created determines its storage location:
 |Data Loss Prevention  |**[Data Loss Prevention](/purview/dlp-learn-about-dlp)** (DLP) rules are enforced on content with end-user policy tip support.|**[Data Loss Prevention](/purview/dlp-learn-about-dlp)** (DLP) rules are enforced on content with end-user policy tip support.|
 
 <a name="loop-workspace-url"></a>
-<sup>\*</sup> If you need to specify an individual Loop workspace for a retention policy, or any other compliance feature, specify the workspace as you would a SharePoint site, by its URL. To locate this URL, sign in to the SharePoint admin center with the [SharePoint Embedded admininstrator role](/sharepoint/dev/embedded/concepts/admin-exp/adminrole). Then navigate to **Containers** > **Active containers** or **Deleted containers** where you can view the details of a selected Loop workspace. From the flyout pane, **General** tab, copy the container URL.
+<sup>\*</sup> If you need to specify an individual Loop workspace for a retention policy or another compliance feature, specify the workspace as you would a SharePoint site, by its URL. To locate this URL, sign in to the SharePoint admin center with the [SharePoint Embedded admininstrator role](/sharepoint/dev/embedded/concepts/admin-exp/adminrole). Then navigate to **Containers** > **Active containers** or **Deleted containers** where you can view the details of a selected Loop workspace. From the flyout pane, **General** tab, copy the container URL.
 
 ## Summary of governance, data lifecycle, and compliance capabilities **not yet available**
 
