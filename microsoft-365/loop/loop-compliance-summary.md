@@ -72,10 +72,10 @@ Where the Loop content was originally created determines its storage location:
 |Export (Third Party Tools)  |Microsoft **[Graph API](/graph/api/driveitem-get-content-format)** export support.|**Not Yet Available**:  <br>[Programmatic API access to Loop workspace containers](#programmatic-apis-not-yet-available) isn't yet available.|
 |Legal Hold  |**Legal Hold** support to ensure content isn't deleted (as related to litigation and security investigations) and stored in the [Preservation Hold Library](/sharepoint/governance/ediscovery-and-in-place-holds-in-sharepoint-server).|**Legal Hold** support to ensure content isn't deleted (as related to litigation and security investigations) and stored in the [Preservation Hold Library](/sharepoint/governance/ediscovery-and-in-place-holds-in-sharepoint-server).|
 |***Microsoft 365 retention and deletion***|---|---|
-|Retention policies  |**[Retention policies](/purview/create-retention-policies?tabs=other-retention)** are enforced for all Loop files.|**[Retention policies](/purview/create-retention-policies?tabs=other-retention)** configured for all SharePoint sites are enforced for all Loop files or alternatively can be configured per Loop workspace *.|
-|Retention labels  |**[Retention labels](/purview/retention#retention-labels)** are supported for Loop files by [applying published labels](/purview/create-apply-retention-labels?tabs=spo-onedrive) in OneDrive or SharePoint, or [automatically](/purview/apply-retention-labels-automatically) applying them.|**Not Yet Available**:  <br>**[Retention labels](/purview/retention#retention-labels)** are supported, but an end-user configurable experience to view or update the retention label for each page or component isn't yet available.|
+|Retention policies  |**[Retention policies](/purview/create-retention-policies?tabs=other-retention)** are enforced for all .loop files.|**[Retention policies](/purview/create-retention-policies?tabs=other-retention)** configured for all SharePoint sites are enforced for all .loop files or alternatively can be configured per Loop workspace *.|
+|Retention labels  |**[Retention labels](/purview/retention#retention-labels)** are supported for .loop files by [applying published labels](/purview/create-apply-retention-labels?tabs=spo-onedrive) in OneDrive or SharePoint, or [automatically](/purview/apply-retention-labels-automatically) applying them.|**Not Yet Available**:  <br>**[Retention labels](/purview/retention#retention-labels)** are supported, but an end-user configurable experience to view or update the retention label for each page or component isn't yet available.|
 |***Data Classification***|---|---|
-|Information Protection  |**[Sensitivity labeling](/purview/sensitivity-labels-loop)** is available for Loop pages and components.|**[Sensitivity labeling](/purview/sensitivity-labels-loop)** is available for Loop pages and components, and admin configurable for each Loop workspace via PowerShell.  <br><br>**Not Yet Available**:  <br>**[Sensitivity labeling](/purview/sensitivity-labels-loop)** is configurable per Loop workspace by administrators, but not yet configurable in the Loop app by end users on each Loop workspace.|
+|Information Protection  |**[Sensitivity labeling](/purview/sensitivity-labels-loop)** is available for Loop pages and components.|**[Sensitivity labeling](/purview/sensitivity-labels-loop)** is available for Loop pages and components, and admin configurable for each Loop workspace via PowerShell and rollimg out in the Loop app for end users on each Loop workspace.|
 |Data Loss Prevention  |**[Data Loss Prevention](/purview/dlp-learn-about-dlp)** (DLP) rules are enforced on content with end-user policy tip support.|**[Data Loss Prevention](/purview/dlp-learn-about-dlp)** (DLP) rules are enforced on content with end-user policy tip support.|
 
 <sup>\*</sup>
@@ -104,15 +104,11 @@ The following sections detail capabilities that are **not yet available** for Mi
 - All Loop workspaces are created as tenant-owned, in the tenant default geo. Loop doesn't create **user-owned workspace types**, so when an employee leaves the organization, their non-shared Loop workspaces such as Ideas become ownerless, remain in the tenant, and aren't automatically deleted.
 - **Individual controls for guest or external sharing** of a specific Loop workspace isn't available.
 
-### eDiscovery Purview capabilities not yet available
-- Full text search of content within .loop files in Purview review sets.
+### eDiscovery capabilities not yet available
+- Full text search of content within .loop files in review sets.
 
-### Records Management not yet available
-- Retention labels aren't yet available for Loop workspace content.
-
-### Data Classification not yet available
-- While sensitivity labels can be configured on each Loop page or component, sensitivity labels can't be configured at the Loop workspace level. An admin can set the Loop workspace sensitivity label using PowerShell and the workspace sensitivity label is viewable in the SharePoint Embedded admin center.
-
+### Microsoft 365 retention and deletion capabilities not available
+- Retention labels can't be applied to workspaces.
 
 ## Managing Loop in your organization
 
