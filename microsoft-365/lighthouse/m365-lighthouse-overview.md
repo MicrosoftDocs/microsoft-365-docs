@@ -37,7 +37,7 @@ No additional costs are associated with using Lighthouse to manage Microsoft 365
 > [!IMPORTANT] 
 > To use Lighthouse, MSPs and their customer tenants must meet the requirements listed in [Microsoft 365 Lighthouse requirements](m365-lighthouse-requirements.md).
 
-For more information about the CSP program, see the [Cloud Solution Provider program overview](/partner-center/csp-overview).
+For more information about the CSP program, see the [Cloud Solution Provider program overview - Partner Center](/partner-center/csp-overview).
 
 > [!NOTE]  
 > A similar offering, Azure Lighthouse, helps service providers deliver managed services for Azure services by using comprehensive and robust management tooling built into the Azure platform. To learn more, see [What is Azure Lighthouse?](/azure/lighthouse/overview)
