@@ -146,15 +146,15 @@ As an admin, you can control which apps can be installed and used by which users
 
 ### Customize default settings for Teams apps that work on Outlook and the Microsoft 365 app
 
-As an admin, you can control the default state of any new and incoming app in your organization. You can do this individually for Microsoft apps, third party apps, and custom apps.  The default setting for any organization is set to **Allow all users in the organization to install apps**. You can change this default setting on Integrated Apps in the Microsoft 365 admin center.
+As an admin, you can control the default state of any new and incoming app in your organization. You can do this individually for Microsoft apps, third party apps, and custom apps.  The default setting for any organization is set to **Allow all users in the organization to access apps**. You can change this default setting on Integrated Apps in the Microsoft 365 admin center.
 
 1. Sign into the Microsoft 365 admin center as a Global Administrator.
 2. Select **Settings**, then select **Integrated Apps**.
 3. Select the **Available Apps** list.
-4. Next, select the Settings icon to open the **Customize default settings** pane.
+4. Next, select the Settings icon at the top of the apps list to open the **Customize default settings** pane.
 5. For each app type category, set up the toggle to allow or disallow all apps to be installed by users.
     - When you switch the toggle to **Yes**, the apps under that app type will be allowed for users to install.
-    - When you switch the toggle to **No**, the apps under that app type will not be allowed for users to install. This does not impact the admin ability to install the apps. Admins can install the apps even when the toggle is set to **No**.
+    - When you switch the toggle to **No**, the apps under that app type will not be allowed for users to install.  Additionally, apps previously installed by users under that app type will no longer be accessible to the users.  This does not impact the admin's ability to install the apps. When the toggle is switched to **No**, admins can still install the apps and all admin installed apps would still continue to be accessible to the users.
 
 The default tenant state applies to the following apps:
 
