@@ -55,14 +55,14 @@ Choosing to set up multiple billing tenants might be the right approach, dependi
 | **Visibility**              | You only want users on a billing account to have visibility into what's in that billing account, and not what's on a different tenant. For example, you only want users to see cost and invoices, buy products, and track payments for their own tenant. | You want users with shared billing accounts to have the same view of the billing account regardless of the tenant they are in. |
 | **Security**                | You want all users with access to your billing account to follow your tenant's security policies.  | You want the users you invited to share your billing account to follow their own tenant's security policies. |
 
-## What are the types of tenants in a multi-tenant billing relationship?
+## Types of tenants in a multi-tenant billing relationship
 
 There are two types of tenants in a multi-tenant billing scenario:
 
 1. **Primary billing tenant**—The primary billing tenant is the tenant used when the billing account is set up. By default, all subscriptions are created in this tenant and only users from this tenant can get access to the billing account.
 2. **Associated billing tenant**—An associated billing tenant is a tenant that is linked to your primary billing tenant's billing account. You can move Microsoft 365 subscriptions to these tenants. You can also assign billing account roles to users in an associated billing tenant.
 
-## What access settings are available for associated billing tenants?
+## Access settings available for associated billing tenants
 
 When you add an associated billing tenant to your billing account, you can enable one or both of the following access settings.
 
