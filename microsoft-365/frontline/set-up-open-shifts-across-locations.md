@@ -8,7 +8,7 @@ ms.topic: conceptual
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
-description: Learn how to set up cross-location shifts for your frontline in Shifts. With this feature, frontline managers can offer open shifts across multiple locations for frontline workers to request, and workers can see and request open shifts at other locations.
+description: Learn how to set up cross-location open shifts for your frontline in Shifts. With this feature, frontline managers can offer open shifts across multiple locations for frontline workers to request, and workers can see and request open shifts at other locations.
 ms.localizationpriority: medium
 ms.collection: 
   - M365-collaboration
@@ -28,7 +28,7 @@ ms.date: 10/01/2024
 
 ## Overview
 
-With the cross-location shifts feature in Shifts, your frontline managers can offer open shifts across multiple locations (teams) within an area for frontline workers to request. Workers can see and request open shifts that are available at other locations.
+With the cross-location open shifts feature in Shifts, your frontline managers can offer open shifts across multiple locations (teams) within an area for frontline workers to request. Workers can see and request open shifts that are available at other locations.
 
 With this feature, you can:
 
