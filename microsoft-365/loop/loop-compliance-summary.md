@@ -1,5 +1,5 @@
 ---
-ms.date: 06/14/2024
+ms.date: 10/16/2024
 title: "Summary of governance, lifecycle, and compliance capabilities for Loop experiences"
 ms.reviewer: dancost, tonchan
 ms.author: jenz
