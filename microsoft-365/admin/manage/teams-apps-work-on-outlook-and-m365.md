@@ -154,7 +154,7 @@ As an admin, you can control the default state of any new and incoming app in yo
 4. Next, select the Settings icon at the top of the apps list to open the **Customize default settings** pane.
 5. For each app type category, set up the toggle to allow or disallow all apps to be installed by users.
     - When you switch the toggle to **Yes**, the apps under that app type will be allowed for users to install.
-    - When you switch the toggle to **No**, the apps under that app type will not be allowed for users to install.  Additionally, apps previously installed by users under that app type will no longer be accessible to the users.  This does not impact the admin's ability to install the apps. When the toggle is switched to **No**, admins can still install the apps and all admin installed apps would still continue to be accessible to the users.
+    - When you switch the toggle to **No**, the apps under that app type will not be allowed for users to install.  Additionally, apps previously installed by users under that app type will no longer be accessible to the users.  This does not impact an admin's ability to install the apps. When the toggle is switched to **No**, admins can still install the apps, and all admin-installed apps would still continue to be accessible to the users.
 
 The default tenant state applies to the following apps:
 
