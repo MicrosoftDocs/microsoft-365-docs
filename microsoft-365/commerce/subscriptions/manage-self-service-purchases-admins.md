@@ -71,7 +71,8 @@ We use the directory data to provide the user with a license and to send email a
 [!INCLUDE [office-365-operated-by-21vianet-admin-center-link](../../includes/office-365-operated-by-21vianet-admin-center-link.md)]
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-2. On the **Products** tab, select the filter icon, then select **Self-service**.
+1. Select the **Self-service trials** tab. 
+
 3. To view more details about a subscription, select one from the list.
 
 ## View who has licenses for a self-service purchase or trial subscription
