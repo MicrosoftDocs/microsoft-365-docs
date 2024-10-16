@@ -4,8 +4,8 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: katmartin
-ms.date: 06/21/2023
+ms.reviewer: aakash
+ms.date: 10/01/2024
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-lighthouse
@@ -24,39 +24,31 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Reset a user password in Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse lets you change or reset user passwords. You can reset the password for a single user or for multiple risky users across different tenants.
+Microsoft 365 Lighthouse lets you change or reset user passwords. You can reset the password for one or more users or risky users across the same or different tenants.
 
-## Reset a password for a user
+## Reset a password for one or more users
 
-1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Users** > **Account management** > **Search users**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Users** > **Account management**.
 
-2. On the **Search users** tab, enter a user's name in the search box.
+2. On the **Search users** tab, enter all or part of the user's name in the search box and press **Enter**.
 
-3. From the search results list, select the user.
+3. From the search results list, select the checkbox next to one or more users in the list, and then select **Reset password**.
 
-4. In the user details pane, select **Reset password**.
+4. In the **Reset password** pane, select **Autogenerate password** or **Let me create a password**. If you choose to create a password, enter a password in the **Password** box (the password will be the same for all selected users).
 
-5. In the **Reset password** pane, select **Autogenerate a password** or **Let me create a password**.
+6. If you want the users to change their password after first sign-in, select **Require these users to change their password when they first sign in**.
 
-    - If you choose to create a password, enter a password.
+7. Select **Reset password**.
 
-    - If you want the user to change their password after first sign-in, select the checkbox.
-
-6. Select **Reset password**.
-
-## Reset a password for a risky user
+## Reset a password for one or more risky users
 
 1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Users** > **Risky users**.
 
-2. On the **Risky Users** page, select a risky user from the list.
+2. On the **Risky users** page, select the checkbox next to one or more risky users in the list, and then select **Reset password**.
 
-3. Select **Reset password**.
+4. In the **Reset password** pane, select **Autogenerate password** or **Let me create a password**. If you choose to create a password, enter a password in the **Password** box (the password will be the same for all selected users).
 
-4. In the **Reset password** pane, select **Autogenerate a password** or **Let me create a password**.
-
-   - If you choose to create a password, enter a password.
-
-   - If you want the user to change their password after first sign-in, select the checkbox.
+5. If you want the users to change their password after first sign-in, select **Require these users to change their password when they first sign in**.
 
 5. Select **Reset password**.
 

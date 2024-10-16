@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: amcdonnell
-ms.date: 08/19/2024
+ms.date: 09/10/2024
 audience: enabler
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -45,6 +45,10 @@ Use the following steps to start the SharePoint eSignature process. You must be 
 
     Once sent, the status of the request is set to **In progress**.  An email notification is sent to the creator and the recipients. If **Recipients must sign in order** is toggled on, recipients will be able to add their signature in the order specified, otherwise they can add their signature in any order.  
 
+#### Track and manage other provider requests
+
+Managing ongoing eSignature requests for other providers is done on the provider website or through the Approvals app in Microsoft Teams. You'll also be notified by email from the provider throughout the signing process.
+
 ## Cancel a signature request
 
 If you create a signature request and want to cancel it, follow these steps.
@@ -60,6 +64,30 @@ If you create a signature request and want to cancel it, follow these steps.
     ![Screenshot of the Cancel signature request confirmation screen.](../media/content-understanding/esignature-cancel-signature-request-confirmation-dark.png)
 
     Once canceled, the status of the request is set to **Canceled** and recipients receive an email notification telling them that the request was canceled and that no further action is possible on this request.
+
+### Create a signature request using another provider
+
+Use the following steps to start an electronic signature in SharePoint using another provider, such as Adobe Acrobat Sign or DocuSign.
+
+1. From a SharePoint document library, open the document you want to start the eSignature process.
+
+2. In the document viewer, select the eSignature icon, and then select the provider you want to use from the menu.
+
+    ![Screenshot showing how to select a provider on the ribbon.](../media/content-understanding/esignature-select-provider.png)
+
+3. You'll be prompted to sign in to the provider using your sign-in credentials the first time. For subsequent requests, you might not need to sign in again.
+
+4. After successful sign in, you'll be prompted to continue on the provider's website.
+
+5. The document is automatically transferred to the provider service.
+
+6. The provider's website opens in another browser tab.
+
+7. On the new tab, proceed with the request creation process as you normally would.
+   
+9. Once completed, you can close all document tabs.
+    
+10. To cancel or track a request from other providers, you can do this in the Approvals app in Teams or via the provider's website.
 
 <br>
 

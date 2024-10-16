@@ -11,7 +11,6 @@ ms.localizationpriority: medium
 ms.collection: 
 - Tier1
 - scotvorg
-- essentials-manage
 description: "Set employee working hours and availability in Microsoft Bookings."
 ---
 

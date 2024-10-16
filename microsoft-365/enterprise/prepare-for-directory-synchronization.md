@@ -3,7 +3,7 @@ title: "Prepare for directory synchronization to Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/28/2023
+ms.date: 09/25/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise

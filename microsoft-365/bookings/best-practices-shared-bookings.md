@@ -11,7 +11,6 @@ ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
-- essentials-manage
 description: "Understand and implement best practices for using Shared Booking features."
 ---
 

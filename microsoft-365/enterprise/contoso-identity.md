@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: kvice
 manager: scotv
-ms.date: 07/01/2024
+ms.date: 09/06/2024
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -76,7 +76,7 @@ Here's the resulting set of Contoso identity and device Conditional Access polic
 
 ## Next step
 
-Learn how Contoso uses its Microsoft Endpoint Configuration Manager infrastructure to [deploy and keep current Windows 10 Enterprise](contoso-win10.md) across its organization.
+Learn how Contoso uses its Microsoft Endpoint Configuration Manager infrastructure to [deploy and keep current Windows 11 Enterprise](contoso-win10.md) across its organization.
 
 ## See also
 

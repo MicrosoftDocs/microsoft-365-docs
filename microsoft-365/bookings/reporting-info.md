@@ -11,7 +11,6 @@ ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
-- essentials-manage
 description: "Learn how you can see a 4 month view of your Bookings activity"
 ---
 

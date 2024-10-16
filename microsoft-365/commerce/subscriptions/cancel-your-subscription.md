@@ -26,7 +26,7 @@ ms.custom:
 - GAUpdates
 search.appverid: MET150
 description: "Learn how to cancel your trial or paid subscriptions in the Microsoft 365 admin center."
-ms.date: 10/13/2023
+ms.date: 09/10/2024
 ---
 
 # Cancel your subscription in the Microsoft 365 admin center
@@ -120,9 +120,6 @@ You can cancel your subscription in the Microsoft 365 admin center. However, the
 6. Repeat steps 1 through 4 to cancel all active subscriptions.
 
 Your subscription status now shows as **Disabled**, and has reduced functionality until it's deleted. For information about what to expect when you cancel a paid Microsoft 365 for business subscription, see [What happens to my data and access when my Microsoft 365 for business subscription ends?](what-if-my-subscription-expires.md)
-
-> [!NOTE]
-> If you're a partner who's an admin on behalf of (AOBO) a customer, and you've canceled a subscription, it can take up to 90 days for the admin center to reflect the status change.
 
 > [!WARNING]
 > If you explicitly delete a subscription, it skips the **Expired** and **Disabled** states and the SharePoint Online data and content, including OneDrive content, is deleted immediately.

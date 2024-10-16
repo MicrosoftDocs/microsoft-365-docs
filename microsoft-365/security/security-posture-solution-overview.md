@@ -8,7 +8,7 @@ author: siosulli
 manager: deniseb
 audience: Admin
 description: Learn how to strengthen your organization's security posture.
-ms.topic: tutorial
+ms.topic: solution-overview
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 search.appverid:

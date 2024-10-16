@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 07/06/2023
+ms.date: 10/01/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -59,7 +59,7 @@ Check out this video and others on our [YouTube channel](https://go.microsoft.co
 
 ## Steps: Let people reset their own passwords
 
-1. In the Microsoft 365 admin center, in the left navigation pane, select **Settings** > **Org settings**, and then <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**Security & privacy**</a>.
+1. In the Microsoft 365 admin center, in the left navigation pane, select **Settings** > **Org settings**, and then select <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**Security & privacy**</a> tab.
 1. Select **Self-service password reset**, and then choose **Go to the Azure portal to turn on self-service password reset**.
 1. In the left navigation pane, select **Users**, and then **Users - all users**
 1. Select **Password reset**.

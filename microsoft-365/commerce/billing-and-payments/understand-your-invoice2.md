@@ -25,6 +25,7 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
+- GAUpdates
 search.appverid: MET150
 description: "Learn how to interpret the charges on your invoice for your Microsoft business subscription with an MOSA billing account."
 ms.date: 02/21/2024
@@ -43,7 +44,7 @@ The invoice for your Microsoft business subscription provides a summary of the c
 
 ## Before you begin
 
-You must be a Global or Billing admin to do the steps described in this article. For more information, see [About admin roles in the Microsoft 365 admin center](../../admin/add-users/about-admin-roles.md).
+You must be at least a Billing Administrator to do the steps described in this article. For more information, see [About admin roles in the Microsoft 365 admin center](../../admin/add-users/about-admin-roles.md).
 
 ## Watch: Understand your invoice
 
