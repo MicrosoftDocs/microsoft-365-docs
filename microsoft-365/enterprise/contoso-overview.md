@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: kvice
 manager: scotv
-ms.date: 12/19/2023
+ms.date: 09/06/2024
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -76,5 +76,3 @@ Learn about the Contoso Corporation [on-premises IT infrastructure](contoso-infr
 ## See also
 
 [Microsoft 365 for enterprise overview](microsoft-365-overview.md)
-
-[Test lab guides](m365-enterprise-test-lab-guides.md)

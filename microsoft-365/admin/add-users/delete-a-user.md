@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 09/26/2023
+ms.date: 10/01/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -28,15 +28,15 @@ description: "Learn how to delete a Microsoft 365 user account, what to do with 
 
 ## Before you begin
 
-- You need User management permissions for the business or school to delete user accounts.
+- You need to be a [user administrator](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles&preserve-view=true) for the business or school to delete user accounts.
 - You have 30 days to [restore](restore-user.md) the account before the user's data is permanently deleted.
 - If you want to keep the user's OneDrive data, move it to a different location. You can even move the data up to 30 days after deleting the account. See [Get access to and back up a former user's data](get-access-to-and-back-up-a-former-user-s-data.md). You don't need to move their SharePoint files; you'll still have access to them.
 - If you want to keep the user's email, **BEFORE** you delete the account, move the email to a different location. If you've already deleted the account: if it's been less than 30 days you can restore it, then move the email data, then delete the account. See [Get access to and back up a former user's data](remove-former-employee-step-5.md).
 - If you have an Enterprise subscription like Office 365 Enterprise E3, you can preserve the mailbox data of a deleted user account by turning it into an *inactive mailbox*. To learn more, see [Manage inactive mailboxes in Exchange Online](../../compliance/inactive-mailboxes-in-office-365.md).
 
-## Global admin: Stop paying for their license, and choose what to do with their email and OneDrive content
+## Stop paying for their license, and choose what to do with their email and OneDrive content
 
-If you are a global administrator, when you delete a user you can also give another user access to their email, and choose what to do with their OneDrive content.
+If you are a [user administrator, SharePoint administrator and an Exchange online administrator](about-admin-roles.md), when you delete a user you can give another user access to their email and choose what to do with their OneDrive content.
 
 ### Things to consider
 
@@ -66,6 +66,10 @@ Since the guided experience walks through the steps to delete a user, here's how
 ::: moniker-end
 
 2. Select the user that you want to delete, and then select **Delete user**.
+
+3. On the Delete user page, select what you want to do with the user's license and email and OneDrive accounts.
+
+4. Then select **Delete user**.
 
 ## User management admin: Delete one or more users from Microsoft 365
 

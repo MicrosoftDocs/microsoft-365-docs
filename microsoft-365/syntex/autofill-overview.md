@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 05/09/2024
+ms.date: 09/19/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -65,7 +65,7 @@ Currently, autofill columns are not available for the following column data type
 
 - Currently, autofill columns don't support the following library types: FormServerTemplates, SitePages, Style Library, and SiteAssets.
 
-- Documents with sensitivity labels aren't analyzed or included in the results.
+- Encrypted files aren't analyzed or included in the results.
 
 - Document changes are captured only if the file is reprocessed, which must be done manually by the user.
 

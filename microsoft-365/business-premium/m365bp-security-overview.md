@@ -46,7 +46,7 @@ Microsoft 365 Business Premium includes security, compliance, identity, and mana
 3. [Protect against malware and other threats](m365bp-protect-against-malware-cyberthreats.md).
 4. [Secure managed and unmanaged devices](m365bp-managed-unmanaged-devices.md).
 5. [Set up information protection capabilities](m365bp-set-up-compliance.md).
-6. [Secure Microsoft Copilot for Microsoft 365](m365bp-secure-copilot.md)
+6. [Secure Microsoft 365 Copilot](m365bp-secure-copilot.md)
 
 > [!TIP]
 > If you're a Microsoft partner, see [Resources for Microsoft partners working with small and medium-sized businesses](../security/defender-business/mdb-partners.md) and download our security guide and checklist!

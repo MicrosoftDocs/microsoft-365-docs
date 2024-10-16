@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 for Financial Services
 description: Learn about the admin resources available to manage and get the most out of Teams for your frontline financial services workforce.
-ms.topic: conceptual
+ms.topic: solution-overview
 author: lana-chin
 ms.author: v-chinlana
 manager: jtremper
@@ -10,12 +10,12 @@ f1.keywords:
 - NOCSH
 ms.service: microsoft-365-frontline
 ms.collection: 
-  - M365-collaboration
-  - microsoftcloud-financial-services
-  - m365-frontline
-  - highpri
-  - m365solution-financialservices
-  - m365solution-overview
+- M365-collaboration
+- microsoftcloud-financial-services
+- m365-frontline
+- highpri
+- m365solution-financialservices
+- m365solution-overview
 ms.localizationpriority: high
 search.appverid: MET150
 searchScope:

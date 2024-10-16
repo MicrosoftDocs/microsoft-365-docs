@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: taylorau, stutisingh
+ms.reviewer: taylorau, pawan
 ms.date: 07/17/2023
 audience: Admin
 ms.topic: how-to
@@ -40,7 +40,7 @@ Sales Advisor is built for sellers. Customer-facing roles in partner's organizat
 - Report viewer gives access to most reporting data sets but not too sensitive data, such as revenue and customer or employee personal information.
 - A Global admin or an Account admin can assign users these roles, which are assigned either for an entire company or for a specific Microsoft Cloud Partner Program location.
 
-For more information, see [CPP role-based access](/partner-center/insights-roles).
+For more information, see [CPP role-based access - Partner Center](/partner-center/insights-roles).
 
 ## Get access to Sales Advisor
 
@@ -60,11 +60,11 @@ For more information, see [CPP role-based access](/partner-center/insights-roles
 
 ## Next steps
 
-Once you have access to Sales Advisor, you can start reviewing insights on the Opportunities page. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Sales Advisor** > **Opportunities**. To learn more about opportunities, see [Understanding opportunities and data in Sales Advisor](m365-lighthouse-understanding-opportunities-and-data.md).
+Once you have access to Sales Advisor, you can start reviewing insights on the Opportunities page. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Sales Advisor** > **Opportunities**. To learn more about opportunities, see [Understand opportunities and data in Sales Advisor](m365-lighthouse-understanding-opportunities-and-data.md).
 
 ## Related content
 
 [Overview of Sales Advisor](m365-lighthouse-sales-advisor-overview.md) (article)\
-[Understanding opportunities and data in Sales Advisor](m365-lighthouse-understanding-opportunities-and-data.md) (article)\
-[CPP role-based access](/partner-center/insights-roles) (article)\
-[Roles with access to the Insights dashboard](/partner-center/partner-center-insights) (article)
+[Understand opportunities and data in Sales Advisor](m365-lighthouse-understanding-opportunities-and-data.md) (article)\
+[CPP role-based access - Partner Center](/partner-center/insights-roles) (article)\
+[Roles with access to the Insights dashboard - Partner Center](/partner-center/partner-center-insights) (article)

@@ -64,6 +64,8 @@ landingContent:
             url: licenses/buy-licenses.md
           - text: Assign or unassign licenses for users
             url: ../admin/manage/assign-licenses-to-users.md
+          - text: Assign or unassign licenses for groups
+            url: ../admin/manage/manage-group-licenses.md
           - text: Download perpetual software and product license keys
             url: ../admin/setup/download-software-licenses-csp.md
       - linkListType: overview

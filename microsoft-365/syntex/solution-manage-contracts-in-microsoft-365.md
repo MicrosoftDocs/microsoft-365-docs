@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
 audience: admin
-ms.topic: conceptual
+ms.topic: solution-overview
 ms.date: 02/14/2024
 ms.service: microsoft-syntex
 ms.collection:
@@ -59,7 +59,7 @@ This contract management solution guidance includes four components of Microsoft
 
   ![Diagram of the solution showing the workflow to upload documents, extract data, notify stakeholders, and approve or reject the contract.](../media/content-understanding/syntex-solution-manage-contracts-overview.png)
 
-1. Documents are uploaded to a SharePoint document library. A Syntex unstructured document processing model has been applied to the document library. It checks each file to see if any match a "contract" content type it's trained to look for. If it finds a match, it classifies the file as a "contract" and updates the content type for the document.
+1. Documents are uploaded to a SharePoint document library. A Microsoft Syntex unstructured document processing model has been applied to the document library. It checks each file to see if any match a "contract" content type it's trained to look for. If it finds a match, it classifies the file as a "contract" and updates the content type for the document.
 
 2. The model also pulls out specific data from each contract file that stakeholders are interested in seeing, such as the *Client*, *Contractor*, and *Fee amount*.
 
@@ -85,9 +85,9 @@ This solution relies on the following functionality, all available as part of a 
 - Microsoft Teams
 - Power Automate
 
-### Learn how to use Syntex
+### Learn how to use Microsoft Syntex
 
-New to Microsoft Syntex? Learn how to use Syntex to manage content using AI.
+New to Microsoft Syntex? Learn how to use Microsoft Syntex to manage content using AI.
 
 The [Introduction to Microsoft Syntex](/training/modules/syntex-intro) learning path teaches how you can use unstructured, freeform, and unstructured document processing models to classify documents, extract text, and label your documents for quick and easy knowledge management.
 

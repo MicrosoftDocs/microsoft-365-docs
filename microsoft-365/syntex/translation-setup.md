@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 06/12/2024
+ms.date: 09/25/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -41,19 +41,25 @@ After an [Azure subscription is linked to Microsoft Syntex](syntex-azure-billing
 
 By default, document translation is turned on for libraries in all SharePoint sites. Follow these steps to limit which sites users can use document translation.
 
-1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>, and then select **Use content AI with Microsoft Syntex**.
+1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>.
 
-2. On the **Use content AI with Microsoft Syntex** page, select **Manage Microsoft Syntex**.
+2. Under **Files and content**, select **Automate content processes with Syntex**.
 
-3. On the **Microsoft Syntex** panel, select **Document translation**.
+3. On the **Automate content processes with Syntex** page, select **Go to Syntex settings**.
 
-4. On the **Document translation** panel:
+4. On the Syntex page, in the **Document & image services** section, select **Document translation**.
 
-    a. Choose which site or sites this service should be enabled for.
+5. On the **Document translation** panel:
 
-    b. To restrict user access to this service, under **Sites where document translation can be used when it's turned on**, select **Edit**. On the **Where can document translation be used?** panel, change the setting from **All sites** to **Selected sites (up to 100)** or **No sites**. For selected sites, follow the instructions to select the sites or upload a CSV listing of the sites. You can then manage site access permissions for the sites you selected.
+    a. Choose the site or sites on which this service should be enabled.
 
-    c. Select **Save**.
+    b. To restrict user access to this service, under **Where document translation can be used when it's turned on**, select **Edit**. On the **Where can document translation be used?** panel, change the setting from **All sites** to **Selected sites (up to 100)** or **No sites**. For selected sites, follow the instructions to select the sites or upload a CSV listing of the sites. You can then manage site access permissions for the sites you selected.
+
+    c. By default, document translation for OneDrive is turned on. If you want to turn it off, in the **OneDrive** section, select **Edit**. On the **Where can document translation be used?** panel, in the **OneDrive** section, clear the **Available in OneDrive** checkbox.
+
+    ![Screenshot showing the Where can document translation be used? panel, and the Available in OneDrive checkbox selected.](../media/content-understanding/translation-onedrive-selected.png)
+
+    d. Select **Save**.
 
 ## Video transcript translation
 

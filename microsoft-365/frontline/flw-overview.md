@@ -7,16 +7,16 @@ ms.author: v-chinlana
 manager: jtremper
 ms.reviewer: arnavgupta
 audience: admin
-ms.topic: overview
+ms.topic: solution-overview
 ms.service: microsoft-365-frontline
 ms.localizationpriority: high
 ms.collection: 
-  - m365-frontline
-  - highpri
-  - m365solution-overview
-  - m365solution-frontline
-  - essentials-overview
-  - essentials-get-started
+- m365-frontline
+- highpri
+- m365solution-overview
+- m365solution-frontline
+- essentials-overview
+- essentials-get-started
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers

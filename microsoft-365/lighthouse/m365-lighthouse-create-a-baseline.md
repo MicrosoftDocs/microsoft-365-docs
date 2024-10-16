@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: jatingupta
-ms.date: 08/16/2023
+ms.date: 09/27/2024
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-lighthouse
@@ -95,7 +95,7 @@ To clone a deployment task from an existing baseline:
 4. From the list, select **Clone**.
 5. From the **New task** panel, select the baseline that contains the task you want to clone.
 6. Select the deployment task you want to clone.
-7. Select **Import**.
+7. Select **Clone**.
 
 To extract a configuration from a managed tenant:
 
@@ -119,7 +119,7 @@ Lighthouse admins must review the extracted configuration and remove any tenant-
 11. Select **Create**.
 
 > [!NOTE]
-> Deployment tasks can be edited or deleted by accessing the ellipsis menu for the task and can be prioritized by selecting the **Priority** arrows to make a task a higher or lower priority.
+> To edit a deployment task, select the pencil icon in the **Action** column. To delete a deployment task, select the trash can icon in the **Action** column. To make a task higher or lower priority, select an arrow in the **Priority** column.
 
 ## Next steps
 

@@ -10,8 +10,6 @@ ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
-- essentials-overview
-- essentials-get-started
 - essentials-manage
 ms.custom: QuickDraft
 AI_Usage:  

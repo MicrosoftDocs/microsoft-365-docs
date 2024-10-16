@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: emmasheridan, nicholak
+ms.reviewer: mijeffer, nicholak
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-business
@@ -96,7 +96,7 @@ If you bought your subscription through an Enterprise volume licensing agreement
 | Open / Open Value | Subscription start date based on activation of token (not necessarily purchase date) | 30 days | 90 days | Terminal state |
 
 > [!NOTE]
-> Not all VL subscriptions have a 90 day grace period. Some products and services, like PowerBI Premium P plans and some Copilot subscriptions bought through VL only have a 30 day grace period.
+> Not all VL subscriptions have a 90 day grace period. Some products and services, like PowerBI Premium P plans and some Microsoft 365 Copilot subscriptions bought through VL only have a 30 day grace period.
 
 ### Lifecycle status durations for Cloud Service Provider (CSP) customers
 
@@ -147,11 +147,7 @@ If you cancel your subscription within the cancellation policy window, the subsc
 We recommend that you [back up your data](move-users-different-subscription.md) before you cancel your subscription. As an admin, you can still access and back up data for your organization while it’s in the Disabled status. Any customer data that you leave behind might be deleted after 90 days and will be deleted no later than 180 days after cancellation.
 
 > [!IMPORTANT]
-> If you explicitly delete a subscription, it skips the Expired and Disabled statuses and SharePoint Online data and content, including OneDrive, is immediately deleted.
-
-If you're a partner who's an admin on behalf of (AOBO) a customer, and you canceled a subscription, it can take up to 90 days for the admin center to reflect the status change.
-
-To learn how to cancel, see [Cancel your subscription in the Microsoft 365 admin center](cancel-your-subscription.md). If you want your subscription data to be deleted before the typical Disabled status is over, you can [close your account](../close-your-account.md).
+> If you explicitly delete a subscription, it skips the Expired and Disabled statuses and SharePoint Online data and content, including OneDrive, is immediately deleted. To learn how to cancel, see [Cancel your subscription in the Microsoft 365 admin center](cancel-your-subscription.md). If you want your subscription data to be deleted before the typical **Disabled** status is over, you can [close your account](../close-your-account.md).
 
 ## What happens when your trial ends
 
