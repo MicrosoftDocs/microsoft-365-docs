@@ -54,7 +54,7 @@ Advanced deployment guides are accessible from the [Advanced deployment guides &
 > You must be assigned an admin role such as _Global Reader_ to access advanced deployment guides in the Microsoft 365 admin center. Only admins with the _Global Administrator_ role can use the guides to change settings in the tenant.
 
 > [!IMPORTANT]
-> Any selections, task assignments, and progress status saved **before January 10, 2023** within each advanced deployment guide in the admin center were reset due to EU data regulations.
+> Advanced deployment guides aren't available for the GCC High or DoD environments, or for Microsoft 365 operated by 21Vianet.
 
 To reach the **Advanced deployment guides & assistance** page:
 
