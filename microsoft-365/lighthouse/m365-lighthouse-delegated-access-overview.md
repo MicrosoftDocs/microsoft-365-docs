@@ -24,7 +24,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Overview of the Delegated access page in Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse provides delegated relationship insights across all your customer tenants in a single view. You can create and manage Granular Delegated Administrative Privileges (GDAP) relationships from the Delegated access page. Data is available for any customer tenant in Lighthouse, regardless of the customers' licensing, user count, or geographic region. To access these insights, select **Permissions** > **Delegated access** in the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com).
+Microsoft 365 Lighthouse provides delegated relationship insights across all your customer tenants in a single view. You can create and manage granular delegated administrative privileges (GDAP) relationships from the Delegated access page. Data is available for any customer tenant in Lighthouse, regardless of the customers' licensing, user count, or geographic region. To access these insights, select **Permissions** > **Delegated access** in the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com).
 
 :::image type="content" source="../media/m365-lighthouse-delegated-access-overview/m365-lighthouse-delegated-access-page.png" alt-text="Screenshot of Delegated access page." lightbox="../media/m365-lighthouse-delegated-access-overview/m365-lighthouse-delegated-access-page.png":::
 
@@ -86,6 +86,6 @@ The Relationships tab also includes the following options:
 [Set up GDAP in Microsoft 365 Lighthouse](m365-lighthouse-setup-gdap.md) (article)\
 [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md) (article)\
 [Configure Microsoft 365 Lighthouse portal security](m365-lighthouse-configure-portal-security.md) (article)\
-[Introduction to granular delegated admin privileges (GDAP)](/partner-center/gdap-introduction) (article)\
+[Introduction to granular delegated admin privileges (GDAP) - Partner Center](/partner-center/gdap-introduction) (article)\
 [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference) (article)\
 [Learn about groups and access rights in Microsoft Entra ID](/azure/active-directory/fundamentals/concept-learn-about-groups) (article)
