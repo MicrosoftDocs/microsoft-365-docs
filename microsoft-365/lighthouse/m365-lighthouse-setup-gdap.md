@@ -19,12 +19,12 @@ ms.custom:
 - AdminSurgePortfolib
 - M365-Lighthouse                         
 search.appverid: MET150
-description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how to set up granular delegated admin privileges (GDAP) for the customer tenants that you manage."
+description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how to set up granular delegated administrative privileges (GDAP) for the customer tenants that you manage."
 ---
 
 # Set up GDAP in Microsoft 365 Lighthouse
 
-Granular delegated admin privileges (GDAP) are a prerequisite for customer tenants to be fully onboarded to Lighthouse. You can set up all your customers with GDAP through Microsoft 365 Lighthouse. By setting up GDAP for the customer tenants that you manage, you help keep your customers secure while ensuring users in your partner organization have the permissions necessary to do their work.
+Granular delegated administrative privileges (GDAP) are a prerequisite for customer tenants to be fully onboarded to Lighthouse. You can set up all your customers with GDAP through Microsoft 365 Lighthouse. By setting up GDAP for the customer tenants that you manage, you help keep your customers secure while ensuring users in your partner organization have the permissions necessary to do their work.
 
 To walk through how to set up GDAP in your partner organization, complete the [Secure Microsoft 365 Lighthouse interactive guide](https://go.microsoft.com/fwlink/p/?linkid=2281856).
 
@@ -140,7 +140,7 @@ Once you complete GDAP setup, you can update or change roles, security groups, o
 [Overview of the Delegated access page in Microsoft 365 Lighthouse](m365-lighthouse-delegated-access-overview.md) (article)\
 [Troubleshoot error messages and problems in Microsoft 365 Lighthouse](m365-lighthouse-troubleshoot.md) (article)\
 [Configure Microsoft 365 Lighthouse portal security](m365-lighthouse-configure-portal-security.md) (article)\
-[Introduction to granular delegated admin privileges (GDAP)](/partner-center/gdap-introduction) (article)\
+[Introduction to granular delegated admin privileges (GDAP) - Partner Center](/partner-center/gdap-introduction) (article)\
 [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference) (article)\
 [Learn about groups and access rights in Microsoft Entra ID](/azure/active-directory/fundamentals/concept-learn-about-groups) (article)\
 [What is Microsoft Entra entitlement management?](/azure/active-directory/governance/entitlement-management-overview) (article)
