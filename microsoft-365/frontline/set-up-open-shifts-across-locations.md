@@ -8,7 +8,7 @@ ms.topic: conceptual
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
-description: Learn how to set up the cross-location open shifts feature for your frontline in Shifts. With this feature, frontline managers can offer open shifts across multiple locations for frontline workers to request, and workers can see and request open shifts at other locations.
+description: Learn how to set up open shifts across locations for your frontline in Shifts. With this feature, frontline managers can offer open shifts across multiple locations for frontline workers to request, and workers can see and request open shifts at other locations.
 ms.localizationpriority: medium
 ms.collection: 
   - M365-collaboration
@@ -28,7 +28,7 @@ ms.date: 10/01/2024
 
 ## Overview
 
-With the cross-location open shifts feature in Shifts, your frontline managers can offer open shifts across multiple locations (teams) within the regions or areas defined in your operational hierarchy. This allows frontline workers to see and request open shifts available at other specified locations.
+With the open shifts across locations feature in Shifts, your frontline managers can offer open shifts across multiple locations (teams) within the regions or areas defined in your operational hierarchy. This allows frontline workers to see and request open shifts available at other specified locations.
 
 With this feature, you can:
 
@@ -41,7 +41,7 @@ With this feature, you can:
 
 ## Setup
 
-To enable cross-location open shifts for your organization, define a [frontline operational hierarchy](deploy-frontline-operational-hierarchy.md) in the Teams admin center to map your organization's structure of frontline teams and locations to a hierarchy.
+To enable open shifts across locations for your organization, define a [frontline operational hierarchy](deploy-frontline-operational-hierarchy.md) in the Teams admin center to map your organization's structure of frontline teams and locations to a hierarchy.
 
 ## How it works
 
