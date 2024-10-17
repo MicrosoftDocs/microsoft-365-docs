@@ -52,11 +52,11 @@ After you define your hierarchy, frontline managers (team owners or schedule own
 > [!NOTE]
 > Frontline managers can select **Check eligibility** to check whether this feature is set up for their team. If you defined an operational hierarchy and the team is included within the hierarchy, managers don't need to perform this step.
 
-After a frontline manager turns on the capability in Shifts settings, they can choose to enable it for each open shift they create in the schedule group by using the **Open shifts across locations** toggle.
+After a manager turns on the capability in Shifts settings, they can choose to enable it for each open shift they create in the schedule group by using the **Open shifts across locations** toggle.
 
 :::image type="content" source="media/shifts-cross-location-toggle.png" alt-text="Screenshot of the Open shifts across locations toggle for an open shift.":::
 
-Frontline workers who are part of the same schedule group in other locations can see and request the open shifts. The manager at the location where the open shift is available must approve (or decline) the request.
+Frontline workers who are part of the same schedule group in other locations can see and request the open shifts. The manager at the location where the open shift is available can approve (or decline) the request.
 
 To learn more about the user experience, see [Use open shifts across locations in Shifts]().
 
