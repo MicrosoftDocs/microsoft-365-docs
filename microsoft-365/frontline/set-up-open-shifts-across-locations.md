@@ -3,12 +3,12 @@ title: Set up open shifts across locations in Shifts for your frontline
 author: lana-chin
 ms.author: v-chinlana
 manager: jtremper
-ms.reviewer: nvandanapu
+ms.reviewer: harrywong
 ms.topic: conceptual
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
-description: Learn how to set up cross-location open shifts for your frontline in Shifts. With this feature, frontline managers can offer open shifts across multiple locations for frontline workers to request, and workers can see and request open shifts at other locations.
+description: Learn how to set up the cross-location open shifts feature for your frontline in Shifts. With this feature, frontline managers can offer open shifts across multiple locations for frontline workers to request, and workers can see and request open shifts at other locations.
 ms.localizationpriority: medium
 ms.collection: 
   - M365-collaboration
@@ -24,11 +24,11 @@ ms.date: 10/01/2024
 # Set up open shifts across locations in Shifts for your frontline
 
 > [!IMPORTANT]
-> This feature is currently in public preview.
+> This article describes a Microsoft Teams feature that hasn't yet been released. It's been announced, and it's coming soon. To stay on top of upcoming Teams features, check out the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Teams).
 
 ## Overview
 
-With the cross-location open shifts feature in Shifts, your frontline managers can offer open shifts across multiple locations (teams) within an area for frontline workers to request. Workers can see and request open shifts that are available at other locations.
+With the cross-location open shifts feature in Shifts, your frontline managers can offer open shifts across multiple locations (teams) within the regions or areas defined in your operational hierarchy. This allows frontline workers to see and request open shifts available at other specified locations.
 
 With this feature, you can:
 
@@ -37,95 +37,45 @@ With this feature, you can:
 - Enhance customer satisfaction with the ability to schedule anyone within an area to help ensure your locations are fully staffed.
 
 > [!NOTE]
-> Currently, this feature is available if your organization uses Shifts as a standalone app. This feature isn’t yet supported if you integrated Shifts with your workforce management (WFM) system through a [Shifts connector](shifts-connectors.md).
+> This feature isn't yet supported if you integrated Shifts with your workforce management (WFM) system through a [Shifts connector](shifts-connectors.md).
 
-## Prerequisites
+## Setup
 
-To enable this feature, you must complete the following tasks:
+To enable this feature for your organization, you must define a [frontline operational hierarchy](deploy-frontline-operational-hierarchy.md) in the Teams admin center to map your organization's structure of frontline teams and locations to a hierarchy.
 
-- Define a [frontline operational hierarchy](deploy-frontline-operational-hierarchy.md) in the Teams admin center to map your organization's structure of frontline teams and locations to a hierarchy.
-- Assign a code to at least one schedule group in a team that matches the code of the schedule group in other teams. Schedule groups in Shifts are used to group employees based on common characteristics within a team. For example, schedule groups can be departments or job types.
+## How it works
 
-    The code for a particular schedule group in a team must match the code of the corresponding schedule group on other teams within the same level of your hierarchy for open shifts to be available on those other teams.
-
-    In this way, open shifts shared by a frontline manager in one location are available to all workers that belong to the same schedule group in other locations within the same area.
-
-### Create and assign schedule group codes
-
-Use the [schedulingGroup](/graph/api/resources/schedulinggroup?view=graph-rest-beta) Graph API to create and assign schedule group codes. You can create a new schedule group with a code or replace an existing schedule group code.
-
-Keep the following things in mind:
-
-- Assign codes to schedule groups in teams that are within the same level of your hierarchy. This means that the teams must share the same parent node in your hierarchy.
-- The code for a particular schedule group must be the same across all the teams for which you want open shifts to be available.
-- A code can be up to 100 alphanumeric characters long.
-- By default, the schedule group code is the same as the schedule group name unless you change it.
-
-Here's a sample request for a specific team:
-
-```http
-{
-  "displayName": "Pickers",
-  "isActive": true,
-  "code": "Pickers",
-  "userIds": [
-    "c5d0c76b-80c4-481c-be50-923cd8d680a1",
-    "2a4296b3-a28a-44ba-bc66-0274b9b95851"
-  ]
-}
-```
-
-## Example
-
-Here’s an example to help you understand how to assign schedule group codes to enable open shifts across locations.
-
-### Scenario
-
-Contoso has hundreds of stores. Each store is grouped into an area and is managed by a different manager. To simplify this scenario, we focus on three stores in the West area.
-
-In this example:
-
-- Contoso set up an operational hierarchy in the Teams admin center to map their frontline team structure.
-- Bellevue, Redmond, and Seattle are "sister" locations that are on the same level of the hierarchy. They share the parent node, West.  
-- The schedule groups in Shifts at these locations are based on job types: Pickers, Runners, Stockers, Inventory specialists.
-
-:::image type="content" source="media/shifts-cross-location-chart.png" alt-text="A chart showing the structure for the Contoso example scenario." lightbox="media/shifts-cross-location-chart.png":::
-
-Contoso wants to enable open shifts across locations for Pickers in the Bellevue and Redmond stores but not in the Seattle store. The Contoso admin completes the following steps:
-
-1. Use the [List schedulingGroup](/graph/api/schedule-list-schedulinggroups?view=graph-rest-beta) Graph API to get a list of schedule groups in the Bellevue team and the Redmond team.
-1. Use the [Replace schedulingGroup](/graph/api/schedulinggroup-put?view=graph-rest-beta) Graph API to create and assign the same code to the Pickers schedule group in the Bellevue and Redmond teams.
-
-In this scenario, the Pickers schedule group in the Seattle team doesn’t need a matching code because Contoso decided that open shifts at the Seattle location shouldn’t be available to workers at other locations.
-
-## User experience
-
-Here’s an overview of the user experience. To learn more, see [Use open shifts across locations in Shifts]().
-
-Frontline managers can select **Check eligibility** in Shifts settings to check whether this feature is set up for their team. This check verifies requirements are met, including whether schedule groups in their area have matching schedule group codes.  
+After you define your hierarchy, frontline managers (team owners or schedule owners) must turn on the feature for their team's schedule in the **Settings** tab in Shifts.
 
 :::image type="content" source="media/shifts-cross-location-setting.png" alt-text="Screenshot of the Open shifts section in Shifts settings, showing the Check eligibility button and the toggles." lightbox="media/shifts-cross-location-setting.png":::
 
-To enable open shifts they create in the schedule groups on their team to be available to other locations and to allow workers on their team to request open shifts at other locations, frontline managers on *each* team must do the following in Shifts settings:
+> [!NOTE]
+> Frontline managers can select **Check eligibility** to check whether this feature is set up for their team. This check verifies requirements are met. If you defined an operational hierarchy and the team is included within the hierarchy, managers don't need to perform this step.
 
-1. Turn on the **Allow managers to create shifts that aren’t assigned to anyone. Employees will be able to see and request them.** toggle, if it’s not already on.
-1. Turn on the **Open shifts across locations** toggle. (By default, the toggle is off.)
+After a frontline manager turns on the capability in Shifts settings, they can choose to enable it for each open shift they create in the schedule group by using the **Open shifts across locations** toggle.
 
-After a frontline manager turns on the capability in Shifts settings, they can enable it for each open shift they create in the schedule group by using the **Open shifts across locations** toggle.
+Frontline workers who are part of the same schedule group in other locations can see and request the open shifts. The manager at the location where the open shift is available must approve (or decline) the request.
 
-Frontline workers who are part of the same schedule group in other locations can see and request the open shifts. The manager at the location where the open shift is available must approve (or decline) the request. 
+To learn more about the user experience, see [Use open shifts across locations in Shifts]().
 
-### Scenario
+### Example scenario
 
-Using our earlier example, at Contoso:
+Contoso has hundreds of stores. Each store is grouped into an area and is managed by a different manager. To simplify this scenario, we focus on two stores in the West area.
 
-- Babbak is the manager of the Bellevue location.
-- Kayo is the manager of the Redmond location.
-- Isaac is a worker at the Redmond location.
+:::image type="content" source="media/shifts-cross-location-chart.png" alt-text="A chart showing the structure for the Contoso example scenario." lightbox="media/shifts-cross-location-chart.png":::
 
-Babbak and Kayo turn on the feature in Shifts settings. Babbak creates an open shift in the Pickers schedule group and turns on the **Open shifts across location** toggle. Babbak shares the open shift, and workers that belong to the Pickers schedule group at both the Bellevue and Redmond locations can see and request it.
+In this example:
 
-Isaac, who wants to earn extra hours, requests the open shift that’s available at the Bellevue location. Babbak is notified and approves the request.
+- The IT admin at Contoso set up an operational hierarchy in the Teams admin center to map their frontline team structure.
+- Bellevue and Redmond are store locations that are on the same level of the hierarchy. They share the parent node, West. 
+  - Babbak is the manager of the Bellevue location.
+  - Kayo is the manager of the Redmond location
+  - Isaac is a worker at the Redmond location.
+- The schedule groups in Shifts at these locations are based on job types: Pickers, Runners, Stockers, Inventory specialists.
+
+Babbak and Kayo turn on the feature in Shifts settings for their team schedules. Babbak creates an open shift in the Pickers schedule group and turns on the **Open shifts across location** toggle. Babbak shares the open shift, and workers that belong to the Pickers schedule group at both the Bellevue and Redmond locations can see and request it.
+
+Isaac, who wants to earn extra hours, requests the open shift that's available at the Bellevue location. Babbak is notified and approves the request.
 
 ## Related articles
 
