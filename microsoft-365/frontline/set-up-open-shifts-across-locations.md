@@ -50,9 +50,9 @@ After you define your hierarchy, frontline managers (team owners or schedule own
 :::image type="content" source="media/shifts-cross-location-setting.png" alt-text="Screenshot of the Open shifts section in Shifts settings, showing the Open shifts and Open shifts across locations settings and the Check eligibility button." lightbox="media/shifts-cross-location-setting.png":::
 
 > [!NOTE]
-> Frontline managers can select **Check eligibility** to check whether this feature is set up for their team. If you defined an operational hierarchy and the team is included within the hierarchy, managers don't need to perform this step.
+> Managers can select **Check eligibility** to check whether this feature is set up for their team. If you defined an operational hierarchy and the team is included within the hierarchy, managers don't need to perform this step.
 
-After a manager turns on the capability in Shifts settings, they can choose to enable it for each open shift they create in the schedule group by using the **Open shifts across locations** toggle.
+After a manager turns on the capability in Shifts settings, they can choose to enable it for each open shift they create in a schedule group by using the **Open shifts across locations** toggle.
 
 :::image type="content" source="media/shifts-cross-location-toggle.png" alt-text="Screenshot of the Open shifts across locations toggle for an open shift.":::
 
@@ -83,5 +83,6 @@ Isaac, who wants to earn extra hours, requests the open shift that's available a
 
 - [Shifts for your frontline organization](shifts-for-teams-landing-page.md)
 - [Deploy your frontline operational hierarchy](deploy-frontline-operational-hierarchy.md)
+- [Use roles to define your frontline managers and workers in Shifts](shifts-frontline-manager-worker-roles.md)
 - [schedulingGroup](/graph/api/resources/schedulinggroup?view=graph-rest-beta)
 - [Create schedulingGroup](/graph/api/schedule-post-schedulinggroups?view=graph-rest-beta)
