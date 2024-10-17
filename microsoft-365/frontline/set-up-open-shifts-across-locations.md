@@ -41,18 +41,20 @@ With this feature, you can:
 
 ## Setup
 
-To enable this feature for your organization, you must define a [frontline operational hierarchy](deploy-frontline-operational-hierarchy.md) in the Teams admin center to map your organization's structure of frontline teams and locations to a hierarchy.
+To enable cross-location open shifts for your organization, define a [frontline operational hierarchy](deploy-frontline-operational-hierarchy.md) in the Teams admin center to map your organization's structure of frontline teams and locations to a hierarchy.
 
 ## How it works
 
-After you define your hierarchy, frontline managers (team owners or schedule owners) must turn on the feature for their team's schedule in the **Settings** tab in Shifts.
+After you define your hierarchy, frontline managers (team owners or schedule owners) must turn on the feature for their team's schedule on the **Settings** tab in Shifts.
 
-:::image type="content" source="media/shifts-cross-location-setting.png" alt-text="Screenshot of the Open shifts section in Shifts settings, showing the Check eligibility button and the toggles." lightbox="media/shifts-cross-location-setting.png":::
+:::image type="content" source="media/shifts-cross-location-setting.png" alt-text="Screenshot of the Open shifts section in Shifts settings, showing the Open shifts and Open shifts across locations settings and the Check eligibility button." lightbox="media/shifts-cross-location-setting.png":::
 
 > [!NOTE]
-> Frontline managers can select **Check eligibility** to check whether this feature is set up for their team. This check verifies requirements are met. If you defined an operational hierarchy and the team is included within the hierarchy, managers don't need to perform this step.
+> Frontline managers can select **Check eligibility** to check whether this feature is set up for their team. If you defined an operational hierarchy and the team is included within the hierarchy, managers don't need to perform this step.
 
 After a frontline manager turns on the capability in Shifts settings, they can choose to enable it for each open shift they create in the schedule group by using the **Open shifts across locations** toggle.
+
+:::image type="content" source="media/shifts-cross-location-toggle.png" alt-text="Screenshot of the Open shifts across locations toggle for an open shift.":::
 
 Frontline workers who are part of the same schedule group in other locations can see and request the open shifts. The manager at the location where the open shift is available must approve (or decline) the request.
 
