@@ -65,8 +65,6 @@ Many of the guidelines in this article focus on minimizing and optimizing calls 
 
 [Tune SharePoint performance](tune-sharepoint-online-performance.md)
 
-[Tune Office 365 performance](tune-microsoft-365-performance.md)
-
 [SharePoint limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
 
 [Performance in the modern SharePoint experience](/sharepoint/modern-experience-performance)

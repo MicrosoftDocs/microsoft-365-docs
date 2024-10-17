@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: jatingupta
-ms.date: 06/21/2023
+ms.date: 09/27/2024
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-lighthouse
@@ -34,7 +34,7 @@ Tasks can have the following statuses:
 |Compliant|<ul><li>All settings included in the subtask are **Compliant**.</li><li>There are no settings that are **Not compliant**.</li><li>There are no settings that are **Missing** from all existing configurations. A task can be **Compliant** if a setting is **Compliant** in one or more existing configurations without being **Not compliant** in another.</li><li>There may be **Extra** settings detected within existing configurations.</li></ul>|
 |Not compliant|<ul><li>One or more settings included in the subtask are **Not compliant**.</li><li>One or more settings are **Missing** from all existing configurations.</li><li>There may be **Extra** settings detected within existing configurations.</li><p>**Note:** Doesn't apply to subtasks that are **Not licensed**. </p></ul>|
 |Not licensed|The tenant isn't licensed for the services required to deploy the configuration associated with the subtask.|
-|Dismissed|The subtask was dismissed by a Lighthouse user.<p>**Note:** A Lighthouse user can dismiss **Not Licensed** subtasks.</p>|
+|Dismissed|The subtask was dismissed by a Lighthouse user.<p>**Note:** A Lighthouse user can dismiss **Not licensed** subtasks.</p>|
 
 Lighthouse will stop detecting or reporting deployment status for subtasks that have been dismissed.
 

@@ -24,6 +24,7 @@ ms.custom:
 - AdminTemplateSet
 - adminvideo
 - admindeeplinkMAC
+- GAUpdates
 search.appverid: MET150
 description: "Learn how to buy more licenses or reduce the number of licenses for your business subscription in the Microsoft 365 admin center."
 ms.date: 02/22/2024
@@ -37,13 +38,13 @@ As an admin, you can buy or remove licenses for your business subscriptions in t
 
 - [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
 - If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a Billing account owner or contributor, or a Billing profile owner or contributor to do the tasks in this article.
-- If you have a Microsoft Online Subscription Agreement (MOSA) billing account type, you must be a Global or Billing admin to complete the tasks in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+- If you have a Microsoft Online Subscription Agreement (MOSA) billing account type, you must be at least a Billing Administrator to complete the tasks in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 - You can [add users and assign licenses at the same time](../../admin/add-users/add-users.md).
 - If you bought your subscription through a Microsoft representative, contact them directly to increase or reduce your license count.
 - You can't reduce the number of licenses for your subscription if all licenses are currently assigned to users. To reduce the number of licenses, first [unassign one or more licenses from users](../../admin/manage/assign-licenses-to-users.md), then remove the licenses from the subscription.
 
 > [!NOTE]
-> If you're the person who signed up for the subscription, you're automatically a Billing account owner or Global admin.
+> If you're the person who signed up for the subscription, you're automatically a Billing account owner.
 
 ## Buy or remove licenses if you have an MCA billing account type
 

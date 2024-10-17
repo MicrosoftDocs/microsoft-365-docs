@@ -54,7 +54,7 @@ More Syntex services will be added as they become available.
 
 ### Feature limited preview
 
-Pay-as-you-go licensing includes access to additional Syntex features for a limited time as a preview. The feature limited preview ends September 20, 2024. You won't be charged on a pay-as-you-go basis during the preview. These features include:
+Pay-as-you-go licensing includes access to additional Syntex features for a limited time as a preview. The feature limited preview ends December 31, 2024. You won't be charged on a pay-as-you-go basis during the preview. These features include:
 
 - Content query
 - Universal annotations
@@ -84,7 +84,7 @@ Users with active per-user licenses can perform the following tasks:
 - Use the document library rules to move or copy content.
 - Merge and extract PDFs
 
-If you plan to use a custom Power Platform environment for structured or freeform document processing, see [Using a custom Power Platform environment](structured-freeform-setup.md#using-a-custom-power-platform-environment).
+If you plan to use a custom Power Platform environment for structured or freeform document processing, see [Set up a custom Power Platform environment](structured-freeform-setup.md#set-up-a-custom-power-platform-environment).
 
 <!---
 ## AI Builder credits

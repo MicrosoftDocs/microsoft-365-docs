@@ -65,7 +65,7 @@ If you're experiencing an issue that isn't listed in any of these resources, the
 2. In the **Help** pane, select the **Help + support** button. This opens the **How can we help?** pane.
 
     > [!NOTE]
-    > If the **How can we help?** pane doesn't open, you'll need to reach out to someone in your partner tenant who has appropriate permissions and ask them to help.
+    > If the **How can we help?** pane doesn't open, you'll need to reach out to an admin in your partner tenant and ask them to help.
 
 3. In the **How can we help?** pane, enter a description of your issue, and then press **Enter**. We recommend including the full product name *Microsoft 365 Lighthouse* in your description to ensure the search results include relevant help articles.
 

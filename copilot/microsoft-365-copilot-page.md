@@ -1,35 +1,31 @@
 ---
-title: Manage Microsoft Copilot for Microsoft 365 with the Copilot page
+title: Manage Microsoft 365 Copilot settings
 f1.keywords:
 - NOCSH
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 10/31/2023
+ms.date: 09/16/2024
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
 ms.collection: 
-- Tier2
 - scotvorg
-- M365-subscription-management 
-- Adm_O365
-- Adm_TOC
 - m365copilot
 - magic-ai-copilot
-description: "Learn about the Copilot page and how you can manage Copilot for Microsoft 365 settings in the Microsoft 365 admin center."
+description: "Learn about the Copilot page and how you can manage Microsoft 365 Copilot settings in the Microsoft 365 admin center."
 ---
 
-# Manage Microsoft Copilot for Microsoft 365 with the Copilot page
+# Manage Microsoft 365 Copilot settings in the Microsoft 365 admin center
 
-You can manage Copilot for Microsoft 365 through the Microsoft 365 admin center by going to the Settings tab on the Copilot page. Manage how users in your organization interact with Copilot for Microsoft 365, Copilot for Security, and more.
+You can manage Microsoft 365 Copilot through the Microsoft 365 admin center by going to the Settings tab on the Copilot page. Manage how users in your organization interact with Microsoft 365 Copilot, Copilot for Security, and more.
 
 ## Before you begin
 
-- Your organization must have purchased Copilot licenses to access the Settings tab on the Copilot page in the Microsoft 365 admin center. While you don't need a license assigned to your admin account, you must have these licenses present within the organization for the Copilot page to be visible. For more information, see [Get started with Microsoft Copilot for Microsoft 365](microsoft-365-copilot-setup.md).
+- The experience on the Copilot page in the Microsoft 365 admin center depends on whether your organization has a Copilot license. If your organization has a Copilot license, you will see settings specific to managing Copilot features. If your organization does not have a Copilot license, you will see settings for the public version of Microsoft Copilot. For more information, see [Get started with Microsoft 365 Copilot](microsoft-365-copilot-setup.md).
 
-- You must be a Global Administrator to access the Copilot page. For more information, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
+- Any admin role can access the Copilot page, but only certain roles can adjust settings. For more information, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
 
 ## How to get to the Settings tab on the Copilot page
 
@@ -47,49 +43,60 @@ You can manage Copilot for Microsoft 365 through the Microsoft 365 admin center 
 
 You can manage Copilot licenses, including assigning and unassigning licenses, for your users.
 
-### Manage how your organization interacts with Copilot in Bing, Microsoft Edge, and Windows
+### Manage how your organization interacts with Microsoft Copilot
 
-Copilot with commercial data protection provides enhanced security for users accessing the generative AI capabilities of Copilot. This experience is on by default for [users with eligible licenses](/copilot/manage#commercial-data-protection-eligibility) assigned by your organization when they are signed in with their work or school (Entra ID) accounts.
+For users signed in with a Microsoft Entra account, Microsoft Copilot offers [enterprise data protection](/copilot/microsoft-365/enterprise-data-protection) (EDP) in an experience designed for work and education. Users who aren’t signed in, or are signed in with a personal account, can use the public version of Copilot, accessed primarily through [copilot.microsoft.com](https://copilot.microsoft.com/) and [bing.com/chat](https://bing.com/chat).
 
-Copilot in Bing, Edge, and Windows is the public version of Copilot and doesn’t require users to be signed in. You can reroute to the documentation available on the panel to turn off the public experience and still have access to the Copilot with commercial data protection experience.
+To ensure that users in your organization access Copilot with enterprise data protection for work and education, follow these [instructions on managing Copilot](/copilot/manage).
 
-You should use a PowerShell script to control access to Copilot for Microsoft 365 in Bing, Edge, and Windows. Running this script controls access to Copilot for Microsoft 365 in Bing.com, Edge sidebar, Edge mobile app, Copilot in Windows, copilot.microsoft.com, and the Copilot app. It doesn’t change how users access Copilot in other Microsoft 365 productivity apps.  
+### Manage agents that work with Microsoft 365 Copilot
 
-To turn on or turn off Copilot for Microsoft 365 in Bing, Edge, and Windows, follow these steps:
+To learn more about managing agents that work with Microsoft 365 Copilot, including how to control the integration of non-Microsoft apps and first-party apps, see [Manage Copilot agents in Integrated Apps](/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps).
 
-1. Download the [PowerShell script](https://download.microsoft.com/download/8/9/d/89d41212-7ece-414c-b6d3-f4ecb070c613/ConfigureM365Copilot.ps1).
-2. Open an instance of the Windows PowerShell in admin mode.
-3. Run the following command first: ‘Set-ExecutionPolicy unrestricted’.
-4. Run the PowerShell script.
-5. Follow the instructions prompted by the script.
-6. The cmdlet prompts you to sign in with your Entra ID account, which must be a Search Admin or Global Admin account.
-7. Follow these steps:
+### Optional connected experiences for Microsoft 365 Copilot and Microsoft Copilot
 
-    - To get the **current status** of Copilot for Microsoft 365 in Bing, Edge, and Windows in your tenant, run: *'.\ConfigureM365Copilot.ps1'*
-    - To **turn on** Copilot for Microsoft 365 in Bing, Edge, and Windows, run: *'.\ConfigureM365Copilot.ps1 -enable $true'*
-    - To **turn off** Copilot for Microsoft 365 in Bing, Edge, and Windows, run: *'.\ConfigureM365Copilot.ps1 -enable $false'*
-8. If you encounter a problem, try running the script again. If the problem persists, you can contact support.
-
-### Manage plugins that work with Microsoft Copilot for Microsoft 365
-
-Microsoft Copilot for Microsoft 365 is powered by an advanced processing and orchestration engine that seamlessly integrates Microsoft 365 productivity apps, Microsoft Graph, and large language models (LLMs) to turn your words into the most powerful productivity tool. While Copilot is already able to use the apps and data within the Microsoft 365 ecosystem, many users still depend on various external tools and services for work management and collaboration. You can extend Microsoft Copilot for Microsoft 365 by building a plugin or by connecting to an external data source.
-
-This control allows you to control how non-Microsoft apps and first party apps can work with Microsoft Copilot for Microsoft 365.
-
-### Improved responses with web content in Copilot for Microsoft 365
-
-This control allows you to enable or disable Copilot’s ability to access the public web to get the latest information available when responding to prompts. Note that this is a separate control from Copilot with commercial data protection. Learn more about [how to Manage access to web content in Copilot for Microsoft 365 responses](manage-public-web-access.md).
+Copilot can make use of cloud-backed services, called optional connected experiences, to provide additional functionality to Copilot users. For example, Copilot can [reference web content](manage-public-web-access.md) to improve the quality of its responses to user prompts. For Copilot to use these cloud-backed services, optional connected experiences must be on. For more information, see [Microsoft 365 Copilot and privacy controls for connected experiences](microsoft-365-copilot-privacy.md#microsoft-365-copilot-and-privacy-controls-for-connected-experiences).
 
 ### Data, Security, and Compliance
 
-This link navigates you to the Microsoft Purview compliance portal where you can manage sensitivity labels, retention policies, Copilot interactions, audit records for Copilot, search Copilot interactions, and configure how Copilot for Microsoft 365 interacts and references protected documents. Learn more about [how to protect and manage Microsoft Copilot for Microsoft 365 interactions with Microsoft Purview](/purview/ai-microsoft-purview).
+This link navigates you to the Microsoft Purview compliance portal where you can manage sensitivity labels, retention policies, Copilot interactions, audit records for Copilot, search Copilot interactions, and configure how Microsoft 365 Copilot interacts and references protected documents. Learn more about [how to protect and manage Microsoft 365 Copilot interactions with Microsoft Purview](/purview/ai-microsoft-purview).
 
 ### Microsoft Copilot for Security
 
-This link directs you to the Copilot for Security portal to manage settings. Copilot for Security is a separate product and license from Copilot for Microsoft 365. If purchased, you can use this link to navigate to Copilot for Security settings page. To learn more, see [Copilot for Security](/copilot/security/).
+This link directs you to the Copilot for Security portal to manage settings. Copilot for Security is a separate product and license from Microsoft 365 Copilot. If purchased, you can use this link to navigate to Copilot for Security settings page. To learn more, see [Copilot for Security](/copilot/security/).
 
-### Copilot for Microsoft 365 feedback logs
+### Microsoft 365 Copilot feedback logs
 
 When users have an issue and aren't able to send feedback logs to Microsoft, you can submit feedback logs on their behalf. The data will include prompts and generated responses, relevant content samples, and additional log file. Using this feature to send feedback logs will temporarily override any user level feedback policy.
 
-To learn more, see [Provide user feedback for Microsoft Copilot for Microsoft 365](provide-feedback.md).
+To learn more, see [Provide user feedback for Microsoft 365 Copilot](provide-feedback.md).
+
+### Pin Microsoft Copilot to the navigation bar
+
+Pin Copilot to the navigation bar to make it easier for people in your organization to access it in Teams, Outlook, and the Microsoft 365 app on web, desktop, and mobile. Users with a license for Microsoft 365 Copilot will have it pinned by default. Microsoft Copilot used with Microsoft Entra ID is governed by your agreement for Online Services.
+
+To learn more, see [Pin Microsoft Copilot to the navigation bar](pin-copilot.md).
+
+### Copilot self-service purchase
+
+Give users the flexibility to acquire this product without an administrator's help. This can help admins understand and manage the demand.
+
+To learn more, see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](/microsoft-365/commerce/subscriptions/allowselfservicepurchase-powershell).
+
+### Copilot in Teams meetings
+
+Manage how Copilot is used in Teams meetings through the Microsoft Teams admin center. This includes settings related to the meeting transcript. Specifically, admins can decide whether Copilot can be used only during the meeting or both during and after the meeting.
+
+To learn more, see [Manage Microsoft 365 Copilot in Teams meetings and events](/microsoftteams/copilot-teams-transcription).
+
+### Copilot in Viva Engage
+
+Copilot in Viva Engage provides conversation starters and writing assistance to help people create Engage posts. Use a combination of the org-wide setting and custom policies to refine access for the people in your organization.
+
+To learn more, see [Copilot in Viva Engage](/viva/copilot/viva-copilot-overview#copilot-in-viva-engage).
+
+### Copilot in Viva Goals
+
+Copilot in Viva Goals helps people brainstorm new goals, refine and improve existing ones, and summarize key information. Use a combination of the org-wide setting and custom policies to refine access for the people in your organization.
+
+To learn more, see [Copilot in Viva Goals](/viva/copilot/viva-copilot-overview#copilot-in-viva-goals).

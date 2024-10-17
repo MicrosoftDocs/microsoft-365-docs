@@ -42,19 +42,19 @@ If you want to encrypt a message that doesn't meet a pre-defined rule or your ad
 
 ## Admin settings
 
-You can learn all about setting up email encryption at [Email encryption in Microsoft 365](../compliance/email-encryption.md).
+You can learn all about setting up email encryption at [Email encryption in Microsoft 365](/purview/email-encryption).
 
 ### Automatically encrypt email messages
 
 Admins can create mail flow rules to automatically protect email messages that are sent and received from a campaign or business. Set up rules to encrypt any outgoing email messages, and remove encryption from encrypted messages coming from inside your organization or from replies to encrypted messages sent from your organization.
 
-You create mail flow rules to encrypt email messages with Microsoft Purview Message Encryption. Define mail flow rules for triggering message encryption by using the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center (EAC)</a>.
+You create mail flow rules to encrypt email messages with Microsoft Purview Message Encryption. Define mail flow rules for triggering message encryption by using the Exchange admin center (EAC) at <https://admin.exchange.microsoft.com>.
 
-See [Define mail flow rules to encrypt email messages](../compliance/define-mail-flow-rules-to-encrypt-email.md).
+See [Define mail flow rules to encrypt email messages](/purview/define-mail-flow-rules-to-encrypt-email).
 
 ### Brand your encryption messages
 
-You can also apply branding to customize the look and the text in the email messages. For more information, see [Add your organization's brand to your encrypted messages](../compliance/email-encryption.md).
+You can also apply branding to customize the look and the text in the email messages. For more information, see [Add your organization's brand to your encrypted messages](/purview/email-encryption).
 
 ## Next step
 

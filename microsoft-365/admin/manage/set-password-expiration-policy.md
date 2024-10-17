@@ -42,7 +42,7 @@ Current research strongly indicates that mandated password changes do more harm 
 
 ## Before you begin
 
-You must be a [global admin](../add-users/about-admin-roles.md) to perform these steps.
+You must be a [user administrator](../add-users/about-admin-roles.md) to perform these steps.
 
 > [!TIP]
 > If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
@@ -53,7 +53,7 @@ Follow the steps below if you want to set user passwords to expire after a speci
 
 1. In the Microsoft 365 admin center, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**Org Settings** page</a>.
 
-    If you aren't a global admin or security admin, you won't see this page.
+    If you aren't a security admin, you won't see this page.
   
 2. In the **Security and Privacy** tab, on the **Password expiration policy** page, uncheck the box to change the password policy.
 

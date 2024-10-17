@@ -22,9 +22,10 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
+- GAUpdates
 search.appverid: MET150
 description: "Learn how to make changes to your organization's profile, including the organization name, address, phone number, and technical contact."
-ms.date: 01/1/2024
+ms.date: 10/06/2024
 ---
 
 # Change your organization's address and technical contact in the Microsoft 365 admin center
@@ -35,7 +36,9 @@ To change the address associated with your bill or subscription, see [Change you
 
 ## Before you begin
 
-You must be a global admin to do the tasks in this article. For more information, see [About admin roles](../add-users/about-admin-roles.md).
+You must be a Global Administrator to do the tasks in this article. For more information, see [About admin roles](../add-users/about-admin-roles.md).
+
+[!INCLUDE [ga-roles-limitation](../../includes/ga-roles-limitation.md)]
 
 ## Edit your organization's information
 

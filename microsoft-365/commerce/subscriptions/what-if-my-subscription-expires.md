@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: emmasheridan, nicholak
+ms.reviewer: mijeffer, nicholak
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-business
@@ -62,7 +62,7 @@ The subscription only enters the **Expired** status after all the licenses are r
 |--|--------|---------|----------|---------|
 | Customer data | Data is accessible to all | Data is accessible to all | Data is accessible to admins only | Data is deleted and Microsoft Entra ID is removed, if not in use by other services |
 | Users | Users have normal access to Microsoft 365, files, and apps  | Users have normal access to Microsoft 365, files, and apps  | Users can't access apps in Microsoft 365. Apps in Microsoft 365 eventually move into a read-only, reduced functionality mode and display [Unlicensed Product notifications](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) | Users can't access Microsoft 365, files, or apps  |
-| Licenses bought via the Volume Licensing program and assigned across the organization| | Service is immediately unavailable on the subscription end date, or if there's a reduction in license quatity | N/A | N/A |
+| Licenses bought via the Volume Licensing program| | Services available for 90 days from subscription end date<br><br>If seat quantity is reduced, no expired status is available|Service is immediately unavailable| N/A |
 | Admins | Admins have normal access to Microsoft 365, data, and apps | Admins can access the admin center  | Admins can access the admin center, but can't assign licenses to users  | Admins can access the admin center to manage other subscriptions, or to buy new subscriptions |
 | Reactivation | Subscription is already active | Global or billing admins can reactivate the subscription in the admin center | Global or billing admins can reactivate the subscription in the admin center | Subscription can't be reactivated |
 
@@ -95,6 +95,9 @@ If you bought your subscription through an Enterprise volume licensing agreement
 | Enterprise | Default status. Subscription end date aligns with the agreement end date | 90 days from subscription end date | 60 days | Terminal State |
 | Open / Open Value | Subscription start date based on activation of token (not necessarily purchase date) | 30 days | 90 days | Terminal state |
 
+> [!NOTE]
+> Not all VL subscriptions have a 90 day grace period. Some products and services, like PowerBI Premium P plans and some Microsoft 365 Copilot subscriptions bought through VL only have a 30 day grace period.
+
 ### Lifecycle status durations for Cloud Service Provider (CSP) customers
 
 If you bought your subscription through a CSP, see [Subscription lifecycle states - Partner Center](/partner-center/subscription-lifecycle) for descriptions of the lifecycle statuses that apply to those subscriptions.
@@ -123,7 +126,7 @@ This section contains information specifically for customers who bought online s
 > [!NOTE]
 > The Open Volume Licensing program was retired in December 2021.
 
-For all VL subscriptions, the **Expired** status starts immediately after the subscription reaches its end date, or the number of licenses is reduced. Services immediately become unavailable when the **Expired** status starts and lasts for 90 days. The exact end date depends on how you bought your subscription.
+For all VL subscriptions, the **Expired** status starts immediately after the subscription reaches its end date, and lasts for 90 days. Services immediately become unavailable when the **Expired** status ends. The exact end date depends on how you bought your subscription.
 
 - For subscriptions bought through the VL program, the end date depends on the date you placed the order.
 - For Open Value customers, the end date depends on the date you activated your product keys.
@@ -144,11 +147,7 @@ If you cancel your subscription within the cancellation policy window, the subsc
 We recommend that you [back up your data](move-users-different-subscription.md) before you cancel your subscription. As an admin, you can still access and back up data for your organization while it’s in the Disabled status. Any customer data that you leave behind might be deleted after 90 days and will be deleted no later than 180 days after cancellation.
 
 > [!IMPORTANT]
-> If you explicitly delete a subscription, it skips the Expired and Disabled statuses and SharePoint Online data and content, including OneDrive, is immediately deleted.
-
-If you're a partner who's an admin on behalf of (AOBO) a customer, and you canceled a subscription, it can take up to 90 days for the admin center to reflect the status change.
-
-To learn how to cancel, see [Cancel your subscription in the Microsoft 365 admin center](cancel-your-subscription.md). If you want your subscription data to be deleted before the typical Disabled status is over, you can [close your account](../close-your-account.md).
+> If you explicitly delete a subscription, it skips the Expired and Disabled statuses and SharePoint Online data and content, including OneDrive, is immediately deleted. To learn how to cancel, see [Cancel your subscription in the Microsoft 365 admin center](cancel-your-subscription.md). If you want your subscription data to be deleted before the typical **Disabled** status is over, you can [close your account](../close-your-account.md).
 
 ## What happens when your trial ends
 

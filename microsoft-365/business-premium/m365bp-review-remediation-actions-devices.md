@@ -25,7 +25,7 @@ Okay, you've discovered a security breach, but what do you do? It depends on the
 
 Microsoft 365 Business Premium includes remediation actions. Some actions are taken automatically when threats are detected, and other actions can be taken manually by your security team.
 
-Examples of remediation actions include sending a file to quarantine, stopping a process from running, or completely removing a scheduled task. All remediation actions are tracked in the Action center, which is located at [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center).
+Examples of remediation actions include sending a file to quarantine, stopping a process from running, or completely removing a scheduled task. All remediation actions are tracked in the Action center, which is located at <https://security.microsoft.com/action-center>.
 
 :::image type="content" source="../media/defender-business/mdb-actioncenter.png" alt-text="Screenshot of the Action Center in M365.":::
 
@@ -36,7 +36,7 @@ Examples of remediation actions include sending a file to quarantine, stopping a
 
 ## How to use your Action center
 
-1. Go to the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
+1. Go to the Microsoft Defender portal (<https://security.microsoft.com>), and sign in.
 
 2. In the navigation pane, choose **Action center**.
 

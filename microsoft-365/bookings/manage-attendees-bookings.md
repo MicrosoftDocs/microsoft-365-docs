@@ -3,7 +3,7 @@ title: "Manage group attendees in Bookings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 04/26/2022
+ms.date: 05/17/2024
 audience: Admin
 ms.topic: how-to
 ms.service: bookings
@@ -11,8 +11,7 @@ ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
-- essentials-manage
-description: "Follow these instructions to create your About Us page, including business name, address, phone number, website URL, logo, and business hours in Microsoft Bookings."
+description: "Manage your group attendees in Microsoft. Add or remove customers from a booking."
 ---
 
 # Manage group attendees in Bookings
@@ -29,8 +28,6 @@ Make sure that you set the **Maximum number of attendees** to more than 1 on the
 1. In Microsoft 365, select the app launcher, and then select **Bookings**.
 
 2. Choose your calendar, select the group meeting and choose **Edit**.
-
-    :::image type="content" source="../media/group-booking-calendar.png" alt-text="Screenshot: Owner view of group booking calendar":::
 
 3. To add attendees to the group booking, select **Add customer**.
 

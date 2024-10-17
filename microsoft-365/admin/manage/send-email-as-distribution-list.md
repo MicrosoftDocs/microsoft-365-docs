@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 09/14/2023
+ms.date: 10/02/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -57,7 +57,7 @@ Before you perform these steps, make sure you've been added to a Microsoft 365 d
 
 2. Select **New Email**. Click the **From** field and select **Other email address**. If you do not see the From field, navigate to **Options** and select **From** in the Show fields section.
 
-3. Select the **Distribution List** address from the Global Address List.
+3. Select the **Distribution List** address.
 
 4. Send the email.
 

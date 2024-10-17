@@ -51,7 +51,7 @@ Organizational messages’ centralized experience within Microsoft 365 admin cen
 
 - Configure delivery schedules and parameters for messages
 
-- Assign targeting via Entra user groups and advanced targeting options
+- Assign targeting via Microsoft Entra user groups and advanced targeting options
 
 - Manage messages created in Microsoft 365 admin center and other portals
 
@@ -75,7 +75,7 @@ Before working with organizational messages, make sure your team satisfies the f
 
   - [Organizational Messages Approver](/entra/identity/role-based-access-control/permissions-reference#organizational-messages-approver)
 
-- **Message recipients** anyone in your organization who might receive messages from your authors must have access to the Microsoft products to which the messages are configured to be delivered. (End users aren't required to have any Entra roles to receive organizational messages.)
+- **Message recipients** anyone in your organization who might receive messages from your authors must have access to the Microsoft products to which the messages are configured to be delivered. (End users aren't required to have any Microsoft Entra roles to receive organizational messages.)
 
   - For example, any message configured to be delivered to a Windows channel, like Windows Spotlight, requires that recipients use **Windows 11 Enterprise**.
 
@@ -90,7 +90,7 @@ There are three basic experiences to familiarize yourself with within the organi
 
 1. **Manage** – this is where you and your team will be able to see most of your organizational messages created in various portals, including Intune/Microsoft Endpoint Manager. Your team will also be able to execute various functions on each message, view details, and conduct approval flows in the ‘Manage’ area.
 
-2. **Create a message** – this wizard is where anyone with the above-described “Organizational Messages Writer” Entra role can go to create either fully customized or templatized messages.
+2. **Create a message** – this wizard is where anyone with the above-described “Organizational Messages Writer” Microsoft Entra role can go to create either fully customized or templatized messages.
 
 3. **Review activity** – This is where your admins can go to see the performance activity of messages that are or have been delivering to your users.
 
@@ -108,7 +108,7 @@ You can review and control the messages from anyone in their organization using 
 
 ### How to continue creating a draft message (Modify)
 
-If you have the Organizational Messages Writer Entra role as described above, you can edit or otherwise complete a saved ‘draft’ message in your tenant. To do so:
+If you have the Organizational Messages Writer Microsoft Entra role as described above, you can edit or otherwise complete a saved ‘draft’ message in your tenant. To do so:
 
 1. Filter Status to **Draft**.
 
@@ -120,7 +120,7 @@ If you have the Organizational Messages Writer Entra role as described above, yo
 
 ### How to approve or reject a ‘pending approval’ message
 
-If you have the Organizational Messages Approver Entra role as described above, you can review and approve or reject messages from your colleagues that are in the ‘pending approval’ state. To approve or reject a ‘pending approval’ message:
+If you have the Organizational Messages Approver Microsoft Entra role as described above, you can review and approve or reject messages from your colleagues that are in the ‘pending approval’ state. To approve or reject a ‘pending approval’ message:
 
 1. Filter Status to **Pending approval**.
 
@@ -134,7 +134,7 @@ If you have the Organizational Messages Approver Entra role as described above, 
 
 ### How to overcome a rejected message (Withdraw)
 
-If you have the Organizational Messages Writer Entra role as described above, you can overcome a rejection from the approvers in your tenant. To do so:
+If you have the Organizational Messages Writer Microsoft Entra role as described above, you can overcome a rejection from the approvers in your tenant. To do so:
 
 1. Filter status to **Rejected**.
 
@@ -157,7 +157,7 @@ If you have the Organizational Messages Writer Entra role as described above, yo
 > [!IMPORTANT]
 > Organizational messages delivers messages to end users within the time windows configured by admins via Microsoft 365 admin center experiences.  However, occasionally, messages may not be delivered as expected due to system or user device conditions, such as urgent messages not being delivered to devices that are disconnected from the internet.  In such instances, our system will continue trying to deliver messages as possible and appropriate.
 
-Users with the Organizational Messages Writer Entra role described previously will have access to the **Create a message** button and capability in the centralized experience. Selecting this button will invoke the wizard, which includes these primary creation steps:
+Users with the Organizational Messages Writer Microsoft Entra role described previously will have access to the **Create a message** button and capability in the centralized experience. Selecting this button invokes the wizard, which includes these primary creation steps:
 
 - **Objective** for selecting the nature or purpose of your new message.
 
@@ -256,7 +256,7 @@ To make policy changes on your tenant, your Intune admin must:
 1. Enable Organizational Messages Policy
 
 >[!NOTE]
-> This policy is required for devices running [Windows 11](https://support.microsoft.com/topic/november-29-2022-kb5020044-os-build-22621-900-preview-43f0bdf9-0b75-4110-bab3-3bd2433d84b3), [version 22H2](https://support.microsoft.com/topic/november-29-2022-kb5020044-os-build-22621-900-preview-43f0bdf9-0b75-4110-bab3-3bd2433d84b3), [build 10.0.22621.900](https://support.microsoft.com/topic/november-29-2022-kb5020044-os-build-22621-900-preview-43f0bdf9-0b75-4110-bab3-3bd2433d84b3) and later. If you don't enable this policy, these devices can't receive organizational messages. The policy isn't required on devices running earlier builds.
+> This policy is required for devices running [Windows 11](https://support.microsoft.com/topic/november-29-2022-kb5020044-os-build-22621-900-preview-43f0bdf9-0b75-4110-bab3-3bd2433d84b3), [version 22H2](https://support.microsoft.com/topic/november-29-2022-kb5020044-os-build-22621-900-preview-43f0bdf9-0b75-4110-bab3-3bd2433d84b3), [build 10.0.22621.900](https://support.microsoft.com/topic/november-29-2022-kb5020044-os-build-22621-900-preview-43f0bdf9-0b75-4110-bab3-3bd2433d84b3) and later. If you don't enable this policy, these devices can't receive organizational messages.
 
 1. Go to **Settings catalog** > **Experience** > **Enable delivery of organizational messages (User)**.
 1. To enable delivery of organizational messages, switch the toggle to **Enabled**.
@@ -264,7 +264,7 @@ To make policy changes on your tenant, your Intune admin must:
 ### Enable Experiences Policies
 
 >[!NOTE]
-> If you use the Windows 11 MDM security baseline, you will need to change the required policies to **Not configured**. These policies control organizational messages configured by your team as well as other messages coming directly from Microsoft. To continue blocking messages coming directly from Microsoft as defined in the Windows 11 MDM security baseline, [configure the Microsoft messaging policy](/mem/intune/remote-actions/organizational-messages-prerequisites#microsoft-messaging-policy).
+> If you use the Windows 11 MDM security baseline, you will need to change the required policies to **Not configured**. These policies control organizational messages configured by your team as well as other messages coming directly from Microsoft. To continue blocking messages coming directly from Microsoft as defined in the Windows 11 MDM security baseline, configure the Microsoft messages policy found in the Organizational messages settings experience within the admin center.
 
 If using Settings catalog, follow these steps:
 
@@ -276,9 +276,6 @@ If using Settings catalog, follow these steps:
 1. In Settings picker, select **Experience category**.
 1. In configuration settings, ensure the following are selected or set to ‘Allow’:
     - Add Allow Windows Spotlight (User)
-    - Allow Tailored Experiences with Diagnostic Data (User)
-    - Add Third Party Suggestions in Windows Spotlight (User)
-    - Add Windows Consumer Features
     - Add Allow Windows Spotlight on Action Center (User)
     - Add Allow Windows Tips
     - Add Configure Windows Spotlight on Lock Screen (User)
@@ -296,7 +293,6 @@ If using Device Restrictions, follow these steps:
 1. Ensure or Select ‘Not configured’ is set for the following:
     - Windows Spotlight
     - Windows Spotlight on lock screen
-    - Consumer features
     - Windows Tips
     - Windows Spotlight in action center
     - Windows Spotlight personalization
@@ -316,13 +312,11 @@ Once your message has been actively delivering for over 24 hours, you can return
 The Organizational messages centralized experience is the ‘one-stop-shop’ for organizational messages. You should be able to see and manage your other messages from the centralized experience, regardless of where they were created.
 
 > [!NOTE]
-> - Adoption Score organizational messages on Office or Outlook channels are not visible in the centralized experience.
-> - Intune organizational messages can only be read in the centralized experience (such as, cannot be canceled or deleted).
-> - We expect this to change in future releases within the 2024 calendar year.
+> Adoption Score organizational messages on Office or Outlook channels are not visible in the centralized experience.
 
 ### How do admins get the required permissions?
 
- Reach out to a Global admin and ask them to assign you Organizational Messages Writer or Organizational Message Approver Entra role to you following these steps:
+ Reach out to a Global admin and ask them to assign you Organizational Messages Writer or Organizational Message Approver Microsoft Entra role to you following these steps:
 
 1. Global Admin of target testing tenant goes to **Microsoft 365 Admin Center > Active Users**.
 
@@ -368,18 +362,6 @@ You can find more information in the following documents:
 
 - [Experience/AllowSpotlightCollection](/windows/client-management/mdm/policy-csp-experience#experience-allowspotlightcollection)
 
-- [Experience/AllowWindowsConsumerFeatures](/windows/client-management/mdm/policy-csp-experience#experience-allowwindowsconsumerfeatures)
-
-- [Experience/AllowTailoredExperiencesWithDiagnosticData](/en-us/windows/client-management/mdm/policy-csp-experience#experience-allowtailoredexperienceswithdiagnosticdata)
-
-- [Experience/AllowThirdPartySuggestionsInWindowsSpotlight](/windows/client-management/mdm/policy-csp-experience#experience-allowthirdpartysuggestionsinwindowsspotlight)
-
-### Where can I find more information on Organizational Messages experiences?
-
-There are several other public Microsoft documents for our other preview product experiences: 
-
-- [Overview of organizational messages in Microsoft Intune](/mem/intune/remote-actions/organizational-messages-overview)
-
 ### What do the different message states mean?
 
 All messages have a state that indicates their creation or delivery status, including:
@@ -401,3 +383,29 @@ All messages have a state that indicates their creation or delivery status, incl
 8. **Rejected** – message was reviewed, and an Approver admin disallowed it from proceeding to a Scheduled or Active state.
 
 9. **Pending approval** – message is awaiting review by an Approver admin.
+
+### How does localization work in Organizational messages?
+
+**For premade messages**, your message will be delivered to end users who have their related product language set to one of the following:
+
+- en-US
+- de-DE
+- es
+- fr-FR
+- it-IT
+- ja-JP
+- ko-KR
+- nl-NL
+- pl-PL
+- pt-BR
+- pt-PT
+- ru-RU
+- tr-TR
+- zh-Hans
+- zh-Hant
+
+For example, if the Organizational Messages Writer (admin) selects message A to be sent to their end users, then any end users with their product language set to one of the above languages will qualify to receive the message A.
+
+**For customized messages**, your message will only be delivered in the language in which it was created within the Microsoft 365 admin center.  
+
+For example, if the Organizational Messages Writer (admin) has their Microsoft 365 admin center product language set to French when they create their message B from scratch, end users with related product language set to English will not receive the message B. However, end users with French set as their related product language will qualify to receive the message B.

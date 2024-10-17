@@ -8,7 +8,7 @@ manager: deniseb
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business-security
-ms.date: 05/31/2024
+ms.date: 08/29/2024
 ms.localizationpriority: medium
 ms.collection:
 - M365-Campaigns
@@ -33,16 +33,16 @@ Because admin accounts come with elevated privileges, they're valuable targets f
 - [How to protect admin accounts](#protect-admin-accounts).
 - [Additional recommendations](#additional-recommendations) and your [Next step](#next-step).
 
-When you sign up for Microsoft 365 and enter your information, you automatically become the Global Administrator (also referred to as the Global admin). A Global admin has the ultimate control of user accounts and all the other settings in the Microsoft admin center ([https://admin.microsoft.com](https://admin.microsoft.com)), but there are many different kinds of admin accounts with varying degrees of access. See [about admin roles](/office365/admin/add-users/about-admin-roles) for information about the different access levels for each kind of admin role.
+When you sign up for Microsoft 365 and enter your information, you automatically become the Global Administrator (also referred to as the global admin). A Global Administrator has the ultimate control of user accounts and all the other settings in the Microsoft admin center (<https://admin.microsoft.com>), but there are many different kinds of admin accounts with varying degrees of access. See [about admin roles](/office365/admin/add-users/about-admin-roles) for information about the different access levels for each kind of admin role.
 
 ## Create other admin accounts
 
 Use admin accounts only for Microsoft 365 administration. Admins should have a separate user account for their regular use of Microsoft 365 Apps, and only use their administrative account when necessary to manage accounts and devices, and while working on other admin functions. It's also a good idea to remove the Microsoft 365 license from your admin accounts so you don't have to pay for extra licenses.
 
-You'll want to set up at least one other Global admin account to give admin access to another trusted employee. You can also create separate admin accounts for user management (this role is called **User management administrator**). For more information, see [about admin roles](/office365/admin/add-users/about-admin-roles).
+You'll want to set up at least one other Global Administrator account to give administrator access to another trusted employee. You can also create separate admin accounts for user management (this role is called **User management administrator**). For more information, see [about admin roles](/office365/admin/add-users/about-admin-roles).
 
 > [!IMPORTANT]
-> Although we recommend setting up a set of admin accounts, you'll want to limit the number of global admins for your organization. In addition, we recommend adhering to the concept of least-privilege access, which means you grant access to only the data and operations needed to perform their jobs. [Learn more about the principle of least privilege](/azure/active-directory/develop/secure-least-privileged-access).
+> Although we recommend setting up a set of admin accounts, you'll want to limit the number of Global Administrators for your organization. In addition, we recommend adhering to the concept of least-privilege access, which means you grant access to only the data and operations needed to perform their jobs. [Learn more about the principle of least privilege](/azure/active-directory/develop/secure-least-privileged-access).
 
 To create more admin accounts:
 

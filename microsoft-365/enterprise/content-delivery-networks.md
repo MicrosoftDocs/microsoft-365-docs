@@ -3,7 +3,7 @@ title: "Content delivery networks"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/27/2023
+ms.date: 09/24/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -51,7 +51,7 @@ CDNs help to improve cloud service performance in several ways:
 
 ## The Microsoft 365 CDN
 
-The built-in Microsoft 365 Content Delivery Network (CDN) allows Microsoft 365 administrators to provide better performance for their organization's SharePoint pages by caching static assets closer to the browsers requesting them, which helps to speed up downloads and reduce latency. The Microsoft 365 CDN uses the [HTTP/2 protocol](https://en.wikipedia.org/wiki/HTTP/2) for improved compression and download speeds.
+The built-in Microsoft 365 Content Delivery Network (CDN) allows Microsoft 365 administrators to provide better performance for their organization's SharePoint in Microsoft 365 pages by caching static assets closer to the browsers requesting them, which helps to speed up downloads and reduce latency. The Microsoft 365 CDN uses the [HTTP/2 protocol](https://en.wikipedia.org/wiki/HTTP/2) for improved compression and download speeds.
 
 > [!NOTE]
 > The Microsoft 365 CDN is only available to tenants in the **Production** (worldwide) cloud. Tenants in the US Government, China and Germany clouds do not currently support the Microsoft 365 CDN.
@@ -186,7 +186,7 @@ Although it isn't a part of the Microsoft 365 CDN, you can also use the **Azure 
 
 ## Can I use CDNs with SharePoint Server on-premises?
 
-Using CDNs only makes sense in a SharePoint context and should be avoided with SharePoint Server. This is because all of the advantages around geographic location don't hold true if the server is located on-premises or geographically close anyway. Additionally, if there's a network connection to the servers where it's hosted, then the site may be used without an Internet connection and therefore can't retrieve the CDN files. Otherwise, you should use a CDN if there's one available and stable for the library and files you need for your site.
+Using CDNs only makes sense in a SharePoint in Microsoft 365 context and should be avoided with SharePoint Server. This is because all of the advantages around geographic location don't hold true if the server is located on-premises or geographically close anyway. Additionally, if there's a network connection to the servers where it's hosted, then the site may be used without an Internet connection and therefore can't retrieve the CDN files. Otherwise, you should use a CDN if there's one available and stable for the library and files you need for your site.
   
 ## See also
 
@@ -201,5 +201,3 @@ Using CDNs only makes sense in a SharePoint context and should be avoided with S
 [Use the Microsoft 365 content delivery network with SharePoint](use-microsoft-365-cdn-with-spo.md)
 
 [Microsoft Trust Center](https://www.microsoft.com/trustcenter)
-
-[Tune Microsoft 365 performance](tune-microsoft-365-performance.md)

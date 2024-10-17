@@ -19,6 +19,7 @@ ms.custom:
 - commerce_billing
 - AdminTemplateSet
 - admindeeplinkMAC
+- GAUpdates
 search.appverid: MET150 
 description: "Learn how to use the cost management feature in the Microsoft 365 admin center to view, analyze, and manage costs for your organization."
 ms.date: 07/16/2024

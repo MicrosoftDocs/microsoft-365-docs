@@ -1,9 +1,9 @@
 ---
-title: "Define your services in shared bookings"
+title: "Define your services in Shared Bookings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 06/05/2024
+ms.date: 08/08/2024
 audience: Admin
 ms.topic: how-to
 ms.service: bookings
@@ -16,7 +16,7 @@ ms.collection:
 description: "Instructions for entering service offerings information, including service name, description, location, duration, and pricing. You can also tag the employees who are qualified to provide the service."
 ---
 
-# Define your services in shared bookings
+# Define your services in Shared Bookings
 
 When you define your service offerings in Microsoft Bookings, you set a service name, description, location (choose whether you want to meet in person or have an online meeting), duration, default reminders to customers and staff, internal notes about the service, and pricing. You can also tag the employees who are qualified to provide the service. Then, when customers come to your business website to book an appointment, they can see exactly what types of appointments are available, choose the person they want to provide the service, and see how much their service will cost.
 
@@ -73,7 +73,7 @@ The number of services should be limited to 50.
 
    **Maximum attendees per event**: This setting allows you to create services that require the ability for multiple people to book the same appointment time and the same staff (such as a fitness class). The appointment time slot for the selected service, staff, and time will be available to book until the maximum number of attendees, specified by you, has been reached. Current appointment capacity and attendees can be viewed in the Calendar tab in the Bookings Web app. We refer to this as a 1:N booking service.
 
-   :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Example of setting maximum attendees in Bookings":::
+   :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Example of setting maximum attendees in Bookings." lightbox="media/bookings-maximum-attendees.jpg":::
 
    **Language**: Select the default language for the booking from the drop-down list.
 
@@ -84,8 +84,8 @@ The number of services should be limited to 50.
     - **Assign any of your selected staff for an appointment**: When this option is selected, the booking will be scheduled with a single staff member.
     - **Multiple staff**: This feature allows you to create a service with multiple staff members. The booking will be scheduled with all of the assigned staff members of the service. You can refer to this service as N:1 booking service.
 
-    > [!NOTE]
-    > For Multiple staff, you can only create a booking when all assigned staff members are available to attend.
+      > [!NOTE]
+      > For Multiple staff, you can only create a booking when all assigned staff members are available to attend.
 
     - **Allow customers to choose a particular staff for booking**: This setting enables customers to view and choose from among specific staff members for the booking.
     - **Select staff**: You can choose specific staff members for bookings created using this service.
@@ -111,7 +111,7 @@ The number of services should be limited to 50.
   
     Opt-in box on the manual booking and Self-service Page:
 
-    :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="The opt-in box in Bookings.":::
+    :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="The opt-in box in Bookings." lightbox="media/bookings-opt-In-boc.jpg":::
 
     Text message notifications will look like the following (note that SMS notifications are currently only available in North America):
 

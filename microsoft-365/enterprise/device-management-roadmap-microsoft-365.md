@@ -4,7 +4,7 @@ keywords: Microsoft 365, Microsoft 365 for enterprise, Microsoft 365 documentati
 author: kelleyvice-msft 
 ms.author: kvice
 manager: scotv
-ms.date: 08/10/2020
+ms.date: 07/29/2024
 ms.topic: conceptual 
 f1.keywords:
 - NOCSH
@@ -13,7 +13,9 @@ ms.subservice: administration
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.collection: scotvorg
+ms.collection: 
+- scotvorg
+- must-keep
 ms.localizationpriority: medium
 description: The roadmap to set up device management for Microsoft 365.
 ---
@@ -47,7 +49,7 @@ Based on your assessment, get started managing your devices with:
 
 - [Intune](/microsoft-365/solutions/manage-devices-with-intune-overview)
 - [Basic Mobility and Security](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd)
- 
+
 ## Identity and device access recommendations
 
 Microsoft provides a set of recommendations for [identity and device access](../security/office-365-security/zero-trust-identity-device-access-policies-overview.md) to ensure a secure and productive workforce. For device access, use the recommendations and settings in these articles:

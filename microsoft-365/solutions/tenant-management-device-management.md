@@ -3,7 +3,7 @@ title: Step 5. Device and app management for your Microsoft 365 for enterprise t
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/01/2020
+ms.date: 08/15/2024
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,6 +15,7 @@ ms.collection:
 - m365solution-tenantmanagement
 - tenant-management
 - m365solution-scenario
+- must-keep
 ms.custom:
 - Ent_Solutions
 description: "Deploy the correct option for device and app management for your Microsoft 365 tenants."
@@ -76,7 +77,7 @@ In this illustration, the tenant has:
 
 ## Ongoing maintenance for device and app management
 
-On an ongoing basis, you might need to: 
+On an ongoing basis, you might need to:
 
 - Manage device enrollment.
 - Revise your settings and policies for additional apps, devices, and security requirements.

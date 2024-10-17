@@ -3,7 +3,7 @@ title: Step 3. Identity for your Microsoft 365 for enterprise tenants
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/01/2020
+ms.date: 08/15/2024
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,6 +15,7 @@ ms.collection:
 - m365solution-tenantmanagement
 - tenant-management
 - m365solution-scenario
+- must-keep
 ms.custom:
 - Ent_Solutions
 description: "Deploy the correct identity model for your Microsoft 365 tenants and enforce strong user sign-ins."
@@ -27,7 +28,6 @@ Your Microsoft 365 tenant includes a Microsoft Entra tenant to manage identities
 ## Cloud-only vs. hybrid
 
 Here are the two types of identity models and their best fit and benefits.
-
 
 | Model | Description | How Microsoft 365 authenticates user credentials | Best for | Greatest benefit |
 |:-------|:-----|:-----|:-----|:-----|
@@ -69,7 +69,7 @@ See [choosing the right authentication method](/azure/active-directory/hybrid/ch
 To increase the security of user sign-ins, use the features and capabilities in the following table.
 
 | Capability | Description | More information | Licensing requirements |
-|:-------|:-----|:-----|:-----|:-----|
+|:-------|:-----|:-----|:-----|
 | Windows Hello for Business | Replaces passwords with strong two-factor authentication when signing on a Windows device. The two factors are a new type of user credential that is tied to a device and a biometric or PIN. | [Windows Hello for Business Overview](/windows/security/identity-protection/hello-for-business/hello-overview) | Microsoft 365 E3 or E5 |
 | Microsoft Entra Password Protection | Detects and blocks known weak passwords and their variants and can also block additional weak terms that are specific to your organization. | [Configure Microsoft Entra password protection](/azure/active-directory/authentication/concept-password-ban-bad) | Microsoft 365 E3 or E5 |
 | Use multi-factor authentication (MFA) | MFA requires that user sign-ins be subject to another verification beyond the user account password, such as verification with a smartphone app or a text message sent to a smartphone. See [this video](https://support.microsoft.com/office/set-up-multi-factor-authentication-in-microsoft-365-business-a32541df-079c-420d-9395-9d59354f7225) for instructions on how users set up MFA. | [MFA for Microsoft 365 for enterprise](../enterprise/microsoft-365-secure-sign-in.md#mfa) | Microsoft 365 E3 or E5 |

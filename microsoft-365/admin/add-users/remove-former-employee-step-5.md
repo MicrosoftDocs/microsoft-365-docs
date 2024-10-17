@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 08/09/2023
+ms.date: 09/30/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -24,10 +24,6 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - m365solution-removeemployee
-search.appverid:
-- BCS160
-- MET150
-- MOE150
 description: "Follow the steps in this article to access a former employee's OneDrive and Outlook data, back it up, and choose whether to give access to another employee."
 ---
 
@@ -56,7 +52,7 @@ To preserve a former user's OneDrive files, first give yourself access to their 
 
 You can also grant access to another user to access a former employee's OneDrive.
 
-1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a> as a global admin or SharePoint admin.
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a> as a SharePoint admin.
 
     If you get a message that you don't have permission to access the admin center, then you don't have administrator permissions in your organization.
 
@@ -82,7 +78,7 @@ You can also grant access to another user to access a former employee's OneDrive
 
 You can give yourself access to the content in a user's OneDrive, but you may want to remove your access when you no longer need it.
 
-1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a> as a global admin or SharePoint admin.
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a> as a SharePoint admin.
 
     If you get a message that you don't have permission to access the admin center, then you don't have administrator permissions in your organization.
 

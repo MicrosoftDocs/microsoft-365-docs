@@ -8,7 +8,7 @@ manager: scotv
 ms.date: 10/25/2023
 audience: Admin
 ms.topic: article
-ms.service: microsoft-365-business
+ms.service: microsoft-365-basic-mobility-security
 ms.localizationpriority: medium
 ms.collection: 
 - Tier3
@@ -48,7 +48,7 @@ To see what Basic Mobility and Security supports for each type of device, see [C
 
 ## Setup steps for Basic Mobility and Security
 
-A Microsoft 365 global admin must complete the following steps to activate and set up Basic Mobility and Security. For detailed steps, follow the guidance in [Set up Basic Mobility and Security](set-up.md). 
+A [Directory Writers](/entra/identity/role-based-access-control/permissions-reference) admin must complete the following steps to activate and set up Basic Mobility and Security. For detailed steps, follow the guidance in [Set up Basic Mobility and Security](set-up.md).
 
 Here's a summary of the steps:
 

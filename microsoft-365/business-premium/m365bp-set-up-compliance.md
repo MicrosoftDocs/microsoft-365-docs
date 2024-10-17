@@ -38,7 +38,7 @@ Microsoft 365 Business Premium includes Compliance Manager, which can help you g
 
 Here's how to get started:
 
-1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in.
+1. Go to <https://compliance.microsoft.com> and sign in.
 
 2. In the navigation pane, choose **Compliance Manager**.
 
@@ -56,7 +56,7 @@ Here's how to get started:
 
    Follow the information on the screen to set up your DLP policy.
 
-For more information about compliance features in Microsoft 365 for business, see [Microsoft Purview documentation](../compliance/index.yml).
+For more information about compliance features in Microsoft 365 for business, see [Microsoft Purview documentation](/purview/).
 
 ## Use sensitivity labels
 
@@ -71,11 +71,11 @@ However, you can define other labels for your company as well.
 
 Use the following articles to get started with sensitivity labels:
 
-1. [Learn about sensitivity labels](../compliance/sensitivity-labels.md).
+1. [Learn about sensitivity labels](/purview/sensitivity-labels).
 
-2. [Get started with sensitivity labels](../compliance/get-started-with-sensitivity-labels.md).
+2. [Get started with sensitivity labels](/purview/get-started-with-sensitivity-labels).
 
-3. [Create and configure sensitivity labels and their policies](../compliance/create-sensitivity-labels.md).
+3. [Create and configure sensitivity labels and their policies](/purview/create-sensitivity-labels).
 
 4. [Show people in your company how to use sensitivity labels](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
 
@@ -85,9 +85,9 @@ Data loss prevention (DLP) policies are designed to help protect sensitive infor
 
 Use the following articles to get started with DLP:
 
-1. [Learn about data loss prevention](../compliance/dlp-learn-about-dlp.md).
+1. [Learn about data loss prevention](/purview/dlp-learn-about-dlp).
 
-2. [Get started with the default DLP policy](../compliance/get-started-with-the-default-dlp-policy.md).
+2. [Get started with the default DLP policy](/purview/dlp-get-started-with-the-default-policy).
 
 ## Next steps
 

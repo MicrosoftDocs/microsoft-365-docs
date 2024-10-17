@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 09/18/2023
+ms.date: 10/01/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -31,7 +31,7 @@ When a user reaches the idle timeout session you've set, they'll get a notificat
 
 ## Turn on Idle session timeout
 
-You must be a member of the Global admin, Security admin, Application admin, or Cloud Application admin roles to see the idle session timeout setting.  The Global admin role is required for initial activation of Idle Session Timeout.  All other noted roles can deactivate and/or modify timeout duration settings. 
+You must be a member of the Security admin, Application admin, or Cloud Application admin roles to see the idle session timeout setting.  The Global admin role is required for initial activation of Idle Session Timeout.  All other noted roles can deactivate and/or modify timeout duration settings.
 
 1. In the Microsoft 365 admin center, select **Org Settings** **->**  [Security & privacy](https://go.microsoft.com/fwlink/p/?linkid=2072756) tab and select **Idle session timeout**.
 

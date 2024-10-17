@@ -5,7 +5,7 @@ author: CarolynRowe
 manager: pamgreen
 ms.date: 11/16/2020
 ms.audience: ITPro
-ms.topic: article
+ms.topic: solution-overview
 ms.service: msteams
 ms.localizationpriority: medium
 ms.collection:

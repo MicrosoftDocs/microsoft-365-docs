@@ -15,7 +15,7 @@ ms.custom: VSBFY23
 search.appverid:
 - MET150
 description: "Learn how to get phone support for your Microsoft 365 for business subscription. You must be an admin for a business subscription to get support."
-ms.date: 10/27/2023
+ms.date: 07/29/2024
 ---
 
 # Find Microsoft 365 for business support phone numbers by country or region
@@ -3938,7 +3938,7 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-000 800 440 2038\
+000 8000 404 454\
 Local toll-free
 
 **Billing support hours:**\
@@ -4247,7 +4247,7 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-011 2423254\
++94 72 600 0010\
 Local call charges apply.
 
 **Billing support hours:**\

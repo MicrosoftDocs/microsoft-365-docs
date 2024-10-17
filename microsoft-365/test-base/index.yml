@@ -6,12 +6,11 @@ summary: Test Base for Microsoft 365 will transition to end-of-life (EOL) on May
 metadata:
   title: Test Base for Microsoft 365 documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Test Base for Microsoft 365 is an Azure service that facilitates data-driven testing of applications.  # Required; article description that is displayed in search results. < 160 chars.
-  ms.service: service #Required; service per approved list. service slug assigned to your service by ACOM.
-  ms.subservice: subservice # Optional; Remove if no subservice is used.
+  ms.service: test-base #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
   ms.collection: collection # Optional; Remove if no collection is used.
-  author: v-zhifufeng #Required; your GitHub user alias, with correct capitalization.
-  ms.author: v-zhifufeng #Required; microsoft alias of author; optional team alias.
+  author: Tinacyt #Required; your GitHub user alias, with correct capitalization.
+  ms.author: tinachen #Required; microsoft alias of author; optional team alias.
   ms.date: 03/29/2021 #Required; mm/dd/yyyy format.
 
 landingContent:

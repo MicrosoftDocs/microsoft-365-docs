@@ -1,45 +1,41 @@
 ### YamlMime:FAQ
 metadata:
-  title: "Microsoft Copilot for Microsoft 365 Early Access Program FAQ"
+  title: "Microsoft 365 Copilot Early Access Program FAQ"
   f1.keywords:
   - NOCSH
   ms.author: camillepack
   author: camillepack
   manager: scotv
-  ms.date: 06/19/2023
+  ms.date: 08/07/2024
   audience: Admin
   ms.topic: faq
   ms.service: microsoft-365-copilot
   ms.localizationpriority: medium
   monikerRange: 'o365-worldwide'
   ms.collection: 
-  - Tier2
   - scotvorg
-  - M365-subscription-management 
-  - Adm_O365
-  - Adm_TOC
   - m365copilot
   - magic-ai-copilot
-  description: "Frequently asked questions about the Microsoft Copilot for Microsoft 365 Early Access Program."
-title: Microsoft Copilot for Microsoft 365 Early Access Program Frequently Asked Questions
-summary: The Microsoft Copilot for Microsoft 365 Early Access Program is an invitation-only paid preview. If your organization is interested in the early release program, work with your Microsoft account manager to find out more details about nominations for a potential invite. The program includes licenses for Microsoft Copilot for Microsoft 365 within the Microsoft 365 Apps (Word, Outlook, Excel, PowerPoint, Teams, and more). To learn more, see this blog post announcing the [Microsoft Copilot for Microsoft 365 Early Access Program](https://go.microsoft.com/fwlink/p/?linkid=2240881).
+  description: "Frequently asked questions about the Microsoft 365 Copilot5 Early Access Program."
+title: Microsoft 365 Copilot Early Access Program Frequently Asked Questions
+summary: The Microsoft 365 Copilot Early Access Program is an invitation-only paid preview. If your organization is interested in the early release program, work with your Microsoft account manager to find out more details about nominations for a potential invite. The program includes licenses for Microsoft 365 Copilot within the Microsoft 365 Apps (Word, Outlook, Excel, PowerPoint, Teams, and more). To learn more, see this blog post announcing the [Microsoft 365 Copilot Early Access Program](https://go.microsoft.com/fwlink/p/?linkid=2240881).
 
 sections:
   - name: General
     questions:
-      - question: How do I prepare my organization for Microsoft Copilot for Microsoft 365? 
+      - question: How do I prepare my organization for Microsoft 365 Copilot? 
 
-        answer: To learn about prerequisites and licensing requirements, see [Get started with Microsoft Copilot for Microsoft 365](microsoft-365-copilot-setup.md).
+        answer: To learn about prerequisites and licensing requirements, see [Get started with Microsoft 365 Copilot](microsoft-365-copilot-setup.md).
 
       - question: How do I prepare my organization's data governance for Copilot? 
           
-        answer: Microsoft Copilot for Microsoft 365 is integrated into Microsoft 365 and automatically inherits all your company's valuable security, compliance, and privacy policies and processes. Data permissions are consistent and users can only search the information they already have access to. For more information about privacy with Microsoft Copilot for Microsoft 365, see [Data, Privacy, and Security for Microsoft Copilot for Microsoft 365](microsoft-365-copilot-privacy.md). To learn more about how to approach getting your organization ready to use Copilot, [watch this Microsoft Mechanics video](https://www.youtube.com/watch?v=oeX0lsMA69U).  
+        answer: Microsoft 365 Copilot is integrated into Microsoft 365 and automatically inherits all your company's valuable security, compliance, and privacy policies and processes. Data permissions are consistent and users can only search the information they already have access to. For more information about privacy with Microsoft 365 Copilot, see [Data, Privacy, and Security for Microsoft 365 Copilot](microsoft-365-copilot-privacy.md). To learn more about how to approach getting your organization ready to use Copilot, [watch this Microsoft Mechanics video](https://www.youtube.com/watch?v=oeX0lsMA69U).  
 
       - question: What happens after my organization gets invited into the program? 
          
         answer: Work directly with your account manager to confirm acceptance. After you accept the invitation, users with the Global admin role permissions in the organization will receive an email to complete the process in the Microsoft 365 admin center.
 
-      - question: What are the top benefits of the Microsoft Copilot for Microsoft 365 Early Access Program?
+      - question: What are the top benefits of the Microsoft 365 CopilotEarly Access Program?
          
         answer: With the Early Access Program, you can use Copilot prior to the general release of the product and can receive extra engineering support to deploy Copilot and promote adoption. You also have the opportunity to test use cases and provide feedback to influence the development of the product.
       
@@ -54,7 +50,7 @@ sections:
 
       - question: How am I invoiced and how do I pay?
          
-        answer: The Microsoft Copilot for Microsoft 365 Early Access Pass is a one-time invoice and purchase, and there are no other usage fees associated with the program. You'll have 21 days to complete the purchase. If you need to complete an internal PO or approval process, you can view the total price including any applicable taxes based on your billing account, and then come back and complete the purchase within the 21-day period. You'll receive your invoice on the fifth day of the month following your purchase. You can view the invoice in the Microsoft 365 admin center and can pay it by wire transfer. In the Microsoft 365 admin center, go to **Billing** > **Bills & payments**.
+        answer: The Microsoft 365 Copilot Early Access Pass is a one-time invoice and purchase, and there are no other usage fees associated with the program. You'll have 21 days to complete the purchase. If you need to complete an internal PO or approval process, you can view the total price including any applicable taxes based on your billing account, and then come back and complete the purchase within the 21-day period. You'll receive your invoice on the fifth day of the month following your purchase. You can view the invoice in the Microsoft 365 admin center and can pay it by wire transfer. In the Microsoft 365 admin center, go to **Billing** > **Bills & payments**.
 
       - question: Can I cancel my organization's participation in the Early Access Program? If yes, am I eligible for refund? 
          
@@ -71,14 +67,14 @@ sections:
     questions:      
       - question: Where do I go to assign and manage licenses? 
           
-        answer: You can assign licenses to individual users in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. Licensing for Microsoft Copilot for Microsoft 365 is the same as other Microsoft 365 product licenses.
+        answer: You can assign licenses to individual users in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. Licensing for Microsoft 365 Copilot is the same as other Microsoft 365 product licenses.
 
       - question: My organization has multiple tenants. Can I assign licenses across tenants? 
          
         answer: No. During the Early Access Program, Copilot can only be deployed in one tenant and licenses can only be assigned to users in that tenant. 
   - name: Technical requirements
     questions:
-      - question: What are technical requirements for using Microsoft Copilot for Microsoft 365? 
+      - question: What are technical requirements for using Microsoft 365 Copilot? 
          
-        answer:  See [Get started with Microsoft Copilot for Microsoft 365](microsoft-365-copilot-setup.md) for the full list of technical requirements.
+        answer:  See [Get started with Microsoft 365 Copilot](microsoft-365-copilot-setup.md) for the full list of technical requirements.
     

@@ -13,7 +13,7 @@ ms.collection:
 ms.service: viva-topics 
 search.appverid:
     - MET150  
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn how knowledge managers build and manage a knowledge base with Topics.
 ---
 

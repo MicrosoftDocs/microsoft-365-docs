@@ -23,7 +23,7 @@ metadata:
   description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, get answers to frequently asked questions (FAQs) about Microsoft 365 Lighthouse."
 title: Microsoft 365 Lighthouse frequently asked questions (FAQs)
 summary: |
-  Last updated March 15, 2024. This article contains answers to frequently asked questions (FAQs) about Microsoft 365 Lighthouse.
+  Last updated August 27, 2024. This article contains answers to frequently asked questions (FAQs) about Microsoft 365 Lighthouse.
   
   If you can't find an answer to your question, let us know by providing feedback and we'll add it to this article.
   
@@ -58,7 +58,7 @@ sections:
 
       - question: How do I sign up for Microsoft 365 Lighthouse?
         answer: |
-          To sign up for Lighthouse, you'll need to be enrolled in the Cloud Solution Provider (CSP) program as an Indirect Reseller or Direct Bill partner. For instructions on how to sign up, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md). To learn more about the CSP program, see the [Cloud Solution Provider program overview](/partner-center/csp-overview).
+          To sign up for Lighthouse, you'll need to be enrolled in the Cloud Solution Provider (CSP) program as an Indirect Reseller or Direct Bill partner. For instructions on how to sign up, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md). To learn more about the CSP program, see the [Cloud Solution Provider program overview - Partner Center](/partner-center/csp-overview).
 
       - question: Will Microsoft 365 Lighthouse work if my customer tenants have a mix of subscriptions?
         answer: |
@@ -72,7 +72,7 @@ sections:
           
       - question: Why do I see data for some customer tenants but not others?
         answer: |
-          For customer tenant data to show up in Lighthouse, MSPs must establish delegated access to manage the customer tenant. Either granular delegated admin privileges (GDAP) plus an indirect reseller relationship or a delegated admin privileges (DAP) relationship is required to onboard customers to Lighthouse. We recommend establishing GDAP with your customers to allow more secure delegated access. If DAP and GDAP coexist in a customer tenant, GDAP permissions take precedence for MSP technicians in GDAP-enabled security groups. For more information on delegated access, see [Request a reseller relationship with a customer in Partner Center](/partner-center/request-a-relationship-with-a-customer). Tenants also must have at least one Enterprise, Business, Frontline, or Education subscription of Microsoft 365, Office 365, Exchange Online, Windows 365 Business, or Microsoft Defender for Business and no more than 2500 licensed users in their tenant. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) and [Overview of the Tenants page in Microsoft 365 Lighthouse](m365-lighthouse-tenants-page-overview.md).
+          For customer tenant data to show up in Lighthouse, MSPs must establish delegated access to manage the customer tenant. Either granular delegated administrative privileges (GDAP) plus an indirect reseller relationship or a delegated administrative privileges (DAP) relationship is required to onboard customers to Lighthouse. We recommend establishing GDAP with your customers to allow more secure delegated access. If DAP and GDAP coexist in a customer tenant, GDAP permissions take precedence for MSP technicians in GDAP-enabled security groups. For more information on delegated access, see [Request a reseller relationship with a customer in Partner Center](/partner-center/request-a-relationship-with-a-customer). Tenants also must have at least one Enterprise, Business, Frontline, or Education subscription of Microsoft 365, Office 365, Exchange Online, Windows 365 Business, or Microsoft Defender for Business and no more than 2500 licensed users in their tenant. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) and [Overview of the Tenants page in Microsoft 365 Lighthouse](m365-lighthouse-tenants-page-overview.md).
 
           If GDAP is established with the customer, an MSP technician must be in a GDAP-enabled security group that is assigned the appropriate roles to be able to manage that customer's data in Lighthouse. GDAP roles assigned to that security group impact which customer data can be managed within Lighthouse. See [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md) for details on which delegated and partner tenant roles are recommended to use Lighthouse. For instructions on how to view which GDAP roles have been assigned to you for different customer tenants in Lighthouse, see [View your Microsoft Entra roles in Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md).   
          
@@ -91,6 +91,36 @@ sections:
       - question: What permissions do I currently have for this tenant?
         answer: |
           If you can't access tenant information, you may not have the correct permissions for that tenant. Some features and data are only visible to specific roles. To view what roles you have, see [View your Microsoft Entra roles across tenants](m365-lighthouse-view-your-roles.md).
+
+      - question: Can I use Microsoft 365 Lighthouse to manage my partner tenant?
+        answer: |
+          No, you can only use Lighthouse to manage customer tenants that you have a reseller or GDAP relationship with.
+
+  - name: Understanding alerts
+    questions:          
+      - question: Why are there comments that I didn't add on my alerts?
+        answer: |
+          Lighthouse adds comments whenever the system makes a change or updates an alert. Likewise, if a user takes an action on an alert, this is also noted in a comment. These comments provide a running history of all actions taken on the alert.
+          
+      - question: I resolved an alert in the associated service portal. Why am I still seeing the alert in Lighthouse?
+        answer: |
+          Lighthouse alerts are based on the underlying entity (for example, device or user) and do not correlate to alerts in the associated service portal. If you resolve an alert in the associated service portal but don't make a change to the underlying entity, then the Lighthouse alert remains unchanged. If you make a change to the underlying entity, then the Lighthouse alert status changes to **Resolved**.
+ 
+      - question: Why do alerts show up again after they're dismissed or resolved?
+        answer: |
+          If an alert is resolved but the underlying issue reappears, the alert triggers again and the status changes to **New**. For example, if a risky user alert is resolved, but then the same risky user triggers a new alert with new risky behavior, the alert status changes from **Resolved** to **New**. 
+          
+          When an alert is dismissed in Lighthouse, the triggering entity (for example, user or device) won't retrigger the same alert for 30 days. After 30 days, any new activity on that entity changes the alert status from **Dismissed** to **New**. 
+
+      - question: When are alert notification emails sent?
+        answer: |
+          Lighthouse monitors all corresponding service portals across MSPs and their customers. The exact time an alert appears and a notification email is sent varies and is based on the alert rule engine, but MSPs should typically see a new alert appear on the **Alerts** page in Lighthouse and receive an email notification within minutes of the triggering event. 
+          
+      - question: What do the timestamps indicate on Lighthouse alerts?
+        answer: |
+          The time stamp in the **First detected** column indicates the first time the issue was detected by Lighthouse. This time stamp may be slightly different than the time stamp for the alert in the associated service portal. 
+          
+          The time stamp in the **Last updated** column indicates the time that the issue was last detected by Lighthouse.  
 
   - name: Deploying baselines
     questions:          

@@ -18,9 +18,10 @@ ms.collection:
 ms.custom:
 - commerce_billing
 - admindeeplinkMAC
+- GAUpdates
 search.appverid: MET150
 description: "Learn how to use multi-tenant billing relationships to share billing accounts across tenants in the Microsoft 365 admin center."
-ms.date: 10/25/2023
+ms.date: 09/12/2024
 ---
 
 # Manage billing across multiple tenants in the Microsoft 365 admin center
@@ -34,7 +35,9 @@ If you’re an enterprise customer and you have more than one tenant, you can si
 
 - [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
 - You must have a Microsoft Customer Agreement (MCA) billing account type, and you must be a Billing account owner to do the tasks in this article. For information about billing account roles, see [Understand your Microsoft business billing account](../manage-billing-accounts.md).
-- You  must be a Global admin to do the steps described in [Accept or decline an invitation for Provisioning access to your associated billing tenant](#accept-or-decline-an-invitation-for-provisioning-access-to-your-associated-billing-tenant).
+- You  must be a Global Administrator to do the steps described in [Accept or decline an invitation for Provisioning access to your associated billing tenant](#accept-or-decline-an-invitation-for-provisioning-access-to-your-associated-billing-tenant).
+
+[!INCLUDE [ga-roles-limitation](../../includes/ga-roles-limitation.md)]
 
 > [!NOTE]
 > If you're the person who signed up for the subscription, you're automatically a Billing account owner.
@@ -52,14 +55,14 @@ Choosing to set up multiple billing tenants might be the right approach, dependi
 | **Visibility**              | You only want users on a billing account to have visibility into what's in that billing account, and not what's on a different tenant. For example, you only want users to see cost and invoices, buy products, and track payments for their own tenant. | You want users with shared billing accounts to have the same view of the billing account regardless of the tenant they are in. |
 | **Security**                | You want all users with access to your billing account to follow your tenant's security policies.  | You want the users you invited to share your billing account to follow their own tenant's security policies. |
 
-## What are the types of tenants in a multi-tenant billing relationship?
+## Types of tenants in a multi-tenant billing relationship
 
 There are two types of tenants in a multi-tenant billing scenario:
 
 1. **Primary billing tenant**—The primary billing tenant is the tenant used when the billing account is set up. By default, all subscriptions are created in this tenant and only users from this tenant can get access to the billing account.
 2. **Associated billing tenant**—An associated billing tenant is a tenant that is linked to your primary billing tenant's billing account. You can move Microsoft 365 subscriptions to these tenants. You can also assign billing account roles to users in an associated billing tenant.
 
-## What access settings are available for associated billing tenants?
+## Access settings available for associated billing tenants
 
 When you add an associated billing tenant to your billing account, you can enable one or both of the following access settings.
 
@@ -73,12 +76,12 @@ Before you begin, make sure that you have either the tenant ID, or the primary d
 1. In the Microsoft 365 admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing accounts</a> page.
 2. Select the name of the billing account that you want to use as the primary billing tenant.
 3. On the billing account details page, select the **Associated billing tenants** tab, then select **Add an associated billing tenant**.
-4. In the **Add an** **associated billing tenant** pane, enter the tenant ID or domain name, then enter a friendly name for the tenant.
+4. In the **Add an associated billing tenant** panel, enter the tenant ID or domain name, then enter a friendly name for the tenant. The tenant ID must be in lower case.
 5. In the **Access settings** section, select one or both options for **Provisioning** and **Billing management**.
-6. Read and select the box next to the user visibility statement.
+6. Read the user visibility statement, then select the check box next to it.
 7. Select **Add tenant**.
 
-If the **Provisioning** access setting is turned on, a unique link is created for you to send to the global admin on the associated billing tenant. They must accept the request before you can move subscriptions to their tenant.
+If the **Provisioning** access setting is turned on, a unique link is created for you to send to the Global Administrator on the associated billing tenant. They must accept the request before you can move subscriptions to their tenant.
 
 ## Assign roles to users from the associated billing tenant (optional)
 
@@ -95,7 +98,7 @@ The user receives an email with a link to review the role assignment request. Af
 
 ## Move subscriptions to an associated billing tenant (optional)
 
-The Global administrator of the associated billing tenant must [accept the provisioning request](#accept-or-decline-an-invitation-for-provisioning-access-to-your-associated-billing-tenant) from the primary billing tenant before you can move subscriptions to their associated billing tenant.
+The Global Administrator of the associated billing tenant must [accept the provisioning request](#accept-or-decline-an-invitation-for-provisioning-access-to-your-associated-billing-tenant) from the primary billing tenant before you can move subscriptions to their associated billing tenant.
 
 > [!IMPORTANT]
 > You can only move a subscription to an associated billing tenant if all licenses in the subscription are available. If any licenses are assigned, you can't move the subscription.
@@ -119,7 +122,7 @@ Removing an associated billing tenant is a permanent action and can't be undone.
 
 ## Accept or decline an invitation for Provisioning access to your associated billing tenant
 
-As a Global administrator of an associated billing tenant, you can accept or decline a request from the billing account owner to create subscriptions in your tenant. When a billing account owner adds your tenant as an associated billing tenant and enables the **Provisioning** access setting, you receive a link from the billing account owner to accept or decline the invitation.
+As a Global Administrator of an associated billing tenant, you can accept or decline a request from the billing account owner to create subscriptions in your tenant. When a billing account owner adds your tenant as an associated billing tenant and enables the **Provisioning** access setting, you receive a link from the billing account owner to accept or decline the invitation.
 
 1. Select the link shared by the billing account owner.
 2. On the **Invitation to be an associated billing tenant** page, select **Accept** or **Decline**.

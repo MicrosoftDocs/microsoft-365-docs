@@ -25,6 +25,7 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
+- GAUpdates
 search.appverid: MET150
 description: "Learn how to interpret the charges on your invoice for your Microsoft business subscription with an MOSA billing account."
 ms.date: 02/21/2024
@@ -43,7 +44,7 @@ The invoice for your Microsoft business subscription provides a summary of the c
 
 ## Before you begin
 
-You must be a Global or Billing admin to do the steps described in this article. For more information, see [About admin roles in the Microsoft 365 admin center](../../admin/add-users/about-admin-roles.md).
+You must be at least a Billing Administrator to do the steps described in this article. For more information, see [About admin roles in the Microsoft 365 admin center](../../admin/add-users/about-admin-roles.md).
 
 ## Watch: Understand your invoice
 
@@ -171,24 +172,12 @@ If you pay by invoice, you can add or change the purchase order (PO) number for 
 > [!NOTE]
 > You can't add a PO number to an existing invoice. The PO number will appear on all future invoices.
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank>Microsoft 365 admin center</a>.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
     - If you’re using the **Simplified view**, select **Billing**.
     - If you’re using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. Select the subscription that you want to change.
 3. On the subscription details page, in the **Subscription and payment settings** section, under **Payment method**, select **Edit invoice**.
 4. At the bottom of the **Edit details for paying by invoice** pane, enter your PO number, then select **Save**.
-
-## Run the Unknown Charge Diagnostic
-
-If you're a Microsoft 365 global admin, you can use a diagnostic tool that runs within the Microsoft 365 admin center to research unexpected charges from Microsoft that appear on your credit or debit card statement.
-
-> [!NOTE]
-> The Unknown Charge Diagnostic is only available for customers who bought their products and services from Microsoft.com, including Microsoft 365 Enterprise, Education, and Non-profit.
-
-Select the following **Run Tests: Unknown Charge** link to open the diagnostic tool in the Microsoft 365 admin center.
-
->[!div class="nextstepaction"]
->[Run Tests: Unknown Charge](https://aka.ms/PillarUnknownCharge)
 
 ## Related content
 

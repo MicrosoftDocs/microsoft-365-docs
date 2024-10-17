@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: kvice
 manager: scotv
-ms.date: 10/02/2019
+ms.date: 09/06/2024
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -15,6 +15,7 @@ ms.collection:
 - scotvorg
 - M365-security-compliance
 - Strat_O365_Enterprise
+- must-keep
 ms.custom:
 
 description: How Contoso uses the security features of Microsoft 365 for enterprise.
@@ -50,7 +51,7 @@ Contoso followed these steps to prepare their security for their deployment of M
 
 To follow security best practices and Microsoft 365 for enterprise deployment requirements, Contoso security administrators and its IT department deployed many security features and capabilities, as described in the following sections.
 
-## Identity and access management 
+## Identity and access management
 
 - Dedicated global administrator accounts with MFA and PIM
 
@@ -66,8 +67,8 @@ To follow security best practices and Microsoft 365 for enterprise deployment re
 
   MFA adds an additional layer of protection to the sign-in process. It requires users to acknowledge a phone call, text message, or app notification on their smart phone after correctly entering their password. With MFA, Microsoft Entra user accounts are protected against unauthorized sign-in, even if an account password is compromised.
 
-   - To protect against compromise of the Microsoft 365 subscription, Contoso requires MFA on all **Microsoft Entra DC admin**, or **Global admin** accounts.
-   - To protect against phishing attacks, in which an attacker compromises the credentials of a trusted person in the organization and sends malicious emails, Contoso enabled MFA on all user accounts, including managers and executives.
+  - To protect against compromise of the Microsoft 365 subscription, Contoso requires MFA on all **Microsoft Entra DC admin**, or **Global admin** accounts.
+  - To protect against phishing attacks, in which an attacker compromises the credentials of a trusted person in the organization and sends malicious emails, Contoso enabled MFA on all user accounts, including managers and executives.
 
 - Safer device and application access with Conditional Access policies
 
@@ -75,7 +76,7 @@ To follow security best practices and Microsoft 365 for enterprise deployment re
 
 - Windows Hello for Business
 
-  Contoso deployed [Windows Hello for Business](/windows/security/identity-protection/hello-for-business/hello-identity-verification) to eventually eliminate the need for passwords through strong two-factor authentication on PCs and mobile devices running Windows 10 Enterprise.
+  Contoso deployed [Windows Hello for Business](/windows/security/identity-protection/hello-for-business/hello-identity-verification) to eventually eliminate the need for passwords through strong two-factor authentication on PCs and mobile devices running Windows 11 Enterprise.
 
 - Windows Defender Credential Guard
 
@@ -85,7 +86,7 @@ To follow security best practices and Microsoft 365 for enterprise deployment re
 
 - Protection from malware with Microsoft Defender Antivirus
 
-  Contoso is using [Microsoft Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) for malware protection and anti-malware management for PCs and devices running Windows 10 Enterprise.
+  Contoso is using [Microsoft Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) for malware protection and anti-malware management for PCs and devices running Windows 11 Enterprise.
 
 - Secure email flow and mailbox audit logging with Microsoft Defender for Office 365
 
@@ -121,7 +122,7 @@ To follow security best practices and Microsoft 365 for enterprise deployment re
 
 - Device management with Microsoft Intune
 
-  Contoso uses [Microsoft Intune](/intune/introduction-intune) to enroll, manage, and configure access to mobile devices and the apps that run on them. Device-based Conditional Access policies also require approved apps and compliant PCs and mobile devices.
+  Contoso uses [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) to enroll, manage, and configure access to mobile devices and the apps that run on them. Device-based Conditional Access policies also require approved apps and compliant PCs and mobile devices.
 
 ## Security management
 
@@ -131,4 +132,4 @@ To follow security best practices and Microsoft 365 for enterprise deployment re
 
 - Central security dashboard for users with Windows Defender Security Center
 
-  Contoso deployed the [Windows Security app](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) to its PCs and devices running Windows 10 Enterprise so that users can see their security posture at a glance and take action.
+  Contoso deployed the [Windows Security app](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) to its PCs and devices running Windows 11 Enterprise so that users can see their security posture at a glance and take action.

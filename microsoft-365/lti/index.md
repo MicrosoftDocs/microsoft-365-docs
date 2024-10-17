@@ -25,6 +25,7 @@ We've worked with our LMS partners to create a suite of tools using the [Learnin
 These tools include:
 
 - [OneDrive LTI](#onedrive-lti-apps)
+- [Teams Assignments LTI](#teams-assignments-lti)
 - [Teams Meetings LTI](#teams-meetings-lti)
 - [Teams Classes LTI](#teams-classes-lti)
 - [Microsoft Reflect LTI](#microsoft-reflect-lti)
@@ -70,9 +71,16 @@ For configuration steps, see:
 - [Microsoft OneDrive LTI with Schoology Learning](onedrive-lti-schoology.md).
 - [Microsoft OneDrive LTI with D2L Brightspace](onedrive-lti-brightspace.md)
 
-## Teams LTI apps
+## Teams Assignments LTI
+The Microsoft Teams Assignments LTI brings the Learning Accelerators: Reading Progress, Math Progress. Search Progress and Speaker Progress along with Microsoft Forms, Whiteboard, OneNote Pages, and all of the new generative AI features of Teams Assignments to your LTI v1.3 Advantage compliant LMS.
+The integration allows you to Connect Class Teams and add Teams Assignments right into your LMS assignments list where students can launch and complete them and sync grades and feedback automatically back to the LMS.
 
-### Teams Meetings LTI
+- [Microsoft Assignments integration with Canvas](teams-assignments-with-canvas.md).
+- [Microsoft Assignments integration with Schoology Learning](teams-assignments-with-schoology.md).
+
+More LMS support coming soon! Please sign up for more information on current and future LMS integration previews at https://aka.ms/LMSPreview
+
+## Teams Meetings LTI
 
 Microsoft Teams Meetings LTI app incorporates Teams meetings into LMS courses. Educators and students can view past and upcoming meetings, schedule individual or recurring meetings, and join team meetings related to the course, all from within their LMS.
 
@@ -85,7 +93,7 @@ For configuration steps, see:
 - [Microsoft Teams Meetings with Schoology Learning](teams-classes-and-meetings-with-schoology.md).
 - [Microsoft Teams Meetings LTI with any LTI 1.3 compliant LMS](integrate-with-other-lms.md).
 
-### Teams Classes LTI
+## Teams Classes LTI
 
 The Microsoft Teams Classes LTI app helps educators and students navigate between their LMS and Teams. Users can access their class teams associated with their course within their LMS.
 

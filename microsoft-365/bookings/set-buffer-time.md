@@ -3,7 +3,7 @@ title: "Set Bookings buffer time"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 06/24/2020
+ms.date: 10/02/2024
 audience: Admin
 ms.topic: how-to
 ms.service: bookings
@@ -11,7 +11,6 @@ ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
-- essentials-manage
 description: "Set buffer time before or after an appointment in Microsoft Bookings to allow time for cleaning up or resetting equipment."
 ---
 

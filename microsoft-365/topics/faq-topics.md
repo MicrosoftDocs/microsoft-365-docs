@@ -17,7 +17,7 @@ ms.collection:
 ms.service: viva-topics 
 search.appverid:
 - MET150  
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Read commonly asked questions and answers about using Topics.
 ---
 

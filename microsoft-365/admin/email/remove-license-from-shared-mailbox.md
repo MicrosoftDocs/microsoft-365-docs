@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
+ms.date: 10/01/2024
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -22,7 +23,6 @@ search.appverid:
 - MET150
 - MOE150
 description: "Remove a license from a shared mailbox to assign it to another user or return the license so you're not paying for it. "
-ms.date: 06/13/2023
 ---
 
 # Remove a license from a shared mailbox
@@ -36,9 +36,8 @@ Shared mailboxes usually don't require a license. Follow these instructions to r
 > - The shared mailbox has more than 50 GB of storage in use.
 > - The shared mailbox uses in-place archiving.
 > - The shared mailbox is placed in litigation hold.
-> 
-> For step-by-step instructions on how to assign licenses, see [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users). 
-
+>
+> For step-by-step instructions on how to assign licenses, see [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users).
 
 ## Remove the license
 

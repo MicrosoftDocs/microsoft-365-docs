@@ -3,7 +3,7 @@ title: Use the Microsoft 365 admin center to manage your Shifts connection to Bl
 author: lana-chin
 ms.author: v-chinlana
 manager: jtremper
-ms.reviewer: imarquesgil
+ms.reviewer: harrywong
 ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
