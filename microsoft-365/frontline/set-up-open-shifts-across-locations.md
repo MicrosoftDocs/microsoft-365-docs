@@ -70,10 +70,11 @@ In this example:
 
 - The IT admin at Contoso set up an operational hierarchy in the Teams admin center to map their frontline team structure.
 - Bellevue and Redmond are store locations that are on the same level of the hierarchy. They share the parent node, West. 
+- The schedule groups in Shifts at these locations are based on job types: Pickers, Runners, Stockers, Inventory specialists.
+- Roles:
   - Babbak is the manager of the Bellevue location.
   - Kayo is the manager of the Redmond location
-  - Isaac is a worker at the Redmond location.
-- The schedule groups in Shifts at these locations are based on job types: Pickers, Runners, Stockers, Inventory specialists.
+  - Isaac is a worker at the Redmond location in the Pickers schedule group.
 
 Babbak and Kayo turn on the feature in Shifts settings for their team schedules. Babbak creates an open shift in the Pickers schedule group and turns on the **Open shifts across location** toggle. Babbak shares the open shift, and workers that belong to the Pickers schedule group at both the Bellevue and Redmond locations can see and request it.
 
