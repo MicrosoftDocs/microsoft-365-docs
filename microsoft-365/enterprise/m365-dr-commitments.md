@@ -71,15 +71,15 @@ The following customer data is stored in the _Local Region Geography_:
 
 ## Viva Topics*
 
+> [!NOTE]
+> *Viva Topics will be retired on February 22, 2025. Therefore, as of October 31, 2024, Viva Topics will no longer be a supported workload in ADR. Starting with the upcoming local region launches in Taiwan and New Zealand, Viva Topics customer data will not be migrated to new local regions, nor will new customers have Viva Topics stored in existing local regions. For more details, please visit [aka.ms/TopicsFebSupport](https://aka.ms/TopicsFebSupport).
+
 The following customer data is stored at rest in the _Local Region Geography_:
 
 - All the topics and customer data snippets discovered are stored within the relevant _Geographies_ in Exchange Online Substrate (site or arbitration mailboxes, and Substrate). All topic customer data is partitioned based on which _Local Region Geography_ the data came from within your tenant.
 - Machine Learning ("ML") models are trained on public web data, and as such don't contain any customer data from your tenant. In the future, it's possible we'll use customer data to improve accuracy of the ML models, in which case the data handling of ML models will follow the same policies as any other customer content (including data residency, retention, access control, sensitivity).
 - Topic highlighting is computed dynamically when the SharePoint page is rendered by running a language model against the content of the page and linking it with the knowledge base of Topics. The Topics data is sourced from the Substrate in the _Local Region Geography_.
 - The administration configuration data is stored within the _Local Region Geography_.
-
-> [!NOTE]
-> *Viva Topics will be retired on February 22, 2025. Therefore, as of October 31, 2024, Viva Topics will no longer be a supported workload in ADR. Starting with the upcoming local region launches in Taiwan and New Zealand, Viva Topics customer data will not be migrated to new local regions, nor will new customers have Viva Topics stored in existing local regions. For more details, please visit [aka.ms/TopicsFebSupport](https://aka.ms/TopicsFebSupport).
 
 ## Purview Audit (Standard)
 
