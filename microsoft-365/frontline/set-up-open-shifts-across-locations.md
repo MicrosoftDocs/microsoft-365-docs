@@ -50,13 +50,18 @@ After you define your hierarchy, frontline managers (team owners or schedule own
 :::image type="content" source="media/shifts-cross-location-setting.png" alt-text="Screenshot of the Open shifts section in Shifts settings, showing the Open shifts and Open shifts across locations settings and the Check eligibility button." lightbox="media/shifts-cross-location-setting.png":::
 
 > [!NOTE]
-> Managers can select **Check eligibility** to check whether this feature is set up for their team. If you defined an operational hierarchy and the team is included within the hierarchy, managers don't need to perform this step.
+> To check whether this feature is set up for their team, managers can select **Check eligibility**. If you defined an operational hierarchy and the team is included within the hierarchy, managers don't need to perform this step.
 
 After a manager turns on the capability in Shifts settings, they can choose to enable it for each open shift they create in a schedule group by using the **Open shifts across locations** toggle.
 
 :::image type="content" source="media/shifts-cross-location-toggle.png" alt-text="Screenshot of the Open shifts across locations toggle for an open shift.":::
 
 Frontline workers who are part of the same schedule group in other locations can see and request the open shifts. The manager at the location where the open shift is available can approve (or decline) the request.
+
+Keep in mind the following:
+
+- The name of the schedule group in the location where the open shift is created must match the names of the schedule groups at other locations. In this way, open shifts created and shared by a manager in one location are available to all workers that belong to the same schedule group in other locations.
+- Schedule group names aren’t case-sensitive. For example, if a schedule group is named "Cashiers" at some locations and "cashiers" at other locations, the open shift is available across all those locations.
 
 To learn more about the user experience, see [Use open shifts across locations in Shifts]().
 
