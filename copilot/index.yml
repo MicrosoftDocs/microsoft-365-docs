@@ -72,7 +72,7 @@ conceptualContent:
               text: Microsoft Copilot Scenario Library
             - url: https://copilot.cloud.microsoft/
               itemType: training
-              text: Copilot lab for recommended propmts and tutorials
+              text: Copilot lab for recommended prompts and tutorials
         # Card
         - title: Deliver impact
           links:
