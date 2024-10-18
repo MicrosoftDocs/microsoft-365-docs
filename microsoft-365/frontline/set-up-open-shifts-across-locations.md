@@ -60,7 +60,7 @@ Frontline workers who are part of the same schedule group in other locations can
 
 Keep in mind the following:
 
-- The name of the schedule group in the location where the open shift is created must match the names of the schedule groups at other locations. In this way, open shifts created and shared by a manager in one location are available to all workers that belong to the same schedule group in other locations.
+- The name of the schedule group in the location where the open shift is created must match the names of the schedule groups at other locations. In this way, open shifts created and shared by a manager in one location are available to all workers that belong to the same schedule group in other locations within the same level of the hierarchy.
 - Schedule group names aren’t case-sensitive. For example, if a schedule group is named "Cashiers" at some locations and "cashiers" at other locations, the open shift is available across all those locations.
 
 To learn more about the user experience, see [Use open shifts across locations in Shifts]().
