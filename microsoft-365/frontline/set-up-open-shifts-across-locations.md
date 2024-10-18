@@ -47,14 +47,14 @@ To enable open shifts across locations for your organization, define a [frontlin
 
 After you define your hierarchy, frontline managers (team owners or schedule owners) must turn on the feature for their team's schedule on the **Settings** tab in Shifts.
 
-:::image type="content" source="media/shifts-cross-location-setting.png" alt-text="Screenshot of the Open shifts section in Shifts settings, showing the Open shifts and Open shifts across locations settings and the Check eligibility button." lightbox="media/shifts-cross-location-setting.png":::
+:::image type="content" source="media/shifts-open-shifts-across-locations-setting.png" alt-text="Screenshot of the Open shifts section in Shifts settings, showing the Open shifts and Open shifts across locations settings and the Check eligibility button." lightbox="media/shifts-open-shifts-across-locations-setting.png":::
 
 > [!NOTE]
 > To check whether this feature is set up for their team, managers can select **Check eligibility**. If you defined an operational hierarchy and the team is included within the hierarchy, managers don't need to perform this step.
 
 After a manager turns on the capability in Shifts settings, they can choose to enable it for each open shift they create in a schedule group by using the **Open shifts across locations** toggle.
 
-:::image type="content" source="media/shifts-cross-location-toggle.png" alt-text="Screenshot of the Open shifts across locations toggle for an open shift.":::
+:::image type="content" source="media/shifts-open-shifts-across-locations-toggle.png" alt-text="Screenshot of the Open shifts across locations toggle for an open shift." lightbox="media/shifts-open-shifts-across-locations-toggle.png"::
 
 Frontline workers who are part of the same schedule group in other locations can see and request the open shifts. The manager at the location where the open shift is available can approve (or decline) the request.
 
@@ -69,7 +69,7 @@ To learn more about the user experience, see [Use open shifts across locations i
 
 Contoso has hundreds of stores. Each store is grouped into an area and is managed by a different manager. To simplify this scenario, we focus on two stores in the West area.
 
-:::image type="content" source="media/shifts-cross-location-chart.png" alt-text="A chart showing the structure for the Contoso example scenario." lightbox="media/shifts-cross-location-chart.png":::
+:::image type="content" source="media/shifts-open-shifts-across-locations-chart.png" alt-text="A chart showing the structure for the Contoso example scenario." lightbox="media/shifts-open-shifts-across-locations-chart.png":::
 
 In this example:
 
