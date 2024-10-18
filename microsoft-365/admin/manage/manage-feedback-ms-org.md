@@ -47,8 +47,7 @@ The following table represents which apps and services are currently connected t
 |**Microsoft365.com**|Yes|Yes|Yes|Yes|
 |**OneNote**|Yes|Yes|Yes|Yes|
 |**OneDrive**|Some settings are managed by other controls. For more information, see [Prevent users from contacting Microsoft directly](/onedrive/disable-contact-support-send-feedback).||||
-|**Outlook (Web, iOS)**|Coming soon|Coming soon|Coming soon|Coming soon|
-|**Outlook (Desktop, Android, Mac)**|Yes|Yes|Yes|Yes|
+|**Outlook**|Yes|Yes|Yes|Yes|
 |**PowerPoint**|Yes|Yes|Yes|Yes|
 |**Project**|Yes|Yes|Yes|Yes|
 |**Publisher**|Yes|Yes|Yes|Yes|
@@ -102,7 +101,7 @@ The following information only applies to United States government customers usi
 - Not all products currently support feedback collection in this environment. We anticipate most products will support feedback collection by November 15, 2024. To prepare for this rollout, we recommend you review and configure the policy settings in the way that is appropriate for your organization.
 - The default state for the **Allow users to submit feedback to Microsoft** policy in this environment is **Off**.
 - The Feedback portal and in-product surveys aren’t available in this environment, so setting these policies won’t have any effect at this time.
-- The following policies are always treated as **Off** in this environment regardless of how you set the policies:
+- The following policies are always treated as **Disabled** in this environment regardless of how you set the policies:
   - Allow users to include screenshots and attachments when they submit feedback to Microsoft
   - Allow Microsoft to follow up on feedback submitted by users
   - Allow users to include log files and relevant content samples when feedback is submitted to Microsoft.
