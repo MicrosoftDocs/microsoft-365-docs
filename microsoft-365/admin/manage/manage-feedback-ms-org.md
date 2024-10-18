@@ -87,9 +87,7 @@ By default, the following policies are set to **Not Configured**, which has the 
 
 To configure these policy settings, you can use Cloud Policy service for Microsoft 365. For more information, see [Overview of Cloud Policy service for Microsoft 365](/microsoft-365-apps/admin-center/overview-cloud-policy). You can search for "feedback" or "survey" within Cloud Policy UI to find the policy settings to configure them.
 
-These policy settings are also available if you use Group Policy. To use these policy settings, download the most current version of the [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030).
-
-You can find these policy settings under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Privacy\Trust Center.
+These policy settings are also available if you use Group Policy. To use these policy settings, download the most current version of the [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030). You can find these policy settings under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Privacy\Trust Center.
 
 > [!NOTE]
 > After you apply policies, it can take a few hours for the client applications to update.
