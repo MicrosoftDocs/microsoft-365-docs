@@ -58,6 +58,6 @@
         - name: Technical training for Microsoft 365 Copilot
           href: /training/paths/prepare-your-organization-microsoft-365-copilot/
         - name: "Copilot lab: End user resources"
-          href: https://copilot.cloud.microsoft/
+          href: https://copilot.cloud.microsoft/prompts
         - name: Provide Copilot feedback to Microsoft
           href: provide-feedback.md
