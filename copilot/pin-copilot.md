@@ -96,4 +96,4 @@ To learn more about the Microsoft Copilot announcement, see [Frequently asked qu
 
 - [Data, Privacy, and Security for Microsoft 365 Copilot](microsoft-365-copilot-privacy.md)
 - [Microsoft 365 Copilot technical documentation hub](index.yml)
-- [Copilot Lab](https://copilot.cloud.microsoft/)
+- [Copilot Lab](https://copilot.cloud.microsoft/prompts)

@@ -70,7 +70,7 @@ conceptualContent:
             - url: https://adoption.microsoft.com/copilot-scenario-library/
               itemType: get-started
               text: Microsoft Copilot Scenario Library
-            - url: https://copilot.cloud.microsoft/
+            - url: https://copilot.cloud.microsoft/prompts
               itemType: training
               text: Copilot lab for recommended prompts and tutorials
         # Card
