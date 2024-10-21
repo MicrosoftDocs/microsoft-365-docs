@@ -68,7 +68,7 @@ The following table represents which apps and services are currently connected t
 > [!IMPORTANT]
 > If you’re an admin in a United States government environment, see the [Feedback policies in United States government environments](#feedback-policies-in-united-states-government-environments) section later in this article.
 
-By default, the following policies are set to **Not Configured**, which has the same effect as if you set the policies to **Enabled**.
+When the following policies are set to **Not Configured**, it has the same effect as if you set the policies to **Enabled**.
 
 |**Policy name**|**Control summary**|
 |:-----|:-----|:-----|
@@ -99,7 +99,7 @@ The following information only applies to United States government customers usi
 
 - Cloud Policy service for Microsoft 365 is available in this environment as of September 24, 2024.
 - Not all products currently support feedback collection in this environment. We anticipate most products will support feedback collection by November 15, 2024. To prepare for this rollout, we recommend you review and configure the policy settings in the way that is appropriate for your organization.
-- The default state for the **Allow users to submit feedback to Microsoft** policy in this environment is **Off**.
+- When the **Allow users to submit feedback to Microsoft** policy is set to **Not Configured** in this environment, it has the same effect as if you set the policy to **Disabled**.
 - The Feedback portal and in-product surveys aren’t available in this environment, so setting these policies won’t have any effect at this time.
 - The following policies are always treated as **Disabled** in this environment regardless of how you set the policies:
   - Allow users to include screenshots and attachments when they submit feedback to Microsoft
