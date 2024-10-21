@@ -48,6 +48,8 @@ Translation in Syntex is available for [all supported languages and dialects](/a
 
 - Text on an image within a document isn't translated.
 
+- Encrypted files aren't translated.
+
 - Password-protected files aren't translated.
 
 - Translation actions are also available for files in your **My files** folder in OneDrive.
