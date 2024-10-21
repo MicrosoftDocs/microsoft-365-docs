@@ -5,21 +5,3 @@
   - name: Microsoft 365 Copilot
     tocHref: /copilot/microsoft-365/
     topicHref: /copilot/microsoft-365/index
-  - name: Microsoft 365 Copilot
-    tocHref: /security/zero-trust/copilots/
-    topicHref: /copilot/microsoft-365/index  
-  - name: Microsoft 365 Copilot
-    tocHref: /microsoftteams/platform/copilot/
-    topicHref: /copilot/microsoft-365/index   
-  - name: Microsoft 365 Copilot
-    tocHref: /microsoft-365/admin/activity-reports/
-    topicHref: /copilot/microsoft-365/index   
-  - name: Microsoft 365 Copilot
-    tocHref: /microsoft-365/admin/manage/
-    topicHref: /copilot/microsoft-365/index   
-  - name: Microsoft 365 Copilot
-    tocHref: /MicrosoftTeams/
-    topicHref: /copilot/microsoft-365/index 
-  - name: Microsoft 365 Copilot
-    tocHref: /viva/insights/org-team-insights/
-    topicHref: /copilot/microsoft-365/index  

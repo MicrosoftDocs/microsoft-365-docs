@@ -25,7 +25,7 @@ ms.custom:
 search.appverid:
 - MET150
 description: "Learn how admins can use the Microsoft 365 admin center to manage self-service purchases and trials made by users in their organization."
-ms.date: 02/22/2024
+ms.date: 09/23/2024
 ---
 
 # Manage self-service purchases and trials (for admins)
@@ -71,7 +71,8 @@ We use the directory data to provide the user with a license and to send email a
 [!INCLUDE [office-365-operated-by-21vianet-admin-center-link](../../includes/office-365-operated-by-21vianet-admin-center-link.md)]
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-2. On the **Products** tab, select the filter icon, then select **Self-service**.
+1. Select the **Self-service trials** tab. 
+
 3. To view more details about a subscription, select one from the list.
 
 ## View who has licenses for a self-service purchase or trial subscription
@@ -88,18 +89,40 @@ As an admin, you can't assign or unassign licenses for a purchase or trial subsc
 4. The **Users** list is grouped by the names of people who made purchases or started trials.
 5. To export a list of users with licenses for these subscriptions, select the subscriptions that you want to export, then select **Export users**.
 
-## Enable or disable self-service purchases and trials
+## Allow or block self-service purchases and trials
 
-You can enable or disable self-service purchases and trials for users in your organization. The **MSCommerce** PowerShell module includes a **PolicyID** parameter value for **AllowSelfServicePurchase** that lets you control whether users in your organization can make purchases or start trials, and for which products.
+You can allow or block self-service purchases and trials for users in your organization in two ways:
 
-You can use the **MSCommerce** PowerShell module to do the following actions:
+1. [By using the Microsoft 365 admin center](#use-the-microsoft-365-admin-center-to-allow-or-block-self-service-purchases-and-trials).
+2. [By using the MSCommerce PowerShell module](#use-the-mscommerce-powershell-module-to-manage-self-service-purchases-and-trials).
 
-- View the default state of the **AllowSelfServicePurchase** parameter value—whether it's enabled or disabled by product
-- View a list of applicable products and whether purchases or trials are enabled or disabled for those products
-- View or modify the current setting for a specific product to either enable or disable it
+Both methods let you do the following tasks:
+
+- View a list of applicable products and their statuses.
+- View or modify the current setting for a specific product.
+
+### Use the Microsoft 365 admin center to allow or block self-service purchases and trials
+
+> [!NOTE]
+> You must be a Global Administrator to do the following steps.
+
+[!INCLUDE [ga-roles-limitation](../../includes/ga-roles-limitation.md)]
+
+You can use the Microsoft 365 admin center to manage self-service purchases and trials for users in your organization.
+
+1. In the Microsoft 365 admin center, so to the **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Org settings</a> page.
+2. On the **Services** tab of the **Org settings** page, select **Self-service trials and purchases**.
+3. The **Self-service trials and purchases** page lists the products that are eligible for self-service, and shows their current self-service setting.
+4. To manage the settings for a specific product, select the product name. A panel opens and shows the current setting for the product you selected.
+5. To change the setting for the product, select **Allow**, **Allow for trials only**, or **Do not allow**.
+6. Select **Save changes**.
+
+### Use the MSCommerce PowerShell module to manage self-service purchases and trials
+
+The **MSCommerce** PowerShell module includes a **PolicyID** parameter value for **AllowSelfServicePurchase**. This parameter lets you control whether users in your organization can make purchases or start trials, and for which products. The module lets you do the same tasks available in the Microsoft 365 admin center, only from the command line. In addition, the module lets you view the default state of the **AllowSelfServicePurchase** parameter value for each product.
 
 > [!IMPORTANT]
-> When you use the **AllowSelfServicePurchase** policy, it controls both purchases and trials. For a list of the products available, see [View a list of self-service purchase products and their status](allowselfservicepurchase-powershell.md#view-a-list-of-self-service-purchase-products-and-their-status).
+> When you use the **AllowSelfServicePurchase** policy, it controls both purchases and trials. For a list of the products available, see [View a list of self-service purchase Microsoft products and their status](allowselfservicepurchase-powershell.md#view-a-list-of-self-service-purchase-microsoft-products-and-their-status).
 
 For more information, see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).
 
@@ -111,9 +134,9 @@ You can assign existing licenses or buy extra subscriptions through existing agr
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page. For some customers, the page is named **Marketplace**.
 2. Find and select the product that you want to buy, then select **Buy**.
-3. Complete the remaining steps to complete your purchase.
+3. To complete your purchase, complete the remaining steps.
 4. To export a list of users to reference in the next step, follow the steps in [View who has licenses for a self-service purchase or trial subscription](#view-who-has-licenses-for-a-self-service-purchase-or-trial-subscription).
-5. Assign licenses to everyone who has a license in the other subscription. For instructions on how to do this, see [Assign licenses to users](../../admin/manage/assign-licenses-to-users.md).
+5. Assign licenses to everyone who has a license in the other subscription. For instructions, see [Assign licenses to users](../../admin/manage/assign-licenses-to-users.md).
 6. Contact the person who bought the original subscription and ask them to [cancel it](manage-self-service-purchases-users.md#cancel-a-subscription).
 
 ## Take over a self-service purchase or trial subscription

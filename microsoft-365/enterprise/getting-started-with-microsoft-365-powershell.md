@@ -3,7 +3,7 @@ title: "Get started with PowerShell for Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 01/24/2024
+ms.date: 10/18/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise

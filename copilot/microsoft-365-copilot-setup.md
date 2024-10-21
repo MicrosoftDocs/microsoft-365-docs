@@ -1,11 +1,11 @@
 ---
-title: "Get started with Microsoft 365 Copilot"
+title: "Get your organization and data ready for Microsoft 365 Copilot"
 f1.keywords:
 - NOCSH
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 09/16/2024
+ms.date: 09/24/2024
 audience: Admin
 ms.topic: get-started
 ms.service: microsoft-365-copilot
@@ -15,16 +15,19 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 - essentials-get-started
-description: "Learn how to prepare your organization for Microsoft 365 Copilot. You should assign licenses, optimize SharePoint search, give enough access, prevent oversharing, use sensitivity labels, create a pilot group, and more."
+description: Learn how IT administrators can prepare their organization for Microsoft 365 Copilot. Admin cans assign licenses, optimize SharePoint search, give enough access, prevent oversharing, use sensitivity labels, create a pilot group, and more.
 ---
 
-# Get started with Microsoft 365 Copilot
+# Get started with Microsoft 365 Copilot - admin guide
 
 [Microsoft 365 Copilot](microsoft-365-copilot-overview.md) is an AI-powered productivity tool that uses large language models (LLMs). It integrates with your data, with Microsoft Graph, and with Microsoft 365 Apps.
 
 It works alongside popular Microsoft 365 Apps, like Word, Excel, PowerPoint, Outlook, Teams, and more. Copilot provides real-time intelligent assistance, enabling users to enhance their creativity, productivity, and skills.
 
-This article covers how you can prepare your organization for Copilot.
+This article covers how IT admins can prepare their organization for Copilot.
+
+> [!TIP]
+> If you're an end user, then the [Copilot Lab](https://copilot.cloud.microsoft/prompts) is a good resource.
 
 ## Before you begin
 
@@ -74,11 +77,15 @@ This section gives an overview of the prerequisites (licensing and admin centers
 
 ✅ **Optimize your SharePoint content for search**
 
-When a user makes a request to Copilot, it processes the request then generates a response with Large Language Models (LLMs) by leveraging content from Microsoft Graph and web content (optional).
-Content in Microsoft Graph includes emails, files, meetings, chats, calendars, and contacts. A significant portion of them is [stored as SharePoint ](/sharepoint/get-ready-copilot-sharepoint-advanced-management#copilot-and-sharepoint). Copilot gather SharePoint content in the same way of SharePoint Search does. To get the most out of Copilot and get the best results, optimize your SharePoint content for search by:
-- [Making sure the content can be found](/sharepoint/make-sure-content-can-be-found)
-- [Making sure the search results look great](/sharepoint/make-search-results-look-great)
-- [Planning your content](/microsoftsearch/plan-your-content)
+When a user makes a request to Copilot, it processes the request and then generates a response with LLMs. LLMs leverage content from Microsoft Graph and web content (optional).
+
+Content in Microsoft Graph includes emails, files, meetings, chats, calendars, and contacts. A significant portion of this data is [stored in SharePoint](/sharepoint/get-ready-copilot-sharepoint-advanced-management#copilot-and-sharepoint). Copilot gathers SharePoint content in the same way SharePoint Search gathers content.
+
+To get the most out of Copilot and get the best results, optimize your SharePoint content for search:
+
+- [Make sure the content can be found](/sharepoint/make-sure-content-can-be-found)
+- [Make sure the search results look great](/sharepoint/make-search-results-look-great)
+- [Plan your content](/microsoftsearch/plan-your-content)
 
 Microsoft 365 Copilot allows users to find and access their content through natural language prompting. Copilot ensures data security and privacy by following existing obligations and integrating with your organization's policies. It uses your Microsoft Graph content with the same access controls as other Microsoft 365 services.
 
@@ -88,17 +95,21 @@ To learn more about privacy with Microsoft 365 Copilot, see [Data, Privacy, and
 
 ### Prevent sharing and control access with SharePoint and OneDrive
 
-To get ready for your organization’s Microsoft 365 Copilot adoption, there are a few [highly recommended steps you can take with SharePoint and OneDrive](/sharepoint/get-ready-copilot-sharepoint-advanced-management). To start, you can:
+To get ready for your organization’s Microsoft 365 Copilot adoption, there are a few [highly recommended steps you can take with SharePoint and OneDrive](/sharepoint/get-ready-copilot-sharepoint-advanced-management).
+
+To start, you can:
 
 ✅ **Reduce accidental oversharing with SharePoint sharing settings**
 
-To minimize accidental content oversharing via Copilot results, implement the best practice sharing settings at both the organization and site levels:
+To minimize accidental content oversharing with Copilot results, implement sharing settings at the organization and site levels:
 
 1. At the organization level:
 
     - Update [sharing settings for SharePoint and OneDrive](/sharepoint/turn-external-sharing-on-or-off) for your tenant from organization-wide sharing to specific people links.
-    - Consider hide broad-scope permissions from your end users. For example, use the SharePoint `Set-SPOTenant` PowerShell cmdlet to [hide "Everyone Except External Users" in the People Picker control](/powershell/module/sharepoint-online/set-spotenant) so end users can't use it.
-    - Use [Restricted SharePoint Search(RSS)](/sharepoint/restricted-sharepoint-search) to temporarily restrict Copilot results to up to 100 selected SharePoint sites (child sites of Hub sites are not counted toward the 100 limit).RSS gives you time to review & audit site permissions. It should be used only as a temporary solution to give your organization time to adopt Copilot. 
+    - Consider hiding broad-scope permissions from your end users. For example, use the SharePoint `Set-SPOTenant` PowerShell cmdlet to [hide "Everyone Except External Users" in the People Picker control](/powershell/module/sharepoint-online/set-spotenant) so end users can't use it.
+    - Use [Restricted SharePoint Search (RSS)](/sharepoint/restricted-sharepoint-search) to temporarily restrict Copilot results up to 100 selected SharePoint sites. Child sites of Hub sites aren't counted toward the 100 limit.
+
+      RSS gives you time to review & audit site permissions. It should be used only as a temporary solution to give your organization time to adopt Copilot. 
 
 2. Reduce accidental oversharing at the site level:
 
@@ -118,54 +129,24 @@ To ensure data is secure, review SharePoint site access and permissions. Priorit
 
 1. In the **Membership** tab, review access to site owners, members, and visitors. Ensure that only the necessary users have access to the site.
 
-✅ **Identify sites with potentially overshared content and control access** *
+✅ **Identify sites with potentially overshared content and control access**
 
-You can use SharePoint Advanced Management(SAM) activity based reports to quickly identify most actively overshared sites, by running three individual reports:
+1. Use the following SharePoint Advanced Management (SAM) activity-based reports to quickly identify the most actively overshared sites:
 
-- [Usage of "Everyone Except External Users"](/sharepoint/data-access-governance-reports#content-shared-with-everyone-except-external-users-eeeu-reports) 
-- [Usage of “People in your organization" sharing links](/sharepoint/data-access-governance-reports#sharing-links-reports) 
-- [Usage of "Anyone" sharing links](/sharepoint/data-access-governance-reports#sharing-links-reports) 
+    - [Usage of "Everyone Except External Users"](/sharepoint/data-access-governance-reports#content-shared-with-everyone-except-external-users-eeeu-reports) 
+    - [Usage of “People in your organization" sharing links](/sharepoint/data-access-governance-reports#sharing-links-reports) 
+    - [Usage of "Anyone" sharing links](/sharepoint/data-access-governance-reports#sharing-links-reports) 
 
-You can then [initiate a Site Access Review](/sharepoint/restricted-access-control) for site owners to confirm overshared content and take remediation steps. Meanwhile, you as the SharePoint admin can use the [Restricted Access Control Policy](/sharepoint/restricted-access-control) to restrict access to a site with overshared content.
+2. [Initiate a Site Access Review](/sharepoint/restricted-access-control) for site owners to confirm overshared content and take remediation steps. SharePoint admins can use the [Restricted Access Control Policy](/sharepoint/restricted-access-control) to restrict access to a site with overshared content.
 
-For business-critical sites, you can:
+For business-critical sites, there are features in SharePoint Advanced Management and Microsoft Purview you can use:
 
-- Use [Restricted Access Control (RAC)](/sharepoint/restricted-access-control) to proactively protect against oversharing. Even better: as part of your custom site provisioning process, configure RAC policy on new sites from the get-go and proactively avoid oversharing forever.
-- Consider blocking downloads from selected sites via a block download policy. Or specifically [block the download of Teams meeting recordings and transcripts](/microsoftteams/block-download-meeting-recording).
-- Finally, consider applying encryption action with "extract rights" enforced on business-critical office documents. Learn more [here](/purview/ai-microsoft-purview).
-
-> [!NOTE] 
-> SharePoint Advanced Management has features to help you get ready for Copilot more timely and at scale. To learn more, see [Get ready for Copilot for Microsoft 365 with SharePoint Advanced Management (SAM)](/sharepoint/get-ready-copilot-sharepoint-advanced-management).
-
-### Copilot and multiple account access
-
-✅ **Can use tenant restrictions and MDM policies to block personal accounts**
-
-For users with multiple Microsoft accounts (work/school account or personal account), Copilot features work seamlessly in Excel, Word, PowerPoint, and OneNote when:
-
-- One of those accounts signs into a Windows session, and
-- One of those accounts has a Copilot Pro or Microsoft 365 Copilot license assigned
-
-For example:
-
-- A user has a Microsoft 365 Copilot license and is on their work machine. On the work machine, the user can open a document from their personal OneDrive, and use Copilot in the personal document.
-- A user has a Copilot Pro license and signs in to their work device with their personal Microsoft account (MSA). On the work device, the user can use Copilot with Office files stored on their OneDrive (work or personal) or in SharePoint document libraries.
-
-As an admin, you can:
-
-- Use a [Microsoft Entra tenant restriction](/entra/external-id/tenant-restrictions-v2) that blocks users from adding a personal Microsoft account to their work device. This feature prevents users with Copilot Pro from seeing and using Copilot features in their personal Microsoft 365 apps on their work device.
-
-  You need to create tenant restriction policies for each Microsoft 365 app. To learn more, see [Set up tenant restrictions](/entra/external-id/tenant-restrictions-v2).
-
-- Prevent Microsoft 365 apps from using your work/school Microsoft Entra accounts on end users personally owned devices that use Copilot. Specifically, you can use compliance and Conditional Access policies that prevent users from accessing resources on noncompliant devices.
-
-  For more information on using Microsoft Intune for these policies, see:
-
-  - [Use compliance policies to set rules for devices you manage with Intune](/mem/intune/protect/device-compliance-get-started)
-  - [Common ways to use Conditional Access with Intune](/mem/intune/protect/conditional-access-intune-common-ways-use)
+- Use [Restricted Access Control (RAC)](/sharepoint/restricted-access-control) to proactively protect against oversharing. When you create new sites, configure a RAC policy as part of your custom site provisioning process. This step proactively avoids oversharing.
+- Consider blocking downloads from selected sites using a block download policy. For example, [block the download of Teams meeting recordings and transcripts](/microsoftteams/block-download-meeting-recording).
+- Apply encryption with "extract rights" enforced on business-critical office documents. To learn more, see [Microsoft Purview data security and compliance protections for generative AI apps](/purview/ai-microsoft-purview).
 
 > [!NOTE]
-> In sovereign tenants where Microsoft 365 Copilot is not available, users are blocked from using Copilot features. They're blocked even if a device has multiple accounts signed in and one of those accounts has Copilot.
+> SharePoint Advanced Management has more features to help you get ready for Copilot fast and at scale. To learn more, see [Get ready for Copilot for Microsoft 365 with SharePoint Advanced Management (SAM)](/sharepoint/get-ready-copilot-sharepoint-advanced-management).
 
 ### Sensitivity labels from Microsoft Purview
 
@@ -240,7 +221,7 @@ In the [Microsoft Purview portal](https://purview.microsoft.com), you can use th
 
 The privacy settings in your Microsoft 365 apps can affect the availability of Microsoft 365 Copilot features. To ensure that users can access Copilot features, review the privacy settings in your Microsoft 365 apps.
 
-For more information, see [Microsoft 365 Copilot and privacy controls for connected experiences](microsoft-365-copilot-privacy.md#microsoft-365-copilot-and-privacy-controls-for-connected-experiences).
+To learn more, see [Microsoft 365 Copilot and privacy controls for connected experiences](microsoft-365-copilot-privacy.md#microsoft-365-copilot-and-privacy-controls-for-connected-experiences).
 
 ## Step 4 - Update channels
 
@@ -258,7 +239,7 @@ Your options:
 
 - **Preview** channels include **Current Channel (Preview)** and **Beta Channel**.
 
-  Preview channels are a great option to validate the product before rolling out to the rest of organization. To learn more, see [Overview of update channels](/deployoffice/updates/overview-update-channels) and [Microsoft 365 Insider channels](/deployoffice/insider/compare-channels).
+  Preview channels are a great option to validate the product before rolling out to the rest of organization. To learn more, see [Overview of update channels](/deployoffice/updates/overview-update-channels) and [Microsoft 365 Insider channels](/deployoffice/insider/compare-channels).
 
 There are multiple ways you can manage channels for user devices. To learn more, see [Change update channel of Microsoft 365 to enable Copilot](/deployoffice/updates/change-channel-for-copilot).
 
@@ -266,13 +247,16 @@ There are multiple ways you can manage channels for user devices. To learn more,
 
 ✅ **Assign Copilot licenses using the Microsoft 365 admin center**
 
-The next step is to assign licenses. You can assign to individual users or to groups of users, and also reassign licenses to other users. You can manage Microsoft 365 Copilot licenses in the Microsoft 365 admin center.
+The next step is to assign licenses so users can start using Copilot. You can manage Microsoft 365 Copilot licenses in the Microsoft 365 admin center. You can assign to individual users or to groups of users, and also reassign licenses to other users.
 
-- To access license management in the [Microsoft 365 admin center](https://admin.microsoft.com), see **Billing** > **Licenses**.
+- To access license management in the [Microsoft 365 admin center](https://admin.microsoft.com), select **Billing** > **Licenses**.
 
-To learn more about enabling Copilot in your organization, see [Enable users for Microsoft 365 Copilot](microsoft-365-copilot-enable-users.md).
+When licenses are assigned, Copilot shows up in the Microsoft 365 apps, like Word and Excel. To use Copilot, users sign into the app with their work or school account and the file must be editable (not read only).
 
-You can also assign licenses in bulk to [groups of users through the Azure admin center](/entra/identity/users/licensing-groups-assign) or [assign licenses to users with PowerShell](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell). For more information, see [Assign Microsoft 365 licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users).
+To learn more, see:
+
+- Enable Copilot in your organization at [Enable users for Microsoft 365 Copilot](microsoft-365-copilot-enable-users.md).
+- You can assign licenses in bulk to [groups of users through the Azure admin center](/entra/identity/users/licensing-groups-assign) or [assign licenses to users with PowerShell](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell). For more information, see [Assign Microsoft 365 licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users).
 
 ## Step 6 - Configure settings for Copilot
 

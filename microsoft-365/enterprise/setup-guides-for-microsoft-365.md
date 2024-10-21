@@ -3,7 +3,7 @@ title: "Advanced deployment guides for Microsoft 365 and Office 365 products"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/19/2023
+ms.date: 10/07/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -54,7 +54,7 @@ Advanced deployment guides are accessible from the [Advanced deployment guides &
 > You must be assigned an admin role such as _Global Reader_ to access advanced deployment guides in the Microsoft 365 admin center. Only admins with the _Global Administrator_ role can use the guides to change settings in the tenant.
 
 > [!IMPORTANT]
-> Any selections, task assignments, and progress status saved **before January 10, 2023** within each advanced deployment guide in the admin center were reset due to EU data regulations.
+> Advanced deployment guides aren't available for the GCC High or DoD environments, or for Microsoft 365 operated by 21Vianet.
 
 To reach the **Advanced deployment guides & assistance** page:
 
@@ -72,7 +72,7 @@ Advanced deployment guides in the admin center require authentication to a Micro
 
 |**Guide - [Setup Portal](https://go.microsoft.com/fwlink/?linkid=2220880)** |**Guide - [Admin Center](https://go.microsoft.com/fwlink/?linkid=2224913)** |**Description** |
 |---------|---------|---------|
-|[‎Microsoft 365 Copilot‎ setup guide](https://go.microsoft.com/fwlink/?linkid=2249661)|[Microsoft 365 Copilot setup guide](https://go.microsoft.com/fwlink/?linkid=2249662)|The **Microsoft 365 Copilot setup guide** gets you up to speed on Copilot, which revolutionizes collaboration and takes advantage of AI to automate tasks such as writing, editing, and data visualization across Word, Excel, PowerPoint, Outlook, and Teams. Copilot also simplifies the creation of meeting summaries. Our setup guide facilitates smooth integration, allowing your organization to automate work processes and enhance collaboration seamlessly.|
+|[Microsoft 365 Copilot setup guide](https://go.microsoft.com/fwlink/?linkid=2249661)|[Microsoft 365 Copilot setup guide](https://go.microsoft.com/fwlink/?linkid=2249662)|The **Microsoft 365 Copilot setup guide** gets you up to speed on Copilot, which revolutionizes collaboration and takes advantage of AI to automate tasks such as writing, editing, and data visualization across Word, Excel, PowerPoint, Outlook, and Teams. Copilot also simplifies the creation of meeting summaries. Our setup guide facilitates smooth integration, allowing your organization to automate work processes and enhance collaboration seamlessly.|
 |[Prepare your environment guide](https://go.microsoft.com/fwlink/?linkid=2223234)|[Prepare your environment guide](https://go.microsoft.com/fwlink/?linkid=2224195)|The **Prepare your environment guide** helps you prepare your organization's environment for Microsoft 365 and Office 365 services. Whatever your goals are, there are tasks you'll need to complete to ensure a successful deployment. To avoid any errors while preparing your environment, you're provided with step-by-step instructions to connect your domain, add users, assign licenses, set up email with Exchange Online, and install or deploy Office apps.|
 |[Email setup guide](https://go.microsoft.com/fwlink/?linkid=2223145)|[Email setup guide](https://go.microsoft.com/fwlink/?linkid=2224461)|The **Email setup guide** provides you with the step-by-step guidance needed for configuring Exchange Online for your organization. This guidance includes setting up new email accounts, migrating email, and configuring email protection. For a successful email setup, use this advisor and you'll receive the recommended migration method based on your organization's current mail system, the number of mailboxes being migrated, and how you want to manage users and their access.|
 |[Gmail contacts and calendar advisor](https://go.microsoft.com/fwlink/?linkid=2222987)|[Gmail contacts and calendar advisor](https://go.microsoft.com/fwlink/?linkid=2224296)|When you migrate a Gmail user's mailbox to Microsoft 365, email messages are migrated, but contacts and calendar items are not. The **Gmail contacts and calendar advisor** provides steps for importing Google contacts and Google calendar items to Microsoft 365 using import and export methods with Outlook.com, the Outlook client, or PowerShell.|

@@ -17,15 +17,15 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 ms.custom:
-  - commerce_subscriptions
-  - AdminSurgePortfolio
-  - admindeeplinkMAC
-  - has-azure-ad-ps-ref
-  - azure-ad-ref-level-one-done
-  - GAUpdates
+- commerce_subscriptions
+- AdminSurgePortfolio
+- admindeeplinkMAC
+- has-azure-ad-ps-ref
+- azure-ad-ref-level-one-done
+- GAUpdates
 search.appverid: MET150
 description: "Learn how to manage free self-service sign-up subscriptions for your organization in the Microsoft 365 admin center."
-ms.date: 01/02/2024
+ms.date: 10/10/2024
 ---
 # Manage self-service sign-up subscriptions in the Microsoft 365 admin center
 

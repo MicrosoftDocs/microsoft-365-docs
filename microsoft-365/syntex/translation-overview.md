@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 01/19/2024
+ms.date: 09/26/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -48,10 +48,16 @@ Translation in Syntex is available for [all supported languages and dialects](/a
 
 - Text on an image within a document isn't translated.
 
+- Encrypted files aren't translated.
+
 - Password-protected files aren't translated.
+
+- Translation actions are also available for files in your **My files** folder in OneDrive.
 
 - On-demand translation on folders will be available in a future release.
 
 ### Frequently asked questions
 
 For answers to frequently asked questions about document translation, see [Document Translation: FAQ](/azure/ai-services/translator/document-translation/faq#document-translation-faq).
+
+For specific questions about character count, see [How does Translator count characters?](/azure/ai-services/translator/translator-faq#how-does-translator-count-characters).
