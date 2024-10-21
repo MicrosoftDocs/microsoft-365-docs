@@ -16,14 +16,11 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 09/16/2024
+ms.date: 10/21/2024
 
 ---
 
 # Limit access to Microsoft Teams when frontline workers are off shift
-
-> [!NOTE]
-> This feature is currently being rolled out and might not be available in your organization yet. To stay on top of upcoming Teams features, check out the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap).
 
 ## Overview
 
