@@ -67,7 +67,9 @@ Sharing with external participants is done through "Share with specific people" 
 
 When a guest accesses the Loop workspace, page, or component from the link from your organization, they sign in and access the shared content using their guest account. They'll need to utilize the share link again to access the Loop workspace, page, or component in the future, as the content from your organization isn't accessible via their standard account.
 
-If you would like to disable guest sharing of Loop workspaces independently of your organization-level OneDrive and SharePoint sharing setting, see [set sharing capabilities of applications](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/ctapowershell#set-sharing-capability-of-applications) and use Owning App ID: `a187e399-0c36-4b98-8f04-1edc167a0996`.
+If you would like to disable guest sharing of Loop workspaces independently of your organization-level OneDrive and SharePoint sharing setting, see [application external sharing override](/sharepoint/dev/embedded/concepts/app-concepts/sharing-and-perm#application-external-sharing-override) and the OwningApplicationID `a187e399-0c36-4b98-8f04-1edc167a0996`.
+
+Unlike SharePoint sites, there is no admin setting to configure guest sharing of specific Loop workspaces. Direct users toward [sensitivity labeling](/purview/sensitivity-labels-loop) for per-workspace external sharing configuration. Admin's can also [configure sensitivity labels](/sharepoint/dev/embedded/concepts/security-and-compliance#security-features) on containers.
 
 ## Loop workspace membership and Microsoft 365 groups
 
