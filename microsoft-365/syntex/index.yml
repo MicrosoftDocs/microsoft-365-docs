@@ -40,8 +40,6 @@ landingContent:
         links:
           - text: Track and manage eSignature requests using Approvals in Teams
             url: esignature-approvals.md
-          - text: SharePoint Agreements AI
-            url: solutions/agreements-overview.md
 
 # Card 2
   - title: Get started
