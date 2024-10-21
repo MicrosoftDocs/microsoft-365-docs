@@ -86,6 +86,7 @@ To get the most out of Copilot and get the best results, optimize your SharePoin
 - [Make sure the content can be found](/sharepoint/make-sure-content-can-be-found)
 - [Make sure the search results look great](/sharepoint/make-search-results-look-great)
 - [Plan your content](/microsoftsearch/plan-your-content)
+- Clean up unused sites in [SharePoint admin center](/sharepoint/delete-site-collection#delete-a-site-in-the-new-sharepoint-admin-center) or [with SharePoint Advanced Management](/sharepoint/get-ready-copilot-sharepoint-advanced-management#step-2-clean-up-unused-sites)
 
 Microsoft 365 Copilot allows users to find and access their content through natural language prompting. Copilot ensures data security and privacy by following existing obligations and integrating with your organization's policies. It uses your Microsoft Graph content with the same access controls as other Microsoft 365 services.
 
@@ -93,7 +94,7 @@ To learn more about privacy with Microsoft 365 Copilot, see [Data, Privacy, and
 
 ## Step 2 - Apply principles of Just Enough Access
 
-### Prevent sharing and control access with SharePoint and OneDrive
+### Prevent oversharing and control access with SharePoint and OneDrive
 
 To get ready for your organization’s Microsoft 365 Copilot adoption, there are a few [highly recommended steps you can take with SharePoint and OneDrive](/sharepoint/get-ready-copilot-sharepoint-advanced-management).
 
