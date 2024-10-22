@@ -33,7 +33,7 @@ There are six reports available in the Agreements app. They are:
 |Signed agreements | Split of agreements that are active, about to expire soon, or expired.|
 |Top 5 first parties | List of top five first parties by number of agreements.|
 |Top 5 second parties | List of top five second parties by number of agreements.|
-|Agreements expiring within 4 years | Split of agreements that will expire within four years.|
+|Agreements expiring within four years | Split of agreements that will expire within four years.|
 
 <br>
 
