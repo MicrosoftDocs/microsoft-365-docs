@@ -25,11 +25,14 @@ ms.date:
 
 ## Overview
 
-Create and manage frontline teams in bulk to drive communication and collaboration for every location in your frontline workforce. Team membership on your frontline teams is automatically synced with your frontline workers’ [Microsoft Entra attributes](/entra/external-id/customers/how-to-define-custom-attributes). Frontline managers at each of your locations like department heads, store leads, warehouse managers, have the ability to add or remove members manually as team owners.
+Create and manage frontline teams in bulk to drive communication and collaboration for every location in your frontline workforce. Team membership on your frontline teams is automatically synced with your frontline workers’ [Microsoft Entra attributes](/entra/external-id/customers/how-to-define-custom-attributes). Frontline managers at each of your locations, like department heads, store leads, and warehouse managers, have the ability to manually add or remove members as team owners.
+
+> [!NOTE]
+> If you would like to provide feedback and help improve this feature, fill out this [form](https://forms.microsoft.com/r/DWaJXA6Dax).
 
 ## How it works
 
-Here's an overview of the setup process. During setup, you:
+During the setup process, you:
 
 - Select Microsoft 365 dynamic groups that include your frontline workers.
 - Select an attribute that represents the location of each frontline worker to divide them into location-based teams.
@@ -42,12 +45,10 @@ After submitting your setup, you can see which locations you can create teams fo
 Team membership is automatically managed over time through the power of dynamic rules. As frontline workers are onboarded and offboarded, and as they change locations, their memberships in these teams are updated accordingly. Additionally, frontline managers who are given the team owner role have the flexibility to add or remove frontline workers.
 
 > [!IMPORTANT]
-> Changes that frontline managers make override any changes made by dynamic rules. For example:
+> Changes that frontline managers make override any changes made by dynamic rules. Here's some examples:
 >
 >- User1 is added to a team based on dynamic rules. The frontline manager of the team manually removes user1. In this scenario, user1 won't be added to the team again unless the frontline manager manually adds user1 back to the team.
 >- A frontline manager adds a user from Location A to their team for Location B. In this scenario, the user won't be removed from Location B unless the frontline manager manually removes the user. This user continues to be a part of the team for Location A based on dynamic rules.
-
-If you would like to provide feedback to help improve this feature, fill out this [form](https://forms.microsoft.com/r/DWaJXA6Dax).
 
 ## Before you begin
 
