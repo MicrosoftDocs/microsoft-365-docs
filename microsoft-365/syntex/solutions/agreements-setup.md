@@ -65,7 +65,10 @@ Before creating a workspace for SharePoint Agreements AI, you need to ensure:
 
    - \<tenantName> is the name of your SharePoint tenant. <br><br>
 
-   Example: ```Connect-SPOService -Url "https://contosoelectronics-admin.sharepoint.com"```
+   Example: 
+   ```
+   Connect-SPOService -Url "https://contosoelectronics-admin.sharepoint.com"
+   ```
 
    > [!NOTE]
    > The Connect-SPOService might require the use of modern authentication to connect. For information about how to add modern authentication flow to your SPO-Connect cmdlet, see the [Connect-SPOService documentation](/powershell/module/sharepoint-online/connect-sposervice).
@@ -82,18 +85,9 @@ Before creating a workspace for SharePoint Agreements AI, you need to ensure:
     - \<User> is the email address of the owner of the new workspace.
     - \<Workspace Name> is the name you would like for the new workspace.
   
-    Example: ```New-SPOSite -Url "https://contosoelectronics.sharepoint.com/teams/LegalAgreements" -Owner "megan@contosoelectronics.onmicrosoft.com" -StorageQuota 1000 -Title "Legal agreements" -EnableAgreementsSolution -Template "STS#3"```
-
-4. Run the following set of commands on the newly created SharePoint site. These steps enable the approval workflow on your site.
-
-   Remember to replace \<URL> with the URL of the newly created SharePoint site in the first step.
-
+    Example:
    ```
-   $AgreementsSiteUrl = "<URL>"
-   $script = '{"$schema":"https://developer.microsoft.com/json-schemas/sp/site-design-script-actions.schema.json","actions":[{"verb":"createSPList","listName":"Modern Template Library","templateType":101,"subactions":[{"verb":"enableApprovals"}]},{"verb":"createSPList","listName":"Section Library","templateType":101,"subactions":[{"verb":"enableApprovals"}]}]}'
-   $SiteScriptResult = Add-SPOSiteScript -Title 'Enable Approvals for Template and Sections Library' -Content $script
-   $SiteDesignResult = Add-SPOSiteDesign -Title 'Enable Approvals for Template and Sections Library' -WebTemplate STS -SiteScripts $SiteScriptResult.Id
-   Invoke-SPOSiteDesign -Identity $SiteDesignResult.Id -WebUrl $AgreementsSiteUrl
+   New-SPOSite -Url "https://contosoelectronics.sharepoint.com/teams/LegalAgreements" -Owner "megan@contosoelectronics.onmicrosoft.com" -StorageQuota 1000 -Title "Legal agreements" -EnableAgreementsSolution -Template "STS#3"
    ```
 
 ## Deploy the Agreements app to users in Microsoft Teams
