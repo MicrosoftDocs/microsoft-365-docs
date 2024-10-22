@@ -40,7 +40,7 @@ When you open the template for editing, the right-hand panel in Word displays va
 
 ## Edit the template
 
-After you select **Edit template**, you're presented with the same experience as when you [create a template](agreements-create-template#configure-an-approval-workflow-for-documents-generated-from-the-template) flow. In this case, the fields, sections, conditional sections, and any workflow that is already in place from the original template is displayed.
+After you select **Edit template**, you're presented with the same experience as when you [create a template](agreements-create-template.md#configure-an-approval-workflow-for-documents-generated-from-the-template) flow. In this case, the fields, sections, conditional sections, and any workflow that is already in place from the original template is displayed.
 
 You can make modifications as needed to update the elements of the template. Once you're done with your changes, publish the template for the changes to take effect.
 

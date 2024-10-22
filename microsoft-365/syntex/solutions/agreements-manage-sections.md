@@ -22,7 +22,7 @@ description: Learn how to create, publish, and manage template sections in the S
 
 Sections are reusable blocks of content that ensure the use of consistent language across your agreements. You can define a section and use it across multiple templates. For example, you might have a section for privacy clause or payment terms for your purchase agreements, while you can have a section for relocation package for your full-time employee templates. Sections are saved as Microsoft Word documents in the section library on your Agreements site.
 
-Sections can also have fields, set up in the same manner as [fields for templates](agreements-create-template#add-fields-to-a-template).
+Sections can also have fields, set up in the same manner as [fields for templates](agreements-create-template.md#add-fields-to-a-template).
 
 Once a section is inserted into a template, all documents generated from that template will have the content of this section included in it. You can also choose to keep the sections read-only or editable in generated documents.  
 
@@ -67,7 +67,7 @@ To insert fields in a section, follow these steps:
 
 2. In the **Set up fields** panel, enter the name of the field in the search box.
 
-    To understand how to create a new field that isn't present in the list, see [Add fields](agreements-create-template#add-fields-to-a-template).
+    To understand how to create a new field that isn't present in the list, see [Add fields](agreements-create-template.md#add-fields-to-a-template).
 
 3. After you add the field, either highlight the text in the document that you want to link to the field, or place the cursor at the exact spot in the template where you want the field to be inserted.
 
