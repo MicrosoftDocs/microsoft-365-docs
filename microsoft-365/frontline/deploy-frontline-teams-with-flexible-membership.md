@@ -25,14 +25,14 @@ ms.date:
 
 ## Overview
 
-Create and manage frontline teams in bulk to drive communication and collaboration for every location in your frontline workforce. Team membership on your frontline teams is automatically synced with your frontline workers’ [Microsoft Entra attributes](/entra/external-id/customers/how-to-define-custom-attributes). Frontline managers at each of your locations, like department heads, store leads, and warehouse managers, have the ability to manually add or remove members as team owners.
+Create and manage frontline teams in bulk to drive communication and collaboration for every location in your frontline workforce. Team membership of your frontline teams is automatically synced with your frontline workers’ [Microsoft Entra attributes](/entra/external-id/customers/how-to-define-custom-attributes). Frontline managers at each of your locations, like department heads, store leads, and warehouse managers, have the ability to manually add or remove members as team owners.
 
 > [!NOTE]
 > If you would like to provide feedback and help improve this feature, fill out this [form](https://forms.microsoft.com/r/DWaJXA6Dax).
 
 ## How it works
 
-During the setup process, you:
+In the setup process, you:
 
 - Select Microsoft 365 dynamic groups that include your frontline workers.
 - Select an attribute that represents the location of each frontline worker to divide them into location-based teams.
@@ -47,7 +47,7 @@ Team membership is automatically managed over time through the power of dynamic 
 > [!IMPORTANT]
 > Changes that frontline managers make override any changes made by dynamic rules. Here's some examples:
 >
->- User1 is added to a team based on dynamic rules. The frontline manager of the team manually removes user1. In this scenario, user1 won't be added to the team again unless the frontline manager manually adds user1 back to the team.
+>- User1 is added to a team based on dynamic rules. The frontline manager of the team then manually removes user1. In this scenario, user1 won't be added to the team again unless the frontline manager manually adds user1 back to the team.
 >- A frontline manager adds a user from Location A to their team for Location B. In this scenario, the user won't be removed from Location B unless the frontline manager manually removes the user. This user continues to be a part of the team for Location A based on dynamic rules.
 
 ## Before you begin
@@ -58,7 +58,7 @@ Team membership is automatically managed over time through the power of dynamic 
 - Ensure you can define your frontline workers and managers and their work locations through data available in Microsoft Entra ID. If you don't have this data in Microsoft Entra ID, you can sync it through a [human capital management (HCM) connector](/azure/active-directory/app-provisioning/plan-cloud-hr-provision) or [use the PowerShell solution](deploy-teams-at-scale.md) to create static teams at scale.
   - All frontline workers should be added to up to 32 Microsoft 365 dynamic groups.
   - All frontline managers at each of your frontline locations should be added to up to 20 Microsoft 365 dynamic groups.
-  - One attribute must be consistent across all frontline workers and managers that represents their frontline location.
+  - There must be one attribute consistent across all frontline workers and managers that represents their frontline location.
 
 - If you want to enable [targeted communications](set-up-targeted-communications.md), ensure you can map the attributes of your frontline workers through data available in Microsoft Entra ID. If user profile information doesn’t yet include job title or department, you can add it. [Learn more about how to add or update a user’s profile information in Microsoft Entra ID](/entra/fundamentals/how-to-manage-user-profile-info). 
 
@@ -127,7 +127,9 @@ To give Teams Administrators the ability to complete setup and deploy frontline 
 
     > [!NOTE]
     > Currently, only team templates that are set to the English (United States) locale are supported. Keep in mind that the locale doesn't affect translation of the template or data residency. The locale setting is used only to distinguish between templates that have the same name that are created in different languages.
-1. Select up to 20 Microsoft 365 dynamic groups that include at least one frontline worker from each location to be made team owner. Every location you want to deploy must have at least one frontline worker set as team owner. For example, team owners can be your frontline managers, department heads, and/or leads. Team owners can add or remove membership from their frontline teams.
+1. Select up to 20 Microsoft 365 dynamic groups that include at least one frontline worker from each location to be made team owner. Every location you want to deploy must have at least one frontline worker set as team owner. For example, team owners can be your frontline managers, department heads, and/or leads.
+
+    Team owners can add or remove membership from their frontline teams.
 
 1. On the Map frontline attributes page, select the Microsoft Entra attributes that most accurately reflect the departments and job titles in your organization. You can set the **Department attribute**, **Job title attribute**, or both.
 
