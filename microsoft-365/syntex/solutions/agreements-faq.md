@@ -26,27 +26,27 @@ SharePoint Agreements AI is an end-to-end solution, powered by AI, to help strea
 
 #### What are the use cases for SharePoint Agreements AI?
 
-SharePoint Agreements AI can be used across your organization: Procurement can generate purchase agreements with suppliers, Sales can handle NDAs with clients, and HR can create offer letters for new employees. Use Agreements AI wherever you need templates to create agreements in your organization.
+SharePoint Agreements AI can be used across your organization. For example, the procurement department can generate purchase agreements with suppliers, the sales department can handle NDAs with clients, and the human resources department can create offer letters for new employees. Use Agreements AI wherever you need templates to create agreements in your organization.
 
 #### What is the licensing model for SharePoint Agreements AI?
 
-The licensing model for SharePoint Agreements AI is still being finalized, but early access customers can get trial licenses for "SharePoint Content Solution - Agreements Trial" to use SharePoint Agreements AI. These trial licenses are valid for six months from the date of activation. Contact your Microsoft representative or submit your nomination here to obtain trial licenses: [Sign up for limited GA](https://aka.ms/AgreementsSelectiveGA). If your nomination is selected, a Microsoft representative will reach out to you within 14 business days.
+The licensing model for SharePoint Agreements AI is still being finalized, but early access customers can get trial licenses for "SharePoint Content Solution – Agreements Trial" to use SharePoint Agreements AI. These trial licenses are valid for six months from the date of activation. Contact your Microsoft representative or submit your nomination here to obtain trial licenses: [Sign up for limited GA](https://aka.ms/AgreementsSelectiveGA). If your nomination is selected, a Microsoft representative will reach out to you within 14 business days.
 
 #### How do I get started with SharePoint Agreements AI?
 
 To get started with SharePoint Agreements AI, your administrators need to follow these steps:
 
-1. The Global Administrator must [assign the "SharePoint Content Solution – Agreements Trial"](agreements-license-requirements.md) license to all users who will be using the Agreements AI solution. This license is necessary for using Agreements AI. For trial licenses, contact your Microsoft representative or submit your nomination here: [Sign up for limited GA](https://aka.ms/AgreementsSelectiveGA).
+1. The Global Administrator [assigns the "SharePoint Content Solution – Agreements Trial"](agreements-license-requirements.md) license to all users who will be using the Agreements AI solution. This license is necessary for using Agreements AI. For trial licenses, contact your Microsoft representative or submit your nomination here: [Sign up for limited GA](https://aka.ms/AgreementsSelectiveGA).
 
-2. The SharePoint Administrator should [create a workspace](agreements-setup.md) to organize and manage templates and agreements. For instance, a "Procurement" workspace could be established to store all procurement templates and agreements, whereas a "Human Resources" workspace could be set up for employment agreements.
+2. The SharePoint Administrator [creates a workspace](agreements-setup.md) to organize and manage templates and agreements. For example, a "Procurement" workspace could be established to store all procurement templates and agreements, whereas a "Human Resources" workspace could be set up for employment agreements.
 
-3. The SharePoint Administrator must designate a ["workspace owner"](agreements-key-concepts.md#roles) for each workspace created in the previous step. The workspace owner has full access to the workspace.
+3. The SharePoint Administrator [designates a "workspace owner"](agreements-key-concepts.md#roles) for each workspace created in the previous step. The workspace owner has full access to the workspace.
 
 The workspace owner can then use the [Agreements app in Microsoft Teams](https://teams.microsoft.com/l/app/fc0c5127-1a8c-4d12-9500-c142ca453b83?source=app-details-dialog) to manage categories and templates, as well as add other users to manage templates and create agreements.
 
 #### What are the categories and why do I need them?
 
-Categories serve to organize agreements with similar purposes within the workspace. For instance, a procurement workspace might include categories like purchase agreements and sales agreements, whereas a human resources workspace might feature categories such as full-time employment agreements and part-time employment agreements.
+Categories serve to organize agreements with similar purposes within the workspace. For example, a procurement workspace might include categories like purchase agreements and sales agreements, whereas a human resources workspace might feature categories such as full-time employment agreements and part-time employment agreements.
 
 <br>
 
