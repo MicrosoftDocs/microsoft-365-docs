@@ -42,7 +42,7 @@ You must be a Cloud PC Administrator in the partner tenant.
 
 5. In the device details pane, select **Reprovision**.
 
-6. In the confirmation dialog, select the **Yes, reprovision this Cloud PC** checkbox, and then select **Reprovision**.
+6. In the confirmation dialog, select **Yes, reprovision this Cloud PC**, and then select **Reprovision**.
 
 > [!NOTE]
 > The current user of the Cloud PC is immediately signed out and all user data is removed.
