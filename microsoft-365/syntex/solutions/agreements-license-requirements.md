@@ -21,7 +21,7 @@ description: Learn about the licensing requirements for the SharePoint Agreement
 # Licensing requirements for SharePoint Agreements AI
 
 > [!NOTE]
-> SharePoint Agreements AI is now generally available for early access customers. The licensing model is still being finalized, but early access customers can get trial licenses for **SharePoint Content Solution - Agreements Trial** to use SharePoint Agreements AI. These trial licenses are valid for six months from date of activation. Contact your Microsoft representative or submit your nomination here to obtain trial licenses: [Sign up for limited GA](https://aka.ms/AgreementsSelectiveGA). If your nomination is selected, a Microsoft representative will reach out to you within seven business days.
+> SharePoint Agreements AI is now generally available for early access customers. The licensing model is still being finalized, but early access customers can get trial licenses for **SharePoint Content Solution - Agreements Trial** to use SharePoint Agreements AI. These trial licenses are valid for six months from date of activation. Contact your Microsoft representative or submit your nomination here to obtain trial licenses: [Sign up for limited GA](https://aka.ms/AgreementsSelectiveGA). If your nomination is selected, a Microsoft representative will reach out to you within 14 business days.
 
 To activate the SharePoint Agreements AI solution in your tenant, the tenant administrator must first get the **SharePoint Content Solution - Agreements Trial** license. After you obtain the license, you need to assign the license to users who will use the solution within your organization.
 
