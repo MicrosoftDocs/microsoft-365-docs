@@ -62,8 +62,18 @@ Data columns shown are:
 
 - **Ports**: Lists the TCP or UDP ports that are combined with listed IP addresses to form the network endpoint. You may notice some duplication in IP address ranges where there are different ports listed.
 
+## [Microsoft 365 Unified Domains](cloud-microsoft-domain.md)
+
 > [!NOTE]
-> Microsoft has begun a long-term transition to providing services from the **cloud.microsoft** namespace to simplify the endpoints managed by our customers. If you are following existing guidance for allowing access to required endpoints as listed below, there’s no further action required from you.
+> In response to customer feedback and to streamline endpoint management, Microsoft has initiated the process of consolidating Microsoft 365 apps and services into a select group of dedicated, secured, and purpose-managed domains within the **.microsoft** top level domain (TLD). 
+> 
+> To avoid connectivity issues for users, please ensure that the following essential domains are included in your allow-list and that connectivity to these domains is not blocked.
+
+| ID | Category | Domain name| Purpose | Ports |
+|---|---|---|---|---|
+|184|Required|`*.cloud.microsoft`|Dedicated to authenticated user facing Microsoft SaaS product experiences.|**TCP:** 443,80<br>**UDP:** 443|
+|184|Required|`*.static.microsoft`|Dedicated to static (not customer generated) content hosted on CDNs.|**TCP:** 443,80<br>**UDP:** 443|
+|184|Required|`*.usercontent.microsoft`|Content used in Microsoft 365 experiences that requires domain isolation from applications.|**TCP:** 443,80<br>**UDP:** 443|
 
 [!INCLUDE [Microsoft 365 worldwide endpoints](../includes/office-365-worldwide-endpoints.md)]
 
