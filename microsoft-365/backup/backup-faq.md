@@ -45,7 +45,7 @@ Mailbox backup enables the recovery of copies of mailbox item "versions." Two ty
 Example events that are versions and recoverable via backup:
 
 **User action**
-- Edit a received email using ‘edit message’ via Outlook
+- Edit a received email using "edit message" via Outlook
 - Edit a Note (not draft)
 - Remove an attachment from an email
 - Edit an attachment to an email
@@ -61,10 +61,10 @@ Example events that are versions and recoverable via backup:
 Example events that aren't versioned or recoverable via backup:
 
 **User action**
-- Edit an email item in the drafts folder.
-- Update a flag on a received email.
-- Set "Do Not Forward" on a received email.
-- Set a received message to highly important.
+- Edit an email item in the drafts folder
+- Update a flag on a received email
+- Set "Do Not Forward" on a received email
+- Set a received message to highly important
 
 #### What is the service recovery point objective?
 
