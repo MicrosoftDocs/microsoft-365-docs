@@ -84,7 +84,7 @@ To give Teams Administrators the ability to complete setup and deploy frontline 
     - **microsoft.directory/servicePrincipals/create**
 1. On the **Review + create** tab, review the role definition, and then choose **Create**.
 
-    :::image type="content" source="media/dtas-custom-role.png" alt-text="Screenshot of the Review + create tab for reviewing the role definition of the new custom role." lightbox="media/dtas-custom-role.png":::
+    :::image type="content" source="media/frontline-teams-custom-role.png" alt-text="Screenshot of the Review + create tab for reviewing the role definition of the new custom role." lightbox="media/frontline-teams-custom-role.png":::
 
 #### Assign the custom role
 
@@ -93,11 +93,11 @@ To give Teams Administrators the ability to complete setup and deploy frontline 
 1. Choose **Add assignments**.
 1. Under **Select member(s)**, choose **No member selected**.
 
-    :::image type="content" source="media/dtas-custom-role-members.png" alt-text="Screenshot of the No member selected option.":::
+    :::image type="content" source="media/frontline-teams-custom-role-members.png" alt-text="Screenshot of the No member selected option.":::
 1. Select the Teams Administrators to which you want to assign the custom role. Choose **Next**.
 1. On the **Setting** tab, set **Assignment type** as **Active**.
 
-    :::image type="content" source="media/dtas-custom-role-assignment-type.png" alt-text="Screenshot of the Setting tab, showing assignment type and justification.":::
+    :::image type="content" source="media/frontline-teams-custom-role-assignment-type.png" alt-text="Screenshot of the Setting tab, showing assignment type and justification.":::
 1. Provide a justification, and then choose **Assign**.
 
 ## Set up your frontline teams
