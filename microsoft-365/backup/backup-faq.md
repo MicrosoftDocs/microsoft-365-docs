@@ -19,7 +19,6 @@ description: Read frequently asked questions about protecting your organization'
 
 # Frequently asked questions about Microsoft 365 Backup
 
-
 #### Has Microsoft's stance on shared responsibility of data protection changed?
 
 No, we still have the same point of view, but are now offering more tools to help organizations achieve those goals and responsibilities.
@@ -46,7 +45,7 @@ Mailbox backup enables the recovery of copies of mailbox item "versions." Two ty
 Example events that are versions and recoverable via backup:
 
 **User action**
-- Edit a received email using ‘edit message’ via Outlook
+- Edit a received email using "edit message" via Outlook
 - Edit a Note (not draft)
 - Remove an attachment from an email
 - Edit an attachment to an email
@@ -64,14 +63,14 @@ Example events that aren't versioned or recoverable via backup:
 **User action**
 - Edit an email item in the drafts folder
 - Update a flag on a received email
-- Set ‘Do Not Forward’ on a received email
+- Set "Do Not Forward" on a received email
 - Set a received message to highly important
 
 #### What is the service recovery point objective?
 
 The recovery point objective (RPO) is the maximum amount of time between the most recent backup and a data destruction event. Stated another way, it’s the amount data lost due to a data destruction event not recoverable via the backups. For Microsoft 365 Backup, the RPOs are:
 
-- For OneDrive and SharePoint, the RPO for the first two weeks is 10 minutes, then one week beyond that. This means for the first two weeks, the most amount of data that can be lost due to a data destruction event is roughly 10 minute’s worth of the most recent data. Likewise, after two weeks, the most amount of data that can be lost is a week’s worth of data.
+- For OneDrive and SharePoint, the RPO for the trailing two weeks is 10 minutes. This means if it's Monday at 8:00 AM, you can go back in time to any 10-minute period up to two weeks in the past. Beyond that, you can go to any one week period of time in past from 2 to 52 weeks in the past.
 
 - For Exchange Online, the RPO is 10 minutes, meaning the most amount of data that can be lost due to a data destruction event is roughly 10 minutes’s worth of data.
 
