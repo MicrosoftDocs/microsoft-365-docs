@@ -4,8 +4,8 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: katmartin
-ms.date: 07/03/2023
+ms.reviewer: ebamoh
+ms.date: 10/21/2024
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-lighthouse
@@ -42,7 +42,7 @@ You must be a Cloud PC Administrator in the partner tenant.
 
 5. In the device details pane, select **Reprovision**.
 
-6. In the confirmation dialog, select **Reprovision**.
+6. In the confirmation dialog, select **Yes, reprovision this Cloud PC**, and then select **Reprovision**.
 
 > [!NOTE]
 > The current user of the Cloud PC is immediately signed out and all user data is removed.
@@ -57,7 +57,7 @@ You must be a Cloud PC Administrator in the partner tenant.
 
 4. In the device details pane, select the **Device action status** tab.
 
-The tab displays any current actions queued for this device, including the action type, status, and timestamp.
+The tab displays the status of the most recent action queued for the selected device, including the action type, status, and timestamp.
 
 ## Related content
 

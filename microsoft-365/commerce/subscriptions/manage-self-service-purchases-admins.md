@@ -71,7 +71,8 @@ We use the directory data to provide the user with a license and to send email a
 [!INCLUDE [office-365-operated-by-21vianet-admin-center-link](../../includes/office-365-operated-by-21vianet-admin-center-link.md)]
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-2. On the **Products** tab, select the filter icon, then select **Self-service**.
+1. Select the **Self-service trials** tab. 
+
 3. To view more details about a subscription, select one from the list.
 
 ## View who has licenses for a self-service purchase or trial subscription
@@ -121,7 +122,7 @@ You can use the Microsoft 365 admin center to manage self-service purchases and 
 The **MSCommerce** PowerShell module includes a **PolicyID** parameter value for **AllowSelfServicePurchase**. This parameter lets you control whether users in your organization can make purchases or start trials, and for which products. The module lets you do the same tasks available in the Microsoft 365 admin center, only from the command line. In addition, the module lets you view the default state of the **AllowSelfServicePurchase** parameter value for each product.
 
 > [!IMPORTANT]
-> When you use the **AllowSelfServicePurchase** policy, it controls both purchases and trials. For a list of the products available, see [View a list of self-service purchase products and their status](allowselfservicepurchase-powershell.md#view-a-list-of-self-service-purchase-products-and-their-status).
+> When you use the **AllowSelfServicePurchase** policy, it controls both purchases and trials. For a list of the products available, see [View a list of self-service purchase Microsoft products and their status](allowselfservicepurchase-powershell.md#view-a-list-of-self-service-purchase-microsoft-products-and-their-status).
 
 For more information, see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).
 
