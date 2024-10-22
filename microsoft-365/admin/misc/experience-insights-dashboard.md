@@ -130,7 +130,7 @@ Help articles can be found in-app in the help pane or at the [Microsoft support 
 
 ## Manage adoption success with actions in Experience insights
 
-Actions let you track the actions you take to drive user engagement and success for Microsoft 365 in your organization. You can measure the impact of your actions by analyzing how each action correlates with changes in usage, NPS, feedback, and help article views. This empowers you to make data-driven decisions and continuously improve your strategies for user engagement and satisfaction. 
+Actions let you track the actions you take to drive user engagement and success for Microsoft 365 in your organization. You can measure the impact of your actions by analyzing how each action correlates with changes in usage, NPS, feedback, and help article views. This empowers you to make data-driven decisions and continuously improve your strategies for user engagement and satisfaction.
 
 The actions experience within Microsoft 365 admin center includes the following features and capabilities: 
 
