@@ -23,8 +23,8 @@ ms.date: 10/01/2024
 
 # Set up open shifts across locations in Shifts for your frontline
 
-> [!IMPORTANT]
-> This article describes a Microsoft Teams feature that hasn't yet been released. It's been announced, and it's coming soon. To stay on top of upcoming Teams features, check out the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Teams).
+> [!NOTE]
+> This feature is currently in public preview.
 
 ## Overview
 
