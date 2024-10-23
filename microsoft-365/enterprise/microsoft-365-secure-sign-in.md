@@ -5,7 +5,7 @@ f1.keywords:
 author: kelleyvice-msft
 ms.author: kvice
 manager: scotv
-ms.date: 04/12/2024
+ms.date: 10/22/2024
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -67,6 +67,8 @@ There are three ways to require your users to use MFA based on your Microsoft 36
 |Microsoft 365 E3 (includes Microsoft Entra ID P1 licenses)     | Use the [common Conditional Access policies](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) to configure the following policies: <br>- [Require MFA for administrators](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Require MFA for all users](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Block legacy authentication](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
 |Microsoft 365 E5 (includes Microsoft Entra ID P2 licenses)     | Taking advantage of Microsoft Entra ID Protection, begin to implement Microsoft's recommended set of Conditional Access and related policies by creating these two policies:<br> - [Require MFA when sign-in risk is medium or high](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk) <br>- [High risk users must change password](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk-user)       |
 | | |
+
+You can find more information on managing MFA at [Multifactor authentication for Microsoft 365](/admin/security-and-compliance/multi-factor-authentication-microsoft-365).
 
 ### Security defaults
 
