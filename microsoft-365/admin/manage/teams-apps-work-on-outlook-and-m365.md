@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
-ms.date: 09/18/2024
+ms.date: 10/11/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -146,14 +146,15 @@ As an admin, you can control which apps can be installed and used by which users
 
 ### Customize default settings for Teams apps that work on Outlook and the Microsoft 365 app
 
-As an admin, you can control the default state of any new and incoming app in your organization. The default setting for any organization is set to **All users in the organization can install**. You can change this default setting on Integrated Apps in the Microsoft 365 admin center.
+As an admin, you can control the default state of any new and incoming app in your organization. You can do this individually for Microsoft apps, third party apps, and custom apps.  The default setting for any organization is set to **Allow all users in the organization to access apps**. You can change this default setting on Integrated Apps in the Microsoft 365 admin center.
 
 1. Sign into the Microsoft 365 admin center as a Global Administrator.
 2. Select **Settings**, then select **Integrated Apps**.
 3. Select the **Available Apps** list.
-4. Next, select the Settings icon to open the **Customize default settings** pane.
-5. Select the dropdown menu to change the default settings to **All users in the organization can install apps on their own** or **Only admins can install apps for users in the organization**.
-    - When you select **Only admins can install apps for users in the  organization**, the availability status for apps changes to **No users in the organization can install**.
+4. Next, select the Settings icon at the top of the apps list to open the **Customize default settings** pane.
+5. For each app type category, set up the toggle to allow or disallow all apps to be installed by users.
+    - When you switch the toggle to **Yes**, the apps under that app type will be allowed for users to install.
+    - When you switch the toggle to **No**, the apps under that app type will not be allowed for users to install.  Additionally, apps previously installed by users under that app type will no longer be accessible to the users.  This does not impact an admin's ability to install the apps. When the toggle is switched to **No**, admins can still install the apps, and all admin-installed apps would still continue to be accessible to the users.
 
 The default tenant state applies to the following apps:
 
@@ -165,10 +166,6 @@ The default tenant state applies to the following apps:
 
 The default tenant state won't apply to the following apps:
 
-- Custom/LOB apps uploaded by the admin.
-    - When a custom/LOB app is uploaded by the admin via the Microsoft 365 admin center, all users in the organization have access to install the app by default. For more information, see the section about [how to upload a custom/LOB app](#upload-custom-teams-apps-that-work-on-outlook-and-the-microsoft-365-app).
-        - Admins can continue to deploy the custom/LOB app to a selected set of users.
-        - Admins can also edit which users have access to install and use the custom/LOB app. For more information, see the section about [how to upload a custom/LOB app](#upload-custom-teams-apps-that-work-on-outlook-and-the-microsoft-365-app).
 - Apps that have any user selections made by the admin.
     - The changes made by the admin as part of **How to manage the availability of an app in your organization** are honored over the default state in the tenant. Once an admin specifies users for an app, this setting supersedes the tenant-wide default setting for that app.
 
