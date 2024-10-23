@@ -13,7 +13,7 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 hideEdit: true
-ms.date: 10/04/2024
+ms.date: 10/22/2024
 ---
 
 # Data, privacy, and security for web queries in Microsoft 365 Copilot and Microsoft Copilot
@@ -94,6 +94,9 @@ The Bing search service operates separately from Microsoft 365 and has different
 To manage web search so it aligns with organizational policies, user preferences, and security considerations, two distinct controls are introduced: one for IT Administrators and another for end-users (only for Microsoft 365 Copilot).
 
 ### IT administrator control for both Microsoft 365 Copilot and Microsoft Copilot
+
+> [!NOTE]
+> In the second half of November 2024, we'll be adding a new policy to provide you with more control for making web search available to your users. The policy will be called "Allow web search in Copilot" and will be available only in [Cloud Policy service for Microsoft 365](/microsoft-365-apps/admin-center/overview-cloud-policy). We’ll update this section with more details once the new policy is available.
 
 Web search in both Microsoft 365 Copilot and Microsoft Copilot is part of optional connected experiences for Microsoft 365. The [privacy setting for optional connected experiences](/microsoft-365-apps/privacy/manage-privacy-controls#policy-setting-for-optional-connected-experiences) allows IT admins to either enable or disable web search for users or user groups across the tenant they manage in accordance with their organization’s policies, data privacy laws, or other regulatory requirements. This applies to both Microsoft 365 Copilot and Microsoft Copilot.
 
