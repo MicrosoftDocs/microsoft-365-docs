@@ -142,7 +142,7 @@ The following steps can help administrators control user access and therefore li
 - [Use Microsoft Purview AI Hub](/purview/ai-microsoft-purview) (currently in preview) to discover sensitive data shared with Copilot, see files referenced in Copilot responses, and discover unlabeled files referenced by Copilot and associated SharePoint sites, thereby letting you identify and protect files at risk of overexposure.
 - Set up policies that remove old and unused data and limit data sprawl due to data oversharing with [Microsoft Purview Data Lifecycle Management](/purview/data-lifecycle-management).
 
-## How can I use Microsoft security solutions to protect data and AI application interactions?
+### How can I use Microsoft security solutions to protect data and AI application interactions?
 
 Microsoft always recommends that you build a strong security foundation for your enterprise. The [Zero Trust](/security/zero-trust/copilots/zero-trust-microsoft-365-copilot) security strategy provides guidance for such a foundation because it treats each connection and resource request as though it originated from an uncontrolled network and a threat actor. Regardless of where the request originates or what resource it accesses, use Zero Trust principles.  
 
@@ -156,6 +156,6 @@ Our comprehensive security solutions—including Microsoft Defender, Entra, 
 
 For example, we recently introduced new Microsoft Defender and Purview capabilities that provide purpose-built tools for robust security and governance of generative AI applications and their data. In addition, the seamless integration of [Microsoft Copilot for Security](/copilot/security/microsoft-security-copilot) across our products streamlines the overall process and experience for security analysts. By prioritizing security and offering these advanced features, Microsoft empowers organizations to confidently apply the benefits and opportunities AI applications provide.
 
-## Where should I report vulnerabilities in Microsoft 365 Copilot and other AI applications? 
+### Where should I report vulnerabilities in Microsoft 365 Copilot and other AI applications? 
 
 If you discover new vulnerabilities in any AI platform, we encourage you to follow responsible disclosure practices for the platform owner. Microsoft’s own procedure (for Copilot) is explained in this page: [Microsoft AI Bounty Program](https://www.microsoft.com/msrc/bounty-ai).
