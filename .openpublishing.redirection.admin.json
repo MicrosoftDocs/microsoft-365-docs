@@ -2184,6 +2184,11 @@
           "source_path": "microsoft-365/admin/email/remove-license-from-shared-mailbox.md",
           "redirect_url": "/microsoft-365/admin/email/create-a-shared-mailbox",
           "redirect_document_id": false
-          }
+          },
+          {
+            "source_path": "microsoft-365/admin/admin-overview/what-is-microsoft-365.md",
+            "redirect_url": "/microsoft-365/business-premium/m365bp-overview",
+            "redirect_document_id": false
+            }
    ]
  }
