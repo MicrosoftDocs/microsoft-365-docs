@@ -23,6 +23,24 @@ search.appverid:
 description: "Learn about the governance, data lifecycle management, and compliance capabilities for Loop experiences."
 ---
 
+<!---
+this appears to create equal column width tables for the entire page, but i'm not sure if learn.microsoft.com supports it, so commenting out for now.
+<style>
+table th:first-of-type {
+    width: 25%;
+}
+table th:nth-of-type(2) {
+    width: 25%;
+}
+table th:nth-of-type(3) {
+    width: 25%;
+}
+table th:nth-of-type(4) {
+    width: 25%;
+}
+</style>
+--->
+
 # Summary of governance, lifecycle, and compliance capabilities for Loop
 
 As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on the latest governance, data lifecycle, and compliance posture for the software solutions being used in your organization. This article details the capabilities available and not available yet for [Microsoft Loop](https://www.microsoft.com/en-us/microsoft-loop).
@@ -36,6 +54,7 @@ Where the Loop content was originally created determines its storage location:
 |Loop content originally created in|️️️Loop content stored in SharePoint Embedded|Loop content stored in SharePoint Site|Loop content stored in User's OneDrive|
 |-----|-----|-----|-----|
 |Loop app|✔️in Loop workspace|||
+|Copilot Pages|✔️in Loop workspace|||
 |Teams channel meeting||✔️in Channel folder||
 |Teams channel||✔️in Channel folder||
 |Teams private chat|||✔️in Microsoft Teams Chat files folder|
@@ -44,13 +63,12 @@ Where the Loop content was originally created determines its storage location:
 |OneNote for Windows or for the web|||✔️in OneNote Loop files folder|
 |Whiteboard|||✔️in Whiteboard\Components folder|
 
-
 ## Summary table of admin management, governance, lifecycle, and compliance capabilities based on where Loop content is stored
 |Category|OneDrive or SharePoint|SharePoint Embedded|
 |-----|-----|-----|
 |  |This column applies to Loop content:  <ul><li>Created in all other places without tightly associated collaborative storage (for example, Teams chat, Outlook email, Word for the web, Whiteboard) ➡️️ in the creator's OneDrive  <li>Created in places with dedicated shared storage (for example, Teams channels) ➡️️ SharePoint  </ul>|This column applies to Loop content:  <ul><li>Created inside the Loop app: Workspaces, Ideas ➡️ in SharePoint Embedded, one container per Loop workspace  </ul>|
 |***Foundations***|---|---|
-|Admin toggles  |**[Admin Toggles](/microsoft-365/loop/loop-components-configuration#available-policy-settings)** exist to turn on or off creation of and live rendering of Loop components in the Microsoft 365 ecosystem. If you enable Loop components in the Microsoft 365 ecosystem via the primary toggle, there are additional toggles to turn on or off Loop components in Outlook or Teams chats and channels. There's also an additional toggle to turn on or off Loop components for collaborative meeting notes.  <br><br>Organizations with eCommunication regulations can configure Loop components ON across the Microsoft 365 ecosystem, while turning OFF Loop components in communication tools during evaluation of Loop's data lifecycle, governance, and compliance capabilities.|**[Admin Toggle](/microsoft-365/loop/loop-workspaces-configuration)** exists to turn on or off creation of content stored in SharePoint Embedded, including Loop Ideas and new workspaces.|
+|Admin toggles  |**[Admin Toggles](/microsoft-365/loop/loop-components-configuration#available-policy-settings)** exist to turn on or off creation of and live rendering of Loop components in the Microsoft 365 ecosystem. If you enable Loop components in the Microsoft 365 ecosystem via the primary toggle, there are additional toggles to turn on or off Loop components in Outlook or Teams chats and channels. There's also an additional toggle to turn on or off Loop components for collaborative meeting notes.|**[Admin Toggle](/microsoft-365/loop/loop-workspaces-configuration)** exists to turn on or off creation of content stored in SharePoint Embedded, including Loop Ideas and new workspaces.|
 |GDPR  |**GDPR** data subject requests can be serviced as part of the [Microsoft Purview portal](/compliance/regulatory/gdpr-data-subject-requests#data-subject-request-admin-tools) and [Purview eDiscovery workflows](/purview/ediscovery)|**GDPR** data subject requests can be serviced as part of the [Microsoft Purview portal](/compliance/regulatory/gdpr-data-subject-requests#data-subject-request-admin-tools) and [Purview eDiscovery workflows](/purview/ediscovery)|
 |EUDB  |**EUDB** compliant - [What is the EU Data Boundary?](/privacy/eudb/eu-data-boundary-learn)|**EUDB** compliant - [What is the EU Data Boundary?](/privacy/eudb/eu-data-boundary-learn)|
 |***Data Security, Devices***|---|---|
@@ -70,7 +88,7 @@ Where the Loop content was originally created determines its storage location:
 |Audit log access  |**Audit** logs are retained, can be exported, and can be streamed to third party tools|**Audit** logs are retained, can be exported, and can be streamed to third party tools|
 |***eDiscovery***|---|---|
 |Search, Collection, Review, Export (Purview)  |Microsoft **[Purview eDiscovery](/microsoft-365/loop/loop-components-teams#do-loop-and-fluid-files-support-ediscovery)** supports search and collection, review (premium license required for admin), and export (premium license required for admin) as HTML or original. You can also download and reupload the files to any OneDrive to view them in their native format.<br><br>**Not Yet Available**:  <br>Full text search of content within .loop files in Purview review sets.|Microsoft **[Purview eDiscovery](/microsoft-365/loop/loop-components-teams#do-loop-and-fluid-files-support-ediscovery)** supports search and collection, review (premium license required for admin), and export (premium license required for admin) as HTML or original. You can also download and reupload the files to any OneDrive to view them in their native format.<br><br>**Not Yet Available**:  <br>Full text search of content within .loop files in Purview review sets.|
-|Export (Third Party Tools)  |Microsoft **[Graph API](/graph/api/driveitem-get-content-format)** export support.|**Not Yet Available**:  <br>[Programmatic API access to Loop workspace containers](#programmatic-apis-not-yet-available) isn't yet available.|
+|Export (Third Party Tools)  |Microsoft **[Graph API](/graph/api/driveitem-get-content-format)** export support.|Microsoft **[Graph API](/graph/api/driveitem-get-content-format)** export support.  <br><br>Use [Get-SPOApplication](/powershell/module/sharepoint-online/get-spoapplication?view=sharepoint-ps) to view guest application permissions.  <br>Use [Set-SPOApplication](/powershell/module/sharepoint-online/set-spoapplicationpermission) to manage guest application permissions.|
 |Legal Hold  |**Legal Hold** support to ensure content isn't deleted (as related to litigation and security investigations) and stored in the [Preservation Hold Library](/sharepoint/governance/ediscovery-and-in-place-holds-in-sharepoint-server).|**Legal Hold** support to ensure content isn't deleted (as related to litigation and security investigations) and stored in the [Preservation Hold Library](/sharepoint/governance/ediscovery-and-in-place-holds-in-sharepoint-server).|
 |***Microsoft 365 retention and deletion***|---|---|
 |Retention policies  |**[Retention policies](/purview/create-retention-policies?tabs=other-retention)** from Microsoft Purview Data Lifecycle Management are enforced for all .loop files.|**[Retention policies](/purview/create-retention-policies?tabs=other-retention)** from Microsoft Purview Data Lifecycle Management configured for all SharePoint sites are enforced for all .loop files or alternatively can be configured per Loop workspace *.|
@@ -93,9 +111,6 @@ For detailed information on existing capabilities in SharePoint Admin Center and
 ### Not yet available
 
 The following sections detail capabilities that are **not yet available** for Microsoft Loop to make it easier to evaluate the smaller list of capabilities your organization might require before using Microsoft Loop. As denoted in the summary table, the content applies to Loop workspaces only.
-
-### Programmatic APIs not yet available
-- **Programmatic APIs for Loop workspace content**: API access to Loop workspace containers isn't yet available. These APIs are required in order to use third party tools for export and eDiscovery, migration, communicating in bulk to end-users about their content such as compliance requirements, and developer APIs.
 
 ### Admin Management not yet available
 
