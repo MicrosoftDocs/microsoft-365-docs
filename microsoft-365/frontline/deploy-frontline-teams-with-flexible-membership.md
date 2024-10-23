@@ -28,7 +28,7 @@ ms.date:
 
 ## Overview
 
-Create and manage frontline teams in bulk to drive communication and collaboration for every location in your frontline workforce. Team membership of your frontline teams is automatically synced with your frontline workers’ [Microsoft Entra attributes](/entra/external-id/customers/how-to-define-custom-attributes). Frontline managers at each of your locations, like department heads, store leads, and warehouse managers, can manually add or remove members as team owners.
+Create and manage frontline teams in bulk to drive communication and collaboration for every location in your frontline workforce. Team membership of your frontline teams is automatically synced with your frontline workers’ [Microsoft Entra attributes](/entra/external-id/customers/how-to-define-custom-attributes). Frontline managers at each of your locations, like department heads, store leads, and warehouse managers, as team owners, can manually add or remove members.
 
 > [!NOTE]
 > If you would like to provide feedback and help improve this feature, fill out this [form](https://forms.microsoft.com/r/DWaJXA6Dax).
@@ -51,7 +51,7 @@ Team membership is automatically managed over time through the power of dynamic 
 > Changes that frontline managers make override any changes made by dynamic rules. Here's some examples:
 >
 >- User1 is added to a team based on dynamic rules. The frontline manager of the team then manually removes user1. In this scenario, user1 won't be added to the team again unless the frontline manager manually adds user1 back to the team.
->- A frontline manager adds a user from Location A to their team for Location B. In this scenario, the user won't be removed from Location B unless the frontline manager manually removes the user. This user continues to be a part of the team for Location A based on dynamic rules.
+>- A frontline manager adds a user from the Location A team to their Location B team. In this scenario, the user is still a member of the Location A team based on dynamic rules and now part of the Location B team by the manual addition. This user won't be removed from the Location B team unless the frontline manager manually removes the user. In this way, frontline workers can be part of multiple teams at the same time.
 
 ## Before you begin
 
@@ -110,7 +110,7 @@ To give Teams Administrators the ability to complete setup and deploy frontline 
 
     :::image type="content" source="media/dtas-manage-setup.png" alt-text="Screenshot of the Manage frontline teams page, showing the Set up button." lightbox="media/dtas-manage-setup.png":::
 
-1. Review the setup and prerequisites information.
+1. On the Overivew page, review the setup and prerequisites information.
 
 1. On the Select your frontline workforce page, select the Microsoft 365 dynamic groups that include your frontline workers. You can choose up to 32 Microsoft 365 dynamic groups. You can change these groups, as needed, after you submit your setup.
 
@@ -143,7 +143,7 @@ To give Teams Administrators the ability to complete setup and deploy frontline 
 
     These attributes map departments and job titles in your organization, which allows you to deliver targeted communications features, such as [automatic tags](set-up-targeted-communications.md#automatic-tags), to your frontline. Your frontline workers can quickly and easily reach the right group of people through tags that are automatically created based on the attribute mappings. [Learn more about attribute mapping and targeted communications](set-up-targeted-communications.md).
 
-1. Review your settings, and then choose **Finish setup.**
+1. Review your settings, and then choose **Submit.**
 
     :::image type="content" source="media/dtas-setup-submitted.png" alt-text="Screenshot of the Manage frontline teams page with a banner showing that setup is in progress." lightbox="media/dtas-setup-submitted.png":::
 
