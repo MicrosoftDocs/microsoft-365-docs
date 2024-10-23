@@ -31,7 +31,7 @@ At Microsoft, security isn't just a priority; it's the foundation for everything
 
 Our comprehensive security posture for AI has the following pillars:
 
-- **Responsible AI development**: Microsoft champions responsible AI principles. These principles emphasize fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability throughout the AI lifecycle.
+- **Responsible AI development**: Microsoft champions [responsible AI principles](https://www.microsoft.com/ai/responsible-ai). These principles emphasize fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability throughout the AI lifecycle.
 - **Security best practices**: We provide tailored resources and best practices for developers, engineers, and security professionals working with Microsoft AI products. These resources help organizations understand and implement security measures during deployment.
 - **Security development lifecycle (SDL)**: Our rigorous SDL integrates security considerations throughout the entire AI development process. This proactive approach ensures vulnerabilities are identified and mitigated from the very beginning.
 - **Threat research, detection, and mitigation**: We actively invest in strategies to detect and mitigate threats to our AI models. This includes ongoing vulnerability monitoring and developing countermeasures against potential attacks. Microsoft Threat Intelligence, our global network of researchers, also monitors the [threat landscape](https://www.microsoft.com/security/blog/threat-intelligence/ai-threats/) for threat actors and cyberattacks that might take advantage of AI applications.
