@@ -17,7 +17,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 10/01/2024
+ms.date: 10/24/2024
 
 ---
 
@@ -47,11 +47,11 @@ With this feature, you can:
 
 ## Set up your hierarchy
 
-First, define a [frontline operational hierarchy](deploy-frontline-operational-hierarchy.md) in the Teams admin center to map your organization's structure of frontline teams and locations to a hierarchy.
+As an admin, you define a [frontline operational hierarchy](deploy-frontline-operational-hierarchy.md) in the Teams admin center to map your organization's structure of frontline teams and locations to a hierarchy.
 
 You can organize your organization’s teams by country, region, area, city, district, and so on.
 
-## How it works
+## Turn on open shifts across locations
 
 After you define your hierarchy, frontline managers (team owners or schedule owners) must turn on the feature for their team's schedule on the **Settings** tab in Shifts.
 
@@ -66,14 +66,12 @@ After a manager turns on the capability in Shifts settings, they can choose to e
 
 Frontline workers who are part of the same schedule group in other locations can see and request the open shifts. The manager at the location where the open shift is available can approve (or decline) the request.
 
-Keep in mind the following:
+### What you need to know about schedule group names
 
 - The schedule group name for an open shift must match across locations. This ensures that open shifts shared by a manager are available to all workers in the same schedule group at other locations within the hierarchy.
 - Schedule group names aren’t case-sensitive. For example, if a schedule group is named "Cashiers" at some locations and "cashiers" at other locations, the open shift is available across all those locations.
 
-To learn more about the user experience, see [Use open shifts across locations in Shifts]().
-
-### Example scenario
+## Example scenario
 
 Contoso has hundreds of stores. Each store is grouped into an area and is managed by a different manager. To simplify this scenario, we focus on two stores in the West area.
 
