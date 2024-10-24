@@ -166,9 +166,9 @@ To give Teams Administrators the ability to complete setup and deploy frontline 
 
     After deployment is completed, you'll see the number of deployed frontline teams in the **Frontline teams** card. You can also download a CSV file with a list of those teams.
 
-    :::image type="content" source="media/dtas-deploy-completed.png" alt-text="Screenshot of where you can get the CSV file on the Manage frontline teams page." lightbox="media/dtas-deploy-completed.png":::
+    :::image type="content" source="media/frontline-teams-deploy-completed.png" alt-text="Screenshot showing the Frontline teams card and the Deployment health card on the Manage frontline teams page." lightbox="media/frontline-teams-deploy-completed.png":::
 
-    If an error occurred during the deployment process, you can download the error CSV file on the **Last deployment health** card. Use the information in it to help resolve the errors, and then rerun the deployment experience
+    If an error occurred during the deployment process, you can download the error CSV file on the **Deployment health** card. Use the information in it to help resolve the errors, and then rerun the deployment experience
 
 1. You can repeat this process for any frontline locations that don't have a team.
 
@@ -188,7 +188,7 @@ You can manage your teams when changes happen in your organization.
 
 1. After the refresh is completed, your setup status shows as **Complete**. You can proceed to [deploy your new teams](#deploy-your-frontline-teams). Deployment can take several hours depending on how many new teams you're deploying.
 
-### Edit your frontline team settings
+### Edit your frontline teams settings
 
 1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose **Frontline deployment** > **Manage frontline teams**.
 1. In the **Deployment settings** column, choose **Deploy frontline teams**.
