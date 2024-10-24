@@ -115,6 +115,7 @@ The Loop experiences (except for Microsoft Teams) check the following [Cloud Pol
         - **Enabled**: Copilot pages experience is available to the users.
         - **Disabled**: Copilot pages experience isn't available to the users.
         - **Not configured**: Copilot pages experience is available to the users.
+        - **NOTE**: If your organization has [disabled the creation of OneDrive](/sharepoint/manage-user-profiles#disable-onedrive-creation-for-some-users), regardless of the setting noted here, these people in your organization will not be able to create a Copilot Pages workspace.
     - For **Create and view Loop files in Outlook**:
         - **Enabled**: Loop experience is available to the users.
         - **Disabled**: Loop experience isn't available to the users.
