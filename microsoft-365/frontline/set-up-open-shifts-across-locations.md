@@ -66,7 +66,7 @@ After a manager turns on the capability in Shifts settings, they can choose to e
 
 Frontline workers who are part of the same schedule group in other locations can see and request the open shifts. The manager at the location where the open shift is available can approve (or decline) the request.
 
-### What you need to know about schedule group names
+**What you need to know about schedule group names**
 
 - The schedule group name for an open shift must match across locations. This ensures that open shifts shared by a manager are available to all workers in the same schedule group at other locations within the hierarchy.
 - Schedule group names aren’t case-sensitive. For example, if a schedule group is named "Cashiers" at some locations and "cashiers" at other locations, the open shift is available across all those locations.
