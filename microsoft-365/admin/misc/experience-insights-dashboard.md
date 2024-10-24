@@ -100,9 +100,37 @@ For the first time, you can now see what articles your users are consuming on Su
 
 :::image type="content" source="../../media/experience-insights-teams-help-article2.png" alt-text="Screenshot: Image showing the number of help articles read and the corresponding Microsoft 365 product":::
 
-## Manage adoption success with actions in Experience insights 
+## Interpret your organization's help article views
 
-Actions let you track the actions you take to drive user engagement and success for Microsoft 365 in your organization. You can measure the impact of your actions by analyzing how each action correlates with changes in usage, NPS, feedback, and help article views. This empowers you to make data-driven decisions and continuously improve your strategies for user engagement and satisfaction. 
+Chart information gives you insight into the apps and services that you want to track data on. Help article views is the total number of help article page views that users in your organization have viewed in a Microsoft 365 app or on support.microsoft.com.
+
+:::image type="content" source="../../media/help-articles-detail-view2.png" alt-text="Screenshot: Image showing the Help article views.":::
+
+> [!NOTE]
+> Help article views are only shown for users who have signed in to the desktop app or have signed in to [support.microsoft.com](https://support.microsoft.com).
+
+|Item|Description|
+|:-----|:-----|
+|1 |Use the Help content tab to see where people need help using the app or service. |
+|2 |You can filter for trends over the last 30 days, 90 days, or 180 days. |
+|3 |Total number of help article page views in app or on [support.microsoft.com](https://support.microsoft.com). |
+|4 |List of the top help articles related to the app or service that your end-users are reading. If an article covers multiple apps, it will be shown for each related app. |
+
+## Examples of help articles
+
+Help articles can be found in-app in the help pane or at the [Microsoft support page](https://support.microsoft.com/).
+
+### Help article on Microsoft support page
+
+:::image type="content" source="../../media/help-article-example.png" alt-text="Screenshot: Example support.microsoft.com article":::
+
+### In-app help article in Microsoft Word
+
+:::image type="content" source="../../media/help-article-example-in-app-word.png" alt-text="Screenshot: Example Word desktop app help article":::
+
+## Manage adoption success with actions in Experience insights
+
+Actions let you track the actions you take to drive user engagement and success for Microsoft 365 in your organization. You can measure the impact of your actions by analyzing how each action correlates with changes in usage, NPS, feedback, and help article views. This empowers you to make data-driven decisions and continuously improve your strategies for user engagement and satisfaction.
 
 The actions experience within Microsoft 365 admin center includes the following features and capabilities: 
 
@@ -144,9 +172,7 @@ Adding new actions
 
 3.     Once all required details are entered, select __Save__.
 
- 
-
-You can also import multiple actions from CSV.   Select __Import from CSV__ and follow the instructions for editing and uploading the file. There’s even a sample, pre-formatted CSV file that you can use to get started.
+ You can also import multiple actions from CSV.   Select __Import from CSV__ and follow the instructions for editing and uploading the file. There’s even a sample, pre-formatted CSV file that you can use to get started.
 
 ### Viewing action impact
 
@@ -159,7 +185,7 @@ Once an action is added, you can view it in the graphs in Experience insights, f
 1. On the date of the action, there will be a vertical dashed line tracking the action against the graph’s data.
 
    Note: You might need to change the __Date range__ to see the action.
-   
+
 1. When you select the __Title__ of the action, above the vertical dashed line, you’ll get more details about the action.
 
 ![Detail page of actions in the Unique active users by day chart. One label shows a single action, another dropdown shows ‘2 actions’ with description.](media/experience-insights-dashboard/action-impact.png)
