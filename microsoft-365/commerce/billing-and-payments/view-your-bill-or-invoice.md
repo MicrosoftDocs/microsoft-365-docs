@@ -50,11 +50,17 @@ You can view your invoice for your Microsoft business subscription in the Micros
 ## Before you begin
 
 You must be at least a Billing Administrator to do the steps described in this article. For more information, see [About admin roles in the Microsoft 365 admin center](../../admin/add-users/about-admin-roles.md).
+
+## Watch: View, download, or print your bill
   
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198016).
+
+> [!VIDEO 657e4bbf-a476-459f-9fba-58ca5e441f9f]
+
 ## View your bill or invoice
 
 1. Go to the Microsoft 365 admin center.
-    - If you're using the **Simplified view**, select **Billing**, then select **View invoices**.
+   - If you're using the **Simplified view**, select **Billing**, then select **View invoices**.
    - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
 2. If you have more than one billing account, select **Change billing account** to view invoices associated with each billing account.
 3. Select an invoice from the list to view the details online. If you don’t see any invoices, change the date range.
