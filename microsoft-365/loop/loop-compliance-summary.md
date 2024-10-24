@@ -23,24 +23,6 @@ search.appverid:
 description: "Learn about the governance, data lifecycle management, and compliance capabilities for Loop experiences."
 ---
 
-<!---
-this appears to create equal column width tables for the entire page, but i'm not sure if learn.microsoft.com supports it, so commenting out for now.
-<style>
-table th:first-of-type {
-    width: 25%;
-}
-table th:nth-of-type(2) {
-    width: 25%;
-}
-table th:nth-of-type(3) {
-    width: 25%;
-}
-table th:nth-of-type(4) {
-    width: 25%;
-}
-</style>
---->
-
 # Summary of governance, lifecycle, and compliance capabilities for Loop
 
 As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on the latest governance, data lifecycle, and compliance posture for the software solutions being used in your organization. This article details the capabilities available and not available yet for [Microsoft Loop](https://www.microsoft.com/en-us/microsoft-loop).
