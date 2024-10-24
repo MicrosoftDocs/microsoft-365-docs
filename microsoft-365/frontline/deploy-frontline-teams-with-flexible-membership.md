@@ -137,7 +137,7 @@ To give Teams Administrators the ability to complete setup and deploy frontline 
 1. On the Map frontline attributes page, select the Microsoft Entra attributes that most accurately reflect the departments and job titles in your organization. You can set the **Department attribute**, **Job title attribute**, or both.
 
     > [!NOTE]
-    > This step is optional. If you choose not to map frontline attributes, leave the values as **None**. You can always come back and map them later on the [Frontline teams settings page](#edit-your-frontline-team-settings).
+    > This step is optional. If you choose not to map frontline attributes, leave the values as **None**. You can always come back and map them later on the [Frontline teams settings page](#edit-your-frontline-teams-settings).
 
     :::image type="content" source="media/frontline-teams-map-attributes.png" alt-text="Screenshot showing where to map your Microsoft Entra attributes for Job title and Department." lightbox="media/frontline-teams-map-attributes.png":::
 
