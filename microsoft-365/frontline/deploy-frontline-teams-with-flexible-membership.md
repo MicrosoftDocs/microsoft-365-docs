@@ -28,7 +28,7 @@ ms.date: 10/24/2024
 
 ## Overview
 
-Create and manage frontline teams in bulk to drive communication and collaboration for every location in your frontline workforce. Team membership of your frontline teams is automatically synced with your frontline workers’ [Microsoft Entra attributes](/entra/external-id/customers/how-to-define-custom-attributes). Frontline managers at each of your locations, like department heads, store leads, and warehouse managers, as team owners, can manually add or remove members.
+Create and manage frontline teams in bulk to drive communication and collaboration for every location in your frontline workforce. Team membership of your frontline teams is automatically synced with your frontline workers’ [Microsoft Entra attributes](/entra/external-id/customers/how-to-define-custom-attributes). Frontline managers at each of your locations, like department heads, store leads, and warehouse managers, can manually add or remove members.
 
 > [!NOTE]
 > If you would like to provide feedback and help improve this feature, fill out this [form](https://forms.office.com/r/MPfxrGG9h4).
@@ -130,9 +130,11 @@ To give Teams Administrators the ability to complete setup and deploy frontline 
 
     > [!NOTE]
     > Currently, only team templates that are set to the English (United States) locale are supported. Keep in mind that the locale doesn't affect translation of the template or data residency. The locale setting is used only to distinguish between templates that have the same name that are created in different languages.
-1. Select up to 20 Microsoft 365 dynamic groups that include at least one frontline worker from each location to be made team owner. Every location you want to deploy must have at least one frontline worker set as team owner. For example, team owners can be your frontline managers, department heads, and/or leads.
+1. Select up to 20 Microsoft 365 dynamic groups that include at least one frontline worker from each location to be made team owner.
 
-    Team owners can add or remove membership from their frontline teams.
+    Every location you want to deploy must have at least one frontline worker set as team owner. Team owners can add or remove membership from their frontline teams. For example, team owners can be your frontline managers, department heads, and/or leads.
+    
+    You can change these groups, as needed, after you submit your setup.
 
 1. On the Map frontline attributes page, select the Microsoft Entra attributes that most accurately reflect the departments and job titles in your organization. You can set the **Department attribute**, **Job title attribute**, or both.
 
