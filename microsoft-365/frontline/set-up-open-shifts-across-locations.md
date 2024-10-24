@@ -45,7 +45,7 @@ With this feature, you can:
 > [!NOTE]
 > This feature isn't yet supported if you integrated Shifts with your workforce management (WFM) system through a [Shifts connector](shifts-connectors.md).
 
-## Setup
+## Set up your hierarchy
 
 First, define a [frontline operational hierarchy](deploy-frontline-operational-hierarchy.md) in the Teams admin center to map your organization's structure of frontline teams and locations to a hierarchy.
 
