@@ -156,7 +156,7 @@ To give Teams Administrators the ability to complete setup and deploy frontline 
 
     :::image type="content" source="media/frontline-teams-deploy.png" alt-text="Screenshot of the Manage frontline teams page, showing the Deploy button." lightbox="media/frontline-teams-deploy.png":::
 
-1. From here, you can review your settings and view the list of locations that don't yet have a frontline team created.
+1. On the Deploy frontline teams page, you can review your settings and view the list of locations that don't yet have a frontline team created.
 
 1. In the table, select the locations that you want to create teams for.
 
