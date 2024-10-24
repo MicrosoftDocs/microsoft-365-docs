@@ -25,15 +25,17 @@
           href: ../admin/setup/add-domain.md
         - name: Configure endpoints to bypass
           items: 
-            - name: Office 365 IP Address and URL Web service
+            - name: Microsoft 365 IP Address and URL Web service
               href: microsoft-365-ip-web-service.md
             - name: Additional endpoints not included in the Web service
               href: additional-office365-ip-addresses-and-urls.md
-            - name: Additional network security requirements for Office 365 GCC High and DOD
+            - name: Additional network security requirements for Microsoft 365 GCC High and DOD
               href: additional-network-security-requirements-for-office-365-gcchigh-and-dod.md
-            - name: DNS records for Office 365 DoD
+            - name: External DNS records for Microsoft 365
+              href: external-domain-name-system-records.md
+            - name: DNS records for Microsoft 365 DoD
               href: dns-records-for-office-365-dod.md
-            - name: DNS records for Office 365 GCC High
+            - name: DNS records for Microsoft 365 GCC High
               href: dns-records-for-office-365-gcc-high.md
         - name: Content Delivery Network (CDN) Quickstart
           href: office-365-cdn-quickstart.md
@@ -62,13 +64,13 @@
               href: implementing-expressroute.md
     - name: Manage
       items: 
-        - name: Office 365 endpoints
+        - name: Microsoft 365 endpoints
           items: 
             - name: Microsoft 365 endpoints
               href: microsoft-365-endpoints.md
             - name: Unified cloud.microsoft domain for Microsoft 365 apps
               href: cloud-microsoft-domain.md
-            - name: Managing Office 365 endpoints
+            - name: Managing Microsoft 365 endpoints
               href: managing-office-365-endpoints.md
             - name: Worldwide endpoints
               href: urls-and-ip-address-ranges.md
@@ -76,13 +78,13 @@
               href: microsoft-365-u-s-government-dod-endpoints.md
             - name: U.S. Government GCC High endpoints
               href: microsoft-365-u-s-government-gcc-high-endpoints.md
-            - name: Office 365 operated by 21Vianet endpoints
+            - name: Microsoft 365 operated by 21Vianet endpoints
               href: urls-and-ip-address-ranges-21vianet.md
         - name: Content delivery networks
           href: content-delivery-networks.md
-        - name: IPv6 support in Office 365 services
+        - name: IPv6 support in Microsoft 365 services
           href: ipv6-support.md
-        - name: NAT support with Office 365
+        - name: NAT support with Microsoft 365
           href: nat-support-with-microsoft-365.md
         - name: Network requests in Office for Mac
           href: network-requests-in-office-2016-for-mac.md
@@ -571,7 +573,7 @@
     - name: Manage add-ins with Centralized Deployment PowerShell
       href: use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md
 
-- name: Windows and Office 365 deployment lab kit
+- name: Windows and Microsoft 365 deployment lab kit
   href: modern-desktop-deployment-and-management-lab.md
 
 - name: Contoso case study
