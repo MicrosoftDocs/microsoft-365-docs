@@ -110,9 +110,9 @@ To give Teams Administrators the ability to complete setup and deploy frontline 
 
     :::image type="content" source="media/frontline-teams-setup.png" alt-text="Screenshot of the Manage frontline teams page, showing the Set up button." lightbox="media/frontline-teams-setup.png":::
 
-1. On the Overivew page, review the setup and prerequisites information.
+1. On the Overview page, review the setup and prerequisites information.
 
-1. On the Select your frontline workforce page, select the Microsoft 365 dynamic groups that include your frontline workers. You can choose up to 32 Microsoft 365 dynamic groups. You can change these groups, as needed, after you submit your setup.
+1. On the Frontline workers page, select the Microsoft 365 dynamic groups that include your frontline workers. You can choose up to 32 Microsoft 365 dynamic groups. You can change these groups, as needed, after you submit your setup.
 
     :::image type="content" source="media/frontline-teams-select-groups.png" alt-text="Screenshot showing where to add dynamic groups that include the frontline workers in your organization." lightbox="media/frontline-teams-select-groups.png":::
 
@@ -200,7 +200,7 @@ You can manage your teams when changes happen in your organization.
 
     |Setting |Effect on existing frontline teams |Effect on new frontline teams |
     |--------|-----------------------------------|------------------------------|
-    |Select your frontline workforce |All existing frontline teams will be updated with members that are part of the new dynamic groups you selected. Members added or removed by frontline managers won't be affected.|All new frontline teams members will include members that are part of the new dynamic groups you selected. |
+    |Frontline workers |All existing frontline teams will be updated with members that are part of the new dynamic groups you selected. Members added or removed by frontline managers won't be affected.|All new frontline teams members will include members that are part of the new dynamic groups you selected. |
     |Location | Existing teams will continue to persist. If a team is no longer tied to a location, there will be no users in that team, and users are put in their respective location teams. |You can create new frontline teams based on the locations defined by your new Microsoft Entra attribute. |
     |Map your frontline attributes |All existing frontline team members will reflect the Microsoft Entra attribute you defined for department and job title. |All new frontline team members will use the Microsoft Entra attribute you defined for department and job title.|
     |Team settings - team name prefix|All existing team names will be updated to reflect the prefix and location name if it was changed.|All new teams will have the updated naming convention. |
