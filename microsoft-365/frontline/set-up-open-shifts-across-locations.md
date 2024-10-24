@@ -30,7 +30,7 @@ ms.date: 10/01/2024
 
 ### What are open shifts?
 
-Open shifts are shifts that aren't assigned to anyone. Frontline managers can create and share open shifts in the schedule for frontline workers to request.
+Open shifts are shifts that aren't assigned to anyone. In Shifts, frontline managers can create and share open shifts in the schedule for frontline workers to request.
 
 ### What is the open shifts across locations feature?
 
