@@ -108,23 +108,23 @@ To give Teams Administrators the ability to complete setup and deploy frontline 
 1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose **Frontline deployment** > **Manage frontline teams**.
 2. In the table, choose **Set up**.
 
-    :::image type="content" source="media/dtas-manage-setup.png" alt-text="Screenshot of the Manage frontline teams page, showing the Set up button." lightbox="media/dtas-manage-setup.png":::
+    :::image type="content" source="media/frontline-teams-setup.png" alt-text="Screenshot of the Manage frontline teams page, showing the Set up button." lightbox="media/frontline-teams-setup.png":::
 
 1. On the Overivew page, review the setup and prerequisites information.
 
 1. On the Select your frontline workforce page, select the Microsoft 365 dynamic groups that include your frontline workers. You can choose up to 32 Microsoft 365 dynamic groups. You can change these groups, as needed, after you submit your setup.
 
-    :::image type="content" source="media/dtas-frontline-worker-attribute.png" alt-text="Screenshot showing where to enter your Microsoft Entra attribute and values to identify your frontline workforce." lightbox="media/dtas-frontline-worker-attribute.png":::
+    :::image type="content" source="media/frontline-teams-select-groups.png" alt-text="Screenshot showing where to add dynamic groups that include the frontline workers in your organization." lightbox="media/frontline-teams-select-groups.png":::
 
 1. On the Location page, select a Microsoft Entra attribute or a [custom user attribute](/entra/external-id/user-flow-add-custom-attributes) that defines the location your frontline employees work in. You can only choose one location attribute. You can change the attribute, as needed, after you submit your setup.
 
     All custom attributes are case sensitive and must start with an "extension_" prefix. Only custom attributes of the String data type are supported.
 
-    :::image type="content" source="media/dtas-location-attribute.png" alt-text="Screenshot showing where to enter your Microsoft Entra attribute that identifies the location where your frontline employees work." lightbox="media/dtas-location-attribute.png":::
+    :::image type="content" source="media/frontline-teams-location-attribute.png" alt-text="Screenshot showing where to enter your Microsoft Entra attribute that identifies the location where your frontline employees work." lightbox="media/frontline-teams-location-attribute.png":::
 
 1. On the Team settings page, define a naming pattern for your teams by choosing a prefix. The prefix is applied using the "prefix-location" format to all your teams.
 
-    :::image type="content" source="media/dtas-team-settings.png" alt-text="Screenshot of team settings options showing the prefix, team template, and team owner fields." lightbox="media/dtas-team-settings.png":::
+    :::image type="content" source="media/frontline-teams-team-settings.png" alt-text="Screenshot of the Team settings page showing options for prefix, team template, and adding team owner groups." lightbox="media/frontline-teams-team-settings.png":::
 
 1. Choose a team template. The team template you choose defines the channel structure for all your frontline teams. [Learn more about team templates](/microsoftteams/get-started-with-teams-templates-in-the-admin-console).
 
@@ -139,13 +139,13 @@ To give Teams Administrators the ability to complete setup and deploy frontline 
     > [!NOTE]
     > This step is optional. If you choose not to map frontline attributes, leave the values as **None**. You can always come back and map them later on the [Dynamic teams settings page](#edit-your-frontline-team-settings).
 
-    :::image type="content" source="media/dtas-frontline-attributes.png" alt-text="Screenshot showing where to map your Microsoft Entra attributes for Job title and Department." lightbox="media/dtas-frontline-attributes.png":::
+    :::image type="content" source="media/frontline-teams-map-attributes.png" alt-text="Screenshot showing where to map your Microsoft Entra attributes for Job title and Department." lightbox="media/frontline-teams-map-attributes.png":::
 
     These attributes map departments and job titles in your organization, which allows you to deliver targeted communications features, such as [automatic tags](set-up-targeted-communications.md#automatic-tags), to your frontline. Your frontline workers can quickly and easily reach the right group of people through tags that are automatically created based on the attribute mappings. [Learn more about attribute mapping and targeted communications](set-up-targeted-communications.md).
 
 1. Review your settings, and then choose **Submit.**
 
-    :::image type="content" source="media/dtas-setup-submitted.png" alt-text="Screenshot of the Manage frontline teams page with a banner showing that setup is in progress." lightbox="media/dtas-setup-submitted.png":::
+    :::image type="content" source="media/frontline-teams-submit-setup.png" alt-text="Screenshot of the Review summary page, showing a summary of settings and the Submit button." lightbox="media/frontline-teams-submit-setup.png":::
 
     > [!NOTE]
     > Setup can take several hours to run. Refresh the Manage frontline teams page to get the latest status.
@@ -154,13 +154,13 @@ To give Teams Administrators the ability to complete setup and deploy frontline 
 
 1. After setup is completed, go to the Manage frontline teams page, and then select the **Deploy** button.
 
-    :::image type="content" source="media/dtas-deploy.png" alt-text="Screenshot of the Manage frontline teams page, showing the Deploy button." lightbox="media/dtas-deploy.png":::
+    :::image type="content" source="media/frontline-teams-deploy.png" alt-text="Screenshot of the Manage frontline teams page, showing the Deploy button." lightbox="media/frontline-teams-deploy.png":::
 
 1. From here, you can review your settings and view the list of locations that don't yet have a frontline team created.
 
 1. In the table, select the locations that you want to create teams for.
 
-    :::image type="content" source="media/dtas-deploy-locations.png" alt-text="Screenshot of the table of locations." lightbox="media/dtas-deploy-locations.png":::
+    :::image type="content" source="media/frontline-teams-deploy-teams.png" alt-text="Screenshot of the table of locations." lightbox="media/frontline-teams-deploy-teams.png":::
 
 1. Select **Deploy**. This process can take several hours depending on how many teams you're creating. 
 
@@ -184,7 +184,7 @@ You can manage your teams when changes happen in your organization.
 
 1. Select the **Refresh location** button, and then proceed when prompted by the dialog box. This process can take several hours depending on the number of new locations.
 
-    :::image type="content" source="media/dtas-refresh-locations.png" alt-text="Screenshot of the Refresh location button." lightbox="media/dtas-refresh-locations.png":::
+    :::image type="content" source="media/frontline-teams-refresh-locations.png" alt-text="Screenshot of the Refresh location button." lightbox="media/frontline-teams-refresh-locations.png":::
 
 1. After the refresh is completed, your setup status shows as **Complete**. You can proceed to [deploy your new teams](#deploy-your-frontline-dynamic-teams). Deployment can take several hours depending on how many new teams you're deploying.
 
@@ -194,7 +194,7 @@ You can manage your teams when changes happen in your organization.
 1. In the **Deployment settings** column, choose **Deploy frontline teams**.
 1. On the Frontline teams settings page, edit your settings, and then select **Apply**. Your settings might take several hours to update.
 
-    :::image type="content" source="media/dtas-edit-settings.png" alt-text="Screenshot of the Dynamic teams settings page, showing options to edit frontline team settings" lightbox="media/dtas-edit-settings.png":::
+    :::image type="content" source="media/frontline-teams-edit-settings.png" alt-text="Screenshot of the Dynamic teams settings page, showing options to edit frontline team settings" lightbox="media/frontline-teams-edit-settings.png":::
 
     See the following table for the effects of updating your settings.
 
