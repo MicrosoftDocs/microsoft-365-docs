@@ -4,7 +4,7 @@ author: lana-chin
 ms.author: v-chinlana
 manager: jtremper
 ms.reviewer: arnavgupta
-ms.topic: how-to
+ms.topic: conceptual
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
@@ -17,7 +17,7 @@ appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ROBOTS: NOINDEX, NOFOLLOW
-ms.date: 
+ms.date: 10/24/2024
 
 ---
 
@@ -31,7 +31,7 @@ ms.date:
 Create and manage frontline teams in bulk to drive communication and collaboration for every location in your frontline workforce. Team membership of your frontline teams is automatically synced with your frontline workers’ [Microsoft Entra attributes](/entra/external-id/customers/how-to-define-custom-attributes). Frontline managers at each of your locations, like department heads, store leads, and warehouse managers, as team owners, can manually add or remove members.
 
 > [!NOTE]
-> If you would like to provide feedback and help improve this feature, fill out this [form](https://forms.microsoft.com/r/DWaJXA6Dax).
+> If you would like to provide feedback and help improve this feature, fill out this [form](https://forms.office.com/r/MPfxrGG9h4).
 
 ## How it works
 
@@ -72,7 +72,7 @@ To complete the steps in this article, you must be a Global Administrator or a T
 > [!IMPORTANT]
 > Microsoft recommends that you use roles with the fewest permissions. This helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use a less-privileged role.
 
-To give Teams Administrators the ability to complete setup and deploy frontline dynamic teams, follow these steps to create the custom role and assign it to Teams Administrators.
+To give Teams Administrators the ability to complete setup and deploy frontline teams, follow these steps to create the custom role and assign it to Teams Administrators.
 
 #### Create the custom role
 
@@ -137,7 +137,7 @@ To give Teams Administrators the ability to complete setup and deploy frontline 
 1. On the Map frontline attributes page, select the Microsoft Entra attributes that most accurately reflect the departments and job titles in your organization. You can set the **Department attribute**, **Job title attribute**, or both.
 
     > [!NOTE]
-    > This step is optional. If you choose not to map frontline attributes, leave the values as **None**. You can always come back and map them later on the [Dynamic teams settings page](#edit-your-frontline-team-settings).
+    > This step is optional. If you choose not to map frontline attributes, leave the values as **None**. You can always come back and map them later on the [Frontline teams settings page](#edit-your-frontline-team-settings).
 
     :::image type="content" source="media/frontline-teams-map-attributes.png" alt-text="Screenshot showing where to map your Microsoft Entra attributes for Job title and Department." lightbox="media/frontline-teams-map-attributes.png":::
 
@@ -150,7 +150,7 @@ To give Teams Administrators the ability to complete setup and deploy frontline 
     > [!NOTE]
     > Setup can take several hours to run. Refresh the Manage frontline teams page to get the latest status.
 
-## Deploy your frontline dynamic teams
+## Deploy your frontline teams
 
 1. After setup is completed, go to the Manage frontline teams page, and then select the **Deploy** button.
 
@@ -162,7 +162,7 @@ To give Teams Administrators the ability to complete setup and deploy frontline 
 
     :::image type="content" source="media/frontline-teams-deploy-teams.png" alt-text="Screenshot of the table of locations." lightbox="media/frontline-teams-deploy-teams.png":::
 
-1. Select **Deploy**. This process can take several hours depending on how many teams you're creating. 
+1. Select **Deploy**. This process can take several hours depending on how many teams you're creating.
 
     After deployment is completed, you'll see the number of deployed frontline teams in the **Frontline teams** card. You can also download a CSV file with a list of those teams.
 
@@ -172,7 +172,7 @@ To give Teams Administrators the ability to complete setup and deploy frontline 
 
 1. You can repeat this process for any frontline locations that don't have a team.
 
-## Manage your frontline dynamic teams
+## Manage your frontline teams
 
 You can manage your teams when changes happen in your organization.
 
@@ -186,7 +186,7 @@ You can manage your teams when changes happen in your organization.
 
     :::image type="content" source="media/frontline-teams-refresh-locations.png" alt-text="Screenshot of the Refresh location button." lightbox="media/frontline-teams-refresh-locations.png":::
 
-1. After the refresh is completed, your setup status shows as **Complete**. You can proceed to [deploy your new teams](#deploy-your-frontline-dynamic-teams). Deployment can take several hours depending on how many new teams you're deploying.
+1. After the refresh is completed, your setup status shows as **Complete**. You can proceed to [deploy your new teams](#deploy-your-frontline-teams). Deployment can take several hours depending on how many new teams you're deploying.
 
 ### Edit your frontline team settings
 
@@ -194,18 +194,18 @@ You can manage your teams when changes happen in your organization.
 1. In the **Deployment settings** column, choose **Deploy frontline teams**.
 1. On the Frontline teams settings page, edit your settings, and then select **Apply**. Your settings might take several hours to update.
 
-    :::image type="content" source="media/frontline-teams-edit-settings.png" alt-text="Screenshot of the Dynamic teams settings page, showing options to edit frontline team settings" lightbox="media/frontline-teams-edit-settings.png":::
+    :::image type="content" source="media/frontline-teams-edit-settings.png" alt-text="Screenshot of the Frontline teams settings page, showing options to edit frontline team settings" lightbox="media/frontline-teams-edit-settings.png":::
 
     See the following table for the effects of updating your settings.
 
     |Setting |Effect on existing frontline teams |Effect on new frontline teams |
     |--------|-----------------------------------|------------------------------|
     |Frontline workers |All existing frontline teams will be updated with members that are part of the new dynamic groups you selected. Members added or removed by frontline managers won't be affected.|All new frontline teams members will include members that are part of the new dynamic groups you selected. |
-    |Location | Existing teams will continue to persist. If a team is no longer tied to a location, there will be no users in that team, and users are put in their respective location teams. |You can create new frontline teams based on the locations defined by your new Microsoft Entra attribute. |
+    |Location | Existing teams will continue to persist. If a team is no longer tied to a location, there will be no frontline workers in that team except the team owner, and the other users are put in their respective location teams. |You can create new frontline teams based on the locations defined by your new Microsoft Entra attribute. |
     |Map your frontline attributes |All existing frontline team members will reflect the Microsoft Entra attribute you defined for department and job title. |All new frontline team members will use the Microsoft Entra attribute you defined for department and job title.|
     |Team settings - team name prefix|All existing team names will be updated to reflect the prefix and location name if it was changed.|All new teams will have the updated naming convention. |
     |Team settings - team template|No updates to the team structure will occur.|All new teams will use the updated team template. |
-    |Identify your team owners |All existing frontline teams will be updated with team owners that are part of the new dynamic groups you selected. There must be at least one team owner for every team that has already been created. Otherwise, an error occurs in the setup. |All new teams will have team owners that are part of the new dynamic groups you selected. |
+    |Identify your team owners |Frontline managers that were already assigned team owner won't be removed or reprieved of their team owner role. New team owners from the new dynamic groups you selected will be added as team owners to their respective teams. |All new teams will have team owners that are part of the new dynamic groups you selected. There must be at least one team owner for every new team. |
 
 ## Get analytics on frontline teams usage
 
@@ -225,7 +225,7 @@ It can take up to 24 hours for a team and the Microsoft 365 group associated wit
 
 If you need to redeploy a frontline location team that was deleted, follow these steps:
 
-1. [Refresh locations](#manage-your-frontline-dynamic-teams).
+1. [Refresh locations](#manage-your-frontline-teams).
 1. After the refresh is completed, choose the location you want to deploy.
 1. Select **Deploy**.
 
