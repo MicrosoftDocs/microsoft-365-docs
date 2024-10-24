@@ -94,4 +94,3 @@ Different types of admins can work with licenses in different ways, depending on
 
 [Buy or remove licenses for your business subscription](buy-licenses.md) (article)\
 [Assign or unassign licenses for users in the Microsoft 365 admin center](../../admin/manage/assign-licenses-to-users.md) (article)\
-[Remove a license from a shared mailbox](../../admin/email/remove-license-from-shared-mailbox.md) (article)

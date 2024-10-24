@@ -19,6 +19,8 @@
           href: microsoft-365-copilot-enable-users.md
     - name: Manage
       items:
+        - name: AI security for Microsoft 365 Copilot
+          href: microsoft-365-copilot-ai-security.md
         - name: Manage Microsoft 365 Copilot settings
           href: microsoft-365-copilot-page.md
         - name: Viva Insights Copilot Dashboard
