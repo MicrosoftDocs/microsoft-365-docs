@@ -28,6 +28,12 @@ ms.date: 10/01/2024
 
 ## Overview
 
+### What are open shifts?
+
+Open shifts are shifts that aren't assigned to anyone. Frontline managers can create and share open shifts in the schedule for frontline workers to request.
+
+### What is the open shifts across locations feature?
+
 With the open shifts across locations feature in Shifts, your frontline managers can offer open shifts across multiple locations (teams) within the regions or areas defined in your operational hierarchy. This allows frontline workers to see and request open shifts available at other specified locations.
 
 With this feature, you can:
@@ -41,7 +47,9 @@ With this feature, you can:
 
 ## Setup
 
-To enable open shifts across locations for your organization, define a [frontline operational hierarchy](deploy-frontline-operational-hierarchy.md) in the Teams admin center to map your organization's structure of frontline teams and locations to a hierarchy.
+First, define a [frontline operational hierarchy](deploy-frontline-operational-hierarchy.md) in the Teams admin center to map your organization's structure of frontline teams and locations to a hierarchy.
+
+You can organize your organization’s teams by country, region, area, city, district, and so on.
 
 ## How it works
 
@@ -60,7 +68,7 @@ Frontline workers who are part of the same schedule group in other locations can
 
 Keep in mind the following:
 
-- The name of the schedule group in the location where the open shift is created must match the names of the schedule groups at other locations. In this way, open shifts created and shared by a manager in one location are available to all workers that belong to the same schedule group in other locations within the same level of the hierarchy.
+- The schedule group name for an open shift must match across locations. This ensures that open shifts shared by a manager are available to all workers in the same schedule group at other locations within the hierarchy.
 - Schedule group names aren’t case-sensitive. For example, if a schedule group is named "Cashiers" at some locations and "cashiers" at other locations, the open shift is available across all those locations.
 
 To learn more about the user experience, see [Use open shifts across locations in Shifts]().
@@ -81,7 +89,9 @@ In this example:
   - Kayo is the manager of the Redmond location
   - Isaac is a worker at the Redmond location in the Pickers schedule group.
 
-Babbak and Kayo turn on the feature in Shifts settings for their team schedules. Babbak creates an open shift in the Pickers schedule group and turns on the **Open shifts across location** toggle. Babbak shares the open shift, and workers that belong to the Pickers schedule group at both the Bellevue and Redmond locations can see and request it.
+Babbak and Kayo turn on the feature in Shifts settings for their team schedules. Babbak creates an open shift in the Pickers schedule group and turns on the **Open shifts across location** toggle. 
+
+Babbak shares the open shift, and workers that belong to the Pickers schedule group at both the Bellevue and Redmond locations can see and request it.
 
 Isaac, who wants to earn extra hours, requests the open shift that's available at the Bellevue location. Babbak is notified and approves the request.
 
