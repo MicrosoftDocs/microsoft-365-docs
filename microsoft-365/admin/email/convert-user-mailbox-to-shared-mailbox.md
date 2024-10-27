@@ -49,7 +49,9 @@ When you convert a user's mailbox to a shared mailbox, all of the existing email
 
 - Inbox rules are preserved after the user mailbox is converted to a shared mailbox.
 
-- To put an In-Place Hold or a Litigation Hold on a shared mailbox, you must assign an Exchange Online Plan 2 license *or* an Exchange Online Plan 1 license and an Exchange Online Archiving add-on license to the shared mailbox.
+- To put an In-Place Hold or a Litigation Hold on a shared mailbox, you must assign to the shared mailbox:
+  -  an Exchange Online Plan 2 license *or*
+  -  an Exchange Online Plan 1 license and an Exchange Online Archiving add-on license
 
 ## Convert a private mailbox to a shared mailbox
 
