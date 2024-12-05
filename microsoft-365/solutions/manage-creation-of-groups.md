@@ -117,7 +117,7 @@ Connect-MgGraph -Scopes "Directory.ReadWrite.All", "Group.Read.All"
 $GroupName = ""
 $AllowGroupCreation = "False"
 
-$settingsObjectID = (Get-MgBetaDirectorySetting | Where-object -Property Displayname -Value "Group.Unified" -EQ).id
+$settingsObjectID = $groupId = (Get-MgGroup -Filter "displayName eq '$GroupName'").id
 
 if(!$settingsObjectID)
 {
