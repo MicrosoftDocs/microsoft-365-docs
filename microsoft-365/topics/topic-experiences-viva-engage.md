@@ -21,7 +21,7 @@ description: Learn more about Topics in Viva Engage.
 # Topics in Viva Engage
 
 > [!NOTE]
-> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
+> Viva Topics will be retired in 2025. As part of that change, Viva Engage will return to a simplified topics experience and will no longer use Viva Topics or Lightweight Topics. During this transition topics used within Engage will be migrated to see the latest topics experience that includes the enablement of Answers and deletion of topics. Migrations are planned to complete in Spring 2025. Learn more: [Use topics and hashtags in Viva Engage](https://support.microsoft.com/en-us/topic/use-topics-and-hashtags-in-viva-engage-2bf79ef9-0054-4f9d-b273-92fdb86e1fdb), and the [Changes coming to Topics](https://learn.microsoft.com/en-us/microsoft-365/topics/changes-coming-to-topics).
 
 The article covers the Topics migration in the Viva Engage app. You can now access information in Viva Engage through Topics features like the live topic card, highlighted topics, and the topic picker. 
 
