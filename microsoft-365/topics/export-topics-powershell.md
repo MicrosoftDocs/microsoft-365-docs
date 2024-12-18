@@ -20,7 +20,7 @@ description: Learn how to export topics created in Viva Engage (Lite Topics) to 
 # Export topics created in Viva Engage with PowerShell
 
 > [!NOTE]
-> Viva Topics will be retired in 2025. As part of the change, topics created in Viva Engage will no longer use Lite Topics and will be migrated to Viva Engage. Once topics are migrated, export will be available through Viva Engage. Learn more: [Manage data in the Viva Engage admin center](https://learn.microsoft.com/en-us/viva/engage/eac-as-manage-data), [Use topics and hashtags in Viva Engage](https://support.microsoft.com/en-us/topic/use-topics-and-hashtags-in-viva-engage-2bf79ef9-0054-4f9d-b273-92fdb86e1fdb), and the [Topics retirement](https://learn.microsoft.com/en-us/microsoft-365/topics/changes-coming-to-topics). Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics](changes-coming-to-topics.md).
+> Viva Topics will be retired in 2025. As part of the change, topics created in Viva Engage will no longer use Lite Topics and will be migrated to Viva Engage. Once topics are migrated, export will be available through Viva Engage. Learn more: [Manage data in the Viva Engage admin center](https://learn.microsoft.com/viva/engage/eac-as-manage-data), [Use topics and hashtags in Viva Engage](https://support.microsoft.com/topic/use-topics-and-hashtags-in-viva-engage-2bf79ef9-0054-4f9d-b273-92fdb86e1fdb), and the [Topics retirement](https://learn.microsoft.com/microsoft-365/topics/changes-coming-to-topics). Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics](changes-coming-to-topics.md).
 
 Using PowerShell, you can export topics created in Viva Engage (also known as Lite Topics) to a .csv file. Topics created before enabling integration with Viva Engage are included.
 
@@ -89,7 +89,7 @@ function Export-TopicLite()
         # You need to upgrade your PowerShell environment. REST and parallel execution has better implementation there.
         Write-Warning "PowerShell 7 or greater required.  REST and parallel execution has better implementation there."
         Write-Warning "If you are a part of Windows App Installer preview, use `"winget install --name PowerShell --exact`" from the command line to get and install the current stable version."
-        Write-Warning "Otherwise go to `"https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows#installing-the-msi-package`" to download and install latest powershell"
+        Write-Warning "Otherwise go to `"https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-windows#installing-the-msi-package`" to download and install latest powershell"
         Write-Warning "See https://aka.ms/PSWindows for more"
         exit
     }
