@@ -25,7 +25,7 @@ Pay-as-you-go requires an Azure subscription. Pay-as-you-go services are billed 
 
 Before you configure pay-as-you-go, read the [Microsoft Syntex pay-as-you-go terms of service](/legal/microsoft-365/microsoft-syntex-pay-as-you-go-terms).
 
-The features available for each license type are described in this article. <!-- You can use both licenses if you need to.-->
+<!--The features available for each license type are described in this article.  You can use both licenses if you need to.-->
 
 > [!NOTE]
 > Microsoft Syntex is an add-on and requires users also to have a license for Microsoft 365.
@@ -35,18 +35,21 @@ The features available for each license type are described in this article. <!--
 
 ## Microsoft Syntex pay-as-you-go
 
-Pay-as-you-go currently supports the following Syntex services:
+The following pay-as-you-go services are currently available:
 
-- Prebuilt document processing
-- Structured and freeform document processing
-- Unstructured document processing
+**Document and image services**
 - Autofill columns
 - Content assembly
 - Document translation
+- eSignature
 - Image tagging
 - Optical character recognition
-- SharePoint eSignature
+- Prebuilt document processing
+- Structured and freeform document processing
 - Taxonomy tagging
+- Unstructured document processing
+
+**Storage services**
 - Microsoft 365 Archive
 - Microsoft 365 Backup
 

@@ -1,5 +1,5 @@
 ---
-title: Set up Microsoft Syntex per-user licensing
+title: Assign existing Microsoft Syntex per-user licenses
 ms.author: chucked
 author: chuckedmonson
 ms.reviewer: ssquires, kkameth
@@ -19,14 +19,15 @@ ms.localizationpriority: medium
 description: Set up Microsoft Syntex per-user licensing.
 ---
 
-# Set up Microsoft Syntex per-user licensing
+# Assign existing Microsoft Syntex per-user licenses
 
 > [!NOTE]
 > As of July 1, 2023, per-user licenses are no longer available for purchase. You will need to [set up pay-as-you-go billing](syntex-azure-billing.md).<br><br>
 > **Per-user licenses purchased before July 1, 2023, can still be assigned to new users.** After existing per-user licenses expire, you will need to opt-in to Syntex [pay-as-you-go billing](syntex-azure-billing.md).
 
-For an overview of licensing options for Microsoft Syntex, see [Licensing for Microsoft Syntex](syntex-licensing.md).
+This article is for organizations who have existing per-user licenses for Microsoft Syntex and want to assign them to users. For an overview of licensing options, see [Licensing for Microsoft Syntex](syntex-licensing.md).
 
+<!---
 ## Plan for per-user licenses
 
 To use Microsoft Syntex per-user licensing, your organization must have a subscription to Microsoft Syntex, and each user must have a license assigned. Licenses include the following apps, which must all be assigned:
@@ -46,8 +47,9 @@ You can change your settings after initial setup in the <a href="https://go.micr
 
 Prior to setup, make sure to plan for the best way to set up and configure content understanding in your environment. For example, you need to make the following decisions:
 
-- The SharePoint sites in which you want to enable document processing - all of them, some, or selected sites
+- The SharePoint sites in which you want to enable document processing — all of them, some, or selected sites
 - The name and admins for your content center
+--->
 
 ## Requirements
 
@@ -77,11 +79,11 @@ To assign licenses:
 
 1. In the Microsoft 365 admin center, under **Users**, select <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>.
 
-1. Select the users that you want to license, and choose **Manage product licenses**.
+2. Select the users that you want to license, and choose **Manage product licenses**.
 
-1. Choose **Apps** from the drop-down menu.
+3. Choose **Apps** from the dropdown menu.
 
-1. Select **Show apps for  Syntex**. Under **Apps**, make sure **Common Data Service for Syntex**, **Syntex**, and **Syntex - SPO type** are all selected.
+4. Select **Show apps for  Syntex**. Under **Apps**, make sure **Common Data Service for Syntex**, **Syntex**, and **Syntex - SPO type** are all selected.
 
-1. Select **Save changes**.
+5. Select **Save changes**.
 
