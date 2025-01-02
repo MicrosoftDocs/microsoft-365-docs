@@ -119,6 +119,7 @@ The following table lists the available products and their **ProductId**. It als
 | Python in Excel | CFQ7TTC0S3X1 | No |
 | Teams Exploratory | CFQ7TTC0J1FV | Yes |
 | Teams Premium Introductory Pricing | CFQ7TTC0RM8K | Yes |
+| Teams Essentials | CFQ7TTC0JN4R | Yes |
 | Visio Plan 1* | CFQ7TTC0HD33 | Yes |
 | Visio Plan 2* | CFQ7TTC0HD32 | No |
 | Viva Goals (self-service trials only) | CFQ7TTC0PW0V | Yes |
