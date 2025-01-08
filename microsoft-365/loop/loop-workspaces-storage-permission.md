@@ -47,6 +47,9 @@ Where the Loop content was originally created determines its storage location:
 
 Loop app workspaces are stored inside your tenant, within SharePoint Embedded. All Loop workspaces and pages, including Shared workspaces, Personal workspaces, Ideas, and Copilot Pages, count against your tenant's storage quota, starting November 2023.
 
+## Loop workspace storage limits
+Loop workspaces have a maximum size of 25TB per workspace. This limit cannot be increased or decreased. Workspace content counts towards a user's storage quota, and since this per-user storage quota is always less than 25TB, the 25TB limit should never be reached, in practice. Loop workspaces are implemented as SharePoint Embedded containers. [Learn more about SharePoint Embedded container limits](/sharepoint/dev/embedded/concepts/app-concepts/limits-calling).
+
 ## Content permissions mechanism
 
 Each Loop app workspace uses storage for the workspace in [SharePoint Embedded](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/cta). Additionally, the Loop app creates a roster for that workspace to govern access to the full workspace. When pages are shared from the workspace, we create a sharing link using your company's default sharing link type as configured for OneDrive and SharePoint.
