@@ -35,7 +35,7 @@ This article explains how to set a password for an individual user to not expire
 
 ## Before you begin
 
-This article is for people who set password expiration policy for a business, school, or nonprofit. You must be a [global admin or password administrator](about-admin-roles.md) to perform these steps.
+This article is for people who set password expiration policy for a business, school, or nonprofit. You must be a [global admin or user administrator](about-admin-roles.md) to perform these steps.
 
 You can use the Microsoft cloud service [Microsoft Graph Powershell](/powershell/microsoftgraph/overview) to set passwords not to expire for specific users, remove the never-expire configuration or see which users' passwords are set to never expire.
 
