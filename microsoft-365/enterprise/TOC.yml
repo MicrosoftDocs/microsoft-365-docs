@@ -417,7 +417,7 @@ items:
           href: /microsoftteams/deploy-meetings-microsoft-teams-landing-page
         - name: Teams voice
           href: /microsoftteams/cloud-voice-landing-page
-        - name: Yammer
+        - name: Viva Engage
           href: https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe
         - name: Activate rights management
           href: activate-rms-in-microsoft-365.md
@@ -437,7 +437,7 @@ items:
           href: /sharepoint/introduction
         - name: Microsoft Teams
           href: /microsoftteams/manage-teams-overview
-        - name: Yammer
+        - name: Viva Engage
           href: https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe
         - name: Performance and tuning
           items: 
