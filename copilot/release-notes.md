@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: mandia
 author: MandiOhlinger
 manager: laurawi
-ms.date: 01/07/2025
+ms.date: 01/22/2025
 audience: Admin
 ms.reviewer: briandesouza
 ms.topic: get-started
@@ -31,11 +31,14 @@ This is our preview version of Microsoft 365 Copilot release notes. We will use 
 ## [All features](#tab/all)
 
 <!--- All features regardless of platform go here  -->
-
+## January 22, 2025
+### Forms
+- **Smart reminders with Copilot in Forms** [Web]  
+  Copilot in Forms now offers smart reminders to help you monitor response progress and get more engagement with your forms, delivered right to your email inbox. <a href="https://support.microsoft.com/topic/smart-reminders-in-copilot-in-forms-d41f412f-f64a-4bee-b745-eebf58b7e036" target="_blank">Learn more.</a>
 ## January 7, 2025
 ### Copilot Prompt Gallery
 - **Access Copilot Prompt Gallery in Word and PowerPoint mobile apps** [Android, iOS]  
-  Discover and use suggested Copilot prompts in Prompt Gallery within the Word and PowerPoint apps on iOS and Android. Enhance your productivity on the go with helpful AI suggestions.
+Discover and use suggested Copilot prompts in Prompt Gallery within the Word and PowerPoint apps on iOS and Android. Enhance your productivity on the go with helpful AI suggestions.
 ### Microsoft 365 admin center
 - **Track usage of Microsoft 365 Copilot Chat** [Web]  
   Filter data by date range, review Microsoft Copilot usage by app entry point, and use these insights plan adoption strategies more confidently. <a href="/microsoft-365/admin/activity-reports/microsoft-copilot-usage" target="_blank">Learn more.</a>
@@ -952,6 +955,10 @@ This is our preview version of Microsoft 365 Copilot release notes. We will use 
 ## [Web](#tab/web)
 
 <!--- All features that have 'Web' tag  -->
+## January 22, 2025
+### Forms
+- **Smart reminders with Copilot in Forms** [Web]  
+  Copilot in Forms now offers smart reminders to help you monitor response progress and get more engagement with your forms, delivered right to your email inbox. <a href="https://support.microsoft.com/topic/smart-reminders-in-copilot-in-forms-d41f412f-f64a-4bee-b745-eebf58b7e036" target="_blank">Learn more.</a>
 ## January 7, 2025
 ### Microsoft 365 admin center
 - **Track usage of Microsoft 365 Copilot Chat** [Web]  
