@@ -20,6 +20,9 @@ description: Learn how to plan for security and privacy in Topics.
 
 # Security and privacy in Topics
 
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
+
 Topics uses existing content security features in Microsoft 365, along with administrative controls, to control what AI-generated content is shown to users in your organization. It is the combination of Microsoft 365 security settings (permissions to sites, files, and folders) and Topics admin settings that determine what a given user can see in topics.
 
 Setting up Topics does not modify any existing access controls on content in your organization. Users can only see what they already have access to.

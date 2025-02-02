@@ -16,6 +16,9 @@ ROBOTS: NOINDEX,NOFOLLOW
 
 # Usage and engagement metrics in Topics
 
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
+
 Usage and engagement metrics demonstrate how users are engaging with Topics in your organization.
 
 To access usage and engagement metrics:

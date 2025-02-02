@@ -3,7 +3,7 @@ title: "Overview: VPN split tunneling for Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/20/2023
+ms.date: 11/18/2024
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise

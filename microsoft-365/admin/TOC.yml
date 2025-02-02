@@ -1,3 +1,4 @@
+items:
 - name: Microsoft 365 admin center help
   href: index.yml
   items: 
@@ -265,9 +266,11 @@
           href: get-help-with-domains/find-and-fix-issues.md
     - name: Manage your data and services
       items:
+         - name: Copilot in Microsoft 365 admin centers
+           href: /copilot/microsoft-365/copilot-for-microsoft-365-admin
          - name: Microsoft 365 Copilot extensibility
            items:
-            - name: Manage Copilot agents
+            - name: Manage agents for Copilot
               href: manage/manage-copilot-agents-integrated-apps.md
             - name: Microsoft Graph connectors for Microsoft Search
               href: /microsoftsearch/connectors-overview
@@ -277,12 +280,16 @@
               href: activity-reports/activity-reports.md
             - name: Active Users
               href: activity-reports/active-users-ww.md
+            - name: Agent usage in Microsoft 365 Copilot
+              href: activity-reports/agent-usage.md
             - name: Microsoft browser usage
               href: activity-reports/browser-usage-report.md
             - name: Microsoft 365 Copilot readiness
               href: activity-reports/microsoft-365-copilot-readiness.md
             - name: Microsoft 365 Copilot usage
               href: activity-reports/microsoft-365-copilot-usage.md
+            - name: Microsoft 365 Copilot Chat usage
+              href: activity-reports/microsoft-copilot-usage.md
             - name: Dynamics 365 Customer Voice activity
               href: activity-reports/forms-pro-activity-ww.md
             - name: Email activity
@@ -383,7 +390,7 @@
               href: manage/teams-apps-work-only-on-teams.md
             - name: SaaS Linked Apps
               href: manage/saas-linked-apps.md
-            - name: Manage Copilot agents
+            - name: Manage agents for Copilot
               href: manage/manage-copilot-agents-integrated-apps.md
          - name: Centralized deployment of add-ins
            items:

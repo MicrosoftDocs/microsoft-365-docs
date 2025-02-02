@@ -46,9 +46,7 @@ When a mailbox is migrated cross-tenant with this feature, only user-visible con
 ## Licensing
 
 > [!IMPORTANT]
-> As of Nov. 2022, **Cross Tenant User Data Migration** is available as an add-on to the following Microsoft 365 subscription plans for Enterprise Agreement customers, and is required for cross-tenant migrations. User licenses are per migration (one-time fee) and can be assigned either on the source or target user object. This license also covers [OneDrive for Business migration](cross-tenant-onedrive-migration.md). Contact your Microsoft account team for details.
->
-> The Cross Tenant User Data Migration add-on is available as a separate purchase for Microsoft 365 Business Basic, Standard, and Premium; Microsoft 365 F1/F3/E3/E5/; Office 365 F3/E1/E3/E5; Exchange Online; SharePoint Online; and OneDrive for Business.
+Cross-Tenant migrations requires a per user license (one-time fee) and can be assigned either on the source or target user object. This license also covers [OneDrive for Business migration](cross-tenant-onedrive-migration.md). Cross Tenant User Data Migration is available as an add-on to the following Microsoft 365 subscription plans: Microsoft 365 Business Basic, Standard, and Premium; Microsoft 365 F1/F3/E3/E5/; Office 365 F3/E1/E3/E5; Exchange Online; SharePoint Online; OneDrive for Business and EDU.
 
 > [!WARNING]
 > You must have purchased, or verified that you can purchase, cross-tenant user data migration licenses prior to the next steps. Migrations fail if this step hasn't been completed. Microsoft doesn't offer exceptions for this licensing requirement.
@@ -180,6 +178,9 @@ Now that you've successfully created the migration application and secret, the n
    $Credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $AppId, (ConvertTo-SecureString -String $secret -AsPlainText -Force)
    New-MigrationEndpoint -RemoteServer outlook.office.com -RemoteTenant $remote -Credentials $Credential -ExchangeRemoteMove:$true -Name $name -ApplicationId $AppId
    ```
+
+> [!NOTE]
+> If the above command fails, please check with the source tenant administrator to confirm if the application was granted admin consent. 
 
 3. Create a new organization relationship object or edit your existing organization relationship object to your source tenant.
 
@@ -362,7 +363,7 @@ Update the following values in the existing OrganizationRelationship created in 
 
 - MailboxMovesCapability should have Inbound, RemoteOutbound as the capabilities in both source and target tenants.
 - In the new source tenant, update the OAuthApplicationId value with the value from the newly created application in the new source tenant.
-- In the new new source tenant, update the MailboxMovePublishedScopes value with the newly created security group in the new source tenant.
+- In the new source tenant, update the MailboxMovePublishedScopes value with the newly created security group in the new source tenant.
 
 ### Perform mailbox migrations
 
@@ -525,7 +526,7 @@ Exchange mailbox moves using MRS craft the targetAddress on the original source 
 
 ### How does mail flow work after migration?
 
-Cross-Tenant mail flow after migration works similar to Exchange Hybrid mail flow. Each migrated mailbox needs the source MailUser with the correct target address to forward incoming mail from source tenant to mailboxes in target tenant. Transport rules, security and compliance features will run as configured in each tenant that the mail flows through. So, for inbound mail, features like anti-spam, anti-malware, quarantine, transport rules and journaling rules will run in the source tenant first, then in the target tenant.
+Cross-Tenant mail flow after migration works similar to Exchange Hybrid mail flow. Each migrated mailbox needs the source MailUser with the correct target address to forward incoming mail from source tenant to mailboxes in target tenant. Transport rules, security, and compliance features will run as configured in each tenant that the mail flows through. So, for inbound mail, features like anti-spam, anti-malware, quarantine, transport rules and journaling rules will run in the source tenant first, then in the target tenant.
 
 ### How do mailbox permissions transition?
 

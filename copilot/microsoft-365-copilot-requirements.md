@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 09/12/2024
+ms.date: 11/19/2024
 audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-copilot
@@ -16,6 +16,8 @@ ms.collection:
 - magic-ai-copilot
 description: "Learn about the requirements for Microsoft 365 Copilot."
 ms.custom: [copilot-learning-hub]
+appliesto:
+  - ✅ Microsoft 365 Copilot
 ---
 
 # Microsoft 365 Copilot requirements
@@ -31,6 +33,7 @@ The following are the prerequisites for using Microsoft 365 Copilot. Microsoft 3
 [Microsoft 365 Apps](/deployoffice/about-microsoft-365-apps) must be deployed. In the Microsoft 365 admin center, use the [Microsoft 365 Apps setup guide](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide) to deploy to your users.
 
 > [!NOTE]
+>
 > - For Copilot to work in Word Online, Excel Online, and PowerPoint Online, you need to have third-party cookies enabled.
 > - Review your privacy settings for Microsoft 365 Apps because those settings might have an effect on the availability of Microsoft 365 Copilot features. For more information, see [Microsoft 365 Copilot and privacy controls for connected experiences](microsoft-365-copilot-privacy.md#microsoft-365-copilot-and-privacy-controls-for-connected-experiences).
 > - Copilot isn't available when using device-based licensing for Microsoft 365 Apps for enterprise.
@@ -96,8 +99,9 @@ In addition to [standard Microsoft 365 domains and IPs](/microsoft-365/enterpris
 - *.bing.com, *.bingapis.com
 - challenges.cloudflare.com
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > Several Copilot integrations rely on WebSockets (WSS) to deliver a streamlined user experience. Some customer networks may not be configured to handle WSS connections properly, which may result in Copilot application failures. Typical network configurations that impact WSS include:
+>
 >- WSS protocol is blocked by the network perimeter
 >- Network devices attempting to perform TLS inspection of connections
 >- Proxy servers enforcing aggressive connection timeouts
@@ -115,5 +119,5 @@ In the future, we plan to consolidate Copilot experiences for Microsoft 365 unde
 ## More resources
 
 - [Microsoft 365 Copilot setup guide](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide)
-- [Copilot Lab](https://copilot.cloud.microsoft/prompts)
+- [Copilot Prompt Gallery](https://copilot.cloud.microsoft/prompts)
 - [Microsoft 365 Copilot - Microsoft Community Hub](https://techcommunity.microsoft.com/t5/microsoft-365-copilot/ct-p/Microsoft365Copilot)

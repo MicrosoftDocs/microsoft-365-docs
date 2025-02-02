@@ -58,11 +58,11 @@ Use the following poster to start envisioning what your organization can do with
 
 Watch the following video to see how you can help your store associates connect and collaborate:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRJVw]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f6689716-5481-4414-b003-ad5c3a47ea0b]
 
 Watch the following video to see how you can simplify business processes in retail environments:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRzfc]-->
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=229ffc24-44f6-4bfd-bac2-f1ac0df88dec]-->
 
 ### In-store communication and collaboration
 
@@ -145,7 +145,6 @@ For retail environments, the following apps and services can help you transform 
 | Chat | Enable quick conversations and checkins between staff with secure, enterprise-grade communications tools, instead of consumer grade apps or SMS. | [Chat, teams, channels & apps in Microsoft Teams](/microsoftteams/deploy-chat-teams-channels-microsoft-teams-landing-page) | [Chat in Teams](https://support.microsoft.com/office/start-and-pin-chats-a864b052-5e4b-4ccf-b046-2e26f40e21b5?wt.mc_id=otc_microsoft_teams) |
 | Documents | Share standard operating procedures, store policies, plans, and more. | [Teams and SharePoint integration](/sharepoint/teams-connected-sites) | [Share files](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12) |
 | Praise | Recognize coworkers for great teamwork with the Praise app. | [Manage the Praise app](/microsoftteams/manage-praise-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Send Praise to people](https://support.microsoft.com/office/send-praise-to-people-50f26b47-565f-40fe-8642-5ca2a5ed261e) |
-| RealWear devices | Handsfree communication with devices. | [Microsoft Teams for RealWear](/microsoftteams/flw-realwear?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Use Microsoft Teams for RealWear](https://support.microsoft.com/office/using-microsoft-teams-for-realwear-af20d232-d18c-476f-8031-843a4edccd5f) |
 | Shifts | Create and manage schedules and clock in and out with Shifts. | [Shifts for frontline workers](shifts-for-teams-landing-page.md) | [Use Shifts](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821) |
 | Planner | Help employees know what they should focus on when not with customers by assigning tasks. Operations can use [task publishing](/microsoftteams/manage-planner-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json#task-publishing) to send out tasks to locations and track progress across those locations. | [Manage the Planner app](/microsoftteams/manage-planner-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Use Planner](https://support.microsoft.com/office/getting-started-with-planner-in-teams-7a5e58f1-2cee-41b0-a41d-55d512c4a59c) |
 | Updates | Check in on recurring or one-off priorities such as daily cleaning. Managers can create templates for employees to fill out and submit. | [Manage the Updates app](/microsoftteams/manage-updates-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Use Updates](https://support.microsoft.com/office/get-started-in-updates-c03a079e-e660-42dc-817b-ca4cfd602e5a) |

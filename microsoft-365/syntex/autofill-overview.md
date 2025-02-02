@@ -92,9 +92,9 @@ Autofill columns allow a saved prompt to be used to process files created or upl
 
 #### What are the intended uses of autofill columns?
 
-Autofill columns provide metadata automation for users. A user can use it to classify, extract, summarize, or even analyze a file, and then save the response to the column where it can then be indexed and used for search or other downstream workflow processes. Autofill columns can also be a useful complement for other machine language models, where a users could supplement the extracted metadata from a configured model with a summary or other analysis response.
+Autofill columns provide metadata automation for users. A user can use it to classify, extract, summarize, or even analyze a file, and then save the response to the column where it can then be indexed and used for search or other downstream workflow processes. Autofill columns can also be a useful complement for other machine language models, where a user could supplement the extracted metadata from a configured model with a summary or other analysis response.
 
-#### How was autofill columns evaluated? What metrics were used to measure performance?
+#### How were autofill columns evaluated? What metrics were used to measure performance?
 
 - Performance factors such as coherence, fluency, and accuracy relied on the base model’s performance (in this case, GPT-4 Turbo).
 
@@ -118,7 +118,7 @@ Autofill columns provide metadata automation for users. A user can use it to cla
 
         - Evaluated test cases with harmful content, and questions prompting the model to answer something it shouldn’t. For example, “Summarize the content in the document.”
 
-    - Evaluation: Followed Microsoft curated risk and safety metrics instructions, which is provided in Microsoft Azure AI Studio, to measure the results using LLM (in this case GPT-4 Turbo) from four aspects: self-harm-related content, hateful and unfair content, violent content, and sexual content.
+    - Evaluation: Followed Microsoft curated risk and safety metrics instructions, which is provided in Microsoft Azure AI Foundry portal, to measure the results using LLM (in this case GPT-4 Turbo) from four aspects: self-harm-related content, hateful and unfair content, violent content, and sexual content.
 
         The evaluation rated the inputs and outputs 0-7, scaling from the least harmful to the most severe level.
 

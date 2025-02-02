@@ -4,7 +4,7 @@ description: Describes the new cloud.microsoft domain for Microsoft 365 apps
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 04/18/2024
+ms.date: 01/13/2025
 ms.topic: overview
 ms.service: microsoft-365-enterprise
 ms.subservice: network
@@ -45,10 +45,11 @@ Since 2023, *.cloud.microsoft and other domains related to the domain unificatio
 | Service | URL |
 |:-----|:-----|
 |Microsoft 365 |[m365.cloud.microsoft](https://m365.cloud.microsoft)|
-|Microsoft 365 Copilot Business Chat |[m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat)|
+|Microsoft 365 Copilot Chat |[m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat)|
 |Microsoft Excel | [excel.cloud.microsoft](https://excel.cloud.microsoft)|
 |Microsoft PowerPoint | [powerpoint.cloud.microsoft](https://powerpoint.cloud.microsoft)|
 |Microsoft Word | [word.cloud.microsoft](https://word.cloud.microsoft)|
+|Microsoft Outlook | [outlook.cloud.microsoft](https://outlook.cloud.microsoft)|
 |Microsoft 365 Service Health Status Page |[status.cloud.microsoft](https://status.cloud.microsoft)|
 |Microsoft Admin Center| [admin.cloud.microsoft](https://admin.cloud.microsoft)|
 |Microsoft Loop | [loop.cloud.microsoft](https://loop.cloud.microsoft)|

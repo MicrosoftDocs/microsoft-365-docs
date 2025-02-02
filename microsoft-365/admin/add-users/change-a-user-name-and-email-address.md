@@ -44,7 +44,7 @@ You must be a [user administrator](/microsoft-365/admin/add-users/about-admin-ro
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198016).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SJuc]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=7b58656a-67db-457a-aa90-5c93334d4d28]
 
 1. In the Microsoft 365 admin center, select **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>.
 1. Select the user from the list of active users.

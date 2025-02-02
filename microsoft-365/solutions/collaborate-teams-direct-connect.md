@@ -1,8 +1,8 @@
 ---
 title: Collaborate with external participants in a shared channel (IT Admins)
-ms.author: jtremper
-author: jacktremper
-manager: pamgreen
+author: DaniEASmith
+ms.author: danismith
+manager: jtremper
 ms.date: 05/30/2024
 audience: ITPro
 ms.topic: article
@@ -49,7 +49,7 @@ Collaborating with external participants in a shared channel requires that guest
 This video shows the configuration steps described in this document.
 <br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4WRMx?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=11b6aeb6-a9ed-4af3-bfbc-887d9dd3f457]
 
 ## Enable shared channels in Teams
 

@@ -3,7 +3,7 @@ title: "Assign roles to Microsoft 365 user accounts with PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 02/22/2024
+ms.date: 12/09/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -35,14 +35,14 @@ description: In this article, learn how quickly and easily use PowerShell for Mi
 You can easily assign roles to user accounts by using PowerShell for Microsoft 365.
 
 >[!Note]
->Learn how to  [assign admin roles](../admin/add-users/assign-admin-roles.md) to user accounts with the Microsoft 365 admin center.
+>Learn how to [assign admin roles](../admin/add-users/assign-admin-roles.md) to user accounts with the Microsoft 365 admin center.
 >
 >For a list of additional resources, see [Manage users and groups](/admin).
 >
 
 ## Assign roles to user accounts using Microsoft Graph PowerShell
 
->[!NOTE]
+> [!NOTE]
 > The Azure Active Directory module is being replaced by the Microsoft Graph PowerShell SDK. You can use the Microsoft Graph PowerShell SDK to access all Microsoft Graph APIs. For more information, see [Get started with the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started).
 
 First, use a **Microsoft Entra DC admin** or **Cloud Application Admin** account to [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md). The cmdlets in this article require the permission scope **RoleManagement.ReadWrite.Directory** or one of the other permissions listed in the ['List subscribedSkus' Graph API reference page](/graph/api/subscribedsku-list). Some commands in this article may require different permission scopes, in which case this will be noted in the relevant section.
@@ -57,8 +57,8 @@ Next, identify the sign-in name of the user account that you want to add to a ro
 
 Next, determine the name of the role. See [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference).
 
->[!Note]
->Pay attention to the notes in this article. Some role names are different for Azure Active Directory (Azure AD) PowerShell. For example, the *SharePoint Administrator* role in the Microsoft 365 admin center is *SharePoint Service Administrator* in Azure AD PowerShell.
+> [!NOTE]
+> Some role names are different for Azure Active Directory (Azure AD) PowerShell. For example, the *SharePoint Administrator* role in the Microsoft 365 admin center is *SharePoint Service Administrator* in Azure AD PowerShell.
 >
 
 Next, fill in the user UPN and role names and run these commands:
@@ -79,7 +79,7 @@ $newRoleMember =@{
 New-MgDirectoryRoleMemberByRef -DirectoryRoleId $role.Id -BodyParameter $newRoleMember
 ```
 
-Here's an example of a completed command set that assigns the SharePoint Service Administrator role to the *belindan\@contoso.com* account:
+Here's an example of a completed command set that assigns the Exchange Administrator role to the *adelev\@contoso.com* account:
 
 ```powershell
 $userUPN="adelev@contoso.com"

@@ -17,7 +17,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 11/13/2024
+ms.date: 11/18/2024
 ---
 
 # Create a custom integration to sync your workforce management system with Shifts
@@ -132,10 +132,10 @@ Shifts calls this endpoint for every change (including changes initiated from th
 
 The following diagram shows the flow of data.
 
-:::image type="content" source="media/shifts-connector-update-from-shifts.png" alt-text="Diagram showing the flow for updates from Shifts to your WFM system." lightbox="media/shifts-connector-update-from-shifts.png":::
+:::image type="content" source="media/shifts-custom-integration-update-from-shifts.png" alt-text="Diagram showing the flow for updates from Shifts to your WFM system." lightbox="media/shifts-custom-integration-update-from-shifts.png":::
 
 > [!NOTE]
-> See [WfiRequest](#wfirequest) in the **Endpoint reference** section of this article for more information on Request and Response models.
+> For more information on Request and Response models, see [WfiRequest](#wfirequest) in the **Endpoint reference** section of this article.
 
 **Return response code**<br>
 Any response from the integration, including an error, must have an HTTP response code `200 OK`. The response body must have the status and error message that reflects the appropriate sub call error state. Any response from the integration other than `200 OK` is treated as an error and returned to the caller (client or Microsoft Graph).
@@ -244,7 +244,7 @@ This endpoint handles requests from Shifts to fetch eligible time-off reasons or
 
 The following diagram shows the flow of data.
 
-:::image type="content" source="media/shifts-connector-read-from-shifts.png" alt-text="Diagram showing the flow for eligibility filtering requests." lightbox="media/shifts-connector-read-from-shifts.png":::
+:::image type="content" source="media/shifts-custom-integration-read-from-shifts.png" alt-text="Diagram showing the flow for eligibility filtering requests." lightbox="media/shifts-custom-integration-read-from-shifts.png":::
 
 **Return response code**<br>
 Any response from the integration, including an error, must have an HTTP response code `200 OK`. The response body must include the status and error message that reflects the appropriate sub call error state. Any response from the integration other than `200 OK` is treated as an error and returned to the caller (client or Microsoft Graph).
@@ -322,7 +322,7 @@ The following example shows a request from Shifts that asks which shifts are eli
 {
   "requests": [
     {
-      "id": " SHFT_5e2b51ac-dc47-4a66-83ea-1bbbf81ac029",
+      "id": "SHFT_5e2b51ac-dc47-4a66-83ea-1bbbf81ac029",
       "method": "GET",
       "url": "/shifts/SHFT_5e2b51ac-dc47-4a66-83ea-1bbbf81ac029/requestableShifts?requestType=SwapRequest&startTime=2024-10-01T04:00:00.0000000Z&endTime=2024-11-01T03:59:59.9990000Z"
     }
@@ -339,7 +339,7 @@ The following response shows that the shift can be swapped with the shift whose 
 { 
   "responses": [ 
     { 
-      "id": " SHFT_5e2b51ac-dc47-4a66-83ea-1bbbf81ac029", 
+      "id": "SHFT_5e2b51ac-dc47-4a66-83ea-1bbbf81ac029", 
       "status": 200, 
       "body": { 
         "data": ["SHFT_98e96e23-966b-43be-b90d-4697037b67af"],
@@ -358,7 +358,7 @@ In this example, an error response is returned because the connector couldn't re
 {
   "responses": [
     {
-      "id": " SHFT_5e2b51ac-dc47-4a66-83ea-1bbbf81ac029",
+      "id": "SHFT_5e2b51ac-dc47-4a66-83ea-1bbbf81ac029",
       "status": 503,
       "body": {
         "data": null,
@@ -386,7 +386,7 @@ See the [Microsoft Graph API v1.0 reference](/graph/api/resources/shift?view=gra
 
 The following diagram shows the flow of data.
 
-:::image type="content" source="media/shifts-connector-update-to-shifts.png" alt-text="Diagram that shows the flow for syncing data from your WFM system to Shifts." lightbox="media/shifts-connector-update-to-shifts.png":::
+:::image type="content" source="media/shifts-custom-integration-update-to-shifts.png" alt-text="Diagram that shows the flow for syncing data from your WFM system to Shifts." lightbox="media/shifts-custom-integration-update-to-shifts.png":::
 
 #### Initial sync
 
@@ -397,7 +397,7 @@ For the first sync, the connector should read data in your WFM system and write 
 After the first sync, you can choose to:
 
 - **Synchronously update Shifts with changes in your WFM system**: Send an update to Shifts for every change made in your WFM system.
-- **Asynchronously update Shifts with changes in your WFM system**: Perform a periodic sync by writing all changes that occurred in your WFM system within a certain timeframe (for example, 30 seconds, 10 minutes) to Shifts.
+- **Asynchronously update Shifts with changes in your WFM system**: Perform a periodic sync by writing all changes that occurred in your WFM system within a certain timeframe (for example, 10 minutes) to Shifts.
 
     All write operations to Shifts, including write operations initiated by the connector, trigger a call to the connector’s /update endpoint. We recommend you include the `X-MS-WFMPassthrough: workforceIntegratonId` header to all write calls so the connector can identify and handle them appropriately. For example, if your WFM system initiated the change, approve it without applying an update to your WFM system.
 
@@ -589,17 +589,17 @@ Number of elements in a request:
 |Property  |Type |Description |
 |---------|---------|---------|
 |id  |String|ID of the entity|
-|method |String|Use `POST` to create an entity, `PUT` to update an entity, `DELETE` to delete an entity. |
+|method |String|`POST` to create an entity, `PUT` to update an entity, `DELETE` to delete an entity. |
 |url|String|The format is `/{EntityType}/{EntityId}`. Possible values for `{EntityType}` are `shifts`, `swapRequests`, `timeoffReasons`, `openshifts`, `openshiftrequests`, `offershiftrequests`, `timesoff`, `timeOffRequests`. For example, `/shifts/SHFT_12345678-1234-1234-1234-1234567890ab`.|
 |header|WfiRequestHeader |Header|
 |body|ShiftsEntity |Must match `{EntityType}` in the **url** property. Use one of [shift](/graph/api/resources/shift?view=graph-rest-1.0), [swapShiftsChangeRequest](/graph/api/resources/swapshiftschangerequest?view=graph-rest-1.0), [timeOffReason](/graph/api/resources/timeoffreason?view=graph-rest-1.0), [openshift](/graph/api/resources/openshift?view=graph-rest-1.0), [openShiftChangeRequest](/graph/api/resources/openshiftchangerequest?view=graph-rest-beta), [offerShiftRequests](/graph/api/resources/offershiftrequest?view=graph-rest-1.0), [timeOff](/graph/api/resources/timeoff?view=graph-rest-1.0), [timeOffRequest](/graph/api/resources/timeoffrequest?view=graph-rest-1.0). For example, `/shifts/SHFT_12345678-1234-1234-1234-1234567890ab`.|
 
-#### For POST /teams/{teamsId}/read  
+##### For POST /teams/{teamsId}/read  
 
 |Property  |Type |Description |
 |---------|---------|---------|
 |id  |String|ID of the entity|
-|method |Is always `GET`.|
+|method |String|Is always `GET`.|
 |url|String|<ul><li>**TimeOffReasons**: The format is `/users/{userId}/timeOffReasons?requestType=TimeOffReason`. For example, `/users/aa162a04-bec6-4b81-ba99-96caa7b2b24d/timeOffReasons?requestType=TimeOffReason`.</li><li>**SwapRequest**: The format is `/shifts/{ShiftsId}/requestableShifts?requestType=SwapRequest\u0026startTime={startTime}\u0026endTime={endTime}`. For example, `shifts/SHFT_1132430e-365e-4dc5-b8b0-b800592a81a8/requestableShifts?requestType=SwapRequest\u0026startTime=2024-10-01T07:00:00.0000000Z\u0026endTime=2024-11-01T06:59:59.9990000Z`. </li></ul>|
 |header|WfiRequestHeader |Header|
 |body|ShiftsEntity |Is always `null`.|
@@ -645,11 +645,10 @@ Number of elements in a request:
 |Property  |Type |Description |
 |---------|---------|---------|
 |id|String|ID of the entity|
-|method|String|The method being invoked on this item. For example, POST, PUT.|
 |status|String|Result of the operation|
 |body|WfiResponseBody|WfiResponseBody|
 
-#### WfiResponse
+#### WfiResponseBody
 
 |Property  |Type |Description |
 |---------|---------|---------|

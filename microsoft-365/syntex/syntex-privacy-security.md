@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: ssquires
-ms.date: 09/09/2024
+ms.date: 01/14/2025
 ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 
@@ -57,6 +57,8 @@ Microsoft Syntex is also covered under the [Microsoft Product Terms](https://www
 For more detailed information, see the following resources:
 
 - **Microsoft 365** – [Quick tasks for getting started with compliance in Microsoft Purview](/purview/compliance-quick-tasks)
+
+- **Microsoft 365 Copilot** – [Data, privacy, and security for Microsoft 365 Copilot](/copilot/microsoft-365/microsoft-365-copilot-privacy)
 
 - **Microsoft SharePoint** – [Plan compliance requirements for SharePoint and OneDrive](/SharePoint/compliant-environment)
 

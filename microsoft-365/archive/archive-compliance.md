@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 10/30/2024
+ms.date: 01/27/2025
 ms.topic: conceptual
 ms.service: microsoft-365-archive
 ms.custom: archive
@@ -35,7 +35,7 @@ The affect of Microsoft 365 Archive on compliance offerings includes the followi
 
 - **Data lifecycle management and records management** – Archived sites still honor the retention and deletion periods from any retention policies or retention labels. For more information, see [How retention works with Microsoft 365 Archive](/purview/retention-policies-sharepoint#how-retention-works-with-microsoft-365-archive).
 
-- **eDiscovery** – eDiscovery still finds all content even if archived. However, eDiscovery won't be able to directly reactivate located files.  Before exporting or viewing content of an eDiscovery case, the SharePoint admin has to reactivate the relevant sites.
+- **eDiscovery** – eDiscovery still finds all content even if archived. eDiscovery will also be able to export directly from archived content but might take longer to export.  
 
 - **Bring your own key (BYOK)** – All archived content will comply with the BYOK promises, for any tenant who already uses the BYOK feature or enables it after archiving sites.
 

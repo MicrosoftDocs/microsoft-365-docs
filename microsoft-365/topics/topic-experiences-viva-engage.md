@@ -20,6 +20,9 @@ description: Learn more about Topics in Viva Engage.
 
 # Topics in Viva Engage
 
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
+
 The article covers the Topics migration in the Viva Engage app. You can now access information in Viva Engage through Topics features like the live topic card, highlighted topics, and the topic picker. 
 
 ## Topics migration in Viva Engage

@@ -19,6 +19,9 @@ description: Learn about the different user roles in Topics.
 
 # Roles in Microsoft Topics
 
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
+
 When you use Topics in your Microsoft 365 environment, your users can have the following roles:
 
 - [Topic viewer](#topic-viewer)

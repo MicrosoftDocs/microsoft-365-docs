@@ -20,6 +20,9 @@ description: Learn how to administer topic visibility in Topics.
 
 # Manage topic visibility in Topics
 
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
+
 You can manage who can see topic highlights, topic cards, and the topic center in the [Microsoft 365 admin center](https://admin.microsoft.com). You must be a SharePoint administrator and Groups admin to do these tasks.
 
 ## To access topics management settings

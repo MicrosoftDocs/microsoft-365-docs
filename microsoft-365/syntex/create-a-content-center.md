@@ -23,7 +23,7 @@ description: Learn how to create a content center in Microsoft Syntex.
 
 <!---</br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CPSF]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b5dd658f-4416-4e80-9e56-a9c57902945d]
 
 </br>--->
 
@@ -70,4 +70,3 @@ The **Models** library in the default content center view groups the created mod
 
 > [!NOTE]
 > You can't change the designated default content center. It's always the first content center created during setup. 
-

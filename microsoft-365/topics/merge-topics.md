@@ -21,6 +21,9 @@ ROBOTS: NOINDEX,NOFOLLOW
 
 # Merge topics in Topics
 
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
+
 You can merge multiple topics into one if Topics identifies different topics that refer to the same thing.
 
 >[!NOTE]

@@ -40,7 +40,7 @@ To access deployment insights, in the left navigation pane in [Lighthouse](https
 
 ## Watch: Deployment insights
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW15vPs]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=2dcf8c3e-a69c-4dff-a027-b2e9c282b818]
 
 Check out the other [Microsoft 365 Lighthouse videos](https://www.youtube.com/playlist?list=PLnWjfDdQkUQSCbV-ftVD311_fZxghB22C) on our YouTube channel.
 

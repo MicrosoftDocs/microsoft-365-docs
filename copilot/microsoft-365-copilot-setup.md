@@ -1,11 +1,11 @@
 ---
-title: "Get your organization and data ready for Microsoft 365 Copilot"
+title: "Set up Microsoft 365 Copilot"
 f1.keywords:
 - NOCSH
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 09/24/2024
+ms.date: 1/14/2025
 audience: Admin
 ms.topic: get-started
 ms.service: microsoft-365-copilot
@@ -16,39 +16,33 @@ ms.collection:
 - magic-ai-copilot
 - essentials-get-started
 description: Learn how IT administrators can prepare their organization for Microsoft 365 Copilot. Admin cans assign licenses, optimize SharePoint search, give enough access, prevent oversharing, use sensitivity labels, create a pilot group, and more.
+appliesto:
+  - ✅ Microsoft 365 Copilot
 ---
 
-# Get started with Microsoft 365 Copilot - admin guide
+# Set up Microsoft 365 Copilot - admin guide
 
 [Microsoft 365 Copilot](microsoft-365-copilot-overview.md) is an AI-powered productivity tool that uses large language models (LLMs). It integrates with your data, with Microsoft Graph, and with Microsoft 365 Apps.
 
 It works alongside popular Microsoft 365 Apps, like Word, Excel, PowerPoint, Outlook, Teams, and more. Copilot provides real-time intelligent assistance, enabling users to enhance their creativity, productivity, and skills.
 
-This article covers how IT admins can prepare their organization for Copilot.
+This article provides guidance for administrators on preparing their organization for Microsoft 365 Copilot. It covers foundational implementation and readiness activities, licensing, and steps to ensure a secure and compliant deployment.
 
-> [!TIP]
-> If you're an end user, then the [Copilot Lab](https://copilot.cloud.microsoft/prompts) is a good resource.
-
-## Before you begin
-
-This section gives an overview of the prerequisites (licensing and admin centers access), and apps that can use Copilot. There might be more requirements at [Microsoft Copilot 365 requirements](microsoft-365-copilot-requirements.md).
-
-### Prerequisites
+## Prerequisites
 
 - This article uses the following admin centers. These admin centers require a specific role to complete the tasks in the article.
 
-  - **[Microsoft 365 admin center](https://admin.microsoft.com)**: There are different roles, depending on the task you need to complete. To learn more about roles, see [Commonly used Microsoft 365 admin center roles](/microsoft-365/admin/add-users/about-admin-roles#commonly-used-microsoft-365-admin-center-roles).
+  - **[Microsoft 365 admin center](https://admin.microsoft.com)**: There are different roles depending on the task you need to complete. To learn more about roles, see [Commonly used Microsoft 365 admin center roles](/microsoft-365/admin/add-users/about-admin-roles#commonly-used-microsoft-365-admin-center-roles).
   - **[SharePoint admin center](https://go.microsoft.com/fwlink/?linkid=2185219)**: Sign in as the [SharePoint administrator](/sharepoint/sharepoint-admin-role).
-  - **[Microsoft Purview portal](https://purview.microsoft.com)**: There are different roles, depending on the task you need to complete. To learn more, see:
-
+  - **[Microsoft Purview portal](https://purview.microsoft.com)**: There are different roles depending on the task you need to complete. To learn more, see:
     - [Permissions required to create and manage sensitivity labels](/purview/get-started-with-sensitivity-labels#permissions-required-to-create-and-manage-sensitivity-labels)
     - [Roles and role groups in Microsoft Defender for Office 365 and Microsoft Purview](/defender-office-365/scc-permissions)
 
-- You must have an appropriate **subscription plan to purchase Microsoft 365 Copilot**.
-
-  You can purchase Microsoft 365 Copilot licenses through the [Microsoft 365 admin center](https://admin.microsoft.com) (**Billing** > **Purchase services**), Microsoft partners, or your Microsoft account team.
+- You must have an appropriate subscription plan to purchase Microsoft 365 Copilot.
 
   Microsoft 365 Copilot licenses are available as an add-on to other licensing plans. To learn more, see [Understand licensing for Microsoft 365 Copilot](microsoft-365-copilot-licensing.md).
+
+  You can purchase Microsoft 365 Copilot licenses through the [Microsoft 365 admin center](https://admin.microsoft.com) (**Billing** > **Purchase services**), Microsoft partners, or your Microsoft account team.
 
 - More licenses might be required to use some of the features describes in this article, like Microsoft Purview and SharePoint Advanced Management.
 
@@ -57,166 +51,57 @@ This section gives an overview of the prerequisites (licensing and admin centers
   - [Microsoft Purview service description](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-purview-service-description)
   - [Microsoft SharePoint Premium - SharePoint Advanced Management overview](/sharepoint/advanced-management#licensing)
 
-### App requirements
+- To view Microsoft 365 app requirements, see [Microsoft 365 Copilot requirements](microsoft-365-copilot-requirements.md).
 
-- **Microsoft 365 Apps** - Including desktop applications, like Word, Excel, PowerPoint, Outlook, and Teams. Copilot is available in web versions of the apps when a license is assigned. To get started with the implementation process, see [Deployment guide for Microsoft 365 Apps](/deployoffice/deployment-guide-microsoft-365-apps).
+## Readiness activities
 
-- **OneDrive Account** - You need a OneDrive account for several features within Microsoft 365 Copilot, like saving and sharing your files. For more information, see [Sign in or create an account for OneDrive](https://support.microsoft.com/office/video-sign-in-or-create-an-account-for-onedrive-3adf09fd-90e3-4420-8c4e-b55e2cde40d2?ui=en-us&rs=en-us&ad=us).
+To ensure a smooth transition to Microsoft 365 Copilot, admins should undertake the following readiness activities:
 
-- **Outlook for Windows** - For seamless integration of Microsoft 365 Copilot with Outlook, new Outlook (Windows, Mac, Web, Mobile) is recommended. Copilot does support classic Outlook (Windows). You can switch to Outlook Mobile to access the new Outlook experience. For more information, see [Getting started with the new Outlook for Windows](https://support.microsoft.com/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627).
+- **Set up a test environment** Establish a test environment with necessary licenses to validate configurations and test scenarios.
+- **Conduct pilot testing** Perform pilot testing with a select group of users to identify any issues and gather feedback.
+- **Develop a communication plan** Create a communication plan to inform users about the upcoming changes and provide them with the necessary resources and support.
+- **Review Conditional Access policies** Ensure that conditional access policies are appropriately configured. Microsoft 365 Copilot supports tenant-level Conditional Access Policies in SharePoint Online. To learn more, see [Conditional Access](/entra/identity/conditional-access/overview).
+- **Review SharePoint Search and Advanced Management Policies** Use SharePoint Advanced Management (SAM) to control access to content, prevent oversharing, and manage content lifecycle. For detailed steps, see [Get ready for Microsoft 365 Copilot with SharePoint Advanced Management (SAM)](/sharepoint/get-ready-copilot-sharepoint-advanced-management). Additionally, consider implementing restricted SharePoint search to limit the discoverability of sensitive content. To learn more, see [Address internal oversharing concerns in Microsoft 365 Copilot deployment blueprint](microsoft-365-copilot-blueprint-oversharing.md).
+- **Ensure network compliance** Review and ensure that your network meets the requirements for Microsoft 365 Copilot services. To learn more, see [Microsoft 365 Copilot network requirements](microsoft-365-copilot-requirements.md#network-requirements).
 
-- **Microsoft Teams** - To use Microsoft 365 Copilot with Microsoft Teams, you must [download the Teams desktop client or web client](https://www.microsoft.com/microsoft-teams/download-app), or sign into the web app at [https://teams.microsoft.com](https://teams.microsoft.com/). Both the current and the new version of Teams are supported. For more information, see [Microsoft Teams desktop client](/microsoftteams/get-clients?tabs=Windows).
+## Security measures
 
-  To enable Copilot in Teams to reference meeting content after the meeting end, transcription or meeting recording must be enabled. To learn more about configuring transcription and recording, see [Configure transcription and captions for Teams meetings](/microsoftteams/meeting-transcription-captions) and [Teams meeting recording](/microsoftteams/meeting-recording).
+To ensure a secure and compliant environment for Microsoft 365 Copilot, it's crucial to implement robust security measures. Some key components of this are Multifactor authentication (MFA), audit logging, and restricting sensitive information. These measures help protect against unauthorized access and provide visibility into user and admin activities.
 
-- **Microsoft Loop** - To use Copilot in Microsoft Loop, you must have Loop enabled for your tenant. For more information on enabling Loop, see [Get started with Microsoft Loop](https://support.microsoft.com/office/get-started-with-microsoft-loop-9f4d8d4f-dfc6-4518-9ef6-069408c21f0c).
+### Multifactor authentication (MFA)
 
-- **Microsoft Whiteboard** - To use Microsoft 365 Copilot with Microsoft Whiteboard, you must have Whiteboard enabled for your tenant. To learn more about Microsoft Whiteboard, see [Manage access to Microsoft Whiteboard for your organization](/microsoft-365/whiteboard/manage-whiteboard-access-organizations).
+Multifactor authentication (MFA) is a critical security measure that requires users to provide two or more verification factors to gain access to a resource such as an application or online account. Implementing MFA helps protect against unauthorized access and enhances the security of your organization's data. To learn more, see [Microsoft Entra multifactor authentication](/entra/identity/authentication/concept-mfa-howitworks).
 
-## Step 1 - Optimize search in SharePoint
+#### Steps to implement MFA
 
-✅ **Optimize your SharePoint content for search**
+- **Enable MFA for all users** Ensure that MFA is enabled for all users in your organization. This can be done through the Microsoft 365 admin center. To learn more, see [Set up multifactor authentication for Microsoft 365](/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
+- **Configure Conditional Access policies** Set up Conditional Access policies to enforce MFA based on user risk, location, and device compliance. For a tutorial, see [Secure user sign-in events with Microsoft Entra multifactor authentication](/entra/identity/authentication/tutorial-enable-azure-mfa).
+- **Educate users** Provide training and resources to help users understand the importance of MFA and how to use it effectively.
 
-When a user makes a request to Copilot, it processes the request and then generates a response with LLMs. LLMs leverage content from Microsoft Graph and web content (optional).
+### Audit logging
 
-Content in Microsoft Graph includes emails, files, meetings, chats, calendars, and contacts. A significant portion of this data is [stored in SharePoint](/sharepoint/get-ready-copilot-sharepoint-advanced-management#copilot-and-sharepoint). Copilot gathers SharePoint content in the same way SharePoint Search gathers content.
+Audit logging is essential for tracking and monitoring activities within your Microsoft 365 environment. It helps administrators detect and respond to potential security incidents and ensures compliance with regulatory requirements. To learn more, see [Audit logging and monitoring overview](/compliance/assurance/assurance-audit-logging).
 
-To get the most out of Copilot and get the best results, optimize your SharePoint content for search:
+#### Steps to implement audit logging
 
-- [Make sure the content can be found](/sharepoint/make-sure-content-can-be-found)
-- [Make sure the search results look great](/sharepoint/make-search-results-look-great)
-- [Plan your content](/microsoftsearch/plan-your-content)
-- Clean up unused sites in [SharePoint admin center](/sharepoint/delete-site-collection#delete-a-site-in-the-new-sharepoint-admin-center) or [with SharePoint Advanced Management](/sharepoint/get-ready-copilot-sharepoint-advanced-management#step-2-clean-up-unused-sites)
+- **Enable unified audit logging** Turn on unified audit logging in the Microsoft Purview compliance portal to capture all user and admin activities.
+- **Configure audit log retention** Set up retention policies to ensure that audit logs are retained for the required period based on your organization's compliance needs.
+- **Monitor and review logs** Regularly monitor and review audit logs to identify any suspicious activities or potential security threats.
 
-Microsoft 365 Copilot allows users to find and access their content through natural language prompting. Copilot ensures data security and privacy by following existing obligations and integrating with your organization's policies. It uses your Microsoft Graph content with the same access controls as other Microsoft 365 services.
+### Restrict sensitive info from Copilot
 
-To learn more about privacy with Microsoft 365 Copilot, see [Data, Privacy, and Security for Microsoft 365 Copilot](microsoft-365-copilot-privacy.md).
+To protect sensitive information during the deployment and use of Microsoft 365 Copilot, follow these steps to identify, assess, and mitigate oversharing risks. These measures will help maintain data security and compliance within your organization:
 
-## Step 2 - Apply principles of Just Enough Access
+- **Identify most popular sites and assess oversharing** Export the top 100 most used sites from the SharePoint admin center and run the SharePoint Advanced Management (SAM) permission state report. To learn more, see [Secure by default with Microsoft Purview and protect against oversharing](/purview/deploymentmodels/depmod-securebydefault-intro).
+- **Grant Copilot access to popular, low-risk sites** Cross-reference the report results from SAM and the Microsoft Purview Data Security Posture Management (DSPM) Oversharing posture assessment with the top 100 used sites.
+- **Turn on proactive audit and protection** Disable "everyone except external users" (EEEU) at the tenant level and enable Purview Audit to monitor Copilot interaction activity. To learn more, see [Protect your sensitive data with Microsoft Purview](/purview/information-protection).
+- **Implement access controls and labeling** Initiate SAM Access Review for all sites that are overshared and apply SAM restricted access control on business-critical sites. To learn more, see [Get ready for Microsoft 365 Copilot with SharePoint Advanced Management (SAM)](/sharepoint/get-ready-copilot-sharepoint-advanced-management).
 
-### Prevent oversharing and control access with SharePoint and OneDrive
+For detailed steps, see [Address internal oversharing concerns in Microsoft 365 Copilot deployment blueprint](microsoft-365-copilot-blueprint-oversharing.md).
 
-To get ready for your organization’s Microsoft 365 Copilot adoption, there are a few [highly recommended steps you can take with SharePoint and OneDrive](/sharepoint/get-ready-copilot-sharepoint-advanced-management).
+## Get started and deploy
 
-To start, you can:
-
-✅ **Reduce accidental oversharing with SharePoint sharing settings**
-
-To minimize accidental content oversharing with Copilot results, implement sharing settings at the organization and site levels:
-
-1. At the organization level:
-
-    - Update [sharing settings for SharePoint and OneDrive](/sharepoint/turn-external-sharing-on-or-off) for your tenant from organization-wide sharing to specific people links.
-    - Consider hiding broad-scope permissions from your end users. For example, use the SharePoint `Set-SPOTenant` PowerShell cmdlet to [hide "Everyone Except External Users" in the People Picker control](/powershell/module/sharepoint-online/set-spotenant) so end users can't use it.
-    - Use [Restricted SharePoint Search (RSS)](/sharepoint/restricted-sharepoint-search) to temporarily restrict Copilot results up to 100 selected SharePoint sites. Child sites of Hub sites aren't counted toward the 100 limit.
-
-      RSS gives you time to review & audit site permissions. It should be used only as a temporary solution to give your organization time to adopt Copilot. 
-
-2. Reduce accidental oversharing at the site level:
-
-    - Educate site admins on the site-level controls they can use to [restrict members from sharing](/sharepoint/change-external-sharing-site).
-    - Make sure that [Site Owners receive a request to access the site](https://support.microsoft.com/office/set-up-and-manage-access-requests-94b26e0b-2822-49d4-929a-8455698654b3).
-    - [Change the external sharing setting for a user's OneDrive](/sharepoint/user-external-sharing-settings). When a user saves a file to OneDrive, it's in the end user's personal storage. The user has full control over the file and can share it with others. To ensure data security, review OneDrive sharing features.
-
-✅ **Check permissions and site access in SharePoint admin center**
-
-To ensure data is secure, review SharePoint site access and permissions. Prioritize sites that contain sensitive information.
-
-1. In the [SharePoint admin center](https://go.microsoft.com/fwlink/?linkid=2185219), see **Active Sites** > select a site > **Edit** > **Settings**.
-
-    **Private** means that only users in your organization with access to the site can find it. **Public** (default) means anyone in your organization can find the site and access its content.
-
-    :::image type="content" source="media/sharepoint-active-sites-setting.png" alt-text="Screenshot showing the SharePoint admin center active sites panel." lightbox="media/sharepoint-active-sites-setting.png":::
-
-1. In the **Membership** tab, review access to site owners, members, and visitors. Ensure that only the necessary users have access to the site.
-
-✅ **Identify sites with potentially overshared content and control access**
-
-1. Use the following SharePoint Advanced Management (SAM) activity-based reports to quickly identify the most actively overshared sites:
-
-    - [Usage of "Everyone Except External Users"](/sharepoint/data-access-governance-reports#content-shared-with-everyone-except-external-users-eeeu-reports) 
-    - [Usage of “People in your organization" sharing links](/sharepoint/data-access-governance-reports#sharing-links-reports) 
-    - [Usage of "Anyone" sharing links](/sharepoint/data-access-governance-reports#sharing-links-reports) 
-
-2. [Initiate a Site Access Review](/sharepoint/restricted-access-control) for site owners to confirm overshared content and take remediation steps. SharePoint admins can use the [Restricted Access Control Policy](/sharepoint/restricted-access-control) to restrict access to a site with overshared content.
-
-For business-critical sites, there are features in SharePoint Advanced Management and Microsoft Purview you can use:
-
-- Use [Restricted Access Control (RAC)](/sharepoint/restricted-access-control) to proactively protect against oversharing. When you create new sites, configure a RAC policy as part of your custom site provisioning process. This step proactively avoids oversharing.
-- Consider blocking downloads from selected sites using a block download policy. For example, [block the download of Teams meeting recordings and transcripts](/microsoftteams/block-download-meeting-recording).
-- Apply encryption with "extract rights" enforced on business-critical office documents. To learn more, see [Microsoft Purview data security and compliance protections for generative AI apps](/purview/ai-microsoft-purview).
-
-> [!NOTE]
-> SharePoint Advanced Management has more features to help you get ready for Copilot fast and at scale. To learn more, see [Get ready for Copilot for Microsoft 365 with SharePoint Advanced Management (SAM)](/sharepoint/get-ready-copilot-sharepoint-advanced-management).
-
-### Sensitivity labels from Microsoft Purview
-
-✅ **Use sensitivity labels to protect your data**
-
-In the [Microsoft Purview portal](https://purview.microsoft.com), you can create [sensitivity labels](/purview/create-sensitivity-label) (**Information protection** > **Sensitivity labels**). Use these labels to identify how sensitive the data is in your organization. When they're applied to items like documents and emails, the labels add an extra layer of protection and can affect Copilot results.
-
-:::image type="content" source="media/purview-labels-sensitivity.png" alt-text="Screenshot showing the Microsoft Purview screen for sensitivity labels." lightbox="media/purview-labels-sensitivity.png":::
-
-The extra later of protection includes:
-
-- Copilot Business Chat can reference data from different types of items. The sensitivity label with the highest priority is visible to users.
-
-- If the label applies encryption, Copilot checks the usage rights for the user. For Copilot to return data from that item, the user must be granted permissions to copy from it.
-
-With sensitivity labels, you can:
-
-1. **Create labels or activate default labels**: If you don't already have sensitivity labels, you might be eligible to have some [default labels](/purview/mip-easy-trials#default-sensitivity-labels) automatically created for you, like Public, General, and Confidential. The default labels are suitable for items like files, emails, and meetings. You can modify the default labels and always create your own labels.
-
-    To learn more, see:
-
-    - [Create and configure sensitivity labels and their policies](/purview/create-sensitivity-labels)
-    - [Default labels and policies to protect your data](/purview/mip-easy-trials)
-
-2. **Define the data sensitivity requirements** and review your SharePoint sites & files in OneDrive. Focus on the most critical repositories and determine the sensitivity of the data on these sites.
-
-    If you're piloting Copilot, deploy Copilot licenses to users who have access to these critical sites. Then, iterate through the rest of your repositories and expand your user base.
-
-    For a more detailed strategy to deploy and drive adoption, see [Step 7 - Deploy to some users and measure adoption](#step-7---deploy-to-some-users-and-measure-adoption) (in this article).
-
-3. **Enable and apply sensitivity labels**: [Enable sensitivity labels for files in SharePoint and OneDrive](/purview/sensitivity-labels-sharepoint-onedrive-files). Then, with a publishing label policy, you can configure a default label and users can manually apply your labels. To label at scale, use [autolabeling](/purview/apply-sensitivity-label-automatically) to automatically apply labels based on sensitive information detected.
-
-    For more information about the different ways that you can apply sensitivity labels, see [Common scenarios for sensitivity labels](/purview/get-started-with-sensitivity-labels#common-scenarios-for-sensitivity-labels).
-
-    One of the available labeling methods is to apply sensitivity labels based on content found in documents when you use [data loss prevention (DLP) policies](/purview/dlp-learn-about-dlp). DLP policies can automatically apply sensitivity labels when specific types of information are identified in a document, like personal data that includes addresses, tax information, or passport numbers.
-
-    With DLP policies, you can also:
-
-    - Use the [trainable classifier tool](/purview/trainable-classifiers-get-started-with) to identify categories of content, like source code, financial documents, and HR.
-    - Set up [endpoint DLP policies](/purview/endpoint-dlp-learn-about) that restrict users from specific actions, like copying content to clipboard or removable USB devices, or printing.
-
-Once applied, the sensitivity labels enforce your protection settings.
-
-To learn more about sensitivity labels, see [Learn about sensitivity labels](/purview/sensitivity-labels).
-
-### Copilot activity and Microsoft Purview
-
-✅ **Audit Copilot activity, create retention policies, and use eDiscovery and communication compliance**
-
-In the [Microsoft Purview portal](https://purview.microsoft.com), you can use the following features to search for specific content and activities that include Copilot prompts and responses.
-
-- **Audit**
-
-  You can search for specific activities, activities performed by specific users, and activities that occurred with a date range. To learn more, see [Learn about auditing solutions in Microsoft Purview](/purview/audit-solutions-overview).
-
-- **Retention policies**
-
-  Configure retention policies to retain the Copilot prompts and responses if this data is needed for compliance reasons, even if users delete their chat history. To learn more, see [Learn about retention for Copilot](/purview/retention-policies-copilot).
-
-- **eDiscovery and communication compliance**
-
-  Use eDiscovery and communication compliance policies to analyze Copilot user prompts and responses. The policies can detect inappropriate or risky interactions, or sharing of confidential information.
-
-  To learn more, see [Microsoft Purview eDiscovery solutions](/purview/ediscovery) and [Configure a communication compliance policy to detect for Copilot interactions](/purview/communication-compliance-copilot?tabs=purview-portal).
-
-> [!TIP]
-> To learn more about these Microsoft Purview security and compliance protections for Copilot, and how Microsoft Purview AI Hub can help you more quickly deploy them, see [Microsoft Purview data security and compliance protections for generative AI apps](/purview/ai-microsoft-purview).
-
-## Step 3 - Review app privacy
+### Step 1 - Review app privacy
 
 ✅ **Review your Microsoft 365 apps privacy settings**
 
@@ -224,7 +109,13 @@ The privacy settings in your Microsoft 365 apps can affect the availability of M
 
 To learn more, see [Microsoft 365 Copilot and privacy controls for connected experiences](microsoft-365-copilot-privacy.md#microsoft-365-copilot-and-privacy-controls-for-connected-experiences).
 
-## Step 4 - Update channels
+### Step 2 - Evaluate data governance maturity and data security controls
+
+✅ **Use the Microsoft 365 Copilot Optimization Assessment**
+
+Before deploying Microsoft 365 Copilot, it's essential to evaluate your organization's data governance maturity and data security controls. This can be achieved by completing the [Microsoft 365 Copilot Optimization Assessment](https://www.microsoft.com/solutionassessments/). Based on the outcomes of the assessment, determine your path forward to ensure that your organization is ready for Copilot deployment.
+
+### Step 3 - Update channels
 
 ✅ **Use the Current Channel or Monthly Enterprise Channel to update apps**
 
@@ -244,7 +135,7 @@ Your options:
 
 There are multiple ways you can manage channels for user devices. To learn more, see [Change update channel of Microsoft 365 to enable Copilot](/deployoffice/updates/change-channel-for-copilot).
 
-## Step 5 - Provision Microsoft 365 Copilot licenses
+### Step 4 - Provision Microsoft 365 Copilot licenses
 
 ✅ **Assign Copilot licenses using the Microsoft 365 admin center**
 
@@ -259,7 +150,7 @@ To learn more, see:
 - Enable Copilot in your organization at [Enable users for Microsoft 365 Copilot](microsoft-365-copilot-enable-users.md).
 - You can assign licenses in bulk to [groups of users through the Azure admin center](/entra/identity/users/licensing-groups-assign) or [assign licenses to users with PowerShell](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell). For more information, see [Assign Microsoft 365 licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users).
 
-## Step 6 - Configure settings for Copilot
+### Step 5 - Configure settings for Copilot
 
 ✅ **Configure more Copilot features**
 
@@ -274,9 +165,19 @@ You can:
 - Configure plugins and permissions
 - Enable the use of web data as grounding data in Copilot
 
-To learn more, see [Manage Microsoft 365 Copilot with the Copilot page](microsoft-365-copilot-page.md).
+To learn more, see [Manage Microsoft 365 Copilot settings](microsoft-365-copilot-page.md).
 
-## Step 7 - Deploy to some users and measure adoption
+### Step 6 - Deploy to some users and measure adoption
+
+When you're ready to assign Copilot licenses to your users, there are three phases that you can follow:
+
+1. **Pilot**: Assign licenses to a small group of users to test the deployment and gather feedback.
+2. **Deploy**: Assign licenses to a larger group of users.
+3. **Operate**: Monitor usage and adoption, and make adjustments as needed.
+
+To learn more about these phases, and possible actions you can take in each phase, see the [Microsoft deployment blueprint to address oversharing in Microsoft 365 Copilot](microsoft-365-copilot-privacy.md#committed-to-responsible-ai).
+
+#### Pilot
 
 ✅ **Create a group of early adopters**
 
@@ -292,16 +193,40 @@ To help drive adoption, create a group of early adopters. This group can help yo
 
     With your established community of early adopters or Champions, they can better speak to their peers within their organization and contextualize the value of Copilot to best suit their needs. This framework also provides IT departments with a scalable way to handle questions through Champions, developing a team of experts across your organization.
 
-    To learn more about driving adoption, visit the [Microsoft 365 Copilot adoption hub](https://adoption.microsoft.com/Copilot/).
+To learn more about driving adoption, visit the [Microsoft 365 Copilot adoption hub](https://adoption.microsoft.com/Copilot/).
+
+#### Deploy
+
+✅ **Fully deploy Copilot licenses to all users in your organization**
+
+To deploy Copilot licenses to all users in your organization, follow these steps:
+
+1. Use the Microsoft 365 admin center to assign licenses to individual users or groups of users, depending on your needs.
+2. Make sure that all users have the appropriate licenses assigned to them before you begin using Copilot. This will ensure that everyone has access to the features they need and can participate fully in the Copilot experience.
+
+During this phase, you may also want to:
+
+- Focus on preventing oversharing by limiting external sharing, restricting access to certain files or folders, and setting up alerts to notify you of any unusual activity. To learn more, see [Site governance, permission, and sharing for site owners](https://support.microsoft.com/office/overview-site-governance-permission-and-sharing-for-site-owners-95e83c3d-e1b0-4aae-9d08-e94dcaa4942e).
+- Use sensitivity labels to classify and protect sensitive information. These labels allow you to automatically encrypt files containing sensitive data or restrict access to files marked as "confidential." To learn more, see [Get started with sensitivity labels](/purview/get-started-with-sensitivity-labels).
+
+#### Operate
 
 ✅ **Get insights and user sentiment**
 
-To measure the impact of Copilot on your organization, use the [Copilot Dashboard from Viva Insights](/viva/insights/org-team-insights/copilot-dashboard). Viva Insights gives organizational leaders and IT decision makers insights into readiness, adoption, impact, and user sentiment.
+To measure the impact of Copilot on your organization, use the [Copilot Dashboard from Viva Insights](/viva/insights/org-team-insights/copilot-dashboard), and the [Microsoft 365 usage reports in the admin center](/microsoft-365/admin/activity-reports/activity-reports). These tools provide organizational leaders and IT decision makers with insights into readiness, adoption, impact, and user sentiment.
 
 To learn more, see:
 
 - [Open the Microsoft Copilot Dashboard (Preview) from Viva Insights](https://aka.ms/copilotdashboard)
 - [Learn more about the Microsoft Copilot Dashboard (Preview) from Viva Insights](/viva/insights/org-team-insights/copilot-dashboard)
+- [Microsoft 365 reports in the admin center – Microsoft 365 Copilot usage](/microsoft-365/admin//activity-reports/microsoft-365-copilot-usage)
+- [Microsoft 365 reports in the admin center – Microsoft 365 Copilot readiness](/microsoft-365/admin//activity-reports/microsoft-365-copilot-readiness)
+
+## Microsoft 365 Copilot Chat
+
+To enhance data security, enable Microsoft 365 Copilot Chat for all users in your organization. To do this:
+
+- **Log in to Copilot** Access Copilot on [copilot.microsoft.com](https://copilot.microsoft.com/) and ensure that Microsoft 365 Copilot Chat is enabled.
 
 ## More resources
 

@@ -19,6 +19,9 @@ description: Learn how to curate topics in multiple languages using the Multilin
 
 # Curate Multilingual topics in Topics
 
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
+
 The Multilingual feature in Topics allows you to curate and edit a topic page in English, French, German, and Spanish.
 
 > [!NOTE]

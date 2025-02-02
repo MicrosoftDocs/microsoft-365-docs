@@ -16,7 +16,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 10/02/2024
+ms.date: 11/22/2024
 ---
 
 # Deploy your frontline operational hierarchy
@@ -47,7 +47,7 @@ It's important to understand the following terms as you navigate hierarchies. Te
 
 ## Set up your hierarchy
 
-1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com/), choose **Teams** > **Manage frontline teams**.
+1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com/), choose **Frontline deployment** > **Manage frontline teams**.
 1. Go to the **Operational hierarchy** tab.
 
     :::image type="content" source="media/frontline-hierarchy-get-started.png" alt-text="Screenshot of the Operational hierarchy tab on the Manage frontline teams page, showing the Get started button." lightbox="media/frontline-hierarchy-get-started.png":::
@@ -109,7 +109,7 @@ When you add an attribute column, keep the following things in mind:
 
 ## Manage your hierarchy
 
-1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com/), choose **Teams** > **Manage frontline teams**.
+1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com/), choose **Frontline deployment** > **Manage frontline teams**.
 1. Go to the **Operational hierarchy** tab.
 
       :::image type="content" source="media/frontline-hierarchy-manage.png" alt-text="Screenshot of the table on the Operational hierarchy tab of the Manage frontline teams page, showing options after setup is completed." lightbox="media/frontline-hierarchy-manage.png":::
@@ -119,7 +119,7 @@ When you add an attribute column, keep the following things in mind:
     -  Start fresh and download the template again to create a new hierarchy CSV file.
 
         > [!NOTE]
-        > If you created more frontline teams through the [deploy frontline dynamic teams at scale](deploy-dynamic-teams-at-scale.md) experience since the last time you set up your hierarchy, the DisplayName and TeamId values of those frontline teams are added and pre-popluated in the CSV template.
+        > If you created more frontline teams through the [deploy frontline dynamic teams at scale](deploy-dynamic-teams-at-scale.md) experience since the last time you set up your hierarchy, the DisplayName and TeamId values of those frontline teams are added and pre-populated in the CSV template.
 
 1. When you're ready, [upload](#upload-your-hierarchy) your hierarchy CSV file.
 

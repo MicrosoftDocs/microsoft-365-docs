@@ -26,7 +26,7 @@ The Microsoft 365 Backup service, offered through the Microsoft 365 admin center
 
 Microsoft 365 Backup charges you based on the size of the following content for 365 days from the time it's added to backup protection:
 
-- Cumulative back up size of the mailboxes, SharePoint sites, and OneDrive accounts being protected. Size of OneDrive accounts and SharePoint sites are the size of the live OneDrive accounts and SharePoint sites as displayed in the live sites’ usage reports. Mailboxes are the size of the user's mailbox plus their online archives plus deleted items held for backup.
+- Cumulative back up size of the mailboxes, SharePoint sites, and OneDrive accounts being protected. Size of OneDrive accounts and SharePoint sites are the size of the live OneDrive accounts and SharePoint sites as displayed in the live sites’ usage reports. Mailboxes are the size of the user's primary mailbox plus their online archives plus deleted/versioned items held for backup.
 
 - Deleted content in user’s Recycle Bin and second-stage Recycle Bin (also known as Site Collection Recycle Bin).
 
@@ -61,7 +61,7 @@ To use the Microsoft 365 Backup pricing calculator, you need to perform the foll
 
 1. Download the latest version of the [Microsoft 365 Backup pricing calculator tool](https://aka.ms/M365BackupCalculator).
 
-2. Review your [Microsoft 365 usage reports](https://admin.microsoft.com/Adminportal/Home#/reportsUsage) to get historical information about your current usage. Heuristics from the usage reports will be used to populate the inputs (orange boxes) in the pricing calculator tool. Content in the OneDrive and SharePoint recycle bins and data in a mailbox's online archives won't be reflected in these reports, but do affect the backup costs as previously described.
+2. Review your [Microsoft 365 usage reports](https://admin.microsoft.com/Adminportal/Home#/reportsUsage) to get historical information about your current usage. Heuristics from the usage reports will be used to populate the inputs (orange boxes) in the pricing calculator tool. Content in the OneDrive and SharePoint recycle bins and data in archive mailboxes won't be reflected in these reports, but do affect the backup costs as previously described.
 
 3. Open the Excel spreadsheet and select the **High-Level Estimates** worksheet. This sheet produces the simplest default model based on linear data growth assumptions.
 
@@ -69,13 +69,14 @@ To use the Microsoft 365 Backup pricing calculator, you need to perform the foll
 
 5. If you know your tenant has non-organic or non-linear usage changes, then for each of the service types, optionally override the estimated number of protection units or storage for a month in any or all of the service-specific tabs in the pricing calculator tool.
 
-6. An estimate of the Microsoft 365 Backup costs for the next 24 months, not including data currently in your OneDrive and SharePoint recycle bins or mailbox online archive folders, will then be generated.
+6. An estimate of the Microsoft 365 Backup costs for the next 24 months, not including data currently in your OneDrive and SharePoint recycle bins or archive mailboxes, will then be generated.
 
-    The size of your recycle bins can be roughly estimated as the amount of data you delete every three months in OneDrive and SharePoint. Your Mailbox online archives can be estimated by running the following Exchange Online PowerShell command:
+    The size of your recycle bins can be roughly estimated as the amount of data you delete every three months in OneDrive and SharePoint. The size of a single user's archive mailbox can be queried by running the following Exchange Online PowerShell command:
     
     ```powershell
     Get-MailboxStatistics -Identity "user@example.com" -Archive | Select DisplayName, TotalItemSize, ItemCount
     ``` 
+    You can estimate the total size of archive mailboxes in your tenant by taking a representative sample set of users, getting their archive mailbox usage, then scaling the result to the total size of your tenant.
 
 ### Use the Microsoft 365 usage reports as source data for the pricing calculator
 

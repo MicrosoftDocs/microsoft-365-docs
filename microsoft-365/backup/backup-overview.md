@@ -109,6 +109,8 @@ The following table summarizes expected performance for a normally distributed t
 
 <sup>*Single protection unit OneDrive and SharePoint restores using express restore points can take on average between 10 minutes and 120 minutes.</sup>
 
+<sup>**Exchange Online performance times based on an average sized mailbox of 26K items and a size of 10 GB.  Actual times will depend on the number and size of the items in each mailbox.  For a single mailbox, restore times typically fall in the 200 - 300 item/minute range.</sup>
+
 <!---
 |Scenario |Restore of all protection units* complete |
 |:-------|:--------|

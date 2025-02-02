@@ -1,3 +1,4 @@
+items:
 - name: Manage business subscriptions
   href: index.yml
   items:
@@ -51,14 +52,16 @@
           href: licenses/subscriptions-and-licenses.md
     - name: Manage volume licensing
       items:
+        - name: Sign in to the Microsoft 365 admin center
+          href: licenses/vl-sign-in.md
         - name: Contracts FAQs
           href: licenses/contracts-faq.yml
         - name: User roles FAQs
           href: licenses/user-roles-faq.yml
         - name: Download volume licensing products
           href: licenses/download-vl-products.md
-        - name: Product keys FAQ
-          href: licenses/product-keys-faq.yml
+        - name: Find and use product keys
+          href: licenses/product-keys-for-vl.md
         - name: License Reservations FAQ
           href: licenses/manage-license-requests-faq.yml
         - name: Online service activation FAQ

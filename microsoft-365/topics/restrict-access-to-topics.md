@@ -19,6 +19,9 @@ description: Learn how to exclude topics to prevent them from being discovered i
 
 # Restrict access to topics in Topics
 
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
+
 In Topics, stakeholders in your organization might want to make sure that specific topics aren't discovered and exposed to your licensed users. For example, you might be working on a project that you don't want to expose any information about yet. While Microsoft 365 permissions on sites, files, and other resources will prevent users from viewing sensitive information in topics, there are additional safeguards to prevent specific topics from ever being discovered.
 
 While knowledge admins control the settings to prevent topics from being discovered, knowledge managers and other stakeholders need to know how it is done so that they can work collaboratively.

@@ -3,7 +3,7 @@ title: "Microsoft 365 Health Dashboard"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 11/16/2023
+ms.date: 01/06/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -26,7 +26,7 @@ The Health dashboard is designed to give you a snapshot of the overall health of
 
 ## Watch
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW12HEz?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=fb00cf6d-4fdc-4335-b64f-6f3cf0c5f089]
 
 ## Steps: Health dashboard in the Microsoft 365 admin center
 

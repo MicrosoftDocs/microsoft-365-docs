@@ -55,7 +55,7 @@ You must be at least a Billing Administrator to do the steps described in this a
   
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198016).
 
-> [!VIDEO 657e4bbf-a476-459f-9fba-58ca5e441f9f]
+> [!VIDEO a03436f9-660b-4cb3-906d-bdcd86ee21d9]
 
 ## View your bill or invoice
 

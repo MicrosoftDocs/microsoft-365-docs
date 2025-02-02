@@ -30,7 +30,7 @@ ms.custom:
 - admindeeplinkMAC
 - GAUpdates
 description: "Learn what payment options are available to pay for your Microsoft business subscription."
-ms.date: 10/17/2023
+ms.date: 01/07/2025
 ---
 
 # Payment options for Microsoft business subscriptions

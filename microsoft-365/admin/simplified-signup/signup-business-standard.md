@@ -34,7 +34,7 @@ There are a couple of ways to get started:
 
 ## Sign up for Microsoft 365 for business
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e1fe831f-c1a4-4d81-a475-1d8036a047cb]
 
 > [!IMPORTANT]
 > Microsoft 365 Business Standard subscriptions are for commercial use and are intended for business and enterprise customers.

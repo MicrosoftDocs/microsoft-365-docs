@@ -3,9 +3,9 @@ title: "Add or remove members from Microsoft 365 groups"
 ms.reviewer: rahulnayak
 ms.date: 06/27/2024
 f1.keywords: NOCSH
-ms.author: jtremper
-author: jacktremper
-manager: pamgreen
+author: DaniEASmith
+ms.author: danismith
+manager: jtremper
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -32,6 +32,9 @@ In Microsoft 365, group members typically create their own groups, add themselve
 > [!TIP]
 > If you're not an admin, you can [add or remove members using Outlook](https://support.microsoft.com/office/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de).
   
+> [!NOTE]
+> Nesting of groups isn't supported with regard to Microsoft 365 Group, that is, you can't add an existing Distribution List (DL) or Microsoft 365 Group as member of another Microsoft 365 Group.
+
 ## Add a member to a group in the admin center
 
 1. In the admin center, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855">Active groups</a> page.  

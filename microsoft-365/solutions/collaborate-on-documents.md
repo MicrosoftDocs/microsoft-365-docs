@@ -1,8 +1,8 @@
 ---
 title: Collaborate with guests on a document (IT Admins)
-ms.author: jtremper
-author: jacktremper
-manager: pamgreen
+author: DaniEASmith
+ms.author: danismith
+manager: jtremper
 ms.date: 05/31/2024
 audience: ITPro
 ms.topic: article
@@ -32,7 +32,7 @@ If you need to collaborate with people outside your organization on documents in
 
 This video shows the configuration steps described in this document.</br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE450Vt?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b495cdf8-1838-418e-8872-94a56907170a]
 
 ## Microsoft Entra External ID external collaboration settings
 

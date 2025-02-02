@@ -55,7 +55,7 @@ To add, modify, or remove domains, you **must** be a **Domain Name Administrator
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198213).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4dN8c?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=23594aee-6bbd-45d0-8e89-f00fc78ca495]
 
 Your company might need multiple domain names for different purposes. For example, you might want to add a different spelling of your company name because customers are already using it and their communications failed to reach you.
 

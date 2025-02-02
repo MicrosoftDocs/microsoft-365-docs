@@ -23,6 +23,9 @@ description: Read commonly asked questions and answers about using Topics.
 
 # Frequently asked questions about Topics
 
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
+
 ## Topic discovery and curation
 
 ### How are topics discovered and updated?

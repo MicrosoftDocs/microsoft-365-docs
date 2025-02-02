@@ -16,7 +16,7 @@ metadata:
   - magic-ai-copilot
   author: samanro #Required; your GitHub user alias, with correct capitalization.
   ms.author: samanro #Required; microsoft alias of author; optional team alias.
-  ms.date: 08/09/2024 #Required; mm/dd/yyyy format.
+  ms.date: 11/13/2024 #Required; mm/dd/yyyy format.
   ms.custom: [copilot-learning-hub]
 
 # conceptualContent section (Optional; Remove if not applicable.)
@@ -30,7 +30,10 @@ conceptualContent:
           links:
             - url: microsoft-365-copilot-overview.md
               itemType: overview
-              text: A technical introduction to Microsoft 365 Copilot
+              text: Introduction to Microsoft 365 Copilot
+            - url: microsoft-365-copilot-architecture.md
+              itemType: architecture
+              text: Architecture and illustrations
             - url: https://www.youtube.com/playlist?list=PLXtHYVsvn_b-NeN9BbLb5sLpIGfdP8j78
               itemType: video
               text: Mechanics Microsoft 365 Copilot playlist
@@ -43,15 +46,21 @@ conceptualContent:
             - url: microsoft-365-copilot-privacy.md
               itemType: concept
               text: How Microsoft 365 Copilot protects organizational data
+            - url: microsoft-365-copilot-architecture-data-protection-auditing.md
+              itemType: concept
+              text: Data protection and auditing in Microsoft 365 Copilot
         # Card
         - title: Get ready for Microsoft 365 Copilot
           links:
+            - url: microsoft-365-copilot-e3-guide.md
+              itemType: concept
+              text: E3 implementation guide
+            - url: microsoft-365-copilot-e5-guide.md
+              itemType: concept
+              text: E5 implementation guide
             - url: microsoft-365-copilot-licensing.md
               itemType: concept
-              text: Licensing requirements
-            - url: microsoft-365-copilot-requirements.md
-              itemType: concept
-              text: Technical prerequisites
+              text: Licensing options
             - url: https://www.microsoft.com/en-us/solutionassessments/safeedbackform
               itemType: get-started
               text: Microsoft 365 Copilot Optimization Assessment (English only)
@@ -60,10 +69,10 @@ conceptualContent:
           links:
             - url: microsoft-365-copilot-setup.md
               itemType: deploy
-              text: Set up Microsoft 365 Copilot
+              text: Set up and assign Microsoft 365 Copilot licenses
             - url: https://setup.cloud.microsoft/copilot-for-microsoft-365/setup-guide
               itemType: deploy
-              text: Use the Microsoft 365 Copilot setup guide
+              text: Microsoft 365 Copilot setup guide on setup.cloud.microsoft
             - url: https://adoption.microsoft.com/copilot/
               itemType: get-started
               text: Best practices and tools for employee engagement
@@ -72,7 +81,7 @@ conceptualContent:
               text: Microsoft Copilot Scenario Library
             - url: https://copilot.cloud.microsoft/prompts
               itemType: training
-              text: Copilot lab for recommended prompts and tutorials
+              text: Copilot Prompt Gallery for recommended prompts and tutorials
         # Card
         - title: Deliver impact
           links:
@@ -96,7 +105,7 @@ conceptualContent:
               text: Building your own plug-ins and connectors
             - url: /microsoft-365-copilot/extensibility/build-or-extend#build-your-own-copilot
               itemType: overview 
-              text: Build a custom Copilot
+              text: Build a custom agent
             - url: /microsoft-copilot-studio/
               itemType: overview 
               text: Get started with Copilot Studio

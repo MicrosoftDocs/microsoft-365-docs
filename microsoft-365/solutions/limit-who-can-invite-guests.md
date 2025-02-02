@@ -1,8 +1,8 @@
 ---
 title: "Limit who can invite guests"
-ms.author: jtremper
-author: jacktremper
-manager: pamgreen
+author: DaniEASmith
+ms.author: danismith
+manager: jtremper
 ms.date: 06/19/2024
 audience: ITPro
 ms.topic: article

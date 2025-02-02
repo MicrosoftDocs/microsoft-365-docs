@@ -1,7 +1,7 @@
 ---
 title: "Collaborating with people outside your organization"
-ms.author: jtremper
-author: jacktremper
+author: DaniEASmith
+ms.author: danismith
 manager: jtremper
 ms.date: 10/28/2024
 audience: ITPro

@@ -70,5 +70,4 @@ In case you create a new policy configuration or change the configuration for an
 ## Related topics
 
 - [Get started with Microsoft Loop - Microsoft Support](https://support.microsoft.com/office/get-started-with-microsoft-loop-9f4d8d4f-dfc6-4518-9ef6-069408c21f0c)
-- [Manage Loop workspace experiences in SharePoint Embedded](/microsoft-365/loop/loop-workspaces-configuration)
-- [Manage Loop components in OneDrive and SharePoint](/microsoft-365/loop/loop-components-configuration)
+- [Loop admin policies for Loop components and Loop workspaces](/microsoft-365/loop/loop-components-configuration)

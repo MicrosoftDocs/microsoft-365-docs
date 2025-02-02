@@ -20,6 +20,9 @@ description: Learn how to plan and run a trial pilot program for Topics in your 
 
 # Run a trial of Topics
 
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
+
 This article describes how to set up and run a trial pilot program to deploy Topics to your organization. This article also recommends best practices for the trial.
 
 ## Sign up for a trial

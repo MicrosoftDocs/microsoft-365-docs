@@ -19,6 +19,9 @@ description: Learn how to add Topics cards to the Viva Connections dashboard
 
 # Use Topics cards in the Viva Connections dashboard
 
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
+
 Use Topics cards to encourage knowledge discoverability, engagement, and sharing. Topics has two different cards that can be used on the Viva Connections dashboard. Viva Connections is a personalized employee experience that surfaces the most important content and tools from across your organization. Learn more about [Viva Connections](/viva/connections/viva-connections-overview) and [how to set up a dashboard](/viva/connections/create-dashboard). 
 
 ## Topics cards

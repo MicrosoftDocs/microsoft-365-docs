@@ -3,7 +3,7 @@ title: "Manage security groups with PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 02/14/2024
+ms.date: 12/06/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise

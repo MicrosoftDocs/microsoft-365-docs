@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 11/12/2024
+ms.date: 01/22/2025
 audience: admin
 ms.topic: conceptual
 ms.custom: intro-overview
@@ -25,11 +25,11 @@ description: Learn about the unstructured document processing model in Microsoft
 
 <!---</br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSu7]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=0362ab91-3b79-47f4-9930-9a706d55b97d]
 
 </br>--->
 
-Use the unstructured document processing model ([teaching method](create-syntex-model.md#train-a-custom-model)) to automatically classify files and extract information. It works best for unstructured documents, such as letters or contracts.
+Use the unstructured document processing model ([teaching method](create-syntex-model.md#create-a-custom-model)) to automatically classify files and extract information. It works best for unstructured documents, such as letters or contracts.
 
 > [!NOTE]
 > Microsoft respects the privacy and ownership of data you use to train and process models in Syntex. None of your organization's data is used or transferred by Microsoft to train AI models, large-language models, or any other models. Your data remains securely within your organization’s tenant. For more information, see [Microsoft data protection and privacy](https://www.microsoft.com/en-us/trust-center/privacy).
@@ -58,6 +58,4 @@ After publishing your model, use the content center to apply it to any SharePoin
 
 ## Requirements and limitations
 
-For information about requirements to consider when choosing this model, see [Requirements and limitations for models in Microsoft Syntex](requirements-and-limitations.md#unstructured-document-processing).
-
-
+For information about requirements to consider when choosing this model, see the [requirements and limitations for unstructured document processing](requirements-and-limitations.md).

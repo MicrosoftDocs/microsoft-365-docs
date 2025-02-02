@@ -135,7 +135,7 @@ Apply Teams policy packages to define what different roles can do in Teams. For 
 - Information workers in your healthcare organization, such as IT personnel, informatics staff, finance personnel, and compliance officers, can have full access to chat, calling, and meetings.
 - Patient rooms, to control settings for patient room devices.
 
-To learn more, see [Teams policy packages for healthcare](/microsoftteams/policy-packages-healthcare?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
+To learn more, see [Manage policy packages in Teams](/microsoftteams/manage-policy-packages).
 
 ### Team templates for healthcare organizations
 

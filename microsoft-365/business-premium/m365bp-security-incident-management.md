@@ -29,7 +29,7 @@ After you have set up and configured your security capabilities in Microsoft 365
 
 Want to see how it works? Watch this short video on a typical incident response.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Zvew]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=39ebd2ff-f638-4dd3-8059-ab3e244e92b9]
 
 To learn more about incident responses, see the following articles:
 

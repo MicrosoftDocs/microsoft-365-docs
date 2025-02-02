@@ -20,6 +20,9 @@ description: Find the languages available in Topics.
 
 # Supported languages in Topics
 
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
+
 ## Languages available in the UI
 
 Languages in the Topics user interface are based on your organization's Microsoft 365 language preferences. Currently, Topics supports the following languages.

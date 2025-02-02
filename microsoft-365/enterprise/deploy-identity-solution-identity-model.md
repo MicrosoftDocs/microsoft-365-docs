@@ -42,7 +42,7 @@ Before you begin, watch this video for an overview of identity models and authen
 
 <p> </p>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=38a0c805-da7b-432c-aa86-747fc3dc2ccb]
 
 Your first planning choice is your cloud identity model.
 

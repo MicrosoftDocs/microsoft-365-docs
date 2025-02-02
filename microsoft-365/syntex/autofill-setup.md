@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 09/26/2024
+ms.date: 01/13/2025
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -14,7 +14,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to set up autofill columns in Microsoft Syntex.
+description: Learn how to set up autofill columns in SharePoint.
 ---
 
 # Set up and manage autofill columns in Microsoft Syntex
@@ -25,7 +25,7 @@ The autofill columns service for Microsoft Syntex is set up in the Microsoft 365
 
 ### Licensing
 
-Before you can use autofill columns in Syntex, you must first link an Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). Autofill columns in Syntex is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md).
+Before you can use autofill columns, you must first link an Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). Autofill columns is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md).
 
 ### Permissions
 
@@ -43,13 +43,15 @@ By default, autofill columns is turned on for libraries in all SharePoint sites.
 
 1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>.
 
-2. Under **Files and content**, select **Automate content processes with Syntex**.
+2. Under **Billing and licenses**, select **Activate pay-as-you-go services**.
 
-3. On the **Automate content processes with Syntex** page, select **Go to Syntex settings**.
+3. On the **Activate pay-as-you-go services** page, select **Get started**.
 
-4. On the Syntex page, in the **Document & image services** section, select **Autofill columns**.
+4. On the **Pay-as-you-go services** page, select the **Settings** tab, and then select **Syntex services**.
 
-5. On the **Autofill columns** panel:
+5. On the Syntex page, in the **Document & image services** section, select **Autofill columns**.
+
+6. On the **Autofill columns** panel:
 
     a. Choose the site or sites on which this service should be enabled.
 

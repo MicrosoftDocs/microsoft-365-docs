@@ -19,6 +19,7 @@ ms.collection:
 ms.custom: 
 - commerce_ssp
 - AdminSurgePortfolio
+- campaignIDs-batch1
 search.appverid:
 - MET150
 description: "Learn how to use the AllowSelfServicePurchase PowerShell cmdlet to turn self-service purchase on or off."
@@ -39,6 +40,9 @@ You can use the **MSCommerce** PowerShell module to:
 - View or modify the current setting for a specific product to either enable or disable it
 - For Microsoft products only: view or modify the setting for trials without payment methods
 
+> [!IMPORTANT]
+> Self-service purchases and trials can't be completely turned off at the tenant level with a single command. The **AllowSelfServicePurchase** policy is managed on a per-product basis. You can only turn off self-services purchases and trials for the entire tenant by turning off each product individually. By default, all new products are set to allow users to make a self-service purchase.
+
 ## Requirements
 
 To use the **MSCommerce** PowerShell module, you need:
@@ -47,6 +51,7 @@ To use the **MSCommerce** PowerShell module, you need:
 - The Global or Billing Administrator role for your tenant to change the **MSCommerce** product policies.
     [!INCLUDE [ga-roles-limitation](../../includes/ga-roles-limitation.md)]
 - The Global reader role for your tenant to see a read-only list of **MSCommerce** product policies.
+- Partners who are Admins On Behalf Of (AOBO) a customer must have a role that's set to Global Administrator in order to manage and disable self-service purchases in the Microsoft 365 admin center and via PowerShell.
 
 ## Get started with the MSCommerce PowerShell module
 
@@ -168,6 +173,9 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId <Pr
 ## Use AllowSelfServicePurchase with third-party offer types
 
 This section contains information about how to view a list of self-service purchase for third-party offer types and their status, and how to set the status.
+
+> [!NOTE]
+> Software as a subscription (SaaS) products and services subscribed to in the Azure portal aren’t blocked by the **AllowSelfServicePurchase** policy.
 
 ### View a list of self-service purchase third-party offer types and their status
 

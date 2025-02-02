@@ -19,6 +19,9 @@ description: Overview of topic discovery and curation in Topics
 
 # Topic discovery and curation in Topics
 
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
+
 Topics organizes information into knowledge in your Microsoft 365 environment. We have all experienced reading through documents and site pages where we encounter terms we're unfamiliar with. Many times we stop what we are doing to spend precious time searching for more information.
 
 Topics uses Microsoft Graph and AI to identify **topics** in your organization.  A topic is a phrase or term that has a specific meaning to the organization, and has resources related to it that can help people understand what it is and find more information about it. There are lots of different types of topics that can be important to your organization. Initially, the following types of topics can be identified:

@@ -19,6 +19,9 @@ description: Learn how to save a new or revised topic as a draft in Topics.
 
 # Save a topic as a draft in Topics
 
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
+
 You can save as a draft a new topic or a revised topic that you're working on, but not ready to publish yet.
 
 ## Save a new topic as a draft

@@ -42,15 +42,15 @@ Follow these best practices for your online meetings:
 
 ## Schedule a meeting
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOhP]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=2db1e87e-d20c-4ac8-a77c-58f3db6fb02e]
 
 ## Join a meeting
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYWn]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b76a00f9-f298-4510-b0ba-afd674b40739]
 
 Learn more about meeting in Microsoft Teams:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWeokQ]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=da5851ac-2d70-4743-afba-7bff93baf927]
 
 ## Next step
 

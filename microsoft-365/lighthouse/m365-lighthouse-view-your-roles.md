@@ -46,7 +46,7 @@ You must have access to a partner tenant that has onboarded to the Microsoft 365
 
 ## Next steps
 
-If you don't have permission to perform an action that you need to perform in Lighthouse, reach out to an admin in your partner tenant who can assign you the appropriate role for the action you're trying to perform.
+If you don't have permission to perform an action that you need to perform in Lighthouse, reach out to someone who holds the Administrator role in Lighthouse and ask them to assign you an appropriate role for the action you're trying to perform.
 
 ## Related content
 

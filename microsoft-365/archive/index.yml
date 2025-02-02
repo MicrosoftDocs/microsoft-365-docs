@@ -40,6 +40,8 @@ landingContent:
             url: archive-setup.md
           - text: Pricing model
             url: archive-pricing.md
+          - text: Education offering
+            url: archive-education-offering.md  
 
 # Card 3
   - title: Archive sites

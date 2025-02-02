@@ -19,6 +19,9 @@ description: Learn about how to find topics in Topics by using SharePoint taxono
 
 # Use SharePoint taxonomy terms to create topics in Topics
 
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
+
 You can use SharePoint taxonomy terms to help guide artificial intelligence (AI) to create topics in Topics. The SharePoint taxonomy service provides global terms that are available to all sites. Users can create topics that correspond with concepts that are represented as terms.
 
 ## Permissions required

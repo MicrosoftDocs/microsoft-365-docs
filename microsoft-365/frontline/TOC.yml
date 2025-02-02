@@ -1,3 +1,4 @@
+items:
 - name: Microsoft 365 for frontline workers
   href: index.yml
   items:
@@ -159,8 +160,6 @@
         href: teams-in-hc.md
       - name: Healthcare team templates
         href: /microsoftteams/expand-teams-across-your-org/healthcare/healthcare-templates-admin-console?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
-      - name: Teams policy packages for healthcare
-        href: /microsoftteams/policy-packages-healthcare?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
       - name: Messaging policies
         href: messaging-policies-hc.md    
     - name: Retail
@@ -199,6 +198,7 @@
       href: /microsoftteams/manage-virtual-appointments-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
     - name: Manage the Walkie Talkie app
       href: /microsoftteams/walkie-talkie?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
-    - name: Teams for RealWear
-      href: /microsoftteams/flw-realwear?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+    - name: Troubleshoot Walkie Talkie issues
+      href: /microsoftteams/walkie-talkie-troubleshoot?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+
 

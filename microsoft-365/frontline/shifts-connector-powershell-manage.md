@@ -18,7 +18,7 @@ ms.collection:
 appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 10/17/2023
+ms.date: 12/20/2024
 ---
 
 # Use PowerShell to manage your Shifts connection to Blue Yonder Workforce Management

@@ -54,12 +54,6 @@ This article describes error messages and problems that you might encounter whil
 
 4. Select **Save**.
 
-### Message when signing in to Lighthouse: "Accept the Partner Amendment"
-
-**Cause:** You attempted to access Lighthouse before a Global Administrator in the partner tenant has signed the partner amendment.
-
-**Resolution:** A Global Administrator must sign in to Lighthouse and accept the partner amendment before you can access and work in Lighthouse. If the error persists after a Global Administrator has signed the amendment, contact Support. For more information, see [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
-
 ## Customer tenant onboarding  
 
 ### Customer tenants show a status other than "Managed" in the tenant list  
@@ -90,7 +84,7 @@ If you confirmed that your customer tenant meets the onboarding criteria and the
 
 **Cause:** You don't belong to the correct security group in Microsoft Entra ID, or you haven't been assigned the correct role in Partner Center to be able to access Lighthouse.
 
-**Resolution:** Make sure that an admin from your partner tenant assigned you to the correct GDAP security group in Microsoft Entra ID and assigned you the correct role in Partner Center. Also, keep in mind that some actions in Lighthouse require you to be a Global Administrator. To learn more about the GDAP roles and what each role can do, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). For a detailed description of all Microsoft Entra built-in roles and permissions for GDAP, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference).
+**Resolution:** Make sure that an admin from your partner tenant assigned you to the correct GDAP security group in Microsoft Entra ID and assigned you the correct role in Partner Center. Also, keep in mind that some actions in Lighthouse require you to hold the Administrator role in Lighthouse. To learn more about the GDAP roles and what each role can do, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). For a detailed description of all Microsoft Entra built-in roles and permissions for GDAP, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference).
 
 For customers with DAP relationships, the partner admin will need to assign you to either the Admin agent or Helpdesk agent role in Partner Center. For a detailed description of all Partner Center roles and permissions, see [Assign roles and permissions to users - Partner Center](/partner-center/permissions-overview).
 
@@ -98,7 +92,7 @@ For customers with DAP relationships, the partner admin will need to assign you 
 
 **Cause:** You have limited GDAP access based on the roles assigned to the Microsoft Entra security group that you're in.
 
-**Resolution:** Make sure that an admin from your partner tenant assigned you to the correct GDAP security group in Microsoft Entra ID. Also, keep in mind that some actions in Lighthouse require you to be a Global admin. To learn more about the GDAP roles and what each role can do, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). For a detailed description of all Microsoft Entra built-in roles and permissions for GDAP, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference).
+**Resolution:** Make sure that an admin from your partner tenant assigned you to the correct GDAP security group in Microsoft Entra ID. Also, keep in mind that some actions in Lighthouse require you to hold the Administrator role in Lighthouse. To learn more about the GDAP roles and what each role can do, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). For a detailed description of all Microsoft Entra built-in roles and permissions for GDAP, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference).
 
 ## GDAP setup and management
 
@@ -106,7 +100,7 @@ For customers with DAP relationships, the partner admin will need to assign you 
 
 **Cause:** You don't have the required roles to set up GDAP in Lighthouse, or settings in the partner or customer tenants are preventing you from completing GDAP setup.
 
-**Resolution:** Make sure you have the required roles to run GDAP Setup, including Global Administrator (assigned in Microsoft Entra ID) and Admin agent (assigned in Partner Center). Also, make sure your account meets security requirements to run GDAP Setup, including making sure you're not a Risky User and that you have multifactor authentication (MFA) set up. To check for and remediate risks in your account, see [Remediate risks and unblock users](/azure/active-directory/identity-protection/howto-identity-protection-remediate-unblock). For instructions on how to mandate MFA, see [Mandating MFA for your partner tenant - Partner Center](/partner-center/partner-security-requirements-mandating-mfa).
+**Resolution:** Make sure you have the required roles to run GDAP Setup, including Administrator (assigned in Lighthouse) and Admin agent (assigned in Partner Center). Also, make sure your account meets security requirements to run GDAP Setup, including making sure you're not a Risky User and that you have multifactor authentication (MFA) set up. To check for and remediate risks in your account, see [Remediate risks and unblock users](/azure/active-directory/identity-protection/howto-identity-protection-remediate-unblock). For instructions on how to mandate MFA, see [Mandating MFA for your partner tenant - Partner Center](/partner-center/partner-security-requirements-mandating-mfa).
 
 You should also make sure Conditional Access policies configured in the customer tenants aren't blocking your ability to establish a GDAP relationship with them. For step-by-step guidance on how to confirm this, see [What is the recommended next step if the conditional access policy set by the customer blocks all external access?](/partner-center/gdap-bulk-migration-tool-faq#what-is-the-recommended-next-step-if-the-conditional-access-policy-set-by-the-customer-blocks-all-external-access-including-csps-access-aobo-to-the-customers-tenant).
 
@@ -172,7 +166,7 @@ If data is still not appearing on the Device compliance and Threat management pa
 
 **Cause:** You don't have the correct permissions in Partner Center to view the Sales Advisor pages in Lighthouse.
 
-**Resolution:** Verify that you have either the Report viewer or Executive report viewer role for one or more Microsoft Cloud Partner Program locations in Partner Center. Only someone with the Global admin role in Partner Center can assign these roles. For more information, see [Get access to Sales Advisor within Microsoft 365 Lighthouse](m365-lighthouse-get-access-to-sales-advisor.md).
+**Resolution:** Verify that you hold the Account Manager role in Lighthouse. If you don't hold the Account Manager role, reach out to someone who holds the Administrator role in Lighthouse and ask them to assign the role to you. For more information, see [Get access to Sales Advisor within Microsoft 365 Lighthouse](m365-lighthouse-get-access-to-sales-advisor.md).
 
 ### Message when viewing the Sales Advisor Opportunities page in Lighthouse: "There are no opportunities"
 
@@ -188,7 +182,7 @@ If data is still not appearing on the Device compliance and Threat management pa
 
 **Cause 1:** Microsoft 365 Lighthouse hasn't been deployed in your partner tenant yet.
 
-**Resolution:** Work with a Global Administrator in your partner tenant to deploy Lighthouse. For more information, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
+**Resolution:** Work with someone who holds the Administrator role in Lighthouse to deploy Lighthouse in your partner tenant. For more information, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
 **Cause 2:** Your organization has multiple partner tenants and you attempted to access Lighthouse using credentials for a partner tenant that hasn't yet deployed Lighthouse.
 

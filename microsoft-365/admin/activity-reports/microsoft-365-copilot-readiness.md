@@ -3,7 +3,7 @@ title: "Microsoft 365 admin center Microsoft 365 Copilot readiness"
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 06/06/2024
+ms.date: 12/13/2024
 audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-copilot
@@ -45,76 +45,15 @@ You can see the following summary charts in this report:
 
 :::image type="content" alt-text="Screenshot showing how you can ensure users are eligible for Microsoft 365 Copilot." source="../../media/copilot-usage-ensure-readiness.png":::
 
-**Total Prerequisite Licenses** The number is the sum of all users who have at least one license assigned to them or who could be assigned a license. The following license types are eligible for Copilot:
+**Total Prerequisite Licenses**: The number is the sum of all users who have at least one license assigned to them or who could be assigned a license. To learn more about the license types eligible for Copilot, see [Licensing requirements for Microsoft 365 Copilot](/copilot/microsoft-365/microsoft-365-copilot-licensing).
 
-**For Business and Enterprise:**
-
-- **Microsoft 365 plans:**
-  - Microsoft 365 E5
-  - Microsoft 365 E3
-  - Microsoft 365 F1
-  - Microsoft 365 F3
-  - Microsoft 365 Business Basic
-  - Microsoft 365 Business Premium
-  - Microsoft 365 Business Standard
-  - Microsoft 365 Apps for business
-  - Microsoft 365 Apps for enterprise
-
-- **Office 365 plans:**
-  - Office 365 E5
-  - Office 365 E3
-  - Office 365 E1
-  - Office 365 F3
-
-- **Microsoft Teams plans:**
-  - Microsoft Teams Essentials
-  - Microsoft Teams Enterprise
-  - Microsoft Teams EEA (European Economic Area)
-
-- **Exchange plans:**
-  - Exchange Kiosk
-  - Exchange Plan 1
-  - Exchange Plan 2
-
-- **SharePoint plans:**
-  - SharePoint Plan 1
-  - SharePoint Plan 2
-
-- **OneDrive for Business plans:**
-  - OneDrive for Business Plan 1
-  - OneDrive for Business Plan 2
-
-- **Planner and Project plans:**
-  - Microsoft Planner Plan 1 (formerly Project Plan 1)
-  - Microsoft Project Plan 3
-  - Microsoft Project Plan 5
-  - Project Online Essentials
-
-- **Visio plans:**
-  - Visio Plan 1
-  - Visio Plan 2
-
-- **Other plans:**
-  - Microsoft ClipChamp
-
-**For Education Faculty and Higher Education Students Aged 18+:**
-
-- Microsoft 365 A1*
-- Microsoft 365 A3*
-- Microsoft 365 A5*
-- Office 365 A1*
-- Office 365 A3*
-- Office 365 A5*
-
-*Available via Enrollment for Education Solutions (EES) or Cloud Solution Provider (CSP) only.
-
-**Users on an eligible update channel** This number is the sum of all users who are enrolled in Current Channel or Monthly Enterprise Channel for app updates in your organization and could be assigned with a Copilot license.
+**Users on an eligible update channel**: This number is the sum of all users who are enrolled in Current Channel or Monthly Enterprise Channel for app updates in your organization and could be assigned with a Copilot license.
 
 :::image type="content" alt-text="Screenshot showing an organization's number of available licenses to assign." source="../../media/copilot-usage-licenses-assigned.png":::
 
-**Assigned Licenses** This number is the sum of all users who have already been assigned with a Copilot license in your organization.
+**Assigned Licenses**: This number is the sum of all users who have already been assigned with a Copilot license in your organization.
 
-**Available Licenses** This number is the sum of all users who do not have a Copilot license assigned, and should be prioritized first.
+**Available Licenses**: This number is the sum of all users who do not have a Copilot license assigned, and should be prioritized first.
 
 :::image type="content" alt-text="Screenshot showing recommendation cards for Microsoft 365 Copilot usage report." source="../../media/copilot-usage-recommend-cards.png" lightbox="../../media/copilot-usage-recommend-cards.png":::
 
@@ -167,3 +106,9 @@ To make the data in the Microsoft 365 Copilot report anonymous, you must be a gl
 2. Select **Reports**, and then choose to **Display anonymous identifiers**. This setting gets applied both to the usage reports in Microsoft 365 admin center and Teams admin center.
 
 3. Select **Save changes**.
+
+## More resources
+
+- [Microsoft 365 Copilot service description](/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot) (article)
+- [Set up Microsoft 365 Copilot](/copilot/microsoft-365/microsoft-365-copilot-setup) (article)
+- [Microsoft 365 Copilot Adoption](https://adoption.microsoft.com/copilot/)

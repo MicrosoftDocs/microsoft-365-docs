@@ -20,6 +20,9 @@ description: Learn how to administer topic permissions in Topics.
 
 # Manage topic permissions in Topics
 
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
+
 You can manage topic permissions settings in the [Microsoft 365 admin center](https://admin.microsoft.com). You must be a SharePoint administrator to perform these tasks.
 
 With topic permissions settings you can choose:

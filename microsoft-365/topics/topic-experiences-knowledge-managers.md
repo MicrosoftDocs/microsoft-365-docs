@@ -19,6 +19,9 @@ description: Learn how knowledge managers build and manage a knowledge base with
 
 # Knowledge managers: Build and manage a knowledge base in Topics
 
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
+
 Knowledge managers play a key role in building a knowledge base that Topics makes available to employees, in the flow of their work. In this article we review:  
 
 - [The importance of the knowledge manager](#importance-of-the-knowledge-manager)

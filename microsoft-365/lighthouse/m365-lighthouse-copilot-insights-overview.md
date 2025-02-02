@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: shcallaw
+ms.reviewer: viratsingh
 ms.date: 11/08/2024
 audience: Admin
 ms.topic: conceptual
@@ -15,6 +15,7 @@ ms.collection:
 - scotvorg
 - M365-subscription-management
 - Adm_O365
+- magic-ai-copilot
 ms.custom:
 - AdminSurgePortfolib
 - M365-Lighthouse                         
@@ -27,7 +28,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 > [!NOTE]
 > We're continuously enhancing Copilot insights. Let us know what improvements you'd like us to make to this feature to help you drive and manage Microsoft 365 Copilot usage by providing feedback. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select the **Give feedback** widget in the lower-right corner of any page, or go to the [Microsoft 365 Lighthouse feedback page](https://aka.ms/m365lighthouseuservoice).
 
-Copilot insights help you easily manage and monitor Microsoft 365 Copilot success across your customer tenants&mdash;from a single **Copilot insights** page in Lighthouse. In addition to recommending customers who are likely to benefit from Copilot, the page shows Copilot usage and license assignments, Copilot adoption insights, and links to key resources to help you become a Copilot expert, including Copilot Lab, learning paths, training videos, the latest Copilot product updates, and more. The page also provides links to resources that you can share with your customers to help them succeed with Copilot.
+Copilot insights help you easily manage and monitor Microsoft 365 Copilot success across your customer tenants&mdash;from a single **Copilot insights** page in Lighthouse. In addition to recommending customers who are likely to benefit from Copilot, the page shows Copilot usage and license assignments, Copilot adoption insights, and links to key resources to help you become a Copilot expert, including Copilot Prompt Gallery, learning paths, training videos, the latest Copilot product updates, and more. The page also provides links to resources that you can share with your customers to help them succeed with Copilot.
 
 ## Access Copilot insights
 

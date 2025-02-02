@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssathyamoort
-ms.date: 10/22/2024
+ms.date: 01/27/2025
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -22,7 +22,7 @@ description: Learn how to create a template with the SharePoint Agreements solut
 
 Templates serve as a predefined structure that standardizes the creation of documents and agreements. They ensure consistency and uniformity across various documents within the workspace, streamlining the creation process and reducing the likelihood of errors. Templates can include specific sections, formatting, and content guidelines that align with the organization's requirements and branding.
 
-Once you create and publish a template, users with access to the template can start [generating agreements](agreements-create-agreement.md) from it. Users will be asked to [input values for fields](#add-fields-to-a-template), and send it for approval or eSignature based on the [workflow configured](#configure-a-workflow) with the template.
+Once you create and publish a template, users with access to the template can start [generating agreements](agreements-create-agreement.md) from it. Users are asked to [input values for fields](#add-fields-to-a-template), and send it for approval or eSignature based on the [workflow configured](#configure-a-workflow) with the template.
 
 > [!NOTE]
 > You can always edit a published template. However, you need to republish the template for the changes to take effect. Documents will be created based of the last published version of the template.
@@ -33,9 +33,9 @@ Once you create and publish a template, users with access to the template can st
 
 2. Optionally, you can select **Pick a file** to create a template from an existing document.
 
-   - If you pick a file, the content of the file will be copied over to the template.
+   - If you pick a file, the content of the file is copied over to the template.
 
-   - If not, a blank template will be created for you.
+   - If not, a blank template is created for you.
 
 3. On the **Create a template** page, provide a name for the template, select the workspace where the template will be stored, and the category that the template belongs to. Set values for the country or region and the language for the template.
 
@@ -65,6 +65,10 @@ You can also create a template in Microsoft Word.
 6. Select **Save** to create the draft template.
 
 7. You can now add content to the template and set up fields, sections, and workflows for this template.
+
+> [!NOTE]
+> Prior to converting an existing document to a template, you need to remove any content controls or restricted editing sections from the document.
+
 
 ## Add fields to a template
 
@@ -144,6 +148,82 @@ To insert published sections into your template, follow these steps:
 
 4. You can also remove the section from the template by selecting the **Delete** option.
 
+## Add conditional sections to a template
+
+Conditional sections in a template let you create documents that change based on the information given by the document authors.
+
+Before you can create a conditional section, you first need to add fields to the template on which the condition is based. Then, follow these steps to create a conditional section.
+
+1. In the document, open the **Manage templates** panel and select **Define conditional sections**.
+
+   ![A screenshot of an opened document and the Manage templates panel.](../../media/content-understanding/agreements-define-conditional-sections.png)
+
+2. On the **Manage templates** panel, under **Conditional sections**, select **+ New** to start adding the condition.
+
+   ![A screenshot of the Conditional sections area on the Manage templates panel.](../../media/content-understanding/agreements-new-conditional-section.png)
+
+3. Under **New conditional section**, in the **Name** box, enter a name that reflects the content you've selected. (For this example, we named it *Reimbursement Section*.)
+
+   ![A screenshot of the New conditional section area on the Manage templates panel.](../../media/content-understanding/agreements-name-new-conditional-section.png)
+
+### Set conditions
+
+You can add conditions to specify whether this section of the template will be included in the final generated document based on the values of the fields entered by the author.
+
+For this example, we want to show the selected content for two conditions: if the fees are less 10,000 and if the nature of employment is full time.
+
+#### Add the first condition
+
+On the **Manage templates** panel, in the **Set up condition** section:
+
+1. Select **Choose a field**, and then select the appropriate field. (For this example, we selected *Fees*.)
+
+2. Select **Choose a condition**, and then select the appropriate condition. (For this example, we selected *lesser than*.)
+
+3. Select **Enter a value**, and then enter the appropriate value. (For this example, we entered *10000*.)
+
+   ![A screenshot of the first condition in the Set up condition section on the Manage templates panel.](../../media/content-understanding/agreements-add-first-condition.png)
+
+#### Add additional conditions
+
+In the **Set up condition** section:
+
+1. Under the first condition, select **+ And** or **+ Or**, depending how you want the additional condition to be linked to the first condition. (For this example, we chose *And*.)
+
+2. Select **Choose a field**, and then select the appropriate field. (For this example, we selected *Nature of employment*.)
+
+3. Select **Choose a condition**, and then select the appropriate condition. (For this example, we selected *exact match*.)
+
+4. Select **Enter a value**, and then enter the appropriate value. (For this example, we entered *FTE*.)
+
+   ![A screenshot of an additional condition in the Set up condition section on the Manage templates panel.](../../media/content-understanding/agreements-add-additional-conditions.png)
+
+5. When you're done entering conditions, select **Save**. You can see the new condition under **Conditional sections**.
+
+   ![A screenshot of the new condition on the Condition sections panel on the Manage templates panel.](../../media/content-understanding/agreements-saved-condition.png)
+
+#### Map the condition to a document section
+
+After creating the condition, you need to map it to the section of the document that you want to display based on this condition. To do this, select the relevant section in the document and then select **Map**.
+
+If you want to change the section of the document mapped to this condition, select **Unmap** and then repeat the process of mapping a section to the condition.
+
+#### Edit a conditional section
+
+To edit the conditions in a conditional section, select **More options** (**...**), and then select **Edit**.
+
+   ![A screenshot of a condition section showing the Edit and Delete options on the Manage templates panel.](../../media/content-understanding/agreements-edit-delete-condition.png)
+
+#### Delete a conditional section
+
+To delete the conditions in a conditional section, select **More options** (**...**), and then select **Delete**. This deletes the condition and unmaps the selected section.
+
+> [!NOTE]
+> - You can create conditional sections around text, complete paragraphs, and entire tables. To create conditional sections around images, ensure the images are inline images.
+>- You can't add conditions around table rows and columns.
+>- You can't map multiple sections in the document to one condition. One condition can only be mapped to one section in the document.
+>- You can't add nested conditions. To achieve nested conditions, you need to create conditional sections around every section and specify all the required conditions.
+
 ## Configure a workflow
 
 Create customizable workflows that apply to all documents when created with the template.
@@ -168,7 +248,7 @@ To set up a mandatory approval workflow on a template, follow these steps:
 
 ### Configure a SharePoint eSignature workflow
 
-After creating or editing a template, you can set up a SharePoint eSignature flow. This ensures that every document generated from the template is automatically sent for signatures according to the specified flow. SharePoint Agreements AI uses SharePoint eSignature to set up and send signature requests to recipients. For more information, see [Overview of SharePoint eSignature](/microsoft-365/syntex/esignature-overview).
+After creating or editing a template, you can set up a SharePoint eSignature flow. This ensures that every document generated from the template is automatically sent for signatures according to the specified flow. SharePoint Agreements uses SharePoint eSignature to set up and send signature requests to recipients. For more information, see [Overview of SharePoint eSignature](/microsoft-365/syntex/esignature-overview).
 
 To set up a mandatory signature workflow, follow these steps:
 
@@ -181,11 +261,13 @@ To set up a mandatory signature workflow, follow these steps:
    > [!NOTE]
    > You only need to insert the signature field locations in the template. During document generation, authors will have to assign signatory email addresses to the fields and send the PDF version of this document for signing.
 
-4. You can add multiple instances of the same signature field across the template and then navigate through its occurrences.
+4. You can add multiple instances of the same signature field throughout the template and then navigate through each occurrence.
 
-5. You can create multiple signature fields for your template and add its instances in the Word document.
+5. You can create multiple signature fields for your template and add their instances in the Word document.
 
-6. Once set up, you can also choose to later modify the signature request. Once your modifications are complete, select **Save changes** to save the updated flow. You can delete the already saved signature flow by selecting **Delete signature flow**.
+   ![A screenshot of setting up the signature fields in a Word document.](../../media/content-understanding/agreements-set-up-signature-fields.png)
+
+6. Once set up, you can also choose to later modify the signature request before publishing the template.
 
 ## Publish the template
 

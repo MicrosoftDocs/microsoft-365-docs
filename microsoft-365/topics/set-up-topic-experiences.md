@@ -21,6 +21,9 @@ description: Learn how to set up Topics and manage your settings.
 
 # Set up and manage Topics
 
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
+
 You can use the Microsoft 365 admin center to set up and configure [Topics](topic-experiences-overview.md).
 
 It's important to plan the best way to set up and configure topics in your environment. Be sure to read [Plan for Topics](plan-topic-experiences.md) before you begin the procedures in this article.

@@ -19,6 +19,9 @@ description: Learn how to contribute to topics in Topics
 
 # Topic contributors: Share knowledge and expertise in Topics
 
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
+
 [Topics](topic-experiences-overview.md) helps organizations make knowledge and expertise accessible to all employees. It’s like Wikipedia for organizations, but [artificial intelligence (AI) develops the first draft](topic-experiences-discovery-curation.md) and subject matter experts edit the information to add their unique knowledge. Topics then makes the knowledge available to colleagues and leaders at the time of need, and in the flow of their work. In this article we review how to:  
 
 - [Showcase knowledge and expertise with Topics](#showcase-knowledge-and-expertise-with-topics)

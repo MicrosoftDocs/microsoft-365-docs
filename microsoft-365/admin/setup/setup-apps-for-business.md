@@ -126,7 +126,7 @@ Follow the steps next to set up Outlook and OneDrive.
 
 ## Watch: Set up Outlook for email
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/9fe86884-8a83-42cc-bca9-61a12e6dad31?autoplay=false]
+> [!VIDEO e30573c6-b0d5-4007-8ff6-8c9dfd4e39fe]
   
 More at [Set up Outlook for email](https://support.microsoft.com/office/f5bf0cd1-e1f3-4b0d-a022-ecab17efe86f).
   
@@ -148,7 +148,7 @@ If you're using Outlook with another email account, you can import your previous
 
 ## Watch: Import and redirect email
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/40f7df36-9e24-44e5-8791-e9ed0dd8fd21?autoplay=false]
+> [!VIDEO 9efe5ae1-1dec-4f2c-8ea5-fef10843388e]
   
 More at [Import email with Outlook](https://support.microsoft.com/office/6a3771d4-4c1d-4a25-92a6-0b8e476335de).
 

@@ -69,12 +69,9 @@ Microsoft Defender Antivirus is part of the Windows operating system and is enab
 
 ## Requirements for enabling Sales Advisor
 
-To use Sales Advisor to view customer opportunities, you must hold either the Executive report viewer or Report viewer role in Partner Center.
+To use Sales Advisor to view customer opportunities, you must hold the Account Manager role in Lighthouse. If you don't hold the Account Manager role, reach out to someone who holds the Administrator role in Lighthouse and ask them to assign the role to you.
 
-> [!NOTE]
-> Only a Global admin in Partner Center can assign the Executive report viewer or Report viewer roles.
-
-For more information, see [Get access to Sales advisor](m365-lighthouse-get-access-to-sales-advisor.md).
+For more information, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md).
 
 ## Related content
 

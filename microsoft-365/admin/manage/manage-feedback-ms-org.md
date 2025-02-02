@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 10/21/2024
+ms.date: 11/19/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -98,7 +98,7 @@ The following information only applies to United States government customers usi
 ### GCC environment
 
 - Cloud Policy service for Microsoft 365 is available in this environment as of September 24, 2024.
-- Not all products currently support feedback collection in this environment. We anticipate most products will support feedback collection by November 15, 2024. To prepare for this rollout, we recommend you review and configure the policy settings in the way that is appropriate for your organization.
+- Not all products currently support feedback collection in this environment, but we're working to implement that support. To prepare for feedback collection, we recommend you review and configure the policy settings in the way that is appropriate for your organization.
 - When the **Allow users to submit feedback to Microsoft** policy is set to **Not Configured** in this environment, it has the same effect as if you set the policy to **Disabled**.
 - The Feedback portal and in-product surveys aren’t available in this environment, so setting these policies won’t have any effect at this time.
 - The following policies are always treated as **Disabled** in this environment regardless of how you set the policies:

@@ -68,7 +68,7 @@ Frontline workers who are part of the same schedule group in other locations can
 
 To learn more about the user experience, see:
 
-- [Use open shifts across locations in Shifts](https://support.microsoft.com/office/use-open-shifts-across-locations-in-shifts-14d6fd2e-1956-45a4-ba68-ccc71aedfa3b) (frontline managers)
+- [Make open shifts available across locations in Shifts](https://support.microsoft.com/office/make-open-shifts-available-across-locations-in-shifts-14d6fd2e-1956-45a4-ba68-ccc71aedfa3b) (frontline managers)
 - [Request an open shift at another location in Shifts](https://support.microsoft.com/office/request-an-open-shift-at-another-location-in-shifts-7738dc1a-9f4f-46ee-8bcb-6dd1aaf8ab1f) (frontline workers)
 
 **What you need to know about schedule group names**

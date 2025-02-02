@@ -40,7 +40,7 @@ In this article, we look at setting up a team for a sensitive level of protectio
 Watch this video for a walkthrough of the procedures described in this article.
 <br>
 <br>
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4NMS6]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=a9dc1004-f5d0-4a1a-8c2b-bc77f1fbe5b7]
 
 ## Guest sharing
 

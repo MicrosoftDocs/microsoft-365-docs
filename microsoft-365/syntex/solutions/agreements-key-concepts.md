@@ -41,7 +41,7 @@ Roles are assigned at a workspace level. Currently, SharePoint Agreements suppor
 | Template manager | These users can manage templates, but won't have access to all agreements within the workspace. | Read all sections and read/write to all templates. Access to only agreements they create or are shared with them. | Assign this role to those users who can help manage your templates, when you don't want them to have access to all agreements in your workspace. |
 
 > [!NOTE]
-> You can allow users to generate agreements without being assinged a role in the workspace. To do so, share the published template(s) from Word (with at least read-only privileges with the users). These users can then create agreements, and will only have access to agreements that they create or are shared with them.
+> You can allow users to generate agreements without being assigned a role in the workspace. To do so, share the published template(s) from Word (with at least read-only privileges with the users). These users can then create agreements, and will only have access to agreements that they create or are shared with them.
 
 
 ### Manage roles

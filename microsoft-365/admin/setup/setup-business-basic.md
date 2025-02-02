@@ -38,12 +38,6 @@ description: "Learn how to set up your Microsoft 365 Business Basic subscription
 
 Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
-## Watch: Set up Microsoft 365 Business Basic
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vk3W]
-
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
-
 ## Add an existing domain to your Microsoft 365 Business Basic subscription
 
 When you purchase Microsoft 365 Business Basic, you have the option of using a domain you own, or buying one during the sign-up.
@@ -74,7 +68,7 @@ When you purchase Microsoft 365 Business Basic, you have the option of using a d
     If your hosting provider is GoDaddy or another host enabled with [domain connect](/office365/admin/get-help-with-domains/domain-connect), the process is easy and you'll be automatically asked to sign in and let Microsoft authenticate on your behalf.
 
     ![On GoDaddy Confirm Access page, select Authorize.](../../media/godaddyauth.png)
-
+   
 ## Add users and assign licenses
 
 You can add users in the wizard, but you can also [add users later](../add-users/add-users.md) in the admin center.
@@ -105,7 +99,7 @@ To set up services, you have to update some records at your DNS host or domain r
 
 ## Watch: Set up business email with a new domain
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyVVA]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e06209e9-487f-4f5c-be79-d658aca544be]
 
 ## Steps: Set up business email with a new domain
 
@@ -131,7 +125,7 @@ Follow the steps below to set up Outlook, Teams, OneDrive and your website.
 
 ## Watch: Set up Outlook for email
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/9fe86884-8a83-42cc-bca9-61a12e6dad31?autoplay=false]
+> [!VIDEO e30573c6-b0d5-4007-8ff6-8c9dfd4e39fe]
   
 More at [Set up Outlook for email](https://support.microsoft.com/office/f5bf0cd1-e1f3-4b0d-a022-ecab17efe86f).
   
@@ -153,7 +147,7 @@ If you were using Outlook with another email account, you can import your previo
 
 ## Watch: Import and redirect email
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/40f7df36-9e24-44e5-8791-e9ed0dd8fd21?autoplay=false]
+> [!VIDEO 9efe5ae1-1dec-4f2c-8ea5-fef10843388e]
   
 More at [Import email with Outlook](https://support.microsoft.com/office/6a3771d4-4c1d-4a25-92a6-0b8e476335de).
 
@@ -175,7 +169,7 @@ Microsoft 365 doesn't include a public website for your business. If you want to
 
 ## Watch: Create your business website
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/4839abc6-9323-4cbf-a79d-2907235f9ebb]
+> [!VIDEO d89ace24-5e06-4858-81bf-512300be5d78]
 
 ## Invite users to join your subscription and organization
 

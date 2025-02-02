@@ -29,9 +29,10 @@ ms.custom:
 - manage_licenses
 - AdminTemplateSet
 - GAUpdates
+- campaignIDs-batch1
 search.appverid: MET150
 description: "Learn how to assign or unassign licenses for your users in the Microsoft 365 admin center."
-ms.date: 09/23/2024
+ms.date: 01/06/2025
 ---
 
 # Assign or unassign licenses for users in the Microsoft 365 admin center

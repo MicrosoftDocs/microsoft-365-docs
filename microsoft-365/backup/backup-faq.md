@@ -88,19 +88,11 @@ When a site is removed from the backup policy, the backup of the SharePoint site
 
 #### How can I restore the OneDrive account or Exchange mailbox for a user who is deleted from Microsoft Entra ID (formerly Azure Active Directory)?
 
-> [!NOTE]
-> Deleted users will appear as "–" in the user interface because the user does not exist in the tenancy. However, the backups and associated restore points will be retained for the full 365-day retention period from when a given restore point was originally created.
-
 If the user has been deleted within the past 30 days, the best option is to restore the user based on instructions found at [Restore a user in the Microsoft 365 admin center](/microsoft-365/admin/add-users/restore-user). Once the user is reconstituted, the name will reappear in the Backup tool restore experience, and the rest of the experience will work as normal.
 
 For OneDrive, you can restore the OneDrive to the original URL or a new URL. At that time, the OneDrive is in an "orphaned" state. To connect the OneDrive to a user, see [Fix site user ID mismatch in SharePoint or OneDrive](/sharepoint/troubleshoot/sharing-and-permissions/fix-site-user-id-mismatch).
 
-For Exchange, if the user account is currently or permanently deleted, Microsoft 365 Backup retains the inactive mailbox for the duration of the backup policy. To recover and restore the inactive mailbox, see the following guidance:
-
-- [Recover an inactive mailbox](/purview/recover-an-inactive-mailbox)
-- [Restore an inactive mailbox](/purview/restore-an-inactive-mailbox)
-
-Once an inactive mailbox is recovered and restored to a new mailbox, the new mailbox must be added to the backup policy if desired.
+For Exchange, if the user account is permanently deleted, Microsoft 365 Backup retains the inactive mailbox for the duration of the backup policy. To recover the inactive mailbox, follow the guidance at [Recover an inactive mailbox](/purview/recover-an-inactive-mailbox) to convert the inactive mailbox to a new, active mailbox. Once the inactive mailbox is recovered, remove the deleted user from the backup policy and then add the new user to the backup policy to access backups from the recovered mailbox.
 
 <!---
 - For Exchange, a user account will be in a soft-deleted state for 30 days after it's deleted. To restore the user, see [Restore a user in the Microsoft 365 admin center](/microsoft-365/admin/add-users/restore-user). Once you restore the user, you can use the restore feature in Microsoft 365 Backup to restore as usual.

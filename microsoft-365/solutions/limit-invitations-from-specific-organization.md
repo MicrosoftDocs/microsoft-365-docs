@@ -1,8 +1,8 @@
 ---
 title: Limit who can be invited by an organization
-ms.author: jtremper
-author: jacktremper
-manager: pamgreen
+author: DaniEASmith
+ms.author: danismith
+manager: jtremper
 ms.date: 12/11/2023
 audience: ITPro
 ms.topic: article

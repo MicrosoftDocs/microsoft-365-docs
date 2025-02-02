@@ -43,7 +43,7 @@ Now that you've set up Microsoft 365, you can install individual apps on your Ma
   
 ## Watch: Install Microsoft 365 apps
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1?autoplay=false]
+> [!VIDEO dc089097-90e3-4e20-a10b-985e58240101]
 
 Microsoft 365 productivity apps can be found on your  **Start** menu. If you don't see them, you can install them yourself.
 

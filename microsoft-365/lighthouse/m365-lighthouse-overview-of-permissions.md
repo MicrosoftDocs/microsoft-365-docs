@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: taylorau
-ms.date: 10/31/2024
+ms.date: 11/19/2024
 audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-lighthouse
@@ -48,7 +48,8 @@ The following table provides an overview of each Lighthouse RBAC role. For a lis
 | Lighthouse&nbsp;RBAC&nbsp;role | Overview |
 |---|---|
 | Account Manager | Account Managers have full access to Sales Advisor pages and data across the entire partner tenant.<br><br>Account Managers can export Sales Advisor data. |
-| Administrator | Administrators have full administrative permissions in Lighthouse. <br><br>Administrators can manage RBAC and GDAP permissions and can create baselines, tags, and alerts.<br><br>Administrators are automatically assigned the Privileged Role Administrator, User Administrator, and Group Administrator roles in Microsoft Entra ID and the Admin Agent role in Partner Center. |
+| Administrator | Administrators have full administrative permissions in Lighthouse. <br><br>Administrators can manage RBAC and GDAP permissions, view audit logs, and create baselines, tags, and alerts.<br><br>Administrators are automatically assigned the Privileged Role Administrator, User Administrator, and Group Administrator roles in Microsoft Entra ID and the Admin Agent role in Partner Center. |
+| Author | Authors can manage tenants, tags, alert rules, and baselines to deploy tenant configurations. |
 | Operator | Operators manage customer tenants in Lighthouse based on the GDAP permissions assigned to them for each customer tenant that they manage.<br><br>Operators can view high-level customer tenant status and manage alerts.<br><br>Lighthouse users who hold at least one Microsoft Entra role are automatically assigned the Operator role.<br><br>**Note:** Lighthouse Administrators can use templates on the **Delegated access** page to assign GDAP permissions to Lighthouse users. |
 | Reader | Readers have read-only access to data in Lighthouse.<br><br>Lighthouse Readers can view high-level customer tenant status and alerts. |
 
@@ -56,59 +57,60 @@ The following table provides an overview of each Lighthouse RBAC role. For a lis
 
 The following table describes the actions that each Lighthouse RBAC role can perform in Lighthouse. For some actions, you need to hold a Microsoft Entra role in addition to a Lighthouse RBAC role. For other actions, only a Microsoft Entra role is required. Microsoft Entra role requirements are indicated in the last column of the table. For a complete list of Microsoft Entra roles and the actions they can perform, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference).
 
-| Area | Actions | Account&nbsp;Manager | Administrator | Operator | Reader | Need Microsoft Entra&nbsp;role? |
-|---|---|:---:|:---:|:---:|:---:|:---:|
-| **Home page** | View data on cards |  |  |  |  | Yes |
-|  | Add users |  |  |  |  | Yes |
-|  | Reset password |  |  |  |  | Yes |
-|  | Offboard users |  |  |  |  | Yes |
-| **Alerts** | View alerts and alert rules | &check; | &check; |  | &check; | No |
-|  | Manage alerts (change severity, status, or assignment) |  | &check; |  |  | No |
-|  | Create, edit, and delete alert rules |  | &check; |  |  | No |
-| **Copilot insights** | View opportunities and adoption data |  |  |  |  | Yes|
-| **Tenants** | View the **Tenants** page | &check; | &check; | &check; | &check; | No |
-|  | View tenant details |  |  |  |  | Yes |
-|  | Export data | &check; | &check; | &check; | &check; | No |
-|  | View tags | &check; | &check; | &check; | &check; | No |
-|  | Create, update, and delete tags in Lighthouse |  | &check; |  |  | No |
-|  | Assign and remove tags from tenants |  | &check; |  |  | No |
-|  | Activate and inactivate a tenant |  | &check; |  |  | No |
-|  | View delegated access status | &check; | &check; | &check; | &check; | No |
-|  | View Microsoft Secure Score |  |  |  |  | Yes |
-|  | View baseline assignments | &check; | &check; | &check; | &check; | No |
-|  | View deployment status |  |  | &check; |  | Yes |
-|  | View apps and services usage |  |  | &check; |  | Yes |
-|  | View and edit customer contact and website info | &check; | &check; | &check; | &check; | No |
-| **Users** | Search for users | | | | | Yes |
-|  | View user metrics | | | | | Yes |
-|  | Onboard new users | | | | | Yes |
-|  | Offboard users | | | | | Yes |
-|  | View inactive users | | | | | Yes |
-|  | View shared mailboxes | | | | | Yes |
-|  | View and manage risky users | | | | | Yes |
-|  | View and manage multifactor authentication | | | | | Yes |
-|  | View and manage self-service password reset | | | | | Yes |
-| **Devices** | View device security data | | | | | Yes |
-|  | View vulnerability management data | | | | | Yes |
-|  | View device compliance data | | | | | Yes |
-|  | View threat management data | | | | | Yes |
-|  | View device health data | | | | | Yes |
-|  | View Windows 365 data | | | | | Yes |
-|  | View Windows event logs | | | | | Yes |
-| **Apps** | View app performance and app management data | | | | | Yes |
-| **Quarantined messages** | View and manage quarantined messages | | | | | Yes | 
-| **Baselines** | View baselines (default, custom) and task details |  | &check; | &check; | &check; | No|
-|  | Create, clone, edit, and assign baselines | |  &check; |  |  | No |
-|  | View deployment insights | | | | | Yes |
-| **Service&nbsp;health** | Monitor service health<sup>1</sup> |  |  |  |  | No |
-| **Support** | Create and manage service requests<sup>2</sup> |  |  |  |  | No |
-| **Audit logs** | View audit logs |  | &check; |  |  | Yes
-| **Permissions** | View the **Lighthouse Permissions** page | |  &check; |  |  | No|
-|  | Set up and manage Lighthouse permissions |  | &check; |  |  | No |
-|  | View, set up, and manage GDAP on the **Delegated access** page |  | &check; |  |  | No |
-| **Sales Advisor** | View opportunities | &check; | &check; |  |  | No |
-|  | View subscription renewals | &check; | &check; |  |  | No |
-|  | View license requests | &check; | &check; |  |  | No |
+| Area | Actions | Account&nbsp;Manager | Administrator | Author | Operator | Reader | Need Microsoft Entra&nbsp;role? |
+|---|---|:---:|:---:|:---:|:---:|:---:|:---:|
+| **Home page** | View data on cards |  |  |  |  |  | Yes |
+|  | Add users |  |  |  |  |  | Yes |
+|  | Reset password |  |  |  |  |  | Yes |
+|  | Offboard users |  |  |  |  |  | Yes |
+| **Alerts** | View alerts and alert rules | &check; | &check; | &check; |  | &check; | No |
+|  | Manage alerts (change severity, status, or assignment) |  | &check; | &check; |  |  | No |
+|  | Create, edit, and delete alert rules |  | &check; | &check; |  |  | No |
+| **Copilot insights** | View opportunities and adoption data |  |  |  |  |  | Yes|
+| **Tenants** | View the **Tenants** page | &check; | &check; | &check; | &check; | &check; | No |
+|  | View tenant details |  |  |  |  |  | Yes |
+|  | Export data | &check; | &check; | &check; | &check; | &check; | No |
+|  | View tags | &check; | &check; | &check; | &check; | &check; | No |
+|  | Create, update, and delete tags in Lighthouse |  | &check; | &check; |  |  | No |
+|  | Assign and remove tags from tenants |  | &check; | &check; |  |  | No |
+|  | Activate and inactivate a tenant |  | &check; | &check; |  |  | No |
+|  | View delegated access status | &check; | &check; | &check; | &check; | &check; | No |
+|  | View Microsoft Secure Score |  |  |  |  |  | Yes |
+|  | View baseline assignments | &check; | &check; | &check; | &check; | &check; | No |
+|  | View deployment status |  |  |  | &check; |  | Yes |
+|  | View apps and services usage |  |  |  | &check; |  | Yes |
+|  | View and edit customer contact and website info | &check; | &check; |  | &check; | &check; | No |
+| **Users** | Search for users | | | | | | Yes |
+|  | View user metrics | | | | | | Yes |
+|  | Onboard new users | | | | | | Yes |
+|  | Offboard users | | | | | | Yes |
+|  | View inactive users | | | | | | Yes |
+|  | View shared mailboxes | | | | | | Yes |
+|  | View and manage risky users | | | | | | Yes |
+|  | View and manage multifactor authentication | | | | | | Yes |
+|  | View and manage self-service password reset | | | | | | Yes |
+| **Devices** | View device security data | | | | | | Yes |
+|  | View vulnerability management data | | | | | | Yes |
+|  | View device compliance data | | | | | | Yes |
+|  | View threat management data | | | | | | Yes |
+|  | View device health data | | | | | | Yes |
+|  | View Windows 365 data | | | | | | Yes |
+|  | View Windows event logs | | | | | | Yes |
+| **Apps** | View app performance and app management data | | | | | | Yes |
+| **Quarantined messages** | View and manage quarantined messages | | | | | | Yes | 
+| **Baselines** | View baselines (default, custom) and task details |  | &check; |  &check; | &check; | &check; | No |
+|  | Create, clone, edit, and assign baselines | | &check; | &check; |  |  | No |
+|  | Extract a task from a tenant to add to a baseline | | &check; | &check; | | | Yes |
+|  | View deployment insights | | | | | | Yes |
+| **Service&nbsp;health** | Monitor service health<sup>1</sup> |  |  |  |  |  | No |
+| **Support** | Create and manage service requests<sup>2</sup> |  |  |  |  |  | No |
+| **Audit logs** | View audit logs |  | &check; |  |  |  | Yes
+| **Permissions** | View the **Lighthouse Permissions** page | |  &check; |  |  |  | No |
+|  | Set up and manage Lighthouse permissions |  | &check; |  |  |  | No |
+|  | View, set up, and manage GDAP on the **Delegated access** page |  | &check; |  |  |  | No |
+| **Sales Advisor** | View opportunities | &check; | &check; |  |  |  | No |
+|  | View subscription renewals | &check; | &check; |  |  |  | No |
+|  | View license requests | &check; | &check; |  |  |  | No |
 
 <sup>1</sup> To monitor service health, Lighthouse users must hold at least one Microsoft Entra role in the partner tenant with the following property set: **microsoft.office365.serviceHealth/allEntities/allTasks**. The users must also have at least the Admin Agent role or Helpdesk Agent role assigned to them in Partner Center. 
 

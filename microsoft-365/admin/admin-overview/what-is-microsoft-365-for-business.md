@@ -31,7 +31,7 @@ ms.date: 04/27/2022
 
 Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4U5xs?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=df5cf46f-3501-4891-9459-f35ca0e15dd5]
 
 [Microsoft 365 for business](https://www.microsoft.com/microsoft-365/business) is a subscription service that lets you run your organization in the cloud while Microsoft takes care of the IT for you. It connects employees to the people, information, and content they need to do their best work, from any device.
 

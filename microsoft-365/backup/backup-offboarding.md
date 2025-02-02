@@ -41,7 +41,7 @@ The core purpose of the backup and restore service is to provide you with a way 
 
 ### eDiscovery
 
-Data in the Exchange Online backups is eDiscoverable via existing eDiscovery tooling, assuming you have sufficient licenses to operate that tool.
+Data in the Exchange Online backups is not eDiscoverable via existing eDiscovery tooling.
 
 Data in the OneDrive account and SharePoint site backups that aren't currently part of your live latest version data in your tenant aren't eDiscoverable. An eDiscovery search won't discover data that exists solely in the OneDrive or SharePoint backups.
 

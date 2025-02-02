@@ -1,7 +1,7 @@
 ---
 title: Overview for third-party developers of Microsoft 365 Backup Storage
-ms.author: waynewin
-author: WayneEwington
+ms.author: diksha
+author: dikshau56
 manager: brgussin
 audience: admin
 ms.reviewer: sreelakshmi

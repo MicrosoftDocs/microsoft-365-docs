@@ -3,7 +3,7 @@ title: "Engineering Direct Portal in the Microsoft 365 Admin Center"
 author: kelleyvice-msft
 ms.author: kvice  
 manager: scotv
-ms.date: 10/31/2024
+ms.date: 12/03/2024
 ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
@@ -93,7 +93,12 @@ In this section:
 - [Validate DKIM Signing Configuration](#validate-dkim-signing-configuration)
 - [Auto Archive Detection](#auto-archive-detection)
 - [Remediate a Compromised Account](#remediate-a-compromised-account)
+
+- [Audit Log Summary](#audit-log-summary)
+
+<!---
 - [Guest Access in Teams](#guest-access-in-teams)
+- -->
 
 ### Visual Mail Flow
 
@@ -326,6 +331,27 @@ This diagnostic is split into multiple sections that detail steps to remediate t
 
 If the user still shows signs of being compromised, reach out to Microsoft Support for further help.
 
+### Audit Log Summary
+
+The audit log summary provides a comprehensive overview or count of the activities tracked within your tenant’s audit log. This diagnostic tool is useful for reviewing admin actions, identifying unusual administrative activity, or investigating potential rogue administrators. 
+
+#### Inputs 
+
+- Search the number of days prior to the current date (max 30 days)
+
+  - If you enter 10, the diagnostic will review the log for up to 10 days prior to the current date
+  
+  - If left blank, the diagnostic will run with the value of 7 days 
+  
+#### Outputs 
+
+The output is split into two sections: 
+
+1. Users with High Activity – Users who have performed a specific action at a much higher rate than the average user will be listed here, along with the count of each action they have taken. 
+
+1. Full User List – All users, along with a list of their activities and corresponding counts, will be displayed here in alphabetical order. Actions performed by apps will be grouped together. 
+
+<!---
 ### Guest Access in Teams
 
 The **Guest Access Diagnostic for Microsoft Teams** helps troubleshoot various issues that may hinder guests from accessing a team, such as inviting guests, accessing team content, and using specific guest features. Since guest settings are managed at both organizational and team levels, this diagnostic checks for any misconfigurations that could impact guest access. It aggregates these issues and presents them in one place, with each misconfigured setting accompanied by guidance for admins. Additionally, the diagnostic assesses the provisioning of guest user accounts. It also allows for optional inputs at org, team and user levels, giving you the flexibility to customize the output you receive.
@@ -364,6 +390,7 @@ In addition, this diagnostic also displays some settings that could affect your 
 This diagnostic should assist to resolve your guest access issues and provide a seamless guest experience in Teams.  
 
 If problems persist, reach out to Microsoft support for assistance. 
+-->
 
 ## More information
 

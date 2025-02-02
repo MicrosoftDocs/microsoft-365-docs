@@ -48,15 +48,15 @@ Ensure your users use these methods to share files and videos securely:
 
 Members of the organization can create a team, and add guests like advertisers or financing partners to it, with the following steps.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=573823a3-19cf-4b2e-932f-7be1896b2821]
 
 To share a secure link with a guest, without using Microsoft Teams, follow these steps.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE22Yf0]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=2fc0b2a7-e106-41ec-82a0-3eb06381f679]
 
 To create and share videos, follow these steps.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrv0F]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f2ac4322-9d5e-43ec-b43e-73d80f61e039]
 
 Download an infographic in [PDF](https://go.microsoft.com/fwlink/?linkid=2079435) or [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438) to get a quick overview of ways to share your files.
 

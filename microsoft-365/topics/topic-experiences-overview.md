@@ -26,11 +26,14 @@ description: Learn about how to use Topics in your organization.
 
 # Topics overview
 
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
+
 Topics uses Microsoft AI technology, Microsoft 365, Microsoft Graph, Search, and other components and services to bring knowledge to your users in the Microsoft 365 apps they use everyday, starting with SharePoint modern pages, Microsoft Search, and Search in Word, PowerPoint, Outlook, and Excel.
 
 <br/>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LhZP]  
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=25176252-071c-4b08-85c9-fb4289552526]  
 
 <br/>
 

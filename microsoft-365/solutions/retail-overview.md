@@ -43,7 +43,7 @@ Learn about Microsoft Cloud for Retail:
 
 <br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRygC]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=bdabb25e-18d7-40ff-8604-27545c939ebf]
 
 <br>
 
@@ -51,6 +51,6 @@ Learn how you can empower your associates with real-time store communications an
 
 <br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxAgt]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=12687165-025b-49e0-8e86-e230f5eb6d93]
 
 <br>

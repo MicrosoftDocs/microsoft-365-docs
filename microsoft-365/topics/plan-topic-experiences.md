@@ -19,6 +19,9 @@ description: Learn how to plan for Topics.
 
 # Plan for Topics
 
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
+
 You're in control of how topics are experienced in your organization. Your planning decisions for Topics ensure that high quality topics are shown to your users and they have the right permissions to consume and contribute knowledge.
 
 In this article we'll examine these planning decisions:

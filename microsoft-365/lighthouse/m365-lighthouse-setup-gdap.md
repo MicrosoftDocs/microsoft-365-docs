@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: taylorau
-ms.date: 10/03/2024
+ms.date: 12/20/2024
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-lighthouse
@@ -35,6 +35,10 @@ If you encounter any problems during GDAP setup and need guidance, see [Troubles
 - You must hold specific roles in Microsoft Entra ID and/or Partner Center, as outlined in the [Delegated Access Role Requirements table](m365-lighthouse-delegated-access-overview.md#role-requirements).
 
 - The customers you manage in Lighthouse need to be set up in Partner Center with either a reseller relationship or an existing GDAP relationship.
+
+## Watch: Set up GDAP
+> [!VIDEO 0c8acb10-8178-4dd5-b0e8-dddc74e83684]
+Check out the other [Microsoft 365 Lighthouse videos](https://www.youtube.com/playlist?list=PLnWjfDdQkUQSCbV-ftVD311_fZxghB22C) on our YouTube channel.
 
 ## Set up GDAP
 

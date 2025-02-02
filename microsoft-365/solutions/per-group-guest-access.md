@@ -2,9 +2,9 @@
 title: "Prevent guests from being added to a specific group"
 ms.reviewer: rahulnayak
 ms.date: 12/02/2023
-ms.author: jtremper
-author: jacktremper
-manager: pamgreen
+author: DaniEASmith
+ms.author: danismith
+manager: jtremper
 audience: Admin
 ms.topic: article
 ms.service: o365-solutions

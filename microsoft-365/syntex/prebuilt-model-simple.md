@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 11/05/2024
+ms.date: 11/19/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -14,7 +14,6 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-ROBOTS: NOINDEX, NOFOLLOW
 description: Learn how to use a simple document processing model in Microsoft Syntex.
 
 ---
@@ -61,7 +60,7 @@ To use a simple document processing model, follow these steps:
 
 ## Step 1: Create the model
 
-Follow the instructions in [Create a model in Syntex](create-syntex-model.md) to create a simple document processing model. Then continue with the following steps to complete your model.
+Follow the instructions in [Create a model in Syntex](create-syntex-model.md#create-a-prebuilt-model) to create a simple document processing model. Then continue with the following steps to complete your model.
 <!---
 Follow the instructions in [Create a model in Syntex](create-syntex-model.md#create-a-prebuilt-model) to create a simple document processing model. Then continue with the following steps to complete your model.
 --->
@@ -157,3 +156,4 @@ You also can turn on or off language detection from the **Model settings** panel
 
 - If you're ready to apply the model to a library, in the document area, select **Next**. On the **Add to library** panel, choose the library to which you want to add the model, and then select **Add**.
 
+For information about file types, languages, optical character recognition, and other considerations for this prebuilt model, see [Requirements and limitations for prebuilt document processing in SharePoint](prebuilt-requirements.md).

@@ -28,7 +28,7 @@ Microsoft 365 Lighthouse supports reprovisioning of Cloud PCs that have a provis
 
 ## Before you begin
 
-You must be a Cloud PC Administrator in the partner tenant.
+You must hold the Cloud PC Administrator role in Microsoft Intune to reprovision a Windows 365 Cloud PC in Lighthouse.
 
 ## Reprovision a Windows 365 Cloud PC
 

@@ -19,6 +19,9 @@ description: Find resources to help your organization learn about and get the mo
 
 # Adoption resources for Topics
 
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
+
 Use these adoption resources and other information to spark ideas about how to help get the most out of Topics in your organization. You can find more adoption resources at the [Topics adoption](https://adoption.microsoft.com/viva/topics/) site.
 
 ## Downloadable resources

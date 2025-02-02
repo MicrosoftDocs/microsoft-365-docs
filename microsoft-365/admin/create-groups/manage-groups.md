@@ -3,9 +3,9 @@ title: "Manage a group in the admin center"
 ms.reviewer: rahulnayak
 ms.date: 06/17/2024
 f1.keywords: NOCSH
-ms.author: jtremper
-author: jacktremper
-manager: pamgreen
+author: DaniEASmith
+ms.author: danismith
+manager: jtremper
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business

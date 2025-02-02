@@ -3,7 +3,7 @@ title: "Delete Microsoft 365 user accounts with PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 02/12/2024
+ms.date: 12/06/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -80,7 +80,7 @@ Remove-MgUser -UserId $userId -Confirm:$false
 
 To a restore a user account using Microsoft Graph PowerShell, first [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md).
 
-To restore a deleted user account, the permission scope *Directory.ReadWrite.All* is required. Connect to the tenant with this permision scope:
+To restore a deleted user account, the permission scope *Directory.ReadWrite.All* is required. Connect to the tenant with this permission scope:
 
 ```powershell
 # Connect to your tenant

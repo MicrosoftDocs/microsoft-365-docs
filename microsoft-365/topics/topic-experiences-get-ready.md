@@ -20,6 +20,9 @@ description: Get your environment ready so you can provide as much content as po
 
 # Get your environment ready for Topics
 
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
+
 To make the most of Topics, you want to have as much content as possible included for topic discovery, so that you can have a rich set of topics for your users. But what content should be used for topic discovery? How do you maximize the content that is indexed, while staying in control? The more content is in scope, the better the insights the artificial intelligence can discover. This article walks you through planning steps to ensure that you're including the appropriate content, and that you have the right people and resources to make a good experience for your users.
 
 To plan for Topics, you need to:

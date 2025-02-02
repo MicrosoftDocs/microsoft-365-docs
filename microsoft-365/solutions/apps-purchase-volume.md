@@ -85,7 +85,7 @@ Follow the Intune guidelines to assign iOS/iPadOS apps:
 
 ## Microsoft Store<!-- What is it? -->
 
-[Microsoft Store](https://www.microsoft.com/business-store) is a web-based portal that allows you to find apps that can be managed by Intune. Admins can browse, deploy, and monitor Microsoft Store applications inside Intune. Upon deployment, Intune automatically keeps the apps up to date when a new version becomes available. The Microsoft Store supports UWP apps, desktop apps packaged in *.msix*, and now Win32 apps packaged in *.exe* or *.msi* installers.
+[Microsoft Store](https://apps.microsoft.com/apps) is a web-based portal that allows you to find apps that can be managed by Intune. Admins can browse, deploy, and monitor Microsoft Store applications inside Intune. Upon deployment, Intune automatically keeps the apps up to date when a new version becomes available. The Microsoft Store supports UWP apps, desktop apps packaged in *.msix*, and now Win32 apps packaged in *.exe* or *.msi* installers.
 
 ### Access Microsoft Store<!-- How to set up? -->
 

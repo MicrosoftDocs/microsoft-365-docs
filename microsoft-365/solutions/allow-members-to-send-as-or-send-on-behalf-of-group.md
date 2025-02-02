@@ -3,8 +3,8 @@ title: "Allow members to send as or send on behalf of a group"
 ms.reviewer: rahulnayak
 ms.date: 10/28/2024
 f1.keywords: NOCSH
-ms.author: jtremper
-author: jacktremper
+author: DaniEASmith
+ms.author: danismith
 manager: jtremper
 audience: Admin
 ms.topic: article
@@ -39,39 +39,32 @@ The **Send on Behalf** permission lets a user send email on behalf of a Microsof
 
 > [!NOTE]
 > **Send as** and **Send on behalf** are not supported on Outlook for Mac in hybrid Exchange configurations.
-    
+
+## Considerations for scheduling meetings
+> [!NOTE]
+> Meeting invitations sent from a Microsoft 365 group mailbox currently display the sender as *User on behalf of Group*, even if **Send as** permission is assigned. There is no native method for meeting invites to appear purely as the group.
+
 ## Allow members to send email as a group
 
 This section explains how to allow users to send email as a group in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center (EAC)</a> in Exchange Online.
   
 1. In the Exchange admin center, go to **Recipients** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**Groups**</a>.
-    
 2. Select the group that you want to allow users to send as. 
-    
 3. Select **Settings** > **Edit manage delegates**.
-    
 4. In the **Add a delegate** section, enter the email address of the user that you would like to have **Send as** access.
-  
 5. Select **Permission Type** as **Send as** from the drop-down.
-
-6.  Select **Save changes**.
-    
+6. Select **Save changes**.
     
 ## Allow members to send email on behalf of a group
 
 This section explains how to allow users to send email on behalf of a group in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center (EAC)</a> in Exchange Online.
   
 1. In the Exchange admin center, go to **Recipients** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**Groups**</a>.
-    
 2. Select the group that you want to allow users to send on behalf of. 
-    
 3. Select **Settings** > **Edit manage delegates**.
-    
-4. In the **Add a delegate** section, enter the email address of the user that you would like to have **Send as** access.
-  
+4. In the **Add a delegate** section, enter the email address of the user that you would like to have **Send on behalf** access.
 5. Select **Permission Type** as **Send on behalf** from the drop-down.
-
-6.  Select **Save changes**.
+6. Select **Save changes**.
 
 ## Related articles
 

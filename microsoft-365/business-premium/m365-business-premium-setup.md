@@ -72,7 +72,7 @@ To complete the basic setup process, you can choose from several options availab
 
 Microsoft 365 Business Premium includes a guided setup process, as shown in the following video:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ title="Set up Microsoft 365 for business"]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=de65e64a-e0d9-4f67-bc18-05d777b85e0b title="Set up Microsoft 365 for business"]
 
 ### The guided setup process, step by step
 

@@ -112,7 +112,7 @@ It's possible that some users won’t see all MTO tenants in the account picker 
 
 ### Is the org chart and profile picture visible for MTO users? 
 
-The org chart and profile picture are available for MTO users and can be viewed in Teams and Outlook. We do recommend using cross-tenant sync to sync all user properties including the manager attribute.
+The org chart and profile picture are available for MTO users and can be viewed in Teams. We do recommend using cross-tenant sync to sync all user properties including the manager attribute.
 
 ### Is the profile picture visible for MTO users?
 

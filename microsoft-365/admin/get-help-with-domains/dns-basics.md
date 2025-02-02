@@ -44,7 +44,7 @@ Domain names, like contoso.com, are managed by using a worldwide system of domai
 
 ## Watch: Domains & DNS: An overview
   
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/c005f2a4-90ad-46fe-b1ab-90f41f2a9d53?autoplay=false]
+> [!VIDEO 5c3cf9e5-c207-4788-a8b5-686d8f2f88bf]
   
 ::: moniker-end
 

@@ -3,7 +3,7 @@ title: "Connect to Microsoft 365 with Microsoft Graph PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 02/01/2024
+ms.date: 12/03/2024
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -106,7 +106,7 @@ The Microsoft Graph PowerShell SDK comes in two modules, Microsoft.Graph and Mic
 
 After the installation is completed, you can verify the installed version with the following command:
 
-```azurepowershell
+```powershell
 Get-InstalledModule Microsoft.Graph
 ```
 

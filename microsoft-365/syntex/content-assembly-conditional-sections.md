@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: anrasto, shrganguly
-ms.date: 03/11/2024
+ms.date: 01/07/2025
 ms.topic: conceptual
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
@@ -79,8 +79,8 @@ To edit the conditions in a conditional section, you can use either of these two
    ![Screenshot of a conditional section with the edit options highlighted.](../media/content-understanding/content-assembly-conditional-edit.png)
 
 > [!NOTE]
-> - Currently, you can create conditional sections around text and complete paragraphs. Conditional sections around images and tables is not yet supported.<br>
->- You can't add nested conditions. To achieve nested conditions, you'll need to create conditional sections around every section and specify all the required conditions.
+> - You can create conditional sections around text and complete paragraphs. Conditional aren't yet supported.<br>
+>- You can't add nested conditions. To achieve nested conditions, you need to create conditional sections around every section and specify all the required conditions.
  
 ## See also
 

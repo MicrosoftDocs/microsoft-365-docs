@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 03/11/2024
+ms.date: 01/30/2025
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -22,7 +22,7 @@ description: Learn how to apply a published a model to a SharePoint document lib
 
 </br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSoL]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=60288944-7a6c-4331-a1ae-4b05113f4dd0]
 
 </br>
 
@@ -31,7 +31,7 @@ After you train an unstructured document processing model, train and publish a f
 This article applies to both *enterprise models* and *local models*. An enterprise model is created and trained in the [content center](create-a-content-center.md), and can be discovered by others to use. A [local model](create-local-model.md) is created and trained locally on your own SharePoint site.  
 
 > [!NOTE]
-> You can apply the model only to document libraries to which you have access.
+> You can only apply models to sites where the model type is enabled. If the service is subsequently turned off, the model will no longer run.
 
 ## Apply your model to a document library
 
@@ -97,7 +97,10 @@ To sync changes to one or only selected libraries:
 
 ## Apply the model to files and folder content already in the document library
 
-An applied model processes all files and folder content uploaded to the document library after it's applied. You can also do the following steps to run the model on files and folder content that already exist in the document library prior to the model being applied:
+An applied model processes all files and folder content uploaded to the document library after it's applied. You can also do the following steps to run the model on files and folder content that already exist in the document library prior to the model being applied.
+
+> [!NOTE]
+> To see custom Syntex commands like **Classify and extract** when you add a document library web part to a SharePoint site page, you must have a Syntex subscription.
 
 1. In your document library, select the files and folders that you want to be processed by your model.
 
@@ -131,5 +134,3 @@ To run the flow:
 2. On the **Create a flow** panel, select **Send an email after Syntex processes a file**.
 
     ![Screenshot showing the Create a flow panel and flow option highlighted.](../media/content-understanding/integrate-create-flow.png) 
-
-

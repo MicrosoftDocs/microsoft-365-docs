@@ -18,6 +18,9 @@ description: Learn how to use the lightweight management experience in Viva Enga
 ---
 # Topics lightweight management in Viva Engage
 
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
+
 >[!NOTE]
 >Viva Topics will be retired in 2025. As part of that change, Viva Engage will return to a simplified topics mode. During the transition, we will pause proactive topics migrations to use Viva Topics, but continue migrations that enable Viva Engage networks to use [Answers in Viva](/viva/engage/eac-answers-overview-set-up#technical-requirements) by request. Learn more about the [migration](/microsoft-365/topics/topic-experiences-viva-engage), [the Topics experience](https://support.microsoft.com/topic/viva-topics-experience-in-yammer-8e85bc0d-086e-49a2-974b-39f60129257d), and the [Topics retirement](/microsoft-365/topics/changes-coming-to-topics).
 

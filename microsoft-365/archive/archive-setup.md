@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 09/26/2024
+ms.date: 01/24/2025
 ms.topic: conceptual
 ms.service: microsoft-365-archive
 ms.custom: archive
@@ -31,15 +31,15 @@ To set up Microsoft 365 Archive, follow these steps:
 3. [Turn on Microsoft 365 Archive](#set-up-microsoft-365-archive) in the Microsoft 365 admin center.
 
 4. [Manage Microsoft 365 Archive](archive-manage.md) in the SharePoint admin center.
-
+<!---
 The following video demonstrates the steps to help you set up pay-as-you-go billing.
 
 </br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1kOkz]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=fea6b1e5-b757-4f33-8cdf-4fcc714c72e0]
 
 </br>
-
+--->
 ## Prerequisites
 
 ### Licensing
@@ -60,17 +60,23 @@ Once pay-as-you-go billing is enabled for Microsoft Syntex in the Microsoft 365 
 
 1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>.
 
-2. Under **Files and content**, select **Automate content processes with Syntex**.
+2. Under **Billing and licenses**, select **Activate pay-as-you-go services**.
 
-3. On the **Automate content processes with Syntex** page, select **Go to Syntex settings**.
+3. On the **Activate pay-as-you-go services** page, select **Get started**.
 
-4. On the Syntex page, in the **Syntex services for** section, select **Storage**. From the list of products, select **Archive**.
+4. On the **Pay-as-you-go services** page, select the **Settings** tab, and then select **Syntex services**.
 
-5. On the **Archive** panel, select **Turn on**. Then on **Enable Archive** panel, select **Confirm**.
+5. On the Syntex page, in the **Storage** section, select **Archive**.
 
-    ![Screenshot of the Microsoft 365 Archive page in the admin center showing how to turn on Archive.](../media/m365-archive/turn-on-archive-admin-center.png)
+6. On the **Microsoft 365 Archive** panel, select **SharePoint site archive** to turn on Microsoft 365 Archive for SharePoint sites. 
 
-Microsoft 365 Archive is now enabled for you, and you're able to archive content from the SharePoint admin center.
+7. On the **Manage SharePoint site archive** panel, select the checkbox to manage site archiving on SharePoint and select **Save**. 
+
+8. On the **Turn on SharePoint site archive** panel, select **Turn on**. 
+
+    :::image type="content" source="../media/archive/syntex2.png" alt-text="Screenshot of Microsoft 365 Archive enabled." lightbox="../media/archive/syntex2.png":::
+
+    Microsoft 365 Archive is now enabled for you, and you're able to archive content from the SharePoint admin center.
 
 ## Turn off Microsoft 365 Archive
 
@@ -80,4 +86,4 @@ To turn off Microsoft 365 Archive:
 
 2. On the **Archive** panel, select **Turn off**.
 
-When you turn off Microsoft 365 Archive, any further archiving stops. The sites already archived continue to be in an archive state, and will be billed. The sites can be reactivated with reactivation cost or deleted.
+    When you turn off Microsoft 365 Archive, any further archiving stops. The sites already archived continue to be in an archive state, and will be billed. The sites can be reactivated with reactivation cost or deleted.

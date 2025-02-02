@@ -83,19 +83,70 @@ The following customer data is stored at rest in the _Local Region Geography_:
 
 ## Microsoft Purview
 
-### Purview Audit (Standard)
+### Data Loss Prevention (DLP)
 
 The following customer data is stored at rest in the _Local Region Geography_:
 
-- Service configuration data, audited Activities, audit Records, and audit log query permissions
+- DLP Admin Configuration
+- DLP policies in Compliance Portal
+- DLP monitored activities
+- Violation history
+- Activity Explorer and Microsoft 365 unified audit logs
+- Quarantine storage
+- DLP Alerts and DLP Alert management dashboard
 
-### Purview Audit (Premium)
+### Information Barriers
 
 The following customer data is stored at rest in the _Local Region Geography_:
 
-- In addition to the customer data stored as part of Purview Audit (Standard), configuration and Customer Data related to high-value crucial events
+- Policy settings
+- Risk indicators
+- Segments Configuration
 
-### Data lifecycle management - Data Retention
+### Information Protection (MIP)
+
+#### Sensitivity labels
+
+The following customer data is stored at rest in the _Local Region Geography_:
+
+- Label configuration
+- Labels definition
+- Label policies
+- Custom help page
+- Activity Explorer and Microsoft 365 unified audit logs
+- Label change justification records
+
+#### Office Message Encryption (OME)
+
+The following customer data is stored at rest in the _Local Region Geography_:
+
+- Encryption policies
+- Admin settings
+- Encrypted messages
+
+#### Classifiers
+
+- Sensitive information types, including Enhanced Data Match (EDM) and Trainable Classifiers, configured by customers
+
+### Audit (Standard)
+
+The following customer data is stored at rest in the _Local Region Geography_:
+
+- Service configuration data
+- Audited Activities
+- Audit Records
+- Audit log query permissions
+
+### Audit (Premium)
+
+The following customer data is stored at rest in the _Local Region Geography_:
+
+- All data covered under Audit (Standard)
+- Configuration and Customer Data related to high-value crucial events
+
+### Data lifecycle Management (DLM)
+
+#### Data Retention
 
 The following customer data is stored at rest in the _Local Region Geography_:
 
@@ -107,46 +158,22 @@ The following customer data is stored at rest in the _Local Region Geography_:
   - Microsoft 365 Groups
   - Exchange public folders
   - Microsoft Teams chats and channel messages
+  - Yammer user and community messages
 - Customer Data copied and stored in Exchange Online hidden mailboxes
   - Teams channel messages
   - Teams chats
   - Teams private channel messages
+  - Yammer user and community messages
   - SharePoint, OneDrive, Exchange Online and Microsoft Teams follow the data residency commitments for those services. Refer to [Exchange Online](m365-dr-workload-exo.md), [SharePoint](m365-dr-workload-spo.md), and [Microsoft Teams](m365-dr-workload-teams.md) workload data residency pages for more details.
 - Training classifiers
 - Disposition data
 - Mappings between retention labels and Data Loss Prevention (DLP) policies
 
-### Data lifecycle management - Records Management
+#### Records Management
 
 The following customer data is stored at rest in the _Local Region Geography_:
 
-- Record retention label definitions, file plan definitions, event-based retention policy settings, disposition review records and records of deletion
-
-### Information Protection - Sensitivity labels
-
-The following customer data is stored at rest in the _Local Region Geography_:
-
-- Label configuration
-- Labels definition
-- Label policies
-- Custom help page
-- Activity Explorer and Microsoft 365 unified audit logs
-- Label change justification records
-
-### Information Protection - Data Loss Prevention (DLP)
-
-The following customer data is stored at rest in the _Local Region Geography_:
-
-- DLP admin configuration, DLP policies in Compliance Portal, DLP monitored activities, violation history, Activity Explorer and Microsoft 365 unified audit logs, quarantine storage,  DLP Alerts and DLP Alert management dashboard
-
-### Information Protection - Office Message Encryption
-
-The following customer data is stored at rest in the _Local Region Geography_:
-
-- Encryption policies, admin settings and encrypted messages
-
-### Risk and compliance - information barriers
-
-The following customer data is stored at rest in the _Local Region Geography_:
-
-- Policy settings, risk indicators and admin settings
+- Record retention label definitions
+- File plan definitions
+- Event-based retention policy settings
+- Disposition review records and records of deletion

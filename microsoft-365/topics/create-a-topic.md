@@ -19,6 +19,9 @@ description: Learn how to create a new topic in Topics.
 
 # Create a new topic in Topics
 
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
+
 In Topics, you can create a new topic if one is not discovered through indexing or if the AI technology did not find enough evidence to establish it as a topic.
 
 > [!NOTE]

@@ -18,7 +18,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 05/03/2024
+ms.date: 12/18/2024
 ---
 
 # Tailor Teams apps for your frontline workers
@@ -29,7 +29,7 @@ Teams pins apps based on license to give your frontline workers an out-of-the-bo
 
 With the tailored frontline app experience, your frontline workers get the most relevant apps in Teams without any action needed from the admin.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4VuCH]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e1fed07e-4757-442b-9213-9f2631f7554d]
 
 ## Tailored frontline app experience
 
@@ -44,13 +44,7 @@ Apps are pinned to the app bar, which is the bar at the bottom of the Teams mobi
 - [Shifts](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821)
 - [Approvals](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3)
 
-**Teams mobile**
-
-:::image type="content" source="media/tailored-teams-apps-mobile.png" alt-text="Screenshot of the tailored frontline app experience on Teams mobile." lightbox="media/tailored-teams-apps-mobile.png":::
-
-**Teams desktop**
-
-:::image type="content" source="media/tailored-teams-apps-desktop.png" alt-text="Screenshot of the tailored frontline app experience on Teams desktop." lightbox="media/tailored-teams-apps-desktop.png":::
+:::image type="content" source="media/tailored-teams-apps.png" alt-text="Screenshot of the tailored frontline app experience on Teams mobile and Teams desktop." lightbox="media/tailored-teams-apps.png":::
 
 ## Admin controls
 

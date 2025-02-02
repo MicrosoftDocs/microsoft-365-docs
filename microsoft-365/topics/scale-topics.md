@@ -19,6 +19,9 @@ description: Learn about best practices to manage topics in your organization us
 
 # Manage topics at scale in Topics
 
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
+
 When you index your SharePoint sites or your entire organization for Topics, many topics might be generated. When this happens and you see thousands of suggested topics on the **Manage topics** page, it can be challenging to know where to start. This article describes how Topics helps you optimize which topics and information are shown to users who are searching for information, even in large organizations with large numbers of topics.
 
 First, a reminder of the [four stages for topics](manage-topics.md#topic-status):

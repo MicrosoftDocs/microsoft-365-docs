@@ -20,6 +20,9 @@ description: Learn how to drive adoption of Topics in your organization.
 
 # Get started driving adoption of Topics
 
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
+
 Before you get started with adoption, you need to understand the concepts involved in knowledge management and Topics. The following diagram shows what happens during topic discovery and curation:
 
 ![Graphic of Topics architecture.](../media/knowledge-management/topic-management-architecture.png)

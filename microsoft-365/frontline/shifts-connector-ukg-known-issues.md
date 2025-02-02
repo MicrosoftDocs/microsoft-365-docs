@@ -17,7 +17,7 @@ ms.collection:
 appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 10/23/2023
+ms.date: 12/20/2024
 ---
 
 # Known issues: Team Shifts connector for UKG Pro Workforce Management

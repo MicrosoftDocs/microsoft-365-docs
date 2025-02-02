@@ -25,7 +25,7 @@ ms.custom:
 - GAUpdates
 search.appverid: MET150 
 description: "Learn how to upgrade or change to a different plan in the Microsoft 365 admin center."
-ms.date: 02/23/2024
+ms.date: 12/05/2024
 ---
 
 # Upgrade or change to a different Microsoft 365 for business plan

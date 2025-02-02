@@ -32,7 +32,7 @@ As the admin of an organization, you may need to add one of your users or contac
 
 ## Watch: Add a user to a distribution list
   
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/ed4e6095-9a6a-4d3d-999d-698c39bb7ec8?autoplay=false]
+> [!VIDEO bab424a0-e18a-4c86-8e3d-b1c6f56895d6]
 
 ## Steps
 

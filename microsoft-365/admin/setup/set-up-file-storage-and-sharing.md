@@ -45,7 +45,7 @@ One of the best ways to set up file storage and sharing for your business is to 
 
 ## Watch: Where to store files in Microsoft 365
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FTHX] 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=25e2926e-cd91-4529-9e0c-91c2bd3757fa] 
 
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
 

@@ -3,7 +3,7 @@ title: "View Microsoft 365 user accounts with PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 02/05/2024
+ms.date: 01/08/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -135,7 +135,8 @@ An account that was never synced from on-premises AD has *OnPremisesSyncEnabled*
 
 ```powershell
 Get-MgUser -All | Where OnPremisesSyncEnabled -ne true
-OnPremisesSyncEnabled```
+OnPremisesSyncEnabled
+```
 
 ### View accounts based on a common property
 

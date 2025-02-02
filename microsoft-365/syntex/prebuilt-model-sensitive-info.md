@@ -67,7 +67,7 @@ To create and configure a sensitive information model, follow these steps:
 
     ![Screenshot of the library showing entities detected.](../media/content-understanding/prebuilt-sensitive-entities-extracted.png)
 
-For information about file types, languages, optical character recognition, and other considerations for this model, see [Requirements and limitations for models in Microsoft Syntex](requirements-and-limitations.md#sensitive-information-processing).
+For information about file types, languages, optical character recognition, and other considerations for this prebuilt model, see [Requirements and limitations for prebuilt document processing in SharePoint](prebuilt-requirements.md).
 <!---
 ## Create a rule to apply a sensitivity label
 

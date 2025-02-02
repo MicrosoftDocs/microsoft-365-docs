@@ -11,8 +11,8 @@ ms.localizationpriority: medium
 ms.collection:
 - scotvorg
 - Adm_O365
+ms.custom: campaignIDs-batch1
 ROBOTS: NOINDEX, NOFOLLOW
-
 description: "Turn the profile video feature on or off for all users in your Microsoft 365 organization."
 ---
 

@@ -23,7 +23,7 @@ ms.custom:
 - GAUpdates
 search.appverid: MET150
 description: "Learn how to work with Microsoft-certified solution providers (partners) to buy and manage products and services for your organization or school."
-ms.date: 06/03/2024
+ms.date: 01/08/2025
 ---
 
 # Manage Microsoft-certified solution provider partner relationships

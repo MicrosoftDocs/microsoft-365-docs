@@ -15,6 +15,8 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 description: "Learn how to provide Microsoft 365 Copilot feedback to Microsoft on behalf of your users who encounter issues"
+appliesto:
+  - ✅ Microsoft 365 Copilot
 ---
 
 # Submit admin-initiated Copilot feedback from the Microsoft 365 admin center
@@ -45,16 +47,16 @@ To provide feedback to Microsoft on behalf of a user who encountered a problem w
 
    :::image type="content" source="media/copilot-feedback-get-started.png" alt-text="Screenshot showing the side pane to get started with submitting user feedback for Copilot." lightbox="media/copilot-feedback-get-started.png":::
 
-3. Enter the email address of the user who reported the issue. Then, choose the number of rounds of conversations that you’d like to share with Microsoft, and then select **Review**.
+3. Enter the email address of the user who reported the issue. Then, choose the number of rounds of conversations that you'd like to share with Microsoft, and then select **Review**.
 
    > [!NOTE]
    > The maximum number of conversations you can share is 30.
 
-4. After a short wait, you’ll receive a JSON file containing the user's conversations with Copilot for the past X interactions (utterance/response pairs) that you select, along with their feedback logs. The file is redacted to protect Microsoft IP, if any. You can use any JSON viewer tool to inspect the data and include additional comments for the feedback. The file will be available for download once it's generated.
+4. After a short wait, you'll receive a JSON file containing the user's conversations with Copilot for the past X interactions (utterance/response pairs) that you select, along with their feedback logs. The file is redacted to protect Microsoft IP, if any. You can use any JSON viewer tool to inspect the data and include additional comments for the feedback. The file will be available for download once it's generated.
 
-5. Decide whether or not to move forward with the feedback submission to Microsoft. If you choose to share the data, select **Submit**. If you don’t want to share the data, select **Cancel**.
+5. Decide whether or not to move forward with the feedback submission to Microsoft. If you choose to share the data, select **Submit**. If you don't want to share the data, select **Cancel**.
 
-6. If you select, **Submit**, the log files will be sent to Microsoft along with your consent and you’ll see a confirmation message. If you select **Cancel**, no data will be sent to Microsoft, and you’ll see cancellation message. Microsoft doesn’t collect anything before you select **Submit**.
+6. If you select, **Submit**, the log files will be sent to Microsoft along with your consent and you'll see a confirmation message. If you select **Cancel**, no data will be sent to Microsoft, and you'll see cancellation message. Microsoft doesn't collect anything before you select **Submit**.
 
 7. Once you select **Submit**, the user who you submitted feedback on behalf of receives an automatic email from Microsoft to inform them about the feedback submission.
 

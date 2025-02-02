@@ -29,14 +29,14 @@ appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ms.custom: seo-marvel-jun2020
-ms.date: 10/24/2024
+ms.date: 12/03/2024
 ---
 
 # Shifts for your frontline organization
 
-Shifts, the schedule management tool in Microsoft Teams, keeps your frontline workforce connected and in sync. It's built mobile first for fast and effective schedule management and communications across your frontline teams. With Shifts and Teams, frontline managers and workers can seamlessly manage schedules, communicate, and collaborate.
+Shifts, the schedule management app in Microsoft Teams, keeps your frontline workforce connected and in sync. It's built mobile first for fast and effective schedule management and communications across your frontline teams. With Shifts and Teams, frontline managers and workers can seamlessly manage schedules, communicate, and collaborate.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE42FjP]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=7fd5b52f-a6c4-465b-915c-e28553534967]
 
 Depending on your business needs, your organization can use Shifts as a standalone app or connect it to your workforce management (WFM) system. You can also use other Microsoft services and products to extend the capabilities of Shifts.
 
@@ -55,7 +55,7 @@ Here are options for integrating Shifts with external WFM systems.
 |UKG Pro Workforce Management |[Teams Shifts connector for UKG Pro Workforce Management](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-pro-workforce-management)<br/> (Hosted and managed by Microsoft)|Shifts doesn't support every configuration and capability of your WFM system. Learn more about [Shifts capabilities](#shifts-capabilities) when using Microsoft managed connectors.|
 |Blue Yonder Workforce Management version 2020.3, 2021.1, or 2021.2 |[Teams Shifts connector for Blue Yonder](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder) <br/>(Hosted and managed by Microsoft)|Shifts doesn't support every configuration and capability of your WFM system. Learn more about [Shifts capabilities](#shifts-capabilities) when using Microsoft managed connectors.|
 |Reflexis Workforce Management version 4.3.2, 4.4, or 4.5|[Reflexis Shifts connector for Microsoft Teams](shifts-connectors.md#reflexis-shifts-connector-for-microsoft-teams) <br/> (Hosted and managed by Zebra)|Shifts doesn't support every configuration and capability of your WFM system. [Learn more](shifts-connectors.md#reflexis-shifts-connector-for-microsoft-teams).|
-|Any other WFM system|[workforceIntegration Graph API](/graph/api/resources/workforceintegration?view=graph-rest-1.0)|<ul><li>Your workforce integration can prevent invalid data from being written to Shifts.</li><li>The workforce integration service you build must be highly available and resilient:</li><ul><li>If the service is slow, it affects the user experience in Shifts.</li><li>If the service is unavailable, users can't make changes in Shifts.</li></ul></ul>|
+|Any WFM system|[Create a custom integration to sync your workforce management system with Shifts](shifts-custom-wfm-integration.md)| This option gives you the flexbility to integrate Shifts with any WFM system. You can set up your integration for a one-way or two-way data sync. |
 
 ## Deployment overview
 
@@ -83,7 +83,7 @@ Here’s an overview of what frontline managers and workers can do in Shifts.
 |Create a schedule for their team. <br/>Supported methods:<ul><li>Manually create shifts and time off one by one.</li><li>Bulk creation of shifts and time off through Excel import and copy/paste.</li></ul> | Yes | Not available in Shifts.<sup>1</sup> |
 |Create open shifts for workers on their own team to request. <br/>Supported methods:<ul><li>Manually create shifts and time off one by one.</li><li>Bulk creation of shifts and time off through Excel import and copy/paste.</li></ul> | Yes | Not available in Shifts.<sup>1</sup> |
 |Create open shifts for workers on other teams (locations) to request. (Preview)<br/>Supported methods:<ul><li>Manually create shifts and time off one by one.</li><li>Bulk creation of shifts and time off through Excel import and copy/paste.</li></ul> | Yes | No |
-|Update and delete shifts, time off, and open shifts.<br/>Only manual one by one changes are supported.| Yes | Not available in Shifts.<sup>1</sup> |
+|Update and delete shifts, time off, and open shifts.<br/>Only manual one-by-one changes are supported.| Yes | Not available in Shifts.<sup>1</sup> |
 |Manage Shifts settings for the team. | Yes<sup>2</sup>| No<sup>3</sup>|
 |Create schedule groups to organize workers based on common characteristics within a team. For example, department or job type. | Yes | No<sup>4</sup>|
 |Retrieve time sheet reports. | Yes | Yes |
@@ -134,6 +134,7 @@ Use the following resources to extend Shifts capabilities for your frontline wor
 |:::image type="icon" source="/office/media/icons/connector-teams.png":::| **[Teams Shifts connector for UKG Pro Workforce Management](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-pro-workforce-management)**<ul><li>Learn how to set up a connection to UKG Pro Workforce Management by using the [Shifts connector wizard](shifts-connector-wizard-ukg.md) or [PowerShell](shifts-connector-ukg-powershell-setup.md).</li><li>Learn how to manage your connection to UKG Pro Workforce Management by using the [Microsoft 365 admin center](shifts-connector-ukg-admin-center-manage.md) or [PowerShell](shifts-connector-ukg-powershell-manage.md).</li></ul>|
 |:::image type="icon" source="/office/media/icons/connector-teams.png":::| **[Teams Shifts connector for Blue Yonder](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder)** <ul><li>Learn how to set up a connection to Blue Yonder Workforce Management by using the [Shifts connector wizard](shifts-connector-wizard.md) or [PowerShell](shifts-connector-blue-yonder-powershell-setup.md).</li><li>Learn how to manage your connection to Blue Yonder Workforce Management by using the [Microsoft 365 admin center](shifts-connector-blue-yonder-admin-center-manage.md) or [PowerShell](shifts-connector-powershell-manage.md).</li></ul> |
 |:::image type="icon" source="/office/media/icons/connector-teams.png":::| **[Reflexis Shifts connector for Microsoft Teams](shifts-connectors.md#reflexis-shifts-connector-for-microsoft-teams)** Learn about integrating Shifts with the Reflexis WFM system through the connector.|
+|:::image type="icon" source="/office/media/icons/connector-teams.png":::| **[Create a custom integration to sync your workforce management system with Shifts](shifts-custom-wfm-integration.md)** Learn how to create a custom solution to integrate Shifts with your WFM system using the Microsoft Graph API.|
 
 ## End user help and training
 

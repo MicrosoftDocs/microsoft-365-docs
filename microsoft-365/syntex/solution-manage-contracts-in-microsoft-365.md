@@ -6,7 +6,7 @@ manager: jtremper
 ms.reviewer: ssquires
 audience: admin
 ms.topic: solution-overview
-ms.date: 02/14/2024
+ms.date: 01/08/2025
 ms.service: microsoft-syntex
 ms.collection:
 - m365solution-managecontracts
@@ -25,7 +25,7 @@ This article describes how to create a contracts management solution for your or
 
 </br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWJUR0]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=04c084c9-5419-408a-9e6e-92d01bb3ddee]
 
 </br>
 

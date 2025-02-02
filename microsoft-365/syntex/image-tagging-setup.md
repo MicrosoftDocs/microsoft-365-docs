@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: shrganguly
-ms.date: 09/26/2024
+ms.date: 01/13/2025
 ms.topic: conceptual
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
@@ -15,7 +15,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to set and configure enhanced image tagging in Microsoft Syntex.
+description: Learn how to set and configure enhanced image tagging in SharePoint.
 ---
 
 # Set up and manage enhanced image tagging in Microsoft Syntex
@@ -26,7 +26,7 @@ The image tagging service for Microsoft Syntex is set up in the Microsoft 365 ad
 
 ### Licensing
 
-Before you can use image tagging in Syntex, you must first link an Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). Image tagging in Syntex is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md).
+Before you can use image tagging, you must first link an Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). Image tagging is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md).
 
 ### Permissions
 
@@ -36,7 +36,7 @@ You must be a [SharePoint Administrator](/entra/identity/role-based-access-contr
 
 ## Set up image tagging
 
-After an [Azure subscription is linked to Microsoft Syntex](syntex-azure-billing.md), image tagging will be automatically set up and enabled for all SharePoint sites.
+After an [Azure subscription is linked to Microsoft Syntex](syntex-azure-billing.md), image tagging is automatically set up and enabled for all SharePoint sites.
 
 Although you enable pay-as-you-go billing for image tagging, you'll be charged only when [image tagging is enabled on a document library](image-tagging.md).
 
@@ -46,13 +46,15 @@ By default, image tagging is available for libraries on all SharePoint sites. Fo
 
 1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>.
 
-2. Under **Files and content**, select **Automate content processes with Syntex**.
+2. Under **Billing and licenses**, select **Activate pay-as-you-go services**.
 
-3. On the **Automate content processes with Syntex** page, select **Go to Syntex settings**.
+3. On the **Activate pay-as-you-go services** page, select **Get started**.
 
-4. On the Syntex page, in the **Document & image services** section, select **Image tagging**.
+4. On the **Pay-as-you-go services** page, select the **Settings** tab, and then select **Syntex services**.
 
-5. On the **Image tagging** panel:
+5. On the Syntex page, in the **Document & image services** section, select **Image tagging**.
+
+6. On the **Image tagging** panel:
 
     a. Choose the site or sites on which this service should be enabled.
 

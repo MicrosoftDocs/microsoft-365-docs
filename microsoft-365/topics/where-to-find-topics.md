@@ -23,6 +23,9 @@ description: Learn about how Topics integrate with other Microsoft 365 apps and 
 
 # Where to find topics
 
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
+
 ## Engage with Topics in Microsoft apps
 
 Topics are integrated throughout Microsoft 365 and other Viva apps.

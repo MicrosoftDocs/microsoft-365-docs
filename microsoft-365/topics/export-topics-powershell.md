@@ -19,6 +19,9 @@ description: Learn how to export topics created in Viva Engage (Lite Topics) to 
 
 # Export topics created in Viva Engage with PowerShell
 
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
+
 Using PowerShell, you can export topics created in Viva Engage (also known as Lite Topics) to a .csv file. Topics created before enabling integration with Viva Engage are included.
 
 > [!NOTE]
@@ -40,13 +43,13 @@ Key support files are included in this document:
 
 1. [Get the script](#export-topics-script).
 1. Use the following parameters: <br>
-Export-TopicLite -Upn < string > | Export-Csv -Path < string >
+    `Export-TopicLite -Upn < string > | Export-Csv -Path < string >`
 
-Example:
+   Example:
 
-```powershell
-Export-TopicLite -Upn "user@domain.com" -Path "C:\"
-```
+   ```powershell
+   Export-TopicLite -Upn "user@domain.com" -Path "C:\"
+   ```
 
 ## Output
 

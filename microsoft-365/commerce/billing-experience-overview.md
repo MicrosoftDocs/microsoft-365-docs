@@ -21,6 +21,7 @@ ms.custom:
 - commerce_billing
 - VSBFY23
 - AdminTemplateSet
+- campaignIDs-batch1
 search.appverid: MET150
 ROBOTS: NOINDEX NOFOLLOW
 description: "Learn about the new billing experience for business subscription in the Microsoft 365 admin center."
