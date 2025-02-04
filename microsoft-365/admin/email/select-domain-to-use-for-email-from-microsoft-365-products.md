@@ -42,7 +42,7 @@ Emails sent out to users as they interact with each other and across various pro
 
 There are several scenarios where emails are sent from a “no-reply” system-based product account. For example, batched comments, news, digests, and system notification emails are currently sent from a no-reply product address. These include addresses such _no-reply@sharepointonline.com_, _no-reply@planner.com_, _no-reply@project.com_.
 
-The default option is that users receive no-reply emails sent by Microsoft on behalf of your organization. Your users receive these emails as [EXTERNAL] notifications. You can now use a custom domain as the sender of these notifications. Using this feature means that emails are sent from your own Exchange Online instance and they become internal communication. For example, **no-reply@sharepointonline.com [External]** could become **no-reply@contoso.com**, if **Contoso.com** is the selected domain.
+The default option is that users receive no-reply emails sent by Microsoft on behalf of your organization (the emails are sent from Microsoft-owned domains. Your users receive these emails as [EXTERNAL] notifications. You can now use a custom domain as the sender of these notifications. Using this feature means that emails are sent from **your own selected domain and Exchange Online instance** and they become internal communication. For example, **no-reply@sharepointonline.com [External]** could become **no-reply@contoso.com**, if **Contoso.com** is the selected domain.
 
 > [!NOTE]
 > Only domains registered within your tenant can be used and ownership must be verified through the existing add domains process within Microsoft 365. Please use the following steps and note the Domain Name System (DNS) records required when configuring a domain for sending email.
@@ -93,7 +93,7 @@ Please note that the following products currently support this feature:
 - Teams
 
 > [!NOTE]
-> The supported products list will be updated as each product migrates to support the setting and no action will be required as these products onboard to the centralized setting. 
+> The supported products list will be updated as each product migrates to support the setting and no action will be required as these products onboard to the centralized setting.
 
 <a name="excludedscenarios"></a>
 ## Excluded Scenarios
