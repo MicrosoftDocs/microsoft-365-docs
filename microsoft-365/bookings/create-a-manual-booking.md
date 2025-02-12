@@ -21,7 +21,7 @@ Bookings can be scheduled and staffed in two different ways. The first way is by
 
 ## Watch: Create an appointment on behalf of a customer
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Zd77]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=df9b9b3b-6f1e-4406-81d8-a81f4d2b048e]
 
 ## Steps
 

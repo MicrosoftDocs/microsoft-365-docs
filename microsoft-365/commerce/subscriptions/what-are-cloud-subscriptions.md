@@ -18,7 +18,8 @@ ms.collection:
 ms.custom:
 - commerce_subscriptions
 - AdminTemplateSet
-- admindeeplinkMAC                                           
+- admindeeplinkMAC
+- campaignIDs-batch1                                         
 search.appverid: MET150
 robots: NOINDEX NOFOLLOW
 description: "Learn about cloud subscriptions and how to view them in the Microsoft 365 admin center."

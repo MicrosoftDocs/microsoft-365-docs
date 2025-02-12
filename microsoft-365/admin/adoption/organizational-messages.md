@@ -20,6 +20,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - AdminTemplateSet
+- campaignIDs-batch1
 search.appverid:
 - MET150
 - MOE150

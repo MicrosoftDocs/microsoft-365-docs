@@ -30,9 +30,9 @@ To go to the **Service health** dashboard in the Microsoft 365 admin center,
 
 Issues in your organization are identified and used by organizational-level monitoring. The value in the **Health** column under **Microsoft service health** indicates that the service is healthy or has advisories or incidents based on the cloud services that Microsoft maintains.
 
-Here’s an example of the Microsoft 365 for the web monitoring page in the Microsoft 365 admin center that shows the health of organization-level scenarios available by going to **Health > Service health > Microsoft 365 for the web**.
+Here’s an example of the Microsoft 365 for the web monitoring page in the Microsoft 365 admin center that shows the health of organization-level scenarios available by going to **Health > Service health > Monitoring > Microsoft 365 for the web**.
 
-![Screenshot of Microsoft 365 for the web monitoring.](../media/microsoft-365-for-the-web.png)
+:::image type="content" source="../media/microsoft-365-for-the-web-1.png" alt-text="Screenshot that shows Microsoft 365 for the web monitoring." lightbox="../media/microsoft-365-for-the-web-1.png":::
 
 With the **Microsoft 365 for the web** monitoring page, you can see whether the Microsoft 365 for the web service is healthy or not and whether there are any associated incidents or advisories for any underlying Microsoft 365 for the web apps. With Microsoft 365 for the web monitoring, you can look at the service health for specific app scenarios and view near real-time signals to determine the impact by organization-level scenario.
 
@@ -50,11 +50,11 @@ Microsoft 365 for the web monitoring supports the following scenarios:
 
 - **Visio for the web**: View the health for “Diagram Open” and “Diagram Save” scenarios.
 
-![Screenshot of Excel for the web monitoring.](../media/excel-for-the-web.png)
+:::image type="content" source="../media/microsoft-365-for-the-web-2.png" alt-text="Screenshot that shows Excel for the web monitoring." lightbox="../media/microsoft-365-for-the-web-2.png":::
 
 Detailed views for each of these scenarios show the near real-time trend for the past seven days with the 60-minute aggregate compared with the previous week.
 
-![Second Screenshot of Excel for the web monitoring.](../media/excel-for-the-web-2.png)
+:::image type="content" source="../media/microsoft-365-for-the-web-3.png" alt-text="Second screenshot that shows Excel for the web monitoring." lightbox="../media/microsoft-365-for-the-web-3.png":::
 
 ## Send us feedback
 

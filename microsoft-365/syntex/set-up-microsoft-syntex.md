@@ -32,15 +32,17 @@ As an admin, you can also make changes to your selected settings anytime in the 
 
 ## Set up pay-as-you-go services
 
-1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>, and then view the **Files and content** section.
+1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>, and then view the **Billing and licenses** section.
 
-2. In the **Files and content** section, select **Automate content processes with Syntex**.
+2. Under **Billing and licenses**, select **Activate pay-as-you-go services**.
 
-3. On the **Automate content processes with Syntex** page, select **Go to Syntex settings**.
+3. On the **Activate pay-as-you-go services** page, select **Get started**.
 
-4. Select the Microsoft Syntex service that you want to set up.
+4. On the **Pay-as-you-go services** page, select the **Settings** tab, and then select **Syntex services**.
 
-5. Choose the options that you want to use, and then select **Save**.
+5. Select the Microsoft Syntex service that you want to set up.
+
+6. Choose the site options that you want to use, and then select **Save**.
 
 ### Setup instructions by service
 

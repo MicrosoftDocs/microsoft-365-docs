@@ -41,7 +41,7 @@ Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?l
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2197598).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOgo?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=470edf48-3b59-4538-9c05-5518960bed02]
 
 Need to speak to someone right away? Admins, have your account details ready when you call Support.
 

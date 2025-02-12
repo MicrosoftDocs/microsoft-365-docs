@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.date: 03/22/2024
+ms.date: 01/09/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -29,7 +29,7 @@ description: "Learn how to manage Office Scripts settings for users in your orga
 [Office Scripts](/office/dev/scripts) allows users to automate tasks by recording, editing, and running scripts in Excel. Office Scripts works with Power Automate, and users run scripts on workbooks by using the Excel Online (Business) connector. Microsoft 365 admins can manage Office Scripts settings from the Microsoft 365 admin center.
 
 > [!NOTE]
-> To manage Office Scripts settings, you must be a Global admin. For more information, see [About admin roles](../add-users/about-admin-roles.md).
+> To manage Office Scripts settings, you must be at least an Office Apps admin. For more information, see [About admin roles](../add-users/about-admin-roles.md).
 
 ## Manage availability of Office Scripts and sharing of scripts
 

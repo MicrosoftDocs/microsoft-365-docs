@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: amcdonnell
-ms.date: 10/31/2024
+ms.date: 01/16/2025
 audience: enabler
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -30,14 +30,8 @@ With SharePoint eSignature, you can quickly and securely send documents for sign
 
 ## Regional availability
 
-SharePoint eSignature is currently available in the US, UK, and Canada. It will be available in the EU and Australia Pacific by November 2024, and globally in 2025. Furthermore, the use of other eSignature providers as an integration with the SharePoint eSignature platform is available globally.
-<!---
-Beginning September 2024, SharePoint eSignature will be rolling out to the UK, Canada, and the following European countries/regions: Austria, Belgium, Bulgaria, Croatia, Cyprus, Czechia, Denmark, Estonia, Finland, Greece, Hungary, Ireland, Latvia, Lithuania, Luxembourg, Malta, Poland, Portugal, Romania, Slovakia, Slovenia, and Sweden.
+SharePoint eSignature is currently available in the US, UK, Canada, the EU, and Australia Pacific. It will be available worldwide later in 2025. Furthermore, the use of other eSignature providers as an integration with the SharePoint eSignature platform is available globally.
 
-SharePoint eSignature will be available in the remaining European countries (France, Germany, Italy, the Netherlands, and Spain), as well as Australia and Asia-Pacific, by the end of 2024.
-
-SharePoint eSignature will be available worldwide by the end of 2025.
---->
 ## Before you begin
 
 ### Legal considerations
@@ -50,7 +44,7 @@ Before you can use SharePoint eSignature, you must first link your Azure subscri
 
 ### External sharing
 
-SharePoint eSignature enables binding agreements between parties. External parties are allowed guests access to SharePoint via Azure Active directory in order to electronically sign a document. Certain external sharing settings must be enabled at a tenant and site level to allow this access. For more information, see [Set up SharePoint eSignature for external recipients](esignature-setup.md#external-recipients). Consider whether this meets your compliance and security requirements when enabling eSignature.
+SharePoint eSignature enables binding agreements between parties. External parties are allowed guests access to SharePoint via Microsoft Entra ID in order to electronically sign a document. Certain external sharing settings must be enabled at a tenant and site level to allow this access. For more information, see [Set up SharePoint eSignature for external recipients](esignature-setup.md#external-recipients). Consider whether this meets your compliance and security requirements when enabling eSignature.
 
 ## Using other signature providers
 
@@ -58,12 +52,15 @@ SharePoint eSignature is now integrated with other electronic signature provider
 
 The providers facilitate the signing process and send out all relevant notifications. When signing is complete, a copy of the fully signed document is automatically saved in SharePoint for easy access. For more information, see [how to add other signature providers](esignature-setup.md#add-other-signature-providers) and [how to create a signature request using another provider](esignature-send-requests.md#create-a-signature-request-using-another-provider).
 
-## Release notes
+## Current release notes
 
 - SharePoint eSignature is available for only PDF documents at this time.
+
 - Tracking of SharePoint eSignature requests through the Approvals app in Microsoft Teams is now available.
+
 - Support for Adobe Acrobat Sign and Docusign is now available. In the future, there will be potential integration with other electronic signature providers.
-- Support for Adobe Acrobat sign and Docusign is now available globally
+
+- Support for Adobe Acrobat sign and Docusign is now available globally.
 
 <br>
 

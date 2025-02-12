@@ -31,7 +31,7 @@ search.appverid:
 - MOE150
 - BEA160
 description: "Learn how to find a new Microsoft 365 partner, or get contact information for a partner you worked with previously."
-ms.date: 11/16/2023
+ms.date: 01/07/2025
 ---
 
 # Find your Microsoft 365 subscriptions partner or reseller

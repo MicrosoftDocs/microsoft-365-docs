@@ -23,7 +23,7 @@ description: Learn about custom models and prebuilt models in Microsoft Syntex.
 
 <!---</br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GJXS] 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=2fdd05b9-cf37-40a8-b3e5-9cb9949a1a62] 
 
 </br>--->
 

@@ -270,7 +270,17 @@ You can read more about the network requirements for Microsoft 365 Copilot in [M
 ![The result page of tests for Copilot](../media/m365-mac-perf/mct-copilot-resultpae.png)
 
 
+#### Microsoft 365 Copilot HTTP Connectivity  
 
+We will test the HTTP connectivity for specific endpoints to ensure your connection to Microsoft 365 Copilot services is functioning properly. If you are on a managed network, please contact your IT or network administrator to add `*.cloud.microsoft` and `*.office.com` to the allow list. For more information, refer to the [Microsoft 365 Copilot requirements](/copilot/microsoft-365/microsoft-365-copilot-requirements#network-requirements).  
+
+#### Microsoft 365 Copilot Web Socket Enablement  
+
+Microsoft 365 Copilot uses WebSocket (WSS) as its communication protocol. If you are on a managed network, please contact your IT or network administrator to enable WebSocket (WSS) connectivity for Microsoft 365 Copilot domains. For additional details, see the [Microsoft 365 Copilot requirements](/copilot/microsoft-365/microsoft-365-copilot-requirements#network-requirements).  
+
+#### Microsoft 365 Copilot Latency  
+
+We will measure the average latency for Microsoft 365 Copilot endpoints. Please ensure WebSocket support is enabled. If the latency exceeds 250ms, it may result in a slower experience with Microsoft 365 Copilot. For more information, refer to the [Microsoft 365 Copilot requirements](/copilot/microsoft-365/microsoft-365-copilot-requirements#network-requirements).  
 
 
 ## Connectivity reports

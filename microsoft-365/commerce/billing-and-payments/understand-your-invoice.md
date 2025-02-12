@@ -23,6 +23,7 @@ ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 - AdminTemplateSet
+- campaignIDs-batch1
 search.appverid: MET150
 description: "Learn how to interpret the charges on your invoice for your Microsoft business subscription with an MCA billing account."
 ms.date: 02/22/2024
@@ -152,6 +153,18 @@ Some invoices are generated within 24 hours of the purchase. Other invoices are 
 ### How do I pay the amount due on my invoice?
 
 Payment instructions depend on your payment method and are provided at the bottom of the invoice PDF. If your payment method is a credit or debit card, we automatically charge the card within 10 days of the invoice date. If your payment method is by electronic payment (wire transfer, SEPA, and so on), see the information under **Payment Instructions** in the PDF.
+
+### Why did I get a second invoice for the same subscription in one month?
+
+We changed our billing periods for Microsoft 365 for business products. This change updates invoicing from billing in arrears for all charges to paying upfront for purchases, renewals, and recurring charges.
+
+Changes like adding or removing licenses and moving to a different subscription are still billed around the beginning of the month. This invoice has a billing period that spans the previous month.
+
+Purchases, renewals, and recurring charges are now billed upfront. This invoice now has a billing period of a single day. You can find the transaction type in the invoice details in the Microsoft 365 admin center.
+
+### Why is the billing period a single day?
+
+A billing period of a single day indicates that the invoice is for purchases or renewals made on that day. This period isn’t the same as the service period that appears on the invoice details. The service period includes the dates of service for which you’re billed.
 
 ### What's the difference between "Sold to" and "Bill to" addresses?
 

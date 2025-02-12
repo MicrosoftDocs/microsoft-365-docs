@@ -30,7 +30,7 @@ description: "Learn about agent usage in Microsoft 365 copilot and gain insights
 In the Microsoft 365 Copilot agent usage report, you can view the adoption of agents in Microsoft 365 Copilot in your org. For agent activity on a given day, the report becomes available within 72 hours of the end of that day (in UTC).
 
 > [!NOTE]
-> The report is currently limited to agents built by your org through Microsoft Copilot Studio or Teams Toolkit (including admin-approved agents and agents created by users through agent builder). The report captures usage of agents in Business Chat (work) and Copilot in Word and PowerPoint. SharePoint agents and agents built by Microsoft and Microsoft partners are not yet included but will be added at a later date.
+> The report is currently limited to agents built by your org through Microsoft Copilot Studio or Teams Toolkit (including admin-approved agents and agents created by users through agent builder). The report captures usage of agents in Microsoft 365 Copilot Chat (work) and Copilot in Word and PowerPoint. SharePoint agents and agents built by Microsoft and Microsoft partners are not yet included but will be added at a later date.
 
 ## How do I get to the agent usage in Microsoft 365 Copilot report?
 
@@ -51,7 +51,7 @@ At the top, you can filter by different periods. The Microsoft 365 Copilot agent
 
 **Active agents** shows the distinct number of apps with a declarative agent element in that app with at least one active user over the selected time period. For more information, see [Declarative agents FAQ](/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps). As defined earlier, only agents that have been created by your org including both admin approved and shared by users in your org are included.  
 
-End-users interact with agents in two ways: either by at-mentioning the agent in a chat experience or by selecting the agent from the right-side panel in Business Chat or from the hamburger menu on the top left corner in Copilot in Word or PowerPoint. An active user of an agent is a user who sends a prompt request to an agent and receives a response.
+End-users interact with agents in two ways: either by at-mentioning the agent in a chat experience or by selecting the agent from the right-side panel in Copilot Chat or from the hamburger menu on the top left corner in Copilot in Word or PowerPoint. An active user of an agent is a user who sends a prompt request to an agent and receives a response.
 
 In Recommendations, the recommended action card suggests that admins visit the Integrated apps section of the Microsoft 365 admin center to explore and enable additional agents for users in their org.
 
@@ -111,4 +111,4 @@ This information is not available in the report at this time, but may be added a
 
 ### How does agent usage impact overall Microsoft 365 Copilot usage?
 
-Agent usage is already included in the top-line Microsoft 365 Copilot usage number, as agents can only be used via Business Chat and Copilot in Office apps. Usage of these apps is already captured in the all-up Microsoft 365 Copilot usage report, which includes data for all features and functionalities of Copilot.
+Agent usage is already included in the top-line Microsoft 365 Copilot usage number, as agents can only be used via Copilot Chat and Copilot in Office apps. Usage of these apps is already captured in the all-up Microsoft 365 Copilot usage report, which includes data for all features and functionalities of Copilot.

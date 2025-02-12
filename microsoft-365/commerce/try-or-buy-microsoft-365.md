@@ -27,6 +27,7 @@ ms.custom:
 - admindeeplinkMAC
 - adminvideo
 - GAUpdates
+- campaignIDs-batch1
 search.appverid: GEA150 
 description: "Learn how to sign up for a free 30-day trial or buy a subscription for Microsoft 365 for business products and services."
 ms.date: 09/05/2024
@@ -187,7 +188,7 @@ If you want to move all of your users to a different subscription, see [Upgrade 
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198013).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SBE2?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=ac7fc5ca-3e7c-41aa-84e7-4cd2300e82d2]
 
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 

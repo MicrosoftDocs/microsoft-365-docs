@@ -33,7 +33,7 @@ Topics uses Microsoft AI technology, Microsoft 365, Microsoft Graph, Search, and
 
 <br/>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LhZP]  
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=25176252-071c-4b08-85c9-fb4289552526]  
 
 <br/>
 

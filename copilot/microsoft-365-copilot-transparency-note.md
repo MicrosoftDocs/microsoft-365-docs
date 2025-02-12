@@ -13,7 +13,7 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 hideEdit: true
-ms.date: 09/16/2024
+ms.date: 02/06/2025
 ---
 
 # Transparency Note for Microsoft 365 Copilot
@@ -68,7 +68,7 @@ For additional, detailed information about the LLMs provided to Microsoft by Ope
 |Microsoft 365 Copilot in Microsoft Stream|Microsoft 365 Copilot in Microsoft Stream helps get information from any video with a transcript. Microsoft 365 Copilot in Stream can provide a summary of the video, answer specific questions, quickly jump to specific topics or points of discussion, and identify calls to action. <br/><br/> For more information, see [Frequently asked questions about Copilot in Stream](https://support.microsoft.com/topic/20ef6f0e-10f8-47aa-8bb7-697db7445fae).  |
 |Microsoft 365 Copilot in Whiteboard|Microsoft 365 Copilot in Whiteboard helps kickstart the ideation process to generate, categorize, and summarize ideas. <br/><br/> For more information, see [Frequently Asked Questions about Copilot in Whiteboard](https://support.microsoft.com/topic/cbe05878-d68d-4d9d-83c1-5b47d6b76792).  |
 |Microsoft 365 Copilot in OneNote|Microsoft 365 Copilot in OneNote enables users to draft plans, generate ideas, create lists, and organize information to help them find what they need in the OneNote app.<br/><br/> For more information, see [Frequently asked questions about Copilot in OneNote](https://support.microsoft.com/office/2d9136e0-132a-4d4c-ab0e-39cf3ed914cc).  |
-|Business Chat|Business Chat combines the power of Large Language Models with the Internet, work content and context, and other apps, to help users draft content, catch up on what’s missed, and get answers to questions via prompts.  |
+|Microsoft 365 Copilot Chat|Microsoft 365 Copilot Chat (previously named Business Chat) combines the power of Large Language Models with the Internet, work content and context, and other apps, to help users draft content, catch up on what’s missed, and get answers to questions via prompts.  |
 |Intelligent Search|Intelligent Search enables search in Dataverse applications such as Dynamics 365 Sales, Service, and Finance & Operations using natural language.|
 |Power Platform Connectors|Power Platform Connectors allow customers to access real time data from a collection of business and personal productivity applications in the Microsoft 365 Copilot experience.|
 |Microsoft Graph Connectors|Microsoft Graph Connectors enable connections to external data sources, including up to 500 items per Microsoft 365 Copilot license. |
@@ -84,7 +84,7 @@ The capabilities that users see in Microsoft 365 applications appear as addition
 
 - **Microsoft Graph** has long been fundamental to Microsoft 365. It includes information about the relationships between users, activities, and an organization’s data. Microsoft Graph API brings more context from customer signals into the prompt, such as information from emails, chats, documents, and meetings. For more information, see [Overview of Microsoft Graph](/graph/overview) and [Major services and features in Microsoft Graph](/graph/overview-major-services).
 
-- **Business Chat** enables customers to bring work content and context to Microsoft 365 Copilot's chat capabilities. With Business Chat, users can draft content, catch up on what they missed, and get answers to questions via open-ended prompts— all securely grounded in work data. Use Business Chat at many surfaces, including within Microsoft Teams, at [Microsoft365.com](https://www.microsoft365.com/), and at [copilot.microsoft.com](https://copilot.microsoft.com/).
+- **Microsoft 365 Copilot Chat** enables customers to bring work content and context to Microsoft 365 Copilot's chat capabilities. With Microsoft 365 Copilot Chat, users can draft content, catch up on what they missed, and get answers to questions via open-ended prompts — all securely grounded in work data. Use Microsoft 365 Copilot Chat at many surfaces, including within Microsoft Teams, at [Microsoft365.com](https://www.microsoft365.com/), and at [copilot.microsoft.com](https://copilot.microsoft.com/).
 
 - **Semantic index** is an index generated from content in Microsoft Graph. It's used to aid in the processing of user prompts to produce contextually relevant responses. It allows organizations to search through billions of vectors (mathematical representations of features or attributes) and return related results. The semantic index is designed to respect individual users’ security context, and only content that a user can access is shown. Semantic index is built on Microsoft’s comprehensive approach to security, compliance, privacy, and respects all organizational boundaries within the customer’s tenant. For more information, see [Semantic index for Copilot](/MicrosoftSearch/semantic-index-for-copilot).
 
@@ -100,6 +100,10 @@ The capabilities that users see in Microsoft 365 applications appear as addition
 
 The data is encrypted while it's stored and isn't used to train Azure OpenAI Service [foundation LLMs](https://blogs.microsoft.com/on-the-issues/2024/03/28/data-protection-responsible-ai-azure-copilot/), including those used by Microsoft 365 Copilot. For more information about this, see [Data, Privacy, and Security for Microsoft 365 Copilot](microsoft-365-copilot-privacy.md).
 
+#### How Microsoft 365 Copilot generates responses without web content or organizational data
+
+Microsoft 365 Copilot doesn't require web content or organizational data to provide a response, but that information can help improve the quality, accuracy, and relevance of its response. When responding without web or organizational data, Microsoft 365 Copilot relies only on its LLMs to understand prompts and generate responses. The process involves parsing the input, leveraging the model's internal knowledge base, and refining the response to ensure it's contextually appropriate.
+
 ### Extensibility & customization
 
 Microsoft 365 Copilot offers features to help users unlock productivity and creativity. Its adaptability means that it can be customized to meet the unique needs of different organizations. The ability to extend its capabilities through extensions makes it a continually evolving asset that can adapt to the ever-changing landscape of business needs. Learn more about customizing Microsoft 365 Copilot at [Copilot | Microsoft Developer](https://developer.microsoft.com/copilot). For more information about the use of AI in extensions, refer to those offerings directly.
@@ -108,7 +112,7 @@ Microsoft 365 Copilot offers features to help users unlock productivity and crea
 
 Microsoft 365 Copilot is a general-purpose service, designed to assist with a wide variety of everyday tasks across any organization by connecting with work data and integrating with the apps customers use every day. For example:
 
-- **Chat and conversation interaction & creation**: Users can interact with Business Chat and generate responses drawn from trusted documents such as internal company documentation or tech support documentation.
+- **Chat and conversation interaction & creation**: Users can interact with Microsoft 365 Copilot Chat and generate responses drawn from trusted documents such as internal company documentation or tech support documentation.
 
 - **Search**: Users can search trusted source documents such as internal company documentation.
 

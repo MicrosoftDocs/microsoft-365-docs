@@ -40,7 +40,7 @@ In this article, we'll walk through the Microsoft 365 configuration steps necess
 
 This video shows the configuration steps described in this document.</br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE44NTr?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=2c86e860-00d7-415d-b0ee-52a4b8ade515]
 
 ## Microsoft Entra External ID external collaboration settings
 

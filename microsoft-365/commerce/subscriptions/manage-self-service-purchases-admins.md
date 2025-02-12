@@ -22,10 +22,11 @@ ms.custom:
   - okr_smb
   - admindeeplinkMAC
   - GAUpdates
+  - campaignIDs-batch1
 search.appverid:
 - MET150
 description: "Learn how admins can use the Microsoft 365 admin center to manage self-service purchases and trials made by users in their organization."
-ms.date: 09/23/2024
+ms.date: 01/06/2025
 ---
 
 # Manage self-service purchases and trials (for admins)
@@ -42,6 +43,9 @@ For each purchase or trial subscription, you can see the following details:
 - assigned users
 
 You can also control whether users in your organization can make purchases or sign up for trials. To learn how to manage these settings, see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).
+
+> [!IMPORTANT]
+> Self-service purchases and trials can't be completely turned off at the tenant level with a single command. The [AllowSelfServicePurchase](allowselfservicepurchase-powershell.md) policy is managed on a per-product basis. You can only turn off self-services purchases and trials for the entire tenant by turning off each product individually. By default, all new products are set to allow users to make a self-service purchase.
 
 ## Before you begin
 

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 06/05/2024
+ms.date: 02/05/2024
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
@@ -39,7 +39,7 @@ description: "The Microsoft 365 admin center - learn about the features that wer
 
 We're continuously adding new features to [the Microsoft 365 admin center](admin-overview/admin-center-overview.md), fixing issues we learn about, and making changes based on your feedback. Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, [try adding yourself to targeted release](manage/release-options-in-office-365.md).
 
-And if you'd like to know what's new with other Microsoft cloud services:
+And if you'd like to know what's new with other Microsoft cloud services, check out the following:
 
 - [What's new in Microsoft Entra ID](/azure/active-directory/fundamentals/whats-new)
 - [What's new in the Exchange admin center](/Exchange/whats-new)
@@ -50,6 +50,20 @@ And if you'd like to know what's new with other Microsoft cloud services:
 - [What's new for Teams admins](/OfficeUpdates/teams-admin)
 - [Microsoft 365 updates](/OfficeUpdates/)
 - [How to check Windows release health](/windows/deployment/update/check-release-health)
+
+## January 2025
+
+### AI Administrator role in Microsoft 365 admin center
+
+The AI administrator role is designed to manage all settings related to Copilot within the Microsoft 365 admin center. You can manage Copilot settings by using the Copilot page in the admin center, which serves as the central hub for all Copilot controls. To learn more about the Copilot page, see [Manage Microsoft 365 Copilot settings in the Microsoft 365 admin center](/copilot/microsoft-365/microsoft-365-copilot-page).
+
+With the AI administrator role, you can:
+
+- **Manage AI-related services and extensibility** This includes managing all aspects of Microsoft 365 Copilot, AI-related enterprise services, and agents from the Integrated apps page in the Microsoft 365 admin center.
+- **Oversee app installations and configurations** Users with this role can install apps or install apps for users in the organization and read and configure Azure and Microsoft 365 service health dashboards.
+- **Access insights and support** View usage reports, adoption insights, organizational insights, and create and manage support tickets in Azure and the Microsoft 365 admin center.
+
+This new role is designed to empower your organization by providing specialized administrative capabilities for managing AI-related enterprise services, starting with Microsoft 365 Copilot, and slowly extending to other AI-driven functionalities. For more information about the AI administrator role and other roles in the admin center, see [About admin roles in the Microsoft 365 admin center](/admin/add-users/about-admin-roles).
 
 ## May 2023
 

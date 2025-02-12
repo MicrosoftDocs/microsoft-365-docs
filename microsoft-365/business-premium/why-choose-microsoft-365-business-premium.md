@@ -38,7 +38,7 @@ Microsoft 365 Business Premium offers you one comprehensive solution for product
 
 Watch the following video to see how Microsoft 365 Business Premium helps your business be more productive and secure: <br/><br/>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Pq0G]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=6f3cae8f-688c-46f3-9987-cfcf3168bf97]
 
 > [!TIP]
 > For more detailed information about what's included in Microsoft 365 Business Premium, see the [Microsoft 365 User Subscription Suites for Small and Medium-sized Businesses](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWR6bM).

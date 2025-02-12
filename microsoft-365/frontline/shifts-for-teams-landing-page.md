@@ -36,7 +36,7 @@ ms.date: 12/03/2024
 
 Shifts, the schedule management app in Microsoft Teams, keeps your frontline workforce connected and in sync. It's built mobile first for fast and effective schedule management and communications across your frontline teams. With Shifts and Teams, frontline managers and workers can seamlessly manage schedules, communicate, and collaborate.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE42FjP]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=7fd5b52f-a6c4-465b-915c-e28553534967]
 
 Depending on your business needs, your organization can use Shifts as a standalone app or connect it to your workforce management (WFM) system. You can also use other Microsoft services and products to extend the capabilities of Shifts.
 

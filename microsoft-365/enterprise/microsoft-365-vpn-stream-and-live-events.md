@@ -41,7 +41,7 @@ Many customers have asked for URL/IP data needed to connect their attendees in T
 Use the following steps to identify and enable direct connectivity for attendee traffic for Teams Events from clients that are using a forced tunnel VPN. This solution is intended to provide customers with an option to avoid routing attendee traffic over VPN while there's high network traffic due to work-from-home scenarios. If possible, we recommend accessing the service through an inspecting proxy.
 
 > [!NOTE]
-> Using this solution, there might be service elements that do not resolve to the IP addresses provided and thus traverse the VPN, but the bulk of high-volume traffic like streaming data should. There might be other elements outside the scope of Live Events/Stream which get caught by this offload, but these should be limited as they must meet both the FQDN _and_ the IP match before going direct.
+> Using this solution, there might be service elements that don't resolve to the IP addresses provided and thus traverse the VPN, but the bulk of high-volume traffic like streaming data should. There might be other elements outside the scope of Live Events/Stream which get caught by this offload, but these should be limited as they must meet both the FQDN _and_ the IP match before going direct.
 
 > [!IMPORTANT]
 >We recommend you weigh the risk of sending more traffic that bypasses the VPN over the performance gain for Teams Events.
@@ -62,7 +62,7 @@ For the **Commercial** cloud:
 **\*.media.azure.net**, **\*.bmc.cdn.office.net** and **\*.ml.cdn.office.net** are used for Teams Town hall events.
 
 > [!NOTE]
-> Some of these endpoints are shared with other elements outside of Teams events. We don't recommend just using these namespaces to configure VPN offload even if technically possible in your VPN solution (for example, if it works with the namespace rather than IP).
+> Some of these endpoints are shared with other elements outside of Teams events.
 
 For the **Government** clouds **(GCC, GCC High, DoD)**:
 - \*.cdn.ml.gcc.teams.microsoft.com
@@ -75,23 +75,20 @@ For the **Government** clouds **(GCC, GCC High, DoD)**:
 
 **\*.cdn.ml.dod.teams.microsoft.us** is used for Teams Town hall events in the Microsoft 365 U.S. Government DoD Cloud (DoD).
 
-FQDNs aren't required in the VPN configuration, they're purely for use in PAC files in combination with the IPs to send the relevant traffic direct.
 
 ## 2. Implement PAC file changes (where required)
 
-For organizations that utilize a PAC file to route traffic through a proxy while on VPN, this is normally achieved using FQDNs. However, with Teams events, the host names provided contain wildcards that resolve to IP addresses used by Content Delivery Networks (CDNs) which aren't utilized exclusively for Teams events traffic. Thus, if the request is sent direct based on DNS wildcard match alone, traffic to these endpoints will be blocked as there's no route via the direct path for it in [Step 3](#3-configure-routing-on-the-vpn-to-enable-direct-egress) later in this article.
+For organizations that utilize a PAC file to route traffic through a proxy while on VPN, this is normally achieved using FQDNs. However, with Teams events, the host names provided contain wildcards that resolve to IP addresses used by Content Delivery Networks (CDNs) which aren't utilized exclusively for Teams events traffic. Thus, if the request is sent direct based on DNS wildcard match alone, traffic to these endpoints might be blocked if there's no route via the direct path for it in [Step 3](#3-configure-routing-on-the-vpn-to-enable-direct-egress) later in this article.
 
-To solve this, we can provide the following IPs and use them in combination with the host names in an example PAC file as described in [Step 1](#1-configure-external-dns-resolution). The PAC file checks if the URL matches those used for Teams events and if it does, it then also checks to see if the IP returned from a DNS lookup matches those provided for the service. If _both_ match, then the traffic is routed direct. If either element (FQDN/IP) doesn't match, then the traffic is sent to the proxy. As a result, the configuration ensures that anything that resolves to an IP outside of the scope of both the IP and defined namespaces traverses the proxy via the VPN as normal.
+To solve this, we can provide the following IPs and use them in combination with the host names in an example PAC file as described in [Step 1](#1-configure-external-dns-resolution). The PAC file checks if the URL matches those used for Teams events and if it does, it then also checks to see if the IP returned from a DNS lookup matches those provided for the service. If _both_ match, then the traffic is routed direct. If either element (FQDN/IP) doesn't match, then the traffic is sent to the proxy. As a result, the configuration ensures that anything that resolves to an IP outside of the scope of both the IP and defined namespaces traverses the proxy via the VPN as normal. 
 
 ### Gathering the current lists of CDN Endpoints
 
-For the Commercial cloud, Teams events use multiple CDN providers to stream to customers, to provide the best coverage, quality, and resiliency. Currently, both Azure CDN from Microsoft and Azure CDN from Verizon are used. Over time this could be changed due to situations such as regional availability. This article is a source to enable you to keep up to date on IP ranges. For the Microsoft 365 U.S. Government clouds (GCC, GCC High and DoD) only Azure CDN from Microsoft is used.
+For the Commercial cloud and Microsoft 365 U.S. Government clouds (GCC, GCC High and DoD) Teams events use Azure CDN from Microsoft. Over time this could be changed due to situations such as regional availability. This article provides the required namespaces for Teams events and guidance for the corresponding IP address ranges used (where available).
 
 For the **Commercial** cloud:
 
 - For Azure CDN from Microsoft, you can download the list from [Download Azure IP Ranges and Service Tags – Public Cloud from Official Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=56519) - you'll need to look specifically for the service tag `AzureFrontdoor.Frontend` in the JSON; _addressPrefixes_ will show the IPv4/IPv6 subnets. Over time the IPs can change, but the service tag list is always updated before they're put in use.
-
-- For Azure CDN from Verizon (Edgecast) you can find an exhaustive list using [Edge Nodes - List](/rest/api/cdn/edge-nodes/list) (select **Try It** ) - you'll need to look specifically for the  **Premium\_Verizon**  section. Note that this API shows all Edgecast IPs (origin and Anycast). Currently there isn't a mechanism for the API to distinguish between origin and Anycast.
 
 For the **Government** clouds **(GCC, GCC High and DoD)**:
 
@@ -104,22 +101,20 @@ The following script can generate a PAC file that will include the namespaces an
 Here's an example of how to generate the PAC file for the Commercial cloud:
 
 1. Save the script to your local hard disk as _Get-EventsPacFile.ps1_.
-1. Go to the [Verizon URL](/rest/api/cdn/edge-nodes/list#code-try-0) and download the resulting JSON (copy paste it into a file named cdnedgenodes.json)
-1. Put the file into the same folder as the script.
-1. In a PowerShell window, run the following command. If you only desire the Optimize names (and not Optimize and Allow) change the -Type parameter to Optimize.
+1. In a PowerShell window, run the following command. If you only desire the Optimize names (and not Optimize and Allow) change the -Type parameter to OptimizeOnly.
 
    ```powershell
-   .\Get-EventsPacFile.ps1 -Instance Worldwide -CdnEdgeNodesFilePath .\cdnedgenodes.json -Type OptimizeAndAllow -FilePath .\Commercial.pac
+   .\Get-EventsPacFile.ps1 -Instance Worldwide -Type OptimizeAndAllow -FilePath .\Commercial.pac
    ```
 
-1. The Commercial.pac file will contain all the namespaces and IPs (IPv4/IPv6) for Teams Events attendee traffic.
+1. The Commercial.pac file will contain all the namespaces and IPs (IPv4/IPv6) available for Teams Events attendee traffic.
 
 #### Example PAC file generation for the Microsoft 365 U.S. Government Community Cloud (GCC)
 
 Here's an example of how to generate the PAC file for the GCC environment:
 
 1. Save the script to your local hard disk as _Get-EventsPacFile.ps1_.
-1. In a PowerShell window, run the following command. If you only desire the Optimize names (and not Optimize and Allow) change the -Type parameter to Optimize.
+1. In a PowerShell window, run the following command. If you only desire the Optimize names (and not Optimize and Allow) change the -Type parameter to OptimizeOnly.
 
    ```powershell
    .\Get-EventsPacFile.ps1 -Instance UsGov -Type OptimizeAndAllow -FilePath .\USGov.pac
@@ -135,7 +130,7 @@ Here's an example of how to generate the PAC file for the GCC environment:
 
 <#PSScriptInfo
 
-.VERSION 1.0.6
+.VERSION 1.0.7
 
 .AUTHOR Microsoft Corporation
 
@@ -216,11 +211,11 @@ The file to print the content to.
 
 .EXAMPLE
 
-Get-EventsPacFile.ps1 -Instance Worldwide -CdnEdgeNodesFilePath .\cdnedgenodes.json -Type OptimizeAndAllow -FilePath .\Commercial.pac 
+Get-EventsPacFile.ps1 -Instance Worldwide -Type OptimizeOnly -FilePath .\PACFiles\Commercial.pac 
 
 .EXAMPLE
 
-Get-EventsPacFile.ps1 -Instance USGov -FilePath .\USGov.pac -Type OptimizeAndAllow
+Get-EventsPacFile.ps1 -Instance USGov -FilePath .\PACFiles\USGov.pac -Type OptimizeAndAllow
 
 
 #>
@@ -263,11 +258,8 @@ Param (
 
     [Parameter()]
     [ValidateNotNullOrEmpty()]
-    [string] $FilePath,
+    [string] $FilePath
 
-    [Parameter()]
-    [ValidateNotNullOrEmpty()]
-    [string] $CdnEdgeNodesFilePath
 )
 
 ##################################################################################################################
@@ -389,18 +381,6 @@ function Get-TeamsEventsConfiguration {
         }
     }
     $IncludedAddressRanges = & {
-        if (!$Instance.StartsWith('USGov') -and ![string]::IsNullOrEmpty($CdnEdgeNodesFilePath) -and (Test-Path -Path $CdnEdgeNodesFilePath)) {
-            Get-Content -Path $CdnEdgeNodesFilePath -Raw -ErrorAction SilentlyContinue | ConvertFrom-Json | Select-Object -ExpandProperty value |
-                Where-Object { $_.name -eq 'Premium_Verizon' } | Select-Object -First 1 -ExpandProperty properties |
-                Select-Object -ExpandProperty ipAddressGroups |
-                ForEach-Object {
-                    $_.ipv4Addresses
-                    $_.ipv6Addresses
-                } |
-                Where-Object { $_.BaseIpAddress } |
-                ForEach-Object { $_.BaseIpAddress + '/' + $_.prefixLength }
-        }
-
         $ServiceTagsDownloadId = '56519'
         if ($Instance.StartsWith('USGov')) {
             $ServiceTagsDownloadId = '57063'
@@ -531,37 +511,31 @@ else {
 
 The script will automatically parse the appropriate Azure CDN list based on the **Instance** parameter value and keys off of **AzureFrontDoor.Frontend**, so there's no need to get that manually.
 
-Again, we don't recommend performing VPN offload using just the FQDNs; utilizing **both** the FQDNs and the IP addresses in the function helps scope the use of this offload to a limited set of endpoints including Teams Events. The way the function is structured will result in a DNS lookup being done for the FQDN that matches those listed by the client directly, i.e. DNS resolution of the remaining namespaces remains unchanged.
+Performing VPN offloading utilizing **both** the FQDNs and the IP addresses (where provided) in the function helps scope the use of this offload to a limited set of endpoints including Teams Events. The way the function is structured will result in a DNS lookup being done for the FQDN that matches those listed by the client directly, that is, DNS resolution of the remaining namespaces remains unchanged. In the case of the Commercial cloud, not all IP addresses are provided; VPN offloading would need to rely on matching the namespaces defined earlier in this article.
 
 
 ## 3. Configure routing on the VPN to enable direct egress
 
-The final step is to add a direct route for the Teams event IPs described in **Gathering the current lists of CDN Endpoints** into the VPN configuration to ensure the traffic isn't sent via the forced tunnel into the VPN. Detailed information on how to do this for Microsoft 365 Optimize endpoints can be found in the [Implement VPN split tunneling](microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling) section of [Implementing VPN split tunneling for Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md). The process is exactly the same for the Teams events IPs listed in this document.
+The final step is to add a direct route for the Teams event IPs (or namespaces) described in **Gathering the current lists of CDN Endpoints** into the VPN configuration to ensure the traffic isn't sent via the forced tunnel into the VPN. Detailed information on how to do this for Microsoft 365 Optimize endpoints can be found in the [Implement VPN split tunneling](microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling) section of [Implementing VPN split tunneling for Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md). The process is exactly the same for the Teams events IPs listed in this document.
 
-> [!NOTE]
-> Only the IPs (not FQDNs) from [Gathering the current lists of CDN Endpoints](#gathering-the-current-lists-of-cdn-endpoints) should be used for VPN configuration.
 
 ## FAQ
 
 ### Will this send all my traffic to the service direct?
 
-No, this will send the latency-sensitive streaming traffic for a Teams Event attendee direct, any other traffic will continue to use the VPN tunnel if they don't resolve to the IPs published.
+No, this will send the latency-sensitive, potentially high-volume streaming traffic for a Teams Event attendee direct, any other traffic will continue to use the VPN tunnel if they don't resolve to the IPs published or match the defined namespace.
 
 ### Do I need to use the IPv6 Addresses?
 
-No, the connectivity can be IPv4 only if required.
+No, the connectivity can be IPv4 only if necessary.
 
 ### Why are these IPs not published in the Microsoft 365 URL/IP service?
 
 Microsoft has strict controls around the format and type of information that is in the service to ensure customers can reliably use the information to implement secure and optimal routing based on endpoint category.
 
-The **Default** endpoint category has no IP information provided for numerous reasons (Default endpoints might be outside of the control of Microsoft, might change too frequently, or might be in blocks shared with other elements). For this reason, Default endpoints are designed to be sent via FQDN to an inspecting proxy, like normal web traffic.
+The **Default** endpoint category has no IP information provided for numerous reasons (Default endpoints might be outside of the control of Microsoft, might change too frequently, or might be in blocks shared with other elements). Default endpoints are designed to be sent via FQDN to an inspecting proxy, like normal web traffic.
 
-In this case, the above endpoints are CDNs that might be used by non-Microsoft controlled elements other than Teams Events, and thus sending the traffic direct will also mean anything else which resolves to these IPs will also be sent direct from the client. Due to the unique nature of the current global crisis and to meet the short-term needs of our customers, Microsoft has provided the information above for customers to use as they see fit.
-
-Microsoft is working to reconfigure the Teams events endpoints to allow them to be included in the Allow/Optimize endpoint categories in the future.
-
-### Do I only need to allow access to these IPs?
+### Do I only need to allow access to these IPs/namespaces?
 
 No, access to all of the **Required** marked endpoints for the appropriate environment is essential for the service to operate.
 - Worldwide including GCC: [Endpoints for Worldwide](urls-and-ip-address-ranges.md)
@@ -571,12 +545,12 @@ No, access to all of the **Required** marked endpoints for the appropriate envir
 ### What scenarios will this advice cover?
 
 1. Live events produced within the Teams App
-2. External device (encoder) produced events
+2. Teams encoder produced live events
 3. Teams Town hall
 
 ### Does this advice cover presenter traffic?
 
-It doesn't; the advice above is purely for those attending the event. Presenting from within Teams will see the presenter's traffic flowing to the Optimize marked UDP endpoints listed in URL/IP service row 11 with detailed VPN offload advice outlined in the [Implement VPN split tunneling](microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling) section of [Implementing VPN split tunneling for Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md).
+It doesn't; the preceding advice is purely for those attending the event. Presenting from within Teams will see the presenter's traffic flowing to the Optimize marked UDP endpoints listed in URL/IP service row 11 with detailed VPN offload advice outlined in the [Implement VPN split tunneling](microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling) section of [Implementing VPN split tunneling for Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md).
 
 
 ## Related articles

@@ -32,7 +32,7 @@ Adoption Score supports the journey to digital transformation with insights abou
 
 ## Watch: Adoption Score overview
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE53oqt?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=0c5dfe1d-cba4-4bee-91d1-f58730d0c68a]
 
 It provides:
 

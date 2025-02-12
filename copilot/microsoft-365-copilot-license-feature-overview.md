@@ -1,12 +1,12 @@
 ---
-title: Compare Microsoft Copilot features in E3 and E5 licenses
+title: Compare Microsoft 365 Copilot features in E3 and E5 licenses
 description: Lists and compares the features available in Microsoft 365 E3 and E5 licenses that can help you get your data ready for Microsoft 365 Copilot.
 f1.keywords:
 - NOCSH
 ms.author: mandia
 author: MandiOhlinger
 manager: laurawi
-ms.date: 12/05/2024
+ms.date: 01/28/2025
 audience: Admin
 ms.reviewer: emilyblundo, sophieke
 ms.topic: get-started
@@ -25,8 +25,6 @@ appliesto:
 # Microsoft 365 license feature comparison list to address oversharing for Microsoft 365 Copilot
 
 [Microsoft 365 Copilot](microsoft-365-copilot-overview.md) is an AI-powered productivity assistant that can help users with different tasks, like finding information and creating content. You can use Copilot in your Microsoft 365 apps, like Word, Outlook, and Teams.
-
-Since Copilot accesses the data your users have access to, it's important to make sure your data is ready for Copilot. This task involves ensuring that your data is shared only with the people who need access. While also making sure that the data is labeled for sensitivity where necessary.
 
 There are different features in the Microsoft 365 E3 and E5 licenses that can help you get your data ready for Copilot. These features can:
 
@@ -54,10 +52,10 @@ The following table lists some of the features that can help get your data ready
 | Restricted SharePoint Search (RSS) | ✅  | ✅  |
 | &nbsp; | &nbsp; | &nbsp; |
 | **Microsoft Purview features** | &nbsp; | &nbsp; |
-| Sensitivity labels |  ✅ <br/><br/> You can: <br/><br/>- Create custom labels. <br/> - Manually apply labels. | ✅ <br/><br/> You can: <br/><br/> - Create custom labels. <br/> - Create default labels and their policies. <br/> - Manually apply labels. <br/> - Automatically apply labels. <br/> - Can apply labels to containers, like a SharePoint or Teams site |
+| Sensitivity labels |  ✅ <br/><br/> You can: <br/><br/>- Create custom labels. <br/> - Manually apply labels. | ✅ <br/><br/> You can: <br/><br/> - Create custom labels. <br/> - Create default labels and their policies. <br/> - Manually apply labels. <br/> - Automatically apply labels. <br/> - Apply labels to containers, like a SharePoint or Teams site |
 | Data loss prevention (DLP)| ✅ <br/><br/>Policies can target: <br/><br/>- SharePoint <br/> - Exchange <br/> - OneDrive | ✅ <br/><br/> Policies can target: <br/><br/>- SharePoint <br/> - Exchange <br/> - OneDrive <br/> - Teams <br/> - Endpoints <br/><br/> Also use [DLP for Microsoft 365 Copilot](/purview/dlp-microsoft365-copilot-location-learn-about). |
 | Adaptive Protection | n/a | ✅ |
-| Data lifecycle management  | ✅ <br/><br/> You can: <br/><br/> - Create retention policies<br/> - Manually apply retention labels<br/> - Use Content explorer | ✅ <br/><br/> You can: <br/><br/> - Create retention policies<br/> - Manually apply retention labels<br/> - Automatically apply retention labels <br/> - Use Content explorer <br/> - Use Activity explorer <br/> - Can use Data Lifecycle Management or Records Management |
+| Data lifecycle management  | ✅ <br/><br/> You can: <br/><br/> - Create retention policies<br/> - Manually apply retention labels<br/> - Use Content explorer | ✅ <br/><br/> You can: <br/><br/> - Create retention policies<br/> - Manually apply retention labels<br/> - Automatically apply retention labels <br/> - Use Content explorer <br/> - Use Activity explorer <br/> - Use Data Lifecycle Management or Records Management |
 | Communication Compliance | n/a | ✅ |
 | eDiscovery | ✅ <br/><br/>Can search. | ✅ <br/><br/> Can search and delete. |
 | Data Security Posture Management for AI (previously called AI Hub) |  ✅ <br/><br/> You can: <br/><br/>- View app info <br/>- Export activity <br/>- Turn on auditing | ✅ <br/><br/> You can: <br/><br/>- View app info <br/>- Export activity <br/>- Turn on auditing <br/>- View prompt & response |
@@ -87,11 +85,11 @@ To learn more about licensing, see:
 
 Microsoft continues to invest in features that help you get ready for Copilot. This section describes some more services and features that are available to you.
 
-### Data Security Posture Management for AI in Microsoft Purview
+### Data Security Posture Management (DSPM) in Microsoft Purview
 
 [Data Security Posture Management for AI](/purview/ai-microsoft-purview) is a central location that helps you secure data for AI apps and proactively monitor AI use. It has preconfigured policies that focus on AI and reports that give information into AI use within your organization.
 
-To access Data Security Posture Management for AI (previously called AI Hub), use the following steps:
+To access DSPM for AI (previously called AI Hub), use the following steps:
 
 1. Sign into the [Microsoft Purview portal](https://purview.microsoft.com/) as an admin in one of the groups listed at [Microsoft Purview Data Security Posture Management for AI - permissions](/purview/ai-microsoft-purview-permissions).
 1. Select **Solutions** > **Data Security Posture Management for AI** > **Recommendations**.

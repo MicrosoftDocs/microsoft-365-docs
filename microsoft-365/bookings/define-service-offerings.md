@@ -24,7 +24,7 @@ You can also add customized information and URLs to the email confirmation and r
 
 ## Watch: Create a new service
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuKXH]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=2377d886-60b1-4d37-a857-541de7737f40]
 
 ## Steps
 

@@ -28,8 +28,7 @@ Microsoft 365 Lighthouse provides the connection status between your customer te
 
 ## Before you begin
 
-- You must be a Global Administrator in the partner tenant.
-- You must have Cloud PC Administrator or Cloud PC Reader access to view connection issues.
+You must hold either the Cloud PC Administrator or Cloud PC Reader role in Microsoft Intune to view connection issues.
 
 ## View a failed network connection
 

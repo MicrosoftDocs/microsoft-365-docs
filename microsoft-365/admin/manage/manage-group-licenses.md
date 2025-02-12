@@ -20,7 +20,7 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: "Learn how to assign or unassign licenses to groups in the Microsoft 365 admin center."
-ms.date: 09/09/2024
+ms.date: 01/06/2025
 ---
 
 # Assign or unassign licenses to a group in the Microsoft 365 admin center

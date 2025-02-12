@@ -4,8 +4,8 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: sharonchoi
-ms.date: 12/13/2024
+ms.reviewer: ebamoh
+ms.date: 02/09/2025
 audience: Admin
 ms.topic: whats-new
 ms.service: microsoft-365-lighthouse
@@ -31,6 +31,20 @@ We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighth
 > Features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, you should see it soon.
 >
 > To see which new features are currently available in your partner tenant, go to the **Home** page of Microsoft 365 Lighthouse, and then either select the **What's new** link in the upper-right corner of the page or select **What's new** on the **What's new & learning resources** card.
+
+## January 2025
+
+### Create an "Executive Summary" customer report
+
+You can now generate a report for each customer tenant in Microsoft 365 Lighthouse that highlights key areas around security posture and business status. The report also summarizes key activities your partner organization performed in Lighthouse to keep customers safe, secure, and productive.
+
+We heard from you about the need to share a report with your customers during monthly or quarterly business reviews and this Executive Summary is the first step towards building the end-to-end views needed to ensure reviews with customers are as productive as possible.
+
+To generate a customer report, in the left navigation pane in Lighthouse, select **Tenants**, and then select any tenant in the list to open the tenant details page. From there, select the **Overview** tab, select **Summary** in the left pane, and then select **Create report**.
+
+[Go to the Tenants page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/Tenants.ReactView) (once there, select a tenant)
+
+To learn more, see [Create a customer report in Microsoft 365 Lighthouse](m365-lighthouse-create-customer-report.md).
 
 ## December 2024
 

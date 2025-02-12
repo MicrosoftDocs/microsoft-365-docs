@@ -21,10 +21,11 @@ metadata:
   - AdminSurgePortfolio
   - admindeeplinkMAC
   - aka.ms/self-service-purchase-faq
+  - campaignIDs-batch1
   search.appverid:
   - MET150
   description: "Find answers to commonly asked questions about self-service purchases."
-  ms.date: 12/04/2023
+  ms.date: 01/06/2025
 title: Self-service purchase FAQ
 summary: |
   Self-service purchase gives users a chance to try out new technologies and develop solutions that ultimately benefit their larger organizations. Central procurement and IT teams have visibility to all users who buy and deploy self-service purchase solutions through the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. Admins can turn off self-service purchasing on a per product basis via PowerShell. To learn more, see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).

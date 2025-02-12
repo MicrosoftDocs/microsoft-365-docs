@@ -959,6 +959,11 @@
          "source_path": "microsoft-365/commerce/licenses/product-keys-faq.yml",
          "redirect_url": "/microsoft-365/commerce/licenses/product-keys-for-vl",
          "redirect_document_id": false
+      },
+      {
+         "source_path": "microsoft-365/commerce/licenses/manage-license-requests-faq.yml",
+         "redirect_url": "/microsoft-365/commerce/licenses/manage-license-reservations-vl",
+         "redirect_document_id": false
       }
   ]
 }

@@ -105,7 +105,7 @@ conceptualContent:
               text: Building your own plug-ins and connectors
             - url: /microsoft-365-copilot/extensibility/build-or-extend#build-your-own-copilot
               itemType: overview 
-              text: Build a custom Copilot
+              text: Build a custom agent
             - url: /microsoft-copilot-studio/
               itemType: overview 
               text: Get started with Copilot Studio

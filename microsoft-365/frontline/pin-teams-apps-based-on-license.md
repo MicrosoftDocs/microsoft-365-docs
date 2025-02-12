@@ -29,7 +29,7 @@ Teams pins apps based on license to give your frontline workers an out-of-the-bo
 
 With the tailored frontline app experience, your frontline workers get the most relevant apps in Teams without any action needed from the admin.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4VuCH]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e1fed07e-4757-442b-9213-9f2631f7554d]
 
 ## Tailored frontline app experience
 

@@ -20,14 +20,15 @@ ms.custom:
 - commerce_subscriptions
 - AdminSurgePortfolio
 - AdminTemplateSet
+- campaignIDs-batch1
 search.appverid: MET150
 description: "Learn what happens to your data when your Microsoft 365 for business subscription expires, is disabled, or if you cancel."
-ms.date: 03/29/2024
+ms.date: 02/06/2025
 ---
 
 # What happens to my data and access when my Microsoft 365 for business subscription ends?
 
-When your subscription ends, your access to Microsoft 365 products and services, apps, and customer data go through multiple statuses before the subscription is fully turned off, or deleted. Being aware of this status progression can help you return your subscription to an active status before it's too late. If you're leaving Microsoft 365, we recommend that you [back up your data](move-users-different-subscription.md#back-up-data-before-changing-microsoft-365-for-business-plans) before it gets deleted.
+When your subscription ends, your access to Microsoft 365 products and services, apps, and customer data goes through multiple statuses before the subscription is fully turned off, or deleted. Being aware of this status progression can help you return your subscription to an active status before it's too late. If you're leaving Microsoft 365, we recommend that you [back up your data](move-users-different-subscription.md#back-up-data-before-changing-microsoft-365-for-business-plans) before it gets deleted.
 
 This article applies to all Microsoft 365 for business subscriptions, including Enterprise and Volume Licensing.
 
@@ -96,7 +97,7 @@ If you bought your subscription through an Enterprise volume licensing agreement
 | Open / Open Value | Subscription start date based on activation of token (not necessarily purchase date) | 30 days | 90 days | Terminal state |
 
 > [!NOTE]
-> Not all VL subscriptions have a 90 day grace period. Some products and services, like PowerBI Premium P plans and some Microsoft 365 Copilot subscriptions bought through VL only have a 30 day grace period.
+> Not all VL subscriptions have a 90 day grace period. Some products and services, like some Microsoft 365 Copilot subscriptions, bought through VL only have a 30 day grace period.
 
 ### Lifecycle status durations for Cloud Service Provider (CSP) customers
 
@@ -104,7 +105,7 @@ If you bought your subscription through a CSP, see [Subscription lifecycle state
 
 ## Understand your options if your subscription is about to expire
 
-While a subscription is active, you and your users have normal access to your data, services like email, OneDrive, and apps in Microsoft 365. As the admin, you receive a series of notifications via email and in the admin center as your subscription nears its expiration date.
+While a subscription is active, you and your users have normal access to your data, services like email, OneDrive, and apps in Microsoft 365. As an admin, you receive a series of notifications via email and in the admin center as your subscription nears its expiration date.
 
 If you’re a Volume Licensing customer, see [Options if your volume licensing subscription is about to expire](#options-if-your-volume-licensing-subscription-is-about-to-expire).
 
@@ -112,7 +113,7 @@ Before the subscription reaches its expiration date, you have two options:
 
 1. **Enable recurring billing for the subscription.**
     - If **Recurring billing** is already turned on, you don't have to take any action. Your subscription is automatically billed, and you're charged for another year or month, depending on your current billing frequency.
-    - If you turned off **Recurring billing**, you can [turn it back on](renew-your-subscription.md) on to keep your subscription active
+    - If you turned off **Recurring billing**, you can [turn it back on](renew-your-subscription.md) to keep your subscription active. 
     - If you bought Microsoft 365 Apps for business with a prepaid card, you can [turn on **Recurring billing**](renew-your-subscription.md) for your subscription and provide a payment method to continue the subscription.
     - If you have Microsoft 365 Apps for business, see [Manage recurring billing for your subscription](renew-your-subscription.md).
 2. **Let the subscription expire.**

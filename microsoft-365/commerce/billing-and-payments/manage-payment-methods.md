@@ -26,6 +26,7 @@ ms.custom:
 - business_assist
 - admindeeplinkMAC
 - GAUpdates
+- campaignIDs-batch1
 search.appverid: MET150
 description: "Learn how to manage your payment methods for Microsoft business products or services in the Microsoft 365 admin center."
 ms.date: 02/16/2024
@@ -79,7 +80,7 @@ If you have an MOSA billing account type, you can replace the payment method for
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/p/?linkid=2198207).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AVxy]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=ad949d04-8b23-425c-93f1-264ebed05738]
 
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 

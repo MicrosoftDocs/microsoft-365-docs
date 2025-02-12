@@ -45,7 +45,7 @@ This article describes how to set up and configure the Teams EHR connector to in
 > [!NOTE]
 > Cerner has been renamed to Oracle Health. The following video refers to Oracle Health as Cerner.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5d6gj]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=150a83b3-76f0-4c83-b83d-1c6176b17fcd]
 
 ## Before you begin
 

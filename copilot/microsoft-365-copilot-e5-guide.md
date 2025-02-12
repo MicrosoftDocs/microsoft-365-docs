@@ -1,12 +1,12 @@
 ---
 title: Get your data ready for Microsoft 365 Copilot with E5 + SAM licenses
-description: The E5 deployment for Microsoft 365 Copilot uses a E5 license, SharePoint Advanced Management, and Microsoft Purview. These services help your organization get ready for Copilot. This IT admin guide helps you prevent oversharing, declutter data sources, and monitor site changes. Get your organization and data ready for Copilot by following the steps in this article.
+description: Get started with M365 Copilot. The E5 deployment for Microsoft 365 Copilot uses a E5 license, SharePoint Advanced Management, and Microsoft Purview. These services help your organization get ready for Copilot. This IT admin guide helps you prevent oversharing, declutter data sources, and monitor site changes. Get your organization and data ready for Copilot by following the steps in this article.
 f1.keywords:
 - NOCSH
 ms.author: mandia
 author: MandiOhlinger
 manager: laurawi
-ms.date: 12/11/2024
+ms.date: 01/15/2025
 ms.reviewer: cabailey, ruihu
 audience: Admin
 ms.topic: get-started
@@ -35,7 +35,7 @@ This article provides guidance for IT admins with **Microsoft 365 E5** and **Sha
 
 To learn more, watch [Oversharing Control at Enterprise Scale](https://www.youtube.com/watch?v=F1ARVMTBAak) (opens YouTube's website).
 
-When you use the features described in this article, your organization is better prepared for Copilot, including getting more accurate results from Copilot.
+Use this article to get started with Microsoft 365 Copilot in your organization. When you use the features described in this article, your organization is better prepared for Copilot, including getting more accurate results from Copilot.
 
 This article applies to:
 
@@ -152,14 +152,14 @@ To learn more about how Microsoft Purview can help you to govern, protect, and m
 
 [!INCLUDE [copilot-e5-e3-create-apply-sensitivity-labels](./includes/copilot-e5-e3-create-apply-sensitivity-labels.md)]
 
-This section walks you through the steps to create and use the default sensitivity labels from Microsoft Purview. If you need to use your own label names and configurations, create the labels manually or edit the default labels. If you already created your own sensitivity labels, you can't create the default labels.
+This section guides you through the steps to create and use the default sensitivity labels from Microsoft Purview. If you need to use your own label names and configurations, create the labels manually or edit the default labels. If you already created your own sensitivity labels, you can't create the default labels.
 
 To learn more about sensitivity labels, see:
 
 - [Get started with sensitivity labels](/purview/get-started-with-sensitivity-labels)
-- [Default labels and policies to protect your data](/purview/mip-easy-trials)
-- [Common scenarios for sensitivity labels](/purview/get-started-with-sensitivity-labels#common-scenarios-for-sensitivity-labels)
-- [Microsoft Purview strengthens information protection for Copilot](/purview/ai-microsoft-purview#microsoft-purview-strengthens-information-protection-for-copilot)
+- [Activate the default labels and policies to protect your data](/purview/mip-easy-trials)
+- [Learn some common scenarios for sensitivity labels](/purview/get-started-with-sensitivity-labels#common-scenarios-for-sensitivity-labels)
+- [Use Microsoft Purview to strengthen information protection for Copilot](/purview/ai-microsoft-purview#microsoft-purview-strengthens-information-protection-for-copilot)
 
 #### 1. Create the default sensitivity labels
 
@@ -179,13 +179,15 @@ When you have the default sensitivity labels:
 
 The default sensitivity labels don't include settings for groups and sites, which let you apply a sensitivity label to a SharePoint or Teams site, or Microsoft Loop workspace. Items in the container don't inherit the sensitivity label. Instead, the label settings can restrict access to the container. This restriction provides an extra layer of security when you use Copilot. If a user can't access the site or workspace, Copilot can't access it on behalf of that user.
 
-For example, you can set the privacy setting to **Private**, which restricts site access to only approved members in your organization. When the label is applied to the site, it replaces any previous setting and locks it for as long as the label is applied. This feature is a more secure setting than letting anybody access the site and allowing users to change the setting. When only approved members can access the data, it helps prevent oversharing of data that Copilot might access.
+For example, you can set the privacy setting to **Private**, which restricts site access to only approved members in your organization. When the label is applied to the site, it replaces any previous setting and locks the site for as long as the label is applied. This feature is a more secure setting than letting anybody access the site and allowing users to change the setting. When only approved members can access the data, it helps prevent oversharing of data that Copilot might access.
 
 To configure any label settings for groups and sites, you must enable this capability for your tenant and then synchronize your labels. This configuration is a one-time configuration. To learn more, see [How to enable sensitivity labels for containers and synchronize labels](/purview/sensitivity-labels-teams-groups-sites#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels).
 
 You can then edit your sensitivity labels, or create new sensitivity labels specifically for groups and sites:
 
 1. For the sensitivity label scope, select **Groups & sites**. Remember, you must have already run the PowerShell commands. If you didn't, you can't select this scope.
+
+    To learn more, see [How to enable sensitivity labels for containers and synchronize labels](/purview/sensitivity-labels-teams-groups-sites#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels).
 
 2. Select the groupings of settings to configure. Some of the settings have backend dependencies before they can be enforced, like Conditional Access that must be already configured. The privacy setting, which is included in **Privacy and external user access settings**, doesn't have any backend dependencies.
 
@@ -214,7 +216,7 @@ For more information, including details of all the available label settings that
 [!INCLUDE [copilot-e5-e3-enable-sensitivity-labels-sharepoint-onedrive](./includes/copilot-e5-e3-enable-sensitivity-labels-sharepoint-onedrive.md)]
 
 > [!TIP]
-> Although not related to Copilot, now is a good time to [enable co-authoring for encrypted files](/purview/sensitivity-labels-coauthoring), if it's not already enabled. This setting ensures the best user experience for collaboration and might be required for other labeling scenarios.
+> Although not related to Copilot, now is a good time to [enable coauthoring for encrypted files](/purview/sensitivity-labels-coauthoring). This setting ensures the best user experience for collaboration and might be required for other labeling scenarios.
 
 #### 5. Set default sensitivity labels for your SharePoint document libraries
 
@@ -224,8 +226,8 @@ You have two automatic labeling options for files in the same document library:
 
 | Library option | When to use this option |
 | -------------- | ----------------------- |
-| **Option 1** - Default sensitivity label that can apply admin-defined permissions (the **Assign permissions now** encryption option), or no encryption. | Recommended for new document libraries and when they store files that usually have the same level of known sensitivity. For exceptions, you want users to be able to select an alternative label that doesn't apply encryption. <br/><br/> All new files that don't have a sensitivity label and uploaded to the library will be labeled with this library default label.|
-| **Option 2** - Protects files that are downloaded and extends SharePoint permissions to the downloaded file copy. To configure this setting for the library, the sensitivity label must be configured with user-defined permissions (the **Let users assign permissions** encryption option). <br/><br/> Currently in preview, this configuration requires PowerShell commands at the tenant-level and then the site level before you can select a sensitivity label. | Recommended for new and existing document libraries when you want to centralize permissions and continue to protect files when they're downloaded. This option is suitable when you haven't inspected the file contents for sensitivity. <br/><br/> This option is also suitable when you can't configure the user and group permissions for the label that defines who gets access to the content. In this scenario, the business owners should control access by using SharePoint permissions and access management capabilities. However, this label configuration provides more protection because the downloaded copy of the file is permissioned the same as its source copy in real time. |
+| **Option 1** - Default sensitivity label that can apply admin-defined permissions (the **Assign permissions now** encryption option), or no encryption. | Recommended for new document libraries and when the libraries store files that usually have the same level of known sensitivity. For exceptions, you want users to be able to select an alternative label that doesn't apply encryption. <br/><br/> All new files that don't have a sensitivity label and uploaded to the library are labeled with this library default label.|
+| **Option 2** - Protects files that are downloaded and extends SharePoint permissions to the downloaded file copy. To configure this setting for the library, the sensitivity label must be configured with user-defined permissions (the **Let users assign permissions** encryption option). <br/><br/> Currently in preview, this configuration requires PowerShell commands at the tenant-level and then the site level before you can select a sensitivity label. | Recommended for new and existing document libraries when you want to centralize permissions and continue to protect files when they're downloaded. <br/><br/>This option is suitable when: <br/><br/> - You haven't inspected the file contents for sensitivity. <br/>- You can't configure the user and group permissions for the label that defines who gets access to the content. In this scenario, the business owners should control access by using SharePoint permissions and access management capabilities. However, this label configuration provides more protection because the downloaded copy of the file is permissioned the same as its source copy in real time. |
 
 Both options provide a baseline level of protection that's specific to the document library, doesn't require content inspection, and doesn't rely on action from end users.
 
@@ -239,7 +241,7 @@ The SharePoint site admin can select a default label for the document library.
     b. For a default sensitivity label that extends protection to files that are downloaded, copied, or moved, select **Extend protection on download, copy, or move**. Then from the drop-down box, select a sensitivity label that is configured for user-defined permissions, such as **Confidential \ Trusted People**.
 
     > [!NOTE]
-    > The **Extend protection on download, copy, or move** checkbox isn't displayed until the prerequisite PowerShell commands are complete.
+    > The **Extend protection on download, copy, or move** checkbox isn't displayed until the prerequisite PowerShell commands are complete. To learn more, see [Configure SharePoint with a sensitivity label to extend permissions to downloaded documents](/purview/sensitivity-labels-sharepoint-extend-permissions).
 
 3. **Save** your changes.
 
@@ -261,7 +263,7 @@ You can automatically apply labels to files in SharePoint sites, OneDrive accoun
 
 If you created the default sensitivity labels and policies, they include both [client-side autolabeling](/purview/mip-easy-trials#client-side-auto-labeling) and [service-side autolabeling](/purview/mip-easy-trials#service-side-auto-labeling) to detect credit card numbers and personal data. These default settings make it easy for you to test the autolabeling functionality.
 
-You can edit or create your own autolabeling settings to help identify your organization data that needs a specific sensitivity label to apply protection actions, like encryption.
+You can edit or create your own autolabeling settings. This feature helps identify your organization data that needs a specific sensitivity label to apply protection actions, like encryption.
 
 ### Detect sensitive information and protect it from unauthorized sharing or leakage
 
@@ -278,7 +280,7 @@ You can create DLP policies to protect sensitive information in the following lo
 - On-premises file shares and on-premises SharePoint
 - Fabric and Power BI
 
-When DLP policies find this data, it can act and help prevent the data from showing up in Microsoft 365 Copilot results. It can also help prevent items that have specific sensitivity labels applied from being summarized by Copilot.
+When DLP policies find this data, it can act and help prevent the data from showing up in Microsoft 365 Copilot results. It can also help prevent Copilot from summarizing items that have specific sensitivity labels applied.
 
 To learn more, see:
 
@@ -342,7 +344,7 @@ For more information on the prerequisites and steps to create an endpoint DLP po
 - [Onboard macOS devices into Microsoft 365 overview](/purview/device-onboarding-macos-overview). 
 
 > [!NOTE]
-> If you use a mobile device managment (MDM) service to manage and help protect you devices, like [Microsoft Intune](/mem/intune/fundamentals/what-is-intune), then keep using your MDM provider. The endpoint DLP policies focus on data loss prevention with your Microsoft 365 data. MDM focuses on device management. You use them simulatenously.
+> If you use a mobile device management (MDM) service to manage and help protect you devices, like [Microsoft Intune](/mem/intune/fundamentals/what-is-intune), then keep using your MDM provider. The endpoint DLP policies focus on data loss prevention with your Microsoft 365 data. MDM focuses on device management. You use them simultaneously.
 
 #### 5. Create Adaptive Protection
 
@@ -377,7 +379,10 @@ To learn more, see [Adaptive Protection policies](/purview/insider-risk-manageme
     - [Viewing policy application results](/purview/insider-risk-management-activities)
     - [Get started with the data loss prevention analytics](/purview/dlp-analytics-get-started)
 
-- When you enable Adaptive Protection and your policies are configured, you can get policy metrics, users with an assigned risk level, and the policies currently in-scope for the user.
+- When you enable Adaptive Protection and your policies are configured, you can get:
+  - Policy metrics
+  - Users with an assigned risk level
+  - Policies currently in-scope for the user
 
   To learn more, see:
 
@@ -396,7 +401,9 @@ If you have stale data in your organization, create and use retention policies. 
 
 Retention policies can also retain Copilot prompts and responses for compliance requirements, even if [users delete their Copilot activity](https://support.microsoft.com/office/delete-your-microsoft-365-copilot-activity-history-76de8afa-5eaf-43b0-bda8-0076d6e0390f). To learn more, see [Learn about retention for Copilot & AI apps](/purview/retention-policies-copilot).
 
-Settings in a retention policy apply at the container level, like a SharePoint site or an Exchange mailbox. Data in that container automatically inherits these settings. If you need [exceptions for individual emails or documents](/purview/create-retention-labels-data-lifecycle-management), use retention labels. For example, you have a retention policy to delete data in OneDrive if the data is older than one year. But, users can apply retention labels to keep specific documents from automatic deletion.
+Settings in a retention policy apply at the container level, like a SharePoint site or an Exchange mailbox. Data in that container automatically inherits these settings.
+
+If you need [exceptions for individual emails or documents](/purview/create-retention-labels-data-lifecycle-management), use retention labels. For example, you have a retention policy to delete data in OneDrive if the data is older than one year. But, users can apply retention labels to specific documents to keep these documents from automatic deletion.
 
 1. To create retention policies, sign into the [Microsoft Purview portal](https://purview.microsoft.com/) as a Compliance Administrator.
 
@@ -408,7 +415,7 @@ Settings in a retention policy apply at the container level, like a SharePoint s
 
 4. If needed, create and apply retention labels.
 
-   You can use either **Data Lifecycle Management** or **Records Management** to create the labels. Records management includes more configuration options, like a [disposition review process](/purview/disposition). A disposition review is helpful if you need manual confirmation before items are automatically deleted.
+   You can use either **Data Lifecycle Management** or **Microsoft Purview Records Management** to create the labels. Records management includes more configuration options, like a [disposition review process](/purview/disposition). A disposition review is helpful if you need manual confirmation before items are automatically deleted.
   
     # [Data Lifecycle Management](#tab/dlm)
 

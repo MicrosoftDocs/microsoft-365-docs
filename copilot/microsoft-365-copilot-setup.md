@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 11/19/2024
+ms.date: 1/14/2025
 audience: Admin
 ms.topic: get-started
 ms.service: microsoft-365-copilot
@@ -222,12 +222,11 @@ To learn more, see:
 - [Microsoft 365 reports in the admin center – Microsoft 365 Copilot usage](/microsoft-365/admin//activity-reports/microsoft-365-copilot-usage)
 - [Microsoft 365 reports in the admin center – Microsoft 365 Copilot readiness](/microsoft-365/admin//activity-reports/microsoft-365-copilot-readiness)
 
-## Copilot with enterprise data protection
+## Microsoft 365 Copilot Chat
 
-To enhance data security, enable enterprise data protection (EDP) in Copilot for all users in your organization. Follow these steps:
+To enhance data security, enable Microsoft 365 Copilot Chat for all users in your organization. To do this:
 
-- **Log in to Copilot** Access Copilot on [copilot.microsoft.com](https://copilot.microsoft.com/) and ensure that enterprise data protection is enabled.
-- **Review documentation** Review the [Enterprise Data Protection in Microsoft 365 Copilot documentation](enterprise-data-protection.md) to ensure that EDP is available and properly configured for your users.
+- **Log in to Copilot** Access Copilot on [copilot.microsoft.com](https://copilot.microsoft.com/) and ensure that Microsoft 365 Copilot Chat is enabled.
 
 ## More resources
 

@@ -6,7 +6,7 @@ ms.reviewer: cabailey
 ms.service: microsoft-365-copilot
 ms.topic: include
 description: Create and apply Microsoft Purview sensitivity labels for Microsoft 365 Copilot.
-ms.date: 11/19/2024
+ms.date: 01/13/2025
 ---
 
 ✅ **Create and apply [sensitivity labels](/purview/get-started-with-sensitivity-labels) to protect your data**
@@ -19,6 +19,6 @@ The sensitivity labels can also affect Copilot results, including:
 
 - The label settings include protection actions, like access to sites, customizable headers and footers, and encryption.
 - If the label applies encryption, Copilot checks the usage rights for the user. For Copilot to return data from that item, the user must be granted permissions to copy from it.
-- A prompt session with Copilot (called Business Chat) can reference data from different types of items. Sensitivity labels are shown in the returned results. The latest response displays the sensitivity label with the [highest priority](/purview/sensitivity-labels#label-priority-order-matters).
+- A prompt session with Copilot (called Microsoft 365 Copilot Chat) can reference data from different types of items. Sensitivity labels are shown in the returned results. The latest response displays the sensitivity label with the [highest priority](/purview/sensitivity-labels#label-priority-order-matters).
 
 - If Copilot creates new content from labeled items, the sensitivity label from the source item is automatically inherited.

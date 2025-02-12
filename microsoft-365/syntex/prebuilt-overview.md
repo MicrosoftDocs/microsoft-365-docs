@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 10/15/2024
+ms.date: 01/22/2025
 audience: admin
 ms.topic: conceptual
 ms.custom: intro-overview
@@ -58,4 +58,4 @@ Additional prebuilt models will be available in future releases.
 
 ## Requirements and limitations
 
-For information about requirements to consider when choosing this model, see [Requirements and limitations for models in Microsoft Syntex](requirements-and-limitations.md#prebuilt-models).
+For information about requirements to consider when choosing this model, see the [requirements and limitations for prebuilt document processing](prebuilt-requirements.md).

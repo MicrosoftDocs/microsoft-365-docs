@@ -5,13 +5,13 @@ ms.author: samanro
 author: samanro
 manager: bcarter
 ms.audience: ITPro
-ms.topic: article
+ms.topic: solution-overview
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
 - highpri 
 - M365-subscription-management
-- M365solutions
+- M365solution-overview
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
 ms.date: 12/05/2022

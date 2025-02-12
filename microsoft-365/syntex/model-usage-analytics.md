@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 02/21/2024
+ms.date: 01/10/2025
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -22,7 +22,7 @@ description: Learn how to find more information about how your AI models are per
 
 </br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GnhX]  
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=3ce39756-8da7-4cdd-a2e3-a7a4104648da]  
 
 </br>
 

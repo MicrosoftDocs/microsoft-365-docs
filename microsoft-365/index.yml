@@ -45,6 +45,10 @@ highlightedContent:
     - title: Set up your infrastructure for hybrid work
       itemType: how-to-guide
       url: solutions/empower-people-to-work-remotely.md
+    # Card
+    - title: Learn from the experts - skill up for the era of AI at the Microsoft 365 Community Conference
+      itemType: whats-new
+      url: https://aka.ms/MCAG/IPM/ML25002B
 
 # conceptualContent section (optional)
 conceptualContent:

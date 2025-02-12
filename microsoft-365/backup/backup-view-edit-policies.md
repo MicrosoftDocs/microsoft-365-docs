@@ -136,7 +136,10 @@ Follow these steps to set up a backup policy for Exchange mailboxes sites using 
 
     ![Screenshot of the Overview page for Exchange.](../media/m365-backup/backup-overview-page-exchange.png)
 
-6. On the **Choose selection method** page, you can set up shared or user Exchange mailboxes using any or all three ways. A protection scope is the scope of mailboxes within Exchange that you want to protect with Microsoft 365 Backup.
+6. On the **Choose selection method** page, you can set up shared or user mailboxes using any or all three ways. Other Exchange recipient types, such as room mailboxes, are not supported at this time. A protection scope is the scope of mailboxes within Exchange that you want to protect with Microsoft 365 Backup.
+
+    > [!NOTE]
+    > Adding a mailbox to the backup policy will back up the primary and archive mailboxes.
 
     ![Screenshot of the Choose selection method page for Exchange.](../media/m365-backup/backup-choose-selection-method-exchange.png)
 
@@ -148,11 +151,11 @@ Follow these steps to set up a backup policy for Exchange mailboxes sites using 
 
     The rule-based feature for bulk addition of mailboxes via security groups or distribution lists can accommodate a maximum of three groups at a time. These rules are static and applied one time only. That is, the security groups or distribution lists are flattened at the time of adding to the backup configuration policy. For example. groups or list won't be dynamically updated in the system if users are added or removed from the original security group.
 
-    > [!NOTE]
-    > The site last modified feature is in preview.
-
     c. Under **Select mailboxes individually**, you can search and select mailboxes you want to add to a backup policy.
 
+    > [!NOTE]
+    > Hybrid deployments, where a user's primary mailbox resides on premises while their archive has been migrated to Exchange Online, are not supported.
+    
 7. Once you've made the right selections, select **Next** to create the backup policy for Exchange.
 
 8. On the **Review Exchange backup policy** page, review the information to make sure it's how you want it, and then select **Create policy** (or **Update policy** if it's an update).

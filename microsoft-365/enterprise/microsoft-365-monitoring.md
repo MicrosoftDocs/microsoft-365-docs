@@ -38,15 +38,15 @@ Monitoring provides you with information about incidents and advisories that are
 
 Here's an example of the **Service health** page in the Microsoft 365 admin center, which is available at **Health** > **Service health** for organization scenarios and [priority account](../admin/setup/priority-accounts.md) scenarios.
 
-[![Screenshot of the Service health page in the Microsoft 365 admin center.](../media/m365-monitoring-final.png)](../media/m365-monitoring-final.png#lightbox)
+:::image type="content" source="../media/microsoft-365.png" alt-text="Screenshot of the Service health page in the Microsoft 365 admin center." lightbox="../media/microsoft-365.png":::
 
-If Microsoft 365 monitoring discovers issues that need your attention, these are shown under the **Issues in your environment that require action** in the Active Issues section of the page.
+If Microsoft 365 monitoring discovers issues that need your attention, these are shown under the **Issues in your environment that require action** on the Service Health Page.
 
-To access detailed monitoring pages for specific services, select **View** under **Organizational-level monitoring** on the service health page.
+To access detailed monitoring pages for specific services, select the Monitoring tab to view the list of services currently being monitored.
 
-Here's an example of the Exchange Online monitoring page in the Microsoft 365 admin center that shows the health of organization-level and priority account scenarios available from **Health** > **Service health** > **Exchange Online**.
+Here's an example of the Exchange Online monitoring page in the Microsoft 365 admin center that shows the health of organization-level and priority account scenarios available from **Health** > **Service health** > **Monitoring** > **Exchange Online**.
 
-![Screenshot of organization-level scenarios for Exchange Online Monitoring.](../media/microsoft-365-exchange-monitoring/exchange-monitoring-org-scenarios.png)
+:::image type="content" source="../media/microsoft-365-2.png" alt-text="Screenshot of organization-level scenarios for Exchange Online Monitoring." lightbox="../media/microsoft-365-2.png":::
 
 With the scenario list page, you can see whether the Microsoft service is healthy or not and whether there are any associated incidents or advisories. For example, with Exchange Online monitoring, you can look at the service health for specific email scenarios and view near real-time signals to determine the impact by organization-level scenario. You can also see health of priority account scenarios, if available.
 
@@ -80,7 +80,7 @@ There are two ways you can provide feedback:
 
 - Submit feedback using the **Is this post helpful? link for a specific incident or advisory.
 
-  ![Screenshot of the "Is this post helpful?" link for a specific incident or advisory.](../media/microsoft-365-exchange-monitoring/exchange-monitoring-example-incident-feedback.png)
+  :::image type="content" source="../media/microsoft-365-3.png" alt-text="Screenshot of the 'Is this post helpful?' link for a specific incident or advisory." lightbox="../media/microsoft-365-3.png":::
 
 ## Frequently asked questions
 

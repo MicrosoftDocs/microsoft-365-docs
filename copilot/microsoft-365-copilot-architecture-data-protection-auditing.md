@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: mandia
 author: MandiOhlinger
 manager: laurawi
-ms.date: 11/19/2024
+ms.date: 01/28/2025
 audience: Admin
 ms.reviewer: mandia, bcarter, ruihu, cabailey
 ms.topic: overview
@@ -50,7 +50,7 @@ Let's take a look:
 
   - Items encrypted by the [Azure Rights Management](/azure/information-protection/office-apps-services-support) service without a sensitivity label still require EXTRACT or VIEW usage rights for the user for Copilot to summarize the data.
 
-- In a prompt session with Copilot (called [Business Chat](https://support.microsoft.com/topic/get-started-with-microsoft-365-copilot-business-chat-5b00a52d-7296-48ee-b938-b95b7209f737)), the labels are displayed for data that is returned. The current response shows the label with the highest priority.
+- In a prompt session with Copilot (called [Microsoft 365 Copilot Chat](https://support.microsoft.com/topic/get-started-with-microsoft-365-copilot-business-chat-5b00a52d-7296-48ee-b938-b95b7209f737)), the labels are displayed for data that is returned. The current response shows the label with the highest priority.
 - When you use Copilot to create new content based on items that have a sensitivity label, the new content automatically inherits the sensitivity label with the highest priority and that label's protection settings.
 
 - Protection extends to data stored outside of your Microsoft 365 tenant when the file is opened in an Office app.

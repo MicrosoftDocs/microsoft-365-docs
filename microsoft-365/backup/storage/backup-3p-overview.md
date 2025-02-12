@@ -1,18 +1,18 @@
 ---
 title: Overview for third-party developers of Microsoft 365 Backup Storage
-ms.author: diksha
-author: dikshau56
-manager: brgussin
+ms.author: chucked
+author: chuckedmonson
+manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 07/31/2024
+ms.date: 02/03/2025
 ms.topic: conceptual
 ms.service: microsoft-365-backup
 ms.custom: backup
 search.appverid:
 ms.collection:
 ms.localizationpriority:  medium
-description: Overview for third-party developers for Microsoft 365 Backup Storage.
+description: Read the overview for third-party developers for Microsoft 365 Backup Storage.
 ---
 
 # Overview for third-party developers of Microsoft 365 Backup Storage

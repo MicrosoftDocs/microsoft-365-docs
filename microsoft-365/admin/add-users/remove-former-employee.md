@@ -74,7 +74,7 @@ To complete the steps in this series, you use these Microsoft 365 capabilities a
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198203).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f1196f82-611c-41c8-8cc1-98e70f591d5d]
 
 ## Does your organization use Active Directory?
 

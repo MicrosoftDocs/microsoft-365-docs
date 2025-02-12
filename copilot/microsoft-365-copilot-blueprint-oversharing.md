@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: mandia
 author: MandiOhlinger
 manager: laurawi
-ms.date: 12/11/2024
+ms.date: 01/15/2025
 ms.reviewer: 
 audience: Admin
 ms.topic: get-started
@@ -22,7 +22,7 @@ appliesto:
   - ✅ Microsoft 365 Copilot
 ---
 
-# Address internal oversharing concerns in Microsoft 365 Copilot deployment blueprint
+# Address oversharing concerns in Microsoft 365 Copilot deployment blueprint
 
 [Microsoft 365 Copilot](microsoft-365-copilot-overview.md) works with different Microsoft services to help you get your data ready for Copilot.
 
@@ -30,7 +30,7 @@ For Copilot administrators, it can be overwhelming to know where to start. Exist
 
 To address the need for shorter, actionable, and prescriptive guidance, you can use this deployment blueprint.
 
-In this deployment blueprint, we provide a recommended approach to address internal oversharing concerns throughout a Microsoft 365 Copilot deployment.
+In this deployment blueprint, we provide a recommended approach to address oversharing concerns throughout a Microsoft 365 Copilot deployment.
 
 The blueprint breaks the deployment into three phases:
 
@@ -40,7 +40,7 @@ The blueprint breaks the deployment into three phases:
 
 The blueprint provides:  
 
-- An overview of the most common causes of internal oversharing in Microsoft SharePoint
+- An overview of the most common causes of oversharing in Microsoft SharePoint
 - A recommended, staged approach to avoid oversharing in a Microsoft 365 Copilot deployment
 - Recommended actions specific to E3 or E5 licenses at each stage
 - Detailed guidance for using the tools in the SharePoint Admin Center, SharePoint Advanced Management (SAM), and Microsoft Purview to identify and mitigate oversharing and ongoing governance concerns.
@@ -51,7 +51,7 @@ The blueprint provides:
 
 | Deployment model | Description |
 |---|---|
-| [![Address internal oversharing concerns in Microsoft 365 Copilot](media/microsoft-365-copilot-blueprint-oversharing/blueprint-oversharing-copilot.png)](https://aka.ms/Copilot/OversharingBlueprintPDF) | Use this deployment model to assist organizations in identifying and mitigating internal oversharing risks. <br/><br/>**This model includes**<br/><ul><li>Blueprint with high level activities and presentation [PDF](https://aka.ms/Copilot/OversharingBlueprintPDF) \| [PowerPoint](https://aka.ms/Copilot/OversharingBlueprintPPT)</li></ul> |
+| [![Address oversharing concerns in Microsoft 365 Copilot](media/microsoft-365-copilot-blueprint-oversharing/blueprint-oversharing-copilot.png)](https://aka.ms/Copilot/OversharingBlueprintPDF) | Use this deployment model to assist organizations in identifying and mitigating oversharing risks. <br/><br/>**This model includes**<br/><ul><li>Blueprint with high level activities and presentation [PDF](https://aka.ms/Copilot/OversharingBlueprintPDF) \| [PowerPoint](https://aka.ms/Copilot/OversharingBlueprintPPT)</li></ul> |
 
 ### Documentation resources
 

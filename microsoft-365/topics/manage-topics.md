@@ -24,7 +24,7 @@ description: Learn how to manage topics in the topic center in Topics.
 
 </br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LxDx]  
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=7c49b827-b6c3-483f-bc62-3577576496dc]  
 
 </br>
 

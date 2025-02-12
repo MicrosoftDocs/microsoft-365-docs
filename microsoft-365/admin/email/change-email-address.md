@@ -56,7 +56,7 @@ When you change your domain's email to come to Microsoft 365, by updating your d
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/p/?linkid=2198215).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyVVA?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e06209e9-487f-4f5c-be79-d658aca544be]
 
 Buy a new domain name for your email address and set up the email addresses with Microsoft 365.
 
@@ -66,7 +66,7 @@ Buy a new domain name for your email address and set up the email addresses with
 
 ## Set up business email with an existing domain
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxApu?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=8ea6055b-328d-4ce9-a1ac-fa515cd16b7d]
 
 Use a domain name you already own whether you're using it for a website address or an email address at another provider.
 

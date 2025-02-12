@@ -82,7 +82,7 @@ To manage their Scheduled prompts, users can follow these steps:
 2. Select the prompt management pane.
 3. From there, users can view and delete their scheduled prompts.
 
-Users can schedule up to 10 prompts to run at specific times, with responses delivered to the right rail of their Bizchat experience. These prompts can be set to run on a recurring basis, ensuring users receive necessary information aligned with their workflow. Responses from scheduled prompts are bolded and have a recurring icon to help users identify them easily.
+Users can schedule up to 10 prompts to run at specific times, with responses delivered to the right rail of their Microsoft 365 Copilot Chat experience. These prompts can be set to run on a recurring basis, ensuring users receive necessary information aligned with their workflow. Responses from scheduled prompts are bolded and have a recurring icon to help users identify them easily.
 
 To learn more about prompts for your users, see [Learn about Copilot prompts](https://support.microsoft.com/topic/learn-about-copilot-prompts-f6c3b467-f07c-4db1-ae54-ffac96184dd5).
 

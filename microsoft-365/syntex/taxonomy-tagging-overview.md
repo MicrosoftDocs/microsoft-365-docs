@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: shrganguly
-ms.date: 06/17/2024
+ms.date: 01/16/2025
 ms.topic: conceptual
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
@@ -29,18 +29,18 @@ The taxonomy tagging feature offers an automated tagging solution for documents 
 
 ## Requirements and limitations
 
-### Supported file types
-
-Taxonomy tagging is available for the following file types: .doc, .docx, .pdf, and .pptx.
+| Icon          | Description   |
+| ------------- | ------------- |
+| ![Files symbol.](/office/media/icons/files-blue.png)  | **Supported file types** <br>This service supports the following file types: .doc, .docx, .pdf, and .pptx. |
 
 ### Current release notes
 
 - A maximum of three columns in a library can be configured with taxonomy tagging.
 
-- Taxonomy tagging does not work on scanned PDF files at this time. It only works on regular (native) PDF files.
+- Taxonomy tagging doesn't work on scanned PDF files at this time. It only works on regular (native) PDF files.
 
-- Time taken to reflect tags getting in the taxonomy column: Minimum: 20 minutes, maximum: 24 hours.
+- The time taken for tags to appear in the taxonomy column ranges from a minimum of 20 minutes to a maximum of 24 hours.
 
-- The configured column is an editable taxonomy column. Therefore, you can add new tags or remove the AI-generated tags to meet your requirements.
+- The configured column is an editable taxonomy column, allowing you to add new tags or remove AI-generated tags to meet your requirements.
 
-- Existing documents processing: By default, existing documents are not processed when taxonomy tagging is enabled. Any newly uploaded files or existing files that are edited will be processed for automatic taxonomy tagging.
+- By default, existing documents aren't processed when taxonomy tagging is enabled. Any newly uploaded files or existing files that are edited will be processed for automatic taxonomy tagging.

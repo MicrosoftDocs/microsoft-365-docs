@@ -45,7 +45,7 @@ The highly sensitive tier offers the following additional protections over the b
 Watch this video for a walkthrough of the procedures described in this article.
 <br>
 <br>
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4NzI7]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=cc919db2-7cae-4729-b131-732ea01c8181]
 
 ## Guest sharing
 

@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: shrganguly
-ms.date: 09/26/2024
+ms.date: 01/13/2025
 ms.topic: conceptual
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
@@ -38,24 +38,22 @@ You must be a [SharePoint Administrator](/entra/identity/role-based-access-contr
 
 After an [Azure subscription is linked to Microsoft Syntex](syntex-azure-billing.md), image tagging is automatically set up and enabled for all SharePoint sites.
 
-Although you enable pay-as-you-go billing for image tagging, you'll be charged only when [image tagging is enabled on a document library](image-tagging.md).
+Although you enable pay-as-you-go billing for image tagging, you are charged only when [image tagging is enabled on a document library](image-tagging.md).
 
 ## Manage sites
 
-By default, image tagging is available for libraries on all SharePoint sites. Follow these steps to limit which sites users can apply image tagging.
+By default, image tagging is available for libraries on all SharePoint sites. To limit which sites users can apply image tagging, follow these steps.
 
-1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>.
+1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Settings > Org settings**</a>.
 
-2. Under **Files and content**, select **Automate content processes with Syntex**.
+2. On the **Org settings** page, select **Pay-as-you-go services**.
 
-3. On the **Automate content processes with Syntex** page, select **Go to Syntex settings**.
+3. On the **Pay-as-you-go services** page, select the **Settings** tab.
 
-4. On the Syntex page, in the **Document & image services** section, select **Image tagging**.
+4. Under **Document & image services**, select **Image tagging**.
 
-5. On the **Image tagging** panel:
+5. On the **Image tagging** panel, under **Which SharePoint sites should show the option to enable image tagging**, select **Edit**.
 
-    a. Choose the site or sites on which this service should be enabled.
+6. On the **Image tagging** panel, change the setting from **Libraries in all SharePoint sites** to **Selected sites (up to 100)** or **No sites**. For selected sites, follow the instructions to select the sites or upload a CSV listing of the sites. You can then manage site access permissions for the sites you selected.
 
-    b. To restrict user access to this service, select **Edit**, and then select **No sites** or **Selected sites (up to 100)**. Follow the instructions to either select the sites or upload a CSV listing a maximum of 100 sites. Be sure to add your content center site if you want it to be included. You can then manage site access permissions for the sites you selected.
-
-    c. Select **Save**.
+7. Select **Save**.

@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 02/21/2024
+ms.date: 01/10/2025
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -22,7 +22,7 @@ description: Learn how to create an extractor in Microsoft Syntex.
 
 <br/>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CL2G]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=cce2f92b-f547-4e40-9aaf-1258af2afc03]
 
 <br/>
 

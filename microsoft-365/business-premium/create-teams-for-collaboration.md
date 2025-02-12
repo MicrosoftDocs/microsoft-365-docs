@@ -89,15 +89,15 @@ Use the command box at the top to search for specific items or people, take quic
 
 Create a private team for just the business owner and managers, or campaign manager and candidate like this.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWeqWA]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b0c4050b-1392-48df-a87c-6dfcf44c61e1]
 
 Create an organization-wide team that everyone in the business or campaign can use to communicate and share files.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2GCG9]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b1d0ad30-70aa-499a-9511-9b24e686611c]
 
 Create a team that you share with guests outside your organization, such as for advertising or finances.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=573823a3-19cf-4b2e-932f-7be1896b2821]
 
 Learn more about Microsoft Teams at [Microsoft Teams technical documentation](/microsoftteams/microsoft-teams)
 
@@ -109,4 +109,3 @@ Learn more about Microsoft Teams at [Microsoft Teams technical documentation](/m
 ## Next step
 
 [Set up meetings](set-up-meetings.md).
-

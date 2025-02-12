@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 11/16/2023
+ms.date: 01/06/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -59,7 +59,7 @@ The following PowerShell example turns Focused Inbox **Off** in your organizatio
     Set-OrganizationConfig -FocusedInboxOn $false
     ```
 
-6. Run the **Get-OrganizationConfig** cmdlet again and you'll see that FocusedInboxOn is set to $false, which means it's been turned off. 
+6. Run the **Get-OrganizationConfig** cmdlet again and you'll see that FocusedInboxOn is set to $false, which means it's been turned off.
 
 **To turn on Focused Inbox:**
   
@@ -79,7 +79,7 @@ If you're switching from Clutter to Focused Inbox, they can decide to enable it 
   
 ![An image of what Focused Inbox looks like when it's rolled out to your users and Outlook is re-opened.](../../media/c034f969-d650-4333-88f1-dd10ade0a94c.png)
   
-When a user decides to start using Focused Inbox, Clutter gets disabled automatically. The Clutter folder gets converted into a standard folder, that allows the user to rename or delete it.
+When a user decides to start using Focused Inbox, Clutter gets disabled automatically. The Clutter folder gets converted into a standard folder that allows the user to rename or delete it.
   
 ## Turn Focused Inbox On or Off for specific users
 

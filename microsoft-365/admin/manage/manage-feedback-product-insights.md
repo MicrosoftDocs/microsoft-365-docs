@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 11/18/2023
+ms.date: 01/06/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -36,7 +36,7 @@ We use NPS surveys and feedback from your end-users to provide you with insights
 
 ## Watch: NPS feedback and insights
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWWSNo]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=a755fdb6-078b-4244-9478-a8cbd3c22f65]
 
 ## Before you begin
 

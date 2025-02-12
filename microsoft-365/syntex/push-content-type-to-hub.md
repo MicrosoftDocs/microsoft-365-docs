@@ -21,7 +21,7 @@ description: Learn how to push content types to a hub.
 
 </br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GyeV]  
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=6698ac03-3ec8-4429-83b8-bc10b11357dd]  
 
 </br>
 

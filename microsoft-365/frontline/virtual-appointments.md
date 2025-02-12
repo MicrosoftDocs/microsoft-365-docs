@@ -34,7 +34,7 @@ With Virtual Appointments in Microsoft Teams, you have a complete meeting platfo
 - Clinicians can meet with patients or other healthcare providers to discuss medical care.
 - Human resources departments can conduct virtual interviews with job candidates.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4TQop]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=fde6e589-e329-4737-8c2b-67dfe1315e35]
 
 This article gives you an overview of the capabilities available in Teams for scheduling and managing virtual appointments.
 

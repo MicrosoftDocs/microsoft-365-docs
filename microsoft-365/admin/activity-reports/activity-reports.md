@@ -41,7 +41,7 @@ to become available.
   
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198103).<br><br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4VjrX?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f8007c63-a8a0-44ee-ab5b-0ac799333496]
 
 ## How to get to the Reports dashboard
 

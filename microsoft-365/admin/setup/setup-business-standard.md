@@ -43,7 +43,7 @@ In this article, we'll walk you through the steps of adding an existing domain y
 
 ## Set up Microsoft 365 for business
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=de65e64a-e0d9-4f67-bc18-05d777b85e0b]
 
 ## Before you begin
 
@@ -54,7 +54,7 @@ To add, modify or remove domains you must be a [domain name administrator](/entr
 
 ## Watch: Add an existing domain to your Microsoft 365 Business Standard subscription
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxApu]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=8ea6055b-328d-4ce9-a1ac-fa515cd16b7d]
 
 ## Steps: Add an existing domain to your Microsoft 365 Business Standard subscription
 
@@ -100,7 +100,7 @@ To set up services, you have to update records at your DNS host or domain regist
 
 ## Watch: Set up business email with a new domain
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyVVA]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e06209e9-487f-4f5c-be79-d658aca544be]
 
 ## Steps: Set up business email with a new domain
 

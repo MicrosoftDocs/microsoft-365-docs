@@ -48,7 +48,7 @@ The example is for Outlook, but applies for any other apps you also want to inst
   
 Watch a short video on how to set up Microsoft 365 productivity apps on iOS devices with Microsoft 365 for business.<br><br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWee2n] 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e18c34a7-f392-458d-a062-3e1b53588796] 
 
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
 

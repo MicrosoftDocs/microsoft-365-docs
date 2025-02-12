@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: shcallaw
+ms.reviewer: viratsingh
 ms.date: 11/08/2024
 audience: Admin
 ms.topic: conceptual
@@ -15,6 +15,7 @@ ms.collection:
 - scotvorg
 - M365-subscription-management
 - Adm_O365
+- magic-ai-copilot
 ms.custom:
 - AdminSurgePortfolib
 - M365-Lighthouse                         

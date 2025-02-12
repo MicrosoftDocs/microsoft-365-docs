@@ -46,7 +46,7 @@ The topic center is created during Topics setup. After setup completes, an admin
 
 </br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LAhZ]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=5651a7aa-5b62-4640-8e30-8fbd35412c78]
 
 </br>
 

@@ -1,11 +1,11 @@
 ---
-title: "Manage data privacy and protection – Microsoft Priva and Purview"
+title: "Manage data privacy and protection - Microsoft Priva and Purview"
 ms.author: chvukosw
 author: chvukosw
 f1.keywords:
 - NOCSH
 manager: laurawi
-ms.date: 01/03/2024
+ms.date: 01/15/2025
 audience: ITPro
 ms.topic: solution-overview
 ms.service: o365-solutions
@@ -29,7 +29,7 @@ Data privacy and data protection go hand in hand. You can't have data privacy wi
 
 ## How Microsoft Priva and Microsoft Purview work together
 
-[Microsoft Priva](/privacy/priva/priva-overview) and [Microsoft Purview](/purview/purview) provide a unified platform to help you comply with data privacy regulations. The complementary features in [Purview risk and compliance solutions](/purview/purview-compliance) and [Priva privacy management solutions](/privacy/priva/risk-management) help you assess the personal data within your organization, and provide automation and scalability to help reduce the complexity in adequately safeguarding the data.
+[Microsoft Priva](/privacy/priva/priva-overview) and [Microsoft Purview](/purview/purview) provide a unified platform to help you comply with data privacy regulations. The complementary features in [Microsoft Purview risk and compliance solutions](/purview/purview-compliance) and [Priva Privacy Risk Management](/privacy/priva/risk-management) help you assess the personal data within your organization, and provide automation and scalability to help reduce the complexity in adequately safeguarding the data.
 
 ![How Microsoft Purview and Microsoft Priva work together](../media/data-privacy-protection/purview-priva-together.png)
 

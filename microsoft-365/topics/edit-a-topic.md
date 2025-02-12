@@ -25,7 +25,7 @@ description: Learn how to edit an existing topic in Topics.
 
 </br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LA4n]  
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=06271f85-a711-4360-a8d6-add373de0c3b]  
 
 </br>
 

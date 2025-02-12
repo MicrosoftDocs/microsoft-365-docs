@@ -67,7 +67,7 @@ You can cancel your free trial at any time to stop future charges. To cancel a f
 
 ### Watch: Sign up for Microsoft 365 Business Standard
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e1fe831f-c1a4-4d81-a475-1d8036a047cb]
 
 ### Information we ask for when you sign up
 

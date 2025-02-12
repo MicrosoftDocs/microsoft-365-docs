@@ -113,21 +113,22 @@
     ".openpublishing.redirection.commerce.json",
     ".openpublishing.redirection.compliance.json",
     ".openpublishing.redirection.contentunderstanding.json",
+    ".openpublishing.redirection.copilot.json",
+    ".openpublishing.redirection.defender.json",
     ".openpublishing.redirection.enterprise.json",
     ".openpublishing.redirection.frontline.json",
     ".openpublishing.redirection.knowledge.json",
     ".openpublishing.redirection.learning.json",
     ".openpublishing.redirection.lighthouse.json",
     ".openpublishing.redirection.loop.json",
+    ".openpublishing.redirection.lti.json",
     ".openpublishing.redirection.managed-desktop.json",
+    ".openpublishing.redirection.scheduler.json",
     ".openpublishing.redirection.security.json",
     ".openpublishing.redirection.solutions.json",
     ".openpublishing.redirection.syntex.json",
-    ".openpublishing.redirection.topics.json",
-    ".openpublishing.redirection.lti.json",
-    ".openpublishing.redirection.viva.json",
     ".openpublishing.redirection.test-base.json",
-    ".openpublishing.redirection.scheduler.json",
-    ".openpublishing.redirection.defender.json"
+    ".openpublishing.redirection.topics.json",
+    ".openpublishing.redirection.viva.json"
   ]
 }

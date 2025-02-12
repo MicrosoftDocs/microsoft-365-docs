@@ -21,7 +21,7 @@ description: "Microsoft 365 network assessment"
 
 # Microsoft 365 network assessment
 
-In the Microsoft 365 Admin Center's network connectivity, **network assessments** distill an aggregate of many network performance metrics into a snapshot of your enterprise network perimeter health. A network assessment tells you how much the customer responsible network design is impacting Office 365 user experience. Network assessments are scoped to both the entire tenant and to each geographic location from which users connect to your tenant. The assessments provide Microsoft 365 administrators with an easy way to instantly get a sense of the enterprise's network health and quickly drill down into a detailed report for any global office location.
+In the Microsoft 365 Admin Center's network connectivity, **network assessments** distill an aggregate of many network performance metrics into a snapshot of your enterprise network perimeter health. A network assessment tells you how much the customer responsible network design is impacting Microsoft 365 user experience. Network assessments are scoped to both the entire tenant and to each geographic location from which users connect to your tenant. The assessments provide Microsoft 365 administrators with an easy way to instantly get a sense of the enterprise's network health and quickly drill down into a detailed report for any global office location.
 
 The network assessment points value is from 0 to 100 and is an average of TCP latency, download speed, and UDP connection quality metrics. These metrics are compiled once a day. Performance metrics for Microsoft-owned networks are excluded from these measurements to ensure that assessment results are unambiguous and specific to the corporate network.
 
@@ -46,7 +46,7 @@ Each network assessment, whether scoped to the tenant or to a specific office lo
 > [!div class="mx-imgBorder"]
 > ![Example network assessment value.](../media/m365-mac-perf/m365-mac-perf-overview-score.png)
 
-The **Assessment breakdown** in the panel shows the assessment for each of the component workloads.
+The **Points breakdown** in the panel shows the assessment for each of the component workloads.
 
 The **Assessment history** shows the past 30 days of the assessment and the benchmark. You can also report on the metrics history for any office location for up to two years using the history tab. The history tab allows you to select your attributes to report on. By choosing a report time frame, you can highlight the impact of a network update project and see the improvement to your network assessment.
 
@@ -55,6 +55,21 @@ The **Assessment history** shows the past 30 days of the assessment and the benc
 A network assessment measures the design of the network perimeter of an office location to Microsoft's network. Improvements to the network perimeter are  best done at each office location.
 
 We show a network assessment value for the whole Microsoft 365 tenant on the network performance overview page. This value is a weighted average of the network assessments for all office locations. There's also a specific network assessment value for each detected office location on that location's summary page.
+
+## Microsoft 365 Copilot
+
+For Microsoft 365 Copilot, the TCP latency from the client machine to the Copilot service front door is measured. This latency can be impacted by the distance the network travels over the customers LAN and WAN. It can also be impacted by network intermediary devices or services, which delay the connectivity or cause packets to be resent. And it's impacted by how far away the nearest service front door is. The median (also known as the 50th percentile or P50 measure) is taken for all measurements over the previous three days.
+
+The Microsoft 365 Copilot assessment is made using the following table. Any TCP latency number between the thresholds are assigned points linearly within the band.
+
+| TCP Latency    | Points |
+| :------------- | :----- |
+| 10 ms or less  | 100    |
+| 25 ms          | 80     |
+| 100 ms         | 60     |
+| 200 ms         | 40     |
+| 300 ms         | 20     |
+| 350 ms or more | 0      |
 
 ## Exchange Online
 

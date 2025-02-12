@@ -58,11 +58,11 @@ Use the following poster to start envisioning what your organization can do with
 
 Watch the following video to see how you can help your store associates connect and collaborate:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRJVw]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f6689716-5481-4414-b003-ad5c3a47ea0b]
 
 Watch the following video to see how you can simplify business processes in retail environments:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRzfc]-->
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=229ffc24-44f6-4bfd-bac2-f1ac0df88dec]-->
 
 ### In-store communication and collaboration
 

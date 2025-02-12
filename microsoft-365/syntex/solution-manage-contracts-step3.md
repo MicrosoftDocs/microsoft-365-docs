@@ -6,7 +6,7 @@ manager: jtremper
 ms.reviewer: ssquires
 audience: admin
 ms.topic: conceptual
-ms.date: 02/14/2024
+ms.date: 01/08/2025
 ms.service: microsoft-syntex
 search.appverid: 
 ms.localizationpriority:  medium
@@ -16,11 +16,11 @@ description: Learn how to use Power Automate to create your flow to process your
 
 # Step 3. Use Power Automate to create the flow to process your contracts
 
-You've created your Contract Management channel and have attached your SharePoint document library. The next step is to create a Power Automate flow to process your contracts that your Syntex model identifies and classifies. You can do this step by [creating a Power Automate flow in your SharePoint document library](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01).
+You've created your Contract Management channel and have attached your SharePoint document library. The next step is to create a Power Automate flow to process your contracts that your Microsoft Syntex model identifies and classifies. You can do this step by [creating a Power Automate flow in your SharePoint document library](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01).
 
 For your contracts management solution, you want to create a Power Automate flow to do the following actions:
 
--  After a contract has been classified by your Syntex model, change the contract status to **In review**.
+-  After a contract has been classified by your Microsoft Syntex model, change the contract status to **In review**.
 - The contract is then reviewed and is either approved or rejected.
 - For approved contracts, the contract information is posted to a tab for payment processing.
 - For rejected contracts, the team is notified for further analysis. 
@@ -132,7 +132,7 @@ In your flow, next you need to create a condition in which your contract will be
 
 When a contract has been approved, the following things occur:
 
-- On the **Contracts** tab, the status in the contract card will change to **Approved**.
+- On the **Contracts** tab, the status in the contract card changes to **Approved**.
 
    ![Card status approved.](../media/content-understanding/approved-contracts-tab.png)
 
@@ -140,7 +140,7 @@ When a contract has been approved, the following things occur:
 
    ![Flow status approved.](../media/content-understanding/status-approved.png)
 
-- In this solution, the contract data will be added to the **For Payout** tab so that the payouts can be managed. This process can be extended to allow the flow to submit the contracts for payment by a third-party financial application (for example, Dynamics CRM).
+- In this solution, the contract data is added to the **For Payout** tab so that the payouts can be managed. This process can be extended to allow the flow to submit the contracts for payment by a third-party financial application (for example, Dynamics CRM).
 
    ![Contract moved to Pay Out.](../media/content-understanding/for-payout.png)
 
@@ -252,7 +252,7 @@ When a contract has been approved, the following things occur:
 
 When a contract has been rejected, the following things occur:
 
-- On the **Contracts** tab, the status in the contract card will change to **Rejected**.
+- On the **Contracts** tab, the status in the contract card changes to **Rejected**.
 
    ![Card status rejected.](../media/content-understanding/rejected-contracts-tab.png)
 

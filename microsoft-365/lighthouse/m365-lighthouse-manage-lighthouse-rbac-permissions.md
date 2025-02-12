@@ -29,11 +29,11 @@ The **Lighthouse permissions** page allows Administrators in Microsoft 365 Light
 > [!NOTE]
 > Lighthouse RBAC roles don't provide access to customer data. Access to customer data is governed by a Lighthouse user's GDAP permissions. To learn more, see [Manage GDAP in the customer tenant](m365-lighthouse-overview-of-permissions.md#manage-gdap-in-the-customer-tenant).
 
-When administrators assign a Lighthouse RBAC role to a user in the partner tenant for the first time, a security group is automatically created. Lighthouse Administrators can view the associated security group for each Lighthouse RBAC role on the **Lighthouse permissions** page and in the Microsoft Entra admin center. All security group membership changes are reflected in both Lighthouse and the Microsoft Entra admin center.
+When Lighthouse administrators assign a Lighthouse RBAC role to a user in the partner tenant for the first time, a security group is automatically created. Lighthouse Administrators can view the associated security group for each Lighthouse RBAC role on the **Lighthouse permissions** page and in the Microsoft Entra admin center. All security group membership changes are reflected in both Lighthouse and the Microsoft Entra admin center.
 
 ## Before you begin
 
-To access the **Lighthouse permissions** page and manage permissions, you must be an Administrator in Lighthouse or a Privileged Role Administrator in Microsoft Entra ID.
+To access the **Lighthouse permissions** page and manage permissions, you must hold the Administrator role in Lighthouse.
 
 ## View Lighthouse RBAC role membership and associated security group
 
@@ -86,7 +86,7 @@ To access the **Lighthouse permissions** page and manage permissions, you must b
     - Select **Create a new security group**, enter a name for the new group, optionally enter a description and add users, and then select **Save**.
 
 > [!NOTE]
-> You must assign the Lighthouse Administrator role to a role-assignable security group. In addition, to be able to assign roles to a role-assignable security group and/or create role-assignable security groups, you must have a Microsoft Entra ID P1 license. To enable Just-in-Time (JIT) roles, Microsoft Entra IDE Governance or a Microsoft Entra ID P2 license is required.
+> You must assign the Administrator role in Lighthouse to a role-assignable security group. In addition, to be able to assign roles to a role-assignable security group and/or create role-assignable security groups, you must have a Microsoft Entra ID P1 license. To enable Just-in-Time (JIT) roles, Microsoft Entra IDE Governance or a Microsoft Entra ID P2 license is required.
 > 
 > You can assign all other Lighthouse RBAC roles to any security group, whether it's role-assignable or not, but keep the P1 license requirement in mind for role-assignable security groups.
 >  

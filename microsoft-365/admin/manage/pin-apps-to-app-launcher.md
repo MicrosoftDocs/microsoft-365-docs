@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 11/28/2023
+ms.date: 01/06/2025
 audience: Admin
 ms.topic: article
 ms.collection:
@@ -34,26 +34,24 @@ For more information about the app launcher and Microsoft365.com, see [meet the 
 > Microsoft 365 productivity apps are excluded from this list since they’re already displayed in the App launcher.
 
 1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.cloud.microsoft</a>.
-2. In the left nav, choose **Show all**, and under **Admin centers**, choose **Microsoft Entra**.
-3. In Microsoft Entra admin center, under **Microsoft Entra ID (Azure AD)**, choose **Go to Microsoft Entra ID**.
-4. In the left nav, select **Applications** and then **Enterprise applications**.
-5. Choose **App launchers**, then **Settings**.
-6. In the **Microsoft 365 settings** section, choose **Add application**.
-7. Choose the applications you want to pin to the users' app launcher, and then choose **Add**.
+2. In the left nav, choose **Show all**, and under **Admin centers**, choose **Identity**.
+3. In Microsoft Entra admin center on the left nav, select **Applications** and then **Enterprise applications**.
+4. Choose **App launchers**, then **Settings**.
+5. In the **Microsoft 365 settings** section, choose **Add application**.
+6. Choose the applications you want to pin to the users' app launcher, and then choose **Add**.
 
 ### Pin a custom app
 
 > [!NOTE]
-> The user interface will indicate if you need need to purchase additional Microsoft Entra ID licenses to use this feature. For more information see [Microsoft Entra pricing](https://azure.microsoft.com/pricing/details/active-directory/).
+> The user interface will indicate if you need to purchase additional Microsoft Entra ID licenses to use this feature. For more information see [Microsoft Entra pricing](https://azure.microsoft.com/pricing/details/active-directory/).
 
 1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.cloud.microsoft</a>.
-2. In the left nav, choose **Show all**, and under **Admin centers**, choose **Microsoft Entra**.
-3. In Microsoft Entra admin center, under **Microsoft Entra ID (Azure AD)**, choose **Go to Microsoft Entra ID**.
-4. In the left nav, select **Applications** and then **Enterprise applications**.
-5. On the **All applications** page, select an existing application or choose **New application**.
-6. If you choose an existing application, follow the steps to add users and groups, provision users and secure access.
-7. If you choose an existing application, follow the steps to create the new application and then follow the steps to add users and groups, provision users and secure access.
+2. In the left nav, choose **Show all**, and under **Admin centers**, choose **Identity**.
+3. In Microsoft Entra admin center on the left nav, select **Applications** and then **Enterprise applications**.
+4. On the **All applications** page, select an existing application or choose **New application**.
+5. If you choose an existing application, follow the steps to add users and groups, provision users and secure access.
+6. If you choose a new application, follow the steps to create the new application and then follow the steps to add users and groups, provision users and secure access.
 
 ## Create application collections
 
-You can also create application collections for the users in your organization. For instructions, see [create collections on the My Apps portal in the Azure portal](/azure/active-directory/manage-apps/access-panel-collections).
+You can also create application collections for the users in your organization. For instructions, see [Create collections on the My Apps portal](/azure/active-directory/manage-apps/access-panel-collections).
