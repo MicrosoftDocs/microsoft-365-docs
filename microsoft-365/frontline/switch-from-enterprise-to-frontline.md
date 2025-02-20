@@ -28,6 +28,14 @@ E plans are meant for information workers (employees who typically work at a des
 
 You'll get an overview of what to expect when users are switched to an F plan, how to prepare for the change, and what to do after switching plans to transition the frontline workers in your organization.
 
+## License Eligibility for Frontline Worker Licenses
+Microsoft Frontline Worker licenses may only be assigned to users who satisfy one or more of the following conditions:  
+
+- Uses a primary work device with a single screen smaller than 10.9”
+- Shares their primary work device with other qualifying Microsoft 365, Office 365, Entra ID Governance, or Entra Suite Frontline Worker licensed users, during or across shifts.
+         - Other licensed Microsoft Frontline Worker users must also use the device as their primary work device.
+         - Any software or services accessed from the shared device requires the device or users to be assigned a license that includes use of those software or services.
+
 ## Understand the key differences between E and F plans
 
 Start by getting familiar with the service and feature differences between the plans.
