@@ -98,6 +98,11 @@ When the SharePoint site migration completes, the existing shared links for the 
 
 Users with permissions to site may continue to have access to the site after the migration is complete, provided those users/groups were accounted for in the Identity Mapping step.
 
+## Legal holds
+
+SharePoint sites with a Hold policy applied will be blocked from migration.
+To migrate these SharePoint sites, remove the hold policy, migrate, then reapply the hold as needed on the target tenant.
+
 ### SharePoint Workflows
 
 Workflows (2010 or 2013) must be re-created and republished on the Target tenant.
