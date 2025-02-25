@@ -25,7 +25,7 @@ ms.custom:
 - GAUpdates
 search.appverid: MET150
 description: "Learn how to make changes to your organization's profile, including the organization name, address, phone number, and technical contact."
-ms.date: 01/1/2024
+ms.date: 10/06/2024
 ---
 
 # Change your organization's address and technical contact in the Microsoft 365 admin center

@@ -56,7 +56,7 @@ You must be a [password administrator](about-admin-roles.md) to perform these st
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198204).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=6abab91d-a375-496c-8a7e-f10bded3b389]
 ## Steps: Reset a business password for a user
 
 When a user requests a new password, you receive a password reset request in email. Follow these steps to reset the password.

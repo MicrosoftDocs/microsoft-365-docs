@@ -1,3 +1,4 @@
+items:
 - name: Microsoft 365 for enterprise documentation and resources
   href: index.yml
 - name: Microsoft 365 for enterprise overview
@@ -25,15 +26,17 @@
           href: ../admin/setup/add-domain.md
         - name: Configure endpoints to bypass
           items: 
-            - name: Office 365 IP Address and URL Web service
+            - name: Microsoft 365 IP Address and URL Web service
               href: microsoft-365-ip-web-service.md
             - name: Additional endpoints not included in the Web service
               href: additional-office365-ip-addresses-and-urls.md
-            - name: Additional network security requirements for Office 365 GCC High and DOD
+            - name: Additional network security requirements for Microsoft 365 GCC High and DOD
               href: additional-network-security-requirements-for-office-365-gcchigh-and-dod.md
-            - name: DNS records for Office 365 DoD
+            - name: External DNS records for Microsoft 365
+              href: external-domain-name-system-records.md
+            - name: DNS records for Microsoft 365 DoD
               href: dns-records-for-office-365-dod.md
-            - name: DNS records for Office 365 GCC High
+            - name: DNS records for Microsoft 365 GCC High
               href: dns-records-for-office-365-gcc-high.md
         - name: Content Delivery Network (CDN) Quickstart
           href: office-365-cdn-quickstart.md
@@ -49,7 +52,7 @@
               href: microsoft-365-vpn-implement-split-tunnel.md
             - name: Securing Teams media traffic for VPN split tunneling
               href: microsoft-365-vpn-securing-teams.md
-            - name: Stream and live events in VPN environments
+            - name: Teams events in VPN environments
               href: microsoft-365-vpn-stream-and-live-events.md
             - name: Microsoft 365 optimization for China users
               href: microsoft-365-networking-china.md
@@ -62,13 +65,13 @@
               href: implementing-expressroute.md
     - name: Manage
       items: 
-        - name: Office 365 endpoints
+        - name: Microsoft 365 endpoints
           items: 
             - name: Microsoft 365 endpoints
               href: microsoft-365-endpoints.md
             - name: Unified cloud.microsoft domain for Microsoft 365 apps
               href: cloud-microsoft-domain.md
-            - name: Managing Office 365 endpoints
+            - name: Managing Microsoft 365 endpoints
               href: managing-office-365-endpoints.md
             - name: Worldwide endpoints
               href: urls-and-ip-address-ranges.md
@@ -76,13 +79,13 @@
               href: microsoft-365-u-s-government-dod-endpoints.md
             - name: U.S. Government GCC High endpoints
               href: microsoft-365-u-s-government-gcc-high-endpoints.md
-            - name: Office 365 operated by 21Vianet endpoints
+            - name: Microsoft 365 operated by 21Vianet endpoints
               href: urls-and-ip-address-ranges-21vianet.md
         - name: Content delivery networks
           href: content-delivery-networks.md
-        - name: IPv6 support in Office 365 services
+        - name: IPv6 support in Microsoft 365 services
           href: ipv6-support.md
-        - name: NAT support with Office 365
+        - name: NAT support with Microsoft 365
           href: nat-support-with-microsoft-365.md
         - name: Network requests in Office for Mac
           href: network-requests-in-office-2016-for-mac.md
@@ -104,11 +107,12 @@
               href: office-365-network-mac-perf-nppdata.md
             - name: Microsoft 365 Network Provider Details
               href: office-365-network-mac-perf-nppdetails.md
+            - name: Microsoft 365 Connection Blockers 
+              href: office-365-network-mac-perf-connection-blockers.md
             - name: Microsoft 365 Network connectivity test tool
               href: office-365-network-mac-perf-onboarding-tool.md
     - name: Microsoft 365 Networking Partner Program
       href: microsoft-365-networking-partner-program.md
-
 - name: Tenant
   items: 
     - name: Roadmap
@@ -164,6 +168,8 @@
             - name: Exchange Online monitoring
               href: microsoft-365-exchange-monitoring.md
               items:
+                - name: Service advisories for non-compliant shared mailboxes
+                  href: microsoft-365-non-compliant-shared-mailboxes-exo-service-advisory.md
                 - name: Service advisories for messages pending delivery to external recipients
                   href: microsoft-365-external-recipient-service-alerts.md
                 - name: Service advisories for Mailbox utilization
@@ -195,7 +201,7 @@
         - name: Cross-tenant identity mapping
           href: cross-tenant-identity-mapping.md
 
-        - name: Multitenant collaboration
+        - name: Multitenant organizations
           items:
             - name: Plan for multitenant orgs
               href: plan-multi-tenant-org-overview.md
@@ -207,6 +213,10 @@
               href: sync-users-multi-tenant-orgs.md
             - name: Multitenant Organization People Search
               href: multi-tenant-people-search.md
+            - name: Manage multitenant org settings
+              href: manage-multitenant-org-settings.md
+            - name: Multitenant org FAQ
+              href: multitenant-org-faq.md
 
         - name: Cross-tenant OneDrive migration
           items:
@@ -349,7 +359,7 @@
             items: 
               - name: Overview
                 href: hybrid-solutions.md
-              - name: Use Microsoft Entra ID for SharePoint Server 2016 authentication
+              - name: Use Microsoft Entra ID for SharePoint Server authentication
                 href: /azure/active-directory/saas-apps/sharepoint-on-premises-tutorial
               - name: Connect an on-premises network to an Azure virtual network
                 href: connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md
@@ -453,7 +463,7 @@
             - name: Performance troubleshooting plan
               href: performance-troubleshooting-plan.md
 
-- name: Windows 10
+- name: Windows 11
   items:
     - name: How to check release health
       href: /windows/deployment/update/check-release-health
@@ -571,7 +581,7 @@
     - name: Manage add-ins with Centralized Deployment PowerShell
       href: use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md
 
-- name: Windows and Office 365 deployment lab kit
+- name: Windows and Microsoft 365 deployment lab kit
   href: modern-desktop-deployment-and-management-lab.md
 
 - name: Contoso case study

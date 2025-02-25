@@ -4,9 +4,9 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: lauris
-ms.date: 03/11/2024
+ms.date: 01/09/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-syntex
 ms.collection: 
     - enabler-strategic

@@ -24,8 +24,10 @@
     "resource": [
       {
         "files": [
+          "**/*.gif",
+          "**/*.jpg",
           "**/*.png",
-          "**/*.jpg"
+          "**/*.svg"
         ],
         "exclude": [
           "**/obj/**",
@@ -45,12 +47,12 @@
       "permissioned-type": "public",
       "uhfHeaderId": "MSDocsHeader-M365-IT",
       "contributors_to_exclude": [ 
-        "rjagiewich", 
+        "rjagiewich",
         "traya1", 
-        "American-Dipper",
-        "claydetels19", 
+        "American-Dipper", 
+        "claydetels19",
         "jborsecnik",
-        "shdyas",
+        "shdyas", 
         "garycentric",
         "Stacyrch140",
         "alexbuckgit", 
@@ -58,7 +60,8 @@
         "dstrome",
         "MarcoLodini",
         "padmagit77",
-        "aditisrivastava07"
+        "aditisrivastava07",
+        "Ruchika-mittal01"
       ]
     },
     "fileMetadata": {},

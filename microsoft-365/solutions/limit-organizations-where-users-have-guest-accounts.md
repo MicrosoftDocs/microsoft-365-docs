@@ -1,11 +1,11 @@
 ---
 title: "Limit organizations where users can have guest accounts"
-ms.author: jtremper
-author: jacktremper
-manager: pamgreen
+author: DaniEASmith
+ms.author: danismith
+manager: jtremper
 ms.date: 12/11/2023
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-solutions
 ms.collection: 
 - highpri

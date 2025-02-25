@@ -3,9 +3,9 @@ title: "Explaining Microsoft 365 Groups to your users"
 ms.reviewer: rahulnayak
 ms.date: 07/20/2020
 f1.keywords: NOCSH
-ms.author: jtremper
-author: jacktremper
-manager: pamgreen
+author: DaniEASmith
+ms.author: danismith
+manager: jtremper
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business

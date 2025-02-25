@@ -64,7 +64,7 @@ The following links for PowerPoint and PDF can be downloaded and printed in tabl
 
 3. At the top of the SharePoint home page, select **+ Create site** and choose the **Communication site** option.
 
-Learn all [about Communications sites](https://support.microsoft.com/office/94a33429-e580-45c3-a090-5512a8070732) and how to [create a communication site in SharePoint Online](https://support.microsoft.com/7fb44b20-a72f-4d2c-9173-fc8f59ba50eb).
+Learn all [about Communications sites](https://support.microsoft.com/office/94a33429-e580-45c3-a090-5512a8070732) and how to [create a communication site in SharePoint Online](https://support.microsoft.com/office/7fb44b20-a72f-4d2c-9173-fc8f59ba50eb).
 
 ## Admin settings
 

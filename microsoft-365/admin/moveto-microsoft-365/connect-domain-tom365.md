@@ -39,7 +39,7 @@ Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?l
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198216).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LFpy?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b9007f8d-dd2b-4ceb-bf40-6529c45ad321]
 
 Once you’ve set up Microsoft 365 and moved your email data from Google Workspace, you can connect your domain to Microsoft 365. 
 

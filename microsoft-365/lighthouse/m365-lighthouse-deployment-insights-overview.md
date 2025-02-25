@@ -1,11 +1,11 @@
 ---
-title: "Understanding deployment insights in Microsoft 365 Lighthouse"
+title: "Understand deployment insights in Microsoft 365 Lighthouse"
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: jatingupta
-ms.date: 06/05/2023
+ms.date: 09/27/2024
 audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-lighthouse
@@ -22,7 +22,7 @@ search.appverid: MET150
 description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn more about deployment insights."
 ---
 
-# Understanding deployment insights in Microsoft 365 Lighthouse
+# Understand deployment insights in Microsoft 365 Lighthouse
 
 Microsoft 365 Lighthouse provides deployment insights within and across the tenants you manage. Deployment insights are derived from a combination of signals that are either detected by Lighthouse or entered into Lighthouse by a user in the partner tenant. Deployment insights help you:
 
@@ -40,7 +40,7 @@ To access deployment insights, in the left navigation pane in [Lighthouse](https
 
 ## Watch: Deployment insights
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW15vPs]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=2dcf8c3e-a69c-4dff-a027-b2e9c282b818]
 
 Check out the other [Microsoft 365 Lighthouse videos](https://www.youtube.com/playlist?list=PLnWjfDdQkUQSCbV-ftVD311_fZxghB22C) on our YouTube channel.
 
@@ -108,7 +108,6 @@ In this example, all customer tenants have 100 users and have been assigned a ba
 - K – Not complete, with 1 newly detected user with a status of **Not Licensed** for all tasks
 - L – Not complete, with 1 user with from which all licenses have been unassigned
 
-
 | Tenant | Baseline         | Deployment plan status | Task progress | Dismissed tasks | Not licensed tasks | Regressed tasks | User progress | Users excluded | User exclusions |
 |--------|------------------|------------------------|---------------|-----------------|--------------------|-----------------|---------------|----------------|-----------------|
 | A      | Default baseline | Complete               | 10/10         | 0               | 0                  | 0               | 100/100       | 0              | 0               |
@@ -126,7 +125,7 @@ In this example, all customer tenants have 100 users and have been assigned a ba
 
 ### Deployment insights details by tenant
 
-Selecting any customer tenant from the list opens the deployment insights details pane for that tenant, which provides the following information for each tenant:
+Select any customer tenant from the list to open the deployment insights details pane for that tenant, which provides the following information:
 
 - Overview
 - Dismissed tasks
@@ -142,7 +141,7 @@ The **Overview** tab provides the status of each deployment task assigned to the
 
 | **Column**  | **Description**                                                                                                              |
 |-------------|------------------------------------------------------------------------------------------------------------------------------|
-| Task        | The name of the task.                                                                                                        |
+| Tasks        | The name of the task.                                                                                                        |
 | Task status | The status of the deployment task.                                                                                           |
 | User status | The number of users who've completed the task, who've been excluded from the task, or who haven't been targeted for the task. |
 
@@ -162,7 +161,7 @@ The **Excluded users** tab provides details about users who've been excluded fro
 
 | **Column**               | **Description**                                                      |
 |--------------------------|----------------------------------------------------------------------|
-| Task with excluded users | The name of the task from which one or more users have been excluded. |
+| Tasks with excluded users | The name of the task from which one or more users have been excluded. |
 | Excluded users           | The names of each user who's been excluded.                       |
 
 #### Required licenses tab
@@ -176,7 +175,7 @@ The **Required licenses** tab provides details about deployment tasks where one 
 
 ### Deployment insights table by task
 
-To view deployment insights by task, select the **Tasks** tab. The data on the **Tasks** tab can be filtered by baseline and category. It provides the following information for each customer tenant:
+To view deployment insights by task, select the **Tasks** tab. The data on the **Tasks** tab can be filtered by baseline and provides the following information:
 
 | **Column**       | **Description**                                                             |
 |------------------|-----------------------------------------------------------------------------|
@@ -192,14 +191,11 @@ Select any task from the list to open the deployment insights details pane for t
 
 | **Column**          | **Description**                                                     |
 |---------------------|---------------------------------------------------------------------|
-| Tenant              | The name of the customer tenant.                                             |
+| Tenant              | The name of the customer tenant.                                    |
 | Task status         | The deployment status of the task for the tenant.                   |
 | Total users         | The number of users who are assigned to the task.                   |
 | Compliant users     | The number of users who are **Compliant**.                          |
 | Not compliant users | The number of users who are **Not compliant**.                      |
-| Excluded users      | The number of users who are **Excluded** from this task.            |
-| Not licensed users  | The number of users who are **Not licensed** to complete the task.  |
-| Not targeted users  | The number of users who are **Not targeted** to complete this task. |
 
 ## Next steps
 
@@ -207,6 +203,6 @@ For information on how to manage tenants by using deployment insights, see [Mana
 
 ## Related content
 
-[Overview of deployment tasks](m365-lighthouse-overview-deployment-task.md) (article)\
-[Overview of using baselines to deploy standard tenant configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (article)\
-[Understand deployment statuses](m365-lighthouse-understand-deployment-statuses.md) (article)
+[Overview of deployment tasks in Microsoft 365 Lighthouse](m365-lighthouse-overview-deployment-task.md) (article)\
+[Overview of using Micrososft 365 Lighthouse baselines to deploy standard tenant configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (article)\
+[Understand deployment statuses in Microsoft 365 Ligthouse](m365-lighthouse-understand-deployment-statuses.md) (article)

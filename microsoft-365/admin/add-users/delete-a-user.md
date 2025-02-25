@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 09/26/2023
+ms.date: 10/01/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -66,6 +66,10 @@ Since the guided experience walks through the steps to delete a user, here's how
 ::: moniker-end
 
 2. Select the user that you want to delete, and then select **Delete user**.
+
+3. On the Delete user page, select what you want to do with the user's license and email and OneDrive accounts.
+
+4. Then select **Delete user**.
 
 ## User management admin: Delete one or more users from Microsoft 365
 

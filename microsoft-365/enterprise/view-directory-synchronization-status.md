@@ -3,7 +3,7 @@ title: "View directory synchronization status in Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/18/2023
+ms.date: 09/24/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -35,6 +35,9 @@ If you have integrated your on-premises Active Directory Domain Services (AD DS)
 
 - Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) and choose **DirSync Status** on the home page.
 - Alternately, you can go to **Users** \> **Active users**, and on the **Active users** page, select the **Ellipse** \> **Directory synchronization**. On the **Directory Synchronization** pane, choose **Go to DirSync management**.
+
+> [!NOTE]
+> If you haven't already set up directory synchronization for your tenant, you will be redirected to the **Add or sync users to Microsoft Entra ID** advanced deployment guide. Follow the steps in the guide to add cloud users, set up one-time or continuous sync, or find troubleshooting information.
 
 ## Information on the Manage directory synchronization page
 

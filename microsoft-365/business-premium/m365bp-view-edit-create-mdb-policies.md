@@ -2,8 +2,8 @@
 title: View or edit device protection policies
 description: View, edit, create, and delete device protection policies in Microsoft 365 Business Premium
 search.appverid: MET150
-ms.author: siosulli
-author: siosulli
+ms.author: chrisda
+author: chrisda
 manager: deniseb
 audience: Admin
 ms.topic: overview
@@ -37,9 +37,9 @@ Microsoft 365 Business Premium includes two main types of policies to protect yo
 
 Additional policies include:
 
-- **Web content filtering**, which enables your security team to track and regulate access to websites based on content categories (such as adult content, high bandwidth, legal liability, and leisure). For more information, see [Web content filtering in Microsoft Defender for Business](../security/defender-business/mdb-web-content-filtering.md).
-- **Controlled folder access**, which allows only trusted apps to access protected folders on Windows devices. Think of this capability as ransomware protection. For more information, see [Set up or edit your controlled folder access policy in Microsoft Defender for Business](../security/defender-business/mdb-controlled-folder-access.md).
-- **Attack surface reduction rules** that help reduce the places and ways your business might be vulnerable to cyberthreats and attacks. For more information, see [Enable your attack surface reduction rules in Microsoft Defender for Business](../security/defender-business/mdb-asr.md).
+- **Web content filtering**, which enables your security team to track and regulate access to websites based on content categories (such as adult content, high bandwidth, legal liability, and leisure). For more information, see [Web content filtering in Microsoft Defender for Business](/defender-business/mdb-web-content-filtering).
+- **Controlled folder access**, which allows only trusted apps to access protected folders on Windows devices. Think of this capability as ransomware protection. For more information, see [Set up or edit your controlled folder access policy in Microsoft Defender for Business](/defender-business/mdb-controlled-folder-access).
+- **Attack surface reduction rules** that help reduce the places and ways your business might be vulnerable to cyberthreats and attacks. For more information, see [Enable your attack surface reduction rules in Microsoft Defender for Business](/defender-business/mdb-asr).
 
 These policies are part of Microsoft Defender for Business, included in your Microsoft 365 Business Premium subscription. Information is provided for working with policies in the Microsoft Defender portal or in the Microsoft Intune admin center.
 
@@ -88,8 +88,8 @@ The following details apply to working with your policies in the Microsoft Defen
 
 6. On the **Configuration settings** tab, review the settings. If necessary, you can edit the settings for your policy. To get help with this task, see the following articles:
 
-   - [Understand next-generation configuration settings](../security/defender-business/mdb-next-generation-protection.md)
-   - [Firewall settings](../security/defender-business/mdb-firewall.md)
+   - [Understand next-generation configuration settings](/defender-business/mdb-next-generation-protection)
+   - [Firewall settings](/defender-business/mdb-firewall)
 
    After you have specified your next-generation protection settings, choose **Next**.
 
@@ -111,7 +111,7 @@ The following details apply to working with your policies in the Microsoft Defen
 4. On the **General information** tab, take the following steps:
 
    1. Specify a name and description. This information will help you and your team identify the policy later on.
-   2. Review the policy order, and edit it if necessary. (For more information, see [Policy order](../security/defender-business/mdb-policy-order.md).)
+   2. Review the policy order, and edit it if necessary. For more information, see [Policy order](/defender-business/mdb-policy-order).
    3. Choose **Next**.
 
 5. On the **Device groups** tab, either create a new device group, or use an existing group. Policies are assigned to devices through device groups. Here are some things to keep in mind:
@@ -121,9 +121,9 @@ The following details apply to working with your policies in the Microsoft Defen
    - When you set up your device group, you specify certain criteria, such as the operating system version. Devices that meet the criteria are included in that device group, unless you exclude them.
    - All device groups, including the default and custom device groups that you define, are stored in Microsoft Entra ID.
 
-   To learn more about device groups, see [Device groups in Microsoft Defender for Business](../security/defender-business/mdb-create-edit-device-groups.md).
+   To learn more about device groups, see [Device groups in Microsoft Defender for Business](/defender-business/mdb-create-edit-device-groups).
 
-6. On the **Configuration settings** tab, specify the settings for your policy, and then choose **Next**. For more information about the individual settings, see [Understand next-generation configuration settings in Microsoft Defender for Business](../security/defender-business/mdb-next-generation-protection.md).
+6. On the **Configuration settings** tab, specify the settings for your policy, and then choose **Next**. For more information about the individual settings, see [Understand next-generation configuration settings in Microsoft Defender for Business](/defender-business/mdb-next-generation-protection).
 
 7. On the **Review your policy** tab, review the general information, targeted devices, and configuration settings.
 

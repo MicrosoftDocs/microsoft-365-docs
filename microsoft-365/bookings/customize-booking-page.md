@@ -23,7 +23,7 @@ To customize your booking page, sign in to [microsoft365.com](https://office.com
 
 ## Watch: Customize and publish your booking page
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuYil]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=3e98483c-1fe1-4976-aec7-142750fdd987]
 
 ## Steps
 

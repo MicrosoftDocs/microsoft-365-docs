@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 12/07/2023
+ms.date: 01/06/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -46,18 +46,18 @@ You must be a member of the user administrator role to add email aliases to a us
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 
-2. On the **Active Users** page, select the user > **Manage email aliases**. You won't see this option if the person doesn't have a license assigned to them.
+2. On the **Active Users** page, select the user you want to manage.
 
-3. Under **Aliases**, add the new name in the **Username** field, select a domain and choose **Add**.
+1. Under **Aliases** and select **Manage username and email**. You won't see this option if the person doesn't have a license assigned to them.
+
+3. On the **Manage username and email** page, add the new alias in the **Username** field, select a domain and choose **Add**.
 
     > [!TIP]
     > The email alias must end with a domain from the drop-down list. To add another domain name to the list, see [Add a domain to Microsoft 365](../setup/add-domain.md).
   
-4. When you're done, choose **Save changes**.
+4. When you're done, choose **Save changes**. It usually takes about 24 hours for the new aliases to update.
 
-5. Wait 24 hours for the new aliases to update in Microsoft 365.
-
-6. The user will now have a primary address and an alias. For example, all mail sent to jenna@contoso.com, and her alias, jen@contoso.com, will go to Jenna's inbox. **When the user replies, the *From* address will depend on her Outlook client. Outlook on the web will use the alias at which the email was received. Outlook desktop will use her primary email alias.**
+5. The user will now have a primary address and an alias. For example, all mail sent to jenna@contoso.com, and her alias, jen@contoso.com, will go to Jenna's inbox. **When the user replies, the *From* address will depend on her Outlook client. Outlook on the web will use the alias at which the email was received. Outlook desktop will use her primary email alias.**
 
 ### Sending email from the proxy address easily
 

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 08/18/2023
+ms.date: 09/30/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -97,4 +97,4 @@ This message appears when Microsoft 365 is experiencing a replication latency is
 [Create a shared mailbox](create-a-shared-mailbox.md) (article)\
 [Configure a shared mailbox](configure-a-shared-mailbox.md) (article)\
 [Convert a user mailbox to a shared mailbox](convert-user-mailbox-to-shared-mailbox.md) (article)\
-[Remove a license from a shared mailbox](remove-license-from-shared-mailbox.md) (article)
+

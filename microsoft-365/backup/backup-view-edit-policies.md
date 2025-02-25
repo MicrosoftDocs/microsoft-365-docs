@@ -5,8 +5,8 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 09/06/2024
-ms.topic: conceptual
+ms.date: 02/25/2025
+ms.topic: article
 ms.service: microsoft-365-backup
 ms.custom: backup
 search.appverid:
@@ -69,7 +69,7 @@ Follow these steps to set up a backup policy for OneDrive accounts using Microso
 
     ![Screenshot of the OneDrive backup policy created page.](../media/m365-backup/backup-policy-created-onedrive.png)
 
-    Once the sites are added to a backup policy, it might take up to 15 minutes per 1,000 sites for restore points to become available for restore.
+    Once the sites are added to a backup policy, it might take 15 to 25 minutes per 1,000 sites for restore points to become available for restore.
 
 # [SharePoint](#tab/sharepoint)
 
@@ -136,7 +136,10 @@ Follow these steps to set up a backup policy for Exchange mailboxes sites using 
 
     ![Screenshot of the Overview page for Exchange.](../media/m365-backup/backup-overview-page-exchange.png)
 
-6. On the **Choose selection method** page, you can set up shared or user Exchange mailboxes using any or all three ways. A protection scope is the scope of mailboxes within Exchange that you want to protect with Microsoft 365 Backup.
+6. On the **Choose selection method** page, you can set up shared or user mailboxes using any or all three ways. Other Exchange recipient types, such as room mailboxes, are not supported at this time. A protection scope is the scope of mailboxes within Exchange that you want to protect with Microsoft 365 Backup.
+
+    > [!NOTE]
+    > Adding a mailbox to the backup policy will back up the primary and archive mailboxes.
 
     ![Screenshot of the Choose selection method page for Exchange.](../media/m365-backup/backup-choose-selection-method-exchange.png)
 
@@ -148,11 +151,11 @@ Follow these steps to set up a backup policy for Exchange mailboxes sites using 
 
     The rule-based feature for bulk addition of mailboxes via security groups or distribution lists can accommodate a maximum of three groups at a time. These rules are static and applied one time only. That is, the security groups or distribution lists are flattened at the time of adding to the backup configuration policy. For example. groups or list won't be dynamically updated in the system if users are added or removed from the original security group.
 
-    > [!NOTE]
-    > The site last modified feature is in preview.
-
     c. Under **Select mailboxes individually**, you can search and select mailboxes you want to add to a backup policy.
 
+    > [!NOTE]
+    > Hybrid deployments, where a user's primary mailbox resides on premises while their archive has been migrated to Exchange Online, are not supported.
+    
 7. Once you've made the right selections, select **Next** to create the backup policy for Exchange.
 
 8. On the **Review Exchange backup policy** page, review the information to make sure it's how you want it, and then select **Create policy** (or **Update policy** if it's an update).
@@ -176,11 +179,11 @@ Select the **OneDrive**, **SharePoint**, or **Exchange** tab for steps to view a
 
 Follow these steps to view and edit backup policies for OneDrive.
 
-1. In the Microsoft 365 admin center, on the **Microsoft 365 Backup** page, in the **OneDrive** section, select **Edit scope**.
+1. In the Microsoft 365 admin center, on the **Microsoft 365 Backup** page, in the **OneDrive** section, in the **Scope** area, select **Edit**.
 
     ![Screenshot showing the view and edit backup policy for OneDrive in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-onedrive.png)
 
-2. On the **OneDrive accounts backup policy** panel, on the **Policy details** tab, select **Edit scope**.
+2. On the **OneDrive accounts backup policy** panel, on the **Policy details** tab, in the **Scope** area, select **Edit**.
 
 3. You can either add new accounts to or remove accounts from an existing OneDrive backup policy.
 
@@ -199,17 +202,17 @@ Follow these steps to view and edit backup policies for OneDrive.
     ![Screenshot of the updated OneDrive accounts backup policy panel in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-updated-account.png)
 
     > [!NOTE]
-    > Removing accounts from backup policy means no future backups will be taken for those removed accounts. Existing backups for those accounts will not be deleted.
+    > Removing accounts from backup policy means no future backups will be taken for those removed accounts. Existing backups for those accounts will not be deleted and will be charged.
 
 # [SharePoint](#tab/sharepoint)
 
 Follow these steps to view and edit backup policies in SharePoint.
 
-1. In the Microsoft 365 admin center, on the **Microsoft 365 Backup** page, in the **SharePoint** section, select **Edit scope**.
+1. In the Microsoft 365 admin center, on the **Microsoft 365 Backup** page, in the **SharePoint** section, in the **Scope** area, select **Edit**.
 
     ![Screenshot showing the view and edit backup policy for SharePoint in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-sharepoint.png)
 
-2. On the **SharePoint sites backup policy** panel, on the **Policy details** tab, select **Edit scope**.
+2. On the **SharePoint sites backup policy** panel, on the **Policy details** tab, in the **Scope** area, select **Edit**.
 
 3. You can either add new sites to or remove sites from an existing SharePoint backup policy.
 
@@ -228,17 +231,17 @@ Follow these steps to view and edit backup policies in SharePoint.
     ![Screenshot of the updated SharePoint sites backup policy panel in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-updated-sites.png)
 
     > [!NOTE]
-    > Removing sites from backup policy means no future backups will be taken for those removed sites. Existing backups for the removed sites will not be deleted.
+    > Removing sites from backup policy means no future backups will be taken for those removed sites. Existing backups for the removed sites will not be deleted and will be charged.
 
 # [Exchange](#tab/exchange)
 
 Follow these steps to view and edit backup policies for Exchange.
 
-1. In the Microsoft 365 admin center, on the **Microsoft 365 Backup** page, in the **Exchange** section, select **Edit scope**.
+1. In the Microsoft 365 admin center, on the **Microsoft 365 Backup** page, in the **Exchange** section, in the **Scope** area, select **Edit**.
 
     ![Screenshot showing the view and edit backup policy for Exchange in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-exchange.png)
 
-2. On the **Exchange mailbox backup policy** panel, on the **Policy details** tab, select **Edit scope**.
+2. On the **Exchange mailbox backup policy** panel, on the **Policy details** tab, in the **Scope** area, select **Edit**.
 
 3. You can either add new user mailboxes to or remove user mailboxes from the existing Exchange backup policy.
 
@@ -255,6 +258,21 @@ Follow these steps to view and edit backup policies for Exchange.
     ![Screenshot of the updated Exchange mailbox backup policy panel in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-updated-mailbox.png)
 
     > [!NOTE]
-    > Removing mailboxes from backup policy means no future backups will be taken for those removed mailboxes. Existing backups for those mailboxes will not be deleted.
+    > Removing mailboxes from backup policy means no future backups will be taken for those removed mailboxes. Existing backups for those mailboxes will not be deleted and will be charged.
 
 ---
+
+## States of backup
+
+|States  |Definition  |
+|---------|---------|
+|Active     | Protection scope selected under backup policy is being actively backed up. |
+|Paused     | No further backups will be taken but already taken backups will be preserved. |
+|Not set up | No backup policy is set up for this scope.  |
+|Processing | A change to backup policy or a restore is in progress.  |
+
+## Multi-geo environments
+
+Microsoft 365 Backup supports the backup of sites and user accounts from both the central and satellite locations if the multi-geo feature is enabled on your tenant. This means that you can add the sites or user accounts from all geos while creating the backup configuration policy via the CSV file upload method. Adding sites via the site picker, search, or filter rules doesn't currently support multi-geo. Those user interface experiences today only support addition of sites in the tenant's central location.
+
+Most importantly, data in the backups will honor the multi-geo residency requirements and keep data in the geo you've defined it to live.

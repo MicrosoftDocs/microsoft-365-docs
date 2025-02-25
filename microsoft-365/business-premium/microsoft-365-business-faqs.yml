@@ -12,7 +12,7 @@ metadata:
   ms.collection:
   - tier2
   - m365-security
-  ms.date: 05/31/2024
+  ms.date: 11/15/2024
   ms.localizationpriority: medium
   audience: microsoft-business
   keywords: Microsoft 365 Business Premium, Microsoft 365, SMB, FAQ, frequently asked questions, answers, business
@@ -87,7 +87,7 @@ sections:
 
           **Microsoft 365 Business Standard** includes the apps and services that businesses need for remote work and collaboration. It includes Microsoft Teams, secure cloud storage, business email, and premium Office applications across devices.
 
-          **Microsoft 365 Business Premium** is a comprehensive cloud productivity and security solution that was designed and built for small and medium-sized businesses (1-300 employees). Microsoft 365 Business Premium includes everything in Microsoft 365 Business Standard, plus [Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-overview) and [Defender for Office 365 Plan 1](/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet). You get more cybersecurity and productivity capabilities, including advanced security protection for your devices, with next-generation protection, endpoint detection and response, and threat & vulnerability management. You also get advanced security protection for email and documents, with Safe Links and Safe Attachments.
+          **Microsoft 365 Business Premium** is a comprehensive cloud productivity and security solution that was designed and built for small and medium-sized businesses (1-300 employees). Microsoft 365 Business Premium includes everything in Microsoft 365 Business Standard, including [Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-overview) and [Defender for Office 365 Plan 1](/defender-office-365/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet). You get more cybersecurity and productivity capabilities, including advanced security protection for your devices, with next-generation protection, endpoint detection and response, and threat & vulnerability management.
 
           **Microsoft 365 Enterprise** is a complete, intelligent solution that empowers everyone to be creative and work together securely. Microsoft 365 for enterprise is designed for large organizations, but it can also be used for medium-sized and small businesses who need the most advanced security and productivity capabilities.
 

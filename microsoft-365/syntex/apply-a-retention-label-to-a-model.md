@@ -6,7 +6,7 @@ manager: jtremper
 ms.reviewer: ssquires
 ms.date: 08/13/2024
 audience: admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
@@ -22,7 +22,7 @@ description: Learn how to apply a retention label to a model in Microsoft Syntex
 
 </br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GydO]  
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=76cbc982-72ee-414d-8c91-d407f94e1628]  
 
 </br>
 
@@ -129,5 +129,3 @@ You can add a retention label to an existing structured or freeform document pro
 
 > [!NOTE]
 > You must be the model owner for the model settings pane to be editable.
-
-

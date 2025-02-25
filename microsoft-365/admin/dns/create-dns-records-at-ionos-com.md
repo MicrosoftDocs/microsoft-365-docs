@@ -2,12 +2,12 @@
 title: "Connect your DNS records at IONOS to Microsoft 365"
 f1.keywords:
 - CSH
-ms.author: nkagole
-author: nataliekagole
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
 ms.date: 04/01/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
@@ -40,7 +40,7 @@ You have two options for setting up DNS records for your domain:
 
     OR
 
-- [**Use the manual steps**](#create-dns-records-with-manual-setup) Verify your domain using the manual steps below and choose when and which records to add to your domain registrar. This allows you to set up new MX (mail) records, for example, at your convenience.
+- [**Use the manual steps**](#create-dns-records-with-manual-setup) Verify your domain using the following manual steps and choose when and which records to add to your domain registrar. This allows you to set up new MX (mail) records, for example, at your convenience.
 
 ## Use Domain Connect to verify and set up your domain
 
@@ -58,7 +58,7 @@ Follow these steps to automatically verify and set up your IONOS domain with Mic
 
 1. On the Add DNS records page, select **Add DNS records**.
 
-1. On the IONOS login page, sign in to your account, and select **Connect**, and **Allow**.
+1. On the IONOS sign-in page, sign in to your account, and select **Connect**, and **Allow**.
 
     :::image type="content" source="../../media/dns-ionos/ionos-domainconnects-3.png" alt-text="Select Connect, and then Allow.":::
 
@@ -69,7 +69,7 @@ Follow these steps to automatically verify and set up your IONOS domain with Mic
 After you add these records at IONOS, your domain will be set up to work with Microsoft services.
 
 > [!CAUTION]
-> Note that IONOS doesn't allow a domain to have both an MX record and a top-level Autodiscover CNAME record. This limits the ways in which you can configure Exchange Online for Microsoft. There is a workaround, but we recommend employing it **only** if you already have experience with creating subdomains at IONOS.
+> IONOS doesn't allow a domain to have both an MX record and a top-level Autodiscover CNAME record. This limits the ways in which you can configure Exchange Online for Microsoft. There's a workaround, but we recommend employing it **only** if you already have experience with creating subdomains at IONOS.
 > If despite this [service limitation](../setup/domains-faq.yml) you choose to manage your own Microsoft DNS records at IONOS, follow the steps in this article to verify your domain and to set up DNS records for email, Skype for Business Online, and so on.
 
 > [!NOTE]
@@ -77,12 +77,12 @@ After you add these records at IONOS, your domain will be set up to work with Mi
 
 ### Add a TXT record for verification
 
-Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.
+Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to sign in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.
 
 > [!NOTE]
 > This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like.
 
-1. To get started, go to your domains page at IONOS by using [this link](https://login.ionos.com/). Follow the prompt to log in.
+1. To get started, go to your domains page at IONOS by using [this link](https://login.ionos.com/). Follow the prompt to sign in.
 
 1. Select **Menu**, and then select **Domains and SSL**.
 
@@ -132,7 +132,7 @@ To verify the record in Microsoft 365:
 ### Add an MX record so email for your domain will come to Microsoft
 
 
-1. To get started, go to your domains page at IONOS by using [this link](https://login.ionos.com/). Follow the prompt to log in.
+1. To get started, go to your domains page at IONOS by using [this link](https://login.ionos.com/). Follow the prompt to sign in.
 
 1. Select **Menu**, and then select **Domains and SSL**.
 
@@ -166,7 +166,7 @@ To verify the record in Microsoft 365:
 
 ### Add the CNAME record required for Microsoft
 
-1. To get started, go to your domains page at IONOS by using [this link](https://login.ionos.com/). Follow the prompt to log in.
+1. To get started, go to your domains page at IONOS by using [this link](https://login.ionos.com/). Follow the prompt to sign in.
 
 1. Select **Menu**, and then select **Domains and SSL**.
 
@@ -196,7 +196,7 @@ To verify the record in Microsoft 365:
     |---|---|
     |autodiscover|autodiscover.outlook.com|
 
-1. Under **Actions** for the **autodiscover** subdomain that you just created, select the gear control, and then select **DNS** from the drop-down list.
+1. Under **Actions** for the **autodiscover** subdomain that you created, select the gear control, and then select **DNS** from the drop-down list.
 
 1. Select **Add record**, and then select the **CNAME** section.
 
@@ -211,9 +211,9 @@ To verify the record in Microsoft 365:
 ## Add a TXT record for SPF to help prevent email spam
 
 > [!IMPORTANT]
-> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Microsoft. Instead, add the required Microsoft values to the current record so that you have a  *single*  SPF record that includes both sets of values. Need examples? Check out these [External Domain Name System records for Microsoft](../../enterprise/external-domain-name-system-records.md). To validate your SPF record, you can use one of these[SPF validation tools](../setup/domains-faq.yml).
+> You can't have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, and delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Microsoft. Instead, add the required Microsoft values to the current record so that you have a  *single*  SPF record that includes both sets of values. Need examples? Check out these [External Domain Name System records for Microsoft](../../enterprise/external-domain-name-system-records.md). To validate your SPF record, you can use one of these[SPF validation tools](../setup/domains-faq.yml).
 
-1. To get started, go to your domains page at IONOS by using [this link](https://login.ionos.com/). Follow the prompt to log in.
+1. To get started, go to your domains page at IONOS by using [this link](https://login.ionos.com/). Follow the prompt to sign in.
 
 1. Select **Menu**, and then select **Domains and SSL**.
 
@@ -244,11 +244,11 @@ To verify the record in Microsoft 365:
 
 ## Advanced option: Skype for Business
 
-Only select this option if your organization uses Skype for Business for online communication services like chat, conference calls, and video calls, in addition to Microsoft Teams. Skype needs 4 records: 2 SRV records for user-to-user communication, and 2 CNAME records to sign-in and connect users to the service.
+Only select this option if your organization uses Skype for Business for online communication services like chat, conference calls, and video calls, in addition to Microsoft Teams. Skype needs four records: Two SRV records for user-to-user communication, and two CNAME records to sign-in and connect users to the service.
 
 ### Add two more CNAME records
 
-1. To get started, go to your domains page at IONOS by using [this link](https://login.ionos.com/). Log in.
+1. To get started, go to your domains page at IONOS by using [this link](https://login.ionos.com/). Sign in.
 
 1. Select **Menu**, and then select **Domains and SSL**.
 
@@ -278,7 +278,7 @@ Only select this option if your organization uses Skype for Business for online 
     |---|---|
     |lyncdiscover   |webdir.online.lync.com  |
 
-1. Under **Actions** for the **lyncdiscover** subdomain that you just created, select the gear control, and then select **DNS** from the drop-down list.
+1. Under **Actions** for the **lyncdiscover** subdomain that you created, select the gear control, and then select **DNS** from the drop-down list.
 
 1. Select **Add record**, and then select the **CNAME** section.
 
@@ -296,7 +296,7 @@ Only select this option if your organization uses Skype for Business for online 
     |---|---|
     |sip|sipdir.online.lync.com|
 
-1. Under **Actions** for the subdomain that you just created, select the gear control, and then select **DNS** from the drop-down list.
+1. Under **Actions** for the subdomain that you created, select the gear control, and then select **DNS** from the drop-down list.
 
 1. Select **Add record**.
 
@@ -314,7 +314,7 @@ Only select this option if your organization uses Skype for Business for online 
 
 ## Add the two SRV records required for Microsoft
 
-1. To get started, go to your domains page at IONOS by using [this link](https://login.ionos.com/). Log in.
+1. To get started, go to your domains page at IONOS by using [this link](https://login.ionos.com/). Sign in.
 
 1. Select **Menu**, and then select **Domains and SSL**.
 
@@ -350,14 +350,14 @@ Only select this option if your organization uses Skype for Business for online 
 
 ## Advanced option: Intune and Mobile Device Management for Microsoft 365
 
-This service helps you secure and remotely manage mobile devices that connect to your domain. Mobile Device Management needs 2 CNAME records so that users can enroll devices to the service.
+This service helps you secure and remotely manage mobile devices that connect to your domain. Mobile Device Management needs two CNAME records so that users can enroll devices to the service.
 
 ### Add the two required CNAME records
 
 > [!IMPORTANT]
 > Follow the subdomain procedure that you used for the other CNAME records, and supply the values from the following table.
 
-1. To get started, go to your domains page at IONOS by using [this link](https://login.ionos.com/). Follow the prompt to log in.
+1. To get started, go to your domains page at IONOS by using [this link](https://login.ionos.com/). Follow the prompt to sign in.
 
 1. Select **Menu**, and then select **Domains and SSL**.
 
@@ -387,7 +387,7 @@ This service helps you secure and remotely manage mobile devices that connect to
     |---|---|
     |enterpriseregistration|enterpriseregistration.windows.net|
 
-1. Under **Actions** for the **enterpriseregistration** subdomain that you just created, select the gear control, and then select **DNS** from the drop-down list.
+1. Under **Actions** for the **enterpriseregistration** subdomain that you created, select the gear control, and then select **DNS** from the drop-down list.
 
 1. Select **Add record**, and then select the **CNAME** section.
 
@@ -405,7 +405,7 @@ This service helps you secure and remotely manage mobile devices that connect to
     |---|---|
     |enterpriseenrollment|enterpriseenrollment-s.manage.microsoft.com|
 
-1. Under **Actions** for the **enterpriseenrollment** subdomain that you just created, select the gear control, and then select **DNS** from the drop-down list.
+1. Under **Actions** for the **enterpriseenrollment** subdomain that you created, select the gear control, and then select **DNS** from the drop-down list.
 
 1. Select **Add record**.
 

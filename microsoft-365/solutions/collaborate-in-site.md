@@ -1,8 +1,8 @@
 ---
 title: Collaborate with guests in a site (IT Admins)
-ms.author: jtremper
-author: jacktremper
-manager: pamgreen
+ms.author: ruihu
+author: maggierui
+manager: jtremper
 ms.date: 05/31/2024
 audience: ITPro
 ms.topic: article
@@ -34,7 +34,7 @@ In this article, we'll walk through the Microsoft 365 configuration steps necess
 
 This video shows the configuration steps described in this document.</br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE44Llg?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=614e2a1a-6b9c-421e-bab0-a94e9a9520d9]
 
 ## Microsoft Entra External ID external collaboration settings
 

@@ -1,8 +1,8 @@
 ---
 title: Onboard trusted vendors to collaborate in Microsoft 365
-ms.author: jtremper
-author: jacktremper
-manager: pamgreen
+author: DaniEASmith
+ms.author: danismith
+manager: jtremper
 ms.date: 08/14/2023
 audience: ITPro
 ms.topic: article

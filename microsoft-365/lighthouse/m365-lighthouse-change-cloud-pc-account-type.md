@@ -4,14 +4,14 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: katmartin
-ms.date: 06/21/2023
+ms.reviewer: ebamoh
+ms.date: 10/21/2024
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
-- Tier2
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -35,10 +35,10 @@ Managed Service Provider (MSP) technicians may set the account type for a Busine
 
 ## Before you begin 
 
-You must be either a Windows 365 Administrator or a Global Administrator in the partner tenant.
+You must hold either the Cloud PC Administrator (recommended) or Windows 365 Administrator role in Microsoft Intune to set or change a Windows 365 Business Cloud PC account type in Lighthouse.
 
 > [!CAUTION]
-> To help keep your organization secure, Microsoft recommends that you use roles with the minimum level of permissions needed to perform a job. Global Administrator is a highly privileged role that should be limited to scenarios where you can't use a less-privileged role.
+> To help keep your organization secure, Microsoft recommends that you use roles with the minimum level of permissions needed to perform a job.
 
 ## Set or change a Windows 365 Business Cloud PC account type
 

@@ -4,9 +4,9 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 08/30/2024
+ms.date: 01/22/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ms.custom: setup
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
@@ -15,7 +15,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to set up and manage structured and freeform document processing in Microsoft Syntex.
+description: Learn how to set up and manage structured and freeform document processing in SharePoint.
 ---
 
 # Set up and manage structured and freeform document processing in Microsoft Syntex
@@ -26,7 +26,7 @@ The structured and freeform document processing service for Microsoft Syntex is 
 
 ### Licensing
 
-Before you can use structured and freeform document processing in Syntex, you must first link an Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). Structured and freeform document processing in Syntex is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md).
+Before you can use structured and freeform document processing, you must first link an Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). Structured and freeform document processing is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md).
 
 ### Permissions
 
@@ -36,45 +36,43 @@ You must be a [SharePoint Administrator](/entra/identity/role-based-access-contr
 
 ## Set up structured and freeform document processing
 
-After an [Azure subscription is linked to Microsoft Syntex](syntex-azure-billing.md), structured and freeform document processing will be automatically set up and enabled for all SharePoint sites.
+After an [Azure subscription is linked to Microsoft Syntex](syntex-azure-billing.md), structured and freeform document processing is automatically set up and enabled for all SharePoint sites.
 
 ## Manage sites
 
-By default, structured and default document processing is turned on for libraries in all SharePoint sites. Follow these steps to manage which SharePoint sites users can use to create custom models to process files.
+By default, structured and default document processing is turned on for libraries in all SharePoint sites. To restrict the sites where users can create structured and freeform models for processing files, follow these steps.
 
-1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>.
+1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Settings > Org settings**</a>.
 
-2. Under **Files and content**, select **Automate content processes with Syntex**.
+2. On the **Org settings** page, select **Pay-as-you-go services**.
 
-3. On the **Automate content processes with Syntex** page, select **Go to Syntex settings**.
+3. On the **Pay-as-you-go services** page, select the **Settings** tab.
 
-4. On the Syntex page, under **Document & image services**, select **Structured and freeform document processing**.
+4. Under **Document & image services**, select **Structured and freeform document processing**.
 
-5. On the **Structured and freeform document processing** panel:
+5. On the **Structured and freeform document processing** panel, select the **Sites** tab.
 
-    a. Choose which site or sites this service should be enabled for.
+6. In the **Sites where models can be used** section, select **Edit**.
 
-    > [!NOTE]
-    > Disabling a site after a model is made available to process files on that site will not disable the model. Models can still be used to process files and incur charges. A model can be made available to process files by being created either on that site or in a content center.
-
-    b. To restrict user access to this service, under **Sites where models can be created**, select **Edit**. On the **Where can prebuilt models be used?** panel, select **No sites** or **Selected sites (up to 100)** and follow the instructions to either select the sites or upload a CSV file listing a maximum of 100 sites. You can then manage site access permissions for the sites you selected.
+7. On the **Sites where models can be used** panel, change the setting from **All sites** to **Selected sites (up to 100)**. For selected sites, follow the instructions to select the sites or upload a CSV listing of the sites. You can then manage site access permissions for the sites you selected.
 
     > [!NOTE]
     > You must be a member of any site that you want to include in the CSV file.
 
-    c. Select **Save**.
+    > [!NOTE]
+    > Disabling a site after a model is made available to process files on that site doesn't disable the model. Models can still be used to process files and incur charges. A model can be made available to process files by being created either on that site or in a content center.
+
+8. Select **Save**.
 
 ## Turn off structured and freeform document processing
 
-When the structured and freeform document processing service is turned off, structured and freeform models won't run, and users won't be able to create or apply structured or freeform models.
+When the structured and freeform document processing service is turned off, structured and freeform models don't run, and users can't create or apply structured or freeform models.
 
-Follow these steps to turn off structured and freeform document processing.
+To turn off structured and freeform document processing, follow these steps.
 
-1. On the **Manage Microsoft Syntex** page, select **Structured and freeform document processing**.
+1. On the **Structured and freeform document processing** panel, on the **Settings** tab, clear the **Let people create and apply models to process files** check box.
 
-2. On the **Structured and freeform document processing** page, under **Status**, turn the toggle to **Off**.
-
-    ![Screenshot of a Structured and freeform document processing panel showing the Status toggle.](../media/content-understanding/turn-off-service.png)
+2. Select **Save**.
 
     > [!NOTE]
     > For multi-geo environments, when the service is turned off, the service is off for all geos.
@@ -121,7 +119,7 @@ Your tenant comes with a default Power Platform environment. To make the default
 
 If you plan to use a custom Power Platform environment, you must install the *AI Builder for Project Cortex* app in this environment. See [Manage Dynamics 365 apps](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view) for details and look for the *AI Builder for Project Cortex* app in the list of Dynamics 365 apps. The environment must not be of the Sandbox type.
 
-If you have [AI Builder credits available](/power-platform/admin/capacity-add-on) to the environment, these credits will be used first. For both custom and default Power Platform environments, once the credits are exhausted, the processing transactions are charged to the meter.
+If you have [AI Builder credits available](/power-platform/admin/capacity-add-on) to the environment, these credits are used first. For both custom and default Power Platform environments, once the credits are exhausted, the processing transactions are charged to the meter.
 
 When using a custom environment, model creators must be assigned the Environment Maker security role. Model users must have permission to use (not edit) the model file in SharePoint libraries. For more information, see [Assign a security role to a user](/power-platform/admin/assign-security-roles). Custom security roles can be created to specifically grant access to the AI Builder tables as the Environment Maker role so those users can create models. You don't need to assign users this role if you're using the default Power Platform environment.
 

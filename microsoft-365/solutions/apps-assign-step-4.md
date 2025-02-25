@@ -4,7 +4,7 @@ ms.author: erikre
 author: erikre
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: troubleshooting-general
 ms.date: 09/12/2024
 description: Step 4. Troubleshoot app deployment issues.
 ms.service: o365-solutions
@@ -39,7 +39,7 @@ For specific timing for each of the above issues, see [Delivery timing summary](
 ## Troubleshoot app installation issues
 
 An app may fail to install for a variety of reasons. The following list provides possible reasons why an app installation might fail:
-- An installation file is deleted after the it's downloaded, but before the app is installed
+- An installation file is deleted after it's downloaded, but before the app is installed
 - The installation command for the app failed
 - The network connection was lost
 - The device was rebooted during the installation process
@@ -70,4 +70,7 @@ For more information, see [Protecting application extensions](/mem/intune/apps/a
 
 Once you have reviewed and completed the steps provided in this solution, you're ready to manage and maintain the managed apps your organization uses.
 
-For more information about deploying Intune, see [Get started with your Microsoft Intune deployment](/mem/intune/fundamentals/get-started-with-intune).
+For more information related to managing and maintaining apps with Intune, see the following topics:
+- [Microsoft Intune app management](/mem/intune/apps/app-management)
+- [App management troubleshooting documentation](/troubleshoot/mem/intune/app-management/app-management)
+- [Get started with your Microsoft Intune deployment](/mem/intune/fundamentals/get-started-with-intune)

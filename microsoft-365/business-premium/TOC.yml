@@ -1,3 +1,4 @@
+items:
 - name: Microsoft 365 Business Premium
   items:
     - name: Overview
@@ -11,7 +12,7 @@
     - name: Trial user guide - Microsoft 365 Business Premium
       href: m365bp-trial-playbook-microsoft-business-premium.md
     - name: Resources for partners
-      href: ../security/defender-business/mdb-partners.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+      href: /defender-business/mdb-partners?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
 - name: Step 1- Sign in and set up
   items:
     - name: Microsoft 365 Business Premium
@@ -89,15 +90,15 @@
     - name: Overview
       href: m365bp-security-incident-management.md
     - name: Review security recommendations
-      href: ../security/defender-business/mdb-view-tvm-dashboard.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+      href: /defender-business/mdb-view-tvm-dashboard?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Review threats detected on devices
       href: m365bp-review-threats-take-action.md
     - name: Review remediation actions on devices
       href: m365bp-review-remediation-actions-devices.md
     - name: Respond to a compromised email account
-      href: ../security/office-365-security/responding-to-a-compromised-email-account.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+      href: /defender-office-365/responding-to-a-compromised-email-account?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Streaming API (preview)
-      href: ../security/defender-business/mdb-streaming-api.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+      href: /defender-business/mdb-streaming-api?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
 - name: Maintain your environment
   href: m365bp-mdb-maintain-environment.md
 - name: Reference
@@ -105,9 +106,9 @@
     - name: Microsoft 365 Business Premium FAQ
       href: microsoft-365-business-faqs.yml
     - name: Microsoft Defender for Business
-      href: ../security/defender-business/index.yml
+      href: /defender-business/index.yml
     - name: Microsoft Defender for Office 365
-      href: /microsoft-365/security/office-365-security/defender-for-office-365
+      href: /defender-office-365/defender-for-office-365
     - name: Microsoft 365 admin content
       href: /microsoft-365/admin/
     - name: Microsoft 365 Lighthouse

@@ -76,9 +76,9 @@
       "searchScope": ["Microsoft Bookings", "Microsoft 365 Lighthouse", "Microsoft 365 for frontline workers", "Microsoft Syntex", "Microsoft 365 Archive", "Microsoft 365"],
       "contributors_to_exclude": [ 
         "rjagiewich", 
-        "claydetels19", 
+        "claydetels19",
         "jborsecnik",
-        "shdyas",
+        "shdyas", 
         "garycentric",
         "alexbuckgit", 
         "beccarobins",
@@ -86,7 +86,8 @@
         "Stacyrch140",
         "American-Dipper",
         "padmagit77",
-        "aditisrivastava07"
+        "aditisrivastava07",
+        "Ruchika-mittal01"
       ]
     },
     "fileMetadata": {

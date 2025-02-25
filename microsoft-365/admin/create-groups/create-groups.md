@@ -3,11 +3,11 @@ title: "Create a group in the admin center"
 ms.reviewer: rahulnayak
 ms.date: 06/11/2024
 f1.keywords: CSH
-ms.author: jtremper
-author: jacktremper
-manager: pamgreen
+author: DaniEASmith
+ms.author: danismith
+manager: jtremper
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 

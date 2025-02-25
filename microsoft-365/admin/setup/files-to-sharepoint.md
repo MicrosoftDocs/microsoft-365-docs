@@ -36,7 +36,7 @@ Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?l
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198210).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/65ec460e-296c-458f-b004-906756dfb3d0?autoplay=false]
+> [!VIDEO ed0b342e-63e2-4e26-9f86-e1761e210d7d]
 
 After you sign up for Microsoft 365 Business Premium, you&#39;ll want to copy your company work files to SharePoint. SharePoint is a good place to store shared company files that everyone needs access to. This typically replaces the use of a file share or network drive.
 

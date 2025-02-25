@@ -2,12 +2,12 @@
 title: "Add and replace your onmicrosoft.com fallback domain in Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: nkagole
-author: nataliekagole
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
-ms.date: 09/28/2023
+ms.date: 11/18/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
@@ -58,7 +58,7 @@ While you can add more onmicrosoft.com domains, only one onmicrosoft.com domain 
 - Assign it as your fallback domain
 
 > [!NOTE]
-> You are limited a total of five onmicrosoft.com domains in your Microsoft 365 environment. Once they are added, they cannot be removed. 
+> You're limited a total of five onmicrosoft.com domains in your Microsoft 365 environment. Once they're added, they can't be removed. 
   
 ## Before you begin
 
@@ -81,7 +81,7 @@ To add, modify, or remove domains, you **must** be a **Domain Name Administrator
     ![Screenshot of Add onmicrosoft domain page.](../../media/add-an-onmicrosoftcom-domain-page.png)
 
     > [!NOTE]
-    > Make sure to verify the spelling and accuracy of the domain name you entered. You are limited to five onmicrosoft.com domains, and currently they cannot be deleted once they are created.     
+    > Make sure to verify the spelling and accuracy of the domain name you entered. You're limited to five onmicrosoft.com domains, and currently they can't be deleted once they're created.     
 
 5. Select **Add domain**. When successfully added, you'll see a message stating this.
     
@@ -93,7 +93,7 @@ To add, modify, or remove domains, you **must** be a **Domain Name Administrator
 
 
 > [!NOTE]
-> Before changing your fallback domain to a new onmicrosoft.com domain, you may want to consider changing your onmicrosoft.com SharePoint domain. Creating an additional onmicrosoft domain and using it as your fallback domain will not do a rename for SharePoint Online. Your existing SharePoint and OneDrive URLs will remain the same.  You are able to change your.onmicrosoft SharePoint domain through the PowerShell steps provided in [SharePoint domain rename preview](/sharepoint/change-your-sharepoint-domain-name) (currently available to any tenant with less than 10,000 sites).
+> Before changing your fallback domain to a new onmicrosoft.com domain, you might want to consider changing your onmicrosoft.com SharePoint domain. Creating another onmicrosoft domain and using it as your fallback domain won't do a rename for SharePoint in Microsoft 365. Your existing SharePoint and OneDrive URLs will remain the same.  You're able to change your.onmicrosoft SharePoint domain through the PowerShell steps provided in [SharePoint domain rename preview](/sharepoint/change-your-sharepoint-domain-name) (currently available to any tenant with less than 10,000 sites).
 
 After you create your new onmicrosoft.com domain, do the following to change it to your fallback domain.
 

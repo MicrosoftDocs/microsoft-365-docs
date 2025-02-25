@@ -4,8 +4,8 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: magarlan
-ms.date: 07/03/2023
+ms.reviewer: ebamoh
+ms.date: 09/20/2024
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-lighthouse
@@ -28,30 +28,47 @@ Microsoft 365 Lighthouse audit logs record actions that generate a change in Lig
 
 ## Before you begin
 
-To view audit logs, you must have one of the following permissions:
+To view audit logs, you must hold one of the following roles:
 
-- Microsoft Entra role - Global Administrator of partner tenant
-
-- Microsoft Partner Center role - Admin Agent
+- Administrator in Lighthouse
+- Admin agent in Partner Center
  
-> [!CAUTION]
-> To help keep your organization secure, Microsoft recommends that you use roles with the minimum level of permissions needed to perform a job. Global Administrator is a highly privileged role that should be limited to scenarios where you can't use a less-privileged role.
-
 ## Review audit logs
 
 1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Audit logs**.
 
     > [!NOTE]
-    > It might take up to 1 hour to see new logs. Go to the respective service to see the most recent changes.
+    > It might take up to an hour to see new logs. Go to the respective service to see the most recent changes.
+
+2. Select one of the following tabs to view specific logs: **Audit logs**, **Graph logs**, **Directory logs**, **Sign-in logs**.
 
 2. Filter the logs, as needed, by using the following options:
+    - Audit logs tab
+        - **Tenants** - Tenant tags or customer tenant names.
+        - **Time range** - Last day, last 7 days, last 30 days.
+        - **Activity** - Microsoft 365 activity type that corresponds to the action taken. For more information, see the [Activities](#activities) table.
+        - **Initiated by** - Who initiated the action.
 
-    - **Date range** - Previous month, week, or day.
-    - **Tenants** - Tenant tags or customer tenant names.
-    - **Activity** - Microsoft 365 activity type that corresponds to the action taken. For more information, see the [Activities](#activities) table.
-    - **Initiated by** -  Who initiated the action.
+    - Graph logs tab
+        - **Tenants** - Tenant tags or customer tenant names.
+        - **Time range** - Last day, last 7 days, last 30 days.
+        - **Request type** - Type of request that the Microsoft Graph service received and processed for a tenant.
+        - **Response code** - The HTTP response status code for the event.
 
-3. Select a log from the list to see full details, including the **Request** body.
+    - Directory logs tab
+        - **Tenants** - Tenant tags or customer tenant names.
+        - **Time range** - Last day, last 7 days, last 30 days.
+        - **Type** - User management, Group management, Device management, App management, Role management, Policy management
+        - **Operation type** - Add, Assign, Update, Unassign, Delete Service API
+
+    - Sign-in logs tab 
+        - **Tenants** - Tenant tags or customer tenant names.
+        - **Time range** - Last day, last 7 days, last 30 days.
+        - **Is interactive** - Yes (by a user), No (by a client app or OS components on behalf of a user)
+        - **Risk state** - None, Confirmed safe, Remediated, Confirmed compromised, Dismissed, At risk
+        - **Risk level during sign-in** - Risk level of the sign-in session (likelihood that the sign-in is compromised)
+
+3. Select a log from the list to see full details, including the **Request body**.
 
     To export log data to a comma-separated values (.csv) file, select **Export**.
 
@@ -85,7 +102,7 @@ The following table lists activities captured within Lighthouse audit logs. The 
 
 ## Next steps
 
-Use Microsoft Graph API to access more audit events, if needed. For more information, see [Overview for multi-tenant management using the Microsoft 365 Lighthouse API](/graph/managedtenants-concept-overview).
+Use the Microsoft Graph API to access more audit events, if needed. For more information, see [Use the Microsoft Graph API](/graph/use-the-api) and [Manage multiple customer tenants using the Microsoft 365 Lighthouse API](/graph/managedtenants-concept-overview).
 
 ## Related content
 

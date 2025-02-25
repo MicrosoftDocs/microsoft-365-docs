@@ -1,23 +1,24 @@
 ---
-title: Manage billing and invoices for Microsoft 365 Backup
+title: Manage consumption and invoices for Microsoft 365 Backup
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 07/31/2024
-ms.topic: conceptual
+ms.date: 02/19/2025
+ms.topic: how-to
 ms.service: microsoft-365-backup
 ms.custom: backup
 search.appverid:
 ms.collection:
     - essentials-get-started
 ms.localizationpriority:  medium
-description: Learn how to set up and manage pay-as-you-go billing and invoices in the Azure portal for Microsoft 365 Backup.
+description: Learn how to set up and manage usage and invoices in the Azure portal for Microsoft 365 Backup.
 ---
 
-# Manage billing and invoices for Microsoft 365 Backup
+# Manage consumption and invoices for Microsoft 365 Backup
 
+<!---
 As a first step to start using Microsoft 365 Backup, you should link an Azure subscription in Microsoft Syntex pay-as-you-go, if you haven't already done so. Although Microsoft 365 Backup isn't part of the Microsoft Syntex product suite, this offering is still using the Syntex billing setup for consistency with other Microsoft 365 pay-as-you-go offerings.
 
 ## Set up pay-as-you-go billing
@@ -77,8 +78,7 @@ You have successfully set up billing. You can proceed to [Step 2: Turn on Micros
 
 > [!NOTE]
 > Any subsequent changes made to the billing for Microsoft 365 Backup in the Microsoft 365 admin center or the Azure portal can take up to 24 hours to become effective.
-
-## Manage consumption and invoices in the Azure portal
+--->
 
 You can view actual and accumulated cost breakdown by tenants and service type for OneDrive, SharePoint, and Exchange in Microsoft Cost Management in the Azure portal or access the information by using the [Cost Management public APIs](/rest/api/cost-management/operation-groups). Cost breakdown by application ID is coming soon.
 
@@ -93,6 +93,8 @@ You can view actual and accumulated cost breakdown by tenants and service type f
     - Select **+Add Filter** to see breakdown of cost by meters and tags.
 
        ![Screenshot of the cost analysis page in Microsoft Cost Management.](../media/m365-backup/backup-cost-analysis.png)
+
+You can also export daily cost information using billing export feature in Azure portal. For more information, see [Tutorial: Create and manage exported data](/azure/cost-management-billing/costs/tutorial-export-acm-data?tabs=azure-portal).
 
 ### Billing attribution by tenants, service type, and applications
 
@@ -111,6 +113,12 @@ To view tags:
         - **servicetype** is OneDrive, SharePoint, or Exchange.
 
         - **applications** shows a list of app IDs.
+
+        - Exchange mailbox - Not available.
+
+        - OneDrive account - SiteId of the corresponding OneDrive site.
+
+        - SharePoint site - SiteId of the corresponding SharePoint site.
 
     - Azure cost analysis - filter by tag.
 

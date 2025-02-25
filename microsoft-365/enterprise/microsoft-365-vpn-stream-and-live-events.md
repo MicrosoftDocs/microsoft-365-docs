@@ -1,10 +1,10 @@
 ---
-title: "Special considerations for Stream and Teams events in VPN environments"
+title: "Special considerations for Teams events in VPN environments"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.reviewer: bryanyce
-ms.date: 09/12/2024
+ms.date: 10/31/2024
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -20,13 +20,13 @@ ms.collection:
 - must-keep
 f1.keywords:
 - NOCSH
-description: "Special considerations for Stream and Teams events in VPN environments"
+description: "Special considerations for Teams events in VPN environments"
 ---
 
-# Special considerations for Stream and Teams events in VPN environments
+# Special considerations for Teams events in VPN environments
 
 > [!NOTE]
->This article is part of a set of articles that address Microsoft 365 optimization for remote users. The following endpoints are specific to Worldwide Commercial and Government Community Cloud (GCC) environments; the endpoints listed here are not applicable to U.S. Government GCC High or U.S. Government DoD environments.
+>This article is part of a set of articles that address Microsoft 365 optimization for remote users.
 >
 >- For an overview of using VPN split tunneling to optimize Microsoft 365 connectivity for remote users, see [Overview: VPN split tunneling for Microsoft 365](microsoft-365-vpn-split-tunnel.md).
 >- For detailed guidance on implementing VPN split tunneling, see [Implementing VPN split tunneling for Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md).
@@ -34,71 +34,95 @@ description: "Special considerations for Stream and Teams events in VPN environm
 >- For guidance on securing Teams media traffic in VPN split tunneling environments, see [Securing Teams media traffic for VPN split tunneling](microsoft-365-vpn-securing-teams.md).
 >- For information about optimizing Microsoft 365 worldwide tenant performance for users in China, see [Microsoft 365 performance optimization for China users](microsoft-365-networking-china.md).
 
-Microsoft 365 Live Events attendee traffic (this includes attendees to Teams-produced live events and those produced with an external encoder via Teams, Stream, or Viva Engage), Microsoft Teams Town hall attendee traffic and on-demand Stream attendee traffic is currently categorized as **Default** versus **Optimize** in the [URL/IP list for the service](urls-and-ip-address-ranges.md). These endpoints are categorized as **Default** because they're hosted on CDNs that might also be used by other services. Customers generally prefer to proxy this type of traffic and apply any security elements normally done on endpoints such as these.
+Microsoft Teams Live events attendee traffic (this includes attendees to Teams-produced live events and those produced with an external encoder via Teams or Viva Engage) and Microsoft Teams Town hall attendee traffic is currently categorized as **Default** versus **Optimize** in the [URL/IP list for the service](urls-and-ip-address-ranges.md). These endpoints are categorized as **Default** because they're hosted on CDNs that might also be used by other services. Customers generally prefer to proxy this type of traffic and apply any security elements normally done on endpoints such as these.
 
-Many customers have asked for URL/IP data needed to connect their attendees to Stream or Teams events directly from their local internet connection, rather than route the high-volume and latency-sensitive traffic via the VPN infrastructure. Typically, this isn't possible without both dedicated namespaces and accurate IP information for the endpoints, which isn't provided for Microsoft 365 endpoints categorized as **Default**.
+Many customers have asked for URL/IP data needed to connect their attendees in Teams events directly from their local internet connection, rather than route the high-volume and latency-sensitive traffic via the VPN infrastructure. Typically, this isn't possible without both dedicated namespaces and accurate IP information for the endpoints, which isn't provided for Microsoft 365 endpoints categorized as **Default**.
 
-Use the following steps to enable direct connectivity for the Stream or Teams events services from clients using a forced tunnel VPN. This solution is intended to provide customers with an option to avoid routing Events attendee traffic over VPN while there's high network traffic due to work-from-home scenarios. If possible, we recommend accessing the service through an inspecting proxy.
+Use the following steps to identify and enable direct connectivity for attendee traffic for Teams Events from clients that are using a forced tunnel VPN. This solution is intended to provide customers with an option to avoid routing attendee traffic over VPN while there's high network traffic due to work-from-home scenarios. If possible, we recommend accessing the service through an inspecting proxy.
 
 > [!NOTE]
-> Using this solution, there might be service elements that do not resolve to the IP addresses provided and thus traverse the VPN, but the bulk of high-volume traffic like streaming data should. There might be other elements outside the scope of Live Events/Stream which get caught by this offload, but these should be limited as they must meet both the FQDN _and_ the IP match before going direct.
+> Using this solution, there might be service elements that don't resolve to the IP addresses provided and thus traverse the VPN, but the bulk of high-volume traffic like streaming data should. There might be other elements outside the scope of Live Events/Stream which get caught by this offload, but these should be limited as they must meet both the FQDN _and_ the IP match before going direct.
 
 > [!IMPORTANT]
->We recommend you weigh the risk of sending more traffic that bypasses the VPN over the performance gain for Live Events.
+>We recommend you weigh the risk of sending more traffic that bypasses the VPN over the performance gain for Teams Events.
 
-To implement the forced tunnel exception for Teams Events and Stream, the following steps should be applied:
+To implement the forced tunnel exception for Teams Events, the following steps should be applied:
 
 ## 1. Configure external DNS resolution
 
 Clients need external, recursive DNS resolution to be available so that the following host names can be resolved to IP addresses.
 
-- \*.azureedge.net
+For the **Commercial** cloud:
 - \*.media.azure.net
 - \*.bmc.cdn.office.net
 - \*.ml.cdn.office.net
-
-**\*.azureedge.net** is used for Stream events ([Configure encoders for live streaming in Microsoft Stream - Microsoft Stream | Microsoft Docs](/stream/live-encoder-setup)).
 
 **\*.media.azure.net** and **\*.bmc.cdn.office.net** are used for Teams-produced Live Events (Quick Start events and RTMP-In supported events) scheduled from the Teams client.
 
 **\*.media.azure.net**, **\*.bmc.cdn.office.net** and **\*.ml.cdn.office.net** are used for Teams Town hall events.
 
-Some of these endpoints are shared with other elements outside of Stream or Teams events. We don't recommend just using these FQDNs to configure VPN offload even if technically possible in your VPN solution (for example, if it works at the FQDN rather than IP).
+> [!NOTE]
+> Some of these endpoints are shared with other elements outside of Teams events.
 
-FQDNs aren't required in the VPN configuration, they're purely for use in PAC files in combination with the IPs to send the relevant traffic direct.
+For the **Government** clouds **(GCC, GCC High, DoD)**:
+- \*.cdn.ml.gcc.teams.microsoft.com
+- \*.cdn.ml.gov.teams.microsoft.us
+- \*.cdn.ml.dod.teams.microsoft.us
+
+**\*.cdn.ml.gcc.teams.microsoft.com** is used for Teams Town hall events in the Microsoft 365 U.S. Government Community Cloud (GCC).
+
+**\*.cdn.ml.gov.teams.microsoft.us** is used for Teams Town hall events in the Microsoft 365 U.S. Government GCC High Cloud (GCC High).
+
+**\*.cdn.ml.dod.teams.microsoft.us** is used for Teams Town hall events in the Microsoft 365 U.S. Government DoD Cloud (DoD).
+
 
 ## 2. Implement PAC file changes (where required)
 
-For organizations that utilize a PAC file to route traffic through a proxy while on VPN, this is normally achieved using FQDNs. However, with Stream/Live Events/Town hall, the host names provided contain wildcards such as **\*.azureedge.net**, which also encompasses other elements for which it isn't possible to provide full IP listings. Thus, if the request is sent direct based on DNS wildcard match alone, traffic to these endpoints will be blocked as there's no route via the direct path for it in [Step 3](#3-configure-routing-on-the-vpn-to-enable-direct-egress) later in this article.
+For organizations that utilize a PAC file to route traffic through a proxy while on VPN, this is normally achieved using FQDNs. However, with Teams events, the host names provided contain wildcards that resolve to IP addresses used by Content Delivery Networks (CDNs) which aren't utilized exclusively for Teams events traffic. Thus, if the request is sent direct based on DNS wildcard match alone, traffic to these endpoints might be blocked if there's no route via the direct path for it in [Step 3](#3-configure-routing-on-the-vpn-to-enable-direct-egress) later in this article.
 
-To solve this, we can provide the following IPs and use them in combination with the host names in an example PAC file as described in [Step 1](#1-configure-external-dns-resolution). The PAC file checks if the URL matches those used for Stream/Live Events/Town hall and then if it does, it then also checks to see if the IP returned from a DNS lookup matches those provided for the service. If _both_ match, then the traffic is routed direct. If either element (FQDN/IP) doesn't match, then the traffic is sent to the proxy. As a result, the configuration ensures that anything that resolves to an IP outside of the scope of both the IP and defined namespaces traverses the proxy via the VPN as normal.
+To solve this, we can provide the following IPs and use them in combination with the host names in an example PAC file as described in [Step 1](#1-configure-external-dns-resolution). The PAC file checks if the URL matches those used for Teams events and if it does, it then also checks to see if the IP returned from a DNS lookup matches those provided for the service. If _both_ match, then the traffic is routed direct. If either element (FQDN/IP) doesn't match, then the traffic is sent to the proxy. As a result, the configuration ensures that anything that resolves to an IP outside of the scope of both the IP and defined namespaces traverses the proxy via the VPN as normal. 
 
 ### Gathering the current lists of CDN Endpoints
 
-Teams events use multiple CDN providers to stream to customers, to provide the best coverage, quality, and resiliency. Currently, both Azure CDN from Microsoft and from Verizon are used. Over time this could be changed due to situations such as regional availability. This article is a source to enable you to keep up to date on IP ranges.
+For the Commercial cloud and Microsoft 365 U.S. Government clouds (GCC, GCC High and DoD) Teams events use Azure CDN from Microsoft. Over time this could be changed due to situations such as regional availability. This article provides the required namespaces for Teams events and guidance for the corresponding IP address ranges used (where available).
 
-For Azure CDN from Microsoft, you can download the list from [Download Azure IP Ranges and Service Tags – Public Cloud from Official Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=56519) - you'll need to look specifically for the service tag _AzureFrontdoor.Frontend_ in the JSON; _addressPrefixes_ will show the IPv4/IPv6 subnets. Over time the IPs can change, but the service tag list is always updated before they're put in use.
+For the **Commercial** cloud:
 
-For Azure CDN from Verizon (Edgecast) you can find an exhaustive list using [Edge Nodes - List](/rest/api/cdn/edge-nodes/list) (select **Try It** ) - you'll need to look specifically for the  **Premium\_Verizon**  section. Note that this API shows all Edgecast IPs (origin and Anycast). Currently there isn't a mechanism for the API to distinguish between origin and Anycast.
+- For Azure CDN from Microsoft, you can download the list from [Download Azure IP Ranges and Service Tags – Public Cloud from Official Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=56519) - you'll need to look specifically for the service tag `AzureFrontdoor.Frontend` in the JSON; _addressPrefixes_ will show the IPv4/IPv6 subnets. Over time the IPs can change, but the service tag list is always updated before they're put in use.
 
-To implement this in a PAC file, you can use the following example that sends the Microsoft 365 Optimize traffic direct (which is recommended best practice) via FQDN, and the critical Stream/Live Events traffic direct via a combination of the FQDN and the returned IP address. The placeholder name _Contoso_ would need to be edited to your specific tenant's name where _contoso_ is from contoso.onmicrosoft.com
+For the **Government** clouds **(GCC, GCC High and DoD)**:
 
-#### Example PAC file
+- For Azure CDN from Microsoft, you can download the list from [Download Azure IP Ranges and Service Tags – US Government Cloud from Official Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=57063) - you'll need to look specifically for the service tag `AzureFrontdoor.Frontend` in the JSON; _addressPrefixes_ will show the IPv4/IPv6 subnets. Over time the IPs can change, but the service tag list is always updated before they're put in use.
 
-Here's an example of how to generate the PAC files:
+The following script can generate a PAC file that will include the namespaces and IP listings for the Teams Events attendee traffic. The **-Instance** parameter determines the specified environment - the supported values are [Worldwide, USGov, USGovGCCHigh and UsGovDoD]. Optionally, the script can also include the Optimize and Allow domains as well using the **-Type** parameter.
 
-1. Save the script below to your local hard disk as _Get-TLEPacFile.ps1_.
-1. Go to the [Verizon URL](/rest/api/cdn/edge-nodes/list#code-try-0) and download the resulting JSON (copy paste it into a file like cdnedgenodes.json)
-1. Put the file into the same folder as the script.
-1. In a PowerShell window, run the following command. Change out the tenant name for something else if you want the SPO URLs. This is Type 2, so **Optimize** and **Allow** (Type 1 is Optimize only).
+#### Example PAC file generation for the Commercial cloud
+
+Here's an example of how to generate the PAC file for the Commercial cloud:
+
+1. Save the script to your local hard disk as _Get-EventsPacFile.ps1_.
+1. In a PowerShell window, run the following command. If you only desire the Optimize names (and not Optimize and Allow) change the -Type parameter to OptimizeOnly.
 
    ```powershell
-   .\Get-TLEPacFile.ps1 -Instance Worldwide -Type 2 -TenantName <contoso> -CdnEdgeNodesFilePath .\cdnedgenodes.json -FilePath TLE.pac
+   .\Get-EventsPacFile.ps1 -Instance Worldwide -Type OptimizeAndAllow -FilePath .\Commercial.pac
    ```
 
-1. The TLE.pac file will contain all the namespaces and IPs (IPv4/IPv6).
+1. The Commercial.pac file will contain all the namespaces and IPs (IPv4/IPv6) available for Teams Events attendee traffic.
 
-##### Get-TLEPacFile.ps1
+#### Example PAC file generation for the Microsoft 365 U.S. Government Community Cloud (GCC)
+
+Here's an example of how to generate the PAC file for the GCC environment:
+
+1. Save the script to your local hard disk as _Get-EventsPacFile.ps1_.
+1. In a PowerShell window, run the following command. If you only desire the Optimize names (and not Optimize and Allow) change the -Type parameter to OptimizeOnly.
+
+   ```powershell
+   .\Get-EventsPacFile.ps1 -Instance UsGov -Type OptimizeAndAllow -FilePath .\USGov.pac
+   ```
+
+1. The USGov.pac file will contain all the namespaces and IPs (IPv4/IPv6) specific to the GCC cloud for Teams Town hall attendee traffic.
+
+##### Get-EventsPacFile.ps1
 
 ```powershell
 # Copyright (c) Microsoft Corporation. All rights reserved.
@@ -106,7 +130,7 @@ Here's an example of how to generate the PAC files:
 
 <#PSScriptInfo
 
-.VERSION 1.0.5
+.VERSION 1.0.7
 
 .AUTHOR Microsoft Corporation
 
@@ -140,7 +164,7 @@ Licensed under the MIT License.
 
 .SYNOPSIS
 
-Create a PAC file for Microsoft 365 prioritized connectivity
+Create a PAC file for Microsoft 365 prioritized connectivity for Teams Events (Live Events, Town hall)
 
 .DESCRIPTION
 
@@ -150,7 +174,7 @@ on how traffic needs to be prioritized.
 
 .PARAMETER Instance
 
-The service instance inside Microsoft 365.
+The service instance inside Microsoft 365. The default is Worldwide. To specify GCC use the USGov value.
 
 .PARAMETER ClientRequestId
 
@@ -166,9 +190,8 @@ The default proxy settings for non priority traffic.
 
 .PARAMETER Type
 
-The type of prioritization to give. Valid values are 1 and 2, which are 2 different modes of operation.
-Type 1 will send Optimize traffic to the direct route. Type 2 will send Optimize and Allow traffic to
-the direct route.
+The type of prioritization to give. Valid values are Optimize and OptimizeAndAllow, which are 2 different modes of operation.
+These values align to the categories defined in our Principles of Network Connectivity at https://aka.ms/pnc
 
 .PARAMETER Lowercase
 
@@ -188,302 +211,287 @@ The file to print the content to.
 
 .EXAMPLE
 
-Get-TLEPacFile.ps1 -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7 -DefaultProxySettings "PROXY 4.4.4.4:70" -FilePath type1.pac
+Get-EventsPacFile.ps1 -Instance Worldwide -Type OptimizeOnly -FilePath .\PACFiles\Commercial.pac 
 
 .EXAMPLE
 
-Get-TLEPacFile.ps1 -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7 -Instance China -Type 2 -DefaultProxySettings "PROXY 4.4.4.4:70" -FilePath type2.pac
+Get-EventsPacFile.ps1 -Instance USGov -FilePath .\PACFiles\USGov.pac -Type OptimizeAndAllow
 
-.EXAMPLE
-
-Get-TLEPacFile.ps1 -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7 -Instance WorldWide -Lowercase -TenantName tenantName -ServiceAreas Sharepoint
 
 #>
 
 #Requires -Version 2
 
-[CmdletBinding(SupportsShouldProcess=$True)]
+[CmdletBinding(SupportsShouldProcess = $True)]
 Param (
-    [Parameter(Mandatory = $false)]
-    [ValidateSet('Worldwide', 'Germany', 'China', 'USGovDoD', 'USGovGCCHigh')]
+    [Parameter()]
+    [ValidateSet('Worldwide', 'Germany', 'China', 'USGovDoD', 'USGovGCCHigh', 'USGov')]
     [String] $Instance = "Worldwide",
 
-    [Parameter(Mandatory = $false)]
+    [Parameter()]
     [ValidateNotNullOrEmpty()]
-    [guid] $ClientRequestId = [Guid]::NewGuid().Guid,
+    [guid] $ClientRequestId = [Guid]::NewGuid(),
 
-    [Parameter(Mandatory = $false)]
+    [Parameter()]
     [ValidateNotNullOrEmpty()]
     [String] $DirectProxySettings = 'DIRECT',
 
-    [Parameter(Mandatory = $false)]
+    [Parameter()]
     [ValidateNotNullOrEmpty()]
     [String] $DefaultProxySettings = 'PROXY 10.10.10.10:8080',
 
-    [Parameter(Mandatory = $false)]
-    [ValidateRange(1, 2)]
-    [int] $Type = 1,
+    [Parameter()]
+    [ValidateSet('OptimizeOnly','OptimizeAndAllow')]
+    [string]
+    $Type = 'OptimizeOnly',
 
-    [Parameter(Mandatory = $false)]
-    [switch] $Lowercase = $false,
+    [Parameter()]
+    [switch] $Lowercase,
 
-    [Parameter(Mandatory = $false)]
+    [Parameter()]
     [ValidateNotNullOrEmpty()]
     [string] $TenantName,
 
-    [Parameter(Mandatory = $false)]
+    [Parameter()]
     [ValidateSet('Exchange', 'SharePoint', 'Common', 'Skype')]
     [string[]] $ServiceAreas,
 
-    [Parameter(Mandatory = $false)]
+    [Parameter()]
     [ValidateNotNullOrEmpty()]
-    [string] $FilePath,
+    [string] $FilePath
 
-    [Parameter(Mandatory = $false)]
-    [ValidateNotNullOrEmpty()]
-    [string] $CdnEdgeNodesFilePath
 )
 
 ##################################################################################################################
 ### Global constants
 ##################################################################################################################
 
-$baseServiceUrl = "https://endpoints.office.com/endpoints/$Instance/?ClientRequestId={$ClientRequestId}"
+$baseServiceUrl = if ($Instance -eq 'USGov') {
+    "https://endpoints.office.com/endpoints/Worldwide/?ClientRequestId=$ClientRequestId"
+} else {
+    "https://endpoints.office.com/endpoints/$Instance/?ClientRequestId=$ClientRequestId"
+}
 $directProxyVarName = "direct"
 $defaultProxyVarName = "proxyServer"
-$bl = "`r`n"
 
 ##################################################################################################################
 ### Functions to create PAC files
 ##################################################################################################################
 
-function Get-PacClauses
-{
+function Get-PacString {
     param(
-        [Parameter(Mandatory = $false)]
-        [string[]] $Urls,
+        [Parameter(ValueFromPipelineByPropertyName)]
+        [string[]]
+        $NonDirectOverrideFqdns,
 
-        [Parameter(Mandatory = $true)]
-        [ValidateNotNullOrEmpty()]
-        [String] $ReturnVarName
+        [Parameter(ValueFromPipelineByPropertyName)]
+        [string[]]
+        $DirectFqdns
     )
 
-    if (!$Urls)
-    {
-        return ""
+    $PACSb = New-Object 'System.Text.StringBuilder'
+    $null = & {
+        $PACSb.AppendLine('// This PAC file will provide proxy config to Microsoft 365 services')
+        $PACSb.AppendLine('// using data from the public web service for all endpoints')
+        $PACSb.AppendLine('function FindProxyForURL(url, host)')
+        $PACSb.AppendLine('{')
+        $PACSb.Append('    var ').Append($directProxyVarName).Append(' = "').Append($DirectProxySettings).AppendLine('";')
+        $PACSb.Append('    var ').Append($defaultProxyVarName).Append(' = "').Append($DefaultProxySettings).AppendLine('";')
+        if ($Lowercase) {
+            $PACSb.AppendLine('    host = host.toLowerCase();')
+        }
+        $first = $true
+        foreach ($fqdn in $NonDirectOverrideFqdns) {
+            if ($first) {
+                $PACSb.AppendLine()
+                $PACSb.AppendLine('    // Force proxy for subdomains of bypassed hosts')
+                $PACSb.AppendLine()
+                $PACSb.Append('    if(')
+            }
+            else {
+                $PACSb.AppendLine().Append('            || ')
+            }
+            $first = $false
+            $PACSb.Append('shExpMatch(host, "').Append($fqdn).Append('")')
+        }
+        if (!$first) {
+            $PACSb.AppendLine(')')
+            $PACSb.AppendLine('    {')
+            $PACSb.Append('        return ').Append($directProxyVarName).AppendLine(';')
+            $PACSb.AppendLine('    }')
+        }
+
+        $first = $true
+        foreach ($fqdn in $DirectFqdns) {
+            if ($first) {
+                $PACSb.AppendLine()
+                $PACSb.AppendLine('    // Bypassed hosts')
+                $PACSb.AppendLine()
+                $PACSb.Append('    if(')
+            }
+            else {
+                $PACSb.AppendLine().Append('            || ')
+            }
+            $first = $false
+            $PACSb.Append('shExpMatch(host, "').Append($fqdn).Append('")')
+        }
+        if (!$first) {
+            $PACSb.AppendLine(')')
+            $PACSb.AppendLine('    {')
+            $PACSb.Append('        return ').Append($directProxyVarName).AppendLine(';')
+            $PACSb.AppendLine('    }')
+        }
+
+        if (!$ServiceAreas -or $ServiceAreas.Contains('Skype')) {
+            $EventsConfig = Get-TeamsEventsConfiguration
+            if ($EventsConfig.EventsAddressRanges.Count -gt 0) {
+                $EventsBlock = $EventsConfig | Get-TLEPacConfiguration
+                $PACSb.AppendLine()
+                $PACSb.AppendLine($EventsBlock)
+            }
+        }
+
+        $PACSb.Append('    return ').Append($defaultProxyVarName).AppendLine(';').Append('}')
     }
 
-    $clauses =  (($Urls | ForEach-Object { "shExpMatch(host, `"$_`")" }) -Join "$bl        || ")
-
-@"
-    if($clauses)
-    {
-        return $ReturnVarName;
-    }
-"@
-}
-
-function Get-PacString
-{
-    param(
-        [Parameter(Mandatory = $true)]
-        [ValidateNotNullOrEmpty()]
-        [array[]] $MapVarUrls
-    )
-
-@"
-// This PAC file will provide proxy config to Microsoft 365 services
-//  using data from the public web service for all endpoints
-function FindProxyForURL(url, host)
-{
-    var $directProxyVarName = "$DirectProxySettings";
-    var $defaultProxyVarName = "$DefaultProxySettings";
-
-$( if ($Lowercase) { "    host = host.toLowerCase();" })
-
-$( ($MapVarUrls | ForEach-Object { Get-PACClauses -ReturnVarName $_.Item1 -Urls $_.Item2 }) -Join "$bl$bl" )
-
-$( if (!$ServiceAreas -or $ServiceAreas.Contains('Skype')) { Get-TLEPacConfiguration })
-
-    return $defaultProxyVarName;
-}
-"@ -replace "($bl){3,}","$bl$bl" # Collapse more than one blank line in the PAC file so it looks better.
+    return $PACSb.ToString()
 }
 
 ##################################################################################################################
 ### Functions to get and filter endpoints
 ##################################################################################################################
+function Get-TeamsEventsConfiguration {
+    param()
+    $IncludedHosts = switch ($Instance) {
+        'USGov' {
+            @('*.cdn.ml.gcc.teams.microsoft.com')
+            break
+        }
+        'USGovDoD' {
+            @('*.cdn.ml.dod.teams.microsoft.us')
+            break
+        }
+        'USGovGCCHigh' {
+            @('*.cdn.ml.gov.teams.microsoft.us')
+            break
+        }
+        default {
+            @('*.bmc.cdn.office.net', '*.ml.cdn.office.net', '*.media.azure.net')
+            break
+        }
+    }
+    $IncludedAddressRanges = & {
+        $ServiceTagsDownloadId = '56519'
+        if ($Instance.StartsWith('USGov')) {
+            $ServiceTagsDownloadId = '57063'
+        }
+        $AzureIPsUrl = Invoke-WebRequest -Uri "https://www.microsoft.com/en-us/download/confirmation.aspx?id=$ServiceTagsDownloadId" -UseBasicParsing -ErrorAction SilentlyContinue |
+            Select-Object -ExpandProperty Links | Select-Object -ExpandProperty href |
+            Where-Object { $_.EndsWith('.json') -and $_ -match 'ServiceTags' } | Select-Object -First 1
+        if ($AzureIPsUrl) {
+            Invoke-RestMethod -Uri $AzureIPsUrl -ErrorAction SilentlyContinue | Select-Object -ExpandProperty values |
+                Where-Object { $_.name -eq 'AzureFrontDoor.Frontend' } | Select-Object -First 1 -ExpandProperty properties |
+                Select-Object -ExpandProperty addressPrefixes
+        }
+    }
+    [PSCustomObject]@{
+        EventsHostNames = $IncludedHosts
+        EventsAddressRanges = $IncludedAddressRanges
+    }
+}
 
 function Get-TLEPacConfiguration {
-    param ()
-    $PreBlock = @"
-    // Don't Proxy Teams Live Events traffic
+    [CmdletBinding()]
+    param (
+        [Parameter(ValueFromPipelineByPropertyName)]
+        [string[]]
+        $EventsHostNames,
 
-    if(shExpMatch(host, "*.azureedge.net")
-    || shExpMatch(host, "*.bmc.cdn.office.net")
-    || shExpMatch(host, "*.ml.cdn.office.net")
-    || shExpMatch(host, "*.media.azure.net"))
-    {
-        var resolved_ip = dnsResolveEx(host);
-
-"@
+        [Parameter(ValueFromPipelineByPropertyName)]
+        [string[]]
+        $EventsAddressRanges
+    )
+    if ($EventsAddressRanges.Count -eq 0) {
+        return ''
+    }
     $TLESb = New-Object 'System.Text.StringBuilder'
-    $TLESb.Append($PreBlock) | Out-Null
+    $Spaces = '    '
+    $null = $TLESb.Append($Spaces).AppendLine('// Bypass Teams Events attendee traffic')
+    $first = $true
+    $null = foreach ($hostName in $EventsHostNames) {
+        if ($first) {
+            $TLESb.AppendLine().Append($Spaces).Append('if(')
+        }
+        else {
+            $TLESb.AppendLine().Append($Spaces).Append('    || ')
+        }
+        $first = $false
+        $TLESb.Append('shExpMatch(host, "').Append($hostName).Append('")')
+    }
+    $null = $TLESb.AppendLine(')').Append($Spaces).AppendLine('{')
+    $Spaces = $Spaces + $Spaces
+    $null = $TLESb.Append($Spaces).AppendLine('var resolved_ip = dnsResolveEx(host);')
 
-    if (![string]::IsNullOrEmpty($CdnEdgeNodesFilePath) -and (Test-Path -Path $CdnEdgeNodesFilePath)) {
-        $CdnData = Get-Content -Path $CdnEdgeNodesFilePath -Raw -ErrorAction SilentlyContinue | ConvertFrom-Json | Select-Object -ExpandProperty value | 
-            Where-Object { $_.name -eq 'Premium_Verizon'} | Select-Object -First 1 -ExpandProperty properties | 
-            Select-Object -ExpandProperty ipAddressGroups
-        $CdnData | Select-Object -ExpandProperty ipv4Addresses | ForEach-Object {
-            if ($TLESb.Length -eq $PreBlock.Length) {
-                $TLESb.Append("        if(") | Out-Null
-            }
-            else {
-                $TLESb.AppendLine() | Out-Null
-                $TLESb.Append("        || ") | Out-Null
-            }
-            $TLESb.Append("isInNetEx(resolved_ip, `"$($_.BaseIpAddress)/$($_.prefixLength)`")") | Out-Null
+    $first = $true
+    $null = foreach ($addressRange in $EventsAddressRanges) {
+        if ($first) {
+            $TLESb.AppendLine().Append($Spaces).Append('if(')
+        } else {
+            $TLESb.AppendLine().Append($Spaces).Append('    || ')
         }
-        $CdnData | Select-Object -ExpandProperty ipv6Addresses | ForEach-Object {
-            if ($TLESb.Length -eq $PreBlock.Length) {
-                $TLESb.Append("        if(") | Out-Null
-            }
-            else {
-                $TLESb.AppendLine() | Out-Null
-                $TLESb.Append("        || ") | Out-Null
-            }
-            $TLESb.Append("isInNetEx(resolved_ip, `"$($_.BaseIpAddress)/$($_.prefixLength)`")") | Out-Null
-        }
+        $first = $false
+        $TLESb.Append('isInNetEx(resolved_ip, "').Append($addressRange).Append('")')
     }
-    $AzureIPsUrl = Invoke-WebRequest -Uri "https://www.microsoft.com/en-us/download/confirmation.aspx?id=56519" -UseBasicParsing -ErrorAction SilentlyContinue  | 
-            Select-Object -ExpandProperty Links | Select-Object -ExpandProperty href | 
-            Where-Object { $_.EndsWith('.json') -and $_ -match 'ServiceTags' } | Select-Object -First 1
-    if ($AzureIPsUrl) {
-        Invoke-RestMethod -Uri $AzureIPsUrl -ErrorAction SilentlyContinue | Select-Object -ExpandProperty values | 
-            Where-Object { $_.name -eq 'AzureFrontDoor.Frontend' } | Select-Object -First 1 -ExpandProperty properties |
-            Select-Object -ExpandProperty addressPrefixes | ForEach-Object {
-                if ($TLESb.Length -eq $PreBlock.Length) {
-                    $TLESb.Append("        if(") | Out-Null
-                }
-                else {
-                    $TLESb.AppendLine() | Out-Null
-                    $TLESb.Append("        || ") | Out-Null
-                }
-                $TLESb.Append("isInNetEx(resolved_ip, `"$_`")") | Out-Null
-            }
-    }
-    if ($TLESb.Length -gt $PreBlock.Length) {
-        $TLESb.AppendLine(")") | Out-Null
-        $TLESb.AppendLine("        {") | Out-Null
-        $TLESb.AppendLine("            return $directProxyVarName;") | Out-Null
-        $TLESb.AppendLine("        }") | Out-Null
+    if (!$first) {
+        $null = $TLESb.AppendLine(')').
+            Append($Spaces).AppendLine('{').
+            Append($Spaces).Append('    return ').Append($directProxyVarName).AppendLine(';').
+            Append($Spaces).AppendLine('}')
     }
     else {
-        $TLESb.AppendLine("        // no addresses found for service via script") | Out-Null
+        $null = $TLESb.Append($Spaces).AppendLine('// no addresses found for service via script')
     }
-    $TLESb.AppendLine("    }") | Out-Null
-    return $TLESb.ToString()
+    return $TLESb.AppendLine('    }').ToString()
 }
 
-function Get-Regex
-{
-    param(
-        [Parameter(Mandatory = $true)]
-        [ValidateNotNullOrEmpty()]
-        [string] $Fqdn
-    )
-
-    return "^" + $Fqdn.Replace(".", "\.").Replace("*", ".*").Replace("?", ".?") + "$"
-}
-
-function Match-RegexList
-{
-    param(
-        [Parameter(Mandatory = $true)]
-        [ValidateNotNullOrEmpty()]
-        [string] $ToMatch,
-
-        [Parameter(Mandatory = $false)]
-        [string[]] $MatchList
-    )
-
-    if (!$MatchList)
-    {
-        return $false
-    }
-    foreach ($regex in $MatchList)
-    {
-        if ($regex -ne $ToMatch -and $ToMatch -match (Get-Regex $regex))
-        {
-            return $true
-        }
-    }
-    return $false
-}
-
-function Get-Endpoints
-{
+function Get-Endpoints {
     $url = $baseServiceUrl
-    if ($TenantName)
-    {
+    if ($TenantName) {
         $url += "&TenantName=$TenantName"
     }
-    if ($ServiceAreas)
-    {
+    if ($ServiceAreas) {
         $url += "&ServiceAreas=" + ($ServiceAreas -Join ",")
     }
     return Invoke-RestMethod -Uri $url
 }
 
-function Get-Urls
-{
-    param(
-        [Parameter(Mandatory = $false)]
-        [psobject[]] $Endpoints
-    )
-
-    if ($Endpoints)
-    {
-        return $Endpoints | Where-Object { $_.urls } | ForEach-Object { $_.urls } | Sort-Object -Unique
-    }
-    return @()
-}
-
-function Get-UrlVarTuple
-{
-    param(
-        [Parameter(Mandatory = $true)]
-        [ValidateNotNullOrEmpty()]
-        [string] $VarName,
-
-        [Parameter(Mandatory = $false)]
-        [string[]] $Urls
-    )
-    return New-Object 'Tuple[string,string[]]'($VarName, $Urls)
-}
-
-function Get-MapVarUrls
-{
+function Get-MapVarUrls {
     Write-Verbose "Retrieving all endpoints for instance $Instance from web service."
     $Endpoints = Get-Endpoints
 
-    if ($Type -eq 1)
-    {
-        $directUrls = Get-Urls ($Endpoints | Where-Object { $_.category -eq "Optimize" })
-        $nonDirectPriorityUrls = Get-Urls ($Endpoints | Where-Object { $_.category -ne "Optimize" }) | Where-Object { Match-RegexList $_ $directUrls }
-        return @(
-            Get-UrlVarTuple -VarName $defaultProxyVarName -Urls $nonDirectPriorityUrls
-            Get-UrlVarTuple -VarName $directProxyVarName -Urls $directUrls
-        )
-    }
-    elseif ($Type -eq 2)
-    {
-        $directUrls = Get-Urls ($Endpoints | Where-Object { $_.category -in @("Optimize", "Allow")})
-        $nonDirectPriorityUrls = Get-Urls ($Endpoints | Where-Object { $_.category -notin @("Optimize", "Allow") }) | Where-Object { Match-RegexList $_ $directUrls }
-        return @(
-            Get-UrlVarTuple -VarName $defaultProxyVarName -Urls $nonDirectPriorityUrls
-            Get-UrlVarTuple -VarName $directProxyVarName -Urls $directUrls
-        )
+    $Include = if ($Type -eq 'OptimizeOnly') { @('Optimize') } else { @('Optimize', 'Allow') }
+
+    $directUrls = $endpoints |
+        Where-Object { $_.category -in $Include } |
+        Where-Object { $_.urls } |
+        ForEach-Object { $_.urls } |
+        Sort-Object -Unique
+
+    $MatchList = [Collections.Generic.Dictionary[string,Regex]]@{}
+    $directUrls |
+        Where-Object { $_.Contains('*') -or $_.Contains('?') } |
+        ForEach-Object { $MatchList[$_] = [Regex]::new('^{0}$' -f $_.Replace('.','\.').Replace('*','.*').Replace('?','.?'),[Text.RegularExpressions.RegexOptions]::IgnoreCase) }
+
+    $nonDirectPriorityUrls = $endpoints |
+        Where-Object { $_.category -notin $Include } |
+        Where-Object { $_.urls } |
+        ForEach-Object { $_.urls } |
+        Sort-Object -Unique |
+        Where-Object { [Linq.Enumerable]::Any($MatchList,[Func[System.Collections.Generic.KeyValuePair[string,Regex],bool]]{$args[0].Key -ne $_ -and $args[0].Value.IsMatch($_)}) }
+
+    return [PSCustomObject]@{
+        NonDirectOverrideFqdns = $nonDirectPriorityUrls
+        DirectFqdns = $directUrls
     }
 }
 
@@ -491,68 +499,59 @@ function Get-MapVarUrls
 ### Main script
 ##################################################################################################################
 
-$content = Get-PacString (Get-MapVarUrls)
+$content = Get-MapVarUrls | Get-PacString
 
-if ($FilePath)
-{
+if ($FilePath) {
     $content | Out-File -FilePath $FilePath -Encoding ascii
 }
-else
-{
+else {
     $content
 }
 ```
 
-The script will automatically parse the Azure list based on the [download URL](https://www.microsoft.com/download/details.aspx?id=56519) and keys off of **AzureFrontDoor.Frontend**, so there's no need to get that manually.
+The script will automatically parse the appropriate Azure CDN list based on the **Instance** parameter value and keys off of **AzureFrontDoor.Frontend**, so there's no need to get that manually.
 
-Again, we don't recommend performing VPN offload using just the FQDNs; utilizing **both** the FQDNs and the IP addresses in the function helps scope the use of this offload to a limited set of endpoints including Live Events/Stream. The way the function is structured will result in a DNS lookup being done for the FQDN that matches those listed by the client directly, i.e. DNS resolution of the remaining namespaces remains unchanged.
+Performing VPN offloading utilizing **both** the FQDNs and the IP addresses (where provided) in the function helps scope the use of this offload to a limited set of endpoints including Teams Events. The way the function is structured will result in a DNS lookup being done for the FQDN that matches those listed by the client directly, that is, DNS resolution of the remaining namespaces remains unchanged. In the case of the Commercial cloud, not all IP addresses are provided; VPN offloading would need to rely on matching the namespaces defined earlier in this article.
 
-If you wish to limit the risk of offloading endpoints not related to Teams events and Stream, you can remove the **\*.azureedge.net** domain from the configuration which is where most of this risk lies as this is a shared domain used for all Azure CDN customers. The downside of this is that any event using an external encoder powered by Stream won't be optimized, but events produced/organized within Teams will be.
 
 ## 3. Configure routing on the VPN to enable direct egress
 
-The final step is to add a direct route for the Teams event IPs described in **Gathering the current lists of CDN Endpoints** into the VPN configuration to ensure the traffic isn't sent via the forced tunnel into the VPN. Detailed information on how to do this for Microsoft 365 Optimize endpoints can be found in the [Implement VPN split tunneling](microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling) section of [Implementing VPN split tunneling for Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md). The process is exactly the same for the Stream or Teams events IPs listed in this document.
+The final step is to add a direct route for the Teams event IPs (or namespaces) described in **Gathering the current lists of CDN Endpoints** into the VPN configuration to ensure the traffic isn't sent via the forced tunnel into the VPN. Detailed information on how to do this for Microsoft 365 Optimize endpoints can be found in the [Implement VPN split tunneling](microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling) section of [Implementing VPN split tunneling for Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md). The process is exactly the same for the Teams events IPs listed in this document.
 
-Note that only the IPs (not FQDNs) from [Gathering the current lists of CDN Endpoints](#gathering-the-current-lists-of-cdn-endpoints) should be used for VPN configuration.
 
 ## FAQ
 
 ### Will this send all my traffic to the service direct?
 
-No, this will send the latency-sensitive streaming traffic for a Teams Event or Stream video direct, any other traffic will continue to use the VPN tunnel if they don't resolve to the IPs published.
+No, this will send the latency-sensitive, potentially high-volume streaming traffic for a Teams Event attendee direct, any other traffic will continue to use the VPN tunnel if they don't resolve to the IPs published or match the defined namespace.
 
 ### Do I need to use the IPv6 Addresses?
 
-No, the connectivity can be IPv4 only if required.
+No, the connectivity can be IPv4 only if necessary.
 
 ### Why are these IPs not published in the Microsoft 365 URL/IP service?
 
 Microsoft has strict controls around the format and type of information that is in the service to ensure customers can reliably use the information to implement secure and optimal routing based on endpoint category.
 
-The **Default** endpoint category has no IP information provided for numerous reasons (Default endpoints might be outside of the control of Microsoft, might change too frequently, or might be in blocks shared with other elements). For this reason, Default endpoints are designed to be sent via FQDN to an inspecting proxy, like normal web traffic.
+The **Default** endpoint category has no IP information provided for numerous reasons (Default endpoints might be outside of the control of Microsoft, might change too frequently, or might be in blocks shared with other elements). Default endpoints are designed to be sent via FQDN to an inspecting proxy, like normal web traffic.
 
-In this case, the above endpoints are CDNs that might be used by non-Microsoft controlled elements other than Live Events or Stream, and thus sending the traffic direct will also mean anything else which resolves to these IPs will also be sent direct from the client. Due to the unique nature of the current global crisis and to meet the short-term needs of our customers, Microsoft has provided the information above for customers to use as they see fit.
+### Do I only need to allow access to these IPs/namespaces?
 
-Microsoft is working to reconfigure the Teams events endpoints to allow them to be included in the Allow/Optimize endpoint categories in the future.
-
-### Do I only need to allow access to these IPs?
-
-No, access to all of the **Required** marked endpoints in [the URL/IP service](urls-and-ip-address-ranges.md) is essential for the service to operate. In addition, any Optional endpoint marked for Stream (ID 41-45) is required.
+No, access to all of the **Required** marked endpoints for the appropriate environment is essential for the service to operate.
+- Worldwide including GCC: [Endpoints for Worldwide](urls-and-ip-address-ranges.md)
+- Microsoft 365 U.S. Government GCC High: [Endpoints for GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md)
+- Microsoft 365 U.S. Government DoD: [Endpoints for DoD](microsoft-365-u-s-government-dod-endpoints.md)
 
 ### What scenarios will this advice cover?
 
 1. Live events produced within the Teams App
-2. Viewing Stream hosted content
-3. External device (encoder) produced events
-4. Teams Town hall
+2. Teams encoder produced live events
+3. Teams Town hall
 
 ### Does this advice cover presenter traffic?
 
-It doesn't; the advice above is purely for those consuming the service. Presenting from within Teams will see the presenter's traffic flowing to the Optimize marked UDP endpoints listed in URL/IP service row 11 with detailed VPN offload advice outlined in the [Implement VPN split tunneling](microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling) section of [Implementing VPN split tunneling for Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md).
+It doesn't; the preceding advice is purely for those attending the event. Presenting from within Teams will see the presenter's traffic flowing to the Optimize marked UDP endpoints listed in URL/IP service row 11 with detailed VPN offload advice outlined in the [Implement VPN split tunneling](microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling) section of [Implementing VPN split tunneling for Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md).
 
-### Does this configuration risk traffic other than Town hall, Live Events &amp; Stream being sent direct?
-
-Yes, due to shared FQDNs used for some elements of the service, this is unavoidable. This traffic is normally sent via a corporate proxy which can apply inspection. In a VPN split tunnel scenario, using both the FQDNs and IPs will scope this risk down to a minimum, but it will still exist. Customers can remove the **\*.azureedge.net** domain from the offload configuration and reduce this risk to a bare minimum but this will remove the offload of Stream-supported Live Events (Teams-scheduled, Stream encoder events, Viva Engage events produced in Teams, Viva Engage-scheduled Stream encoder events, and Stream scheduled events or on-demand viewing from Stream). Events scheduled and produced in Teams (including Town hall) are unaffected.
 
 ## Related articles
 

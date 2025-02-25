@@ -26,7 +26,7 @@ Although Bookings is a feature of Microsoft 365, not all of your staff members a
 
 ## Watch: Add your staff to Bookings
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuVka]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=4e73854b-cf44-4121-8e3a-59f4fe51080d]
 
 ## Steps
 

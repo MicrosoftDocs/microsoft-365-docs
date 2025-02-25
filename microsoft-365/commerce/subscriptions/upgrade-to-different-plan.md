@@ -25,7 +25,7 @@ ms.custom:
 - GAUpdates
 search.appverid: MET150 
 description: "Learn how to upgrade or change to a different plan in the Microsoft 365 admin center."
-ms.date: 02/23/2024
+ms.date: 12/05/2024
 ---
 
 # Upgrade or change to a different Microsoft 365 for business plan
@@ -45,6 +45,9 @@ When your business needs change, or you want more features, you can change to a 
 
 Changing plans is the right choice when you want to move all users assigned to a single plan. When you change plans, all users in the current plan are assigned licenses for the new plan at the same time. If you only want to move some users to a new plan, buy a new plan with the number of licenses you need, and assign those licenses to the users that you want to move. For more information, see [Move users to a different subscription](move-users-different-subscription.md).
 
+> [!NOTE]
+> If you have an MCA billing account, you can follow the steps to [Automatically change your subscription to a new plan](/microsoft-365/commerce/subscriptions/upgrade-to-different-plan) and move some users to a new plan by entering the number of licenses that you want. You must assign the new licenses to the users you want to move. 
+
 ## Automatically change your subscription to a new plan
 
 ### If you have an MCA billing account type
@@ -55,11 +58,8 @@ Changing plans is the right choice when you want to move all users assigned to a
    - If you’re using the **Simplified view**, select **Subscriptions**.
    - If you’re using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. Select the subscription that you want to manage.
-3. On the subscription details page, in the **Other subscription options** section, select **Change to a different subscription option**.
-4. On the **Compare products and select another option** page, select a different plan to compare with your current plan. When you find the one that you want to buy, select **Next**.
-5. Choose when to schedule the change, enter the number of licenses that you want, select a subscription length and a billing frequency, then select **Next**.
-6. Review your selections, then select **Save changes**.
-
+1. On the subscription details page, in the **Other subscription options** section, select **Change to a different subscription option**.
+1. Choose when to schedule the change, enter the number of licenses that you want, select a subscription length and a billing frequency, then select **Change plan**.
 ### If you have an MOSA billing account type
 
 [!INCLUDE [office-365-operated-by-21vianet-admin-center-link](../../includes/office-365-operated-by-21vianet-admin-center-link.md)]

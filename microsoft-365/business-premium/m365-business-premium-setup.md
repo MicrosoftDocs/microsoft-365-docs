@@ -24,6 +24,9 @@ This article describes how to get Microsoft 365 Business Premium, complete the b
 
 :::image type="content" source="media/mission1.png" alt-text="Diagram showing the Sign in and set up phase highlighted." lightbox="media/mission1.png":::
 
+> [!NOTE]
+> If you have a Microsoft Customer Agreement (MCA) billing account type with Microsoft, you automatically receive a product called Microsoft Entra ID Free. This product improves your tenant management and security by tracking new tenants created with the same billing account. There's no charge for this product, and there's no other action you need to take. To learn more about this product, see [Microsoft Entra ID Free](/azure/cost-management-billing/manage/microsoft-entra-id-free). [Find out what type of billing account you have](../commerce/manage-billing-accounts.md#view-my-billing-accounts).
+
 > [!TIP]
 > If you're looking for Microsoft 365 for Campaigns, see [Set up Microsoft 365 for Campaigns](m365-campaigns-setup.md).
 
@@ -72,7 +75,7 @@ To complete the basic setup process, you can choose from several options availab
 
 Microsoft 365 Business Premium includes a guided setup process, as shown in the following video:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ title="Set up Microsoft 365 for business"]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=de65e64a-e0d9-4f67-bc18-05d777b85e0b title="Set up Microsoft 365 for business"]
 
 ### The guided setup process, step by step
 

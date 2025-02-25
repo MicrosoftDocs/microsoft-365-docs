@@ -4,8 +4,8 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: ragovind
-ms.date: 06/21/2023
+ms.reviewer: prpath
+ms.date: 09/27/2024
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-lighthouse
@@ -32,7 +32,12 @@ Microsoft 365 Lighthouse lets you investigate and mitigate threats across all yo
 
 - Users must be running Microsoft Defender Antivirus (included with Windows). Lighthouse does not support non-Microsoft antivirus software. For more information, see [Turn on Microsoft Defender Antivirus](/mem/intune/user-help/turn-on-defender-windows).
 
-- You must be a Global Administrator in the partner tenant that you're signing in to.
+- You must hold at least one of the following Microsoft Entra roles for the customer tenants whose data you want to read:
+    - Security Reader
+    - Security Operator
+    - Intune Administrator
+    - Global Reader
+    - Helpdesk Administrator
 
 ## Investigate active threats
 
@@ -82,7 +87,7 @@ A quick scan searches common locations where malware could be, such as registry 
 
 4. In the device details pane, select **Run full scan** or **Run quick scan**.
 
-You can also scan multiple devices by selecting the checkbox next to each device name in the list and then select **Run full scan** or **Run quick scan**.
+To scan multiple devices, select the checkbox next to each device name in the list, and then select **Run full scan** or **Run quick scan**.
 
 ## Get updates for Microsoft Defender Antivirus
 
@@ -96,13 +101,13 @@ To update Microsoft Defender Antivirus on a single device:
 
 4. In the device details pane, select **Update antivirus**.
 
-You can get updates for multiple devices by selecting the checkbox next to each device name in the list and then select **Update antivirus**.
+To get updates for multiple devices, select the checkbox next to each device name in the list, and then select **Update antivirus**.
 
 If you need to create a new policy, select **Update policy** in the device details pane. Lighthouse will redirect you to the Microsoft Intune admin center. For more information about creating a policy, see [Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy).
 
 ## Check pending antivirus actions on a device
 
-When consecutive actions are applied to a device, you'll receive an action pending message. To check which actions are pending on a device:
+When consecutive actions are applied to a device, you'll receive an action-pending message. To check which actions are pending on a device:
 
 1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Devices** > **Threat management**.
 
@@ -122,14 +127,14 @@ Some updates may require a device to restart to install correctly.
 
 3. From the list of devices, select a device.
 
-4. In the device details pane, select **Reboot device**.
+4. In the device details pane, select **Restart device**.
 
-You can also restart multiple devices by selecting the checkbox next to each device name in the list and then select **Reboot device**.
+To restart multiple devices, select the checkbox next to each device name in the list, and then select **Restart device**.
 
 ## Related content
 
 [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) (article)\
 [Overview of the Threat management page in Microsoft 365 Lighthouse](m365-lighthouse-threat-management-page-overview.md) (article)\
 [Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy) (article)\
-[Turn on Microsoft Defender Antivirus](/mem/intune/user-help/turn-on-defender-windows) (article)\
+[Enable and configure Microsoft Defender Antivirus always-on protection](/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus) (article)\
 [Microsoft Security Intelligence](https://www.microsoft.com/wdsi/threats) (web page)

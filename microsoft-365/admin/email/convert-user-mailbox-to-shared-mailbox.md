@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 08/18/2023
+ms.date: 09/30/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -51,15 +51,13 @@ When you convert a user's mailbox to a shared mailbox, all of the existing email
 
 - To put an In-Place Hold or a Litigation Hold on a shared mailbox, you must assign an Exchange Online Plan 2 license *or* an Exchange Online Plan 1 license and an Exchange Online Archiving add-on license to the shared mailbox.
 
-## Use the Exchange admin center to convert a mailbox
+## Convert a private mailbox to a shared maailbox
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
+1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 
-2. Select **Recipients** \> **Mailboxes**.
+2. Select the user. On the **Mail** tab, select **Convert to shared mailbox** and select **Convert**.
 
-3. Select the user mailbox. In the **Others** tab, select **Convert to shared mailbox**.
-
-4. If the mailbox is smaller than 50 GB, you can [remove the license from the user](../manage/assign-licenses-to-users.md), and stop paying for it. Don't delete the user's account. The shared mailbox needs it there as an anchor. If you are converting the mailbox of an employee that is leaving your organization, you should take additional steps to make sure that they cannot log in anymore. Please see [Remove a former employee from Microsoft 365](../add-users/remove-former-employee.md).
+3. If the mailbox is smaller than 50 GB, you can [remove the license from the user](../manage/assign-licenses-to-users.md), and stop paying for it. Don't delete the user's account. The shared mailbox needs it there as an anchor. If you are converting the mailbox of an employee that is leaving your organization, you should take additional steps to make sure that they cannot log in anymore. Please see [Remove a former employee from Microsoft 365](../add-users/remove-former-employee.md).
 
 For everything else you need to know about shared mailboxes, see [About shared mailboxes](about-shared-mailboxes.md) and [Create a shared mailbox](create-a-shared-mailbox.md).
 
@@ -85,7 +83,7 @@ After deleting a user account, follow these steps to convert their old mailbox t
 
 2. Select **Recipients** \> **Mailboxes**.
 
-3. Select the shared mailbox. On the **Others** tab, select **Convert to regular mailbox**.
+3. Select the shared mailbox. On the **Others** tab, select **Convert to regular mailbox** and select **Confirm**.
 
 4. Select **Confirm** on the Convert mailbox from shared to regular page.
 
@@ -108,4 +106,3 @@ For more info about converting a user mailbox to a shared mailbox in an Exchange
 [About shared mailboxes](about-shared-mailboxes.md) (article)\
 [Create a shared mailbox](create-a-shared-mailbox.md) (article)\
 [Configure a shared mailbox](configure-a-shared-mailbox.md) (article)\
-[Remove a license from a shared mailbox](remove-license-from-shared-mailbox.md) (article)

@@ -37,11 +37,11 @@ When users access Lighthouse for the first time, they'll be prompted to set up M
 
 ## Set up role-based access control
 
-Role-based access control (RBAC) grants access to resources or information based on user roles. Access to customer tenant data and settings in Lighthouse is restricted to specific roles from the Cloud Solution Provider (CSP) program. To set up RBAC roles in Lighthouse, we recommend using granular delegated admin privileges (GDAP) to implement granular assignments for users. Delegated admin privileges (DAP) is still required for the tenant to onboard successfully, but GDAP-only customers will soon be able to onboard without a dependency on DAP. GDAP permissions take precedence when DAP and GDAP coexist for a customer.
+Role-based access control (RBAC) grants access to resources or information based on user roles. Access to customer tenant data and settings in Lighthouse is restricted to specific roles from the Cloud Solution Provider (CSP) program. To set up RBAC roles in Lighthouse, we recommend using granular delegated administrative privileges (GDAP) to implement granular assignments for users. Delegated administrative privileges (DAP) is still required for the tenant to onboard successfully, but GDAP-only customers will soon be able to onboard without a dependency on DAP. GDAP permissions take precedence when DAP and GDAP coexist for a customer.
 
-To set up a GDAP relationship, see [Obtain granular admin permissions to manage a customer's service](/partner-center/gdap-obtain-admin-permissions-to-manage-customer). For more information on which roles we recommend use Lighthouse, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md).
+To set up a GDAP relationship, see [Obtain granular admin permissions to manage a customer's service - Partner Center](/partner-center/gdap-obtain-admin-permissions-to-manage-customer). For more information on which roles we recommend use Lighthouse, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md).
 
-MSP technicians may also access Lighthouse by using Admin Agent or Helpdesk Agent roles via delegated admin privileges (DAP).
+MSP technicians may also access Lighthouse by using Admin Agent or Helpdesk Agent roles via delegated administrative privileges (DAP).
 
 For non-customer tenant-related actions in Lighthouse (for example, onboarding, customer deactivating/reactivating, managing tags, reviewing logs), MSP technicians must have an assigned role in the partner tenant. See [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md) for more details on partner tenant roles.
 

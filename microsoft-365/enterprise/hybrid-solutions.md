@@ -3,7 +3,7 @@ title: "Hybrid solutions"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 07/31/2024
+ms.date: 11/14/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -28,21 +28,11 @@ description: Provides a list of links to useful information for deploying Office
 
 With Microsoft Azure, you can deploy some Office Server workloads that were typically deployed on-premises in Azure infrastructure services.
   
-For Microsoft 365 identity infrastructure in Azure:
-
 - [Using Microsoft Entra ID for SharePoint Server Authentication](/azure/active-directory/saas-apps/sharepoint-on-premises-tutorial)
 
-- [Deploy Microsoft 365 Directory Synchronization in Microsoft Azure](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)
-  
 - [Connect an on-premises network to a Microsoft Azure virtual network](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
 
-For SharePoint Server 2013 workloads in Azure:
-  
-- [Microsoft Azure Architectures for SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md)
-
-- [SharePoint Server 2013 Disaster Recovery in Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
-
-- [Internet Sites in Microsoft Azure using SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
+- [Deploy Microsoft 365 Directory Synchronization in Microsoft Azure](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)
   
 ## Related topics
 

@@ -60,7 +60,7 @@ Users with the Reports Reader role can view usage reporting data and the reports
 
 ## Capability to choose specific users or certain groups
 
-You can choose the users and groups whose data will be used to determine your org's people experiences insights. Omitting some groups will affect the insights calculations. You have to be a Global admin to opt your organization out of the people experiences reports. You must be a Global admin to change this setting. It can take up to 24 hours for change to apply.
+You can choose the users and groups whose data will be used to determine your org's people experiences insights. Omitting some groups will affect the insights calculations. You have to be a Global admin to opt your organization out of the people experiences reports and to change this setting. It can take up to 24 hours for change to apply.
 
 To omit certain groups:
 

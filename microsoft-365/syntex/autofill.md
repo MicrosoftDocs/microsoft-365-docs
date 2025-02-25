@@ -4,9 +4,9 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 05/09/2024
+ms.date: 08/09/2024
 audience: admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
 search.appverid: 
@@ -100,8 +100,4 @@ To turn off autofill on a specific column, follow these steps:
 |**Currency**      | \<insert the question here>? Reply in a valid U.S. currency format. If the documents don't provide enough information, leave the answer blank.      | What is the total cost of the project as detailed in the invoice? Reply in a valid U.S. currency format. If the documents don't provide enough information, leave the answer blank.      |
 
 > [!NOTE]
-> To see the column types that are currently available for autofill, see [Supported column data types](autofill-overview.md#supported-column-data-types).
-
-<!---|**Text**     | \<insert the question here>? The answer needs to be fewer than 255 characters. If no proper answer is found, respond with \<insert default response>.  | Who is the broker listed in the agreement? The answer needs to be fewer than 255 characters. If no proper answer is found, respond with "None."   |
-|**Text**     | \<insert the question here>? If no proper answer is found, respond with \<insert default response>. | What is the current status of the project milestone? If no proper answer is found, respond with "Status pending review."   |
-|**Multiple lines of text**     | \<insert the question here>? If no proper answer is found, respond with \<insert default response>.   | What is the description of the project scope? If no proper answer is found, respond with "None found."   |--->
+> To see the column types that are currently available for autofill, see [Requirements and limitations](autofill-overview.md#requirements-and-limitations).

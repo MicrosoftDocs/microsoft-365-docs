@@ -41,7 +41,7 @@ to become available.
   
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198103).<br><br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4VjrX?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f8007c63-a8a0-44ee-ab5b-0ac799333496]
 
 ## How to get to the Reports dashboard
 
@@ -95,8 +95,9 @@ Depending on your subscription, here are the available reports in all environmen
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |[Active Users](active-users-ww.md)|Yes|Yes|Yes|Yes|Yes|
 |[Microsoft browser usage](browser-usage-report.md)|Yes|N/A<sup>1</sup>|N/A<sup>1</sup>|N/A<sup>1</sup>|N/A<sup>1</sup>|
-|[Microsoft 365 Copilot readiness report](microsoft-365-copilot-readiness.md)|Yes|N/A<sup>2</sup>|N/A<sup>2</sup>|N/A<sup>2</sup>|N/A<sup>2</sup>|
-|[Microsoft 365 Copilot usage report](microsoft-365-copilot-usage.md)|Yes|N/A<sup>2</sup>|N/A<sup>2</sup>|N/A<sup>2</sup>|N/A<sup>2</sup>|
+|[Microsoft 365 Copilot readiness report](microsoft-365-copilot-readiness.md)|Yes|N/A<sup>1</sup>|N/A<sup>1</sup>|N/A<sup>2</sup>|N/A<sup>2</sup>|
+|[Microsoft 365 Copilot usage report](microsoft-365-copilot-usage.md)|Yes|N/A<sup>1</sup>|N/A<sup>1</sup>|N/A<sup>2</sup>|N/A<sup>2</sup>|
+|[Microsoft Copilot usage report](microsoft-copilot-usage.md)|Yes|N/A<sup>1</sup>|N/A<sup>1</sup>|N/A<sup>2</sup>|N/A<sup>2</sup>|
 |[Email activity](email-activity-ww.md)|Yes|Yes|Yes|Yes|Yes|
 |[Email apps usage](email-apps-usage-ww.md)|Yes|Yes|Yes|Yes|Yes|
 |[Mailbox usage](mailbox-usage.md)|Yes|Yes|Yes|Yes|Yes|
@@ -151,7 +152,7 @@ Your user list will look like this:
 
 ![Reports - anonymized user list.](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
 
-If you want to unhide user, group, or site information when you're generating your reports, a **global administrator** can quickly make that change in the admin center.
+If you want to unhide user, group, or site information when you're generating your reports, you can quickly make that change in the admin center.
 
 Reports provide information about your organization's usage data. Starting September 1, 2021, we're hiding user, group, or site information by default for all reports as part of our ongoing commitment to help companies support their local privacy laws.
 
@@ -184,7 +185,7 @@ Properties for Teams team usage report:
 
 There are additional reports that follow this org setting. For example, some reports in Microsoft Teams admin center follow the same.
 
-Global administrators can revert this change for their tenant and show identifiable user, group, and site information if their organization's privacy practices allow it. It can be achieved in the Microsoft 365 admin center by following these steps:
+You can revert this change for their tenant and show identifiable user, group, and site information if their organization's privacy practices allow it. It can be achieved in the Microsoft 365 admin center by following these steps:
 
 1. In the admin center, go to the **Settings** \> **Org Settings** \> **Services** page.
 
@@ -192,7 +193,7 @@ Global administrators can revert this change for their tenant and show identifia
 
 3. Uncheck the statement **Display concealed user, group, and site names in all reports**, and then save your changes.
 
-Beginning on June 23, 2022, an API will gradually become available to all environments for global admins to change this setting without needing to visit the Microsoft 365 admin center.
+Beginning on June 23, 2022, an API will gradually become available to all environments for admins to change this setting without needing to visit the Microsoft 365 admin center.
 
 For more details, see [adminReportSettings API](/graph/api/resources/adminreportsettings?view=graph-rest-beta&preserve-view=true).
 
@@ -200,7 +201,7 @@ Two methods have been approved for this API:
 
 :::image type="content" source="../../media/api-show-details.png" alt-text="API Methods.":::
 
-The report will only contain a Privacy Setting property. For more information on Graph API, see [Use the Microsoft Graph API](/graph/use-the-api). Global admins can use the Software Development Kit (SDK) or directly call the API using any program language with network ability. We recommend using [Graph Explorer](/graph/graph-explorer/graph-explorer-overview).
+The report will only contain a Privacy Setting property. For more information on Graph API, see [Use the Microsoft Graph API](/graph/use-the-api). You can use the Software Development Kit (SDK) or directly call the API using any program language with network ability. We recommend using [Graph Explorer](/graph/graph-explorer/graph-explorer-overview).
 
 It will take a few minutes for these changes to take effect on the reports in the reports dashboard. This setting also applies to the Microsoft 365 usage reports in [Microsoft Graph](/graph/api/resources/report) and [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics) and [the usage reports in Microsoft Teams Admin center](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). Showing identifiable user information is a logged event in the Microsoft Purview compliance portal audit log.
 

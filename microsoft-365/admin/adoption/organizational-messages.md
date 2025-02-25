@@ -20,6 +20,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - AdminTemplateSet
+- campaignIDs-batch1
 search.appverid:
 - MET150
 - MOE150
@@ -30,7 +31,7 @@ description: "Learn how to send messages to your organization in Microsoft 365 u
 
 Organizational messages enable IT admins to deliver clear, actionable messages in-product and in a targeted way, while maintaining user-level privacy. Organizational messages in Adoption Score use targeted in-product notifications to advise on Microsoft 365 recommended practices based on Adoption Score insights. Users can be reminded to use products that have recently been deployed, encouraged to try a product on a different surface, or to recommend new ways of working, such as using @mentions to improve response rates in communications. Templated messages are delivered to users in their flow of work through surfaces including Outlook, Excel, PowerPoint, Word, and new Teams. Authorized professionals can use the organizational messages wizard in Adoption Score to choose from up to three templated message types, define when and how often a message can be displayed, and exclude groups or priority accounts from receiving the message.
 
-Organizational messages for Adoption Score will initially roll out to Communication, Content Collaboration, Mobility, and more to follow to support all People Experience categories. Check out the [2022 Ignite session](https://ignite.microsoft.com/en-US/sessions/ff17a80f-2fa6-4e52-b92c-745f0ca8d574?source=sessions) for a detailed demonstration and feature description.
+Organizational messages for Adoption Score will initially roll out to Communication, Content Collaboration, Mobility, and more to follow to support all People Experience categories.
 
 > [!NOTE]
 > The feature is currently in preview. If you encounter any bugs or have any suggestions, give us feedback in the Microsoft 365 admin center. We appreciate your feedback and will reach out to you as fast as we can.
@@ -43,7 +44,7 @@ For a successful preview experience, you need to be one of the following admin r
 
 - Organizational message writer
 
-The organizational message writer role is the new built-in role that allows assigned admins to view and configure messages. The global administrator can assign the organizational message writer role to admin:
+The Organizational message writer role is the new built-in role that allows assigned admins to view and configure messages. The Global administrator can assign the Organizational message writer role to admins:
 
 1. Go to **Roles** \> **Role assignments**.
 
@@ -76,7 +77,7 @@ The desktop teaching call-out is supported by Microsoft 365 Consumer and Commerc
 
 To enable Adoption Score Organizational Messages, the global administrator needs to enable Adoption Score first:
 
-1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a> as a global administrator and go to **Reports** \> **Adoption Score**.
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a> and go to **Reports** \> **Adoption Score**.
 
 2. Select **Enable Adoption Score**. It can take up to 24 hours for insights to become available.
 

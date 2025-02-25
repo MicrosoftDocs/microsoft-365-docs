@@ -3,10 +3,10 @@ title: Push content types to a hub
 ms.author: chucked
 author: chuckedmonson
 ms.reviewer: ssquires
-ms.date: 01/14/2024
+ms.date: 10/14/2024
 manager: jtremper
 audience: admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
@@ -21,7 +21,7 @@ description: Learn how to push content types to a hub.
 
 </br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GyeV]  
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=6698ac03-3ec8-4429-83b8-bc10b11357dd]  
 
 </br>
 

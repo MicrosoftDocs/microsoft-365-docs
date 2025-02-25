@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 10/25/2023
+ms.date: 11/11/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-basic-mobility-security
@@ -24,7 +24,7 @@ ms.custom:
 - basic-mobility-security
 search.appverid:
 - MET150
-description: "For devices you can't manage with Basic Mobility and Security, block Exchange ActiveSync app access to email and use Microsoft Graph PowerShell to get details about org devices."
+description: "For devices, you can't manage with Basic Mobility and Security, block Exchange ActiveSync app access to email and use Microsoft Graph PowerShell to get details about org devices."
 ---
 
 # Manage device access settings in Basic Mobility and Security
@@ -51,8 +51,8 @@ Here's a breakdown for the device details available to you.
 
 |Detail|What to look for in PowerShell|
 |---|---|
-|Device is enrolled in Basic Mobility and Security. For more info, see [Enroll your mobile device using Basic Mobility and Security](enroll-your-mobile-device.md)|The value of the *isManaged* parameter is:<br/>**True**= device is enrolled.<br/>**False**= device is not enrolled.|
-|Device is compliant with your device security policies. For more info, see [Create device security policies](create-device-security-policies.md)|The value of the *isCompliant* parameter is:<br/>**True** = device is compliant with policies.<br/>**False** = device is not compliant with policies.|
+|Device is enrolled in Basic Mobility and Security. For more info, see [Enroll your mobile device using Basic Mobility and Security](enroll-your-mobile-device.md)|The value of the *isManaged* parameter is:<br/>**True**= device is enrolled.<br/>**False**= device isn't enrolled.|
+|Device is compliant with your device security policies. For more info, see [Create device security policies](create-device-security-policies.md)|The value of the *isCompliant* parameter is:<br/>**True** = device is compliant with policies.<br/>**False** = device isn't compliant with policies.|
 
 :::image type="content" source="../../media/basic-mobility-security/bms-7-powershell-parameters.png" alt-text="Basic Mobility and Security PowerShell parameters.":::
 
@@ -87,7 +87,7 @@ For more info on these steps, see [Connect to Microsoft 365 with PowerShell](/po
    Connect-MgGraph -Scopes Device.Read.All, User.Read.All
    ```
 
-2. A popup will open for you to sign in. Provide the credentials of your Administrative Account and log in.
+2. A popup opens for you to sign in. Provide the credentials of your Administrative Account and log in.
 
 3. If your account has the necessary permissions, you see "Welcome To Microsoft Graph!" in the Powershell window.
 
@@ -236,7 +236,7 @@ First, save the script to your computer.
    $user = Get-MgUser -UserId "user@contoso.com"
    ```
 
-4. Run the following command to initiate the script.
+4. Run the following command.
 
    ```powershell
    .\Get-GraphUserDeviceComplianceStatus.ps1 -users $user -Export
@@ -267,11 +267,11 @@ The information is exported to your Windows Desktop as a CSV file. You can speci
    .\Get-GraphUserDeviceComplianceStatus.ps1 -User $Users -Export
    ```
 
-The information is exported to your Windows Desktop as a CSV file. You can use additional parameters to specify the file name and path of the CSV.
+The information is exported to your Windows Desktop as a CSV file. You can use more parameters to specify the file name and path of the CSV.
 
 ## Related content
 
-[Microsoft Connect Has Been Retired](/collaborate/connect-redirect)
+[Microsoft Connect retired](/collaborate/connect-redirect)
 
 [Overview of Basic Mobility and Security](overview.md)
 

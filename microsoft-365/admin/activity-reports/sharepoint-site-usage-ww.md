@@ -44,13 +44,13 @@ Your user list will look like this:
   
 ![Reports - anonymized user list.](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
   
-Global administrators can revert this change for their tenant and show identifiable user information if their organization's privacy practices allow it. It can be achieved in the Microsoft 365 admin center by following these steps:
+Administrators can revert this change for their tenant and show identifiable user information if their organization's privacy practices allow it. It can be achieved in the Microsoft 365 admin center by following these steps:
   
 1. In the admin center, go to the **Settings** \> **Org Settings** \> **Services** page.
 
-2. Select **Reports**. 
+2. Select **Reports**.
   
-3. Uncheck the statement **In all reports, display de-identified names for users, groups, and sites**, and then save your changes. 
+3. Uncheck the statement **In all reports, display de-identified names for users, groups, and sites**, and then save your changes.
   
 ## Interpret the SharePoint site usage report
 

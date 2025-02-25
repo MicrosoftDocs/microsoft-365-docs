@@ -3,9 +3,9 @@ title: Use the Page Diagnostics tool for SharePoint in Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 01/08/2024
+ms.date: 10/18/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: medium

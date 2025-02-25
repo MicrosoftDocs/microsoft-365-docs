@@ -76,7 +76,10 @@ The Microsoft Teams Assignments LTI brings the Learning Accelerators: Reading Pr
 The integration allows you to Connect Class Teams and add Teams Assignments right into your LMS assignments list where students can launch and complete them and sync grades and feedback automatically back to the LMS.
 
 - [Microsoft Assignments integration with Canvas](teams-assignments-with-canvas.md).
+- [Microsoft Assignments integration with Moodle](teams-assignments-with-moodle.md).
 - [Microsoft Assignments integration with Schoology Learning](teams-assignments-with-schoology.md).
+- [Microsoft Assignments integration with Blackboard](teams-assignments-with-blackboard.md).
+- [Microsoft Assignments integration with Desire2Learn Brightspace](teams-assignments-with-brightspace.md).
 
 More LMS support coming soon! Please sign up for more information on current and future LMS integration previews at https://aka.ms/LMSPreview
 

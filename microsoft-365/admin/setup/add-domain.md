@@ -2,12 +2,12 @@
 title: "Add a domain to Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: nkagole
-author: nataliekagole
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
 ms.date: 08/11/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
@@ -49,20 +49,20 @@ Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?l
 To add, modify, or remove domains, you **must** be a **Domain Name Administrator** of a [business or enterprise plan](https://products.office.com/business/office). These changes affect the whole tenant; *Customized administrators* or *regular users* can't make these changes.
 
 > [!TIP]
-> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
+> If you need help with the steps in this article, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
 ## Watch: Add a domain
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198213).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4dN8c?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=23594aee-6bbd-45d0-8e89-f00fc78ca495]
 
 Your company might need multiple domain names for different purposes. For example, you might want to add a different spelling of your company name because customers are already using it and their communications failed to reach you.
 
 > Where possible, we recommend that your organization use a custom domain name, as it can enhance your email's  appearance and improve it's reputation.
 
 > [!TIP]
-> Where possible, we recommend that your organization use a custom domain name, as it can enhance your email's  appearance and improve it's reputation.
+> Where possible, we recommend that your organization use a custom domain name, as it can enhance your email's  appearance and improve its reputation.
 
 1. In the Microsoft 365 admin center, choose <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>.
 1. Select **Get your custom domain set up**, then **Get Started** > **Add domain**.
@@ -75,13 +75,7 @@ Your company might need multiple domain names for different purposes. For exampl
 
 Follow these steps to add, set up, or continue setting up a domain. 
 
-::: moniker range="o365-worldwide"
-
-
-
-1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
-
-::: moniker-end
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
     
 2. Go to the **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
 
@@ -91,9 +85,9 @@ Follow these steps to add, set up, or continue setting up a domain.
     
 5. Choose how you want to verify that you own the domain.
     
-    1. If your domain registrar uses [Domain Connect](#domain-connect-registrars-integrating-with-microsoft-365), Microsoft [will set up your records automatically](../get-help-with-domains/domain-connect.md) by having you sign in to your registrar and confirm the connection to Microsoft 365. You are returned to the admin center and Microsoft automatically verifies your domain.
+    1. If your domain registrar uses [Domain Connect](#domain-connect-registrars-integrating-with-microsoft-365), Microsoft [will set up your records automatically](../get-help-with-domains/domain-connect.md) by having you sign in to your registrar and confirm the connection to Microsoft 365. You're returned to the admin center and Microsoft automatically verifies your domain.
     2. You can use a TXT record to verify your domain. Select this and select **Next** to see instructions for how to add this DNS record to your registrar's website. It can take up to 10 minutes to verify after you add the record although some DNS hosting providers require up to 48 hours.
-    3. You can add a text file to your domain's website. **Select** and download the .txt file from the setup wizard, then **upload** the file to your website's top level folder. The path to the file should look similar to: `http://mydomain.com/ms39978200.txt`. We confirm you own the domain by finding the file on your website.
+    3. You can add a text file to your domain's website. **Select** and download the .txt file from the setup wizard, then **upload** the file to your website's top-level folder. The path to the file should look similar to: `http://mydomain.com/ms39978200.txt`. We confirm you own the domain by finding the file on your website.
     
 6. Choose how you want to make the DNS changes required for Microsoft to use your domain.
     
@@ -160,34 +154,34 @@ Each Microsoft 365 organization can have up to five onmicrosoft.com domains.
 
 > [!NOTE]
 > You must be a Domain Name admin to add a domain.
-> Creating an additional .onmicrosoft domain and using it as your default will not do a rename for SharePoint Online. To make changes to your .onmicrosoft SharePoint domain you would need to use the [SharePoint domain rename preview](/sharepoint/change-your-sharepoint-domain-name) (currently available to any tenant with less than 10,000 sites).
-> If you're using Microsoft 365 mail services, removal of your initial .onmicrosoft domain is not supported.
+> Creating another .onmicrosoft domain and using it as your default won't do a rename for SharePoint Online. To make changes to your .onmicrosoft SharePoint domain you would need to use the [SharePoint domain rename preview](/sharepoint/change-your-sharepoint-domain-name) (currently available to any tenant with less than 10,000 sites).
+> If you're using Microsoft 365 mail services, removal of your initial .onmicrosoft domain isn't supported.
 
 
 To add an onmicrosoft.com domain:
 
 1. In the Microsoft 365 admin center, select **Settings**, and then select <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
 
-2. Select an existing *.onmicrosoft.com* domain.
+1. Select an existing *.onmicrosoft.com* domain.
 
     ![Domains page.](../../media/onmicrosoft-domains.png)
-  
-
-3. On the **Overview** tab, select **Add onmicrosoft.com domain**.
+   
+   
+1. On the **Overview** tab, select **Add onmicrosoft.com domain**.
 
     ![Screenshot of domain properties.](../../media/add-onmicrosoft.comdomain.png)
-
-4. On the **Add onmicrosoft domain** page, in the **Domain name** box, enter the name for your new onmicrosoft.com domain. 
+   
+1. On the **Add onmicrosoft domain** page, in the **Domain name** box, enter the name for your new onmicrosoft.com domain. 
 
     ![Screenshot of Add onmicrosoft domain.](../../media/add-an-onmicrosoftcom-domain-page.png)
-
+   
     > [!NOTE]
-    > Make sure to verify the spelling and accuracy of the domain name you entered. You are limited to five onmicrosoft.com domains, and currently they cannot be deleted once they are created.     
+    > Make sure to verify the spelling and accuracy of the domain name you entered. You're limited to five onmicrosoft.com domains, and currently they can't be deleted once they're created.     
 
-5. Select **Add domain**. When successfully added, you'll see a message stating this.
-    
+1. Select **Add domain**. When successfully added, you'll see a message stating this.
+
     ![Screenshot of domain added successfully.](../../media/domain-added.png)
-
+   
 You can set any domain you own as your default domain.
 
 For more information on how to add an onmicrosoft.com domain, see [Add or replace your onmicrosoft.com domain](add-or-replace-your-onmicrosoftcom-domain.md).

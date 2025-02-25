@@ -3,7 +3,7 @@ title: "Microsoft Entra setup guides"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 12/05/2023
+ms.date: 01/06/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business

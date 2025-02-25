@@ -1,11 +1,11 @@
 ---
 title: "Collaborating with people outside your organization"
-ms.author: jtremper
-author: jacktremper
-manager: pamgreen
-ms.date: 11/06/2023
+author: DaniEASmith
+ms.author: danismith
+manager: jtremper
+ms.date: 10/28/2024
 audience: ITPro
-ms.topic: article
+ms.topic: solution-overview
 ms.service: o365-solutions
 ms.collection: 
 - highpri

@@ -22,10 +22,6 @@ Read more about how the feed works here:  [Discover and learn with Microsoft Fee
 
 ## Where can users see Microsoft Feed?
 
-In **Microsoft 365** (previously Office.com), while signed in with a work or school account select **Feed** from the left navigation bar.
-
-:::image type="content" source="../media/msfeed/MS-select-feed.png" alt-text="Screenshot of Microsoft Feed in Microsoft 365." lightbox="../media/msfeed/MS-select-feed.png":::
-
 In **Microsoft Edge**, while signed in with a work or school account, select the **Work Feed** page when opening a new tab.
 
 :::image type="content" source="../media/msfeed/MS-contoso-feed.png" alt-text="Screenshot of Microsoft Feed in Microsoft Edge." lightbox="../media/msfeed/MS-contoso-feed.png":::
@@ -60,19 +56,9 @@ In addition, Microsoft Feed respects the settings in the "Visibility section" in
 
 As a tenant admin, if you want to disable the Feed, you can do so by following the steps in this section that disable the Feed in the respective endpoints.
 
-- Disabling the Feed in Microsoft 365 (previously Office.com)
 - Disabling the Feed in Microsoft Edge
 - Disabling the Feed in Outlook Mobile
 - Disabling the Feed in Microsoft 365 Mobile
-
-### Disabling the Feed in Microsoft 365 (previously Office.com)
-
-In Microsoft 365 (previously Office.com), as a tenant admin, if you want to disable the experience there, you can contact Microsoft via a service request to turn off Microsoft Feed. Turning off Microsoft Feed removes the Feed icon from the left navigation of Microsoft 365.
-
-1. [Sign in to Microsoft 365](https://admin.microsoft.com) with your Microsoft 365 admin account.
-2. Select **Support** > **New service request.**
-
-To re-enable the feature, you can create **New service request**.
 
 ### Disabling the Feed in Microsoft Edge
 

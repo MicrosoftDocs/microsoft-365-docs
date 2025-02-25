@@ -33,11 +33,11 @@ description: "Admins can learn how to add new employees to Microsoft 365 for bus
 
 This article helps you onboard a new employee to Microsoft 365 for business. We assume you're an Admin and you've already [completed Microsoft 365 set up](../setup/setup.md), and now you have someone new joining your company.
   
-You're in the right place if your new employee needs Microsoft 365, and you're using a [Microsoft 365 plan]( https://www.microsoft.com/microsoft-365/buy/compare-all-microsoft-365-products?rtc=1) that lets you install apps in Microsoft 365, like Word and Excel, on a computer. 
+You're in the right place if your new employee needs Microsoft 365, and you're using a [Microsoft 365 plan]( https://www.microsoft.com/microsoft-365/buy/compare-all-microsoft-365-products?rtc=1) that lets you install apps in Microsoft 365, like Word and Excel, on a computer.
   
  **Not an admin?** [Learn your way around Microsoft 365](https://support.microsoft.com/office/396b8d9e-e118-42d0-8a0d-87d1f2f055fb) helps business and home users with setup.
   
- **No Microsoft 365 productivity apps in your plan?** Follow these steps, but skip the sections for installing apps. Instead, use the [Get started at Microsoft365.com](https://support.microsoft.com/office/91a4ec74-67fe-4a84-a268-f6bdf3da1804). 
+ **No Microsoft 365 productivity apps in your plan?** Follow these steps, but skip the sections for installing apps. Instead, use the [Get started at Microsoft365.com](https://support.microsoft.com/office/91a4ec74-67fe-4a84-a268-f6bdf3da1804).
   
 Here's a quick overview:
   

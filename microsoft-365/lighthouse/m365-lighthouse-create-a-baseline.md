@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: jatingupta
-ms.date: 08/16/2023
+ms.date: 09/27/2024
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-lighthouse
@@ -26,16 +26,11 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 Microsoft 365 Lighthouse empowers you to create your own baselines to deploy to customer tenants. Create your own baselines to accommodate customers with varying degrees of tenant maturity, customers from different industries, customers that have subscribed to different managed services from your company, or customers with varying licensing models.
 
-> [!NOTE]
-> Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, you should see it soon.
->
-> To see which new features are currently available in your partner tenant, go to the **Home** page of Microsoft 365 Lighthouse, and then either select the **What's new** link in the upper-right corner of the page or select **What's new** on the **What's new & learning resources** card.
-
 ## Before you begin
 
-Make sure you and your customer tenants meet the requirements listed in [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+- Make sure you and your customer tenants meet the requirements listed in [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
-Additionally, each partner tenant user must be a Microsoft 365 Lighthouse admin.
+- You must hold either the Administrator or Author role in Lighthouse.
 
 ## Create a baseline
 
@@ -95,16 +90,14 @@ To clone a deployment task from an existing baseline:
 4. From the list, select **Clone**.
 5. From the **New task** panel, select the baseline that contains the task you want to clone.
 6. Select the deployment task you want to clone.
-7. Select **Import**.
+7. Select **Clone**.
 
 To extract a configuration from a managed tenant:
 
 > [!IMPORTANT]
 > Extracted configurations may contain tenant-specific setting values that should be removed from a baseline to avoid applying them to other managed tenants.
 
-Lighthouse will, where possible, detect configurations and policies that contain sensitive information and remove the tenant-specific value from the baseline. There are some configuration types where sensitive setting values must be detected and removed manually to ensure they aren't included in the baseline.
-
-Lighthouse admins must review the extracted configuration and remove any tenant-specific setting values that shouldn't be applied to other managed tenants.
+Lighthouse, where possible, detects configurations and policies that contain sensitive information and removes the tenant-specific value from the baseline. However, there are some configuration types where sensitive setting values must be detected and removed manually to ensure they aren't included in the baseline.
 
 1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Deployment** > **Baselines**.
 2. Select a baseline from the list.
@@ -119,7 +112,7 @@ Lighthouse admins must review the extracted configuration and remove any tenant-
 11. Select **Create**.
 
 > [!NOTE]
-> Deployment tasks can be edited or deleted by accessing the ellipsis menu for the task and can be prioritized by selecting the **Priority** arrows to make a task a higher or lower priority.
+> To edit a deployment task, select the pencil icon in the **Action** column. To delete a deployment task, select the trash can icon in the **Action** column. To make a task higher or lower priority, select an arrow in the **Priority** column.
 
 ## Next steps
 

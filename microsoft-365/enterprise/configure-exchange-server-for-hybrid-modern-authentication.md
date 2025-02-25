@@ -3,9 +3,10 @@ title: "Configure Exchange Server to use Hybrid Modern Auth"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 02/01/2024
+ms.reviewer: ninob
+ms.date: 12/05/2024
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: medium

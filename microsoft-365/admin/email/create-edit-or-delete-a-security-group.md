@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 09/19/2023
+ms.date: 10/02/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -30,7 +30,7 @@ On the Microsoft 365 **Active teams and groups** page, you can create groups of 
 
 ## Before you begin
 
-Only global and user management administrators have permissions to create, edit, or delete security groups; for more information about administrator roles, see [Assigning admin roles](../add-users/assign-admin-roles.md).
+User management administrators have permissions to create, edit, or delete security groups; for more information about administrator roles, see [Assigning admin roles](../add-users/assign-admin-roles.md).
   
 There are also [Groups in Exchange Online and SharePoint Online](#groups-in-exchange-online-and-sharepoint-online) that you can use to send email or assign permissions to a group of users, and [Groups in Exchange Online and SharePoint Online](#groups-in-exchange-online-and-sharepoint-online) that grant users rights and access to sites and site collections.
   
@@ -47,15 +47,17 @@ There are also [Groups in Exchange Online and SharePoint Online](#groups-in-exch
 
 3. On the **Set up the basics** page, add your group name and a description and choose **Next**.
 
-4. On the **Edit settings** page, select whether you want Microsoft Entra roles can be assigned to this group and select **Next**.
+4. On the **Edit settings** page, select whether you want to allow Microsoft Entra roles to be assigned to the group and select **Next**.
 
 5. Review your selections and choose **Create group** and **Close**.
 
 ### Add owners or members to a security group
 
-1. Select the security group name on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Active teams and groups</a> page, and on the **Members** tab, select **View all and manage members**.
+1. Select the security group name on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Active teams and groups</a>.
 
-2. On the **General** tab, select **Add group owners** to ad group owners. On the **Members** tab, select **View all and manage members** and choose the person from the list or use the **Search** box. Select **Add** and close.
+2. On the **General** tab, select **Add group owners**, **Add owners** to add group owners.
+
+3. On the **Members** tab, select **View all and manage members** and choose the person from the list or use the **Search** box. Select **Add** and close.
 
 ### Remove members from a security group
 
@@ -73,7 +75,7 @@ There are also [Groups in Exchange Online and SharePoint Online](#groups-in-exch
 
 1. In the Microsoft 365 admin center, go to **Team & groups** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Active teams and groups</a> page.
 
-2. Select the security group and on the **General** tab, select **Delete group** (waste bin icon), and then confirm by selecting **Delete group** and then **Close** once the group is deleted.
+2. Select the security group and on the **General** tab, select **Delete group** and then confirm by selecting **Delete group**. Then **Close** once the group is deleted.
 
 ## Groups in Exchange Online and SharePoint Online
 

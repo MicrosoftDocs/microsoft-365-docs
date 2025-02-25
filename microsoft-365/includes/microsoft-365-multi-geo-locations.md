@@ -16,6 +16,7 @@ ms.date: 04/01/2024
 |Japan                                                                                |JPN
 |Korea                                                                                |KOR
 |Mexico                                                                               |MEX
+|New Zealand                                                                          |NZL
 |Norway                                                                               |NOR
 |Poland                                                                               |POL
 |Qatar                                                                                |QAT
@@ -23,6 +24,7 @@ ms.date: 04/01/2024
 |Spain                                                                                |ESP
 |Sweden                                                                               |SWE
 |Switzerland                                                                          |CHE
+|Taiwan                                                                               |TWN
 |United Arab Emirates                                                                 |ARE
 |United Kingdom                                                                       |GBR
 |United States                                                                        |NAM

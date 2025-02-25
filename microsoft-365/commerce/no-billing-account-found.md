@@ -4,11 +4,11 @@ f1.keywords: CSH
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: mijeffer, nicholak
+ms.reviewer: jkinma, ramagame
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
-ms.subservice: m365-commerce-acquisition
+ms.subservice: m365-commerce-management
 ms.localizationpriority: medium
 ms.collection:
 - Tier1
@@ -23,7 +23,7 @@ ms.custom:
 - GAUpdates
 search.appverid: MET150
 description: "Learn how to assign yourself or others the billing account roles needed to buy and edit products in the Microsoft 365 admin center."
-ms.date: 01/05/2024
+ms.date: 10/10/2024
 ---
 
 # No billing account found for buying products
@@ -47,9 +47,9 @@ If you're not the first Global Administrator on the account, use the following s
 3. At the bottom of the page, under **Billing account roles**, select **Assign roles**.
 4. Enter your name or email address, or the name or email address for the person you're assigning the role to, then select it.
 5. Select the appropriate Role based on the following criteria:
-    - If you're a Global Administrator, select the **Billing account owner** role.
-    - If the person you're assigning a role to is a Billing Administrator, select the **Billing account contributor** role.
-    - If the person you're assigning a role to is a Global Reader, select the **Billing account reader** role.
+   - If you're a Global Administrator, select the **Billing account owner** role.
+   - If the person you're assigning a role to is a Billing Administrator, select the **Billing account contributor** role.
+   - If the person you're assigning a role to is a Global Reader, select the **Billing account reader** role.
 6. Select **Assign**.
 
 ## Related content

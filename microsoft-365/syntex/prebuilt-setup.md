@@ -1,12 +1,12 @@
 ---
-title: Set up and manage prebuilt document processing in Microsoft Syntex
+title: Set up and manage prebuilt document processing for SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 06/12/2024
+ms.date: 01/13/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ms.custom: setup
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
@@ -15,18 +15,18 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to set up and manage prebuilt document processing in Microsoft Syntex.
+description: Learn how to set up and manage prebuilt document processing in SharePoint.
 ---
 
-# Set up and manage prebuilt document processing in Microsoft Syntex
+# Set up and manage prebuilt document processing for SharePoint
 
-The prebuilt document processing service for Microsoft Syntex is set up in the Microsoft 365 admin center.
+The prebuilt document processing service for SharePoint is set up in the Microsoft 365 admin center.
 
 ## Prerequisites
 
 ### Licensing
 
-Before you can use prebuilt document processing in Microsoft Syntex, you must first link an Azure subscription in [Microsoft Syntex pay-as-you-go](syntex-azure-billing.md). Prebuilt document processing in Microsoft Syntex is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md).
+Before you can use prebuilt document processing, you must first link an Azure subscription in [Microsoft Syntex pay-as-you-go](syntex-azure-billing.md). Prebuilt document processing is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md).
 
 ### Permissions
 
@@ -36,50 +36,46 @@ You must be a [SharePoint Administrator](/entra/identity/role-based-access-contr
 
 ## Set up prebuilt document processing
 
-After an [Azure subscription is linked to Microsoft Syntex](syntex-azure-billing.md), prebuilt document processing will be automatically set up and enabled for all SharePoint sites.
+After an [Azure subscription is linked to Microsoft Syntex](syntex-azure-billing.md), prebuilt document processing is automatically set up and enabled for all SharePoint sites.
 
 ## Manage sites
 
-By default, prebuilt document processing is turned on for libraries in all SharePoint sites. When prebuilt document processing is on, prebuilt models are allowed to run. Prebuilt models can also be created and applied on sites that are specified.
+By default, prebuilt document processing is turned on for libraries in all SharePoint sites. To restrict the sites where users can create prebuilt models for processing files, follow these steps.
 
-Follow these steps to limit which sites users can use create prebuilt models to process files.
+1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Settings > Org settings**</a>.
 
-1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>.
+2. On the **Org settings** page, select **Pay-as-you-go services**.
 
-2. Under **Files and content**, select **Automate content processes with Syntex**.
+3. On the **Pay-as-you-go services** page, select the **Settings** tab.
 
-3. On the **Automate content processes with Syntex** page, select **Go to Syntex settings**.
+4. Under **Document & image services**, select **Prebuilt document processing**.
 
-4. On the Syntex page, under **Document & image services**, select **Prebuilt document processing**.
+5. On the **Prebuilt document processing** panel, select the **Sites** tab.
 
-5. On the **Prebuilt document processing** panel:
+6. In the **Sites where models can be used** section, select **Edit**.
 
-    a. Choose which site or sites this service should be enabled for.
-
-    > [!NOTE]
-    > Disabling a site after a model is made available to process files on that site will not disable the model. Models can still be used to process files and incur charges. A model can be made available to process files by being created on that site or in a content center.
-
-    b. To restrict user access to this service, under **Sites where models can be created**, select **Edit**. On the **Where can prebuilt models be used?** panel, select **No sites** or **Selected sites (up to 100)** and follow the instructions to either select the sites or upload a CSV file listing a maximum of 100 sites. You can then manage site access permissions for the sites you selected.
+7. On the **Sites where models can be used** panel, change the setting from **All sites** to **Selected sites (up to 100)**. For selected sites, follow the instructions to select the sites or upload a CSV listing of the sites. You can then manage site access permissions for the sites you selected.
 
     > [!NOTE]
     > You must be a member of any site that you want to include in the CSV file.
 
     > [!NOTE]
-    > For multi-geo environments, the **No sites** and **Selected sites** settings apply only to the primary geo of multi-geo tenants. If you want to restrict or add sites in non-primary geos, contact Microsoft support.
+    > Disabling a site after a model is made available to process files on that site doesn't disable the model. Models can still be used to process files and incur charges. A model can be made available to process files by being created on that site or in a content center.
 
-    c. Select **Save**.
+    > [!NOTE]
+    > For multi-geo environments, the **No sites** and **Selected sites** settings apply only to the primary geo of multi-geo tenants. If you want to restrict or add sites in nonprimary geos, contact Microsoft support.
+
+8. Select **Save**.
 
 ## Turn off prebuilt document processing
 
-When the prebuilt document processing service is turned off, prebuilt models will not run, and users will not be able to create or apply prebuilt models.
+When the prebuilt document processing service is turned off, prebuilt models don't run, and users can't create or apply prebuilt models.
 
-Follow these steps to turn off prebuilt document processing.
+To turn off prebuilt document processing, follow these steps.
 
-1. On the **Manage Microsoft Syntex** page, select **Prebuilt document processing**.
+1. On the **Prebuilt document processing** panel, on the **Settings** tab, clear the **Let people create and apply models to process files** check box.
 
-2. On the **Prebuilt document processing** page, under **Status**, turn the toggle to **Off**.
-
-    ![Screenshot of a Prebuilt document processing panel showing the Status toggle.](../media/content-understanding/turn-off-service.png)
+2. Select **Save**.
 
     > [!NOTE]
     > For multi-geo environments, when the service is turned off, the service is off for all geos.

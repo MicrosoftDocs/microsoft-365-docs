@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 11/16/2023
+ms.date: 01/06/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -47,4 +47,3 @@ Microsoft 365 releases some features in public preview or private preview to cus
 During the ‘Private preview’ phase,  a controlled testing environment is provided that is limited to a small group of customers. Features in private preview are typically more restricted and evaluated by a select set of users. Access to private preview features is usually by invitation only, directly from the product team responsible for the feature or service. Private preview allows for more confidential testing due to the smaller group size. Microsoft provides support for private preview features. It can be seen as a focused, exclusive testing phase before broader public preview.
 
 During the ‘Public preview’ phase, Microsoft releases certain features to a broader audience for testing and feedback. These features are made available to a wider group of customers and can be tested and used in production environments. However, they may have restricted or limited functionality and may only apply to specific platforms. Public preview features are actively being developed and may not be complete. Microsoft encourages users to provide feedback during this phase, and public preview features are fully supported by Microsoft. Some features may be available only in selected geographic regions or specific cloud environments.
-

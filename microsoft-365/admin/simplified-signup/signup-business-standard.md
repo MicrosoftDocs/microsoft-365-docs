@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 10/11/2023
+ms.date: 11/14/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -18,7 +18,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - VSBFY23
-description: "Purchase Microsoft 365 Business Standard and set up your organization."
+description: "Buy Microsoft 365 Business Standard and set up your organization."
 ---
 
 # Sign up for a Microsoft 365 Business Standard subscription
@@ -34,7 +34,7 @@ There are a couple of ways to get started:
 
 ## Sign up for Microsoft 365 for business
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e1fe831f-c1a4-4d81-a475-1d8036a047cb]
 
 > [!IMPORTANT]
 > Microsoft 365 Business Standard subscriptions are for commercial use and are intended for business and enterprise customers.
@@ -46,10 +46,10 @@ To sign up and purchase Microsoft 365 Business Standard, complete the following 
 > [!IMPORTANT]
 > The person who signs up for Microsoft 365 for business (usually the business owner) automatically becomes the technical administrator of the organization. You can add other people as admins if you want help managing your Microsoft 365 services. Check out [Assign admin roles](../add-users/assign-admin-roles.md) for more info.
 
-1. On the [Microsoft 365 for business page](https://go.microsoft.com/fwlink/?linkid=2109654), select **See plans & pricing**.
+1. On the [Microsoft 365 for business page](https://go.microsoft.com/fwlink/?linkid=2109654), select **Compare plans & pricing**.
 2. On the next page, find out the monthly cost, and then scroll down the page to find out more about what's included in Microsoft 365. Under Microsoft 365 Business Standard, select **Buy now**.
-3. On the **Thank you for choosing Microsoft 365 Business Standard** page, enter your information to get started. Select **Next**.
-4. Enter an email address that you already use. This email address can be any address you want Microsoft to use to communicate with you during setup. It's also the address where we send you information about your bill and renewals. Then select, **Set up account**.
+3. On the **Subscription and account details** page, choose the number of people you want and how often you want to be billed. Select **Next**.
+4. Enter an email address that you already use. This email address can be any address you want Microsoft to use to communicate with you during setup. It's also the address where we send you information about your bill and renewals. Select **Next**, then select, **Set up account**.
 5. Enter your name, business phone number, business size, company name, and location. Select **Next**.
 
    > [!NOTE]
@@ -78,6 +78,9 @@ The table below outlines each choice.
 |Data handling|Available under the Supplement to the [Microsoft Services Agreement](https://go.microsoft.com/fwlink/p/?linkid=2180702). Best for businesses that want some remote work and collaboration tools and are comfortable with Microsoft acting as controller for your data under the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839). Subscribers to services using this option won't have access to an individual's user content or data until a domain is attached. Subscribers should evaluate data ownership and intellectual property rights considerations based on their needs. For example, if you're working collaboratively with other users on a document stored in their account, they may choose to make those documents inaccessible to you. As such, you should evaluate data ownership and intellectual property rights considerations accordingly. Separately, users may choose not to transfer documents in their Simplified Sign-Up account to your Domain Account subscription, even after you invite them to do so. In this case, their documents may not be accessible to you even if you add a domain account later|Available under the [Microsoft Online Subscription Agreement](https://go.microsoft.com/fwlink/p/?linkid=2180430) and is best for businesses that need Microsoft to act as a processor for their data under Microsoft's [Data Protection Addendum](https://go.microsoft.com/fwlink/p/?linkid=2180314) and need our full suite of remote work and collaboration tools. Subscribers who are in regulated industries or seek more control, both over the use of the services by your employees and over processing of related data by Microsoft, should choose Option 2 and attach a domain and sign up under the Domain Account enterprise-level agreement.|
 
 Use these three factors to determine which of the two options is best for your business needs.
+
+> [!NOTE]
+> If you have a Microsoft Customer Agreement (MCA) billing account type with Microsoft, you automatically receive a product called Microsoft Entra ID Free. This product improves your tenant management and security by tracking new tenants created with the same billing account. There's no charge for this product, and there's no other action you need to take. To learn more about this product, see [Microsoft Entra ID Free](/azure/cost-management-billing/manage/microsoft-entra-id-free). [Find out what type of billing account you have](../../commerce/manage-billing-accounts.md#view-my-billing-accounts).
 
 ### Option 1: Sign in with your Outlook, Hotmail, Yahoo, Gmail or other email account
 

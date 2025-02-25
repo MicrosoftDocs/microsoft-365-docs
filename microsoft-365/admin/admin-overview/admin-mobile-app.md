@@ -52,7 +52,7 @@ You must be an administrator in a Microsoft 365 organization to use the admin mo
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198017).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c]
+> [!VIDEO 1dcd3486-a40f-4b7e-aa25-ab371de00a6b]
 
 ## Steps: Install and use the admin mobile app
 

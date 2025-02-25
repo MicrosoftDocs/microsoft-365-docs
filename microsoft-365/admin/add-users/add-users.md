@@ -48,7 +48,7 @@ You must be a global, license, or a user admin to add users and assign licenses.
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198205).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfN?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=5cbb17c5-30f3-42cd-a10e-d07c3013c609]
 
 > [!NOTE]
 > The steps used in the video show a different starting point for adding users, but the remaining steps are the same as the following procedure.
@@ -112,7 +112,7 @@ If you're seeing this page in the admin center, you're on the **admin simplified
 
 ## Watch: Add multiple user
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5aOTI?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=1c0d7aa1-ac30-4e7c-b889-27162883945b]
 
 ## Add multiple users at the same time in dashboard view
 

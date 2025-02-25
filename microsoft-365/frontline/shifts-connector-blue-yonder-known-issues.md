@@ -3,7 +3,7 @@ title: Teams Shifts connector for Blue Yonder known issues
 author: lana-chin
 ms.author: v-chinlana
 manager: jtremper
-ms.reviewer: imarquesgil
+ms.reviewer: harrywong
 ms.topic: troubleshooting
 audience: admin
 ms.service: microsoft-365-frontline
@@ -17,7 +17,7 @@ ms.collection:
 appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 10/17/2023
+ms.date: 12/20/2024
 ---
 
 # Known issues: Teams Shifts connector for Blue Yonder

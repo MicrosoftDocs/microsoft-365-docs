@@ -35,7 +35,7 @@ After you have completed the basic setup process for [Microsoft 365 Business Pre
 Watch the following video for a brief overview of initial security settings to configure.
 <br/>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1nZxu]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=09b286e6-27c1-46d6-8ca4-4c1b0324cc9c]
 
 ## Configure your security protection in Microsoft 365 Business Premium
 
@@ -49,4 +49,4 @@ Microsoft 365 Business Premium includes security, compliance, identity, and mana
 6. [Secure Microsoft 365 Copilot](m365bp-secure-copilot.md)
 
 > [!TIP]
-> If you're a Microsoft partner, see [Resources for Microsoft partners working with small and medium-sized businesses](../security/defender-business/mdb-partners.md) and download our security guide and checklist!
+> If you're a Microsoft partner, see [Resources for Microsoft partners working with small and medium-sized businesses](/defender-business/mdb-partners) and download our security guide and checklist!

@@ -4,9 +4,9 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 01/16/2024
+ms.date: 10/16/2024
 audience: admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
 search.appverid: 
@@ -30,7 +30,7 @@ To use a receipts model, follow these steps:
 
 ## Step 1: Create a receipts model
 
-Follow the instructions in [Create a model in Syntex](create-syntex-model.md#set-up-a-prebuilt-model) to create a receipts prebuilt model. Then continue with the following steps to complete your model.
+Follow the instructions in [Create a model in Syntex](create-syntex-model.md#create-a-prebuilt-model) to create a receipts prebuilt model. Then continue with the following steps to complete your model.
 
 ## Step 2: Upload an example file to analyze
 
@@ -108,3 +108,5 @@ To rename an extractor from the **Extractors** panel:
 - To save changes and return to the model home page, on the **Extractors** panel, select **Save and exit**.
 
 - If you're ready to apply the model to a library, in the document area, select **Next**. On the **Add to library** panel, choose the library to which you want to add the model, and then select **Add**.
+
+For information about file types, languages, optical character recognition, and other considerations for this prebuilt model, see [Requirements and limitations for prebuilt document processing in SharePoint](prebuilt-requirements.md).

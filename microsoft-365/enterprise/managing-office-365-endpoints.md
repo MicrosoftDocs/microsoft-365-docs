@@ -3,7 +3,7 @@ title: Managing Microsoft 365 endpoints
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 01/19/2024
+ms.date: 01/08/2025
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -148,7 +148,7 @@ See an IP associated with Microsoft 365 that you want more information on?
 1. Check if the IP address is included in a larger published range using a CIDR calculator, such as these for [IPv4](https://www.ipaddressguide.com/cidr) or [IPv6](https://www.ipaddressguide.com/ipv6-cidr). For example, 40.96.0.0/13 includes the IP Address 40.103.0.1 despite 40.96 not matching 40.103.
 2. See if a partner owns the IP with a [whois query](https://dnsquery.org/). If it's Microsoft owned, it might be an internal partner. Many partner network endpoints are listed as belonging to the _default_ category, for which IP addresses aren't published.
 3. The IP address might not be part of Microsoft 365 or a dependency. Microsoft 365 network endpoint publishing doesn't include all of Microsoft network endpoints.
-4. Check the certificate. With a browser, connect to the IP address using  *HTTPS://\<IP_ADDRESS\>* and check the domains listed on the certificate to understand what domains are associated with the IP address. If it's a Microsoft-owned IP address and not on the list of Microsoft 365 IP addresses, it's likely the IP address is associated with a Microsoft CDN such as  *MSOCDN.NET*  or another Microsoft domain without published IP information. If you do find the domain on the certificate is one where we claim to list the IP address, please let us know.
+4. Check the certificate. With a browser, connect to the IP address using `https://<IP_address>` and check the domains listed on the certificate to understand what domains are associated with the IP address. If it's a Microsoft-owned IP address and not on the list of Microsoft 365 IP addresses, it's likely the IP address is associated with a Microsoft CDN such as  *MSOCDN.NET*  or another Microsoft domain without published IP information. If you do find the domain on the certificate is one where we claim to list the IP address, please let us know.
 
 ### Some Microsoft 365 URLs point to CNAME records instead of A records in the DNS. What do I have to do with the CNAME records?
 <a name="bkmk_cname"> </a>

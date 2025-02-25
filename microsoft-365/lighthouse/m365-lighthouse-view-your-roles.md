@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: taylorau
-ms.date: 07/03/2023
+ms.date: 09/27/2024
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-lighthouse
@@ -34,19 +34,19 @@ You must have access to a partner tenant that has onboarded to the Microsoft 365
 
 1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Tenants**.
 
-2. From the list of tenants, select any tenant name to open the tenant's **Overview** page.
+2. From the list of tenants, select any tenant name to open the tenant details page.
 
-3. Next to **Roles**, select the link indicating the number of roles you hold in the tenant. The **Roles** page opens.
+3. Under **Your permissions**, select **View role**.
 
-    If you hold one or more roles in a customer tenant, you'll see a green checkmark in the **Enabled** column for that tenant, along with the number of roles you hold. If you don't hold any roles in a tenant, you'll see a red **X**.
+    On the **Roles** page, if you hold one or more roles in a customer tenant, you'll see a green checkmark in the **Enabled** column for that tenant, along with the number of roles you hold. If you don't hold any roles in a tenant, you'll see a red **X**.
  
 4. For customer tenants with a green checkmark next to them, expand the tenant to see the list of roles you hold in that tenant. For more information about Microsoft Entra roles and the permissions they grant, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference).
 
-    The **Roles** page also shows any custom tags that have been applied to your tenants. You can filter the data on the page by assigned roles or tags.
+    The **Roles** page also shows any custom tags that are applied to your tenants. You can filter the data on the page by assigned roles or tags.
 
 ## Next steps
 
-If you don't have permission to perform an action that you need to perform in Lighthouse, reach out to an admin in your partner tenant who can assign you the appropriate role for the action you're trying to perform.
+If you don't have permission to perform an action that you need to perform in Lighthouse, reach out to someone who holds the Administrator role in Lighthouse and ask them to assign you an appropriate role for the action you're trying to perform.
 
 ## Related content
 

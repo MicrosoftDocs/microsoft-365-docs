@@ -9,7 +9,7 @@ ms.subservice: advanced-data-residency
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 02/29/2024
+ms.date: 12/09/2024
 ms.reviewer: deanw
 ms.custom:
 - it-pro
@@ -37,102 +37,23 @@ Customer Data supporting Purview services is closely aligned with the Exchange O
 
 We are in the process of updating the actual data location in _Tenant_ Admin Center. When this change is complete you will be able to see the actual data location, for committed data, by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location. Until that change is visible, you can view the Exchange Online data location information in order to understand where your committed data is stored for this service.
 
-### Purview Audit (Standard)
+## Advanced Data Residency Eligible Services
 
-#### Summary
+###### **Table 1: Eligible Microsoft Purview Services for Advanced Data Residency**
 
-Service documentation: [Microsoft Purview auditing solutions](/microsoft-365/compliance/auditing-solutions-overview)
+| Solution Area | Services | Components |
+|:-----|:-----|:----- |
+| Data Security |Data Loss Prevention (DLP) |See [Data Loss Prevention (DLP)](m365-dr-commitments.md#data-loss-prevention-dlp) for specific commitments.|
+| Data Security |Information Barriers |See [Information Barriers](m365-dr-commitments.md#information-barriers) for specific commitments.|
+| Data Security |Information Protection (MIP) |See [Information Protection (MIP)](m365-dr-commitments.md#information-protection-mip) for specific commitments.|
+| Risk & Compliance |Audit (Standard) |See [Audit (Standard)](m365-dr-commitments.md#audit-standard) for specific commitments.|
+| Risk & Compliance |Audit (Premium) |See [Audit (Premium)](m365-dr-commitments.md#audit-premium) for specific commitments.|
+| Risk & Compliance |Data Lifecycle Management (DLM) |See [Data Lifecycle Management (DLM)](m365-dr-commitments.md#data-lifecycle-management-dlm) for specific commitments.|
 
-Capability summary: Microsoft Purview Audit (Standard) provides you with the ability to log and search your data for audit activities and power your forensics, IT, and compliance efforts and legal investigations.
+> [!NOTE]
+> The Microsoft Purview services list mentioned above includes all services covered as part of the Advanced Data Residency commitment as of November 2024. Additional Microsoft Purview services are not currently supported.
 
-#### Data Residency commitments available
-
-Commitment:
-
-Refer to the [ADR Commitment page](m365-dr-commitments.md#purview-audit-standard) for the specific Customer Data at rest commitment for Purview Audit (Standard).
-
-### Purview Audit (Premium)
-
-#### Summary
-
-Service documentation: [Microsoft Purview auditing solutions](/microsoft-365/compliance/auditing-solutions-overview)
-
-Capability summary: Microsoft Purview Audit (Premium) builds on the capabilities of Audit (Standard) by providing audit log retention policies, longer retention of audit records, capability to identify high-value crucial events, and higher bandwidth access to the Office 365 Management Activity API.
-
-#### Data Residency commitments available
-
-Commitment:
-
-Refer to the [ADR Commitment page](m365-dr-commitments.md#purview-audit-premium) for the specific Customer Data at rest commitment for Purview Audit (Premium).
-
-### Data lifecycle management - Data Retention
-
-#### Summary
-
-ADR applies to the following services within Purview Data lifecycle management, Data Retention:
-
-- Manual retention labels
-- Basic org-wide or location-wide retention policies
-- Rules-based automatic retention policies
-- Machine Learning-based retention
-- Teams message retention policies
-
-Service documentation: [Learn about retention policies & labels](/microsoft-365/compliance/retention)
-
-For more detailed information about how retention settings work for different workloads, see the following articles:
-
-- [Learn about retention for Exchange](/microsoft-365/compliance/retention-policies-exchange)
-- [Learn about retention for SharePoint and OneDrive](/microsoft-365/compliance/retention-policies-sharepoint)
-- [Learn about retention for Microsoft Teams](/microsoft-365/compliance/retention-policies-teams)
-
-Capability summary: Lets you retain or delete content with policy management for email, documents, and Teams.
-
-#### Data Residency commitments available
-
-Commitment:
-
-Refer to the [ADR Commitment page](m365-dr-commitments.md#data-lifecycle-management---data-retention) for the specific Customer Data at rest commitment for Data lifecycle management - Data Retention.
-
-### Data lifecycle management - Records Management
-
-#### Summary
-
-Service documentation: [Learn about Microsoft Purview Records Management](/microsoft-365/compliance/records-management)
-
-Capability summary: Organizations of all types require a records-management solution to manage regulatory, legal, and business-critical records across their corporate data. Records management for Microsoft Purview helps an organization manage their legal obligations, provides the ability to demonstrate compliance with regulations, and increases efficiency with regular disposition of items that are no longer required to be retained, no longer of value, or no longer required for business purposes.
-
-#### Data Residency commitments available
-
-Commitment:
-
-Refer to the [ADR Commitment page](m365-dr-commitments.md#data-lifecycle-management---records-management) for the specific Customer Data at rest commitment for Data lifecycle management - Records Management.
-
-### Information Protection - Sensitivity labels
-
-#### Summary
-
-ADR applies to the following services within Purview Information Protection, Sensitivity labels:
-
-- Manual, default, and mandatory sensitivity labeling in Office 365
-- Automatic sensitivity labeling in Office 365 apps
-- Automatic sensitivity labels in Exchange, SharePoint, and OneDrive
-- Sensitivity labels based on advanced classification
-- Sensitivity labeling for containers in Office 365
-
-Service documentation:
-
-- [Learn about sensitivity labels](/microsoft-365/compliance/sensitivity-labels)
-- [Get started with Activity explorer](/microsoft-365/compliance/data-classification-activity-explorer)
-
-Capability summary: Sensitivity labels from Microsoft Purview Information Protection let you classify and protect your organization's data, while making sure that user productivity and their ability to collaborate isn't hindered.
-
-#### Data Residency commitments available
-
-Commitment:
-
-Refer to the [ADR Commitment page](m365-dr-commitments.md#information-protection---sensitivity-labels) for the specificCustomer Data at rest commitment for Information Protection - Sensitivity labels.
-
-### Information Protection - Data Loss Prevention (DLP)
+### Data Security - Data Loss Prevention (DLP)
 
 #### Summary
 
@@ -161,13 +82,29 @@ DLP detects sensitive items by using deep content analysis, not by just a simple
 
 Commitment:
 
-Refer to the [ADR Commitment page](m365-dr-commitments.md#information-protection---data-loss-prevention-dlp) for the specific Customer Data at rest commitment for Information Protection - Data Loss Prevention (DLP).
+Refer to the [ADR Commitments page](m365-dr-commitments.md#data-loss-prevention-dlp) for the specific Customer Data at rest commitment for Data Loss Prevention (DLP).
 
-### Information Protection - Office Message Encryption
+### Data Security - Information Barriers
 
 #### Summary
 
-ADR applies to the following services within Purview Information Protection, Office Message Encryption:
+Service documentation: [Learn about information barriers](/microsoft-365/compliance/information-barriers)
+
+Capability summary: Microsoft Purview Information Barriers (IB) is a compliance solution that allows you to restrict two-way communication and collaboration between groups and users in Microsoft Teams, SharePoint, and OneDrive. Often used in highly regulated industries, IB can help to avoid conflicts of interest and safeguard internal information between users and organizational areas.
+
+#### Data Residency commitments available
+
+Commitment:
+
+Refer to the [ADR Commitments page](m365-dr-commitments.md#information-barriers) for the specific Customer Data at rest commitment for Information Barriers.
+
+### Data Security - Information Protection (MIP)
+
+#### Summary
+
+ADR applies to the following services within Purview Information Protection:
+
+#### Office Message Encryption (OME):
 
 - Basic Office Message Encryption
 - Advanced Office Message Encryption
@@ -180,18 +117,95 @@ Capability summary: With Office 365 Message Encryption, your organization can se
 
 Commitment:
 
-Refer to the [ADR Commitment page](m365-dr-commitments.md#information-protection---office-message-encryption) for the specific Customer Data at rest commitment for Information Protection - Office Message Encryption.
+Refer to the [ADR Commitments page](m365-dr-commitments.md#office-message-encryption-ome) for the specific Customer Data at rest commitment for Office Message Encryption.
 
-### Risk and compliance - information barriers
+#### Sensitivity Labels:
 
-#### Summary
+- Manual, default, and mandatory sensitivity labeling in Office 365
+- Automatic sensitivity labeling in Office 365 apps
+- Automatic sensitivity labels in Exchange, SharePoint, and OneDrive
+- Sensitivity labels based on advanced classification
+- Sensitivity labeling for containers in Office 365
 
-Service documentation: [Learn about information barriers](/microsoft-365/compliance/information-barriers)
+Service documentation:
 
-Capability summary: Microsoft Purview Information Barriers (IB) is a compliance solution that allows you to restrict two-way communication and collaboration between groups and users in Microsoft Teams, SharePoint, and OneDrive. Often used in highly regulated industries, IB can help to avoid conflicts of interest and safeguard internal information between users and organizational areas.
+- [Learn about sensitivity labels](/microsoft-365/compliance/sensitivity-labels)
+- [Get started with Activity explorer](/microsoft-365/compliance/data-classification-activity-explorer)
+
+Capability summary: Sensitivity labels from Microsoft Purview Information Protection let you classify and protect your organization's data, while making sure that user productivity and their ability to collaborate isn't hindered.
 
 #### Data Residency commitments available
 
 Commitment:
 
-Refer to the [ADR Commitment page](m365-dr-commitments.md#risk-and-compliance---information-barriers) for the specific Customer Data at rest commitment for IB.
+Refer to the [ADR Commitments page](m365-dr-commitments.md#sensitivity-labels) for the specific Customer Data at rest commitment for Sensitivity Labels.
+
+### Risk & Compliance - Audit (Standard)
+
+#### Summary
+
+Service documentation: [Microsoft Purview auditing solutions](/microsoft-365/compliance/auditing-solutions-overview)
+
+Capability summary: Microsoft Purview Audit (Standard) provides you with the ability to log and search your data for audit activities and power your forensics, IT, and compliance efforts and legal investigations.
+
+#### Data Residency commitments available
+
+Commitment:
+
+Refer to the [ADR Commitments page](m365-dr-commitments.md#audit-standard) for the specific Customer Data at rest commitment for Audit (Standard).
+
+### Risk & Compliance - Audit (Premium)
+
+#### Summary
+
+Service documentation: [Microsoft Purview auditing solutions](/microsoft-365/compliance/auditing-solutions-overview)
+
+Capability summary: Microsoft Purview Audit (Premium) builds on the capabilities of Audit (Standard) by providing audit log retention policies, longer retention of audit records, capability to identify high-value crucial events, and higher bandwidth access to the Office 365 Management Activity API.
+
+#### Data Residency commitments available
+
+Commitment:
+
+Refer to the [ADR Commitments page](m365-dr-commitments.md#audit-premium) for the specific Customer Data at rest commitment for Audit (Premium).
+
+### Risk & Compliance - Data Lifecycle Management (DLM)
+
+#### Summary
+
+ADR applies to the following services within Purview Data lifecycle management:
+
+#### Data Retention:
+
+- Manual retention labels
+- Basic org-wide or location-wide retention policies
+- Rules-based automatic retention policies
+- Machine Learning-based retention
+- Teams message retention policies
+
+Service documentation: [Learn about retention policies & labels](/microsoft-365/compliance/retention)
+
+For more detailed information about how retention settings work for different workloads, see the following articles:
+
+- [Learn about retention for Exchange](/microsoft-365/compliance/retention-policies-exchange)
+- [Learn about retention for SharePoint and OneDrive](/microsoft-365/compliance/retention-policies-sharepoint)
+- [Learn about retention for Microsoft Teams](/microsoft-365/compliance/retention-policies-teams)
+
+Capability summary: Lets you retain or delete content with policy management for email, documents, and Teams.
+
+#### Data Residency commitments available
+
+Commitment:
+
+Refer to the [ADR Commitments page](m365-dr-commitments.md#data-retention) for the specific Customer Data at rest commitment for Data Retention.
+
+#### Records Management:
+
+Service documentation: [Learn about Microsoft Purview Records Management](/microsoft-365/compliance/records-management)
+
+Capability summary: Organizations of all types require a records-management solution to manage regulatory, legal, and business-critical records across their corporate data. Records management for Microsoft Purview helps an organization manage their legal obligations, provides the ability to demonstrate compliance with regulations, and increases efficiency with regular disposition of items that are no longer required to be retained, no longer of value, or no longer required for business purposes.
+
+#### Data Residency commitments available
+
+Commitment:
+
+Refer to the [ADR Commitments page](m365-dr-commitments.md#records-management) for the specific Customer Data at rest commitment for Records Management.

@@ -1,13 +1,13 @@
 ---
 title: Manage who can create Microsoft 365 Groups
 f1.keywords: NOCSH
-ms.author: jtremper
 ms.reviewer: rahulnayak
 ms.date: 11/22/2023
-author: jacktremper
-manager: pamgreen
+author: DaniEASmith
+ms.author: danismith
+manager: jtremper
 audience: Admin
-ms.topic: article
+ms.topic: solution-overview
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.custom:
@@ -18,6 +18,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - m365solution-collabgovernance
+- m365solution-overview
 search.appverid:
 - MET150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
@@ -74,7 +75,7 @@ The following people don't need Microsoft Entra ID P1 or P2 or Microsoft Entra B
 
 Only one group in your organization can be used to control who is able to create Microsoft 365 Groups. But, you can nest other groups as members of this group.
 
-Admins in the roles listed above do not need to be members of this group: they retain their ability to create groups.
+Admins in the roles listed above don't need to be members of this group: they retain their ability to create groups.
 
 1. In the admin center, go to the [Groups page](https://admin.microsoft.com/adminportal/home#/groups).
 
@@ -88,11 +89,11 @@ For detailed instructions, see [Create, edit, or delete a security group in the 
 
 ## Step 2: Run PowerShell commands
 
-You will use the [Microsoft Graph PowerShell](/powershell/microsoftgraph/installation) **Beta** module to change the group-level guest access setting:
+You'll use the [Microsoft Graph PowerShell](/powershell/microsoftgraph/installation) **Beta** module to change the group-level guest access setting:
 
 - If you have already installed the Beta version, run `Update-Module Microsoft.Graph.Beta` to make sure it's the latest version of this module.
 
-Copy the script below into a text editor, such as Notepad, or the [Windows PowerShell ISE](/powershell/scripting/components/ise/introducing-the-windows-powershell-ise).
+Copy the following script into a text editor, such as Notepad, or the [Windows PowerShell ISE](/powershell/scripting/components/ise/introducing-the-windows-powershell-ise).
 
 Replace *\<GroupName\>* with the name of the group that you created. For example:
 
@@ -169,9 +170,9 @@ If you want to turn off the group creation restriction and again allow all users
 
 ## Step 3: Verify that it works
 
-Changes can take thirty minutes or more to take effect. You can verify the new settings by doing the following:
+Changes can take 30 minutes or more to take effect. You can verify the new settings by doing the following:
 
-1. Sign in to Microsoft 365 with a user account of someone who should NOT have the ability to create groups. That is, they are not a member of the group you created or an administrator.
+1. Sign in to Microsoft 365 with a user account of someone who should NOT have the ability to create groups. That is, they aren't a member of the group you created or an administrator.
 
 2. Select the **Planner** tile.
 

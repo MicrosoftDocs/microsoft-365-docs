@@ -1,11 +1,11 @@
 ---
 title: "Review detected threats on devices and take action"
 f1.keywords: NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: chrisda
+author: chrisda
 manager: deniseb
 audience: Admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-365-business-security
 ms.date: 05/31/2024
 ms.localizationpriority: medium
@@ -92,4 +92,4 @@ If you have a file that you think was missed or wrongly classified as malware, y
 
 [Best practices for securing Microsoft 365 for business plans](secure-your-business-data.md)
 
-[Overview of Microsoft Defender for Business](../security/defender-business/mdb-overview.md) (Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022)
+[Overview of Microsoft Defender for Business](/defender-business/mdb-overview) (Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022)

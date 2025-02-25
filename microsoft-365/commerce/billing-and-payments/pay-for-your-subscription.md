@@ -5,11 +5,11 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: armanv, nicholak
+ms.reviewer: lishepar, ramagame
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
-ms.subservice: m365-commerce-acquisition
+ms.subservice: m365-commerce-management
 ms.localizationpriority: high
 ms.collection:
 - Tier1
@@ -30,7 +30,7 @@ ms.custom:
 - admindeeplinkMAC
 - GAUpdates
 description: "Learn what payment options are available to pay for your Microsoft business subscription."
-ms.date: 10/17/2023
+ms.date: 01/07/2025
 ---
 
 # Payment options for Microsoft business subscriptions
@@ -76,6 +76,9 @@ If a credit check is required, you're notified when you buy your subscription. I
 If your subscription or billing profile is paid by wire transfer, at the end of each billing period, you get an email when your billing statement is ready to view. This email doesn't contain a copy of your billing statement. However, you can choose to [receive your organization's invoices as email attachments](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments). Your billing statement includes details about your options for making a payment, and where to send it. If you enter a purchase order (PO) number when you buy a subscription, the number appears on your billing statement. For information about accessing billing statements, see [View your invoice in the Microsoft 365 admin center](view-your-bill-or-invoice.md).
 
 If you have an MCA billing account type, and you have a billing profile that's paid by wire transfer, you can also use a credit card or debit card to make a one-time payment by using the **Pay now** button on your invoice.
+
+> [!NOTE]
+> It can take up to 10 business days to process a wire transfer payment.
 
 ## Paying with a billing profile
 
@@ -154,7 +157,7 @@ As of September 30, 2022, Microsoft and other online merchants no longer store c
 
 ### UPI and NetBanking payment options
 
-The admin center supports two alternate payment options for customers in India:
+The admin center supports two alternate payment options for customers in India who have an MOSA billing account type:
 
 - UPI (Unified Payments Interface) payment is a real-time payment method.
 - NetBanking (Internet Banking) provides customers with access to banking services on an online platform.

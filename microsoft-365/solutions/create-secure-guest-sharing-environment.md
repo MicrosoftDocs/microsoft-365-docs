@@ -1,11 +1,11 @@
 ---
 title: Create a more secure guest sharing environment
-ms.author: jtremper
-author: jacktremper
-manager: pamgreen
+author: DaniEASmith
+ms.author: danismith
+manager: jtremper
 ms.date: 05/30/2024
 audience: ITPro
-ms.topic: article
+ms.topic: solution-overview
 ms.service: o365-solutions
 ms.collection: 
 - highpri
@@ -15,6 +15,7 @@ ms.collection:
 - m365solution-3tiersprotection
 - m365solution-securecollab
 - m365initiative-externalcollab
+- m365solution-overview
 ms.custom: 
 - seo-marvel-apr2020
 - admindeeplinkSPO

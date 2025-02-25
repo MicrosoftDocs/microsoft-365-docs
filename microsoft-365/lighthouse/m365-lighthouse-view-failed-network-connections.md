@@ -4,8 +4,8 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: katmartin
-ms.date: 06/21/2023
+ms.reviewer: ebamoh
+ms.date: 10/21/2024
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-lighthouse
@@ -28,8 +28,7 @@ Microsoft 365 Lighthouse provides the connection status between your customer te
 
 ## Before you begin
 
-- You must be a Global Administrator in the partner tenant.
-- You must have Cloud PC Administrator or Cloud PC Reader access to view connection issues.
+You must hold either the Cloud PC Administrator or Cloud PC Reader role in Microsoft Intune to view connection issues.
 
 ## View a failed network connection
 
@@ -39,9 +38,9 @@ Microsoft 365 Lighthouse provides the connection status between your customer te
 
 3. From the colored count-annotation bar, select **Failed connections**.
 
-4. From the filtered list, select **View connection details in Microsoft Endpoint Manager** next to the connection you want to investigate.
+4. From the filtered list, select **View connection details in Microsoft Intune admin center** next to the connection you want to investigate.
 
-5. From the Microsoft Intune admin center, select **View details** to learn more about the error.
+5. In the Microsoft Intune admin center, select **View details** to learn more about the error.
 
 ## Next steps
 

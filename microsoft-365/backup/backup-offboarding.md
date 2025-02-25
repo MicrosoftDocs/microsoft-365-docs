@@ -5,8 +5,8 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 07/31/2024
-ms.topic: conceptual
+ms.date: 02/19/2025
+ms.topic: article
 ms.service: microsoft-365-backup
 ms.custom: backup
 search.appverid:
@@ -26,12 +26,13 @@ To no longer use the Microsoft 365 Backup tool, you must offboard usage. This ac
 
 ## Offboarding recovery undo period
 
-If offboarding from Microsoft 365 Backup has begun due to either an explicit request from you or due to an unhealthy billing state, the grace periods shown in the following table initiate.
+If offboarding from Microsoft 365 Backup is begun due to either an explicit request from you or due to an unhealthy billing state, the grace periods shown in the following table initiate.
 
 ![Screenshot of a data table showing the offboarding undo periods.](../media/m365-backup/backup-offboarding-time.png)
 
 By bringing your billing back to a healthy state or by asking support to reverse the offboarding, the tool becomes usable again and no backups are lost.
 
+<!---
 ## GDPR special handling, compliance, and backup data deletion
 
 > [!IMPORTANT]
@@ -41,7 +42,7 @@ The core purpose of the backup and restore service is to provide you with a way 
 
 ### eDiscovery
 
-Data in the Exchange Online backups is eDiscoverable via existing eDiscovery tooling, assuming you have sufficient licenses to operate that tool.
+Data in the Exchange Online backups is not eDiscoverable via existing eDiscovery tooling.
 
 Data in the OneDrive account and SharePoint site backups that aren't currently part of your live latest version data in your tenant aren't eDiscoverable. An eDiscovery search won't discover data that exists solely in the OneDrive or SharePoint backups.
 
@@ -60,11 +61,4 @@ Retention and deletion policies don't “flow through” to the backups. This me
 ### Sensitivity labels
 
 Restoration of any data (such as sites or mailbox items) reverts the data's sensitivity labels to the state of that protected item at the prior point from which it's being restored. That is, the state of labeling at the point in time from which the content is being restored; in other words, the state reverts to the prior point in time.
-
-<!---
-## Backup data deletion and undo grace periods
-
-If you need to delete data from the backups, you must offboard from the offering entirely and delete all backups. In the future, we'll enable more granular restore point deletion capabilities.
-
-Any offboarding or backup deletion activities trigger a 29-day grace period where we'll hold the backup data. If you re-enable the tool, the backups are present in the tool again.  
 --->

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 11/22/2023
+ms.date: 01/06/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -17,6 +17,7 @@ ms.collection:
 ms.custom: 
 - VSBFY23
 - AdminSurgePortfolio
+- campaignIDs-batch1
 description: "Migrate your Outlook, OneDrive and Teams data to Microsoft 365 Business Standard"
 ---
 

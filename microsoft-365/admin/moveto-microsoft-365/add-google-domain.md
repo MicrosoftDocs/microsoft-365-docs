@@ -39,7 +39,7 @@ Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?l
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198105).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LWKT?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=0ede3d98-5bb2-4f48-81d8-3d5634125446]
 
 Add your Google Workspace domain to Microsoft 365 for business so you can keep using your business email address.
 

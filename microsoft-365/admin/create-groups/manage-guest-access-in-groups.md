@@ -3,11 +3,11 @@ title: "Manage guest access in Microsoft 365 groups"
 ms.reviewer: rahulnayak
 ms.date: 06/11/2024
 f1.keywords: NOCSH
-ms.author: jtremper
-author: jacktremper
-manager: pamgreen
+author: DaniEASmith
+ms.author: danismith
+manager: jtremper
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
@@ -20,7 +20,7 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
-- has-azure-ad-ps-ref
+- no-azure-ad-ps-ref
 search.appverid:
 - MET150
 - MOE150
@@ -36,9 +36,9 @@ When it's turned on, group members can invite guests to a Microsoft 365 group th
 
 Once approved, the guest is added to the directory and the group.
 
-> [!Note]
-> Viva Engage Enterprise networks that are in Native Mode or the [EU Geo](/viva/engage/manage-security-and-compliance/manage-data-compliance) do not support network guests.
-> Microsoft 365 Connected Viva Engage groups do not currently support guest access, but you can create non-connected, external groups in your Viva Engage network. See [Create and manage external groups in Viva Engage](/viva/engage/work-with-external-users/create-and-manage-external-groups) for instructions.
+> [!NOTE]
+> Viva Engage Enterprise networks that are in Native Mode or the [EU Geo](/viva/engage/manage-security-and-compliance/manage-data-compliance) don't support network guests.
+> Microsoft 365 Connected Viva Engage groups don't currently support guest access, but you can create non-connected, external groups in your Viva Engage network. See [Create and manage external groups in Viva Engage](/viva/engage/work-with-external-users/create-and-manage-external-groups) for instructions.
 
 Guest access in groups is often used as part of a broader scenario that includes SharePoint or Teams. These services have their own guest sharing settings. For complete instructions for setting up guest sharing across groups, SharePoint, and Teams, see:
 
@@ -47,23 +47,20 @@ Guest access in groups is often used as part of a broader scenario that includes
 
 ## Manage groups guest access
 
-If you want to enable or disable guest access in groups, you can do so in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groups**</a>.
+If you want to enable or disable guest access in groups, you can do so in the [**Groups**](https://go.microsoft.com/fwlink/p/?linkid=2052855) settings.
 
-1. In the admin center, go to **Show all** \> **Settings** \> **Org settings** and on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Services** tab</a>, select **Microsoft 365 Groups**.
+1. In the admin center, go to **Show all** > **Settings** > **Org settings** and on the [**Services**](https://go.microsoft.com/fwlink/p/?linkid=2053743) tab, select **Microsoft 365 Groups**.
   
 2. On the **Microsoft 365 Groups** page, choose whether you want to let people outside your organization access group resources or let group owners add people outside your organization to groups.
 
 ## Add guests to a Microsoft 365 group from the admin center
 
-If the guest already exists in your directory, you can add them to your groups from the <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Microsoft 365 admin center</a>. (Groups with dynamic membership must be [managed in Microsoft Entra ID](/azure/active-directory/enterprise-users/groups-create-rule).)
+If the guest already exists in your directory, you can add them to your groups from the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2052855). Groups with dynamic membership must be [managed in Microsoft Entra ID](/azure/active-directory/enterprise-users/groups-create-rule).
   
-1. In the admin center, go to **Teams & g****roups** > **[Active teams & groups](https://go.microsoft.com/fwlink/p/?linkid=2052855)**.
-
-1. Select the group you want to add the guest to, and select **Membership > Members**. 
-
-3. Select **Add members**, and choose the name of the guest you want to add.
-
-4. Select **Save**.
+1. In the admin center, go to **Teams & groups** > [**Active teams & groups**](https://go.microsoft.com/fwlink/p/?linkid=2052855).
+1. Select the group you want to add the guest to and select **Membership** > **Members**. 
+1. Select **Add members** and choose the name of the guest you want to add.
+1. Select **Save**.
 
 If you want to add a guest to the directory directly, you can [Add Microsoft Entra B2B collaboration users in the Azure portal](/azure/active-directory/b2b/add-users-administrator).
 
@@ -73,7 +70,7 @@ If you want to edit any of a guest's information, you can [Add or update a user'
 
 Once you're done collaborating with a guest user, you can remove them, and they'll no longer have access to your organization.
 
-1. In the Microsoft 365 admin center, expand **Users** and then choose <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">**Guest users**</a>.
+1. In the Microsoft 365 admin center, expand **Users** and select [**Guest users**](https://go.microsoft.com/fwlink/p/?linkid=2074830).
 1. On the **Guest users** page, choose the user you want to remove and then choose **Delete a user**.
 
 To remove users in the Microsoft Entra admin center, see [remove a guest user and resources](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources).
@@ -84,4 +81,4 @@ To remove users in the Microsoft Entra admin center, see [remove a guest user an
 [Block guests from a specific group](../../solutions/per-group-guest-access.md) (article)\
 [Manage group membership in the Microsoft 365 admin center](add-or-remove-members-from-groups.md) (article)\
 [Microsoft Entra access reviews](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review) (article)\
-[Set-AzureADUser](/powershell/module/azuread/set-azureaduser) (article)
+[Update-MgUser](/powershell/module/microsoft.graph.users/update-mguser) (article)

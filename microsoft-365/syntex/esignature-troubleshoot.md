@@ -4,9 +4,9 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: amcdonnell
-ms.date: 01/11/2024
+ms.date: 10/11/2024
 audience: enabler
-ms.topic: conceptual
+ms.topic: troubleshooting-general
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
 search.appverid: 

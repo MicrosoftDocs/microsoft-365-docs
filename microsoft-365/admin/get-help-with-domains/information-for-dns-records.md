@@ -2,12 +2,12 @@
 title: "Gather the information you need to create DNS records"
 f1.keywords:
 - NOCSH
-ms.author: nkagole
-author: nataliekagole
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
-ms.date: 11/07/2023
+ms.date: 02/13/2025
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
@@ -91,6 +91,6 @@ Check out all of our small business content on [Small business help & learning](
 
 ## Related content
 
-[Domains FAQ](../setup/domains-faq.yml) (article)\
-[Find and fix issues after adding your domain or DNS records](find-and-fix-issues.md) (article)\
-[Manage domains](/admin) (link page)
+- [Domains FAQ](../setup/domains-faq.yml) (article)\
+- [Find and fix issues after adding your domain or DNS records](find-and-fix-issues.md) (article)\
+- [Manage domains](/admin) (link page)

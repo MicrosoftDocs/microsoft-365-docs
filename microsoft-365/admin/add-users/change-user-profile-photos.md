@@ -7,7 +7,7 @@ author: chrisda
 manager: deniseb
 ms.date: 06/11/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:

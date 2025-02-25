@@ -29,9 +29,10 @@ ms.custom:
 - manage_licenses
 - AdminTemplateSet
 - GAUpdates
+- campaignIDs-batch1
 search.appverid: MET150
 description: "Learn how to assign or unassign licenses for your users in the Microsoft 365 admin center."
-ms.date: 10/20/2023
+ms.date: 01/06/2025
 ---
 
 # Assign or unassign licenses for users in the Microsoft 365 admin center
@@ -63,9 +64,6 @@ The **Licenses** page lets you assign or unassign licenses for up to 20 users at
 
 The **Licenses** page shows an aggregate total of licenses for all subscriptions for the same product name. For example, you might have one subscription for Microsoft 365 Business Premium that has five licenses, and another subscription that has eight licenses for the same product. The **Licenses** page shows that you have a total of 13 licenses for Microsoft 365 Business Premium across all your subscriptions. This number is different from what you see on the **Your products** page, which displays a row for each subscription you own, even if they are for the same product.
 
-> [!IMPORTANT]
-> If you want to assign a license to a guest user, follow the steps in [Assign a license to a guest user](#assign-a-license-to-a-guest-user).
-
 ### Assign licenses by using the Licenses page
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
@@ -96,9 +94,6 @@ If there's a conflict, you see a message that tells you what the problem is, and
 
 When you use the **Active users** page to assign or unassign licenses, you assign or unassign users licenses to products.
 
-> [!IMPORTANT]
-> If you want to assign a license to a guest user, follow the steps in [Assign a license to a guest user](#assign-a-license-to-a-guest-user).
-
 ### Assign licenses to one user
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
@@ -122,27 +117,6 @@ When you use the **Active users** page to assign or unassign licenses, you assig
 
 > [!NOTE]
 > If you want to assign licenses for a large number of users, use [Assign or unassign licenses to a group in the Microsoft 365 admin center](manage-group-licenses.md).
-
-## Assign a license to a guest user
-
-You can invite guest users to collaborate with your organization in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2067268" target="_blank">Microsoft Entra admin center</a>. To learn about guest users, see [B2B collaboration overview](/azure/active-directory/external-identities/what-is-b2b). If you don't have any guest users, see [Quickstart: Add a guest user and send an invitation](/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal).
-
-> [!IMPORTANT]
-> You must be a Global Administrator to do these steps.
-
-[!INCLUDE [ga-roles-limitation](../../includes/ga-roles-limitation.md)]
-
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2067268" target="_blank">Microsoft Entra admin center</a>.
-2. In the navigation pane, select **Users** > **All Users**.
-3. On the **Users** page, next to the search box, select **Add filters**.
-4. In the **Add filter** drop-down list, select **User type**.
-5. Select the **Value** drop-down list, select **Guest**, then select **Apply**.
-6. In the list of results, select the name of the user who needs a license.
-7. In the navigation pane, under **Manage**, select **Licenses**.
-8. Select **Assignments**.
-9. Under **Select licenses**, select the products you want to assign licenses for.
-10. Under **Review license options**, clear the check boxes for any services you don't want the guest user to have access to.
-11. At the bottom of the page, select **Save**.
 
 ## Use the Active users page to unassign licenses
 

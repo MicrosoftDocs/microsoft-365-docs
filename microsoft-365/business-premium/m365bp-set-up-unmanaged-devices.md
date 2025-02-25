@@ -2,8 +2,8 @@
 title: "Set up unmanaged devices with Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: chrisda
+author: chrisda
 manager: deniseb
 audience: Admin
 ms.topic: overview
@@ -35,6 +35,6 @@ To set up unmanaged (BYOD) devices, follow these steps:
 
 2. [Get Microsoft 365 Apps installed on devices](m365bp-users-install-m365-apps.md).
 
-3. [Protected unmanaged Windows and Mac devices](m365bp-protect-pcs-macs.md).
+3. [Protected unmanaged Windows and Mac devices](m365bp-users-protect-unmanaged-devices.md).
 
 Once you've completed these steps, proceed to [Use email securely](m365bp-use-email-securely.md).

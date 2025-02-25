@@ -4,8 +4,8 @@ title: "Strengthen your security posture - Investigate and improve"
 f1.keywords:
 - security posture
 - strengthen security posture
-ms.author: siosulli
-author: siosulli
+ms.author: deniseb
+author: denisebmsft
 manager: deniseb
 audience: Admin
 description: Learn how to strengthen your organization's security posture - investigate and improve.

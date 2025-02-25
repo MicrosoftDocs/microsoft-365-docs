@@ -1,11 +1,11 @@
 ---
 title: "Threats detected by Microsoft Defender Antivirus"
 f1.keywords: CSH
-ms.author: siosulli
-author: siosulli
+ms.author: chrisda
+author: chrisda
 manager: deniseb
 audience: Admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: microsoft-365-business-security
 ms.collection:
 - m365-security
@@ -84,4 +84,4 @@ To learn more about different threats, visit the <a href="https://www.microsoft.
 [How to turn on and use Microsoft Defender Antivirus from the Windows Security app](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-security-center-antivirus) (article)\
 [How to turn on Microsoft Defender Antivirus by using Group Policy](/mem/intune/user-help/turn-on-defender-windows#turn-on-windows-defender) (article)\
 [How to update your antivirus definitions](/mem/intune/user-help/turn-on-defender-windows#update-your-antivirus-definitions) (article)\
-[How to submit malware and non-malware to Microsoft for analysis](/microsoft-365/security/office-365-security/submissions-submit-files-to-microsoft) (article)
+[How to submit malware and non-malware to Microsoft for analysis](/defender-office-365/submissions-submit-files-to-microsoft) (article)

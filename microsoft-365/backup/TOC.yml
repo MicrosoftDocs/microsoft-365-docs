@@ -1,22 +1,23 @@
+items:
     - name: Microsoft 365 Backup
       href: index.yml
 
     - name: Overview 
       href: backup-overview.md
-    - name: Admin setup 
-      href: backup-setup.md
-    - name: Privacy, security, & compliance 
-      href: backup-privacy-security.md
-    - name: Billing & invoice management
-      href: backup-billing.md
     - name: Pricing model
       href: backup-pricing.md
+    - name: Initial setup 
+      href: backup-setup.md
     - name: Create, view, & edit policies 
       href: backup-view-edit-policies.md
     - name: Restore data 
       href: backup-restore-data.md
+    - name: Invoice management
+      href: backup-billing.md
     - name: Offboarding
       href: backup-offboarding.md
+    - name: Privacy, security, & compliance
+      href: backup-privacy-security.md
     - name: FAQs
       href: backup-faq.md
     - name: Microsoft 365 Backup Storage

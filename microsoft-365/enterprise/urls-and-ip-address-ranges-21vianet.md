@@ -3,7 +3,7 @@ title: "URLs and IP address ranges for Microsoft 365 operated by 21Vianet"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 03/29/2024
+ms.date: 01/30/2025
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -33,7 +33,7 @@ hideEdit: true
   
 **Microsoft 365 endpoints:** [Worldwide (including GCC)](urls-and-ip-address-ranges.md)  | *Microsoft 365 operated by 21 Vianet* | [Microsoft 365 U.S. Government DoD](microsoft-365-u-s-government-dod-endpoints.md) | [Microsoft 365 U.S. Government GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md) |
   
-**Last updated:** 03/29/2024 - ![RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Change Log subscription](https://endpoints.office.com/version/China?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)
+**Last updated:** 01/30/2025 - ![RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Change Log subscription](https://endpoints.office.com/version/China?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)
 
 **Download:** all required and optional destinations in one [JSON formatted](https://endpoints.office.com/endpoints/China?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) list.
 

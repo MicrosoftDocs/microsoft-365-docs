@@ -34,7 +34,7 @@ Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?l
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198101).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4JD2Y?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=fb358a9f-84fa-4911-a211-b8dd141fd5fc]
 
 To migrate email, calendar, and contacts from Google Workspace, you need to set up Microsoft 365 Business Premium with a temporary domain until your business domain is ready to be used with your subscription.
 

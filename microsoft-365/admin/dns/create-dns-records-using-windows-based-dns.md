@@ -2,12 +2,12 @@
 title: "Create DNS records for Microsoft using Windows-based DNS"
 f1.keywords:
 - NOCSH
-ms.author: nkagole
-author: nataliekagole
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
-ms.date: 02/18/2020
+ms.date: 09/05/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
@@ -34,7 +34,7 @@ description: "Learn to verify your domain and set up DNS records for email, Skyp
    
 If you host your own DNS records using Windows-based DNS, follow the steps in this article to set up your records for email, Skype for Business Online, and so on.
   
-To get started, you need to [find your DNS records in Windows-based DNS](#find-your-dns-records-in-windows-based-dns) so you can update them. Also, if you're planning to synchronize your on-premises Active Directory with Microsoft, see [Non-routable email address used as a UPN in your on-prem Active Directory](#non-routable-email-address-used-as-a-upn-in-your-on-prem-active-directory).
+To get started, you need to find your DNS records in Windows-based DNS so you can update them. Also, if you're planning to synchronize your on-premises Active Directory with Microsoft, see [Non-routable email address used as a UPN in your on-premises Active Directory](#non-routable-email-address-used-as-a-upn-in-your-on-premises-active-directory).
   
 Trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
@@ -51,7 +51,7 @@ Add an MX record so email for your domain will come to Microsoft.
 - On the DNS Manager page for the domain, go to **Action** > **Mail Exchanger (MX)**. To find this page for the domain, see [Find your DNS records in Windows-based DNS](#find-your-dns-records-in-windows-based-dns).  
 - In the **New Resource Record** dialog box, make sure that the fields are set to precisely the following values: 
     - Host Name: 
-    - @Address: Paste the Points to address  value that you just copied from Microsoft here.  
+    - @Address: Paste the Points to address value that you just copied from Microsoft here.  
     - Pref: 
 - Select **Save Changes**.
 - Remove any obsolete MX records. If you have any old MX records for this domain that route email somewhere else, select the check box next to each old record, and then select **Delete** > **OK**. 
@@ -59,10 +59,10 @@ Add an MX record so email for your domain will come to Microsoft.
 ## Add CNAME records
 <a name="BKMK_add_CNAME"> </a>
 
-Add the CNAME records that are required for Microsoft. If additional CNAME records are listed in Microsoft, add those following the same general steps shown here.
+Add the CNAME records that are required for Microsoft. If other CNAME records are listed in Microsoft, add those following the same general steps shown here.
   
 > [!IMPORTANT]
-> If you have Mobile Device Management (MDM) for Microsoft, then you must create two additional CNAME records. Follow the procedure that you used for the other four CNAME records, but supply the values from the following table. (If you do not have MDM, you can skip this step.) 
+> If you have Mobile Device Management (MDM) for Microsoft, then you must create two more CNAME records. Follow the procedure that you used for the other four CNAME records, but supply the values from the following table. (If you don't have MDM, you can skip this step.) 
 
 - On the DNS Manager page for the domain, go to **Action** > **CNAME (CNAME)**.
 - In the **New Resource Record** dialog box, make sure that the fields are set to precisely the following values:  
@@ -89,7 +89,7 @@ Add the Skype for Business Online Autodiscover CNAME record.
 ### Add two CNAME records for Mobile Device Management (MDM) for Microsoft
 
 > [!IMPORTANT]
-> If you have Mobile Device Management (MDM) for Microsoft, then you must create two additional CNAME records. Follow the procedure that you used for the other four CNAME records, but supply the values from the following table. >(If you do not have MDM, you can skip this step.) 
+> If you have Mobile Device Management (MDM) for Microsoft, then you must create two more CNAME records. Follow the procedure that you used for the other four CNAME records, but supply the values from the following table. >(If you don't have MDM, you can skip this step.) 
   
 
 Add the MDM Enterpriseregistration CNAME record.  
@@ -112,7 +112,7 @@ Add the MDM Enterpriseenrollment CNAME record.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Microsoft. Instead, add the required Microsoft values to the current record so that you have a  *single*  SPF record that includes both sets of values. 
+> You can't have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Microsoft. Instead, add the required Microsoft values to the current record so that you have a  *single*  SPF record that includes both sets of values. 
   
 Add the SPF TXT record for your domain to help prevent email spam.
   
@@ -161,7 +161,7 @@ Add the SIP SRV record for Skype for Business Online federation.
 ## Add a record to verify that you own the domain, if you haven't already
 <a name="BKMK_verify"> </a>
 
-Before you add the DNS records to set up your Microsoft services, Microsoft has to confirm that you own the domain you're adding. To do this, you add a record, following the steps below.
+Before you add the DNS records to set up your Microsoft services, Microsoft has to confirm that you own the domain you're adding. To do this, you add a record, following the steps after this.
   
 > [!NOTE]
 > This record is used only to verify that you own your domain; it doesn't affect anything else. 
@@ -169,7 +169,7 @@ Before you add the DNS records to set up your Microsoft services, Microsoft has 
 
 1. Gather information from Microsoft.  <br/> 
 2. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page. 
-3. On the **Domains** page, in the **Actions** column for the domain that you are verifying, select **Start setup**. 
+3. On the **Domains** page, in the **Actions** column for the domain that you're verifying, select **Start setup**. 
 4. On the **Add a domain to Microsoft** page, select **Start step 1**. 
 5. On the **Confirm that you own your domain** page, in the **See instructions for performing this step with** drop-down list, choose **General instructions**. 
 6. From the table, copy the Destination or Points to Address value. You'll need it for the next step. We recommend copying and pasting this value, so that all of the spacing stays correct.
@@ -191,15 +191,15 @@ Verify your domain in Microsoft.
 > [!IMPORTANT]
 > Wait about 15 minutes before you do this, so the record you just created can update across the Internet.       
 
-- Go back to Microsoft and follow the steps below to request a verification check. The check looks for the TXT record you added in the previous step. When it finds the correct TXT record, the domain is verified.  
+- Go back to Microsoft and follow the steps after this to request a verification check. The check looks for the TXT record you added in the previous step. When it finds the correct TXT record, the domain is verified.  
 1. In the admin center, go to the **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
-2. On the **Domains** page, in the **Action** column for the domain you are verifying, select **Start setup**. 
+2. On the **Domains** page, in the **Action** column for the domain you're verifying, select **Start setup**. 
 3. On the **Confirm that you own your domain** page, select **done, verify now**, and then in the confirmation dialog box, select **Finish**. 
    
 > [!NOTE]
 >  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
-## Non-routable email address used as a UPN in your on-prem Active Directory
+## Non-routable email address used as a UPN in your on-premises Active Directory
 <a name="BKMK_ADNote"> </a>
 
 If you're planning to synchronize your on-premises Active Directory with Microsoft, you'll want to make sure that the Active Directory user principal name (UPN) suffix is a valid domain suffix, and not an unsupported domain suffix such as @contoso.local. If you need to change your UPN suffix, see [How to prepare a non-routable domain for directory synchronization](../../enterprise/prepare-a-non-routable-domain-for-directory-synchronization.md).
@@ -209,6 +209,6 @@ If you're planning to synchronize your on-premises Active Directory with Microso
 
 ## Related content
 
-[Transfer a domain from Micrsoft 365 to another host](../get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host.md) (article)\
+[Transfer a domain from Microsoft 365 to another host](../get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host.md) (article)\
 [Pilot Microsoft 365 from my custom domain](../misc/pilot-microsoft-365-from-my-custom-domain.md) (article)\
 [Domains FAQ](../setup/domains-faq.yml) (article)

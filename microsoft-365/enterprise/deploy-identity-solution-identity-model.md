@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 audience: Admin
-ms.date: 12/28/2023
+ms.date: 09/25/2024
 ms.topic: overview
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
@@ -42,7 +42,7 @@ Before you begin, watch this video for an overview of identity models and authen
 
 <p> </p>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=38a0c805-da7b-432c-aa86-747fc3dc2ccb]
 
 Your first planning choice is your cloud identity model.
 

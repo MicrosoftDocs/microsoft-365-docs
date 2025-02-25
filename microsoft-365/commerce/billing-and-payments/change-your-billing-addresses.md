@@ -23,6 +23,7 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkMAC
 - GAUpdates
+- campaignIDs-batch2
 search.appverid: MET150
 description: "Learn how to change your billing address for Microsoft 365 for business."
 ms.date: 02/16/2024
@@ -82,7 +83,7 @@ You can change your **Bill to** address in the Microsoft 365 admin center. Howev
 
 ## Change your service usage address
 
-If you have an MOSA billing account type, you can change the service usage address for a subscription. What type of billing account do I have?
+If you have an MOSA billing account type, you can change the service usage address for a subscription. [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
    - If you’re using the **Simplified view**, select **Billing**.

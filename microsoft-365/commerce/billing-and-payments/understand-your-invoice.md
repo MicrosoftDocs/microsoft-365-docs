@@ -23,6 +23,7 @@ ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 - AdminTemplateSet
+- campaignIDs-batch1
 search.appverid: MET150
 description: "Learn how to interpret the charges on your invoice for your Microsoft business subscription with an MCA billing account."
 ms.date: 02/22/2024
@@ -48,7 +49,11 @@ The invoice for your Microsoft business subscription provides a summary of the c
 
 Depending on the billing frequency that you chose when you bought your subscription, you receive an invoice monthly, every three months, every six months, or annually. 
 
-Each new subscription purchase receives the first invoice the next day and is billed on this same day of the month with the frequency selected at purchase. Changes you make to an existing subscription will appear on the monthly invoice around the beginning of the following month.
+Each new subscription purchase receives the first invoice the next day and is billed on this same day of the month with the frequency selected at purchase. Subscriptions with recurring billing receive subsequent invoices on that same day of the month. 
+
+Changes you make to an existing subscription appear on the monthly invoice around the beginning of the following month.  
+
+If you acquire multiple new subscriptions on different days within a month (excluding additions to current subscriptions), you receive separate invoices for each.
 
 > [!NOTE]
 > You can only change the billing frequency for a subscription when you buy, upgrade, or renew a subscription.
@@ -149,6 +154,18 @@ Some invoices are generated within 24 hours of the purchase. Other invoices are 
 
 Payment instructions depend on your payment method and are provided at the bottom of the invoice PDF. If your payment method is a credit or debit card, we automatically charge the card within 10 days of the invoice date. If your payment method is by electronic payment (wire transfer, SEPA, and so on), see the information under **Payment Instructions** in the PDF.
 
+### Why did I get a second invoice for the same subscription in one month?
+
+We changed our billing periods for Microsoft 365 for business products. This change updates invoicing from billing in arrears for all charges to paying upfront for purchases, renewals, and recurring charges.
+
+Changes like adding or removing licenses and moving to a different subscription are still billed around the beginning of the month. This invoice has a billing period that spans the previous month.
+
+Purchases, renewals, and recurring charges are now billed upfront. This invoice now has a billing period of a single day. You can find the transaction type in the invoice details in the Microsoft 365 admin center.
+
+### Why is the billing period a single day?
+
+A billing period of a single day indicates that the invoice is for purchases or renewals made on that day. This period isn’t the same as the service period that appears on the invoice details. The service period includes the dates of service for which you’re billed.
+
 ### What's the difference between "Sold to" and "Bill to" addresses?
 
 - **Sold to:** The legal entity responsible for payment and identified on the invoice. The address provided here is used to determine your tax rate unless you opt to provide an alternative shipping address during your purchase. For more information, see [Tax information](tax-information.md).
@@ -163,7 +180,7 @@ Payment instructions depend on your payment method and are provided at the botto
 
 - **Purchases Charge dates:** The service period during which you're charged to use the service. These are the dates of service the charge applies to.
 
-- **Billing period:** The time period during which charges accrue. If the period is a single day, only purchases made on that day are shownb on the invoice. There's also a monthly invoice with a billing period for the previous month. This invoice is for changes made to an existing subscription, such as adding seats or cancelling.
+- **Billing period:** The time period during which charges accrue. If the period is a single day, only purchases made on that day are shown on the invoice. There's also a monthly invoice with a billing period for the previous month. This invoice is for changes made to an existing subscription, such as adding seats or canceling.
 
 ### Why don't I see Azure prepayment as a payment method?
 

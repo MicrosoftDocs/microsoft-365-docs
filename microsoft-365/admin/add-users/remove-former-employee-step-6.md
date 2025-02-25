@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 11/21/2023
+ms.date: 01/06/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -44,9 +44,9 @@ When you remove the license, all that user's data is held for 30 days. You can [
 
 To reduce the number of licenses you're paying for until you hire another person, do the following steps:
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page, and select the **Products** tab.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. Select the subscription from which you want to remove licenses.
-3. On the details page, select **Remove licenses**.
+3. On the subscription page, select **Remove licenses**.
 4. In the **Remove licenses** pane, under New quantity, in the **Total licenses** box, enter the total number of licenses that you want for this subscription. For example, if you have 25 licenses and you want to remove one of them, enter 24.
 5. Select **Save**.
 

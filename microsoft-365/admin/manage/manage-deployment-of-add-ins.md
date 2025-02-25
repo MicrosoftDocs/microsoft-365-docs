@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
-ms.date: 08/30/2023
+ms.date: 10/23/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -63,7 +63,7 @@ Before you begin, see [Determine if Centralized Deployment of add-ins works for 
 1. In the admin center,  go to the **Settings** \> **Integrated apps** \> **Add-ins** page.
 
 > [!NOTE]
-> You can also deploy add-ins in the admin center through [Integrated Apps](test-and-deploy-microsoft-365-apps.md). Integrated Apps is the recommended place for admins to deploy add-ins, and is available to Global Administrator, Azure Application Administrator and Exchange Administrator. 
+> You can also deploy add-ins in the admin center through [Integrated Apps](test-and-deploy-microsoft-365-apps.md). Integrated Apps is the recommended place for admins to deploy add-ins, and is available to Global Administrators and Exchange Administrators. 
 >
 > If you still want to continue using Centralized Deployment for admin deployment of add-ins, navigate to **Settings**, then select **Integrated Apps**. On top of the Integrated Apps page, choose the **Add-ins** link. If Integrated Apps is not available for you, you should be able to navigate to Centralized Deployment from **Settings**, and then select **Add-ins**.
 
@@ -100,7 +100,7 @@ Before you begin, see [Determine if Centralized Deployment of add-ins works for 
 7. A green tick appears when the add-in is deployed. Follow the on-page instructions to test the add-in.
 
 > [!NOTE]
-> Users might need to relaunch Microsoft 365 to view the add-in icon on the app ribbon. Outlook add-ins can take up to 24 hours to appear on app ribbons.
+> Users might need to relaunch Microsoft 365 to view the add-in icon on the app ribbon. Add-ins can take up to 24 hours to appear on app ribbons.
 
 8. When finished, select **Next**. If you've deployed to just yourself, you can select **Change who has access to add-in** to deploy to more users.
 
@@ -149,6 +149,7 @@ Updates for add-ins happen as follows:
   
 ## Related content
 
+[Deploy and manage Office add-ins](office-addins.md) (article)\
 [Manage add-ins in the admin center](manage-addins-in-the-admin-center.md) (article)\
 [Build your first Word task pane add-in](/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator) (article\
 [Minors and acquiring add-ins from the store](minors-and-acquiring-addins-from-the-store.md) (article)\

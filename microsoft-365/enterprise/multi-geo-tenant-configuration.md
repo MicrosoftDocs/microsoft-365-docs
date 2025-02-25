@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Multi-Geo tenant configuration
 ms.reviewer:
-ms.date: 12/11/2023
+ms.date: 10/02/2024
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -40,6 +40,9 @@ There's no customer driven configuration required to prepare Microsoft Teams in 
 If you want to store data in a particular Geography, then that Geography must be configured for SharePoint and OneDrive ahead of time.
 
 Once Multi-Geo has been enabled for your _Tenant_ in SharePoint and OneDrive, the **Geo Locations** tab becomes available in the SharePoint admin center. If you don't see the **Geo Locations** tab, then your _Tenant_ hasn't yet finished being enabled for Multi-Geo.
+
+> [!IMPORTANT]
+> If you have changed your fallback .onmicrosoft.com domain in the past, you must ensure that you change it back to the domain matching the one used in your SharePoint URLs before proceeding. For example, if your earlier fallback domain was contoso.onmicrosoft.com, your SharePoint domain is contoso.sharepoint.com and your current fallback domain is fabrikam.onmicrosoft.com, make sure you change your fallback domain back to contoso.onmicrosoft.com before creating your first satellite geography.
 
 To add each Satellite Geography location for SharePoint and OneDrive where you want to store data:
 

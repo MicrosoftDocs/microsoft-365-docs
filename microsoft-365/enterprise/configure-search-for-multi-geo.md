@@ -1,12 +1,12 @@
 ---
 title: "Configure search for Microsoft 365 Multi-Geo"
 ms.reviewer:
-ms.date: 07/26/2024
+ms.date: 12/10/2024
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.custom: seo-marvel-mar2020
@@ -111,14 +111,14 @@ Some search features you might be familiar with, work differently in a multi-geo
 <tbody>
 <tr class="odd">
 <td align="left">Promoted results</td>
-<td align="left">You can create query rules with promoted results at different levels: for the whole _Tenant_, for a site collection, or for a site. In a Multi-Geo environment, define promoted results at the _Tenant_ level to promote the results to the Search Centers in all _Geography_ locations. If you only want to promote results in the Search Center that's in the _Geography_ location of the site collection or site, define the promoted results at the site collection or site level. These results are not promoted in other _Geography_ locations.</td>
-<td align="left">If you don't need different promoted results per _Geography_ location, for example different rules for traveling, we recommend defining promoted results at the _Tenant_ level.</td>
+<td align="left">You can create query rules with promoted results at different levels: for the whole <i>Tenant</i>, for a site collection, or for a site. In a Multi-Geo environment, define promoted results at the <i>Tenant</i> level to promote the results to the Search Centers in all <i>Geography</i> locations. If you only want to promote results in the Search Center that's in the <i>Geography</i> location of the site collection or site, define the promoted results at the site collection or site level. These results are not promoted in other <i>Geography</i> locations.</td>
+<td align="left">If you don't need different promoted results per <i>Geography</i> location, for example different rules for traveling, we recommend defining promoted results at the <i>Tenant</i> level.</td>
 </tr>
 <tr class="even">
 <td align="left">Search refiners</td>
-<td align="left">Search returns refiners from all the _Geography_ locations of a _Tenant_ and then aggregates them. The aggregation is a best effort, meaning that the refiner counts might not be 100% accurate. For most search-driven scenarios, this accuracy is sufficient.
+<td align="left">Search returns refiners from all the <i>Geography</i> locations of a <i>Tenant</i> and then aggregates them. The aggregation is a best effort, meaning that the refiner counts might not be 100% accurate. For most search-driven scenarios, this accuracy is sufficient.
 </td>
-<td align="left">For search-driven applications that depend on refiner completeness, query each _Geography_ location independently.</td>
+<td align="left">For search-driven applications that depend on refiner completeness, query each <i>Geography</i> location independently.</td>
 </tr>
 <tr class="odd">
 <td align="left"></td>
@@ -127,12 +127,12 @@ Some search features you might be familiar with, work differently in a multi-geo
 </tr>
 <tr class="even">
 <td align="left">Document IDs</td>
-<td align="left">If you're developing a search-driven application that depends on document IDs, note that document IDs in a Multi-Geo environment aren't unique across _Geography_ locations, they are unique per _Geography_ location.</td>
-<td align="left">We've added a column that identifies the _Geography_ location. Use this column to achieve uniqueness. This column is named "GeoLocationSource".</td>
+<td align="left">If you're developing a search-driven application that depends on document IDs, note that document IDs in a Multi-Geo environment aren't unique across <i>Geography</i> locations, they are unique per <i>Geography</i> location.</td>
+<td align="left">We've added a column that identifies the <i>Geography</i> location. Use this column to achieve uniqueness. This column is named "GeoLocationSource".</td>
 </tr>
 <tr class="odd">
 <td align="left">Number of results</td>
-<td align="left">The search results page shows combined results from the _Geography_ locations, but it's not possible to page beyond 500 results.</td>
+<td align="left">The search results page shows combined results from the <i>Geography</i> locations, but it's not possible to page beyond 500 results.</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
@@ -161,7 +161,7 @@ Some of the search features you might be familiar with, aren't supported in a mu
 </tr>
 <tr class="even">
 <td align="left">Guests</td>
-<td align="left">Guests only get results from the _Geography_ location that they're searching from.</td>
+<td align="left">Guests only get results from the <i>Geography</i> location that they're searching from.</td>
 </tr>
 </tbody>
 </table>
@@ -231,7 +231,7 @@ MultiGeoSearchConfiguration - This is an optional list of which geo locations in
 <tbody>
 <tr class="odd">
 <td align="left">DataLocation</td>
-<td align="left">The _Geography_ location, for example NAM.</td>
+<td align="left">The <i>Geography</i> location, for example NAM.</td>
 </tr>
 <tr class="even">
 <td align="left">EndPoint</td>
@@ -260,11 +260,11 @@ MultiGeoSearchStatus – This is a property that the SharePoint Search API retur
 <tbody>
 <tr class="odd">
 <td align="left">Full</td>
-<td align="left">Full results from <strong>all</strong> the _Geography_ locations.</td>
+<td align="left">Full results from <strong>all</strong> the <i>Geography</i> locations.</td>
 </tr>
 <tr class="even">
 <td align="left">Partial</td>
-<td align="left">Partial results from one or more _Geography_ locations. The results are incomplete due to a transient error.</td>
+<td align="left">Partial results from one or more <i>Geography</i> locations. The results are incomplete due to a transient error.</td>
 </tr>
 </tbody>
 </table>
@@ -293,13 +293,13 @@ With a GET request, you specify the query parameters in the URL. With a POST req
 #### Sample GET request that's fanned out to **all** geo locations
 
 ```http
-https:// \<tenant\>/\_api/search/query?querytext='sharepoint'&Properties='EnableMultiGeoSearch:true'&ClientType='my\_client\_id'
+https://<tenant>/_api/search/query?querytext='sharepoint'&Properties='EnableMultiGeoSearch:true'&ClientType='my_client_id'
 ```
 
 #### Sample GET request to fan out to **some** geo locations
 
 ```http
-https:// \<tenant\>/\_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\\:"NAM"\\,Endpoint\\:"https\\://contosoNAM.sharepoint.com"\\,SourceId\\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\\,{DataLocation\\:"CAN"\\,Endpoint\\:"https\\://contosoCAN.sharepoint-df.com"}]'
+https://<tenant>/_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\\:"NAM"\\,Endpoint\\:"https\\://contosoNAM.sharepoint.com"\\,SourceId\\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\\,{DataLocation\\:"CAN"\\,Endpoint\\:"https\\://contosoCAN.sharepoint-df.com"}]'
 ```
 
 > [!NOTE]

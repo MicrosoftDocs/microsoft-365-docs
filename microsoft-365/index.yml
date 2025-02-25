@@ -45,6 +45,10 @@ highlightedContent:
     - title: Set up your infrastructure for hybrid work
       itemType: how-to-guide
       url: solutions/empower-people-to-work-remotely.md
+    # Card
+    - title: Learn from the experts - skill up for the era of AI at the Microsoft 365 Community Conference
+      itemType: whats-new
+      url: https://aka.ms/MCAG/IPM/ML25002B
 
 # conceptualContent section (optional)
 conceptualContent:
@@ -100,9 +104,6 @@ conceptualContent:
             - url: /Exchange/exchange-online
               itemType: overview
               text: Exchange Online
-            - url: https://adoption.microsoft.com/outlook-mobile/
-              itemType: overview
-              text: Outlook for iOS and Android
             - url: /office365/planner
               itemType: overview
               text: Planner
@@ -115,9 +116,15 @@ conceptualContent:
             - url: /microsoft-365-apps/mac/deployment-guide-for-office-for-mac
               itemType: how-to-guide
               text: Office for Mac
-            - url: /office/ltsc/2021/overview
+            - url: /office/ltsc/2024/overview
               itemType: overview
-              text: Office LTSC 2021
+              text: Office LTSC 2024
+            - url: /microsoft-365-apps/outlook/overview-new-outlook
+              itemType: overview
+              text: Outlook for Windows
+            - url: https://adoption.microsoft.com/outlook-mobile/
+              itemType: overview
+              text: Outlook for iOS and Android
           # footerLink (optional)
           footerLink:
             url: /microsoft-365-apps

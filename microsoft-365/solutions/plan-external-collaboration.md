@@ -1,8 +1,8 @@
 ---
 title: Plan external collaboration with channel conversations, file collaboration, and shared apps
-ms.author: jtremper
-author: jacktremper
-manager: pamgreen
+author: DaniEASmith
+ms.author: danismith
+manager: jtremper
 ms.reviewer: jasonlewis
 ms.date: 12/13/2023
 audience: ITPro

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 09/18/2023
+ms.date: 11/14/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -35,7 +35,7 @@ Here are a couple of tips:
 
 ## Restore one or more user accounts
 
-You must be a ([user management admin](about-admin-roles.md)) to do these steps.
+You must be a [user management admin](about-admin-roles.md) to do these steps.
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Deleted users</a> page.
 
@@ -43,7 +43,7 @@ You must be a ([user management admin](about-admin-roles.md)) to do these steps.
 
 3. Follow the prompts to set their password, and then select **Restore**.
 
-4. If the user is successfully restored, select **Send email and close**. If you encounter a name conflict or proxy address conflict, see the instructions below for how to restore those accounts.
+4. If the user is successfully restored, select **Print** and securely send the user their username and password information. If you encounter a name conflict or proxy address conflict, see the instructions below for how to restore those accounts.
 
 5. Make sure to add a license for the user after you restore them if you want them to use Microsoft 365.
 

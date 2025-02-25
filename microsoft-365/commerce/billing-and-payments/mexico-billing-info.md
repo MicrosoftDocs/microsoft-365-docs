@@ -23,7 +23,7 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 monikerRange: 'o365-worldwide'
-ms.date: 10/10/2023
+ms.date: 10/06/2024
 ---
 
 # Billing information for Microsoft 365 for business in Mexico

@@ -9,7 +9,7 @@ ms.subservice: advanced-data-residency
 ms.topic: concept-article
 f1.keywords:
 - NOCSH
-ms.date: 02/29/2024
+ms.date: 02/20/2025
 ms.reviewer: deanw
 ms.custom:
 - it-pro
@@ -57,7 +57,7 @@ Required Conditions:
 
 Refer to the [ADR Commitment page](m365-dr-commitments.md#microsoft-365-copilot) to understand the specific data at rest commitments for Microsoft 365 Copilot. Examples of the committed data include:
 
-- "Content of Interactions” such as the user's prompt and Microsoft Copilot's response, including citations to any information used to ground Microsoft Copilot's response.
+- "Content of Interactions" such as the user's prompt and Microsoft Copilot's response, including citations to any information used to ground Microsoft Copilot's response.
 
 ### Multi-Geo add-on
 
@@ -70,19 +70,19 @@ Required Conditions:
 **Commitment:**
 Multi-Geo capabilities in Microsoft 365 Copilot enable content of interactions with Microsoft 365 Copilot to be stored at rest in a specified _Macro Region Geography_ or _Local Region Geography_ location. Microsoft 365 Copilot uses the Preferred Data Location (PDL) for users and groups to determine where to store data. If the PDL isn't set or is invalid, data is stored in the _Tenant's Primary Provisioned Geography_ location. The _Geography_ where the content of interactions with Microsoft 365 Copilot are stored is determined by the PDL of the user interacting with Microsoft 365 Copilot. This means that the storage of content of interactions for users in different regions will be based on their respective PDL configurations.
 
-To find the current location of a user's content of interactions with Microsoft 365 Copilot by referencing the PDL configuration for that user. Refer to [Multi-Geo Testing](m365-multi-geo-user-testing.md)
+To find the current location of a user's content of interactions with Microsoft 365 Copilot by referencing the PDL configuration for that user. Refer to [Multi-Geo Testing](m365-multi-geo-user-testing.md).
 
 **Illustrative examples**
 
 **Collaboration Experience**
-Two people are working together on a Microsoft Word document. User A authored the document and stored it in the OneDrive for Business personal storage site, which is located in France. User B is in Canada and asks Microsoft 365 Copilot to rewrite a paragraph in the document. The paragraph User B submitted as the prompt, as well as the rewrite options Microsoft 365 Copilot provides (the “content of interactions” in this case) are stored in Canada; the original document remains in France, as does any rewrite the user accepts into that document.
+Two people are working together on a Microsoft Word document. User A authored the document and stored it in the OneDrive for Business personal storage site, which is located in France. User B is in Canada and asks Microsoft 365 Copilot to rewrite a paragraph in the document. The paragraph User B submitted as the prompt, as well as the rewrite options Microsoft 365 Copilot provides (the "content of interactions" in this case) are stored in Canada; the original document remains in France, as does any rewrite the user accepts into that document.
 
 **Teams Meeting Experience**
-Microsoft Teams meeting recording video location is determined by the user PDL that starts the recording, or when meetings have an automatic recording policy, the location is determined from the first person joining the meeting. When users in other regions interact with Microsoft 365 Copilot in Teams, those user prompts and corresponding responses are stored in the location of the user that asks the Microsoft 365 Copilot questions.
+Microsoft Teams meeting recording video location is determined by the user PDL that starts the recording, or when meetings have an automatic recording policy, the location is determined by the meeting organiser. When users in other regions interact with Microsoft 365 Copilot in Teams, those user prompts and corresponding responses are stored in the location of the user that asks the Microsoft 365 Copilot questions.
 
 ### Migration and User Experience
 
-When a user interacts with Microsoft 365 Copilot (using apps such as Word, PowerPoint, Excel, OneNote, Loop, or Whiteboard), we store data about these interactions. The stored data includes the user's prompt and Copilot's response, including citations to any information used to ground Copilot's response. We refer to the user’s prompt and Copilot’s response to that prompt as the “content of interactions” and the record of those interactions is the user’s Copilot interaction history. For example, this stored data provides users with Copilot interaction history in [Microsoft Copilot with Graph-grounded chat](https://support.microsoft.com/topic/get-started-with-copilot-for-microsoft-365-5b00a52d-7296-48ee-b938-b95b7209f737) and [meetings in Microsoft Teams](https://support.microsoft.com/office/get-started-with-copilot-in-microsoft-teams-meetings-0bf9dd3c-96f7-44e2-8bb8-790bedf066b1). This data is processed and stored in alignment with contractual commitments with your organization’s other content in Microsoft 365, such as [Advanced data residency in Microsoft 365](advanced-data-residency.md).
+When a user interacts with Microsoft 365 Copilot (using apps such as Word, PowerPoint, Excel, OneNote, Loop, or Whiteboard), we store data about these interactions. The stored data includes the user's prompt and Copilot's response, including citations to any information used to ground Copilot's response. We refer to the user's prompt and Copilot's response to that prompt as the "content of interactions" and the record of those interactions is the user's Copilot interaction history. For example, this stored data provides users with Copilot interaction history in [Microsoft 365 Copilot Chat](https://support.microsoft.com/topic/get-started-with-copilot-for-microsoft-365-5b00a52d-7296-48ee-b938-b95b7209f737) and [meetings in Microsoft Teams](https://support.microsoft.com/office/get-started-with-copilot-in-microsoft-teams-meetings-0bf9dd3c-96f7-44e2-8bb8-790bedf066b1). This data is processed and stored in alignment with contractual commitments with your organization's other content in Microsoft 365, such as [Advanced data residency in Microsoft 365](advanced-data-residency.md).
 
 When a customer elects [Advanced data residency in Microsoft 365](advanced-data-residency.md), they are subject to [ADR Migration](advanced-data-residency.md#data-migration-management). For detailed information regarding customer impact during the migration, please refer to [Data Residency for Microsoft Teams](m365-dr-workload-teams.md#user-experience).
 

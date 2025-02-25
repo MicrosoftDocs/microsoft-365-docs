@@ -5,8 +5,8 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 07/31/2024
-ms.topic: conceptual
+ms.date: 02/19/2025
+ms.topic: overview
 ms.service: microsoft-365-backup
 ms.custom: backup
 search.appverid:
@@ -30,6 +30,9 @@ Key features include:
 
 - **Partner ecosystem**: Leverage additional features and workflows through integrated partner applications to manage all your backups in one place.
 --->
+> [!Note]
+> Microsoft 365 Backup is currently not available for Government Community Cloud (GCC) organizations. 
+
 ## Scenarios and value proposition
 
 Business continuity assurance is a top-of-mind concern for many companies. Microsoft 365 Backup delivers business continuity peace of mind by providing performance and reliable restore confidence. When evaluating a backup and restore offering, what really matters isn't solely the backup, but the ability to restore your data to a healthy state quickly when you need to do so. Recovering large volumes of content is difficult when copying data at a scale from a remote, air-gapped location requiring weeks or even months to get your business back up and running.
@@ -109,19 +112,18 @@ The following table summarizes expected performance for a normally distributed t
 
 <sup>*Single protection unit OneDrive and SharePoint restores using express restore points can take on average between 10 minutes and 120 minutes.</sup>
 
-<!---
-|Scenario |Restore of all protection units* complete |
-|:-------|:--------|
-| 1,000 accounts, sites, or mailboxes<br>(10-GB average size)  |Less than 12 hours  |
+<sup>**Exchange Online performance times based on an average sized mailbox of 26K items and a size of 10 GB.  Actual times will depend on the number and size of the items in each mailbox.  For a single mailbox, restore times typically fall in the 200 - 300 item/minute range.</sup>
 
-<sup>*A *protection unit* is a OneDrive account, SharePoint site, or Exchange mailbox.</sup>
---->
+## Pay-as-you-go billing
+
+Microsoft 365 Backup is a pay-as-you-go offering that charges based on consumption, unlike traditional user-based licenses.
+
 ## Integrated partner solutions
 
 We partner with many independent software vendors (ISVs) to provide differentiated versions of their applications integrated with the Microsoft 365 Backup Storage platform—all providing the same underlying performance value proposition for your Microsoft 365 data.
 
 For a partner application, operation of the Microsoft 365 Backup tool will be managed and paid for entirely through the partner's application. Those applications have the ability to provide a single pane of glass for all of your data estates that require backups, and they might provide more enhanced experiences or workflows.
 
-## General Data Protection Regulations (GDPR)
+## Multi-geo environments
 
-For information about GDPR and Microsoft 365 Backup, see [GDPR special handling, compliance, and backup data deletion](backup-offboarding.md#gdpr-special-handling-compliance-and-backup-data-deletion).
+Microsoft 365 Backup supports the backup of sites and user accounts from both the central and satellite locations.

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 09/12/2023
+ms.date: 09/30/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -107,12 +107,12 @@ There are a few different ways to access a mailbox once you've given permission 
 
 ::: moniker range="o365-21vianet"
 
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page. 
+1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.
   
 2. Select the user you want, expand **Mail Settings**, and then select **Edit** next to **Mailbox permissions**.
-    
-3. Next to **Read and manage**, select **Edit**. 
-    
+
+3. Next to **Read and manage**, select **Edit**.
+
 4. Select **Add permissions**, then choose the name of the user or users that you want to allow to read email from this mailbox.
 
 5. Select **Add**.

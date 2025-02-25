@@ -77,7 +77,7 @@ Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?l
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2197911).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWD3sq?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=8259f3d5-ecdb-452f-b055-76f6a6b969aa]
 
 With the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, you can reset passwords, view your invoice, add or remove users, and much more all in one place.
 
@@ -99,7 +99,7 @@ If you need assistance, select **Help & support**. Search for topic you want hel
 
 ## Watch: The admin center in dashboard view
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfvDL?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=1fae0a7d-cee3-454e-b6d7-1376ee858314]
 
 The <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> is where you manage your business in the cloud. You can complete such tasks as adding and removing users, changing licenses, and resetting passwords.
 

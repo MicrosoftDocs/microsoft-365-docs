@@ -67,8 +67,8 @@ The current Optimize URLs can be found in the table below. Under most circumstan
 > | --- | --- | --- |
 > | <https://outlook.office365.com> | TCP 443 | This is one of the primary URLs Outlook uses to connect to its Exchange Online server and has a high volume of bandwidth usage and connection count. Low network latency is required for online features including: instant search, other mailbox calendars, free / busy lookup, manage rules and alerts, Exchange online archive, emails departing the outbox. |
 > | <https://outlook.office.com> | TCP 443 | This URL is used for Outlook Online Web Access to connect to Exchange Online server, and is sensitive to network latency. Connectivity is particularly required for large file upload and download with SharePoint Online. |
-> | `https://\<tenant\>.sharepoint.com` | TCP 443 | This is the primary URL for SharePoint Online and has high-bandwidth usage. |
-> | `https://\<tenant\>-my.sharepoint.com` | TCP 443 | This is the primary URL for OneDrive for Business and has high bandwidth usage and possibly high connection count from the OneDrive for Business Sync tool. |
+> | `https:/<tenant>.sharepoint.com` | TCP 443 | This is the primary URL for SharePoint Online and has high-bandwidth usage. |
+> | `https://<tenant>-my.sharepoint.com` | TCP 443 | This is the primary URL for OneDrive for Business and has high bandwidth usage and possibly high connection count from the OneDrive for Business Sync tool. |
 > | Teams Media IPs (no URL) | UDP 3478, 3479, 3480, and 3481 | Relay Discovery allocation and real-time traffic. These are the endpoints used for Skype for Business and Microsoft Teams Media traffic (calls, meetings, etc.). Most endpoints are provided when the Microsoft Teams client establishes a call (and are contained within the required IPs listed for the service). Use of the UDP protocol is required for optimal media quality.   |
 
 In the above examples, **tenant** should be replaced with your Microsoft 365 tenant name. For example, **contoso.onmicrosoft.com** would use _contoso.sharepoint.com_ and _contoso-my.sharepoint.com_.

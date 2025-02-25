@@ -9,7 +9,7 @@ ms.subservice: advanced-data-residency
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 02/29/2024
+ms.date: 12/10/2024
 ms.reviewer: deanw, brianday
 ms.custom:
  - it-pro
@@ -123,15 +123,15 @@ The following connection instructions work for accounts that are or aren't confi
 
 1. In a Windows PowerShell window, load the EXO V2 module by running the following command:
 
- ```powershell
- Import-Module ExchangeOnlineManagement
- ```
+    ```powershell
+    Import-Module ExchangeOnlineManagement
+    ```
  
 1. In the following example, admin@contoso.onmicrosoft.com is the admin account, and the target geo location is where the mailbox olga@contoso.onmicrosoft.com resides.
  
- ```powershell
- Connect-ExchangeOnline -UserPrincipalName admin@contoso.onmicrosoft.com -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com
- ```
+    ```powershell
+    Connect-ExchangeOnline -UserPrincipalName admin@contoso.onmicrosoft.com -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com
+    ```
  
 1. Enter the password for the admin@contoso.onmicrosoft.com in the prompt that appears. If the account is configured for MFA, you also need to enter the security code.
  
@@ -261,9 +261,9 @@ You can't move inactive mailboxes that are preserved for compliance purposes (fo
 
 1. Prevent the Managed Folder Assistant from processing the recovered mailbox by replacing \<MailboxIdentity\> with the name, alias, account, or email address of the mailbox and running the following command in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
 
- ```powershell
- Set-Mailbox <MailboxIdentity> -ElcProcessingDisabled $true
- ```
+    ```powershell
+    Set-Mailbox <MailboxIdentity> -ElcProcessingDisabled $true
+    ```
 
 1. Assign an **Exchange Online Plan 2** license to the recovered mailbox. This step is required to place the mailbox back on Litigation Hold. For instructions, see [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users).
 
@@ -273,9 +273,9 @@ You can't move inactive mailboxes that are preserved for compliance purposes (fo
 
 1. After verifying that the Litigation Hold is in place, allow the Managed Folder Assistant to process the mailbox again by replacing \<MailboxIdentity\> with the name, alias, account, or email address of the mailbox and running the following command in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
 
- ```powershell
- Set-Mailbox <MailboxIdentity> -ElcProcessingDisabled $false
- ```
+    ```powershell
+    Set-Mailbox <MailboxIdentity> -ElcProcessingDisabled $false
+    ```
 
 1. Make the mailbox inactive again by removing the user account associated with the mailbox. For instructions, see [Delete a user from your organization](/admin/add-users/delete-a-user). This step also releases the Exchange Online Plan 2 license for other uses.
 
@@ -365,15 +365,15 @@ Or, you can use the following steps to onboard mailboxes directly in a specific 
 
 1. In Exchange Online PowerShell, store the on-premises administrator credentials used to perform a mailbox migration in a variable by running the following command:
 
- ```powershell
- $RC = Get-Credential
- ```
+    ```powershell
+    $RC = Get-Credential
+    ```
 
 1. In Exchange Online PowerShell, create a new **New-MoveRequest** similar to the following example:
 
- ```powershell
- New-MoveRequest -Remote -RemoteHostName mail.contoso.com -RemoteCredential $RC -Identity user@contoso.com -TargetDeliveryDomain <YourAppropriateDomain>
- ```
+    ```powershell
+    New-MoveRequest -Remote -RemoteHostName mail.contoso.com -RemoteCredential $RC -Identity user@contoso.com -TargetDeliveryDomain <YourAppropriateDomain>
+    ```
 
 1. Repeat step #4 for every mailbox you need to migrate from on-premises Exchange to the satellite geo location you're currently connected to.
 

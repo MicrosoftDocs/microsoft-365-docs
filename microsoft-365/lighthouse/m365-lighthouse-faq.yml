@@ -6,7 +6,7 @@ metadata:
   ms.author: sharik
   author: SKjerland
   manager: scotv
-  ms.reviewer: sharonchoi
+  ms.reviewer: crimora
   audience: Admin
   ms.topic: faq
   ms.service: microsoft-365-lighthouse
@@ -58,7 +58,7 @@ sections:
 
       - question: How do I sign up for Microsoft 365 Lighthouse?
         answer: |
-          To sign up for Lighthouse, you'll need to be enrolled in the Cloud Solution Provider (CSP) program as an Indirect Reseller or Direct Bill partner. For instructions on how to sign up, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md). To learn more about the CSP program, see the [Cloud Solution Provider program overview](/partner-center/csp-overview).
+          To sign up for Lighthouse, you'll need to be enrolled in the Cloud Solution Provider (CSP) program as an Indirect Reseller or Direct Bill partner. For instructions on how to sign up, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md). To learn more about the CSP program, see the [Cloud Solution Provider program overview - Partner Center](/partner-center/csp-overview).
 
       - question: Will Microsoft 365 Lighthouse work if my customer tenants have a mix of subscriptions?
         answer: |
@@ -72,7 +72,7 @@ sections:
           
       - question: Why do I see data for some customer tenants but not others?
         answer: |
-          For customer tenant data to show up in Lighthouse, MSPs must establish delegated access to manage the customer tenant. Either granular delegated admin privileges (GDAP) plus an indirect reseller relationship or a delegated admin privileges (DAP) relationship is required to onboard customers to Lighthouse. We recommend establishing GDAP with your customers to allow more secure delegated access. If DAP and GDAP coexist in a customer tenant, GDAP permissions take precedence for MSP technicians in GDAP-enabled security groups. For more information on delegated access, see [Request a reseller relationship with a customer in Partner Center](/partner-center/request-a-relationship-with-a-customer). Tenants also must have at least one Enterprise, Business, Frontline, or Education subscription of Microsoft 365, Office 365, Exchange Online, Windows 365 Business, or Microsoft Defender for Business and no more than 2500 licensed users in their tenant. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) and [Overview of the Tenants page in Microsoft 365 Lighthouse](m365-lighthouse-tenants-page-overview.md).
+          For customer tenant data to show up in Lighthouse, MSPs must establish delegated access to manage the customer tenant. Either granular delegated administrative privileges (GDAP) plus an indirect reseller relationship or a delegated administrative privileges (DAP) relationship is required to onboard customers to Lighthouse. We recommend establishing GDAP with your customers to allow more secure delegated access. If DAP and GDAP coexist in a customer tenant, GDAP permissions take precedence for MSP technicians in GDAP-enabled security groups. For more information on delegated access, see [Request a reseller relationship with a customer in Partner Center](/partner-center/request-a-relationship-with-a-customer). Tenants also must have at least one Enterprise, Business, Frontline, or Education subscription of Microsoft 365, Office 365, Exchange Online, Windows 365 Business, or Microsoft Defender for Business and no more than 2500 licensed users in their tenant. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) and [Overview of the Tenants page in Microsoft 365 Lighthouse](m365-lighthouse-tenants-page-overview.md).
 
           If GDAP is established with the customer, an MSP technician must be in a GDAP-enabled security group that is assigned the appropriate roles to be able to manage that customer's data in Lighthouse. GDAP roles assigned to that security group impact which customer data can be managed within Lighthouse. See [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md) for details on which delegated and partner tenant roles are recommended to use Lighthouse. For instructions on how to view which GDAP roles have been assigned to you for different customer tenants in Lighthouse, see [View your Microsoft Entra roles in Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md).   
          
@@ -292,9 +292,9 @@ sections:
       - question: Is the Sales Advisor capability in Microsoft 365 Lighthouse only for Microsoft 365, or is it also available for Azure and BizApps? 
         answer: |
           The Microsoft 365 Lighthouse Sales Advisor capability only supports Modern Work Microsoft 365 services and solutions.  
-      - question: Once a partner is onboarded to Lighthouse, how do they get started with Sales Advisor? 
+      - question: How do I get started with Sales Advisor? 
         answer: |
-          Instructions on how to onboard to Lighthouse and how to use the Sales Advisor capabilities are posted on [Get access to Sales Advisor](m365-lighthouse-get-access-to-sales-advisor.md). 
+          Sales Advisor is integrated into Lighthouse. You must hold the Account Manager role in Lighthouse. If you don't hold the Account Manager role, reach out to someone who holds the Administrator role in Lighthouse and ask them to assign the role to you. For more information, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). To learn more about using Sales Advisor to view customer opportunities, see [Overview of Sales Advisor in Microsoft 365 Lighthouse](m365-lighthouse-sales-advisor-overview.md).
       - question: What is the difference between Sales Advisor and Cloud Ascent? Are they complimentary? 
         answer: |
           The two offerings serve different purposes and use different signals to generate information shared with partners. 

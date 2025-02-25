@@ -5,8 +5,8 @@ author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
 audience: admin
-ms.topic: conceptual
-ms.date: 02/14/2024
+ms.topic: how-to
+ms.date: 01/08/2025
 ms.service: microsoft-syntex
 search.appverid: 
 ms.localizationpriority:  medium

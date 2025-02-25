@@ -150,7 +150,7 @@ You can configure a Citrix environment to route certain URLs back to the local m
 To learn more, see the following Citrix documentation:
 
 - [Optimization for Microsoft Teams](https://docs.citrix.com/en-us/citrix-virtual-apps-desktops/multimedia/opt-ms-teams.html)
-- [Browser content redirection](https://docs.citrix.com//en-us/citrix-virtual-apps-desktops/multimedia/browser-content-redirection.html)
+- [Browser content redirection](https://docs.citrix.com/en-us/citrix-virtual-apps-desktops/multimedia/browser-content-redirection.html)
 
 ## Related articles
 

@@ -22,6 +22,7 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 - GAUpdates
+- campaignIDs-batch2
 search.appverid: MET150
 description: "Learn how to review and approve or deny license requests for products and services from users in the Microsoft 365 admin center."
 ms.date: 05/13/2024
@@ -37,11 +38,12 @@ If you turn-off self-service purchases in your organization, you can set up lice
 > [!NOTE]
 > If you block users from making self-service purchases, Microsoft doesn't send them marketing emails. Also, if they're using a trial version of a product, they don't see prompts to buy it. To learn more, see [Manage self-service purchases (Admin)](../subscriptions/manage-self-service-purchases-admins.md).
 
-To see and manage license requests, use the **Requests** tab on the **Licensing** page in the admin center. The list shows the name of the product requested, name of the person requesting a license, date requested, and status of the request. You can filter the list to show requests that are pending or completed. Requests are held for 30 days.
+To see and manage license requests, use the **Requests** tab on the **Licensing** page in the admin center. The list shows the name of the product requested, name of the person requesting a license, date requested, and status of the request. You can filter the list to show requests that are pending or completed. Requests are held for 12 months.
 
 ## Before you begin
 
-You must be a Global Administrator to perform the tasks in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+- You must be at least a User Administrator or a License Administrator to do the tasks in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+- If you're a partner who's an Admin On Behalf Of (AOBO) a customer, you must have a role that's set to Global Administrator in order to do the tasks in this article.
 
 [!INCLUDE [ga-roles-limitation](../../includes/ga-roles-limitation.md)]
 
@@ -83,7 +85,7 @@ When you return to the **Requests** list, you see the message **You're using you
 6. To assign licenses based on group membership, select **Assign license by adding the approved individuals to the following security group**.
    - A grayed-out option typically signifies that the security groups are either unlicensed or not yet configured.
    - For more information about how to assign licenses to a security group, see [Assign licenses to users by group membership using the Microsoft 365 admin center](/entra/identity/users/licensing-admin-center)
-   - When multiple security groups are available, select the one to which you want to assign licenses.     
+   - When multiple security groups are available, select the one to which you want to assign licenses.
 7. In the text box at the bottom of the pane, type a message (optional). The user receives an email containing either the default message or your customized message.
 8. When you're finished, select **Submit**. The details pane shows the details of the request.
 9. Close the details pane. Users receive an email that says their request was approved or denied.
@@ -107,4 +109,4 @@ If you don’t have the authority within your organization to make decisions abo
 [Assign licenses to users](../../admin/manage/assign-licenses-to-users.md) (article)\
 [Move users to a different subscription](../subscriptions/move-users-different-subscription.md) (article)\
 [Buy or remove subscription licenses](buy-licenses.md) (article)\
-[Self-service purchase FAQ](../subscriptions/self-service-purchase-faq.yml)
+[Self-service purchase FAQ](../subscriptions/self-service-purchase-faq.yml) (article)

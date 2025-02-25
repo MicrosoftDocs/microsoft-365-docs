@@ -1,7 +1,7 @@
 ---
 title: "Add or remove a geo administrator"
 ms.reviewer: anfra
-ms.date: 12/11/2023
+ms.date: 09/27/2024
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -9,7 +9,9 @@ audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
-ms.collection: SPO_Content
+ms.collection: 
+- SPO_Content
+- must-keep
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH

@@ -48,6 +48,7 @@ If you haven't already added users to your Intune tenant, you can add them using
 ## Add users to Intune
 
 As part of setting up Intune, you may have already added users to your Intune tenant. If not, you can add either mulitple users or single users. Adding a user to Intune creates a new Microsoft Entra ID account.
+
 - [Add multiple users to Intune](#add-multiple-users-to-intune)
 - [Add a single users to Intune](#add-single-users-to-intune)
 
@@ -56,9 +57,10 @@ As part of setting up Intune, you may have already added users to your Intune te
 
 ### Add multiple users to Intune
 
-The most efficient way to add users is in bulk in the Intune admin center. Adding users to your Intune tenant involves creating and uploading a *.csv* file containing the full list of members for your organization. For more information about downloading the *.csv* file, understanding the fields within the *.csv* file, and uploading the *.csv* file, see [Add multiple Intune users in the Microsoft Intune admin center](/intune/fundamentals/users-add#add-multiple-intune-users-in-the-microsoft-intune-admin-center).
+The most efficient way to add users is in bulk in the Intune admin center. Adding users to your Intune tenant involves creating and uploading a *.csv* file containing the full list of members for your organization. For more information about downloading the *.csv* file, understanding the fields within the *.csv* file, and uploading the *.csv* file, see [Add multiple Intune users in the Microsoft Intune admin center](/mem/intune/fundamentals/users-add#add-multiple-intune-users-in-the-microsoft-intune-admin-center).
 
 Other ways to add users to your tenant include the following methods:
+
 - [Add multiple users from your on-premises Active Directory](/mem/intune/fundamentals/users-add#sync-active-directory-and-add-users-to-intune).
 - [Invite multiple Microsoft Entra B2B users](/entra/external-id/tutorial-bulk-invite).
 

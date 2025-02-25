@@ -3,11 +3,11 @@ title: Compare types of groups in Microsoft 365
 ms.reviewer: rahulnayak
 ms.date: 05/22/2024
 f1.keywords: CSH
-ms.author: jtremper
-author: jacktremper
-manager: pamgreen
+author: DaniEASmith
+ms.author: danismith
+manager: jtremper
 audience: Admin
-ms.topic: article
+ms.topic: product-comparison
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
@@ -21,6 +21,7 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 - admindeeplinkMAC
+- campaignIDs-batch2
 search.appverid:
 - BCS160
 - MET150

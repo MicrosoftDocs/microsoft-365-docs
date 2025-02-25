@@ -108,4 +108,4 @@ Before the partner can assign these roles to users, you must add the partner as 
 
 ## See also
 
-[Resources for Microsoft partners working with small and medium-sized businesses](../security/defender-business/mdb-partners.md)
+[Resources for Microsoft partners working with small and medium-sized businesses](/defender-business/mdb-partners)

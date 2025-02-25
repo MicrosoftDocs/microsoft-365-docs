@@ -69,6 +69,9 @@ To buy and sign up for Microsoft 365 Business Basic subscription, complete the f
 
 Follow these steps to [finish setting up](setup-apps-for-business.md) your Microsoft Business Basic subscription. You can also [add a domain](../setup/add-domain.md) when you're ready.
 
+> [!NOTE]
+> If you have a Microsoft Customer Agreement (MCA) billing account type with Microsoft, you automatically receive a product called Microsoft Entra ID Free. This product improves your tenant management and security by tracking new tenants created with the same billing account. There's no charge for this product, and there's no other action you need to take. To learn more about this product, see [Microsoft Entra ID Free](/azure/cost-management-billing/manage/microsoft-entra-id-free). [Find out what type of billing account you have](../../commerce/manage-billing-accounts.md#view-my-billing-accounts).
+
 ## Frequently asked questions
 
 ### What is a business email and what are the advantages to setting one up?

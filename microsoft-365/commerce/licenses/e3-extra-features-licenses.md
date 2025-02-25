@@ -20,7 +20,7 @@ ms.custom:
 - empty
 search.appverid: MET150
 description: "Learn about Microsoft 365 E3 and E5 Extra Features and how to assign licenses for it to your users."
-ms.date: 01/25/2024
+ms.date: 11/04/2024
 ---
 
 # Understand the Microsoft 365 E3 and E5 Extra Features license
@@ -44,11 +44,10 @@ Microsoft 365 E3 or E5 Extra Features provides additional features for your user
 |Feature  |Microsoft 365 E3 Extra Features  |Microsoft 365 E5 Extra Features  |
 |---------|---------|---------|
 |Avatars for Teams    | Yes       | Yes         |
-|Microsoft 365 Copilot     | Yes       | Yes         |
+|Microsoft 365 Copilot     | No | No |
 |Microsoft Clipchamp     | Yes       | Yes         |
 |Microsoft Loop     | Yes       | Yes         |
 |Windows Autopatch     | Yes       | Yes         |
-|Windows Update for Business deployment service     | Yes       | Yes         |
 |Customer Lockbox     | No        | Yes        |
 |Defender for IoT - Enterprise IoT Security     | No        | Yes        |
 |Immersive spaces for Teams     | No        | Yes        |

@@ -1,3 +1,4 @@
+items:
 - name: Microsoft 365 for frontline workers
   href: index.yml
   items:
@@ -13,6 +14,18 @@
       href: flw-deploy-overview.md
     - name: Start with a pilot deployment
       href: flw-pilot.md
+    - name: Set up and manage frontline devices
+      items:
+      - name: Frontline device management overview
+        href: flw-devices.md
+      - name: Manage shared devices
+        href: flw-shared-devices.md
+      - name: Limit access to Teams when workers are off shift
+        href: flw-working-time.md
+      - name: Sign in to Teams
+        href: /microsoftteams/sign-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+      - name: Sign out of Teams
+        href: /microsoftteams/sign-out-of-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
     - name: Set up Microsoft 365 and Teams
       items: 
       - name: Set up Microsoft 365 and related services
@@ -33,18 +46,6 @@
         href: set-up-targeted-communications.md 
       - name: Deploy Shifts at scale
         href: deploy-shifts-at-scale.md
-    - name: Manage devices
-      items:
-      - name: Frontline device management overview
-        href: flw-devices.md
-      - name: Manage shared devices
-        href: flw-shared-devices.md
-      - name: Limit access to Teams when workers are off shift
-        href: flw-working-time.md
-      - name: Sign in to Teams
-        href: /microsoftteams/sign-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
-      - name: Sign out of Teams
-        href: /microsoftteams/sign-out-of-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
     - name: Configure Teams settings for frontline workers
       items: 
       - name: Tailor Teams apps for your frontline workers
@@ -81,38 +82,44 @@
       href: shifts-frontline-manager-worker-roles.md
     - name: Manage Shifts permissions for frontline managers
       href: manage-shifts-permissions-frontline-managers.md
+    - name: Set up open shifts across locations
+      href: set-up-open-shifts-across-locations.md 
     - name: Shifts data FAQ
       href: /microsoftteams/expand-teams-across-your-org/shifts/shifts-data-faq?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
-    - name: Shifts connectors
+    - name: Workforce management integrations
       items: 
-      - name: Overview
-        href: shifts-connectors.md
-      - name: Connect Shifts to Blue Yonder WFM
-        items:
-        - name: Use the Shifts connector wizard to set up a connection to Blue Yonder WFM
-          href: shifts-connector-wizard.md
-        - name: Use PowerShell to set up a connection to Blue Yonder WFM
-          href: shifts-connector-blue-yonder-powershell-setup.md
-        - name: Use the Microsoft 365 admin center to manage your connection to Blue Yonder WFM
-          href: shifts-connector-blue-yonder-admin-center-manage.md
-        - name: Use PowerShell to manage your connection to Blue Yonder WFM
-          href: shifts-connector-powershell-manage.md
-        - name: Known issues
-          href: shifts-connector-blue-yonder-known-issues.md
-      - name: Connect Shifts to UKG Pro WFM
-        items:
-        - name: Prerequisites
-          href: shifts-connector-ukg-prerequisites.md
-        - name: Use the Shifts connector wizard to set up a connection to UKG Pro WFM
-          href: shifts-connector-wizard-ukg.md
-        - name: Use PowerShell to set up a connection to UKG Pro WFM
-          href: shifts-connector-ukg-powershell-setup.md
-        - name: Use the Microsoft 365 admin center to manage your connection to UKG Pro WFM
-          href: shifts-connector-ukg-admin-center-manage.md
-        - name: Use PowerShell to manage your connection to UKG Pro WFM
-          href: shifts-connector-ukg-powershell-manage.md
-        - name: Known issues
-          href: shifts-connector-ukg-known-issues.md
+      - name: Shifts connectors
+        items: 
+        - name: Overview
+          href: shifts-connectors.md
+        - name: Set up the Shifts connector for UKG Pro WFM
+          items:
+          - name: Prerequisites
+            href: shifts-connector-ukg-prerequisites.md
+          - name: Use the Shifts connector wizard to set up a connection to UKG Pro WFM
+            href: shifts-connector-wizard-ukg.md
+          - name: Use PowerShell to set up a connection to UKG Pro WFM
+            href: shifts-connector-ukg-powershell-setup.md
+          - name: Use the Microsoft 365 admin center to manage your connection to UKG Pro WFM
+            href: shifts-connector-ukg-admin-center-manage.md
+          - name: Use PowerShell to manage your connection to UKG Pro WFM
+            href: shifts-connector-ukg-powershell-manage.md
+          - name: Known issues
+            href: shifts-connector-ukg-known-issues.md 
+        - name: Set up the Shifts connector for Blue Yonder WFM
+          items:
+          - name: Use the Shifts connector wizard to set up a connection to Blue Yonder WFM
+            href: shifts-connector-wizard.md
+          - name: Use PowerShell to set up a connection to Blue Yonder WFM
+            href: shifts-connector-blue-yonder-powershell-setup.md
+          - name: Use the Microsoft 365 admin center to manage your connection to Blue Yonder WFM
+            href: shifts-connector-blue-yonder-admin-center-manage.md
+          - name: Use PowerShell to manage your connection to Blue Yonder WFM
+            href: shifts-connector-powershell-manage.md
+          - name: Known issues
+            href: shifts-connector-blue-yonder-known-issues.md
+      - name: Create a custom WFM integration 
+        href: shifts-custom-wfm-integration.md
   - name: Digitized processes
     items: 
     - name: Simplify business processes
@@ -153,8 +160,6 @@
         href: teams-in-hc.md
       - name: Healthcare team templates
         href: /microsoftteams/expand-teams-across-your-org/healthcare/healthcare-templates-admin-console?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
-      - name: Teams policy packages for healthcare
-        href: /microsoftteams/policy-packages-healthcare?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
       - name: Messaging policies
         href: messaging-policies-hc.md    
     - name: Retail
@@ -193,6 +198,7 @@
       href: /microsoftteams/manage-virtual-appointments-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
     - name: Manage the Walkie Talkie app
       href: /microsoftteams/walkie-talkie?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
-    - name: Teams for RealWear
-      href: /microsoftteams/flw-realwear?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+    - name: Troubleshoot Walkie Talkie issues
+      href: /microsoftteams/walkie-talkie-troubleshoot?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+
 

@@ -3,7 +3,7 @@ title: "Azure integration with Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/19/2023
+ms.date: 09/24/2024
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-enterprise

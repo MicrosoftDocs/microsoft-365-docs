@@ -3,7 +3,7 @@ title: "Microsoft 365 admin center Microsoft 365 Copilot readiness"
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 06/06/2024
+ms.date: 12/13/2024
 audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-copilot
@@ -39,84 +39,23 @@ In the Microsoft 365 Copilot readiness report, which is in continuous enhancemen
 
 ## Interpret the Readiness section in the Microsoft 365 Copilot report
 
-You can use this report to see how ready your organization is to adopt Microsoft 365 Copilot. The Readiness section is set up to show your data over the past 28 days. Currently this portion does not include any other time period options, but we'll be rolling out updates soon to enable 7-day, 30-day, 90-day, and 180-day periods.
+You can use this report to see how ready your organization is to adopt Microsoft 365 Copilot. The Readiness section is set up to show your data over the past 28 days.
 
 You can see the following summary charts in this report:
 
 :::image type="content" alt-text="Screenshot showing how you can ensure users are eligible for Microsoft 365 Copilot." source="../../media/copilot-usage-ensure-readiness.png":::
 
-**Total Prerequisite Licenses** The number is the sum of all users who have at least one license assigned to them or who could be assigned a license. The following license types are eligible for Copilot:
+**Total Prerequisite Licenses**: The number is the sum of all users who have at least one license assigned to them or who could be assigned a license. To learn more about the license types eligible for Copilot, see [Licensing requirements for Microsoft 365 Copilot](/copilot/microsoft-365/microsoft-365-copilot-licensing).
 
-**For Business and Enterprise:**
-
-- **Microsoft 365 plans:**
-  - Microsoft 365 E5
-  - Microsoft 365 E3
-  - Microsoft 365 F1
-  - Microsoft 365 F3
-  - Microsoft 365 Business Basic
-  - Microsoft 365 Business Premium
-  - Microsoft 365 Business Standard
-  - Microsoft 365 Apps for business
-  - Microsoft 365 Apps for enterprise
-
-- **Office 365 plans:**
-  - Office 365 E5
-  - Office 365 E3
-  - Office 365 E1
-  - Office 365 F3
-
-- **Microsoft Teams plans:**
-  - Microsoft Teams Essentials
-  - Microsoft Teams Enterprise
-  - Microsoft Teams EEA (European Economic Area)
-
-- **Exchange plans:**
-  - Exchange Kiosk
-  - Exchange Plan 1
-  - Exchange Plan 2
-
-- **SharePoint plans:**
-  - SharePoint Plan 1
-  - SharePoint Plan 2
-
-- **OneDrive for Business plans:**
-  - OneDrive for Business Plan 1
-  - OneDrive for Business Plan 2
-
-- **Planner and Project plans:**
-  - Microsoft Planner Plan 1 (formerly Project Plan 1)
-  - Microsoft Project Plan 3
-  - Microsoft Project Plan 5
-  - Project Online Essentials
-
-- **Visio plans:**
-  - Visio Plan 1
-  - Visio Plan 2
-
-- **Other plans:**
-  - Microsoft ClipChamp
-
-**For Education Faculty and Higher Education Students Aged 18+:**
-
-- Microsoft 365 A1*
-- Microsoft 365 A3*
-- Microsoft 365 A5*
-- Office 365 A1*
-- Office 365 A3*
-- Office 365 A5*
-
-*Available via Enrollment for Education Solutions (EES) or Cloud Solution Provider (CSP) only.
-
-**Users on an eligible update channel** This number is the sum of all users who are enrolled in Current Channel or Monthly Enterprise Channel for app updates in your organization and could be assigned with a Copilot license.
+**Users on an eligible update channel**: This number is the sum of all users who are enrolled in Current Channel or Monthly Enterprise Channel for app updates in your organization and could be assigned with a Copilot license.
 
 :::image type="content" alt-text="Screenshot showing an organization's number of available licenses to assign." source="../../media/copilot-usage-licenses-assigned.png":::
 
-**Assigned Licenses** This number is the sum of all users who have already been assigned with a Copilot license in your organization.
+**Assigned Licenses**: This number is the sum of all users who have already been assigned with a Copilot license in your organization.
 
-**Available Licenses** This number is the sum of all users who do not have a Copilot license assigned, and should be prioritized first.
+**Available Licenses**: This number is the sum of all users who do not have a Copilot license assigned, and should be prioritized first.
 
-:::image type="content" alt-text="Screenshot showing recommendation cards for Microsoft 365 Copilotusage report." source="../../media/copilot-usage-recommend-cards.png" lightbox="../../media/copilot-usage-recommend-cards.png":::
+:::image type="content" alt-text="Screenshot showing recommendation cards for Microsoft 365 Copilot usage report." source="../../media/copilot-usage-recommend-cards.png" lightbox="../../media/copilot-usage-recommend-cards.png":::
 
 Recommended action cards highlight important actions to take to prepare your organization for Copilot, such as moving users to a monthly app update channel and assigning available Copilot licenses.
 
@@ -124,7 +63,7 @@ The last recommended action card promotes [Microsoft Copilot Dashboard](/viva/in
 
 :::image type="content" alt-text="Screenshot showing chart for Copilot active users in an organization." source="../../media/copilot-usage-enable-active-users.png" lightbox="../../media/copilot-usage-enable-active-users.png":::
 
-This graph shows the sum of users who could benefit the most from Copilot based on where Copilot provides the most value in day-to-day scenarios. By default, it's sorted by descending order across all rows by column ‘Suggested candidate for Copilot’.
+This graph shows the sum of users who could benefit the most from Copilot based on where Copilot provides the most value in day-to-day scenarios. By default, it's sorted by descending order across all rows by column 'Suggested candidate for Copilot'.
 
 :::image type="content" alt-text="Screenshot showing chart to determine where Copilot can impact users the most." source="../../media/copilot-readiness-details.png" lightbox="../../media/copilot-readiness-details.png":::
 
@@ -145,7 +84,18 @@ To ensure data quality, we perform daily data validation checks for the past thr
 | Uses Teams chat                   | Indicates whether the user has participated in at least one chat using Teams in the past 30 days.                              |
 | Uses Outlook Email                | Indicates whether the user has sent at least one email using Outlook in the past 30 days.                                    |
 | Uses Office docs                  | Indicates whether the user has collaborated on at least one document or file using OneDrive or sharepoint in the past 30 days. |
-| Suggested candidate for Copilot      | These users are the most likely in your organization to use Copilot features if assigned a license based on their Microsoft 365 app activity. Each week, the top 25% of eligible users in your organization are flagged in this column based on their use of the Microsoft 365 app where Copilot brings value (such as Microsoft Teams and Outlook). In general, users with higher Microsoft 365 app usage intensity will be flagged as suggested candidates. Users not tagged in this column can still benefit from Copilot; this column is simply intended to help organizations prioritize users for license assignment as part of initial Copilot rollout.  |
+| Suggested candidate for Copilot      | Indicates the top 25% of non-licensed users based on their Microsoft 365 app usage over the prior month. For more information, see [Additional details for Suggested candidate for Copilot](#additional-details-for-suggested-candidate-for-copilot).  |
+
+### Additional details for Suggested candidate for Copilot
+
+The "Suggested candidate for Copilot" column in the Microsoft 365 Copilot Readiness report helps organizations identify users who may benefit most from Microsoft 365 Copilot as part of initial rollouts and pilot programs. Each week, the feature flags the top 25% of non-licensed users within an organization based on their consistent usage of the Microsoft 365 applications where Copilot adds value, such as Microsoft Teams and Outlook. Admins can use this information to prepare a data-driven licensing plan for their Copilot rollout. See the following for key details:
+
+- The feature analyses the Microsoft 365 usage across the users that haven't been assigned Copilot licenses each week. It then flags the top 25% of them as suggested candidates. This selection is based on app usage intensity in applications where Microsoft 365 Copilot provides value, such as Microsoft Outlook, Teams, and Word.
+- The feature is only available to customers that have purchased Microsoft 365 Copilot licenses.
+- The feature doesn't rank users within the selected 25% group; there's no individual stack ranking among suggested candidates.
+- Each week, the feature reevaluates the user base again and suggests the top 25% based on usage metrics for the preceding 28-day period. Users that have been assigned a Microsoft 365 Copilot license are removed from consideration. Over time, it's possible for every eligible user in the organization to be flagged as a suggested candidate for Copilot.
+- To support interpretability, several of the inputs to the suggestion model are also shown in the Copilot readiness details table. Users that actively used Teams meetings, Teams chats, Outlook emails, or Office docs over the preceding 28 day period will have a "Yes" value in the columns corresponding with each of these applications.
+- The intended purpose of this capability is to support organizations with the rollout of Microsoft 365 Copilot by highlighting users who are most likely to quickly benefit from its capabilities based on their consistent usage of Microsoft 365 apps. It is not intended to be used to evaluate employee performance.
 
 ## Make the user-specific data anonymous
 
@@ -156,3 +106,9 @@ To make the data in the Microsoft 365 Copilot report anonymous, you must be a gl
 2. Select **Reports**, and then choose to **Display anonymous identifiers**. This setting gets applied both to the usage reports in Microsoft 365 admin center and Teams admin center.
 
 3. Select **Save changes**.
+
+## More resources
+
+- [Microsoft 365 Copilot service description](/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot) (article)
+- [Set up Microsoft 365 Copilot](/copilot/microsoft-365/microsoft-365-copilot-setup) (article)
+- [Microsoft 365 Copilot Adoption](https://adoption.microsoft.com/copilot/)

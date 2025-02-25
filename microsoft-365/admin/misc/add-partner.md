@@ -28,7 +28,7 @@ search.appverid:
 - MOE150
 - GEA150
 description: "Learn how to add a partner of record when you buy Microsoft 365, change the partner, or delete a partner from a subscription."
-ms.date: 11/16/2023
+ms.date: 01/07/2025
 ---
 
 # Add, change, or delete a subscription advisor partner

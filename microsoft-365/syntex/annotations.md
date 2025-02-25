@@ -6,7 +6,7 @@ manager: jtremper
 ms.reviewer: kkameth
 ms.date: 08/01/2024
 audience: admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
@@ -35,7 +35,7 @@ The feature is currently available for the following file types: .ai, .dwg, .epu
 More annotation tools and file types will be added in future releases.
 
 > [!NOTE]
-> This feature is available for users who have Syntex [per-user](set-up-content-understanding.md) or [pay-as-you-go](syntex-azure-billing.md) licensing.
+> This feature is available for users who have Microsoft Syntex [per-user](set-up-content-understanding.md) or [pay-as-you-go](syntex-azure-billing.md) licensing.
 
 ## To use annotations
 
@@ -58,7 +58,7 @@ More annotation tools and file types will be added in future releases.
 5. After you annotate a page, you can hide or display the notations by selecting the annotations icon. Other users can also add to, hide, or display any notations that have been added by selecting the annotations icon.
 
     > [!NOTE]
-    >  Annotations do not alter or modify the original document. They are added only as an overlay to the page.
+    >  Annotations don't alter or modify the original document. They're added only as an overlay to the page.
 
 6. If needed, you can also use the zoom and rotate page options when you view annotations.
 

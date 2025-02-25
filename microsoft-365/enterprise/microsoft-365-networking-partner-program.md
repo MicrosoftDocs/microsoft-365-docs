@@ -3,7 +3,7 @@ title: "Microsoft 365 Network Provider Program"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 06/26/2024
+ms.date: 12/13/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -35,4 +35,5 @@ To modernize enterprise networks for great connectivity to Microsoft 365, custom
 
 The Microsoft 365 Network Provider Program demonstrates Microsoft’s commitment to help our customers get the best Microsoft 365 experience. The Microsoft 365 team works with many network industry partners to help ensure that key principles for optimal connectivity are natively built into their network product and solutions.
 
-The Microsoft 365 Network Provider program is in preview for a limited number of network providers. If you are interested in participating in the preview to give early feedback on the program, please register your interest by [filling out the form](https://aka.ms/NPPproviderpreview). 
+> [!NOTE]
+> The Microsoft 365 Network Provider program is no longer open for new network providers.

@@ -15,7 +15,7 @@ metadata:
   manager: jtremper
 
   audience: Admin
-  ms.date: 01/12/2024 #Required; mm/dd/yyyy format.
+  ms.date: 10/30/2024 #Required; mm/dd/yyyy format.
   ms.collection:
     - m365-frontline
     - highpri
@@ -35,13 +35,43 @@ highlightedContent:
       itemType: get-started
       url: flw-choose-scenarios.md
     # Card
-    - title: How to find the best frontline team solution for your organization
-      itemType: whats-new
-      url: frontline-team-options.md
+    - title: Schedule management with Shifts
+      itemType: overview
+      url: shifts-for-teams-landing-page.md
 
 # productDirectory section (optional)
 productDirectory:
   items:
+    # Card
+    - title: Set up and manage frontline devices
+      imageSrc: /office/media/icons/devices-2-blue.svg
+      links:
+        - url: flw-devices.md
+          text: Device management overview for frontline workers
+        - url: flw-shared-devices.md
+          text: Manage shared devices for frontline workers
+        - url: flw-working-time.md
+          text: Limit access to Teams when frontline staff are off shift
+    # Card
+    - title: Deploy frontline teams
+      imageSrc: /office/media/icons/deploy-blue.svg
+      links:
+        - url: frontline-team-options.md
+          text: Determine the best frontline team solution for your organization
+        - url: deploy-dynamic-teams-at-scale.md
+          text: Deploy frontline dynamic teams at scale
+        - url: deploy-teams-at-scale.md
+          text: Deploy frontline static teams at scale
+      # Card
+    - title: Set up experiences for your frontline
+      imageSrc: /office/media/icons/administrator.svg
+      links:
+        - url: deploy-frontline-operational-hierarchy.md
+          text: Deploy your frontline operational hierarchy
+        - url: set-up-targeted-communications.md
+          text: Set up targeted communications
+        - url: deploy-shifts-at-scale.md
+          text: Deploy Shifts at scale 
     # Card
     - title: Solutions to transform your business
       imageSrc: /office/media/icons/lightbulb-idea-capture-blue.svg
@@ -76,14 +106,14 @@ productDirectory:
       links:
         - url: /microsoftteams/approval-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
           text: Approvals
-        - url: /microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
-          text: Shifts
         - url: /microsoftteams/manage-planner-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
           text: Planner
+        - url: /microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+          text: Shifts
         - url: /microsoftteams/manage-updates-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
           text: Updates
-        - url: /microsoftteams/manage-virtual-appointments-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
-          text: Virtual Appointments
+        - url: /microsoftteams/walkie-talkie?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+          text: Walkie Talkie
         - url: /microsoftteams/apps-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
           text: More >
     # Card

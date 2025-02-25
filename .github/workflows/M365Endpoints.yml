@@ -2,11 +2,19 @@ name: (Scheduled) M365 Endpoints includes automation
 
 permissions:
   contents: write
+  pull-requests: write
   actions: read
 
+# Reduced the number of run times per day to three and changed to run only Mon-Fri since those are the days we have publishing. No point running on weekends.
+# Tried to reflect PDT/PST. There will be a couple weeks during the changeover months where time will be off an hour. 
 on:
- # schedule:
-  # - cron: "0 */6 * * *"
+  schedule: 
+    ### PST ###
+  - cron: "45 17,22 * 11,12,1,2 1-5"   # 09:45 & 14:45 PST = 17:45 & 22:45 UTC, same day (Mon-Fri)
+  - cron: "45 7 * 11,12,1,2 2-6"       # 23:45 PST = 07:45 UTC, next day (Tue-Sat)
+    ### PDT ###
+  - cron: "45 16,21 * 3-10 1-5"        # 09:45 & 14:45 PDT = 16:45 & 21:45 UTC, same day (Mon-Fri)
+  - cron: "45 6 * 3-10 2-6"            # 23:45 PDT = 06:45 UTC, next day (Tue-Sat)
 
   workflow_dispatch:
 
@@ -57,10 +65,11 @@ jobs:
         - name: Process endpoint data
           shell: pwsh
           env: 
-            AccessToken: ${{ github.token }}
+            AccessToken: ${{ secrets.MARVEL_REPO_ACCESS_TOKEN }}
             TargetOrganization: "MicrosoftDocs"
             TargetRepository: "microsoft-365-docs-pr"
             TargetPath: "microsoft-365/includes"
+            EndpointsContentOwner: "kelleyvice-msft"
           run: |
 
             # GetServiceInstanceEndpoints
@@ -144,7 +153,6 @@ jobs:
                 $script:allServiceAreas = @("Exchange", "SharePoint", "Skype", "Common")
 
             # GitHub Setup
-                ### AZURE  (for producton) ###
 
                 # Create github HTTP authentication header
                 $script:OfficedocsprToken = $env:AccessToken
@@ -152,13 +160,15 @@ jobs:
                 $script:GitHubHeaders.Add("Authorization","token $($OfficedocsprToken)")
                 $script:GitHubHeaders.Add("User-Agent", "OfficeDocs")
                 
-                # GitHub user/repo/branch to use (Azure)
-                $script:GHUser = $env:TargetOrganization # The GitHub user that owns the repository
+                # GitHub user and repo values to use
+                $script:Organization = $env:TargetOrganization # The GitHub user that owns the repository
                 $script:Repository = $env:TargetRepository # The remote repository to upload to
-                $script:Branch = Get-RepoDefaultBranch -Headers $script:GitHubHeaders -Org $script:GHUser -Repo $script:Repository # The remote branch
+                $script:TargetBranch = "M365-Endpoints"
+                $script:DefaultBranch = Get-RepoDefaultBranch -Headers $script:GitHubHeaders -Org $script:Organization -Repo $script:Repository # The remote branch
                 $script:RepoDir = $env:TargetPath # The target directory in the remote repository
+                $script:EndpointsContentOwner = $env:EndpointsContentOwner
 
-
+                $script:PrDescription = "@MicrosoftDocs/marveldocs-pubops`n`nThis is an automated pull request to update M365 Endpoints include files in **$RepoDir**. Before merging this PR, confirm the following:`n`n- There are no more than **$($siHash.count)** files in the PR`n- The only files in the pull request end with **$($OutFileSuffix.Trim())**`n- There are no obvious formatting issues with the content`n- The pull request is from **$TargetBranch** to **$DefaultBranch**`n`nIf issues are found with the PR, remove the **Sign off** label and add the **Back to submitter** label, assign the PR to **$EndpointsContentOwner**, and @-mention **$EndpointsContentOwner** with instructions on how to resolve the issue.`n`nAcrolinx issues can be ignored per exception: https://office.visualstudio.com/MAX/_workitems/edit/9352479`n`nIf no issues are found, merge the PR. If you have questions, email marveldocs-admins."
 
             } # end Set-ScriptOptions function
 
@@ -190,6 +200,7 @@ jobs:
                     Write-Host "Getting default branch for $Repo. URL: https://api.github.com/repos/$Org/$Repo"
                     $DefaultBranch = (Invoke-RestMethod -Headers $Headers -Uri https://api.github.com/repos/$Org/$Repo -ErrorAction Stop -ErrorVariable GitHubDefaultBranchError).default_branch
 
+                #    $DefaultBranch = "dstrome-test"
                     Write-Host "Default for $Repo is `"$DefaultBranch`""
 
                     $script:SetDefaultBranchSuccess = $True
@@ -268,9 +279,30 @@ jobs:
 
                 Write-Host "Get file list from GitHub"
 
-                # We need the SHA of the existing files on GitHub in order to update (i.e. replace) them.
-                # To do that we get the repository directory listing.
-                $repoList = Invoke-RestMethod -Headers $GitHubHeaders -Uri https://api.github.com/repos/$($GHUser)/$($Repository)/contents/$($RepoDir)?ref=$($Branch)
+                # Try to get $TargetBranch. If it exists, get the file list from $TargetBranch. If not, get it from $DefaultBranch.
+                Try {
+
+                    Invoke-RestMethod -uri "https://api.github.com/repos/$Organization/$Repository/git/ref/heads/$TargetBranch" -headers $GitHubHeaders -Method Get | Out-Null
+
+                    Write-Host "Branch $TargetBranch exists. Getting file list from $TargetBranch."
+
+                    # We need the SHA of the existing files on GitHub in order to update (i.e. replace) them.
+                    # To do that we get the repository directory listing.
+                    $repoList = Invoke-RestMethod -Headers $GitHubHeaders -Uri https://api.github.com/repos/$Organization/$Repository/contents/$($RepoDir)?ref=$($TargetBranch)
+
+
+                } Catch {
+
+                    Write-Host "Branch $TargetBranch does not exist. Getting file list from $DefaultBranch."
+                    
+                    # We need the SHA of the existing files on GitHub in order to update (i.e. replace) them.
+                    # To do that we get the repository directory listing.
+                    $repoList = Invoke-RestMethod -Headers $GitHubHeaders -Uri https://api.github.com/repos/$Organization/$Repository/contents/$($RepoDir)?ref=$($DefaultBranch)
+
+
+                }
+
+
 
                 # Create a hash table with the name and SHA of each file in the remote repository
                 # This will be used when uploading the output files
@@ -400,7 +432,7 @@ jobs:
 
                 Write-Host "Create output file for $si"
 
-                # Generate the file name, converted to lowercase and replacing spaces with dashes for Azure compatibility
+                # Generate the file name, converted to lowercase and replacing spaces with dashes for compatibility
                 $script:siFile = (($siHash.$si + $outFileSuffix) -replace (" ", "-")).ToLower()
                 Out-File -FilePath ($path + $siFile) -Force # overwrite previous output file if it exists
                 $fileNotice | Out-File -Append -FilePath ($path + $siFile)
@@ -497,7 +529,7 @@ jobs:
                     Uploads a file to a GitHub repository using the GitHub API
                     .DESCRIPTION
                     The function uses the GitHub variables declared earlier in the script
-                    (GHUser, Repository, RepoDir, Branch, GitHubHeaders) to upload a file
+                    (Organization, Repository, RepoDir, Branch, GitHubHeaders) to upload a file
                     to a repository.
                     .PARAMETER path
                     A path where the directory where theupload file can be found
@@ -515,18 +547,127 @@ jobs:
                 $Base64Content = [System.Convert]::ToBase64String([IO.File]::ReadAllBytes($path + $file))
 
                 # Build the body of the message with the file info.
-                # Required: message, content, sha, path (NOTE: path is after "contents/" in URI)
-                # Optional: branch (defaults to master)
                 $Body = @{
                     message = "Uploaded file: " + ($file) + " - " + (Get-Date -Format yyyy-MM-dd` HH:mm:ss.ffff)
                     content = $Base64Content
                     sha = $sha
-                    branch = $Branch
+                    branch = $TargetBranch
                 } | ConvertTo-Json
 
+                # Check if $TargetBranch exists and, if not, create it from $DefaultBranch
+                Try {
+
+                    Invoke-RestMethod -uri "https://api.github.com/repos/$Organization/$Repository/git/ref/heads/$TargetBranch" -headers $GitHubHeaders -Method Get | Out-Null
+
+                } Catch {
+
+                    Write-Host "Branch $TargetBranch does not exist. Creating branch $TargetBranch from $DefaultBranch."
+                    
+                    $DefaultBranchData = Invoke-RestMethod -uri "https://api.github.com/repos/$Organization/$Repository/git/ref/heads/$DefaultBranch" -Headers $GitHubHeaders -Method Get
+                    
+                    $BranchBody = @{
+                    ref = "refs/heads/$TargetBranch"
+                    sha = $DefaultBranchData.object.sha
+                    } | ConvertTo-Json
+
+                    Invoke-RestMethod -uri "https://api.github.com/repos/$Organization/$Repository/git/refs" -headers $GitHubHeaders -Method POST -Body $BranchBody
+
+                }
+
+                Write-Host $Body
+                Write-Host "https://api.github.com/repos/$Organization/$Repository/contents/$($RepoDir)/$($File)?ref=$TargetBranch"
+                
                 # Upload the file
-                Invoke-RestMethod -Headers $GitHubHeaders -Uri https://api.github.com/repos/$($GHUser)/$($Repository)/contents/$($RepoDir)/$($file)?ref=$($Branch) -Method PUT -Body $Body
+                Invoke-RestMethod -Headers $GitHubHeaders -Uri https://api.github.com/repos/$Organization/$Repository/contents/$($RepoDir)/$($File)?ref=$TargetBranch -Method PUT -Body $Body
             } # end Send-ToGitHub function
+
+            Function New-PullRequest {
+            
+                $BranchResponse = $Null
+
+                Write-Host "Checking if $TargetBranch exists"
+
+                Try {
+
+                    $BranchResponse = Invoke-RestMethod -uri "https://api.github.com/repos/$Organization/$Repository/git/ref/heads/$TargetBranch" -headers $GitHubHeaders -Method Get -ErrorAction Stop
+
+                } Catch {
+                
+                    Write-Host "Branch doesn't exist."
+
+                }
+                
+                If ($BranchResponse) {
+                
+                    Write-Host "Checking if $TargetBranch is ahead of $DefaultBranch"
+
+                    Try {
+
+                        $CompareResponse = Invoke-RestMethod -Uri "https://api.github.com/repos/$Organization/$Repository/compare/$DefaultBranch...$TargetBranch" -Method GET -Headers $GitHubHeaders 
+
+                    } Catch {
+                    
+                        Throw "Failed to check if $TargetBranch is ahead of $DefaultBranch. Error: $($Error[0])"
+
+                    }
+
+                    If ($CompareResponse.ahead_by -gt 0) {
+
+                        Write-Host "$TargetBranch has changes ahead of $DefaultBranch"
+
+                        Write-Host "Checking if a pull request exists between $TargetBranch and $DefaultBranch"
+
+                        Try {
+
+                            $PrsResponse = Invoke-RestMethod -Uri "https://api.github.com/repos/$Organization/$Repository/pulls?head=$($Organization):$TargetBranch&base=$DefaultBranch&state=open" -Method GET -Headers $GitHubHeaders 
+
+                        } Catch {
+                        
+                            Throw "Failed to check if pull request exists between $TargetBranch and $DefaultBranch. Error: $($Error[0])"
+                        
+                        }
+
+                        If (($PrsResponse | Measure-Object).Count -le 0) {
+ 
+                            Write-Host "No existing pull request. Creating a new PR from $TargetBranch to $DefaultBranch"
+
+                            $PrBody = @{
+                                title = "Merge $TargetBranch into $DefaultBranch"
+                                head  = $TargetBranch
+                                base  = "$DefaultBranch"
+                                body  = "$PrDescription"
+                            } | ConvertTo-Json
+
+                            Try {
+
+                                $PrResponse = Invoke-RestMethod -Uri "https://api.github.com/repos/$Organization/$Repository/pulls" -Method POST -Headers $GitHubHeaders -Body $PrBody
+
+                                Write-Host "Created pull request $($PrResponse.html_url)"
+
+                                $LabelBody = @{
+                                    labels = @("Sign off")
+                                } | ConvertTo-Json
+
+                                Invoke-RestMethod -Uri "https://api.github.com/repos/$Organization/$Repository/issues/$($PrResponse.number)/labels" -Method POST -Headers $GitHubHeaders -Body $LabelBody
+
+                            } Catch {
+                            
+                                Throw "Failed to create pull request. Error: $($Error[0])"
+                            
+                            }
+
+
+                        } Else {
+                        
+                            Write-Host "Pull request exists. "
+
+                        }
+
+                    }
+                
+                }
+
+            }
 
             ### END FUNCTION BLOCK ###
             ### BEGIN EXECUTION BLOCK ###
@@ -618,6 +759,9 @@ jobs:
 
 
                 } # end serviceInstances loop
+
+                # Create a new pull request. New-PullRequest will only create a new PR if one is needed.
+                New-PullRequest
 
             } # set default branch check
 

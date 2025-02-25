@@ -5,8 +5,8 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 09/11/2024
-ms.topic: conceptual
+ms.date: 09/26/2024
+ms.topic: article
 ms.service: microsoft-365-archive
 ms.custom: archive
 search.appverid:
@@ -27,6 +27,9 @@ Microsoft 365 Archive charges you for storage and reactivation.
 Monthly archive usage is calculated as the sum of the usage of all currently archived sites. Each site’s usage is equal to the site storage usage of that site, which can be seen on the site itself or from the Active sites page in the SharePoint admin center. The size of an archived site, and therefore the storage for which it’s billed, changes only if the content in the site changes. For example, content naturally expiring in the recycle bin or a retention policy deleting content within the site directly from archive to the recycle bin.
 
 To see the pricing for Microsoft 365 Archive, see [Pay-as-you-go services and pricing for Microsoft Syntex](/microsoft-365/syntex/syntex-pay-as-you-go-services).
+
+> [!NOTE]
+> Unlicensed archived OneDrive sites cannot use additional SharePoint storage to bypass archive costs. For more information, see [Manage unlicensed OneDrive user accounts](/SharePoint/unlicensed-onedrive-accounts#frequently-asked-questions).
 
 ## Pricing calculator
 
@@ -77,15 +80,15 @@ The following table helps visualize the savings you realize by archiving content
 
 ## Billing scenarios
 
-Your charges for Microsoft 365 Archive depend on your tenant’s Standard storage quota. The following scenarios and diagram can help you compare charges based on excess storage.
+Your charges for Microsoft 365 Archive depend on your tenant’s standard storage quota. The following scenarios and diagram can help you compare charges based on excess storage.
 
 |Scenario  |Description  |Additional costs  |
 |:---------:|---------|---------|
-|**A**     |Tenant hasn't archived any data and exceeds the Standard storage quota by 200 GB.         |Purchase 200 GB of additional Standard storage packs.         |
-|**B**     |Tenant has archived the 200 GB of data that exceeded their Standard storage quota.         |Pay at $0.05/GB/month for 200 GB of Archive storage.         |
-|**C**     |Tenant has archived more storage than exceeded their Standard storage quota.         |Pay only for the 200 GB of Archived data that exceeds the Standard storage quota.         |
-|**D**     |Tenant has archived some, but not all, of the data that exceeds their Standard storage quota.         |Purchase additional Standard storage packs and pay $0.05/GB/month for approximately 100 GB of Archived data.         |
-|**E**     |Tenant’s total data (Standard + Archive) is less than their Standard storage quota.         |No additional costs.         |
+|**A**     |Tenant hasn't archived any data and exceeds the standard storage quota by 200 GB.         |Purchase 200 GB of additional standard storage packs.         |
+|**B**     |Tenant has archived the 200 GB of data that exceeded their standard storage quota.         |Pay at $0.05/GB/month for 200 GB of archive storage.         |
+|**C**     |Tenant has archived more storage than exceeded their standard storage quota.         |Pay only for the 200 GB of archived data that exceeds the standard storage quota.         |
+|**D**     |Tenant has archived some, but not all, of the data that exceeds their standard storage quota.         |Purchase additional standard storage packs and pay $0.05/GB/month for approximately 100 GB of archived data.         |
+|**E**     |Tenant’s total data (standard + archive) is less than their standard storage quota.         |No additional costs.         |
 
-![Diagram showing comparisons for five archive scenarios.](../media/m365-archive/archive-billing-scenarios-diagram.png)
+![Diagram showing comparisons for five archive billing scenarios.](../media/m365-archive/archive-billing-scenarios-diagram2.png)
 

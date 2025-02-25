@@ -23,7 +23,7 @@ ms.custom:
 - GAUpdates
 search.appverid: MET150 
 description: "Learn how to activate and manage third-party apps in the Microsoft 365 admin center."
-ms.date: 10/13/2023
+ms.date: 01/07/2025
 ---
 
 # Manage third-party app subscriptions in the Microsoft 365 admin center

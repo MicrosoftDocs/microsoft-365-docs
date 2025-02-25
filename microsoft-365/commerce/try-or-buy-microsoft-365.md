@@ -27,6 +27,7 @@ ms.custom:
 - admindeeplinkMAC
 - adminvideo
 - GAUpdates
+- campaignIDs-batch1
 search.appverid: GEA150 
 description: "Learn how to sign up for a free 30-day trial or buy a subscription for Microsoft 365 for business products and services."
 ms.date: 09/05/2024
@@ -54,6 +55,9 @@ For all other procedures in this article, the following items are required:
 - You must have a Microsoft account, and you must be at least a Billing Administrator for your organization. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).
 - [Find out what type of billing account you have](manage-billing-accounts.md#view-my-billing-accounts).
 - If you have a Microsoft Customer Agreement (MCA) billing account type, you must also be a Billing account owner or contributor to do the tasks described in this article. For more information, see [Understand billing accounts](manage-billing-accounts.md) and [Manage your Microsoft business billing profiles](billing-and-payments/manage-billing-profiles.md).
+
+> [!NOTE]
+> If you have a Microsoft Customer Agreement (MCA) billing account type with Microsoft, you automatically receive a product called Microsoft Entra ID Free. This product improves your tenant management and security by tracking new tenants created with the same billing account. There's no charge for this product, and there's no other action you need to take. To learn more about this product, see [Microsoft Entra ID Free](/azure/cost-management-billing/manage/microsoft-entra-id-free). [Find out what type of billing account you have](manage-billing-accounts.md#view-my-billing-accounts).
 
 ::: moniker range="o365-21vianet"
 
@@ -187,7 +191,7 @@ If you want to move all of your users to a different subscription, see [Upgrade 
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198013).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SBE2?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=ac7fc5ca-3e7c-41aa-84e7-4cd2300e82d2]
 
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 

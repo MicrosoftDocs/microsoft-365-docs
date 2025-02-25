@@ -38,7 +38,7 @@ After you sign up for a Microsoft 365 for business subscription, you'll want to 
 
 In this video, we'll show you how to move your OneDrive files from Microsoft 365 Family folder to your Microsoft 365 for business OneDrive folder.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSH]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=2908d3b4-bf17-4bd9-bedf-342d90bd3f66]
 
 ## Steps
 

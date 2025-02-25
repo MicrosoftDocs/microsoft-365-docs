@@ -6,7 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: deniseb
 audience: Admin
-ms.topic: conceptual
+ms.topic: article
 ms.collection:
 - m365-security
 - tier2
@@ -31,15 +31,15 @@ When you [start a trial or purchase Microsoft 365 Business Premium](get-microsof
 > [!TIP]
 > Save this trial user guide to your browser favorites. When links in the trial user guide take you away from this location, it'll be easier to return to this guide to continue.
 
-1. [Set up your trial](../business-premium/m365-business-premium-setup.md)!
+1. [Set up your trial](m365-business-premium-setup.md)!
 
    After you start your trial and complete the setup process, it can take up to two hours for changes to take effect.
 
 2. [Turn on multifactor authentication](m365bp-turn-on-mfa.md) (MFA). You can use security defaults to get set up right away, or use Conditional Access policies to meet more stringent requirements.
 
-3. Use your [preset security policies](../security/office-365-security/preset-security-policies.md). These policies represent a baseline protection profile that's suitable for most users. Standard protection includes:
+3. Use your [preset security policies](/defender-office-365/preset-security-policies). These policies represent a baseline protection profile that's suitable for most users. Standard protection includes:
 
-   - [Safe Links](../security/office-365-security/safe-links-about.md), [Safe Attachments](../security/office-365-security/safe-attachments-about.md) and [Anti-Phishing](../security/office-365-security/anti-phishing-protection-about.md) policies that are scoped to the entire tenant or the subset of users you choose during the trial setup process. (Your trial subscription is for up to 25 users.)
+   - [Safe Links](/defender-office-365/safe-links-about), [Safe Attachments](/defender-office-365/safe-attachments-about) and [Anti-Phishing](/defender-office-365/anti-phishing-protection-about) policies that are scoped to the entire tenant or the subset of users you choose during the trial setup process. (Your trial subscription is for up to 25 users.)
 
    - Protection for productivity apps, such as [SharePoint](/sharepoint/introduction), [OneDrive](/onedrive/one-drive-quickstart-small-business), [Microsoft 365 Apps](/deployoffice/about-microsoft-365-apps), and [Microsoft Teams](/microsoftteams/teams-overview).
 
@@ -65,15 +65,15 @@ When you try or buy Microsoft 365 Business Premium, you can use your own domain,
 
 ## Onboard and protect devices
 
-Microsoft 365 Business Premium includes Defender for Business, a new security solution to protect devices. See [Onboard devices to Microsoft Defender for Business](../security/defender-business/mdb-onboard-devices.md).
+Microsoft 365 Business Premium includes Defender for Business, a new security solution to protect devices. See [Onboard devices to Microsoft Defender for Business](/defender-business/mdb-onboard-devices).
 
 1. Go to the Microsoft Defender portal (<https://security.microsoft.com>) and sign in.
 
-2. Go to **Assets** > **Devices**. If Defender for Business isn't already set up, you're prompted to run the [setup wizard](../security/defender-business/mdb-use-wizard.md).
+2. Go to **Assets** > **Devices**. If Defender for Business isn't already set up, you're prompted to run the [setup wizard](/defender-business/mdb-setup-configuration).
 
-3. [Onboard devices](../security/defender-business/mdb-onboard-devices.md).
+3. [Onboard devices](/defender-business/mdb-onboard-devices).
 
-4. [Review your security policies](../security/defender-business/mdb-configure-security-settings.md).
+4. [Review your security policies](/defender-business/mdb-configure-security-settings).
 
 ## Use Microsoft 365 Apps on devices
 
@@ -91,15 +91,15 @@ Microsoft 365 Business Premium includes Defender for Business, a new security so
 
 1. Access the Microsoft Defender portal at <https://security.microsoft.com>.
 
-2. Take some time to [familiarize yourself with the portal](../security/defender-business/mdb-get-started.md).
+2. Take some time to [familiarize yourself with the portal](/defender-business/mdb-get-started).
 
-3. Now, [assess your security posture](../security/defender/microsoft-secure-score.md), and see how you can improve your score.
+3. Now, [assess your security posture](/defender-xdr/microsoft-secure-score), and see how you can improve your score.
 
-4. Learn how to [respond to a security incident](../security/defender-business/mdb-respond-mitigate-threats.md).
+4. Learn how to [respond to a security incident](/defender-business/mdb-respond-mitigate-threats).
 
-5. Lastly, [review remediation actions](../security/defender-business/mdb-review-remediation-actions.md).
+5. Lastly, [review remediation actions](/defender-business/mdb-review-remediation-actions).
 
 ## See also
 
 - [Microsoft 365 Business Premium - cybersecurity for small business](m365bp-overview.md)
-- [What is Microsoft Defender for Business?](../security/defender-business/mdb-overview.md)
+- [What is Microsoft Defender for Business?](/defender-business/mdb-overview)

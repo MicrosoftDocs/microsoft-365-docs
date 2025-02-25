@@ -24,6 +24,7 @@ ms.custom:
 - admindeeplinkMAC
 - has-azure-ad-ps-ref
 - GAUpdates
+- campaignIDs-batch1
 search.appverid: MET150
 description: "Learn how to close your business account with Microsoft. All information related to your account is deleted including licenses, users, and user data."
 ms.date: 07/22/2024

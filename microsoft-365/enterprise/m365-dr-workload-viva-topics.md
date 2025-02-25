@@ -29,6 +29,9 @@ Capability summary: Viva Topics uses Microsoft Artificial Intelligence technolog
 
 ## Data Residency Commitments Available
 
+> [!NOTE]
+> *Viva Topics will be retired on February 22, 2025. Therefore, as of October 31, 2024, Viva Topics will no longer be a supported workload in ADR. Starting with the upcoming local region launches in Taiwan and New Zealand, Viva Topics customer data will not be migrated to new local regions, nor will new customers have Viva Topics stored in existing local regions. For more details, please visit [aka.ms/TopicsFebSupport](https://aka.ms/TopicsFebSupport).
+
 ### Advanced Data Residency add-on
 
 Required Conditions:

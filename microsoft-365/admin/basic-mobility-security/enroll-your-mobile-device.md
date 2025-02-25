@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 10/25/2023
+ms.date: 11/11/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-basic-mobility-security
@@ -29,8 +29,8 @@ description: "Before you can use Microsoft 365 services with your device, you mi
 # Enroll your mobile device using Basic Mobility and Security
 
 Using your phone, tablet, and other mobile devices for work is a great way to stay informed and work on business projects while you’re away from the office. Before you can use Microsoft 365 services with your device, you might need to first enroll it in Basic Mobility and Security for Microsoft 365 using Microsoft Intune Company Portal.
- 
-Organizations choose Basic Mobility and Security so that employees can use their mobile devices to securely access work email, calendars, and documents while the business secures important data and meets their compliance requirements. To learn more, see [Overview of Basic Mobility and Security for Microsoft 365](overview.md). For more info, see [What information can my organization see when I enroll my device?](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune).
+
+Organizations choose Basic Mobility and Security so that employees can use their mobile devices to securely access work email, calendars, and documents while the business secures important data and meets their compliance requirements. To learn more, see [Overview of Basic Mobility and Security for Microsoft 365](overview.md). For more info, see [What information can my organization see when I enroll my device?](/mem/intune/user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune).
 
 > [!IMPORTANT]
 > When you enroll your device in Basic Mobility and Security for Microsoft 365, you might be required to set up a password, together with allowing the option for your work organization to wipe the device. A device wipe can be performed from the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, for example, to remove all data from the device if the password is entered incorrectly too many times or if usage terms are broken.
@@ -72,11 +72,9 @@ Go to the Google Play store, and download and install Intune Company Portal.
 
 To connect and configure your Android phone or tablet with the Company portal to Microsoft 365, see [Enroll your device with Company Portal](/mem/intune/user-help/enroll-device-android-company-portal).
 
-### Windows 8.1 and Windows 10
+### Windows 10 and Windows 11
 
-Go to the Microsoft Store, and download and install Intune Company Portal
-
-To connect and configure your Windows phone or PC with the Company portal to Microsoft 365, see [Windows device enrollment in Intune Company Portal](/intune-user-help/windows-enrollment-company-portal).
+To connect and configure your Windows phone or PC with the Company portal to Microsoft 365, see [Enroll Windows 10/11 devices in Intune](/mem/intune/user-help/enroll-windows-10-device).
 
 ## Next steps
 

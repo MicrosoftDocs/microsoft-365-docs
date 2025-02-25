@@ -4,9 +4,9 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 05/09/2024
+ms.date: 02/06/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
 search.appverid: 
@@ -14,58 +14,38 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn about the autofill columns service in Microsoft Syntex.
+description: Learn about the autofill columns service in SharePoint.
 ---
 
 # Overview of autofill columns in Microsoft Syntex
 
 > [!NOTE]
-> Through June 2025, you can try out autofill columns and other selected Syntex services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out Microsoft Syntex and explore its services](promo-syntex.md).
+> Beginning in March 2025, the pricing for autofill columns will be lowered from $0.05 per page to $0.005 per page. This change reflects our ongoing commitment to making advanced AI accessible to everyone.
+
+> [!NOTE]
+> Through June 2025, you can try out a [limited amount](promo-syntex.md#monthly-included-capacity) of autofill columns and other selected Syntex services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out Microsoft Syntex and explore its services](promo-syntex.md).
 
 Autofill columns in Microsoft Syntex automatically extract, summarize, or generate content from files uploaded to a SharePoint document library. By using large language models (LLMs) through generative AI, autofill columns can save metadata automatically, streamlining the process of managing files and their associated information.
 
 For example, you can ask a question (a *prompt*) of a document in natural language, and the system saves the response directly to a designated library column. Or you can have more than one of these questions set to process any file uploaded to a library, with each response allocated to a specific column.
 
-Autofill columns can work alongside other Microsoft Syntex models. You can associate different extractive prompts (where you take information from existing data) or generative prompts (where you create new content) with more than one column, allowing you to extract metadata that other models might not detect or generate.
+Autofill columns can work alongside other Microsoft Syntex models. You can link various extractive prompts (which pull information from existing data) or generative prompts (which create new content) to multiple columns. This allows you to extract metadata that other models might miss or generate new insights.
 
 ## Requirements and limitations
 
-### Support languages
-
-Currently, autofill columns are available for English language files. Other languages will be added in future releases.
-
-### Supported file types
-
-Autofill columns are available for the following file types: .csv, .doc, .docx, .eml, .heic, .heif, .htm, .html, .jpeg, .jpg, .md, .msg, .pdf, .png, .ppt, .pptx, .rtf, .tif, .tiff, .txt, .xls, and .xlsx.
-
-### Supported column data types
-
-Currently, autofill columns are available for the following column data types:
-
-- Text
-- Multiple lines of text
-- Number
-- Yes/No
-- Date and time
-- Choice
-- Hyperlink
-- Currency
-
-Currently, autofill columns are not available for the following column data types:
-
-- Person or Group
-- Location
-- Image
-- Lookup
-- Managed metadata
+| Icon          | Description   |
+| ------------- | ------------- |
+| ![Files symbol.](/office/media/icons/files-blue.png)  | **Supported file types** <br>This service supports the following file types: .csv, .doc, .docx, .eml, .heic, .heif, .htm, .html, .jpeg, .jpg, .md, .msg, .pdf, .png, .ppt, .pptx, .rtf, .tif, .tiff, .txt, .xls, and .xlsx. |
+| ![Conversation symbol.](/office/media/icons/chat-room-conversation-blue.png)  | **Supported languages** <br>This service is available for English language files. Other languages will be added in future releases. |
+| ![Usage report symbol.](/office/media/icons/usage-report-blue.png)  | **Supported column types** <br>This service is available for the following column data types: Text, Multiple lines of text, Number, Yes/No, Date and time, Choice, Hyperlink, and Currency.<br> Currently, this service isn't available for the following column data types: Person or Group, Location, Image, Lookup, and Managed metadata.|
 
 ### Current release notes
+
+- Encrypted files aren't analyzed or included in the results.
 
 - Bulk processing options for existing library files will be added in a future release.
 
 - Currently, autofill columns don't support the following library types: FormServerTemplates, SitePages, Style Library, and SiteAssets.
-
-- Documents with sensitivity labels aren't analyzed or included in the results.
 
 - Document changes are captured only if the file is reprocessed, which must be done manually by the user.
 
@@ -92,9 +72,9 @@ Autofill columns allow a saved prompt to be used to process files created or upl
 
 #### What are the intended uses of autofill columns?
 
-Autofill columns provide metadata automation for users. A user can use it to classify, extract, summarize, or even analyze a file, and then save the response to the column where it can then be indexed and used for search or other downstream workflow processes. Autofill columns can also be a useful complement for other machine language models, where a users could supplement the extracted metadata from a configured model with a summary or other analysis response.
+Autofill columns provide metadata automation for users. A user can use it to classify, extract, summarize, or even analyze a file, and then save the response to the column where it can then be indexed and used for search or other downstream workflow processes. Autofill columns can also be a useful complement for other machine language models, where a user could supplement the extracted metadata from a configured model with a summary or other analysis response.
 
-#### How was autofill columns evaluated? What metrics were used to measure performance?
+#### How were autofill columns evaluated? What metrics were used to measure performance?
 
 - Performance factors such as coherence, fluency, and accuracy relied on the base model’s performance (in this case, GPT-4 Turbo).
 
@@ -106,7 +86,7 @@ Autofill columns provide metadata automation for users. A user can use it to cla
 
     - Designed prompts such as “What is the category of the document, choose from A, B, C. Reply none if it’s none of them.” Or "What is the candidate education background" for resumes.
 
-- Reviewed the results. The results aligned with expectations in most cases. For the results that did not meet the satisfactory threshold, function calling was used to improve the results. Some of the results were compared across different LLM versions.
+- Reviewed the results. The results aligned with expectations in most cases. For the results that didn't meet the satisfactory threshold, function calling was used to improve the results. Some of the results were compared across different LLM versions.
 
 - Evaluated risk and safety metrics.
 
@@ -118,7 +98,7 @@ Autofill columns provide metadata automation for users. A user can use it to cla
 
         - Evaluated test cases with harmful content, and questions prompting the model to answer something it shouldn’t. For example, “Summarize the content in the document.”
 
-    - Evaluation: Followed Microsoft curated risk and safety metrics instructions, which is provided in Microsoft Azure AI Studio, to measure the results using LLM (in this case GPT-4 Turbo) from four aspects: self-harm-related content, hateful and unfair content, violent content, and sexual content.
+    - Evaluation: Followed Microsoft curated risk and safety metrics instructions, which is provided in Microsoft Azure AI Foundry portal, to measure the results using LLM (in this case GPT-4 Turbo) from four aspects: self-harm-related content, hateful and unfair content, violent content, and sexual content.
 
         The evaluation rated the inputs and outputs 0-7, scaling from the least harmful to the most severe level.
 

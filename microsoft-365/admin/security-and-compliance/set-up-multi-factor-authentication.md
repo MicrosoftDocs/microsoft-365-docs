@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 08/10/2023
+ms.date: 10/02/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -49,7 +49,7 @@ Multifactor authentication (MFA) is an important first step in securing your org
 
 ## Watch: Turn on multifactor authentication
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MuO3?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=eb0acd2a-edf5-4c1d-8e72-e3254bc7dc12]
 
 ## Steps: Turn on multifactor authentication
 

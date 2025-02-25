@@ -1,3 +1,4 @@
+items:
     - name: Microsoft Syntex
       href: index.yml
  
@@ -11,34 +12,103 @@
               href: syntex-pay-as-you-go-services.md
             - name: Set up pay-as-you-go billing
               href: syntex-azure-billing.md
-            - name: Set up per-user licenses
-              href: set-up-content-understanding.md
-            - name: Set up Microsoft Syntex
+            - name: Set up pay-as-you-go services
               href: set-up-microsoft-syntex.md
+            - name: Assign per-user licenses
+              href: set-up-content-understanding.md
             - name: Privacy, security, & compliance
               href: syntex-privacy-security.md
-            - name: Set up a content center 
-              href: create-a-content-center.md
 
-    - name: Learn about models
-      items:
-            - name: Model types
-              href: model-types-overview.md 
-            - name: Compare custom models 
-              href: difference-between-document-understanding-and-form-processing-model.md  
-            - name: Requirements and limitations 
-              href: requirements-and-limitations.md  
-            - name: Create an enterprise model
-              href: create-syntex-model.md
-            - name: Create a local model 
-              href: create-local-model.md 
+    - name: Autofill columns
+      items: 
+        - name: Overview 
+          href: autofill-overview.md
+        - name: Admin setup 
+          href: autofill-setup.md
+        - name: Create autofill columns
+          href: autofill.md
+
+    - name: Content assembly
+      items: 
+        - name: Overview 
+          href: content-assembly.md
+        - name: Admin setup 
+          href: content-assembly-setup.md
+        - name: Create a modern template
+          href: content-assembly-modern-template.md
+        - name: Map template fields to library columns
+          href: content-assembly-map-fields.md
+        - name: Create conditional sections in templates
+          href: content-assembly-conditional-sections.md
+        - name: Edit a modern template
+          href: content-assembly-edit-template.md
+        - name: Create a document from a modern template 
+          href: content-assembly-create-document.md
+        - name: Generate documents using Power Automate 
+          href: automate-document-generation.md
+
+    - name: Document translation
+      items: 
+        - name: Overview 
+          href: translation-overview.md
+        - name: Admin setup 
+          href: translation-setup.md
+        - name: Translate documents 
+          href: translation.md
+        - name: Use a glossary 
+          href: translation-glossary.md
+
+
+    - name: eSignature 
+      items: 
+        - name: Overview 
+          href: esignature-overview.md
+        - name: Admin setup 
+          href: esignature-setup.md
+        - name: Create a signature request 
+          href: esignature-send-requests.md
+        - name: Review and sign a request 
+          href: esignature-review-sign-requests.md
+        - name: Track and manage using Approvals 
+          href: esignature-approvals.md
+        - name: Troubleshoot a request 
+          href: esignature-troubleshoot.md
+
+    - name: Image tagging
+      items: 
+        - name: Overview 
+          href: image-tagging-overview.md
+        - name: Admin setup
+          href: image-tagging-setup.md
+        - name: Find and manage images
+          href: image-tagging.md
+
+    - name: Optical character recognition 
+      items: 
+        - name: Overview 
+          href: ocr-overview.md
+        - name: Admin setup 
+          href: ocr.md
 
     - name: Prebuilt document processing
       items:
+            - name: Learn about models
+              items:
+                    - name: Model types
+                      href: model-types-overview.md 
+
             - name: Overview 
               href: prebuilt-overview.md
             - name: Admin setup
               href: prebuilt-setup.md
+            - name: Requirements and limitations 
+              href: prebuilt-requirements.md
+            - name: Set up a content center 
+              href: create-a-content-center.md
+            - name: Create an enterprise model
+              href: create-syntex-model.md
+            - name: Create a local model 
+              href: create-local-model.md 
             - name: Contracts
               href: prebuilt-model-contract.md
             - name: Invoices
@@ -47,6 +117,8 @@
               href: prebuilt-model-receipt.md
             - name: Sensitive information 
               href: prebuilt-model-sensitive-info.md
+            - name: Simple documents 
+              href: prebuilt-model-simple.md
             - name: Manage your model
               items:
                 - name: Apply a model
@@ -76,10 +148,25 @@
 
     - name: Structured & freeform document processing
       items:
+            - name: Learn about models
+              items:
+                    - name: Model types
+                      href: model-types-overview.md 
+                    - name: Compare custom models 
+                      href: difference-between-document-understanding-and-form-processing-model.md  
+
             - name: Overview 
               href: form-processing-overview.md
             - name: Admin setup
               href: structured-freeform-setup.md
+            - name: Requirements and limitations 
+              href: structured-freeform-requirements.md
+            - name: Set up a content center 
+              href: create-a-content-center.md
+            - name: Create an enterprise model
+              href: create-syntex-model.md
+            - name: Create a local model 
+              href: create-local-model.md 
             - name: Train your model
               href: create-a-form-processing-model.md
             - name: Manage your model
@@ -109,14 +196,37 @@
                 - name: Analyze model usage
                   href: model-usage-analytics.md
 
+    - name: Taxonomy tagging 
+      items: 
+        - name: Overview 
+          href: taxonomy-tagging-overview.md
+        - name: Admin setup 
+          href: taxonomy-tagging-setup.md
+        - name: Find and manage terms 
+          href: taxonomy-tagging.md
+
     - name: Unstructured document processing
       items:
+            - name: Learn about models
+              items:
+                    - name: Model types
+                      href: model-types-overview.md 
+                    - name: Compare custom models 
+                      href: difference-between-document-understanding-and-form-processing-model.md  
             - name: Overview
               href: document-understanding-overview.md
             - name: Admin setup
               href: unstructured-setup.md
+            - name: Requirements and limitations 
+              href: requirements-and-limitations.md
             - name: Import a sample model 
               href: learn-about-document-understanding-models-through-the-sample-model.md
+            - name: Set up a content center 
+              href: create-a-content-center.md
+            - name: Create an enterprise model
+              href: create-syntex-model.md
+            - name: Create a local model 
+              href: create-local-model.md 
             - name: Train your model
               items:
                 - name: Create a classifier
@@ -133,8 +243,6 @@
                   href: accessibility-mode.md
                 - name: Rename an extractor
                   href: rename-an-extractor.md
-            - name: Duplicate a model
-              href: duplicate-a-model.md
             - name: Manage your model
               items:
                 - name: Apply a model
@@ -151,6 +259,8 @@
                   href: rename-a-model.md
                 - name: Delete a model
                   href: delete-a-model.md
+                - name: Duplicate a model
+                  href: duplicate-a-model.md
                 - name: Manage library settings 
                   href: manage-library-settings.md
                 - name: Choose a library view 
@@ -160,121 +270,36 @@
                 - name: Analyze model usage
                   href: model-usage-analytics.md
 
-    - name: Content assembly
+    - name: Included features 
       items: 
-        - name: Overview 
-          href: content-assembly.md
-        - name: Admin setup 
-          href: content-assembly-setup.md
-        - name: Create a modern template
-          href: content-assembly-modern-template.md
-        - name: Map template fields to library columns
-          href: content-assembly-map-fields.md
-        - name: Create conditional sections in templates
-          href: content-assembly-conditional-sections.md
-        - name: Edit a modern template
-          href: content-assembly-edit-template.md
-        - name: Create a document from a modern template 
-          href: content-assembly-create-document.md
-        - name: Generate documents using Power Automate 
-          href: automate-document-generation.md
+        - name: Annotations 
+          href: annotations.md
+        - name: Content query
+          href: metadata-search.md
+        - name: Merge and extract PDFs
+          href: merge-extract-pdf.md
+        - name: Processing rules
+          items:
+            - name: Overview 
+              href: content-processing-overview.md
+            - name: Move or copy a file 
+              href: content-processing-create-rules.md
+            - name: Set a content type 
+              href: content-processing-content-type.md
+            - name: Translate a file 
+              href: content-processing-translate.md
+        - name: Taxonomy tools
+          items:
+            - name: Import using SKOS
+              href: import-term-set-skos.md
+            - name: SKOS formatting reference
+              href: skos-format-reference.md
+            - name: Push content type to hub
+              href: push-content-type-to-hub.md
+            - name: Term store reports
+              href: term-store-analytics.md
 
-    - name: Image tagging
-      items: 
-        - name: Overview 
-          href: image-tagging-overview.md
-        - name: Admin setup
-          href: image-tagging-setup.md
-        - name: Find and manage images
-          href: image-tagging.md
-
-    - name: Taxonomy tagging 
-      items: 
-        - name: Overview 
-          href: taxonomy-tagging-overview.md
-        - name: Admin setup 
-          href: taxonomy-tagging-setup.md
-        - name: Find and manage terms 
-          href: taxonomy-tagging.md
-
-    - name: Document translation
-      items: 
-        - name: Overview 
-          href: translation-overview.md
-        - name: Admin setup 
-          href: translation-setup.md
-        - name: Translate documents 
-          href: translation.md
-
-    - name: eSignature 
-      items: 
-        - name: Overview 
-          href: esignature-overview.md
-        - name: Admin setup 
-          href: esignature-setup.md
-        - name: Create a signature request 
-          href: esignature-send-requests.md
-        - name: Review and sign a request 
-          href: esignature-review-sign-requests.md
-        - name: Track and manage using Approvals 
-          href: esignature-approvals.md
-        - name: Troubleshoot a request 
-          href: esignature-troubleshoot.md
-
-    - name: Autofill columns
-      items: 
-        - name: Overview 
-          href: autofill-overview.md
-        - name: Admin setup 
-          href: autofill-setup.md
-        - name: Create autofill columns
-          href: autofill.md
-
-    - name: Optical character recognition 
-      items: 
-        - name: Overview 
-          href: ocr-overview.md
-        - name: Admin setup 
-          href: ocr.md
-
-    - name: Microsoft 365 Archive
-      href: /microsoft-365/archive
-
-    - name: Microsoft 365 Backup
-      href: /microsoft-365/backup
-
-    - name: Annotations
-      href: annotations.md
-
-    - name: Content query
-      href: metadata-search.md
-
-    - name: Merge and extract PDFs
-      href: merge-extract-pdf.md
-
-    - name: Processing rules
-      items: 
-        - name: Overview 
-          href: content-processing-overview.md
-        - name: Move or copy a file 
-          href: content-processing-create-rules.md
-        - name: Set a content type 
-          href: content-processing-content-type.md
-        - name: Translate a file 
-          href: content-processing-translate.md
-
-    - name: Premium taxonomy features
-      items:
-        - name: Import using SKOS
-          href: import-term-set-skos.md
-        - name: SKOS formatting reference
-          href: skos-format-reference.md
-        - name: Push content type to hub
-          href: push-content-type-to-hub.md
-        - name: Term store reports
-          href: term-store-analytics.md
-
-    - name: Adoption
+    - name: Adopt
       items:
         - name: Get started with adoption
           href: adoption-getstarted.md
@@ -336,11 +361,16 @@
             - name: Work with explanations
               href: powershell-syntex-explanations.md
 
-    - name: SharePoint Advanced Management
-      href: /sharepoint/advanced-management
-
-    - name: SharePoint Embedded
-      href: /sharepoint/dev/embedded/overview
+    - name: More content solutions
+      items: 
+        - name: Microsoft 365 Archive
+          href: /microsoft-365/archive
+        - name: Microsoft 365 Backup
+          href: /microsoft-365/backup
+        - name: SharePoint Advanced Management
+          href: /sharepoint/advanced-management
+        - name: SharePoint Embedded
+          href: /sharepoint/dev/embedded/overview
 
 
 

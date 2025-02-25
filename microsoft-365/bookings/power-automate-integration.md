@@ -3,7 +3,7 @@ title: "Use Power Automate connectors to build Bookings workflows"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 02/26/2024
+ms.date: 10/01/2024
 audience: Admin
 ms.topic: how-to
 ms.service: bookings

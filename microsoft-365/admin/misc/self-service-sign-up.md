@@ -17,14 +17,14 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-  - commerce_signup
-  - AdminSurgePortfolio
-  - okr_SMB
-  - has-azure-ad-ps-ref
-  - azure-ad-ref-level-one-done
+- commerce_signup
+- AdminSurgePortfolio
+- okr_SMB
+- has-azure-ad-ps-ref
+- azure-ad-ref-level-one-done
 search.appverid: MET150
 description: "Learn about the Microsoft 365 self-service sign-up and available self-service programs such as Microsoft Power Apps, Microsoft Power Automate, and Dynamics 365 for Finance."
-ms.date: 11/04/2023
+ms.date: 01/06/2025
 ---
 
 # Using self-service sign-up in your organization
@@ -38,7 +38,7 @@ The following example describes how self-sign up works for a school. The same pr
 1. Students and faculty members have school email addresses that indicate they're associated with your institution. For example, the email address jakob@uw.edu may indicate a student at the University of Washington.
 2. Students and faculty go to [our web site](https://go.microsoft.com/fwlink/p/?LinkId=536628), and use their email address to sign up for the services that your organization offers, such Microsoft 365 Apps for enterprise. They can also sign up for other free services that we offer.
 3. We validate their email address, and then they can start using Microsoft 365, Power BI, or other services right away.
-1. As the business admin, you can see who signs up for a subscription by selecting the subscription on the **Licensing** page in the Microsoft 365 admin center. This way you can see when there are new or unrecognized licenses for services in your tenant. To control whether users can sign up for self-service subscriptions, use the [Update-MgPolicyAuthorizationPolicy](/powershell/module/msonline/set-msolcompanysettings) PowerShell cmdlet with the **AllowAdHocSubscriptions** parameter. For more information, see [How do I control self-service settings?](/azure/active-directory/users-groups-roles/directory-self-service-signup#how-do-i-control-self-service-settings)
+1. As the business admin, you can see who signs up for a subscription by selecting the subscription on the **Licensing** page in the Microsoft 365 admin center. This way you can see when there are new or unrecognized licenses for services in your tenant. To control whether users can sign up for self-service subscriptions, use the [Update-MgPolicyAuthorizationPolicy](/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthorizationpolicy?view=graph-powershell-1.0&preserve-view=true) PowerShell cmdlet with the **AllowedToSignUpEmailBasedSubscriptions** parameter. For more information, see [How do I control self-service settings?](/azure/active-directory/users-groups-roles/directory-self-service-signup#how-do-i-control-self-service-settings)
 
 ## Available self-service programs
 

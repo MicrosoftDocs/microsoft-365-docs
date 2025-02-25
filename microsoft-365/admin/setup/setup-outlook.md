@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 09/14/2023
+ms.date: 10/02/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -32,7 +32,7 @@ Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?l
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198010).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/9fe86884-8a83-42cc-bca9-61a12e6dad31?autoplay=false]
+> [!VIDEO e30573c6-b0d5-4007-8ff6-8c9dfd4e39fe]
 
 After installing the apps in Microsoft 365, you'll want set up Outlook to start using email, calendar, and contacts. Here's how.
 

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 11/27/2023
+ms.date: 01/06/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -41,13 +41,13 @@ When you delete a user, the account becomes inactive for approximately 30 days. 
 
 ## Watch: Delete a former employee's user account
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f1196f82-611c-41c8-8cc1-98e70f591d5d]
 
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
 
 ## Does your organization use Active Directory?
 
-If your organization synchronizes user accounts to Microsoft 365 from a local Active Directory environment, you must delete and restore those user accounts in your local Active Directory service. You can't delete or restore them in Microsoft 365.
+If your organization synchronizes user accounts to Microsoft 365 from a local Active Directory environment, you must delete and restore those user accounts in your local Active Directory service. You can't delete or restore the user in the Microsoft 365 admin center.
 
 To learn how to delete and restore user account in Active Directory, see [Delete a User Account](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)).
   
@@ -57,25 +57,19 @@ If you're using Microsoft Entra ID, see the [Remove-MgUser](/powershell/module/m
 
 Here's information about how to get an employee out of email (Exchange).
 
-
-
 |What you can do|How you do it|
 |:-----|:-----|
 |Terminate a session (such as Outlook on the web, Outlook, Exchange active sync, etc.) and force to open a new session|Reset password|
 |Terminate a session and block access to future sessions (for all protocols)|Disable the account. For example, in the Exchange admin center or using PowerShell: <br/>  `Set-Mailbox user@contoso.com -AccountDisabled:$true`|
 |Terminate the session for a particular protocol (such as ActiveSync)|Disable the protocol. For example, in the Exchange admin center or using PowerShell: <br/>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false`|
-|
 
 The above operations can be done in three places:
-  
-
 
 |If you terminate the session here|How long it takes|
 |---|---|
 |In the Exchange admin center or using PowerShell|Expected delay is within 30 min|
 |In the Microsoft Entra admin center|Expected delay is 60 min|
 |In an on-premises environment|Expected delay is 3 hours or more|
-|
 
 ### How to get fastest response for account termination
 

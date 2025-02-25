@@ -24,7 +24,7 @@ ms.custom:
 - admindeeplinkMAC
 - GAUpdates
 description: Learn how to download the software and product license keys for perpetual software bought through the Cloud Solution Provider (CSP) program.
-ms.date: 01/09/2024
+ms.date: 01/06/2025
 ---
 
 # Download perpetual software and product license keys in Microsoft 365

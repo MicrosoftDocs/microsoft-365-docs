@@ -4,8 +4,8 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: ragovind
-ms.date: 06/21/2023
+ms.reviewer: prpath
+ms.date: 10/01/2024
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-lighthouse
@@ -36,7 +36,7 @@ Make sure devices have a Microsoft Intune license and are enrolled in Microsoft 
 
 2. Select the **Policies** tab.
 
-3. From the **Filters** dropdown list, select an operating system or platform.
+3. From the **OS** filter, select an operating system or platform.
 
    > [!NOTE]
    > You can only compare policies with the same operating system or platform.
@@ -45,19 +45,19 @@ Make sure devices have a Microsoft Intune license and are enrolled in Microsoft 
 
 5. Select **Compare**.
 
-You can filter the results to see **Settings that differ**, **Settings that match**, or **Configured settings**.
+   You can filter the results to see **Settings that differ**, **Settings that match**, or **Configured settings**.
 
-## Configure a policy setting
+## Configure policy settings
 
 1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Devices** > **Device compliance**.
 
 2. Select the **Policies** tab.
 
-3. From the list of policies, select the policy that you want to view.
+3. From the list of policies, select the policy that you want to configure.
 
-4. In the policy details pane, select **View this policy in Microsoft Endpoint Manager**.
+4. In the policy details pane, select **View this policy in Microsoft Intune admin center**.
 
-5. In the Microsoft Intune admin center, edit the policy settings as needed.
+5. In the Microsoft Intune admin center, configure the policy settings as needed.
 
 ## Next steps
 

@@ -24,7 +24,7 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: "Learn the difference between subscriptions and licenses, who can assign licenses, and what happens when you assign a license in  Microsoft 365 for business."
-ms.date: 10/11/2023
+ms.date: 01/06/2025
 ---
 
 # Understand subscriptions and licenses in Microsoft 365 for business
@@ -93,5 +93,4 @@ Different types of admins can work with licenses in different ways, depending on
 ## Related content
 
 [Buy or remove licenses for your business subscription](buy-licenses.md) (article)\
-[Assign or unassign licenses for users in the Microsoft 365 admin center](../../admin/manage/assign-licenses-to-users.md) (article)\
-[Remove a license from a shared mailbox](../../admin/email/remove-license-from-shared-mailbox.md) (article)
+[Assign or unassign licenses for users in the Microsoft 365 admin center](../../admin/manage/assign-licenses-to-users.md) (article)

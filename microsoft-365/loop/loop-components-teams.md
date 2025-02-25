@@ -4,7 +4,7 @@ ms.author: jenz
 author: jenzamora
 manager: jtremper
 audience: Admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: loop
 ms.reviewer: michalbr
 ms.date: 09/13/2024

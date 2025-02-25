@@ -1,19 +1,18 @@
 ---
 title: Application lifecycle for Microsoft 365 Backup Storage
-ms.author: waynewin
-author: WayneEwington
-manager: brgussin
+ms.author: chucked
+author: chuckedmonson
+manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 07/31/2024
-ms.topic: conceptual
+ms.date: 02/03/2025
+ms.topic: article
 ms.service: microsoft-365-backup
 ms.custom: backup
 search.appverid:
 ms.collection:
-    - essentials-overview
 ms.localizationpriority:  medium
-description: Application lifecycle for Microsoft 365 Backup Storage.
+description: Learn about the application lifecycle for Microsoft 365 Backup Storage.
 ---
 
 # Application lifecycle for Microsoft 365 Backup Storage
@@ -78,7 +77,7 @@ POST /solutions/backupRestore/serviceApps/{serviceAppId}/activate
 ```
 
 > [!NOTE]
-> If there is already a pending change to the Microsoft 365 Backup Storage Controller already in progress, then your request will fail with a HTTP 403 error code. You will not be able to activate your application until the pending change has completed.
+> If there's already a pending change to the Microsoft 365 Backup Storage Controller already in progress, then your request fails with an HTTP 403 error code. You won't be able to activate your application until the pending change has completed.
 
 If your application was successfully activated for a date/time in the future, it has a state of **pendingActive**.
 
@@ -112,15 +111,19 @@ POST /solutions/backupRestore/enable
 After you enable the Billing Policy, your application will be the Microsoft 365 Backup Storage Controller in the Consuming Tenant and will now be able to maintain the Microsoft 365 Backup Service (as per your application’s oAuth permission scopes).
 
 > [!NOTE]
-> You can execute this API multiple times in that it is idempotent. It is recommended to enable the Billing Policy in the Consuming Tenant if, for whatever reason, your Billing Policy changes. For example, if you want to change the Azure Subscription Id or Resource Group.
+> You can execute this API multiple times in that it's idempotent. It's recommended to enable the Billing Policy in the Consuming Tenant if, for whatever reason, your Billing Policy changes. For example, if you want to change the Azure Subscription ID or Resource Group.
 
-## Offboarding a Microsoft 365 Backup application
+### Graph PowerShell support
 
-###	Another application is Activated as the Microsoft 365 Backup Storage Controller
+Microsoft Backup Storage supports PowerShell via Microsoft Graph. For more information about the PowerShell cmdlets, see [backupRestoreRoot resource type](/graph/api/resources/backuprestoreroot).
+
+## Offboard a Microsoft 365 Backup application
+
+###	Another application is activated as the Microsoft 365 Backup Storage Controller
 
 If your application is the active Microsoft 365 Backup Storage Controller, it's possible that another application (first-party or third-party) can also be activated as per the onboarding process defined in [Existing-Microsoft 365 Backup Storage Controller](#existing-microsoft-365-backup-storage-controller) and [Existing Microsoft 365 Backup Storage Controller Grace Period](#existing-microsoft-365-backup-storage-controller-grace-period). If this event occurs, your application won't be explicitly notified. However, the state of your application becomes **pendingInactive**.
-T
-o get the state of your application being the Microsoft 365 Backup Storage Controller your application can execute the [Get serviceApp](/graph/api/serviceapp-get) API:
+
+To get the state of your application being the Microsoft 365 Backup Storage Controller your application can execute the [Get serviceApp](/graph/api/serviceapp-get) API:
 ```http
 GET /solutions/backupRestore/serviceApps/{serviceAppId}
 ```
@@ -144,20 +147,23 @@ POST /solutions/backupRestore/serviceApps/{serviceAppId}/deactivate
 
 The outcome of deactivating your application depends on the current state of your application.
 
-#### Deactivating with current state of inactive
+#### Deactivate with current state of inactive
+
 Deactivating your application that has a state of **inactive** does nothing.
 
-#### Deactivating with current state of pendingActive
+#### Deactivate with current state of pendingActive
+
 Deactivating your application that has a state of **pendingActive** cancels your pending change to become the Microsoft 365 Backup Storage Controller.
+
 After successfully invoking the API:
--	Your application has a state of **inactive**.
--	The application that is currently the Microsoft 365 Backup Storage Controller has a state of **active**.
+- Your application has a state of **inactive**.
+- The application that is currently the Microsoft 365 Backup Storage Controller has a state of **active**.
   
-#### Deactivating with current state of pendingInactive
+#### Deactivate with current state of pendingInactive
 
 Deactivating your application that has a state of **pendingInactive** won't do anything to the pending change of the Microsoft 365 Backup Storage Controller. That is, the pending change continues until the Grace Period is complete.
 
-#### Deactivating with current state of active
+#### Deactivate with current state of active
 
 You can't deactivate your application that has a state of **active** and your request fails with an HTTP error 403 code.
 
@@ -172,27 +178,29 @@ DELETE /solutions/backupRestore/serviceApps/{serviceAppId}
 
 The outcome of unregistering your application depends on the current state of your application.
 
-#### Unregistering with current state of inactive
+#### Unregister with current state of inactive
 
 Unregistering your application that has a state of **inactive** removes your application as being available to be the Microsoft 365 Backup Storage Controller.
+
 After successfully invoking the API:
 -	Your application is no longer available to become the Microsoft 365 Backup Storage Controller (unless it's reregistered).
 
-#### Unregistering with current state of pendingActive
+#### Unregister with current state of pendingActive
 
 Unregistering your application that has a state of **pendingActive** cancels your pending change to become the Microsoft 365 Backup Storage Controller.
+
 After successfully invoking the API:
 - Your application is no longer available to become the Microsoft 365 Backup Storage Controller (unless it's reregistered).
 - Your application no longer has read-only access to any existing Protection Policies. 
 - The application that is currently the Microsoft 365 Backup Storage Controller has a state of **active**.
 
-#### Unregistering with current state of pendingInactive
+#### Unregister with current state of pendingInactive
 
 You can't unregister your application that has a state of **pendingInactive** and your request fails with an HTTP 403 error code.
 
 To unregister your application as the Microsoft 365 Backup Storage Controller, you need to wait for the Grace Period to be complete (or if the pending change is canceled and your application is reinstated as the Microsoft 365 Backup Storage Controller).
 
-#### Unregistering with current state of active
+#### Unregister with current state of active
 
 Unregistering your application that has a state of **active** automatically initiates a pending change of the Microsoft 365 Backup Storage Controller with a mandatory 7-day Grace Period.
 
@@ -207,23 +215,24 @@ Unregistering your application that has a state of **active** automatically init
 - Your application continues to be responsible for the Microsoft 365 Backup billing and hence the consumption in the Consuming Tenant until another application is activated to be the Microsoft 365 Backup Storage Controller or until the billing period expires (30-days) as per the offboarding of the Microsoft 365 Backup Service in the Consuming Tenant.
 
 > [!WARNING]
-> If your application is the active Microsoft 365 Backup Storage Controller when you unregister it, you are potentially responsible for an additional 37 days (7 days plus 30 days) for the Microsoft 365 Backup pay-as-you-go billing in the Consuming Tenant.
+> If your application is the active Microsoft 365 Backup Storage Controller when you unregister it, you're potentially responsible for an additional 37 days (7 days plus 30 days) for the Microsoft 365 Backup pay-as-you-go billing in the Consuming Tenant.
 
-## Application Lifecycle States
+## Application lifecycle states
 
 Onboarding and offboarding a Microsoft 365 Backup application requires the application to go through a number of different states. The state changes are initiated by:
+
 - An application invoking specific APIs;
 - The consequence of another application invoking specific APIs; and/or
 - The system waiting for a period of time to pass.
 
  ![Diagram showing the application lifecycle states.](../../media/m365-backup/backup-lifecycle-states.png)
 
-The above diagram outlines the states and the gestures that can cause a transition between them:
+The previous diagram outlines the states and the gestures that can cause a transition between them:
 1. [Register your application as a Microsoft 365 Backup Storage Controller](#step-1-register-your-application-as-a-microsoft-365-backup-storage-controller)
 2. [Activate your application to be the Microsoft 365 Backup Storage Controller with no existing Microsoft 365 Backup Storage Controller](#no-existing-microsoft-365-backup-storage-controller)
 3. [Activate your application to be the Microsoft 365 Backup Storage Controller with an Existing Microsoft 365 Backup Storage Controller](#existing-microsoft-365-backup-storage-controller) and [Another application is Activated as the Microsoft 365 Backup Storage Controller when your application is the Active Microsoft 365 Backup Storage Controller](#another-application-is-activated-as-the-microsoft-365-backup-storage-controller)
-4. [The Existing Microsoft 365 Backup Storage Controller Grace Period completes](#existing-microsoft-365-backup-storage-controller-grace-period)
-5. [Deactivate your application to be the Microsoft 365 Backup Storage Controller with current state of pendingActive](#deactivating-with-current-state-of-pendingactive)
-6. [Unregister your application to be the Microsoft 365 Backup Storage Controller with current state of inactive](#unregistering-with-current-state-of-inactive)
-7. [Unregister your application to be the Microsoft 365 Backup Storage Controller with current state of pendingActive](#unregistering-with-current-state-of-pendingactive)
-8. [Unregister your application to be the Microsoft 365 Backup Storage Controller with current state of active](#unregistering-with-current-state-of-active)
+4. [The existing Microsoft 365 Backup Storage Controller Grace Period completes](#existing-microsoft-365-backup-storage-controller-grace-period)
+5. [Deactivate your application to be the Microsoft 365 Backup Storage Controller with current state of pendingActive](#deactivate-with-current-state-of-pendingactive)
+6. [Unregister your application to be the Microsoft 365 Backup Storage Controller with current state of inactive](#unregister-with-current-state-of-inactive)
+7. [Unregister your application to be the Microsoft 365 Backup Storage Controller with current state of pendingActive](#unregister-with-current-state-of-pendingactive)
+8. [Unregister your application to be the Microsoft 365 Backup Storage Controller with current state of active](#unregister-with-current-state-of-active)

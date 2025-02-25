@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: jatingupta
-ms.date: 08/16/2023
+ms.date: 10/21/2024
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-lighthouse
@@ -25,11 +25,6 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 # Assign a baseline in Microsoft 365 Lighthouse
 
 By default, Microsoft 365 Lighthouse assigns the default baseline to all tenants. You can create and assign a baseline to accommodate varying customer requirements.
-
-> [!NOTE]
-> Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, you should see it soon.
->
-> To see which new features are currently available in your partner tenant, go to the **Home** page of Microsoft 365 Lighthouse, and then either select the **What's new** link in the upper-right corner of the page or select **What's new** on the **What's new & learning resources** card.
 
 ## Before you begin
 

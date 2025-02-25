@@ -1,11 +1,11 @@
 ---
 title: IT Admins - Overview of external collaboration options in Microsoft 365
-ms.author: jtremper
-author: jacktremper
-manager: pamgreen
+author: DaniEASmith
+ms.author: danismith
+manager: jtremper
 ms.date: 01/17/2024
 audience: ITPro
-ms.topic: article
+ms.topic: concept-article
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 f1.keywords:

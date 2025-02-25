@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 07/06/2023
+ms.date: 11/14/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -41,13 +41,13 @@ You can add or update a default theme that applies to everyone in your organizat
 
 3. Choose **Add theme** and add the required info for the tabs.
 
-All organization themes can be customized using the following tabs.
+    All organization themes can be customized using the following tabs.
 
-|Tab|What can you do?|
-|---|---|
-|[General](#general-modify-a-theme)|Modify a theme name and assign to up to five groups (if applicable).|
-|[Logos](#logos-specify-your-theme-logos)|Add your organization logo, including alternate logo for dark theme.|
-|[Colors](#colors-choose-theme-colors)|Customize a color scheme by specifying navigation bar, accent, text and icon colors.|
+    |Tab|What can you do?|
+    |---|---|
+    |[General](#general-modify-a-theme)|Modify a theme name and assign to up to five groups (if applicable).|
+    |[Logos](#logos-specify-your-theme-logos)|Add your organization logo, including alternate logo for dark theme.|
+    |[Colors](#colors-choose-theme-colors)|Customize a color scheme by specifying navigation bar, accent, text and icon colors.|
 
 ## General: Modify a theme
 
@@ -76,7 +76,7 @@ You can create up to four additional group themes.
 
 3. Select **Save**.
 
-:::image type="content" source="../../media/default-theme-general-users1.png" alt-text="Screenshot: General tab showing the default theme for a group of users in your organization":::
+  :::image type="content" source="../../media/default-theme-general-users1.png" alt-text="Screenshot: General tab showing the default theme for a group of users in your organization":::
 
 ## Logos: Specify your theme logos
 
@@ -92,7 +92,8 @@ Select **Save** to save your changes.
 
 You can remove your logos at any time. Just return to the **Logos** page and select **Remove**.
 
-**Note:** The Microsoft 365 suite header is designed to accommodate a variety of screen sizes, window sizes, and display settings. The responsive behavior of the suite header sometimes results in the logo not showing to give space to other capabilities shown on the suite header. To reduce the likelihood of this behavior a narrower image file is recommended.
+> [!NOTE]
+> The Microsoft 365 suite header is designed to accommodate a variety of screen sizes, window sizes, and display settings. The responsive behavior of the suite header sometimes results in the logo not showing to give space to other capabilities shown on the suite header. To reduce the likelihood of this behavior a narrower image file is recommended.
 
 ## Colors: Choose theme colors
 
@@ -103,7 +104,7 @@ On the **Colors** page, you can set the default colors and choose which logo sho
 - **Accent color**: Pick one that shows up well on a white or light background. The accent color is used to color some links and buttons that show up on a white or light background. For example, the accent color is used to color elements in a user's inbox and on their microsoft365.com portal page.
 - **Reset color**: Select this link to reset colors to the default colors.
 
-:::image type="content" source="../../media/default-theme-colors1.png" alt-text="Screenshot: Colors tab showing default theme colors for your organization":::
+  :::image type="content" source="../../media/default-theme-colors1.png" alt-text="Screenshot: Colors tab showing default theme colors for your organization":::
 
 ## Frequently asked questions
 
@@ -135,7 +136,7 @@ Users who are assigned to multiple group themes will be shown the default theme.
 
 The default theme can only be deleted once all group themes are deleted. Make sure you delete all group themes before you try to delete the default theme.
 
-### Why am I receiving an error message every time I upload a logo URL
+### Why am I receiving an error message every time I upload a logo URL?
 
 Make sure the logo you’re using is specified as a publicly addressable URL. Follow these steps for [uploading logos to Azure Blob Storage](/azure/storage/blobs/storage-upload-process-images?tabs=dotnet) or the [Office 365 Content Delivery Network with SharePoint Online](../../enterprise/use-microsoft-365-cdn-with-spo.md).
 
@@ -149,5 +150,5 @@ Any theme appears in the top navigation bar for everyone in the organization as 
   
 ## Related content
 
-[Add custom tiles to the My apps page and app launcher](../manage/customize-the-app-launcher.md) (article)\
+[Add custom tiles to the My apps page and app launcher](../manage/customize-the-app-launcher.md) (article)
 [Overview of Microsoft 365 Groups for administrators](../create-groups/office-365-groups.md) (article)

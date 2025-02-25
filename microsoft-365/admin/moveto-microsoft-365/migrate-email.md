@@ -40,7 +40,7 @@ description: "Learn how to migrate email, contacts, and calendar from Google Wor
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198034).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW130ct?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=8db7f36d-9c5d-4512-a9a4-631ddad580cd]
 
 You can use the batch migration tool in the Exchange admin center to migrate email, contacts, and calendars from Google Workspace to Microsoft 365. With it, you can:
 
@@ -63,7 +63,7 @@ If you are a VSB (very small business) where you have a small number of users, y
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/p/?linkid=2198034).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW10Wot?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=76322de7-b15d-4ca4-824d-e6c5d7c59c2c]
 
 To successfully use the automated batch migration tool, it is important to correctly complete all of the prerequisite tasks. For more detailed information, see [Google Workspace migration prerequisites](/exchange/mailbox-migration/google-workspace-migration-prerequisites).
 
@@ -128,7 +128,7 @@ In the Google admin console, verify that your Google migration admin has the fol
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198034).
 >
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW11RRY?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=86b7d49a-83dc-43fe-8416-0fc5d1ad6804]
 
 After successfully completing all the prerequisites, you can now use the batch migration tool to migrate your users from Google Workspace to Microsoft 365. Here is a summary of the required steps. For more detailed information, see [Perform an automated Google Workspace migration to Microsoft 365](/exchange/mailbox-migration/automated-migration-neweac). 
 
@@ -165,4 +165,3 @@ After successfully completing all the prerequisites, you can now use the batch m
 1. In the Exchange admin center, select **Migration**. On the **Migration batches** page, you can see the status of your batch migration.
 1. When the batch shows a status of **Synced**, select **Complete migration batch**, then select **Confirm**.
 1. Next, assign Exchange licenses to your migrated users, and have them check to see if their email, contacts, and calendars had migrated successfully.
-

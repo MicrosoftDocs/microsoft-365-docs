@@ -21,10 +21,11 @@ metadata:
   - AdminSurgePortfolio
   - admindeeplinkMAC
   - aka.ms/self-service-purchase-faq
+  - campaignIDs-batch1
   search.appverid:
   - MET150
   description: "Find answers to commonly asked questions about self-service purchases."
-  ms.date: 12/04/2023
+  ms.date: 01/06/2025
 title: Self-service purchase FAQ
 summary: |
   Self-service purchase gives users a chance to try out new technologies and develop solutions that ultimately benefit their larger organizations. Central procurement and IT teams have visibility to all users who buy and deploy self-service purchase solutions through the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. Admins can turn off self-service purchasing on a per product basis via PowerShell. To learn more, see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).
@@ -34,6 +35,8 @@ summary: |
   > [!NOTE]
   > Self-service purchase isn't available in India or for government or education customers. Project and Visio aren't available for self-service purchase in Brazil and the Democratic Republic of Congo.
   
+  > [!IMPORTANT]
+  > Self-service purchases and trials can't be completely turned off at the tenant level with a single command. The [AllowSelfServicePurchase](allowselfservicepurchase-powershell.md) policy is managed on a per-product basis. You can only turn off self-services purchases and trials for the entire tenant by turning off each product individually. By default, all new products are set to allow users to make a self-service purchase.
 
 sections:
   - name: Making a self-service purchase
@@ -143,6 +146,18 @@ sections:
   - name: Partners
     questions:
       - question: |
+          Can I disable self-service purchase for all my customers? 
+        answer: |
+          Yes. However, there's no single command to turn off all self-service purchases at the tenant level. Self-service purchases and trials can only be disabled on a per-product basis on one customer tenant at a time. For more information, see [Allow or block self-service purchases and trials](manage-self-service-purchases-admins.md#allow-or-block-self-service-purchases-and-trials).
+      - question: |
           What's the role of Microsoft's partners in self-service purchases?
         answer: |
           Partners who have delegated administration privileges can see self-service purchases in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, just like an admin. Partners can help support an organization that wants to centralize products bought through self-service purchases. Additionally, partners can offer solutions to extend the capabilities of a self-service purchase.
+      - question: |
+          What role does a partner need to manage self-service purchases?
+        answer: |
+          Partners who are Admins On Behalf Of (AOBO) a customer must have a role that's set to Global Administrator to manage and disable self-service purchases in the Microsoft 365 admin center and via PowerShell. Other roles are restricted from managing and disabling self-service purchases.
+      - question: |
+          What obligations does a partner have around self-service purchases, billing, and support?
+        answer: |
+          None. Customers are responsible for all payments and billing for any self-service purchases that they make.

@@ -6,7 +6,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
 ms.subservice: multi-tenant
 f1.keywords:
@@ -23,9 +23,9 @@ description: Learn how to use the Region parameter to configure eDiscovery for u
 
 [eDiscovery (Premium) capabilities](../compliance/overview-ediscovery-20.md) allow a Multi-Geo eDiscovery administrator to search all of the _Geographies_ without needing to utilize a "Region" security filter. Data is exported to the Azure instance of the _Primary Provisioned Geography_ location of the multi-geo _Tenant_.
 
-Without eDiscovery (Premium) capabilities, an eDiscovery manager or administrator of a Multi-Geo _Tenant_ will be able to conduct eDiscovery only in the _Primary Provisioned Geography_ location of that _Tenant_. To support the ability to conduct eDiscovery for _Satellite Geography_ locations, a new compliance security filter parameter named "Region" is available via PowerShell. This parameter can be used by _Tenants_ whose _Primary Provisioned Geography_ location is in North America, Europe, or Asia Pacific. eDiscovery (Premium) is recommended for _Tenants_ whose _Primary Provisioned Geography_ location is not in North America, Europe, or Asia Pacific and who need to perform eDiscovery across _Satellite Geography_ locations.
+Without eDiscovery (Premium) capabilities, an eDiscovery manager or administrator of a Multi-Geo _Tenant_ will be able to conduct eDiscovery only in the _Primary Provisioned Geography_ location of that _Tenant_. To support the ability to conduct eDiscovery for _Satellite Geography_ locations, a new compliance security filter parameter named "Region" is available via PowerShell. This parameter can be used by _Tenants_ whose _Primary Provisioned Geography_ location is in North America, Europe, or Asia Pacific. eDiscovery (Premium) is recommended for _Tenants_ whose _Primary Provisioned Geography_ location isn't in North America, Europe, or Asia Pacific and who need to perform eDiscovery across _Satellite Geography_ locations.
 
-A member of the **Organization Management** role group or a user with the **Role Management** role must assign eDiscovery Manager permissions in the Microsoft Purview portal to allow others to perform eDiscovery tasks and assign a "Region" parameter in their applicable Compliance Security Filter to specify the _Geography_ for conducting eDiscovery as _Satellite Geography_ location. Otherwise, no eDiscovery activities will be carried out for the _Satellite Geography_ location. Only one "Region" security filter per user is supported.
+A member of the **Organization Management** role group or a user with the **Role Management** role must assign eDiscovery Manager permissions in the Microsoft Purview compliance portal to allow others to perform eDiscovery tasks and assign a "Region" parameter in their applicable Compliance Security Filter to specify the _Geography_ for conducting eDiscovery as _Satellite Geography_ location. Otherwise, no eDiscovery activities will be carried out for the _Satellite Geography_ location. Only one "Region" security filter per user is supported.
 
 See [Assign eDiscovery permissions in the compliance portal](/purview/ediscovery-assign-permissions#before-you-assign-permissions) for more information. To configure the Compliance Security Filter for a Region, see [Configure Office 365 Multi-Geo eDiscovery](multi-geo-ediscovery-configuration.md).
 
@@ -52,4 +52,4 @@ To set the Compliance Security Filter for a Region:
    New-ComplianceSecurityFilter -Action All -FilterName "NAM eDiscovery Managers" -Region NAM -Users adwood@contoso.onmicrosoft.com
    ```
 
-See the [New-ComplianceSecurityFilter](/powershell/module/exchange/new-compliancesecurityfilter) article for additional parameters and syntax.
+See the [New-ComplianceSecurityFilter](/powershell/module/exchange/new-compliancesecurityfilter) article for more parameters and syntax.
