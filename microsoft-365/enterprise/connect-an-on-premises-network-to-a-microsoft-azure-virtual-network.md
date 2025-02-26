@@ -31,7 +31,7 @@ A cross-premises Azure virtual network is connected to your on-premises network,
 
 For example, a directory synchronization server running on an Azure virtual machine needs to query your on-premises domain controllers for changes to accounts and synchronize those changes with your Microsoft 365 subscription.
 
-To set up a cross-premises Azure virtual network using a site-to-site virtual private network (VPN) connection, see [VPN Gateway documentation](../../azure/vpn-gateway/).
+To set up a cross-premises Azure virtual network using a site-to-site virtual private network (VPN) connection, see [VPN Gateway documentation](../../azure/vpn-gateway).
   
 Here is your resulting configuration.
   
