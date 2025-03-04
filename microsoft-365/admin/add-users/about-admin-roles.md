@@ -24,6 +24,7 @@ ms.custom:
 - adminvideo
 - business_assist
 - campaignIDs-batch1
+- campaignIDs-batch2
 description: "Learn about admin roles, such as the global admin role, or the service admin role. Roles map to specific business functions and give permissions to do specific tasks in the Microsoft 365 admin center."
 ---
 
@@ -77,7 +78,7 @@ You'll probably only need to assign the following roles in your organization. By
 
 |Admin role     |Who should be assigned this role?  |
 |---------|---------|
-| AI administrator | Assign the AI Administrator role to users who need to do the following tasks:<br> &bull; Manage all aspects of Microsoft 365 Copilot <br> &bull; Manage AI-related enterprise services, extensibility, and copilot agents from the Integrated apps page in the Microsoft 365 admin center <br> &bull; Approve and publish line-of-business copilot agents <br> &bull; Allow users to install an app or install an app for users in the organization if the app does not require permission <br> &bull; Read and configure Azure and Microsoft 365 service health dashboards <br> &bull; View usage reports, adoption insights, and organizational insight <br> &bull; Create and manage support tickets in Azure and the Microsoft 365 admin center<br/>|
+| AI administrator | Assign the AI Administrator role to users who need to do the following tasks:<br> &bull; Allow users to install an app or install an app for users in the organization if the app does not require permission <br> &bull; Read and configure Azure and Microsoft 365 service health dashboards <br> &bull; View usage reports, adoption insights, and organizational insight <br> &bull; Create and manage support tickets in Azure and the Microsoft 365 admin center<br/> <br/> **Note**: The AI Administrator role is currently limited. For full administrative capabilities, it's recommended to use the Global Admin role until the AI Administrator role is fully functional. We're continuously expanding support for more functionalities to enhance the AI Administrator role.|
 |Billing admin     |   Assign the Billing admin role to users who make purchases, manage subscriptions and service requests, and monitor service health. Billing admins cannot assign licenses; If a Billing admin is also a License or User Administrator, visit [Licenses](https://go.microsoft.com/fwlink/p/?linkid=842264) to assign licenses.<br><br> Billing admins also can:<br> &bull; Manage all aspects of billing<br> &bull; Create and manage support tickets in the Azure portal <br/><br/>|
 |Exchange admin     |   Assign the Exchange admin role to users who need to view and manage your user's email mailboxes, Microsoft 365 groups, and Exchange Online. <br><br> Exchange admins can also:<br> &bull; Recover deleted items in a user's mailbox <br> &bull; Set up "Send As" and "Send on behalf" delegates <br>  |
 |Fabric admin |   Assign the Fabric admin role to users who need to do the following: <br> &bull; Manage all admin features for Microsoft Fabric and Power BI <br> &bull; Report on usage and performance <br> &bull; Review and manage auditing  |
@@ -93,6 +94,7 @@ You'll probably only need to assign the following roles in your organization. By
 |Organizational Message Writer    |    Assign the Organizational Message Writer role to users who need to write, publish, manage, and review the organizational messages for end-users through Microsoft product surfaces.   |
 |Organizational Messages Approver   |    Assign the Organizational Messages Approver role to users who need to review, approve, or reject new organizational messages for delivery in the Microsoft 365 admin center before they are sent to users through Microsoft product surfaces.  |
 |Password admin  |   Assign the Password admin role to a user who needs to reset passwords for non-administrators and Password Administrators.   |
+|People admin |   Assign the People administrator role to users who need to do the following tasks: <br> &bull; Update profile photos for all users including administrators<br> &bull; Update people settings for all users (pronouns, name pronunciation, and profile card settings)|
 |Power Platform admin |   Assign the Power Platform admin role to users who need to do the following: <br> &bull; Manage all admin features for Power Apps, Power Automate, Power BI, Microsoft Fabric, and Microsoft Purview Data Loss Prevention<br> &bull; Create and manage service requests<br> &bull; Monitor service health  |
 |Reports reader |   Assign the Reports reader role to users who need to do the following: <br> &bull; View usage data and the activity reports in the Microsoft 365 admin center<br> &bull; Get access to the Power BI adoption content pack<br> &bull; Get access to sign-in reports and activity in Microsoft Entra ID<br> &bull; View data returned by Microsoft Graph reporting API|
 |Search admin |  Assign the Search admin role to users who need to create and manage search result content and define query settings for improved search results within the organization. The Search admin manages the Microsoft search configuration and can perform all the content-management tasks that a Search editor can.|
@@ -116,7 +118,7 @@ You'll probably only need to assign the following roles in your organization. By
 | Skype admin  | Read | Read | Read | Read |
 | Service admin  | Read | Read  | Read | Read |
 | Group admin  | Create, Read, Update, Delete, ***Can't update EXO properties*** | Create, Read, Update, Delete | Read | Read |
-| AI administrator | Read | Read | Read | Read | 
+| AI administrator | Read | Read | Read | Read |
 
 ## Delegated administration for Microsoft Partners
 

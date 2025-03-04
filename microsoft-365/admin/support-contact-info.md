@@ -4,7 +4,7 @@ ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
 audience: Admin
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 

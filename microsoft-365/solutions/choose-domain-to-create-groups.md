@@ -7,7 +7,7 @@ author: DaniEASmith
 ms.author: danismith
 manager: jtremper
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: 
@@ -43,7 +43,7 @@ Let's say you also have sub-domains configured in your organization. You want gr
 The following two scenarios explain how you would accomplish this.
 
 > [!NOTE]
-> When you have mulitple EAPs, they are evaluated in the order of priority. A value of 1 means the highest priority. Once an EAP matches, no further EAP is evaluated and addresses that gets stamped on the group are as per the matched EAP. > If no EAPs match the specified criteria, then the group gets provisioned in the organization's default accepted domain. Check out [Manage accepted domains in Exchange Online](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) for details on how to add an accepted domain.
+> When you have multiple EAPs, they are evaluated in the order of priority. A value of 1 means the highest priority. Once an EAP matches, no further EAP is evaluated and addresses that gets stamped on the group are as per the matched EAP. > If no EAPs match the specified criteria, then the group gets provisioned in the organization's default accepted domain. Check out [Manage accepted domains in Exchange Online](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) for details on how to add an accepted domain.
   
 ### Scenario 1
 

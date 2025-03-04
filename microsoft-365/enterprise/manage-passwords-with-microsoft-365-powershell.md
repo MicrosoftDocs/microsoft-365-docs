@@ -3,9 +3,9 @@ title: "Manage passwords with Microsoft Graph PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 03/07/2024
+ms.date: 02/12/2025
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: medium

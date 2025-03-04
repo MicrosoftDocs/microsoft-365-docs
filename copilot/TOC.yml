@@ -5,7 +5,7 @@ items:
   href: release-notes.md
 - name: Get started with Microsoft 365 Copilot
   items:
-    - name: Overview
+    - name: What is Microsoft 365 Copilot?
       href: microsoft-365-copilot-overview.md
     - name: Architecture and data protection diagrams
       items:
@@ -13,17 +13,20 @@ items:
         href: microsoft-365-copilot-architecture.md
       - name: Data protection and auditing
         href: microsoft-365-copilot-architecture-data-protection-auditing.md
-    - name: Select your Copilot
+    - name: Which Copilot is right for me?
       href: which-copilot-for-your-organization.md
     - name: Get your data ready for Microsoft 365 Copilot
       items:
         - name: License options
           href: microsoft-365-copilot-licensing.md
-        - name: License feature comparison list
+        - name: E3 and E5 license feature comparison list
+          displayName: e3 vs e5
           href: microsoft-365-copilot-license-feature-overview.md
         - name: E3 implementation guide
+          displayName: get started
           href: microsoft-365-copilot-e3-guide.md
         - name: E5 implementation guide
+          displayName: get started
           href: microsoft-365-copilot-e5-guide.md
     - name: Blueprint to prevent oversharing
       href: microsoft-365-copilot-blueprint-oversharing.md
@@ -33,7 +36,7 @@ items:
       href: microsoft-365-copilot-setup.md
     - name: Requirements and prerequisites
       href: microsoft-365-copilot-requirements.md
-    - name: License add-on list
+    - name: License options
       href: microsoft-365-copilot-licensing.md
     - name: Enable users and welcome email
       href: microsoft-365-copilot-enable-users.md  
@@ -43,7 +46,7 @@ items:
       href: microsoft-365-copilot-enablement-resources.md
 - name: Manage Microsoft 365 Copilot
   items:
-    - name: Manage Microsoft 365 Copilot settings 
+    - name: Manage Microsoft 365 Copilot scenarios 
       href: microsoft-365-copilot-page.md
     - name: Pin Copilot Chat to the navigation bar
       href: pin-copilot.md

@@ -4,7 +4,7 @@ author: lana-chin
 ms.author: v-chinlana
 manager: jtremper
 audience: ITPro
-ms.topic: conceptual
+ms.topic: integration
 ms.service: microsoft-365-frontline
 search.appverid: MET150
 searchScope:

@@ -4,7 +4,7 @@ ms.author: erikre
 author: erikre
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: concept-article
 ms.date: 03/29/2024
 description: Understand app licenses used in Intune.
 ms.service: o365-solutions
@@ -33,7 +33,7 @@ The following table provides the primary ways to obtain app licenses that you ca
 As previously mentioned, many of the apps available to select within [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) are free to use. You can add these apps to Intune and assign them to the members of your organization without additional cost. The members of your organization can use the app without any additional license, subscription, or account. Each app may have their own standard use-license.
 
 > [!NOTE]
-> Each app type for their related platform is added within [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) by selecting **Apps** > **All apps** > **Add**.
+> Each app type for their related platform is added within [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) by selecting **Apps** > **All Apps** > **Add**.
 
 For more information, see [Add apps to Microsoft Intune Overview](apps-add-overview.md).
 

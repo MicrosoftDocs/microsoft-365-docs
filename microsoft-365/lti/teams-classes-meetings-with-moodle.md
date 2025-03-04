@@ -6,7 +6,7 @@ manager: jacktremper
 ms.reviewer: amitman 
 ms.date: 04/04/2022
 audience: admin
-ms.topic: article
+ms.topic: integration
 ms.service: microsoft-365-business
 f1.keywords:
 - CSH
@@ -31,11 +31,11 @@ Follow the [instructions for installing and configuring the Moodle plugin](moodl
 
 ## Register Microsoft Teams LTI for use in Moodle
 
-The person who performs this integration should be a Moodle administrator and a Microsoft 365 tenant administrator.
+The person who performs this integration should be a Moodle administrator.
 
 1. Visit [Microsoft LMS Gateway](https://lti.microsoft.com/) and select the **Go to registration portal** button.
 
-2. Sign in with a Microsoft 365 administrator account.
+2. Sign in with a Microsoft 365 Education account.
 
 3. After signing in, select **Add new registration**.
 

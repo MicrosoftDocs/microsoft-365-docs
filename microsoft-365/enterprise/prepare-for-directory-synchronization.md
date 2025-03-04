@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 ms.date: 09/25/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: medium
@@ -48,7 +48,7 @@ However, directory synchronization requires planning and preparation to ensure t
 Follow these steps in order for the best results.
 
 > [!NOTE]
-> Non-ASCII characters do not sync for any attributes on the AD DS user account.
+> Non-ASCII characters don't sync for any attributes on the AD DS user account.
 
 ## AD DS Preparation
 
@@ -150,7 +150,7 @@ The attributes that you need to prepare are listed here:
   - The attribute value must be unique within the directory.
 
     > [!NOTE]
-    > If there are duplicate values, the first user with the value is synchronized. Subsequent users will not appear in Microsoft 365. You must modify either the value in Microsoft 365 or modify both of the values in AD DS in order for both users to appear in Microsoft 365.
+    > If there are duplicate values, the first user with the value is synchronized. Subsequent users won't appear in Microsoft 365. You must modify either the value in Microsoft 365 or modify both of the values in AD DS in order for both users to appear in Microsoft 365.
 
 - **mailNickname** (Exchange alias)
 
@@ -220,7 +220,7 @@ Active Directory is designed to allow the end users in your organization to sign
 
 In Microsoft 365, the UPN is the default attribute that's used to generate the email address. It's easy to get **userPrincipalName** (in AD DS and in Microsoft Entra ID) and the primary email address in **proxyAddresses** set to different values. When they're set to different values, there can be confusion for administrators and end users.
 
-It's best to align these attributes to reduce confusion. To meet the requirements of single sign-on with Active Directory Federation Services (AD FS) 2.0, you need to ensure that the UPNs in Microsoft Entra ID and your AD DS match and are using a valid domain namespace.
+It's best to align these attributes to reduce confusion. To meet the requirements of single sign-on with Active Directory Federation Services (AD FS) 2.0, you need to ensure that the UPNs in Microsoft Entra ID, and your AD DS match and are using a valid domain namespace.
 
 ## 4. Add an alternative UPN suffix to AD DS
 

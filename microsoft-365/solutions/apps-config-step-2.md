@@ -4,7 +4,7 @@ ms.author: erikre
 author: erikre
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/29/2024
 description: Step 2. Configure Microsoft Outlook.
 ms.service: o365-solutions
@@ -203,7 +203,7 @@ The following table provides a list of the **Sync contact fields to native conta
 |Sign all emails|Specify whether all emails must be signed. A digital signature verifies the authenticity of the email and ensures that the contents aren't tampered with in transit. If you configure this setting,  you can choose to use the **Allow user to change setting** option.|
 |LDAP URL|This is the LDAP hostname where clients can get the public encryption keys for email recipients. Emails are encrypted when a key is available.|
 
-You can find this setting in [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) when using managed apps by selecting **Apps** > **App configuration policies**.  In addition, you can add an LDAP (Lightweight Directory Access Protocol) URL for Outlook S/MIME on iOS/iPadOS and Android devices for both managed apps and managed devices. For related information, see [App configuration policies for Microsoft Intune](/mem/intune/apps/app-configuration-policies-overview) and [S/MIME for Outlook for iOS/iPadOS and Android in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/smime-outlook-for-ios-and-android).
+You can find this setting in [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) when using managed apps by selecting **Apps** > **Configuration**.  In addition, you can add an LDAP (Lightweight Directory Access Protocol) URL for Outlook S/MIME on iOS/iPadOS and Android devices for both managed apps and managed devices. For related information, see [App configuration policies for Microsoft Intune](/mem/intune/apps/app-configuration-policies-overview) and [S/MIME for Outlook for iOS/iPadOS and Android in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/smime-outlook-for-ios-and-android).
 
 ### General configuration settings
 

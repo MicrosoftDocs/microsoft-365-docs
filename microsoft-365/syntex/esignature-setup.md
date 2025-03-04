@@ -6,7 +6,7 @@ manager: jtremper
 ms.reviewer: amcdonnell
 ms.date: 01/13/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
 search.appverid: 
@@ -37,63 +37,53 @@ You must be a [SharePoint Administrator](/entra/identity/role-based-access-contr
 [!INCLUDE [global-administrator-note](../includes/global-administrator-note.md)]
 
 > [!NOTE]
-> If you'll be requesting signatures from external recipients, you need to enable [Microsoft Entra B2B integration for SharePoint and OneDrive](/sharepoint/sharepoint-azureb2b-integration) and [guest sharing](/microsoft-365/solutions/collaborate-in-site). External recipients are people outside your organization and would be onboarded as guests into your tenant. Microsoft Entra B2B provides authentication and management of guests. For more information, see [External recipients](#external-recipients) later in this article.
+> If you are requesting signatures from external recipients, you need to enable [Microsoft Entra B2B integration for SharePoint and OneDrive](/sharepoint/sharepoint-azureb2b-integration) and [guest sharing](/microsoft-365/solutions/collaborate-in-site). External recipients are people outside your organization and would be onboarded as guests into your tenant. Microsoft Entra B2B provides authentication and management of guests. For more information, see [External recipients](#external-recipients) later in this article.
 
 ## Set up SharePoint eSignature
 
-1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>.
+To let people in your organization use SharePoint eSignature, follow these steps.
 
-2. Under **Billing and licenses**, select **Activate pay-as-you-go services**.
+1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Settings > Org settings**</a>.
 
-3. On the **Activate pay-as-you-go services** page, select **Get started**.
+2. On the **Org settings** page, select **Pay-as-you-go services**.
 
-4. On the **Pay-as-you-go services** page, select the **Settings** tab, and then select **Syntex services**.
+3. On the **Pay-as-you-go services** page, select the **Settings** tab.
 
-5. On the Syntex page, in the **Document & image services** section, select **eSignature**.
+4. Under **Document & image services**, select **eSignature**.
 
-6. On the **eSignature** panel, select **Let people in your organization use eSignature**.
-
-7. Select **Save**.
-<!---
-5. For existing customers, read the [terms of service](/legal/microsoft-365/esignature-terms-of-service), and then select **Turn on** to enable the service.
-
-6. For new Syntex customers, the SharePoint eSignature service is turned on once you enter your billing information and accept the [terms of service](/legal/microsoft-365/esignature-terms-of-service). On the **eSignature** page:
-
-   - To turn off the service, select **Turn off**.
-   - To manage which sites the service is available, see [Manage sites](#manage-sites).
---->
+5. On the **eSignature** panel, select **Let people in your organization use eSignature**.
 
 ### Add other signature providers
 
-1. On the Syntex page, in the **Document & image services** section, select **eSignature**.
+To select which signature providers to use, follow these steps.
 
-2. On the **eSignature** panel, in the **Which signature providers can be used?** section, select the providers you want to use.
+1. On the **eSignature** panel, in the **Which signature providers can be used?** section, select the providers you want to use.
 
     ![Screenshot showing the Edit signature providers panel.](../media/content-understanding/esignature-edit-providers-panel.png)
 
-3. Select **Save**.
+2. Select **Save**.
 
 > [!NOTE]
 > Although [pay-as-you-go billing](syntex-azure-billing.md) must be set up to use eSignature, you aren't charged for using other signature providers.
 
 ### Manage sites
 
-By default, SharePoint eSignature is turned on for libraries in all SharePoint sites. Follow these steps to restrict the sites where users can use eSignature.
+To specify the sites where users can use eSignature, follow these steps.
 
-1. On the Syntex page, in the **Document & image services** section, select **eSignature**.
+1. On the **eSignature** panel, in the **Where can eSignature be used?** section, select **All sites** or **Selected sites (up to 100)**. Follow the instructions to either select the sites or upload a CSV listing a maximum of 100 sites. Be sure to add your content center site if you want it to be included. You can then manage site access permissions for the sites you selected.
 
-2. On the **eSignature** panel, in the **Where can eSignature be used?** section, select **Selected sites (up to 100)**. Follow the instructions to either select the sites or upload a CSV listing a maximum of 100 sites. Be sure to add your content center site if you want it to be included. You can then manage site access permissions for the sites you selected.
-
-3. Select **Save**.
+2. Select **Save**.
 
 > [!NOTE]
 > The first eSignature request in a Microsoft 365 tenant might take a little longer to execute than usual. It can take a few seconds to a few minutes; however, subsequent requests are executed normally. We recommend that admins create the first eSignature request in a SharePoint site as the final setup step.
 
 ### Turn off eSignature
 
-1. On the Syntex page, in the **Document & image services** section, select **eSignature**.
+1. On the **Pay-as-you-go services** page, select the **Settings** tab.
 
-2. On the **eSignature** panel, clear the **Let people in your organization use eSignature** check box.
+2. Under **Document & image services**, select **eSignature**.
+
+3. On the **eSignature** panel, clear the **Let people in your organization use eSignature** check box.
 
 ## External recipients
 
@@ -101,7 +91,7 @@ By default, SharePoint eSignature is turned on for libraries in all SharePoint s
 
 Microsoft Entra B2B provides authentication and management of new guests. External signers or recipients are considered as guests within your tenant. To be able to send requests to new signers outside your organization, you need to enable [Microsoft Entra B2B integration for SharePoint and OneDrive](/sharepoint/sharepoint-azureb2b-integration). Consider whether this meets your compliance and security requirements when enabling eSignature.
 
-If a guest user is deleted from the tenant while the request is still ongoing, they'll no longer be able to access the request document or the final signed document. In such cases, you'll need to resend the eSignature request. Before deleting a guest user, ensure they aren't involved in any ongoing requests. This setting doesn't affect your existing Azure Active Directory guest users.
+If a guest is deleted from the tenant while the request is ongoing, they can no longer access the request document or the final signed document. In such cases, you need to resend the eSignature request. Before deleting a guest, ensure they aren't involved in any ongoing requests. This setting doesn't affect your existing Azure Active Directory guests.
 
 ### Authentication
 

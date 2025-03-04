@@ -6,7 +6,7 @@ manager: jtremper
 audience: admin
 ms.reviewer: ssquires; kkameth
 ms.date: 01/07/2025
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 

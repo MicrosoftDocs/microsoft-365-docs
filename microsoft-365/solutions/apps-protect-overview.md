@@ -4,13 +4,14 @@ ms.author: erikre
 author: erikre
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: solution-overview
 ms.date: 03/29/2024
 description: Secure and protect apps using Microsoft Intune.
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
+- m365solution-overview
 ms.custom:
 keywords:
 ---

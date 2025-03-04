@@ -13,7 +13,7 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 hideEdit: true
-ms.date: 01/15/2025
+ms.date: 02/25/2025
 ---
 
 # Enterprise data protection in Microsoft 365 Copilot and Microsoft 365 Copilot Chat
@@ -67,4 +67,4 @@ When you’re using agents in Microsoft 365 Copilot, check the privacy statement
 
 <sup>[1]</sup> The specific controls will vary depending on a customer's Microsoft subscription plans.
 
-<sup>[2]</sup> Microsoft 365 Copilot and Microsoft 365 Copilot Chat support HIPAA compliance for properly configured implementations.
+<sup>[2]</sup> Microsoft 365 Copilot and Microsoft 365 Copilot Chat support HIPAA compliance for properly configured implementations. HIPAA compliance doesn't apply to web search queries as they aren't covered by the DPA and BAA.

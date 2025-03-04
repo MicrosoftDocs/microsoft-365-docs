@@ -270,36 +270,34 @@ items:
                 - name: Analyze model usage
                   href: model-usage-analytics.md
 
-    - name: Annotations
-      href: annotations.md
-
-    - name: Content query
-      href: metadata-search.md
-
-    - name: Merge and extract PDFs
-      href: merge-extract-pdf.md
-
-    - name: Processing rules
+    - name: Included features 
       items: 
-        - name: Overview 
-          href: content-processing-overview.md
-        - name: Move or copy a file 
-          href: content-processing-create-rules.md
-        - name: Set a content type 
-          href: content-processing-content-type.md
-        - name: Translate a file 
-          href: content-processing-translate.md
-
-    - name: Taxonomy tools
-      items:
-        - name: Import using SKOS
-          href: import-term-set-skos.md
-        - name: SKOS formatting reference
-          href: skos-format-reference.md
-        - name: Push content type to hub
-          href: push-content-type-to-hub.md
-        - name: Term store reports
-          href: term-store-analytics.md
+        - name: Annotations 
+          href: annotations.md
+        - name: Content query
+          href: metadata-search.md
+        - name: Merge and extract PDFs
+          href: merge-extract-pdf.md
+        - name: Processing rules
+          items:
+            - name: Overview 
+              href: content-processing-overview.md
+            - name: Move or copy a file 
+              href: content-processing-create-rules.md
+            - name: Set a content type 
+              href: content-processing-content-type.md
+            - name: Translate a file 
+              href: content-processing-translate.md
+        - name: Taxonomy tools
+          items:
+            - name: Import using SKOS
+              href: import-term-set-skos.md
+            - name: SKOS formatting reference
+              href: skos-format-reference.md
+            - name: Push content type to hub
+              href: push-content-type-to-hub.md
+            - name: Term store reports
+              href: term-store-analytics.md
 
     - name: Adopt
       items:
@@ -363,17 +361,16 @@ items:
             - name: Work with explanations
               href: powershell-syntex-explanations.md
 
-    - name: Microsoft 365 Archive
-      href: /microsoft-365/archive
-
-    - name: Microsoft 365 Backup
-      href: /microsoft-365/backup
-
-    - name: SharePoint Advanced Management
-      href: /sharepoint/advanced-management
-
-    - name: SharePoint Embedded
-      href: /sharepoint/dev/embedded/overview
+    - name: More content solutions
+      items: 
+        - name: Microsoft 365 Archive
+          href: /microsoft-365/archive
+        - name: Microsoft 365 Backup
+          href: /microsoft-365/backup
+        - name: SharePoint Advanced Management
+          href: /sharepoint/advanced-management
+        - name: SharePoint Embedded
+          href: /sharepoint/dev/embedded/overview
 
 
 

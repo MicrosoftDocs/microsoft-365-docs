@@ -5,7 +5,7 @@ author: MicrosoftHeidi
 manager: pamgreen
 ms.date: 11/11/2020
 audience: Admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: medium

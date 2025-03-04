@@ -6,7 +6,7 @@ ms.reviewer: ssquires, kkameth
 ms.date: 06/20/2024
 manager: jtremper
 audience: admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-syntex
 ms.collection: 
     - essentials-get-started
@@ -22,8 +22,8 @@ description: Set up Microsoft Syntex per-user licensing.
 # Assign existing Microsoft Syntex per-user licenses
 
 > [!NOTE]
-> As of July 1, 2023, per-user licenses are no longer available for purchase. You will need to [set up pay-as-you-go billing](syntex-azure-billing.md).<br><br>
-> **Per-user licenses purchased before July 1, 2023, can still be assigned to new users.** After existing per-user licenses expire, you will need to opt-in to Syntex [pay-as-you-go billing](syntex-azure-billing.md).
+> As of July 1, 2023, per-user licenses are no longer available for purchase. You'll need to [set up pay-as-you-go billing](syntex-azure-billing.md).<br><br>
+> **Per-user licenses purchased before July 1, 2023, can still be assigned to new users.** After existing per-user licenses expire, you'll need to opt in to [pay-as-you-go billing](syntex-azure-billing.md).
 
 This article is for organizations who have existing per-user licenses for Microsoft Syntex and want to assign them to users. For an overview of licensing options, see [Licensing for Microsoft Syntex](syntex-licensing.md).
 
@@ -54,7 +54,7 @@ Prior to setup, make sure to plan for the best way to set up and configure conte
 ## Requirements
 
 > [!NOTE]
-> You must be a [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) to be able to access the Microsoft 365 admin center and set up Syntex.
+> You must be a [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) to be able to access the Microsoft 365 admin center and set up Microsoft Syntex.
 
 [!INCLUDE [global-administrator-note](../includes/global-administrator-note.md)]
 

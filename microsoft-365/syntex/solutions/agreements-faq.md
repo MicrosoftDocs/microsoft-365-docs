@@ -6,7 +6,7 @@ manager: jtremper
 ms.reviewer: ssathyamoort, neilh, shrganguly, rammenon
 ms.date: 10/30/2024
 audience: admin
-ms.topic: conceptual
+ms.topic: faq
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
 search.appverid: 

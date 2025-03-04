@@ -1,0 +1,112 @@
+### YamlMime:Landing
+
+title: Microsoft 365 pay-as-you-go services documentation # < 60 chars
+summary: Pay-as-you-go services in Microsoft 365 provide organizations with flexible and cost-efficient solutions, allowing them to pay only for the services used.
+metadata:
+  title: Microsoft 365 pay-as-you-go services documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: This page contains links to some important information related to pay-as-you-go services in Microsoft 365. # Required; article description that is displayed in search results. < 160 chars.
+  services: 
+  ms.service: microsoft-syntex #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page # Required
+  ms.collection: 
+  ms.custom: intro-hub-or-landing
+  author: chuckedmonson #Required; your GitHub user alias, with correct capitalization.
+  ms.author: chucked #Required; microsoft alias of author; optional team alias.
+  ms.date: 02/20/2025 #Required; mm/dd/yyyy format
+  ms.localizationpriority: medium
+  titleSuffix: Microsoft 365
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card 1
+  - title: About pay-as-you-go services
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What are pay-as-you-go services?
+            url: pay-as-you-go-overview.md
+      - linkListType: whats-new
+        links:
+          - text: What's new
+            url: pay-as-you-go-whats-new.md
+
+# Card 2
+  - title: Get started
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Available pay-as-you-go services
+            url: pay-as-you-go-services.md
+      - linkListType: how-to-guide
+        links:
+          - text: Set up pay-as-you-go billing
+            url: pay-as-you-go-setup.md
+
+# Card 3
+  - title: Pay-as-you-go pricing
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Microsoft 365 Copilot
+            url: /sharepoint/microsoft-365-pay-as-you-go-pricing
+          - text: Microsoft Syntex
+            url: ../syntex/syntex-pay-as-you-go-services.md
+          - text: Microsoft 365 Archive
+            url: ../syntex/syntex-pay-as-you-go-services.md#storage-services
+          - text: Microsoft 365 Backup
+            url: ../syntex/syntex-pay-as-you-go-services.md#storage-services
+
+# Card 4
+  - title: Microsoft 365 Copilot services
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: SharePoint agents
+            url: /sharepoint/get-started-sharepoint-agents
+
+# Card 5
+  - title: Storage services
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Microsoft 365 Archive
+            url: ../archive/archive-overview.md
+          - text: Microsoft 365 Backup
+            url: ../backup/backup-overview.md
+
+# Card 6
+  - title: Document & image services
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Autofill columns
+            url: ../syntex/autofill-overview.md
+          - text: Content assembly
+            url: ../syntex/content-assembly.md
+          - text: Document translation
+            url: ../syntex/translation-overview.md
+          - text: eSignature
+            url: ../syntex/esignature-overview.md
+          - text: Image tagging
+            url: ../syntex/image-tagging-overview.md
+          - text: Optical character recognition
+            url: ../syntex/ocr-overview.md
+          - text: Prebuilt document processing
+            url: ../syntex/prebuilt-overview.md
+          - text: Structured and freeform document processing
+            url: ../syntex/form-processing-overview.md
+          - text: Taxonomy tagging
+            url: ../syntex/taxonomy-tagging-overview.md
+          - text: Unstructured document processing
+            url: ../syntex/document-understanding-overview.md
+
+# Card 8
+  - title: Video services
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Video translation
+            url: https://support.microsoft.com/office/2e34ad1b-e213-47ed-a806-5cc0d88751de

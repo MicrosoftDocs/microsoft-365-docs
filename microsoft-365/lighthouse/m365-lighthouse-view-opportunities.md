@@ -30,7 +30,7 @@ Each customer can have zero, one, or more opportunities. Only customers with one
 
 ## Before you begin
 
-You must hold the Executive report viewer or Report viewer role in Partner Center to access Sales Advisor. To learn more, see [Get access to Sales Advisor](m365-lighthouse-get-access-to-sales-advisor.md).
+You must hold the Account Manager role in Lighthouse. If you don't hold the Account Manager role, reach out to someone who holds the Administrator role in Lighthouse and ask them to assign the role to you. For more information, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md).
 
 ## View opportunities
 
@@ -78,5 +78,4 @@ Lighthouse exports the data displayed into a CSV file that you can integrate int
 ## Related content
   
 [Overview of Sales Advisor](m365-lighthouse-sales-advisor-overview.md) (article)\
-[Get access to Sales Advisor](m365-lighthouse-get-access-to-sales-advisor.md) (article)\
 [Understand opportunities and data in Sales Advisor](m365-lighthouse-understanding-opportunities-and-data.md) (article)

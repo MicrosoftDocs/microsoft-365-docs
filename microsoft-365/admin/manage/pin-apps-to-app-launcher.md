@@ -7,7 +7,7 @@ author: kwekuako
 manager: scotv
 ms.date: 01/06/2025
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.collection:
 - Tier3
 - scotvorg 

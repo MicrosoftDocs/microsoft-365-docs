@@ -2199,6 +2199,11 @@
               "source_path": "microsoft-365/admin/misc/places-ios-mobile.md",
               "redirect_url": "/microsoft-365/admin/",
               "redirect_document_id": false
-              }
+              },
+              {
+                "source_path": "microsoft-365/admin/misc/admin-controls-profile-videos.md",
+                "redirect_url": "/microsoft-365/admin/add-users/change-user-profile-photos.md",
+                "redirect_document_id": false
+                }
    ]
  }

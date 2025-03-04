@@ -4,7 +4,7 @@ description: Learn how to run a pilot deployment for the frontline workers in yo
 author: lana-chin
 ms.author: v-chinlana
 manager: jtremper
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150

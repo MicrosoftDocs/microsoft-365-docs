@@ -32,7 +32,7 @@ As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on 
 
 |Category|OneDrive or SharePoint|SharePoint Embedded|
 |-----|-----|-----|
-|  |This column applies to Loop content:  <ul><li>Created in all other places without tightly associated collaborative storage (for example, Teams chat, Outlook email, Word for the web, Whiteboard) ➡️️ in the creator's OneDrive  <li>Created in places with dedicated shared storage (for example, Teams channels) ➡️️ SharePoint  </ul>|This column applies to Loop content:  <ul><li>Created inside the Loop app: Workspaces, Ideas ➡️ in SharePoint Embedded, one container per Loop workspace  </ul>|
+|  |This column applies to Loop content:  <ul><li>Created in all other places without tightly associated collaborative storage (for example, Teams chat, Outlook email, Word for the web, Whiteboard) ➡️️ in the creator's OneDrive  <li>Created in places with dedicated shared storage (for example, Teams channels) ➡️️ SharePoint  </ul>|This column applies to Loop content:  <ul><li>Created inside the Loop app: Workspaces, Ideas ➡️ in SharePoint Embedded, one container per Loop workspace  <li>Learn more about [Loop storage](/microsoft-365/loop/loop-workspaces-storage-permission#loop-storage), which is combined with SharePoint in your tenant.</ul>|
 |***Foundations***|---|---|
 |Admin toggles  |**[Admin Toggles](/microsoft-365/loop/loop-components-configuration#available-policy-settings)** exist to turn on or off creation of and live rendering of Loop components in the Microsoft 365 ecosystem. If you enable Loop components in the Microsoft 365 ecosystem via the primary toggle, there are additional toggles to turn on or off Loop components in Outlook or Teams chats and channels. There's also an additional toggle to turn on or off Loop components for collaborative meeting notes.|**[Admin Toggle](/microsoft-365/loop/loop-workspaces-configuration)** exists to turn on or off creation of content stored in SharePoint Embedded, including Loop Ideas and new workspaces.|
 |GDPR  |**GDPR** data subject requests can be serviced as part of the [Microsoft Purview portal](/compliance/regulatory/gdpr-data-subject-requests#data-subject-request-admin-tools) and [Purview eDiscovery workflows](/purview/ediscovery)|**GDPR** data subject requests can be serviced as part of the [Microsoft Purview portal](/compliance/regulatory/gdpr-data-subject-requests#data-subject-request-admin-tools) and [Purview eDiscovery workflows](/purview/ediscovery)|
@@ -71,7 +71,7 @@ As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on 
 ### Available admin capabilities
 
 For detailed information on existing capabilities in SharePoint Admin Center and PowerShell:
-  - Available: [Manage SharePoint Embedded containers in SharePoint Admin Center](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/ctaux)
+  - Available: [Manage SharePoint Embedded containers in SharePoint Admin Center](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/ctaux) - Learn more about [Loop storage](/microsoft-365/loop/loop-workspaces-storage-permission#loop-storage), which is combined with SharePoint in your tenant.
   - Available: [SharePoint Embedded container management in PowerShell](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/ctapowershell)
 
 ### Not yet available

@@ -7,7 +7,7 @@ manager: scotv
 ms.reviewer: aakash
 ms.date: 06/30/2023
 audience: Admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
@@ -38,7 +38,7 @@ The **Multifactor authentication** page provides detailed information on the sta
 
 ## Multifactor authentication page
 
-The Multifactor authentication page includes the following:
+The Multifactor authentication page includes:
 
 - MFA enforcement
 - MFA registration
@@ -56,23 +56,23 @@ The MFA enforcement graph measures MFA enforcement progress by tenant, reporting
 - **No MFA detected** - No Conditional Access policies that require MFA are enabled, and Security defaults have been disabled.
 
 > [!NOTE]
-> The detection of a Conditional Access policy that requires MFA with a deployment state of enabled does not mean that all targeted users will be required to authenticate with MFA. An assessment of a tenant's conditional access policies in Microsoft 365 Lighthouse or the tenant's Microsoft Entra admin center is needed to confirm the tenant is secure.
+> The detection of a Conditional Access policy that requires MFA with a deployment state of enabled doesn't mean that all targeted users will be required to authenticate with MFA. An assessment of a tenant's conditional access policies in Microsoft 365 Lighthouse or the tenant's Microsoft Entra admin center is needed to confirm the tenant is secure.
 
 ## MFA registration
 
 The MFA registration graph measures MFA registration progress by user, reporting the registration status of MFA for each user as either:
 
-- **Registered** – The user has registered for MFA.
-- **Not registered for MFA** – The user hasn't registered for MFA.
-- **Excluded from MFA** – The user has been excluded from MFA registration in Lighthouse.
+- **Registered** – The user registered for MFA.
+- **Not registered for MFA** – The user didn't register for MFA.
+- **Excluded from MFA** – The user was excluded from MFA registration in Lighthouse.
 - **Data unavailable due to missing license** – The user is a member of a tenant for which data is unavailable due to a missing license.
 
 > [!NOTE]
-> The exclusion of a user from MFA registration in Lighthouse does not automatically result in the user's exclusion from the applicable deployment task in Lighthouse or from a Conditional Access policy configured in the tenant. To ensure that the user is excluded from the applicable deployment task in Lighthouse and from Conditional Access policies configured in the tenant, see [Manage multifactor authentication](m365-lighthouse-manage-mfa.md).
+> The exclusion of a user from MFA registration in Lighthouse doesn't automatically result in the user's exclusion from the applicable deployment task in Lighthouse or from a Conditional Access policy configured in the tenant. To ensure that the user is excluded from the applicable deployment task in Lighthouse and from Conditional Access policies configured in the tenant, see [Manage multifactor authentication](m365-lighthouse-manage-mfa.md).
 
 ## MFA insights
 
-The MFA insights table can be filtered by MFA enablement method and availability of MFA registration progress.
+You can filter the MFA insights table by MFA enablement method and availability of MFA registration progress.
 
 The table provides the following information for each tenant:
 
@@ -80,11 +80,11 @@ The table provides the following information for each tenant:
 |-----------------------|-----------------------------------|
 |Tenant                                 | The name of the tenant.        |
 |Total users                            | The number of users in the tenant.        |
-|Users excluded from MFA registration   |  The number of users that have been excluded from MFA registration in Lighthouse.       |
+|Users excluded from MFA registration   | The number of users excluded from MFA registration in Lighthouse.       |
 |Registration progress                  | The number of users not excluded from MFA registration in Lighthouse that have registered. <br> **NOTE:** The number of Registered users may include users excluded from MFA registration in Lighthouse.      |
 |MFA enablement method                  | The MFA enablement method employed by the tenant.        |
 |Recommended actions                    | The actions that are recommended to optimize the security of the tenant.        |
-|Last refreshed                         |  The date at which the data was last refreshed.       |
+|Last refreshed                         | The date the data was last refreshed.       |
 
 ### Recommended actions
 
@@ -126,7 +126,7 @@ The tab lists, links to, and reports the state of each Conditional Access policy
 
 The tab provides recommended actions for managing MFA registration and lists the user accounts that have already been enabled for MFA but still need to register using their allowed verification options to be capable of using MFA.
 
-The users not registered for MFA table can be exported, refreshed, or filtered by admins, members, and guest users, and it allows you to select user accounts to email, exclude, or block.
+The table of users not registered for MFA can be exported, refreshed, or filtered by admins, members, and guest users, and it allows you to select user accounts to email, exclude, or block.
 
 ## Excluded users tab
 

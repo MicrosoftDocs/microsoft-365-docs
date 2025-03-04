@@ -83,6 +83,9 @@ conceptualContent:
             - url: /office/troubleshoot
               itemType: reference
               text: Troubleshooting and support
+            - url: /microsoft-365/services/
+              itemType: overview
+              text: Microsoft 365 pay-as-you-go services
         # Card
         - title: Products
           links:

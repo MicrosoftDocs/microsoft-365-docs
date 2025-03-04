@@ -7,7 +7,7 @@ author: twernermsft
 manager: scotv
 ms.date: 02/18/2020
 audience: Admin
-ms.topic: article
+ms.topic: product-comparison
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 

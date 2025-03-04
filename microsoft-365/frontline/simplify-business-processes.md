@@ -1,7 +1,7 @@
 ---
 title: Simplify business processes for frontline teams
 description: Learn how your frontline workforce can simplify their business processes with Microsoft Teams.
-ms.topic: conceptual
+ms.topic: solution-overview
 author: lana-chin
 ms.author: v-chinlana
 manager: jtremper

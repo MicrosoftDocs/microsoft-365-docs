@@ -6,7 +6,7 @@ manager: jtremper
 ms.reviewer: ssquires
 ms.date: 08/09/2024
 audience: admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
 search.appverid: 
@@ -100,4 +100,4 @@ To turn off autofill on a specific column, follow these steps:
 |**Currency**      | \<insert the question here>? Reply in a valid U.S. currency format. If the documents don't provide enough information, leave the answer blank.      | What is the total cost of the project as detailed in the invoice? Reply in a valid U.S. currency format. If the documents don't provide enough information, leave the answer blank.      |
 
 > [!NOTE]
-> To see the column types that are currently available for autofill, see [Supported column data types](autofill-overview.md#supported-column-data-types).
+> To see the column types that are currently available for autofill, see [Requirements and limitations](autofill-overview.md#requirements-and-limitations).

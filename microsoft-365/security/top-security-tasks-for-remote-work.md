@@ -223,7 +223,7 @@ Microsoft 365 provides the following resources to help inform users in your orga
 |Microsoft 365 security|[Learning module: Secure your organization with built-in, intelligent security from Microsoft 365](/training/modules/security-with-microsoft-365) <p>This module enables you to describe how Microsoft 365 security features work together and to articulate the benefits of these security features.|
 |Multifactor authentication|[Two-step verification: What is the additional verification page?](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>This article helps end users understand what multifactor authentication is and why it's being used at your organization.|
 
-In addition to this guidance, Microsoft recommends that your users take the actions described in this article: [Protect your account and devices from hackers and malware](https://support.office.com/article/066d6216-a56b-4f90-9af3-b3a1e9a327d6.aspx). These actions include:
+In addition to this guidance, Microsoft recommends that your users take the actions described in this article: [The keys to the kingdom - securing your devices and accounts](https://support.microsoft.com/office/a925f8ad-af7e-40d8-9ce4-60ea1cac2ba4). These actions include:
 
 - Using strong passwords
 - Protecting devices

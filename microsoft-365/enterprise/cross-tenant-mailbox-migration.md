@@ -6,7 +6,7 @@ author: kelleyvice-msft
 manager: scotv
 ms.service: microsoft-365-enterprise
 ms.subservice: multi-tenant
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 f1.keywords:
   - NOCSH
 ms.date: 02/01/2024
@@ -166,6 +166,8 @@ Now that you've successfully created the migration application and secret, the n
 
    > [!NOTE]
    > You'll need the application ID of the mailbox migration app you just created and the password (secret) you configured in [Prepare the target (destination) tenant by creating the migration application and secret](#prepare-the-target-destination-tenant-by-creating-the-migration-application-and-secret). Depending on the Microsoft 365 cloud instance you use, your endpoint may be different. See the [Microsoft 365 endpoints](microsoft-365-endpoints.md) page; select the correct instance for your tenant; then review the Exchange Online _Optimize/Required_ address, and replace as appropriate.
+   
+   > Your trusted partner (source tenant administrator) should accept the application using the URL mentioned in the previous section before you proceed with the next steps, otherwise, the last command in the below commands will fail with an authentication error and you will not be able to complete the migration endpoint creation.
 
    ```PowerShell
    $AppId = "[Guid copied from the migrations app]"

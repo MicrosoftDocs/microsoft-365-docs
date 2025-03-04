@@ -6,7 +6,7 @@ manager: jacktremper
 ms.reviewer: amitman 
 ms.date: 06/21/2021
 audience: admin
-ms.topic: article
+ms.topic: integration
 ms.service: microsoft-365-business
 f1.keywords:
 - CSH

@@ -110,6 +110,12 @@ The following table lists the available products and their **ProductId**. It als
 | Product | ProductId | Is trial without payment method enabled? |
 |-----------------------------|--------------|--------------|
 | Clipchamp Premium | CFQ7TTC0N8SS | No |
+| Dynamics 365 BC | DYNAMICSBC | No |
+| Dynamics 365 CE | DYNAMICSCE | No|
+| Dynamics 365 Marketing Additional Application | CFQ7TTC0LHVK | No|
+| Dynamics 365 Marketing |CFQ7TTC0LH3N| No | 
+| Dynamics 365 Marketing Attach | CFQ7TTC0LHWP | No|
+| Clipchamp Premium | CFQ7TTC0N8SS | No |
 | Microsoft 365 Copilot | CFQ7TTC0MM8R | No |
 | Microsoft 365 F3 | CFQ7TTC0LH05 | No |
 | Microsoft Purview Discovery | CFQ7TTC0N8SL | Yes |
@@ -121,11 +127,16 @@ The following table lists the available products and their **ProductId**. It als
 | Planner Plan 1* | CFQ7TTC0HDB1 | Yes |
 | Project Plan 3* | CFQ7TTC0HDB0 | No |
 | Python in Excel | CFQ7TTC0S3X1 | No |
+| Teams Essential | CFQ7TTC0JN4R | No |
 | Teams Exploratory | CFQ7TTC0J1FV | Yes |
 | Teams Premium Introductory Pricing | CFQ7TTC0RM8K | Yes |
+| Windows 365 Business with Windows Hybrid Benefit | CFQ7TTC0HX99 | No | 
+| Windows 365 Business | CFQ7TTC0J203 | No|
+| Windows 365 Enterprise | CFQ7TTC0HHS9 | No | 
 | Visio Plan 1* | CFQ7TTC0HD33 | Yes |
 | Visio Plan 2* | CFQ7TTC0HD32 | No |
 | Viva Goals (self-service trials only) | CFQ7TTC0PW0V | Yes |
+
 
 *These items are updated IDs. If you previously blocked products using the old IDs, they're automatically blocked using the new IDs. No other work is required.
 

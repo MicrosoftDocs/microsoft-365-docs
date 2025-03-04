@@ -26,7 +26,7 @@ description: "Learn how to manage Loop components in your organization."
 
 # Loop admin policies for Loop components and Loop workspaces
 
-Loop components and integrations are backed by `.loop` files (earlier releases of Loop created these as `.fluid` files), stored in OneDrive, SharePoint, or [SharePoint Embedded](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/cta). IT administrators need to manage creation of Loop content and integrations using **BOTH**:
+Loop components and integrations are backed by `.loop` files (earlier releases of Loop created these as `.fluid` files), stored in OneDrive, SharePoint, or [SharePoint Embedded](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/cta). Learn more about [Loop storage](/microsoft-365/loop/loop-workspaces-storage-permission#loop-storage), which is combined with SharePoint in your tenant. IT administrators need to manage creation of Loop content and integrations using **BOTH**:
 
 1. Cloud Policy
 1. SharePoint PowerShell command (Teams only)

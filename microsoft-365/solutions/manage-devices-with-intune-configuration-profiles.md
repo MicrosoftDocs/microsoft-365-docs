@@ -10,7 +10,7 @@ manager: dougeby
 ms.date: 04/17/2024
 audience: ITPro
 description: Get started with configuration profiles to enforce secure settings on devices using Intune to transition these security controls to the cloud.
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:

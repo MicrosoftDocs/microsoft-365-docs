@@ -58,7 +58,7 @@ For tenant admins:
 
 For non-admins:
 
-1. Go to <a href="https://setup.microsoft.com/microsoft-365-fasttrack-assistance" target="_blank">setup.microsoft.com/microsoft-365-fasttrack-assistance</a>. <!--2024-02-22: The doc build says the target site doesn't exist, but this link works fine.-->
+1. Go to <a href="https://setup.cloud.microsoft/microsoft-365-fasttrack-assistance" target="_blank">setup.cloud.microsoft/microsoft-365-fasttrack-assistance</a>.
 
 1. Select **Sign in** and choose **I'm not an admin** before entering your work or school account.
 

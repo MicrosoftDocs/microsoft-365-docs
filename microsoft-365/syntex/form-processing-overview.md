@@ -6,7 +6,7 @@ manager: jtremper
 ms.reviewer: ssquires
 ms.date: 01/22/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: intro-overview
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence

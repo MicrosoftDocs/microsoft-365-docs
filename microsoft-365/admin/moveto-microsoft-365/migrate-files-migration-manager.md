@@ -7,7 +7,7 @@ author: efrene
 manager: scotv
 ms.date: 05/31/2024
 audience: Admin
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 

@@ -6,7 +6,7 @@ ms.reviewer: ssquires, kkameth
 manager: jtremper
 ms.date: 07/07/2024
 audience: admin
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ms.service: microsoft-syntex
 ms.collection: 
 - enabler-strategic

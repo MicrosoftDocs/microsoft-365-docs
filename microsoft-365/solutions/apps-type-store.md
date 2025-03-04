@@ -4,7 +4,7 @@ ms.author: erikre
 author: erikre
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: concept-article
 ms.date: 03/29/2024
 description: Understand store apps as they apply to a managed environment.
 ms.service: o365-solutions

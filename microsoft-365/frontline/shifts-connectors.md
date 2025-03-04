@@ -3,7 +3,7 @@ title: Shifts connectors
 author: lana-chin
 ms.author: v-chinlana
 manager: jtremper
-ms.topic: conceptual
+ms.topic: article
 audience: admin
 ms.reviewer: harrywong
 ms.service: microsoft-365-frontline

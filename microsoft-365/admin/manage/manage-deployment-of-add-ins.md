@@ -7,7 +7,7 @@ author: efrene
 manager: scotv
 ms.date: 10/23/2024
 audience: Admin
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 

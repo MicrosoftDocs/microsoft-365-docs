@@ -21,6 +21,7 @@ ms.custom:
 - commerce_signup
 - AdminSurgePortfolio
 - admindeeplinkMAC
+- campaignIDs-batch2
 search.appverid: MET150
 description: "Learn how to verify your school's eligibility for Microsoft 365 Education academic pricing."
 ms.date: 12/19/2023

@@ -6,7 +6,7 @@ ms.author: avering
 manager: mimast
 ms.date: 09/12/2024
 audience: admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ---
 

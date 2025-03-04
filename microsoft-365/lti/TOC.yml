@@ -9,30 +9,32 @@ items:
       items:
       - name: Use Microsoft OneDrive LTI with Canvas 
         href: onedrive-lti.md
+      - name: Use Microsoft Teams Assignments with Canvas
+        href: teams-assignments-with-canvas.md
       - name: Use Microsoft Teams classes with Canvas 
         href: teams-classes-with-canvas.md
       - name: Use Microsoft Teams meetings with Canvas 
         href: teams-meetings-with-canvas.md
-      - name: Use Microsoft Teams Assignments with Canvas
-        href: teams-assignments-with-canvas.md
       - name: Use Microsoft Reflect LTI with Canvas
         href: reflect-lti-canvas.md
     - name: Blackboard integrations
       items:
       - name: Use Microsoft OneDrive LTI with Blackboard
         href: onedrive-lti-blackboard.md
+      - name: Use Microsoft Teams Assignments with Blackboard  
+        href: teams-assignments-with-blackboard.md
       - name: Use Microsoft Teams meetings with Blackboard Learn
         href: teams-meetings-with-blackboard-learn.md
       - name: Use Microsoft Teams classes with Blackboard Learn Ultra 
         href: teams-classes-with-blackboard.md
-      - name: Use Microsoft Teams Assignments with Blackboard  
-        href: teams-assignments-with-blackboard.md
       - name: Use Microsoft Reflect LTI with Blackboard Learn
         href: reflect-lti-blackboard.md        
     - name: Moodle integrations
       items:
       - name: Set up and configure the Moodle plugin
         href: moodle-plugin-configuration.md
+      - name: Use Microsoft Teams Assignments with Moodle  
+        href: teams-assignments-with-moodle.md        
       - name: Use Microsoft Teams classes and meetings with Moodle
         href: teams-classes-meetings-with-moodle.md
       - name: Use Microsoft Reflect LTI with Moodle
@@ -45,20 +47,22 @@ items:
         href: open-lms-teams-classes-and-meetings.md
     - name: D2L Brightspace integrations
       items:
-      - name: Use Microsoft Teams classes and meetings with Brightspace
-        href: teams-classes-meetings-with-brightspace.md
       - name: Use Microsoft OneDrive LTI with Brightspace
         href: onedrive-lti-brightspace.md
+      - name: Use Microsoft Teams Assignments with Brightspace  
+        href: teams-assignments-with-brightspace.md
+      - name: Use Microsoft Teams classes and meetings with Brightspace
+        href: teams-classes-meetings-with-brightspace.md
       - name: Use Microsoft Reflect LTI with D2L Brightspace
         href: reflect-lti-brightspace.md        
     - name: Schoology Learning integrations
       items:
       - name: Use Microsoft OneDrive LTI with Schoology Learning
         href: onedrive-lti-schoology.md
-      - name: Use Microsoft Teams meetings with Schoology Learning
-        href: teams-classes-and-meetings-with-schoology.md
       - name: Use Microsoft Teams Assignments with Schoology Learning
         href: teams-assignments-with-schoology.md 
+      - name: Use Microsoft Teams meetings with Schoology Learning
+        href: teams-classes-and-meetings-with-schoology.md
       - name: Use Microsoft Reflect LTI with Schoology Learning
         href: reflect-lti-schoology.md
     - name: Other LMS integrations

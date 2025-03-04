@@ -6,7 +6,7 @@ manager: jtremper
 ms.reviewer: ssathyamoort
 ms.date: 12/10/2024
 audience: admin
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
 search.appverid: 
@@ -52,6 +52,7 @@ With SharePoint Agreements, you can:
 |[Licensing requirements](agreements-license-requirements.md)    |Get and assign licenses for SharePoint Agreements.         |
 |[Set up the solution](agreements-setup.md)    |Set up and manage workspaces, add the Agreements app in Microsoft Teams, and more.         |
 |[Get users ready](agreements-user-prereqs.md)    |Get users ready to use all of the  solution features.         |
+|[Organize and import your existing agreements](agreements-import-agreement.md)    |Add existing agreements by uploading signed documents.        |
 |[Create a template](agreements-create-template.md)    |Create and publish templates, set up fields and sections, configure workflows, and more.         |
 |[Update a template](agreements-update-template.md)    |Find and edit existing templates, and publish updates to a template.         |
 |[Manage sections in a template](agreements-manage-sections.md)    |Publish a new section, insert a section into a template, edit a section, and configure section settings.         |
@@ -59,7 +60,6 @@ With SharePoint Agreements, you can:
 |[Analyze section revisions](agreements-analyze-sections.md)    |Use the **Analyze section revisions** feature to detect changes in embedded sections, summarize the changes, and offer suggestions.       |
 |[View reports](agreements-reports.md)    |Learn about the reports that are available to monitor all agreements, their statuses, and other essential metrics.         |
 |[Receive approval notifications](agreements-notifications.md)    |Learn about approval notifications in the Approvals app and in email.         |
-|[Import an agreement](agreements-import-agreement.md)    |Add existing agreements by uploading signed documents.        |
 
 > [!NOTE]
 > SharePoint Agreements is not yet available for Government Community Cloud (GCC) organizations. However, it is planned and will be available in the future.

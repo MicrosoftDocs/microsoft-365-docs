@@ -6,7 +6,7 @@ manager: jtremper
 ms.date: 01/10/2025
 audience: admin
 ms.service: microsoft-syntex
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex

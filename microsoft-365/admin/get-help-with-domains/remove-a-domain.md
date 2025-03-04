@@ -2,12 +2,12 @@
 title: "Remove a domain"
 f1.keywords:
 - NOCSH
-ms.author: nkagole
-author: nataliekagole
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
-ms.date: 09/22/2023
+ms.date: 11/18/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
@@ -134,9 +134,6 @@ You can also use PowerShell to move users to another domain. See [Update-MgUser]
 
 4. Follow any additional prompts, and then select **Close**.
 
-
-
-
 ### Remove a custom domain
 
 If you are canceling your subscription and you use a custom domain, there are a few extra steps that you must do before you can cancel your subscription. 
@@ -160,8 +157,6 @@ If you switched your nameserver (NS) records to Microsoft 365 when you set up yo
 If you didn't switch NS records when you set up your domain, when you change the MX record, your mail starts going to the new address right away.
 
 To change your NS records, see [Change nameservers to set up Microsoft 365 with any domain registrar](../../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md).
-
-
 
 ## How long does it take for a domain to be removed?
 
@@ -191,8 +186,8 @@ Still not working? Your domain might need to be manually removed. [Give us a cal
 
 ## Related content
 
-[Domains FAQ](../setup/domains-faq.yml) (article)
+- [Domains FAQ](../setup/domains-faq.yml) (article)
 
-[Switch to a different Microsoft 365 for business plan](../../commerce/subscriptions/switch-to-a-different-plan.md) (article)
+- [Switch to a different Microsoft 365 for business plan](../../commerce/subscriptions/switch-to-a-different-plan.md) (article)
 
-[Cancel your subscription](../../commerce/subscriptions/cancel-your-subscription.md) (article)
+- [Cancel your subscription](../../commerce/subscriptions/cancel-your-subscription.md) (article)

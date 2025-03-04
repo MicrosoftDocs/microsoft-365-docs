@@ -6,7 +6,7 @@ manager: jtremper
 ms.reviewer: lauris
 ms.date: 10/29/2024
 audience: admin
-ms.topic: conceptual
+ms.topic: product-comparison
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 

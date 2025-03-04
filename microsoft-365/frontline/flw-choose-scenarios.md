@@ -6,7 +6,7 @@ author: lana-chin
 ms.author: v-chinlana
 manager: jtremper
 audience: admin
-ms.topic: conceptual
+ms.topic: solution-overview
 ms.service: microsoft-365-frontline
 ms.localizationpriority: high
 ms.collection: 

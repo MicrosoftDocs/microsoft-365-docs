@@ -168,6 +168,8 @@ items:
             - name: Exchange Online monitoring
               href: microsoft-365-exchange-monitoring.md
               items:
+                - name: Service advisories for non-compliant shared mailboxes
+                  href: microsoft-365-non-compliant-shared-mailboxes-exo-service-advisory.md
                 - name: Service advisories for messages pending delivery to external recipients
                   href: microsoft-365-external-recipient-service-alerts.md
                 - name: Service advisories for Mailbox utilization

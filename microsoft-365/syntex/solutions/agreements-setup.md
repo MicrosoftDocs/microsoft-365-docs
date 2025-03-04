@@ -6,7 +6,7 @@ manager: jtremper
 ms.reviewer: ssathyamoort, rk-menon
 ms.date: 10/22/2024
 audience: admin
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
 search.appverid: 

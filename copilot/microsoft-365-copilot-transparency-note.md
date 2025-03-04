@@ -13,7 +13,7 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 hideEdit: true
-ms.date: 01/15/2025
+ms.date: 02/06/2025
 ---
 
 # Transparency Note for Microsoft 365 Copilot
@@ -84,7 +84,7 @@ The capabilities that users see in Microsoft 365 applications appear as addition
 
 - **Microsoft Graph** has long been fundamental to Microsoft 365. It includes information about the relationships between users, activities, and an organization’s data. Microsoft Graph API brings more context from customer signals into the prompt, such as information from emails, chats, documents, and meetings. For more information, see [Overview of Microsoft Graph](/graph/overview) and [Major services and features in Microsoft Graph](/graph/overview-major-services).
 
-- **Microsoft 365 Copilot Chat** enables customers to bring work content and context to Microsoft 365 Copilot's chat capabilities. With Microsoft 365 Copilot Chat, users can draft content, catch up on what they missed, and get answers to questions via open-ended prompts— all securely grounded in work data. Use Microsoft 365 Copilot Chat at many surfaces, including within Microsoft Teams, at [Microsoft365.com](https://www.microsoft365.com/), and at [copilot.microsoft.com](https://copilot.microsoft.com/).
+- **Microsoft 365 Copilot Chat** enables customers to bring work content and context to Microsoft 365 Copilot's chat capabilities. With Microsoft 365 Copilot Chat, users can draft content, catch up on what they missed, and get answers to questions via open-ended prompts — all securely grounded in work data. Use Microsoft 365 Copilot Chat at many surfaces, including within Microsoft Teams, at [Microsoft365.com](https://www.microsoft365.com/), and at [copilot.microsoft.com](https://copilot.microsoft.com/).
 
 - **Semantic index** is an index generated from content in Microsoft Graph. It's used to aid in the processing of user prompts to produce contextually relevant responses. It allows organizations to search through billions of vectors (mathematical representations of features or attributes) and return related results. The semantic index is designed to respect individual users’ security context, and only content that a user can access is shown. Semantic index is built on Microsoft’s comprehensive approach to security, compliance, privacy, and respects all organizational boundaries within the customer’s tenant. For more information, see [Semantic index for Copilot](/MicrosoftSearch/semantic-index-for-copilot).
 
@@ -99,6 +99,10 @@ The capabilities that users see in Microsoft 365 applications appear as addition
 - Microsoft 365 Copilot returns the response to the app, where the user can review and assess the response.
 
 The data is encrypted while it's stored and isn't used to train Azure OpenAI Service [foundation LLMs](https://blogs.microsoft.com/on-the-issues/2024/03/28/data-protection-responsible-ai-azure-copilot/), including those used by Microsoft 365 Copilot. For more information about this, see [Data, Privacy, and Security for Microsoft 365 Copilot](microsoft-365-copilot-privacy.md).
+
+#### How Microsoft 365 Copilot generates responses without web content or organizational data
+
+Microsoft 365 Copilot doesn't require web content or organizational data to provide a response, but that information can help improve the quality, accuracy, and relevance of its response. When responding without web or organizational data, Microsoft 365 Copilot relies only on its LLMs to understand prompts and generate responses. The process involves parsing the input, leveraging the model's internal knowledge base, and refining the response to ensure it's contextually appropriate.
 
 ### Extensibility & customization
 

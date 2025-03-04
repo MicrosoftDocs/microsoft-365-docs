@@ -5,8 +5,8 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: anrasto, shrganguly
-ms.date: 04/23/2024
-ms.topic: conceptual
+ms.date: 01/23/2025
+ms.topic: how-to
 ms.service: microsoft-syntex
 search.appverid:
 ms.collection:
@@ -46,10 +46,10 @@ Follow these steps to automatically generate documents using a modern template a
 
 6. Enter the site information, and select the document library that contains the modern template.
 
-7. Once the template is selected, you'll start seeing the template fields. Associate the fields with the columns in the list.
+7. Once the template is selected, you start seeing the template fields. Associate the fields with the columns in the list.
 
     > [!NOTE]
-    >Data mapping in the template is not supported in this action. For example, if you have associated a field in your template with a managed metadata column, during automated generation you will be able to associate this field with a column in a list.
+    >Data mapping in the template isn't supported in this action. For example, if you associate a field in your template with a managed metadata column, during automated generation you can associate this field with a column in a list.
 
 8. When done, select **Save** to save the flow.
 
@@ -63,7 +63,7 @@ Follow these steps to automatically generate documents using a modern template a
 
     To fill the table, placeholder values should be passed as a list of JSON objects with column name and values. For example:
 
-    *[{"Column 1":"Low","Column 2":"Test","Column 3":"Test","Column 4":"Low"},{"Column 1":"Medium","Column 2":"Test","Column 3":"Test","Column 4":"Medium"}]*
+    `[{"Column 1":"Low","Column 2":"Test","Column 3":"Test","Column 4":"Low"},{"Column 1":"Medium","Column 2":"Test","Column 3":"Test","Column 4":"Medium"}]`
 
 11. The action doesn't support images, and templates containing these fields are hidden while selecting the templates in the action.
 

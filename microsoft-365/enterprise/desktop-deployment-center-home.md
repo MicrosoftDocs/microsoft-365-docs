@@ -7,7 +7,7 @@ author: kelleyvice-msft
 manager: scotv
 ms.date: 04/09/2024
 audience: ITPro
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: medium

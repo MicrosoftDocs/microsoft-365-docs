@@ -6,7 +6,7 @@ manager: jacktremper
 ms.reviewer: sovaish
 ms.date: 05/26/2021
 audience: admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 f1.keywords:
 - CSH

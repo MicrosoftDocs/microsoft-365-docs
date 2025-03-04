@@ -3,9 +3,9 @@ title: "Deploy Microsoft 365 Directory Synchronization in Microsoft Azure"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 03/21/2024
+ms.date: 02/12/2025
 audience: ITPro
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: medium
@@ -81,9 +81,15 @@ Before you deploy this solution in production, you can use the instructions in [
 
 Before you begin, review the following prerequisites for this solution:
   
-- Review the related planning content in [Plan your Azure virtual network](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#plan-your-azure-virtual-network).
+- An Azure subscription. For information about Azure subscriptions, go to the [How To Buy Azure page](https://azure.microsoft.com/pricing/purchase-options/).
 
-- Ensure that you meet all [Prerequisites](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#prerequisites) for configuring the Azure virtual network.
+- An available private IPv4 address space to assign to the virtual network and its subnets, with sufficient room for growth to accommodate the number of virtual machines needed now and in the future.
+
+- An available VPN device in your on-premises network to terminate the site-to-site VPN connection that supports the requirements for IPsec. For more information, see [About VPN devices for site-to-site virtual network connections](/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
+
+- Changes to your routing infrastructure so that traffic routed to the address space of the Azure virtual network gets forwarded to the VPN device that hosts the site-to-site VPN connection.
+
+- A web proxy that gives computers that are connected to the on-premises network and the Azure virtual network access to the Internet.
 
 - Have a Microsoft 365 subscription that includes the Active Directory integration feature. For information about Microsoft 365 subscriptions, go to the [Microsoft 365 subscription page](https://products.office.com/compare-all-microsoft-office-products?tab=2).
 
@@ -121,7 +127,7 @@ After deployment, you must also assign locations and licenses for the new user a
 
 ### Phase 1: Create and configure the Azure virtual network
 
-To create and configure the Azure virtual network, complete [Phase 1: Prepare your on-premises network](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#phase-1-prepare-your-on-premises-network) and [Phase 2: Create the cross-premises virtual network in Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#phase-2-create-the-cross-premises-virtual-network-in-azure) in the deployment roadmap of [Connect an on-premises network to a Microsoft Azure virtual network](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md).
+To create and configure the Azure virtual network, see [Tutorial: Create and manage a VPN gateway using the Azure portal](/azure/vpn-gateway/tutorial-create-gateway-portal).
   
 This is your resulting configuration.
   

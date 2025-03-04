@@ -9,6 +9,11 @@
             "source_path": "microsoft-365/lti/use-onedrive-with-lms.md",
             "redirect_url": "/lti/onedrive-lti",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoft-365/lti/assignments-lti-license-terms.md",
+            "redirect_url": "/lti/index",
+            "redirect_document_id": false
         }
     ]
 }

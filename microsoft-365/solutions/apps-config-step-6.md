@@ -4,7 +4,7 @@ ms.author: erikre
 author: erikre
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/29/2024
 description: Step 6. Configure other apps in Intune.
 ms.service: o365-solutions
@@ -64,7 +64,7 @@ You can allow users using Android personally owned and corporate-owned work prof
 
 ## App configuration policies for the Managed apps channel
 
-When you choose the **Managed apps** channel, you can choose you can select the app(s) you would like to target with the policy. You can target an app configuration policy to **Selected apps**, **All apps**, **All Microsoft apps**, or **Core Microsoft apps**. **All Apps** include all Microsoft and partner apps that have integrated the Intune SDK. **Microsoft Apps** include all Microsoft apps that have integrated the Intune SDK. **Core Microsoft apps** include a set of specific Microsoft apps. **Selected apps** allows you to apply an app configuration policy to specific apps. These specific apps can include **Public apps** and **Custom apps**. **Public apps** are apps contained in a predefined app group, such as store apps that you have added to Intune. **Custom apps** are apps that you that you have added from an app store and have also added to Intune.
+When you choose the **Managed apps** channel, you can choose you can select the app(s) you would like to target with the policy. You can target an app configuration policy to **Selected apps**, **All Apps**, **All Microsoft apps**, or **Core Microsoft apps**. **All Apps** include all Microsoft and partner apps that have integrated the Intune SDK. **Microsoft Apps** include all Microsoft apps that have integrated the Intune SDK. **Core Microsoft apps** include a set of specific Microsoft apps. **Selected apps** allows you to apply an app configuration policy to specific apps. These specific apps can include **Public apps** and **Custom apps**. **Public apps** are apps contained in a predefined app group, such as store apps that you have added to Intune. **Custom apps** are apps that you that you have added from an app store and have also added to Intune.
 
 > [!NOTE]
 > The MAM channel supports Microsoft Launcher and includes general configuration settings and Microsoft Tunnel settings.

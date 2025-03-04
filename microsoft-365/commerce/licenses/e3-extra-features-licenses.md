@@ -7,7 +7,7 @@ ms.author: cmcatee
 manager: scotv
 ms.reviewer: paprud, marketing
 audience: Admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium

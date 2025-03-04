@@ -6,7 +6,7 @@ ms.author: efrene
 author: efrene
 manager: scotv
 audience: Admin
-ms.topic: article
+ms.topic: overview
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:

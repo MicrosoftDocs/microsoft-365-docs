@@ -4,11 +4,17 @@ permissions:
   contents: write
   pull-requests: write
   actions: read
-  
 
+# Reduced the number of run times per day to three and changed to run only Mon-Fri since those are the days we have publishing. No point running on weekends.
+# Tried to reflect PDT/PST. There will be a couple weeks during the changeover months where time will be off an hour. 
 on:
-  schedule:
-  - cron: "0 */6 * * *"
+  schedule: 
+    ### PST ###
+  - cron: "45 17,22 * 11,12,1,2 1-5"   # 09:45 & 14:45 PST = 17:45 & 22:45 UTC, same day (Mon-Fri)
+  - cron: "45 7 * 11,12,1,2 2-6"       # 23:45 PST = 07:45 UTC, next day (Tue-Sat)
+    ### PDT ###
+  - cron: "45 16,21 * 3-10 1-5"        # 09:45 & 14:45 PDT = 16:45 & 21:45 UTC, same day (Mon-Fri)
+  - cron: "45 6 * 3-10 2-6"            # 23:45 PDT = 06:45 UTC, next day (Tue-Sat)
 
   workflow_dispatch:
 

@@ -3,7 +3,7 @@ title: "Microsoft Feedback Code of Conduct"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 11/18/2023
+ms.date: 02/24/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business

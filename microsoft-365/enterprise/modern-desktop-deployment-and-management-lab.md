@@ -9,7 +9,7 @@ manager: aaroncz
 ms.reviewer: alainme
 ms.date: 12/06/2024
 ms.audience: ITPro
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: medium

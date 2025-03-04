@@ -5,7 +5,7 @@ author: kelleyvice-msft
 ms.author: kvice
 manager: scotv
 ms.date: 07/29/2024
-ms.topic: conceptual 
+ms.topic: article
 f1.keywords:
 - NOCSH
 ms.service: microsoft-365-enterprise

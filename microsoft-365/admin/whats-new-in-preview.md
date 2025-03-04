@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 06/05/2024
+ms.date: 02/05/2024
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
@@ -51,6 +51,24 @@ And if you'd like to know what's new with other Microsoft cloud services, check 
 - [Microsoft 365 updates](/OfficeUpdates/)
 - [How to check Windows release health](/windows/deployment/update/check-release-health)
 
+## February 2025
+
+### Provide admin-initiated feedback for Microsoft 365 Copilot
+
+> [!VIDEO c67f2b9c-8ba4-44b5-8713-00063e92ba54]
+
+You can provide feedback about Microsoft 365 Copilot on behalf of your users within the Microsoft 365 admin center, supplementing the user-initiated feedback process. This helps Microsoft receive comprehensive diagnostic data to aid in debugging and improving the quality and relevance of Copilot's responses. Recent enhancements to this feature include:
+
+- **Role expansion** The feature now includes the AI Admin role in addition to Global Admin role, ensuring that more administrators can access and manage Copilot diagnostics.
+- **Selecting chat log prompt-response pairs** You can review and select specific chat log prompt-response pairs for feedback, providing more control over the data being shared.
+- **Date range selection** You can select a specific date range for a feedback submission, up to the past 30 days, allowing you to focus on issues within a particular time-frame.
+- **Product selection** You can choose from a list of Copilot products when submitting feedback, ensuring that the feedback is relevant to the specific product.
+- **List of frequently occurring issues** You can select from a predefined list of frequently occurring issues or enter issue details in a text box, streamlining the feedback process.
+
+As an admin, you play a pivotal role in setting the tone for how your organization adopts and benefits from new technologies. Hence, with admin-initiated feedback, we're empowering administrators to harness this capability for Copilot's continual improvement, all while ensuring the security and ownership of your organization’s data. 
+
+These enhancements provide more control and flexibility, ensuring that feedback is accurate and relevant. To learn more, see [Submit admin-initiated Copilot feedback from the Microsoft 365 admin center](/copilot/microsoft-365/provide-feedback).
+
 ## January 2025
 
 ### AI Administrator role in Microsoft 365 admin center
@@ -64,6 +82,9 @@ With the AI administrator role, you can:
 - **Access insights and support** View usage reports, adoption insights, organizational insights, and create and manage support tickets in Azure and the Microsoft 365 admin center.
 
 This new role is designed to empower your organization by providing specialized administrative capabilities for managing AI-related enterprise services, starting with Microsoft 365 Copilot, and slowly extending to other AI-driven functionalities. For more information about the AI administrator role and other roles in the admin center, see [About admin roles in the Microsoft 365 admin center](/admin/add-users/about-admin-roles).
+
+>[!NOTE]
+> The AI Administrator role is currently limited. For full administrative capabilities, it's recommended to use the Global Admin role until the AI Administrator role is fully functional. We're continuously expanding support for more functionalities to enhance the AI Administrator role.
 
 ## May 2023
 

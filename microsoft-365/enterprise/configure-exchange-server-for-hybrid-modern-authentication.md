@@ -6,7 +6,7 @@ manager: scotv
 ms.reviewer: ninob
 ms.date: 12/05/2024
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: medium

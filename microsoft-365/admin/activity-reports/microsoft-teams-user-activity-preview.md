@@ -25,13 +25,13 @@ description: "Learn how to get the Microsoft Teams user activity report and gain
 
 # Microsoft 365 Reports in the admin center - Microsoft Teams user activity
 
-The Microsoft 365 Reports dashboard shows you the activity overview across the products in your organization. It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md). In the Microsoft Teams user activity report, you can gain insights into the Microsoft Teams activity in your organization.
+The Microsoft 365 Reports dashboard shows you the activity overview across the products in your organization. It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview article](activity-reports.md). In the Microsoft Teams user activity report, you can gain insights into the Microsoft Teams activity in your organization.
 
 ## How to get to the Microsoft Teams user activity report
 
 1. In the admin center, go to the **Reports**, then select **Usage**.
 
-2. From the dashboard homepage, click on the **View more** button on the Microsoft Teams activity card.
+2. From the dashboard homepage, select the **View more** button on the Microsoft Teams activity card.
 
 ## Interpret the Microsoft Teams user activity report
 
@@ -45,7 +45,7 @@ Select **Choose columns** to add or remove columns from the report.
 
 You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. The exported format for **audio time**, **video time**, and **screen share time** follows ISO8601 duration format.
 
-The **Microsoft Teams user activity** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table will show data for up to 28 days from the current date (not the date the report was generated).
+The **Microsoft Teams user activity** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table shows data for up to 28 days from the current date (not the date the report was generated).
 
 To ensure data quality, we perform daily data validation checks for the past three days and will be filling any gaps detected. You may notice differences in historical data during the process.
 
@@ -64,10 +64,10 @@ To ensure data quality, we perform daily data validation checks for the past thr
 |1:1 calls   <br/> |Call Count|The number of 1:1 calls that the user participated in during the specified time period.  <br/> |
 |Last activity date (UTC)  <br/> |Last Activity Date|The last date that the user participated in a Microsoft Teams activity.<br/> |
 |Meetings participated ad hoc   <br/> |Ad Hoc Meetings Attended Count|The number of ad hoc meetings a user participated in during the specified time period.  <br/> |
-|Meetings organized ad hoc <br/> |Ad Hoc Meetings Organized Count|The number of ad hoc meetings a user organized during the specified time period. <br/>|
+|Meetings organized ad hoc <br/> |Ad Hoc Meetings Organized Count|The number of ad hoc meetings a user organized during the specified time period. <br/> <br/> **Note**: MeetNow meetings initiated from a chat are reflected in the Teams user activity report as "Ad Hoc Meetings Organized." MeetNow meetings initiated from Teams calendar are reflected in the Teams user activity report as "Scheduled One-Time Meetings Organized." <br/> |
 |Total organized meetings  <br/> |Meetings Organized Count|The sum of one-time scheduled, Recurring, ad hoc and unclassified meetings a user organized during the specified time period.  <br/> |
-|Total participated meetings  <br/> |Meetings Attended Count|The sum of the one-time scheduled, recurring, ad hoc and unclassified meetings a user participated in during the specified time period.  <br/> |
-|Meetings organized scheduled one-time  <br/> |Scheduled One-time Meetings Organized Count|The number of one-time scheduled meetings a user organized during the specified time period.  <br/> |
+|Total participated meetings  <br/> |Meetings Attended Count|The sum of the one-time scheduled, recurring, ad hoc, and unclassified meetings a user participated in during the specified time period.  <br/> |
+|Meetings organized scheduled one-time  <br/> |Scheduled One-time Meetings Organized Count|The number of one-time scheduled meetings a user organized during the specified time period.  <br/> <br/> **Note**: MeetNow meetings initiated from Teams calendar are reflected in the Teams user activity report as "Scheduled One-Time Meetings Organized." MeetNow meetings initiated from a chat are reflected in the Teams user activity report as "Ad Hoc Meetings Organized." <br/> |
 |Meetings organized scheduled recurring  <br/> |Scheduled Recurring Meetings Organized Count|The number of recurring meetings a user organized during the specified time period.  <br/> |
 |Meetings participated scheduled one-time  <br/> |Scheduled One-time Meetings Attended Count|The number of the one-time scheduled meetings a user participated in during the specified time period.  <br/> |
 |Meetings participated scheduled recurring  <br/> |Scheduled Recurring Meetings Attended Count|The number of the recurring meetings a user participated in during the specified time period.  <br/> |

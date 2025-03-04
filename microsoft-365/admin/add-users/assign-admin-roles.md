@@ -7,7 +7,7 @@ author: kwekuako
 manager: scotv
 ms.date: 06/25/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 

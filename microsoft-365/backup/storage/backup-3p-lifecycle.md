@@ -1,18 +1,18 @@
 ---
 title: Application lifecycle for Microsoft 365 Backup Storage
-ms.author: diksha
-author: dikshau56
-manager: brgussin
+ms.author: chucked
+author: chuckedmonson
+manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 07/31/2024
-ms.topic: conceptual
+ms.date: 02/03/2025
+ms.topic: article
 ms.service: microsoft-365-backup
 ms.custom: backup
 search.appverid:
 ms.collection:
 ms.localizationpriority:  medium
-description: Application lifecycle for Microsoft 365 Backup Storage.
+description: Learn about the application lifecycle for Microsoft 365 Backup Storage.
 ---
 
 # Application lifecycle for Microsoft 365 Backup Storage
@@ -112,6 +112,10 @@ After you enable the Billing Policy, your application will be the Microsoft 365 
 
 > [!NOTE]
 > You can execute this API multiple times in that it's idempotent. It's recommended to enable the Billing Policy in the Consuming Tenant if, for whatever reason, your Billing Policy changes. For example, if you want to change the Azure Subscription ID or Resource Group.
+
+### Graph PowerShell support
+
+Microsoft Backup Storage supports PowerShell via Microsoft Graph. For more information about the PowerShell cmdlets, see [backupRestoreRoot resource type](/graph/api/resources/backuprestoreroot).
 
 ## Offboard a Microsoft 365 Backup application
 

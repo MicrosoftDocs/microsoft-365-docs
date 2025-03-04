@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 ms.date: 07/31/2024
 audience: Admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: medium

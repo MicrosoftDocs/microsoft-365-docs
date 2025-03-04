@@ -7,7 +7,7 @@ author: kwekuako
 manager: scotv
 ms.date: 11/11/2024
 audience: Admin
-ms.topic: article
+ms.topic: product-comparison
 ms.service: microsoft-365-basic-mobility-security
 ms.localizationpriority: medium
 ms.collection:

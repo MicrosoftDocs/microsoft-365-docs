@@ -7,7 +7,7 @@ author: efrene
 manager: scotv
 ms.date: 05/31/2024
 audience: Admin
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
@@ -44,7 +44,7 @@ When you purchase Microsoft 365 Business Basic, you have the option of using a d
 
 - If you purchased a new domain when you signed up, your domain is all set up and you can move to [Add users and assign licenses](#add-users-and-assign-licenses).
 
- ::: moniker range="o365-worldwide"
+::: moniker range="o365-worldwide"
 
 1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.cloud.microsoft</a>.
 
@@ -56,14 +56,16 @@ When you purchase Microsoft 365 Business Basic, you have the option of using a d
 
 ::: moniker-end
 
-1. Choose **Go to guided setup** to start the wizard.
+2. Choose **Go to guided setup** to start the wizard.
 
-1. In the **Add domain** step, enter the domain name you want to use (like contoso.com).
+3. Choose **Go to guided setup** to start the wizard.
+
+4. In the **Add domain** step, enter the domain name you want to use (like contoso.com).
 
     > [!IMPORTANT]
     > If you purchased a domain during the sign-up, you will not see **Add a domain** step here. Go to [Add users](#add-users-and-assign-licenses) instead.
 
-1. Follow the steps in the wizard to [Add DNS records to connect your domain](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) that verifies you own the domain. If you know your domain host, see also [Add a domain to Microsoft 365](/microsoft-365/admin/setup/add-domain).
+5. Follow the steps in the wizard to [Add DNS records to connect your domain](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) that verifies you own the domain. If you know your domain host, see also [Add a domain to Microsoft 365](/microsoft-365/admin/setup/add-domain).
 
     If your hosting provider is GoDaddy or another host enabled with [domain connect](/office365/admin/get-help-with-domains/domain-connect), the process is easy and you'll be automatically asked to sign in and let Microsoft authenticate on your behalf.
 

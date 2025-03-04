@@ -262,6 +262,8 @@ items:
               href: dns/create-dns-records-at-wix.md
             - name: Create DNS records for Microsoft using Windows-based DNS
               href: dns/create-dns-records-using-windows-based-dns.md
+            - name: Defederation Process for GoDaddy
+              href: get-help-with-domains/godaddy-defederation-process.md
         - name: Troubleshoot domain issues
           href: get-help-with-domains/find-and-fix-issues.md
     - name: Manage your data and services
@@ -272,6 +274,8 @@ items:
            items:
             - name: Manage agents for Copilot
               href: manage/manage-copilot-agents-integrated-apps.md
+            - name: Manage shared agents
+              href: manage/manage-shared-agents.md
             - name: Microsoft Graph connectors for Microsoft Search
               href: /microsoftsearch/connectors-overview
          - name: Monitor Microsoft 365 activity by using reports

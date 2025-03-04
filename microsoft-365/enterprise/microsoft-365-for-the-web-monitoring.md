@@ -54,8 +54,6 @@ Microsoft 365 for the web monitoring supports the following scenarios:
 
 Detailed views for each of these scenarios show the near real-time trend for the past seven days with the 60-minute aggregate compared with the previous week.
 
-:::image type="content" source="../media/microsoft-365-for-the-web-3.png" alt-text="Second screenshot that shows Excel for the web monitoring." lightbox="../media/microsoft-365-for-the-web-3.png":::
-
 ## Send us feedback
 
 Use the **Give feedback** option available on every page of the Microsoft 365 admin center.

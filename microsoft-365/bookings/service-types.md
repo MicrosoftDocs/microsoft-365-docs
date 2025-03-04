@@ -4,7 +4,7 @@ ms.author: camillepack
 author: pritikar
 manager: scotv
 ms.date: 07/11/2024  
-ms.topic: article
+ms.topic: how-to
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:

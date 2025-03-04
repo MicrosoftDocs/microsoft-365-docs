@@ -4,7 +4,7 @@ ms.author: jenz
 author: jenzamora
 manager: jtremper
 audience: Admin
-ms.topic: conceptual
+ms.topic: article
 ms.service: loop
 ms.reviewer: michalbr, dancost
 ms.date: 01/08/2025
@@ -46,7 +46,9 @@ Where the Loop content was originally created determines its storage location:
 
 ## Loop app's usage of organization's storage quota
 
-Loop app workspaces are stored inside your tenant, within SharePoint Embedded. All Loop workspaces and pages, including Shared workspaces, Personal workspaces, Ideas, and Copilot Pages, count against your tenant's storage quota, starting November 2023.
+Loop app workspaces are stored inside your tenant, within SharePoint Embedded. All Loop workspaces and pages, including Shared workspaces, Personal workspaces, Ideas, and Copilot Pages, count against your tenant's SharePoint storage quota.
+
+SharePoint Embedded also offers a platform to build your own applications. This usage pattern which bills per use, is different from Loop, and should not be confused with Loop. As described above, Loop's storage in SharePoint Embedded is combined and measured with your tenant's SharePoint storage quota.
 
 ## Loop workspace storage limits
 

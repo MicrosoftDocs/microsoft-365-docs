@@ -6,7 +6,7 @@ manager: jtremper
 ms.reviewer: ssquires
 ms.date: 10/26/2024
 audience: admin
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
@@ -43,7 +43,7 @@ For keyboard users using accessibility mode, if you're labeling text in an examp
 - Left arrow: Moves you backward through individual characters in a selected word.
 
 > [!NOTE]
-> If you are labeling multiple words for a single label, you need to label each word.
+> If you're labeling multiple words for a single label, you need to label each word.
 
 ## Narration
 
@@ -57,7 +57,7 @@ As you navigate through the sample documents and label string values, Narrator g
 
 - If you select a string that has been labeled, Narrator states the value and then "labeled."  For example, if the label value is "Contoso," it states "Costoso labeled."
 
-- In the training tab, if you select a string in the document viewer that has only been predicted, Narrator audio states the value, and then "predicted". This occurs when training predicts a value in the file that doesn't match what has been labeled by the user.
+- In the training tab, if you select a string in the document viewer that has only been predicted, Narrator audio states the value, and then "predicted." This occurs when training predicts a value in the file that doesn't match what has been labeled by the user.
 
 - In the training tab, if you select a string in the document viewer that has been labeled and predicted, Narrator audio states the value, and then "labeled and predicted." This occurs when training is successful and there's a match between a predicted value and the user label.
 

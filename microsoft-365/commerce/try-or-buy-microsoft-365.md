@@ -56,6 +56,9 @@ For all other procedures in this article, the following items are required:
 - [Find out what type of billing account you have](manage-billing-accounts.md#view-my-billing-accounts).
 - If you have a Microsoft Customer Agreement (MCA) billing account type, you must also be a Billing account owner or contributor to do the tasks described in this article. For more information, see [Understand billing accounts](manage-billing-accounts.md) and [Manage your Microsoft business billing profiles](billing-and-payments/manage-billing-profiles.md).
 
+> [!NOTE]
+> If you have a Microsoft Customer Agreement (MCA) billing account type with Microsoft, you automatically receive a product called Microsoft Entra ID Free. This product improves your tenant management and security by tracking new tenants created with the same billing account. There's no charge for this product, and there's no other action you need to take. To learn more about this product, see [Microsoft Entra ID Free](/azure/cost-management-billing/manage/microsoft-entra-id-free). [Find out what type of billing account you have](manage-billing-accounts.md#view-my-billing-accounts).
+
 ::: moniker range="o365-21vianet"
 
 ## Payment options for Microsoft 365 operated by 21Vianet in China

@@ -6,7 +6,7 @@ ms.author: danismith
 manager: jtremper
 ms.date: 12/08/2023
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-solutions
 ms.localizationpriority: medium
 search.appverid:

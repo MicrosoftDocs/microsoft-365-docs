@@ -4,9 +4,9 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 11/22/2024
+ms.date: 01/22/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ms.custom: setup
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
@@ -40,37 +40,35 @@ After an [Azure subscription is linked to Microsoft Syntex](syntex-azure-billing
 
 ## Manage sites
 
-By default, structured and default document processing is turned on for libraries in all SharePoint sites. Follow these steps to restrict the sites where users can create structured and freeform models for processing files.
+By default, structured and default document processing is turned on for libraries in all SharePoint sites. To restrict the sites where users can create structured and freeform models for processing files, follow these steps.
 
-1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>.
+1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Settings > Org settings**</a>.
 
-2. Under **Billing and licenses**, select **Activate pay-as-you-go services**.
+2. On the **Org settings** page, select **Pay-as-you-go services**.
 
-3. On the **Activate pay-as-you-go services** page, select **Get started**.
+3. On the **Pay-as-you-go services** page, select the **Settings** tab.
 
-4. On the **Pay-as-you-go services** page, select the **Settings** tab, and then select **Syntex services**.
+4. Under **Document & image services**, select **Structured and freeform document processing**.
 
-5. On the Syntex page, in the **Document & image services** section, select **Structured and freeform document processing**.
+5. On the **Structured and freeform document processing** panel, select the **Sites** tab.
 
-6. On the **Structured and freeform document processing** panel:
+6. In the **Sites where models can be used** section, select **Edit**.
 
-    a. On the **Sites** tab, in the **Sites where models can be used** section, select **Edit**.
-
-    b. On the **Sites where models can be used** panel, select **All sites** or **Selected sites (up to 100)**. For selected sites, follow the instructions to either select the sites or upload a CSV file listing a maximum of 100 sites. You can then manage site access permissions for the sites you selected.
+7. On the **Sites where models can be used** panel, change the setting from **All sites** to **Selected sites (up to 100)**. For selected sites, follow the instructions to select the sites or upload a CSV listing of the sites. You can then manage site access permissions for the sites you selected.
 
     > [!NOTE]
     > You must be a member of any site that you want to include in the CSV file.
 
     > [!NOTE]
-    > Disabling a site after a model is made available to process files on that site will not disable the model. Models can still be used to process files and incur charges. A model can be made available to process files by being created either on that site or in a content center.
+    > Disabling a site after a model is made available to process files on that site doesn't disable the model. Models can still be used to process files and incur charges. A model can be made available to process files by being created either on that site or in a content center.
 
-7. Select **Save**.
+8. Select **Save**.
 
 ## Turn off structured and freeform document processing
 
-When the structured and freeform document processing service is turned off, structured and freeform models won't run, and users won't be able to create or apply structured or freeform models.
+When the structured and freeform document processing service is turned off, structured and freeform models don't run, and users can't create or apply structured or freeform models.
 
-Follow these steps to turn off structured and freeform document processing.
+To turn off structured and freeform document processing, follow these steps.
 
 1. On the **Structured and freeform document processing** panel, on the **Settings** tab, clear the **Let people create and apply models to process files** check box.
 

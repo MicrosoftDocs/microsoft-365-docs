@@ -36,7 +36,7 @@ Monitoring provides you with information about incidents and advisories that are
 
 - **Customer infrastructure**. Issue is detected in your organization's infrastructure and requires action from your organization for resolution. For example, users can't access Exchange Online because they're unable to obtain an authentication token from STS provider hosted by your organization because of an expired certificate.
 
-Here's an example of the **Service health** page in the Microsoft 365 admin center, which is available at **Health** > **Service health** for organization scenarios and [priority account](../admin/setup/priority-accounts.md) scenarios.
+Here's an example of the **Service health** page in the Microsoft 365 admin center, which is available at **Health** > **Service health** for an overview of **issues for your organization to act on, active issues Microsoft is working on** and **service status**.
 
 :::image type="content" source="../media/microsoft-365.png" alt-text="Screenshot of the Service health page in the Microsoft 365 admin center." lightbox="../media/microsoft-365.png":::
 
@@ -84,7 +84,7 @@ There are two ways you can provide feedback:
 
 ## Frequently asked questions
 
-### 1. Why don't I see "view" link under Organizational monitoring column in the Microsoft 365 admin center inside Service Health?
+### 1. Why don't I see “Advisory/Incident” under the status column in the Microsoft 365 admin center inside Service Health?
 
 First, make sure you've enabled the new admin center on the **Home** page of the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339).
 

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 01/30/2025
+ms.date: 02/11/2025
 audience: Admin
 ms.topic: get-started
 ms.service: microsoft-365-copilot
@@ -127,7 +127,7 @@ To learn more, see:
 - [Manage Microsoft 365 Copilot Chat](/copilot/manage)
 - [Select the Copilot that's right for your organization](which-copilot-for-your-organization.md)
 
-## Assign licenses
+## Setup help and guidance
 
 In the Microsoft 365 admin center, there's a [Microsoft 365 Copilot setup guide](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide). You can use this guide to step through the admin center to assign the required licenses.
 

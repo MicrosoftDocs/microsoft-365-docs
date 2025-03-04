@@ -5,8 +5,8 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 01/10/2025
-ms.topic: conceptual
+ms.date: 01/31/2025
+ms.topic: article
 ms.service: microsoft-365-archive
 search.appverid: 
 ms.collection: 
@@ -52,6 +52,8 @@ Microsoft 365 Archive works with and integrates into Microsoft 365. This means t
 Microsoft offers a [comprehensive set of compliance offerings](/compliance) to help your organization comply with national, regional, and industry-specific requirements governing the collection and use and data.
 
 Microsoft 365 Archive is also covered under the [Microsoft Product Terms](https://www.microsoft.com/licensing/docs/view/Product-Terms) and [Data Protection Agreement](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA?year=2021#:%7E:text=Microsoft%20Products%20and%20Services%20Data%20Protection%20Addendum%20%28DPA%29,to%20the%20Product%20Terms%20site%20%28and%20formerly%20OST%29) (DPA). Learn more on the [Microsoft Trust Center](https://www.microsoft.com/trustcenter).
+
+To learn more about data promises for archive sites and their impact on compliance offerings, see [Compliance features in Microsoft 365 Archive](archive-compliance.md).
 
 For more detailed information, see the following resources:
 

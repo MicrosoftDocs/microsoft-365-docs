@@ -6,7 +6,7 @@ manager: pamgreen
 ms.date: 10/13/2023
 recommendations: true
 audience: ITPro
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.service: microsoft-365-migration
 ms.localizationpriority: high
 ms.collection: 

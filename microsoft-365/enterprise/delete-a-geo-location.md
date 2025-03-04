@@ -6,7 +6,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 f1.keywords:
@@ -24,7 +24,7 @@ description: Learn how to delete a satellite location in Microsoft 365 Multi-Geo
 If you no longer need a _Satellite Geography_ location, you can delete it from your _Tenant_ from the <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint admin center</a>.
 
 > [!WARNING]
-> All user data in the _Satellite Geography_ location will be permanently deleted. This includes all OneDrive content, SharePoint sites and Exchange mailboxes including Microsoft 365 Group mailboxes. You must migrate any data to another _Satellite Geography_ location or the _Primary Provisioned Geography_ location before you delete the _Satellite Geography_ location. This action cannot be undone.
+> All user data in the _Satellite Geography_ location will be permanently deleted. This includes all OneDrive content, SharePoint sites and Exchange mailboxes including Microsoft 365 Group mailboxes. You must migrate any data to another _Satellite Geography_ location or the _Primary Provisioned Geography_ location before you delete the _Satellite Geography_ location. This action can't be undone.
 
 Only SharePoint Administrators can delete _Satellite Geography_ locations.
 
@@ -42,4 +42,4 @@ To delete a _Satellite Geography_ location
 
 5. Select **Delete**.
 
-The deletion will take at least 7 days to complete.
+The deletion will take at least seven days to complete.

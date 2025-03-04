@@ -11,7 +11,7 @@ f1.keywords:
 manager: dougeby
 ms.date: 04/17/2024
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 description: Configure mobile app protection with App Protection policies (APP) to prevent specified corporate data from being copied and pasted to other apps. 
 ms.service: o365-solutions
 ms.localizationpriority: high

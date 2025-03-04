@@ -6,7 +6,7 @@ manager: jacktremper
 ms.reviewer: eladgr
 ms.date: 11/28/2023
 audience: admin
-ms.topic: article
+ms.topic: integration
 ms.service: o365-administration
 ms.collection: 
 - M365-modern-desktop

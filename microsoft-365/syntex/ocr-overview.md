@@ -6,7 +6,7 @@ manager: jtremper
 ms.reviewer: kkameth
 ms.date: 08/13/2024
 audience: admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
 ms.custom: admindeeplinkMAC

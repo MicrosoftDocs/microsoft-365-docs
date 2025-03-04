@@ -16,6 +16,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
+ms.custom: campaignIDs-batch2
 search.appverid:
 - MET150
 - MOE150
@@ -77,7 +78,7 @@ Before working with organizational messages, make sure your team satisfies the f
 
 - **Message recipients** anyone in your organization who might receive messages from your authors must have access to the Microsoft products to which the messages are configured to be delivered. (End users aren't required to have any Microsoft Entra roles to receive organizational messages.)
 
-  - For example, any message configured to be delivered to a Windows channel, like Windows Spotlight, requires that recipients use **Windows 11 Enterprise**.
+  - For example, any message configured to be delivered to a Windows channel, like Windows Spotlight, requires that recipients use **Windows 10/11 Enterprise**.
 
 > [!IMPORTANT]
 > During our preview period, Organizational messages preview experiences weren't restricted based on the licenses held by participating tenants, authors, approvers, or message recipients. However, now that the product is in general availability, some organizational messages experiences are restricted to particular Microsoft licenses. To learn more, see [Advanced features](#advanced-features).
@@ -156,7 +157,7 @@ If you have the Organizational Messages Writer Microsoft Entra role as described
 ## Create a message
 
 > [!IMPORTANT]
-> Organizational messages delivers messages to end users within the time windows configured by admins via Microsoft 365 admin center experiences. However, occasionally, messages might not be delivered as expected due to system or user device conditions, such as urgent messages not being delivered to devices that are disconnected from the internet. In such instances, our system continues trying to deliver messages as possible and appropriate.
+> Organizational messages deliver messages to end users within the time windows configured by admins via Microsoft 365 admin center experiences. However, occasionally, messages might not be delivered as expected due to system or user device conditions, such as urgent messages not being delivered to devices that are disconnected from the internet. In such instances, our system continues trying to deliver messages as possible and appropriate.
 
 Users with the Organizational Messages Writer Microsoft Entra role described previously will have access to the **Create a message** button and capability in the centralized experience. Selecting this button invokes the wizard, which includes these primary creation steps:
 
@@ -304,11 +305,11 @@ For general availability, the advanced features in Organizational messages in Mi
 >[!NOTE]
 > If you recently onboarded your tenant to Microsoft Entra ID, it can take 36 to 64 hours before you're able to use the organizational messages features.
 
-There are certain policies in [Microsoft Intune](https://intune.microsoft.com) that will block the delivery of organizational messages to your end users if not configured properly. This section describes how to adjust all policy settings for your tenant so that delivery is always allowed and works as intended.
+There are certain policies that will block the delivery of organizational messages to your end users if not configured properly, such as using [Microsoft Intune](https://intune.microsoft.com). This section describes some ways to adjust all policy settings for your tenant so that delivery is allowed and works as intended.
 
 ### General Instructions
 
-To make policy changes on your tenant, your Intune admin must:
+To make policy changes on your tenant using Intune, your admin should:
 
 1. Sign in to the Microsoft Endpoint Manager admin center for your tenant.
 1. Configure the policies described below using a Microsoft Intune device restrictions profile template or the settings catalog.
@@ -316,7 +317,7 @@ To make policy changes on your tenant, your Intune admin must:
 1. Enable Organizational Messages Policy
 
 >[!NOTE]
-> This policy is required for devices running [Windows](https://support.microsoft.com/topic/november-29-2022-kb5020044-os-build-22621-900-preview-43f0bdf9-0b75-4110-bab3-3bd2433d84b3), [version 22H2](https://support.microsoft.com/topic/november-29-2022-kb5020044-os-build-22621-900-preview-43f0bdf9-0b75-4110-bab3-3bd2433d84b3), [build 10.0.22621.900](https://support.microsoft.com/topic/november-29-2022-kb5020044-os-build-22621-900-preview-43f0bdf9-0b75-4110-bab3-3bd2433d84b3) and later. If you don't enable this policy, these devices can't receive organizational messages.
+> This policy is required for devices running [Windows](https://support.microsoft.com/topic/november-29-2022-kb5020044-os-build-22621-900-preview-43f0bdf9-0b75-4110-bab3-3bd2433d84b3), [version 22H2](https://support.microsoft.com/topic/november-29-2022-kb5020044-os-build-22621-900-preview-43f0bdf9-0b75-4110-bab3-3bd2433d84b3), [build 10.0.19045.4842](https://support.microsoft.com/topic/august-29-2024-kb5041582-os-build-19045-4842-preview-f4c4d191-5457-475c-80ac-e1d43cf9c941), [build 10.0.22621.900](https://support.microsoft.com/topic/november-29-2022-kb5020044-os-build-22621-900-preview-43f0bdf9-0b75-4110-bab3-3bd2433d84b3) and later. If you don't enable this policy, these devices can't receive organizational messages.
 
 1. Go to **Settings catalog** > **Experience** > **Enable delivery of organizational messages (User)**.
 1. To enable delivery of organizational messages, switch the toggle to **Enabled**.
@@ -423,6 +424,8 @@ You can find more information in the following documents:
 - [Experience/ConfigureWindowsSpotlightOnLockScreen](/windows/client-management/mdm/policy-csp-experience#experience-configurewindowsspotlightonlockscreen)
 
 - [Experience/AllowSpotlightCollection](/windows/client-management/mdm/policy-csp-experience#experience-allowspotlightcollection)
+
+- [Experience/OrganizationalMessages](/windows/client-management/mdm/policy-csp-experience#enableorganizationalmessages)
 
 ### What do the different message states mean?
 

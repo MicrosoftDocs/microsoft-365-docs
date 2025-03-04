@@ -133,8 +133,6 @@ items:
   items:
     - name: Overview of Sales Advisor
       href: m365-lighthouse-sales-advisor-overview.md
-    - name: Get access to Sales Advisor
-      href: m365-lighthouse-get-access-to-sales-advisor.md
     - name: Understand opportunities and data
       href: m365-lighthouse-understanding-opportunities-and-data.md
     - name: View opportunities in Sales Advisor

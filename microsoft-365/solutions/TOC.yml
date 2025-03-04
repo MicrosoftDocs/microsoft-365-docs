@@ -443,22 +443,17 @@ items:
         - name: Step 4. Troubleshoot app deployment issues
           href: apps-assign-step-4.md
 
-- name: Compliance
+- name: Data governance, data security, and risk and compliance
   items:
-  - name: Insider risk solutions in Microsoft Purview
-    href: ../compliance/insider-risk-solution-overview.md
-  - name: Auditing solutions
-    href: ../compliance/auditing-solutions-overview.md
-  - name: eDiscovery solutions in Microsoft 365
-    href: ../compliance/ediscovery.md
-  - name: Microsoft Purview eDiscovery (Premium)
-    href: ../compliance/overview-ediscovery-20.md
-  - name: Regulatory compliance FAQs and action plans
-    items: 
-    - name: CCPA - Frequently asked questions
-      href: /compliance/regulatory/ccpa-faq?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-    - name: GDPR - Recommended action plan
-      href: /compliance/regulatory/gdpr?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+  - name: Data governance solutions
+    href: /purview/data-governance-overview
+  - name: Data security solutions
+    href: /purview/purview-security
+  - name: Risk and compliance solutions
+    href: /purview/purview-compliance
+  - name: Microsoft Compliance resources
+    href: /compliance/
+
 
 - name: Security
   items:

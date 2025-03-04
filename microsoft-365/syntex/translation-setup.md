@@ -6,7 +6,7 @@ manager: jtremper
 ms.reviewer: ssquires
 ms.date: 01/23/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
 search.appverid: 
@@ -35,33 +35,31 @@ You must be a [SharePoint Administrator](/entra/identity/role-based-access-contr
 
 ## Set up translation
 
-After an [Azure subscription is linked to Microsoft Syntex](syntex-azure-billing.md), document translation is automatically set up and turned on for all SharePoint sites.
+After an [Azure subscription is linked to Microsoft Syntex](syntex-azure-billing.md), document translation is automatically set up and turned on for all SharePoint sites and for OneDrive.
 
 ## Manage sites
 
-By default, document translation is turned on for libraries in all SharePoint sites. Follow these steps to limit which sites users can use document translation.
+By default, document translation is turned on for libraries in all SharePoint sites and for OneDrive. To limit on which sites users can use document translation, follow these steps.
 
-1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>.
+1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Settings > Org settings**</a>.
 
-2. Under **Billing and licenses**, select **Activate pay-as-you-go services**.
+2. On the **Org settings** page, select **Pay-as-you-go services**.
 
-3. On the **Activate pay-as-you-go services** page, select **Get started**.
+3. On the **Pay-as-you-go services** page, select the **Settings** tab.
 
-4. On the **Pay-as-you-go services** page, select the **Settings** tab, and then select **Syntex services**.
+4. Under **Document & image services**, select **Document translation**.
 
-5. On the Syntex page, in the **Document & image services** section, select **Document translation**.
+5. On the **Document translation** panel, under **Where document translation can be used when it's turned on**, select **Edit**.
 
-6. On the **Document translation** panel:
+6. On the **Where can document translation be used?** panel:
 
-    a. Choose the site or sites on which this service should be enabled.
+    a. Under **SharePoint**, change the setting from **All sites** to **Selected sites (up to 100)** or **No sites**. For selected sites, follow the instructions to select the sites or upload a CSV listing of the sites. You can then manage site access permissions for the sites you selected.
 
-    b. To restrict user access to this service, under **Where document translation can be used when it's turned on**, select **Edit**. On the **Where can document translation be used?** panel, change the setting from **All sites** to **Selected sites (up to 100)** or **No sites**. For selected sites, follow the instructions to select the sites or upload a CSV listing of the sites. You can then manage site access permissions for the sites you selected.
-
-    c. By default, document translation for OneDrive is turned on. If you want to turn it off, in the **OneDrive** section, select **Edit**. On the **Where can document translation be used?** panel, in the **OneDrive** section, clear the **Available in OneDrive** checkbox.
+    b. Under **OneDrive**, to turn off document translation in OneDrive, clear the **Available in OneDrive** checkbox.
 
     ![Screenshot showing the Where can document translation be used? panel, and the Available in OneDrive checkbox selected.](../media/content-understanding/translation-onedrive-selected.png)
 
-    d. Select **Save**.
+7. Select **Save**.
 
 ## Video transcript translation
 

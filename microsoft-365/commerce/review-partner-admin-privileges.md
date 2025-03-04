@@ -20,6 +20,7 @@ ms.custom:
 - commerce_subscriptions
 - admindeeplinkMAC
 - GAUpdates
+- campaignIDs-batch2
 search.appverid: MET150
 description: "Learn how to review your list of Microsoft-certified solution providers (partners) to determine what admin privileges they have, and how to remove those privileges."
 ms.date: 01/07/2025

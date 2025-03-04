@@ -7,7 +7,7 @@ author: kwekuako
 manager: scotv
 ms.date: 01/06/2025
 audience: Admin
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 

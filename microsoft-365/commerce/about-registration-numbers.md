@@ -7,7 +7,7 @@ ms.author: cmcatee
 manager: scotv
 ms.reviewer: drjones, jobailey
 audience: Admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-marketplace
 ms.localizationpriority: medium
@@ -23,6 +23,7 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 - campaignIDs-batch1
+- campaignIDs-batch2
 description: "Learn about registration numbers and under-review notifications when you buy Microsoft business products or services."
 ms.date: 09/05/2024
 ---

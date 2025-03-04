@@ -9,7 +9,7 @@ ms.subservice: advanced-data-residency
 ms.topic: concept-article
 f1.keywords:
 - NOCSH
-ms.date: 02/29/2024
+ms.date: 02/20/2025
 ms.reviewer: deanw
 ms.custom:
 - it-pro
@@ -70,7 +70,7 @@ Required Conditions:
 **Commitment:**
 Multi-Geo capabilities in Microsoft 365 Copilot enable content of interactions with Microsoft 365 Copilot to be stored at rest in a specified _Macro Region Geography_ or _Local Region Geography_ location. Microsoft 365 Copilot uses the Preferred Data Location (PDL) for users and groups to determine where to store data. If the PDL isn't set or is invalid, data is stored in the _Tenant's Primary Provisioned Geography_ location. The _Geography_ where the content of interactions with Microsoft 365 Copilot are stored is determined by the PDL of the user interacting with Microsoft 365 Copilot. This means that the storage of content of interactions for users in different regions will be based on their respective PDL configurations.
 
-To find the current location of a user's content of interactions with Microsoft 365 Copilot by referencing the PDL configuration for that user. Refer to [Multi-Geo Testing](m365-multi-geo-user-testing.md)
+To find the current location of a user's content of interactions with Microsoft 365 Copilot by referencing the PDL configuration for that user. Refer to [Multi-Geo Testing](m365-multi-geo-user-testing.md).
 
 **Illustrative examples**
 
@@ -78,7 +78,7 @@ To find the current location of a user's content of interactions with Microsoft 
 Two people are working together on a Microsoft Word document. User A authored the document and stored it in the OneDrive for Business personal storage site, which is located in France. User B is in Canada and asks Microsoft 365 Copilot to rewrite a paragraph in the document. The paragraph User B submitted as the prompt, as well as the rewrite options Microsoft 365 Copilot provides (the "content of interactions" in this case) are stored in Canada; the original document remains in France, as does any rewrite the user accepts into that document.
 
 **Teams Meeting Experience**
-Microsoft Teams meeting recording video location is determined by the user PDL that starts the recording, or when meetings have an automatic recording policy, the location is determined from the first person joining the meeting. When users in other regions interact with Microsoft 365 Copilot in Teams, those user prompts and corresponding responses are stored in the location of the user that asks the Microsoft 365 Copilot questions.
+Microsoft Teams meeting recording video location is determined by the user PDL that starts the recording, or when meetings have an automatic recording policy, the location is determined by the meeting organiser. When users in other regions interact with Microsoft 365 Copilot in Teams, those user prompts and corresponding responses are stored in the location of the user that asks the Microsoft 365 Copilot questions.
 
 ### Migration and User Experience
 

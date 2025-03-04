@@ -7,7 +7,7 @@ author: efrene
 manager: scotv
 ms.date: 07/26/2021
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:

@@ -1,12 +1,12 @@
 ---
 title: Decide which Copilot is right for you
-description: Microsoft has several Copilot AI virtual assistants, including Microsoft 365 Copilot Chat, Microsoft 365 Copilot, Microsoft Copilot, Microsoft Security Copilot, GitHub Copilot, and Copilot Studio. Decide which Copilot is right for you and your organization.
+description: Microsoft has several Copilot AI virtual assistants, including Microsoft 365 Copilot Chat, Microsoft 365 Copilot, Microsoft Copilot, Microsoft Security Copilot, GitHub Copilot, and Copilot Studio. Decide which Copilot is right for you and your organization. Which Copilot is right for me?
 f1.keywords:
 - NOCSH
 ms.author: mandia
 author: MandiOhlinger
 manager: laurawi
-ms.date: 01/23/2025
+ms.date: 02/11/2025
 ms.reviewer: 
 audience: Admin
 ms.topic: get-started
@@ -22,7 +22,7 @@ appliesto:
   - ✅ Microsoft 365 Copilot
 ---
 
-# Which Copilot is right for your organization?
+# Which Copilot is right for me or my organization?
 
 Copilot is Microsoft's AI-powered virtual assistant. It uses large language models (LLMs) to answer your questions using a prompt and response interaction.
 
@@ -65,7 +65,7 @@ To learn more, see:
 
 **Microsoft 365 Copilot** is licensed by your work organization. It includes all the features in Microsoft 365 Copilot Chat, and can be used for web-based (internet) and work-based ([Microsoft Graph](/graph/overview)) chat.
 
-When users sign in with their work or school account (`user@contoso.com`), they can use Microsoft 365 Copilot Chat **work** or **web** version:
+When users sign in with their Microsoft Entra work or school account (`user@contoso.com`), they can use Microsoft 365 Copilot Chat **work** or **web** version:
 
 :::image type="content" source="media/which-copilot-for-your-organization/copilot-work-web.png" alt-text="Screenshot that shows Microsoft Entra users can select work or web in Microsoft 365 Copilot Chat.":::
 

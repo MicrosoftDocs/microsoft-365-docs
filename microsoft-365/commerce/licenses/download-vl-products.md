@@ -26,7 +26,7 @@ If you bought products via volume licensing (VL), you can download the products 
 
 ## Before you begin
 
-- You must have the Administrator or Product download manager VL role for the corresponding licensing ID to access downloads in the Microsoft 365 admin center. For information about VL roles, see [Manage volume licensing user roles Frequently Asked Questions](user-roles-faq.yml).
+- You must have the Administrator or Product download manager VL role for the corresponding licensing ID to access downloads in the Microsoft 365 admin center. For information about VL roles, see [Manage volume licensing user roles](manage-user-roles-vl.md).
 - You must have, or buy, a license for the products that you plan to download.
 - To install VL download files, you might need a valid product key.  
 - You must have either the Administrator or Product key view role to access VL product keys.
@@ -170,4 +170,4 @@ Submit a case in the admin center by going to <a href="https://go.microsoft.com/
 ## Related content
 
 [Product keys Frequently Asked Questions](product-keys-faq.yml) (article)\
-[Manage volume licensing user roles Frequently Asked Questions](user-roles-faq.yml) (article)
+[Manage volume licensing user roles](manage-user-roles-vl.md) (article)

@@ -10,7 +10,7 @@ manager: dougeby
 ms.date: 04/17/2024
 audience: ITPro
 description: Use Intune and Autopilot to enroll devices into management to ensure the apps running on them are compliant and to prevent corporate data leaks.
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:

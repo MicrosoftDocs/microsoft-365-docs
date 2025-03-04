@@ -7,7 +7,7 @@ ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, ramagane
 audience: Admin
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-management
 ms.localizationpriority: medium

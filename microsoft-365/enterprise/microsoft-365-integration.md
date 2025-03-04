@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 ms.date: 09/24/2024
 audience: Admin
-ms.topic: article
+ms.topic: integration
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: medium
