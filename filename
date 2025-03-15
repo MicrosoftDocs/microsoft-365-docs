@@ -1,0 +1,7 @@
+*override-file-edn@microsoftdocs/officedocs-admin
+on: 192.168.0.5
+build: .openpublishing.build.p>@microsoftdocs/windows
+*override-file-edn@microsoftdocs/officedocs-admin
+CODEOWNER
+json@microsoftdocs/officedocs-admin
+*override-file-edn@microsoftdocs/officedocs-admin
