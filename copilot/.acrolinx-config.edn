@@ -1,0 +1,67 @@
+0{:changed-files-limit 61
+ :allowed-branchname-matches ["main" "release-.*"]
+ :allowed-filename-matches ["microsoft-365/" "copilot/"] ;; Can be overridden in repo-specific edn file. This is an allow list that identifies which folders contain the files Acrolinx will check. Separate multiple folders as follows ["folder/" "folder2"]
+ 
+ codeowner :use-gh-statuses Troubleshooting
+
+A_user :targets 
+   {
+     :counts {
+              ;;:correctness 31
+              ;;:total 52 ;; 
+              ;;:issues 52 ;;
+              ;;:correctness 31 ;;
+             }
+     :scores {
+              ;;:terminology 200
+              :qualityscore 10 ;; 
+              ;;:correctness 72
+             }
+   }
+ 
+ :guidance-profile "d2b6c2c8-00ee-47f1-8d10-b280cc3434c1" ;; Profile ID for "M365-specific"
+ 
+ :template-header
+
+ "
+
+## Acrolinx Scorecards 
+ 
+**The minimum Acrolinx topic score of 80 is required for all Magic content merged to the default branch.**
+
+If you need a scoring exception for content in this PR, add the *Sign off* and the *Acrolinx exception* labels to the PR. The PubOps Team will review the exception request and may take one or more of the following actions:
+
+- Work with you to resolve the issues requiring the exception.
+- Escalate the exception request to the Acrolinx Review Team for review.
+- Approve the exception and work with the GitHub Admin Team to merge the PR to the default branch.
+
+For more information about the exception criteria and exception process, see [Minimum Acrolinx topic scores for publishing](https://review.docs.microsoft.com/en-us/office-authoring-guide/acrolinx-min-score?branch=main).
+ 
+Select the total score link to review all feedback on clarity, consistency, tone, brand, terms, spelling, grammar, readability, and inclusive language. _You should fix all spelling errors regardless of your total score_. Fixing spelling errors helps maintain customer trust in overall content quality.
+
+| Article | Total score<br>(Required: 80) | Terminology | Spelling and Grammar | Clarity<br>(Readability) |
+|---------|:--------------:|:--------------------:|:------:|:---------:|
+"
+
+ :template-change
+ "| ${s/status} ${s/file} | [${acrolinx/qualityscore}](${acrolinx/scorecard}) | ${acrolinx/scores/words_and_phrases} | ${acrolinx/scores/correctness} | ${acrolinx/scores/clarity} |
+"
+ 
+ :template-footer
+ "
+**More information about Acrolinx**
+ 
+- [Install Acrolinx locally for VSCode for Magic](https://review.docs.microsoft.com/office-authoring-guide/acrolinx-vscode?branch=main)
+- [False positives or issues](https://aka.ms/acrolinxbug)
+- [Request a new Acrolinx term](https://microsoft.sharepoint.com/teams/M365Dev2/SitePages/M365-terminology.aspx)
+- [Troubleshooting issues with Acrolinx](https://review.docs.microsoft.com/help/contribute/acrolinx-error-messages)
+
+"
+}
+
+
+
+
+
+
+
