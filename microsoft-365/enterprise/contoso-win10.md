@@ -70,7 +70,7 @@ To complete the in-place upgrade deployment of Windows 11 Enterprise, Contoso im
 
 Here is Contoso’s in-place upgrade and ongoing updates deployment architecture.
 
-![Contoso’s Windows 11 Enterprise deployment infrastructure.](../media/contoso-win10/contoso-win10-fig1.png)
+![Contoso’s Windows 11 Enterprise deployment infrastructure.](../media/contoso-win11/contoso-win11-fig1.png)
 
 This infrastructure consists of:
 
