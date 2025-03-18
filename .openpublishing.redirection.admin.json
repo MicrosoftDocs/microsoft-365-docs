@@ -1316,6 +1316,11 @@
        "redirect_document_id": false
      },
      {
+      "source_path": "microsoft-365/admin/support-contact-info.md",
+      "redirect_url": "https://support.microsoft.com/topic/customer-service-phone-numbers-c0389ade-5640-e588-8b0e-28de8afeb3f2#ID0EBBD=signinorgid",
+      "redirect_document_id": false
+     },
+     {
        "source_path": "microsoft-365/admin/misc/sign-up-for-online-services.md",
        "redirect_url": "/microsoft-365/admin/misc/remove-a-domain-from-another-account",
        "redirect_document_id": false
