@@ -53,6 +53,9 @@ To let people in your organization use SharePoint eSignature, follow these steps
 
 5. On the **eSignature** panel, select **Let people in your organization use eSignature**.
 
+Once configured, various background processes will be initiated to integrate the feature seamlessly into your existing Microsoft 365 tenant and services - these include tasks such as data synchronization, configuration updates, and performance optimizations.  SharePoint eSignature will be operational within 24 hours of being enabled.
+
+
 ### Add other signature providers
 
 To select which signature providers to use, follow these steps.
