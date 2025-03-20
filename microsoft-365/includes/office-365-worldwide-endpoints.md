@@ -88,3 +88,4 @@ ID | Category | ER | Addresses | Ports
 159 | Default<BR>Required | No | `admin.microsoft.com` | **TCP:** 443, 80
 160 | Default<BR>Required | No | `cdn.odc.officeapps.live.com, cdn.uci.officeapps.live.com` | **TCP:** 443, 80
 184 | Default<BR>Required | No | `*.cloud.microsoft, *.static.microsoft, *.usercontent.microsoft` | **TCP:** 443, 80<BR>**UDP:** 443
+185 | Default<BR>Required | No | `*.msappproxy.net ` | **TCP:** 443
