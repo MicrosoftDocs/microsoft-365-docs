@@ -51,11 +51,11 @@ When you convert a user's mailbox to a shared mailbox, all of the existing email
 
 - To put an In-Place Hold or a Litigation Hold on a shared mailbox, you must assign an Exchange Online Plan 2 license *or* an Exchange Online Plan 1 license and an Exchange Online Archiving add-on license to the shared mailbox.
 
-## Convert a private mailbox to a shared maailbox
+## Convert a private mailbox to a shared mailbox
 
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
+1. In the Exchange admin center, go to the <a href="https://admin.exchange.microsoft.com/#/mailboxes" target="_blank">Mailboxes</a> page.
 
-2. Select the user. On the **Mail** tab, select **Convert to shared mailbox** and select **Convert**.
+2. Select the user's mailbox. On the **Other** tab, select **Convert to shared mailbox** and select **Convert**.
 
 3. If the mailbox is smaller than 50 GB, you can [remove the license from the user](../manage/assign-licenses-to-users.md), and stop paying for it. Don't delete the user's account. The shared mailbox needs it there as an anchor. If you are converting the mailbox of an employee that is leaving your organization, you should take additional steps to make sure that they cannot log in anymore. Please see [Remove a former employee from Microsoft 365](../add-users/remove-former-employee.md).
 
