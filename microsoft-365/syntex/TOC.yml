@@ -303,7 +303,7 @@ items:
       items:
         - name: Get started with adoption
           href: adoption-getstarted.md
-        - name: Try out Syntex services
+        - name: Try out pay-as-you-go services
           href: promo-syntex.md
         - name: Scenarios and use cases
           items:

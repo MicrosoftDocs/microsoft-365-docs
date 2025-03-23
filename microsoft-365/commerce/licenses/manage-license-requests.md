@@ -25,7 +25,7 @@ ms.custom:
 - campaignIDs-batch2
 search.appverid: MET150
 description: "Learn how to review and approve or deny license requests for products and services from users in the Microsoft 365 admin center."
-ms.date: 03/20/2025
+ms.date: 05/12/2024
 ---
 
 # Manage self-service license requests in the Microsoft 365 admin center
@@ -55,7 +55,7 @@ If your organization has its own request process, you can use it instead. You cr
 > If you use your own request process, no requests are displayed on the **Requests** tab. Existing requests from before you added your message continue to appear until you approve or decline them.
 
 1. In the Microsoft 365 admin center, select the **Navigation menu**, then select **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a>.
-2. On the **Licenses** page, select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2310924" target="_blank">Requests</a> tab.
+2. On the **Licenses** page, select the **Requests** tab.
 3. Select **Connect your request process**.
 4. In the **Use your request process** pane, select the **Use my organization's request process** check box.
 5. In the **Message** box, type the message you want users to see when they request a license. If you want to also include a link to your organizations policy or other documentation, enter the URL in the **Link to documentation (optional)** text box.
@@ -66,7 +66,7 @@ When you return to the **Requests** list, you see the message **You're using you
 ## Stop using your own request process
 
 1. In the admin center, select the **Navigation menu**, then select **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a>.
-2. On the **Licenses** page, select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2310924" target="_blank">Requests</a> tab.
+2. On the **Licenses** page, select the **Requests** tab.
 3. Select **Connect your request process**.
 4. In the **Use your request process** pane, clear the **Use my organization's request process** check box.
 5. Select **Save**.
@@ -74,7 +74,7 @@ When you return to the **Requests** list, you see the message **You're using you
 ## Approve or deny a license request
 
 1. In the admin center, select the **Navigation menu**, then select **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a>.
-2. On the **Licenses** page, select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2310924" target="_blank">Requests</a> tab.
+2. On the **Licenses** page, select the **Requests** tab.
 3. Select the row that contains the request you want to review. The details pane shows details about which users want licenses to the product.
 4. You can assign licenses to each user through the default **Approve the selected license requests** option.
    - To approve all users, select all checkboxes and then select the **Approve** button.
@@ -95,8 +95,8 @@ When you return to the **Requests** list, you see the message **You're using you
 If you don't have the authority within your organization to make decisions about who can receive a license for a particular product or service, you can share a license request via email with someone in your organization who does. You can only share one request at a time. The person who receives the license request email doesn't need access to the Microsoft 365 admin center to review the request. They simply respond to the email and indicate whether the person should be given the license they requested, and then you [approve or deny the request](#approve-or-deny-a-license-request).
 
 1. In the admin center, select the **Navigation menu**, then select **Billing** > **Licenses**.
-2. On the **Licenses** page, select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2310924" target="_blank">Requests</a> tab.
-3. Select **Share request**, then select a request to share.
+2. On the **Licenses** page, select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2245727" target="_blank">Auto-claim policy</a> tab.
+3. Select the **Share request** tab, then select a request to share.
 4. In the request pane, select **Share request**.
 5. In the **Share license request details** pane, type an email address, then select the recipient name.
    > [!NOTE]
