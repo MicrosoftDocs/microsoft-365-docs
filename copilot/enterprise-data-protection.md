@@ -13,7 +13,7 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 hideEdit: true
-ms.date: 01/15/2025
+ms.date: 03/13/2025
 ---
 
 # Enterprise data protection in Microsoft 365 Copilot and Microsoft 365 Copilot Chat
@@ -32,7 +32,7 @@ Use of Microsoft 365 Copilot and Microsoft 365 Copilot Chat involves prompts (en
 
 - **We secure your data:** We help protect your data with [encryption](/purview/office-365-encryption-in-the-microsoft-cloud-overview) at rest and in transit, rigorous physical security controls, and data [isolation](/compliance/assurance/assurance-microsoft-365-isolation-controls) between tenants.
 
-- **Your data is private:** We won’t use your data except as you instruct. Our commitments to [privacy](https://www.microsoft.com/trust-center/privacy) include support for [GDPR](/compliance/regulatory/gdpr), [ISO/IEC 27018](/compliance/regulatory/offering-ISO-27018), and our [Data Protection Addendum](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA).
+- **Your data is private:** We won’t use your data except as you instruct. Our commitments to [privacy](https://www.microsoft.com/trust-center/privacy) include support for [GDPR](/compliance/regulatory/gdpr), the [EU Data Boundary](/privacy/eudb/eu-data-boundary-learn)<sup>[3]</sup>, [ISO/IEC 27018](/compliance/regulatory/offering-ISO-27018), and our [Data Protection Addendum](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA).
 
 - **Your access controls and policies apply to Copilot:** Copilot respects your [identity model](microsoft-365-copilot-privacy.md#how-does-microsoft-365-copilot-protect-organizational-data) and [permissions](microsoft-365-copilot-privacy.md#how-does-microsoft-365-copilot-use-your-proprietary-organizational-data), inherits your [sensitivity labels](/purview/sensitivity-labels#sensitivity-labels-and-microsoft-365-copilot), applies your [retention](/purview/retention-policies-copilot) policies, supports [audit](/purview/audit-search?tabs=microsoft-purview-portal) of interactions, and follows your administrative settings. The specific controls and policies will vary depending on the underlying subscription plan.
 
@@ -57,7 +57,7 @@ In addition to prompts and responses, web search queries (different from Microso
 
 - The Bing search service operates separately from Microsoft 365 and has different data-handling practices covered by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) between each user and Microsoft, together with the [Microsoft Privacy Statement](https://www.microsoft.com/privacy/privacystatement). The means that Microsoft acts as an independent data controller responsible for complying with all applicable laws and controller obligations. This approach is consistent with other [optional connected experiences that rely on Bing](/microsoft-365-apps/privacy/optional-connected-experiences#experiences-that-rely-on-bing).  
 
-- [Learn more about data, privacy, and security of web queries in Microsoft 365 Copilot and Microsoft 365 Copilot Chat](manage-public-web-access.md)
+- The [Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all) provide additional commitments about the web queries sent to the Bing search service. For more information, see [Data, privacy, and security for web search in Microsoft 365 Copilot and Microsoft 365 Copilot Chat](manage-public-web-access.md#how-microsoft-handles-generated-search-queries).
 
 ## Agents in Microsoft 365 Copilot
 
@@ -67,4 +67,6 @@ When you’re using agents in Microsoft 365 Copilot, check the privacy statement
 
 <sup>[1]</sup> The specific controls will vary depending on a customer's Microsoft subscription plans.
 
-<sup>[2]</sup> Microsoft 365 Copilot and Microsoft 365 Copilot Chat support HIPAA compliance for properly configured implementations.
+<sup>[2]</sup> Microsoft 365 Copilot and Microsoft 365 Copilot Chat support HIPAA compliance for properly configured implementations. HIPAA compliance doesn't apply to web search queries as they aren't covered by the DPA and BAA.
+
+<sup>[3]</sup> The EU Data Boundary doesn’t apply to web search queries.

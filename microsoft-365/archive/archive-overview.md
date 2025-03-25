@@ -6,14 +6,14 @@ manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
 ms.date: 11/26/2024
-ms.topic: conceptual
+ms.topic: overview
 ms.service: microsoft-365-archive
 ms.custom: archive
 search.appverid:
 ms.collection:
     - essentials-overview
 ms.localizationpriority:  medium
-description: Learn about how Microsoft 365 Archive can provide your with organization cost-effective storage solutions.
+description: Learn about how Microsoft 365 Archive can provide your organization with cost-effective storage solutions.
 ---
 
 # Overview of Microsoft 365 Archive
@@ -30,7 +30,7 @@ Some additional advantages of using Microsoft 365 Archive are:
 
 - **Cost savings** – A lower list price on storage consumption beyond your license-allocated Microsoft 365 storage quota.
 
-- **Lossless metadata** – A site will retain all of its metadata and permissions upon reactivation.
+- **Lossless metadata** – A site retains all of its metadata and permissions upon reactivation.
 
 - **Decluttering** – Explicit separation between active and inactive content to help you manage your site's lifecycle.
 
@@ -49,7 +49,7 @@ Administrators should notify the site owners and end users before a site is arch
 
 ## Limitations
 
-Publishing sites, Teams with channel sites, and a handful of legacy site template types are not available to archive with Microsoft 365 Archive.
+Publishing sites and a handful of legacy site template types are not available to archive with Microsoft 365 Archive. Teams channel sites are available for Archive only via PowerShell. 
 
 ## Related articles
 

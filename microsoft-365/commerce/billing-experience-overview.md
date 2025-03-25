@@ -5,11 +5,11 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: mijeffer, nicholak
+ms.reviewer: jkinma, ramagane
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
-ms.subservice: m365-commerce-acquisition
+ms.subservice: m365-commerce-management
 ms.localizationpriority: medium
 ms.collection:
 - Tier1
@@ -22,6 +22,7 @@ ms.custom:
 - VSBFY23
 - AdminTemplateSet
 - campaignIDs-batch1
+- campaignIDs-batch2
 search.appverid: MET150
 ROBOTS: NOINDEX NOFOLLOW
 description: "Learn about the new billing experience for business subscription in the Microsoft 365 admin center."

@@ -4,7 +4,7 @@ ms.author: erikre
 author: erikre
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/29/2024
 description: Step 3. Configure Microsoft 365.
 ms.service: o365-solutions
@@ -145,11 +145,11 @@ For additional app configuration policy information for iOS/iPadOS, see the foll
 
 If your end user's Android devices isn't managed, you can use the **Managed apps** channel to configuration Microsoft 365 (Office). Configuration settings available for this app when you choose this channel for your policy include general [configuration settings](apps-config-step-6.md#managed-apps-configuration-settings) and configuration for [Microsoft Tunnel](apps-config-step-6.md#connected-apps-configuration). For more information about this channel for managed devices, see, [App configuration policies for the Managed apps channel](apps-config-step-6.md#app-configuration-policies-for-the-managed-apps-channel).
 
-## Policies for Office apps
+## Policies for Microsoft 365
 
-Intune provides [policies specifically for Microsoft Office apps](/mem/intune/apps/app-office-policies). You can select specific options to create mobile app management policies for Office mobile apps that connect to Microsoft 365 services. There are many policies for Office apps that you can add to Microsoft Intune and apply to groups of end users.
+Intune provides [policies specifically for Microsoft 365 apps](/mem/intune/apps/app-office-policies). You can select specific options to create mobile app management policies for Office mobile apps that connect to Microsoft 365 services. There are many policies for Microsoft 365 apps that you can add to Microsoft Intune and apply to groups of end users.
 
-You must meet the requirements to use policies for Office apps. For more information about requirements, see [Requirements for using the Office cloud policy service](/deployoffice/overview-office-cloud-policy-service#requirements-for-using-the-office-cloud-policy-service). App protection policies aren't supported for other apps that connect to on-premises Exchange or SharePoint services. For related information, see [Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise](/deployoffice/overview-office-cloud-policy-service).
+You must meet the requirements to use policies for Microsoft 365 apps. For more information about requirements, see [Requirements for using the Office cloud policy service](/deployoffice/overview-office-cloud-policy-service#requirements-for-using-the-office-cloud-policy-service). App protection policies aren't supported for other apps that connect to on-premises Exchange or SharePoint services. For related information, see [Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise](/deployoffice/overview-office-cloud-policy-service).
 
 ## Configuration policies for individual Microsoft 365 apps
 

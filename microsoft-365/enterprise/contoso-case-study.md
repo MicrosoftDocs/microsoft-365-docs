@@ -47,7 +47,7 @@ See these articles for the details:
 
   The Contoso identity-in-the-cloud solution leverages the company's on-premises Active Directory Domain Services (AD DS) forest. It includes federated authentication with their existing trusted, third-party identity providers.
 
-- [Windows 11 Enterprise](contoso-win10.md)
+- [Windows 11 Enterprise](contoso-win11.md)
 
   The Contoso infrastructure for Windows 11 Enterprise deploys and automatically installs updates for devices that are running the company's primary PC and device operating system.
 

@@ -1,22 +1,22 @@
 ---
-title: Create an extractor in Microsoft Syntex
+title: Create an extractor for document processing in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
 ms.date: 01/10/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-syntex
 search.appverid:
 ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to create an extractor in Microsoft Syntex.
+description: Learn how to create an extractor for document processing in SharePoint.
 ---
 
-# Create an extractor in Microsoft Syntex
+# Create an extractor for document processing in SharePoint
 
 <sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
 

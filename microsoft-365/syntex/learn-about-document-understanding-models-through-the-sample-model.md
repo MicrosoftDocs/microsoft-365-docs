@@ -1,26 +1,26 @@
 ---
-title: Import a sample model for Microsoft Syntex
+title: Import a sample model for processing unstructured documents in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 10/16/2024
+ms.date: 03/10/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn about unstructured document processing models in Microsoft Syntex by using the sample model.
+description: Learn about unstructured document processing models in SharePoint by using the sample model.
 ---
 
-# Import a sample model for Microsoft Syntex
+# Import a sample model for processing unstructured documents in SharePoint
 
 <sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
 
-Microsoft Syntex provides you with a sample unstructured document processing model you can use to examine, giving you a better understanding of how to create your own models. The sample model also allows you to examine model components, such as its classifier, extractors, and explanations. You can also use the sample files to train the model.
+You can import a sample unstructured document processing model to help you better understand how to create your own models. The sample model lets you examine model components, such as its classifier, extractors, and explanations. You can also use the sample files to train the model.
 
 ## Import the sample model
 

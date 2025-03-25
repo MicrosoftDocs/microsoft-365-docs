@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 11/14/2024
+ms.date: 03/05/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -26,7 +26,7 @@ description: "Learn about feedback your users can send to Microsoft about Micros
 
 User feedback is a critical signal for Microsoft to understand user experiences with Microsoft products. Microsoft values our users’ opinions. User feedback goes directly to our engineers and helps us shape the future of Microsoft products and services for all our users. In this article, you'll find information on what types of feedback exist, how we collect it, what we collect and how we handle the data.
 
-As an admin, you can manage the feedback signal for your organization. We’re introducing a new set of policy settings to help you manage user feedback collection within the Microsoft 365 applications for your organization. These policy settings help you target Microsoft Entra groups and configure the feedback collection experience for your organization. User feedback goes directly to our engineers and helps us shape the future of Microsoft products and services for all our users. You can learn more about these policy settings, which applications they apply to, and best practices at [Manage Microsoft feedback for your organization](../manage/manage-feedback-ms-org.md).
+As an admin, you can manage the feedback signal for your organization. We provide you with policy settings to help you manage user feedback collection within the Microsoft 365 applications for your organization. These policy settings help you target Microsoft Entra groups and configure the feedback collection experience for your organization. User feedback goes directly to our engineers and helps us shape the future of Microsoft products and services for all our users. You can learn more about these policy settings, which applications they apply to, and best practices at [Manage Microsoft feedback for your organization](../manage/manage-feedback-ms-org.md).
 
 ## Feedback types
 
@@ -42,7 +42,7 @@ If your users are using one of Microsoft's apps and wish to provide feedback, th
 
 ### In-product surveys
 
-Users can rate their experience and provide additional information about their experience via system-initiated survey prompts. These prompts occur within the Microsoft 365 products from time to time. When prompted, users can choose if they want to provide feedback. The survey prompts typically appears at the bottom right of the app. If the user decides to provide feedback, dismisses the prompt, or lets the prompt disappear on its own, that user won't see the survey again for some time. Microsoft also leverages a governance process to limit the number of these system-initiated surveys.  The intent of governance is to ensure users aren't overwhelmed by the number of survey prompts.
+Users can rate their experience and provide additional information about their experience via system-initiated survey prompts. These prompts occur within the Microsoft 365 products from time to time. When prompted, users can choose if they want to provide feedback. The survey prompts typically appears at the bottom right of the app. If the user decides to provide feedback, dismisses the prompt, or lets the prompt disappear on its own, that user won't see the survey again for some time. Microsoft also leverages a governance process to limit the number of these system-initiated surveys. The intent of governance is to ensure users aren't overwhelmed by the number of survey prompts.
 
 :::image type="content" source="../../media/feedback-love.png" alt-text="Screenshot: Example of in-product feedback request":::
 
@@ -50,7 +50,7 @@ Users can rate their experience and provide additional information about their e
 
 ### Community feedback
 
-Users can leverage the new [Microsoft feedback portal](https://feedbackportal.microsoft.com/feedback/) to participate in public community forums for all the Microsoft 365 products. The new Feedback portal allows users to browse and upvote publicly submitted feedback as well as submit new public community feedback for any of the supported products. Top known feedback items remain available in the new portal. This portal is also a new response canvas for users to track official Microsoft responses and engage with Microsoft on feedback they submit.
+Users can leverage the [Microsoft feedback portal](https://feedbackportal.microsoft.com/feedback/) to participate in public community forums for all the Microsoft 365 products. The Feedback portal allows users to browse and upvote publicly submitted feedback as well as submit new public community feedback for any of the supported products. Top known feedback items remain available in the portal. This portal also allows users to track official Microsoft responses and engage with Microsoft on feedback they submit.
 
 :::image type="content" source="../../media/community-feedback1.png" alt-text="Screenshot: Microsoft Teams feedback portal page":::
 
@@ -64,7 +64,7 @@ Detailed and actionable feedback is vital for making changes and improvements in
 
 ## How Microsoft uses feedback
 
-Microsoft uses feedback to improve Microsoft products. We get user feedback in the form of questions, problems, compliments, and suggestions. We make sure this feedback makes it back to the appropriate teams, who use feedback to identify, prioritize and make improvements to Microsoft products. Feedback is essential for our product teams to understand our user's experiences, and directly influences the priority of fixes and improvements.
+Microsoft uses feedback to improve Microsoft products. We get user feedback in the form of questions, problems, compliments, and suggestions. We make sure this feedback makes it back to the appropriate teams, who use feedback to identify, prioritize and make improvements to Microsoft products. Feedback is essential for our product teams to understand our user's experiences and directly influences the priority of fixes and improvements.
 
 ### What do we collect?
 
@@ -85,7 +85,7 @@ When a user submits feedback, app information is usually collected along with ap
 - **Attachments**   Were any attachments (that is, screenshots, files) collected as part of the feedback? (Yes/No).
 - **TenantId**   If feedback is submitted from a Microsoft Entra account, which TenantId was associated.
 - **App module** Information about app modules that might have caused a recent crash, where applicable.
-- **Optional Diagnostic data** If you're opted in, this data will be included with the feedback. [Learn more](/deployoffice/privacy/optional-diagnostic-data).
+- **Optional Diagnostic data** If you're opted in, this data will be included with the feedback. [Learn more about optional diagnostic data](/microsoft-365-apps/privacy/optional-diagnostic-data).
 
 If you've enabled the corresponding policies, we might allow users to submit screenshots, attachments, content samples, and logs to help us debug and resolve problems the user might be running into. Microsoft uses this data to debug and resolve problems that might be challenging or impossible to resolve without this additional information. Users choose whether or not this content and data is submitted to Microsoft.
 
@@ -100,7 +100,9 @@ If you've enabled the corresponding policies, we might allow users to submit scr
 
 ## How can I see my user's feedback?
 
-To meet Microsoft’s legal obligations to customers, we've added an experience in the Microsoft 365 admin center that lets administrators view, delete, and export the feedback data for their organizations. As part of their data controller responsibility, customers own all user feedback data and this functionality will assist administrators to provide direct transparency into their users’ experiences with Microsoft 365 products and enable user feedback data to be provided as part of any Data Subject Request. The Compliance Administrator role (and the Global Administrator role) has the ability to view, export, and delete user feedback. All other administrators, as well as readers, are able to view and export feedback data but can't perform compliance related tasks or see information about who posted the feedback (such as user name, email, or device name). To access your organization's feedback data, sign in to the Microsoft 365 admin center and customize navigation to show the health node. Access this experience by selecting **Product Feedback** under the Health node.
+Administrators can view, delete, and export the feedback data for their organizations in the Microsoft 365 admin center. This functionality assists administrators to provide direct transparency into their users’ experiences with Microsoft 365 products and enables user feedback data to be provided as part of any Data Subject Request. The Compliance Administrator role (and the Global Administrator role) has the ability to view, export, and delete user feedback. All other administrators, as well as readers, are able to view and export feedback data but can't perform compliance related tasks or see information about who posted the feedback (such as user name, email, or device name). 
+
+To access your organization's feedback data, sign in to the Microsoft 365 admin center and customize navigation to show the health node. Access this experience by selecting **Product Feedback** under the Health node.
 
 :::image type="content" source="../../media/manage-feedback-3.jpg" alt-text="Product feedback in the Microsoft 365 admin center":::
 

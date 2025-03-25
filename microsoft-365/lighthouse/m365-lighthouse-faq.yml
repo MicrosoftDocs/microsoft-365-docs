@@ -292,9 +292,9 @@ sections:
       - question: Is the Sales Advisor capability in Microsoft 365 Lighthouse only for Microsoft 365, or is it also available for Azure and BizApps? 
         answer: |
           The Microsoft 365 Lighthouse Sales Advisor capability only supports Modern Work Microsoft 365 services and solutions.  
-      - question: Once a partner is onboarded to Lighthouse, how do they get started with Sales Advisor? 
+      - question: How do I get started with Sales Advisor? 
         answer: |
-          Instructions on how to onboard to Lighthouse and how to use the Sales Advisor capabilities are posted on [Get access to Sales Advisor](m365-lighthouse-get-access-to-sales-advisor.md). 
+          Sales Advisor is integrated into Lighthouse. You must hold the Account Manager role in Lighthouse. If you don't hold the Account Manager role, reach out to someone who holds the Administrator role in Lighthouse and ask them to assign the role to you. For more information, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). To learn more about using Sales Advisor to view customer opportunities, see [Overview of Sales Advisor in Microsoft 365 Lighthouse](m365-lighthouse-sales-advisor-overview.md).
       - question: What is the difference between Sales Advisor and Cloud Ascent? Are they complimentary? 
         answer: |
           The two offerings serve different purposes and use different signals to generate information shared with partners. 

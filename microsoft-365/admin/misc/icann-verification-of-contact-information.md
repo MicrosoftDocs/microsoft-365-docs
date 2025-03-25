@@ -2,10 +2,10 @@
 title: "ICANN verification of contact information"
 f1.keywords:
 - NOCSH
-ms.author: nkagole
-author: nataliekagole
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
-ms.date: 02/18/2020
+ms.date: 08/28/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business

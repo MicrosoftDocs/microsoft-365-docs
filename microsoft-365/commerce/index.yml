@@ -22,7 +22,7 @@ metadata:
   audience: Admin
   ms.localizationpriority: medium
   search.appverid: MET150
-  ms.date: 10/27/2023
+  ms.date: 03/13/2025
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -76,6 +76,8 @@ landingContent:
         links:
           - text: Buy new licenses
             url: https://www.youtube.com/watch?v=1E3-ozWz0A4
+          - text: Remove existing licenses
+            url: https://www.youtube.com/watch?v=Edtf_uy5fZs
 
   # Card
   - title: Manage subscriptions
@@ -98,3 +100,5 @@ landingContent:
         links:
           - text: Sign up for Microsoft 365 for business
             url: https://www.youtube.com/watch?v=BRN-zfy0ncI
+          - text: Move users to a different subscription
+            url: https://www.youtube.com/watch?v=IgXxC1H1XU0

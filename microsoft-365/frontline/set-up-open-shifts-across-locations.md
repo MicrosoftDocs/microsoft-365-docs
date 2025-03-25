@@ -1,10 +1,10 @@
 ---
 title: Set up open shifts across locations in Shifts for your frontline
 author: lana-chin
-ms.author: v-chinlana
+ms.author: jtremper
 manager: jtremper
 ms.reviewer: harrywong
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150

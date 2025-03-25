@@ -6,7 +6,7 @@ author: DaniEASmith
 ms.author: danismith
 manager: jtremper
 audience: Admin
-ms.topic: article
+ms.topic: integration
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: 

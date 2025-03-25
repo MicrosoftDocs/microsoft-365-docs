@@ -5,7 +5,7 @@ author: camillepack
 manager: scotv
 ms.date: 03/08/2024
 audience: Admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:

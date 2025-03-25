@@ -1,22 +1,22 @@
 ---
-title: Use explanation templates in Microsoft Syntex
+title: Use explanation templates for document processing in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 08/13/2024
+ms.date: 01/13/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-syntex
 search.appverid:
 ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn more about how to use and save explanation templates in Microsoft Syntex.
+description: Learn more about how to use and save explanation templates for document processing in SharePoint.
 ---
 
-# Use explanation templates in Microsoft Syntex
+# Use explanation templates for document processing in SharePoint
 
 <sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
 

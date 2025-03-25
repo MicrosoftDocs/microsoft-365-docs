@@ -3,7 +3,7 @@ title: "Microsoft 365 Copilot features adoption using organizational messages"
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 10/16/2023
+ms.date: 03/18/2025
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -28,7 +28,7 @@ description: "Learn how you can use organizational messages to help with the ado
 
 # Microsoft 365 Copilot features adoption using organizational messages
 
-Organizational messages enable Enterprise administrators to deliver clear, actionable in-product messages to users of Microsoft 365 experiences. To learn more about organizational messages, see [Organizational Messages in Adoption Score](../adoption/organizational-messages.md) and [Organizational Messages in Intune](/mem/intune/remote-actions/organizational-messages-prerequisites).
+Organizational messages enable Enterprise administrators to deliver clear, actionable in-product messages to users of Microsoft 365 experiences. To learn more about organizational messages, see [Organizational Messages in Adoption Score](../adoption/organizational-messages.md) and [Organizational Messages in the Microsoft 365 admin center](/microsoft-365/admin/misc/organizational-messages-microsoft-365).
 
 To help with the adoption of Microsoft 365 Copilot features, organizational messages in Microsoft 365 usage analytics report enable admins to send messages to their Microsoft 365 licensed users who haven't recently used any Copilot features. In the pipeline, we're planning to expand organizational messages across platforms like Teams, Outlook, Excel, PowerPoint, and Word to further enhance the adoption of specific Copilot features.
 
@@ -40,7 +40,7 @@ To preview organizational messages in the Microsoft 365 Copilot usage report, yo
 
 - Organizational Message Writer
 
-The Organizational Message Writer role is a built-in role that allows assigned admins to view and configure organizational messages for their tenant. Note that this role doesn't grant access to user-level details in usage reports or the ability to modify permission settings. To learn more about the Organizational Message Writer role, see [About admin roles](../add-users/about-admin-roles.md).
+The Organizational Message Writer role is a built-in role that allows assigned admins to view and configure organizational messages for their tenant. This role doesn't grant access to user-level details in usage reports or the ability to modify permission settings. To learn more about the Organizational Message Writer role, see [About admin roles](../add-users/about-admin-roles.md).
 
 The global administrator can assign the Organizational Messages Writer role to an admin user by following these steps:
 
@@ -66,18 +66,18 @@ Select **Schedule message** within the recommendation card and follow these step
 
 ### Step 1: Select message content
 
-Within the **Message** section of the Organizational messages panel, choose one from the set of the pre-made content, each containing a title, message, and link for your users to visit when they interact with the message. You can then review what the message will look like to your targeted users within the **Preview** section.  In the preview, we support the Windows 11 notification and Teaching popover in new Teams.
+Within the **Message** section of the Organizational messages panel, choose one from the set of the premade content, each containing a title, message, and link for your users to visit when they interact with the message. You can then review what the message looks like to your targeted users within the **Preview** section. In the preview, we support the Windows 11 notification and Teaching popover in new Teams.
 
 :::image type="content" source="../../media/copilot-notification-for-org.png" alt-text="Screenshot showing the notification pop-up for Copilot.":::
 
 *The users see the Windows 11 notification recommending they use Microsoft 365 Copilot.*
 
 >[!NOTE]
-> Messages will align with your computer's system language settings. We currently support 15 languages. If your language is not among them, we will default to the nearest available option. [Check the appendix to see which languages are supported](#appendix).
+> Messages align with your computer's system language settings. We currently support 15 languages. If your language isn't among them, we'll default to the nearest available option. [Check the appendix to see which languages are supported](#appendix).
 
 :::image type="content" source="../../media/from-your-admin-teams.png" alt-text="Screenshot showing the notification pop-up in Teams from the admin to use Copilot.":::
 
-*The users see Teams in-product Teaching Popovers in the new Teams recommending they use Copilot in Teams.*
+*The users see Microsoft Teams in-product Teaching Popovers in the new Teams recommending they use Copilot in Teams.*
 
 >[!NOTE]
 > Organizational messages will only show up in the new Teams.
@@ -100,7 +100,7 @@ Once you're satisfied with the configuration of your message, check the acknowle
 
 ## What’s next?
 
-The Organizational message will start sending on your provided start date. You can confirm the status of your message within the recommendation card and/or by selecting **View details**. If you need to make any changes, you can cancel the current message within the details panel and create a new one by repeating the previously described process.
+The Organizational message starts sending on your provided start date. You can confirm the status of your message within the recommendation card and/or by selecting **View details**. If you need to make any changes, you can cancel the current message within the details panel and create a new one by repeating the previously described process.
 
 ## FAQ
 

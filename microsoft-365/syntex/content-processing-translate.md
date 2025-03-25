@@ -6,14 +6,14 @@ manager: jtremper
 ms.reviewer: ssquires
 ms.date: 01/07/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to create a rule to automatically translate a document when a new file is added or when data in a column changes in a SharePoint document library with Microsoft Syntex.
+description: Learn how to create a rule to automatically translate a document when a new file is added or when data in a column changes in a SharePoint document library.
 ---
 
 # Create a rule to automatically translate a file in a document library

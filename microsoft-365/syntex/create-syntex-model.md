@@ -1,26 +1,26 @@
 ---
-title: Create an enterprise model in Microsoft Syntex
+title: Create an enterprise model for document processing in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 11/19/2024
+ms.date: 03/07/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to create a custom or prebuilt model with Microsoft Syntex.
+description: Learn how to create an enterprise document processing model in SharePoint.
 ---
 
-# Create an enterprise model in Microsoft Syntex
+# Create an enterprise model for document processing in SharePoint
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
-An enterprise model is created and trained in the [content center](create-a-content-center.md), and can be discovered by others to use. Whether you want to create a custom model or use a prebuilt model, you can do so from any of these places in Microsoft Syntex:
+An enterprise model is created and trained in the [content center](create-a-content-center.md). It can be used across multiple SharePoint sites within your organization, and it can be discovered by others to use. Whether you want to create a custom model or use a prebuilt model, you can do so from any of these places in Microsoft Syntex:
 
 - From the **Models** library
 - From the [content center](create-a-content-center.md) home page

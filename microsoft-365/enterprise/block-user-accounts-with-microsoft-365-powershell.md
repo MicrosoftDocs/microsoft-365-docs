@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 ms.date: 12/09/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: medium
@@ -105,7 +105,7 @@ Update-MgUser -UserId $user.Id -BodyParameter $params
 To check the blocked status of a user account use the following command:
 
 ```powershell
-Get-MgUser -ObjectID <UPN of user account> -Property "displayName,accountEnabled" | Select displayName, accountEnabled
+Get-MgUser -UserId <UPN of user account> -Property "displayName,accountEnabled" | Select displayName, accountEnabled
 ```
 
 ### Block multiple user accounts

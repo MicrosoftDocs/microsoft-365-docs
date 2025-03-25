@@ -4,7 +4,7 @@ ms.author: erikre
 author: erikre
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.date: 09/12/2024
 description: Step 3. Verify and monitor app assignments.
 ms.service: o365-solutions

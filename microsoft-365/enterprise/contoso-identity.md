@@ -76,7 +76,7 @@ Here's the resulting set of Contoso identity and device Conditional Access polic
 
 ## Next step
 
-Learn how Contoso uses its Microsoft Endpoint Configuration Manager infrastructure to [deploy and keep current Windows 11 Enterprise](contoso-win10.md) across its organization.
+Learn how Contoso uses its Microsoft Endpoint Configuration Manager infrastructure to [deploy and keep current Windows 11 Enterprise](contoso-win11.md) across its organization.
 
 ## See also
 

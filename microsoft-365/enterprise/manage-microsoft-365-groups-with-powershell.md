@@ -5,7 +5,7 @@ ms.author: danismith
 manager: jtremper
 ms.date: 9/29/2023
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: medium

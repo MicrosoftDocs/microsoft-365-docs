@@ -1,10 +1,10 @@
 ---
 title: How to find the best frontline team solution for your organization
 author: lana-chin
-ms.author: v-chinlana
+ms.author: jtremper
 manager: jtremper
 ms.reviewer: arnavgupta
-ms.topic: conceptual
+ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150

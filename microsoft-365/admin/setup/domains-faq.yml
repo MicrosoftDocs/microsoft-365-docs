@@ -1,11 +1,11 @@
 ### YamlMime:FAQ
 metadata:
-  ms.date: 09/22/2023
+  ms.date: 11/18/2024
   title: Domains Frequently Asked Questions
   f1.keywords:
   - NOCSH
-  ms.author: nkagole
-  author: nataliekagole
+  ms.author: kvice
+  author: kelleyvice-msft
   manager: scotv
   audience: Admin
   ms.topic: faq
@@ -131,9 +131,9 @@ sections:
           
           ::: moniker-end
               
-          2. On the **Domains** page, select the domain you want to set as the default for new email addresses. 
+          1. On the **Domains** page, select the domain you want to set as the default for new email addresses. 
               
-          3. Select **Set as default**.
+          1. Select **Set as default**.
               
           ::: moniker range="o365-worldwide"
           
@@ -182,7 +182,7 @@ sections:
         answer: |
           For the procedure to transfer a domain, see [Transfer a domain from Microsoft to another host](../get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host.md).
           
-      - question: Pilot Microsoft 365 from my custom domain
+      - question: How do I pilot Microsoft 365 from my custom domain?
         answer: |
           For the procedure to pilot Microsoft 365 email functionality from a custom domain to a Microsoft 365 mailbox, see [Pilot Microsoft 365 from my custom domain](../misc/pilot-microsoft-365-from-my-custom-domain.md).
           
@@ -199,8 +199,6 @@ sections:
           - **You can't remove your onmicrosoft.com domain.** Microsoft 365 needs to keep it around because it's used behind the scenes for your subscription. But you don't have to use the domain yourself after you've added a custom domain. If you choose to create a new onmicrosoft.com domain, it cannot be removed. You are limited to five onmicrosoft.com domains in your Microsoft 365 environment, so make sure to check for spelling and to assess your need if you choose to create a new one. 
               
           You can keep using the initial onmicrosoft.com domain even after you add your domain. It still works for email and other services, so it's your choice.
-           
-                        
           
       - question: How do I verify my nonprofit or education status?
         answer: |
@@ -230,4 +228,4 @@ sections:
           
           4. To integrate the website with Microsoft 365, you can add your business email to the website and a link to Microsoft Teams, SharePoint, or other collaboration tool.
           
-          5. Make sure to connect your website to your domain name, which you&#39;re also using for email on Microsoft 365.
+          5. Make sure to connect your website to your domain name, which you're also using for email on Microsoft 365.

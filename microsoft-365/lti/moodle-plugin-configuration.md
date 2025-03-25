@@ -6,7 +6,7 @@ manager: jacktremper
 ms.reviewer: amitman 
 ms.date: 04/06/2022
 audience: admin
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.service: microsoft-365-business
 f1.keywords:
 - CSH

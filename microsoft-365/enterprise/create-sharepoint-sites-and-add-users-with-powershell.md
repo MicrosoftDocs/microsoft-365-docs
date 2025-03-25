@@ -3,7 +3,7 @@ title: "Create SharePoint sites and add users with PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 04/12/2024
+ms.date: 03/12/2025
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-enterprise
@@ -49,7 +49,7 @@ The PowerShell cmdlet imports the .csv file and pipes it to a loop inside the cu
 
 1. Open Notepad, and paste the following text block into it:
 
-   ```powershell
+   ```
    Owner,StorageQuota,Url,ResourceQuota,Template,TimeZoneID,Name
    owner@tenant.onmicrosoft.com,100,https://tenant.sharepoint.com/sites/TeamSite01,25,EHS#1,10,Contoso Team Site
    owner@tenant.onmicrosoft.com,100,https://tenant.sharepoint.com/sites/Blog01,25,BLOG#0,10,Contoso Blog
@@ -98,7 +98,7 @@ The following procedures continue using the example sites TeamSite01, Blog01, Pr
 
 1. Open Notepad, and paste the following text block into it:
 
-   ```powershell
+   ```
    Site,Group,PermissionLevels
    https://tenant.sharepoint.com/sites/Community01,Contoso Project Leads,Full Control
    https://tenant.sharepoint.com/sites/Community01,Contoso Auditors,View Only
@@ -116,7 +116,7 @@ The following procedures continue using the example sites TeamSite01, Blog01, Pr
 
 3. Open a new instance of Notepad, and paste the following text block into it:
 
-   ```powershell
+   ```
    Group,LoginName,Site
    Contoso Project Leads,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Community01
    Contoso Auditors,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Community01

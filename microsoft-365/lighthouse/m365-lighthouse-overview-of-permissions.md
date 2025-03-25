@@ -74,6 +74,7 @@ The following table describes the actions that each Lighthouse RBAC role can per
 |  | Create, update, and delete tags in Lighthouse |  | &check; | &check; |  |  | No |
 |  | Assign and remove tags from tenants |  | &check; | &check; |  |  | No |
 |  | Activate and inactivate a tenant |  | &check; | &check; |  |  | No |
+|  | Create customer reports |  |  |  |  |  | Yes |
 |  | View delegated access status | &check; | &check; | &check; | &check; | &check; | No |
 |  | View Microsoft Secure Score |  |  |  |  |  | Yes |
 |  | View baseline assignments | &check; | &check; | &check; | &check; | &check; | No |

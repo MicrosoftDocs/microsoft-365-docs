@@ -7,7 +7,7 @@ ms.author: kvice
 manager: scotv
 ms.date: 09/06/2024
 audience: ITPro
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: medium

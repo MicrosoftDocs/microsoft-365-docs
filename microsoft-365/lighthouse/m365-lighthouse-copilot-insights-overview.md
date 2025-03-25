@@ -7,7 +7,7 @@ manager: scotv
 ms.reviewer: viratsingh
 ms.date: 11/08/2024
 audience: Admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:

@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 ms.date: 04/15/2024
 audience: Admin
-ms.topic: conceptual
+ms.topic: upgrade-and-migration-article
 ms.service: microsoft-365-enterprise
 ms.subservice: network
 ms.localizationpriority: medium

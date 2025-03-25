@@ -9,7 +9,7 @@ ms.subservice: advanced-data-residency
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 02/29/2024
+ms.date: 02/11/2025
 ms.reviewer: deanw
 ms.custom:
 - it-pro
@@ -22,7 +22,7 @@ ms.collection:
 # Data Residency Legacy Move Program
 
 > [!NOTE]
-> Coinciding with the launch of the Microsoft 365 Advanced Data Residency add-on, the Move Program will no longer be offered during the launch of new local datacenter regions.  Our most recent local datacenter region launch in Qatar (August 2022) is the final region to receive Move Program benefits. The following information is still valid for regions that were part of Move Program and all customers currently opted-in for migration will be processed.  For more information, see [the ADR page](advanced-data-residency.md).
+> Coinciding with the launch of the Microsoft 365 Advanced Data Residency add-on, the Move Program will no longer be offered during the launch of new local datacenter regions. Our most recent local datacenter region launch in Qatar (August 2022) is the final region to receive Move Program benefits. The following information is still valid for regions that were part of Move Program and all customers currently opted-in for migration will be processed. For more information, see [the ADR page](advanced-data-residency.md).
 
 ## When Can I Request a Move (final opt-in opportunity)
 
@@ -46,7 +46,7 @@ ms.collection:
 ## Remaining Countries/regions in the Move Program
 
 > [!NOTE]
-> Even though the Move Program is officially ending, we still have some in-flight geographies that we will see through to completion, based on the original 24-month migration commitment. Please refer to the following table for the remaining countries/regions and their migration deadlines.
+> Even though the Move Program is officially ending, we still have some in-flight geographies that we will see through to completion, based on the original 24-month migration commitment. Refer to the following table for the remaining countries/regions and their migration deadlines.
 
 | Customers with signup country/region in | Original Opt-in: migration commitment date | Final Opt-in (above): migration commitment date |
 |:-----|:-----|:-----|
@@ -196,6 +196,6 @@ Yes. Microsoft maintains a large global network with public Internet connections
 ### I have public folders deployed in my _Tenant_. What will be the impact on public folder access during or after the move?
 <details><summary>Select to expand</summary>
 
-There's no impact to end users accessing public folders during or after the move of public folders. However, the public folders may not be available for administration in the Exchange Admin Center tool till all public folder mailboxes are moved in same region. Please check [this article](https://aka.ms/pfxrf) for more details.
+There's no impact to end users accessing public folders during or after the move of public folders. However, the public folders may not be available for administration in the Exchange Admin Center tool till all public folder mailboxes are moved in same region. Refer to [this article](https://aka.ms/pfxrf) for more details.
 
 </details>

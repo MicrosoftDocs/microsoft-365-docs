@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 ms.date: 09/09/2024
 audience: admin
-ms.topic: conceptual
+ms.topic: get-started
 ms.service: microsoft-syntex
 ms.collection: 
 - enabler-strategic

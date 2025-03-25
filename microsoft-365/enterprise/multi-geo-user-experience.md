@@ -1,7 +1,7 @@
 ---
 title: "User experience in a multi-geo environment"
 ms.reviewer:
-ms.date: 10/29/2024
+ms.date: 02/14/2025
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -110,3 +110,16 @@ There are two constituents of the Microsoft 365 Person data:
 To enable discovery, organizational structure exploration, rich people search, and full fidelity collaboration experiences, the Global Address List (GAL) and the Microsoft 365 Profile of users in the tenant is replicated and kept in sync across geos both when a Multi-Geo tenant is first set up and in response to certain user actions. Examples of user actions include direct and indirect interactions with one or more users in the tenant via activities like becoming part of the Organization, creating and/or joining Teams meetings, sharing and/or co-editing files, profile card lookup, and adding of contacts as described in [Add, find, edit, or delete a contact in Outlook](https://support.microsoft.com/office/add-find-edit-or-delete-a-contact-in-outlook-e1dc4548-3bd6-4644-aecd-47b5728f7b0d#:~:text=information%20any%20time.-,Select%20the%20contact%20from%20the%20list%2C%20then%20select%20Edit%20contact,and%20begin%20adding%20more%20information.&text=someone's%20profile%20card-,In%20Mail%2C%20open%20an%20email%20message%20in%20the%20reading%20pane,card%2C%20select%20Add%20to%20contacts.). 
 
 In addition to the central GAL, replicated Microsoft 365 Profiles of other users from an interaction or collaboration are stored in the Microsoft 365 People dataset of the target user's mailbox.
+
+## Search and Collaboration Experience  
+
+The Multi-Geo SKU supports full fidelity search and collaboration experiences across all key content types in Exchange Online Mailbox (email, calendar), SharePoint and OneDrive Files, Microsoft Connectors and so forth.  
+
+When users interact directly or indirectly with content they have access to, the activities performed on the content (such as edits, permission updates, mentions) and the associated content updates are copied into respective associated stores and kept in sync, across geos where required. Examples of content include: 
+
+- User-owned and Shared documents  
+- Tenant owned content like company-wide SharePoint site and company published files.  
+
+The seamless synchronization of the file content and associated updates of the content and access modifications allows users to collaborate on the latest version across geographies. It ensures that search and other M365 experiences like My Content in M365, Recently Opened or Shared in various applications, always reflect the latest version of the file and associated user activities. Access to the file is guarded by the source file content access controls. 
+
+An individual user’s personal interactions which include pinning documents, marking as favorites, following sites and Copilot prompts and responses with an item are not shared with others and remain private. Both admins and users can configure their search capabilities by using the article [Configure Search for OneDrive Multi-Geo](configure-search-for-multi-geo.md).

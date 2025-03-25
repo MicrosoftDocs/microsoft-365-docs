@@ -4,8 +4,8 @@ description: Integrate and use the Microsoft Teams Assignments learning tool int
 author: jennplatt
 ms.author: avering
 manager: mimast
-ms.date: 01/20/2025
-ms.topic: article
+ms.date: 02/05/2025
+ms.topic: how-to
 ms.service: microsoft-365-business
 ---
 
@@ -19,6 +19,9 @@ For an overview of all of the Microsoft integrations for learning management sys
 > This guide provides steps for registering the Teams Assignments app for Blackboard.
 >
 >The user who performs this integration should have a System Administrator system role in Blackboard.
+
+> [!IMPORTANT]
+> If you previously deployed the preview version of the integration, you need to re-deploy the tool in Blackboard following the new deployment steps included in this article. Our URLs changed and cannot currently be syncronized into your current preview deployment. The preview deployment should be deleted or hidden as the old URLs will not be supported in the near future and the old deployment will stop working.
 
 > [!IMPORTANT]
 >By installing and using the Teams Assignments LTI app, educators and students can transmit grades to the LMS where the terms of use and privacy policy of that application apply.
@@ -42,8 +45,8 @@ For an overview of all of the Microsoft integrations for learning management sys
 A Microsoft class team must be connected to a Blackboard course to allow the instructor to link Teams Assignments as content and to sync back grades and feedback. There are a few ways to enable instructors to connect a team to their course.
 
 - Required: Blackboard users must have their **Institutional Email** set to their Microsoft Entra UPN as described in our [Supporting Institutional Data Mapping](/microsoft-365/lti/teams-classes-with-blackboard) guidance in order to match users between the LMS course and class teams enrollments for grade sync.
-- For **Blackboard Ultra** courses: It's recommended that the Microsoft Teams classes integration be used with Blackboard Ultra to enable automatic creation and linking of class teams. LMS administrators can enable the integration by following the [Use Microsoft Teams classes with Blackboard Ultra deployment guide](/microsoft-365/lti/teams-classes-with-blackboard).
-- For **Blackboard Ultra or Original** courses:  Class teams can be created and rostered using [Microsoft School Data Sync](/schooldatasync/school-data-sync-overview), manually by instructors, or other methods. It's important that class team enrollments match the LMS course enrollment so that instructors can connect their teams to their courses and students assigned Teams Assignments can access their assignments and have grades in sync with the LMS gradebook.
+- For the **Ultra experience for Blackboard** courses: It's recommended that the Microsoft Teams classes integration be used with Blackboard Ultra to enable automatic creation and linking of class teams. LMS administrators can enable the integration by following the [Use Microsoft Teams classes with Blackboard Ultra deployment guide](/microsoft-365/lti/teams-classes-with-blackboard).
+- For the **Ultra or Original experience for Blackboard** courses:  Class teams can be created and rostered using [Microsoft School Data Sync](/schooldatasync/school-data-sync-overview), manually by instructors, or other methods. It's important that class team enrollments match the LMS course enrollment so that instructors can connect their teams to their courses and students assigned Teams Assignments can access their assignments and have grades in sync with the LMS gradebook.
 
 ## Browser settings
 
@@ -63,20 +66,20 @@ On their first access to the app, course instructors and students need to sign i
 
 **Instructors** must have a Microsoft class team connected with their Blackboard course to link Teams Assignments as content and sync back grades and feedback. There are a few ways to connect a team to a course:
 
-- For **Blackboard Ultra** courses with Teams classes integration enabled:
+- For the **Ultra experience for Blackboard** courses with Teams classes integration enabled:
 
     1. Select the **Enable Microsoft Teams** link in the **Details & Actions** right-side menu.
 
     :::image type="content" source="media/enable-teams.png" alt-text="Screenshot of the link for enabling Microsoft Teams." border="true":::
 
-- For **Blackboard Ultra** courses without Teams classes integration enabled:
+- For the **Ultra experience for Blackboard** courses without Teams classes integration enabled:
 
      1. Select the **View course and institution tools** link in the **Details & Actions** menu under the **Books & Tools** header in the right-side menu.
      1. Select the **Teams Assignments** link in the **Instructor Tools** menu.
      1. Follow the wizard prompts to connect one or more class teams to your course.
      1. If there's already a Team connected to your course, select the **Connect class teams** link in the upper-right to connect or disconnect Teams from the LMS course.
 
-- For **Blackboard Original** courses:
+- For the **Original experience for Blackboard** courses:
 
     1. Select the **Tools** link in the left-side menu.
     1. Select the **Tools** dropdown to insert a new content item into the list and then choose **Link a Teams Assignment** from the list.
@@ -85,13 +88,13 @@ On their first access to the app, course instructors and students need to sign i
 
 **Instructors** can link a Teams Assignment into their course content list.
 
-- For **Blackboard Ultra** courses:
+- For the **Ultra experience for Blackboard** courses:
 
     1. Select the **Content** tab in the top menu.
     1. Select the **+ (plus)** symbol to insert a new content item into the list and then choose **Content Market.**
     1. Select the **Link a Teams Assignment** tile in the Institution Tools list.
 
-- For **Blackboard Original** courses:
+- For the **Original experience for Blackboard** courses:
 
     1. Select **Content** link in the left-side menu.
     1. Select the **Build Content** dropdown to insert a new content item into the list and then choose **Link a Teams Assignment** from the list.
@@ -102,13 +105,13 @@ In the Teams Assignments linking UX, instructors can choose to create a new or l
 
 **Instructors** can create and link a Teams Assignment into their course content list.
 
-- For **Blackboard Ultra** courses:
+- For the **Ultra experience for Blackboard** courses:
 
     1. Select the **Content** tab in the top menu.
     1. Select the **+ (plus)** symbol to insert a new content item into the list and then choose **Content Market.**
     1. Select the **Link a Teams Assignment** tile in the **Institution Tools** list.
 
-- For **Blackboard Original** courses:
+- For the **Original experience for Blackboard** courses:
 
     1. Select the **Content** link in the left-side menu.
     1. Select the **Build Content** dropdown to insert a new content item into the list and then choose **Link a Teams Assignment** from the list.
@@ -127,12 +130,12 @@ In the Teams Assignments linking UX, instructors can choose to [Create a new Tea
 
 **Instructors** can review the sync status of grades from linked assignments, diagnose issues, and manage connected teams.
 
-- For **Blackboard Ultra** courses:
+- For the **the Ultra experience for Blackboard** courses:
 
     1. Select the **View course and institution tools** link in  **Details & Actions** menu under the **Books & Tools** header in the right-side menu.
     1. Select the **Teams Assignments** link in the Instructor Tools menu.
 
-- For **Blackboard Original** courses:
+- For the **Original experience for Blackboard** courses:
 
     1. Select the **Tools** link in the left-side menu.
     1. Select the **Tools** dropdown to insert a new content item into the list and then choose **Link a Teams Assignment** from the list.

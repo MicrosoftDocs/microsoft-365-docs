@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 ms.date: 08/15/2024
 audience: ITPro
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: 

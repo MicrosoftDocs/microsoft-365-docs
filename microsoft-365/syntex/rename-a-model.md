@@ -1,22 +1,22 @@
 ---
-title: Rename a model in Microsoft Syntex
+title: Rename a document processing model in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: ssquires
-ms.date: 09/09/2024
-ms.topic: conceptual
+ms.date: 03/09/2025
+ms.topic: how-to
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how and why to rename a model in Microsoft Syntex.
+description: Learn how and why to rename a document processing model in SharePoint.
 ---
 
-# Rename a model in Microsoft Syntex
+# Rename a document processing model in SharePoint
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
@@ -25,7 +25,7 @@ At some point, you might want to rename a model. A common example is when you cr
 Another example is when your organization makes a decision to refer to a process or document type by a different name. For example, after you create your model and are ready to apply it, your organization might mandate that all “Contracts” will now formally be referred to as "Agreements." If needed, you can choose to rename your model from “Contract Renewals” to "Agreement Renewals."
 
 > [!IMPORTANT]
-> You can only rename a model if it has not been applied to a document library. 
+> You can only rename a model if it has not been applied to a document library.
 
 Renaming a model also renames the [content type](/sharepoint/governance/content-type-and-workflow-planning#content-type-overview) that is associated with the model.
 

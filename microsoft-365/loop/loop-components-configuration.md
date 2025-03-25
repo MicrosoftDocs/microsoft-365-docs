@@ -1,5 +1,5 @@
 ---
-ms.date: 11/18/2024
+ms.date: 03/06/2025
 title: "Manage Loop components in your organization"
 ms.reviewer: dancost, tonchan
 ms.author: jenz
@@ -26,7 +26,7 @@ description: "Learn how to manage Loop components in your organization."
 
 # Loop admin policies for Loop components and Loop workspaces
 
-Loop components and integrations are backed by `.loop` files (earlier releases of Loop created these as `.fluid` files), stored in OneDrive, SharePoint, or [SharePoint Embedded](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/cta). IT administrators need to manage creation of Loop content and integrations using **BOTH**:
+Loop components and integrations are backed by `.loop` files (earlier releases of Loop created these as `.fluid` files), stored in OneDrive, SharePoint, or [SharePoint Embedded](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/cta). Learn more about [Loop storage](/microsoft-365/loop/loop-workspaces-storage-permission#loop-storage), which is combined with SharePoint in your tenant. IT administrators need to manage creation of Loop content and integrations using **BOTH**:
 
 1. Cloud Policy
 1. SharePoint PowerShell command (Teams only)
@@ -64,7 +64,7 @@ There are several IT Admin policy settings provided to enable creation of Loop c
 |---------|---------|---------|---------|
 |Loop workspaces creation  |  Cloud Policy  |  **Create Loop workspaces in Loop**  |  Applies to: Loop workspaces (previously titled Create and view Loop workspaces in Loop)  |
 |Loop component creation and integration across Microsoft 365  |  Cloud Policy  | **Create and view Loop files in Microsoft apps that support Loop**  |  Applies to: <br/> - Outlook integration<br> - [Teams New Calendar](https://support.microsoft.com/en-us/office/get-started-with-the-new-calendar-in-microsoft-teams-98f3b637-5da2-43e2-91b3-f312ab3e4dc5) integration<br> - OneNote integration<br> - Whiteboard integration<br> Does **NOT** apply to:<br> - Loop workspaces<br> - Teams integration<br> - Copilot Pages  |
-|Copilot Pages creation and integration  |  Cloud Policy  |  **Create and view Loop files in Microsoft 365 Copilot Chat**  |  Applies to: Copilot Pages in a Copilot chat experience  |
+|Copilot Pages creation and integration  |  Cloud Policy  |  **Create and view Copilot Pages**  |  Applies to: Copilot Pages in a Copilot chat experience  |
 |Outlook creation and integration of Loop experiences  |  Cloud Policy  |  **Create and view Loop files in Outlook**  |  First checks **Create and view Loop files in Microsoft apps that support Loop**; then applies **Create and view Loop files in Outlook**, if applicable.<br/><br/>Applies to: <br/> - Outlook<br/> - [Teams New Calendar](https://support.microsoft.com/en-us/office/get-started-with-the-new-calendar-in-microsoft-teams-98f3b637-5da2-43e2-91b3-f312ab3e4dc5)  |
 |Teams creation and integration  |  SharePoint property  |  See [Settings management for Loop components in Teams](#settings-management-for-loop-functionality-in-teams)  |  Teams only checks the settings in this row.  |
 
@@ -75,7 +75,7 @@ Configure the creation of content in these locations by using the appropriate po
 |Loop content originally created in|️️️Manage with this policy|Loop content storage|
 |-----|-----|-----|
 |Loop app|Cloud Policy: **Create  Loop workspaces in Loop**|SharePoint Embedded: ✔️in Loop workspace|
-|Copilot Pages|Cloud Policy: **Create and view Loop files in Microsoft 365 Copilot Chat**|SharePoint Embedded: ✔️in Loop workspace|
+|Copilot Pages|Cloud Policy: **Create and view Copilot Pages**|SharePoint Embedded: ✔️in Loop workspace|
 |Teams channel meeting (Teams Classic Calendar)|SharePoint property `Set-SPOTenant -IsCollabMeetingNotesFluidEnabled $true`|SharePoint Site: 📁`Meetings`|
 |Teams channel meeting ([Teams New Calendar](https://support.microsoft.com/en-us/office/get-started-with-the-new-calendar-in-microsoft-teams-98f3b637-5da2-43e2-91b3-f312ab3e4dc5))|Cloud Policy: **Create and view Loop files in Microsoft apps that support Loop** -or- **Create and view Loop files in Outlook**|SharePoint Site: 📁`Meetings`|
 |Teams channel|SharePoint property `Set-SPOTenant -IsCollabMeetingNotesFluidEnabled $true`|SharePoint Site: ✔️in Channel folder|
@@ -90,9 +90,9 @@ Configure the creation of content in these locations by using the appropriate po
 
 |Scenario  |  Policies Configured  |
 |---------|---------|
-|✅Enable Loop workspaces creation and Loop component creation and integration everywhere  |  ✅ **Create Loop workspaces in Loop** = Enabled (or Not Configured)<br/>✅ **Create and view Loop files in Microsoft apps that support Loop** = Enabled (or Not Configured)<br/>✅ **Create and view Loop files in Microsoft 365 Copilot Chat** = Enabled (or Not Configured)<br/>✅ [Teams-only] `Set-SPOTenant -IsLoopEnabled $true`, `Set-SPOTenant -IsCollabMeetingNotesFluidEnabled $true`  |
-|✅Enable Loop workspaces creation and Loop component creation and integration everywhere, but ⛔Disable Loop component creation and integration in Communication apps (Outlook, Teams)  |  ✅ **Create Loop workspaces in Loop** = Enabled (or Not Configured)<br/>✅ **Create and view Loop files in Microsoft apps that support Loop** = Enabled (or Not Configured)<br/>✅ **Create and view Loop files in Microsoft 365 Copilot Chat** = Enabled (or Not Configured)<br/>⛔ **Create and view Loop files in Outlook** = Disabled<br/>⛔ [Teams-only] `Set-SPOTenant -IsLoopEnabled $false`, `Set-SPOTenant -IsCollabMeetingNotesFluidEnabled $false`  |
-|⛔Disable Loop workspace creation and Loop component creation and integration everywhere  |  ⛔ **Create Loop workspaces in Loop** = Disabled<br/>⛔ **Create and view Loop files in Microsoft apps that support Loop** = Disabled<br/>⛔ **Create and view Loop files in Microsoft 365 Copilot Chat** = Disabled<br/>⛔ [Teams-only] `Set-SPOTenant -IsLoopEnabled $false`, `Set-SPOTenant -IsCollabMeetingNotesFluidEnabled $false`  |
+|✅Enable Loop workspaces creation and Loop component creation and integration everywhere  |  ✅ **Create Loop workspaces in Loop** = Enabled (or Not Configured)<br/>✅ **Create and view Loop files in Microsoft apps that support Loop** = Enabled (or Not Configured)<br/>✅ **Create and view Copilot Pages** = Enabled (or Not Configured)<br/>✅ [Teams-only] `Set-SPOTenant -IsLoopEnabled $true`, `Set-SPOTenant -IsCollabMeetingNotesFluidEnabled $true`  |
+|✅Enable Loop workspaces creation and Loop component creation and integration everywhere, but ⛔Disable Loop component creation and integration in Communication apps (Outlook, Teams)  |  ✅ **Create Loop workspaces in Loop** = Enabled (or Not Configured)<br/>✅ **Create and view Loop files in Microsoft apps that support Loop** = Enabled (or Not Configured)<br/>✅ **Create and view Copilot Pages** = Enabled (or Not Configured)<br/>⛔ **Create and view Loop files in Outlook** = Disabled<br/>⛔ [Teams-only] `Set-SPOTenant -IsLoopEnabled $false`, `Set-SPOTenant -IsCollabMeetingNotesFluidEnabled $false`  |
+|⛔Disable Loop workspace creation and Loop component creation and integration everywhere  |  ⛔ **Create Loop workspaces in Loop** = Disabled<br/>⛔ **Create and view Loop files in Microsoft apps that support Loop** = Disabled<br/>⛔ **Create and view Copilot Pages** = Disabled<br/>⛔ [Teams-only] `Set-SPOTenant -IsLoopEnabled $false`, `Set-SPOTenant -IsCollabMeetingNotesFluidEnabled $false`  |
 
 ## User experience expectations when admin settings are configured
 
@@ -130,7 +130,7 @@ The Loop experiences (except for Microsoft Teams) check the following [Cloud Pol
 
 - **Create Loop workspaces in Loop**
 - **Create and view Loop files in Microsoft apps that support Loop**
-- **Create and view Loop files in Microsoft 365 Copilot Chat**
+- **Create and view Copilot Pages**
 - **Create and view Loop files in Outlook**
 
 1. Sign in to https://config.office.com/ with your Microsoft 365 admin credentials.
@@ -158,7 +158,7 @@ The Loop experiences (except for Microsoft Teams) check the following [Cloud Pol
         - **Enabled**: Creation of Loop components and integration is available to the users.
         - **Disabled**: Creation of Loop components and integration isn't available to the users.
         - **Not configured**: Creation of Loop components and integration is available to the users.
-    - For **Create and view Loop files in Microsoft 365 Copilot Chat**
+    - For **Create and view Copilot Pages**
         - **Enabled**: Copilot pages creation and integration are available to the users.
         - **Disabled**: Copilot pages creation and integration aren't available to the users.
         - **Not configured**: Copilot pages creation and integration are available to the users.

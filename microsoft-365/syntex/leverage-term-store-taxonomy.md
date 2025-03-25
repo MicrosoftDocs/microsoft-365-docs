@@ -1,12 +1,12 @@
 ---
-title: Leverage term store taxonomy when creating an extractor in Microsoft Syntex
+title: Leverage term store taxonomy when creating an extractor for document processing in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
 ms.date: 01/10/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
@@ -14,10 +14,10 @@ ms.collection:
     - m365initiative-syntex
 ms.custom: admindeeplinkSPO
 ms.localizationpriority:  medium
-description: Use term store taxonomy when creating an extractor in your model in Microsoft Syntex.
+description: Use term store taxonomy when creating an extractor for document processing in SharePoint.
 ---
 
-# Leverage term store taxonomy when creating an extractor in Microsoft Syntex
+# Leverage term store taxonomy when creating an extractor for document processing in SharePoint
 
 <sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
 
@@ -27,7 +27,7 @@ description: Use term store taxonomy when creating an extractor in your model in
 
 </br>
 
-When you create an extractor in your unstructured document processing model using Microsoft Syntex, you can take advantage of global term sets in the [term store](/sharepoint/managed-metadata) to display preferred terms for data that you extract.  
+When you create an extractor in your unstructured document processing model, you can take advantage of global term sets in the [term store](/sharepoint/managed-metadata) to display preferred terms for data that you extract.  
 
 As an example, your model identifies and classifies all **Contract** documents that are uploaded to the document library.  Additionally, the model also extracts a **Contract Service** value from each contract, and displays it in a column in your library view. Among the various Contract Services values in the contracts, there are several older values that your company no longer uses and have been renamed. For example, all references to the terms *Design*, *Graphics*, or *Topography* contract services should now be called *Creative*. Whenever your model extracts one of the outdated terms from a contract document, you want it to display the current term—*Creative*—in your library view. In the following example, while training the model we see that one sample document contains the outdated term of *Design*.
 

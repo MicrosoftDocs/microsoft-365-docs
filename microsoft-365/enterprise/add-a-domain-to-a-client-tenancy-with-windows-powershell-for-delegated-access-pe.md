@@ -3,9 +3,9 @@ title: "Add a domain to a client tenancy with Windows PowerShell for DAP partner
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 03/01/2024
+ms.date: 02/12/2025
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: medium
@@ -32,6 +32,7 @@ description: "Summary: Use PowerShell for Microsoft 365 to add an alternate doma
 You can create and associate new domains with your customer's tenancy with PowerShell for Microsoft 365 faster than using the Microsoft 365 admin center.
 
 Delegated Access Permission (DAP) partners are Syndication and Cloud Solution Providers (CSP) Partners. They're frequently network or telecom providers to other companies. They bundle Microsoft 365 subscriptions into their service offerings to their customers. When they sell a Microsoft 365 subscription, they're automatically granted Administer On Behalf Of (AOBO) permissions to the customer tenancies so they can administer and report on the customer tenancies.
+
 ## What do you need to know before you begin?
 
 The procedures in this article require you to connect to [Connect to Microsoft 365 with PowerShell](connect-to-microsoft-365-powershell.md).
@@ -96,7 +97,7 @@ This command gives you output like:
 > [!NOTE]
 > You will need this text to create the TXT record in the publicly registered DNS zone. Be sure to copy and save it.
 
-### Add a TXT record to the publically registered DNS zone
+### Add a TXT record to the publicly registered DNS zone
 
 Before Microsoft 365 will start accepting traffic that is directed to the publicly registered domain name, you must prove that you own and have administrator permissions to the domain. You prove you own the domain by creating a TXT record in the domain. A TXT record doesn't do anything in your domain, and it can be deleted after your ownership of the domain is established. To create the TXT records, follow the procedures at [Add DNS records to connect your domain](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md). If those procedures don't work for you, you need to find the procedures for your DNS registrar.
 
@@ -116,7 +117,7 @@ This command gives you output like:
 
 ### Validate domain ownership in Microsoft 365
 
-In this last step, you validate to Microsoft 365 that you own the publically registered domain. After this step, Microsoft 365 will begin accepting traffic routed to the new domain name. To complete the domain creation and registration process, run this command.
+In this last step, you validate to Microsoft 365 that you own the publicly registered domain. After this step, Microsoft 365 will begin accepting traffic routed to the new domain name. To complete the domain creation and registration process, run this command.
 
 ```powershell
 Confirm-MgDomain -DomainId <FQDN of new domain> -InputObject @{TenantId=<customer TenantId>}

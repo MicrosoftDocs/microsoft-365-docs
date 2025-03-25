@@ -1,10 +1,10 @@
 ---
 title: Manage shared devices for frontline workers
 author: lana-chin
-ms.author: v-chinlana
+ms.author: jtremper
 manager: jtremper
 ms.reviewer: aaglick
-ms.topic: conceptual
+ms.topic: article
 audience: admin
 ms.service: microsoft-365-frontline
 ms.localizationpriority: high
@@ -77,6 +77,12 @@ Users sign in by entering only the first part of their user principal name (UPN)
 You can also enable domain-less sign in for your custom line-of business (LOB) apps.
 
 [Learn more about domain-less sign-in](/microsoftteams/sign-in-teams?bc=%2Fmicrosoft-365%2Ffrontline%2Fbreadcrumb%2Ftoc.json&toc=%2Fmicrosoft-365%2Ffrontline%2Ftoc.json&view=o365-worldwide#enable-domain-less-sign-in-for-your-custom-apps).
+
+## QR code authentication 
+
+The QR code authentication method enables frontline workers to sign in efficiently in apps on shared devices. Users can use a unique QR code provided to them and enter their PIN to sign in, eliminating the need to enter intricate usernames and passwords. Currently, QR code authentication is supported only on mobile devices that run iOS/iPadOS or Android.
+
+[Learn more about QR code](/entra/identity/authentication/concept-authentication-qr-code).
 
 ## Conditional Access
 

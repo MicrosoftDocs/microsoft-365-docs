@@ -6,7 +6,7 @@ author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller
 audience: admin
-ms.topic: article
+ms.topic: faq
 ms.collection:
   - m365initiative-viva-topics
   - Tier1

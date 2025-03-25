@@ -7,7 +7,7 @@ author: kwekuako
 manager: scotv
 ms.date: 10/01/2024
 audience: Admin
-ms.topic: article
+ms.topic: solution-overview
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
@@ -17,6 +17,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - SPO_Content
+- m365solution-overview
 ms.custom:
 - has-azure-ad-ps-ref
 - azure-ad-ref-level-one-done

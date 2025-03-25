@@ -5,8 +5,8 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 09/26/2024
-ms.topic: conceptual
+ms.date: 02/26/2025
+ms.topic: article
 ms.service: microsoft-365-archive
 ms.custom: archive
 search.appverid:
@@ -23,6 +23,9 @@ Microsoft 365 Archive charges you for storage and reactivation.
 - **Storage consumption** that is charged at a per-GB monthly rate. This meter is charged only when archived storage plus active storage in SharePoint exceeds the included or licensed allocated SharePoint storage capacity limit of the tenant. In other words, there's no additional storage cost for archived sites if the tenant has not consumed its already licensed storage quota. For more information about storage capacity limits, see [SharePoint limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits).
 
 - **Site reactivation** that is charged at a per-GB rate. The reactivation fee is charged regardless of whether a tenant is over or below its SharePoint capacity limit and only if reactivation is executed more than seven days after the site was most recently put into an archive state. This seven-day grace period provides you with the opportunity to reverse an accidental archival without reaction costs.  
+
+    > [!NOTE]
+    > The reactivation fee for archived sites or content in SharePoint will be eliminated on March 31, 2025. After that date, reactivating archived sites will be free of charge, but re-archiving that content will be restricted for a four-month period. This change doesn't apply to OneDrive accounts. For more information, see the [Microsoft 365 Archive blog](https://techcommunity.microsoft.com/blog/microsoft_365_archive_blog/microsoft-365-archive-eliminates-reactivation-fees-by-march-31-2025/4383215).
 
 Monthly archive usage is calculated as the sum of the usage of all currently archived sites. Each site’s usage is equal to the site storage usage of that site, which can be seen on the site itself or from the Active sites page in the SharePoint admin center. The size of an archived site, and therefore the storage for which it’s billed, changes only if the content in the site changes. For example, content naturally expiring in the recycle bin or a retention policy deleting content within the site directly from archive to the recycle bin.
 

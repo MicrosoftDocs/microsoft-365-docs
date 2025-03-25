@@ -6,7 +6,7 @@ ms.reviewer: kkamath
 ms.date: 01/16/2025
 manager: jtremper
 audience: admin
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ms.service: microsoft-syntex
 ms.collection: 
 - essentials-get-started

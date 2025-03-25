@@ -1,29 +1,29 @@
 ---
-title: Delete a model in Microsoft Syntex
+title: Delete a document processing model in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: ssquires
 ms.date: 01/10/2025
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to delete a model in Microsoft Syntex.
+description: Learn how to delete a document processing model in SharePoint.
 ---
 
-# Delete a model in Microsoft Syntex
+# Delete a document processing model in SharePoint
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
 You can delete a document processing model if it's no longer in use, contains inaccurate or outdated information, or is taking up too much storage space.
 
 > [!NOTE]
-> Deleting a model doesn't delete the associated content type. 
+> Deleting a model doesn't delete the associated content type.
 
 ## Delete a model from the model home page
 

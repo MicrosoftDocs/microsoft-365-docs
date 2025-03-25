@@ -7,7 +7,7 @@ ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, ramagane
 audience: Admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-management
 ms.localizationpriority: medium
@@ -22,6 +22,7 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkMAC
 - GAUpdates
+- campaignIDs-batch2
 search.appverid: MET150
 description: "Learn about Microsoft business billing accounts and how they're used to manage account settings, invoices, payment methods, and purchases."
 ms.date: 07/16/2024

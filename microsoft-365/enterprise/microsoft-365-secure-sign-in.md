@@ -7,7 +7,7 @@ ms.author: kvice
 manager: scotv
 ms.date: 10/22/2024
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: medium

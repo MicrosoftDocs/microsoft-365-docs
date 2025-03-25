@@ -1,10 +1,10 @@
 ---
 title: Limit access to Microsoft Teams when frontline workers are off shift
 author: lana-chin
-ms.author: v-chinlana
+ms.author: jtremper
 manager: jtremper
 ms.reviewer: aaglick
-ms.topic: conceptual
+ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150

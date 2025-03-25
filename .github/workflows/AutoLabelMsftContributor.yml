@@ -31,4 +31,5 @@ jobs:
           PayloadJson: ${{ needs.download-payload.outputs.WorkflowPayload }}
         secrets:
           AccessToken: ${{ secrets.GITHUB_TOKEN }}
-          TeamReadAccessToken: ${{ secrets.ORG_READTEAMS_TOKEN }}
+          ClientId: ${{ secrets.M365_APP_CLIENT_ID }}
+          PrivateKey: ${{ secrets.M365_APP_PRIVATE_KEY }}

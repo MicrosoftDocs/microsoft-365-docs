@@ -11,6 +11,8 @@ items:
       href: secure-your-business-data.md
     - name: Trial user guide - Microsoft 365 Business Premium
       href: m365bp-trial-playbook-microsoft-business-premium.md
+    - name: Add Microsoft 365 E5 Security to your subscription (NEW!)
+      href: m365bp-add-m365e5s.md
     - name: Resources for partners
       href: /defender-business/mdb-partners?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
 - name: Step 1- Sign in and set up

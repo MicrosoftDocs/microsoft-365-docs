@@ -3,10 +3,10 @@ title: Microsoft 365 for frontline workers - scenario posters
 description: Download these PDF posters to learn about scenarios you can easily implement for the frontline workers in your organization.
 search.appverid: MET150
 author: lana-chin
-ms.author: v-chinlana
+ms.author: jtremper
 manager: jtremper
 audience: admin
-ms.topic: conceptual
+ms.topic: solution-overview
 ms.service: microsoft-365-frontline
 ms.localizationpriority: high
 ms.collection: 

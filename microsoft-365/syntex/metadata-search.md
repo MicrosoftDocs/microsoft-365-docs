@@ -1,29 +1,29 @@
 ---
-title: Use metadata to find content in document libraries in Microsoft Syntex
+title: Use metadata to find content in document libraries in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: kkameth
-ms.date: 05/16/2024
+ms.date: 03/16/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: high
-description: Learn how to use Syntex content query and search for custom site columns to find items in SharePoint document libraries using Microsoft Syntex.
+description: Learn how to use Syntex content query and search for custom site columns to find items in SharePoint document libraries.
 ---
 
-# Use metadata to find content in document libraries in Microsoft Syntex
+# Use metadata to find content in document libraries in SharePoint
 
-Microsoft Syntex gives you the ability to quickly search through your document's metadata with ease. The Syntex content query feature lets you perform specific metadata-based queries on SharePoint document libraries. You can make faster, more precise queries based on specific metadata column values, rather than just searching for keywords.
+Content query gives you the ability to quickly search through your document's metadata with ease. The content query feature lets you perform specific metadata-based queries on SharePoint document libraries. You can make faster, more precise queries based on specific metadata column values, rather than just searching for keywords.
 
-Syntex content query lets you use the metadata associated with a document to help locate the file in a SharePoint document library. This feature is particularly useful when you have a specific piece of information you want to search for, such as when a document was last modified, a specific person associated with a file, specific keywords in a file, or a specific file type.
+Content query lets you use the metadata associated with a document to help locate the file in a SharePoint document library. This feature is particularly useful when you have a specific piece of information you want to search for, such as when a document was last modified, a specific person associated with a file, specific keywords in a file, or a specific file type.
 
 > [!NOTE]
-> The content query feature is available for users who have Syntex [per-user](set-up-content-understanding.md) or [pay-as-you-go](syntex-azure-billing.md) licensing.
+> The content query feature is available for users who have Microsoft Syntex [per-user](set-up-content-understanding.md) or [pay-as-you-go](syntex-azure-billing.md) licensing.
 
 ## Columns you can query
 

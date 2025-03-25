@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: ebamoh
-ms.date: 12/13/2024
+ms.date: 03/17/2025
 audience: Admin
 ms.topic: whats-new
 ms.service: microsoft-365-lighthouse
@@ -31,6 +31,60 @@ We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighth
 > Features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, you should see it soon.
 >
 > To see which new features are currently available in your partner tenant, go to the **Home** page of Microsoft 365 Lighthouse, and then either select the **What's new** link in the upper-right corner of the page or select **What's new** on the **What's new & learning resources** card.
+
+## February 2025
+
+### Track assigned licenses per subscription plan
+
+We've added a new **Licenses** tab to the **Subscription renewals** section of Sales Advisor. This new tab provides detailed insights on the total number of licenses assigned per subscription plan for a particular tenant. Having this information all in one place helps you manage subscriptions effectively, use available licenses efficiently, and make informed decisions.
+
+To see assigned licenses, go to **Sales Advisor** > **Subscription renewals**, select a tenant from the list to open the details pane, and then select the **Licenses** tab.
+
+[Go to the Subscription renewals page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/UpcomingRenewals.ReactView)
+
+To learn more, see [Overview of Sales Advisor in Microsoft 365 Lighthouse](m365-lighthouse-sales-advisor-overview.md).
+
+### Opportunities during subscription renewal
+
+We've added an **Opportunity** column to the **Subscription renewals** page in Sales Advisor that shows potential opportunities that you can leverage during the subscription renewal process with your customers. Talking about the benefits of additional services or products during renewal discussions is a great way to grow your business and help your customers. Potential opportunities are surfaced and integrated into the renewal experience, making it easy to take action.
+
+To check out the new **Opportunity** column, in the left navigation pane in Lighthouse, select **Sales Advisor** > **Subscription renewals**.
+
+[Go to the Subscription renewals page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/UpcomingRenewals.ReactView)
+
+To learn more, see [Overview of Sales Advisor in Microsoft 365 Lighthouse](m365-lighthouse-sales-advisor-overview.md).
+
+### New Group and Product filters available on Opportunities page in Sales Advisor
+
+We've added two new filters to the **Opportunities** page in Sales Advisor to help you better manage and prioritize your opportunities and ensure you never miss out on important deals.
+
+The new **Group** filter allows you to quickly identify and focus on the most relevant opportunities. This feature is particularly useful when you have multiple opportunities and need a streamlined way to manage them. The **Group** filter includes two options:
+
+- **New:** Displays opportunities added since you last opened Sales Advisor. Select this option to see the latest opportunities and ensure you don't miss any new leads.
+
+- **High priority:** Helps you focus on high-priority opportunities, which are determined based on factors such as upcoming renewals, total seat size, and product relevance. Select this option to see deals that require immediate attention and are more likely to close successfully.
+
+The new **Product** filter identifies opportunities related to specific products. For example, if you're looking for new Microsoft Copilot opportunities or high-priority Microsoft 365 Business Premium opportunities, use the **Product** filter to narrow your search and find exactly what you need.
+
+To check out the new filters, in the left navigation pane in Lighthouse, select **Sales Advisor** > **Opportunities**.
+
+[Go to the Opportunities page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/OrlandInsights.ReactView)
+
+To learn more, see [Overview of Sales Advisor in Microsoft 365 Lighthouse](m365-lighthouse-sales-advisor-overview.md).
+
+## January 2025
+
+### Create an "Executive Summary" customer report
+
+You can now generate a report for each customer tenant in Microsoft 365 Lighthouse that highlights key areas around security posture and business status. The report also summarizes key activities your partner organization performed in Lighthouse to keep customers safe, secure, and productive.
+
+We heard from you about the need to share a report with your customers during monthly or quarterly business reviews and this Executive Summary is the first step towards building the end-to-end views needed to ensure reviews with customers are as productive as possible.
+
+To generate a customer report, in the left navigation pane in Lighthouse, select **Tenants**, and then select any tenant in the list to open the tenant details page. From there, select the **Overview** tab, select **Summary** in the left pane, and then select **Create report**.
+
+[Go to the Tenants page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/Tenants.ReactView) (once there, select a tenant)
+
+To learn more, see [Create a customer report in Microsoft 365 Lighthouse](m365-lighthouse-create-customer-report.md).
 
 ## December 2024
 
@@ -113,6 +167,18 @@ To get started, go to the **Home** page of Lighthouse, locate the **Let's start 
 We've made it easy for you to access customer tenant details from any page in Lighthouse. Previously, you had to go to the **Tenants** page and then select a tenant from the list to view the details for that tenant. Now, when you select a tenant from the **Tenants** filter on any page, a link appears next to the filter that takes you directly to the details page for the selected tenant. This functionality helps you more efficiently manage your customer tenants by giving you one-click access to important tenant information no matter where you are in Lighthouse.
 
 ## September 2024
+
+### Track expired subscriptions
+
+To help you keep track of expired subscriptions more effectively, ensure timely follow-up with customers, and minimize service disruptions, we've added an **Expired** tab to Sales Advisor. This new **Expired** tab reduces the risk of missed renewals and helps maintain continuous service for your customers.
+
+The **Expired** tab shows customer tenants that have expired subscriptions that are currently in a grace period. Select any of the expired subscriptions under a tenant to open a details pane that shows more information about the expired subscriptions.
+
+To access information about a customer tenant's expired subscriptions, in the left navigation pane in Lighthouse, select **Sales Advisor** > **Subscription renewals**, and then select the **Expired** tab.
+
+[Go to the Subscription renewals page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/UpcomingRenewals.ReactView)
+
+To learn more, see [Overview of Sales Advisor in Microsoft 365 Lighthouse](m365-lighthouse-sales-advisor-overview.md).
 
 ### Delegated access page
 

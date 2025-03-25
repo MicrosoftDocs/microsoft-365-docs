@@ -6,7 +6,7 @@ author: DaniEASmith
 ms.author: danismith
 manager: jtremper
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: 
@@ -24,7 +24,7 @@ description: "Learn how to prevent guests from being added to a specific group"
 
 # Prevent guests from being added to a specific Microsoft 365 group or Microsoft Teams team
 
-If you want to allow guest access to most groups and teams, but have somewhere you want to prevent guest access, you can block guest access for individual groups and teams. (Blocking guest access to a team is done by blocking guest access to the associated group.) This prevents new guests from being added but does not remove guests that are already in the group or team.
+If you want to allow guest access to most groups and teams but somewhere you want to prevent guest access, you can block guest access for individual groups and teams. (Blocking guest access to a team is done by blocking guest access to the associated group.) This prevents new guests from being added but doesn't remove guests that are already in the group or team.
 
 If you use sensitivity labels in your organization, we recommend using them to control guest access on a per-group basis. For information about how to do this, [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](../compliance/sensitivity-labels-teams-groups-sites.md). This is the recommended approach.
 
@@ -36,10 +36,10 @@ You must use the `beta` version of [Microsoft Graph PowerShell](/powershell/micr
 
 - If you haven't installed the module before, see [Installing the Microsoft Graph PowerShell module](/powershell/microsoftgraph/installation) and follow the instructions.
 
-- If you have already installed the `beta` version, run `Update-Module Microsoft.Graph.Beta` to make sure it's the latest version of this module.
+- If you've already installed the `beta` version, run `Update-Module Microsoft.Graph.Beta` to ensure it's the latest version of this module.
 
 > [!NOTE]
-> You must have global admin rights to run these commands. 
+> You must have global admin rights to run these commands.
 
 Run the following script, changing *\<GroupName\>* to the name of the group where you want to block guest access.
 
@@ -55,7 +55,7 @@ $params = @{
 	values = @(
 		@{
 			name = "AllowToAddGuests"
-			value = "false"
+			value = "$false"
 		}
 	)
 }
@@ -64,17 +64,15 @@ New-MgBetaGroupSetting -GroupId $groupID -BodyParameter $params
 
 ```
 
-To verify your settings, run this command:
+To verify your settings, run the following command:
 
 ```PowerShell
-(Invoke-GraphRequest -Uri https://graph.microsoft.com/beta/Groups/$groupId/settings -Method GET) | ConvertTo-Json | ConvertFrom-Json | fl Value
+(Invoke-GraphRequest -Uri https://graph.microsoft.com/beta/Groups/$groupId/settings -Method GET).values.values
 ```
 
-The verification looks like this:
+:::image type="content" source="../media/command-to-verify-settings.png" alt-text="Screenshot that shows the example of a PowerShell command run to verify the group settings." lightbox="../media/command-to-verify-settings.png":::
 
-![Screenshot of PowerShell window showing that guest group access has been set to false.](../media/09ebfb4f-859f-44c3-a29e-63a59fd6ef87.png)
-
-If you wish to toggle the setting back to allow guest access to a particular group, run the following script, changing ```<GroupName>``` to the name of the group where you want to allow guest access.
+If you wish to toggle the setting back to allow guest access to a particular group, run the following script, changing "GroupName" to the name of the group where you want to allow guest access:
 
 ```PowerShell
 Connect-MgGraph
@@ -88,35 +86,37 @@ $params = @{
 	values = @(
 		@{
 			name = "AllowToAddGuests"
-			value = "true"
+			value = $true
 		}
 	)
 }
 
-New-MgBetaGroupSetting -GroupId $groupID -BodyParameter $params
+$DirectorySettingId = (Invoke-GraphRequest -Uri https://graph.microsoft.com/beta/Groups/$groupId/settings -Method GET).value.id
+
+Update-MgBetaGroupSetting -GroupId $groupID -BodyParameter $params -DirectorySettingId $DirectorySettingId
 ```
 
 ## Allow or block guest access based on their domain
 
-You can allow or block guests who are using a specific domain. For example, if your business (Contoso) has a partnership with another business (Fabrikam), you can add Fabrikam to your allowlist so your users can add those guests to their groups.
+You can allow or block guests who are using a specific domain. For example, if your business (Contoso) has a partnership with another business (Fabrikam), you can add Fabrikam to your allowlist so that your users can add those guests to their groups.
 
 For more information, see [Allow or block invitations to B2B users from specific organizations](/azure/active-directory/b2b/allow-deny-list).
 
 ## Add guests to the global address list
 
-By default, guests aren't visible in the Exchange Global Address List. Use the steps listed below to make a guest visible in the global address list.
+By default, guests aren't visible in the Exchange Global Address List. Use the steps listed below to make a guest visible in the global address list:
 
-Find the guest's ObjectID by running:
+1. Find the guest's ObjectID by running the following command:
 
-```PowerShell
-Get-MgBetaUser -All | ?{$_.CreationType -eq "Invitation"}
-```
+   ```PowerShell
+   Get-MgBetaUser -All | ?{$_.CreationType -eq "Invitation"}
+   ```
 
-Then run the following using the appropriate values for ObjectID, GivenName, Surname, DisplayName, and TelephoneNumber.
+1. Run the following using the appropriate values for ObjectID, GivenName, Surname, DisplayName, and TelephoneNumber.
 
-```PowerShell
-Update-MgBetaUser -UserId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressList -GivenName 'Megan' -Surname 'Bowen' -DisplayName 'Megan Bowen' -mobilePhone '555-555-5555'
-```
+   ```PowerShell
+   Update-MgBetaUser -UserId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressList -GivenName 'Megan' -Surname 'Bowen' -DisplayName 'Megan Bowen' -mobilePhone '555-555-5555'
+   ```
 
 ## Related topics
 

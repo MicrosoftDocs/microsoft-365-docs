@@ -1,12 +1,12 @@
 ---
-title: Create a document from a modern template in Microsoft Syntex
+title: Create a document from a modern template in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: anrasto, shrganguly
-ms.date: 04/12/2024
-ms.topic: conceptual
+ms.date: 01/23/2025
+ms.topic: how-to
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
 search.appverid:
@@ -14,10 +14,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to create documents and other content using a modern template in Microsoft Syntex.
+description: Learn how to create documents and other content using a modern template in SharePoint.
 ---
 
-# Create a document from a modern template in Microsoft Syntex
+# Create a document from a modern template in SharePoint
 
 You can use a *published* modern template to quickly create similar documents without having to start from scratch. To create a document using a published template, follow these steps:
 

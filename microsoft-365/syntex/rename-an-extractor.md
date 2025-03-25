@@ -1,22 +1,22 @@
 ---
-title: Rename an extractor in Microsoft Syntex
+title: Rename an extractor for document processing in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: ssquires
-ms.date: 09/09/2024
-ms.topic: conceptual
+ms.date: 03/11/2025
+ms.topic: how-to
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how and why to rename an extractor in Microsoft Syntex.
+description: Learn how and why to rename an extractor for document processing in SharePoint.
 ---
 
-# Rename an extractor in Microsoft Syntex
+# Rename an extractor for document processing in SharePoint
 
 <sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
 
@@ -25,7 +25,7 @@ At some point, you might need to rename an extractor if you want to refer to an 
 When you sync your updated model to your SharePoint document library, you'll see a new “Client” column in your document library view. Your view retains the “Customer” column for past activity, but will update the new “Client” column for all new documents that are processed by your model. 
 
 > [!IMPORTANT]
->  Make sure to sync your updated model to the document libraries where you had previously applied it for the new column name to display. 
+> Make sure to sync your updated model to the document libraries where you had previously applied it for the new column name to display.
 
 ## Rename an extractor
 

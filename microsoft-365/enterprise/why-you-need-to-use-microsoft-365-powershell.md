@@ -3,7 +3,7 @@ title: "Why you need to use PowerShell for Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 03/11/2024
+ms.date: 02/12/2025
 audience: ITPro
 ms.topic: overview
 ms.service: microsoft-365-enterprise
@@ -177,7 +177,7 @@ $x | Select DisplayName, UsageLocation
 
 The interpretation of this set of PowerShell commands is:
 1. Get all the users in the current Microsoft 365 subscription and store the information in a variable named $x (**$x = Get-MgUser**).
-1.  Display the contents of the variable *$x*, but only include the name and location for each user (**$x | Select DisplayName, UsageLocation**).
+1. Display the contents of the variable *$x*, but only include the name and location for each user (**$x | Select DisplayName, UsageLocation**).
 
 ## Microsoft 365 has features that you can only configure with PowerShell for Microsoft 365
 
@@ -207,7 +207,7 @@ Set-CsMeetingConfiguration -AdmitAnonymousUsersByDefault $False -AllowConference
 The interpretation of this PowerShell command is:
 
 1. In the settings for new Skype for Business Online meetings (**Set-CsMeetingConfiguration**), disable allowing anonymous users to gain automatic entrance to meetings (**-AdmitAnonymousUsersByDefault $False**).
-2.  Disable the ability for attendees to record meetings (**-AllowConferenceRecording $False**).
+2. Disable the ability for attendees to record meetings (**-AllowConferenceRecording $False**).
 3. Don't designate all users from your organization as presenters (**-DesignateAsPresenter "None"**).
 
 To restore these default settings (enable the options), run this command:
@@ -253,7 +253,7 @@ Get-SPOSite | ForEach {Remove-SPOUser -Site $_.Url -LoginName "kenmyer@litwarein
 
 The interpretation of this PowerShell command is: Get all of the SharePoint sites in the current Microsoft 365 subscription (**Get-SPOSite**) and for each site remove Ken Meyer from the list of users who can access it (**ForEach {Remove-SPOUser -Site $\_.Url -LoginName "kenmyer\@litwareinc.com"}**).
 
-We tell Microsoft 365 to remove Ken Meyer from every site, including those that he doesn't have access to. So the results will show errors for those sites that he doesn't have access to. We can use an additional condition on this command to remove Ken Meyer only from the sites that have him on their sign in list. But the errors that are returned cause no harm to the sites themselves. This command might take a few minutes to run against hundreds of sites, rather than hours of working through the Microsoft 365 admin center.
+We tell Microsoft 365 to remove Ken Myer from every site, including those that he doesn't have access to. So the results will show errors for those sites that he doesn't have access to. We can use an additional condition on this command to remove Ken Meyer only from the sites that have him on their sign in list. But the errors that are returned cause no harm to the sites themselves. This command might take a few minutes to run against hundreds of sites, rather than hours of working through the Microsoft 365 admin center.
 
 Here's another bulk operation example. Use this command to add *Bonnie Kearney*, a new SharePoint administrator, to all sites in the organization:
 

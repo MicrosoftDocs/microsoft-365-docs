@@ -1,7 +1,7 @@
 ---
 title: Teams Shifts connector for Blue Yonder known issues
 author: lana-chin
-ms.author: v-chinlana
+ms.author: jtremper
 manager: jtremper
 ms.reviewer: harrywong
 ms.topic: troubleshooting

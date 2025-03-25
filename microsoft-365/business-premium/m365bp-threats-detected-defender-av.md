@@ -5,7 +5,7 @@ ms.author: chrisda
 author: chrisda
 manager: deniseb
 audience: Admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: microsoft-365-business-security
 ms.collection:
 - m365-security

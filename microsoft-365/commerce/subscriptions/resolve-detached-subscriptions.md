@@ -38,7 +38,7 @@ If you choose to find a new partner, you can explore available partners through 
 
 ## Buy a subscription directly from Microsoft
 
-When you buy a subscription from Microsoft, we provide direct billing and support. To learn more, see [Learn how to buy a new subscription](../try-or-buy-microsoft-365.md#buy-a-different-subscription) and [Explore Microsoft 365 for business support plans](https://www.microsoft.com/microsoft-365/business/microsoft-365-for-business-support-options?msockid=15af1489bfd667952f27000abefb66ef).
+When you buy a subscription from Microsoft, we provide direct billing and support. To learn more, see [Learn how to buy a new subscription](../try-or-buy-microsoft-365.md) and [Explore Microsoft 365 for business support plans](https://www.microsoft.com/microsoft-365/business/microsoft-365-for-business-support-options?msockid=15af1489bfd667952f27000abefb66ef).
 
 > [!IMPORTANT]
 > If you elect to move and buy your subscription directly with Microsoft, to avoid service disruptions, you must buy a subscription for the same product or service that you currently have with a CSP partner and assign the licenses to the same users.

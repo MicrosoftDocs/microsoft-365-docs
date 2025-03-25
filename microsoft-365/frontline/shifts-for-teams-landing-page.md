@@ -1,9 +1,9 @@
 ---
 title: Shifts for your frontline organization
 description: Get the admin guidance you need to deploy and manage Shifts, the schedule management tool, in Microsoft Teams.
-ms.topic: conceptual
+ms.topic: article
 author: lana-chin
-ms.author: v-chinlana
+ms.author: jtremper
 manager: jtremper
 audience: admin
 ms.reviewer: harrywong

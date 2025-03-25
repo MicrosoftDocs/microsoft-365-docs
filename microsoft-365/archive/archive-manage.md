@@ -6,7 +6,7 @@ manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
 ms.date: 10/28/2024
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-365-archive
 ms.custom: archive
 search.appverid:
@@ -20,7 +20,7 @@ description: Learn how to archive, reactivate, and manage sites in Microsoft 365
 
 ## Archive a site
 
-[SharePoint Administrators](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrators](/entra/identity/role-based-access-control/permissions-reference#global-administrator) can archive both non-group connected sites and group-connected sites from the SharePoint admin center. Archiving group-connected sites will archive only the site, and the rest of the group will continue being active. As soon as a site is archived, it stops consuming storage from active storage quota, and the storage starts being counted towards Microsoft 365 Archive storage. (There might be a delay in the change in storage being reflected in the admin center.)
+[SharePoint Administrators](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrators](/entra/identity/role-based-access-control/permissions-reference#global-administrator) can archive both nongroup connected sites and group-connected sites from the SharePoint admin center. Archiving group-connected sites archive only the site, and the rest of the group continues being active. As soon as a site is archived, it stops consuming storage from active storage quota, and the storage starts being counted towards Microsoft 365 Archive storage. (There might be a delay in the change in storage being reflected in the admin center.)
 
 [!INCLUDE [global-administrator-note](../includes/global-administrator-note.md)]
 
@@ -42,19 +42,19 @@ When a site is archived, compliance features such as eDiscovery and retention la
     ![Screenshot of the Archived sites page in the SharePoint admin center.](../media/m365-archive/archived-sites-page.png)
 
     > [!NOTE]
-    > To archive a hub site, you first need to unregister it as a hub site. Archiving Microsoft Teams-connected sites with private or shared channel sites is not supported. Teams sites with standard channels are supported.
+    > To archive a hub site, you first need to unregister it as a hub site. Archiving Microsoft Teams-connected sites with private or shared channel sites isn't supported. Teams sites with standard channels are supported.
 
 ## Manage archived sites
 
-Archived sites can be reactivated or deleted. Deletion of archived sites follows the same behavior as that of active sites; that is, a site doesn't need to be reactivated before being deleted. However, sites in the “Reactivating” state can't be deleted until reactivation completes.
+Archived sites can be reactivated or deleted. Deletion of archived sites follows the same behavior as that of active sites; that is, a site doesn't need to be reactivated before being deleted. However, sites in the "Reactivating" state can't be deleted until reactivation completes.
 
 Admins can view details of the site, such as the URL, Archive Status, or Storage, from the **Archived sites** page.
 
 ## Reactivate a site
 
-If there's a need to access the site content again, the sites need to be reactivated. After a site is archived, it stays in the “Recently Archived” state for seven days. All reactivations from this state are free of cost and instantaneous. After seven days, the site enters the “Archived” state. Reactivations might take up to 24 hours, and have an associated reactivation cost. To learn more about the costs and how pricing works, see [Pricing model](archive-pricing.md).
+If there's a need to access the site content again, the sites need to be reactivated. After a site is archived, it stays in the "Recently Archived" state for seven days. All reactivations from this state are free of cost and instantaneous. After seven days, the site enters the “Archived” state. Reactivations might take up to 24 hours, and have an associated reactivation cost. To learn more about the costs and how pricing works, see [Pricing model](archive-pricing.md).
 
-After reactivation, the site will move back to the **Active sites** page. The site will resume its normal function, and the users will have the same access rights to the site and its content as they did before the site was archived. After reactivation is complete, the storage consumed by the site will accrue to your storage quota consumption.
+After reactivation, the site moves back to the **Active sites** page. The site resumes its normal function, and the users have the same access rights to the site and its content as they did before the site was archived. After reactivation is complete, the storage consumed by the site will accrue to your storage quota consumption.
 
 1. In the SharePoint admin center, go to [**Active sites**](https://go.microsoft.com/fwlink/?linkid=2185220), and sign in with an account that has [admin permissions](/sharepoint/sharepoint-admin-role) for your organization.
 
@@ -67,7 +67,7 @@ After reactivation, the site will move back to the **Active sites** page. The si
 
 4. On the **Archive** pane, select **Reactivate**.
 
-5. If you're trying to reactivate a site from “Archived” state, you'll see a confirmation pop-up that shows an estimated price for reactivation. Select **Confirm** to reactivate. The site will enter the “Reactivating” state. It will move to active sites once reactivation is complete.
+5. If you're trying to reactivate a site from "Archived" state, you see a confirmation pop-up that shows an estimated price for reactivation. Select **Confirm** to reactivate. The site enters the "Reactivating" state. It moves to active sites once reactivation is complete.
 
     ![Screenshot of an example site that you are reactivating in the SharePoint admin center.](../media/m365-archive/reactivate-site-example.png)
 
@@ -92,3 +92,6 @@ You can also change the status of an archived site by using the PowerShell cmdle
 |32    |News Site           |
 |64    |Team Site           |
 |68    |Communication Site  |
+
+> [!NOTE]
+> OneDrive accounts (site template 21) cannot be archived by admins.  Some accounts will be put into archive by the OneDrive service when they are unlicensed for 93 days or more.  When the service archives these accounts, admins can reactivate the accounts via PowerShell. [Learn more about unlicensed OneDrive accounts](/SharePoint/unlicensed-onedrive-accounts).

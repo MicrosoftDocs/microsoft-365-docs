@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.reviewer: deanw
-ms.date: 02/29/2024
+ms.date: 02/24/2025
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -20,17 +20,24 @@ ms.custom:
 - Ent_TLGs
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: "Determine where your Microsoft 365 customer data is stored worldwide."
+description: "Determine where your Microsoft 365 customer data is stored worldwide. Links in the article show this information for each workload."
 ---
 
 # Where your Microsoft 365 customer data is stored
 
+This article helps you to understand how you can determine current data residency and data residency commitments.
+
+> [!NOTE]
+> Viva Topics has been retired as of February 22, 2025. Therefore, Viva Topics is no longer a supported workload in ADR. For more details, please visit [aka.ms/TopicsFebSupport](https://aka.ms/TopicsFebSupport).
+
 > [!NOTE]
 > The **New Zealand** local data center region launched on December 1, 2024. If your organization requires the migration of your Microsoft 365 customer data to New Zealand, and data residency commitments for New Zealand, see [Advanced Data Residency](advanced-data-residency.md).
+
 > [!NOTE]
 > The **Taiwan** local data center region launched on November 1, 2024. If your organization requires the migration of your Microsoft 365 customer data to Taiwan, and data residency commitments for Taiwan, see [Advanced Data Residency](advanced-data-residency.md).
+
 > [!NOTE]
-> For tenants in Australia, Brazil, Canada, France, Germany, India, Israel, Italy, Japan, Mexico, New Zealand, Norway, Poland, Qatar, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, United Arab Emirates, and United Kingdom, additional workloads are available for data residency commitments. For more information, see [Advanced Data Residency](advanced-data-residency.md).
+> For tenants in Australia, Brazil, Canada, France, Germany, India, Israel, Italy, Japan, Mexico, New Zealand, Norway, Poland, Qatar, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, United Arab Emirates, and United Kingdom, more workloads are available for data residency commitments. For more information, see [Advanced Data Residency](advanced-data-residency.md).
 
 See the following links to understand how you can determine current data residency and data residency commitments.
 
@@ -41,7 +48,6 @@ See the following links to understand how you can determine current data residen
 - Microsoft Defender for Office (MDO P1)  [Data Location](m365-dr-workload-mdo-p1.md#how-can-i-determine-customer-data-location)
 - Office for the Web (Office Online)  [Data Location](m365-dr-workload-office-for-web.md#how-can-i-determine-customer-data-location)
 - Viva Connections [Data Location](m365-dr-workload-viva-connections.md#how-can-i-determine-customer-data-location)
-- Viva Topics [Data Location](m365-dr-workload-viva-topics.md#how-can-i-determine-customer-data-location)
 - Microsoft Purview (select services)  [Data Location](m365-dr-workload-purview.md#how-can-i-determine-customer-data-location)
 
   - Data Loss Prevention

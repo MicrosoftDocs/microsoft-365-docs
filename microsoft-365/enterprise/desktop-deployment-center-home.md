@@ -5,9 +5,9 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 04/09/2024
+ms.date: 03/12/2025
 audience: ITPro
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: medium
@@ -25,7 +25,7 @@ The body of content that comprised the Desktop Deployment Center has been deprec
 
 Use these resources to deploy modern desktops:
 
-- [Windows 10 deployment](/windows/deployment/)
+- [Windows 11 deployment](/windows/deployment/)
 - [Deploy Microsoft 365 Apps](/deployoffice/deployment-guide-microsoft-365-apps)
 - [Microsoft Intune](/mem/intune/fundamentals/planning-guide)
 - [Identity and device access policies](../security/office-365-security/zero-trust-identity-device-access-policies-overview.md)

@@ -21,6 +21,7 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 - GAUpdates
+- campaignIDs-batch2
 search.appverid: MET150
 description: "Learn how to work with Microsoft-certified solution providers (partners) to buy and manage products and services for your organization or school."
 ms.date: 01/08/2025

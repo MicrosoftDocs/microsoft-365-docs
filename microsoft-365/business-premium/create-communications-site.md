@@ -58,7 +58,7 @@ The following links for PowerPoint and PDF can be downloaded and printed in tabl
 
 ## Set it up
 
-1. Sign in to <https://office.com>.
+1. Sign in to <https://m365.cloud.microsoft/>.
 
 2. In the top-left corner of the page, select the app launcher icon and then select the **SharePoint** tile. If you don't see the **SharePoint** tile, select the **Sites** tile or **All** if SharePoint isn't visible.
 

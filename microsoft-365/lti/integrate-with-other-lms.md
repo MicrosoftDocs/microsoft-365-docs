@@ -6,7 +6,7 @@ manager: jacktremper
 ms.reviewer: amitman 
 ms.date: 10/31/2022
 audience: admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.collection: 
 - M365-modern-desktop

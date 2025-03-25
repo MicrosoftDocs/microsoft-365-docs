@@ -1,10 +1,10 @@
 ---
 title: Virtual Appointments with Microsoft Teams
 author: lana-chin
-ms.author: v-chinlana
+ms.author: jtremper
 manager: jtremper
 ms.reviewer: revathim
-ms.topic: conceptual
+ms.topic: solution-overview
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150

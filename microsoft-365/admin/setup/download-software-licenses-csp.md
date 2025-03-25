@@ -35,6 +35,9 @@ This article explains how to download software and product license keys for perp
 
 - You must be a Global Administrator to do the steps in this article. For more information, see [About admin roles](../add-users/about-admin-roles.md).
 - If you're a partner who's an admin on behalf of (AOBO) a customer, you must sign in to the customer's organization with an admin account created in the organization.
+- If there are multiple billing accounts, you must select the account that the product was purchased on.
+  For more information, see [Select a default billing account](../../commerce/manage-billing-accounts.md).
+- If you don't have access to the billing account, you must self elevate. For more information, see [No billing account found for buying products](../../commerce/no-billing-account-found.md).
 
 [!INCLUDE [ga-roles-limitation](../../includes/ga-roles-limitation.md)]
 

@@ -32,8 +32,6 @@ landingContent:
             url: model-types-overview.md
       - linkListType: learn
         links:
-          - text: Introduction to Microsoft Syntex
-            url: /training/modules/syntex-intro
           - text: Microsoft Syntex on LinkedIn Learning
             url: https://www.linkedin.com/learning/search?keywords=syntex&upsellOrderOrigin=default_guest_learning&trk=homepage-learning_learning-search-bar_search-submit
       - linkListType: whats-new
@@ -150,10 +148,6 @@ landingContent:
             url: /sharepoint/dev/apis/syntex/syntex-model-rest-api
           - text: PowerShell for Microsoft Syntex
             url: powershell-syntex-intro.md
-          - text: SharePoint Advanced Management
-            url: /sharepoint/advanced-management
-          - text: SharePoint Embedded
-            url: /sharepoint/dev/embedded/overview
 
 # Card 9
   - title: Video services

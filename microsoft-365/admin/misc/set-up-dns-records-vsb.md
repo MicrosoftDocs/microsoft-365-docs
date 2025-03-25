@@ -2,7 +2,7 @@
 title: "Connect your domain to Microsoft 365"
 f1.keywords:
 - CSH
-ms.author: nkagole
+ms.author: scotv
 author: nataliekagole
 manager: scotv
 ms.date: 08/01/2024

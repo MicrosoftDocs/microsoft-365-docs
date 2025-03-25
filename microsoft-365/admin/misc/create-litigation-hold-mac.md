@@ -8,7 +8,7 @@ author: kwekuako
 manager: scotv
 ms.date: 06/27/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: purview-ediscovery
 ms.localizationpriority: medium
 ms.custom:

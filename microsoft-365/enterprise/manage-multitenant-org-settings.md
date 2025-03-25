@@ -6,7 +6,7 @@ ms.author: kvice
 manager: scotv
 ms.reviewer: jakeost
 ms.service: microsoft-365-enterprise
-ms.topic: article
+ms.topic: how-to
 ms.date: 11/01/2024
 ms.subservice: multi-tenant
 ms.collection:

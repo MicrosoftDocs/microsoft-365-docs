@@ -1,12 +1,12 @@
 ---
-title: Train an unstructured document processing model in Microsoft Syntex
+title: Train an unstructured document processing model in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
 ms.date: 01/07/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
@@ -14,10 +14,10 @@ ms.collection:
     - m365initiative-syntex
 ms.custom: admindeeplinkSPO
 ms.localizationpriority:  medium
-description: Learn how to create a classifier in Microsoft Syntex.
+description: Learn how to create a classifier to train an unstructured document processing model in SharePoint.
 ---
 
-# Train an unstructured document processing model in Microsoft Syntex
+# Train an unstructured document processing model in SharePoint
 
 <sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
 

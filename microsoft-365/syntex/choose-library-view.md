@@ -1,22 +1,22 @@
 ---
-title: Choose the view in a document library in Microsoft Syntex
+title: Choose the view in a document library in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 09/09/2024
+ms.date: 02/09/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to apply a default view and choose a view a SharePoint document library in Microsoft Syntex.
+description: Learn how to apply a default view and choose a view a SharePoint document library.
 ---
 
-# Choose the view in a document library in Microsoft Syntex
+# Choose the view in a document library in SharePoint
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 

@@ -56,14 +56,14 @@ items:
           href: licenses/vl-sign-in.md
         - name: Contracts FAQs
           href: licenses/contracts-faq.yml
-        - name: User roles FAQs
-          href: licenses/user-roles-faq.yml
+        - name: Manage volume licensing user roles
+          href: licenses/manage-user-roles-vl.md
         - name: Download volume licensing products
           href: licenses/download-vl-products.md
         - name: Find and use product keys
           href: licenses/product-keys-for-vl.md
-        - name: License Reservations FAQ
-          href: licenses/manage-license-requests-faq.yml
+        - name: Manage License Reservations
+          href: licenses/manage-license-reservations-vl.md
         - name: Online service activation FAQ
           href: licenses/online-service-activation-faq.yml
         - name: Volume licensing invoices

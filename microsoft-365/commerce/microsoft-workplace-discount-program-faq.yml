@@ -19,6 +19,7 @@ metadata:
   - commerce_subscriptions
   - okr_SMB
   - AdminSurgePortfolio
+  - campaignIDs-batch2
   search.appverid: MET150
   ROBOTS: NOINDEX NOFOLLOW
   description: "Frequently-asked questions (FAQ) about the Microsoft Workplace Discount Program."
@@ -79,12 +80,12 @@ sections:
       - question: |
           What resources are available to help promote the Workplace Discount Program benefit to employees?
         answer: |
-          Use the resources located on the [Workplace Discount Program](http://www.microsoft.com/workplace-discount-program/employer-resources) home page to help you promote the program to your employees. You'll find digital and printable flyers, verbiage for use in emails and newsletters, and guidance on how to best promote the Workplace Discount Program.
+          Use the resources located on the [Workplace Discount Program](https://www.microsoft.com/workplace-discount-program/employer-resources) home page to help you promote the program to your employees. You'll find digital and printable flyers, verbiage for use in emails and newsletters, and guidance on how to best promote the Workplace Discount Program.
          
       - question: |
           What are the steps for an eligible employee to make a Microsoft Workplace Discount Program purchase?
         answer: |
-          1. **Sign Up** Go to the [Microsoft Workplace Discount Program page](http://www.microsoft.com/workplace-discount-program), and select the **Get Started** button. Employees enter their corporate email address.
+          1. **Sign Up** Go to the [Microsoft Workplace Discount Program page](https://www.microsoft.com/workplace-discount-program), and select the **Get Started** button. Employees enter their corporate email address.
           2. **Confirm**  An email is sent to their corporate email address inbox with a link that authenticates their eligibility for the program.
           3. **Sign In** After they have been authenticated, they begin the purchase process by providing the Microsoft account that's associated with their personal email address, which allows them to view the discounts on products available to them based on the organization's Workplace Discount Program benefit. For more info, see [How to sign in to your Microsoft account](https://support.microsoft.com/help/4028195/microsoft-account-sign-in).
           4. **Shop** The purchase is processed and completed in the Microsoft Store.
@@ -107,7 +108,7 @@ sections:
           If employees have questions, refer them to the following resources:
           
           - [Post purchase and installation FAQ](https://www.microsoft.com/microsoft-365/microsoft-365-for-home-and-school-faq?rtc=1)
-          - [Workplace Discount Program Employee FAQ](http://www.microsoft.com/workplace-discount-program/faq)
+          - [Workplace Discount Program Employee FAQ](https://www.microsoft.com/workplace-discount-program/faq)
           
            For help with technical issues, see [Microsoft Support](https://support.microsoft.com/). You'll find help for:
           
@@ -139,8 +140,8 @@ sections:
 additionalContent: |
 
   ## Related content
-    [Microsoft Workplace Discount Program FAQs](http://www.microsoft.com/workplace-discount-program/faq). (article)\
+    [Microsoft Workplace Discount Program FAQs](https://www.microsoft.com/workplace-discount-program/faq). (article)\
     [Microsoft Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0) (link page)\
     [Microsoft Store for Business Admin support](/microsoft-store/) (link page)\
-    [Workplace Discount Program employee store](http://www.microsoft.com/workplace-discount-program/faq) (link page)\
+    [Workplace Discount Program employee store](https://www.microsoft.com/workplace-discount-program/faq) (link page)\
     [Microsoft Licensing: Workplace Discount Program overview](https://www.microsoft.com/licensing/licensing-programs/software-assurance-by-benefits?activetab=software-assurance-by-benefits-tab:primaryr4) (link page)

@@ -1,9 +1,9 @@
 ---
 title: Provide initial and ongoing training to help onboard your frontline workers
 description: Get an overview of how to plan, build, and launch your frontline worker onboarding experience.
-ms.topic: conceptual
+ms.topic: article
 author: lana-chin
-ms.author: v-chinlana
+ms.author: jtremper
 manager: jtremper
 audience: admin
 f1.keywords:

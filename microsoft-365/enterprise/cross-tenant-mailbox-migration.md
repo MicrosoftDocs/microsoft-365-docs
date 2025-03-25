@@ -6,10 +6,10 @@ author: kelleyvice-msft
 manager: scotv
 ms.service: microsoft-365-enterprise
 ms.subservice: multi-tenant
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 f1.keywords:
   - NOCSH
-ms.date: 02/01/2024
+ms.date: 02/28/2025
 ms.reviewer: georgiah
 ms.custom:
   - it-pro
@@ -46,12 +46,12 @@ When a mailbox is migrated cross-tenant with this feature, only user-visible con
 ## Licensing
 
 > [!IMPORTANT]
-Cross-Tenant migrations requires a per user license (one-time fee) and can be assigned either on the source or target user object. This license also covers [OneDrive for Business migration](cross-tenant-onedrive-migration.md). Cross Tenant User Data Migration is available as an add-on to the following Microsoft 365 subscription plans: Microsoft 365 Business Basic, Standard, and Premium; Microsoft 365 F1/F3/E3/E5/; Office 365 F3/E1/E3/E5; Exchange Online; SharePoint Online; OneDrive for Business and EDU.
+Cross-Tenant migrations require a per user license (one-time fee) and can be assigned either on the source or target user object. This license also covers [OneDrive migration](cross-tenant-onedrive-migration.md). Cross Tenant User Data Migration is available as an add-on to the following Microsoft 365 subscription plans: Microsoft 365 Business Basic, Standard, and Premium; Microsoft 365 F1/F3/E3/E5/; Office 365 F3/E1/E3/E5; Exchange Online; SharePoint in Microsoft 365; OneDrive and EDU.
 
 > [!WARNING]
 > You must have purchased, or verified that you can purchase, cross-tenant user data migration licenses prior to the next steps. Migrations fail if this step hasn't been completed. Microsoft doesn't offer exceptions for this licensing requirement.
 
-If you do not have the proper license assigned to the user being migrated, the migration fails, and you receive an error that is similar to the following:
+If you don't have the proper license assigned to the user being migrated, the migration fails, and you receive an error that is similar to the following:
 
 ``` code
 Error: CrossTenantMigrationWithoutLicensePermanentException: No license was found for the source recipient, '65c3c3ea-2b9a-44d0-a685-9bfe300f8c87', or the target recipient, '65c3c3ea-2b9a-44d0-a685-9bfe300f8c87'. A Cross-tenant User Data Migration license is required to move a mailbox between tenants.
@@ -65,7 +65,7 @@ Before starting, ensure that you have the necessary permissions to configure the
 
 Additionally, at least one mail-enabled security group in the source tenant is required. These groups are used to scope the list of mailboxes that can move from source tenant (or sometimes referred to as resource) to the target tenant. This scoping allows the source tenant administrator to restrict or scope the specific set of mailboxes that need to be moved, preventing unintended users from being migrated.
 
-If you are migrating more than 10,000 users, we recommend creating multiple groups to contain the user list for best performance. While nested groups are supported, they are not recommended.
+If you're migrating more than 10,000 users, we recommend creating multiple groups to contain the user list for best performance. While nested groups are supported, they aren't recommended.
 
 You also need to communicate with your trusted partner company (with whom you'll be moving mailboxes) to obtain their Microsoft 365 tenant ID. This tenant ID is used in the **Organization Relationship DomainName** field.
 
@@ -133,7 +133,7 @@ All users in both the source and target organizations must be licensed with the 
 17. In the **Add a client secret** window, type a description, and then configure your expiration settings.
 
     > [!NOTE]
-    > The password is used when creating your migration endpoint. It's extremely important that you copy this password to your clipboard and/or to a secure/secret password safe location. The secret creation stage is the only time during which you can see this password! If you do somehow lose it or need to reset it, you can sign back into the Azure portal, go to **App registrations**, find your migration app, select **Secrets & certificates**, and then create a new secret for your app.
+    > The password is used when creating your migration endpoint. It's important that you copy this password to your clipboard and/or to a secure/secret password safe location. The secret creation stage is the only time during which you can see this password! If you do somehow lose it or need to reset it, you can sign back into the Azure portal, go to **App registrations**, find your migration app, select **Secrets & certificates**, and then create a new secret for your app.
 
 Now that you've successfully created the migration application and secret, the next step is to consent to the application. 
 
@@ -166,6 +166,8 @@ Now that you've successfully created the migration application and secret, the n
 
    > [!NOTE]
    > You'll need the application ID of the mailbox migration app you just created and the password (secret) you configured in [Prepare the target (destination) tenant by creating the migration application and secret](#prepare-the-target-destination-tenant-by-creating-the-migration-application-and-secret). Depending on the Microsoft 365 cloud instance you use, your endpoint may be different. See the [Microsoft 365 endpoints](microsoft-365-endpoints.md) page; select the correct instance for your tenant; then review the Exchange Online _Optimize/Required_ address, and replace as appropriate.
+   
+   > Your trusted partner (source tenant administrator) should accept the application using the URL mentioned in the previous section before you proceed with the next steps, otherwise, the last command in the below commands will fail with an authentication error and you will not be able to complete the migration endpoint creation.
 
    ```PowerShell
    $AppId = "[Guid copied from the migrations app]"
@@ -180,7 +182,7 @@ Now that you've successfully created the migration application and secret, the n
    ```
 
 > [!NOTE]
-> If the above command fails, please check with the source tenant administrator to confirm if the application was granted admin consent. 
+> If the above command fails, check with the source tenant administrator to confirm if the application was granted admin consent. 
 
 3. Create a new organization relationship object or edit your existing organization relationship object to your source tenant.
 
@@ -206,7 +208,7 @@ Now that you've successfully created the migration application and secret, the n
    `https://login.microsoftonline.com/contoso.onmicrosoft.com/adminconsent?client_id=[application_id_of_the_app_you_just_created]&redirect_uri=https://office.com`
 
    > [!NOTE]
-   > You'll need the application ID of the mailbox migration app you just created. You will need to replace `contoso.onmicrosoft.com` in the previous example with your source tenant's `onmicrosoft.com` URL. You'll also need to replace [application_id_of_the_app_you_just_created] with the application ID of the mailbox migration app you just created.
+   > You'll need the application ID of the mailbox migration app you just created. You'll need to replace `contoso.onmicrosoft.com` in the previous example with your source tenant's `onmicrosoft.com` URL. You'll also need to replace [application_id_of_the_app_you_just_created] with the application ID of the mailbox migration app you just created.
 
 2. Accept the application when the pop-up appears. You can also sign in to your Microsoft Entra admin center and find the application under **Enterprise applications**.
 
@@ -247,7 +249,7 @@ Users migrating must be present in the target tenant and Exchange Online system 
 Ensure the following objects and attributes are set in the target organization:
 
 > [!TIP]
-> Microsoft is developing a feature to provide a secure automated method to set many of the attributes (specified below, in this section). This feature, named Cross-Tenant Identity Mapping, is currently looking for customers willing to participate in a small private preview. For more information about this pre-release feature and how it can simplify your Cross-tenant migration processes, see [Cross-Tenant Identity Mapping](cross-tenant-identity-mapping.md).
+> Microsoft is developing a feature to provide a secure automated method to set many of the attributes (specified in this section). This feature, named Cross-Tenant Identity Mapping, is currently looking for customers willing to participate in a small preview. For more information about this prerelease feature and how it can simplify your Cross-tenant migration processes, see [Cross-Tenant Identity Mapping](cross-tenant-identity-mapping.md).
 
 For any mailbox moving from a source organization, you must provision a MailUser object in the Target organization:
 
@@ -255,7 +257,7 @@ For any mailbox moving from a source organization, you must provision a MailUser
 
       1. ExchangeGUID (direct flow from source to target): The mailbox GUID must match. The move process won't proceed if this attribute isn't present on target object.
       2. ArchiveGUID (direct flow from source to target): The archive GUID must match. The move process won't proceed if this attribute isn't present on the target object. (This attribute is only required if the source mailbox is Archive enabled).
-      3. LegacyExchangeDN (flow as proxyAddress, "x500:\<LegacyExchangeDN\>"): The LegacyExchangeDN must be present on target MailUser as x500: proxyAddress. **In addition, you also need to copy all x500 addresses from the source mailbox to the target mail user.** The move processes won't proceed if these x500 addresses aren't present on the target object. Also, this step is important for enabling reply ability for emails that are sent before migration. The sender/recipient address in each email item and the auto-complete cache in Microsoft Outlook and in Microsoft Outlook Web App (OWA) use the value of the LegacyExchangeDN attribute. If a user can't be located using the LegacyExchangeDN value, the delivery of email messages may fail with a 5.1.1 NDR.
+      3. LegacyExchangeDN (flow as proxyAddress, "x500:\<LegacyExchangeDN\>"): The LegacyExchangeDN must be present on target MailUser as x500: proxyAddress. **In addition, you also need to copy all x500 addresses from the source mailbox to the target mail user.** The move processes won't proceed if these x500 addresses aren't present on the target object. Also, this step is important for enabling reply ability for emails that are sent before migration. The sender/recipient address in each email item and the autocomplete cache in Microsoft Outlook and in Microsoft Outlook Web App (OWA) use the value of the LegacyExchangeDN attribute. If a user can't be located using the LegacyExchangeDN value, the delivery of email messages might fail with a 5.1.1 NDR.
       4. UserPrincipalName: UPN will align to the user's NEW identity or target company (for example, user@northwindtraders.onmicrosoft.com).
       5. Primary SMTPAddress: Primary SMTP address will align to the user's NEW company (for example, user@northwindtraders.com).
       6. TargetAddress/ExternalEmailAddress: MailUser will reference the user's current mailbox hosted in source tenant (for example user@contoso.onmicrosoft.com). When this value is being assigned, verify that you have/are also assigning PrimarySMTPAddress; else, this value will set the PrimarySMTPAddress, which will cause move failures.
@@ -351,13 +353,13 @@ Test-MigrationServerAvailability -EndPoint "[the name of your migration endpoint
 ```
 
 > [!NOTE]
-> Additionally, you may want to take advantage of the [Cross-tenant mailbox migration validation script](https://aka.ms/crosstenantmailboxmigrationvalidationscript), which will allow you to validate the organizations being correctly setup between them, and the objects you are planning to migrate from one tenant to another. The script will help identify any discrepancies that may be present on all objects at once, and as a result, it will reduce the time spent on the initial phase.
+> Additionally, you might want to take advantage of the [Cross-tenant mailbox migration validation script](https://aka.ms/crosstenantmailboxmigrationvalidationscript), which will allow you to validate the organizations being correctly set up between them, and the objects you're planning to migrate from one tenant to another. The script will help identify any discrepancies that may be present on all objects at once, and as a result, it will reduce the time spent on the initial phase.
 
 ### Move mailboxes back to the original source
 
 If a mailbox is required to move back to the original source tenant, the same set of steps and scripts must be run in both new source and new target tenants, with some variance.
 
-Do not run the sample scripts provided to create the OrganizationRelationship.
+Don't run the sample scripts provided to create the OrganizationRelationship.
 
 Update the following values in the existing OrganizationRelationship created in each tenant:
 
@@ -383,7 +385,7 @@ T2Tbatch                   Syncing ExchangeRemoteMove 1
 
 > [!NOTE]
 > The email address in the CSV file must be the one specified in the target tenant (for example, userA@northwindtraders.onmicrosoft.com), not the one in the source tenant.
-> [For more information on the cmdlet click here](/powershell/module/exchange/new-migrationbatch)
+> [For more information on the cmdlet, click here](/powershell/module/exchange/new-migrationbatch)
 > [For some example CSV file info click here](/exchange/csv-files-for-mailbox-migration-exchange-2013-help)
 
 A minimal example of a CSV file is:
@@ -526,7 +528,7 @@ Exchange mailbox moves using MRS craft the targetAddress on the original source 
 
 ### How does mail flow work after migration?
 
-Cross-Tenant mail flow after migration works similar to Exchange Hybrid mail flow. Each migrated mailbox needs the source MailUser with the correct target address to forward incoming mail from source tenant to mailboxes in target tenant. Transport rules, security, and compliance features will run as configured in each tenant that the mail flows through. So, for inbound mail, features like anti-spam, anti-malware, quarantine, transport rules and journaling rules will run in the source tenant first, then in the target tenant.
+Cross-Tenant mail flow after migration works similar to Exchange Hybrid mail flow. Each migrated mailbox needs the source MailUser with the correct target address to forward incoming mail from source tenant to mailboxes in target tenant. Transport rules, security, and compliance features will run as configured in each tenant that the mail flows through. So, for inbound mail, features like anti-spam, anti-malware, quarantine, transport rules, and journaling rules will run in the source tenant first, then in the target tenant.
 
 ### How do mailbox permissions transition?
 
@@ -575,8 +577,8 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
 ```
 
 > [!NOTE]
-> In addition to this X500 proxy, you will need to copy all X500 proxies from the mailbox in the source to the mailbox in the target.
-> While rare, you could also run across an X400 proxy address on a mailbox, while not a requirement for the move to complete, it is recommended that you also stamp this address on the target mail user object.
+> In addition to this X500 proxy, you'll need to copy all X500 proxies from the mailbox in the source to the mailbox in the target.
+> While rare, you could also run across an X400 proxy address on a mailbox, while not a requirement for the move to complete, it's recommended that you also stamp this address on the target mail user object.
 
 ### Can the source and target tenants utilize the same domain name?
 
@@ -616,7 +618,7 @@ Currently the cross-tenant mailbox migrations feature doesn't support the migrat
 
 ### Can a source tenant admin perform an eDiscovery search against a mailbox after the mailbox has been migrated to the new/target tenant?
 
-No, after a cross-tenant mailbox migration, eDiscovery against the migrated user's mailbox in the source doesn't work. This eDiscovery failure is because there's no longer a mailbox in the source to search for as the mailbox has been migrated to the target tenant and now belongs to the target tenant. eDiscovery after mailbox migration can only be done in the target tenant (where the mailbox now exists). If a copy of the source mailbox needs to persist in the source tenant after migration, the administrator in the source tenant can copy the contents to an alternate mailbox pre-migration for future eDiscovery operations against the data.
+No, after a cross-tenant mailbox migration, eDiscovery against the migrated user's mailbox in the source doesn't work. This eDiscovery failure is because there's no longer a mailbox in the source to search for as the mailbox has been migrated to the target tenant and now belongs to the target tenant. eDiscovery after mailbox migration can only be done in the target tenant (where the mailbox now exists). If a copy of the source mailbox needs to persist in the source tenant after migration, the administrator in the source tenant can copy the contents to an alternate mailbox premigration for future eDiscovery operations against the data.
 
 ### At which point will the destination MailUser be converted to a destination mailbox and the source mailbox converted to a source MailUser?
 
@@ -632,16 +634,16 @@ This license assignation can be done before the migration is complete, but you s
 
 Yes. It's possible to have two instances of Microsoft Entra Connect synchronize to different tenants. However, there are some things you need to be aware of:
 
-- Preprovisioning the user's accounts with the script provided in this article shouldn't be done. Instead, a selective OU sync of the users in scope for the migration can be performed to populate the target tenant. You'll receive a warning about the UPN not matching during Microsoft Entra Connect configuration.
+- Pre-provisioning the user's accounts with the script provided in this article shouldn't be done. Instead, a selective OU sync of the users in scope for the migration can be performed to populate the target tenant. You'll receive a warning about the UPN not matching during Microsoft Entra Connect configuration.
 - Depending on your current state of hybrid Exchange, you need to verify that the on-premises directory objects have the required attributes (such as msExchMailboxGUID and proxyAddresses) populated correctly before attempting to sync to another tenant; else you'll run into issues with double mailboxes and migration failures.
 - You must take some extra steps to manage UPN transitioning, changing it on-premises once the migration has been completed for a user unless you're also moving the custom domain during a cut-over migration.
 
 ### How should I handle mailboxes that are close to, or over quota.
 
-Mailboxes nearing their quota prior to migration may end up over quota either before or during the actual migration. If this happens, these mailboxes will fail migration and will need to be remediated and restarted. To mitigate this, it is recommend the source tenant admin identify mailboxes at or near quota prior to migration and take the necessary steps to either reduce the mailbox size, provision a primary archive or in some cases enable auto expanding archives for the user's mailboxes.
+Mailboxes nearing their quota prior to migration might end up over quota either before or during the actual migration. If this happens, these mailboxes will fail migration and will need to be remediated and restarted. To mitigate this, it's recommend the source tenant admin identify mailboxes at or near quota prior to migration and take the necessary steps to either reduce the mailbox size, provision a primary archive or in some cases enable auto expanding archives for the user's mailboxes.
 
 > [!NOTE]
-> Once enabling an archive or auto expanding archive for a user, ensure the correct archiving policies are applied to the user and the process is run to move the mailbox data to it's new location and free up space.
+> Once enabling an archive or auto expanding archive for a user, ensure the correct archiving policies are applied to the user and the process is run to move the mailbox data to its new location and free up space.
 
 ### Do auto-expanded archive mailboxes move?
 
@@ -649,7 +651,7 @@ Mailboxes nearing their quota prior to migration may end up over quota either be
 
 ### Can I perform a cross cloud tenant to tenant migration?
 
-Cross cloud tenant to tenant migration is not supported. An example scenario would be moving from Office 365 Worldwide to Office 365 Government Cloud.
+Cross cloud tenant to tenant migration isn't supported. An example scenario would be moving from Office 365 Worldwide to Office 365 Government Cloud.
 
 ### Are voicemails migrated cross tenant?
 
@@ -657,12 +659,12 @@ Yes, voicemails are migrated cross tenant.
 
 - Received voicemails in email as attachments are available in the target mailbox.
 - Received voicemails are available in Teams if you call voicemail and listen to saved messages. (VMs received in source are available as saved messages)
-- Received voicemails are not available in Teams client UI in target post migration.
+- Received voicemails aren't available in Teams client UI in target post migration.
 - The voicemail greeting is also migrated to the target.
 
 ### Are mailbox signatures migrated cross tenant?
 
-Mailbox signatures are not migrated cross tenant and must be recreated.
+Mailbox signatures aren't migrated cross tenant and must be recreated.
 
 ## Known issues
 
@@ -690,7 +692,7 @@ Mailbox signatures are not migrated cross tenant and must be recreated.
 - When any Exchange service plan is applied to a MailUser, the Microsoft Entra ID process starts to enforce proxy scrubbing to ensure that the local organization isn't able to send out mail, spoof, or mail from another tenant. Any SMTP address on a recipient object with these service plans will be removed if the address isn't verified by the local organization. As is the case in the example, the northwindtraders.com domain isn't verified by the contoso.onmicrosoft.com tenant; therefore, the scrubbing removes that northwindtraders.com domain. If you wish to persist these external domains on MailUser, either before or after the migration, you need to alter your migration processes to strip licenses after the move completes or before the move to ensure that the users have the expected external branding applied. You'll need to ensure that the mailbox object is properly licensed to not affect mail service. An example script to remove the service plans on a MailUser in the contoso.onmicrosoft.com tenant is shown here.
 
 > [!NOTE]
-> The following script uses Microsoft Graph Powershell. For more information, see [Microsoft Graph PowerShell overview](/powershell/microsoftgraph/overview).
+> The following script uses Microsoft Graph PowerShell. For more information, see [Microsoft Graph PowerShell overview](/powershell/microsoftgraph/overview).
 >
 > For information about how to use different methods to authenticate ```Connect-Graph``` in an unattended script, see the article [Authentication module cmdlets in Microsoft Graph PowerShell](/powershell/microsoftgraph/authentication-commands).
 
@@ -891,7 +893,7 @@ Company   PendingActivation   882e1d05-acd1-4ccb-8708-6ee03664b117 INTUNE_O365
 
 - AuxArchiveNotFoundInTargetRecipientException
 
-  This failure is because the user was not in the migration scope when batch was started and the user has AuxArchive on the source.  
+  This failure is because the user wasn't in the migration scope when batch was started and the user has AuxArchive on the source.  
   Add user to the correct security group on source target.  
   Remove the migration user from the batch.  
   Remove users with the following command:
@@ -916,7 +918,7 @@ Company   PendingActivation   882e1d05-acd1-4ccb-8708-6ee03664b117 INTUNE_O365
 
 - NotAcceptedDomainException
 
-  There is an invalid proxy address stamped on the target user. An example would be where a user in contoso.onmicrosoft.com had a proxy address of  fabrikam.onmicrosoft.com, which is the source tenant.  
+  There's an invalid proxy address stamped on the target user. An example would be where a user in contoso.onmicrosoft.com had a proxy address of  fabrikam.onmicrosoft.com, which is the source tenant.  
   Remove the invalid proxy address using the following command:
 
   ```powershell
@@ -962,7 +964,7 @@ Company   PendingActivation   882e1d05-acd1-4ccb-8708-6ee03664b117 INTUNE_O365
 
 - SourceMailboxAlreadyBeingMovedPermanentException
 
-  The source mailbox already has an existing move request. Investigate and remove the existing move. It is possible that this is an internal Microsoft  move and you will need to wait for the move to complete.  
+  The source mailbox already has an existing move request. Investigate and remove the existing move. It's possible that this is an internal Microsoft  move and you'll need to wait for the move to complete.  
   Remove the migration user from the batch.  
   Remove users with the following command:
 
@@ -982,7 +984,7 @@ Company   PendingActivation   882e1d05-acd1-4ccb-8708-6ee03664b117 INTUNE_O365
   Enable-Mailbox -Archive mailbox@contoso.onmicrosoft.com.
   ```
 
-  If you re-enable the disabled archive mailbox, you will need to update the archive guid on the target mailuser object.  
+  If you re-enable the disabled archive mailbox, you'll need to update the archive guid on the target mailuser object.  
   Resume migration batch.  
 
 ## See also

@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.reviewer: deanw
-ms.date: 09/05/2024
+ms.date: 02/24/2025
 audience: ITPro
 ms.topic: overview
 ms.service: microsoft-365-enterprise
@@ -35,8 +35,7 @@ The following workloads are included in ADR. For more information, see:
 - [Microsoft Defender for Office P1 and Exchange Online Protection](m365-dr-workload-mdo-p1.md)
 - [Office for the Web](m365-dr-workload-office-for-web.md)
 - [Viva Connections](m365-dr-workload-viva-connections.md)
-- [Viva Topics](m365-dr-workload-viva-topics.md)*
-- [Microsoft Purview](m365-dr-workload-purview.md)**
+- [Microsoft Purview](m365-dr-workload-purview.md)*
   - [Data Loss Prevention](m365-dr-workload-purview.md#data-security---data-loss-prevention-dlp)
   - [Information Barriers](m365-dr-workload-purview.md#data-security---information-barriers)
   - [Information Protection (MIP)](m365-dr-workload-purview.md#data-security---information-protection-mip)
@@ -45,9 +44,10 @@ The following workloads are included in ADR. For more information, see:
   - [Data Lifecycle Management (DLM)](m365-dr-workload-purview.md#risk--compliance---data-lifecycle-management-dlm)
 
 > [!NOTE]
-> *Viva Topics will be retired on February 22, 2025. Therefore, as of October 31, 2024, Viva Topics will no longer be a supported workload in ADR. Starting with the upcoming local region launches in Taiwan and New Zealand, Viva Topics customer data will not be migrated to new local regions, nor will new customers have Viva Topics stored in existing local regions. For more details, please visit [aka.ms/TopicsFebSupport](https://aka.ms/TopicsFebSupport).
+> *The Microsoft Purview services list mentioned above includes all services covered as part of the Advanced Data Residency commitment as of November 2024. Additional Microsoft Purview services are not currently supported.
+
 > [!NOTE]
-> **The Microsoft Purview services list mentioned above includes all services covered as part of the Advanced Data Residency commitment as of November 2024. Additional Microsoft Purview services are not currently supported.
+> Viva Topics has been retired as of February 22, 2025. Therefore, Viva Topics is no longer a supported workload in ADR. For more details, please visit [aka.ms/TopicsFebSupport](https://aka.ms/TopicsFebSupport).
 
 ## Licensing and Purchase
 
@@ -100,7 +100,7 @@ After receiving the Advanced Data Residency licenses and applying them to the cu
 
 #### Microsoft 365 Admin Center Data Location
 
-:::image type="content" alt-text="Screenshot of Microsoft 365 Admin Center Data location View." source="media\data-residency\1-adr-microsoft-365-data-location-card_0624.png" lightbox="media\data-residency\1-adr-microsoft-365-data-location-card_0624.png":::
+:::image type="content" alt-text="Screenshot of Microsoft 365 Admin Center Data location View." source="media\data-residency\1-adr-microsoft-365-data-location-card_0225.png" lightbox="media\data-residency\1-adr-microsoft-365-data-location-card_0225.png":::
 
 > [!NOTE]
 > The data migration process described in the sections below will not initiate until the customer administrator completes this task.
@@ -109,13 +109,13 @@ The following screenshot is an example of the Microsoft 365 admin center Data lo
 
 #### Before Migration Opt-in
 
-:::image type="content" source="media\data-residency\2-adr-microsoft-365-data-location-card-before-move_0624.png" alt-text="Screenshot of Data Location View Before Migration.":::
+:::image type="content" source="media\data-residency\2-adr-microsoft-365-data-location-card-before-move_0225.png" alt-text="Screenshot of Data Location View Before Migration.":::
 
 Once a customer administrator chooses the option to initiate migration, they are provided with confirmation of their opt-in date and migration initiation as shown in the screenshot below.
 
 #### After Migration Opt-in
 
-:::image type="content" source="media\data-residency\3-adr-microsoft-365-data-location-card-move-initiated_0624.png" alt-text="Screenshot of Data Location View Migration Requested.":::
+:::image type="content" source="media\data-residency\3-adr-microsoft-365-data-location-card-move-initiated_0225.png" alt-text="Screenshot of Data Location View Migration Requested.":::
 
 The "Data location" section in the Microsoft 365 admin center (referenced in the screenshots above) displays the most up-to-date location of each workload throughout the data migration process. Customer administrators can also view any Message center notifications related to their migration within the Microsoft 365 admin center by navigating to **Health > Message center**.
 
@@ -123,7 +123,7 @@ The "Data location" section in the Microsoft 365 admin center (referenced in the
 
 Microsoft adheres to the [Microsoft Online Services Service Level Agreement (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) for service availability and uses reasonable efforts to complete an Advanced Data Residency add-on customer data migration within 12 months from the time the customer administrator selects the option to initiate migration. However, large, complex customers, and situations outside of Microsoft's control, may require more time for migration to complete.
 
-Data moves are a back-end service operation with minimal impact to a customer's operations. For information related to specific workloads, customer administrators can refer to the “Migration” sections in the following Workload Data Residency Capabilities pages: [Exchange Online](m365-dr-workload-exo.md#migration), [SharePoint and OneDrive](m365-dr-workload-spo.md#migration-with-advanced-data-residency), [Microsoft Teams](m365-dr-workload-teams.md#migration), [Microsoft 365 Copilot](m365-dr-workload-copilot.md#migration-and-user-experience), [Microsoft Defender for Office P1](m365-dr-workload-mdo-p1.md#migration), [Office for the Web](m365-dr-workload-office-for-web.md#migration), [Viva Connections](m365-dr-workload-viva-connections.md#migration), [Viva Topics](m365-dr-workload-viva-topics.md#migration), [Microsoft Purview](m365-dr-workload-purview.md#migration), and [Other Services](m365-dr-workload-other.md).
+Data moves are a back-end service operation with minimal impact to a customer's operations. For information related to specific workloads, customer administrators can refer to the “Migration” sections in the following Workload Data Residency Capabilities pages: [Exchange Online](m365-dr-workload-exo.md#migration), [SharePoint and OneDrive](m365-dr-workload-spo.md#migration-with-advanced-data-residency), [Microsoft Teams](m365-dr-workload-teams.md#migration), [Microsoft 365 Copilot](m365-dr-workload-copilot.md#migration-and-user-experience), [Microsoft Defender for Office P1](m365-dr-workload-mdo-p1.md#migration), [Office for the Web](m365-dr-workload-office-for-web.md#migration), [Viva Connections](m365-dr-workload-viva-connections.md#migration), [Microsoft Purview](m365-dr-workload-purview.md#migration), and [Other Services](m365-dr-workload-other.md).
 
 ### During and After your Migration
 
@@ -135,11 +135,11 @@ The following screenshots are examples of the Microsoft 365 admin center Data lo
 
 #### During Migration
 
-:::image type="content" source="media\data-residency\4-adr-microsoft-365-data-location-card-move-in-progress_0624.png" alt-text="Screenshot of Data Location View Migration in Progress.":::
+:::image type="content" source="media\data-residency\4-adr-microsoft-365-data-location-card-move-in-progress_0225.png" alt-text="Screenshot of Data Location View Migration in Progress.":::
 
 #### After Migration
 
-:::image type="content" source="media\data-residency\5-adr-microsoft-365-data-location-card-move-completed_0624.png" alt-text="Screenshot of Data Location View Migration Completed.":::
+:::image type="content" source="media\data-residency\5-adr-microsoft-365-data-location-card-move-completed_0225.png" alt-text="Screenshot of Data Location View Migration Completed.":::
 
 ### Effect on End Users and Workloads
 

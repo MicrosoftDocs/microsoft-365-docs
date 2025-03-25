@@ -18,7 +18,7 @@ ms.collection:
 - Adm_O365
 - SPO_Content
 ms.custom:
-- commerce_billing
+- commerce_subscriptions
 - MAX_CampaignID
 - okr_SMB
 - AdminSurgePortfolio

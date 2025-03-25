@@ -1,10 +1,10 @@
 ---
 title: Prerequisites and requirements for the Teams Shifts connector for UKG Pro Workforce Management
-author: lana-chin
-ms.author: v-chinlana
+author: MicrosoftHeidi
+ms.author: heidip
 manager: jtremper
 ms.reviewer: harrywong
-ms.topic: conceptual
+ms.topic: article
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
@@ -108,6 +108,9 @@ Configure the connector's redirection URL. This allows UKG Pro WFM to redirect t
 1. In the **global.oAuth.authCode.redirection.uris** field, enter the value, "https://aka.ms/shifts/connector/ukgdimensions/auth".
 1. In the **global.oAuthToken.redirection.domain.whiteList** field, enter the value, "aka.ms".
 1. Select **Save**.
+
+>[!NOTE]
+> This article contains references to the term *whitelist*, a term that Microsoft no longer uses. When the term is removed from the software, we'll remove it from this article.
 
 ### Create at least one team in Teams
 

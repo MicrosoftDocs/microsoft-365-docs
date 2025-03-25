@@ -6,7 +6,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.custom: seo-marvel-mar2020

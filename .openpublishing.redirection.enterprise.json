@@ -1424,6 +1424,11 @@
       "source_path": "microsoft-365/enterprise/tune-microsoft-365-performance.md",
       "redirect_url": "/microsoft-365/enterprise/index",
       "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/contoso-win10.md",
+      "redirect_url": "/microsoft-365/enterprise/contoso-win11",
+      "redirect_document_id": false
    }
   ]
 }

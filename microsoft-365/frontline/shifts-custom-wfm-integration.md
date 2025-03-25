@@ -1,10 +1,10 @@
 ---
 title: Create a custom integration to sync your workforce management system with Shifts
 author: lana-chin
-ms.author: v-chinlana
+ms.author: jtremper
 manager: jtremper
 ms.reviewer: harrywong
-ms.topic: conceptual
+ms.topic: integration
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150

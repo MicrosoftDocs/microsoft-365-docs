@@ -19,6 +19,7 @@ ms.custom:
 - commerce_billing
 - admindeeplinkMAC
 - GAUpdates
+- campaignIDs-batch2
 search.appverid: MET150
 description: "Learn how to use multi-tenant billing relationships to share billing accounts across tenants in the Microsoft 365 admin center."
 ms.date: 09/12/2024

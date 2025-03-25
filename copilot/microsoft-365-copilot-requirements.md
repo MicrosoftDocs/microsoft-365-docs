@@ -97,7 +97,6 @@ In addition to [standard Microsoft 365 domains and IPs](/microsoft-365/enterpris
 
 - copilot.microsoft.com, *.copilot.microsoft.com
 - *.bing.com, *.bingapis.com
-- challenges.cloudflare.com
 
 > [!IMPORTANT]
 > Several Copilot integrations rely on WebSockets (WSS) to deliver a streamlined user experience. Some customer networks may not be configured to handle WSS connections properly, which may result in Copilot application failures. Typical network configurations that impact WSS include:

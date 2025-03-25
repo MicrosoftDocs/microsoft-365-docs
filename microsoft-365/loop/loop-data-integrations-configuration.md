@@ -1,5 +1,5 @@
 ---
-ms.date: 02/22/2024
+ms.date: 03/06/2025
 title: "Configuring external data integrations for Loop experiences"
 ms.reviewer: dancost, dimple
 ms.author: jenz

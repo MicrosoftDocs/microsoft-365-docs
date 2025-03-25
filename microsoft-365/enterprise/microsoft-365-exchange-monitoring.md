@@ -3,7 +3,7 @@ title: "Exchange Online monitoring for Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 04/12/2024
+ms.date: 03/12/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -78,6 +78,8 @@ With Exchange Online priority account monitoring, you can view the health for th
 - Folder hierarchy
 
 - Recoverable items
+
+- Mail Delivery
 
 The Exchange licensing scenario checks if the priority account isn't able to sign in due to invalid license issues, which can be addressed by the tenant admin.
 

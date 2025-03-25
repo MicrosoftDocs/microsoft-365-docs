@@ -1,12 +1,12 @@
 ---
-title: Overview of content assembly in Microsoft Syntex
+title: Overview of content assembly in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: anrasto, shrganguly
-ms.date: 10/16/2024
-ms.topic: conceptual
+ms.date: 02/06/2025
+ms.topic: concept-article
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
 search.appverid:
@@ -14,15 +14,15 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn about how to create documents and other content using a modern template in Microsoft Syntex.
+description: Learn about how to create documents and other content using a modern template in SharePoint.
 ---
 
-# Overview of content assembly in Microsoft Syntex
+# Overview of content assembly in SharePoint
 
 > [!NOTE]
-> Through June 2025, you can try out a [limited amount](promo-syntex.md#monthly-included-capacity) of content assembly and other selected Syntex services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out Microsoft Syntex and explore its services](promo-syntex.md).
+> Through June 2025, you can try out a [limited amount](promo-syntex.md#monthly-included-capacity) of content assembly and other selected content services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out pay-as-you-go services](promo-syntex.md).
 
-You can use the content assembly capabilities in Microsoft Syntex to help you automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, sales pitches, and correspondence. You can do all these actions quicker, more consistently, and with fewer errors by creating modern templates and using those templates to generate documents.
+Content assembly lets you automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, sales pitches, and correspondence. You can do all these actions quicker, more consistently, and with fewer errors by creating modern templates and using those templates to generate documents.
 
 ![Diagram of the flow of creating documents from a modern template.](../media/content-understanding/content-assembly-diagram.png)
 
@@ -33,17 +33,12 @@ You upload an existing document to create a modern template, and then use that t
 
 ## Requirements and limitations
 
-### Supported file types
+| Icon          | Description   |
+| ------------- | ------------- |
+| ![Files symbol.](/office/media/icons/files-blue.png)  | **Supported file types** <br>This service supports only Microsoft Word documents (.docx/.doc extension) for creating a template. |
+| ![Checklist symbol.](/office/media/icons/task-checklist-planning-blue.png)  | **File limitations** <br>The Word document you want to use as a modern template shouldn't contain comments or have Track Changes enabled. <br>Because content controls are used in Word to create fields for the modern template, make sure any text fields for images aren't text-wrapped. If the document already contains content controls, remove them before you use it to create a modern template. |
 
-Only Microsoft Word documents (.docx/.doc extension) are currently supported for creating a template.
-
-### File limitations
-
-- The Word document you want to use as a modern template shouldn't include comments or have Track Changes enabled.
-
-- Because content controls are used in Word to create fields for the modern template, make sure any text fields for images aren't text-wrapped. If the document already contains content controls, remove them before you use it to create a modern template.
-
-### Current release limitations
+### Current release notes
 
 - The template and the document are associated with one document library. To use the template in another document library, you'll need to create the template again in that document library.
 

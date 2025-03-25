@@ -1,6 +1,6 @@
 ---
 title: "Microsoft 365 admin center browser usage reports"
-ms.author: waxiaoyu
+ms.author: scotv
 author: efrene
 manager: scotv
 ms.date: 03/09/2021

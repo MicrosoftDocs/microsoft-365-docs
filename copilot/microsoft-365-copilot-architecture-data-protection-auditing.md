@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: mandia
 author: MandiOhlinger
 manager: laurawi
-ms.date: 01/28/2025
+ms.date: 02/13/2025
 audience: Admin
 ms.reviewer: mandia, bcarter, ruihu, cabailey
 ms.topic: overview
@@ -16,15 +16,19 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 - essentials-overview
-description: Learn how data protection and auditing work with Microsoft 365 Copilot. Learn more about sensitivity labels in Microsoft Purview, oversharing controls in SharePoint, and auditing tools that affect eDiscovery and retention policies.
+description: Get descriptions and see diagrams that describe how Microsoft Purview data protection, SharePoint oversharing controls, and auditing work with Microsoft 365 Copilot. This article also shows how Microsoft Purview sensitivity labels, SharePoint oversharing controls, and Purview tools like eDiscovery and retention policies affect Microsoft 365 Copilot.
 ms.custom: [copilot-learning-hub]
 appliesto:
   - ✅ Microsoft 365 Copilot
 ---
 
-# Microsoft 365 Copilot data protection and auditing architecture
+# Architecture diagrams of licensed Microsoft 365 data protection, oversharing, and auditing features that affect Microsoft 365 Copilot
 
-[Microsoft 365 Copilot](microsoft-365-copilot-overview.md) honors your security & data protection controls, and includes tools for auditing usage data. This article describes and illustrates:
+Microsoft 365 includes features that help you protect your data and audit usage, including Microsoft Purview sensitivity labels & encryption, and SharePoint oversharing controls. These features affect [Microsoft 365 Copilot](microsoft-365-copilot-overview.md) and how Copilot interacts with your data.
+
+First and foremost, [Microsoft 365 Copilot](microsoft-365-copilot-overview.md) honors your security & data protection controls. There are also features you can use to audit Copilot usage data.
+
+This article is for IT admins, and describes & illustrates:
 
 - How Copilot works with Microsoft Purview sensitivity labels.
 - The controls you can use to prevent oversharing data in SharePoint sites and OneDrive.
@@ -33,6 +37,12 @@ appliesto:
 This article applies to:
 
 - Microsoft 365 Copilot
+
+> [!TIP]
+> To learn more how Microsoft 365 Copilot uses your data, see:
+>
+> - [Data, Privacy, and Security for Microsoft 365 Copilot](microsoft-365-copilot-privacy.md)
+> - [AI security for Microsoft 365 Copilot](microsoft-365-copilot-ai-security.md) (includes info on honoring data residency requirements)
 
 ## How Microsoft 365 Copilot works with sensitivity labels and encryption
 

@@ -1,12 +1,12 @@
 ---
-title: Overview of unstructured document processing in Microsoft Syntex
+title: Overview of unstructured document processing in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 01/22/2025
+ms.date: 03/01/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: intro-overview
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
@@ -15,13 +15,16 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn about the unstructured document processing model in Microsoft Syntex.
+description: Learn about the unstructured document processing model in SharePoint.
 ---
 
-# Overview of unstructured document processing in Microsoft Syntex
+# Overview of unstructured document processing in SharePoint
 
 > [!NOTE]
-> Through June 2025, you can try out a [limited amount](promo-syntex.md#monthly-included-capacity) of unstructured document processing and other selected Syntex services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out Microsoft Syntex and explore its services](promo-syntex.md).
+> As of March 1, 2025, the price for unstructured document processing is lowered from $0.05 per page to $0.005 per page.
+
+> [!NOTE]
+> Through June 2025, you can try out a [limited amount](promo-syntex.md#monthly-included-capacity) of unstructured document processing and other selected content services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out pay-as-you-go services](promo-syntex.md).
 
 <!---</br>
 
@@ -36,7 +39,7 @@ Use the unstructured document processing model ([teaching method](create-syntex-
 
 ## Introduction to unstructured models
 
-The unstructured document processing model (formerly known as *document understanding model*) uses artificial intelligence (AI) to process documents. These documents must have text that can be identified based on phrases or patterns. The identified text designates both the type of file it is (its classification) and what you'd like to extract (its extractors).
+The unstructured document processing model uses artificial intelligence (AI) to process documents. These documents must have text that can be identified based on phrases or patterns. The identified text designates both the type of file it is (its classification) and what you'd like to extract (its extractors).
 
 > [!NOTE]
 > For more information about how to use Syntex and scenario examples, see [Get started driving adoption of Microsoft Syntex](./adoption-getstarted.md) and [Scenarios and use cases for Microsoft Syntex](./adoption-scenarios.md).
@@ -50,7 +53,7 @@ Add [classifiers](create-a-classifier.md) and [extractors](create-an-extractor.m
 
 - Classifiers are used to identify and classify documents that are uploaded to the document library. For example, a classifier can be "trained" to identify all *contract renewal* documents that are uploaded to the library. The contract renewal content type is defined by you when you create your classifier.
 
-- Extractors pull information from these documents. For example, for each contract renewal document identified in your document library, columns will display that show the *Service Start Date* and *Client* for each document. 
+- Extractors pull information from these documents. For example, for each contract renewal document identified in your document library, columns display that show the *Service Start Date* and *Client* for each document.
 
 You can use example files to train and test your classifiers and extractors in your model. Example files provide your model examples of what to look for when trying to identify and extract data from files. For example, you would train your contract renewal classifiers and extractors with examples of contract renewal documents your company works with. You can also use example files to test the effectiveness of your model.
 

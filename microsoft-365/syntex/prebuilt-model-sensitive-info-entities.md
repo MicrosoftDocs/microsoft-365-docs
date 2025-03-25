@@ -1,12 +1,12 @@
 ---
-title: Supported entity categories for the sensitive information prebuilt model in Microsoft Syntex
+title: Supported entity categories for the sensitive information prebuilt model in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: karlha
-ms.date: 06/28/2024
+ms.date: 01/28/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
 search.appverid: 
@@ -15,11 +15,11 @@ ms.collection:
     - m365initiative-syntex
 ms.localizationpriority:  medium
 ROBOTS: NOINDEX, NOFOLLOW
-description: Learn about the entity categories used in the prebuilt sensitive information model in Microsoft Syntex.
+description: Learn about the entity categories used in the prebuilt sensitive information model in SharePoint.
 
 ---
 
-# Supported entity categories for the sensitive information prebuilt model in Microsoft Syntex
+# Supported entity categories for the sensitive information prebuilt model in SharePoint
 
 The following list shows the entity categories that can be returned by the prebuilt sensitive information model.
 

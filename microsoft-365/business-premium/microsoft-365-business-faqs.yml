@@ -12,7 +12,7 @@ metadata:
   ms.collection:
   - tier2
   - m365-security
-  ms.date: 11/15/2024
+  ms.date: 03/05/2025
   ms.localizationpriority: medium
   audience: microsoft-business
   keywords: Microsoft 365 Business Premium, Microsoft 365, SMB, FAQ, frequently asked questions, answers, business
@@ -32,9 +32,6 @@ sections:
         answer: |
           Microsoft 365 Business Premium can be purchased through a [Microsoft Partner](https://www.microsoft.com/solution-providers/search) or directly from [Microsoft](https://www.microsoft.com/microsoft-365/business). In choosing whether to purchase directly from Microsoft or via a Microsoft Partner, you should consider your on-staff capability and desire to maintain an IT infrastructure. A Microsoft Partner can help you deploy and manage your IT infrastructure, including Microsoft solutions.
 
-      - question: How much does Microsoft 365 Business Premium cost?
-        answer: Microsoft 365 Business Premium is generally offered at $22 (USD) per user/month based on an _annual contract_ if purchased directly from Microsoft. When purchased through a Microsoft Partner, pricing can vary based on the services the partner provides and their pricing model for Microsoft 365 Business Premium.
-
       - question: Is there a cap to how many Microsoft 365 Business Premium seats a customer can have?
         answer: |
           Microsoft 365 Business Premium was designed for small to medium-sized businesses with low to medium IT complexity requirements. Customers can purchase up to 300 Microsoft 365 Business Premium licenses for their organization. Customers can mix and match cloud subscriptions. As a result, depending on their IT requirements, customers might add another subscription, such as Microsoft Defender for Endpoint, Microsoft Defender for Business, or another Microsoft 365 Enterprise subscription to the same account.
@@ -44,6 +41,18 @@ sections:
       - question: Can I combine Microsoft 365 Business Premium with other Microsoft subscription offerings?
         answer: |
           Yes, customers can combine their Microsoft 365 Business Premium subscriptions with plans and add-ons from Azure, Dynamics 365, Enterprise Mobility + Security, and Office 365.
+
+      - question: How do I add Microsoft 365 E5 Security to Microsoft 365 Business Premium?
+        answer: |
+          Work with your [Microsoft partner](/microsoft-365/admin/manage/find-your-partner-or-reseller) or visit [Microsoft Security for Business](https://aka.ms/SMBSecurity).
+
+      - question: Does Microsoft 365 Business Premium with Microsoft 365 E5 Security allow mixed licensing for endpoint security solutions?
+        answer: |
+          Microsoft Defender for Business does not support mixed licensing, so a tenant with Defender for Business (which is included in Microsoft 365 Business Premium) along with Defender for Endpoint Plan 2 (which is included in Microsoft 365 E5 Security) defaults to the Defender for Business experience. 
+          
+          For example, if you have 80 users licensed for Microsoft 365 Business Premium, and you've added Microsoft 365 E5 Security for 30 of those users, the experience for all users defaults to Defender for Business. If you want to change that to the Defender for Endpoint Plan 2 experience, you should license all users for Defender for Endpoint Plan 2 (either through the standalone version of Defender for Endpoint Plan 2 or Microsoft 365 E5 Security), and then contact Microsoft Support to request the switch for your tenant. 
+
+          Also see [Change your endpoint security subscription](/defender-business/mdb-manage-subscription). 
 
       - question: Is everyone in my business required to have a Microsoft 365 Business Premium subscription?
         answer: |
@@ -93,8 +102,7 @@ sections:
 
           To learn more, see the following resources:
 
-          - [Reimagine productivity with Microsoft 365 and Microsoft Teams](https://www.microsoft.com/microsoft-365/business/compare-all-microsoft-365-business-products-b?ef_id=67386da73ec61354e1550985269d2a17:G:s&OCID=AIDcmmwf9kwzdj_SEM_67386da73ec61354e1550985269d2a17:G:s&lnkd=Bing_O365SMB_Brand&msclkid=67386da73ec61354e1550985269d2a17)
-          - [Compare security features in Microsoft 365 plans for small and medium-sized businesses](/microsoft-365/security/defender-business/mdb-overview)
+          - [Microsoft 365 User Subscription Suites for Small and Medium-sized Businesses](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/final/en-us/microsoft-brand/documents/modern-work-plan-comparison-smb5.pdf)
           - [Microsoft 365 for enterprise overview](/microsoft-365/enterprise/microsoft-365-overview)
 
       - question: Can I switch my Microsoft 365 plan to Microsoft 365 Business Premium?

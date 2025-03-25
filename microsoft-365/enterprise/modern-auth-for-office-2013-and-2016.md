@@ -5,7 +5,7 @@ author: MSFTTracyP
 manager: dansimp
 ms.date: 04/29/2024
 audience: Admin
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: medium

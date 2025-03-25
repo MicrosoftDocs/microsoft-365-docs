@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: mandia
 author: MandiOhlinger
 manager: laurawi
-ms.date: 01/15/2025
+ms.date: 03/18/2025
 ms.reviewer: cabailey, ruihu
 audience: Admin
 ms.topic: get-started
@@ -149,7 +149,13 @@ To learn more, see:
 
 - [Create and configure sensitivity labels and their policies](/purview/create-sensitivity-labels)
 
-#### 2. Publish your labels and educate your users
+#### 2. Enable and configure sensitivity labels for containers
+
+You can apply sensitivity labels to containers, like Microsoft Teams or SharePoint sites, and Microsoft Loop workspaces. Items in a container don't inherit the sensitivity label.
+
+[!INCLUDE [copilot-e5-e3-enable-sensitivity-labels-containers](./includes/copilot-e5-e3-enable-sensitivity-labels-containers.md)]
+
+#### 3. Publish your labels and educate your users
 
 1. Add your labels to a publishing policy. When they're published, users can manually apply the labels in their Office apps. The publishing policies also have settings that you need to consider, like a default label and requiring users to label their data.
 
@@ -163,29 +169,9 @@ To learn more, see:
 
 3. Monitor your labels. Select **Information protection** > **Reports**. You can see the usage of your labels.
 
-#### 3. Enable sensitivity labels for files in SharePoint and OneDrive
+#### 4. Enable sensitivity labels for files in SharePoint and OneDrive
 
 [!INCLUDE [copilot-e5-e3-enable-sensitivity-labels-sharepoint-onedrive](./includes/copilot-e5-e3-enable-sensitivity-labels-sharepoint-onedrive.md)]
-
-#### 4. Apply a sensitivity label to your SharePoint document libraries
-
-You can use a sensitivity label on your SharePoint document libraries, and make this label the default label that applies to all document libraries. This configuration is appropriate when your document libraries store files with the same level of sensitivity.
-
-The SharePoint site admin can do this task.
-
-1. In your SharePoint site, select **Documents** > **Settings** icon > **Library settings** > **More library settings**.
-2. In **Default sensitivity labels** (Apply label to items in this list or library), select your custom sensitivity label from the drop-down list.
-3. **Save** your changes.
-
-When set:
-
-- SharePoint automatically applies the label to the files, which can include [files with a lower sensitivity label](/purview/sensitivity-labels-sharepoint-default-label#will-an-existing-label-be-overridden).
-- It provides a baseline level of protection that's specific to the document library. It doesn't require content inspection and doesn't rely on end users.
-
-To learn more, see:
-
-- [Overview - Default sensitivity labels for SharePoint document libraries](/purview/sensitivity-labels-sharepoint-default-label)
-- [Steps - Add a sensitivity label to SharePoint document library](https://support.microsoft.com/office/add-a-sensitivity-label-to-sharepoint-document-library-54b1602b-db0a-4bcb-b9ac-5e20cbc28089)
 
 ### Detect sensitive information and protect it from unauthorized sharing or leakage
 

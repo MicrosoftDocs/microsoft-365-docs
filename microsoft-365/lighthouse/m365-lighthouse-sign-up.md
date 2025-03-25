@@ -78,7 +78,7 @@ Microsoft 365 Lighthouse is deployed in the partner tenant only&mdash;not in the
 
 Lighthouse comes with both required and optional capabilities to help you configure Lighthouse portal security. For more information, see [Configure Microsoft 365 Lighthouse portal security](m365-lighthouse-configure-portal-security.md).
 
-To access the Sales Advisor feature in Lighthouse, you must set up additional roles in Partner Center. For more information, see [Get access to Sales Advisor](m365-lighthouse-get-access-to-sales-advisor.md).  
+To learn more about using Sales Advisor to view customer opportunities, see [Overview of Sales Advisor in Microsoft 365 Lighthouse](m365-lighthouse-sales-advisor-overview.md).  
 
 ## Related content
 

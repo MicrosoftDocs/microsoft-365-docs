@@ -3,9 +3,9 @@ title: "Use the Centralized Deployment PowerShell cmdlets to manage add-ins"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 04/04/2024
+ms.date: 02/13/2025
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: medium
@@ -42,13 +42,13 @@ Before you can use the Centralized Deployment cmdlets, you need to sign in.
 
 1. Start PowerShell.
 
-2. Connect to PowerShell by using your **User Admin** credentials. Run the following cmdlet.
+2. Connect to PowerShell by using your **Global Admin** credentials. Run the following cmdlet.
 
   ```powershell
   Connect-OrganizationAddInService
   ```
 
-3. In the sign in prompt that opens, select or enter your Microsoft 365 **User Admin** credentials.
+3. In the sign in prompt that opens, select or enter your Microsoft 365 **Global Admin** credentials.
 
 > [!NOTE]
 > For more information about using PowerShell, see [Connect to Microsoft 365 with PowerShell](./connect-to-microsoft-365-powershell.md).

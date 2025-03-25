@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: armanv, nicholak
+ms.reviewer: emmasheridan, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -17,7 +17,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- commerce_billing
+- commerce_subscriptions
 - TopSMBIssues
 - okr_SMB
 - AdminSurgePortfolio

@@ -6,7 +6,7 @@ manager: jtremper
 ms.date: 10/13/2023
 recommendations: true
 audience: ITPro
-ms.topic: article
+ms.topic: faq
 ms.service: microsoft-365-migration
 ms.localizationpriority: high
 ms.collection: 

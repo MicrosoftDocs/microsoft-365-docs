@@ -7,7 +7,7 @@ author: twernermsft
 manager: scotv
 ms.date: 08/10/2020
 audience: Admin
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 

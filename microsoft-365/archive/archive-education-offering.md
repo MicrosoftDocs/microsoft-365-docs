@@ -6,7 +6,7 @@ manager: jtremper
 audience: admin
 ms.reviewer: sharonyam
 ms.date: 11/01/2024
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-365-archive
 ms.custom: archive
 search.appverid:
@@ -18,9 +18,6 @@ description: Learn about Microsoft 365 Archive for Education, including tenant e
 
 # Education offering for Microsoft 365 Archive
 
-> [!NOTE]
-> The education pricing for Microsoft 365 Archive is still rolling out and will be fully available to all education tenants by January 31, 2025.
-
 This article provides an overview of Microsoft 365 Archive for Education, including tenant eligibility, pricing model, and billing scenarios. 
 
 ## Pooled storage eligibility 
@@ -28,11 +25,11 @@ This article provides an overview of Microsoft 365 Archive for Education, includ
 Education customers that are subject to the pooled storage limit are eligible for the Microsoft 365 Archive for Education offering. If your tenant has assigned most (greater than 50%) EDU licenses compared to non-EDU licenses, or if your tenant has purchased more EDU licenses than non-EDU licenses, then the tenant is managed as an EDU tenant and is subject to Education Pooled Storage. For more information on pooled storage, see [Education Pooled Storage limits](/office365/servicedescriptions/office-365-platform-service-description/office-365-education#education-pooled-storage-limits).
 
 > [!NOTE]
-> If there are changes to the license assignment or purchases that change the pooled storage eligibility, this can take 24-48 hours to reflect. 
+> Any changes to the license assignment or purchases that change the pooled storage eligibility can take 24-48 hours to reflect. 
 
 ## Pooled storage status
 
-When you [turn on Microsoft 365 Archive](archive-setup.md#set-up-microsoft-365-archive-1) for your tenant, if your tenant meets the pooled storage eligibility, you'll see a status saying 'This tenant is an education tenant.' under the 'learn more about Microsoft 365 Archive' link. If at any time your tenant status changes (that is, moves to less than 50% education licenses) and is no longer subject to pooled storage, the status message will no longer appear. It's important to note that you'll be eligible for education pricing for Microsoft 365 Archive, only when you meet the eligibility for education tenant status. 
+When you [turn on Microsoft 365 Archive](archive-setup.md#set-up-microsoft-365-archive-1) for your tenant, and if your tenant meets the pooled storage eligibility, you'll see a status saying **This tenant is an education tenant** under the 'learn more about Microsoft 365 Archive' link. If at any time your tenant status changes (that is, moves to less than 50% education licenses) and is no longer subject to pooled storage, the status message will no longer appear. It's important to note that you'll be eligible for education pricing for Microsoft 365 Archive only when you meet the eligibility for education tenant status. 
 
 :::image type="content" source="../media/archive/m365-archive-1.png" alt-text="Screenshot of Microsoft 365 archive." :::
 
@@ -50,15 +47,15 @@ If the storage report isn't available, then it’s possible that your tenant isn
 Microsoft 365 Archive charges you for storage and reactivation.
 
 - **Storage consumption** is charged at a per-GB monthly rate. For SharePoint sites, this meter is charged only when archived storage in SharePoint plus active pooled storage exceeds the included or licensed allocated pooled storage capacity limit of the tenant. In other words, there's no additional storage cost for archived sites if the tenant hasn't consumed its already licensed storage quota. For unlicensed OneDrive accounts, this meter is charged for every OneDrive account that is archived. For more information on unlicensed OneDrive accounts, see [Manage unlicensed OneDrive user accounts.](/sharepoint/unlicensed-onedrive-accounts)  
-- **Site reactivation** that is charged at a per-GB rate. The reactivation fee is charged regardless of whether a tenant is over or below its pooled storage capacity limit and only if reactivation is executed more than seven days after the site was most recently put into an archive state. This seven-day grace period provides you with the opportunity to reverse an accidental archival without reaction costs.
+- **Site reactivation** is charged at a per-GB rate. The reactivation fee is charged regardless of whether a tenant is over or below its pooled storage capacity limit and only if reactivation is executed more than seven days after the site was most recently put into an archive state. This seven-day grace period provides you with the opportunity to reverse an accidental archival without reaction costs.
 
-Monthly archive usage is calculated as the sum of the usage of all currently archived sites. Each site’s usage can be seen on the site itself or from the Active sites page in the SharePoint admin center. The size of an archived site, and therefore the storage for which it’s billed, changes only if the content in the site changes. For example, content naturally expiring in the recycle bin or a retention policy deleting content within the site directly from archive to the recycle bin.   
+Monthly archive usage is calculated as the sum of the usage of all currently archived sites. Each site’s usage can be seen on the site itself or from the Active sites page in the SharePoint admin center. The size of an archived site, and therefore the storage for which it’s billed, changes only if the content in the site changes. For example, content naturally expiring in the recycle bin or a retention policy deleting content within the site directly from archive to the recycle bin.
 
-To see the pricing for Microsoft 365 Archive, see [Pay-as-you-go services and pricing for Microsoft Syntex.](../syntex/syntex-pay-as-you-go-services.md)
+For more information on the pricing for Microsoft 365 Archive, see [Pay-as-you-go services and pricing for Microsoft Syntex.](../syntex/syntex-pay-as-you-go-services.md).
 
 ## Billing scenarios
 
-Your charges for Microsoft 365 Archive depend on your tenant’s pooled storage quota. The following scenarios can help you compare charges based on excess storage.
+Your charges for Microsoft 365 Archive depend on your tenant’s pooled storage quota. The following scenarios can help you compare charges based on excess storage:
 
 
 |Scenario  |Description  |Additional costs  |

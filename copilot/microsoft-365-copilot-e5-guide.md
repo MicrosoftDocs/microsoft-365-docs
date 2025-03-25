@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: mandia
 author: MandiOhlinger
 manager: laurawi
-ms.date: 01/15/2025
+ms.date: 03/06/2025
 ms.reviewer: cabailey, ruihu
 audience: Admin
 ms.topic: get-started
@@ -163,37 +163,13 @@ To learn more about sensitivity labels, see:
 
 #### 1. Create the default sensitivity labels
 
-1. Sign into the [Microsoft Purview portal](https://purview.microsoft.com/) as an admin in one of the groups listed at [Sensitivity labels - permissions](/purview/get-started-with-sensitivity-labels#permissions-required-to-create-and-manage-sensitivity-labels).
-
-2. Select **Solutions** > **DSPM for AI** > **Overview**.
-3. In the **Recommendations** section, select **Information Protection Policy for Sensitivity Labels**. This step creates the default labels and their policies.
-4. To see or edit the default labels, or to create your own labels, select **Information protection** > **Sensitivity labels**. You might have to select **Refresh**.
-
-When you have the default sensitivity labels:
-
-- The labels help protect your data and can affect Copilot results.
-- Your users can start manually applying published labels to their files and emails.
-- Admins can start creating policies and configuring features that automatically apply labels to files and emails.
+[!INCLUDE [copilot-e5-e3-create-default-sensitivity-labels](./includes/copilot-e5-e3-create-default-sensitivity-labels.md)]
 
 #### 2. Enable and configure sensitivity labels for containers
 
-The default sensitivity labels don't include settings for groups and sites, which let you apply a sensitivity label to a SharePoint or Teams site, or Microsoft Loop workspace. Items in the container don't inherit the sensitivity label. Instead, the label settings can restrict access to the container. This restriction provides an extra layer of security when you use Copilot. If a user can't access the site or workspace, Copilot can't access it on behalf of that user.
+The default sensitivity labels don't include settings for groups and sites, which let you apply a sensitivity label to a SharePoint or Teams site, or Microsoft Loop workspace. Items in a container don't inherit the sensitivity label.
 
-For example, you can set the privacy setting to **Private**, which restricts site access to only approved members in your organization. When the label is applied to the site, it replaces any previous setting and locks the site for as long as the label is applied. This feature is a more secure setting than letting anybody access the site and allowing users to change the setting. When only approved members can access the data, it helps prevent oversharing of data that Copilot might access.
-
-To configure any label settings for groups and sites, you must enable this capability for your tenant and then synchronize your labels. This configuration is a one-time configuration. To learn more, see [How to enable sensitivity labels for containers and synchronize labels](/purview/sensitivity-labels-teams-groups-sites#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels).
-
-You can then edit your sensitivity labels, or create new sensitivity labels specifically for groups and sites:
-
-1. For the sensitivity label scope, select **Groups & sites**. Remember, you must have already run the PowerShell commands. If you didn't, you can't select this scope.
-
-    To learn more, see [How to enable sensitivity labels for containers and synchronize labels](/purview/sensitivity-labels-teams-groups-sites#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels).
-
-2. Select the groupings of settings to configure. Some of the settings have backend dependencies before they can be enforced, like Conditional Access that must be already configured. The privacy setting, which is included in **Privacy and external user access settings**, doesn't have any backend dependencies.
-
-3. Configure the settings you want to use and save your changes.
-
-For more information, including details of all the available label settings that you can configure for groups and sites, see [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](/purview/sensitivity-labels-teams-groups-sites).
+[!INCLUDE [copilot-e5-e3-enable-sensitivity-labels-containers](./includes/copilot-e5-e3-enable-sensitivity-labels-containers.md)]
 
 #### 3. Publish your labels and educate your users
 

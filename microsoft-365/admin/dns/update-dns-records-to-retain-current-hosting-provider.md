@@ -2,12 +2,12 @@
 title: "Update DNS records to keep your website with your current hosting provider"
 f1.keywords:
 - NOCSH
-ms.author: nkagole
-author: nataliekagole
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
-ms.date: 07/10/2024
+ms.date: 08/10/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 

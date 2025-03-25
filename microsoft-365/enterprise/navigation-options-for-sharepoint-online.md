@@ -3,12 +3,13 @@ title: Navigation options for SharePoint
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 04/05/2024
+ms.date: 03/19/2025
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: medium
+ms.reviewer: a-mglazier
 ms.collection:
 - scotvorg 
 - Ent_O365
@@ -30,8 +31,8 @@ description: This article describes navigation options sites with SharePoint Pub
 
 This article describes navigation options sites with SharePoint Publishing enabled in SharePoint. The choice and configuration of navigation significantly impacts the performance and scalability of sites in SharePoint. The SharePoint Publishing site template should only be used if necessary for a centralized portal and the publishing feature should only be enabled on specific sites and only when required as it can impact performance when used incorrectly.
 
->[!NOTE]
->If you're using modern SharePoint navigation options like mega menu, cascading navigation, or hub navigation, this article does not apply to your site. Modern SharePoint site architectures leverage a more flattened site hierarchy and a hub-and-spoke model. This allows many scenarios to be achieved that do NOT require use of the SharePoint Publishing feature.
+> [!NOTE]
+> If you're using modern SharePoint navigation options like mega menu, cascading navigation, or hub navigation, this article does not apply to your site. Modern SharePoint site architectures leverage a more flattened site hierarchy and a hub-and-spoke model. This allows many scenarios to be achieved that do NOT require use of the SharePoint Publishing feature.
 
 ## Overview of navigation options
 
@@ -54,8 +55,8 @@ The following table summarizes the pros and cons of each option.
 
 The most appropriate option for your site depends on your site requirements and on your technical capability. If you want an easy-to-configure navigation provider that automatically updates when content is changed, then structural navigation [with caching enabled](https://support.office.com/article/structural-navigation-and-performance-f163053f-8eca-4b9c-b973-36b395093b43) is a good option.
 
->[!NOTE]
->Applying the same principle as modern SharePoint sites by simplifying the overall site structure to a flatter, non-hierarchical structure improves performance and simplifies moving to modern SharePoint sites. What this means is that instead of having a single site collection with hundreds of sites (subwebs), a better approach is to have many site collections with very few subsites (subwebs).
+> [!NOTE]
+> Applying the same principle as modern SharePoint sites by simplifying the overall site structure to a flatter, non-hierarchical structure improves performance and simplifies moving to modern SharePoint sites. What this means is that instead of having a single site collection with hundreds of sites (subsites), a better approach is to have many site collections with very few subsites.
 
 ## Analyzing navigation performance in SharePoint
 
@@ -101,7 +102,7 @@ There are several articles on Microsoft Learn about the details of managed navig
 
 In order to implement managed navigation, you set up terms with URLs corresponding to the navigation structure of the site. Managed navigation can even be manually curated to replace structural navigation in many cases. For example:
 
-![SharePoint site structure.](../media/SPONavOptionsListOfSites.png))
+![SharePoint site structure.](../media/SPONavOptionsListOfSites.png)
 
 ## Using Search-driven client-side scripting
 

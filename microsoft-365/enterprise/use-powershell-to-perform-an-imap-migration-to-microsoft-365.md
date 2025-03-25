@@ -3,9 +3,9 @@ title: "Use PowerShell to perform an IMAP migration to Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 04/12/2024
+ms.date: 03/12/2025
 audience: Admin
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: medium

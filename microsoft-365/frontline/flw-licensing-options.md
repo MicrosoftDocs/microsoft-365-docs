@@ -1,10 +1,10 @@
 ---
 title: Understand frontline worker user types and licensing
 author: lana-chin
-ms.author: v-chinlana
+ms.author: jtremper
 manager: jtremper
 ms.reviewer: arnavgupta
-ms.topic: conceptual
+ms.topic: concept-article
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150

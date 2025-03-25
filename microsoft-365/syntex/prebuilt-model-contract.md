@@ -1,12 +1,12 @@
 ---
-title: Use a prebuilt model to extract information from contracts in Microsoft Syntex
+title: Use a prebuilt model to extract information from contracts in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 06/11/2024
+ms.date: 02/11/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
 search.appverid: 
@@ -14,11 +14,11 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to use a prebuilt contracts model in Microsoft Syntex.
+description: Learn how to use a prebuilt document processing model for contracts in SharePoint.
 
 ---
 
-# Use a prebuilt model to extract information from contracts in Microsoft Syntex
+# Use a prebuilt model to extract information from contracts in SharePoint
 
 The *contracts prebuilt model* analyzes and extracts key information from contract documents. The model recognizes contracts in various formats and extracts key contract information, such as client name and address, contract duration, and renewal date.
 

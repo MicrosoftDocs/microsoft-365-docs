@@ -64,12 +64,18 @@ You can also check if a specific app has Copilot support by selecting it from ap
 
 ## Enable or disable Copilot extensibility
 
-Admins can enable or disable Copilot extensibility for their org by using a preview setting in the tenant default options in the Integrated Apps section of the Microsoft 365 admin center. This setting lets you control who can access agents in their organization. The setting will be available until February 12, 2025. Over the next 90 days, we’ll introduce additional agent reports and controls in each of the experiences, as well as more comprehensive guidance about how to manage this spectrum of agents across these controls.
+Admins can enable or disable Copilot extensibility for their org by using a setting on the Integrated apps page in the Microsoft 365 admin center. This setting lets admins control who can access agents in their organization.
 
-The preview setting has three options:
+To do this, follow these steps:
+
+1. Go to **Integrated apps** in the Microsoft 365 admin center.
+1. Select **Available apps**, and then the settings icon.
+1. Find **Allow the following users access to Copilot agents** and choose your preferred setting.
+
+The setting has three options:
 
 - **All Users** This is the default option and it means that all users in the organization can access agents, subject to the existing app policies and user assignments.
-- **No Users** This option means that no users in the organization can access agents, and the third party agents are disabled in the agents flyout. This option also hides agents from the list of Available and Deployed apps on the Integrated Apps page.
+- **No Users** This option means that no users in the organization can access agents, and the third party agents are disabled in the agents flyout. This option also hides agents from the list of Available and Deployed apps on the Integrated apps page.
 - **Specific Users** This option lets you select specific users or groups in your organization to have access to agents. So while all or specific users in your organization may have permissions to install and use apps from the Available apps and Deployed apps lists, only the users or groups you select in this setting can use agents.
 
 > [!NOTE]

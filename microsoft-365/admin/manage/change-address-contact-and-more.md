@@ -1,5 +1,5 @@
 ---
-title: "Change your organization's address and technical contact in the Microsoft 365 admin center"
+title: "Change your organization's address, contact preferences, and technical contact in the Microsoft 365 admin center"
 f1.keywords:
 - CSH
 author: cmcatee-MSFT
@@ -28,11 +28,11 @@ description: "Learn how to make changes to your organization's profile, includin
 ms.date: 10/06/2024
 ---
 
-# Change your organization's address and technical contact in the Microsoft 365 admin center
+# Change your organization's address, contact preferences, and technical contact in the Microsoft 365 admin center
   
 As an admin, you can use the Microsoft 365 admin center to make changes to your organization profile, like your organization name, address, phone number, and technical contact.
   
-To change the address associated with your bill or subscription, see [Change your billing addresses for Microsoft 365 for business](../../commerce/billing-and-payments/change-your-billing-addresses.md).
+To change the address associated with your bill or subscription, see [Change your billing addresses for Microsoft 365 for business](../../commerce/billing-and-payments/change-your-billing-addresses.md). 
 
 ## Before you begin
 
@@ -68,7 +68,7 @@ To change information on your organization's profile page, use the following ste
 > [!NOTE]
 > SharePoint Online and OneDrive have a 256-character limit on Windows PCs. If you exceed the character limit, you receive an error message when you try to do anything within the synchronized document libraries, like creating folders or renaming documents.
 
-## What do the organization information fields mean?
+### What do the organization information fields mean?
 
 The following table explains the fields shown in the **Organization information** pane.
 
@@ -80,6 +80,24 @@ The following table explains the fields shown in the **Organization information*
 |Phone   | The primary telephone number for your organization. It's usually the number of your organization headquarters.  |
 |Technical contact | The email address for the primary technical person who administers your subscription. This person receives communications about Microsoft service status. |
 |Preferred language | Determines the language for all communications that are sent from Microsoft to your organization. When you sign up, this setting determines the language used by SharePoint Online, that your users see on your team site. If you change the language preference setting after you sign up, all future communications are sent in the most recent language selected.<br/><br/>**IMPORTANT:** The language used by SharePoint Online can't be changed.           |
+
+## Change your contact preferences for communications from Microsoft
+
+Use the **Contact preferences** section of the Settings & privacy page to choose the Microsoft 365 product-related communications that you want to receive.
+  
+Read [Update your admin phone number and email address in Microsoft 365](update-phone-number-and-email-address.md) for info on how to change your admin cell phone number and email address.
+  
+### To update your information
+  
+1. In the admin center, select the **Settings** icon in the top right of the header.
+
+2. Select **Update contact preferences**.
+
+3. Under **Contact preferences**, choose the types of product-related communications you want to receive.
+
+4. Choose **Save** when you're done.
+  
+For Office 365 Enterprise, Microsoft 365 Business Standard, and Microsoft 365 Business Basic, when you first signed up as an admin for Microsoft 365, depending on the country or region of the users in your organization, your users might be automatically signed up to receive product-related communications.
 
 ## Change organization settings for Cloud PCs
 

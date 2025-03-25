@@ -5,7 +5,7 @@ author: cmcatee-MSFT
 manager: scotv
 ms.date: 06/18/2022
 audience: ITPro
-ms.topic: conceptual
+ms.topic: article
 f1.keywords:
 - 'microsoft-365-and-office-365-general-information'
 ms.service: microsoft-365-business

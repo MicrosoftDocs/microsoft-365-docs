@@ -1,22 +1,22 @@
 ---
-title: Duplicate a model in Microsoft Syntex
+title: Duplicate a document processing model in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: ssquires
-ms.date: 06/20/2024
-ms.topic: conceptual
+ms.date: 02/20/2025
+ms.topic: how-to
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how and why to duplicate a model in Microsoft Syntex.
+description: Learn how and why to duplicate a document processing model in SharePoint.
 ---
 
-# Duplicate a model in Microsoft Syntex
+# Duplicate a document processing model in SharePoint
 
 <sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
 

@@ -106,7 +106,7 @@ Make sure that you meet the following requirements before you begin your setup p
 
 Users who have been added to your Microsoft 365 for Campaigns (or Microsoft 365 Business Premium) subscription can sign in using the following steps:
 
-1. Go to <https://office.com>.
+1. Go to <https://m365.cloud.microsoft/>.
 
 2. Sign in using the username and password for the account. Users will have this information in the email they receive when they are added as users. If they can't find the email, see [user didn't receive invite email](../admin/simplified-signup/admin-invite-business-standard.md#i-shared-an-email-invite-but-the-user-didnt-receive-the-email).
 

@@ -1,26 +1,26 @@
 ---
-title: Discover other trained models in Microsoft Syntex
+title: Discover other trained document processing models in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
 ms.date: 01/10/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to find trained models that have been applied to other content centers in Microsoft Syntex.
+description: Learn how to find trained models that have been applied to other content centers in SharePoint.
 ---
 
-# Discover other trained models in Microsoft Syntex
+# Discover other trained document processing models in SharePoint
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
-Before you create a new model, you might consider whether to reuse an existing one. You can find and evaluate trained models that were created by others in your organization. This might include shared enterprise models trained in a content center or other local models created in the same site. Select the model that is most useful for classifying your files or extracting specific information from them. 
+Before you create a new model, you might consider whether to reuse an existing one. You can find and evaluate trained models that were created by others in your organization. This might include shared enterprise models trained in a content center or other local models created in the same site. Select the model that is most useful for classifying your files or extracting specific information from them.
 
 ## Discover other trained models
 

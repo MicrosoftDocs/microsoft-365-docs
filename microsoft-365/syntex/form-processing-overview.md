@@ -1,12 +1,12 @@
 ---
-title: Overview of structured and freeform document processing in Microsoft Syntex
+title: Overview of structured and freeform document processing in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
 ms.date: 01/22/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: intro-overview
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
@@ -15,13 +15,13 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to use AI Builder to create structured or freeform document processing models in Microsoft Syntex.
+description: Learn how to use AI Builder to create structured or freeform document processing models in SharePoint.
 ---
 
-# Overview of structured and freeform document processing in Microsoft Syntex
+# Overview of structured and freeform document processing in SharePoint
 
 > [!NOTE]
-> Through June 2025, you can try out a [limited amount](promo-syntex.md#monthly-included-capacity) of structured and freeform document processing and other selected Syntex services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out Microsoft Syntex and explore its services](promo-syntex.md).
+> Through June 2025, you can try out a [limited amount](promo-syntex.md#monthly-included-capacity) of structured and freeform document processing and other selected content services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out pay-as-you-go services](promo-syntex.md).
 
 <!---</br>
 

@@ -9,7 +9,7 @@ author: chrisda
 manager: deniseb
 audience: Admin
 ms.topic: overview
-ms.date: 07/09/2024
+ms.date: 03/05/2025
 ms.service: microsoft-365-business-security
 ms.localizationpriority: medium
 ms.collection:
@@ -27,6 +27,12 @@ f1.keywords: NOCSH
 - [Microsoft Defender for Business](/defender-business/mdb-overview)
 
 This article lists new features in the latest release of [Microsoft 365 Business Premium](m365bp-overview.md) and [Microsoft Defender for Business](/defender-business/mdb-overview). Features that are currently in preview are denoted with **(preview)**.
+
+## March 2025
+
+- You can now add Microsoft 365 E5 Security to your Microsoft 365 Business Premium subscription. Microsoft 365 E5 Security up levels your security capabilities with additional protection for your organization's identities, devices, email, files, and apps. For more information, see the following resources:
+  - [Tech Community Blog: Microsoft 365 E5 Security is now available as an add-on to Microsoft 365 Business Premium](https://aka.ms/BusinessPremiumPlusE5SecurityBlog)
+  - [Add Microsoft 365 E5 Security to your Microsoft 365 Business Premium subscription](m365bp-add-m365e5s.md)
 
 ## July 2024
 

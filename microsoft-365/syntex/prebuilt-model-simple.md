@@ -1,12 +1,12 @@
 ---
-title: Use a prebuilt model to extract information from simple documents in Microsoft Syntex
+title: Use a prebuilt model to extract information from simple documents in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 11/19/2024
+ms.date: 03/03/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
 search.appverid: 
@@ -14,11 +14,11 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to use a simple document processing model in Microsoft Syntex.
+description: Learn how to use a prebuilt document processing model for simple documents in SharePoint.
 
 ---
 
-# Use a prebuilt model to extract information from simple documents in Microsoft Syntex
+# Use a prebuilt model to extract information from simple documents in SharePoint
 
 The *simple document processing model* offers a flexible, pretrained solution for extracting information from [basic structured documents](#types-of-documents), including information such as:
 

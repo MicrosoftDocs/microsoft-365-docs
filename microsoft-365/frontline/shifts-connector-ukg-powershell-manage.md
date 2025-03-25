@@ -1,7 +1,7 @@
 ---
 title: Use PowerShell to manage your Shifts connection to UKG Pro Workforce Management
 author: lana-chin
-ms.author: v-chinlana
+ms.author: jtremper
 manager: jtremper
 ms.reviewer: harrywong
 ms.topic: how-to

@@ -27,10 +27,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 Sales Advisor is a customer lifecycle management (CLM) experience that provides AI-driven customer insights, actionable recommendations, and prescriptive guidance across the customer lifecycle. Sales Advisor is based on a set of business rules, customer usage, and licensing positions. It enables a technique called "propensity modeling" to present dynamic opportunities for partners to better acquire, retain, and grow their customers.
 
-To view Sales Advisor, select **Sales Advisor** > **Opportunities** in the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com).
-
-> [!IMPORTANT]
-> To use Sales Advisor, users must have the appropriate roles listed in [Get access to Sales Advisor in Microsoft 365 Lighthouse](m365-lighthouse-get-access-to-sales-advisor.md).
+To view Sales Advisor, select **Sales Advisor** > **Opportunities** in the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>.
 
 ## Watch: What is Sales Advisor?
 
@@ -94,10 +91,10 @@ Sales Advisor currently supports the following languages:
 
 ## Getting access to Sales Advisor
 
-To use Sales Advisor, you must hold either the Executive report viewer or report viewer role in Partner Center. For more information, see Get access to Sales Advisor.
+To use Sales Advisor to view customer opportunities, you must hold the Account Manager role in Lighthouse. If you don't hold the Account Manager role, reach out to someone who holds the Administrator role in Lighthouse and ask them to assign the role to you. For more information, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md).
 
 ## Related content
 
-[Get access to Sales Advisor](m365-lighthouse-get-access-to-sales-advisor.md) (article)\
 [Understand opportunities and data in Sales Advisor](m365-lighthouse-understanding-opportunities-and-data.md) (article)\
+[Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md) (article)\
 [Microsoft 365 Lighthouse – Transform](https://cloudpartners.transform.microsoft.com/partner-gtm/smb/m365-lighthouse) (Blog)

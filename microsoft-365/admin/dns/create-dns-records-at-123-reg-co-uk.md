@@ -2,12 +2,12 @@
 title: "Connect your DNS records at 123-reg.co.uk to Microsoft 365"
 f1.keywords:
 - CSH
-ms.author: nkagole
-author: nataliekagole
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
-ms.date: 02/18/2020
+ms.date: 11/18/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
@@ -44,7 +44,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 > [!NOTE]
 > This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like.
 
-1. To get started, go to your domains page at 123-reg.co.uk by using [this link](https://www.123-reg.co.uk/secure/cpanel/domain/overview) and follow the prompt to log in.
+1. To get started, go to your domains page at 123-reg.co.uk and follow the prompt to log in.
 
 2. Select **Domains**, and on the Domain name overview page, select the name of the domain that you want to verify or go to Control panel.
 
@@ -91,7 +91,7 @@ To verify the record in Microsoft 365:
 
 ## Add an MX record so email for your domain will come to Microsoft
 
-1. To get started, go to your domains page at 123-reg.co.uk by using [this link](https://www.123-reg.co.uk/secure/cpanel/domain/overview). You'll be prompted to log in first.
+1. To get started, go to your domains page at 123-reg.co.uk. You'll be prompted to log in first.
 
 2. On the Domain name overview page, select the name of the domain that you want to edit.
 
@@ -123,7 +123,7 @@ To verify the record in Microsoft 365:
 
 ## Add the CNAME record required for Microsoft
 
-1. To get started, go to your domains page at 123-reg.co.uk by using [this link](https://www.123-reg.co.uk/secure/cpanel/domain/overview). You'll be prompted to log in first.
+1. To get started, go to your domains page at 123-reg.co.uk. You'll be prompted to log in first.
 
 2. On the Domain name overview page, select the name of the domain that you want to edit.
 
@@ -156,7 +156,7 @@ To verify the record in Microsoft 365:
 > [!IMPORTANT]
 > You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Microsfot. Instead, add the required Microsoft values to the current record so that you have a *single* SPF record that includes both sets of values. Need examples? Check out these [External Domain Name System records for Microsoft](../../enterprise/external-domain-name-system-records.md). To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.yml).
 
-1. To get started, go to your domains page at 123-reg.co.uk by using [this link](https://www.123-reg.co.uk/secure/cpanel/domain/overview). You'll be prompted to log in first.
+1. To get started, go to your domains page at 123-reg.co.uk. You'll be prompted to log in first.
 
 2. On the Domain name overview page, select the name of the domain that you want to edit.
 
@@ -186,7 +186,7 @@ Only select this option if your organization uses Skype for Business for online 
 
 ### Add the two required SRV records
 
-1. To get started, go to your domains page at 123-reg.co.uk by using [this link](https://www.123-reg.co.uk/secure/cpanel/domain/overview). You'll be prompted to log in first.
+1. To get started, go to your domains page at 123-reg.co.uk. You'll be prompted to log in first.
 
 2. On the Domain name overview page, select the name of the domain that you want to edit.
 
@@ -222,7 +222,7 @@ Only select this option if your organization uses Skype for Business for online 
 
 ### Add the two required CNAME records for Skype for Business
 
-1. To get started, go to your domains page at 123-reg.co.uk by using [this link](https://www.123-reg.co.uk/secure/cpanel/domain/overview). You'll be prompted to log in first.
+1. To get started, go to your domains page at 123-reg.co.uk. You'll be prompted to log in first.
 
 1. On the Domain name overview page, select the name of the domain that you want to edit.
 
@@ -262,7 +262,7 @@ This service helps you secure and remotely manage mobile devices that connect to
 
 ### Add the two required CNAME records for Mobile Device Management
 
-1. To get started, go to your domains page at 123-reg.co.uk by using [this link](https://www.123-reg.co.uk/secure/cpanel/domain/overview). You'll be prompted to log in first.
+1. To get started, go to your domains page at 123-reg.co.uk. You'll be prompted to log in first.
 
 1. On the Domain name overview page, select the name of the domain that you want to edit.
 

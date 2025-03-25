@@ -5,7 +5,7 @@ ms.author: danismith
 manager: jtremper
 ms.date: 06/19/2024
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-solutions
 ms.collection:
 - highpri

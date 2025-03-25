@@ -4,9 +4,9 @@ ms.author: chucked
 author: chuckedmonson
 ms.reviewer: ssquires, kkameth
 manager: jtremper
-ms.date: 07/07/2024
+ms.date: 01/07/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ms.service: microsoft-syntex
 ms.collection: 
 - enabler-strategic
@@ -17,7 +17,7 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 ms.localizationpriority: medium
-description: Learn how to set up Microsoft Syntex content AI features in the Microsoft 365 admin center.
+description: Learn how to set up pay-as-you-go content services in the Microsoft 365 admin center.
 ---
 
 # Set up pay-as-you-go services for SharePoint
@@ -73,8 +73,8 @@ The following tables provides links to the specific setup instructions for each 
 
 |Service |Instructions to set up service |
 |:-------|:----------------------|
-|Microsoft 365 Archive            | [Set up Microsoft 365 Archive](archive/archive-setup.md)  |
-|Microsoft 365 Backup (Preview)   | [Set up Microsoft 365 Backup](backup/backup-setup.md)  |
+|Microsoft 365 Archive     | [Set up Microsoft 365 Archive](archive/archive-setup.md)  |
+|Microsoft 365 Backup      | [Set up Microsoft 365 Backup](backup/backup-setup.md)  |
 
 #### Apps
 

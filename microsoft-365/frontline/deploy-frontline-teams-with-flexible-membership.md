@@ -1,10 +1,10 @@
 ---
 title: Deploy frontline teams with flexible membership
 author: lana-chin
-ms.author: v-chinlana
+ms.author: jtremper
 manager: jtremper
 ms.reviewer: arnavgupta
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150

@@ -9,7 +9,7 @@ ms.subservice: advanced-data-residency
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 02/29/2024
+ms.date: 02/24/2025
 ms.reviewer: deanw
 ms.custom:
 - it-pro
@@ -22,7 +22,10 @@ ms.collection:
 # Advanced Data Residency Commitments
 
 > [!NOTE]
-> If you have purchased a Multi-Geo subscription, then Microsoft will store certain customer data at rest in more than one Geography based on your configuration even if you have purchased the Microsoft 365 Advanced Data Residency add-on ("ADR").  
+> If you have purchased a Multi-Geo subscription, then Microsoft will store certain customer data at rest in more than one Geography based on your configuration even if you have purchased the Microsoft 365 Advanced Data Residency add-on ("ADR").
+
+> [!NOTE]
+> Viva Topics has been retired as of February 22, 2025. Therefore, Viva Topics is no longer a supported workload in ADR. For more details, please visit [aka.ms/TopicsFebSupport](https://aka.ms/TopicsFebSupport).
 
 Microsoft makes commitments to store certain customer data at rest in the applicable _Local Region Geography_ for [eligible customers](advanced-data-residency.md#eligibility) that purchase ADR. The commitments are specified as follows.  
 
@@ -68,18 +71,6 @@ The following customer data is stored at rest in the _Local Region Geography_:
 The following customer data is stored in the _Local Region Geography_:
 
 - Viva Connections Dashboard and Feed can have content sourced from SharePoint, Exchange Online and Microsoft Teams. All customer data sourced from these services covered by data residency commitments will be stored in the _Local Region Geography_. Refer to [Exchange Online](m365-dr-workload-exo.md), [SharePoint](m365-dr-workload-spo.md), and [Microsoft Teams](m365-dr-workload-teams.md) workload data residency pages for more details.
-
-## Viva Topics*
-
-> [!NOTE]
-> *Viva Topics will be retired on February 22, 2025. Therefore, as of October 31, 2024, Viva Topics will no longer be a supported workload in ADR. Starting with the upcoming local region launches in Taiwan and New Zealand, Viva Topics customer data will not be migrated to new local regions, nor will new customers have Viva Topics stored in existing local regions. For more details, please visit [aka.ms/TopicsFebSupport](https://aka.ms/TopicsFebSupport).
-
-The following customer data is stored at rest in the _Local Region Geography_:
-
-- All the topics and customer data snippets discovered are stored within the relevant _Geographies_ in Exchange Online Substrate (site or arbitration mailboxes, and Substrate). All topic customer data is partitioned based on which _Local Region Geography_ the data came from within your tenant.
-- Machine Learning ("ML") models are trained on public web data, and as such don't contain any customer data from your tenant. In the future, it's possible we'll use customer data to improve accuracy of the ML models, in which case the data handling of ML models will follow the same policies as any other customer content (including data residency, retention, access control, sensitivity).
-- Topic highlighting is computed dynamically when the SharePoint page is rendered by running a language model against the content of the page and linking it with the knowledge base of Topics. The Topics data is sourced from the Substrate in the _Local Region Geography_.
-- The administration configuration data is stored within the _Local Region Geography_.
 
 ## Microsoft Purview
 

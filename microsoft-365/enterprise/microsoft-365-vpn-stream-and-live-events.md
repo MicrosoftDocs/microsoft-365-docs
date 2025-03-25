@@ -6,7 +6,7 @@ manager: scotv
 ms.reviewer: bryanyce
 ms.date: 10/31/2024
 audience: Admin
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.subservice: network
 ms.localizationpriority: medium

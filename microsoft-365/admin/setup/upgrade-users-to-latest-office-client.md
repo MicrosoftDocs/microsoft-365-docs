@@ -25,7 +25,7 @@ ms.custom:
 - fwlink 824861; CampaignID O365_Comm_SR_UpgradeOffice
 - AdminSurgePortfolio
 description: Learn about how to upgrade Microsoft Office to the latest apps for users in your organization.
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ---
 
 # Upgrade your Microsoft 365 for business users to the latest apps

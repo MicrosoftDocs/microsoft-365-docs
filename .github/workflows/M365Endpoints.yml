@@ -8,7 +8,7 @@ permissions:
 
 on:
   schedule:
-  - cron: "0 */6 * * *"
+    - cron: "0 */6 * * *"
 
   workflow_dispatch:
 
@@ -59,17 +59,19 @@ jobs:
         - name: Process endpoint data
           shell: pwsh
           env: 
-            AccessToken: ${{ secrets.MARVEL_REPO_ACCESS_TOKEN }}
             TargetOrganization: "MicrosoftDocs"
             TargetRepository: "microsoft-365-docs-pr"
             TargetPath: "microsoft-365/includes"
             EndpointsContentOwner: "kelleyvice-msft"
+            PrivateKey: ${{ secrets.M365_APP_PRIVATE_KEY }}
+            ClientId: ${{ secrets.M365_APP_CLIENT_ID }}
           run: |
 
             # GetServiceInstanceEndpoints
             # Original script created 4-December-2018 by Peter Worley v-peworl@microsoft.com
             # Script updated for Azure Torus 2-September-2020 by David Strome dstrome@microsoft.com
             # Script updated for GitHub workflows 10-September-2024 by David Strome dstrome@microsoft.com
+            # Script updated to use M365 Skilling Repo Management app for auth 6-March-2025 by David Strome dstrome@microsoft.com
 
             <#
             This script retreives Office 365 endpoint sets for each service instance
@@ -81,6 +83,122 @@ jobs:
 
             # Set default encoding for file output to ASCII
             $PSDefaultParameterValues['*:Encoding'] = 'ASCII'
+            
+            Function ConvertTo-JwtBase64 {
+                param(
+                    [Parameter(Mandatory = $True)]
+                    [string]$RawJson
+                )
+                
+                # Convert UTF-8 bytes to Base64, then make it URL-safe for JWT
+                $Encoded = [Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes($RawJson))
+                Return $Encoded.TrimEnd('=') -replace '\+','-' -replace '/','_'
+            }
+
+            Function New-GitHubAppJWT {
+                param(
+                    [Parameter(Mandatory = $True)]
+                    [string]$ClientId,
+                    
+                    [Parameter(Mandatory = $True)]
+                    [string]$PrivateKey,
+
+                    [int]$ExpiresInMinutes = 10
+                )
+
+                Write-Host "Create JWT"
+
+                # Build the header
+                $Header = @{
+                    alg = "RS256"
+                    typ = "JWT"
+                } | ConvertTo-Json -Compress
+
+                $HeaderEncoded = ConvertTo-JwtBase64 -RawJson $Header
+
+                # Build the payload
+                $Now = [System.DateTimeOffset]::UtcNow
+                $Payload = @{
+                    iat = $now.AddSeconds(-10).ToUnixTimeSeconds()
+                    exp = $now.AddMinutes($ExpiresInMinutes).ToUnixTimeSeconds()
+                    iss = $ClientId
+                } | ConvertTo-Json -Compress
+
+                $PayloadEncoded = ConvertTo-JwtBase64 -RawJson $Payload
+
+                # Combine and sign
+                $Rsa = [System.Security.Cryptography.RSA]::Create()
+                $Rsa.ImportFromPem($PrivateKey)
+
+                $Combined = "$HeaderEncoded.$PayloadEncoded"
+                $SignatureBytes = $Rsa.SignData(
+                    [System.Text.Encoding]::UTF8.GetBytes($Combined),
+                    [System.Security.Cryptography.HashAlgorithmName]::SHA256,
+                    [System.Security.Cryptography.RSASignaturePadding]::Pkcs1
+                )
+
+                $SignatureEncoded = [Convert]::ToBase64String($SignatureBytes).TrimEnd('=') -replace '\+','-' -replace '/','_'
+                
+                Return "$HeaderEncoded.$PayloadEncoded.$SignatureEncoded"
+            }
+
+            Function Get-GitHubAppInstallationToken {
+                param(
+                    [Parameter(Mandatory = $true)]
+                    [string]$ClientId,
+                    
+                    [Parameter(Mandatory = $true)]
+                    [string]$PrivateKey,
+                    
+                    [Parameter(Mandatory = $true)]
+                    [string]$Organization,
+
+                    [int]$TokenTTLMinutes = 10
+                )
+
+                # Create the JWT
+                $Jwt = New-GitHubAppJWT -ClientId $ClientId -PrivateKey $PrivateKey -ExpiresInMinutes $TokenTTLMinutes
+                
+                # Prepare headers
+                $JwtHeaders = @{
+                    Authorization         = "Bearer $Jwt"
+                    Accept               = "application/vnd.github+json"
+                    "X-GitHub-Api-Version"= "2022-11-28"
+                }
+
+                Write-Host "Request org installation ID"
+
+                # 1) Retrieve the installation ID for the org
+                Try {
+                    $InstallationInfo = Invoke-RestMethod `
+                        -Uri "https://api.github.com/orgs/$Organization/installation" `
+                        -Headers $JwtHeaders `
+                        -ErrorAction Stop
+
+                    $InstallationId = $InstallationInfo.id
+                }
+                Catch {
+                    Write-Error "Failed to get installation ID from GitHub. $_"
+                    Return $Null
+                }
+
+                Write-Host "Get installation token"
+
+                # 2) Use the installation ID to request an installation token
+                Try {
+                    $TokenResponse = Invoke-RestMethod `
+                        -Uri "https://api.github.com/app/installations/$InstallationId/access_tokens" `
+                        -Headers $JwtHeaders `
+                        -Method Post `
+                        -ErrorAction Stop
+
+                    Return $TokenResponse.token
+                }
+                Catch {
+                    Write-Error "Failed to get access token from GitHub. $_"
+                    Return $Null
+                }
+            }
 
             function Set-ScriptOptions {
                 <#
@@ -91,6 +209,7 @@ jobs:
                     as well as GitHub user, authentication, & repository information.
                     Environment specific changes to the script can be done here.
                 #>
+
             # Web Service Address Setup
                 # Web Service root URL
                 $script:ws = "https://endpoints.office.com"
@@ -120,12 +239,12 @@ jobs:
                 # Fetch the local client request ID if data file exists; otherwise generate a new one
                 if (Test-Path $clientIDFile) {
 
-                    Write-Host "Getting client request ID"
+                    Write-Host "Getting M365 Endpoints client request ID"
                     $script:clientRequestId = Get-Content -Path $clientIDFile
                 }
                 else {
 
-                    Write-Host "Creating client request ID"
+                    Write-Host "Creating M365 Endpoints client request ID"
                     $script:clientRequestId = [GUID]::NewGuid().Guid
                     @($clientRequestId) | Out-File -FilePath $clientIDFile
                 }
@@ -148,14 +267,18 @@ jobs:
 
             # GitHub Setup
 
+                #Set secrets and org name for token creation
+                $ClientId = $env:ClientId
+                $PrivateKey = $env:PrivateKey
+                $script:Organization = $env:TargetOrganization # The GitHub user that owns the repository
+
                 # Create github HTTP authentication header
-                $script:OfficedocsprToken = $env:AccessToken
+                $script:GitHubAccessToken = Get-GitHubAppInstallationToken -ClientId $ClientId -PrivateKey $PrivateKey -Organization $Organization -TokenTTLMinutes 10
                 $script:GitHubHeaders = @{}
-                $script:GitHubHeaders.Add("Authorization","token $($OfficedocsprToken)")
+                $script:GitHubHeaders.Add("Authorization","token $($GitHubAccessToken)")
                 $script:GitHubHeaders.Add("User-Agent", "OfficeDocs")
                 
                 # GitHub user and repo values to use
-                $script:Organization = $env:TargetOrganization # The GitHub user that owns the repository
                 $script:Repository = $env:TargetRepository # The remote repository to upload to
                 $script:TargetBranch = "M365-Endpoints"
                 $script:DefaultBranch = Get-RepoDefaultBranch -Headers $script:GitHubHeaders -Org $script:Organization -Repo $script:Repository # The remote branch
@@ -671,93 +794,105 @@ jobs:
             # Set up the script variables
             Set-ScriptOptions
 
-            If ($SetDefaultBranchSuccess) {
+            If ($GitHubAccessToken) {
+                If ($SetDefaultBranchSuccess) {
 
-                # Get the current list of service instances and versions from the web service
-                $allServiceInstances = Invoke-RestMethod -Uri ($ws + "/version?clientrequestid=" + $clientRequestId)
+                    # Get the current list of service instances and versions from the web service
+                    $allServiceInstances = Invoke-RestMethod -Uri ($ws + "/version?clientrequestid=" + $clientRequestId)
 
-                # Check the service instances for new versions, then if necessary
-                # create a list of service instances needing updates
-                $serviceInstances = Get-UpdateList $allServiceInstances $siVersionFile
+                    # Check the service instances for new versions, then if necessary
+                    # create a list of service instances needing updates
+                    $serviceInstances = Get-UpdateList $allServiceInstances $siVersionFile
 
-                # If any service instances need to be updated, we need the SHA of the
-                # existing files on GitHub in order to replace them with updated files
-                if ($serviceInstances.Count -gt 0) {
-                    $shaHash = Get-RemoteDirectoryListing $serviceInstances
-                } Else {
-
-                    Write-Host "No service instances need updates"
-
-                }
-
-                # Loop through the list of service instances to get updated endpoint sets, format
-                # the endpoint data, convert to markdown, save an output file, and upload to GitHub.
-                $serviceInstances | ForEach-Object {
-                    $currentServiceInstance = $_
-
-                    Write-Host "Processing $currentServiceInstance"
-
-                    # Create the initial output file for the service instance ($siFile). We will
-                    # write to this file as we build the markdown table for each service area.
-                    Add-OutputFile $allServiceInstances $currentServiceInstance $dataPath
-
-                    # DEALING WITH TENANT WILDCARD URLS
-                    # We need to display <tenant> in tenant wildcard URLs, but we can't
-                    # actually pass that value to the web service anymore.
-                    # The following workaround uses placeholder text for tenant URLs,
-                    # then replaces the placeholder text with the text we need displayed.
-
-                    $tenantPlaceHolderText = "AnyUniqueString"
-                    $tenantTextToDisplay = "<tenant>"
-                    $endpointSets = ""
-
-                    Write-Host "Retrieving endpoint set for $currentServiceInstance from M365 web service"
-
-                    # Call the web service to get the endpoint sets for the current service instance
-                    $endpointSets = Invoke-RestMethod -Uri ($ws + "/endpoints/"+ $currentServiceInstance + "?tenantname=" + $tenantPlaceHolderText + "&clientRequestId=" + $clientRequestId)
-
-                    # Only continue if we have valid endpoint set data
-                    if ($endpointSets -ne "") {
-
-                        Write-Host "Retrieved endpoint sets"
-
-                        # Replace the tenant placeholder text with the text we need to display
-                        $endpointSets = Update-TenantURLs $endpointSets $tenantPlaceHolderText $tenantTextToDisplay
-
-                        # Group the endpoint sets by service area and convert to markdown, then append to the output file
-                        $allServiceAreas | ForEach-Object {
-                            $currentServiceArea = $_
-
-                            Write-Host "Processing $currentServiceArea"
-
-                            # Create a custom object from the list of normalized endpoint sets
-                            $saEndpointSetsObject = ConvertTo-EndpointObject $endpointSets $currentServiceArea
-
-                            # Get the official display name for the service area
-                            $saDisplayName = $endpointSets | Where-Object -Property serviceArea -EQ $currentServiceArea | ForEach-Object {$_.serviceAreaDisplayName} | Select-Object -Unique
-
-                            # Put a header at the top of each service area section in the markdown
-                            Write-ServiceAreaHeader $saDisplayName $dataPath $siFile
-
-                            # Convert the endpoint sets object to markdown and append to the output file for the current service instance
-                            ($saEndpointSetsObject) | Select-Object * | ConvertTo-Markdown | Out-File -Append -FilePath ($dataPath + $siFile)
-                        } # end allServiceAreas loop
-
-                        # Upload the final output file to GitHub
-                        Send-ToGitHub $dataPath $siFile
+                    # If any service instances need to be updated, we need the SHA of the
+                    # existing files on GitHub in order to replace them with updated files
+                    if ($serviceInstances.Count -gt 0) {
+                        $shaHash = Get-RemoteDirectoryListing $serviceInstances
                     } Else {
 
-                        Write-Host "Didn't receive any endpoint sets from webservice for $currentServiceInstance"
+                        Write-Host "No service instances need updates"
 
                     }
 
+                    # Loop through the list of service instances to get updated endpoint sets, format
+                    # the endpoint data, convert to markdown, save an output file, and upload to GitHub.
+                    $serviceInstances | ForEach-Object {
+                        $currentServiceInstance = $_
 
-                } # end serviceInstances loop
+                        Write-Host "Processing $currentServiceInstance"
 
-                # Create a new pull request. New-PullRequest will only create a new PR if one is needed.
-                New-PullRequest
+                        # Create the initial output file for the service instance ($siFile). We will
+                        # write to this file as we build the markdown table for each service area.
+                        Add-OutputFile $allServiceInstances $currentServiceInstance $dataPath
 
-            } # set default branch check
+                        # DEALING WITH TENANT WILDCARD URLS
+                        # We need to display <tenant> in tenant wildcard URLs, but we can't
+                        # actually pass that value to the web service anymore.
+                        # The following workaround uses placeholder text for tenant URLs,
+                        # then replaces the placeholder text with the text we need displayed.
+
+                        $tenantPlaceHolderText = "AnyUniqueString"
+                        $tenantTextToDisplay = "<tenant>"
+                        $endpointSets = ""
+
+                        Write-Host "Retrieving endpoint set for $currentServiceInstance from M365 web service"
+
+                        # Call the web service to get the endpoint sets for the current service instance
+                        $endpointSets = Invoke-RestMethod -Uri ($ws + "/endpoints/"+ $currentServiceInstance + "?tenantname=" + $tenantPlaceHolderText + "&clientRequestId=" + $clientRequestId)
+
+                        # Only continue if we have valid endpoint set data
+                        if ($endpointSets -ne "") {
+
+                            Write-Host "Retrieved endpoint sets"
+
+                            # Replace the tenant placeholder text with the text we need to display
+                            $endpointSets = Update-TenantURLs $endpointSets $tenantPlaceHolderText $tenantTextToDisplay
+
+                            # Group the endpoint sets by service area and convert to markdown, then append to the output file
+                            $allServiceAreas | ForEach-Object {
+                                $currentServiceArea = $_
+
+                                Write-Host "Processing $currentServiceArea"
+
+                                # Create a custom object from the list of normalized endpoint sets
+                                $saEndpointSetsObject = ConvertTo-EndpointObject $endpointSets $currentServiceArea
+
+                                # Get the official display name for the service area
+                                $saDisplayName = $endpointSets | Where-Object -Property serviceArea -EQ $currentServiceArea | ForEach-Object {$_.serviceAreaDisplayName} | Select-Object -Unique
+
+                                # Put a header at the top of each service area section in the markdown
+                                Write-ServiceAreaHeader $saDisplayName $dataPath $siFile
+
+                                # Convert the endpoint sets object to markdown and append to the output file for the current service instance
+                                ($saEndpointSetsObject) | Select-Object * | ConvertTo-Markdown | Out-File -Append -FilePath ($dataPath + $siFile)
+                            } # end allServiceAreas loop
+
+                            # Upload the final output file to GitHub
+                            Send-ToGitHub $dataPath $siFile
+                        } Else {
+
+                            Write-Host "Didn't receive any endpoint sets from webservice for $currentServiceInstance"
+
+                        }
+
+
+                    } # end serviceInstances loop
+
+                    # Create a new pull request. New-PullRequest will only create a new PR if one is needed.
+                    New-PullRequest
+
+                } Else { # set default branch check
+
+                    Throw "Failed to set default branch."
+
+                }
+
+            } Else {
+            
+                Throw "Failed to retrieve access token."
+
+            }
+
 
             ls -alr $dataPath
             Write-Host "Finished endpoints update script"

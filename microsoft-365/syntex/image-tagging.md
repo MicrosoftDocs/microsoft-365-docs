@@ -1,12 +1,12 @@
 ---
-title: Find and manage images using enhanced image tagging in Microsoft Syntex
+title: Find and manage images using enhanced image tagging in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: shrganguly
-ms.date: 06/18/2024
-ms.topic: conceptual
+ms.date: 03/18/2025
+ms.topic: how-to
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
 ms.custom: admindeeplinkMAC
@@ -15,10 +15,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: medium
-description: Learn how to use enhanced image tagging to search, sort, filter, and manage images in Microsoft Syntex.
+description: Learn how to use enhanced image tagging to search, sort, filter, and manage images in SharePoint.
 ---
 
-# Find and manage images using enhanced image tagging in Microsoft Syntex
+# Find and manage images using enhanced image tagging in SharePoint
 
 Before you can use image tagging, you need to enable it in a document library. There are two methods you can use to do this:
 

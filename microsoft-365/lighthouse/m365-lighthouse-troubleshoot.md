@@ -166,7 +166,7 @@ If data is still not appearing on the Device compliance and Threat management pa
 
 **Cause:** You don't have the correct permissions in Partner Center to view the Sales Advisor pages in Lighthouse.
 
-**Resolution:** Verify that you hold the Account Manager role in Lighthouse. If you don't hold the Account Manager role, reach out to someone who holds the Administrator role in Lighthouse and ask them to assign the role to you. For more information, see [Get access to Sales Advisor within Microsoft 365 Lighthouse](m365-lighthouse-get-access-to-sales-advisor.md).
+**Resolution:** Verify that you hold the Account Manager role in Lighthouse. If you don't hold the Account Manager role, reach out to someone who holds the Administrator role in Lighthouse and ask them to assign the role to you. For more information, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md).
 
 ### Message when viewing the Sales Advisor Opportunities page in Lighthouse: "There are no opportunities"
 

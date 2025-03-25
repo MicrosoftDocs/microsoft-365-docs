@@ -5,7 +5,7 @@ ms.author: danismith
 manager: jtremper
 ms.date: 09/04/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.custom: 

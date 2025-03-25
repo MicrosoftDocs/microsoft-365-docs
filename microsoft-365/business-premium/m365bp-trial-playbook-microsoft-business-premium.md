@@ -6,7 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: deniseb
 audience: Admin
-ms.topic: conceptual
+ms.topic: article
 ms.collection:
 - m365-security
 - tier2
@@ -79,7 +79,7 @@ Microsoft 365 Business Premium includes Defender for Business, a new security so
 
 1. Start by [installing Microsoft 365 Apps](m365bp-users-install-m365-apps.md).
 
-2. Go to <https://office.com> and sign in. (See [Getting Started at Office.com](https://support.microsoft.com/office/get-started-at-office-com-91a4ec74-67fe-4a84-a268-f6bdf3da1804).)
+2. Go to <https://m365.cloud.microsoft/> and sign in. (See [Getting Started at Office.com](https://support.microsoft.com/office/get-started-at-office-com-91a4ec74-67fe-4a84-a268-f6bdf3da1804).)
 
 3. Create an Office document, such as a [Word document](https://support.microsoft.com/office/basic-tasks-in-word-87b3243c-b0bf-4a29-82aa-09a681999fdc).
 

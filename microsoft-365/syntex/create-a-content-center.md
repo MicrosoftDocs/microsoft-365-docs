@@ -1,12 +1,12 @@
 ---
-title: Create a content center in Microsoft Syntex
+title: Create a content center for document processing models in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 4/12/2024
+ms.date: 02/10/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-syntex
 search.appverid: 
 ms.custom: admindeeplinkSPO
@@ -14,10 +14,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to create a content center in Microsoft Syntex.
+description: Learn how to create a content center for document processing models in SharePoint.
 ---
 
-# Create a content center in Microsoft Syntex
+# Create a content center for document processing models in SharePoint
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 

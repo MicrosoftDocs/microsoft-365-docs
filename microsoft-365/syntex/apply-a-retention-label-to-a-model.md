@@ -1,22 +1,22 @@
 ---
-title: Apply a retention label to a model in Microsoft Syntex
+title: Apply a retention label to a document processing model in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 08/13/2024
+ms.date: 02/13/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
     - essentials-manage
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to apply a retention label to a model in Microsoft Syntex.
+description: Learn how to apply a retention label to a document processing model in SharePoint.
 ---
 
-# Apply a retention label to a model in Microsoft Syntex
+# Apply a retention label to a document processing model in SharePoint
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 

@@ -1,0 +1,25 @@
+name: (Scheduled) Stale branch removal
+
+permissions:
+  contents: write
+      
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+
+  workflow_dispatch:
+  
+
+jobs:
+
+  stale-branch:
+    uses: MicrosoftDocs/microsoft-365-docs/.github/workflows/Shared-StaleBranch.yml@workflows-prod
+    with:
+        PayloadJson: ${{ toJSON(github) }}
+        RepoBranchSkipList: '[
+                              "ExampleBranch1",
+                              "ExampleBranch2"
+                             ]'
+        ReportOnly: true
+    secrets:
+        AccessToken: ${{ secrets.GITHUB_TOKEN }}

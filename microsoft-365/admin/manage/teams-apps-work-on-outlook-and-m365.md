@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
-ms.date: 10/11/2024
+ms.date: 03/12/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -66,6 +66,9 @@ As a Global Administrator, you can also initiate deployment of an app from its o
 > Any changes made to these apps from Integrated Apps on the Microsoft 365 admin center will only impact these apps on Outlook and the Microsoft 365 app at this time. To manage how these apps show up on Teams, please continue to use Teams admin center.
 
 As an admin, you can also take management actions on these apps such as removing the deployment or editing user access.
+
+> [!NOTE]
+> On the Integrated Apps page, note that the **CoPilot** app settings will apply to both **Microsoft 365 Copilot** and the **Copilot Chat** apps. Any changes made to this app from Integrated Apps will apply to both.
 
 ### To remove the deployment of this app
 

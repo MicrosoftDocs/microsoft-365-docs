@@ -23,7 +23,7 @@ description: "Learn how to improve organization use of Microsoft 365 Copilot Cha
 
 # Pin Microsoft 365 Copilot Chat to the navigation bar
 
-As an administrator, you can pin Copilot to the navigation bar of Teams, Outlook, and the Microsoft 365 Copilot app, including [microsoft365.com](https://www.office.com/), Microsoft 365 desktop app, and the Microsoft 365 mobile app. When you pin Copilot Chat, it encourages your organization to use Microsoft 365 Copilot Chat.
+As an administrator, you can pin Copilot to the navigation bar of Teams, Outlook, and the Microsoft 365 Copilot app, including [M365Copilot.com](https://M365Copilot.com), Microsoft 365 desktop app, and the Microsoft 365 mobile app. When you pin Copilot Chat, it encourages your organization to use Microsoft 365 Copilot Chat.
 
 Admin pinning allows you to set Microsoft 365 Copilot Chat to appear on the navigation bar for the applications listed previously. This setting is only applicable for users who are signed in with a Microsoft Entra account for your tenant.
 
@@ -44,11 +44,11 @@ Administrators can change this behavior by selecting an option for pinning Micro
 
 1. **Pin Copilot to the navigation bar (recommended)**: Microsoft 365 Copilot Chat is automatically pinned for all users. Users aren't prompted.
 
-:::image type="content" source="media/pin-copilot.png" alt-text="Screenshot showing the option to pin Copilot to the navigation bar.":::
+    :::image type="content" source="media/pin-copilot.png" alt-text="Screenshot showing the option to pin Copilot to the navigation bar.":::
 
 2. **Do not pin Copilot to the navigation bar**: Microsoft 365 Copilot Chat isn't automatically pinned to the navigation bar. When this option is selected, administrators can determine if users receive automatic prompts to pin using the checkbox.
 
-:::image type="content" source="media/do-not-pin-copilot-setting.png" alt-text="Screenshot showing the option to not pin Copilot to the navigation bar.":::
+    :::image type="content" source="media/do-not-pin-copilot-setting.png" alt-text="Screenshot showing the option to not pin Copilot to the navigation bar.":::
 
 When you uncheck the 'Allow users to be asked whether they want to pin it' option, Microsoft 365 Copilot Chat no longer appears in the App Launcher.
 
@@ -59,7 +59,7 @@ Global administrators can make changes to Microsoft 365 Copilot Chat pinning set
 
 ## User experience
 
-Users can personalize their navigation bar by choosing to pin or unpin Microsoft 365 Copilot Chat. Users can adjust the pinning settings within their application preferences, and these choices are specific to Teams, Outlook, the Microsoft 365 Copilot web app ([microsoft365.com](https://www.office.com/) and [m365.cloud.microsoft](https://m365.cloud.microsoft/)), Microsoft 365 Copilot desktop app, and Microsoft 365 Copilot mobile app.
+Users can personalize their navigation bar by choosing to pin or unpin Microsoft 365 Copilot Chat. Users can adjust the pinning settings within their application preferences, and these choices are specific to Teams, Outlook, the Microsoft 365 Copilot web app ([microsoft365.com](https://M365Copilot.com) and [m365.cloud.microsoft](https://m365.cloud.microsoft/)), Microsoft 365 Copilot desktop app, and Microsoft 365 Copilot mobile app.
 
 A message asking to pin Microsoft 365 Copilot Chat can appear if a user:
 
@@ -97,7 +97,7 @@ To learn more, see [Frequently asked questions for Microsoft 365 Copilot Chat](h
 You can pin Microsoft 365 Copilot Chat for your users in Microsoft Teams only through the Teams admin center. In the Teams admin center, create or modify [App setup policies](/microsoftteams/teams-app-setup-policies#pin-apps) by adding the Copilot app to the policy's Pinned apps. When you assign the policy to users with a Microsoft Entra account, the Copilot app is pinned for them. Like pinning any other app in Teams, Copilot also needs to be allowed for those users through [App permission policies](/microsoftteams/teams-app-permission-policies) or [App centric manage](/microsoftteams/app-centric-management) if you migrated to it.
 
 > [!NOTE]
-> If you assign the policy to users with a Microsoft 365 Copilot license, then the Microsoft 365 Copilot app is pinned.
+> If you assign the policy to users with a Microsoft 365 Copilot license, then the Microsoft 365 Copilot app is pinned. The Microsoft 365 Copilot app will be pinned by default in the Teams left rail starting late January 2025 (previously mid-January) and is expected to complete by late February 2025 (previously late January).
 
 If you select Pin Copilot through the Microsoft 365 admin center **Copilot** > **Settings** page, and you have Copilot-pinned App setup policies assigned to users with a Microsoft Entra account, those users have Copilot Chat pinned in the position defined by the App setup policy. Everyone else is pinned in a default position.
 
