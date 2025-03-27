@@ -19,6 +19,11 @@ description: Use Microsoft Teams classes with Blackboard Learn Ultra.
 
 # Use Microsoft Teams classes with Blackboard Learn Ultra
 
+> [!NOTE]
+> We are streamlining the **LTI** (Learning Tools Interoperability) experiences for education customers who may be using different LMS systems. We are simplifying onboarding and usage by consolidating the capabilities of multiple LTI tools available today into fewer and more functional tools.
+>
+> The capabilities of the **Class Teams LTI** and **Meetings LTI** tools will be among the first tools updated in this consolidation. Microsoft is announcing the end of support for the Class Teams LTI and Meetings LTI tools on 15th June, 2025, as their capabilities will be superseded by a new, unified experience. Release details for the unified experience will be forthcoming. 
+
 Teamwork is at the core of every modern organization. By fostering collaboration, it’s a defining characteristic of every successful institution. You can enhance all the capabilities and features of Blackboard Learn Ultra by pairing them up with Microsoft Teams classes.
 
 Your classes might include real-time conversations, video meetings, or asynchronous interactions. You can add file sharing and cocreation experiences for your students, all in one place. Microsoft Teams classes with Learn Ultra redefine the dynamics of teaching and what effective learning means.
