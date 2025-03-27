@@ -20,6 +20,11 @@ description: "Integrate Microsoft Teams classes with Canvas"
 
 # Use Microsoft Teams classes with Canvas
 
+> [!NOTE]
+> We are streamlining the **LTI** (Learning Tools Interoperability) experiences for education customers who may be using different LMS systems. We are simplifying onboarding and usage by consolidating the capabilities of multiple LTI tools available today into fewer and more functional tools.
+>
+> The capabilities of the **Class Teams LTI** and **Meetings LTI** tools will be among the first tools updated in this consolidation. Microsoft is announcing the end of support for the Class Teams LTI and Meetings LTI tools on 15th June, 2025, as their capabilities will be superseded by a new, unified experience. Release details for the unified experience will be forthcoming.
+
 Microsoft Teams classes is a Learning Tools Interoperability (LTI) app that helps educators and students easily navigate between their Learning Management System (LMS) and Teams. Users can access their class teams associated with their course directly from within their LMS.
 
 ## Prerequisites Before Deployment
