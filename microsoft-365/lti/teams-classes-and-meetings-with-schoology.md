@@ -18,6 +18,11 @@ description: Create and manage Teams meetings with Microsoft Learning Tools Inte
 
 # Integrate Microsoft Teams meetings with Schoology Learning
 
+> [!NOTE]
+> We are streamlining the **LTI** (Learning Tools Interoperability) experiences for education customers who may be using different LMS systems. We are simplifying onboarding and usage by consolidating the capabilities of multiple LTI tools available today into fewer and more functional tools.
+>
+> The capabilities of the **Class Teams LTI** and **Meetings LTI** tools will be among the first tools updated in this consolidation. Microsoft is announcing the end of support for the Class Teams LTI and Meetings LTI tools on 15th June, 2025, as their capabilities will be superseded by a new, unified experience. Release details for the unified experience will be forthcoming. 
+
 This guide provides the IT admin steps for registering the Teams Meetings LTI app on PowerSchool Unified Classroom® Schoology Learning.
 
 For an overview of Microsoft LTI, see [Integrating Microsoft products with your Learning Management System (LMS)](index.md).
