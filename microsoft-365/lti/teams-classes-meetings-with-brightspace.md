@@ -18,6 +18,11 @@ description: Create and manage Teams classes and meetings with Microsoft Learnin
 
 # Integrate Microsoft Teams classes and meetings LTI apps within Desire2Learn Brightspace LMS
 
+> [!NOTE]
+> We are streamlining the **LTI** (Learning Tools Interoperability) experiences for education customers who may be using different LMS systems. We are simplifying onboarding and usage by consolidating the capabilities of multiple LTI tools available today into fewer and more functional tools.
+>
+> The capabilities of the **Class Teams LTI** and **Meetings LTI** tools will be among the first tools updated in this consolidation. Microsoft is announcing the end of support for the Class Teams LTI and Meetings LTI tools on 15th June, 2025, as their capabilities will be superseded by a new, unified experience. Release details for the unified experience will be forthcoming.
+
 This guide provides the IT admin steps for registering both Teams Classes and Teams Meetings LTI apps for the Desire2Learn (D2L) Brightspace LMS.
 
 For details on managing all LTI apps for any LMS, see [Manage Microsoft LMS Gateway for any LMS](manage-microsoft-one-lti.md).
