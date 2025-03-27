@@ -18,6 +18,11 @@ description: Learn about Learning Tools Interoperability (LTI) Microsoft apps, a
 
 # Integrating Microsoft products with your Learning Management System (LMS)
 
+> [!NOTE]
+> We are streamlining the **LTI** (Learning Tools Interoperability) experiences for education customers who may be using different LMS systems. We are simplifying onboarding and usage by consolidating the capabilities of multiple LTI tools available today into fewer and more functional tools.
+>
+> The capabilities of the **Class Teams LTI** and **Meetings LTI** tools will be among the first tools updated in this consolidation. Microsoft is announcing the end of support for the Class Teams LTI and Meetings LTI tools on 15th June, 2025, as their capabilities will be superseded by a new, unified experience. Release details for the unified experience will be forthcoming.
+
 Microsoft Education and our third-party partners understand that the flow of teaching and learning invariably crosses solution boundaries. We're working on providing more seamless experiences, keeping educators and learners focused on their goals, rather than having to juggle tools. We're integrating Microsoft products wherever teaching and learning occurs, including within and alongside Learning Management Systems (LMS).
 
 We've worked with our LMS partners to create a suite of tools using the [Learning Tools Interoperability (LTI) standard](https://www.imsglobal.org/activity/learning-tools-interoperability) that brings the best of Microsoft directly into your LMS.
