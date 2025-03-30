@@ -16,6 +16,9 @@ description: "Use Microsoft Feed to help users discover and learn about people a
 
 # Overview of Microsoft Feed
 
+> [!IMPORTANT]
+> Microsoft Feed is being retired in May 2025. Some experiences built on Microsoft Feed have already been removed. Feed app in Outlook Mobile will be removed in May 2025. Starting in May 2025, users will have an updated My Feed experience on the enterprise new tab page. Users will no longer be able to view content and activity from their network, and instead will experience quick access to recently used M365 documents, recent SharePoint sites, upcoming Outlook events, M365 apps, and To-Do tasks.
+
 Microsoft Feed is powered by Microsoft Graph and aims to help users discover and learn about people and interests relevant to their work. Microsoft Feed shows users a mix of content and activity from across Microsoft 365. Users might, for example, see updates to documents they’re working on with others, links shared with them in Teams chats, suggested tasks to follow up, highlights about colleagues, and much more.
 
 Read more about how the feed works here:  [Discover and learn with Microsoft Feed](https://support.microsoft.com/en-us/office/discover-and-learn-with-microsoft-feed-9c190800-e348-46b7-9d46-41c628b80ebb)
