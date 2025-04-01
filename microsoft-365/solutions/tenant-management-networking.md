@@ -3,7 +3,7 @@ title: Step 2. Optimal networking for your Microsoft 365 for enterprise tenants
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 02/19/2025
+ms.date: 03/24/2025
 audience: ITPro
 ms.topic: how-to
 ms.service: o365-solutions
@@ -96,20 +96,6 @@ For more information and guidance, see [Optimize Office 365 connectivity for rem
 
 Network insights are performance metrics collected from your Microsoft 365 tenant that help you design network perimeters for your office locations. Each insight provides live details about the performance characteristics for a specified issue for each geographic location where on-premises users are accessing your tenant.
 
-There are two tenant level network insights that may be shown for the tenant:
-
-- [Exchange sampled connections impacted by connectivity issues](../enterprise/office-365-network-mac-perf-insights.md#exchange-sampled-connections-affected-by-connectivity-issues)
-- [SharePoint sampled connections impacted by connectivity issues](../enterprise/office-365-network-mac-perf-insights.md#sharepoint-sampled-connections-affected-by-connectivity-issues)
-
-These are the specific network insights for each office location:
-
-- [Backhauled network egress](../enterprise/office-365-network-mac-perf-insights.md#backhauled-network-egress)
-- [Better performance detected for customers near you](../enterprise/office-365-network-mac-perf-insights.md#better-performance-detected-for-customers-near-you)
-- [Use of a non-optimal Exchange Online service front door](../enterprise/office-365-network-mac-perf-insights.md#use-of-a-nonoptimal-exchange-online-service-front-door)
-- [Use of a non-optimal SharePoint Online service front door](../enterprise/office-365-network-mac-perf-insights.md#use-of-a-nonoptimal-sharepoint-service-front-door)
-- [Low download speed from SharePoint front door](../enterprise/office-365-network-mac-perf-insights.md#low-download-speed-from-sharepoint-front-door)
-- [China user optimal network egress](../enterprise/office-365-network-mac-perf-insights.md#china-user-optimal-network-egress)
-
 For more information, see [Microsoft 365 Network Insights](../enterprise/office-365-network-mac-perf-insights.md).
 
 ## SharePoint performance with the Office 365 CDN
@@ -120,7 +106,7 @@ The Office 365 CDN is composed of multiple CDNs that allow you to host static as
 
 When deployed and configured, the Office 365 CDN uploads assets from public origins and makes them available for fast access to users located across the Internet.
 
-![Office 365 CDN deployed for users.](../media/O365-CDN/o365-cdn-flow-transparent.svg "Office 365 CDN deployed for users")
+![Office 365 CDN deployed for users.](../media/O365-CDN/o365-cdn-flow-transparent.png "Office 365 CDN deployed for users")
 
 For more information, see [Use the Office 365 CDN with SharePoint Online](../enterprise/use-microsoft-365-cdn-with-spo.md).
 

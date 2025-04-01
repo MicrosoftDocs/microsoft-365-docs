@@ -1,7 +1,7 @@
 ---
 title: Troubleshoot Microsoft Teams EHR connector setup and configuration
 author: lana-chin
-ms.author: v-chinlana
+ms.author: jtremper
 manager: jtremper
 audience: ITPro
 ms.topic: troubleshooting-general

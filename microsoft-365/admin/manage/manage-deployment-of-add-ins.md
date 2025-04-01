@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
-ms.date: 10/23/2024
+ms.date: 03/31/2025
 audience: Admin
 ms.topic: install-set-up-deploy
 ms.service: microsoft-365-business
@@ -100,7 +100,7 @@ Before you begin, see [Determine if Centralized Deployment of add-ins works for 
 7. A green tick appears when the add-in is deployed. Follow the on-page instructions to test the add-in.
 
 > [!NOTE]
-> Users might need to relaunch Microsoft 365 to view the add-in icon on the app ribbon. Add-ins can take up to 24 hours to appear on app ribbons.
+> Users might need to relaunch Microsoft 365 to view the add-in icon on the app ribbon. Add-ins can take up to 72 hours to appear on app ribbons.
 
 8. When finished, select **Next**. If you've deployed to just yourself, you can select **Change who has access to add-in** to deploy to more users.
 

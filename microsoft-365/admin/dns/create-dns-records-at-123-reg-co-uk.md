@@ -5,10 +5,11 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 11/18/2024
+ms.date: 03/18/2025
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-domains
 ms.localizationpriority: medium
 ms.collection:
 - Tier2
@@ -36,6 +37,8 @@ After you add these records at 123-reg.co.uk, your domain will be set up to work
 
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records](../get-help-with-domains/find-and-fix-issues.md).
+
+[!INCLUDE [How to get tech support for SMB](../../includes/smb-how-to-get-tech-support.md)]
 
 ## Add a TXT record for verification
 

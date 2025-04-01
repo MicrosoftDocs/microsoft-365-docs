@@ -21,7 +21,7 @@ description: Learn about optical character recognition in SharePoint.
 # Overview of optical character recognition in SharePoint
 
 > [!NOTE]
-> Through June 2025, you can try out a [limited amount](promo-syntex.md#monthly-included-capacity) of optical character recognition and other selected content services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out Microsoft Syntex and explore its services](promo-syntex.md).
+> Through June 2025, you can try out a [limited amount](promo-syntex.md#monthly-included-capacity) of optical character recognition and other selected content services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out pay-as-you-go services](promo-syntex.md).
 
 The optical character recognition (OCR) service in SharePoint lets you extract printed or handwritten text from images and documents. Examples of images include posters, drawings, and product labels. Examples of documents include articles, reports, forms, and invoices.
 
@@ -35,13 +35,17 @@ For example, you enable the OCR service and then add image files to your documen
 
 |Endpoint  |Supported file types  |
 |---------|---------|
-|SharePoint and OneDrive     |`.bmp, .png, .jpeg, .jpg, .jfif, .arw, .cr2, .crw, .erf, .gif, .mef, .mrw, .nef, .nrw, .orf, .pef, .raw, .rw2, .rw1, .sr2, .tif, .tiff, .heic, .heif, .ari, .bay, .cap, .cr3, .dcs, .dcr, .drf, .eip, .fff, .iiq, .k25, .kdc, .mef, .mos, .ptx, .pxn, .raf, .rwl, .sr2, .srf, .srw, .x3f, .dng, .tiff, and .pdf`  |
+|SharePoint and OneDrive     |` .docx, .pptx, .xlsx, .bmp, .png, .jpeg, .jpg, .jfif, .arw, .cr2, .crw, .erf, .gif, .mef, .mrw, .nef, .nrw, .orf, .pef, .raw, .rw2, .rw1, .sr2, .tif, .tiff, .heic, .heif, .ari, .bay, .cap, .cr3, .dcs, .dcr, .drf, .eip, .fff, .iiq, .k25, .kdc, .mef, .mos, .ptx, .pxn, .raf, .rwl, .sr2, .srf, .srw, .x3f, .dng, .tiff, and .pdf`  |
 |Teams, Exchange, and Windows devices     |`.bmp, .png, .jpeg, .jpg, .tiff, and .pdf`   |
 
 In addition to image-based PDF, SharePoint OCR supports hybrid PDF (text plus image PDF). Newly uploaded hybrid PDFs will be processed by the OCR service.
 
 > [!NOTE]
 > When you apply OCR to an image file, the text is stored in the **Extracted text** metadata column. When you apply OCR to a PDF or TIFF file, the extracted text is indexed in search but not available in the metadata column.
+>
+
+### Office file support in SharePoint
+SharePoint now supports OCR for Microsoft 365 Office files, including Word, PowerPoint, and Excel documents. Any images added to these files will be automatically scanned using OCR, and the extracted text will be indexed for search purposes and integrated into compliance solutions. Additionally, SharePoint has implemented de-duplication processes to check for unique images to avoid duplicate charges against the same images.
 
 ### Supported languages
 

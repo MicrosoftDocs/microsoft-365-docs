@@ -5,10 +5,11 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 02/10/2025
+ms.date: 03/18/2025
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-domains
 ms.localizationpriority: medium
 ms.collection: 
 - Tier2

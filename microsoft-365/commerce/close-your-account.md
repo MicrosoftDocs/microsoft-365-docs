@@ -27,7 +27,7 @@ ms.custom:
 - campaignIDs-batch1
 search.appverid: MET150
 description: "Learn how to close your business account with Microsoft. All information related to your account is deleted including licenses, users, and user data."
-ms.date: 07/22/2024
+ms.date: 03/27/2025
 ---
 
 # Close your Microsoft business account

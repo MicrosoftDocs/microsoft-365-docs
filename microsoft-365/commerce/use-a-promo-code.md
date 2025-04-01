@@ -22,7 +22,7 @@ ms.custom:
 - okr_SMB
 search.appverid: MET150
 description: "Learn how to apply a promotional code to a new Microsoft 365 for business subscription to reduce the price, and how to troubleshoot promo code errors."
-ms.date: 09/05/2024
+ms.date: 03/26/2025
 ---
 
 # Use a promo code to reduce the price of a new Microsoft 365 for business subscription

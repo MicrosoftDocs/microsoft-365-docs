@@ -85,7 +85,7 @@ The following sections detail capabilities that are **not yet available** for Mi
 - When an **admin deletes** a Loop workspace, it **will not be removed from the user's view** of Loop workspaces. When users click on the deleted Loop workspace, it displays an error. Microsoft Roadmap ID 421613 addresses this.
 - When an **admin modifies the list of owners or members** of a Loop workspace through the SharePoint Admin Center or via PowerShell, the **changes won't be visible to the users within that Loop workspace**. Changes to the workspace membership are only updated in the user's view of the Loop app if they're made directly within the Loop app itself. Microsoft Roadmap ID 421613 addresses this.
 - All shared Loop workspaces, including Ideas, are created as tenant-owned, in the tenant default geo like SharePoint Communication sites, not in the creator's preferred data location. Copilot Pages is created as user-owned, in the geo that matches the user's preferred data location. See [storage management after user departure](/microsoft-365/loop/loop-workspaces-storage-permission#storage-management-after-user-departure) for more information on managing workspaces. Microsoft Roadmap ID 422729 addresses Ideas functioning as a shared Loop workspace.
-- **Individual controls for guest or external sharing** of a specific Loop workspace isn't available. Microsoft Roadmap ID 421614 addresses this.
+- **Individual controls for guest or external sharing** of a specific Loop workspace isn't available.
 
 ### eDiscovery capabilities not yet available
 

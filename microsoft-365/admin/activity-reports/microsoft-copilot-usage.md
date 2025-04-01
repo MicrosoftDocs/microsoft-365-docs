@@ -24,7 +24,7 @@ description: "Learn about the Microsoft 365 Copilot Chat usage report and gain i
 The Microsoft 365 Copilot Chat usage dashboard provides insights into active usage of Microsoft 365 Copilot Chat. The report includes total active users, average daily active users, and active users per app (for example, Microsoft 365 Copilot (app) and Microsoft Edge). Usage insights can be viewed as totals and trends for the past 7, 30, 90, or 180-day periods. The report also shows the last activity date per user, anonymized by default. To view all reports, check out [Microsoft 365 Reports in the admin center overview](activity-reports.md).
 
 > [!NOTE]
-> The report is currently limited to just the usage of Microsoft 365 Copilot Chat in the Microsoft 365 Copilot (app), Microsoft Edge, and to users without a Microsoft 365 license. Additional apps will be added over time. In addition, the earliest date on which usage history is available for this report is September 15th, 2024.
+> The report is currently limited to just the usage of Microsoft 365 Copilot Chat in the Microsoft 365 Copilot (app), Microsoft Edge, and to users without a Microsoft 365 Copilot license. Additional apps will be added over time. In addition, the earliest date on which usage history is available for this report is September 15th, 2024.
 
 ## How do I get to the Microsoft 365 Copilot Chat usage report?
 
@@ -87,3 +87,9 @@ By default, usernames and display names in the Microsoft 365 Copilot Chat report
 1. In the Microsoft 365 admin center, go to the **Settings** > **Org Settings**, and under the **Services** tab, choose **Reports**.
 2. Select **Reports**, and update the setting to “Display Concealed user, group, and site names in all reports”.
 3. Select **Save**.
+
+## FAQ
+
+### Does this report include only the Copilot Chat usage for users without a Microsoft 365 Copilot license in the organization?
+
+Yes. To view Copilot Chat usage of Microsoft 365 Copilot licensed users in the organization, refer to the [Microsoft 365 Copilot usage report](microsoft-365-copilot-usage.md) in the Microsoft 365 admin center.

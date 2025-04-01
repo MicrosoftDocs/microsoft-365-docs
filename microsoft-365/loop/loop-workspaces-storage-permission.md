@@ -74,7 +74,7 @@ You can share Loop workspaces, pages, and components with users external to your
 
 - Your organization must allow sharing files with guests. Learn how to [manage this policy](/sharepoint/turn-external-sharing-on-or-off#change-the-organization-level-external-sharing-setting).
 - The user you're sharing with must have a guest account in your tenant or [Business-to-Business Invitation Manager is enabled](/entra/external-id/what-is-b2b).
-- Your organization doesn't have sensitivity labels configured. Loop external sharing doesn't work for companies with sensitivity labels configured. Once sensitivity labels for Loop workspaces, pages, and components are generally available, then external sharing for companies with sensitivity labels configured doesn't function. Microsoft Roadmap ID 421614 addresses this.
+- Sensitivity labels and conditional access can further restrict sharing, so when testing guest sharing, ensure these features aren't configured to prevent it.
 
 Workspaces can only be shared with users that have an existing guest account in your tenant. If Business-to-business Invitation Manager is enabled, users can share a page or component with a guest, which enables the flow to create a guest account for the user.
 

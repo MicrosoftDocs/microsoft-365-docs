@@ -13,7 +13,7 @@ on:
 
 jobs:
     download-payload:
-        if: github.repository_visibility == 'public'
+        if: github.repository_owner == 'MicrosoftDocs' && github.repository_visibility == 'public'
         name: Download and extract payload artifact
         uses: MicrosoftDocs/microsoft-365-docs/.github/workflows/Shared-ExtractPayload.yml@workflows-prod
         with:
@@ -24,7 +24,7 @@ jobs:
 
     label-msft:
         name: Label Microsoft contributors
-        if: github.repository_visibility == 'public'
+        if: github.repository_owner == 'MicrosoftDocs' && github.repository_visibility == 'public'
         needs: [download-payload]
         uses: MicrosoftDocs/microsoft-365-docs/.github/workflows/Shared-AutoLabelMsftContributor.yml@workflows-prod
         with:

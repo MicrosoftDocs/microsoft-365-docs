@@ -110,6 +110,9 @@ conceptualContent:
             - url: /office365/planner
               itemType: overview
               text: Planner
+            - url: /microsoft-365/places
+              itemType: overview
+              text: Microsoft Places
         # Card
         - title: Microsoft 365 Apps and Office
           links:

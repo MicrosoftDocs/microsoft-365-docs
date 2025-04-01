@@ -69,3 +69,6 @@ items:
       items:
       - name: Use Microsoft Teams Meetings LTI with any LTI 1.3 compliant LMS
         href: integrate-with-other-lms.md
+      - name: Use Microsoft Teams Assignments LTI with any LTI 1.3 compliant LMS
+        href: teams-assignments-with-other-lms.md
+

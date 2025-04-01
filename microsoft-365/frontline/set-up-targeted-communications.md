@@ -1,7 +1,7 @@
 ---
 title: Set up targeted communications for your frontline
 author: lana-chin
-ms.author: v-chinlana
+ms.author: jtremper
 manager: jtremper
 ms.reviewer: yinchang, aaglick
 ms.topic: install-set-up-deploy

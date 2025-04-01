@@ -6,13 +6,13 @@ ms.reviewer: cabailey
 ms.service: microsoft-365-copilot
 ms.topic: include
 description: Create default Microsoft Purview sensitivity labels for Microsoft 365 Copilot.
-ms.date: 03/06/2025
+ms.date: 03/24/2025
 ---
 
 1. Sign into the [Microsoft Purview portal](https://purview.microsoft.com/) as an admin in one of the groups listed at [Sensitivity labels - permissions](/purview/get-started-with-sensitivity-labels#permissions-required-to-create-and-manage-sensitivity-labels).
 
 2. Select **Solutions** > **DSPM for AI** > **Overview**.
-3. In the **Recommendations** section, select **Information Protection Policy for Sensitivity Labels**. This step creates the default labels and their policies.
+3. In the **Recommendations** section, select **Protect your data with sensitivity labels**. This step creates the default labels and their policies.
 4. To see or edit the default labels, or to create your own labels, select **Information protection** > **Sensitivity labels**. You might have to select **Refresh**.
 
 When you have the default sensitivity labels:

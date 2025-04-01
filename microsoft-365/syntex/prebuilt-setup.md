@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 01/13/2025
+ms.date: 03/24/2025
 audience: admin
 ms.topic: install-set-up-deploy
 ms.custom: setup
@@ -15,7 +15,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to set up and manage prebuilt document processing in SharePoint.
+description: Learn how to set up and manage the prebuilt document processing service in SharePoint.
 ---
 
 # Set up and manage prebuilt document processing in SharePoint
@@ -54,13 +54,16 @@ By default, prebuilt document processing is turned on for libraries in all Share
 
 6. In the **Sites where models can be used** section, select **Edit**.
 
-7. On the **Sites where models can be used** panel, change the setting from **All sites** to **Selected sites (up to 100)**. For selected sites, follow the instructions to select the sites or upload a CSV listing of the sites. You can then manage site access permissions for the sites you selected.
+7. On the **Sites where models can be used** panel, change the setting from **All sites** to **Selected sites (up to 100)**.
+
+   For selected sites, follow the instructions to select the sites or upload a CSV listing of the sites. You can then manage site access permissions for the sites you selected.
+
+   To allow model creation on content center sites, select **Enable prebuilt model creation in all content center sites (recommended)**.
+
+    ![Screenshot of the site scoping settings showing the option to enable prebuilt model creation in the content center.](../media/content-understanding/prebuilt-site-settings.png)
 
     > [!NOTE]
     > You must be a member of any site that you want to include in the CSV file.
-
-    > [!NOTE]
-    > Disabling a site after a model is made available to process files on that site doesn't disable the model. Models can still be used to process files and incur charges. A model can be made available to process files by being created on that site or in a content center.
 
     > [!NOTE]
     > For multi-geo environments, the **No sites** and **Selected sites** settings apply only to the primary geo of multi-geo tenants. If you want to restrict or add sites in nonprimary geos, contact Microsoft support.

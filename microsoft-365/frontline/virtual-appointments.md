@@ -1,7 +1,7 @@
 ---
 title: Virtual Appointments with Microsoft Teams
 author: lana-chin
-ms.author: v-chinlana
+ms.author: jtremper
 manager: jtremper
 ms.reviewer: revathim
 ms.topic: solution-overview

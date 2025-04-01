@@ -3,7 +3,7 @@ title: Choose your scenarios for Microsoft 365 for frontline workers
 description: Learn about scenarios you can easily implement for the frontline workers in your organization.
 search.appverid: MET150
 author: lana-chin
-ms.author: v-chinlana
+ms.author: jtremper
 manager: jtremper
 audience: admin
 ms.topic: solution-overview

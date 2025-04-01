@@ -5,10 +5,11 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 02/11/2025
+ms.date: 03/18/2025
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-domains
 ms.localizationpriority: medium
 ms.collection:
 - Tier2
@@ -32,6 +33,8 @@ description: "Learn to verify your domain and set up DNS records for email, Micr
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for.
 
 If GoDaddy is your DNS hosting provider, follow the steps in this article to verify your domain and set up DNS records for email, Teams, and so on.
+
+[!INCLUDE [How to get tech support for SMB](../../includes/smb-how-to-get-tech-support.md)]
 
 ## Before you begin
 

@@ -118,7 +118,7 @@ For more information and configuration examples for a small and medium business 
 
 ## Microsoft 365 training
 
-![Microsoft 365 Fundamentals training.](../media/microsoft-365-overview/m365-fundamentals.svg)
+![Microsoft 365 Fundamentals training.](../media/microsoft-365-overview/m365-fundamentals.png)
 
 To learn more about Microsoft 365 and work toward a Microsoft 365 certification, you can start with [Microsoft 365 Fundamentals](/training/courses/ms-900t01/).
 

@@ -3,7 +3,7 @@ title: "Download volume licensing products"
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: racheg, ronarg
+ms.reviewer: aasthatiwari, atuldubey
 audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-business
@@ -17,7 +17,7 @@ ms.custom:
 search.appverid: MET150
 ms.localizationpriority: medium
 description: "Learn about volume licensing downloads in the Microsoft 365 admin center."
-ms.date: 11/07/2024
+ms.date: 03/28/2025
 ---
 
 # Download volume licensing products

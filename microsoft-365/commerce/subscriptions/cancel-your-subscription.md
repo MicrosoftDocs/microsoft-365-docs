@@ -28,7 +28,7 @@ ms.custom:
 - campaignIDs-batch2
 search.appverid: MET150
 description: "Learn how to cancel your trial or paid subscriptions in the Microsoft 365 admin center."
-ms.date: 09/10/2024
+ms.date: 03/27/2025
 ---
 
 # Cancel your subscription in the Microsoft 365 admin center

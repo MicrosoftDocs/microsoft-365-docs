@@ -21,12 +21,12 @@ description: "Microsoft 365 network connectivity test tool"
 
 # Microsoft 365 network connectivity test tool
 
-The Microsoft 365 network connectivity test tool is located at <https://connectivity.office.com>. It's an adjunct tool to the network assessment and network insights available in the Microsoft 365 admin center under the **Health | Connectivity** menu.
+The Microsoft 365 network connectivity test tool is located at <https://connectivity.m365.cloud.microsoft>. It's an adjunct tool to the network assessment and network insights available in the Microsoft 365 admin center under the **Health | Connectivity** menu.
 
 > [!NOTE]
-> This document mentions the URL (<https://connectivity.office.com>) for the Global version of this tool. For other versions, please refer to the table below for the corresponding URLs.
+> This document mentions the URL (<https://connectivity.m365.cloud.microsoft>) for the Global version of this tool. For other versions, please refer to the table below for the corresponding URLs.
 
-|Feature|Global service <https://connectivity.office.com>|US Government (GCC)  <https://connectivity.office.com>| China operated by 21Vianet <https://connectivity.sovcloud.cn>|
+|Feature|Global service <br /><https://connectivity.m365.cloud.microsoft>|US Government (GCC)  <br /><https://connectivity.m365.cloud.microsoft>| China operated by 21Vianet <br /><https://connectivity.sovcloud.cn>|
 |:--|:--|:--|:--|
 |Anonymous test|✅|✅|✅|
 |Print report | ✅|✅|✅|
@@ -36,7 +36,7 @@ The Microsoft 365 network connectivity test tool is located at <https://connecti
 |Share report in tenant | ✅|✖️|✅|
 |Share report to public |  ✅|✖️|✅|
 |Network health status | ✅|✅|✅|
-|Tests for Microsoft 365 Copilot | ✅<br />(Public preview from mid of Dec 2024) |✖️|✖️|
+|Tests for Microsoft 365 Copilot | ✅|✖️|✖️|
 |Multi-languages support: English, Chinese Simplified, Chinese Traditional, Japanese| ✅|✅|✅|
 |Testing from the command line|  ✅|✖️|✅|
 |FAQ|  ✅|✅|✅|
@@ -68,7 +68,7 @@ After office location identification, we run a TCP latency test in JavaScript an
 
 Next, we start the download of the advanced tests client application. We rely on the user to launch the client application and they must also have .NET 6.0 Runtime installed.
 
-There are two parts to the Microsoft 365 network connectivity test: the web site <https://connectivity.office.com> and a downloadable Windows client application that runs advanced network connectivity tests. Most of the tests require the application to be run. It populates results back into the web page as it runs.
+There are two parts to the Microsoft 365 network connectivity test: the web site <https://connectivity.m365.cloud.microsoft> and a downloadable Windows client application that runs advanced network connectivity tests. Most of the tests require the application to be run. It populates results back into the web page as it runs.
 
 You'll be prompted to download the advanced client test application from the web site after the web browser tests have completed. Open and run the file when prompted.
 
@@ -177,6 +177,25 @@ The location looked up from the network egress IP Address might not be accurate 
 
 This network insight affects the selection of the Exchange Online service front door. To address this insight local and direct network egress should be a prerequisite and then DNS Recursive Resolver should be located close to that network egress.
 
+### Microsoft 365 Copilot
+
+The tests for Microsoft 365 Copilot generally available worldwide from 2025-3-25. The feature allow users to test the network connectivity, websocket enablement and latency of the major endpoints of Microsoft 365 Copilot, and also supports mobile device testing.
+
+You can read more about the network requirements for Microsoft 365 Copilot in [Microsoft 365 Copilot requirements](/copilot/microsoft-365/microsoft-365-copilot-requirements#network-requirements).
+
+#### Microsoft 365 Copilot HTTP Connectivity  
+
+We will test the HTTP connectivity for specific endpoints to ensure your connection to Microsoft 365 Copilot services is functioning properly. If you are on a managed network, please contact your IT or network administrator to add `*.cloud.microsoft` and `*.office.com` to the allow list. For more information, refer to the [Microsoft 365 Copilot requirements](/copilot/microsoft-365/microsoft-365-copilot-requirements#network-requirements).  
+
+#### Microsoft 365 Copilot Web Socket Enablement  
+
+Microsoft 365 Copilot uses WebSocket (WSS) as its communication protocol. If you are on a managed network, please contact your IT or network administrator to enable WebSocket (WSS) connectivity for Microsoft 365 Copilot domains. For additional details, see the [Microsoft 365 Copilot requirements](/copilot/microsoft-365/microsoft-365-copilot-requirements#network-requirements).  
+
+#### Microsoft 365 Copilot Latency  
+
+We will measure the average latency for Microsoft 365 Copilot endpoints. Please ensure WebSocket support is enabled. If the latency exceeds 250ms, it may result in a slower experience with Microsoft 365 Copilot. For more information, refer to the [Microsoft 365 Copilot requirements](/copilot/microsoft-365/microsoft-365-copilot-requirements#network-requirements).  
+
+
 ### Exchange Online
 
 This section shows test results related to Exchange Online.
@@ -254,33 +273,7 @@ This section shows the results of an ICMP traceroute to the Exchange Online serv
 > [!NOTE]
 > In reports generated in different versions, the addresses you see above may also vary slightly.
 
-### Microsoft 365 Copilot
 
-The public preview of tests for Microsoft 365 Copilot begins in December 2024.  You can navigate to <https://connectivity.office.com/copilot> or click the link on the home page <https://connectivity.office.com> to get started. 
-
-![The home page of connectivity test tool](../media/m365-mac-perf/mct-copilot-homepage.png)
-
-The feature allow users to test the network connectivity, websocket enablement and latency of the major endpoints of Microsoft 365 Copilot, and also supports mobile device testing.
-
-You can read more about the network requirements for Microsoft 365 Copilot in [Microsoft 365 Copilot requirements](/copilot/microsoft-365/microsoft-365-copilot-requirements#network-requirements).
-
-> [!NOTE]
-> This feature is currently only available in the global version of the tool, and it is in public preview.
-
-![The result page of tests for Copilot](../media/m365-mac-perf/mct-copilot-resultpae.png)
-
-
-#### Microsoft 365 Copilot HTTP Connectivity  
-
-We will test the HTTP connectivity for specific endpoints to ensure your connection to Microsoft 365 Copilot services is functioning properly. If you are on a managed network, please contact your IT or network administrator to add `*.cloud.microsoft` and `*.office.com` to the allow list. For more information, refer to the [Microsoft 365 Copilot requirements](/copilot/microsoft-365/microsoft-365-copilot-requirements#network-requirements).  
-
-#### Microsoft 365 Copilot Web Socket Enablement  
-
-Microsoft 365 Copilot uses WebSocket (WSS) as its communication protocol. If you are on a managed network, please contact your IT or network administrator to enable WebSocket (WSS) connectivity for Microsoft 365 Copilot domains. For additional details, see the [Microsoft 365 Copilot requirements](/copilot/microsoft-365/microsoft-365-copilot-requirements#network-requirements).  
-
-#### Microsoft 365 Copilot Latency  
-
-We will measure the average latency for Microsoft 365 Copilot endpoints. Please ensure WebSocket support is enabled. If the latency exceeds 250ms, it may result in a slower experience with Microsoft 365 Copilot. For more information, refer to the [Microsoft 365 Copilot requirements](/copilot/microsoft-365/microsoft-365-copilot-requirements#network-requirements).  
 
 
 ## Connectivity reports
@@ -301,7 +294,7 @@ This shows any significant health issues with Microsoft's global network, which 
 
 We provide a command line executable that can be used by your remote deployment, execution tools and run the same tests as are available in the Microsoft 365 network connectivity test tool web site.
 
-The command line test tool can be downloaded here: [Command Line Tool](https://connectivity.office.com/api/AnonymousConnectivityTest/DownloadStandAloneRichClient)
+The command line test tool can be downloaded here: [Command Line Tool](https://connectivity.m365.cloud.microsoft/api/AnonymousConnectivityTest/DownloadStandAloneRichClient)
 
 You can run it by double clicking the executable in Windows File Explorer, or you can start it from a command prompt, or you can schedule it with task scheduler.
 

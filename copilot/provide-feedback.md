@@ -41,7 +41,9 @@ Before you begin, you must have the following:
 
 ## Steps to provide feedback to Microsoft
 
-To provide feedback to Microsoft on behalf of a user who encountered a problem with Microsoft 365 Copilot, follow these steps:
+You can provide admin-initiated feedback for selected users across all Microsoft 365 apps where Copilot is available. To learn more about what apps have Copilot, see [Microsoft 365 Copilot overview](microsoft-365-copilot-overview.md).
+
+To give feedback to Microsoft on behalf of a user who encountered a problem with Microsoft 365 Copilot, follow these steps:
 
 1. Go to [admin.microsoft.com](https://admin.microsoft.com) and sign in with **Global Admin** or **AI admin** credentials. Select **Copilot** in the left navigation pane to enter the Copilot home page.
 

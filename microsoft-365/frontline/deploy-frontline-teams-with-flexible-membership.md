@@ -1,7 +1,7 @@
 ---
 title: Deploy frontline teams with flexible membership
 author: lana-chin
-ms.author: v-chinlana
+ms.author: jtremper
 manager: jtremper
 ms.reviewer: arnavgupta
 ms.topic: install-set-up-deploy

@@ -1,7 +1,7 @@
 ---
 title: Create a custom integration to sync your workforce management system with Shifts
 author: lana-chin
-ms.author: v-chinlana
+ms.author: jtremper
 manager: jtremper
 ms.reviewer: harrywong
 ms.topic: integration

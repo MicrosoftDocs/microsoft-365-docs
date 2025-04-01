@@ -29,14 +29,14 @@ ms.custom:
 - admindeeplinkMAC
 - GAUpdates
 description: "Learn how to redeem a product key to activate or extend your Microsoft business subscription." 
-ms.date: 09/05/2024
+ms.date: 03/26/2025
 ---
 
 # Enter your product key for a Microsoft business product or service
 
 Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/p/?linkid=2224585).
 
-A *product key* is a 25-character alphanumeric code that represents a prepaid license for a Microsoft business product or service. If you bought a Microsoft business product or service from a partner or a retail store, you use the product key to activate your new subscription. If you buy a prepaid license for a product that you already own, you can [use the product key to extend the expiration date](#extend-the-expiration-date-for-an-existing-subscription) of your subscription. You can also [use a product key to add more licenses to your subscription](licenses/buy-licenses.md#add-licenses-to-a-prepaid-subscription-by-using-a-product-key).
+A *product key* is a 25-character alphanumeric code that represents a prepaid license for a Microsoft business product or service. If you bought a Microsoft business product or service from a partner or a retail store, you use the product key to activate your new subscription. If you buy a prepaid license for a product that you already own, you can [use the product key to extend the expiration date](#extend-the-expiration-date-for-an-existing-subscription) of your subscription. You can also [use a product key to add more licenses to your subscription](licenses/buy-licenses.md#add-licenses-to-a-prepaid-subscription-by-using-a-product-key). To reduce licenses on your subscription, you must wait for your current active subscription to expire. Then you can create a new subscription with the desired number of licenses.
 
 **Need something else?**
 
@@ -45,7 +45,7 @@ A *product key* is a 25-character alphanumeric code that represents a prepaid li
   
 ## Before you begin
 
-If you’re an existing customer, you must be at least a Billing Administrator to do the tasks in this article. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).
+If you're an existing customer, you must be at least a Billing Administrator to do the tasks in this article. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).
 
 ## Activate a new subscription
 
@@ -70,8 +70,8 @@ To extend the expiration date for your prepaid subscription, you must use a new,
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
-    - If you’re using the **Simplified view**, select **Billing**.
-    - If you’re using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+    - If you're using the **Simplified view**, select **Billing**.
+    - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
 2. Select the subscription that you want to extend.
 

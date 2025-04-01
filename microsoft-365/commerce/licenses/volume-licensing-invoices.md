@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: sahilkhurana, ronarg
+ms.reviewer: aasthatiwari, atuldubey
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -21,7 +21,7 @@ ms.custom:
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to access your non-Azure volume licensing invoices in the Microsoft 365 admin center."
-ms.date: 02/21/2024
+ms.date: 03/28/2025
 ---
 
 # Microsoft volume licensing invoices

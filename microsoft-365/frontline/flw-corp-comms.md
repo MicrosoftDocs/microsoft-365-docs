@@ -3,7 +3,7 @@ title: Corporate communications with frontline workers
 description: Learn how you can use Viva Connections and Viva Engage to connect your frontline team to your broader organization.
 ms.topic: solution-overview
 author: lana-chin
-ms.author: v-chinlana
+ms.author: jtremper
 manager: jtremper
 audience: admin
 f1.keywords:

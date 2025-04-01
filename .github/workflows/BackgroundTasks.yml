@@ -9,6 +9,7 @@ on:
 
 jobs:
   upload:
+    if: github.repository_owner == 'MicrosoftDocs'
     runs-on: ubuntu-latest
 
     steps:

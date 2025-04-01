@@ -2,13 +2,14 @@
 title: "What is a domain?"
 f1.keywords:
 - CSH
-ms.author: nkagole
-author: nataliekagole
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
-ms.date: 08/12/2024
+ms.date: 03/18/2025
 audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-business
+ms.subservice: m365-domains
 ms.localizationpriority: medium
 ms.collection:
 - Tier2 
@@ -64,7 +65,7 @@ You can use a Microsoft domain like  *yourcompany.onmicrosoft.<span>com*  to sig
   
 ## Feeling stuck?
 
-Call Microsoft Support - [Get help setting up a domain](../../business-video/get-help-support.md)
+[!INCLUDE [How to get tech support for SMB](../../includes/smb-how-to-get-tech-support.md)]
 
 ## Related content
 

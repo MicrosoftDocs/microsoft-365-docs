@@ -5,10 +5,11 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 11/18/2024
+ms.date: 03/18/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
+ms.subservice: m365-domains
 ms.localizationpriority: high
 ms.collection: 
 - Tier2
@@ -134,7 +135,6 @@ Why might your domain's zone file be somewhere besides at your domain registrar?
 
 ::: moniker range="o365-worldwide"
 ## Why add a domain in Microsoft 365?
-
 
 Adding a custom domain, like fourthcoffee.com, to Microsoft 365 lets you use a shorter, more familiar email address and userID with the service. You're [given a domain to use](../setup/domains-faq.yml) when you sign up for a Microsoft 365 account, but it includes "onmicrosoft.com." Many people prefer to add their organization or business domain if they plan to use Microsoft 365 for email. 
   

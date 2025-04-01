@@ -1,7 +1,7 @@
 ---
 title: Deploy frontline dynamic teams at scale
 author: lana-chin
-ms.author: v-chinlana
+ms.author: jtremper
 manager: jtremper
 ms.reviewer: arnavgupta, aaglick
 ms.topic: how-to

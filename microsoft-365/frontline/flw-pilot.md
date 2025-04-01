@@ -2,7 +2,7 @@
 title: Start with a pilot deployment of Microsoft 365 for frontline workers
 description: Learn how to run a pilot deployment for the frontline workers in your organization. 
 author: lana-chin
-ms.author: v-chinlana
+ms.author: jtremper
 manager: jtremper
 ms.topic: install-set-up-deploy
 audience: admin

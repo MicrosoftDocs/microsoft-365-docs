@@ -1,7 +1,7 @@
 ---
 title: Overview of device management for frontline workers
 author: lana-chin
-ms.author: v-chinlana
+ms.author: jtremper
 manager: jtremper
 ms.reviewer: aaglick
 ms.topic: concept-article
@@ -154,6 +154,18 @@ MFA supports several forms of verification methods, including the Microsoft Auth
 MFA provides a high level of security for apps and data but adds friction to user sign in. For organizations that choose BYOD deployments, MFA might or might not be a practical option. It's highly recommended that business and technical teams validate the user experience with MFA before a broad rollout so that the user impact can be properly considered in change management and readiness efforts.
 
 If MFA isn't feasible for your organization or deployment model, you should plan to use robust Conditional Access policies to reduce security risk.
+
+#### Using the Authenticator App for MFA
+<p>
+  If you're planning to use the Microsoft Authenticator app for multi-factor authentication (MFA), we recommend setting it up with a desktop companion device (such as a laptop or PC). This makes onboarding easier by allowing you to scan QR codes and follow setup instructions more efficiently.
+</p>
+<p>
+  For step-by-step guidance, refer to this Microsoft support article:<br>
+  <a href="https://support.microsoft.com/account-billing/set-up-an-authenticator-app-as-a-two-step-verification-method-2db39828-15e1-4614-b825-6e2b524e7c95" target="_blank">
+    Set up an Authenticator app as a two-step verification method
+  </a>
+</p>
+
 
 #### Passwordless authentication
 

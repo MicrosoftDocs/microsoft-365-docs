@@ -125,7 +125,7 @@ if(!$settingsObjectID)
 	  values = @(
 		    @{
 			       name = "EnableMSStandardBlockedWords"
-			       value = "true"
+			       value = $true
 		     }
 	 	     )
 	     }

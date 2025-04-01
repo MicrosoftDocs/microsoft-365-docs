@@ -1,7 +1,7 @@
 ---
 title: Learn where to start with a frontline deployment
 author: lana-chin
-ms.author: v-chinlana
+ms.author: jtremper
 manager: jtremper
 ms.reviewer: aaglick
 ms.topic: install-set-up-deploy

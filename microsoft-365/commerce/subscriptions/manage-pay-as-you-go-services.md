@@ -25,7 +25,7 @@ ms.custom:
 search.appverid: MET150
 ROBOTS: noindex, nofollow
 description: "Learn how to buy a subscription with a calling plan and enable overage for Microsoft Teams calls."
-ms.date: 09/10/2024
+ms.date: 03/27/2025
 ---
 
 # Enable pay-as-you-go for your subscription

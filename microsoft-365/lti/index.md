@@ -80,6 +80,7 @@ The integration allows you to Connect Class Teams and add Teams Assignments righ
 - [Microsoft Assignments integration with Schoology Learning](teams-assignments-with-schoology.md).
 - [Microsoft Assignments integration with Blackboard](teams-assignments-with-blackboard.md).
 - [Microsoft Assignments integration with Desire2Learn Brightspace](teams-assignments-with-brightspace.md).
+- [Microsoft Assignments integration with any LTI 1.3 compliant LMS](teams-assignments-with-other-lms.md).
 
 More LMS support coming soon! Please sign up for more information on current and future LMS integration previews at https://aka.ms/LMSPreview
 

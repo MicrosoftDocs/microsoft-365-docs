@@ -1,7 +1,7 @@
 ---
 title: Virtual Appointments with Teams - Integration into Oracle Health EHR
 author: lana-chin
-ms.author: v-chinlana
+ms.author: jtremper
 manager: jtremper
 audience: ITPro
 ms.topic: integration
