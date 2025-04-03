@@ -300,6 +300,8 @@ items:
               href: activity-reports/email-activity-ww.md
             - name: Email apps usage
               href: activity-reports/email-apps-usage-ww.md
+            - name: Exchange Web Services usage
+              href: activity-reports/ews-usage.md
             - name: Forms activity
               href: activity-reports/forms-activity-ww.md
             - name: Mailbox usage

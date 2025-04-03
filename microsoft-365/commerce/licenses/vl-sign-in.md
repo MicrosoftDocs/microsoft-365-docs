@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: roryh, racheg
+ms.reviewer: aasthatiwari, atuldubey
 audience: Admin
 ms.topic: how-to 
 ms.service: microsoft-365-business
@@ -18,7 +18,7 @@ ms.custom:
 search.appverid: MET150
 ms.localizationpriority: medium
 description: "Learn how to sign in to the Microsoft 365 admin center for volume licensing products."
-ms.date: 01/10/2025
+ms.date: 03/28/2025
 ---
 
 # Sign in to the Microsoft 365 admin center (volume licensing)  

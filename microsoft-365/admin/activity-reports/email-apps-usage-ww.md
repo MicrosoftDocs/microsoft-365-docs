@@ -1,7 +1,7 @@
 ---
 title: "Microsoft 365 admin center email apps usage reports"
-ms.author: efrene
-author: efrene
+ms.author: camillepack
+author: camillepack
 manager: scotv
 ms.date: 06/24/2024
 audience: Admin

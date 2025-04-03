@@ -25,7 +25,7 @@ ms.custom:
 - GAUpdates
 search.appverid: MET150
 description: "Learn how to change how often you're billed for your Microsoft 365 for business subscription."
-ms.date: 01/07/2025
+ms.date: 03/27/2025
 ---
 
 # Change your Microsoft 365 subscription billing frequency

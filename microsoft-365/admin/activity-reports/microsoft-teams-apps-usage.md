@@ -1,7 +1,7 @@
 ---
 title: "Microsoft 365 admin center Teams app usage reports"
-ms.author: efrene
-author: efrene
+ms.author: camillepack
+author: camillepack
 manager: scotv
 ms.date: 1/25/2024
 audience: Admin

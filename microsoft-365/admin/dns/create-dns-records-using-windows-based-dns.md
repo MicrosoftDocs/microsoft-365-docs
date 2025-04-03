@@ -9,6 +9,7 @@ ms.date: 09/05/2024
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-domains
 ms.localizationpriority: medium
 ms.collection: 
 - Tier2
@@ -36,7 +37,9 @@ If you host your own DNS records using Windows-based DNS, follow the steps in th
   
 To get started, you need to find your DNS records in Windows-based DNS so you can update them. Also, if you're planning to synchronize your on-premises Active Directory with Microsoft, see [Non-routable email address used as a UPN in your on-premises Active Directory](#non-routable-email-address-used-as-a-upn-in-your-on-premises-active-directory).
   
-Trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
+Trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
+
+[!INCLUDE [How to get tech support for SMB](../../includes/smb-how-to-get-tech-support.md)]
   
 ## Find your DNS records in Windows-based DNS
 <a name="BKMK_find_your_dns_1"> </a>

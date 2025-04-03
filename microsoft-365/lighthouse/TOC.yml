@@ -17,6 +17,8 @@ items:
       href: m365-lighthouse-overview-of-permissions.md
     - name: Manage Lighthouse RBAC permissions
       href: m365-lighthouse-manage-lighthouse-rbac-permissions.md
+    - name: View your assigned roles
+      href: m365-lighthouse-view-your-roles.md
     - name: Configure portal security
       href: m365-lighthouse-configure-portal-security.md 
     - name: Review audit logs
@@ -71,8 +73,6 @@ items:
       href: m365-lighthouse-tenants-page-overview.md
     - name: Create a customer report
       href: m365-lighthouse-create-customer-report.md
-    - name: View your Microsoft Entra roles across tenants
-      href: m365-lighthouse-view-your-roles.md
     - name: Manage your tenant list
       href: m365-lighthouse-manage-tenant-list.md
     - name: View tenant service health
@@ -135,8 +135,6 @@ items:
   items:
     - name: Overview of Sales Advisor
       href: m365-lighthouse-sales-advisor-overview.md
-    - name: Get access to Sales Advisor
-      href: m365-lighthouse-get-access-to-sales-advisor.md
     - name: Understand opportunities and data
       href: m365-lighthouse-understanding-opportunities-and-data.md
     - name: View opportunities in Sales Advisor

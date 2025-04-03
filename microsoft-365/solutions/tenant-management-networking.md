@@ -106,7 +106,7 @@ The Office 365 CDN is composed of multiple CDNs that allow you to host static as
 
 When deployed and configured, the Office 365 CDN uploads assets from public origins and makes them available for fast access to users located across the Internet.
 
-![Office 365 CDN deployed for users.](../media/O365-CDN/o365-cdn-flow-transparent.svg "Office 365 CDN deployed for users")
+![Office 365 CDN deployed for users.](../media/O365-CDN/o365-cdn-flow-transparent.png "Office 365 CDN deployed for users")
 
 For more information, see [Use the Office 365 CDN with SharePoint Online](../enterprise/use-microsoft-365-cdn-with-spo.md).
 

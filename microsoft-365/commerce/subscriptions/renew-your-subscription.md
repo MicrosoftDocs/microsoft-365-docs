@@ -28,7 +28,7 @@ ms.custom:
 - campaignIDs-batch1
 search.appverid: MET150 
 description: "Learn how to manage your subscription renewal for a Microsoft business subscription by turning recurring billing off or on."
-ms.date: 07/22/2024
+ms.date: 03/27/2025
 ---
 
 # Manage recurring billing in the Microsoft 365 admin center

@@ -369,6 +369,16 @@ For more information about this cmdlet, see [Set-SPOTenantCdnEnabled](/powershel
 
 <a name="CDNSetupinPnPPosh"> </a>
 
+<a name="CDNSetupinPnPPosh"> </a>
+
+<a name="CDNSetupinPnPPosh"> </a>
+
+<a name="CDNSetupinPnPPosh"> </a>
+
+<a name="CDNSetupinPnPPosh"> </a>
+
+<a name="CDNSetupinPnPPosh"> </a>
+
 ## Set up and configure the Office 365 CDN by using PnP PowerShell
 
 The procedures in this section require you to use PnP PowerShell to connect to SharePoint Online. For instructions, see [Getting started with PnP PowerShell](https://github.com/SharePoint/PnP-PowerShell#getting-started).
@@ -649,6 +659,16 @@ For more information about this cmdlet, see [Set-PnPTenantCdnEnabled](https://pn
 
 <a name="CDNSetupinCLI"> </a>
 
+<a name="CDNSetupinCLI"> </a>
+
+<a name="CDNSetupinCLI"> </a>
+
+<a name="CDNSetupinCLI"> </a>
+
+<a name="CDNSetupinCLI"> </a>
+
+<a name="CDNSetupinCLI"> </a>
+
 ## Set up and configure the Office 365 CDN using the CLI for Microsoft 365
 
 The procedures in this section require the [CLI for Microsoft 365](https://aka.ms/cli-m365). Then, connect to your Office 365 tenant using the [login](https://pnp.github.io/cli-microsoft365/cmd/login/) command.
@@ -826,17 +846,17 @@ If the _Publishing_ feature isn't enabled for a public origin, or the asset isn'
 For public CDN assets, the URL format looks like the following example:
 
 ```http
-https://publiccdn.sharepointonline.com/<TenantHostName>/sites/site/library/asset.png
+https://public-cdn.sharepointonline.com/<TenantHostName>/sites/site/library/asset.png
 ```
 
 Replace `TenantHostName` with your tenant name. For example:
 
 ```http
-https://publiccdn.sharepointonline.com/contoso.sharepoint.com/sites/site/library/asset.png
+https://public-cdn.sharepointonline.com/contoso.sharepoint.com/sites/site/library/asset.png
 ```
 
 > [!NOTE]
-> Use the page context property to construct the prefix instead of hard coding `https://publiccdn.sharepointonline.com`, because the URL is subject to change. If you use display templates with Classic SharePoint Online, you can use the property `window._spPageContextInfo.publicCdnBaseUrl` in your display template for the prefix of the URL. If you use SPFx web parts for modern and classic SharePoint, you can use the property `this.context.pageContext.legacyPageContext.publicCdnBaseUrl`, which also provides the prefix. If the prefix changes, your implementation is updated with it.
+> Use the page context property to construct the prefix instead of hard coding `https://public-cdn.sharepointonline.com`, because the URL is subject to change. If you use display templates with Classic SharePoint Online, you can use the property `window._spPageContextInfo.publicCdnBaseUrl` in your display template for the prefix of the URL. If you use SPFx web parts for modern and classic SharePoint, you can use the property `this.context.pageContext.legacyPageContext.publicCdnBaseUrl`, which also provides the prefix. If the prefix changes, your implementation is updated with it.
 >
 > As an example for SPFx, you can construct the URL using the property `this.context.pageContext.legacyPageContext.publicCdnBaseUrl` - `/` - `host` - `/` - `relativeURL for the item`. For more information, see the video [Using CDN in Client-side code](https://youtu.be/IH1RbQlbhIA), which is part of the [season 1 performance series](https://aka.ms/sppnp-perfvideos).
 

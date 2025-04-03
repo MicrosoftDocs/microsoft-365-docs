@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 02/03/2025
+ms.date: 04/01/2025
 ms.topic: article
 ms.service: microsoft-365-backup
 ms.custom: backup
@@ -57,6 +57,9 @@ All other states indicate that there's no active Microsoft 365 Backup Storage Co
 ###	Step 3: Activate your application to be the Microsoft 365 Backup Storage Controller
 
 To activate your application as the Microsoft 365 Backup Storage Controller depends on whether or not there's already an existing Microsoft 365 Backup Storage Controller (either first-party or third-party).
+
+> [!NOTE]
+> Controllership transfers currently only work from first-party applications to third-party applications. We do not yet support transfers from third-party applications back to first-party applications.
 
 #### No existing Microsoft 365 Backup Storage Controller
 

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
-ms.date: 11/07/2024
+ms.date: 03/26/2025
 audience: Admin
 ms.topic: get-started
 ms.service: microsoft-365-business
@@ -61,7 +61,9 @@ To learn more about these roles, see [Microsoft Entra built-in roles - Microsoft
 We currently support most groups supported by Microsoft Entra ID, including Microsoft 365 groups, distribution lists, and security groups. We support users in top-level groups or groups without parent groups, but not users in nested groups or groups that have parent groups. To know more, read the documentation on [Assign users and groups to application](/azure/active-directory/manage-apps/assign-user-or-group-access-portal?pivots=portal).
 
 > [!NOTE]
-> Non-mail enabled security groups are not currently supported.
+> The following are currently not supported:
+> - Non-mail enabled security groups
+> - Dynamic distribution groups
 
 In the following example, Sandra, Sheila, and the Sales Department group are assigned to an app or add-in. Because the West Coast Sales Department is a nested group, Bert and Fred aren't assigned to an app or add-in.
 

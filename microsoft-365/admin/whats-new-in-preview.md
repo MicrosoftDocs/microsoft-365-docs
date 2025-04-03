@@ -51,6 +51,18 @@ And if you'd like to know what's new with other Microsoft cloud services, check 
 - [Microsoft 365 updates](/OfficeUpdates/)
 - [How to check Windows release health](/windows/deployment/update/check-release-health)
 
+## March 2025
+
+### Exchange Web Services usage report
+
+:::image type="content" source="../media/exchange-web-usage-report.png" alt-text="Screenshot showing the line chart for the Exchange web usage report." lightbox="../media/exchange-web-usage-report.png":::
+
+The Microsoft 365 admin center now includes a new Exchange Web Services (EWS) usage report that provides insights into the non-Microsoft (third-party) applications in your tenant that use EWS. The report provides detailed information on the specific actions performed by these applications and their call volumes over a selected period. The report enhances your ability to understand EWS activity prior to EWS deprecation in Microsoft Exchange Online.
+
+The report is available by default in the Microsoft 365 admin center under **Reports** > **Usage** > **Exchange** > **EWS usage**.
+
+To learn more, see [Microsoft 365 Reports in the admin center – EWS usage](/microsoft-365/admin/activity-reports/ews-usage).
+
 ## February 2025
 
 ### Provide admin-initiated feedback for Microsoft 365 Copilot

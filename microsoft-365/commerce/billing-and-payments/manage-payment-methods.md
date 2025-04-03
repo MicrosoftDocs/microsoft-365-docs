@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: lishepar, ramagane
+ms.reviewer: lishepar, jobailey
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -61,7 +61,7 @@ When you buy Microsoft business products or services, you can use an existing pa
 
 If you have an MOSA billing account type, you can replace the payment method for all subscriptions that use another payment method as part of adding a new one. You can also replace a payment method later on.
 
-## Add a payment method for an MCA or MOSA account
+### Add a payment method for an MCA or MOSA account
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 

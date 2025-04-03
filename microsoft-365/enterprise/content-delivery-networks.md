@@ -59,7 +59,7 @@ The built-in Microsoft 365 Content Delivery Network (CDN) allows Microsoft 365 a
 
 The Microsoft 365 CDN is composed of multiple CDNs that allow you to host static assets in multiple locations, or _origins_, and serve them from global high-speed networks. 
 
-![Microsoft 365 CDN conceptual diagram.](../media/O365-CDN/o365-cdn-flow-transparent.svg "Microsoft 365 CDN conceptual diagram")
+![Microsoft 365 CDN conceptual diagram.](../media/O365-CDN/o365-cdn-flow-transparent.png "Microsoft 365 CDN conceptual diagram")
 
 Content in **public** origins within the Microsoft 365 CDN is accessible anonymously, and can be accessed by anyone who has URLs to hosted assets. Because access to content in public origins is anonymous, you should only use them to cache non-sensitive generic content such as JavaScript files, scripts, icons and images. The Microsoft 365 CDN is used by default for downloading generic resource assets like the Microsoft 365 client applications from a public origin.
 

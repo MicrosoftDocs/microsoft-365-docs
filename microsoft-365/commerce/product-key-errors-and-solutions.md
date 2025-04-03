@@ -24,7 +24,7 @@ ms.custom:
 search.appverid: MET150
 ROBOTS: NOINDEX
 description: "Learn how to resolve the issues that you face when you enter your product key for Microsoft 365 for business."
-ms.date: 09/05/2024
+ms.date: 03/26/2025
 ---
 
 # Problems with your Microsoft 365 for business product key?

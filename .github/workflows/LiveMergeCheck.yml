@@ -12,6 +12,7 @@ on:
 jobs:
 
   live-merge:
+    if: github.repository_owner == 'MicrosoftDocs'
     uses: MicrosoftDocs/microsoft-365-docs/.github/workflows/Shared-LiveMergeCheck.yml@workflows-prod
     with:
       PayloadJson: ${{ toJSON(github) }}

@@ -26,7 +26,7 @@ ms.custom:
 - campaignIDs-batch1
 search.appverid: MET150
 description: "Learn how to interpret the charges on your invoice for your Microsoft business subscription with an MCA billing account."
-ms.date: 02/22/2024
+ms.date: 04/01/2025
 ---
 
 # Understand your invoice for your Microsoft MCA billing account

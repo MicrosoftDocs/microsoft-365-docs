@@ -51,7 +51,7 @@ We are detecting WebSocket (WSS) connection failures to the domain: `*.cloud.mic
 
   Check your network perimeter devices or proxy to ensure WebSocket protocol is allowed for connections to hosts in the wildcard domain `*.cloud.microsoft` or its subdomains. 
   
-#### Three Network provider devices are affecting your network
+#### 3. Network provider devices are affecting your network
 
 There is one or more cloud proxy-like services that are affecting your connectivity to Microsoft 365 services. These services are causing higher latency and lower throughput for users in your network as compared to other users in your area.
 

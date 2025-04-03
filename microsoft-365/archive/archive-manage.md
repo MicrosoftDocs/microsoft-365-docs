@@ -84,14 +84,22 @@ You can also change the status of an archived site by using the PowerShell cmdle
 
 ## Site templates supported
 
-|Template ID  |Template  |
-|---------|---------|
-|1     |Document Workspace  |
-|4     |Wiki Site           |
-|9     |Blog                |
-|32    |News Site           |
-|64    |Team Site           |
-|68    |Communication Site  |
+|Template ID  |Template  |Template name|
+|---------|---------|---------|
+|1|Team site / Document Workspace|STS#0|
+|1|Team site / Document Workspace|STS#1|
+|1|Team site / Document Workspace|STS#2|
+|1|Team site / Document Workspace|STS#3|
+|68|Communication site|SITEPAGEPUBLISHING#0|
+|64|Teams site|GROUP#0|
+|32|News site|SPSNEWS#0|
+|33|News site|SPSNHOME#0|
+|4|Wiki site|WIKI#0|
+|56|Enterprise Wiki|ENTERWIKI#0|
+|7|Document center|BDR#0|
+|14483|Records Center|OFFILE#0|
+|14483|Records Center|OFFILE#1|
+
 
 > [!NOTE]
 > OneDrive accounts (site template 21) cannot be archived by admins.  Some accounts will be put into archive by the OneDrive service when they are unlicensed for 93 days or more.  When the service archives these accounts, admins can reactivate the accounts via PowerShell. [Learn more about unlicensed OneDrive accounts](/SharePoint/unlicensed-onedrive-accounts).

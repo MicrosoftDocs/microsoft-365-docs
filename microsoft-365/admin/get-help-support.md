@@ -63,6 +63,9 @@ Save time by starting your service request online. We can help you find a soluti
 4. If the results don't help, at the bottom, select **Contact Support**.
 5. Enter a description of your issue, confirm your contact number and email address, select your preferred contact method, and then select **Contact me**. The expected wait time is indicated in the **Contact support** pane.
 
+> [!NOTE]
+> For a smoother support experience, we recommend that you open separate support requests for each issue.
+
 ## Phone support
 
 > [!IMPORTANT]

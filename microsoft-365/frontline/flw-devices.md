@@ -155,6 +155,18 @@ MFA provides a high level of security for apps and data but adds friction to use
 
 If MFA isn't feasible for your organization or deployment model, you should plan to use robust Conditional Access policies to reduce security risk.
 
+#### Using the Authenticator App for MFA
+<p>
+  If you're planning to use the Microsoft Authenticator app for multi-factor authentication (MFA), we recommend setting it up with a desktop companion device (such as a laptop or PC). This makes onboarding easier by allowing you to scan QR codes and follow setup instructions more efficiently.
+</p>
+<p>
+  For step-by-step guidance, refer to this Microsoft support article:<br>
+  <a href="https://support.microsoft.com/account-billing/set-up-an-authenticator-app-as-a-two-step-verification-method-2db39828-15e1-4614-b825-6e2b524e7c95" target="_blank">
+    Set up an Authenticator app as a two-step verification method
+  </a>
+</p>
+
+
 #### Passwordless authentication
 
 To further simplify access for your frontline workforce, you can use passwordless authentication methods so that workers don't need to remember or enter their passwords. Passwordless authentication methods remove the use of a password at sign-in and replaces it with:

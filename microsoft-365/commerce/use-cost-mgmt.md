@@ -3,7 +3,7 @@ title: "Use Cost management in the Microsoft 365 admin center"
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, ramagane
+ms.reviewer: shrshett, vikdesai
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business

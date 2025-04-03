@@ -14,7 +14,7 @@ on:
 
 jobs:
     get-previous-run:
-        if: github.repository_visibility == 'private'
+        if: github.repository_owner == 'MicrosoftDocs' && github.repository_visibility == 'private'
         name: Get previous run ID
         runs-on: ubuntu-latest
         continue-on-error: true
@@ -42,7 +42,7 @@ jobs:
                 echo "Previous run ID: ${{ steps.previous_run.outputs.previous_run_id }}"
 
     update-includes:
-      if: github.repository_visibility == 'private'
+      if: github.repository_owner == 'MicrosoftDocs' && github.repository_visibility == 'private'
       needs: get-previous-run
       name: Update includes
       runs-on: ubuntu-latest

@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: roryh, racheg
+ms.reviewer: aasthatiwari, atuldubey
 audience: Admin
 ms.topic: how-to 
 ms.service: microsoft-365-business
@@ -18,7 +18,7 @@ ms.custom:
 search.appverid: MET150
 ms.localizationpriority: medium
 description: "Learn how to manage License Reservations in the Microsoft 365 admin center."
-ms.date: 02/05/2025
+ms.date: 03/28/2025
 ---
 
 # Manage License Reservations for volume licensing
