@@ -28,13 +28,13 @@ description: "Learn about service advisories for non-compliant shared mailboxes 
 
 An Exchange Online service advisory informs you about shared mailboxes which are out of compliance. These service advisories provide visibility to the number of shared mailboxes in your organization that might require admin intervention. 
 
-These service advisories are displayed in the Microsoft 365 admin center. To view these service advisories, you can go to **Health > Service health > Overview** and then look for **Shared mailbox(es) have exceeded the 50 GB storage limit in your tenant**, or you can go **Health > Service health > Exchange Online** and select the **Active issues** tab. Here's an example of a non-compliant shared mailbox service advisory under Service Health.
+These service advisories are displayed in the Microsoft 365 admin center. To view these service advisories, you can go to **Health > Service health > Overview** and then look for **Shared mailbox(es) have exceeded the 50 GB storage limit in your tenant**, or you can go to **Health > Service health > Exchange Online** and select the **Active issues** tab. Here's an example of a non-compliant shared mailbox service advisory under Service Health.
 
 :::image type="content" source="../media/m365-non-compliant-shared-mailboxes-exo-service-advisory-1.png" alt-text="Service health - issues for your organization to act on":::
 
 ## What does this service advisory indicate?
 
-The service advisories for non-compliant shared mailboxes inform admins about their tenants having shared mailboxes that exceed 50 GB storage and don't have a required license. These advisories provide awareness so that you can take these limits into consideration when managing and troubleshooting shared mailboxes.
+The service advisories for non-compliant shared mailboxes inform admins about their tenants having shared mailboxes that exceed 50 GB storage without having the required licenses. These advisories provide awareness so that you can take these limits into consideration when managing and troubleshooting shared mailboxes.
 
 Here’s an example of the advisory:
 
@@ -46,43 +46,43 @@ You can expect to see this type of advisory until the time when shared mailbox s
 
 ## More information
 
-Identifying Non-compliant Shared Mailboxes is a two-step process:
+Identifying non-compliant shared mailboxes is a two-step process:
 
-1.	Identify Shared Mailboxes with > 50 GB storage
-2.	Check licensing for those Shared Mailboxes
+1.	Identify shared mailboxes with > 50 GB storage.
+2.	Check licensing for those shared mailboxes.
 
-## Identifying Non-Compliant Shared Mailboxes in Exchange Online via Exchange Admin Center
+## Identifying non-compliant shared mailboxes in Exchange Online via Exchange Admin Center
 
-To ensure your shared mailboxes comply with Exchange storage limits, follow these steps to identify those exceeding 50 GB and check their licensing status.
+To ensure your shared mailboxes comply with Exchange storage limits, follow these steps to identify those exceeding 50 GB and to check their licensing status.
 
-### Retrieve Shared Mailboxes Exceeding 50 GB
+### Retrieve shared mailboxes exceeding 50 GB
 
-1.	Access the Exchange Admin Center Portal.
+1.	Access the Microsoft 365 admin center portal.
 2.	Generate Usage Reports:
-    - Go to **Reports -> Usage -> Exchange**.
-    - Select **Mailbox Usage**.
+    1. Go to **Reports -> Usage -> Exchange**.
+    1. Select **Mailbox Usage**.
 3.	Export Mailbox Data:
-    - Ensure the **Recipient type** column is checked.
-    - Select **Export** to download the report.
+    1. Ensure the **Recipient type** column is checked.
+    1. Select **Export** to download the report.
 4.	Filter Shared Mailboxes:
-    - Open the downloaded CSV file.
-    - Filter the **Recipient type** column to show only "**Shared**" mailboxes.
+    1. Open the downloaded CSV file.
+    1. Filter the **Recipient type** column to show only "**Shared**" mailboxes.
 5.	Convert Storage Data:
-    - The Storage Used (Byte) column displays data in Bytes. Convert this to Gigabytes (GB) by dividing the values by 1,073,741,824 (1024^3).
-6.	Identify Mailboxes with Storage > 50 GB:
-    - Filter the converted storage data to identify mailboxes with sizes greater than 50 GB.
+    1. The **Storage Used (Byte)** column displays data in "Bytes". Convert this to Gigabytes (GB) by dividing the values by 1,073,741,824 (1024^3).
+6.	Identify mailboxes with Storage > 50 GB:
+    1. Filter the converted storage data to identify mailboxes with sizes greater than 50 GB.
 
-### Check Licensing for Shared Mailboxes exceeding 50 GB
+### Check licensing for shared mailboxes exceeding 50 GB
 
-1.	Access Active Users:
-    - Go to **Home -> Active Users**.
-2.	Locate Mailboxes with Storage > 50 GB:
-    - Select the mailboxes identified in the previous step 6 that have more than 50 GB of storage.
-3.	Verify Licensing:
-    - Go to **License and Apps** for the selected user.
-    - If the mailbox is assigned Exchange Online (Plan 1), it isn't in compliance. You need to either assign Exchange Online (Plan 2) or reduce the storage to less than 50 GB.
+1.	Access active users:
+    1. Go to **Home -> Active Users**.
+2.	Locate mailboxes with storage > 50 GB:
+    1. Select the mailboxes identified in the earlier step that have more than 50 GB of storage.
+3.	Verify licensing:
+    1. Go to **License and Apps** for the selected user.
+    1. If the mailbox is assigned Exchange Online (Plan 1), it isn't in compliance. You need to either assign Exchange Online (Plan 2) or reduce the storage to less than 50 GB.
 
-## Identifying Non-Compliant Shared Mailboxes in Exchange Online through PowerShell
+## Identifying non-compliant shared mailboxes in Exchange Online through PowerShell
 
 You can use PowerShell to identify non-compliant shared mailboxes. Save the following script to your local hard drive and run it in PowerShell:
 

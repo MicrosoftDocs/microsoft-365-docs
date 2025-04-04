@@ -3,7 +3,7 @@ title: "Set Bookings scheduling policies"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 05/28/2024
+ms.date: 04/02/2025
 audience: Admin
 ms.topic: how-to
 ms.service: bookings

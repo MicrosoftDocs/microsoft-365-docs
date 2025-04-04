@@ -3,7 +3,7 @@ title: "Set up your shared booking page"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 06/21/2024
+ms.date: 04/02/2025
 audience: Admin
 ms.topic: how-to
 ms.service: bookings
@@ -28,8 +28,6 @@ On the home page of Bookings, navigate to the Shared Bookings section and select
    :::image type="content" source="../media/create-shared-booking-page.png" alt-text="Screenshot showing step one out of four for creating a shared booking page in Microsoft Bookings" lightbox="../media/create-shared-booking-page.png":::
 
 2. Invite staff - Add your team members in this section. These people will be able to view and manage bookings for the team based on the team roles assigned. You can choose to configure this later as well.
-
-   :::image type="content" source="../media/booking-page-invite-staff.png" alt-text="Screenshot showing step two out of four for creating a shared booking page in Microsoft Bookings" lightbox="../media/booking-page-invite-staff.png":::
 
 3. Add a service - You can add the list of services you wish to offer or customize the default service shown. You can choose to configure this later and proceed with the default service.
 

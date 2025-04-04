@@ -1052,22 +1052,22 @@
    },
    {
       "source_path":"microsoft-365/enterprise/routing-with-expressroute.md",
-      "redirect_url":"/microsoft-365/eenterprise/azure-expressroute",
+      "redirect_url":"/microsoft-365/enterprise/azure-expressroute",
       "redirect_document_id":false
    },
    {
       "source_path":"microsoft-365/enterprise/managing-expressroute-for-connectivity.md",
-      "redirect_url":"/microsoft-365/eenterprise/azure-expressroute",
+      "redirect_url":"/microsoft-365/enterprise/azure-expressroute",
       "redirect_document_id":false
    },
    {
       "source_path":"microsoft-365/enterprise/bgp-communities-in-expressroute.md",
-      "redirect_url":"/microsoft-365/eenterprise/azure-expressroute",
+      "redirect_url":"/microsoft-365/enterprise/azure-expressroute",
       "redirect_document_id":false
    },
    {
       "source_path":"microsoft-365/enterprise/network-planning-with-expressroute.md",
-      "redirect_url":"/microsoft-365/eenterprise/azure-expressroute",
+      "redirect_url":"/microsoft-365/enterprise/azure-expressroute",
       "redirect_document_id":false
    },
    {
@@ -1428,6 +1428,16 @@
    {
       "source_path": "microsoft-365/enterprise/contoso-win10.md",
       "redirect_url": "/microsoft-365/enterprise/contoso-win11",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/manage-skype-for-business-online-with-microsoft-365-powershell.md",
+      "redirect_url": "/microsoftteams/teams-powershell-managing-teams",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/manage-skype-for-business-online-policies-with-microsoft-365-powershell.md",
+      "redirect_url": "/microsoftteams/assign-policies-users-and-groups",
       "redirect_document_id": false
    }
   ]

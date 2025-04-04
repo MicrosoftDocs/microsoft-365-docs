@@ -454,7 +454,7 @@ All messages have a state that indicates their creation or delivery status, incl
 
 ### How does localization work in Organizational messages?
 
-**For premade messages**, your message is delivered to end users who have their related product language set to one of the following:
+For **premade messages**, your message is delivered to end users who have their related product language set to one of the following:
 
 - en-US
 - de-DE
@@ -472,11 +472,16 @@ All messages have a state that indicates their creation or delivery status, incl
 - zh-Hans
 - zh-Hant
 
-For example, if the Organizational Messages Writer (admin) selects message A to be sent to their end users, then any end users with their product language set to one of the above languages qualifies to receive the message A.
+For example, if the Organizational Messages Writer (admin) selects "Message A" to send to end users, any end user whose preferred language matches one of the supported languages listed above will qualify to receive "Message A."
 
-**For customized messages**, your message will only be delivered in the language in which it was created within the Microsoft 365 admin center.
+> [!NOTE]
+>
+> - *Locale of the custom message writer selected*: Display language set in the Microsoft 365 admin center (MyAccount).
+> - *Locale of the message receiver selected*: First supported language listed under "Preferred Languages" in the user's Windows Settings menu. This is determined by the operating system on the user's device.
 
-For example, if the Organizational Messages Writer (admin) has their Microsoft 365 admin center product language set to French when they create their message B from scratch, end users with related product language set to English will not receive the message B. However, end users with French set as their related product language qualifies to receive the message B.
+For **custom messages**, delivery will be restricted to the language selected as the Microsoft 365 admin center (MyAccount) display language.
+
+For example, if the Organizational Messages Writer (admin) sets their Microsoft 365 admin center (MyAccount) display language to French while creating "Message B," only end users with French as the first option under "Preferred Languages" in their Windows Settings will receive "Message B." End users whose preferred language is any other language will not receive the message.
 
 ### Does Organizational Messages support government environments, such as GCC, GCCH, etc.?
 

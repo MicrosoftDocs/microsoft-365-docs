@@ -32,7 +32,6 @@ description: "Learn how to manage agents for Microsoft 365 Copilot on the Integr
 
 > [!IMPORTANT]
 >
-> - You must have Microsoft 365 Copilot license to use agents for Copilot.
 > - The capability is enabled by default in all Microsoft 365 Copilot licensed tenants.
 > - Admins can manage how individual agents are approved for use and which agents are enabled.
 

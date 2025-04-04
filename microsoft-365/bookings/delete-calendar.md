@@ -3,7 +3,7 @@ title: "Delete a Shared Booking page"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 06/05/2024
+ms.date: 04/02/2025
 audience: Admin
 ms.topic: how-to
 ms.service: bookings
@@ -20,10 +20,10 @@ description: "Use the Microsoft 365 admin center or Windows PowerShell to delete
 This article explains how you can delete an unwanted shared booking page. You can delete the shared booking page in the Microsoft 365 admin center or you can use PowerShell. The shared booking page is a mailbox in Exchange Online so you delete the corresponding user account to delete the shared booking page.
 
 > [!IMPORTANT]
-> All shared booking pages that you created in 2017 or before must be deleted using the PowerShell instructions on this topic. All shared booking pages created in 2018 or after can be deleted in the Microsoft 365 admin center.
+> All shared booking pages that **you created in 2017 or before** must be deleted using the PowerShell instructions on this topic. All shared booking pages **created in 2018 or after** can be deleted in the Microsoft 365 admin center.
 
 > [!IMPORTANT]
-> Only Microsoft 365 Admins can delete shared booking pages created by end users. We do not support the capability of deleting shared booking pages at a user level. If a user wishes to do so, the request will have to be routed to the respective Microsoft 365 admin.
+> Only Microsoft 365 Admins can delete shared booking pages created by end users. We do not support the capability of deleting shared booking pages at a user level. If a user wishes to do so, they'll have to be routed to the Microsoft 365 admin.
 
 The shared booking page is where all relevant information is stored, including:
 
@@ -43,8 +43,6 @@ The shared booking page is where all relevant information is stored, including:
    ![Image of Users UI in Microsoft 365 admin center.](../media/bookings-admin-center-users.png)
 
 1. On the **Active Users** page, choose the name of the shared booking page that you want to delete and then select **Delete user**.
-
-   ![Image of Delete User UI in Microsoft 365 admin center.](../media/bookings-delete-user.png)
 
 ## Delete a shared booking page using Exchange Online PowerShell
 

@@ -3,7 +3,7 @@ title: Microsoft 365 US Government DOD endpoints
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 02/28/2025
+ms.date: 03/31/2025
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -21,7 +21,7 @@ search.appverid:
 ms.assetid: 5d7dce60-4892-4b58-b45e-ee42fe8a907f
 f1.keywords:
 - NOCSH
-description: Microsoft 365 requires connectivity to the Internet. The endpoints below should be reachable for customers using Microsoft 365 U.S. Government DoD plans only.
+description: Microsoft 365 requires connectivity to the Internet. The following endpoints should be reachable for customers using Microsoft 365 U.S. Government DoD plans only.
 hideEdit: true
 ms.custom: seo-marvel-mar2020
 ---
@@ -30,7 +30,7 @@ ms.custom: seo-marvel-mar2020
 
 *Applies To: Microsoft 365 Admin*
 
-Microsoft 365 requires connectivity to the Internet. The endpoints below should be reachable for customers using Microsoft 365 U.S. Government DoD plans only.
+Microsoft 365 requires connectivity to the Internet. The following endpoints should be reachable for customers using Microsoft 365 U.S. Government DoD plans only.
   
 **Microsoft 365 endpoints:** [Worldwide (including GCC)](urls-and-ip-address-ranges.md) \| [Microsoft 365 operated by 21 Vianet](urls-and-ip-address-ranges-21vianet.md) \| *Microsoft 365 U.S. Government DoD* \| [Microsoft 365 U.S. Government GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md)
 
@@ -42,11 +42,11 @@ Microsoft 365 requires connectivity to the Internet. The endpoints below should 
 |**Last updated:** 02/28/2025 - ![RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Change Log subscription](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**Download:** the full list in [JSON format](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|
 |
 
-Start with [Managing Microsoft 365 endpoints](managing-office-365-endpoints.md) to understand our recommendations for managing network connectivity using this data. Endpoints data is updated as needed at the beginning of each month with new IP Addresses and URLs published 30 days in advance of being active. This lets customers who don't yet have automated updates to complete their processes before new connectivity is required. Endpoints may also be updated during the month if needed to address support escalations, security incidents, or other immediate operational requirements. The data shown on this page below is all generated from the REST-based web services. If you're using a script or a network device to access this data, you should go to the [Web service](microsoft-365-ip-web-service.md) directly.
+Start with [Managing Microsoft 365 endpoints](managing-office-365-endpoints.md) to understand our recommendations for managing network connectivity using this data. Endpoints data is updated as needed at the beginning of each month with new IP Addresses and URLs published 30 days in advance of being active. This lets customers who don't yet have automated updates to complete their processes before new connectivity is required. Endpoints might also be updated during the month if needed to address support escalations, security incidents, or other immediate operational requirements. The data shown on this page is all generated from the REST-based web services. If you're using a script or a network device to access this data, you should go to the [Web service](microsoft-365-ip-web-service.md) directly.
 
 Endpoint data below lists requirements for connectivity from a user's machine to Microsoft 365. It doesn't include network connections from Microsoft into a customer network, sometimes called hybrid or inbound network connections. For more information, see [Additional endpoints not included in the web service](additional-office365-ip-addresses-and-urls.md).
 
-The Microsoft 365 suite is broken down into four major service areas representing the three primary workloads and a set of common resources. These service areas may be used to associate traffic flows with a particular application, however given that features often consume endpoints across multiple workloads, these service areas can't effectively be used to restrict access.
+The Microsoft 365 suite is broken down into four major service areas representing the three primary workloads and a set of common resources. These service areas might be used to associate traffic flows with a particular application, however given that features often consume endpoints across multiple workloads, these service areas can't effectively be used to restrict access.
 
 Data columns shown are:
 
@@ -56,9 +56,22 @@ Data columns shown are:
 
 - **ER**: This is **Yes** if the endpoint set is supported over Azure ExpressRoute with Microsoft 365 route prefixes. The BGP community that includes the route prefixes shown aligns with the service area listed. When ER is **No**, this means that ExpressRoute isn't supported for this endpoint set. However, it shouldn't be assumed that no routes are advertised for an endpoint set where ER is **No**. If you plan to use Microsoft Entra Connect, read the [special considerations section](/azure/active-directory/hybrid/reference-connect-instances#microsoft-azure-government) to ensure you have the appropriate Microsoft Entra Connect configuration.
 
-- **Addresses**: Lists the FQDNs or wildcard domain names and IP Address ranges for the endpoint set. Note that an IP Address range is in CIDR format and may include many individual IP Addresses in the specified network.
+- **Addresses**: Lists the FQDNs or wildcard domain names and IP Address ranges for the endpoint set. An IP Address range is in CIDR format and might include many individual IP Addresses in the specified network.
 
-- **Ports**: Lists the TCP or UDP ports that are combined with the Addresses to form the network endpoint. You may notice some duplication in IP Address ranges where there are different ports listed.
+- **Ports**: Lists the TCP or UDP ports that are combined with the Addresses to form the network endpoint. You might notice some duplication in IP Address ranges where there are different ports listed.
+
+## Microsoft 365 Unified Domains
+
+> [!NOTE]
+> In response to customer feedback and to streamline endpoint management, Microsoft has initiated the process of consolidating Microsoft 365 apps and services into a select group of dedicated, secured, and purpose-managed domains within the **.microsoft** top level domain (TLD). 
+> 
+> To avoid connectivity issues for users, ensure that the following essential domains are included in your allowlist and that connectivity to these domains isn't blocked.
+
+| ID | Category | Domain name| Purpose | Ports |
+|---|---|---|---|---|
+|12|Required|`*.usgovcloud.microsoft`|Dedicated to authenticated user facing Microsoft SaaS product experiences.|**TCP:** 443,80<br>**UDP:** 443|
+|12|Required|`*.usgovcloud-static.microsoft`|Dedicated to static (not customer generated) content hosted on CDNs.|**TCP:** 443,80<br>**UDP:** 443|
+|12|Required|`*.usgovcloud-usercontent.microsoft`|Content used in Microsoft 365 experiences that requires domain isolation from applications.|**TCP:** 443,80<br>**UDP:** 443|
 
 [!INCLUDE [Microsoft 365 U.S. Government DoD endpoints](../includes/office-365-u.s.-government-dod-endpoints.md)]
   
@@ -66,4 +79,4 @@ Notes for this table:
 
 - The Security and Compliance Center (SCC) provides support for Azure ExpressRoute for Microsoft 365. The same applies for many features exposed through the SCC such as Reporting, Auditing, eDiscovery (Premium), Unified DLP, and Data Governance. Two specific features, PST Import and eDiscovery Export, currently don't support Azure ExpressRoute with only Microsoft 365 route filters due to their dependency on Azure Blob Storage. To consume those features, you need separate connectivity to Azure Blob Storage using any supportable Azure connectivity options, which include Internet connectivity or Azure ExpressRoute with Azure Public route filters. You have to evaluate establishing such connectivity for both of those features. The Microsoft 365 Information Protection team is aware of this limitation and is actively working to bring support for Azure ExpressRoute for Microsoft 365 as limited to Microsoft 365 route filters for both of those features.
 
-- There are additional optional endpoints for Microsoft 365 Apps for enterprise that aren't listed and aren't required for users to launch Microsoft 365 Apps for enterprise applications and edit documents. Optional endpoints are hosted in Microsoft datacenters and don't process, transmit, or store customer data. We recommend that user connections to these endpoints be directed to the default Internet egress perimeter.
+- There are other optional endpoints for Microsoft 365 Apps for enterprise that aren't listed and aren't required for users to launch Microsoft 365 Apps for enterprise applications and edit documents. Optional endpoints are hosted in Microsoft datacenters and don't process, transmit, or store customer data. We recommend that user connections to these endpoints be directed to the default Internet egress perimeter.

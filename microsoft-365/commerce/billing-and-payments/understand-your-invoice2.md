@@ -29,7 +29,7 @@ ms.custom:
 - campaignIDs-batch1
 search.appverid: MET150
 description: "Learn how to interpret the charges on your invoice for your Microsoft business subscription with an MOSA billing account."
-ms.date: 02/21/2024
+ms.date: 03/13/2025
 ---
 
 # Understand your invoice for your Microsoft MOSA billing account

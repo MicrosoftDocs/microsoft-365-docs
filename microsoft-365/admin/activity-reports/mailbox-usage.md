@@ -1,7 +1,7 @@
 ---
 title: "Microsoft 365 admin center mailbox usage reports"
-ms.author: efrene
-author: efrene
+ms.author: camillepack
+author: camillepack
 manager: scotv
 ms.date: 11/27/2023
 audience: Admin

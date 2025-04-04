@@ -1,5 +1,5 @@
 ---
-title: Overview of Loop workspaces storage and permissions
+title: Overview of Copilot Pages and Loop workspaces storage and permissions
 ms.author: jenz
 author: jenzamora
 manager: jtremper
@@ -14,7 +14,7 @@ ms.collection:
 - M365-collaboration
 - essentials-compliance
 - magic-ai-copilot
-description: Learn about Loop workspaces storage and permissions in the Microsoft 365 ecosystem.
+description: Learn about Copilot Pages and Loop workspaces storage and permissions in the Microsoft 365 ecosystem.
 f1.keywords:
 - CSH
 ms.custom: 
@@ -24,7 +24,7 @@ appliesto:
 - Microsoft Teams
 ---
 
-# Overview of Loop workspaces storage and permissions
+# Overview of Copilot Pages and Loop workspaces storage and permissions
 
 ## Loop Storage
 

@@ -2,8 +2,8 @@
 title: "Microsoft 365 admin center forms activity reports"
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
+ms.author: camillepack
+author: camillepack
 manager: scotv
 ms.date: 11/10/2020
 audience: Admin

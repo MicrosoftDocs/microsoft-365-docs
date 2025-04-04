@@ -3,12 +3,13 @@ title: "Microsoft 365 network connectivity test tool"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/04/2024
+ms.date: 04/02/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.subservice: network
 ms.localizationpriority: medium
+ms.reviewer: roshanp
 search.appverid:
 - MET150
 ms.collection:
@@ -21,12 +22,12 @@ description: "Microsoft 365 network connectivity test tool"
 
 # Microsoft 365 network connectivity test tool
 
-The Microsoft 365 network connectivity test tool is located at <https://connectivity.m365.cloud.microsoft>. It's an adjunct tool to the network assessment and network insights available in the Microsoft 365 admin center under the **Health | Connectivity** menu.
+The Microsoft 365 network connectivity test tool is located at <https://connectivity.m365.cloud.microsoft>. It's an adjunct tool to the network assessment and network insights available in the Microsoft 365 admin center under the **Health | Connectivity** menu. [https://admin.cloud.microsoft/#/networkperformance](https://admin.cloud.microsoft/#/networkperformance) 
 
 > [!NOTE]
-> This document mentions the URL (<https://connectivity.m365.cloud.microsoft>) for the Global version of this tool. For other versions, please refer to the table below for the corresponding URLs.
+> This document refers to the URL (<https://connectivity.m365.cloud.microsoft>), the global version of this tool. For other versions, please refer to the table below for the corresponding URLs.
 
-|Feature|Global service <br /><https://connectivity.m365.cloud.microsoft>|US Government (GCC)  <br /><https://connectivity.m365.cloud.microsoft>| China operated by 21Vianet <br /><https://connectivity.sovcloud.cn>|
+|Feature|Global service <br/><https://connectivity.m365.cloud.microsoft>|US Government (GCC)  <br/><https://connectivity.m365.cloud.microsoft>| China operated by 21Vianet <br/><https://connectivity.sovcloud.cn>|
 |:--|:--|:--|:--|
 |Anonymous test|✅|✅|✅|
 |Print report | ✅|✅|✅|
@@ -48,27 +49,51 @@ The Microsoft 365 network connectivity test tool is located at <https://connecti
 > [!div class="mx-imgBorder"]
 > ![Connectivity test tool.](../media/m365-mac-perf/m365-mac-perf-test-tool-page.png)
 
-Network insights in the Microsoft 365 Admin Center are based on regular in-product measurements for your Microsoft 365 tenant, aggregated each day. In comparison, network insights from the Microsoft 365 network connectivity test are run locally in the tool.
+Network insights in the Microsoft 365 admin center [https://admin.cloud.microsoft/#/networkperformance](https://admin.cloud.microsoft/#/networkperformance) are based on regular in-product measurements for your Microsoft 365 tenant, aggregated each day. In comparison, network insights from the Microsoft 365 network connectivity test tool [https://connectivity.m365.cloud.microsoft](https://connectivity.m365.cloud.microsoft/)are run locally in the tool.
 
-In-product testing is limited, and running tests local to the user collects more data resulting in deeper insights. Network insights in the Microsoft 365 Admin Center show that there's a networking problem at a specific office location. The Microsoft 365 connectivity test can help to identify the root cause of that problem and provide a targeted performance improvement action.
+In-product testing is limited, and running tests local to the user collects more data resulting in deeper insights. Network insights in the Microsoft 365 admin center show that there's a networking problem at a specific office location. When you use the Microsoft 365 connectivity test tool at a specific office location it can help to identify the root cause of that networking problem reported in the admin center and provide a targeted performance improvement action.
 
-We recommend that these insights be used together where networking quality status can be assessed for each office location in the Microsoft 365 Admin Center. More specifics can be found after deployment of testing based on the Microsoft 365 connectivity test.
+We recommend that these insights be used together where networking quality status can be assessed for each office location in the Microsoft 365 admin center. 
+
+## When should I use this tool
+
+Here are some example scenarios for using the Microsoft 365 network connectivity test tool. 
+
+#### Scenario 1 
+
+A user complains about being unable to access Microsoft 365 Copilot, and you suspect WebSocket protocol may be blocked for the user. You need to quickly validate if the WebSocket connection is successful for the user. You can ask the user to go to [the network connectivity test tool](https://connectivity.m365.cloud.microsoft/) and select **Run test**. This triggers a set of basic tests including a WebSocket connection test for Copilot, and the user will find the results of the test in the details pane. If WebSocket was blocked for the user, you wouldn't see a green tick but instead a warning to show that the WebSocket connection is blocked. 
+
+![Connectivity test - web socket pass](media/office-365-network-mac-perf-onboarding-tool/websocketpass.jpg)
+
+![Connectivity test - WSS fail](media/office-365-network-mac-perf-onboarding-tool/wssfail.jpg)
+
+#### Scenario 2
+
+You receive complaints from users in a branch office that they experience slow connection to Microsoft 365 services. You suspect this could be due to some recent network infrastructure changes at the branch office that results in higher network latency for the users. You can ask the users at the branch office to go to [the network connectivity test tool](https://connectivity.m365.cloud.microsoft/) and select **Run test**. This triggers a set of basic tests including tests to show the distance to network egress and network latency experienced by the user for Exchange online service. In the following screenshot you will notice that the user is based in Washington state and the network egress is in Arizona. This increases the network latency for the user and the result also shows that 33% of users in Washington state have better a network connection. 
+
+![Connectivity test - network egress far away](media/office-365-network-mac-perf-onboarding-tool/networkegressfaraway.jpg)
+
+#### Scenario 3
+
+You receive complaints from users in an office location that they experience broken page load while visiting SharePoint sites or Outlook web access or Microsoft admin center web pages. You suspect this could be due to some recent network infrastructure changes at the office location that results in blocked network connections to unified domains like `*.static.microsoft` or `*.usercontent.microsoft` domains. You can ask the users at the branch office to go to [the network connectivity test tool](https://connectivity.m365.cloud.microsoft/) and run the advanced diagnostics test by downloading and running the exe. The results will show you if there are any network connections blocked for the required Microsoft 365 domains published in the article [Microsoft 365 URLs and IP address ranges](https://aka.ms/m365endpoints).
+
+![Connectivity test - unified domains blocked](media/office-365-network-mac-perf-onboarding-tool/unifieddomainsblocked.jpg)
 
 ## What happens at each test step
 
 ### Office location identification
 
-When you select the *Run test* button, we show the running test page and identify the office location. You can type in your location by city, state, and country/region or choose to have it detected for you. If you detect the office location, the tool requests the latitude and longitude from the web browser and limits the accuracy to 300 meters by 300 meters before use. It's not necessary to identify the location more accurately than the building to measure network performance.
+When you select the **Run test** button, we show the running test page and identify the office location. You can type in your location by city, state, and country/region, or choose to have it detected for you. If you detect the office location, the tool requests the latitude and longitude from the web browser and limits the accuracy to 300 meters by 300 meters. It's not necessary to identify the location more accurately than the building to measure network performance.
 
 ### JavaScript tests
 
-After office location identification, we run a TCP latency test in JavaScript and we request data from the service about in-use and recommended Microsoft 365 service front door servers. When these tests are completed, we show them on the map and in the details tab where they can be viewed before the next step.
+After office location identification, we run a TCP latency test in JavaScript and request data from the service about in-use and recommended Microsoft 365 service front door servers. When these tests are completed, we show them on the map and in the details tab where they can be viewed before the next step.
 
 ### Download the advanced tests client application
 
 Next, we start the download of the advanced tests client application. We rely on the user to launch the client application and they must also have .NET 6.0 Runtime installed.
 
-There are two parts to the Microsoft 365 network connectivity test: the web site <https://connectivity.m365.cloud.microsoft> and a downloadable Windows client application that runs advanced network connectivity tests. Most of the tests require the application to be run. It populates results back into the web page as it runs.
+There are two parts to the Microsoft 365 network connectivity test: the web site <https://connectivity.m365.cloud.microsoft> and a downloadable Windows client application that runs advanced network connectivity tests. Most of the tests require the application to be run, which populates results back into the web page as it runs.
 
 You'll be prompted to download the advanced client test application from the web site after the web browser tests have completed. Open and run the file when prompted.
 

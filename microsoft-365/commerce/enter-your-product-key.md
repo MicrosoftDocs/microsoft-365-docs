@@ -98,4 +98,4 @@ Or, [call Microsoft Support](../admin/get-help-support.md).
 
 [Upgrade or change to a different Microsoft 365 for business plan](subscriptions/upgrade-to-different-plan.md) (article)\
 [What happens to my data and access when my Microsoft 365 for business subscription ends?](./subscriptions/what-if-my-subscription-expires.md) (article)\
-[Understand subscriptions and licenses in Microsoft 365 for business](./licenses/subscriptions-and-licenses.md) (article)
+[Understand subscriptions and licenses in Microsoft 365 for business](licenses/subscriptions-and-licenses.md) (article)

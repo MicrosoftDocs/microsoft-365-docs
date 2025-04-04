@@ -68,7 +68,7 @@ The chart information gives you insight into the apps and services that you want
 
 **NPS survey response volume** is the total number of responses to the Net Promoter Score (NPS) survey. By default, Microsoft sends the survey to 5% of your users and asks “Would you recommend this product?” Use this data to gauge user satisfaction and to see what people are saying about the app. [Learn more](../manage/manage-feedback-product-insights.md)
 
-**Help article views** is the total number of views of Microsoft help articles and training videos about the app. Use this data to find topics of interest and share the suggested training with your users. [Learn more](experience-insights-help-articles.md)
+**Help article views** is the total number of views of Microsoft help articles and training videos about the app. Use this data to find topics of interest and share the suggested training with your users. [Learn more](#examples-of-help-articles)
 
 > [!NOTE]
 > You can filter the chart data for trends over the last 30 days, 90 days, or 180 days.

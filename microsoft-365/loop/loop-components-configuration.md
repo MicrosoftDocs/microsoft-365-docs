@@ -1,6 +1,6 @@
 ---
 ms.date: 03/06/2025
-title: "Manage Loop components in your organization"
+title: "Manage Copilot Pages and Loop components in your organization"
 ms.reviewer: dancost, tonchan
 ms.author: jenz
 author: jenzamora
@@ -21,10 +21,10 @@ ms.collection:
 search.appverid:
 - SPO160
 - MET150
-description: "Learn how to manage Loop components in your organization."
+description: "Manage Copilot Pages and Loop in your organization"
 ---
 
-# Loop admin policies for Loop components and Loop workspaces
+# Loop admin policies for Copilot Pages, Loop components, and Loop workspaces
 
 Loop components and integrations are backed by `.loop` files (earlier releases of Loop created these as `.fluid` files), stored in OneDrive, SharePoint, or [SharePoint Embedded](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/cta). Learn more about [Loop storage](/microsoft-365/loop/loop-workspaces-storage-permission#loop-storage), which is combined with SharePoint in your tenant. IT administrators need to manage creation of Loop content and integrations using **BOTH**:
 

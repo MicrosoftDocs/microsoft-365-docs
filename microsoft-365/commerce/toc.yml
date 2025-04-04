@@ -54,6 +54,8 @@ items:
       items:
         - name: Sign in to the Microsoft 365 admin center
           href: licenses/vl-sign-in.md
+        - name: Sign your volume licensing agreement
+          href: licenses/sign-vl-agreement.md
         - name: Contracts FAQs
           href: licenses/contracts-faq.yml
         - name: Manage volume licensing user roles

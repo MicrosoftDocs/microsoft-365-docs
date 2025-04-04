@@ -26,7 +26,7 @@ ms.custom:
 search.appverid:
 - MET150
 description: "Learn how to manage who receives billing notification emails and invoice attachments in the Microsoft 365 admin center."
-ms.date: 02/16/2024
+ms.date: 04/01/2025
 ---
 
 # Manage billing notifications and invoice attachment settings in the Microsoft 365 admin center
@@ -44,6 +44,35 @@ You can manage who receives billing notification emails for your organization on
 > [!NOTE]
 > If you're the person who signed up for the subscription, you're automatically a Billing account owner.
 
+## Receive your organization's invoices as email attachments
+
+You can choose to receive your organization's invoices as email attachments. However, the steps to manage the invoice attachment setting in the Microsoft 365 admin center depend on the type of billing account that you have. [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
+
+### Receive your invoice as an email attachment for MCA billing account types
+
+If you have an MCA billing account type, the option to receive your invoice as an attachment to your invoice notification emails is linked with your billing profile. To turn on the invoice email attachment setting for a specific billing profile, use the following steps.
+
+1. In the admin center, go to the **Billing** > [Billing accounts](https://go.microsoft.com/fwlink/p/?linkid=2102895"") page.
+1. On the **Overview** tab, select a billing account.
+1. On the billing account details page, select the **Billing profiles** tab. The tab lists all billing profiles associated with the selected billing account.
+1. Select a billing profile name to view its details page.
+1. In the **Invoice and Billing Notifications** section, select **Edit settings**.
+1. In the **Invoice email settings** pane, under **Get invoices in email attachments**, switch the toggle to **On**.
+1. If needed, add any additional recipient email addresses, then select **Save Changes**.
+
+### Receive your invoice as an email attachment for MOSA billing account types
+
+If you have an MOSA billing account type, the option to receive your invoice as an attachment to your invoice notification emails is managed on the **Billing  notifications** page in the Microsoft 365 admin center. To turn on the invoice email attachment setting on the **Billing notifications** page, use the following steps.
+
+> [!NOTE]
+> Billing admins can also do the following steps.
+
+1. In the admin center, go to the **Billing** > [Billing notifications](https://go.microsoft.com/fwlink/p/?linkid=853212"") page.
+1. Under **Billing notification settings**, select **Edit notification settings**.
+1. In the **Billing notification settings** pane, under **Invoice PDF**, select the **Attach a PDF to your invoice emails** checkbox, then select **Save**.
+
+To stop receiving the invoice attachment at any time, follow the steps in this procedure and clear the **Attach a PDF to your invoice  emails** checkbox in step 3.
+
 ## Change who receives billing notifications
 
 You can change who receives billing notifications for your organization in the Microsoft 365 admin center. However, the steps to change who receives billing notifications depend on the type of billing account that you have. [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
@@ -59,6 +88,18 @@ If you have an MCA billing account type, billing notification emails are sent to
 To change the billing profile roles assigned to users, see [Assign billing profile roles](manage-billing-profiles.md#assign-billing-profile-roles).
 
 To learn more about billing profile roles and how to manage them, see [Understand Microsoft Customer Agreement administrative roles in Azure](/azure/cost-management-billing/manage/understand-mca-roles).
+
+#### Receive a copy of your invoice by email
+
+You can receive a copy of your invoice attached as a pdf to your invoice ready email.  
+
+1. In the admin center, go to the **Billing** > [Billing accounts](https://go.microsoft.com/fwlink/p/?linkid=2102895"") page.
+1. Select the Billing account that includes the Billing profile that you want to add email recipients to.
+1. Select the **Billing profiles** tab.
+1. Select the Billing profile that you want to update.
+1. In the **Invoice and billing notifications**  section, select **Edit invoice and contact settings**.
+1. Toggle the Edit invoice and contacts setting to **On**
+1. Select **Save changes**
 
 #### Add additional recipients
 
@@ -104,7 +145,7 @@ Billing notification emails are sent in your organization's preferred language. 
 
 ## Change the email addresses for admins
 
-You can change the primary email address of other admins in your organization. However, you can only change your own alternate email address, you can't change email addresses for other admins.
+You can change the primary email address of other admins in your organization. However, you can only change your own alternate email address, you can't change email addresses for other admins unless you have a global admin role
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.
 2. In the **Admins receiving billing notifications** section, select a name.
@@ -116,36 +157,7 @@ In addition to your Global and Billing admins, we send billing notifications to 
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.
 2. Under **Organization contact receiving billing notifications**, select the organization contact.
-3. In the organization details pane, type the email address that you want to use, then select **Save**.
-
-## Receive your organization's invoices as email attachments
-
-You can choose to receive your organization's invoices as email attachments. However, the steps to manage the invoice attachment setting in the Microsoft 365 admin center depend on the type of billing account that you have. [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
-
-### Receive your invoice as an email attachment for MCA billing account types
-
-If you have an MCA billing account type, the option to receive your invoice as an attachment to your invoice notification emails is linked with your billing profile. To turn on the invoice email attachment setting for a specific billing profile, use the following steps.
-
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Billing accounts</a> page.
-2. On the **Overview** tab, select a billing account.
-3. On the billing account details page, select the **Billing profiles** tab. The tab lists all billing profiles associated with the selected billing account.
-4. Select a billing profile name to view its details page.
-5. In the **Invoice and Billing Notifications** section, select **Edit settings**.
-6. In the **Invoice email settings** pane, under **Get invoices in email attachments**, switch the toggle to **On**.
-7. If needed, add any additional recipient email addresses, then select **Save Changes**.
-
-### Receive your invoice as an email attachment for MOSA billing account types
-
-If you have an MOSA billing account type, the option to receive your invoice as an attachment to your invoice notification emails is managed on the **Billing  notifications** page in the Microsoft 365 admin center. To turn on the invoice email attachment setting on the **Billing notifications** page, use the following steps.
-
-> [!NOTE]
-> Billing admins can also do the following steps.
-
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.
-2. Under **Billing notification settings**, select **Edit notification settings**.
-3. In the **Billing notification settings** pane, under **Invoice PDF**, select the **Attach a PDF to your invoice emails** checkbox, then select **Save**.
-
-To stop receiving the invoice attachment at any time, follow the steps in this procedure and clear the **Attach a PDF to your invoice  emails** checkbox in step 3.
+1. In the organization details pane, type the email address that you want to use, then select **Save**.
 
 ## Related content
 
