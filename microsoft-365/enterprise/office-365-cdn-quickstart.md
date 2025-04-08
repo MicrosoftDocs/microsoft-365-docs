@@ -55,6 +55,8 @@ The Office 365 CDN supports:
 - **Public CDN**, which is designed to be used for JS (JavaScript), CSS (Style Sheets), Web Font File (WOFF, WOFF2) and non-proprietary images like company logos.
 
 You can choose public origins for your organization [Choose public origins](use-microsoft-365-cdn-with-spo.md).
+>[!NOTE]
+>By default, no customer content is added to public CDN unless explicitly specified. Microsoft will never enable anonymous access to any customer contents.
 
 ## How to enable Public CDN with the default configuration
 Before you make changes to the tenant CDN settings, you should verify that it meets compliance, security and privacy policies of your organization.

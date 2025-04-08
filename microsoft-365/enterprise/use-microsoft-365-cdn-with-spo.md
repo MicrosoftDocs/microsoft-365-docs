@@ -66,7 +66,7 @@ Once you're done with setup, you can [Manage the Office 365 CDN](use-microsoft-3
 - Configuring CDN policies
 - If necessary, disabling the CDN
 
-Finally, see [Using your CDN assets](use-microsoft-365-cdn-with-spo.md#using-your-cdn-assets) to learn about accessing your CDN assets from both public and private origins.
+Finally, see [Using your CDN assets](use-microsoft-365-cdn-with-spo.md#using-your-cdn-assets) to learn about accessing your CDN assets from public origins.
 
 See [Troubleshooting the Office 365 CDN](use-microsoft-365-cdn-with-spo.md#CDNTroubleshooting) for guidance on resolving common issues.
 
@@ -428,6 +428,9 @@ Set-PnPTenantCdnEnabled -CdnType Public -Enable $true
 
 For more information about this cmdlet, see [Set-PnPTenantCdnEnabled](https://pnp.github.io/powershell/cmdlets/Set-PnPTenantCdnEnabled.html).
 
+> [!NOTE]
+> Management of items in Private CDN is depricated. Public CDN is the recommended approach for full 
+> management capabilities. Items that are already added to private CDN are still retrievable, but can no longer be >managed
 <a name="Office365CDNforPnPPoshFileType"> </a>
 
 ### Change the list of file types to include in the Office 365 CDN (Optional)
@@ -787,7 +790,7 @@ m365 spo cdn set --type Public --enabled false
 
 Now that you enabled the CDN and configured origins and policies, you can begin using your CDN assets.
 
-This section helps you understand how to use CDN URLs in your SharePoint pages and content so that SharePoint redirects requests for assets in both public and private origins to the CDN.
+This section helps you understand how to use CDN URLs in your SharePoint pages and content so that SharePoint redirects requests for assets in public origins to the CDN.
 
 - [Updating links to CDN assets](use-microsoft-365-cdn-with-spo.md#updating-links-to-cdn-assets)
 - [Using assets in public origins](use-microsoft-365-cdn-with-spo.md#using-assets-in-public-origins)
