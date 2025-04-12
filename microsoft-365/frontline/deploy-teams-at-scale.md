@@ -22,7 +22,7 @@ ms.date: 06/27/2024
 
 # Deploy frontline static teams at scale with PowerShell for frontline workers
 
-## Overview
+## Overview1
 
 Does your organization use a large number of teams to drive communication and collaboration among your frontline workforce? This article is for you if you need to create and manage teams at scale.
 
