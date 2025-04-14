@@ -429,8 +429,8 @@ Set-PnPTenantCdnEnabled -CdnType Public -Enable $true
 For more information about this cmdlet, see [Set-PnPTenantCdnEnabled](https://pnp.github.io/powershell/cmdlets/Set-PnPTenantCdnEnabled.html).
 
 > [!NOTE]
-> Management of items in Private CDN is depricated. Public CDN is the recommended approach for full 
-> management capabilities. Items that are already added to private CDN are still retrievable, but can no longer be >managed
+> Management of items in Private CDN is deprecated. Public CDN is the recommended approach for full management capabilities. Items that are already added to private CDN are still retrievable, but can no longer be managed.
+
 <a name="Office365CDNforPnPPoshFileType"> </a>
 
 ### Change the list of file types to include in the Office 365 CDN (Optional)
