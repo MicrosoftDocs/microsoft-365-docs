@@ -1,11 +1,11 @@
 ---
 title: "Microsoft 365 feature descriptions"
-ms.author: office365servicedesc
-author: cmcatee
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 ms.date: 06/18/2022
 audience: ITPro
-ms.topic: conceptual
+ms.topic: article
 f1.keywords:
 - 'microsoft-365-and-office-365-general-information'
 ms.service: microsoft-365-business
@@ -13,7 +13,11 @@ ms.localizationpriority: medium
 ms.custom:
 - Adm_ServiceDesc
 - Adm_ServiceDesc_top
-ms.collection: scotvorg
+ms.collection:
+- tier2
+- scotvorg
+- adm_o365
+- adm_toc
 ms.assetid: 721676a0-5108-488e-ae0c-7316617d0006
 description: "Learn about the information available for Microsoft 365 feature descriptions."
 ---
@@ -104,7 +108,7 @@ For other issues, visit the [Microsoft support center](https://support.microsoft
 
 **Group management:** Security groups are used in SharePoint Online to control access to sites. Security groups can be created in the Microsoft 365 admin center. For more information about security groups, see [Create, edit, or delete a security group](/office365/admin/email/create-edit-or-delete-a-security-group).
 
-**Microsoft Entra services:** Microsoft Entra ID brings comprehensive identity and access management capabilities to Office 365. It combines directory services, advanced identity governance, application access management and a rich standards-based platform for developers. To learn more about AD features in Office 365, see [Sign in page branding and cloud user self-service password reset](https://go.microsoft.com/fwlink/?linkid=2144147). Learn more about the [Free, Basic, and Premium editions of Microsoft Entra ID](/previous-versions/azure/dn532272(v=azure.100)).
+**Microsoft Entra services:** Microsoft Entra ID brings comprehensive identity and access management capabilities to Office 365. It combines directory services, advanced identity governance, application access management and a rich standards-based platform for developers. Learn more about the [Free, Basic, and Premium editions of Microsoft Entra ID](/previous-versions/azure/dn532272(v=azure.100)).
 
 # [**Support, help, and training**](#tab/Support)
 
@@ -120,7 +124,7 @@ With every Microsoft 365 and Office 365 subscription for enterprise, business, f
 
 **Administrator support:** Authorized administrators can use the Microsoft 365 admin center to submit service requests online, access support telephone numbers, and view all open and recently closed service requests. Service requests submitted in the admin center can be reopened for up to 14 days after the request has been closed. For instructions, see [Contact Microsoft 365 for business support](/Office365/Admin/contact-support-for-business-products).
 
-**Microsoft 365 support:** The Microsoft 365 technical support team troubleshoots only those issues that are related to Microsoft 365 and Office 365. Issues that originate in customer networks fall outside of the support boundaries, and in these cases, customers must either work with their networking team or engage the [Microsoft Networking team](https://support.microsoft.com/gp/contactus81?Audience=Commercial) for assistance.
+**Microsoft 365 support:** The Microsoft 365 technical support team troubleshoots only those issues that are related to Microsoft 365 and Office 365. Issues that originate in customer networks fall outside of the support boundaries, and in these cases, customers must either work with their networking team or engage the [Microsoft Networking team](https://support.microsoft.com/contactus) for assistance.
 
 **Community and self-service support options:** Self-service support is available for all plans, and includes troubleshooting tools and videos, help articles and videos, as well as forums and wikis in the [Microsoft 365 community](https://go.microsoft.com/fwlink/p/?LinkID=279811). For more information about self-service support resources, see the [Help and training](/office365/servicedescriptions/office-365-platform-service-description/help-and-training) service description.
 
@@ -170,13 +174,16 @@ With every Microsoft 365 and Office 365 subscription for enterprise, business, f
 
 Office 365 for enterprise follows a role-based access control (RBAC) model: permissions and capabilities are defined by management roles. The person who signs up for Office 365 for his or her organization automatically becomes a global administrator, or top-level administrator. There are five administrator roles: global administrator, billing administrator, password administrator, service administrator, and user management administrator. For more information about administrator roles in Office 365 for enterprise, including how they apply to Exchange Online, SharePoint Online, and Skype for Business Online administration, see [Assigning administrator roles](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj878348(v=ws.11)). If you're using Office 365 operated by 21Vianet in China, see [Assign admin roles in Office 365 for business](/office365/admin/add-users/assign-admin-roles).
 
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. This helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
+
 **Delegated administration and support for partners:** Partners can be authorized to administer accounts on behalf of customers. The customer doesn't require a user account for the partners use and doesn't consume a license when granting delegated administration authority. Partners can assign full or limited access to users within their organization. Limited access includes rights to reset passwords, manage service requests, and monitor service health (ability to use and specify a partner as a delegated administrator varies by region).
 
 **Microsoft support role:** Microsoft support's role is to Troubleshoot and provide technical guidance for customer issues and escalations, gather and validate information related to specific service requests, provide issue coordination and resolution management, maintain communication with the administrators to help ensure that issues are addressed on an ongoing basis, provide assistance with licensing, invoicing, and subscription inquiries, provide assistance with purchasing and trial inquiries, and continually gather customer feedback on how to improve the service through surveys.
 
 **Elevated support options:** While the support services included with Microsoft meet the needs of many customers, customers with more advanced requirements or complex environments should consider paid support options from Microsoft. These elevated support offers include quicker response objectives, the ability to set issue severity level, and access to additional technical resources and support account management. Examples of elevated support include: Service update management; end-to-end support for clients and services; reactive and advisory services from advanced engineers; and incident management and on-site workshops.
 
-**Additional support services:** There are several types of additional support services available: For options for large enterprise customers looking for a full-lifecycle service to support their move to Office 365, see [Empower your employees to be more productive](https://www.microsoft.com/en-us/microsoftservices/cloud-productivity.aspx); for options for large enterprise customers looking for a managed support service that covers both Microsoft and on-premises technologies required to access the online service, see [Premier Support](https://www.microsoft.com/enterprise/services/support): for options for smaller enterprise customers in the United States, Canada, and the United Kingdom, see [Professional Direct Support](https://support.microsoft.com/help/4341255/support-for-business).
+**Additional support services:** There are several types of additional support services available: For options for large enterprise customers looking for a managed support service that covers both Microsoft and on-premises technologies required to access the online service, see [Premier Support](https://www.microsoft.com/enterprise/services/support): for options for smaller enterprise customers in the United States, Canada, and the United Kingdom, see [Professional Direct Support](https://support.microsoft.com/help/4341255/support-for-business).
 
 **Partners:** You can select a Microsoft partner and delegate administrative functions, including creating service request tickets. For more information, see the [Partners](/office365/servicedescriptions/office-365-platform-service-description/partners) service description and [Add, change, or delete a subscription advisor partner](/office365/admin/misc/add-partner).
 
@@ -328,7 +335,7 @@ Microsoft values the partnerships we have with our customers and places great em
 
 **Microsoft Online Services product use rights:** If you comply with your Microsoft Online Subscription Agreement, you may use the online services and related software as expressly permitted under [Licensing Resources and Documents](https://www.microsoft.com/licensing/docs).
 
-**Office 365 operated by 21Vianet product use rights:** See the [21Vianet Service Level Agreement](https://go.microsoft.com/fwlink/?linkid=846729), [Online Services Standard Agreement](https://www.21vbluecloud.com/office365/O365-AgreeWebDir/), and [Terms of Use](https://www.21vbluecloud.com/office365/O365-TOU/) for Office 365 operated by 21Vianet. Office 365 operated by 21Vianet is a service offered and operated only in China. This service is powered by technology that Microsoft has licensed to 21Vianet. For more information, see [Microsoft 365 operated by 21Vianet](/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-operated-by-21vianet).
+**Office 365 operated by 21Vianet product use rights:** Office 365 operated by 21Vianet is a service offered and operated only in China. This service is powered by technology that Microsoft has licensed to 21Vianet. See the [21Vianet Service Level Agreement](https://go.microsoft.com/fwlink/?linkid=846729) and [Online Services Standard Agreement](https://www.21vbluecloud.com/office365/O365-AgreeWebDir/) for Office 365 operated by 21Vianet. For more information, see [Microsoft 365 operated by 21Vianet](/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-operated-by-21vianet).
 
 **Licensing:** To learn about licensing programs for your organization, see [Volume Licensing](https://go.microsoft.com/fwlink/?LinkId=393693).
 

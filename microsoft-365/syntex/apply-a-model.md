@@ -1,28 +1,28 @@
 ---
-title: Apply a model to a document library in Microsoft Syntex
+title: Apply a document processing model to a document library in SharePoint
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
-ms.date: 05/01/2023
+ms.date: 01/30/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to apply a published a model to a SharePoint document library in Microsoft Syntex.
+description: Learn how to apply a published a document processing model to a SharePoint document library.
 ---
 
-# Apply a model to a document library in Microsoft Syntex
+# Apply a document processing model to a document library in SharePoint
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
 </br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSoL]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=60288944-7a6c-4331-a1ae-4b05113f4dd0]
 
 </br>
 
@@ -31,7 +31,7 @@ After you train an unstructured document processing model, train and publish a f
 This article applies to both *enterprise models* and *local models*. An enterprise model is created and trained in the [content center](create-a-content-center.md), and can be discovered by others to use. A [local model](create-local-model.md) is created and trained locally on your own SharePoint site.  
 
 > [!NOTE]
-> You can apply the model only to document libraries to which you have access.
+> You can only apply models to sites where the model type is enabled. If the service is subsequently turned off, the model will no longer run.
 
 ## Apply your model to a document library
 
@@ -46,7 +46,7 @@ You can apply a model to different places, including the model home page or from
     ![Select a site.](../media/content-understanding/site-search.png)
 
     > [!NOTE]
-    > You must have *Manage List* permissions or *Edit* rights to the document library you are applying the model to.
+    > You must have Manage Lists permissions or Edit rights to the document library you are applying the model to.
 
 3. After selecting the site, select the document library to which you want to apply the model. In the sample, select the *Documents* document library from the *Contoso Case Tracking* site.
 
@@ -97,7 +97,10 @@ To sync changes to one or only selected libraries:
 
 ## Apply the model to files and folder content already in the document library
 
-An applied model processes all files and folder content uploaded to the document library after it's applied. You can also do the following steps to run the model on files and folder content that already exist in the document library prior to the model being applied:
+An applied model processes all files and folder content uploaded to the document library after it's applied. You can also do the following steps to run the model on files and folder content that already exist in the document library prior to the model being applied.
+
+> [!NOTE]
+> To see custom Syntex commands like **Classify and extract** when you add a document library web part to a SharePoint site page, you must have a Syntex subscription.
 
 1. In your document library, select the files and folders that you want to be processed by your model.
 
@@ -131,5 +134,3 @@ To run the flow:
 2. On the **Create a flow** panel, select **Send an email after Syntex processes a file**.
 
     ![Screenshot showing the Create a flow panel and flow option highlighted.](../media/content-understanding/integrate-create-flow.png) 
-
-

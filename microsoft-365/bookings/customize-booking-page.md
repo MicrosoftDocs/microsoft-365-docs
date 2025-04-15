@@ -3,9 +3,9 @@ title: "Customize and publish your booking page"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 06/18/2020
+ms.date: 04/01/2025
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
@@ -23,15 +23,15 @@ To customize your booking page, sign in to [microsoft365.com](https://office.com
 
 ## Watch: Customize and publish your booking page
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuYil]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=3e98483c-1fe1-4976-aec7-142750fdd987]
 
 ## Steps
 
 1. In Microsoft 365, select the app launcher, and then select **Bookings**.
 
-1. Choose your calendar.
+1. Under **Shared booking pages**, choose the booking page you want to customize.
 
-1. In the left navigation pane, select **Booking page**.
+1. Then select **Booking page**.
 
 The section below gives you information about setting up your bookings page and how to publish your page.
 

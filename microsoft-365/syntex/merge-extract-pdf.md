@@ -1,12 +1,12 @@
 ---
-title: Merge and extract PDF files in Microsoft Syntex
+title: Merge and extract PDF files in SharePoint
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 audience: admin
 ms.reviewer: spodeanu
-ms.date: 10/23/2023
-ms.topic: conceptual
+ms.date: 03/13/2025
+ms.topic: how-to
 ms.service: microsoft-syntex
 ms.custom: 
 search.appverid: 
@@ -14,19 +14,19 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: medium
-description: Learn how to combine multiple PDF files or split PDF files in Microsoft Syntex.
+description: Learn how to combine multiple PDF files or split PDF files in SharePoint.
 ---
 
-# Merge and extract PDF files in Microsoft Syntex
+# Merge and extract PDF files in SharePoint
 
-With Microsoft Syntex, you can merge two or more PDF files into a new PDF file, or you can extract pages from a PDF file to make new individual PDF files.
+With SharePoint, you can merge two or more PDF files into a new PDF file, or you can extract pages from a PDF file to make new individual PDF files.
 
 The **Merge** option lets you quickly combine PDF files into a new PDF file stored in SharePoint or OneDrive. You can easily organize, share, and send multiple PDF files as a single file, allowing you to better organize the information you want to view or share with others.
 
 The **Extract** option lets you divide a PDF file into multiple PDF files. You can quickly share individual pages from a larger PDF file into multiple smaller files that let you tailor the information you want to view or share with others.
 
 > [!NOTE]
-> For SharePoint users, this feature is available only with [Syntex licensing](syntex-licensing.md).
+> This feature is available for users who have Syntex [per-user](set-up-content-understanding.md) or [pay-as-you-go](syntex-azure-billing.md) licensing.
 
 ## Merge PDF files
 

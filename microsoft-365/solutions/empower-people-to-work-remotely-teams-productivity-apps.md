@@ -7,7 +7,7 @@ ms.author: bcarter
 manager: dansimp
 ms.date: 05/01/2020
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection: 
@@ -28,38 +28,9 @@ To be productive, people need to communicate and collaborate with one another. T
 | IT function | Microsoft 365 components | Description |
 |:-------|:-----|:-------|
 | Email services | Exchange Online | Exchange email and manage calendars, contacts, and tasks with the Outlook client. |
-| Organizational chat, voice over IP (VOIP), and team-based collaboration | Microsoft Teams | Keep people connected while they work apart with a common hub of communication for meetings, chats, and file storage for the organization, departments, and for small teams and individuals. |
 | Intranet sites, document collaboration | SharePoint and OneDrive | Store and collaborate on files within a web browser or within Teams. |
 | Desktop and mobile device Office applications | Microsoft 365 Apps | Create new content or collaborate on existing content with versions of Word, PowerPoint, Excel, and Outlook that are installed on your local computer and receive ongoing feature and security updates. |
 ||||
-
-![Use Teams, Outlook, SharePoint, OneDrive, and Microsoft 365 Apps to stay productive.](../media/empower-people-to-work-remotely/remote-workers-productivity-grid.png)
-
-## Keep people connected with Microsoft Teams
-
-Teams with Microsoft Teams allows your organization to chat, meet, call, and collaborate all in one place. Millions of people get their work done with teams every day because it brings together everything you need to work on-site or remotely into a hub for teamwork.
-
-For detailed guidance, see [Support remote workers using Microsoft Teams](/microsoftteams/support-remote-work-with-teams).
-
-Read [Enabling hybrid work with Microsoft 365 and collaborative apps](https://www.microsoft.com/en-us/microsoft-365/blog/2022/07/19/from-enabling-hybrid-work-to-creating-collaborative-experiences-heres-whats-new-in-microsoft-365/) for guidance and demos on using Teams for hybrid work.
-
-### Chat and conversations
-
-Chat and threaded conversations are at the center of Teams with support for individual 1:1 chats and group chats and conversations. Remote workers can share information, opinions, and personality by using pictures, stickers, and emojis in group chats or one-to-one messages.
-
-### Meetings and conferencing 
-
-Teams can certainly help maintain communications and information sharing with hybrid workers, especially with meetings that support up to 250 people. Teams meetings enable interactive, collaborative meetings with people inside and outside your organization. Remote workers can use Teams meetings for day-to-day activities including recurring project checkpoints, catching-up with colleagues, brainstorming sessions, and facilitating conversations with customers. 
-
-### Calling
-
-Teams supports direct VoIP calling between users and even other organizations using federation. It uses the same codecs as meetings and provides great audio world-wide without additional PSTN charges. However, some users may need a dedicated phone number to take external calls when working on-site or remotely. Teams can quickly provide cloud phone service for these users to make and receive phone calls.
-
-### Apps and workflows
-
-Teams provides a platform for apps and workflows that can be accessed from the desktop, web, and mobile versions of Teams. Teams provides hundreds of apps published by Microsoft and by third parties to engage users, support productivity, and integrate commonly used business services into Teams. Users and Admins can also create custom apps and automated workflows for Teams using the low-code Power Apps and Power Automate development tools.
-
-Apps and workflows let hybrid workers be more productive in Teams, by collecting and sharing critical information, automating repetitive tasks, and allowing them to chat with interactive bot. Pinning apps to a channel or the Teams app bar is a great way for users to make these apps easily accessible in a relevant space, and admins can pin apps to drive awareness and adoption of the apps that everyone should be using.
 
 ## Exchange email and manage calendars, contacts, and tasks with Exchange Online and Outlook
 

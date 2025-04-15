@@ -3,10 +3,11 @@ title: "Integrated apps and Microsoft Entra ID for Microsoft 365 administrators"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 08/10/2020
+ms.date: 12/06/2024
 audience: Admin
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -16,6 +17,7 @@ ms.custom:
 ms.collection: 
 - scotvorg
 - M365-subscription-management
+- must-keep
 search.appverid:
 - MET150
 - MOE150
@@ -26,7 +28,7 @@ description: Learn how to register and administer Office 365 integrated Apps in 
 
 # Integrated apps and Microsoft Entra ID for Microsoft 365 administrators
 
-There's more to managing integrated apps than just [managing user consent to apps](../admin/misc/user-consent.md). With the advent of the Microsoft 365 REST APIs, users can grant apps access to their Microsoft 365 data, such as mail, calendars, contacts, users, groups, files, and folders. By default, users need to individually grant permissions to each app. 
+There's more to managing integrated apps than just [managing user consent to apps](../admin/misc/user-consent.md). With the advent of the Microsoft 365 REST APIs, users can grant apps access to their Microsoft 365 data, such as mail, calendars, contacts, users, groups, files, and folders. By default, users need to individually grant permissions to each app.
 
 But this doesn't scale well if you want to authorize an app once at the **Microsoft Entra DC admin**, or **Global admin** level and roll it out to your whole organization through the app launcher. To do this, you must register the app in Microsoft Entra ID. There are some steps you need to take before you can register an app in Microsoft Entra ID and some background information you should know that can help you manage apps in your Microsoft 365 organization.
   
@@ -40,7 +42,7 @@ You have to do these two tasks before you can manage your Microsoft 365 apps in 
 |:-----|:-----|
 |[Use your free Microsoft Entra subscription](../compliance/use-your-free-azure-ad-subscription-in-office-365.md) <br/> |Every paid subscription to Microsoft 365 comes with a free subscription to Microsoft Entra ID. You can use Microsoft Entra ID to manage your apps and to create and manage user and group accounts. To use Microsoft Entra ID, just go to the Azure portal at [https://portal.azure.com](https://portal.azure.com) and sign in using your Microsoft 365 account.  <br/> |
 |[Manage user consent to apps](../admin/misc/user-consent.md) <br/> |You must manage user consent to apps to allow third-party apps to access user Microsoft 365 information and for you to register apps in Microsoft Entra ID. For example, when someone uses a third-party app, that app might ask for permission to access their calendar and to edit files that are in a OneDrive folder.  <br/> |
-   
+
 Managing Microsoft 365 apps requires you to have knowledge of apps in Microsoft Entra ID. Use these articles to give you the background you need.
   
 |Article|Comments|

@@ -3,12 +3,12 @@ title: "Strengthen your security posture with Microsoft Defender XDR"
 f1.keywords:
 - security posture
 - strengthen security posture
-ms.author: siosulli
-author: siosulli
-manager: dansimp
+ms.author: deniseb
+author: denisebmsft
+manager: deniseb
 audience: Admin
 description: Learn how to strengthen your organization's security posture.
-ms.topic: tutorial
+ms.topic: solution-overview
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 search.appverid:
@@ -21,7 +21,7 @@ ms.collection:
 - highpri
 - tier1
 - ContentEnagagementFY24
-ms.date: 09/18/2023
+ms.date: 08/28/2024
 ---
 
 # Strengthen your security posture with Microsoft Defender XDR
@@ -36,7 +36,7 @@ It will help you better understand your overall security posture and provide a f
 
 This solution guide provides specific and actionable steps to strengthen your security posture, and assumes the following facts:
 
-- You're a global admin
+- You have sufficient permissions to configure capabilities for Microsoft Defender products. 
 - You have successfully deployed [Microsoft Defender for Endpoint Plan 2](../security/defender-endpoint/microsoft-defender-endpoint.md)
 - You're beyond the initial stage of onboarding devices and have a management tool in place to support future device onboarding. For more information on Onboarding devices, see [Onboarding and configuration tool options](../security/defender-endpoint/mde-planning-guide.md).
 

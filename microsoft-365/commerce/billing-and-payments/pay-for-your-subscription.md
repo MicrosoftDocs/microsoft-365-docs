@@ -5,10 +5,11 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: armanv, nicholak
+ms.reviewer: lishepar, ramagane
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-management
 ms.localizationpriority: high
 ms.collection:
 - Tier1
@@ -26,8 +27,10 @@ ms.custom:
 - AdminSurgePortfolio
 - business_assist
 - AdminTemplateSet
+- admindeeplinkMAC
+- GAUpdates
 description: "Learn what payment options are available to pay for your Microsoft business subscription."
-ms.date: 10/17/2023
+ms.date: 01/07/2025
 ---
 
 # Payment options for Microsoft business subscriptions
@@ -46,15 +49,15 @@ You can manage payment methods whenever you need to. To learn how to add, change
 ## Before you begin
 
 - [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
-- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a Billing account owner or contributor, a Billing profile owner or contributor, or an Invoice manager to do the tasks in this article. For information about billing account and billing profile roles, see [Understand your Microsoft business billing account](../manage-billing-accounts.md) and [Understand your Microsoft business billing profile](manage-billing-profiles.md).
-- If you have a Microsoft Online Subscription Agreement (MOSA), you must be a Global or Billing admin to do the tasks in this article. For more information, see [About admin roles in the Microsoft 365 admin center](../../admin/add-users/about-admin-roles.md).
+- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a Billing account owner or contributor, a Billing profile owner or contributor, or an Invoice manager to do the tasks in this article. For information about billing account and billing profile roles, see [Understand your Microsoft business billing account](../manage-billing-accounts.md) and [Manage your Microsoft business billing profiles](manage-billing-profiles.md).
+- If you have a Microsoft Online Subscription Agreement (MOSA), you must be at least a Billing Administrator to do the tasks in this article. For more information, see [About admin roles in the Microsoft 365 admin center](../../admin/add-users/about-admin-roles.md).
 
 > [!NOTE]
-> If you're the person who signed up for the subscription, you're automatically a Billing account owner or Global admin.
+> If you're the person who signed up for the subscription, you're automatically a Billing account owner.
 
 ## Paying with a credit card or debit card
 
-If you have an MOSA billing account type, you can pay for your subscription with a credit card or debit card. By default, [recurring billing](../subscriptions/renew-your-subscription.md) is automatically turned on for all paid subscriptions. Each billing period, we automatically charge the payment method on file to pay for your subscription. We continue to charge that payment method until the subscription expires or is canceled. If recurring billing is turned off for a subscription, we continue to charge the payment method on file until the end of the subscription term.
+If you have an MOSA billing account type, you can pay for your subscription with a credit card or debit card. By default, [recurring billing](../subscriptions/renew-your-subscription.md) is automatically turned on for all paid subscriptions. Each billing period, we automatically charge the payment method on file to pay for your subscription. We continue to charge that payment method until the subscription expires or is canceled. If recurring billing is turned off for a subscription, we continue to charge the payment method on file until the end of the subscription term. Microsoft might use information provided by the issuing bank or payment network for your payment method to ensure connected payment method information remains current.
 
 ## Paying by wire transfer
 
@@ -73,6 +76,9 @@ If a credit check is required, you're notified when you buy your subscription. I
 If your subscription or billing profile is paid by wire transfer, at the end of each billing period, you get an email when your billing statement is ready to view. This email doesn't contain a copy of your billing statement. However, you can choose to [receive your organization's invoices as email attachments](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments). Your billing statement includes details about your options for making a payment, and where to send it. If you enter a purchase order (PO) number when you buy a subscription, the number appears on your billing statement. For information about accessing billing statements, see [View your invoice in the Microsoft 365 admin center](view-your-bill-or-invoice.md).
 
 If you have an MCA billing account type, and you have a billing profile that's paid by wire transfer, you can also use a credit card or debit card to make a one-time payment by using the **Pay now** button on your invoice.
+
+> [!NOTE]
+> It can take up to 10 business days to process a wire transfer payment.
 
 ## Paying with a billing profile
 
@@ -151,7 +157,7 @@ As of September 30, 2022, Microsoft and other online merchants no longer store c
 
 ### UPI and NetBanking payment options
 
-The admin center supports two alternate payment options for customers in India:
+The admin center supports two alternate payment options for customers in India who have an MOSA billing account type:
 
 - UPI (Unified Payments Interface) payment is a real-time payment method.
 - NetBanking (Internet Banking) provides customers with access to banking services on an online platform.

@@ -1,29 +1,110 @@
+items:
 - name: Microsoft 365 Copilot documentation
   href: index.yml
+- name: Copilot release notes
+  href: release-notes.md
+- name: Get started with Microsoft 365 Copilot
   items:
-    - name: Get started with Microsoft 365 Copilot
-      href: microsoft-365-copilot-setup.md
-    - name: Plan
-      items: 
-        - name: Overview of Microsoft 365 Copilot
-          href: microsoft-365-copilot-overview.md
-        - name: Requirements for Microsoft 365 Copilot
-          href: microsoft-365-copilot-requirements.md
-        - name: Data, Privacy, and Security for Copilot for Microsoft 365
-          href: microsoft-365-copilot-privacy.md
-        - name: Extend Microsoft 365 Copilot
-          href: /microsoftteams/platform/copilot/how-to-extend-copilot
-    - name: Deploy
-      items: 
-        - name: Enable users for Microsoft 365 Copilot
-          href: microsoft-365-copilot-enable-users.md
-    - name: Manage
+    - name: What is Microsoft 365 Copilot?
+      href: microsoft-365-copilot-overview.md
+    - name: Architecture and data protection diagrams
       items:
-        - name: Microsoft 365 Copilot usage report
-          href: /microsoft-365/admin/activity-reports/microsoft-365-copilot-usage
-        - name: Manage Plugins for Copilot in Integrated Apps
-          href: /microsoft-365/admin/manage/manage-plugins-for-copilot-in-integrated-apps
-        - name: Manage Microsoft 365 Copilot with the Copilot page
-          href: microsoft-365-copilot-page.md
-        - name: Manage public web access for Microsoft 365 Copilot
-          href: manage-public-web-access.md
+      - name: Architecture & how Copilot works
+        href: microsoft-365-copilot-architecture.md
+      - name: Data protection and auditing
+        href: microsoft-365-copilot-architecture-data-protection-auditing.md
+    - name: Which Copilot is right for me?
+      href: which-copilot-for-your-organization.md
+    - name: Get your data ready for Microsoft 365 Copilot
+      items:
+        - name: License options
+          href: microsoft-365-copilot-licensing.md
+        - name: E3 and E5 license feature comparison list
+          displayName: e3 vs e5
+          href: microsoft-365-copilot-license-feature-overview.md
+        - name: E3 implementation guide
+          displayName: get started
+          href: microsoft-365-copilot-e3-guide.md
+        - name: E5 implementation guide
+          displayName: get started
+          href: microsoft-365-copilot-e5-guide.md
+    - name: Blueprint to prevent oversharing
+      href: microsoft-365-copilot-blueprint-oversharing.md
+- name: Deploy and enable Microsoft 365 Copilot
+  items: 
+    - name: Set up and assign licenses
+      href: microsoft-365-copilot-setup.md
+    - name: Requirements and prerequisites
+      href: microsoft-365-copilot-requirements.md
+    - name: License options
+      href: microsoft-365-copilot-licensing.md
+    - name: Enable users and welcome email
+      href: microsoft-365-copilot-enable-users.md  
+    - name: Copilot Prompt Gallery
+      href: copilot-prompt-gallery.md
+    - name: Adoption resources
+      href: microsoft-365-copilot-enablement-resources.md
+- name: Pay-as-you-go for Microsoft 365 Copilot
+  items:
+    - name: Microsoft 365 Copilot pay-as-you-go overview
+      href: pay-as-you-go/overview.md
+    - name: Set up pay-as-you-go for Microsoft 365 Copilot Chat
+      href: pay-as-you-go/setup.md
+    - name: Meters for Microsoft 365 Copilot Chat pay-as-you-go
+      href: pay-as-you-go/meters.md
+    - name: View costs and billing for Microsoft 365 Copilot Chat pay-as-you-go
+      href: pay-as-you-go/view-cost.md
+- name: Manage Microsoft 365 Copilot
+  items:
+    - name: Manage Microsoft 365 Copilot scenarios 
+      href: microsoft-365-copilot-page.md
+    - name: Pin Copilot Chat to the navigation bar
+      href: pin-copilot.md
+    - name: Enable Facilitator in Microsoft Teams
+      href: /microsoftteams/facilitator-teams?toc=%2Fcopilot%2Fmicrosoft-365%2Ftoc.json&bc=%2Fcopilot%2Fmicrosoft-365%2Fbreadcrumb%2Ftoc.json
+    - name: Manage Copilot for Microsoft Teams meetings and events
+      href: /microsoftteams/copilot-teams-transcription?toc=%2Fcopilot%2Fmicrosoft-365%2Ftoc.json&bc=%2Fmicrosoft-365-copilot%2Fbreadcrumb%2Ftoc.json
+    - name: Copilot in Microsoft 365 admin centers
+      href: copilot-for-microsoft-365-admin.md
+- name: Microsoft 365 Copilot in Microsoft Viva
+  items:
+    - name: Introduction to Microsoft 365 Copilot in Viva
+      href: /viva/copilot/viva-copilot-overview?toc=%2Fcopilot%2Fmicrosoft-365%2Ftoc.json&bc=%2Fcopilot%2Fmicrosoft-365%2Fbreadcrumb%2Ftoc.json
+    - name: Manage access to Microsoft 365 Copilot in Viva
+      href: /viva/copilot/copilot-access-management?toc=%2Fcopilot%2Fmicrosoft-365%2Ftoc.json&bc=%2Fcopilot%2Fmicrosoft-365%2Fbreadcrumb%2Ftoc.json
+- name: Maximize the value of Microsoft 365 Copilot for your organization
+  items:
+    - name: Use the Microsoft Copilot Dashboard
+      href: /viva/insights/org-team-insights/copilot-dashboard?toc=%2Fcopilot%2Fmicrosoft-365%2Ftoc.json&bc=%2Fcopilot%2Fmicrosoft-365%2Fbreadcrumb%2Ftoc.json
+    - name: View the Microsoft 365 Copilot readiness report
+      href: /microsoft-365/admin/activity-reports/microsoft-365-copilot-readiness?toc=%2Fcopilot%2Fmicrosoft-365%2Ftoc.json&bc=%2Fcopilot%2Fmicrosoft-365%2Fbreadcrumb%2Ftoc.json
+    - name: View the Microsoft 365 Copilot usage report
+      href: /microsoft-365/admin/activity-reports/microsoft-365-copilot-usage?toc=%2Fcopilot%2Fmicrosoft-365%2Ftoc.json&bc=%2Fcopilot%2Fmicrosoft-365%2Fbreadcrumb%2Ftoc.json
+- name: "Trust: Data, Privacy, and Security"
+  items:
+    - name: Data, privacy, and security for Microsoft 365 Copilot
+      href: microsoft-365-copilot-privacy.md
+    - name: Data, privacy, and security for web search in Microsoft 365 Copilot and Microsoft 365 Copilot Chat
+      href: manage-public-web-access.md
+    - name: AI security for Microsoft 365 Copilot
+      href: microsoft-365-copilot-ai-security.md
+    - name: Apply principles of Zero Trust to Microsoft 365 Copilot
+      href: /security/zero-trust/zero-trust-microsoft-365-copilot?toc=%2Fcopilot%2Fmicrosoft-365%2Ftoc.json&bc=%2Fcopilot%2Fmicrosoft-365%2Fbreadcrumb%2Ftoc.json
+    - name: Enterprise data protection
+      href: enterprise-data-protection.md
+    - name: Transparency Note
+      href: microsoft-365-copilot-transparency-note.md    
+- name: Extensibility and building agents
+  items:
+    - name: Extend Microsoft 365 Copilot
+      href: /microsoft-365-copilot/extensibility?toc=%2Fcopilot%2Fmicrosoft-365%2Ftoc.json&bc=%2Fcopilot%2Fmicrosoft-365%2Fbreadcrumb%2Ftoc.json
+- name: Service description and training for Microsoft 365 Copilot
+  items:
+    - name: Service description
+      href: /office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot?toc=%2Fcopilot%2Fmicrosoft-365%2Ftoc.json&bc=%2Fcopilot%2Fmicrosoft-365%2Fbreadcrumb%2Ftoc.json
+    - name: Technical training
+      href: /training/paths/prepare-your-organization-microsoft-365-copilot/
+    - name: "Copilot: End user resources"
+      href: https://copilot.cloud.microsoft/prompts
+    - name: Submit Copilot feedback to Microsoft
+      href: provide-feedback.md

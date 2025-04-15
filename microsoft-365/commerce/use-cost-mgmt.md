@@ -3,10 +3,11 @@ title: "Use Cost management in the Microsoft 365 admin center"
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, ramagane
+ms.reviewer: shrshett, vikdesai
 audience: Admin
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-management
 ms.localizationpriority: medium
 ms.collection: 
 - Tier1
@@ -15,20 +16,23 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom: 
-- commerce_subscriptions
+- commerce_billing
 - AdminTemplateSet
+- admindeeplinkMAC
+- GAUpdates
 search.appverid: MET150 
 description: "Learn how to use the cost management feature in the Microsoft 365 admin center to view, analyze, and manage costs for your organization."
-ms.date: 03/09/2022
+ms.date: 07/16/2024
 ---
 
 # Use Cost management in the Microsoft 365 admin center
 
-If you're a Global or Billing admin with a Microsoft Customer Agreement (MCA), you can use the **Cost management** page in the Microsoft 365 admin center to view, analyze, and manage your service costs. To get to the **Cost management** page, in the admin center left navigation pane, select **Billing** > **Cost management**.
+If you have a Microsoft Customer Agreement (MCA) billing account type, you can use the <a href="https://go.microsoft.com/fwlink/p/?linkid=2201187" target="_blank">Cost management</a> page in the Microsoft 365 admin center to view, analyze, and manage your service costs. To get to the **Cost management** page, in the admin center left navigation pane, select **Billing** > **Cost management**.
 
 ## Before you begin
 
-You must be a Global or Billing admin to do the steps described in this article. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).
+- [Find out what type of billing account you have](manage-billing-accounts.md#view-my-billing-accounts).
+- You must have a Microsoft Customer Agreement (MCA) billing account type and have any billing account role, or any billing profile role to use the features described in this article. For information about billing account roles, see [What are billing account roles?](manage-billing-accounts.md#what-are-billing-account-roles). For information about billing profile roles, see [What are billing profile roles?](billing-and-payments/manage-billing-profiles.md#what-are-billing-profile-roles)
 
 ## What is cost management?
 
@@ -41,9 +45,9 @@ Cost management is a methodology used to plan and control an organization's budg
 
 ## Understand your costs
 
-You can use Microsoft 365 billing features to review your invoiced costs and manage access to billing information. In larger organizations, procurement and finance teams usually conduct billing tasks.
+You can use cost management features to review your invoiced costs and manage access to billing information. In larger organizations, procurement and finance teams usually conduct billing tasks.
 
-When you sign up to use Microsoft 365, a billing account is automatically created for you. You use your billing account to manage your invoices and payments, and track costs. It's possible for you to have multiple billing accounts. For each legal entity or sold-to address for your organization, you receive a separate billing account.
+When you sign up to use a Microsoft 365 for business product, a billing account is automatically created for you. You use your billing account to manage your invoices and payments, and track costs. It's possible for you to have multiple billing accounts. For each legal entity or sold-to address for your organization, you receive a separate billing account.
 
 ## Plan and control costs
 
@@ -54,11 +58,7 @@ Cost management in the Microsoft 365 admin center helps you plan for and control
 
 ## View costs
 
-The **Cost management** page in the admin center has a **Services** tab where you can see the breakdown of the different products and services you're using today.
-
-:::image type="content" source="../media/mac-billing-costmgmt/MAC-Billing-CostMgmt.png" alt-text="The Cost management page in the Microsoft 365 admin center.":::
-
-Use the **Services** tab to see the list of all services being used during the selected period. The chart on the page breaks down the costs daily for the top 10 services. Use the date picker to look back at historical costs and use different date ranges to compare cost trends.
+The **Cost management** page in the admin center has a default tab with a link to the **Products + Services** smart view where you can see the breakdown of the products and services used during the selected period. The chart on the page breaks down the daily costs for the top services. Use the date picker to look back at historical costs and use different date ranges to compare cost trends.
 
 ## Download costs
 
@@ -66,13 +66,9 @@ Select **Download** to download your daily cost data into a CSV or Excel file. Y
 
 ## Create budgets
 
-Budgets let you monitor your charges and ensure you're aware when you go over specified thresholds. You can create a quick budget where you set a threshold amount that you want to stay under each month. The quick budget sends you a notification when your costs exceed this threshold. Notifications are only sent to the admin who created the budget.
+Budgets let you monitor your charges and ensure you're aware when you go over specified thresholds. You can create a quick budget where you set a threshold amount that you want to stay under each month. The budget sends you a notification when your costs exceed this threshold. Notifications are only sent to the admin who created the budget. To create a budget, select **create**, enter a threshold amount, then select **Save**.
 
-:::image type="content" source="../media/mac-billing-costmgmt/MAC-Billing-CostMgmt-CreateBudget.png" alt-text="The Create budget window in the Microsoft 365 admin center.":::
-
-To customize the budget, select **Configure advanced settings**. You can give your budget a name and change the budget frequency. You can also set up a monthly, quarterly, or annual budget, and choose the period for which budget notifications are sent.
-
-:::image type="content" source="../media/mac-billing-costmgmt/MAC-Billing-CostMgmt-CreateBudget-Details.png" alt-text="The expanded budget details window in the Microsoft 365 admin center.":::
+To customize the budget, select **Configure advanced settings**. You can give your budget a name and change the threshold amount. You can also set up a monthly, quarterly, or annual budget, and choose the period for which budget notifications are sent.
 
 ## Related content
 

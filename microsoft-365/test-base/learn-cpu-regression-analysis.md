@@ -18,6 +18,8 @@ f1.keywords: NOCSH
 
 # Understanding CPU Regression Analysis
 
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
 After uploading your application's binaries along with associated test scripts, the Test Base service will then run the test scripts, and automatically perform CPU and Memory regression analysis. The service will then check if the CPU utilization for the application on the pre-release version of the update for the target OS is in line with the CPU utilization for the released version of the OS.
 
 CPU utilization is not likely to be a direct comparative match by operating system, given there can be differences for processes that are running on two different operating system versions. However, in these cases, the **Test Base** service analysis should be able to demonstrate whether CPU utilization for your application is impacted by an upcoming operating system update and specifically which processes have regressed from previous test runs.

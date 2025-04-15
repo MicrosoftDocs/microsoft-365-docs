@@ -1,132 +1,161 @@
 ---
-title: "Microsoft 365 Copilot overview"
+title: What is Microsoft 365 Copilot?
+description: Learn about what Microsoft 365 Copilot is and the common Copilot features in Microsoft 365 apps, like Word, Excel, PowerPoint, and Teams. This article answers common questions about Copilot, including what is Copilot, how Copilot works, and the benefits of using Copilot. What is M365 Copilot?
 f1.keywords:
 - NOCSH
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 09/20/2023
+ms.date: 02/13/2025
 audience: Admin
-ms.topic: article
+ms.reviewer: mandia
+ms.topic: overview
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
 ms.collection: 
-- Tier2
 - scotvorg
-- M365-subscription-management 
-- Adm_O365
-- Adm_TOC
 - m365copilot
+- magic-ai-copilot
 - essentials-overview
-description: "Learn about how Microsoft 365 Copilot works."
+ms.custom: [copilot-learning-hub]
+appliesto:
+  - ✅ Microsoft 365 Copilot
 ---
 
 # Microsoft 365 Copilot overview
 
-[Microsoft 365 Copilot](/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot) is an AI-powered productivity tool that coordinates large language models (LLMs), content in Microsoft Graph, and the Microsoft 365 apps that you use every day, such as Word, Excel, PowerPoint, Outlook, Teams, and others. This integration provides real-time intelligent assistance, enabling users to enhance their creativity, productivity, and skills.
+**Microsoft 365 Copilot is an AI-powered tool that helps with your work tasks**.
 
-Microsoft 365 Copilot uses a combination of LLMs, a type of artificial intelligence (AI) algorithm that uses deep learning techniques and vast data sets to understand, summarize, predict, and generate content. These LLMs include pre-trained models, such as Generative Pre-Trained Transformers (GPT) like GPT-4, designed to excel in these tasks.
+Users enter a prompt in Copilot and Copilot responds with AI-generated information. The responses are in real-time and can include internet-based content and work content that users have permission to access.
 
-## Copilot integration with Graph and Microsoft 365 Apps
+Users get content relevant to their work tasks, and in the context of the Microsoft 365 app they're using.
 
-[Microsoft 365 Copilot](https://www.microsoft.com/microsoft-365/blog/2023/03/16/introducing-microsoft-365-copilot-a-whole-new-way-to-work/) is a sophisticated processing and orchestration engine that provides AI-powered productivity capabilities by coordinating the following components:
+For example, you're an Operations Manager and are working with human resources to update job descriptions. In a Copilot prompting session, you can ask Copilot to create a job description and also add qualifications that should be included in the description. In the same prompting session, you can expand the generated job description to also create different levels, like Level 1, Level 2, and Level 3.
 
-- Large language models (LLMs)
+You can also [create and use agents](/microsoft-365-copilot/extensibility) to customize your Copilot experience with your organization's data sources. For example, you're a warehouse manager and you need to know the status of a shipment. You can ask your Copilot shipping agent "What is the status of shipment 1234?" Copilot uses your data sources to get the information and can respond with the status.
 
-- Content in Microsoft Graph, such as emails, chats, and documents that you have permission to access.
+This article is for IT admins. It describes the different components that Microsoft 365 Copilot uses and the Copilot features in the Microsoft 365 apps. To learn more about the architecture and how Copilot works, see [Microsoft 365 Copilot architecture and how it works](microsoft-365-copilot-architecture.md).
 
-- The Microsoft 365 apps that you use every day, such as Word and PowerPoint.
+This article applies to:
 
-Microsoft 365 apps (such as Word, Excel, PowerPoint, Outlook, Teams, loop, and more) operate with Copilot to support users in the context of their work. Some of these features are detailed in the following table:
+- Microsoft 365 Copilot
 
-| Microsoft 365 App | Feature | Description |
-|-----------------------|--------------------------------|---------------------------------------------------------|
-| Word                  | Draft with Copilot             | Generate text with and without formatting in new or existing documents |
-|                       | Chat                           | Create content, summarize, ask questions about your document, and do light commanding via Chat. |
-| PowerPoint            | Draft with Copilot             | Create from Prompt or File, leveraging enterprise templates. Integration with DALL-E, OpenAI’s image generator, also allows users to ask Copilot to create custom images. |
-|                       | Chat                           | Summary, Q&A, ChatGPT integration. |
-|                       | Light commanding               | Add slides, pictures, or make deck-wide text changes. |
-| Loop                  | Collaborative content creation | Create content that can be collaboratively improved through direct editing or refinement by Copilot. |
-| Outlook               | Coaching tips                  | Get coaching tips and suggestions on clarity, sentiment, and tone, along with an overall message assessment and suggestions for improvement. |
-|                       | Summarize                      | Summarize an email thread to help the user quickly understand the discussion. It can draft and suggest replies to email. |
-|                       | Leverage content               | Pull from other emails or content across Microsoft 365 that user already has access to. |
-| Teams                 | Chat                           | Users can invoke Copilot in any chat. Copilot can summarize up to 30 days of the chat content prior to the last message in a given chat. Copilot uses only the single chat thread as source content for responses and can't reference other chats or data types (for example, meeting transcripts, emails, and files). Users can interact with Copilot by selecting prewritten prompts or writing their own questions. Responses include clickable citations that direct users to the relevant source content that was used. Conversations with Copilot take place in a side panel that allows users to copy and paste. Copilot conversations are ephemeral and will disappear after the side panel is closed. |
-|                       | Meetings                       | Users can invoke Copilot in meetings or calls within the same tenant. Copilot will use the transcript in real-time to answer questions from the user. It only uses the transcript and knows the name of the user typing the question. The user can type any question or use pre-determined prompts; however, Copilot will only answer questions related to the meeting conversation from the transcript. The user can copy/paste an answer and access Copilot after the meeting ends on the Recap page. Copilot interaction history with the user is kept for 24 hrs. |
-|                       | Business Chat                  | Allows users to access data across their Microsoft 365 Graph and leverage LLM functionality. Business chat can be accessed in Teams and when signed-in to Bing with an active directory account. |
-|                       | Whiteboard                     | Makes meetings and brainstorm sessions more creative and effective. Use natural language to ask Copilot to generate ideas, organize ideas into themes, create designs that bring ideas to life and summarize whiteboard content. |
-| OneNote               | Draft with Copilot             | Use prompts to draft plans, generate ideas, create lists, and organize information to help you easily find what you need.  |
+> [!TIP]
+> - Home users might automatically get Microsoft Copilot, which is the free consumer version. To learn more, see [How can Copilot help you?](https://www.microsoft.com/microsoft-copilot/for-individuals) and [Welcome to Copilot on Windows](https://support.microsoft.com/windows/welcome-to-copilot-on-windows-675708af-8c16-4675-afeb-85a5a476ccb0).
+> - Get sample prompts at the [Copilot Prompt Gallery](https://copilot.cloud.microsoft/prompts) and training at the [Microsoft 365 Copilot Skilling Center](https://adoption.microsoft.com/copilot/skilling-center/).
+> - Learn more about data privacy at [Data, Privacy, and Security for Microsoft 365 Copilot](microsoft-365-copilot-privacy.md).
 
-To learn more about what's possible with Microsoft 365 Apps and Copilot, check out [Microsoft 365 AI help and learning](https://support.microsoft.com/copilot).
+## The technical details
 
-## How does Microsoft 365 Copilot work?
+:::image type="content" source="media/microsoft-365-copilot-architecture/copilot-tenant-architecture.svg" alt-text="Diagram that shows the Microsoft 365 tenant architecture with Microsoft 365 Copilot and your user data." lightbox="media/microsoft-365-copilot-architecture/copilot-tenant-architecture.svg":::
 
-Microsoft 365 Copilot capabilities that users see in Microsoft 365 Apps and other surfaces appear as intelligent features, functionality, and prompting capability. Our foundation LLMs and proprietary Microsoft technologies work together in an underlying system that helps you securely access, use, and manage your organizational data.
+Microsoft 365 Copilot:
 
-- **Microsoft 365 Apps** (such as Word, Excel, PowerPoint, Outlook, Teams, and Loop) operate with Microsoft 365 Copilot to support users in the context of their work. For example, Copilot in Word is designed to assist users specifically in the process of creating, understanding, and editing documents. In a similar way, Copilot in the other apps helps users in the context of their work within those apps.
+- Pairs with the Microsoft 365 productivity apps that you use every day, like Word, Excel, PowerPoint, Outlook, Teams, and others.
 
-- **Microsoft 365 Chat** enables Microsoft 365 Copilot users to leverage cross-app intelligence, simplifying their workflow across multiple apps. Microsoft 365 Chat uses the power of the foundation LLMs, a user's organizational data, and a user's apps to generate a response. Microsoft 365 Chat is available in a range of experiences, including Teams (chat), Bing, Microsoft Edge, and the Microsoft 365 app.
+  So, you can use Copilot in Word to help create a document, in Excel to get suggestions for formulas, in Outlook to summarize an email thread, and in Teams to summarize meetings.
 
-- **Microsoft Graph** has long been fundamental to Microsoft 365. It includes information about the relationships between users, activities, and your organization’s data. The Microsoft Graph API brings more context from customer signals into the prompt, such as information from emails, chats, documents, and meetings. For more information, see [Overview of Microsoft Graph](/graph/overview) and [Major services and features in Microsoft Graph](/graph/overview-major-services).
+- Uses content in [Microsoft Graph](/graph/overview) to personalize the responses with a user's work emails, chats, and documents. Copilot only shows the data that users have permission to access.
 
-- **Semantic Index** for Copilot uses multiple LLMs that sit on top of Microsoft Graph to interpret user queries and produce sophisticated, meaningful, and multilingual responses that help you to be more productive. It allows you to search quickly through billions of vectors (mathematical representations of features or attributes) to help connect you with relevant and actionable information in your organization. For more information on Semantic Index for Copilot, [review this video](https://www.youtube.com/watch?v=KtsVRCsdvoU).
+- Coordinates large language models (LLMs). LLMs are a type of artificial intelligence (AI) algorithms. These algorithms use deep learning techniques and data sets to understand, summarize, predict, and generate content.
 
-The following diagram provides a visual representation of how Microsoft 365 Copilot works.
+  The LLMs include pretrained models, like Generative Pre-Trained Transformers, like GPT-4, that are designed for these tasks. To learn more about Generative Pre-Trained Transformers (GPT), ask [Copilot](https://copilot.microsoft.com).
 
-:::image type="content" source="media/microsoft-365-copilot-flow.png" alt-text="Diagram that shows the relationship among the components of Microsoft 365 Copilot, such as Microsoft Graph and LLM." lightbox="media/microsoft-365-copilot-flow.png":::
+To learn more, see:
 
-Here's an explanation of how Microsoft 365 Copilot works:
+- [Microsoft 365 Copilot architecture and how it works](microsoft-365-copilot-architecture.md)
+- [Microsoft 365 Copilot service description](/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot)
+- Video: [Copilot system explained by Microsoft](https://www.youtube.com/watch?v=E5g20qmeKpg)
+- Video: [Microsoft 365 Copilot, LLMs, and your apps](https://www.youtube.com/watch?v=B2-8wrF9Okc)
+- Video: [How to get ready for Microsoft 365 Copilot](https://aka.ms/M365CopilotAdmin)
 
-- Copilot receives an input prompt from a user in an app, such as Word or PowerPoint.
+## Copilot works with Microsoft 365 apps and Microsoft Graph
 
-- Copilot then pre-processes the input prompt through an approach called grounding, which improves the specificity of the prompt, to help you get answers that are relevant and actionable to your specific task. The prompt can include text from input files or other content discovered by Copilot, and Copilot sends this prompt to the LLM for processing. Copilot only accesses data that an individual user has existing access to, based on, for example, existing Microsoft 365 role-based access controls.
+Copilot has intelligent features, functionality, and prompting. These features are designed to help users in the context of their work within their Microsoft 365 apps.
 
-- Copilot takes the response from the LLM and post-processes it. This post-processing includes other grounding calls to Microsoft Graph, responsible AI checks, security, compliance and privacy reviews, and command generation.
+Microsoft's LLMs and other components work together. They help users securely access and use your organizational data with AI-powered capabilities. Specifically, Microsoft 365 Copilot uses the following components:
 
-- Copilot returns the response to the app, where the user can review and assess the response.
+✅ **Microsoft 365 apps**
 
-Microsoft 365 Copilot iteratively processes and orchestrates these sophisticated services to help produce results that are relevant to your organization because they're contextually based on your organizational data.
+Apps like Word, Excel, PowerPoint, Outlook, Teams, and Loop work with Copilot to support users in the context of their work. For example, Copilot in Word helps users create, understand, and edit documents.
 
-## Semantic Index
+For more features, see [Copilot features in Microsoft 365 apps](#copilot-features-in-microsoft-365-apps) (in this article).
 
-The semantic index brings a whole new world of understanding to your data in Microsoft 365. Through enhanced interactions with your individual and company data via the Microsoft Graph, and the creation of a new index, the semantic index is an improvement to Microsoft 365 search that lays the foundation for the next generation of Search and Copilot experiences. The semantic index respects security and policies in the Microsoft Graph so that when a user issues a query either directly via search or in Microsoft 365 chat via Copilot, it's always in the security context of the user, and only content that a user has access to is returned.
+✅ **Microsoft 365 Copilot Chat**
 
-The semantic index does more than enhance search results; it works to help you understand your data, find information quicker and improve productivity. Users can interact with the semantic index initially through Microsoft 365 Chat integration, and then over time, Microsoft will improve the search experience in SharePoint Online, Microsoft Teams, and the Microsoft 365 app:
+With Microsoft 365 Copilot Chat, you can draft content, review what you missed, and get answers to questions using open-ended prompts. This information is securely grounded in your work data.
 
-:::image type="content" source="media/microsoft-365-chat-search-index.png" alt-text="Diagram that shows the relationship between Microsoft 365 Chat and Microsoft Search." lightbox="media/microsoft-365-chat-search-index.png":::
+You can use Microsoft 365 Copilot Chat in Microsoft Teams, in the Microsoft 365 Copilot Chat app, at [Microsoft365.com](https://www.microsoft365.com/), and at [copilot.microsoft.com](https://copilot.microsoft.com/).
 
-Microsoft 365 Copilot and Microsoft 365 E3, E5, Business Standard and Business Premium customers will receive the features as part of a phased rollout, with status updates shared via the [Microsoft 365 admin center](https://admin.microsoft.com/) and [Microsoft 365 public roadmap](https://www.microsoft.com/microsoft-365/roadmap).
+✅ **Microsoft Graph**
 
-We are in the early stages of rolling out the semantic index to all organizations with Microsoft 365 Copilot and an eligible Microsoft 365 license, without any administrative involvement. Microsoft automatically manages the enablement of the semantic index, with prioritization given for organizations that purchase more than 300 licenses for Microsoft 365 Copilot. When user indexing is complete, administrators will see a ‘Semantic indexing is complete’ status in the Microsoft 365 admin center for enabled users. When tenant level indexing starts in an organization, admins will see ‘Semantic index is enabled for your organization’ on the Search and Intelligence page in the Microsoft 365 admin center.
+Microsoft Graph includes information on users, their activities, and the organization data they can access. The Microsoft Graph API brings a personalized context into the prompt, like information from a user's emails, chats, documents, and meetings.
 
-:::image type="content" source="media/enable-semantic-index.png" alt-text="Screenshot that shows the semantic index enabled.":::
+To learn more, see [Overview of Microsoft Graph](/graph/overview) and [Major services and features in Microsoft Graph](/graph/overview-major-services).
 
-> [!IMPORTANT]
-> Microsoft will not provide timelines or status of semantic indexing of user and tenant level indexing for individual tenants. Organizations are advised to use the process above to check on indexing status for their tenants.
+✅ **Semantic indexing for Microsoft 365 Copilot**
 
-To learn more about Semantic Index for Copilot, check out these resources:
+Microsoft 365 Copilot enhances search relevance and accuracy by using advanced lexical and semantic understanding of Microsoft Graph data, resulting in more contextually precise information retrieval. Copilot preserves security, compliance, and privacy, ensuring organizational boundaries are respected while offering seamless user experience.
 
-- [Semantic Index for Copilot: Explained by Microsoft](https://www.youtube.com/watch?v=KtsVRCsdvoU)
+To learn more, see [Semantic indexing for Microsoft 365 Copilot](/microsoftsearch/semantic-index-for-copilot) and [Semantic Index explained by Microsoft](https://www.youtube.com/watch?v=KtsVRCsdvoU) (opens YouTube's website).
 
-- [Semantic Index for Copilot whitepaper](https://aka.ms/SemanticIndex/Whitepaper)
+## Copilot features in Microsoft 365 apps
 
-## Availability
+Microsoft 365 productivity apps (like Word, Excel, PowerPoint, Outlook, Teams, and Loop) work with Copilot to support users in the context of their work.
 
-Microsoft 365 Copilot is generally available as an add-on to customers with Microsoft E3 or E5. Contact your Microsoft account team to start the purchase process.
+> [!TIP]
+> To learn how users can use Copilot within Microsoft 365 apps, including sample prompts, see [Copilot Prompt Gallery](https://copilot.cloud.microsoft/prompts).
 
-## Additional resources
+Some of these features include:
 
-You can learn more about Microsoft 365 Copilot by reviewing these resources:
+| Microsoft 365 App | Feature |
+|---|---|
+| **Word** | **Draft**—Generate text with and without formatting in new or existing documents. Word files can also be used for grounding data. <br/><br/> **Chat**—Create content, summarize, ask questions about your document, and do light commanding. |
+| **PowerPoint** | **Draft**—Create a new presentation from a prompt or Word file using enterprise templates. PowerPoint files can also be used for grounding data. <br/><br/> **Chat**—Summary and Q&A <br/><br/> **Light commanding**—Add slides, pictures, or make deck-wide formatting changes. |
+| **Excel** | **Draft**—Get suggestions for formulas, chart types, and insights about data in your spreadsheet. |
+| **Loop** | **Collaborative content creation**—Create content that can be collaboratively improved through direct editing. |
+| **Outlook** | **Coaching tips**—Get coaching tips and suggestions on clarity, sentiment, & tone, and an overall message assessment and suggestions for improvement. <br/><br/> **Summarize**—Summarize an email thread to quickly understand the discussion. <br/><br/> **Draft**—Pull from other emails or content across Microsoft 365 that the user already has access to. |
+| **Teams** | **Chat**—Copilot can summarize up to 30 days of the chat content before the last message in a chat. <br/><br/>Copilot uses only the single chat thread as source content for responses. It can't reference other chats or data types, like meeting transcripts, emails, and files. Users can select prewritten prompts or write their own questions. Responses include clickable citations that direct users to the relevant source content that was used. <br/><br/> Conversations with Copilot take place in a side panel and allows users to copy and paste. Copilot conversations close when the side panel closes. <br/><br/> **Meetings**—Users can invoke Copilot in meetings or calls within the same tenant. Copilot uses the transcript in real-time to answer questions from the user. It only uses the transcript and knows the name of the user typing the question. <br/><br/> Users can type any question or use predetermined prompts. Copilot answers questions only related to the meeting conversation from the transcript. The user can copy/paste an answer and access Copilot after the meeting ends. <br/><br/> **Copilot**—Users access data across their Microsoft 365 Graph and use LLM functionality. <br/><br/> **Calls**—Automates important administrative tasks of a call, like capturing key points, task owners, and next steps. It supports voice over Internet Protocol (VoIP) and public switched telephone network (PSTN) calls. |
+| **Whiteboard** | **Draft**—Use natural language to generate ideas, organize ideas into themes, create designs based on ideas, and summarize whiteboard content. |
+| **OneNote** | **Draft**—Use prompts to draft plans, generate ideas, create lists, and organize information to help you find what you need. |
+| **Forms** | **Draft**—Use prompts to draft questions and suggestions that help you create surveys, polls, and other forms. |
 
-- [Data, Privacy, and Security for Microsoft 365 Copilot](microsoft-365-copilot-privacy.md)
+## Microsoft 365 services that help support Copilot
 
-- [The Copilot System: Explained by Microsoft](https://www.youtube.com/watch?v=E5g20qmeKpg) 
+In your Microsoft 365 license, there are services and features that can help you get your data and organization ready for Copilot.
 
-- [Semantic Index for Copilot: Explained by Microsoft](https://www.youtube.com/watch?v=KtsVRCsdvoU)
+- **SharePoint Advanced Management (SAM)**
 
-- [How Microsoft 365 Copilot works](https://www.youtube.com/watch?v=B2-8wrF9Okc)
+  Microsoft SharePoint Premium – SharePoint Advanced Management (SAM) can help you reduce oversharing and cleanup inactive sites. These tasks help declutter Copilot's data sources and improve the quality of the responses.
 
-- [How to get ready for Microsoft 365 Copilot](https://aka.ms/M365CopilotAdmin)
+  To learn more, see [Get ready for Microsoft 365 Copilot with SharePoint Advanced Management (SAM)](/sharepoint/get-ready-copilot-sharepoint-advanced-management).
 
-- [Microsoft 365 AI help and learning](https://support.microsoft.com/copilot)
+- **Restricted SharePoint Search**
 
-You can also stay up to date on the latest Copilot features, changes, and announcements using the [Message center](/microsoft-365/admin/manage/message-center) in the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).
+  Restricted SharePoint Search (RSS) RSS gives you time to review and configure the correct permissions on your SharePoint sites. You add the reviewed & corrected sites to an allowed list that Copilot can access.
+
+  To learn more, see [Restricted SharePoint Search](/sharepoint/restricted-sharepoint-search).
+
+- **Microsoft Purview**
+
+  Microsoft Purview can classify and label your data based on the sensitivity of the content. It can also help prevent unauthorized sharing or leakage and review Copilot prompts and responses.
+
+  To learn more, see [Microsoft Purview data security and compliance protections for generative AI apps](/purview/ai-microsoft-purview).
+
+- **Microsoft Agents**
+
+  Agents are scoped or focused versions of Microsoft 365 Copilot that act as AI assistants and can automate business processes. For example, you can create an agent that creates help desk tickets, or a human resources agent that looks up employee info from your data source.
+
+  To learn more, see [Microsoft 365 Copilot extensibility overview](/microsoft-365-copilot/extensibility).
+
+More resources:
+
+- [Compare features in the Microsoft 365 licenses that affect Copilot](microsoft-365-copilot-license-feature-overview.md)
+- Get your data ready for Microsoft 365 Copilot using the [E3 license admin guide](microsoft-365-copilot-e3-guide.md) or [E5 license admin guide](microsoft-365-copilot-e5-guide.md).
+
+## Related content
+
+- [Get licensing info](microsoft-365-copilot-licensing.md) and [set up Microsoft 365 Copilot](microsoft-365-copilot-setup.md).
+- Learn about [Data, Privacy, and Security for Microsoft 365 Copilot](microsoft-365-copilot-privacy.md).
+- Get [sample prompts at the Copilot Prompt Gallery](https://copilot.cloud.microsoft/prompts) and [training at the Microsoft 365 Copilot Skilling Center](https://adoption.microsoft.com/copilot/skilling-center/).
+- Stay up to date on the latest Copilot features, changes, and announcements using the [Message center](/microsoft-365/admin/manage/message-center) in the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).

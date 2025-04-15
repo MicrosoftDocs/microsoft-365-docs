@@ -1,3 +1,4 @@
+items:
 - name: Microsoft 365 admin center help
   href: index.yml
   items: 
@@ -96,11 +97,7 @@
         - name: Stay on top of changes
           href: manage/stay-on-top-of-updates.md
         - name: Manage multiple tenants
-          href: multi-tenant/manage.md
-    - name: Office 365 operated by 21Vianet
-      items: 
-        - name: Azure Information Protection support
-          href: services-in-china/parity-between-azure-information-protection.md      
+          href: multi-tenant/manage.md   
     - name: Manage users, groups, and passwords
       items: 
         - name: Users
@@ -159,6 +156,8 @@
              href: create-groups/explain-groups-knowledge-worker.md
            - name: Manage groups
              href: create-groups/manage-groups.md
+           - name: Assign or unassign licenses for groups
+             href: manage/manage-group-licenses.md
            - name: Microsoft 365 group mailbox size management
              href: create-groups/group-mailbox-size-management.md 
            - name: Add or remove group members
@@ -211,8 +210,6 @@
               href: email/configure-a-shared-mailbox.md
             - name: Convert a user mailbox to a shared mailbox
               href: email/convert-user-mailbox-to-shared-mailbox.md
-            - name: Remove a license from a shared mailbox
-              href: email/remove-license-from-shared-mailbox.md
         - name: Set up Focused Inbox
           href: setup/configure-focused-inbox.md
         - name: Add user or contact to distribution group
@@ -243,8 +240,8 @@
               href: get-help-with-domains/change-nameservers-at-any-domain-registrar.md
             - name: Create DNS records at any DNS host
               href: get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md
-            - name: Connect your DNS records at IONOS by 1&1
-              href: dns/create-dns-records-at-1-1-internet.md 
+            - name: Connect your DNS records at IONOS
+              href: dns/create-dns-records-at-ionos-com.md 
             - name: Connect your DNS records at 123-reg.co.uk
               href: dns/create-dns-records-at-123-reg-co-uk.md
             - name: Connect your DNS records at Amazon Web Services (AWS)
@@ -265,14 +262,20 @@
               href: dns/create-dns-records-at-wix.md
             - name: Create DNS records for Microsoft using Windows-based DNS
               href: dns/create-dns-records-using-windows-based-dns.md
+            - name: Defederation Process for GoDaddy
+              href: get-help-with-domains/godaddy-defederation-process.md
         - name: Troubleshoot domain issues
           href: get-help-with-domains/find-and-fix-issues.md
     - name: Manage your data and services
       items:
+         - name: Copilot in Microsoft 365 admin centers
+           href: /copilot/microsoft-365/copilot-for-microsoft-365-admin
          - name: Microsoft 365 Copilot extensibility
            items:
-            - name: Manage plugins for Copilot
-              href: manage/manage-plugins-for-copilot-in-integrated-apps.md
+            - name: Manage agents for Copilot
+              href: manage/manage-copilot-agents-integrated-apps.md
+            - name: Manage shared agents
+              href: manage/manage-shared-agents.md
             - name: Microsoft Graph connectors for Microsoft Search
               href: /microsoftsearch/connectors-overview
          - name: Monitor Microsoft 365 activity by using reports
@@ -281,14 +284,24 @@
               href: activity-reports/activity-reports.md
             - name: Active Users
               href: activity-reports/active-users-ww.md
+            - name: Agent usage in Microsoft 365 Copilot
+              href: activity-reports/agent-usage.md
             - name: Microsoft browser usage
               href: activity-reports/browser-usage-report.md
+            - name: Microsoft 365 Copilot readiness
+              href: activity-reports/microsoft-365-copilot-readiness.md
+            - name: Microsoft 365 Copilot usage
+              href: activity-reports/microsoft-365-copilot-usage.md
+            - name: Microsoft 365 Copilot Chat usage
+              href: activity-reports/microsoft-copilot-usage.md
             - name: Dynamics 365 Customer Voice activity
               href: activity-reports/forms-pro-activity-ww.md
             - name: Email activity
               href: activity-reports/email-activity-ww.md
             - name: Email apps usage
               href: activity-reports/email-apps-usage-ww.md
+            - name: Exchange Web Services usage
+              href: activity-reports/ews-usage.md
             - name: Forms activity
               href: activity-reports/forms-activity-ww.md
             - name: Mailbox usage
@@ -305,8 +318,6 @@
               href: activity-reports/microsoft-teams-user-activity-preview.md
             - name: Microsoft 365 Apps usage
               href: activity-reports/microsoft365-apps-usage-ww.md
-            - name: Microsoft 365 Copilot usage
-              href: activity-reports/microsoft-365-copilot-usage.md
             - name: Microsoft 365 groups
               href: activity-reports/office-365-groups-ww.md
             - name: OneDrive for Business activity
@@ -347,6 +358,8 @@
               href: adoption/teamwork.md
             - name: Meetings
               href: adoption/meetings-new.md
+            - name: AI assistance
+              href: adoption/ai-assistance.md
             - name: Organizational Messages
               href: adoption/organizational-messages.md
             - name: Group Level Aggregates
@@ -367,6 +380,10 @@
            href: manage/pin-apps-to-app-launcher.md
          - name: Upgrade users to the latest apps
            href: setup/upgrade-users-to-latest-office-client.md
+         - name: Organizational messages
+           href: misc/organizational-messages-microsoft-365.md
+         - name: Place a mailbox on Litigation Hold
+           href: misc/create-litigation-hold-mac.md           
          - name: Integrated apps
            items:
             - name: What is Integrated Apps
@@ -374,13 +391,13 @@
             - name: Manage Office add-ins
               href: manage/office-addins.md 
             - name: Teams apps that work on Outlook & Microsoft 365
-              href: manage/teams-apps-work-on-outlook-and-m365.md  
+              href: manage/teams-apps-work-on-outlook-and-m365.md
             - name: Teams apps that only work on Teams
-              href: manage/teams-apps-work-only-on-teams.md  
+              href: manage/teams-apps-work-only-on-teams.md
             - name: SaaS Linked Apps
-              href: manage/saas-linked-apps.md       
-            - name: Manage plugins for Copilot
-              href: manage/manage-plugins-for-copilot-in-integrated-apps.md             
+              href: manage/saas-linked-apps.md
+            - name: Manage agents for Copilot
+              href: manage/manage-copilot-agents-integrated-apps.md
          - name: Centralized deployment of add-ins
            items:
             - name: Requirements for centralized deployment of add-ins
@@ -391,6 +408,8 @@
               href: manage/manage-addins-in-the-admin-center.md      
             - name: Centralized Deployment FAQ
               href: manage/centralized-deployment-faq.yml
+            - name: Deploy add-ins in GCC High environments
+              href: manage/deploy-addins-for-gcch.md
          - name: Manage industry news
            href: manage/manage-industry-news.md
          - name: Manage Office Scripts settings 
@@ -533,12 +552,14 @@
           href: https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508
     - name: Microsoft 365 feature descriptions
       href: m365-feature-descriptions.md
+    - name: Engineering Direct Portal
+      href: ../enterprise/engineering-direct-portal.md?toc=/microsoft-365/admin/toc.json&bc=/microsoft-365/admin/breadcrumb/toc.json
     - name: Troubleshoot
       href: /office/troubleshoot/  
     - name: Contact support
       href: get-help-support.md
     - name: Find support phone numbers
-      href: support-contact-info.md
+      href: https://support.microsoft.com/topic/customer-service-phone-numbers-c0389ade-5640-e588-8b0e-28de8afeb3f2#ID0EBBD=signinorgid
     - name: Navigation guide
       href: ../microsoft-365-docs-navigation-guide.md?bc=%2foffice365%2fadmin%2fbreadcrumb%2ftoc.json&toc=%2foffice365%2fadmin%2ftoc.json
       

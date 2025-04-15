@@ -20,7 +20,8 @@ ms.topic: article
 > [!TIP]
 > For better performance, you can use server closer to your geo location:
 >
-> - api-us.securitycenter.microsoft.com
-> - api-eu.securitycenter.microsoft.com
-> - api-uk.securitycenter.microsoft.com
-> - api-au.securitycenter.microsoft.com
+> - us.api.security.microsoft.com
+> - eu.api.security.microsoft.com
+> - uk.api.security.microsoft.com
+> - au.api.security.microsoft.com
+> - swa.api.security.microsoft.com

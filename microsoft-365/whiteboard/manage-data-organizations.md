@@ -6,11 +6,11 @@ manager: alexfaulkner
 ms.reviewer: 
 ms.date: 03/08/2023
 audience: admin
-ms.topic: article
+ms.topic: how-to
 ms.custom: 
 ms.service: whiteboard
 search.appverid: MET150
-ms.collection: 
+ms.collection: essentials-manage
 ms.localizationpriority: medium
 description: Learn about data retention for Microsoft Whiteboard in Azure and OneDrive for Business.
 ---

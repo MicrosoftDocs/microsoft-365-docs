@@ -1,11 +1,11 @@
 ---
 title: Collaborate with guests in a team (IT Admins)
-ms.author: mikeplum
-author: MikePlumleyMSFT
-manager: pamgreen
-ms.date: 07/18/2023
+author: DaniEASmith
+ms.author: danismith
+manager: jtremper
+ms.date: 05/31/2024
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-solutions
 ms.collection: 
 - highpri
@@ -40,19 +40,19 @@ In this article, we'll walk through the Microsoft 365 configuration steps necess
 
 This video shows the configuration steps described in this document.</br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE44NTr?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=2c86e860-00d7-415d-b0ee-52a4b8ade515]
 
-## Microsoft Entra ID external collaboration settings
+## Microsoft Entra External ID external collaboration settings
 
-Sharing in Microsoft 365 is governed at its highest level by the [B2B external collaboration settings in Microsoft Entra ID](/azure/active-directory/external-identities/delegate-invitations). If guest sharing is disabled or restricted in Microsoft Entra ID, this setting overrides any sharing settings that you configure in Microsoft 365.
+Sharing in Microsoft 365 is governed at its highest level by the [B2B external collaboration settings in Microsoft Entra External ID](/azure/active-directory/external-identities/delegate-invitations). If guest sharing is disabled or restricted in Microsoft Entra External ID, this setting overrides any sharing settings that you configure in Microsoft 365.
 
-Check the B2B external collaboration settings to ensure that sharing with guests isn't blocked.
+Check the external collaboration settings to ensure that sharing with guests isn't blocked.
 
 ![Screenshot of Microsoft Entra external collaboration settings page.](../media/azure-ad-organizational-relationships-settings.png)
 
 To set external collaboration settings
 
-1. Log in to Microsoft Entra ID at [https://entra.microsoft.com/](https://entra.microsoft.com/).
+1. Sign in to Microsoft Entra External ID at [https://entra.microsoft.com/](https://entra.microsoft.com/).
 1. In the left navigation pane, expand **External identities**.
 1. Select **External collaboration settings**.
 1. Ensure that either **Member users and users assigned to specific admin roles can invite guest users including guests with member permissions** or **Anyone in the organization can invite guest users including guests and non-admins** is selected.
@@ -64,7 +64,7 @@ If you work with guests from multiple organizations, you might want to restrict 
 
 ## Teams guest access settings
 
-Teams has an on/off switch for guest access and a variety of settings available to control what guests can do in a team. The **Allow guest access in Teams** setting must be **On** for guest access to work in Teams.
+Teams has an on/off switch for guest access and various settings available to control what guests can do in a team. The **Allow guest access in Teams** setting must be **On** for guest access to work in Teams.
 
 Check to ensure that guest access is enabled in Teams and make any adjustment to the guest settings based on your business needs. Keep in mind that these settings affect all teams.
 
@@ -72,7 +72,7 @@ Check to ensure that guest access is enabled in Teams and make any adjustment to
 
 To set Teams guest access settings
 
-1. Log in to the Microsoft 365 admin center at [https://admin.microsoft.com](https://admin.microsoft.com).
+1. Sign in to the Microsoft 365 admin center at [https://admin.microsoft.com](https://admin.microsoft.com).
 1. In the left navigation pane, select **Show all**.
 1. Under **Admin centers**, select **Teams**.
 1. In the Teams admin center, in the left navigation pane select **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**Guest access**</a>.
@@ -102,7 +102,7 @@ To set Microsoft 365 Groups guest settings
 
 Teams content such as files, folders, and lists are all stored in SharePoint. In order for guests to have access to these items in Teams, the SharePoint organization-level sharing settings must allow for sharing with guests.
 
-The organization-level settings determine what settings are available for individual sites, including sites associated with teams. Site settings cannot be more permissive than the organization-level settings.
+The organization-level settings determine what settings are available for individual sites, including sites associated with teams. Site settings can't be more permissive than the organization-level settings.
 
 If you want to allow file and folder sharing with unauthenticated people, choose **Anyone**. If you want to ensure that all guests have to authenticate, choose **New and existing guests**. Choose the most permissive setting that's needed by any site in your organization.
 
@@ -121,11 +121,11 @@ The default file and folder link settings determine the link option that's shown
 
 Keep in mind that this setting affects all teams and SharePoint sites in your organization.
 
-Choose any one of the following link-types which will be selected by default when users share files and folders:
+Choose any one of the following link-types, which will be selected by default when users share files and folders:
 
-- **Anyone with the link** - Choose this option if you expect to do a lot of unauthenticated sharing of files and folders. If you want to allow *Anyone* links but are concerned about accidental unauthenticated sharing, consider one of the other options as the default. This link type is only available if you've enabled **Anyone** sharing.
+- **Anyone with the link** - Choose this option if you expect to do many unauthenticated sharing of files and folders. If you want to allow *Anyone* links but are concerned about accidental unauthenticated sharing, consider one of the other options as the default. This link type is only available if you've enabled **Anyone** sharing.
 - **Only people in your organization** - Choose this option if you expect most file and folder sharing to be with people inside your organization.
-- **Specific people** - Consider this option if you expect to do a lot of file and folder sharing with guests. This type of link works with guests and requires them to authenticate.
+- **Specific people** - Consider this option if you expect to do many file and folder sharing with guests. This type of link works with guests and requires them to authenticate.
  
 ![Screenshot of SharePoint organization-level files and folders sharing settings.](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
@@ -137,7 +137,7 @@ To set the SharePoint organization-level default link settings
 
 To set the permission for the sharing link, under **Choose the permission that's selected by default for sharing links.**
 
-1. Select **View** if you do not want users to make changes to the files and folders.
+1. Select **View** if you don't want users to make changes to the files and folders.
 1. Select **Edit** if you want to allow users to make changes to the files and folders.
 
 Optionally, choose an expiration time for *Anyone* links.
@@ -189,7 +189,7 @@ To invite guests to a team
 > [!NOTE]
 > Guests with a work or school account can only be invited by using their User Principal Name (UPN) (for example, adele@contoso.com). Inviting guests by using EAS ID, or other email formats, is not supported.
 
-## Related topics
+## Related articles
 
 [Best practices for sharing files and folders with unauthenticated users](best-practices-anonymous-sharing.md)
 
@@ -199,4 +199,4 @@ To invite guests to a team
 
 [Create a B2B extranet with managed guests](b2b-extranet.md)
 
-[SharePoint and OneDrive integration with Microsoft Entra B2B](/sharepoint/sharepoint-azureb2b-integration-preview)
+[SharePoint and OneDrive integration with Microsoft Entra External ID](/sharepoint/sharepoint-azureb2b-integration-preview)

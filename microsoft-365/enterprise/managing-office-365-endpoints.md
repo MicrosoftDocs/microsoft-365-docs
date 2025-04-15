@@ -3,15 +3,17 @@ title: Managing Microsoft 365 endpoints
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 10/30/2023
+ms.date: 01/08/2025
 audience: ITPro
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: network
 ms.localizationpriority: medium
 ms.collection:
 - scotvorg
 - M365-subscription-management
 - Strat_O365_Enterprise
+- must-keep
 f1.keywords:
 - CSH
 ms.custom: 
@@ -146,7 +148,7 @@ See an IP associated with Microsoft 365 that you want more information on?
 1. Check if the IP address is included in a larger published range using a CIDR calculator, such as these for [IPv4](https://www.ipaddressguide.com/cidr) or [IPv6](https://www.ipaddressguide.com/ipv6-cidr). For example, 40.96.0.0/13 includes the IP Address 40.103.0.1 despite 40.96 not matching 40.103.
 2. See if a partner owns the IP with a [whois query](https://dnsquery.org/). If it's Microsoft owned, it might be an internal partner. Many partner network endpoints are listed as belonging to the _default_ category, for which IP addresses aren't published.
 3. The IP address might not be part of Microsoft 365 or a dependency. Microsoft 365 network endpoint publishing doesn't include all of Microsoft network endpoints.
-4. Check the certificate. With a browser, connect to the IP address using  *HTTPS://\<IP_ADDRESS\>* and check the domains listed on the certificate to understand what domains are associated with the IP address. If it's a Microsoft-owned IP address and not on the list of Microsoft 365 IP addresses, it's likely the IP address is associated with a Microsoft CDN such as  *MSOCDN.NET*  or another Microsoft domain without published IP information. If you do find the domain on the certificate is one where we claim to list the IP address, please let us know.
+4. Check the certificate. With a browser, connect to the IP address using `https://<IP_address>` and check the domains listed on the certificate to understand what domains are associated with the IP address. If it's a Microsoft-owned IP address and not on the list of Microsoft 365 IP addresses, it's likely the IP address is associated with a Microsoft CDN such as  *MSOCDN.NET*  or another Microsoft domain without published IP information. If you do find the domain on the certificate is one where we claim to list the IP address, please let us know.
 
 ### Some Microsoft 365 URLs point to CNAME records instead of A records in the DNS. What do I have to do with the CNAME records?
 <a name="bkmk_cname"> </a>
@@ -191,7 +193,7 @@ Microsoft 365 and other Microsoft services use several third-party services such
 
 As Microsoft 365 is a suite of services built to function over the internet, the reliability and availability promises are based on many standard internet services being available. For example, standard internet services such as DNS, CRL, and CDNs must be reachable to use Microsoft 365 just as they must be reachable to use most modern internet services.
 
-The Microsoft 365 suite is broken down into major service areas. These areas can be selectively enabled for connectivity and there's a Common area, which is a dependency for all and is always required.
+The Microsoft 365 suite is broken down into four major service areas representing the three primary workloads and a set of common resources. These service areas may be used to associate traffic flows with a particular application, however given that features often consume endpoints across multiple workloads, these service areas cannot effectively be used to restrict access.
 
 | Service Area | Description |
 |:-----|:-----|

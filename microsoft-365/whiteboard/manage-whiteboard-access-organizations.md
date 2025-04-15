@@ -6,11 +6,13 @@ manager: alexfaulkner
 ms.reviewer: 
 ms.date: 11/03/2021
 audience: admin
-ms.topic: article
+ms.topic: how-to
 ms.custom: 
 ms.service: whiteboard
 search.appverid: MET150
 ms.collection: 
+- essentials-manage
+- essentials-security
 ms.localizationpriority: medium
 description: Learn how to set up Microsoft Whiteboard for your organization in the Microsoft 365 admin center.
 ---

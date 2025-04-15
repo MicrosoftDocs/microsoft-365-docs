@@ -1,99 +1,112 @@
+items:
 - name: Manage business subscriptions
   href: index.yml
-- name: Microsoft 365 admin help center
-  href: ../admin/index.yml
-- name: Try or buy
   items:
-    - name: Try or buy Microsoft 365
-      href: try-or-buy-microsoft-365.md
-    - name: Buy or manage add-ons
-      href: buy-or-edit-an-add-on.md
-    - name: Business Assist for Microsoft 365
-      href: ../admin/misc/business-assist.md
-    - name: Add storage space
-      href: add-storage-space.md
-- name: Manage subscriptions
-  items: 
-    - name: Upgrade your subscription
-      href: subscriptions/upgrade-to-different-plan.md
-    - name: Renew your subscription
-      href: subscriptions/renew-your-subscription.md
-    - name: Reactivate your subscription
-      href: subscriptions/reactivate-your-subscription.md
-    - name: Cancel your subscription
-      href: subscriptions/cancel-your-subscription.md
-    - name: What if my subscription expires?
-      href: subscriptions/what-if-my-subscription-expires.md
-    - name: Manage third-party app subscriptions
-      href: manage-saas-apps.md
-    - name: Manage self-service purchases (Users)
-      href: subscriptions/manage-self-service-purchases-users.md
-    - name: Manage self-service purchases (Admin)
-      href: subscriptions/manage-self-service-purchases-admins.md
-- name: Manage licenses
-  items:
-    - name: Buy or remove subscription licenses
-      href: licenses/buy-licenses.md
-    - name: Assign or unassign licenses for users
-      href: ../admin/manage/assign-licenses-to-users.md
-    - name: Move users to a different subscription
-      href: subscriptions/move-users-different-subscription.md
-    - name: Manage ISV app licenses
-      href: licenses/manage-third-party-app-licenses.md
-    - name: Manage auto-claim policies
-      href: licenses/manage-auto-claim-policies.md
-    - name: Understand Microsoft 365 E3 Extra Features licenses
-      href: licenses/e3-extra-features-licenses.md
-    - name: Understand subscriptions and licenses
-      href: licenses/subscriptions-and-licenses.md
-- name: Manage volume licensing
-  items:
-    - name: Contracts FAQs
-      href: licenses/contracts-faq.yml
-    - name: User roles FAQs
-      href: licenses/user-roles-faq.yml
-    - name: Downloads FAQs
-      href: licenses/downloads-faq.yml
-    - name: Product keys FAQ
-      href: licenses/product-keys-faq.yml
-    - name: License Reservations FAQ
-      href: licenses/manage-license-requests-faq.yml
-    - name: Online service activation FAQ
-      href: licenses/online-service-activation-faq.yml
-    - name: Volume licensing invoices
-      href: licenses/volume-licensing-invoices.md
-- name: Bills and payments
-  items: 
-    - name: View your invoice
-      href: billing-and-payments/view-your-bill-or-invoice.md
-    - name: Understand your invoice (MOSA)
-      href: billing-and-payments/understand-your-invoice2.md
-    - name: Understand your invoice (MCA)
-      href: billing-and-payments/understand-your-invoice.md
-    - name: Pay for your subscription
-      href: billing-and-payments/pay-for-your-subscription.md
-    - name: Manage payment methods
-      href: billing-and-payments/manage-payment-methods.md
-    - name: Manage billing across multiple tenants
-      href: billing-and-payments/manage-multi-tenant-billing.md
-    - name: Change billing frequency
-      href: billing-and-payments/change-payment-frequency.md
-    - name: Manage billing notifications and invoice attachments
-      href: billing-and-payments/manage-billing-notifications.md
-    - name: Understand billing accounts
-      href: manage-billing-accounts.md
-    - name: Understand billing profiles
-      href: billing-and-payments/manage-billing-profiles.md
-    - name: Change your billing addresses
-      href: billing-and-payments/change-your-billing-addresses.md
-    - name: Request a credit for Withholding Tax on your account
-      href: billing-and-payments/withholding-tax-credit-global.md
-- name: Manage relationships with your partners
-  href: manage-partners.md
-- name: Review partner privileges
-  href: review-partner-admin-privileges.md
-- name: Close your account
-  href: close-your-account.md
-- name: Contact support
-  href: ../admin/get-help-support.md
-  
+    - name: Microsoft 365 admin help center
+      href: ../admin/index.yml
+    - name: Try or buy
+      items:
+        - name: Try or buy Microsoft 365
+          href: try-or-buy-microsoft-365.md
+        - name: Buy or manage add-ons
+          href: buy-or-edit-an-add-on.md
+        - name: Business Assist for Microsoft 365
+          href: ../admin/misc/business-assist.md
+        - name: Add storage space
+          href: add-storage-space.md
+    - name: Manage subscriptions
+      items:
+        - name: Upgrade your subscription
+          href: subscriptions/upgrade-to-different-plan.md
+        - name: Renew your subscription
+          href: subscriptions/renew-your-subscription.md
+        - name: Reactivate your subscription
+          href: subscriptions/reactivate-your-subscription.md
+        - name: Cancel your subscription
+          href: subscriptions/cancel-your-subscription.md
+        - name: What if my subscription expires?
+          href: subscriptions/what-if-my-subscription-expires.md
+        - name: Manage third-party app subscriptions
+          href: manage-saas-apps.md
+        - name: Manage self-service purchases (Users)
+          href: subscriptions/manage-self-service-purchases-users.md
+        - name: Manage self-service purchases (Admin)
+          href: subscriptions/manage-self-service-purchases-admins.md
+    - name: Manage licenses
+      items:
+        - name: Buy or remove subscription licenses
+          href: licenses/buy-licenses.md
+        - name: Assign or unassign licenses for users
+          href: ../admin/manage/assign-licenses-to-users.md
+        - name: Assign or unassign licenses for groups
+          href: ../admin/manage/manage-group-licenses.md
+        - name: Move users to a different subscription
+          href: subscriptions/move-users-different-subscription.md
+        - name: Manage ISV app licenses
+          href: licenses/manage-third-party-app-licenses.md
+        - name: Manage auto-claim policies
+          href: licenses/manage-auto-claim-policies.md
+        - name: Understand Microsoft 365 E3 and E5 Extra Features licenses
+          href: licenses/e3-extra-features-licenses.md
+        - name: Understand subscriptions and licenses
+          href: licenses/subscriptions-and-licenses.md
+    - name: Manage volume licensing
+      items:
+        - name: Sign in to the Microsoft 365 admin center
+          href: licenses/vl-sign-in.md
+        - name: Sign your volume licensing agreement
+          href: licenses/sign-vl-agreement.md
+        - name: Contracts FAQs
+          href: licenses/contracts-faq.yml
+        - name: Manage volume licensing user roles
+          href: licenses/manage-user-roles-vl.md
+        - name: Download volume licensing products
+          href: licenses/download-vl-products.md
+        - name: Find and use product keys
+          href: licenses/product-keys-for-vl.md
+        - name: Manage License Reservations
+          href: licenses/manage-license-reservations-vl.md
+        - name: Activate online services
+          href: licenses/online-service-activation-vl.md
+        - name: Online service activation for Open programs
+          href: licenses/online-service-activation-faq.yml
+        - name: Volume licensing invoices
+          href: licenses/volume-licensing-invoices.md
+    - name: Bills and payments
+      items:
+        - name: View your invoice
+          href: billing-and-payments/view-your-bill-or-invoice.md
+        - name: Understand your invoice (MOSA)
+          href: billing-and-payments/understand-your-invoice2.md
+        - name: Understand your invoice (MCA)
+          href: billing-and-payments/understand-your-invoice.md
+        - name: Pay for your subscription
+          href: billing-and-payments/pay-for-your-subscription.md
+        - name: Manage payment methods
+          href: billing-and-payments/manage-payment-methods.md
+        - name: Manage billing across multiple tenants
+          href: billing-and-payments/manage-multi-tenant-billing.md
+        - name: Change billing frequency
+          href: billing-and-payments/change-payment-frequency.md
+        - name: Manage billing notifications and invoice attachments
+          href: billing-and-payments/manage-billing-notifications.md
+        - name: Understand billing accounts
+          href: manage-billing-accounts.md
+        - name: Manage billing profiles
+          href: billing-and-payments/manage-billing-profiles.md
+        - name: Change your billing addresses
+          href: billing-and-payments/change-your-billing-addresses.md
+        - name: Request a credit for Withholding Tax on your account
+          href: billing-and-payments/withholding-tax-credit-global.md
+        - name: Italy billing information
+          href: billing-and-payments/italy-billing-info.md
+        - name: Mexico billing information
+          href: billing-and-payments/mexico-billing-info.md
+    - name: Manage relationships with your partners
+      href: manage-partners.md
+    - name: Review partner privileges
+      href: review-partner-admin-privileges.md
+    - name: Close your account
+      href: close-your-account.md
+    - name: Contact support
+      href: ../admin/get-help-support.md

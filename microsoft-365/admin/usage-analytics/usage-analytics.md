@@ -5,9 +5,9 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
-ms.date: 02/19/2020
+ms.date: 09/16/2024
 audience: Admin
-ms.topic: article
+ms.topic: concept-article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
@@ -30,19 +30,19 @@ description: "Get an overview of how your organization is adopting Microsoft 365
 
 Use Microsoft 365 usage analytics within Power BI to gain insights on how your organization is adopting the various services within Microsoft 365. You can visualize and analyze Microsoft 365 usage data, create custom reports and share the insights within your organization. You can also gain insights into how specific regions or departments are using Microsoft 365.
   
-Microsoft 365 usage analytics gives you access to a pre-built dashboard that provides a cross-product view of the last 12 months and contains a number of pre-built reports. Each report provides you with specific usage insights. User-specific information is available for the last full calendar month.
+Microsoft 365 usage analytics gives you access to a prebuilt dashboard that provides a cross-product view of the last 12 months and contains many prebuilt reports. Each report provides you with specific usage insights. User-specific information is available for the last full calendar month.
   
 The [data model](usage-analytics-data-model.md) that powers the template app includes user attributes from Active Directory, enabling the ability to pivot in certain reports. The following Active Directory attributes are included: location, department, and organization. 
   
 See [Enable Microsoft 365 usage analytics](enable-usage-analytics.md) to start collecting data. 
   
-Microsoft 365 usage analytics contains a number of reports detailed in the following sections. 
+Microsoft 365 usage analytics contains many reports detailed in the following sections. 
 
 You can access detailed reports for each area by selecting the data tables. You can view all pre-built reports by selecting the tabs at the bottom of the site. For more detailed instructions, read [Navigating and utilizing the reports](navigate-and-utilize-reports.md) and [Customizing the reports](customize-reports.md).
 
 ## Executive summary
 
-The executive summary is a high-level, at-a-glance view of Microsoft 365 for Business adoption, usage, mobility, communication, collaboration, and storage reports, and is meant for business decision makers. It provides a view into how some individual services are being used, based on all the users who have been enabled and those who are active. All values of the month shown on the report refer to the latest complete month. 
+The executive summary is a high-level, at-a-glance view of Microsoft 365 for Business adoption, usage, mobility, communication, collaboration, and storage reports. It is meant for business decision makers. It provides a view into how some individual services are being used, based on all the users who are enabled and those users who are active. All values of the month shown on the report refer to the latest complete month. 
 
 This summary lets you quickly understand usage patterns in Microsoft 365 and how and where your employees are collaborating.
 
@@ -52,7 +52,7 @@ This summary lets you quickly understand usage patterns in Microsoft 365 and how
 
 The Microsoft 365 overview report contains the following reports. You can view them by choosing the tab on top of the report page. All values of the month shown on the top section of the report refer to the latest complete month.
 
-- **Adoption** &ndash; Offers an all-up summary of adoption trends. Use the reports in this section to learn how your users have adopted Microsoft 365, as well as how overall usage of the individual services has changed month over month. You can see how may users are enabled, how many people in your organization are actively using Microsoft 365, how many are returning users, and how many are using the product for the first time.
+- **Adoption** &ndash; Offers an all-up summary of adoption trends. Use the reports in this section to learn how your users adopted Microsoft 365, and how overall usage of the individual services changed month over month. You can see how may users are enabled, how many are actively using Microsoft 365, how many are returning users, and how many are using the product for the first time.
 
 - **Usage** &ndash; Offers a drill-down view into the volume of active users and the key activities for each product for the last 12 months. Use the reports in this section to learn how people in your organization are using Microsoft 365.
 
@@ -66,15 +66,15 @@ The Microsoft 365 overview report contains the following reports. You can view t
 
 ## Activation and licensing
 
-The activation and license page offers reports on Microsoft 365 activation; that is, how many users have downloaded and activated Microsoft 365 apps and how many licenses have been assigned by your organization. The month value towards the top refers to the current month, and the metrics reflect values aggregated from the beginning of the month to the current date.
+The activation and license page offers reports on Microsoft 365 activation. That is, how many users downloaded and activated Microsoft 365 productivity apps and how many licenses were assigned by your organization. The month value towards the top refers to the current month, and the metrics reflect values aggregated from the beginning of the month to the current date.
 
-- **Activation** &ndash; Track service plan (for example, Microsoft 365 Apps for enterprise, Project, and Visio) activations in your organization. Each person with a Microsoft 365 license can install products on up to five devices. You can also use reports in this section to see the devices on which people have installed Microsoft 365 apps. Note that to activate a plan, a user must install the app and sign in with their account.
+- **Activation** &ndash; Track service plan (for example, Microsoft 365 Apps for enterprise, Project, and Visio) activations in your organization. Each person with a Microsoft 365 license can install products on up to five devices. You can also use reports in this section to see the devices on which people installed Microsoft 365 productivity apps. To activate a plan, a user must install the app and sign in with their account.
 
 - **Licensing** &ndash; This report contains an overview of license types, the count of users who were assigned each license type, and the license assignment distribution for each month. The month value towards the top refers to the current month, and the metrics reflect values aggregated from the beginning of the month to the current date.
 
 ## Product usage
 
-This report contains a separate report for each Microsoft 365 service, including Exchange, Microsoft 365 groups, OneDrive, SharePoint, Skype, Teams, and Viva Engage. Each report contains total enabled vs. total active user reports, counts of entities such as mailboxes, sites, groups, and accounts, as well as activity type reports where appropriate. All values of the month shown on the top section of the report refer to the latest complete month.
+This report contains a separate report for each Microsoft 365 service, including Exchange, Microsoft 365 groups, OneDrive, SharePoint, Skype, Teams, and Viva Engage. Each report contains total enabled vs. total active user reports, counts of entities such as mailboxes, sites, groups, accounts, and activity type reports where appropriate. All values of the month shown on the top section of the report refer to the latest complete month.
 
 ## User activity
 
@@ -85,15 +85,15 @@ User activity reports are available for certain individual services. These repor
 
 ## FAQ
 
-### Is this template app going to be available through purchase or will it be free?
+### Is this template app going to be available through purchase or is it free?
 
-It is not free, you will need a Power BI Pro license. For details see [prerequisites](/power-bi/service-template-apps-install-distribute#prerequisites) for installing, customizing, and distributing a template app.
+It isn't free, and you need a Power BI Pro license. For details see [prerequisites](/power-bi/service-template-apps-install-distribute#prerequisites) for installing, customizing, and distributing a template app.
 
-To share the dashboards with others, please see more at [Share dashboards and reports](/power-bi/service-how-to-collaborate-distribute-dashboards-reports#share-dashboards-and-reports).
+To share the dashboards with others, see more at [Share dashboards and reports](/power-bi/service-how-to-collaborate-distribute-dashboards-reports#share-dashboards-and-reports).
 
 ### Who can connect to Microsoft 365 usage analytics?
 
-You have to be either a **Global admin**, **Exchange admin**, **Skype for Business admin**, **SharePoint admin**, **Global reader**, **Report reader**, **Usage Summary Reports Reader** in order to establish the connection to the template app. See [About admin roles](../add-users/about-admin-roles.md) for more information. **Note:** **Global Reader** and **Usage Summary Reports Reader** only allow access to tenant level aggregates in Microsoft 365 usage analytics and they don't have the permission to view the user activity reports. 
+You have to be either an **Exchange admin**, **Skype for Business admin**, **SharePoint admin**, **Global reader**, **Report reader**, **Usage Summary Reports Reader** in order to establish the connection to the template app. See [About admin roles](../add-users/about-admin-roles.md) for more information. **Note:** **Global Reader** and **Usage Summary Reports Reader** only allow access to tenant level aggregates in Microsoft 365 usage analytics and they don't have the permission to view the user activity reports. 
 
 ### Who can customize the usage analytics reports?
 
@@ -113,15 +113,15 @@ If you connected to the template app, you can share it with anybody by using the
 
 ### Can anyone share the dashboard, or does it have to be the person who connected to the dashboard?
 
-When sharing the dashboard, you can either allow users to re-share the dashboard with others or not. You can set this option at the time of sharing.
+When sharing the dashboard, you can either allow users to reshare the dashboard with others or not. You can set this option at the time of sharing.
 
 ### Is it possible to work on and customize the same template app with a group of people?
 
-Yes. To enable a group of admins to work together on the same template app, you can leverage the app workspace functionality of Power BI, for more information, see [How should I collaborate and share dashboards and reports?](/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports) 
+Yes. To enable a group of admins to work together on the same template app, you can use the app workspace functionality of Power BI, for more information, see [How should I collaborate and share dashboards and reports?](/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports) 
 
 ### For which timeframe is data available?
 
-The majority of the reports display data for the previous 12 months. However, some of the charts may show less history since the data collection for different products and reports were started at different times and thus data for the full 12 months might not be available. All the reports will eventually build up to 12 months of history. Reports that show user level details show data for the previous complete month.
+Most of the reports display data for the previous 12 months. However, some of the charts may show less history since the data collection for different products and reports were started at different times and thus data for the full 12 months might not be available. All the reports eventually build up to 12 months of history. Reports that show user level details show data for the previous complete month.
 
 ### What data is included in the template app?
 
@@ -139,9 +139,9 @@ The [Activity Reports](../activity-reports/activity-reports.md)  are a good star
 
 ### How often is the data refreshed? 
 
-When you connect to the template app for the first time, it will automatically populate with your data for the previous 12 months. After that, the template app data will refresh weekly. Customers can choose to modify the refresh schedule if their use of this data demands a different update rhythm.
+When you connect to the template app for the first time, it automatically populates with your data for the previous 12 months. After that, the template app data refreshes weekly. Customers can choose to modify the refresh schedule if their use of this data demands a different update rhythm.
 
-The back-end Microsoft 365 service will refresh data on a daily basis and provides data that is between 5-8 days latent from the current date.
+The back-end Microsoft 365 service refreshes data on a daily basis and provides data that is between 5-8 days latent from the current date.
 
 The **Content date** column in each dataset represents the freshness date of the data in the template app.
 
@@ -159,11 +159,11 @@ The current version of the template app includes usage from Outlook groups, Viva
 
 ### When will an updated version of the template app become available?
 
-Major changes to the template app will be released twice a year which may include new reports or new data. Minor changes to the reports may be released on a more frequent basis.
+Major changes to the template app are released twice a year, which may include new reports or new data. Minor changes to the reports may be released on a more frequent basis.
 
 ### Is it possible to integrate the data from the template app into existing solutions? 
 
-The data in the template app can be retrieved through the Microsoft 365 APIs (in preview). When they ship to production they will be merged within the [Microsoft Graph reporting APIs](https://go.microsoft.com/fwlink/p/?linkid=848843). 
+The data in the template app can be retrieved through the Microsoft 365 APIs (in preview). When they ship to production, they are merged within the [Microsoft Graph reporting APIs](https://go.microsoft.com/fwlink/p/?linkid=848843). 
 
 ### Are there plans to expand the template app to show usage data from other Microsoft products?
 
@@ -173,23 +173,23 @@ This is considered for future improvements. Check the [Microsoft 365 Roadmap](ht
 
 Company information is included one of the Active Directory fields in the template app and you can see it as a pre-built filter in the **Product User activity** reports. It is available as column in the **UserState** table.
 
-### Is it possible to bring in additional fields from Active Directory?
+### Is it possible to bring in more fields from Active Directory?
 
-Additional customization on this data is possible by connecting to the [Microsoft Graph reporting APIs](https://go.microsoft.com/fwlink/p/?linkid=848843) to pull additional fields from Microsoft Entra ID and join to the dataset. 
+More customization on this data is possible by connecting to the [Microsoft Graph reporting APIs](https://go.microsoft.com/fwlink/p/?linkid=848843) to pull additional fields from Microsoft Entra ID and join to the dataset. 
 
 ### Is it possible to aggregate the information in the template app across multiple subscriptions?
 
-At this time, the template app is for a single subscription, as it is associated with the credentials that was used to initially connect to it.
+At this time, the template app is for a single subscription, as it is associated with the credentials that were used to initially connect to it.
 
-### Is it possible to see usage by plan (i.e. E1, E3)?
+### Is it possible to see usage by plan (for example, E1, E3)?
 
 In the template app, usage is represented at the per product level. Data about the various subscriptions that are assigned to users are provided, however it is not possible to correlate user activity to the subscription assigned to user.
 
 ### Is it possible to integrate other data sets into the template app?
 
-You can use Power BI Desktop to connect to the Microsoft 365 APIs (in preview) to bring additional data sources to combine with the template app data.
+You can use Power BI Desktop to connect to the Microsoft 365 APIs (in preview) to bring more data sources to combine with the template app data.
 
-For more information see the [Customize document](customize-reports.md).
+See the [Customize document](customize-reports.md).
 
 ### Is it possible to see the "Top Users" reports for a specific timeframe?
 
@@ -205,7 +205,7 @@ You can use the feedback button in the admin center activity overview page, or y
 
 ### How can partners access the data?
 
-If a partner has delegated admin rights, he or she can connect to the template app on behalf of their customer.
+If a partner delegates admin rights, they can connect to the template app on behalf of their customer.
 
 ### Can I hide identifiable information such as user, group, and site names in reports?
 

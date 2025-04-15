@@ -1,7 +1,7 @@
 ### YamlMime:FAQ
 metadata:
-  ms.date: 06/06/2023
-  title: "Microsoft Bookings Frequently Asked Questions"
+  ms.date: 07/30/2024
+  title: "Shared Bookings Frequently Asked Questions"
   ms.author: kwekua
   author: kwekuako
   manager: scotv
@@ -12,9 +12,10 @@ metadata:
   ms.collection: 
   - Tier1
   - scotvorg
-  - essentials-accountability
-  description: "Microsoft Bookings frequently asked questions."
-title: Microsoft Bookings Frequently Asked Questions
+  - essentials-compliance
+  - essentials-privacy
+  description: "Shared Bookings frequently asked questions."
+title: Shared Bookings Frequently Asked Questions (FAQ)
 summary: |
 
 sections:
@@ -29,9 +30,9 @@ sections:
           Is Bookings available for my subscription?
         answer: |
           Bookings is available with the following subscriptions: 
-          - Office 365: A3, A5, E1, E3, E5, F1, F3, Office 365 operated by 21Vianet.
-          - Microsoft 365: A3, A5, E3, E5, F1, F3, Business Basic, Business Standard, Business Premium. 
-          Bookings isn't available as a standalone app. Outlook Web App or Outlook on the web must be enabled to use Bookings, as it stores data within Outlook.
+          - Office 365:A3, A5, E1, E3, E5, F1, F3, G1, G3, and G5.
+          - Microsoft 365: A3, A5, E1, E3, E5, F1, F3, Business Basic, Business Standard, Business Premium, Teams Essentials, Teams Premium. 
+          Bookings isn't available as a standalone app. Outlook Web App or Outlook on the web must be enabled to use Bookings.
           
           A Bookings license provides full functionality, including creating and managing calendars. Users can view and edit existing calendars, when those users are added as staff in an Administrator or Viewer role.
 
@@ -48,7 +49,7 @@ sections:
       - question: |
           How do I change a bookable attribute under Manage staff?
         answer: |
-          When staff members were added, they would have received an email to accept or reject the request. They can open the same email and select "Reject" to make them so that they aren't bookable. We currently don't have a way to toggle this from inside the app.
+          When staff members are added, they receive an email to accept or reject the request. They can open the same email and select "Reject" so they aren't bookable.
 
       - question: |
           How do end users access the Bookings app?
@@ -63,14 +64,14 @@ sections:
       - question: |
           Can I use Bookings even if I don't have a Web page for my business?
         answer: |
-          Yes. We provide a link to your booking page within the **Booking page** tab in the Web app. You just need to provide that link to your customers or clients, and they'll see the latest availability information for your business. Alternatively, you can share the booking page in social media or even use the embed feature to host it in an iFrame. You also have the ability to control who can access the page by disabling direct search engine indexing and restricting access to only those within your organization.
+          Yes. We provide a link to your booking page within the **Booking page** tab in the Web app. You just need to provide that link to your customers or clients, and they see the latest availability information for your business. Alternatively, you can share the booking page in social media or even use the embed feature to host it in an iFrame. You also have the ability to control who can access the page. You can do this by disabling direct search engine indexing and restricting access to only those in your organization.
 
       - question: |
           Can our IT department control whether end users can access Bookings?
         answer: |
           Administrators can turn off Bookings in the Microsoft 365 admin center if they choose. To do so, [follow these instructions](turn-bookings-on-or-off.md).
           
-          If a customer wants to disable access to Bookings for certain eligible licenses in their tenant, they can either use a group policy to restrict licenses or implement an OWA Mailbox policy that will restrict who is able to create new Bookings calendars.
+          A customer can also disable access to Bookings for certain eligible licenses in their tenant. They can either use a group policy to restrict licenses or implement an Outlook web app (OWA) Mailbox policy that restricts who is able to create new Bookings calendars.
           
           If you use an OWA Mailbox policy to disable access to Bookings, all users will have a Bookings license, however when they attempt to access the app, they'll only be successful if they're part of the policy or if they've been added to an existing Bookings calendar as staff. Details [here](turn-bookings-on-or-off.md) in the "Allow only selected users to create Bookings calendars" section.
       
@@ -142,7 +143,7 @@ sections:
       - question: |
           Do I need to migrate my email account from my current provider to Microsoft 365?
         answer: |
-          You can keep your current provider, but Bookings will send all notifications to the email used in your Microsoft 365 account.
+          You can keep your current provider, but Bookings sends all notifications to the email used in your Microsoft 365 account.
 
       - question: |
           Can my employees use Bookings without a Microsoft 365 account?
@@ -157,7 +158,7 @@ sections:
       - question: |
           Is Bookings supported in a federated or hybrid environment?
         answer: |
-          No. Bookings is a cloud-only application. It's not supported in a federated or hybrid environment.
+          No. Bookings is a cloud-only application. It isn't supported in a federated or hybrid environment.
 
   - name: Product features
     questions:
@@ -179,23 +180,23 @@ sections:
       - question: |
           Are video conferencing meetings integrated into the Bookings app?
         answer: |
-          Online meetings are available within Bookings when using the Skype or Microsoft Teams clients. Online meetings can be enabled at the service-level, and the meeting client you choose (Skype or Teams) will be the one set by default for a booked staff member. To join the online meetings, each new appointment will have a unique meeting link attached to the appointment. How to join options are included in the event and in confirmation emails to your customer.
+          Online meetings are available within Bookings when using the Skype or Microsoft Teams clients. Online meetings can be enabled at the service-level, and the meeting client you choose (Skype or Teams) will be the one set by default for a booked staff member. To join the online meetings, each new appointment has a unique meeting link attached to the appointment. How to join options are included in the event and in confirmation emails to your customer.
 
       - question: |
           How does scheduling policy work?
         answer: |
-          A setting called **Maximum lead time** determines the farthest in advance (measured in days) that a booking can be made. There must be at least 24 hours between **Minimum lead time** (the minimum lead time, in hours, for bookings and cancellations) and Maximum lead time. Maximum lead time can be set to one day if Minimum lead time is set to 0 hours, which in this case means a customer can cancel a booking up until the time that it starts, and customers can only schedule bookings if the appointment is within the next day.
+          A setting called **Maximum lead time** determines the farthest in advance (measured in days) that a booking can be made. There must be at least 24 hours between **Minimum lead time** (the minimum lead time, in hours, for bookings and cancellations) and Maximum lead time. Maximum lead time can be set to one day if Minimum lead time is set to 0 hours. This means a customer can cancel a booking up until the time that it starts, and customers can only schedule bookings if the appointment is within the next day.
           
           :::image type="content" source="media/bookings-faq-scheduling.png" alt-text="Scheduling in Bookings":::
           
       - question: |
           How does Bookings work across time zones?
         answer: |
-          All times are in the business time zone (your local time zone) by default. Any setting that you configure for a Bookings calendar, such as working hours, will appear in this time zone. The Self-service page has the ability to display all the appointment times in the end user's time zone, which can be turned off if desired. If **Always show time slots in business time zone** remains unchecked on the Bookings page tab, then people visiting the page will see time slots in their own local time zones.
+          All times are in the business time zone (your local time zone) by default. Any setting that you configure for a Bookings calendar, such as working hours, appears in this time zone. The Self-service page has the ability to display all the appointment times in the end user's time zone, which can be turned off if desired. If **Always show time slots in business time zone** remains unchecked on the Bookings page tab, then people visiting the page will see time slots in their own local time zones.
           
           :::image type="content" source="media/bookings-faq-region.png" alt-text="Bookings region and time zone settings":::
           
-          There's no provision to set time zone for staff in Bookings. Staff time zone, and thus business hours, will be in the business time zone.
+          There's no provision to set time zone for staff in Bookings. Staff time zone, and business hours are in the business time zone.
           
       - question: |
           Can email notifications be sent as the tenant domain name?
@@ -205,7 +206,7 @@ sections:
       - question: |
           Is the ability to send SMS messages dependent on a different service or specific configuration?
         answer: |
-          SMS messages are currently available in North America, and a Skype or Twilio account will be used for SMS delivery.
+          SMS messages are currently available in North America, and a Skype or Twilio account are used for SMS delivery.
 
       - question: |
           How can Bookings appointments show up on a person's calendar?
@@ -220,7 +221,7 @@ sections:
       - question: |
           What triggers service provider or staff and customer emails?
         answer: |
-          Emails are triggered based on settings in the Services tab in the Bookings Web app. A booking made by the customer on the Self-service page, or on the Calendar tab in the Bookings Web app, will trigger a confirmation and/or a reminder email. The same thing will happen when someone makes a change to the booking via the **Manage booking** button in the confirmation email or within the Web app. Reminder emails are sent at a specified time period prior to an appointment, as detailed in the Services tab in the Bookings Web app.
+          Emails are triggered based on settings in the Services tab in the Bookings Web app. A booking made by the customer on the Self-service page, or on the Calendar tab in the Bookings Web app triggers a confirmation and a reminder email. The same thing happens when someone makes a change to the booking via the **Manage booking** button in the confirmation email or within the Web app. Reminder emails are sent at a specified time period before an appointment, as detailed in the Services tab in the Bookings Web app.
 
       - question: |
           Can I book classroom-style appointments that are 1: many instead of 1:1?
@@ -230,7 +231,7 @@ sections:
       - question: |
           Can calendars remain unpublished (not public-facing) but still accessible to designated users?
         answer: |
-          Yes. There's a check box on the Booking page tab in the Web app: **Require a Microsoft 365 or Office 365 account from my organization to book**. Selecting this check box restricts Self-service page access to only those that are within your tenant. The Bookings calendar that sits within the Web app for creation and management can only be accessed by those individuals added as staff to the page with Administrator or Viewer roles.
+          Yes. There's a check box on the Booking page tab in the Web app: **Require a Microsoft 365 or Office 365 account from my organization to book**. Selecting this check box restricts Self-service page access to only users in your tenant. The Bookings calendar that sits within the Web app for creation and management can only be accessed by those individuals added as staff to the page with Administrator or Viewer roles.
           
           :::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Booking page access control in Bookings":::
           
@@ -242,7 +243,7 @@ sections:
       - question: |
           Can I turn off the email notifications for Time Off?
         answer: |
-          Recording Time Off within the Bookings Web app will always trigger a notification email to staff members. If any staff members are confused about the notification, we recommend you add more detail in the notes or title of the Time-Off notification, to better inform staff about what is occurring on the admin side.
+          Recording Time Off within the Bookings Web app triggers a notification email to staff members. If any staff members are confused about the notification, we recommend you add more detail in the notes or title of the Time-Off notification, to better inform staff about what is occurring on the admin side.
 
       - question: |
           Can Bookings calendars be cloned or duplicated, and can they be templatized for easy scaling?
@@ -257,29 +258,29 @@ sections:
       - question: |
           Is it possible to share only one service on the Self-service page at a time?
         answer: |
-          Yes, you can either create separate Bookings calendars for each service, or you can go to the Services tab and select Service details. You'll see a URL only for that specific service under the Service booking page. You can then share that URL which will be for that specific service.
+          Yes, you can either create separate Bookings calendars for each service, or you can go to the Services tab and select Service details. You see a URL only for that specific service under the Service booking page. You can then share that URL, which is for that specific service.
 
       - question: |
           What options are available for embedding a consent form or disclosure for those booking an appointment?
         answer: |
-          We recommend enabling the **Customer data usage consent** check box in the Booking page and customizing the wording to properly convey your organization's disclosure or consent requirements. Another option is to add a custom field to the service that includes a link to the consent form, and require customers to confirm that they've completed the form before they can proceed with making an appointment. You can also add the consent form URL as another notes in confirmation and reminder emails, but this won't prevent users from booking an appointment.
+          We recommend enabling the **Customer data usage consent** check box in the Booking page and customizing the wording to properly convey your organization's disclosure or consent requirements. Another option is to add a custom field to the service that includes a link to the consent form. Then require customers to confirm the completed form before they can proceed with making an appointment. You can also add the consent form URL as another notes in confirmation and reminder emails.
 
       - question: |
           What changes can be made to the staff selection capability on the Self-service booking page?
         answer: |
-          The ability for customers to select specific staff members when booking can be removed completely by de-selecting the **Allow customers to choose a specific person for the booking** option from the Booking page or the Services section. Bookings will automatically assign an available staff member at random to the booking, based on staff availability.
+          The ability for customers to select specific staff members when booking can be removed completely by de-selecting the **Allow customers to choose a specific person for the booking** option from the Booking page or the Services section. Bookings automatically assigns an available staff member at random to the booking, based on staff availability.
 
       - question: |
           Can Bookings support many concurrent booking requests and Self-service page visits?
         answer: |
-          Booking can support a large quantity of visitors and bookings at one time. If the page experiences a large volume of traffic, users will receive a "server busy" error. Appointment availability is updated when the page is loaded, and when a booking is made. If multiple people are trying to book the same appointment at one time, Bookings will only let one person book that time and give a notification message to the other potential customers, and prompt them to find a different time.
+          Booking can support a large quantity of visitors and bookings at one time. If the page experiences a large volume of traffic, users will receive a "server busy" error. Appointment availability is updated when the page is loaded, and when a booking is made. If multiple people are trying to book the same appointment at one time, Bookings will only let one person book that time. The other potential customers will get a notification message to find a different time.
 
   - name: Privacy
     questions:
       - question: |
           Where is Bookings data stored?
         answer: |
-          Bookings is a Microsoft 365 app, meaning all data is stored within the Microsoft 365 platform and in Exchange. Bookings follows all data storage policies that are set by Microsoft, which are the same policies that all Microsoft 365 apps follow. Bookings uses shared mailboxes in Exchange to store customer, staff, service, and appointment details. Compliance policies for shared mailboxes in Exchange also apply for Bookings mailboxes. All customer data (including information provided by customers when booking) is captured in Bookings and is stored within the app, thus it's stored within Exchange. Microsoft Bookings uses the same policies used by Microsoft 365, which you can find [here.](https://www.microsoft.com/online/legal/v2/?docid=22&langid=en-us)
+          Bookings is a Microsoft 365 app, meaning all data is stored within the Microsoft 365 platform and in Exchange. Bookings follows all data storage policies that are set by Microsoft, which are the same policies that all apps in Microsoft 365 follow. Bookings uses shared mailboxes in Exchange to store customer, staff, service, and appointment details. Compliance policies for shared mailboxes in Exchange also apply for Bookings mailboxes. All customer data (including information provided by customers when booking) is captured in Bookings and is stored within the app, thus it's stored within Exchange. Microsoft Bookings uses the same policies used by Microsoft 365, which you can find [here.](https://www.microsoft.com/online/legal/v2/?docid=22&langid=en-us)
           
       - question: |
           Is there a way to centrally manage Bookings calendars for all users?
@@ -306,7 +307,7 @@ sections:
       - question: |
           We would like for the customer to accept our terms and conditions during the booking process. Is that possible?
         answer: |
-          This feature already exists for GDPR compliance. The Booking page has a field for custom consent, right under the publishing details section. Just check that box and write your own custom consent message and it will show up as a required field on the Self-service page. The date and time that the customer grants consent will be recorded.
+          This feature already exists for GDPR compliance. The Booking page has a field for custom consent, right under the publishing details section. Just check that box and write your own custom consent message and it shows up as a required field on the Self-service page. The date and time that the customer grants consent gets recorded.
           
           This section doesn't support rich text, but think links can be added under the business information section and would show up just below the consent check box.
           
@@ -322,7 +323,7 @@ sections:
       - question: |
           If a user schedules an appointment for a service consisting of an online meeting, how do they receive the Microsoft Teams link to the meeting if they leave the optional email address field empty?
         answer: |
-          If the system doesn't have the customer's email information, there's no way for the confirmation mail to be delivered to the customer, and thus they won't receive a Teams link. The solution is to set the email address as a required field, which you can do on the Services tab of Bookings. Remember that whenever you create a new service in Bookings, the customer email field is set as a required field by default.
+          If the system doesn't have the customer's email information, there's no way for the confirmation mail to be delivered to the customer. You can set the email address as a required field, which you can do on the Services tab of Bookings. Whenever you create a new service in Bookings, the customer email field is set as a required field by default.
 
       - question: |
           How is staff assigned to appointments when "Anyone" is selected, or when customers don't have the ability to choose a staff member for the appointment?
@@ -332,7 +333,7 @@ sections:
       - question: |
           How can users opt out of receiving SMS messages if they've already opted in previously?
         answer: |
-          When booking an appointment with SMS text messages enabled, customers will be prompted to check the opt-in box each time they book. Customers can also reply directly to the SMS message (the SMS provider) indicating that they would like the messages to cease, and then no further texts will be sent to that phone number. If the customer opts out of receiving text messages from the provider, not from Bookings itself, they'll no longer receive SMS messages in the future, even when opting in from the Bookings page.
+          When booking an appointment with SMS text messages enabled, customers are prompted to check the opt-in box each time they book. Customers can also reply directly to the SMS message (the SMS provider) indicating that they would like the messages to cease, and then no further texts are sent to that phone number. If the customer opts out of receiving text messages from the provider, not from Bookings itself, they'll no longer receive SMS messages in the future, even when opting in from the Bookings page.
 
   - name: Troubleshooting
     questions:
@@ -357,17 +358,16 @@ sections:
           1. In the **People inside your organization** section, select the drop-down box next to **My Organization**, and then select **Can view when I'm busy**.
           
              > [!NOTE]
-             > This setting shares your free/busy information with Bookings and with other users in your organization. It doesn't include any other information, such as what type of appointment you've scheduled, who you have scheduled the appointment with, or the location.
+             > This setting shares your free/busy information with Bookings and with other users in your organization. It doesn't include any other information.
           
-             > [!div class="mx-imgBorder"]
-             > ![Image of calendar-sharing screen with Can view when I'm busy enabled](../media/bookings-view-busy.png)
+             :::image type="content" alt-text="Image of calendar-sharing screen with Can view when I'm busy enabled." source="../media/bookings-view-busy.png":::
           
           1. Select **Done**.
           
       - question: |
           We can't find a staff member in our organization
         answer: |
-          If an employee has left your company and you removed them from your Microsoft 365 or Office 365 organization, you still need to remove that user from Bookings so they won't show up in the calendar and to prevent customers from booking appointments with them.
+          If an employee has left your company and you removed them from your Microsoft 365 or Office 365 organization, you still need to remove that user from Bookings. They won't show up in the calendar prevents customers from booking appointments with them.
           
           1. Sign in to Microsoft 365, and then go to **Bookings** \> **Staff**.
           

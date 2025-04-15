@@ -1,12 +1,12 @@
 ---
 title: OneDrive Cross-tenant OneDrive migration FAQs
-ms.author: jhendr
-author: JoanneHendrickson
-manager: serdars
+ms.author: heidip
+author: MicrosoftHeidi
+manager: jtremper
 ms.date: 10/13/2023
 recommendations: true
 audience: ITPro
-ms.topic: article
+ms.topic: faq
 ms.service: microsoft-365-migration
 ms.localizationpriority: high
 ms.collection: 
@@ -24,8 +24,8 @@ description: "OneDrive Cross-tenant migration feature FAQs"
 **Question**: Can a OneDrive account have any content in the **target tenant** before migration?</br>
 **Answer:** No. The tool doesn't support Merge functionality with existing content. The user being migrated must not have a pre-existing OneDrive on the target tenant.
 
-**Question**: Can users be pre-created on the target tenant?</br>
-**Answer:** Yes, all Users/Groups that are identified for migration should be pre-created on the target tenant and appropriate licenses assigned prior to staring any migrations. Also:
+**Question**: Can users be precreated on the target tenant?</br>
+**Answer:** Yes, all Users/Groups that are identified for migration should be precreated on the target tenant and appropriate licenses assigned prior to staring any migrations. Also:
 
 - OneDrive site creation should be restricted in the target tenant to prevent users creating OneDrive sites.
 - If a OneDrive site already exists for the user on the target tenant the migration fails.
@@ -69,10 +69,10 @@ OneDrive accounts currently under a Hold policy are blocked from migration. To m
 **Answer:** Once the migration is complete, the user is directed to OneDrive on their new tenant (either via Microsoft 365 app launcher or web browser). Users should sign in to OneDrive using their new credentials.
 
 **Question:** What happens to permissions on OneDrive content?</br>
-**Answer:** Users with permissions to OneDrive content will continue to have access to their content upon completion on the new target tenant. if those users/groups were included as part of the Identity Map and mapped accordingly. 
+**Answer:** Users with permissions to OneDrive content will continue to have access to their content upon completion on the new target tenant. If those users/groups were included as part of the Identity Map and mapped accordingly.
 
 **Question:** What do I need to do to sync my content via OneDrive Sync Client? </br>
-**Answer:**  After the migration is complete, the user needs to sign in to their OneDrive Sync client using their new identity and to the new OneDrive location. Once this step is done, files and folders begin resyncing to the device. 
+**Answer:**  After the migration is complete, the user needs to sign in to their OneDrive Sync client using their new identity and to the new OneDrive location. Once this step is done, files and folders begin resyncing to the device.
 
 **Question:** What happens to sharing links? </br>
 **Answer:** After a user’s OneDrive cross-tenant migration is completed, existing shared links for files that were migrated will automatically redirect to the new target location.
@@ -81,7 +81,7 @@ OneDrive accounts currently under a Hold policy are blocked from migration. To m
 **Answer:**  When a OneDrive account is migrated, we place a redirect at the old location; anyone clicking on a sharing link to the old location is redirected to the new one, provided they still have access on the destination. Those redirects remain until the original/source tenant is deprovisioned or is removed by the admin site-by-site.
 
 **Question:** Will external Shared Files continue to work?</br>
-**Answer:**  As part of the migration process, Admins must pre-create the appropriate users on the destination tenant, including guest/external users,  and provide the tool with an "Identity Map". The identify map tells us how to adjust file/site ownership and permissions.
+**Answer:**  As part of the migration process, Admins must precreate the appropriate users on the destination tenant, including guest/external users,  and provide the tool with an "Identity Map". The identify map tells us how to adjust file/site ownership and permissions.
 
 **Question:** Will the shared file map to new internal users?</br>
 **Answer:** See the question above. The identity map informs how files are shared. 

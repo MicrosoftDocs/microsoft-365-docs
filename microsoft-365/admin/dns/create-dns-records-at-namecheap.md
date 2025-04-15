@@ -2,13 +2,14 @@
 title: "Connect your DNS records at Namecheap to Microsoft 365"
 f1.keywords:
 - CSH
-ms.author: nkagole
-author: nataliekagole
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
-ms.date: 02/18/2020
+ms.date: 04/02/2025
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-domains
 ms.localizationpriority: medium
 ms.collection:
 - Tier2
@@ -23,7 +24,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 54ae2002-b38e-43a1-82fa-3e49d78fda56
-description: "Learn to verify your domain and set up DNS records for email, Teams, and other services at Namecheap for Microsoft."
+description: "Learn to verify your domain and set up DNS records for email, Teams, and other services at Namecheap."
 ---
 
 # Connect your DNS records at Namecheap to Microsoft 365
@@ -37,14 +38,21 @@ After you add these records at Namecheap, your domain will be set up to work wit
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
 
+[!INCLUDE [How to get tech support for SMB](../../includes/smb-how-to-get-tech-support.md)]
+
 ## Add a TXT record for verification
 
 Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.
 
 > [!NOTE]
+> The procedures in this section assume that you have begun the process of [adding a domain](/admin/setup/add-domain#add-a-domain), but have not yet verified the domain.
+
+> [!NOTE]
 > This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like.
 
-1. To get started, go to your domains page at Namecheap by using [this link](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f). You'll be prompted to Sign in and Continue.
+1. Make sure you have added a domain in the Microsoft 365 Admin Center using the steps in [Add a domain](/admin/setup/add-domain#add-a-domain), and that the domain has not already been verified. You'll need to copy the **TXT value** from the **Add a record to verify ownership** page for use later in this procedure.
+
+1. Go to your domains page at Namecheap by using [this link](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f). You'll be prompted to Sign in and Continue.
 
      :::image type="content" source="../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png" alt-text="Sign in to Namecheap.":::
 
@@ -69,9 +77,9 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
     > [!NOTE]
     > The **Type** drop-down automatically appears when you select **ADD NEW RECORD**.
 
-     :::image type="content" source="../../media/a5b40973-19b5-4c32-8e1b-1521aa971836.png" alt-text="Select TXT Record.":::
+     :::image type="content" source="../../media/a5b40973-19b5-4c32-8e1b-1521aa971836.png" alt-text="Select TXT Record for the domain verification TXT record.":::
 
-1. In the boxes for the new record, type or copy and paste the values from the following table.
+1. In the boxes for the new record, type or copy and paste the values from the following table. You'll use the TXT value you copied earlier (MS=ms*XXXXXXXX*).
 
     (Choose the **TTL** value from the drop-down list.)
 
@@ -79,11 +87,11 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
     |---|---|---|---|
     |TXT|@|MS=ms *XXXXXXXX*  <br/>**Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table.  [How do I find this?](../get-help-with-domains/information-for-dns-records.md)|30 min|
 
-     :::image type="content" source="../../media/fe75c0fd-f85c-4bef-8068-edaf9779b7f1.png" alt-text="Copy and paste the values from the table.":::
+     :::image type="content" source="../../media/fe75c0fd-f85c-4bef-8068-edaf9779b7f1.png" alt-text="Copy and paste the values from the table for the domain verification TXT record.":::
 
-1. Select the **Save Changes** (check mark) control.
+1. Select the **Save Changes** (check mark) control, or select the **Save All Changes** button located just below the record you just added.
 
-     :::image type="content" source="../../media/b48d2c67-66b5-4aa4-8e59-0c764f236fac.png" alt-text="Select the Save Changes control.":::
+     :::image type="content" source="../../media/b48d2c67-66b5-4aa4-8e59-0c764f236fac.png" alt-text="Screenshot of the the Save Changes control for the domain verification TXT record.":::
 
 1. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
 
@@ -140,11 +148,11 @@ To verify the record in Microsoft 365:
     |---|---|---|---|---|
     |MX Record|@|\<*domain-key*\>.mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **Note:** Get your *\<domain-key\>* from your Microsoft account.  [How do I find this?](../get-help-with-domains/information-for-dns-records.md)|0  <br/> For more information about priority, see [What is MX priority?](../setup/domains-faq.yml)|30 min|
 
-     :::image type="content" source="../../media/f3b76d62-5022-48c1-901b-8615a8571309.png" alt-text="Copy and paste the values from the table.":::
+     :::image type="content" source="../../media/f3b76d62-5022-48c1-901b-8615a8571309.png" alt-text="Copy and paste the values from the table for the MX record.":::
 
 1. Select the **Save Changes** (check mark) control.
 
-     :::image type="content" source="../../media/ef4e3112-36d2-47c8-a478-136a565dd71d.png" alt-text="Select the Save Changes control.":::
+     :::image type="content" source="../../media/ef4e3112-36d2-47c8-a478-136a565dd71d.png" alt-text="Screenshot of the the Save Changes control for the MX record.":::
 
 1. If there are any other MX records, use the following two-step process to remove each of them:
 
@@ -193,11 +201,11 @@ To verify the record in Microsoft 365:
     |---|---|---|---|
     |CNAME|autodiscover|autodiscover.outlook.com.  <br/> **This value MUST end with a period (.)**|Automatic|
 
-     :::image type="content" source="../../media/f79c5679-34eb-4544-8517-caa2e8a4111a.png" alt-text="Copy and paste the values from the table.":::
+     :::image type="content" source="../../media/f79c5679-34eb-4544-8517-caa2e8a4111a.png" alt-text="Copy and paste the values from the table for the CNAME record.":::
 
 1. Select the **Save Changes** (check mark) control.
 
-     :::image type="content" source="../../media/91a5cce4-ca41-41ec-b976-aafe681a4d68.png" alt-text="Select the Save Changes control.":::
+     :::image type="content" source="../../media/91a5cce4-ca41-41ec-b976-aafe681a4d68.png" alt-text="Screenshot of the the Save Changes control for the CNAME record.":::
 
 ## Add a TXT record for SPF to help prevent email spam
 
@@ -227,7 +235,7 @@ To verify the record in Microsoft 365:
     > [!NOTE]
     > The **Type** drop-down automatically appears when you select **ADD NEW RECORD**.
 
-     :::image type="content" source="../../media/c5d1fddb-28b5-48ec-91c9-3e5d3955ac80.png" alt-text="Select TXT Record.":::
+     :::image type="content" source="../../media/c5d1fddb-28b5-48ec-91c9-3e5d3955ac80.png" alt-text="Select TXT Record for the SPF TXT record.":::
 
 1. In the boxes for the new record, type or copy and paste the following values from the following table.
 
@@ -237,11 +245,11 @@ To verify the record in Microsoft 365:
     |---|---|---|---|
     |TXT|@|v=spf1 include:spf.protection.outlook.com -all  <br/> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.|30 min|
 
-     :::image type="content" source="../../media/ea0829f1-990b-424b-b26e-9859468318dd.png" alt-text="Copy and paste the values from the table.":::
+     :::image type="content" source="../../media/ea0829f1-990b-424b-b26e-9859468318dd.png" alt-text="Copy and paste the values from the table for the SPF TXT record.":::
 
 1. Select the **Save Changes** (check mark) control.
 
-     :::image type="content" source="../../media/f2846c36-ace3-43d8-be5d-a65e2c267619.png" alt-text="Select the Save Changes control.":::
+     :::image type="content" source="../../media/f2846c36-ace3-43d8-be5d-a65e2c267619.png" alt-text="Screenshot of the the Save Changes control for the SPF TXT record.":::
 
 ## Advanced option: Microsoft Teams
 
@@ -283,11 +291,11 @@ Only select this option if your organization uses Microsoft Teams. Teams needs 4
     |_sip|_tls|100|1|443|sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)**|Automatic|
     |_sipfederationtls|_tcp|100|1|5061|sipfed.online.lync.com.  <br/> **This value MUST end with a period (.)**|Automatic|
 
-     :::image type="content" source="../../media/ff9566ea-0096-4b7f-873c-027080a23b56.png" alt-text="Copy and paste the values from the table.":::
+     :::image type="content" source="../../media/ff9566ea-0096-4b7f-873c-027080a23b56.png" alt-text="Copy and paste the values from the table for the SRV records.":::
 
 1. Select the **Save Changes** (check mark) control.
 
-     :::image type="content" source="../../media/48a8dee4-c66d-449d-8759-9e9784c82b13.png" alt-text="Select the Save Changes control.":::
+     :::image type="content" source="../../media/48a8dee4-c66d-449d-8759-9e9784c82b13.png" alt-text="Screenshot of the the Save Changes control for the SRV records for Microsoft Teams.":::
 
 1. Add the other SRV record by choosing the values from the second row of the table.
 
@@ -318,7 +326,7 @@ Only select this option if your organization uses Microsoft Teams. Teams needs 4
 
 1. Select the **Save Changes** (check mark) control.
 
-     :::image type="content" source="../../media/91a5cce4-ca41-41ec-b976-aafe681a4d68.png" alt-text="Select the Save Changes control.":::
+     :::image type="content" source="../../media/91a5cce4-ca41-41ec-b976-aafe681a4d68.png" alt-text="Screenshot of the the Save Changes control for the CNAME records for Microsoft Teams.":::
 
 1. Add the other CNAME record by choosing the values from the second row of the table.
 
@@ -365,11 +373,11 @@ This service helps you secure and remotely manage mobile devices that connect to
     |CNAME|enterpriseregistration|enterpriseregistration.windows.net.  <br/> **This value MUST end with a period (.)**|Automatic|
     |CNAME|enterpriseenrollment|enterpriseenrollment-s.manage.microsoft.com.  <br/> **This value MUST end with a period (.)**|Automatic|
 
-     :::image type="content" source="../../media/f79c5679-34eb-4544-8517-caa2e8a4111a.png" alt-text="Copy and paste the values from the table.":::
+     :::image type="content" source="../../media/f79c5679-34eb-4544-8517-caa2e8a4111a.png" alt-text="Copy and paste the values from the table for the CNAME records for Mobile Device Management.":::
 
 1. Select the **Save Changes** control.
 
-     :::image type="content" source="../../media/91a5cce4-ca41-41ec-b976-aafe681a4d68.png" alt-text="Select the Save Changes control.":::
+     :::image type="content" source="../../media/91a5cce4-ca41-41ec-b976-aafe681a4d68.png" alt-text="Screenshot of the the Save Changes control for the CNAME records for Mobile Device Management.":::
 
 1. Add the other CNAME record by choosing the values from the second row of the table.
 

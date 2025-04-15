@@ -5,9 +5,9 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 08/21/2023
+ms.date: 09/30/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
@@ -46,6 +46,9 @@ After you have [created a shared mailbox](create-a-shared-mailbox.md), you'll wa
 3. Enter a new email address for the shared mailbox. If you want to change the primary email address, your mailbox must have more than one email alias.
 
 ## Forward emails that are sent to a shared mailbox
+
+> [!IMPORTANT]
+> Email forwarding to recipients outside the organization doesn't prevent messages identified as spam, phishing, or malware from being forwarded. The recipient needs their own email security filter to identify and block these messages.
 
 You do not need to assign a license to the shared mailbox in order to forward email that's sent to it. You can forward the messages to any valid email address or distribution list.
 
@@ -89,7 +92,7 @@ If you want to allow everyone to see the Sent email, in the admin center, edit t
 
 To learn more about litigation hold, see [Create a Litigation Hold](../../compliance/ediscovery-create-a-litigation-hold.md).
 
-1. Go to the <a href="https://admin.exchange.microsoft.com/#/homepage" target="_blank"> Exchange admin center</a>.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
 
 2. Select **Recipients** > **Mailboxes** and select the shared mailbox you want to manage.
 
@@ -113,13 +116,11 @@ To learn more about litigation hold, see [Create a Litigation Hold](../../compli
 
 1. In the Microsoft 365 admin center, go to **Teams & groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a>.
 
-2. Select the shared mailbox you want to edit, then select **Members** > **Customize permissions**.
-
-   Select Edit next to the permission you want to change for a member.
+2. Select the shared mailbox you want to edit, then under Manage mailbox permissions, select one of the permissions.
 
 3. Do one of the following:
-   - To give that permission to an additional member, select **Add permissions**, search for or select a member to add, and then select **Save**.
-   - To remove the permission from a member, use the Search box to search for the member if necessary,  select the **X** next to the member's name, and then select **Save**.
+   - To give that permission to an additional member, select **Add permissions**, search for or select a member to add, and then select **Add**.
+   - To remove the permission from a member, select the user, and then select **Remove permissions**.
 
 ## Show or hide a shared mailbox in the global address list
 
@@ -132,11 +133,10 @@ If you choose not to show the shared mailbox in the global address list, the mai
 3. Select the option you want next to Show in my organization's global address list. Select **Save**.
 
 > [!NOTE]
-> Hiding a shared mailbox from address list will make it impossible for new shared mailbox members to add the hidden mailbox to their Outlook profile until the shared mailbox is again shown in the address list. 
+> Hiding a shared mailbox from address list will make it impossible for new shared mailbox members to add the hidden mailbox to their Outlook profile until the shared mailbox is again shown in the address list.
 
 ## Related content
 
 [About shared mailboxes](about-shared-mailboxes.md) (article)\
 [Create a shared mailbox](create-a-shared-mailbox.md) (article)\
 [Convert a user mailbox to a shared mailbox](convert-user-mailbox-to-shared-mailbox.md) (article)\
-[Remove a license from a shared mailbox](remove-license-from-shared-mailbox.md) (article)

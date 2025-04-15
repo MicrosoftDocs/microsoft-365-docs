@@ -7,8 +7,9 @@ ms.author: cmcatee
 manager: scotv
 ms.reviewer: drjones, jobailey
 audience: Admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-marketplace
 ms.localizationpriority: medium
 ms.collection: 
 - Tier1
@@ -20,8 +21,11 @@ ms.custom:
 - commerce_purchase
 - okr_SMB
 - AdminSurgePortfolio
+- admindeeplinkMAC
+- campaignIDs-batch1
+- campaignIDs-batch2
 description: "Learn about registration numbers and under-review notifications when you buy Microsoft business products or services."
-ms.date: 08/24/2023
+ms.date: 03/31/2025
 ---
 
 # About registration numbers and under-review notifications in the Microsoft 365 admin center
@@ -30,7 +34,7 @@ This article only applies to commercial customers who buy or activate business p
 
 ## What is a registration number?  
 
-A registration number, sometimes referred to as a Tax Identification Number (TIN), is a number issued by the tax authority in your country/region to identify your organization for tax purposes. We use the registration number to review the details of your account. The review lets us determine if Microsoft can provide you with products and services. For information about what registration numbers are needed for a country/region, see [Tax Identification Numbers](https://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/).
+A registration number, sometimes referred to as a Tax Identification Number (TIN), is a number issued by the tax authority in your country/region to identify your organization for tax purposes. We use the registration number to review the details of your account. The review lets us determine if Microsoft can provide you with products and services.
 
 For countries/regions where the registration number is mandatory, the label above the text box indicates what type of number is required. For example, in the following screenshot, the label indicates that a CNPJ (Brazilian) registration number is needed.
 
@@ -40,7 +44,7 @@ For countries/regions where the registration number is optional, you can choose 
 
 :::image type="content" source="../media/macregnum-reg-screenshot_400.png" alt-text="Screenshot of the optional registration number field.":::
 
-To find out the format and type of registration number issued by your country/region, see [Tax Identification Numbers](https://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/).
+To find out the format and type of registration number issued by your country/region, contact your tax authority.
 
 ## How do I know if my account is under review?  
 

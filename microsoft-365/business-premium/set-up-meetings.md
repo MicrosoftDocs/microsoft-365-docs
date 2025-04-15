@@ -2,18 +2,18 @@
 title: "Set up online meetings in Microsoft Business Premium"
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
-manager: dansimp
+ms.author: chrisda
+author: chrisda
+manager: deniseb
 ms.audience: Admin
-ms.topic: conceptual
-ms.service: microsoft-365-business
-ms.date: 10/26/2023
+ms.topic: install-set-up-deploy
+ms.service: microsoft-365-business-security
+ms.date: 05/31/2024
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - M365-Campaigns
 - m365solution-smb
-- tier1
+- tier2
 ms.custom:
 - MiniMaven
 search.appverid:
@@ -29,7 +29,7 @@ Make sure members of the organization use Microsoft Teams for all meetings. Team
 
 With Teams, you don't need to be a member of the organization or even have an account to join a meeting. You can schedule and run online meetings where you can share your screen, share files, assign tasks, and more. Political campaigns can include staff, volunteers, or guests that are outside your organization. You can easily meet with clients, staff or partners over Microsoft Teams, and in a secure and worry-free environment.
 
-[![An illustration of two users in a meeting.](../media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)
+[:::image type="content" source="media/HostOnlineMeeting-thumb-358x201.png" alt-text="An illustration of two users in a meeting.":::](https://go.microsoft.com/fwlink/?linkid=2078712)
 
 Download an infographic in [PDF](https://go.microsoft.com/fwlink/?linkid=2078712) or [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515) to get a quick overview of how to join or host an online meeting with Microsoft Teams.
 
@@ -42,15 +42,15 @@ Follow these best practices for your online meetings:
 
 ## Schedule a meeting
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOhP]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=2db1e87e-d20c-4ac8-a77c-58f3db6fb02e]
 
 ## Join a meeting
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYWn]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b76a00f9-f298-4510-b0ba-afd674b40739]
 
 Learn more about meeting in Microsoft Teams:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWeokQ]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=da5851ac-2d70-4743-afba-7bff93baf927]
 
 ## Next step
 

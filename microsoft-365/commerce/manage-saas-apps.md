@@ -9,6 +9,7 @@ ms.reviewer: armanv, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
 ms.collection:
 - Tier1
@@ -19,9 +20,10 @@ ms.custom:
 - commerce_subscriptions
 - AdminSurgePortfolio
 - admindeeplinkMAC
+- GAUpdates
 search.appverid: MET150 
 description: "Learn how to activate and manage third-party apps in the Microsoft 365 admin center."
-ms.date: 10/13/2023
+ms.date: 01/07/2025
 ---
 
 # Manage third-party app subscriptions in the Microsoft 365 admin center
@@ -34,11 +36,11 @@ You can manage licenses and billing for third-party apps in the <a href="https:/
 ## Before you begin
 
 - [Find out what type of billing account you have](manage-billing-accounts.md#view-my-billing-accounts).
-- If you have a Microsoft Online Services Agreement (MOSA) billing account type, you must be a Global or Billing admin to do the tasks in this article. For more information, see [About admin roles in the Microsoft 365 admin center](../admin/add-users/about-admin-roles.md).
-- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a Billing account owner or contributor to do the tasks in this article. For more information about billing account and billing profile roles, see [Understand your Microsoft business billing account](manage-billing-accounts.md) and [Understand your Microsoft business billing profile](billing-and-payments/manage-billing-profiles.md).
+- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a Billing account owner or contributor to do the tasks in this article. For more information about billing account and billing profile roles, see [Understand your Microsoft business billing account](manage-billing-accounts.md) and [Manage your Microsoft business billing profiles](billing-and-payments/manage-billing-profiles.md).
+- If you have a Microsoft Online Services Agreement (MOSA) billing account type, you must be at least a Billing Administrator to do the tasks in this article. For more information, see [About admin roles in the Microsoft 365 admin center](../admin/add-users/about-admin-roles.md).
 
 > [!NOTE]
-> If you're the person who signed up for the subscription, you're automatically a Global admin or Billing account owner.
+> If you're the person who signed up for the subscription, you're automatically a Billing account owner.
 
 ## How to get software-as-a-service apps
 
@@ -57,7 +59,7 @@ App providers sell their apps either at a flat rate, or by buying licenses for u
 
 ## Activate third-party apps
 
-As as admin, you must activate third-party apps before you can assign them to users. These apps are activated in the third-party publisher's portal.
+As an admin, you must activate third-party apps before you can assign them to users. These apps are activated in the third-party publisher's portal.
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, go to the **Billing** > **Your products** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> page.
 2. Find and select the app that you want to manage.
@@ -108,7 +110,7 @@ Third-party apps each have a billing profile assigned to them. Billing profiles 
 - **Contact information** –  Billing address and a contact name
 - **Roles** – Roles that allow you to change the billing profile, pay bills, or use the payment method on the billing profile to make purchase.
 
-For more information about billing profiles, see [Understand your Microsoft business billing profile](billing-and-payments/manage-billing-profiles.md).
+For more information about billing profiles, see [Manage your Microsoft business billing profiles](billing-and-payments/manage-billing-profiles.md).
 
 ### Edit the billing profile on a third-party app subscription
 
@@ -283,4 +285,4 @@ A CSP can buy an offer in the Partner Center in their customer's currency so tha
 
 ## Related content
 
-[Understand your Microsoft business billing profile](billing-and-payments/manage-billing-profiles.md) (article)\
+[Manage your Microsoft business billing profiles](billing-and-payments/manage-billing-profiles.md) (article)\

@@ -9,6 +9,7 @@ ms.reviewer: sinakassaw, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
 ms.collection:
 - Tier1
@@ -27,30 +28,30 @@ ms.custom:
 - okr_SMB
 - manage_licenses
 - AdminTemplateSet
+- GAUpdates
+- campaignIDs-batch1
 search.appverid: MET150
 description: "Learn how to assign or unassign licenses for your users in the Microsoft 365 admin center."
-ms.date: 10/20/2023
+ms.date: 04/07/2025
 ---
 
 # Assign or unassign licenses for users in the Microsoft 365 admin center
 
 Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
-You can assign or unassign licenses for users in the Microsoft 365 admin center on either the **Active users** page, or on the **Licenses** page. The method you use depends on whether you want to assign or unassign licenses for specific users, or assign or unassign users for a specific product.
+You can assign or unassign licenses for users in the Microsoft 365 admin center on either the **Active users** page, or on the **Licenses** page. The method you use depends on whether you want to assign or unassign licenses for specific users, or assign or unassign users for a specific product. You can also [add a user and assign a license at the same time](../add-users/add-users.md).
 
 > [!NOTE]
 >
-> - As an admin, you can't assign or unassign licenses for a self-service purchase subscription bought by a user in your organization. You can [take over a purchase or trial subscription](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-purchase-or-trial-subscription), and then assign or unassign licenses.
+> - As an admin, you can't assign or unassign licenses for a self-service purchase subscription bought by a user in your organization. You can [take over a purchase or trial subscription](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-or-trial-subscription), and then assign or unassign licenses.
 > - For some subscriptions, you can only cancel during a limited window of time after you buy or renew your subscription. If the cancellation window has passed, turn off recurring billing to cancel the subscription at the end of its term.
-
-[Learn how to add a user and assign a license at the same time](../add-users/add-users.md).
 
 > [!TIP]
 > If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
 ## Before you begin
 
-- You must be a Global, License, or User admin to assign licenses. For more information, see [About Microsoft 365 admin roles](../add-users/about-admin-roles.md).
+- You must be at least a License or User Administrator to assign licenses. For more information, see [About Microsoft 365 admin roles](../add-users/about-admin-roles.md).
 - In addition to the steps described in this article, you can also use the Microsoft Graph PowerShell SDK to [assign Microsoft 365 licenses to user accounts with PowerShell](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md) or [remove Microsoft 365 licenses from user accounts with PowerShell](../../enterprise/remove-licenses-from-user-accounts-with-microsoft-365-powershell.md).
 - To use group-based licensing, see [Assign licenses to users by group membership in Microsoft Entra ID](/azure/active-directory/enterprise-users/licensing-groups-assign)
 - Some services, like Sway, are automatically assigned to users, and don't need to be assigned individually.
@@ -106,32 +107,16 @@ When you use the **Active users** page to assign or unassign licenses, you assig
 2. Select the circles next to the names of the users that you want to assign licenses to.
 3. At the top, select **Manage product licenses**.
 4. In the **Manage product licenses** pane, select **Assign more: Keep the existing licenses and assign more** \> **Next**.
-5. Under **Licenses**, select the box for the license(s) that you want the selected users to have.\
-    By default, all services associated with those licenses are automatically assigned to the users. You can limit which services are available to the users. Deselect the boxes for the services that you don't want the users to have.
+5. Under **Licenses**, select the box for the license(s) that you want the selected users to have.
+
+   By default, all services associated with those licenses are automatically assigned to the users. You can limit which services are available to the users. Deselect the boxes for the services that you don't want the users to have.
+
 6. At the bottom of the pane, select **Save changes**.  
-    You might have to buy more licenses if you don't have enough licenses for everyone.
+
+   You might have to buy more licenses if you don't have enough licenses for everyone.
 
 > [!NOTE]
-> If you want to assign licenses for a large number of users, use [Assign licenses to users by group membership in Microsoft Entra ID](/azure/active-directory/enterprise-users/licensing-groups-assign).
-
-## Assign a license to a guest user
-
-You can invite guest users to collaborate with your organization in the Microsoft Entra admin center. To learn about guest users, see [B2B collaboration overview](/azure/active-directory/external-identities/what-is-b2b). If you don't have any guest users, see [Quickstart: Add a guest user and send an invitation](/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal).
-
-> [!IMPORTANT]
-> You must be a Global admin to do these steps.
-
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2067268" target="_blank">Microsoft Entra admin center</a>.
-2. In the navigation pane, select **Users** > **All Users**.
-3. On the **Users** page, next to the search box, select **Add filters**.
-4. In the **Add filter** drop-down list, select **User type**.
-5. Select the **Value** drop-down list, select **Guest**, then select **Apply**.
-6. In the list of results, select the name of the user who needs a license.
-7. In the navigation pane, under **Manage**, select **Licenses**.
-8. Select **Assignments**.
-9. Under **Select licenses**, select the products you want to assign licenses for.
-10. Under **Review license options**, clear the check boxes for any services you don't want the guest user to have access to.
-11. At the bottom of the page, select **Save**.
+> If you want to assign licenses for a large number of users, use [Assign or unassign licenses to a group in the Microsoft 365 admin center](manage-group-licenses.md).
 
 ## Use the Active users page to unassign licenses
 
@@ -159,11 +144,11 @@ When you use the **Active users** page to unassign licenses, you remove product 
 - When the license is removed, the user's mailbox is no longer searchable by using an eDiscovery tool such as Content Search or eDiscovery (Premium).
 - If you have an Enterprise subscription, like Office 365 Enterprise E3, Exchange Online lets you preserve the mailbox data of a deleted user account by using [inactive mailboxes](../../compliance/inactive-mailboxes-in-office-365.md). For more information, see [Create and manage inactive mailboxes in Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md).
 - To learn how to block a user's access to Microsoft 365 data after their license is removed, and how to get access to the data afterwards, see [Overview: Remove a former employee and secure data](../add-users/remove-former-employee.md).
-- If you remove a user's license and they still have Microsoft 365 apps installed, they see [Unlicensed Product and activation errors in Office](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) when they use Microsoft 365 apps.
+- If you remove a user's license and they still have Microsoft 365 productivity apps installed, they see [Unlicensed Product and activation errors in Office](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) when they use Microsoft 365 productivity apps.
 
 ## Next steps
 
-If you assigned licenses and your users don't have Microsoft 365 apps installed, you can share the [Employee quick setup in Microsoft 365 for business](https://support.microsoft.com/office/7f34c318-e772-46a5-8c0a-ab86661542d1) with your users to set up things like [Download and install or reinstall Microsoft 365 or Office 2021 on a PC or Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) and [Set up Microsoft 365 apps and email on a mobile device](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f).
+If you assigned licenses and your users don't have Microsoft 365 productivity apps installed, you can share the [Employee quick setup in Microsoft 365 for business](https://support.microsoft.com/office/7f34c318-e772-46a5-8c0a-ab86661542d1) with your users to set up things like [Download and install or reinstall Microsoft 365 or Office 2021 on a PC or Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) and [Set up Microsoft 365 apps and email on a mobile device](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f).
 
 If you unassigned licenses and you don't plan to reassign the unused licenses to other users, consider [removing the licenses from your subscription](../../commerce/licenses/buy-licenses.md) so that you're not paying for more licenses than you need.
 

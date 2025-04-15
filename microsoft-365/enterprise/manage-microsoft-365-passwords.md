@@ -3,10 +3,11 @@ title: "Manage Microsoft 365 user account passwords"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 09/24/2020
+ms.date: 12/06/2024
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -17,6 +18,7 @@ ms.collection:
 - scotvorg
 - Ent_O365
 - M365-subscription-management
+- must-keep
 search.appverid:
 - MET150
 - MOE150
@@ -42,7 +44,7 @@ You manage user account passwords in:
 
 - [The Microsoft 365 admin center](/admin)
 - The Microsoft Entra admin center
-    
+
 ### Hybrid
 
 With hybrid identity, passwords are stored in AD DS so you must use on-premises AD DS tools to manage user account passwords. Even when using Password Hash Synchronization (PHS), in which Microsoft Entra ID stores a hashed version of the already hashed version in AD DS, you and users must manage their passwords in AD DS.
@@ -78,8 +80,8 @@ Password writeback is required to fully utilize Microsoft Entra ID Protection ca
 
 For additional information and configuration instructions, see [Microsoft Entra SSPR with password writeback](/azure/active-directory/active-directory-passwords-writeback).
 
->[!Note]
->Upgrade to the latest version of Microsoft Entra Connect to ensure the best possible experience and new features as they are released. For more information, see [Custom installation of Microsoft Entra Connect](/azure/active-directory/connect/active-directory-aadconnect-get-started-custom).
+> [!NOTE]
+> Upgrade to the latest version of Microsoft Entra Connect to ensure the best possible experience and new features as they are released. For more information, see [Custom installation of Microsoft Entra Connect](/azure/active-directory/connect/active-directory-aadconnect-get-started-custom).
 >
 
 ## Simplify password resets

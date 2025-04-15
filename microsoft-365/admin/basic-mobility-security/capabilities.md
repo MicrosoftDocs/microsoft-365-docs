@@ -5,10 +5,10 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 10/25/2023
+ms.date: 11/11/2024
 audience: Admin
 ms.topic: article
-ms.service: microsoft-365-business
+ms.service: microsoft-365-basic-mobility-security
 ms.localizationpriority: medium
 ms.collection:
 - Tier3
@@ -20,6 +20,7 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
+- basic-mobility-security
 search.appverid:
 - MET150
 description: "Basic Mobility and Security helps you secure and manage mobile devices with policies that control access to organization Microsoft 365 email and documents."
@@ -57,7 +58,7 @@ The supported apps for the different types of mobile devices in the following ta
 |Product|iOS|Android|
 |---|---|---|
 |**Exchange** Exchange ActiveSync includes built-in email and third-party apps, like TouchDown, that use Exchange ActiveSync Version 14.1 or later.|Mail|Email|
-|**Microsoft 365 apps** and **OneDrive for Business**|Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**On phones and tablets**:<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **On phones only:** <br/> Microsoft 365 mobile|
+|**Apps in Microsoft 365** and **OneDrive for Business**|Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**On phones and tablets**:<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **On phones only:** <br/> Microsoft 365 mobile|
 
 > [!NOTE]
 >
@@ -101,9 +102,12 @@ The following sections list the policy settings you can use to help secure and m
 |Require an alphanumeric password|Yes|No|No|
 |Minimum password length|Yes|Yes|Yes|
 |Number of sign-in failures before device is wiped|Yes|Yes|Yes|
-|Minutes of inactivity before device is locked|Yes|Yes|Yes|
+|Minutes of inactivity before device is locked|Yes|No|No|
 |Password expiration (days)|Yes|Yes|Yes|
 |Remember password history and prevent reuse|Yes|Yes|Yes|
+
+> [!IMPORTANT]
+> **Lock devices if they are inactive for this many minutes** is no longer supported for Android and Samsung Knox.
 
 ## Encryption settings
 
@@ -121,7 +125,7 @@ The following sections list the policy settings you can use to help secure and m
 
 ## Managed email profile option
 
-The following option can block users from accessing their Microsoft 365 email if they’re using a manually created email profile. Users on iOS devices must delete their manually created email profile before they can access their email. After they delete the profile, a new profile is automatically created on the device. For instructions on how end users can get compliant, see [An existing email account was found](/intune-user-help/existing-company-email-account-found).
+The following option can block users from accessing their Microsoft 365 email if they’re using a manually created email profile. Users on iOS devices must delete their manually created email profile before they can access their email. After they delete the profile, a new profile is automatically created on the device. For instructions on how end users can get compliant, see [Device already has an email profile installed](/troubleshoot/mem/intune/device-configuration/troubleshoot-email-profiles-in-microsoft-intune#device-already-has-an-email-profile-installed).
 
 |Setting name|iOS|Android|Samsung Knox|
 |---|---|---|---|

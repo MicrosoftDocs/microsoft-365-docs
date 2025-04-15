@@ -5,9 +5,9 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 08/18/2023
+ms.date: 09/30/2024
 audience: Admin
-ms.topic: article
+ms.topic: concept-article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
@@ -54,7 +54,7 @@ Before you [create a shared mailbox](create-a-shared-mailbox.md), here are some 
 
 - **Mailbox conversion:** You can convert user mailboxes to shared mailboxes. See [Convert a user mailbox to a shared mailbox](convert-user-mailbox-to-shared-mailbox.md).
 
-- **Admin roles:** Users with global admin or Exchange admin roles can create shared mailboxes.
+- **Admin roles:** Users with Exchange admin roles can create shared mailboxes.
 
 - **Subscription requirements:** To create a shared mailbox, you need to subscribe to a Microsoft 365 for business plan that includes email (the Exchange Online service). The Microsoft 365 Apps for business subscription doesn't include email. Microsoft 365 Business Standard does include email.
 
@@ -97,4 +97,4 @@ This message appears when Microsoft 365 is experiencing a replication latency is
 [Create a shared mailbox](create-a-shared-mailbox.md) (article)\
 [Configure a shared mailbox](configure-a-shared-mailbox.md) (article)\
 [Convert a user mailbox to a shared mailbox](convert-user-mailbox-to-shared-mailbox.md) (article)\
-[Remove a license from a shared mailbox](remove-license-from-shared-mailbox.md) (article)
+

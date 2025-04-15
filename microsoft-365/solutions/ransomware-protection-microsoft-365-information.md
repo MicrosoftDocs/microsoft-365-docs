@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 ms.date: 08/20/2021
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
@@ -112,18 +112,18 @@ Here's the ransomware protection for your tenant for steps 1-5.
 Key information from Microsoft:
 
 - [The growing threat of ransomware](https://blogs.microsoft.com/on-the-issues/2021/07/20/the-growing-threat-of-ransomware/), Microsoft On the Issues blog post on July 20, 2021
-- [Human-operated ransomware](/security/compass/human-operated-ransomware)
-- [Rapidly protect against ransomware and extortion](/security/compass/protect-against-ransomware)
+- [Human-operated ransomware](/security/ransomware/human-operated-ransomware)
+- [Quickly deploy ransomware preventions](/security/ransomware/protect-against-ransomware)
 - [2021 Microsoft Digital Defense Report](https://www.microsoft.com/security/business/microsoft-digital-defense-report) (see pages 10-19)
-- [Ransomware: A pervasive and ongoing threat](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) threat analytics report in the Microsoft Defender portal
-- Microsoft's Detection and Response Team (DART) ransomware [approach and best practices](/security/compass/incident-response-playbook-dart-ransomware-approach) and [case study](/security/compass/dart-ransomware-case-study)
+- [Ransomware: A pervasive and ongoing threat](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) analytics report in the Microsoft Defender portal
+- Microsoft's Detection and Response Team (DART) ransomware [approach and best practices](/security/operations/incident-response-playbook-dart-ransomware-approach) and [case study](/security/ransomware/dart-ransomware-case-study)
 
 Microsoft 365:
 
 - [Maximize Ransomware Resiliency with Azure and Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
 - [Ransomware incident response playbooks](/security/ransomware/)
 - [Malware and ransomware protection](/compliance/assurance/assurance-malware-and-ransomware-protection)
-- [Protect your Windows 10 PC from ransomware](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
+- [Protect your Windows 10 PC from ransomware](https://support.microsoft.com/windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
 - [Handling ransomware in SharePoint Online](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
 - [Threat analytics reports for ransomware](https://security.microsoft.com/threatanalytics3?page_size=30&filters=tags%3DRansomware&ordering=-lastUpdatedOn&fields=displayName,alertsCount,impactedEntities,reportType,createdOn,lastUpdatedOn,tags,flag) in the Microsoft Defender portal
 
@@ -135,7 +135,7 @@ Microsoft Azure:
 
 - [Azure Defenses for Ransomware Attack](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
 - [Maximize Ransomware Resiliency with Azure and Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
-- [Backup and restore plan to protect against ransomware](/security/compass/backup-plan-to-protect-against-ransomware)
+- [Backup and restore plan to protect against ransomware](/azure/security/fundamentals/backup-plan-to-protect-against-ransomware)
 - [Help protect from ransomware with Microsoft Azure Backup](https://www.youtube.com/watch?v=VhLOr2_1MCg) (26-minute video)
 - [Recovering from systemic identity compromise](/azure/security/fundamentals/recover-from-identity-compromise)
 - [Advanced multistage attack detection in Microsoft Sentinel](/azure/sentinel/fusion#ransomware)

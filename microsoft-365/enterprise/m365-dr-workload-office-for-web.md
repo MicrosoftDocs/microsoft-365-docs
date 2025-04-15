@@ -5,16 +5,18 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.service: microsoft-365-enterprise
+ms.subservice: advanced-data-residency
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 09/20/2022
+ms.date: 02/11/2025
 ms.reviewer: deanw
 ms.custom:
 - it-pro
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
+- must-keep
 ---
 
 # Data Residency for Office for the Web
@@ -37,12 +39,12 @@ Required Conditions:
 
 **Commitment:**
 
-Please refer to the [ADR Commitment page](m365-dr-commitments.md#office-for-the-web) for the specific customer data at rest commitment for Office for the Web.
+Refer to the [ADR Commitment page](m365-dr-commitments.md#office-for-the-web) for the specific customer data at rest commitment for Office for the Web.
 
 ### Migration
 
-The cache for documents are not migrated to the new _Geography_, and will be reestablished as users work on documents.
+The cache for documents isn't migrated to the new _Geography_, and will be reestablished as users work on documents.
 
 ### How can I determine customer data location?
 
-We are in the process of updating the actual data location in _Tenant_ Admin Center. When this change is complete the tenant will be able to see the actual data location, for in scope data, by navigating to Admin|Settings|Org Settings|Organization Profile|Data Location. Until that change is visible, you can view the Exchange Online data or SharePoint Online location information in order to understand where the in scope data is stored for this service.
+We are in the process of updating the actual data location in _Tenant_ Admin Center. When this change is complete the tenant will be able to see the actual data location, for in scope data, by navigating to **Admin | Settings | Org Settings | Organization Profile | Data Location**. Until that change is visible, you can view the Exchange Online data or SharePoint location information in order to understand where the in scope data is stored for this service.

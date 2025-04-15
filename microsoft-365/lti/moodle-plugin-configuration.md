@@ -1,13 +1,14 @@
 ---
 title: Set up and configure the Moodle LMS plugins
-ms.author: danismith
 author: DaniEASmith
-manager: serdars
+ms.author: danismith
+manager: jacktremper
 ms.reviewer: amitman 
 ms.date: 04/06/2022
 audience: admin
-ms.topic: article
-ms.service: microsoft-365-business
+ms.topic: install-set-up-deploy
+ms.service: msteams
+ms.subservice: teams-education
 f1.keywords:
 - CSH
 ms.collection: 
@@ -175,7 +176,7 @@ You must configure the connection between the Microsoft 365 plugins and Microsof
             1. The default *Teacher* role has the `local/o365:teamowner` capability, and the default *Student* role has the `local/o365:teammember` capability.
 
 > [!NOTE]
-> The scheduled tasks are triggered by [Moodle Cron](https://docs.moodle.org/400/en/Cron), which needs to be configured to run frequently. Each scheduled task can have a default schedule, which can be customized.
+> The scheduled tasks are triggered by [Moodle Cron](https://docs.moodle.org/403/en/Cron), which needs to be configured to run frequently. Each scheduled task can have a default schedule, which can be customized.
 >
 > - The default schedule of the **Sync users with Microsoft Entra ID** task is every minute.
 > - The default schedule of the **Sync Moodle courses to Microsoft Teams** task is daily at 1am in the Moodle server default time zone.
@@ -190,4 +191,4 @@ After the plugins are installed and configured, you can:
 
 If you would like to review Moodle's Microsoft 365 integration guides and release notes, see these resources:
 
-- [Microsoft 365 integration documentation on Moodle Docs](https://docs.moodle.org/400/en/Microsoft_365).
+- [Microsoft 365 integration documentation on Moodle Docs](https://docs.moodle.org/403/en/Microsoft_365).

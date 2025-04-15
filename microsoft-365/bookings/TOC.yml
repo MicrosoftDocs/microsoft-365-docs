@@ -1,53 +1,95 @@
+items:
 - name: Microsoft Bookings
   href: bookings-overview.md
   items:
-  - name: Setup
+  - name: Learn about Personal Bookings
     items:
-    - name: Get access to Bookings
-      href: get-access.md
-    - name: Enter your business information
-      href: enter-business-information.md
-    - name: Define your service offerings
-      href: define-service-offerings.md
-    - name: Configure SMS text notifications
-      href: bookings-sms.md
-    - name: Add staff to Bookings
-      href: add-staff.md
-    - name: Schedule business closures and time off
-      href: schedule-closures-time-off-vacation.md
-    - name: Set your scheduling policies
-      href: set-scheduling-policies.md
-    - name: Customize and publish your booking page
-      href: customize-booking-page.md
-    - name: Create a manual booking
-      href: create-a-manual-booking.md
-    - name: Employee hours
-      href: employee-hours.md
-    - name: Add custom and required questions to the booking page
-      href: add-questions.md
-    - name: Set buffer time
-      href: set-buffer-time.md
-    - name: Manage group attendees in Bookings
-      href: manage-attendees-bookings.md
-    - name: Set language and time zone
-      href: set-language-time-zones.md
-  - name: Manage the Bookings app in Microsoft Teams
-    href: /microsoftteams/bookings-app-admin?bc=%2fmicrosoft-365%2fbookings%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fbookings%2ftoc.json
-  - name: Virtual visits with Microsoft Teams
-    href: /microsoftteams/expand-teams-across-your-org/bookings-virtual-visits
-  - name: Comparison chart - web app versus Teams app
-    href: comparison-chart.md
-  - name: Delete a booking calendar
-    href: delete-calendar.md
-  - name: Turn Microsoft Bookings on or off
-    href: turn-bookings-on-or-off.md
-  - name: Custom domain support in Bookings
-    href: custom-domain-support.md
-  - name: Reporting information for Microsoft Bookings
-    href: reporting-info.md
-  - name: Use Power Automate connectors
-    href: power-automate-integration.md
-  - name: Microsoft Bookings frequently asked questions (FAQ)
-    href: bookings-faq.yml
-  - name: Bookings with me
-    href: bookings-in-outlook.md
+    - name: Create a new meeting type
+      href: create-new-meeting-type.md
+    - name: Preview and share your personal booking page
+      href: preview-share-personal-booking-page.md
+    - name: Add email reminders and follow-up in Microsoft Bookings
+      href: add-email-reminder.md
+    - name: Set your banner image
+      href: set-banner-image.md
+  - name: Learn about Shared Bookings
+    displayname: Learn about Shared Bookings
+    items:
+    - name: Get started with Shared Bookings
+      items:
+      - name: Set up your shared booking page
+        href: enter-business-information.md
+      - name: Define your Bookings service offerings
+        href: define-service-offerings.md
+      - name: Add team members to Bookings
+        href: add-staff.md
+      - name: Share your shared booking page
+        href: share-shared-bookings-page.md
+    - name: Manage your team availability for Shared Bookings
+      items:
+      - name: Understanding staff roles
+        href: staff-roles.md
+      - name: Configure staff availability
+        href: staff-availability.md
+      - name: Set up appointment notifications for staff
+        href: notify-staff-member-assigned-booking.md
+      - name: Configure staff membership when added to a Shared Booking page
+        href: accept-membership-shared-booking-page.md
+    - name: Manage your service availability for Shared Bookings
+      items:
+        - name: Creating personalized and group services
+          href: service-types.md
+        - name: Configure SMS text notifications and reminders
+          href: bookings-sms.md
+        - name: Configure service availability
+          href: configure-service-availability.md          
+        - name: Use buffer time to add prep time
+          href: set-buffer-time.md
+        - name: Hide services from your booking page
+          href: hide-service-on-booking-page.md
+    - name: Manage your customers for Shared Bookings
+      items:
+        - name: Let customers manage their bookings
+          href: customers-manage-booking.md
+        - name: Create an appointment on behalf of a customer
+          href: create-a-manual-booking.md  
+        - name: Add custom questions for customers
+          href: add-questions.md
+        - name: Manage group attendees
+          href: manage-attendees-bookings.md
+    - name: Manage your shared booking page
+      items:
+        - name: Set your default scheduling policy
+          href: set-scheduling-policies.md
+        - name: Set business closures and time off
+          href: schedule-closures-time-off-vacation.md
+        - name: Set language and time zones
+          href: set-language-time-zones.md
+        - name: Customize and publish your booking page
+          href: customize-booking-page.md
+        - name: Use the Shared Bookings Graph APIs
+          href: /graph/api/resources/booking-api-overview
+        - name: Reporting info for Shared Bookings
+          href: reporting-info.md
+        - name: Use Power Automate connectors
+          href: power-automate-integration.md
+  - name: Bookings Admin controls
+    items:
+    - name: Turn off Personal Bookings
+      href: bookings-in-outlook.md
+    - name: Turn on or off Shared Bookings for organization
+      href: turn-bookings-on-or-off.md
+    - name: Granular controls for Shared Bookings
+      href: granular-controls-shared-bookings.md     
+    - name: Custom domain support in Shared Bookings
+      href: custom-domain-support.md
+    - name: Delete a shared booking page
+      href: delete-calendar.md
+    - name: Best practices for Shared Bookings
+      href: best-practices-shared-bookings.md
+  - name: Frequently asked questions
+    items:
+    - name: Personal Bookings FAQ
+      href: personal-bookings-faq.yml
+    - name: Shared Bookings FAQ
+      href: bookings-faq.yml  

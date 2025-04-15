@@ -1,9 +1,9 @@
 ---
-title: Team Shifts connector for UKG Pro Workforce Management known issues (Preview)
+title: Team Shifts connector for UKG Pro Workforce Management known issues
 author: lana-chin
-ms.author: v-chinlana
-manager: serdars
-ms.reviewer: imarquesgil
+ms.author: jtremper
+manager: jtremper
+ms.reviewer: harrywong
 ms.topic: troubleshooting
 audience: admin
 ms.service: microsoft-365-frontline
@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 10/23/2023
+ms.date: 12/20/2024
 ---
 
-# Known issues: Team Shifts connector for UKG Pro Workforce Management (Preview)
+# Known issues: Team Shifts connector for UKG Pro Workforce Management
 
-This article lists known issues for the [Microsoft Teams Shifts connector for UKG Pro Workforce Management](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-pro-workforce-management) (Preview).
+This article lists known issues for the [Microsoft Teams Shifts connector for UKG Pro Workforce Management](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-pro-workforce-management).
 
 ## You can map a WFM instance to more than one team using PowerShell or your Microsoft 365 admin center
 

@@ -1,14 +1,14 @@
 ---
 title: "Configure teams with baseline protection"
 f1.keywords: NOCSH
-ms.author: mikeplum
-author: MikePlumleyMSFT
+ms.author: jtremper
+author: jacktremper
 manager: pamgreen
-ms.date: 05/01/2020
+ms.date: 12/04/2023
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-solutions
-ms.localizationpriority: high
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: 
@@ -38,29 +38,15 @@ We also recommend turning on basic Defender for Office 365 features to guard aga
 
 |Option|Information|
 |:------|:-----------|
-|Safe Attachments for SPO, OneDrive and Teams|[Safe Attachments](../security/office-365-security/safe-attachments-about.md) <p> [Defender for Office 365 - SharePoint, OneDrive, and Microsoft Teams](../security/office-365-security/safe-attachments-for-spo-odfb-teams-about.md)|
-|Safe Documents|[Safe Documents in Microsoft Defender for Office 365](../security/office-365-security/safe-documents-in-e5-plus-security-about.md)|
-|Safe Links for Teams|[Office 365 Safe Links in Teams](../security/office-365-security/safe-links-about.md) <p> [Safe Links](../security/office-365-security/safe-links-about.md)|
+|Safe Attachments for SharePoint, OneDrive and Teams|[Safe Attachments in Microsoft Defender for Office 365](../security/office-365-security/safe-attachments-about.md) <p> [Defender for Office 365 - SharePoint, OneDrive, and Microsoft Teams](../security/office-365-security/safe-attachments-for-spo-odfb-teams-about.md)|
+|Safe Documents|[Safe Documents in Microsoft 365 A5 or E5 Security](../security/office-365-security/safe-documents-in-e5-plus-security-about.md)|
+|Safe Links for Teams|[Safe Links settings for Microsoft Teams](../security/office-365-security/safe-links-about.md#safe-links-settings-for-microsoft-teams)|
 
 ## Teams guest sharing
 
-In each of the tiers, we have the option of sharing with people outside your organization. For the sensitive and highly sensitive tiers, we will have the option to turn guest sharing off at the team level by using sensitivity labels. But the organization-level guest sharing setting must be turned on for guest sharing to work at all in Teams.
+In each of the tiers, we have the option of [sharing with people outside your organization](collaborate-with-people-outside-your-organization.md). For the sensitive and highly sensitive tiers, we have the option to turn guest sharing off at the team level by using sensitivity labels. But the organization-level guest sharing setting must be turned on for guest sharing to work at all in Teams.
 
-![Screenshot of Teams guest access toggle.](../media/teams-guest-access-toggle-on.png)
-
-To set Teams guest access settings
-
-1. Log in to the Microsoft 365 admin center at [https://admin.microsoft.com](https://admin.microsoft.com).
-2. In the left navigation, click **Show all**.
-3. Under **Admin centers**, click **Teams**.
-4. In the Teams admin center, in the left navigation, expand **Org-wide settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**Guest access**</a>.
-5. Ensure that **Allow guest access in Teams** is set to **On**.
-6. Make any desired changes to the additional guest settings, and then click **Save**.
-
-> [!NOTE]
-> It may take up to twenty-four hours for the Teams guest setting to become active after you turn it on.
-
-Guest sharing is turned on by default for Office 365 groups and SharePoint, however if you have previously changed any of the guest sharing settings for your organization, we recommend that you review [Collaborate with guests in a team](./collaborate-as-team.md) to ensure that guest sharing will be available in Teams.
+Guest sharing is turned on by default for commercial organizations. However if you have previously changed any of the guest sharing settings for your organization, we recommend that you review [Collaborate with guests in a team](collaborate-as-team.md) to ensure that guest sharing is available in Teams.
 
 ## Site and file sharing
 
@@ -85,22 +71,26 @@ By default, members of a SharePoint site can invite others to the site. When a s
 To help with permissions management, we recommend configuring the associated site to only allow owners to share the site by itself. This simplifies permissions management and helps prevent access by people without a team owner's knowledge. Do this for each team that requires baseline protection.
 
 To update the site sharing settings
-1. In the tool bar for the team, click **Files**.
-2. Click **Open in SharePoint**.
-3. In the tool bar of the SharePoint site, click the settings icon, and then click **Site permissions**.
-4. In the **Site permissions** pane, under **Site sharing**, click **Change how members can share**.
-5. Under **Sharing permissions**, choose **Site owners and members, and people with Edit permissions can share files and folders, but only site owners can share the site**, and then click **Save**.
+1. In the tool bar for the team, select **Files**.
+1. Select **Open in SharePoint**.
+1. In the tool bar of the SharePoint site, select the settings icon, and then select **Site permissions**.
+1. In the **Site permissions** pane, under **Site sharing**, select **Change how members can share**.
+1. Under **Sharing permissions**, choose **Site owners and members, and people with Edit permissions can share files and folders, but only site owners can share the site**, and then select **Save**.
 
 ## Additional protections
 
 Microsoft 365 offers additional methods for securing your content. Consider if the following options would help improve security for your organization.
 
-- Have guests agree to a [terms of use](/azure/active-directory/conditional-access/terms-of-use).
-- Configure a [session timeout policy](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) for guests.
-- Create [sensitive information types](../compliance/sensitive-information-type-learn-about.md) and use [data loss protection](../compliance/dlp-learn-about-dlp.md) to set policies around accessing sensitive information.
+- Have guests agree to a [terms of use](/entra/identity/conditional-access/terms-of-use).
+- Configure a [session sign-in frequency policy](/entra/identity/conditional-access/howto-conditional-access-session-lifetime) for guests.
+- Create [sensitive information types](/purview/sensitive-information-type-learn-about) and use [data loss prevention](/purview/dlp-learn-about-dlp) to set policies around accessing sensitive information.
 
-## See Also
+## Related articles
 
-[Manage meeting policies in Teams](/microsoftteams/meeting-policies-in-teams)
+[Configure Teams meetings with baseline protection](/microsoftteams/configure-meetings-baseline-protection)
 
 [Get started with insider risk management](../compliance/insider-risk-management-configure.md)
+
+[Configure teams with protection for sensitive data](configure-teams-sensitive-protection.md)
+
+[Configure teams with protection for highly sensitive data](configure-teams-highly-sensitive-protection.md)

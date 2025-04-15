@@ -5,10 +5,10 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 10/25/2023
+ms.date: 11/11/2024
 audience: Admin
-ms.topic: article
-ms.service: microsoft-365-business
+ms.topic: how-to
+ms.service: microsoft-365-basic-mobility-security
 ms.localizationpriority: medium
 ms.collection:
 - Tier3
@@ -18,21 +18,22 @@ ms.collection:
 - Adm_TOC
 - basic-mobility-security
 ms.custom:
-  - AdminSurgePortfolio
-  - has-azure-ad-ps-ref
-  - azure-ad-ref-level-one-done
+- AdminSurgePortfolio
+- has-azure-ad-ps-ref
+- azure-ad-ref-level-one-done
+- basic-mobility-security
 search.appverid:
 - MET150
-description: "For devices you can't manage with Basic Mobility and Security, block Exchange ActiveSync app access to email and use Microsoft Graph PowerShell to get details about org devices."
+description: "For devices, you can't manage with Basic Mobility and Security, block Exchange ActiveSync app access to email and use Microsoft Graph PowerShell to get details about org devices."
 ---
 
 # Manage device access settings in Basic Mobility and Security
 
-If you're using Basic Mobility and Security, there might be devices that you can't manage with Basic Mobility and Security. If so, you should block Exchange ActiveSync app access to Microsoft 365 email for mobile devices that aren't supported by Basic Mobility and Security. This helps secure your organization information across more devices.
+If you're using Basic Mobility and Security, there might be devices that you can't manage with Basic Mobility and Security. If so, you should block Exchange ActiveSync app access to Microsoft 365 email for mobile devices that aren't supported by Basic Mobility and Security. Blocking Exchange ActiveSync app access helps secure your organization information across more devices.
 
 Use these steps:
 
-1. Sign in to Microsoft 365 with your global admin account.
+1. Sign in to Microsoft 365 with a [Compliance administrator](/entra/identity/role-based-access-control/permissions-reference) account.
 
 2. In your browser, type: <https://compliance.microsoft.com/basicmobilityandsecurity>.
 
@@ -50,8 +51,8 @@ Here's a breakdown for the device details available to you.
 
 |Detail|What to look for in PowerShell|
 |---|---|
-|Device is enrolled in Basic Mobility and Security. For more info, see [Enroll your mobile device using Basic Mobility and Security](enroll-your-mobile-device.md)|The value of the *isManaged* parameter is:<br/>**True**= device is enrolled.<br/>**False**= device is not enrolled.|
-|Device is compliant with your device security policies. For more info, see [Create device security policies](create-device-security-policies.md)|The value of the *isCompliant* parameter is:<br/>**True** = device is compliant with policies.<br/>**False** = device is not compliant with policies.|
+|Device is enrolled in Basic Mobility and Security. For more info, see [Enroll your mobile device using Basic Mobility and Security](enroll-your-mobile-device.md)|The value of the *isManaged* parameter is:<br/>**True**= device is enrolled.<br/>**False**= device isn't enrolled.|
+|Device is compliant with your device security policies. For more info, see [Create device security policies](create-device-security-policies.md)|The value of the *isCompliant* parameter is:<br/>**True** = device is compliant with policies.<br/>**False** = device isn't compliant with policies.|
 
 :::image type="content" source="../../media/basic-mobility-security/bms-7-powershell-parameters.png" alt-text="Basic Mobility and Security PowerShell parameters.":::
 
@@ -86,9 +87,9 @@ For more info on these steps, see [Connect to Microsoft 365 with PowerShell](/po
    Connect-MgGraph -Scopes Device.Read.All, User.Read.All
    ```
 
-2. A popup will open for you to sign in. Provide the credentials of your Administrative Account and log in.
+2. A popup opens for you to sign in. Provide the credentials of your Administrative Account and log in.
 
-3. If your account has the necessary permissions you'll see "Welcome To Microsoft Graph!" in the Powershell window.
+3. If your account has the necessary permissions, you see "Welcome To Microsoft Graph!" in the Powershell window.
 
 ### Step 3: Make sure you're able to run PowerShell scripts
 
@@ -105,7 +106,7 @@ To run the Get-GraphUserDeviceComplianceStatus.ps1 script, you need to enable th
    Set-ExecutionPolicy RemoteSigned
    ```
 
-3. When prompted, type Y and then press Enter.
+1. When prompted, type **Y** and then press Enter.
 
 #### Run the Get-MgDevice cmdlet to display details for all devices in your organization
 
@@ -214,7 +215,7 @@ First, save the script to your computer.
 	}
 	```
 
-2. Save it as a Windows PowerShell script file by using the file extension .ps1; for example, Get-MgGraphDeviceOwnership.ps1.
+2. Save it as a Windows PowerShell script file by using the file extension ".ps1". For example, Get-MgGraphDeviceOwnership.ps1.
 
 	> [!NOTE]
 	> The script is also available for download on [Github](https://github.com/Raindrops-dev/RAIN-MicrosoftGraphPowershellCode/blob/main/Get-MgGraphDeviceOwnership.ps1).
@@ -235,13 +236,13 @@ First, save the script to your computer.
    $user = Get-MgUser -UserId "user@contoso.com"
    ```
 
-4. Run the following command to initiate the script.
+4. Run the following command.
 
    ```powershell
    .\Get-GraphUserDeviceComplianceStatus.ps1 -users $user -Export
    ```
 
-The information is exported to your Windows Desktop as a CSV file. You can use additional parameters to specify the file name and path of the CSV.
+The information is exported to your Windows Desktop as a CSV file. You can specify the file name and path of the CSV.
 
 ### Run the script to get device information for a group of users
 
@@ -266,11 +267,11 @@ The information is exported to your Windows Desktop as a CSV file. You can use a
    .\Get-GraphUserDeviceComplianceStatus.ps1 -User $Users -Export
    ```
 
-The information is exported to your Windows Desktop as a CSV file. You can use additional parameters to specify the file name and path of the CSV.
+The information is exported to your Windows Desktop as a CSV file. You can use more parameters to specify the file name and path of the CSV.
 
 ## Related content
 
-[Microsoft Connect Has Been Retired](/collaborate/connect-redirect)
+[Microsoft Connect retired](/collaborate/connect-redirect)
 
 [Overview of Basic Mobility and Security](overview.md)
 
@@ -278,6 +279,6 @@ The information is exported to your Windows Desktop as a CSV file. You can use a
 
 [Get-MgUser](/powershell/module/microsoft.graph.users/get-mguser)
 
-[Get-MgDevice](/powershell/module/microsoft.graph.users/get-mgdevice)
+[Get-MgDevice](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevice)
 
 [Get-MgUserOwnedDevice](/powershell/module/microsoft.graph.users/get-mguserowneddevice)

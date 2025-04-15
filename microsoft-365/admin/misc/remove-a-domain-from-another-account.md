@@ -2,12 +2,12 @@
 title: "Remove a domain from another account"
 f1.keywords:
 - CSH
-ms.author: nkagole
-author: nataliekagole
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
-ms.date: 01/18/2022
+ms.date: 08/28/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
@@ -65,7 +65,7 @@ After you've become an admin for the unmanaged account, you can remove the domai
 
 ## Step 3: Verify domain ownership and become the admin
 
-1. After you complete Step 2, select the admin center icon in the left navigation pane (alternatively, go to a browser and type in `https://admin.microsoft.com`).
+1. After you complete Step 2, select the admin center icon in the left navigation pane (alternatively, go to a browser and type in `https://admin.cloud.microsoft`).
 
     You're redirected to the admin takeover wizard.
 

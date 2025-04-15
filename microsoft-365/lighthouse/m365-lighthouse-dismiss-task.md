@@ -4,10 +4,10 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: shcallaw, kywirpel
+ms.reviewer: jatingupta
 ms.date: 08/11/2023
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
@@ -23,7 +23,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Dismiss a task in Microsoft 365 Lighthouse
 
-You can dismiss tasks from the deployment plan where a Managed Service Provider (MSP) chooses to accept the associated risk of not completing the task or to resolve the task through a third party or other alternate mitigation. The dismissal of a task doesn’t affect the configuration of the managed tenant. Once dismissed, Microsoft 365 Lighthouse will no longer detect configurations or report the deployment status for that task. Tasks can be dismissed or reinstated at any time.
+You can dismiss tasks from the deployment plan where a Managed Service Provider (MSP) chooses to accept the associated risk of not completing the task or to resolve the task through a third party or other alternate mitigation. The dismissal of a task doesn't affect the configuration of the managed tenant. Once dismissed, Microsoft 365 Lighthouse will no longer detect configurations or report the deployment status for that task. Tasks can be dismissed or reinstated at any time.
 
 ## Before you begin
 
@@ -41,7 +41,7 @@ Additionally, each partner tenant user must meet the following requirements:
 
 ## Dismiss a task
 
-1. In the left navigation in Lighthouse, select **Tenants**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Tenants**.
 
 2. Select the appropriate tenant from the list.
 

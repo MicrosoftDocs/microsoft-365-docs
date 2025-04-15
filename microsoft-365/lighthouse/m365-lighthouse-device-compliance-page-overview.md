@@ -4,10 +4,10 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: kwirpel
+ms.reviewer: prpath
 ms.date: 10/27/2023
 audience: Admin
-ms.topic: article
+ms.topic: concept-article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
@@ -15,6 +15,7 @@ ms.collection:
 - scotvorg
 - M365-subscription-management
 - Adm_O365
+- essentials-manage
 ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse                         

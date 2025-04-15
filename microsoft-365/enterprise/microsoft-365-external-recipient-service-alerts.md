@@ -3,10 +3,11 @@ title: "Service advisories for messages pending delivery to external recipients"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/20/2021
+ms.date: 08/02/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -14,6 +15,7 @@ ms.collection:
 - scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
+- must-keep
 ms.custom: 
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
@@ -27,7 +29,7 @@ ROBOTS: NOINDEX
 
 This advisory informs you of mail queuing to external recipients outside of Exchange Online. Many of these advisories require actions outside of Microsoft and provide administrators with the information needed to remediate.
 
-These advisories are displayed in the Microsoft 365 admin center. To view these advisories, go to **Health** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">**Service health**</a> > **Exchange Online** and then click the **Active issues** tab. The name for these service alerts is "Message Queueing to External Recipients Above Thresholds".
+These advisories are displayed in the Microsoft 365 admin center. To view these advisories, go to **Health** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">**Service health**</a> > **Exchange Online** and then select the **Active issues** tab. The name for these service alerts is "Message Queueing to External Recipients Above Thresholds".
 
 ![Service alert for messages pending delivery to external recipients displayed in the Exchange Online monitoring dashboard.](../media/microsoft-365-exchange-monitoring/ExternalRecipientsServiceAlerts1.png)
 
@@ -37,7 +39,7 @@ When you double-click the service alert, a flyout page similar to the following 
 
 ## What do these service advisories indicate?
 
-This service advisory informs you of messages destined to recipients outside Exchange Online may be delayed. Queueing may be caused by your on-premises environment or third-party messaging\journaling solution. Reasons for queueing may be caused by, but are not limited to:
+This service advisory informs you of messages destined to recipients outside Exchange Online might be delayed. Queueing might be caused by your on-premises environment or third-party messaging\journaling solution. Reasons for queueing might be, but aren't limited to:
 
 - DNS changes
 

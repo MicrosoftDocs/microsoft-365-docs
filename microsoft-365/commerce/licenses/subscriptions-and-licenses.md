@@ -7,8 +7,9 @@ ms.author: cmcatee
 manager: scotv
 ms.reviewer: shegu, nicholak
 audience: Admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
 ms.collection: 
 - Tier1
@@ -23,7 +24,7 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: "Learn the difference between subscriptions and licenses, who can assign licenses, and what happens when you assign a license in  Microsoft 365 for business."
-ms.date: 10/11/2023
+ms.date: 01/06/2025
 ---
 
 # Understand subscriptions and licenses in Microsoft 365 for business
@@ -32,7 +33,7 @@ When you buy a subscription to Microsoft 365 for business, you sign up for a set
 
 When you buy a subscription, you specify the number of licenses that you need, based on how many people you have in your organization. After you buy a subscription, you create accounts for people in your organization, and then assign a license to each person. As your organizational needs change, you can buy more licenses to accommodate new people, or reassign licenses to other users when someone leaves your organization.
 
-If you have more than one subscription, you can assign licenses to different people for each subscription. For example, you can assign all of your users to all Microsoft 365 apps and services as part of a Microsoft 365 Business Standard subscription. You can also assign a subset of users to Visio Online through a separate Visio subscription.
+If you have more than one subscription, you can assign licenses to different people for each subscription. For example, you can assign all of your users to all Microsoft 365 productivity apps and services as part of a Microsoft 365 Business Standard subscription. You can also assign a subset of users to Visio Online through a separate Visio subscription.
 
 ## How many devices can people install Microsoft 365 on?
 
@@ -67,7 +68,7 @@ The following table lists what automatically happens when you assign a license t
 |Exchange Online|A mailbox is created for that person. <br/> To learn about the SLA for this task to be completed, see ["Setting up..." messages in the Microsoft 365 admin center](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center).|
 |SharePoint Online|Edit permissions to the default SharePoint Online team site are assigned to that person.|
 |Microsoft Teams|The person has access to the features associated with the license.|
-|Microsoft 365 Apps for enterprise and Microsoft 365 Apps for business|The person can download Microsoft 365 apps on up to five Macs or PCs, five tablets, and five smartphones.|
+|Microsoft 365 Apps for enterprise and Microsoft 365 Apps for business|The person can download Microsoft 365 Apps on up to five Macs or PCs, five tablets, and five smartphones.|
 
 ## Understand licenses for nonuser mailboxes
 
@@ -92,5 +93,4 @@ Different types of admins can work with licenses in different ways, depending on
 ## Related content
 
 [Buy or remove licenses for your business subscription](buy-licenses.md) (article)\
-[Assign or unassign licenses for users in the Microsoft 365 admin center](../../admin/manage/assign-licenses-to-users.md) (article)\
-[Remove a license from a shared mailbox](../../admin/email/remove-license-from-shared-mailbox.md) (article)
+[Assign or unassign licenses for users in the Microsoft 365 admin center](../../admin/manage/assign-licenses-to-users.md) (article)

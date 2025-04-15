@@ -26,9 +26,10 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
-    - title: Set up your infrastructure for hybrid work
-      itemType: how-to-guide
-      url: solutions/empower-people-to-work-remotely.md
+    - title: Microsoft 365 Copilot
+      itemType: get-started
+      url: /copilot/microsoft-365/
+    # Card
     - title: Remote learning with Microsoft Teams
       itemType: get-started
       url: /MicrosoftTeams/remote-learning-edu
@@ -36,9 +37,18 @@ highlightedContent:
     - title: Build your skills with Microsoft Learn training
       itemType: learn
       url: /training/m365/
+    # Card
     - title: Get your small business started with Microsoft 365
       itemType: quickstart
       url: business-video/index.yml
+    # Card
+    - title: Set up your infrastructure for hybrid work
+      itemType: how-to-guide
+      url: solutions/empower-people-to-work-remotely.md
+    # Card
+    - title: Learn from the experts - skill up for the era of AI at the Microsoft 365 Community Conference
+      itemType: whats-new
+      url: https://aka.ms/MCAG/IPM/ML25002B
 
 # conceptualContent section (optional)
 conceptualContent:
@@ -58,6 +68,12 @@ conceptualContent:
             - url: frontline/index.yml
               itemType: get-started
               text: Microsoft 365 for frontline workers
+            - url: archive/index.yml
+              itemType: overview
+              text: Microsoft 365 Archive
+            - url: backup/index.yml
+              itemType: overview
+              text: Microsoft 365 Backup
             - url: business-premium/index.yml
               itemType: get-started
               text: Microsoft 365 Business Premium
@@ -67,6 +83,9 @@ conceptualContent:
             - url: /office/troubleshoot
               itemType: reference
               text: Troubleshooting and support
+            - url: /microsoft-365/services/
+              itemType: overview
+              text: Microsoft 365 pay-as-you-go services
         # Card
         - title: Products
           links:
@@ -88,27 +107,33 @@ conceptualContent:
             - url: /Exchange/exchange-online
               itemType: overview
               text: Exchange Online
-            - url: https://adoption.microsoft.com/outlook-mobile/
-              itemType: overview
-              text: Outlook for iOS and Android
             - url: /office365/planner
               itemType: overview
               text: Planner
+            - url: /microsoft-365/places
+              itemType: overview
+              text: Microsoft Places
         # Card
         - title: Microsoft 365 Apps and Office
           links:
-            - url: /DeployOffice/plan-microsoft-365-apps
+            - url: /microsoft-365-apps/deploy/plan-microsoft-365-apps
               itemType: get-started
               text: Microsoft 365 Apps
-            - url: /DeployOffice/mac
+            - url: /microsoft-365-apps/mac/deployment-guide-for-office-for-mac
               itemType: how-to-guide
               text: Office for Mac
-            - url: /DeployOffice/ltsc2021/overview
+            - url: /office/ltsc/2024/overview
               itemType: overview
-              text: Office LTSC 2021
+              text: Office LTSC 2024
+            - url: /microsoft-365-apps/outlook/overview-new-outlook
+              itemType: overview
+              text: Outlook for Windows
+            - url: https://adoption.microsoft.com/outlook-mobile/
+              itemType: overview
+              text: Outlook for iOS and Android
           # footerLink (optional)
           footerLink:
-            url: /DeployOffice
+            url: /microsoft-365-apps
             text: See more
         # Card
         - title: Solutions for your business
@@ -214,6 +239,11 @@ tools:
       # imageSrc should be square in ratio with no white space
       imageSrc: /office/media/icons/deploy-blue.svg
       url: /microsoft-365/fasttrack/
+    # Card
+    - title: Microsoft 365 service adoption framework
+      # imageSrc should be square in ratio with no white space
+      imageSrc: /office/media/icons/users-group.svg
+      url: /training/paths/m365-service-adoption/
     # Card
     - title: Microsoft 365 Community Content
       imageSrc: /office/media/icons/blog-site-blue.svg

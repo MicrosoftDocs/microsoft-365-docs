@@ -5,9 +5,9 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
-ms.date: 06/21/2023
+ms.date: 05/28/2024
 audience: Admin
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
@@ -18,6 +18,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
+- must-keep
 search.appverid:
 - MET150
 - MOE150
@@ -29,7 +30,7 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 - adminvideo
-description: "Now that you've set up Microsoft 365, learn how to install individual Microsoft 365 apps on your Mac, PC, or mobile devices."
+description: "Now that you've set up Microsoft 365, learn how to install individual apps on your Mac, PC, or mobile devices."
 ---
 
 # Install Microsoft 365 apps
@@ -38,19 +39,19 @@ Check out all of our small business content on [Small business help & learning](
 
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
-Now that you've set up Microsoft 365, you can install individual Microsoft 365 apps on your Mac, PC, or mobile devices.
+Now that you've set up Microsoft 365, you can install individual apps on your Mac, PC, or mobile devices.
   
 ## Watch: Install Microsoft 365 apps
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1?autoplay=false]
+> [!VIDEO dc089097-90e3-4e20-a10b-985e58240101]
 
-Microsoft 365 apps can be found on your  **Start** menu. If you don't see them, you can install them yourself.
+Microsoft 365 productivity apps can be found on your  **Start** menu. If you don't see them, you can install them yourself.
 
 1. Go to microsoft365.com. You might need to sign in with your work account.
-2. Select  **Install apps**, then select **Microsoft 365 apps**. 
-1. Open the file that is downloaded to your **Downloads** folder. 
+1. Select **Install and more**, then select **Install Microsoft 365 apps**.
+1. Open the file that is downloaded to your **Downloads** folder.
 1. On the **Do you want to allow this app to make changes to your device** page, select **Yes** to begin installation.
-1. The Microsoft 365 apps are installed. The process may take several minutes. When it completes, select  **Close**.
+1. The Microsoft 365 productivity apps are installed. The process may take several minutes. When it completes, select  **Close**.
 
 ## Next steps
 

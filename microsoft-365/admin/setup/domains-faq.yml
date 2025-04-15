@@ -1,11 +1,11 @@
 ### YamlMime:FAQ
 metadata:
-  ms.date: 09/22/2023
+  ms.date: 11/18/2024
   title: Domains Frequently Asked Questions
   f1.keywords:
   - NOCSH
-  ms.author: nkagole
-  author: nataliekagole
+  ms.author: kvice
+  author: kelleyvice-msft
   manager: scotv
   audience: Admin
   ms.topic: faq
@@ -59,7 +59,7 @@ sections:
               
       - question: How can I validate SPF records for my domain?
         answer: |
-          It's important that you have or create **only one TXT record for SPF**. If you already have an SPF record, you should append the new Microsoft 365 values to it, rather than create a new one. After you've added or updated your SPF record for Microsoft email, you should check to make sure that the syntax is correct with one of these tools: 
+          It's important that you have or create **only one TXT record for SPF**. If you already have an SPF record, you should append the new Microsoft 365 values to it, rather than create a new one. After you add or update your SPF record for Microsoft Email, you should check to make sure that the syntax is correct with one of these tools: 
             
           - [SPF Record Testing Tools](http://www.kitterman.com/spf/validate.html)
               
@@ -71,13 +71,13 @@ sections:
         answer: |
           A domain is a unique name that appears after the **@** sign in email addresses, and after **www.** in web addresses. It typically takes the form of your organization's name and a standard Internet suffix, such as *yourbusiness.com* or *stateuniversity.edu.* 
             
-          Using a custom domain like "**rob\@contoso.com**" with Microsoft 365 can help build credibility and recognition for your brand. 
+          Using a custom domain like "**rob\@contoso.com**" with Microsoft 365 can help build credibility and recognition for your brand. It may also enhance your email reputation, depending on our email provider reducing the likelihood of your emails being marked as "spam".
             
-          You can [buy a domain in Microsoft 365 and we'll set it up automatically](../get-help-with-domains/buy-a-domain-name.md), or you can buy or bring one you already own from a domain registrar.
+          You can [buy a domain in Microsoft 365 and we will set it up automatically](../get-help-with-domains/buy-a-domain-name.md), or you can buy or bring one you already own from a domain registrar.
           
       - question: Is it possible to connect a domain with Personal or Family offerings?
         answer: |
-           As a benefit of your Microsoft 365 Family or Microsoft 365 Personal subscription, you can create a personalized email address that's associated with your Outlook.com mailbox, for example, yourname@example.com. At the moment, we only support connecting domains managed by GoDaddy with Outlook.com. For more information, see [Get a personalized email address in Microsoft 365](https://support.microsoft.com/office/get-a-personalized-email-address-in-microsoft-365-75416a58-b225-4c02-8c07-8979403b427b).
+           As a benefit of your Microsoft 365 Family or Microsoft 365 Personal subscription, you can create a personalized email address that is associated with your Outlook.com mailbox, for example, yourname@example.com. At the moment, we only support connecting domains managed by GoDaddy with Outlook.com. For more information, see [Get a personalized email address in Microsoft 365](https://support.microsoft.com/office/get-a-personalized-email-address-in-microsoft-365-75416a58-b225-4c02-8c07-8979403b427b).
               
       - question: What happens if my DNS provider doesn't support certain record types?
         answer: |
@@ -85,6 +85,8 @@ sections:
             
           Providers that support all required DNS records:
             
+          - Aruba.it
+          
           - Cloudflare
                     
           - Dynadot
@@ -115,7 +117,7 @@ sections:
             
       - question: How do I set or change the default domain in Microsoft 365?
         answer: |
-          You must have at least one custom domain that you've added to Microsoft 365 before you can choose a default domain.
+          You must have at least one custom domain that adds to Microsoft 365 before you can choose a default domain.
           
           ::: moniker range="o365-worldwide"
           
@@ -129,13 +131,13 @@ sections:
           
           ::: moniker-end
               
-          2. On the **Domains** page, select the domain you want to set as the default for new email addresses. 
+          1. On the **Domains** page, select the domain you want to set as the default for new email addresses. 
               
-          3. Select **Set as default**.
+          1. Select **Set as default**.
               
           ::: moniker range="o365-worldwide"
           
-          You cannot change the name of your initial *onmicrosoft.com* domain. 
+          For information about adding or replacing an onmicrosoft.com domain, see [Add or replace your onmicrosoft.com domain](/admin/setup/add-or-replace-your-onmicrosoftcom-domain).
           
           ::: moniker-end
           
@@ -146,8 +148,8 @@ sections:
           ::: moniker-end
           
           > [!NOTE]
-          > Changing the default domain does not impact user credentials or their access to applications or services. Changing the domain that a user is associated with will impact mail, online storage, and login credentials.
-          
+          > Changing the default domain affects new accounts only. This change does not impact user credentials or their access to applications or services. Removing or changing a domain on an account can impact mail, online storage, and login credentials.
+
       - question: Can I add custom subdomains or multiple domains to Microsoft 365?
         answer: |
           ::: moniker range="o365-worldwide"
@@ -158,7 +160,7 @@ sections:
           
           ::: moniker range="o365-21vianet"
           
-          Yes! To add subdomains, you must manage your own DNS settings at your registrar's website. If you are letting 21Vianet manage your DNS settings with NS records, you can't add subdomains.
+          Yes! To add subdomains, you must manage your own DNS settings at your registrar's website. If you are letting 21Vianet manage your DNS settings with NS records, you cannot add subdomains.
           
           ::: moniker-end
           
@@ -168,7 +170,7 @@ sections:
             
           When you add a subdomain, it is automatically verified based on the parent domain that is being verified.
             
-          When you add multiple domains to Microsoft 365, you can host any of the services (like email) on any of the domains you've added. *When you change your email to Microsoft 365, by updating a domain's MX record, ALL email sent to that domain will start coming to Microsoft 365.* 
+          When you add multiple domains to Microsoft 365, you can host any of the services (like email) on any of the domains you add. *When you change your email to Microsoft 365, by updating a domain's MX record, ALL email sent to that domain will start coming to Microsoft 365. * 
            
           ::: moniker range="o365-worldwide"
           
@@ -180,7 +182,7 @@ sections:
         answer: |
           For the procedure to transfer a domain, see [Transfer a domain from Microsoft to another host](../get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host.md).
           
-      - question: Pilot Microsoft 365 from my custom domain
+      - question: How do I pilot Microsoft 365 from my custom domain?
         answer: |
           For the procedure to pilot Microsoft 365 email functionality from a custom domain to a Microsoft 365 mailbox, see [Pilot Microsoft 365 from my custom domain](../misc/pilot-microsoft-365-from-my-custom-domain.md).
           
@@ -188,17 +190,15 @@ sections:
         answer: |
           Microsoft 365 creates a domain for you, like *contoso.onmicrosoft.com*, when you sign up with the service. The user ID that you create when you sign up includes the domain, like *alan@contoso.onmicrosoft.com*. 
             
-           **If you want to have your email look like *alan\@contoso.com*:** [buy the domain](../get-help-with-domains/buy-a-domain-name.md) or just follow the steps in [Add your users and domain to Microsoft 365](add-domain.md) if you own it already. 
+          **If you want to have your email look like *alan\@contoso.com*:** [buy the domain](../get-help-with-domains/buy-a-domain-name.md) or just follow the steps in [Add your users and domain to Microsoft 365](add-domain.md) if you own it already. 
             
-          - **You can replace your onmicrosoft.com domain after sign-up.** While you can’t rename or remove an existing onmicrosoft.com domain, you can [create a new one and make it your default onmicrosoft.com domain (your “fallback domain”)](add-or-replace-your-onmicrosoftcom-domain.md). For example, if the initial domain you chose was *fourthcoffee.onmicrosoft.com*, if needed you can create a new onmicrosoft.com domain called *fourthcoffeecorp.onmicrosoft.com* and set it to be your fallback domain. 
+          - **You can replace your onmicrosoft.com domain after sign-up.** While you can’t rename or remove an existing onmicrosoft.com domain, you can [create a new one and make it your default onmicrosoft.com domain (your "fallback domain")](add-or-replace-your-onmicrosoftcom-domain.md). For example, if the initial domain you chose was *fourthcoffee.onmicrosoft.com*, if needed you can create a new onmicrosoft.com domain called *fourthcoffeecorp.onmicrosoft.com* and set it to be your fallback domain. 
                             
-          - **You might not be able to change your SharePoint domain name.** Your SharePoint domain name is based on your onmicrosoft.com domain name. The ability to [change the SharePoint domain name](/sharepoint/change-your-sharepoint-domain-name) is available in public preview for organizations whose total SharePoint sites and OneDrive accounts number fewer than 1000.
+          - **You might not be able to change your SharePoint domain name.** Your SharePoint domain name is based on your onmicrosoft.com domain name. The ability to [change the SharePoint domain name](/sharepoint/change-your-sharepoint-domain-name) is available for organizations whose total number of SharePoint sites and OneDrive accounts is fewer than 10,000. If you have more sites than that, a limited invite-based preview is available.
               
           - **You can't remove your onmicrosoft.com domain.** Microsoft 365 needs to keep it around because it's used behind the scenes for your subscription. But you don't have to use the domain yourself after you've added a custom domain. If you choose to create a new onmicrosoft.com domain, it cannot be removed. You are limited to five onmicrosoft.com domains in your Microsoft 365 environment, so make sure to check for spelling and to assess your need if you choose to create a new one. 
               
           You can keep using the initial onmicrosoft.com domain even after you add your domain. It still works for email and other services, so it's your choice.
-           
-                        
           
       - question: How do I verify my nonprofit or education status?
         answer: |
@@ -206,9 +206,9 @@ sections:
               
           2. To become the admin for your school, select the **Become an admin** option in Microsoft 365. 
               
-          3. You'll be prompted to add a TXT DNS record at the DNS host website for your domain. Why? Because by signing in at the DNS host and adding a record for your domain, you prove to Microsoft 365 that you own the domain name.
+          3. Follow the prompt to add a TXT DNS record at the DNS host website for your domain. Why? Because by signing in at the DNS host and adding a record for your domain, you prove to Microsoft 365 that you own the domain name.
               
-          4. After you add the record, you'll go back to the Microsoft 365 portal and confirm that you've added it, so Microsoft 365 can check.
+          4. After you add the record, you'll go back to the Microsoft 365 portal and confirm that you added it, so Microsoft 365 can check.
               
           Have a nonprofit and want to get Microsoft 365? [Make sure your organization qualifies](https://www.microsoft.com/nonprofits/eligibility) and then sign up for the service. 
             
@@ -217,7 +217,7 @@ sections:
 
       - question: How can I create a website for my business?
         answer: |
-         Watch a <a href="https://www.microsoft.com/videoplayer/embed/4839abc6-9323-4cbf-a79d-2907235f9ebb?autoplay=false" target="_blank">short video: Create your business website</a> about using a web hosting provider to create a website for your domain.
+         Watch a <a href="https://learn-video.azurefd.net/vod/player?id=d89ace24-5e06-4858-81bf-512300be5d78" target="_blank">short video: Create your business website</a> about using a web hosting provider to create a website for your domain.
 
          Microsoft 365 does not include a public website for your business. To set one up, consider using a web hosting company like GoDaddy, Wix, or WordPress.
           1. Search for a web hosting provider where you can build your website.
@@ -228,4 +228,4 @@ sections:
           
           4. To integrate the website with Microsoft 365, you can add your business email to the website and a link to Microsoft Teams, SharePoint, or other collaboration tool.
           
-          5. Make sure to connect your website to your domain name, which you&#39;re also using for email on Microsoft 365.
+          5. Make sure to connect your website to your domain name, which you're also using for email on Microsoft 365.

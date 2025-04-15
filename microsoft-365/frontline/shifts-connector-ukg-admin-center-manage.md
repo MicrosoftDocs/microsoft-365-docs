@@ -1,9 +1,9 @@
 ---
-title: Use the Microsoft 365 admin center to manage your Shifts connection to UKG Pro Workforce Management (Preview)
+title: Use the Microsoft 365 admin center to manage your Shifts connection to UKG Pro Workforce Management
 author: lana-chin
-ms.author: v-chinlana
-manager: serdars
-ms.reviewer: imarquesgil
+ms.author: jtremper
+manager: jtremper
+ms.reviewer: harrywong
 ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
@@ -17,16 +17,16 @@ ms.collection:
 appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 10/2/2023
+ms.date: 12/20/2024
 ---
 
-# Use the Microsoft 365 admin center to manage your Shifts connection to UKG Pro Workforce Management (Preview)
+# Use the Microsoft 365 admin center to manage your Shifts connection to UKG Pro Workforce Management
 
 ## Overview
 
-The [Microsoft Teams Shifts connector for UKG Pro Workforce Management](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-pro-workforce-management) (Preview) enables you to integrate the Shifts app in Microsoft Teams with UKG Pro Workforce Management (UKG Pro WFM). Your frontline workers can seamlessly view and manage their schedules in UKG Pro WFM from within Shifts.
+The [Microsoft Teams Shifts connector for UKG Pro Workforce Management](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-pro-workforce-management) enables you to integrate the Shifts app in Microsoft Teams with UKG Pro Workforce Management (UKG Pro WFM). Your frontline workers can seamlessly view and manage their schedules in UKG Pro WFM from within Shifts.
 
-You can use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) (Preview) in the Microsoft 365 admin center or [PowerShell](shifts-connector-ukg-powershell-setup.md) to create a connection and connection instances. After they're set up, you can manage them in the Microsoft 365 admin center. The Connector Management Console page lists each connection and connection instance that you've set up, along with information such as health status and sync interval details. You can also access the wizard to create a new connection and connection instances or make changes to any of your existing ones. Select the name of a connection instance to view the details of any errors.
+You can use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) in the Microsoft 365 admin center or [PowerShell](shifts-connector-ukg-powershell-setup.md) to create a connection and connection instances. After they're set up, you can manage them in the Microsoft 365 admin center. The Connector Management Console page lists each connection and connection instance that you've set up, along with information such as health status and sync interval details. You can also access the wizard to create a new connection and connection instances or make changes to any of your existing ones. Select the name of a connection instance to view the details of any errors.
 
 > [!NOTE]
 > You can also use PowerShell to manage a connection. For example, you can view an error report, change connection settings, and disable sync. To learn more, see [Use PowerShell to manage your Shifts connection to UKG Pro Workforce Management](shifts-connector-ukg-powershell-manage.md).

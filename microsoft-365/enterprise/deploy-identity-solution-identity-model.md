@@ -4,9 +4,10 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 audience: Admin
-ms.date: 09/30/2020
+ms.date: 09/25/2024
 ms.topic: overview
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 ms.collection:
 - scotvorg
@@ -17,6 +18,7 @@ ms.collection:
 - m365solution-scenario
 - zerotrust-solution
 - highpri
+- must-keep
 f1.keywords:
 - CSH
 ms.custom:
@@ -40,7 +42,7 @@ Before you begin, watch this video for an overview of identity models and authen
 
 <p> </p>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=38a0c805-da7b-432c-aa86-747fc3dc2ccb]
 
 Your first planning choice is your cloud identity model.
 
@@ -69,6 +71,7 @@ Here are the basic components of cloud-only identity.
 Both on-premises and remote (online) users use their Microsoft Entra user accounts and passwords to access Microsoft 365 cloud services. Microsoft Entra authenticates user credentials based on its stored user accounts and passwords.
 
 ### Administration
+
 Because user accounts are only stored in Microsoft Entra ID, you manage cloud identities with tools such as the [Microsoft 365 admin center](/admin) and [Windows PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md).
 
 ## Hybrid identity
@@ -92,9 +95,8 @@ The Microsoft Entra tenant has a copy of the AD DS accounts. In this configurati
 
 Depending on your business needs and technical requirements, the hybrid identity model and directory synchronization is the most common choice for enterprise customers who are adopting Microsoft 365. Directory synchronization allows you to manage identities in your Active Directory Domain Services (AD DS) and all updates to user accounts, groups, and contacts are synchronized to the Microsoft Entra tenant of your Microsoft 365 subscription.
 
->[!Note]
->When AD DS user accounts are synchronized for the first time, they are not automatically assigned a Microsoft 365 license and cannot access Microsoft 365 services, such as email. You must first assign them a usage location. Then, assign a license to these user accounts, either individually or dynamically through group membership.
->
+> [!NOTE]
+> When AD DS user accounts are synchronized for the first time, they are not automatically assigned a Microsoft 365 license and cannot access Microsoft 365 services, such as email. You must first assign them a usage location. Then, assign a license to these user accounts, either individually or dynamically through group membership.
 
 #### Authentication for hybrid identity
 
@@ -120,10 +122,9 @@ There are two types of managed authentication:
 
   Microsoft Entra ID has AD DS perform the authentication.
 
-
 ##### Password hash synchronization (PHS)
 
-With PHS, you synchronize your AD DS user accounts with Microsoft 365 and manage your users on-premises. Hashes of user passwords are synchronized from your AD DS to Microsoft Entra ID so that the users have the same password on-premises and in the cloud. This is the simplest way to enable authentication for AD DS identities in Microsoft Entra ID. 
+With PHS, you synchronize your AD DS user accounts with Microsoft 365 and manage your users on-premises. Hashes of user passwords are synchronized from your AD DS to Microsoft Entra ID so that the users have the same password on-premises and in the cloud. This is the simplest way to enable authentication for AD DS identities in Microsoft Entra ID.
 
 ![Password hash synchronization (PHS).](../media/plan-for-directory-synchronization/phs-authentication.png)
 
@@ -133,22 +134,22 @@ See [choosing the right authentication method](/azure/active-directory/hybrid/ch
   
 ##### Pass-through authentication (PTA)
 
-PTA provides a simple password validation for Microsoft Entra authentication services using a software agent running on one or more on-premises servers to validate the users directly with your AD DS. With PTA, you synchronize AD DS user accounts with Microsoft 365 and manage your users on-premises. 
+PTA provides a simple password validation for Microsoft Entra authentication services using a software agent running on one or more on-premises servers to validate the users directly with your AD DS. With PTA, you synchronize AD DS user accounts with Microsoft 365 and manage your users on-premises.
 
 ![Pass-through authentication (PTA).](../media/plan-for-directory-synchronization/pta-authentication.png)
 
-PTA allows your users to sign in to both on-premises and Microsoft 365 resources and applications using their on-premises account and password. This configuration validates users passwords directly against your on-premises AD DS without storing password hashes in Microsoft Entra ID. 
+PTA allows your users to sign in to both on-premises and Microsoft 365 resources and applications using their on-premises account and password. This configuration validates users passwords directly against your on-premises AD DS without storing password hashes in Microsoft Entra ID.
 
-PTA is also for organizations with a security requirement to immediately enforce on-premises user account states, password policies, and logon hours. 
+PTA is also for organizations with a security requirement to immediately enforce on-premises user account states, password policies, and logon hours.
   
 See [choosing the right authentication method](/azure/active-directory/hybrid/choose-ad-authn) to learn more.
   
 ##### Federated authentication
 
-Federated authentication is primarily for large enterprise organizations with more complex authentication requirements. AD DS identities are synchronized with Microsoft 365 and users accounts are managed on-premises. With federated authentication, users have the same password on-premises and in the cloud and they do not have to sign in again to use Microsoft 365. 
+Federated authentication is primarily for large enterprise organizations with more complex authentication requirements. AD DS identities are synchronized with Microsoft 365 and users accounts are managed on-premises. With federated authentication, users have the same password on-premises and in the cloud and they do not have to sign in again to use Microsoft 365.
 
 Federated authentication can support additional authentication requirements, such as smartcard-based authentication or a third-party multi-factor authentication and is typically required when organizations have an authentication requirement not natively supported by Microsoft Entra ID.
- 
+
 See [choosing the right authentication method](/azure/active-directory/hybrid/choose-ad-authn) to learn more.
   
 For third-party authentication and identity providers, on-premises directory objects may be synchronized to Microsoft 365 and cloud resource access that are primarily managed by a third-party identity provider (IdP). If your organization uses a third-party federation solution, you can configure sign-on with that solution for Microsoft 365 provided that the third-party federation solution is compatible with Microsoft Entra ID.

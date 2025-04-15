@@ -5,9 +5,9 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 09/14/2023
+ms.date: 10/01/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
@@ -49,7 +49,7 @@ The **Priority account protection** feature that's described in this topic is av
 The **Exchange Online priority account monitoring** and **Premium mail flow monitoring** features that are described in this topic is available only to organizations that meet the following requirements:
 
 - Your organization needs to have a license count of at least 5,000, from either one of, or a combination of the following products: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5. For example, your organization can have 3,000 Office 365 E3 licenses and 2,500 Microsoft 365 E5, for a total of 5,500 licenses from the qualifying products.
-- Your organization needs to have at least 50 monthly active users for one or more core workloads – Teams, OneDrive for Business, SharePoint Online, Exchange Online and Microsoft 365 apps.
+- Your organization needs to have at least 50 monthly active users for one or more core workloads – Teams, OneDrive for Business, SharePoint Online, Exchange Online and Microsoft 365 productivity apps.
 
 > [!NOTE]
 > You can monitor up to 250 priority accounts.
@@ -76,7 +76,7 @@ You can also add priority accounts from the Active users page.
 
 Add priority accounts from the Active users page.
 
-1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.cloud.microsoft</a>.
 
 2. Go to **Users** > **Active users** and select the three dots (more actions) at the top of the page. Select **Manage priority accounts**.
 
@@ -86,7 +86,7 @@ Add priority accounts from the Active users page.
 
 ## Remove a user from the priority accounts list
 
-1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.cloud.microsoft</a>.
 
 2. Go to **Setup** > **Organizational knowledge**, and choose **View** under **Monitor your most important accounts**.
 

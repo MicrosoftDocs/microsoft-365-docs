@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 ms.date: 07/16/2021
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:

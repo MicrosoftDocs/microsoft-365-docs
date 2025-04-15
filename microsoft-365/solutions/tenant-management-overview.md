@@ -3,9 +3,9 @@ title: Tenant management for Microsoft 365 for enterprise
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/01/2020
+ms.date: 08/15/2024
 audience: ITPro
-ms.topic: article
+ms.topic: solution-overview
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
@@ -15,6 +15,7 @@ ms.collection:
 - m365solution-tenantmanagement
 - m365solution-overview
 - tenant-management
+- must-keep
 ms.custom:
 - Ent_Solutions
 description: "An overview of the planning, deployment, and ongoing operation of your Microsoft 365 tenants."
@@ -68,7 +69,7 @@ Here are the elements:
   - You are requiring secure user sign-in with passwordless or multi-factor authentication (MFA).
   - You have Conditional Access policies that enforce sign-in requirements and restrictions for higher levels of security.
 - On-premises Office servers and their data have been migrated to cloud apps or are being used in a hybrid configuration.
-- You are doing device management with Intune or Basic Mobility and Security built into Microsoft 365.
+- You are managing devices with Intune or Basic Mobility and Security built into Microsoft 365.
   - Your organization-owned devices are enrolled and managed.
   - The apps for personal devices are managed.
 
@@ -120,7 +121,7 @@ The following sections and table list the key capabilities and licensing for the
 
 |Capability or feature|Description|Licensing|
 |---|---|---|
-|Migrate to Windows 10|Migrate your devices that run Windows 7 or Windows 8.1 to Windows 10 Enterprise.|Windows 10 Enterprise licenses included with Microsoft 365 E3 or E5|
+|Migrate to Windows 11|Migrate your devices that run Windows 7, Windows 8.1, or Windows 10 to Windows 11 Enterprise.|Windows 11 Enterprise licenses included with Microsoft 365 E3 or E5|
 |Migrate to Microsoft 365 Apps for enterprise|Migrate your Office client apps such as Word and PowerPoint to the versions installed from the cloud that are updated with new features.|Microsoft 365 E3 or E5|
 |Migrate on-premises servers and data to Microsoft 365|Migrate your Exchange mailboxes, SharePoint sites, and Skype for Business Online to Microsoft 365 cloud services.|Microsoft 365 E3 or E5|
 ||||
@@ -146,5 +147,3 @@ Use these steps to set up and manage your Microsoft 365 tenants.
 [![The steps to deploy and manage a Microsoft 365 tenant.](../media/tenant-management-overview/tenant-management-step-grid.png)](tenant-management-tenants.md)
 
 Each step describes deployment options, summarizes the results, and ongoing maintenance tasks.
-
-To understand how a fictional but representative multi-national organization deployed the elements of their Microsoft 365 tenant, see the [Contoso case study](../enterprise/contoso-case-study.md).

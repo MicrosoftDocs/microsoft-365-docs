@@ -1,0 +1,20 @@
+name: (Scheduled) Mark stale pull requests
+
+permissions:
+  issues: write
+  pull-requests: write
+
+on:
+  schedule:
+  - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+jobs:
+  stale:
+    if: github.repository_owner == 'MicrosoftDocs'
+    uses: MicrosoftDocs/microsoft-365-docs/.github/workflows/Shared-Stale.yml@workflows-prod
+    with:
+      RunDebug: false
+      RepoVisibility: ${{ github.repository_visibility }}
+    secrets:
+      AccessToken: ${{ secrets.GITHUB_TOKEN }}

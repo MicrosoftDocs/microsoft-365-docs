@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 ms.date: 08/20/2021
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
@@ -54,7 +54,7 @@ To help protect against an attacker executing code as part of an attack:
 
 - Turn on [Microsoft Defender Antivirus](/mem/intune/user-help/turn-on-defender-windows).
 - [Block Win32 API calls from Office macros](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules#block-win32-api-calls-from-office-macros).
-- Migrate all legacy workbooks requiring Excel 4.0 macros to the updated VBA macro format using [this process](https://www.microsoft.com/microsoft-365/blog/2010/02/16/migrating-excel-4-macros-to-vba/).
+- Migrate all legacy workbooks requiring Excel 4.0 macros to the updated VBA macro format.
 - [Disable use of unsigned macros](https://support.microsoft.com/topic/enable-or-disable-macros-in-office-files-12b036fd-d140-4e74-b45e-16fed1a7e5c6). Ensure all internal macros with business need are signed and leveraging [trusted locations](/deployoffice/security/designate-trusted-locations-for-files-in-office) to ensure unknown macros will not run in your environment.
 - Stop malicious XLM or VBA macros by ensuring runtime macro scanning by [Antimalware Scan Interface](https://www.microsoft.com/security/blog/2021/03/03/xlm-amsi-new-runtime-defense-against-excel-4-0-macro-malware/) (AMSI) is on. This feature (enabled by default) is on if the Group Policy setting for **Macro Run Time Scan Scope** is set to **Enable for All Files** or **Enable for Low Trust Files**. Get the latest group policy template files.
 

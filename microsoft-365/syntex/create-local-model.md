@@ -1,31 +1,31 @@
 ---
-title: Create a model on a local SharePoint site with Microsoft Syntex
+title: Create a model for document processing on a local SharePoint site
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
-ms.date: 02/16/2023
+ms.date: 03/11/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to create a local model on a local SharePoint site with Microsoft Syntex.
+description: Learn how to create a local model for document processing on a local SharePoint site.
 ---
 
-# Create a model on a local SharePoint site with Microsoft Syntex
+# Create a model for document processing on a local SharePoint site
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
-Microsoft Syntex provides an option to create and train models locally on your own SharePoint site. These models can be used only on the site where they're created. 
+You can create and train models locally on your own SharePoint site. These models can be used only on the site where they're created.
 
 > [!NOTE]
 > If you want to make your model discoverable and available for other users, you need to [create an enterprise model](create-syntex-model.md). An enterprise model is a model that is created and trained in the [content center](create-a-content-center.md). Currently, information about [model usage analytics](model-usage-analytics.md) is only available for enterprise models.
 
-By activating document classification and extraction on your SharePoint site, Syntex lets you classify files in document libraries, extract information from new files, and automate activities based on extracted information.
+By activating document classification and extraction on your SharePoint site, you can classify files in document libraries, extract information from new files, and automate activities based on extracted information.
 
 When you activate local model creation, the following lists and libraries will be added to your site:
 
@@ -34,9 +34,9 @@ When you activate local model creation, the following lists and libraries will b
 - Explanation templates list
 - Model usage list
 
-A model is automatically promoted to the current site only when the model first has been applied to any library in the site. This makes the model discoverable in the list of available site models and available for any other library in the site. Until the model is applied to a library in the site, it is unavailable. Similarly, when a model is removed from all the libraries in the site, it is also removed from the list of available site models. 
+A model is automatically promoted to the current site only when the model first has been applied to any library in the site. This makes the model discoverable in the list of available site models and available for any other library in the site. Until the model is applied to a library in the site, it's unavailable. Similarly, when a model is removed from all the libraries in the site, it's also removed from the list of available site models.
 
-This feature is available for all [model types](model-types-overview.md). 
+This feature is available for all [model types](model-types-overview.md).
 
 ## Create a model on a local site
 
@@ -44,7 +44,7 @@ This feature is available for all [model types](model-types-overview.md).
 
     ![Screenshot of a SharePoint document library with the Classify and extract option highlighted.](../media/content-understanding/local-model-classify-and-extract-option.png) 
 
-2. The first time you use this feature, you're activating Syntex on your site. You'll see the following message.
+2. The first time you use this feature, you're activating Microsoft Syntex on your site. You'll see the following message.
 
     ![Screenshot of the Activate document classification and extraction infomation page.](../media/content-understanding/local-model-first-run-activate-message.png) 
 

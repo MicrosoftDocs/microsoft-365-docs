@@ -5,15 +5,17 @@ f1.keywords:
 - NOCSH
 ms.author: kvice
 manager: scotv
-ms.date: 09/13/2018
+ms.date: 09/06/2024
 audience: ITPro
-ms.topic: article
+ms.topic: concept-article
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 ms.collection: 
 - scotvorg
 - M365-subscription-management
 - Strat_O365_Enterprise
+- must-keep
 ms.custom:
 
 description: Understand the Contoso Corporation as a business and the tiered structure of its worldwide offices.
@@ -30,7 +32,7 @@ Figure 1 shows the headquarters office in Paris and regional hub and satellite o
 ![Contoso offices around the world.](../media/contoso-overview/contoso-overview-fig1.png)
 
 **Figure 1: Contoso offices around the world**
- 
+
 Contoso has three tiers of offices:
 
 - Headquarters
@@ -74,5 +76,3 @@ Learn about the Contoso Corporation [on-premises IT infrastructure](contoso-infr
 ## See also
 
 [Microsoft 365 for enterprise overview](microsoft-365-overview.md)
-
-[Test lab guides](m365-enterprise-test-lab-guides.md)

@@ -7,7 +7,7 @@ author: twernermsft
 manager: scotv
 ms.date: 08/10/2020
 audience: Admin
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
@@ -34,15 +34,15 @@ Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?l
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198101).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4JD2Y?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=fb358a9f-84fa-4911-a211-b8dd141fd5fc]
 
 To migrate email, calendar, and contacts from Google Workspace, you need to set up Microsoft 365 Business Premium with a temporary domain until your business domain is ready to be used with your subscription.
 
 1. Sign in to [office.com](https://office.com),  and choose **Admin**.
 1. In the Microsoft 365 admin center, choose **Go to guided setup**. 
-1. Optionally, install Microsoft 365 apps, then select **Continue**. 
+1. Optionally, install Microsoft 365 productivity apps, then select **Continue**. 
 1. Since you are migrating from Google Workspace, choose the default domain, and select **Use this domain**. 
-1. Enter your user’s names, and desired usernames, verify your email address so you can receive your user’s passwords,then select **Add users and assign licenses**. 
+1. Enter your user’s names, and desired usernames, verify your email address so you can receive your user’s passwords, then select **Add users and assign licenses**. 
 1. Enter the email addresses where your users will receive their new credentials, select **Send email and continue**.
 1. Then **Continue** again to connect your temporary domain. 
 1. Optionally choose to inform users in your organization about Teams, then select **Continue**.

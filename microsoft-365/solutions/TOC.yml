@@ -1,3 +1,4 @@
+items:
 - name: Microsoft 365 solution and architecture center
   href: index.yml
   displayName: Home
@@ -34,7 +35,7 @@
       items:
       - name: Overview
         href: manage-devices-with-intune-overview.md
-      - name: Step 1. Implement App Protection policies
+      - name: Step 1. Implement app protection policies
         href: manage-devices-with-intune-app-protection.md
       - name: Step 2. Enroll devices into management
         href: manage-devices-with-intune-enroll.md
@@ -84,8 +85,6 @@
             href: collaborate-guests-cross-cloud.md
           - name: Onboard trusted vendors
             href: trusted-vendor-onboarding.md
-          - name: Create a B2B extranet
-            href: b2b-extranet.md
           - name: Trust conditional access from other organizations
             href: trust-conditional-access-from-other-organizations.md
         - name: Limit sharing
@@ -393,23 +392,68 @@
         href: apps-config-step-6.md
       - name: Step 7. Verify app configuration
         href: apps-config-step-7.md        
+    - name: Secure and protect apps using Microsoft Intune
+      items: 
+      - name: Overview
+        href: apps-protect-overview.md
+      - name: Understand app data protection
+        href: apps-protect-data-protection.md
+      - name: Understand app protection access requirements
+        href: apps-protect-access-requirements.md
+      - name: Understand app protection conditional launch
+        href: apps-protect-conditional-launch.md
+      - name: Understand app protection health checks
+        href: apps-protect-health-checks.md
+      - name: Use the app protection framework
+        items: 
+        - name: App protection framework overview      
+          href: apps-protect-framework.md     
+        - name: Step 1. Apply basic data protection
+          href: apps-protect-step-1.md
+        - name: Step 2. Apply enhanced data protection
+          href: apps-protect-step-2.md
+        - name: Step 3. Apply high data protection
+          href: apps-protect-step-3.md
+        - name: Step 4. Understand app protection delivery
+          href: apps-protect-step-4.md
+        - name: Step 5. Verify and monitor app protection
+          href: apps-protect-step-5.md  
+        - name: Step 6. Use app protection actions
+          href: apps-protect-step-6.md
+    - name: Assign and deploy apps using Microsoft Intune
+      items: 
+      - name: Overview
+        href: apps-assign-overview.md
+      - name: Understand app management
+        href: apps-assign-management.md
+      - name: Understand app assignments
+        href: apps-assign-assignments.md
+      - name: Understand app deployment
+        href: apps-assign-deployment.md
+      - name: Assign apps to your organization
+        items: 
+        - name: Assign apps overview      
+          href: apps-assign-steps-overview.md     
+        - name: Step 1. Confirm users, devices, or groups
+          href: apps-assign-step-1.md
+        - name: Step 2. Assign apps to users, devices, or groups
+          href: apps-assign-step-2.md
+        - name: Step 3. Verify and monitor app assignments
+          href: apps-assign-step-3.md
+        - name: Step 4. Troubleshoot app deployment issues
+          href: apps-assign-step-4.md
 
-- name: Compliance
+- name: Data governance, data security, and risk and compliance
   items:
-  - name: Insider risk solutions in Microsoft Purview
-    href: ../compliance/insider-risk-solution-overview.md
-  - name: Auditing solutions
-    href: ../compliance/auditing-solutions-overview.md
-  - name: eDiscovery solutions in Microsoft 365
-    href: ../compliance/ediscovery.md
-  - name: Microsoft Purview eDiscovery (Premium)
-    href: ../compliance/overview-ediscovery-20.md
-  - name: Regulatory compliance FAQs and action plans
-    items: 
-    - name: CCPA - Frequently asked questions
-      href: /compliance/regulatory/ccpa-faq?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-    - name: GDPR - Recommended action plan
-      href: /compliance/regulatory/gdpr?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+  - name: Data governance solutions
+    href: /purview/data-governance-overview
+  - name: Data security solutions
+    href: /purview/purview-security
+  - name: Risk and compliance solutions
+    href: /purview/purview-compliance
+  - name: Microsoft Compliance resources
+    href: /compliance/
+
 
 - name: Security
   items:

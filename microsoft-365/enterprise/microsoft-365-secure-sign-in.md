@@ -5,10 +5,11 @@ f1.keywords:
 author: kelleyvice-msft
 ms.author: kvice
 manager: scotv
-ms.date: 09/30/2020
+ms.date: 10/22/2024
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 ms.collection: 
 - scotvorg
@@ -19,6 +20,7 @@ ms.collection:
 - m365solution-scenario
 - zerotrust-solution
 - highpri
+- must-keep
 ms.custom: 
 description: Require that your users sign in securely with multifactor authentication (MFA) and other features.
 ---
@@ -37,10 +39,9 @@ To increase the security of user sign-ins:
 
 ## Windows Hello for Business
 
-Windows Hello for Business in Windows 10 Enterprise replaces passwords with strong two-factor authentication when signing on a Windows device. The two factors are a new type of user credential that is tied to a device and a biometric or PIN.
+Windows Hello for Business in Windows 11 Enterprise replaces passwords with strong two-factor authentication when signing on a Windows device. The two factors are a new type of user credential that is tied to a device and a biometric or PIN.
 
 For more information, see [Windows Hello for Business Overview](/windows/security/identity-protection/hello-for-business/hello-overview).
-
 
 <a name='azure-ad-password-protection'></a>
 
@@ -67,10 +68,12 @@ There are three ways to require your users to use MFA based on your Microsoft 36
 |Microsoft 365 E5 (includes Microsoft Entra ID P2 licenses)     | Taking advantage of Microsoft Entra ID Protection, begin to implement Microsoft's recommended set of Conditional Access and related policies by creating these two policies:<br> - [Require MFA when sign-in risk is medium or high](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk) <br>- [High risk users must change password](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk-user)       |
 | | |
 
+You can find more information on managing MFA at [Multifactor authentication for Microsoft 365](/admin/security-and-compliance/multi-factor-authentication-microsoft-365).
+
 ### Security defaults
 
-Security defaults is a new feature for Microsoft 365 and Office 365 paid or trial subscriptions created after October 21, 2019. These subscriptions have security defaults turned on, which ***requires all of your users to use MFA with the Microsoft Authenticator app***.
- 
+**Security defaults** is a new feature for Microsoft 365 and Office 365 paid or trial subscriptions created after October 21, 2019. These subscriptions have security defaults turned on, which ***requires all of your users to use MFA with the Microsoft Authenticator app***.
+
 Users have 14 days to register for MFA with the Microsoft Authenticator app from their smart phones, which begins from the first time they sign in after security defaults has been enabled. After 14 days have passed, the user won't be able to sign in until MFA registration is completed.
 
 Security defaults ensure that all organizations have a basic level of security for user sign-in that is enabled by default. You can disable security defaults in favor of MFA with Conditional Access policies or for individual accounts.
@@ -83,9 +86,9 @@ Conditional Access policies are a set of rules that specify the conditions under
 
 - If the user account name is a member of a group for users that are assigned the Exchange, user, password, security, SharePoint, **Exchange admin**, **SharePoint admin**, or **Global admin** roles, require MFA before allowing access.
 
-This policy allows you to require MFA based on group membership, rather than trying to configure individual user accounts for MFA when they are assigned or unassigned from these administrator roles.
+This policy allows you to require MFA based on group membership, rather than trying to configure individual user accounts for MFA when they're assigned or unassigned from these administrator roles.
 
-You can also use Conditional Access policies for more advanced capabilities, such as requiring that the sign-in is done from a compliant device, such as your laptop running Windows 10.
+You can also use Conditional Access policies for more advanced capabilities, such as requiring that the sign-in is done from a compliant device, such as your laptop running Windows 11.
 
 Conditional Access requires Microsoft Entra ID P1 licenses, which are included with Microsoft 365 E3 and E5.
 
@@ -95,10 +98,10 @@ For more information, see the [overview of Conditional Access](/azure/active-dir
 
 Keep the following in mind:
 
-- You cannot enable security defaults if you have any Conditional Access policies enabled.
-- You cannot enable any Conditional Access policies if you have security defaults enabled.
+- You can't enable security defaults if you have any Conditional Access policies enabled.
+- You can't enable any Conditional Access policies if you have security defaults enabled.
 
-If security defaults are enabled, all new users are prompted for MFA registration and the use of the Microsoft Authenticator app. 
+If security defaults are enabled, all new users are prompted for MFA registration and the use of the Microsoft Authenticator app.
 
 This table shows the results of enabling MFA with security defaults and Conditional Access policies.
 
@@ -116,11 +119,11 @@ Zero Trust identity and device access settings and policies are recommended prer
 >Microsoft Entra ID Protection requires Microsoft Entra ID P2 licenses, which are included with Microsoft 365 E5.
 >
 
-Identity and device access policies are defined to be used in three tiers: 
+Identity and device access policies are defined to be used in three tiers:
 
 - Baseline protection is a minimum level of security for your identities and devices that access your apps and data.
 - Sensitive protection provides additional security for specific data. Identities and devices are subject to higher levels of security and device health requirements.
-- Protection for environments with highly regulated or classified data is for typically small amounts of data that are highly classified, contain trade secrets, or is subject to data regulations. Identities and devices are subject to much higher levels of security and device health requirements. 
+- Protection for environments with highly regulated or classified data is for typically small amounts of data that are highly classified, contain trade secrets, or is subject to data regulations. Identities and devices are subject to much higher levels of security and device health requirements.
 
 These tiers and their corresponding configurations provide consistent levels of protection across your data, identities, and devices.
 

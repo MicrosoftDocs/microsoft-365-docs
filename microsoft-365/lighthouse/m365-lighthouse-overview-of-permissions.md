@@ -4,10 +4,10 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: magarlan, chrigreen
-ms.date: 06/23/2023
+ms.reviewer: taylorau
+ms.date: 11/19/2024
 audience: Admin
-ms.topic: article
+ms.topic: concept-article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
@@ -15,76 +15,126 @@ ms.collection:
 - scotvorg
 - M365-subscription-management
 - Adm_O365
+- essentials-get-started
 ms.custom:
 - AdminSurgePortfolib
 - M365-Lighthouse                         
 search.appverid: MET150
-description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn more about Lighthouse permission requirements."
+description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn more about how permissions work in Lighthouse."
 ---
 
 # Overview of permissions in Microsoft 365 Lighthouse
 
-Delegated access to customer tenants is required for Managed Service Providers (MSPs) to use Microsoft 365 Lighthouse. Granular delegated admin privileges (GDAP) give MSPs a high level of control and flexibility by providing customer access through [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference). Assigning the least privileged roles by task through GDAP to MSP technicians reduces security risk for both MSPs and customers. For more information on least privileged roles by task, see [Least-privileged roles - Partner Center](/partner-center/gdap-least-privileged-roles-by-task) and [Least privileged roles by task in Microsoft Entra ID](/azure/active-directory/roles/delegate-by-task). For more information on setting up a GDAP relationship with a customer tenant, see [Obtain granular admin permissions to manage a customer's service - Partner Center.](/partner-center/gdap-obtain-admin-permissions-to-manage-customer)
+Microsoft 365 Lighthouse permissions are primarily managed by the following:
 
-We recommend assigning roles to groups of MSP technicians based on the tasks each group needs to perform on behalf of the customer. For example, Service Desk Technicians may just need to read customer tenant data or reset user passwords. In contrast, Escalation Engineers may need to take more corrective actions to update customer tenant security settings. It's a best practice to assign the least permissive role required to complete a task so that customer and partner data is kept secure. We recommend using Privileged Identity Management (PIM) to enable time-scoped access to the Global Administrator role, if needed. Giving too many users global access is a security risk, and we recommend limiting it as much as possible. For more information on how to enable PIM, see [Set up Microsoft Entra PIM.](m365-lighthouse-configure-portal-security.md#set-up-azure-ad-privileged-identity-management-pim)
+- Lighthouse role-based access control (RBAC) in the partner tenant
+- Granular delegated administrative privileges (GDAP) in the customer tenant
 
-The tables in the next section describe which GDAP roles grant permission to read customer data and take action on customer tenants in Lighthouse. See [Permissions in the partner tenant](#permissions-in-the-partner-tenant) in this article for additional roles required to manage Lighthouse entities (for example, tags and Lighthouse service requests).
+To use Lighthouse, you need a combination of roles assigned via RBAC and GDAP.
 
-## Example MSP service tiers, recommended GDAP roles, and permissions
+## Manage Lighthouse RBAC permissions in the partner tenant
 
-The following table lists the recommended GDAP roles for some example MSP service tiers. 
+Lighthouse permissions in the partner tenant are managed by assigning RBAC roles in Lighthouse. Each role has a set of permissions that determines which data users can access and change within the partner tenant. Lighthouse RBAC roles don't provide access to customer data. Access to customer data is governed by a Lighthouse user's GDAP permissions (see [Manage GDAP in the customer tenant](#manage-gdap-in-the-customer-tenant)).
 
-|| Account Managers| Service Desk Technicians | System Administrators | Escalation Engineers|
-|---|---|---|---|---|
-| **Recommended GDAP roles** |<ul><li>Helpdesk Administrator</li></ul> |<ul><li>Security Reader<br>+</li><li>Helpdesk Administrator</li></ul> |<ul><li>Global Reader<br>+</li><li>User Administrator<br>+</li><li>Authentication Administrator</li></ul> |<ul><li>Global Reader<br>+</li><li>User Administrator<br>+</li><li>Intune Administrator<br>+</li><li>Security Administrator</li></ul>|
+RBAC roles are managed from the **Lighthouse permissions** page in Lighthouse. To access the **Lighthouse permissions** page and manage permissions, you must hold one of the following roles:
 
-The following table lists the actions that the example MSP service tiers can perform on the different Lighthouse pages as determined by their assigned GDAP roles (which are indicated in the previous table).
+- Privileged Role Administrator in Microsoft Entra ID
+- Administrator in Lighthouse
 
-| Lighthouse page | Account Managers allowed actions| Service Desk Technicians allowed actions |System Administrators allowed actions | Escalation Engineers allowed actions|
-|---|---|---|---|---|
-| Home  | <ul><li>View all data</li></ul> | <ul><li>View all data</li></ul> | <ul><li>View all data</li></ul> | <ul><li>View all data</li></ul> | 
-| Tenants     | <ul><li>View tenants list</li><li>Update customer contacts and website</li><li>View deployment plans</li></ul>  | <ul><li>View tenants list</li><li>Update customer contacts and website</li><li>View deployment plans</li></ul>   |  <ul><li>View tenants list</li><li>Update customer contacts and website</li><li>View deployment plans</li><li>View Microsoft 365 services usage</li></ul> | <ul><li>View tenants list</li><li>Update customer contacts and website</li><li>View deployment plans</li><li>View Microsoft 365 services usage</li></ul>  |
-| Users   | <ul><li>View tenant level (non-user specific) data</li><li>Search user accounts across tenants</li><li>Reset password for non-administrators*</li></ul>  | <ul><li>View all user-specific data</li><li>Search user accounts across tenants</li><li>Reset password for non-administrators*</li></ul>|  <ul><li>View all user-specific data</li><li>Search user accounts across tenants</li><li>Reset password for non-administrators*</i><li>Block sign-in</li></ul>  | <ul><li>View all user-specific data</li><li>Search user accounts across tenants</li><li>Reset password for non-administrators*</li><li>Block sign-in</li><li>Confirm compromised users</li><li>Dismiss risk for users</li></ul> |
-| Devices    | <ul><li>View all data</li></ul> | <ul><li>View all data</li></ul> | <ul><li>View all data</li></ul> | <ul><li>View all data</li><li>Sync device</li><li>Restart device</li><li>Collect diagnostics</li></ul>|
-| Threat management  | <ul><li>View all data</li></ul> | <ul><li>View all data</li></ul> | <ul><li>View all data</li></ul> | <ul><li>View all data</li><li>Run full scan</li><li>Run quick scan</li><li>Update antivirus protection</li><li>Reboot device</li></ul>|
-| Baselines    | <ul><li>View all data</li></ul> | <ul><li>View all data</li></ul> | <ul><li>View all data</li></ul>  | <ul><li>View all data</li></ul> |
-| Windows 365 | <ul><li>View all data</li></ul> | <ul><li>View all data</li></ul> | <ul><li>View all data</li></ul> | <ul><li>View all data</li></ul> |
-| Service health**| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;N/A | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;N/A | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;N/A | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;N/A |
-| Audit logs**| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;N/A | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;N/A | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;N/A | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;N/A |
+To learn more, see [Manage Lighthouse RBAC permissions in Microsoft 365 Lighthouse](m365-lighthouse-manage-lighthouse-rbac-permissions.md).
 
-*See [Password reset permissions](/azure/active-directory/roles/permissions-reference#password-reset-permissions) for a table that lists which roles are required to reset passwords for customer tenant administrators.
+The following table provides an overview of each Lighthouse RBAC role. For a list of actions each role can perform in the partner tenant, see [Lighthouse RBAC roles and capabilities](#lighthouse-rbac-roles-and-capabilities). 
 
-**Different roles and permissions are required to view Service health and Audit logs. For more information, see [Permissions in the partner tenant](#permissions-in-the-partner-tenant).
+| Lighthouse&nbsp;RBAC&nbsp;role | Overview |
+|---|---|
+| Account Manager | Account Managers have full access to Sales Advisor pages and data across the entire partner tenant.<br><br>Account Managers can export Sales Advisor data. |
+| Administrator | Administrators have full administrative permissions in Lighthouse. <br><br>Administrators can manage RBAC and GDAP permissions, view audit logs, and create baselines, tags, and alerts.<br><br>Administrators are automatically assigned the Privileged Role Administrator, User Administrator, and Group Administrator roles in Microsoft Entra ID and the Admin Agent role in Partner Center. |
+| Author | Authors can manage tenants, tags, alert rules, and baselines to deploy tenant configurations. |
+| Operator | Operators manage customer tenants in Lighthouse based on the GDAP permissions assigned to them for each customer tenant that they manage.<br><br>Operators can view high-level customer tenant status and manage alerts.<br><br>Lighthouse users who hold at least one Microsoft Entra role are automatically assigned the Operator role.<br><br>**Note:** Lighthouse Administrators can use templates on the **Delegated access** page to assign GDAP permissions to Lighthouse users. |
+| Reader | Readers have read-only access to data in Lighthouse.<br><br>Lighthouse Readers can view high-level customer tenant status and alerts. |
 
-> [!NOTE]
-> If you get a message in Lighthouse saying that you don't have permission to view or edit information, you're assigned a role that doesn't have the appropriate permissions to perform the action. You'll need to reach out to an admin in your partner tenant who can assign you the appropriate role for the action you're trying to perform.
+## Lighthouse RBAC roles and capabilities
 
-## Delegated admin privileges (DAP) in Lighthouse
+The following table describes the actions that each Lighthouse RBAC role can perform in Lighthouse. For some actions, you need to hold a Microsoft Entra role in addition to a Lighthouse RBAC role. For other actions, only a Microsoft Entra role is required. Microsoft Entra role requirements are indicated in the last column of the table. For a complete list of Microsoft Entra roles and the actions they can perform, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference).
 
-GDAP will eventually replace DAP as the primary method to configure delegated access for customer tenants. However, if GDAP hasn't been set up, MSP technicians may still access Lighthouse by using the Helpdesk Agent or Admin Agent roles granted through DAP. For customers where GDAP and DAP coexist, roles granted to MSP technicians through GDAP take precedence. For more information on GDAP or DAP deprecation, see [GDAP frequently asked questions](/partner-center/gdap-faq) or the [Partner Center announcements](/partner-center/announcements/2022-march#15) for dates and timelines.
+| Area | Actions | Account&nbsp;Manager | Administrator | Author | Operator | Reader | Need Microsoft Entra&nbsp;role? |
+|---|---|:---:|:---:|:---:|:---:|:---:|:---:|
+| **Home page** | View data on cards |  |  |  |  |  | Yes |
+|  | Add users |  |  |  |  |  | Yes |
+|  | Reset password |  |  |  |  |  | Yes |
+|  | Offboard users |  |  |  |  |  | Yes |
+| **Alerts** | View alerts and alert rules | &check; | &check; | &check; |  | &check; | No |
+|  | Manage alerts (change severity, status, or assignment) |  | &check; | &check; |  |  | No |
+|  | Create, edit, and delete alert rules |  | &check; | &check; |  |  | No |
+| **Copilot insights** | View opportunities and adoption data |  |  |  |  |  | Yes|
+| **Tenants** | View the **Tenants** page | &check; | &check; | &check; | &check; | &check; | No |
+|  | View tenant details |  |  |  |  |  | Yes |
+|  | Export data | &check; | &check; | &check; | &check; | &check; | No |
+|  | View tags | &check; | &check; | &check; | &check; | &check; | No |
+|  | Create, update, and delete tags in Lighthouse |  | &check; | &check; |  |  | No |
+|  | Assign and remove tags from tenants |  | &check; | &check; |  |  | No |
+|  | Activate and inactivate a tenant |  | &check; | &check; |  |  | No |
+|  | Create customer reports |  |  |  |  |  | Yes |
+|  | View delegated access status | &check; | &check; | &check; | &check; | &check; | No |
+|  | View Microsoft Secure Score |  |  |  |  |  | Yes |
+|  | View baseline assignments | &check; | &check; | &check; | &check; | &check; | No |
+|  | View deployment status |  |  |  | &check; |  | Yes |
+|  | View apps and services usage |  |  |  | &check; |  | Yes |
+|  | View and edit customer contact and website info | &check; | &check; |  | &check; | &check; | No |
+| **Users** | Search for users | | | | | | Yes |
+|  | View user metrics | | | | | | Yes |
+|  | Onboard new users | | | | | | Yes |
+|  | Offboard users | | | | | | Yes |
+|  | View inactive users | | | | | | Yes |
+|  | View shared mailboxes | | | | | | Yes |
+|  | View and manage risky users | | | | | | Yes |
+|  | View and manage multifactor authentication | | | | | | Yes |
+|  | View and manage self-service password reset | | | | | | Yes |
+| **Devices** | View device security data | | | | | | Yes |
+|  | View vulnerability management data | | | | | | Yes |
+|  | View device compliance data | | | | | | Yes |
+|  | View threat management data | | | | | | Yes |
+|  | View device health data | | | | | | Yes |
+|  | View Windows 365 data | | | | | | Yes |
+|  | View Windows event logs | | | | | | Yes |
+| **Apps** | View app performance and app management data | | | | | | Yes |
+| **Quarantined messages** | View and manage quarantined messages | | | | | | Yes | 
+| **Baselines** | View baselines (default, custom) and task details |  | &check; |  &check; | &check; | &check; | No |
+|  | Create, clone, edit, and assign baselines | | &check; | &check; |  |  | No |
+|  | Extract a task from a tenant to add to a baseline | | &check; | &check; | | | Yes |
+|  | View deployment insights | | | | | | Yes |
+| **Service&nbsp;health** | Monitor service health<sup>1</sup> |  |  |  |  |  | No |
+| **Support** | Create and manage service requests<sup>2</sup> |  |  |  |  |  | No |
+| **Audit logs** | View audit logs |  | &check; |  |  |  | Yes
+| **Permissions** | View the **Lighthouse Permissions** page | |  &check; |  |  |  | No |
+|  | Set up and manage Lighthouse permissions |  | &check; |  |  |  | No |
+|  | View, set up, and manage GDAP on the **Delegated access** page |  | &check; |  |  |  | No |
+| **Sales Advisor** | View opportunities | &check; | &check; |  |  |  | No |
+|  | View subscription renewals | &check; | &check; |  |  |  | No |
+|  | View license requests | &check; | &check; |  |  |  | No |
 
-For customers with DAP and no GDAP, the Admin Agent role grants permissions to view all tenant data and take any action in Lighthouse (see below for other actions that also require a role in the partner tenant).
+<sup>1</sup> To monitor service health, Lighthouse users must hold at least one Microsoft Entra role in the partner tenant with the following property set: **microsoft.office365.serviceHealth/allEntities/allTasks**. The users must also have at least the Admin Agent role or Helpdesk Agent role assigned to them in Partner Center. 
 
-The Helpdesk Agent role grants permissions to view all tenant data and take limited action in Lighthouse, such as resetting user passwords, blocking user sign-ins, and updating customer contact information and websites.
+<sup>2</sup> To create and manage service requests, Lighthouse users must hold at least one Microsoft Entra role in the partner tenant with the following property set: **microsoft.office365.supportTickets/allEntities/allTasks**.
 
-Given the broad permissions granted to partner tenant users with DAP roles, we recommend adopting GDAP as soon as possible. 
+## Manage GDAP in the customer tenant
 
-## Permissions in the partner tenant
+Just as Lighthouse RBAC roles manage permissions in the partner tenant, GDAP manages permissions in the customer tenants. GDAP gives you a high level of control and flexibility by providing access to customer tenants through [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference). Assigning the least-privileged roles by task to MSP technicians through GDAP reduces security risk for both MSPs and customers. We recommend that you use GDAP reader roles across customer tenants to give Lighthouse users an aggregate view across all customer tenants.
 
-For certain actions in Lighthouse, role assignments in the partner tenant are required. The following table lists partner tenant roles and their associated permissions.
+For more information about setting up a GDAP relationship with a customer tenant in Lighthouse, see [Obtain granular admin permissions to manage a customer's service - Partner Center](/partner-center/gdap-obtain-admin-permissions-to-manage-customer). 
 
-| Partner tenant roles | Permissions |
-|--|--|
-| Global Administrator of partner tenant | <ul><li>Sign up for Lighthouse in the Microsoft 365 admin center.</li><li>Accept partner contract amendments during the first-run experience.</li><li>Activate and inactivate a tenant.</li><li>Create, update, and delete tags.</li><li>Assign and remove tags from a customer tenant.</li><li>Review audit logs</li></ul> |
-| Partner tenant member with at least one Microsoft Entra role assigned with the following property set:<br>**microsoft.office365.supportTickets/allEntities/allTasks**<br>(For a complete list of Microsoft Entra roles, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference).) | Create Lighthouse service requests. |
-| Partner tenant member who meets *both* of the following requirements: <ul><li>Has at least one Microsoft Entra role assigned with the following property set:<br>**microsoft.office365.serviceHealth/allEntities/allTasks**<br>(For a complete list of Microsoft Entra roles, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference).)</li><li>Has at least one DAP role assigned (Admin Agent or Helpdesk Agent)</li></ul> | View service health information. |
+For more information about least-privileged roles by task, see [Least-privileged roles - Partner Center](/partner-center/gdap-least-privileged-roles-by-task) and [Least privileged roles by task in Microsoft Entra ID](/azure/active-directory/roles/delegate-by-task).  
+
+For more information about GDAP or delegated administrative privileges (DAP) deprecation, see [GDAP frequently asked questions - Partner Center](/partner-center/gdap-faq), or search the [Partner Center announcements](/partner-center/announcements/) for dates and timelines.
+
+For a complete list of Microsoft Entra roles and the actions they can perform, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference). For information on how to assign roles, see [Assign Microsoft Entra roles to users](/azure/active-directory/roles/manage-roles-portal).
 
 ## Related content
 
-[Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) (article)  
-[Delegated administration privileges (DAP) FAQ](/partner-center/dap-faq) (article)  
 [View your Microsoft Entra roles in Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md) (article)  
-[Assign roles and permissions to users](/partner-center/permissions-overview) (article)  
-[Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md) (article)  
-[Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (article)  
-[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
+[Manage Lighthouse RBAC permissions in Microsoft 365 Lighthouse](m365-lighthouse-manage-lighthouse-rbac-permissions.md) (article)  
+[Set up GDAP in Microsoft 365 Lighthouse](m365-lighthouse-setup-gdap.md) (article)  
+[Overview of the Delegated access page in Microsoft 365 Lighthouse](m365-lighthouse-delegated-access-overview.md) (article)  
+[Assign roles and permissions to users - Partner Center](/partner-center/permissions-overview) (article)  
+[GDAP frequently asked questions - Partner Center](/partner-center/gdap-faq) (article)  
+[Microsoft 365 Lighthouse frequently asked questions (FAQs)](m365-lighthouse-faq.yml) (article)

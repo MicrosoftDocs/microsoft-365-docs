@@ -3,14 +3,13 @@ title: "Add custom and required questions to the booking page"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 06/24/2020
+ms.date: 04/02/2025
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: bookings
 ms.collection: 
 - Tier1
 - scotvorg
-- essentials-manage
 ms.localizationpriority: medium
 description: "If you need to ask customers questions when they book an appointment with you online, you can add custom questions and required questions to the booking page."
 ---
@@ -61,7 +60,7 @@ In this example, you can see that the questions that were added for the first se
 If your booking page is already published, you don't need to do anything else. Customers will see the questions the next time they book with you. If your booking page isn't published yet, go to the **booking page** from Outlook on the web, and then select **Save and publish**.
 
 > [!WARNING]
-> You can also delete questions from the master list. However, if you delete a question it will be deleted from every service. We recommend that you disable the question by selecting it to ensure you do not impact any other services. You can see that a question is disabled if it is not surrounded by a highlighted rectangle.
+> You can also delete questions from the main list. However, if you delete a question it will be deleted from every service. We recommend that you disable the question by selecting it to ensure you do not impact any other services. You can see that a question is disabled if it is not surrounded by a highlighted rectangle.
 
 ## Customer experience
 

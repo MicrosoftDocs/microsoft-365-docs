@@ -18,6 +18,8 @@ f1.keywords: NOCSH
 
 # Test your application on Test Base
 
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
 In this section, you'll learn how to create packages with different types of applications for uploading and testing on **Test Base**. Application types consist of the following values:
 
    > [!div class="mx-imgBorder"]

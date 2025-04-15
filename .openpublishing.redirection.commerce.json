@@ -934,6 +934,41 @@
          "source_path": "microsoft-365/commerce/subscriptions/upgrade-from-teams-free.md",
          "redirect_url": "/microsoftteams/upgrade-freemium",
          "redirect_document_id": false
-     }
+     },
+     {
+         "source_path": "microsoft-365/commerce/billing-and-payments/withholding-tax-credit-india.md",
+         "redirect_url":"/microsoft-365/commerce/billing-and-payments/withholding-tax-credit-global",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "microsoft-365/commerce/billing-and-payments/future-start-date.md",
+         "redirect_url": "/microsoft-365/commerce/understand-proposal-workflow#understand-invoicing-for-future-start-dates",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "microsoft-365/commerce/purchases-from-microsoft-open.md",
+         "redirect_url": "/microsoft-365/commerce/index",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "microsoft-365/commerce/licenses/downloads-faq.yml",
+         "redirect_url": "/microsoft-365/commerce/licenses/download-vl-products",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "microsoft-365/commerce/licenses/product-keys-faq.yml",
+         "redirect_url": "/microsoft-365/commerce/licenses/product-keys-for-vl",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "microsoft-365/commerce/licenses/manage-license-requests-faq.yml",
+         "redirect_url": "/microsoft-365/commerce/licenses/manage-license-reservations-vl",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "microsoft-365/commerce/licenses/user-roles-faq.yml",
+         "redirect_url": "/microsoft-365/commerce/licenses/manage-user-roles-vl",
+         "redirect_document_id": false
+      }
   ]
 }

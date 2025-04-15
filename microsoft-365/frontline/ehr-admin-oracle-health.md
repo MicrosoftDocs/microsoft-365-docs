@@ -1,10 +1,10 @@
 ---
 title: Virtual Appointments with Teams - Integration into Oracle Health EHR
 author: lana-chin
-ms.author: v-chinlana
-manager: serdars
+ms.author: jtremper
+manager: jtremper
 audience: ITPro
-ms.topic: conceptual
+ms.topic: integration
 ms.service: microsoft-365-frontline
 search.appverid: MET150
 searchScope:
@@ -25,9 +25,9 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.reviewer: ansantam 
+ms.reviewer: beolson 
 description: Learn how to integrate the Teams EHR connector to enable healthcare providers in your organization to conduct virtual appointments with patients or other providers in Teams directly from the Oracle Health EHR system.
-ms.date: 03/30/2023
+ms.date: 06/26/2024
 ---
 
 # Virtual Appointments with Teams - Integration into Oracle Health EHR
@@ -43,9 +43,9 @@ The communication and collaboration platform of Teams makes it easy for clinicia
 This article describes how to set up and configure the Teams EHR connector to integrate with the Oracle Health platform. It also gives you an overview of the Teams Virtual Appointments experience from the Oracle Health EHR system.
 
 > [!NOTE]
-> Cerner has been renamed to Oracle Health. The video below refers to Oracle Health as Cerner.
+> Cerner has been renamed to Oracle Health. The following video refers to Oracle Health as Cerner.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5d6gj]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=150a83b3-76f0-4c83-b83d-1c6176b17fcd]
 
 ## Before you begin
 
@@ -56,12 +56,10 @@ Oracle Health integration is currently only available in the United States.
 
 ### Prerequisites
 
-Before you integrate the Teams EHR connector in your healthcare organization, you must have the following:
-
 - An active subscription to Microsoft Cloud for Healthcare or a subscription to Microsoft Teams EHR connector standalone offer.
 - Users have an appropriate Microsoft 365 or Office 365 license that includes Teams meetings.
 - Teams is adopted and used in your healthcare organization.
-- Identified a person in your organization who is a Microsoft 365 global admin with access to the [Teams admin center](https://admin.teams.microsoft.com).
+- Identified a person in your organization who is a Microsoft 365 Global Administrator with access to the [Teams admin center](https://admin.teams.microsoft.com).
 - Your systems meet all [software and browser requirements](/microsoftteams/hardware-requirements-for-the-teams-app) for Teams.
 - Oracle Health version November 2018 or later
 - Contact Microsoft at teamsforhealthcare@service.microsoft.com to get enrolled in the Oracle Cerner Code program.
@@ -79,7 +77,7 @@ The connector setup requires that you:
 - [Review and finish the configuration](ehr-admin-cerner.md#review-and-finish-the-configuration)
 
 > [!IMPORTANT]
-> These steps must be completed by the Microsoft 365 global admin in your organization.  
+> These steps must be completed by the Microsoft 365 Global Administrator in your organization.  
 
 ### Launch the EHR connector configuration portal
 
@@ -116,7 +114,7 @@ To enable SMS notifications, your Microsoft 365 admin completes the following st
 
 1. Under **Your phone numbers**, select **Generate a new phone number** to generate a phone number for your organization. Doing this starts the process to request and generate a new phone number. This process might take up to 2 minutes to complete.
 
-    After the phone number is generated, it's displayed on the screen. This number will be used to send SMS confirmations and reminders to your patients. The number has been provisioned but isn’t linked to the FHIR base URL yet. You do that in the next step.
+    After the phone number is generated, it's displayed on the screen. This number is used to send SMS confirmations and reminders to your patients. The number has been provisioned but isn’t linked to the FHIR base URL yet. You do that in the next step.
 
     :::image type="content" source="media/ehr-admin-cerner-phone-number.png" alt-text="Screenshot showing an example of the phone number that's generated." lightbox="media/ehr-admin-cerner-phone-number.png":::
 
@@ -132,7 +130,7 @@ To enable SMS notifications, your Microsoft 365 admin completes the following st
 
 1. Some telephone carriers now [require unverified toll numbers to be verified](/azure/communication-services/concepts/sms/sms-faq#sms-to-us-phone-numbers). This requirement became effective October 1, 2022. Some carriers are following this more strictly than others.
 
-You'll need to [register your generated phone number in this form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR0NW3g8C-tRNlyVpwWkCiS1UOEFCVTRHSFMwRk9BVTg3MVdZQlVCNEI4SS4u). This will ensure none of your SMS messages will be blocked when sent to US phone numbers.
+You'll need to [register your generated phone number in this form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR0NW3g8C-tRNlyVpwWkCiS1UOEFCVTRHSFMwRk9BVTg3MVdZQlVCNEI4SS4u). This ensures none of your SMS messages will be blocked when sent to US phone numbers.
 
 ### Review and finish the configuration
 
@@ -188,7 +186,7 @@ The [EHR connector Virtual Appointments report](ehr-connector-report.md) in the 
 
 ## Privacy and location of data
 
-Teams integration into EHR systems optimizes the amount of data that’s used and stored during integration and virtual appointment flows. The solution follows the overall Teams privacy and data management principles and guidelines outlined in Teams Privacy.
+Teams integration into EHR systems optimizes the amount of data used and stored during integration and virtual appointment flows. The solution follows the overall Teams privacy and data management principles and guidelines outlined in Teams Privacy.
 
 The Teams EHR connector doesn't store or transfer any identifiable personal data or any health records of patients or healthcare providers from the EHR system. The only data that the EHR connector stores is the EHR user’s unique ID, which is used during Teams meeting setup.
 

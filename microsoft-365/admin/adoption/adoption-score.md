@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 02/18/2020
+ms.date: 12/14/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -32,7 +32,7 @@ Adoption Score supports the journey to digital transformation with insights abou
 
 ## Watch: Adoption Score overview
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE53oqt?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=0c5dfe1d-cba4-4bee-91d1-f58730d0c68a]
 
 It provides:
 
@@ -48,7 +48,7 @@ We provide metrics, insights, and recommendations in two areas:
 
     Visit [privacy controls for Adoption Score](privacy.md) to understand more about options to configure people experiences for your organization.
 
-- **Technology experiences:** Your organization depends on reliable and well-performing technology, and the efficient use of Microsoft 365. [Endpoint analytics](https://aka.ms/endpointanalytics) helps you understand how your organization can be impacted by performance and health issues with your hardware and software. [Network connectivity](../../enterprise/microsoft-365-networking-overview.md) helps you understand Exchange, SharePoint, and Microsoft Teams performance on your network architecture. You can review and update network settings to improve connectivity. Microsoft  365 apps health helps you understand whether the devices in your organization are running Microsoft 365 apps on recommended channels.
+- **Technology experiences:** Your organization depends on reliable and well-performing technology, and the efficient use of Microsoft 365. [Endpoint analytics](https://aka.ms/endpointanalytics) helps you understand how your organization can be impacted by performance and health issues with your hardware and software. [Network connectivity](../../enterprise/microsoft-365-networking-overview.md) helps you understand Exchange, SharePoint, and Microsoft Teams performance on your network architecture. You can review and update network settings to improve connectivity. Microsoft  365 apps health helps you understand whether the devices in your organization are running apps in Microsoft 365 on recommended channels.
 
 > [!NOTE]
 > All insights are calculated using data at the organizational level, not the individual level.

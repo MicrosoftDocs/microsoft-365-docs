@@ -1,11 +1,11 @@
 ---
 title: "Microsoft 365 guest sharing settings reference"
-ms.author: mikeplum
-author: MikePlumleyMSFT
-manager: pamgreen
-ms.date: 11/08/2023
+author: DaniEASmith
+ms.author: danismith
+manager: jtremper
+ms.date: 07/25/2024
 audience: ITPro
-ms.topic: article
+ms.topic: reference
 ms.service: o365-solutions
 ms.collection: 
 - highpri
@@ -28,6 +28,9 @@ description: "Learn about the guest sharing settings available in Microsoft 365 
 # Microsoft 365 guest sharing settings reference
 
 This article provides a reference for the various settings that can affect sharing with people outside your organization for the Microsoft 365 workloads: Teams, Microsoft 365 Groups, SharePoint, and OneDrive. These settings are located in the Microsoft Entra ID, Microsoft 365, Teams, and SharePoint admin centers.
+
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
 
 <a name='azure-active-directory'></a>
 
@@ -206,13 +209,10 @@ Because OneDrive is a hierarchy of sites within SharePoint, the organization-lev
 
 **Navigation:** SharePoint admin center > **Policies** > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a>
 
-![Screenshot of SharePoint organization-level additional sharing settings.](../media/external-sharing.png)
-
 | Setting | Default | Description |
 |:-----|:-----|:-----|
 |Limit external sharing by domain|Off|This setting allows you to specify a list of allowed or blocked domains for sharing. When allowed domains are specified, then sharing invitations can only be sent to those domains. When denied domains are specified, then sharing invitations can't be sent to those domains. <p> This setting affects all SharePoint and OneDrive sites in the organization. You can also set this at the site level.|
 |Allow only users in specific security groups to share externally|Off|If you want to limit who can share with guests in SharePoint and OneDrive, you can do so by limiting sharing to people in specified security groups. These settings don't affect sharing via Microsoft 365 Groups or Teams. Guests invited via a group or team would also have access to the associated site, though document and folder sharing could only be done by people in the specified security groups. <p> For each specified group, you can choose which of those users can share with *Anyone* links.|
-|Guests must sign in using the same account to which sharing invitations are sent|Off|Prevents guests from redeeming site sharing invitations using a different email address than the invitation was sent to. <p> [SharePoint and OneDrive integration with Microsoft Entra B2B](/sharepoint/sharepoint-azureb2b-integration-preview) does not use this setting because all guests are added to the directory based on the email address that the invitation was sent to and alternate email addresses can't be used to access the site.|
 |Allow guests to share items they don't own|On|When **On**, guests can share items that they don't own with other users or guests; when **Off** they can't. Guests can always share items for which they have full control.|
 |Guest access to a site or OneDrive will expire automatically after this many days|On|This setting allows you to specify a number of days after which guest access to sites expires. [Site owners can manage access renewals](https://support.microsoft.com/office/25bee24f-42ad-4ee8-8402-4186eed74dea). You can also set this at the site level.|
 |People who use a verification code must reauthenticate after this many days|Off|This setting allows you to require that users authenticating with a one-time passcode reauthenticate after a certain number of days.|
