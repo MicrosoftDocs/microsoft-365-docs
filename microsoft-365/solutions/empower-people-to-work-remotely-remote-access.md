@@ -2,12 +2,12 @@
 title: "Step 2. Provide remote access to on-premises apps and services"
 f1.keywords:
 - NOCSH
-author: dansimp
-ms.author: dansimp
+author: brendacarter
+ms.author: bcarter
 manager: dansimp
 ms.date: 05/01/2020
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
@@ -25,7 +25,7 @@ description: Ensure that your remote workers can access on-premises resources wh
 
 If your organization uses a remote access VPN solution, typically with VPN servers on the edge of your network and VPN clients installed on your users' devices, your users can use remote access VPN connections to access on-premises apps and servers. But you may need to optimize traffic to Microsoft 365 cloud-based services.
 
-If your users do not use a VPN solution, you can use Azure Active Directory (Azure AD) Application Proxy and Azure Point-to-Site (P2S) VPN to provide access, depending on whether all your apps are web-based.
+If your users do not use a VPN solution, you can use Microsoft Entra application proxy and Azure Point-to-Site (P2S) VPN to provide access, depending on whether all your apps are web-based.
 
 Here are the primary configurations for remote access:
 
@@ -52,7 +52,7 @@ Microsoft 365 traffic must take an indirect route through your organization, whi
 
 With split tunneling, you can configure your VPN client to exclude specific types of traffic from being sent over the VPN connection to the organization network.
 
-To optimize access to Microsoft 365 cloud resources, configure your split tunneling VPN clients to exclude traffic to the **Optimize** category Microsoft 365 endpoints over the VPN connection. For more information, see [Office 365 endpoint categories](../enterprise/microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories). See [this list](../enterprise/urls-and-ip-address-ranges.md) of Optimize category endpoints.
+To optimize access to Microsoft 365 cloud resources, configure your split tunneling VPN clients to exclude traffic to the **Optimize** category Microsoft 365 endpoints over the VPN connection. For more information, see [Office 365 endpoint categories](../enterprise/microsoft-365-network-connectivity-principles.md#optimizing-connectivity-to-microsoft-365-services). See [this list](../enterprise/urls-and-ip-address-ranges.md) of Optimize category endpoints.
 
 Here is the resulting traffic flow, in which most of the traffic to Microsoft 365 cloud apps bypasses the VPN connection.
 
@@ -64,16 +64,16 @@ For more information and guidance, see [Optimize Office 365 connectivity for rem
 
 ## Deploy remote access when all your apps are web apps and you have hybrid identity
 
-If your remote workers are not using a traditional VPN client and your on-premises user accounts and groups are synchronized with Azure AD, you can use Azure AD Application Proxy to provide secure remote access for web-based applications hosted on on-premises servers. Web-based applications include SharePoint Server sites, Outlook Web Access servers, or any other web-based line of business applications.
+If your remote workers are not using a traditional VPN client and your on-premises user accounts and groups are synchronized with Microsoft Entra ID, you can use Microsoft Entra application proxy to provide secure remote access for web-based applications hosted on on-premises servers. Web-based applications include SharePoint Server sites, Outlook Web Access servers, or any other web-based line of business applications.
 
-Here are the components of Azure AD Application Proxy.
+Here are the components of Microsoft Entra application proxy.
 
-:::image type="content" source="../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-application-proxy.png" alt-text="Components of Azure AD Application Proxy." lightbox="../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-application-proxy.png":::
+:::image type="content" source="../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-application-proxy.png" alt-text="Components of Microsoft Entra application proxy." lightbox="../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-application-proxy.png":::
 
-For more information, see this [overview of Azure AD Application Proxy](/azure/active-directory/manage-apps/application-proxy).
+For more information, see this [overview of Microsoft Entra application proxy](/azure/active-directory/manage-apps/application-proxy).
 
 > [!NOTE]
-> Azure AD Application Proxy is not included with a Microsoft 365 subscription. You must pay for usage with a separate Azure subscription.
+> Microsoft Entra application proxy is not included with a Microsoft 365 subscription. You must pay for usage with a separate Azure subscription.
 
 ## Deploy remote access when not all your apps are web apps
 

@@ -23,7 +23,7 @@ In this article, [Ed Fisher](https://www.linkedin.com/in/edfisher/), Security & 
 
 ## About the author
 
-![Ed Fisher photo.](../media/solutions-architecture-center/ed-fisher-networking.jpg)
+![Screenshot of Ed Fisher photo.](../media/solutions-architecture-center/ed-fisher-networking.jpg)
 
 I'm currently a Principal Technical Specialist in our Retail and Consumer Goods team, focusing on Security & Compliance. I've worked with customers moving to Office 365 for the past ten years. I've worked with smaller shops with a handful of locations to government agencies and enterprises with millions of users distributed around the world, and many other customers in between, with the majority having tens of thousands of users, multiple locations in various parts of the world, the need for a higher degree of security, and a multitude of compliance requirements. I have helped hundreds of enterprises and millions of users move to the cloud safely and securely.
 
@@ -85,7 +85,7 @@ When you don't permit outbound UDP traffic from clients to the service, they can
 
 But it isn't. All connections to Office 365 are over TLS. We have been offering TLS 1.2 for quite a while now and will be disabling older versions soon because legacy clients still use them and that's a risk.
 
-Forcing a TLS connection, or 32 of them, to go over a VPN before they then go to the service doesn't add security. It does add latency and reduces overall throughput. In some VPN solutions, it even forces UDP to tunnel through TCP, which again will have a very negative impact on streaming traffic. And, unless you're doing TLS inspection, there's no upside, all downside. A very common theme among customers, now that most of their workforce is remote, is that they're seeing significant bandwidth and performance impacts from making all their users connect using a VPN, instead of configuring split tunneling for access to [Optimize category Office 365 endpoints](../enterprise/microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories).
+Forcing a TLS connection, or 32 of them, to go over a VPN before they then go to the service doesn't add security. It does add latency and reduces overall throughput. In some VPN solutions, it even forces UDP to tunnel through TCP, which again will have a very negative impact on streaming traffic. And, unless you're doing TLS inspection, there's no upside, all downside. A very common theme among customers, now that most of their workforce is remote, is that they're seeing significant bandwidth and performance impacts from making all their users connect using a VPN, instead of configuring split tunneling for access to [Optimize category Office 365 endpoints](../enterprise/microsoft-365-network-connectivity-principles.md#optimizing-connectivity-to-microsoft-365-services).
 
 It's an easy fix to do split tunneling and it's one you should do. For more, make sure you review [Optimize Office 365 connectivity for remote users using VPN split tunneling](../enterprise/microsoft-365-vpn-split-tunnel.md).
 
@@ -93,13 +93,13 @@ It's an easy fix to do split tunneling and it's one you should do. For more, mak
 
 Many times, the reason bad choices are made comes from a combination of (1) not knowing how the service works, (2) trying to adhere to company policies that were written before adopting the cloud, and (3) security teams who may not be easily convinced that there's more than one way to accomplish their goals. Hopefully the above, and the links below, will help with the first. Executive sponsorship may be required to get past the second. Addressing the security policies' goals, rather than their methods, helps with the third. From conditional access to content moderation, DLP to information protection, endpoint validation to zero-day threats—any end goal a reasonable security policy may have can be accomplished with what is available in Office 365, and without any dependency upon on-premises network gear, forced VPN tunnels, and TLS break and inspect.
 
-Other times, hardware that was sized and purchased before the organization started to move to the cloud simply cannot be scaled up to handle the new traffic patterns and loads. If you truly must route all traffic through a single egress point, and/or proxy it, be prepared to upgrade network equipment and bandwidth accordingly. Carefully monitor utilization on both, as the experience won't diminish slowly as more users onboard. Everything will be fine until the tipping point is reached, then everyone suffers.
+Other times, hardware that was sized and purchased before the organization started to move to the cloud simply can't be scaled up to handle the new traffic patterns and loads. If you truly must route all traffic through a single egress point, and/or proxy it, be prepared to upgrade network equipment and bandwidth accordingly. Carefully monitor utilization on both, as the experience won't diminish slowly as more users onboard. Everything is fine until the tipping point is reached, then everyone suffers.
 
 ## Exceptions to the rules
 
 If your organization requires [tenant restrictions](/azure/active-directory/manage-apps/tenant-restrictions), you'll need to use a proxy with TLS break and inspect to  force some traffic through the proxy, but you don't have to force all traffic through it.  It's not an all or nothing proposition, so pay attention to what does need to be modified by the proxy.
 
-If you're going to permit split tunneling but also use a proxy for general web traffic, make sure your PAC file defines what must go direct as well as how you define interesting traffic for what goes through the VPN tunnel. We offer sample PAC files at [https://aka.ms/ipaddrs](../enterprise/urls-and-ip-address-ranges.md) that will make this easier to manage.
+If you're going to permit split tunneling but also use a proxy for general web traffic, make sure your PAC file defines what must go direct as well as how you define interesting traffic for what goes through the VPN tunnel. We offer sample PAC files at [https://aka.ms/ipaddrs](../enterprise/urls-and-ip-address-ranges.md) that makes this easier to manage.
 
 ## Conclusion
 

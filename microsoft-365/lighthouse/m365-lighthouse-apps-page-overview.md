@@ -4,10 +4,10 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: algreer
+ms.reviewer: prpath
 ms.date: 06/21/2023
 audience: Admin
-ms.topic: article
+ms.topic: concept-article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
@@ -24,16 +24,16 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Overview of the Apps page in Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse brings the features of Microsoft Endpoint Analytics for applications into a simplified management view. The Apps page provides insight into potential issues for desktop applications on managed devices. You can quickly identify the top applications impacting end-user productivity along with app failure metrics for these applications.
+Microsoft 365 Lighthouse brings the features of Microsoft Endpoint analytics for applications into a simplified management view. The Apps page provides insight into potential issues for desktop applications on managed devices. You can quickly identify the top applications impacting end-user productivity along with app failure metrics for these applications.
 
-The data only reflects fully managed Windows devices. Data on Bring Your Own Devices is not supported.
+The data only reflects fully managed Windows devices. Data on Bring Your Own Devices isn't supported.
 
 ## Requirements
 
 Devices must be enrolled in Microsoft Intune. For more information on enrollment, see [What is Endpoint analytics?](/mem/analytics/overview) Once a device is enrolled, the Apps page automatically populates with data. It may take up to 48 hours to see updates.
 
 > [!NOTE]
-> If data doesn’t show up for a specific application, verify that the policy is enabled. From the tenant’s deployment plan, under **Set up device enrollment**, verify that **Device health monitoring policy** is compliant. If not compliant, deploy the policy.
+> If data doesn't show up for a specific application, verify that the policy is enabled. From the tenant's deployment plan, under **Set up device enrollment**, verify that **Device health monitoring policy** is compliant. If not compliant, deploy the policy.
 
 
 ## App performance tab
@@ -63,5 +63,5 @@ The App performance tab also includes the following options:
 
 ## Related content
 [What is Endpoint analytics?](/mem/analytics/overview) (article)\
-[Application reliability in endpoint analytics](/mem/analytics/app-reliability) (article)\
+[Application reliability in Endpoint analytics](/mem/analytics/app-reliability) (article)\
 [Overview of the Device health page in Microsoft 365 Lighthouse](m365-lighthouse-device-health-overview.md) (article)

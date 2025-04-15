@@ -2,11 +2,11 @@
 title: SharePoint and Microsoft 365 Groups integration (IT Admins)
 ms.reviewer: rahulnayak
 ms.date: 07/27/2023
-ms.author: mikeplum
-author: MikePlumleyMSFT
-manager: serdars
+author: DaniEASmith
+ms.author: danismith
+manager: jtremper
 audience: Admin
-ms.topic: article
+ms.topic: integration
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: 
@@ -31,7 +31,7 @@ Some settings for Microsoft 365 Groups and SharePoint in Microsoft 365, particul
 |SharePoint setting|Description|Effect on Microsoft 365 groups|Recommendation|
 |:-----------------|:----------|:-----------------------------|:-------------|
 |External sharing for organization and site|Determines if sites, files, and folders can be shared with people outside the organization.|If SharePoint and Microsoft 365 Groups settings don't match, guests in the group may be blocked from accessing the site, or external access may be available in the site but not the group.|When changing sharing settings, check both Microsoft 365 Groups settings and SharePoint site settings for group-connected team sites.<br><br>See [Collaborate with guests in a site](./collaborate-in-site.md).|
-|Domain allow/block|Allows or prevents content being shared with specified domains.|Microsoft 365 Groups doesn't recognize SharePoint allowlists or blocklists. Users from domains disallowed in SharePoint could gain access to SharePoint through a group.|Manage domain allowlists or blocklists for Azure AD and SharePoint together, along with external access for meetings. Create an org-wide governance process for allowing and blocking domains.<br><br>See [SharePoint domain settings](/sharepoint/restricted-domains-sharing), [Azure AD domain settings](/azure/active-directory/b2b/allow-deny-list), and [External access](/microsoftteams/trusted-organizations-external-meetings-chat).|
+|Domain allow/block|Allows or prevents content being shared with specified domains.|Microsoft 365 Groups doesn't recognize SharePoint allowlists or blocklists. Users from domains disallowed in SharePoint could gain access to SharePoint through a group.|Manage domain allowlists or blocklists for Microsoft Entra ID and SharePoint together, along with external access for meetings. Create an org-wide governance process for allowing and blocking domains.<br><br>See [SharePoint domain settings](/sharepoint/restricted-domains-sharing), [Microsoft Entra domain settings](/azure/active-directory/b2b/allow-deny-list), and [External access](/microsoftteams/trusted-organizations-external-meetings-chat).|
 |Allow only users in specific security groups to share externally|Specifies security groups who can share sites, folders, and files externally.|This setting doesn't affect group owners sharing Microsoft 365 groups externally. Group guests have access to the associated SharePoint site.||
 |SharePoint site sharing settings|Determines who can share the site directly, outside of group membership. (The group or site owner configures this setting.)|This setting doesn't affect the group directly, but it can allow users to be added to a site and not have access to other group resources|Consider using this setting to limit sharing of the site directly and manage site access through the group.|
 |Let users create sites from the SharePoint start page and OneDrive|Specifies if users can create new SharePoint sites.|If this setting is turned off, users can still create group-connected team sites by creating a group.||

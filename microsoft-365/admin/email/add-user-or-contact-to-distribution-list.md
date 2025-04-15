@@ -5,9 +5,9 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 02/18/2020
+ms.date: 11/14/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
@@ -21,11 +21,6 @@ ms.custom:
 - VSBFY23 
 - AdminSurgePortfolio
 - AdminTemplateSet
-search.appverid:
-- BCS160
-- MET150
-- MOE150
-ms.assetid: ba256583-03ca-429e-be4d-a92d9c221ad6
 description: "Learn how to add a Microsoft 365 user or contact such as an employee, partner, or vendor to an email distribution group."
 ---
 
@@ -33,31 +28,27 @@ description: "Learn how to add a Microsoft 365 user or contact such as an employ
 
 Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
-As the admin of an organization, you may need to add one of your users or contacts to a distribution group (see [Create distribution groups in Microsoft 365](../setup/create-distribution-lists.md). For example, you can add employees or external partners or vendors to an email distribution group.
-  
-## Add a user or contact to a distribution group
-
-1. In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.
-
-2. On the **Groups** page, select the name of the group you want to add a contact to.
-
-3. On the **Members** tab, select **View all and manage members**.
-
-4. On the **View Members** page, select **Add members**, and select the user or contact you want to add to the distribution group. 
-    
-    ![Add members to distribution group.](../../media/f79f59f8-1606-43fe-bae6-df74f5b6259d.png)
-  
-5. Select **Save** and then **Close**.
+As the admin of an organization, you may need to add one of your users or contacts to a distribution group. See [Create distribution groups in Microsoft 365](../setup/create-distribution-lists.md). For example, you can add employees or external partners or vendors to an email distribution group.
 
 ## Watch: Add a user to a distribution list
   
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/ed4e6095-9a6a-4d3d-999d-698c39bb7ec8?autoplay=false]
+> [!VIDEO bab424a0-e18a-4c86-8e3d-b1c6f56895d6]
+
+## Steps
+
+1. In the Microsoft 365 admin center, select **Teams and groups** \> **Active teams and groups** \> **Distribution list**.
+
+2. On the group page, select the name of the group you want to add a contact to.
+
+3. On the **Members** tab, under **Members**, select **View all and manage members**.
+
+4. On the **View Members** page, select **Add members**, and select the user or contact you want to add to the distribution group.
+
+   > [!NOTE]
+   > You can also remove a user on **View Members** page. Select the user, select the ellipsis symbol and choose **Remove member**.
+
+5. Select **Add** and close.
   
 ## Next steps
 
 Learn to [send email as a distribution group in Microsoft 365](../manage/send-email-as-distribution-list.md).
-
-## Related content
-
-[Manage clutter for your organization](configure-clutter.md) (article)\
-[Create a shared mailbox](create-a-shared-mailbox.md) (article)

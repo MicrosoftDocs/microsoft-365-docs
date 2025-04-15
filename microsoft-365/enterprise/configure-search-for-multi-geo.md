@@ -1,15 +1,18 @@
 ---
 title: "Configure search for Microsoft 365 Multi-Geo"
-ms.reviewer: adwood
-ms.date: 08/10/2020
-ms.author: tlarsen
-author: tklarsen
-manager: arnek
+ms.reviewer:
+ms.date: 12/10/2024
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.custom: seo-marvel-mar2020
-ms.collection: Strat_SP_gtc
+ms.collection: 
+- Strat_SP_gtc
+- must-keep
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
@@ -24,38 +27,38 @@ Your Multi-Geo _Tenant_ will have aggregate search capabilities allowing a searc
 
 By default, searches from these entry points will return aggregate results, even though each search index is located within its relevant _Geography_ location:
 
-- OneDrive for Business
+- OneDrive
 - Delve
 - SharePoint Home
 - Search Center
 
 Additionally, Multi-Geo search capabilities can be configured for your custom search applications that use the SharePoint search API.
 
-Please review [Configure Search for OneDrive for Business Multi-Geo](configure-search-for-multi-geo.md) for instructions including any limitations and differences.
+Please review [Configure Search for OneDrive Multi-Geo](configure-search-for-multi-geo.md) for instructions including any limitations and differences.
 
 ## Validating the Microsoft 365 Multi-Geo configuration
 
 Below are some basic use cases you may wish to include in your validation plan before broadly rolling out Microsoft 365 Multi-Geo to your company. Once you have completed these tests and any additional use cases that are relevant to your company, you may choose to move on to adding the users in your initial pilot group.
 
-OneDrive for Business:
+OneDrive:
 
-Select OneDrive from the Microsoft 365 app launcher and confirm that you are automatically directed to the appropriate _Geography_ location for the user, based on the user's PDL. OneDrive for Business should now begin provisioning at that location. Once provisioned, try uploading and downloading some documents.
+Select OneDrive from the Microsoft 365 app launcher and confirm that you are automatically directed to the appropriate _Geography_ location for the user, based on the user's PDL. OneDrive should now begin provisioning at that location. Once provisioned, try uploading and downloading some documents.
 
 OneDrive Mobile App:
 
-Log in to your OneDrive mobile App with your test account credentials. Confirm that you can see your OneDrive for Business files and can interact with them from your mobile device.
+Log in to your OneDrive mobile App with your test account credentials. Confirm that you can see your OneDrive files and can interact with them from your mobile device.
 
 OneDrive sync client:
 
-Confirm that the OneDrive sync client automatically detects your OneDrive for Business _Geography_ location upon login. If you need to download the sync client, you can click **Sync** in the OneDrive library.
+Confirm that the OneDrive sync client automatically detects your OneDrive _Geography_ location upon login. If you need to download the sync client, you can click **Sync** in the OneDrive library.
 
 Office applications:
 
-Confirm that you can access OneDrive for Business by logging in from an Office application, such as Word. Open the Office application and select **OneDrive – \<TenantName\>**. Office will detect your OneDrive location and show you the files that you can open.
+Confirm that you can access OneDrive by logging in from an Office application, such as Word. Open the Office application and select **OneDrive – \<TenantName\>**. Office will detect your OneDrive location and show you the files that you can open.
 
 Sharing:
 
-Try sharing OneDrive files. Confirm that the people picker shows you all your SharePoint online users regardless of their _Geography_ location.
+Try sharing OneDrive files. Confirm that the people picker shows you all your SharePoint users regardless of their _Geography_ location.
 
 In a multi-geo environment, each _Geography_ location has its own search index and Search Center. When a user searches, the query is fanned out to all the indexes, and the returned results are merged.
 
@@ -108,14 +111,14 @@ Some search features you might be familiar with, work differently in a multi-geo
 <tbody>
 <tr class="odd">
 <td align="left">Promoted results</td>
-<td align="left">You can create query rules with promoted results at different levels: for the whole _Tenant_, for a site collection, or for a site. In a Multi-Geo environment, define promoted results at the _Tenant_ level to promote the results to the Search Centers in all _Geography_ locations. If you only want to promote results in the Search Center that's in the _Geography_ location of the site collection or site, define the promoted results at the site collection or site level. These results are not promoted in other _Geography_ locations.</td>
-<td align="left">If you don't need different promoted results per _Geography_ location, for example different rules for traveling, we recommend defining promoted results at the _Tenant_ level.</td>
+<td align="left">You can create query rules with promoted results at different levels: for the whole <i>Tenant</i>, for a site collection, or for a site. In a Multi-Geo environment, define promoted results at the <i>Tenant</i> level to promote the results to the Search Centers in all <i>Geography</i> locations. If you only want to promote results in the Search Center that's in the <i>Geography</i> location of the site collection or site, define the promoted results at the site collection or site level. These results are not promoted in other <i>Geography</i> locations.</td>
+<td align="left">If you don't need different promoted results per <i>Geography</i> location, for example different rules for traveling, we recommend defining promoted results at the <i>Tenant</i> level.</td>
 </tr>
 <tr class="even">
 <td align="left">Search refiners</td>
-<td align="left">Search returns refiners from all the _Geography_ locations of a _Tenant_ and then aggregates them. The aggregation is a best effort, meaning that the refiner counts might not be 100% accurate. For most search-driven scenarios, this accuracy is sufficient.
+<td align="left">Search returns refiners from all the <i>Geography</i> locations of a <i>Tenant</i> and then aggregates them. The aggregation is a best effort, meaning that the refiner counts might not be 100% accurate. For most search-driven scenarios, this accuracy is sufficient.
 </td>
-<td align="left">For search-driven applications that depend on refiner completeness, query each _Geography_ location independently.</td>
+<td align="left">For search-driven applications that depend on refiner completeness, query each <i>Geography</i> location independently.</td>
 </tr>
 <tr class="odd">
 <td align="left"></td>
@@ -124,12 +127,12 @@ Some search features you might be familiar with, work differently in a multi-geo
 </tr>
 <tr class="even">
 <td align="left">Document IDs</td>
-<td align="left">If you're developing a search-driven application that depends on document IDs, note that document IDs in a Multi-Geo environment aren't unique across _Geography_ locations, they are unique per _Geography_ location.</td>
-<td align="left">We've added a column that identifies the _Geography_ location. Use this column to achieve uniqueness. This column is named "GeoLocationSource".</td>
+<td align="left">If you're developing a search-driven application that depends on document IDs, note that document IDs in a Multi-Geo environment aren't unique across <i>Geography</i> locations, they are unique per <i>Geography</i> location.</td>
+<td align="left">We've added a column that identifies the <i>Geography</i> location. Use this column to achieve uniqueness. This column is named "GeoLocationSource".</td>
 </tr>
 <tr class="odd">
 <td align="left">Number of results</td>
-<td align="left">The search results page shows combined results from the _Geography_ locations, but it's not possible to page beyond 500 results.</td>
+<td align="left">The search results page shows combined results from the <i>Geography</i> locations, but it's not possible to page beyond 500 results.</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
@@ -158,7 +161,7 @@ Some of the search features you might be familiar with, aren't supported in a mu
 </tr>
 <tr class="even">
 <td align="left">Guests</td>
-<td align="left">Guests only get results from the _Geography_ location that they're searching from.</td>
+<td align="left">Guests only get results from the <i>Geography</i> location that they're searching from.</td>
 </tr>
 </tbody>
 </table>
@@ -228,7 +231,7 @@ MultiGeoSearchConfiguration - This is an optional list of which geo locations in
 <tbody>
 <tr class="odd">
 <td align="left">DataLocation</td>
-<td align="left">The _Geography_ location, for example NAM.</td>
+<td align="left">The <i>Geography</i> location, for example NAM.</td>
 </tr>
 <tr class="even">
 <td align="left">EndPoint</td>
@@ -257,11 +260,11 @@ MultiGeoSearchStatus – This is a property that the SharePoint Search API retur
 <tbody>
 <tr class="odd">
 <td align="left">Full</td>
-<td align="left">Full results from <strong>all</strong> the _Geography_ locations.</td>
+<td align="left">Full results from <strong>all</strong> the <i>Geography</i> locations.</td>
 </tr>
 <tr class="even">
 <td align="left">Partial</td>
-<td align="left">Partial results from one or more _Geography_ locations. The results are incomplete due to a transient error.</td>
+<td align="left">Partial results from one or more <i>Geography</i> locations. The results are incomplete due to a transient error.</td>
 </tr>
 </tbody>
 </table>
@@ -290,13 +293,13 @@ With a GET request, you specify the query parameters in the URL. With a POST req
 #### Sample GET request that's fanned out to **all** geo locations
 
 ```http
-https:// \<tenant\>/\_api/search/query?querytext='sharepoint'&Properties='EnableMultiGeoSearch:true'&ClientType='my\_client\_id'
+https://<tenant>/_api/search/query?querytext='sharepoint'&Properties='EnableMultiGeoSearch:true'&ClientType='my_client_id'
 ```
 
 #### Sample GET request to fan out to **some** geo locations
 
 ```http
-https:// \<tenant\>/\_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\\:"NAM"\\,Endpoint\\:"https\\://contosoNAM.sharepoint.com"\\,SourceId\\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\\,{DataLocation\\:"CAN"\\,Endpoint\\:"https\\://contosoCAN.sharepoint-df.com"}]'
+https://<tenant>/_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\\:"NAM"\\,Endpoint\\:"https\\://contosoNAM.sharepoint.com"\\,SourceId\\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\\,{DataLocation\\:"CAN"\\,Endpoint\\:"https\\://contosoCAN.sharepoint-df.com"}]'
 ```
 
 > [!NOTE]

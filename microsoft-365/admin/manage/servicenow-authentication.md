@@ -7,7 +7,7 @@ author: efrene
 manager: scotv
 ms.date: 11/08/2022
 audience: Admin
-ms.topic: article
+ms.topic: integration
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
@@ -28,9 +28,11 @@ description: "Scoped Certified application installation and configuration guide 
 
 These prerequisite steps are required to set up Microsoft 365 support integration.
 
-### Azure Active Directory administrator
+<a name='azure-active-directory-administrator'></a>
 
-1. \[AAD Admin\] Create Azure AD Application for Outbound under your Microsoft 365 tenant.
+### Microsoft Entra administrator
+
+1. \[Microsoft Entra Admin\] Create Microsoft Entra Application for Outbound under your Microsoft 365 tenant.
 
     1. Log on to the Azure Portal with your Microsoft 365 tenant credentials and go to the [App registrations page](https://portal.azure.com/?Microsoft_AAD_RegisteredApps=true#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) to create a new application.
 
@@ -118,11 +120,11 @@ To open the Microsoft 365 support integration setup wizard, type **Microsoft 365
 
 1. Configure authentication settings.
 
-    1. Register the Azure Active Directory (AAD) app.
+    1. Register the Microsoft Entra app.
 
-    1. After completing the instructions in the prerequisites section, select **Done**. Otherwise, follow the instructions in the wizard to create the necessary application registration in AAD.
+    1. After completing the instructions in the prerequisites section, select **Done**. Otherwise, follow the instructions in the wizard to create the necessary application registration in Microsoft Entra ID.
 
-        :::image type="content" source="../../media/ServiceNow-guide/servicenow-updates-configureauthsettings.png" lightbox="../../media/ServiceNow-guide/servicenow-updates-configureauthsettings.png" alt-text="Register the AAD app.":::
+        :::image type="content" source="../../media/ServiceNow-guide/servicenow-updates-configureauthsettings.png" lightbox="../../media/ServiceNow-guide/servicenow-updates-configureauthsettings.png" alt-text="Register the Microsoft Entra app.":::
 
     1. Register the ServiceNow OAuth app.
 

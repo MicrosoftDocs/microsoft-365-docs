@@ -4,10 +4,10 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: katmartin
-ms.date: 06/21/2023
+ms.reviewer: ebamoh
+ms.date: 10/21/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
@@ -24,24 +24,23 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # View an enterprise Cloud PC failed network connection in Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse provides the connection status between your customer tenants and Azure Active Directory (Azure AD). When a Cloud PC has a failed network connection, you can view detailed information in the Microsoft Intune admin center.
+Microsoft 365 Lighthouse provides the connection status between your customer tenants and Microsoft Entra ID. When a Cloud PC has a failed network connection, you can view detailed information in the Microsoft Intune admin center.
 
 ## Before you begin
 
-- You must be a Global Administrator in the partner tenant.
-- You must have Cloud PC Administrator or Cloud PC Reader access to view connection issues.
+You must hold either the Cloud PC Administrator or Cloud PC Reader role in Microsoft Intune to view connection issues.
 
 ## View a failed network connection
 
-1. In the left navigation pane in Lighthouse, select **Devices** > **Windows 365**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Devices** > **Windows 365**.
 
 2. Select the **Azure network connections** tab.
 
 3. From the colored count-annotation bar, select **Failed connections**.
 
-4. From the filtered list, select **View connection details in Microsoft Endpoint Manager** next to the connection you want to investigate.
+4. From the filtered list, select **View connection details in Microsoft Intune admin center** next to the connection you want to investigate.
 
-5. From the Microsoft Intune admin center, select **View details** to learn more about the error.
+5. In the Microsoft Intune admin center, select **View details** to learn more about the error.
 
 ## Next steps
 
@@ -51,4 +50,4 @@ To troubleshoot connection issues, see [Troubleshoot on-premises network connect
 
 [Cloud PC role-based access control ](/windows-365/enterprise/role-based-access)(article)\
 [Active Directory domain join](/windows-365/enterprise/troubleshoot-on-premises-network-connection#active-directory-domain-join) (article)\
-[Azure Active Directory device Sync](/windows-365/enterprise/troubleshoot-on-premises-network-connection#azure-active-directory-device-sync) (article)
+[Microsoft Entra device Sync](/windows-365/enterprise/troubleshoot-on-premises-network-connection#azure-active-directory-device-sync) (article)

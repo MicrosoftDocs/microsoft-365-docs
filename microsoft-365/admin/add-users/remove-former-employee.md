@@ -5,9 +5,9 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 08/21/2020
+ms.date: 10/01/2024
 audience: Admin
-ms.topic: article
+ms.topic: solution-overview
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
@@ -17,7 +17,10 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - SPO_Content
+- m365solution-overview
 ms.custom:
+- has-azure-ad-ps-ref
+- azure-ad-ref-level-one-done
 - adminvideo
 - MSStore_Link
 - TRN_M365B
@@ -36,8 +39,6 @@ Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?l
 A question we often get is, "What should I do to secure data and protect access when an employee leaves my organization?" This article series explains how to block access to Microsoft 365 so these users can't sign in to Microsoft 365, the steps you should take to secure organization data, and how to allow other employees to access email and OneDrive data.
 
 ## Before you begin
-
-You need to be a global administrator to complete the steps in this solution.
 
 To complete the steps in this series, you use these Microsoft 365 capabilities and features.
 
@@ -70,24 +71,11 @@ To complete the steps in this series, you use these Microsoft 365 capabilities a
 |[Step 6 - Remove and delete the Microsoft 365 license from a former employee](remove-former-employee-step-6.md)|When you remove a license, you can assign it to someone else. Or, you can delete the license so you don't pay for it until you hire another person. <p> When you remove or delete a license, the user's old email, contacts, and calendar are retained for **30 days**, then permanently deleted. If you remove or delete a license but don't delete the account, the content in the user's OneDrive will remain accessible to you even after 30 days.|
 |[Step 7 - Delete a former employee's user account](remove-former-employee-step-7.md)|This removes the account from your admin center. Keeps things clean. Emails to the former employee's user account will not be received.|
 
-## Watch: Delete a user
+## Watch: Delete a user overview
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198203).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR?autoplay=false]
-
-When an employee leaves the company, you'll need to remove them from your Microsoft 365 organization. Before doing so, you should block them from accessing company files, preserve the documents they created, and perform several other admin tasks associated with removing a user.
-
-1. From the admin center, select **Users**, and choose **Active users**.
-1. Select the user you want to remove, and then select **Delete user**.
-1. Check the box to remove their license, and check the box to remove their email aliases.
-1. Check the box to give another user access to the former employee’s email, and choose **Select a user and set email options**.
-1. To remove associated email aliases, select **X** next to their aliases.
-1. Review the shared mailbox information, and select **Finish**.
-1. Confirm your options are set correctly, and choose **Assign and convert**.
-1. Review your results, and select **Close**.
-
-After you remove a user, you have up to 30 days to restore their account.
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f1196f82-611c-41c8-8cc1-98e70f591d5d]
 
 ## Does your organization use Active Directory?
 
@@ -95,12 +83,11 @@ If your organization synchronizes user accounts to Microsoft 365 from a local Ac
 
 To learn how to delete and restore user account in Active Directory, see [Delete a User Account](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)).
   
-If you're using Azure Active Directory, see the [Remove-MgUser](/powershell/module/microsoft.graph.users/remove-mguser) PowerShell cmdlet.
+If you're using Microsoft Entra ID, see the [Remove-MgUser](/powershell/module/microsoft.graph.users/remove-mguser) PowerShell cmdlet.
   
 ## Related content
 
 [Restore a user](restore-user.md) (article)\
 [Add a new employee to Microsoft 365](add-new-employee.md) (article)\
-[Assign licenses to users](../manage/assign-licenses-to-users.md) (article)\
-[Remove-CalendarEvents](/powershell/module/exchange/remove-calendarevents)\
-[Unassign licenses from users](../manage/remove-licenses-from-users.md) (article)
+[Assign or unassign licenses for users in the Microsoft 365 admin center](../manage/assign-licenses-to-users.md) (article)\
+[Remove-CalendarEvents](/powershell/module/exchange/remove-calendarevents)

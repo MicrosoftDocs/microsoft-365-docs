@@ -1,14 +1,14 @@
 ---
 title: Manage sharing for Microsoft Whiteboard in GCC environments
-ms.author: v-jdeweese
+ms.author: alexfaulkner
 author: johnddeweese
 manager: alexfaulkner
 ms.reviewer:
 ms.date: 06/17/2022
 audience: admin
-ms.topic: article
+ms.topic: how-to
 ms.custom:
-ms.service: microsoft-365-enterprise
+ms.service: whiteboard
 search.appverid: MET150
 ms.collection:
 ms.localizationpriority: medium
@@ -18,7 +18,7 @@ description: Learn how to manage sharing for Microsoft Whiteboard in GCC environ
 # Manage sharing for Microsoft Whiteboard in GCC environments
 
 > [!NOTE]
-> This guidance applies to US Government Community Cloud (GCC) environments. The sharing experience differs based on the device and and what tenant-level sharing settings are enabled.
+> This guidance applies to US Government Community Cloud (GCC) environments. The sharing experience differs based on the device and what tenant-level sharing settings are enabled.
 
 ## Share in Teams meetings
 

@@ -3,16 +3,18 @@ title: "View Microsoft 365 user accounts with PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 07/17/2020
+ms.date: 01/08/2025
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
 - scotvorg 
 - Ent_O365
+- must-keep
 f1.keywords:
 - CSH
 ms.custom:
@@ -21,6 +23,7 @@ ms.custom:
   - Ent_Office_Other
   - seo-marvel-apr2020
   - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 
 description: Learn how to view, list, or display your Microsoft 365 user accounts in different ways with PowerShell.
@@ -32,29 +35,43 @@ description: Learn how to view, list, or display your Microsoft 365 user account
 
 You can use the Microsoft 365 admin center to view the accounts for your Microsoft 365 tenant. PowerShell for Microsoft 365 enables this but also provides additional functionality.
   
-## Use the Azure Active Directory PowerShell for Graph module
+## View user accounts using Microsoft Graph PowerShell
 
-First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+> [!NOTE]
+> The Azure Active Directory (AzureAD) PowerShell module is being deprecated and replaced by the Microsoft Graph PowerShell SDK. You can use the Microsoft Graph PowerShell SDK to access all Microsoft Graph APIs. For more information, see [Get started with the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started).
+>
+> Also see [Install the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation) and [Upgrade from Azure AD PowerShell to Microsoft Graph PowerShell](/powershell/microsoftgraph/migration-steps) for information on how to install and upgrade to Microsoft Graph PowerShell, respectively.
+
+1. First, install the required software to use Microsoft Graph PowerShell. See [Connect to Microsoft 365 with Microsoft Graph PowerShell](connect-to-microsoft-365-powershell.md) for more information.
+
+1. Then run the following cmdlet to connect to your organization with the required permission scope, which in this case is *User.ReadBasic.All*:
+
+```powershell
+# Connect to Microsoft Graph
+Connect-Graph -Scopes User.ReadBasic.All
+```
   
 ### View all accounts
 
-To display the full list of user accounts, run this command:
+To display the full list of user accounts with user ID and user principal name, run this command:
   
 ```powershell
-Get-AzureADUser
+Get-MgUser -All | Select DisplayName,Id,UserPrincipalName
 ```
 
 You should get information similar to this:
   
 ```powershell
-ObjectId                             DisplayName                                           UserPrincipalName
---------                             -----------                                           -----------------
-032fc1fc-b5a2-46f1-8635-3d7dcb52c48d Adele Vance                                           AdeleV@litwareinc.OnMicr...
-bd1e6af1-41e7-4f77-a2ac-5b209950135c Global Administrator                                  admin@litwareinc.onmicro...
-ec37a4d6-232e-4eb7-82a5-1613490642a5 Alex Wilber                                           AlexW@litwareinc.OnMicro...
-be4bdddd-c790-424c-9f96-a0cf609b7815 Allan Deyoung                                         AllanD@litwareinc.OnMicr...
-598ab87b-76f0-4bf9-9538-bd46b10f4438 Christie Cline                                        ChristieC@litwareinc.OnM...
-40722671-e520-4a5f-97d4-0bc9e9b2dc0f Debra Berger                                          DebraB@litwareinc.OnMicr...
+DisplayName               Id                                   UserPrincipalName
+-----------               --                                   -----------------
+Conf Room Adams           6e206948-b2b6-406c-a728-80bbe78e4003 Adams@M365x89521157.OnMicrosoft.com
+Adele Vance               916a6a08-b9d0-44b6-870f-562d8358a314 AdeleV@M365x89521157.OnMicrosoft.com
+MOD Administrator         5710f237-df3f-4bcd-b875-82deb02f98aa admin@M365x89521157.onmicrosoft.com
+Alex Wilber               8aa561dc-441d-4d74-aeb3-e2be41c116c8 AlexW@M365x89521157.OnMicrosoft.com
+Allan Deyoung             6b629e5e-3cf4-42d0-8007-3a93f0253382 AllanD@M365x89521157.OnMicrosoft.com
+Automate Bot              3a70feb4-9407-47b5-9b61-7526ac0e98d8 AutomateB@M365x89521157.OnMicrosoft.com      
+Conf Room Baker           d8cf3fef-1d03-4b9c-9be0-fed44fb87596 Baker@M365x89521157.OnMicrosoft.com
+Bianca Pisani             7fe8c2d1-eb8e-4032-96ba-26242ff0acd9 BiancaP@M365x89521157.OnMicrosoft.com        
 ```
 
 ### View a specific account
@@ -62,263 +79,93 @@ be4bdddd-c790-424c-9f96-a0cf609b7815 Allan Deyoung                              
 To display a specific user account, run the following command. Fill in the sign-in account name of the user account, which is also known as the user principal name (UPN). Remove the "<" and ">" characters.
   
 ```powershell
-Get-AzureADUser -ObjectID <sign-in name of the user account>
+Get-MgUser -UserId '<user principal name>'
 ```
 
 Here's an example:
   
 ```powershell
-Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com
+Get-MgUser -UserId 'BelindaN@litwareinc.onmicosoft.com'
 ```
 
 ### View additional property values for a specific account
 
-By default, the **Get-AzureADUser** cmdlet only displays the *ObjectID*, *DisplayName*, and *UserPrincipalName* properties of accounts.
+By default, the **Get-MgUser** cmdlet only displays the *DisplayName*, *Id*, *Mail*, and *UserPrincipalName* properties of accounts.
 
-To be more selective about the properties to display, use the **Select** cmdlet in combination with the **Get-AzureADUser** cmdlet. To combine the two cmdlets, use the "pipe" character ("|"), which tells Azure Active Directory PowerShell for Graph to take the results of one command and send it to the next command. Here's an example command that displays the *DisplayName*, *Department*, and *UsageLocation* for every user account:
+To be more selective about the properties to display, use the **Select** cmdlet in combination with the **Get-MgUser** cmdlet. To combine the two cmdlets, use the "pipe" character ("|"), which tells PowerShell to take the results of one command and send it to the next command. Here's an example command that displays the *DisplayName*, *Department*, and *UsageLocation* for every user account:
   
 ```powershell
-Get-AzureADUser | Select DisplayName,Department,UsageLocation
+Get-MgUser -All | Select DisplayName,Department,UsageLocation
 ```
 
 This command instructs PowerShell to:
   
-1. Get all the information on the user accounts (**Get-AzureADUser**) and send it to the next command (**|**).
-    
-1.  Display only the user account name, department, and usage location (**Select DisplayName, Department, UsageLocation**).
+1. Get all the information on the user accounts (**Get-MgUser**) and send it to the next command (**|**).
+
+1. Display only the user account name, department, and usage location (**Select DisplayName, Department, UsageLocation**).
   
 To see all the properties for a specific user account, use the **Select** cmdlet and the wildcard character (*). Here's an example:
   
 ```powershell
-Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com | Select *
+Get-MgUser -UserID 'BelindaN@litwareinc.onmicosoft.com' | Select *
 ```
 
 As another example, run the following command to check the enabled status of a specific user account:
   
 ```powershell
-Get-AzureADUser -ObjectID <sign-in name of the user account> | Select DisplayName,UserPrincipalName,AccountEnabled
+Get-MgUser -UserID '<sign-in name of the user account>' | Select DisplayName,UserPrincipalName,AccountEnabled
 ```
 
 ### View account synchronization status
 
-User accounts have two sources: 
+User accounts have two sources:
 
 - Windows Server Active Directory (AD), which are accounts that sync from on-premises AD to the cloud.
 
-- Azure Active Directory (Azure AD) accounts, which are created directly in the cloud.
+- Microsoft Entra accounts, which are created directly in the cloud.
 
-You can use the following command to find accounts that are synchronizing from **on-premise** AD. It instructs PowerShell to get all users who have the attribute *DirSyncEnabled* set to *True*. 
+You can use the following command to find accounts that are synchronizing from **on-premise** AD. It instructs PowerShell to get all users who have the attribute *OnPremisesSyncEnabled* set to *True*.
 
 ```powershell
-Get-AzureADUser | Where {$_.DirSyncEnabled -eq $true}
+Get-MgUser -All -Filter 'OnPremisesSyncEnabled eq true'
 ```
 
-You can use the following command to find **cloud-only** accounts. It instructs PowerShell to get all users who have the attribute *DirSyncEnabled* set to *False* or not set (*Null*).
-An account that was never synced from on-premise AD has *DirSyncEnabled* set to *Null*. An account that was synced initially from on-premise AD but is no longer being synced has *DirSyncEnabled* set to *False*. 
+You can use the following command to find **cloud-only** accounts. It instructs PowerShell to get all users who have the attribute *OnPremisesSyncEnabled* set to *False* or not set (*Null*).
+An account that was never synced from on-premises AD has *OnPremisesSyncEnabled* set to *Null*. An account that was synced initially from on-premises AD but is no longer being synced has *OnPremisesSyncEnabled* set to *False*.
 
 ```powershell
-Get-AzureADUser | Where {$_.DirSyncEnabled -ne $true}
+Get-MgUser -All | Where OnPremisesSyncEnabled -ne true
+OnPremisesSyncEnabled
 ```
 
 ### View accounts based on a common property
 
-To be more selective about the list of accounts to display, you can use the **Where** cmdlet in combination with the **Get-AzureADUser** cmdlet. To combine the two cmdlets, use the "pipe" character ("|"), which tells Azure Active Directory PowerShell for Graph to take the results of one command and send it to the next command. Here's an example command that displays only those user accounts that have an unspecified usage location:
+To be more selective about the list of accounts to display, you can use the **Where** cmdlet in combination with the **Get-MgUser** cmdlet. To combine the two cmdlets, use the "pipe" character ("|"), which tells PowerShell to take the results of one command and send it to the next command. Here is an example command that displays only those user accounts that have an unspecified usage location:
   
 ```powershell
-Get-AzureADUser | Where {$_.UsageLocation -eq $Null}
+Get-MgUser | Where UsageLocation -eq $Null
 ```
 
-This command instructs Azure Active Directory PowerShell for Graph to:
+This command instructs PowerShell to:
   
-1. Get all the information on the user accounts (**Get-AzureADUser**) and send it to the next command (**|**).
-    
-1. Find all the user accounts that have an unspecified usage location (**Where {$\_.UsageLocation -eq $Null}**). Inside the braces, the command instructs PowerShell to only find the set of accounts for which the UsageLocation user account property (**$\_.UsageLocation**) is not specified (**-eq $Null**).
-    
+1. Get all the information on the user accounts (**Get-MgUser**) and send it to the next command (**|**).
+
+1. Find all the user accounts that have an unspecified usage location (**Where UsageLocation -eq $Null**). The command instructs PowerShell to only find the set of accounts for which the *UsageLocation* user account property (**UsageLocation**) is not specified (**-eq $Null**).
+
 The **UsageLocation** property is only one of many properties associated with a user account. To display all the properties for a specific user account, use the **Select** cmdlet and the wildcard character (*). Here's an example:
   
 ```powershell
-Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com | Select *
+Get-MgUser -UserID BelindaN@litwareinc.onmicosoft.com | Select *
 ```
 
 For example, **City** is the name of a user account property. You can use the following command to list all accounts of users who live in London:
   
 ```powershell
-Get-AzureADUser | Where {$_.City -eq "London"}
+Get-MgUser | Where City -eq "London"
 ```
 
 > [!TIP]
-> The syntax for the **Where** cmdlet in these examples is **Where {$\_.** [user account property name] [comparison operator] [value] **}**.> [comparison operator] is **-eq** for equals, **-ne** for not equals, **-lt** for less than, **-gt** for greater than, and others.  [value] is typically a string (a sequence of letters, numbers, and other characters), a numerical value, or **$Null** for unspecified. For more information, see [Where](/powershell/module/microsoft.powershell.core/where-object).
-
-## Use the Microsoft Azure Active Directory Module for Windows PowerShell
-
-First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
-
-### View all accounts
-
-To display the full list of user accounts, run this command:
-  
-```powershell
-Get-MsolUser
-```
-
->[!Note]
->PowerShell Core doesn't support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with *Msol* in their name. Run these cmdlets from Windows PowerShell.
->
-
-You should get information similar to this:
-  
-```powershell
-UserPrincipalName                     DisplayName           isLicensed
------------------                     -----------           ----------
-BonnieK@litwareinc.onmicrosoft.com    Bonnie Kearney        True
-FabriceC@litwareinc.onmicrosoft.com   Fabrice Canel         True
-BrianJ@litwareinc.onmicrosoft.com     Brian Johnson         False 
-AnneWlitwareinc.onmicrosoft.com       Anne Wallace          True
-ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
-```
-
-The **Get-MsolUser** cmdlet also has a set of parameters to filter the set of user accounts displayed. For example, for the list of unlicensed users (users who have been added to Microsoft 365 but haven't yet been licensed to use any of the services), run this command:
-  
-```powershell
-Get-MsolUser -UnlicensedUsersOnly
-```
-
-You should get information similar to this:
-  
-```powershell
-UserPrincipalName                     DisplayName           isLicensed
------------------                     -----------           ----------
-BrianJ@litwareinc.onmicrosoft.com     Brian Johnson         False
-ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
-```
-
-For information about additional parameters to filter the set of user accounts that are displayed, see [Get-MsolUser](/previous-versions/azure/dn194133(v=azure.100)).
-  
-### View a specific account
-
-To display a specific user account, run the following command. Fill in the sign-in name of the user account, which is also known as the user principal name (UPN). Remove the "<" and ">" characters.
-  
-```powershell
-Get-MsolUser -UserPrincipalName <sign-in name of the user account>
-```
-
-### View accounts based on a common property
-
-To be more selective about the list of accounts to display, you can use the **Where** cmdlet in combination with the **Get-MsolUser** cmdlet. To combine the two cmdlets, use the "pipe" character ("|"), which tells PowerShell to take the results of one command and send it to the next command. Here's an example that displays only those user accounts that have an unspecified usage location:
-  
-```powershell
-Get-MsolUser | Where {$_.UsageLocation -eq $Null}
-```
-
-This command instructs PowerShell to:
-  
-1. Get all the information on the user accounts (**Get-MsolUser**) and send it to the next command (**|**).
-    
-1. Find all user accounts that have an unspecified usage location (**Where {$\_.UsageLocation -eq $Null}**). Inside the braces, the command instructs PowerShell to find only the set of accounts for which the UsageLocation user account property (**$\_.UsageLocation**) is not specified (**-eq $Null**).
-    
-You should get information similar to this:
-  
-```powershell
-UserPrincipalName                     DisplayName           isLicensed
------------------                     -----------           ----------
-BrianJ@litwareinc.onmicrosoft.com     Brian Johnson         False 
-ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
-
-```
-
-The *UsageLocation* property is only one of many properties associated with a user account. To see all of the properties for user accounts, use the **Select** cmdlet and the wildcard character (*) to display them all for a specific user account. Here's an example:
-  
-```powershell
-Get-MsolUser -UserPrincipalName BelindaN@litwareinc.onmicosoft.com | Select *
-```
-
-For example, *City* is the name of a user account property. You can use the following command to list all of the user accounts for users who live in London:
-  
-```powershell
-Get-MsolUser | Where {$_.City -eq "London"}
-```
-
-> [!TIP]
-> The syntax for the **Where** cmdlet in these examples is **Where {$\_.** [user account property name] [comparison operator] [value] **}**.  [comparison operator] is **-eq** for equals, **-ne** for not equals, **-lt** for less than, **-gt** for greater than, and others.  [value] is typically a string (a sequence of letters, numbers, and other characters), a numerical value, or **$Null** for unspecified. For more information, see [Where](/powershell/module/microsoft.powershell.core/where-object).
-  
-To check the blocked status of a user account, use the following command:
-  
-```powershell
-Get-MsolUser -UserPrincipalName <UPN of user account> | Select DisplayName,BlockCredential
-```
-
-### View additional property values for accounts
-
-By default, the **Get-MsolUser** cmdlet displays these three properties of user accounts:
-  
-- UserPrincipalName
-
-- DisplayName
-
-- isLicensed
-
-If you need additional properties, such as the department where the user works and the country/region where they use Microsoft 365 services, you can run **Get-MsolUser** in combination with the **Select** cmdlet to specify the list of user account properties. Here's an example:
-  
-```powershell
-Get-MsolUser | Select DisplayName, Department, UsageLocation
-```
-
-This command instructs PowerShell to:
-  
-1. Get all the information about the user accounts (**Get-MsolUser**) and send it to the next command (**|**).
-    
-1. Display only the user account name, department, and usage location (**Select DisplayName, Department, UsageLocation**).
-    
-You should get information similar to this:
-  
-```powershell
-DisplayName             Department                       UsageLocation
------------             ----------                       -------------
-Bonnie Kearney          Sales & Marketing                    US
-Fabrice Canel           Legal                                US
-Brian Johnson
-Anne Wallace            Executive Management                 US
-Alex Darrow             Sales & Marketing                    US
-Scott Wallace           Operations
-```
-
-The **Select** cmdlet lets you choose what properties to display. To display all the properties for a specific user account, use the wildcard character (*). Here's an example:
-  
-```powershell
-Get-MsolUser -UserPrincipalName BelindaN@litwareinc.onmicosoft.com | Select *
-```
-
-To be more selective about the list of accounts to display, you can also use the **Where** cmdlet. Here's an example command that displays only those user accounts that have an unspecified usage location:
-  
-```powershell
-Get-MsolUser | Where {$_.UsageLocation -eq $Null} | Select DisplayName, Department, UsageLocation
-```
-
-This command instructs PowerShell to:
-  
-1. Get all the information about the user accounts (**Get-MsolUser**) and send it to the next command (**|**).
-    
-1. Find all user accounts that have an unspecified usage location (**Where {$\_.UsageLocation -eq $Null}**), and send the resulting information to the next command (**|**). Inside the braces, the command instructs PowerShell to only find the set of accounts for which the UsageLocation user account property (**$\_.UsageLocation**) is not specified (**-eq $Null**).
-    
-1. Display only the user account name, department, and usage location (**Select DisplayName, Department, UsageLocation**).
-    
-You should get information similar to this:
-  
-```powershell
-DisplayName              Department                      UsageLocation
------------              ----------                      -------------
-Brian Johnson 
-Scott Wallace            Operations
-```
-
-If you're using directory synchronization to create and manage your Microsoft 365 users, you can display the local account from which a Microsoft 365 user has been projected. The following example assumes that:
-
-- Azure AD Connect is configured to use the default source anchor of ObjectGUID. (For more information about configuring a source anchor, see [Azure AD Connect: Design concepts](/azure/active-directory/hybrid/plan-connect-design-concepts)).
-- The Active Directory Domain Services module for PowerShell has been installed (see [RSAT tools](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)).
-
-```powershell
-Get-ADUser ([guid][System.Convert]::FromBase64String((Get-MsolUser -UserPrincipalName <UPN of user account>).ImmutableID)).guid
-```
+> The syntax for the **Where** cmdlet in these examples is **Where** [user account property name] [comparison operator] [value] **value**.> [comparison operator] is **-eq** for equals, **-ne** for not equals, **-lt** for less than, **-gt** for greater than, and others.  [value] is typically a string (a sequence of letters, numbers, and other characters), a numerical value, or **$Null** for unspecified. For more information, see [Where](/powershell/module/microsoft.powershell.core/where-object).
 
 ## See also
 

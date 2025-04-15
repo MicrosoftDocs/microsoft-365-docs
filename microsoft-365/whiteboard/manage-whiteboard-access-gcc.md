@@ -1,14 +1,14 @@
 ---
 title: Manage access to Microsoft Whiteboard for GCC environments
-ms.author: v-jdeweese
+ms.author: alexfaulkner
 author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: 
 ms.date: 05/05/2022
 audience: admin
-ms.topic: article
+ms.topic: how-to
 ms.custom: 
-ms.service: microsoft-365-enterprise
+ms.service: whiteboard
 search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
@@ -21,7 +21,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 >[!NOTE]
 > This guidance applies to US Government Community Cloud (GCC) environments.
 
-Microsoft Whiteboard on OneDrive for Business is enabled by default for applicable Microsoft 365 tenants. It can be enabled or disabled at a tenant-wide level. You should also ensure that **Microsoft Whiteboard Services** is enabled in the **Azure Active Directory admin center** > **Enterprise applications**.
+Microsoft Whiteboard on OneDrive for Business is enabled by default for applicable Microsoft 365 tenants. It can be enabled or disabled at a tenant-wide level. You should also ensure that **Microsoft Whiteboard Services** is enabled in the **Microsoft Entra admin center** > **Enterprise applications**.
 
 The following URLs are required:
 
@@ -40,7 +40,7 @@ You can control access to Whiteboard in the following ways:
 
 - Show or hide Whiteboard for specific users in meetings using a Microsoft Teams meeting policy. It will still be visible via the web, native clients, and the Teams tab app.
 
-- Require conditional access policies for accessing Whiteboard using the Azure Active Directory admin center.
+- Require conditional access policies for accessing Whiteboard using the Microsoft Entra admin center.
 
 >[!NOTE]
 > Teams meeting policy only hides Whiteboard entry points. It doesn't prevent users from using Whiteboard. Conditional access policies prevent access to Whiteboard, but doesn't hide the entry points.

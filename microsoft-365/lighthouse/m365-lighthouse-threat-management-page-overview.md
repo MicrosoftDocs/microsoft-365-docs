@@ -4,10 +4,10 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: ragovind
-ms.date: 06/21/2023
+ms.reviewer: prpath
+ms.date: 10/27/2023
 audience: Admin
-ms.topic: article
+ms.topic: concept-article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
@@ -15,6 +15,7 @@ ms.collection:
 - scotvorg
 - M365-subscription-management
 - Adm_O365
+- essentials-manage
 ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
@@ -31,6 +32,9 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 Microsoft Defender Antivirus protects tenants, users, and devices from software threats including viruses, malware, and spyware. It's robust, ongoing protection that's built into Windows.  
   
 To access the Threat management page in Microsoft 365 Lighthouse, select **Devices** > **Threat management** in the left navigation pane to view your customer tenants' security posture against threats. You'll see tenants, users, and devices that require your attention and recommendations that will help you reduce risk.  
+
+> [!NOTE]
+> This page provides the number of tenants for which data is unavailable because they do not have the required licenses.
   
 ## Overview tab  
   
@@ -57,7 +61,7 @@ The following table lists the different threat statuses and their definition:<br
 |---|---|
 | Active | Threat is active on the device. |
 | No status | Threat status is unavailable. Run a full scan on the device to have Microsoft Defender Antivirus redetect the threat. |
-| Action failed | The device is not at risk. An action has failed but a potential threat has been stopped and isn't active on the device. Run a full scan on the device. |
+| Action failed | The device isn't at risk. An action has failed but a potential threat has been stopped and isn't active on the device. Run a full scan on the device. |
 | Manual steps required | The threat has been stopped but it requires a manual step to be completed, such as a full scan or a reboot of the device. |
 | Full scan required | A full scan of the device is required. |
 | Reboot required | A reboot of the device is required. |

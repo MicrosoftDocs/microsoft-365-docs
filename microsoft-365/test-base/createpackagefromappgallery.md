@@ -16,7 +16,10 @@ ms.reviewer: Tinacyt
 f1.keywords: NOCSH
 ---
 
-# Create Package from App Gallery #
+# Create Package from App Gallery 
+
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
 This section provides the steps necessary to onboard a package from App Gallery onto Test Base. 
 > [!IMPORTANT]
 > If you do not have a Test Base account, you will need to create one before proceeding, as described in Creating a Test Base Account. 

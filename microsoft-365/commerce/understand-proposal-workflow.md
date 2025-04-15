@@ -1,14 +1,15 @@
 ---
-title: "Understand the proposal workflow"
+title: "Understand the Microsoft proposal workflow"
 f1.keywords:
 - CSH
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: mijeffer, nicholak
+ms.reviewer: titung, jihobert
 audience: Admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-volume-licensing
 ms.localizationpriority: medium
 ms.collection: 
 - Tier1
@@ -18,22 +19,22 @@ ms.collection:
 ms.custom: 
 - commerce_purchase
 - AdminSurgePortfolio
+- admindeeplinkMAC
+- GAUpdates
+- campaignIDs-batch2
 search.appverid: MET150 
-description: "Learn about proposals to help you buy Microsoft products and services."
+description: "Learn about the proposal workflow used when you buy Microsoft business products and services. Discover how to review and approve proposals."
 ROBOTS: NOINDEX
-ms.date: 07/11/2022
+ms.date: 03/26/2025
 ---
 
 # Understand the Microsoft proposal workflow
 
-A proposal is a formal offer from Microsoft for your organization to buy Microsoft products and services. Proposals represent large orders that your organization's procurement or IT department place with Microsoft.
+A proposal is a formal offer from Microsoft for your organization to buy Microsoft business products and services. Proposals represent large orders that your organization's procurement or IT department place with Microsoft.
 
-Before the proposal workflow begins, your procurement department works directly with a designated Microsoft representative to determine the specific products and services your organization needs. Next, your Microsoft representative drafts a proposal and sends your procurement department an email with a link to accept the proposal in the Azure marketplace portal. The site contains the proposal prepared specifically for you and your organization.
+Before the proposal workflow begins, your procurement department works directly with a designated Microsoft representative to determine the specific products and services your organization needs. Next, your Microsoft representative drafts a proposal and sends your procurement department an email with a link to accept the proposal in the Azure Marketplace portal. The site contains the proposal prepared specifically for you and your organization.
 
-After you follow the link and sign in to the proposal site, you can start the proposal review process. After you complete the proposal review and check out, you receive an invoice for the purchased products as per the billing plan you selected. To learn how billing works for proposals, see [Understand invoicing](#understand-invoicing) below.
-
-> [!IMPORTANT]
-> Starting on April 1, 2023, we will stop accepting checks as a payment method for subscriptions paid by invoice. Beginning on that date, pay by check will no longer be available as a payment option, and check payment instructions will be removed from invoices. You can still pay for your invoice by electronic funds transfer (EFT). See your invoice for EFT payment information. If you're an existing customer who currently pays by check, you have until September 30, 2023 to change to paying by EFT, and avoid possible service disruption.
+After you follow the link and sign in to the proposal site, you can start the proposal review process. After you complete the proposal review and check out, you receive an invoice for the purchased products as per the billing plan you selected. To learn how billing works for proposals, see [Understand invoicing](#understand-invoicing) later in this article.
 
 ## Prerequisites for buying items with a proposal
 
@@ -43,7 +44,9 @@ Before you can buy items for a proposal, you must have a billing account and an 
 
 You use a billing account to manage your account settings, invoices, billing profiles, and products and services. If you don't already have a billing account, your Microsoft representative creates one for you. Otherwise, they use an existing billing account for your organization, so long as you have permission to use that billing account.
 
-Billing account permissions are managed by the billing account owner. Global admins can assign themselves to the billing account owner role, and then make other people billing account owners.
+Billing account permissions are managed by the Billing account owner. Global Administrators can assign themselves to the Billing account owner role, and then make other people Billing account owners.
+
+[!INCLUDE [ga-roles-limitation](../includes/ga-roles-limitation.md)]
 
 For more information about billing accounts, see [Understand your Microsoft business billing account](manage-billing-accounts.md).
 
@@ -53,9 +56,9 @@ The Microsoft Customer Agreement (MCA) lets an organization buy Microsoft produc
 
 ## Permissions needed to sign an agreement or pay for items
 
-You must be a billing account owner or billing account contributor to successfully sign an agreement or buy products and services. If you're a Global admin but don't have one of those roles, you can assign the roles to yourself. If you're not a Global admin, ask your Global admin, or billing account owner to assign one of the roles to you.
+You must be a billing account owner or billing account contributor to successfully sign an agreement or buy products and services. If you're a Global Administrator but don't have one of those roles, you can assign the roles to yourself. If you're not a Global Administrator, ask your Global Administrator or Billing account owner to assign one of the roles to you.
 
-The billing account owner and billing account contributor roles are assigned by using either of the following methods.
+The Billing account owner and Billing account contributor roles are assigned by using either of the following methods.
 
 ### Assign roles in the Microsoft 365 admin center
 
@@ -77,7 +80,7 @@ If this is a new billing account, and no one has accepted an agreement, you auto
 
 - Are the person named in the proposal
   or
-- Are already an [Azure Active Directory global admin](/azure/active-directory/roles/permissions-reference#global-administrator) for your organization
+- Are already a [Microsoft Entra global admin](/azure/active-directory/roles/permissions-reference#global-administrator) for your organization
 
 ## What is the overall workflow?
 
@@ -114,7 +117,7 @@ After you sign in, the first thing you do is review your organization's informat
 
 The **Your organization** section displays the billing account associated with it. The billing account information is either pulled from an existing billing account or created for you by the Microsoft representative. If your organization is an affiliate of another organization, you also see a **Lead organization** section with the name and address of that organization.
 
-If this order is the first time your organization is establishing a commercial relationship with Microsoft, and you haven't yet signed an MCA, if the information under **Your organization** or **Lead organization** is incorrect, contact the representative to make changes for you. After you've accepted an MCA, you can review and change your organization's address and contact information on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing accounts</a> page in the Microsoft 365 admin center. If your organization name changes, open a support request to have it updated. [Learn how to open a support request](../admin/get-help-support.md).
+If this order is the first time your organization is establishing a commercial relationship with Microsoft, and you haven't signed an MCA, if the information under **Your organization** or **Lead organization** is incorrect, contact the representative to make changes for you. After you accept an MCA, you can review and change your organization's address and contact information on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing accounts</a> page in the Microsoft 365 admin center. If your organization name changes, open a support request to update it. [Learn how to open a support request](../admin/get-help-support.md).
 
 ### Your information
 
@@ -136,17 +139,21 @@ The proposal contains the following information:
 | Section | Description |
 |---|---|
 | Organization name | The name of the organization for whom the proposal was prepared. |
-| Valid until date | The date at which the proposal offer expires. If you miss this expiration date, contact your Microsoft representative to let them know that you're still interested in the proposal. |
+| Valid until date | The date on which the proposal offer expires. If you miss this expiration date, contact your Microsoft representative to let them know that you're still interested in the proposal. |
 | Currency | The currency used to calculate the cost of items in the proposal. |
 | Prepared for | The billing account name, address, contact email address, and phone number of the person who requested the proposal. |
 | Prepared by | The email address of the Microsoft representative who prepared the proposal. |
-| Summary | Shows the subtotal associated with the proposal. If necessary, it will also show the foreign exchange (FX) rate that is used to calculate costs. |
+| Summary | Shows the subtotal associated with the proposal. If necessary, it also shows the foreign exchange (FX) rate that is used to calculate costs. |
 | Proposal line items | This section contains the quantity, unit price, and subtotal of all items included in the proposal. |
 | Next step | This section indicates the necessary action you must take. |
 
 To sign an MCA, select the button under **Next Step**. If you must sign supplemental terms, a link takes you to the DocuSign site, where you follow the steps to sign the document.
 
-After you've signed any necessary agreements or supplemental terms, select **Go to checkout**.
+After you sign any necessary agreements or supplemental terms, select **Go to checkout**.
+
+### Understand invoicing for future start dates
+
+Sales proposals might include subscriptions that start on a future date. A future start date aligns the start date of a new subscription with the end date of a previous subscription. If your proposal contains subscriptions that start on a future date, you receive an invoice for those subscriptions only when the future start date arrives. Using a future start date ensures that you aren't billed for items that you don't own yet. New subscriptions start on the future start date specified in the proposal. On the start date of the new subscription, we send you an email to let you know that your new subscription is now active and your billing for this subscription begins immediately. Your next invoice reflects the new charges plus applicable taxes for the new subscription.
 
 ## Step 3: Checkout
 
@@ -163,7 +170,7 @@ To learn more about Tax IDs, and how to apply for tax-exempt status, see
 
 This section shows the billing profile used to determine what items are included on your invoice, and how you pay your invoices. Each billing cycle, you receive a separate invoice for each billing profile. You pay for invoices by using either check or wire transfer, or Azure prepayment. If you don't already have a billing profile, your Microsoft representative creates one for you. During checkout, you can select a different billing profile, if you have one, change the name of the billing profile, or add a P.O. number. You can also create a new billing profile.
 
-For information about billing profiles, see [Manage billing profiles](billing-and-payments/manage-billing-profiles.md).
+For information about billing profiles, see [Manage your Microsoft business billing profiles](billing-and-payments/manage-billing-profiles.md).
 
 ### Proposal items in this order
 
@@ -175,7 +182,7 @@ This section shows a list of all items included in the proposal, which can inclu
 - **Included** A list of items included as part of the proposal package at no extra charge. Some of these items might have a cost associated with them in the future.
 
 > [!NOTE]
-> Your proposal might include subscriptions with a future start date. For more information, see [Understand invoicing for future start dates](billing-and-payments/future-start-date.md).
+> Your proposal might include subscriptions with a future start date. For more information, see [Understand invoicing for future start dates](#understand-invoicing-for-future-start-dates).
 
 ### Summary
 
@@ -187,12 +194,16 @@ After you place the order, you receive a confirmation with next steps to take. I
 
 ## Step 4: Set up your new billing account (Azure customers only)
 
-If you're a new customer and have bought Azure products as part of the proposal, your next step is to set up your new billing account. To learn how, see [Set up your billing account for a Microsoft Customer Agreement](/azure/cost-management-billing/manage/mca-setup-account).
+If you're a new customer and bought Azure products as part of the proposal, your next step is to set up your new billing account. To learn how, see [Set up your billing account for a Microsoft Customer Agreement](/azure/cost-management-billing/manage/mca-setup-account).
 
-If you're an existing Azure customer with an Enterprise Agreement, and you're signing an MCA for the first time, your next step is to learn about the changes between the agreements, and how to complete tasks with your new billing account. To learn more, see [Complete Enterprise Agreement tasks in your billing account for a Microsoft Customer Agreement](/azure/cost-management-billing/manage/mca-enterprise-operations).
+If you're an existing Azure customer with an Enterprise Agreement, and you're signing an MCA for the first time, your next step is to learn about the changes between the agreements and how to complete tasks with your new billing account. To learn more, see [Complete Enterprise Agreement tasks in your billing account for a Microsoft Customer Agreement](/azure/cost-management-billing/manage/mca-enterprise-operations).
 
 ## Understand invoicing
 
 After you check out and complete your order, an initial invoice is sent within 24-48 hours. After that, you receive invoices around the fifth of every month. The monthly invoice contains charges from the previous month. If you have any credits for your account, they're deducted from your billing profile's monetary credits, and applied to your invoice balance. The remaining balance after credits are applied is the balance due. You have 30 days from the billing date to pay the invoice.
 
 Payment instructions for where to send check or wire transfers are included in the PDF copy of your invoice. To view or download your invoice, see [View your bill or invoice](billing-and-payments/view-your-bill-or-invoice.md).
+
+## Accessing your proposals
+
+You can access a list of currently active and completed proposals in the Microsoft 365 admin center. To see a list of your proposals, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing accounts</a> page, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2253461" target="_blank">Proposals</a> tab. From there, you can see a list of all your active and completed proposals, filter by proposal state, and search for proposals by name. Select a proposal to open the proposal and accept it, if active, or review it, if completed.

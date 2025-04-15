@@ -3,22 +3,25 @@ title: "Cmdlet references for Microsoft 365 services"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 07/16/2020
+ms.date: 06/27/2024
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 ms.collection: 
 - scotvorg
 - Ent_O365
+- must-keep
 f1.keywords:
 - CSH
 ms.custom:
   - Ent_Office_Other
   - seo-marvel-apr2020
   - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
-description: Find Microsoft 365 PowerShell cmdlet references for Azure AD, Exchange Online, SharePoint Online, Skype for Business Online, and Security & Compliance.
+description: Find Microsoft 365 PowerShell cmdlet references for Microsoft Graph, Exchange Online, SharePoint Online, Skype for Business Online, and Security & Compliance.
 ---
 
 # Cmdlet references for Microsoft 365 services
@@ -30,11 +33,9 @@ This article provides cmdlet references for the various Microsoft 365 services a
 > [!NOTE]
 > To connect to all services at once, see [Connect to all Microsoft 365 services in a single Windows PowerShell window](connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window.md).
 
-## Azure Active Directory PowerShell cmdlets
+## Microsoft Graph PowerShell cmdlets
 
-The Azure Active Directory PowerShell for Graph cmdlet reference topics are in the Reference section of the [Azure Active Directory PowerShell for Graph documentation](/powershell/azure/active-directory/install-adv2).
-
-The Azure Active Directory Module for Windows PowerShell cmdlet reference topics is in the Reference section of the [Azure Active Directory (MSOnline) documentation](/powershell/azure/active-directory/overview).
+The [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview) for Graph cmdlet reference topics are in the Reference section of the Microsoft Graph PowerShell for Graph documentation.
 
 For Microsoft 365 PowerShell connection instructions, see [Connect to Microsoft 365 with PowerShell](connect-to-microsoft-365-powershell.md).
 

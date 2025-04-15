@@ -23,9 +23,9 @@ metadata:
   description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, get answers to frequently asked questions (FAQs) about Microsoft 365 Lighthouse."
 title: Microsoft 365 Lighthouse frequently asked questions (FAQs)
 summary: |
-  Last updated July 17, 2023. This article contains answers to frequently asked questions (FAQs) about Microsoft 365 Lighthouse.
+  Last updated August 27, 2024. This article contains answers to frequently asked questions (FAQs) about Microsoft 365 Lighthouse.
   
-  If you can't find an answer to your question, let us know by leaving a comment and we'll add it to this article.
+  If you can't find an answer to your question, let us know by providing feedback and we'll add it to this article.
   
 
 sections:
@@ -33,21 +33,18 @@ sections:
     questions:
       - question: What is Microsoft 365 Lighthouse?
         answer: |
-          Microsoft 365 Lighthouse helps Managed Service Providers (MSPs) grow their business and deliver services to customers at scale from a single portal. With Lighthouse, you can standardize configurations, manage risk, identify artificial intelligence (AI)-driven sales opportunities, and engage with customers in an unprecedented manner, allowing you to anticipate customers needs and maximize their investment in Microsoft 365.  
+          Microsoft 365 Lighthouse helps Managed Service Providers (MSPs) grow their business and deliver services to customers at scale through proactive account management, simplified onboarding, efficient tenant configuration, device protection, and alerts. Lighthouse provides insights into customer acquisition, retention, and growth opportunities, as well as multi-tenant views across customer devices, data, and users to help you anticipate customer needs and maximize their investment in Microsoft 365.  
           
-          For MSP service technicians with delegated access, Lighthouse helps you secure and manage devices, data, and users at scale for small- and medium-sized business (SMB) customers. Lighthouse simplifies onboarding of tenants by recommending security configuration baselines tailored to SMBs and providing multi-tenant views across all customer environments.
+          For MSP service technicians with delegated access, Lighthouse helps you secure and manage devices, data, and users at scale for small and medium business (SMB) customers. Lighthouse simplifies onboarding of tenants by recommending security configuration baselines tailored to SMBs and providing multi-tenant views across all customer environments.
           
           For account managers, sales professionals, and customer success users, the Sales Advisor capability within Lighthouse uses artificial intelligence (AI) to analyze your customer base and apply data models—built by Microsoft data scientists—to identify opportunities where you can engage, nurture, and grow your customer's Microsoft 365 usage through actionable recommendations and prescriptive guidance. 
           
           For more information, see [Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md).
           
-      - question: What's the difference between Microsoft 365 Lighthouse and Azure Lighthouse?
-        answer: |
-          Microsoft 365 Lighthouse is focused on Microsoft 365 services rather than Azure services. While Azure Lighthouse is built into the Azure portal and allows IT partners to manage multiple tenants for Azure, Microsoft 365 Lighthouse is a standalone portal that helps MSPs manage multiple Microsoft 365 customer tenants. For more information about Microsoft 365 Lighthouse, see [Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md). For more information about Azure Lighthouse, see [What is Azure Lighthouse?](/azure/lighthouse/overview)
-          
+
       - question: How much does Microsoft 365 Lighthouse cost?
         answer: |
-          No additional costs are associated with using Lighthouse to manage multiple Microsoft 365 customer tenants. Lighthouse is available to MSPs servicing small- to medium-sized businesses and who have a Cloud Solution Provider (CSP) relationship with their customers. Note that indirect providers aren't currently supported by Lighthouse. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+          No additional costs are associated with using Lighthouse to manage multiple Microsoft 365 customer tenants. Lighthouse is available to MSPs servicing small- to medium-sized businesses and who have a Cloud Solution Provider (CSP) relationship with their customers. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
       - question: What are the requirements to use Microsoft 365 Lighthouse?
         answer: |
@@ -55,19 +52,17 @@ sections:
 
       - question: In which countries and regions is Microsoft 365 Lighthouse available?
         answer: |
-          Lighthouse is available in all countries where Microsoft 365 is available, except China and Palestinian Authority. However, features in Lighthouse such as device management and threat management rely on Microsoft Intune, and user management relies on Azure Active Directory (Azure AD), and Intune and Azure AD may not be available in certain countries and regions. For a complete list of Microsoft 365, Azure AD, and Intune availability, see [International availability](https://www.microsoft.com/microsoft-365/business/international-availability).
+          Lighthouse is available in all countries where Microsoft 365 is available, except China and Palestinian Authority. However, features in Lighthouse such as device management and threat management rely on Microsoft Intune, and user management relies on Microsoft Entra ID, and Intune and Microsoft Entra ID may not be available in certain countries and regions. For a complete list of Microsoft 365, Microsoft Entra ID, and Intune availability, see [International availability](https://www.microsoft.com/microsoft-365/business/international-availability).
 
           Lighthouse is not available in national clouds.
 
       - question: How do I sign up for Microsoft 365 Lighthouse?
         answer: |
-          To sign up for Lighthouse, you'll need to be enrolled in the Cloud Solution Provider (CSP) program as an Indirect Reseller or Direct Bill partner. For instructions on how to sign up, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md). To learn more about the CSP program, see the [Cloud Solution Provider program overview](/partner-center/csp-overview).
+          To sign up for Lighthouse, you'll need to be enrolled in the Cloud Solution Provider (CSP) program as an Indirect Reseller or Direct Bill partner. For instructions on how to sign up, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md). To learn more about the CSP program, see the [Cloud Solution Provider program overview - Partner Center](/partner-center/csp-overview).
 
-      - question: Will Microsoft 365 Lighthouse work if my customer tenants have other subscriptions besides Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Business, or Microsoft Defender for Business?
+      - question: Will Microsoft 365 Lighthouse work if my customer tenants have a mix of subscriptions?
         answer: |
-         You can use Lighthouse to actively manage users and devices within your customer tenants if they have at least one license of Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Business, or Microsoft Defender for Business. Customer tenants that don't have the required licenses will have access to only a limited set of experiences in Lighthouse, including GDAP setup and management, user search, user details, tenant tagging, and service health.
-         
-         Lighthouse capabilities will vary based on the licenses assigned to the user. For example, if a user is missing a license that includes Intune, that user's devices, device compliance status, and threats status will be unavailable; and if a user is missing a license that includes Azure AD P1, that user's password and sign-in management will be unavailable. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).        
+         Yes, however Lighthouse capabilities will vary based on the licenses assigned to the user. For example, if a user is missing a license that includes Intune, that user's devices, device compliance status, and threats status will be unavailable; and if a user is missing a license that includes Microsoft Entra ID P1, that user's password and sign-in management will be unavailable. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).        
           
   - name: Managing customer tenants
     questions:          
@@ -77,21 +72,55 @@ sections:
           
       - question: Why do I see data for some customer tenants but not others?
         answer: |
-          For customer tenant data to show up in Lighthouse, MSPs must establish delegated access to manage the customer tenant. Either granular delegated admin privileges (GDAP) plus an indirect reseller relationship or a delegated admin privileges (DAP) relationship is required to onboard customers to Lighthouse. We recommend establishing GDAP with your customers to allow more secure delegated access. If DAP and GDAP coexist in a customer tenant, GDAP permissions take precedence for MSP technicians in GDAP-enabled security groups. Coming soon, customers with GDAP-only relationships (without indirect reseller relationships) will be able to onboard to Lighthouse. For more information on delegated access, see [Request a reseller relationship with a customer in Partner Center](/partner-center/request-a-relationship-with-a-customer). Tenants also must have at least one Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Business, or Microsoft Defender for Business license and no more than 2500 licensed users in their tenant. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) and [Overview of the Tenants page in Microsoft 365 Lighthouse](m365-lighthouse-tenants-page-overview.md).
+          For customer tenant data to show up in Lighthouse, MSPs must establish delegated access to manage the customer tenant. Either granular delegated administrative privileges (GDAP) plus an indirect reseller relationship or a delegated administrative privileges (DAP) relationship is required to onboard customers to Lighthouse. We recommend establishing GDAP with your customers to allow more secure delegated access. If DAP and GDAP coexist in a customer tenant, GDAP permissions take precedence for MSP technicians in GDAP-enabled security groups. For more information on delegated access, see [Request a reseller relationship with a customer in Partner Center](/partner-center/request-a-relationship-with-a-customer). Tenants also must have at least one Enterprise, Business, Frontline, or Education subscription of Microsoft 365, Office 365, Exchange Online, Windows 365 Business, or Microsoft Defender for Business and no more than 2500 licensed users in their tenant. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) and [Overview of the Tenants page in Microsoft 365 Lighthouse](m365-lighthouse-tenants-page-overview.md).
 
-          If GDAP is established with the customer, an MSP technician must be in a GDAP-enabled security group that is assigned the appropriate roles to be able to manage that customer's data in Lighthouse. GDAP roles assigned to that security group impact which customer data can be managed within Lighthouse. See [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md) for details on which delegated and partner tenant roles are recommended to use Lighthouse. For instructions on how to view which GDAP roles have been assigned to you for different customer tenants in Lighthouse, see [View your Azure Active Directory roles in Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md).   
+          If GDAP is established with the customer, an MSP technician must be in a GDAP-enabled security group that is assigned the appropriate roles to be able to manage that customer's data in Lighthouse. GDAP roles assigned to that security group impact which customer data can be managed within Lighthouse. See [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md) for details on which delegated and partner tenant roles are recommended to use Lighthouse. For instructions on how to view which GDAP roles have been assigned to you for different customer tenants in Lighthouse, see [View your Microsoft Entra roles in Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md).   
          
       - question: What if I don't want to see certain tenants in Microsoft 365 Lighthouse?
         answer: |
-          If you don't want to see certain tenants and their data in Lighthouse, you can inactivate those tenants. To inactivate a tenant, follow these steps:
+          If you don't want to see certain tenants and their data in Lighthouse, you can remove those tenants. To remove a tenant, follow these steps:
           
-          1. In the left navigation pane in Lighthouse, select **Tenants** to open the **Tenants** page.
-          2. Find the tenant that you want to inactivate, select the three dots (more actions) next to the tenant name, and then select **Inactivate tenant**.
-          3. In the confirmation dialog, select **Confirm** to inactivate the tenant.
+          1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Tenants** to open the **Tenants** page.
+          2. Find the tenant that you want to remove, select the three dots (more actions) next to the tenant name, and then select **Remove tenant**.
+          3. In the confirmation dialog, select **Confirm** to remove the tenant.
               > [!NOTE]
-              > Once you inactivate a tenant, you can't take action on the tenant until inactivation is complete. It may take up to 48 hours for inactivation to complete.
+              > Once you remove a tenant, you can't take action on the tenant until the removal process is complete. It may take up to 48 hours for this process to complete.
           
           To learn more about tenants, see [Microsoft 365 Lighthouse tenants page overview](m365-lighthouse-tenants-page-overview.md).
+          
+      - question: What permissions do I currently have for this tenant?
+        answer: |
+          If you can't access tenant information, you may not have the correct permissions for that tenant. Some features and data are only visible to specific roles. To view what roles you have, see [View your Microsoft Entra roles across tenants](m365-lighthouse-view-your-roles.md).
+
+      - question: Can I use Microsoft 365 Lighthouse to manage my partner tenant?
+        answer: |
+          No, you can only use Lighthouse to manage customer tenants that you have a reseller or GDAP relationship with.
+
+  - name: Understanding alerts
+    questions:          
+      - question: Why are there comments that I didn't add on my alerts?
+        answer: |
+          Lighthouse adds comments whenever the system makes a change or updates an alert. Likewise, if a user takes an action on an alert, this is also noted in a comment. These comments provide a running history of all actions taken on the alert.
+          
+      - question: I resolved an alert in the associated service portal. Why am I still seeing the alert in Lighthouse?
+        answer: |
+          Lighthouse alerts are based on the underlying entity (for example, device or user) and do not correlate to alerts in the associated service portal. If you resolve an alert in the associated service portal but don't make a change to the underlying entity, then the Lighthouse alert remains unchanged. If you make a change to the underlying entity, then the Lighthouse alert status changes to **Resolved**.
+ 
+      - question: Why do alerts show up again after they're dismissed or resolved?
+        answer: |
+          If an alert is resolved but the underlying issue reappears, the alert triggers again and the status changes to **New**. For example, if a risky user alert is resolved, but then the same risky user triggers a new alert with new risky behavior, the alert status changes from **Resolved** to **New**. 
+          
+          When an alert is dismissed in Lighthouse, the triggering entity (for example, user or device) won't retrigger the same alert for 30 days. After 30 days, any new activity on that entity changes the alert status from **Dismissed** to **New**. 
+
+      - question: When are alert notification emails sent?
+        answer: |
+          Lighthouse monitors all corresponding service portals across MSPs and their customers. The exact time an alert appears and a notification email is sent varies and is based on the alert rule engine, but MSPs should typically see a new alert appear on the **Alerts** page in Lighthouse and receive an email notification within minutes of the triggering event. 
+          
+      - question: What do the timestamps indicate on Lighthouse alerts?
+        answer: |
+          The time stamp in the **First detected** column indicates the first time the issue was detected by Lighthouse. This time stamp may be slightly different than the time stamp for the alert in the associated service portal. 
+          
+          The time stamp in the **Last updated** column indicates the time that the issue was last detected by Lighthouse.  
 
   - name: Deploying baselines
     questions:          
@@ -119,15 +148,15 @@ sections:
           - Change the deployment state of the existing configuration to **Enabled**.
             1. In the customer tenant's deployment plan, select the applicable sub-task to open the task details pane, and then select **Detection history**.
             2. Select the most recent scan of the tenant to view the tenant configuration.
-            3. Select the configuration for which you want to update the deployment state to open the configuration in Azure Active Directory (Azure AD).
+            3. Select the configuration for which you want to update the deployment state to open the configuration in Microsoft Entra ID.
             4. Change **Enable policy** to **On**, and then select **Save**.
             5. Return to the task details pane in Lighthouse, and then select **Run detection** to update the deployment status.
 
           - Delete the existing configuration, and then deploy a new configuration.
             1. In the customer tenant's deployment plan, select the applicable sub-task to open the task details pane, and then select **Deploy**.
             2. Select **Next** to proceed to the **Review detected configurations** page.
-            3. From the list of detected configurations, select the applicable configuration to open it in Azure AD.
-            4. Delete the configuration in Azure AD.
+            3. From the list of detected configurations, select the applicable configuration to open it in Microsoft Entra ID.
+            4. Delete the configuration in Microsoft Entra ID.
             5. Return to the **Review detected configurations** page in Lighthouse, and then select **Refresh** to refresh the detected configurations.
             6. Select **Next** to confirm and deploy.
 
@@ -151,8 +180,8 @@ sections:
           - Delete the existing configuration.
             1. In the customer tenant's deployment plan, select the applicable sub-task to open the task details pane, and then select **Deploy**.
             2. Select **Next** to proceed to the **Review detected configurations** page.
-            3. From the list of detected configurations, select the applicable configuration to open it in Azure Active Directory (Azure AD).
-            4. Delete the configuration in Azure AD.
+            3. From the list of detected configurations, select the applicable configuration to open it in Microsoft Entra ID.
+            4. Delete the configuration in Microsoft Entra ID.
             5. On the **Review detected configurations** page in Lighthouse, select **Refresh** to refresh the detected configurations.
             6. Select **Next** to confirm and deploy.
 
@@ -172,7 +201,7 @@ sections:
             3. Select **Next** to review the detected configurations, and then proceed to confirm and deploy.
 
           - Enable deployment by assigning licenses for the required services to the applicable users.
-            1. In the left navigation pane in Lighthouse, select **Users** > **Account management**, and then search for the unlicensed user.
+            1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Users** > **Account management**, and then search for the unlicensed user.
             2. Select the appropriate user to open the user details pane, and then select **Licenses and apps**.
             3. Select the licenses that are required by the deployment task, and then select **Save changes**.
             4. Repeat these steps for each applicable user.
@@ -201,29 +230,29 @@ sections:
         answer: |
           Tasks are **Not compliant** if there are one or more users for which one or more settings in the assigned configuration are either **Missing** or **Not compliant**.
 
-          To investigate and resolve a **Not compliant** deployment task:
+          To investigate and resolve a deployment task that's **Not compliant**:
           
           1. Open the customer tenant's deployment plan, and then select the task you want to investigate to open the task details pane.
-          2. Select **User progress** to see which users have a status of **Not compliant** or **Not licensed**. To resolve **Not licensed** users, either assign them the required license or exclude them from the assignment of the task.
-          3. If there are any users that are **Not compliant**, select **Detection history**, and then select the most recent scan of the tenant to view the tenant configuration.
+          2. Select **User progress** to see which users have a status of **Not compliant** or **Not licensed**. To resolve users who are **Not licensed**, either assign them the required license or exclude them from the assignment of the task.
+          3. If there are any users who are **Not compliant**, select **Detection history**, and then select the most recent scan of the tenant to view the tenant configuration.
 
               The tenant configuration will identify which settings within which policy for which users are either **Missing** or **Not compliant**.
 
           4. Do one of the following:
-              - To resolve **Missing** settings, add the missing settings to the configuration.
-              - To resolve **Not compliant** settings, update the value of the applicable settings to match the value in the deployment task, and then select **Run detection** from the task details pane.
+              - To resolve settings that are **Missing**, add the missing settings to the configuration.
+              - To resolve settings that are **Not compliant**, update the value of the applicable settings to match the value in the deployment task, and then select **Run detection** from the task details pane.
 
-      - question: Why do one or more deployment tasks have a status of "Not complete"?
+      - question: Why do one or more deployment plans have a status of "Not complete"?
         answer: |
-          Deployment plans are **Not complete** if there are one or more tasks that are either **Not licensed** or **Not compliant**. 
+          Deployment plans are **Not complete** if there are one or more tasks that are **Not licensed** or **Not compliant**. 
           
-          To investigate and resolve a **Not complete** deployment plan:
+          To investigate and resolve a deployment plan that's **Not complete**:
         
           1. Open the customer tenant's deployment plan to view the status of the assigned deployment tasks.
 
           2. Review each deployment task that has a status of **Not licensed** or **Not compliant**, and then do one of the following:
-              - To resolve **Not licensed** deployment tasks, either assign the required license to each of the targeted users or dismiss the task from the deployment plan.
-              - To resolve **Not compliant** deployment tasks, either complete the deployment of the task or dismiss the task from the deployment plan.
+              - To resolve deployment tasks that are **Not licensed**, either assign the required license to each of the targeted users or dismiss the task from the deployment plan.
+              - To resolve deployment tasks that are **Not compliant**, either complete the deployment of the task or dismiss the task from the deployment plan.
 
       - question: Why is Lighthouse still reporting licenses as being required when I've already assigned them to the required users in the Microsoft 365 admin center?
         answer: |
@@ -263,9 +292,9 @@ sections:
       - question: Is the Sales Advisor capability in Microsoft 365 Lighthouse only for Microsoft 365, or is it also available for Azure and BizApps? 
         answer: |
           The Microsoft 365 Lighthouse Sales Advisor capability only supports Modern Work Microsoft 365 services and solutions.  
-      - question: Once a partner is onboarded to Lighthouse, how do they get started with Sales Advisor? 
+      - question: How do I get started with Sales Advisor? 
         answer: |
-          Instructions on how to onboard to Lighthouse and how to use the Sales Advisor capabilities are posted on [Get access to Sales Advisor](m365-lighthouse-get-access-to-sales-advisor.md). 
+          Sales Advisor is integrated into Lighthouse. You must hold the Account Manager role in Lighthouse. If you don't hold the Account Manager role, reach out to someone who holds the Administrator role in Lighthouse and ask them to assign the role to you. For more information, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). To learn more about using Sales Advisor to view customer opportunities, see [Overview of Sales Advisor in Microsoft 365 Lighthouse](m365-lighthouse-sales-advisor-overview.md).
       - question: What is the difference between Sales Advisor and Cloud Ascent? Are they complimentary? 
         answer: |
           The two offerings serve different purposes and use different signals to generate information shared with partners. 
@@ -274,17 +303,56 @@ sections:
           
           For customers with a Microsoft 365 trial or paid subscription, the sales advisor capability in Microsoft 365 Lighthouse will help partners nurture that customer by converting trials to paid, increasing product adoption, or moving paid customers to more advanced workloads. It is a lifecycle management tool that supports continuous customer engagement. Sales advisor leverages the same data models, insights, and signals that Microsoft sellers use for account management, tapping into the best practices we see across the market to help partners grow their business.  
 
+  - name: Other multitenant management solutions
+    questions:          
+      - question: What's the difference between Microsoft 365 Lighthouse and Azure Lighthouse?
+        answer: |
+          Microsoft 365 Lighthouse is focused on Microsoft 365 services rather than Azure services. While Azure Lighthouse is built into the Azure portal and allows IT partners to manage multiple tenants for Azure, Microsoft 365 Lighthouse is a standalone portal that helps MSPs manage multiple Microsoft 365 customer tenants. For more information about Microsoft 365 Lighthouse, see [Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md). For more information about Azure Lighthouse, see [What is Azure Lighthouse?](/azure/lighthouse/overview)
+
+      - question: How does Microsoft 365 Lighthouse affect activity reported by Microsoft Sentinel?
+        answer: |
+          Microsoft 365 Lighthouse sources and aggregates information from across your customer tenants through Microsoft Graph APIs. If Microsoft Sentinel is monitoring customer tenants that are managed by Lighthouse, it will detect such API activity and, depending on how Microsoft Sentinel is configured, report it as an incident. You can create an automation rule in Microsoft Sentinel to identify these incidents as false positives and close them automatically. For instructions on how to do this, see [Handle false positives in Microsoft Sentinel](/azure/sentinel/false-positives). To learn more about Microsoft Sentinel, review the [Microsoft Sentinel technical documentation](/azure/sentinel/).
+
+      - question: What's the difference between Microsoft 365 Lighthouse and the multitenant organization capabilities in Microsoft Defender XDR? If I manage services for SMBs, which should I use?
+        answer: |
+          The multitenant capabilities in Microsoft Defender XDR provide large organizations with the ability to secure and manage multiple tenants from a single portal, with a focus on global security operations center (SOC) investigation flows, including a unified view of incidents across tenants and the ability to perform advanced search across the data contained in multiple tenants. The capabilities also help enterprise managed security service providers (MSSPs) efficiently run their SOC.
+
+          For MSPs who manage services for SMB customers and who need a full set of capabilities spanning security, identity, and management of Microsoft 365 applications in a unified experience in a single portal, we continue to recommend Microsoft 365 Lighthouse.  Lighthouse includes a broader set of capabilities optimized for MSPs, particularly those using Microsoft 365 Business Premium and Defender for Business.
+
+          The following table provides a comparison between Microsoft 365 Lighthouse and the multitenant organization capabilities in Microsoft Defender XDR.
+
+          |                  |Microsoft 365 Lighthouse |Multitenant organization capabilities in Microsoft Defender XDR |
+          |------------------|---------|--------|
+          |**Audience and solution focus**|MSPs enrolled in the CSP program, particularly those focused on SMB solutions like Defender for Business and Microsoft 365 Business Premium<br><br>Includes a full set of capabilities spanning security, identity, and management of Microsoft 365 applications in a unified experience in a single portal  |Large customer organizations and MSSPs focused on enterprise customers<br><br>Helps MSSPs efficiently manage their Microsoft Defender XDR security operations by providing the ability to view incidents and alerts, search for threats, and address advanced security scenarios from a single portal |
+          |**Eligibility**|MSPs must be enrolled in the CSP program<br><br>Requires a delegated access relationship with the customer<br><br>[See full list of requirements](m365-lighthouse-requirements.md)  |Requires a [GDAP relationship](/partner-center/gdap-introduction) with the customer<br><br>Customers who use [Microsoft Entra B2B collaboration](/azure/active-directory/external-identities/what-is-b2b) |
+          |**Seat cap**|Up to 2500 seats per managed tenant  |Unlimited |
+          |**Tenant cap**|Unlimited  |Up to 50 tenants per customer or partner |
+          |**Tenant provisioning to Defender for Business or Defender for Endpoint**|Initiated via one-click provisioning in the default baseline in Lighthouse  |Initiated by selecting **Assets** > **Devices** in the customer's Microsoft Defender portal |
+          |**Onboarding to Defender for Business or Defender for Endpoint**|Done via the default baseline in Lighthouse for devices enrolled in Intune  |Devices can be onboarded in each customer's Microsoft  Defender portal or by using Intune |
+          |**Ability to view the licensing state**|Visible through the default baseline in Lighthouse  |Visible in each customer's Microsoft Defender portal |
+          |**Device inventory**|View all devices (all platforms) enrolled in Intune, or Windows devices onboarded to Defender for Business or Defender for Endpoint  |View a list of tenants and information about devices (Windows, iOS, Android, Mac, Linux) onboarded to Defender for Business or Defender for Endpoint |
+          |**Configuration management across endpoint, email, Intune, identity, data protection**|Deploy recommended configurations to tenants via the default baseline, including antivirus, firewall, and attack surface reduction policies, as well as email, Intune, and more<br><br>Detect configurations already present in the tenant and variances from the recommended configuration<br><br>Multi-tenant reporting on deployments across tenants  |Planned for a future release |
+          |**Threat and vulnerability management**|Aggregated view of exposure score, most exposed devices, and recommendations across tenants  |Aggregated view of exposure score and most exposed devices |
+          |**Incidents and alerts**|View incidents and alerts, with links to individual tenants to view details and take action<br><br>Bulk actions to assign or resolve an incident or alert<br><br>Automated incident and alert email notifications based on customizable rules  |View incidents and alerts, with links to individual tenants to view details and take action<br><br>Bulk actions to assign or resolve an incident or alert |
+          |**Advanced hunting**|Not available  |Hunt for threats across multiple tenants simultaneously<br><br>**Note:** Advanced hunting is only available in Microsoft Defender for Endpoint P2  |
+          |**Global search**|Global search for users and managed devices across tenants  |Global search for files, users, and devices across tenants |
+          |**Microsoft Secure Score**|Comparative view of Secure Score across all managed tenants  |Not available |
+          |**Identity**|Users flagged by Microsoft Entra ID Protection for risky behavior across tenants, including the ability to remediate risks in bulk<br><br>Inactive user accounts and unprotected shared mailbox accounts, including the ability to block them<br><br>Multifactor authentication enablement and registration completion across tenants<br><br>Self-service password reset enablement and registration completion across tenants  |Not available |
+          |**Management**|List of all devices enrolled in Intune and their device compliance status<br><br>Device and app health insights for devices enrolled in Intune from Endpoint analytics<br><br>List of Windows 365 Cloud PC devices and basic management actions  |Not available |
+          |**Other security capabilities**|List of devices enrolled in Intune that are overdue for scans or that don't have Microsoft Defender Antivirus or the latest Microsoft Defender Antivirus updates<br><br>Insights on quarantined emails across tenants<br><br>Aggregated view of service health incidents and advisories across tenants  |Not available |
+          |**Sales Advisor**|AI-driven insights, recommendations, and guidance to help MSPs acquire, retain, and grow customers  |Not available |
+     
   - name: Getting help and providing feedback
     questions:          
       - question: How do I get help and support?
         answer: |
-          In Lighthouse, select the **?** icon at the top of the portal to open the **Help** pane. From here, select **Help + support** to access self-help articles or contact support. For more information about help and support options, see [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
+          In Lighthouse, select the **?** icon at the top of the portal or the **Help & support** widget in the lower-right corner of the portal to open the **Help** pane. From here, select **Help + support** to access self-help articles or contact support. For more information about help and support options, see [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
 
       - question: Where can I submit feedback and ideas?
         answer: |
           Your feedback matters and is important to us! There are a few different ways for you to submit feedback:
 
+          - In Lighthouse, select the **Give feedback** widget in the lower-right corner of the portal.
           - Go to the [Microsoft 365 Lighthouse Feedback page](https://aka.ms/m365lighthouseuservoice). You can start conversations about Lighthouse and Windows 365 features, post questions for other MSPs or Microsoft employees, provide feedback and feature ideas, and more.
-          - Select the Feedback icon in the upper-right corner of Lighthouse.
           - Respond to the occasional (not more than once a month) pop-up window in Lighthouse that asks you to provide feedback.
           

@@ -3,9 +3,9 @@ title: "Configure SMS text notifications and reminders in Microsoft Bookings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 09/15/2021
+ms.date: 03/05/2025
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
@@ -16,7 +16,7 @@ description: "Learn how to configure SMS text notifications for clients, custome
 
 # Configure SMS text notifications and reminders in Microsoft Bookings
 
-With Microsoft Bookings, you can set up SMS text notifications to be sent to the person booking an appointment. You can set up SMS notifications in Bookings in the Bookings web app or Bookings app in Teams. Attendees, customers or partners can also opt in or out of getting SMS notifications on the self-serve booking page. They can also opt out of receiving SMS notifications by replying **STOP** to the sender.
+With Microsoft Bookings, you can send SMS text notifications to the person booking an appointment. You can set up SMS notifications in Bookings in the Bookings web app. Attendees, customers or partners can also opt in or out of getting SMS notifications on the self-serve booking page. They can also opt out of receiving SMS notifications by replying **STOP** to the sender.
 
 The SMS notifications will include the Teams meeting link for virtual booking appointments.
 
@@ -47,8 +47,3 @@ You can track key data on SMS notifications usage in your organization in the Te
 2. On **Analytics & Reports** > **Usage reports**, select SMS notifications usage.
 
     :::image type="content" source="../media/analytics-reporting.png" alt-text="Screenshot: SMS text notifications Analytics and reporting page in the Teams admin center":::
-
-Related content
-
-[Microsoft Bookings](bookings-overview.md)\
-[Turn Microsoft Bookings on or off](turn-bookings-on-or-off.md)\

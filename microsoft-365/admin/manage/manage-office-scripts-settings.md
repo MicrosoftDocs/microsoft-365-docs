@@ -5,9 +5,9 @@ f1.keywords:
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.date: 08/12/2020
+ms.date: 01/09/2025
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
@@ -26,21 +26,10 @@ description: "Learn how to manage Office Scripts settings for users in your orga
 
 # Manage Office Scripts settings
 
-[Office Scripts](/office/dev/scripts) allows users to automate tasks by recording, editing, and running scripts in Excel on the web. Office Scripts works with Power Automate, and users run scripts on workbooks by using the Excel Online (Business) connector. Microsoft 365 admins can manage Office Scripts settings from the Microsoft 365 admin center.
+[Office Scripts](/office/dev/scripts) allows users to automate tasks by recording, editing, and running scripts in Excel. Office Scripts works with Power Automate, and users run scripts on workbooks by using the Excel Online (Business) connector. Microsoft 365 admins can manage Office Scripts settings from the Microsoft 365 admin center.
 
-## Before you begin
-
-- To manage Office Scripts settings, you must be a Global admin. For more information, see [About admin roles](../add-users/about-admin-roles.md).
-
-- Ensure users in your organization have a valid license for a Microsoft 365 or Office 365 commercial or EDU plan that includes access to Microsoft 365 apps, such as one of the following plans:
-
-- Microsoft 365 Business Standard
-- Microsoft 365 Apps for business
-- Microsoft 365 Apps for enterprise
-- Office 365 E3
-- Office 365 E5
-- Office 365 A3
-- Office 365 A5
+> [!NOTE]
+> To manage Office Scripts settings, you must be at least an Office Apps admin. For more information, see [About admin roles](../add-users/about-admin-roles.md).
 
 ## Manage availability of Office Scripts and sharing of scripts
 
@@ -48,13 +37,13 @@ description: "Learn how to manage Office Scripts settings for users in your orga
 
 2. Select **Office Scripts**.
 
-3. Office Scripts is turned on by default, and everyone in your organization can access and use the feature and share scripts. To turn off Office Scripts for your organization, clear the **Let users automate their tasks in Excel on the web** check box.
+3. Office Scripts is turned on by default, and everyone in your organization can access and use the feature and share scripts. To turn off Office Scripts for your organization, clear the **Let users automate their tasks in Excel** checkbox.
 
-4. If you previously turned off Office Scripts for your organization and you want to turn it back on, select **Let users automate their tasks in Excel on the web**, and then specify who can access and use the feature:
+4. If you previously turned off Office Scripts for your organization and you want to turn it back on, select **Let users automate their tasks in Excel**, and then specify who can access and use the feature:
 
     - To allow all users in your organization to access and use Office Scripts, leave **Everyone** (the default) selected.
 
-    - To allow only members of a specific group to access and use Office Scripts, select **Specific group**, and then enter the name or email alias of the group to add it to the allow list. You may add only one group to the allow list, and it must be one of the following types:
+    - To allow only members of a specific group to access and use Office Scripts, select **Specific group**, and then enter the name or email alias of the group to add it to the allowlist. You may add only one group to the allowlist, and it must be one of the following types:
         - Microsoft 365 group
         - Distribution group
         - Security group
@@ -62,7 +51,7 @@ description: "Learn how to manage Office Scripts settings for users in your orga
 
         To learn more about the different types of groups, see [Compare groups](../create-groups/compare-groups.md).
 
-5. To allow users with access to Office Scripts to share their scripts with others in your organization, select **Let users with access to Office Scripts share their scripts with others in the organization**. Sharing scripts outside of an organization is not allowed.
+5. To allow users with access to Office Scripts to share their scripts with others in your organization, select **Let users with access to Office Scripts share their scripts with others in the organization**. Sharing scripts outside of an organization isn't allowed.
 
     > [!NOTE]
     > If you later turn off script sharing for your organization, users will still be able to run previously-shared scripts.
@@ -71,7 +60,7 @@ description: "Learn how to manage Office Scripts settings for users in your orga
 
     - To allow all users with access to Office Scripts to share their scripts, leave **Everyone** (the default) selected.
 
-    - To allow only members of a specific group with access to Office Scripts to share their scripts, select **Specific group**, and then enter the name or email alias of the group to add it to the allow list. You may add only one group to the allow list, and it must be one of the following types:
+    - To allow only members of a specific group with access to Office Scripts to share their scripts, select **Specific group**, and then enter the name or email alias of the group to add it to the allowlist. You may add only one group to the allowlist, and it must be one of the following types:
         - Microsoft 365 group
         - Distribution group
         - Security group
@@ -79,11 +68,11 @@ description: "Learn how to manage Office Scripts settings for users in your orga
 
         To learn more about the different types of groups, see [Compare groups](../create-groups/compare-groups.md).
 
-7. To allow users to run their Office Scripts inside Power Automate flows, select **Let users with access to Office Scripts run their scripts with Power Automate**. This allows users to add flow steps with the [Excel Online (Business) Connector's](/connectors/excelonlinebusiness) **Run script** option.
+7. To allow users to run their Office Scripts inside Power Automate flows, select **Let users with access to Office Scripts run their scripts with Power Automate**. This allows users to add flow steps with the [Excel Online (Business) connector](/connectors/excelonlinebusiness) **Run script** option.
 
     - To allow all users with access to Office Scripts to use their scripts in flows, leave **Everyone** (the default) selected.
 
-    - To allow only members of a specific group with access to Office Scripts to use their scripts in flows, select **Specific group**, and then enter the name or email alias of the group to add it to the allow list. You may add only one group to the allow list, and it must be one of the following types:
+    - To allow only members of a specific group with access to Office Scripts to use their scripts in flows, select **Specific group**, and then enter the name or email alias of the group to add it to the allowlist. You may add only one group to the allowlist, and it must be one of the following types:
         - Microsoft 365 group
         - Distribution group
         - Security group
@@ -109,11 +98,11 @@ To learn more, see [Use Group Policy to configure update settings for Microsoft 
 
 ## Next steps
 
-Because Office Scripts works with Power Automate, we recommend that you review your existing Microsoft Purview Data Loss Prevention (DLP) policies to ensure your organization's data remains protected while users use Office Scripts. For more information, see [Data loss prevention (DLP) policies](/power-automate/prevent-data-loss).
+Because Office Scripts works with Power Automate, we recommend that you review your existing Microsoft Purview Data Loss Prevention (DLP) policies to ensure your organization's data remains protected while users use Office Scripts. For more information, see [Set a policy to help prevent data loss](/power-automate/prevent-data-loss).
 
 ## Related content
 
 [Office Scripts technical documentation](/office/dev/scripts/) (link page)\
 [Introduction to Office Scripts in Excel](https://support.microsoft.com/office/9fbe283d-adb8-4f13-a75b-a81c6baf163a) (article)\
-[Sharing Office Scripts in Excel for the Web](https://support.microsoft.com/office/226eddbc-3a44-4540-acfe-fccda3d1122b) (article)\
-[Record, edit, and create Office Scripts in Excel on the web](/office/dev/scripts/tutorials/excel-tutorial) (article)
+[Sharing Office Scripts in Excel](https://support.microsoft.com/office/226eddbc-3a44-4540-acfe-fccda3d1122b) (article)\
+[Record, edit, and create Office Scripts in Excel](/office/dev/scripts/tutorials/excel-tutorial) (tutorial)

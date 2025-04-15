@@ -3,11 +3,14 @@ title: "Advanced data residency in Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.reviewer: dmwmsft
-ms.date: 07/22/2022
+ms.reviewer: deanw
+ms.date: 02/24/2025
 audience: ITPro
-ms.topic: article
+ms.topic: overview
 ms.service: microsoft-365-enterprise
+ms.subservice: advanced-data-residency
+ms.collection:
+- must-keep
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -21,117 +24,149 @@ ms.custom: seo-marvel-apr2020
 
 ## Overview of Advanced Data Residency
 
-The Microsoft 365 Advanced Data Residency add-on ("ADR") provides eligible customers with expanded coverage of Microsoft 365 workloads and Customer Data, committed data residency for local country/region datacenter regions, and prioritized tenant migration services.  With Advanced Data Residency, enterprise customers can best address their data residency compliance and tenant location requirements.
+The Microsoft 365 Advanced Data Residency add-on (ADR) provides eligible customers with expanded coverage of Microsoft 365 workloads and Customer Data, committed data residency for local country/region datacenter regions, and prioritized tenant migration services. With Advanced Data Residency, enterprise customers can best address their data residency compliance and tenant location requirements.
 
 The following workloads are included in ADR. For more information, see:
 
 - [Exchange Online](m365-dr-workload-exo.md)
-- [SharePoint Online and OneDrive for Business](m365-dr-workload-spo.md)
+- [SharePoint and OneDrive](m365-dr-workload-spo.md)
 - [Microsoft Teams](m365-dr-workload-teams.md)
+- [Microsoft 365 Copilot](m365-dr-workload-copilot.md)
 - [Microsoft Defender for Office P1 and Exchange Online Protection](m365-dr-workload-mdo-p1.md)
 - [Office for the Web](m365-dr-workload-office-for-web.md)
 - [Viva Connections](m365-dr-workload-viva-connections.md)
-- [Viva Topics](m365-dr-workload-viva-topics.md)
-- [Microsoft Purview](m365-dr-workload-purview.md)
-  - [Audit (Standard)](m365-dr-workload-purview.md#purview-audit-standard)
-  - [Audit (Premium)](m365-dr-workload-purview.md#purview-audit-premium)
-  - [Data Retention](m365-dr-workload-purview.md#data-lifecycle-management---data-retention)
-  - [Microsoft Purview Records Management](m365-dr-workload-purview.md#data-lifecycle-management---records-management)
-  - [Sensitivity Labels](m365-dr-workload-purview.md#information-protection---sensitivity-labels)
-  - [Data Loss Prevention](m365-dr-workload-purview.md#information-protection---data-loss-prevention-dlp)
-  - [Office Message Encryption](m365-dr-workload-purview.md#information-protection---office-message-encryption)
-  - [Information Barriers](m365-dr-workload-purview.md#risk-and-compliance---information-barriers)
+- [Microsoft Purview](m365-dr-workload-purview.md)*
+  - [Data Loss Prevention](m365-dr-workload-purview.md#data-security---data-loss-prevention-dlp)
+  - [Information Barriers](m365-dr-workload-purview.md#data-security---information-barriers)
+  - [Information Protection (MIP)](m365-dr-workload-purview.md#data-security---information-protection-mip)
+  - [Audit (Standard)](m365-dr-workload-purview.md#risk--compliance---audit-standard)
+  - [Audit (Premium)](m365-dr-workload-purview.md#risk--compliance---audit-premium)
+  - [Data Lifecycle Management (DLM)](m365-dr-workload-purview.md#risk--compliance---data-lifecycle-management-dlm)
+
+> [!NOTE]
+> *The Microsoft Purview services list mentioned above includes all services covered as part of the Advanced Data Residency commitment as of November 2024. Additional Microsoft Purview services are not currently supported.
+
+> [!NOTE]
+> Viva Topics has been retired as of February 22, 2025. Therefore, Viva Topics is no longer a supported workload in ADR. For more details, please visit [aka.ms/TopicsFebSupport](https://aka.ms/TopicsFebSupport).
 
 ## Licensing and Purchase
 
 ### Eligibility
 
-The Advanced Data Residency ("ADR") add-on is intended for Microsoft 365 enterprise customers who have comprehensive data residency requirements.  To be eligible to purchase ADR, customers must meet the following pre-requisites:
+The Advanced Data Residency ("ADR") add-on is intended for Microsoft 365 enterprise customers who have comprehensive data residency requirements. To be eligible to purchase ADR, customers must meet the following prerequisites:
 
-- The _Tenant_ _Default Geography_ must be one of the countries/regions included in the _Local Region Geography_ (Australia, Brazil, Canada, France, Germany, India, Japan, Poland, Qatar, South Korea, Norway, South Africa, Sweden, Switzerland, United Arab Emirates, and United Kingdom).
-- Customers must have licensed one or more of the following products:
-  - Microsoft 365 F1, F3, E3, or E5
-  - Office 365 F3, E1, E3, or E5
+- The _Tenant_ _Default Geography_ must be one of the countries or regions included in the _Local Region Geography_: Australia, Brazil, Canada, France, Germany, India, Israel, Italy, Japan, Mexico, New Zealand, Norway, Poland, Qatar, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, United Arab Emirates, and United Kingdom.
+- Customers must have licenses for one or more of the following products:
+  - Microsoft 365 F1, F3, E3, or E5 (including SKUs without Microsoft Teams)
+  - Office 365 F3, E1, E3, or E5 (including SKUs without Microsoft Teams)
   - Exchange Online Plan 1 or Plan 2
-  - OneDrive for Business Plan 1 or Plan 2
-  - SharePoint Online Plan 1 or Plan 2
-  - M365 Business Basic, Standard or Premium
+  - OneDrive Plan 1 or Plan 2
+  - SharePoint Plan 1 or Plan 2
+  - Microsoft 365 Business Basic, Standard or Premium (including SKUs without Microsoft Teams)
+  - Microsoft Teams Enterprise, EEA, or Essentials
 
-Geographic availability will be updated as available.
+Geographic availability is updated as available.
 
-Customers must cover 100% of paid seats in the tenant  above with ADR add-on license for tenant to receive data residency for ADR workloads.  See the table below for an example. See the table below for an example.
+Customers must cover 100% of paid licenses in the tenant with ADR add-on license for tenant to receive data residency for ADR workloads. See the table for an example.
 
-| ADR-related SKU | Available Seats | Allocated Seats | ADR Required Seats | 
+| ADR-related SKU | Available Licenses | Allocated Licenses | ADR Required Licenses |
 | --- | --- | --- | --- |
-| Office 365 E3 | 200 | 125 | 200 | 
-| Microsoft 365 F1 | 1420 | 1100 | 1420 | 
-| Exchange Online Plan 2 | 25 | 22 | 25 | 
-| Totals | 1645 | 1247 | 1645 <sup>1</sup> | 
+| Office 365 E3 | 200 | 125 | 200 |
+| Microsoft 365 F1 | 1420 | 1100 | 1420 |
+| Exchange Online Plan 2 | 25 | 22 | 25 |
+| Totals | 1645 | 1247 | 1645 <sup>1</sup> |
 
-1: If you have 1645 seats purchased for ADR then you have a data residency commitment for your _Local Region Geography_.  If you have less than 1645 seats then you do NOT have a data residency commitment and your tenant is subject to being moved out of the _Local Region Geography_.
+If you have 1,645 licenses purchased for ADR, then you have a data residency commitment for your _Local Region Geography_. If you have fewer than 1,645 licenses, then you do NOT have a data residency commitment, and your tenant is subject to being moved out of the _Local Region Geography_.
 
-Customers who have purchased Multi-Geo seats for their tenant do not have to also pay for ADR for the same seats. This is to avoid “double licensing” a single seat for two different data residency programs. For example, if a customer would normally require 15,000 ADR seats to satisfy the program requirements, but they also have 4,000 Multi-Geo seats, then they are only required to purchase 11,000 ADR seats as the two programs combined would cover the normal ADR program requirement of 100% user coverage.
+Customers who purchase Multi-Geo licenses for their tenant don't have to also pay for ADR for the same licenses. You avoid 'double licensing' a single seat for two different data residency programs. For example, if a customer would normally require 15,000 ADR licenses to satisfy the program requirements, but they also have 4,000 Multi-Geo licenses, then they're only required to purchase 11,000 ADR licenses. The two programs combined would cover the normal ADR program requirement of 100% user coverage.
 
-To find out how many ADR seats you need go to Tenant Admin Center - Billing - Your Products within your tenant and add up the total Purchase Quantity for all ADR-eligible SKUs to get the proper total of ADR seats required.
+To find out how many ADR licenses, you need go to the Microsoft 365 admin center under **Billing > Your Products** within your tenant and add up the total Purchased Quantity for all ADR-eligible SKUs to get the proper total of ADR licenses required.
 
-
-
-### Tenants with a mix of Commercial and Education subscriptions:
+### Tenants with a mix of Commercial and Education subscriptions
 
 When a customer has a mix of commercial and education license types including both Commercial/Public Sector (for example, E3, E5) and Education (for example, A1, A3, etc.) licenses in their subscription, the following applies:
 
-- Customers have rights to purchase full ADR add-on for only the paid portion of Microsoft 365 SKUs and are not obligated to cover free subscription types. However, they must cover the paid education seats with ADR (Microsoft 365 A3/A5, Office 365 A3/A5 student or faculty).
+- Customers have rights to purchase full ADR add-on for only the paid portion of Microsoft 365 SKUs and aren't obligated to cover free subscription types. However, they must cover the paid education licenses with ADR (Microsoft 365 A3/A5, Office 365 A3/A5 student or faculty).
 
 - ADR for Education products is only available to Volume Licensing / EES (Microsoft Enrollment for Education Solutions) customers; contact your Microsoft account representative for details on how to obtain an ADR Education related SKU.
 
-
 ## Data Migration Management
 
-If all of a customer's tenant data covered by the Advanced Data Residency feature isn't already stored at rest within their eligible _Local Region Geography_, then a data migration to the _Local Region Geography_ will be required.  If customer tenant data covered by the Advanced Data Residency feature is already stored at rest within their eligible _Local Region Geography_, then no data migration to the _Local Region Geography_ will be required.
+If any customer tenant data covered by the Advanced Data Residency feature is not stored at rest within the customer's eligible _Local Region Geography_, then a data migration is needed to address customer data residency compliance and tenant location requirements fulfilled by ADR.
 
 ### Starting Data Migration
 
-After a customer has received their Advanced Data Residency licenses,  the customer will need to signal that they are ready to schedule data migration, if one is necessary. To signal your tenant is ready for its data migration, the customer administrator will visit the Data Location section of the Microsoft 365 Admin Console within the Settings -> Org Settings -> Organization Profile area. From here the customer administrator will be able to see the current location of their data-at-rest and what _Local Region Geography_ their customer data will be migrated to, Please Note: Data migration will not be scheduled until the customer administrator has executed this task. Further, the migration expectation discussed elsewhere in this documentation  won't start being tracked until this task has been executed by the customer administrator.
+After receiving the Advanced Data Residency licenses and applying them to the customer's tenant, the customer administrator must select the option to initiate the data migration process for ADR workloads that do not currently reside in their _Local Region Geography_. To initiate data migration for a tenant, the customer administrator should visit the "Data location" section in the Microsoft 365 admin center by navigating to **Settings > Org settings > Organization profile > Data location**. From here, the customer administrator can see the current location of the customer's data-at-rest and what _Local Region Geography_ their customer data currently resides in or is eligible to be migrated to upon selection.
 
-Once the customer signal is received, they'll be provided with their opt-in date and the target date of completion.
+#### Microsoft 365 Admin Center Data Location
 
-In addition to a notification posted to the Message Center upon completion, the Data Location section in the Microsoft 365 Admin Console will also be updated as each workload requiring a data migration is complete.
+:::image type="content" alt-text="Screenshot of Microsoft 365 Admin Center Data location View." source="media\data-residency\1-adr-microsoft-365-data-location-card_0225.png" lightbox="media\data-residency\1-adr-microsoft-365-data-location-card_0225.png":::
+
+> [!NOTE]
+> The data migration process described in the sections below will not initiate until the customer administrator completes this task.
+
+The following screenshot is an example of the Microsoft 365 admin center Data location view that an ADR customer can expect to see before opting for migration to their _Local Region Geography_.
+
+#### Before Migration Opt-in
+
+:::image type="content" source="media\data-residency\2-adr-microsoft-365-data-location-card-before-move_0225.png" alt-text="Screenshot of Data Location View Before Migration.":::
+
+Once a customer administrator chooses the option to initiate migration, they are provided with confirmation of their opt-in date and migration initiation as shown in the screenshot below.
+
+#### After Migration Opt-in
+
+:::image type="content" source="media\data-residency\3-adr-microsoft-365-data-location-card-move-initiated_0225.png" alt-text="Screenshot of Data Location View Migration Requested.":::
+
+The "Data location" section in the Microsoft 365 admin center (referenced in the screenshots above) displays the most up-to-date location of each workload throughout the data migration process. Customer administrators can also view any Message center notifications related to their migration within the Microsoft 365 admin center by navigating to **Health > Message center**.
 
 ### Migration Expectations
 
-Microsoft will use reasonable efforts to try to complete an Advanced Data Residency add-on customer migration within twelve (12) months from the time the customer administrator has signaled they're ready for migration. However, Microsoft may not be able to complete the migration within this timeframe for all customers. For example, larger or more complex customers or situations outside of Microsoft's control may require additional time to complete the migration. Advanced Data Residency add-on customers also receive prioritized migration services for their tenants over the legacy Move Program migration option. These migration expectations also apply to all ADR EDU customers as well. Customers utilizing the legacy Move Program for a data migration who don't have the Advanced Data Residency feature, will instead follow [Legacy Move Program Migration Expectations](m365-dr-legacy-move-program.md#migration-expectations).
+Microsoft adheres to the [Microsoft Online Services Service Level Agreement (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) for service availability and uses reasonable efforts to complete an Advanced Data Residency add-on customer data migration within 12 months from the time the customer administrator selects the option to initiate migration. However, large, complex customers, and situations outside of Microsoft's control, may require more time for migration to complete.
 
-Data moves are a back-end service operation with minimal impact to end-users. We adhere to the [Microsoft Online Services Service Level Agreement (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) for availability so there's nothing that customers need to prepare for or to monitor during the move. Notification of any service maintenance is done if needed.
+Data moves are a back-end service operation with minimal impact to a customer's operations. For information related to specific workloads, customer administrators can refer to the “Migration” sections in the following Workload Data Residency Capabilities pages: [Exchange Online](m365-dr-workload-exo.md#migration), [SharePoint and OneDrive](m365-dr-workload-spo.md#migration-with-advanced-data-residency), [Microsoft Teams](m365-dr-workload-teams.md#migration), [Microsoft 365 Copilot](m365-dr-workload-copilot.md#migration-and-user-experience), [Microsoft Defender for Office P1](m365-dr-workload-mdo-p1.md#migration), [Office for the Web](m365-dr-workload-office-for-web.md#migration), [Viva Connections](m365-dr-workload-viva-connections.md#migration), [Microsoft Purview](m365-dr-workload-purview.md#migration), and [Other Services](m365-dr-workload-other.md).
 
 ### During and After your Migration
 
-Data moves are a back-end operation with minimal if any impact to end users. No action is required while Microsoft moves each service and associated customer data for your tenant to the applicable geography.
+No action is needed from the customer while Microsoft moves each ADR workload and associated customer tenant data to the customer's eligible _Local Region Geography_.
 
-> [!NOTE]
-> Moves occur at different times for each service. As a result, you'll see the described below on reduced functionality for each service happen at different times.
+Customer administrators can visit the Message center or “Data location” section within the Microsoft 365 admin center throughout the migration process to review any migration notices and see when each workload service completes migration. From the Microsoft 365 admin center, customer administrators can access the Message center by navigating to **Health > Message center** and the "Data location" section by navigating to **Settings > Org settings > Organization profile > Data location**.
 
-Watch the Microsoft 365 Message Center for confirmation when moves for each workload service is complete.
+The following screenshots are examples of the Microsoft 365 admin center Data location view that an ADR customer can expect to see during and after their migration.
 
-### Impact on End Users and Workloads
+#### During Migration
 
-Data moves are a back-end service operation with minimal impact to end-users. Features that can be impacted are listed on the During and after your data move page. We adhere to the [Microsoft Online Services Service Level Agreement (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) for availability so there's nothing that customers need to prepare for or to monitor during the move. Notification of any service maintenance is done if needed.
+:::image type="content" source="media\data-residency\4-adr-microsoft-365-data-location-card-move-in-progress_0225.png" alt-text="Screenshot of Data Location View Migration in Progress.":::
 
-### Features Impacted
+#### After Migration
 
-Because of the complex nature of the hundreds of services (both standard and customizable) that are available within the many workloads that customers sign up for and use within a typical E3 or E5 license, the migration of customer data from one data center to another could cause minor disruption and/or temporary unavailability of certain services customers use. See the migration sections of each workload in the [Workload Data Residency Capabilities section](m365-dr-workload-exo.md) for more information.
+:::image type="content" source="media\data-residency\5-adr-microsoft-365-data-location-card-move-completed_0225.png" alt-text="Screenshot of Data Location View Migration Completed.":::
+
+### Effect on End Users and Workloads
+
+Data moves are a back-end service operation with minimal, if any, effect on end users. Microsoft adheres to the [Microsoft Online Services Service Level Agreement (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) for service availability and notifies customers of any service maintenance done via Message center in the Microsoft 365 admin center.
+
+### Features Affected
+
+Given the complex nature of services included in an E3 or E5 license, the migration of customer data from one data center to another could cause minor disruption or temporary unavailability of certain services. For more information, customer administrators can refer to the "Migration" section of each workload page within [Workload Data Residency Capabilities](m365-dr-workload-exo.md).
 
 ### Status Notification
 
-For customers requiring a data migration, they may monitor the Message Center for updates to be provided as each workload completes its data migration. The Data Location section in the Microsoft 365 Admin Console may also be referenced to see if a workload has completed its migration.
-Due to the nature of how migrations work, there's no granular status provided to indicate just how close to completion a migration may be.
+Microsoft does not provide a granular status to indicate progress toward migration completion for individual customer scenarios.
 
+Customer administrators can stay informed of migration updates through Message center notifications and by reviewing the “Data location” section within the Microsoft 365 admin center to see when a workload completes migration to their _Local Region Geography_. From the Microsoft 365 admin center, customer administrators can access the Message center by navigating to **Health > Message center** and the "Data location" section by navigating to **Settings > Org settings > Organization profile > Data location**.
+
+For more information on Migration, customer administrators can refer to the following pages:
+
+[Overview and Definitions - Microsoft 365 Enterprise](m365-dr-overview.md#migrationsmoves)
+
+[Where your Microsoft 365 customer data is stored - Microsoft 365 Enterprise](o365-data-locations.md)
 
 ## Related articles
 
 [Legacy Move Program](m365-dr-legacy-move-program.md)
-  
+
 [New datacenter geos for Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions?branch=main)
-  
+
 [Azure services by region](https://azure.microsoft.com/regions/)
 
 [Teams experience in a Microsoft 365 Multi-Geo-enabled tenancy](/microsoftteams/teams-experience-o365odb-spo-multi-geo?branch=main)

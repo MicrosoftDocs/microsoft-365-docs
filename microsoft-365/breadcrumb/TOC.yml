@@ -1,3 +1,4 @@
+items:
 - name: Microsoft 365
   tocHref: /microsoft-365/
   topicHref: /microsoft-365/index
@@ -26,21 +27,25 @@
   - name: Scheduler for Microsoft 365
     tocHref: /microsoft-365/scheduler/
     topicHref: /microsoft-365/scheduler/index/
-  - name: Defender for Business 
-    tocHref: /microsoft-365/security/defender-business/
-    topicHref: /microsoft-365/security/defender-business/
-  - name: Defender for Endpoint
-    tocHref: /microsoft-365/security/defender-endpoint/
-    topicHref: /microsoft-365/security/defender-endpoint/
-  - name: Microsoft 365 Defender
-    tocHref: /microsoft-365/security/defender/
-    topicHref: /microsoft-365/security/defender/
-  - name: Microsoft Defender for Office 365
-    tocHref: /microsoft-365/security/office-365-security/
-    topicHref: /microsoft-365/security/office-365-security/
   - name: Test Base for Microsoft 365
     tocHref: /microsoft-365/test-base/
     topicHref: /microsoft-365/test-base/
   - name: Microsoft Whiteboard
     tocHref: /microsoft-365/whiteboard/
     topicHref: /microsoft-365/whiteboard/
+  - name: Security
+    tocHref: /microsoft-365/security/
+    topicHref: /microsoft-365/security/index
+    items:
+    - name: Defender for Business 
+      tocHref: /microsoft-365/security/defender-business/
+      topicHref: /microsoft-365/security/defender-business/
+    - name: Defender for Endpoint
+      tocHref: /microsoft-365/security/defender-endpoint/
+      topicHref: /microsoft-365/security/defender-endpoint/
+    - name: Microsoft Defender XDR
+      tocHref: /microsoft-365/security/defender/
+      topicHref: /microsoft-365/security/defender/
+    - name: Microsoft Defender for Office 365
+      tocHref: /microsoft-365/security/office-365-security/
+      topicHref: /microsoft-365/security/office-365-security/

@@ -1,11 +1,11 @@
 ---
 title: Microsoft 365 Groups and Microsoft Teams naming policy
 ms.reviewer: rahulnayak
-ms.date: 02/18/2020
+ms.date: 06/26/2024
 f1.keywords: NOCSH
-ms.author: mikeplum
-author: MikePlumleyMSFT
-manager: serdars
+author: DaniEASmith
+ms.author: danismith
+manager: jtremper
 audience: Admin
 ms.topic: article
 ms.service: o365-solutions
@@ -39,7 +39,7 @@ The group naming policy consists of the following features:
 
 ## Licensing requirements
 
-Using Azure AD naming policy for Microsoft 365 Groups requires that you possess but not necessarily assign an Azure Active Directory Premium P1 license or Azure AD Basic EDU license for each unique user (including guests) that is a member of one or more Microsoft 365 groups.
+Using Microsoft Entra ID naming policy for Microsoft 365 Groups requires that you possess but not necessarily assign a Microsoft Entra ID P1 license or Microsoft Entra Basic EDU license for each unique user (including guests) that is a member of one or more Microsoft 365 groups.
 
 This is also required for the administrator that creates the groups naming policy.
 
@@ -61,7 +61,7 @@ Examples:
 - User's department = Engineering
 - Created group name = "GRP My Group Engineering"
 
-Supported Azure Active Directory (Azure AD) attributes are [Department], [Company], [Office], [StateOrProvince], [CountryOrRegion], and [Title].
+Supported Microsoft Entra attributes are [Department], [Company], [Office], [StateOrProvince], [CountryOrRegion], and [Title].
 
 - Unsupported user attributes are considered as fixed strings, for example [postalCode].
 
@@ -78,7 +78,7 @@ It's recommended that you use attributes that have values filled in for all user
   > [!NOTE]
   > A period (.) or a hyphen (-) is permitted anywhere in the group name, except at the beginning or end of the name. An underscore (_) is permitted anywhere in the group name, including at the beginning or end of the name.
 
-- If you are using Viva Engage Office 365 connected groups, avoid using the following characters in your naming policy: @, \#, \[, \], \<, and \>. If these characters are in the naming policy, regular Viva Engage users can't create groups.
+- If you are using Viva Engage Office 365 connected groups, avoid using the following characters in your naming policy: @, \#, [, ], \<, and \>. If these characters are in the naming policy, regular Viva Engage users can't create groups.
 
 > [!Tip]
 > - Use short strings as suffix.
@@ -118,14 +118,14 @@ Some administrators are exempted from these policies, across all group workloads
 
 To set up a naming policy:
 
-1. In [Azure Active Directory](https://aad.portal.azure.com), under **Manage**, click **Groups**.
+1. In [Microsoft Entra ID](https://aad.portal.azure.com), under **Manage**, click **Groups**.
 2. Under **Settings**, click **Naming policy**.
 3. Choose the **Group naming policy** tab.
 4. Under **Current policy**, choose if you want to require a prefix or suffix or both, and select the appropriate check boxes.
 5. Choose between **Attribute** and **String** for each line and then specify the attribute or string.
 6. When you have added the prefixes and suffixes that you need, click **Save**.
 
-![Screenshot of the groups naming policy settings in Azure Active Directory.](../media/groups-naming-policy-azure.png)
+![Screenshot of the groups naming policy settings in Microsoft Entra ID.](../media/groups-naming-policy-azure.png)
 
 ## Related topics
 
@@ -133,4 +133,4 @@ To set up a naming policy:
 
 [Create your collaboration governance plan](collaboration-governance-first.md)
 
-[Azure Active Directory cmdlets for configuring group settings](/azure/active-directory/enterprise-users/groups-settings-cmdlets)
+[Microsoft Entra cmdlets for configuring group settings](/azure/active-directory/enterprise-users/groups-settings-cmdlets)

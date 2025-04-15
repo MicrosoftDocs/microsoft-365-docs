@@ -4,7 +4,6 @@ f1.keywords: CSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.date: 03/31/2023
 audience: Admin
 ms.topic: how-to 
 ms.service: microsoft-365-business
@@ -15,11 +14,13 @@ ms.collection:
 - scotvorg
 - Adm_O365
 - Adm_TOC
+- GAUpdates
 ms.custom:
 - okr_smb
 - AdminTemplateSet
 search.appverid: MET150
 description: "Learn how to turn the pronouns feature on or off in the Microsoft 365 admin center."
+ms.date: 10/20/2023
 ---
 
 # Turn pronouns on or off for your organization in the Microsoft 365 admin center
@@ -30,20 +31,20 @@ Pronouns are stored with other data in the user's Exchange mailbox. For more inf
 
 > [!IMPORTANT]
 >
->- Knowing someone's pronouns doesn't always equate to knowing their gender identity. We encourage you to understand any applicable local laws, regulations, and cultural norms that might pose extra risk to employees should their pronouns be publicly displayed and take this into consideration when you decide whether to turn on this feature. 
+>- Knowing someone's pronouns doesn't always equate to knowing their gender identity. We encourage you to understand any applicable local laws, regulations, and cultural norms that might pose extra risk to employees should their pronouns be publicly displayed and take this into consideration when you decide whether to turn on this feature.
 >- If you decide to use the pronouns feature, we recommend that you engage with internal and/or external subject matter experts in transgender inclusion to consider how pronoun display can complement, not substitute, more comprehensive efforts to support transgender communities in your organization.
 
 ## Before you begin
 
-You must be a Global admin to do the task in this article. For more information, see [About admin roles](about-admin-roles.md).
+You must be a Global Administrator to do the task in this article. For more information, see [About admin roles](about-admin-roles.md).
 
-> [!IMPORTANT]
->
-> Before you decide to turn the pronouns feature on or off, consider the following:
->
->- When you turn the pronouns feature on or off, it can take up to seven hours for users to see changes. For example, if you turn on the pronouns feature, users can't see the option to add pronouns on their profile for up to seven hours. If you turn off the pronouns feature, any previously set pronouns might stay visible in Microsoft 365 (for example, on profiles) for up to seven hours.
->- When you turn the pronouns feature off, all the pronouns data created by users is deleted. The data deletion process could take up to 30 days to complete. If you turn the pronouns feature back on within that period, any hidden pronouns that haven't yet been deleted from Microsoft servers become visible in Microsoft 365 experiences, such as profiles.
->- After a user adds pronouns to their profile, the pronouns are visible to everyone in your organization. Users can't control who can see their pronouns in Microsoft 365 in your organization. However, pronouns aren't visible to people outside the organization.
+[!INCLUDE [ga-roles-limitation](../../includes/ga-roles-limitation.md)]
+
+Before you decide to turn the pronouns feature on or off, consider the following:
+
+- When you turn the pronouns feature on or off, it can take up to seven hours for users to see changes. For example, if you turn on the pronouns feature, users can't see the option to add pronouns on their profile for up to seven hours. If you turn off the pronouns feature, any previously set pronouns might stay visible in Microsoft 365 (for example, on profiles) for up to seven hours.
+- When you turn the pronouns feature off, all the pronouns data created by users is deleted. The data deletion process could take up to 30 days to complete. If you turn the pronouns feature back on within that period, any hidden pronouns that haven't yet been deleted from Microsoft servers become visible in Microsoft 365 experiences, such as profiles.
+- After a user adds pronouns to their profile, the pronouns are visible to everyone in your organization. Users can't control who can see their pronouns in Microsoft 365 in your organization. However, pronouns aren't visible to people outside the organization.
 
 ## Turn the pronouns feature on or off
 

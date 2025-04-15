@@ -1,21 +1,20 @@
 ### YamlMime:FAQ
 metadata:
-  title: Microsoft 365 Business Premium frequently asked questions 
-  description: Find answers to the most frequently asked questions about Microsoft 365 Business, a new solution designed for small, and midsize businesses (SMB). 
-  author: denisebmsft
+  title: Microsoft 365 Business Premium frequently asked questions
+  description: Find answers to the most frequently asked questions about Microsoft 365 Business, a new solution designed for small, and midsize businesses (SMB).
+  author: chrisda
   f1.keywords:
   - NOCSH
-  ms.author: deniseb
+  ms.author: chrisda
   manager: deniseb
   ms.topic: how-to
-  ms.service: microsoft-365-security
+  ms.service: microsoft-365-business-security
   ms.collection:
-  - tier1
+  - tier2
   - m365-security
-  ms.subservice: m365bp
-  ms.date: 03/27/2023
+  ms.date: 03/05/2025
   ms.localizationpriority: medium
-  audience: microsoft-business 
+  audience: microsoft-business
   keywords: Microsoft 365 Business Premium, Microsoft 365, SMB, FAQ, frequently asked questions, answers, business
 title: Microsoft 365 Business Premium frequently asked questions
 summary: |
@@ -25,79 +24,87 @@ sections:
     questions:
       - question: What is Microsoft 365 Business Premium?
         answer: |
-          Microsoft 365 is an integrated solution that brings together best-in-class productivity tools, security, and device management capabilities for small to medium-sized businesses. It's a comprehensive, cloud-based security solution that enables you to defend your business against advanced cyberthreats with sophisticated phishing and ransomware protection. Microsoft 365 Business Premium helps you safeguard your data, devices and information. 
-          
+          Microsoft 365 is an integrated solution that brings together best-in-class productivity tools, security, and device management capabilities for small to medium-sized businesses. It's a comprehensive, cloud-based security solution that enables you to defend your business against advanced cyberthreats with sophisticated phishing and ransomware protection. Microsoft 365 Business Premium helps you safeguard your data, devices and information.
+
           Microsoft 365 Business Premium is fully integrated with Microsoft 365 Apps to provide you with a familiar location for administration, billing, and 24x7 support. It consists of enterprise-grade technology built for businesses with fewer than 300 employees.
-          
+
       - question: How can I get Microsoft 365 Business Premium for my business?
         answer: |
-          Microsoft 365 Business Premium can be purchased through a [Microsoft Partner](https://www.microsoft.com/solution-providers/search) or directly from [Microsoft](https://www.microsoft.com//microsoft-365/business). In choosing whether to purchase directly from Microsoft or via a Microsoft Partner, you should consider your on-staff capability and desire to maintain an IT infrastructure. A Microsoft Partner can help you deploy and manage your IT infrastructure, including Microsoft solutions.
-          
-      - question: How much does Microsoft 365 Business Premium cost?
-        answer: Microsoft 365 Business Premium is offered at $22 (USD) per user/month based on an _annual contract_ if purchased directly from Microsoft. When purchased through a Microsoft Partner, pricing can vary based on the services the partner provides and their pricing model for Microsoft 365 Business Premium.
+          Microsoft 365 Business Premium can be purchased through a [Microsoft Partner](https://www.microsoft.com/solution-providers/search) or directly from [Microsoft](https://www.microsoft.com/microsoft-365/business). In choosing whether to purchase directly from Microsoft or via a Microsoft Partner, you should consider your on-staff capability and desire to maintain an IT infrastructure. A Microsoft Partner can help you deploy and manage your IT infrastructure, including Microsoft solutions.
 
       - question: Is there a cap to how many Microsoft 365 Business Premium seats a customer can have?
         answer: |
           Microsoft 365 Business Premium was designed for small to medium-sized businesses with low to medium IT complexity requirements. Customers can purchase up to 300 Microsoft 365 Business Premium licenses for their organization. Customers can mix and match cloud subscriptions. As a result, depending on their IT requirements, customers might add another subscription, such as Microsoft Defender for Endpoint, Microsoft Defender for Business, or another Microsoft 365 Enterprise subscription to the same account.
-          
+
           If you are considering using multiple subscription types, consider working with a trusted IT advisor to determine how best to manage and secure the various subscriptions. Microsoft 365 Business Premium and Microsoft 365 Enterprise use different capabilities to secure and manage applications and data.
-          
+
       - question: Can I combine Microsoft 365 Business Premium with other Microsoft subscription offerings?
         answer: |
           Yes, customers can combine their Microsoft 365 Business Premium subscriptions with plans and add-ons from Azure, Dynamics 365, Enterprise Mobility + Security, and Office 365.
 
+      - question: How do I add Microsoft 365 E5 Security to Microsoft 365 Business Premium?
+        answer: |
+          Work with your [Microsoft partner](/microsoft-365/admin/manage/find-your-partner-or-reseller) or visit [Microsoft Security for Business](https://aka.ms/SMBSecurity).
+
+      - question: Does Microsoft 365 Business Premium with Microsoft 365 E5 Security allow mixed licensing for endpoint security solutions?
+        answer: |
+          Microsoft Defender for Business does not support mixed licensing, so a tenant with Defender for Business (which is included in Microsoft 365 Business Premium) along with Defender for Endpoint Plan 2 (which is included in Microsoft 365 E5 Security) defaults to the Defender for Business experience. 
+          
+          For example, if you have 80 users licensed for Microsoft 365 Business Premium, and you've added Microsoft 365 E5 Security for 30 of those users, the experience for all users defaults to Defender for Business. If you want to change that to the Defender for Endpoint Plan 2 experience, you should license all users for Defender for Endpoint Plan 2 (either through the standalone version of Defender for Endpoint Plan 2 or Microsoft 365 E5 Security), and then contact Microsoft Support to request the switch for your tenant. 
+
+          Also see [Change your endpoint security subscription](/defender-business/mdb-manage-subscription). 
+
       - question: Is everyone in my business required to have a Microsoft 365 Business Premium subscription?
         answer: |
           No, not everyone needs a Microsoft 365 Business Premium subscription, although the security and management benefits are available only to those users with devices managed with a Microsoft 365 Business Premium subscription.
-          
+
           Standardizing an IT environment helps reduce maintenance and security costs over time and is a state that businesses should strive to attain. However, we recognize that some small and medium-sized customers update their software primarily when they upgrade their hardware, over an extended period. Businesses can deploy  Premium to part of their organization, but for best protection of sensitive business data and consistent collaboration experiences, deployment to all users is recommended.
-          
+
       - question: How can I know if the hardware and software I run today is compatible with Microsoft 365 Business Premium?
         answer: |
-          See [Microsoft 365 Business Premium requirements](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot:techspecstab). 
-          
+          See [Microsoft 365 Business Premium requirements](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot:techspecstab).
+
           Also see the recommended application testing process for [Windows 10 compatibility](/windows/deployment/planning/windows-10-compatibility#recommended-application-testing-process) and review the [Office system requirements](https://products.office.com/office-system-requirements#subscription-plans-section) to ensure a smooth transition to Microsoft 365 Business Premium.
-          
+
       - question: What is Windows for business?
         answer: |
           Windows for business includes Windows 10 Pro, Windows 10 Pro for Workstations, Windows 11 Pro, and Windows 11 Pro for Workstations. These operating systems include cloud services and device management capabilities that enable the centralized management and security controls of Microsoft 365 Business Premium. [Learn more about Windows for business](https://www.microsoft.com/windows/business).
-                    
-          If you have devices that are licensed for Windows 7, 8, and 8.1 Professional, Microsoft 365 Business Premium provides an upgrade to Windows 10 Pro. 
-          
+
+          If you have devices that are licensed for Windows 7, 8, and 8.1 Professional, Microsoft 365 Business Premium provides an upgrade to Windows 10 Pro.
+
           > [!IMPORTANT]
-          > You must to supply the original product key when you upgrade; otherwise, the upgrade won't work.
-          
+          > You must supply the original product key when you upgrade; otherwise, the upgrade won't work.
+
       - question: How does Microsoft 365 Business Premium help support our Bring Your Own Device (BYOD) policy?
         answer: |
           Many employees prefer to use their own mobile phones or tablets to access personal and work information rather than carrying multiple devices for each purpose. The use of personal devices for work, while commonplace, increases the risk that business information could end up in the wrong hands. Many competing mobile data protection solutions require users to switch to a specific mode on their device or use another complex mechanism that users may find intrusive and therefore avoid using.
-          
-          Microsoft 365 Business Premium offers customers a simple but powerful means of enabling employees to use their personal devices for work while providing the business with the ability to prevent those devices from accessing, retaining, and/or sharing business information. 
-          
+
+          Microsoft 365 Business Premium offers customers a simple but powerful means of enabling employees to use their personal devices for work while providing the business with the ability to prevent those devices from accessing, retaining, and/or sharing business information.
+
           See the following articles to learn more:
 
           - [Set up unmanaged (BYOD) devices](/microsoft-365/business-premium/m365bp-set-up-unmanaged-devices)
           - [Set up and secure managed devices](/microsoft-365/business-premium/m365bp-protect-managed-devices)
-          
+
       - question: How does Microsoft 365 Business Premium help protect PCs in my organization from malicious attacks?
         answer: |
-          PCs managed with Microsoft 365 Business Premium are protected by Microsoft Defender for Business, an endpoint security solution that was designed especially for the small- and medium-sized business (up to 300 employees). With this endpoint security solution, your company's devices are better protected from ransomware, malware, phishing, and other threats. 
-          
+          PCs managed with Microsoft 365 Business Premium are protected by Microsoft Defender for Business, an endpoint security solution that was designed especially for the small- and medium-sized business (up to 300 employees). With this endpoint security solution, your company's devices are better protected from ransomware, malware, phishing, and other threats.
+
       - question: What's the difference between Microsoft 365 Business Standard, Microsoft 365 Business Premium, and Microsoft 365 Enterprise?
         answer: |
           Microsoft has various productivity and security management offerings that small to medium-sized customers may consider when upgrading their desktop and device infrastructure, each bringing increasingly powerful features and functionality.
-          
+
           **Microsoft 365 Business Standard** includes the apps and services that businesses need for remote work and collaboration. It includes Microsoft Teams, secure cloud storage, business email, and premium Office applications across devices.
-          
-          **Microsoft 365 Business Premium** is a comprehensive cloud productivity and security solution that was designed and built for small and medium-sized businesses (1-300 employees). Microsoft 365 Business Premium includes everything in Microsoft 365 Business Standard, plus [Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-overview) and [Defender for Office 365 Plan 1](/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet). You get more cybersecurity and productivity capabilities, including advanced security protection for your devices, with next-generation protection, endpoint detection and response, and threat & vulnerability management. You also get advanced security protection for email and documents, with Safe Links and Safe Attachments.
-          
+
+          **Microsoft 365 Business Premium** is a comprehensive cloud productivity and security solution that was designed and built for small and medium-sized businesses (1-300 employees). Microsoft 365 Business Premium includes everything in Microsoft 365 Business Standard, including [Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-overview) and [Defender for Office 365 Plan 1](/defender-office-365/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet). You get more cybersecurity and productivity capabilities, including advanced security protection for your devices, with next-generation protection, endpoint detection and response, and threat & vulnerability management.
+
           **Microsoft 365 Enterprise** is a complete, intelligent solution that empowers everyone to be creative and work together securely. Microsoft 365 for enterprise is designed for large organizations, but it can also be used for medium-sized and small businesses who need the most advanced security and productivity capabilities.
 
           To learn more, see the following resources:
 
-          - [Reimagine productivity with Microsoft 365 and Microsoft Teams](https://www.microsoft.com/microsoft-365/business/compare-all-microsoft-365-business-products-b?ef_id=67386da73ec61354e1550985269d2a17:G:s&OCID=AIDcmmwf9kwzdj_SEM_67386da73ec61354e1550985269d2a17:G:s&lnkd=Bing_O365SMB_Brand&msclkid=67386da73ec61354e1550985269d2a17)
-          - [Compare security features in Microsoft 365 plans for small and medium-sized businesses](/microsoft-365/security/defender-business/compare-mdb-m365-plans)
+          - [Microsoft 365 User Subscription Suites for Small and Medium-sized Businesses](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/final/en-us/microsoft-brand/documents/modern-work-plan-comparison-smb5.pdf)
           - [Microsoft 365 for enterprise overview](/microsoft-365/enterprise/microsoft-365-overview)
-          
+
       - question: Can I switch my Microsoft 365 plan to Microsoft 365 Business Premium?
         answer: |
           Yes, customers may switch their plans from a qualifying Microsoft 365 plan to Microsoft 365 Business Premium. Depending on the customer's current plan, there may be a decrease or increase in monthly charges.
@@ -105,28 +112,28 @@ sections:
       - question: In what regions is Microsoft 365 Business Premium available?
         answer: |
           Microsoft 365 Business Premium is available to all partners and customers where Office 365 is available. See the list of [Office 365 international availability for languages, countries, and regions](https://products.office.com/business/international-availability).
-          
+
       - question: Is there a Microsoft 365 Business Premium trial I may use to evaluate the offer?
         answer: |
-          Yes! See the [Microsoft 365 Business Premium product page](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot:overviewtab), where you can start your trial or paid subscription. 
+          Yes! See the [Microsoft 365 Business Premium product page](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot:overviewtab), where you can start your trial or paid subscription.
 
-          To get help setting up your trial, see [Trial user guide for Microsoft 365 Business Premium](/microsoft-365/business-premium/m365bp-trial-playbook-microsoft-business-premium). 
-          
+          To get help with setting up your trial, see [Trial user guide for Microsoft 365 Business Premium](/microsoft-365/business-premium/m365bp-trial-playbook-microsoft-business-premium).
+
   - name: Deployment
     questions:
       - question: What should customers consider when planning a Microsoft 365 Business Premium deployment?
         answer: |
-          Consider working with a Microsoft Partner. They have extensive training and experience with a wide variety of customer scenarios and are best equipped to understand your environment and needs. 
-          
+          Consider working with a Microsoft Partner. They have extensive training and experience with a wide variety of customer scenarios and are best equipped to understand your environment and needs.
+
           If you prefer to set up and configure Microsoft 365 Business Premium on your own, see [Microsoft 365 Business Premium – productivity and cybersecurity for small business](/microsoft-365/business-premium/).
-          
+
       - question: Does Microsoft 365 Business Premium include the full capabilities of Microsoft Intune?
         answer: |
           Yes, Microsoft 365 Business Premium subscribers are licensed to use full Intune capabilities for iOS, Android, Mac, and other cross-platform device management. Features not available in the simplified management console in Microsoft 365 Business Premium, like third-party app management, configuration of Wi-Fi profiles, and VPN certificates, can be managed in the full Intune console.
 
-      - question: Does Azure Active Directory (Azure AD) Premium P1 come with Microsoft 365 Business Premium?
+      - question: Does Microsoft Entra ID P1 come with Microsoft 365 Business Premium?
         answer: |
-          Yes, Azure AD Premium P1 is included with Microsoft Business Premium.
+          Yes, Microsoft Entra ID P1 is included with Microsoft Business Premium.
 
       - question: Does Microsoft 365 Business Premium allow customers to manage Mac?
         answer: |
@@ -135,31 +142,31 @@ sections:
       - question: What is Windows Autopilot?
         answer: |
           Windows Autopilot is a service that streamlines the deployment of new Windows 10 PCs. This process can be done when the end user logs on to Microsoft 365 Business Premium for the first time&mdash;without IT ever touching the device&mdash;by leveraging the centralized management controls of Microsoft 365 Business Premium. You can also use Windows Autopilot for existing PCs that are running Windows 10 Professional Creators Update (or later) and have been factory reset. Details about Windows Autopilot can be found in [this June 2017 blog post](https://blogs.technet.microsoft.com/windowsitpro/2017/06/29/modernizing-windows-deployment-with-windows-Autopilot/).
-          
+
   - name: Compatibility
     questions:
       - question: Can I add Office 365 add-ons to Microsoft 365 Business Premium?
         answer: |
-          All the add-ons that can be added to Microsoft 365 Business Standard can be added to Microsoft 365 Business Premium. 
+          All the add-ons that can be added to Microsoft 365 Business Standard can be added to Microsoft 365 Business Premium.
 
       - question: Can I add Phone System and Calling Plans to Microsoft 365 Business Premium?
         answer: |
           Yes, you can purchase a Business Voice subscription. [Business Voice](/microsoftteams/business-voice/whats-business-voice) is a telephony solution designed for small and medium businesses of up to 300 users that bundles Phone System, Audio Conferencing, a Domestic Calling Plan, and more. Phone System capabilities that you'll get include voicemail, caller ID, call park, call forwarding, auto attendants, and call queues. <br> To find out whether Business Voice is available in your country or region, see [Country and region availability for Business Voice](/microsoftteams/business-voice/country-region-availability). For pricing information, see [Pricing for Business Voice](https://go.microsoft.com/fwlink/?linkid=2127221).
-          
+
       - question: Can Microsoft 365 Business Premium customers use Microsoft Defender for Endpoint?
         answer: |
           Microsoft 365 Business Premium includes Microsoft Defender for Business. Defender for Business was built on the capabilities of Defender for Endpoint and provides advanced security protection for devices. However, you can add Defender for Endpoint Plan 1 or Plan 2 to your Microsoft 365 Business Premium subscription. See [Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
-          
+
   - name: Partner opportunity
     questions:
       - question: Where can I learn more about the opportunities and benefits in becoming a Microsoft Partner?
         answer: |
-          IT service providers that are not already Microsoft partners can learn more about the Microsoft Cloud Solution Provider program [https://partner.microsoft.com/membership/cloud-solution-provider](https://partner.microsoft.com/membership/cloud-solution-provider).
-          
+          IT service providers that are not already Microsoft partners can learn more about the Microsoft Cloud Solution Provider program <https://partner.microsoft.com/membership/cloud-solution-provider>.
+
       - question: Where can I learn how to sell Microsoft 365 Business Premium?
         answer: |
-          Partners now selling Office 365 can use the same consultative selling methods to sell Microsoft 365 Business Premium. In addition, we are introducing more resources and training for your sales team to understand the customers' existing desktop environment, Active Directory reliance, mobility, and security needs to effectively communicate the full value of Microsoft 365 Business Premium in a way that is relevant to the customer. Find these resources at the Microsoft Partner portal ([https://www.microsoft.com/microsoft-365/partners](https://www.microsoft.com/microsoft-365/partners)).
-                    
+          Partners now selling Office 365 can use the same consultative selling methods to sell Microsoft 365 Business Premium. In addition, we are introducing more resources and training for your sales team to understand the customers' existing desktop environment, Active Directory reliance, mobility, and security needs to effectively communicate the full value of Microsoft 365 Business Premium in a way that is relevant to the customer. Find these resources at the Microsoft Partner portal (<https://www.microsoft.com/microsoft-365/partners>).
+
       - question: Some of my customers have devices that aren't genuine; will Microsoft 365 Business Premium make these devices genuine?
         answer: |
           Microsoft 365 Business Premium doesn't make an otherwise non-genuine version of Windows, genuine. Microsoft 365 Business Premium does provide an upgrade benefit allowing those customers running genuine Windows 7, 8, or 8.1 Pro to upgrade to the most recent, genuine version of Windows 10 Pro.
@@ -167,4 +174,3 @@ sections:
       - question: What is the GDPR and how does Microsoft 365 Business Premium help customers with their compliance obligations?
         answer: |
           The General Data Protection Regulation (GDPR) is a comprehensive new privacy law that gives residents of the European Union (EU) greater control over their "personal data" and requires organizations to maintain the integrity of that personal data. The GDPR requires organizations that control or process personal data tied to EU residents to only use third-party data processors that meet the GDPR requirements for personal data processing. In March 2017, Microsoft made available contractual guarantees that provide these assurances. Customers that have questions about how Microsoft can help them meet their additional GDPR obligations should learn about the advanced compliance and security capabilities available in Microsoft 365 Business Premium (for example, Azure Information Protection, data loss prevention, Defender for Office 365, and so on) and in other suites (for example, Microsoft 365 Enterprise E5). To learn more, visit [www.microsoft.com/gdpr](https://www.microsoft.com/gdpr).
-          

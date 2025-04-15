@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 
-title: Business subscriptions and billing documentation # < 60 chars
+title: Microsoft business subscriptions and billing documentation # < 60 chars
 summary: Learn how to buy and manage business subscriptions, perform license management tasks, and manage billing and payments for your Microsoft business accounts. # < 160 chars
 metadata:
-  title: Business subscriptions and billing documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  title: Microsoft business subscriptions and billing documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Learn how to buy and manage business subscriptions, perform license management tasks, and manage billing and payments for your Microsoft business accounts. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: microsoft-365-business #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
@@ -11,7 +11,7 @@ metadata:
   - Tier1
   - scotvorg 
   - highpri 
-  - commerce # Optional; Remove if no collection is used.
+  - commerce
   - Adm_TOC
   ms.custom: 
   - VSBFY23
@@ -20,9 +20,9 @@ metadata:
   ms.author: cmcatee #Required; microsoft alias of author; optional team alias.
   manager: scotv
   audience: Admin
-  ms.date: 03/01/2023 #Required; mm/dd/yyyy format.
   ms.localizationpriority: medium
   search.appverid: MET150
+  ms.date: 03/13/2025
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -34,15 +34,20 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: View your bill or invoice
+          - text: View your invoice
             url: billing-and-payments/view-your-bill-or-invoice.md
           - text: Manage payment methods
             url: billing-and-payments/manage-payment-methods.md
-          - text: Pay for your subscription
-            url: billing-and-payments/pay-for-your-subscription.md
-          - text: Understand your bill or invoice
+          - text: Understand your invoice (MCA)
+            url: billing-and-payments/understand-your-invoice.md           
+          - text: Understand your invoice (MOSA)
             url: billing-and-payments/understand-your-invoice2.md
-
+      - linkListType: overview
+        links:
+          - text: Introducing the new Microsoft billing experience
+            url: billing-experience-overview.md
+          - text: Payment options for your subscription
+            url: billing-and-payments/pay-for-your-subscription.md
       - linkListType: video
         links:
           - text: Understand your bill or invoice
@@ -57,9 +62,11 @@ landingContent:
         links:
           - text: Buy or remove licenses
             url: licenses/buy-licenses.md
-          - text: Assign licenses to users
+          - text: Assign or unassign licenses for users
             url: ../admin/manage/assign-licenses-to-users.md
-          - text: Download perpetual software and product license key
+          - text: Assign or unassign licenses for groups
+            url: ../admin/manage/manage-group-licenses.md
+          - text: Download perpetual software and product license keys
             url: ../admin/setup/download-software-licenses-csp.md
       - linkListType: overview
         links:
@@ -69,6 +76,8 @@ landingContent:
         links:
           - text: Buy new licenses
             url: https://www.youtube.com/watch?v=1E3-ozWz0A4
+          - text: Remove existing licenses
+            url: https://www.youtube.com/watch?v=Edtf_uy5fZs
 
   # Card
   - title: Manage subscriptions
@@ -91,3 +100,5 @@ landingContent:
         links:
           - text: Sign up for Microsoft 365 for business
             url: https://www.youtube.com/watch?v=BRN-zfy0ncI
+          - text: Move users to a different subscription
+            url: https://www.youtube.com/watch?v=IgXxC1H1XU0

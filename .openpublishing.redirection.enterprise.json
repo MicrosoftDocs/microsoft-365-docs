@@ -752,37 +752,37 @@
      },
      {
         "source_path":"microsoft-365/enterprise/microsoft-365-policies-configurations.md",
-        "redirect_url":"/microsoft-365/security/office-365-security/microsoft-365-policies-configurations",
+        "redirect_url":"/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-overview",
         "redirect_document_id":false
      },
      {
         "source_path":"microsoft-365/enterprise/identity-access-prerequisites.md",
-        "redirect_url":"/microsoft-365/security/office-365-security/identity-access-prerequisites",
+        "redirect_url":"/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-prereq",
         "redirect_document_id":false
      },
      {
         "source_path":"microsoft-365/enterprise/identity-access-policies.md",
-        "redirect_url":"/microsoft-365/security/office-365-security/identity-access-policies",
+        "redirect_url":"/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-common",
         "redirect_document_id":false
      },
      {
         "source_path":"microsoft-365/enterprise/identity-access-policies-guest-access.md",
-        "redirect_url":"/microsoft-365/security/office-365-security/identity-access-policies-guest-access",
+        "redirect_url":"/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-guest-access",
         "redirect_document_id":false
      },
      {
         "source_path":"microsoft-365/enterprise/teams-access-policies.md",
-        "redirect_url":"/microsoft-365/security/office-365-security/teams-access-policies",
+        "redirect_url":"/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-teams",
         "redirect_document_id":false
      },
      {
         "source_path":"microsoft-365/enterprise/secure-email-recommended-policies.md",
-        "redirect_url":"/microsoft-365/security/office-365-security/secure-email-recommended-policies",
+        "redirect_url":"/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-exchange",
         "redirect_document_id":false
      },
      {
         "source_path":"microsoft-365/enterprise/sharepoint-file-access-policies.md",
-        "redirect_url":"/microsoft-365/security/office-365-security/sharepoint-file-access-policies",
+        "redirect_url":"/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-sharepoint",
         "redirect_document_id":false
      },
      {
@@ -1039,6 +1039,411 @@
         "source_path":"microsoft-365/enterprise/lang-service-health.md",
         "redirect_url":"/microsoft-365/enterprise/view-service-health",
         "redirect_document_id":true
-     }
+     },
+     {
+      "source_path":"microsoft-365/enterprise/moving-data-to-new-datacenter-geos.md",
+      "redirect_url":"/microsoft-365/enterprise/m365-dr-overview#migrationsmoves",
+      "redirect_document_id":false
+   },
+   {
+      "source_path":"microsoft-365/enterprise/request-your-data-move.md",
+      "redirect_url":"/microsoft-365/enterprise/plan-for-multi-geo",
+      "redirect_document_id":false
+   },
+   {
+      "source_path":"microsoft-365/enterprise/routing-with-expressroute.md",
+      "redirect_url":"/microsoft-365/enterprise/azure-expressroute",
+      "redirect_document_id":false
+   },
+   {
+      "source_path":"microsoft-365/enterprise/managing-expressroute-for-connectivity.md",
+      "redirect_url":"/microsoft-365/enterprise/azure-expressroute",
+      "redirect_document_id":false
+   },
+   {
+      "source_path":"microsoft-365/enterprise/bgp-communities-in-expressroute.md",
+      "redirect_url":"/microsoft-365/enterprise/azure-expressroute",
+      "redirect_document_id":false
+   },
+   {
+      "source_path":"microsoft-365/enterprise/network-planning-with-expressroute.md",
+      "redirect_url":"/microsoft-365/enterprise/azure-expressroute",
+      "redirect_document_id":false
+   },
+   {
+      "source_path":"microsoft-365/enterprise/EU-data-storage-locations.md",
+      "redirect_url":"/microsoft-365/enterprise/m365-dr-overview",
+      "redirect_document_id":false
+   },
+   {
+      "source_path":"microsoft-365/enterprise/m365-dr-placeholder.md",
+      "redirect_url":"/microsoft-365/enterprise/advanced-data-residency",
+      "redirect_document_id":false
+   },
+   {
+      "source_path":"microsoft-365/enterprise/data-move-faq.md",
+      "redirect_url":"/microsoft-365/enterprise/m365-dr-legacy-move-program#data-move-general-faq",
+      "redirect_document_id":false
+   },
+   {
+      "source_path":"microsoft-365/enterprise/during-and-after-your-data-move.md",
+      "redirect_url":"/microsoft-365/enterprise/m365-dr-legacy-move-program",
+      "redirect_document_id":false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/microsoft-365-client-support-modern-authentication.md",
+      "redirect_url": "/microsoft-365/enterprise/microsoft-365-client-support-multi-factor-authentication",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/privileged-access-microsoft-365-enterprise-dev-test-environment.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/data-classification-microsoft-365-enterprise-dev-test-environment.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/increased-o365-security-microsoft-365-enterprise-dev-test-environment.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/pta-prereqs-m365-test-environment.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/phs-prereqs-m365-test-environment.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/cloud-only-prereqs-m365-test-environment.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/identity-device-access-m365-test-environment.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/azure-ad-identity-protection-microsoft-365-test-environment.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/automate-licenses-group-membership-microsoft-365-test-environment.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/password-reset-m365-ent-test-environment.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/password-writeback-m365-ent-test-environment.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/protect-global-administrator-accounts-microsoft-365-test-environment.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/multi-factor-authentication-microsoft-365-test-environment.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/single-sign-on-m365-ent-test-environment.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/federated-identity-for-your-microsoft-365-dev-test-environment.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/pass-through-auth-m365-ent-test-environment.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/password-hash-sync-m365-ent-test-environment.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/simulated-ent-base-configuration-microsoft-365-enterprise.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/m365-enterprise-test-lab-guides.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/simulated-cross-premises-microsoft-365-enterprise.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/project-server-2007-end-of-support.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/pps-2007-end-of-support.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/sharepoint-2007-end-of-support.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/exchange-2007-end-of-support.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/upgrade-from-office-2007-servers-and-products.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/project-server-2010-end-of-support.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/upgrade-from-sharepoint-2010.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/exchange-2010-end-of-support.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/upgrade-from-office-2010-servers-and-products.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/project-server-2013-end-of-support.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/upgrade-from-lync-2013.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/upgrade-from-sharepoint-2013.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/exchange-2013-end-of-support.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/upgrade-office-2013-clients-servers.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/plan-upgrade-previous-versions-office.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/client-server-software-roadmap-microsoft-365.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/skype-for-business-online.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/sharepoint-2007-migration-options.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/tune-skype-for-business-online-performance.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/use-lean-popouts-to-reduce-memory-used-when-reading-mail-messages.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/powershell-roadmap-microsoft-365.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/placeholder.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/move-onedrive-between-geo-locations.md",
+      "redirect_url": "/microsoft-365/enterprise/m365-dr-workload-spo#move-a-onedrive-site",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/disable-access-to-services-while-assigning-user-licenses.md",
+      "redirect_url": "/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/microsoft-azure-architectures-for-sharepoint-2013.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissio.md",
+      "redirect_url": "/microsoft-365/enterprise/manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-dap-p",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/maintain-group-membership-with-microsoft-365-powershell.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/configure-skype-for-business-for-hybrid-modern-authentication.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md",
+      "redirect_url": "/microsoft-365/enterprise/manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-dap-p",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/deploy-update-channels-examples-rapid-deploy.md",
+      "redirect_url": "/microsoft-365/enterprise/deploy-update-channels-examples",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/assign-per-user-skype-for-business-online-policies-with-microsoft-365-powershell.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/enabling-sp-multigeo-satellite-geolocation.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md",
+      "redirect_url": "/microsoft-365/enterprise/hybrid-solutions",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/high-availability-federated-authentication-phase-1-configure-azure.md",
+      "redirect_url": "/microsoft-365/enterprise/hybrid-solutions",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/high-availability-federated-authentication-phase-2-configure-domain-controllers.md",
+      "redirect_url": "/microsoft-365/enterprise/hybrid-solutions",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md",
+      "redirect_url": "/microsoft-365/enterprise/hybrid-solutions",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/high-availability-federated-authentication-phase-4-configure-web-application-pro.md",
+      "redirect_url": "/microsoft-365/enterprise/hybrid-solutions",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/high-availability-federated-authentication-phase-5-configure-federated-authentic.md",
+      "redirect_url": "/microsoft-365/enterprise/hybrid-solutions",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/tune-microsoft-365-performance.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/contoso-win10.md",
+      "redirect_url": "/microsoft-365/enterprise/contoso-win11",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/office-365-network-mac-perf-nppux.md",
+      "redirect_url": "/microsoft-365/enterprise/office-365-network-mac-perf-nppdetails",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/manage-skype-for-business-online-with-microsoft-365-powershell.md",
+      "redirect_url": "/microsoftteams/teams-powershell-managing-teams",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/manage-skype-for-business-online-policies-with-microsoft-365-powershell.md",
+      "redirect_url": "/microsoftteams/assign-policies-users-and-groups",
+      "redirect_document_id": false
+   }
   ]
 }

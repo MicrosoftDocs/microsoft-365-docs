@@ -5,9 +5,9 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
-ms.date: 02/18/2020
+ms.date: 11/27/2023
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
@@ -34,7 +34,7 @@ description: "Learn how to verify your email and domain ownership to take over a
 If you're an admin and want to take over an unmanaged account created by a self-service user signup, you can perform an internal admin takeover by following the steps in this article.
 
 > [!NOTE]
-> A self-service sign up for any cloud service that uses Azure AD adds the user to an unmanaged or "shadow" Azure AD directory and creates an unmanaged account. An unmanaged account is a directory without a global administrator. To determine whether an account is managed or unmanaged, see [Determining Tenant Type](/power-platform/admin/powerapps-gdpr-dsr-guide-systemlogs#determining-tenant-type). 
+> A self-service sign up for any cloud service that uses Microsoft Entra ID adds the user to an unmanaged or "shadow" Microsoft Entra directory and creates an unmanaged account. An unmanaged account is a directory without a global administrator. To determine whether an account is managed or unmanaged, see [Determining Tenant Type](/power-platform/admin/powerapps-gdpr-dsr-guide-systemlogs#determining-tenant-type). 
   
 ## Before you begin
 
@@ -59,7 +59,7 @@ When a user signs up for Microsoft 365 services using an email address, an accou
 
 ## Step 3: Verify domain ownership and become the admin
 
-1. After you complete Step 2, select the admin center icon in the left navigation pane (alternatively, go to a browser and type in `https://admin.microsoft.com`).
+1. After you complete Step 2, select the admin center icon in the left navigation pane (alternatively, go to a browser and type in `https://admin.cloud.microsoft`).
 
     You're redirected to the admin takeover wizard.
 
@@ -76,6 +76,6 @@ When a user signs up for Microsoft 365 services using an email address, an accou
 ## Related content
 
 YouTube: [Three steps to do an IT Admin Takeover for Power BI and Microsoft 365](https://www.youtube.com/watch?v=xt5EsrQBZZk) (video)\
-[Admin takeover in Azure AD](/azure/active-directory/users-groups-roles/domains-admin-takeover) (article)\
+[Admin takeover in Microsoft Entra ID](/azure/active-directory/users-groups-roles/domains-admin-takeover) (article)\
 [Using self-service sign up in your organization](self-service-sign-up.md) (article)\
 [Understanding the Power BI service administrator role](/power-bi/service-admin-role) (article)

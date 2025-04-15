@@ -1,11 +1,11 @@
 ---
 title: Collaborate with guests in a site (IT Admins)
-ms.author: mikeplum
-author: MikePlumleyMSFT
-manager: serdars
-ms.date: 07/19/2023
+ms.author: ruihu
+author: maggierui
+manager: jtremper
+ms.date: 05/31/2024
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-solutions
 ms.collection: 
 - highpri
@@ -34,19 +34,19 @@ In this article, we'll walk through the Microsoft 365 configuration steps necess
 
 This video shows the configuration steps described in this document.</br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE44Llg?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=614e2a1a-6b9c-421e-bab0-a94e9a9520d9]
 
-## Azure external collaboration settings
+## Microsoft Entra External ID external collaboration settings
 
-Sharing in Microsoft 365 is governed at its highest level by the [B2B external collaboration settings in Azure Active Directory](/azure/active-directory/external-identities/delegate-invitations). If guest sharing is disabled or restricted in Azure AD, this setting overrides any sharing settings that you configure in Microsoft 365.
+Sharing in Microsoft 365 is governed at its highest level by the [external collaboration settings in Microsoft Entra External ID](/azure/active-directory/external-identities/delegate-invitations). If guest sharing is disabled or restricted in Microsoft Entra External ID, this setting overrides any sharing settings that you configure in Microsoft 365.
 
-Check the B2B external collaboration settings to ensure that sharing with guests is not blocked.
+Check the external collaboration settings to ensure that sharing with guests isn't blocked.
 
-![Screenshot of Azure Active Directory External collaboration Settings page.](../media/azure-ad-organizational-relationships-settings.png)
+![Screenshot of Microsoft Entra External collaboration Settings page.](../media/azure-ad-organizational-relationships-settings.png)
 
 To set external collaboration settings
 
-1. Log in to Azure Active Directory at [https://entra.microsoft.com/](https://entra.microsoft.com/).
+1. Sign in to Microsoft Entra External ID at [https://entra.microsoft.com/](https://entra.microsoft.com/).
 1. In the left navigation pane, expand **External identities**.
 1. Select **External collaboration settings**.
 1. Ensure that either **Member users and users assigned to specific admin roles can invite guest users including guests with member permissions** or **Anyone in the organization can invite guest users including guests and non-admins** is selected.
@@ -54,7 +54,7 @@ To set external collaboration settings
 
 Note the settings in the **Collaboration restrictions** section. Make sure that the domains of the guests that you want to collaborate with aren't blocked.
 
-If you work with guests from multiple organizations, you may want to restrict their ability to access directory data. This prevents them from seeing who else is a guest in the directory. To do this, under **Guest user access restrictions**, select **Guest users have limited access to properties and membership of directory objects settings** or **Guest user access is restricted to properties and memberships of their own directory objects**.
+If you work with guests from multiple organizations, you might want to restrict their ability to access directory data. This prevents them from seeing who else is a guest in the directory. To do this, under **Guest user access restrictions**, select **Guest users have limited access to properties and membership of directory objects settings** or **Guest user access is restricted to properties and memberships of their own directory objects**.
 
 ## Microsoft 365 Groups guest settings
 
@@ -65,16 +65,16 @@ Modern SharePoint sites use Microsoft 365 Groups to control site access. The Mic
 To set Microsoft 365 Groups guest settings
 
 1. In the Microsoft 365 admin center, in the left navigation pane, expand **Settings**.
-1. Click **Org settings**.
-1. In the list, click **Microsoft 365 Groups**.
+1. Select **Org settings**.
+1. In the list, select **Microsoft 365 Groups**.
 1. Ensure that the **Let group owners add people outside your organization to Microsoft 365 Groups as guests** and **Let guest group members access group content** check boxes are both checked.
-1. If you made changes, click **Save changes**.
+1. If you made changes, select **Save changes**.
 
 ## SharePoint organization-level sharing settings
 
 In order for guests to have access to SharePoint sites, the SharePoint organization-level sharing settings must allow for sharing with guests.
 
-The organization-level settings determine the settings that are available for individual sites. Site settings cannot be more permissive than the organization-level settings.
+The organization-level settings determine the settings that are available for individual sites. Site settings can't be more permissive than the organization-level settings.
 
 If you want to allow unauthenticated file and folder sharing, choose **Anyone**. If you want to ensure that all people outside your organization have to authenticate, choose **New and existing guests**. Choose the most permissive setting that's needed by any site in your organization.
 
@@ -106,7 +106,7 @@ We'll invite users later. Next, it's important to check the site-level sharing s
 
 Check the site-level sharing settings to make sure that they allow the type of access that you want for this site. For example, if you set the organization-level settings to **Anyone**, but you want all guests to authenticate for this site, then make sure the site-level sharing settings are set to **New and existing guests**.
 
-Note that the site cannot be shared with unauthenticated people (**Anyone** setting), but individual files and folders can.
+Note that the site can't be shared with unauthenticated people (**Anyone** setting), but individual files and folders can.
 
 You can also use [sensitivity labels to control external sharing settings for SharePoint sites](../compliance/sensitivity-labels-teams-groups-sites.md).
 
@@ -126,7 +126,7 @@ Guest sharing settings are now configured, so you can start adding internal user
 To invite internal users to a group
 
 1. Navigate to the site where you want to add users.
-1. Select **Members** link in the upper right which denotes the member count.
+1. Select **Members** link in the upper right, which denotes the member count.
 1. Select **Add members**.
 1. Type the names or email addresses of the users that you want to invite to the site, and then select **Save**.
 
@@ -142,4 +142,4 @@ Guests can't be added to the Microsoft 365 group from the site. For information 
 
 [Create a B2B extranet with managed guests](b2b-extranet.md)
 
-[SharePoint and OneDrive integration with Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview)
+[SharePoint and OneDrive integration with Microsoft Entra External ID](/sharepoint/sharepoint-azureb2b-integration-preview)

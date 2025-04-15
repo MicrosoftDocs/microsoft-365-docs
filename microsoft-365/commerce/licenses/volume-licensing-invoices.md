@@ -1,37 +1,35 @@
 ---
-title: "Non-Azure Microsoft volume licensing invoices"
+title: "Microsoft volume licensing invoices"
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: sahilkhurana, ronarg
+ms.reviewer: aasthatiwari, atuldubey
 audience: Admin
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-volume-licensing
 ms.localizationpriority: medium
 ms.collection: 
-- Tier3
+- Tier1
 - scotvorg
 ms.custom:
 - commerce_vl
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Learn how to access and view non-Azure volume licensing invoices in the Microsoft 365 admin center."
-ms.date: 03/31/2023
+description: "Learn how to access your non-Azure volume licensing invoices in the Microsoft 365 admin center."
+ms.date: 03/28/2025
 ---
 
-# Non-Azure Microsoft volume licensing invoices
+# Microsoft volume licensing invoices
 
-This article applies only to non-Azure volume licensing (VL) invoices and explains the format of a new invoice PDF and invoice recon file that are available to volume licensing (VL) customers.
+> [!IMPORTANT]
+> This article applies only to non-Azure volume licensing (VL) invoices and explains the format of the invoice PDF and invoice recon file that are available to VL customers.
 
-Starting on November 18, 2022, VL customers with non-Azure products purchased **under a direct VL agreement** can access the new invoice format in the Microsoft 365 admin center. This invoice applies to all types of VL programs except Microsoft Products & Services Agreements (MPSA), Federal Government, Special agreements, and Select Plus agreements.
-
-This new invoice format is a phased implementation and will roll out to VL customers over the next few months. If you can't see VL invoices in the Microsoft 365 admin center yet, continue to refer to your invoice emails.
-
-> [!NOTE]
-> There are no changes to invoices generated before November 18, 2022.
+Volume licensing (VL) customers with non-Azure products bought under a direct VL agreement can access their invoice in the Microsoft 365 admin center. This invoice applies to all types of VL programs except Microsoft Products & Services Agreements (MPSA), Federal Government, Special agreements, and Select Plus agreements.
 
 ## Before you begin
 
@@ -134,7 +132,7 @@ The invoice recon file is a CSV file that includes the same information as the I
 |Product Family|The logical categorization of products.|
 |License Type|Reflects the terms of buying the product.|
 |Price Level|The price categorization of product.|
-|Billing Option|How frequently the customer is billed. This can be upfront, monthly, quarterly, semi-annually, or annually.|
+|Billing Option|How frequently the customer is billed. The frequency options are upfront, monthly, every three months, every six months, or yearly.|
 |Taxable|Indicates whether the product is taxable.|
 |Pool|The classification of the product into a system, server, or application.|
 |Service Period Start Date, Service Period End Date|Indicates the eligible service period.|
@@ -197,7 +195,7 @@ Only the **Bill To contact** participant on the agreement can view the correspon
 
 ## How often and when am I billed?
 
-Depending on the billing frequency you choose when you bought your subscription, you receive an invoice either upfront, monthly, quarterly, semi-annually, or annually. The amount of time since the last invoice date is the **Billing Period** and is on page one of the invoice. This time represents the date range during which charges accrue for the current invoice. If you made a change to your subscription outside of this date range, like adding or removing licenses, the associated charges appear on the invoice for the next billing period.
+Depending on the billing frequency you choose when you bought your subscription, you receive an invoice either upfront, monthly, every three months, every six months, or yearly. The amount of time since the last invoice date is the **Billing Period** and is on page one of the invoice. This time represents the date range during which charges accrue for the current invoice. If you made a change to your subscription outside of this date range, like adding or removing licenses, the associated charges appear on the invoice for the next billing period.
 
 ## Why is my total due different from last billing period?
 
@@ -220,7 +218,7 @@ Contact your Microsoft partner for invoice support.
 
 Contact your Microsoft partner for invoice support.
 
-## How can I make a request for the invoice PDF and recon file to be resent by mail?
+## How can I make a request for the invoice PDF and recon file to be sent by mail?
 
 This functionality isn't currently available.
 

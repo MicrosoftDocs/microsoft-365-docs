@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: Admin
 ms.topic: tutorial
 ms.localizationpriority: medium
@@ -32,7 +32,7 @@ Previously, when users identified documents as trusted documents, their selectio
 
 The updated Trust Center logic is described in the following diagram:
 
-:::image type="content" source="../media/office-trust-center-flow.png" alt-text="A flow chart describing Trust center Logic in the Microsoft 365 Defender portal" lightbox="../media/office-trust-center-flow.png":::
+:::image type="content" source="../media/office-trust-center-flow.png" alt-text="A flow chart describing Trust center Logic in the Microsoft Defender portal" lightbox="../media/office-trust-center-flow.png":::
 
 1. A user opens an Office document that contains active content.
 
@@ -78,7 +78,7 @@ For more information, see the following articles:
 
 Admins have many ways to configure Office in an organization. For example:
 
-- **Office cloud policy service**: Set up a user-based policy that applies to a user on any device accessing files in Office apps with their Azure AD account. See the steps for [creating an Office cloud policy configuration](/DeployOffice/overview-office-cloud-policy-service) in the [Office Cloud Policy Service](https://config.office.com/officeSettings/officePolicies).
+- **Office cloud policy service**: Set up a user-based policy that applies to a user on any device accessing files in Office apps with their Microsoft Entra account. See the steps for [creating an Office cloud policy configuration](/DeployOffice/overview-office-cloud-policy-service) in the [Office Cloud Policy Service](https://config.office.com/officeSettings/officePolicies).
 - **Office policies in Intune**: Use the Intune Settings catalog or Administrative templates to deploy HKCU policies to Windows 10 PCs: In the [Intune admin center](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/configurationProfiles) under **Devices** \> **Configuration Profiles**.
   - ***Administrative Templates***: See instructions to use Windows 10 templates to configure [Administrative Templates](/mem/intune/configuration/administrative-templates-windows).
   - ***Settings catalog (preview)***: See instructions to use the [Settings catalog](/mem/intune/configuration/settings-catalog).

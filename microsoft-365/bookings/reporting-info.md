@@ -1,37 +1,36 @@
 ---
-title: "View Bookings calendar information"
+title: "Reporting information for Shared Bookings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 08/10/2020
+ms.date: 04/10/2025
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
-ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: "Learn how you can see a 4 month view of your Bookings activity"
 ---
 
-# Reporting info for Bookings
+# Reporting information for Shared Bookings
 
-You can now see a four month view of your Bookings calendar in a TSV file. The TSV file will show you four months of data, but you can select different four month periods over the course of a year.
+You can now see a four month view of your shared booking page in a TSV file. The TSV file will show you four months of data, but you can select different four month periods over the course of a year.
 
-This appointment level information can be used to visualize the customer activity around your Bookings calendar. TSV files are tab separated value files. You can view or edit a file like this with any text editor or spreadsheet program, such as Excel.
+This appointment level information can be used to visualize the customer activity around your shared booking page. TSV files are tab separated value files. You can view or edit a file like this with any text editor or spreadsheet program, such as Excel.
 
-## See four months of Booking activity
+## See four months of Shared Bookings activity
 
 1. In Microsoft 365, select the App launcher, and then select **Bookings**.
 
-1. On the Bookings home page, select **Export**.
+1. On the Shared Bookings home page, select **Export**.
 
 1. On the **Export recent data** page, select your date range and select **Export**.
 
 1. Save the file with a new name, and specify .xls or xlsx format.
 
-1. Open the file to see the four month view of your Bookings calendar.
+1. Open the file to see the four month view of your shared booking page.
 
 1. Choose the date for your report and select **Export**.
 
@@ -50,7 +49,7 @@ The report includes the following fields.
 - **Duration (minutes)**
 - **Event Type**
 
-The improved report now contains the following fields.
+The improved report now contains the following fields:
 
 - **Pricing Type**   Default pricing type set for a service when creating the service.
 - **Price**   Price corresponding to the pricing type chosen.

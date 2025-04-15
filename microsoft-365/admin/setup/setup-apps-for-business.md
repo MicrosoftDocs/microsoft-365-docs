@@ -5,9 +5,9 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
-ms.date: 05/28/2020
+ms.date: 06/21/2024
 audience: Admin
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
@@ -24,6 +24,7 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- admindeeplinkMAC
 search.appverid:
 - MET150
 - MOE150
@@ -41,7 +42,7 @@ You can add users in the wizard, but you can also [add users later](../add-users
 
  ::: moniker range="o365-worldwide"
 
-1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.cloud.microsoft</a>.
 
 ::: moniker-end
 
@@ -53,25 +54,25 @@ You can add users in the wizard, but you can also [add users later](../add-users
 
 2. Choose **Go to setup** to start the wizard.
 
-3. On the first page you will get the option to install Microsoft 365 apps on your computer. You can also do this later.
+3. On the first page, you get the option to install Microsoft 365 productivity apps on your computer. You can also do this later.
 
-3. On the next page you can add users and they will automatically get assigned the Microsoft 365 apps for business license. After you've added the users, you'll also get an option to share credentials with the new users you added. You can choose to print them out, email them, or download them.
+3. On the next page, you can add users and they'll automatically get assigned the Microsoft 365 productivity apps for business license. After you've added the users, you'll also get an option to share credentials with the new users you added. You can choose to print them out, email them, or download them.
 
- When the sign-up process is complete, you'll be directed to the admin center, where you can add users, and assign licenses. 
+ When the sign-up process is complete, you're directed to the admin center, where you can add users, and assign licenses. 
 
 ## Install Microsoft 365
 
-Once you've created accounts for other people in your business, you and your team members will be able to install the full desktop version of Microsoft 365 (Word, Excel, Outlook, etc.). Each person can install Microsoft 365 on up to 5 PCs or Macs.
+Once you've created accounts for other people in your business, you and your team members are able to install the full desktop version of Microsoft 365 (Word, Excel, Outlook, etc.). Each person can install Microsoft 365 on up to 5 PCs or Macs.
   
 ::: moniker range="o365-worldwide"
 
-Go to [https://admin.microsoft.com/OLS/MySoftware.aspx](https://admin.microsoft.com/OLS/MySoftware.aspx).
+Go to **My accounts** > <a href="https://go.microsoft.com/fwlink/?linkid=2265141" target="_blank">Apps & devices</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-If you're using Office 365 operated by 21Vianet, go to [https://portal.partner.microsoftonline.cn/OLS/MySoftware.aspx](https://portal.partner.microsoftonline.cn/OLS/MySoftware.aspx).
+If you're using Microsoft 365 operated by 21Vianet, go to [https://portal.partner.microsoftonline.cn/OLS/MySoftware.aspx](https://portal.partner.microsoftonline.cn/OLS/MySoftware.aspx).
 
 ::: moniker-end
 
@@ -83,7 +84,7 @@ Need more detailed steps or want to install the 64-bit version of Microsoft 365?
   
 ## Set up mobile
 
-Install Microsoft 365 on your mobile device, and set up Outlook to work with your new Microsoft mailbox. Everyone on your team will need to do this step. Each person can install the Microsoft 365 mobile apps on up to 5 phones and 5 tablets.
+Install Microsoft 365 on your mobile device, and set up Outlook to work with your new Microsoft mailbox. Everyone on your team needs to do this step. Each person can install the Microsoft 365 mobile apps on up to five phones and five tablets.
   
 Get the steps for your device: [Android](https://support.microsoft.com/office/6ef2ebf2-fc2d-474a-be4a-5a801365c87f) | [iOS](https://support.microsoft.com/office/0402b37e-49c4-4419-a030-f34c2013041f) | [Windows Phone](https://support.microsoft.com/office/9bccc8b8-a321-4d0d-a45e-6e06a3438e43)
   
@@ -105,11 +106,11 @@ To take a tour of Microsoft 365 and learn how to use all the Microsoft 365 mobil
 
 ## Add a custom domain
 
-You can also add a custom domain, like *contoso.com*, to your account to personalize the emails if you haven't already done so. For more information, see [add a domain](add-domain.md).
+You can also add a custom domain, like *contoso.com*, to your account to personalize the emails if you haven't done so. For more information, see [add a domain](add-domain.md).
 
 ## Finish setting up
 
-Follow the steps below to set up Outlook and OneDrive.
+Follow the steps next to set up Outlook and OneDrive.
 
 ### Step: Set up Outlook for email
 
@@ -117,7 +118,7 @@ Follow the steps below to set up Outlook and OneDrive.
 
     (If you're using a Mac, open Outlook from the toolbar or locate it using the Finder.)
 
-    If you've just installed Outlook, on the Welcome page, select **Next**.
+    If you've installed Outlook, on the Welcome page, select **Next**.
 
 2. Choose **File** \> **Info** \> **Add Account**.
 
@@ -125,13 +126,13 @@ Follow the steps below to set up Outlook and OneDrive.
 
 ## Watch: Set up Outlook for email
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/9fe86884-8a83-42cc-bca9-61a12e6dad31?autoplay=false]
+> [!VIDEO e30573c6-b0d5-4007-8ff6-8c9dfd4e39fe]
   
 More at [Set up Outlook for email](https://support.microsoft.com/office/f5bf0cd1-e1f3-4b0d-a022-ecab17efe86f).
   
 ### Import email
 
-If you were using Outlook with another email account, you can import your previous email, calendar, and contacts into your new Microsoft account.
+If you're using Outlook with another email account, you can import your previous email, calendar, and contacts into your new Microsoft account.
   
 1. **Export your old email**
 
@@ -147,12 +148,12 @@ If you were using Outlook with another email account, you can import your previo
 
 ## Watch: Import and redirect email
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/40f7df36-9e24-44e5-8791-e9ed0dd8fd21?autoplay=false]
+> [!VIDEO 9efe5ae1-1dec-4f2c-8ea5-fef10843388e]
   
 More at [Import email with Outlook](https://support.microsoft.com/office/6a3771d4-4c1d-4a25-92a6-0b8e476335de).
 
 You can also use Exchange admin center to import everyone's email. For more information, see [migrate multiple email accounts](/Exchange/mailbox-migration/mailbox-migration).
 
-## Set up OneDrive for business
+## Set up Microsoft OneDrive
 
-Select the OneDrive cloud icon from your taskbar and follow the steps to move your files to your new OneDrive for Business folder. Select **Next** to set up Microsoft Teams.
+Select the OneDrive cloud icon from your taskbar and follow the steps to move your files to your new Microsoft OneDrive folder. Select **Next** to set up Microsoft Teams.

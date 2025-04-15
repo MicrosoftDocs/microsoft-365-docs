@@ -18,6 +18,8 @@ f1.keywords: NOCSH
 
 # Creating and Testing Binary Files on Test Base
 
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
 This section provides all the steps necessary to create a new package containing binary files, for uploading and testing on Test Base. If you already have a pre-built .zip file, you can see [Uploading pre-built Zip package](uploadApplication.md), to upload your file.
 
 > [!IMPORTANT]
@@ -32,7 +34,7 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
 > [!div class="mx-imgBorder"]
 > ![Create a new Package wizard](Media/testapplication01.png)
 
-### Step 1. Define content
+### Step 1: Define content
 
 1. In the **Package source** section, select Binaries (for example: .exe, .msi) in the Package source type.
 
@@ -57,13 +59,16 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
    > [!div class="mx-imgBorder"]
    > ![Next step](Media/testapplication05.png)
 
-### Step 2. Configure test
+### Step 2: Configure test
 
 1. Select the **Type of test**. There are two test types supported:
    - An **Out of Box (OOB) test** performs an install, launch, close, and uninstall of your package. After the install, the launch-close routine is repeated 30 times before a single uninstall is run. The OOB test provides you with standardized telemetry on your package to compare across Windows builds.
    - A **Functional test** would execute your uploaded test script(s) on your package. The scripts are run in the sequence you specified and a failure in a particular script will stop subsequent scripts from executing.
+   - A **Flown Driven test** allows you to arrange your test scripts with enhanced flow control. To help you comprehensively validate the impact of an in-place Windows upgrade, you can use flow driven tests to execute your tests on both the baseline OS and target OS with a side-by-side test result comparison.
 
    > [!NOTE]
+   > Users can also select the pre-installed Microsoft apps option. This option will install Microsft apps, like Office, before the user application is installed.
+   >
    > Out of Box test is optional now.
 
    > [!div class="mx-imgBorder"]
@@ -74,7 +79,7 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
    > [!div class="mx-imgBorder"]
    > ![Generate script prompts](Media/testapplication08.png)
 
-### Step 3. Edit package
+### Step 3: Edit package
 
 1. In the Edit package tab, you can
    - Check your package folder and file structure in **Package Preview**.
@@ -124,7 +129,7 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
 
 4. Once all required info is filled out, you can move to step 4 by clicking the Next button at the bottom.
 
-### Step 4. Set test matrix
+### Step 4: Set test matrix
 
 The Test matrix tab is for you to indicate the specific Windows update program or Windows product that you may want your test to execute against.
 
@@ -166,7 +171,7 @@ The Test matrix tab is for you to indicate the specific Windows update program o
    > [!div class="mx-imgBorder"]
    > ![Screenshot shows Set test matrix set os.](Media/settestmatrix05-setos.png)
 
-### Step 5. Review + publish
+### Step 5: Review + publish
 
 1. Review all the information for correctness and accuracy of your draft package. To make corrections, you can navigate back to early steps where you specified the settings as needed.
 
@@ -203,4 +208,3 @@ If you have any previous draft packages, you can view the list of your saved dra
 
 > [!NOTE]
 > The dashboard only shows the saved draft packages. To view published packages, you will need to go to the Manage Packages page.
-

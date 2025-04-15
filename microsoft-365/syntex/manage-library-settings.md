@@ -1,26 +1,26 @@
 ---
-title: Manage library settings in Microsoft Syntex
+title: Manage library settings for document processing in SharePoint
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
-ms.date: 06/01/2023
+ms.date: 03/11/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
-    - enabler-strategic
+    - essentials-manage
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to manage settings on a SharePoint document library with Microsoft Syntex.
+description: Learn how to manage settings for document processing on a SharePoint document library.
 ---
 
-# Manage library settings in Microsoft Syntex
+# Manage library settings for document processing in SharePoint
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
-In Microsoft Syntex, library settings in a SharePoint document library let you see information about the model and also let you configure specific Syntex settings for the library.
+Library settings in a SharePoint document library provide information about the document processing model and allow you to configure specific settings for the library.
 
 To access library settings from a SharePoint document library, select **Settings** ![Image showing the Settings menu icon](../media/content-understanding/settings-icon.png) > **Library settings**.
 

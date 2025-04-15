@@ -4,7 +4,7 @@ ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
 audience: Admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
@@ -12,9 +12,10 @@ ms.collection:
 - scotvorg
 - Adm_O365
 - Adm_TOC
+- must-keep
 ms.custom:
 description: "Learn about the accessibility conformance and features of the Microsoft 365 admin center."
-ms.date: 11/03/2022
+ms.date: 10/20/2023
 ---
 
 # Microsoft 365 admin center accessibility overview
@@ -53,6 +54,6 @@ The Microsoft 365 admin center provides the following features to support access
 
 ## Support and feedback
 
-Microsoft provides an enterprise Disability Answer Desk as a support resource for organizations that have questions about the accessibility of Microsoft products and product conformance with accessibility standards. The support team can help resolve issues relating to assistive technology and functionality of products for users with disabilities, and find conformance documentation. For accessibility help, email the [enterprise Disability Answer Desk](mailto:eDAD@microsoft.com).
+Microsoft provides an enterprise Disability Answer Desk as a support resource for organizations that have questions about the accessibility of Microsoft products and product conformance with accessibility standards. The support team can help resolve issues relating to assistive technology and functionality of products for users with disabilities, and find conformance documentation. For accessibility help, visit our [Accessibility site](https://aka.ms/dad).
 
 We welcome your feedback on the accessibility of the Microsoft 365 admin center. Use the **Give feedback** button inside the admin center to let us know about any accessibility barriers you encounter.

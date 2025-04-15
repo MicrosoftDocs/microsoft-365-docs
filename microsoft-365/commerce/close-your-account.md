@@ -9,6 +9,7 @@ ms.reviewer: emmasheridan, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
 ms.collection:
 - Tier1
@@ -16,14 +17,17 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-  - commerce_subscriptions
-  - AdminSurgePortfolio
-  - fwlink 2133922 to Delete subscription heading
-  - AdminTemplateSet
-  - has-azure-ad-ps-ref
+- commerce_subscriptions
+- AdminSurgePortfolio
+- fwlink 2133922 to Delete subscription heading
+- AdminTemplateSet
+- admindeeplinkMAC
+- has-azure-ad-ps-ref
+- GAUpdates
+- campaignIDs-batch1
 search.appverid: MET150
 description: "Learn how to close your business account with Microsoft. All information related to your account is deleted including licenses, users, and user data."
-ms.date: 08/31/2023
+ms.date: 03/27/2025
 ---
 
 # Close your Microsoft business account
@@ -37,23 +41,24 @@ If you want to close a personal Microsoft account, see [How to close your Micros
 > [!IMPORTANT]
 > Before you start this process, make sure to back up any data that you want to preserve.
 
-- You must be a global or billing admin to do the tasks in this article. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).
+- You must be a Global Administrator to do the tasks in this article. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).
+    [!INCLUDE [ga-roles-limitation](../includes/ga-roles-limitation.md)]
 - [Find out what type of billing account you have](manage-billing-accounts.md#view-my-billing-accounts).
 - If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a billing account owner or contributor to do some of the tasks in this article. For information about billing account roles, see [Understand your Microsoft business billing account](manage-billing-accounts.md).
 
 > [!NOTE]
-> If you're the person who signed up for the subscription, you're automatically a billing account owner or global admin.
+> If you're the person who signed up for the subscription, you're automatically a Global Administrator.
 
 ## Step 1: Delete users
 
-Delete all users except for one global admin. The global admin completes the steps to close the account. Before you can delete the directory at the end of this process, you must delete all other users.
+Delete all users except for your Global Administrator account. The Global Administrator must complete the steps to close the account. Before you can delete the directory at the end of this process, you must delete all other users.
 
 If users are synchronized from on-premises, first turn off sync, then delete the users in the cloud directory by using the Azure portal or Azure PowerShell cmdlets. For more information, see [Delete Microsoft 365 user accounts with PowerShell](../enterprise/delete-and-restore-user-accounts-with-microsoft-365-powershell.md).
 
 - To delete users, see [User management admin: Delete one or more users](../admin/add-users/delete-a-user.md#user-management-admin-delete-one-or-more-users-from-microsoft-365).
-- To delete users in bulk, use the [Remove-MsolUser](/powershell/module/msonline/remove-msoluser) PowerShell cmdlet.
+- To delete users in bulk, use the [Remove-MgUser](/powershell/module/microsoft.graph.users/remove-mguser) Microsoft Graph PowerShell cmdlet.
 
-If your organization uses Active Directory that synchronizes with Microsoft Azure Active Directory (Azure AD), delete the user account from Active Directory, instead. For instructions, see [Bulk delete users in Azure Active Directory](/azure/active-directory/users-groups-roles/users-bulk-delete).
+If your organization uses Active Directory that synchronizes with Microsoft Entra ID, delete the user account from Active Directory, instead. For instructions, see [Bulk delete users in Microsoft Entra ID](/azure/active-directory/users-groups-roles/users-bulk-delete).
 
 ## Step 2: Cancel all active subscriptions
 
@@ -83,18 +88,18 @@ If you have an MOSA billing account type, use the following steps to delete your
 
 ## Step 4: Disable multi-factor authentication
 
-You must be a global admin to do the following steps. To verify what role you have, see [Check admin roles in your organization](../admin/add-users/assign-admin-roles.md#check-admin-roles-in-your-organization).
-
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 2. In the **Navigation menu**, go to the **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 3. Select **Multi-factor authentication**.
-4. On the multi-factor authentication page, disable all accounts except for the global admin account that you're currently using.
+4. On the multi-factor authentication page, disable all accounts except for the Global Administrator account that you're currently using.
 
 You can also [use PowerShell to disable multi-factor authentication for multiple users](/azure/active-directory/authentication/howto-mfa-userstates#change-state-using-powershell).
 
-## Step 5: Delete the tenant in Azure Active Directory
+<a name='step-5-delete-the-tenant-in-azure-active-directory'></a>
 
-To delete your tenant, follow the steps in [Delete an Azure Active Directory tenant - Microsoft Entra](/azure/active-directory/enterprise-users/directory-delete-howto#delete-the-organization).
+## Step 5: Delete the tenant in Microsoft Entra ID
+
+To delete your tenant, follow the steps in [Delete a Microsoft Entra tenant - Microsoft Entra](/azure/active-directory/enterprise-users/directory-delete-howto#delete-the-organization).
 
 After you complete this final step, your account with Microsoft is closed and deleted.
 

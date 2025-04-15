@@ -4,10 +4,10 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: ragovind
-ms.date: 07/03/2023
+ms.reviewer: prpath
+ms.date: 10/27/2023
 audience: Admin
-ms.topic: article
+ms.topic: concept-article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
@@ -27,6 +27,9 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 Microsoft Defender for Endpoint provides endpoint security to secure your customers' devices from ransomware, malware, phishing, and other threats. Microsoft 365 Lighthouse allows you to view endpoint security insights and information for all your managed tenants.
 
 You can access the Device security page in Microsoft 365 Lighthouse from the **Security incidents** card on the Home page or from the left navigation pane by selecting **Devices** > **Device security**. You'll see any security incidents and alerts in your tenants that need attention, and devices that have been onboarded to Microsoft Defender for Endpoint.
+
+> [!NOTE]
+> This page provides the number of tenants for which data is unavailable because they do not have the required licenses.
 
 ## Incidents and alerts tab
 

@@ -5,9 +5,9 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 06/14/2023
+ms.date: 04/02/2025
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
@@ -16,6 +16,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- must-keep
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -31,6 +32,8 @@ As the admin of an organization, you might have company requirements to set up e
 
 > [!IMPORTANT]
 > You can use outbound spam filter policies to control automatic forwarding to external recipients. For more information, see [Control automatic external email forwarding in Microsoft 365](/microsoft-365/security/office-365-security/outbound-spam-policies-external-email-forwarding#how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls).
+> 
+> Email forwarding to recipients outside the organization doesn't prevent messages identified as spam, phishing, or malware from being forwarded. The recipient needs their own email security filter to identify and block these messages.
 
 > [!TIP]
 > If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
@@ -43,9 +46,9 @@ Before you set up email forwarding, note the following:
 
 - Once you set up email forwarding, only **new** emails sent to the  **from**  mailbox will be forwarded.
 
-- Email forwarding requires that the  *from*  account has a license. If you're setting up email forwarding because the user has left your organization, another option is to [convert their mailbox to a shared mailbox](convert-user-mailbox-to-shared-mailbox.md). This way several people can access it. However, a shared mailbox cannot exceed 50GB.
+- Email forwarding requires that the *from* account has a license unless it's a shared mailbox. If you're setting up email forwarding because the user has left your organization, another option is to [convert their mailbox to a shared mailbox](convert-user-mailbox-to-shared-mailbox.md). This way several people can access it. However, a shared mailbox can't exceed 50 GB.
 
-- You must be an Exchange administrator or Global administrator in Microsoft 365 to do these steps. For more information, see the topic [About admin roles](../add-users/about-admin-roles.md).
+- You must be an Exchange administrator in Microsoft 365 to do these steps. For more information, see the article [About admin roles](../add-users/about-admin-roles.md).
 
 ## Configure email forwarding
 
@@ -86,6 +89,7 @@ Before you set up email forwarding, note the following:
 ## Related content
 
 [Create a shared mailbox](../email/create-a-shared-mailbox.md) (article)\
+[Forward emails that are sent to a shared mailbox](/microsoft-365/admin/email/configure-a-shared-mailbox#forward-emails-that-are-sent-to-a-shared-mailbox) (article)\
 [Send email from a different address](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (article)\
 [Change a user name and email address](../add-users/change-a-user-name-and-email-address.md) (article)\
 [Control automatic external email forwarding in Microsoft 365](/microsoft-365/security/office-365-security/outbound-spam-policies-external-email-forwarding) (article)

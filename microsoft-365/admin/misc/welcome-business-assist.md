@@ -16,4 +16,4 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Welcome to Business Assist
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW14Ir8?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=23be75ab-77b4-4b3a-baba-b672f061f659]

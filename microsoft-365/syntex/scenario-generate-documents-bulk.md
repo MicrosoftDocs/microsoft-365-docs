@@ -2,11 +2,11 @@
 title: Generate documents in bulk with Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: lauris
-ms.date: 05/01/2023
+ms.date: 01/09/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-syntex
 ms.collection: 
     - enabler-strategic

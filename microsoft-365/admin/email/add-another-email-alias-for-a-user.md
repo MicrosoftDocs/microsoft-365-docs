@@ -5,9 +5,9 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 06/20/2023
+ms.date: 01/06/2025
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
@@ -40,28 +40,28 @@ If you want multiple people to manage email sent to a single email address like 
 
 ## Before you begin
 
-You must be a member of the Global admin role to add email aliases to a user. For more info, see [About admin roles in the Microsoft 365 admin center](../add-users/about-admin-roles.md).
+You must be a member of the user administrator role to add email aliases to a user. For more info, see [About admin roles in the Microsoft 365 admin center](../add-users/about-admin-roles.md).
 
 ## Add email aliases to a user
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 
-2. On the **Active Users** page, select the user > **Manage username and email**. You won't see this option if the person doesn't have a license assigned to them.
+2. On the **Active Users** page, select the user you want to manage.
 
-3. Add the new name in the **Username** field, select a domain and choose **Add**.
+1. Under **Aliases** and select **Manage username and email**. You won't see this option if the person doesn't have a license assigned to them.
+
+3. On the **Manage username and email** page, add the new alias in the **Username** field, select a domain and choose **Add**.
 
     > [!TIP]
     > The email alias must end with a domain from the drop-down list. To add another domain name to the list, see [Add a domain to Microsoft 365](../setup/add-domain.md).
   
-4. When you're done, choose **Save changes**.
+4. When you're done, choose **Save changes**. It usually takes about 24 hours for the new aliases to update.
 
-5. Wait 24 hours for the new aliases to update in Microsoft 365.
-
-6. The user will now have a primary address and an alias. For example, all mail sent to jenna@contoso.com, and her alias, jen@contoso.com, will go to Jenna's inbox. **When the user replies, the *From* address will depend on her Outlook client. Outlook on the web will use the alias at which the email was received. Outlook desktop will use her primary email alias.**
+5. The user will now have a primary address and an alias. For example, all mail sent to jenna@contoso.com, and her alias, jen@contoso.com, will go to Jenna's inbox. **When the user replies, the *From* address will depend on her Outlook client. Outlook on the web will use the alias at which the email was received. Outlook desktop will use her primary email alias.**
 
 ### Sending email from the proxy address easily
 
-Your users can now send from their aliases when using Outlook on the web. When the global admin has set the `Set-OrganizationConfig -SendFromAliasEnabled $true` cmdlet, users within the organization will get access to a list of checkboxes where each entry corresponds to an alias in their Outlook settings. Selecting an alias will make it appear in the **From** dropdown in the **Compose** form.
+Your users can now send from their aliases when using Outlook on the web. When the `Set-OrganizationConfig -SendFromAliasEnabled $true` cmdlet is set, users within the organization will get access to a list of checkboxes where each entry corresponds to an alias in their Outlook settings. Selecting an alias will make it appear in the **From** dropdown in the **Compose** form.
 
 ## Troubleshooting
 
@@ -71,7 +71,7 @@ If you get this error message it means that it's taking a bit longer to finish s
 
 ### Did you get "This user is synchronized with your local Active Directory. Some details can be edited only through your local Active Directory" message?
 
-If you get this error message it means that you need to add the alias in your on-premises Active Directory. Open Azure Active Directory and select the user account you would like to edit. Select **Properties** > **Attribute Editor** > **Proxyaddresses** and add the required alias, then wait for it to sync to Azure Active directory.
+If you get this error message, it means that you need to add the alias in your on-premises Active Directory. Open Active Directory Users and Computers (ADUC) and select the user account you would like to edit. Select **Properties** > **Attribute Editor** > **proxyAddresses** (if not visible, under ADUC's  **View** menu, enable **Advanced Features**). Next, add the required alias, which should start with the all-lowercase prefix "smtp:" (for example, `smtp:jsmith@contoso.com`). Lastly, wait for the changes to sync to Microsoft Entra ID.
 
 ### Did you purchase your subscription from GoDaddy or another Partner?
 

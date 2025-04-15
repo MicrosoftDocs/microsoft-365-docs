@@ -2,11 +2,11 @@
 title: Import a term set using a SKOS-based format
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
-ms.date: 05/14/2022
+manager: jtremper
+ms.date: 01/10/2025
 audience: admin
 ms.service: microsoft-syntex
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex

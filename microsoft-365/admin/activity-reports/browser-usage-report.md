@@ -1,7 +1,7 @@
 ---
 title: "Microsoft 365 admin center browser usage reports"
-ms.author: waxiaoyu
-author: sarahwxy
+ms.author: scotv
+author: efrene
 manager: scotv
 ms.date: 03/09/2021
 audience: Admin
@@ -48,7 +48,7 @@ The **Active Users** chart shows you the total number of users accessing Microso
 The report is internal to your organization with permissions limited to IT admins with existing access to the activity reports on the usage dashboard in the Microsoft 365 Admin Center.
 
 > [!NOTE]
-> Aggregate Microsoft browser usage and user level reporting is available. User level identification can be [removed per your organization’s policies](activity-reports.md#show-user-details-in-the-reports) and [role based access controls](../../admin/add-users/assign-admin-roles.md) can be used to adjust report access.
+> Aggregate Microsoft browser usage and user level reporting is available. User level identification can be [removed per your organization’s policies](activity-reports.md#show-user-group-or-site-details-in-the-reports) and [role based access controls](../../admin/add-users/assign-admin-roles.md) can be used to adjust report access.
 
 
 |Item|Description|

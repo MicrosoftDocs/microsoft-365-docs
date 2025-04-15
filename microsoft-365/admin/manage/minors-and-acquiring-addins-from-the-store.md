@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 07/06/2020
+ms.date: 01/06/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -21,7 +21,6 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: "Learn about the General Data Protection Regulation (GDPR) regulations that govern the personal data of minors."
 ---
 
@@ -29,9 +28,9 @@ description: "Learn about the General Data Protection Regulation (GDPR) regulati
 
 The General Data Protection Regulation (GDPR) is a European Union regulation that becomes effective May 25, 2018. It gives users rights to and protection of their data. One of the aspects of the GDPR is that minors cannot have their personal data sent to parties that their parent or guardian hasn't approved. The specific age defined as a minor depends on the region where the individual is located.
 
-Regions that have statutory regulations about parental consent include the United States, South Korea, the United Kingdom, and the European Union. For those regions, a minor will be blocked (via Azure Active Directory) from getting any new Office Add-ins from the Store and running add-ins that were previously acquired. For countries/regions without statutory regulations, there will be no download restrictions.
+Regions that have statutory regulations about parental consent include the United States, South Korea, the United Kingdom, and the European Union. For those regions, a minor will be blocked (via Microsoft Entra ID) from getting any new Office Add-ins from the Store and running add-ins that were previously acquired. For countries/regions without statutory regulations, there will be no download restrictions.
 
-A user is determined to be a minor based on data specified in Azure Active Directory. The organization admin is responsible for declaring the legal age group and the parental consent for that user.
+A user is determined to be a minor based on data specified in Microsoft Entra ID. The organization admin is responsible for declaring the legal age group and the parental consent for that user.
 
 If the parent/guardian consents to a minor using a specific add-In, then the organization admin can use centralized deployment to deploy that add-In to all minors who have consent.
 

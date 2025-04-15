@@ -5,10 +5,10 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 08/31/2020
+ms.date: 11/11/2024
 audience: Admin
-ms.topic: article
-ms.service: microsoft-365-business
+ms.topic: product-comparison
+ms.service: microsoft-365-basic-mobility-security
 ms.localizationpriority: medium
 ms.collection:
 - Tier3
@@ -16,11 +16,11 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- basic-mobility-security
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
-search.appverid:
-- MET150
+- basic-mobility-security
 description: "Basic Mobility and Security is part of the Microsoft 365 plans, while Microsoft Intune is a standalone product included with certain Microsoft 365 plans."
 ---
 
@@ -28,7 +28,7 @@ description: "Basic Mobility and Security is part of the Microsoft 365 plans, wh
 
 [Microsoft Intune](/mem/intune/) is a standalone product included with certain Microsoft 365 plans, while Basic Mobility and Security is part of the Microsoft 365 plans.
 
- ## Availability of Basic Mobility and Security and Intune
+## Availability of Basic Mobility and Security and Intune
 
 Both Basic Mobility and Security and Intune are included in various plans, described in the following table.
 
@@ -73,15 +73,19 @@ Microsoft Intune and built-in Basic Mobility and Security both give you the abil
 |WiFi profiles |Provision a native WiFi profile on the device. |No|Yes|
 |VPN profiles |Provision a native VPN profile on the device. |No|Yes|
 |Mobile application management  |Deploy your internal line-of-business apps and from apps stores to users. |No|Yes|
-|Mobile application protection  |Enable your users to securely access corporate information using the Microsoft 365 mobile app and line-of-business apps they know, while ensuring security of data by helping to restrict actions like copy, cut, paste, and save as, to only those apps managed approved for corporate data. Works even if the devices aren't enrolled to Basic Mobility and Security. See Protect app data using MAM policies. |No|Yes|
+|Mobile application protection  |Enable your users to securely access corporate information using the Microsoft 365 mobile app and line-of-business apps they know. This help ensure security of data by helping to restrict actions like copy, cut, paste, and save as, to only those apps managed approved for corporate data. Works even if the devices aren't enrolled to Basic Mobility and Security. See Protect app data using MAM policies. |No|Yes|
 |Managed browser  |Enable more secure web browsing using the Edge app. |No|Yes|
 |Zero touch enrollment programs (AutoPilot) |Enroll large numbers of corporate-owned devices, while simplifying user setup. |No|Yes|
 
-In addition to features listed in the preceding table, Basic Mobility and Security and Intune both include a set of remote actions that send commands to devices over the internet. For example, you can remove Microsoft 365 data from an employee’s device while leaving personal data in place (retire), remove Microsoft 365 apps from an employee's device (wipe), or reset a device to its factory settings (full wipe).
+In addition to features listed in the preceding table, Basic Mobility and Security and Intune both include a set of remote actions that send commands to devices over the internet. For example, you can:
 
-Basic Mobility and Security remote actions include retire, wipe and full wipe. For more information on Basic Mobility and Security actions, see [capabilities of Basic Mobility and Security](capabilities.md).
+- remove Microsoft 365 data from an employee’s device while leaving personal data in place (retire).
+- remove Microsoft 365 productivity apps from an employee's device (wipe).
+- reset a device to its factory settings (full wipe).
 
-With Intune you have the following set of actions:
+Basic Mobility and Security remote actions include retire, wipe, and full wipe. For more information on Basic Mobility and Security actions, see [capabilities of Basic Mobility and Security](capabilities.md).
+
+With Intune, you have the following set of actions:
 
 - [Autopilot reset](/mem/autopilot/windows-autopilot-reset) (Windows only)
 - [Bitlocker key recovery](https://support.microsoft.com/windows/finding-your-bitlocker-recovery-key-in-windows-6b71ad27-0b89-ea08-f143-056f5ab347d6) (Windows only)

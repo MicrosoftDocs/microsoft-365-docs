@@ -3,21 +3,21 @@ title: "Set Bookings language and time zones"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 06/24/2020
+ms.date: 04/02/2025
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
-ms.assetid: 94af3e22-aca6-4e91-8b91-1cd5a02a9ea8
+- essentials-manage
 description: "Change your language and time zone settings in Microsoft Bookings. If bookings are created at the wrong time, Bookings might be set for the wrong time zone."
 ---
 
 # Set language and time zones in Microsoft Bookings
 
-If you are using Microsoft Bookings and bookings are created at the wrong time, then your time zone settings might need to be changed. Likewise, if some bookings are in the wrong language, you might need to change your language settings.
+If you are using Microsoft Bookings and bookings are created in the wrong time zone, then your time zone settings might need to be changed. Likewise, if some bookings are in the wrong language, you might need to change your language settings.
 
 There are two separate language and time zone settings for Bookings. The first setting controls the language and time zone of the booking calendar and is set using the Outlook on the web settings for the personal calendar of the logged-in user. The second setting affects the self-service booking page that your customers use and is set using a "regional settings" page that controls language and time zone only for that page.
 

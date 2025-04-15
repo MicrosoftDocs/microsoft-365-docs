@@ -2,9 +2,9 @@
 title: "End of lifecycle options for groups, teams, and Viva Engage"
 ms.reviewer: mmclean
 ms.date: 08/12/2020
-ms.author: mikeplum
-author: MikePlumleyMSFT
-manager: serdars
+ms.author: jtremper
+author: jacktremper
+manager: pamgreen
 audience: Admin
 ms.topic: article
 ms.service: o365-solutions
@@ -69,11 +69,11 @@ These questions must be asked before the underlying group is deleted because exp
 
 **Guests**
 
-When guests are invited to a team, a guest account is created in the host organization’s Azure Active Directory before adding them to the team. When a team is deleted, guests aren't removed from Azure Active Directory. While guests can't access groups, sites, teams, or content which hasn't been shared with them, they can still potentially use features within Microsoft Teams such as starting chats, voice and video calls, and using apps.
+When guests are invited to a team, a guest account is created in the host organization’s Microsoft Entra ID before adding them to the team. When a team is deleted, guests aren't removed from Microsoft Entra ID. While guests can't access groups, sites, teams, or content which hasn't been shared with them, they can still potentially use features within Microsoft Teams such as starting chats, voice and video calls, and using apps.
 
-A team or group owner can invite someone from outside the organization to become a guest in Azure Active Directory by adding them to a team. A team owner can't, however, remove the guest from Azure Active Directory. Deleting accounts can only be performed by a global admin or user admin.
+A team or group owner can invite someone from outside the organization to become a guest in Microsoft Entra ID by adding them to a team. A team owner can't, however, remove the guest from Microsoft Entra ID. Deleting accounts can only be performed by a global admin or user admin.
 
-It's important to perform guest reviews and to understand whether guests need to be removed from Azure Active Directory upon team deletion. There may be a valid case for guests to remain in the directory, such as being a member of other teams or using other Microsoft 365 or Azure services.
+It's important to perform guest reviews and to understand whether guests need to be removed from Microsoft Entra ID upon team deletion. There may be a valid case for guests to remain in the directory, such as being a member of other teams or using other Microsoft 365 or Azure services.
 
 ## Teams
 

@@ -1,21 +1,20 @@
 ---
-title: "Protect unmanaged computers with Microsoft 365 Business Premium"
+title: "Protect unmanaged devices with Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
-manager: dansimp
+ms.author: chrisda
+author: chrisda
+manager: deniseb
 audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-security
-ms.subservice: m365bp
-ms.date: 05/02/2023
+ms.service: microsoft-365-business-security
+ms.date: 05/31/2024
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - M365-Campaigns
 - m365solution-smb
 - highpri
-- tier1
+- tier2
 ms.custom:
 - MiniMaven
 search.appverid:
@@ -25,16 +24,12 @@ search.appverid:
 description: "Protect unmanaged computers from cyberattacks with Microsoft 365 Business Premium. How to set up cybersecurity for Windows PCs and Macs."
 ---
 
-# Protect unmanaged computers with Microsoft 365 Business Premium
+# Protect unmanaged devices with Microsoft 365 Business Premium
 
-This objective is focused on protecting unmanaged computers, such as Windows 10 or 11 computers and Mac computers that are neither enrolled in Microsoft Intune nor onboarded to Microsoft Defender for Business. If your business or campaign has staff who bring their own devices, such as personally owned phones, tablets, and PCs, ask users to take certain steps to protect business information that might be on their devices.
+With Microsoft 365 Business Premium, you can [secure managed devices](m365bp-protect-managed-devices.md), such as computers, phones, and tablets. If your business or campaign has people who bring their own devices (BYOD), ask them to following the guidance in this article. This guidance can help people protect business information that might be on their devices. [Learn more about managed and unmanaged devices](m365bp-managed-unmanaged-devices.md).
 
 > [!NOTE]
 > This article applies primarily to unmanaged (or BYOD) devices. Guidance for protecting managed devices is available here: [Set up and secure managed devices](m365bp-protect-managed-devices.md).
-> 
-> [Learn more about managed and unmanaged devices](m365bp-managed-unmanaged-devices.md).
-
-It's critical that you ensure users follow these guidelines so that minimum security capabilities are configured on all the bring-your-own devices (also referred to as BYOD devices).
 
 ## [Windows 10 or 11](#tab/Windows10-11)
 
@@ -42,13 +37,13 @@ It's critical that you ensure users follow these guidelines so that minimum secu
 
 ### Turn on device encryption
 
-Device encryption is available on a wide range of Windows devices and helps protect your data by encrypting it. If you turn on device encryption, only authorized individuals will be able to access your device and data. See [turn on device encryption](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) for instructions.
+Device encryption is available on a wide range of Windows devices and helps protect your data by encrypting it. If you turn on device encryption, only authorized individuals are able to access your device and data. See [turn on device encryption](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) for instructions.
 
- If device encryption isn't available on your device, you can turn on standard [BitLocker encryption](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) instead. (BitLocker isn't available on Windows 10 Home edition.) 
+If device encryption isn't available on your device, you can turn on standard [BitLocker encryption](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) instead. (BitLocker isn't available on Windows 10 Home edition.)
 
 ### Protect your device with Windows Security
 
-If you have Windows 10 or 11, you'll get the latest antivirus protection with Windows Security. When you start up Windows 10 for the first time, Windows Security is on and actively helping to protect your PC by scanning for malware (malicious software), viruses, and security threats. Windows Security uses real-time protection to scan everything you download or run on your PC.
+If you have Windows 10 or 11, you get the latest antivirus protection with Windows Security. When you start up Windows 10 for the first time, Windows Security is on and actively helping to protect your PC by scanning for malware (malicious software), viruses, and security threats. Windows Security uses real-time protection to scan everything you download or run on your PC.
 
 Windows Update downloads updates for Windows Security automatically to help keep your PC safe and protect it from threats.
 
@@ -58,9 +53,9 @@ If you have an earlier version of Windows and are using Microsoft Security Essen
 
 You should always run Windows Defender Firewall even if you have another firewall turned on. Turning off Windows Defender Firewall might make your device (and your network, if you have one) more vulnerable to unauthorized access. See [Turn Windows Firewall on or off](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off) for instructions.
 
-## Next mission
+## Next step for Windows
 
-Okay, mission complete! Now, let's work on [securing the email system](m365bp-use-email-securely.md) against phishing and other attacks.
+Now, let's work on [securing the email system](m365bp-use-email-securely.md) against phishing and other attacks.
 
 ## [Mac](#tab/Mac)
 
@@ -80,6 +75,6 @@ You can also reduce the risk of malware by using software only from reliable sou
 
 Use firewall settings to protect your Mac from unwanted contact initiated by other computers when you're connected to the Internet or a network. Without this protection, your Mac might be more vulnerable to unauthorized access. See [about the application firewall](https://support.apple.com/HT201642) for instructions.
 
-## Next mission
+## Next step for Mac
 
-Okay, mission complete! Now, let's work on [securing email usage](m365bp-use-email-securely.md) against phishing and other attacks.
+Now, let's work on [securing email usage](m365bp-use-email-securely.md) against phishing and other attacks.

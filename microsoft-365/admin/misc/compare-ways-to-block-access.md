@@ -7,7 +7,7 @@ author: twernermsft
 manager: scotv
 ms.date: 02/18/2020
 audience: Admin
-ms.topic: article
+ms.topic: product-comparison
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
@@ -41,5 +41,5 @@ When an employee leaves your organization, on good terms or bad, you need to blo
 [Reset a user's password in Microsoft 365](../add-users/reset-passwords.md)
     
 [Assign licenses to users in Microsoft 365 for business](../manage/assign-licenses-to-users.md)
-    
-[Remove licenses from users in Microsoft 365 for business](../manage/remove-licenses-from-users.md)
+
+[Assign or unassign licenses for users in the Microsoft 365 admin center](../manage/assign-licenses-to-users.md)

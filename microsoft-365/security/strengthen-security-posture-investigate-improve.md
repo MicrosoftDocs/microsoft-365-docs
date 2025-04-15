@@ -4,12 +4,12 @@ title: "Strengthen your security posture - Investigate and improve"
 f1.keywords:
 - security posture
 - strengthen security posture
-ms.author: siosulli
-author: siosulli
-manager: dansimp
+ms.author: deniseb
+author: denisebmsft
+manager: deniseb
 audience: Admin
 description: Learn how to strengthen your organization's security posture - investigate and improve.
-ms.topic: tutorial
+ms.topic: solution-overview
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 search.appverid: 
@@ -22,6 +22,8 @@ ms.collection:
 - securityposture-solution
 - highpri
 - tier1
+- ContentEnagagementFY24
+ms.date: 08/28/2024
 ---
 
 # Strengthen your security posture - Investigate and improve
@@ -44,7 +46,7 @@ Use the **Remediation type** filter to review security recommendations you can t
 
 Keeping your software and firmware up to date can help mitigate known vulnerabilities affecting your devices. To review software and firmware security recommendations:
 
-1. Go to the Vulnerability management navigation menu in the [Microsoft 365 Defender portal](https://security.microsoft.com) and select **Recommendations**.
+1. Go to the Vulnerability management navigation menu in the [Microsoft Defender portal](https://security.microsoft.com) and select **Recommendations**.
 2. Select **Filter**.
 3. Select the Firmware and Software related remediation types:
 
@@ -55,7 +57,7 @@ Keeping your software and firmware up to date can help mitigate known vulnerabil
 
 Minimize attack surface and improve your posture by taking configuration hardening actions to reduce the risk of your devices being compromised and vulnerable to malicious attacks.
 
-1. Go to the Vulnerability management navigation menu in the [Microsoft 365 Defender portal](https://security.microsoft.com) and select **Recommendations**.
+1. Go to the Vulnerability management navigation menu in the [Microsoft Defender portal](https://security.microsoft.com) and select **Recommendations**.
 2. Select **Filter**.
 3. Select **Configuration changes** remediation type.
 4. Prioritize the configuration changes related recommendations that will lower your exposure score and raise your Secure Score the most.

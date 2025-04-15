@@ -5,9 +5,9 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 10/23/2020
+ms.date: 02/13/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
@@ -32,7 +32,7 @@ Adoption Score provides insights into your organization's digital transformation
 
 To get started with Content collaboration insights, people in your organization need to be licensed for:
 
-- OneDrive for Business
+- OneDrive
 - SharePoint
 - Exchange Online
 
@@ -53,7 +53,7 @@ We provide a primary insight that contains the key metrics for content collabora
 
 ### Primary insight
 
-Microsoft OneDrive for Business and SharePoint help people to easily create, read, and discover their individual and shared content in Microsoft 365 from across devices and applications. They also allow people to securely share and collaborate on content. The primary insight contains information from everyone who can use OneDrive for Business and SharePoint. Additionally it breaks down the details about how many people read, create, and collaborate on content stored in OneDrive for Business and SharePoint.
+Microsoft OneDrive and SharePoint help people to easily create, read, and discover their individual and shared content in Microsoft 365 from across devices and applications. They also allow people to securely share and collaborate on content. The primary insight contains information from everyone who can use OneDrive and SharePoint. Additionally it breaks down the details about how many people read, create, and collaborate on content stored in OneDrive and SharePoint.
 
 :::image type="content" source="../../media/collabscore_primary.png" alt-text="Primary insights from communication collaboration score.":::
 
@@ -106,13 +106,13 @@ We also provide you with information that helps you gain visibility into how you
 
 :::image type="content" source="../../media/sharepointonedrivefiles.jpg" alt-text="Chart that shows number of people who create files in OneDrive or SharePoint.":::
 
-1. **Header:** Highlights the percentage of people active on Microsoft 365 apps who create files on OneDrive or SharePoint.
+1. **Header:** Highlights the percentage of people active on apps in Microsoft 365 who create files on OneDrive or SharePoint.
 2. **Body:** Provides information about the value of content creation in OneDrive and SharePoint.
-3. **Visualization:** The breakdown in the visualization represents the extent to which people who are using Microsoft 365 apps to create files in OneDrive and SharePoint, as follows:
-      - **OneDrive:** The blue (colored) portion of the bar and the fraction on the bar represent the percentage of people active on Microsoft 365 apps creating content on OneDrive as follows:
+3. **Visualization:** The breakdown in the visualization represents the extent to which people who are using apps in Microsoft 365 to create files in OneDrive and SharePoint, as follows:
+      - **OneDrive:** The blue (colored) portion of the bar and the fraction on the bar represent the percentage of people active on apps in Microsoft 365 creating content on OneDrive as follows:
         - Numerator: The number of people who create, modify, upload, sync, check in, copy, or move online Microsoft 365 files in OneDrive within the last 28 days.</br>
         - Denominator: The number of people who have access to OneDrive or SharePoint and access office files within the last 28 days.
-      - **SharePoint:** The blue (colored) portion of the bar and the fraction on the bar represent the percentage of people who are active in Microsoft 365 apps and create content on SharePoint as:</br>
+      - **SharePoint:** The blue (colored) portion of the bar and the fraction on the bar represent the percentage of people who are active in apps in Microsoft 365 and create content on SharePoint as:</br>
          - Numerator: The number of people who create, modify, upload, sync, check in, copy, or move online Microsoft 365 files (Microsoft Word, Excel, PowerPoint, or OneNote files) on SharePoint within the last 28 days. </br>
          - Denominator: The number of people who have access to OneDrive or SharePoint and have accessed Microsoft 365 files within the last 28 days.
 
@@ -130,10 +130,10 @@ Understand how many users are attaching physical files in email rather than link
 3. **Visualization:** The breakdown in the visualization is meant to represent the extent to which people who are attaching content in emails are using different modes (files not saved to online files, links to online files):
       - **Attach files:** The blue (colored) portion of the bar and the fraction (numerator/denominator) on the bar represents the percentage of people using attachments in emails.
         - Numerator: The number of people who attach files to email that weren't saved to online file within the last 28 days.
-        - Denominator: The number of people who have had access to Exchange and OneDrive, SharePoint, or both within the last 28 days.
+        - Denominator: The number of people who have had access to Exchange and OneDrive, SharePoint, or both, and sent at least one attachment within the last 28 days.
       - **Links to online files:** The blue (colored) portion of the bar and the fraction (numerator/denominator) on the bar represent the percentage of people using attachments and attaching links to files in emails.
         - Numerator: The number of people attaching links to online files to emails within the last 28 days.
-        - Denominator: The number of people who have access to Exchange and OneDrive, SharePoint, or both within the last 28 days.
+        - Denominator: The number of people who have had access to Exchange and OneDrive, SharePoint, or both, and sent at least one attachment within the last 28 days.
 4. **Link to resources:** Select this link to view help content.
 
 ### Sharing of online files
@@ -144,11 +144,11 @@ Understand how many users are attaching physical files in email rather than link
 2. **Body:** Provides information about the admins&#39; ability to change the file- sharing settings in the organization to enable the level of collaboration best suited to your organization.
 3. **Visualization:** Represents the extent to which people who have access to OneDrive or SharePoint are sharing files internally or externally:
       - **Externally:** The blue (colored) portion of the bar and the fraction (numerator/denominator) on the bar represent the percentage of people who have access to OneDrive or SharePoint and are sharing files externally.
-        - Numerator: The number of people who have shared files externally with in the last 28 days
+        - Numerator: The number of people who have shared files externally within the last 28 days.
         - Denominator: The total number of people who have had access to OneDrive or SharePoint for at least 1 of the last 28 days.
       - **Internally only:** The blue (colored) portion of the bar and the fraction (numerator/denominator) on the bar represent the percentage of people who have access to OneDrive or SharePoint and are sharing files internally only.
-        - Numerator: The number of people who have shared files internally only within the last 28 days
-        - Denominator: The total number of people who have had access to OneDrive or SharePoint for at least 1 of the last 28 days.
+        - Numerator: The number of people who have shared files internally only within the last 28 days.
+        - Denominator: The number of people who have had access to Exchange and OneDrive, SharePoint, or both, and sent at least one attachment within the last 28 days.
 4. **Link to resources:** Select this link to view help content.
 
 ### Number of files collaborated on

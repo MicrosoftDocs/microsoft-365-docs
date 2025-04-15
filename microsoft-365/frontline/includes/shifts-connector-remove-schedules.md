@@ -1,7 +1,8 @@
 ---
 author: lana-chin
 ms.author: v-chinlana
-ms.date: 08/04/2022
+manager: jtremper
+ms.date: 10/17/2023
 ms.topic: include
 audience: admin
 ms.service: microsoft-365-frontline
@@ -12,7 +13,7 @@ ms.collection: m365-frontline
 
 Use PowerShell to remove schedules from teams.
 
-1. First, you'll need to install the PowerShell modules and get set up. Follow the steps to [set up your environment](../shifts-connector-powershell-manage.md#set-up-your-environment)
+1. First, install the PowerShell modules and get set up. Follow the steps to [set up your environment](../shifts-connector-powershell-manage.md#set-up-your-environment)
 1. Run the following command:
 
     ```powershell

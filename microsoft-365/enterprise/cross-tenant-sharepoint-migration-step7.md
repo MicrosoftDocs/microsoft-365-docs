@@ -1,13 +1,13 @@
 ---
 title: SharePoint Cross-Tenant User Data Migration Step 7 (preview)
-ms.author: jhendr
-author: JoanneHendrickson
-manager: serdars
+ms.author: heidip
+author: MicrosoftHeidi
+manager: jtremper
+ms.date: 10/13/2023
 recommendations: true
 audience: ITPro
-ms.topic: article
-ms.service: sharepoint-online
-ms.subservice: sharepoint-migration
+ms.topic: how-to
+ms.service: microsoft-365-migration
 ms.localizationpriority: high
 ms.collection: 
 - SPMigration
@@ -55,15 +55,14 @@ This is Step 7 in a solution designed to complete a Cross-tenant SharePoint migr
 |PartnerRole|Roles of the partner tenant you're establishing trust with. Use *source* if partner tenant is the source of the SharePoint migrations, and *target* if the partner tenant is the destination.|
 |PartnerCrossTenantHostURL|The cross-tenant host URL of the partner tenant. The partner tenant can determine this for you by running: *Get-SPOCrossTenantHostURL* on each of the tenants.|
 
-
 ## Removing redirect links post migration
- 
+
  After the migration from Source to Target is complete, a redirect link is placed on the source. If users attempt to log back into their Source account or site, the link automatically redirects them to their new Target site. Remove the redirect links on the source after your full migration has completed.
 
 :::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-redirect-workflow.png" alt-text="flow chart of how redirects are created":::
- 
+
 Occasionally, a user may need to be migrated back to the original source. Remove the redirect link on the Target if you migrate a user back to the source.
- 
+
 - To remove redirect links, use the **Remove-SPOSite** PowerShell command.
 - To get a list of all redirect sites on a tenant,  use the **Get-Sposite -Template RedirectSite#0** command.
 
@@ -72,14 +71,13 @@ Keep track of any user or site you migrate back to the source from the target. A
 >[!Important]
 >Site URL’s must be unique. When migrating a user or site back to the source, the redirect site created on the initial move will use the original URL. This will result in a conflict and cause the migration to fail if not removed. redirect link still being present on the tenant you are attempting to migrate to.
 
-
 ## Other post migration steps
 
 Existing links and permissions should continue to work as expected once the migration is complete, based on the identity mapping files that were created.
 
 ### SharePoint sites
 
-The source SharePoint site is set to read-only while a migration is in progress.  Once the migration is complete, users are directed to the site in the new target tenant whenever they navigate to the source site.  Users must sign in using their target tenant credentials. 
+The source SharePoint site is set to read-only while a migration is in progress.  Once the migration is complete, users are directed to the site in the new target tenant whenever they navigate to the source site.  Users must sign in using their target tenant credentials.
 
 ### Permissions on SharePoint content
 
@@ -88,3 +86,6 @@ Users with permissions to SharePoint content will continue to have access to the
 ### Sharing Links
 
 The existing shared links for the migrated files will automatically redirect to the new target location.
+
+> [!NOTE]
+> Customers need to manually add the labels which they might have removed before migration.

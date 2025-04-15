@@ -4,20 +4,23 @@ metadata:
   author: cmcatee-MSFT
   ms.author: cmcatee
   manager: scotv
-  ms.reviewer: racheg, vician
-  ms.date: 08/16/2023
+  ms.reviewer: aasthatiwari, atuldubey
   audience: Admin
   ms.topic: faq
   ms.service: microsoft-365-business
+  ms.subservice: m365-commerce-volume-licensing
+  ms.collection: 
+  - Tier1
+  - scotvorg
   ms.custom: 
   - commerce_vl
-  - empty
+  - admindeeplinkMAC
+  - GAUpdates
   search.appverid: MET150
-  ms.collection: 
-  - Tier2
-  - scotvorg
   ms.localizationpriority: medium
   description: "Online service activation for Open program Frequently Asked Questions"
+  ms.date: 10/13/2023
+
 title: Online service activation for Open program Frequently Asked Questions
 summary: |
 
@@ -28,39 +31,44 @@ sections:
           How do I activate online services purchased through the Open programs (Open, Open Value, and Open Value Subscription)?
         answer: |
           Open customers can activate online services in two ways:
-          - After you order your online services through the Open program family, you'll receive an email with a link and instructions to activate your services.
+
+          1. After you order your online services through the Open program family, you'll receive an email with a link and instructions to activate your services.
           OR
-          - From the [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/Licensing/Servicecenter/default.aspx) Open program customers can go to the Online Service Activation section and select the license to manage:
-
-          1. Select the manage activation link, and then select Start Activation. A product activation window opens and prepopulates the key.
-          2. Continue the remaining activation steps to complete product activation.
-
-          Successful activation is complete within 48 hours on the Volume Licensing Online Service Activation website.
-          For information about activating Microsoft Azure, see [Get Started with Azure in Open Licensing](https://azure.microsoft.com/offers/ms-azr-0111p/).
+          2. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> and sign in with your credentials.
+            a. In the **Navigation menu**, select **Billing** > **Your products**, then select the **Volume licensing** tab.
+            b. Go to **Product & Services** or **Contracts modules** and under the **Keys** section, select the license ID to manage.
+            c. Select the **Manage activation** link, then select **Start Activation**. A product activation window opens and prepopulates the key.
+            d. Continue the remaining activation steps to complete product activation.
+            
+            >[!NOTE]
+            >It can take up to 24 hours for the service to display as activated in the Microsoft 365 admin center volume licensing section.
 
       - question: |
           I don't see my Azure order. What should I do?
         answer: |
-          Azure orders are activated through keys. Get your keys through the Downloads and Keys tab in the VLSC and enter the key on the Get Started with [Azure in Open Licensing page](https://azure.microsoft.com/offers/azure-open/).
+          Azure orders are activated through keys located in the Product & Services module in Microsoft 365 Admin Center. For information about activating Microsoft Azure, see [Get Started with Azure in Open Licensing page](https://azure.microsoft.com/offers/ms-azr-0111p/).
 
       - question: |
           What is a work or school account and why do I need one to activate online services?
         answer: |
-          A work or school account is intended for users to sign in to the organization Microsoft services. The sign-in typically uses the form username@orgname.com or username@orgname.onmicrosoft.com, where *orgname* is their organization email domain name.
+          A work or school account is intended for users to sign in to the organization Microsoft services. The sign-in typically uses the form *username@orgname.com* or *username@orgname.onmicrosoft.com*, where *orgname* is their organization email domain name.
 
       - question: |
           How do I know if my organization already has an account?
         answer: |
           The organization name associated with your work or school account is taken from the License ID of the service you're activating. If an account exists, the organization name is prepopulated in the Organizational Account set-up and already linked to your organization from the original online service order. The registration process validates whether your organization has an account. 
         
-          If the field for **Company** is available, finish the registration process to sign in and activate the service. If this field isn't available, you must register the organization. You must be a Global administrator to register an organization for an account.
-          
-          When you request a work or school account, your request is sent to your organization Tenant  administrator who grants or denies your registration request. Use this work or school account when you sign into Microsoft VLSC Online Service Activation.
+          If the field for **Company** is available, finish the registration process to sign in and activate the service. If this field isn't available, you must register the organization. You must be a Global Administrator to register an organization for an account.
+
+          > [!CAUTION] 
+          > Global Administrators have almost unlimited access to your organization's settings and most of its data. To help keep your organization secure, we recommend that you limit the number of Global Administrators as much as possible.
+
+          When you request a work or school account, your request is sent to your organization Tenant administrator who grants or denies your registration request. Use this work or school account when you sign in to Microsoft 365 admin center
 
       - question: |
           Why does the activation portal log me out after I activate an online service?
         answer: |
-          When you activate Online Services under the Open License program, each agreement is activated separately. To ensure that licenses aren't activated on the wrong tenant, each activation is handled in a separate session. 
+          When you activate Online Services under the Open License program, each agreement is activated separately. To ensure that licenses aren't activated on the wrong tenant, each activation is handled in a separate session.
 
       - question: |
           How does Online Service Activation work for Open License purchases?
@@ -73,19 +81,6 @@ sections:
           To assign products to a new organization, go through the sign-up steps to create a new organization. Next, you can assign any seats or products you purchased.
 
       - question: |
-          I just activated my online service. Why does it still say I need to activate my service on the Manage Activations page on the Volume Licensing Service Center?
-        answer: |
-          It can take up to 24 hours for the service you activated to appear as status **Activated** on the **Manage Activations** page.
-
-      - question: |
           How do I contact support?
         answer: |
           For phone or web for support, see [Contact Us](/licensing/contact-us). Microsoft responds to web form submissions within 24 hours.
-          
-additionalContent: |
-
-  ## Additional resources
-  
-  - [Product keys FAQ](product-keys-faq.yml)
-
-  - [Downloads FAQ](downloads-faq.yml)

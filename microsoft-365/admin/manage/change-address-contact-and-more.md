@@ -1,5 +1,5 @@
 ---
-title: "Change your organization's address, technical contact, and more"
+title: "Change your organization's address, contact preferences, and technical contact in the Microsoft 365 admin center"
 f1.keywords:
 - CSH
 author: cmcatee-MSFT
@@ -9,6 +9,7 @@ ms.reviewer: jkinma, ramagane
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-management
 ms.localizationpriority: medium
 ms.collection:
 - Tier1
@@ -21,78 +22,96 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
+- GAUpdates
 search.appverid: MET150
-description: "Make changes to your organization profile, such as organization name, address, phone, technical contact, and email."
-ms.date: 02/11/2022
+description: "Learn how to make changes to your organization's profile, including the organization name, address, phone number, and technical contact."
+ms.date: 10/06/2024
 ---
 
-# Change your organization's address, technical contact, and more
+# Change your organization's address, contact preferences, and technical contact in the Microsoft 365 admin center
   
-You can make changes to your organization profile, such as your organization name, address, phone, and technical contact. **You must be a global admin to update this information.**
+As an admin, you can use the Microsoft 365 admin center to make changes to your organization profile, like your organization name, address, phone number, and technical contact.
   
-To change the address associated with your bill or subscription, see [Change your billing addresses for Microsoft 365 for business](../../commerce/billing-and-payments/change-your-billing-addresses.md).
+To change the address associated with your bill or subscription, see [Change your billing addresses for Microsoft 365 for business](../../commerce/billing-and-payments/change-your-billing-addresses.md). 
 
-## Change organization settings for Cloud PCs
+## Before you begin
 
-By default, new Cloud PCs are created with the Windows 11 operating system and the Standard User account type. To change these default settings, use the following steps:
+You must be a Global Administrator to do the tasks in this article. For more information, see [About admin roles](../add-users/about-admin-roles.md).
 
-1. Sign in to the Microsoft 365 admin center with a Global admin account.
-2. Go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Org settings**</a> page.
-3. On the **Services** tab, select **Windows 365**.
-4. Select your preferred operating system and account type, then select **Save**.
+[!INCLUDE [ga-roles-limitation](../../includes/ga-roles-limitation.md)]
 
-Organization settings only apply to newly-created Cloud PCs. When these settings are changed, they won't change the OS or account type of existing Cloud PCs.
+## Edit your organization's information
 
-## Edit organization information
+You can change most of your organization’s profile information in the Microsoft 365 admin center.
 
-> [!IMPORTANT]
-> You can't change the country or region for your subscription. That's because the country or region where your organization is headquartered determines which services are available to you, the taxes and billing currency, and the location of the data center. To change your organization's country or region, sign up for a new account, choose the desired country or region, and purchase a new subscription.
+### Change your organization’s name
 
-To change other information on your company's profile page:
+The steps to change your organization’s name depend on the type of billing account that you have. [Find out what type of billing account you have](../../commerce/manage-billing-accounts.md#view-my-billing-accounts).
+
+- If you have a Microsoft Customer Agreement (MCA) billing account type, you can’t change your organization’s name without assistance. [Complete this form](https://www.microsoft.com/download/details.aspx?id=102732), then contact support to get help with changing your organization’s name.
+
+- If you have a Microsoft Online Services Agreement (MOSA) billing account type, you can change your organization’s name in the Microsoft 365 admin center. To change your organization’s name, follow the steps in [Edit organization information](#edit-organization-information).
+
+### Change your country/region
+
+You can't change the country/region for your subscription. The country/region where your organization is headquartered determines which services are available to you, the taxes and billing currency, and the location of the data center. To change your organization's country/region, sign up for a new account, choose the desired country or region, and buy a new subscription.
+
+### Edit organization information
+
+To change information on your organization's profile page, use the following steps.
   
-1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Org settings**</a> page.
-2. On the **Organization profile** tab, select **Organization information**.
-3. Update your organization's information, then select **Save changes**. Be sure to fill in all required fields marked with an * to enable saving your changes.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
+2. In the **Navigation menu**, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Org settings**</a> page.
+3. Select the **Organization profile** tab, select **Organization information**.
+4. Update your organization's information, then select **Save**. You must fill in all required fields marked with an asterisk (*) before you can save your changes.
 
 > [!NOTE]
 > SharePoint Online and OneDrive have a 256-character limit on Windows PCs. If you exceed the character limit, you receive an error message when you try to do anything within the synchronized document libraries, like creating folders or renaming documents.
 
-An explanation of each field is provided below.
+### What do the organization information fields mean?
 
-## What do these fields mean?
+The following table explains the fields shown in the **Organization information** pane.
 
-|**Field**  |**Description**  |
+| Field | Description |
 |---------|---------|
-|Name  <br/>   | The name entered here is what users will see on the following pages:  <br/>  Sign-in page: If your users have set up other Microsoft accounts with their business or school email address, they may see the organization name on the sign-in page. This helps them distinguish between their work or school account and their other accounts, so they can identify which one to use when they sign in.  <br/>  Organization profile link and page: The link to your organization's profile displays the organization name.  <br/>  Viva Engage navigation: In Viva Engage, the left navigation uses the organization name as the name of the home Viva Engage network.  <br/> OneDrive sync client: The organization name is shown in File Explorer on Windows and Finder on Mac, the file paths, the OneDrive activity center, the tooltip of the OneDrive cloud icon, and the OneDrive settings window. Currently, updating the organization name does not update it for configured clients. <br/> MS Teams: Organization Switcher in Teams displays the organization Name <br/>  |
-|Address, City, State/Province, Postal code  <br/>     | The address entered here is what you will see on your bill, under Sold To: The Sold To address on your bill is the same as your organization address on your profile page (see [Understand your bill or invoice for Microsoft 365 for business](../../commerce/billing-and-payments/understand-your-invoice2.md).  <br/>        |
-|Country or region  <br/>    | This is the country or region where the company is headquartered. The selected country or region determines which services are available to you, the taxes and billing currency for your country or region, and the location of the data center closest to you (see [About license restrictions](https://www.microsoft.com/microsoft-365/business/microsoft-office-license-restrictions)).<br/>NOTE: Once selected, the country or region cannot be changed. If you want to change the selection, you'll have to cancel your subscription and sign up again. For help with this process, [contact support](../get-help-support.md).        |
-|Phone  <br/>     | This is the primary number for your company. It's usually the number of your company headquarters.  <br/>        |
-|Technical contact  <br/> |This is the email address for the primary technical person who administers your Microsoft 365 subscription. This is the person who will receive communications about Microsoft 365 service status.  <br/> |
-|Preferred language  <br/> |The preferred language determines the language for all communications that are sent from Microsoft to your organization. When you sign up, this setting determines the language used by SharePoint Online, which your users see on your team site. If you change the language preference setting after you sign up, all future communications are sent in the most recent language selected.  <br/> NOTE: The language used by SharePoint Online can't be changed.           |
+|Name  | The organization's name that's used to identify it.  |
+|Address, City, State/Province, ZIP/Postal code   | The address entered is shown on your invoice under **Sold To**. The Sold To address is the same as your organization address on your profile page.    |
+|Country or region   | The country/region where the organization is headquartered. The selected country/region determines which services are available to you, the taxes and billing currency for your country/region, and the location of the data center closest to you. To find out whether a country/region is supported, see [About license restrictions](https://www.microsoft.com/microsoft-365/business/microsoft-office-license-restrictions).<br/><br/>**NOTE:** After you select a country/region, it can't be changed. If you need to change the selection, you must cancel your subscription and sign up again. For help with this process, [contact support](../get-help-support.md).        |
+|Phone   | The primary telephone number for your organization. It's usually the number of your organization headquarters.  |
+|Technical contact | The email address for the primary technical person who administers your subscription. This person receives communications about Microsoft service status. |
+|Preferred language | Determines the language for all communications that are sent from Microsoft to your organization. When you sign up, this setting determines the language used by SharePoint Online, that your users see on your team site. If you change the language preference setting after you sign up, all future communications are sent in the most recent language selected.<br/><br/>**IMPORTANT:** The language used by SharePoint Online can't be changed.           |
 
-## Change your alternate email address
+## Change your contact preferences for communications from Microsoft
 
-As an admin, you can change your alternate email address for resetting passwords.
-
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
-
-2. In the header, select your profile icon, then select **View account**.
-
-3. On the left, select **Security info**.
-
-4. In the Email section, select **Change**
-
-5. Edit the address in the **Alternate email** box, then select **Next**.
-
-6. Enter the code sent to the alternate email address and select **OK** to verify the change.
-To learn about changing other profile information, see [Change your contact preferences](change-contact-preferences.md) or [Change your display language](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b).
+Use the **Contact preferences** section of the Settings & privacy page to choose the Microsoft 365 product-related communications that you want to receive.
   
-### Email signatures
+Read [Update your admin phone number and email address in Microsoft 365](update-phone-number-and-email-address.md) for info on how to change your admin cell phone number and email address.
   
-You can change your email signature in Outlook Web App. For more information, see [Mail settings](https://support.microsoft.com/office/30c69a79-efc6-42d2-b740-4bf1c1f8a01c).
+### To update your information
+  
+1. In the admin center, select the **Settings** icon in the top right of the header.
+
+2. Select **Update contact preferences**.
+
+3. Under **Contact preferences**, choose the types of product-related communications you want to receive.
+
+4. Choose **Save** when you're done.
+  
+For Office 365 Enterprise, Microsoft 365 Business Standard, and Microsoft 365 Business Basic, when you first signed up as an admin for Microsoft 365, depending on the country or region of the users in your organization, your users might be automatically signed up to receive product-related communications.
+
+## Change organization settings for Cloud PCs
+
+By default, new Cloud PCs are created with the Windows 11 operating system and the Standard User account type. To change these default settings, use the following steps.
+
+1. In the Microsoft 365 admin center, in the **Navigation menu**, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Org settings**</a> page.
+2. On the **Services** tab, select **Windows 365**.
+3. Select your preferred operating system and account type, then select **Save**.
+
+Organization settings only apply to newly created Cloud PCs. When these settings are changed, they don't change the OS or account type of existing Cloud PCs.
 
 ## Related content
 
-[Send email from a different address](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (article)\
+[Update your Microsoft 365 admin phone number and email address](update-phone-number-and-email-address.md) (article)\
+[Send email from a different address in Outlook.com](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (article)\
 [Change a user name and email address](../add-users/change-a-user-name-and-email-address.md) (article)\
 [Configure email forwarding in Microsoft 365](../email/configure-email-forwarding.md) (article)

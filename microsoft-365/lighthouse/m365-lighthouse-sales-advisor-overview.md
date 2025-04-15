@@ -4,10 +4,10 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: sharonchoi
+ms.reviewer: pawan
 ms.date: 07/17/2023
 audience: Admin
-ms.topic: article
+ms.topic: concept-article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
@@ -15,6 +15,7 @@ ms.collection:
 - scotvorg
 - M365-subscription-management
 - Adm_O365
+- essentials-manage
 ms.custom:
 - AdminSurgePortfolib
 - M365-Lighthouse                         
@@ -26,17 +27,15 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 Sales Advisor is a customer lifecycle management (CLM) experience that provides AI-driven customer insights, actionable recommendations, and prescriptive guidance across the customer lifecycle. Sales Advisor is based on a set of business rules, customer usage, and licensing positions. It enables a technique called "propensity modeling" to present dynamic opportunities for partners to better acquire, retain, and grow their customers.
 
-To view Sales Advisor, select **Sales Advisor \> Opportunities** in the left navigation pane in Lighthouse.
-
-**IMPORTANT:** To use Sales Advisor, users must have the appropriate roles listed in [Get access to Sales Advisor](m365-lighthouse-get-access-to-sales-advisor.md).
+To view Sales Advisor, select **Sales Advisor** > **Opportunities** in the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>.
 
 ## Watch: What is Sales Advisor?
 
-Video: [Preview: Microsoft 365 Lighthouse Sales Advisory](https://cloudpartners.transform.microsoft.com/download?assetname=assets%2FM365-Lighthouse-Sales-Advisor-Sizzle-Video.mp4)
+Video: [Preview: Microsoft 365 Lighthouse Sales Advisor](https://cloudpartners.transform.microsoft.com/download?assetname=assets%2FM365-Lighthouse-Sales-Advisor-Sizzle-Video.mp4)
 
 ## Sales Advisor benefits
 
-Ensure your customers’ success by using AI-driven customer insights, actionable recommendations, and prescriptive guidance. Maximize your customers’ investment in Microsoft 365 and deliver value at every stage of their journey.
+Ensure your customers' success by using AI-driven customer insights, actionable recommendations, and prescriptive guidance. Maximize your customers' investment in Microsoft 365 and deliver value at every stage of their journey.
 
 :::image type="content" source="../media/m365-lighthouse-sales-advisor/m365-lighthouse-opportunities-page.png" alt-text="Screenshot of Lighthouse Opportunities page." lightbox="../media/m365-lighthouse-sales-advisor/m365-lighthouse-opportunities-page.png":::
 
@@ -54,7 +53,7 @@ Ensure your customers’ success by using AI-driven customer insights, actionabl
 
 - Know your customers and where they are in their cloud journey.
 
-- Take advantage of Microsoft’s best-practice recommendations.
+- Take advantage of Microsoft's best-practice recommendations.
 
 - Access opportunity-specific resources to drive action.
 
@@ -92,10 +91,10 @@ Sales Advisor currently supports the following languages:
 
 ## Getting access to Sales Advisor
 
-To use Sales Advisor, you must hold either the Executive report viewer or report viewer role in Partner Center. For more information, see Get access to Sales Advisor.
+To use Sales Advisor to view customer opportunities, you must hold the Account Manager role in Lighthouse. If you don't hold the Account Manager role, reach out to someone who holds the Administrator role in Lighthouse and ask them to assign the role to you. For more information, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md).
 
 ## Related content
 
-[Get access to Sales Advisor](m365-lighthouse-get-access-to-sales-advisor.md) (article)\
-[Understanding opportunities and data in Sales Advisor](m365-lighthouse-understanding-opportunities-and-data.md) (article)\
+[Understand opportunities and data in Sales Advisor](m365-lighthouse-understanding-opportunities-and-data.md) (article)\
+[Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md) (article)\
 [Microsoft 365 Lighthouse – Transform](https://cloudpartners.transform.microsoft.com/partner-gtm/smb/m365-lighthouse) (Blog)

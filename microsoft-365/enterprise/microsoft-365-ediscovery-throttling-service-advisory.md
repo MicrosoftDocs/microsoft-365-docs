@@ -3,10 +3,11 @@ title: "Service advisories for eDiscovery throttling in Exchange Online monitori
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 10/14/2022
+ms.date: 08/02/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -14,6 +15,7 @@ ms.collection:
 - scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
+- must-keep
 ms.custom: 
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
@@ -26,7 +28,7 @@ description: "Learn about service advisories for eDiscovery throttling in Exchan
 
 We've released a new Exchange Online service advisory that informs you of eDiscovery being throttled. These service advisories provide visibility into the instances when the user is unable to submit Search and Export because of throttling.
 
-These service advisories are displayed in the Microsoft 365 admin center. To view these service advisories, go to  **Health**  | **[Service health](https://go.microsoft.com/fwlink/p/?linkid=842900)** | **Exchange Online**. Here's an example of eDiscovery service advisory.
+These service advisories are displayed in the Microsoft 365 admin center. To view these service advisories, go to  **Health**  | **[Service health](https://go.microsoft.com/fwlink/p/?linkid=842900)** | **Exchange Online**. Here's an example of an eDiscovery service advisory.
 
 ![eDiscovery service health screenshot](../media/ediscovery-service-health.jpg)
 
@@ -42,6 +44,6 @@ You can expect to see this type of advisory until the time where the Search and 
 
 ## More information
 
-- For information about troubleshooting and resolving eDiscovery compliance issues, see [Microsoft Purview troubleshooting](/troubleshoot/microsoft-365-compliance-welcome).
+- For information about troubleshooting and resolving eDiscovery compliance issues, see [Microsoft Purview troubleshooting](/microsoft-365/troubleshoot/microsoft-365-compliance-welcome).
 - For information about Microsoft Purview, see [What is Microsoft Purview?](/purview/purview)
 - To learn more about Microsoft Purview eDiscovery solutions, see [Microsoft Purview eDiscovery solutions](~/compliance/ediscovery.md)
