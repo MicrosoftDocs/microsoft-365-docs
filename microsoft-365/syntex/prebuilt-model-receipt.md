@@ -1,24 +1,25 @@
 ---
-title: Use a prebuilt model to extract information from receipts in Microsoft Syntex
+title: Use a prebuilt model to extract information from receipts in SharePoint
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
-ms.date: 11/05/2022
+ms.date: 02/16/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-syntex
+ms.subservice: syntex-content-intelligence
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to use a prebuilt receipts model in Microsoft Syntex.
+description: Learn how to use a prebuilt document processing model for receipts in SharePoint.
 ---
 
-# Use a prebuilt model to extract information from receipts in Microsoft Syntex
+# Use a prebuilt model to extract information from receipts in SharePoint
 
-The prebuilt *receipts model* in Microsoft Syntex analyzes and extracts key information from sales receipts. The API recognizes printed and handwritten receipts and [extracts key receipt information](/azure/applied-ai-services/form-recognizer/concept-receipt#field-extraction), such as merchant name, merchant phone number, transaction date, tax, and transaction total. Receipts can be of various formats and quality including printed and handwritten receipts.
+The *receipts prebuilt model* in Microsoft Syntex analyzes and extracts key information from sales receipts. The API recognizes printed and handwritten receipts and [extracts key receipt information](/azure/applied-ai-services/form-recognizer/concept-receipt#field-extraction), such as merchant name, merchant phone number, transaction date, tax, and transaction total. Receipts can be of various formats and quality including printed and handwritten receipts.
 
 To use a receipts model, follow these steps:
 
@@ -29,7 +30,7 @@ To use a receipts model, follow these steps:
 
 ## Step 1: Create a receipts model
 
-Follow the instructions in [Create a model in Syntex](create-syntex-model.md#set-up-a-prebuilt-model) to create a prebuilt receipts model. Then continue with the following steps to complete your model.
+Follow the instructions in [Create a model in Syntex](create-syntex-model.md#create-a-prebuilt-model) to create a receipts prebuilt model. Then continue with the following steps to complete your model.
 
 ## Step 2: Upload an example file to analyze
 
@@ -57,6 +58,10 @@ The entity fields that are highlighted in green in the document area are the ite
 
 > [!TIP]
 > You can use the scroll wheel on your mouse or the controls at the bottom of the document area to zoom in or out as needed to read the entity fields.
+
+### Set a page range for processing
+
+For this model, you can specify to process a range of pages for a file rather than the entire file. If no page range is provided, the entire document will be processed. For more information, see [Set a page range to extract information from specific pages](page-range.md).
 
 ### Select an extractor entity
 
@@ -104,6 +109,4 @@ To rename an extractor from the **Extractors** panel:
 
 - If you're ready to apply the model to a library, in the document area, select **Next**. On the **Add to library** panel, choose the library to which you want to add the model, and then select **Add**.
 
-## Change the view in a document library
-
-For information about how to set the default view and how to change the view of a document library, see [Choose the view in a document library](choose-library-view.md).
+For information about file types, languages, optical character recognition, and other considerations for this prebuilt model, see [Requirements and limitations for prebuilt document processing in SharePoint](prebuilt-requirements.md).

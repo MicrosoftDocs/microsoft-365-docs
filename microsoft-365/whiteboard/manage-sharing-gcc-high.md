@@ -1,14 +1,14 @@
 ---
 title: Manage sharing for Microsoft Whiteboard in GCC High environments
-ms.author: v-jdeweese
+ms.author: alexfaulkner
 author: johnddeweese
 manager: alexfaulkner
 ms.reviewer:
 ms.date: 06/17/2022
 audience: admin
-ms.topic: article
+ms.topic: how-to
 ms.custom:
-ms.service: microsoft-365-enterprise
+ms.service: whiteboard
 search.appverid: MET150
 ms.collection:
 ms.localizationpriority: medium

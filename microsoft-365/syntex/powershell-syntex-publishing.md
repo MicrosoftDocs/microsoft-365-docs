@@ -3,7 +3,7 @@ title: Publish custom models with PowerShell
 ms.author: jaeccles
 author: jameseccles
 ms.reviewer: ssquires
-ms.date: 06/18/2022
+ms.date: 07/06/2023
 manager: ssquires
 audience: admin
 ms.topic: reference
@@ -18,7 +18,7 @@ description: Learn how to publish Microsoft Syntex custom models by using PowerS
 
 # Publish custom models with PowerShell
 
-<sup>**Applies to:**  &ensp; &#10003; All custom models </sup>
+<sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
 > [!IMPORTANT]
 > The Microsoft Syntex PowerShell cmdlets and all other PnP components are open-source tools backed by an active community providing support for them. There is no SLA for open-source tool support from official Microsoft support channels.

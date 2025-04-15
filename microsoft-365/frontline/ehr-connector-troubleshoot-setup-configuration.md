@@ -1,10 +1,10 @@
 ---
 title: Troubleshoot Microsoft Teams EHR connector setup and configuration
-author: samanro
-ms.author: samanro
-manager: pamgreen
+author: lana-chin
+ms.author: jtremper
+manager: jtremper
 audience: ITPro
-ms.topic: conceptual
+ms.topic: troubleshooting-general
 ms.service: microsoft-365-frontline
 search.appverid: MET150
 searchScope:
@@ -21,18 +21,18 @@ ms.collection:
   - m365solution-scenario
   - m365-frontline
   - highpri
-  - tier2
+  - m365-virtual-appointments 
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.reviewer: casjacks
+ms.reviewer: beolson
 description: Use this guidance to help you troubleshoot common setup and configuration issues for the Teams Electronic Health Record (EHR) connector.  
-ms.date: 04/21/2023
+ms.date: 06/26/2024
 ---
 
 # Troubleshoot Microsoft Teams EHR connector setup and configuration
 
-This article provides guidance for how to troubleshoot common setup and configuration issues for the Microsoft Teams Electronic Health Record (EHR) connector. Use it to help resolve blockers that you may experience when you set up and configure the EHR connector to integrate with your [Oracle Health EHR](ehr-admin-oracle-health.md) or [Epic EHR](ehr-admin-epic.md) system.
+This article provides guidance for how to troubleshoot common setup and configuration issues for the Microsoft Teams Electronic Health Record (EHR) connector. Use it to help resolve blockers that you might experience when you set up and configure the EHR connector to integrate with your [Oracle Health EHR](ehr-admin-oracle-health.md) or [Epic EHR](ehr-admin-epic.md) system.
 
 ## FHIR URL isn't working
 
@@ -55,9 +55,9 @@ Your permissions need to be changed in Epic. Contact your Epic technical special
 
 ## Can't launch virtual appointments
 
-### I've set up the EHR connector for the first time and patients are unable to launch a virtual appointment from the patient portal
+### I set up the EHR connector for the first time and patients are unable to launch a virtual appointment from the patient portal
 
-Here are some common reasons why you may be experiencing this issue and how to resolve it.
+Here are some common reasons why you might be experiencing this issue and how to resolve it.
 
 #### The FDI records in Epic don't match the values from the EHR connector configuration portal
 
@@ -86,11 +86,11 @@ To resolve this issue:
 
 Currently, group visits are only supported in Epic.
 
-Here are some common reasons why you may be experiencing this issue when integrating with Epic, and how to resolve it.
+Here are some common reasons why you might be experiencing this issue when integrating with Epic, and how to resolve it.
 
 - You're using an incorrect version of Teams. Group visits require a minimum of Teams version 1.2 and an upgrade must be requested in Epic Connection Hub.
 - New FDI records need to be added. Your Epic analyst will need to create new FDI records for group visits to support the provider and patient join experience. Additionally, you must change the context token in the group visit FDI records from ```sessionId=%CSN%``` to ```sessionId=%CONFERENCEID%```. Contact your Epic technical specialist for help.
-- If you're still experiencing this issue after trying the previous steps in this list, your tenant settings may need to be changed. Contact Microsoft Support to open a support ticket for the Teams EHR connector. Indicate in the ticket that group settings need to be enabled.
+- If you're still experiencing this issue after trying the previous steps in this list, your tenant settings might need to be changed. Contact Microsoft Support to open a support ticket for the Teams EHR connector. Indicate in the ticket that group settings need to be enabled.
 
 ## Provider experience
 
@@ -138,8 +138,8 @@ Contact an admin in your organization to either grant you admin access or set up
 If you want to share your FHIR base URL, email us with the FHIR base URL you would like to share at [TeamsForHealthcare](mailto:teamsforhealthcare@service.microsoft.com) with the following information:
 
 1. FHIR base URL to be shared
-1. Tenant ID of the parent/initial Microsoft tenant hosting the EHR Connector (such as the main hospital hosting the EHR)
-1. Tenant ID(s) of the new tenant(s) that will share the EHR Connector (such as regional branches, related medical offices or clinics)
+1. Tenant ID of the parent/initial Microsoft tenant hosting the EHR connector (such as the main hospital hosting the EHR)
+1. Tenant ID(s) of the new tenant(s) that will share the EHR connector (such as regional branches, related medical offices or clinics)
 
 ## Virtual Desktop Infrastructure (VDI) support
 
@@ -150,7 +150,7 @@ You can configure a Citrix environment to route certain URLs back to the local m
 To learn more, see the following Citrix documentation:
 
 - [Optimization for Microsoft Teams](https://docs.citrix.com/en-us/citrix-virtual-apps-desktops/multimedia/opt-ms-teams.html)
-- [Browser content redirection](https://docs.citrix.com//en-us/citrix-virtual-apps-desktops/multimedia/browser-content-redirection.html)
+- [Browser content redirection](https://docs.citrix.com/en-us/citrix-virtual-apps-desktops/multimedia/browser-content-redirection.html)
 
 ## Related articles
 

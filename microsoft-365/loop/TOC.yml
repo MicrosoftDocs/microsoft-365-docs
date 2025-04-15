@@ -1,0 +1,13 @@
+items:
+- name: Microsoft Loop
+  items:
+    - name: Summary compliance capabilities
+      href: loop-compliance-summary.md
+    - name: Loop admin policies
+      href: loop-components-configuration.md
+    - name: Loop data integrations
+      href: loop-data-integrations-configuration.md
+    - name: Loop workspaces storage and permissions
+      href: loop-workspaces-storage-permission.md
+    - name: Loop components in Microsoft 365
+      href: loop-components-teams.md

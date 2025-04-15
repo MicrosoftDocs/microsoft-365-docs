@@ -3,21 +3,25 @@ title: "Connect to all Microsoft 365 services in a single PowerShell window"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 11/23/2021
+ms.date: 12/05/2024
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: high
 ms.collection: 
 - scotvorg
 - Ent_O365
+- must-keep
 f1.keywords:
 - CSH
 ms.custom:
-- LIL_Placement
-- Ent_Office_Other
-- O365ITProTrain
-- httpsfix
+  - LIL_Placement
+  - Ent_Office_Other
+  - O365ITProTrain
+  - httpsfix
+  - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: "Summary: Connect to all Microsoft 365 services in a single PowerShell window."
 ---
@@ -28,7 +32,7 @@ When you use PowerShell to manage Microsoft 365, you can have multiple PowerShel
 
 This scenario isn't optimal for managing Microsoft 365, because you can't exchange data among those windows for cross-service management. This article describes how to use a single instance of PowerShell to manage Microsoft 365 accounts, Exchange Online, SharePoint Online, Microsoft Teams, and features in Defender for Office 365 Microsoft Purview compliance.
 
->[!Note]
+> [!NOTE]
 >This article currently only contains the commands to connect to the Worldwide (+GCC) cloud. Notes provide links to articles about connecting to the other Microsoft 365 clouds.
 
 ## Before you begin
@@ -49,9 +53,9 @@ Before you can manage all of Microsoft 365 from a single instance of PowerShell,
 
     \* You need to install Microsoft .NET Framework 4.5.*x* and then Windows Management Framework 3.0 or 4.0. For more information, see [Windows Management Framework](/powershell/scripting/windows-powershell/wmf/overview).
 
-- You need to install the modules that are required for Azure Active Directory (Azure AD), Exchange Online, Defender for Office 365, Microsoft Purview compliance, SharePoint Online, and Teams:
+- You need to install the modules that are required for Microsoft Entra ID, Exchange Online, Defender for Office 365, Microsoft Purview compliance, SharePoint Online, and Teams:
 
-  - [Azure Active Directory V2](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
+  - [Install the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation)
   - [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
   - [Teams PowerShell Module](/microsoftteams/teams-powershell-overview)
   - [Install and maintain the Exchange Online PowerShell module](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-module)
@@ -63,9 +67,9 @@ Before you can manage all of Microsoft 365 from a single instance of PowerShell,
    Set-ExecutionPolicy RemoteSigned
    ```
 
-## Connection steps when using just a password
+## Connection steps
 
-Follow these steps to connect to all the services in a single PowerShell window when you're using just a password for sign-in.
+Follow these steps to connect to all the services in a single PowerShell window.
 
 1. Open Windows PowerShell.
 
@@ -75,20 +79,42 @@ Follow these steps to connect to all the services in a single PowerShell window 
    $credential = Get-Credential
    ```
 
-3. Run this command to connect to Azure AD by using the Azure Active Directory PowerShell for Graph module.
-
-   ```powershell
-   Connect-AzureAD -Credential $credential
-   ```
-
-   Or if you're using the Microsoft Azure Active Directory Module for Windows PowerShell module, run this command.
-
-   ```powershell
-   Connect-MsolService -Credential $credential
-   ```
+3. Run this command to connect to Microsoft Entra ID by using the Microsoft Graph PowerShell SDK.
 
    > [!NOTE]
-   > PowerShell Core doesn't support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with *Msol* in their name. You must run these cmdlets from PowerShell.
+   > The Azure Active Directory (AzureAD) PowerShell module is being deprecated and replaced by the Microsoft Graph PowerShell SDK. You can use the Microsoft Graph PowerShell SDK to access all Microsoft Graph APIs. For more information, see [Get started with the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started).
+   >
+   > Also see [Install the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation) and [Upgrade from Azure AD PowerShell to Microsoft Graph PowerShell](/powershell/microsoftgraph/migration-steps) for information on how to install and upgrade to Microsoft Graph PowerShell, respectively.
+
+   The Microsoft Graph PowerShell SDK supports two types of authentication: delegated access, and app-only access. In this example, you'll use delegated access to sign in as a user, grant consent to the SDK to act on your behalf, and call the Microsoft Graph.
+
+   For details on using app-only access for unattended scenarios, see [Use app-only authentication with the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/app-only).
+
+   **Determine required permission scopes**
+
+   Each API in the Microsoft Graph is protected by one or more permission scopes. The user logging in must consent to one of the required scopes for the APIs you plan to use. In this example, we'll use the following APIs.
+
+   - List users to find the user ID of the logged-in user.
+   - List joinedTeams to get the Teams the user is a member of.
+   - List channels to get the channels in a Team.
+   - Send message to send a message to a Team's channel.
+
+   The **User.Read.All** permission scope enables the first two calls, and the **Group.ReadWrite.All** scope enables the rest. These permissions require an admin account.
+
+   For more information about how to determine what permission scopes you'll need, see [Using Find-MgGraphCommand](/powershell/microsoftgraph/find-mg-graph-command).
+
+   **Connect to Microsoft Graph**
+
+   To connect to your Microsoft 365 Organization, run the following command with example permission scopes:
+
+   ``` powershell
+   Connect-MgGraph -Scopes "User.Read.All","Group.ReadWrite.All"
+   ```
+
+   The command prompts you to go to a web page to sign in with your credentials. Once you've done that, the command indicates success with a **Welcome To Microsoft Graph!** message. You only need to sign in once per session. Passing credentials to the ```Connect-MgGraph``` cmdlet is currently not supported.
+
+   > [!TIP]
+   > You can accretively add permissions by repeating the **Connect-MgGraph** command with the new permission scopes.
 
 4. Run these commands to connect to SharePoint Online. Specify the organization name for your domain. For example, for "litwareinc\.onmicrosoft.com", the  organization name value is "litwareinc".
 
@@ -131,94 +157,6 @@ Follow these steps to connect to all the services in a single PowerShell window 
    >
    > To connect to Microsoft Teams clouds other than *Worldwide*, see [Connect-MicrosoftTeams](/powershell/module/teams/connect-microsoftteams).
 
-### Azure Active Directory PowerShell for Graph module when using just a password
-
-Here are the commands for all the services in a single block when you use the Azure Active Directory PowerShell for Graph module. Specify the name of your domain host and the UPN for the sign-in and run them all at the same time.
-
-```powershell
-$orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
-$acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
-$credential = Get-Credential -UserName $acctName -Message "Type the account's password."
-#Azure Active Directory
-Connect-AzureAD -Credential $credential
-#SharePoint Online
-Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
-Connect-SPOService -Url https://$orgName-admin.sharepoint.com -credential $credential
-#Exchange Online
-Import-Module ExchangeOnlineManagement
-Connect-ExchangeOnline -ShowProgress $true
-#Security & Compliance
-Connect-IPPSSession -UserPrincipalName $acctName
-#Teams and Skype for Business Online
-Import-Module MicrosoftTeams
-Connect-MicrosoftTeams -Credential $credential
-```
-
-### Microsoft Azure Active Directory Module for Windows PowerShell module when using just a password
-
-Here are the commands for all the services in a single block when you use the Microsoft Azure Active Directory Module for Windows PowerShell module. Specify the name of your domain host and the UPN for the sign-in and run them all at one time.
-
-```powershell
-$orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
-$acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
-$credential = Get-Credential -UserName $acctName -Message "Type the account's password."
-#Azure Active Directory
-Connect-MsolService -Credential $credential
-#SharePoint Online
-Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
-Connect-SPOService -Url https://$orgName-admin.sharepoint.com -credential $credential
-#Exchange Online
-Connect-ExchangeOnline -ShowProgress $true
-#Security & Compliance
-Connect-IPPSSession -UserPrincipalName $acctName
-#Teams and Skype for Business Online
-Import-Module MicrosoftTeams
-Connect-MicrosoftTeams -Credential $credential
-```
-
-## Connection steps when using multi-factor authentication
-
-### Azure Active Directory PowerShell for Graph module when using MFA
-
-Here are all the commands in a single block to connect to multiple Microsoft 365 services when you use multi-factor authentication with the Azure Active Directory PowerShell for Graph module.
-
-```powershell
-$acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
-$orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
-#Azure Active Directory
-Connect-AzureAD
-#SharePoint Online
-Connect-SPOService -Url https://$orgName-admin.sharepoint.com
-#Exchange Online
-Connect-ExchangeOnline -UserPrincipalName $acctName -ShowProgress $true
-#Security & Compliance
-Connect-IPPSSession -UserPrincipalName $acctName
-#Teams and Skype for Business Online
-Import-Module MicrosoftTeams
-Connect-MicrosoftTeams
-```
-
-### Microsoft Azure Active Directory Module for Windows PowerShell module when using MFA
-
-Here are all the commands in a single block to connect to multiple Microsoft 365 services when you use multi-factor authentication with the Microsoft Azure Active Directory Module for Windows PowerShell module.
-
-```powershell
-$acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
-$orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
-#Azure Active Directory
-Connect-MsolService
-#SharePoint Online
-Connect-SPOService -Url https://$orgName-admin.sharepoint.com
-#Exchange Online
-Import-Module ExchangeOnlineManagement
-Connect-ExchangeOnline -UserPrincipalName $acctName -ShowProgress $true
-#Security & Compliance Center
-Connect-IPPSSession -UserPrincipalName $acctName
-#Teams and Skype for Business Online
-Import-Module MicrosoftTeams
-Connect-MicrosoftTeams
-```
-
 ## Close the PowerShell window
 
 To close down the PowerShell window, run this command to remove the active sessions to SharePoint Online, Teams, Defender for Office 365 and Microsoft Purview compliance:
@@ -229,6 +167,6 @@ Disconnect-SPOService; Disconnect-MicrosoftTeams; Disconnect-ExchangeOnline
 
 ## See also
 
-- [Connect to Microsoft 365 with PowerShell](connect-to-microsoft-365-powershell.md)
+- [Connect to Microsoft 365 with Microsoft Graph PowerShell](connect-to-microsoft-365-powershell.md)
 - [Manage SharePoint Online with PowerShell](manage-sharepoint-online-with-microsoft-365-powershell.md)
 - [Manage Microsoft 365 user accounts, licenses, and groups with PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)

@@ -18,6 +18,8 @@ f1.keywords: NOCSH
 
 # Monitoring Test Status
 
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
 Test run status in the Test Base portal keeps you informed of where your package is in the testing process. You can see status in the **Test summary** page in addition to the **Details** pane.
 
 This status provides details about test execution. If failures were detected during test execution, you'll find additional status and guidance information on the **Test Analysis** tab.

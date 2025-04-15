@@ -5,10 +5,10 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 09/01/2020
+ms.date: 11/11/2024
 audience: Admin
-ms.topic: article
-ms.service: microsoft-365-business
+ms.topic: install-set-up-deploy
+ms.service: microsoft-365-basic-mobility-security
 ms.localizationpriority: medium
 ms.collection:
 - Tier2
@@ -17,12 +17,12 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- basic-mobility-security
 ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 - AdminTemplateSet
-search.appverid:
-- MET150
+- basic-mobility-security
 description: "Set up Basic Mobility and Security to secure and manage your users' mobile devices by performing actions such as remotely wiping a device."
 ---
 
@@ -32,17 +32,17 @@ Check out all of our small business content on [Small business help & learning](
 
 The built-in Basic Mobility and Security for Microsoft 365 helps you secure and manage users' mobile devices such as iPhones, iPads, Androids, and Windows phones. You can create and manage device security policies, remotely wipe a device, and view detailed device reports.
 
-Have questions? For a FAQ to help address common questions, see [Basic Mobility and Security Frequently-asked questions (FAQs)](frequently-asked-questions.yml). Be aware that you cannot use a delegated administrator account to manage Basic Mobility and Security. For more info, see [Partners: Offer delegated administration](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e). 
-
-Device management is part of the Security & Compliance Center so you'll need to go there to kick off Basic Mobility and Security setup.
+Have questions? For a FAQ to help address common questions, see [Basic Mobility and Security Frequently asked questions (FAQs)](frequently-asked-questions.yml). Be aware that you cannot use a delegated administrator account to manage Basic Mobility and Security. For more info, see [Partners: Offer delegated administration](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e).
 
 ## Activate the Basic Mobility and Security service
 
-1. Sign in to Microsoft 365 with your global admin account.
+1. Sign in to Microsoft 365 with a [Directory writers](/entra/identity/role-based-access-control/permissions-reference) admin account.
 
-2. Go to [Activate Basic Mobility and Security](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx).
+1. Go to [Activate Basic Mobility and Security](https://compliance.microsoft.com/basicmobilityandsecurity).
 
-   It can take some time to activate Basic Mobility and Security. When it finishes, you'll receive an email that explains the next steps to take.
+1. Select **Enable feature.**
+
+   It can take some time to activate Basic Mobility and Security. If the feature is already activated, the **Enable feature** option will not appear.
 
 ## Set up Mobile Device Management
 
@@ -52,72 +52,46 @@ When the service is ready, complete the following steps to finish setup.
 
 If you don't have a custom domain associated with Microsoft 365 or if you're not managing Windows devices, you can skip this section. Otherwise, you'll need to add DNS records for the domain at your DNS host. If you've added the records already, as part of setting up your domain with Microsoft 365, you're all set. After you add the records, Microsoft 365 users in your organization who sign in on their Windows device with an email address that uses your custom domain are redirected to enroll in Basic Mobility and Security.
 
-Need help setting up the records? Find your domain registrar and select the registrar name to go to step-by-step help for creating DNS record in the list provided in [Add DNS records to connect your domain](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider). Use those instructions to create CNAME records described in [Simplify Windows enrollment without Azure AD Premium](/mem/intune/enrollment/windows-enroll#simplify-windows-enrollment-without-azure-ad-premium).
+Need help with setting up the records? Find your domain registrar and select the registrar name to go to step-by-step help for creating DNS records in the list provided in [Add DNS records to connect your domain](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider). Use the following details to create CNAME records:
+
+| Type | Host name | Points to | TTL |
+| --- | --- | --- | --- |
+| CNAME | EnterpriseEnrollment.company_domain.com | EnterpriseEnrollment-s.manage.microsoft.us | 1 hour|
+|CNAME | EnterpriseRegistration.company_domain.com | EnterpriseRegistration.windows.net | 1 hour |
 
 After you add the two CNAME records, go back to the Security & Compliance Center and go to **Data loss prevention** > **Device management** to complete the next step.
 
 ### Step 2: (Required) Configure an APNs Certificate for iOS devices
 
-To manage iOS devices like iPad and iPhones, you need to create an APNs certificate.
+To manage iOS devices like iPad and iPhones, you need to create an Apple Push Notification service (APNs) certificate.
 
-1. Sign in to Microsoft 365 with your global admin account.
+1. Sign in to Microsoft Azure with a [Directory writers](/entra/identity/role-based-access-control/permissions-reference) admin account.
 
-2. Go to the [Microsoft 365 admin center](https://portal.office.com/adminportal/home?#/MifoDevices), and choose **APNs Certificate for iOS**.
+1. Go to [Configure MDM Push Certificate](https://portal.azure.com/#view/Microsoft_Intune_Enrollment/APNSCertificateUploadBlade).
 
-4. On the Apple Push Notification Certificate Settings page, choose **Next**.
+1. Select **I agree** to authorize Microsoft to communicate with Apple.
 
-5. Select **Download your CSR file** and save the Certificate signing request to somewhere on your computer that you'll remember. Select **Next**.
+1. Select **Download your CSR** and save the certificate signing request to a location on your computer that you'll remember. 
 
-6. On the Create an APNs certificate page:
+1. Select **Create your MDM push certificate** to open the Apple Push Certificates Portal.
 
-   - Select Apple APNS Portal to open the Apple Push Certificates Portal.
-   - Sign in with an Apple ID.
+   1. Sign in with an Apple ID.
+   
+      > [!IMPORTANT]
+      > Use a company Apple ID associated with an email account that will remain with your organization even if the user who manages the account leaves. Save this ID because you'll need to use the same ID when it's time to renew the certificate.
 
-     > [!IMPORTANT]
-     > Use a company Apple ID associated with an email account that will remain with your organization even if the user who manages the account leaves. Save this ID because you'll need to use the same ID when it's time to renew the certificate.
+   1. Select **Create a Certificate** and accept the **Terms of Use**.
+   
+   1. Browse to the certificate signing request that you downloaded to your computer from Microsoft 365 and then select **Upload**.
+      
+   1. Download the APNs certificate created by the Apple Push Certificate Portal to your computer.
+   
+      > [!TIP]
+      > If you're having trouble downloading the certificate, refresh your browser.
 
-   - Select Create a Certificate and accept the Terms of Use.
-   - Browse to the Certificate signing request you downloaded to your computer from Microsoft 365 and selectUpload.
-   - Download the APN certificate created by the Apple Push Certificate Portal to your computer.
+1. Go back to Microsoft Azure and browse to the APNs certificate that you downloaded from the Apple Push Certificates Portal.
 
-     > [!TIP]
-     > If you're having trouble downloading the certificate, refresh your browser.
-
-7. Go back to Microsoft 365 and select **Next**.
-
-8. Browse to the APN certificate you downloaded from the Apple Push Certificates Portal.
-
-9. Select **Finish**.
-
-### Step 3: (Recommended) Set up multi-factor authentication
-
-MFA helps secure the sign in to Microsoft 365 for mobile device enrollment by requiring a second form of authentication. Users are required to acknowledge a phone call, text message, or app notification on their mobile device after correctly entering their work account password. They can enroll their device only after this second form of authentication is completed. After user devices are enrolled in Basic Mobility and Security, users can access Microsoft 365 resources with only their work account.
-
-To learn how to turn on MFA in the Azure AD portal, see [Set up multi-factor authentication](../security-and-compliance/set-up-multi-factor-authentication.md).
-
-After you set up MFA, go back to the Security & Compliance Center and navigate to **Data loss prevention** > **Device management** > **Device policies** to complete the next step.
-
-### Step 4: (Recommended) Manage device security policies
-
-The next step is to create and deploy device security policies to help protect your Microsoft 365 organization data. For example, you can help prevent data loss if a user loses their device by creating a policy to lock devices after five minutes of inactivity and wipe devices after three sign-in failures.
-
-1. Sign in to Microsoft 365 with your global admin account.
-
-2. Select [Activate Mobile Device Management](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx). If the service is activated, instead the activation steps you'll see a link to [Manage Devices](https://admin.microsoft.com/adminportal/home#/MifoDevices) .
-
-3. Go to **Device policies**.
-
-   :::image type="content" source="../../media/basic-mobility-security/basic-mobility-microsoft-purview.png" alt-text="Basic Security and Mobility policy settings.":::
-
-4. Create and deploy device security policies appropriate for your organization following the steps in [Create device security policies in Basic Mobility and Security](create-device-security-policies.md).
-
-> [!TIP]
->
-> - When you create a new policy, you might want to set the policy to allow access and report policy violation where a user device isn't compliant with the policy. This allows you see how many mobile devices are impacted by the policy without blocking access to Microsoft 365.
->
-> - Before you deploy a new policy to everyone in your organization, we recommend you test it on the devices used by a small number of users.
->
-> - Also, before you deploy policies, let your organization know the potential impacts of enrolling a device in Basic Mobility and Security. Depending on how you set up the policies, devices that don't comply with policies (non-compliant devices) could be blocked from accessing Microsoft 365. Non-compliant devices might also have apps installed, photos, and other personal information which, on an enrolled device, could be deleted if the device is wiped. For more info, see [Wipe a mobile device in Basic Mobility and Security](wipe-mobile-device.md).
+1. Select **Upload**.
 
 ## Make sure users enroll their devices
 

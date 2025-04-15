@@ -1,30 +1,30 @@
 ---
-title: Use PowerShell to manage your Shifts connection to UKG Dimensions
-author: samanro
-ms.author: samanro
-ms.reviewer: imarquesgil
-manager: pamgreen
+title: Use PowerShell to manage your Shifts connection to UKG Pro Workforce Management
+author: lana-chin
+ms.author: jtremper
+manager: jtremper
+ms.reviewer: harrywong
 ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
-description: Learn how to use PowerShell to manage your Shifts connection to UKG Dimensions.
+description: Learn how to use PowerShell to manage your Shifts connection to UKG Pro Workforce Management.
 ms.localizationpriority: high
 ms.collection:
   - M365-collaboration
   - m365-frontline
-  - tier2
+  - teams-1p-app-admin
 appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 03/21/2023
+ms.date: 12/20/2024
 ---
 
-# Use PowerShell to manage your Shifts connection to UKG Dimensions
+# Use PowerShell to manage your Shifts connection to UKG Pro Workforce Management
 
 ## Overview
 
-The [Microsoft Teams Shifts connector for UKG Dimensions](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-dimensions) enables you to integrate the Shifts app in Microsoft Teams with UKG Dimensions. Your frontline workers can seamlessly view and manage their schedules in UKG Dimensions from within Shifts.
+The [Microsoft Teams Shifts connector for UKG Pro Workforce Management](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-pro-workforce-management) enables you to integrate the Shifts app in Microsoft Teams with UKG Pro Workforce Management (UKG Pro WFM). Your frontline workers can seamlessly view and manage their schedules in UKG Pro WFM from within Shifts.
 
 You can use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) in the Microsoft 365 admin center or [PowerShell](shifts-connector-ukg-powershell-setup.md) to set up a connection. After a connection is set up, you can manage it by using [Shifts connector PowerShell cmdlets](#shifts-connector-cmdlets).
 
@@ -37,10 +37,10 @@ This article describes how to use PowerShell to do the following:
 - [Unmap a team from one connection and map it to another connection](#unmap-a-team-from-one-connection-and-map-it-to-another-connection)
 - [Disable sync for a connection](#disable-sync-for-a-connection)
 
-This article assumes that you've already set up a connection to UKG Dimensions, either by using the wizard or PowerShell.
+This article assumes that you've already set up a connection to UKG Pro WFM, either by using the wizard or PowerShell.
 
 > [!NOTE]
-> You can also manage your connection in the Microsoft 365 admin center. For example, you can check the health status and access the wizard to change connection settings. To learn more, see [Use the Microsoft 365 admin center to manage your Shifts connection to UKG Dimensions](shifts-connector-ukg-admin-center-manage.md).
+> You can also manage your connection in the Microsoft 365 admin center. For example, you can check the health status and access the wizard to change connection settings. To learn more, see [Use the Microsoft 365 admin center to manage your Shifts connection to UKG Pro Workforce Management](shifts-connector-ukg-admin-center-manage.md).
 
 ## Before you begin
 
@@ -405,8 +405,8 @@ For help with Shifts connector cmdlets, search for **CsTeamsShiftsConnection** i
 ## Related articles
 
 - [Shifts connectors](shifts-connectors.md)
-- [Use the Shifts connector wizard to connect Shifts to UKG Dimensions](shifts-connector-wizard-ukg.md)
-- [Use PowerShell to connect Shifts to UKG Dimensions](shifts-connector-ukg-powershell-setup.md)
-- [Use the Microsoft 365 admin center to manage your Shifts connection to UKG Dimensions](shifts-connector-ukg-admin-center-manage.md)
+- [Use the Shifts connector wizard to connect Shifts to UKG Pro Workforce Management](shifts-connector-wizard-ukg.md)
+- [Use PowerShell to connect Shifts to UKG Pro Workforce Management](shifts-connector-ukg-powershell-setup.md)
+- [Use the Microsoft 365 admin center to manage your Shifts connection to UKG Pro Workforce Management](shifts-connector-ukg-admin-center-manage.md)
 - [Manage the Shifts app](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
 - [Teams PowerShell overview](/microsoftteams/teams-powershell-overview)

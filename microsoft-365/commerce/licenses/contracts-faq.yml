@@ -4,20 +4,22 @@ metadata:
   author: cmcatee-MSFT
   ms.author: cmcatee
   manager: scotv
-  ms.reviewer: racheg, armanv
-  ms.date: 03/27/2023
+  ms.reviewer: aasthatiwari, atuldubey
   audience: Admin
   ms.topic: faq
   ms.service: microsoft-365-business
+  ms.subservice: m365-commerce-volume-licensing
+  ms.collection: 
+  - Tier1
+  - scotvorg
   ms.custom: 
   - commerce_vl
   - empty
   search.appverid: MET150
-  ms.collection: 
-  - Tier2
-  - scotvorg
   ms.localizationpriority: medium
   description: "Frequently asked questions about Microsoft 365 licensing agreements."
+  ms.date: 09/04/2024
+
 title: Contracts Frequently Asked Questions
 summary: |
 
@@ -47,7 +49,7 @@ sections:
       - question: |
           Where are my MPSA contracts?
         answer: |
-          Microsoft Products and Services Agreement (MPSA) license information is managed in the [Microsoft Business Center](https://businessaccount.microsoft.com/Customer) or [Microsoft Store for Business](https://businessstore.microsoft.com/store). No MPSA information is displayed in this contracts list. To learn more about the MPSA, see [Volume licensing](https://www.microsoft.com/Licensing/MPSA/default.aspx).
+          Microsoft Products and Services Agreement (MPSA) license information is managed in the [Microsoft Business Center](https://businessaccount.microsoft.com/Customer). No MPSA information is displayed in this contracts list. To learn more about the MPSA, see [Microsoft Products and Services Agreement](https://www.microsoft.com/Licensing/MPSA?rtc=1).
 
       - question: |
           Why are some Licensing IDs for my organization not displayed in the list?
@@ -78,19 +80,9 @@ sections:
           |Roles|Your permissions on the Contracts|
 
       - question: |
-          About roles
+          Why am I seeing "Organization not approved" message?
         answer: |
-          The following table shows the relationships between VLSC roles and MAC VL roles, and the actions those roles can take.
-
-          |VLSC Permission Role|MAC VL Permission Role|Allowable Action|
-          |---|---|---|
-          |Administrator|Administrator|Assign/Edit/Remove users permission, Can perform all actions allowed to other VL roles|
-          |Licensing Info Viewer|License Position Reader|View Contracts details, View Orders, View Keys of a contract, Create License Summary|
-          |Download|Product Download Manager|View Contracts, Download licensed Microsoft software products|
-          |Product Keys|Product Keys Reader|View Contracts, View Keys of a contract, Manage activation & Redemption of Online services (additionally need Global Admin roles), View keys from Downloads & Keys|
-          |Software Assurance Manager|Benefits Reader|View Contracts, Manage the following Software Assurance entitlements: Home Use Program|
-          |Online Services Manager|Online Services Manager|View Contracts, View Orders, Reservation of services, Manage activation & Redemption of Online services (additionally need Global Admin roles), Manage subscriptions under **Billing** > **Licenses** (additionally need Global Admin roles)|
-          |N/A|Invoice Reader|View Contracts, Can view the list of invoices and Download|
+          If you see an "Organization not approved" message, it means your organization is not yet ready to use Microsoft products and services because the review is incomplete. Until this review is complete, the License ID isn't displayed in **Volume Licensing** > **Contracts**, and you can't access software downloads or volume licensing keys or manage user access to the contract. Please use the Help & Support option to contact our support team.
 
       - question: |
           What is the License Summary?
@@ -137,10 +129,21 @@ sections:
           If the Effective Quantity in the generated license statement is shown as zero, it means that your organization isn't entitled to use the license under the terms of the set of licensing IDs selected for that statement. 
           If the Active SA Quantity is shown as zero, it means that the licenses under the set of licensing IDs used to generate the statement don't have any valid or active Software Assurance coverage. 
          
-          NOTE
-          
-          For Online Services licenses, the Active SA Quantity is always zero, because Online Services don't have SAs associated with them. 
+          > [!Note]
+          > For Online Services licenses, the Active SA Quantity is always zero, because Online Services don't have SAs associated with them. 
 
+      - question: |
+                Why does the License Summary display more upgrade licenses than the number of qualifying full licenses?
+        answer: |
+          This may be for a number of reasons. Microsoft Volume Licensing organizes products into three pools:              
+          - Full licenses acquired through OEM or Retail purchases are not visible to Microsoft volume licensing admin center.
+          - Licenses may have been ordered separately from their underlying base license (for example, Maintenance, Upgrade Advantage, or Software Assurance).          
+          - You may not have a complete list of Licensing IDs: Full licenses may have been acquired under Licensing IDs you do not have permissions to view.
+          - Licenses purchased in a very recent order with your Microsoft partner may not yet be processed by the Microsoft Partner. 
+
+          > [!Note]
+          > We do not display an “Unresolved Quantity” in the M365 Admin Center license summary view. This follows feedback that it was not helpful to customers trying to understand their license position and set a false expectation that an action needed to be taken within the site. We welcome your feedback on this decision.
+          
       - question: |
           Does the License Summary include Original Equipment Manufacturer (OEM) or retail license information?
         answer: |

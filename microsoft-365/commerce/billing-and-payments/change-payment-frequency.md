@@ -1,14 +1,15 @@
 ---
-title: "Change your billing frequency"
+title: "Change the billing frequency for your Microsoft 365 subscription"
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: emmasheridan, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
 ms.collection: 
 - Tier1
@@ -16,30 +17,41 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- commerce_billing
+- commerce_subscriptions
 - TopSMBIssues
 - okr_SMB
 - AdminSurgePortfolio
+- admindeeplinkMAC
+- GAUpdates
 search.appverid: MET150
-description: "Learn how to change how frequently you're billed for your business subscription."
-ms.date: 05/24/2022
+description: "Learn how to change how often you're billed for your Microsoft 365 for business subscription."
+ms.date: 03/27/2025
 ---
 
 # Change your Microsoft 365 subscription billing frequency
 
-When you buy a subscription, you select a billing frequency. To change how often you are billed for a subscription, use the following steps.
+When you buy a Microsoft 365 for business subscription, you select a billing frequency. You can change how often you're billed for your subscription in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
-> [!NOTE]
-> If you have a billing profile, you can only change the billing frequency when you buy or upgrade a subscription. To find out if you have a billing profile, see [View my billing profiles](manage-billing-profiles.md#view-my-billing-profiles).
+## Before you begin
 
-1. In the admin center, go to the **Billing**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-2. On the **Products** tab, select the subscription that you want to change.
+- [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
+- You must have a Microsoft Online Services Agreement (MOSA) billing account type and be a Global Administrator to do the task in this article.
+
+    [!INCLUDE [ga-roles-limitation](../../includes/ga-roles-limitation.md)]
+
+- If you have a Microsoft Customer Agreement (MCA) billing account type, you can only change the billing frequency when you buy or upgrade a subscription.
+
+## Change your billing frequency
+
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
+    - If you're using the **Simplified view**, select **Subscriptions**.
+    - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+2. Select the subscription that you want to manage.
 3. On the subscription details page, in the **Subscription and payment settings** section, select **Edit billing frequency**.
-4. In the **Edit billing frequency** pane, choose the option for how often you want to be billed, then select **Change**.
+4. In the **Edit billing frequency** pane, choose either **Pay monthly** or **Pay yearly**, then select **Change**.
 
 ## Related content
 
-[View your bill or invoice](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (article)\
-[Paying for your subscription](../../commerce/billing-and-payments/pay-for-your-subscription.md) (article)\
-[Learn how to find and view your bill or invoice](view-your-bill-or-invoice.md) (article)\
-[Change your billing addresses](change-your-billing-addresses.md) (article)
+[View your invoice in the Microsoft 365 admin center](view-your-bill-or-invoice.md) (article)\
+[Payment options for your Microsoft business subscription](pay-for-your-subscription.md) (article)\
+[Change the billing addresses for your Microsoft business subscription](change-your-billing-addresses.md) (article)

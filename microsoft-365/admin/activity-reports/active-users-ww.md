@@ -1,9 +1,9 @@
 ---
 title: "Assess the Microsoft 365 Active Users report"
-ms.author: efrene
-author: efrene
+ms.author: camillepack
+author: camillepack
 manager: scotv
-ms.date: 02/18/2020
+ms.date: 01/09/2024
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
@@ -60,6 +60,28 @@ You can also export the report data into an Excel .csv file, by selecting the Ex
 
 You can change what information is displayed in the grid table with column controls.
 
-If your subscription is operated by 21Vianet, then you will not see Yammer.
+If your subscription is operated by 21Vianet, then you will not see Viva Engage.
 
 If your organization's policies prevents you from viewing reports where user information is identifiable, you can change the privacy setting for all these reports. Check out the **How do I hide user level details?** section in [Activity Reports in the Microsoft 365 admin center](activity-reports.md).  
+
+The table shows you a breakdown of the user activities at the per-user level.
+
+|Item|Description|
+|:-----|:-----|
+|Username  |The identifier of the user. |
+|Last active date for Exchange |The date the user last used Exchange. |
+|Last active date for OneDrive |The date the user last used OneDrive. |
+|Last active date for SharePoint |The date the user last used SharePoint. |
+|Last active date for Viva Engage |The date the user last used Viva Engage. |
+|Last active date for Microsoft Teams |The date the user last used Microsoft Teams. |
+|Exchange licenses |Is an Exchange license assigned to the user. |
+|OneDrive licenses |Is a OneDrive license assigned to the user. |
+|SharePoint licenses |Is a Viva Engage license assigned to the user. |
+|Viva Engage licenses |Is a OneDrive license assigned to the user. |
+|Microsoft Teams licenses |Is a Microsoft Teams license assigned to the user. |
+|Deleted date |The date the user was deleted. |
+|License assign date for Exchange  | The date an Exchange license was assigned to the user. |
+|License assign date for OneDrive  | The date a OneDrive license was assigned to the user. |
+|License assign date for SharePoint | The date a SharePoint license was assigned to the user. |
+|License assign date for Viva Engage  | The date a Viva Engage Exchange license was assigned to the user. |
+|License assign date for Microsoft Teams  | The date a Microsoft Teams license was assigned to the user. |

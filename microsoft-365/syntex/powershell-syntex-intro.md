@@ -3,7 +3,7 @@ title: Manage Microsoft Syntex by using PowerShell
 ms.author: jaeccles
 author: jameseccles
 ms.reviewer: ssquires
-ms.date: 06/18/2022
+ms.date: 07/06/2023
 manager: ssquires
 audience: admin
 ms.topic: reference
@@ -31,11 +31,11 @@ Select from the following scenarios to learn how to use PowerShell to manage Syn
 
 - [**Publishing**](powershell-syntex-publishing.md)
 
-    Start here if want to learn how to use PowerShell to publish custom models to document libraries.
+    Start here if want to learn how to use PowerShell to publish custom or prebuilt models to document libraries.
 
 - [**Processing**](powershell-syntex-processing.md)
 
-    Start here if you want to learn how to use PowerShell to trigger processing of custom models on a document library.
+    Start here if you want to learn how to use PowerShell to trigger processing of custom or prebuilt models on a document library.
 
 - [**Explanations**](powershell-syntex-explanations.md)
 

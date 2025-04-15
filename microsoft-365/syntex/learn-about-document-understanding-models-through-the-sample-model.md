@@ -1,26 +1,26 @@
 ---
-title: Import a sample model for Microsoft Syntex
+title: Import a sample model for processing unstructured documents in SharePoint
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
-ms.date: 09/23/2022
+ms.date: 03/10/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn about unstructured document processing models in Microsoft Syntex by using the sample model.
+description: Learn about unstructured document processing models in SharePoint by using the sample model.
 ---
 
-# Import a sample model for Microsoft Syntex
+# Import a sample model for processing unstructured documents in SharePoint
 
 <sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
 
-Microsoft Syntex provides you with a sample unstructured document processing model you can use to examine, giving you a better understanding of how to create your own models. The sample model also allows you to examine model components, such as its classifier, extractors, and explanations. You can also use the sample files to train the model.
+You can import a sample unstructured document processing model to help you better understand how to create your own models. The sample model lets you examine model components, such as its classifier, extractors, and explanations. You can also use the sample files to train the model.
 
 ## Import the sample model
 
@@ -45,11 +45,3 @@ Not only can you look through analyze the sample model to get a better understan
 ## Get sample models
 
 You can access the [Syntex Samples repository](https://github.com/pnp/syntex-samples), which contains community samples that demonstrate different usage patterns of unstructured document processing models. The samples in this repository contain both the model files and the files used to train the model. Once imported, you can use these models to process files and to view and edit the classifier and extractors.
-
-## See also
-
-[Overview of unstructured document processing](document-understanding-overview.md)
-
-[Create a classifier](create-a-classifier.md)
-
-[Create an extractor](create-an-extractor.md)

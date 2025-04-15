@@ -3,10 +3,11 @@ title: "View directory synchronization errors in Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 08/10/2020
+ms.date: 07/17/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -18,6 +19,7 @@ ms.collection:
 - scotvorg
 - Ent_O365
 - M365-identity-device-management
+- must-keep
 search.appverid:
 - MET150
 - MOE150
@@ -36,14 +38,14 @@ You can view directory synchronization errors in the <a href="https://go.microso
 
 To view any errors in the Microsoft 365 admin center:
   
-1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) with a global administrator account. 
-    
-2. On the **Home** page, you'll see the **User management** card. 
-    
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) with a Hybrid Identity Administrator account.
+
+2. On the **Home** page, you'll see the **User management** card.
+
     ![The User management card in the Microsoft 365 admin center.](../media/060006e9-de61-49d5-8979-e77cda198e71.png)
   
-3. On the card, choose **Sync errors** under **Azure AD Connect** to see the errors on the **Directory sync errors** page.   
-    
+3. On the card, choose **Sync errors** under **Microsoft Entra Connect** to see the errors on the **Directory sync errors** page.
+
     ![An example of the Directory sync errors page.](../media/882094a3-80d3-4aae-b90b-78b27047974c.png)
 
 4. Choose any of the errors to display the details pane with information about the error and tips on how to fix it.

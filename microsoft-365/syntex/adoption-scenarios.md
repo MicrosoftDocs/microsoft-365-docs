@@ -2,11 +2,11 @@
 title: Scenarios and use cases for Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: lauris
-ms.date: 05/27/2022
+ms.date: 02/11/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-syntex
 ms.collection: 
     - enabler-strategic
@@ -146,8 +146,3 @@ When you automate this scenario, you can ensure that:
 - The number of manual reminders is reduced.
 - The number of fines for non-compliance is reduced.
 --->
-## See also
-
-[Get started driving adoption of Microsoft Syntex](adoption-getstarted.md)
-
-[Manage contracts using a Microsoft 365 solution](solution-manage-contracts-in-microsoft-365.md)

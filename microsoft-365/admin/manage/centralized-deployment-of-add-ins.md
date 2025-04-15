@@ -2,12 +2,12 @@
 title: "Determine if Centralized Deployment of add-ins works for your organization"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekuako
+ms.author: efrene
+author: efrene
 manager: scotv
-ms.date: 02/18/2020
+ms.date: 08/30/2023
 audience: Admin
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
@@ -29,13 +29,16 @@ description: "Determine if your tenant and users meet the requirements, so that 
 
 # Determine if Centralized Deployment of add-ins works for your organization
 
-Centralized Deployment is the recommended and most feature-rich way for most customers to deploy Office Add-ins to users and groups within your organization. If you're an admin, use this guidance to determine if your organization and users meet the requirements so that you can use Centralized Deployment.
+> [!NOTE]
+>  [Integrated Apps](test-and-deploy-microsoft-365-apps.md) is the recommended and most feature-rich way for most customers to centrally deploy Office add-ins to users and groups within your organization.
+>
+>If Integrated Apps is not available for you or you are a customer in one of the sovereign or government clouds (GCC, GCC-H, DoD, AirGap or Gallatin), use this article as guidance to determine if your organization and users meet the requirements to use Centralized Deployment.  
 
 Centralized Deployment provides the following benefits:
 
 - An admin can deploy and assign an add-in directly to a user, to multiple users via a group, or to everyone in the organization (see Admin requirement section for information).
 - When the relevant Microsoft 365 app starts, the add-in automatically downloads. If the add-in supports add-in commands, the add-in automatically appears in the ribbon within the Microsoft 365 app.
-- Add-ins no longer appear for users if the admin turns off or deletes the add-in, or if the user is removed from Azure Active Directory or from a group that the add-in is assigned to.
+- Add-ins no longer appear for users if the admin turns off or deletes the add-in, or if the user is removed from Microsoft Entra ID or from a group that the add-in is assigned to.
 
 Centralized Deployment supports three desktop platforms Windows, Mac and Microsoft 365 for the web. Centralized Deployment also supports iOS and Android (Outlook Mobile Add-ins Only).
 
@@ -43,7 +46,18 @@ It can take up to 24 hours for an add-in to show up for client for all users.
 
 ## Before you begin
 
-Centralized deployment of add-ins requires that the users are using Microsoft 365 Business licenses (Business Basic, Business Standard, Business Premium), Office 365 Enterprise licenses (E1/E3/E5/F3), or Microsoft 365 Enterprise licenses (E3/E5/F3) (and are signed in Microsoft 365 using their organizational ID), Office 365 Education licenses (A1/A3/A5), or Microsoft 365 Education licenses (A3/A5), and have Exchange Online and active Exchange Online mailboxes. Your subscription directory must either be in or federated to Azure Active Directory.
+Centralized deployment of add-ins requires that the users have one of the following licenses 
+
+- Microsoft 365 Business (Business Basic, Business Standard, Business Premium)
+- Office 365 Enterprise (E1/E3/E5/F3)
+- Microsoft 365 Enterprise (E3/E5/F3) (and are signed in Microsoft 365 using their organizational ID)
+- Office 365 Education (A1/A3/A5)
+- Microsoft 365 Education (A3/A5)
+- Office 365 Government (G3/G5)
+- Microsoft 365 Government (G3/G5)
+
+Users must also have Exchange Online and active Exchange Online mailboxes. Your subscription directory must either be in or federated to Microsoft Entra ID.
+
 You can view specific requirements for Microsoft 365 and Exchange below, or use the [Centralized Deployment Compatibility Checker](#centralized-deployment-compatibility-checker).
 
 Centralized Deployment doesn't support the following:
@@ -100,13 +114,16 @@ For more information, see [Manage role groups in Exchange Online](/exchange/perm
 In order to deploy an add-in via Centralized Deployment, you need to be either a Global admin or an Exchange admin in the organization.
 
 > [!NOTE]
-> An Exchange admin can deploy an add-in if the **Application Administrator** role is added or if the **App Registrations** property is set to true in Azure Active Directory admin center as shown in the following image:
+> An Exchange admin can deploy an add-in if the **Application Administrator** role is added or if the **App Registrations** property is set to true in Microsoft Entra admin center as shown in the following image:
 >
 > ![image](https://user-images.githubusercontent.com/89943918/144516704-8874a10d-b540-41f3-ae9d-c07a8d7e143f.png)
 
 ### Centralized Deployment Compatibility Checker
 
 Using the Centralized Deployment Compatibility Checker, you can verify whether the users on your tenant are set up to use Centralized Deployment for Word, Excel, and PowerPoint. The Compatibility Checker is not required for Outlook support. Download and install the [compatibility checker](https://aka.ms/officeaddindeploymentorgcompatibilitychecker).
+
+> [!NOTE]
+> Compatibility checker is currently not supported in any of the sovereign or government clouds (GCC, GCC-H, DoD, AirGap, Gallatin).
 
 #### Run the compatibility checker
 
@@ -145,7 +162,7 @@ Should your Microsoft 365 reports show anonymous user names instead of actual us
 
 ## User and group assignments
 
-The Centralized Deployment feature currently supports the majority of groups supported by Azure Active Directory, including Microsoft 365 groups, distribution lists, dynamic groups, and security groups.
+The Centralized Deployment feature currently supports the majority of groups supported by Microsoft Entra ID, including Microsoft 365 groups, distribution lists, dynamic groups, and security groups.
 
 > [!NOTE]
 > Non-mail enabled security groups are not currently supported.
@@ -170,7 +187,7 @@ Alternately, you can use the Azure Active Directory Graph API to run queries to 
 
 ### Contacting Microsoft for support
 
-If you or your users encounter problems loading the add-in while using Microsoft 365 apps for the web (Word, Excel, etc.), which were centrally deployed, you may need to contact Microsoft support ([learn how](../../business-video/get-help-support.md). Provide the following information about your Microsoft 365 environment in the support ticket.
+If you or your users encounter problems loading the add-in while using Microsoft 365 apps for the web (Word, Excel, etc.), which were centrally deployed, you may need to [contact Microsoft support](../../business-video/get-help-support.md). Provide the following information about your Microsoft 365 environment in the support ticket.
 
 |Platform|Debug information|
 |---|---|

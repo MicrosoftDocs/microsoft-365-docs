@@ -1,13 +1,14 @@
 ---
 title: Integrate Microsoft Teams meetings with Blackboard Learn
+author: DaniEASmith
 ms.author: danismith
-author: cichur
-manager: serdars
+manager: jacktremper
 ms.reviewer: amitman 
 ms.date: 07/08/2022
 audience: admin
-ms.topic: article
-ms.service: microsoft-365-business
+ms.topic: integration
+ms.service: msteams
+ms.subservice: teams-education
 ms.collection: 
 - M365-modern-desktop
 - m365initiative-edu

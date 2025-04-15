@@ -4,10 +4,10 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: shcallaw, kywirpel
-ms.date: 11/29/2022
+ms.reviewer: jatingupta
+ms.date: 08/11/2023
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
@@ -33,15 +33,15 @@ Additionally, each partner tenant user must meet the following requirements:
 
 - The partner tenant user must have DAP/GDAP access to the applicable tenant.
 
-  - For DAP, an admin agent group membership.
+  - For DAP, the partner tenant user must be a member of the admin agent group.
 
-  - For GDAP, a role that can create Conditional Access (CA) policies.
+  - For GDAP, the partner tenant user must be a member of a security group that has been granted GDAP permissions to the applicable workload associated with the task.
 
 - The partner tenant user must enable MFA for their user account in the partner tenant.
 
 ## Deploy a task manually
 
-1. In the left navigation pane in Lighthouse, select **Tenant**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Tenants**.
 
 2. From the tenant list, select the tenant you want to view.
 
@@ -59,7 +59,7 @@ The task status will be updated to **Compliant**, and the Task Details pane will
 
 If the task status changes and is no longer compliant, you can reset the status to **Not compliant**. To do this:
 
-1. In the left navigation pane in Lighthouse, select **Tenant**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Tenants**.
 
 2. From the tenant list, select the tenant you want to view.
 

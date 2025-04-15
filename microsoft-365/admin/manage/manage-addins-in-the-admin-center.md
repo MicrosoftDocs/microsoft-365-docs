@@ -5,9 +5,9 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 07/06/2020
+ms.date: 04/02/2025
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
@@ -30,7 +30,10 @@ description: "Learn about using Centralized add-ins to deploy add-ins to users a
 
 # Manage add-ins in the Microsoft 365 admin center
 
-Office Add-ins help you personalize your documents and streamline the way you access information on the web. See [Start using your Office Add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862). 
+> [!NOTE]
+> [Integrated Apps](test-and-deploy-microsoft-365-apps.md) is the recommended and most feature-rich way for most customers to centrally deploy Office add-ins to users and groups within your organization.
+
+Office Add-ins help you personalize your documents and streamline the way you access information on the web. See [Start using your Office Add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862).
 
 After a Global or Exchange admin deploys add-ins for users in an organization, they can turn add-ins off or on, edit, delete, and manage access to the add-ins.
 
@@ -76,37 +79,50 @@ Post deployment, admins can also manage user access to add-ins.
 
 4. Save the changes.
 
-## Prevent add-in downloads by turning off the Office Store across all apps (Except Outlook)
+## Manage add-in downloads by turning on/off the Office store across all apps (Except Outlook)
 
 > [!NOTE]
 > Outlook add-in installation is managed by a [different process](/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/specify-who-can-install-and-manage-add-ins).
 
-As an organization you may wish to prevent the download of new Office Add-ins from the Office Store. This can be used in conjunction with Centralized Deployment to ensure that only organization-approved add-ins are deployed to users within your organization.
+As an organization you may wish to manage the download of Office add-ins from the Office store. This could be used to ensure that users within your organization can get the benefits from all the Office add-ins, or only the organization-approved add-ins can be deployed with Centralized Deployment.
   
-**To turn off add-in acquisition**
+**To turn on/off add-in acquisition**
   
 1. In the admin center, go to the **Settings** \> [Org settings](https://go.microsoft.com/fwlink/p/?linkid=2053743) page.
 
 2. Select **User owned apps and services**.
-    
-3. Clear the option to let users access the Office store.
 
-    This will prevent all users from acquiring the following add-ins from the store.
-      
-    - Add-ins for Word, Excel, and PowerPoint 2016 from:
-        
-      - Windows
-      - Mac
-      - Office
-        
-        
-    - Acquisitions starting within **AppSource**
-        
-    - Add-ins within Microsoft 365
-        
-    A user who tries to access the store will see the following message: **Sorry, Microsoft 365 has been configured to prevent individual acquisition of Office Store add-ins.**
+3. Check or clear the option to allow or prevent users to access the Office store.
+
+Options available in non-educational tenants:
+
+   ![Let user access office store settings](../../media/user-owned-apps-and-services.png)
+
+Options available in educational tenants:
+
+   ![Let user access office store settings for EDU](../../media/user-owned-apps-and-services-edu.png)
+
+The user’s license information is used to define whether a user is a faculty/staff or a student along with the Age Group property to check whether the student is an adult or not. A user who does not have an educational license is included in the <b>Faculty, staff and other non-student users</b> user group.  
+
+> [!NOTE]
+> For more information see:  
+>- [Learn how to review the user's license type and assign or unassign licenses as required](assign-licenses-to-users.md)
+>- [Understand how to configure the Age Group property in the Microsoft Encarta admin center](/entra/fundamentals/how-to-manage-user-profile-info)
+
+This will control all users' ability to acquire the following add-ins from the store.
+
+- Add-ins for Word, Excel, and PowerPoint 2016:
+    - Windows
+    - Mac
+    - Office
+- Add-ins within Microsoft 365
+
+ When you disable the access to the Office store, a user who tries to access the store will see the following message: **Office store not available. Unfortunately, your organization has disabled access to the Office Store. Please contact your administrator to get access to the store.**
+
+> [!NOTE]
+> Acquisitions may still be possible from AppSource, but the user will not be able to launch or use the add-in in the client. This does not prevent an administrator from using Centralized Deployment to assign an add-in from the Office Store.
   
-Support for turning off the Office Store is available in the following versions:
+Support for turning on/off the Office Store is available in the following versions:
   
 - Windows: 16.0.9001 - Currently available.
     
@@ -116,11 +132,6 @@ Support for turning off the Office Store is available in the following versions:
     
 - The web - Currently available.
     
-This does not prevent an administrator from using Centralized Deployment to assign an add-in from the Office Store.
-
-> [!NOTE] 
-> Add-ins such as Visio Data Visualizer, Bing Maps, and People Graph will still show up in the ribbon, even if an admin has disabled the Store. To remove these links, administrators must disable the Store through Group Policy Object (GPO).
-  
 To prevent a user from signing in with a Microsoft account, you can restrict logon to use only the organizational account. For more information, see [Identity, authentication, and authorization in Office 2016](/DeployOffice/security/identity-authentication-and-authorization-in-office).  
 
 > [!NOTE] 

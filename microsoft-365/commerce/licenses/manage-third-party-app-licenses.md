@@ -5,10 +5,11 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: argani, nicholak
+ms.reviewer: shegu, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
 ms.collection: 
 - Tier1
@@ -18,10 +19,11 @@ ms.collection:
 ms.custom: 
 - commerce_licensing
 - AdminSurgePortfolio
+- admindeeplinkMAC
 search.appverid:
 - MET150
 description: "Learn how to manage licenses for independent software vendor (ISV) apps in the Microsoft 365 admin center."
-ms.date: 05/10/2023
+ms.date: 01/06/2025
 ---
 
 # Manage ISV app licenses in the Microsoft 365 admin center
@@ -63,5 +65,4 @@ Depending on the ISV app that you bought, your next step might be to install the
 
 ## Related content
 
-[Assign licenses to users](../../admin/manage/assign-licenses-to-users.md) (article) \
-[Unassign licenses from users](../../admin/manage/remove-licenses-from-users.md) (article)
+[Assign or unassign licenses for users in the Microsoft 365 admin center](../../admin/manage/assign-licenses-to-users.md) (article)

@@ -3,9 +3,9 @@ title: Step 5. Device and app management for your Microsoft 365 for enterprise t
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/01/2020
+ms.date: 08/15/2024
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: 
@@ -15,6 +15,7 @@ ms.collection:
 - m365solution-tenantmanagement
 - tenant-management
 - m365solution-scenario
+- must-keep
 ms.custom:
 - Ent_Solutions
 description: "Deploy the correct option for device and app management for your Microsoft 365 tenants."
@@ -45,11 +46,11 @@ You'll also determine how you're going to manage personal devices and organizati
 
 ## Identity and device access configurations
 
-Microsoft provides a set of configurations for [identity and device access](../security/office-365-security/microsoft-365-policies-configurations.md) to ensure a secure and productive workforce. These configurations include the use of:
+Microsoft provides a set of configurations for [identity and device access](../security/office-365-security/zero-trust-identity-device-access-policies-overview.md) to ensure a secure and productive workforce. These configurations include the use of:
 
-- Azure AD Conditional Access policies
+- Microsoft Entra Conditional Access policies
 - Microsoft Intune device compliance and app protection policies
-- Azure AD Identity Protection user risk policies
+- Microsoft Entra ID Protection user risk policies
 - Additional policies of cloud apps
 
 Here is an example of the application of these settings and policies to validate and restrict users, their devices, and their use of local and cloud productivity apps like Microsoft Teams.
@@ -58,8 +59,8 @@ Here is an example of the application of these settings and policies to validate
 
 For device access and app management, use the configurations in these articles:
 
-- [Prerequisites](../security/office-365-security/identity-access-prerequisites.md)
-- [Common identity and device access policies](../security/office-365-security/identity-access-policies.md)
+- [Prerequisites](../security/office-365-security/zero-trust-identity-device-access-policies-prereq.md)
+- [Common identity and device access policies](../security/office-365-security/zero-trust-identity-device-access-policies-common.md)
 
 ## Results of Step 5
 
@@ -76,7 +77,7 @@ In this illustration, the tenant has:
 
 ## Ongoing maintenance for device and app management
 
-On an ongoing basis, you might need to: 
+On an ongoing basis, you might need to:
 
 - Manage device enrollment.
 - Revise your settings and policies for additional apps, devices, and security requirements.

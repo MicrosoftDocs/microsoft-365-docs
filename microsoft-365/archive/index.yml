@@ -1,0 +1,81 @@
+### YamlMime:Landing
+
+title: Microsoft 365 Archive documentation # < 60 chars
+summary: Microsoft 365 Archive is a cost-effective, long-term storage solution for inactive SharePoint content that maintains the same searchability, security, and compliance standards as active data. 
+metadata:
+  title: Microsoft 365 Archive documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: This page contains links to some important topics related to Microsoft 365 Archive features. Start here to learn about how to set up and use Microsoft 365 Archive in your organization. # Required; article description that is displayed in search results. < 160 chars.
+  services: 
+  ms.service: microsoft-365-archive #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page # Required
+  ms.collection: essentials-navigation
+  ms.custom: intro-hub-or-landing
+  author: chuckedmonson #Required; your GitHub user alias, with correct capitalization.
+  ms.author: chucked #Required; microsoft alias of author; optional team alias.
+  ms.date: 04/01/2025 #Required; mm/dd/yyyy format
+  ms.localizationpriority: medium
+  titleSuffix: Microsoft 365 Archive
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card 1
+  - title: About Microsoft 365 Archive
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Learn about Microsoft 365 Archive
+            url: archive-overview.md
+          - text: FAQs
+            url: archive-faq.md
+
+# Card 2
+  - title: Get started
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Set up Microsoft 365 Archive
+            url: archive-setup.md
+          - text: Pricing model
+            url: archive-pricing.md
+          - text: Education offering
+            url: archive-education-offering.md  
+
+# Card 3
+  - title: Archive sites
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Manage Microsoft 365 Archive
+            url: archive-manage.md
+          - text: Archive states
+            url: archive-states.md
+          - text: End user experience
+            url: archive-end-user.md
+
+# Card 4
+  - title: Data privacy & protection
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Privacy, security, & compliance
+            url: archive-privacy-security.md
+          - text: Compliance features
+            url: archive-compliance.md
+
+# Card 5
+  - title: More solutions
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Microsoft 365 Backup
+            url: /microsoft-365/backup
+          - text: SharePoint Advanced Management
+            url: /sharepoint/advanced-management
+          - text: SharePoint Embedded
+            url: /sharepoint/dev/embedded/overview
+          - text: Microsoft Syntex
+            url: /microsoft-365/syntex/
+

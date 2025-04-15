@@ -11,4 +11,4 @@ search.appverid: met150
 ---
 
 > [!NOTE]
-> Want to experience Microsoft 365 Defender? Learn more about how you can [evaluate and pilot Microsoft 365 Defender](/microsoft-365/security/defender/eval-overview?ocid=cx-docs-MTPtriallab).
+> Want to experience Microsoft Defender XDR? Learn more about how you can [evaluate and pilot Microsoft Defender XDR](/microsoft-365/security/defender/eval-overview?ocid=cx-docs-MTPtriallab).

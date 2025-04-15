@@ -1,12 +1,12 @@
 ---
-title: Create a content center in Microsoft Syntex
+title: Create a content center for document processing models in SharePoint
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
-ms.date: 07/01/2022
+ms.date: 02/10/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-syntex
 search.appverid: 
 ms.custom: admindeeplinkSPO
@@ -14,18 +14,18 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to create a content center in Microsoft Syntex.
+description: Learn how to create a content center for document processing models in SharePoint.
 ---
 
-# Create a content center in Microsoft Syntex
+# Create a content center for document processing models in SharePoint
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
-</br>
+<!---</br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CPSF]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b5dd658f-4416-4e80-9e56-a9c57902945d]
 
-</br>
+</br>--->
 
 To create and manage enterprise models, you first need a content center. The content center is the model creation interface and also contains information about which document libraries published models have been applied to.
 
@@ -46,18 +46,15 @@ To create a new content center:
 
 1. On the Microsoft 365 admin center, go to the <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**SharePoint admin center** > **Active sites**</a>.
 
-2. On the **Active sites** page, select **Create**, and then select **Other options**.
+2. On the **Active sites** page, select **Create**, and then select **Browse more sites**.
 
 3. On the **Choose a template** menu, select **Content center**.
 
-4. For the new site, provide a **Site name**, **Primary administrator**, and a **Language**.</br>
-
-   > [!NOTE] 
-   > You can select a content center site to render in any of the available languages, but note that currently models can only be created for English files. Also note that like other site templates, the default site language isn't editable after the site is created.
+4. For the new site, provide a **Site name**, **Primary administrator**, and a **Language**.
 
 5. Select **Finished**.
  
-After you create a content center site, you'll see it listed on <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a> in the SharePoint admin center. 
+After you create a content center site, you'll see it listed on <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a> in the SharePoint admin center.
 
 ### Give access to additional users
  
@@ -73,7 +70,3 @@ The **Models** library in the default content center view groups the created mod
 
 > [!NOTE]
 > You can't change the designated default content center. It's always the first content center created during setup. 
-
-## See also
-
-[Overview of model types](model-types-overview.md)

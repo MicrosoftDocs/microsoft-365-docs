@@ -14,7 +14,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 f1.keywords: NOCSH
-ms.date: 09/22/2022
+ms.date: 04/30/2024
 
 ---
 
@@ -22,23 +22,30 @@ ms.date: 09/22/2022
 
 The Microsoft 365 enterprise solution series provides guidance for implementing Microsoft 365 capabilities, especially where capabilities cross technologies, including Teams architecture diagrams.
 
+## Microsoft 365 Copilot architecture and deployment
+The logical architecture of Microsoft 365 Copilot with security and deployment guidance.
+
+| Item | Description |
+|:-----|:-----|
+|[![Microsoft 365 Copilot architecture poster thumb](../media/solutions-architecture-center/microsoft-365-copilot-architecture-thumb.png)](https://download.microsoft.com/download/c/d/6/cd6c6858-f87b-4dc5-a593-e87db0aa6029/microsoft-365-copilot-architecture.pdf) <br/> [PDF](https://download.microsoft.com/download/c/d/6/cd6c6858-f87b-4dc5-a593-e87db0aa6029/microsoft-365-copilot-architecture.pdf) \| [Visio](https://download.microsoft.com/download/c/d/6/cd6c6858-f87b-4dc5-a593-e87db0aa6029/microsoft-365-copilot-architecture.vsdx)  <br>Updated October 2023   |Copilot combines the power of large language models (LLMs) with your data in the Microsoft Graph — your calendar, emails, chats, documents, meetings, and more — and the Microsoft 365 apps to provide a powerful productivity tool.<br/> <br/>This series of illustrations provides a view into new logical architecture components. It includes recommendations for preparing your environment for Microsoft 365 Copilot with security and information protection while assigning licenses.
+
 ## Microsoft Teams and related productivity services in Microsoft 365 for IT architects
 The logical architecture of productivity services in Microsoft 365, leading with Microsoft Teams.
 
 | Item | Description |
 |:-----|:-----|
-|[![Teams logical architecture poster.](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>Updated January 2021   |Microsoft provides a suite of productivity services that work together to provide collaboration experiences with data governance, security, and compliance capabilities. <br/> <br/>This series of illustrations provides a view into the logical architecture of productivity services for enterprise architects, leading with Microsoft Teams.|
+|[![Teams logical architecture poster.](../downloads/msft-teams-logical-architecture-thumb.png)](https://download.microsoft.com/download/8/c/2/8c2d4d29-a6dd-4d98-92e9-be496f1681df/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://download.microsoft.com/download/8/c/2/8c2d4d29-a6dd-4d98-92e9-be496f1681df/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://download.microsoft.com/download/e/2/c/e2cbb5c3-df64-45b2-b367-75b99c914c49/msft-m365-teams-logical-architecture.vsdx)  <br>Updated September 2023   |Microsoft provides a suite of productivity services that work together to provide collaboration experiences with data governance, security, and compliance capabilities. <br/> <br/>This series of illustrations provides a view into the logical architecture of productivity services for enterprise architects, leading with Microsoft Teams.|
 
 ## Microsoft 365 for frontline workers scenarios
-Microsoft 365 for frontline workers can help you connect and engage your workforce, enhance workforce management, and increase operational efficiency. You can use the capabilities included with Microsoft 365 for frontline workers, from Microsoft Teams, to SharePoint, Viva Connections, Yammer, and the Power Platform, or add in solutions from our partners in the digital ecosystem to connect with existing systems or create custom solutions for your business.
+Microsoft 365 for frontline workers can help you connect and engage your workforce, enhance workforce management, and increase operational efficiency. You can use the capabilities included with Microsoft 365 for frontline workers, from Microsoft Teams, to SharePoint, Viva Connections, Viva Engage, and the Power Platform, or add in solutions from our partners in the digital ecosystem to connect with existing systems or create custom solutions for your business.
 
 Use the following posters to start envisioning what your organization can do with Microsoft 365 for frontline workers.
 
 | Item | Description |
 |:-----|:-----|
-|[![Microsoft 365 for frontline worker scenarios.](/microsoft-365/frontline/media/m365-frontline-scenarios-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206713) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206713) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206386)  <br>Updated September 2022   |**Frontline worker scenarios**<br><br>This poster provides an overview of the scenarios you can implement for your frontline workforce to increase communications, enhance wellbeing and engagement, train and onboard your workers, and manage your workforce and operations.<br/><br/>**Related solution guides** <br/> <ul><li>[Microsoft 365 for frontline workers](/microsoft-365/frontline/flw-overview)|
-|[![Microsoft 365 for frontline workers: Healthcare scenarios.](/microsoft-365/frontline/media/m365-frontline-healthcare-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206475) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206475) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206474)  <br>Updated September 2022   |**Healthcare scenarios**<br><br>This poster provides an overview of the scenarios you can implement for your frontline workforce in a healthcare setting.<br/><br/>**Related solution guides** <br/> <ul><li>[Get started with Microsoft 365 for healthcare organizations](/microsoft-365/frontline/teams-in-hc)|
-|[![Microsoft 365 for frontline workers: Retail scenarios.](/microsoft-365/frontline/media/m365-frontline-retail-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206476) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206476) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206271)  <br>Updated September 2022   |**Retail scenarios**<br><br>This poster provides an overview of the scenarios you can implement for your frontline workforce in a retail setting.<br/><br/>**Related solution guides** <br/> <ul><li>[Get started with Microsoft 365 for retail organizations](/microsoft-365/frontline/teams-for-retail-landing-page)|
+|[![Microsoft 365 for frontline worker scenarios.](/microsoft-365/frontline/media/m365-frontline-scenarios-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206713) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206713) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206386)  <br>Updated April 2024   |**Frontline worker scenarios**<br><br>This poster provides an overview of the scenarios you can implement for your frontline workforce to increase communications, enhance wellbeing and engagement, train and onboard your workers, and manage your workforce and operations.<br/><br/>**Related solution guides** <br/> <ul><li>[Microsoft 365 for frontline workers](/microsoft-365/frontline/flw-overview)|
+|[![Microsoft 365 for frontline workers: Healthcare scenarios.](/microsoft-365/frontline/media/m365-frontline-healthcare-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206475) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206475) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206474)  <br>Updated April 2024   |**Healthcare scenarios**<br><br>This poster provides an overview of the scenarios you can implement for your frontline workforce in a healthcare setting.<br/><br/>**Related solution guides** <br/> <ul><li>[Get started with Microsoft 365 for healthcare organizations](/microsoft-365/frontline/teams-in-hc)|
+|[![Microsoft 365 for frontline workers: Retail scenarios.](/microsoft-365/frontline/media/m365-frontline-retail-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206476) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206476) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206271)  <br>Updated April 2024   |**Retail scenarios**<br><br>This poster provides an overview of the scenarios you can implement for your frontline workforce in a retail setting.<br/><br/>**Related solution guides** <br/> <ul><li>[Get started with Microsoft 365 for retail organizations](/microsoft-365/frontline/teams-for-retail-landing-page)|
 
 ## Corporate communications with Microsoft 365 — a Contoso case study
 Employee engagement is a significant contributor to workplace satisfaction, retention, and productivity at any organization. Across Microsoft 365, there are multiple ways to communicate and engage your audience. 
@@ -81,7 +88,7 @@ Security and information protection for multi-region organizations with a single
 
 | Item | Description |
 |:-----|:-----|
-|[![Multi-region infographic.](../media/solutions-architecture-center/multi-region-single-tenant-security-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.vsdx)<br>Updated March 2020 |Using a single Microsoft 365 tenant for your global organization is the best choice and experience for many reasons. However, many architects wrestle with how to meet security and information protection objectives across different regions. This set of topics provides recommendations. |
+|[![Multi-region infographic.](../media/solutions-architecture-center/multi-region-single-tenant-security-thumb.png)](https://download.microsoft.com/download/b/4/8/b482e1b1-8688-4319-b4ff-a476a4ba46ab/msft-security-info-protect-multi-region.pdf) <br/> [PDF](https://download.microsoft.com/download/b/4/8/b482e1b1-8688-4319-b4ff-a476a4ba46ab/msft-security-info-protect-multi-region.pdf) \| [Visio](https://download.microsoft.com/download/6/8/9/689c1c79-6229-443c-874d-df501bb86f10/msft-security-info-protect-multi-region.vsdx)<br>Updated March 2020 |Using a single Microsoft 365 tenant for your global organization is the best choice and experience for many reasons. However, many architects wrestle with how to meet security and information protection objectives across different regions. This set of topics provides recommendations. |
 
 <!--
 ## Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations
@@ -102,18 +109,7 @@ Depending on your environment, some tools are better suited for certain architec
 | Item | Description |
 |:-----|:-----|
 |[![Thumb image for Microsoft Defender for Endpoint deployment strategy.](../media/solutions-architecture-center/mde-deployment-strategy.png)](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) <br>Updated September 2021| The architectural material helps you plan your deployment for the following architectures: <ul><li> Cloud-native </li><li> Co-management </li><li> On-premises</li><li>Evaluation and local onboarding</li> |
-<!--
 
-<a name="BKMK_O365IDP"></a>
-## Zero Trust identity and device protection for Microsoft 365
-
-Recommended Zero Trust capabilities for protecting identities and devices that access Microsoft 365, other SaaS services, and on-premises applications published with Azure AD Application Proxy.
-
-| Item | Description |
-|:-----|:-----|
-|[![Model poster: Zero Trust identity and device protection for Microsoft 365.](../media/microsoft-365-policies-configurations/zero-trust-id-device-protection-model-thumbnail.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [View as a PDF](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf)  \| [Download as a Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx) <br/> Updated November 2021|It's important to use consistent levels of protection across your data, identities, and devices. This model shows you which Zero Trust capabilities are comparable with more information on capabilities to protect identities and devices.  <br/> |
-
---> 
 <a name="BKMK_ediscovery"></a>
 
 ## eDiscovery (Premium) architecture in Microsoft 365

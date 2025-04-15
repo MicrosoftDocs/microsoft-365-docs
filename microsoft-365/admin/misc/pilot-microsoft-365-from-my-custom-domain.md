@@ -2,12 +2,12 @@
 title: "Pilot Microsoft 365 from my custom domain"
 f1.keywords:
 - CSH
-ms.author: nkagole
-author: nataliekagole
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
-ms.date: 07/10/2020
+ms.date: 08/28/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
@@ -49,7 +49,7 @@ Follow these steps to set up a Microsoft 365 pilot:
 
 ### Step 1: Sign in to the Microsoft 365 admin center
 
-1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) with your work or school account.
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> with your work or school account.
 
 2. Select **Settings** > **Domains** in the left navigation pane.
 
@@ -84,7 +84,7 @@ Microsoft 365 uses Exchange Online Protection (EOP) for spam protection. EOP mig
 > [!NOTE]
 > Unblocking your existing email server allows any spam that arrives through your original server to come to the Microsoft 365 mailboxes, and you can't evaluate how well Microsoft 365 prevents spam.
 
-1. Sign in to Microsoft 365 Defender(https://security.microsoft.com/antispam), select **Policies & rules**, Click on **Threat policies** and then select **Anti-spam policies**.
+1. Sign in to Microsoft Defender XDR(https://security.microsoft.com/antispam), select **Policies & rules**, Click on **Threat policies** and then select **Anti-spam policies**.
 
 2. Select **Connection filter policy (Default)**, and click on Edit **Edit connection filter policy** and add the mail server IP address for your current email provider in the **Always allow messages from the following IP addresses or address range** Section.
 

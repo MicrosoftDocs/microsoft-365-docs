@@ -4,7 +4,8 @@ ms.author: erikre
 author: erikre
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
+ms.date: 03/29/2024
 description: Step 4. Add apps to Intune.
 ms.service: o365-solutions
 ms.localizationpriority: high
@@ -55,7 +56,7 @@ Use the following steps to add Microsoft licensed apps to Intune:
 > In addition, consider adding the following Microsoft apps based on your existing license:
 > - Microsoft Exchange
 > - Microsoft SharePoint
-> - Microsoft Yammer
+> - Microsoft Viva Engage
 > - Microsoft Viva
 > - Project Online Desktop Client
 > - Visio Online Plan 2

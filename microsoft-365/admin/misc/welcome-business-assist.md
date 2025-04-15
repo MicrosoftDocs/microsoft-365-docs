@@ -10,10 +10,10 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 description: "Welcome to Business Assist."
-ms.date: 04/27/2023
+ms.date: 05/21/2023
 ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Welcome to Business Assist
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfN?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=23be75ab-77b4-4b3a-baba-b672f061f659]

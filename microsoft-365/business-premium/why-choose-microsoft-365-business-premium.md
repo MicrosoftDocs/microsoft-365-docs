@@ -2,19 +2,18 @@
 title: "Why choose Microsoft 365 Business Premium? Productivity and security"
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
-manager: dansimp
+ms.author: chrisda
+author: chrisda
+manager: deniseb
 audience: Admin
-ms.topic: conceptual
-ms.service: microsoft-365-security
-ms.subservice: m365bp
-ms.date: 05/10/2023
+ms.topic: article
+ms.service: microsoft-365-business-security
+ms.date: 05/31/2024
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - M365-Campaigns
 - m365solution-smb
-- tier1
+- tier2
 ms.custom:
 - MiniMaven
 search.appverid:
@@ -33,20 +32,20 @@ Microsoft 365 Business Premium is a complete productivity and security solution 
 - **Defend against sophisticated cyberthreats and safeguard your business data** with advanced protection against phishing, ransomware, and data loss.
 - **Manage and secure devices** (Windows, Mac, iOS, and Android) that connect to your data, and help keep those devices up to date.
 
-Microsoft 365 Business Premium offers you one comprehensive solution for productivity and security. As an admin or IT Pro, you have everything you need in one place for administration, billing, and 24x7 support, while reducing cost and complexity for your business. 
+Microsoft 365 Business Premium offers you one comprehensive solution for productivity and security. As an admin or IT Pro, you have everything you need in one place for administration, billing, and 24x7 support, while reducing cost and complexity for your business.
 
 ## Video: Top 5 benefits of Microsoft 365 Business Premium
 
 Watch the following video to see how Microsoft 365 Business Premium helps your business be more productive and secure: <br/><br/>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Pq0G]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=6f3cae8f-688c-46f3-9987-cfcf3168bf97]
 
 > [!TIP]
 > For more detailed information about what's included in Microsoft 365 Business Premium, see the [Microsoft 365 User Subscription Suites for Small and Medium-sized Businesses](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWR6bM).
 
 ## Resources to train everyone
 
-The security recommendations provided in [this guidance](index.md) make it much harder for cyberattackers to gain access to your environment. An important part of your security strategy also includes training everyone in your organization &mdash; the people in your company who use your systems regularly. Users can be your first line of defense. Everyone needs to know how to work productively while maintaining a more secure environment.
+The security recommendations provided in [this guidance](m365bp-overview.md) make it much harder for cyberattackers to gain access to your environment. An important part of your security strategy also includes training everyone in your organization &mdash; the people in your company who use your systems regularly. Users can be your first line of defense. Everyone needs to know how to work productively while maintaining a more secure environment.
 
 Resources are available to help everyone in your organization to:
 

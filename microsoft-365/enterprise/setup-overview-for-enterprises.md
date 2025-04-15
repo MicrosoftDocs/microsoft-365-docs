@@ -3,10 +3,11 @@ title: "Deploy Microsoft 365 Enterprise for your organization"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 11/19/2019
+ms.date: 09/05/2024
 audience: ITPro
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -15,6 +16,8 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - M365-subscription-management
+- essentials-get-started
+- must-keep
 f1.keywords:
 - CSH
 ms.custom: 
@@ -32,7 +35,7 @@ This article describes two deployment options, whether you want help or are doin
 
 ## Guided Microsoft 365 Enterprise setup process with FastTrack
 
-**[FastTrack for Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365)** is the best method for deploying Microsoft 365. FastTrack guides you through the most common deployment configurations and can answer questions along the way. 
+**[FastTrack for Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365)** is the best method for deploying Microsoft 365. FastTrack guides you through the most common deployment configurations and can answer questions along the way.
 
 To access a series of setup guides, sign in to your Microsoft 365 subscription, and then go to [Setup guidance](https://aka.ms/o365fasttrack).
 
@@ -48,12 +51,12 @@ To deploy Microsoft 365 Enterprise on your own after completing your planning, t
 1. [Set up your network](set-up-network-for-microsoft-365.md)
 
    Includes adding your Internet domains and optimizing the network performance for your on-premises users.
- 
+
 2. [Set up your identities](protect-your-global-administrator-accounts.md)
 
    Includes determining an identity model (cloud-only or hybrid), and for hybrid identity, setting up directory synchronization between your on-premises Active Directory Domain Services (AD DS) and your Microsoft 365 subscription.
 
-3. [Implement security](/microsoft-365/security/office-365-security/defender-for-office-36)
+3. [Implement security](/microsoft-365/security/office-365-security/defender-for-office-365-whats-new)
 
    Includes configuring and rolling out basic and enhanced security, threat, and information protections for your tenant and identities in the first 30 days, 90 days, and beyond.
 
@@ -74,4 +77,4 @@ To deploy Microsoft 365 Enterprise on your own after completing your planning, t
    Includes short videos that help your users get the most out of Microsoft 365 quickly.
 
 > [!NOTE]
-> These steps are also for businesses and [nonprofits](https://go.microsoft.com/fwlink/?LinkId=627221) that want to start with a custom deployment of Microsoft 365 Enterprise. 
+> These steps are also for businesses and [nonprofits](https://go.microsoft.com/fwlink/?LinkId=627221) that want to start with a custom deployment of Microsoft 365 Enterprise.

@@ -1,22 +1,22 @@
 ---
-title: Share an enterprise model in Microsoft Syntex
+title: Share an enterprise model for document processing in SharePoint
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 audience: admin
 ms.reviewer: ssquires
-ms.date: 10/12/2022
-ms.topic: conceptual
+ms.date: 02/16/2025
+ms.topic: how-to
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to make trained models available to other users and how to apply other trained models in Microsoft Syntex.
+description: Learn how to make trained models available to other users and how to apply other trained models in SharePoint.
 ---
 
-# Share an enterprise model in Microsoft Syntex
+# Share an enterprise model for document processing in SharePoint
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
@@ -48,6 +48,4 @@ To make your trained model available for others to use:
 
 4. Select the sites where you want the model to be available for other users to apply, and then select **Save**.
 
-## See also
 
-[Discover other trained models](discover-other-trained-models.md)

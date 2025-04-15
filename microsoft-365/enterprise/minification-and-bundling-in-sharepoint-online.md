@@ -1,17 +1,19 @@
 ---
-title: "Minification and bundling in SharePoint Online"
+title: "Minification and bundling in SharePoint"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 1/18/2022
+ms.date: 08/09/2024
 audience: Admin
 ms.topic: troubleshooting
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 ms.collection: 
 - scotvorg
 - Ent_O365
 - SPO_Content
+- must-keep
 f1.keywords:
 - CSH
 ms.custom: 
@@ -21,12 +23,12 @@ search.appverid:
 - SPO160
 - MET150
 ms.assetid: 87a52468-994e-43a2-b155-7229ed659291
-description: Learn how to use minification and bundling techniques with Web Essentials to reduce HTTP requests and the time it takes to load pages in SharePoint Online.
+description: Learn how to use minification and bundling techniques with Web Essentials to reduce HTTP requests and the time it takes to load pages in SharePoint.
 ---
 
-# Minification and bundling in SharePoint Online
+# Minification and bundling in SharePoint
 
-This article describes how to use minification and bundling techniques with Web Essentials to reduce the number of HTTP requests and to reduce the time it takes to load pages in SharePoint Online.
+This article describes how to use minification and bundling techniques with Web Essentials to reduce the number of HTTP requests and to reduce the time it takes to load pages in SharePoint.
   
 When you customize your website, you can end up adding a large number of extra files to the server to support the customization. Adding extra JavaScript, CSS, and images increase the number of HTTP requests to the server, which in turn increases the time it takes to display a web page. If you have multiple files of the same type, you can bundle these files to make downloading these files faster.
   

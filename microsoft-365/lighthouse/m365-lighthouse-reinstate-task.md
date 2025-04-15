@@ -4,10 +4,10 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: kywirpel
-ms.date: 10/24/2022
+ms.reviewer: jatingupta
+ms.date: 08/11/2023
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
@@ -33,15 +33,15 @@ Additionally, each partner tenant user must meet the following requirements:
 
 - The partner tenant user must have DAP/GDAP access to the applicable tenant.
 
-  - For DAP, an admin agent group membership.
+  - For DAP, the partner tenant user must be a member of the admin agent group.
 
-  - For GDAP, a role that can create Conditional Access (CA) policies.
+  - For GDAP, the partner tenant user must be a member of a security group that has been granted GDAP permissions to the applicable workload associated with the task.
 
 - The partner tenant user must enable MFA for their user account in the partner tenant.
 
 ## Reinstate a task
 
-1. In the left navigation in Lighthouse, select **Tenants**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Tenants**.
 2. Select the appropriate tenant from the list.
 3. Select **Deployment plan** tab.
 4. From the task list, select the task you want to reinstate.
@@ -49,6 +49,10 @@ Additionally, each partner tenant user must meet the following requirements:
 6. From the **Reinstate task** dialog box, select **Reinstate**.
 
 You can also select **More actions** (ellipsis icon) option directly from the task list to reinstate the task. Once a task is reinstated, status detection and reporting will update accordingly.
+
+## Next steps
+
+If you want to investigate why a task was dismissed, you can audit the exception by using deployment insights. For more information, see [Manage tenants by using deployment insights in Microsoft 365 Lighthouse](m365-lighthouse-manage-tenants-using-deployment-insights.md).
 
 ## Related content
 

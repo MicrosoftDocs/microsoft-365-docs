@@ -4,10 +4,10 @@ f1.keywords: NOCSH
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 08/27/2020
+ms.date: 11/11/2024
 audience: Admin
-ms.topic: article
-ms.service: microsoft-365-business
+ms.topic: how-to
+ms.service: microsoft-365-basic-mobility-security
 ms.localizationpriority: medium
 ms.collection:
 - Tier3
@@ -15,13 +15,16 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+- basic-mobility-security
+ms.custom: 
+- AdminSurgePortfolio
+- basic-mobility-security
 description: "Remove groups or policies to turn off Basic Mobility and Security."
 ---
 
 # Turn off Basic Mobility and Security
 
-To effectively turn off Basic Mobility and Security, you remove groups of people defined by security groups from the device management policies, or remove the policies themselves.
+To effectively turn-off Basic Mobility and Security, you remove groups of people defined by security groups from the device management policies, or remove the policies themselves.
 
 - Remove groups of users by removing user security groups from the device policies you've created.
 

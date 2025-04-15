@@ -2,11 +2,11 @@
 title: Step 1. Use Microsoft Syntex to identify contract files and extract data
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
 audience: admin
-ms.topic: conceptual
-ms.date: 10/28/2022
+ms.topic: how-to
+ms.date: 01/08/2025
 ms.service: microsoft-syntex
 search.appverid: 
 ms.localizationpriority:  medium
@@ -16,7 +16,7 @@ description: Learn how to use Microsoft Syntex to identify contract files and ex
 
 # Step 1. Use Microsoft Syntex to identify contract files and extract data
 
-Your organization needs a way to identify and classify all contract documents from the many files you receive. You also want to be able to quickly view several key elements in each of the contract files identified (for example, *Client*, *Contractor*, and *Fee amount*). You can do this by using Syntex] to create an unstructured document processing model and applying it to a document library.
+Your organization needs a way to identify and classify all contract documents from the many files you receive. You also want to be able to quickly view several key elements in each of the contract files identified (for example, *Client*, *Contractor*, and *Fee amount*). You can do this by using Syntex to create an unstructured document processing model and applying it to a document library.
 
 ## Overview of the process
 
@@ -184,7 +184,7 @@ To apply your model to a SharePoint document library:
 2. On the **Add Contract** panel, select the SharePoint site that contains the document library that you want to apply the model to. If the site does not show in the list, use the search box to find it. Select **Add**.
 
     > [!NOTE]
-    > You must have *Manage List* permissions or *Edit* rights to the document library you are applying the model to.
+    > You must have Manage Lists permissions or Edit rights to the document library you are applying the model to.
 
 3. After you select the site, select the document library to which you want to apply the model.
 

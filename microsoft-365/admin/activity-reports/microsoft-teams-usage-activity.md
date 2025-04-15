@@ -3,7 +3,7 @@ title: "Microsoft 365 admin center Teams usage activity reports"
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 03/25/2022
+ms.date: 12/14/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -14,7 +14,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- campaignIDs-batch1
 search.appverid:
 - BCS160
 - MST160
@@ -80,6 +82,9 @@ The Channel usage chart shows data on the following metrics.
 |Active channels|Valid channels in active teams that have at least one active user in the specified time period. This includes public, private, or shared channels.|
 |Channel messages|The number of unique messages that the user posted in a private chat during the specified time period.|
 
+> [!NOTE]
+> Panel action refers to any action taken by the user in the panel within Microsoft Teams.
+
 ### Team usage metrics
 
 The Teams usage chart shows data on the following metrics.
@@ -104,7 +109,7 @@ Data for following metrics are available for individual teams.
 |Active guests|Guests that have at least one panel action in the specified time period. <br/> <br/> A guest is defined as persons from outside your organization who accesses shared resources by signing in to a guest account in my directory.|
 |External active users|External participants that have at least one panel action in the specified time period.<br/><br/> An external participant is defined as a person from outside your organization who is participating in a resource – such as a shared channel – using their own identity and not a guest account in your directory.|
 |Active channels|Valid channels in active teams that have at least one active user in the specified time period. This includes public, private, or shared channels.|
-|Active shared channels|Valid shared channels in active teams that have at least one active user in the specified time. <br/> <br/>A shared channel is defined as a Teams channel that can be shared with people outside the team. These people can be inside your organization or from other Azure AD organizations.|
+|Active shared channels|Valid shared channels in active teams that have at least one active user in the specified time. <br/> <br/>A shared channel is defined as a Teams channel that can be shared with people outside the team. These people can be inside your organization or from other Microsoft Entra organizations.|
 |Total organized meetings|The sum of one-time scheduled, recurring, ad hoc and unclassified meetings a user organized during the specified time period.|
 |Posts|Count of all the post messages in channels in the specified time period.|
 |Replies|Count of all the reply messages in channels in the specified time period.|
@@ -114,9 +119,12 @@ Data for following metrics are available for individual teams.
 |Channel messages|The number of unique messages that the user posted in a team chat during the specified time period.|
 |Last activity date|The latest date that any member of the team has committed an action.|
 
+> [!NOTE]
+> Metric counts include Teams client built-in features, but don't include changes to chat and channel through service integration, such as Teams app posts or replies and emails in the channel.
+
 ## Make the user-specific data anonymous
 
-To make the data in Teams user activity report anonymous, you have to be a global administrator. This will hide identifiable information (using MD5 hashes) such as display name, email, and Azure Active Directory Object ID in report and their export.
+To make the data in Teams user activity report anonymous, you have to be a global administrator. This will hide identifiable information (using MD5 hashes) such as display name, email, and Microsoft Entra Object ID in report and their export.
 
 1. In Microsoft 365 admin center, go to the **Settings** > **Org Settings**, and under **Services** tab, choose **Reports**.
 

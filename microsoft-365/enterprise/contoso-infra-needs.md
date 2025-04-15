@@ -5,15 +5,17 @@ f1.keywords:
 - NOCSH
 ms.author: kvice
 manager: scotv
-ms.date: 09/13/2018
+ms.date: 09/06/2024
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 ms.collection: 
 - scotvorg
 - M365-subscription-management
 - Strat_O365_Enterprise
+- must-keep
 ms.custom:
 
 description: Understand the basic structure of the Contoso on-premises IT infrastructure and how the company's business needs are met by Microsoft 365 for enterprise.
@@ -27,11 +29,11 @@ Contoso is transitioning from an on-premises, centralized IT infrastructure to a
 
 Contoso uses a mostly centralized on-premises IT infrastructure, with application datacenters in the Paris headquarters.
 
-Here is the headquarters office with application datacenters, a DMZ, and the internet.
+Here's the headquarters office with application datacenters, a DMZ, and the internet.
 
 ![Existing Contoso IT infrastructure.](../media/contoso-infra-needs/contoso-infra-needs-fig1.png)
 
-The on-premises application datacenters host: 
+The on-premises application datacenters host:
 
 - Custom line-of-business applications that use SQL Server and other Linux databases.
 - A set of legacy SharePoint servers.
@@ -51,7 +53,7 @@ In the Contoso headquarters DMZ, different sets of servers provide:
 
 Contoso business needs fall into five main categories:
 
-**Productivity**
+### Productivity
 
 - Make collaboration easier
 
@@ -63,7 +65,7 @@ Contoso business needs fall into five main categories:
 
   Take advantage of the latest visual learning and idea development methods, including inking and 3D visualization.
 
-**Security**
+### Security
 
 - Identity and access management
 
@@ -81,7 +83,7 @@ Contoso business needs fall into five main categories:
 
   Monitor security posture and detect and respond to threats in real time.
 
-**Remote and mobile access and business partners**
+### Remote and mobile access and business partners
 
 - Improve security for remote and mobile workers
 
@@ -95,13 +97,13 @@ Contoso business needs fall into five main categories:
 
   Replace an aging and expensive partner extranet with a cloud-based solution that uses federated authentication.
 
-**Compliance**
+### Compliance
 
 - Adhere to regional regulatory requirements
 
   Ensure compliance with industry and regional regulations for data storage, encryption, data privacy, and personal data regulations, such as the General Data Protection Regulation (GDPR) for the Europe Union.
 
-**Management**
+### Management
 
 - Lower IT overhead for managing software running on client PCs and devices
 
@@ -111,7 +113,6 @@ Contoso business needs fall into five main categories:
 
 The Contoso IT department determined the following mapping of business needs to Microsoft 365 E5 features prior to deployment:
 
-
 | Category | Business need | Microsoft 365 for enterprise products or features |
 |:-------|:-----|:-----|
 | Productivity |  |  |
@@ -119,7 +120,7 @@ The Contoso IT department determined the following mapping of business needs to 
 |  | Improve productivity for remote and mobile workers | Microsoft 365 workloads and cloud-based data |
 |  | Increase creativity and innovation | Windows Ink, Cortana at Work, PowerPoint |
 | Security |  |  |
-|  | Identity & access management | Dedicated global administrator accounts with Azure AD Multi-Factor Authentication (MFA) and Azure AD Privileged Identity Management (PIM) <br> MFA for all user accounts <br> Conditional Access <br> Security Reader <br> Windows Hello <br> Windows Credential Guard |
+|  | Identity & access management | Dedicated global administrator accounts with Microsoft Entra multifactor authentication (MFA) and Microsoft Entra Privileged Identity Management (PIM) <br> MFA for all user accounts <br> Conditional Access <br> Security Reader <br> Windows Hello <br> Windows Credential Guard |
 |  | Threat protection | Advanced Threat Analytics <br> Windows Defender <br> Defender for Office 365 <br> Microsoft Defender for Office 365 <br> Microsoft 365 threat investigation and response <br> |
 |  | Information protection | Azure Information Protection <br> Data Loss Prevention (DLP) <br> Windows Information Protection (WIP) <br> Microsoft Defender for Cloud Apps <br> Microsoft Intune |
 |  | Security management | Microsoft Defender for Cloud  <br> Windows Defender Security Center |
@@ -130,7 +131,7 @@ The Contoso IT department determined the following mapping of business needs to 
 | Compliance |  |  |
 |  | Adhere to regional regulatory requirements | GDPR features in Microsoft 365 |
 | Management |  |  |
-|  | Lower IT overhead for installing client updates | Windows 10 Enterprise updates <br> Microsoft 365 Apps for enterprise updates |
+|  | Lower IT overhead for installing client updates | Windows 11 Enterprise updates <br> Microsoft 365 Apps for enterprise updates |
 ||||
 
 ## Next step
@@ -140,5 +141,3 @@ Learn about the Contoso Corporation [on-premises network](contoso-networking.md)
 ## See also
 
 [Microsoft 365 for enterprise overview](microsoft-365-overview.md)
-
-[Test lab guides](m365-enterprise-test-lab-guides.md)

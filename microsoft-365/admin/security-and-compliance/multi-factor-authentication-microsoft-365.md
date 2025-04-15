@@ -5,9 +5,9 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 05/21/2020
+ms.date: 10/02/2024
 audience: Admin
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
@@ -21,11 +21,6 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 - admindeeplinkMAC
-search.appverid:
-- BCS160
-- MET150
-- MOE150
-ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Multi-factor authentication (MFA) uses both a password, which should be strong, and an additional verification method."
 ---
@@ -60,8 +55,8 @@ These ways are based on your Microsoft 365 plan.
 |Plan|Recommendation|Type of customer|
 |---|---|---|
 |All Microsoft 365 plans|Use security defaults, which require MFA for all user accounts. <p> You can also configure per-user MFA on individual user accounts, but this isn't recommended.|Small business|
-|Microsoft 365 Business Premium <p> Microsoft 365 E3 <p> Azure Active Directory (Azure AD) Premium P1 licenses|Use [security defaults or Conditional Access policies](/microsoft-365/business-premium/m365bp-turn-on-mfa) to require MFA for user accounts based on group membership, apps, or other criteria.|Small business to enterprise|
-|Microsoft 365 E5 <p> Azure AD Premium P2 licenses|Use Azure AD Identity Protection to require MFA based on sign-in risk criteria.|Enterprise|
+|Microsoft 365 Business Premium <p> Microsoft 365 E3 <p> Microsoft Entra ID P1 licenses|Use [security defaults or Conditional Access policies](/microsoft-365/business-premium/m365bp-turn-on-mfa) to require MFA for user accounts based on group membership, apps, or other criteria.|Small business to enterprise|
+|Microsoft 365 E5 <p> Microsoft Entra ID P2 licenses|Use Microsoft Entra ID Protection to require MFA based on sign-in risk criteria.|Enterprise|
 ||||
 
 ### Security defaults
@@ -75,7 +70,7 @@ Users have 14 days to register for MFA with the Microsoft Authenticator app from
 
 Security defaults ensure that all organizations have a basic level of security for user sign-in that is enabled by default. You can disable security defaults in favor of MFA with Conditional Access policies.
 
-You enable or disable security defaults from the **Properties** pane for Azure AD in the Azure portal.
+You enable or disable security defaults from the **Properties** pane for Microsoft Entra ID in the Azure portal.
 
 ![Picture of the Directory properties page.](../../media/multi-factor-authentication-microsoft-365/security-defaults-mfa.png)
 
@@ -93,7 +88,7 @@ This policy allows you to require MFA based on group membership, rather than try
 
 You can also use Conditional Access policies for more advanced capabilities, such as requiring MFA for specific apps or that the sign-in is done from a compliant device, such as your laptop running Windows 10.
 
-You configure Conditional Access policies from the **Security** pane for Azure AD in the Azure portal.
+You configure Conditional Access policies from the **Security** pane for Microsoft Entra ID in the Azure portal.
 
 ![Picture of menu option for Conditional Access.](../../media/multi-factor-authentication-microsoft-365/conditional-access-mfa.png)
 
@@ -101,7 +96,7 @@ You can use Conditional Access policies with:
 
 - Microsoft 365 Business Premium
 - Microsoft 365 E3 and E5
-- Azure AD Premium P1 and Azure AD Premium P2 licenses
+- Microsoft Entra ID P1 and Microsoft Entra ID P2 licenses
 
 For small businesses with Microsoft 365 Business Premium, you can easily use Conditional Access policies with the following steps:
 
@@ -125,16 +120,18 @@ Enterprises should use [Common Conditional Access policies](/azure/active-direct
 
 For more information, see this [overview of Conditional Access](/azure/active-directory/conditional-access/overview).
 
-### Azure AD Identity Protection
+<a name='azure-ad-identity-protection'></a>
 
-With Azure AD Identity Protection, you can create an additional Conditional Access policy to [require MFA when sign-in risk is medium or high](../../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk).
+### Microsoft Entra ID Protection
 
-You can use Azure AD Identity Protection and risk-based Conditional Access policies with:
+With Microsoft Entra ID Protection, you can create an additional Conditional Access policy to [require MFA when sign-in risk is medium or high](../../security/office-365-security/zero-trust-identity-device-access-policies-common.md#require-mfa-based-on-sign-in-risk).
+
+You can use Microsoft Entra ID Protection and risk-based Conditional Access policies with:
 
 - Microsoft 365 E5
-- Azure AD Premium P2 licenses
+- Microsoft Entra ID P2 licenses
 
-For more information, see this [overview of Azure AD Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection).
+For more information, see this [overview of Microsoft Entra ID Protection](/azure/active-directory/identity-protection/overview-identity-protection).
 
 ### Legacy per-user MFA (not recommended)
 

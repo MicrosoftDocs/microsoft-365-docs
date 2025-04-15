@@ -1,10 +1,10 @@
 ---
 title: Virtual Appointments with Teams - Integration into Epic EHR
-author: samanro
-ms.author: samanro
-manager: pamgreen
+author: lana-chin
+ms.author: jtremper
+manager: jtremper
 audience: ITPro
-ms.topic: conceptual
+ms.topic: integration
 ms.service: microsoft-365-frontline
 search.appverid: MET150
 searchScope:
@@ -21,13 +21,13 @@ ms.collection:
   - m365solution-scenario
   - m365-frontline
   - highpri
-  - tier2
+  - m365-virtual-appointments 
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.reviewer: ansantam 
+ms.reviewer: beolson 
 description: Learn how to integrate the Teams EHR connector to enable healthcare providers in your organization to conduct virtual appointments with patients or other providers in Teams directly from the Epic EHR system. 
-ms.date: 03/30/2023
+ms.date: 06/26/2024
 ---
 
 # Virtual Appointments with Teams - Integration into Epic EHR
@@ -44,7 +44,7 @@ The communication and collaboration platform of Teams makes it easy for clinicia
 
 This article describes how to set up and configure the Teams EHR connector to integrate with the Epic platform in your healthcare organization. It also gives you an overview of the Teams Virtual Appointments experience from the Epic EHR system.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5d3h4]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=51442f11-3e9f-4699-896a-edad4f54fc3f]
 
 ## Before you begin
 
@@ -58,7 +58,7 @@ Review the following information to get an understanding of the overall integrat
 
 | &nbsp; |Request app access|App enablement|Connector configuration|Epic configuration|Testing|
 |--------|---------|---------|---------|---------|---------|
-| **Duration** | Approximately 12-24 hours| Approximately 24 hours | Approximately 1-3 days | Approximately 1-3 days | &nbsp; |
+| **Duration** | Approximately 7 business days| Approximately 7 business days | Approximately 7 business days | Approximately 7 business days | &nbsp; |
 | **Action**| You [request access to the Teams app](#request-access-to-the-teams-app).  | We create a public and private key certificate and upload them to Epic. | You complete configuration steps in the EHR connector configuration portal.  | You work with your Epic technical specialist to configure FDI records in Epic.| You complete testing in your test environment. |
 | **Outcome**| We authorize your organization for testing. | Epic syncs the public key certificate. | You receive FDI records for Epic configuration. | Configuration completed. Ready to test. | Full validation of flows and decision to move to production. |
 
@@ -80,7 +80,7 @@ Review the [Epic-Microsoft Teams Telehealth Integration Guide](https://galaxy.ep
 - Epic version November 2018 or later.
 - Users have an appropriate Microsoft 365 or Office 365 license that includes Teams meetings.
 - Teams is adopted and used in your healthcare organization.
-- Identified a person in your organization who is a Microsoft 365 global admin with access to the [Teams admin center](https://admin.teams.microsoft.com).
+- Identified a person in your organization who is a Microsoft 365 Global Administrator with access to the [Teams admin center](https://admin.teams.microsoft.com).
 - Your systems meet all [software and browser requirements](/microsoftteams/hardware-requirements-for-the-teams-app) for Teams.
 
 > [!IMPORTANT]
@@ -88,7 +88,7 @@ Review the [Epic-Microsoft Teams Telehealth Integration Guide](https://galaxy.ep
 
 The integration steps are performed by the following people in your organization:
 
-- **Microsoft 365 global admin**: The main person who is responsible for the integration. The admin configures the connector, enables SMS (if needed), and adds the Epic customer analyst who will be approving the configuration.
+- **Microsoft 365 Global Administrator**: The main person who is responsible for the integration. The admin configures the connector, enables SMS (if needed), and adds the Epic customer analyst who will be approving the configuration.
 - **Epic customer analyst**: A person in your organization who has login credentials to Epic. They approve the configuration settings entered by the admin and provide the configuration records to Epic.
 
 The Microsoft 365 admin and Epic customer analyst can be the same person.
@@ -144,7 +144,7 @@ To enable SMS notifications, your Microsoft 365 admin completes the following st
 
 2. Under **Your phone numbers**, select **Generate a new phone number** to generate a phone number for your organization. Doing this starts the process to request and generate a new phone number. This process might take up to 2 minutes to complete.
 
-    After the phone number is generated, it's displayed on the screen. This number will be used to send SMS confirmations and reminders to your patients. The number has been provisioned but isn’t linked to the FHIR base URL yet. You do that in the next step.
+    After the phone number is generated, it's displayed on the screen. This number is used to send SMS confirmations and reminders to your patients. The number has been provisioned but isn’t linked to the FHIR base URL yet. You do that in the next step.
 
     :::image type="content" source="media/ehr-connector-epic-phone-number.png" alt-text="Screenshot showing an example of the phone number that's generated." lightbox="media/ehr-connector-epic-phone-number.png":::
 
@@ -152,7 +152,7 @@ To enable SMS notifications, your Microsoft 365 admin completes the following st
 
 3. Some telephone carriers now [require unverified toll numbers to be verified](/azure/communication-services/concepts/sms/sms-faq#sms-to-us-phone-numbers). This requirement became effective October 1, 2022. Some carriers are following this more strictly than others.
 
-You'll need to [register your generated phone number in this form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR0NW3g8C-tRNlyVpwWkCiS1UOEFCVTRHSFMwRk9BVTg3MVdZQlVCNEI4SS4u). This will ensure none of your SMS messages will be blocked when sent to US phone numbers.
+    You'll need to [register your generated phone number in this form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR0NW3g8C-tRNlyVpwWkCiS1UOEFCVTRHSFMwRk9BVTg3MVdZQlVCNEI4SS4u). This ensures none of your SMS messages will be blocked when sent to US phone numbers.
 
 4. To link the phone number to a FHIR base URL, under **Phone number** in the **SMS configuration** section, select the number. Do this for each FHIR base URL for which you want to enable SMS notifications.
 
@@ -173,7 +173,7 @@ You'll need to [register your generated phone number in this form](https://forms
 
     A public key certificate is required to receive appointment information for sending SMS notifications. The certificate is needed to verify that the incoming information is from a valid source.
 
-    When the connector is used to send SMS reminders, the patient’s phone number is sent by Epic in a HL7v2 payload when appointments are created in Epic. These numbers are stored for each appointment in your organization’s geography and are retained until the appointment takes place. To learn more about how to configure HL7v2 messages, see the [Epic-Microsoft Teams Telehealth Integration Guide](https://galaxy.epic.com/Search/GetFile?Url=1!68!100!100100357).
+    When the connector is used to send SMS reminders, the patient’s phone number is sent by Epic in an HL7v2 payload when appointments are created in Epic. These numbers are stored for each appointment in your organization’s geography and are retained until the appointment takes place. To learn more about how to configure HL7v2 messages, see the [Epic-Microsoft Teams Telehealth Integration Guide](https://galaxy.epic.com/Search/GetFile?Url=1!68!100!100100357).
 
     Choose **Next**.
 
@@ -281,9 +281,9 @@ The [EHR connector Virtual Appointments report](ehr-connector-report.md) in the 
 
 ### Privacy and location of data
 
-Teams integration into EHR systems optimizes the amount of data that's used and stored during integration and virtual appointment flows. The solution follows the overall Teams privacy and data management principles and guidelines outlined in Teams Privacy.
+Teams integration into EHR systems optimizes the amount of data used and stored during integration and virtual appointment flows. The solution follows the overall Teams privacy and data management principles and guidelines outlined in Teams Privacy.
 
-The Teams EHR connector doesn't store or transfer any identifiable personal data or any health records of patients or healthcare providers from the EHR system. The only data that is stored by the EHR connector is the EHR user’s unique ID, which is used during Teams meeting setup.
+The Teams EHR connector doesn't store or transfer any identifiable personal data or any health records of patients or healthcare providers from the EHR system. The only data stored by the EHR connector is the EHR user’s unique ID, which is used during Teams meeting setup.
 
 The EHR user’s unique ID is stored in one of the three geographic regions described in [Where your Microsoft 365 customer data is stored](/microsoft-365/enterprise/o365-data-locations). All chat, recordings, and other data shared in Teams by meeting participants are stored according to existing storage policies. To learn more about the location of data in Teams, see [Location of data in Teams](/microsoftteams/location-of-data-in-teams).
 

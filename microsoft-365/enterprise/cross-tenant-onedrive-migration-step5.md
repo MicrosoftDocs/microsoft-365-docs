@@ -1,14 +1,13 @@
 ---
 title: OneDrive Cross-tenant OneDrive migration Step 5
-ms.author: jhendr
-author: JoanneHendrickson
-manager: serdars
-ms.date: 10/25/2022
+ms.author: heidip
+author: MicrosoftHeidi
+manager: jtremper
+ms.date: 10/13/2023
 recommendations: true
 audience: ITPro
-ms.topic: article
-ms.service: sharepoint-online
-ms.subservice: sharepoint-migration
+ms.topic: how-to
+ms.service: microsoft-365-migration
 ms.localizationpriority: high
 ms.collection:
 - SPMigration
@@ -73,13 +72,13 @@ Users and groups are included in the same file. Depending on whether it's a user
 > [!IMPORTANT]
 > **Do NOT include column headings in your CSV file.**  In the examples below we include them for illustrative purposes only.
 
-**Users**. Enter your values as shown in this example for guests:
+**Users**. Enter your values as shown in this example for Users:
 
 :::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-csv-mapping-users-columns.png" alt-text="format to use for mapping users":::
 
 :::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-csv-mapping-users-example.png" alt-text="example of csv for users":::
 
-**Groups**. Enter your values as shown in this example for guests:
+**Groups**. Enter your values as shown in this example for Groups:
 </br>
 :::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-csv-mapping-groups-columns.png" alt-text="format for csv file for groups":::
 </br>
@@ -105,7 +104,7 @@ Users and groups are included in the same file. Depending on whether it's a user
 To obtain Source Tenant Company ID:
 
 1. Sign in as Admin to your [Azure portal](https://ms.portal.azure.com/)
-2. Select or Search for **Azure Active Directory**.
+2. Select or Search for **Microsoft Entra ID**.
 3. Scroll down on the left-hand panel and select **Properties**.
 4. Locate the **Tenant ID Field**. The required Tenant ID will be in that box.
 

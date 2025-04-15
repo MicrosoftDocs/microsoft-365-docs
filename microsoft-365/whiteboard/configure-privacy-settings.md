@@ -1,16 +1,16 @@
 ---
 title: Configure privacy settings in Microsoft Whiteboard
-ms.author: v-jdeweese
+ms.author: alexfaulkner
 author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: 
 ms.date: 07/05/2022
 audience: admin
-ms.topic: article
+ms.topic: how-to
 ms.custom: 
-ms.service: microsoft-365-enterprise
+ms.service: whiteboard
 search.appverid: MET150
-ms.collection: 
+ms.collection: essentials-privacy
 ms.localizationpriority: medium
 description: Learn about compliance and how to configure privacy settings in Microsoft Whiteboard.
 ---

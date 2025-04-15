@@ -1,14 +1,15 @@
 ---
-title: "Reactivate your subscription"
+title: "Reactivate your subscription in the Microsoft 365 admin center"
 f1.keywords:
 - CSH
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: sgautam, jmueller
+ms.reviewer: emmasheridan, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
 ms.collection: 
 - Tier1
@@ -21,42 +22,54 @@ ms.custom:
 - fwlink 874703
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkMAC
+- GAUpdates
+- campaignIDs-batch1
 search.appverid: MET150 
-description: "Admins can reactivate a subscription when it expires, is disabled, or canceled, or if you canceled in the middle of a subscription term."
-ms.date: 04/07/2021
+description: "Learn how to reactivate a subscription in the Microsoft 365 admin center."
+ms.date: 03/27/2025
 ---
 
-# Reactivate your Microsoft subscription
+# Reactivate your subscription in the Microsoft 365 admin center
 
-You can reactivate your subscription in the admin center if: the subscription expired, was disabled by Microsoft, or if you canceled it in the middle of a subscription term.
+If your subscription expired, or if you canceled it within the cancellation policy window, you can reactivate it in the Microsoft 365 admin center.
   
 ## Before you begin
 
-You must be a Global or Billing admin to reactivate a subscription. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+- [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
+- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a Billing account owner or contributor, or a Billing profile owner or contributor to do the tasks in this article. For information about billing account and billing profile roles, see [Understand your Microsoft business billing account](../manage-billing-accounts.md) and [Manage your Microsoft business billing profiles](../billing-and-payments/manage-billing-profiles.md).
+- If you have a Microsoft Online Services Agreement (MOSA), you must be at least a Billing Administrator to do the tasks in this article. For more information, see [About admin roles in the Microsoft 365 admin center](../../admin/add-users/about-admin-roles.md).
 
-**Not an admin?** Contact your administration to reactivate your subscription.
+> [!NOTE]
+> If you're the person who signed up for the subscription, you're automatically a Billing account owner.
 
 ## Reactivate a subscription
 
-::: moniker range="o365-worldwide"
+You can reactivate a subscription in the Microsoft 365 admin center. However, the steps to reactivate a subscription depend on the type of billing account that you have. [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+**If you have an MCA billing account type:**
 
-::: moniker-end
+If you have an MCA billing account type, after you select **Reactivate this subscription**, we create a new subscription with the same commitment term as the previous subscription. The new subscription starts on the day of reactivation. If you have questions or need help with reactivating your subscription, [contact support](../../admin/get-help-support.md).
 
-::: moniker range="o365-21vianet"
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
+    - If you’re using the **Simplified view**, select **Billing**.
+    - If you’re using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+2. Select the subscription that you want to reactivate.
+3. In the **Billing settings** section, under **Subscription status**, select **Reactivate**.
+4. In the **Reactivate this subscription** pane, select **Reactivate**.
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.
+**If you have an MOSA billing account type:**
 
-::: moniker-end
-
-2. On the **Products** tab, find the subscription that you want to reactivate. Select the three dots (more actions), then select **Reactivate this subscription**.\
-    If you don't see **Reactivate this subscription**, [contact support](../../admin/get-help-support.md).
-3. In the **Reactivate this subscription** pane, select a payment method from the drop-down list, or select **Add payment method**.
-4. Select **Save**.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
+    - If you’re using the **Simplified view**, select **Billing**.
+    - If you’re using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+2. Select the subscription that you want to reactivate.
+3. In the **Subscription and payment settings** section, under **Subscription status**, select **Reactivate subscription**.
+4. In the **Reactivate this subscription** pane, select a payment method from the drop-down list, or select **Add payment method**.
+5. Select **Reactivate**.
 
 ## Related content
 
 [Try or buy a Microsoft 365 for business subscription](../try-or-buy-microsoft-365.md) (article)\
-[Renew Microsoft 365 for business](renew-your-subscription.md) (article)\
-[Cancel your subscription](cancel-your-subscription.md) (article)
+[Manage recurring billing for your subscription in the Microsoft 365 admin center](renew-your-subscription.md) (article)\
+[Cancel your Microsoft business subscription](cancel-your-subscription.md) (article)

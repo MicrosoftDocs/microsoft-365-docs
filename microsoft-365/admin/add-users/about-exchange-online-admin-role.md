@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
-ms.date: 02/18/2020
+ms.date: 06/03/2024
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
@@ -15,6 +15,7 @@ ms.collection:
 - scotvorg
 - M365-subscription-management 
 - Adm_O365
+- must-keep
 ms.custom: 
 - AdminSurgePortfolio
 - admindeeplinkEXCHANGE
@@ -31,10 +32,7 @@ description: "Exchange administrators manage your organization's email and mailb
 
 To help you administer Microsoft 365, you can [assign](assign-admin-roles.md) users permissions to manage your organization's email and mailboxes from the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. You do this by assigning them to the Exchange Administrator role.
   
-> [!TIP]
-> When you assign someone to the Exchange Administrator role, we recommend assigning them to the Service Support Administrator role. This way they can see important information in the Microsoft 365 admin center, such as the health of the Exchange Online service, and change and release notifications.
-
-Here are some of the key tasks users can do when they are assigned to the Exchange Administrator role:
+Here are some of the key tasks users can do when they're assigned to the Exchange Administrator role:
   
 - [Recover deleted items in a user mailbox - Admin Help](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
@@ -42,7 +40,7 @@ Here are some of the key tasks users can do when they are assigned to the Exchan
 
 - Set up mailbox features such as the mailbox sharing policy: how users can share calendar and contacts information with others outside of your organization.
 
-- Set up "[Send as](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)" and "[Send on behalf](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)" delegates for someone's mailbox. For example, an executive may want their assistant to have the ability to send mail on their behalf.
+- Set up "[Send as](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)" and "[Send on behalf](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)" delegates for someone's mailbox. For example, an executive might want their assistant to have the ability to send mail on their behalf.
 
 - [Create a shared mailbox](../email/create-a-shared-mailbox.md) so a group of people can monitor and send email from a common email address.
 
@@ -60,7 +58,7 @@ If you have a large organization, the Exchange admin might want to assign users 
 
 - [About Microsoft 365 admin roles](about-admin-roles.md)
 
-- [About the SharePoint Online admin role](/sharepoint/sharepoint-admin-role)
+- [About the SharePoint admin role](/sharepoint/sharepoint-admin-role)
 
 - [About the Skype for Business admin role](/skypeforbusiness/skype-for-business-online)
 

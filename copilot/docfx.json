@@ -1,0 +1,71 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "_themes/**",
+          "_themes.pdf/**",
+          "**/docfx.json",
+          "_repo.en-us/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices.md",
+          "SECURITY.md"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "**/*.gif",
+          "**/*.jpg",
+          "**/*.png",
+          "**/*.svg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "_themes/**",
+          "_themes.pdf/**",
+          "**/docfx.json",
+          "_repo.en-us/**"
+        ]
+      }
+    ],
+    "overwrite": [],
+    "externalReference": [],
+    "globalMetadata": {
+      "breadcrumb_path": "/microsoft-365-copilot/breadcrumb/toc.json",
+      "feedback_system": "Standard",
+      "permissioned-type": "public",
+      "uhfHeaderId": "MSDocsHeader-M365-IT",
+      "contributors_to_exclude": [ 
+        "rjagiewich",
+        "traya1", 
+        "American-Dipper", 
+        "claydetels19",
+        "jborsecnik",
+        "shdyas", 
+        "garycentric",
+        "Stacyrch140",
+        "alexbuckgit", 
+        "beccarobins",
+        "dstrome",
+        "MarcoLodini",
+        "padmagit77",
+        "aditisrivastava07",
+        "Ruchika-mittal01"
+      ]
+    },
+    "fileMetadata": {},
+    "template": [],
+    "dest": "microsoft-365-copilot"
+  }
+}

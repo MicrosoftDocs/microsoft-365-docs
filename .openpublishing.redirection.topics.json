@@ -1,0 +1,214 @@
+{
+  "redirections": [
+    {
+      "source_path": "microsoft-365/topics/index.md",
+      "redirect_url": "/microsoft-365/topics/topic-experiences-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/manage/manage-self-service-purchases-org-trials-for-msproject.md",
+      "redirect_url": "/ProjectWeb/manage-self-service-purchases-org-trials-for-msproject",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/topics/add-topics-app.md",
+      "redirect_url": "/microsoft-365/topics/changes-coming-to-topics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/topics/adoption-resources.md",
+      "redirect_url": "/microsoft-365/topics/changes-coming-to-topics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/topics/create-a-topic.md",
+      "redirect_url": "/microsoft-365/topics/changes-coming-to-topics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/topics/curate-a-topic-in-multilingual.md",
+      "redirect_url": "/microsoft-365/topics/changes-coming-to-topics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/topics/edit-a-topic.md",
+      "redirect_url": "/microsoft-365/topics/changes-coming-to-topics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/topics/export-topics-powershell.md",
+      "redirect_url": "/microsoft-365/topics/changes-coming-to-topics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/topics/faq-topics.md",
+      "redirect_url": "/microsoft-365/topics/changes-coming-to-topics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/topics/get-started-with-viva-topics.md",
+      "redirect_url": "/microsoft-365/topics/changes-coming-to-topics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/topics/health-metrics.md",
+      "redirect_url": "/microsoft-365/topics/changes-coming-to-topics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/topics/manage-topic-discovery.md",
+      "redirect_url": "/microsoft-365/topics/changes-coming-to-topics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/topics/manage-topic-visibility.md",
+      "redirect_url": "/microsoft-365/topics/changes-coming-to-topics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/topics/manage-topics.md",
+      "redirect_url": "/microsoft-365/topics/changes-coming-to-topics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/topics/merge-topics.md",
+      "redirect_url": "/microsoft-365/topics/changes-coming-to-topics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/topics/plan-topic-experiences.md",
+      "redirect_url": "/microsoft-365/topics/changes-coming-to-topics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/topics/rename-topic-center.md",
+      "redirect_url": "/microsoft-365/topics/changes-coming-to-topics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/topics/restrict-access-to-topics.md",
+      "redirect_url": "/microsoft-365/topics/changes-coming-to-topics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/topics/save-topic-as-draft.md",
+      "redirect_url": "/microsoft-365/topics/changes-coming-to-topics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/topics/scale-topics.md",
+      "redirect_url": "/microsoft-365/topics/changes-coming-to-topics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/topics/search.md",
+      "redirect_url": "/microsoft-365/topics/changes-coming-to-topics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/topics/set-up-topic-experiences.md",
+      "redirect_url": "/microsoft-365/topics/changes-coming-to-topics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/topics/sharepoint-taxonomy.md",
+      "redirect_url": "/microsoft-365/topics/changes-coming-to-topics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/topics/topic-center-overview.md",
+      "redirect_url": "/microsoft-365/topics/changes-coming-to-topics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/topics/topic-experiences-discovery-curation.md",
+      "redirect_url": "/microsoft-365/topics/changes-coming-to-topics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/topics/topic-experiences-get-ready.md",
+      "redirect_url": "/microsoft-365/topics/changes-coming-to-topics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/topics/topic-experiences-knowledge-managers.md",
+      "redirect_url": "/microsoft-365/topics/changes-coming-to-topics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/topics/topic-experiences-overview.md",
+      "redirect_url": "/microsoft-365/topics/changes-coming-to-topics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/topics/topic-experiences-roles.md",
+      "redirect_url": "/microsoft-365/topics/changes-coming-to-topics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/topics/topic-experiences-security-privacy.md",
+      "redirect_url": "/microsoft-365/topics/changes-coming-to-topics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/topics/topic-experiences-security-trimming.md",
+      "redirect_url": "/microsoft-365/topics/changes-coming-to-topics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/topics/topic-experiences-topic-contributors.md",
+      "redirect_url": "/microsoft-365/topics/changes-coming-to-topics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/topics/topic-experiences-user-permissions.md",
+      "redirect_url": "/microsoft-365/topics/changes-coming-to-topics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/topics/topic-experiences-viva-engage.md",
+      "redirect_url": "/microsoft-365/topics/changes-coming-to-topics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/topics/topics-adoption-getstarted.md",
+      "redirect_url": "/microsoft-365/topics/changes-coming-to-topics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/topics/topics-analytics.md",
+      "redirect_url": "/microsoft-365/topics/changes-coming-to-topics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/topics/topics-card-viva-connections.md",
+      "redirect_url": "/microsoft-365/topics/changes-coming-to-topics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/topics/topics-engagement-metrics.md",
+      "redirect_url": "/microsoft-365/topics/changes-coming-to-topics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/topics/topics-language-support.md",
+      "redirect_url": "/microsoft-365/topics/changes-coming-to-topics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/topics/topics-lightweight-management.md",
+      "redirect_url": "/microsoft-365/topics/changes-coming-to-topics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/topics/trial-topics.md",
+      "redirect_url": "/microsoft-365/topics/changes-coming-to-topics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/topics/where-to-find-topics.md",
+      "redirect_url": "/microsoft-365/topics/changes-coming-to-topics",
+      "redirect_document_id": false
+    }
+  ]
+}

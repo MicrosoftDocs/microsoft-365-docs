@@ -4,7 +4,8 @@ ms.author: erikre
 author: erikre
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
+ms.date: 03/29/2024
 description: Step 3. Purchase apps.
 ms.service: o365-solutions
 ms.localizationpriority: high

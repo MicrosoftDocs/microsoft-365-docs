@@ -5,9 +5,9 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
-ms.date: 02/18/2020
+ms.date: 08/10/2023
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
@@ -46,7 +46,7 @@ Your initial email address in Microsoft 365 includes .onmicrosoft.com, like tom@
 
 ::: moniker range="o365-21vianet"
 
-Your initial email address in Office 365 operated by 21Vianet includes partner.onmschina.cn, like tom@fourthcoffee.partner.onmschina.cn. You can change it to a friendlier address like tom@fourthcoffee.cn. You'll need your own domain name, like fourthcoffee.cn first. If you already have one, great! If not, you can learn how to [buy one from a domain registrar](../get-help-with-domains/buy-a-domain-name.md).
+Your initial email address in Microsoft 365 operated by 21Vianet includes partner.onmschina.cn, like tom@fourthcoffee.partner.onmschina.cn. You can change it to a friendlier address like tom@fourthcoffee.cn. You'll need your own domain name, like fourthcoffee.cn first. If you already have one, great! If not, you can learn how to [buy one from a domain registrar](../get-help-with-domains/buy-a-domain-name.md).
 
 ::: moniker-end
 
@@ -54,9 +54,9 @@ When you change your domain's email to come to Microsoft 365, by updating your d
   
 ## Set up business email with a new domain
 
-Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198215).
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/p/?linkid=2198215).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyVVA?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e06209e9-487f-4f5c-be79-d658aca544be]
 
 Buy a new domain name for your email address and set up the email addresses with Microsoft 365.
 
@@ -66,7 +66,7 @@ Buy a new domain name for your email address and set up the email addresses with
 
 ## Set up business email with an existing domain
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxApu?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=8ea6055b-328d-4ce9-a1ac-fa515cd16b7d]
 
 Use a domain name you already own whether you're using it for a website address or an email address at another provider.
 
@@ -80,7 +80,7 @@ You must be a global admin to perform these steps.
 
 ::: moniker range="o365-worldwide"
 
-1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
 ::: moniker-end
 

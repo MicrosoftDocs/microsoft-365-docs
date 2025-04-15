@@ -1,13 +1,13 @@
 ---
 title: SharePoint Cross-tenant SharePoint migration Step 1 (preview)
-ms.author: jhendr
-author: JoanneHendrickson
-manager: serdars
+ms.author: heidip
+author: MicrosoftHeidi
+manager: jtremper
+ms.date: 10/13/2023
 recommendations: true
 audience: ITPro
-ms.topic: article
-ms.service: sharepoint-online
-ms.subservice: sharepoint-migration
+ms.topic: how-to
+ms.service: microsoft-365-migration
 ms.localizationpriority: high
 ms.collection: 
 - SPMigration
@@ -26,20 +26,20 @@ This is Step 1 in a solution designed to complete a **Cross-tenant SharePoint mi
 - **Step 1: [Connect to the source and the target tenants](cross-tenant-SharePoint-migration-step1.md)**
 - Step 2: [Establish trust between the source and the target tenant](cross-tenant-SharePoint-migration-step2.md) 
 - Step 3: [Verify trust has been established](cross-tenant-SharePoint-migration-step3.md) 
-- Step 4: [Pre-create users and groups](cross-tenant-SharePoint-migration-step4.md)  
+- Step 4: [Precreate users and groups](cross-tenant-SharePoint-migration-step4.md)  
 - Step 5: [Prepare identity mapping](cross-tenant-SharePoint-migration-step5.md)
 - Step 6: [Start a Cross-tenant SharePoint migration](cross-tenant-SharePoint-migration-step6.md)
 - Step 7: [Post migration steps](cross-tenant-SharePoint-migration-step7.md)
 
 ## Before you begin
 
-- **Microsoft SharePoint Online Powershell**. Confirm you have the most recent version installed. If not, [Download SharePoint Online Management Shell from Official Microsoft Download Center](/download/details.aspx?id=35588).
-- Be a SharePoint Online admin or Microsoft 365 Global admin on both the source and target tenants
+- **Microsoft SharePoint Powershell**. Confirm you have the most recent version installed. If not, [Download SharePoint Management Shell from Official Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=35588).
+- Be a SharePoint admin or Microsoft 365 Global admin on both the source and target tenants
 
 
 ### Connect to both tenants
 
-1. Sign in to the SharePoint Management Shell as a SharePoint Online admin or Microsoft 365 Global admin.
+1. Sign in to the SharePoint Management Shell as a SharePoint admin or Microsoft 365 Global admin.
 2. Run the following entering the **source** tenant URL: 
 
     ```powershell

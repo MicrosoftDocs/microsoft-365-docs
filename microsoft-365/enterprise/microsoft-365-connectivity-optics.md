@@ -3,15 +3,17 @@ title: "Microsoft 365 Connectivity Optics"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 04/26/2021
+ms.date: 08/02/2024
 audience: Admin
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 ms.collection:
 - scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
+- must-keep
 f1.keywords:
 - CSH
 ms.custom: 
@@ -46,7 +48,7 @@ Each measurement is typically associated with additional information, which may 
 
 | Item | Description |
 | --- | --- |
-| Tenant ID | Unique identifier for the customer's Azure Active Directory tenant associated with the end-user device. |
+| Tenant ID | Unique identifier for the customer's Microsoft Entra tenant associated with the end-user device. |
 | Monitor ID | Identifier for the application generating the request (such as Outlook, OneDrive, etc.), provided by the client application that is performing the measurement. |
 | Request ID | Identifier for the measurement request, specified in the measurement configuration provided by Microsoft. |
 | Remote IP | Masked source IP associated with the request from client to service endpoint, provided by the server that received the measurement request and computed based upon the client source IP address that is visible to Microsoft. IP addresses are masked to a /24 subnet for IPv4 addresses or a /48 subnet for IPv6 addresses to ensure that Microsoft cannot identify individual devices or users. |

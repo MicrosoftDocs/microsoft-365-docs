@@ -15,6 +15,20 @@
       "template_folder": "_themes"
     },
     {
+      "docset_name": "microsoft-365-copilot",
+      "build_source_folder": "copilot",
+      "build_output_subfolder": "microsoft-365-copilot",
+      "locale": "en-us",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    },
+    {
       "docset_name": "Microsoft-365-docs",
       "build_source_folder": "microsoft-365",
       "build_output_subfolder": "Microsoft-365-docs",
@@ -39,7 +53,6 @@
   "branches_to_filter": [],
   "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/microsoft-365-docs",
   "git_repository_branch_open_to_public_contributors": "public",
-  "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
   "resolve_user_profile_using_github": true,
   "dependent_repositories": [
@@ -50,8 +63,20 @@
       "branch_mapping": {}
     },
     {
+      "path_to_root": "_memdocs",
+      "url": "https://github.com/MicrosoftDocs/memdocs-pr/",
+      "branch": "main",
+      "branch_mapping": {}
+    }, 
+    {
       "path_to_root": "_themes.pdf",
       "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
+      "branch": "main",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "microsoft-365/reusable-content",
+      "url": "https://github.com/MicrosoftDocs/reusable-content",
       "branch": "main",
       "branch_mapping": {}
     }
@@ -76,7 +101,34 @@
     }
   },
   "docs_build_engine": {},
+  "skip_source_output_uploading": false,
   "need_generate_pdf_url_template": true,
   "contribution_branch_mappings": {},
-  "need_generate_intellisense": false
+  "need_generate_intellisense": false,
+  "redirection_files": [
+    ".openpublishing.redirection.admin.json",
+    ".openpublishing.redirection.bookings.json",
+    ".openpublishing.redirection.business.json",
+    ".openpublishing.redirection.campaigns.json",
+    ".openpublishing.redirection.commerce.json",
+    ".openpublishing.redirection.compliance.json",
+    ".openpublishing.redirection.contentunderstanding.json",
+    ".openpublishing.redirection.copilot.json",
+    ".openpublishing.redirection.defender.json",
+    ".openpublishing.redirection.enterprise.json",
+    ".openpublishing.redirection.frontline.json",
+    ".openpublishing.redirection.knowledge.json",
+    ".openpublishing.redirection.learning.json",
+    ".openpublishing.redirection.lighthouse.json",
+    ".openpublishing.redirection.loop.json",
+    ".openpublishing.redirection.lti.json",
+    ".openpublishing.redirection.managed-desktop.json",
+    ".openpublishing.redirection.scheduler.json",
+    ".openpublishing.redirection.security.json",
+    ".openpublishing.redirection.solutions.json",
+    ".openpublishing.redirection.syntex.json",
+    ".openpublishing.redirection.test-base.json",
+    ".openpublishing.redirection.topics.json",
+    ".openpublishing.redirection.viva.json"
+  ]
 }

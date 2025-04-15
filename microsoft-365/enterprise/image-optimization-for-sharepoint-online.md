@@ -1,17 +1,19 @@
 ---
-title: "Image optimization for SharePoint Online classic publishing sites"
+title: "Image optimization for SharePoint classic publishing sites"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 9/18/2019
+ms.date: 07/29/2024
 audience: Admin
 ms.topic: troubleshooting
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 ms.collection: 
 - scotvorg
 - Ent_O365
 - SPO_Content
+- must-keep
 f1.keywords:
 - CSH
 ms.custom: Adm_O365
@@ -19,28 +21,28 @@ search.appverid:
 - SPO160
 - MET150
 ms.assetid: c7edb02a-fdab-4f91-9a20-cba01dad28ef
-description: "Learn how to use renditions and sprites to improve image performance on your SharePoint Online classic publishing sites."
+description: "Learn how to use renditions and sprites to improve image performance on your SharePoint classic publishing sites."
 ---
 
-# Image optimization for SharePoint Online classic publishing sites
+# Image optimization for SharePoint classic publishing sites
 
 The loading speed of a webpage depends on the combined size of all the components required to render the page including images, HTML, JavaScript, and CSS. Images are a great way to make your site more appealing, but their size can affect performance. By optimizing your images with compression and resizing, and using sprites, you can offset the effects of large images. Using SharePoint image renditions, you can upload a single large image, and display sections of the image allowing it to be reused rather than reloaded.
 
 >[!NOTE]
->This topic applies to SharePoint Online classic publishing sites, not modern portal sites. For information about image optimization in SharePoint Online modern portal sites, see [Optimize images in SharePoint Online modern portal pages](modern-image-optimization.md).
+>This topic applies to SharePoint classic publishing sites, not modern portal sites. For information about image optimization in SharePoint modern portal sites, see [Optimize images in SharePoint modern portal pages](modern-image-optimization.md).
   
 ## Using sprites to speed up image loading
 
 ![Screenshot of spcommon.](../media/cc5cdee1-8e54-4537-9a8a-8854f4ee849f.png)
 
-An image sprite contains many smaller images. Using CSS you select a part of the composite image to display on a particular part of the page with absolute positioning. Basically, you move a single image around the page instead of loading multiple images, and make a small part of that image visible through a small window where the required part of the sprite image is shown to the end user. SharePoint Online uses sprites to display its various icons in the sprite spcommon.png file.
+An image sprite contains many smaller images. Using CSS you select a part of the composite image to display on a particular part of the page with absolute positioning. Basically, you move a single image around the page instead of loading multiple images, and make a small part of that image visible through a small window where the required part of the sprite image is shown to the end user. SharePoint uses sprites to display its various icons in the sprite spcommon.png file.
 
 What's covered here:
 - Image compression
 - Image optimization
 - SharePoint image renditions
    
-This can increase performance because you download only one image instead of several and then cache and reuse that image. Even if the image doesn't remain cached, by having a single image instead of multiple images, this method reduces the total number of HTTP requests to the server, which will reduce page loading times. This is really a form of image bundling. This is a useful technique if the images aren't changing often, for example, icons, as shown in the SharePoint example provided above. You can see how to use [Web Essentials](https://vswebessentials.com/), a third-party, open-source, community-based project to achieve this easily in Microsoft Visual Studio. For more information, see [Minification and bundling in SharePoint Online](./minification-and-bundling-in-sharepoint-online.md).
+This can increase performance because you download only one image instead of several and then cache and reuse that image. Even if the image doesn't remain cached, by having a single image instead of multiple images, this method reduces the total number of HTTP requests to the server, which will reduce page loading times. This is really a form of image bundling. This is a useful technique if the images aren't changing often, for example, icons, as shown in the SharePoint example provided above. You can see how to use [Web Essentials](https://vswebessentials.com/), a third-party, open-source, community-based project to achieve this easily in Microsoft Visual Studio. For more information, see [Minification and bundling in SharePoint](./minification-and-bundling-in-sharepoint-online.md).
   
 ## Using image compression and optimization to speed up page loading
 
@@ -50,7 +52,7 @@ Once images are the right size, the next step is to optimize the compression of 
   
 ## Speed up page downloads by using SharePoint image renditions
 
-Image renditions are a feature in SharePoint Online that allows you to serve up different versions of images based on pre-defined image dimensions. This is especially important when there's user-generated image content or the image dimensions such as width and height are fixed by the CSS on the site. Even if an image is fixed by CSS, the full resolution image is still loaded. In this case, the file size can be reduced by using image renditions.
+Image renditions are a feature in SharePoint that allows you to serve up different versions of images based on pre-defined image dimensions. This is especially important when there's user-generated image content or the image dimensions such as width and height are fixed by the CSS on the site. Even if an image is fixed by CSS, the full resolution image is still loaded. In this case, the file size can be reduced by using image renditions.
   
 > [!NOTE]
 > Renditions are only available for SharePoint when publishing is enabled. You can enable publishing under Settings \> Site Settings \> Manage site features \> SharePoint Server Publishing. The option will not appear otherwise.

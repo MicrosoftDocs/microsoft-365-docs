@@ -1,14 +1,13 @@
 ---
 title: OneDrive Cross-tenant OneDrive migration FAQs
-ms.author: jhendr
-author: JoanneHendrickson
-manager: serdars
-ms.date: 11/14/2022
+ms.author: heidip
+author: MicrosoftHeidi
+manager: jtremper
+ms.date: 10/13/2023
 recommendations: true
 audience: ITPro
-ms.topic: article
-ms.service: sharepoint-online
-ms.subservice: sharepoint-migration
+ms.topic: faq
+ms.service: microsoft-365-migration
 ms.localizationpriority: high
 ms.collection: 
 - SPMigration
@@ -25,8 +24,8 @@ description: "OneDrive Cross-tenant migration feature FAQs"
 **Question**: Can a OneDrive account have any content in the **target tenant** before migration?</br>
 **Answer:** No. The tool doesn't support Merge functionality with existing content. The user being migrated must not have a pre-existing OneDrive on the target tenant.
 
-**Question**: Can users be pre-created on the target tenant?</br>
-**Answer:** Yes, all Users/Groups that are identified for migration should be pre-created on the target tenant and appropriate licenses assigned prior to staring any migrations. Also:
+**Question**: Can users be precreated on the target tenant?</br>
+**Answer:** Yes, all Users/Groups that are identified for migration should be precreated on the target tenant and appropriate licenses assigned prior to staring any migrations. Also:
 
 - OneDrive site creation should be restricted in the target tenant to prevent users creating OneDrive sites.
 - If a OneDrive site already exists for the user on the target tenant the migration fails.
@@ -34,7 +33,7 @@ description: "OneDrive Cross-tenant migration feature FAQs"
 - OneDrive sites should NOT be created Prior OR during a migration.
 
 **Question**: Can my OneDrive accounts be in Read-only mode prior to starting any cross-tenant migrations?</br>
-**Answer:** No. Before starting any migration, you need to ensure that your Source OneDrive accounts are NOT set to Read-Only, otherwise the migration will fail. 
+**Answer:** No. Before starting any migration, you need to ensure that your Source OneDrive accounts are NOT set to Read-Only, otherwise the migration fails. 
 
 **Question**: Can anyone access the OneDrive while the migration process is running?</br>
 **Answer:** During the migration, the user’s OneDrive is set to Read-only in Source.
@@ -49,14 +48,13 @@ description: "OneDrive Cross-tenant migration feature FAQs"
 **Answer:** We do NOT currently support government environments (GCC & GCC-High) but we plan to support them in the future.
 
 **Question:** What is the current size limit for each OneDrive migration?</br>
-**Answer:**  Each individual OneDrive site/account being migrated must have no more than 2 TB of storage, or 1 million items.
-We hope to increase those limits in the future to ensure larger OneDrive accounts can be migrated via the process. **IMPORTANT** If you attempt to migrate any OneDrive site that exceeds the 2GB quota, the transfer fails.
+**Answer:**  Each individual OneDrive site/account being migrated must have no more than 2 TB of storage, or 1 million items. The 1,000,000 item limit can be any "item", including files (including versions), folders, and list line entries if it's a list or library.  **IMPORTANT:** If you attempt to migrate any OneDrive site that exceeds the 2-TB quota, the transfer fails.
 
 **Question:** How long does the migration take?</br>
-Like most migrations it's difficult to assign an exact length of time for how long a migration might take. So many factors play into this, such as number of users/sites, number of files/folders, when you're running your migrations, etc. However, you'll find our process is substantially faster than existing third party migration tools. Bulk migrations complete faster than using standard migration tools.
+Like most migrations, it's difficult to assign an exact length of time for how long a migration might take. Many things factor into the length of time it takes to migrate, including the number of users/sites, number of files/folders, when you're running your migrations, etc. However, you'll find our process is substantially faster than existing third party migration tools. Bulk migrations complete faster than using standard migration tools.
 
 **Question:** Are OneDrive accounts with Legal hold supported for migrations?</br>
-OneDrive accounts currently under a Hold policy will be blocked from migration. To migrate these OneDrive accounts, remove the hold policy, migrate, then reapply the hold as needed on the target tenant.
+OneDrive accounts currently under a Hold policy are blocked from migration. To migrate these OneDrive accounts, remove the hold policy, migrate, then reapply the hold as needed on the target tenant.
 
 **Question:** Are OneDrive accounts with Customer Key Encryption supported for migration?</br>
 **Answer:**  No. We do NOT support migration if the source tenant has Service encryption with Microsoft Purview Customer Key enabled.
@@ -71,22 +69,22 @@ OneDrive accounts currently under a Hold policy will be blocked from migration. 
 **Answer:** Once the migration is complete, the user is directed to OneDrive on their new tenant (either via Microsoft 365 app launcher or web browser). Users should sign in to OneDrive using their new credentials.
 
 **Question:** What happens to permissions on OneDrive content?</br>
-**Answer:** Users with permissions to OneDrive content will continue to have access to their content upon completion on the new target tenant. if those users/groups were included as part of the Identity Map and mapped accordingly. 
+**Answer:** Users with permissions to OneDrive content will continue to have access to their content upon completion on the new target tenant. If those users/groups were included as part of the Identity Map and mapped accordingly.
 
 **Question:** What do I need to do to sync my content via OneDrive Sync Client? </br>
-**Answer:**  After the migration is complete, the user needs to sign in to their OneDrive Sync client using their new identity and to the new OneDrive location. Once this is done, files and folders begin resyncing to the device. 
+**Answer:**  After the migration is complete, the user needs to sign in to their OneDrive Sync client using their new identity and to the new OneDrive location. Once this step is done, files and folders begin resyncing to the device.
 
 **Question:** What happens to sharing links? </br>
-**Answer:** After completing a user’s OneDrive cross-tenant migration, existing shared links for files that were migrated will automatically redirect to the new target location.
+**Answer:** After a user’s OneDrive cross-tenant migration is completed, existing shared links for files that were migrated will automatically redirect to the new target location.
 
 **Question:** How are shared files handled?</br>
-**Answer:**  When a OneDrive account is migrated, we place a redirect at the old location; anyone clicking on a sharing link to the old location will be redirected to the new one, provided they still have access on the destination. Those redirects remain until the original/source tenant is deprovisioned or can be removed by the admin site-by-site.
+**Answer:**  When a OneDrive account is migrated, we place a redirect at the old location; anyone clicking on a sharing link to the old location is redirected to the new one, provided they still have access on the destination. Those redirects remain until the original/source tenant is deprovisioned or is removed by the admin site-by-site.
 
-**Question:** Will external Shared Files still work?</br>
-**Answer:**  As part of the migration process, Admins must pre-create the appropriate users on the destination tenant, including guest/external users,  and provide the tool with an "Identity Map". The identify map tells us how to adjust file/site ownership and permissions.
+**Question:** Will external Shared Files continue to work?</br>
+**Answer:**  As part of the migration process, Admins must precreate the appropriate users on the destination tenant, including guest/external users,  and provide the tool with an "Identity Map". The identify map tells us how to adjust file/site ownership and permissions.
 
 **Question:** Will the shared file map to new internal users?</br>
-**Answer:** See the question above. The identity map informs how files are shared. The previous answer highlights how to apply this.
+**Answer:** See the question above. The identity map informs how files are shared. 
 
 **Question:** If a file is shared in a Teams chat, will those files still be accessible after migration?</br>
 **Answer:**  See the question above. The identity map informs how files are shared. If a user selects the link, it attempts to redirect to the new location. The file is accessible as long as the user has permissions to access the file on the destination. 

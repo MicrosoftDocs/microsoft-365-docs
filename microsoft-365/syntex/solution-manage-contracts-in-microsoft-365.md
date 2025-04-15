@@ -2,11 +2,11 @@
 title: Manage contracts using a Microsoft 365 solution
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
 audience: admin
-ms.topic: conceptual
-ms.date: 10/28/2022
+ms.topic: solution-overview
+ms.date: 01/08/2025
 ms.service: microsoft-syntex
 ms.collection:
 - m365solution-managecontracts
@@ -25,7 +25,7 @@ This article describes how to create a contracts management solution for your or
 
 </br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWJUR0]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=04c084c9-5419-408a-9e6e-92d01bb3ddee]
 
 </br>
 
@@ -33,13 +33,13 @@ This article describes how to create a contracts management solution for your or
 
 The first step in planning your contract management system is to understand the problem you're trying to solve. For this solution, four key issues need to be addressed:
 
-- **Identify contracts**. Your organization works with many documents, such as invoices, contracts, statements of work, and so on.  Some are digital assets sent through email, and some are paper assets sent through traditional mail. You need a way to identify all customer contracts from all other documents, and then classifying them as such.
+- **Identify contracts**. Your organization works with many documents, such as invoices, contracts, statements of work, and so on. Some are digital assets sent through email, and some are paper assets sent through traditional mail. You need a way to identify all customer contracts from all other documents, and then classifying them as such.
 
-- **Track the history of contract approvals**. Your organization needs a reliable way to find whether contracts have been either approved or rejected, and whether payment has been processed. 
+- **Track the history of contract approvals**. Your organization needs a reliable way to find whether contracts have been either approved or rejected, and whether payment has been processed.
 
 - **Site to manage contract approvals**. Your organization needs to set up a collaborative site in which all required stakeholders can easily review contracts. Stakeholders should be able to review the whole contract if needed, but mostly care about seeing several key fields from each contract (for example, customer name, PO number, and total cost). Stakeholders should be able to easily approve or reject incoming contracts.
 
-- **Route reviewed contracts**. Approved and rejected contracts need to be routed through a specific workflow. Approved contracts need to be routed to a third-party application for payment processing. Rejected contracts need to be routed for additional review.
+- **Route reviewed contracts**. Approved and rejected contracts need to be routed through a specific workflow. Approved contracts need to be routed to a partner application for payment processing. Rejected contracts need to be routed for additional review.
 
 ## Overview of the solution
 
@@ -59,7 +59,7 @@ This contract management solution guidance includes four components of Microsoft
 
   ![Diagram of the solution showing the workflow to upload documents, extract data, notify stakeholders, and approve or reject the contract.](../media/content-understanding/syntex-solution-manage-contracts-overview.png)
 
-1. Documents are uploaded to a SharePoint document library. A Syntex unstructured document processing model has been applied to the document library. It checks each file to see if any match a "contract" content type it's trained to look for. If it finds a match, it classifies the file as a "contract" and updates the content type for the document.
+1. Documents are uploaded to a SharePoint document library. A Microsoft Syntex unstructured document processing model has been applied to the document library. It checks each file to see if any match a "contract" content type it's trained to look for. If it finds a match, it classifies the file as a "contract" and updates the content type for the document.
 
 2. The model also pulls out specific data from each contract file that stakeholders are interested in seeing, such as the *Client*, *Contractor*, and *Fee amount*.
 
@@ -85,11 +85,11 @@ This solution relies on the following functionality, all available as part of a 
 - Microsoft Teams
 - Power Automate
 
-### Learn how to use Syntex
+### Learn how to use Microsoft Syntex
 
-New to Microsoft Syntex? Learn how to use Syntex to manage content using AI.
+New to Microsoft Syntex? Learn how to use Microsoft Syntex to manage content using AI.
 
-The [Introduction to Microsoft Syntex](/training/modules/syntex-intro) learning path will teach how you can use unstructured, freeform, and unstructured document processing models to classify documents, extract text, and label your documents for quick and easy knowledge management.
+The [Introduction to Microsoft Syntex](/training/modules/syntex-intro) learning path teaches how you can use unstructured, freeform, and unstructured document processing models to classify documents, extract text, and label your documents for quick and easy knowledge management.
 
 ## Create the solution
 

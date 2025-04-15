@@ -12,7 +12,7 @@ ms.custom:
 f1.keywords: NOCSH
 ms.collection: 
 - highpri
-ms.date: 09/22/2022
+ms.date: 04/30/2024
 ---
 
 # Microsoft 365 architecture templates and icons
@@ -29,11 +29,21 @@ You can see these icons, symbols, and templates in action in downloadable files 
 Microsoft permits the use of these icons in architectural diagrams, training materials, or documentation. You may copy, distribute, and display the icons only for the permitted use unless granted explicit permission by Microsoft. Microsoft reserves all other rights.
 
 
- > [!div class="button"]
- > [Download SVG and PNG icons](https://go.microsoft.com/fwlink/?linkid=869455)
+> [!div class="button"]
+> [Download SVG icons](https://go.microsoft.com/fwlink/?linkid=869455)
 
- > [!div class="button"]
- > [Download Visio templates and stencils](https://go.microsoft.com/fwlink/?linkid=2056186)
+
+> [!div class="button"]
+> [Download Visio templates and stencils](https://go.microsoft.com/fwlink/?linkid=2056186)
+
+### Use the Visio templates and stencils
+
+Download the template and stencils and save them to your computer in the **My Shapes** folder.
+
+When you do that, you can choose  **File** > **New** in Visio and the templates will be on the **Templates** tab, available for use. The stencils should open with the template. If they do not open automatically, you can open the Shapes window and choose **More Shapes** > **My Shapes** > **Organize My Shapes** to open them.
+
+For more information, see [Import downloaded stencils](https://support.microsoft.com/office/import-downloaded-stencils-74bbdce1-4872-4d5b-af4c-e93fa23f7008).
+
 
 ## Example architecture diagrams
 

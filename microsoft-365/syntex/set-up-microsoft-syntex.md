@@ -1,75 +1,86 @@
 ---
-title: Set up Microsoft Syntex
-ms.author: mikeplum
-author: MikePlumleyMSFT
-ms.reviewer: ssquires
-manager: serdars
+title: Set up pay-as-you-go services for SharePoint
+ms.author: chucked
+author: chuckedmonson
+ms.reviewer: ssquires, kkameth
+manager: jtremper
+ms.date: 01/07/2025
 audience: admin
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.service: microsoft-syntex
 ms.collection: 
 - enabler-strategic
 - m365initiative-syntex
 - Tier1
+- essentials-get-started
 ms.custom: 
 - admindeeplinkMAC
 search.appverid: MET150
-ms.localizationpriority: high
-description: Set up Microsoft Syntex.
+ms.localizationpriority: medium
+description: Learn how to set up pay-as-you-go content services in the Microsoft 365 admin center.
 ---
 
-# Set up Microsoft Syntex
+# Set up pay-as-you-go services for SharePoint
 
-This article covers the initial setup experience for Microsoft Syntex. Before following the steps in this article, configure your [billing and licensing options](syntex-licensing.md) as follows:
+This article describes how to set up pay-as-you-go services for SharePoint content AI features. Before following the steps in this article, you need to [set up pay-as-you-go billing](syntex-azure-billing.md).
 
-- If you are using Microsoft Syntex pay-as-you-go, follow the steps in [Configure Microsoft Syntex for pay-as-you-go billing in Azure](syntex-azure-billing.md).
-- If you are using per-user licensing, follow the steps in [Set up Microsoft Syntex per-user licensing](set-up-content-understanding.md).
-
-## Requirements 
+## Requirements
 
 You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up Microsoft Syntex.
 
-As an admin, you can also make changes to your selected settings anytime after setup, and throughout the content understanding management settings in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
+As an admin, you can also make changes to your selected settings anytime in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
-## To set up Microsoft Syntex
+## Set up pay-as-you-go services
 
-1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>, and then view the **Files and content** section.
+1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>, and then view the **Billing and licenses** section.
 
-1. In the **Files and content** section, select **Use content AI with Microsoft Syntex**.
+2. Under **Billing and licenses**, select **Activate pay-as-you-go services**.
 
-1. On the **Use content AI with Microsoft Syntex** page, select **Set up Microsoft Syntex** to walk through the setup process. <br/>
+3. On the **Activate pay-as-you-go services** page, select **Get started**.
 
-1. On the **Configure AI Builder model creation** page, you can choose if you want to let end users create and train models that use AI Builder and apply them to document libraries. A menu option will be available in the document library ribbon in SharePoint document libraries in which it is enabled.
- 
-     For **Which SharePoint sites should show the option to create structured and freeform document processing models**, you can select:</br>
-      - **All SharePoint sites** to make it available to all SharePoint libraries in your organization.</br>
-      - **Libraries in selected SharePoint sites**, and then select the sites in which you want to make it available or upload a list of up to 50 sites.</br>
-      - **No SharePoint libraries** if you don't want to make it available to any sites (you can change this after setup).
+4. On the **Pay-as-you-go services** page, select the **Settings** tab, and then select **Syntex services**.
 
-   > [!Note]
-   > Removing a site after it has been included does not affect existing models applied to the libraries in that site or the ability to apply unstructured document processing models to a library. 
+5. Select the Microsoft Syntex service that you want to set up.
 
-    If you want to enable model creation in all content center sites, select the **Enable AI Builder model creation in all content center sites** check box under **Libraries in selected SharePoint sites**.
+6. Choose the site options that you want to use, and then select **Save**.
 
-    If you have multiple Power Platform environments configured, you can choose which one you want to use with for document processing. (This option will not appear if you only have one environment.)
+### Setup instructions by service
 
-    For **Power Platform environment**, you can select:
-    - **Use the default environment** to use your default Power Platform environment.
-    - **Use a custom environment** to use a custom environment. Choose the environment that you want to use from the list. ([See the requirements for a custom environment](/microsoft-365/contentunderstanding/set-up-content-understanding#requirements).)
+The following tables provides links to the specific setup instructions for each service.
 
-    Select **Next**.
+#### Document and image services
 
-1. On the **Create a content center** page, you can create a SharePoint content center site where your users can create and manage unstructured document processing models. If you previously created a content center from the SharePoint admin center, that information will display here and you can just select **Next**.
+|Service |Instructions to set up service |
+|:-------|:----------------------|
+|Autofill columns                 | [Set up autofill columns](autofill-setup.md)  |
+|Content assembly                 | [Set up content assembly](content-assembly-setup.md)  |
+|Document translation             | [Set up document translation](translation-setup.md)  |
+|eSignature                       | [Set up SharePoint eSignature](esignature-setup.md)  |
+|Image tagging                    | [Set up image tagging](image-tagging-setup.md)  |
+|Optical character recognition    | [Set up optical character recognition](ocr.md)  |
+|Prebuilt document processing     | [Set up prebuilt document processing](prebuilt-setup.md) |
+|Structured and freeform document processing | [Set up structured and freeform document processing](structured-freeform-setup.md) |
+|Taxonomy tagging                 | [Set up taxonomy tagging](taxonomy-tagging-setup.md)  |
+|Unstructured document processing | [Set up unstructured document processing](unstructured-setup.md) |
 
-    1. For **Content center name**, type the name you want to give your content center site.
-    
-    1. The **Site address** will show the URL for your site, based on what you selected for the site name. If you want to change it, select **Edit**.
+#### Video services
 
-       Select **Next**.
+|Service |Instructions to set up service |
+|:-------|:----------------------|
+|Video translation                | [Set up video translation](https://prod.support.services.microsoft.com/office/2e34ad1b-e213-47ed-a806-5cc0d88751de#bkmk_enabletranslations)  |
 
-1. On the **Review and finish** page, you can look at your selected setting and choose to make changes. If you are satisfied with your selections, select **Activate**.
+#### Storage services
 
-1. On the confirmation page, select **Done**.
+|Service |Instructions to set up service |
+|:-------|:----------------------|
+|Microsoft 365 Archive     | [Set up Microsoft 365 Archive](archive/archive-setup.md)  |
+|Microsoft 365 Backup      | [Set up Microsoft 365 Backup](backup/backup-setup.md)  |
 
-1. You'll be returned to your **Use content AI with Microsoft Syntex** page. From this page, you can select **Manage Microsoft Syntex** to make any changes to your configuration settings. 
+#### Apps
 
+|Service |Instructions to set up service |
+|:-------|:----------------------|
+|SharePoint Embedded     | [Set up SharePoint Enbedded](/sharepoint/dev/embedded/concepts/admin-exp/billing/billing) |
+
+> [!Note]
+> For information about how to set up SharePoint Advanced Management, see [Microsoft Syntex - SharePoint Advanced Management overview](/sharepoint/advanced-management).

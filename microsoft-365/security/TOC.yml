@@ -1,3 +1,4 @@
+items:
 - name: Microsoft 365 security
   href: index.yml
   expanded: true
@@ -11,24 +12,24 @@
     - name: Zero Trust identity and device access configurations
       items:
         - name: Overview
-          href: ./office-365-security/microsoft-365-policies-configurations.md
+          href: ./office-365-security/zero-trust-identity-device-access-policies-overview.md
         - name: Prerequisite work
-          href: ./office-365-security/identity-access-prerequisites.md
+          href: ./office-365-security/zero-trust-identity-device-access-policies-prereq.md
         - name: Common identity and device access policies
-          href: ./office-365-security/identity-access-policies.md
+          href: ./office-365-security/zero-trust-identity-device-access-policies-common.md
         - name: Policies for guest and external users
-          href: ./office-365-security/identity-access-policies-guest-access.md
+          href: ./office-365-security/zero-trust-identity-device-access-policies-guest-access.md
         - name: Recommended Teams access policies
-          href: ./office-365-security/teams-access-policies.md
+          href: ./office-365-security/zero-trust-identity-device-access-policies-teams.md
         - name: Recommended Exchange access policies
-          href: ./office-365-security/secure-email-recommended-policies.md
+          href: ./office-365-security/zero-trust-identity-device-access-policies-exchange.md
         - name: Recommended SharePoint access policies
-          href: ./office-365-security/sharepoint-file-access-policies.md
+          href: ./office-365-security/zero-trust-identity-device-access-policies-sharepoint.md
         - name: Recommended Defender for Cloud Apps policies for SaaS apps
-          href: ./office-365-security/mcas-saas-access-policies.md
+          href: ./office-365-security/zero-trust-identity-device-access-policies-mcas-saas.md
         - name: Continuous access evaluation
-          href: ./office-365-security/microsoft-365-continuous-access-evaluation.md
-    - name: Strengthen your security posture with Microsoft 365 Defender
+          href: ./office-365-security/zero-trust-continuous-access-evaluation-microsoft-365.md
+    - name: Strengthen your security posture with Microsoft Defender XDR
       items:
         - name: Overview
           href: security-posture-solution-overview.md
@@ -40,9 +41,9 @@
           href: strengthen-security-posture-investigate-improve.md
         - name: Phase 4 - Maintain a secure posture
           href: strengthen-security-posture-track-maintain.md
-    - name: Microsoft 365 Defender docs
+    - name: Microsoft Defender XDR docs
       items:
-       - name: Microsoft 365 Defender
+       - name: Microsoft Defender XDR
          href: ./defender/index.yml
        - name: Defender for Office 365
          href: ./office-365-security/index.yml

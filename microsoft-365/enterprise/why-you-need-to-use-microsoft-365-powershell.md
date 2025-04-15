@@ -3,17 +3,22 @@ title: "Why you need to use PowerShell for Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 07/17/2020
+ms.date: 02/12/2025
 audience: ITPro
 ms.topic: overview
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 ms.collection: 
 - Ent_O365
 - scotvorg
+- must-keep
 f1.keywords:
 - CSH
-ms.custom: admindeeplinkEXCHANGE
+ms.custom:
+  - admindeeplinkEXCHANGE
+  - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: "Summary: Understand why you must use PowerShell to manage Microsoft 365, in some cases more efficiently and in other cases by necessity."
 ---
@@ -22,7 +27,11 @@ description: "Summary: Understand why you must use PowerShell to manage Microsof
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-With the Microsoft 365 admin center, you can manage your Microsoft 365 user accounts and licenses. You can also manage your Microsoft 365 services, such as Exchange Online, Teams, and SharePoint Online. If you instead use PowerShell to manage these services, you can and take advantage of the command-line and scripting language environment for speed, automation, and additional capabilities.
+With the Microsoft 365 admin center, you can manage your Microsoft 365 user accounts and licenses. You can also manage your Microsoft 365 services, such as Exchange Online, Teams, and SharePoint. If you instead use PowerShell to manage these services, you can and take advantage of the command-line and scripting language environment for speed, automation, and additional capabilities.
+
+> [!NOTE]
+> The Azure Active Directory module is being replaced by the Microsoft Graph PowerShell SDK. You can use the Microsoft Graph PowerShell SDK to access all Microsoft Graph APIs. For more information, see [Get started with the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started).
+> Some PowerShell for Microsoft 365 commands in this article have been updated to use Microsoft Graph PowerShell.
 
 This article shows how to use PowerShell to manage Microsoft 365 to:
 
@@ -60,7 +69,7 @@ After you learn these basic skills, you don't have to list your mailbox users by
 
 ## PowerShell for Microsoft 365 can reveal information that you can't see with the Microsoft 365 admin center
 
-The Microsoft 365 admin center displays many useful information. But it doesn't display all the possible information that Microsoft 365 stores about users, licenses, mailboxes, and sites. Here's an example for *users and groups* in the Microsoft 365 admin center:
+The Microsoft 365 admin center displays much useful information, but it doesn't display all the possible information that Microsoft 365 stores about users, licenses, mailboxes, and sites. Here's an example for *users and groups* in the Microsoft 365 admin center:
 
 ![Example of the display of users and groups in the Microsoft 365 admin center.](../media/o365-powershell-users-and-groups.png)
 
@@ -78,16 +87,23 @@ This view provides the information that you need in many cases. However, there a
 
 5. Write the user's display name and location on a piece of paper, or copy and paste it into Notepad.
 
-You must repeat this procedure for each user. If you have many users, this process can be tedious. With PowerShell for Microsoft 365, you can display this information for all of your users by using the following command:
+You must repeat this procedure for each user. If you have many users, this process can be tedious. With PowerShell, you can display this information for all of your users by using the following commands.
+
+>[!NOTE]
+> The Azure Active Directory module is being replaced by the Microsoft Graph PowerShell SDK. You can use the Microsoft Graph PowerShell SDK to access all Microsoft Graph APIs. For more information, see [Get started with the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started).
+
+First, use a **Microsoft Entra DC admin** or **Cloud Application Admin** account to [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md).
+
+Getting information for a user requires the **User.ReadBasic.All** permission scope or one of the other permissions listed in the ['Assign license' Graph API reference page](/graph/api/user-assignlicense).
+
+The Organization.Read.All permission scope is required to read the licenses available in the tenant.
+
+[!INCLUDE [Azure AD PowerShell deprecation note](~/../microsoft-365/reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
 
 ```powershell
-Get-AzureADUser | Select DisplayName, UsageLocation
+Connect-MgGraph -Scopes "User.ReadBasic.All"
+Get-MgUser -All -Property DisplayName, UsageLocation | Select DisplayName, UsageLocation
 ```
-
-
->[!Note]
->PowerShell Core doesn't support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets that have *Msol* in their name. You have to run these cmdlets from Windows PowerShell.
->
 
 Here's an example of the results:
 
@@ -102,12 +118,12 @@ Alex Darrow                               US
 David Longmuir                            BR
 ```
 
-The interpretation of this PowerShell command is: Get all of the users in the current Microsoft 365 subscription (**Get-AzureADUser**), but only display the name and location for each user (**Select DisplayName, UsageLocation**).
+The interpretation of this PowerShell command is: Get all of the users in the current Microsoft 365 subscription (**Get-MgUser**), but only display the name and location for each user (**Select DisplayName, UsageLocation**).
 
-Because PowerShell for Microsoft 365 supports a command-shell language, you can further manipulate the information obtained by the **Get-AzureADUser** command. For example, maybe you'd like to sort these users by their location, grouping all the Brazilian users together, all the United States users together, and so on. Here's the command:
+Because PowerShell for Microsoft 365 supports a command-shell language, you can further manipulate the information obtained by the **Get-MgUser** command. For example, maybe you'd like to sort these users by their location, grouping all the Brazilian users together, all the United States users together, and so on. Here's the command:
 
 ```powershell
-Get-AzureADUser | Select DisplayName, UsageLocation | Sort UsageLocation, DisplayName
+Get-MgUser -All -Property DisplayName, UsageLocation | Select DisplayName, UsageLocation | Sort UsageLocation, DisplayName
 ```
 
 Here's an example of the results:
@@ -128,7 +144,7 @@ The interpretation of this PowerShell command is: Get all the users in the curre
 You can also use additional filtering. For example, if you only want to see information about users based in Brazil, use this command:
 
 ```powershell
-Get-AzureADUser | Where {$_.UsageLocation -eq "BR"} | Select DisplayName, UsageLocation
+Get-MgUser -All -Property DisplayName, Country | Where-Object {$_.Country -eq "BR"} | Select DisplayName, Country 
 ```
 
 Here's an example of the results:
@@ -149,19 +165,19 @@ If you have a large domain with tens of thousands of users, trying some of the e
 For example, the following command returns all the user accounts and shows the name and location for each:
 
 ```powershell
-Get-AzureADUser | Select DisplayName, UsageLocation
+Get-MgUser -All | Select DisplayName, UsageLocation
 ```
 
 That works great for smaller domains. But in a large organization, you might want to split that operation into two commands: one command to store the user account information in a variable and another to display the needed information. Here's an example:
 
 ```powershell
-$x = Get-AzureADUser
+$x = Get-MgUser -All -Property DisplayName, UsageLocation
 $x | Select DisplayName, UsageLocation
 ```
 
 The interpretation of this set of PowerShell commands is:
-1. Get all the users in the current Microsoft 365 subscription and store the information in a variable named $x (**$x = Get-AzureADUser**).
-1.  Display the contents of the variable *$x*, but only include the name and location for each user (**$x | Select DisplayName, UsageLocation**).
+1. Get all the users in the current Microsoft 365 subscription and store the information in a variable named $x (**$x = Get-MgUser**).
+1. Display the contents of the variable *$x*, but only include the name and location for each user (**$x | Select DisplayName, UsageLocation**).
 
 ## Microsoft 365 has features that you can only configure with PowerShell for Microsoft 365
 
@@ -191,7 +207,7 @@ Set-CsMeetingConfiguration -AdmitAnonymousUsersByDefault $False -AllowConference
 The interpretation of this PowerShell command is:
 
 1. In the settings for new Skype for Business Online meetings (**Set-CsMeetingConfiguration**), disable allowing anonymous users to gain automatic entrance to meetings (**-AdmitAnonymousUsersByDefault $False**).
-2.  Disable the ability for attendees to record meetings (**-AllowConferenceRecording $False**).
+2. Disable the ability for attendees to record meetings (**-AllowConferenceRecording $False**).
 3. Don't designate all users from your organization as presenters (**-DesignateAsPresenter "None"**).
 
 To restore these default settings (enable the options), run this command:
@@ -206,9 +222,9 @@ There are other similar scenarios as well, which is why administrators should kn
 
 Visual interfaces like the Microsoft 365 admin center are most valuable when you have a single operation to do. For example, if you need to disable one user account, you can use the admin center to quickly locate and clear a checkbox. This may be easier than performing a similar operation in PowerShell.
 
-But if you have to change many things or some selected things within a large set of other things, the Microsoft 365 admin center might not be the best tool. For example, say you have to change the prefix on thousands of phone numbers or remove the specific user *Ken Myer* from all your SharePoint Online sites. How would you do that in the Microsoft 365 admin center?
+But if you have to change many things or some selected things within a large set of other things, the Microsoft 365 admin center might not be the best tool. For example, say you have to change the prefix on thousands of phone numbers or remove the specific user *Ken Myer* from all your SharePoint sites. How would you do that in the Microsoft 365 admin center?
 
-For the last example, say you have several hundred SharePoint Online sites, and you don't know which ones Ken Meyer is a member of. You would have to start at the Microsoft 365 admin center and then perform this procedure for each site:
+For the last example, say you have several hundred SharePoint sites, and you don't know which ones Ken Meyer is a member of. You would have to start at the Microsoft 365 admin center and then perform this procedure for each site:
 
 1. Select the **URL** of the site.
 
@@ -218,7 +234,7 @@ For the last example, say you have several hundred SharePoint Online sites, and 
 
 4. In the **Share** dialog box, select the link that shows all the users who have permissions to the site:
 
-     ![Example of viewing the members of a SharePoint Online site in the SharePoint Online Admin center.](../media/o365-powershell-view-permissions.png)
+     ![Example of viewing the members of a SharePoint site in the SharePoint Admin center.](../media/o365-powershell-view-permissions.png)
 
 5. In the **Shared With** dialog box, select **Advanced**.
 
@@ -233,11 +249,11 @@ Get-SPOSite | ForEach {Remove-SPOUser -Site $_.Url -LoginName "kenmyer@litwarein
 ```
 
 > [!NOTE]
-> This command requires that you install the [SharePoint Online PowerShell module](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
+> This command requires that you install the [SharePoint PowerShell module](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
 The interpretation of this PowerShell command is: Get all of the SharePoint sites in the current Microsoft 365 subscription (**Get-SPOSite**) and for each site remove Ken Meyer from the list of users who can access it (**ForEach {Remove-SPOUser -Site $\_.Url -LoginName "kenmyer\@litwareinc.com"}**).
 
-We tell Microsoft 365 to remove Ken Meyer from every site, including those that he doesn't have access to. So the results will show errors for those sites that he doesn't have access to. We can use an additional condition on this command to remove Ken Meyer only from the sites that have him on their login list. But the errors that are returned cause no harm to the sites themselves. This command might take a few minutes to run against hundreds of sites, rather than hours of working through the Microsoft 365 admin center.
+We tell Microsoft 365 to remove Ken Myer from every site, including those that he doesn't have access to. So the results will show errors for those sites that he doesn't have access to. We can use an additional condition on this command to remove Ken Meyer only from the sites that have him on their sign in list. But the errors that are returned cause no harm to the sites themselves. This command might take a few minutes to run against hundreds of sites, rather than hours of working through the Microsoft 365 admin center.
 
 Here's another bulk operation example. Use this command to add *Bonnie Kearney*, a new SharePoint administrator, to all sites in the organization:
 
@@ -245,7 +261,7 @@ Here's another bulk operation example. Use this command to add *Bonnie Kearney*,
 Get-SPOSite | ForEach {Add-SPOUser -Site $_.Url -LoginName "bkearney@litwareinc.com" -Group "Members"}
 ```
 
-The interpretation of this PowerShell command is: Get all the SharePoint sites in the current Microsoft 365 subscription and for each site allow Bonnie Kearney access by adding her login name to the Members group of the site (**ForEach {Add-SPOUser -Site $\_.Url -LoginName "bkearney\@litwareinc.com" -Group "Members"}**).
+The interpretation of this PowerShell command is: Get all the SharePoint sites in the current Microsoft 365 subscription and for each site allow Bonnie Kearney access by adding her sign in name to the Members group of the site (**ForEach {Add-SPOUser -Site $\_.Url -LoginName "bkearney\@litwareinc.com" -Group "Members"}**).
 
 ## PowerShell for Microsoft 365 is great at filtering data
 
@@ -382,7 +398,8 @@ The alternative is to use a PowerShell script to compile the report for you.
 The following example script is more complicated than the commands you've seen so far in this article. But, it shows the potential of using PowerShell to create information views that are difficult to get otherwise. Here's the script to compile and display the list you need:
 
 ```powershell
-$x = Get-AzureADUser
+Connect-MgGraph -Scopes "User.ReadBasic.All"
+$x = Get-MgUser -All
 
 foreach ($i in $x)
     {
@@ -413,13 +430,13 @@ Molly Dempsey           False        True               False
 
 The interpretation of this PowerShell script is:
 
-1. Get all the users in the current Microsoft 365 subscription and store the information in a variable that's named *$x* (**$x = Get-AzureADUser**).
+1. Get all the users in the current Microsoft 365 subscription and store the information in a variable that's named *$x* (**$x = Get-MgUser**).
 1. Start a loop that runs over all the users in the variable $x (**foreach ($i in $x)**).
 1. Define a variable named *$y* and store the user's mailbox information in it (**$y = Get-Mailbox -Identity $i.UserPrincipalName**).
 1. Add a new property to the user information that's named *IsMailBoxEnabled*. Set it to the value of the IsMailBoxEnabled property of the user's mailbox (**$i | Add-Member -MemberType NoteProperty -Name IsMailboxEnabled -Value $y.IsMailboxEnabled**).
 1. Define a variable named *$y*, and store the user's Skype for Business Online information in it (**$y = Get-CsOnlineUser -Identity $i.UserPrincipalName**).
 1. Add a new property to the user information that's named *EnabledForSfB*. Set it to the value of the Enabled property of the user's Skype for Business Online information (**$i | Add-Member -MemberType NoteProperty -Name EnabledForSfB -Value $y.Enabled**).
-1. Display the list of users, but include only their name, whether they are licensed, and the two new properties that indicate whether their mailbox is enabled and whether they are enabled for Skype for Business Online (**$x | Select DisplayName, IsLicensed, IsMailboxEnabled, EnabledforSfB**).
+1. Display the list of users, but include only their name, whether they're licensed, and the two new properties that indicate whether their mailbox is enabled and whether they're enabled for Skype for Business Online (**$x | Select DisplayName, IsLicensed, IsMailboxEnabled, EnabledforSfB**).
 
 ## See also
 

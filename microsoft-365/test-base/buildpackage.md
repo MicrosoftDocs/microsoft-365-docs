@@ -18,6 +18,8 @@ f1.keywords: NOCSH
 
 # Build a package
 
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
 A package is a .zip file containing your application binary and test scripts, which is the prerequisite to use Test Base. This QuickStart will guide you to build your first package, with which you can perform Out-of-box testing on your application.
 
 - *An **Out-of-Box (OOB)** test performs an install, launch, close, and uninstall of your application. After the install, the launch-close routine is repeated 30 times before a single uninstall is run. The OOB test provides you with standardized telemetry on your package to compare across Windows builds.*
@@ -94,7 +96,7 @@ Please refer to the following examples. You can simply copy them to your files a
         pop-location
 
         if ($installer.exitcode -eq 0) {
-            log("Installation succesful as $($installer.exitcode)")
+            log("Installation successful as $($installer.exitcode)")
         }
         else {
             log("Error: Installation failed as $($installer.exitcode)")
@@ -192,7 +194,7 @@ However, it's best practice to run the test locally to ensure the scripts work p
    4. Run launch script.
 
       ```powershell
-      C:\TestBase\App\scripts\install\job.ps1
+      C:\TestBase\App\scripts\launch\job.ps1
       ```
 
    5. Run close script.

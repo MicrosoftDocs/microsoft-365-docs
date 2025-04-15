@@ -3,15 +3,15 @@ title: "Manage group attendees in Bookings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 04/26/2022
+ms.date: 04/10/2025
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
-description: "Follow these instructions to create your About Us page, including business name, address, phone number, website URL, logo, and business hours in Microsoft Bookings."
+description: "Manage your group attendees in Microsoft. Add or remove customers from a booking."
 ---
 
 # Manage group attendees in Bookings
@@ -29,11 +29,9 @@ Make sure that you set the **Maximum number of attendees** to more than 1 on the
 
 2. Choose your calendar, select the group meeting and choose **Edit**.
 
-:::image type="content" source="../media/group-booking-calendar.png" alt-text="Screenshot: Owner view of group booking calendar":::
-
 3. To add attendees to the group booking, select **Add customer**.
 
-:::image type="content" source="../media/group-booking-add-customer.png" alt-text="Screenshot: Group booking service details page - add a customer":::
+    :::image type="content" source="../media/group-booking-add-customer.png" alt-text="Screenshot: Group booking service details page - add a customer":::
 
 4. To remove attendees, select the user you want to remove from the group booking and select **Remove customer**. Once you remove the attendee, they'll get an email letting them know that they've been removed from this booking.
 

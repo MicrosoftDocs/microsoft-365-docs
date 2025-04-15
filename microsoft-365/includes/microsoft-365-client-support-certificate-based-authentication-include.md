@@ -5,7 +5,7 @@ ms.date: 03/17/2021
 |Clients|Android|iOS|Mac|Windows 10<br>Desktop|Windows 10<br>Modern Apps|
 |:-|:-|:-|:-|:-|:-|
 |ACCESS|N/A|N/A|N/A|✔|N/A|
-|AZURE ACTIVE DIRECTORY ADMIN|N/A|N/A|N/A|✔|N/A|
+|Microsoft Entra ADMIN|N/A|N/A|N/A|✔|N/A|
 |AZURE ADMIN|N/A|N/A|N/A|N/A|N/A|
 |COMPANY PORTAL|✔|✔|✔|N/A|✔|
 |CORTANA|N/A|N/A|N/A|N/A|✔|
@@ -41,4 +41,4 @@ ms.date: 03/17/2021
 |WHITEBOARD|✔|✔|N/A|N/A|✔|
 |WORD|✔|✔|✔|✔|✔|
 |WORKPLACE ANALYTICS|N/A|N/A|N/A|N/A|N/A|
-|YAMMER|✔|✔|Planned|Planned|N/A|
+|Viva Engage|✔|✔|Planned|Planned|N/A|

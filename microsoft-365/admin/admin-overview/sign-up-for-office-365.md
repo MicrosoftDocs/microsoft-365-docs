@@ -1,14 +1,15 @@
 ---
-title: "How to sign up - Admin Help"
+title: "How to sign up for a Microsoft 365 for business plan - Admin Help"
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: zainzaigham, pablom
+ms.reviewer: zainzaigham, socheng
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
 ms.collection:
 - Tier1 
@@ -18,6 +19,7 @@ ms.collection:
 - Adm_O365
 - TRN_SMB
 - Adm_TOC
+- ContentFreshnessFY24
 ms.custom:
 - commerce_signup
 - VSBFY23
@@ -31,96 +33,69 @@ ms.custom:
 search.appverid:
 - MET150
 ROBOTS: NOINDEX
-description: "Understand what you need to know about the latest versions of the Microsoft 365 apps before you go through the sign-up process for Microsoft 365."
-ms.date: 03/17/2021
+description: "Learn how to choose a Microsoft 365 for business plan, sign up, and set up your subscription."
+ms.date: 11/04/2024
 ---
 
-# How to sign up - Admin Help
+# How to sign up for a Microsoft 365 for business plan - Admin Help
 
-Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+When you sign up for a Microsoft 365 for business plan, your team can begin using the latest versions of Word, Excel, PowerPoint, and other apps in Microsoft 365. You can sign up and get started with a Microsoft 365 for business plan in three easy steps.
 
-Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+Check out our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/p/?linkid=2224585).
 
-Sign up for Microsoft 365 for business so that your team can begin using the latest versions of Word, Excel, PowerPoint, and other Microsoft 365 apps.
+For video tutorials, visit [Microsoft 365 small business help](https://go.microsoft.com/fwlink/p/?linkid=2197659) on YouTube.
 
-::: moniker range="o365-21vianet"
+## Step 1. Choose a Microsoft 365 for business plan
 
-If you're in China, Office 365 operated by 21Vianet is designed to meet the needs for secure, reliable, and scalable cloud services in China. This service is powered by technology that Microsoft has licensed to 21Vianet. Microsoft doesn't operate the service itself. 21Vianet operates, provides, and manages delivery of the service. 21Vianet is the largest carrier-neutral Internet data center services provider in China, providing hosting, managed network services, and cloud computing infrastructure services. By licensing Microsoft technologies, 21Vianet operates local Microsoft datacenters to provide you the ability to use Microsoft services while keeping your data within China. 21Vianet also provides your subscription and billing services, and support.
-  
-> [!NOTE]
-> These services are subject to Chinese laws.
-  
-Sign up for Office 365 operated by 21Vianet so that your team can begin using the latest versions of Word, Excel, PowerPoint, and other Office programs.
-  
-Ready to sign up? [Select a Plan](https://products.office.com/zh-cn/business/compare-office-365-for-business-plans).
-  
-::: moniker-end
+Before you start a new subscription, put some thought into the plan you sign up for. Which plan you choose depends on your specific needs. If you don’t know which plan is right for your organization, the [Microsoft 365 plan chooser](https://www.microsoft.com/microsoft-365/business/microsoft-365-plan-chooser?ocid=cmmsz2r87j2&rtc=1) can help you decide. The plan chooser makes recommendations based on your answers to questions like the size of your business, your field of work, the devices you use, and what kind of features, IT support, and security you're looking for.
 
-::: moniker range="o365-worldwide"
-
-## Choose a plan
-
-Before you buy, put some thought into the plan you sign up for. This will help prevent growing pains later.
+If you need extra help with deciding which plan is right for you, sales consultants are available to answer your questions. Go to the [Plans and pricing](https://www.microsoft.com/microsoft-365/business/compare-all-microsoft-365-business-products?tab=2&rtc=1) page and select one of the contact support options listed on the side of the page.
 
 ### Watch: Choose a Microsoft 365 subscription
 
-Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198032).
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/p?linkid=2198032).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
+> [!VIDEO 0d0dbfb5-7a00-4ed5-b21e-c5f5f69bed43]
 
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
+If you found this video helpful, check out the [complete Microsoft 365 training series for small businesses](../../business-video/index.yml).
 
-### Need help with choosing a plan?
+## Step 2. Sign up for a free trial
 
-Deciding on a plan can depend on your specific business needs. The Microsoft 365 plan chooser is designed to help you with this. The chooser will make recommendations based on your answers to questions such as the size of your business, your field of work, the devices you use, and what kind of features, IT support, and security you're looking for. See [Help me find the right plan for my business](https://go.microsoft.com/fwlink/p/?linkid=2224286).
+When you’re ready to sign up, go to the [Plans and pricing](https://www.microsoft.com/microsoft-365/business/compare-all-microsoft-365-business-products?tab=2&rtc=1) page to choose the plan that you want to try. After your one month free trial ends, your paid subscription begins and you’re automatically charged the applicable subscription fee.
 
-Sales consultants are available to answer your questions. Go to [Compare all products](https://products.office.com/compare-all-microsoft-office-products?tab=2) and choose one of the contact support options listed at the left side of the page.
-  
-::: moniker-end
+You can cancel your free trial at any time to stop future charges. To cancel a free trial, [turn off recurring billing](../../commerce/subscriptions/renew-your-subscription.md). You can continue using Microsoft 365 until the end of the free trial. If you don't turn off recurring billing, your payment method is automatically charged after your free trial ends.
 
-::: moniker range="o365-worldwide"
+### Watch: Sign up for Microsoft 365 Business Standard
 
-## Ready to sign up for a free trial or buy a subscription?
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e1fe831f-c1a4-4d81-a475-1d8036a047cb]
 
-Go to [Compare all products](https://products.office.com/compare-all-microsoft-office-products?tab=2) to choose the plan you want to buy and to start the sign-up wizard. 
-  
-If you start with a free trial, you can [buy it later](../../commerce/try-or-buy-microsoft-365.md). All your users and data from the trial will still be there.
-  
-You don't need to cancel your trial. If you don't buy the trial subscription, it automatically expires at the end of the trial period, and all the information is permanently deleted.
+### Information we ask for when you sign up
 
-## Watch: Sign up for Microsoft 365 Business Premium
+When you sign up for a new subscription, we ask you for the following information.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX]
+- **Address and contact information**
 
-::: moniker-end
+  - **Country**&mdash;The country/region where you plan to use the services. You can’t change the country/region later, even during the sign-up process. If you enter the wrong country/region, you must restart the sign-up wizard.
 
-## You'll be asked for the following information when you sign up
-
-- **The address and contact information for your subscription:**
-
-  - **Country** where the services will be used. You **won't** be able to change the country later, even during the sign-up process; you'll have to restart the sign-up wizard.
-
-  - **Email** and **phone number** so we can contact you if needed about your subscription. For example, if you forget your password, we would use this information to send you a temporary one. We also send your billing information to the email address you specify.
+  - **Email** and **phone number**&mdash;We ask for your contact information so we can contact you about your subscription. For example, if you forget your password, we use this information to you reset it. We also send your billing information to this email address.
 
     > [!NOTE]
-    > The email address you enter here is different from your Microsoft 365 email address (your logon name, below). Because this is where we also send your billing information, we recommend you use an e-mail address that's appropriate for receiving business email.
+    > The email address you enter here is different from your Microsoft 365 email address (your sign-in name). Because this is where we also send your billing information, we recommend that you use an e-mail address that's appropriate for receiving business email.
   
-- **A sign-in name (user ID):** This user ID becomes your initial Microsoft 365 email address, just to get you started quickly.
+- **A username**&mdash;The username you provide becomes your initial Microsoft 365 email address, just to get you started quickly, and is the email address that you use to sign in. For example, if your business name is Fourth Coffee, you might choose rob@fourthcoffee.onmicrosoft.com for your username.
 
-    This user ID is the email address that you use to sign in. For example, if your business name is Fourth Coffee, you might choose rob@fourthcoffee.onmicrosoft.com for your user ID.
+    Most people add their own custom domain shortly after they sign up so they can start receiving email at that address. For example, if you have a custom domain named fourthcoffee.com, you can set up your email address as rob@fourthcoffee.com.
 
-    Most people add their own custom domain shortly after they sign up so they can start getting email to it. For example, if you have a custom domain named fourthcoffee.com, you can set up your email address as rob@fourthcoffee.com.
+- **Payment information**&mdash;You can pay for your subscription with a credit card.
 
-- **Payment information:**
+## Step 3. Set up your new subscription
 
-    You can pay for your subscription with a credit card. If the cost reaches a certain amount, you may also have the option to pay by invoice.
+The steps to set up your new subscription vary depending on the Microsoft 365 for business plan that you signed up for. To learn how to set up your new subscription, see one of the following articles:
 
-    > [!IMPORTANT]
-    >  When you sign up, be sure to choose the best payment option for your organization. Changing payment options involves calling billing support.
-
-## Watch: Set up Microsoft 365 Business Premium
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
+- [Set up Microsoft 365 Business Basic](../setup/setup-business-basic.md)
+- [Set up Microsoft 365 Business Standard](../setup/setup-business-standard.md)
+- [Set up Microsoft 365 Business Premium](../../business-premium/m365-business-premium-setup.md)
+- [Set up Microsoft 365 apps for business](../setup/setup-apps-for-business.md)
 
 ## Related content
 

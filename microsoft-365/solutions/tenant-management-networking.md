@@ -3,9 +3,9 @@ title: Step 2. Optimal networking for your Microsoft 365 for enterprise tenants
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/01/2020
+ms.date: 03/24/2025
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: 
@@ -15,6 +15,7 @@ ms.collection:
 - m365solution-tenantmanagement
 - tenant-management
 - m365solution-scenario
+- must-keep
 ms.custom:
 - Ent_Solutions
 description: "Optimize the network access to your Microsoft 365 tenants."
@@ -22,12 +23,12 @@ description: "Optimize the network access to your Microsoft 365 tenants."
 
 # Step 2. Optimal networking for your Microsoft 365 for enterprise tenants
 
-Microsoft 365 for enterprise includes cloud productivity apps such as Teams and Exchange Online, and Microsoft Intune, along with many identity and security services of Microsoft Azure. All of these cloud-based services rely on the security, performance, and reliability of connections from client devices on your on-premises network or any location on the Internet. 
+Microsoft 365 for enterprise includes cloud productivity apps such as Teams and Exchange Online, and Microsoft Intune, along with many identity and security services of Microsoft Azure. All of these cloud-based services rely on the security, performance, and reliability of connections from client devices on your on-premises network or any location on the Internet.
 
 To optimize network access for your tenant, you need to:
 
 - Optimize the path between your on-premises users and the closest location to the Microsoft Global Network.
-- Optimize access to the Microsoft Global Network for your remote users that are using a remote access VPN solution.
+- Optimize access to the Microsoft Global Network for your remote users who are using a remote access VPN solution.
 - Use Network Insights to design the network perimeter for your office locations.
 - Optimize access to specific assets hosted on SharePoint sites with the Office 365 CDN.
 - Configure proxy and network edge devices to bypass processing for Microsoft 365 trusted traffic with the list of endpoints and automate the updating of the list as changes are made.
@@ -63,7 +64,7 @@ If you implement these principles, you get an enterprise network optimized for M
 
 In this illustration, branch offices have their own Internet connection through a software-defined WAN device (SDWAN) device, which sends trusted Microsoft 365 traffic to the regionally closest front door. At the central office, trusted Microsoft 365 traffic bypasses the security or proxy device and intermediate devices are no longer used.
 
-Here's are how the optimized configuration solves the latency issues of a traditional enterprise network:
+Here's how the optimized configuration solves the latency issues of a traditional enterprise network:
 
 - Trusted Microsoft 365 traffic skips the WAN backbone and is sent to local front doors for all offices, decreasing latency.
 - Network hairpins that perform duplicate packet processing are skipped for Microsoft 365 trusted traffic, decreasing latency.
@@ -77,11 +78,11 @@ If your remote workers are using a traditional VPN client to obtain remote acces
 
 ![Network traffic from VPN clients without tunneling.](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-before-tunneling.png)
 
-In this illustration, Microsoft 365 traffic must take an indirect route through your organization, which could be forwarded to a Microsoft Global Network front door far away from the VPN client's physical location. This indirect path adds latency to the network traffic and decreases overall performance. 
+In this illustration, Microsoft 365 traffic must take an indirect route through your organization, which could be forwarded to a Microsoft Global Network front door far away from the VPN client's physical location. This indirect path adds latency to the network traffic and decreases overall performance.
 
 With split tunneling, you can configure your VPN client to exclude specific types of traffic from being sent over the VPN connection to the organization network.
 
-To optimize access to Microsoft 365 cloud resources, configure your split tunneling VPN clients to exclude traffic to the **Optimize** category Microsoft 365 endpoints over the VPN connection. For more information, see [Office 365 endpoint categories](../enterprise/microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories) and [the lists](../enterprise/microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling) of Optimize category endpoints for split tunneling.
+To optimize access to Microsoft 365 cloud resources, configure your split tunneling VPN clients to exclude traffic to the **Optimize** category Microsoft 365 endpoints over the VPN connection. For more information, see [Office 365 endpoint categories](../enterprise/microsoft-365-network-connectivity-principles.md#optimizing-connectivity-to-microsoft-365-services) and [the lists](../enterprise/microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling) of Optimize category endpoints for split tunneling.
 
 Here is the resulting traffic flow for split tunneling, in which most of the traffic to Microsoft 365 cloud apps bypasses the VPN connection.
 
@@ -91,26 +92,9 @@ In this illustration, the VPN client sends and receives crucial Microsoft 365 cl
 
 For more information and guidance, see [Optimize Office 365 connectivity for remote users using VPN split tunneling](../enterprise/microsoft-365-vpn-split-tunnel.md).
 
-## Using Network Insights (preview)
+## Using Network Insights
 
 Network insights are performance metrics collected from your Microsoft 365 tenant that help you design network perimeters for your office locations. Each insight provides live details about the performance characteristics for a specified issue for each geographic location where on-premises users are accessing your tenant.
-
-There are two tenant level network insights that may be shown for the tenant:
-
-- [Exchange sampled connections impacted by connectivity issues](../enterprise/office-365-network-mac-perf-insights.md#exchange-sampled-connections-affected-by-connectivity-issues)
-- [SharePoint sampled connections impacted by connectivity issues](../enterprise/office-365-network-mac-perf-insights.md#sharepoint-sampled-connections-affected-by-connectivity-issues)
-
-These are the specific network insights for each office location:
-
-- [Backhauled network egress](../enterprise/office-365-network-mac-perf-insights.md#backhauled-network-egress)
-- [Better performance detected for customers near you](../enterprise/office-365-network-mac-perf-insights.md#better-performance-detected-for-customers-near-you)
-- [Use of a non-optimal Exchange Online service front door](../enterprise/office-365-network-mac-perf-insights.md#use-of-a-non-optimal-exchange-online-service-front-door)
-- [Use of a non-optimal SharePoint Online service front door](../enterprise/office-365-network-mac-perf-insights.md#use-of-a-non-optimal-sharepoint-online-service-front-door)
-- [Low download speed from SharePoint front door](../enterprise/office-365-network-mac-perf-insights.md#low-download-speed-from-sharepoint-front-door)
-- [China user optimal network egress](../enterprise/office-365-network-mac-perf-insights.md#china-user-optimal-network-egress)
-
-> [!IMPORTANT]
-> Network insights, performance recommendations and assessments in the Microsoft 365 Admin Center is currently in preview status. It is only available for Microsoft 365 tenants that have been enrolled in the feature preview program.
 
 For more information, see [Microsoft 365 Network Insights](../enterprise/office-365-network-mac-perf-insights.md).
 
@@ -118,11 +102,11 @@ For more information, see [Microsoft 365 Network Insights](../enterprise/office-
 
 A cloud-based Content Delivery Network (CDN) allows you to reduce load times, save bandwidth, and speed responsiveness. A CDN improves performance by caching static assets such as graphic or video files closer to the browsers requesting them, which helps to speed up downloads and reduce latency. You can use the built-in Office 365 Content Delivery Network (CDN), included with SharePoint in Microsoft 365 E3 and E5, to host static assets to provide better performance for your SharePoint pages.
 
-The Office 365 CDN is composed of multiple CDNs that allow you to host static assets in multiple locations, or _origins_, and serve them from global high-speed networks. Depending on the kind of content you want to host in the Office 365 CDN, you can add **public** origins, **private** origins, or both.
+The Office 365 CDN is composed of multiple CDNs that allow you to host static assets in multiple locations, or _origins_, and serve them from global high-speed networks. Depending on the kind of content you want to host in the Office 365 CDN, you can add **public** origins.
 
-When deployed and configured, the Office 365 CDN uploads assets from public and private origins and makes them available for fast access to users located across the Internet.
+When deployed and configured, the Office 365 CDN uploads assets from public origins and makes them available for fast access to users located across the Internet.
 
-![Office 365 CDN deployed for users.](../media/O365-CDN/o365-cdn-flow-transparent.svg "Office 365 CDN deployed for users")
+![Office 365 CDN deployed for users.](../media/O365-CDN/o365-cdn-flow-transparent.png "Office 365 CDN deployed for users")
 
 For more information, see [Use the Office 365 CDN with SharePoint Online](../enterprise/use-microsoft-365-cdn-with-spo.md).
 
@@ -155,8 +139,6 @@ For your Microsoft 365 tenant with optimal networking, you have determined:
 Here is an example of an enterprise organization and its tenant with optimal networking.
 
 ![Example of a tenant with optimal networking.](../media/tenant-management-overview/tenant-management-tenant-build-step2.png)
-
-[See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-management-overview/tenant-management-tenant-build-step2.png)
 
 In this illustration, the tenant for this enterprise organization has:
 

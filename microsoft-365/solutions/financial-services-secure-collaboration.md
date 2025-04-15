@@ -3,7 +3,7 @@ title: "Key compliance and security considerations for US banking and capital ma
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 03/17/2020
+ms.date: 11/13/2023
 audience: ITPro
 ms.topic: article
 ms.collection: 
@@ -120,9 +120,9 @@ FINRA's findings and observations for Digital Communications relate directly to 
 
 As employees work, they may move from application to application or between multiple locations and devices. Access to data must be authenticated at each step along the way. The authentication process has to support a strong protocol and multiple factors of authentication (such as one-time SMS pass code, authenticator app, and certificate) to ensure that identities aren't compromised. Enforcing risk-based access policies is critical to protecting financial data and applications from insider threats, inadvertent data leaks, and data exfiltration.
 
-Microsoft 365 provides a secure identity platform in [Azure Active Directory (Azure AD)](/azure/active-directory/), where identities are centrally stored and securely managed. Azure AD, along with a host of related Microsoft 365 security services, forms the basis for providing employees with the access they need to work securely while also protecting the organization from threats.
+Microsoft 365 provides a secure identity platform in [Microsoft Entra ID](/azure/active-directory/), where identities are centrally stored and securely managed. Microsoft Entra ID, along with a host of related Microsoft 365 security services, forms the basis for providing employees with the access they need to work securely while also protecting the organization from threats.
 
-[Azure AD Multi-Factor Authentication (MFA)](/azure/active-directory/fundamentals/concept-fundamentals-mfa-get-started) is built into the platform and provides an additional proof of authentication to help confirm user identity when they access sensitive financial data and applications. Azure MFA requires at least two forms of authentication, such as a password plus a known mobile device. It supports several second-factor authentication options, including:
+[Microsoft Entra multifactor authentication (MFA)](/azure/active-directory/fundamentals/concept-fundamentals-mfa-get-started) is built into the platform and provides an additional proof of authentication to help confirm user identity when they access sensitive financial data and applications. Azure MFA requires at least two forms of authentication, such as a password plus a known mobile device. It supports several second-factor authentication options, including:
 
 - The Microsoft Authenticator app
 - A one-time passcode delivered via SMS
@@ -134,26 +134,28 @@ If password is somehow compromised, a potential hacker would still need the user
 
 Passwords are the weakest link in a security chain. They can be a single point of failure if there's no additional verification. Microsoft supports a broad range of authentication options to fit the needs of financial institutions.
 
-*Passwordless* methods help make MFA more convenient for users. While not all MFA is passwordless, passwordless technologies employ multi-factor authentication. Microsoft, Google, and other industry leaders have developed standards to enable a simpler, stronger authentication experience across the web and mobile devices in a group called Fast IDentity Online (FIDO). The recently developed FIDO2 standard enables users to authenticate easily and securely without requiring a password to eliminate phishing.
+*Passwordless* methods help make MFA more convenient for users. While not all MFA is passwordless, passwordless technologies employ multifactor authentication. Microsoft, Google, and other industry leaders have developed standards to enable a simpler, stronger authentication experience across the web and mobile devices in a group called Fast IDentity Online (FIDO). The recently developed FIDO2 standard enables users to authenticate easily and securely without requiring a password to eliminate phishing.
 
 Microsoft MFA methods that are passwordless include:
-* [Microsoft Authenticator](/azure/active-directory/user-help/user-help-auth-app-overview): For flexibility, convenience, and cost, we recommend using the Microsoft Authenticator mobile app. Microsoft Authenticator supports biometrics, push notifications, and one-time passcodes for any Azure AD-connected app. It's available from the Apple and Android app stores.
+* [Microsoft Authenticator](/azure/active-directory/user-help/user-help-auth-app-overview): For flexibility, convenience, and cost, we recommend using the Microsoft Authenticator mobile app. Microsoft Authenticator supports biometrics, push notifications, and one-time passcodes for any Microsoft Entra connected app. It's available from the Apple and Android app stores.
 *  [Windows Hello](/windows/security/identity-protection/hello-for-business/hello-overview): For a built-in experience on the PC, we recommend using Windows Hello. It uses biometric information (such as face or fingerprint) to sign in automatically.  
 * [FIDO2 Security keys](/windows/security/identity-protection/hello-for-business/microsoft-compatible-security-key) are now available from several Microsoft partners: Yubico, Feitian Technologies, and HID Global in a USB, NFC-enabled badge or biometric key.
 
-[Azure AD Conditional Access](/azure/active-directory/conditional-access/) provides a robust solution for automating access control decisions and enforcing organizational policies to protect company assets. A classic example is when a financial planner wants to access an application that has sensitive customer data. They're automatically required to perform a multi-factor authentication to specifically access that application, and access must be from a corporate-managed device. Azure Conditional Access brings together signals about a user's access request, such as properties about the user, the device, location, and network, and the application that the user is trying to access. It dynamically evaluates attempts to access the application against configured policies. If user or device risk is elevated, or other conditions aren't met, Azure AD can automatically enforce policies such as requiring MFA, requiring a secure password reset, or restricting or blocking access. This helps ensure that sensitive organizational assets are protected in dynamically changing environments.
+[Microsoft Entra Conditional Access](/azure/active-directory/conditional-access/) provides a robust solution for automating access control decisions and enforcing organizational policies to protect company assets. A classic example is when a financial planner wants to access an application that has sensitive customer data. They're automatically required to perform a multifactor authentication to specifically access that application, and access must be from a corporate-managed device. Azure Conditional Access brings together signals about a user's access request, such as properties about the user, the device, location, and network, and the application that the user is trying to access. It dynamically evaluates attempts to access the application against configured policies. If user or device risk is elevated, or other conditions aren't met, Microsoft Entra ID can automatically enforce policies such as requiring MFA, requiring a secure password reset, or restricting or blocking access. This helps ensure that sensitive organizational assets are protected in dynamically changing environments.
  
-Azure AD, and the related Microsoft 365 security services, provide the foundation on which a modern cloud collaboration platform can be rolled out to financial institutions so that access to data and applications can be secured, and regulator compliance obligations can be met. These tools provide the following key capabilities:
+Microsoft Entra ID, and the related Microsoft 365 security services, provide the foundation on which a modern cloud collaboration platform can be rolled out to financial institutions so that access to data and applications can be secured, and regulator compliance obligations can be met. These tools provide the following key capabilities:
 
 * Centrally store and securely manage user identities.
-* Use a strong authentication protocol, including multi-factor authentication, to authenticate users on access requests and provide a consistent and robust authentication experience across all applications.
+* Use a strong authentication protocol, including multifactor authentication, to authenticate users on access requests and provide a consistent and robust authentication experience across all applications.
 * Dynamically validate policies on all access requests, incorporating multiple signals into the policy decision-making process, including identity, user/group membership, application, device, network, location, and real-time risk score.
 * Validate granular policies based on user behavior and file properties and dynamically enforce additional security measures when required.
 * Identify "shadow IT" in the organization, and allow InfoSec teams to sanction or block cloud applications.
 * Monitor and control access to Microsoft and non-Microsoft cloud applications.
 * Proactively protect against email phishing and ransomware attacks.
 
-#### Azure AD Identity Protection
+<a name='azure-ad-identity-protection'></a>
+
+#### Microsoft Entra ID Protection
 
 While Conditional Access protects resources from suspicious requests, Identity Protection goes further by providing ongoing risk detection and remediation of suspicious user accounts. Identity Protection keeps you informed of suspicious user and sign-in behavior in your environment around the clock. Its automatic response proactively prevents compromised identities from being abused.
  
@@ -163,7 +165,7 @@ Identity Protection is a tool that allows organizations to accomplish three key 
 * Investigate risks by using data in the portal.
 * Export risk detection data to third-party utilities for further analysis.
 
-Identity Protection uses knowledge that Microsoft has acquired from its position in organizations with Azure AD, in the consumer space with Microsoft Accounts, and in gaming with Xbox to protect your users. Microsoft analyzes 65 trillion signals per day to identify and protect customers from threats. The signals generated by and fed to Identity Protection can be further fed into tools like Conditional Access to make access decisions. They can also be fed back to a security information and event management (SIEM) tool for further investigation based on your organization's enforced policies.
+Identity Protection uses knowledge that Microsoft has acquired from its position in organizations with Microsoft Entra ID, in the consumer space with Microsoft Accounts, and in gaming with Xbox to protect your users. Microsoft analyzes 65 trillion signals per day to identify and protect customers from threats. The signals generated by and fed to Identity Protection can be further fed into tools like Conditional Access to make access decisions. They can also be fed back to a security information and event management (SIEM) tool for further investigation based on your organization's enforced policies.
 
 Identity Protection helps organizations automatically protect against identity compromise by taking advantage of cloud intelligence powered by advanced detection based on heuristics, user and entity behavior analytics (UEBA), and machine learning (ML) across the Microsoft ecosystem.
 
@@ -194,7 +196,7 @@ Identity Protection helps organizations automatically protect against identity c
 
 ## Defend the fortress
 
-Microsoft recently launched the Microsoft 365 Defender solution, which is designed to secure the modern organization from the evolving threat landscape. By leveraging the Intelligent Security Graph, the Threat Protection solution offers comprehensive, integrated security against multiple attack vectors.
+Microsoft recently launched the Microsoft Defender XDR solution, which is designed to secure the modern organization from the evolving threat landscape. By leveraging the Intelligent Security Graph, the Threat Protection solution offers comprehensive, integrated security against multiple attack vectors.
 
 ### [The Intelligent Security Graph](https://www.microsoft.com/security/business/intelligence) 
 Security services from Microsoft 365 are powered by the Intelligent Security Graph. To combat cyberthreats, the Intelligent Security Graph uses advanced analytics to link threat intelligence and security signals from Microsoft and its partners. Microsoft operates global services at a massive scale, gathering trillions of security signals that power protection layers across the stack. Machine learning models assess this intelligence, and the signal and threat insights are widely shared across our products and services. This enables us to detect and respond to threats quickly and bring actionable alerts and information to customers for remediation. Our machine learning models are continuously trained and updated with new insights, helping us build more-secure products and provide more proactive security.
@@ -261,7 +263,7 @@ Upon request, Microsoft will provide an attestation letter of compliance with SE
 
 In addition, these capabilities also help Microsoft 365 meet storage requirements for [CFTC Rule 1.31(c)-(d)](https://www.cftc.gov/sites/default/files/opa/press99/opa4266-99-attch.htm) from the **U.S. Commodity Futures Trading Commission** and [FINRA Rule Series 4510](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4511) from the **Financial Industry Regulatory Authority.** Collectively, these rules represent the most-prescriptive guidance globally for financial institutions to retain records.
 
-Additional details about how Microsoft 365 complies with SEC rule 17a-4 and other regulations is available with the [Office 365 - Cohasset Assessment - SEC Rule 17a-4(f) - Immutable Storage for SharePoint, OneDrive, Exchange, Teams, and Yammer (2022)](https://servicetrust.microsoft.com/DocumentPage/f028b699-8e39-451e-8af4-e8a66426068b) download document.
+Additional details about how Microsoft 365 complies with SEC rule 17a-4 and other regulations is available with the [Office 365 - Cohasset Assessment - SEC Rule 17a-4(f) - Immutable Storage for SharePoint, OneDrive, Exchange, Teams, and Viva Engage (2022)](https://servicetrust.microsoft.com/DocumentPage/f028b699-8e39-451e-8af4-e8a66426068b) download document.
 
 ## Establish ethical walls with information barriers
 
@@ -306,7 +308,7 @@ Financial institutions are typically required to establish and maintain a superv
  
 ### Communication compliance
 
-[Microsoft Purview Communication Compliance](/microsoft-365/compliance/communication-compliance) is a compliance solution that helps minimize communication risks by helping you detect, investigate, and act on inappropriate messages in your organization. Pre-defined and custom policies allow you to scan internal and external communications for policy matches so they can be examined by designated reviewers. Reviewers can investigate scanned email, Microsoft Teams, Yammer, or third-party communications in your organization and take appropriate actions to make sure they're compliant with your organization's message standards.
+[Microsoft Purview Communication Compliance](/microsoft-365/compliance/communication-compliance) is a compliance solution that helps minimize communication risks by helping you detect, investigate, and act on inappropriate messages in your organization. Pre-defined and custom policies allow you to scan internal and external communications for policy matches so they can be examined by designated reviewers. Reviewers can investigate scanned email, Microsoft Teams, Viva Engage, or third-party communications in your organization and take appropriate actions to make sure they're compliant with your organization's message standards.
   
 Communication compliance provides reports that enable policy review activities to be audited based on the policy and the reviewer. Reports are available to validate that policies are working as defined by an organization's written policies. They can also be used to identify communications that require review and those that aren't compliant with corporate policy. Finally, all activities related to configuring policies and reviewing communications are audited in the Office 365 unified audit log. As a result, communication compliance also helps financial institutions to comply with FINRA Rule 3120.
 

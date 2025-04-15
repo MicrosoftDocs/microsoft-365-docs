@@ -1,22 +1,24 @@
 ---
-title: "Add staff to Bookings"
+title: "Add team members to Bookings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 06/18/2020
+ms.date: 04/10/2025
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: bookings
 ms.localizationpriority: medium
-ms.collection: 
-- Tier1
+ms.collection:
 - scotvorg
+- essentials-manage
 description: "Use this page to create your staff list and to manage staff member details such as name, phone number, and email address."
 ---
 
-# Add staff to Bookings
+# Add team members to Bookings
 
-The Staff page in Bookings is where you create your staffing list and manage staff member details such as name, phone number, and email address. You can also set working hours for each staff member from here.
+The Staff page in Bookings is where you create your staff list and manage staff member details such as name, phone number, and email address. You can also set working hours for each staff member from here. Note, a staff member is a team member.
+
+This article covers the key steps required to add staff members to a shared booking page.
 
 ## Before you begin
 
@@ -24,48 +26,40 @@ Although Bookings is a feature of Microsoft 365, not all of your staff members a
 
 ## Watch: Add your staff to Bookings
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuVka]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=4e73854b-cf44-4121-8e3a-59f4fe51080d]
 
 ## Steps
 
-1. Choose your calendar from the homepage.
+1. From the Bookings homepage, navigate to the Shared Bookings section, and select the booking page you wish to add team members to.
 
-2. Go to staff option in left pane and select **Add new staff**.
+2. Go to staff option in left pane and select **Staff**, and then **Add new staff**.
 
-3. When adding staff from within your organization, type their name in the **Add people** field and select them when they appear in the drop-down menu. The other fields will automatically populate.
-
-    Once a staff member is added, you can edit the name that appears on all Bookings communications by selecting the **x** next to their name and editing the **Add people** field. This can be useful if you would like staff members to have a specific title or name displayed for customers, such as listing Adele Vance as “Dr. Vance, MD.”
-
-4. To add staff from outside of your organization, manually fill in their email and other information.
+3. When adding staff from within your organization, type their name in the search field and select them when they appear in the drop-down menu. The other fields automatically populate.
 
     > [!NOTE]
-    > Staff from outside your tenant will not be able to share free/busy information with Bookings.
+    > To add staff from outside of your organization, manually fill in their email and other information. Staff from outside your tenant will not be able to share free/busy information with Bookings.
 
-5. For each staff member, select a role: Team member, Scheduler, Viewer, or Guest.
-    - **Team member** can manage bookings on their own calendar and their availability in the booking mailbox. When adding or editing a booking in their calendar, they'll be assigned as staff.
-    - **Scheduler** can manage bookings on the calendar and customer details. They have read-only access to settings, staff, and services.
-    - **Viewer** can see all the bookings on the calendar, but they can’t modify or delete them. They have read-only access to settings.
-    - **Guest** can be assigned to bookings, but they can’t open the booking mailbox.
+4. For each staff member, select a role: Team member, Scheduler, Viewer, or Guest. To learn more about staff roles, see [Understanding staff roles](staff-roles.md).
 
-6. Select **Notify all staff via email when a booking assigned to them is created or changed** to enable staff emails. The following is an example email:
+5. Select **Notify all staff via email when a booking assigned to them is created or changed** to enable staff emails. The following email shows an example:
 
     :::image type="content" source="media/bookings-notify-all-email.jpg" alt-text="A notification email from Bookings.":::
 
-7. Select **Events on Microsoft 365 calendar affect availability** if you want the free/busy information from staff members’ calendars to impact availability for bookings services through Bookings.
+6. Select **Events on Microsoft 365 calendar affect availability** if you want the free/busy information from staff members’ calendars to impact availability for booking services through Bookings.
 
-    For example, if a staff member has a team meeting or a personal appointment scheduled for 3pm on a Wednesday, Bookings will show that staff member as unavailable to be booked in that time slot. That time will appear as busy or tentative in the Bookings calendar view, as shown in the below example.
+    For example, if a staff member has a team meeting or a personal appointment scheduled for 3pm on a Wednesday, Bookings shows that staff member as unavailable to be booked in that time slot. That time appears as busy or tentative in the Bookings Page view, as shown in the image below.
 
-    :::image type="content" source="media/bookings-busy-tentative-view-2.png" alt-text="A view of a Bookings calendar.":::
+    :::image type="content" source="media/bookings-busy-tentative-view-2.png" alt-text="A view of a Bookings Page." lightbox="media/bookings-busy-tentative-view-2.png":::
 
-> [!IMPORTANT]
-> We highly recommend leaving this setting on (it is turned on by default) to avoid double-bookings and to optimize the availability of your staff members.
+    > [!IMPORTANT]
+    > This setting is turned on by default. We highly recommend leaving this setting on to avoid double-bookings and to optimize the availability of your staff members.
 
-8. Select **Use business hours** to set all bookable times for your staff members to be only within the business hours that you set in the **Business hours** section on the Business Information page.
+7. Select **Use business hours** to set all bookable times for your staff members to be only within the business hours that you set in the **Business hours** section on the Business Information page. To learn more about configuring staff availability, see [Configure staff availability in Microsoft Bookings](staff-availability.md).
 
     By deselecting this box, staff can be given custom hours that further limit when they can be booked. This is helpful for scenarios where a staff member may only be on site Tuesdays and Wednesdays, or they dedicate their mornings for one type of appointments, and their afternoons for other types.
 
     > [!NOTE]
-    > Bookings supports up to 100 staff members in a Bookings Calendar.
+    > Bookings supports up to 100 staff members in a Bookings Page.
 
 ## Make a Bookings user a super user without adding them as Staff in Bookings
 
@@ -81,9 +75,9 @@ You may want to add a person to your staff list in Bookings without making them 
     ```powershell
     Add-MailboxPermission -Identity <bookingmailbox@emailaddress> -User <adminusers@emailaddress> -AccessRights FullAccess -Deny:$false
     ```
-    
+
     By default, the mailbox gets automatically mapped to Outlook. If you do not want the booking mailbox to appear in the user's Outlook, assign full access with the following commands:
-    
+
      ```powershell 
     Add-MailboxPermission -Identity <bookingmailbox@emailaddress> -User <adminusers@emailaddress> -AccessRights FullAccess -Deny:$false -AutoMapping:$false
     ```
@@ -106,7 +100,7 @@ Here's an example PowerShell command to add Allie Bellew to the Contoso daycare 
       ```powershell
     Add-MailboxPermission -Identity "daycare@contoso.com" -User "Allie Bellew" -AccessRights FullAccess -AutoMapping:$false -InheritanceType All
     ```
-     
+
 2. Then run this command:
 
     ```powershell
