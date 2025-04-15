@@ -1,13 +1,13 @@
 ---
 title: "Create a group in the admin center"
 ms.reviewer: rahulnayak
-ms.date: 02/18/2020
+ms.date: 06/11/2024
 f1.keywords: CSH
-ms.author: mikeplum
-author: MikePlumleyMSFT
-manager: serdars
+author: DaniEASmith
+ms.author: danismith
+manager: jtremper
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
@@ -38,11 +38,9 @@ While users can create a Microsoft 365 group from Outlook or other apps, as an a
 
 ## Create a Microsoft 365 group
 
-1. In the admin center, expand **Groups**, and then click <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groups**</a>.
+1. In the admin center, expand **Teams & groups**, and then select **[Active teams & groups](https://go.microsoft.com/fwlink/p/?linkid=2052855)**.
 
-2. Select **Add a group**.
-  
-3. On the **Choose a group type** page, select **Microsoft 365**, and select **Next**.
+1. Select **Add Microsoft 365 group**.
 
 4. On the **Basics** page, type a name for the group, and, optionally, a description. Select **Next**.
 
@@ -64,7 +62,7 @@ Users can [add themselves or request approval](https://support.microsoft.com/off
 
 1. In the admin center, refresh the page so your new group appears, and then select the name of the group that you want to add members to.
     
-2. On the **Members** tab, select **View all and manage members**.
+1. On the **Membership** tab, select **Members**.
 
 3. Select **Add members**.
     

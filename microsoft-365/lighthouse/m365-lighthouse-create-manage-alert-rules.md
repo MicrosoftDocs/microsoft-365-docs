@@ -4,10 +4,10 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: algreer
-ms.date: 06/30/2023
+ms.reviewer: prpath
+ms.date: 08/08/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
@@ -24,49 +24,52 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Create and manage alert rules in Microsoft 365 Lighthouse
 
-Alert rules allow you to configure high priority alerts from various data sources, such as Risky Users, Microsoft Defender for Business, Microsoft Defender Antivirus, Device Compliance, and more. Lighthouse supports the creation of six alert types:
+Alert rules allow you to configure high-priority alerts from the following services: Microsoft Defender for Business (MDB), Microsoft Defender Antivirus, and Microsoft Entra ID.
 
-- Non-compliant
-- Device without antivirus protection
-- Variance detection
-- Risky user
-- Security incident
-- Active threat on device
+Lighthouse provides a default set of alert rules based on best practices and recommendations. You can use these alert rules as is or modify them according to your preferences and needs. You can also create custom alert rules for more control and flexibility. 
+
+For example, you can create an alert rule in Lighthouse to alert you when an active threat is found on a device. Lighthouse checks the underlying Microsoft Defender for Business service for threats and, if an active threat is found, displays an alert on the **Alerts** page in Lighthouse. Lighthouse also sends an alert notification via email, if configured.
+
+For more information about the different types of alerts you can create, see [Overview of the Alerts page in Microsoft 365 Lighthouse](m365-lighthouse-alerts-overview.md).
 
 ## Before you begin
 
-You must be a Global Administrator to create and manage alert rules.
+You must hold the Administrator role in Lighthouse to create and manage alert rules.
 
-## Create a new alert rule
+## Create an alert rule
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Alerts**.
-2. On the **Alerts** page, select **Alerts rules** tab.
-3. Select **Create alert rule**. The alert rules wizard opens.
-4. From the **Set up the basics** page, configure the following basic information:
-    1. Name of the alert
-    2. Alert type
-    3. Description of the alert
+> [!NOTE]
+> Alerts created in Lighthouse do not correlate to alerts created in the underlying service portals. For example, if you create a Microsoft Defender for Business alert in Lighthouse, the same alert is not created in the Microsoft Defender portal.
+
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Alerts**.
+2. On the **Alerts** page, select the **Alert rules** tab.
+3. Select **Create alert rule**.
+4. On the **Set up the basics** page, provide the following information:
+    - Name of the alert rule
+    - Alert type
+    - (Optional) Description of the alert rule
 5. Select **Next**.
-6. From the **Settings** page, configure alert settings. The number of settings vary based on the alert type you choose.
+6. On the **Settings** page, configure the alert settings. The settings vary based on the alert type you selected on the first page.
 7. Select **Next**.
-8. From the **Tenants** page, select which tenants to monitor.
-9. From the **Recipients** page, select who should receive email notification when this alert is triggered. You can send notifications to users, security groups, or ticketing system.
-10. Review the information and then select **Create alert rule**.
+8. On the **Tenants** page, select which tenants and tags to monitor.
+9. On the **Recipients** page, select who should receive an email notification when the alert is triggered. You can send notifications to users, security groups, or ticketing systems.
+10. Select **Next**.
+11. Review the information, and then select **Save** to create the alert rule.
 
 ## Edit an existing alert rule
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Alerts**.
-2. On the **Alerts** page, select **Alerts rules** tab.
-3. From the list, select an alert rule you want to edit.
-4. Select **Edit alert rule**. The alert rules wizard opens.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Alerts**.
+2. On the **Alerts** page, select the **Alert rules** tab.
+3. From the list, select an alert rule to edit.
+4. Select **Edit alert rule**.
 5. Step through each page and edit any settings as needed.
-6. Review your changes and then select **Edit alert rule**.
+6. Review your changes, and then select **Save**.
 
 ## Delete an alert rule
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Alerts**.
-2. On the **Alerts** page, select **Alerts rules** tab.
-3. From the list, select an alert rule you want to delete.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Alerts**.
+2. On the **Alerts** page, select the **Alert rules** tab.
+3. From the list, select an alert rule to delete.
 4. Select **Delete**.
 5. In the confirmation window, select **Delete**.
 

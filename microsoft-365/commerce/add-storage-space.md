@@ -5,10 +5,11 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, ramagane
+ms.reviewer: emmasheridan, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
 ms.collection:
 - Tier1
@@ -17,16 +18,18 @@ ms.collection:
 - Adm_O365
 - SPO_Content
 ms.custom:
-- commerce_purchase
+- commerce_subscriptions
 - MAX_CampaignID
 - okr_SMB
 - AdminSurgePortfolio
 - business_assist
 - AdminTemplateSet
+- admindeeplinkMAC
 - admindeeplinkSPO
+- GAUpdates
 search.appverid: MET150
 description: "Learn how to add extra SharePoint file storage in your Microsoft 365 subscription."
-ms.date: 08/28/2023
+ms.date: 03/27/2025
 ---
 
 # Add more SharePoint storage to your subscription
@@ -42,23 +45,23 @@ If you start to run out of storage for your SharePoint sites, you can use the Of
 
 ## Before you begin
 
-- [Find out what type of billing account you have.](manage-billing-accounts.md#view-my-billing-accounts).
-- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a billing account owner or contributor, or a billing profile owner or contributor to do the tasks in this article. For information about billing account and billing profile roles, see [Understand your Microsoft business billing account](manage-billing-accounts.md) and [Understand your Microsoft business billing profile](billing-and-payments/manage-billing-profiles.md).
-- If you have a Microsoft Online Subscription Agreement (MOSA), you must be a global or billing admin to do the tasks in this article. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).
+- [Find out what type of billing account you have](manage-billing-accounts.md#view-my-billing-accounts).
+- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a Billing account owner or contributor, or a Billing profile owner or contributor to do the tasks described in this article. For information about billing account and billing profile roles, see [Understand your Microsoft business billing account](manage-billing-accounts.md) and [Manage your Microsoft business billing profiles](billing-and-payments/manage-billing-profiles.md).
+- If you have a Microsoft Online Subscription Agreement (MOSA), you must be at least a Billing Administrator to do the tasks described in this article. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).
 
 > [!NOTE]
-> If you're the person who signed up for the subscription, you're automatically a billing account owner or global admin.
+> If you're the person who signed up for the subscription, you're automatically a Billing account owner.
 
 ## View available storage
 
-1. In the [SharePoint admin center](https://go.microsoft.com/fwlink/p/?linkid=2185219), go to <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a>, and sign in with an account that has [admin permissions](/sharepoint/sharepoint-admin-role) for your organization.
+In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2185219" target="_blank">SharePoint admin center</a>, go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2185220" target="_blank">Active sites</a>, and sign in with an account that has [admin permissions](/sharepoint/sharepoint-admin-role) for your organization.
 
-2. The upper right side of the page shows the amount of storage used across all sites, and the total storage for your subscription. If your organization has configured Multi-Geo in Microsoft 365, the bar also shows the amount of storage used across all geo locations.
+The upper right side of the page shows the amount of storage used across all sites, and the total storage for your subscription. If your organization has configured Multi-Geo in Microsoft 365, the bar also shows the amount of storage used across all geo locations.
 
-   > [!NOTE]
-   > The storage used doesn't include changes made within the last 24-48 hours.
+> [!NOTE]
+> The storage used doesn't include changes made within the last 24-48 hours. SharePoint storage is calculated in binary Gigabytes (GB), where 1 GB = 2<sup>30</sup> bytes.
 
-After you determine how much storage you're using, you can add or remove storage space for your subscription. To find out how much it costs to add storage space, follow the steps in this article, and review the pricing information before you buy more.
+After you determine how much storage you're using, you can add or remove storage space for your subscription. To find out how much it costs to add storage space, follow the steps in this article and review the pricing information before you buy more.
   
 For information about setting site collection storage limits, see [Manage site collection storage limits](/sharepoint/manage-site-collection-storage-limits).
   
@@ -70,13 +73,13 @@ You can buy the Office 365 Extra File Storage add-on in the Microsoft 365 admin 
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center.</a>
     - If you’re using the **Simplified view**, select **Billing**, then select **Add more products**.
-    - If you’re using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
-2. On the **Purchase services** page, under **View by category**, select **Office 365**.
-3. Find **Office 365 Extra File Storage**, then select **Details**.
-4. Enter the number of gigabytes of storage that you want, select a subscription length and billing frequency, then select **Buy**.
+    - If you’re using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page. For some customers, the page is named **Marketplace**.
+2. Under **View by category**, select **Office 365**.
+3. Find **Office 365 Extra File Storage**, and then select **Details**.
+4. Enter the number of gigabytes of storage that you want; select a subscription length and billing frequency; and then select **Buy**.
 5. In the **Checkout** pane, choose the billing profile that you want to use, or add a new one.
-6. The **Product name** section lists the cost, subscription term, and the renewal date for the subscription. To match the renewal date with another subscription paid by the billing profile, select **Select a different renewal date**.
-7. Review your order, then select **Place order**.
+   The **Product name** section lists the cost, subscription term, and the renewal date for the subscription. To match the renewal date with another subscription paid by the billing profile, select **Select a different renewal date**.
+6. Review your order, and then select **Place order**.
 
 **If you have an MOSA billing account type:**
 
@@ -85,9 +88,9 @@ You can buy the Office 365 Extra File Storage add-on in the Microsoft 365 admin 
     - If you’re using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. Select the subscription that you want to buy an add-on for.
 3. On the subscription details page, in the **Add-ons** section, select **Find more add-ons in Purchase services**.
-4. Find the Office 365 Extra File Storage add-on, then select **Details**.
-5. From the drop-down list, select the subscription to connect with the add-on, then select **Connect to subscription**.
-6. On the **Checkout** page, enter the quantity that you want to buy, then select **Place order**.
+4. Find the Office 365 Extra File Storage add-on, and then select **Details**.
+5. From the drop-down list; select the subscription to connect with the add-on; and then select **Connect to subscription**.
+6. On the **Checkout** page, enter the quantity that you want to buy and then select **Place order**.
 
 ## Increase or decrease your extra file storage
 

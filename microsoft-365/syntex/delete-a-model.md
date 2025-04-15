@@ -1,33 +1,33 @@
 ---
-title: Delete a model in Microsoft Syntex
+title: Delete a document processing model in SharePoint
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 audience: admin
 ms.reviewer: ssquires
-ms.date: 06/06/2023
-ms.topic: conceptual
+ms.date: 01/10/2025
+ms.topic: how-to
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to delete a model in Microsoft Syntex.
+description: Learn how to delete a document processing model in SharePoint.
 ---
 
-# Delete a model in Microsoft Syntex
+# Delete a document processing model in SharePoint
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
-At some point, you might want to delete a Syntex model if it's no longer being used, if it contains inaccurate or outdated information, or if it's taking up too much storage space.
+You can delete a document processing model if it's no longer in use, contains inaccurate or outdated information, or is taking up too much storage space.
 
 > [!NOTE]
-> Deleting a model doesn't delete the associated content type. 
+> Deleting a model doesn't delete the associated content type.
 
 ## Delete a model from the model home page
 
-This is the easiest method to use to delete a model. It deletes the model and automatically removes it from all of the document libraries where it has been applied.
+This procedure is the easiest method to use to delete a model. It deletes the model and automatically removes it from all of the document libraries where it's applied.
 
 1. On the home page of the model, select **Model settings**.
 
@@ -46,12 +46,12 @@ This is the easiest method to use to delete a model. It deletes the model and au
 
 ## Delete a model from the Models library
 
-You can also delete a model from the **Models** library. However, before you delete the model, you must first remove the model from all of the document libraries where it has been applied.
+You can also delete a model from the **Models** library. However, before you delete the model, you must first remove the model from all of the document libraries where it's applied.
 
 1. Remove the model either from the model home page or from the document library by selecting **Automate** > **View applied models** > **Remove from library**.
 
    > [!NOTE]
-   > If you try to delete a model that has been applied to one or more libraries, you will receive an error message indicating that you must first remove it from all libraries to which it's been applied.
+   > If you attempt to delete a model that has been applied to one or more libraries, an error message appears. This message informs you that you must first remove the model from all the libraries where it's applied.
  
 2. From the **Models** library, select the model you want to delete.
 

@@ -1,13 +1,14 @@
 ---
 title: "Multi-Geo Capabilities in Microsoft Teams"
 ms.reviewer: daro
-ms.date: 03/12/2021
-ms.author: mikeplum
-author: MikePlumleyMSFT
-manager: serdars
+ms.date: 04/15/2024
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: multi-tenant
 f1.keywords:
 - NOCSH
 ms.custom: 
@@ -17,6 +18,7 @@ ms.collection:
 - m365solution-scenario
 - m365solution-spintranet
 - highpri
+- must-keep
 ms.localizationpriority: medium
 description: "Learn about how Teams works with Microsoft 365 Multi-Geo."
 ---
@@ -27,9 +29,13 @@ Multi-Geo capabilities in Teams enable Teams chat data to be stored at rest in a
 
 Teams uses the Preferred Data Location (PDL) for users and groups to determine where to store data. If the PDL isn’t set or is invalid, data is stored in the tenant's central location.
 
-> [!NOTE]
-> Multi-Geo capabilities in Teams rolled out in July 2021. Your chat and channel messages will be automatically migrated to the correct geo location over the next few quarters. Any new PDL changes will be processed after the tenant has completed the initial sync, and new PDL changes beyond that will be queued and processed in the order they are received.
->
+## Find the geo location of Teams user/channel
+
+The Get-MultiGeoRegion cmdlet in Teams displays the following multi-geo related properties:
+
+- **Region**: The first three letters of the region name correspond to the geo code, which tells you where the Teams data is currently located for the user/channel.
+- **LastMovementTimestamp**: Indicates when Teams data was last migrated (either automatically or manually).
+- **PreferredDataLocation**: Specifies the geo location code that was set by the Teams admin.
 
 ## User chat
 
@@ -41,11 +47,20 @@ For existing users, if an administrator adds or modifies the PDL for a user, tha
 
 The storage location for a one-to-one or one-to-many chat is based on the PDL of the person who created the chat. If that user's PDL is changed, the chat will be migrated to the new geo location. The storage location for a meeting chat is based on the PDL of the meeting organizer.
 
-To find the current location of a user's Teams data, [connect to Teams PowerShell](/powershell/module/teams/connect-microsoftteams) and run the following command:
+To find the current location of a user's Teams data, PDL, and the last movement timestamp for a user [connect to Teams PowerShell](/powershell/module/teams/connect-microsoftteams) and run the following command:
 
 ```PowerShell
 Get-MultiGeoRegion -EntityType User -EntityId <UPN>
 ```
+
+The output of the command looks like this:
+
+```PowerShell
+Region                    : BRA
+LastMovementTimeStamp     : 10/10/2023 8:21:01 PM
+PreferredDataLocation     : IND
+```
+
 Enable port 8653 to allow execution of this command.
 
 ## Channel messages
@@ -58,7 +73,7 @@ For existing teams, if an administrator adds or modifies the PDL for the Microso
 
 Changing the PDL of the Microsoft 365 group queues the Teams data to migrate to the chosen location. However, this doesn’t migrate the SharePoint site or files associated with the Group automatically. You must move the site separately by following the procedures in [Move a SharePoint site to a different geo location](/microsoft-365/enterprise/move-sharepoint-between-geo-locations). Be sure to do both steps to avoid Teams data and SharePoint data for one group in different locations.
 
-To find the current location of a team's data, [connect to Teams PowerShell](/powershell/module/teams/connect-microsoftteams) and run the following command:
+To find the current location of a team's data, PDL, and the last movement timestamp for the group [connect to Teams PowerShell](/powershell/module/teams/connect-microsoftteams) and run the following command:
 
 ```PowerShell
 Get-MultiGeoRegion -EntityType Group -EntityId <GroupObjectId>

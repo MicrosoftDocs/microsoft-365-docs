@@ -1,13 +1,13 @@
 ---
 title: SharePoint Cross-tenant SharePoint migration Step 5 (preview)
-ms.author: jhendr
-author: JoanneHendrickson
-manager: serdars
+ms.author: heidip
+author: MicrosoftHeidi
+manager: jtremper
+ms.date: 10/13/2023
 recommendations: true
 audience: ITPro
-ms.topic: article
-ms.service: sharepoint-online
-ms.subservice: sharepoint-migration
+ms.topic: how-to
+ms.service: microsoft-365-migration
 ms.localizationpriority: high
 ms.collection:
 - SPMigration
@@ -18,8 +18,8 @@ description: "Step 5 of the SharePoint Cross-tenant migration feature"
 ---
 # Step 5: Identity mapping (preview)
 
->[!Note]
->Cross-Tenant SharePoint migration is currently in a private preview stage of development. As an unfinished project, any information or availability is subject to change at any time. Support for private-preview customers will be handled via email. Cross-Tenant SharePoint migration is covered by the preview terms of the [Microsoft Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/all).
+> [!NOTE]
+> Cross-Tenant SharePoint migration is currently in a private preview stage of development. As an unfinished project, any information or availability is subject to change at any time. Support for private-preview customers will be handled via email. Cross-Tenant SharePoint migration is covered by the preview terms of the [Microsoft Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/all).
 
 This is Step 5 in a solution designed to complete a Cross-tenant SharePoint migration. To learn more, see [Cross-tenant SharePoint migration overview](cross-tenant-SharePoint-migration.md).
 
@@ -29,7 +29,7 @@ This is Step 5 in a solution designed to complete a Cross-tenant SharePoint migr
 - Step 4: [Pre-create users and groups](cross-tenant-SharePoint-migration-step4.md)
 - **Step 5: [Prepare identity mapping](cross-tenant-SharePoint-migration-step5.md)**
 - Step 6: [Start a Cross-tenant SharePoint migration](cross-tenant-SharePoint-migration-step6.md)
-- Step 7: [Post migration steps](cross-tenant-SharePoint-migration-step7.md)
+- Step 7: [Post migration steps](cross-tenant-SharePoint-migration-step7.md)\n
 
 ## Create the identity mapping file
 
@@ -43,9 +43,9 @@ There's a one-to-one relationship in the identity mapping file.  You can't map t
 
 |Source Tenant Owner|Target Tenant User|
 |---|---|
-|admin@source.com|new.userA@target.com|
-|admin@source.com|new.userB@target.com|
-|admin@source.com|new.userC@target.com|
+|`admin@source.com`|`new.userA@target.com`|
+|`admin@source.com`|`new.userB@target.com`|
+|`admin@source.com`|`new.userC@target.com`|
 
 Cross-tenant migration supports this scenario:
 
@@ -53,9 +53,9 @@ Cross-tenant migration supports this scenario:
 
 |Source Tenant Owner|Target Tenant User|
 |---|---|
-|userA@source.com|new.userA@target.com|
-|userB@source.com|new.userB@target.com|
-|userC@source.com|new.userC@target.com|
+|`userA@source.com`|`new.userA@target.com`|
+|`userB@source.com`|`new.userB@target.com`|
+|`userC@source.com`|`new.userC@target.com`|
 
 ### Create the CSV file
 
@@ -64,7 +64,7 @@ There are six columns needed in your CSV file. The first three are your source v
 Users and groups are included in the same file. Depending on whether it's a user or group, what you enter in the column is different. In each of the columns enter values as shown in the examples.  **Do NOT include column headings.**
 
 |Column|User|Group|Microsoft 365 Group|
-|---|---|---|:-----|
+|---|---|---|---|
 |1|User|Group|Group|
 |2|SourceTenantCompanyID|SourceTenantCompanyID|SourceTenantCompanyID|
 |3|SourceUserUpn|SourceGroupObjectID|SourceGroupObjectID|
@@ -73,14 +73,24 @@ Users and groups are included in the same file. Depending on whether it's a user
 |6|UserType|GroupType|GroupType|
 
 > [!IMPORTANT]
-> **Do NOT include column headings in your CSV file.**  In the examples below we include them for illustrative purposes only.
+> When creating your Identity Mapping for Group Connected sites, the Target site URL **must** align with the alias of the new Group created on the Target tenant.
+>
+> **Example:**
+>
+> - Source site: `https://contoso.sharepoint.com/teams/O365SourceGroup`
+> - New Target Group Alias = O365TargetGroup
+>
+> In your Identity Mapping file the Target site needs to be: `https://fabrikam.sharepoint.com/teams/O365TargetGroup`.
+>
+> If the Target Alias and Target URL don't align, the migration will fail.
+>
+> **Do NOT include column headings in your CSV file.** In the examples below we include them for illustrative purposes only.
 
 **Users**. Enter your values as shown in this example for Users:
 
 :::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-csv-mapping-users-columns.png" alt-text="format to use for mapping users":::
 
 :::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-csv-mapping-users-example.png" alt-text="example of csv for users":::
-
 
 **Guest users**. You can map guest accounts in the source tenant to member accounts in the target tenant. You can also map a guest account in the source to a guest account in the target if the guest has been previously created. Enter your values as shown in this example for guests:
 
@@ -112,7 +122,7 @@ Users and groups are included in the same file. Depending on whether it's a user
 To obtain Source Tenant Company ID:
 
 1. Sign in as Admin to your [Azure portal](https://ms.portal.azure.com/)
-2. Select or Search for **Azure Active Directory**.
+2. Select or Search for **Microsoft Entra ID**.
 3. Scroll down on the left-hand panel and select **Properties**.
 4. Locate the **Tenant ID Field**. The required Tenant ID will be in that box.
 
@@ -142,7 +152,7 @@ To obtain Source Tenant Company ID:
 Once the identity mapping file has been prepared, the SharePoint Administrator on the target tenant uploads the file to SharePoint. This will allow identity mapping to occur automatically as part of the cross-tenant migration.
 
 > [!IMPORTANT]
-> Before you run the *Add-SPOTenantIdentityMap -IdentityMapPath* command, save and close the identitymap.csv file on your Desktop/SharePoint/SharePoint. 
+> Before you run the *Add-SPOTenantIdentityMap -IdentityMapPath* command, save and close the identitymap.csv file on your Desktop/SharePoint/SharePoint.
 >
 >If the file remains open, you will receive the following error.
 > *Add-SPOTenantIdentityMap: The process cannot access the file 'C:\Users\myuser\Test-Identity-Map.csv' because it is being used by another process.*
@@ -187,7 +197,7 @@ Get-SPOCrossTenantCompatibilityStatus -PartnerCrossTenantHostURL https://m365x12
 |Warning|Yes|
 |Incompatible|No|
 
-> [!NOTE]
+> [!IMPORTANT]
 > We recommend waiting a period of **48 hours**. If your tenants are still reporting as *incompatible*, contact support.
 >
 > We recommend performing the compatibility status check on a frequent basis and prior to starting ANY instances of cross tenant migrations. If the tenants are not compatible, this can result in cross-tenant migrations failing.

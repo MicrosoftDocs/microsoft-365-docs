@@ -6,21 +6,17 @@ metadata:
   ms.author: camillepack
   author: camillepack
   manager: scotv
-  ms.date: 06/19/2023
+  ms.date: 08/07/2024
   audience: Admin
   ms.topic: faq
   ms.service: microsoft-365-copilot
   ms.localizationpriority: medium
   monikerRange: 'o365-worldwide'
   ms.collection: 
-  - Tier2
   - scotvorg
-  - M365-subscription-management 
-  - Adm_O365
-  - Adm_TOC
   - m365copilot
-  ROBOTS: NOINDEX, NOFOLLOW
-  description: "Frequently asked questions about the Microsoft 365 Copilot Early Access Program."
+  - magic-ai-copilot
+  description: "Frequently asked questions about the Microsoft 365 Copilot5 Early Access Program."
 title: Microsoft 365 Copilot Early Access Program Frequently Asked Questions
 summary: The Microsoft 365 Copilot Early Access Program is an invitation-only paid preview. If your organization is interested in the early release program, work with your Microsoft account manager to find out more details about nominations for a potential invite. The program includes licenses for Microsoft 365 Copilot within the Microsoft 365 Apps (Word, Outlook, Excel, PowerPoint, Teams, and more). To learn more, see this blog post announcing the [Microsoft 365 Copilot Early Access Program](https://go.microsoft.com/fwlink/p/?linkid=2240881).
 
@@ -33,36 +29,40 @@ sections:
 
       - question: How do I prepare my organization's data governance for Copilot? 
           
-        answer: Microsoft 365 Copilot is integrated into Microsoft 365 and automatically inherits all your company's valuable security, compliance, and privacy policies and processes. Data permissions will be consistent and users will only be able to search the information they already have access to. Review [Data, Privacy, and Security for Microsoft 365 Copilot](microsoft-365-copilot-privacy.md) for more information about privacy with Microsoft 365 Copilot. To learn more about how to approach getting your organization ready to use Copilot, [watch this Microsoft Mechanics video](https://www.youtube.com/watch?v=oeX0lsMA69U).  
+        answer: Microsoft 365 Copilot is integrated into Microsoft 365 and automatically inherits all your company's valuable security, compliance, and privacy policies and processes. Data permissions are consistent and users can only search the information they already have access to. For more information about privacy with Microsoft 365 Copilot, see [Data, Privacy, and Security for Microsoft 365 Copilot](microsoft-365-copilot-privacy.md). To learn more about how to approach getting your organization ready to use Copilot, [watch this Microsoft Mechanics video](https://www.youtube.com/watch?v=oeX0lsMA69U).  
 
       - question: What happens after my organization gets invited into the program? 
          
-        answer: Work directly with your account manager to confirm acceptance. After accepting the invitation, users with the Global admin role permissions in the organization will receive an email to complete the process in the Microsoft 365 admin center.
+        answer: Work directly with your account manager to confirm acceptance. After you accept the invitation, users with the Global admin role permissions in the organization will receive an email to complete the process in the Microsoft 365 admin center.
 
-      - question: What are the top benefits of the Microsoft 365 Copilot Early Access Program?
+      - question: What are the top benefits of the Microsoft 365 CopilotEarly Access Program?
          
         answer: With the Early Access Program, you can use Copilot prior to the general release of the product and can receive extra engineering support to deploy Copilot and promote adoption. You also have the opportunity to test use cases and provide feedback to influence the development of the product.
+      
+      - question: What happens at the end of the 12-month Early Access Program term?
+
+        answer: The Copilot Early Access Program was set up only for 12 months, and as such, you will not be able to use the same licenses at the end of the program period. For example, if you purchased the Copilot Early Access Program on August 1, 2023, the service is set to complete by July 31, 2024. Thereafter, you will have a 30-day grace period to use Copilot before the service is disabled. You need to purchase new GA licenses and provision the 300 users again before the grace period ends.
   - name: Purchase information
     questions:
       - question: How do I complete the purchase? 
           
-        answer: You will use an online purchase experience in the Microsoft 365 admin center. During this purchase experience, you'll need to agree to the Microsoft Customer Agreement (MCA) if you don't already have one. There are also supplemental terms for the Early Access Program. You may work with your account team to review these documents in advance.
+        answer: You'll use an online purchase experience in the Microsoft 365 admin center. During this purchase experience, you'll need to agree to the Microsoft Customer Agreement (MCA) if you don't already have one. There are also supplemental terms for the Early Access Program. You can work with your account team to review these documents in advance.
 
       - question: How am I invoiced and how do I pay?
          
-        answer: The Microsoft 365 Copilot Early Access Pass is a one-time invoice and purchase, and there are no additional usage fees associated with the program. You will have 21 days to complete the purchase. If you need to complete an internal PO or approval process, you can view the total price including any applicable taxes based on your billing account, and then come back and complete the purchase within the 21-day period. You will receive your invoice on the 5th day of the month following your purchase. The invoice can be viewed in the Microsoft 365 admin center and can be paid by wire transfer. You can find your invoice in the Microsoft 365 admin center by going to **Billing** > **Bills & payments**.
+        answer: The Microsoft 365 Copilot Early Access Pass is a one-time invoice and purchase, and there are no other usage fees associated with the program. You'll have 21 days to complete the purchase. If you need to complete an internal PO or approval process, you can view the total price including any applicable taxes based on your billing account, and then come back and complete the purchase within the 21-day period. You'll receive your invoice on the fifth day of the month following your purchase. You can view the invoice in the Microsoft 365 admin center and can pay it by wire transfer. In the Microsoft 365 admin center, go to **Billing** > **Bills & payments**.
 
       - question: Can I cancel my organization's participation in the Early Access Program? If yes, am I eligible for refund? 
          
-        answer: You have seven days to cancel the purchase. After seven days, there are no refunds available, as this is a limited time program.
+        answer: You have seven days to cancel the purchase. After seven days, there are no refunds available, as it's a limited time program.
 
       - question: What is the Microsoft Customer Agreement? 
          
         answer: The Microsoft Customer Agreement provides a consistent and simplified purchasing experience. To learn more, see [Microsoft Customer Agreement](https://www.microsoft.com/Licensing/how-to-buy/microsoft-customer-agreement?rtc=1).
 
-      - question: Does accepting the Microsoft Customer Agreement impact my existing Microsoft Enterprise Agreements?
+      - question: Does accepting the Microsoft Customer Agreement affect my existing Microsoft Enterprise Agreements?
          
-        answer: No, the Microsoft Customer Agreement doesn't impact the terms of existing Enterprise Agreements.
+        answer: No, the Microsoft Customer Agreement doesn't affect the terms of existing Enterprise Agreements.
   - name: Licensing information
     questions:      
       - question: Where do I go to assign and manage licenses? 

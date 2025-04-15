@@ -24,8 +24,10 @@
     "resource": [
       {
         "files": [
+          "**/*.gif",
+          "**/*.jpg",
           "**/*.png",
-          "**/*.jpg"
+          "**/*.svg"
         ],
         "exclude": [
           "**/obj/**",
@@ -43,7 +45,24 @@
       "breadcrumb_path": "/microsoft-365-copilot/breadcrumb/toc.json",
       "feedback_system": "Standard",
       "permissioned-type": "public",
-      "uhfHeaderId": "MSDocsHeader-M365-IT"
+      "uhfHeaderId": "MSDocsHeader-M365-IT",
+      "contributors_to_exclude": [ 
+        "rjagiewich",
+        "traya1", 
+        "American-Dipper", 
+        "claydetels19",
+        "jborsecnik",
+        "shdyas", 
+        "garycentric",
+        "Stacyrch140",
+        "alexbuckgit", 
+        "beccarobins",
+        "dstrome",
+        "MarcoLodini",
+        "padmagit77",
+        "aditisrivastava07",
+        "Ruchika-mittal01"
+      ]
     },
     "fileMetadata": {},
     "template": [],

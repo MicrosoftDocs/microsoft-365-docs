@@ -5,10 +5,10 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 08/10/2020
+ms.date: 11/11/2024
 audience: Admin
-ms.topic: article
-ms.service: microsoft-365-business
+ms.topic: how-to
+ms.service: microsoft-365-basic-mobility-security
 ms.localizationpriority: medium
 ms.collection:
 - Tier3
@@ -16,9 +16,11 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- basic-mobility-security
 ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
+- basic-mobility-security
 search.appverid:
 - MET150
 description: "Use built-in Basic Mobility and Security to remove information from enrolled devices."
@@ -44,7 +46,7 @@ Mobile devices can store sensitive organizational information and provide access
 
 ## Wipe a mobile device
 
-1. Sign in to the Microsoft 365 admin center, and go to the [Mobile Device Management page](https://portal.office.com/adminportal/home?#/MifoDevices).
+1. Sign in to the Microsoft 365 admin center, and go to the [Active devices](https://admin.microsoft.com/Adminportal/Home?#/IntuneDevices/?isMifo=true) page.
 
 1. Select **Manage devices**.
 
@@ -70,11 +72,11 @@ Wipe a device for these reasons:
 
 - Mobile devices like smartphones and tablets are becoming more full-featured all the time. This means it’s easier for your users to store sensitive corporate information such as personal identification or confidential communications and access it on the go. If one of these mobile devices is lost or stolen, wiping the device can help prevent your organization’s information from ending up in the wrong hands.
 - When a user leaves the organization with a personal device that is enrolled in Basic Mobility and Security, you can help prevent organizational information from going with that user by performing a factory reset.
-- If your organization provides mobile devices to users, you might need to reassign devices from time to time. Doing a Factory Reset on a device before assigning it to a new user helps ensures that any sensitive information from the previous owner is deleted.
+- If your organization provides mobile devices to users, you might need to reassign devices from time to time. Doing a Factory Reset on a device before assigning it to a new user helps ensure that any sensitive information from the previous owner is deleted.
 
 ## What's the user and device impact?
 
-The wipe is sent immediately to the mobile device and the device is marked as not compliant in Azure active directory. While all data is removed when a device is reset to factory defaults, the following table describes what content is removed for each device type when a device when you remove company data.
+The wipe is sent immediately to the mobile device and the device is marked as not compliant in Microsoft Entra ID. While all data is removed when a device is reset to factory defaults, the following table describes what content is removed for each device type when a device when you remove company data.
 
 |Content impact|iOS|Android|
 |---|---|---|

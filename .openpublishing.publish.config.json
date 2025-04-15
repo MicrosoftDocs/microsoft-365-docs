@@ -63,8 +63,20 @@
       "branch_mapping": {}
     },
     {
+      "path_to_root": "_memdocs",
+      "url": "https://github.com/MicrosoftDocs/memdocs-pr/",
+      "branch": "main",
+      "branch_mapping": {}
+    }, 
+    {
       "path_to_root": "_themes.pdf",
       "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
+      "branch": "main",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "microsoft-365/reusable-content",
+      "url": "https://github.com/MicrosoftDocs/reusable-content",
       "branch": "main",
       "branch_mapping": {}
     }
@@ -94,23 +106,29 @@
   "contribution_branch_mappings": {},
   "need_generate_intellisense": false,
   "redirection_files": [
-    ".openpublishing.redirection.json",
     ".openpublishing.redirection.admin.json",
     ".openpublishing.redirection.bookings.json",
     ".openpublishing.redirection.business.json",
+    ".openpublishing.redirection.campaigns.json",
     ".openpublishing.redirection.commerce.json",
     ".openpublishing.redirection.compliance.json",
     ".openpublishing.redirection.contentunderstanding.json",
+    ".openpublishing.redirection.copilot.json",
+    ".openpublishing.redirection.defender.json",
     ".openpublishing.redirection.enterprise.json",
     ".openpublishing.redirection.frontline.json",
-    ".openpublishing.redirection.lighthouse.json",
-    ".openpublishing.redirection.managed-desktop.json",
-    ".openpublishing.redirection.security.json",
-    ".openpublishing.redirection.solutions.json",
-    ".openpublishing.redirection.campaigns.json",
     ".openpublishing.redirection.knowledge.json",
     ".openpublishing.redirection.learning.json",
+    ".openpublishing.redirection.lighthouse.json",
+    ".openpublishing.redirection.loop.json",
+    ".openpublishing.redirection.lti.json",
+    ".openpublishing.redirection.managed-desktop.json",
+    ".openpublishing.redirection.scheduler.json",
+    ".openpublishing.redirection.security.json",
+    ".openpublishing.redirection.solutions.json",
     ".openpublishing.redirection.syntex.json",
-    ".openpublishing.redirection.loop.json"
+    ".openpublishing.redirection.test-base.json",
+    ".openpublishing.redirection.topics.json",
+    ".openpublishing.redirection.viva.json"
   ]
 }

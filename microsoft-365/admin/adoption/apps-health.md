@@ -28,9 +28,9 @@ description: "Details of the Microsoft 365 Apps health - technology experiences 
 
 Adoption Score provides insights into your organization's digital transformation journey through its use of Microsoft 365 and the technology experiences that support it. Your organization's score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar to yours. The apps health category is part of the measurements that falls under technology experiences. To learn more, check out the [Adoption Score overview](adoption-score.md) and read [Microsoft's Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
-## Why your organization's Microsoft 365 apps health score matters
+## Why your organization's Microsoft 365 productivity apps health score matters
 
-Your organizational productivity is dependent on healthy application environment. Devices running most current versions of Microsoft 365 apps on recommended channel are more secure and help people in your organization get the most out of the features in Microsoft 365.
+Your organizational productivity is dependent on healthy application environment. Devices running most current versions of Microsoft 365 productivity apps on recommended channel are more secure and help people in your organization get the most out of the features in Microsoft 365.
 
 ## How we calculate the Microsoft 365 apps health score
 
@@ -97,7 +97,7 @@ We also provide supporting information that helps you gain additional visibility
 
 This chart shows the trend-line of the devices running supported versions and latest versions of Microsoft 365 apps over the last 180 days.
 
-:::image type="content" source="../../media/trendline-devices-supportedversions.png" alt-text="Chart that showa how many devices run supported and latest versions of apps over time.":::
+:::image type="content" source="../../media/trendline-devices-supportedversions.png" alt-text="Chart that shows how many devices run supported and latest versions of apps over time.":::
 
 ## Devices in your organization
 

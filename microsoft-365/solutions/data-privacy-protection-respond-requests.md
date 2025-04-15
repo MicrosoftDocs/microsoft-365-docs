@@ -5,9 +5,9 @@ author: chvukosw
 f1.keywords:
 - NOCSH
 manager: laurawi
-ms.date: 02/06/2023
+ms.date: 01/15/2025
 audience: ITPro
-ms.topic: article
+ms.topic: solution-overview
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
@@ -37,9 +37,9 @@ Features in both Purview and Priva can help you monitor, investigate, and respon
 
 |Action|Description|Get details|
 |:---|:----------|:---------------|
-|Set up alerts for potential incidents.| You can set up alerts to help you respond quickly to an array of privacy incidents, whether they come through Priva, auditing, or other alert policies.| [Priva policy alerts](/privacy/priva/risk-management-alerts)<br><br>[Unified auditing](../compliance/search-the-audit-log-in-security-and-compliance.md)<br><br>[Mailbox auditing](../compliance/enable-mailbox-auditing.md)<br><br>[Microsoft Purview Audit (Premium)](../compliance/advanced-audit.md)<br><br>[Alert policies](../compliance/alert-policies.md)|
+|Set up alerts for potential incidents.| You can set up alerts to help you respond quickly to an array of privacy incidents, whether they come through Priva, auditing, or other alert policies.| [Priva policy alerts](/privacy/priva/risk-management-alerts)<br><br>[Unified auditing](/purview/audit-new-search)<br><br>[Mailbox auditing](/purview/audit-mailboxes)<br><br>[Microsoft Purview Audit (Premium)](/purview/audit-premium)<br><br>[Alert policies](/purview/alert-policies)|
 |Manage subject rights requests at scale.| Several privacy regulations around the world grant individuals—or data subjects—the right to make requests to review or manage the personal data that companies have collected about them. These subject rights requests are also referred to as data subject requests (DSRs), data subject access requests (DSARs), or consumer rights requests.<p><p>For companies that store large amounts of information, finding the relevant data can be a formidable task. Fulfilling the requests, for most organizations, is a highly manual and time consuming process.<p><p>Microsoft Priva Subject Rights Requests is designed to help alleviate the complexity and length of time involved in responding to data subject inquires. This solution provides automation, insights, and workflows to help organizations fulfill requests more confidently and efficiently.| [Learn more about Subject Rights Requests](/privacy/priva/subject-rights-requests)|
-|Use insider risk management as an investigative tool.| Microsoft Purview Insider Risk Management is a compliance solution that helps you minimize internal risk by enabling you detect, investigate, and act on malicious and inadvertent activities in your organization.<p><p>Insider risk policies allow you to define the types of risks to identify and detect in your organization. You can act on cases and escalate cases to Microsoft eDiscovery (Premium) if needed. Risk analysts in your organization can quickly take appropriate actions to make sure users are compliant with your organization's compliance standards.| [Learn more about insider risk management](../compliance/insider-risk-management.md)|
+|Use insider risk management as an investigative tool.| Microsoft Purview Insider Risk Management is a compliance solution that helps you minimize internal risk by enabling you detect, investigate, and act on malicious and inadvertent activities in your organization.<p><p>Insider risk policies allow you to define the types of risks to identify and detect in your organization. You can act on cases and escalate cases to Microsoft eDiscovery (Premium) if needed. Risk analysts in your organization can quickly take appropriate actions to make sure users are compliant with your organization's compliance standards.| [Learn more about insider risk management](/purview/insider-risk-management)|
 
 ## Building your monitoring and response strategy
 

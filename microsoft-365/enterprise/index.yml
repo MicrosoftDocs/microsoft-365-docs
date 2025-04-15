@@ -15,9 +15,10 @@ metadata:
   ms.collection: 
   - M365-subscription-management
   - Adm_TOC
+  - essentials-navigation
   author: kelleyvice-msft #Required; your GitHub user alias, with correct capitalization.
   ms.author: kvice #Required; microsoft alias of author; optional team alias.
-  ms.date: 07/28/2020 #Required; mm/dd/yyyy format.
+  ms.date: 04/01/2025 #Required; mm/dd/yyyy format.
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -49,25 +50,31 @@ conceptualContent:
         - url: deploy-identity-solution-overview.md
           itemType: how-to-guide
           text: Identity infrastructure
+        - url: microsoft-365-networking-overview.md
+          itemType: concept
+          text: Network connectivity overview
         - url: /windows/deployment/
           itemType: get-started
-          text: Windows 10 Enterprise
+          text: Windows 11 Enterprise
         - url: /deployoffice/plan-microsoft-365-apps
           itemType: deploy
           text: Microsoft 365 Apps for enterprise
-        - url: /intune/fundamentals/planning-guide
+        - url: /mem/intune/fundamentals/intune-planning-guide
           itemType: deploy
           text: Microsoft Intune
     # Card
     - title: Manage Microsoft 365 for enterprise
       links:
+        - url: managing-office-365-endpoints.md
+          itemType: how-to-guide
+          text: Managing Microsoft 365 endpoints
         - url: /windows/deployment/update/
           itemType: how-to-guide
-          text: Windows 10 Enterprise
+          text: Windows 11 Enterprise
         - url: /deployoffice/overview-update-channels
           itemType: concept
           text: Microsoft 365 Apps for enterprise
-        - url: /intune/apps/app-management
+        - url: /mem/intune/apps/apps-enterprise-app-management
           itemType: get-started
           text: Apps with Intune
         - url: /office365/
@@ -79,7 +86,7 @@ conceptualContent:
 additionalContent:
   # Supports up to 3 sections
   sections:
-    - title: Additional resources # < 60 chars (optional)
+    - title: Other resources # < 60 chars (optional)
       summary: Learn more about other Microsoft 365 features and resources. # < 160 chars (optional)
       items:
         # Card

@@ -7,7 +7,7 @@ ms.author: bcarter
 manager: dansimp
 ms.date: 05/01/2020
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection: 
@@ -41,7 +41,7 @@ For more information, see the [Manage devices with Intune](manage-devices-with-i
 
 ## Configuration Manager
 
-Configuration Manager is an on-premises management solution to manage desktops, servers, and laptops that are on your network or internet-based. Use Configuration Manager to deploy apps, software updates, and operating systems. You can also monitor compliance, query and act on clients in real time, and much more. You can cloud-enable it to integrate with Intune, Azure AD, Microsoft Defender for Endpoint, and other cloud services. 
+Configuration Manager is an on-premises management solution to manage desktops, servers, and laptops that are on your network or internet-based. Use Configuration Manager to deploy apps, software updates, and operating systems. You can also monitor compliance, query and act on clients in real time, and much more. You can cloud-enable it to integrate with Intune, Microsoft Entra ID, Microsoft Defender for Endpoint, and other cloud services. 
 
 For more information, see this [overview of Configuration Manager](/mem/configmgr/core/understand/introduction).
 

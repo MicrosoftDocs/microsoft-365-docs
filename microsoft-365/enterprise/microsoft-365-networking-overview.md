@@ -3,10 +3,11 @@ title: "Microsoft 365 Network Connectivity Overview"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 08/27/2021
+ms.date: 11/18/2024
 audience: Admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: microsoft-365-enterprise
+ms.subservice: network
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -15,6 +16,7 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
+- must-keep
 f1.keywords:
 - NOCSH
 description: "Discusses why network optimization is important for SaaS services, the goal of Microsoft 365 networking, and how SaaS requires different networking from other workloads."
@@ -26,7 +28,7 @@ description: "Discusses why network optimization is important for SaaS services,
 
 Microsoft 365 is a distributed Software-as-a-Service (SaaS) cloud that provides productivity and collaboration scenarios through a diverse set of micro-services and applications. Client components of Microsoft 365 such as Outlook, Word, and PowerPoint run on user computers and connect to other components of Microsoft 365 that run in Microsoft datacenters. The most significant factor that determines the quality of the Microsoft 365 end user experience is network reliability and low latency between Microsoft 365 clients and Microsoft 365 service front doors.
 
-In this article, you will learn about the goals of Microsoft 365 networking, and why Microsoft 365 networking requires a different approach to optimization than generic Internet traffic.
+In this article, you'll learn about the goals of Microsoft 365 networking, and why Microsoft 365 networking requires a different approach to optimization than generic Internet traffic.
 
 ## Microsoft 365 networking goals
 
@@ -44,9 +46,9 @@ For more information on Microsoft 365 network connectivity principles, see [Micr
 
 ## Traditional network architectures and SaaS
 
-Traditional network architecture principles for client/server workloads are designed around the assumption that traffic between clients and endpoints does not extend outside the corporate network perimeter. Also, in many enterprise networks, all outbound Internet connections traverse the corporate network, and egress from a central location.
+Traditional network architecture principles for client/server workloads are designed around the assumption that traffic between clients and endpoints doesn't extend outside the corporate network perimeter. Also, in many enterprise networks, all outbound Internet connections traverse the corporate network, and egress from a central location.
 
-In traditional network architectures, higher latency for generic Internet traffic is a necessary tradeoff in order to maintain network perimeter security, and performance optimization for Internet traffic typically involves upgrading or scaling out the equipment at network egress points. However, this approach does not address the requirements for optimum network performance of SaaS services such as Microsoft 365.
+In traditional network architectures, higher latency for generic Internet traffic is a necessary tradeoff in order to maintain network perimeter security, and performance optimization for Internet traffic typically involves upgrading or scaling out the equipment at network egress points. However, this approach doesn't address the requirements for optimum network performance of SaaS services such as Microsoft 365.
 
 ## Identifying Microsoft 365 network traffic
 
@@ -64,7 +66,7 @@ Microsoft 365 helps meet your organization's needs for content security and data
 
 ## Why is Microsoft 365 networking different?
 
-Microsoft 365 is designed for optimal performance using endpoint security and encrypted network connections, reducing the need for perimeter security enforcement. Microsoft 365 datacenters are located across the world and the service is designed to use various methods for connecting clients to best available service endpoints. Since user data and processing are distributed between many Microsoft datacenters, there is no single network endpoint to which client machines can connect. In fact, data and services in your Microsoft 365 tenant are dynamically optimized by the Microsoft Global Network to adapt to the geographic locations from which they are accessed by end users.
+Microsoft 365 is designed for optimal performance using endpoint security and encrypted network connections, reducing the need for perimeter security enforcement. Microsoft 365 datacenters are located across the world and the service is designed to use various methods for connecting clients to best available service endpoints. Since user data and processing are distributed between many Microsoft datacenters, there's no single network endpoint to which client machines can connect. In fact, data and services in your Microsoft 365 tenant are dynamically optimized by the Microsoft Global Network to adapt to the geographic locations from which they're accessed by end users.
 
 Certain common performance issues are created when Microsoft 365 traffic is subject to packet inspection and centralized egress:
 

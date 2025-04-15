@@ -1,9 +1,9 @@
 ---
 title: Use PowerShell to connect Shifts to Blue Yonder Workforce Management
 author: lana-chin
-ms.author: v-chinlana
-manager: serdars
-ms.reviewer: imarquesgil
+ms.author: jtremper
+manager: jtremper
+ms.reviewer: harrywong
 ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
@@ -18,7 +18,7 @@ ms.collection:
 appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 10/28/2022
+ms.date: 12/20/2024
 ---
 
 # Use PowerShell to connect Shifts to Blue Yonder Workforce Management
@@ -44,7 +44,9 @@ With Blue Yonder WFM as the system of record, your frontline workers can efficie
 
 ### Prerequisites
 
-[!INCLUDE [shifts-connector-prerequisites](includes/shifts-connector-prerequisites.md)]
+Before you get started, make sure you meet all the following prerequisites:
+
+[!INCLUDE [shifts-connector-blue-yonder-prerequisites](includes/shifts-connector-blue-yonder-prerequisites.md)]
 
 ### Admin role to manage the connector using PowerShell
 
@@ -78,12 +80,12 @@ Take note of the TeamIds of the teams you want to map. The script will prompt yo
 
 ## Run the script
 
-Run one of these two scripts, depending on whether you're creating a new team or mapping to an existing team:
+Run one of the following scripts, depending on whether you're creating a new team or mapping to an existing team:
 
-- To set up a connection while creating a new team within Microsoft Teams and mapping a Blue Yonder team to the new team, run the [new teams script](#set-up-a-connection-and-create-a-new-team).
-- To set up a connection and map to an existing team within Microsoft Teams, run the [existing teams script](#set-up-a-connection-and-map-an-existing-team).
+- To set up a connection, create a new team in Teams, and map a Blue Yonder WFM instance to the new team, run the [new teams script](#set-up-a-connection-and-create-a-new-team).
+- To set up a connection and map Blue Yonder WFM instances to existing teams in Teams, run the [existing teams script](#set-up-a-connection-and-map-an-existing-team).
 
-Follow the on-screen instructions when you run the script. The script will complete these actions:
+Follow the on-screen instructions when you run the script. The script completes the following actions:
 
 1. Test and verify the connection to Blue Yonder WFM using the Blue Yonder WFM service account credentials and service URLs that you enter.
 1. Apply sync settings. These settings include the sync frequency (in minutes) and the schedule data synced between Blue Yonder WFM and Shifts. You can enable schedule data defined by these scenarios: `Shift`, `SwapRequest`, `UserShiftPreferences`, `OpenShift`, `OpenShiftRequest`, `TimeOff`, `TimeOffRequest`.
@@ -91,11 +93,11 @@ Follow the on-screen instructions when you run the script. The script will compl
     To learn more, see [New-CsTeamsShiftsConnectionInstance](/powershell/module/teams/new-csteamsshiftsconnectioninstance). To see the list of supported sync options for each parameter, run [Get-CsTeamsShiftsConnectionConnector](/powershell/module/teams/get-csteamsshiftsconnectionconnector).
 
     > [!NOTE]
-    > The script you select will enable sync for each supported sync option. If you want to change sync settings, you can do so after the connection is set up. To learn more, see [Use PowerShell to manage your Shifts connection to Blue Yonder Workforce Management](shifts-connector-powershell-manage.md).
+    > The script enables sync for each supported sync option. If you want to change sync settings, you can do so after the connection is set up. To learn more, see [Use PowerShell to manage your Shifts connection to Blue Yonder Workforce Management](shifts-connector-powershell-manage.md).
 
-1. Map Blue Yonder WFM instances to your teams within Microsoft Teams.
-    - If you select the new teams script to create new teams, mappings are based on the new teams you create.
-    - If you select the existing teams script to map existing teams, mappings are based on Blue Yonder instance IDs and TeamIds that you enter. If a team has an existing schedule, the script removes all schedule data.
+1. Map Blue Yonder WFM instances to your teams in Teams.
+    - If you chose to run the [new teams script](#set-up-a-connection-and-create-a-new-team) to create new teams, mappings are based on the new teams you create.
+    - If you chose to run the [existing teams script](#set-up-a-connection-and-map-an-existing-team) to map existing teams, mappings are based on Blue Yonder instance IDs and TeamIds that you enter. If a team has an existing schedule, the script removes all schedule data.
 
 After you run the script, a **Success** message confirms if your connection is successfully set up.
 

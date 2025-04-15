@@ -56,17 +56,17 @@ To view the entire Adoption Score, you need be one of the following admin roles:
 
 Global admin can assign the Reports Reader role, Usage Summary Reports Reader role, or User Experience Success Manager role to anyone who's responsible for change management and adoption, but not necessarily an IT administrator.
 
-Users with the Reports Reader role can view usage reporting data and the reports dashboard in Microsoft 365 admin center and the adoption context pack in Power BI. Users with Usage Summary Reports Reader role can see only tenant level aggregates and group-level aggregates in Microsoft 365 Usage Analytics and Adoption Score. The User Experience Success Manager role includes the permissions of the Usage Summary Reports Reader role, and can get access to more Adoption-related information such as Message Center, Product Feedback, and Service Health. See [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference) to learn more about different roles.
+Users with the Reports Reader role can view usage reporting data and the reports dashboard in Microsoft 365 admin center and the adoption context pack in Power BI. Users with Usage Summary Reports Reader role can see only tenant level aggregates and group-level aggregates in Microsoft 365 Usage Analytics and Adoption Score. The User Experience Success Manager role includes the permissions of the Usage Summary Reports Reader role, and can get access to more Adoption-related information such as Message Center, Product Feedback, and Service Health. See [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference) to learn more about different roles.
 
 ## Capability to choose specific users or certain groups
 
-You can choose the users and groups whose data will be used to determine your org's people experiences insights. Omitting some groups will affect the insights calculations. You have to be a Global admin to opt your organization out of the people experiences reports. You must be a Global admin to change this setting. It can take up to 24 hours for change to apply.
+You can choose the users and groups whose data will be used to determine your org's people experiences insights. Omitting some groups will affect the insights calculations. You have to be a Global admin to opt your organization out of the people experiences reports and to change this setting. It can take up to 24 hours for change to apply.
 
 To omit certain groups:
 
 1. In the admin center, go to **Settings** > **Org Settings** > **Adoption Score**.
 2. Select **Exclude specific users via group**.  
-3. Choose one or multiple Admin Center Azure AD groups to omit.
+3. Choose one or multiple Admin Center Microsoft Entra groups to omit.
 4. Select **Save changes**.
 
 :::image type="content" source="../../media/adoption-score-exclude-users.png" alt-text="Screenshot: Option to exclude specific users via group when calculating insights.":::
@@ -86,7 +86,7 @@ To opt out:
 
 ## Capability to display insights at the group level
 
-By default, insights are shown in aggregate at the organizational level. You can also display insights at the group level, such as department or region. If you opt out of people experiences, you can't turn on this control. You must be a Global admin to turn on group-level insights, run AAD data accuracy evaluation, and approve. [Learn more about Group Level Aggregates](group-level-aggregates.md).
+By default, insights are shown in aggregate at the organizational level. You can also display insights at the group level, such as department or region. If you opt out of people experiences, you can't turn on this control. You must be a Global admin to turn on group-level insights, run Microsoft Entra data accuracy evaluation, and approve. [Learn more about Group Level Aggregates](group-level-aggregates.md).
 
 To turn on group-level insights:
 
@@ -97,7 +97,7 @@ To turn on group-level insights:
 :::image type="content" source="../../media/privacy-turn-on-group-level-insights.png" alt-text="Screenshot: Turn on group-level insights in Adoption Score":::
 
 > [!NOTE]
-> You are recommended to run the Azure Active Directory data accuracy evaluation and review your organization's Azure Active Directory profile data a few times a year to ensure the available profiles accurately reflect your org's composition.
+> You are recommended to run the Microsoft Entra data accuracy evaluation and review your organization's Microsoft Entra profile data a few times a year to ensure the available profiles accurately reflect your org's composition.
 
 :::image type="content" source="../../media/privacy-group-level-data-evaluation.png" alt-text="Screenshot: Run a group-level data evaluation for your organization.":::
 

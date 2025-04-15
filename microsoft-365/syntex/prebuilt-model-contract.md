@@ -1,25 +1,26 @@
 ---
-title: Use a prebuilt model to extract information from contracts in Microsoft Syntex
+title: Use a prebuilt model to extract information from contracts in SharePoint
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
-ms.date: 06/05/2023
+ms.date: 02/11/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-syntex
+ms.subservice: syntex-content-intelligence
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to use a prebuilt contracts model in Microsoft Syntex.
+description: Learn how to use a prebuilt document processing model for contracts in SharePoint.
 
 ---
 
-# Use a prebuilt model to extract information from contracts in Microsoft Syntex
+# Use a prebuilt model to extract information from contracts in SharePoint
 
-The prebuilt *contracts model* analyzes and extracts key information from contract documents. The model recognizes contracts in various formats and extracts key contract information, such as client name and address, contract duration, and renewal date.
+The *contracts prebuilt model* analyzes and extracts key information from contract documents. The model recognizes contracts in various formats and extracts key contract information, such as client name and address, contract duration, and renewal date.
 
 > [!NOTE]
 > Currently, this model is available only for .pdf and image file types. More file types will be added in future releases.
@@ -33,7 +34,7 @@ To use a contracts model, follow these steps:
 
 ## Step 1: Create a contracts model
 
-Follow the instructions in [Create a model in Syntex](create-syntex-model.md#set-up-a-prebuilt-model) to create a prebuilt contracts model. Then continue with the following steps to complete your model.
+Follow the instructions in [Create a model in Syntex](create-syntex-model.md#create-a-prebuilt-model) to create a contracts prebuilt model. Then continue with the following steps to complete your model.
 
 ## Step 2: Upload an example file to analyze
 
@@ -63,6 +64,10 @@ The prebuilt contracts model lets you have multiple values for a given field. Fo
 
 > [!TIP]
 > You can use the scroll wheel on your mouse or the controls at the bottom of the document area to zoom in or out as needed to read the entity fields.
+
+### Set a page range for processing
+
+For this model, you can specify to process a range of pages for a file rather than the entire file. If no page range is provided, the entire document will be processed. For more information, see [Set a page range to extract information from specific pages](page-range.md).
 
 ### Select an extractor entity
 
@@ -110,3 +115,4 @@ To rename an extractor from the **Extractors** panel:
 
 - If you're ready to apply the model to a library, in the document area, select **Next**. On the **Add to library** panel, choose the library to which you want to add the model, and then select **Add**.
 
+For information about file types, languages, optical character recognition, and other considerations for this prebuilt model, see [Requirements and limitations for prebuilt document processing in SharePoint](prebuilt-requirements.md).

@@ -4,10 +4,10 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: ragovind
-ms.date: 07/03/2023
+ms.reviewer: prpath
+ms.date: 10/27/2023
 audience: Admin
-ms.topic: article
+ms.topic: concept-article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
@@ -15,6 +15,7 @@ ms.collection:
 - scotvorg
 - M365-subscription-management
 - Adm_O365
+- essentials-manage
 ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse                         
@@ -25,6 +26,9 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 # Overview of the Device compliance page in Microsoft 365 Lighthouse
 
 Microsoft 365 Lighthouse lets you view insights and information related to Intune device compliance for all your customer tenants by selecting **Devices** > **Device compliance** in the left navigation pane to open the Device compliance page. From this page, you can get an overview of compliance status across tenants, view a list of devices for each tenant, and get status reports on compliance policies and settings.
+
+> [!NOTE]
+> This page provides the number of tenants for which data is unavailable because they do not have the required licenses.
 
 ## Overview tab  
   
@@ -54,7 +58,7 @@ The Devices tab also includes the following options:
 - **Sync:** Select one or more devices from the list that have a status of Not compliant, In grace period, or Not evaluated, and then select this option to force those devices to check in with Intune and immediately receive any policies that have been assigned to them.
 - **Restart:** Select one or more devices from the list that have a status of Not compliant, In grace period, or Not evaluated, and then select this option to restart those devices.
 - **Search:** Enter keywords to quickly locate a specific device in the list.
- 
+
 :::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/devices-device-tab.png" alt-text="Screenshot of the Devices tab on the Device compliance page." lightbox="../media/m365-lighthouse-device-compliance-page-overview/devices-device-tab.png":::
 
 ## Policies tab

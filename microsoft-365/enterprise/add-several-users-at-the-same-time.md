@@ -3,9 +3,9 @@ title: "Add several users at the same time to Microsoft 365 - Admin Help"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 08/10/2020
+ms.date: 11/26/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
@@ -28,15 +28,12 @@ search.appverid:
 - MBS150
 - GEA150
 - BCS160
-description: "Learn how to add multiple users to Microsoft 365 for business from a list in a spreadsheet or other CSV formatted file. Watch a video on YouTube that explains how to add accounts to Microsoft 365. At the end of this process, each user with an account will have a Microsoft 365 mailbox. "
+description: "Learn how to add multiple users to Microsoft 365 for business from a list in a spreadsheet or other CSV formatted file. Watch a video on YouTube that explains how to add accounts to Microsoft 365. At the end of this process, each user with an account will have a Microsoft 365 mailbox."
 ---
 
 # Add several users at the same time to Microsoft 365 - Admin Help
 
-Each person on your team needs a user account before they can sign in and access Microsoft 365 services, such as email and Office. If you have a lot of people, you can add their accounts all at once from an Excel spreadsheet or other file saved in CSV format. [Not sure what CSV format is](add-several-users-at-the-same-time.md#not-sure-what-csv-format-is)?
-  
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
+Each person on your team needs a user account before they can sign in and access Microsoft 365 services, such as email and the Microsoft 365 apps. If you have many users, you can add their accounts all at once from an Excel spreadsheet or other file saved in CSV format. [Not sure what CSV format is](add-several-users-at-the-same-time.md#not-sure-what-csv-format-is)?
 
 ## Add multiple users in the Microsoft 365 admin center
 
@@ -52,15 +49,14 @@ Each person on your team needs a user account before they can sign in and access
 
     Your spreadsheet also needs to include values for the user name (like bob@contoso.com) and a display name (like Bob Kelly) for each user.
 
-  ```
-  User Name,First Name,Last Name,Display Name,Job Title,Department,Office Number,Office Phone,Mobile Phone,Fax,Alternate email address,Address,City,State or Province,ZIP or Postal Code,Country or Region
-  chris@contoso.com,Chris,Green,Chris Green,IT Manager,Information Technology,123451,123-555-1211,123-555-6641,123-555-6700,chris@contoso.com,1 Microsoft way,Redmond,Wa,98052,United States
-  ben@contoso.com,Ben,Andrews,Ben Andrews,IT Manager,Information Technology,123452,123-555-1212,123-555-6642,123-555-6700,chris@contoso.com,1 Microsoft way,Redmond,Wa,98052,United States
-  david@contoso.com,David,Longmuir,David Longmuir,IT Manager,Information Technology,123453,123-555-1213,123-555-6643,123-555-6700,chris@contoso.com,1 Microsoft way,Redmond,Wa,98052,United States
-  cynthia@contoso.com,Cynthia,Carey,Cynthia Carey,IT Manager,Information Technology,123454,123-555-1214,123-555-6644,123-555-6700,chris@contoso.com,1 Microsoft way,Redmond,Wa,98052,United States
-  melissa@contoso.com,Melissa,MacBeth,Melissa MacBeth,IT Manager,Information Technology,123455,123-555-1215,123-555-6645,123-555-6700,chris@contoso.com,1 Microsoft way,Redmond,Wa,98052,United States
-  
-  ```
+    ```console
+    User Name,First Name,Last Name,Display Name,Job Title,Department,Office Number,Office Phone,Mobile Phone,Fax,Alternate email address,Address,City,State or Province,ZIP or Postal Code,Country or Region
+    chris@contoso.com,Chris,Green,Chris Green,IT Manager,Information Technology,123451,123-555-1211,123-555-6641,123-555-6700,chris@contoso.com,1 Microsoft way,Redmond,Wa,98052,United States
+    ben@contoso.com,Ben,Andrews,Ben Andrews,IT Manager,Information Technology,123452,123-555-1212,123-555-6642,123-555-6700,chris@contoso.com,1 Microsoft way,Redmond,Wa,98052,United States
+    david@contoso.com,David,Longmuir,David Longmuir,IT Manager,Information Technology,123453,123-555-1213,123-555-6643,123-555-6700,chris@contoso.com,1 Microsoft way,Redmond,Wa,98052,United States
+    cynthia@contoso.com,Cynthia,Carey,Cynthia Carey,IT Manager,Information Technology,123454,123-555-1214,123-555-6644,123-555-6700,chris@contoso.com,1 Microsoft way,Redmond,Wa,98052,United States
+    melissa@contoso.com,Melissa,MacBeth,Melissa MacBeth,IT Manager,Information Technology,123455,123-555-1215,123-555-6645,123-555-6700,chris@contoso.com,1 Microsoft way,Redmond,Wa,98052,United States
+    ```
 
 5. Enter a file path into the box, or choose **Browse** to browse to the CSV file location, then choose **Verify**.
   
@@ -108,23 +104,23 @@ When you save the file, you'll probably get a prompt that some features in your 
 
 - **Is there a limit to the number of characters I can use?** The following table shows the user data column labels and the maximum character length for each in the sample spreadsheet.
 
-|**User data column label**|**Maximum character length**|
-|:-----|:-----|
-|User Name (Required)  <br/> |79 including the at sign (@), in the format name@domain.\<extension\>. The user's alias cannot exceed 50 characters, and the domain name cannot exceed 48 characters.  <br/> |
-|First Name  <br/> |64  <br/> |
-|Last Name  <br/> |64  <br/> |
-|Display Name (required)  <br/> |256  <br/> |
-|Job Title  <br/> |64  <br/> |
-|Department  <br/> |64  <br/> |
-|Office Number  <br/> |128  <br/> |
-|Office Phone  <br/> |64  <br/> |
-|Mobile Phone  <br/> |64  <br/> |
-|Fax  <br/> |64  <br/> |
-|Address  <br/> |1023  <br/> |
-|City  <br/> |128  <br/> |
-|State or Province  <br/> |128  <br/> |
-|ZIP or Postal Code  <br/> |40  <br/> |
-|Country or Region  <br/> |128  <br/> |
+  | User data column label | Maximum character length |
+  |:-----|:-----|
+  |User Name (Required)  |79 including the at sign (@), in the format name@domain.\<extension\>. The user's alias cannot exceed 50 characters, and the domain name cannot exceed 48 characters.  |
+  |First Name  |64  |
+  |Last Name  |64  |
+  |Display Name (required)  |256  |
+  |Job Title  |64  |
+  |Department  |64  |
+  |Office Number  |128  |
+  |Office Phone  |64  |
+  |Mobile Phone  |64  |
+  |Fax  |64  |
+  |Address  |1023  |
+  |City  |128  |
+  |State or Province  |128  |
+  |ZIP or Postal Code  |40  |
+  |Country or Region  |128  |
 
 ### Still having problems when adding users to Microsoft 365?
 

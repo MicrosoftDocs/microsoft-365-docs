@@ -3,11 +3,15 @@ title: "Microsoft 365 multitenant Organization People Search"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 03/13/2023
+ms.date: 04/09/2024
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: multi-tenant
 ms.localizationpriority: medium
+ms.collection: 
+- scotvorg
+- must-keep
 search.appverid:
 - MET150
 f1.keywords:
@@ -15,20 +19,16 @@ f1.keywords:
 description: Learn about People Search in multitenant Microsoft 365 organizations.
 ---
 
-# Microsoft 365 multitenant Organization People Search (public preview)
+# Microsoft 365 Multitenant Organization People Search 
 
-The multitenant Organization (MTO) People Search is a collaboration feature that enables search and discovery of people across multiple tenants. A tenant admin can enable cross-tenant synchronization that will allow users to be synced to another tenant and be discoverable in its global address list. Once enabled, users will be able to search and discover synced user profiles from the other tenant and view their corresponding people cards.
+The multitenant Organization (MTO) People Search is a collaboration feature that enables search and discovery of people across multiple tenants. A tenant admin can enable cross-tenant synchronization that allows users to be synced to another tenant and be discoverable in its global address list. Once enabled, users are able to search and discover synced user profiles from the other tenant and view their corresponding people cards.
 
->[!NOTE]
->This Public Preview program is designed to give customers the opportunity to try out the multitenant people search feature. You can then validate the scenario and provide feedback to the product development team. The purpose of this article is to:
->
->- Give an overview of the feature
->- Define use cases that we currently support as part of the preview
->- Provide instructions on how you can configure and test the feature
+Learn more about [Cross Tenant Synchronization](/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview)
 
-![AAD sync](../media/mt-people-search/aad-sync.png)
 
-> _Fig 1: Azure AD cross tenant synchronization illustration_
+![Azure AD Sync](../media/mt-people-search/aad-sync.png)
+
+> _Fig 1: Microsoft Entra cross tenant synchronization illustration_
 
 ## Example scenario
 
@@ -38,22 +38,18 @@ Megan's user account has been synced from the _Fabrikam_ tenant to the target te
 
 > _Fig 2: User can view a limited people card_
 
-
 ## Known limitations
 
-- The Microsoft Teams audio and video call buttons will direct the call to the Megan's Contoso tenant Teams instance and not the Teams instance target tenant (Fabrikam).
-- The current experience provides limited information on the people card (basic contact information, job title and office location).
-- There is no external tag to differentiate synced users and internal users. For example, if there was a megan@fabrikam and megan@Contoso there's no (External) tag to show that megan@fabrikam is a different user.
-- Converting an external guest into an external member or converting an external member into an external guest isn't currently supported by Teams.
-
+The current experience provides limited information on the people card (basic contact information, job title and office location).
 
 ## Prerequisites
 
-To test the MTO People Search feature, it is assumed that you already have the following settings:
+To test the MTO People Search feature, it's assumed that you already have the following settings:
 
-- Two Azure AD/Microsoft 365 tenants
-- Both tenants have the **Azure AD Cross-tenant Synchronization** feature enabled
+- Two Microsoft Entra / Microsoft 365 tenants
+- Both tenants have the **Microsoft Entra Cross-tenant Synchronization** feature enabled
 - Provisioned users from home to target tenants
+- Users are provisioned as UserType = member
 
 ## Use Cases
 

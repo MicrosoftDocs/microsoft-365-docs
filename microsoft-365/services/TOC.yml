@@ -1,0 +1,347 @@
+items:
+    - name: Microsoft 365 pay-as-you-go
+      href: index.yml
+ 
+    - name: Get started with pay-as-you-go
+      items:
+            - name: Overview
+              href: pay-as-you-go-overview.md 
+            - name: Available services
+              href: pay-as-you-go-services.md
+            - name: What's new
+              href: pay-as-you-go-whats-new.md
+            - name: Set up pay-as-you-go billing
+              href: pay-as-you-go-setup.md
+ 
+    - name: Pay-as-you-go pricing
+      items:
+            - name: Microsoft 365 Copilot
+              href: /sharepoint/microsoft-365-pay-as-you-go-pricing
+            - name: Microsoft Syntex
+              href: ../syntex/syntex-pay-as-you-go-services.md
+            - name: Microsoft 365 Archive
+              href: ../syntex/syntex-pay-as-you-go-services.md#storage-services
+            - name: Microsoft 365 Backup
+              href: ../syntex/syntex-pay-as-you-go-services.md#storage-services
+ 
+    - name: Start using pay-as-you-go services
+      items:
+            - name: Microsoft 365 Copilot
+              items:
+                - name: SharePoint agents
+                  items:
+                    - name: Get started 
+                      href: /sharepoint/get-started-sharepoint-agents
+                    - name: Manage access 
+                      href: /sharepoint/manage-access-agents-in-sharepoint
+                    - name: Trial access to SharePoint agents with PowerShell
+                      href: /sharepoint/manage-trial-agents-sharepoint-powershell
+                    - name: Use agents with pay-as-you-go billing 
+                      href: /sharepoint/sharepoint-agents-azure-billing
+
+            - name: Microsoft Syntex
+              items:
+                - name: Autofill columns
+                  items: 
+                    - name: Overview 
+                      href: ../syntex/autofill-overview.md
+                    - name: Admin setup 
+                      href: ../syntex/autofill-setup.md
+                    - name: Create autofill columns
+                      href: ../syntex/autofill.md
+
+                - name: Content assembly
+                  items: 
+                    - name: Overview 
+                      href: ../syntex/content-assembly.md
+                    - name: Admin setup 
+                      href: ../syntex/content-assembly-setup.md
+                    - name: Create a modern template
+                      href: ../syntex/content-assembly-modern-template.md
+                    - name: Map template fields to library columns
+                      href: ../syntex/content-assembly-map-fields.md
+                    - name: Create conditional sections in templates
+                      href: ../syntex/content-assembly-conditional-sections.md
+                    - name: Edit a modern template
+                      href: ../syntex/content-assembly-edit-template.md
+                    - name: Create a document from a modern template 
+                      href: ../syntex/content-assembly-create-document.md
+                    - name: Generate documents using Power Automate 
+                      href: ../syntex/automate-document-generation.md
+
+                - name: Document translation
+                  items: 
+                    - name: Overview 
+                      href: ../syntex/translation-overview.md
+                    - name: Admin setup 
+                      href: ../syntex/translation-setup.md
+                    - name: Translate documents 
+                      href: ../syntex/translation.md
+                    - name: Use a glossary 
+                      href: ../syntex/translation-glossary.md
+
+                - name: eSignature 
+                  items: 
+                    - name: Overview 
+                      href: ../syntex/esignature-overview.md
+                    - name: Admin setup 
+                      href: ../syntex/esignature-setup.md
+                    - name: Create a signature request 
+                      href: ../syntex/esignature-send-requests.md
+                    - name: Review and sign a request 
+                      href: ../syntex/esignature-review-sign-requests.md
+                    - name: Track and manage using Approvals 
+                      href: ../syntex/esignature-approvals.md
+                    - name: Troubleshoot a request 
+                      href: ../syntex/esignature-troubleshoot.md
+
+                - name: Image tagging
+                  items: 
+                    - name: Overview 
+                      href: ../syntex/image-tagging-overview.md
+                    - name: Admin setup
+                      href: ../syntex/image-tagging-setup.md
+                    - name: Find and manage images
+                      href: ../syntex/image-tagging.md
+
+                - name: Optical character recognition 
+                  items: 
+                    - name: Overview 
+                      href: ../syntex/ocr-overview.md
+                    - name: Admin setup 
+                      href: ../syntex/ocr.md
+
+                - name: Prebuilt document processing
+                  items:
+                    - name: Learn about models
+                      items:
+                        - name: Model types
+                          href: ../syntex/model-types-overview.md 
+
+                    - name: Overview 
+                      href: ../syntex/prebuilt-overview.md
+                    - name: Admin setup
+                      href: ../syntex/prebuilt-setup.md
+                    - name: Requirements and limitations 
+                      href: ../syntex/prebuilt-requirements.md
+                    - name: Set up a content center 
+                      href: ../syntex/create-a-content-center.md
+                    - name: Create an enterprise model
+                      href: ../syntex/create-syntex-model.md
+                    - name: Create a local model 
+                      href: ../syntex/create-local-model.md 
+                    - name: Contracts
+                      href: ../syntex/prebuilt-model-contract.md
+                    - name: Invoices
+                      href: ../syntex/prebuilt-model-invoice.md
+                    - name: Receipts
+                      href: ../syntex/prebuilt-model-receipt.md
+                    - name: Sensitive information 
+                      href: ../syntex/prebuilt-model-sensitive-info.md
+                    - name: Simple documents 
+                      href: ../syntex/prebuilt-model-simple.md
+                    - name: Manage your model
+                      items:
+                        - name: Apply a model
+                          href: ../syntex/apply-a-model.md
+                        - name: Share an enterprise model 
+                          href: ../syntex/model-discovery.md
+                        - name: Discover other trained models 
+                          href: ../syntex/discover-other-trained-models.md
+                        - name: Apply a retention label 
+                          href: ../syntex/apply-a-retention-label-to-a-model.md
+                        - name: Apply a sensitivity label 
+                          href: ../syntex/apply-a-sensitivity-label-to-a-model.md
+                        - name: Rename a model
+                          href: ../syntex/rename-a-model.md
+                        - name: Delete a model
+                          href: ../syntex/delete-a-model.md
+                        - name: Manage library settings 
+                          href: ../syntex/manage-library-settings.md
+                        - name: Choose a library view 
+                          href: ../syntex/choose-library-view.md
+                        - name: View processing status 
+                          href: ../syntex/processing-status.md
+                        - name: Set a page range
+                          href: ../syntex/page-range.md
+                        - name: Analyze model usage
+                          href: ../syntex/model-usage-analytics.md
+
+                - name: Structured & freeform document processing
+                  items:
+                    - name: Learn about models
+                      items:
+                        - name: Model types
+                          href: ../syntex/model-types-overview.md 
+                        - name: Compare custom models 
+                          href: ../syntex/difference-between-document-understanding-and-form-processing-model.md  
+
+                    - name: Overview 
+                      href: ../syntex/form-processing-overview.md
+                    - name: Admin setup
+                      href: ../syntex/structured-freeform-setup.md
+                    - name: Requirements and limitations 
+                      href: ../syntex/structured-freeform-requirements.md
+                    - name: Set up a content center 
+                      href: ../syntex/create-a-content-center.md
+                    - name: Create an enterprise model
+                      href: ../syntex/create-syntex-model.md
+                    - name: Create a local model 
+                      href: ../syntex/create-local-model.md 
+                    - name: Train your model
+                      href: ../syntex/create-a-form-processing-model.md
+                    - name: Manage your model
+                      items:
+                        - name: Apply a model
+                          href: ../syntex/apply-a-model.md
+                        - name: Share an enterprise model 
+                          href: ../syntex/model-discovery.md
+                        - name: Discover other trained models 
+                          href: ../syntex/discover-other-trained-models.md
+                        - name: Apply a retention label 
+                          href: ../syntex/apply-a-retention-label-to-a-model.md
+                        - name: Apply a sensitivity label 
+                          href: ../syntex/apply-a-sensitivity-label-to-a-model.md
+                        - name: Rename a model
+                          href: ../syntex/rename-a-model.md
+                        - name: Delete a model
+                          href: ../syntex/delete-a-model.md
+                        - name: Manage library settings 
+                          href: ../syntex/manage-library-settings.md
+                        - name: Choose a library view 
+                          href: ../syntex/choose-library-view.md
+                        - name: View processing status 
+                          href: ../syntex/processing-status.md
+                        - name: Set a page range
+                          href: ../syntex/page-range.md
+                        - name: Analyze model usage
+                          href: ../syntex/model-usage-analytics.md
+
+                - name: Taxonomy tagging 
+                  items: 
+                    - name: Overview 
+                      href: ../syntex/taxonomy-tagging-overview.md
+                    - name: Admin setup 
+                      href: ../syntex/taxonomy-tagging-setup.md
+                    - name: Find and manage terms 
+                      href: ../syntex/taxonomy-tagging.md
+
+                - name: Unstructured document processing
+                  items:
+                    - name: Learn about models
+                      items:
+                        - name: Model types
+                          href: ../syntex/model-types-overview.md 
+                        - name: Compare custom models 
+                          href: ../syntex/difference-between-document-understanding-and-form-processing-model.md  
+                    - name: Overview
+                      href: ../syntex/document-understanding-overview.md
+                    - name: Admin setup
+                      href: ../syntex/unstructured-setup.md
+                    - name: Requirements and limitations 
+                      href: ../syntex/requirements-and-limitations.md
+                    - name: Import a sample model 
+                      href: ../syntex/learn-about-document-understanding-models-through-the-sample-model.md
+                    - name: Set up a content center 
+                      href: ../syntex/create-a-content-center.md
+                    - name: Create an enterprise model
+                      href: ../syntex/create-syntex-model.md
+                    - name: Create a local model 
+                      href: ../syntex/create-local-model.md 
+                    - name: Train your model
+                      items:
+                        - name: Create a classifier
+                          href: ../syntex/create-a-classifier.md
+                        - name: Create an extractor
+                          href: ../syntex/create-an-extractor.md
+                        - name: Leverage term store taxonomy to create an extractor
+                          href: ../syntex/leverage-term-store-taxonomy.md
+                        - name: Explanation types 
+                          href: ../syntex/explanation-types-overview.md
+                        - name: Use explanation templates 
+                          href: ../syntex/explanation-templates.md
+                        - name: Use accessibility mode
+                          href: ../syntex/accessibility-mode.md
+                        - name: Rename an extractor
+                          href: ../syntex/rename-an-extractor.md
+                    - name: Manage your model
+                      items:
+                        - name: Apply a model
+                          href: ../syntex/apply-a-model.md
+                        - name: Share an enterprise model 
+                          href: ../syntex/model-discovery.md
+                        - name: Discover other trained models 
+                          href: ../syntex/discover-other-trained-models.md
+                        - name: Apply a retention label 
+                          href: ../syntex/apply-a-retention-label-to-a-model.md
+                        - name: Apply a sensitivity label 
+                          href: ../syntex/apply-a-sensitivity-label-to-a-model.md
+                        - name: Rename a model
+                          href: ../syntex/rename-a-model.md
+                        - name: Delete a model
+                          href: ../syntex/delete-a-model.md
+                        - name: Duplicate a model
+                          href: ../syntex/duplicate-a-model.md
+                        - name: Manage library settings 
+                          href: ../syntex/manage-library-settings.md
+                        - name: Choose a library view 
+                          href: ../syntex/choose-library-view.md
+                        - name: View processing status 
+                          href: ../syntex/processing-status.md
+                        - name: Analyze model usage
+                          href: ../syntex/model-usage-analytics.md
+
+                - name: Video translation
+                  href: https://support.microsoft.com/office/2e34ad1b-e213-47ed-a806-5cc0d88751de
+
+            - name: Microsoft 365 Archive
+              items:
+                - name: Overview 
+                  href: ../archive/archive-overview.md
+                - name: Admin setup 
+                  href: ../archive/archive-setup.md
+                - name: Privacy, security, & compliance 
+                  href: ../archive/archive-privacy-security.md
+                - name: Pricing model 
+                  href: ../archive/archive-pricing.md
+                - name: Education offering 
+                  href: ../archive/archive-education-offering.md  
+                - name: Archive states 
+                  href: ../archive/archive-states.md
+                - name: Manage 
+                  href: ../archive/archive-manage.md
+                - name: Compliance 
+                  href: ../archive/archive-compliance.md
+                - name: End user experience 
+                  href: ../archive/archive-end-user.md
+                - name: FAQs
+                  href: ../archive/archive-faq.md
+
+            - name: Microsoft 365 Backup
+              items:
+                - name: Overview 
+                  href: ../backup/backup-overview.md
+                - name: Pricing model
+                  href: ../backup/backup-pricing.md
+                - name: Initial setup 
+                  href: ../backup/backup-setup.md
+                - name: Create, view, & edit policies 
+                  href: ../backup/backup-view-edit-policies.md
+                - name: Restore data 
+                  href: ../backup/backup-restore-data.md
+                - name: Invoice management
+                  href: ../backup/backup-billing.md
+                - name: Offboarding
+                  href: ../backup/backup-offboarding.md
+                - name: Privacy, security, & compliance
+                  href: ../backup/backup-privacy-security.md
+                - name: FAQs
+                  href: ../backup/backup-faq.md
+                - name: Microsoft 365 Backup Storage
+                  items:
+                    - name: Overview
+                      href: ../backup/storage/backup-3p-overview.md 
+                    - name: Billing
+                      href: ../backup/storage/backup-3p-billing.md
+                    - name: Application lifecyle
+                      href: ../backup/storage/backup-3p-lifecycle.md

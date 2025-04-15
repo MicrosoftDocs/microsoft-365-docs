@@ -3,10 +3,11 @@ title: "Microsoft 365 informed network routing"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/06/2021
+ms.date: 04/05/2024
 audience: Admin
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: network
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -14,18 +15,19 @@ ms.collection:
 - scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
+- must-keep
 description: "Microsoft 365 informed network routing"
 ---
 
 # Microsoft 365 informed network routing
 
-Informed network routing is a feature that integrates various Microsoft 365 applications with third party software defined network (SD-WAN) solutions in order to optimize and improve your network connectivity to Microsoft service endpoints. Optimized SD-WAN connectivity may result in improved user experiences and performance.
+Informed network routing is a feature that integrates various Microsoft 365 applications with third party software defined network (SD-WAN) solutions in order to optimize and improve your network connectivity to Microsoft service endpoints. Optimized SD-WAN connectivity might result in improved user experiences and performance.
 
 ## Overview
 
-Informed network routing provides a bi-directional data sharing channel between Microsoft and your SD-WAN solution. For every office location and Internet circuit that you configure, Microsoft periodically shares feedback with the SD-WAN solution on the quality of selected Microsoft 365 application experiences for network traffic associated with each specific Internet circuit. Using this feedback, the SD-WAN solution may then take smart recovery actions by routing Microsoft 365 application traffic through alternate available links. 
+Informed network routing provides a bi-directional data sharing channel between Microsoft and your SD-WAN solution. For every office location and Internet circuit that you configure, Microsoft periodically shares feedback with the SD-WAN solution on the quality of selected Microsoft 365 application experiences for network traffic associated with each specific Internet circuit. Using this feedback, the SD-WAN solution might then take smart recovery actions by routing Microsoft 365 application traffic through alternate available links.
 
-Quality of service degradations in the path of a particular Internet circuit such as increased latency or high packet loss are difficult to detect on a continuous basis. These degradations may be detrimental to user experiences for applications such as Exchange Online, SharePoint, OneDrive, and Microsoft Teams. Common symptoms include slow search of Exchange content, high transfer times when interacting with SharePoint or OneDrive document libraries, or poor call or meeting quality in Microsoft Teams.
+Quality of service degradations in the path of a particular Internet circuit such as increased latency or high packet loss are difficult to detect on a continuous basis. These degradations might be detrimental to user experiences for applications such as Exchange Online, SharePoint, OneDrive, and Microsoft Teams. Common symptoms include slow search of Exchange content, high transfer times when interacting with SharePoint or OneDrive document libraries, or poor call or meeting quality in Microsoft Teams.
 
 The feedback and recovery mechanism within informed network routing seeks to dynamically detect such issues in near real time and informs the deployed SD-WAN solution to take automatic recovery actions.
 
@@ -46,9 +48,9 @@ Microsoft is working with various partners to enable integration with Microsoft 
 
 ### Network topology
 
-Informed network routing currently identifies traffic associated with a specific office location and Internet circuit based on the public IP address used to send network traffic to Microsoft. 
+Informed network routing currently identifies traffic associated with a specific office location and Internet circuit based on the public IP address used to send network traffic to Microsoft.
 
-In the case where there isn't at least one network circuit providing direct Internet access at a branch location, informed network routing may not provide significant value.
+In the case where there isn't at least one network circuit providing direct Internet access at a branch location, informed network routing might not provide significant value.
 
 ### Application usage
 
@@ -56,13 +58,12 @@ Application experience data (reflected through network quality metrics) is colle
 
 ## Enabling informed network routing
 
-Enabling informed network routing requires multiple steps, some of which will need to be performed within the configuration interface of your SD-WAN solution. Consult your SD-WAN solution vendor for guidance on how to initiate the process of enabling informed network routing within the SD-WAN solution before proceeding with configuration in the Microsoft 365 admin center.
+Enabling informed network routing requires multiple steps, some of which need to be performed within the configuration interface of your SD-WAN solution. Consult your SD-WAN solution vendor for guidance on how to initiate the process of enabling informed network routing within the SD-WAN solution before proceeding with configuration in the Microsoft 365 admin center.
 
 Once you're ready to enable informed network routing in the Microsoft 365 admin center, ensure you have the necessary **User Admin**, or **Global admin** permissions.
 
 >[!IMPORTANT]
 >In order to provide the necessary tenant-level applications permissions consent for the selected SD-WAN solution to access the informed network routing data sharing channel, you must perform the following steps as a global administrator.
-
 
 ### Step 1: Open SD-WAN solution configuration options
 
@@ -88,15 +89,15 @@ Select **Next**.
 
 ### Step 4: Grant permissions to the SD-WAN solution
 
-This step will initiate a permissions grant request with Azure Active Directory (Azure AD). You'll be requested to grant tenant-level permissions that allow your selected SD-WAN solution access to the informed network routing data storage and the service health information associated with your tenant. This action requires **Azure AD DC admin**, or **Global admin** role permissions.
+This step will initiate a permissions grant request with Microsoft Entra ID. You'll be requested to grant tenant-level permissions that allow your selected SD-WAN solution access to the informed network routing data storage and the service health information associated with your tenant. This action requires **Microsoft Entra DC admin**, or **Global admin** role permissions.
 
-Select the **Give permission to this application** link and follow the Azure AD requests.
+Select the **Give permission to this application** link and follow the Microsoft Entra ID requests.
 
 Once you've completed the permissions grant, select **Next**.
 
 ### Step 5: Confirm your configuration settings
 
-The final step in enabling informed network routing for your tenant is a confirmation page that displays the settings you've provided. 
+The final step in enabling informed network routing for your tenant is a confirmation page that displays the settings you've provided.
 
 Informed network routing is now enabled for your tenant.
 
@@ -108,11 +109,11 @@ You'll perform much of the configuration for informed network routing within you
 
 Each office location must be configured in the Microsoft 365 admin center so that informed network routing can properly identify traffic associated with the network circuits providing connectivity to these locations.
 
-Office locations may be auto-detected as part of Microsoft's ongoing collection of network telemetry. As a result, some locations may be pre-populated in the admin center for your tenant. 
+Office locations might be autodetected as part of Microsoft's ongoing collection of network telemetry. As a result, some locations might be prepopulated in the admin center for your tenant.
 
-If these locations are accurate, you'll simply need to enable the informed network routing feature for each desired location and configure the Internet circuits and their public IP addresses. 
+If these locations are accurate, you'll simply need to enable the informed network routing feature for each desired location and configure the Internet circuits and their public IP addresses.
 
-If the auto-detected locations are not accurate, or there are no locations pre-populated in your tenant, you'll have to add or edit locations manually to reflect an accurate topology of your organization.
+If the autodetected locations aren't accurate, or there are no locations prepopulated in your tenant, you'll have to add or edit locations manually to reflect an accurate topology of your organization.
 
 ### Updating locations
 
@@ -157,9 +158,9 @@ Data exchanged between Microsoft and the SD-WAN solution provider is stored in t
 
 Data is retained in this location for up to 30 days. When disabled, all remaining data is removed within this 30-day retention window.
 
-Data in this location is exchanged with the selected SD-WAN solution, and the location of the configured SD-WAN solution may not be within the same region. Customers should work with their SD-WAN solution provider to evaluate any data storage location requirements prior to production deployment.
+Data in this location is exchanged with the selected SD-WAN solution, and the location of the configured SD-WAN solution might not be within the same region. Customers should work with their SD-WAN solution provider to evaluate any data storage location requirements prior to production deployment.
 
-## Related topics
+## Related articles
 
 [Network connectivity in the Microsoft 365 admin center](office-365-network-mac-perf-overview.md)
 

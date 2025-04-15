@@ -3,9 +3,9 @@ title: Tenant management for Microsoft 365 for enterprise
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/01/2020
+ms.date: 08/15/2024
 audience: ITPro
-ms.topic: article
+ms.topic: solution-overview
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
@@ -15,6 +15,7 @@ ms.collection:
 - m365solution-tenantmanagement
 - m365solution-overview
 - tenant-management
+- must-keep
 ms.custom:
 - Ent_Solutions
 description: "An overview of the planning, deployment, and ongoing operation of your Microsoft 365 tenants."
@@ -40,11 +41,11 @@ But first, let's take a moment to understand what a tenant is and what a tenant 
 
 A Microsoft 365 tenant is a dedicated instance of the services of Microsoft 365 and your organization data stored within a specific default location, such as Europe or North America. This location is specified when you create the tenant for your organization. Each Microsoft 365 tenant is distinct, unique, and separate from all other Microsoft 365 tenants. You create a Microsoft 365 tenant when you purchase one or more products from Microsoft, such as Microsoft 365 E3 or E5, and a set of licenses for each.
 
-Your Microsoft 365 tenant also includes an Azure Active Directory (Azure AD) tenant, which is a dedicated instance of Azure AD for user accounts, groups, and other objects. Each Azure AD tenant is distinct, unique, and separate from all other Azure AD tenants. While your organization can have multiple Azure AD tenants that you can set up with Azure subscriptions, Microsoft 365 tenants can only use a single Azure AD tenant, the one that was created when you created the tenant.
+Your Microsoft 365 tenant also includes a Microsoft Entra tenant, which is a dedicated instance of Microsoft Entra ID for user accounts, groups, and other objects. Each Microsoft Entra tenant is distinct, unique, and separate from all other Microsoft Entra tenants. While your organization can have multiple Microsoft Entra tenants that you can set up with Azure subscriptions, Microsoft 365 tenants can only use a single Microsoft Entra tenant, the one that was created when you created the tenant.
 
 Here is an example:
 
-![An example Microsoft 365 tenant with its Azure AD tenant.](../media/tenant-management-overview/tenant-management-example-tenant.png)
+![An example Microsoft 365 tenant with its Microsoft Entra tenant.](../media/tenant-management-overview/tenant-management-example-tenant.png)
 
 *Tenant management* is the planning, deployment, and ongoing operation of your Microsoft 365 tenants.
 
@@ -62,13 +63,13 @@ Here are the elements:
   - For enterprise networks, you have optimized network traffic to the Microsoft network for onsite workers.
   - You have optimized network traffic for remote workers who are using a VPN client.
 - You have synchronized your Active Directory Domain Services (AD DS) accounts, groups, and other objects.
-  - Your Azure AD tenant accounts are mapped to Exchange Online mailboxes with the correct DNS domains for email addresses.
+  - Your Microsoft Entra tenant accounts are mapped to Exchange Online mailboxes with the correct DNS domains for email addresses.
   - Your user accounts have been assigned the correct licenses from the correct purchased products (such as Microsoft 365 E3 or E5).
 - You have configured strong identity and access management.
   - You are requiring secure user sign-in with passwordless or multi-factor authentication (MFA).
   - You have Conditional Access policies that enforce sign-in requirements and restrictions for higher levels of security.
 - On-premises Office servers and their data have been migrated to cloud apps or are being used in a hybrid configuration.
-- You are doing device management with Intune or Basic Mobility and Security built into Microsoft 365.
+- You are managing devices with Intune or Basic Mobility and Security built into Microsoft 365.
   - Your organization-owned devices are enrolled and managed.
   - The apps for personal devices are managed.
 
@@ -81,7 +82,7 @@ In this illustration, the Microsoft 365 tenant includes:
 - Products and licenses for Microsoft 365 E3 and E5.
 - Microsoft 365 productivity apps.
 - Intune with enrolled devices and device and application policies.
-- An Azure AD tenant that has synchronized user account (groups and other directory objects are not shown), domains, and Conditional Access policies.
+- A Microsoft Entra tenant that has synchronized user account (groups and other directory objects are not shown), domains, and Conditional Access policies.
 
 ## Tenant capabilities for Microsoft 365 for enterprise
 
@@ -109,10 +110,10 @@ The following sections and table list the key capabilities and licensing for the
 
 |Capability or feature|Description|Licensing|
 |---|---|---|
-|Synchronize on-premises Active Directory Domain Services (AD DS) with your Azure AD tenant|Leverage your on-premises identity provider for user accounts, groups, and other objects.|Microsoft 365 E3 or E5|
+|Synchronize on-premises Active Directory Domain Services (AD DS) with your Microsoft Entra tenant|Leverage your on-premises identity provider for user accounts, groups, and other objects.|Microsoft 365 E3 or E5|
 |MFA enforced with security defaults|Protect against compromised identities and devices by requiring a second form of authentication for sign-ins. Security defaults require MFA for all user accounts.|Microsoft 365 E3 or E5|
 |MFA enforced with Conditional Access|Require MFA based on the attributes of the sign-in with Conditional Access policies.|Microsoft 365 E3 or E5|
-|MFA enforced with risk-based Conditional Access|Require MFA based on the risk of the user sign-in with Microsoft Defender for Identity.|Microsoft 365 E5 or E3 with Azure AD Premium P2 licenses|
+|MFA enforced with risk-based Conditional Access|Require MFA based on the risk of the user sign-in with Microsoft Defender for Identity.|Microsoft 365 E5 or E3 with Microsoft Entra ID P2 licenses|
 |Self-Service Password Reset (SSPR)|Allow your users to reset or unlock their passwords or accounts.|Microsoft 365 E3 or E5|
 ||||
 
@@ -120,7 +121,7 @@ The following sections and table list the key capabilities and licensing for the
 
 |Capability or feature|Description|Licensing|
 |---|---|---|
-|Migrate to Windows 10|Migrate your devices that run Windows 7 or Windows 8.1 to Windows 10 Enterprise.|Windows 10 Enterprise licenses included with Microsoft 365 E3 or E5|
+|Migrate to Windows 11|Migrate your devices that run Windows 7, Windows 8.1, or Windows 10 to Windows 11 Enterprise.|Windows 11 Enterprise licenses included with Microsoft 365 E3 or E5|
 |Migrate to Microsoft 365 Apps for enterprise|Migrate your Office client apps such as Word and PowerPoint to the versions installed from the cloud that are updated with new features.|Microsoft 365 E3 or E5|
 |Migrate on-premises servers and data to Microsoft 365|Migrate your Exchange mailboxes, SharePoint sites, and Skype for Business Online to Microsoft 365 cloud services.|Microsoft 365 E3 or E5|
 ||||
@@ -146,5 +147,3 @@ Use these steps to set up and manage your Microsoft 365 tenants.
 [![The steps to deploy and manage a Microsoft 365 tenant.](../media/tenant-management-overview/tenant-management-step-grid.png)](tenant-management-tenants.md)
 
 Each step describes deployment options, summarizes the results, and ongoing maintenance tasks.
-
-To understand how a fictional but representative multi-national organization deployed the elements of their Microsoft 365 tenant, see the [Contoso case study](../enterprise/contoso-case-study.md).

@@ -5,10 +5,10 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 08/31/2020
+ms.date: 11/11/2024
 audience: Admin
-ms.topic: article
-ms.service: microsoft-365-business
+ms.topic: overview
+ms.service: microsoft-365-basic-mobility-security
 ms.localizationpriority: medium
 ms.collection: 
 - Tier3
@@ -17,10 +17,12 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- basic-mobility-security
 ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 - AdminTemplateSet
+- basic-mobility-security
 search.appverid:
 - MET150
 description: "Manage and secure mobile devices connected to your Microsoft 365 organization by setting up and using Basic Mobility and Security."
@@ -46,7 +48,7 @@ To see what Basic Mobility and Security supports for each type of device, see [C
 
 ## Setup steps for Basic Mobility and Security
 
-A Microsoft 365 global admin must complete the following steps to activate and set up Basic Mobility and Security. For detailed steps, follow the guidance in [Set up Basic Mobility and Security](set-up.md). 
+A [Directory Writers](/entra/identity/role-based-access-control/permissions-reference) admin must complete the following steps to activate and set up Basic Mobility and Security. For detailed steps, follow the guidance in [Set up Basic Mobility and Security](set-up.md).
 
 Here's a summary of the steps:
 
@@ -70,4 +72,4 @@ If you just need mobile app management (MAM), perhaps for people updating work p
 
 [Set up Basic Mobility and Security](set-up.md) (article)\
 [Enroll your mobile device using Basic Mobility and Security](enroll-your-mobile-device.md) (article)\
-[Manage devices enrolled in Mobile Device Management for Microsoft 365](manage-enrolled-devices.md) (article)\
+[Manage devices enrolled in Mobile Device Management for Microsoft 365](manage-enrolled-devices.md) (article)

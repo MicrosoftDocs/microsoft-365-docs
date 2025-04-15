@@ -1,9 +1,9 @@
 ---
-title: Use the Shifts connector wizard to connect Shifts to UKG Pro Workforce Management (Preview)
+title: Use the Shifts connector wizard to connect Shifts to UKG Pro Workforce Management
 author: lana-chin
-ms.author: v-chinlana
-manager: serdars
-ms.reviewer: imarquesgil
+ms.author: jtremper
+manager: jtremper
+ms.reviewer: harrywong
 ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
@@ -17,14 +17,14 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 10/2/2023
+ms.date: 12/20/2024
 ---
 
-# Use the Shifts connector wizard to connect Shifts to UKG Pro Workforce Management (Preview)
+# Use the Shifts connector wizard to connect Shifts to UKG Pro Workforce Management
 
 ## Overview
 
-The [Microsoft Teams Shifts connector for UKG Pro Workforce Management](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-pro-workforce-management) (Preview) enables you to integrate the Shifts app in Microsoft Teams with your UKG Pro Workforce Management (UKG Pro WFM) system. Your frontline workers can seamlessly view and manage their schedules in UKG Pro WFM from within Shifts.
+The [Microsoft Teams Shifts connector for UKG Pro Workforce Management](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-pro-workforce-management) enables you to integrate the Shifts app in Microsoft Teams with your UKG Pro Workforce Management (UKG Pro WFM) system. Your frontline workers can seamlessly view and manage their schedules in UKG Pro WFM from within Shifts.
 
 In this article, we walk you through how to use the Shifts connector wizard in the Microsoft 365 admin center to connect Shifts to UKG Pro WFM.
 

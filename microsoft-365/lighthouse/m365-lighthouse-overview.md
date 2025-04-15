@@ -4,10 +4,10 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: crimora
-ms.date: 07/14/2023
+ms.reviewer: crimora, ebamoh
+ms.date: 11/11/2024
 audience: Admin
-ms.topic: article
+ms.topic: overview
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
@@ -15,10 +15,11 @@ ms.collection:
 - scotvorg
 - M365-subscription-management
 - Adm_O365
+- essentials-overview                        
 ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse 
-- intro-overview                        
+- intro-overview
 search.appverid: MET150
 description: "For Managed Service Providers (MSPs), learn how Microsoft 365 Lighthouse can help you secure and manage customer tenants in one location."
 ---
@@ -36,14 +37,14 @@ No additional costs are associated with using Lighthouse to manage Microsoft 365
 > [!IMPORTANT] 
 > To use Lighthouse, MSPs and their customer tenants must meet the requirements listed in [Microsoft 365 Lighthouse requirements](m365-lighthouse-requirements.md).
 
-For more information about the CSP program, see the [Cloud Solution Provider program overview](/partner-center/csp-overview).
+For more information about the CSP program, see the [Cloud Solution Provider program overview - Partner Center](/partner-center/csp-overview).
 
 > [!NOTE]  
 > A similar offering, Azure Lighthouse, helps service providers deliver managed services for Azure services by using comprehensive and robust management tooling built into the Azure platform. To learn more, see [What is Azure Lighthouse?](/azure/lighthouse/overview)
 
 ## Watch: What is Microsoft 365 Lighthouse?
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4QVMP]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=709ebb5a-34ea-417d-8a1e-f105f43feb91]
 
 ## Microsoft 365 Lighthouse benefits
 
@@ -56,15 +57,17 @@ Lighthouse helps MSPs grow secure and manage Microsoft 365 services and connecte
 - Simplifying common tasks like resetting a password.
 - Configuring multifactor authentication and self-service password reset (SSPR), including tools to help drive adoption by users.
 - Understanding and protecting against risky sign-ins.
-- Managing threats on Windows 10 devices by providing details on threats detected by Microsoft 365 Defender and actions to take to resolve issues and keep devices up to date.
+- Managing threats on Windows 10 devices by providing details on threats detected by Microsoft Defender XDR and actions to take to resolve issues and keep devices up to date.
 - Providing insights into Microsoft 365 service incidents and advisories that impact the customer tenants they manage.
 
 ## Watch: Demonstration of Microsoft 365 Lighthouse
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5e61O]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=797a2bb2-0ccb-41ac-ac97-80ced13be066]
 
 > [!NOTE]
 > For more information on how to sign up, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
+
+Check out the other [Microsoft 365 Lighthouse videos](https://www.youtube.com/playlist?list=PLnWjfDdQkUQSCbV-ftVD311_fZxghB22C) on our YouTube channel.
 
 ## Related content
 

@@ -1,3 +1,4 @@
+items:
 - name: Microsoft 365 for enterprise documentation and resources
   href: index.yml
 - name: Microsoft 365 for enterprise overview
@@ -25,15 +26,17 @@
           href: ../admin/setup/add-domain.md
         - name: Configure endpoints to bypass
           items: 
-            - name: Office 365 IP Address and URL Web service
+            - name: Microsoft 365 IP Address and URL Web service
               href: microsoft-365-ip-web-service.md
             - name: Additional endpoints not included in the Web service
               href: additional-office365-ip-addresses-and-urls.md
-            - name: Additional network security requirements for Office 365 GCC High and DOD
+            - name: Additional network security requirements for Microsoft 365 GCC High and DOD
               href: additional-network-security-requirements-for-office-365-gcchigh-and-dod.md
-            - name: DNS records for Office 365 DoD
+            - name: External DNS records for Microsoft 365
+              href: external-domain-name-system-records.md
+            - name: DNS records for Microsoft 365 DoD
               href: dns-records-for-office-365-dod.md
-            - name: DNS records for Office 365 GCC High
+            - name: DNS records for Microsoft 365 GCC High
               href: dns-records-for-office-365-gcc-high.md
         - name: Content Delivery Network (CDN) Quickstart
           href: office-365-cdn-quickstart.md
@@ -49,7 +52,7 @@
               href: microsoft-365-vpn-implement-split-tunnel.md
             - name: Securing Teams media traffic for VPN split tunneling
               href: microsoft-365-vpn-securing-teams.md
-            - name: Stream and live events in VPN environments
+            - name: Teams events in VPN environments
               href: microsoft-365-vpn-stream-and-live-events.md
             - name: Microsoft 365 optimization for China users
               href: microsoft-365-networking-china.md
@@ -62,11 +65,13 @@
               href: implementing-expressroute.md
     - name: Manage
       items: 
-        - name: Office 365 endpoints
+        - name: Microsoft 365 endpoints
           items: 
             - name: Microsoft 365 endpoints
               href: microsoft-365-endpoints.md
-            - name: Managing Office 365 endpoints
+            - name: Unified cloud.microsoft domain for Microsoft 365 apps
+              href: cloud-microsoft-domain.md
+            - name: Managing Microsoft 365 endpoints
               href: managing-office-365-endpoints.md
             - name: Worldwide endpoints
               href: urls-and-ip-address-ranges.md
@@ -74,13 +79,13 @@
               href: microsoft-365-u-s-government-dod-endpoints.md
             - name: U.S. Government GCC High endpoints
               href: microsoft-365-u-s-government-gcc-high-endpoints.md
-            - name: Office 365 operated by 21Vianet endpoints
+            - name: Microsoft 365 operated by 21Vianet endpoints
               href: urls-and-ip-address-ranges-21vianet.md
         - name: Content delivery networks
           href: content-delivery-networks.md
-        - name: IPv6 support in Office 365 services
+        - name: IPv6 support in Microsoft 365 services
           href: ipv6-support.md
-        - name: NAT support with Office 365
+        - name: NAT support with Microsoft 365
           href: nat-support-with-microsoft-365.md
         - name: Network requests in Office for Mac
           href: network-requests-in-office-2016-for-mac.md
@@ -88,9 +93,24 @@
           href: network-planning-and-performance.md
         - name: Monitor connectivity
           href: monitor-connectivity.md
+        - name: Network Connectivity in Microsoft 365 admin center
+          items:
+            - name: Network Connectivity in Microsoft 365 admin center
+              href: office-365-network-mac-perf-overview.md
+            - name: Microsoft 365 Network Assessment
+              href: office-365-network-mac-perf-score.md
+            - name: Microsoft 365 Network Insights
+              href: office-365-network-mac-perf-insights.md
+            - name: Microsoft 365 Network Provider Assessments
+              href: office-365-network-mac-perf-nppdata.md
+            - name: Microsoft 365 Network Provider Details
+              href: office-365-network-mac-perf-nppdetails.md
+            - name: Microsoft 365 Connection Blockers 
+              href: office-365-network-mac-perf-connection-blockers.md
+            - name: Microsoft 365 Network connectivity test tool
+              href: office-365-network-mac-perf-onboarding-tool.md
     - name: Microsoft 365 Networking Partner Program
       href: microsoft-365-networking-partner-program.md
-
 - name: Tenant
   items: 
     - name: Roadmap
@@ -105,7 +125,7 @@
           href: setup-guides-for-microsoft-365.md
         - name: Integration
           items: 
-            - name: Integrated Apps and Azure AD
+            - name: Integrated Apps and Microsoft Entra ID
               href: integrated-apps-and-azure-ads.md
             - name: Integration with on-premises
               href: microsoft-365-integration.md
@@ -117,8 +137,6 @@
               href: hybrid-modern-auth-overview.md
             - name: Configure Exchange Server
               href: configure-exchange-server-for-hybrid-modern-authentication.md
-            - name: Configure Skype for Business
-              href: configure-skype-for-business-for-hybrid-modern-authentication.md
             - name: Remove or disable for Skype for Business and Exchange
               href: remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md
             - name: Office 2013, Office 2016, and Office 2019 client apps
@@ -126,7 +144,7 @@
         - name: Tenant isolation in Microsoft 365
           href: /compliance/assurance/assurance-microsoft-365-isolation-controls
           items: 
-            - name: Isolation and Access Control in Azure Active Directory
+            - name: Isolation and Access Control in Microsoft Entra ID
               href: microsoft-365-isolation-in-azure-active-directory.md
             - name: Monitoring and Testing Tenant Boundaries
               href: /compliance/assurance/assurance-monitoring-and-testing
@@ -148,6 +166,8 @@
             - name: Exchange Online monitoring
               href: microsoft-365-exchange-monitoring.md
               items:
+                - name: Service advisories for non-compliant shared mailboxes
+                  href: microsoft-365-non-compliant-shared-mailboxes-exo-service-advisory.md
                 - name: Service advisories for messages pending delivery to external recipients
                   href: microsoft-365-external-recipient-service-alerts.md
                 - name: Service advisories for Mailbox utilization
@@ -179,7 +199,7 @@
         - name: Cross-tenant identity mapping
           href: cross-tenant-identity-mapping.md
 
-        - name: Multitenant collaboration
+        - name: Multitenant organizations
           items:
             - name: Plan for multitenant orgs
               href: plan-multi-tenant-org-overview.md
@@ -191,24 +211,28 @@
               href: sync-users-multi-tenant-orgs.md
             - name: Multitenant Organization People Search
               href: multi-tenant-people-search.md
+            - name: Manage multitenant org settings
+              href: manage-multitenant-org-settings.md
+            - name: Multitenant org FAQ
+              href: multitenant-org-faq.md
 
         - name: Cross-tenant OneDrive migration
           items:
             - name: Cross-tenant OneDrive migration overview
               href: cross-tenant-onedrive-migration.md
-            - name: Step 1 Connect to tenants
+            - name: Step 1. Connect to tenants
               href: cross-tenant-onedrive-migration-step1.md
-            - name: Step 2 Establish trust between the tenants
+            - name: Step 2. Establish trust between the tenants
               href: cross-tenant-onedrive-migration-step2.md
-            - name: Step 3 Verify trust between the tenants
+            - name: Step 3. Verify trust between the tenants
               href: cross-tenant-onedrive-migration-step3.md
-            - name: Step 4 Pre-create users & groups
+            - name: Step 4. Pre-create users & groups
               href: cross-tenant-onedrive-migration-step4.md
-            - name: Step 5 Prepare the identity mapping file
+            - name: Step 5. Prepare the identity mapping file
               href: cross-tenant-onedrive-migration-step5.md
-            - name: Step 6 Start a cross-tenant OneDrive migration
+            - name: Step 6. Start a cross-tenant OneDrive migration
               href: cross-tenant-onedrive-migration-step6.md
-            - name: Step 7 Post migration steps
+            - name: Step 7. Post migration steps
               href: cross-tenant-onedrive-migration-step7.md
             - name: FAQs
               href: cross-tenant-onedrive-migration-faqs.md
@@ -216,19 +240,19 @@
           items:
             - name: Cross-tenant SharePoint migration overview
               href: cross-tenant-sharepoint-migration.md
-            - name: Step 1 Connect to tenants
+            - name: Step 1. Connect to tenants
               href: cross-tenant-sharepoint-migration-step1.md
-            - name: Step 2 Establish trust between the tenants
+            - name: Step 2. Establish trust between the tenants
               href: cross-tenant-sharepoint-migration-step2.md
-            - name: Step 3 Verify trust between the tenants
+            - name: Step 3. Verify trust between the tenants
               href: cross-tenant-sharepoint-migration-step3.md
-            - name: Step 4 Pre-create users & groups
+            - name: Step 4. Pre-create users & groups
               href: cross-tenant-sharepoint-migration-step4.md
-            - name: Step 5 Prepare the identity mapping file
+            - name: Step 5. Prepare the identity mapping file
               href: cross-tenant-sharepoint-migration-step5.md
-            - name: Step 6 Start a cross-tenant sharepoint migration
+            - name: Step 6. Start a cross-tenant sharepoint migration
               href: cross-tenant-sharepoint-migration-step6.md
-            - name: Step 7 Post migration steps
+            - name: Step 7. Post migration steps
               href: cross-tenant-sharepoint-migration-step7.md
             - name: FAQs
               href: cross-tenant-sharepoint-migration-faqs.md
@@ -288,6 +312,8 @@
               href: m365-dr-workload-spo.md
             - name: Microsoft Teams
               href: m365-dr-workload-teams.md
+            - name: Microsoft 365 Copilot
+              href: m365-dr-workload-copilot.md
             - name: Microsoft Defender for Office P1
               href: m365-dr-workload-mdo-p1.md
             - name: Office for the Web
@@ -331,27 +357,12 @@
             items: 
               - name: Overview
                 href: hybrid-solutions.md
-              - name: Use Azure Active Directory for SharePoint Server 2016 authentication
+              - name: Use Microsoft Entra ID for SharePoint Server authentication
                 href: /azure/active-directory/saas-apps/sharepoint-on-premises-tutorial
               - name: Connect an on-premises network to an Azure virtual network
                 href: connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md
               - name: Deploy a directory synchronization server in Azure IaaS
                 href: deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md
-              - name: Deploy high availability federated authentication in Azure
-                href: deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md
-                items: 
-                  - name: Phase 1 - Configure Azure
-                    href: high-availability-federated-authentication-phase-1-configure-azure.md
-                  - name: Phase 2 - Configure domain controllers
-                    href: high-availability-federated-authentication-phase-2-configure-domain-controllers.md
-                  - name: Phase 3 - Configure AD FS servers
-                    href: high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md
-                  - name: Phase 4 - Configure web application proxies
-                    href: high-availability-federated-authentication-phase-4-configure-web-application-pro.md
-                  - name: Phase 5 - Configure federated authentication
-                    href: high-availability-federated-authentication-phase-5-configure-federated-authentic.md
-              - name: SharePoint Server 2013 Disaster Recovery in Microsoft Azure
-                href: sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md
     - name: Manage
       items: 
         - name: User accounts
@@ -379,65 +390,14 @@
             - name: Turn it off
               href: turn-off-directory-synchronization.md
 
-- name: Client and server software
-  items: 
-    - name: Roadmap
-      href: client-server-software-roadmap-microsoft-365.md
-    - name: Architectural models for SharePoint, Exchange, Skype for Business, and Lync
-      href: architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md
-    - name: Plan your upgrade
-      href: plan-upgrade-previous-versions-office.md
-      items: 
-         - name: Office 2013
-           items:
-            - name: Upgrade from Office 2013 clients and servers
-              href: upgrade-office-2013-clients-servers.md
-            - name: Office 2013 desktop
-              href: /DeployOffice/endofsupport/plan-upgrade-older-versions-office
-            - name: Exchange Server 2013
-              href: exchange-2013-end-of-support.md  
-            - name: SharePoint 2013
-              href: upgrade-from-sharepoint-2013.md
-            - name: Lync Server 2013
-              href: upgrade-from-lync-2013.md
-            - name: Project Server 2013
-              href: project-server-2013-end-of-support.md
-         - name: Office 2010
-           items: 
-            - name: Upgrade from Office 2010 servers and clients
-              href: upgrade-from-office-2010-servers-and-products.md
-            - name: Office 2010 desktop
-              href: /DeployOffice/endofsupport/plan-upgrade-older-versions-office
-            - name: Exchange 2010
-              href: exchange-2010-end-of-support.md
-            - name: SharePoint 2010
-              href: upgrade-from-sharepoint-2010.md
-            - name: Lync Server 2010
-              href: /skypeforbusiness/plan-your-deployment/upgrade
-            - name: Project Server 2010
-              href: project-server-2010-end-of-support.md
-         - name: Office 2007
-           items: 
-            - name: Upgrade from Office 2007 servers and clients
-              href: upgrade-from-office-2007-servers-and-products.md
-            - name: Office 2007 desktop
-              href: /DeployOffice/endofsupport/plan-upgrade-older-versions-office
-            - name: Exchange 2007
-              href: exchange-2007-end-of-support.md
-            - name: SharePoint 2007
-              href: sharepoint-2007-end-of-support.md
-            - name: Office Communications Server
-              href: /skypeforbusiness/plan-your-deployment/upgrade
-            - name: PerformancePoint Server 2007
-              href: pps-2007-end-of-support.md
-            - name: Project Server 2007
-              href: project-server-2007-end-of-support.md
-
 - name: Compliance
-  href: ../compliance/index.yml
+  href: essentials-compliance.md
 
 - name: Security
-  href: ../security/index.yml
+  href: essentials-security.md
+
+- name: Privacy
+  href: essentials-privacy.md
 
 - name: Cloud services
   items: 
@@ -483,8 +443,6 @@
           href: https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe
         - name: Performance and tuning
           items: 
-            - name: Tune Microsoft 365 performance
-              href: tune-microsoft-365-performance.md
             - name: Performance tuning using baselines and performance history
               href: performance-tuning-using-baselines-and-history.md
             - name: Tune Exchange Online performance
@@ -496,12 +454,14 @@
                   href: introduction-to-performance-tuning-for-sharepoint-online.md
                 - name: Diagnosing performance issues with SharePoint
                   href: diagnosing-performance-issues-with-sharepoint-online.md
+                - name: Use the Page Diagnostics for SharePoint tool
+                  href: page-diagnostics-for-spo.md
             - name: Tune Project Online performance
               href: /ProjectOnline/tune-project-online-performance
             - name: Performance troubleshooting plan
               href: performance-troubleshooting-plan.md
 
-- name: Windows 10
+- name: Windows 11
   items:
     - name: How to check release health
       href: /windows/deployment/update/check-release-health
@@ -523,11 +483,7 @@
   href: /deployedge/deploy-edge-plan-deployment
 
 - name: Deployment and update channel example configurations
-  items:
-    - name: Overview
-      href: deploy-update-channels-examples.md
-    - name: Broad deployment of the latest releases
-      href: deploy-update-channels-examples-rapid-deploy.md
+  href: deploy-update-channels-examples.md
 
 - name: Manage Microsoft 365 with PowerShell
   href: manage-microsoft-365-with-microsoft-365-powershell.md
@@ -583,14 +539,10 @@
               items: 
                 - name: Disable access to Sway
                   href: disable-access-to-sway-with-microsoft-365-powershell.md
-                - name: Disable access to services while assigning user licenses
-                  href: disable-access-to-services-while-assigning-user-licenses.md
         - name: Groups
           items: 
             - name: Manage security groups
               href: manage-security-groups-with-microsoft-365-powershell.md
-            - name: Maintain security group membership
-              href: maintain-group-membership-with-microsoft-365-powershell.md
             - name: Manage Microsoft 365 groups
               href: manage-microsoft-365-groups-with-powershell.md
             - name: Manage Folders and Rules feature in Microsoft 365 Groups
@@ -617,77 +569,18 @@
           href: use-powershell-to-perform-a-staged-migration-to-microsoft-365.md
     - name: Manage Microsoft 365 with Windows PowerShell for Delegated Access partners
       href: manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-dap-p.md
-      items: 
-        - name: Manage Microsoft 365 tenants with Windows PowerShell for Delegated Access partners
-          href: manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissio.md
+      items:
         - name: Add a domain to a client tenancy with Windows PowerShell for Delegated Access partners
           href: add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe.md
         - name: Connect to Exchange Online via remote Windows PowerShell for Delegated Access partners
           href: /powershell/exchange/connect-to-exchange-online-powershell
-        - name: Retrieve customer reporting data via Windows PowerShell for Delegated Access partners
-          href: retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md
     - name: Manage Microsoft Teams
       href: /microsoftteams/teams-powershell-install
     - name: Manage add-ins with Centralized Deployment PowerShell
       href: use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md
 
-- name: Windows and Office 365 deployment lab kit
+- name: Windows and Microsoft 365 deployment lab kit
   href: modern-desktop-deployment-and-management-lab.md
-
-- name: Test Lab Guides
-  href: m365-enterprise-test-lab-guides.md
-  items: 
-    - name: Base configuration
-      items: 
-        - name: Lightweight
-          href: lightweight-base-configuration-microsoft-365-enterprise.md
-        - name: Simulated enterprise
-          href: simulated-ent-base-configuration-microsoft-365-enterprise.md
-    - name: Identity
-      items: 
-        - name: Password hash synchronization
-          href: password-hash-sync-m365-ent-test-environment.md
-        - name: Pass-through authentication
-          href: pass-through-auth-m365-ent-test-environment.md
-        - name: Federated authentication
-          href: federated-identity-for-your-microsoft-365-dev-test-environment.md
-        - name: Azure AD Seamless Single Sign-on
-          href: single-sign-on-m365-ent-test-environment.md
-        - name: Multifactor authentication
-          href: multi-factor-authentication-microsoft-365-test-environment.md
-        - name: Protect global administrator accounts
-          href: protect-global-administrator-accounts-microsoft-365-test-environment.md
-        - name: Password writeback
-          href: password-writeback-m365-ent-test-environment.md
-        - name: Password reset
-          href: password-reset-m365-ent-test-environment.md
-        - name: Automatic licensing and group membership
-          href: automate-licenses-group-membership-microsoft-365-test-environment.md
-        - name: Azure AD Identity Protection
-          href: azure-ad-identity-protection-microsoft-365-test-environment.md
-        - name: Identity and device access
-          href: identity-device-access-m365-test-environment.md
-          items: 
-            - name: Cloud-only
-              href: cloud-only-prereqs-m365-test-environment.md
-            - name: Password hash sync
-              href: phs-prereqs-m365-test-environment.md
-            - name: Pass-through authentication
-              href: pta-prereqs-m365-test-environment.md
-    - name: Mobile device management
-      items: 
-        - name: Enroll iOS and Android devices
-          href: enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md
-        - name: Device compliance policies
-          href: mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md
-    - name: Information protection
-      items: 
-        - name: Increased Microsoft 365 security
-          href: increased-o365-security-microsoft-365-enterprise-dev-test-environment.md
-        - name: Data classification
-          href: data-classification-microsoft-365-enterprise-dev-test-environment.md
-        - name: Privileged access management
-          href: privileged-access-microsoft-365-enterprise-dev-test-environment.md
 
 - name: Contoso case study
   href: contoso-case-study.md
@@ -700,8 +593,8 @@
       href: contoso-networking.md
     - name: Identity
       href: contoso-identity.md
-    - name: Windows 10 Enterprise
-      href: contoso-win10.md
+    - name: Windows 11 Enterprise
+      href: contoso-win11.md
     - name: Microsoft 365 Apps for enterprise
       href: contoso-o365pp.md
     - name: Mobile device management

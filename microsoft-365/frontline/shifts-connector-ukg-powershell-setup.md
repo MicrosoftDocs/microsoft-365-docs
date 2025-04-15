@@ -1,9 +1,9 @@
 ---
-title: Use PowerShell to connect Shifts to UKG Pro Workforce Management (Preview)
+title: Use PowerShell to connect Shifts to UKG Pro Workforce Management
 author: lana-chin
-ms.author: v-chinlana
-manager: serdars
-ms.reviewer: imarquesgil
+ms.author: jtremper
+manager: jtremper
+ms.reviewer: harrywong
 ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
@@ -17,14 +17,14 @@ ms.collection:
 appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 10/2/2023
+ms.date: 12/20/2024
 ---
 
-# Use PowerShell to connect Shifts to UKG Pro Workforce Management (Preview)
+# Use PowerShell to connect Shifts to UKG Pro Workforce Management
 
 ## Overview
 
-Use the [Microsoft Teams Shifts connector for UKG Pro Workforce Management](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-pro-workforce-management) (Preview) to integrate the Shifts app in Microsoft Teams with UKG Pro Workforce Management (UKG Pro WFM). Your frontline workers can seamlessly view and manage their schedules in UKG Pro WFM from within Shifts.
+Use the [Microsoft Teams Shifts connector for UKG Pro Workforce Management](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-pro-workforce-management) to integrate the Shifts app in Microsoft Teams with UKG Pro Workforce Management (UKG Pro WFM). Your frontline workers can seamlessly view and manage their schedules in UKG Pro WFM from within Shifts.
 
 In this article, we walk you through how to use PowerShell to set up and configure the connector to integrate Shifts with UKG Pro WFM.
 
@@ -98,7 +98,7 @@ Follow the on-screen instructions when you run the script. The script completes 
     - If you chose to run the [new teams script](#set-up-a-connection-and-create-a-new-team) to create new teams, mappings are based on the new teams you create.
     - If you chose to run the [existing teams script](#set-up-a-connection-and-map-an-existing-team) to map existing teams, mappings are based on WFM instance IDs and TeamIds that you enter. If a team has an existing schedule, the script removes all schedule data.
 
-After you run the script, a **Success** message confirms if your connection is successfully set up.
+    After you run the script, a **Success** message confirms if your connection is successfully set up.
 
 ## Manage your connection
 

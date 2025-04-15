@@ -18,6 +18,8 @@ f1.keywords: NOCSH
 
 # Determining Relevant Processes for Regression Detection
 
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
 To identify regressed processes in each application, different types of performance counters for every process running on a virtual machine during a test run should be tracked. Analyzing a performance regression involves assessing variables for many processes during application testing. Thus making the case for determining which are relevant for monitoring.
 
 To decide which processes are relevant for a given application, Test Base uses a mutual information ranking algorithm. The application and process can both be considered a type of discrete random variable. The association of the two random variables is measured using conditional probabilities for relevance. Processes are currently not displayed based on relevance.

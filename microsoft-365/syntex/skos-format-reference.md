@@ -2,10 +2,11 @@
 title: SKOS format reference for SharePoint taxonomy
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
-ms.date: 02/14/2023
+manager: jtremper
+ms.reviewer: ssquires
+ms.date: 03/14/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: reference
 ms.service: microsoft-syntex
 search.appverid:
 ms.collection:

@@ -1,21 +1,20 @@
 ---
-title: "Collaborate and share securely in Microsoft 365 Business Premium"
+title: "Collaborate and share securely with Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
-manager: dansimp
+ms.author: chrisda
+author: chrisda
+manager: deniseb
 audience: Admin
-ms.topic: conceptual
-ms.service: microsoft-365-security
-ms.subservice: m365bp
-ms.date: 04/14/2023
+ms.topic: article
+ms.service: microsoft-365-business-security
+ms.date: 05/31/2024
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - M365-Campaigns
 - m365solution-smb
 - m365-security
-- tier1
+- tier2
 ms.custom:
 - MiniMaven
 - MSB365
@@ -25,17 +24,17 @@ search.appverid:
 description: "An overview on how to collaborate and share files and communicate securely using Teams in Microsoft 365 Business Premium. In the closed environment provide by Teams, files and communications are free from cyber threats and cyberattacks."
 ---
 
-# Collaborate and share securely
+# Collaborate and share securely with Microsoft 365 Business Premium
 
-:::image type="content" source="media/mission5.png" alt-text="Diagram with Collaborate And Share Securely highlighted.":::
+:::image type="content" source="media/mission5.png" alt-text="Diagram with Collaborate And Share Securely highlighted." lightbox="media/mission5.png":::
 
-The best way to collaborate and share securely is to use Microsoft Teams. With Microsoft Teams, all your files and communications are in a protected environment and aren't being stored in unsafe ways outside of it. Your organization depends on protecting your data and information, which means that you want to protect your files by all means possible. Your next mission is to set up secure file sharing and communication. 
+The best way to collaborate and share securely is to use Microsoft Teams, and Teams is included in Microsoft 365 Business Premium. With Teams, all your files and communications are in a protected environment. With Teams, you can help set up and configure secure file sharing and communication within your organization.
 
-Your objectives are to:
+Your steps are to:
 
 - [Create Teams for collaboration](create-teams-for-collaboration.md).
 - [Set up meetings](set-up-meetings.md).
 - [Share files and videos](share-files-and-videos.md).
 - [Create a communication site](create-communications-site.md).
 
-Once you've achieved these objectives, proceed to [Set up and secure managed devices](m365bp-protect-managed-devices.md).
+Once you've achieved these steps, proceed to [Set up and secure managed devices](m365bp-protect-managed-devices.md).

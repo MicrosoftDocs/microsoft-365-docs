@@ -4,12 +4,12 @@ title: "Strengthen your security posture - Assess and protect"
 f1.keywords:
 - security posture
 - strengthen security posture
-ms.author: siosulli
-author: siosulli
-manager: dansimp
+ms.author: deniseb
+author: denisebmsft
+manager: deniseb
 audience: Admin
 description: Learn how to strengthen your organization's security posture - assess and protect.
-ms.topic: tutorial
+ms.topic: solution-overview
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 search.appverid: 
@@ -23,7 +23,7 @@ ms.collection:
 - highpri
 - tier1
 - ContentEnagagementFY24
-ms.date: 09/18/2023
+ms.date: 08/28/2024
 ---
 
 # Strengthen your security posture - Assess and protect
@@ -35,7 +35,7 @@ Central to understanding your security posture is having a comprehensive invento
 |Capability |Description|Get started|
 |:----------|:------------|:--------|
 |**Assess your devices** | Use the device inventory page in Microsoft Defender for Endpoint to get a comprehensive view of the devices discovered in your organization. Explore the information available like the risk level, platform information, and the onboarding status of a device. Use the filters available to customize your view. | [Device inventory](../security/defender-endpoint/machines-view-overview.md)|
-|**Assign device value** | Every device can potentially pose a risk to your organization but the impact of some devices being compromised compared to others can vary. You might have devices that belong to people who have access to sensitive, proprietary, or high priority information, this means the impact could be high if these devices are compromised. In contrast, devices that are only used for internet access with no data could be classified as having a lower risk. <br /><br /> Identifying and assigning value to your devices can help identify how vulnerable your organization is to cybersecurity threats. How assets affect your vulnerability is reflected in your exposure score in the Microsoft 365 Defender portal. Devices assigned as "high value" receive more weight meaning your score will be higher. | [Assign device value](../security/defender-vulnerability-management/tvm-assign-device-value.md)|
+|**Assign device value** | Every device can potentially pose a risk to your organization but the impact of some devices being compromised compared to others can vary. You might have devices that belong to people who have access to sensitive, proprietary, or high priority information, this means the impact could be high if these devices are compromised. In contrast, devices that are only used for internet access with no data could be classified as having a lower risk. <br /><br /> Identifying and assigning value to your devices can help identify how vulnerable your organization is to cybersecurity threats. How assets affect your vulnerability is reflected in your exposure score in the Microsoft Defender portal. Devices assigned as "high value" receive more weight meaning your score will be higher. | [Assign device value](../security/defender-vulnerability-management/tvm-assign-device-value.md)|
 |**Onboard newly discovered devices** | Devices that have been discovered, but aren't yet onboarded and secured by Microsoft Defender for Endpoint, appear in the device inventory Computers and Mobile tab. <br /><br /> To start onboarding these devices, see [Onboard newly discovered devices](#onboard-newly-discovered-devices). |[About onboarding status](../security/defender-endpoint/device-discovery.md#device-inventory) |
 
 ## Onboard newly discovered devices

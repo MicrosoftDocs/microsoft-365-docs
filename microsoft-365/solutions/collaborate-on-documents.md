@@ -1,11 +1,11 @@
 ---
 title: Collaborate with guests on a document (IT Admins)
-ms.author: mikeplum
-author: MikePlumleyMSFT
-manager: serdars
-ms.date: 07/18/2023
+author: DaniEASmith
+ms.author: danismith
+manager: jtremper
+ms.date: 05/31/2024
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-solutions
 ms.collection: 
 - highpri
@@ -32,19 +32,19 @@ If you need to collaborate with people outside your organization on documents in
 
 This video shows the configuration steps described in this document.</br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE450Vt?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b495cdf8-1838-418e-8872-94a56907170a]
 
-## Azure external collaboration settings
+## Microsoft Entra External ID external collaboration settings
 
-Sharing in Microsoft 365 is governed at its highest level by the [B2B external collaboration settings in Azure Active Directory](/azure/active-directory/external-identities/delegate-invitations). If guest-sharing is disabled or restricted in Azure AD, this setting overrides any sharing settings that you configure in Microsoft 365.
+Sharing in Microsoft 365 is governed at its highest level by the [external collaboration settings in Microsoft Entra External ID](/azure/active-directory/external-identities/delegate-invitations). If guest-sharing is disabled or restricted in Microsoft Entra External ID, this setting overrides any sharing settings that you configure in Microsoft 365.
 
-Check the B2B external collaboration settings to ensure that sharing with guests is not blocked.
+Check the external collaboration settings to ensure that sharing with guests isn't blocked.
 
-![Screenshot of Azure Active Directory Organizational Relationships Settings page.](../media/azure-ad-organizational-relationships-settings.png)
+![Screenshot of Microsoft Entra External ID Organizational Relationships Settings page.](../media/azure-ad-organizational-relationships-settings.png)
 
 To set external collaboration settings
 
-1. Log in to Azure Active Directory at [https://entra.microsoft.com/](https://entra.microsoft.com/).
+1. Sign in to Microsoft Entra External ID at [https://entra.microsoft.com/](https://entra.microsoft.com/).
 1. In the left navigation pane, expand **External identities**.
 1. Select **External collaboration settings**.
 1. Ensure that either **Member users and users assigned to specific admin roles can invite guest users including guests with member permissions** or **Anyone in the organization can invite guest users including guests and non-admins** is selected.
@@ -52,13 +52,13 @@ To set external collaboration settings
 
 Note the settings in the **Collaboration restrictions** section. Make sure that the domains of the guests that you want to collaborate with aren't blocked.
 
-If you work with guests from multiple organizations, you may want to restrict their ability to access directory data. This prevents them from seeing who else is a guest in the directory. To do this, under **Guest user access restrictions**, select **Guest users have limited access to properties and membership of directory objects settings** or **Guest user access is restricted to properties and memberships of their own directory objects**.
+If you work with guests from multiple organizations, you might want to restrict their ability to access directory data. This prevents them from seeing who else is a guest in the directory. To do this, under **Guest user access restrictions**, select **Guest users have limited access to properties and membership of directory objects settings** or **Guest user access is restricted to properties and memberships of their own directory objects**.
 
 ## SharePoint organization-level sharing settings
 
 In order for people outside your organization to have access to a document in SharePoint or OneDrive, the SharePoint and OneDrive organization-level sharing settings must allow for sharing with people outside your organization.
 
-The organization-level settings for SharePoint determine the settings that are available for individual SharePoint sites. Site settings cannot be more permissive than the organization-level settings. The organization-level setting for OneDrive determines the level of sharing that's available in users' OneDrive libraries.
+The organization-level settings for SharePoint determine the settings that are available for individual SharePoint sites. Site settings can't be more permissive than the organization-level settings. The organization-level setting for OneDrive determines the level of sharing that's available in users' OneDrive libraries.
 
 For SharePoint and OneDrive, if you want to allow unauthenticated file and folder sharing, choose **Anyone**. If you want to ensure that people outside your organization have to authenticate, choose **New and existing guests**. *Anyone* links are the easiest way to share: people outside your organization can open the link without authentication and are free to pass it on to others.
 
@@ -70,7 +70,7 @@ For SharePoint, choose the most permissive setting that's needed by any site in 
 To set SharePoint organization-level sharing settings
 
 1. In the SharePoint admin center, in the left navigation pane, under **Policies**, select <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a>.
-1. Ensure that external sharing for SharePoint or OneDrive is set to **Anyone** or **New and existing guests**. (Note that the OneDrive setting cannot be more permissive than the SharePoint setting.)
+1. Ensure that external sharing for SharePoint or OneDrive is set to **Anyone** or **New and existing guests**. (Note that the OneDrive setting can't be more permissive than the SharePoint setting.)
 1. If you made changes, select **Save**.
 
 ## SharePoint organization-level default link settings
@@ -79,11 +79,11 @@ The default file and folder link settings determine the link option that's shown
 
 Keep in mind that this setting affects SharePoint sites in your organization, as well as OneDrive.
 
-Choose a link from any of the following types which is then selected by default when users share files and folders:
+Choose a link from any of the following types, which is then selected by default when users share files and folders:
 
 - **Anyone with the link** - Choose this option if you expect to do a lot of unauthenticated file and folder sharing. If you want to allow *Anyone* links but are concerned about accidental unauthenticated sharing, consider one of the other options as the default. This link type is only available if you've enabled **Anyone** sharing.
 - **Only people in your organization** - Choose this option if you expect most file and folder sharing to be with people inside your organization.
-- **Specific people** - Consider this option if you expect to do a lot of file and folder sharing with guests. This type of link works with guests and requires them to authenticate.
+- **Specific people** - Consider this option if you expect to do many file and folder sharing with guests. This type of link works with guests and requires them to authenticate.
  
 ![Screenshot of SharePoint organization-level files and folders sharing settings.](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
@@ -91,24 +91,24 @@ To set the SharePoint and OneDrive organization-level default link settings
 
 1. Go to <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a> in the SharePoint admin center.
 1. Under **File and folder links**, select the default sharing link that you want to use.
-1. If you made changes, click **Save**.
+1. If you made changes, select **Save**.
 
 To set the permission for the sharing link, under **Choose the permission that's selected by default for sharing links.**
 
-1. Select **View** if you do not want users to make changes to the files and folders.
+1. Select **View** if you don't want users to make changes to the files and folders.
 1. Select **Edit** if you want to allow users to make changes to the files and folders.
 
 Optionally, choose an expiration time for *Anyone* links.
 
 To set permissions for links that allow sharing with anyone
 
-1. Under the **These links can give these permissions:** sub-pane, 
+1. Under the **These links can give these permissions:** subpane, 
     1. From the **Files** drop-down list, 
         - Select **View and edit** if you want to allow unauthenticated users to make changes to the files.
-        - Select **View** if you do not want unauthenticated users to make changes to the files.
+        - Select **View** if you don't want unauthenticated users to make changes to the files.
     2. From the **Folders** drop-down list,
         - Select **View, edit, and upload** if you want to allow unauthenticated users to make changes to the folders.
-        - Select **View** if you do not want unauthenticated users to make changes to the folders.
+        - Select **View** if you don't want unauthenticated users to make changes to the folders.
 
 ## SharePoint site-level sharing settings
 
@@ -133,4 +133,4 @@ Guest-sharing settings are now configured; so users can now share files and fold
 
 [Limit accidental exposure to files when sharing with guests](share-limit-accidental-exposure.md)
 
-[SharePoint and OneDrive integration with Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview)
+[SharePoint and OneDrive integration with Microsoft Entra External ID](/sharepoint/sharepoint-azureb2b-integration-preview)

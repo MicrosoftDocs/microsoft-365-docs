@@ -2,13 +2,14 @@
 title: "Connect your DNS records at web.com to Microsoft 365"
 f1.keywords:
 - CSH
-ms.author: nkagole
-author: nataliekagole
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
-ms.date: 02/21/2020
+ms.date: 08/21/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-domains
 ms.localizationpriority: medium
 ms.collection:
 - Tier2
@@ -36,6 +37,8 @@ After you add these records at web.com, your domain will be set up to work with 
 
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
+
+[!INCLUDE [How to get tech support for SMB](../../includes/smb-how-to-get-tech-support.md)]
 
 ## Change your domain's nameserver (NS) records
 
@@ -88,11 +91,11 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 
 1. On the Manage Advanced DNS Records page, select **+ ADD RECORD**.
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-add-record.png" alt-text="Select + ADD RECORD.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-add-record.png" alt-text="Screenshot of where you select Add a record to add a domain verification TXT record.":::
 
 1. Under **Type**, select **TXT** from the drop-down list.
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-TXT.png" alt-text="Select TXT from the Type drop-down list.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-TXT.png" alt-text="Select TXT from the Type drop-down list for the domain verification TXT record.":::
 
 1. Select, or copy and paste, the values from the following table.
 
@@ -139,7 +142,7 @@ To verify the record in Microsoft 365:
 
 1. On the Manage Advanced DNS Records page, select **+ ADD RECORD**.
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-add-record.png" alt-text="Select + ADD RECORD.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-add-record.png" alt-text="Screenshot of where you select Add a record to add an MX record.":::
 
 1. Under **Type**, select **MX** from the drop-down list.
 
@@ -151,7 +154,7 @@ To verify the record in Microsoft 365:
 
 1. Select **ADD**.
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-mx-add.png" alt-text="Select ADD.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-mx-add.png" alt-text="Screenshot of where you select Add to add an MX record.":::
 
 1. If there are any other MX records, delete all of them by selecting the edit tool, and then **Delete** for each record.
 
@@ -175,7 +178,7 @@ To verify the record in Microsoft 365:
 
 1. On the Manage Advanced DNS Records page, select **+ ADD RECORD**.
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-add-record.png" alt-text="Select + ADD RECORD.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-add-record.png" alt-text="Screenshot of where you select Add a record to add a CNAME record.":::
 
 1. Under **Type**, select **CNAME** from the drop-down list.
 
@@ -212,11 +215,11 @@ To verify the record in Microsoft 365:
 
 1. On the Manage Advanced DNS Records page, select **+ ADD RECORD**.
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-add-record.png" alt-text="Select + ADD RECORD.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-add-record.png" alt-text="Screenshot of where you select Add a record to add an SPF TXT record.":::
 
 1. Under **Type**, select **TXT** from the drop-down list.
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-TXT.png" alt-text="Select TXT from the Type drop-down list.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-TXT.png" alt-text="Select TXT from the Type drop-down list for the SPF TXT record.":::
 
 1. Select, or copy and paste, the values from the following table.
 
@@ -248,7 +251,7 @@ Only select this option if your organization uses Skype for Business for online 
 
 1. On the Manage Advanced DNS Records page, select **+ ADD RECORD**.
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-add-record.png" alt-text="Select + ADD RECORD.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-add-record.png" alt-text="Screenshot of where you select Add a record to add an SRV record.":::
 
 1. Under **Type**, select **SRV** from the drop-down list.
 
@@ -288,7 +291,7 @@ Only select this option if your organization uses Skype for Business for online 
 
 1. On the Manage Advanced DNS Records page, select **+ ADD RECORD**.
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-add-record.png" alt-text="Select + ADD RECORD.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-add-record.png" alt-text="Screenshot of where you select Add a record to add CNAME records for Skype for Business.":::
 
 1. Under **Type**, select **CNAME** from the drop-down list.
 
@@ -332,7 +335,7 @@ This service helps you secure and remotely manage mobile devices that connect to
 
 1. On the Manage Advanced DNS Records page, select **+ ADD RECORD**.
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-add-record.png" alt-text="Select + ADD RECORD.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-add-record.png" alt-text="Screenshot of where you select Add a record to add CNAME records for Mobile Device Management.":::
 
 1. Under **Type**, select **CNAME** from the drop-down list.
 

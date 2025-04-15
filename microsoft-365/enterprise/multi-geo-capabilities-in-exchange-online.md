@@ -4,10 +4,11 @@ ms.reviewer: adwood
 ms.date: 6/20/2023
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: deniseb
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: multi-tenant
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
@@ -30,9 +31,9 @@ You can place mailboxes in satellite geo locations by:
 
 ## Mailbox placement and moves
 
-After Microsoft completes the prerequisite multi-geo configuration steps, Exchange Online will honor the **PreferredDataLocation** attribute on user objects in Microsoft Azure Active Directory (Azure AD).
+After Microsoft completes the prerequisite multi-geo configuration steps, Exchange Online will honor the **PreferredDataLocation** attribute on user objects in Microsoft Entra ID.
 
-Exchange Online synchronizes the **PreferredDataLocation** property from Azure AD into the **MailboxRegion** property in the Exchange Online directory service. The value of **MailboxRegion** determines the geo location where user mailboxes and any associated archive mailboxes are placed. It isn't possible to configure a user's primary mailbox and archive mailboxes to reside in different geo locations. Only one geo location per user object is allowed.
+Exchange Online synchronizes the **PreferredDataLocation** property from Microsoft Entra ID into the **MailboxRegion** property in the Exchange Online directory service. The value of **MailboxRegion** determines the geo location where user mailboxes and any associated archive mailboxes are placed. It isn't possible to configure a user's primary mailbox and archive mailboxes to reside in different geo locations. Only one geo location per user object is allowed.
 
 - When **PreferredDataLocation** is configured on a user with an existing mailbox, the mailbox is put into a relocation queue and automatically moved to the specified geo location.
 - When **PreferredDataLocation** is configured on a user without an existing mailbox, the mailbox is provisioned into the specified geo location when you provision the mailbox.

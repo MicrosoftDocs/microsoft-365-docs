@@ -3,7 +3,7 @@ title: "Microsoft 365 Experience insights dashboard"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 08/10/2020
+ms.date: 01/06/2025
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
@@ -11,7 +11,8 @@ ms.localizationpriority: medium
 ms.collection: 
 - Tier1
 - scotvorg
-description: "Get a periodic report about how people in your organization use Microsoft 365 services and drill into each chart for more insights."
+ms.custom: campaignIDs-batch1
+description: "Get a report about how people in your organization use Microsoft 365 services and drill into each chart for more insights."
 ---
 
 # Microsoft 365 Experience insights dashboard
@@ -21,19 +22,19 @@ Experience insights is optimized for organizations with 2000 plus seats. We are 
 
 ## Watch: Experience insights dashboard overview
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW16N2s?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e157135d-859f-4b5f-aef4-8fb69496de9b]
 
 ## Go to the Experience insights dashboard
 
-There are a couple of ways to get the Experience insights dashboard page. If you’re a member of the global admin or global reader roles, when you log in to the Microsoft 365 admin center, you’ll see a one-time prompt to go to the Experience insights (preview) dashboard. You can access it at any time by selecting **Experience insights (preview)** from the admin home page.
+From the Microsoft 365 admin center, you can access it at any time by selecting **Experience insights (preview)** from the admin home page.
 
-:::image type="content" source="../../media/experience-insights-fre.png" alt-text="Screenshot: Image showing how to get to the experience insights dashboard":::
-
-If you’re a member of the reports reader role, once you sign into the admin center, you’ll automatically go to the Experience insights (preview) dashboard page. You can switch back to the admin center Dashboard view by selecting that option in the top right.
-
-:::image type="content" source="../../media/experience-insights-dashboard2.png" alt-text="Screenshot: Image showing an overview of the experience insights dashboard":::
+If you’re a member of the reports reader role, once you sign into the admin center, you’ll automatically go to the Experience insights (preview) dashboard page. You can switch back to the admin center Dashboard view by selecting the dropdown option next to **Experience insights (preview)**.
 
 To learn more, see [About admin roles](../add-users/about-admin-roles.md) and [Assign admin roles](../add-users/assign-admin-roles.md).
+
+## Overview
+
+The Overview page shows you data and information on feedback and help article views in your organization.
 
 ## Suggested training
 
@@ -67,7 +68,7 @@ The chart information gives you insight into the apps and services that you want
 
 **NPS survey response volume** is the total number of responses to the Net Promoter Score (NPS) survey. By default, Microsoft sends the survey to 5% of your users and asks “Would you recommend this product?” Use this data to gauge user satisfaction and to see what people are saying about the app. [Learn more](../manage/manage-feedback-product-insights.md)
 
-**Help article views** is the total number of views of Microsoft help articles and training videos about the app. Use this data to find topics of interest and share the suggested training with your users. [Learn more](experience-insights-help-articles.md)
+**Help article views** is the total number of views of Microsoft help articles and training videos about the app. Use this data to find topics of interest and share the suggested training with your users. [Learn more](#examples-of-help-articles)
 
 > [!NOTE]
 > You can filter the chart data for trends over the last 30 days, 90 days, or 180 days.
@@ -90,7 +91,7 @@ In the user feedback section, you can see the actual comments your users submitt
 
 ### Teams Net Promoter Score (NPS) example
 
-NPS details allow you see promoters, passives, and detractors so that you can get a pulse on the sentiment in your organization. Similar to product feedback, you can also view the specific comments your users submitted. In some cases where there is enough volume, you may also see Top topics that categorizes some of the comments into bucketed categories for easier parsing of the data.
+NPS details allows you to see promoters, passives, and detractors so that you can get a pulse on the sentiment in your organization. Similar to product feedback, you can also view the specific comments your users submitted. In some cases where there is enough volume, you may also see Top topics that categorizes some of the comments into bucketed categories for easier parsing of the data.
 
 :::image type="content" source="../../media/experience-insights-teams-nps2.png" alt-text="Screenshot: Image showing Teams NPS insights":::
 
@@ -99,6 +100,96 @@ NPS details allow you see promoters, passives, and detractors so that you can ge
 For the first time, you can now see what articles your users are consuming on Support.Microsoft.com com or via the Microsoft 365 in-app help experiences. You can see the top articles for the specific app or service in your organization, how many people are viewing the app, and preview the article in-line. This can be an excellent way of identifying what your users are trying to do and where they may be struggling. Since not all users seek out help, it’s a good indication of content that may be beneficial to a broader set of users in the organization. [Learn more](experience-insights-help-articles.md)
 
 :::image type="content" source="../../media/experience-insights-teams-help-article2.png" alt-text="Screenshot: Image showing the number of help articles read and the corresponding Microsoft 365 product":::
+
+## Interpret your organization's help article views
+
+Chart information gives you insight into the apps and services that you want to track data on. Help article views is the total number of help article page views that users in your organization have viewed in a Microsoft 365 app or on support.microsoft.com.
+
+:::image type="content" source="../../media/help-articles-detail-view2.png" alt-text="Screenshot: Image showing the Help article views.":::
+
+> [!NOTE]
+> Help article views are only shown for users who have signed in to the desktop app or have signed in to [support.microsoft.com](https://support.microsoft.com).
+
+|Item|Description|
+|:-----|:-----|
+|1 |Use the Help content tab to see where people need help using the app or service. |
+|2 |You can filter for trends over the last 30 days, 90 days, or 180 days. |
+|3 |Total number of help article page views in app or on [support.microsoft.com](https://support.microsoft.com). |
+|4 |List of the top help articles related to the app or service that your end-users are reading. If an article covers multiple apps, it will be shown for each related app. |
+
+## Examples of help articles
+
+Help articles can be found in-app in the help pane or at the [Microsoft support page](https://support.microsoft.com/).
+
+### Help article on Microsoft support page
+
+:::image type="content" source="../../media/help-article-example.png" alt-text="Screenshot: Example support.microsoft.com article":::
+
+### In-app help article in Microsoft Word
+
+:::image type="content" source="../../media/help-article-example-in-app-word.png" alt-text="Screenshot: Example Word desktop app help article":::
+
+## Manage adoption success with actions in Experience insights
+
+Actions let you track the actions you take to drive user engagement and success for Microsoft 365 in your organization. You can measure the impact of your actions by analyzing how each action correlates with changes in usage, NPS, feedback, and help article views. This empowers you to make data-driven decisions and continuously improve your strategies for user engagement and satisfaction.
+
+The actions experience within Microsoft 365 admin center includes the following features and capabilities: 
+
+- Add an action
+
+- Import multiple actions from a CSV file
+
+- Edit and remove previously added actions
+
+- Duplicate actions
+
+- Export the list of actions to CSV
+
+- View your action impact on Experience insights graphs
+
+- See the list of actions related to a product on the product detail card
+
+### Get started
+
+To manage actions, open the Experience Insights dashboard in the Microsoft 365 admin center, and then select the Actions tab. There are two key experiences to familiarize yourself within actions experience:
+
+### ![Experience insights dashboard with Actions tab highlighted. Next to the Suggested training tab near the top of the page.](media/experience-insights-dashboard/actions-tab.png)
+
+Adding new actions
+
+1.     Select __Add action__.
+
+2.     Complete the form with the following details:
+
+- __Title__: Provide a distinct and descriptive title to help identify the action.
+
+- __Date of action__: Enter the date of that you took the action.
+
+- __Action type__: Select the type of action.
+
+- __Notes:__ Optional field to add in further description of your action.
+
+- __Target products__: Select one or more products associated with the action.
+
+3.     Once all required details are entered, select __Save__.
+
+ You can also import multiple actions from CSV.   Select __Import from CSV__ and follow the instructions for editing and uploading the file. There’s even a sample, pre-formatted CSV file that you can use to get started.
+
+### Viewing action impact
+
+Once an action is added, you can view it in the graphs in Experience insights, facilitating the analysis of how specific actions influence the data.
+
+1. From the __Actions__ list, select the __Target product__ for an action. This will open the product detail card.
+
+1. Select the Usage, Help Content, Product feedback, or Net Promoter Score tab.
+
+1. On the date of the action, there will be a vertical dashed line tracking the action against the graph’s data.
+
+   Note: You might need to change the __Date range__ to see the action.
+
+1. When you select the __Title__ of the action, above the vertical dashed line, you’ll get more details about the action.
+
+![Detail page of actions in the Unique active users by day chart. One label shows a single action, another dropdown shows ‘2 actions’ with description.](media/experience-insights-dashboard/action-impact.png)
 
 ## Additional resources
 

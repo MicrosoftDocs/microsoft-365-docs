@@ -1,20 +1,20 @@
 ### YamlMime:Hub
 
 title: Microsoft 365 security # < 60 chars
-summary: Protect your Microsoft 365 environment with Microsoft 365 Defender # < 160 chars
+summary: Protect your Microsoft 365 environment. # < 160 chars
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-apps | power-automate | power-bi | power-platform | power-virtual-agents | sql | sql-server | vs | visual-studio | windows | xamarin
 brand: m365
 
 metadata:
   title: Microsoft 365 security documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Learn about Microsoft Defender for Endpoint - how it protects endpoints from cyber threats and provides security operation teams with capabilities to remediate threats. # Required; article description that is displayed in search results. < 160 chars.
+  description: Learn about security for Microsoft 365 products and services. 
   services: office-365-security-compliance
   ms.service: microsoft-365-security
   ms.topic: hub-page # Required
   ms.collection: m365-security-compliance
   author: dansimp #Required; your GitHub user alias, with correct capitalization.
   ms.author: dansimp #Required; microsoft alias of author; optional team alias.
-  ms.date: 07/28/2023 #Required; mm/dd/yyyy format.
+  ms.date: 04/24/2024 #Required; mm/dd/yyyy format.
   ms.custom: intro-hub-or-landing
 
 # highlightedContent section (optional)
@@ -23,17 +23,17 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     # Card
-    - title: Zero Trust and Microsoft 365 Defender
-      itemType: get-started
+    - title: Zero Trust and Microsoft 365
+      itemType: quickstart
       url: /microsoft-365/security/microsoft-365-zero-trust
     # Card
-    - title: Ransomware protection in Microsoft 365
-      itemType: overview
-      url: /microsoft-365/solutions/ransomware-protection-microsoft-365
+    - title: Zero Trust identity and device access configurations
+      itemType: quickstart
+      url: /microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-overview
     # Card
-    - title: Microsoft 365 Defender Tech Community
-      itemType: whats-new
-      url: https://techcommunity.microsoft.com/t5/microsoft-365-defender/bd-p/MicrosoftThreatProtection
+    - title: Strengthen your security posture
+      itemType: quickstart
+      url: /microsoft-365/security/security-posture-solution-overview
     # Card
     - title: Microsoft SIEM and XDR security solutions
       itemType: overview
@@ -44,153 +44,64 @@ conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   # Supports up to 3 subsections
   sections:
-  - title: Key scenarios
-    items:
-      # Card
-      - title: Protect against and recover from ransomware
+  - title: Security scenarios & solutions
+    items: 
+      - title: Microsoft 365 security solutions
         links:
-         - url: /security/compass/human-operated-ransomware
-           itemType: concept
-           text: What is ransomware?
-         - url: /compliance/assurance/assurance-malware-and-ransomware-protection
-           itemType: concept
-           text: Malware and ransomware protection
-         - url: /security/ransomware
-           itemType: how-to-guide
-           text: Recover from a ransomware attack
-         - url: /microsoft-365/security/defender/advanced-hunting-find-ransomware
-           itemType: how-to-guide
-           text: Hunt for ransomware
-
-   # Card
-      - title: Respond to security incidents
-        links:
-         - url: /microsoft-365/security/defender/incidents-overview
+         - url: /microsoft-365/solutions/setup-secure-collaboration-with-teams
            itemType: overview
-           text: Incident response with Microsoft 365 Defender
-         - url: /microsoft-365/security/defender/manage-incidents
+           text: Set up secure file sharing and collaboration with Microsoft Teams
+         - url: /microsoft-365/solutions/empower-people-to-work-remotely
+           text : Empower people to work remotely with Microsoft 365
            itemType: how-to-guide
-           text: Manage incidents
-         - url: /microsoft-365/security/defender/first-incident-overview
-           itemType: how-to-guide
-           text: Respond to your first incident
+         - url: /microsoft-365/solutions/ransomware-protection-microsoft-365
+           text: Deploy ransomware protection for your Microsoft 365 tenant
+           itemType: overview
+      # Card
+      - title: Microsoft Copilot 
+        links:
+         - url: /copilot/microsoft-365/microsoft-365-copilot-privacy
+           itemType: overview
+           text: Data, Privacy, and Security for Microsoft 365 Copilot     
+ 
+   # Card
+      - title: Microsoft Teams
+        links:
+         - url: /microsoftteams/teams-security-guide
+           itemType: overview
+           text: Security and Microsoft Teams
 
   # Card
-      - title: Simulate attacks
+      - title: Microsoft SharePoint and Microsoft OneDrive
         links:
-         - url: /microsoft-365/security/office-365-security/attack-simulation-training-get-started
-           itemType: get-started
-           text: Get started using attack simulation training
-         - url: /microsoft-365/security/office-365-security/attack-simulation-training-insights
+         - url: /sharepoint/safeguarding-your-data
            itemType: overview
-           text: Insights and reporting for attack simulation
-         - url: /microsoft-365/security/office-365-security/skip-filtering-phishing-simulations-sec-ops-mailboxes
-           itemType: how-to-guide
-           text: Configure 3rd party phishing simulation
-
-        # Card
-      - title: Enable safe email messages
+           text: How SharePoint and OneDrive safeguard your data
+         - url: /sharepoint/authentication
+           itemType: overview
+           text: SharePoint authentication
+  # Card
+      - title: Microsoft Viva
         links:
-         - url: /microsoft-365/security/office-365-security/protect-against-threats
+         - url: /Viva/viva-security
            itemType: overview
-           text: Get Started with Defender for Office 365
-         - url: /microsoft-365/security/office-365-security/mdo-sec-ops-guide
-           itemType: how-to-guide
-           text: Operationalize Defender for Office 365
-         - url: /microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered
-           itemType: how-to-guide
-           text: Investigate malicious emails
-
-# Card
-      - title: Protect your endpoints
+           text: Understand how security works in Microsoft Viva
+  # Card
+      - title: Microsoft Defender products and services
         links:
-         - url: /microsoft-365/security/defender-endpoint/onboard-configure
-           itemType: how-to-guide
-           text: Onboard devices to Defender for Endpoint
-         - url: /microsoft-365/security/defender-endpoint/attack-surface-reduction
-           itemType: how-to-guide
-           text: Implement attack surface reduction rules
-         - url: /microsoft-365/security/defender-endpoint/next-generation-protection
+         - url: /defender/
            itemType: overview
-           text: Configure Next generation protection
-# Card
-      - title: Detect and remediate vulnerabilities
-        links:
-         - url: /microsoft-365/security/defender-vulnerability-management/tvm-software-inventory
-           itemType: reference
-           text: Software inventory in Defender Vulnerability Management
-         - url: /microsoft-365/security/defender-vulnerability-management/tvm-security-recommendation
-           itemType: overview
-           text: Security recommendations
-
-additionalContent:
-  # Supports up to 4 subsections
-  sections:
-  - title: Microsoft 365 Defender products and services # < 60 chars (optional)
-    items:
-    # Card
-    - title: Microsoft 365 Defender
-      links:
-      - url: /microsoft-365/security/defender/microsoft-365-defender
-        text: Overview
-      - url: /microsoft-365/security/defender/get-started
-        text: Get Started
-      - url: /microsoft-365/security/defender/eval-overview
-        text: Set up an evaluation
-    # Card
-    - title: Microsoft Defender for Office 365
-      links:
-       - url: /microsoft-365/security/office-365-security/defender-for-office-365
-         text: Overview
-       - url: /microsoft-365/security/office-365-security/preset-security-policies
-         text: Get Started
-    # Card
-    - title: Microsoft Defender Endpoint
-      links:
-      - url: /microsoft-365/security/defender-endpoint/microsoft-defender-endpoint
-        text: Overview  
-      - url: /microsoft-365/security/defender-endpoint/deployment-strategy
-        text: Get Started
-    # Card
-    - title: Microsoft Defender Vulnerability Management
-      links:
-      - url: /microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management
-        text: Overview
-      - url: /microsoft-365/security/defender-vulnerability-management/tvm-prerequisites
-        text: Get Started
-    # Card
-    - title: Microsoft Defender for Identity
-      links:
-       - url: /defender-for-identity/what-is
-         text: Overview
-       - url: /defender-for-identity/deploy-defender-identity
-         text: Get Started
-     # Card
-    - title: Microsoft Defender for Cloud apps
-      links:
-      - url: /defender-cloud-apps/what-is-defender-for-cloud-apps
-        text: Overview
-      - url: /defender-cloud-apps/get-started
-        text: Get Started
+           text: Lean about the Microsoft Defender products
 
 # additionalContent section (optional)
 # Card with summary style
+additionalContent:
+  sections: 
   - title: Learning, Training, and Certification # < 60 chars (optional)
-    summary: Explore topics in-depth through guided paths and training modules or prepare for the next step in your career with a certification.  # < 160 chars (optional)
     items:
-        # Card
-        - title: Microsoft 365 Defender Ninja training
-          summary: Enhance your cybersecurity skills with the Microsoft 365 Defender Ninja training.
-          url: https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/become-a-microsoft-365-defender-ninja/ba-p/1789376
-                  # Card
-        - title: Recommended Learning Paths
-          summary: Start your Microsoft 365 Defender learning journey with our recommended learning paths.
-          url: https://learn.microsoft.com/en-us/training/m365/defender
-        # Card
-        - title: Security Operations Analyst Certification & Exams
-          summary: Prepare yourself for Microsoft Security certifications.
-          url: https://learn.microsoft.com/en-us/certifications/browse/
-          
-
-
-
+     - title: Recommended Microsoft 365 learning modules
+       summary: Microsoft 365 security and compliance 
+       url: /training/paths/m365-security-compliance-capabilities/
+     - title: Microsoft certification for Security
+       summary: Security, compliance, and identity fundamentals
+       url: /credentials/certifications/security-compliance-and-identity-fundamentals

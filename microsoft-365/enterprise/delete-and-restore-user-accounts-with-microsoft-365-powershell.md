@@ -3,16 +3,18 @@ title: "Delete Microsoft 365 user accounts with PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 09/23/2020
+ms.date: 12/06/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: 
 - scotvorg
 - Ent_O365
+- must-keep
 f1.keywords:
 - CSH
 ms.custom:
@@ -21,6 +23,7 @@ ms.custom:
   - O365ITProTrain
   - seo-marvel-apr2020
   - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
 description: Learn how to use different modules in PowerShell to delete Microsoft 365 user accounts.
 ---
@@ -33,91 +36,105 @@ You can use PowerShell for Microsoft 365 to delete and restore user accounts.
 >Learn how to [restore a user account](../admin/add-users/restore-user.md) by using the Microsoft 365 admin center.
 >
 >For a list of additional resources, see [Manage users and groups](/admin).
->   
-   
-## Use the Azure Active Directory PowerShell for Graph module
+>
 
-First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+## Use Microsoft Graph PowerShell to delete a user account
+
+> [!NOTE]
+> The Azure Active Directory (AzureAD) PowerShell module is being deprecated and replaced by the Microsoft Graph PowerShell SDK. You can use the Microsoft Graph PowerShell SDK to access all Microsoft Graph APIs. For more information, see [Get started with the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started).
+>
+> Also see [Install the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation) and [Upgrade from Azure AD PowerShell to Microsoft Graph PowerShell](/powershell/microsoftgraph/migration-steps) for information on how to install and upgrade to Microsoft Graph PowerShell, respectively.
+>
+> For information about how to use different methods to authenticate ```Connect-Graph``` in an unattended script, see the article [Authentication module cmdlets in Microsoft Graph PowerShell](/powershell/microsoftgraph/authentication-commands).
+
+Deleting a user account requires the User.ReadWrite.All permission scope, which is listed in the ['Assign license' Microsoft Graph API reference page](/graph/api/user-assignlicense).
+
+The User.Read.All permission scope is required to read the user account details in the tenant.
+
+First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md).
+
+```powershell
+# Connect to your tenant
+Connect-MgGraph -Scopes User.Read.All, User.ReadWrite.All
+```
 
 After you connect, use the following syntax to remove an individual user account:
   
 ```powershell
-Remove-AzureADUser -ObjectID <sign-in name>
+$userName="<display name>"
+# Get the user
+$userId = (Get-MgUser -Filter "displayName eq '$userName'").Id
+# Remove the user
+Remove-MgUser -UserId $userId -Confirm:$false
 ```
 
-This example removes the user account *fabricec\@litwareinc.com*.
-  
-```powershell
-Remove-AzureADUser -ObjectID fabricec@litwareinc.com
-```
+This example removes the user account *Caleb Sills*.
 
-> [!NOTE]
-> The *-ObjectID* parameter in the **Remove-AzureADUser** cmdlet accepts either the account's sign-in name, also known as the User Principal Name or the account's object ID.
-  
-To display the account name based on the user's name, use the following commands:
-  
-```powershell
-$userName="<User name>"
-Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
-```
-
-This example displays the account name for the user *Caleb Sills*.
-  
 ```powershell
 $userName="Caleb Sills"
-Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
+$userId = (Get-MgUser -Filter "displayName eq '$userName'").Id
+Remove-MgUser -UserId $userId -Confirm:$false
 ```
 
-To remove an account based on the user's display name, use the following commands:
-  
+## Restore a user account
+
+To a restore a user account using Microsoft Graph PowerShell, first [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md).
+
+To restore a deleted user account, the permission scope *Directory.ReadWrite.All* is required. Connect to the tenant with this permission scope:
+
 ```powershell
-$userName="<display name>"
-Remove-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
+# Connect to your tenant
+Connect-MgGraph -Scopes Directory.ReadWrite.All
 ```
 
-## Use the Microsoft Azure Active Directory Module for Windows PowerShell
+Deleted user accounts no longer exist except as objects in the directory, so you can't search for the user account to restore. Instead, use the following PowerShell script to search the directory for deleted objects of the type *microsoft.graph.user*:
 
-When you delete a user account through the Microsoft Azure Active Directory Module for Windows PowerShell, the account isn't permanently deleted. You can restore the deleted user account within 30 days.
-
-First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
-
-To delete a user account, use the following syntax:
-  
 ```powershell
-Remove-MsolUser -UserPrincipalName <sign-in name>
+$DeletedUsers = Get-MgDirectoryDeletedItem -DirectoryObjectId microsoft.graph.user -Property '*'
+$DeletedUsers = $DeletedUsers.AdditionalProperties['value']
+foreach ($deletedUser in $DeletedUsers)
+{
+   $deletedUser | Format-Table
+}
 ```
 
->[!Note]
->PowerShell Core doesn't support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with *Msol* in their name. Run these cmdlets from Windows PowerShell.
->
+The output of this script, assuming any deleted user objects exist in the directory, will look like this:
 
-This example deletes the user account *BelindaN@litwareinc.com*.
-  
 ```powershell
-Remove-MsolUser -UserPrincipalName belindan@litwareinc.com
+Key               Value
+---               -----
+businessPhones    {}
+displayName       Caleb Sills
+givenName         Caleb
+mail              CalebS@litware.com
+surname           Sills
+userPrincipalName cdea706c3fdc4bbd95925d92d9f71eb8CalebS@litware.com
+id                cdea706c-3fdc-4bbd-9592-5d92d9f71eb8
 ```
 
-To restore a deleted user account within the 30-day grace period, use the following syntax:
-  
+Use the following syntax to restore an individual user account:
+
 ```powershell
-Restore-MsolUser -UserPrincipalName <sign-in name>
+# Input user account ID
+$userId = "<id>"
+# Restore the user
+Restore-MgDirectoryDeletedItem -DirectoryObjectId $userId
 ```
 
-This example restores the deleted account *BelindaN\@litwareinc.com*.
-  
+This example restores the user account *calebs\@litwareinc.com* using the value for ```$userID``` from the output of the above script.
+
 ```powershell
-Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
+$userId = "cdea706c-3fdc-4bbd-9592-5d92d9f71eb8"
+Restore-MgDirectoryDeletedItem -DirectoryObjectId $userId
 ```
 
->[!Note]
-> To see the list of deleted users that can be restored, run the following command:
->    
-> ```powershell
-> Get-MsolUser -All -ReturnDeletedUsers
-> ```
->
-> If the user account's original user principal name is used by another account, use the _NewUserPrincipalName_ parameter instead of _UserPrincipalName_ to specify a different user principal name when you restore the user account.
+The output of this command looks like this:
 
+```powershell
+Id                                   DeletedDateTime
+--                                   ---------------
+cdea706c-3fdc-4bbd-9592-5d92d9f71eb8
+```
 
 ## See also
 

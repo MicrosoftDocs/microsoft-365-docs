@@ -3,43 +3,34 @@ title: "Use Power Automate connectors to build Bookings workflows"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 08/08/2022
+ms.date: 10/01/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
-- essentials-manage
 description: "Use Power Automate Bookings Connectors to create custom workflows with appointment triggers."
 ---
 
 # Use Power Automate connectors to build Bookings workflows
 
-Microsoft Bookings Connector is built to extend Booking appointments with other functionalities that power platform has to offer. If you've ever wanted to build custom workflows for your business customer appointments, for example allowing customers to book a Zoom meeting along with an appointment, integrating a payment method using Stripe, uploading customer data to a CRM system, or sending out welcome emails, Bookings Connector is your Bookings solution.
+Microsoft Bookings Connector is built to extend Booking appointments with other functionalities that power platform has to offer. If you've ever wanted to build custom workflows for your business customer appointments, for example allowing customers to book a Zoom meeting along with an appointment, uploading customer data to a CRM system, or sending out welcome emails, Bookings Connector is your Bookings solution.
 
 ## Before you begin
 
 Customers who want to use the Bookings Connector must have a Bookings license. For more information about Microsoft Bookings licenses and subscriptions, see [Microsoft Bookings Frequently Asked Questions](bookings-faq.yml#is-bookings-available-for-my-subscription-).
 
-Microsoft Bookings uses Azure Active Directory (AAD) authentication. A valid Microsoft 365 account ensures that you are authenticated to use Bookings Connector. You must be signed in to create appointment-based flows.
+Microsoft Bookings uses Microsoft Entra authentication. A valid Microsoft 365 account ensures that you are authenticated to use Bookings Connector. You must be signed in to create appointment-based flows.
 
 To create a custom flow that uses Bookings appointments as triggers, you must provide the Bookings business SMTP address.
 
-![Image of an SMTP address.](media/bookings-teams-smtp.png)
+:::image type="content" alt-text="Image of an SMTP address." source="media/bookings-teams-smtp.png" lightbox="media/bookings-teams-smtp.png":::
 
 ## Get started with connectors
 
 Here are some of the common flows you can build with Microsoft Bookings Connectors:
-
-### Integration with Stripe
-
-Stripe allows private individuals and businesses to accept payments over the internet. You can track customers, orders, invoices, and more. For more information, see [Stripe | Microsoft Power Automate](https://powerautomate.microsoft.com/connectors/details/shared_stripe/stripe/).
-
-### Integration with Zoom
-
-The Zoom Meetings connector helps to automate Zoom meeting operations. For more information, see [Zoom Meetings (Independent Publisher) | Microsoft Power Automate](https://powerautomate.microsoft.com/connectors/details/shared_zoommeetingsip/zoom-meetings-independent-publisher/).
 
 ### Integration with Dynamic 365
 
@@ -61,11 +52,11 @@ For all of the available Bookings connectors, see [Supported connectors | Micros
 
 HTTP Error Codes while creating flows:
 
-- '401': Check for authentication related issues in your connection.
-- '403': Only Bookings admins can create appointment flows. See the first issue in "Known issues and limitations" above.
-- '403': Notification URL domain isn't part of the allowed list.
-- '429': More than the expected number of appointment flows have been created for a business. See the limit of five flows per Bookings mailbox in  "Known issues and limitations" above.
-- '500': This is an internal server error. Report this error to your support engineer and include the error details in the flow creation response.
+- 401: Check for authentication related issues in your connection.
+- 403: Only Bookings admins can create appointment flows. See the first issue in "Known issues and limitations" above.
+- 403: Notification URL domain isn't part of the allowed list.
+- 429: More than the expected number of appointment flows have been created for a business. See the limit of five flows per Bookings mailbox in  "Known issues and limitations" above.
+- 500: This is an internal server error. Report this error to your support engineer and include the error details in the flow creation response.
 
 ## Frequently Asked Questions
 

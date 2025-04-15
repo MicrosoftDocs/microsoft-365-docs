@@ -4,10 +4,10 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: katmartin
+ms.reviewer: ebamoh
 ms.date: 06/21/2023
 audience: Admin
-ms.topic: article
+ms.topic: concept-article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
@@ -31,7 +31,7 @@ For more information about Windows 365, see [What is Windows 365?](/windows-365/
 > [!IMPORTANT]
 > You must go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/p/?linkid=2150463) to provision Cloud PCs for each customer tenant before you can manage them in Lighthouse. You can't provision from within Lighthouse.
 
-Once you've provisioned Cloud PCs for your customer tenant, the Windows 365 card on the Microsoft 365 Lighthouse Home page provides a brief alert on the Cloud PCs in need of action, such as the number of Cloud PCs that failed to provision and Azure network connection failures. To get a detailed status, select the button on the Windows 365 card (or select **Devices** > **Windows 365** in the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com)) to open the Windows 365 page. From this page, you can get a status overview of the Cloud PCs assigned to your customer tenants, view a list of all the Cloud PCs you manage and the tenants they're assigned to, and view the Azure network connections between your customer tenants and Azure Active Directory (Azure AD) and their status.
+Once you've provisioned Cloud PCs for your customer tenant, the Windows 365 card on the Microsoft 365 Lighthouse Home page provides a brief alert on the Cloud PCs in need of action, such as the number of Cloud PCs that failed to provision and Azure network connection failures. To get a detailed status, select the button on the Windows 365 card (or select **Devices** > **Windows 365** in the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com)) to open the Windows 365 page. From this page, you can get a status overview of the Cloud PCs assigned to your customer tenants, view a list of all the Cloud PCs you manage and the tenants they're assigned to, and view the Azure network connections between your customer tenants and Microsoft Entra ID and their status.
 
 ## Overview tab
 

@@ -9,7 +9,7 @@ ms.topic: article
 f1.keywords:
 - NOCSH
 ms.reviewer: TracyTughanMSFT
-ms.date: 09/28/2023
+ms.date: 11/11/2024
 ms.custom:
 - it-pro
 ms.localizationpriority: medium
@@ -33,35 +33,31 @@ For more information on remote access to data by personnel, see [Continuing data
 
 | Microsoft Subsidiary <br>Personnel Locations |&nbsp;|&nbsp;|&nbsp;|
 |---------|---------|---------|---------|
-| Albania | Ecuador | Rwanda  | Portugal |
-| Algeria | Egypt   | Uzbekistan | Qatar |
-| Angola  | El Salvador | Latvia | Romania |
-| Argentina | Estonia | Lebanon | Saudi Arabia |
-| Armenia | Finland | Lithuania | Senegal |
-| Australia | France | Luxembourg | Serbia |
-| Austria | Georgia | Macao SAR | Singapore |
-| Azerbaijan | Germany | Madagascar | Slovakia |
-| Bahrain | Ghana | Malaysia | Slovenia |
-| Bangladesh | Greece | Malta | South Africa |
-| Belgium | Guatemala | Mauritius | Spain |
-| Bolivia | Honduras | Mexico | Sri Lanka |
-| Bosnia and Herzegovina | Hong Kong SAR | Montenegro | Sweden |
-| Brazil | Hungary | Morocco | Switzerland |
-| Brunei | Iceland | Namibia | Taiwan |
-| Bulgaria | India | Nepal | Tajikistan |
-| Cambodia | Indonesia | Netherlands | Thailand |
-| Cameroon | Ireland | New Zealand | Trinidad and Tobago |
-| Canada | Israel | Nigeria | Tunisia |
-| Chile | Italy | North Macedonia | Turkey |
-| China | Jamaica | Norway | Ukraine |
-| Colombia | Japan | Oman | United Arab Emirates |
-| Costa Rica | Jordan | Pakistan | United Kingdom |
-| Côte d'Ivoire | Kazakhstan | Palestinian Authority | United States |
-| Croatia | Kenya | Panama | Uruguay |
-| Cyprus | South Korea | Paraguay | Vietnam |
-| Czech Republic | Kuwait | Peru | |
-| Denmark | Kyrgyzstan | Philippines | |
-| Dominican Republic | Nicaragua | Poland | |
+|Algeria            |Ecuador         |Latvia          |Qatar               |
+|Angola             |Egypt           |Lebanon         |Romania             |
+|Argentina          |El Salvador     |Lithuania       |Saudi Arabia        |
+|Armenia            |Estonia         |Luxembourg      |Senegal             |
+|Australia          |Finland         |Macao SAR       |Serbia              |
+|Austria            |France          |Malaysia        |Singapore           |
+|Bahrain            |Germany         |Malta           |Slovakia            |
+|Bangladesh         |Ghana           |Mauritius       |Slovenia            |
+|Belgium            |Greece          |Mexico          |South Africa        |
+|Bolivia            |Guatemala       |Montenegro      |Spain               |
+|Bosnia and Herzegovina |Honduras    |Morocco         |Sri Lanka           |
+|Brazil             |Hong Kong SAR   |Namibia         |Sweden              |
+|Brunei             |Hungary         |Netherlands     |Switzerland         |
+|Bulgaria           |Iceland         |New Zealand     |Taiwan              |
+|Canada             |India           |Nigeria         |Thailand            |
+|Chile              |Indonesia       |North Macedonia |Trinidad and Tobago |
+|China              |Ireland         |Norway          |Tunisia             |
+|Colombia           |Israel          |Oman            |Türkiye             |
+|Costa Rica         |Italy           |Pakistan        |Ukraine             |
+|Côte d’Ivoire      |Jamaica         |Panama          |United Arab Emirates|
+|Croatia            |Japan           |Peru            |United Kingdom      |
+|Cyprus             |Jordan          |Korea           |United States       |
+|Czechia            |Kazakhstan      |Philippines     |Uruguay             |
+|Denmark            |Kenya           |Poland          |Vietnam             |
+|Dominican Republic |Kuwait          |Portugal        |                    |
 
 | Contract Staff <br>Personnel Locations |&nbsp;|&nbsp;|&nbsp;|
 |---|---|---|---|

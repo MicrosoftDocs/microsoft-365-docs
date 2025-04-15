@@ -18,6 +18,8 @@ f1.keywords: NOCSH
 
 # Viewing Test Results
 
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
 Logging into the Azure portal, you can see application test results at scheduled intervals against selected updates from the Overview page of your Test Base account.  
 Clicking your Test Base account name, and then clicking links under the Insights category in the left-hand sector of the page, as follows:
 

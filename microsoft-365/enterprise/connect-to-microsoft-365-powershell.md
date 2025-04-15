@@ -1,16 +1,18 @@
 ---
-title: "Connect to Microsoft 365 with PowerShell"
+title: "Connect to Microsoft 365 with Microsoft Graph PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 06/30/2023
+ms.date: 12/03/2024
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: high
 ms.collection:
 - scotvorg 
 - Ent_O365
+- must-keep
 f1.keywords:
 - CSH
 ms.custom:
@@ -18,199 +20,129 @@ ms.custom:
   - O365ITProTrain
   - Ent_Office_Other
   - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
-description: "Connect to your Microsoft 365 tenant by using PowerShell for Microsoft 365 to do admin center tasks from the command line."
+description: "Connect to your Microsoft 365 tenant by using Microsoft Graph PowerShell to do admin center tasks from the command line."
 ---
 
-# Connect to Microsoft 365 with PowerShell
+# Connect to Microsoft 365 with Microsoft Graph PowerShell
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-PowerShell for Microsoft 365 enables you to manage your Microsoft 365 settings from the command line. To connect to PowerShell, just install the required software and then connect to your Microsoft 365 organization.
+Microsoft Graph PowerShell enables you to manage your Microsoft 365 settings from the command line. This article shows you how to install the required software and then connect to your Microsoft 365 organization using the Microsoft Graph PowerShell SDK.
 
-There are two versions of the PowerShell module that you can use to connect to Microsoft 365 and administer user accounts, groups, and licenses:
+Currently, the Azure Active Directory PowerShell for Graph module doesn't completely replace the functionality of the Microsoft Azure Active Directory module for Windows PowerShell for application proxy management, user, and contact administration. In some cases, you need to use both versions. You can safely install both versions on the same computer.
 
-- Azure Active Directory PowerShell for Graph, whose cmdlets include *AzureAD* in their name
-- Microsoft Azure Active Directory Module for Windows PowerShell, whose cmdlets include *Msol* in their name
-
-Currently, the Azure Active Directory PowerShell for Graph module doesn't completely replace the functionality of the Microsoft Azure Active Directory Module for Windows PowerShell module for user, group, and license administration. In some cases, you need to use both versions. You can safely install both versions on the same computer.
-
->[!Note]
->You can also connect with the [Azure Cloud Shell](#connect-with-the-azure-cloud-shell) from the Microsoft 365 admin center.
->
-
+<a name='connect-with-the-azure-active-directory-powershell-for-graph-module'></a>
 
 ## What do you need to know before you begin?
 
->[!NOTE]
-> The Azure Active Directory Module is being replaced by the Microsoft Graph PowerShell SDK. You can use the Microsoft Graph PowerShell SDK to access all Microsoft Graph APIs. For more information, see [Get started with the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started).
+> [!NOTE]
+> The Azure Active Directory (AzureAD) PowerShell module is being deprecated and replaced by the Microsoft Graph PowerShell SDK. You can use the Microsoft Graph PowerShell SDK to access all Microsoft Graph APIs. For more information, see [Get started with the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started).
+>
+> Also see [Install the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation) and [Upgrade from Azure AD PowerShell to Microsoft Graph PowerShell](/powershell/microsoftgraph/migration-steps) for information on how to install and upgrade to Microsoft Graph PowerShell, respectively.
 
-**Operating system**
+#### Prerequisites
 
-You must use a 64-bit version of Windows. Support for the 32-bit version of the Microsoft Azure Active Directory Module for Windows PowerShell ended in 2014.
+PowerShell 7 and later is the recommended PowerShell version for use with the Microsoft Graph PowerShell SDK on all platforms. There are no other prerequisites to use the SDK with PowerShell 7 or later.
 
-You can use the following versions of Windows:
-    
-  - Windows 10, Windows 8.1, Windows 8, or Windows 7 Service Pack 1 (SP1) 
-    
-  - Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, or Windows Server 2008 R2 SP1
+The following prerequisites are required to use the Microsoft Graph PowerShell SDK with Windows PowerShell.
 
->[!Note]
->For Windows 8.1, Windows 8, Windows 7 Service Pack 1 (SP1), Windows Server 2012 R2, Windows Server 2012, and Windows Server 2008 R2 SP1, download and install the [Windows Management Framework 5.1](https://www.microsoft.com/download/details.aspx?id=54616).
+- Upgrade to PowerShell 5.1 or later
+- Install .NET Framework 4.7.2 or later
+- Update PowerShellGet to the latest version using Install-Module PowerShellGet
 
-**PowerShell**
+The PowerShell script execution policy must be set to remote signed or less restrictive. Use Get-ExecutionPolicy to determine the current execution policy. For more information, see about_Execution_Policies. To set the execution policy, run:
 
-- For the Azure Active Directory PowerShell for Graph module, you must use PowerShell version 5.1.
-
-- For the Microsoft Azure Active Directory Module for Windows PowerShell module, you must use PowerShell version 5.1 or later, up to PowerShell version 6. You can't use PowerShell version 7.
-       
->[!Note]
->These procedures are intended for users who are members of a Microsoft 365 admin role. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).
-
-
-## Connect with the Azure Active Directory PowerShell for Graph module
-
-Commands in the Azure Active Directory PowerShell for Graph module have *AzureAD* in their cmdlet name. You can install the [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2) module or [Azure PowerShell](/powershell/azure/install-az-ps).
-
-For procedures that require the new cmdlets in the Azure Active Directory PowerShell for Graph module, follow these steps to install the module and connect to your Microsoft 365 subscription.
-
-> [!Note]
-> For information about support for different versions of Windows, see [Azure Active Directory PowerShell for Graph module](/powershell/azure/active-directory/install-adv2) .
-
-### Step 1: Install the required software
-
-These steps are required only one time on your computer. But you'll likely need to update the software periodically.
-  
-1. Open a Windows PowerShell Command Prompt window.
-    
-2. Run this command:
-    
-    ```powershell
-    Install-Module -Name AzureAD
-    ```
-
-  By default, the PowerShell Gallery (PSGallery) isn't configured as a trusted repository for **PowerShellGet**. The first time you use the PSGallery, you'll see the following message:
-
-```console
-Untrusted repository
-
-You are installing the modules from an untrusted repository. If you trust this repository, change its InstallationPolicy value by running the `Set-PSRepository` cmdlet.
-
-Are you sure you want to install the modules from 'PSGallery'?
-[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"):
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
-Answer **Yes** or **Yes to All** to continue with the installation.
+##### Operating system
 
-3.  Run this command to import the module:
-    
-    ```powershell
-    Import-Module  AzureAD
-    ```
-    
-### Step 2: Connect to Azure AD for your Microsoft 365 subscription
+You must use a 64-bit version of Windows. You can use the following versions of Windows:
 
-To connect to Azure Active Directory (Azure AD) for your Microsoft 365 subscription with an account name and password or with multi-factor authentication, run one of these commands from a Windows PowerShell command prompt. (It doesn't have to be elevated.)
+- Windows 11, Windows 10, Windows 8.1, Windows 8, or Windows 7 Service Pack 1 (SP1)
 
-| Office 365 cloud | Command |
-|:-------|:-----|
-| Office 365 Worldwide (+GCC) | `Connect-AzureAD` |
-| Office 365 operated by 21 Vianet | `Connect-AzureAD -AzureEnvironmentName AzureChinaCloud` |
-| Office 365 Germany | `Connect-AzureAD -AzureEnvironmentName AzureGermanyCloud` |
-| Office 365 U.S. Government DoD and Office 365 U.S. Government GCC High | `Connect-AzureAD -AzureEnvironmentName AzureUSGovernment` |
-|||
+- Windows Server 2022, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, or Windows Server 2008 R2 SP1
 
-In the **Sign into your account** dialog box, type your Microsoft 365 work or school account user name and password, and then select **OK**.
+> [!NOTE]
+> For Windows 8.1, Windows 8, Windows 7 Service Pack 1 (SP1), Windows Server 2012 R2, Windows Server 2012, and Windows Server 2008 R2 SP1, download and install the [Windows Management Framework 5.1](https://www.microsoft.com/download/details.aspx?id=54616).
 
-If you're using multi-factor authentication, follow the instructions to provide additional authentication information, such as a verification code.
+To use Microsoft Graph PowerShell, you must use at least PowerShell version **5.1**.
 
-After you connect, you can use the cmdlets for the [Azure Active Directory PowerShell for Graph module](/powershell/module/azuread).
+> [!NOTE]
+> These procedures are intended for users who are members of a Microsoft 365 admin role. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).
 
-## Connect with the Microsoft Azure Active Directory Module for Windows PowerShell
+<a name='connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell'></a>
 
->[!Note]
->Cmdlets in the Microsoft Azure Active Directory Module for Windows PowerShell have *Msol* in their name.
+## Connect with Microsoft Graph PowerShell
 
-PowerShell version 7 and later don't support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with *Msol* in their name. For PowerShell version 7 and later, you must use the Microsoft Graph PowerShell SDK.
+In this section, you'll learn how to connect to your Microsoft 365 organization using the Microsoft Graph PowerShell SDK. You can visit [Install the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation) for more guidance.
 
-PowerShell Core doesn't support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with *Msol* in their name. Run these cmdlets from Windows PowerShell.
-    
 ### Step 1: Install the required software
 
-These steps are required only one time on your computer. But you'll likely need to update the software periodically.
-  
-1.  If you're not running Windows 10, install the 32-bit version of the Microsoft Online Services Sign-in Assistant: [Microsoft Online Services Sign-in Assistant for IT Professionals RTW](https://download.microsoft.com/download/7/1/E/71EF1D05-A42C-4A1F-8162-96494B5E615C/msoidcli_32bit.msi).
-    
-2. Follow these steps to install and import the Microsoft Azure Active Directory Module for Windows PowerShell:
-    
-   1. Open an elevated Windows PowerShell command prompt (run Windows PowerShell as an administrator).
-   1.  Run the **Install-Module MSOnline** command.
-   1. If you're prompted to install the NuGet provider, type **Y** and press Enter.
-   1. If you're prompted to install the module from PSGallery, type **Y** and press Enter.
-   1. Run the **Import-Module MSOnline** command to import the module.
-    
-### Step 2: Connect to Azure AD for your Microsoft 365 subscription
+The Microsoft Graph PowerShell SDK is published in the [PowerShell Gallery](https://www.powershellgallery.com/packages/Microsoft.Graph).
 
-To connect to Azure AD for your Microsoft 365 subscription with an account name and password or with multi-factor authentication, run one of these commands from a Windows PowerShell command prompt. (It doesn't have to be elevated.)
+These steps are required only one time on your computer. However, you'll likely need to update the software periodically.
 
-| Office 365 cloud | Command |
-|:-------|:-----|
-| Office 365 Worldwide (+GCC) | `Connect-MsolService` |
-| Office 365 operated by 21 Vianet | `Connect-MsolService -AzureEnvironment AzureChinaCloud` |
-| Office 365 Germany | `Connect-MsolService -AzureEnvironment AzureGermanyCloud` |
-| Office 365 U.S. Government DoD and Office 365 U.S. Government GCC High | `Connect-MsolService -AzureEnvironment USGovernment` |
-|||
+#### Install the Microsoft Graph PowerShell SDK and beta module
 
-In the **Sign into your account** dialog box, type your Microsoft 365 work or school account user name and password, and then select **OK**.
+The Microsoft Graph PowerShell SDK comes in two modules, Microsoft.Graph and Microsoft.Graph.Beta, that you'll install separately. These modules call the Microsoft Graph v1.0 and Microsoft Graph beta endpoints, respectively. You can install the two modules on the same PowerShell version.
 
-If you're using multi-factor authentication, follow the instructions to provide additional authentication information, such as a verification code.
+1. Open a Windows PowerShell Command Prompt window. Depending on the permissions of your logged-in account, you may need to open the PowerShell window in Administrator mode.
 
-### How do you know it worked?
+2. To install the v1 module of the SDK in PowerShell Core or Windows PowerShell, run the following command:
 
-If you don't get an error message, you connected successfully. For quick test,  run a Microsoft 365 cmdlet, such as  **Get-MsolUser**, and see the results.
-  
-If you get an error message, check the following issues:
-  
-- **A common problem is an incorrect password**. Run [Step 2](#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription) again, and pay close attention to the user name and password that you enter.
-    
-- **The Microsoft Azure Active Directory Module for Windows PowerShell requires that Microsoft .NET Framework 3.5.*x* is enabled on your computer**. It's likely that your computer has a newer version installed (for example, 4 or 4.5.*x*). But backward compatibility with older versions of the .NET Framework can be enabled or disabled. For more information, see the following articles:
-    
-  - For Windows Server 2012 or Windows Server 2012 R2, see [Enable .NET Framework 3.5 by using the Add Roles and Features Wizard](/previous-versions/windows/it-pro/windows-8.1-and-8/dn482071(v=win.10)).
-    
-  - For Windows 7 or Windows Server 2008 R2, see [You can't open the Azure Active Directory Module for Windows PowerShell](/troubleshoot/azure/active-directory/cant-open-aad-module-powershell).
+    ```powershell
+    Install-Module Microsoft.Graph -Scope CurrentUser
+    ```
 
-  - For Windows 10, Windows 8.1, and Windows 8, see [Install the .NET Framework 3.5 on Windows 10, Windows 8.1, and Windows 8](/dotnet/framework/install/dotnet-35-windows-10).
+3. Run this command to install the beta module:
 
-  
-- **Your version of the Microsoft Azure Active Directory Module for Windows PowerShell might be out of date.** To check, run the following command in PowerShell for Microsoft 365 or the Microsoft Azure Active Directory Module for Windows PowerShell:
-    
-  ```powershell
-  (Get-Item C:\Windows\System32\WindowsPowerShell\v1.0\Modules\MSOnline\Microsoft.Online.Administration.Automation.PSModule.dll).VersionInfo.FileVersion
-  ```
+    ```powershell
+    Install-Module Microsoft.Graph.Beta
+    ```
 
-    If the version number returned is lower than *1.0.8070.2*, uninstall the Microsoft Azure Active Directory Module for Windows PowerShell and install from [Step 1](#step-1-install-the-required-software), above.
+After the installation is completed, you can verify the installed version with the following command:
 
-- **If you get a connection error message**, see ["Connect-MsolService: Exception of type was thrown" error](/office365/troubleshoot/active-directory/connect-msoservice-throw-exception).
-    
-- **If you get a "Get-Item: Cannot find path" error message**, run this command:
+```powershell
+Get-InstalledModule Microsoft.Graph
+```
 
+<a name='step-2-connect-to-azure-ad-for-your-microsoft-365-subscription'></a>
 
-   ```powershell
-     (dir "C:\Program Files\WindowsPowerShell\Modules\MSOnline").Name
-   ```
+### Step 2: Connect to your Microsoft 365 subscription
 
-## Connect with the Azure Cloud Shell
+The PowerShell SDK supports two types of authentication: delegated access, and app-only access. In this guide, you'll use delegated access to sign in as a user, grant consent to the SDK to act on your behalf, and call the Microsoft Graph.
 
-To connect with and use the Azure Cloud Shell from the Microsoft 365 admin center, select the PowerShell window icon from the upper-right corner of the task bar. In the **Welcome to Azure Cloud Shell** pane, select **PowerShell**.
+For details on using app-only access for unattended scenarios, see [Use app-only authentication with the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/app-only).
 
-You will need an active Azure subscription for your organization that is tied to your Microsoft 365 subscription. If you don't already have one, you can create one. Once you have an Azure subscription, a PowerShell window opens from which you can run PowerShell commands and scripts.
+#### Determine required permission scopes
 
-For more information, see [Azure Cloud Shell](/azure/cloud-shell/overview).
+Each API in the Microsoft Graph is protected by one or more permission scopes. The user logging in must consent to one of the required scopes for the APIs you plan to use. In this example, we'll use the following APIs.
 
+- List users to find the user ID of the logged-in user.
+- List joinedTeams to get the Teams the user is a member of.
+- List channels to get the channels in a Team.
+- Send message to send a message to a Team's channel.
 
+The **User.Read.All** permission scope enables the first two calls, and the **Group.ReadWrite.All** scope enables the rest. These permissions require an admin account.
+
+For more information about how to determine what permission scopes you'll need, see [Using Find-MgGraphCommand](/powershell/microsoftgraph/find-mg-graph-command).
+
+To connect to your Microsoft 365 Organization, run the following command:
+
+``` powershell
+Connect-MgGraph -Scopes "User.Read.All","Group.ReadWrite.All"
+```
+
+The command prompts you to go to a web page to sign in with your credentials. Once you've done that, the command indicates success with a **Welcome To Microsoft Graph!** message. You only need to sign in once per session.
+
+> [!TIP]
+> You can accretively add permissions by repeating the **Connect-MgGraph** command with the new permission scopes.
 
 ## See also
 
 - [Manage Microsoft 365 with PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
-- [Get started with PowerShell for Microsoft 365](getting-started-with-microsoft-365-powershell.md)
-- [Connect to all Microsoft 365 services in a single Windows PowerShell window](connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window.md)
+- [Get started with the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started)

@@ -17,6 +17,8 @@ f1.keywords: NOCSH
 ---
 # Functional testing
 
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
 As a software publisher, you can now perform custom functional tests, using the test framework of your choice - via the self-serve Test Base for Microsoft 365 portal. 
 
 When we initially launched the service, we offered the Out-of-box tests, which is a pre-defined set of tests driven through standardized scripting. However, it couldn't achieve full test coverage for many Independent Software Vendors (ISVs). 

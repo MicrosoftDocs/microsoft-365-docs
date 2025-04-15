@@ -5,9 +5,9 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 09/12/2023
+ms.date: 10/01/2024
 audience: Admin
-ms.topic: article
+ms.topic: solution-overview
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
@@ -17,6 +17,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - SPO_Content
+- m365solution-overview
 ms.custom:
 - has-azure-ad-ps-ref
 - azure-ad-ref-level-one-done
@@ -38,8 +39,6 @@ Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?l
 A question we often get is, "What should I do to secure data and protect access when an employee leaves my organization?" This article series explains how to block access to Microsoft 365 so these users can't sign in to Microsoft 365, the steps you should take to secure organization data, and how to allow other employees to access email and OneDrive data.
 
 ## Before you begin
-
-You need to be a global administrator to complete the steps in this solution.
 
 To complete the steps in this series, you use these Microsoft 365 capabilities and features.
 
@@ -76,7 +75,7 @@ To complete the steps in this series, you use these Microsoft 365 capabilities a
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198203).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f1196f82-611c-41c8-8cc1-98e70f591d5d]
 
 ## Does your organization use Active Directory?
 
@@ -84,12 +83,11 @@ If your organization synchronizes user accounts to Microsoft 365 from a local Ac
 
 To learn how to delete and restore user account in Active Directory, see [Delete a User Account](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)).
   
-If you're using Azure Active Directory, see the [Remove-MgUser](/powershell/module/microsoft.graph.users/remove-mguser) PowerShell cmdlet.
+If you're using Microsoft Entra ID, see the [Remove-MgUser](/powershell/module/microsoft.graph.users/remove-mguser) PowerShell cmdlet.
   
 ## Related content
 
 [Restore a user](restore-user.md) (article)\
 [Add a new employee to Microsoft 365](add-new-employee.md) (article)\
-[Assign licenses to users](../manage/assign-licenses-to-users.md) (article)\
-[Remove-CalendarEvents](/powershell/module/exchange/remove-calendarevents)\
-[Unassign licenses from users](../manage/remove-licenses-from-users.md) (article)
+[Assign or unassign licenses for users in the Microsoft 365 admin center](../manage/assign-licenses-to-users.md) (article)\
+[Remove-CalendarEvents](/powershell/module/exchange/remove-calendarevents)

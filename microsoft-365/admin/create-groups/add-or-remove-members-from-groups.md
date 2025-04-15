@@ -1,13 +1,13 @@
 ---
 title: "Add or remove members from Microsoft 365 groups"
 ms.reviewer: rahulnayak
-ms.date: 02/18/2020
+ms.date: 06/27/2024
 f1.keywords: NOCSH
-ms.author: mikeplum
-author: MikePlumleyMSFT
-manager: scotv
+author: DaniEASmith
+ms.author: danismith
+manager: jtremper
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
@@ -27,18 +27,21 @@ description: "Learn how to add a member to a group, remove member from group, an
 
 # Add or remove members from Microsoft 365 groups using the admin center
 
-In Microsoft 365, group members typically create their own groups, add themselves to groups they want to join, or are invited by group owners. If group ownership changes, or if you determine that a member should be added or removed, as the admin you can also make that change. Only a global administrator, Exchange administrator, Groups administrator, or user administrator can make these changes. [What is a Microsoft 365 group?](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+In Microsoft 365, group members typically create their own groups, add themselves to groups they want to join, or are invited by group owners. If group ownership changes, or if you determine that a member should be added or removed, as the admin you can also make that change. Only an Exchange administrator, Groups administrator, or user administrator can make these changes. [What is a Microsoft 365 group?](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 > [!TIP]
 > If you're not an admin, you can [add or remove members using Outlook](https://support.microsoft.com/office/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de).
   
+> [!NOTE]
+> Nesting of groups isn't supported with regard to Microsoft 365 Group, that is, you can't add an existing Distribution List (DL) or Microsoft 365 Group as member of another Microsoft 365 Group.
+
 ## Add a member to a group in the admin center
 
-1. In the admin center, go to the [**Active groups**](https://admin.microsoft.com/Adminportal/Home?#/groups) page.  
+1. In the admin center, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855">Active groups</a> page.  
 
 2. Click a group name.
 
-3. In the details pane, on the **Members** tab, select **View all and manage members**, and then select **Add members**.
+3. In the details pane, on the **Membership** tab, select **Members**, and then select **Add members**.
 
 4. Search for or select the name of the member you want to add.
 
@@ -46,13 +49,13 @@ In Microsoft 365, group members typically create their own groups, add themselve
 
 ## Add a group to a member in the admin center
 
-1. In the admin center, go to the [**Active users**](https://admin.microsoft.com/Adminportal/Home?#/users) page.  
+1. In the admin center, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=834822">Active users</a> page.  
 
 2. Click a user.
 
 3. In the details pane, on the **Account** tab, select **Manage groups**.
 
-4. Search for or select the name of the group you want to add.
+4. Select **Assign memberships** and search for or select the name of the group you want to add.
 
 5. Select **Save**.
 
@@ -61,11 +64,11 @@ In Microsoft 365, group members typically create their own groups, add themselve
 > [!NOTE]
 > When you remove a member from a private group, it takes 5 minutes for the person to be blocked from the group.
 
-1. In the admin center, go to the [**Active groups**](https://admin.microsoft.com/Adminportal/Home?#/groups) page.  
+1. In the admin center, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855">Active groups</a> page.  
 
 2. Click a group name.
 
-3. In the details pane, on the **Members** tab, select **View all and manage members**.
+3. In the details pane, on the **Membership** tab, select **Members**.
 
 4. Next to the member you want to remove, select the X.
 
@@ -77,11 +80,11 @@ By default, the person who created the group is the group owner. Often a group w
   
 ### Promote a member to owner status in the admin center
 
-1. In the admin center, go to the [**Active groups**](https://admin.microsoft.com/Adminportal/Home?#/groups) page.  
+1. In the admin center, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855">Active groups</a> page.  
 
 2. Click a group name.
 
-3. In the details pane, on the **Members** tab, select **View all and manage owners**.
+3. In the details pane, on the **Membership** tab, select **Owners**.
 
 4. Select **Add owners**.
 
@@ -91,11 +94,11 @@ By default, the person who created the group is the group owner. Often a group w
 
 ### Remove owner status in the admin center
 
-1. In the admin center, go to the [**Active groups**](https://admin.microsoft.com/Adminportal/Home?#/groups) page.  
+1. In the admin center, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855">Active groups</a> page.  
 
 2. Click a group name.
 
-3. In the details pane, on the **Members** tab, select **View all and manage owners**.
+3. In the details pane, on the **Membership** tab, select **Owners**.
 
 4. Select the X next to the owner's name.
 
@@ -103,7 +106,7 @@ By default, the person who created the group is the group owner. Often a group w
 
 ## Next steps
 
-- [Manage groups dynamically in Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal): see the section "How can I manage the membership of a group dynamically?"
+- [Manage groups dynamically in Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal): see the section "How can I manage the membership of a group dynamically?"
 
 - To add hundreds or thousands of users to groups, use the [Add-UnifiedGroupLinks](/powershell/module/exchange/add-unifiedgrouplinks).
 

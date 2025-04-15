@@ -4,13 +4,14 @@ metadata:
   author: cmcatee-MSFT
   ms.author: cmcatee
   manager: scotv
-  ms.reviewer: jamitche, jobailey
+  ms.reviewer: mijeffer, nicholak
   audience: Admin
   ms.topic: faq
   ms.service: microsoft-365-business
+  ms.subservice: m365-commerce-acquisition
   ms.localizationpriority: medium
   ms.collection: 
-  - Tier2
+  - Tier1
   - scotvorg
   - M365-subscription-management
   - Adm_O365
@@ -18,12 +19,14 @@ metadata:
   - commerce_subscriptions
   - okr_SMB
   - AdminSurgePortfolio
-  search.appverid: MET150 
+  - campaignIDs-batch2
+  search.appverid: MET150
+  ROBOTS: NOINDEX NOFOLLOW
   description: "Frequently-asked questions (FAQ) about the Microsoft Workplace Discount Program."
-  ms.date: 07/19/2022
+  ms.date: 12/09/2024
 title: Microsoft Workplace Discount Program frequently-asked questions (FAQ)
 summary: |
-  Volume Licensing customers use the Microsoft Workplace Discount Program (formerly known as the Home Use Program, or HUP) in the [Microsoft Store for Business website](https://go.microsoft.com/fwlink/?linkid=2139192) or in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339).
+  Volume Licensing customers use the Microsoft Workplace Discount Program (formerly known as the Home Use Program, or HUP) in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339).
   
   All other customers access the Workplace Discount Program by using this step:
   
@@ -45,14 +48,13 @@ sections:
           
           - Lebanon, Macao SAR, Russia and Venezuela: This offer is not available in these markets.
           - China and Hong Kong SAR: a one-year subscription is available in these markets. For China, visit [Microsoft 365 in China](https://www.microsoftstore.com.cn/home-use-program/invite). For Hong Kong SAR, visit [Buy Microsoft 365 at a discounted price](https://www.microsoftestore.com.hk/partner/hup?locale=en_HK).
-          - Discounts on select Surface devices and accessories are offered to eligible companies in select markets. 
           
       - question: |
           How does an organization qualify for Microsoft Workplace Discount Program benefits?
         answer: |
           For employees to take advantage of the Microsoft Workplace Discount Program benefit, they must have a valid corporate email address and an active Microsoft Account, and your organization must meet one of the following criteria:
           
-          - Customers who have active Software Assurance for qualifying Microsoft 365 apps
+          - Customers who have active Software Assurance for qualifying apps in Microsoft 365
           - Customers who have Microsoft 365/Microsoft 365 E3/E5 From Software Assurance
           - Commercial and government customers who have purchased 2,000 or more licenses of one or a mix of Microsoft 365 E3/E5
           - Education and non-profit customers
@@ -64,9 +66,9 @@ sections:
           The Microsoft Home Use Program is still available. The name of the program has changed to the Microsoft Workplace Discount Program. Any previously purchased discounted products are not affected by the change in the program name.  You'll continue to receive discounted rates on qualified subscriptions, provided you keep auto-renewal turned on.
 
       - question: |
-          Why do I have to create an Azure Active Directory (AAD) account to use the Workplace Discount Program?
+          Why do I have to create a Microsoft Entra account to use the Workplace Discount Program?
         answer: |
-          To update and modernize the Workplace Discount Program to a broader range of license and product benefits, we changed the way we fulfill the program. Microsoft Store for Business is used for eligibility validation and to assign the benefits, and relies on AAD to connect information from VLSC and to validate the email domains your organization's employees are on. For more information, see [Sign up for Microsoft Store for Business or Microsoft Store for Education](/microsoft-store/sign-up-microsoft-store-for-business#o365-welcome). Alternatively, you can use the **Benefits** tab on the **Your products** page of the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) to manage the program benefits.
+          To update and modernize the Workplace Discount Program to a broader range of license and product benefits, we changed the way we fulfill the program. Microsoft Store for Business is used for eligibility validation and to assign the benefits, and relies on Microsoft Entra ID to connect information from VLSC and to validate the email domains your organization's employees are on. For more information, see [Sign up for Microsoft Store for Business or Microsoft Store for Education](/microsoft-store/sign-up-microsoft-store-for-business#o365-welcome). Alternatively, you can use the **Benefits** tab on the **Your products** page of the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) to manage the program benefits.
           
       - question: |
           How do I become the assigned IT Admin of a managed tenant?
@@ -78,12 +80,12 @@ sections:
       - question: |
           What resources are available to help promote the Workplace Discount Program benefit to employees?
         answer: |
-          Use the resources located on the [Workplace Discount Program](http://www.microsoft.com/workplace-discount-program/employer-resources) home page to help you promote the program to your employees. You'll find digital and printable flyers, verbiage for use in emails and newsletters, and guidance on how to best promote the Workplace Discount Program.
+          Use the resources located on the [Workplace Discount Program](https://www.microsoft.com/workplace-discount-program/employer-resources) home page to help you promote the program to your employees. You'll find digital and printable flyers, verbiage for use in emails and newsletters, and guidance on how to best promote the Workplace Discount Program.
          
       - question: |
           What are the steps for an eligible employee to make a Microsoft Workplace Discount Program purchase?
         answer: |
-          1. **Sign Up** Go to the [Microsoft Workplace Discount Program page](http://www.microsoft.com/workplace-discount-program), and select the **Get Started** button. Employees enter their corporate email address.
+          1. **Sign Up** Go to the [Microsoft Workplace Discount Program page](https://www.microsoft.com/workplace-discount-program), and select the **Get Started** button. Employees enter their corporate email address.
           2. **Confirm**  An email is sent to their corporate email address inbox with a link that authenticates their eligibility for the program.
           3. **Sign In** After they have been authenticated, they begin the purchase process by providing the Microsoft account that's associated with their personal email address, which allows them to view the discounts on products available to them based on the organization's Workplace Discount Program benefit. For more info, see [How to sign in to your Microsoft account](https://support.microsoft.com/help/4028195/microsoft-account-sign-in).
           4. **Shop** The purchase is processed and completed in the Microsoft Store.
@@ -106,7 +108,7 @@ sections:
           If employees have questions, refer them to the following resources:
           
           - [Post purchase and installation FAQ](https://www.microsoft.com/microsoft-365/microsoft-365-for-home-and-school-faq?rtc=1)
-          - [Workplace Discount Program Employee FAQ](http://www.microsoft.com/workplace-discount-program/faq)
+          - [Workplace Discount Program Employee FAQ](https://www.microsoft.com/workplace-discount-program/faq)
           
            For help with technical issues, see [Microsoft Support](https://support.microsoft.com/). You'll find help for:
           
@@ -138,9 +140,8 @@ sections:
 additionalContent: |
 
   ## Related content
-    [Microsoft Workplace Discount Program FAQs](http://www.microsoft.com/workplace-discount-program/faq). (article)\
+    [Microsoft Workplace Discount Program FAQs](https://www.microsoft.com/workplace-discount-program/faq). (article)\
     [Microsoft Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0) (link page)\
     [Microsoft Store for Business Admin support](/microsoft-store/) (link page)\
-    [Microsoft Store for Business](https://go.microsoft.com/fwlink/?linkid=2139192) (link page)\
-    [Workplace Discount Program employee store](http://www.microsoft.com/workplace-discount-program/faq) (link page)\
+    [Workplace Discount Program employee store](https://www.microsoft.com/workplace-discount-program/faq) (link page)\
     [Microsoft Licensing: Workplace Discount Program overview](https://www.microsoft.com/licensing/licensing-programs/software-assurance-by-benefits?activetab=software-assurance-by-benefits-tab:primaryr4) (link page)

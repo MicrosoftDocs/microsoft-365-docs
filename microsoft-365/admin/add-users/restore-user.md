@@ -5,9 +5,9 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 09/18/2023
+ms.date: 11/14/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
@@ -25,7 +25,7 @@ description: "Within 30 days after deleting a user account, you can restore the 
 
 # Restore a user in the Microsoft 365 admin center
 
-When you restore a user account within 30 days after deleting it, the account and all associated data are restored. The user can sign in with the same work or school account. Their mailbox will be fully restored. To find out how much time remains before a specific user account can no longer be restored, [contact us](../../business-video/get-help-support.md).
+When you restore a user account within 30 days after deleting it, the account and all associated data are restored. The user can sign in with the same work or school account. Their mailbox is fully restored. To find out how much time remains before a specific user account can no longer be restored, [contact us](../../business-video/get-help-support.md).
   
 Here are a couple of tips:
   
@@ -35,7 +35,7 @@ Here are a couple of tips:
 
 ## Restore one or more user accounts
 
-You must be a Microsoft 365 global admin or user management admin to do these steps. 
+You must be a [user management admin](about-admin-roles.md) to do these steps.
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Deleted users</a> page.
 
@@ -43,17 +43,17 @@ You must be a Microsoft 365 global admin or user management admin to do these st
 
 3. Follow the prompts to set their password, and then select **Restore**.
 
-4. If the user is successfully restored, select **Send email and close**. If you encounter a name conflict or proxy address conflict, see the instructions below for how to restore those accounts.
+4. If the user is successfully restored, select **Print** and securely send the user their username and password information. If you encounter a name conflict or proxy address conflict, see the instructions below for how to restore those accounts.
 
 5. Make sure to add a license for the user after you restore them if you want them to use Microsoft 365.
 
-After you've restored a user, make sure you notify them that their password changed and you follow up with them.
+After you restore a user, make sure you notify them that their password changed and you follow up with them.
   
 ## Restore a user that has a user name conflict
 
-A user name conflict occurs when you delete a user account, create a new user account with the same user name (either for the same user or another user with a similar name), and later try to restore the deleted account.
+A user name conflict occurs when you delete a user account, create a new user account with the same user name - either for the same user or another user with a similar name, and later try to restore the deleted account.
   
-To fix this, replace the active user account with the one that you are restoring. Or, assign a different user name to the account that you are restoring so that there aren't two accounts with the same user name. Here are the steps.
+To fix this conflict, replace the active user account with the one that you're restoring. Or, assign a different user name to the account that you're restoring so that there aren't two accounts with the same user name. Here are the steps.
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Deleted users</a> page.
   
@@ -74,15 +74,15 @@ To fix this, replace the active user account with the one that you are restoring
 
 ## Restore a user that has a proxy address conflict
 
-A proxy address conflict occurs when you delete a user account that contains a proxy address, assign the same proxy address to another account, and then try to restore the deleted account. Follow the steps below to fix this issue.
+A proxy address conflict occurs when you delete a user account that contains a proxy address, assign the same proxy address to another account, and then try to restore the deleted account. Follow these steps to fix this issue.
   
-You must have [admin permissions](about-admin-roles.md) in Microsoft 365 to do this. 
+You must have [admin permissions](about-admin-roles.md) in Microsoft 365 to do this.
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Deleted users</a> page.
 
 2. On the **Deleted users** page, select the user that you want to restore, and then select **Restore user**.
 
-3. On the **Restore** page, follow the instructions to set the password and select **Restore**. Any conflicting proxy addresses are automatically removed from the user you are restoring.
+3. On the **Restore** page, follow the instructions to set the password and select **Restore**. Any conflicting proxy addresses are automatically removed from the user you're restoring.
 
 4. Review the results, and then select **Close**.
 

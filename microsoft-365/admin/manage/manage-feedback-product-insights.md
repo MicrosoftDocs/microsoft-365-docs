@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 03/26/2021
+ms.date: 01/06/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -15,10 +15,6 @@ ms.collection:
 - scotvorg
 - Adm_O365
 ms.custom: AdminSurgePortfolio
-search.appverid:
-- BCS160
-- MET150
-- MOE150
 description: "Use Net promoter scores (NPS) from your end users to see how they feel about Microsoft products and services."
 ---
 
@@ -40,7 +36,7 @@ We use NPS surveys and feedback from your end-users to provide you with insights
 
 ## Watch: NPS feedback and insights
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWWSNo]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=a755fdb6-078b-4244-9478-a8cbd3c22f65]
 
 ## Before you begin
 
@@ -51,7 +47,7 @@ You need to be an [administrator](../add-users/about-admin-roles.md) to view and
 
 ## NPS survey insights
 
-1. In the [Microsoft 365 admin center](https://admin.microsoft.com/), go to **Health** > **Product feedback** > **NPS survey insights**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, go to **Health** > **Product feedback** > **NPS survey insights**.
 2. From the **NPS survey insights** page, navigate on the page to see survey insights related to NPS for your organization.
 
 :::image type="content" source="../../media/product-feedback-main-page.png" alt-text="Screenshot: Net Promoter Score (NPS) main chart" lightbox="../../media/product-feedback-main-page.png":::

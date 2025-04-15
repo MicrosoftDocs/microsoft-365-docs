@@ -1,5 +1,5 @@
 ---
-title: Manage SAAS apps for your organization
+title: Manage third-party app subscriptions in the Microsoft 365 admin center
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -9,6 +9,7 @@ ms.reviewer: armanv, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
 ms.collection:
 - Tier1
@@ -19,38 +20,119 @@ ms.custom:
 - commerce_subscriptions
 - AdminSurgePortfolio
 - admindeeplinkMAC
+- GAUpdates
 search.appverid: MET150 
-description: Learn how to activate and manage third-party apps in Microsoft 365 admin center.
-ms.date: 03/31/2023
+description: "Learn how to activate and manage third-party apps in the Microsoft 365 admin center."
+ms.date: 01/07/2025
 ---
 
-# Manage third-party app subscriptions for your organization
+# Manage third-party app subscriptions in the Microsoft 365 admin center
 
-You can manage licenses and billing for third-party apps in the new <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. Updated features include enhanced subscription management, improved access to billing information, and improved flexibility for managing bills. Subscription management is based on Microsoft's updated commerce platform. This applies to software-as-a-service apps that customers purchase directly, or from a third-party provider.
+You can manage licenses and billing for third-party apps in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
 > [!IMPORTANT]
-> As of April 1, 2023, we no longer accept checks as a payment method for subscriptions paid by invoice. Pay by check is no longer available as a payment option, and check payment instructions have been removed from invoices. You can still pay for your invoice by wire transfer. See your invoice for wire transfer payment information. If you're an existing customer who currently pays by check, you have until September 30, 2023 to change to paying by wire transfer, and avoid possible service disruption.
+> As of April 1, 2023, we no longer accept checks as a payment method for subscriptions paid by invoice.
+
+## Before you begin
+
+- [Find out what type of billing account you have](manage-billing-accounts.md#view-my-billing-accounts).
+- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a Billing account owner or contributor to do the tasks in this article. For more information about billing account and billing profile roles, see [Understand your Microsoft business billing account](manage-billing-accounts.md) and [Manage your Microsoft business billing profiles](billing-and-payments/manage-billing-profiles.md).
+- If you have a Microsoft Online Services Agreement (MOSA) billing account type, you must be at least a Billing Administrator to do the tasks in this article. For more information, see [About admin roles in the Microsoft 365 admin center](../admin/add-users/about-admin-roles.md).
+
+> [!NOTE]
+> If you're the person who signed up for the subscription, you're automatically a Billing account owner.
 
 ## How to get software-as-a-service apps
 
-There are a few ways to purchase third-party apps.
+There are a few ways to buy third-party apps.
 
-- **Direct purchase** – Customers can directly purchase subscriptions from [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/), or [AppSource](https://appsource.microsoft.com/).
-- **Partner purchase** –  Work with a partner through Partner Center to purchase subscriptions.
+- **Direct purchase** – Customers can directly buy subscriptions from [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/), or [AppSource](https://appsource.microsoft.com/).
+- **Partner purchase** –  Work with a partner through Partner Center to buy subscriptions.
 - **Microsoft proposal** – Respond to a proposal from Microsoft Sales that includes third-party apps.
 
-Once customers purchase the apps and accept the Microsoft Customer Agreement, they can manage them in Microsoft 365 admin center.
+After you buy the apps and accept the Microsoft Customer Agreement, you can manage them in Microsoft 365 admin center.
 
-App providers sell their apps either at a flat rate, or by purchasing licenses for users.
+App providers sell their apps either at a flat rate, or by buying licenses for users.
 
 - **Flat rate** – Also called site-based pricing, apps are priced with a monthly or annual price. On the app page, license quantity is listed at Unlimited.
-- **Licenses** – Apps are priced by license. Customers assign licenses to each user in their organization
+- **Licenses** – Apps are priced by license. Customers assign licenses to each user in their organization.
+
+## Activate third-party apps
+
+As an admin, you must activate third-party apps before you can assign them to users. These apps are activated in the third-party publisher's portal.
+
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, go to the **Billing** > **Your products** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> page.
+2. Find and select the app that you want to manage.
+3. Under **Settings & actions**, select **Manage in publisher's portal**.
+
+You're directed to the app publisher's site where you can activate the app.
+
+## Manage third-party apps
+
+Admins can manage third-party apps in two locations: the Microsoft 365 admin center, and the third-party app provider's portal.
+
+The tasks that you can do depend on which portal you use. The following table lists the tasks available in each portal.
+
+| Microsoft 365 admin center           | App publisher portal           |
+| ------------------------------------ | ------------------------------ |
+| Change license quantity              | Set up app (once for each app) |
+| Manage how you pay your bill         | Assign licenses to users       |
+| Change payment method (credit card)  |  Technical support             |
+| View invoice                         |  |
+| Cancel app subscription              |  |
+
+After you activate an app, it remains active until it's canceled, expires, or if payment isn't kept current. These events change the app status to disabled. After an app is disabled, it can't be reactivated. To continue using the app, buy another copy of it.
+
+## Assign licenses for a third-party app
+
+You must activate third-party apps before you can assign them to users. The apps are activated in the third-party publisher's portal.
+
+1. In the admin center, go to the **Billing** > **Your products** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> page.
+2. Find and select the app that you want to manage.
+3. Under **Settings & actions**, select the link to **Manage in publisher's portal**.
+
+## Change the license quantity for a third-party app
+
+You can change the number of licenses owned by your organization.
+
+> [!NOTE]
+> Changing the number of licenses that you own only applies to apps bought with seat-based pricing.
+
+1. In the admin center, go to the **Billing** > **Your products** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> page.
+2. Find and select the app you want to manage.
+3. Select **Change license quantity**.
+
+## Manage payment methods for a third-party app
+
+Third-party apps each have a billing profile assigned to them. Billing profiles let you customize what products are included on your invoice, and how you pay your invoices. They include:
+
+- **Payment methods** – Credit cards or wire transfer
+- **Contact information** –  Billing address and a contact name
+- **Roles** – Roles that allow you to change the billing profile, pay bills, or use the payment method on the billing profile to make purchase.
+
+For more information about billing profiles, see [Manage your Microsoft business billing profiles](billing-and-payments/manage-billing-profiles.md).
+
+### Edit the billing profile on a third-party app subscription
+
+1. In the admin center, go to the **Billing** > **Your products** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> page.
+2. Find and select the app you want to manage.
+3. Next to **Billing profile**, select **Edit**.
+
+For more information about invoices, see [Understand your invoice for your Microsoft MCA billing account](billing-and-payments/understand-your-invoice.md).
+
+## Cancel a third-party app subscription
+
+You can cancel a software-as-a-service app from the app page.
+
+1. In the admin center, go to the **Billing** > **Your products** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> page.
+2. Find and select the app you want to manage.
+3. Under **Settings & actions**, select **Cancel subscription**.
 
 ## Supported geographic locations
 
-Commercial marketplace offerings can be purchased in 141 geographies as defined by the customer's billing address, and transactions can be completed in 17 currencies. The following table lists each supported geographic location, its [ISO 3166 two-digit alpha code](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes), and the assigned currency.
+Customers can buy commercial marketplace offerings in 141 geographies as defined by the customer's billing address. Transactions can be completed in 17 currencies. The following table lists each supported geographic location, its [ISO 3166 two-digit alpha code](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes), and the assigned currency.
 
-A CSP can purchase an offer in Partner Center in their end customer's currency so they can bill them in that same currency. For additional information on this, refer to [these FAQs](https://partner.microsoft.com/resources/detail/eu-efta-change-of-partner-billing-currency-faq-pdf).
+A CSP can buy an offer in the Partner Center in their customer's currency so that they can bill them in that same currency. For additional information on this, refer to [these FAQs](https://partner.microsoft.com/resources/detail/eu-efta-change-of-partner-billing-currency-faq-pdf).
 
 |   Country/Region Name               |   ISO-2   |   Currency</br>(All offer types)  |    Currency</br>(Consulting service offers only)    |
 |-------------------------------------|-----------|--------------|---------------------------------------------|
@@ -201,66 +283,6 @@ A CSP can purchase an offer in Partner Center in their end customer's currency s
 
 \** Free and BYOL VM images only.
 
-## Activate third-party apps
+## Related content
 
-Admins must activate third-party apps before assigning them to users. These apps are activated in the third-party publisher's portal.
-
-1. In the admin center, go to the **Billing** > **Your products** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> page.
-2. Find and select the app you want to manage.
-3. Under **Settings & actions**, select **Manage in publisher's portal**.
-
-You'll be directed to the app publisher's site where you can activate the app.
-
-## Manage third-party apps
-
-Admins manage third-party apps in two locations: Microsoft 365 admin center, and the third-party app provider's portal.
-
-Here's what you can do in each portal.
-
-| Microsoft 365 admin center | App publisher portal |
-| --- | --- |
-| Change license quantity <br> Manage how you pay your bill <br> Manage how you pay your bill <br> Change payment method (credit card) <br> View invoice <br> Cancel app subscription | Set up app (once for each app) <br> Assign licenses to users <br> Technical support |
-
-After the app is activated, it remains active unless it's canceled, expires, or if payment isn't kept current. These events change the app status to disabled. Once an app is disabled, it can't be reactivated. To continue using the app, buy another copy of it.
-
-## Assign licenses
-
-Admins need to activate third-party apps before assigning them to users. They're activated in the third-party publisher's portal. On the app page, under **Settings & actions**, select the link to assign licenses.
-
-1. In the admin center, go to the **Billing** > **Your products** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> page.
-2. Find and select the app you want to manage.
-3. Under **Settings & actions**, select the link to **Manage in publisher's portal**.
-
-## Change license quantity
-
-Admins can change the number of licenses owned by their organization. This only applies to apps purchased with seat-based pricing.
-
-1. In the admin center, go to the **Billing** > **Your products** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> page.
-2. Find and select the app you want to manage.
-3. Select **Change license quantity**.
-
-## Manage payment methods
-
-Software-as-a-service apps each have a billing profile assigned to them. Billing profiles let you customize what products are included on your invoice, and how you pay your invoices. They include:
-
-- **Payment methods** – Credit cards or wire transfer
-- **Contact information** –  Billing address and a contact name
-- **Roles** – Roles that allow you to change the billing profile, pay bills, or use the payment method on the billing profile to make purchase.
-
-For more information on billing profiles, see [Understand billing profiles](/microsoft-store/billing-profile).
-
-### Change the billing profile on a software-as-a-service app subscription
-
-1. In the admin center, go to the **Billing** > **Your products** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> page.
-2. Find and select the app you want to manage.
-3. Next to **Billing profile**, select **Edit**.
-
-For more information on invoices, see [Understand your bill or invoice](billing-and-payments/understand-your-invoice.md).
-
-## Cancel a software-as-a-service app subscription
-
-You can cancel a software-as-a-service app from the app page.
-
-1. In the admin center, go to the **Billing** > **Your products** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> page.
-2. Find and select the app you want to manage.
-3. Under **Settings & actions**, select **Cancel subscription**.
+[Manage your Microsoft business billing profiles](billing-and-payments/manage-billing-profiles.md) (article)\

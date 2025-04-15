@@ -18,6 +18,8 @@ f1.keywords: NOCSH
 
 # Test against Windows monthly security updates
 
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
 Test Base provides scheduled automatic tests against these fixed issues in a proactive way, so that you can get more assurance and have a chance to fix the issue before any damage happens, and your organization or your users can stay productive and protected.
 
 This section shows you how to set up your own scheduled tests against Windows monthly security updates.
