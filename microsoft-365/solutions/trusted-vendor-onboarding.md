@@ -1,8 +1,8 @@
 ---
 title: Onboard trusted vendors to collaborate in Microsoft 365
-ms.author: mikeplum
-author: MikePlumleyMSFT
-manager: serdars
+author: DaniEASmith
+ms.author: danismith
+manager: jtremper
 ms.date: 08/14/2023
 audience: ITPro
 ms.topic: article
@@ -16,7 +16,7 @@ ms.collection:
 - m365solution-securecollab
 - m365initiative-externalcollab
 ms.custom: 
-localization_priority: medium
+ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: Learn how to onboard trusted vendors to collaborate in Microsoft 365.
@@ -44,8 +44,9 @@ The procedures in this article assume that you've enabled [SharePoint and OneDri
 
 With Microsoft Entra external collaboration settings, you can allow or block invites to certain domains. By creating an allowlist, you allow guest invitations only to those domains and all others are blocked. You can use this to allow guest invitations to vendors that you've approved while blocking those to vendors you haven't.
 
-To allow sharing invitations only from specified domains
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as a Global administrator.
+To allow sharing invitations only from specified domains:
+
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as an [External Identity Provider Administrator](/entra/identity/role-based-access-control/permissions-reference#external-identity-provider-administrator).
 1. Expand **Identity**, and then expand **External Identities**.
 1. Select **External collaboration settings**.
 1. Under **Collaboration restrictions**, select **Allow invitations only to the specified domains**, and then type the domains that you want to allow.
@@ -53,7 +54,7 @@ To allow sharing invitations only from specified domains
 
     ![Screenshot of collaboration restrictions settings in Microsoft Entra ID.](../media/azure-ad-allow-only-specified-domains.png)
 
-For more information about using allowlists or blocklists in Microsoft Entra ID, see [Allow or block invitations to B2B users from specific organizations](/azure/active-dir.ectory/external-identities/allow-deny-list)
+For more information about using allowlists or blocklists in Microsoft Entra ID, see [Allow or block invitations to B2B users from specific organizations](/azure/active-directory/external-identities/allow-deny-list)
 
 ## Allow domains for other Microsoft 365 organizations
 
@@ -72,12 +73,13 @@ By adding the vendor organization to the allowlist for Teams external access:
 
 <a name='allow-the-vendors-domain-in-azure-ad-cross-tenant-access-settings'></a>
 
-#### Allow the vendor's domain in Microsoft Entra cross-tenant access settings
+### Allow the vendor's domain in Microsoft Entra cross-tenant access settings
 
 To specify settings such as who can be invited from the vendor organization and what applications they can use, first add the organization in Microsoft Entra cross-tenant access settings.
 
-To add an organization
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as a Global administrator.
+To add an organization:
+
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as an [External Identity Provider Administrator](/entra/identity/role-based-access-control/permissions-reference#external-identity-provider-administrator).
 1. Expand **Identity**, and then expand **External Identities**.
 1. Select **Cross-tenant access settings**.
 1. Select **Organizational settings**.
@@ -88,6 +90,7 @@ To add an organization
     ![Screenshot of cross-tenant access settings in Microsoft Entra ID with two external organizations configured.](../media/cross-tenant-access-settings.png)
 
 To specify who your users can invite as guests from the vendor organization:
+
 1. On the **Organizational settings** tab, select the **Inbound access** link for the organization you want to configure.
 1. On the **B2B collaboration** tab, select **Customize settings**
 1. On the **External users and groups** tab, choose **Select \<organization\> users and groups**, and then select **Add external users and groups**.
@@ -97,6 +100,7 @@ To specify who your users can invite as guests from the vendor organization:
     ![Screenshot of an allowed group in the inbound cross-tenant access settings for an external organization.](../media/cross-tenant-inbound-allow-group.png)
 
 To specify which applications guests from the vendor organization can use:
+
 1. On the **Organizational settings** tab, select the **Inbound access** link for the organization you want to configure.
 1. On the **B2B collaboration** tab, select **Customize settings**
 1. On the **Applications** tab, choose **Select applications**, and then select **Add Microsoft applications** or **Add other applications**.
@@ -113,7 +117,8 @@ If you plan to use Teams shared channels with the vendor organization, both orga
 
 To allow users in your organization and the vendor organization to chat and meet without the vendor having to log in as a guest, allow the domain in Teams external access.
 
-To allow an organization in Teams external access
+To allow an organization in Teams external access:
+
 1. In the Teams admin center, expand **Users**, and then select **External access**.
 1. Under **Choose which domains your users have access to**, choose **Allow only specific external domains**.
 1. Select **Allow domains**.

@@ -3,10 +3,11 @@ title: "Set up directory synchronization for Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 09/30/2020
+ms.date: 07/16/2024
 audience: Admin
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -15,6 +16,7 @@ ms.collection:
 - scotvorg
 - Ent_O365
 - M365-identity-device-management
+- must-keep
 search.appverid:
 - MET150
 - MOE150
@@ -29,7 +31,7 @@ description: "Learn how to set up directory synchronization between Microsoft 36
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-Microsoft 365 uses a Microsoft Entra tenant to store and manage identities for authentication and permissions to access cloud-based resources. 
+Microsoft 365 uses a Microsoft Entra tenant to store and manage identities for authentication and permissions to access cloud-based resources.
 
 If you have an on-premises Active Directory Domain Services (AD DS) domain or forest, you can synchronize your AD DS user accounts, groups, and contacts with the Microsoft Entra tenant of your Microsoft 365 subscription. This is hybrid identity for Microsoft 365. Here are its components.
 
@@ -55,7 +57,7 @@ See [Hybrid identities](plan-for-directory-synchronization.md) for more informat
 
 ## 1. Review prerequisites for Microsoft Entra Connect
 
-You get a free Microsoft Entra subscription with your Microsoft 365 subscription. When you set up directory synchronization, you will install Microsoft Entra Connect on one of your on-premises servers.
+You get a free Microsoft Entra subscription with your Microsoft 365 subscription. When you set up directory synchronization, you'll install Microsoft Entra Connect on one of your on-premises servers.
   
 For Microsoft 365 you'll need to:
   
@@ -66,9 +68,9 @@ For your on-premises server on which you install Microsoft Entra Connect, you'll
   
 |**Server OS**|**Other software**|
 |:-----|:-----|
-|Windows Server 2012 R2 and later | - PowerShell is installed by default, no action is required.  <br> - Net 4.5.1 and later releases are offered through Windows Update. Make sure you have installed the latest updates to Windows Server in the Control Panel. |
-|Windows Server 2008 R2 with Service Pack 1 (SP1)** or Windows Server 2012 | - The latest version of PowerShell is available in Windows Management Framework 4.0. Search for it on [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=717996).  <br> - .Net 4.5.1 and later releases are available on [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=717996). |
-|Windows Server 2008 | - The latest supported version of PowerShell is available in Windows Management Framework 3.0, available on [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=717996).  <br> - .Net 4.5.1 and later releases are available on [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=717996). |
+|Windows Server 2012 R2 and later | - PowerShell is installed by default, no action is required.  <br> - Net 4.5.1 and later releases are offered through Windows Update. Make sure you've installed the latest updates to Windows Server in the Control Panel. |
+|Windows Server 2008 R2 with Service Pack 1 (SP1)** or Windows Server 2012 | - The latest version of PowerShell is available in Windows Management Framework 4.0. Search for it on [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=717996).  <br> - .NET 4.5.1 and later releases are available on [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=717996). |
+|Windows Server 2008 | - The latest supported version of PowerShell is available in Windows Management Framework 3.0, available on [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=717996).  <br> - .NET 4.5.1 and later releases are available on [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=717996). |
 
 See [Prerequisites for Microsoft Entra Connect](/azure/active-directory/hybrid/how-to-connect-install-prerequisites) for the details of hardware, software, account and permissions requirements, SSL certificate requirements, and object limits for Microsoft Entra Connect.
   
@@ -80,7 +82,7 @@ You can also review the Microsoft Entra Connect [version release history](/azure
 
 Before you begin, make sure you have:
 
-- The user name and password of a Microsoft 365 global admin
+- The user name and password of a Microsoft 365 account with the Hybrid Identity Administrator role enabled
 - The user name and password of an AD DS domain administrator
 - Which authentication method (PHS, PTA, federated)
 - Whether you want to use [Microsoft Entra seamless single sign-on (SSO)](/azure/active-directory/hybrid/how-to-connect-sso)
@@ -89,8 +91,7 @@ Follow these steps:
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) (https://admin.microsoft.com) and choose **Users** \> **Active Users** on the left navigation.
 2. On the **Active users** page, choose **More** (three dots) \> **Directory synchronization**.
-  
-3. On the **Microsoft Entra preparation** page, select the **Go to the Download center to get the Microsoft Entra Connect tool** link to get started. 
+3. On the **Microsoft Entra preparation** page, select the **Go to the Download center to get the Microsoft Entra Connect tool** link to get started.
 4. Follow the steps in [Microsoft Entra Connect and Microsoft Entra Connect Health installation roadmap](/azure/active-directory/hybrid/how-to-connect-install-roadmap).
 
 ## 3. Finish setting up domains

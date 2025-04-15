@@ -1,13 +1,14 @@
 ---
 title: Set up and configure the Moodle LMS plugins for Open LMS
-ms.author: danismith
 author: DaniEASmith
-manager: serdars
+ms.author: danismith
+manager: jacktremper
 ms.reviewer: amitman 
 ms.date: 04/06/2022
 audience: admin
-ms.topic: article
-ms.service: microsoft-365-business
+ms.topic: install-set-up-deploy
+ms.service: msteams
+ms.subservice: teams-education
 f1.keywords:
 - CSH
 ms.collection: 
@@ -58,9 +59,9 @@ Register Open LMS as an application in your Microsoft Entra ID using the PowerSh
 - On operating systems that aren't Windows, you should only follow the manual process to register your Open LMS instance in Azure. Check the *Important* alert section below for details.
 
 > [!IMPORTANT]
-> For more information on registering your Open LMS instance manually, see [Register your Open LMS instance as an application](https://docs.moodle.org/400/en/Microsoft_365#Azure_App_Creation_and_Configuration).
+> For more information on registering your Open LMS instance manually, see [Register your Open LMS instance as an application](https://docs.moodle.org/403/en/Microsoft_365#Azure_App_Creation_and_Configuration).
 >
-> Once you register your app, verify that all the Azure app permissions are applied. For more information, see [Azure app permissions](https://docs.moodle.org/400/en/Microsoft_365#Azure_app_permissions).
+> Once you register your app, verify that all the Azure app permissions are applied. For more information, see [Azure app permissions](https://docs.moodle.org/403/en/Microsoft_365#Azure_app_permissions).
 
 ### Register application in Azure using PowerShell
 
@@ -160,7 +161,7 @@ Register Open LMS as an application in your Microsoft Entra ID using the PowerSh
             1. The default *Teacher* role has the `local/o365:teamowner` capability, and the default *Student* role has the `local/o365:teammember` capability.
 
 > [!NOTE]
-> The scheduled tasks are triggered by [Moodle Cron](https://docs.moodle.org/400/en/Cron), which needs to be configured to run frequently. Each scheduled task can have a default schedule and can be customized.
+> The scheduled tasks are triggered by [Moodle Cron](https://docs.moodle.org/403/en/Cron), which needs to be configured to run frequently. Each scheduled task can have a default schedule and can be customized.
 >
 > - The default schedule of the **Sync users with Microsoft Entra ID** task is every minute.
 > - The default schedule of the **Sync Moodle courses to Microsoft Teams** task is daily at 1 am in the Open LMS server default time zone.
@@ -175,4 +176,4 @@ After the plugins are installed and configured, you can:
 
 If you would like to review Open LMS's Microsoft 365 integration guides and release notes, see these resources:
 
-- [Microsoft 365 integration documentation on Moodle Docs](https://docs.moodle.org/400/en/Microsoft_365).
+- [Microsoft 365 integration documentation on Moodle Docs](https://docs.moodle.org/403/en/Microsoft_365).

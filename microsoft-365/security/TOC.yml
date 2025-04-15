@@ -1,3 +1,4 @@
+items:
 - name: Microsoft 365 security
   href: index.yml
   expanded: true
@@ -28,7 +29,7 @@
           href: ./office-365-security/zero-trust-identity-device-access-policies-mcas-saas.md
         - name: Continuous access evaluation
           href: ./office-365-security/zero-trust-continuous-access-evaluation-microsoft-365.md
-    - name: Strengthen your security posture with Microsoft 365 Defender
+    - name: Strengthen your security posture with Microsoft Defender XDR
       items:
         - name: Overview
           href: security-posture-solution-overview.md
@@ -40,9 +41,9 @@
           href: strengthen-security-posture-investigate-improve.md
         - name: Phase 4 - Maintain a secure posture
           href: strengthen-security-posture-track-maintain.md
-    - name: Microsoft 365 Defender docs
+    - name: Microsoft Defender XDR docs
       items:
-       - name: Microsoft 365 Defender
+       - name: Microsoft Defender XDR
          href: ./defender/index.yml
        - name: Defender for Office 365
          href: ./office-365-security/index.yml

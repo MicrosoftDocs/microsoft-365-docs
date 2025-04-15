@@ -4,10 +4,10 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: sharonchoi
+ms.reviewer: stutisingh
 ms.date: 07/17/2023
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
@@ -24,17 +24,17 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # View opportunities in Sales Advisor in Microsoft 365 Lighthouse
 
-Sales Advisor provides actionable recommendations to manage your customer and grow your business. To understand what an opportunity is, see [Understanding opportunities and data in Sales Advisor](m365-lighthouse-understanding-opportunities-and-data.md).
+Sales Advisor provides actionable recommendations to manage your customer and grow your business. To understand what an opportunity is, see [Understand opportunities and data in Sales Advisor](m365-lighthouse-understanding-opportunities-and-data.md).
 
 Each customer can have zero, one, or more opportunities. Only customers with one or more opportunities are populated into the opportunities table. Within each opportunity type, there will be only up to one opportunity per customer.
 
 ## Before you begin
 
-You must hold the Executive report viewer or Report viewer role in Partner Center to access Sales Advisor. To learn more, see [Get access to Sales Advisor](m365-lighthouse-get-access-to-sales-advisor.md).
+You must hold the Account Manager role in Lighthouse. If you don't hold the Account Manager role, reach out to someone who holds the Administrator role in Lighthouse and ask them to assign the role to you. For more information, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md).
 
 ## View opportunities
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Sales Advisor** > **Opportunities**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Sales Advisor** > **Opportunities**.
 
 2. On the **All opportunities** tab, select the tenant you want to research.
 
@@ -48,14 +48,14 @@ You must hold the Executive report viewer or Report viewer role in Partner Cente
 
 ## View opportunities by opportunity type
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Sales Advisor** > **Opportunities**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Sales Advisor** > **Opportunities**.
 2. Select the desired opportunity type you want to review.
 
-For a definition of each opportunity type, see the Opportunity Type section in [Understanding opportunities and data in Sales Advisor](m365-lighthouse-understanding-opportunities-and-data.md).
+For a definition of each opportunity type, see the Opportunity Type section in [Understand opportunities and data in Sales Advisor](m365-lighthouse-understanding-opportunities-and-data.md).
 
 ## Export opportunities out of Sales Advisor
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Sales Advisor** > **Opportunities**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Sales Advisor** > **Opportunities**.
 2. Select the view you want to export (All opportunities, Customer acquisition, Customer retention, or Customer growth).
 3. Filter the list as needed using the filters (Probability, Opportunity type, and Date created).
 4. Select **Export**.
@@ -78,5 +78,4 @@ Lighthouse exports the data displayed into a CSV file that you can integrate int
 ## Related content
   
 [Overview of Sales Advisor](m365-lighthouse-sales-advisor-overview.md) (article)\
-[Get access to Sales Advisor](m365-lighthouse-get-access-to-sales-advisor.md) (article)\
-[Understanding opportunities and data in Sales Advisor](m365-lighthouse-understanding-opportunities-and-data.md) (article)
+[Understand opportunities and data in Sales Advisor](m365-lighthouse-understanding-opportunities-and-data.md) (article)

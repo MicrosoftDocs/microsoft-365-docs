@@ -5,16 +5,18 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.service: microsoft-365-enterprise
+ms.subservice: advanced-data-residency
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 09/20/2022
+ms.date: 02/11/2025
 ms.reviewer: deanw
 ms.custom:
 - it-pro
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
+- must-keep
 ---
 
 # Data Residency for Viva Connections
@@ -23,7 +25,7 @@ ms.collection:
 
 Service documentation: [Overview: Viva Connections](/viva/connections/viva-connections-overview)
 
-Capability Summary: Microsoft Viva Connections is your gateway to a modern employee experience designed to keep everyone engaged and informed. Viva Connections is a customizable app in Microsoft Teams that gives everyone a personalized destination to discover relevant news, conversations, and the tools they need to succeed.  Data storage is related to the following Viva Connections Components: Dashboard and feed.
+Capability Summary: Microsoft Viva Connections is your gateway to a modern employee experience designed to keep everyone engaged and informed. Viva Connections is a customizable app in Microsoft Teams that gives everyone a personalized destination to discover relevant news, conversations, and the tools they need to succeed. Data storage is related to the following Viva Connections Components: Dashboard and feed.
 
 ## Data Residency Commitments Available
 
@@ -37,12 +39,12 @@ Required Conditions:
 
 **Commitment:**
 
-Please refer to the [ADR Commitment page](m365-dr-commitments.md#viva-connections) for the specific customer data at rest commitment for Viva Connections.
+Refer to the [ADR Commitment page](m365-dr-commitments.md#viva-connections) for the specific customer data at rest commitment for Viva Connections.
 
 ### Migration
 
-Data is stored within Exchange Online, SharePoint Online and Microsoft Teams.  Migration processes are handled by the applicable/relevant workloads.
+Data is stored within Exchange Online, SharePoint and Microsoft Teams. Migration processes are handled by the applicable/relevant workloads.
 
 ### How can I determine customer data location?
 
-You can find the actual data location in Tenant Admin Center. As a tenant administrator you can find the actual data location, for committed data, by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location.
+You can find the actual data location in Tenant Admin Center. As a tenant administrator you can find the actual data location, for committed data, by navigating to **Admin -> Settings -> Org Settings -> Organization Profile -> Data Location**.

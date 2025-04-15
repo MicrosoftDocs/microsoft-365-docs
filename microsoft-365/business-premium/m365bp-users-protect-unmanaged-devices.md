@@ -2,19 +2,19 @@
 title: "Protect unmanaged devices with Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
-manager: dansimp
+ms.author: chrisda
+author: chrisda
+manager: deniseb
 audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-business
-ms.date: 11/02/2023
+ms.service: microsoft-365-business-security
+ms.date: 05/31/2024
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - M365-Campaigns
 - m365solution-smb
 - highpri
-- tier1
+- tier2
 ms.custom:
 - MiniMaven
 search.appverid:
@@ -30,7 +30,6 @@ With Microsoft 365 Business Premium, you can [secure managed devices](m365bp-pro
 
 > [!NOTE]
 > This article applies primarily to unmanaged (or BYOD) devices. Guidance for protecting managed devices is available here: [Set up and secure managed devices](m365bp-protect-managed-devices.md).
-> 
 
 ## [Windows 10 or 11](#tab/Windows10-11)
 
@@ -40,7 +39,7 @@ With Microsoft 365 Business Premium, you can [secure managed devices](m365bp-pro
 
 Device encryption is available on a wide range of Windows devices and helps protect your data by encrypting it. If you turn on device encryption, only authorized individuals are able to access your device and data. See [turn on device encryption](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) for instructions.
 
- If device encryption isn't available on your device, you can turn on standard [BitLocker encryption](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) instead. (BitLocker isn't available on Windows 10 Home edition.) 
+If device encryption isn't available on your device, you can turn on standard [BitLocker encryption](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) instead. (BitLocker isn't available on Windows 10 Home edition.)
 
 ### Protect your device with Windows Security
 
@@ -54,7 +53,7 @@ If you have an earlier version of Windows and are using Microsoft Security Essen
 
 You should always run Windows Defender Firewall even if you have another firewall turned on. Turning off Windows Defender Firewall might make your device (and your network, if you have one) more vulnerable to unauthorized access. See [Turn Windows Firewall on or off](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off) for instructions.
 
-## Next step
+## Next step for Windows
 
 Now, let's work on [securing the email system](m365bp-use-email-securely.md) against phishing and other attacks.
 
@@ -76,6 +75,6 @@ You can also reduce the risk of malware by using software only from reliable sou
 
 Use firewall settings to protect your Mac from unwanted contact initiated by other computers when you're connected to the Internet or a network. Without this protection, your Mac might be more vulnerable to unauthorized access. See [about the application firewall](https://support.apple.com/HT201642) for instructions.
 
-## Next step
+## Next step for Mac
 
 Now, let's work on [securing email usage](m365bp-use-email-securely.md) against phishing and other attacks.

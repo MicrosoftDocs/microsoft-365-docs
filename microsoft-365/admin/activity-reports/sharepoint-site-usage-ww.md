@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 10/20/2020
+ms.date: 04/01/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -33,8 +33,8 @@ As a Microsoft 365 admin, the Reports dashboard shows you the activity overview 
 
 ## How to get to the SharePoint site usage report
 
-1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page. 
-2. From the dashboard homepage, click on the **View more** button on the SharePoint card.
+1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page.
+2. From the dashboard homepage, under Reports, select **Sharepoint**.
 
 ## Show user details in the reports
 
@@ -44,13 +44,13 @@ Your user list will look like this:
   
 ![Reports - anonymized user list.](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
   
-Global administrators can revert this change for their tenant and show identifiable user information if their organization's privacy practices allow it. It can be achieved in the Microsoft 365 admin center by following these steps:
+Administrators can revert this change for their tenant and show identifiable user information if their organization's privacy practices allow it. It can be achieved in the Microsoft 365 admin center by following these steps:
   
 1. In the admin center, go to the **Settings** \> **Org Settings** \> **Services** page.
 
-2. Select **Reports**. 
+2. Select **Reports**.
   
-3. Uncheck the statement **In all reports, display de-identified names for users, groups, and sites**, and then save your changes. 
+3. Uncheck the statement **In all reports, display de-identified names for users, groups, and sites**, and then save your changes.
   
 ## Interpret the SharePoint site usage report
 
@@ -68,7 +68,7 @@ The **SharePoint site usage** report can be viewed for trends over the last 7 da
   
 |Metric|Description|
 |:-----|:-----|
-|Site URL  |The full URL of the site. Note: The URL will be empty temporarily. |
+|Site URL  |The full URL of the site. |
 |Deleted  |The deletion status of the site. It takes at least 7 days for sites to be marked as deleted.  |
 |Site owner  |The username of the primary owner of the site.   |
 |Site owner principal name  |The email address of the owner of the site. |
@@ -87,8 +87,10 @@ The **SharePoint site usage** report can be viewed for trends over the last 7 da
 |Company link count  |The number of times documents or folders are shared using "People in org with the link" on the site.  |
 |Secure link for guest count  |The number of times documents or folders are shared using "specific people" on the site.  |
 |Secure link for member count  |The number of times documents or folders are shared using "specific people" on the site.  |
-|Root Web Template  |The template used for creating the site.  <br/> NOTE: If you want to filter the data by different site types, then export the data and use the Root Web Template column. |
+|Root Web Template  |The template used for creating the site.  **NOTE**: If you want to filter the data by different site types, then export the data and use the Root Web Template column. |
 | Site ID | The site ID of the site. |
 
-Note that you may see differences between the sites listed above and those listed on the [Active sites page](https://go.microsoft.com/fwlink/?linkid=2185220) in the [SharePoint admin center](https://go.microsoft.com/fwlink/?linkid=2185219), from Sites > Active sites because the certain site templates and URLs are not included as Active Sites. See [Manage sites in the SharePoint admin center](/sharepoint/manage-sites-in-new-admin-center) for more information. 
- 
+>[!NOTE]
+>The SharePoint site URL will not be displayed if [BYOK](/azure/information-protection/byok-price-restrictions) or [Customer Lockbox](/azure/security/fundamentals/customer-lockbox-overview) is enabled. If you meet the requirement, submit a request via [ODSP Site URLs Displaying Request](https://forms.office.com/r/16hLY6na5W). The site URL will be visible within one week. If the requirement is not met, you can use PowerShell. To follow the steps, see [Use PowerShell to resolve site URLs](resolve-site-urls.md).
+
+Note that you may see differences between the sites listed above and those listed on the [Active sites page](https://go.microsoft.com/fwlink/?linkid=2185220) in the [SharePoint admin center](https://go.microsoft.com/fwlink/?linkid=2185219), from Sites > Active sites because the certain site templates and URLs are not included as Active Sites. See [Manage sites in the SharePoint admin center](/sharepoint/manage-sites-in-new-admin-center) for more information.

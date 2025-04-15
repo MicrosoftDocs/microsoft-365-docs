@@ -5,15 +5,18 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 07/29/2020
+ms.date: 12/09/2024
 audience: ITPro
-ms.topic: article
+ms.topic: concept-article
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 ms.collection: 
 - scotvorg
 - M365-subscription-management
 - m365initiative-coredeploy
+- essentials-get-started
+- must-keep
 ms.custom: it-pro
 description: The roadmap to set up your tenants for Microsoft 365.
 ---
@@ -28,7 +31,9 @@ To get your tenant ready for user, groups, licenses, and cloud apps, it's critic
 
 ## Set up your Microsoft 365 tenant
 
-After ensuring that your networking is optimized for access to Microsoft 365 for both on-premises and remote workers, your next big tasks are planning for and then configuring your Microsoft 365 tenant for DNS domain names, common services, and for that identity infrastructure that supports secure user sign-in.
+Before you begin planning your network for Microsoft 365 network connectivity, it's important to understand the connectivity principles for securely managing Microsoft 365 traffic and getting the best possible performance. Ensure that your networking is optimized for access to Microsoft 365 for both on-premises and remote workers by [understanding and planning for Microsoft 365 network optimization](microsoft-365-network-connectivity-principles.md).
+
+Your next big tasks are planning for and then configuring your Microsoft 365 tenant for DNS domain names, common services, and for that identity infrastructure that supports secure user sign-in.
 
 ### Plan
 
@@ -44,7 +49,7 @@ To plan for your tenant implementation:
 
 ### Deploy
 
-To deploy your tenant: 
+To deploy your tenant:
 
 - Add the [DNS domains](../admin/setup/add-domain.md) for your organization.
 - Use the [setup guides in the Microsoft 365 admin center](setup-guides-for-microsoft-365.md).
@@ -56,14 +61,13 @@ Microsoft continues to open new datacenter geographic locations (geos) for Micro
 
 For more information, see [Moving core data to new Microsoft 365 datacenter geos](moving-data-to-new-datacenter-geos.md).
 
-
 ## Deploy Microsoft 365 Multi-Geo
 
 With Microsoft 365 Multi-Geo, your organization can expand its Microsoft 365 presence to multiple geographic regions and/or countries within your existing tenant.
 
 For more information, see [Microsoft 365 Multi-Geo](microsoft-365-multi-geo.md).
 
-## Manage multiple Microsoft 365 tenants 
+## Manage multiple Microsoft 365 tenants
 
 Although having a single tenant for your organization is ideal, you may be one of many organizations that have multiple tenants. Reasons can include mergers and acquisitions, you want administrative isolation, or you have a decentralized IT.
 

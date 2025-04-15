@@ -5,9 +5,9 @@ f1.keywords:
 author: brendacarter
 ms.author: bcarter
 manager: dansimp
-ms.date: 05/01/2020
+ms.date: 04/22/2024
 audience: ITPro
-ms.topic: article
+ms.topic: solution-overview
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
@@ -40,11 +40,6 @@ Microsoft 365 has the capabilities to empower your hybrid workers to work either
 > [!NOTE]
 > If you are new to Microsoft 365, see [these resources](https://www.microsoft.com/microsoft-365).
 
-Watch this video for an overview of the deployment process.
-<br>
-<br>
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4F1af]
-
 For IT professionals managing onsite and cloud-based infrastructure to enable hybrid worker productivity, this solution provides these key capabilities:
 
 - Connected
@@ -75,8 +70,6 @@ For IT professionals managing onsite and cloud-based infrastructure to enable hy
 
 For a seamless sign-in experience, your on-premises Active Directory Domain Services (AD DS) user accounts should be synchronized with Microsoft Entra ID. To protect your Windows 11 or 10 devices, they should be enrolled in Intune. Here is a high-level view of the infrastructure.
 
-![The basic infrastructure for hybrid workers with Microsoft 365.](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
-
 To enable the capabilities of Microsoft 365 for your hybrid workers, use these Microsoft 365 features.
 
 |Capability or feature|Description|Licensing|
@@ -94,15 +87,10 @@ To enable the capabilities of Microsoft 365 for your hybrid workers, use these M
 |Configuration Manager|Manage software installations, updates, and settings on your devices|Requires separate Configuration Manager licenses|
 |Endpoint Analytics|Determine the update readiness of your Windows clients.|Requires separate Configuration Manager licenses|
 |Windows Autopilot|Set up and pre-configure new Windows 11 or 10 devices for productive use.|Microsoft 365 E3 or E5|
-|Microsoft Teams, Exchange Online, SharePoint Online and OneDrive, Microsoft 365 Apps, Microsoft Power Platform, and Viva Engage|Create, communicate, and collaborate.|Microsoft 365 E3 or E5|
+|Microsoft Teams, Exchange Online, SharePoint Online and OneDrive, Microsoft 365 Apps, Microsoft Power Platform, and Viva Engage|Create, communicate, and collaborate.|Microsoft 365 E3 or E5 and Microsoft Teams Enterprise |
 ||||
 
 For security and compliance criteria, see [Deploy security and compliance for remote workers](empower-people-to-work-remotely-security-compliance.md).
-
-<a name="poster"></a>
-For a 2-page summary of this solution, see the [Empower hybrid workers poster](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf).
-
-[![Empower hybrid workers poster.](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf)
 
 ## Provide hybrid working for all of your workers
 

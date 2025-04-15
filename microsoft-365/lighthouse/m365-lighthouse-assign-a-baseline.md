@@ -4,10 +4,10 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: shcallaw, kywirpel
-ms.date: 08/16/2023
+ms.reviewer: jatingupta
+ms.date: 10/21/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
@@ -26,11 +26,6 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 By default, Microsoft 365 Lighthouse assigns the default baseline to all tenants. You can create and assign a baseline to accommodate varying customer requirements.
 
-> [!NOTE]
-> Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, you should see it soon.
->
-> To see which new features are currently available in your partner tenant, go to the **Home** page of Microsoft 365 Lighthouse, and then either select the **What's new** link in the upper-right corner of the page or select **What's new** on the **What's new & learning resources** card.
-
 ## Before you begin
 
 Make sure you and your customer tenants meet the requirements listed in [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
@@ -39,7 +34,7 @@ Additionally, each partner tenant user must be a Microsoft 365 Lighthouse admin.
 
 ## Assign a baseline to a tenant
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Tenants**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Tenants**.
 2. Select a tenant to which you want to assign a new baseline.
 3. Select **Assign baseline**.
 4. Select the baseline you want to assign to the selected tenants.

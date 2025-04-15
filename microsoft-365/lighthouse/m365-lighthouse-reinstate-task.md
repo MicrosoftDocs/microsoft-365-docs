@@ -4,10 +4,10 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: kywirpel
+ms.reviewer: jatingupta
 ms.date: 08/11/2023
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
@@ -41,7 +41,7 @@ Additionally, each partner tenant user must meet the following requirements:
 
 ## Reinstate a task
 
-1. In the left navigation in Lighthouse, select **Tenants**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Tenants**.
 2. Select the appropriate tenant from the list.
 3. Select **Deployment plan** tab.
 4. From the task list, select the task you want to reinstate.
@@ -52,7 +52,7 @@ You can also select **More actions** (ellipsis icon) option directly from the ta
 
 ## Next steps
 
-If you want to investigate why a task was dismissed, you can audit the exception using Lighthouse insights. For more information, see [Manage tenants using insights](m365-lighthouse-manage-tenants-using-deployment-insights.md).
+If you want to investigate why a task was dismissed, you can audit the exception by using deployment insights. For more information, see [Manage tenants by using deployment insights in Microsoft 365 Lighthouse](m365-lighthouse-manage-tenants-using-deployment-insights.md).
 
 ## Related content
 

@@ -1,5 +1,5 @@
 ---
-title: "Change your organization's address and technical contact in the Microsoft 365 admin center"
+title: "Change your organization's address, contact preferences, and technical contact in the Microsoft 365 admin center"
 f1.keywords:
 - CSH
 author: cmcatee-MSFT
@@ -9,6 +9,7 @@ ms.reviewer: jkinma, ramagane
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-management
 ms.localizationpriority: medium
 ms.collection:
 - Tier1
@@ -21,20 +22,23 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
+- GAUpdates
 search.appverid: MET150
 description: "Learn how to make changes to your organization's profile, including the organization name, address, phone number, and technical contact."
-ms.date: 10/06/2023
+ms.date: 10/06/2024
 ---
 
-# Change your organization's address and technical contact in the Microsoft 365 admin center
+# Change your organization's address, contact preferences, and technical contact in the Microsoft 365 admin center
   
 As an admin, you can use the Microsoft 365 admin center to make changes to your organization profile, like your organization name, address, phone number, and technical contact.
   
-To change the address associated with your bill or subscription, see [Change your billing addresses for Microsoft 365 for business](../../commerce/billing-and-payments/change-your-billing-addresses.md).
+To change the address associated with your bill or subscription, see [Change your billing addresses for Microsoft 365 for business](../../commerce/billing-and-payments/change-your-billing-addresses.md). 
 
 ## Before you begin
 
-You must be a global admin to do the tasks in this article. For more information, see [About admin roles](../add-users/about-admin-roles.md).
+You must be a Global Administrator to do the tasks in this article. For more information, see [About admin roles](../add-users/about-admin-roles.md).
+
+[!INCLUDE [ga-roles-limitation](../../includes/ga-roles-limitation.md)]
 
 ## Edit your organization's information
 
@@ -44,9 +48,9 @@ You can change most of your organization’s profile information in the Microsof
 
 The steps to change your organization’s name depend on the type of billing account that you have. [Find out what type of billing account you have](../../commerce/manage-billing-accounts.md#view-my-billing-accounts).
 
-- If you have a Microsoft Customer Agreement (MCA) billing account type, you can change your organization’s name in the Microsoft 365 admin center. To change your organization’s name, follow the steps in [Edit organization information](#edit-organization-information).
+- If you have a Microsoft Customer Agreement (MCA) billing account type, you can’t change your organization’s name without assistance. [Complete this form](https://www.microsoft.com/download/details.aspx?id=102732), then contact support to get help with changing your organization’s name.
 
-- If you have a Microsoft Online Services Agreement (MOSA) billing account type, you can’t change your organization’s name without assistance. Contact support to get help with changing your organization’s name.
+- If you have a Microsoft Online Services Agreement (MOSA) billing account type, you can change your organization’s name in the Microsoft 365 admin center. To change your organization’s name, follow the steps in [Edit organization information](#edit-organization-information).
 
 ### Change your country/region
 
@@ -54,7 +58,7 @@ You can't change the country/region for your subscription. The country/region wh
 
 ### Edit organization information
 
-To change information on your organization's profile page, use the following steps.0
+To change information on your organization's profile page, use the following steps.
   
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 2. In the **Navigation menu**, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Org settings**</a> page.
@@ -64,7 +68,7 @@ To change information on your organization's profile page, use the following ste
 > [!NOTE]
 > SharePoint Online and OneDrive have a 256-character limit on Windows PCs. If you exceed the character limit, you receive an error message when you try to do anything within the synchronized document libraries, like creating folders or renaming documents.
 
-## What do the organization information fields mean?
+### What do the organization information fields mean?
 
 The following table explains the fields shown in the **Organization information** pane.
 
@@ -76,6 +80,24 @@ The following table explains the fields shown in the **Organization information*
 |Phone   | The primary telephone number for your organization. It's usually the number of your organization headquarters.  |
 |Technical contact | The email address for the primary technical person who administers your subscription. This person receives communications about Microsoft service status. |
 |Preferred language | Determines the language for all communications that are sent from Microsoft to your organization. When you sign up, this setting determines the language used by SharePoint Online, that your users see on your team site. If you change the language preference setting after you sign up, all future communications are sent in the most recent language selected.<br/><br/>**IMPORTANT:** The language used by SharePoint Online can't be changed.           |
+
+## Change your contact preferences for communications from Microsoft
+
+Use the **Contact preferences** section of the Settings & privacy page to choose the Microsoft 365 product-related communications that you want to receive.
+  
+Read [Update your admin phone number and email address in Microsoft 365](update-phone-number-and-email-address.md) for info on how to change your admin cell phone number and email address.
+  
+### To update your information
+  
+1. In the admin center, select the **Settings** icon in the top right of the header.
+
+2. Select **Update contact preferences**.
+
+3. Under **Contact preferences**, choose the types of product-related communications you want to receive.
+
+4. Choose **Save** when you're done.
+  
+For Office 365 Enterprise, Microsoft 365 Business Standard, and Microsoft 365 Business Basic, when you first signed up as an admin for Microsoft 365, depending on the country or region of the users in your organization, your users might be automatically signed up to receive product-related communications.
 
 ## Change organization settings for Cloud PCs
 

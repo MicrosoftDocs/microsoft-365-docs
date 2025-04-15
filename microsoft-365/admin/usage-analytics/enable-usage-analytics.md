@@ -5,9 +5,9 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
-ms.date: 02/19/2020
+ms.date: 09/16/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
@@ -34,7 +34,7 @@ To enable Microsoft 365 usage analytics in a Microsoft 365 US Government Communi
 
 ## Before you begin
 
-To get started with Microsoft 365 usage analytics you must first make the data available in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, then select **Reports** > **Usage** and initiate the template app in Power BI.
+To get started with Microsoft 365 usage analytics, you must first make the data available in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, then select **Reports** > **Usage** and initiate the template app in Power BI.
 
 ## Get Power BI
 
@@ -46,7 +46,7 @@ You can also expand **Products** to buy a version of Power BI.
 > [!NOTE]
 > You need a Power BI Pro license to install, customize, and distribute a template app. For more information, please see [Prerequisites](/power-bi/service-template-apps-install-distribute?source=docs#prerequisites).
 
-To share your data, both you and the people who you share the data with, need a Power BI Pro license, or the content needs to be in a workspace in a [Power BI premium service](/power-bi/service-premium-what-is).
+To share your data, both you and the people who you share the data with need a Power BI Pro license. Or the content needs to be in a workspace in a [Power BI premium service](/power-bi/service-premium-what-is).
 
 ## Enable the template app
 
@@ -60,14 +60,14 @@ See [about admin roles](../add-users/about-admin-roles.md) for more information.
 
 3. On the Reports panel that opens, set **Make report data available to Microsoft 365 usage analytics for Power BI** to **On** \> **Save**.
 
-The data collection process will complete in two to 48 hours depending on the size of your tenant. The **Go to Power BI** button will be enabled (no longer gray) when data collection is complete. Once it's done, the app provides historical usage data at your organization level. 
+The data collection process completes in two to 48 hours depending on the size of your tenant. The **Go to Power BI** button is enabled (no longer gray) when data collection is complete. Once complete, the app provides historical usage data at your organization level. 
 
 > [!NOTE]
 > The data for the **"User Activity"** tab is only refreshed after the fifteenth day of the current month and the first day of the next month, so it will remain empty initially until the first refresh is completed.
 
 ## Start the template app
 
-To start the template app, you have to be either a **global administrator**, **report reader**, **Exchange administrator**, **Skype for Business administrator**, or **SharePoint administrator**.
+To start the template app, you have to be either a **report reader**, **Exchange administrator**, **Skype for Business administrator**, or **SharePoint administrator**.
 
 1. Copy the tenant ID and select **Go to Power BI**.
 
@@ -77,23 +77,23 @@ To start the template app, you have to be either a **global administrator**, **r
 
     [![Select Get it now.](../../media/78102250-9874-4a32-8365-436f13560b52.png)](https://app.powerbi.com/groups/me/getapps/services/cia_microsoft365.microsoft-365-usage-analytics)
 
-4. Once the app is installed. Select the tile to open it.
+4. Once the app is installed, open it by selecting the tile.
 
 5. Select **Explore app** to view the app with sample data. Choose **Connect** to connect the app to your organization’s data.
 
 6. Choose **Connect**, on the **Connect to Microsoft 365 usage analytics** screen, then type in the tenant ID (without dashes) you copied in step (1), and select **Next**.
 
-7. On the next screen, select **OAuth2** as the **Authentication method** \> **Sign in**. If you choose any other authentication method, the connection to the template app will fail.
+7. On the next screen, select **OAuth2** as the **Authentication method** \> **Sign in**. If you choose any other authentication method, the connection to the template app fails.
 
     ![Choose Microsoft account as authentication method.](../../media/ab6f0463-c3f7-4088-a605-67c699fa86adnew.png)
 
-8. After the template app is instantiated the Microsoft 365 usage analytics dashboard will be available in Power BI on the web. The initial loading of the dashboard will take between 2 to 30 minutes.
+8. After the template app is instantiated, the Microsoft 365 usage analytics dashboard is available in Power BI on the web. The initial loading of the dashboard takes between 2 to 30 minutes.
 
-Tenant level aggregates will be available in all reports after opting in. **User-level details will only become available around the 5th of the next calendar month after opting in**. This will impact all reports under User Activity (See [Navigate and utilize the reports in Microsoft 365 usage analytics](navigate-and-utilize-reports.md) for tips on how to view and use these reports).
+Tenant level aggregates will be available in all reports after opting in. **User-level details will only become available around the 5th of the next calendar month after opting in**. This impacts all reports under User Activity (See [Navigate and utilize the reports in Microsoft 365 usage analytics](navigate-and-utilize-reports.md) for tips on how to view and use these reports).
 
 ## Make the collected data anonymous
 
-Reports provide information about your organization’s usage data. By default, reports display information with identifiable names for users, groups, and sites. Starting September 1, 2021, we are hiding user information by default for all reports as part of our ongoing commitment to help companies support their local privacy laws.
+Reports provide information about your organization’s usage data. By default, reports display information with identifiable names for users, groups, and sites. Starting September 1, 2021, we're hiding user information by default for all reports as part of our ongoing commitment to help companies support their local privacy laws.
   
 Global administrators can revert this change for their tenant and show identifiable user information if their organization's privacy practices allow it. It can be achieved in the Microsoft 365 admin center by following these steps:
   
@@ -103,7 +103,7 @@ Global administrators can revert this change for their tenant and show identifia
   
 3. Uncheck the statement **Display concealed user, group, and site names in all reports**, and then save your changes.  
   
-It'll take a few minutes for these changes to take effect. Showing identifiable user information is a logged event in the Microsoft Purview compliance portal audit log.   
+It takes a few minutes for these changes to take effect. Showing identifiable user information is a logged event in the Microsoft Purview compliance portal audit log.   
 
 ## Related content
 

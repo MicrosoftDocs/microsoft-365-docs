@@ -4,17 +4,19 @@ metadata:
   author: cmcatee-MSFT
   ms.author: cmcatee
   manager: scotv
-  ms.reviewer: racheg, ronarg
+  ms.reviewer: aasthatiwari, atuldubey
   audience: Admin
   ms.topic: faq
   ms.service: microsoft-365-business
+  ms.subservice: m365-commerce-volume-licensing
+  ms.collection: 
+  - Tier1
+  - scotvorg
   ms.custom: 
   - commerce_vl
-  - empty
+  - admindeeplinkMAC
+  - GAUpdates
   search.appverid: MET150
-  ms.collection: 
-  - Tier2
-  - scotvorg
   ms.localizationpriority: medium
   description: "Online service activation for Open program Frequently Asked Questions"
   ms.date: 10/13/2023
@@ -33,12 +35,13 @@ sections:
           1. After you order your online services through the Open program family, you'll receive an email with a link and instructions to activate your services.
           OR
           2. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> and sign in with your credentials.
-            - In the **Navigation menu**, select **Billing** > **Your products**, then select the **Volume licensing** tab.
-            - Go to **Product & Services** or **Contracts modules** and under the **Keys** section, select the license ID to manage.
-            - Select the **Manage activation** link, then select **Start Activation**. A product activation window opens and prepopulates the key.
-            - Continue the remaining activation steps to complete product activation.
+            a. In the **Navigation menu**, select **Billing** > **Your products**, then select the **Volume licensing** tab.
+            b. Go to **Product & Services** or **Contracts modules** and under the **Keys** section, select the license ID to manage.
+            c. Select the **Manage activation** link, then select **Start Activation**. A product activation window opens and prepopulates the key.
+            d. Continue the remaining activation steps to complete product activation.
             
-            Successful activation is completed within 48 hours on the Microsoft 365 admin center. 
+            >[!NOTE]
+            >It can take up to 24 hours for the service to display as activated in the Microsoft 365 admin center volume licensing section.
 
       - question: |
           I don't see my Azure order. What should I do?
@@ -55,8 +58,11 @@ sections:
         answer: |
           The organization name associated with your work or school account is taken from the License ID of the service you're activating. If an account exists, the organization name is prepopulated in the Organizational Account set-up and already linked to your organization from the original online service order. The registration process validates whether your organization has an account. 
         
-          If the field for **Company** is available, finish the registration process to sign in and activate the service. If this field isn't available, you must register the organization. You must be a Global administrator to register an organization for an account.
-          
+          If the field for **Company** is available, finish the registration process to sign in and activate the service. If this field isn't available, you must register the organization. You must be a Global Administrator to register an organization for an account.
+
+          > [!CAUTION] 
+          > Global Administrators have almost unlimited access to your organization's settings and most of its data. To help keep your organization secure, we recommend that you limit the number of Global Administrators as much as possible.
+
           When you request a work or school account, your request is sent to your organization Tenant administrator who grants or denies your registration request. Use this work or school account when you sign in to Microsoft 365 admin center
 
       - question: |
@@ -73,11 +79,6 @@ sections:
           What if I want to assign my purchase to a different organization?
         answer: |
           To assign products to a new organization, go through the sign-up steps to create a new organization. Next, you can assign any seats or products you purchased.
-
-      - question: |
-          I just activated my online service. Why does it still say I need to activate my service on the Manage Activations page on the Volume Licensing Service Center?
-        answer: |
-          It can take up to 24 hours for the service you activated to appear as status **Activated**.
 
       - question: |
           How do I contact support?

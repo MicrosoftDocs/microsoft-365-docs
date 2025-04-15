@@ -2,13 +2,14 @@
 title: "What is a domain?"
 f1.keywords:
 - CSH
-ms.author: nkagole
-author: nataliekagole
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
-ms.date: 02/18/2020
+ms.date: 03/18/2025
 audience: Admin
-ms.topic: article
+ms.topic: concept-article
 ms.service: microsoft-365-business
+ms.subservice: m365-domains
 ms.localizationpriority: medium
 ms.collection:
 - Tier2 
@@ -17,6 +18,7 @@ ms.collection:
 - highpri
 - M365-subscription-management
 - Adm_O365
+- must-keep
 search.appverid:
 - BCS160
 - MET150
@@ -59,11 +61,11 @@ If you already own a domain like  *you@yourcompany.<span>com*  you can add it an
 You can use a Microsoft domain like  *yourcompany.onmicrosoft.<span>com*  to sign in for now and add a custom domain later. 
   
 > [!IMPORTANT]
-> If you select this option, the name you enter for your .onmicrosoft.com domain will be used in all your SharePoint and OneDrive URLs. You might not be able to change this name, so make sure it's spelled correctly is the name you want to use from a branding perspective. 
+> If you select this option, the name you enter for your .onmicrosoft.com domain will be used in all your SharePoint and OneDrive URLs. You might not be able to change this name, so make sure it's spelled correctly if it's the name you want to use from a branding perspective. 
   
 ## Feeling stuck?
 
-Call Microsoft Support - [Get help setting up a domain](../../business-video/get-help-support.md)
+[!INCLUDE [How to get tech support for SMB](../../includes/smb-how-to-get-tech-support.md)]
 
 ## Related content
 

@@ -4,10 +4,10 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: ragovind
-ms.date: 10/27/2023
+ms.reviewer: aakash
+ms.date: 11/11/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
@@ -52,7 +52,7 @@ The following conditions must be met before users can appear in the risky users 
 
 In Microsoft Entra ID Protection, risk detections include any identified suspicious actions related to user accounts in Microsoft Entra ID.
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Users** > **Risky users**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Users** > **Risky users**.
 
 2. On the **Risky Users** page, review the users in the list with a risk state of **At risk**.
 
@@ -60,11 +60,11 @@ In Microsoft Entra ID Protection, risk detections include any identified suspici
 
 4. For each user, assess the risk detections and select one of the following actions, as appropriate:
 
-    - Reset password – change or reset the user password.
+    - Reset password - change or reset the user password.
 
     - Block sign-in - prevent anyone from signing in as this user.
 
-    - Confirm user compromised – set risk state to confirmed compromised.
+    - Confirm user compromised - set risk state to confirmed compromised.
 
     - Dismiss user risk - set risk state to dismissed.
 
@@ -72,7 +72,7 @@ In Microsoft Entra ID Protection, risk detections include any identified suspici
 
 To take action on multiple affected users at once:
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Users** > **Risky users**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Users** > **Risky users**.
 
 2. On the **Risky Users** page, select the set of users you want to take action on.
 
@@ -87,10 +87,10 @@ To take action on multiple affected users at once:
     - Dismiss user risk
 
 > [!NOTE]
-> If the organization you are managing has a Microsoft Entra ID P2 license, it is recommended you enable User risk-based conditional access policies. For more information, see [Conditional Access: User risk-based Conditional Access](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk-user).
+> If an organization you're managing has a Microsoft Entra ID P2 license, we recommend you enable User risk-based conditional access policies for that organization. For more information, see [Conditional Access: User risk-based Conditional Access](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk-user).
 
 ## Related content
 
-[Tutorial: Use risk detections for user sign-ins to trigger Azure AD Multi-Factor Authentication or password changes](/azure/active-directory/authentication/tutorial-risk-based-sspr-mfa) (article)\
+[Use risk detections for user sign-ins to trigger Microsoft Entra multifactor authentication or password changes](/azure/active-directory/authentication/tutorial-risk-based-sspr-mfa) (tutorial)\
 [What is risk?](/azure/active-directory/identity-protection/concept-identity-protection-risks) (article) \
 [Remediate risks and unblock users](/azure/active-directory/identity-protection/howto-identity-protection-remediate-unblock) (article)

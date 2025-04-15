@@ -6,7 +6,7 @@ ms.author: efrene
 author: efrene
 manager: scotv
 audience: Admin
-ms.topic: article
+ms.topic: overview
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
@@ -31,7 +31,7 @@ ms.date: 04/27/2022
 
 Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4U5xs?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=df5cf46f-3501-4891-9459-f35ca0e15dd5]
 
 [Microsoft 365 for business](https://www.microsoft.com/microsoft-365/business) is a subscription service that lets you run your organization in the cloud while Microsoft takes care of the IT for you. It connects employees to the people, information, and content they need to do their best work, from any device.
 
@@ -41,9 +41,9 @@ Microsoft 365 for business provides the following plans to select from to help y
 
 |Plan|Description|
 |---|---|
-|[Microsoft 365 Apps for Business](https://www.microsoft.com/microsoft-365/business/microsoft-365-apps-for-business)|<ul><li>Get desktop versions of Microsoft 365 apps: Outlook, Word, Excel, PowerPoint, OneNote (plus Access and Publisher for PC only).</li><li>Store and share files with 1 TB of OneDrive cloud storage per user.</li><li>Use one license to cover fully installed Microsoft 365 apps on five mobile devices, five tablets, and five PCs or Macs per user.</li><li>Automatically update your Microsoft 365 apps with new features and capabilities every month.</li><li>Get help anytime with around-the-clock phone and web support from Microsoft.</li></ul>|
+|[Microsoft 365 Apps for Business](https://www.microsoft.com/microsoft-365/business/microsoft-365-apps-for-business)|<ul><li>Get desktop versions of apps in Microsoft 365: Outlook, Word, Excel, PowerPoint, OneNote (plus Access and Publisher for PC only).</li><li>Store and share files with 1 TB of OneDrive cloud storage per user.</li><li>Use one license to cover fully installed apps in Microsoft 365 on five mobile devices, five tablets, and five PCs or Macs per user.</li><li>Automatically update your apps in Microsoft 365 with new features and capabilities every month.</li><li>Get help anytime with around-the-clock phone and web support from Microsoft.</li></ul>|
 |[Microsoft 365 Business Basic](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-basic)|<ul><li>Host email with a 50 GB mailbox and custom email domain address.</li><li>Create a hub for teamwork to connect people using Microsoft Teams.</li><li>Use Microsoft 365 apps for the web, including Outlook, Word, Excel, PowerPoint, and OneNote.</li><li>Store and share files with 1 TB of OneDrive cloud storage per user.</li><li>Facilitate online meetings and video conferencing for up to 300 users.</li><li>Get help anytime with around-the-clock phone and web support from Microsoft.</li></ul>|
-|[Microsoft 365 Business Standard](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-standard)|<ul><li>Get desktop versions of Microsoft 365 apps, including Outlook, Word, Excel, PowerPoint, and OneNote (plus Access and Publisher for PC only).</li><li>Host email with a 50 GB mailbox and custom email domain.</li><li>Create a hub for teamwork to connect people using Microsoft Teams.</li><li>Store and share files with 1 TB of OneDrive cloud storage per user.</li><li>Use one license to cover fully installed Microsoft 365 apps on five mobile devices, five tablets, and five PCs or Macs per user.</li><li>Get help anytime with around-the-clock phone and web support from Microsoft.</li></ul>|
+|[Microsoft 365 Business Standard](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-standard)|<ul><li>Get desktop versions of apps in Microsoft 365, including Outlook, Word, Excel, PowerPoint, and OneNote (plus Access and Publisher for PC only).</li><li>Host email with a 50 GB mailbox and custom email domain.</li><li>Create a hub for teamwork to connect people using Microsoft Teams.</li><li>Store and share files with 1 TB of OneDrive cloud storage per user.</li><li>Use one license to cover fully installed apps in Microsoft 365 on five mobile devices, five tablets, and five PCs or Macs per user.</li><li>Get help anytime with around-the-clock phone and web support from Microsoft.</li></ul>|
 |[Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium)|<ul><li>Stay up to date with the latest versions of Word, Excel, PowerPoint, and more.</li><li>Connect with customers and coworkers using Outlook, Exchange, and Microsoft Teams.</li><li>Manage your files from anywhere with 1 TB of cloud storage on OneDrive per user.</li><li>Defend your business against advanced cyberthreats with sophisticated phishing and ransomware protection.</li><li>Control access to sensitive information using encryption to help keep data from being accidentally shared.</li><li>Secure devices that connect to your data and help keep iOS, Android, Windows, and MacOS devices safe and up to date.</li></ul>|
 
 ### Need help with choosing a plan?

@@ -5,9 +5,9 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 10/11/2023
+ms.date: 11/14/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
@@ -18,7 +18,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - VSBFY23
-description: "Purchase Microsoft 365 Business Standard and set up your organization."
+description: "Buy Microsoft 365 Business Standard and set up your organization."
 ---
 
 # Sign up for a Microsoft 365 Business Standard subscription
@@ -34,7 +34,7 @@ There are a couple of ways to get started:
 
 ## Sign up for Microsoft 365 for business
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e1fe831f-c1a4-4d81-a475-1d8036a047cb]
 
 > [!IMPORTANT]
 > Microsoft 365 Business Standard subscriptions are for commercial use and are intended for business and enterprise customers.
@@ -46,10 +46,10 @@ To sign up and purchase Microsoft 365 Business Standard, complete the following 
 > [!IMPORTANT]
 > The person who signs up for Microsoft 365 for business (usually the business owner) automatically becomes the technical administrator of the organization. You can add other people as admins if you want help managing your Microsoft 365 services. Check out [Assign admin roles](../add-users/assign-admin-roles.md) for more info.
 
-1. On the [Microsoft 365 for business page](https://go.microsoft.com/fwlink/?linkid=2109654), select **See plans & pricing**.
+1. On the [Microsoft 365 for business page](https://go.microsoft.com/fwlink/?linkid=2109654), select **Compare plans & pricing**.
 2. On the next page, find out the monthly cost, and then scroll down the page to find out more about what's included in Microsoft 365. Under Microsoft 365 Business Standard, select **Buy now**.
-3. On the **Thank you for choosing Microsoft 365 Business Standard** page, enter your information to get started. Select **Next**.
-4. Enter an email address that you already use. This email address can be any address you want Microsoft to use to communicate with you during setup. It's also the address where we send you information about your bill and renewals. Then select, **Set up account**.
+3. On the **Subscription and account details** page, choose the number of people you want and how often you want to be billed. Select **Next**.
+4. Enter an email address that you already use. This email address can be any address you want Microsoft to use to communicate with you during setup. It's also the address where we send you information about your bill and renewals. Select **Next**, then select, **Set up account**.
 5. Enter your name, business phone number, business size, company name, and location. Select **Next**.
 
    > [!NOTE]
@@ -79,6 +79,9 @@ The table below outlines each choice.
 
 Use these three factors to determine which of the two options is best for your business needs.
 
+> [!NOTE]
+> If you have a Microsoft Customer Agreement (MCA) billing account type with Microsoft, you automatically receive a product called Microsoft Entra ID Free. This product improves your tenant management and security by tracking new tenants created with the same billing account. There's no charge for this product, and there's no other action you need to take. To learn more about this product, see [Microsoft Entra ID Free](/azure/cost-management-billing/manage/microsoft-entra-id-free). [Find out what type of billing account you have](../../commerce/manage-billing-accounts.md#view-my-billing-accounts).
+
 ### Option 1: Sign in with your Outlook, Hotmail, Yahoo, Gmail or other email account
 
 Sign in to Microsoft 365 with this email address. For example, alliebellew@hotmail.com.
@@ -89,7 +92,7 @@ Sign in to Microsoft 365 with this email address. For example, alliebellew@hotma
 
 2. Select how many Microsoft 365 Business Standard licenses you want for your organization and select **Add payment method** and continue with checkout to **Place order**.
 
-3. On the **Confirmation details** page, we'll give you some more info about your subscription. You can now go to the Microsoft 365 admin center to add users, install Microsoft 365 apps, invite your team to use Microsoft 365 and more. We'll also send you an email with set-up steps for Microsoft 365 Business Standard.
+3. On the **Confirmation details** page, we'll give you some more info about your subscription. You can now go to the Microsoft 365 admin center to add users, install Microsoft 365 productivity apps, invite your team to use Microsoft 365 and more. We'll also send you an email with set-up steps for Microsoft 365 Business Standard.
 
 Remember this option doesn't provide branded email, admin control for use of the services by other users, or industry specific compliance support. Subscribers don't have any access or control over other users' (employees) usage or documents under this option users may choose not to transfer data created in storage such as OneDrive/Teams to your upgraded, enterprise-level domain account should you not choose option 2 immediately.
 
@@ -110,7 +113,7 @@ If you would like to add a domain and create a business email account, you can f
 
 **Applies to: Existing subscribers of Microsoft 365 Business Standard who previously purchased using Simplified Sign-up mode**.
 
-If you previously used Simplified Sign Up mode to purchase a business subscription before October 2021 without adding a business domain you may need to accept new terms of service for uninterrupted service and usage of the Microsoft 365 apps. You may be sent emails or you'll see in-app prompts when you sign in to Microsoft 365 admin center.
+If you previously used Simplified Sign Up mode to purchase a business subscription before October 2021 without adding a business domain you may need to accept new terms of service for uninterrupted service and usage of the apps in Microsoft 365. You may be sent emails or you'll see in-app prompts when you sign in to Microsoft 365 admin center.
 
 The Simplified Sign Up terms of use have been recently updated, and notably they clarify licensing and data ownership for multi-user business subscriptions. For continued service of your business subscription, you may either visit the [Microsoft 365 admin Center](https://go.microsoft.com/fwlink/?linkid=2024339) and stay using **Simplified Sign Up** (and agree to use the Microsoft Services Agreement Supplemental), or visit the [Microsoft 365 admin Center](https://go.microsoft.com/fwlink/?linkid=2024339) and add a **business domain** (and use the Microsoft Online Services Agreement). To help you choose which of these two modes best suits your needs, consult the table at the top of this article.
 

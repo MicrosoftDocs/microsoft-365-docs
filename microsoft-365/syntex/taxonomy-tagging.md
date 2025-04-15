@@ -1,24 +1,24 @@
 ---
-title: Find and manage terms using taxonomy tagging in Microsoft Syntex
+title: Find and manage terms using taxonomy tagging in SharePoint
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 audience: admin
 ms.reviewer: shrganguly
-ms.date: 08/31/2023
-ms.topic: conceptual
+ms.date: 03/13/2025
+ms.topic: how-to
 ms.service: microsoft-syntex
+ms.subservice: syntex-content-intelligence
 ms.custom: 
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
-description: Learn how to use taxonomy tagging to search, sort, filter, and manage terms in Microsoft Syntex.
+description: Learn how to use taxonomy tagging to search, sort, filter, and manage terms in SharePoint.
 ---
 
-# Find and manage terms using taxonomy tagging in Microsoft Syntex
+# Find and manage terms using taxonomy tagging in SharePoint
 
 Before you can use taxonomy tagging, you need to enable it in a document library. There are two methods you can use to do this:
 

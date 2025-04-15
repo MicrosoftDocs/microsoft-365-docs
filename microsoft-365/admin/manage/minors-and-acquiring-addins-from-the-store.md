@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 07/06/2020
+ms.date: 01/06/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -21,7 +21,6 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: "Learn about the General Data Protection Regulation (GDPR) regulations that govern the personal data of minors."
 ---
 

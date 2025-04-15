@@ -4,10 +4,10 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: ragovind
+ms.reviewer: aakash
 ms.date: 10/27/2023
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
@@ -26,7 +26,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 Microsoft 365 Lighthouse lets Managed Service Providers (MSPs) manage Microsoft Entra self-service password reset (SSPR). SSPR gives users the ability to change or reset their password with no administrator or help desk involvement. If a user's account is locked or they forget their password, they can follow prompts to unblock themselves and get back to work. This ability reduces help desk calls and loss of productivity when a user can't sign in to their device or an application.
 
-The Password Reset page provides detailed information on the status of SSPR enablement across your customer tenants and helps you ensure users are enabled and registered. 
+The Self-service password reset page provides detailed information on the status of SSPR enablement across your customer tenants and helps ensure users are enabled and registered.  
 
 > [!NOTE]
 > This page provides insights around tenants for which data availability is limited.
@@ -39,7 +39,7 @@ The following condition must be met before a tenant appears in the list:
 
 ## View SSPR tenant status
 
-- In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com/), select **Users** > **Password reset**.
+In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com/), select **Users** > **Self-service password reset**.
 
 The SSPR tenant status module reports enablement status across all customer tenants that have an Azure AD premium license, reporting how many tenants are:
 
@@ -49,13 +49,13 @@ The SSPR tenant status module reports enablement status across all customer tena
 
 ## View SSPR user registration status
 
-- In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com/), select **Users** > **Password reset**.
+In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com/), select **Users** > **Self-service password reset**.
 
-The Password reset page provides an overview of the tenants that have enabled SSPR through the recommended settings, the number of users who haven't registered for SSPR, and a detailed breakdown by tenant of the SSPR deployment progress across the organizations that you manage.
+The Self-service password reset page provides an overview of the tenants that have enabled SSPR through the recommended settings, the number of users who haven't registered for SSPR, and a detailed breakdown by tenant of the SSPR deployment progress across the organizations that you manage.
 
-## View password reset details
+## View self-service password reset details 
 
-The password reset details table provides a detailed view of SSPR enabled and registration for all customer tenants. The table can be exported, refreshed, searched, and filtered by SSPR tenant status, SSPR availability status, and user registration progress. The tenant details reported in the table include:
+The self-service password reset details table provides a detailed view of SSPR enablement and registration for all customer tenants. The table can be exported, refreshed, searched, and filtered by SSPR tenant status, SSPR availability status, and user registration progress. The tenant details reported in the table include:
 
 |Column      |Description  |
 |------------|---------|
@@ -65,21 +65,26 @@ The password reset details table provides a detailed view of SSPR enabled and re
 |Registration progress     | The number of total users that have registered for SSPR.         |
 
 > [!NOTE]
-> Enabled users and registration progress data will be unavailable for tenants that do not have an Microsoft Entra premium license.
+> Enabled users and registration progress data will be unavailable for tenants that do not have a Microsoft Entra premium license.
 
-Selecting any tenant from the password reset details table opens the tenant details pane, which provides additional details around the tenant’s enablement and user registration status.
+Selecting any tenant from the self-service password reset details table opens the tenant details pane, which provides additional details around the tenant's enablement and user registration status.
 
 ## Enable SSPR for a tenant
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com/), select **Users** > **Password reset**.
-2. On the **Password reset** page, select a tenant from the list to open the details pane.
-3. Select **Edit SSPR settings in Microsoft Entra ID** to go to Microsoft Entra ID.
-4. In Microsoft Entra ID, enable SSPR for all or selected users. To learn more, see [Tutorial: Enable users to unlock their account or reset passwords using Microsoft Entra self-service password reset](/azure/active-directory/authentication/tutorial-enable-sspr).
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Users** > **Self-service password reset**.
+
+2. On the **Self-service password reset** page, select a tenant from the list to open the details pane.
+
+3. Select **Edit SSPR settings in Azure Active Directory** to go to Azure Active Directory (Azure AD).
+
+4. In Azure AD, enable SSPR for all or selected users. To learn more, see [Tutorial: Enable users to unlock their account or reset passwords using Azure Active Directory self-service password reset](/azure/active-directory/authentication/tutorial-enable-sspr).
 
 ## Notify users to register for SSPR
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com/), select **Users** > **Password reset**.
-2. On the **Password reset** page, select a tenant from the list to open the details pane.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Users** > **Self-service password reset**.
+
+2. On the **Self-service password reset** page, select a tenant from the list to open the details pane.
+
 3. Select the users that you want to notify.
 4. Select **Create email**.
 

@@ -5,24 +5,24 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.service: microsoft-365-enterprise
+ms.subservice: advanced-data-residency
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 09/20/2022
+ms.date: 02/11/2025
 ms.reviewer: deanw
 ms.custom:
 - it-pro
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
+- must-keep
 ---
 
 # Data Residency Legacy Move Program
 
 > [!NOTE]
-> Coinciding with the launch of the Microsoft 365 Advanced Data Residency add-on, the Move Program will no longer be offered during the launch of new local datacenter regions.  Our most recent local datacenter region launch in Qatar (August 2022) is the final region to receive Move Program benefits. The following information is still valid for regions that were part of Move Program and all customers currently opted-in for migration will be processed.  For more information, see [the ADR page](advanced-data-residency.md).
-
-
+> Coinciding with the launch of the Microsoft 365 Advanced Data Residency add-on, the Move Program will no longer be offered during the launch of new local datacenter regions. Our most recent local datacenter region launch in Qatar (August 2022) is the final region to receive Move Program benefits. The following information is still valid for regions that were part of Move Program and all customers currently opted-in for migration will be processed. For more information, see [the ADR page](advanced-data-residency.md).
 
 ## When Can I Request a Move (final opt-in opportunity)
 
@@ -46,7 +46,7 @@ ms.collection:
 ## Remaining Countries/regions in the Move Program
 
 > [!NOTE]
-> Even though the Move Program is officially ending, we still have some in-flight geographies that we will see through to completion, based on the original 24-month migration commitment. Please refer to the table below for the remaining countries/regions and their migration deadlines.
+> Even though the Move Program is officially ending, we still have some in-flight geographies that we will see through to completion, based on the original 24-month migration commitment. Refer to the following table for the remaining countries/regions and their migration deadlines.
 
 | Customers with signup country/region in | Original Opt-in: migration commitment date | Final Opt-in (above): migration commitment date |
 |:-----|:-----|:-----|
@@ -55,15 +55,13 @@ ms.collection:
 | Sweden | June 1, 2024  | May 1, 2025  |
 | Qatar | March 1, 2025  | Not Applicable  |
 
-
-
 ### Data Residency Option Moving Forward
 
 With the release of Advanced Data Residency, we're only providing a data residency option to eligible Microsoft 365 customers who are covered by the data centers listed in the _Local Region Geography_ on the [Overview and Definitions page](m365-dr-overview.md).
 
 ### Migration Expectations
 
-Microsoft will use reasonable efforts to try to complete a legacy Move Program migration for customers who request a migration between November 1, 2022 and April 30, 2023, by June 2025. Customers who requested a migration in the legacy Move Program prior to November 1, 2022, will continue being migrated with reasonable efforts by Microsoft towards the intended completion date provided to them previously. However, Microsoft may not be able to complete the migration within this timeframe for all customers. For example, significantly larger or more complex customers or situations outside of Microsoft's control may require additional time to complete the migration. Customers utilizing the Advanced Data Residency feature for a data migration will instead follow the [Advanced Data Residency Migration Expectations](advanced-data-residency.md#migration-expectations).
+Microsoft will use reasonable efforts to try to complete a legacy Move Program migration for customers who request a migration between November 1, 2022 and April 30, 2023, by June 2025. Customers who requested a migration in the legacy Move Program prior to November 1, 2022, will continue being migrated with reasonable efforts by Microsoft towards the intended completion date provided to them previously. However, Microsoft might not be able to complete the migration within this timeframe for all customers. For example, significantly larger or more complex customers or situations outside of Microsoft's control might require more time to complete the migration. Customers utilizing the Advanced Data Residency feature for a data migration will instead follow the [Advanced Data Residency Migration Expectations](advanced-data-residency.md#migration-expectations).
 
 Data moves are a back-end service operation with minimal impact to end-users. We adhere to the [Microsoft Online Services Service Level Agreement (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) for availability so there's nothing that customers need to prepare for or to monitor during the move. Notification of any service maintenance is done if needed.
 
@@ -80,29 +78,29 @@ Here are answers to general questions about moving applicable  customer data at 
 Applicable customer data is a term that refers to a subset of customer data defined in the [Microsoft Online Services Terms](https://aka.ms/ost):
 
 - Exchange Online mailbox content (email body, calendar entries, and the content of email attachments)
-- SharePoint Online site content and the files stored within that site
-- Files uploaded to OneDrive for Business
-- Teams chat data for group and private chats (files in Teams folders or placed in chat are managed by SharePoint Online and OneDrive for Business, respectively)
+- SharePoint site content and the files stored within that site
+- Files uploaded to OneDrive
+- Teams chat data for group and private chats (files in Teams folders or placed in chat are managed by SharePoint and OneDrive, respectively)
 
 </details>
 
 ### What is in scope for Teams migration?
 <details><summary>Select to expand</summary>
 
-In addition to Exchange Online, SharePoint Online, and OneDrive for Business; Microsoft will migrate Teams data to the local datacenter.
+In addition to Exchange Online, SharePoint, and OneDrive; Microsoft will migrate Teams data to the local datacenter.
 
 - Teams chat messages, including private messages and channel messages.
 - Teams images used in chats.
 
-Teams files are stored in SharePoint Online and Teams chat files are stored in OneDrive for Business. Voicemail, calendar, and contacts are stored in Exchange Online. In many cases, Exchange Online, SharePoint Online, and OneDrive for Business are already used by the customer in the local datacenter geo and are also part of the Microsoft 365 migration program for eligible customer countries/regions.
+Teams files are stored in SharePoint and Teams chat files are stored in OneDrive. Voicemail, calendar, and contacts are stored in Exchange Online. In many cases, Exchange Online, SharePoint, and OneDrive are already used by the customer in the local datacenter geo and are also part of the Microsoft 365 migration program for eligible customer countries/regions.
 
 </details>
 
 ### At what point is my migration complete so that my _Tenant's_ applicable customer data is being stored at rest in my new geo?
 <details><summary>Select to expand</summary>
 
-Due to shared dependencies between Exchange Online and SharePoint Online/OneDrive for Business, any migration can't be considered
-completed until both services are migrated. Exchange Online and SharePoint Online/OneDrive for Business often migrate at separate times and independently from one another. Customer _Tenant_ admins receive confirmation in Message Center when each service migration is completed and can view the data location card in the Admin Center at any time to confirm the applicable customer data at rest location for
+Due to shared dependencies between Exchange Online and SharePoint/OneDrive, any migration can't be considered
+completed until both services are migrated. Exchange Online and SharePoint/OneDrive often migrate at separate times and independently from one another. Customer _Tenant_ admins receive confirmation in Message Center when each service migration is completed and can view the data location card in the Admin Center at any time to confirm the applicable customer data at rest location for
 each service.
 
 </details>
@@ -119,7 +117,7 @@ All Microsoft 365 services run the same versions in the datacenters, so you can 
 ### What is the impact of having different services located in different geos?
 <details><summary>Select to expand</summary>
 
-Some of the Microsoft 365 services may be located in different geos for some existing customers and for customers that are in the middle of the move process. Our services run independently of each other and there's no impact on the user experience if this is the case. However, for data residency purposes, a _Tenant_ migration can't be considered as complete until both Exchange Online and SharePoint Online/OneDrive for Business are migrated to the same datacenter geo.
+Some of the Microsoft 365 services may be located in different geos for some existing customers and for customers that are in the middle of the move process. Our services run independently of each other and there's no impact on the user experience if this is the case. However, for data residency purposes, a _Tenant_ migration can't be considered as complete until both Exchange Online and SharePoint/OneDrive are migrated to the same datacenter geo.
 
 </details>
 
@@ -161,10 +159,9 @@ See [User experience in a Multi-Geo environment](multi-geo-user-experience.md) f
 ### How do I know the move is complete?
 <details><summary>Select to expand</summary>
 
-Watch the Microsoft 365 Message Center for confirmation that the move of each service's data is complete. When each service's data is moved, we post a completion notice so you get three completion notices: one each for Exchange Online, SharePoint Online, and Skype for Business Online. You can also verify the location of your customer data at rest via the Data Location section under your Organization Profile in the Microsoft 365 admin center.
+Watch the Microsoft 365 Message Center for confirmation that the move of each service's data is complete. When each service's data is moved, we post a completion notice so you get three completion notices: one each for Exchange Online, SharePoint, and Skype for Business Online. You can also verify the location of your customer data at rest via the Data Location section under your Organization Profile in the Microsoft 365 admin center.
 
 </details>
-
 
 ### What happens if we are in process of email data migration to Microsoft 365 during the Exchange Online move?
 <details><summary>Select to expand</summary>
@@ -196,10 +193,9 @@ Yes. Microsoft maintains a large global network with public Internet connections
 
 </details>
 
-
 ### I have public folders deployed in my _Tenant_. What will be the impact on public folder access during or after the move?
 <details><summary>Select to expand</summary>
 
-There's no impact to end users accessing public folders during or after the move of public folders. However, the public folders may not be available for administration in the Exchange Admin Center tool till all public folder mailboxes are moved in same region. Please check [this article](https://aka.ms/pfxrf) for more details.
+There's no impact to end users accessing public folders during or after the move of public folders. However, the public folders may not be available for administration in the Exchange Admin Center tool till all public folder mailboxes are moved in same region. Refer to [this article](https://aka.ms/pfxrf) for more details.
 
 </details>

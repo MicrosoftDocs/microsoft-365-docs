@@ -1,12 +1,13 @@
 ---
-title: "Microsoft 365 network provider assessments (PREVIEW)"
-ms.author: teleary
-author: temanteleary
+title: "Microsoft 365 network provider assessments."
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
-ms.date: 05/22/2023
+ms.date: 04/05/2024
 audience: Admin
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: network
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -14,25 +15,36 @@ ms.collection:
 - scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
+- must-keep
 description: "Microsoft 365 network provider assessments"
 ROBOTS: NOINDEX, NOFOLLOW
 ---
 
-# Microsoft 365 network provider assessments (PREVIEW)
+# Microsoft 365 network provider assessments.
 
 Microsoft measures network performance and availability between client applications on user machines and Microsoft's network.
 
 ## Network performance
 
-Read about the network performance assessment calculation method at [Microsoft 365 network assessment](office-365-network-mac-perf-score.md)
+Read about the network performance assessment calculation method at [Microsoft 365 network assessment](office-365-network-mac-perf-score.md).
 
 ## Network availability
 
-Network availability is measured from the client and is defined using this formula.
+The reliability of Microsoft 365 services as experienced by the client is shown by the network availability metric. It's measured as the length of time that Exchange and SharePoint are working, and for Microsoft Teams as a proportion of calls that connected successfully both expressed as a percentage.
 
-:::image type="content" source="../media/m365-mac-perf/m365-mac-perf-nppdata-availability.png" alt-text="Formula use to calculate network availability.":::
+### Exchange and SharePoint Network availability
+
+Exchange and Sharepoint availability are the proportion of minutes without any major user errors out of the total user minutes. This is how it's calculated:
+
+:::image type="content" source="../media/m365-mac-perf/m365-mac-perf-nppdata-exo-spo-availability.png" alt-text="Formula use to calculate network availability for Exchange and SharePoint.":::
 
 We receive notification of unsuccessful connections after network connectivity is restored.
+
+### Teams Network availability
+
+By using telemetry data from the actual calls, Microsoft Teams availability is computed as a percentage of calls that failed compared to total calls. This is how it's calculated:
+
+:::image type="content" source="../media/m365-mac-perf/m365-mac-perf-nppdata-teams-availability.png" alt-text="Formula use to calculate network availability for Microsoft Teams.":::
 
 ## Detecting network providers
 
@@ -75,7 +87,7 @@ There are some markers we show where data can't be reported.
 * **Statistical significance** – As described above we don't show data where the standard error of sampling is greater than 20%.
 * **No data** – This is displayed if for some reason this data element had no samples.
 * **Privacy requirement** – This is displayed for the network provider view if there were fewer than five customers in any aggregation result or if there were fewer than 24 samples in the aggregation. We don't provide customer performance data directly to network providers for customer privacy reasons.
-* **Dominating customer** – Even where there are five or more customers, there may be cases where a customer can be guessed due to the specific network provider having a large customer in a geographic area. To avoid this, we compare the population including the largest customer with the same population excluding the largest customer. Using a Cohen's D calculation, we discard results where the population difference is greater than 0.5. This means that where the largest customer has a medium to large Cohen's D effect on the aggregation result the result is blocked. A network provider simply needs to expand their geographic area where they have more customers to see results.
+* **Dominating customer** – Even where there are five or more customers, there might be cases where a customer can be guessed due to the specific network provider having a large customer in a geographic area. To avoid this, we compare the population including the largest customer with the same population excluding the largest customer. Using a Cohen's D calculation, we discard results where the population difference is greater than 0.5. This means that where the largest customer has a medium to large Cohen's D effect on the aggregation result the result is blocked. A network provider simply needs to expand their geographic area where they have more customers to see results.
 
 The markers **Privacy requirement** and **Dominating customer** aren't shown in customer reports.
 In addition, we remove outliers from the sample source where outliers are defined as:
@@ -86,9 +98,11 @@ Network providers will additionally not be shown in a tenant or location view if
 
 ## Network Provider Index Chart
 
-The Network Provider Index Chart (NPI Chart) shows aggregated performance and availability for network providers for a given State (or Province) and Country/region. The chart shows the largest network providers in that geography ordered by network performance. The chart also includes a Target Baseline entry, which shows average performance and availability for the best performing five network providers in the geography, excluding network providers with insignificant Office 365 usage.
+The NPI Chart shows the network providers with the highest performance for Office 365 applications for customers who are in the same country/region and state as your office. We show availability and performance data related to these providers. This chart also has a target baseline that shows the best performance observed in the same country/region and state.
 
-## Related topics
+Note: NPI Chart is currently available only for United States of America. The chart will be expanded soon to all locations globally.
+
+## Related articles
 
 [Network connectivity in the Microsoft 365 Admin Center](office-365-network-mac-perf-overview.md)
 

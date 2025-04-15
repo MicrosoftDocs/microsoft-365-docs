@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 ms.date: 07/16/2021
 audience: ITPro
-ms.topic: article
+ms.topic: solution-overview
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
@@ -53,7 +53,7 @@ A ransomware attacker that has infiltrated a Microsoft 365 tenant can hold your 
 - Encrypting files in place
 - Copying files outside your tenant (data exfiltration)
 
-However, Microsoft 365 online services have many built in capabilities and controls to protect customer data from ransomware attacks. The following sections provide a summary. For more details about how Microsoft protects customer data, [Malware and ransomware protection in Microsoft 365](/compliance/assurance/assurance-malware-and-ransomware-protection).
+However, Microsoft 365 online services have many built-in capabilities and controls to protect customer data from ransomware attacks. The following sections provide a summary. For more details about how Microsoft protects customer data, [Malware and ransomware protection in Microsoft 365](/compliance/assurance/assurance-malware-and-ransomware-protection).
 
 >[!Note]
 >A ransomware attack on a Microsoft 365 tenant assumes that the attacker has valid user account credentials for a tenant and has access to all of the files and resources that are permitted to the user account. An attacker without any valid user account credentials would have to decrypt the data at rest that has been encrypted by Microsoft 365 default and enhanced encryption. For more information, see [Encryption and key management overview](/compliance/assurance/assurance-encryption). 
@@ -89,6 +89,10 @@ Email is protected by:
 - [Single item recovery](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-single-item-recovery) and mailbox retention, in which you can recover items in a mailbox upon inadvertent or malicious premature deletion. You can rollback mail messages deleted within 14 days by default, configurable up to 30 days.
 
 - [Retention policies](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies) allow you to retain immutable copies of email for the configured retention period.
+
+### Enhanced Recovery Solutions
+
+In addition to these native built-in capabilities, Microsoft also recommends evaluating the use of [Microsoft 365 Backup](https://www.microsoft.com/en-us/microsoft-365/microsoft-365-backup) or a recognized partner solution built on top of the [Microsoft 365 Backup Storage](https://adoption.microsoft.com/en-us/microsoft-365-backup-storage/#partners) platform. The Microsoft 365 Backup tool compliments and extends native capabilities with a focus on fast, secure, and efficient self-service bulk recovery to recover your content quickly to a healthy pre-attack prior point in time. The Backup Storage platform is architected and purpose-built to provide enhanced restore capabilities for admins. Be aware that purchasing a partner solution that does not leverage the Microsoft 365 Backup Storage platform. Some partner solutions only copy your data to another location and will likely not provide sufficient performance restoration capabilities to meet your ransomware recovery needs. Learn more about [how to select an appropriate backup and restore solution](https://adoption.microsoft.com/files/microsoft-365-backup/Microsoft-365-Backup_Best-practices-whitepaper.pdf).
 
 ### Encrypting files in place
 
@@ -162,7 +166,7 @@ To protect your Microsoft 365 tenant from a ransomware attack, use these Microso
 
 | Capability or feature | Description | Helps detect and respond to... | Licensing |
 |:-------|:-----|:-------|:-------|
-| Microsoft 365 Defender | Combines signals and orchestrates capabilities into a single solution. <br><br> Enables security professionals to stitch together threat signals and determine the full scope and impact of a threat. <br><br> Automates actions to prevent or stop the attack and self-heal affected mailboxes, endpoints, and user identities. | Incidents, which are the combined alerts and data that make up an attack. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
+| Microsoft Defender XDR | Combines signals and orchestrates capabilities into a single solution. <br><br> Enables security professionals to stitch together threat signals and determine the full scope and impact of a threat. <br><br> Automates actions to prevent or stop the attack and self-heal affected mailboxes, endpoints, and user identities. | Incidents, which are the combined alerts and data that make up an attack. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
 | Microsoft Defender for Identity |  Identifies, detects, and investigates advanced threats, compromised identities, and malicious insider actions directed at your organization through a cloud-based security interface uses your on-premises Active Directory Domain Services (AD DS) signals. | Credential compromise for AD DS accounts. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
 | Microsoft Defender for Office 365 | Safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. <br><br> Protects against malware, phishing, spoofing, and other attack types. | Phishing attacks. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
 | Microsoft Defender for Endpoint | Enables detection and response to advanced threats across endpoints (devices). | Malware installation and device compromise. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
@@ -233,22 +237,25 @@ Use these steps to deploy comprehensive protection for your Microsoft 365 tenant
 Key information from Microsoft:
 
 - [The growing threat of ransomware](https://blogs.microsoft.com/on-the-issues/2021/07/20/the-growing-threat-of-ransomware/), Microsoft On the Issues blog post on July 20, 2021
-- [Human-operated ransomware](/security/compass/human-operated-ransomware)
-- [Rapidly protect against ransomware and extortion](/security/compass/protect-against-ransomware)
+- [Human-operated ransomware](/security/ransomware/human-operated-ransomware)
+- [Quickly deploy ransomware preventions](/security/ransomware/protect-against-ransomware)
 - [2021 Microsoft Digital Defense Report](https://www.microsoft.com/security/business/microsoft-digital-defense-report) (see pages 10-19)
-- [Ransomware: A pervasive and ongoing threat](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) threat analytics report in the Microsoft 365 Defender portal
-- Microsoft's Detection and Response Team (DART) ransomware [approach and best practices](/security/compass/incident-response-playbook-dart-ransomware-approach) and [case study](/security/compass/dart-ransomware-case-study)
+- [Ransomware: A pervasive and ongoing threat](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) analytics report in the Microsoft Defender portal
+- Microsoft's Detection and Response Team (DART) ransomware [approach and best practices](/security/operations/incident-response-playbook-dart-ransomware-approach) and [case study](/security/ransomware/dart-ransomware-case-study)
 
 Microsoft 365:
 
 - [Maximize Ransomware Resiliency with Azure and Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
 - [Ransomware incident response playbooks](/security/ransomware/)
 - [Malware and ransomware protection](/compliance/assurance/assurance-malware-and-ransomware-protection)
-- [Protect your Windows 10 PC from ransomware](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
-- [Handling ransomware in SharePoint Online](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
-- [Threat analytics reports for ransomware](https://security.microsoft.com/threatanalytics3?page_size=30&filters=tags%3DRansomware&ordering=-lastUpdatedOn&fields=displayName,alertsCount,impactedEntities,reportType,createdOn,lastUpdatedOn,tags,flag) in the Microsoft 365 Defender portal
+- [Protect your Windows 10 PC from ransomware](https://support.microsoft.com/windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
 
-Microsoft 365 Defender:
+- [Microsoft 365 Backup for enhanced, efficient, and secure recovery](https://aka.ms/m365backup)
+
+- [Handling ransomware in SharePoint Online](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
+- [Threat analytics reports for ransomware](https://security.microsoft.com/threatanalytics3?page_size=30&filters=tags%3DRansomware&ordering=-lastUpdatedOn&fields=displayName,alertsCount,impactedEntities,reportType,createdOn,lastUpdatedOn,tags,flag) in the Microsoft Defender portal
+
+Microsoft Defender XDR:
 
 - [Find ransomware with advanced hunting](/microsoft-365/security/defender/advanced-hunting-find-ransomware)
 
@@ -256,7 +263,7 @@ Microsoft Azure:
 
 - [Azure Defenses for Ransomware Attack](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
 - [Maximize Ransomware Resiliency with Azure and Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
-- [Backup and restore plan to protect against ransomware](/security/compass/backup-plan-to-protect-against-ransomware)
+- [Backup and restore plan to protect against ransomware](/azure/security/fundamentals/backup-plan-to-protect-against-ransomware)
 - [Help protect from ransomware with Microsoft Azure Backup](https://www.youtube.com/watch?v=VhLOr2_1MCg) (26-minute video)
 - [Recovering from systemic identity compromise](/azure/security/fundamentals/recover-from-identity-compromise)
 - [Advanced multistage attack detection in Microsoft Sentinel](/azure/sentinel/fusion#ransomware)

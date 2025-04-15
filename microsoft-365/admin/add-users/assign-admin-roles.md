@@ -5,9 +5,9 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 06/27/2023
+ms.date: 04/02/2025
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
@@ -36,6 +36,8 @@ A Microsoft 365 subscription comes with a set of admin roles that you can assign
 
 When you add new users, if you don't assign them an admin role then they are in the *user role* and don't have admin privileges to any of the Microsoft admin centers. But if you need help getting things done, you can assign an admin role to a user. For example, if you need someone to help reset passwords, you shouldn't assign them the global admin role, you should assign them the password admin role. Having too many global admins, with unlimited access to your data and online business, is a security risk.
 
+To help keep your organization secure, Microsoft recommends that you use roles with the minimum level of permissions needed to perform a job. Global administrator is a highly privileged role that should be limited to scenarios where you can't use a less-privileged role.
+
 You can assign users to a role in two different ways:
 
 - You can go to the user's details and **Manage roles** to assign a role to the user.
@@ -45,7 +47,7 @@ You can assign users to a role in two different ways:
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198030).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=a36dde8d-891d-422f-bb4d-7301df75fe4a]
 
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
@@ -93,6 +95,18 @@ If you know PowerShell, see [Assign roles to user accounts with PowerShell](../.
   
 Use the following instructions to assign roles to tens of users.
 
+## Export, search and filter
+
+You can export the admin list as well as search and filter by role.
+
+:::image type="content" source="../../media/export-search-filter-roles.jpg" alt-text="Screenshot: Export your list of admin roles, search for roles and filter by role ":::
+
+- Use Export admin list to get a full list of all the admin users in your organization. The list is stored in an Excel .csv file.
+
+- Use Search to search for an admin role and see your users who are assigned to that role.
+
+- Use Filter to change your view of displayed admin roles.
+
 ## Check admin roles in your organization
 
 You might not have the correct permissions to assign admin roles to other users. Check to make sure you have the correct permissions or ask another admin to assign roles for you.
@@ -101,6 +115,16 @@ You can check admin role permissions in 2 different ways:
 
 - You can go to the user's details and look under **Roles** on the **Account** page.
 - Or you can go to **Roles** and select the admin role, and select assigned admins to see which users are assigned.
+
+## Compare roles
+
+You can now compare permissions for up to 3 roles at a time so you can find the least permissive role to assign.
+
+In the admin center:
+
+- Select up to 3 roles and choose **Compare roles** to see the permissions each role has.
+
+![A figure that shows a comparison of admin roles.](../../media/compare-roles-list.png)
 
 ## Related content
 

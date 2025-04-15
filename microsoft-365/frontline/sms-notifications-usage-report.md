@@ -1,10 +1,10 @@
 ---
 title: Microsoft Teams SMS notifications usage report
 author: lana-chin
-ms.author: v-chinlana
-manager: serdars
+ms.author: jtremper
+manager: jtremper
 audience: Admin
-ms.topic: how-to
+ms.topic: article
 ms.service: microsoft-365-frontline
 ms.reviewer: 
 f1.keywords:
@@ -31,7 +31,7 @@ The SMS notifications usage report in the Microsoft Teams admin center gives you
 
 You can track key data for confirmation and reminder text messages sent to external attendees in virtual appointments scheduled by your staff. The report provides information such as date and time sent, notification type, distribution details, and delivery status.
 
-To access the report, you must be a Global admin, Teams admin, Global reader, or Report reader.
+To access the report, you must be a Teams admin, Global reader, or Report reader.
 
 ## View the report
 

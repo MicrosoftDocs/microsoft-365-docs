@@ -9,6 +9,7 @@ ms.reviewer: emmasheridan, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
 ms.collection: 
 - Tier1
@@ -22,9 +23,12 @@ ms.custom:
 - SaRA
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkMAC
+- GAUpdates
+- campaignIDs-batch1
 search.appverid: MET150 
 description: "Learn how to manage your subscription renewal for a Microsoft business subscription by turning recurring billing off or on."
-ms.date: 08/18/2023
+ms.date: 03/27/2025
 ---
 
 # Manage recurring billing in the Microsoft 365 admin center
@@ -36,11 +40,11 @@ If you have a prepaid subscription for Microsoft 365 Business Standard that you 
 ## Before you begin
 
 - [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
-- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a billing account owner or contributor, or a billing profile owner or contributor to do the tasks in this article. For information about billing account and billing profile roles, see [Understand your Microsoft business billing account](../manage-billing-accounts.md) and [Understand your Microsoft business billing profile](../billing-and-payments/manage-billing-profiles.md).
-- If you have a Microsoft Online Services Agreement (MOSA), you must be a global or billing admin to do the tasks in this article. For more information, see [About admin roles in the Microsoft 365 admin center](../../admin/add-users/about-admin-roles.md).
+- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a Billing account owner or contributor, or a Billing profile owner or contributor to do the tasks in this article. For information about billing account and billing profile roles, see [Understand your Microsoft business billing account](../manage-billing-accounts.md) and [Manage your Microsoft business billing profiles](../billing-and-payments/manage-billing-profiles.md).
+- If you have a Microsoft Online Services Agreement (MOSA), you must be at least a Billing Administrator to do the tasks in this article. For more information, see [About admin roles in the Microsoft 365 admin center](../../admin/add-users/about-admin-roles.md).
 
 > [!NOTE]
-> If you're the person who signed up for the subscription, you're automatically a billing account owner or global admin.
+> If you're the person who signed up for the subscription, you're automatically a Billing account owner.
 
 ## What if I have a prepaid subscription?
 
@@ -51,6 +55,9 @@ If you prepaid for your subscription with a product key, your subscription expir
 When you turn off recurring billing for a subscription, it isn’t canceled. The subscription remains active until it expires. You can view the expiration date on the <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page in the admin center.  If you want to keep the subscription active, you must pay the bill manually.
 
 To learn how to cancel a subscription immediately, see [Cancel your Microsoft business subscription](cancel-your-subscription.md).
+
+> [!IMPORTANT]
+> Turning off recurring billing cancels any existing scheduled changes you have for a subscription. 
 
 ## Change the recurring billing setting
 

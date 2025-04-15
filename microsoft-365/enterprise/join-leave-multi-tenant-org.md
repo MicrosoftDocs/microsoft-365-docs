@@ -1,12 +1,13 @@
 ---
-title: Join or leave a multitenant organization in Microsoft 365 (Preview)
-ms.author: mikeplum
-author: MikePlumleyMSFT
-manager: serdars
-ms.date: 08/17/2023
+title: Join or leave a multitenant organization in Microsoft 365
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
+ms.date: 06/24/2024
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
+ms.subservice: multi-tenant
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -15,10 +16,7 @@ f1.keywords:
 description: Learn how to join or leave a multitenant organization in Microsoft 365.
 ---
 
-# Join or leave a multitenant organization in Microsoft 365 (Preview)
-
-> [!NOTE]
-> Multitenant organizations in Microsoft 365 is available in [targeted release](/microsoft-365/admin/manage/release-options-in-office-365).
+# Join or leave a multitenant organization in Microsoft 365
 
 To join a multitenant organization, a global administrator in the owner organization must first add your organization to the multitenant organization. Once they've done that, you can join the multitenant organization. You'll need the tenant ID of the owner organization in order to join.
 
@@ -26,12 +24,12 @@ Once you've joined, you can leave a multitenant organization at any time.
 
 <a name='related-settings-in-azure-ad'></a>
 
-#### Related settings in Microsoft Entra ID
+## Related settings in Microsoft Entra ID
 
 When you join an existing multitenant organization, the following settings are configured in Microsoft Entra ID:
 
 - A cross-tenant synchronization configuration is added with the name *MTO_Sync_\<TenantID\>*, but no sync jobs are created yet. (If you already have a cross-tenant synchronization configuration, it remains unchanged.)
-- An organization relationship is added to the [cross-tenant access settings](/azure/active-directory/external-identities/cross-tenant-access-overview) based on the [multitenant organization templates](/azure/active-directory/multi-tenant-organizations/templates) for cross-tenant access and identity synchronization. (If an organizational relationship already exists, the existing one is used.)
+- An organization relationship is added to the [cross-tenant access settings](/azure/active-directory/external-identities/cross-tenant-access-overview) based on the [multitenant organization templates](/entra/identity/multi-tenant-organizations/multi-tenant-organization-templates) for cross-tenant access and identity synchronization. (If an organizational relationship already exists, the existing one is used.)
 - The multitenant organization template for identity synchronization is set to allow users to sync into this tenant.
 - The multitenant org template for cross-tenant access will be set to automatically redeem user invitations, inbound as well as outbound.
 
@@ -39,7 +37,10 @@ When you leave a multitenant organization, the cross-tenant access settings and 
 
 ## Join an existing multitenant organization
 
-To join an existing multitenant organization in Microsoft 365
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
+
+To join an existing multitenant organization in Microsoft 365:
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) as a global administrator.
 1. Expand **Settings** and select **Org settings**.
@@ -62,7 +63,10 @@ The next step after you join the multitenant organization is to synchronize your
 
 You can leave a multitenant organization as long as your tenant isn't the last owner tenant in the multitenant organization. You can also remove other member tenants.
 
-To remove a tenant from a multitenant organization in Microsoft 365
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
+
+To remove a tenant from a multitenant organization in Microsoft 365:
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) as a global administrator.
 1. Expand **Settings** and select **Org settings**.
@@ -73,7 +77,7 @@ To remove a tenant from a multitenant organization in Microsoft 365
 
 Removing a tenant doesn't change any user synchronization configurations or cross-tenant access settings in Microsoft Entra ID. We recommend you review these settings and make any updates needed after the tenant is removed.
 
-#### Remove synchronized users from other tenants
+### Remove synchronized users from other tenants
 
 When you remove a tenant from a multitenant organization, you might want to stop synchronizing users between that tenant and the tenants that remain in the multitenant organization. This can be done by updating the cross-tenant synchronization configuration in Microsoft Entra ID and removing the security groups being synchronized, then restarting the synchronization with zero users.
 
@@ -85,7 +89,11 @@ To remove the cross-synchronized users:
 
 - For each tenant that's remaining in the multitenant organization, update the synchronization configuration for the tenant that's leaving.
 
-To remove your users from other tenants in a multitenant organization
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
+
+To remove your users from other tenants in a multitenant organization:
+
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as a Global administrator.
 1. Expand **Identity**, and then expand **External Identities**.
 1. Select **Cross-tenant synchronization**.
@@ -98,7 +106,7 @@ To remove your users from other tenants in a multitenant organization
 
 Once the users have been removed from the other tenants' directories, you can stop provisioning for the synchronization configurations or delete them.
 
-#### Stop user sync and automatic invitation redemption
+### Stop user sync and automatic invitation redemption
 
 Once you remove a tenant from a multitenant organization, you might want to stop user sync and automatic invitation redemption with the tenants that remain in the multitenant organization.
 
@@ -108,7 +116,11 @@ To prevent user sync and automatic invitation redemption:
 
 - For each tenant that's remaining in the multitenant organization, update the cross-tenant access settings for the tenant that's leaving.
 
-To prevent user sync and automatic invitation redemption
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
+
+To prevent user sync and automatic invitation redemption:
+
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as a Global administrator.
 1. Expand **Identity**, and then expand **External Identities**.
 1. Select **Cross-tenant access settings**.

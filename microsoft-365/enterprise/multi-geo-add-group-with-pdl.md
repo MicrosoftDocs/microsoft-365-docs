@@ -1,16 +1,20 @@
 ---
 title: Create a Microsoft 365 Group with a specific preferred data location
 ms.reviewer:
-ms.date: 08/10/2020
-ms.author: mikeplum
-author: MikePlumleyMSFT
-manager: serdars
+ms.date: 05/01/2024
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
+ms.subservice: multi-tenant
 f1.keywords:
 - NOCSH
-ms.collection: Strat_SP_gtc
+ms.collection: 
+- Strat_SP_gtc
+- scotvorg
+- must-keep
 ms.localizationpriority: medium
 description: Learn how to create a Microsoft 365 group with a specified preferred data location in a multi-geo environment.
 ms.custom: 
@@ -20,7 +24,7 @@ ms.custom:
 
 # Create a Microsoft 365 group with a specific preferred data location
 
-When users in a multi-geo environment create a Microsoft 365 group, the group preferred data location (PDL) is automatically set to that of the user. Global, SharePoint, and Exchange Administrators can create groups in any _Geography_ they select. 
+When users in a multi-geo environment create a Microsoft 365 group, the group preferred data location (PDL) is automatically set to that of the user. Global, SharePoint, and Exchange Administrators can create groups in any _Geography_ they select.
 
 If you need to create a group with a specific PDL, you can do that using from the <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint admin center</a> or through the Exchange Online New-UnifiedGroup Microsoft PowerShell cmdlet. When you do this, both the group mailbox and SharePoint site associated with the group will be provisioned in the specified PDL.
 
@@ -33,9 +37,9 @@ If you want to create a group site in your Australia location, you can go to `ht
 1. Select **+ Create**.
 2. Follow the process to create a group site.
 
-Your group site will be provisioned in the _Geography_ location corresponding to the SharePoint admin center from which you initiated the site creation request. 
+Your group site will be provisioned in the _Geography_ location corresponding to the SharePoint admin center from which you initiated the site creation request.
 
-Using Exchange PowerShell
+## Using Exchange PowerShell
 
 Connect to Exchange Online PowerShell and pass the parameter _-MailBoxRegion_ with the geo location code.
 
@@ -54,7 +58,7 @@ New-UnifiedGroup -DisplayName MultiGeoEUR -Alias "MultiGeoEUR" -AccessType Publi
 
 [!INCLUDE [Microsoft 365 Multi-Geo locations](../includes/microsoft-365-multi-geo-locations.md)]
 
-## Related topics
+## Related articles
 
 [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
 

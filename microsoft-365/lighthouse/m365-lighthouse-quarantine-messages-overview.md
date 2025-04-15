@@ -1,13 +1,13 @@
 ---
-title: "Overview of Quarantined Messages in Microsoft 365 Lighthouse"
+title: "Overview of the Quarantined messages page in Microsoft 365 Lighthouse"
 f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: shcallaw
+ms.reviewer: prpath
 ms.date: 10/27/2023
 audience: Admin
-ms.topic: article
+ms.topic: concept-article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
@@ -21,11 +21,11 @@ ms.custom:
 search.appverid: MET150
 description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how to manage quarantined messages."
 ---
-# Overview of Quarantined Messages in Microsoft 365 Lighthouse
+# Overview of the Quarantined messages page in Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse lets you see insights and information about quarantined emails across all your customer tenants. From a single view, you can triage quarantined emails and take the appropriate actions. The data is available if the tenant has implemented Exchange Online Protection (EOP) and Microsoft Defender for Office365 Plan 1 (MDO).
+Microsoft 365 Lighthouse lets you see insights and information about quarantined email messages across all your customer tenants. From a single view, you can triage quarantined email messages and take the appropriate actions. The data is available if the tenant has implemented Exchange Online Protection (EOP) and Microsoft Defender for Office365 Plan 1 (MDO).
 
-You can access the information in Lighthouse by selecting **Home** in the left navigation pane, or by selecting **Data Protection** in the left navigation pane to open the Quarantined messages page.
+You can access the information in Lighthouse by selecting **Home** in the left navigation pane, or by selecting **Quarantined messages** in the left navigation pane to open the **Quarantined messages** page.
 
 > [!NOTE]
 > This page provides the number of tenants for which data is unavailable because they do not have the required licenses.
@@ -62,7 +62,7 @@ You also can adjust the columns and sort data based on tenant, message status, a
 
 :::image type="content" source="../media/m365-lighthouse-data-protection/quarantine-email-page.png" alt-text="Screenshot of the Quarantined messages page." lightbox="../media/m365-lighthouse-data-protection/quarantine-email-page.png":::
 
-The **Copy Link to Messages in Microsoft** **365 Defender** option provides a link to Microsoft 365 Defender portal where you can access and manage your tenant's email quarantine queue. You must authenticate before you can take any action.
+The **Copy Link to Messages in Microsoft** **365 Defender** option provides a link to Microsoft Defender portal where you can access and manage your tenant's email quarantine queue. You must authenticate before you can take any action.
 
 ## Related content
 

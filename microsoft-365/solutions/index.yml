@@ -100,26 +100,20 @@ landingContent:
             url: /onedrive/plan-onedrive-enterprise?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
 
   # Card
-  - title: Compliance solution guides
+  - title: Data governance, data security, and risk and compliance solution guides
     linkLists:
       - linkListType: deploy
         links:
-          - text: Insider risk solutions
-            url: /purview/insider-risk-solution-overview
-          - text: Auditing solutions
-            url: /purview/audit-solutions-overview
-          - text: eDiscovery (Premium)
-            url: /purview/ediscovery
+          - text: Data governance solutions
+            url: /purview/data-governance-overview
+          - text: Data security solutions
+            url: /purview/purview-security
+          - text: Risk and compliance solutions
+            url: /purview/purview-compliance
       - linkListType: reference
         links:
-          - text: ISO - Recommended action plan
-            url: /compliance/regulatory/iso-action-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
-          - text: NIST - Recommended action plan
-            url: /compliance/regulatory/nist-action-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
-          - text: CCPA - Recommended action plan
-            url: /compliance/regulatory/ccpa-faq?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
-          - text: GDPR - Recommended action plan
-            url: /compliance/regulatory/gdpr?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+          - text: Microsoft Compliance resources
+            url: /compliance/
 
   # Card
   - title: Security solution guides
@@ -134,11 +128,11 @@ landingContent:
             url: ../security/office-365-security/zero-trust-identity-device-access-policies-overview.md
           - text: Deploy Microsoft Defender for Endpoint
             url: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases
-          - text: Evaluate Microsoft 365 Defender
+          - text: Evaluate Microsoft Defender XDR
             url: ../security/defender-endpoint/deployment-phases.md
           - text: Security recommendations for priority accounts
             url: ../security/office-365-security/priority-accounts-security-recommendations.md
-          - text: Evaluate Microsoft 365 Defender
+          - text: Evaluate Microsoft Defender XDR
             url: ../security/defender-endpoint/deployment-phases.md
       - linkListType: how-to-guide
         links:

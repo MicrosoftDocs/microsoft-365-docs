@@ -1,22 +1,23 @@
 ---
-title: Map fields of a modern template to library columns in Microsoft Syntex
+title: Map fields of a modern template to library columns in SharePoint
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 audience: admin
 ms.reviewer: shrganguly
-ms.date: 03/14/2023
-ms.topic: conceptual
+ms.date: 01/10/2025
+ms.topic: how-to
 ms.service: microsoft-syntex
+ms.subservice: syntex-content-intelligence
 search.appverid:
 ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to map fields of a modern template to library columns in Microsoft Syntex.
+description: Learn how to map fields of a modern template to library columns in SharePoint.
 ---
 
-# Map fields of a modern template to library columns in Microsoft Syntex
+# Map fields of a modern template to library columns in SharePoint
 
 You can map fields in a modern template to document library columns, and then add the fields to a custom view of the library. Once configured, every time a document is created from this template, the field values will get automatically extracted and filled in against the library columns and be part of the document metadata.
 

@@ -2,20 +2,20 @@
 title: "Use Microsoft Teams for collaboration"
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
-manager: dansimp
+ms.author: chrisda
+author: chrisda
+manager: deniseb
 ms.audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-business
+ms.service: microsoft-365-business-security
 ms.localizationpriority: medium
-ms.date: 10/10/2023
-ms.collection: 
+ms.date: 05/31/2024
+ms.collection:
 - Adm_O365
-- M365-subscription-management 
+- M365-subscription-management
 - M365-identity-device-management
 - M365-Campaigns
-- tier1
+- tier2
 ms.custom:
 - Adm_O365
 - MiniMaven
@@ -49,7 +49,7 @@ For example, a business, legal firm, or healthcare practice might create the fol
 
 1. **An external communications team or teams:** Coordinate with your vendors, partners, or clients without allowing them into anything sensitive. Set up different channels for specific groups.
 
-![Diagram of a Microsoft Teams window with three separate teams to allow for secure communication and collaboration within a business.](../media/m365-democracy-teams-business-collab.png)
+:::image type="content" source="media/m365-democracy-teams-business-collab.png" alt-text="Diagram of a Microsoft Teams window with three separate teams to allow for secure communication and collaboration within a business" lightbox="media/m365-democracy-teams-business-collab.png":::
 
 And campaigns could create the following teams to communicate and collaborate securely:
 
@@ -59,7 +59,7 @@ And campaigns could create the following teams to communicate and collaborate se
 
 3. **A partners team:** Coordinate with your vendors, partners, or volunteers without allowing them into anything sensitive.
 
-![Diagram of a Microsoft Teams window with three separate teams to allow for secure communication and collaboration within a campaign.](../media/m365-democracy-teams-collab.png)
+:::image type="content" source="media/m365-democracy-teams-collab.png" alt-text="Diagram of a Microsoft Teams window with three separate teams to allow for secure communication and collaboration within a campaign." lightbox="media/m365-democracy-teams-collab.png":::
 
 When you create a team, here's what else gets created:
 
@@ -89,24 +89,23 @@ Use the command box at the top to search for specific items or people, take quic
 
 Create a private team for just the business owner and managers, or campaign manager and candidate like this.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWeqWA]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b0c4050b-1392-48df-a87c-6dfcf44c61e1]
 
 Create an organization-wide team that everyone in the business or campaign can use to communicate and share files.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2GCG9]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b1d0ad30-70aa-499a-9511-9b24e686611c]
 
 Create a team that you share with guests outside your organization, such as for advertising or finances.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=573823a3-19cf-4b2e-932f-7be1896b2821]
 
 Learn more about Microsoft Teams at [Microsoft Teams technical documentation](/microsoftteams/microsoft-teams)
 
 ## Admin settings
 
 > [!NOTE]
-> You must be an admin to create an organization-wide team. For more information, see [What is an Admin in Microsoft 365?](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US).
+> You must be an admin to create an organization-wide team. For more information, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
 
 ## Next step
 
 [Set up meetings](set-up-meetings.md).
-

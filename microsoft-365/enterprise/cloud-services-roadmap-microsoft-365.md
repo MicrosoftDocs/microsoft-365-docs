@@ -5,14 +5,16 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 08/10/2020
+ms.date: 05/20/2024
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 ms.collection: 
 - scotvorg
 - M365-subscription-management
+- must-keep
 ms.custom: it-pro
 description: The roadmap to set up your cloud services for Microsoft 365.
 ---
@@ -20,8 +22,6 @@ description: The roadmap to set up your cloud services for Microsoft 365.
 # Cloud services roadmap for Microsoft 365
 
 To get the creativity, teamwork, and productivity benefits of Microsoft 365 for enterprise, deploy the cloud services that best fit your organization's needs.
-
-If you have existing server-based deployments for Exchange, SharePoint, or Skype for Business and want to migrate your entire organization to Microsoft 365 for enterprise, see the [client and server software roadmap](client-server-software-roadmap-microsoft-365.md). This roadmap includes Microsoft Office client products, on-premises Office Server products, and Microsoft Windows-based devices.
 
 ## Deploy
 
@@ -38,7 +38,7 @@ To deploy your cloud services:
 
 ## Manage
 
-To manage your cloud services: 
+To manage your cloud services:
 
 - [Check your service health](view-service-health.md)
 - [Understand your support options](../admin/get-help-support.md)
@@ -48,7 +48,6 @@ To manage your cloud services:
   - [Skype for Business](/SkypeForBusiness/skype-for-business-online)
   - [Teams](/MicrosoftTeams/quality-of-experience-review-guide)
   - [Viva Engage](https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe)
-- [Perform performance tuning for your cloud services](tune-microsoft-365-performance.md)
 
 ## How Microsoft does cloud services for Microsoft 365
 

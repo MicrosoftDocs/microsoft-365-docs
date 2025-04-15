@@ -2,13 +2,14 @@
 title: "Remove a domain"
 f1.keywords:
 - NOCSH
-ms.author: nkagole
-author: nataliekagole
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
-ms.date: 09/22/2023
+ms.date: 11/18/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-domains
 ms.localizationpriority: medium
 ms.collection:
 - Tier2
@@ -22,6 +23,7 @@ ms.custom:
   - AdminTemplateSet
   - business_assist
   - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 search.appverid:
 - BCS160
 - MET150
@@ -36,6 +38,8 @@ description: "Learn how to remove an old domain from Microsoft 365 and move user
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for.
 
 Are you removing your domain because you want to add it to a different Microsoft 365 subscription plan? Or do you just want to cancel your subscription? You can [change your plan or subscription](../../commerce/subscriptions/switch-to-a-different-plan.md) or [cancel your subscription](../../commerce/subscriptions/cancel-your-subscription.md).
+
+[!INCLUDE [How to get tech support for SMB](../../includes/smb-how-to-get-tech-support.md)]
 
 > [!TIP]
 > If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
@@ -88,7 +92,7 @@ You'll need to do this for yourself, too, if you're on the domain that you want 
 
 5. Sign in with the new domain and your same password.
 
-You can also use PowerShell to move users to another domain. See [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname) for more information. To set the default domain, use [Set-MsolDomain](/powershell/module/msonline/set-msoldomain).
+You can also use PowerShell to move users to another domain. See [Update-MgUser](/powershell/module/microsoft.graph.users/update-mguser) for more information. To set the default domain, use [Update-MgDomain](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomain).
 
 ### Step 2: Move groups to another domain
 
@@ -133,9 +137,6 @@ You can also use PowerShell to move users to another domain. See [Set-MsolUserPr
 
 4. Follow any additional prompts, and then select **Close**.
 
-
-
-
 ### Remove a custom domain
 
 If you are canceling your subscription and you use a custom domain, there are a few extra steps that you must do before you can cancel your subscription. 
@@ -160,13 +161,11 @@ If you didn't switch NS records when you set up your domain, when you change the
 
 To change your NS records, see [Change nameservers to set up Microsoft 365 with any domain registrar](../../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md).
 
-
-
 ## How long does it take for a domain to be removed?
 
 It can take as little as five minutes for Microsoft 365 to remove a domain if it's not referenced in a lot of places such as security groups, distribution lists, users, aliases, shared mailboxes, resource mailboxes, and Microsoft 365 groups. If there are many references that use the domain it can take several hours (a day) for the domain to be removed.
 
-If you have hundreds or thousands of users, use PowerShell to query for all users and then move them to another domain. Otherwise, it's possible for a handful of users to be missed in the UI, and then when you go to remove the domain, you won't be able to and you won't know why. See [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname) for more information. To set the default domain, use [Set-MsolDomain](/powershell/module/msonline/set-msoldomain).
+If you have hundreds or thousands of users, use PowerShell to query for all users and then move them to another domain. Otherwise, it's possible for a handful of users to be missed in the UI, and then when you go to remove the domain, you won't be able to and you won't know why. See [Update-MgUser](/powershell/module/microsoft.graph.users/update-mguser) for more information. To set the default domain, use [Update-MgDomain](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomain).
 
 ## Still need help?
 
@@ -190,8 +189,8 @@ Still not working? Your domain might need to be manually removed. [Give us a cal
 
 ## Related content
 
-[Domains FAQ](../setup/domains-faq.yml) (article)
+- [Domains FAQ](../setup/domains-faq.yml) (article)
 
-[Switch to a different Microsoft 365 for business plan](../../commerce/subscriptions/switch-to-a-different-plan.md) (article)
+- [Switch to a different Microsoft 365 for business plan](../../commerce/subscriptions/switch-to-a-different-plan.md) (article)
 
-[Cancel your subscription](../../commerce/subscriptions/cancel-your-subscription.md) (article)
+- [Cancel your subscription](../../commerce/subscriptions/cancel-your-subscription.md) (article)

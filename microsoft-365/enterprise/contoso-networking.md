@@ -5,15 +5,17 @@ f1.keywords:
 - NOCSH
 ms.author: kvice
 manager: scotv
-ms.date: 09/13/2018
+ms.date: 09/06/2024
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 ms.collection:
 - scotvorg 
 - M365-subscription-management
 - Strat_O365_Enterprise
+- must-keep
 ms.custom:
 
 description: Understand the Contoso networking infrastructure and how the company uses its SD-WAN technology for optimal networking performance to Microsoft 365 for enterprise cloud services.
@@ -120,6 +122,6 @@ Learn how Contoso is [leveraging its on-premises Active Directory Domain Service
 
 [Networking roadmap for Microsoft 365](networking-roadmap-microsoft-365.md)
 
-[Microsoft 365 for enterprise overview](microsoft-365-overview.md)
+[Microsoft 365 network connectivity principles](microsoft-365-network-connectivity-principles.md)
 
-[Test lab guides](m365-enterprise-test-lab-guides.md)
+[Microsoft 365 for enterprise overview](microsoft-365-overview.md)

@@ -2,19 +2,19 @@
 title: "Multifactor authentication for users"
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
-manager: dansimp
+ms.author: chrisda
+author: chrisda
+manager: deniseb
 audience: Admin
-ms.topic: conceptual
-ms.service: microsoft-365-business
-ms.date: 05/02/2023
+ms.topic: article
+ms.service: microsoft-365-business-security
+ms.date: 05/31/2024
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - M365-Campaigns
 - m365solution-smb
 - highpri
-- tier1
+- tier2
 ms.custom:
 - MiniMaven
 search.appverid:
@@ -28,9 +28,9 @@ description: "Learn how to set up multifactor authentication (MFA) on your phone
 
 Multifactor authentication (MFA) provides increased security because instead of only using a password, or a code through text, a separate app on your phone is used to verify access. MFA makes it difficult for unauthorized users to sign in. When MFA is required, people in your organization can use the Microsoft Authenticator app to securely sign into Microsoft 365 on their devices. <br/><br/>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b82831d1-4740-4466-ae55-94c335f87158]
 
-See more at [Set up multifactor authentication in Microsoft 365 Business Premium](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)
+See more at [Set up your Microsoft 365 sign-in for multi-factor authentication](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
 
 ## Use the Outlook app on your devices
 

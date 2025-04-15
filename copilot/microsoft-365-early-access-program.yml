@@ -6,20 +6,17 @@ metadata:
   ms.author: camillepack
   author: camillepack
   manager: scotv
-  ms.date: 06/19/2023
+  ms.date: 08/07/2024
   audience: Admin
   ms.topic: faq
   ms.service: microsoft-365-copilot
   ms.localizationpriority: medium
   monikerRange: 'o365-worldwide'
   ms.collection: 
-  - Tier2
   - scotvorg
-  - M365-subscription-management 
-  - Adm_O365
-  - Adm_TOC
   - m365copilot
-  description: "Frequently asked questions about the Microsoft 365 Copilot Early Access Program."
+  - magic-ai-copilot
+  description: "Frequently asked questions about the Microsoft 365 Copilot5 Early Access Program."
 title: Microsoft 365 Copilot Early Access Program Frequently Asked Questions
 summary: The Microsoft 365 Copilot Early Access Program is an invitation-only paid preview. If your organization is interested in the early release program, work with your Microsoft account manager to find out more details about nominations for a potential invite. The program includes licenses for Microsoft 365 Copilot within the Microsoft 365 Apps (Word, Outlook, Excel, PowerPoint, Teams, and more). To learn more, see this blog post announcing the [Microsoft 365 Copilot Early Access Program](https://go.microsoft.com/fwlink/p/?linkid=2240881).
 
@@ -38,9 +35,13 @@ sections:
          
         answer: Work directly with your account manager to confirm acceptance. After you accept the invitation, users with the Global admin role permissions in the organization will receive an email to complete the process in the Microsoft 365 admin center.
 
-      - question: What are the top benefits of the Microsoft 365 Copilot Early Access Program?
+      - question: What are the top benefits of the Microsoft 365 CopilotEarly Access Program?
          
         answer: With the Early Access Program, you can use Copilot prior to the general release of the product and can receive extra engineering support to deploy Copilot and promote adoption. You also have the opportunity to test use cases and provide feedback to influence the development of the product.
+      
+      - question: What happens at the end of the 12-month Early Access Program term?
+
+        answer: The Copilot Early Access Program was set up only for 12 months, and as such, you will not be able to use the same licenses at the end of the program period. For example, if you purchased the Copilot Early Access Program on August 1, 2023, the service is set to complete by July 31, 2024. Thereafter, you will have a 30-day grace period to use Copilot before the service is disabled. You need to purchase new GA licenses and provision the 300 users again before the grace period ends.
   - name: Purchase information
     questions:
       - question: How do I complete the purchase? 

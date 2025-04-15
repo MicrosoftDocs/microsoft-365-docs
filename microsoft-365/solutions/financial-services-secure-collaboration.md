@@ -3,7 +3,7 @@ title: "Key compliance and security considerations for US banking and capital ma
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 03/17/2020
+ms.date: 11/13/2023
 audience: ITPro
 ms.topic: article
 ms.collection: 
@@ -196,7 +196,7 @@ Identity Protection helps organizations automatically protect against identity c
 
 ## Defend the fortress
 
-Microsoft recently launched the Microsoft 365 Defender solution, which is designed to secure the modern organization from the evolving threat landscape. By leveraging the Intelligent Security Graph, the Threat Protection solution offers comprehensive, integrated security against multiple attack vectors.
+Microsoft recently launched the Microsoft Defender XDR solution, which is designed to secure the modern organization from the evolving threat landscape. By leveraging the Intelligent Security Graph, the Threat Protection solution offers comprehensive, integrated security against multiple attack vectors.
 
 ### [The Intelligent Security Graph](https://www.microsoft.com/security/business/intelligence) 
 Security services from Microsoft 365 are powered by the Intelligent Security Graph. To combat cyberthreats, the Intelligent Security Graph uses advanced analytics to link threat intelligence and security signals from Microsoft and its partners. Microsoft operates global services at a massive scale, gathering trillions of security signals that power protection layers across the stack. Machine learning models assess this intelligence, and the signal and threat insights are widely shared across our products and services. This enables us to detect and respond to threats quickly and bring actionable alerts and information to customers for remediation. Our machine learning models are continuously trained and updated with new insights, helping us build more-secure products and provide more proactive security.

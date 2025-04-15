@@ -3,10 +3,11 @@ title: How to check Microsoft 365 service health
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 07/19/2023
+ms.date: 04/01/2025
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: high
 f1.keywords:
 - CSH
@@ -21,31 +22,32 @@ ms.collection:
 - scotvorg
 - Ent_O365
 - M365-subscription-management
+- must-keep
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
-description: View the health status of Microsoft 365 services before you call support to see if there is an active service interruption.
+description: View the health status of Microsoft 365 services before you call support to see if there's an active service interruption.
 ---
 
 # How to check Microsoft 365 service health
 
 [![Label to let you know the admin center is changing and you can find more details at aka.ms/aboutM365preview.](../media/O365-Admin-AdminCenterChanging.png)](/office365/admin/microsoft-365-admin-center-preview?preserve-view=true&view=o365-worldwide)
 
-You can view the health of your Microsoft services, including Office on the web, Microsoft Teams, Exchange Online, and Microsoft Dynamics 365 on the **Service health** page in the  [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339). If you are experiencing problems with a cloud service, you can check the service health to determine whether this is a known issue with a resolution in progress before you call support or spend time troubleshooting.
+You can view the health of your Microsoft services, including Office on the web, Microsoft Teams, Exchange Online, and Microsoft Dynamics 365 on the **Service health** page in the  [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339). If you're experiencing problems with a cloud service, you can check the service health to determine whether this is a known issue with a resolution in progress before you call support or spend time troubleshooting.
 
-If you are unable to sign in to the admin center, you can use the [service status page](https://status.cloud.microsoft) to check for known issues preventing you from logging into your tenant.  Also, sign up to follow us at [@MSFT365status](https://twitter.com/MSFT365Status) on **X** (Twitter) to see information on certain events.
+If you're unable to sign in to the admin center, you can use the [service status page](https://status.cloud.microsoft) to check for known issues preventing you from logging into your tenant. Also, sign up to follow us at [@MSFT365status](https://x.com/MSFT365Status) on **X** (Twitter) to see information on certain events.
 
 ## How to check service health
 
 1. Go to the Microsoft 365 admin center at [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2024339), and sign in with an admin account.
 
     > [!NOTE]
-    > People who are assigned the global admin role can view service health, as well as people assigned to other admin roles such as Service Support admin and Helpdesk admin. For more information about roles that can view service health, see [About admin roles](../admin/add-users/about-admin-roles.md?preserve-view=true&view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles).
+    > People who are assigned the Service Support admin and Helpdesk admin role can view service health. For more information about roles that can view service health, see [About admin roles](../admin/add-users/about-admin-roles.md?preserve-view=true&view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles).
 
-2. To view service health, in the left-hand navigation of the admin center, go to **Health** > **Service health**, or select the **Service health** card on the **Home dashboard**. The dashboard card indicates whether there is an active service issue and links to the detailed **Service health** page.
+2. To view service health, in the left-hand navigation of the admin center, go to **Health** > **Service health**, or select the **Service health** card on the **Home dashboard**. The dashboard card indicates whether there's an active service issue and links to the detailed **Service health** page.
 
 3. On the **Service health** page, the health state of each cloud service is shown in a table format.
 
@@ -53,11 +55,11 @@ If you are unable to sign in to the admin center, you can use the [service statu
 
 The **Overview** tab (the default view) shows all services, their current health state, and any active incidents or advisories. An icon and status in the **Health** column indicate the state of each service.
 
-The **Issues for your organization to act on** section lists any issues detected in your environment that require your action.  If there are no issues in your environment that need action, this section will not be visible.
+The **Issues for your organization to act on** section lists any issues detected in your environment that require your action. If there are no issues in your environment that need action, this section won't be visible.
 
 The **Active issues Microsoft is working on** section lists active incidents and advisories that Microsoft is working to resolve.
 
-The **Issue history** tab shows all incidents and advisories that have been resolved within the last seven or 30 days.
+The **Issue history** tab shows all incidents and advisories that have been resolved within the last 7 or 30 days.
 
 If you're experiencing an issue with a Microsoft 365 service and you don't see it listed on the Service health page, tell us about it by selecting **Report an issue**, and completing the short form. We'll look at related data and reports from other organizations to see how widespread the issue is, and if it originated with our service. If it did, we'll add it as a new incident or advisory on the **Service health** page, where you can track its resolution. The **Reported issues** tab will show all issues your tenant has reported from this form and the status.
 
@@ -115,15 +117,15 @@ Most of the time, services will appear as healthy with no further information. W
 
 | Icon | Description |
 |:-----|:-----|
-|![Information icon for advisory.](../media/a7f5fd21-c760-4948-9bc1-50f7c8070e28.png)|If a service has an advisory shown, we are aware of a problem that is affecting some users, but the service is still available. In an advisory, there is often a workaround to the problem and the problem may be intermittent or is limited in scope and user impact. |
-|![Exclamation point icon for incident.](../media/a636db57-6083-44dc-bbd5-556850804f17.png)|If a service has an active incident shown, it's a critical issue and the service or a major function of the service is unavailable. For example, users may be unable to send and receive email or unable to sign-in. Incidents will have noticeable impact to users. When there is an incident in progress, we will provide updates regarding the investigation, mitigation efforts, and confirmation of resolution in the Service health dashboard. |
+|![Information icon for advisory.](../media/a7f5fd21-c760-4948-9bc1-50f7c8070e28.png)|If a service has an advisory shown, we're aware of a problem that is affecting some users, but the service is still available. In an advisory, there's often a workaround to the problem and the problem might be intermittent or is limited in scope and user impact. |
+|![Exclamation point icon for incident.](../media/a636db57-6083-44dc-bbd5-556850804f17.png)|If a service has an active incident shown, it's a critical issue and the service or a major function of the service is unavailable. For example, users might be unable to send and receive email or unable to sign-in. Incidents will have noticeable impact to users. When there's an incident in progress, we'll provide updates regarding the investigation, mitigation efforts, and confirmation of resolution in the Service health dashboard. |
 
 ### Status definitions
 
 | Status | Definition |
 |:-----|:-----|
 |**Investigating** | We're aware of a potential issue and are gathering more information about what's going on and the scope of impact. |
-|**Service degradation** | We've confirmed that there is an issue that may affect use of a service or feature. You might see this status if a service is performing more slowly than usual, there are intermittent interruptions, or if a feature isn't working, for example. |
+|**Service degradation** | We've confirmed that there's an issue that might affect use of a service or feature. You might see this status if a service is performing more slowly than usual, there are intermittent interruptions, or if a feature isn't working, for example. |
 |**Service interruption** | You'll see this status if we determine that an issue affects the ability for users to access the service. In this case, the issue is significant and can be reproduced consistently. |
 |**Restoring service** | The cause of the issue has been identified, we know what corrective action to take, and are in the process of bringing the service back to a healthy state. |
 |**Extended recovery** | This status indicates that corrective action is in progress to restore service to most users but will take some time to reach all the affected systems. You might also see this status if we've made a temporary fix to reduce impact while we wait to apply a permanent fix. |
@@ -147,10 +149,10 @@ For more information about our commitment to uptime, see [Transparent operations
 
 ## Language translation for the Service health page
 
-Service health posts are written in English due to the timeliness of the information we are posting but can be automatically displayed in the language specified by your personal language settings for Microsoft 365. If you set your preferred language to anything other than English, you'll see an option in the Service health page to automatically translate posts. The messages are machine translated to your preferred language, meaning that a computer did the translation.
-Before you can choose your language settings, you have to set your preferred language. No translation options are shown when your language is set to English. You can't specify a preferred language for others, each person has to change this setting for themselves.
+Service health posts are written in English due to the timeliness of the information we're posting but can be automatically displayed in the language specified by your personal language settings for Microsoft 365. If you set your preferred language to anything other than English, you'll see an option in the Service health page to automatically translate posts. The messages are machine translated to your preferred language, meaning that a computer did the translation.
+Before you can choose your language settings, you have to set your preferred language. No translation options are shown when your language is set to English. You can't specify a preferred language for others; each person has to change this setting for themselves.
 
-Before you can choose your language settings, you have to set your preferred language. No translation options are shown when your language is set to English. You can't specify a preferred language for others, each person has to change this setting for themselves.
+Before you can choose your language settings, you have to set your preferred language. No translation options are shown when your language is set to English. You can't specify a preferred language for others; each person has to change this setting for themselves.
 
 ## Set your preferred language
 
@@ -166,7 +168,7 @@ To set Service health posts to automatically machine-translate and display in yo
 
 You also can toggle between seeing details for a specific issue in English and your preferred language in the issue details page that appears after you click the title of an issue.
 
-## Related topics
+## Related articles
 
 - [Message center Preferences](../admin/manage/message-center.md?preserve-view=true&view=o365-worldwide#preferences)
 - [How to check Windows release health on admin center](/windows/deployment/update/check-release-health)

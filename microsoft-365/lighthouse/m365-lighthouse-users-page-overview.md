@@ -4,10 +4,10 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: ragovind
+ms.reviewer: aakash
 ms.date: 10/27/2023
 audience: Admin
-ms.topic: article
+ms.topic: concept-article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
@@ -15,6 +15,7 @@ ms.collection:
 - scotvorg
 - M365-subscription-management
 - Adm_O365
+- essentials-manage
 ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse                         
@@ -56,11 +57,11 @@ The Multifactor Authentication page provides detailed information on the status 
 
 :::image type="content" source="../media/m365-lighthouse-users-page-overview/users-mfa-tab.png" alt-text="Screenshot of the Multifactor Authentication page." lightbox="../media/m365-lighthouse-users-page-overview/users-mfa-tab.png":::
 
-## Password reset page
+## Self-service password reset page
 
-The Password reset page shows detailed information on the status of SSPR enablement across your tenants. It also provides insights into users who have SSPR enabled but still need to register before they can reset their password on their own.
+The Self-service password reset page shows detailed information on the status of SSPR enablement across your tenants. It also provides insights into users who have SSPR enabled but still need to register before they can reset their password on their own.
 
-:::image type="content" source="../media/m365-lighthouse-users-page-overview/users-password-reset-tab.png" alt-text="Screenshot of the Password reset page." lightbox="../media/m365-lighthouse-users-page-overview/users-password-reset-tab.png":::
+:::image type="content" source="../media/m365-lighthouse-users-page-overview/users-password-reset-tab.png" alt-text="Screenshot of the Self-service password reset page." lightbox="../media/m365-lighthouse-users-page-overview/users-password-reset-tab.png":::
 
 ## Related content
 

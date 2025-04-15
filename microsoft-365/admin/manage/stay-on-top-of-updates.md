@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 02/18/2020
+ms.date: 01/06/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -21,13 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-ms.assetid: 719f4904-cbdd-4889-a0cf-fbd7837dfecd
 description: "Learn how to stay on top of the Microsoft 365 updates using Message center, Targeted Release, Roadmap, and Blogs and Community."
 ---
 
 # Stay on top of Microsoft 365 product and feature changes
 
-With Microsoft 365, you receive new product updates and features as they become available instead of scheduled updates that are months or years apart. As a result, you and your users will routinely experience new and improved ways to do your job rather than a costly and time-consuming company-wide upgrade. The challenge with such a model is keeping up with the changes and updates. Here are a few ways that you can stay on top of the Microsoft 365 updates in your organization.
+With Microsoft 365, you receive new product updates and features as they become available instead of scheduled updates that are months or years apart. As a result, you and your users will routinely experience new and improved ways to complete your work rather than a costly and time-consuming company-wide upgrade. The challenge with such a model is keeping up with the changes and updates. Here are a few ways that you can stay on top of the Microsoft 365 updates in your organization.
 
 ## Stay on top of Microsoft 365 changes
 
@@ -40,3 +39,11 @@ With Microsoft 365, you receive new product updates and features as they become 
 
 > [!NOTE]
 > You need to be a global administrator to make changes to release preferences.
+
+## Learn about Microsoft 365 previews
+
+Microsoft 365 releases some features in public preview or private preview to customers. These features are being actively developed and may not be complete.
+
+During the ‘Private preview’ phase,  a controlled testing environment is provided that is limited to a small group of customers. Features in private preview are typically more restricted and evaluated by a select set of users. Access to private preview features is usually by invitation only, directly from the product team responsible for the feature or service. Private preview allows for more confidential testing due to the smaller group size. Microsoft provides support for private preview features. It can be seen as a focused, exclusive testing phase before broader public preview.
+
+During the ‘Public preview’ phase, Microsoft releases certain features to a broader audience for testing and feedback. These features are made available to a wider group of customers and can be tested and used in production environments. However, they may have restricted or limited functionality and may only apply to specific platforms. Public preview features are actively being developed and may not be complete. Microsoft encourages users to provide feedback during this phase, and public preview features are fully supported by Microsoft. Some features may be available only in selected geographic regions or specific cloud environments.

@@ -18,6 +18,8 @@ f1.keywords: NOCSH
 
 # Validate applications from your own Intune tenant
 
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
 Many enterprises' IT departments have mentioned compatibility concerns after applications re-formatting during their migration to Intune. Others might be suffering to validate policy deployment before they reach the end users.
 
 Test Base now provides an efficient way that allows you to validate your Intune applications in batch, or to set up even more complex automatic testing plans. This guidance shows you how to enroll the testing VM under your Intune tenant and set up your test plan with our upgraded testing service.

@@ -1,13 +1,14 @@
 ---
 title: An overview of Microsoft LTI apps
-ms.author: danismith
 author: DaniEASmith
-manager: serdars
+ms.author: danismith
+manager: jacktremper
 ms.reviewer: amitman, sovaish
 ms.date: 06/15/2021
 audience: admin
-ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.topic: concept-article
+ms.service: msteams
+ms.subservice: teams-education
 search.appverid: 
 ms.collection: 
 - M365-modern-desktop
@@ -25,10 +26,17 @@ We've worked with our LMS partners to create a suite of tools using the [Learnin
 These tools include:
 
 - [OneDrive LTI](#onedrive-lti-apps)
+- [Teams Assignments LTI](#teams-assignments-lti)
 - [Teams Meetings LTI](#teams-meetings-lti)
 - [Teams Classes LTI](#teams-classes-lti)
+- [Microsoft Reflect LTI](#microsoft-reflect-lti)
 
 For general information on managing Microsoft LTI apps, see [Manage Microsoft LTI apps for any LMS](manage-microsoft-one-lti.md).
+
+> [!IMPORTANT]
+> We're streamlining the LTI®  (Learning Tools Interoperability) experiences for education customers who may be using different LMS systems. We're simplifying onboarding and usage by consolidating the capabilities of multiple LTI® tools available today into fewer and more functional tools.
+>
+> The capabilities of the Class Teams LTI® and Meetings LTI® tools are among the first tools updated in this consolidation. Microsoft is announcing the end of support for the Class Teams LTI® and Meetings LTI® tools on 15th June, 2025, as their capabilities will be superseded by a new, unified experience. Release details for the unified experience are forthcoming.
 
 ## OneDrive LTI apps
 
@@ -69,9 +77,20 @@ For configuration steps, see:
 - [Microsoft OneDrive LTI with Schoology Learning](onedrive-lti-schoology.md).
 - [Microsoft OneDrive LTI with D2L Brightspace](onedrive-lti-brightspace.md)
 
-## Teams LTI apps
+## Teams Assignments LTI
+The Microsoft Teams Assignments LTI brings the Learning Accelerators: Reading Progress, Math Progress. Search Progress and Speaker Progress along with Microsoft Forms, Whiteboard, OneNote Pages, and all of the new generative AI features of Teams Assignments to your LTI v1.3 Advantage compliant LMS.
+The integration allows you to Connect Class Teams and add Teams Assignments right into your LMS assignments list where students can launch and complete them and sync grades and feedback automatically back to the LMS.
 
-### Teams Meetings LTI
+- [Microsoft Assignments integration with Canvas](teams-assignments-with-canvas.md).
+- [Microsoft Assignments integration with Moodle](teams-assignments-with-moodle.md).
+- [Microsoft Assignments integration with Schoology Learning](teams-assignments-with-schoology.md).
+- [Microsoft Assignments integration with Blackboard](teams-assignments-with-blackboard.md).
+- [Microsoft Assignments integration with Desire2Learn Brightspace](teams-assignments-with-brightspace.md).
+- [Microsoft Assignments integration with any LTI 1.3 compliant LMS](teams-assignments-with-other-lms.md).
+
+More LMS support coming soon! Please sign up for more information on current and future LMS integration previews at https://aka.ms/LMSPreview
+
+## Teams Meetings LTI
 
 Microsoft Teams Meetings LTI app incorporates Teams meetings into LMS courses. Educators and students can view past and upcoming meetings, schedule individual or recurring meetings, and join team meetings related to the course, all from within their LMS.
 
@@ -84,7 +103,7 @@ For configuration steps, see:
 - [Microsoft Teams Meetings with Schoology Learning](teams-classes-and-meetings-with-schoology.md).
 - [Microsoft Teams Meetings LTI with any LTI 1.3 compliant LMS](integrate-with-other-lms.md).
 
-### Teams Classes LTI
+## Teams Classes LTI
 
 The Microsoft Teams Classes LTI app helps educators and students navigate between their LMS and Teams. Users can access their class teams associated with their course within their LMS.
 
@@ -95,3 +114,17 @@ For configuration steps, see:
 - [Microsoft Teams Classes with Moodle](teams-classes-meetings-with-moodle.md).
 - [Microsoft Teams Classes with Open LMS](open-lms-teams-classes-and-meetings.md).
 - [Microsoft Teams Classes with Desire2Learn Brightspace](teams-classes-meetings-with-brightspace.md).
+
+## Microsoft Reflect LTI
+
+[Microsoft Reflect](https://reflect.microsoft.com) is a wellbeing app designed to foster connection, expression, and learning by promoting self-awareness, empathy, and emotional growth.
+
+Integrate Reflect into your LMS to create impactful check-ins, gain wellbeing insights, and build a happier, healthier learning community.
+
+For configuration steps, see:
+
+- [Microsoft Reflect with Canvas](reflect-lti-canvas.md).
+- [Microsoft Reflect with Schoology Learning](reflect-lti-schoology.md).
+- [Microsoft Reflect with Moodle](reflect-lti-moodle.md).
+- [Microsoft Reflect with D2L Brightspace](reflect-lti-brightspace.md).
+- [Microsoft Reflect with Blackboard Learn](reflect-lti-blackboard.md).

@@ -2,18 +2,18 @@
 title: "Share files and videos in Microsoft Teams and SharePoint"
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
-manager: dansimp
+ms.author: chrisda
+author: chrisda
+manager: deniseb
 ms.audience: Admin
-ms.topic: conceptual
-ms.service: microsoft-365-business
-ms.date: 09/08/2023
+ms.topic: how-to
+ms.service: microsoft-365-business-security
+ms.date: 05/31/2024
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - M365-Campaigns
 - m365solution-smb
-- tier1
+- tier2
 ms.custom:
 search.appverid:
 - BCS160
@@ -26,7 +26,7 @@ description: "Share files and videos inside your campaign with Microsoft Teams a
 
 It's important to pay attention to who can view and edit files, and where those files are stored. Files should be stored in a secure location with the proper permissions applied. With Microsoft 365 Business Premium, users can use Microsoft Teams to store and share files. Alternately, you can send a SharePoint link. Sending a link rather than an email attachment helps ensure that you know who is viewing or modifying files. Files can't be viewed or modified without permissions granted, whereas email attachments are easily forwarded.
 
-![Diagram of a Microsoft Teams window, showing Files tab and Get link on the menu.](../media/m365-democracy-teams-sharefiles.png)
+:::image type="content" source="media/m365-democracy-teams-sharefiles.png" alt-text="Diagram of a Microsoft Teams window, showing Files tab and Get link on the menu." lightbox="media/m365-democracy-teams-sharefiles.png":::
 
 With files in Microsoft Teams and SharePoint, files can also be worked on and reviewed together, even tracking changes as needed. In Teams, files are shared inside of a firm, practice, or campaign. If you need to share them externally with people outside your organization, you can add them as guests to a team or send them a secure SharePoint link.
 
@@ -48,21 +48,20 @@ Ensure your users use these methods to share files and videos securely:
 
 Members of the organization can create a team, and add guests like advertisers or financing partners to it, with the following steps.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=573823a3-19cf-4b2e-932f-7be1896b2821]
 
 To share a secure link with a guest, without using Microsoft Teams, follow these steps.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE22Yf0]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=2fc0b2a7-e106-41ec-82a0-3eb06381f679]
 
 To create and share videos, follow these steps.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrv0F]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f2ac4322-9d5e-43ec-b43e-73d80f61e039]
 
 Download an infographic in [PDF](https://go.microsoft.com/fwlink/?linkid=2079435) or [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438) to get a quick overview of ways to share your files.
 
-[![An illustration of sharing files with different users.](../media/ShareYourfiles-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2079435)
+[:::image type="content" source="media/ShareYourfiles-thumb-358x201.png" alt-text="An illustration of sharing files with different users.":::](https://go.microsoft.com/fwlink/?linkid=2079435)
 
 ## Next step
 
 Upon completion of this step, [create a communication site](create-communications-site.md) for your team.
-

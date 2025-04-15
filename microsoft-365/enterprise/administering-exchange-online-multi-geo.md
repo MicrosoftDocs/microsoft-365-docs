@@ -4,7 +4,7 @@ ms.reviewer: adwood
 ms.date: 6/29/2023
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: deniseb
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise

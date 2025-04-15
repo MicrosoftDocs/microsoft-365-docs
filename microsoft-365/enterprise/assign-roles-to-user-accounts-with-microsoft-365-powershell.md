@@ -3,16 +3,18 @@ title: "Assign roles to Microsoft 365 user accounts with PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 09/23/2020
+ms.date: 12/09/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 search.appverid: 
 - MET150
 ms.collection: 
 - scotvorg
 - Ent_O365
+- must-keep
 f1.keywords:
 - CSH
 ms.custom:
@@ -21,6 +23,7 @@ ms.custom:
   - Ent_Office_Other
   - seo-marvel-apr2020
   - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: In this article, learn how quickly and easily use PowerShell for Microsoft 365 to assign admin roles to user accounts.
 ---
@@ -32,208 +35,74 @@ description: In this article, learn how quickly and easily use PowerShell for Mi
 You can easily assign roles to user accounts by using PowerShell for Microsoft 365.
 
 >[!Note]
->Learn how to  [assign admin roles](../admin/add-users/assign-admin-roles.md) to user accounts with the Microsoft 365 admin center.
+>Learn how to [assign admin roles](../admin/add-users/assign-admin-roles.md) to user accounts with the Microsoft 365 admin center.
 >
 >For a list of additional resources, see [Manage users and groups](/admin).
 >
 
-## Use the Azure Active Directory PowerShell for Graph module
+## Assign roles to user accounts using Microsoft Graph PowerShell
 
-First, use a **Microsoft Entra DC admin**, **Cloud Application Admin**, or **Global admin** account to [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
- 
+> [!NOTE]
+> The Azure Active Directory module is being replaced by the Microsoft Graph PowerShell SDK. You can use the Microsoft Graph PowerShell SDK to access all Microsoft Graph APIs. For more information, see [Get started with the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started).
+
+First, use a **Microsoft Entra DC admin** or **Cloud Application Admin** account to [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md). The cmdlets in this article require the permission scope **RoleManagement.ReadWrite.Directory** or one of the other permissions listed in the ['List subscribedSkus' Graph API reference page](/graph/api/subscribedsku-list). Some commands in this article may require different permission scopes, in which case this will be noted in the relevant section.
+
+```powershell
+Connect-MgGraph -Scopes "RoleManagement.ReadWrite.Directory"
+```
+
 For more information, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles?).
 
 Next, identify the sign-in name of the user account that you want to add to a role (example: fredsm\@contoso.com). This is also known as the user principal name (UPN).
 
 Next, determine the name of the role. See [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference).
 
->[!Note]
->Pay attention to the notes in this article. Some role names are different for Azure Active Directory (Azure AD) PowerShell. For example, the *SharePoint Administrator* role in the Microsoft 365 admin center is *SharePoint Service Administrator* in Azure AD PowerShell.
+> [!NOTE]
+> Some role names are different for Azure Active Directory (Azure AD) PowerShell. For example, the *SharePoint Administrator* role in the Microsoft 365 admin center is *SharePoint Service Administrator* in Azure AD PowerShell.
 >
 
-Next, fill in the sign-in and role names and run these commands:
+Next, fill in the user UPN and role names and run these commands:
   
 ```powershell
-$userName="<sign-in name of the account>"
-$roleName="<admin role name>"
-$role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
+$userUPN="<user UPN>"
+$roleName="<role name>"
+$role = Get-MgDirectoryRole | Where-Object {$_.displayName -eq $roleName}
 if ($role -eq $null) {
-$roleTemplate = Get-AzureADDirectoryRoleTemplate | Where {$_.displayName -eq $roleName}
-Enable-AzureADDirectoryRole -RoleTemplateId $roleTemplate.ObjectId
-$role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
+    $roleTemplate = (Get-MgDirectoryRoleTemplate | Where-Object {$_.displayName -eq $roleName}).id
+    New-MgDirectoryRole -DisplayName $roleName -RoleTemplateId $roleTemplate
+    $role = Get-MgDirectoryRole | Where-Object {$_.displayName -eq $roleName}
 }
-Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
+$userId = (Get-MgUser -Filter "userPrincipalName eq '$userUPN'").Id
+$newRoleMember =@{
+    "@odata.id"= "https://graph.microsoft.com/v1.0/users/$userId"
+    }
+New-MgDirectoryRoleMemberByRef -DirectoryRoleId $role.Id -BodyParameter $newRoleMember
 ```
 
-Here's an example of a completed command set that assigns the SharePoint Service Administrator role to the *belindan\@contoso.com* account:
-  
+Here's an example of a completed command set that assigns the Exchange Administrator role to the *adelev\@contoso.com* account:
+
 ```powershell
-$userName="belindan@contoso.com"
-$roleName="SharePoint Service Administrator"
-$role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
+$userUPN="adelev@contoso.com"
+$roleName="Exchange Administrator"
+$role = Get-MgDirectoryRole | Where-Object {$_.displayName -eq $roleName}
 if ($role -eq $null) {
-$roleTemplate = Get-AzureADDirectoryRoleTemplate | Where {$_.displayName -eq $roleName}
-Enable-AzureADDirectoryRole -RoleTemplateId $roleTemplate.ObjectId
-$role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
+    $roleTemplate = (Get-MgDirectoryRoleTemplate | Where-Object {$_.displayName -eq $roleName}).id
+    New-MgDirectoryRole -DisplayName $roleName -RoleTemplateId $roleTemplate
+    $role = Get-MgDirectoryRole | Where-Object {$_.displayName -eq $roleName}
 }
-Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
+$userId = (Get-MgUser -Filter "userPrincipalName eq '$userUPN'").Id
+$newRoleMember =@{
+    "@odata.id"= "https://graph.microsoft.com/v1.0/users/$userId"
+    }
+New-MgDirectoryRoleMemberByRef -DirectoryRoleId $role.Id -BodyParameter $newRoleMember
 ```
 
-To display the list of user names for a specific admin role, use these commands.
+To display the list of user IDs for a specific admin role, use these commands.
 
 ```powershell
 $roleName="<role name>"
-Get-AzureADDirectoryRole | Where { $_.DisplayName -eq $roleName } | Get-AzureADDirectoryRoleMember | Ft DisplayName
-```
-
-## Use the Microsoft Azure Active Directory module for Windows PowerShell
-
-First, use a global administrator account to [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
-  
-### For a single role change
-
-The most common ways to specify the user account is by using its display name or its email name, which also known as its sign-in name or user principal name (UPN).
-
-#### Display names of user accounts
-
-If you're used to working with the display names of user accounts, determine the following information:
-  
-- The user account that you want to configure
-    
-    To specify the user account, you must determine its Display Name. To get a complete list of accounts, use this command:
-    
-  ```powershell
-  Get-MsolUser -All | Sort DisplayName | Select DisplayName | More
-  ```
-
-    This command lists the Display Name of your user accounts, sorted by the Display Name, one screen at a time. You can filter the list to a smaller set by using the **Where** cmdlet. See the following example.
-
-   >[!Note]
-   >PowerShell Core doesn't support the Microsoft Azure Active Directory module for Windows PowerShell module and cmdlets with *Msol* in their name. Run these cmdlets from Windows PowerShell.
-   >
-    
-  ```powershell
-  Get-MsolUser -All | Where DisplayName -like "John*" | Sort DisplayName | Select DisplayName | More
-  ```
-
-    This command lists only the user accounts for which the Display Name starts with "John".
-    
-- The role you want to assign
-    
-    To display the list of available admin roles that you can assign to user accounts, use this command:
-    
-  ```powershell
-  Get-MsolRole | Sort Name | Select Name,Description
-  ```
-
-After you determine the Display Name of the account and the name of the role, use these commands to assign the role to the account:
-  
-```powershell
-$dispName="<The Display Name of the account>"
-$roleName="<The admin role name you want to assign to the account>"
-Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser -All | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
-```
-
-Paste the commands into Notepad. For the *$dispName* and *$roleName* variables, replace the description text with their values. Remove the \< and > characters but keep the quotation marks. Paste the modified lines into the Microsoft Azure Active Directory module for Windows PowerShell window to run them. Alternately, you can use the Windows PowerShell Integrated Script Environment (ISE).
-  
-Here's an example of a completed command set:
-  
-```powershell
-$dispName="Scott Wallace"
-$roleName="SharePoint Service Administrator"
-Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser -All | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
-```
-
-#### Sign-in names of user accounts
-
-If you're used to working with the sign-in names or UPNs of user accounts, determine the following information:
-  
-- The user account's UPN
-    
-    If you don't know the UPN, use this command:
-    
-  ```powershell
-  Get-MsolUser -All | Sort UserPrincipalName | Select UserPrincipalName | More
-  ```
-
-    This command lists the UPN of your user accounts, sorted by UPN, one screen at a time. You can use the **Where** cmdlet to filter the list. Here's an example:
-    
-  ```powershell
-  Get-MsolUser -All | Where DisplayName -like "John*" | Sort UserPrincipalName | Select UserPrincipalName | More
-  ```
-
-    This command lists only the user accounts for which the Display Name starts with "John".
-    
-- The role you want to assign
-    
-    To display the list of available roles that you can assign to user accounts, use this command:
-    
-  ```powershell
-  Get-MsolRole | Sort Name | Select Name,Description
-  ```
-
-After you have the UPN of the account and the name of the role, use these commands to assign the role to the account:
-  
-```powershell
-$upnName="<The UPN of the account>"
-$roleName="<The role name you want to assign to the account>"
-Add-MsolRoleMember -RoleMemberEmailAddress $upnName -RoleName $roleName
-```
-
-Copy the commands and paste them into Notepad. For the **$upnName** and **$roleName** variables. Replace the description text with their values. Remove the \< and > characters but keep the quotation marks. Paste the modified lines into Microsoft Azure Active Directory module for Windows PowerShell window to run them. Alternately, you can use the Windows PowerShell ISE.
-  
-Here's an example of a completed command set:
-  
-```powershell
-$upnName="scottw@contoso.com"
-$roleName="SharePoint Service Administrator"
-Add-MsolRoleMember -RoleMemberEmailAddress $upnName -RoleName $roleName
-```
-
-### Multiple role changes
-
-For multiple role changes, determine the following information:
-  
-- Which user accounts you want to configure. You can use the methods in the previous section to gather the set of display names or UPNs.
-    
-- Which roles you want to assign to each user account. To display the list of available roles that you can assign to user accounts, use this command:
-    
-  ```powershell
-  Get-MsolRole | Sort Name | Select Name,Description
-  ```
-
-Next, create a comma-separated value (CSV) text file that has the display name or UPN and role name fields. You can do this easily in Microsoft Excel.
-
-Here's an example for display names:
-  
-```powershell
-DisplayName,RoleName
-"Belinda Newman","Billing Administrator"
-"Scott Wallace","SharePoint Service Administrator"
-```
-
-Next, fill in the location of the CSV file and run the resulting commands at the PowerShell command prompt.
-  
-```powershell
-$fileName="<path and file name of the input CSV file that has the role changes, example: C:\admin\RoleUpdates.CSV>"
-$roleChanges=Import-Csv $fileName | ForEach {Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser | Where DisplayName -eq $_.DisplayName).UserPrincipalName -RoleName $_.RoleName }
-
-```
-
-Here's an example for UPNs:
-  
-```powershell
-UserPrincipalName,RoleName
-"belindan@contoso.com","Billing Administrator"
-"scottw@contoso.com","SharePoint Service Administrator"
-```
-
-Next, fill in the location of the CSV file and run the resulting commands at the PowerShell command prompt.
-  
-```powershell
-$fileName="<path and file name of the input CSV file that has the role changes, example: C:\admin\RoleUpdates.CSV>"
-$roleChanges=Import-Csv $fileName | ForEach { Add-MsolRoleMember -RoleMemberEmailAddress $_.UserPrincipalName -RoleName $_.RoleName }
-
+Connect-MgGraph -Scopes "Directory.Read.All"
+Get-MgDirectoryRole | Where-Object { $_.DisplayName -eq $roleName } | ForEach-Object { Get-MgDirectoryRoleMember -DirectoryRoleId $_.Id }
 ```
 
 ## See also

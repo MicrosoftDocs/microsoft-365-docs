@@ -17,6 +17,8 @@ f1.keywords: NOCSH
 ---
 # Application/Test rules
 
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
 All applications or tests in Test Base need to comply with the following rules:
 
 ## Test Base folders 

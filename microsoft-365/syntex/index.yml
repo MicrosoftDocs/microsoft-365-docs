@@ -4,16 +4,15 @@ title: Microsoft Syntex documentation # < 60 chars
 summary: Microsoft Syntex is a Microsoft 365 service that uses advanced content artificial intelligence (AI) and machine learning to provide an end-to-end intelligent document processing solution for your organization.
 metadata:
   title: Microsoft Syntex documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: This page contains links to some important topics related to Microsoft Syntex features. Start here to learn about compliance for Syntex. # Required; article description that is displayed in search results. < 160 chars.
+  description: This page contains links to some important information related to Microsoft Syntex features. Start here to learn about compliance for Microsoft Syntex. # Required; article description that is displayed in search results. < 160 chars.
   services: 
   ms.service: microsoft-syntex #Required; service per approved list. service slug assigned to your service by ACOM.
-  ms.subservice: subservice
   ms.topic: landing-page # Required
-  ms.collection: enabler-strategic, m365initiative-syntex, essentials-hub-or-landing
+  ms.collection: m365initiative-syntex, essentials-navigation
   ms.custom: intro-hub-or-landing
   author: chuckedmonson #Required; your GitHub user alias, with correct capitalization.
   ms.author: chucked #Required; microsoft alias of author; optional team alias.
-  ms.date: 09/01/2023 #Required; mm/dd/yyyy format
+  ms.date: 01/06/2025 #Required; mm/dd/yyyy format
   ms.localizationpriority: medium
   titleSuffix: Microsoft Syntex
 
@@ -23,24 +22,22 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card 1
-  - title: About Syntex
+  - title: About Microsoft Syntex
     linkLists:
       - linkListType: overview
         links:
-          - text: What is Syntex?
+          - text: What is Microsoft Syntex?
             url: syntex-overview.md
-          - text: Syntex models
+          - text: Microsoft Syntex models
             url: model-types-overview.md
       - linkListType: learn
         links:
-          - text: Introduction to Syntex
-            url: /training/modules/syntex-intro
-          - text: Syntex on LinkedIn Learning
+          - text: Microsoft Syntex on LinkedIn Learning
             url: https://www.linkedin.com/learning/search?keywords=syntex&upsellOrderOrigin=default_guest_learning&trk=homepage-learning_learning-search-bar_search-submit
       - linkListType: whats-new
         links:
-          - text: View processing status
-            url: processing-status.md
+          - text: Use a custom glossary for document translation
+            url: translation-glossary.md
 
 # Card 2
   - title: Get started
@@ -49,11 +46,11 @@ landingContent:
         links:
           - text: Licensing
             url: syntex-licensing.md
-          - text: Set up Syntex
+          - text: Set up Microsoft Syntex
             url: set-up-microsoft-syntex.md
       - linkListType: how-to-guide
         links:
-          - text: Create a content center
+          - text: Set up a content center
             url: create-a-content-center.md
           - text: Create an enterprise model
             url: create-syntex-model.md
@@ -61,39 +58,33 @@ landingContent:
             url: create-local-model.md
 
 # Card 3
-  - title: Syntex services
+  - title: Document & image services
     linkLists:
       - linkListType: overview
         links:
+          - text: Autofill columns
+            url: autofill-overview.md
+          - text: Content assembly
+            url: content-assembly.md
+          - text: Document translation
+            url: translation-overview.md
+          - text: eSignature
+            url: esignature-overview.md
+          - text: Image tagging
+            url: image-tagging-overview.md
+          - text: Optical character recognition
+            url: ocr-overview.md
           - text: Prebuilt document processing
             url: prebuilt-overview.md
           - text: Structured and freeform document processing
             url: form-processing-overview.md
-          - text: Unstructured document processing
-            url: document-understanding-overview.md
-          - text: Content assembly
-            url: content-assembly.md
-          - text: Image tagging
-            url: image-tagging-overview.md
           - text: Taxonomy tagging
             url: taxonomy-tagging-overview.md
-          - text: Optical character recognition
-            url: ocr-overview.md
+          - text: Unstructured document processing
+            url: document-understanding-overview.md
 
 # Card 4
-  - title: Extensibility
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: PowerShell for Syntex
-            url: powershell-syntex-intro.md
-          - text: Syntex Model REST API
-            url: /sharepoint/dev/apis/syntex/syntex-model-rest-api
-          - text: Syntex-SharePoint Advanced Management
-            url: /sharepoint/advanced-management
-
-# Card 5
-  - title: Adoption
+  - title: Adopt Syntex
     linkLists:
       - linkListType: overview
         links:
@@ -106,8 +97,8 @@ landingContent:
           - text: Assessment tool
             url: adoption-assessment-tool.md
 
-# Card 6
-  - title: Other features
+# Card 5
+  - title: Included features
     linkLists:
       - linkListType: overview
         links:
@@ -121,9 +112,20 @@ landingContent:
             url: content-processing-overview.md
           - text: Solution accelerators
             url: site-templates.md
+          - text: Taxonomy tools
+            url: import-term-set-skos.md
 
+# Card 6
+  - title: Storage services
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Microsoft 365 Archive
+            url: /microsoft-365/archive
+          - text: Microsoft 365 Backup
+            url: /microsoft-365/backup
 
-    # Card 7
+# Card 7
   - title: Get support
     linkLists:
       - linkListType: overview
@@ -132,3 +134,26 @@ landingContent:
             url: https://techcommunity.microsoft.com/t5/sharepoint-syntex-blog/bg-p/SharePointSyntex
           - text: FAQ
             url: https://www.microsoft.com/microsoft-365/enterprise/microsoft-syntex-plan?activetab=pivot:faqtab&rtc=1
+
+# Card 8
+  - title: Extensibility
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Content model Graph API
+            url: /graph/api/resources/contentmodel?view=graph-rest-beta
+          - text: Document processing Graph API
+            url: /graph/api/resources/documentprocessingjob?view=graph-rest-beta
+          - text: Unstructured model REST API
+            url: /sharepoint/dev/apis/syntex/syntex-model-rest-api
+          - text: PowerShell for Microsoft Syntex
+            url: powershell-syntex-intro.md
+
+# Card 9
+  - title: Video services
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Video translation
+            url: https://support.microsoft.com/office/2e34ad1b-e213-47ed-a806-5cc0d88751de
+

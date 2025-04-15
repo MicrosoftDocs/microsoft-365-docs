@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: Admin
 ms.topic: tutorial
 ms.localizationpriority: medium
@@ -32,7 +32,7 @@ Previously, when users identified documents as trusted documents, their selectio
 
 The updated Trust Center logic is described in the following diagram:
 
-:::image type="content" source="../media/office-trust-center-flow.png" alt-text="A flow chart describing Trust center Logic in the Microsoft 365 Defender portal" lightbox="../media/office-trust-center-flow.png":::
+:::image type="content" source="../media/office-trust-center-flow.png" alt-text="A flow chart describing Trust center Logic in the Microsoft Defender portal" lightbox="../media/office-trust-center-flow.png":::
 
 1. A user opens an Office document that contains active content.
 

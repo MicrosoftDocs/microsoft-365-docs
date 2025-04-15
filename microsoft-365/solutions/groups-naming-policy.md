@@ -1,11 +1,11 @@
 ---
 title: Microsoft 365 Groups and Microsoft Teams naming policy
 ms.reviewer: rahulnayak
-ms.date: 02/18/2020
+ms.date: 06/26/2024
 f1.keywords: NOCSH
-ms.author: mikeplum
-author: MikePlumleyMSFT
-manager: serdars
+author: DaniEASmith
+ms.author: danismith
+manager: jtremper
 audience: Admin
 ms.topic: article
 ms.service: o365-solutions
@@ -78,7 +78,7 @@ It's recommended that you use attributes that have values filled in for all user
   > [!NOTE]
   > A period (.) or a hyphen (-) is permitted anywhere in the group name, except at the beginning or end of the name. An underscore (_) is permitted anywhere in the group name, including at the beginning or end of the name.
 
-- If you are using Viva Engage Office 365 connected groups, avoid using the following characters in your naming policy: @, \#, \[, \], \<, and \>. If these characters are in the naming policy, regular Viva Engage users can't create groups.
+- If you are using Viva Engage Office 365 connected groups, avoid using the following characters in your naming policy: @, \#, [, ], \<, and \>. If these characters are in the naming policy, regular Viva Engage users can't create groups.
 
 > [!Tip]
 > - Use short strings as suffix.

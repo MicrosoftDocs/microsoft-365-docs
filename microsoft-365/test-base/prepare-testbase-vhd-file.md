@@ -6,7 +6,7 @@ author: mansipatel-usl
 ms.author: tinachen
 manager: rshastri
 audience: Software-Vendor
-ms.topic: article
+ms.topic: how-to
 ms.date: 07/27/2023
 ms.service: test-base
 ms.localizationpriority: medium
@@ -16,6 +16,8 @@ ms.reviewer: tinachen
 f1.keywords: NOCSH
 ---
 # How to prepare a Windows VHD for Test Base
+
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
 
 Before you upload a Windows virtual machine (VM) from on-premises to Test Base, you need to prepare the virtual hard disk (VHD) first.
 Test Base only supports generation 2 VMs that use the VHD file format and have a fixed-size disk.

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 09/19/2023
+ms.date: 10/01/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -25,17 +25,17 @@ As the administrator of a Microsoft 365 organization, you can use search to find
 
 :::image type="content" source="../../media/search-bar.png" alt-text="Screenshot: Search bar in the Microsoft 365 admin center":::
 
-Search results are organized into different categories. Most of the categories are items in the admin center. For example, users, groups, shared mailboxes or domains. Other categories show you places you can navigate to, actions you can take or app level settings that you can change. And there's also a category related to documentation.
+Search results are organized into different categories. Most of the categories are items in the admin center. For example, users, groups, shared mailboxes, or domains. Other categories show you places you can navigate to, actions you can take or app level settings that you can change. And there's also a category related to documentation.
 
 The following sections describe the different areas and categories in the admin center that are searchable.
 
 ## Before you begin
 
-You need to be an administrator to search in the admin center. Search results are scoped to administrator permissions the logged in user has. For example, if SharePoint admin doesn't see an area or category in the admin center, they won't see it in search.
+You need to be an administrator to search in the admin center. Search results are scoped to administrator permissions the logged in user has. For example, if SharePoint admin doesn't see an area or category in the admin center, they can't see it in search.
 
 ## Users
 
-Users can be found by display name, last name, first name, username, primary email address, or email aliases. Select the user's name edit to edit the user’s details.
+You can find users by display name, last name, first name, username, primary email address, or email aliases. Select the user's name edit to edit the user’s details.
 
 :::image type="content" source="../../media/User-search-stock-picture-domain-blanked.png" alt-text="Screenshot: Search for a user Felix Henderson":::
 
@@ -45,7 +45,7 @@ If you select the three dots (more actions) menu next to their name, you can res
 
 **Tips to improve user search results**
 
-- Make sure you spell the users' names correctly as user searches are matched exactly against the earlier mentioned properties. For example, in the above example, Jus or Malz will work but a misspelling, like, Jostin instead of Justin will not find this user.
+- Make sure you spell the users' names correctly as user searches are matched exactly against the earlier mentioned properties. For example, in the above example, Jus or Malz will work but a misspelling, like, Jostin instead of Justin won't find this user.
 - To get an exact match, search by primary email address or username.
 
 ## Groups
@@ -60,13 +60,13 @@ Make sure you spell the group name correctly.
 
 ## Actions
 
-You can search for Actions category contains frequently used actions in M365 Admin Center. Think of actions as verb in the system. For example, you can also search "reset password" from any page and then reset one or more passwords for users. You can search for “delete a user” and delete the user from the Delete user page.
+You can search for Actions category, which contains frequently used actions in M365 Admin Center. Think of actions as verb in the system. For example, you can also search "reset password" from any page and then reset one or more passwords for users. You can search for “delete a user” and delete the user from the Delete user page.
 
 :::image type="content" source="../../media/search-for-actions-mac.png" alt-text="Screenshot: Search results showing actions you can perform in the admin center":::
 
 ## Navigation
 
-Results provides a way to quickly navigate to a specific page in the admin center. For example, searching for RBAC will take you to the Roles page for Microsoft Entra roles.
+Results provides a way to quickly navigate to a specific page in the admin center. For example, searching for RBAC takes you to the Roles page for Microsoft Entra roles.
 
 :::image type="content" source="../../media/search-for-navigation-mac.png" alt-text="Screenshot: Search results showing navigation path in the admin center":::
 
@@ -78,13 +78,13 @@ Search for supported app level settings related to your organization, the servic
 
 ## Domain
 
-You can find quick links to your domains, and then the link will take you to that domain's overview page.
+You can find quick links to your domains, and then the link takes you to that domain's overview page.
 
 :::image type="content" source="../../media/search-for-domains-mac.png" alt-text="Search results showing domains owned in the admin center.":::
 
 ## Documentation
 
-A documentation search provides relevant help documentation based on your search phrase. Click on the topic to learn more.
+A documentation search provides relevant help documentation based on your search phrase. Select the article to learn more.
 
 :::image type="content" source="../../media/search-for-docs-mac.png" alt-text="Screenshot: Search showing documentation results in the admin center":::
 
