@@ -89,7 +89,7 @@ All custom attributes are case sensitive and must start with an "extension_" pre
 
 6. On the Team settings page, define a naming pattern for your teams by choosing a prefix. The prefix is applied using the "prefix-location" format to all your teams.
 
-:::image type="content" source="media/dtas-select-team-template-prefix.png" alt-text="Choosing the Microsoft Entra attribute to define location in a organization":::
+:::image type="content" source="media/dtas-select-team-template-prefix.png" alt-text="Choosing a template for created team":::
 
 7. Choose a team template. The team template you choose defines the channel structure for all your frontline teams. [Learn more](/microsoftteams/get-started-with-teams-templates-in-the-admin-console) about team templates.
 > [!NOTE]
@@ -148,7 +148,7 @@ Create new teams for newly opened locations:
 | Team settings - team template | No updates to the team structure will occur. | All new teams will have the updated naming convention. |
 | Identify your team owners | Frontline managers that were already assigned team owner won't be removed or reprieved of their team owner role. New team owners from the new groups you selected will be added as team owners to their respective teams. | All new teams will have team owners that are part of the new groups you selected. There must be at least one team owner for every new team. |
 
-:::image type="content" source="media/dtas-edit-frontline-settings" alt-text="Edit frontline teams settings":::
+:::image type="content" source="media/dtas-edit-frontline-settings.png" alt-text="Edit frontline teams settings":::
 
 ## Get analytics on frontline teams usage
 The [Teams frontline usage report](frontline-usage-report.md) on the usage dashboard of the Manage frontline teams page gives you an overview of usage activity in Teams for each of your frontline locations. You can view data, such as the number of active users and last activity date, to quickly see how many users at your frontline locations are using Teams to communicate and collaborate.
