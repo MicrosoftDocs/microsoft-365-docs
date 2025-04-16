@@ -171,7 +171,7 @@ Users with the Organizational Messages Writer Microsoft Entra role described pre
 
 - **Recipients** for setting the groups within your organization that should receive the message.
 
-- **Schedule** for configuring the start and end dates as well as the frequency with which the system will send the message to the same user over time.
+- **Schedule** for configuring the start and end dates as well as the frequency with which the system will send the message to the same user over time. If users don't select the message, it'll reappear based on the frequency set by the admin when creating organizational messages. If they do select the message, it won't reappear for a year.
 
 - **Finish** for reviewing the message before scheduling or sending for approval by your organization’s approvers.
 

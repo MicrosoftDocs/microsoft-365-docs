@@ -107,7 +107,7 @@ If you already have sensitivity labels deployed in your organization, consider h
 Once you have enabled sensitivity labels for Teams, the next step is to create the label.
 
 To create a sensitivity label
-1. Open the [Microsoft Purview compliance portal](https://compliance.microsoft.com).
+1. Open the [Microsoft Purview portal](https://purview.microsoft.com).
 1. Under **Solutions**, expand **Information protection**.
 1. Select **Create a label**.
 1. Give the label a name. We suggest **Highly sensitive**, but you can choose a different name if that one is already in use.
@@ -133,7 +133,7 @@ To create a sensitivity label
 1. On the **Auto-labeling for schematized data assets** page, select **Next**.
 1. Select **Create label**, and then select **Done**.
 
-Once you've created the label, you need to publish it to the users who will use it. For sensitive protection, we make the label available to all users. You publish the label in the Microsoft Purview compliance portal, on the **Label policies** page under **Information protection**. If you have an existing policy that applies to all users, add this label to that policy. If you need to create a new policy, see [Publish sensitivity labels by creating a label policy](../compliance/create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy).
+Once you've created the label, you need to publish it to the users who will use it. For sensitive protection, we make the label available to all users. You publish the label in the Microsoft Purview portal, on the **Label policies** page under **Information protection**. If you have an existing policy that applies to all users, add this label to that policy. If you need to create a new policy, see [Publish sensitivity labels by creating a label policy](../compliance/create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy).
 
 ## Teams settings
 

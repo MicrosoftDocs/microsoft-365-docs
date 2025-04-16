@@ -19,7 +19,7 @@ description: Learn how to turn on Microsoft 365 Backup, set up pay-as-you-go bil
 # Set up Microsoft 365 Backup
 
 > [!TIP]
-> **Already have an Azure subscription and the [necessary admin role](#admin-roles-and-backup-management-privileges)?** Follow these three steps to quickly set up Microsoft 365 Backup in the admin center.<br><br>
+> **Already have an Azure subscription and are a SharePoint Administrator or Global Administrator?** Follow these three steps to quickly set up Microsoft 365 Backup in the admin center.<br><br>
 > [Step 1. Set up pay-as-you-go billing for Syntex services](https://admin.microsoft.com/#/orgsettings/payasyougo)<br>
 > [Step 2. Turn on Microsoft 365 Backup](https://admin.microsoft.com/#/orgsettings/payasyougo/storage)<br>
 > [Step 3. Start backing up your data by creating backup policies](https://admin.microsoft.com/#/Settings/enhancedRestore)<br>

@@ -34,7 +34,7 @@ This article teaches you how to handle ownerless Microsoft 365 groups in the Mic
 
 An Exchange administrator or Groups administrator can create a policy that automatically asks the members who are the most active in the group if they accept ownership.
 
-When a member accepts the invitation to become an owner, the action is logged in the compliance portal audit log.
+When a member accepts the invitation to become an owner, the action is logged in the Microsoft Purview portal audit log.
 
 If there's no group activity, the policy asks random group members to accept ownership.
 
@@ -129,4 +129,4 @@ Admins can see which Microsoft 365 groups remain ownerless by searching the [a
 
 - [Overview of Microsoft 365 Groups for administrators](office-365-groups.md).
 - [Compare types of groups in Microsoft 365](compare-groups.md).
-- [Search the audit log in the compliance portal](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)
+- [Search the audit log in the Microsoft Purview portal](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)

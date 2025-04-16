@@ -80,7 +80,7 @@ All users in both the source and target organizations must be licensed with the 
 
 ### Prepare the target (destination) tenant by creating the migration application and secret
 
-1. Sign in to your Microsoft Entra admin center (<https://portal.azure.com>) with your target tenant administrator credentials.
+1. Sign in to your Microsoft Entra admin center (<https://entra.microsoft.com>) with your target tenant administrator credentials.
 
    ![Azure Logon](../media/tenant-to-tenant-mailbox-move/74f26681e12df3308c7823ee7d527587.png)
 
