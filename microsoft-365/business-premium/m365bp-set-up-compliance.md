@@ -38,7 +38,7 @@ Microsoft 365 Business Premium includes Compliance Manager, which can help you g
 
 Here's how to get started:
 
-1. Go to <https://compliance.microsoft.com> and sign in.
+1. Go to <https://purview.microsoft.com> and sign in.
 
 2. In the navigation pane, choose **Compliance Manager**.
 

@@ -146,7 +146,7 @@ For more information, see [Learn about privileged access management](/microsoft-
 
 ### Security information and event management (SIEM) software for Microsoft 365 logging
 
-SIEM software run on a server performs real-time analysis of security alerts and events created by applications and network hardware. To allow your SIEM server to include Microsoft 365 security alerts and events in its analysis and reporting functions, integrate Microsoft Entra ID into your SEIM. See [Introduction to Azure Log Integration](/azure/security/security-azure-log-integration-overview).
+SIEM software run on a server performs real-time analysis of security alerts and events created by applications and network hardware. To allow your SIEM server to include Microsoft 365 security alerts and events in its analysis and reporting functions, integrate Microsoft Entra ID into your SIEM environment. See [Introduction to Azure Log Integration](/azure/security/security-azure-log-integration-overview).
 
 ## Next step
 

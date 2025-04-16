@@ -53,16 +53,9 @@ To implement the forced tunnel exception for Teams Events, the following steps s
 Clients need external, recursive DNS resolution to be available so that the following host names can be resolved to IP addresses.
 
 For the **Commercial** cloud:
-- \*.media.azure.net
 - \*.bmc.cdn.office.net
 - \*.ml.cdn.office.net
 
-**\*.media.azure.net** and **\*.bmc.cdn.office.net** are used for Teams-produced Live Events (Quick Start events and RTMP-In supported events) scheduled from the Teams client.
-
-**\*.media.azure.net**, **\*.bmc.cdn.office.net** and **\*.ml.cdn.office.net** are used for Teams Town hall events.
-
-> [!NOTE]
-> Some of these endpoints are shared with other elements outside of Teams events.
 
 For the **Government** clouds **(GCC, GCC High, DoD)**:
 - \*.cdn.ml.gcc.teams.microsoft.com
@@ -376,7 +369,7 @@ function Get-TeamsEventsConfiguration {
             break
         }
         default {
-            @('*.bmc.cdn.office.net', '*.ml.cdn.office.net', '*.media.azure.net')
+            @('*.bmc.cdn.office.net', '*.ml.cdn.office.net')
             break
         }
     }

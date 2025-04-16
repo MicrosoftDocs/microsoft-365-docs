@@ -40,13 +40,13 @@ BCS, Secure Store, and Apps all have separate instances in each satellite locati
 
 ## Compliance admin center
 
-There's one central Microsoft Purview compliance portal for a Multi-Geo _Tenant_: [Microsoft Purview admin center](https://compliance.microsoft.com/).
+There's one central Microsoft Purview portal for a Multi-Geo _Tenant_: [Microsoft Purview portal](https://purview.microsoft.com/).
 
 ## eDiscovery
 
 By default, an eDiscovery Manager or Administrator of a Multi-Geo _Tenant_ will be able to conduct eDiscovery tasks only in the _Primary Provisioned Geography_ of that _Tenant_. A member of the **Organization Management** role group or a user with the **Role Management** role must assign eDiscovery Manager permissions in the Microsoft Purview portal to allow others to perform eDiscovery tasks and assign a "Region" parameter in their applicable Compliance Security Filter to specify the _Geography_ for conducting eDiscovery as _Satellite Geography_ location. Otherwise, no eDiscovery activities will be carried out for the _Satellite Geography_ location. Only one "Region" security filter per user is supported.
 
-See [Assign eDiscovery permissions in the compliance portal](/purview/ediscovery-assign-permissions#before-you-assign-permissions) for more information. To configure the Compliance Security Filter for a Region, see [Configure Office 365 Multi-Geo eDiscovery](multi-geo-ediscovery-configuration.md).
+See [Assign eDiscovery permissions in the Microsoft Purview portal](/purview/ediscovery-assign-permissions#before-you-assign-permissions) for more information. To configure the Compliance Security Filter for a Region, see [Configure Office 365 Multi-Geo eDiscovery](multi-geo-ediscovery-configuration.md).
 
 ## Exchange Online mailboxes
 

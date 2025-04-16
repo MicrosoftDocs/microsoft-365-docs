@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: lauris
-ms.date: 10/29/2024
+ms.date: 03/29/2025
 audience: admin
 ms.topic: product-comparison
 ms.service: microsoft-syntex

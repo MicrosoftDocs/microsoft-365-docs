@@ -300,6 +300,8 @@ items:
               href: activity-reports/email-activity-ww.md
             - name: Email apps usage
               href: activity-reports/email-apps-usage-ww.md
+            - name: Enable app analytics in the Developer Portal
+              href: manage/enable-dev-analytics.md
             - name: Exchange Web Services usage
               href: activity-reports/ews-usage.md
             - name: Forms activity
@@ -358,8 +360,8 @@ items:
               href: adoption/teamwork.md
             - name: Meetings
               href: adoption/meetings-new.md
-            - name: AI assistance
-              href: adoption/ai-assistance.md
+            - name: AI adoption score
+              href: adoption/ai-adoption-score.md
             - name: Organizational Messages
               href: adoption/organizational-messages.md
             - name: Group Level Aggregates

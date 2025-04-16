@@ -144,7 +144,7 @@ On an ongoing basis, you might need to:
 
 - Add a new tenant.
 - Add new products to a tenant with an initial number of licenses.
-- Change the set of licenses for a product in a tenant to adjust for changing staff requirements.
+- Change the set of licenses for a product in a tenant to adjust for changing staff requirements. For more information, see [Buy or remove Microsoft 365 licenses for a subscription](/microsoft-365/commerce/licenses/buy-licenses).
 - Move your core data from a tenant to a new datacenter geo location.
 - Add Multi-Geo for data residency requirements.
 - Set up inter-tenant collaboration.
