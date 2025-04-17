@@ -19,7 +19,7 @@ description: "Learn about managing Scheduled prompts for Microsoft 365 Copilot, 
 
 # Manage Scheduled prompts for Microsoft 365 Copilot
 
-Scheduled prompts in Microsoft 365 Copilot allow users to automate Copilot prompts to run at set times and frequencies in Microsoft Teams, Office.com/chat, and Microsoft Outlook for the web and Desktop. As an admin, you can manage this feature for your organization.
+Scheduled prompts in Microsoft 365 Copilot allow users to automate Copilot prompts to run at set times and frequencies in Microsoft Teams, M365 Copilot on the web,  Microsoft Outlook for the web and New Microsoft Outlook Desktop. As an admin, you can manage this feature for your organization.
 
 >[!NOTE]
 > This feature is in preview. As an admin, you can opt-in to making this feature available to your organization. To learn more, see [Opt in or out of preview](#opt-in-or-out-of-preview).
@@ -28,7 +28,7 @@ Scheduled prompts in Microsoft 365 Copilot allow users to automate Copilot promp
 
 You must have both of the following licenses to manage Scheduled prompts:
 
-- Microsoft 365 Copilot license (in the Copilot subscription)
+- Microsoft 365 Copilot license 
 - Standard Microsoft Power Automate license
 
 Before you start using the Scheduled prompts feature, ensure that the Optional connected experiences setting is on in your tenant admin portal. This setting should be on by default, but you can double-check by accessing the Optional connected experiences setting at [config.office.com](https://config.office.com/).
