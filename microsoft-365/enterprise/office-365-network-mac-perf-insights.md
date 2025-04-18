@@ -25,6 +25,9 @@ Network insights are actionable issues that might affect user experience when u
 
 Insights are intended to help address issues at your network perimeters for your office locations. Each insight provides live details about a specific issue for each geographic location where users are accessing your tenant.
 
+> [!TIP]
+> Admins can now view Service health notifications in Microsoft 365 admin center for Network insights detected for their tenant. You may also receive an email if you opted to receive email notifications. The service health notification has a deep link that takes you directly to the detected network insight for your tenant. You will receive one notification per insight detected. 
+
 These are network insights that might be shown for each office location:
 
 #### 1. Your connectivity to critical Microsoft 365 domains is failing
