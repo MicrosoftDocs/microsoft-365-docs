@@ -3,7 +3,7 @@ title: Push content types to a hub
 ms.author: chucked
 author: chuckedmonson
 ms.reviewer: ssquires
-ms.date: 10/14/2024
+ms.date: 04/14/2025
 manager: jtremper
 audience: admin
 ms.topic: how-to

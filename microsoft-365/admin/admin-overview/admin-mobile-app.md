@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 05/30/2024
+ms.date: 04/02/2025
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
@@ -46,7 +46,7 @@ You can also get a link from the <a href="https://go.microsoft.com/fwlink/p/?lin
 
 ## Before you begin
 
-You must be an administrator in a Microsoft 365 organization to use the admin mobile app.
+You must be an [administrator](../add-users/about-admin-roles.md) in a Microsoft 365 organization to use the admin mobile app.
 
 ## Watch: Install and use the admin mobile app
 
@@ -59,7 +59,7 @@ Check out this video and others on our [YouTube channel](https://go.microsoft.co
 1. To get the Microsoft 365 Admin mobile app, search for  **Microsoft 365 Admin**  in the app store for your device and install it.
 2. Sign in with your administrator email address, and view the dashboard to see service health, monitor user licenses, and see messages and service requests. For more information on administrator roles, see [About administrator roles](../add-users/about-admin-roles.md).
 
-Admin mobile app capabilities
+### Admin mobile app capabilities
 
 The admin app has a lot of capabilities that allows you to manage Microsoft 365 from your mobile or tablet device when you can’t get to a computer. Here's a list of some of the tasks you can do from the app:
 
@@ -80,9 +80,9 @@ If you're an admin and you're responsible for more than one Microsoft 365 organi
 
 Below are answers to frequently asked questions.
 
-### Does the admin app support multitenant billing features?
+### Does the admin app support multi-tenant billing features?
 
-The admin mobile app is missing a few multitenant features where the authorized admin can see the products and licenses of the tenant in question along with the products and licenses of associated tenants in a single view.
+The admin mobile app is missing a few multi-tenant features where the authorized admin can see the products and licenses of the tenant in question along with the products and licenses of associated tenants in a single view.
 
 This feature isn't yet part of the Microsoft 365 Admin mobile app, but will be coming soon. For more information, admins can go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.  
   

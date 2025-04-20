@@ -3,7 +3,7 @@ title: Get started driving adoption of Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
-ms.date: 09/09/2024
+ms.date: 03/09/2025
 audience: admin
 ms.topic: get-started
 ms.service: microsoft-syntex

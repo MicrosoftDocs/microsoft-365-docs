@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 05/30/2024
+ms.date: 04/02/2025
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -115,7 +115,7 @@ These steps work for a business with tens of users. If you have hundreds or thou
 
 2. Select the option next to **Display name** to select everyone in your business. Then unselect yourself. You can't reset your own password at the same time you reset everyone else's password.
 
-3. Select **Reset password**.
+3. Select **Reset password** from the top row.
 
 4. Follow the instructions on the **Reset password** page, and select **Reset password**.  If you opted for autogenerating the passwords, the new temporary passwords are displayed.
 

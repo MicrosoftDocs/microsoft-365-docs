@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 03/07/2025
+ms.date: 04/03/2025
 audience: admin
 ms.topic: concept-article
 ms.service: microsoft-syntex
@@ -34,7 +34,7 @@ You can also use the translation feature for translating video transcripts and c
 
 | Icon          | Description   |
 | ------------- | ------------- |
-| ![Files symbol.](/office/media/icons/files-blue.png)  | **Supported file types** <br>This service supports the following file types: .csv, .docx, .htm, .html, .markdown, .md, .msg, .pdf, .pptx, .txt, and .xlsx. <br>For older file types like .doc, .odp, .ods, .rtf, .ppt, and .xls, the translated copy will be created in the modern equivalent formats: .docx, .pptx, or .xlsx. <br>SharePoint site pages aren't supported at this time. |
+| ![Files symbol.](/office/media/icons/files-blue.png)  | **Supported file types** <br>This service supports the following file types: .csv, .docx, .htm, .html, .markdown, .md, .msg, .pdf, .pptx, .txt, and .xlsx. <br>For older file types like .doc, .odp, .ods, .rtf, .ppt, and .xls, the translated copy is created in the modern equivalent formats: .docx, .pptx, or .xlsx. <br>SharePoint site pages aren't supported at this time. |
 | ![Check mark in a circle symbol.](/office/media/icons/success-blue.png)  | **Supported file sizes** <br>The maximum file size for documents to be translated is limited to 40 MB. |
 | ![Conversation symbol.](/office/media/icons/chat-room-conversation-blue.png)  | **Supported languages** <br>This service is available for [all supported languages and dialects](/azure/ai-services/translator/language-support?source=recommendations#translation). |
 | ![Security symbol.](/office/media/icons/security-blue.png)  | **Manage Lists permission** <br>To create translated file copies, a user must be a site member and have the Manage Lists permission on the document library. |
@@ -50,6 +50,16 @@ You can also use the translation feature for translating video transcripts and c
 
 ## Frequently asked questions
 
+#### What are the best practices and limitations for translating documents with various formats and content types?
+
 For answers to frequently asked questions about document translation, see [Document Translation: FAQ](/azure/ai-services/translator/document-translation/faq#document-translation-faq).
 
-For specific questions about character count, see [How does Translator count characters?](/azure/ai-services/translator/translator-faq#how-does-translator-count-characters).
+
+#### How does translation count characters and what are the implications for character consumption in various translation methods?
+
+For answers to frequently asked questions about character count, see [How does Translator count characters](/azure/ai-services/translator/translator-faq#how-does-translator-count-characters).
+
+
+#### How can I provide feedback on a translated document?
+
+Hover over the translated file in the library, select the feedback icon, and follow the prompts. For more information, see [Give feedback on translated documents](translation.md#give-feedback-on-translated-documents).

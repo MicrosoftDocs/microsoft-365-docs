@@ -3,7 +3,7 @@ title: "Hide a service on your booking page"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 07/11/2024  
+ms.date: 04/10/2025  
 ms.topic: how-to
 ms.service: bookings 
 ms.localizationpriority: medium

@@ -1,13 +1,14 @@
 ---
 title: Use Microsoft Teams Assignments with Powerschool Schoology
 description: Integrate and use the Microsoft Teams Assignments learning tool interoperability (LTI) app with Powerschool Schoology
-author: jennplatt
-ms.author: avering
+author: DaniEASmith
+ms.author: danismith
 manager: mimast
 ms.date: 09/12/2024
 audience: admin
 ms.topic: how-to
-ms.service: microsoft-365-business
+ms.service: msteams
+ms.subservice: teams-education
 ---
 # Use Microsoft Teams Assignments with PowerSchool Schoology Learning
 

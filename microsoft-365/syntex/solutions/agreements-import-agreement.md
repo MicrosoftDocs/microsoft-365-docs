@@ -59,7 +59,7 @@ To import agreements, follow these steps:
 
 8. For files that are ready to confirm, you can either preview the file by clicking on the file, or select the file and confirm the values with the Confirm button on the action bar. You can confirm multiple files in the ready to confirm status at once.
 
-9. For files that are in *Action needed* status, select the file to preview the file and provide values for mandatory fields. Once all mandatory fields are set, you can confirm the file.
+9. For files that are in **Action needed** status, select the file to preview the file and provide values for mandatory fields. Once all mandatory fields are set, you can confirm the file.
 
    > [!NOTE]
    > The values in the fields can't be changed later.

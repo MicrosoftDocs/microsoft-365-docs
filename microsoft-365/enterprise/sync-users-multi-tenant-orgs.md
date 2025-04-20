@@ -3,12 +3,13 @@ title: Synchronize users in multitenant organizations in Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 06/24/2024
+ms.date: 04/02/2025
 audience: ITPro
 ms.topic: how-to
 ms.service: microsoft-365-enterprise
 ms.subservice: multi-tenant
 ms.localizationpriority: medium
+ms.reviewer: jakeost
 search.appverid:
 - MET150
 f1.keywords:
@@ -79,7 +80,7 @@ For the most consistent profile card experience, keep in mind the following:
 
 Users synchronized to your tenant from other tenants in your multitenant organization are synchronized as [Microsoft Entra members rather than guests](/azure/active-directory/external-identities/user-properties).
 
-As members, people from other tenants have a more seamless collaboration experience. This includes access to files using [*people in your organization* sharable links](/sharepoint/shareable-links-anyone-specific-people-organization). (Consider using [sensitivity labels](/purview/sensitivity-labels) if you need to limit who can access a file with a *people in your organization* link.)
+As members, people from other tenants have a more seamless collaboration experience. This includes access to files using [*people in your organization* sharable links](/sharepoint/shareable-links-anyone-specific-people-organization). Consider using [sensitivity labels](/purview/sensitivity-labels) if you need to limit who can access a file with a *people in your organization* link.
 
 If some people from the other tenant already have guest accounts in your directory, the synchronization process doesn't change their user type to member by default. You can change these users' user type to member by [updating the user properties in Microsoft Entra ID](/azure/active-directory/fundamentals/how-to-manage-user-profile-info) or updating your cross-tenant synchronization configuration mappings in [Microsoft Entra ID](/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-configure#step-9-review-attribute-mappings) to support converting from guest to member at scale.
 
@@ -133,9 +134,9 @@ To change which users are synchronized to other tenants:
 1. Update the users that you want to sync to other tenants and then select **Save**.
 1. Select **Yes** to confirm.
 
-This procedure updates the *MTO_Sync_\<TenantID\>* synchronization configurations in Microsoft Entra ID for each tenant in your multitenant organization.
+This procedure updates the `MTO_Sync_<TenantID>` synchronization configurations in Microsoft Entra ID for each tenant in your multitenant organization.
 
-## Related topics
+## Related articles
 
 [Troubleshooting tips for multitenant organizations](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-configure#troubleshooting-tips)
 

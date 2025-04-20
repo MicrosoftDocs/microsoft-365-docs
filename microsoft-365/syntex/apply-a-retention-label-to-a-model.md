@@ -38,7 +38,7 @@ You can apply a pre-existing retention label to your model through your model se
 ## Add a retention label to an unstructured document processing model or a prebuilt model
 
 > [!Important]
-> For retention labels to be available to apply to your unstructured document processing or prebuilt models, they need to be [created](../compliance/file-plan-manager.md#create-retention-labels) and [published](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) in the Microsoft Purview compliance portal.
+> For retention labels to be available to apply to your unstructured document processing or prebuilt models, they need to be [created](../compliance/file-plan-manager.md#create-retention-labels) and [published](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) in the Microsoft Purview portal.
 
 1. From the model home page, select **Model settings**.
 
@@ -80,7 +80,7 @@ For example, all *Insurance notice* documents that your model identifies will al
 ## Add a retention label to a structured or freeform document processing model
 
 > [!Important]
-> For retention labels to be available to apply to your structured or freeform document processing models, they need to be [created](../compliance/file-plan-manager.md#create-retention-labels) and [published](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) in the Microsoft Purview compliance portal.
+> For retention labels to be available to apply to your structured or freeform document processing models, they need to be [created](../compliance/file-plan-manager.md#create-retention-labels) and [published](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) in the Microsoft Purview portal.
 
 You can either apply a retention label to a structured or freeform document processing model when you're creating a model, or apply it to an existing model.
 

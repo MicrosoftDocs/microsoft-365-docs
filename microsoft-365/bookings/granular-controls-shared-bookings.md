@@ -3,7 +3,7 @@ title: "Manage granular controls for Shared Bookings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 05/23/2024
+ms.date: 04/10/2025
 audience: Admin
 ms.topic: how-to
 ms.service: bookings

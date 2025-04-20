@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 06/24/2024
+ms.date: 04/02/2025
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
@@ -134,18 +134,16 @@ Before the partner can assign these roles to users, you must add the partner as 
 
 ## Volume licensing roles
 
-Permissions to volume licensing information in Microsoft 365 admin center are controlled by the VL Agreement Administrators in Volume Licensing Service Center (VLSC), even for VL roles that predominantly use functionality in the Microsoft 365 admin center rather than VLSC.
+Volume licensing (VL) agreement administrators access their volume licenses in Microsoft 365 admin center.
 
-- Some volume licensing (VL) functionality is now available in Microsoft 365 admin center in a new volume licensing blade visible only to volume licensing users only.
+- VL administrators don't have permissions to any other admin center information or functionality outside the VL section.
 
-- Volume licensing users see no other Microsoft 365 admin center information or functionality.
+- Global admins don't assign any VL roles and don't need to assign any admin role to a VL administrator for them to be able to access the VL agreement.
 
-- Microsoft 365 admin center Global Admins have no role in assigning VL user permissions and do not need to assign any admin permissions to VL users for them to see the volume licensing blade.
+- Global admins don't have access to VL information or functionality in admin center, unless they are assigned a VL role by a VL administrator.
 
-- Volume licensing users must first register on the Volume Licensing Service Center (VLSC), where all roles and permissions for volume licensing functions is managed.
+- For more information, see [Manage volume licensing user roles](../../commerce/licenses/manage-user-roles-vl.md) or [contact the Volume Licensing Support team](/licensing/contact-us).
 
-- For more information about volume licensing in Microsoft 365 admin center, see [Frequently Asked Questions for the Volume Licensing Service Center](/licensing/vlsc-faqs-home-page) or [contact the Volume Licensing Service team](/licensing/contact-us).
-  
 ## Related content
 
 [Assign admin roles](assign-admin-roles.md) (article)\

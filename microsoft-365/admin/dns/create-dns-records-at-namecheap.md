@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 04/27/2024
+ms.date: 04/02/2025
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -24,7 +24,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 54ae2002-b38e-43a1-82fa-3e49d78fda56
-description: "Learn to verify your domain and set up DNS records for email, Teams, and other services at Namecheap for Microsoft."
+description: "Learn to verify your domain and set up DNS records for email, Teams, and other services at Namecheap."
 ---
 
 # Connect your DNS records at Namecheap to Microsoft 365
@@ -45,9 +45,14 @@ After you add these records at Namecheap, your domain will be set up to work wit
 Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.
 
 > [!NOTE]
+> The procedures in this section assume that you have begun the process of [adding a domain](/admin/setup/add-domain#add-a-domain), but have not yet verified the domain.
+
+> [!NOTE]
 > This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like.
 
-1. To get started, go to your domains page at Namecheap by using [this link](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f). You'll be prompted to Sign in and Continue.
+1. Make sure you have added a domain in the Microsoft 365 Admin Center using the steps in [Add a domain](/admin/setup/add-domain#add-a-domain), and that the domain has not already been verified. You'll need to copy the **TXT value** from the **Add a record to verify ownership** page for use later in this procedure.
+
+1. Go to your domains page at Namecheap by using [this link](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f). You'll be prompted to Sign in and Continue.
 
      :::image type="content" source="../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png" alt-text="Sign in to Namecheap.":::
 
@@ -74,7 +79,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 
      :::image type="content" source="../../media/a5b40973-19b5-4c32-8e1b-1521aa971836.png" alt-text="Select TXT Record for the domain verification TXT record.":::
 
-1. In the boxes for the new record, type or copy and paste the values from the following table.
+1. In the boxes for the new record, type or copy and paste the values from the following table. You'll use the TXT value you copied earlier (MS=ms*XXXXXXXX*).
 
     (Choose the **TTL** value from the drop-down list.)
 
@@ -84,7 +89,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 
      :::image type="content" source="../../media/fe75c0fd-f85c-4bef-8068-edaf9779b7f1.png" alt-text="Copy and paste the values from the table for the domain verification TXT record.":::
 
-1. Select the **Save Changes** (check mark) control.
+1. Select the **Save Changes** (check mark) control, or select the **Save All Changes** button located just below the record you just added.
 
      :::image type="content" source="../../media/b48d2c67-66b5-4aa4-8e59-0c764f236fac.png" alt-text="Screenshot of the the Save Changes control for the domain verification TXT record.":::
 

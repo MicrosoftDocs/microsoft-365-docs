@@ -1,13 +1,13 @@
 ---
-title: Windows and Office 365 deployment lab kit
+title: Windows and Microsoft 365 deployment lab kit
 description: Learn about where to access the Windows and Office deployment lab kit.
 f1.keywords:
 - NOCSH
 ms.author: aaroncz
 author: cdmm12
 manager: aaroncz
-ms.reviewer: alainme
-ms.date: 03/24/2025
+ms.reviewer: hdhaliwal
+ms.date: 04/10/2025
 ms.audience: ITPro
 ms.topic: install-set-up-deploy
 ms.service: microsoft-365-enterprise
@@ -18,11 +18,11 @@ ms.collection:
 - Strat_O365_Enterprise
 ---
 
-# Windows 11 and Office 365 deployment lab kit
+# Windows 11 and Microsoft 365 deployment lab kit
 
-The deployment lab kit for Windows 11 and Office 365 can help you plan, test, and validate your deployment and management of desktops. The labs in the kit include Windows 11 Enterprise, Microsoft 365 Apps, and use of Microsoft Intune and Microsoft Configuration Manager. This kit is highly recommended for organizations preparing for desktop upgrades. As an isolated environment, the lab is also ideal for exploring deployment tool updates and testing your deployment-related automation.
+The deployment lab kit for Windows 11 and Microsoft 365 can help you plan, test, and validate your deployment and management of desktops. The labs in the kit include Windows 11 Enterprise, Microsoft 365 Apps, Microsoft Intune, and Microsoft Configuration Manager. This kit is highly recommended for organizations preparing for desktop upgrades. As an isolated environment, the lab is also ideal for exploring deployment tool updates and testing your deployment-related automation.
 
-[**Download the Windows 11 and Office 365 lab kit**](https://info.microsoft.com/ww-landing-windows-11-office-365-lab-kit.html)
+[**Download the Windows 11 and Microsoft 365 lab kit**](https://info.microsoft.com/ww-landing-windows-11-office-365-lab-kit.html)
 
 ## A complete lab environment
 

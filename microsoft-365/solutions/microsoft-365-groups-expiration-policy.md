@@ -73,7 +73,7 @@ Note that currently you can't have different policies for different groups.
 
 ## How expiry works with the retention policy
 
-If you have set up a retention policy for groups in the Microsoft Purview compliance portal, the expiration policy works seamlessly with retention policy. When a group expires, the group's mailbox conversations and files in the group site are retained in the retention container for the specific number of days defined in the retention policy. Users won't see the group, or its content, after expiration however.
+If you have set up a retention policy for groups in the Microsoft Purview portal, the expiration policy works seamlessly with retention policy. When a group expires, the group's mailbox conversations and files in the group site are retained in the retention container for the specific number of days defined in the retention policy. Users won't see the group, or its content, after expiration however.
 
 ## How and when a group owner learns if their groups are going to expire
 

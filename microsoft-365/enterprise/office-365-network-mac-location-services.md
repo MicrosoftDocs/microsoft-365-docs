@@ -3,7 +3,7 @@ title: "Microsoft 365 Network Connectivity Location Services"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 04/05/2024
+ms.date: 04/09/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -22,7 +22,9 @@ description: "Microsoft 365 Network Connectivity Location Services"
 
 # Microsoft 365 Network Connectivity Location Services
 
-The <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> now shows **Network Insights and performance recommendations**, which are live performance metrics that are collected from your Microsoft 365 tenant. These metrics can only be viewed by administrative users in your tenant. Organizational network connectivity is designed per office location through a network egress location to the Internet. Microsoft 365 client connectivity uses that route and then across the Internet to Microsoft service front door servers. Identifying office locations is key to being able to show these network insights.
+The <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> now shows **Network Insights and performance recommendations**, which are live performance metrics that are collected from your Microsoft 365 tenant. These metrics can only be viewed by administrative users in your tenant from **Health | Network Connectivity** in the Microsoft 365 Admin Center. For more information about the Network Connectivity tool, see [Network connectivity in the Microsoft 365 Admin Center](office-365-network-mac-perf-overview.md).
+
+Organizational network connectivity is designed per office location through a network egress location to the Internet. Microsoft 365 client connectivity uses that route and then across the Internet to Microsoft service front door servers. Identifying office locations is key to being able to show these network insights.
 
 ## Location in network measurements
 
@@ -30,7 +32,7 @@ An organization's administrator can opt in for location to be included in the ne
 
 ## Location in the Microsoft 365 Admin Center
 
-In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, Bing map controls are used to show where organization office locations are. The controls also show network perimeter topology for a selected office location. When an administrator adds specific address details for office locations, Bing Maps is also used to suggest addresses to make data entry easier.
+In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, you can access this information by going to **Health | Network Connectivity**. Bing map controls are used to show where organization office locations are. The controls also show network perimeter topology for a selected office location. When an administrator adds specific address details for office locations, Bing Maps is also used to suggest addresses to make data entry easier.
 
 ## Terms of Use
 

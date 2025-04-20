@@ -1,12 +1,12 @@
 ---
 title: Microsoft 365 admin center scenarios that configure Copilot
-description: Learn about some of the Microsoft 365 Copilot scenarios and some settings that IT admins can configure in the Microsoft 365 admin center. M365 Copilot scenarios in the admin center.
+description: Learn about some of the Microsoft 365 Copilot scenarios and some settings that IT admins can configure using the Copilot Control System in the Microsoft 365 admin center.
 f1.keywords:
 - NOCSH
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 02/11/2025
+ms.date: 04/09/2025
 ms.reviewer: elvaf
 audience: Admin
 ms.topic: how-to
@@ -22,7 +22,7 @@ appliesto:
 
 # Manage Microsoft 365 Copilot scenarios in the Microsoft 365 admin center
 
-When [Microsoft 365 Copilot](microsoft-365-copilot-overview.md) is available in a tenant, there are some Copilot scenarios that admins can configure in the Microsoft 365 admin center.
+When [Microsoft 365 Copilot](microsoft-365-copilot-overview.md) is available in a tenant, there are some Copilot scenarios that admins can configure using the Copilot Control System in the Microsoft 365 admin center.
 
 The admin center also gives shortcuts to other services that can affect how Copilot is used in your organization.
 
@@ -54,6 +54,7 @@ This article applies to:
   To view and make changes to the Copilot scenarios in the Microsoft 365 admin center, sign in with the following account:
 
   - Global Administrator
+  - AI Administrator
 
   To view the Copilot scenarios in the Microsoft 365 admin center, sign in with the following account:
 
@@ -76,9 +77,9 @@ This article applies to:
 
 - The Microsoft 365 admin center changes frequently. So the scenarios in this article can be different than what you see in the Microsoft 365 admin center.
 
-## Open the Copilot page
+## Open the Copilot Control System
 
-This section lists the steps to open the Copilot page in the Microsoft 365 admin center.
+This section lists the steps to open the Copilot Control System in the Microsoft 365 admin center.
 
 Make sure you sign in with the appropriate role needed for your task. In our example, we want to change the settings. So, we sign in with the Global Administrator role.
 

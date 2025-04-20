@@ -62,7 +62,7 @@ Administrators can change this behavior by selecting an option for pinning Micro
 
 :::image type="content" source="media/do-not-pin-copilot-setting.png" alt-text="Screenshot showing the option to Do not pin Copilot for users.":::
 
-When you uncheck the 'Allow users to be asked whether they want to pin it' option, Microsoft 365 Copilot Chat no longer appears in the App Launcher.
+When you uncheck the 'Allow users to be asked whether they want to pin it' option, Copilot Chat no longer appears in the app launcher. In addition to removing the app from the launcher in the Microsoft 365 Copilot web and Windows app, it blocks users from acquiring or installing it from the metaOS app store. This behavior is specific to the Microsoft 365 Copilot app only and does not apply to Teams or Outlook.
 
 Global Admins and AI Admins can make changes to Microsoft 365 Copilot Chat pinning settings at any time. Changes take up to 48 hours to go into effect.
 

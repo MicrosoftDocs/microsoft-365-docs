@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 06/21/2024
+ms.date: 04/02/2025
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -33,7 +33,7 @@ description: "Learn about using Centralized add-ins to deploy add-ins to users a
 > [!NOTE]
 > [Integrated Apps](test-and-deploy-microsoft-365-apps.md) is the recommended and most feature-rich way for most customers to centrally deploy Office add-ins to users and groups within your organization.
 
-Office Add-ins help you personalize your documents and streamline the way you access information on the web. See [Start using your Office Add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862). 
+Office Add-ins help you personalize your documents and streamline the way you access information on the web. See [Start using your Office Add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862).
 
 After a Global or Exchange admin deploys add-ins for users in an organization, they can turn add-ins off or on, edit, delete, and manage access to the add-ins.
 
@@ -79,7 +79,7 @@ Post deployment, admins can also manage user access to add-ins.
 
 4. Save the changes.
 
-## Manage add-in downloads by turning on/off the Office store across all apps (Except Outlook) 
+## Manage add-in downloads by turning on/off the Office store across all apps (Except Outlook)
 
 > [!NOTE]
 > Outlook add-in installation is managed by a [different process](/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/specify-who-can-install-and-manage-add-ins).
@@ -91,13 +91,13 @@ As an organization you may wish to manage the download of Office add-ins from th
 1. In the admin center, go to the **Settings** \> [Org settings](https://go.microsoft.com/fwlink/p/?linkid=2053743) page.
 
 2. Select **User owned apps and services**.
-    
+
 3. Check or clear the option to allow or prevent users to access the Office store.
 
 Options available in non-educational tenants:
-    
+
    ![Let user access office store settings](../../media/user-owned-apps-and-services.png)
-   
+
 Options available in educational tenants:
 
    ![Let user access office store settings for EDU](../../media/user-owned-apps-and-services-edu.png)

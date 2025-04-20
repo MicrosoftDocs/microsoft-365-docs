@@ -237,7 +237,7 @@ You can set these additional policy settings by using PowerShell cmdlets:
 
 ## Remotely wipe a mobile device
 
-If a device is lost or stolen, you can remove sensitive organizational data and help prevent access to your Microsoft 365 organization resources by doing a wipe from **Microsoft Purview compliance portal** > **Data loss prevention** > **Device management**. You can do a selective wipe to remove only organizational data or a full wipe to delete all information from a device and restore it to its factory settings.
+If a device is lost or stolen, you can remove sensitive organizational data and help prevent access to your Microsoft 365 organization resources by doing a wipe from **Microsoft Purview portal** > **Data loss prevention** > **Device management**. You can do a selective wipe to remove only organizational data or a full wipe to delete all information from a device and restore it to its factory settings.
 
 For more information, see [Wipe a mobile device in Basic Mobility and Security](wipe-mobile-device.md).
 

@@ -5,7 +5,7 @@
        "redirect_url": "/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps",
        "redirect_document_id": false
      },
-	 {
+     {
        "source_path": "microsoft-365/admin/manage/servicenow-aad-oauth-token.md",
        "redirect_url": "/microsoft-365/admin/manage/servicenow-authentication",
        "redirect_document_id": false
@@ -1686,9 +1686,9 @@
        "redirect_document_id": false
      },
      { 
-        "source_path": "microsoft-365/admin/dns/create-dns-records-at-1-1-internet.md",
-        "redirect_url": "/microsoft-365/admin/dns/create-dns-records-at-ionos-com",
-        "redirect_document_id": true
+       "source_path": "microsoft-365/admin/dns/create-dns-records-at-1-1-internet.md",
+       "redirect_url": "/microsoft-365/admin/dns/create-dns-records-at-ionos-com",
+       "redirect_document_id": true
      },
      {
        "source_path": "microsoft-365/admin/dns/change-nameservers-at-aws.md",
@@ -2129,53 +2129,53 @@
       "source_path": "microsoft-365/admin/misc/move-email-and-data-to-office-365-business-premium.md",
       "redirect_url": "https://support.microsoft.com/office/move-your-old-email-calendars-and-contacts-to-microsoft-365-2c37f0b7-2915-423c-b35e-9e03267f23dc",
       "redirect_document_id": false
-      },
-      {
+     },
+     {
       "source_path": "microsoft-365/admin/manage/servicenow-testing-the-configuration-v1.md",
       "redirect_url": "/microsoft-365/manage/servicenow-testing-the-configuration",
       "redirect_document_id": false
-      },
-      {
+     },
+     {
       "source_path": "microsoft-365/admin/manage/servicenow-troubleshooting-v1.md",
       "redirect_url": "/microsoft-365/admin/manage/servicenow-troubleshooting",
       "redirect_document_id": false
-      },
-      {   
+     },
+     {   
       "source_path": "microsoft-365/admin/manage/servicenow-basic-authentication-v1.md",
       "redirect_url": "/microsoft-365/admin/manage/servicenow-authentication",
       "redirect_document_id": false
-      },
-      {
+     },
+     {
       "source_path": "microsoft-365/admin/manage/servicenow-overview-v1.md",
       "redirect_url": "/microsoft-365/admin/manage/servicenow-overview",
       "redirect_document_id": false
-      },
-      {
+     },
+     {
       "source_path": "microsoft-365/admin/services-in-china/parity-between-azure-information-protection.md",
       "redirect_url": "/azure/information-protection/parity-between-azure-information-protection",
       "redirect_document_id": false
-      },
-      {
+     },
+     {
       "source_path": "microsoft-365/admin/email/access-email-from-a-mobile-device.md",
       "redirect_url": "/microsoft-365/admin/setup/set-up-mobile-devices",
       "redirect_document_id": false
-      },
-      {
+     },
+     {
       "source_path": "microsoft-365/admin/add-users/admin-roles-page.md",
       "redirect_url": "/microsoft-365/admin/add-users/assign-admin-roles",
       "redirect_document_id": false
-      },
-      {
+     },
+     {
       "source_path": "microsoft-365/admin/misc/account-disabled-error.md",
       "redirect_url": "/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app",
       "redirect_document_id": false
-      },
-      {
+     },
+     {
       "source_path": "microsoft-365/enterprise/identity-sync.md",
       "redirect_url": "/microsoft-365/enterprise/deploy-identity-solution-identity-model",
       "redirect_document_id": false
-      },
-      {
+     },
+     {
       "source_path": "microsoft-365/enterprise/google-groups-migration.md",
       "redirect_url": "/microsoft-365/enterprise/deploy-identity-solution-identity-model",
       "redirect_document_id": false
@@ -2210,15 +2210,20 @@
                 "redirect_url": "/microsoft-365/admin/add-users/change-user-profile-photos.md",
                 "redirect_document_id": false
                 },
-                {
-                  "source_path": "microsoft-365/admin/manage/change-contact-preferences.md",
-                  "redirect_url": "/microsoft-365/admin/manage/change-address-contact-and-more",
-                  "redirect_document_id": false
-                  },
-                  {
-                    "source_path": "microsoft-365/admin/manage/use-qr-code-download-outlook.md",
-                    "redirect_url": "https://go.microsoft.com/fwlink/?linkid=2309759",
-                    "redirect_document_id": false
-                    }
+             {
+               "source_path": "microsoft-365/admin/manage/change-contact-preferences.md",
+               "redirect_url": "/microsoft-365/admin/manage/change-address-contact-and-more",
+               "redirect_document_id": false
+             },
+             {
+               "source_path": "microsoft-365/admin/manage/use-qr-code-download-outlook.md",
+               "redirect_url": "https://go.microsoft.com/fwlink/?linkid=2309759",
+               "redirect_document_id": false
+             },
+             {
+                  "source_path": "microsoft-365/admin/adoption/ai-assistance.md",
+                  "redirect_url": "/microsoft-365/admin/adoption/ai-adoption-score",
+                  "redirect_document_id": true
+                  }
    ]
  }

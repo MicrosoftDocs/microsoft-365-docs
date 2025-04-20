@@ -36,7 +36,7 @@ As an admin, you typically assign licenses to users either manually, or by using
 
 ## Before you begin
 
-You must be a Global Administrator to create and manage auto-claim policies. For more information, see [About Microsoft 365 admin roles](../../admin/add-users/about-admin-roles.md).
+You must be a Global Administrator to manage Auto-claim policies at the organization level. User, License and Global admins can create and manage auto-claim policies in the **Auto-claim policy** tab under **Licenses**. For more information, see [About Microsoft 365 admin roles](../../admin/add-users/about-admin-roles.md).
 
 [!INCLUDE [ga-roles-limitation](../../includes/ga-roles-limitation.md)]
 

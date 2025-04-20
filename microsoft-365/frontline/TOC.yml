@@ -32,6 +32,8 @@ items:
         href: flw-setup-microsoft-365.md
       - name: Choosing between dynamic and static frontline teams
         href: frontline-team-options.md
+      - name: Deploy frontline teams with flexible membership
+        href: deploy-flexible-membership-teams-at-scale.md
       - name: Deploy frontline dynamic teams at scale
         href: deploy-dynamic-teams-at-scale.md
       - name: Deploy frontline static teams at scale with PowerShell

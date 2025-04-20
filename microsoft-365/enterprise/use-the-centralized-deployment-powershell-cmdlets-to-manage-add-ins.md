@@ -28,9 +28,14 @@ description: "Use the Centralized Deployment PowerShell cmdlets to help you depl
 
 # Use the Centralized Deployment PowerShell cmdlets to manage add-ins
 
-As a Microsoft 365 user admin, you can deploy Office Add-ins to users via the Centralized Deployment feature (see [Deploy Office Add-ins in the admin center](../admin/manage/manage-deployment-of-add-ins.md)). In addition to deploying Office Add-ins via the Microsoft 365 admin center, you can also use Microsoft PowerShell. Install the [O365 Centralized Add-In Deployment Module for Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment).
+As a Microsoft 365 global admin, you can deploy Office Add-ins to users via the Centralized Deployment feature (see [Deploy Office Add-ins in the admin center](../admin/manage/manage-deployment-of-add-ins.md). In addition to deploying Office Add-ins via the Microsoft 365 admin center, you can also use Microsoft PowerShell.
 
-After you download the module, open a regular Windows PowerShell window and run the following cmdlet:
+Open a regular Windows PowerShell window and run the following cmdlet to install the module:
+
+```powershell
+Install-Module -Name O365CentralizedAddInDeployment
+```
+Run the following cmdlet to import the module:
 
 ```powershell
  Import-Module -Name O365CentralizedAddInDeployment

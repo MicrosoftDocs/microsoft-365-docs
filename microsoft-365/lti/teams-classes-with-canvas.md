@@ -1,13 +1,14 @@
 ---
 title: Use Microsoft Teams classes with Canvas
-author: MicrosoftHeidi
-ms.author: heidip
+author: DaniEASmith
+ms.author: danismith
 manager: jacktremper
 ms.reviewer: sovaish
 ms.date: 05/26/2021
 audience: admin
 ms.topic: how-to
-ms.service: microsoft-365-business
+ms.service: msteams
+ms.subservice: teams-education
 f1.keywords:
 - CSH
 ms.collection: 
@@ -28,9 +29,9 @@ Microsoft Teams classes is a Learning Tools Interoperability (LTI) app that help
 > The current Teams classes LTI only supports syncing Canvas users with Microsoft Entra ID in a limited scope.
 >
 > - Your tenant must have a Microsoft Education license (A1 or higher).
-> - Only a single Microsoft tenant can be used for mapping users between Canvas and Microsoft.
+> - A single Microsoft tenant only can be used for mapping users between Canvas and Microsoft.
 > - Your tenant must have an exact match between a Canvas field (email, Unique User ID, SIS ID, or Integration ID) and a field in Microsoft Entra ID (User Principal Name (UPN), Primary Email Address (Mail), or Email Alias (mailNickname)).
-> - If you use SDS to create classes and groups, we recommend disabling the Team Creation Option in SDS and performing a [Group Cleanup](/schooldatasync/group-cleanup) to avoid duplication of classes. SDS can still be used to sync organization and user data.
+> - You must disable the Team Creation Option in School Data Sync (SDS) and perform a [Group Cleanup](/schooldatasync/group-cleanup) to avoid duplication of classes, if you use SDS to create classes and groups. SDS can still be used to sync organization and user data.
 
 ## Enable the Microsoft Teams app in Canvas
 

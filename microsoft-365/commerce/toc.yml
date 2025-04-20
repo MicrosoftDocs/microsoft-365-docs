@@ -66,7 +66,9 @@ items:
           href: licenses/product-keys-for-vl.md
         - name: Manage License Reservations
           href: licenses/manage-license-reservations-vl.md
-        - name: Online service activation FAQ
+        - name: Activate online services
+          href: licenses/online-service-activation-vl.md
+        - name: Online service activation for Open programs
           href: licenses/online-service-activation-faq.yml
         - name: Volume licensing invoices
           href: licenses/volume-licensing-invoices.md
