@@ -100,6 +100,7 @@ The following table contains terms and definitions that appear in your proposal 
 
 | Term | Definition |
 |---|---|
+| Accounts Payable Contact | This is the contact to which Microsoft will send invoices, statements and payment reminders. |
 | Billing account | An account used to manage your account settings, invoices, payment methods, and products. |
 | Billing profile | Information about your organization that lets you customize what items are included on your invoice, and how you pay for your invoices. The billing profile includes the billing account name, the payment methods used for the specific billing profile, contact information, invoice settings, and permissions that let you change the billing profile, pay bills, and buy products and services. |
 | Existing agreements | Any agreement that your organization already has in place with Microsoft. The agreements can include, but aren't limited to, an Enterprise Agreement, Microsoft Product & Services Agreement, or Microsoft Customer Agreement. |
@@ -118,13 +119,6 @@ After you sign in, the first thing you do is review your organization's informat
 The **Your organization** section displays the billing account associated with it. The billing account information is either pulled from an existing billing account or created for you by the Microsoft representative. If your organization is an affiliate of another organization, you also see a **Lead organization** section with the name and address of that organization.
 
 If this order is the first time your organization is establishing a commercial relationship with Microsoft, and you haven't signed an MCA, if the information under **Your organization** or **Lead organization** is incorrect, contact the representative to make changes for you. After you accept an MCA, you can review and change your organization's address and contact information on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing accounts</a> page in the Microsoft 365 admin center. If your organization name changes, open a support request to update it. [Learn how to open a support request](../admin/get-help-support.md).
-
-### Your information
-
-If you're a new customer, enter your name, email address, and phone number under **Your information**, then select **Save**. If you're an existing customer, verify that your information is correct. To make any corrections, select **Edit**, make the necessary changes, then select
-**Save**.
-
-When you're ready, select **Continue** to move to the next step.
 
 ## Step 2: Review proposal
 
