@@ -1,13 +1,14 @@
 ---
 title: Use Microsoft OneDrive LTI with Blackboard
-author: MicrosoftHeidi
-ms.author: heidip
+author: DaniEASmith
+ms.author: danismith
 manager: jacktremper
 ms.reviewer: amitman 
 ms.date: 03/02/2022
 audience: admin
 ms.topic: how-to
-ms.service: microsoft-365-business
+ms.service: msteams
+ms.subservice: teams-education
 ms.collection: 
 - m365initiative-edu
 - tier2

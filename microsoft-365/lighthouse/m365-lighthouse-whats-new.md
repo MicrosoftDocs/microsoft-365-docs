@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: ebamoh
-ms.date: 03/17/2025
+ms.date: 04/06/2025
 audience: Admin
 ms.topic: whats-new
 ms.service: microsoft-365-lighthouse
@@ -31,6 +31,22 @@ We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighth
 > Features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, you should see it soon.
 >
 > To see which new features are currently available in your partner tenant, go to the **Home** page of Microsoft 365 Lighthouse, and then either select the **What's new** link in the upper-right corner of the page or select **What's new** on the **What's new & learning resources** card.
+
+## March 2025
+
+### Updated Assigned roles page
+
+We've updated the **Assigned roles** page in Microsoft 365 Lighthouse. This page shows your assigned roles and helps you understand the actions you can perform in Lighthouse:
+
+- **Lighthouse RBAC roles:** Determine the data you can access and change within your partner tenant. Lighthouse roles don't provide access to customer data.
+
+- **Microsoft Entra roles:** Provide access to customer data based on the granular delegated administrative privileges (GDAP) relationships you set up with your customers.
+
+To view your assigned roles, in the left navigation pane in Lighthouse, select **Roles** > **Assigned roles**.
+
+[Go to the Assigned roles page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/AssignedRoles.ReactView)
+
+To learn more, see [View your assigned roles in Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md).
 
 ## February 2025
 

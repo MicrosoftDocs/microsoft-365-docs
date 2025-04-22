@@ -1,13 +1,14 @@
 ---
 title: Use Microsoft Teams meetings with Canvas
-author: MicrosoftHeidi
-ms.author: heidip
+author: DaniEASmith
+ms.author: danismith
 manager: jacktremper
 ms.reviewer: sovaish
 ms.date: 05/26/2021
 audience: admin
 ms.topic: how-to
-ms.service: microsoft-365-business
+ms.service: msteams
+ms.subservice: teams-education
 f1.keywords:
 - CSH
 ms.collection: 
@@ -30,7 +31,7 @@ Microsoft Teams meetings is a Learning Tools Interoperability (LTI) app that hel
 > - Your tenant must have a Microsoft Education license.
 > - Only a single Microsoft tenant can be used for mapping users between Canvas and Microsoft.
 > - If you plan to use the Microsoft Teams Sync feature of Canvas concurrently with Microsoft’s School Data Sync (SDS), don't include class and class roster data in your SDS sync. You can continue to use SDS to sync all other data including users, organizations, parent contacts, and demographics.
-> - You can use Teams Meetings LTI without enabling **Course Sync**. However, you won't be able to use the **Add entire class** option. You can either type or copy and paste attendees' email addresses, or add channels of existing teams to the meetings.
+> - You can use Teams Meetings LTI without enabling **Course Sync**. However, you can't use the **Add entire class** option. You can either type or copy and paste attendees' email addresses, or add channels of existing teams to the meetings.
 
 ## Microsoft Office 365 Admin
 
@@ -44,7 +45,7 @@ Before managing the Microsoft Teams integration within Instructure Canvas, it's 
 
    ![Canvas Teams Sync Updated png.](https://user-images.githubusercontent.com/87142492/128552407-78cb28e9-47cf-4026-954d-12dc3553af6f.png)
 
-4. Enter your Microsoft tenant name, login attribute, domain suffix, and Microsoft Entra lookup attribute. These fields will be used for matching users in Canvas with users in Microsoft Entra ID.
+4. Enter your Microsoft tenant name, Login attribute, domain suffix, and Microsoft Entra lookup attribute. These fields are used for matching users in Canvas with users in Microsoft Entra ID.
    - The Login Attribute is the Canvas user attribute utilized for matching.
    - The Suffix field is optional and lets you specify a domain when there isn't an exact mapping between Canvas attributes and Microsoft Entra fields. For example, if your Canvas email is 'name@example.edu' while the UPN in Microsoft Entra is 'name', you can match users by entering 'example.edu' in the suffix field.
    - The Active Directory Lookup Attribute is the field on the Microsoft side which Canvas attributes are matched to. Select in between UPN, primary email address, or the email alias.
@@ -58,7 +59,7 @@ Before managing the Microsoft Teams integration within Instructure Canvas, it's 
 7. Select **Accept**.
 
    > [!NOTE]
-   > Sync is a functionality that is managed by LMS partner and is used to sync membership at a course level to the Teams team using Microsoft graph APIs. This is primarily a functionality that an educator switches on as true at a course level. Subsequently any membership change done on LMS side for the addition or deletion of the members gets reflected using the Sync implemented by the LMS partner. Even before this process is enabled for an Educator the M365 education institute admin allows their educators to access sync using the Sync permission modal found below. These permissions are granted to the LMS partner to enable educators to sync membership between the LMS course and Teams Class teams.
+   > Sync is a functionality that is managed by LMS partner and is used to sync membership at a course level to the Teams team using Microsoft Graph APIs. This is primarily a functionality that an educator switches on as true at a course level. Subsequently any membership change done on LMS side for the addition or deletion of the members gets reflected using the Sync implemented by the LMS partner. Even before this process is enabled for an Educator the Microsoft 365 education institute admin allows their educators to access sync using the Sync permission modal found below. These permissions are granted to the LMS partner to enable educators to sync membership between the LMS course and Teams Class teams.
 
 8. Enable the Microsoft Teams sync by turning on the toggle.
 

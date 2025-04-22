@@ -203,13 +203,17 @@ Two methods have been approved for this API:
 
 The report will only contain a Privacy Setting property. For more information on Graph API, see [Use the Microsoft Graph API](/graph/use-the-api). You can use the Software Development Kit (SDK) or directly call the API using any program language with network ability. We recommend using [Graph Explorer](/graph/graph-explorer/graph-explorer-overview).
 
-It will take a few minutes for these changes to take effect on the reports in the reports dashboard. This setting also applies to the Microsoft 365 usage reports in [Microsoft Graph](/graph/api/resources/report) and [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics) and [the usage reports in Microsoft Teams Admin center](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). Showing identifiable user information is a logged event in the Microsoft Purview compliance portal audit log.
+It will take a few minutes for these changes to take effect on the reports in the reports dashboard. This setting also applies to the Microsoft 365 usage reports in [Microsoft Graph](/graph/api/resources/report) and [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics) and [the usage reports in Microsoft Teams Admin center](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). Showing identifiable user information is a logged event in the Microsoft Purview portal audit log.
 
 ## What happens to usage data when a user account is deleted?
 
 Whenever you delete a user's account, Microsoft will delete that user's usage data within 30 days. Deleted users will still be included in the Activity chart totals for the periods they were active in, but will not appear in the User Details table.
 
 However, when you select a particular day, up to 28 days from the current date, the report show the user's usage for that day in the User Details table.
+
+## How do I interpret the last activity date in user, group, or site details in the usage reports?
+
+The last activity date in user, group, or site details represents the most recent date on which a user performed any intentional activity within the app, regardless of the selected time period of the past 7/30/90/180 days.
 
 ## Related content
 

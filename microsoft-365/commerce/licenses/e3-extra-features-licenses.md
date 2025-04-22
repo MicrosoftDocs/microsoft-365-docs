@@ -20,7 +20,7 @@ ms.custom:
 - original owners paprud, marketing
 search.appverid: MET150
 description: "Learn about Microsoft 365 E3 and E5 Extra Features and how to assign licenses for it to your users."
-ms.date: 11/04/2024
+ms.date: 04/13/2025
 ---
 
 # Understand the Microsoft 365 E3 and E5 Extra Features license

@@ -16,6 +16,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - essentials-privacy
+- essentials-compliance
 ms.custom:
 - AdminSurgePortfolib
 - M365-Lighthouse                         

@@ -173,7 +173,7 @@ Follow these steps to restore data backed up for Exchange.
 
 3. The destination of restored items can be chosen from two options, then select **Next**.
 
-    a. **Create a new folder for the backups** where the content will be restored to a newly created folder named *Restored Items YYYY-DD-MM, HH:MM*.
+    a. **Create a new folder for the backups** where the content will be restored to a newly created folder named *Recovered Items YYYY-DD-MM, HH:MM*.
 
     b. **Replace mailbox items with backups** where current version of the item will be overwritten by the restored content.
 
@@ -262,11 +262,13 @@ Microsoft 365 Backup supports the backup and restoration of any site and user ac
 
     - For calendar item restore, restoring organizer copy doesn't automatically make attendee copies catch up, it only allows future updates by organizer to work for all users added on the calendar item.
 
-    - Only mailbox items that were changed, deleted to the Recoverable Items folder, or purged can be restored. Learn more about the Recoverable Items folder in Exchange Online.
+    - Only mailbox items that were changed, deleted to the Recoverable Items folder, or purged can be restored. Learn more about the [Recoverable Items folder in Exchange Online](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder).
 
     - Items moved to the Deleted Items folder won't be restored by Microsoft 365 Backup. Mailbox users can recover these items themselves by moving them back to the Inbox from the Deleted Items folder.
 
     - When choosing to "Replace mailbox items with backups," items are restored to the original location in the user's Inbox.  The only exception to this is if an item was edited while in the Deleted Items folder, as this creates a new version of an item where its original location is the Deleted Items folder.
+      
+    - If the parent folder of an item has been deleted, the item will be restored to a newly created folder named *Recovered Items YYYY-MM-DD, HH:MM*.
  
 - All
 

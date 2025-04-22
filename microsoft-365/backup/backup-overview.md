@@ -107,12 +107,14 @@ The following table summarizes expected performance for a normally distributed t
 |1     |30 minutes         |2 hours         |
 |50     |3 hours         |2.5 hours         |
 |250     |4 hours         | 3 hours        |
-|1,000     |10 hours         |4 hours         |
-|More than 1,000    |250/hour<br>Up to 3 TB/hour         |250+/hour<br>Up to 2.7 TB/hour         |
+|1,000+     |Up to 250 protection units per hour       |4 hours         |
+|1,000+|Up to 250 protection units/hour<br>Up to 2 TB/hour*         |250+ protection units/hour<br>Up to 2 TB/hour*         |
 
-<sup>*Single protection unit OneDrive and SharePoint restores using express restore points can take on average between 10 minutes and 120 minutes.</sup>
+<sup>Restore performance notes:</sup>
 
-<sup>**Exchange Online performance times based on an average sized mailbox of 26K items and a size of 10 GB.  Actual times will depend on the number and size of the items in each mailbox.  For a single mailbox, restore times typically fall in the 200 - 300 item/minute range.</sup>
+<sup>*Single protection unit OneDrive and SharePoint restores using express restore points can take on average between 10 minutes and 120 minutes, depending on site size.</sup> <sup>For mailboxes, restore times typically fall in the 200 - 300 item/minute range.</sup>
+
+<sup>*1,000+ protection unit restore speeds published here are based on internal benchmarking where SharePoint sites have an average of 12GB of stored content per site, Exchange Online mailboxes have an average of 26K items and an aggregate size of 10 GB.  Those bulk recoveries use the in-place restore option, which is typical for large scale attack recovery scenarios. Actual times will depend on the number and size of the items in each site/mailbox.</sup> 
 
 ## Pay-as-you-go billing
 

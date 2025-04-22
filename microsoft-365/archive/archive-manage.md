@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 10/28/2024
+ms.date: 04/14/2025
 ms.topic: how-to
 ms.service: microsoft-365-archive
 ms.custom: archive
@@ -86,10 +86,10 @@ You can also change the status of an archived site by using the PowerShell cmdle
 
 |Template ID  |Template  |Template name|
 |---------|---------|---------|
-|1|Team site / Document Workspace|STS#0|
-|1|Team site / Document Workspace|STS#1|
-|1|Team site / Document Workspace|STS#2|
-|1|Team site / Document Workspace|STS#3|
+|1|Team site (classic experience)|STS#0|
+|1|Blank Site|STS#1|
+|1|Document Workspace|STS#2|
+|1|Team site|STS#3|
 |68|Communication site|SITEPAGEPUBLISHING#0|
 |64|Teams site|GROUP#0|
 |32|News site|SPSNEWS#0|

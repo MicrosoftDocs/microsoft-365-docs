@@ -12,7 +12,7 @@ metadata:
   ms.collection:
   - tier2
   - m365-security
-  ms.date: 03/05/2025
+  ms.date: 04/16/2025
   ms.localizationpriority: medium
   audience: microsoft-business
   keywords: Microsoft 365 Business Premium, Microsoft 365, SMB, FAQ, frequently asked questions, answers, business
@@ -118,6 +118,14 @@ sections:
           Yes! See the [Microsoft 365 Business Premium product page](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot:overviewtab), where you can start your trial or paid subscription.
 
           To get help with setting up your trial, see [Trial user guide for Microsoft 365 Business Premium](/microsoft-365/business-premium/m365bp-trial-playbook-microsoft-business-premium).
+
+      - question: What if my Microsoft 365 Business Premium organization has some Microsoft Defender for Business servers licenses, and I want to switch all users to Microsoft 365 E5 Security?
+        answer: |
+          You need to change your server plan to Microsoft Defender for Endpoint for servers or Microsoft Defender for Servers.
+
+      - question: Is Microsoft 365 E5 Security available as an add-on for Microsoft 365 Business Premium for Nonprofits?
+        answer: |
+          Yes! Microsoft 365 E5 Security is available as an add-on for the commercial and non-profit offerings of Microsoft 365 Business Premium.
 
   - name: Deployment
     questions:

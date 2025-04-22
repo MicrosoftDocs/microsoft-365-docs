@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssathyamoort
-ms.date: 03/12/2025
+ms.date: 04/02/2025
 audience: admin
 ms.topic: article
 ms.service: microsoft-syntex
@@ -54,6 +54,7 @@ With SharePoint Agreements, you can:
 |[Get users ready](agreements-user-prereqs.md)    |Get users ready to use all of the  solution features.         |
 |[Organize and import your existing agreements](agreements-import-agreement.md)    |Add existing agreements by uploading signed documents.        |
 |[Create a template](agreements-create-template.md)    |Create and publish templates, set up fields and sections, configure workflows, and more.         |
+|[Manage expirations](agreements-expirations.md)    |Manage and plan for the expiration dates in agreements.         |
 |[Update a template](agreements-update-template.md)    |Find and edit existing templates, and publish updates to a template.         |
 |[Manage sections in a template](agreements-manage-sections.md)    |Publish a new section, insert a section into a template, edit a section, and configure section settings.         |
 |[Create an agreement](agreements-create-agreement.md)    |Create an agreement from a template in Microsoft Teams and in Microsoft Word.         |

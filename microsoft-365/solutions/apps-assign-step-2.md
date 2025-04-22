@@ -5,7 +5,7 @@ author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: how-to
-ms.date: 09/12/2024
+ms.date: 04/21/2025
 description: Step 2. Assign apps to groups.
 ms.service: o365-solutions
 ms.localizationpriority: high

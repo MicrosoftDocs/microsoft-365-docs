@@ -5,7 +5,7 @@ author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: how-to
-ms.date: 03/29/2024
+ms.date: 04/21/2025
 description: Step 2. Apply enhanced data protection
 ms.service: o365-solutions
 ms.localizationpriority: high

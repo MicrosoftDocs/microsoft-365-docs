@@ -1,13 +1,14 @@
 ---
 title: Use Microsoft Teams classes with Blackboard Learn Ultra
-author: MicrosoftHeidi
-ms.author: heidip
+author: DaniEASmith
+ms.author: danismith
 manager: jacktremper
 ms.reviewer: amitman 
 ms.date: 05/06/2021
 audience: admin
 ms.topic: how-to
-ms.service: microsoft-365-business
+ms.service: msteams
+ms.subservice: teams-education
 f1.keywords:
 - CSH
 ms.collection: 
@@ -24,9 +25,9 @@ Teamwork is at the core of every modern organization. By fostering collaboration
 Your classes might include real-time conversations, video meetings, or asynchronous interactions. You can add file sharing and cocreation experiences for your students, all in one place. Microsoft Teams classes with Learn Ultra redefine the dynamics of teaching and what effective learning means.
 
 > [!IMPORTANT]
-> Ensure that you have successfully set up the Institution Email field in your [Student Information System (SIS)](https://help.blackboard.com/Learn/Administrator/SaaS/Integrations/Student_Information_System/SIS_Planning)
+> Ensure that you have set up the Institution Email field in your [Student Information System (SIS)](https://help.blackboard.com/Learn/Administrator/SaaS/Integrations/Student_Information_System/SIS_Planning)
 >
->The Microsoft Teams classes integration relies on the institution email field in your SIS to map to the correct Microsoft Entra ID’s (Microsoft Entra ID) [User Principle Name (UPN)](/azure/active-directory/hybrid/howto-troubleshoot-upn-changes). If no institution email has been provisioned, this will default to the existing email. It’s recommended that this field be set for every user to ensure their data is synchronized correctly and that there is no conflict of email data between Microsoft Entra ID and Blackboard Learn Ultra.
+>The Microsoft Teams classes integration relies on the institution email field in your SIS to map to the correct Microsoft Entra IDs (Microsoft Entra ID) [User Principle Name (UPN)](/azure/active-directory/hybrid/howto-troubleshoot-upn-changes). If no institution email has been provisioned, this will default to the existing email. It’s recommended that this field be set for every user to ensure their data is synchronized correctly and that there is no conflict of email data between Microsoft Entra ID and Blackboard Learn Ultra.
 >
 > If you haven’t set this field appropriately in your SIS mapping, the integration will continue to work, but users might not appear in the Teams classes created, and errors could occur.
 

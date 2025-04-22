@@ -25,7 +25,8 @@ ms.custom:
 - campaignIDs-batch2
 search.appverid: MET150
 description: "Learn how to review and approve or deny license requests for products and services from users in the Microsoft 365 admin center."
-ms.date: 04/01/2025
+ms.date: 04/07/2025
+ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Manage self-service license requests in the Microsoft 365 admin center
@@ -86,9 +87,8 @@ When you return to the **Requests** list, you see the message **You're using you
    - A grayed-out option typically signifies that the security groups are either unlicensed or not yet configured.
    - For more information about how to assign licenses to a security group, see [Assign or unassign licenses to a group using the Microsoft 365 admin center](../../admin/manage/manage-group-licenses.md)
    - When multiple security groups are available, select the one to which you want to assign licenses.
-7. In the text box at the bottom of the pane, type a message (optional). The user receives an email containing either the default message or your customized message.
-8. When you're finished, select **Submit**. The details pane shows the details of the request.
-9. Close the details pane. Users receive an email that says their request was approved or denied.
+7. When you're finished, select **Submit**. The details pane shows the details of the request.
+8. Close the details pane. Users receive an email that says their request was approved or denied.
 
 ## Share a license request by email
 
@@ -101,7 +101,7 @@ If you don't have the authority within your organization to make decisions about
 5. In the **Share license request details** pane, type an email address, then select the recipient name.
    > [!NOTE]
    > You can select more than one recipient, but if the email that you entered doesn't resolve into a user name, you can't share the request.
-1. To personalize the email, select the **Include a personalized message** check box. Type a **Subject** and **Message** in the corresponding fields.
+1. To personalize the email, select the **Include a personalized message** check box, then type a **Message**.
 7. When you're finished, select **Share request**.
 
 ## Related content

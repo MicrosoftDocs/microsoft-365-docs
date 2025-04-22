@@ -1,13 +1,14 @@
 ---
 title: Integrate Microsoft Reflect LTI with Schoology Learning
-author: MicrosoftHeidi
-ms.author: heidip
+author: DaniEASmith
+ms.author: danismith
 manager: jacktremper
 ms.reviewer: eladgr
 ms.date: 11/28/2023
 audience: admin
 ms.topic: integration
-ms.service: o365-administration
+ms.service: msteams
+ms.subservice: teams-education
 ms.collection: 
 - M365-modern-desktop
 - m365initiative-edu

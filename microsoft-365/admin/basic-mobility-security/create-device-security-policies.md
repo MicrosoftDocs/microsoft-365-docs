@@ -46,7 +46,7 @@ You can use Basic Mobility and Security to create device policies that help prot
 
 Before you can start, make sure you have activated and set up Basic Mobility and Security. For instructions, see [Overview of Basic Mobility and Security](overview.md).
 
-1. From your browser, go to <https://compliance.microsoft.com/basicmobilityandsecurity>.
+1. From your browser, go to <https://purview.microsoft.com/basicmobilityandsecurity>.
 
 2. On the **Policies** tab, select **Create**.
 
@@ -66,7 +66,7 @@ The policy is pushed to the device of each user the policy applies to the next t
 
 After you’ve created a device policy, check that the policy works as you expect before you deploy it to your organization.
 
-1. From your browser, go to [https://compliance.microsoft.com/basicmobilityandsecurity](https://compliance.microsoft.com/basicmobilityandsecurity).
+1. From your browser, go to [https://purview.microsoft.com/basicmobilityandsecurity](https://purview.microsoft.com/basicmobilityandsecurity).
 2. Select **View the list of managed devices**.
 3. Check the status of user devices that have the policy applied. You want the **State** of devices to be **Managed.**
 4. You can also do a full or selective wipe on a device by clicking on **Factory reset** or **Remove company data** from **Manage** button after selecting a device. For instructions, see [Wipe a mobile device in Basic Mobility and Security](wipe-mobile-device.md).
@@ -75,7 +75,7 @@ After you’ve created a device policy, check that the policy works as you expec
 
 After you’ve created a device policy and verified that it works as expected, deploy it to your organization.
 
-1. From your browser type: [https://compliance.microsoft.com/basicmobilityandsecurity](https://compliance.microsoft.com/basicmobilityandsecurity).
+1. From your browser type: [https://purview.microsoft.com/basicmobilityandsecurity](https://purview.microsoft.com/basicmobilityandsecurity).
 2. Select the policy you want to deploy, and choose **Edit** next to **Groups applied to.**
 3. Search for a group to add and click on **Select**.
 4. Select **Close** and **Change setting.**
@@ -89,7 +89,7 @@ To help secure your organization information, you should block app access to Mic
 
 **To block app access:**
 
-1. From your browser, type [https://compliance.microsoft.com/basicmobilityandsecurity](https://compliance.microsoft.com/basicmobilityandsecurity).
+1. From your browser, type [https://purview.microsoft.com/basicmobilityandsecurity](https://purview.microsoft.com/basicmobilityandsecurity).
 1. Select **Organization Setting** tab.
 
 3. To block unsupported devices, choose **Access** under **If a device isn't supported by Basic Mobility and Security for Microsoft 365**, and then select **Save**.
@@ -100,7 +100,7 @@ To help secure your organization information, you should block app access to Mic
 
 If you want to exclude some people from conditional access checks on their mobile devices and you've created one or more security groups for those people, add the security groups here. The people in these groups won't have any policies enforced for their supported mobile devices. This is the recommended option if you no longer want to use Basic Mobility and Security in your organization.
 
-1. From your browser, type [https://compliance.microsoft.com/basicmobilityandsecurity](https://compliance.microsoft.com/basicmobilityandsecurity).
+1. From your browser, type [https://purview.microsoft.com/basicmobilityandsecurity](https://purview.microsoft.com/basicmobilityandsecurity).
 
 1. Select  **Organization Setting** tab.
 

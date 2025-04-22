@@ -1,13 +1,14 @@
 ---
 title: Integrate Microsoft Teams classes and meetings with Moodle
-author: MicrosoftHeidi
-ms.author: heidip
+author: DaniEASmith
+ms.author: danismith
 manager: jacktremper
 ms.reviewer: amitman 
 ms.date: 04/04/2022
 audience: admin
 ms.topic: integration
-ms.service: microsoft-365-business
+ms.service: msteams
+ms.subservice: teams-education
 f1.keywords:
 - CSH
 ms.collection: 

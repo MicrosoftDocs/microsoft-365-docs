@@ -5,7 +5,7 @@ author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: concept-article
-ms.date: 09/12/2024
+ms.date: 04/21/2025
 description: Understand app deployment using Microsoft Intune.
 ms.service: o365-solutions
 ms.localizationpriority: high

@@ -4,7 +4,7 @@ description: Describes the new cloud.microsoft domain for Microsoft 365 apps
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 01/13/2025
+ms.date: 04/09/2025
 ms.topic: overview
 ms.service: microsoft-365-enterprise
 ms.subservice: network
@@ -27,6 +27,8 @@ The growth of Microsoft cloud services led to the expansion of the domain space 
 
 The `.microsoft` top-level domain is exclusive to Microsoft. The new domain doesn’t have traditional suffixes such as `.com` or `.net` in the end. This is by design. `cloud.microsoft` resides under the `.microsoft` top-level domain, for which Microsoft is a registry operator and the sole registrant. This domain allows for extra security, privacy, and protection against spoofing when you interact with apps within that domain. You can trust that any website or app that ends with `cloud.microsoft` is an official Microsoft product or service.
 
+Some Microsoft 365 products that are already using the `cloud.microsoft` domain include Microsoft 365 Copilot Chat, Word, Excel, PowerPoint, Outlook, OneNote, Planner, Microsoft Loop, Mesh, Viva Engage, Viva Insights, Viva Learning, Viva Pulse, and more. These are just some examples, and over time you will see even more Microsoft 365 product experiences to be delivered from the `cloud.microsoft` domain.
+
 ## Benefits of a unified domain
 
 Consolidating authenticated user-facing Microsoft 365 experiences to a single domain benefits customer in several ways. For end users, it streamlines the overall experience by reducing sign-ins, redirects, and delays when navigating across apps. For admins, it reduces the complexity of allowlists that are required to connect to Microsoft 365 services and help your organization stay secure and productive. For all our customers – and our developers – this change helps align for better and tighter integration across the Microsoft 365 ecosystem by streamlining development and improving performance of cross-app experiences.
@@ -35,40 +37,13 @@ Consolidating authenticated user-facing Microsoft 365 experiences to a single do
 
 ## Security considerations
 
-To ensure that customers and users can treat everything under the *.cloud.microsoft domain as fully trusted, the entire domain hierarchy is isolated, purpose built, and dedicated to hosting only secure and compliant Microsoft product experiences. The domain is managed to the highest standards of domain security and reputation, and is kept free of scenarios such as third-party websites, IaaS/PaaS resources (such as file and blob storage), and hosting of active content, code or scripts that may affect the trust and integrity of products and applications residing in the domain.
+To ensure that customers and users can treat everything under the `*.cloud.microsoft` domain as fully trusted, the entire domain hierarchy is isolated, purpose built, and dedicated to hosting only secure and compliant Microsoft product experiences. The domain is managed to the highest standards of domain security and reputation, and is kept free of scenarios such as third-party websites, IaaS/PaaS resources (such as file and blob storage), and hosting of active content, code, or scripts that might affect the trust and integrity of products and applications residing in the domain.
 
-The `.microsoft` gTLD is on the HTTP Strict-Transport-Security preload list in all popular browsers, meaning that all non-secure HTTP requests are automatically upgraded to use HTTPS, and users are blocked from overriding certificate errors that could indicate an active network attacker is attempting to compromise the security of the connection. All *.cloud.microsoft subdomains inherit this protection.
+The `.microsoft` gTLD (Generic Top-Level Domain) is on the HTTP Strict-Transport-Security preload list in all popular browsers, meaning that all nonsecure HTTP requests are automatically upgraded to use HTTPS, and users are blocked from overriding certificate errors that could indicate an active network attacker is attempting to compromise the security of the connection. All `*.cloud.microsoft` subdomains inherit this protection.
 
 ## Requirements for admins
 
-Since 2023, *.cloud.microsoft and other domains related to the domain unification initiative are part of the [Microsoft 365 network guidance on domains and service endpoints](/microsoft-365/enterprise/urls-and-ip-address-ranges). Customers who use the Microsoft 365 web service API to automate network settings have been getting the network settings since then. Customers who manually update endpoints should ensure that *.cloud.microsoft and other required domains are included in their allow-list to prevent connectivity and service incidents for their users. 
-
-## Microsoft product and service URLs
-| Service | URL |
-|:-----|:-----|
-|Microsoft 365 |[m365.cloud.microsoft](https://m365.cloud.microsoft)|
-|Microsoft 365 Copilot Chat |[m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat)|
-|Microsoft Excel | [excel.cloud.microsoft](https://excel.cloud.microsoft)|
-|Microsoft PowerPoint | [powerpoint.cloud.microsoft](https://powerpoint.cloud.microsoft)|
-|Microsoft Word | [word.cloud.microsoft](https://word.cloud.microsoft)|
-|Microsoft Outlook | [outlook.cloud.microsoft](https://outlook.cloud.microsoft)|
-|Microsoft 365 Service Health Status Page |[status.cloud.microsoft](https://status.cloud.microsoft)|
-|Microsoft Admin Center| [admin.cloud.microsoft](https://admin.cloud.microsoft)|
-|Microsoft Loop | [loop.cloud.microsoft](https://loop.cloud.microsoft)|
-|Microsoft Mesh | [mesh.cloud.microsoft](https://mesh.cloud.microsoft)|
-|Microsoft OneNote | [onenote.cloud.microsoft](https://onenote.cloud.microsoft)|
-|Microsoft Places | [places.cloud.microsoft](https://places.cloud.microsoft)|
-|Microsoft Planner | [planner.cloud.microsoft](https://planner.cloud.microsoft)|
-|Microsoft Setup | [setup.cloud.microsoft](https://setup.cloud.microsoft)|
-|Microsoft Sway | [sway.cloud.microsoft](https://sway.cloud.microsoft)|
-|Microsoft Viva Engage | [engage.cloud.microsoft](https://engage.cloud.microsoft)|
-|Microsoft Viva Goals | [goals.cloud.microsoft](https://goals.cloud.microsoft)|
-|Microsoft Viva Home | [viva.cloud.microsoft](https://viva.cloud.microsoft)|
-|Microsoft Viva Insights | [insights.cloud.microsoft](https://insights.cloud.microsoft)|
-|Microsoft Viva Learning | [learning.cloud.microsoft](https://learning.cloud.microsoft)|
-|Microsoft Viva Pulse | [pulse.cloud.microsoft](https://pulse.cloud.microsoft)|
-
-The above list provides examples of individual URLs for applications that users can use through the web browser. It does not represent the full set of endpoints required for functionality of these applications and should not be used to granularly control access through network allow-lists and other network settings. To configure network settings, customers should follow Microsoft official network guidance.
+Since 2023, `*.cloud.microsoft` and other domains related to the domain unification initiative are part of the [Microsoft 365 network guidance on domains and service endpoints](/microsoft-365/enterprise/urls-and-ip-address-ranges). Customers who use the Microsoft 365 web service API to automate network settings have been getting the network settings since then. Customers who manually update endpoints should ensure that `*.cloud.microsoft` and other required domains are included in their allowlist to prevent connectivity and service incidents for their users. 
 
 ## See also
 

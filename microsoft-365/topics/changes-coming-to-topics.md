@@ -1,5 +1,5 @@
 ---
-ms.date: 02/20/2024
+ms.date: 04/18/2025
 title: Changes coming to Topics
 ms.author: daisyfeller
 author: daisyfell
@@ -19,9 +19,9 @@ description: Learn about changes coming to Topics.
 
 # Changes coming to Topics
 
-## Viva Topics to be retired on February 22, 2025
+## Viva Topics has been retired as of February 22, 2025
 
-Viva Topics will be retired on February 22, 2025 and Microsoft won't invest in new feature development for Viva Topics going forward from February 22, 2024.
+Viva Topics has been retired as of February 22, 2025.
 
 With the generational shift in AI technology underway, we're now focusing our strategy and efforts on building new AI-powered knowledge management experiences in [Microsoft Copilot](https://www.microsoft.com/microsoft-365/enterprise/copilot-for-microsoft-365) and other parts of Microsoft 365. To help customers plan, please see [new guidance on the Managing Knowledge page](https://aka.ms/M365KnowledgeManagement) on the Microsoft 365 Adoption Center.
 

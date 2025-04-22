@@ -47,9 +47,6 @@ However, directory synchronization requires planning and preparation to ensure t
 
 Follow these steps in order for the best results.
 
-> [!NOTE]
-> Non-ASCII characters don't sync for any attributes on the AD DS user account.
-
 ## AD DS Preparation
 
 To help ensure a seamless transition to Microsoft 365 by using synchronization, you must prepare your AD DS forest before you begin your Microsoft 365 directory synchronization deployment.

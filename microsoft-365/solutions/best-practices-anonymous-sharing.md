@@ -110,7 +110,7 @@ You can use [Microsoft Purview Data Loss Prevention (DLP)](/purview/dlp-learn-ab
 
 To create a DLP rule:
 
-1. In the [Microsoft Purview admin center](https://compliance.microsoft.com/), expand **Data loss prevention**, and select **Policies**.
+1. In the [Microsoft Purview portal](https://purview.microsoft.com/), expand **Data loss prevention**, and select **Policies**.
 1. Select **Create policy**.
 1. Choose **Custom**, select **Custom policy,** and then select **Next**.
 1. Type a name for the policy and select **Next**.
@@ -137,11 +137,11 @@ You can also use the *Safe Documents* feature to scan opened Office documents in
 
 ## Add copyright information to your files
 
-If you use sensitivity labels in the Microsoft Purview admin center, you can configure *content marking* in your labels to add a watermark or a header or footer automatically to your organization's Office documents. In this way, you can make sure that shared files contain copyright or other ownership information.
+If you use sensitivity labels in the Microsoft Purview portal, you can configure *content marking* in your labels to add a watermark or a header or footer automatically to your organization's Office documents. In this way, you can make sure that shared files contain copyright or other ownership information.
 
 To add a footer to a labeled file
 
-1. Open the [Microsoft Purview admin center](https://compliance.microsoft.com).
+1. Open the [Microsoft Purview portal](https://purview.microsoft.com).
 1. In the left navigation, under **Solutions**, expand **Information protection** and select **Labels**.
 1. Select the label where you want to add content marking, and then select **Edit label**.
 1. Select **Next** to reach the **Choose protection settings for labeled items** page, and then select **Apply content marking**. Select **Next**

@@ -5,7 +5,7 @@ author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
-ms.date: 05/17/2024
+ms.date: 04/21/2025
 description: Purchase and add managed apps for your managed environment.
 ms.service: o365-solutions
 ms.localizationpriority: high

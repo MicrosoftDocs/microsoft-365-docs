@@ -137,7 +137,7 @@ sections:
               
           ::: moniker range="o365-worldwide"
           
-          You cannot change the name of your initial *onmicrosoft.com* domain. 
+          For information about adding or replacing an onmicrosoft.com domain, see [Add or replace your onmicrosoft.com domain](/admin/setup/add-or-replace-your-onmicrosoftcom-domain).
           
           ::: moniker-end
           
@@ -148,8 +148,8 @@ sections:
           ::: moniker-end
           
           > [!NOTE]
-          > Changing the default domain does not impact user credentials or their access to applications or services. Changing the domain that a user is associated with impacts mail, online storage, and login credentials.
-          
+          > Changing the default domain affects new accounts only. This change does not impact user credentials or their access to applications or services. Removing or changing a domain on an account can impact mail, online storage, and login credentials.
+
       - question: Can I add custom subdomains or multiple domains to Microsoft 365?
         answer: |
           ::: moniker range="o365-worldwide"

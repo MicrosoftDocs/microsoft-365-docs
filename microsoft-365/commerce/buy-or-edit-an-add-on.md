@@ -26,14 +26,14 @@ ms.custom:
 - GAUpdates
 - campaignIDs-batch2
 description: "Learn how to buy and manage add-ons for your Microsoft 365 for business subscription."
-ms.date: 09/30/2024
+ms.date: 04/06/2025
 ---
 
 # Buy and manage add-ons in the Microsoft 365 admin center
 
 Many Microsoft business plans have add-ons that you can buy for your subscriptions. Add-ons provide more features to enhance your subscription's capabilities. You buy and manage add-ons in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
-This article only applies to customers with a Microsoft Online Subscription Agreement (MOSA) billing account type. If you have a Microsoft Customer Agreement (MCA) billing account type, you can buy add-ons the same as any other product on the **Products and services** page. To learn how to do this, see [Buy a different subscription](try-or-buy-microsoft-365.md#buy-a-different-subscription).  [Find out what type of billing account you have.](manage-billing-accounts.md#view-my-billing-accounts).
+This article only applies to customers with a Microsoft Online Subscription Agreement (MOSA) billing account type. If you have a Microsoft Customer Agreement (MCA) billing account type, you can buy add-ons the same as any other product on the **Products and services** page. To learn how to do this, see [Buy a different subscription](try-or-buy-microsoft-365.md#buy-a-different-subscription).  [Find out what type of billing account you have](manage-billing-accounts.md#view-my-billing-accounts).
 
 ## Before you begin
 
@@ -54,8 +54,8 @@ There are two types of add-ons:
 When you look for an add-on to buy, the list only includes add-ons that are available to you. This list is based on your active subscriptions, and any other add-ons that you already have. If an add-on isn't on the list, it's not available to buy.
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center.</a>
-    - If you’re using the **Simplified view**, select **Billing**.
-    - If you’re using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+    - If you're using the **Simplified view**, select **Billing**.
+    - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. Select a subscription that you want to buy an add-on for.
 3. On the subscription details page, in the **Add-ons** section, select **Find more add-ons in Purchase services**.
 4. Find the add-on that you want to buy, then select **Details**.
@@ -71,9 +71,10 @@ You manage a standalone add-on subscription the same way that you manage any oth
 To manage a traditional add-on, you go to the subscription that contains it and make your changes there. Use the following steps to manage a traditional add-on.
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center.</a>
-    - If you’re using the **Simplified view**, select **Billing**.
-    - If you’re using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-2. Select the subscription that  contains the add-on that you want to update.
+    - If you're using the **Simplified view**, select **Billing**.
+    - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+1. Select the subscription that contains the add-on that you want to update.
+
 3. On the subscription details page, the **Add-ons** section lists the add-ons that you bought. Select **Manage add-ons**.
 4. In the **Manage add-ons** pane, from the **Add-on** drop-down list, select the add-on that you want to change.
 5. Make the changes that you want for the add-on, then select **Save**.

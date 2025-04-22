@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sharonyam
-ms.date: 11/01/2024
+ms.date: 04/01/2025
 ms.topic: article
 ms.service: microsoft-365-archive
 ms.custom: archive
@@ -18,9 +18,9 @@ description: Learn about Microsoft 365 Archive for Education, including tenant e
 
 # Education offering for Microsoft 365 Archive
 
-This article provides an overview of Microsoft 365 Archive for Education, including tenant eligibility, pricing model, and billing scenarios. 
+This article provides an overview of Microsoft 365 Archive for Education, including tenant eligibility, pricing model, and billing scenarios.
 
-## Pooled storage eligibility 
+## Pooled storage eligibility
 
 Education customers that are subject to the pooled storage limit are eligible for the Microsoft 365 Archive for Education offering. If your tenant has assigned most (greater than 50%) EDU licenses compared to non-EDU licenses, or if your tenant has purchased more EDU licenses than non-EDU licenses, then the tenant is managed as an EDU tenant and is subject to Education Pooled Storage. For more information on pooled storage, see [Education Pooled Storage limits](/office365/servicedescriptions/office-365-platform-service-description/office-365-education#education-pooled-storage-limits).
 

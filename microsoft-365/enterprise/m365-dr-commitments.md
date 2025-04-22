@@ -79,7 +79,7 @@ The following customer data is stored in the _Local Region Geography_:
 The following customer data is stored at rest in the _Local Region Geography_:
 
 - DLP Admin Configuration
-- DLP policies in Compliance Portal
+- DLP policies in Microsoft Purview portal
 - DLP monitored activities
 - Violation history
 - Activity Explorer and Microsoft 365 unified audit logs

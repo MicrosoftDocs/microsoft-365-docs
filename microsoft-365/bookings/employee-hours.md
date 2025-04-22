@@ -3,7 +3,7 @@ title: "Employee working hours - Microsoft Bookings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 05/24/2024
+ms.date: 04/10/2025
 audience: Admin
 ms.topic: how-to
 ms.service: bookings

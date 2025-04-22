@@ -3,7 +3,7 @@ title: How to check Microsoft 365 service health
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 06/27/2024
+ms.date: 04/01/2025
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-enterprise

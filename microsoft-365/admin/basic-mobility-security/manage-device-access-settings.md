@@ -35,7 +35,7 @@ Use these steps:
 
 1. Sign in to Microsoft 365 with a [Compliance administrator](/entra/identity/role-based-access-control/permissions-reference) account.
 
-2. In your browser, type: <https://compliance.microsoft.com/basicmobilityandsecurity>.
+2. In your browser, type: <https://purview.microsoft.com/basicmobilityandsecurity>.
 
 3. Go to **Organization Setting** tab.
 
@@ -57,7 +57,7 @@ Here's a breakdown for the device details available to you.
 :::image type="content" source="../../media/basic-mobility-security/bms-7-powershell-parameters.png" alt-text="Basic Mobility and Security PowerShell parameters.":::
 
 > [!NOTE]
-> The commands and scripts that follow also return details about any devices managed by [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune).
+> The commands and scripts that follow also return details about any devices managed by [Microsoft Intune](https://www.microsoft.com/security/business/Microsoft-Intune).
 
 Here are a few things you need to set up to run the commands and scripts that follow:
 

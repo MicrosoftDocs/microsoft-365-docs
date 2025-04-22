@@ -101,8 +101,6 @@ items:
               href: office-365-network-mac-perf-score.md
             - name: Microsoft 365 Network Insights
               href: office-365-network-mac-perf-insights.md
-            - name: Microsoft 365 Network Provider Information
-              href: office-365-network-mac-perf-nppux.md
             - name: Microsoft 365 Network Provider Assessments
               href: office-365-network-mac-perf-nppdata.md
             - name: Microsoft 365 Network Provider Details

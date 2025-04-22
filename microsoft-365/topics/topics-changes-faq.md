@@ -1,5 +1,5 @@
 ---
-ms.date: 02/20/2024
+ms.date: 04/18/2025
 title: Frequently asked questions about changes coming to Topics
 ms.author: daisyfeller
 author: daisyfell

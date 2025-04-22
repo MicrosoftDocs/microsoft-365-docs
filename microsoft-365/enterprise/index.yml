@@ -18,7 +18,7 @@ metadata:
   - essentials-navigation
   author: kelleyvice-msft #Required; your GitHub user alias, with correct capitalization.
   ms.author: kvice #Required; microsoft alias of author; optional team alias.
-  ms.date: 02/08/2024 #Required; mm/dd/yyyy format.
+  ms.date: 04/01/2025 #Required; mm/dd/yyyy format.
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -50,9 +50,12 @@ conceptualContent:
         - url: deploy-identity-solution-overview.md
           itemType: how-to-guide
           text: Identity infrastructure
+        - url: microsoft-365-networking-overview.md
+          itemType: concept
+          text: Network connectivity overview
         - url: /windows/deployment/
           itemType: get-started
-          text: Windows 10 Enterprise
+          text: Windows 11 Enterprise
         - url: /deployoffice/plan-microsoft-365-apps
           itemType: deploy
           text: Microsoft 365 Apps for enterprise
@@ -62,9 +65,12 @@ conceptualContent:
     # Card
     - title: Manage Microsoft 365 for enterprise
       links:
+        - url: managing-office-365-endpoints.md
+          itemType: how-to-guide
+          text: Managing Microsoft 365 endpoints
         - url: /windows/deployment/update/
           itemType: how-to-guide
-          text: Windows 10 Enterprise
+          text: Windows 11 Enterprise
         - url: /deployoffice/overview-update-channels
           itemType: concept
           text: Microsoft 365 Apps for enterprise

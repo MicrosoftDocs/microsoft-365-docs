@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 06/13/2024
+ms.date: 04/04/2025
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -25,7 +25,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
-description: "Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at Cloudflare for Microsoft."
+description: "Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at Cloudflare."
 ---
 
 # Connect your DNS records at Cloudflare to Microsoft 365
@@ -40,7 +40,7 @@ If Cloudflare is your DNS hosting provider, follow the steps in this article to 
 
 You have two options for setting up DNS records for your domain:
 
-- [**Use Domain Connect**](#use-domain-connect-to-verify-and-set-up-your-domain) If you haven't set up your domain with another email service provider, use the Domain Connect steps to automatically verify and set up your new domain to use with Microsoft 365.
+- [**Use Domain Connect**](#use-domain-connect-to-verify-and-set-up-your-domain) If you haven't set up your domain with another email service provider, use the **Domain Connect** steps to automatically verify and set up your new domain to use with Microsoft 365.
 
     OR
 
@@ -104,21 +104,19 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 > [!NOTE]
 > This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like.
 
+1. Make sure you have added a domain in the Microsoft 365 Admin Center using the steps in [Add a domain](/admin/setup/add-domain#add-a-domain), and that the domain has not already been verified. You'll need to copy the **TXT value** from the **Add a record to verify ownership** page for use later in this procedure.
+
 1. To get started, go to your domains page at Cloudflare by using [this link](https://www.cloudflare.com/a/login). You'll be prompted to log in first.
 
-1. On the Home page, select the domain that you want to update.
+1. On the Account Home page, find the domain that you want to update, select the three dots (**...**) at the right and select **Configure DNS** from the drop-down menu.
 
     :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-1.png" alt-text="Select the domain you want to update.":::
-
-1. On the Overview page for your domain, select **DNS** from the navigation bar.
-
-    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-2.png" alt-text="Select DNS.":::
 
 1. On the DNS management page, select **+Add record**.
 
    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-add-record.png" alt-text="Screenshot of where you select Add record to add a domain verification TXT record.":::
 
-1. Select the TXT type from the drop-down list, and type or copy and paste the values from this table.
+1. Select the TXT type from the drop-down list, and type or copy and paste the values from this table. You'll use the TXT value (MS=ms*XXXXXXXX*) that you copied earlier.
 
     |Type|Name|TTL|Content|
     |---|---|---|:----|
@@ -149,13 +147,9 @@ To verify the record in Microsoft 365:
 
 1. To get started, go to your domains page at Cloudflare by using [this link](https://www.cloudflare.com/a/login). You'll be prompted to log in first.
 
-1. On the Home page, select the domain that you want to update.
+1. On the Account Home page, find the domain that you want to update, select the three dots (**...**) at the right and select **Configure DNS** from the drop-down menu.
 
    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-1.png" alt-text="Select the domain you want to update.":::
-
-1. On the Overview page for your domain, select **DNS** from the navigation bar.
-
-   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-2.png" alt-text="Select DNS.":::
 
 1. On the DNS management page, select **+Add record**.
 
@@ -181,13 +175,9 @@ To verify the record in Microsoft 365:
 
 1. To get started, go to your domains page at Cloudflare by using [this link](https://www.cloudflare.com/a/login). You'll be prompted to log in first.
 
-1. On the Home page, select the domain that you want to update.
+1. On the Account Home page, find the domain that you want to update, select the three dots (**...**) at the right and select **Configure DNS** from the drop-down menu.
 
    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-1.png" alt-text="Select the domain you want to update.":::
-
-1. On the Overview page for your domain, select **DNS** from the navigation bar.
-
-   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-2.png" alt-text="Select DNS.":::
 
 1. On the **DNS management** page, select **+Add record**
 
@@ -210,13 +200,9 @@ To verify the record in Microsoft 365:
 
 1. To get started, go to your domains page at Cloudflare by using [this link](https://www.cloudflare.com/a/login). You'll be prompted to log in first.
 
-1. On the Home page, select the domain that you want to update.
+1. On the Account Home page, find the domain that you want to update, select the three dots (**...**) at the right and select **Configure DNS** from the drop-down menu.
 
     :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-1.png" alt-text="Select the domain you want to update.":::
-
-1. On the Overview page for your domain, select **DNS** from the navigation bar.
-
-    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-2.png" alt-text="Select DNS.":::
 
 1. On the DNS management page, select **+Add record**.
 
@@ -243,13 +229,9 @@ Only select this option if your organization uses Skype for Business for online 
 
 1. To get started, go to your domains page at Cloudflare by using [this link](https://www.cloudflare.com/a/login). You'll be prompted to log in first.
 
-1. On the Home page, select the domain that you want to update.
+1. On the Account Home page, find the domain that you want to update, select the three dots (**...**) at the right and select **Configure DNS** from the drop-down menu.
 
     :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-1.png" alt-text="Select the domain you want to update.":::
-
-1. On the Overview page for your domain, select **DNS** from the navigation bar.
-
-    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-2.png" alt-text="Select DNS.":::
 
 1. On the DNS management page, select **+Add record**
 
@@ -275,13 +257,9 @@ Only select this option if your organization uses Skype for Business for online 
 
 1. To get started, go to your domains page at Cloudflare by using [this link](https://www.cloudflare.com/a/login). You'll be prompted to log in first.
 
-1. On the Home page, select the domain that you want to update.
+1. On the Account Home page, find the domain that you want to update, select the three dots (**...**) at the right and select **Configure DNS** from the drop-down menu.
 
     :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-1.png" alt-text="Select the domain you want to update.":::
-
-1. On the Overview page for your domain, select **DNS** from the navigation bar.
-
-    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-2.png" alt-text="Select DNS.":::
 
 1. On the DNS management page, select **+Add record**
 
@@ -309,13 +287,9 @@ This service helps you secure and remotely manage mobile devices that connect to
 
 1. To get started, go to your domains page at Cloudflare by using [this link](https://www.cloudflare.com/a/login). You'll be prompted to log in first.
 
-1. On the Home page, select the domain that you want to update.
+1. On the Account Home page, find the domain that you want to update, select the three dots (**...**) at the right and select **Configure DNS** from the drop-down menu.
 
     :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-1.png" alt-text="Select the domain you want to update.":::
-
-1. On the Overview page for your domain, select **DNS** from the navigation bar.
-
-    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-2.png" alt-text="Select DNS.":::
 
 1. On the DNS management page, select **+Add record**
 

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 03/04/2024
+ms.date: 04/08/2025
 audience: Admin
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
@@ -43,15 +43,15 @@ If you're the admin responsible for the Microsoft 365 for business subscription 
 ## Upgrade steps
 
 The steps below will guide you through the process of upgrading your users to the latest Microsoft 365 desktop apps. We recommend you read through these steps before beginning the upgrade process.
-  
+
 ## Step 1 - Check system requirements
 
 [Check the system requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources) to make sure your devices are compatible with the latest version of Office. For example, newer versions of the apps in Microsoft 365 can't be installed on computers running Windows XP or Windows Vista.
   
 > [!TIP]
-> If you have users in your organization running older versions of Windows on their PCs or laptops, we recommend upgrading to Windows 10. Windows 7 has reached end of support. Read [Support for Windows 7 ends in January 2020](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support?rtc=1) for more info.
+> If you have users in your organization running older versions of Windows on their PCs or laptops, we recommend upgrading to the latest version of Windows. Windows 7 has reached end of support. Read [Support for Windows 7 ends in January 2020](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support?rtc=1) for more info.
 
-Check out the [Windows 10 system requirements](https://www.microsoft.com/windows/windows-10-specifications) to see if you can upgrade their operating systems.
+Check out the [Windows 11 system requirements](/windows/whats-new/windows-11-requirements) to see if you can upgrade their operating systems.
 
 ### Check application compatibility
 
@@ -65,9 +65,9 @@ Some Microsoft 365 plans don't include the full desktop versions of the apps and
   
 Not sure which subscription plan you have? See [What Microsoft 365 for business subscription do I have?](../admin-overview/what-subscription-do-i-have.md)
   
-If your existing plan includes the Office apps, move on to [Step 3 - Uninstall Office](#step-3---uninstall-office).
+If your existing plan includes the Microsoft 365 apps, move on to [Step 3 - Uninstall Office](#step-3---uninstall-office).
   
-If your existing plan doesn't include the formerly Office apps, then select from the options below:
+If your existing plan doesn't include the Microsoft 365 apps, then select from the options below:
   
 ### Upgrade options for plans that don't include the apps in Microsoft 365
 
@@ -108,11 +108,11 @@ We recommend if you have third-party add-ins, contact the manufacturer to see if
 
 If you'd prefer to install your older version side-by-side with the latest version, you can see a list of versions where this is supported in, [Install and use different versions of Office on the same PC](https://support.microsoft.com/office/6ebb44ce-18a3-43f9-a187-b78c513788bf). A side-by-side installation might be the right choice for you, if for example, you've installed third-party add-ins you're using with your older version and you're not yet sure they're compatible with the latest version.
 
-## Step 4 - Assign Office licenses to users
+## Step 4 - Assign licenses to users
 
-If you haven't already done so, assign licenses to any users in your organization who need to install the latest version of Microsoft 365, see [Assign licenses to users in Microsoft 365 for business](../manage/assign-licenses-to-users.md).
+If you haven't already done so, assign licenses to any users in your organization who need to install the latest version of Microsoft 365. See [Assign licenses to users in Microsoft 365 for business](../manage/assign-licenses-to-users.md).
   
-## Step 5 - Install Microsoft 365
+## Step 5 - Install Microsoft 365 apps
 
 After you've verified the users you want to upgrade all have licenses, the final step is to have them install the apps in Microsoft 365. See [Download and install or reinstall Microsoft 365 or Office 2021 on a PC or Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658).
   

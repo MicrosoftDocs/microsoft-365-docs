@@ -53,7 +53,7 @@ A ransomware attacker that has infiltrated a Microsoft 365 tenant can hold your 
 - Encrypting files in place
 - Copying files outside your tenant (data exfiltration)
 
-However, Microsoft 365 online services have many built in capabilities and controls to protect customer data from ransomware attacks. The following sections provide a summary. For more details about how Microsoft protects customer data, [Malware and ransomware protection in Microsoft 365](/compliance/assurance/assurance-malware-and-ransomware-protection).
+However, Microsoft 365 online services have many built-in capabilities and controls to protect customer data from ransomware attacks. The following sections provide a summary. For more details about how Microsoft protects customer data, [Malware and ransomware protection in Microsoft 365](/compliance/assurance/assurance-malware-and-ransomware-protection).
 
 >[!Note]
 >A ransomware attack on a Microsoft 365 tenant assumes that the attacker has valid user account credentials for a tenant and has access to all of the files and resources that are permitted to the user account. An attacker without any valid user account credentials would have to decrypt the data at rest that has been encrypted by Microsoft 365 default and enhanced encryption. For more information, see [Encryption and key management overview](/compliance/assurance/assurance-encryption). 
@@ -89,6 +89,10 @@ Email is protected by:
 - [Single item recovery](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-single-item-recovery) and mailbox retention, in which you can recover items in a mailbox upon inadvertent or malicious premature deletion. You can rollback mail messages deleted within 14 days by default, configurable up to 30 days.
 
 - [Retention policies](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies) allow you to retain immutable copies of email for the configured retention period.
+
+### Enhanced Recovery Solutions
+
+In addition to these native built-in capabilities, Microsoft also recommends evaluating the use of [Microsoft 365 Backup](https://www.microsoft.com/en-us/microsoft-365/microsoft-365-backup) or a recognized partner solution built on top of the [Microsoft 365 Backup Storage](https://adoption.microsoft.com/en-us/microsoft-365-backup-storage/#partners) platform. The Microsoft 365 Backup tool compliments and extends native capabilities with a focus on fast, secure, and efficient self-service bulk recovery to recover your content quickly to a healthy pre-attack prior point in time. The Backup Storage platform is architected and purpose-built to provide enhanced restore capabilities for admins. Be aware that purchasing a partner solution that does not leverage the Microsoft 365 Backup Storage platform. Some partner solutions only copy your data to another location and will likely not provide sufficient performance restoration capabilities to meet your ransomware recovery needs. Learn more about [how to select an appropriate backup and restore solution](https://adoption.microsoft.com/files/microsoft-365-backup/Microsoft-365-Backup_Best-practices-whitepaper.pdf).
 
 ### Encrypting files in place
 
@@ -245,6 +249,9 @@ Microsoft 365:
 - [Ransomware incident response playbooks](/security/ransomware/)
 - [Malware and ransomware protection](/compliance/assurance/assurance-malware-and-ransomware-protection)
 - [Protect your Windows 10 PC from ransomware](https://support.microsoft.com/windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
+
+- [Microsoft 365 Backup for enhanced, efficient, and secure recovery](https://aka.ms/m365backup)
+
 - [Handling ransomware in SharePoint Online](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
 - [Threat analytics reports for ransomware](https://security.microsoft.com/threatanalytics3?page_size=30&filters=tags%3DRansomware&ordering=-lastUpdatedOn&fields=displayName,alertsCount,impactedEntities,reportType,createdOn,lastUpdatedOn,tags,flag) in the Microsoft Defender portal
 

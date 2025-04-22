@@ -169,9 +169,9 @@ With a Microsoft 365 subscription, you can add expiration dates and passwords to
 
 ## Classify and protect company data
 
-Use the Microsoft Purview compliance portal to enable support for sensitivity labels. For more information, see [Enable sensitivity labels for files in SharePoint and OneDrive](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files).
+Use the Microsoft Purview portal to enable support for sensitivity labels. For more information, see [Enable sensitivity labels for files in SharePoint and OneDrive](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files).
 
-1. Sign in to [the Microsoft Purview compliance portal](https://compliance.microsoft.com/) as a global administrator.
+1. Sign in to [the Microsoft Purview portal](https://purview.microsoft.com/) as a global administrator.
 
 2. Select **Solutions** and then **Information protection**.
 

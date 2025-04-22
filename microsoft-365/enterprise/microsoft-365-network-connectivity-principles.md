@@ -3,7 +3,7 @@ title: Microsoft 365 network connectivity principles
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 05/23/2024
+ms.date: 04/02/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -26,20 +26,20 @@ ms.custom: seo-marvel-apr2020
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
 Before you begin planning your network for Microsoft 365 network connectivity, it's important to understand the connectivity principles for securely managing Microsoft 365 traffic and getting the best possible performance. This article helps you understand the most recent guidance for securely optimizing Microsoft 365 network connectivity.
-  
+
 Traditional enterprise networks are designed primarily to provide users access to applications and data hosted in company operated datacenters with strong perimeter security. The traditional model assumes that users will access applications and data from inside the corporate network perimeter, over WAN links from branch offices, or remotely over VPN connections.
-  
+
 Adoption of SaaS applications like Microsoft 365 moves some combination of services and data outside the network perimeter. Without optimization, traffic between users and SaaS applications is subject to latency introduced by packet inspection, network hairpins, inadvertent connections to geographically distant endpoints and other factors. You can ensure the best Microsoft 365 performance and reliability by understanding and implementing key optimization guidelines.
-  
+
 In this article, you'll learn about:
-  
+
 - [Microsoft 365 architecture](microsoft-365-network-connectivity-principles.md#BKMK_Architecture) as it applies to customer connectivity to the cloud
 - Updated [Microsoft 365 connectivity principles](microsoft-365-network-connectivity-principles.md#BKMK_Principles) and strategies for optimizing network traffic and the end-user experience
-- The [Office 365 Endpoints web service](microsoft-365-network-connectivity-principles.md#BKMK_WebSvc), which allows network administrators to consume a structured list of endpoints for use in network optimization
+- The [Microsoft 365 Endpoints web service](microsoft-365-network-connectivity-principles.md#BKMK_WebSvc), which allows network administrators to consume a structured list of endpoints for use in network optimization
 - Guidance for [optimizing connectivity to Microsoft 365 services](#BKMK_OptmizeConnectivity)
 - [Comparing network perimeter security with endpoint security](microsoft-365-network-connectivity-principles.md#BKMK_SecurityComparison)
 - [Incremental optimization](microsoft-365-network-connectivity-principles.md#BKMK_IncOpt) options for Microsoft 365 traffic
-- The [Microsoft 365 connectivity test](https://aka.ms/netonboard), a new tool for testing basic connectivity to Microsoft 365
+- The [Microsoft 365 connectivity test](https://aka.ms/netonboard), a tool for testing basic connectivity to Microsoft 365
 
 ## Microsoft 365 architecture
 <a name="BKMK_Architecture"> </a>
@@ -66,7 +66,7 @@ Identifying Microsoft 365 network traffic is the first step in being able to dif
   
 For more information on Microsoft 365 optimization methods, see the [optimizing connectivity to Microsoft 365 services](#BKMK_OptmizeConnectivity) section.
   
-Microsoft now publishes all Microsoft 365 endpoints as a web service and provides guidance on how best to use this data. For more information on how to fetch and work with Microsoft 365 endpoints, see the article [Office 365 URLs and IP address ranges](https://support.office.com/article/office-365-urls-and-ip-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US).
+Microsoft publishes all Microsoft 365 endpoints as a web service and provides guidance on how best to use this data. For more information on how to fetch and work with Microsoft 365 endpoints, see the article [Microsoft 365 URLs and IP address ranges](urls-and-ip-address-ranges.md).
   
 <a name="BKMK_P2"> </a>
 ### Egress network connections locally
@@ -126,31 +126,36 @@ Enterprise customers should review their network security and risk reduction met
 Most enterprise networks enforce network security for Internet traffic using technologies like proxies, TLS inspection, packet inspection, and data loss prevention systems. These technologies provide important risk mitigation for generic Internet requests but can dramatically reduce performance, scalability, and the quality of end user experience when applied to Microsoft 365 endpoints.
   
 <a name="BKMK_WebSvc"> </a>
-#### Office 365 Endpoints web service
+#### Microsoft 365 Endpoints web service
 
-Microsoft 365 administrators can use a script or REST call to consume a structured list of endpoints from the Office 365 Endpoints web service and update the configurations of perimeter firewalls and other network devices. This ensures that traffic bound for Microsoft 365 is identified, treated appropriately and managed differently from network traffic bound for generic and often unknown Internet web sites. For more information on how to use the Office 365 Endpoints web service, see the article [Office 365 URLs and IP address ranges](https://support.office.com/article/office-365-urls-and-ip-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US).
+Microsoft 365 administrators can use a script or REST call to consume a structured list of endpoints from the Microsoft 365 Endpoints web service and update the configurations of perimeter firewalls and other network devices. This ensures that traffic bound for Microsoft 365 is identified, treated appropriately and managed differently from network traffic bound for generic and often unknown Internet web sites. For more information on how to use the Microsoft 365 Endpoints web service, see the article [Microsoft 365 URLs and IP address ranges](urls-and-ip-address-ranges.md).
   
 #### PAC (Proxy Automatic Configuration) scripts
 <a name="BKMK_WebSvc"> </a>
 
 Microsoft 365 administrators can create PAC (Proxy Automatic Configuration) scripts that can be delivered to user computers via WPAD or GPO. PAC scripts can be used to bypass proxies for Microsoft 365 requests from WAN or VPN users, allowing Microsoft 365 traffic to use direct Internet connections rather than traversing the corporate network.
-  
+
+For more information on using PAC files to optimize network connectivity on client devices, see [Managing Microsoft 365 endpoints](managing-office-365-endpoints.md#use-a-pac-file-for-direct-routing-of-vital-microsoft-365-traffic).
+
 #### Microsoft 365 security features
 <a name="BKMK_WebSvc"> </a>
 
-Microsoft is transparent about datacenter security, operational security, and risk reduction around Microsoft 365 servers and the network endpoints that they represent. Microsoft 365 built-in security features are available for reducing network security risk, such as Microsoft Purview Data Loss Prevention, antivirus, Multifactor Authentication, Customer Lockbox, Defender for Office 365, Microsoft 365 Threat Intelligence, Microsoft 365 Secure Score, Exchange Online Protection, and Network DDOS Security.
+Microsoft is transparent about datacenter security, operational security, and risk reduction around Microsoft 365 servers and the network endpoints that they represent. Microsoft 365 built-in security features are available for reducing network security risk, such as Microsoft Purview Data Loss Prevention, antivirus, Multifactor Authentication, Customer Lockbox, Defender for Microsoft 365, Microsoft 365 Threat Intelligence, Microsoft 365 Secure Score, Exchange Online Protection, and Network DDOS Security.
 
 For more information on Microsoft datacenter and Global Network security, see the [Microsoft Trust Center](https://www.microsoft.com/trustcenter/security).
   
 ## Optimizing connectivity to Microsoft 365 services
 <a name="BKMK_OptmizeConnectivity"> </a>
-Microsoft 365 services are a collection of dynamic, interdependent, and deeply integrated products, applications, and services.  When configuring and optimizing connectivity to Microsoft 365 services, it is not feasible to link specific endpoints (domains) with a few Microsoft 365 scenarios to implement allow-listing at the network level. Microsoft does not support selective allow-listing as it causes connectivity and service incidents for users. Network administrators should therefore always apply Microsoft 365 guidelines for network allow-listing and common network optimizations to the full set of required network endpoints (domains) that are [published](microsoft-365-ip-web-service.md) and updated regularly. While we are simplifying Microsoft 365 network endpoints in response to customer feedback, network administrators should be aware of the following core patterns in the existing set of endpoints today: 
+
+Microsoft 365 services are a collection of dynamic, interdependent, and deeply integrated products, applications, and services.  When configuring and optimizing connectivity to Microsoft 365 services, it is not feasible to link specific endpoints (domains) with a few Microsoft 365 scenarios to implement allow-listing at the network level. Microsoft does not support selective allow-listing as it causes connectivity and service incidents for users. Network administrators should therefore always apply Microsoft 365 guidelines for network allow-listing and common network optimizations to the full set of required network endpoints (domains) that are [published](microsoft-365-ip-web-service.md) and updated regularly. While we are simplifying Microsoft 365 network endpoints in response to customer feedback, network administrators should be aware of the following core patterns in the existing set of endpoints today:
+
 - Where possible, the published domain endpoints will include wildcards to significantly lower the network configuration effort for customers.
   - Microsoft 365 announced a domain consolidation initiative (cloud.microsoft), providing customers a way to simplify their network configurations and automatically accrue network optimizations for this domain to many current and future Microsoft 365 services.
   - Exclusive use of cloud.microsoft root domain  for security isolation and specific functions. This enables customer network and security teams to trust Microsoft 365 domains, while improving connectivity to those endpoints and avoiding unnecessary network security processing. 
   - Certain endpoint definitions specify unique IP prefixes corresponding to their domains. This feature supports customers with intricate network structures, enabling them to apply precise network optimizations by utilizing IP prefix details.
 
 The following network configurations are recommended for all **“Required”** Microsoft 365 network endpoints (domains) and categories:
+
 - Explicitly permitting Microsoft 365 network endpoints in the network devices and services that user connections go through (e.g., network perimeter security devices like proxies, firewalls, DNS, cloud-based network security solutions, etc.)
   - Bypass Microsoft 365 domains from TLS decryption, traffic interception, deep packet inspection, and network packet and content filtering. Note that many outcomes that customers are using these network technologies for in the context of untrusted/unmanaged applications can be achieved by Microsoft 365 security features natively.
   - Direct internet access should be prioritized for the Microsoft 365 domains by reducing reliance on wide area network (WAN) backhauling, avoiding network hairpins, and enabling a more efficient internet egress local to the users and directly to the Microsoft network.
@@ -161,15 +166,17 @@ The following network configurations are recommended for all **“Required”** 
 Customers with complex network topologies, implementing network optimizations like custom routing, IP based proxy bypass, and split tunnel VPN may require IP prefix information in addition to domains. To facilitate these customer scenarios Microsoft 365 network endpoints are grouped into categories to prioritize and ease the configuration of these additional network optimizations. Network endpoints classified under the **“Optimize”** and **“Allow”** categories carry high traffic volumes and are sensitive to network latency and performance, and customers may want to optimize connectivity to those first. Network endpoints under the **“Optimize”** and **“Allow”** categories have IP addresses listed along with domains. Network endpoints classified under the **“Default”** category do not have IP addresses associated with them as they are more dynamic in nature and IP addresses change over time.
 
 ### Additional network considerations
+
 When optimizing connectivity to Microsoft 365, certain network configurations may have a negative impact on Microsoft 365 availability, interoperability, performance, and user experience. Microsoft has not tested the following network scenarios with our services, and they are known to cause connectivity issues.
+
 - TLS termination or deep packet inspection of any M365 domains with customer proxies or other types of network devices or services.
-  - Blocking specific protocols or protocol versions such as QUIC, WebSocket’s, etc. by intermediate network infrastructure or service. 
-  - Forcing downgrade or failover of protocols (such as UDP --> TCP, TLS1.3 --> TLS1.2 --> TLS1.1) used between client applications and Microsoft 365 services.
-  - Routing connections through network infrastructure applying its own authentication such as proxy authentication.
+- Blocking specific protocols or protocol versions such as QUIC, WebSocket’s, etc. by intermediate network infrastructure or service. 
+- Forcing downgrade or failover of protocols (such as UDP --> TCP, TLS1.3 --> TLS1.2 --> TLS1.1) used between client applications and Microsoft 365 services.
+- Routing connections through network infrastructure applying its own authentication such as proxy authentication.
 
 We recommend that customers avoid using these network techniques to traffic destined to Microsoft 365 domains and bypass these for Microsoft 365 connections.
 
-Microsoft recommends setting up an automated system to download and apply the M365 network endpoint list regularly. Please refer to [Change management for Microsoft 365 IP addresses and URLs for more information](managing-office-365-endpoints.md#change-management-for-microsoft-365-ip-addresses-and-urls). 
+Microsoft recommends setting up an automated system to download and apply the M365 network endpoint list regularly. Refer to [Change management for Microsoft 365 IP addresses and URLs](managing-office-365-endpoints.md#change-management-for-microsoft-365-ip-addresses-and-urls) for more information. 
 
 ## Comparing network perimeter security with endpoint security
 <a name="BKMK_SecurityComparison"> </a>
@@ -195,6 +202,7 @@ Microsoft offers a wide range of Microsoft 365 security features and provides pr
     As a Microsoft 365 admin, you can use Customer Lockbox to control how a Microsoft support engineer accesses your data during a help session. In cases where the engineer requires access to your data to troubleshoot and fix an issue, Customer Lockbox allows you to approve or reject the access request.
 
 - **Use Secure Score**
+
 A security analytics tool that recommends what you can do to further reduce risk. Secure Score looks at your Microsoft 365 settings and activities and compares them to a baseline established by Microsoft. You get a score based on how aligned you are with best security practices.
 
 A holistic approach to enhanced security should include consideration of the following:
@@ -234,19 +242,19 @@ You can approach optimization as an incremental process, applying each method su
 
 [Microsoft 365 Network Connectivity Overview](microsoft-365-networking-overview.md)
 
-[Managing Office 365 endpoints](managing-office-365-endpoints.md)
+[Managing Microsoft 365 endpoints](managing-office-365-endpoints.md)
 
-[Office 365 URLs and IP address ranges](urls-and-ip-address-ranges.md)
+[Microsoft 365 URLs and IP address ranges](urls-and-ip-address-ranges.md)
 
-[Office 365 IP Address and URL Web service](microsoft-365-ip-web-service.md)
+[Microsoft 365 IP Address and URL Web service](microsoft-365-ip-web-service.md)
 
 [Assessing Microsoft 365 network connectivity](assessing-network-connectivity.md)
 
 [Network planning and performance tuning for Microsoft 365](network-planning-and-performance.md)
 
-[Office 365 performance tuning using baselines and performance history](performance-tuning-using-baselines-and-history.md)
+[Microsoft 365 performance tuning using baselines and performance history](performance-tuning-using-baselines-and-history.md)
 
-[Performance troubleshooting plan for Office 365](performance-troubleshooting-plan.md)
+[Performance troubleshooting plan for Microsoft 365](performance-troubleshooting-plan.md)
 
 [Content Delivery Networks](content-delivery-networks.md)
 
@@ -254,4 +262,4 @@ You can approach optimization as an incremental process, applying each method su
 
 [How Microsoft builds its fast and reliable global network](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
 
-[Office 365 Networking blog](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)
+[Microsoft 365 Networking blog](https://techcommunity.microsoft.com/category/microsoft365/discussions/deploymentnetworking)

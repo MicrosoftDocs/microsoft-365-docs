@@ -35,5 +35,5 @@ To get started, go to [Microsoft 365 Copilot adoption](https://adoption.microsof
 ## Related content
 
 - [Copilot Prompt Gallery](copilot-prompt-gallery.md)
-- [Microsoft 365 Copilot E3 implementation guide](microsoft-365-copilot-e3-guide.md)
-- [Microsoft 365 Copilot E5 implementation guide](microsoft-365-copilot-e5-guide.md)
+- Microsoft 365 Copilot [E3](microsoft-365-copilot-e3-guide.md) and [E5](microsoft-365-copilot-e5-guide.md) implementation guides
+- [Microsoft 365 Copilot reports](microsoft-365-copilot-reports-for-admins.md)

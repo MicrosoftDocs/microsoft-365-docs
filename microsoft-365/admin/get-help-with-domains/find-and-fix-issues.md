@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 03/18/2025
+ms.date: 04/02/2025
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -93,8 +93,13 @@ Check out the guidance in [Verify your Microsoft 365 domain to prove ownership, 
 
 We can help you track down issues with your domain's DNS setup. The domains troubleshooter in Microsoft 365 will show you any records that you need to fix, and exactly what the records need to be set to.
 
+1. Go to **Setup > Domains**.
+1. View the notifications in the **Status** column.
+1. If you see an issue, select the three dots (more actions), and then select **Check health**.
+1. The pane that opens will describe any issues occurring with your domain.
+
 > [!TIP]
-> Got your DNS set up correctly, but mail doesn't work in Outlook on your desktop? Check out the [different mail flow scenarios you can have with Microsoft 365](/exchange/mail-flow-best-practices/mail-flow-best-practices) to make sure you've got things set up correctly for your business. Or get more troubleshooting help with email here: [Fix Outlook problems](/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues).
+> Got your DNS set up correctly, but mail doesn't work in Outlook on your desktop? Check out the [different mail flow scenarios you can have with Microsoft 365](/exchange/mail-flow-best-practices/mail-flow-best-practices) to make sure you've got things set up correctly for your business. Or get more troubleshooting help with email at [Fix Outlook problems](/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues).
   
 ## Accessing your website isn't working?
 

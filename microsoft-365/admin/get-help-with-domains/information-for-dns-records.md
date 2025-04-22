@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 03/18/2025
+ms.date: 04/02/2025
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -39,6 +39,9 @@ Check out all of our small business content on [Small business help & learning](
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for. 
 
 [!INCLUDE [How to get tech support for SMB](../../includes/smb-how-to-get-tech-support.md)]
+
+> [!NOTE]
+> The procedures in this article assume that you have begun the process of [adding a domain](/admin/setup/add-domain#add-a-domain), but have not yet verified the domain.
   
 ### Step 1: Find the TXT record value and verify
 
@@ -94,6 +97,6 @@ Check out all of our small business content on [Small business help & learning](
 
 ## Related content
 
-- [Domains FAQ](../setup/domains-faq.yml) (article)\
-- [Find and fix issues after adding your domain or DNS records](find-and-fix-issues.md) (article)\
+- [Domains FAQ](../setup/domains-faq.yml) (article)
+- [Find and fix issues after adding your domain or DNS records](find-and-fix-issues.md) (article)
 - [Manage domains](/admin) (link page)

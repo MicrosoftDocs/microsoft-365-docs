@@ -84,7 +84,7 @@ Audit logging is essential for tracking and monitoring activities within your Mi
 
 #### Steps to implement audit logging
 
-- **Enable unified audit logging** Turn on unified audit logging in the Microsoft Purview compliance portal to capture all user and admin activities.
+- **Enable unified audit logging** Turn on unified audit logging in the Microsoft Purview portal to capture all user and admin activities.
 - **Configure audit log retention** Set up retention policies to ensure that audit logs are retained for the required period based on your organization's compliance needs.
 - **Monitor and review logs** Regularly monitor and review audit logs to identify any suspicious activities or potential security threats.
 

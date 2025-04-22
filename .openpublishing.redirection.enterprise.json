@@ -1431,6 +1431,11 @@
       "redirect_document_id": false
    },
    {
+      "source_path": "microsoft-365/enterprise/office-365-network-mac-perf-nppux.md",
+      "redirect_url": "/microsoft-365/enterprise/office-365-network-mac-perf-nppdetails",
+      "redirect_document_id": false
+   },
+   {
       "source_path": "microsoft-365/enterprise/manage-skype-for-business-online-with-microsoft-365-powershell.md",
       "redirect_url": "/microsoftteams/teams-powershell-managing-teams",
       "redirect_document_id": false

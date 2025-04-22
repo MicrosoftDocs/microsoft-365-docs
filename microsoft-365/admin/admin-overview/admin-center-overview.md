@@ -34,7 +34,7 @@ description: "Use either simplified view in the Microsoft 365 admin center to ma
 
 Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
-The Microsoft 365 admin center gives users a central location to take care of common admin tasks, such as: 
+The Microsoft 365 admin center gives users a central location to take care of common admin tasks, such as:
 
 - Manage users: [Add users and assign licenses at the same time](../add-users/add-users.md), [Delete or restore users](../add-users/delete-a-user.md), or [Reset a user's password](../add-users/reset-passwords.md).
 
@@ -99,7 +99,7 @@ On the **Upcoming changes** tab, view relevant announcements about new and updat
 
 On the **Learn** tab, browse videos and articles about the admin center and other Microsoft 365 features. To explore more advanced features of the admin center, open the navigation menu and expand the headings to see more. Select **Show all** to see everything in the navigation menu or use the search bar to quickly find what you're looking for.
 
-If you need assistance, select **Help & support** (the headphones icon). Search for topic you want help with and view the recommended solution or select the headset to contact support, and then enter your question and contact information.
+If you need assistance, select **Help & support** (the headphones icon). Search for topic you want help with and view the recommended solution or select the headset to contact support, and then enter your question and contact information. 
 
 ## Watch: The admin center in dashboard view
 

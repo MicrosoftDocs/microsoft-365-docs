@@ -5,7 +5,7 @@ author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: solution-overview
-ms.date: 03/29/2024
+ms.date: 04/21/2025
 description: Add apps overview for Microsoft Intune.
 ms.service: o365-solutions
 ms.localizationpriority: high
