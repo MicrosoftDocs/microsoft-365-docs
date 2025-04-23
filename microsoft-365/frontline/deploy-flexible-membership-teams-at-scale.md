@@ -137,7 +137,7 @@ Create new teams for newly opened locations:
 ## Edit your frontline teams settings
 1.	In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose **Frontline deployment** > **Manage frontline teams**.
 2.	In the Deployment settings column, choose **Deploy frontline teams**.
-3.	On the **Frontline teams **settings page, edit your settings, and then select  **Apply**. Your settings might take several hours to update.
+3.	On the **Frontline teams** settings page, edit your settings, and then select  **Apply**. Your settings might take several hours to update.
 
 See the following table for the effects of updating your settings.
 
