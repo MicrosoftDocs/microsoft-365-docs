@@ -103,7 +103,10 @@ New-MgUser -DisplayName "John Doe" -GivenName "John" -Surname "Doe" -UserPrincip
     # Create a password profile
     $PasswordProfile = @{
         Password = 'Password123'
-        }
+    }
+
+    # Create a table for the new users results
+    $results = @()
 
     # Loop through each user in the CSV file
     foreach ($user in $users) {
@@ -113,10 +116,20 @@ New-MgUser -DisplayName "John Doe" -GivenName "John" -Surname "Doe" -UserPrincip
         # Assign a license to the new user
         $e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'
         Set-MgUserLicense -UserId $newUser.Id -AddLicenses @{SkuId = $e5Sku.SkuId} -RemoveLicenses @()
+
+        # Get the new user's details
+        $newUser = Get-MgUser -UserId $newUser.Id -Property UserPrincipalName, DisplayName, LicenseDetails
+
+        # Add the new user results to the results table
+        $results += [PSCustomObject]@{
+          "User Principal Name" = $newUser.UserPrincipalName
+          "Display Name" = $newUser.DisplayName
+          "License Details" = $newUser.LicenseDetails | ForEach-Object { $_.SkuPartNumber } -join ', '
+        }
     }
 
     # Export the results to a CSV file
-    $users | Export-Csv -Path "C:\temp\NewAccountResults.csv" -NoTypeInformation
+    $results | Export-Csv -Path "C:\temp\NewAccountResults.csv" -NoTypeInformation
     ```
 
 3. Review the output file to see the results.
