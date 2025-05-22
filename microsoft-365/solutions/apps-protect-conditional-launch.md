@@ -30,7 +30,7 @@ iOS/iPadOS app conditional settings allow the similar settings configuration as 
 | App   condition setting | iOS/iPadOS | Android |
 |:---:|:---:|:---:|
 | Max PIN attempts | ✔ | ✔ |
-| Office grace period | ✔ | ✔ |
+| Offline grace period | ✔ | ✔ |
 | Min app version | ✔ | ✔ |
 | Max SDK version | ✔ | ✖ |
 | Disabled account | ✔ | ✔ |

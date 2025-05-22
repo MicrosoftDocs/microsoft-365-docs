@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 06/21/2024
+ms.date: 05/12/2025
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
@@ -32,14 +32,14 @@ description: "Get a periodic report of how people in your organization are using
 
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
-You can easily see how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need a Microsoft 365 license at all. Perpetual license model won't be included in the reports.
+Microsoft 365 admin center activity reports enables you to get an insight on how people in your business are using Microsoft 365 services. For instance, you can determine who is using the service to the max limit, and who is barely using it and hence might not need Microsoft 365 license. Perpetual license model won't be included in the reports.
   
 Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data won't exist for all reporting periods right away. The reports typically become available within 48 hours, but might sometimes take several days
 to become available.
 
 ## Watch: Act on a usage report in Microsoft 365
   
-Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198103).<br><br>
+Check out this and other videos on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198103).<br><br>
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=f8007c63-a8a0-44ee-ab5b-0ac799333496]
 
@@ -47,23 +47,23 @@ Check out this video and others on our [YouTube channel](https://go.microsoft.co
 
 ::: moniker range="o365-worldwide"
 
-1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page.
+1. In the admin center, go to **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Reports** \> **Usage** page.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to  **Reports** \> **Usage**.
 
 ::: moniker-end
 
-2. Select the **View more** button from the at-a-glance activity card for a service (such as email or OneDrive) to see the report detail page. On that page, different reports for the service are provided in tabs.
+2. Select **View more** from the at-a-glance activity card for a service (such as email or OneDrive) to see the report detail page. On that page, different reports for the service are provided in tabs.
 
    :::image type="content" alt-text="The Usage dashboard." source="../../media/activity-usage-analytics3.png" lightbox="../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png":::
 
 ## Who can see reports
 
-People who have the following permissions:
+People who have the following permissions can see the reports:
 
 - Global admins: We recommend that only a few people in your company have this role. It reduces the risk to your business.
 
@@ -85,11 +85,11 @@ People who have the following permissions:
 
 - User Experience Success Manager (with no user details)
 
-To learn more, see [About admin roles](../add-users/about-admin-roles.md) and [Assign admin roles](../add-users/assign-admin-roles.md).
+For more information, see [About admin roles](../add-users/about-admin-roles.md) and [Assign admin roles](../add-users/assign-admin-roles.md).
 
 ## Which activity reports are available in the admin center
 
-Depending on your subscription, here are the available reports in all environments.
+Depending on your subscription, here are the available reports in all environments:
 
 |Report|Public|GCC|GCC-High|DoD|Microsoft 365 operated by 21Vianet|
 |:-----|:-----|:-----|:-----|:-----|:-----|
@@ -108,6 +108,7 @@ Depending on your subscription, here are the available reports in all environmen
 |[OneDrive for Business usage](onedrive-for-business-usage-ww.md)|Yes|Yes|Yes|Yes|Yes|
 |[SharePoint site usage](sharepoint-site-usage-ww.md)|Yes|Yes|Yes|Yes|Yes|
 |[SharePoint activity](sharepoint-activity-ww.md)|Yes|Yes|Yes|Yes|Yes|
+|[SharePoint storage](sharepoint-storage-reports.md)|Yes|Yes|Yes|Yes|Yes|
 |[Microsoft Teams user activity](microsoft-teams-user-activity-preview.md)|Yes|Yes|Yes|Yes|N/A<sup>1</sup>|
 |[Microsoft Teams device usage](microsoft-teams-device-usage-preview.md)|Yes|Yes|Yes|Yes|N/A<sup>1</sup>|
 |[Microsoft Teams team activity](microsoft-teams-usage-activity.md)|Yes|Yes|Yes|Yes|N/A<sup>1</sup>|
@@ -128,7 +129,7 @@ Depending on your subscription, here are the available reports in all environmen
 
 N/A<sup>1</sup>: The report is planned to be released in the future. The <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=" target="_blank">Microsoft 365 Roadmap</a> will be updated before the release.
 
-N/A<sup>2</sup>: The service is not available in the environment, so there's no plan to release the report.
+N/A<sup>2</sup>: The service isn't available in the environment; hence, there's no plan to release the report.
 
 ## How to view licensing information
 
@@ -138,7 +139,7 @@ N/A<sup>2</sup>: The service is not available in the environment, so there's no 
 
 ## How to view usage information for a specific user
 
-Use the service reports to research how much a specific user is using the service. For example, to find out how much mailbox storage a specific user has consumed, open the Mailbox usage report, and sort the users by name. If you have thousands of users, export the report to Excel so you filter through the list quickly.
+Use the service reports to research to what extent a specific user is using the service. For example, to find out how much mailbox storage a specific user has consumed, open the Mailbox usage report, and sort the users by name. If you have thousands of users, export the report to Excel so that you can filter through the list quickly.
 
 You can't generate a report where you enter a user's account and then get a list of which services they're using and how much.
 
@@ -158,30 +159,14 @@ Reports provide information about your organization's usage data. Starting Septe
 
 The org setting applies to:
 
-Properties for user-level in many reports:
 
-- User ids
-- Usernames
-- User principal names
-
-Properties for OneDrive and SharePoint site usage reports:
-
-- Site ids
-- Site URLs
-
-Properties for Microsoft 365 apps Group activity report:
-
-- Group ids
-- Group names
-
-Properties for Viva Engage group activity report:
-
-- Group name
-- Group admin
-
-Properties for Teams team usage report:
-
-- Team names
+|Property  |Attributes  |
+|---------|---------|
+|Properties for user-level in many reports     | User IDs, Usernames, and User principal names         |
+|Properties for OneDrive and SharePoint site usage reports     | Site IDs and Site URLs          |
+|Properties for Microsoft 365 apps Group activity report     | Group IDs and Group names        |
+|Properties for Viva Engage group activity report     | Group name and Group admin          |
+|Properties for Teams team usage report     | Team names         |
 
 There are additional reports that follow this org setting. For example, some reports in Microsoft Teams admin center follow the same.
 
@@ -193,9 +178,9 @@ You can revert this change for their tenant and show identifiable user, group, a
 
 3. Uncheck the statement **Display concealed user, group, and site names in all reports**, and then save your changes.
 
-Beginning on June 23, 2022, an API will gradually become available to all environments for admins to change this setting without needing to visit the Microsoft 365 admin center.
+Starting June 23, 2022, an API will gradually become available to all environments for admins to change this setting without needing to visit the Microsoft 365 admin center.
 
-For more details, see [adminReportSettings API](/graph/api/resources/adminreportsettings?view=graph-rest-beta&preserve-view=true).
+For more information, see [adminReportSettings API](/graph/api/resources/adminreportsettings?view=graph-rest-beta&preserve-view=true).
 
 Two methods have been approved for this API:
 
@@ -203,13 +188,13 @@ Two methods have been approved for this API:
 
 The report will only contain a Privacy Setting property. For more information on Graph API, see [Use the Microsoft Graph API](/graph/use-the-api). You can use the Software Development Kit (SDK) or directly call the API using any program language with network ability. We recommend using [Graph Explorer](/graph/graph-explorer/graph-explorer-overview).
 
-It will take a few minutes for these changes to take effect on the reports in the reports dashboard. This setting also applies to the Microsoft 365 usage reports in [Microsoft Graph](/graph/api/resources/report) and [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics) and [the usage reports in Microsoft Teams Admin center](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). Showing identifiable user information is a logged event in the Microsoft Purview portal audit log.
+It will take a few minutes for these changes to take effect on the reports in the **Reports** dashboard. This setting also applies to the Microsoft 365 usage reports in [Microsoft Graph](/graph/api/resources/report) and [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics) and to [the usage reports in Microsoft Teams Admin center](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). Showing identifiable user information is a logged event in the Microsoft Purview portal audit log.
 
 ## What happens to usage data when a user account is deleted?
 
-Whenever you delete a user's account, Microsoft will delete that user's usage data within 30 days. Deleted users will still be included in the Activity chart totals for the periods they were active in, but will not appear in the User Details table.
+Whenever you delete a user's account, Microsoft will delete that user's usage data within 30 days. Deleted users will still be included in the activity chart totals for the periods they were active in but won't appear in the User Details table.
 
-However, when you select a particular day, up to 28 days from the current date, the report show the user's usage for that day in the User Details table.
+However, when you select a particular day, up to 28 days from the current date, the report shows the user's usage for that day in the User Details table.
 
 ## How do I interpret the last activity date in user, group, or site details in the usage reports?
 

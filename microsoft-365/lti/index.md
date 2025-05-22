@@ -34,9 +34,9 @@ These tools include:
 For general information on managing Microsoft LTI apps, see [Manage Microsoft LTI apps for any LMS](manage-microsoft-one-lti.md).
 
 > [!IMPORTANT]
-> We're streamlining the LTI®  (Learning Tools Interoperability) experiences for education customers who may be using different LMS systems. We're simplifying onboarding and usage by consolidating the capabilities of multiple LTI® tools available today into fewer and more functional tools.
+> We're streamlining the LTI® (Learning Tools Interoperability) experiences for education customers who may be using different LMS systems. We're simplifying onboarding and usage by consolidating the capabilities of multiple LTI tools available today into fewer and more functional tools.
 >
-> The capabilities of the Class Teams LTI® and Meetings LTI® tools are among the first tools updated in this consolidation. Microsoft is announcing the end of support for the Class Teams LTI® and Meetings LTI® tools on 15th June, 2025, as their capabilities will be superseded by a new, unified experience. Release details for the unified experience are forthcoming.
+> The capabilities of the Teams Classes LTI and Meetings LTI tools are among the first tools updated in this consolidation. Microsoft is announcing the end of support for the Teams Classes LTI and Meetings LTI tools on September 15, 2025, as their capabilities will be superseded by a new, unified experience. Release details for the unified experience are forthcoming.
 
 ## OneDrive LTI apps
 

@@ -150,4 +150,4 @@ If there's no administrator for that agreement, ask the VL support team to creat
 
 ## Contact volume licensing support
 
-Submit a case in the admin center > <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Help & Support</a>. If you’re unable to access the admin center, see [Contacting volume licensing support](/licensing/contact-us).
+Submit a case in the admin center > <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Help & Support</a>. If you’re unable to access the admin center, see [Contact volume licensing support](contact-vl-support.md).

@@ -48,7 +48,7 @@ Admin-level search and Purview-based search operate like normal. End-user search
 
 #### Can I archive at the site-level and file-level?
 
-Currently, only full-site archiving and reactivating is possible in this offering. File-level granular archiving support will be released in 2025.
+Currently, only full-site archiving and reactivating is possible in this offering. File-level granular archiving support will be released in 2026. For more information, see the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?id=477371).
 
 #### What’s the availability timing of Microsoft 365 Archive for Microsoft Government Community Cloud (GCC) customers?
 

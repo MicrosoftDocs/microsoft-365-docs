@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: amcdonnell
-ms.date: 05/06/2025
+ms.date: 05/13/2025
 audience: admin
 ms.topic: install-set-up-deploy
 ms.service: microsoft-syntex
@@ -78,6 +78,9 @@ To select which signature providers to use, follow these steps.
 > Although [pay-as-you-go billing](syntex-azure-billing.md) must be set up to use eSignature, you aren't charged for using other signature providers.
 
 ### Allow signature requests in Microsoft Word
+
+> [!NOTE]
+> This feature begins rolling out to users on the Microsoft 365 Beta and Current channels at the end of May.
 
 To let users use SharePoint eSignature in Word, you need to [turn on the Word feature](#turn-on-the-word-feature) and [apply the Office group policy](#apply-the-office-group-policy).
 

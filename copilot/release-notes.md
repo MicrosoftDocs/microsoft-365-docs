@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: mandia
 author: MandiOhlinger
 manager: laurawi
-ms.date: 04/29/2025
+ms.date: 05/13/2025
 audience: Admin
 ms.reviewer: briandesouza
 ms.topic: get-started
@@ -28,6 +28,115 @@ This page lists the latest features and improvements for Microsoft 365 Copilot. 
 
 ## [All features](#tab/all)
 <!--- All features regardless of platform go here  -->
+<!-- 84071,75164,96970,94471,93054,97570,83243,96611,99154,96312,98521,98109,97225,96829,96255,96244,94126,93931,93064,93062,84439,83241,95055,72529,99153 -->
+## May 13, 2025
+Updates released between April 29, 2025, and May 13, 2025.
+### Copilot Studio
+- **Deeper visibility into agent runs**
+
+  Trace every agent session from trigger to transcript. Inspect actions, inputs, and outputs in one place to debug faster, refine behavior, and document compliance.
+ <a href="/power-platform/release-plan/2024wave2/change-history" target="_blank">Learn more.</a>
+- **Monitor autonomous agents with detailed analytics** [Web]
+
+  Instantly see run volume, trigger breakdowns, success rates, action paths, and run-time details for every autonomous agent. Use these insights to spot failures, tune performance, and boost reliability before your users notice issues.
+- **Single connector for knowledge and actions** [Web]
+
+  You can now reuse connector actions across multiple Copilot deployments without recreating them each time. This feature lets you select a previously published action—such as one from Copilot for Sales—and publish it to other endpoints, such as Copilot for Customer Service, with just a few clicks. It’s enabled by default and streamlines deployment while reducing duplication.
+ <a href="/power-platform/release-plan/2024wave2/microsoft-copilot-studio/publish-connector-actions-multiple-copilot-deployments" target="_blank">Learn more.</a>
+### Excel
+- **Advanced analysis with Python and Copilot** [Windows]
+
+  Chat with your spreadsheet and let Copilot run Python scripts to surface trends, build rich visuals, and test what-if scenarios—now fully localized for your team’s language.
+ <a href="https://support.microsoft.com/office/copilot-in-excel-with-python-364e4ae9-9343-4d56-952a-5f62b0f70db6" target="_blank">Learn more.</a>
+- **Ask Copilot about any part of your sheet** [Web, Mac, Windows, iOS]
+
+  When you ask questions about your worksheet, Copilot can look at the content of your sheet and use it to inform an answer to your question. This will include understanding worksheet data on your selected area, beyond tables and ranges, and provide Copilot answers in chat.
+- **Easily access copilot on web** [Web]
+
+  Find a dedicated Copilot icon in your web spreadsheet, allowing you to tap into AI-powered insights and streamline tasks without breaking your workflow.
+ <a href="https://support.microsoft.com/office/get-started-with-copilot-in-excel-d7110502-0334-4b4f-a175-a73abdfc118a" target="_blank">Learn more.</a>
+- **Visual cue for Copilot’s data context** [Web]
+
+  A subtle outline now highlights the exact cells or table Copilot is working with, so you can confirm the right data is selected before insights or edits are generated.
+### Microsoft 365 Admin Center
+- **AI adoption score** [Web]
+
+  A new people experiences category in Adoption Score in the Microsoft 365 admin center introduces AI adoption metrics, helping organizations understand how Microsoft Copilot features are being used across Microsoft 365.
+ <a href="/microsoft-365/admin/adoption/ai-adoption-score#organizational-messages-in-ai-adoption-score" target="_blank">Learn more.</a>
+- **Manage pay-as-you-go billing for Copilot** [Windows, Web]
+
+  Admins can manage pay-as-you-go billing directly within Copilot settings in the Microsoft 365 admin center. This capability is available to users with Global admin, AI admin, and Global reader roles.
+ <a href="/copilot/microsoft-365/pay-as-you-go/setup" target="_blank">Learn more.</a>
+- **Overview of Copilot for admin** [Web]
+
+  Streamline IT management with Copilot’s real-time, contextually relevant insights that help you make faster, data-driven decisions in the Microsoft 365 admin center.
+ <a href="https://aka.ms/copilotinmac" target="_blank">Learn more.</a>
+### Microsoft 365 app
+- **Copilot in Excel with Python for Mac** [Mac]
+
+  Speak plain English and let Copilot write and run Python for forecasting, machine learning, and rich visuals—results land right on the grid in Excel for Mac.
+ <a href="https://support.microsoft.com/office/copilot-in-excel-with-python-364e4ae9-9343-4d56-952a-5f62b0f70db6" target="_blank">Learn more.</a>
+### Microsoft 365 Copilot Chat
+- **Conversation history grouped by time frame**
+
+  Copilot Chat now clusters past sessions into daily and weekly views, making it easier to scan, revisit, and manage your conversations.
+- **Copilot pages in Government Clouds** [Windows]
+
+  Copilot Pages is an interactive, shareable canvas in Microsoft 365 Copilot Chat designed for multiplayer AI collaboration. With Pages, users can turn Copilot responses into something durable with a side-by-side page where users can edit and share with others to collaborate. Now available for Government Cloud users.
+ <a href="https://support.microsoft.com/topic/introducing-microsoft-365-copilot-pages-6674bd51-9ff5-42c4-9256-44d9428a726f" target="_blank">Learn more.</a>
+- **Create web-aware agents in Agent Builder**
+
+  Build declarative agents that draw knowledge from up to four public websites, delivering more precise, source-linked answers inside Microsoft 365 chat experiences.
+ <a href="/microsoft-365-copilot/extensibility/copilot-studio-agent-builder-build" target="_blank">Learn more.</a>
+- **Image generation in mobile Copilot chat** [Android, iOS]
+
+  Create images using natural language to visualize concepts and ideas within the flow of work, directly in Copilot on Microsoft 365, Teams, and Outlook mobile apps.
+- **Unified prompt box across web and work chats** [Windows, Web]
+
+  Enjoy a consistent prompting experience across Copilot Chat with an input box that looks and behaves the same in both work and web chat modes.
+### Microsoft Graph
+- **Agent plugins for Semantic Kernel :** [Developer]
+
+  Accelerate Copilot solutions by adding ready-made plugins that tap Microsoft 365 data and actions through Semantic Kernel—so you can build smarter agents with far less code.
+ <a href="/dotnet/api/microsoft.semantickernel.declarativeagentextensions?view=semantic-kernel-dotnet" target="_blank">Learn more.</a>
+### Microsoft Viva
+- **AI Administrator can manage Microsoft Copilot Dashboard settings** [Web]
+
+  Delegate Copilot Dashboard control to the new Entra AI Administrator role, giving admins the  permissions they need without granting AI admin privileges.
+ <a href="/viva/insights/advanced/admin/manage-settings-copilot-dashboard" target="_blank">Learn more.</a>
+### OneDrive
+- **Ask Copilot questions about images** [Web]
+
+  Select up to five pictures in OneDrive Web and chat with Copilot to summarize, extract text, or describe what’s inside—perfect for cataloging photos or pulling details from scanned documents.
+ <a href="https://support.microsoft.com/topic/ask-about-a-topic-without-opening-your-files-8ea1bb0d-5ae7-4f81-8cb8-cd755862834b" target="_blank">Learn more.</a>
+### PowerPoint
+- **Get slide template suggestions as you create** [Windows]
+
+  Copilot now recommends polished layouts the moment you add or name a slide, letting you stay in the flow and skip manual design hunts.
+ <a href="https://techcommunity.microsoft.com/blog/microsoft365insiderblog/jumpstart-your-presentations-with-slide-starters/4407669" target="_blank">Learn more.</a>
+- **Suggestions for slide templates as you work** [Mac, Web]
+
+  On PowerPoint for Mac, Copilot proposes design-ready layouts as soon as you insert a slide or start typing a title, helping you build polished decks faster.
+ <a href="https://techcommunity.microsoft.com/blog/microsoft365insiderblog/jumpstart-your-presentations-with-slide-starters/4407669" target="_blank">Learn more.</a>
+### Viva Insights
+- **Viva Insights now included in Microsoft 365 Copilot subscriptions** [Windows, Web]
+
+  Create advanced, custom reports with Viva Insights to understand Copilot adoption, productivity and business impact. Full access to Viva Insights is available now with Microsoft 365 Copilot subscriptions.
+### Word
+- **Choose the level of detail for summaries when documents are opened** [Web]
+
+  Tailor each document opening with your preferred summary style—select brief, standard, or detailed insights to match your workflow.
+ <a href="https://support.microsoft.com/office/create-a-summary-of-your-document-with-copilot-in-word-79bb7a0a-3bf7-41fe-8c09-56f855b669bf" target="_blank">Learn more.</a>
+- **Key statistics at a glance in Copilot summaries** [Web]
+
+  Instantly see critical numbers—totals, dates, percentages, and more—in the Understanding tab, so you can grasp a document’s quantitative story in seconds.
+ <a href="https://support.microsoft.com/office/create-a-summary-of-your-document-with-copilot-in-word-79bb7a0a-3bf7-41fe-8c09-56f855b669bf" target="_blank">Learn more.</a>
+- **Suggested questions help you explore any document** [Web]
+
+  The Understanding tab now proposes smart questions about the file you’re reading—just click one to see Copilot’s answer and dive deeper without crafting your own prompt.
+ <a href="https://support.microsoft.com/office/create-a-summary-of-your-document-with-copilot-in-word-79bb7a0a-3bf7-41fe-8c09-56f855b669bf" target="_blank">Learn more.</a>
+
+
 <!-- 81919,84441,95810,96545,96544,78144,73690,82869,77902,94411,98033,97295,96404,97414,83947,81916,96508,96512 -->
 ## April 29, 2025
 Updates released between April 16, 2025, and April 29, 2025.
@@ -225,7 +334,7 @@ Updates released between March 20, 2025, and April 2, 2025.
   Produce a translated copy of your entire presentation in about 40 languages while preserving your slide design and structure, making global collaboration effortless.
  <a href="https://support.microsoft.com/topic/translate-your-presentation-with-copilot-2c622fca-daaf-457c-bc74-f3496cf44a85" target="_blank">Learn more.</a>
 ### Viva Engage
-- **Questions surfacing in Copilot results** []
+- **Questions surfacing in Copilot results**
 
   Viva Engage questions from communities, storyline, and Answers surface in Copilot results.
  <a href="" target="_blank">Learn more.</a>
@@ -1852,6 +1961,40 @@ Updates released between December 18, 2024, and January 7, 2025.
 
 ## [Windows](#tab/win)
 <!--- All features that have 'Windows' tag  -->
+<!-- 96970,94471,97570,83243,96611,97225,96244 -->
+## May 13, 2025
+Updates released between April 29, 2025, and May 13, 2025.
+### Excel
+- **Advanced analysis with Python and Copilot** [Windows]
+
+  Chat with your spreadsheet and let Copilot run Python scripts to surface trends, build rich visuals, and test what-if scenarios—now fully localized for your team’s language.
+ <a href="https://support.microsoft.com/office/copilot-in-excel-with-python-364e4ae9-9343-4d56-952a-5f62b0f70db6" target="_blank">Learn more.</a>
+- **Ask Copilot about any part of your sheet** [Web, Mac, Windows, iOS]
+
+  When you ask questions about your worksheet, Copilot can look at the content of your sheet and use it to inform an answer to your question. This will include understanding worksheet data on your selected area, beyond tables and ranges, and provide Copilot answers in chat.
+### Microsoft 365 Admin Center
+- **Manage pay-as-you-go billing for Copilot** [Windows, Web]
+
+  Admins can manage pay-as-you-go billing directly within Copilot settings in the Microsoft 365 admin center. This capability is available to users with Global admin, AI admin, and Global reader roles.
+ <a href="/copilot/microsoft-365/pay-as-you-go/setup" target="_blank">Learn more.</a>
+### Microsoft 365 Copilot Chat
+- **Copilot pages in Government Clouds** [Windows]
+
+  Copilot Pages is an interactive, shareable canvas in Microsoft 365 Copilot Chat designed for multiplayer AI collaboration. With Pages, users can turn Copilot responses into something durable with a side-by-side page where users can edit and share with others to collaborate. Now available for Government Cloud users.
+ <a href="https://support.microsoft.com/topic/introducing-microsoft-365-copilot-pages-6674bd51-9ff5-42c4-9256-44d9428a726f" target="_blank">Learn more.</a>
+- **Unified prompt box across web and work chats** [Windows, Web]
+
+  Enjoy a consistent prompting experience across Copilot Chat with an input box that looks and behaves the same in both work and web chat modes.
+### PowerPoint
+- **Get slide template suggestions as you create** [Windows]
+
+  Copilot now recommends polished layouts the moment you add or name a slide, letting you stay in the flow and skip manual design hunts.
+ <a href="https://techcommunity.microsoft.com/blog/microsoft365insiderblog/jumpstart-your-presentations-with-slide-starters/4407669" target="_blank">Learn more.</a>
+### Viva Insights
+- **Viva Insights now included in Microsoft 365 Copilot subscriptions** [Windows, Web, TeamsAndSurfaceDevices]
+
+  Create advanced, custom reports with Viva Insights to understand Copilot adoption, productivity and business impact. Full access to Viva Insights is available now with Microsoft 365 Copilot subscriptions.
+
 <!-- 81919,96545,96544,77902,97414,81916,96508,96512 -->
 ## April 29, 2025
 Updates released between April 16, 2025, and April 29, 2025.
@@ -2844,6 +2987,80 @@ Updates released between December 18, 2024, and January 7, 2025.
 
 ## [Web](#tab/web)
 <!--- All features that have 'Web' tag  -->
+<!-- 84071,75164,96970,94471,93054,96312,98109,97225,96255,96244,94126,93064,93062,83241,72529,99153 -->
+## May 13, 2025
+Updates released between April 29, 2025, and May 13, 2025.
+### Copilot Studio
+- **Monitor autonomous agents with detailed analytics** [Web]
+
+  Instantly see run volume, trigger breakdowns, success rates, action paths, and run-time details for every autonomous agent. Use these insights to spot failures, tune performance, and boost reliability before your users notice issues.
+- **Single connector for knowledge and actions** [Web]
+
+  You can now reuse connector actions across multiple Copilot deployments without recreating them each time. This feature lets you select a previously published action—such as one from Copilot for Sales—and publish it to other endpoints, such as Copilot for Customer Service, with just a few clicks. It’s enabled by default and streamlines deployment while reducing duplication.
+ <a href="/power-platform/release-plan/2024wave2/microsoft-copilot-studio/publish-connector-actions-multiple-copilot-deployments" target="_blank">Learn more.</a>
+### Excel
+- **Ask Copilot about any part of your sheet** [Web, Mac, Windows, iOS]
+
+  When you ask questions about your worksheet, Copilot can look at the content of your sheet and use it to inform an answer to your question. This will include understanding worksheet data on your selected area, beyond tables and ranges, and provide Copilot answers in chat.
+- **Easily access copilot on web** [Web]
+
+  Find a dedicated Copilot icon in your web spreadsheet, allowing you to tap into AI-powered insights and streamline tasks without breaking your workflow.
+ <a href="https://support.microsoft.com/office/get-started-with-copilot-in-excel-d7110502-0334-4b4f-a175-a73abdfc118a" target="_blank">Learn more.</a>
+- **Visual cue for Copilot’s data context** [Web]
+
+  A subtle outline now highlights the exact cells or table Copilot is working with, so you can confirm the right data is selected before insights or edits are generated.
+### Microsoft 365 Admin center
+- **AI adoption score** [Web]
+
+  A new people experiences category in Adoption Score in the Microsoft 365 admin center introduces AI adoption metrics, helping organizations understand how Microsoft Copilot features are being used across Microsoft 365.
+ <a href="/microsoft-365/admin/adoption/ai-adoption-score#organizational-messages-in-ai-adoption-score" target="_blank">Learn more.</a>
+
+- **Manage pay-as-you-go billing for Copilot** [Windows, Web]
+
+  Admins can manage pay-as-you-go billing directly within Copilot settings in the Microsoft 365 admin center. This capability is available to users with Global admin, AI admin, and Global reader roles.
+ <a href="/copilot/microsoft-365/pay-as-you-go/setup" target="_blank">Learn more.</a>
+- **Overview of Copilot for admin** [Web]
+
+  Streamline IT management with Copilot’s real-time, contextually relevant insights that help you make faster, data-driven decisions in the Microsoft 365 admin center.
+ <a href="https://aka.ms/copilotinmac" target="_blank">Learn more.</a>
+### Microsoft 365 Copilot Chat
+- **Unified prompt box across web and work chats** [Windows, Web]
+
+  Enjoy a consistent prompting experience across Copilot Chat with an input box that looks and behaves the same in both work and web chat modes.
+### Microsoft Viva
+- **AI Administrator can manage Microsoft Copilot Dashboard settings** [Web]
+
+  Delegate Copilot Dashboard control to the new Entra AI Administrator role, giving admins the  permissions they need without granting AI admin privileges.
+ <a href="/viva/insights/advanced/admin/manage-settings-copilot-dashboard" target="_blank">Learn more.</a>
+### OneDrive
+- **Ask Copilot questions about images** [Web]
+
+  Select up to five pictures in OneDrive Web and chat with Copilot to summarize, extract text, or describe what’s inside—perfect for cataloging photos or pulling details from scanned documents.
+ <a href="https://support.microsoft.com/topic/ask-about-a-topic-without-opening-your-files-8ea1bb0d-5ae7-4f81-8cb8-cd755862834b" target="_blank">Learn more.</a>
+### PowerPoint
+- **Suggestions for slide templates as you work** [Mac, Web]
+
+  On PowerPoint for Mac, Copilot proposes design-ready layouts as soon as you insert a slide or start typing a title, helping you build polished decks faster.
+ <a href="https://techcommunity.microsoft.com/blog/microsoft365insiderblog/jumpstart-your-presentations-with-slide-starters/4407669" target="_blank">Learn more.</a>
+### Viva Insights
+- **Viva Insights now included in Microsoft 365 Copilot subscriptions** [Windows, Web, TeamsAndSurfaceDevices]
+
+  Create advanced, custom reports with Viva Insights to understand Copilot adoption, productivity and business impact. Full access to Viva Insights is available now with Microsoft 365 Copilot subscriptions.
+### Word
+- **Choose the level of detail for summaries when documents are opened** [Web]
+
+  Tailor each document opening with your preferred summary style—select brief, standard, or detailed insights to match your workflow.
+ <a href="https://support.microsoft.com/office/create-a-summary-of-your-document-with-copilot-in-word-79bb7a0a-3bf7-41fe-8c09-56f855b669bf" target="_blank">Learn more.</a>
+- **Key statistics at a glance in Copilot summaries** [Web]
+
+  Instantly see critical numbers—totals, dates, percentages, and more—in the Understanding tab, so you can grasp a document’s quantitative story in seconds.
+ <a href="https://support.microsoft.com/office/create-a-summary-of-your-document-with-copilot-in-word-79bb7a0a-3bf7-41fe-8c09-56f855b669bf" target="_blank">Learn more.</a>
+- **Suggested questions help you explore any document** [Web]
+
+  The Understanding tab now proposes smart questions about the file you’re reading—just click one to see Copilot’s answer and dive deeper without crafting your own prompt.
+ <a href="https://support.microsoft.com/office/create-a-summary-of-your-document-with-copilot-in-word-79bb7a0a-3bf7-41fe-8c09-56f855b669bf" target="_blank">Learn more.</a>
+
+
 <!-- 81919,96545,96544,73690,82869,77902,94411,98033,97295,96404,83947,96508,96512 -->
 ## April 29, 2025
 Updates released between April 16, 2025, and April 29, 2025.
@@ -4138,6 +4355,15 @@ Updates released between December 18, 2024, and January 7, 2025.
   Easily turn plain text or lists into clear, organized tables for better readability and effortless data handling. <a href="https://support.microsoft.com/topic/923d9763-f896-4da7-8a3f-5b12c3bfc475" target="_blank">Learn more.</a>
 
 ## [Android](#tab/androidos)
+
+<!-- 98521 -->
+## May 13, 2025
+Updates released between April 29, 2025, and May 13, 2025.
+### Microsoft 365 Copilot Chat
+- **Image generation in mobile Copilot chat** [Android, iOS]
+
+  Create images using natural language to visualize concepts and ideas within the flow of work, directly in Copilot on Microsoft 365, Teams, and Outlook mobile apps.
+
 ## April 2, 2025
 Updates released between March 20, 2025, and April 2, 2025.
 ### Microsoft 365 Copilot Chat
@@ -4442,6 +4668,19 @@ Updates released between December 18, 2024, and January 7, 2025.
   Create summaries of your Whiteboard content, capturing key points from your collaborative work.
 
 ## [iOS](#tab/appleios)
+
+<!-- 98521,97225 -->
+## May 13, 2025
+Updates released between April 29, 2025, and May 13, 2025.
+### Excel
+- **Ask Copilot about any part of your sheet** [Web, Mac, Windows, iOS]
+
+  When you ask questions about your worksheet, Copilot can look at the content of your sheet and use it to inform an answer to your question. This will include understanding worksheet data on your selected area, beyond tables and ranges, and provide Copilot answers in chat.
+### Microsoft 365 Copilot Chat
+- **Image generation in mobile Copilot chat** [Android, iOS]
+
+  Create images using natural language to visualize concepts and ideas within the flow of work, directly in Copilot on Microsoft 365, Teams, and Outlook mobile apps.
+
 ## April 2, 2025
 Updates released between March 20, 2025, and April 2, 2025.
 ### Microsoft 365 Copilot Chat
@@ -5010,6 +5249,24 @@ Updates released between December 18, 2024, and January 7, 2025.
   Get suggestions for how to rewrite any text in your document, enhancing clarity and effectiveness. <a href="https://support.microsoft.com/topic/923d9763-f896-4da7-8a3f-5b12c3bfc475" target="_blank">Learn more.</a>
 
 ## [Mac](#tab/mac)
+
+<!-- 97225,93931,83241 -->
+## May 13, 2025
+Updates released between April 29, 2025, and May 13, 2025.
+### Excel
+- **Ask Copilot about any part of your sheet** [Web, Mac, Windows, iOS]
+
+  When you ask questions about your worksheet, Copilot can look at the content of your sheet and use it to inform an answer to your question. This will include understanding worksheet data on your selected area, beyond tables and ranges, and provide Copilot answers in chat.
+### Microsoft 365 app
+- **Copilot in Excel with Python for Mac** [Mac]
+
+  Speak plain English and let Copilot write and run Python for forecasting, machine learning, and rich visuals—results land right on the grid in Excel for Mac.
+ <a href="https://support.microsoft.com/office/copilot-in-excel-with-python-364e4ae9-9343-4d56-952a-5f62b0f70db6" target="_blank">Learn more.</a>
+### PowerPoint
+- **Suggestions for slide templates as you work** [Mac, Web]
+
+  On PowerPoint for Mac, Copilot proposes design-ready layouts as soon as you insert a slide or start typing a title, helping you build polished decks faster.
+ <a href="https://techcommunity.microsoft.com/blog/microsoft365insiderblog/jumpstart-your-presentations-with-slide-starters/4407669" target="_blank">Learn more.</a>
 
 <!-- 78144,77902 -->
 ## April 29, 2025

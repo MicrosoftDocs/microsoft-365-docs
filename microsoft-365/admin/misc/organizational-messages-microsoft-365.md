@@ -62,23 +62,25 @@ Organizational messages’ centralized experience within Microsoft 365 admin cen
 
 Before working with organizational messages, make sure your team satisfies the following requirements:
 
-- **Tenant** see [Setting tenant policies](#setting-tenant-policies).
+- **Tenant** See [Setting tenant policies](#setting-tenant-policies).
 
-- **Authors** anyone in your organization who wants to create messages must have one of these following admin roles assigned to them within Microsoft 365 admin center:
+- **Authors** Anyone in your organization who wants to create messages must have one of these following admin roles assigned to them within Microsoft 365 admin center:
 
   - [Global Administrator](/azure/active-directory/roles/permissions-reference#global-administrator)
 
   - [Organizational Messages Writer](/azure/active-directory/roles/permissions-reference#organizational-messages-writer)
 
-- **Approvers** anyone in your organization who is designated a responsible party for approving customized messages must have one of these following admin roles assigned to them within Microsoft 365 admin center:
+- **Approvers** Anyone in your organization who is designated a responsible party for approving customized messages must have one of these following admin roles assigned to them within Microsoft 365 admin center:
 
   - [Global Administrator](/azure/active-directory/roles/permissions-reference#global-administrator)
 
   - [Organizational Messages Approver](/entra/identity/role-based-access-control/permissions-reference#organizational-messages-approver)
 
-- **Message recipients** anyone in your organization who might receive messages from your authors must have access to the Microsoft products to which the messages are configured to be delivered. (End users aren't required to have any Microsoft Entra roles to receive organizational messages.)
+- **Message recipients** Anyone in your organization who might receive messages from your authors must have access to the Microsoft products to which the messages are configured to be delivered. (End users aren't required to have any Microsoft Entra roles to receive organizational messages.)
 
   - For example, any message configured to be delivered to a Windows channel, like Windows Spotlight, requires that recipients use **Windows 10/11 Enterprise**.
+
+- **Devices** We support Microsoft Entra ID joined devices, but not Microsoft Entra (AD) hybrid joined devices.
 
 To ensure users can communicate with organizational messages, the following endpoints must be opened:
 
@@ -136,7 +138,7 @@ If you have the Organizational Messages Approver Microsoft Entra role as describ
 
 4. If you believe this message is appropriate for delivering to users in your tenant, you can optionally add a comment and select **Approve**.
 
-5. However, if you believe the message is not ready or appropriate for delivering to your tenant’s users, you must add a comment in the text field and select **Reject**.
+5. However, if you believe the message isn't ready or appropriate for delivering to your tenant’s users, you must add a comment in the text field and select **Reject**.
 
 ### How to overcome a rejected message (Withdraw)
 
@@ -176,12 +178,12 @@ Users with the Organizational Messages Writer Microsoft Entra role described pre
 
 - **Recipients** for setting the groups within your organization that should receive the message.
 
-- **Schedule** for configuring the start and end dates as well as the frequency with which the system will send the message to the same user over time. If users don't select the message, it'll reappear based on the frequency set by the admin when creating organizational messages. If they do select the message, it won't reappear for a year.
+- **Schedule** for configuring the start and end dates and the frequency with which the system will send the message to the same user over time. If users don't select the message, it reappears based on the frequency set by the admin when creating organizational messages. If they do select the message, it won't reappear for a year.
 
 - **Finish** for reviewing the message before scheduling or sending for approval by your organization’s approvers.
 
 > [!NOTE]
-> To ensure tenant-based targeting, the organizational messages system might require up to 24-48 hours to establish any tenant that has not scheduled a message within the last 30 days.
+> To ensure tenant-based targeting, the organizational messages system might require up to 24-48 hours to establish any tenant that hasn't scheduled a message within the last 30 days.
 
 ### Choosing custom or premade messages
 
@@ -200,7 +202,7 @@ There are two primary forms of message creation that are enabled in this experie
 
 2. You can select **Save and close** at any point to save the message as a new draft.
 
-3. Once saved, you can see your message at the top of the Manage table.
+3. Once saved, you can see your message at the top of the **Manage** table.
 
 4. To go back to making your message, select the draft message’s name to invoke the message details panel.
 

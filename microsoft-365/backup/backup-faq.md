@@ -72,7 +72,7 @@ The recovery point objective (RPO) is the maximum amount of time between the mos
 
 - For OneDrive and SharePoint, the RPO for the trailing two weeks is 10 minutes. This means if it's Monday at 8:00 AM, you can go back in time to any 10-minute period up to two weeks in the past. Beyond that, you can go to any one week period of time in past from 2 to 52 weeks in the past.
 
-- For Exchange Online, the RPO is 10 minutes, meaning the most amount of data that can be lost due to a data destruction event is roughly 10 minutes’s worth of data.
+- For Exchange Online, the RPO is 10 minutes, meaning the most amount of data that can be lost due to a data destruction event is roughly 10 minutes’ worth of data.
 
 Let's start with what it doesn't mean: We are *not* taking snapshots every 10 minutes.
 
@@ -92,7 +92,7 @@ If the user has been deleted within the past 30 days, the best option is to rest
 
 For OneDrive, you can restore the OneDrive to the original URL or a new URL. At that time, the OneDrive is in an "orphaned" state. To connect the OneDrive to a user, see [Fix site user ID mismatch in SharePoint or OneDrive](/sharepoint/troubleshoot/sharing-and-permissions/fix-site-user-id-mismatch).
 
-For Exchange, if the user account is permanently deleted, Microsoft 365 Backup retains the inactive mailbox for the duration of the backup policy. To recover the inactive mailbox, follow the guidance at [Recover an inactive mailbox](/purview/recover-an-inactive-mailbox) to convert the inactive mailbox to a new, active mailbox. Once the inactive mailbox is recovered, remove the deleted user from the backup policy and then add the new user to the backup policy to access backups from the recovered mailbox.
+For Exchange, if the user account is permanently deleted, Microsoft 365 Backup retains the inactive mailbox for the duration of the backup policy. To recover the inactive mailbox, follow the guidance at [Recover an inactive mailbox](/purview/recover-an-inactive-mailbox) to convert the inactive mailbox to a new, active mailbox. Once the inactive mailbox is recovered, remove the deleted user from the backup policy and then add the new user to the backup policy to access backups from the recovered mailbox.  Note that only the [Recover an inactive mailbox](/purview/recover-an-inactive-mailbox) process is supported. The [Restore an inactive mailbox](/purview/restore-an-inactive-mailbox) process will not preserve the backup data from the old mailbox. 
 
 #### If I transfer control of the Backup tool from the native first-party Microsoft 365 application to a third-party application built on the Microsoft 365 Backup Storage platform, will I be able to revert control back to the first-party application at a later date?
 

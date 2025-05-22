@@ -7,7 +7,7 @@ audience: Admin
 ms.topic: article
 ms.service: loop
 ms.reviewer: michalbr, dancost
-ms.date: 04/22/2025
+ms.date: 05/14/2025
 ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection: 
@@ -30,19 +30,18 @@ appliesto:
 
 Loop content is stored in SharePoint, OneDrive, and [SharePoint Embedded](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/cta), allowing familiar management within existing file management workflows. Where the content was originally created determines its storage location:
 
-|Content content originally created in|Content stored in SharePoint Embedded|Content stored in SharePoint Site|Content stored in User's OneDrive|
-|-----|-----|-----|-----|
-|Copilot Pages|✔️in user-owned container|||
-|Copilot Notebooks|✔️in user-owned container|||
-|Loop app, My workspace|✔️in user-owned container|||
-|Loop app, shared workspace|✔️in shared container|||
-|Teams channel meeting||✔️in 📁`Meetings`||
-|Teams channel||✔️in Channel folder||
-|Teams private chat|||✔️in 📁`Microsoft Teams Chat files`|
-|Teams private meeting|||✔️in 📁`Meetings`|
-|Outlook email message|||✔️in 📁`Attachments`|
-|OneNote for Windows or for the web|||✔️in 📁`OneNote Loop files`|
-|Whiteboard|||✔️in 📁`Whiteboard\Components`|
+|Content content originally created in|Content stored in SharePoint Embedded|Content stored in SharePoint Site|Content stored in User's OneDrive|Lifetime Management|
+|-----|-----|-----|-----|-----|
+|Copilot Pages|✔️in user-owned container|||user account|
+|Copilot Notebooks|✔️in user-owned container|||user account|
+|Loop app, My workspace|✔️in user-owned container|||user account|
+|Loop app, shared workspace|✔️in shared container|||workspace owners|
+|Teams channel meeting||✔️in 📁`Meetings`||M365 Group|
+|Teams channel||✔️in Channel folder||M365 Group|
+|Teams private chat|||✔️in 📁`Microsoft Teams Chat files`|user account|
+|Teams private meeting|||✔️in 📁`Meetings`|user account|
+|OneNote for Windows or for the web|||✔️in 📁`OneNote Loop files`|user account|
+|Whiteboard|||✔️in 📁`Whiteboard\Components`|user account|
 
 ## Storage quota
 

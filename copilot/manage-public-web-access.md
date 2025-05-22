@@ -3,7 +3,7 @@ title: Data, privacy, and security for web search in Microsoft 365 Copilot and M
 description: "Learn how to manage Microsoft 365 Copilot and Microsoft 365 access to web content for your organization."
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dansimp
 ms.topic: concept-article
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
@@ -12,6 +12,7 @@ ms.collection:
 - privacy-copilot 
 - m365copilot
 - magic-ai-copilot
+- must-keep
 hideEdit: true
 ms.date: 05/05/2025
 ---

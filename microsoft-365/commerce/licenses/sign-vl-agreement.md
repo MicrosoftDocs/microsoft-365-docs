@@ -231,7 +231,7 @@ Remember, the person named on the agreement by the reseller to manage licenses i
 
 ## Contact support
 
-For support with volume licensing e-signature process customers can work with their Microsoft partner or seller, or by [Contacting Volume Licensing Support](/licensing/contact-us).
+For support with volume licensing e-signature process customers can work with their Microsoft partner or seller, or by [Contact volume licensing support](contact-vl-support.md).
 
 ## Related content
 

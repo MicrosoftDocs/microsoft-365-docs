@@ -9,12 +9,13 @@ audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: high
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
 - highpri
 - Adm_O365
 - Adm_TOC
+- ContentEnagagementFY25
 ms.custom: 
 - VSBFY23
 - AdminSurgePortfolio

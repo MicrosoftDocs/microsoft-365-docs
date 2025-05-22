@@ -162,7 +162,7 @@ Alternatively, you can [create a Microsoft technical support case](https://suppo
 
 Volume Licensing Services can help you navigate the VL experience in Microsoft 365 admin center, and confirm the availability of specific download files in the VL catalog.
 
-Submit a case in the admin center by going to <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Help & Support</a>. If you're unable to access the admin center, see [Contacting volume licensing support](/licensing/contact-us).
+Submit a case in the admin center by going to <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Help & Support</a>. If you're unable to access the admin center, see [Contact volume licensing support](contact-vl-support.md).
 
 > [!TIP]
 > Creating your support case online before your phone support is faster, because your contact information is captured upfront and you immediately receive a case number to give to our support team when you call.

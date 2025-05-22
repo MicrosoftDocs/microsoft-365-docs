@@ -102,3 +102,19 @@ landingContent:
             url: https://www.youtube.com/watch?v=BRN-zfy0ncI
           - text: Move users to a different subscription
             url: https://www.youtube.com/watch?v=IgXxC1H1XU0
+
+  # Card
+  - title: Manage volume licensing
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Sign in to the Microsoft 365 admin center (volume licensing)
+            url: licenses/vl-sign-in.md
+          - text: Download volume licensing products
+            url: licenses/download-vl-products.md
+          - text: Find and use product keys for volume licensing
+            url: licenses/product-keys-for-vl.md
+          - text: Manage License Reservations for volume licensing
+            url: licenses/manage-license-reservations-vl.md
+          - text: Contact volume licensing support
+            url: licenses/contact-vl-support.md

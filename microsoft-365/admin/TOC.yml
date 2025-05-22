@@ -330,6 +330,8 @@ items:
               href: activity-reports/sharepoint-activity-ww.md
             - name: SharePoint site usage
               href: activity-reports/sharepoint-site-usage-ww.md
+            - name: SharePoint storage
+              href: activity-reports/sharepoint-storage-reports.md 
             - name: Visio activity
               href: activity-reports/visio-activity.md
             - name: Viva Goals activity

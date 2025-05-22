@@ -52,6 +52,8 @@ items:
           href: licenses/subscriptions-and-licenses.md
     - name: Manage volume licensing
       items:
+        - name: Manage volume licensing agreements
+          href: licenses/manage-volume-licensing.md
         - name: Sign in to the Microsoft 365 admin center
           href: licenses/vl-sign-in.md
         - name: Sign your volume licensing agreement
@@ -69,9 +71,11 @@ items:
         - name: Activate online services
           href: licenses/online-service-activation-vl.md
         - name: Online service activation for Open programs
-          href: licenses/online-service-activation-faq.yml
+          href: licenses/online-service-activation-open-programs.md
         - name: Volume licensing invoices
           href: licenses/volume-licensing-invoices.md
+        - name: Contact volume licensing support
+          href: licenses/contact-vl-support.md
     - name: Bills and payments
       items:
         - name: View your invoice

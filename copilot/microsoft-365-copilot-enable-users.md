@@ -1,11 +1,11 @@
 ---
-title: "Enable users for Microsoft 365 Copilot"
+title: Microsoft 365 Copilot welcome email and feedback
 f1.keywords:
 - NOCSH
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 01/16/2025
+ms.date: 05/20/2025
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-copilot
@@ -14,47 +14,32 @@ ms.collection:
 - scotvorg
 - m365copilot
 - magic-ai-copilot
-description: "Learn about the steps to deploy Microsoft 365 Copilot to your users."
+description: Enterprise and company IT admins can send a Microsoft 365 Copilot welcome email to users and enable feedback. This welcome email is part of the Copilot adoption and onboarding process.
 appliesto:
   - ✅ Microsoft 365 Copilot
 ---
 
-# Enable users for Microsoft 365 Copilot
+# Welcome users and enable feedback for Microsoft 365 Copilot
 
-There are three main steps to deploy Microsoft 365 Copilot in your organization:
+[Microsoft 365 Copilot](microsoft-365-copilot-overview.md) is an AI-powered productivity tool that helps users with everyday tasks.
 
-1. Review the [prerequisites](microsoft-365-copilot-requirements.md) and verify that your organization is prepared for Microsoft 365 Copilot.
+As part of your [Microsoft 365 Copilot adoption](microsoft-365-copilot-enablement-resources.md), you can send a welcome email to your Microsoft 365 Copilot users that announces Microsoft 365 Copilot and its features. You can also enable feedback for Microsoft 365 Copilot users.
 
-2. Assign the required licenses to your users.
+:::image type="content" source="media/microsoft-365-copilot-enablement-resources/adopt-copilot-welcome-email-feedback.svg" alt-text="Diagram that shows the send welcome email and enable feedback step to adopt and enable Microsoft 365 Copilot." lightbox="media/microsoft-365-copilot-enablement-resources/adopt-copilot-welcome-email-feedback.svg":::
 
-3. Send an email to your users announcing Microsoft 365 Copilot and its features.
+This article provides information about how to send users a welcome email, enable feedback, and review the Microsoft 365 Copilot usage activity report.
 
-You can use the [Microsoft 365 Copilot setup guide](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide) in the Microsoft 365 admin center to perform all three steps, or use the steps described in this article.
+This article applies to:
 
-## Assign licenses
-
-Before you can assign Copilot licenses, you need to make sure that you've already provisioned users in your tenant. If you haven't done so yet, you can follow the steps in the [Microsoft 365 Copilot setup guide](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide) or [Add users and assign licenses in Microsoft 365](/microsoft-365/admin/add-users/add-users). These resources will guide you through the process of creating users and assigning licenses. To learn more about assigning Microsoft 365 licenses with PowerShell, see [Assign licenses to user accounts](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell).
-
-To assign and manage Copilot licenses, you can use the Microsoft 365 admin center. Here are the steps:
-
-1. Sign in to the Microsoft 365 admin center and go to **Billing** > **Licenses**.
-2. Select **Microsoft 365 Copilot**.
-3. In the product details page, assign licenses to users and manage their access to Copilot and other apps and services.
-4. To check if a user has been added, go to **Users** and then **Active Users**. The user will be displayed along with their active license.
-
-> [!IMPORTANT]
-> Assigning Copilot licenses to cross-tenant users, including guest users, is not currently supported.
-
-You can also manage licenses from the Copilot page in the Microsoft 365 admin center. To learn more, see [Copilot page in the Microsoft 365 admin center](microsoft-365-copilot-page.md).
-
-Once you've assigned licenses, the Copilot experience will automatically appear for users in Microsoft 365 Apps. In some experiences, like Word, a Copilot dialog will appear when creating a new document. In other experiences, Copilot is quickly accessible on the Ribbon.
-
->[!NOTE]
->For Education customers, the Copilot license is listed under **Microsoft 365 A3 Extra Features for faculty** or **Microsoft 365 A5 Extra Features for faculty**.
+- Microsoft 365 Copilot
 
 ## Send welcome email
 
-After licensing your users for Microsoft 365 Copilot, we recommend sending them a welcome email to introduce them to Microsoft 365 Copilot and help them understand what it can do for them. The easiest way to do this is to use the [Microsoft 365 Copilot setup guide](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide), which includes an option for sending a welcome email to your Copilot users. Here's an example of this email:
+After you [set up Microsoft 365 Copilot and assign licenses](microsoft-365-copilot-setup.md) to your users, we recommend you send your users a welcome email. The email should introduce them to Microsoft 365 Copilot and help them understand what Copilot can do for them.
+
+- To send a welcome email, use the [Microsoft 365 Copilot setup guide in the Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide) .
+
+This guide includes an option for sending a welcome email to your Copilot users. For example, your email can look like the following email:
 
 :::image type="content" source="media/copilot-welcome-email-jan.png" alt-text="An image of an email introducing Microsoft 365 Copilot and its capabilities that an admin can provide to users.":::
 
@@ -62,8 +47,23 @@ The welcome email also includes a link to [Microsoft Copilot help and learning](
 
 ## Enable feedback
 
-We recommend that you enable all feedback settings for the Microsoft 365 Apps. This allows Microsoft 365 Copilot users to provide details with their thumbs up or thumbs down reaction to what Copilot produced from their prompt. You can use either the [cloud policy service](https://config.office.com) or group policies to enable the feedback for your users. Once all the policies are enabled, users will have the option to provide logs, screenshots, an email address for further contact about their feedback submission.
+We recommend that you enable all feedback settings for the Microsoft 365 Apps.
 
-## Microsoft 365 Copilot usage activity report
+This option allows Microsoft 365 Copilot users to provide details with a thumbs up or thumbs down reaction to a Copilot prompt response.
 
-After your users have had a chance to use Copilot, we recommend running and reviewing the [Microsoft 365 Copilot usage report](/microsoft-365/admin/activity-reports/microsoft-365-copilot-usage) to get a summary of user adoption, retention, and engagement with Microsoft 365 Copilot. The report can be found in the Microsoft 365 admin center under **Reports** > **Usage**.
+- To enable the feedback for your users, you can use the [cloud policy service](https://config.office.com) or group policies.
+
+When all the policies are enabled, users can provide logs, screenshots, and a contact email address for their feedback submission.
+
+## Review the Copilot usage activity report
+
+After your users start using Copilot, we recommend running and reviewing the [Microsoft 365 Copilot usage report](/microsoft-365/admin/activity-reports/microsoft-365-copilot-usage). This report summarizes user adoption, retention, and engagement with Microsoft 365 Copilot.
+
+- The report is in the [Microsoft 365 admin center](https://admin.microsoft.com) > **Reports** > **Usage**.
+
+To learn more about the Microsoft 365 Copilot reports, see [Microsoft 365 Copilot reporting options for admins](microsoft-365-copilot-reports-for-admins.md).
+
+## Related articles
+
+- [Microsoft 365 Copilot adoption guide and overview for IT admins](microsoft-365-copilot-reports-for-admins.md)
+- [Advanced deployment guides for Microsoft 365 and Office 365 products](/microsoft-365/enterprise/setup-guides-for-microsoft-365)

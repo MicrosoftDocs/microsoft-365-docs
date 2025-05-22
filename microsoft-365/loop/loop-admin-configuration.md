@@ -1,5 +1,5 @@
 ---
-ms.date: 04/22/2025
+ms.date: 05/14/2025
 title: "Manage Copilot Pages, Copilot Notebooks, and Loop components in your organization"
 ms.reviewer: dancost, tonchan
 ms.author: jenz
@@ -24,7 +24,7 @@ search.appverid:
 description: "Manage Copilot Pages, Copilot Notebooks, and Loop in your organization"
 ---
 
-# Loop admin policies for Copilot Pages, Copilot Notebooks, Loop components, and Loop workspaces
+# Admin policies for Copilot Pages, Copilot Notebooks, Loop components, and Loop workspaces
 
 Copilot Pages, Copilot Notebooks, and Loop components and integrations are backed by `.loop` files (earlier releases of Loop created these as `.fluid` files), stored in OneDrive, SharePoint, or [SharePoint Embedded](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/cta). Learn more about [storage](/microsoft-365/loop/loop-workspaces-storage-permission#storage), which is quota combined with SharePoint in your tenant. 
 

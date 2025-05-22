@@ -135,11 +135,11 @@ Run the commands that assign your on-premises web service URLs as Microsoft Entr
 5. If you don't see your internal and external MAPI/HTTP, EWS, ActiveSync, OAB, and Autodiscover records in this list, you must add them using the command below (the example URLs are `mail.corp.contoso.com` and `owa.contoso.com`, but you'd **replace the example URLs with your own**). Ensure that the generic AutoDiscover record for your domain (for example `autodiscover.contoso.com`) is included as well:
 
    ```powershell
-   $x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000
-   $x.ServicePrincipalnames.Add("https://mail.corp.contoso.com/")
-   $x.ServicePrincipalnames.Add("https://owa.contoso.com/")
-   $x.ServicePrincipalnames.Add("https://autodiscover.contoso.com/")
-   Set-MSOLServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
+   $x = Get-MgServicePrincipal -Filter "AppId eq '00000002-0000-0ff1-ce00-000000000000'"
+   $x.ServicePrincipalNames += "https://mail.corp.contoso.com/"
+   $x.ServicePrincipalNames += "https://owa.contoso.com/"
+   $x.ServicePrincipalNames += "https://autodiscover.contoso.com/"
+   Update-MgServicePrincipal -ServicePrincipalId $x.Id -ServicePrincipalNames $x.ServicePrincipalNames
    ``` 
 
 6. Verify that your new records were added by running the `Get-MgServicePrincipal` command from step 4 again, and validate the output. Compare the list from before to the new list of SPNs. You might also note down the new list for your records. If you're successful, you should see the two new URLs in the list. Going by our example, the list of SPNs now includes the specific URLs `https://mail.corp.contoso.com` and `https://owa.contoso.com`.

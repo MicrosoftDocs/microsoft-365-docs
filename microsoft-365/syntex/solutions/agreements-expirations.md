@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: vbarla
-ms.date: 04/10/2025
+ms.date: 05/19/2025
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -44,11 +44,11 @@ If the **Expiration date** isn't included in the agreement, it's treated as an e
 
 When the **Expiration date** field is filled in the agreement, the following actions occur:
 
-**Two months before the expiration date:**
+**Three months before the expiration date:**
 
 - A reminder notification is sent to the [default recipients](#default-recipients-of-notifications), indicating the specific date the agreement will expire.
 
-- This notification is sent weekly for the two months leading up to the expiration date.
+- This notification is sent weekly for the three months leading up to the expiration date.
 
 **On the expiration date:**
 

@@ -1,11 +1,11 @@
 ---
-title: Microsoft 365 Copilot data protection and auditing architecture
+title: Microsoft 365 Copilot data protection architecture
 f1.keywords:
 - NOCSH
 ms.author: mandia
 author: MandiOhlinger
 manager: laurawi
-ms.date: 02/13/2025
+ms.date: 05/12/2025
 audience: Admin
 ms.reviewer: mandia, bcarter, ruihu, cabailey
 ms.topic: overview
@@ -22,9 +22,9 @@ appliesto:
   - ✅ Microsoft 365 Copilot
 ---
 
-# Architecture diagrams of licensed Microsoft 365 data protection, oversharing, and auditing features that affect Microsoft 365 Copilot
+# Architecture diagrams of Microsoft 365 data protection features that affect Microsoft 365 Copilot
 
-Microsoft 365 includes features that help you protect your data and audit usage, including Microsoft Purview sensitivity labels & encryption, and SharePoint oversharing controls. These features affect [Microsoft 365 Copilot](microsoft-365-copilot-overview.md) and how Copilot interacts with your data.
+Your Microsoft 365 subscription includes features that help you protect your data, including Microsoft Purview sensitivity labels & encryption, and SharePoint oversharing controls. These features affect [Microsoft 365 Copilot](microsoft-365-copilot-overview.md) and how Copilot interacts with your data.
 
 First and foremost, [Microsoft 365 Copilot](microsoft-365-copilot-overview.md) honors your security & data protection controls. There are also features you can use to audit Copilot usage data.
 

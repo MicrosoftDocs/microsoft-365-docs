@@ -156,11 +156,9 @@ Payment instructions depend on your payment method and are provided at the botto
 
 ### Why did I get a second invoice for the same subscription in one month?
 
-We changed our billing periods for Microsoft 365 for business products. This change updates invoicing from billing in arrears for all charges to paying upfront for purchases, renewals, and recurring charges.
+We changed our billing periods for Microsoft 365 for business products. This change updates invoicing from billing in arrears for all charges to paying upfront for purchases, renewals, and recurring charges. This means when this change takes effect when your subscription renews, you will receive two invoices for the same subscription in the same month, but the charges are for different service periods.
 
-Changes like adding or removing licenses and moving to a different subscription are still billed around the beginning of the month. This invoice has a billing period that spans the previous month.
-
-Purchases, renewals, and recurring charges are now billed upfront. This invoice now has a billing period of a single day. You can find the transaction type in the invoice details in the Microsoft 365 admin center.
+For example, in the month your subscription renews, you receive the final invoice for the previous term. This final invoice has a billing period that covers the previous month, like 01/01/2025 to 01/31/2025. You also receive another invoice for the upcoming term. This new invoice has a single day as the billing period, like 02/15/2025, and is the first invoice for the upcoming term. These invoices are for different charge dates/service periods which can be confirmed on the second page of the invoice .PDF or within the invoice details on the **Bills and payments** page of the Microsoft 365 Admin Center. Renewal is the only time you receive two invoices for the same subscription in the same month, unless you make changes, like adding licenses.
 
 ### Why is the billing period a single day?
 

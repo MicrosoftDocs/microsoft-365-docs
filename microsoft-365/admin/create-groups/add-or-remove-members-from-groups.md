@@ -1,7 +1,7 @@
 ---
 title: "Add or remove members from Microsoft 365 groups"
-ms.reviewer: rahulnayak
-ms.date: 06/27/2024
+ms.reviewer: batre
+ms.date: 05/21/2025
 f1.keywords: NOCSH
 author: DaniEASmith
 ms.author: danismith

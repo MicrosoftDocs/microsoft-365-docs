@@ -11,6 +11,7 @@ ms.collection:
 - privacy-copilot
 - m365copilot
 - magic-ai-copilot
+- must-keep
 hideEdit: true
 ms.date: 04/16/2025
 ---

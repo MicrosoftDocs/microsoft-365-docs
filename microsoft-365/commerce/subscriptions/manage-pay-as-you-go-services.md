@@ -1,5 +1,5 @@
 ---
-title: "Buy a pay-as-you-go calling plan for your Microsoft Teams subscription"
+title: Enable pay-as-you-go for your subscription
 f1.keywords: 
 - MACBillingPurchasePDPPayG
 - MACBillingPurchaseIDPPayG

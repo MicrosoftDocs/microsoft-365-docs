@@ -224,7 +224,7 @@ For more information, contact your Microsoft partner or seller.
 > Microsoft Volume Licensing Support teams don't make changes to volume licensing orders or invoices.
 
 For assistance to sign in to the Microsoft 365 admin center and locating volume licensing invoices, Bill to Contacts and Invoice Readers, submit a case in the admin center > <a href=
-"https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Help & Support</a>. If you're unable to access the admin center, see [Contacting volume licensing support](/licensing/contact-us).
+"https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Help & Support</a>. If you're unable to access the admin center, see [Contact volume licensing support](contact-vl-support.md).
 
 Customers should contact their Microsoft partner or seller for questions relating to the following issues:
 
