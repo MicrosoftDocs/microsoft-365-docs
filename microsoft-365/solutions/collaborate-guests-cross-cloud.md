@@ -41,6 +41,7 @@ Note that tenants in Microsoft Azure Government (Microsoft 365 GCC High and DoD)
 
 > [!NOTE]
 > VDI clients using the new [SlimCore-based optimization](/microsoftteams/vdi-2#cross-cloud-collaboration) are supported for cross-cloud meetings. WebRTC-based optimization doesn't support cross-cloud meetings.
+
 > [!NOTE]
 > B2B Member accounts aren't supported for cross cloud guests.  All cross cloud users must be of type B2B guest.
 
