@@ -144,6 +144,10 @@ Azure portal supports a similar inactivity feature, but is tracked in the Azure 
 > [!Note]
 > When initially activated within the Azure portal, the timeout duration by default inherits from Microsoft 365 admin center idle session timeout setting. However, the timeout policy for the Azure portal can be explicitly configured within the portal itself.  For more information, see [Azure portal: Signing-Out + Notification](/azure/azure-portal/set-preferences#signing-out--notifications).
 
+### I'm using Microsoft Fabric, how does Idle Session Timeout impact long-running Fabric Notebook executions?
+
+If you are using a non-managed device where Idle Session Timeout is enabled, long-running interactive Fabric Notebook executions may be affected if a user goes inactive beyond the set tenant-wide session timeout policy. This is a pro-active measure to ensure idle devices are not accessible by outside parties. To mitigate, we advise users to not go inactive within M365 web apps while long-running executions are running. 
+
 ### I want to make changes to the idle session timeout policy or delete it. How can I do that?
 
 Update the policy:

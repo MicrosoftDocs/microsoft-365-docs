@@ -20,7 +20,7 @@ description: Learn how to manage attachments in the SharePoint Agreements soluti
 
 # Manage attachments in SharePoint Agreements
 
-Attachments are files related to the agreement and are also commonly referred to as supporting documents. Typically attachments might be meeting minutes, financial documents, emails, or other types that contribute the agreement package.
+Attachments are files related to the agreement and are also commonly referred to as supporting documents. Typically attachments might be meeting minutes, financial documents, emails, or other types that contribute the agreement package. 
 
 ## Add an attachment
 
@@ -32,7 +32,7 @@ To add an attachment, follow these steps:
 
 2. From the **Agreements** tab, select the agreement to which you wish to add an attachment.
 
-3. With the agreement viewer panel now open, select **Attachments** from the **Details** dropdown.
+3. With the agreement viewer panel now open, select **Details** > **Attachments**.
 
 4. From the **Attachments** panel, select **Add attachments** to open the file picker.
 
@@ -56,7 +56,7 @@ To view the attached files from with in the Agreements teams app, follow these s
 
 2. From the **Agreements** tab, select an agreement which has the attachment icon next to the filename.
 
-3. With the agreement viewer panel now open, select **Attachments** in the upper right of the panel.
+3. With the agreement viewer panel now open, select **Details** > **Attachments**.
 
    ![A screenshot of the agreement viewer page.](../../media/content-understanding/agreements-attachments.png)
 
@@ -77,7 +77,7 @@ To delete an existing attachment from an agreement, follow these steps:
 
 2. From the **Agreements** tab, select an agreement which has the attachment icon next to the filename.
 
-3. With the agreement viewer panel now open, select **Attachments** in the upper right of the panel.
+3. With the agreement viewer panel now open, select **Attachments** from the **Details** dropdown.
 
 4. From the **Attachments** panel, select **More options** (***...***) next to the name of the attachment you want to remove, and then select **Delete**.
 

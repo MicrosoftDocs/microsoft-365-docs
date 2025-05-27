@@ -15,6 +15,7 @@ ms.collection:
 - m365solution-3tiersprotection
 - m365solution-securecollab
 - m365initiative-externalcollab
+- guest-access-external-collab
 ms.custom: 
 ms.localizationpriority: medium
 f1.keywords: NOCSH

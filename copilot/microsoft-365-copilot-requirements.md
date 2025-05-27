@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 05/15/2025
+ms.date: 05/20/2025
 audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-copilot
@@ -27,6 +27,8 @@ appliesto:
 As a result of this integration, there are some app and network requirements for Microsoft 365 Copilot to integrate with your Microsoft 365 apps. These requirements are nearly identical to the requirements for using Microsoft 365 Apps.
 
 As part of your [Microsoft 365 Copilot adoption](microsoft-365-copilot-enablement-resources.md), make sure you configure the app and network requirements that allow the app integration.
+
+:::image type="content" source="media/microsoft-365-copilot-enablement-resources/adopt-copilot-apps-privacy-network.svg" alt-text="Diagram that shows the app and network requirements step to adopt and enable Microsoft 365 Copilot." lightbox="media/microsoft-365-copilot-enablement-resources/adopt-copilot-apps-privacy-network.svg":::
 
 This article lists the Microsoft 365 app and network requirements to use Microsoft 365 Copilot in your Microsoft 365 apps.
 

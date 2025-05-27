@@ -3,7 +3,7 @@ title: "Transparency Note for Microsoft 365 Copilot"
 description: "Transparency Note for Microsoft 365 Copilot"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dansimp
 ms.topic: concept-article
 ms.service: microsoft-365-copilot
 ms.localizationpriority: high

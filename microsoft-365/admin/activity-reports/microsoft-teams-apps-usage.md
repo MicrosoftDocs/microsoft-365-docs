@@ -62,7 +62,7 @@ The Teams app usage report is available in the Microsoft 365 admin center and th
 
 - The start date for all installs metrics is October 2021. Only apps installed after that date are counted.
 
-- App IDs in this report are the External (manifest) App IDs. For more information on how to tie this ID to an app in the Manage Apps experience in Teams Admin Center, see [Manage app setup policies in Microsoft Teams](/microsoftteams/teams-app-setup-policies#install-apps).
+- App IDs in this report are the External (manifest) App IDs. For more information on how to tie this ID to an app in the Manage Apps experience in Teams admin center, see [Manage app setup policies in Microsoft Teams](/microsoftteams/teams-app-setup-policies#install-apps).
 
 - You can export the report data into an Excel .csv file by selecting the Export link. This exports data for all users/apps and enables you to do simple sorting and filtering for further analysis.
 
@@ -170,13 +170,37 @@ This table shows you per-user view with the following metrics for each app. A su
 |Used on Web|This value indicates whether that user used any app on Web.|Yes|
 |Used on Mac|This value indicates whether that user used any app on Mac.|No|
 
-## Managing apps in the Teams Admin Center
+## Managing apps in the Teams admin center
 
 For more information about how to manage your Teams apps, refer to [About apps in Microsoft Teams](/microsoftteams/deploy-apps-microsoft-teams-landing-page).
 
-To link an app in this report to the Manage Apps experience in Teams Admin Center, you can use the following items:
+To link an app in this report to the Manage Apps experience in Teams admin center, you can use the following items:
 
 - App Name
 - External App ID
 
 External App IDs are equivalent to the ID in the Manage apps page for Store apps. For custom apps, to view External App ID in the Manage Apps page, follow the instructions on [Manage apps setup policies in Microsoft Teams](/microsoftteams/teams-app-setup-policies) to add the column in the column settings. You can also view it on the app details page for a custom app.
+
+## FAQ
+
+### I’ve blocked the Teams app in the Teams admin center. Why does it still show usage in the apps usage report in Teams admin center?  
+
+Even if an app is blocked in the Teams admin center, usage signals might still appear in the [Teams app usage report](/microsoftteams/teams-analytics-and-reports/app-usage-report) or in the [Microsoft 365 Teams app usage report](microsoft-teams-apps-usage.md). This can happen due to passive user interactions, such as viewing a card posted by the app in a chat or channel. These interactions can generate telemetry without the user actively launching or interacting with the app.
+
+### If I’ve blocked a Teams app in the Teams admin center, is it still being used?
+
+No. Blocking the app in the Teams admin center prevents users from launching or executing it. The app is not running, and users cannot interact with it directly. However, the usage report includes a broader range of signals beyond just app launches.
+
+### Is the app usage report inaccurate?
+
+The report is accurate, but it is intentionally inclusive. It reflects a wider set of usage types, including passive views of app content. This provides visibility into all the ways users may be exposed to app functionality, even if the app is blocked from active use.
+
+### Does blocking an app in Teams admin center stop all usage across Microsoft 365?
+
+No. Blocking an app in the Teams admin center prevents users from installing or launching it in Teams. It does not block passive exposure or usage in other Microsoft 365 surfaces like Outlook or the Microsoft 365 app.
+
+The app must be blocked in the Teams admin center and the Microsoft 365 admin center. If your organization uses [Unified app management](/microsoftteams/manage-apps-across-m365#what-is-unified-app-management), settings made in one admin center will sync with the other. This synchronization does not prevent passive usage.
+
+### Will the report differentiate between "passive" usage vs “actual” usage in the report, so I can be certain there is no app usage occurring?
+
+Currently, there are no plans to separate passive usage from active usage in the report.

@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssathyamoort
-ms.date: 01/27/2025
+ms.date: 05/13/2025
 audience: admin
 ms.topic: how-to
 ms.service: microsoft-syntex
@@ -68,7 +68,6 @@ You can also create a template in Microsoft Word.
 
 > [!NOTE]
 > Prior to converting an existing document to a template, you need to remove any content controls or restricted editing sections from the document.
-
 
 ## Add fields to a template
 
@@ -248,26 +247,43 @@ To set up a mandatory approval workflow on a template, follow these steps:
 
 ### Configure a SharePoint eSignature workflow
 
-After creating or editing a template, you can set up a SharePoint eSignature flow. This ensures that every document generated from the template is automatically sent for signatures according to the specified flow. SharePoint Agreements uses SharePoint eSignature to set up and send signature requests to recipients. For more information, see [Overview of SharePoint eSignature](/microsoft-365/syntex/esignature-overview).
+After creating or editing a template, you can set up a SharePoint eSignature flow. This ensures that every document generated from the template is automatically sent for signatures according to the specified flow. SharePoint Agreements supports SharePoint eSignature and other signature providers that can be used to send signature requests to recipients. For more information, see [Overview of SharePoint eSignature](/microsoft-365/syntex/esignature-overview).
 
 To set up a mandatory signature workflow, follow these steps:
 
-1. In the **Configure workflow** section, select **Configure required signatures**.
+1. On the **Manage templates** panel, in the **Configure workflows** section, select **Configure required signatures**.
 
-2. Set up signature fields in the template by first adding a signer label, such as first party or vendor.
+   ![A screenshot of the Manage templates panel showing the Configure required signatures option.](../../media/content-understanding/agreements-esignature-configure-required-signatures.png)
 
-3. Place your cursor where you want the signature to appear in the document, then insert the fields for signature, initials, and date.
+2. Select the signature provider you want to use. Signature providers that are available for SharePoint Agreements are enabled in the Microsoft 365 admin center. For more information, see [Set up SharePoint eSignature](/microsoft-365/syntex/esignature-setup#add-signature-providers).
+
+#### Use SharePoint eSignature
+
+1. Set up signature fields in the template by first adding a signer label, such as first party or vendor.
+
+2. Place your cursor where you want the signature to appear in the document, then insert the fields for signature, initials, and date.
 
    > [!NOTE]
    > You only need to insert the signature field locations in the template. During document generation, authors will have to assign signatory email addresses to the fields and send the PDF version of this document for signing.
 
-4. You can add multiple instances of the same signature field throughout the template and then navigate through each occurrence.
+3. You can add multiple instances of the same signature field throughout the template and then navigate through each occurrence.
 
-5. You can create multiple signature fields for your template and add their instances in the Word document.
+4. You can create multiple signature fields for your template and add their instances in the Word document.
 
    ![A screenshot of setting up the signature fields in a Word document.](../../media/content-understanding/agreements-set-up-signature-fields.png)
 
-6. Once set up, you can also choose to later modify the signature request before publishing the template.
+5. Once set up, you can also choose to later modify the signature request before publishing the template.
+
+#### Use other signature providers
+
+1. On the **Manage templates** panel, in the **Select a provider** section, select the signature provider you want to use.
+
+   ![A screenshot of the Manage templates panel showing the Select a provider option.](../../media/content-understanding/agreements-esignature-select-a-provider.png)
+
+2. Select **Save**.
+
+    > [!NOTE]
+    > During document generation, authors will be directed to the provider platform to assign the signature fields, add signatory email addresses, and send the PDF version of the document for signing.
 
 ## Publish the template
 

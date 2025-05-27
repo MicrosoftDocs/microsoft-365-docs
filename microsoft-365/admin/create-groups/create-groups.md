@@ -1,7 +1,7 @@
 ---
 title: "Create a group in the admin center"
-ms.reviewer: rahulnayak
-ms.date: 06/11/2024
+ms.reviewer: batre
+ms.date: 05/21/2025
 f1.keywords: CSH
 author: DaniEASmith
 ms.author: danismith
@@ -50,6 +50,8 @@ While users can create a Microsoft 365 group from Outlook or other apps, as an a
 6.  On the **Members** page, choose the name of one or more people who will be designated as members of the group. Select **Next**.
 
 7. On the **Settings** page, type a unique email address for the group, choose a privacy option and whether you want to add Microsoft Teams, and then select **Next**.
+> [!NOTE]
+> The email domain of the group can be changed after the group has been created.
     
 8. After reviewing your settings and making any changes, select **Create group**.
 

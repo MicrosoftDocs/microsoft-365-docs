@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 05/15/2025
+ms.date: 05/20/2025
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-copilot
@@ -25,11 +25,15 @@ appliesto:
 
 This article provides an overview of the steps and resources that can help you enable and start using Microsoft 365 Copilot in your organization.
 
+:::image type="content" source="media/microsoft-365-copilot-enablement-resources/adopt-copilot-all-steps.svg" alt-text="Diagram that shows the steps to adopt and enable Microsoft 365 Copilot, including getting your organization ready, licensing, enabling Microsoft 365 apps, setup, and sending a welcome email." lightbox="media/microsoft-365-copilot-enablement-resources/adopt-copilot-all-steps.svg":::
+
 This article applies to:
 
 - Microsoft 365 Copilot
 
 ## Step 1 - Get your organization ready and use the Microsoft Adoption site
+
+:::image type="content" source="media/microsoft-365-copilot-enablement-resources/adopt-copilot-get-organization-ready.svg" alt-text="Diagram that shows the get your organization ready step to adopt and enable Microsoft 365 Copilot." lightbox="media/microsoft-365-copilot-enablement-resources/adopt-copilot-get-organization-ready.svg":::
 
 ✅ **Use the Microsoft 365 Copilot Optimization Assessment**
 
@@ -59,13 +63,17 @@ To get started, go to [Microsoft 365 Copilot adoption](https://adoption.microsof
 
 There are different license options for Microsoft 365 Copilot. The license you choose depends on your organization's needs and any existing Microsoft 365 subscriptions you have.
 
-To learn more, see [Microsoft 365 Copilot license plans](microsoft-365-copilot-licensing.md).
+To learn more, see:
+
+- [Microsoft 365 Copilot license plans](microsoft-365-copilot-licensing.md)
 
 ## Step 3 - Get your Microsoft 365 apps and network ready
 
 Microsoft 365 Copilot integrates with your Microsoft 365 apps, including Microsoft Teams. To use Microsoft 365 Copilot with your apps, make sure that your Microsoft 365 apps and network meet the requirements, and that your app privacy settings allow Copilot.
 
-To learn more, see [Microsoft 365 app and network requirements for Microsoft 365 Copilot](microsoft-365-copilot-requirements.md).
+To learn more, see:
+
+- [Microsoft 365 app and network requirements for Microsoft 365 Copilot](microsoft-365-copilot-requirements.md)
 
 ## Step 4 - Set up Copilot and assign licenses
 
@@ -74,7 +82,7 @@ In this step, you assign Copilot licenses to your users and can configure some M
 To learn more and get started:
 
 - [Set up Microsoft 365 Copilot - Admin guide on Learn](microsoft-365-copilot-setup.md)
-- [Microsoft 365 Copilot setup guide in the Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide)
+- [Set up Microsoft 365 Copilot - Setup guide in the Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide)
 
 ## Step 5 - Send a welcome email and enable feedback
 
@@ -82,7 +90,9 @@ After your licenses are assigned, you can send a welcome email to your users. Th
 
 You can also enable feedback for Microsoft 365 Copilot users.
 
-To learn more, see [Welcome end users to Microsoft 365 Copilot](microsoft-365-copilot-enable-users.md).
+To learn more, see:
+
+- [Welcome end users to Microsoft 365 Copilot](microsoft-365-copilot-enable-users.md)
 
 ## Related articles
 

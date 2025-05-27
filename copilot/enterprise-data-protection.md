@@ -3,7 +3,7 @@ title: "Enterprise data protection in Microsoft 365 Copilot and Microsoft 365 Co
 description: "Learn what enterprise data protection means for Microsoft 365 Copilot and Microsoft 365 Copilot Chat."
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dansimp
 ms.topic: concept-article
 ms.service: microsoft-365-copilot
 ms.localizationpriority: high

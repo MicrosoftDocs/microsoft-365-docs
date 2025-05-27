@@ -35,8 +35,8 @@ For example, you enable the OCR service and then add image files to your documen
 
 |Endpoint  |Supported file types  |
 |---------|---------|
-|SharePoint and OneDrive     |` .docx, .pptx, .xlsx, .bmp, .png, .jpeg, .jpg, .jfif, .arw, .cr2, .crw, .erf, .gif, .mef, .mrw, .nef, .nrw, .orf, .pef, .raw, .rw2, .rw1, .sr2, .tif, .tiff, .heic, .heif, .ari, .bay, .cap, .cr3, .dcs, .dcr, .drf, .eip, .fff, .iiq, .k25, .kdc, .mef, .mos, .ptx, .pxn, .raf, .rwl, .sr2, .srf, .srw, .x3f, .dng, .tiff, and .pdf`  |
-|Teams, Exchange, and Windows devices     |`.bmp, .png, .jpeg, .jpg, .tiff, and .pdf`   |
+|SharePoint and OneDrive     |`.bmp, .png, .jpeg, .jpg, .jfif, .arw, .cr2, .crw, .erf, .gif, .mef, .mrw, .nef, .nrw, .orf, .pef, .raw, .rw2, .rw1, .sr2, .tif, .tiff, .heic, .heif, .ari, .bay, .cap, .cr3, .dcs, .dcr, .drf, .eip, .fff, .iiq, .k25, .kdc, .mef, .mos, .ptx, .pxn, .raf, .rwl, .sr2, .srf, .srw, .x3f, .dng, .tiff, and .pdf (scanned and hybrid)`  Embedded images in ` docx, pptx, xlsx ` are extracted and scanned |
+|Teams, Exchange, and Windows devices     |`.bmp, .png, .jpeg, .jpg, .tiff, and .pdf (scanned and hybrid)`  Embedded images in ` docx, pptx, xlsx, RAR, TAR,ZIP and 7z` are extracted and scanned|
 
 In addition to image-based PDF, SharePoint OCR supports hybrid PDF (text plus image PDF). Newly uploaded hybrid PDFs will be processed by the OCR service.
 
@@ -70,6 +70,4 @@ The OCR service supports multiple solutions, as shown in the following table. Fo
 - Images must be at least 50 x 50 pixels and not larger than 16,000 x 16,000 pixels.
 
 - Images uploaded after OCR has been enabled are the only images that are scanned.
-
-- Images that are embedded in Office documents aren't supported.
 

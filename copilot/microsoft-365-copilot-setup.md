@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 05/15/2025
+ms.date: 05/20/2025
 audience: Admin
 ms.topic: get-started
 ms.service: microsoft-365-copilot
@@ -28,11 +28,13 @@ Copilot works alongside popular Microsoft 365 Apps, like Word, Excel, PowerPoint
 
 As part of your [Microsoft 365 Copilot adoption](microsoft-365-copilot-enablement-resources.md), use this article to enable some security features, configure the update channel, and assign Copilot licenses to users.
 
+:::image type="content" source="media/microsoft-365-copilot-enablement-resources/adopt-copilot-setup-assign-license.svg" alt-text="Diagram that shows the setup and assign license step to adopt and enable Microsoft 365 Copilot." lightbox="media/microsoft-365-copilot-enablement-resources/adopt-copilot-setup-assign-license.svg":::
+
 This article provides guidance for administrators on preparing their organization for Microsoft 365 Copilot. It covers foundational implementation and readiness activities, licensing, and steps to ensure a secure and compliant deployment.
 
 ## Prerequisites
 
-- This article uses the following admin centers. These admin centers require a specific role to complete the tasks in the article.
+- This article uses the following admin centers. These **admin centers require a specific role** to complete the tasks in the article.
 
   - **[Microsoft 365 admin center](https://admin.microsoft.com)**: There are different roles depending on the task you need to complete. To learn more about roles, see [Commonly used Microsoft 365 admin center roles](/microsoft-365/admin/add-users/about-admin-roles#commonly-used-microsoft-365-admin-center-roles).
   - **[SharePoint admin center](https://go.microsoft.com/fwlink/?linkid=2185219)**: Sign in as the [SharePoint administrator](/sharepoint/sharepoint-admin-role).
@@ -40,17 +42,13 @@ This article provides guidance for administrators on preparing their organizatio
     - [Permissions required to create and manage sensitivity labels](/purview/get-started-with-sensitivity-labels#permissions-required-to-create-and-manage-sensitivity-labels)
     - [Roles and role groups in Microsoft Defender for Office 365 and Microsoft Purview](/defender-office-365/scc-permissions)
 
-- Make sure you:
+- Make sure you have an appropriate **subscription plan to purchase Microsoft 365 Copilot**. Microsoft 365 Copilot licenses are available as an add-on to other licensing plans. To learn more, see [Microsoft 365 Copilot license options](microsoft-365-copilot-licensing.md).
 
-  - Have an appropriate subscription plan to purchase Microsoft 365 Copilot
+  You can purchase Microsoft 365 Copilot licenses through the [Microsoft 365 admin center](https://admin.microsoft.com) (**Billing** > **Purchase services**), Microsoft partners, or your Microsoft account team.
 
-    Microsoft 365 Copilot licenses are available as an add-on to other licensing plans. To learn more, see [Microsoft 365 Copilot license options](microsoft-365-copilot-licensing.md).
+  More licenses might be required to use some of the features describes in this article, like [Microsoft Purview](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-purview-service-description) and [Microsoft SharePoint Premium - SharePoint Advanced Management overview](/sharepoint/advanced-management#licensing).
 
-    You can purchase Microsoft 365 Copilot licenses through the [Microsoft 365 admin center](https://admin.microsoft.com) (**Billing** > **Purchase services**), Microsoft partners, or your Microsoft account team.
-
-    More licenses might be required to use some of the features describes in this article, like [Microsoft Purview](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-purview-service-description) and [Microsoft SharePoint Premium - SharePoint Advanced Management overview](/sharepoint/advanced-management#licensing).
-
-  - Configure the [Microsoft 365 app and network requirements for Microsoft 365 Copilot](microsoft-365-copilot-requirements.md).
+- Step through and **configure the [Microsoft 365 app and network requirements for Microsoft 365 Copilot](microsoft-365-copilot-requirements.md)**.
 
 ## Readiness activities
 
@@ -137,7 +135,9 @@ Next, assign Copilot licenses so users can start using it. You can manage Micros
 3. In the product details page, assign licenses to users and manage their access to Copilot and other apps and services.
 4. To check if a user is added, go to **Users** and then **Active Users**. The user and any active licenses are shown.
 
-When licenses are assigned, Copilot shows up in your Microsoft 365 apps, like Word and Excel. To use Copilot, users sign into the app with their work or school account and the file must be editable (not read only). In some experiences, like Word, a Copilot dialog shows when you create a new document. In other experiences, Copilot is accessible on the Ribbon.
+When licenses are assigned, Copilot shows up in your Microsoft 365 apps, like Word and Excel. For some apps, users might need to wait up to 24 hours for Copilot to appear, and they may need to restart or refresh the app. Once enabled, Copilot appears across the apps.
+
+To use Copilot, users sign into the app with their work or school account and the file must be editable (not read-only). In some experiences, like Word, a Copilot dialog shows when you create a new document. In other experiences, Copilot is accessible on the Ribbon.
 
 > [!NOTE]
 >
@@ -153,9 +153,11 @@ To learn more, see:
 
 ✅ **Configure more Copilot features**
 
-In the [Microsoft 365 admin center](https://admin.microsoft.com) > **Copilot**, there are more Copilot features that benefit admins and settings you can configure that benefit your organization.
+You can manage settings using the Copilot Control System, which provides centralized access to admin features and controls that benefit your organization.
 
-You can:
+To access it, go to the [Microsoft 365 admin center](https://admin.microsoft.com)> **Copilot**.
+
+With the Copilot Control System, you can:
 
 - View the status of Copilot license assignments
 - Access the latest information on Copilot
@@ -164,7 +166,7 @@ You can:
 - Configure plugins and permissions
 - Enable the use of web data as grounding data in Copilot
 
-To learn more, see [Manage Microsoft 365 Copilot settings](microsoft-365-copilot-page.md).
+To learn more, see [Manage Microsoft 365 Copilot scenarios](microsoft-365-copilot-page.md) and [configure the Microsoft 365 Copilot app](microsoft-365-copilot-app-admin-settings.md).
 
 ### Step 4 - Deploy to some users and measure adoption
 

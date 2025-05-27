@@ -28,7 +28,7 @@ ms.custom:
 - campaignIDs-batch2
 search.appverid: MET150
 description: "Learn how to cancel your trial or paid subscriptions in the Microsoft 365 admin center."
-ms.date: 03/27/2025
+ms.date: 05/19/2025
 ---
 
 # Cancel your subscription in the Microsoft 365 admin center
@@ -54,7 +54,7 @@ If you have **Microsoft 365 Family** or **Microsoft 365 Personal**, see [Cancel 
 > If you're the person who signed up for the subscription, you're automatically a Billing account owner.
 
 > [!IMPORTANT]
-> If you have an MCA billing account type, you automatically receive a product called Microsoft Entra ID Free. Because this product helps manage your billing account, you can't cancel it. However, if you want to close your billing account, call Support and they can help cancel the subscription and close the account. To learn more, see [Microsoft Entra ID Free](/azure/cost-management-billing/manage/microsoft-entra-id-free).
+> If you have an MCA billing account type, you automatically receive a product called Microsoft Entra ID Free. Because this product helps manage your billing account, you can't cancel it. However, if you want to close your billing account, call Support and they can help close the account. To learn more, see [Microsoft Entra ID Free](/azure/cost-management-billing/manage/microsoft-entra-id-free).
 
 ## How do I cancel my free trial?
 

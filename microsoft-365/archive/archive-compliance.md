@@ -44,3 +44,5 @@ Microsoft 365 Archive also affects various compliance offerings, ensuring that y
 - **Bring your own key (BYOK)** – All archived content will comply with the BYOK promises, for any tenant who already uses the BYOK feature or enables it after archiving sites.
 
 - **Permissions and access policies** – These settings and policies are retained on the site throughout the archive and reactivation lifecycle. Archiving the site and then reactivating it doesn't change the application of permissions or related access policies.
+
+- **Audit** – Archiving, reactivation, and deletion of archived sites are recorded in the audit log. For more information, see [Audit log activities](/purview/audit-log-activities).

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 05/15/2025
+ms.date: 05/20/2025
 audience: Admin
 ms.topic: get-started
 ms.service: microsoft-365-copilot
@@ -24,6 +24,8 @@ appliesto:
 [Microsoft 365 Copilot](microsoft-365-copilot-overview.md) is an AI-powered productivity tool that helps users with everyday tasks.
 
 As part of your [Microsoft 365 Copilot adoption](microsoft-365-copilot-enablement-resources.md), make sure you have the right Microsoft 365 subscription plan.
+
+:::image type="content" source="media/microsoft-365-copilot-enablement-resources/adopt-copilot-license-options.svg" alt-text="Diagram that shows the licensing step to adopt and enable Microsoft 365 Copilot." lightbox="media/microsoft-365-copilot-enablement-resources/adopt-copilot-license-options.svg":::
 
 Microsoft 365 Copilot is available as an [add-on plan](https://www.microsoft.com/microsoft-365/microsoft-copilot) with one of the licensing prerequisites listed in this article. The [Microsoft 365 Copilot service description guide](/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot) is also a good resource.
 
@@ -114,9 +116,9 @@ The following plans are only available using [Enrollment for Education Solutions
 > [!NOTE]
 > Customers with Education or Business subscriptions that don't include Teams can purchase Microsoft 365 Copilot licenses.
 
-## Microsoft 365 Copilot Chat license
+## Microsoft 365 Copilot Chat
 
-[Copilot Chat](/copilot/overview) is the popular prompt and response experience. There are two Copilot Chat options available: web-based chat and work-based chat.
+[Copilot Chat](/copilot/overview) is an AI prompt and response experience that's automatically included and available to organizations that have a Microsoft 365 subscription. There are two Copilot Chat options available: web-based chat and work-based chat.
 
 - Web-based chat:
 

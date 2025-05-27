@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 05/15/2025
+ms.date: 05/20/2025
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-copilot
@@ -24,6 +24,8 @@ appliesto:
 [Microsoft 365 Copilot](microsoft-365-copilot-overview.md) is an AI-powered productivity tool that helps users with everyday tasks.
 
 As part of your [Microsoft 365 Copilot adoption](microsoft-365-copilot-enablement-resources.md), you can send a welcome email to your Microsoft 365 Copilot users that announces Microsoft 365 Copilot and its features. You can also enable feedback for Microsoft 365 Copilot users.
+
+:::image type="content" source="media/microsoft-365-copilot-enablement-resources/adopt-copilot-welcome-email-feedback.svg" alt-text="Diagram that shows the send welcome email and enable feedback step to adopt and enable Microsoft 365 Copilot." lightbox="media/microsoft-365-copilot-enablement-resources/adopt-copilot-welcome-email-feedback.svg":::
 
 This article provides information about how to send users a welcome email, enable feedback, and review the Microsoft 365 Copilot usage activity report.
 

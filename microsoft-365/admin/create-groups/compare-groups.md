@@ -1,7 +1,7 @@
 ---
 title: Compare types of groups in Microsoft 365
-ms.reviewer: rahulnayak
-ms.date: 05/22/2024
+ms.reviewer: batre
+ms.date: 05/21/2025
 f1.keywords: CSH
 author: DaniEASmith
 ms.author: danismith
