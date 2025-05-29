@@ -66,7 +66,7 @@ To change information on your organization's profile page, use the following ste
 4. Update your organization's information, then select **Save**. You must fill in all required fields marked with an asterisk (*) before you can save your changes.
 
 > [!NOTE]
-> SharePoint Online and OneDrive have a 256-character limit on Windows PCs. If you exceed the character limit, you receive an error message when you try to do anything within the synchronized document libraries, like creating folders or renaming documents.
+> SharePoint Online and OneDrive enforce a 247-character maximum path length on Windows devices. If you exceed the character limit, you receive an error message when you try to do anything within the synchronized document libraries, like creating folders or renaming documents.
 
 ### What do the organization information fields mean?
 
