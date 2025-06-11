@@ -81,6 +81,9 @@ Microsoft 365 includes controls to help you prevent oversharing data through Cop
 
 The following diagram provides a visual representation of some of the features in your Microsoft 365 E3+ and SharePoint Advanced Management licenses that help you prevent oversharing.
 
+> [!NOTE]
+> SharePoint Advanced Management licenses are now included in Microsoft 365 Copilot licenses in that they include all features related to the Copilot implementation as of 31st May 2025.
+
 :::image type="content" source="media/microsoft-365-copilot-architecture-data-protection-auditing/copilot-oversharing-controls.svg" alt-text="Diagram that shows the controls you can use to prevent sharing specific data in SharePoint Online and OneDrive, and how they affect Microsoft 365 Copilot." lightbox="media/microsoft-365-copilot-architecture-data-protection-auditing/copilot-oversharing-controls.svg":::
 
 Let's take a look:
