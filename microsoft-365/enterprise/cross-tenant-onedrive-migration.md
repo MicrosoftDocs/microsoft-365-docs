@@ -88,6 +88,15 @@ Each OneDrive account can have a maximum of 5 TB of content or 1 million items.
 >
 >If you attempt to migrate any OneDrive site that exceeds the five-terabyte quota, the transfer fails.
 
+## Multi-Geo
+
+You can migrate sites directly into individual satellite geo instances as needed. When working with multi-geo environments additional planning and configuration will need to be considered.  
+
+- Trust configurations will need to be established between all source and target instances that will be part of the migration. 
+- The identity mapping file must be uploaded to every target instance.
+- When migrating in multi-geo environments, each source instance will be subject to the 4000 queue size limit regardless of the number of target tenants.
+- Establishing multiple trusts allows you to move sites directly into a geo instance of choice.
+
 ## Permissions
 
 All users and groups included in the identity mapping file that you uploaded to the target tenant maintain permissions in the target tenant related to the migrated OneDrive site.
