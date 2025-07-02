@@ -78,6 +78,20 @@ Consider the length of User and Site ULR names in your Target tenant when planni
 
 If your migration fails, rename the User or Site URL or work with the user to rename or move the affected files or folders higher up the directory structure to ensure it remains under the character threshold limit. Once resolved, you should be able to complete the migration.
 
+## Multi-Geo
+
+You can migrate sites directly into individual satellite geo instances as needed. When working with multi-geo environments additional planning and configuration will need to be considered.  
+
+- Trust configurations will need to be established between all source and target instances that will be part of the migration. 
+- The identity mapping file must be uploaded to every target instance.
+- When migrating in multi-geo environments, each source instance will be subject to the 4000 queue size limit regardless of the number of target tenants.
+- Establishing multiple trusts allows you to move sites directly into a geo instance of choice.
+- If a site is migrated to an incorrect instance, you cannot use Cross Tenant User Migration to move it between instances of the same tenant.
+- 
+Use the appropriate multi geo commands to move the site between geo instance of the same tenant.
+- To move OneDrive sites between instances refer to [Move a OneDrive site.](https://learn.microsoft.com/en-us/microsoft-365/enterprise/m365-dr-workload-spo?view=o365-worldwide#move-a-onedrive-site)
+- To move SharePoint sites between instances refer to [Move a SharePoint site or SharePoint Embedded container site.] (https://learn.microsoft.com/en-us/microsoft-365/enterprise/m365-dr-workload-spo?view=o365-worldwide#move-a-sharepoint-site-or-sharepoint-embedded-container-site)
+
 ## Support SharePoint features
 
 The following types of site can be migrated between geographic locations:
