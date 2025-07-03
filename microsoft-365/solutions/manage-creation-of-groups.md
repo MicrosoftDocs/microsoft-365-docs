@@ -31,7 +31,7 @@ description: Learn how to control which users can create Microsoft 365 Groups.
 
 By default, all users can create Microsoft 365 groups. This is the recommended approach because it allows users to start collaborating without requiring assistance from IT.
 
-If your business requires that you restrict who can create groups, you can restrict Microsoft 365 Groups creation to the members of a particular Microsoft 365 group or security group.
+If your business requires that you restrict who can create groups, you can turn off Microsoft 365 Groups creation for users or restrict to the members of a particular Microsoft 365 group or security group.
 
 If you're concerned about users creating teams or groups that don't comply with your business standards, consider requiring users to complete a training course and then adding them to the group of allowed users.
 
@@ -72,7 +72,14 @@ The following people don't need Microsoft Entra ID P1 or P2 or Microsoft Entra B
 
 - People who are members of Microsoft 365 groups and who don't have the ability to create other groups.
 
-## Step 1: Create a group for users who need to create Microsoft 365 groups
+## Turn off Group creation
+See [Group settings in the Microsoft Entra admin center](https://learn.microsoft.com/en-us/entra/identity/users/groups-self-service-management#group-settings) for controlling user's ability for Microsofot 365 Group creation.
+
+## Restrict to sepcific groups
+
+The following steps are for restricing group creation for specific users via group.
+
+### Step 1: Create a group for users who need to create Microsoft 365 groups
 
 Only one group in your organization can be used to control who is able to create Microsoft 365 Groups. But, you can nest other groups as members of this group.
 
@@ -85,7 +92,7 @@ Admins in the roles listed previously don't need to be members of this group; th
 
 For detailed instructions, see [Create, edit, or delete a security group in the Microsoft 365 admin center](../admin/email/create-edit-or-delete-a-security-group.md).
 
-## Step 2: Run PowerShell commands
+### Step 2: Run PowerShell commands
 
 Use the [Microsoft Graph PowerShell](/powershell/microsoftgraph/installation) **Beta** module to change the group-level guest access setting:
 
@@ -166,7 +173,7 @@ If in the future you want to change which group is used, you can rerun the scrip
 
 If you want to turn off the group creation restriction and again allow all users to create groups, set `$GroupName` to `""` and `$AllowGroupCreation` to `"$true"` and rerun the script.
 
-## Step 3: Verify that it works
+### Step 3: Verify that it works
 
 Changes can take 30 minutes or more to take effect. You can verify the new settings by completing the following steps:
 
