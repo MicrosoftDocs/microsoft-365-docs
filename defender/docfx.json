@@ -1,0 +1,61 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "_themes/**",
+          "_themes.pdf/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif",
+          "**/*.svg",
+          "**/*.pdf",
+          "**/*.ppt",
+          "**/*.pptx",
+          "**/*.xls",
+          "**/*.xlsx"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "_themes/**",
+          "_themes.pdf/**"
+        ]
+      }
+    ],
+    "overwrite": [],
+    "externalReference": [],
+    "globalMetadata": {
+      "feedback_system": "Standard",
+      "breadcrumb_path": "/defender/breadcrumb/toc.json",
+      "recommendations": true,
+      "searchScope": ["Microsoft Defender"]
+    },
+    "fileMetadata": {
+      "titleSuffix": {
+        "**/*.md": "Microsoft Defender"
+      },
+      "searchScope": {
+        "**/*.md": ["Microsoft Defender"],
+        "**/*.yml": ["Microsoft Defender"]
+      }
+    },
+    "template": [],
+    "dest": "defender-docs",
+    "markdownEngineName": "markdig"
+  }
+}

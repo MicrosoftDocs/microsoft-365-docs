@@ -1,0 +1,61 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "_themes/**",
+          "_themes.pdf/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif",
+          "**/*.svg",
+          "**/*.pdf",
+          "**/*.ppt",
+          "**/*.pptx",
+          "**/*.xls",
+          "**/*.xlsx"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "_themes/**",
+          "_themes.pdf/**"
+        ]
+      }
+    ],
+    "overwrite": [],
+    "externalReference": [],
+    "globalMetadata": {
+      "feedback_system": "Standard",
+      "breadcrumb_path": "/defender-business/breadcrumb/toc.json",
+      "recommendations": true,
+      "searchScope": ["Microsoft Defender for Business"]
+    },
+    "fileMetadata": {
+      "titleSuffix": {
+        "**/*.md": "Microsoft Defender for Business"
+      },
+      "searchScope": {
+        "**/*.md": ["Microsoft Defender for Business"],
+        "**/*.yml": ["Microsoft Defender for Business"]
+      }
+    },
+    "template": [],
+    "dest": "defender-business-docs",
+    "markdownEngineName": "markdig"
+  }
+}

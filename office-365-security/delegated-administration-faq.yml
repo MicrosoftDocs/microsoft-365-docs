@@ -1,0 +1,53 @@
+### YamlMime:FAQ
+metadata:
+  title: Delegated administration FAQ
+  f1.keywords:
+    - NOCSH
+  ms.author: chrisda
+  author: chrisda
+  manager: dansimp
+  ms.date: 6/22/2023
+  audience: ITPro
+  ms.topic: faq
+  ms.localizationpriority: medium
+  ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
+  ms.collection:
+  - m365-security
+  - tier3
+  ms.custom:
+    - seo-marvel-apr2020
+  description: Admins can view frequently asked questions and answers about delegated administration tasks in Microsoft 365 for Microsoft partners and resellers.
+  ms.subservice: mdo
+  ms.service: microsoft-365-security
+
+title: Delegated administration FAQ
+summary: |
+  [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+  This article provides frequently asked questions and answers about delegated administration tasks in Microsoft 365 for Microsoft partners and resellers. Delegated administration includes the ability to manage Exchange Online Protection (EOP) settings for other tenants (companies).
+
+sections:
+  - name: Ignored
+    questions:
+      - question: |
+          I'm a reseller and I need to manage my customer tenants. How does this work?
+        answer: |
+          If you're a Microsoft partner or reseller, and you've signed up to be a Microsoft Cloud Solution Provider (CSP), you can request _delegated administration_ capabilities in your customer's Microsoft 365 organization. For more information, see the following articles:
+
+          - [Cloud Solution Provider program](/partner-center/csp-overview)
+          - [Obtain permissions to manage a customer's service or subscription](/partner-center/customers-revoke-admin-privileges).
+
+      - question: |
+          I'm a customer, not a reseller. How can I set up delegated administrator for my subtenants?
+        answer: |
+          Delegated administration is only available for resellers and partners. However, there's a sample PowerShell script to help you apply policies to your subtenants (companies). For more information, see [Sample script for applying EOP settings to multiple tenants](/exchange/standalone-eop/sample-script-standalone-eop-settings-to-multiple-tenants).
+
+      - question: |
+          Can I prevent my subtenant admin from modifying my policy?
+        answer: |
+          No. Microsoft 365 doesn't currently have this capability.
+
+      - question: |
+          Can I get consolidated reporting across all of my subtenants?
+        answer: |
+          Consolidated reporting across the companies you manage isn't available in Microsoft 365 admin center reports. However, you can get reports by using [Microsoft Graph](/graph/overview).

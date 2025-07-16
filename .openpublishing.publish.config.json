@@ -1,0 +1,143 @@
+{
+  "docsets_to_publish": [
+    {
+      "docset_name": "Microsoft-Defender",
+      "build_source_folder": "defender",
+      "build_output_subfolder": "Microsoft-Defender",
+      "locale": "en-us",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    },
+    {
+      "docset_name": "Microsoft-Defender-Business",
+      "build_source_folder": "defender-business",
+      "build_output_subfolder": "Microsoft-Defender-Business",
+      "locale": "en-us",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    },
+    {
+      "docset_name": "Microsoft-Defender-Endpoint",
+      "build_source_folder": "defender-endpoint",
+      "build_output_subfolder": "Microsoft-Defender-Endpoint",
+      "locale": "en-us",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    },
+    {
+      "docset_name": "Microsoft-Defender-Identity",
+      "build_source_folder": "defender-identity",
+      "build_output_subfolder": "Microsoft-Defender-Identity",
+      "locale": "en-us",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    },
+    {
+      "docset_name": "Microsoft-Defender-Vulnerability-Management",
+      "build_source_folder": "defender-vulnerability-management",
+      "build_output_subfolder": "Microsoft-Defender-Vulnerability-Management",
+      "locale": "en-us",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    },
+    {
+      "docset_name": "Microsoft-Defender-Threat-Intelligence",
+      "build_source_folder": "intelligence",
+      "build_output_subfolder": "Microsoft-Defender-Threat-Intelligence",
+      "locale": "en-us",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    },
+    {
+      "docset_name": "Microsoft-365-Security",
+      "build_source_folder": "office-365-security",
+      "build_output_subfolder": "Microsoft-365-Security",
+      "locale": "en-us",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    }
+  ],
+  "notification_subscribers": [],
+  "sync_notification_subscribers": [],
+  "branches_to_filter": [],
+  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/microsoft-365-security-docs",
+  "git_repository_branch_open_to_public_contributors": "main",
+  "need_preview_pull_request": true,
+  "resolve_user_profile_using_github": true,
+  "dependent_repositories": [
+    {
+      "path_to_root": "_themes",
+      "url": "https://github.com/Microsoft/templates.docs.msft",
+      "branch": "main",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "_themes.pdf",
+      "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
+      "branch": "main",
+      "branch_mapping": {}
+    }
+  ],
+  "branch_target_mapping": {
+    "live": [
+      "Publish",
+      "Pdf"
+    ],
+    "main": [
+      "Publish",
+      "Pdf"
+    ]
+  },
+  "targets": {
+    "Pdf": {
+      "template_folder": "_themes.pdf"
+    }
+  },
+  "docs_build_engine": {},
+  "skip_source_output_uploading": false,
+  "need_generate_pdf_url_template": true,
+  "contribution_branch_mappings": {},
+  "need_generate_intellisense": false
+}
