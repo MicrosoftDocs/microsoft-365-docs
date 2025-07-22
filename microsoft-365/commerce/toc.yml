@@ -52,6 +52,8 @@ items:
           href: licenses/e3-extra-features-licenses.md
         - name: Understand subscriptions and licenses
           href: licenses/subscriptions-and-licenses.md
+        - name: Understand MCA-E Product Activation Keys
+          href: licenses/MCAE-Key-Types.md
     - name: Manage volume licensing
       items:
         - name: Manage volume licensing agreements
