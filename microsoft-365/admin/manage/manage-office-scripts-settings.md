@@ -2,7 +2,7 @@
 title: "Manage Office Scripts settings"
 f1.keywords:
 - NOCSH
-ms.author: sharik
+ms.author: dansimp
 author: SKjerland
 manager: scotv
 ms.date: 01/09/2025

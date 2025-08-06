@@ -13,10 +13,11 @@ ms.localizationpriority: medium
 ms.reviewer:
 f1.keywords: NOCSH
 ms.collection:
- - essentials-security
- - essentials-privacy
- - essentials-compliance
- - magic-ai-copilot
+- essentials-security
+- essentials-privacy
+- essentials-compliance
+- magic-ai-copilot
+- trust-pod
 ms.custom:
 ---
 

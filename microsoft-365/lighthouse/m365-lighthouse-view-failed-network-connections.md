@@ -1,7 +1,7 @@
 ---
 title: "View an enterprise Cloud PC failed network connection in Microsoft 365 Lighthouse"
 f1.keywords: NOCSH
-ms.author: sharik
+ms.author: dansimp
 author: SKjerland
 manager: scotv
 ms.reviewer: ebamoh

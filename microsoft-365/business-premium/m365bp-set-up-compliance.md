@@ -13,6 +13,7 @@ ms.localizationpriority: medium
 ms.collection:
 - m365-security
 - tier2
+- trust-pod
 ms.custom:
 - MiniMaven
 search.appverid:

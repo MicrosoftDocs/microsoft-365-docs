@@ -51,9 +51,6 @@ Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?l
 
 To add, modify, or remove domains, you **must** be a **Domain Name Administrator** of a [business or enterprise plan](https://products.office.com/business/office). These changes affect the whole tenant; *Customized administrators* or *regular users* can't make these changes.
 
-> [!TIP]
-> If you need help with the steps in this article, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
-
 ## Watch: Add a domain
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198213).

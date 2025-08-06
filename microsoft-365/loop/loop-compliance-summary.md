@@ -1,5 +1,5 @@
 ---
-ms.date: 06/10/2025
+ms.date: 07/02/2025
 title: "Summary of governance, lifecycle, and compliance capabilities for Loop experiences"
 ms.reviewer: dancost, tonchan
 ms.author: jenz
@@ -79,13 +79,7 @@ As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on 
 
 - **Version History** [export in Purview](/purview/ediscovery-export-search-results#step-1-prepare-search-results-for-export) or via [Graph API](/graph/api/driveitem-get-content-format) is available. Loop workspace content stored in SharePoint Embedded (See [storage](loop-storage.md) for more information), version history is configured to save 50 versions and no admin setting is available to change this configuration. Loop files in OneDrive or SharePoint follow the same file versioning settings as other files.
 
-- **Audit** logs exist for all events. They are retained, can be exported, and can be streamed to third party tools. To search and export Microsoft 365 service events for security and compliance investigations:
-
-    1. Use the [Microsoft Purview portal](https://purview.microsoft.com/auditlogsearch)
-    1. Search audit logs for "loop" or "loot" or "fluid" or for the Loop Application ID (listed in [Manage SPE containers](cpcn-loop-spe-management.md))
-    1. Further filter exported results by "SourceFileExtension":"loop" or "SourceFileExtension":"loot" (templates) or "SourceFileExtension":"fluid" (deprecated)
-
-- Loop workspaces create and update .pod files to manage content in the workspace.
+- **Audit** logs exist for all events. They are retained, can be exported, and can be streamed to third party tools. For more information, refer to [Purview](cpcn-loop-purview-management.md#searching-the-audit-logs)
 
 ## eDiscovery
 
@@ -103,8 +97,8 @@ As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on 
 
 ## Microsoft 365 retention and deletion
 
-- **[Retention policies](/purview/create-retention-policies?tabs=other-retention)** from Microsoft Purview Data Lifecycle Management configured for all SharePoint sites are enforced for all .loop files or alternatively can be [configured per Loop workspace](cpcn-loop-spe-management.md#retrieving-the-container-url-for-purview).
-  - For more information on how to configure specific Copilot Notebooks, see [Purview and SharePoint Embedded](cpcn-loop-spe-management.md#purview-and-sharepoint-embedded)
+- **[Retention policies](/purview/create-retention-policies?tabs=other-retention)** from Microsoft Purview Data Lifecycle Management configured for all SharePoint sites are enforced for all .loop files or alternatively can be [configured per Loop workspace](cpcn-loop-purview-management.md#retrieving-the-container-url-for-purview).
+  - For more information on how to configure specific Copilot Notebooks, see [Purview and SharePoint Embedded](cpcn-loop-purview-management.md)
 
 - **[Retention labels](/purview/retention#retention-labels)** from Microsoft Purview Data Lifecycle Management and Microsoft Purview Records Management are supported for Loop components by [applying published labels](/purview/create-apply-retention-labels?tabs=spo-onedrive) in OneDrive or SharePoint, or [automatically applying](/purview/apply-retention-labels-automatically) the labels. There's limited support for manually applying retention labels.
   - Retention labels cannot be viewed or applied directly from a Loop component. Instead, the user must [navigate to the Loop file within the Loop app](/purview/create-apply-retention-labels?tabs=loop%2Cdefault-label-for-sharepoint#manually-apply-retention-labels) to view or apply a retention label on a Loop component.
@@ -126,4 +120,5 @@ As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on 
 - [Admin toggles](loop-admin-configuration.md)
 - [UX examples for admin toggle states](loop-ux-examples.md)
 - [Managing SharePoint Embedded containers](cpcn-loop-spe-management.md)
+- [Purview and SharePoint Embedded containers](cpcn-loop-purview-management.md)
 - [Overview of Loop components in Microsoft 365](loop-components-teams.md)

@@ -10,8 +10,6 @@ items:
           href: try-or-buy-microsoft-365.md
         - name: Buy or manage add-ons
           href: buy-or-edit-an-add-on.md
-        - name: Business Assist for Microsoft 365
-          href: ../admin/misc/business-assist.md
         - name: Add storage space
           href: add-storage-space.md
     - name: Manage subscriptions
@@ -32,6 +30,10 @@ items:
           href: subscriptions/manage-self-service-purchases-users.md
         - name: Manage self-service purchases (Admin)
           href: subscriptions/manage-self-service-purchases-admins.md
+        - name: View scheduled changes
+          href: subscriptions/view-scheduled-changes.md
+        - name: View subscriptions with ramped discounts
+          href: subscriptions/view-ramped-discount-subscriptions.md
     - name: Manage licenses
       items:
         - name: Buy or remove subscription licenses

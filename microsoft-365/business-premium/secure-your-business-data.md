@@ -16,6 +16,7 @@ ms.collection:
 - tier2
 - ContentEnagagementFY23
 - essentials-security
+- trust-pod
 search.appverid:
 - BCS160
 - MET150

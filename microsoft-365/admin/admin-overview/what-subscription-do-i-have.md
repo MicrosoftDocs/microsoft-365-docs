@@ -27,7 +27,7 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: "Find out what Microsoft business subscriptions your organization has by using the Your products page in the Microsoft 365 admin center."
-ms.date: 03/27/2025
+ms.date: 07/31/2025
 ---
 
 # What Microsoft business subscriptions do I have?

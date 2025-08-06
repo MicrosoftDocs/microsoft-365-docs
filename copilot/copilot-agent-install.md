@@ -4,7 +4,7 @@ f1.keywords:
 ms.author: erikre
 author: ErikRe
 manager: dansimp
-ms.date: 06/25/2025
+ms.date: 07/10/2025
 audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-copilot
@@ -20,7 +20,7 @@ description: Learn about deployment and governance methods for agents in Microso
 Microsoft 365 Copilot can be extended by installing agents. [Agents](/microsoft-365-copilot/extensibility/agents-overview) provide additional knowledge, skills, and automated workflows to address your unique business needs and enhance workflows within Microsoft 365 Copilot. In addition, Microsoft 365 Copilot can deliver highly skilled expertise on demand.
 
 > [!NOTE]
-> Microsoft deployed the Researcher and Analyst agents to existing users with Microsoft 365 Copilot licenses.
+> Microsoft deployed the [Researcher](https://go.microsoft.com/fwlink/?linkid=2329838) and [Analyst](https://go.microsoft.com/fwlink/?linkid=2329729) agents to existing users with Microsoft 365 Copilot licenses.
 
 There are different methods used to install agents in Microsoft 365 Copilot.
 
@@ -53,6 +53,10 @@ For more information, see [Manage agents for Microsoft 365 Copilot in the Micros
 Users can install agents that are available in Agent Store based on the policies set by their tenant administrators. Users can also install their own custom-built agents. For example, these custom-built agents could be built with Agent Builder, SharePoint or Microsoft Copilot Studio, to augment Microsoft 365 Copilot. These agents are used by individuals, and optionally shareable within the user’s organization.
 
 Organizations can govern these agents in the Copilot Control System section of the Microsoft 365 admin center. Administrators have a full set of lifecycle management tools for these agents. Microsoft offers granular controls that enable administrators to install and block agents. Additionally, administrators can remove shared and custom agents for some or all of the users in their tenant.
+
+### Microsoft-built agent licensing 
+
+Some agents built by Microsoft, including Researcher and Analyst, are governed by [Supplementary Terms of Service](https://support.microsoft.com/office/supplementary-terms-of-service-for-teams-apps-powered-by-microsoft-365-services-and-applications-bc6027fe-68c3-4758-a70d-cfe97c43b4e2) which refers to the Microsoft 365 [Product Terms](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/all), and by reference, includes the Data Protection Addendum (DPA). The same Product Terms and DPA also govern the Microsoft 365 Copilot service. 
 
 ## Related content
 

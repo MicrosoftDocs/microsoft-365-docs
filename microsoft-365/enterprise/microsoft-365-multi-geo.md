@@ -2,9 +2,9 @@
 title: "Microsoft 365 Multi-Geo"
 ms.reviewer:
 ms.date: 10/07/2024
-ms.author: kvice
-author: kelleyvice-msft
-manager: scotv
+ms.author: v-fahasen
+author: fhasen-msft
+manager: v-nihmi
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise

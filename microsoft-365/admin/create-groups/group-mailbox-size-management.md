@@ -1,15 +1,17 @@
 ---
 title: Microsoft 365 Group mailbox size management 
 description: Learn about the group mailbox size management in Microsoft 365.
-author: DaniEASmith
-ms.author: danismith
-manager: jtremper
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 search.appverid: 
 ms.custom: m365-groups
+ms.collection:
+- trust-pod
 ms.reviewer: batre
 ms.date: 05/21/2025
 ---

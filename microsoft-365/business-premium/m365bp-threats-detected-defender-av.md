@@ -10,6 +10,7 @@ ms.service: microsoft-365-business-security
 ms.collection:
 - m365-security
 - tier2
+- trust-pod
 ms.date: 05/31/2024
 ms.localizationpriority: medium
 search.appverid: MET150

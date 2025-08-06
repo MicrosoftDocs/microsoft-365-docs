@@ -20,6 +20,7 @@ ms.collection:
 - tier2
 - essentials-overview
 - essentials-get-started
+- trust-pod
 ms.custom:
 - MiniMaven
 - intro-overview

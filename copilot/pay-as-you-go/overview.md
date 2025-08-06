@@ -1,10 +1,9 @@
 ---
 title: Microsoft 365 Copilot pay-as-you-go overview
-description: Enterprise and company IT admins can learn about the pay-as-you-go service for Microsoft 365 Copilot services, including Copilot Chat. Get an overview of the consumption-based billing process, connecting the billing to a Copilot service, and monitoring costs.
+description: Enterprise and company IT admins can learn about the pay-as-you-go service for Microsoft 365 Copilot services, including Copilot Chat. Get an overview of the usage-based billing process, connecting the billing to a Copilot service, and monitoring costs.
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: dansimp
-ms.date: 06/16/2025
 ms.reviewer: nishanair
 audience: Admin
 ms.topic: get-started
@@ -17,37 +16,38 @@ ms.collection:
 ms.custom: [copilot-learning-hub]
 appliesto:
   - ✅ Microsoft 365 Copilot
+ms.date: 06/16/2025
 ---
 
 # Microsoft 365 Copilot pay-as-you-go overview for IT admins
 
-The Microsoft 365 Copilot pay-as-you-go plan offers a flexible and cost-effective way for organizations to access Copilot services. This plan allows administrators to enable consumption-based billing for specific Copilot scenarios, providing users with the ability to use Copilot features without committing to a full license.
+The Microsoft 365 Copilot pay-as-you-go plan offers a flexible and cost-effective way for organizations to access Copilot services. This plan allows administrators to enable usage-based billing for specific Copilot scenarios, providing users with the ability to use Copilot features without committing to a full license.
 
 This article provides an overview of the pay-as-you-go plan, its benefits, and pricing details.
 
 ## Why pay-as-you-go?
 
-The Microsoft 365 Copilot pay-as-you-go plan offers a flexible and scalable solution for organizations looking to use AI capabilities without the commitment of a full license. When you enable consumption-based billing, administrators can better manage costs and provide users with access to Copilot features as needed.
+The Microsoft 365 Copilot pay-as-you-go plan offers a flexible and scalable solution for organizations looking to use AI capabilities without the commitment of a full license. When you enable usage-based billing, administrators can better manage costs and provide users with access to Copilot features as needed.
 
 The following services are available for pay-as-you-go billing:
 
 - Microsoft 365 Copilot Chat
 - SharePoint agents
 
-More services will be added in the future. No ETA.
-
 ### Common use cases
 
 - **Establish usage patterns** - Understand adoption patterns for new apps to determine if prepaid licenses make financial sense for your business.
-- **Scalability** - Organizations can scale their usage based on demand, paying only for the consumption.
+- **Scalability** - Organizations can scale their usage based on demand, paying only for the usage.
 
 ## How does it work?
 
-The pay-as-you-go plan allows administrators to set up billing and enable users to access declarative agents on a consumption basis. You can manage billing, view costs, and turn off services as needed.
+The pay-as-you-go plan allows administrators to set up billing and enable users to access declarative agents on a usage basis. You can manage billing, view costs, set spending budgets, and turn off services as needed.
 
 The following administrator roles in the [Microsoft 365 admin center](https://admin.microsoft.com) can view and manage pay-as-you-go:
 
 - Global administrator
+- Billing administrator
+
 - AI administrator
 - Global reader (read-only access)
 
@@ -67,7 +67,9 @@ The billing policy acts as a distinct billing identifier that can be associated 
 - To enable administrators to enforce governance
 - To link users to a policy, establishing billing rules for a group of users
 
-For the steps to add or update a billing policy, see [Set up pay-as-you-go for Microsoft 365 Copilot](setup.md).
+As an admin, you can add a budget limit to a billing policy and configure the budget to send email notifications when certain percentage milestones are reached.
+
+For the steps to add or update a billing policy and add a budget, see [Set up pay-as-you-go for Microsoft 365 Copilot](setup.md).
 
 #### What you need to know
 
@@ -98,7 +100,7 @@ To learn more about meters, see [Meters for Microsoft 365 pay-as-you-go](meters.
 
 ## Monitoring and billing
 
-The organization's consumption of the pay-as-you-go service can be monitored in the [Microsoft 365 admin center](https://admin.microsoft.com) > [Cost Management](/microsoft-365/commerce/use-cost-mgmt) page for each Microsoft 365 pay-as-you-go service that you use.
+The organization's usage of the pay-as-you-go service can be monitored in the [Microsoft 365 admin center](https://admin.microsoft.com) > [Cost Management](/microsoft-365/commerce/use-cost-mgmt) page for each Microsoft 365 pay-as-you-go service that you use.
 
 Administrators can also view the cost breakdown and analysis in [Microsoft Cost Management](/azure/cost-management-billing/costs/overview-cost-management).
 

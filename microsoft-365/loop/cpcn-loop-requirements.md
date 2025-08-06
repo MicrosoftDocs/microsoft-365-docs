@@ -1,5 +1,5 @@
 ---
-ms.date: 06/10/2025
+ms.date: 07/02/2025
 title: "Manage Copilot Pages, Copilot Notebooks, and Loop components in your organization"
 ms.reviewer: dancost, tonchan
 ms.author: jenz
@@ -58,16 +58,23 @@ To utilize all features, including at mentions and Loop workspace sharing, it's 
 
 ## Related topics
 
+### Admin
+
 - [Copilot Pages and Notebooks, Summary of Compliance, Lifecycle, Governance](cpcn-compliance-summary.md)
 - [Copilot Pages and Notebooks Storage](cpcn-storage.md)
 - [Permissions](cpcn-loop-permission.md)
 - [Copilot Pages and Notebooks Admin toggles](cpcn-admin-configuration.md)
 - [Managing SharePoint Embedded containers](cpcn-loop-spe-management.md)
+- [Purview and SharePoint Embedded containers](cpcn-loop-purview-management.md)
 - [Loop Summary of Compliance, Lifecycle, Governance](cpcn-compliance-summary.md)
 - [Loop Storage](cpcn-storage.md)
 - [Loop Admin toggles](loop-admin-configuration.md)
+- [Data Integrations Admin Settings](loop-data-integrations-configuration.md)
 - [UX examples for admin toggle states](loop-ux-examples.md)
 - [Loop access via Microsoft 365 subscriptions](https://support.microsoft.com/office/loop-access-via-microsoft-365-subscriptions-92915461-4b14-49a4-9cd4-d1c259292afa)
+
+### End-User Experience
+
 - [Overview of Loop components in Microsoft 365](loop-components-teams.md)
 - [Use Loop components in Outlook](https://support.microsoft.com/office/9b47c279-011d-4042-bd7f-8bbfca0cb136)
 - [Use Loop components in OneNote](https://support.microsoft.com/office/use-loop-components-in-onenote-ed8a43d9-f6fd-4ad6-bc9d-8841db4da459)

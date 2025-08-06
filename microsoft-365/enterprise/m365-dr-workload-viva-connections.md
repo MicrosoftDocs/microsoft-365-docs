@@ -1,9 +1,9 @@
 ---
 title: Data Residency for Viva Connections
 description: Data Residency for Viva Connections
-ms.author: kvice
-author: kelleyvice-msft
-manager: scotv
+ms.author: v-fahasen
+author: fhasen-msft
+manager: v-nihmi
 ms.service: microsoft-365-enterprise
 ms.subservice: advanced-data-residency
 ms.topic: article

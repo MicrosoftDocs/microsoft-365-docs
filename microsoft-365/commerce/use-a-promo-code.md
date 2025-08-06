@@ -22,7 +22,7 @@ ms.custom:
 - okr_SMB
 search.appverid: MET150
 description: "Learn how to apply a promotional code to a new Microsoft 365 for business subscription to reduce the price, and how to troubleshoot promo code errors."
-ms.date: 03/26/2025
+ms.date: 08/04/2025
 ---
 
 # Use a promo code to reduce the price of a new Microsoft 365 for business subscription
@@ -52,7 +52,7 @@ At any time after you complete your purchase, the discount created by your promo
 
 **If you have an MCA billing account type:**
 
-Promo codes are not supported on MCA billing accounts.  Promotional discounts are published directly inside of the product catalog to customers.
+Promo codes are not supported on Modern Customer Agreement (MCA) billing accounts.  Promotional discounts are published directly inside of the product catalog to customers.
 
 ## Promo code terms
 

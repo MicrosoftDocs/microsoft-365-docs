@@ -2,9 +2,9 @@
 title: "About the Exchange Administrator role"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekuako
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 ms.date: 06/03/2024
 audience: Admin
 ms.topic: overview
@@ -16,6 +16,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - must-keep
+- trust-pod
 ms.custom: 
 - AdminSurgePortfolio
 - admindeeplinkEXCHANGE

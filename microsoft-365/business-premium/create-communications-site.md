@@ -16,6 +16,7 @@ ms.collection:
 - M365-identity-device-management
 - M365-Campaigns
 - tier2
+- trust-pod
 ms.custom:
 - Adm_O365
 - MiniMaven

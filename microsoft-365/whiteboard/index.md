@@ -71,4 +71,4 @@ The resources in this section help the admin in your organization to set up and 
 
 | If you're looking for this information | Go to this resource |
 |:-----|:-----|
-|Find PowerShell cmdlet help references to manage Microsoft Whiteboard|[PowerShell for Whiteboard](/powershell/module/whiteboard/)|
+|Find PowerShell cmdlet help references to manage Microsoft Whiteboard|[PowerShell for Whiteboard](/powershell/module/whiteboardadmin/)|

@@ -1,9 +1,9 @@
 ---
 title: "Turn off Basic Mobility and Security"
 f1.keywords: NOCSH
-ms.author: kwekua
-author: kwekuako
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 ms.date: 11/11/2024
 audience: Admin
 ms.topic: how-to
@@ -16,6 +16,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - basic-mobility-security
+- trust-pod
 ms.custom: 
 - AdminSurgePortfolio
 - basic-mobility-security

@@ -1,9 +1,9 @@
 ---
 title: "Microsoft 365 reports in the admin center - Message consumption"
 ms.author: camillepack
-author: camillepack
+author: efrene
 manager: scotv
-ms.date: 05/06/2025
+ms.date: 07/16/2025
 audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-copilot
@@ -27,7 +27,7 @@ The Message consumption report helps you manage metered consumption costs for Mi
 
 - Total messages consumed
 - Cumulative and daily time series
-- Messages consumed per user, per agent, and per agent-user pair
+- Messages consumed per user, per agent, per billing policy, and per agent-user pair
 
 To learn more about meters, see [Meters for Microsoft 365 Copilot pay-as-you-go for IT admins](/copilot/microsoft-365/pay-as-you-go/meters).
 
@@ -52,7 +52,7 @@ You can filter the report by different periods. The Message consumption report c
 
 ### Messages consumed
 
-The **Messages consumed** metric shows the [total billed messages](/microsoft-copilot-studio/billing-licensing#billed-messages) from interactions by users in your organization who do not have a Microsoft 365 Copilot license, and are interacting with agents in Copilot Chat that spin the [Copilot Studio meter](/microsoft-copilot-studio/billing-licensing#copilot-studio-pay-as-you-go-meter) during the selected period.  
+The **Messages consumed** metric shows the [total billed messages](/microsoft-copilot-studio/billing-licensing#billed-messages) from interactions by users in your organization who do not have a Microsoft 365 Copilot license, and are interacting with agents in Copilot Chat that spin the [Copilot Studio meter](/microsoft-copilot-studio/billing-licensing#copilot-studio-pay-as-you-go-meter) during the selected period. You can view usage within an hour from when users interact with a metered agent.  
 
 The number of messages consumed depends on the design of the agent, how often end-users interact with it, and the features the agent uses. Each interaction with an agent might use multiple message types simultaneously. For example, an agent grounded in a tenant graph could use 12 messages (10 messages for tenant graph-grounding, and two messages for generative answers) to respond to a single complex prompt from a user.
 
@@ -87,7 +87,7 @@ You can view user details, agent details, and user & agent details in the Messag
 
 ### User details
 
-:::image type="content" source="../../media/mc-user-details.png" alt-text="Screenshot showing a table for user details in the Message consumption report." lightbox="../../media/mc-user-details.png":::
+:::image type="content" source="../../media/message-consumption-user-details.png" alt-text="Screenshot showing a table for user details in the Message consumption report." lightbox="../../media/message-consumption-user-details.png":::
 
 | Item                    | Description                                                                                      |
 |-------------------------|--------------------------------------------------------------------------------------------------|
@@ -99,7 +99,7 @@ You can view user details, agent details, and user & agent details in the Messag
 
 ### Agent details
 
-:::image type="content" source="../../media/mc-agent-details.png" alt-text="Screenshot showing a table for agent details in the Message consumption report." lightbox="../../media/mc-agent-details.png":::
+:::image type="content" source="../../media/message-consumption-agent-details.png" alt-text="Screenshot showing a table for agent details in the Message consumption report." lightbox="../../media/message-consumption-agent-details.png":::
 
 | Item                    | Description                                                                                      |
 |-------------------------|--------------------------------------------------------------------------------------------------|
@@ -109,15 +109,28 @@ You can view user details, agent details, and user & agent details in the Messag
 | Past 30 days            | The total messages consumed by users who used this agent over the past 30 days including today. |
 | Last activity date (UTC)| The date when the agent was last used by users in your org who do not have Microsoft 365 Copilot license. |
 
+### Billing Policies
+
+:::image type="content" source="../../media/message-consumption-billing-policies.png" alt-text="Screenshot showing a table for billing policies in the Message consumption report." lightbox="../../media/message-consumption-billing-policies.png":::
+
+| Item                    | Description                                                                                      |
+|-------------------------|--------------------------------------------------------------------------------------------------|
+| Billing Policy ID       | The ID is a Microsoft-generated identifier linked to the Billing policy that was created for specific users in a security group.         |
+| Past 7 days             | The total messages consumed by members of the security group linked to Billing policy over the past 7 days, including today.  |
+| Past 30 days            | The total messages consumed by members of the security group linked to Billing policy over the past 30 days, including today.  |
+| Last activity date (UTC)| The most recent date on which a member of the security group linked to the Billing policy consumed messages.  |
+
+
 ### User and agent details
 
-:::image type="content" source="../../media/mc-user-agent.png" alt-text="Screenshot showing the table for user and agent details in the Message consumption report." lightbox="../../media/mc-user-agent.png":::
+:::image type="content" source="../../media/message-consumption-user-agent.png" alt-text="Screenshot showing the table for user and agent details in the Message consumption report." lightbox="../../media/message-consumption-user-agent.png":::
 
 | Item                    | Description                                                                                      |
 |-------------------------|--------------------------------------------------------------------------------------------------|
 | Agent ID                | An agent is an element of an app. The ID is the app identifier generated by Microsoft.          |
 | Agent name              | The name of the app as present in the app manifest                                               |
 | Username                | The user's principal name.                                                                       |
+| Billing Policy ID       | The ID is a Microsoft-generated identifier linked to the Billing policy that was created for specific users in a security group.         |
 | Past 7 days             | The total messages consumed by the user who used this agent over the past 7 days, including today                            |
 | Past 30 days            | The total messages consumed by the user who used this agent over the past 30 days, including today                            |
 | Last activity date (UTC)| The date when the agent was last used by users in your org who do not have Microsoft 365 Copilot license. |
@@ -134,3 +147,17 @@ Yes. You can set up the pay-as-you-go billing policy in the Microsoft 365 admin 
 ### What is “Last activity detected”?  
 
 **Last activity detected** is the date and timestamp of the most recent prompt or user activity that generated the messages consumed.
+
+### How do I find a Billing policy name from the Billing policy ID? 
+
+1. In the Microsoft 365 admin center, go to **Copilot > Billing & usage**. 
+2. On the **Billing policies** tab, select a **Billing policy** and go to **Details**.
+3. You will see **Policy name** and **Billing Policy ID**.  
+
+### How do I view the Billing policy ID if it is concealed?  
+
+By default, the Billing Policy ID in the Message consumption report is anonymized, similar to the username and display name. Global administrators have the ability to modify settings to either reveal or conceal the Billing Policy ID. 
+1. In the Microsoft 365 admin center, go to **Settings > Org Settings**, and under the **Services** tab, choose **Reports**. 
+2. Select **Reports**, and un-check **Display Concealed user, group, and site names in all reports** to view the **Billing policy ID**. Then select **Save**. To conceal the Billing policy ID, simply check the setting, and save your changes. 
+> [!NOTE]
+> Changes to this setting affects both username, display name and Billing Policy ID.

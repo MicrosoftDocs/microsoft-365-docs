@@ -25,7 +25,7 @@ description: "Learn how to send messages to your organization in Microsoft 365 u
 
 # Organizational messages in the Microsoft 365 admin center
 
-As an admin, you can now connect with your organization through customized messages using organizational messages, available in the Microsoft 365 admin center under **Reports**. This feature allows you to create and manage messages, and review delivery reports, all from a central location. Organizational Messages enhance in-product experiences, supporting remote and hybrid work scenarios, such as providing educational materials for employees, information on Microsoft 365 service or license availability, and updates on organizational initiatives. Use the power of organizational messages in the Microsoft 365 admin center to streamline your outreach within Microsoft products.
+As an admin, you can now connect with your organization through customized messages using organizational messages, available in the Microsoft 365 admin center under **Reports**. This feature allows you to create and manage messages, and review delivery reports, all from a central location. Organizational Messages enhance in-product experiences. This includes supporting remote and hybrid work scenarios, such as providing educational materials for employees, information on Microsoft 365 service or license availability, and updates on organizational initiatives. Use the power of organizational messages in the Microsoft 365 admin center to streamline your outreach within Microsoft products.
 
 To get started, go to [organizational messages in the Microsoft 365 admin center](https://aka.ms/organizationalmessagesportal).
 
@@ -98,7 +98,7 @@ There are three basic experiences to familiarize yourself with within the organi
 
 1. **Manage** – Where you and your team can see most of your organizational messages created in various portals, including Usage reports and Copilot advanced deployment guide within the Microsoft 365 admin center. Your team can also execute various functions on each message, view details, and conduct approval flows in the 'Manage' area.
 
-2. **Create a message** – The wizard where anyone with the above-described Organizational Messages Writer Microsoft Entra role can go to create either fully customized or templatized messages.
+2. **Create a message** – The wizard where anyone with the described Organizational Messages Writer Microsoft Entra role can go to create either fully customized or templatized messages.
 
 3. **Review activity** – Where your admins can go to see the performance activity of messages that are or have been delivering to your users.
 
@@ -124,7 +124,7 @@ If you have the Organizational Messages Writer Microsoft Entra role as described
 
 3. In the message details panel, select **Modify**.
 
-4. This takes you directly into the creation wizard where you can continue the creation of this draft message.
+4. In the Creation Wizard, continue the creation of the draft message.
 
 ### How to approve or reject a ‘pending approval’ message
 
@@ -156,7 +156,7 @@ If you have the Organizational Messages Writer Microsoft Entra role as described
 
 > [!NOTE]
 >
-> - Fully customized messages require an approver to ‘approve’ any message before it's delivered to your users. However, selecting a premade message won't require any approval from your organization before it can be delivered to end users.
+> - Fully customized messages require an approver to ‘approve’ any message before delivery to your users. However, selecting a premade message doesn't require any approval from your organization before it can be delivered to end users.
 > - Approvers can't approve or reject a message that they personally created.
 > - ‘Rejecting’ a message marks the message state as 'Rejected', requiring an author to ‘Withdraw’ the message and then ‘Modify’ the new draft.
 > - Messages that aren't reviewed (such as, approved, or rejected) by approvers before the set 'End date' of the message will automatically be rejected by the system to ensure minimum duration of delivery of messages are as expected by authors.
@@ -166,11 +166,11 @@ If you have the Organizational Messages Writer Microsoft Entra role as described
 > [!IMPORTANT]
 > Organizational messages deliver messages to end users within the time windows configured by admins via Microsoft 365 admin center experiences. However, occasionally, messages might not be delivered as expected due to system or user device conditions, such as urgent messages not being delivered to devices that are disconnected from the internet. In such instances, our system continues trying to deliver messages as possible and appropriate.
 
-Users with the Organizational Messages Writer Microsoft Entra role described previously will have access to the **Create a message** button and capability in the centralized experience. Selecting this button invokes the wizard, which includes these primary creation steps:
+Users with the Organizational Messages Writer Microsoft Entra role described previously have access to the **Create a message** button and capability in the centralized experience. Selecting this button invokes the wizard, which includes these primary creation steps:
 
 - **Objective** for selecting the nature or purpose of your new message.
 
-- **Location** for indicating to which in-product channel the message will be sent for your users.
+- **Location** for indicating to which in-product channel the message is sent for your users.
 
 - **Template** for choosing the format of the message, ‘create your own’ or a premade message from Microsoft.
 
@@ -189,12 +189,12 @@ Users with the Organizational Messages Writer Microsoft Entra role described pre
 
 There are two primary forms of message creation that are enabled in this experience:
 
-1. **Fully customized creation** (or 'create your own') – this is an open-ended format of entering in arbitrary content for messages, allowing your team to make messages that include your company name or other specifics that are unique to your company, group, or team. For example, an author can select ‘create your own’ and type all of the words of the message themselves.
+1. **Fully customized creation** (or 'create your own') – An open-ended format of entering in arbitrary content for messages, allowing your team to make messages that include your company name or other specifics that are unique to your company, group, or team. For example, an author can select ‘create your own’ and type all of the words of the message themselves.
 
 > [!NOTE]
 > The ability to create fully customized messages is enabled if your organization has at least one Microsoft license as described in the [Advanced features](#advanced-features) section.
 
-2. **Premade messages** (or ‘templatized’ messages) – this is a method of selecting and customizing content that is partially created by Microsoft for general purpose use. For example, Microsoft might provide various generic messages that your team can pick and add your logo and URL to drive awareness of a software update.
+2. **Premade messages** (or ‘templatized’ messages) – A method of selecting and customizing content that is partially created by Microsoft for general purpose use. For example, Microsoft might provide various generic messages that your team can pick and add your logo and URL to drive awareness of a software update.
 
 ### How to save and continue draft message
 
@@ -212,7 +212,7 @@ There are two primary forms of message creation that are enabled in this experie
 
 The advanced targeting options of “Companies”, “Departments”, “Locations” in the **Recipients** step of the message creation flow are made possible by the group-level aggregates settings associated with Adoption Score. To learn more, see [Group Level Aggregates in Adoption Score](/microsoft-365/admin/adoption/group-level-aggregates).
 
-This advanced targeting in organizational messages can be enabled using the following:
+This advanced targeting in organizational messages can be enabled using the following procedure:
 
 1. Go to **Settings** > **Org settings** within the Microsoft 365 admin center.
 
@@ -239,14 +239,14 @@ This advanced targeting in organizational messages can be enabled using the foll
 
 > [!NOTE]
 >
-> - For the same channel (such as Windows Spotlight), images provided by your team for the last created message will be automatically provided for your next message. However, you can override that image with a new image upload.
-> - Once you select ‘Send for approval’ at the end of a fully customized message creation flow, anyone in your tenant that has the Organizational Messages Approver Microsoft Entra role described previously will be able to review and approve/reject your message.
-> - If you save your draft before the ‘Schedule’ step and thus don't provide a custom message name, the draft will have a programmatically generated name based on the date-time when you saved the draft. You can edit this message name by modifying the draft message.
-> - Not all selections in the ‘Objective’ step might have premade messages available. However, all objectives will have the “create your own’ format available for full customization authoring.
+> - For the same channel (such as Windows Spotlight), images provided by your team for the last created message are automatically provided for your next message. However, you can override that image with a new image upload.
+> - Once you select ‘Send for approval’ at the end of a fully customized message creation flow, anyone in your tenant that has the Organizational Messages Approver Microsoft Entra role that is described previously is able to review and approve or reject your message.
+> - If you save your draft before the ‘Schedule’ step and thus don't provide a custom message name, the draft has a programmatically generated name based on the date-time when you saved the draft. You can edit this message name by modifying the draft message.
+> - Not all selections in the ‘Objective’ step might have premade messages available. However, all objectives have the “create your own’ format available for full customization authoring.
 
 ### Urgent delivery
 
-For some time-sensitive communications, admins and other communicators might need to get a message out fast. For example, when an event is occurring on a corporate campus or a service outage has begun, admins might need to quickly broadcast such events to some employees so they can be prepared. To support communications in such events, admins in Microsoft 365 admin center will be able to select the ‘Urgent messages’ button in the “Top Actions” section.
+For some time-sensitive communications, admins and other communicators might need to get a message out fast. For example, when an event is occurring on a corporate campus or a service outage begins, admins might need to quickly broadcast such events to some employees so they can be prepared. To support communications in such events, admins in Microsoft 365 admin center are able to select the ‘Urgent messages’ button in the “Top Actions” section.
 
 The message creation experience for an urgent message is similar to the flow for creating other messages with these exceptions:
 
@@ -278,27 +278,27 @@ If you or your team would like to work with your tenant’s message performance 
 
 ## Advanced features
 
-Starting with general availability, organizational messages will also introduce the concept of ‘advanced’ features. These experiences are ones within the Organizational messages Microsoft 365 admin center which have tenant and end user requirements as follows:
+Starting with general availability, organizational messages also introduce the concept of ‘advanced’ features. These experiences are ones within the Organizational messages Microsoft 365 admin center, which have tenant and end user requirements as follows:
 
 ### Tenant - accessing advanced features when creating messages
 
-Advanced features are accessible to admins within Organizational messages in Microsoft 365 admin center when their tenant has one of the following:
+Advanced features are accessible to admins within Organizational messages in the Microsoft 365 admin center when their tenant has one of the following licenses:
 
 - Microsoft 365 E3-E5 licenses
 - Office 365 E3-E5 licenses
-- Windows 365 E3-E5 licenses
+- Windows Enterprise E3-E5 licenses
 
 ### End user – receiving messages with advanced features
 
-End users within a tenant are eligible to receive messages created using advanced features when these end users personally have one of the following:
+End users within a tenant are eligible to receive messages created using advanced features when these end users personally have one of the following licenses:
 
 - Microsoft 365 E3-E5 license
 - Office 365 E3-E5 license
-- Windows 365 E3-E5 license
+- Windows Enterprise E3-E5 license
 
 ### Current advanced features
 
-For general availability, the advanced features in Organizational messages in Microsoft 365 admin center are the following:
+For general availability, the advanced features in Organizational messages in Microsoft 365 admin center include:
 
 1. Fully customized message creation
 
@@ -319,7 +319,7 @@ There are certain policies that block the delivery of organizational messages to
 To make policy changes on your tenant using Intune, your admin should:
 
 1. Sign in to the Microsoft Endpoint Manager admin center for your tenant.
-1. Configure the policies described below using a Microsoft Intune device restrictions profile template or the settings catalog.
+1. Configure the policies described using a Microsoft Intune device restrictions profile template or the settings catalog.
 1. Make sure to adjust these policies in all new and existing policies that are targeted at end users and devices that might receive organizational messages.
 1. Enable Organizational Messages Policy
 
@@ -332,7 +332,7 @@ To make policy changes on your tenant using Intune, your admin should:
 ### Enable Experiences Policies
 
 >[!NOTE]
-> If you use the Windows MDM security baseline, you'll need to change the required policies to **Not configured**. These policies control organizational messages configured by your team and other messages coming directly from Microsoft. To continue blocking messages coming directly from Microsoft as defined in the Windows MDM security baseline, configure the Microsoft messages policy found in the Organizational messages settings experience within the admin center.
+> If you use the Windows MDM security baseline, you need to change the required policies to **Not configured**. These policies control organizational messages configured by your team and other messages coming directly from Microsoft. To continue blocking messages coming directly from Microsoft as defined in the Windows MDM security baseline, configure the Microsoft messages policy found in the Organizational messages settings experience within the admin center.
 
 If using Settings catalog, follow these steps:
 
@@ -369,18 +369,18 @@ If using Device Restrictions, follow these steps:
 
 ### Can you tell me more about delivery expectations for these messages?
 
-For non-urgent messages, after your message has been scheduled by the Organizational Messages platform (for example, after approval from your Organizational Messages approvers is acquired as needed), at the earliest, it will take a few hours before the message will be eligible to be delivered to end user devices. For example, if you set the Start Date to be now/today, you should expect a few hours before any end user devices in your testing tenant receive the message payload.
+For non-urgent messages, after your message has been scheduled by the Organizational Messages platform (for example, after approval from your Organizational Messages approvers is acquired as needed), at the earliest, it will take a few hours before the message is eligible to be delivered to end user devices. For example, if you set the Start Date to be now/today, you should expect a few hours before any end user devices in your testing tenant receive the message payload.
 
 Further, Windows buffers messages on a set period for each of the channels. (In other words, this experience is delivered on a ‘pull’ model.) So, expect that your message might take 24 or more hours for targeted end users in your tenant to receive and render the message as their devices might be configured to request content at different times.
 
 Once your message has been actively delivering for over 24 hours, you can return to the 'Manage' experience to review the latest delivery data for your message.
 
-For urgent messages, after your message has been scheduled by the Organizational Messages platform (for example, after approval from your Organizational Messages approvers is acquired as needed), the platform will try to send the message as soon as possible. However, as noted above, this is a best-effort mechanism subject to various conditions, with no guaranteed delivery times.
+For urgent messages, after your message has been scheduled by the Organizational Messages platform (for example, after approval from your Organizational Messages approvers is acquired as needed), the platform will try to send the message as soon as possible. However, as noted earlier, this is a best-effort mechanism subject to various conditions, with no guaranteed delivery times.
 
 > [!NOTE]
 > For Windows spotlight messages, users who select a message on the Windows lock screen won't see it again for 12 months. Users who do not select the message may see it multiple times.
 
-### My team has made other organizational messages within Intune, Adoption Score, Usage reports, and others. How do they work with this?
+### My team made other organizational messages within Intune, Adoption Score, Usage reports, and others. How do they work with this?
 
 The Organizational messages centralized experience is the ‘one-stop-shop’ for organizational messages. You should be able to see and manage your other messages from the centralized experience, regardless of where they were created.
 
@@ -453,7 +453,7 @@ All messages have a state that indicates their creation or delivery status, incl
 
 6. **Draft** – message has not been completed or otherwise submitted for scheduling and/or approval. Any of your tenant’s writers can continue a draft to completion via the creation flow.
 
-7. **Scheduled** – message has been properly authored and is awaiting delivery (at which time it will be coded as ‘Active)
+7. **Scheduled** – message has been properly authored and is awaiting delivery (at which time it is coded as ‘Active)
 
 8. **Rejected** – message was reviewed, and an Approver admin disallowed it from proceeding to a Scheduled or Active state.
 
@@ -461,7 +461,7 @@ All messages have a state that indicates their creation or delivery status, incl
 
 ### How does localization work in Organizational messages?
 
-For **premade messages**, your message is delivered to end users who have their related product language set to one of the following:
+The following are the locales supported:
 
 - en-US
 - de-DE
@@ -479,16 +479,26 @@ For **premade messages**, your message is delivered to end users who have their 
 - zh-Hans
 - zh-Hant
 
-For example, if the Organizational Messages Writer (admin) selects "Message A" to send to end users, any end user whose preferred language matches one of the supported languages listed above will qualify to receive "Message A."
+For **premade** messages, an Organizational Message is created for all locales listed above. If the Organizational Messages Writer (admin) selects "Premade Message A" to send to end users, any end user whose first preferred language matches one of the supported languages will qualify to receive "Premade Message A" in their first preferred language.
+
+For **custom messages**, the creation of an Organizational Message is restricted to the language selected as the Microsoft 365 admin center (MyAccount) display language so long as it is one of the locales listed above.
+
+For example, If the Organizational Messages Writer (admin) sets their Microsoft 365 admin center (MyAccount) display language to French (which is one of the supported language listed above) while creating "Custom Message B", then only end users with French as the first option under "Preferred Languages" in their Windows Settings will receive "Custom Message B." End users whose preferred language is any other language will not receive "Custom Message B".
+
+Locale fallback:
+
+If the Organizational Messages Writer (admin) locale is outside of the supported list above, the created message will fall back to the corresponding locale with the same language (if applicable). If there is no corresponding locale with the same language, then the created message will fall back to en-US
+
+Fallback examples:
+
+fr-CA will fall back to fr-FR, and users with all fr language locales will receive the message.
+
+lv_LV will fall back to en-US, and users with all en languages locales will receive the message.
 
 > [!NOTE]
 >
 > - *Locale of the custom message writer selected*: Display language set in the Microsoft 365 admin center (MyAccount).
 > - *Locale of the message receiver selected*: First supported language listed under "Preferred Languages" in the user's Windows Settings menu. This is determined by the operating system on the user's device.
-
-For **custom messages**, delivery will be restricted to the language selected as the Microsoft 365 admin center (MyAccount) display language.
-
-For example, if the Organizational Messages Writer (admin) sets their Microsoft 365 admin center (MyAccount) display language to French while creating "Message B," only end users with French as the first option under "Preferred Languages" in their Windows Settings will receive "Message B." End users whose preferred language is any other language will not receive the message.
 
 ### Does Organizational Messages support government environments, such as GCC, GCCH, etc.?
 

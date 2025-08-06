@@ -17,6 +17,7 @@ ms.collection:
 - m365-security
 - m365-initiative-defender-business
 - tier2
+- trust-pod
 ---
 
 # Review remediation actions in the Microsoft Defender portal

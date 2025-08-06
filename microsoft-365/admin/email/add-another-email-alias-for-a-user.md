@@ -35,9 +35,6 @@ If you want multiple people to manage email sent to a single email address like 
 > [!NOTE]
 > This article is for Microsoft 365 administrators who have business subscriptions. It's not for home users.
 
-> [!TIP]
-> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
-
 ## Before you begin
 
 You must be a member of the user administrator role to add email aliases to a user. For more info, see [About admin roles in the Microsoft 365 admin center](../add-users/about-admin-roles.md).

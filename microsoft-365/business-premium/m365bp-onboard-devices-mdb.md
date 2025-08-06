@@ -16,6 +16,7 @@ ms.collection:
 - SMB
 - m365-security
 - tier2
+- trust-pod
 ---
 
 # Onboard enrolled devices to Microsoft Defender for Business

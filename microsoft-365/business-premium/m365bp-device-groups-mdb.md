@@ -16,6 +16,7 @@ ms.collection:
 - SMB
 - m365-security
 - tier2
+- trust-pod
 ---
 
 # Device groups and categories in Microsoft 365 Business Premium

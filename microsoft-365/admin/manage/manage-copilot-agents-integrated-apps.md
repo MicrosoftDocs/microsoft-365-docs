@@ -210,7 +210,7 @@ You can block or unblock agents for the entire organization by using the same co
 Blocking or unblocking an agent affects its availability and functionality in Copilot and other host products, such as Outlook, Teams, or Microsoft 365.
 
 >[!NOTE]
-> For the Researcher and Analyst agents, the **Edit users** panel is disabled. To manage their availability, you must block the agent for the entire tenant using the **Block** action in the admin center.
+> For the [Researcher](https://go.microsoft.com/fwlink/?linkid=2329838) and [Analyst](https://go.microsoft.com/fwlink/?linkid=2329729) agents, the **Edit users** panel is disabled. To manage their availability, you must block the agent for the entire tenant using the **Block** action in the admin center.
 
 ## Agent metadata in admin center
 

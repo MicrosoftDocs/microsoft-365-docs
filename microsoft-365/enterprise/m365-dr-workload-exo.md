@@ -1,9 +1,9 @@
 ---
 title: Data Residency for Exchange Online
 description: Learn about Data Residency for Exchange Online
-ms.author: kvice
-author: kelleyvice-msft
-manager: scotv
+ms.author: v-fahasen
+author: fhasen-msft
+manager: v-nihmi
 ms.service: microsoft-365-enterprise
 ms.subservice: advanced-data-residency
 ms.topic: article

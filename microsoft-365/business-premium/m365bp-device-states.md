@@ -12,6 +12,7 @@ ms.date: 05/31/2024
 ms.localizationpriority: medium
 ms.collection:
 - tier2
+- trust-pod
 ms.custom:
 - MiniMaven
 search.appverid:

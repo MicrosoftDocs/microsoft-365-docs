@@ -264,8 +264,8 @@ Microsoft 365 Backup supports the backup and restoration of any site and user ac
  
   - OneDrive accounts and SharePoint sites that undergo the following types of changes won't be undoable via restore: tenant rename, tenant move, and site URL change.
     
-  - SharePoint sites that utilize Term Store term sets will restore, but the terms will not restore to their previous states.  Terms will retain their current state when the site itself is restored by Microsoft 365 Backup.
-    
+  - SharePoint sites that utilize Term Store term sets will restore, but the terms will not restore to their previous states.  Terms will retain their current state when the site itself is restored by Microsoft 365 Backup if the site is restored to the same URL.  If the site is restored to a new URL, the term store will not be copied to the new location. 
+  
     - OneDrive accounts and SharePoint sites being restored to a new URL have a read-only lock on that new URL. The [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) can download documents or remove the read-only lock manually.
 
         [!INCLUDE [global-administrator-note](../includes/global-administrator-note.md)]
@@ -283,6 +283,8 @@ Microsoft 365 Backup supports the backup and restoration of any site and user ac
     - When choosing to "Replace mailbox items with backups," items are restored to the original location in the user's Inbox.  The only exception to this is if an item was edited while in the Deleted Items folder, as this creates a new version of an item where its original location is the Deleted Items folder.
       
     - If the parent folder of an item has been deleted, the item will be restored to a newly created folder named *Recovered Items YYYY-MM-DD, HH:MM*.
+      
+    - Mailbox items can only be restored to the current mailbox.  They cannot be restored to another mailbox.
  
 - All
     - Restore session history is retained for 366 days.

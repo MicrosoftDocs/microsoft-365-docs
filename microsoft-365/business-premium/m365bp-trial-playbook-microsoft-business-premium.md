@@ -10,6 +10,7 @@ ms.topic: article
 ms.collection:
 - m365-security
 - tier2
+- trust-pod
 ms.service: microsoft-365-business-security
 ms.date: 05/31/2024
 ms.reviewer: nehabha

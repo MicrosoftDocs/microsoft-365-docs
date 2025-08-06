@@ -12,6 +12,7 @@ ms.date: 06/07/2024
 ms.localizationpriority: medium
 ms.collection:
 - tier2
+- trust-pod
 description: "The Microsoft 365 admin center lets you manage some Microsoft Intune roles, which map to business functions and give permissions to do specific tasks."
 ---
 

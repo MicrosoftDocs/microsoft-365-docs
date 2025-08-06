@@ -5,7 +5,7 @@ ms.author: kwekua
 manager: dansimp
 ms.date: 06/05/2025
 ms.topic: overview
-ms.service: microsoft-365-admin
+ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
 ms.collection: CopilotSearch
 ms.custom: QuickDraft
@@ -20,13 +20,13 @@ description: An overview of the Microsoft 365 Copilot search feature.
 Microsoft 365 Copilot Search is an AI-powered universal search experience optimized for your organization. It provides a familiar search experience that helps users quickly find relevant results from your organization. It offers a simple user experience that helps you find what you need, when you need it in a fast and secure unified search.
 
 > [!NOTE]
-> Microsoft 365 Copilot Search becomes available in a Targeted release beginning late June 2025. It will become generally available as a Standard release in Q3 2025. Learn more about [Standard and Targeted releases]( /microsoft-365/admin/manage/release-options-in-office-365).
+> Microsoft 365 Copilot Search becomes available in a Targeted release beginning late June 2025. It will become generally available as a Standard release starting July 23, 2025. Learn more about [Standard and Targeted releases]( /microsoft-365/admin/manage/release-options-in-office-365).
 
 **Unified search across all applications:** Copilot Search delivers comprehensive insights into your organization's data by interpreting content across Microsoft 365 applications and beyond. With over 100 connectors now in the Microsoft Catalog, support for custom connectors, and hundreds of connectors from integrated software vendors (ISVs), Copilot Search is the single place for quick information across all your Microsoft and non-Microsoft data sources. Learn more about the [Microsoft 365 Copilot connectors gallery](/microsoftsearch/connectors-gallery).
 
 **What to use when:** Because it's integrated with Microsoft 365 Copilot, users can find the results they need with search, then seamlessly transition to chat for deeper exploration or follow-up task completion.
 
-:::image type="content" source="media/copilot-search-home-sm.png" alt-text="Screenshot that shows Microsoft 365 Copilot Search." lightbox="media/copilot-search-home-raw.png":::
+:::image type="content" source="media/copilot-search-home-ex.png" alt-text="Screenshot that shows Microsoft 365 Copilot Search." lightbox="media/copilot-search-home-ex.png":::
 
 ## How Copilot Search works with Microsoft 365 Copilot
 
@@ -42,7 +42,7 @@ Copilot Search is integrated into the Microsoft 365 Copilot app as a dedicated *
 
 This design positions search as the organizing layer for AI, while chat remains the workspace for task execution and deeper interactions. For example, if a user searches for **what's the status of the Q2 report**, Copilot Search may return a summarized answer and offer to continue the conversation in chat for more nuanced exploration or follow-up actions.
 
-:::image type="content" source="media/copilot-search-landing-sm.png" alt-text="Screenshot that shows Microsoft 365 Copilot Search results." lightbox="media/copilot-search-landing-raw.png":::
+:::image type="content" source="media/copilot-search-landing-ex.png" alt-text="Screenshot that shows Microsoft 365 Copilot Search results." lightbox="media/copilot-search-landing-ex.png":::
 
 ## Access and eligibility
 
@@ -69,3 +69,29 @@ Copilot Search allows admins to curate answers that provide concise, authoritati
 - **People:** Surface coworkers' roles and show how they fit into the organization.
 
 For more information, see [how to curate answers for Copilot Search](/microsoftsearch/setup-microsoft-search#step-2-create-answers).
+
+## How is Microsoft 365 Copilot Search different from Microsoft 365 Copilot Chat? 
+The following table shows some of the key differences between Microsoft 365 Copilot and Microsoft 365 Copilot Chat.
+
+| Feature | Microsoft 365 Copilot Search  | Microsoft 365 Copilot Chat  |
+|---|---|---|
+| Best for | Find what you need quickly | Generate deeper answers, created content and get the task done |
+| Interaction style | Query-based (search box) | Conversational (chat-based) |
+| Data sources | Microsoft Graph & third-party connectors | Microsoft Graph, third-party connectors, web |
+
+## How is Microsoft 365 Copilot Search different from Microsoft Search? 
+
+The following table shows a summary of key comparisons between Microsoft 365 Copilot Search (Paid) and Microsoft Search (Free), focusing on the most relevant features:
+
+| Feature/Capability | Microsoft Copilot Search (paid) | Microsoft Search (free) |
+|---|---|---|
+| UI Entry Point | Microsoft 365 Copilot App (Web, Desktop, Mobile) Microsoft 365 Copilot App (Web, Desktop, Mobile), SharePoint (organizational tab) |
+| User Eligibility | Requires Microsoft 365 Copilot license | Available to unpaid Entra ID users |
+| Search Experience | AI-powered, semantic search; universal search across M365 & non-M365 sources; modern UX | Keyword-based search; interleaved results; Teams/Outlook in Messages vertical |
+| Graph Connector Support (3P) | Instant support for all tenant-enabled connectors with semantic search & personalization | Requires admin setup for connectors to appear as verticals with result-types and filters. No semantic search. |
+| Integration with Copilot Chat | Deep integration with Chat —via Copilot Chat answers | No integration |
+| Security & Privacy | Enterprise-grade security and privacy; sensitivity labels in UX | Same baseline security; sensitivity labels in UX. Already available as default |
+| Integrations | Native Edge integration (people-centric, tenant-scoped search) | Native Edge integration (people-centric, tenant-scoped search) |
+| Administration | No setup required; admin can configure bookmarks/acronyms; Admin analytics reports will be available starting August 2025 | Admin config for bookmarks/acronyms; Admin analytics available |
+| Future Updates | Document-level AI summary, enhanced people search, Ranking/Relevance and natural language improvements and more | N/A |
+

@@ -27,7 +27,7 @@ ms.custom:
 - campaignIDs-batch1
 search.appverid: MET150 
 description: "Learn how to reactivate a subscription in the Microsoft 365 admin center."
-ms.date: 03/27/2025
+ms.date: 07/31/2025
 ---
 
 # Reactivate your subscription in the Microsoft 365 admin center

@@ -44,9 +44,6 @@ Current research strongly indicates that mandated password changes do more harm 
 
 You must be a [user administrator](../add-users/about-admin-roles.md) to perform these steps.
 
-> [!TIP]
-> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
-
 ## Set password expiration policy
 
 Follow the steps below if you want to set user passwords to expire after a specific amount of time.

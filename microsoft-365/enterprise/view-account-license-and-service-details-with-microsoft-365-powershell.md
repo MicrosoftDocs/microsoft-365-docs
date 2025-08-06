@@ -38,7 +38,7 @@ For more information about licensing plans, license, and services, see [View lic
 
 ## View account license and service details using Microsoft Graph PowerShell
 
-First, [connect to your Microsoft 365 tenant](/graph/powershell/get-started#authentication).
+First, [connect to your Microsoft 365 tenant](/powershell/microsoftgraph/get-started?view=graph-powershell-1.0#authentication).
 
 Reading user properties including license details requires the **User.Read.All** permission scope or one of the other permissions listed in the ['Get a user' Graph API reference page](/graph/api/user-get).
 

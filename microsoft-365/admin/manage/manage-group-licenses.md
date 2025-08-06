@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: sinakassaw, nicholak
+ms.reviewer: nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -21,7 +21,7 @@ ms.custom:
 - m365-groups
 search.appverid: MET150
 description: "Learn how to assign or unassign licenses to groups in the Microsoft 365 admin center."
-ms.date: 04/07/2025
+ms.date: 07/08/2025
 ---
 
 # Assign or unassign licenses to a group in the Microsoft 365 admin center
@@ -33,7 +33,7 @@ If you have security groups, mail enabled groups, or Microsoft 365 groups, you c
 
 ## Before you begin
 
-- You must be at least a License Administrator or User Administrator to assign licenses directly to users. Note that Group Administrators can assign licenses to groups using group-based licensing, which automatically applies licenses to group members, see [Microsoft Entra built-in roles](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference).
+- You must be at least a Groups Administrator, License Administrator or User Administrator to assign licenses.
 - In addition to the steps described in this article, you can also use the Microsoft Graph PowerShell SDK to assign or unassign Microsoft 365 licenses to groups. For more information, see [Set-MgGroupLicense](/powershell/module/microsoft.graph.groups/set-mggrouplicense).
 - Group-based licensing doesn't currently support nested groups (groups that contain other groups). If you assign licenses to a nested group, only users in the first-level group are assigned licenses.
 - When you assign or modify licenses for a large group, like 100,000 users, it can affect performance. In certain high load situations, it might take a long time to process license changes for groups or membership changes to groups with existing licenses.

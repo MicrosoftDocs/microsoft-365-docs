@@ -7,7 +7,7 @@ audience: Admin
 ms.topic: article
 ms.service: loop
 ms.reviewer: michalbr, dancost
-ms.date: 06/12/2025
+ms.date: 07/02/2025
 ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection: 
@@ -87,13 +87,17 @@ In this scenario, workspace creation was initially enabled for the user, allowin
 
 ## Related topics
 
+### Admin
+
 - [Summary of Compliance, Lifecycle, Governance](loop-compliance-summary.md)
 - [Requirements](cpcn-loop-requirements.md)
 - [Storage](loop-storage.md)
 - [Permissions](cpcn-loop-permission.md)
 - [Admin toggles](loop-admin-configuration.md)
-- [UX examples for admin toggle states](loop-ux-examples.md)
-- [Managing SharePoint Embedded containers](cpcn-loop-spe-management.md)
+- [Data Integrations Admin Settings](loop-data-integrations-configuration.md)
+
+### End-User Experience
+
 - [Overview of Loop components in Microsoft 365](loop-components-teams.md)
 - [Use Loop components in Outlook](https://support.microsoft.com/office/9b47c279-011d-4042-bd7f-8bbfca0cb136)
 - [Use Loop components in OneNote](https://support.microsoft.com/office/use-loop-components-in-onenote-ed8a43d9-f6fd-4ad6-bc9d-8841db4da459)

@@ -1,5 +1,5 @@
 ---
-ms.date: 06/10/2025
+ms.date: 07/02/2025
 title: "Summary of governance, lifecycle, and compliance capabilities for Copilot Pages and Copilot Notebooks"
 ms.reviewer: dancost, tonchan
 ms.author: jenz
@@ -61,7 +61,7 @@ As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on 
 - **[Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)** capabilities for Copilot Pages and Copilot Notebooks are supported. Copilot Pages and Copilot Notebooks are both stored in the same user-owned SharePoint Embedded container. This container is created in the geo that matches the user's [preferred data location](/microsoft-365/enterprise/plan-for-multi-geo#best-practices). Like OneDrive, admins have the ability to manually move the user's Copilot Pages and Copilot Notebooks container to a new geo when their preferred data location changes.
 
     > [!IMPORTANT]
-    > There is no end user recycle bin for Copilot Pages or Copilot Notebooks.
+    > There is no end user recycle bin for Copilot Pages or Copilot Notebooks. Neither Administrators nor end users can recover individually deleted Copilot Notebooks.
 
 - **Version History** [export in Purview](/purview/ediscovery-export-search-results#step-1-prepare-search-results-for-export) or via [Graph API](/graph/api/driveitem-get-content-format) is available. Copilot Pages and Copilot Notebooks version history is configured to save 50 versions per file and no admin setting is available to change this configuration.
 
@@ -90,7 +90,7 @@ As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on 
 ## Microsoft 365 retention and deletion
 
 - **[Retention policies](/purview/create-retention-policies?tabs=other-retention)** from Microsoft Purview Data Lifecycle Management configured for all SharePoint sites are enforced for all Copilot Pages and Copilot Notebooks.
-  - For more information on how to configure specific Copilot Notebooks, see [Purview and SharePoint Embedded](cpcn-loop-spe-management.md#purview-and-sharepoint-embedded)
+  - For more information on how to configure specific Copilot Notebooks, see [Purview and SharePoint Embedded](cpcn-loop-purview-management.md)
 
 - **[Retention labels](/purview/retention#retention-labels)** from Microsoft Purview Data Lifecycle Management and Microsoft Purview Records Management are supported for Copilot Pages (.loop files) and Copilot Pages in Copilot Notebooks by [applying published labels](/purview/create-apply-retention-labels?tabs=spo-onedrive) in OneDrive or SharePoint, or [automatically applying](/purview/apply-retention-labels-automatically) the labels. There's limited support for manually applying retention labels.
   - Retention labels cannot be viewed or applied directly from a Copilot Page. Instead, the user must [navigate to the Copilot Page within the Loop app](/purview/create-apply-retention-labels?tabs=loop%2Cdefault-label-for-sharepoint#manually-apply-retention-labels) to view or apply a retention label on a Copilot Page.
@@ -111,4 +111,5 @@ As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on 
 - [Permissions](cpcn-loop-permission.md)
 - [Admin toggles](cpcn-admin-configuration.md)
 - [Managing SharePoint Embedded containers](cpcn-loop-spe-management.md)
+- [Purview and SharePoint Embedded containers](cpcn-loop-purview-management.md)
 - [Overview of Loop components in Microsoft 365](loop-components-teams.md)

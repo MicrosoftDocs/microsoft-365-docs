@@ -45,11 +45,11 @@ Using Office 365 might increase the utilization of your organization's internet 
   
 To estimate the bandwidth, use the following steps:
   
-1. Assess the number of clients that will use each Internet egress. Let our multi-terabit network handle as much of the connection as possible. 
+1. Assess the number of clients that will use each Internet egress. Let our multi-terabit network handle as much of the connection as possible.
 
 2. Determine which Office 365 services and features will be available for clients to use. You'll likely have groups of people with different services or usage profiles.
 
-3. Measure the network use for a pilot group of clients. Ensure the pilot clients are representative of the different profiles of people in the organization and the different geographic locations. You can cross-check your results against our old calculators for [Exchange](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-the-exchange-client-network-bandwidth-calculator-beta/ba-p/601744) and [Microsoft Teams](/microsoftteams/prepare-network) or the [case study](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365) we performed on our own network. 
+3. Measure the network use for a pilot group of clients. Ensure the pilot clients are representative of the different profiles of people in the organization and the different geographic locations. You can cross-check your results against our old calculators for [Exchange](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-the-exchange-client-network-bandwidth-calculator-beta/ba-p/601744) and [Microsoft Teams](/microsoftteams/prepare-network).
 
 4. Use the measurements from the pilot group to extrapolate the entire organization's needs and retest to validate the estimations before making any changes to your network.
 

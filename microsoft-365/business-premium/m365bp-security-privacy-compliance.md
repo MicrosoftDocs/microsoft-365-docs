@@ -13,9 +13,10 @@ ms.localizationpriority: medium
 ms.reviewer: nehabha
 f1.keywords: NOCSH
 ms.collection:
- - essentials-security
- - essentials-privacy
- - essentials-compliance
+- essentials-security
+- essentials-privacy
+- essentials-compliance
+- trust-pod
 ms.custom:
 ---
 

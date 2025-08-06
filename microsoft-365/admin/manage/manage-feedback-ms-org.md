@@ -2,23 +2,21 @@
 title: "Manage Microsoft feedback for your organization"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekuako
-manager: scotv
+ms.author: danbrown
+author: DHB-MSFT
+manager: dansimp
 ms.date: 11/19/2024
 audience: Admin
-ms.topic: article
+ms.topic: concept-article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
-- Tier2
-- scotvorg
+ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
-ms.custom: 
-- AdminSurgePortfolio
-- admindeeplinkMAC
+- trust-pod
+- feedback-content
+ms.custom: admindeeplinkMAC
 description: "Manage feedback your users can send to Microsoft about Microsoft products."
 ---
 

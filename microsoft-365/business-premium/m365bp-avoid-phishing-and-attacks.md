@@ -15,6 +15,7 @@ ms.collection:
 - m365solution-smb
 - highpri
 - tier2
+- trust-pod
 ms.custom:
 - MiniMaven
 - MSB365

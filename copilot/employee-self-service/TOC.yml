@@ -1,0 +1,40 @@
+items:
+- name: Overview of the Employee Self-Service agent
+  href: overview.md
+- name: Deploy the Employee Self-Service agent
+  items:
+    - name: Overview of the deployment process
+      href: deploy-overview-alm.md
+    - name: Prerequisites
+      href: prerequisites.md
+    - name: Prepare for deployment
+      href: prepare.md
+    - name: Install the Employee Self-Service agent
+      href: install.md
+    - name: Customize the Employee Self-Service agent
+      href: customize.md
+    - name: Publish the Employee Self-Service agent
+      href: publish.md
+    - name: Design best practices for the Employee Self-Service agent
+      href: design-best-practices.md
+- name: Integrate third-party systems with the Employee Self-Service agent
+  items:
+    - name: SAP SuccessFactors
+      href: sapsuccessfactors.md
+    - name: ServiceNow
+      href: servicenow.md
+    - name: ServiceNow HRSD and ITSM
+      href: servicenow-hrsd-itsm.md
+    - name: ServiceNow Live agent
+      href: servicenow-live-agent.md
+    - name: Workday
+      href: workday.md
+      items:
+        - name: Workday reports
+          href: workday-reports.md
+- name: Usage analytics for the Employee Self-Service agent
+  href: usage-analytics.md
+- name: Known issues and limitations
+  href: known-issues-limitations.md
+- name: Responsible AI FAQ
+  href: rai-faq.md

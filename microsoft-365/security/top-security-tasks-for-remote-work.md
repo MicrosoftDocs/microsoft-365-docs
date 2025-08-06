@@ -15,6 +15,7 @@ ms.collection:
 - m365-security
 - remotework
 - tier2
+- trust-pod
 ms.custom: admindeeplinkDEFENDER
 description: "Protect your business email and data from cyber threats, including ransomware, phishing, and malicious attachments."
 ms.date: 9/18/2023
@@ -74,17 +75,17 @@ Applying these policies takes only a few minutes, but be prepared to support you
 
 ## 2: Protect against threats
 
-All Microsoft 365 plans with cloud mailboxes include Exchange Online Protection (EOP) features, including:
+All Microsoft 365 plans with cloud mailboxes include the following default email protection features:
 
-- [Anti-malware](office-365-security/anti-malware-protection-about.md).
-- [Anti-spam](office-365-security/anti-spam-protection-about.md).
-- [Anti-spoofing](office-365-security/anti-phishing-policies-about.md#spoof-settings) in anti-phishing policies.
+- [Anti-malware](/defender-office-365/anti-malware-protection-about).
+- [Anti-spam](/defender-office-365/anti-spam-protection-about).
+- [Anti-spoofing](/defender-office-365/anti-phishing-policies-about#spoof-settings) in anti-phishing policies.
 
-Default settings for these EOP features are automatically assigned to all recipients via default policies. But, **to bump up the EOP protection level to Microsoft's recommended Standard or Strict security settings based on observations in the datacenters, turn on and assign the Standard preset security policy (for most users) and/or the Strict preset security policy (for admins and other high-risk users)**. As new protection capabilities are added and as the security landscape changes, the EOP settings in preset security policies are automatically updated to our recommended settings.
+Default settings for these protection features are automatically assigned to all recipients via default policies. But, **to bump up the protection level to Microsoft's recommended Standard or Strict security settings based on observations in the datacenters, turn on and assign the Standard preset security policy (for most users) and/or the Strict preset security policy (for admins and other high-risk users)**. As new protection capabilities are added and as the security landscape changes, the settings in preset security policies are automatically updated to our recommended settings.
 
 For instructions, see [Use the Microsoft Defender portal to assign Standard and Strict preset security policies to users](office-365-security/preset-security-policies.md#use-the-microsoft-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users).
 
-The differences between Standard and Strict are summarized in the table [here](office-365-security/preset-security-policies.md#policy-settings-in-preset-security-policies). The comprehensive settings for Standard and Strict **EOP settings** are described in the tables [here](office-365-security/recommended-settings-for-eop-and-office365.md#anti-spam-anti-malware-and-anti-phishing-protection-in-eop). 
+The differences between Standard and Strict are summarized in the table [here](office-365-security/preset-security-policies.md#policy-settings-in-preset-security-policies). The comprehensive settings for Standard and Strict settings are described in the tables [here](office-365-security/recommended-settings-for-eop-and-office365.md#anti-spam-anti-malware-and-anti-phishing-protection-in-eop).
 
 ## 3: Configure Microsoft Defender for Office 365
 

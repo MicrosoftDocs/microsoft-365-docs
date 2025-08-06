@@ -7,6 +7,7 @@ ms.date: 04/01/2024
 |Australia                                                                            |AUS
 |Brazil                                                                               |BRA
 |Canada                                                                               |CAN
+|Chile                                                                                |CHL
 |France, Netherlands, Ireland, Norway, Switzerland, Austria, Finland, Sweden, Germany |EUR
 |France                                                                               |FRA
 |Germany                                                                              |DEU
@@ -16,6 +17,7 @@ ms.date: 04/01/2024
 |Italy                                                                                |ITA
 |Japan                                                                                |JPN
 |Korea                                                                                |KOR
+|Malaysia                                                                             |MYS
 |Mexico                                                                               |MEX
 |New Zealand                                                                          |NZL
 |Norway                                                                               |NOR

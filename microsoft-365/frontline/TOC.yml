@@ -126,7 +126,7 @@ items:
     items: 
     - name: Simplify business processes
       href: simplify-business-processes.md
-  - name: Virtual Appointments
+  - name: Appointments
     items: 
     - name: Overview
       href: virtual-appointments.md

@@ -7,7 +7,7 @@ audience: Admin
 ms.topic: article
 ms.service: loop
 ms.reviewer: michalbr, dancost
-ms.date: 06/10/2025
+ms.date: 07/02/2025
 ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection: 
@@ -118,4 +118,5 @@ See [Storage](#storage). When content is stored in OneDrive, if that user leaves
 - [Admin toggles](loop-admin-configuration.md)
 - [UX examples for admin toggle states](loop-ux-examples.md)
 - [Managing SharePoint Embedded containers](cpcn-loop-spe-management.md)
+- [Purview and SharePoint Embedded containers](cpcn-loop-purview-management.md)
 - [Overview of Loop components in Microsoft 365](loop-components-teams.md)

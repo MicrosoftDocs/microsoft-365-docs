@@ -15,6 +15,7 @@ f1.keywords: NOCSH
 ms.collection:
 - m365-security
 - tier2
+- trust-pod
 ms.custom: intro-get-started
 ---
 

@@ -6,7 +6,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: sinakassaw, nicholak
+ms.reviewer: shegu
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -24,7 +24,7 @@ ms.custom:
 - campaignIDs-batch2
 search.appverid: MET150
 description: "Learn how to verify your school's eligibility for Microsoft 365 Education academic pricing."
-ms.date: 05/02/2025
+ms.date: 07/30/2025
 ---
 
 # Verify academic eligibility for Microsoft 365 Education subscriptions

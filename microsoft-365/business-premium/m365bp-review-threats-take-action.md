@@ -12,6 +12,7 @@ ms.localizationpriority: medium
 ms.collection:
 - m365-security
 - tier2
+- trust-pod
 search.appverid: MET150
 description: "Learn how to review and manage threats detected by Microsoft Defender Antivirus on your Windows devices."
 ---

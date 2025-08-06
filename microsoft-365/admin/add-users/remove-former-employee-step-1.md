@@ -2,9 +2,9 @@
 title: "Step 1 - Prevent a former employee from logging in and block access to Microsoft 365 services"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekuako
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 ms.date: 01/06/2025
 audience: Admin
 ms.topic: how-to
@@ -17,6 +17,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - SPO_Content
+- trust-pod
 ms.custom:
   - MSStore_Link
   - TRN_M365B

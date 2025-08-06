@@ -15,6 +15,7 @@ ms.collection:
 - m365solution-smb
 - m365-security
 - tier2
+- trust-pod
 ms.custom:
 - MiniMaven
 search.appverid:

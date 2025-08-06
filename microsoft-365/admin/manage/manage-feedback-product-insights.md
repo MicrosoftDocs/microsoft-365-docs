@@ -2,19 +2,18 @@
 title: "Microsoft product NPS feedback and insights for your organization"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekuako
-manager: scotv
+ms.author: danbrown
+author: DHB-MSFT
+manager: dansimp
 ms.date: 01/06/2025
 audience: Admin
-ms.topic: article
+ms.topic: concept-article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
-- Tier2
-- scotvorg
 - Adm_O365
-ms.custom: AdminSurgePortfolio
+- trust-pod
+- feedback-content
 description: "Use Net promoter scores (NPS) from your end users to see how they feel about Microsoft products and services."
 ---
 

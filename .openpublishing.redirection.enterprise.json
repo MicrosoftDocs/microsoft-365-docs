@@ -1444,6 +1444,11 @@
       "source_path": "microsoft-365/enterprise/manage-skype-for-business-online-policies-with-microsoft-365-powershell.md",
       "redirect_url": "/microsoftteams/assign-policies-users-and-groups",
       "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/microsoft-365-entra-monitoring.md",
+      "redirect_url": "/microsoft-365/enterprise/microsoft-entra-monitoring",
+      "redirect_document_id": true
    }
   ]
 }

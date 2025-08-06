@@ -26,9 +26,9 @@ Network insights are actionable issues that might affect user experience when u
 Insights are intended to help address issues at your network perimeters for your office locations. Each insight provides live details about a specific issue for each geographic location where users are accessing your tenant.
 
 > [!TIP]
-> Admins can now view Service health notifications in Microsoft 365 admin center for Network insights detected for their tenant. You may also receive an email if you opted to receive email notifications. The service health notification has a deep link that takes you directly to the detected network insight for your tenant. You will receive one notification per insight detected. 
+> Admins can now view Service health notifications in Microsoft 365 admin center for Network insights detected for their tenant. You may also receive an email if you opted to receive email notifications. The service health notification has a deep link that takes you directly to the detected network insight for your tenant. You receive one notification per insight detected. 
 
-These are network insights that might be shown for each office location:
+The following are network insights that might be shown for each office location:
 
 #### 1. Your connectivity to critical Microsoft 365 domains is failing
 
@@ -36,7 +36,7 @@ We are detecting connectivity (HTTPS) failures to the following domains: `*.clou
 
 - 1a What does this insight mean?
 
-  This means some or all your users can't connect to subdomains or hosts within the above-mentioned wild card domains.
+  Some or all your users can't connect to subdomains or hosts within the above-mentioned wild card domains.
   
 - 1b What should I do?
 
@@ -44,11 +44,11 @@ We are detecting connectivity (HTTPS) failures to the following domains: `*.clou
   
 #### 2. WebSocket connection to critical Microsoft 365 domains is failing
 
-We are detecting WebSocket (WSS) connection failures to the domain: `*.cloud.microsoft`. This will result in Copilot not working correctly for your users.
+We are detecting WebSocket (WSS) connection failures to the domain: `*.cloud.microsoft`, which his cause Copilot to not work correctly for your users.
 
 - 2a What does this insight mean?
 
-  This means some or all your users can't connect using WebSocket protocol to hosts that are part of the wildcard domain `*.cloud.microsoft` or its subdomains.
+  Some or all your users can't connect using WebSocket protocol to hosts that are part of the wildcard domain `*.cloud.microsoft` or its subdomains.
   
 - 2b What should I do?
 
@@ -56,7 +56,7 @@ We are detecting WebSocket (WSS) connection failures to the domain: `*.cloud.mic
   
 #### 3. Network provider devices are affecting your network
 
-There is one or more cloud proxy-like services that are affecting your connectivity to Microsoft 365 services. These services are causing higher latency and lower throughput for users in your network as compared to other users in your area.
+There are one or more network intermediary services that are affecting your connectivity to Microsoft 365 services. These services are decrypting traffic to Microsoft 365 and maybe doing some inspection or manipulation which may result in an unsupported configuration state.
 
 - 3a What does this insight mean?
 

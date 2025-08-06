@@ -12,11 +12,12 @@ ms.service: microsoft-365-security
 ms.collection:
 - M365-security-compliance
 - tier3
+- trust-pod
 search.appverid:
 - MET150
 ROBOTS: NOINDEX,NOFOLOW
 description: "Admins can learn how to create policies to block active content in Office documents"
-ms.date: 1/31/2023
+ms.date: 07/22/2025
 ---
 
 # Manage active content in Office documents

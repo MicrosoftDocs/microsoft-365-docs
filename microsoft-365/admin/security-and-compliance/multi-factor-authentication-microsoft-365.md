@@ -2,10 +2,10 @@
 title: "Multifactor authentication for Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekuako
-manager: scotv
-ms.date: 10/02/2024
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
+ms.date: 07/28/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -16,6 +16,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- trust-pod
 ms.custom: 
 - AdminSurgePortfolio
 - okr_smb

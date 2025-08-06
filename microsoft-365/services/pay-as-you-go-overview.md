@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: siruvanti
-ms.date: 05/26/2025
+ms.date: 07/18/2025
 audience: admin
 ms.topic: overview
 ms.service: microsoft-365-business
@@ -31,4 +31,4 @@ Pay-as-you-go services improve billing flexibility by letting your organization 
 
 ### Wide range of services
 
-Microsoft 365 pay-as-you-go gives you access to a broad set of services, including SharePoint, OneDrive, Microsoft Syntex, Microsoft 365 Archive, Microsoft 365 Backup, and Microsoft 365 Copilot. This allows your organization to choose and use only the tools it needs—when it needs them—without committing to full licenses upfront.
+Microsoft 365 pay-as-you-go gives you access to a broad set of services, including document processing for Microsoft 365, SharePoint, OneDrive, Microsoft 365 Archive, Microsoft 365 Backup, and Microsoft 365 Copilot. This allows your organization to choose and use only the tools it needs—when it needs them—without committing to full licenses upfront.

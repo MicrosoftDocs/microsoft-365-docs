@@ -2,17 +2,17 @@
 title: "Learn about how to provide feedback to Microsoft"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekuako
-manager: scotv
+ms.author: danbrown
+author: DHB-MSFT
+manager: dansimp
 ms.date: 01/06/2025
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
-- Tier2
-- scotvorg
+- trust-pod
+- feedback-content
 description: "Learn about the different ways you can provide feedback to Microsoft about Microsoft products and services."
 ---
 
@@ -25,7 +25,7 @@ Microsoft values your feedback, and every day we look at feedback from users acr
 Whether you’re providing feedback directly in an application or website, through the Feedback portal, or in the [Windows Feedback Hub](https://aka.ms/WIPFeedbackHub), there are some simple steps you can take to make your feedback as strong as possible.
 
 - If you use a community feedback experience, Microsoft prioritizes feedback that high volumes of our users are experiencing or requesting. You can see if feedback you want to provide already exists. Search to browse existing feedback to see if your feedback was mentioned by someone in the community. It’s possible that you have the same feedback as someone else. You can add your voice to the existing feedback rather than creating a copy of it. If you can’t find feedback like yours, it’s time to add new feedback.
-- When providing feedback to Microsoft, it’s important that you keep your comments specific to a single article at a time.  Product teams are continuously reading feedback, and when we see similar feedback from different users, we try to combine it to see the full impact to our user base. Providing feedback about a single article at a time helps us to link similar feedback together.
+- When providing feedback to Microsoft, it’s important that you keep your comments specific to a single article at a time. Product teams are continuously reading feedback, and when we see similar feedback from different users, we try to combine it to see the full impact to our user base. Providing feedback about a single article at a time helps us to link similar feedback together.
 - If you’re experiencing an issue, try to describe the steps you took that caused that issue to occur. It’s great to know if the problem is intermittent or happens every time, so our product teams can take a look at it and try to reproduce the problem. If you're using Windows Feedback Hub and your diagnostic settings allow it, you can use the "Recreate my problem" feature to attach screenshots and diagnostic logs as you reproduce the issue you’re facing. Typically, more details are better. If an app crashes every time you perform an action, mention this in your description.
 - Whenever you provide feedback, remember not to provide any identifiable information such as phone numbers or email addresses, and make sure to avoid leaving personal information in any screenshots you attach. Other users can see feedback submitted on community platforms, and you wouldn't want to expose personal data.
 - When you're finished submitting your feedback, you can log into the Feedback portal to view feedback you previously sent to Microsoft and see the status of that feedback. If you provided feedback on Windows Feedback Hub, you can open the app and view your My Feedback section to see the status of your feedback.
@@ -56,7 +56,7 @@ If you're using Windows Feedback Hub, you can provide feedback from within the F
 
 ## Deleting public feedback
 
-If you submitted feedback publicly on the Feedback web portal that you wish to delete, you can remove it by navigating to your My Feedback section. Then, select the feedback item you wish to delete, and select "Delete." You are presented with a warning that deleting feedback is irreversible, and by removing your feedback it removes all comments, votes, flags, and follows associated with it.
+If you submitted feedback publicly on the Feedback web portal that you wish to delete, you can remove it by navigating to your My Feedback section. Then, select the feedback item you wish to delete, and select "Delete." You're presented with a warning that deleting feedback is irreversible, and by removing your feedback it removes all comments, votes, flags, and follows associated with it.
 
 :::image type="content" source="../../media/delete-feedback.png" alt-text="Screenshot: Option to delete feedback":::
 
@@ -109,7 +109,7 @@ Thank you: We appreciate your feedback.
 
 ## Public feedback moderation
 
-Microsoft employees or approved vendors might moderate community feedback. Feedback that violates the Feedback Code of Conduct may be hidden from the public view, but Microsoft will not delete this data outside of our data retention policies.
+Microsoft employees or approved vendors might moderate community feedback. Feedback that violates the Feedback Code of Conduct may be hidden from the public view, but Microsoft won't delete this data outside of our data retention policies.
 
 ## Data Handling and Privacy
 

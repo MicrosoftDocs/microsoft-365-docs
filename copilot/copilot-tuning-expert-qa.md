@@ -4,7 +4,7 @@ author: danielabom
 ms.author: danielabo
 manager: calvind
 ms.reviewer: jwolk
-ms.date: 06/17/2025
+ms.date: 07/16/2025
 ms.topic: how-to
 ms.localizationpriority: medium
 description: Learn how to use Copilot Tuning to build an AI model for expert question & answer (Q&A).
@@ -29,19 +29,17 @@ You can use the model maker to fine-tune a model that can complete the following
 
 ## Limitations
 
-The model supports various document formats, but there are specific limitations to consider when using your content.
+The model supports various document formats, with the following specific limitations:
 
 - Content must be stored in SharePoint and be in supported formats (.docx, .pdf, .aspx); elements like embedded images or tables aren't supported.
 - Not intended for general productivity or web-wide knowledge queries; it's limited to tenant-specific content and not suitable for tasks like managing meetings or browsing general internet data.
 - Depending on the snapshot time of training data, newer content must be enriched via Search.
 
-While there's no minimum document count, better results are achieved with larger content sets; at least 20 documents are recommended for training.
-
 ## Prerequisites
 
 Before you start, make sure that you have the following prerequisites in place:
 
-1. You must have domain-specific content or documentation, such as legal playbooks, HR guidelines, technical documentation, policy manuals, or departmental procedures, that the model can use to answer questions.
+1. You must have domain-specific content or documentation, such as legal playbooks, HR guidelines, technical documentation, policy manuals, or departmental procedures, that the model can use to answer questions. The content set that you use to train the model must consist of more than 20 files.
 2. Configure the model agent with a Microsoft Entra ID security group or distribution list and create your own Entra ID groups to be added to the model.
 3. Identify where your content is stored in SharePoint.
 

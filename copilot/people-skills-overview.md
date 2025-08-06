@@ -6,7 +6,7 @@ ms.author:  anirudhbajaj
 manager: dansimp
 ms.service:  microsoft-365-copilot
 ms.topic:  overview
-ms.date:  05/29/2025
+ms.date:  07/18/2025
 ---
 
 # Overview of People Skills
@@ -30,11 +30,33 @@ People Skills comes with your Microsoft 365 Copilot or Viva licenses and doesn't
 
 - **Microsoft 365 Copilot in Productivity Apps service plan**: Customers with the "Microsoft 365 Copilot in Productivity Apps service plan" can use People Skills, including AI-inferencing and related Copilot experiences, excluding education and government licenses.
 
-For a detailed list of People Skills experiences and their corresponding license requirements, see the following diagram.
+## People Skills functionality access by license
 
-:::image type="content" source="media/people-skills-inferencing/people-skills-licensing.png" alt-text="Diagram that shows the list of People Skills experiences and their corresponding license requirements." lightbox="media/people-skills-inferencing/people-skills-licensing.png":::
+For a detailed list of People Skills experiences and their corresponding license requirements, see the following table.
 
-If you have questions on licensing or access, contact your Microsoft representative.
+If you have questions about licensing or access, contact your Microsoft representative.
+
+| Release | Functionality | Base SKU (ME3/ME5)* | M365 Copilot | Viva Suite | Viva Insights | Viva Learning |
+| :---: | :--- | :---: | :---: | :---: | :---: | :---: |
+| GA | Skills on M365 profile card | ✓ | ✓ | ✓ | ✓ | ✓ |
+| GA | Skills editor in M365 profile editor | ✓ | ✓ | ✓ | ✓ | ✓ |
+| GA | Skills in Traditional People Search (SharePoint people search) | ✓ | ✓ | ✓ | ✓ | ✓ | 
+| GA | Skills in Org Explorer | ✓ | ✓ | ✓ | ✓ | ✓ |
+| GA | Skills in People Companion | ✓ | ✓ | ✓ | ✓ | ✓ |
+| GA | Ingress and egress of confirmed user skills | ✓ | ✓ | ✓ | ✓ | ✓ |
+| GA | Taxonomy ingress | ✓ | ✓ | ✓ | ✓ | ✓ |
+| GA | People Skills taxonomy (powered by LinkedIn) | ✓ | ✓ | ✓ | ✓ | ✓ |
+| GA | Skills inferencing | ✕ | ✓ | ✓ | ✓ | ✓ |
+| GA | Taxonomy egress | ✕ | ✓ | ✓ | ✓ | ✓ |
+| GA | Editing out of the box taxonomy | ✕ | ✓ | ✓ | ✓ | ✓ |
+| GA | Skills in M365 Copilot | ✕ | ✓ | ✕ | ✕ | ✕ |
+| GA | Viva Learning - Skills based learning experience  | ✕ | ✓ | ✓ | ✕ | ✓ |
+| Post GA | Skills agent | ✕ | ✓ | ✕ | ✕ | ✕ |
+| Post GA | Copilot Analytics - Skill landscape report in Analyst Workbench | ✕ | ✓ | ✓ | ✓ | ✕ |
+| Post GA | Copilot Analytics - Leader scenarios in M365 Copilot + agent | ✕ | ✓ | ✕ | ✕ | ✕ |
+
+
+*People skills are available in the Microsoft 365 commercial public cloud, excluding EDU
 
 ## Where does People Skills data appear?
 

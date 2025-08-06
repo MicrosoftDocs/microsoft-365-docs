@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: armanv, nicholak
+ms.reviewer: nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -23,7 +23,7 @@ ms.custom:
 - GAUpdates
 search.appverid: MET150 
 description: "Learn how to activate and manage third-party apps in the Microsoft 365 admin center."
-ms.date: 01/07/2025
+ms.date: 07/08/2025
 ---
 
 # Manage third-party app subscriptions in the Microsoft 365 admin center

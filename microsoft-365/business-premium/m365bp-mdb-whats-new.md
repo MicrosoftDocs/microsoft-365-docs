@@ -15,6 +15,7 @@ ms.localizationpriority: medium
 ms.collection:
 - tier2
 - m365-security
+- trust-pod
 ms.reviewer: nehabha, efratka
 f1.keywords: NOCSH
 ---

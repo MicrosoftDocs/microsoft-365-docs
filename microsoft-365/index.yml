@@ -98,9 +98,6 @@ conceptualContent:
             - url: /purview/
               itemType: overview
               text: Microsoft Purview
-            - url: /microsoft-365/contentunderstanding/
-              itemType: overview
-              text: Microsoft Syntex
             - url: /viva/
               itemType: overview
               text: Microsoft Viva

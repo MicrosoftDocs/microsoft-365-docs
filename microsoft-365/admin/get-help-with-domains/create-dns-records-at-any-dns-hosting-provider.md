@@ -47,9 +47,6 @@ If you want to change the email domain of existing user accounts, follow the ste
 
 [!INCLUDE [How to get tech support for SMB](../../includes/smb-how-to-get-tech-support.md)]
 
-> [!TIP]
-> If you need help with the steps in this article, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, admins and users get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
-
 > [!NOTE]
 > To find your DNS hosting provider, see [Find your domain registrar - Microsoft 365 admin | Microsoft Learn.](find-your-domain-registrar.md) 
 

@@ -2,7 +2,7 @@
 title: Customize your SharePoint team site for file storage and sharing
 f1.keywords:
 - NOCSH
-ms.author: sharik
+ms.author: dansimp
 author: SKjerland
 manager: scotv
 ms.date: 03/22/2024

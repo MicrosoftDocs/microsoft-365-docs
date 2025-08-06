@@ -2,9 +2,9 @@
 title: "Step 4 - Forward a former employee's email to another employee or convert to a shared mailbox"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekuako
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 ms.date: 11/14/2024
 audience: Admin
 ms.topic: how-to
@@ -17,6 +17,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - SPO_Content
+- trust-pod
 ms.custom:
 - MSStore_Link
 - TRN_M365B

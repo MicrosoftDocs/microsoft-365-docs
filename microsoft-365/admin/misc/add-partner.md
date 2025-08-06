@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: armanv, nicholak
+ms.reviewer: nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -28,7 +28,7 @@ search.appverid:
 - MOE150
 - GEA150
 description: "Learn how to add a partner of record when you buy Microsoft 365, change the partner, or delete a partner from a subscription."
-ms.date: 01/07/2025
+ms.date: 07/08/2025
 ---
 
 # Add, change, or delete a subscription advisor partner

@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: siruvanti
-ms.date: 05/26/2025
+ms.date: 07/18/2025
 audience: admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -38,18 +38,11 @@ These AI-powered agents provide a conversational interface that helps users inte
 
 Copilot Actions are predefined tasks that Copilot can carry out on behalf of users—such as sending emails, updating records, or creating support tickets. This feature helps automate routine work, and with pay-as-you-go billing, you’re only charged for the actions performed.
 --->
-## Microsoft Syntex
-<!---
-Microsoft Syntex uses AI to automate content processing and management. Syntex can classify documents, extract metadata, and apply labels to improve content organization and compliance. Organizations can set up pay-as-you-go billing for Syntex services, allowing them to pay based on actual usage.
---->
+## Document processing
 
 ### Autofill columns
 
 Automatically populate metadata fields in documents based on their content. This improves organization and searchability. Pay only for the documents processed.
-
-### Content assembly
-
-Create standardized documents from templates by autofilling fields with relevant data. This ensures consistency and saves time. Billed per use.
 
 ### Document translation
 
@@ -59,13 +52,21 @@ Translate documents into multiple languages using AI. Ideal for managing multili
 
 Enable electronic signatures directly in SharePoint to streamline approvals and reduce paperwork. Pay only for the signatures used.
 
+### Optical character recognition
+
+Convert scanned documents and images into searchable, editable text. Charges are based on the number of documents processed.
+
+### Content assembly
+
+Create standardized documents from templates by autofilling fields with relevant data. This ensures consistency and saves time. Billed per use.
+
 ### Image tagging
 
 Automatically tag images with relevant keywords using AI, making them easier to organize and find. Billed based on usage.
 
-### Optical character recognition
+### Taxonomy tagging
 
-Convert scanned documents and images into searchable, editable text. Charges are based on the number of documents processed.
+Apply standardized tags to documents using AI and a predefined taxonomy. Helps with content organization and compliance. Billed per use.
 
 ### Prebuilt document processing
 
@@ -74,10 +75,6 @@ Use ready-made AI models to extract data from common document types like invoice
 ### Structured and freeform document processing
 
 Create custom AI models to process both structured forms and unstructured documents. Charges are based on the number of documents processed.
-
-### Taxonomy tagging
-
-Apply standardized tags to documents using AI and a predefined taxonomy. Helps with content organization and compliance. Billed per use.
 
 ### Unstructured document processing
 

@@ -1,7 +1,7 @@
 ---
 title: "Block sign-in for shared mailbox accounts in Microsoft 365 Lighthouse"
 f1.keywords: NOCSH
-ms.author: sharik
+ms.author: dansimp
 author: SKjerland
 manager: scotv
 ms.reviewer: aakash

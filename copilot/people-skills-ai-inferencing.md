@@ -41,6 +41,8 @@ People Skills inferencing follows a refresh cycle, typically every 30 days, to e
 
 For the initial computation, we expect most users receive AI-generated skill inferences in 48 hours, although this may take up to a maximum of five days. After this initial computation, the system will refresh the skills inferencing every 30 days to keep the skills data up-to-date.
 
+The AI inferencing engine does not consider user activity older than 90 days. 
+
 ###  AI restricted skills
 
 You can mark confidential, sensitive, or proprietary skills as AI-restricted. Use the Microsoft 365 admin center to mark specific skills as AI restricted. For more information, see [how to mark skills as AI restricted](people-skills-manage-ai-restricted-skills.md).
@@ -65,4 +67,4 @@ Customers can understand/improve the quality of their organization's AI-generate
 
 - **Review Microsoft 365 user activity**: We rely on Microsoft 365 user activity to generate signals for AI inferencing. Performance may be limited for users who don't spend considerable time in the Microsoft 365 ecosystem (for example, frontline, field workers). Performance may also be limited for soft skills, whereby activity about a skill may not be a clear indication of skill application.
 
-- **Review AI restricted skills**: Microsoft restricts certain skills from being returned by AI to comply with responsible AI best practices. AI-generated skills may be limited for customers in industries which inherently deal with skills that could be sensitive when associated with users. [Learn more about our commitment to responsible AI.](https://support.microsoft.com/office/ai-transparency-in-skills-c54f3ded-58bf-44dd-9fa1-6cbe49fba106).
+- **Review AI restricted skills**: Microsoft restricts certain skills from being returned by AI to comply with responsible AI best practices. AI-generated skills may be limited for customers in industries which inherently deal with skills that could be sensitive when associated with users. [Learn more about our commitment to responsible AI.](https://support.microsoft.com/office/ai-transparency-in-skills-c54f3ded-58bf-44dd-9fa1-6cbe49fba106)

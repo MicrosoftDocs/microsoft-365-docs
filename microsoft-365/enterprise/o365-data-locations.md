@@ -1,8 +1,8 @@
 ---
 title: "Microsoft 365 data locations"
-ms.author: kvice
-author: kelleyvice-msft
-manager: scotv
+ms.author: v-fahasen
+author: fhasen-msft
+manager: v-nihmi
 ms.reviewer: deanw
 ms.date: 02/24/2025
 audience: ITPro
@@ -29,6 +29,7 @@ This article helps you to understand how you can determine current data residenc
 
 > [!NOTE]
 > The **Indonesia**, **Malaysia**, and **Chile** local data center regions launched in June 2025. See [Advanced Data Residency](advanced-data-residency.md) if your organization requires the migration of your Microsoft 365 customer data to Indonesia, Malaysia, or Chile and data residency commitments for these countries.
+
 > [!NOTE]
 > For tenants in Australia, Brazil, Canada, Chile, France, Germany, India, Indonesia, Israel, Italy, Japan, Malaysia, Mexico, New Zealand, Norway, Poland, Qatar, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, United Arab Emirates, and United Kingdom, more workloads are available for data residency commitments. For more information, see [Advanced Data Residency](advanced-data-residency.md).
 
@@ -50,14 +51,14 @@ See the following links to understand how you can determine current data residen
   - Audit (Premium)
   - Data Lifecycle Management (DLM)
   
-- Microsoft Entra ID [Data Location](m365-dr-workload-other.md#azure-active-directory-aad)
+- Microsoft Entra ID [Data Location](m365-dr-workload-other.md#microsoft-entra-id)
 - Whiteboard [Data Location](m365-dr-workload-other.md#whiteboard)
 - Forms [Data Location](m365-dr-workload-other.md#forms)
-- Intune [Data Location](m365-dr-workload-other.md#intune)
+- Intune [Data Location](/intune/intune-service/protect/privacy-data-store-process#storage-locations)
 - Planner [Data Location](m365-dr-workload-other.md#planner)
 - Viva Glint [Data Location](m365-dr-workload-other.md#viva-glint)
 - Viva Goals [Data Location](m365-dr-workload-other.md#viva-goals)
-- Viva Insights – Advanced, Manager and leader [Data Location](m365-dr-workload-other.md#viva-insights--advanced-mgr-leader)
+- Viva Insights – Advanced, Manager, and leader [Data Location](m365-dr-workload-other.md#viva-insights--advanced-mgr-leader)
 - Viva Insights – Personal [Data Location](m365-dr-workload-other.md#viva-insights--personal)
 - Viva Learning [Data Location](m365-dr-workload-other.md#viva-learning)
 - Viva Pulse [Data Location](/viva/pulse/get-started/data-residency-for-viva-pulse)

@@ -32,7 +32,7 @@ Some network hardware may have limitations on the number of concurrent sessions 
 
 This article is part of [Network planning and performance tuning for Microsoft 365](./network-planning-and-performance.md).
 
-On-premises outgoing Internet proxy settings also affect connectivity to Microsoft 365 services for your client applications. You must also configure your network proxy devices to allow connections for Microsoft cloud services URLs and applications. Every organization is different. To get an idea for how Microsoft manages this process and the amount of bandwidth we provision, [read the case study](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365).
+On-premises outgoing Internet proxy settings also affect connectivity to Microsoft 365 services for your client applications. You must also configure your network proxy devices to allow connections for Microsoft cloud services URLs and applications. Every organization is different.
   
 The following Skype for Business Help articles have more information about Skype for Business settings:
   

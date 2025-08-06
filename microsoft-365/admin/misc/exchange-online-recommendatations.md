@@ -21,7 +21,7 @@ description: "Recommendations for how to use Exchange Online to get the most out
 
 Exchange Online is a messaging solution that delivers email, calendar, contacts, and tasks from PCs, the web, and mobile devices.
 
-Use Exchange Online to set up multiple professional business email addresses, including shared addresses. Migrate emails from your old service and set up mail flow rules, block domains, set up informative notes, and troubleshoot email delivery problems. With Exchange Online Protection, protect from spam, phishing, and malware.
+Use Exchange Online to set up multiple professional business email addresses, including shared addresses. Migrate emails from your old service and set up mail flow rules, block domains, set up informative notes, and troubleshoot email delivery problems. The default email protections for all cloud mailboxes protect against spam, phishing, and malware.
 
 Exchange Online gives you **professional business email capability** by providing you with a 50\~100 GB storage capacity mailbox and anywhere access to your emails.
 
@@ -97,7 +97,7 @@ Create a Microsoft 365 group for collaboration between teams and a shared worksp
 - [Create and Manage Groups](/exchange/recipients-in-exchange-online/create-and-manage-groups) - get to know the different groups you can create and manage in your Exchange Online organization.
 - [Mail flow rule procedures in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-procedures) - you can use mail flow rules to meet different objectives in the Exchange Admin Center.
 - [Backing up email in Exchange Online](/exchange/back-up-email) – learn how to recover your data if it gets accidentally deleted.
-- [Exchange Online Protection overview](/microsoft-365/security/office-365-security/exchange-online-protection-overview) – learn how Exchange Online Protection works and the features that are available in Exchange Online Protection.
+- [Default email protections for cloud mailboxes](/defender-office-365/eop-about) – learn about the protection features available in all organizations with cloud mailboxes.
 - [Sharing in Exchange Online](/exchange/sharing/sharing) – get to know how users can share their schedules with others.
 - [Exchange Online limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits) – get to know Exchange Online limits for a variety of service areas, including address book limits, mailbox storage limits, and reporting and message trace limits, to name just a few.
 - [Archive features in Exchange Online](/microsoft-365/compliance/enable-archive-mailboxes) – learn how to enable a specialized mailbox called the archive mailbox that appears alongside the users’ primary mailbox folders.

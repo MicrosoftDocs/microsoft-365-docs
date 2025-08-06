@@ -92,6 +92,7 @@ In case you create a new policy configuration or change the configuration for an
 
 ## Related topics
 
+- [Data Integrations Admin Settings](loop-data-integrations-configuration.md)
 - [Summary of Compliance, Lifecycle, Governance](cpcn-compliance-summary.md)
 - [Requirements](cpcn-loop-requirements.md)
 - [Storage](cpcn-storage.md)

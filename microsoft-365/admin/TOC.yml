@@ -294,6 +294,8 @@ items:
               href: activity-reports/microsoft-365-copilot-usage.md
             - name: Microsoft 365 Copilot Chat usage
               href: activity-reports/microsoft-copilot-usage.md
+            - name: Message consumption
+              href: activity-reports/message-consumption.md              
             - name: Dynamics 365 Customer Voice activity
               href: activity-reports/forms-pro-activity-ww.md
             - name: Email activity
@@ -376,6 +378,10 @@ items:
            href: misc/experience-insights-dashboard.md
          - name: Change your organization contact info
            href: manage/change-address-contact-and-more.md
+         - name: Manager people data and experiences
+           href: ./manage/people-settings-in-microsoft-365-admin-center.md
+         - name: Customize your organization profile cards
+           href: ./manage/customize-profile-cards.md
          - name: Update your admin contact info
            href: manage/update-phone-number-and-email-address.md
          - name: Customize the app launcher

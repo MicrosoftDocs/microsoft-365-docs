@@ -81,12 +81,6 @@ Admins have your account details ready when you call.
 > [!NOTE]
 > To better protect your organization, we added a PIN-based verification step to our existing phone-based verification process. If you contact us from a number that isn't registered with your organization profile, the Microsoft support representative sends a verification code to the registered email or phone number in your Microsoft 365 admin center profile. You must provide this code to the support representative to grant them access to your organization's account.
 
-## Small business support with Business Assists
-
-Get the most out of your subscription with expert advice from small business specialists.
-
-Business Assist for Microsoft 365 is designed for small businesses to give you and your users around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use. To learn more, see [Business Assist](../admin/misc/business-assist.md).
-
 ## Volume licensing support
 
 There's a dedicated support team for users who access volume licensing (VL) contracts in the Microsoft 365 admin center. To request support for volume licensing, use the following steps:

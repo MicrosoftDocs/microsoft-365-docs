@@ -4,7 +4,7 @@ f1.keywords:
 ms.author: lauragra
 author: lauragra
 manager: calvind
-ms.date: 06/17/2025
+ms.date: 07/03/2025
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-copilot
@@ -33,9 +33,7 @@ To manage Copilot Tuning governance controls, make sure that you meet the follow
     - An AI Admin must accept the EAP terms on behalf of the organization.
     > [!NOTE]
     > If Copilot Tuning isn't available in your tenant, contact your Microsoft Customer Success Account Manager (CSAM) to request EAP provisioning.
-- You must have one of the following roles:
-    - Global Administrator
-    - AI Administrator (if defined as a custom role in your organization)
+- You must be an AI Admin.
 - Copilot extensibility is enabled via **Copilot settings** in the admin center. For more information, see [Manage agents for Microsoft 365 Copilot in the Microsoft 365 admin center](/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps#enable-or-disable-copilot-extensibility).
 - If you block new Power Platform connectors by default via Data Loss Prevention (DLP) policies, run one of the following commands to reclassify the connector.
 
@@ -72,7 +70,7 @@ For more information, see [Copilot Tuning overview](copilot-tuning-overview.md).
 
 To activate the Copilot Tuning service and scope its availability:
 
-1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com) and sign in with your Global Administrator or AI Administrator account.
+1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com) and sign in with your AI Administrator account.
 2. Go to **Copilot** > **Copilot settings**.
    :::image type="content" source="media/copilot-tuning-admin-guide/copilot-settings.png" alt-text="Screenshot of Copilot settings in the admin center." lightbox="media/copilot-tuning-admin-guide/copilot-settings.png" border="false":::
 3. Choose **Copilot Tuning**, and choose **Accept** to accept the [EAP terms](https://go.microsoft.com/fwlink/?linkid=2312708).

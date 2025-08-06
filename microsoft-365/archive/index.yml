@@ -76,6 +76,6 @@ landingContent:
             url: /sharepoint/advanced-management
           - text: SharePoint Embedded
             url: /sharepoint/dev/embedded/overview
-          - text: Microsoft Syntex
-            url: /microsoft-365/syntex/
+          - text: Document processing for Microsoft 365
+            url: /microsoft-365/documentprocessing/
 

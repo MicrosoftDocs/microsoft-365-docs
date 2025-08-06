@@ -5,8 +5,8 @@ f1.keywords:
 - NOCSH
 ms.author: mandia
 author: MandiOhlinger
-manager: laurawi
-ms.date: 05/06/2025
+manager: dansimp
+ms.date: 07/15/2025
 audience: Admin
 ms.reviewer: nirupme
 ms.topic: how-to

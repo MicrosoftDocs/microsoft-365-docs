@@ -1,7 +1,7 @@
 ---
 title: "Mitigate threats in Microsoft 365 Lighthouse with Microsoft Defender Antivirus"
 f1.keywords: NOCSH
-ms.author: sharik
+ms.author: dansimp
 author: SKjerland
 manager: scotv
 ms.reviewer: prpath

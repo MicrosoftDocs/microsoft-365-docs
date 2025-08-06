@@ -5,7 +5,7 @@ author: msplants
 ms.author: jwolk
 manager: calvind
 ms.topic: concept-article
-ms.date: 06/17/2025
+ms.date: 07/17/2025
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +25,7 @@ Selecting knowledge is the first and most critical step in Copilot Tuning. You s
 
 - **Supported file formats and content:** All Copilot Tuning tasks support common text-based document formats. You can use Word documents (.doc, .docx), HTML files (.html, .aspx), Markdown files (.md), or PDF files processed by Optical Character Recognition (OCR) as source materials. You can also include Excel documents (.xls, .xlsx) for expert Q&A. The tuning process ingests the text content from these files. It doesn't learn from images, embedded tables, or other non-text elements in the documents. Ensure that the important information in your training documents is in textual form. For example, if a filePDF contains a chart, include a textual explanation of that chart's insights in the document.
 
-- **Number of documents:** You must provide at least 20 samples (documents for Q&A and summarization; input-output pairs for document generation) to Copilot Tuning. Usually hundreds or thousands of samples is ideal, and you can provide a maximum of 10k. The quality of samples is more important than raw quantity. We highly suggest you focus you data preparation time on finding as many high quality samples that are well-aligned with what you expect your fine-tuned model to do.
+- **Number of documents:** You must provide more than 20 samples (documents for Q&A and summarization; input-output pairs for document generation) to Copilot Tuning. Usually hundreds or thousands of samples is ideal, and you can provide a maximum of 10k. The quality of samples is more important than raw quantity. We highly suggest you focus you data preparation time on finding as many high quality samples that are well-aligned with what you expect your fine-tuned model to do.
 
 - **Model instructions:** During the model configuration process, Copilot Tuning asks the model maker to provide answers to a series of model instructions to guide the system on how to use the knowledge you selected. Each task type has its own questions about the selected knowledge source. Prepare clear, structured answers to each question. Expert Q&A requires a description of the data in the knowledge source and how it's organized. Document generation requires you to specify how the original input, changes, and output draft document are referred to in your organization. Summarization requires you to specify how to refer to the summaries. It's important that this information is clear and accurately represents your data in order for the system to be most effective.
 

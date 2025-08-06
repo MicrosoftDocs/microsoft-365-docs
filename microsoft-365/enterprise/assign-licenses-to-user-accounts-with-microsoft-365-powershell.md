@@ -55,7 +55,7 @@ Accounts synchronized from your on-premises Active Directory Domain Services don
 >
 > For information about how to use different methods to authenticate ```Connect-Graph``` in an unattended script, see the article [Authentication module cmdlets in Microsoft Graph PowerShell](/powershell/microsoftgraph/authentication-commands).
 
-First, [connect to your Microsoft 365 tenant](/graph/powershell/get-started#authentication).
+First, [connect to your Microsoft 365 tenant](/powershell/microsoftgraph/get-started?view=graph-powershell-1.0#authentication).
 
 Assigning and removing licenses for a user requires the User.ReadWrite.All permission scope or one of the other permissions listed in the ['Assign license' Microsoft Graph API reference page](/graph/api/user-assignlicense).
 

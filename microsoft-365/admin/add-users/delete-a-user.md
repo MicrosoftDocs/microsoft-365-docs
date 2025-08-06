@@ -2,9 +2,9 @@
 title: "Delete a user from your organization"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekuako
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 ms.date: 10/01/2024
 audience: Admin
 ms.topic: how-to
@@ -16,6 +16,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - SPO_Content
+- trust-pod
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet

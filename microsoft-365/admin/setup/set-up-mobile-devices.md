@@ -2,8 +2,8 @@
 title: "Set up mobile devices for Microsoft 365 for business users"
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: skjerland
+ms.author: dansimp
+author: dansimp
 manager: scotv
 ms.date: 10/08/2018
 audience: Admin

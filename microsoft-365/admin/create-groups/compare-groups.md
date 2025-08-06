@@ -3,9 +3,9 @@ title: Compare types of groups in Microsoft 365
 ms.reviewer: batre
 ms.date: 05/21/2025
 f1.keywords: CSH
-author: DaniEASmith
-ms.author: danismith
-manager: jtremper
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
 ms.topic: product-comparison
 ms.service: microsoft-365-business
@@ -16,6 +16,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
+- trust-pod
 ms.custom: 
 - AdminSurgePortfolio
 - okr_smb

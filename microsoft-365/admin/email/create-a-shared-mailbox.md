@@ -41,9 +41,6 @@ Shared mailboxes include a shared calendar. Your team can use the shared calenda
 
 Before creating a shared mailbox, be sure to read [About shared mailboxes](about-shared-mailboxes.md) for more information.
 
-> [!TIP]
-> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
-
 ## Create a shared mailbox and add members
   
 1. Sign in with a user with Exchange admin role. If you get the message "**You don't have permission to access this page or perform this action**," then you aren't an admin.

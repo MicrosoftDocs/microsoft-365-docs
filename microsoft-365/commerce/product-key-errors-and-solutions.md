@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
-manager: scotv
+manager: dansimp
 ms.reviewer: drjones, jobailey
 audience: Admin
 ms.topic: troubleshooting
@@ -24,7 +24,7 @@ ms.custom:
 search.appverid: MET150
 ROBOTS: NOINDEX
 description: "Learn how to resolve the issues that you face when you enter your product key for Microsoft 365 for business."
-ms.date: 03/26/2025
+ms.date: 08/04/2025
 ---
 
 # Problems with your Microsoft 365 for business product key?

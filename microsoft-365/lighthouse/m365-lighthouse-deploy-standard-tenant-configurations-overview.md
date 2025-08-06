@@ -1,7 +1,7 @@
 ---
 title: "Overview of using Microsoft 365 Lighthouse baselines to deploy standard tenant configurations"
 f1.keywords: CSH
-ms.author: sharik
+ms.author: dansimp
 author: SKjerland
 manager: scotv
 ms.reviewer: jatingupta
@@ -59,4 +59,6 @@ The Microsoft 365 Lighthouse default baseline is designed to ensure all managed 
 [Common Conditional Access policies](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) (article)\
 [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md) (article)\
 [Configure Microsoft 365 Lighthouse portal security](m365-lighthouse-configure-portal-security.md) (article)\
+[Microsoft Edge for Business: Configure Edge using Microsoft 365 Lighthouse](https://www.youtube.com/watch?v=rDIWvAwujPU&list=PLnWjfDdQkUQSCbV-ftVD311_fZxghB22C&index=5) (video)\
+[Managing browser security easily with Microsoft 365 Lighthouse and Microsoft Edge](https://techcommunity.microsoft.com/blog/microsoft_365blog/managing-browser-security-easily-with-microsoft-365-lighthouse-and-microsoft-edg/3572366) (blog post)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)

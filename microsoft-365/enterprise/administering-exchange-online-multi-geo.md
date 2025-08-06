@@ -32,7 +32,7 @@ Typically, Exchange Online PowerShell connects to the central geo location. But,
 
 The requirements for installing and using the Exchange Online PowerShell module are described in [Install and maintain the Exchange Online PowerShell module](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-module).
 
-To connect Exchange Online PowerShell to a specific geo location, the _ConnectionUri_ parameter is different than the regular connection instructions. The rest of the commands and values are the same.
+To connect Exchange Online PowerShell to a specific geo location, the _ConnectionUri_ parameter is different than the [regular connection instructions](/powershell/exchange/connect-to-exchange-online-powershell). The rest of the commands and values are the same.
 
 Specifically, you need to add the `?email=<emailaddress>` value to end of the _ConnectionUri_ value. `<emailaddress>` is the email address of **any** mailbox in the target geo location. Your permissions to that mailbox or the relationship to your credentials aren't a factor; the email address simply tells Exchange Online PowerShell where to connect.
 
@@ -48,13 +48,13 @@ The following connection instructions work for accounts that are or aren't confi
    Import-Module ExchangeOnlineManagement
    ```
 
-2. In the following example, admin@contoso.onmicrosoft.com is the admin account, and the target geo location is where the mailbox olga@contoso.onmicrosoft.com resides.
+2. In the following example, `admin@contoso.onmicrosoft.com` is the admin account, and the target geo location is where the mailbox `olga@contoso.onmicrosoft`.com resides.
 
    ```powershell
    Connect-ExchangeOnline -UserPrincipalName admin@contoso.onmicrosoft.com -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com
    ```
 
-3. Enter the password for the admin@contoso.onmicrosoft.com in the prompt that appears. If the account is configured for MFA, you also need to enter the security code.
+3. Enter the password for the `admin@contoso.onmicrosoft.com` in the prompt that appears. If the account is configured for MFA, you also need to enter the security code.
 
 ## View the available geo locations that are configured in your Exchange Online organization
 

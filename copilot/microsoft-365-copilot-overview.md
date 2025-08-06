@@ -30,6 +30,10 @@ Users enter a prompt in Copilot and Copilot responds with AI-generated informati
 
 Users get content relevant to their work tasks, and in the context of the Microsoft 365 app they're using.
 
+The following video is an overview of Microsoft 365 Copilot. It's 1 minute and 49 seconds long.
+
+> [!VIDEO c9679373-1812-4882-a690-8d4b8e8411ea]
+
 For example, you're an Operations Manager and are working with human resources to update job descriptions. In a Copilot prompting session, you can ask Copilot to create a job description and also add qualifications that should be included in the description. In the same prompting session, you can expand the generated job description to also create different levels, like Level 1, Level 2, and Level 3.
 
 You can also [create and use agents](/microsoft-365-copilot/extensibility) to customize your Copilot experience with your organization's data sources. For example, you're a warehouse manager and you need to know the status of a shipment. You can ask your Copilot shipping agent "What is the status of shipment 1234?" Copilot uses your data sources to get the information and can respond with the status.
@@ -57,6 +61,8 @@ Microsoft 365 Copilot:
 
 - Uses content in [Microsoft Graph](/graph/overview) to personalize the responses with a user's work emails, chats, and documents. Copilot only shows the data that users have permission to access.
 
+- Includes [Microsoft 365 Copilot Search](/copilot/microsoft-365/microsoft-365-copilot-search), a universal search experience that allows users to search across all their Microsoft 365 and third-party data sources to find what they need quickly.
+
 - Coordinates large language models (LLMs). LLMs are a type of artificial intelligence (AI) algorithms. These algorithms use deep learning techniques and data sets to understand, summarize, predict, and generate content.
 
   The LLMs include pretrained models, like Generative Pre-Trained Transformers, like GPT-4, that are designed for these tasks. To learn more about Generative Pre-Trained Transformers (GPT), ask [Copilot](https://copilot.microsoft.com).
@@ -65,6 +71,7 @@ To learn more, see:
 
 - [Microsoft 365 Copilot architecture and how it works](microsoft-365-copilot-architecture.md)
 - [Microsoft 365 Copilot service description](/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot)
+- [Microsoft 365 Copilot Search overview](/copilot/microsoft-365/microsoft-365-copilot-search)
 - Video: [Copilot system explained by Microsoft](https://www.youtube.com/watch?v=E5g20qmeKpg)
 - Video: [Microsoft 365 Copilot, LLMs, and your apps](https://www.youtube.com/watch?v=B2-8wrF9Okc)
 - Video: [How to get ready for Microsoft 365 Copilot](https://aka.ms/M365CopilotAdmin)
@@ -86,6 +93,12 @@ For more features, see [Copilot features in Microsoft 365 apps](#copilot-feature
 With Microsoft 365 Copilot Chat, you can draft content, review what you missed, and get answers to questions using open-ended prompts. This information is securely grounded in your work data.
 
 You can use Microsoft 365 Copilot Chat in Microsoft Teams, in the Microsoft 365 Copilot Chat app, at [Microsoft365.com](https://www.microsoft365.com/), and at [copilot.microsoft.com](https://copilot.microsoft.com/).
+
+✅ **Microsoft 365 Copilot Search**
+
+Copilot Search is an AI-powered universal search experience across all your Microsoft 365 applications and non-Microsoft data sources. It's integrated with Microsoft 365 Copilot, so users can find the results they need with search, then seamlessly transition to chat for deeper exploration or follow-up task completion.
+
+Learn more about [Copilot Search](/copilot/microsoft-365/microsoft-365-copilot-search).
 
 ✅ **Microsoft Graph**
 

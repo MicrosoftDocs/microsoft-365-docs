@@ -5,7 +5,7 @@ ms.author: jasonjoh
 manager: calvind
 ms.audience: ITPro
 ms.reviewer: jwolk
-ms.date: 06/17/2025
+ms.date: 07/17/2025
 ms.topic: how-to
 ms.localizationpriority: medium
 description: Learn how to use Copilot Tuning to build an AI model for document generation based on organizational knowledge.
@@ -33,9 +33,9 @@ Some example use cases include:
 
 - You must have permission to use Copilot Tuning in Copilot Studio. <!-- TODO: Link to permission doc here if it exists -->
 - A collection of original documents and corresponding final draft documents that are stored in SharePoint.
-- A collection of change logs or specifications stored in SharePoint.
+- A collection of changelogs or specifications stored in SharePoint.
 - A structured version of required changes to provide in the supplementary field within Copilot Tuning.
-- A minimum of 20 well-aligned pairs of reference documents to target pairs that reflect a representative range of changes you expect the system to handle.
+- More than 20 well-aligned pairs of reference documents to target pairs that reflect a representative range of changes you expect the system to handle.
 
 > [!IMPORTANT]
 > Document generation supports working with the following file formats: .doc, .docx, .html, .md, or .pdf. Copilot Tuning only uses information found in text. Copilot Tuning document generation doesn't use information in images, tables, or unstructured web content in your documents.
@@ -55,7 +55,7 @@ The following are the high-level steps to configure a custom document generation
 
 ### Prepare a mapping file
 
-Your knowledge source should have at least 20 example pairs of original files and corresponding final (draft) files. In this step, you prepare a CSV file that provides at least 20 examples of original files to final (draft) documents. Copilot Tuning uses these examples to fine-tune the generation logic, helping the model learn how your organization typically edits or adapts documents.
+Your knowledge source should have more than 20 example pairs of original files and corresponding final (draft) files. In this step, you prepare a CSV file that provides more than 20 examples of original files to final (draft) documents. Copilot Tuning uses these examples to fine-tune the generation logic, helping the model learn how your organization typically edits or adapts documents.
 
 Create a file named **mapping.csv** and store it in the root directory of your knowledge source. This file should have two columns:
 

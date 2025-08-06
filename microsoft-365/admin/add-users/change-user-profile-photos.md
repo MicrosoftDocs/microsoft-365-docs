@@ -2,9 +2,9 @@
 title: "Change user profile photo"
 f1.keywords:
 - NOCSH
-ms.author: chrisda
-author: chrisda
-manager: deniseb
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 ms.date: 06/11/2024
 audience: Admin
 ms.topic: how-to
@@ -17,6 +17,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- trust-pod
 ms.custom:
   - VSBFY23
   - MSStore_Link
@@ -32,9 +33,6 @@ description: "Learn how a Microsoft 365 admin can add, update, and remove the pi
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
 This article explains how to manage profile photos and photo update settings on user accounts and [Microsoft 365 Groups](../create-groups/office-365-groups.md).
-
-> [!TIP]
-> If you need help with the steps in this article, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/p/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
 ## Before you begin
 

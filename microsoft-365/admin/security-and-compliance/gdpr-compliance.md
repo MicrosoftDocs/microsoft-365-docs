@@ -4,8 +4,8 @@ f1.keywords:
 - NOCSH
 ms.author: efrene
 author: efrene
-manager: scotv
-ms.date: 02/18/2020
+manager: dansimp
+ms.date: 07/28/2025
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
@@ -17,6 +17,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- trust-pod
 ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
@@ -33,16 +34,16 @@ Check out all of our small business content on [Small business help & learning](
 
  *Using Microsoft 365 for business to help you to mitigate and manage GDPR compliance*
 
-The General Data Protection Regulation (GDPR) is a European Union (EU) regulation that mandates how an organization should handle personal data. If your business sells to, provides services to, or employs citizens of the European Union, then the [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en) will affect you.
+The General Data Protection Regulation (GDPR) is a European Union (EU) regulation that mandates how an organization should handle personal data. If your business sells to, provides services to, or employs citizens of the European Union, then the [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en) affects you.
 
-As a small business admin, you're probably asking yourself "how do I get started"? This may be especially true if your business doesn't handle personal data as a core business activity, or if GDPR is totally new to you.
+As a small business admin, you're probably asking yourself "how do I get started?" This may be especially true if your business doesn't handle personal data as a core business activity, or if GDPR is new to you.
 
 You can get started by reviewing this article, which is aimed at helping you understand what the GDPR is, why it came about, and how Microsoft 365 for business can help your organization comply with the GDPR.
 
 It also includes answers to common questions about GDPR that small businesses may have, and highlights steps a small business can take to prepare for GDPR.
 
 > [!IMPORTANT]
-> The Microsoft 365 solutions and recommendations in this article are tools and resources that can help you manage and protect your data, but are not a guarantee of GDPR compliance. It is up to you to assess your own compliance status. Consult with your own legal and/or professional advisors when needed.
+> The Microsoft 365 solutions and recommendations in this article are tools and resources that can help you manage and protect your data, but aren't a guarantee of GDPR compliance. It's up to you to assess your own compliance status. Consult with your own legal and/or professional advisors when needed.
 
 ## A quick overview of the GDPR
 
@@ -62,11 +63,11 @@ You'll see some terms referred to frequently in the GDPR. It's important to unde
 
 **Consent**:
 
-The GDPR states: "The processing of personal data should be designed to serve mankind." The GDPR hopes to achieve this goal by using consent when processing personal data. That could be the simple act of asking your customers if they want to receive email messages from your company. It also means no more opt-out check boxes on your website when you want to use data for marketing. You must take explicit consent using a "clear affirmative act". And, you'll need to also keep records of when a consent is taken or revoked.
+The GDPR states: "The processing of personal data should be designed to serve mankind." The GDPR hopes to achieve this goal by using consent when processing personal data. That could be the simple act of asking your customers if they want to receive email messages from your company. It also means no more opt-out check boxes on your website when you want to use data for marketing. You must take explicit consent using a "clear affirmative act". And, you need to also keep records of when a consent is taken or revoked.
 
 **Data subject rights**:
 
-The GDPR establishes data subject rights, which means that, with respect to their personal data, customers, employees, business partners, clients, contractors, students, suppliers, and so forth have the right to:
+The GDPR establishes data subject rights, which means that, with respect to their personal data, customers, employees, business partners, clients, contractors, students, suppliers, and so forth, have the right to:
 
 - **Be informed about their data:** You must inform individuals about your use of their data.
 
@@ -74,7 +75,7 @@ The GDPR establishes data subject rights, which means that, with respect to thei
 
 - **Ask for data rectification:** Individuals can ask you to correct inaccurate data.
 
-- **Ask for data to be deleted:** Also known as the 'right to erasure', this right allows an individual to request that any of their personal data a company has collected is deleted across all systems that use it or share it.
+- **Ask for data to be deleted:** Also known as the *right to erasure*, this right allows an individual to request that any of their personal data a company has collected is deleted across all systems that use it or share it.
 
 - **Request restricted processing:** An individual can ask that you suppress or restrict their data. However, it's only applicable under certain circumstances.
 

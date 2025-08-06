@@ -7,7 +7,7 @@ audience: Admin
 ms.topic: article
 ms.service: loop
 ms.reviewer: michalbr, dancost
-ms.date: 06/10/2025
+ms.date: 07/02/2025
 ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection: 
@@ -65,10 +65,13 @@ Copilot Pages + Copilot Notebooks container has a maximum size of 25 TB. This li
 
 - Copilot Notebooks are stored in a user-owned SharePoint Embedded container, created by Copilot. The container is lifecycle managed with the user account, deleted when the user account is deleted from the organization.
 - Copilot Notebooks can't be permanently reassigned to a new owner. It follows the same cleanup schedule as OneDrive: 30 days active, then soft deleted, and permanently purged 93 days after soft deletion.
-- Admins can recover content during the soft delete period using the SharePoint Admin Center or PowerShell.
+- Admins can recover the entire container with all Copilot Notebooks and Copilot Pages during the soft delete period using the SharePoint Admin Center or PowerShell.
 
 > [!IMPORTANT]
 > A feature for IT admins to assign temporary custodians during the cleanup period of user-owned workspaces isn't yet available. This capability for Copilot Pages and Copilot Notebooks is planned (Microsoft Roadmap ID 421612).
+
+> [!IMPORTANT]
+> There is no end user recycle bin for Copilot Notebooks. Neither Administrators nor end users can recover individually deleted Copilot Notebooks.
 
 ## Related topics
 
@@ -77,4 +80,5 @@ Copilot Pages + Copilot Notebooks container has a maximum size of 25 TB. This li
 - [Permissions](cpcn-loop-permission.md)
 - [Admin toggles](cpcn-admin-configuration.md)
 - [Managing SharePoint Embedded containers](cpcn-loop-spe-management.md)
+- [Purview and SharePoint Embedded containers](cpcn-loop-purview-management.md)
 - [Overview of Loop components in Microsoft 365](loop-components-teams.md)

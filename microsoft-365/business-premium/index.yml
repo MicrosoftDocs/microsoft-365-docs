@@ -13,6 +13,7 @@ metadata:
   ms.collection:
   - tier2
   - essentials-navigation
+  - trust-pod
   ms.custom:
   - AdminSurgePortfolio
   - intro-hub-or-landing
@@ -126,7 +127,6 @@ conceptualContent:
         - url: /partner-center/overview
           itemType: overview
           text: Get started with Partner Center
-
   # Card
     - title: Protect devices
       links:
@@ -151,7 +151,6 @@ conceptualContent:
         - url: ../business-premium/m365bp-device-states.md
           itemType: how-to-guide
           text: View device status
-
   # Card
     - title: Protect email content and Microsoft 365 files
       links:
@@ -173,7 +172,6 @@ conceptualContent:
         - url: ../business-premium/share-files-and-videos.md
           itemType: overview
           text: Share files and videos in Microsoft Teams or SharePoint
-
   # Card
     - title: Support and community
       links:

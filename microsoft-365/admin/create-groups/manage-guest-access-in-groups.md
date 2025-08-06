@@ -3,9 +3,9 @@ title: "Manage guest access in Microsoft 365 groups"
 ms.reviewer: rahulnayak
 ms.date: 06/11/2024
 f1.keywords: NOCSH
-author: DaniEASmith
-ms.author: danismith
-manager: jtremper
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -16,6 +16,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
+- trust-pod
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
