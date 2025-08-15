@@ -70,6 +70,13 @@ Finally, see [Using your CDN assets](use-microsoft-365-cdn-with-spo.md#using-you
 
 See [Troubleshooting the Office 365 CDN](use-microsoft-365-cdn-with-spo.md#CDNTroubleshooting) for guidance on resolving common issues.
 
+> [!NOTE]
+>Microsoft is migrating the hosting of SharePoint Online assets to a new CDN service, Azure Front Door, to improve performance and reliability.
+>Ensure the new domain is added to your network allow list and avoid hardcoding CDN URLS for seamless integration.
+> Old domain: publiccdn.sharepointonline.com
+> New domain: public-cdn.sharepointonline.com 
+
+
 ## Plan for deployment of the Office 365 CDN
 
 Before you deploy the Office 365 CDN for your Office 365 tenant, you should consider the following factors as part of your planning process.
@@ -120,6 +127,8 @@ Keep in mind that the greater the number of origins, the greater the effect on t
 - The default file types that are included for public origins are: `.css`, `.eot`, `.gif`, `.ico`, `.jpeg`, `.jpg`, `.js`, `.map`, `.png`, `.svg`, `.ttf`, `.woff` and `.woff2`. You can specify other file types.
 
 - You can configure a policy to exclude assets based on specified site classifications. For example, you can exclude all assets that are marked as "confidential" or "restricted", even if they're an allowed file type and are located in a public origin.
+
+- SharePoint Online now allows tenant administrators to manage script sources for modern pages, including those loaded from CDNs. This helps enforce secure script loading policies, whether that is to restrict or permit custom code from external sources.
 
 ### Default CDN origins
 
