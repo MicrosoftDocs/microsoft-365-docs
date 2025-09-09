@@ -41,7 +41,7 @@ Check out all of our small business content on [Small business help & learning](
 Microsoft 365 for business is a subscription service that lets you run your organization in the cloud while Microsoft takes care of the IT for you. We manage your devices, protect against real-world threats, and provide your organization with the latest in business software. You can sign up for a free trial subscription for Microsoft 365 Business Basic, Microsoft 365 Business Standard, Microsoft 365 Business Premium, Microsoft Defender for Business, or Microsoft 365 Apps for business and try it out for 30 days.
 
 > [!NOTE]
-> You must use a credit or debit card when you sign up for a free trial. At the end of your free trial period, your trial subscription is automatically converted to a paid subscription. Your card isn't billed until the trial period ends.Microsoft reserves the right to suspend access to its products and services if payment is not received after your one-month free trial ends. Storage for trials will be limited.
+> You must use a credit or debit card when you sign up for a free trial. At the end of your free trial period, your trial subscription is automatically converted to a paid subscription. Your card isn't billed until the trial period ends. Microsoft reserves the right to suspend access to its products and services if payment is not received after your one-month free trial ends. Storage for trials will be limited.
 
 ## Need help with choosing a plan?
 
