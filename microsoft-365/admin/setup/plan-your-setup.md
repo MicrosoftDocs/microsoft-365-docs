@@ -2,15 +2,15 @@
 title: "Plan your setup of Microsoft 365 for business"
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
-manager: scotv
+ms.author: kwekua
+author: kwekuako
+manager: dansimp
 ms.date: 06/04/2024
 audience: Admin
 ms.topic: install-set-up-deploy
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier2
 - scotvorg
 - highpri
@@ -19,7 +19,8 @@ ms.collection:
 - Adm_O365_Setup
 - Adm_TOC
 - must-keep
-ms.custom: 
+- operations-pod
+ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 - okr_smb
@@ -183,4 +184,4 @@ For larger organizations or if you're starting from Skype for Business, on-premi
 
 ## See also
 
-[Secure your business data with Microsoft 365 for business](../../business-premium/secure-your-business-data.md)
+[Microsoft 365 for business security best practices](../security-and-compliance/m365b-security-best-practices.md)

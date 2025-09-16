@@ -4,14 +4,14 @@ f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
-manager: scotv
+manager: dansimp
 ms.reviewer: emmasheridan, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
 - highpri
@@ -19,7 +19,8 @@ ms.collection:
 - Adm_O365
 - Adm_O365_Setup
 - Adm_TOC
-ms.custom: 
+- operations-pod
+ms.custom:
 - commerce_subscriptions
 - VSBFY23
 - okr_smb
@@ -27,7 +28,7 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: "Find out what Microsoft business subscriptions your organization has by using the Your products page in the Microsoft 365 admin center."
-ms.date: 03/27/2025
+ms.date: 07/31/2025
 ---
 
 # What Microsoft business subscriptions do I have?

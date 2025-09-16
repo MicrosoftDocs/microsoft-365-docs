@@ -2,9 +2,9 @@
 title: "Customize the reports in Microsoft 365 usage analytics"
 f1.keywords:
 - NOCSH
-ms.author: efrene
+ms.author: cmcatee
 author: efrene
-manager: scotv
+manager: dansimp
 ms.date: 03/05/2024
 audience: Admin
 ms.topic: how-to
@@ -16,6 +16,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- operations-pod
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160

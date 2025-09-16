@@ -2,15 +2,15 @@
 title: "Set up OneDrive file storage and sharing"
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: SKjerland
-manager: scotv
+ms.author: kwekua
+author: kwekuako
+manager: dansimp
 ms.date: 03/22/2024
 audience: Admin
 ms.topic: install-set-up-deploy
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier2
 - scotvorg
 - highpri
@@ -18,6 +18,7 @@ ms.collection:
 - Adm_O365
 - Adm_O365_Setup
 - SPO_Content
+- operations-pod
 ms.custom:
 - VSBFY23
 - IT_Networking

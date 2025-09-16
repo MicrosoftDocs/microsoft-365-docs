@@ -2,20 +2,21 @@
 title: "Create DNS records for Microsoft 365 when you manage your DNS records"
 f1.keywords:
 - CSH
-ms.author: kvice
-author: kelleyvice-msft
-manager: scotv
+ms.author: kwekua
+author: kwekuako
+manager: dansimp
 ms.date: 08/28/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier2
 - scotvorg
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+- operations-pod
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
@@ -23,7 +24,7 @@ search.appverid:
 ms.assetid: 0669bf14-414d-4f51-8231-6b710ce7980b
 ROBOTS: NOINDEX
 description: "Learn to create DNS records for Microsoft 365 operated by 21Vianet when you manage your DNS records. "
-monikerRange: 'o365-21vianet'
+monikerRange: o365-21vianet
 ---
 
 # Create DNS records for Microsoft 365 when you manage your DNS records

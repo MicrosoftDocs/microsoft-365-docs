@@ -1,5 +1,5 @@
 ---
-title: Manage the join experience for Teams Virtual Appointments on browsers
+title: Manage the join experience for Teams appointments on browsers
 author: lana-chin
 ms.author: jtremper
 manager: jtremper
@@ -24,23 +24,22 @@ ms.collection:
   - m365initiative-meetings
   - m365-virtual-appointments 
 ms.reviewer: revathim
-description: Learn about the join experience for Teams Virtual Appointments on browsers. 
+description: Learn about the join experience for Teams Appointments on browsers. 
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ms.date: 02/06/2024
 ---
 
-# Manage the join experience for Teams Virtual Appointments on browsers
+# Manage the join experience for Teams appointments on browsers
 
-Microsoft Teams makes it easy for people to join [virtual appointments](virtual-appointments.md) without having to download Teams. For a more seamless experience, attendees can join appointments such as healthcare visits and financial consultations from a desktop or mobile browser. Attendees don't need to install the Teams app on their device.
+Microsoft Teams makes it easy for people to join [appointments](virtual-appointments.md) without having to download Teams. For a more seamless experience, attendees can join appointments such as healthcare visits and financial consultations from a desktop or mobile browser. Attendees don't need to install the Teams app on their device.
 
 With browser join, when an attendee joins an appointment, they aren't prompted to download Teams. Instead, Teams opens in a browser, where the attendee can select **Join now** to join. With this feature, keep in mind that if Teams is already installed on the device, Teams will open in a browser and not in the app.
 
 Currently, browser join is available for appointments that are scheduled through the following:
 
-- [The Virtual Appointments app](https://support.microsoft.com/topic/22df0079-e6d9-4225-bc65-22747fb2cb5f)
-- [The Bookings app](https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5)
+- [Bookings](/microsoft-365/bookings/bookings-overview)
 - Microsoft Teams Electronic Health Record (EHR) connector
 
   - Integration with [Oracle Health EHR](ehr-admin-oracle-health.md)
@@ -48,25 +47,9 @@ Currently, browser join is available for appointments that are scheduled through
 
 ## Set up browser join
 
-### Appointments scheduled through the Virtual Appointments app
+### Appointments scheduled through Bookings
 
-Schedulers in your organization can turn on this feature for specific appointment types and for scheduled individual appointments.
-
-After this feature is turned on, the confirmation email or SMS text that’s sent to attendees will contain a meeting join link that opens Teams in a desktop or mobile browser. For a list of supported browsers, see [Supported browsers](#supported-browsers).
-
-#### Turn on browser join for an appointment type
-
-1. In the Virtual Appointments app, go to the **Manage** tab > **Services**, and then under **Scheduled**, select an appointment type.
-
-1. Turn on **Have attendees join from a web browser**. Doing this enables browser join for all appointments of this type.
-
-    :::image type="content" source="media/browser-join-appointment-type.png" alt-text="Screenshot of the Have attendees join from a browser setting for appointment types." lightbox="media/browser-join-appointment-type.png":::
-
-#### Turn on browser join for an individual appointment
-
-On the **Schedule** tab of the Virtual Appointments app, select **New appointment**, and then turn on **Have attendees join from a browser**.
-
-:::image type="content" source="media/browser-join-bookings-form.png" alt-text="Screenshot of the Have attendees join from a browser setting on the new booking form." lightbox="media/browser-join-bookings-form.png":::
+When creating your service, if you select **Add online meeting**, the link to join the meeting is added to all confirmation and reminder emails. Customers can use this link to join through the Teams mobile app, the Teams desktop app, in a Web browser, or via the phone dial-in. To learn more, see [Define your services in Shared Bookings](/microsoft-365/bookings/define-service-offerings).
 
 ### Appointments scheduled through the Teams EHR connector
 
@@ -133,5 +116,5 @@ If you've configured any of these features in your organization, attendees won't
 ## Related articles
 
 - [Virtual Appointments with Teams](virtual-appointments.md)
-- [Use the Virtual Appointments app in Teams](virtual-appointments-app.md)
+- [Microsoft Bookings](/microsoft-365/bookings/bookings-overview)
 - [Teams Premium licensing](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams)

@@ -1,7 +1,7 @@
 ---
 title: Allow cookies for LMS URLs in your browser
-author: DaniEASmith
-ms.author: danismith
+author: officedocspr5
+ms.author: odocspr
 manager: jacktremper
 ms.reviewer: amitman 
 ms.date: 02/06/2024

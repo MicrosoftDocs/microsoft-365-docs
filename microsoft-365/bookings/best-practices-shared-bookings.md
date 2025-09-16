@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
+- operations-pod
 description: "Understand and implement best practices for using Shared Booking features."
 ---
 

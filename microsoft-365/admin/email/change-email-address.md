@@ -2,9 +2,9 @@
 title: "Change your email address to use your custom domain"
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
-manager: scotv
+ms.author: kwekua
+author: kwekuako
+manager: dansimp
 ms.date: 04/23/2025
 audience: Admin
 ms.topic: how-to
@@ -12,11 +12,12 @@ ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
 - Tier2
-- scotvorg 
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
+- operations-pod
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio

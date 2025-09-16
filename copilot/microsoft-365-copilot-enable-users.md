@@ -1,33 +1,37 @@
 ---
-title: Microsoft 365 Copilot welcome email and feedback
+title: Welcome users, create organizational messages, and enable feedback for Microsoft 365 Copilot
 f1.keywords:
 - NOCSH
-ms.author: camillepack
-author: camillepack
-manager: scotv
-ms.date: 05/20/2025
+ms.author: efrene
+author: efrene
+manager: dansimp
+ms.date: 09/08/2025
+ms.update-cycle: 180-days
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - scotvorg
 - m365copilot
 - magic-ai-copilot
+- operations-pod
 description: Enterprise and company IT admins can send a Microsoft 365 Copilot welcome email to users and enable feedback. This welcome email is part of the Copilot adoption and onboarding process.
 appliesto:
-  - ✅ Microsoft 365 Copilot
+- ✅ Microsoft 365 Copilot
 ---
 
-# Welcome users and enable feedback for Microsoft 365 Copilot
+# Welcome users, create organizational messages, and enable feedback for Microsoft 365 Copilot
 
 [Microsoft 365 Copilot](microsoft-365-copilot-overview.md) is an AI-powered productivity tool that helps users with everyday tasks.
 
-As part of your [Microsoft 365 Copilot adoption](microsoft-365-copilot-enablement-resources.md), you can send a welcome email to your Microsoft 365 Copilot users that announces Microsoft 365 Copilot and its features. You can also enable feedback for Microsoft 365 Copilot users.
+As part of your [Microsoft 365 Copilot adoption](microsoft-365-copilot-enablement-resources.md), a welcome email to your Microsoft 365 Copilot users is sent on license assignment that announces Microsoft 365 Copilot and its features. You can also enable feedback for Microsoft 365 Copilot users.
 
 :::image type="content" source="media/microsoft-365-copilot-enablement-resources/adopt-copilot-welcome-email-feedback.svg" alt-text="Diagram that shows the send welcome email and enable feedback step to adopt and enable Microsoft 365 Copilot." lightbox="media/microsoft-365-copilot-enablement-resources/adopt-copilot-welcome-email-feedback.svg":::
 
-This article provides information about how to send users a welcome email, enable feedback, and review the Microsoft 365 Copilot usage activity report.
+Additionally, admins can use Organizational Messaging in the Microsoft Admin Center to deliver tailored in-product messages to your users directly through Teams.
+
+This article provides information about how to send users a welcome email, enable feedback, send organizational messages, and review the Microsoft 365 Copilot usage activity report.
 
 This article applies to:
 
@@ -35,15 +39,48 @@ This article applies to:
 
 ## Send welcome email
 
-After you [set up Microsoft 365 Copilot and assign licenses](microsoft-365-copilot-setup.md) to your users, we recommend you send your users a welcome email. The email should introduce them to Microsoft 365 Copilot and help them understand what Copilot can do for them.
-
-- To send a welcome email, use the [Microsoft 365 Copilot setup guide in the Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide) .
-
-This guide includes an option for sending a welcome email to your Copilot users. For example, your email can look like the following email:
+After you assign a Microsoft 365 Copilot license to a user, they will automatically be sent a notification email that can look like the following email.
 
 :::image type="content" source="media/copilot-welcome-email-jan.png" alt-text="An image of an email introducing Microsoft 365 Copilot and its capabilities that an admin can provide to users.":::
 
 The welcome email also includes a link to [Microsoft Copilot help and learning](https://support.microsoft.com/copilot-skilling).
+
+We also recommend sending an in-product notification to your users through Organizational Messaging.
+
+## Organizational Messages
+
+Admins can also send a customizable in-product message through Teams with Organizational Messaging in the Microsoft Admin Center. After you [set up Microsoft 365 Copilot and assign licenses](microsoft-365-copilot-setup.md) to your users, they can be notified with your message in-product telling them that they can now use Microsoft 365 Copilot.
+
+Admins can configure their message through the Microsoft 365 admin center.
+
+:::image type="content" source="media/promote-using-copilot.png" alt-text="An image of the Set up Microsoft 365 Copilot page in the Microsoft 365 admin center.":::
+
+1. In your Microsoft 365 admin center, in the navigation pane, select **Setup**.
+2. On the Setup page, in the **Featured collections** section, select **Advanced deployment guides & assistance**.
+3. Select **Set up Microsoft 365 Copilot**.
+4. On the **Set up Microsoft 365 Copilot** page, in the **Promote using Microsoft 365 Copilot** tile, select **Schedule message**.
+
+> [!NOTE]
+> The **Promote using Microsoft 365 Copilot** option is also available in Advanced Deployment Guides for [Quickstart](), [Foundations+](), and [Advanced Configuration](). 
+
+4. The Organization messages pane displays and shows the default message and how it will dsiplay to your users. If you choose to use it, select the recipients, schedule when and how regularly you want the message to be delivered to your users, and then select **Schedule message**.  
+
+:::image type="content" source="media/organizational-message-copilot.png" alt-text="An image of the default organization message for Copilot users.":::
+
+### Create a custom message
+
+If you want to create a custom message instead of using the default one provided to you, at the bottom of the Organizational messages pane, select **More customization**. You can then create and deliver messages to targeted groups of users in your organization.
+
+:::image type="content" source="media/create-custom-message.png" alt-text="An image of the Organizational messages page in which you can create a custom message.":::
+
+1. Select **Create a message**.
+2. Select an objective (for example, Adoption, Onboarding, Sustainability, or Training). Select **Next**.
+3. Select where you would like your message to display (for example, Notifications area, Taskbar, Teaching popover, or Windows spotlight). Select **Next**.
+4. Choose to create your own message or start with a premade template. Select **Next**.
+5. Write your message, then select **Next**.
+6. Select your target audience, then select **Next**.
+7. Schedule how long and how often you want your message to appear to your recipients. Select **Next**.
+8. Review your selections, and then select **Schedule**.
 
 ## Enable feedback
 

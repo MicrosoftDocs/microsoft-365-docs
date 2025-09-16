@@ -3,18 +3,19 @@ title: "Find and use product keys for volume licensing"
 f1.keywords: NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: scotv
+manager: dansimp
 ms.reviewer: aasthatiwari, atuldubey
 audience: Admin
-ms.topic: how-to 
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-volume-licensing
 ms.collection:
 - Tier1
 - scotvorg
-ms.custom: 
+- operations-pod
+ms.custom:
 - commerce_vl
-- AdminTemplateSet                                          
+- AdminTemplateSet
 search.appverid: MET150
 ms.localizationpriority: medium
 description: "Learn how to find and use product keys for volume licensing products in the Microsoft 365 admin center."

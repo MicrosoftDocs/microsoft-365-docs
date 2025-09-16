@@ -41,7 +41,7 @@ Retail environments, with their rotating schedules and on-the-go staff, have ver
 
 Microsoft 365 and Teams offer capabilities that can help retail organizations enhance productivity in their daily operations and digital transformation. We recommend the following scenarios for retail organizations:
 
-[![In-store communication and collaboration.](media/retail-scenarios-in-store.png)](#in-store-communication-and-collaboration) [![Cross-store communication and collaboration.](media/retail-scenarios-cross-store.png)](#cross-store-communication-and-collaboration) [![Virtual fittings and consultations.](media/retail-scenarios-virtual-visits.png)](#virtual-fittings-and-consultations) [![Simplify business processes.](media/retail-scenarios-business-processes.png)](#simplify-business-processes) [![Corporate communications.](media/retail-scenarios-corp-comms.png)](#corporate-communications) [![Onboarding new employees.](media/retail-scenarios-onboarding.png)](#onboarding-new-employees)
+[![In-store communication and collaboration.](media/retail-scenarios-in-store.png)](#in-store-communication-and-collaboration) [![Cross-store communication and collaboration.](media/retail-scenarios-cross-store.png)](#cross-store-communication-and-collaboration) [![Fittings and consultations.](media/retail-scenarios-virtual-visits.png)](#fittings-and-consultations) [![Simplify business processes.](media/retail-scenarios-business-processes.png)](#simplify-business-processes) [![Corporate communications.](media/retail-scenarios-corp-comms.png)](#corporate-communications) [![Onboarding new employees.](media/retail-scenarios-onboarding.png)](#onboarding-new-employees)
 
 > [!NOTE]
 > These scenarios are also part of the Microsoft Cloud for Retail. You can do more with these scenarios when you also use other capabilities from the Microsoft Cloud for Retail, such as Microsoft Dynamics 365. Learn more about using this solution, which brings together capabilities from Azure, Dynamics 365, and Microsoft 365 at [Microsoft Cloud for Retail](/industry/retail).
@@ -84,13 +84,13 @@ Staff members can communicate and collaboration across multiple stores in a regi
 
 More information: [Frontline team collaboration](flw-team-collaboration.md)
 
-### Virtual fittings and consultations
+### Fittings and consultations
 
-Use the Virtual Appointments app in Teams to schedule and manage virtual appointments such as virtual shopping experiences for associates and customers.
+Use Bookings to schedule and manage appointments such as shopping experiences for associates and customers.
 
-**Key apps and capabilities:** Virtual Appointments, meetings
+**Key apps and capabilities:** Appointments, meetings
 
-More information: [Virtual Appointments with Microsoft Teams](virtual-appointments.md)
+More information: [Appointments with Microsoft Teams](virtual-appointments.md)
 
 ### Simplify business processes
 
@@ -149,7 +149,7 @@ For retail environments, the following apps and services can help you transform 
 | Planner | Help employees know what they should focus on when not with customers by assigning tasks. Operations can use [task publishing](/microsoftteams/manage-planner-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json#task-publishing) to send out tasks to locations and track progress across those locations. | [Manage the Planner app](/microsoftteams/manage-planner-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Use Planner](https://support.microsoft.com/office/getting-started-with-planner-in-teams-7a5e58f1-2cee-41b0-a41d-55d512c4a59c) |
 | Updates | Check in on recurring or one-off priorities such as daily cleaning. Managers can create templates for employees to fill out and submit. | [Manage the Updates app](/microsoftteams/manage-updates-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Use Updates](https://support.microsoft.com/office/get-started-in-updates-c03a079e-e660-42dc-817b-ca4cfd602e5a) |
 | Walkie Talkie | Instant push-to-talk communication that's not constrained by geography like standard two-way radios.| [Manage the Walkie Talkie app](/microsoftteams/walkie-talkie?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Use Walkie Talkie](https://support.microsoft.com/office/get-started-with-teams-walkie-talkie-25bdc3d5-bbb2-41b7-89bf-650fae0c8e0c) |
-| Virtual Appointments|Schedule and manage virtual fittings and consultations, view analytics, and more, in the Virtual Appointments app.| [Manage the Virtual Appointments app](/microsoftteams/manage-virtual-appointments-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [What is the Virtual Appointments app?](https://support.microsoft.com/topic/22df0079-e6d9-4225-bc65-22747fb2cb5f) |
+| Bookings|Schedule and manage fittings, consultations, and more in Bookings .| [Manage the Bookings app in Microsoft Teams](/microsoftteams/bookings-app-admin?bc=%2Fmicrosoft-365%2Ffrontline%2Fbreadcrumb%2Ftoc.json&toc=%2Fmicrosoft-365%2Ffrontline%2Ftoc.json) | [Microsoft Bookings](/microsoft-365/bookings/bookings-overview) |
 | Viva Connections | Viva Connections creates an experience in Teams that connects employees with tools, news, and resources. Retail associates can view a tailored news feed from your organization and a personalized dashboard with the resources they need. | [Overview of Viva Connections](/viva/connections/viva-connections-overview) | Use [Viva Connections](https://support.microsoft.com/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b) |
 | Viva Learning | Provide training when needed, right in the flow of their work.| [Overview of Viva Learning](/viva/learning/overview-viva-learning) | [Use Viva Learning](https://support.microsoft.com/office/viva-learning-preview-01bfed12-c327-41e0-a68f-7fa527dcc98a) |
 | Viva Engage | Connect your entire organization and enable communication across departments and regions with Viva Engage. | [Overview of Viva Engage](/viva/engage/overview) | [Use Viva Engage](https://support.microsoft.com/topic/getting-started-with-microsoft-viva-engage-729f9fce-3aa6-4478-888c-a1543918c284) |

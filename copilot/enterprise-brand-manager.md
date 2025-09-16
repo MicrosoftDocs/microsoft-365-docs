@@ -1,42 +1,44 @@
 ---
-title: Enterprise brand manager policy and organizational asset library (OAL) access
+title: Enterprise brand manager policy setup for official brand kits
 f1.keywords:
 - NOCSH
-ms.author: camillepack
-author: camillepack
-manager: scotv
-ms.date: 05/30/2025
+ms.author: aaroncz
+author: aczechowski
+manager: dansimp
+ms.date: 08/21/2025
+ms.update-cycle: 180-days
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier2
 - scotvorg
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
 - Adm_TOC
 - m365copilot
 - magic-ai-copilot
-description: "Learn about enabling brand kits and asset libraries in the Microsoft 365 Copilot app to streamline on-brand content creation."
+- operations-pod
+description: "Learn about policy setup for brand kits and asset libraries in the Microsoft 365 Copilot app to streamline on-brand content creation."
 ---
 
-# Enterprise brand manager policy and organizational asset library (OAL) access
+# Enterprise brand manager policy setup for official brand kits
 
-Your organization can enable their brand managers to set up and publish organization or official brand kits via [create.microsoft.com](https://create.microsoft.com). These brand kits can contain multiple logos, color palettes, fonts, images, and templates pertaining to a certain brand.
+Your organization can enable their brand managers to set up and publish organization or official brand kits using the **Create** tab on [microsoft365.com](https://microsoft365.com). These brand kits can contain multiple logos, color palettes, fonts, images, and templates pertaining to a certain brand.
 
-Once published, the brand kit is available to all users in the organization on create.microsoft.com. They can use these brand kits to generate branded artifacts or manually add brand content to existing designs and images.
+Once published, the brand kit is available to all users in the tenant in the **Create** tab on [microsoft365.com](https://microsoft365.com). They can use these brand kits to generate branded artifacts or manually add brand assets to existing designs and images.
 
 To enable this functionality, admins must configure the Enterprise Brand Manager policy, which involves:
 
-- Defining a security group that includes the brand managers.
+- Defining a mail-enabled security group that includes the brand managers.
 - Assigning responsibility to these brand managers for creating, managing, and publishing the official or organizational brand kits.
 
-Beyond brand kits, Copilot also supports access to an organization’s designated [organizational asset library (OAL)](/sharepoint/organization-assets-library). OALs provide broad, centralized access to brand content and support images, logos and illustrations. OALs need to be configured as searchable by an admin.
+## Configure Enterprise Brand Manager policy
 
-## Setting up Enterprise Brand Manager policy
+Use the following instructions to configure Enterprise Brand Manager policy.
 
-**Prerequisite** Create a security group with identified brand managers who have access and permission to create, publish, and manage brand kits available to all users within the organization.
+**Prerequisite** Create a mail-enabled security group with identified brand managers who will have access and permission to create, publish, and manage brand kits available to all users within the organization.
 
 **Policy setup** Follow these steps to create and enable the Enterprise Brand Manager policy for your organization:
 
@@ -48,30 +50,14 @@ Beyond brand kits, Copilot also supports access to an organization’s designate
 
     :::image type="content" source="media/brand-manager/brand-manager-policy.png" alt-text="Screenshot showing the Policy Management page to configure settings." lightbox="media/brand-manager/brand-manager-policy.png":::
 
-6. Set the policy to **Enabled**. By default, it's set as **Not configured**.
-7. In the Security group email address field, provide the email address for the brand managers security group for your tenant.
+1. Set the policy to **Enabled**. By default, it's set as **Not configured**.
+1. In the **Security group email address** field, provide the email address for the brand managers security group for your tenant.
 
-    :::image type="content" source="media/brand-manager/brand-manager-role.png" alt-text="Screenshot showing the Security group email text box filled with an email." lightbox="media/brand-manager/brand-manager-role.png":::
+    Once configured, the brand managers will see a publish button in their brand kits to share their brand kits at the organization level. To set up the brand kit, see [Create and manage official brand kits in Microsoft 365 Copilot](https://support.microsoft.com/en-us/topic/create-and-manage-official-brand-kits-in-microsoft-365-copilot-app-6bc8a5a7-5697-466b-9e1f-302a38d44afc).
 
-8. Select **Apply**.
+    :::image type="content" source="media/brand-manager/brand-manager-role.png" alt-text="Screenshot showing the Security group email text box filled with an email.":::
 
-## Setting up an OAL to be accessible in the *Create* experience of the Microsoft 365 Copilot app
+1. Select **Apply**.
 
-Connecting an OAL to Copilot enables brand content access in the **Create** experience of the Microsoft 365 Copilot app, while also enabling Copilot Chat access in PowerPoint and Word.
-
-:::image type="content" source="media/brand-manager/brand-manager-create.png" alt-text="Screenshot showing the Microsoft 365 Copilot Create tab with an image generated.":::
-
-To learn more, see [Connect organizational asset libraries to Copilot for an on-brand experience](/sharepoint/connect-organizational-asset-libraries-to-copilot).
-
-### What happens after setup
-
-Once the OAL is provisioned and configured as searchable by an admin, the following capabilities become available to your organization:
-
-- **Organization-wide access to brand content**
-All users in your tenant can browse and use the brand assets stored in the designated OAL. These assets include logos, illustrations, and other approved visuals that support your brand identity.
-
-- **Seamless integration in the *Create* experience**
-Within the Microsoft 365 Copilot app, users can access these assets directly from the **Create** tab. The integration makes it easy to incorporate brand visuals into new content without needing to search external sources or local folders.
-
-- **Visuals pane support for editing images**
-When editing an image in the Create experience, users can open the **Visuals** pane to explore available assets. The visuals appear under a label that reflects your tenant name, making it clear that the content is organization-approved.
+> [!NOTE]
+> It could take up to 24 hours after a policy is created for brand managers to be able to create and edit and official brand kits.

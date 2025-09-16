@@ -1,7 +1,7 @@
 ---
 title: Collaborate with guests in a team (IT Admins)
-author: DaniEASmith
-ms.author: danismith
+author: officedocspr5
+ms.author: odocspr
 manager: jtremper
 ms.date: 05/31/2024
 audience: ITPro

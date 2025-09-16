@@ -3,8 +3,8 @@ title: "Allow members to send as or send on behalf of a group"
 ms.reviewer: rahulnayak
 ms.date: 10/28/2024
 f1.keywords: NOCSH
-author: DaniEASmith
-ms.author: danismith
+author: officedocspr5
+ms.author: odocspr
 manager: jtremper
 audience: Admin
 ms.topic: how-to
@@ -114,6 +114,6 @@ To send an email as a group using the classic Outlook, follow these steps:
 
 [Learn more about Microsoft 365 groups](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
-[Add-RecipientPermission](/powershell/module/exchange/add-recipientpermission)
+[Add-RecipientPermission](/powershell/module/exchangepowershell/add-recipientpermission)
 
-[Set-UnifiedGroup](/powershell/module/exchange/set-unifiedgroup)
+[Set-UnifiedGroup](/powershell/module/exchangepowershell/set-unifiedgroup)

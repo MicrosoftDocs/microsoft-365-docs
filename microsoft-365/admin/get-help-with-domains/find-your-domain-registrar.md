@@ -2,9 +2,9 @@
 title: "Find your domain registrar"
 f1.keywords:
 - CSH
-ms.author: kvice
-author: kelleyvice-msft
-manager: scotv
+ms.author: kwekua
+author: kwekuako
+manager: dansimp
 ms.date: 03/18/2025
 audience: Admin
 ms.topic: how-to
@@ -18,7 +18,8 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_O365_Setup
-ms.custom: 
+- operations-pod
+ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 search.appverid:

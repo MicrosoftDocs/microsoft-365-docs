@@ -2,22 +2,25 @@
 title: "Microsoft Adoption Score - Microsoft 365 apps health"
 f1.keywords:
 - NOCSH
-ms.author: camillepack
+ms.author: cmcatee
 author: camillepack
-manager: scotv
+manager: dansimp
 ms.date: 08/10/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier2
 - scotvorg
-- Microsoft 365-subscription-management 
+- Microsoft 365-subscription-management
 - Adm_O365
 - Adm_TOC
+- Microsoft
+- 365-subscription-management
+- operations-pod
 ms.custom: AdminSurgePortfolio
-monikerRange: 'o365-worldwide'
+monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150

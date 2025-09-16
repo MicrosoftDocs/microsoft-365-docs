@@ -2,26 +2,26 @@
 title: "Migrate Google files to Microsoft 365 for business"
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
-manager: scotv
+ms.author: heidip
+author: MicrosoftHeidi
+manager: dansimp
 ms.date: 05/31/2024
 audience: Admin
 ms.topic: upgrade-and-migration-article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
 - highpri
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
 - must-keep
-ms.custom: 
+ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 - adminvideo
-monikerRange: 'o365-worldwide'
+monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150

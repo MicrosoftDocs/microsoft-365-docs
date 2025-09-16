@@ -1,12 +1,12 @@
 ### YamlMime:FAQ
 metadata:
-  ms.date: 08/30/2023
-  title: "Centralized Deployment FAQ"
+  ms.date: 08/26/2025
+  title: "Centralized deployment FAQ"
   f1.keywords:
   - NOCSH
-  ms.author: efrene
-  author: efrene
-  manager: scotv
+  ms.author: kwekua
+  author: kwekuako
+  manager: dansimp
   audience: Admin
   ms.topic: faq
   ms.service: microsoft-365-business
@@ -17,32 +17,33 @@ metadata:
   - M365-subscription-management 
   - Adm_O365
   - Adm_NonTOC
-  - Adm_TOC  
+  - Adm_TOC
+  - operations-pod  
   ms.custom: AdminSurgePortfolio
   search.appverid:
   - BCS160
   - MET150
   - MOE150
-  description: "Review the answers to frequent questions about Centralized Deployment from the Microsoft 365 admin center."
-title: Centralized Deployment FAQ
-summary: Centralized Deployment is a way for a Microsoft 365 admin to deploy Office Add-ins (Word, Excel, PowerPoint, and Outlook) to users and groups within an organization, provided the organization meets all requirements for using Centralized Deployment as outlined in this article. However, note that [Integrated Apps](test-and-deploy-microsoft-365-apps.md) is the recommended and most feature-rich way for most customers to centrally deploy Office add-ins to users and groups within your organization.
+  description: "Review the answers to frequent questions about centralized deployment from the Microsoft 365 admin center."
+title: Centralized deployment FAQ
+summary: Centralized deployment is a way for a Microsoft 365 admin to deploy Office Add-ins (Word, Excel, PowerPoint, and Outlook) to users and groups within an organization, provided the organization meets all requirements for using centralized deployment as outlined in this article. However, note that the [integrated apps portal](test-and-deploy-microsoft-365-apps.md) is the recommended and most feature-rich way for most customers to centrally deploy Office add-ins to users and groups within your organization. But add-ins can also be centrally deployed through the **Add-in** page of the Microsoft 365 admin center.
 
 sections:
   - name: Ignored
     questions:
       - question: |
-          How do I know if my organization is set up for Centralized Deployment?
+          How do I know if my organization is set up for centralized deployment?
         answer: |
           Centralized deployment of add-ins requires that users are using apps in Microsoft 365 for enterprise (and are signed into Microsoft 365 using their organizational log-in credentials) and have Exchange Online mailboxes. Your subscription directory must either be in, or federated to, Microsoft Entra ID. 
            
-          Centralized Deployment is only supported for online mailboxes. It doesn't support deployment to on-premises Exchange mailboxes.
+          Centralized deployment is only supported for online mailboxes. It doesn't support deployment to on-premises Exchange mailboxes.
           
           You can use the [Centralized Deployment Compatibility Checker](centralized-deployment-of-add-ins.md#centralized-deployment-compatibility-checker) to determine if your subscription is eligible. 
             
       - question: |
-          How do you target add-in user assignments with Centralized Deployment?
+          How do you target add-in user assignments with centralized deployment?
         answer: |
-          Centralized Deployment supports assignments to individual users, groups, and everyone in the tenant. Centralized Deployment can be used for users in top-level groups or groups without parent groups, but not for users in nested groups or groups that have parent groups. Centralized Deployment is also part of most Microsoft Entra groups, including Microsoft 365 Groups, distribution lists, dynamic groups, and security groups. 
+          Centralized deployment supports assignments to individual users, groups, and everyone in the tenant. Centralized deployment can be used for users in top-level groups (groups without parent groups), but not for users in nested groups (groups that have parent groups). Centralized deployment also supports most Microsoft Entra groups, including Microsoft 365 Groups, distribution lists, dynamic groups, and security groups. 
           
           It's better to use groups assignments instead of individual user assignment for easier management.
            
@@ -61,16 +62,16 @@ sections:
       - question: |
           As an administrator, how do I manage the user access to add-ins for my organization?
         answer: |
-          For easy deployment of add-ins to users, groups, or to your entire organization, we recommend administrators use Centralized Deployment.
+          For easy deployment of add-ins to users, groups, or to your entire organization, we recommend administrators use centralized deployment whenever deployment through the integrated apps portal is not suitable.
           
           For more information about managing user access, see:
-           - [Prevent add-in downloads by turning off the Office Store across all clients (Except Outlook)](/microsoft-365/admin/manage/manage-addins-in-the-admin-center#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-apps-except-outlook)
+           - [Manage add-in downloads by turning on/off AppSource across all apps (except Outlook)](/microsoft-365/admin/manage/manage-addins-in-the-admin-center#manage-add-in-downloads-by-turning-on-off-appsource-across-all-apps-except-outlook)
            - [Specify the administrators and users who can install and manage add-ins for Outlook](/Exchange/specify-who-can-install-and-manage-add-ins-2013-help)
           
       - question: |
-          Will Centralized Deployment provide admins the flexibility to choose the deployment method for Outlook add-ins? 
+          Will centralized deployment provide admins the flexibility to choose the deployment method for Outlook add-ins? 
         answer: |
-          Yes. Centralized Deployment provides admins the flexibility to choose one of three deployment methods for Outlook add-ins during add-in deployment:
+          Yes. Centralized deployment provides admins the flexibility to choose one of three deployment methods for Outlook add-ins during add-in deployment:
                    
           **Fixed**
           The add-in will be automatically deployed to the assigned users and they won't be able to remove it from their ribbon.
@@ -105,11 +106,9 @@ sections:
           For more information, see [Delete an add-in](./manage-addins-in-the-admin-center.md#delete-an-add-in). 
             
       - question: |
-          Can admins deploy paid add-ins from the Office Store using Centralized Deployment? 
+          Can admins deploy paid add-ins from AppSource using centralized deployment? 
         answer: |
-          No. You can't deploy paid add-ins from the Office Store using Centralized Deployment at this time. 
-           
-          We suggest reaching out to the ISV Developer for the paid add-in to request a manifest file or a URL. The tenant admin can then deploy the add-in as a LOB add-in using Centralized Deployment.
+          Yes.
              
       - question: |
           Which admin role do I need to manage add-ins for my organization? 

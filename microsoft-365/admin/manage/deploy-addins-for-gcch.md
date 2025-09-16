@@ -2,9 +2,9 @@
 title: "Deploy Office Add-ins in Government Community Cloud High (GCC High) environments"
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
-manager: scotv
+ms.author: kwekua
+author: kwekuako
+manager: dansimp
 ms.date: 08/12/2024
 audience: Admin
 ms.topic: install-set-up-deploy
@@ -14,6 +14,7 @@ ms.collection:
 - Tier2
 - scotvorg
 - Adm_TOC
+- operations-pod
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW

@@ -2,22 +2,23 @@
 title: "Microsoft Adoption Score Organizational Messages"
 f1.keywords:
 - NOCSH
-ms.author: camillepack
+ms.author: cmcatee
 author: camillepack
-manager: scotv
+manager: dansimp
 ms.date: 06/14/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-monikerRange: 'o365-worldwide'
-ms.collection: 
+monikerRange: o365-worldwide
+ms.collection:
 - Tier2
 - scotvorg
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: 
+- operations-pod
+ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - campaignIDs-batch1

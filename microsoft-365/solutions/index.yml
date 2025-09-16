@@ -38,8 +38,8 @@ landingContent:
             url: ransomware-protection-microsoft-365.md
           - text: Manage data privacy and data protection
             url: data-privacy-protection.md
-          - text: Microsoft 365 for smaller businesses and campaigns
-            url: ../business-premium/m365bp-overview.md
+          - text: Security in Microsoft 365 for smaller businesses and campaigns
+            url: /microsoft-365/admin/security-and-compliance/m365bp-security-benefits
 
   # Card
   - title: Architecture illustrations and design principles

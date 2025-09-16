@@ -1,12 +1,15 @@
 ---
 title: Manage privacy and sharing controls in People Skills
 description: Learn how to set privacy and skill sharing controls for users, groups, or the entire tenant to meet your organization's needs and comply with local or business requirements.
-author: anibajaj 
-ms.author:  anirudhbajaj
+author: kwekuako
+ms.author: kwekua
 manager: dansimp
 ms.service: microsoft-365-copilot
+ms.collection: 
+- trust-pod
+- operations-pod
 ms.topic: article
-ms.date: 05/29/2025
+ms.date: 07/22/2025
 ---
 
 # Manage privacy and sharing controls in People Skills
@@ -31,7 +34,7 @@ Skills inferencing controls are enabled by default, but you can let users opt in
 
 ## Skills visibility controls overview 
 
-Skills visibility controls whether users can see their colleagues’ skills on surfaces like the people card or in Copilot. All skills in a user's profile are shared and visible by default once you set up People Skills in your tenant. You can also change these visibility controls before or after setting up People Skills.
+Skills visibility controls whether users can see their colleagues' skills on surfaces like the people card or in Copilot. All skills in a user's profile are shared and visible by default once you set up People Skills in your tenant. You can also change these visibility controls before or after setting up People Skills.
 
 - Admins can turn skills visibility auto-on. Individual users can opt out.
 - Admins can turn skills visibility auto-off. Individual users can opt in.
@@ -42,9 +45,9 @@ We offer three levels of controls to control skill visibility. Each of these con
 
 - **(Parent control) Visibility of entire skills profile:** An individual's skills profile consists of AI-generated skills, user-confirmed skills, and imported skills (if applicable). If sharing is disabled, all user skills are private and not shared in any user, leader, or organizational analyst experiences.
 
-- **(Child control) Visibility of AI-generated skills:** AI-generated skills are skills based on AI inferencing that are relevant to a user’s role. These skills can only be shown if the skills profile (parent) is also set to visible. Separate controls for both admins and for users to allow them to share skills, even if the user’s profile is set to visible.
+- **(Child control) Visibility of AI-generated skills:** AI-generated skills are skills based on AI inferencing that are relevant to a user's role. These skills can only be shown if the skills profile (parent) is also set to visible. Separate controls for both admins and for users to allow them to share skills, even if the user's profile is set to visible.
 
-- **(Child control) Visibility of imported skills:** User skills from third-party applications can be imported by your organization. Skills from these apps might need to be confirmed by users before they're shown in experiences as skills. A user might need to confirm these skills, similar to AI-generated skills. These skills can only be shown if the skills profile (parent) is also set to visible. Separate controls for both admins and for users to share skills, even if the user’s profile is set to visible.
+- **(Child control) Visibility of imported skills:** User skills from third-party applications can be imported by your organization. Skills from these apps might need to be confirmed by users before they're shown in experiences as skills. A user might need to confirm these skills, similar to AI-generated skills. These skills can only be shown if the skills profile (parent) is also set to visible. Separate controls for both admins and for users to share skills, even if the user's profile is set to visible.
 
 > [!IMPORTANT]
 > When multiple policies apply to the same user, the most specific policy takes precedence. User-specific policies override group policies, which override organization-wide policies.
@@ -68,7 +71,7 @@ When inferencing is enabled, users receive AI-generated skills relevant to their
 Create an access control policy if you need to disable skill suggestions for specific users, groups, or your entire tenant. For more information on how to create and manage policies, see [control access to features](/viva/feature-access-management). 
 
 > [!NOTE]
-> Policies for People Skills can only be created in PowerShell at this time. You can’t create or manage policies through the interface in Admin center.
+> Policies for People Skills can only be created in PowerShell at this time. You can't create or manage policies through the interface in Admin center.
 
 You have the following options for creating an access control policy in PowerShell to manage skills inferencing:  
 
@@ -102,9 +105,9 @@ For more details on PowerShell syntax, refer to **[our Feature Access Management
   
 ### Control visibility of entire user skills profile (Parent control)
 
-This control can be used to control visibility of a user’s entire skills profile. An individual's skills profile consists of AI-generated skills, user-confirmed skills, and imported skills.
+This control can be used to control visibility of a user's entire skills profile. An individual's skills profile consists of AI-generated skills, user-confirmed skills, and imported skills.
 
-By default, a user’s skills profile is shown to others in their organizations and shared with other Microsoft 365 experience. If you need to disable sharing for specific users, groups, or your entire tenant, create an access control policy.
+By default, a user's skills profile is shown to others in their organizations and shared with other Microsoft 365 experience. If you need to disable sharing for specific users, groups, or your entire tenant, create an access control policy.
 
 > [!NOTE]
 > If sharing is disabled or "opted-out" by a user, all user skills will be private and won't be shown to other users or shared with any Microsoft 365 experiences.
@@ -113,7 +116,7 @@ You have the following options for creating an access control policy in PowerShe
 
 - **Enable profile visibility (Default):** When visibility is enabled, users skills profile is shared across Microsoft 365. Users have the option to turn it off for themselves in their skill settings. 
 
-- **Keep profile visibility default off:** Users in this access policy will be "opted-out,” and their skills won't be shared across Microsoft 365. Users have the option to turn it on for themselves in their skill settings.
+- **Keep profile visibility default off:** Users in this access policy will be "opted-out," and their skills won't be shared across Microsoft 365. Users have the option to turn it on for themselves in their skill settings.
 
   To create this policy, run the following PowerShell cmdlet:
 
@@ -138,7 +141,7 @@ You have the following options for creating an access control policy in PowerShe
 
 AI-generated skills are provided to users based on their role and Microsoft 365 activity.
 
-By default, a user’s AI-generated skills are shown to others in their organizations and shared with other Microsoft 365 experiences. People Skills provides access controls using [Feature Access Management](/viva/feature-access-management) to ensure you comply with user privacy and local regulations.
+By default, a user's AI-generated skills are shown to others in their organizations and shared with other Microsoft 365 experiences. People Skills provides access controls using [Feature Access Management](/viva/feature-access-management) to ensure you comply with user privacy and local regulations.
 
 > [!NOTE]
 > These skills are only shared if Skills Profile visibility is also enabled or shared. If sharing is disabled, AI-generated skills won't be shown to other users or shared with any Microsoft 365 experiences. 
@@ -180,7 +183,7 @@ You have the following options for creating an access control policy in PowerShe
 Imported skills added by an admin in your organization from external systems display in a user's skills profile alongside AI-generated skills. Like AI-generated skills, these skills are available for the user to confirm in the Microsoft 365 profile editor. By default, third-party skills are displayed to others in their organizations and shared with other Microsoft 365 experiences. If sharing is disabled, imported skills won't display to others in the organization.
 
 > [!NOTE]
-> These skills are only shared if Skills Profile visibility is also enabled or shared. If sharing is disabled, third-party skills won’t display to other users or get shared with any Microsoft 365 experiences. 
+> These skills are only shared if Skills Profile visibility is also enabled or shared. If sharing is disabled, third-party skills won't display to other users or get shared with any Microsoft 365 experiences. 
 
 If you need to disable sharing for specific users, groups, or your entire tenant, create an access control policy. For more information, see [Feature Access Management](/viva/feature-access-management).
 
@@ -188,7 +191,7 @@ You have the following options for creating an access control policy in PowerShe
 
 - **Enable third-party skills visibility (Default):** When visibility is enabled, third-party skills are shared across Microsoft 365. Users have the option to turn it off for themselves in their settings. 
 
-- **Keep imported skill sharing default off:** Users in this access policy will be "opted-out,” and their third-party skills won't be shared across Microsoft 365. Users have the option to turn it on for themselves in their skill settings.
+- **Keep imported skill sharing default off:** Users in this access policy will be "opted-out," and their third-party skills won't be shared across Microsoft 365. Users have the option to turn it on for themselves in their skill settings.
 
   To create this policy, run the following PowerShell cmdlet:
   

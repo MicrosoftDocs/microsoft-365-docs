@@ -2,7 +2,7 @@
 title: OneDrive Cross-tenant OneDrive migration Step 2
 ms.author: heidip
 author: MicrosoftHeidi
-manager: jtremper
+manager: dansimp
 ms.date: 10/13/2023
 recommendations: true
 audience: ITPro

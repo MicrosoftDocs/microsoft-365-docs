@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 04/01/2025
+ms.date: 07/01/2025
 ms.topic: faq
 ms.service: microsoft-365-backup
 ms.custom: backup
@@ -92,7 +92,7 @@ If the user has been deleted within the past 30 days, the best option is to rest
 
 For OneDrive, you can restore the OneDrive to the original URL or a new URL. At that time, the OneDrive is in an "orphaned" state. To connect the OneDrive to a user, see [Fix site user ID mismatch in SharePoint or OneDrive](/sharepoint/troubleshoot/sharing-and-permissions/fix-site-user-id-mismatch).
 
-For Exchange, if the user account is permanently deleted, Microsoft 365 Backup retains the inactive mailbox for the duration of the backup policy. To recover the inactive mailbox, follow the guidance at [Recover an inactive mailbox](/purview/recover-an-inactive-mailbox) to convert the inactive mailbox to a new, active mailbox. Once the inactive mailbox is recovered, remove the deleted user from the backup policy and then add the new user to the backup policy to access backups from the recovered mailbox.  Note that only the [Recover an inactive mailbox](/purview/recover-an-inactive-mailbox) process is supported. The [Restore an inactive mailbox](/purview/restore-an-inactive-mailbox) process will not preserve the backup data from the old mailbox. 
+For Exchange, if the user account is permanently deleted, Microsoft 365 Backup retains the inactive mailbox for the duration of the backup policy. To recover the inactive mailbox, follow the guidance at [Recover an inactive mailbox](/purview/recover-an-inactive-mailbox) to convert the inactive mailbox to a new, active mailbox. Once the inactive mailbox is recovered, add the new user to the backup policy to access backups from the recovered mailbox.  The original, now deleted user can then be removed from the backup policy.  Note that only the [Recover an inactive mailbox](/purview/recover-an-inactive-mailbox) process is supported. The [Restore an inactive mailbox](/purview/restore-an-inactive-mailbox) process will not preserve the backup data from the old mailbox. 
 
 #### If I transfer control of the Backup tool from the native first-party Microsoft 365 application to a third-party application built on the Microsoft 365 Backup Storage platform, will I be able to revert control back to the first-party application at a later date?
 

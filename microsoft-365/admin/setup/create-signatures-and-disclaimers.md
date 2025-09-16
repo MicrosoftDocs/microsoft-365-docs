@@ -2,22 +2,23 @@
 title: "Create organization-wide signatures and disclaimers"
 f1.keywords:
 - NOCSH
-ms.author: twerner
-author: twernermsft
-manager: scotv
+ms.author: kwekua
+author: kwekuako
+manager: dansimp
 ms.date: 06/19/2024
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier2
 - scotvorg
 - highpri
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
 - Adm_TOC
 - must-keep
+- operations-pod
 ms.custom:
 - VSBFY23
 - TRN_M365B

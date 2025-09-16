@@ -1,11 +1,10 @@
 ---
-
 title: "Microsoft Adoption Score - Meetings"
 f1.keywords: NOCSH
-ms.author: camillepack
+ms.author: cmcatee
 author: camillepack
-manager: scotv
-ms.reviewer:
+manager: dansimp
+ms.reviewer: 
 ms.date: 10/12/2022
 audience: Admin
 ms.topic: article
@@ -15,9 +14,10 @@ ms.collection:
 - M365-subscription-management
 - scotvorg
 - highpri
-ms.custom:
+- operations-pod
+ms.custom: 
 search.appverid: MET150
-description: "Learn more about Meetings insights score - people experiences Adoption Score." 
+description: "Learn more about Meetings insights score - people experiences Adoption Score."
 ---
 
 # Meetings insights score – People experiences

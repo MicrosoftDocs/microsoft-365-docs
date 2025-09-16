@@ -1,9 +1,10 @@
 ---
 ms.date: 07/02/2025
+ms.update-cycle: 180-days
 title: "Summary of governance, lifecycle, and compliance capabilities for Copilot Pages and Copilot Notebooks"
 ms.reviewer: dancost, tonchan
-ms.author: jenz
-author: jenzamora
+ms.author: odocspr
+author: officedocspr5
 manager: jtremper
 recommendations: true
 audience: Admin
@@ -40,14 +41,15 @@ As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on 
 
 - **Intune** [Device Management Support](/mem/intune/remote-actions/device-management) exists for Microsoft 365 app, Teams app, and Loop app, on iOS and Android.
 
-- **[Conditional Access](/sharepoint/control-access-from-unmanaged-devices)** is supported.
+    > [!IMPORTANT]
+    > **[Conditional Access](/sharepoint/control-access-from-unmanaged-devices)** only applies to an entire app. Because Copilot Pages and Copilot Notebooks are features of the Microsoft 365 Copilot app, conditional access cannot be used on just those features, it would need to apply to the entire app at m365.cloud.microsoft. Administrators can still block the creation of new Copilot Pages and Copilot Notebooks using the **[Admin Toggle](cpcn-admin-configuration.md)**.
 
     > [!IMPORTANT]
     > **[Information Barriers](/purview/information-barriers-sharepoint)** are not supported. See [admin settings](cpcn-admin-configuration.md) to configure these integrations.
 
 - **[Customer Lockbox](/purview/customer-lockbox-requests)** is supported.
 
-- **Guest app access** to Copilot Pages and Copilot Notebooks containers is available. Guest app access enables third party export and eDiscovery tools, migration tools, tools used to evaluate compliance requirements, and developer APIs. Use PowerShell to [Get](/powershell/module/sharepoint-online/get-spoapplication) and [Set](/powershell/module/sharepoint-online/set-spoapplicationpermission) guest app permissions.
+- **Guest app access** to Copilot Pages and Copilot Notebooks containers is available. Guest app access enables third party export and eDiscovery tools, migration tools, tools used to evaluate compliance requirements, and developer APIs. Use PowerShell to [Get](/powershell/module/microsoft.online.sharepoint.powershell/get-spoapplication) and [Set](/powershell/module/microsoft.online.sharepoint.powershell/set-spoapplicationpermission) guest app permissions.
 
 ## Data Lifecycle
 
@@ -61,7 +63,7 @@ As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on 
 - **[Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)** capabilities for Copilot Pages and Copilot Notebooks are supported. Copilot Pages and Copilot Notebooks are both stored in the same user-owned SharePoint Embedded container. This container is created in the geo that matches the user's [preferred data location](/microsoft-365/enterprise/plan-for-multi-geo#best-practices). Like OneDrive, admins have the ability to manually move the user's Copilot Pages and Copilot Notebooks container to a new geo when their preferred data location changes.
 
     > [!IMPORTANT]
-    > There is no end user recycle bin for Copilot Pages or Copilot Notebooks.
+    > There is no end user recycle bin for Copilot Pages or Copilot Notebooks. Neither Administrators nor end users can recover individually deleted Copilot Notebooks.
 
 - **Version History** [export in Purview](/purview/ediscovery-export-search-results#step-1-prepare-search-results-for-export) or via [Graph API](/graph/api/driveitem-get-content-format) is available. Copilot Pages and Copilot Notebooks version history is configured to save 50 versions per file and no admin setting is available to change this configuration.
 
@@ -80,7 +82,7 @@ As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on 
     > [!IMPORTANT]
     > Full text search of content within .loop files in Purview review sets isn't available. All other Purview search and collection capabilities are supported.
 
-- Microsoft **[Graph API](/graph/api/driveitem-get-content-format)** export for third party tools is supported. Use PowerShell to [Get](/powershell/module/sharepoint-online/get-spoapplication) and [Set](/powershell/module/sharepoint-online/set-spoapplicationpermission) guest application permissions.
+- Microsoft **[Graph API](/graph/api/driveitem-get-content-format)** export for third party tools is supported. Use PowerShell to [Get](/powershell/module/microsoft.online.sharepoint.powershell/get-spoapplication) and [Set](/powershell/module/microsoft.online.sharepoint.powershell/set-spoapplicationpermission) guest application permissions.
 
 - **Legal Hold** support to ensure content isn't deleted (as related to litigation and security investigations) and stored in the [Preservation Hold Library](/sharepoint/governance/ediscovery-and-in-place-holds-in-sharepoint-server).
 

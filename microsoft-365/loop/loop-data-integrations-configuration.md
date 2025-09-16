@@ -2,8 +2,8 @@
 ms.date: 06/11/2025
 title: "Configuring external data integrations for Loop experiences"
 ms.reviewer: dancost, dimple
-ms.author: jenz
-author: jenzamora
+ms.author: odocspr
+author: officedocspr5
 manager: jtremper
 recommendations: true
 audience: Admin

@@ -2,9 +2,9 @@
 title: "Microsoft Cloud Solution Provider Partners in Russia"
 f1.keywords:
 - NOCSH
-ms.author: loreenl
-author: LoreenLa
-manager: pamgreen
+ms.author: kwekua
+author: kwekuako
+manager: dansimp
 ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
@@ -13,6 +13,7 @@ ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - Adm_NonTOC
+- operations-pod
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150

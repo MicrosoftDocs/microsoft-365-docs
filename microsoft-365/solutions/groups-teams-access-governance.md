@@ -2,8 +2,8 @@
 title: "Governing access in Microsoft 365 groups, Teams, and SharePoint"
 ms.reviewer: rahulnayak
 ms.date: 07/28/2023
-author: DaniEASmith
-ms.author: danismith
+author: officedocspr5
+ms.author: odocspr
 manager: jtremper
 audience: Admin
 ms.topic: article

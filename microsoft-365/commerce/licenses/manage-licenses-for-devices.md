@@ -4,7 +4,7 @@ f1.keywords:
 - CSH
 author: cmcatee-MSFT
 ms.author: cmcatee
-manager: scotv
+manager: dansimp
 ms.reviewer: shegu, nicholak
 audience: Admin
 ms.topic: how-to
@@ -13,10 +13,11 @@ ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
 ms.collection:
 - Tier1
-- scotvorg 
+- scotvorg
 - M365-subscription-management
 - Adm_O365
-ms.custom: 
+- operations-pod
+ms.custom:
 - commerce_licensing
 - AdminSurgePortfolio
 - okr_SMB
@@ -25,8 +26,9 @@ ms.custom:
 - campaignIDs-batch2
 search.appverid: MET150
 description: "Learn how to assign Microsoft 365 Apps licenses to groups for use with devices."
-ms.date: 03/11/2025
+ms.date: 07/13/2025
 ---
+
 # Manage Microsoft 365 Apps licenses for devices
 
 If you have Microsoft 365 Apps for enterprise (device) or Microsoft 365 Apps for Education (device), you can assign licenses to devices by using Microsoft Entra groups. When a device has a license, anyone who uses that device can use Microsoft 365 Apps for enterprise. For example, let's say you have 20 laptops and tablets that are used by people in your organization. When you assign a license to each device, each person who logs in to one of the devices uses Microsoft 365 Apps for enterprise without the need for their own license.
@@ -34,7 +36,7 @@ If you have Microsoft 365 Apps for enterprise (device) or Microsoft 365 Apps for
 > [!IMPORTANT]
 > Device-based licensing for Microsoft 365 Apps for enterprise is available only as an add-on license for some commercial customers and some education customers. For commercial customers, the license is *Microsoft 365 Apps for enterprise (device)* and is available only through Enterprise Agreement/Enterprise Agreement Subscription. For education customers, the license is *Microsoft 365 Apps for Education (device)* and is available only through Enrollment for Education Solutions (EES). For more information, read the blog post on [education availability](https://educationblog.microsoft.com/2019/08/attention-it-administrators-announcing-office-365-proplus-device-based-subscription-for-education). For commercial availability, contact your Microsoft account representative.
 
-To begin, you create a group in the Microsoft Entra admin center, and then assign devices to the group. To learn more about device licensing, including device requirements, what types of groups you can use, and how to configure Microsoft 365 Apps for enterprise to use device licensing, see [Device-based licensing for Microsoft 365 Apps for enterprise](/deployoffice/device-based-licensing).
+To begin, you create a group in the Microsoft Entra admin center, and then add devices to the group. To learn more about device licensing, including device requirements, what types of groups you can use, and how to configure Microsoft 365 Apps for enterprise to use device licensing, see [Device-based licensing for Microsoft 365 Apps for enterprise](/deployoffice/device-based-licensing).
 
 ## Before you begin
 

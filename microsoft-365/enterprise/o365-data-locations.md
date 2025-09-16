@@ -28,10 +28,10 @@ description: "Determine where your Microsoft 365 customer data is stored worldwi
 This article helps you to understand how you can determine current data residency and data residency commitments.
 
 > [!NOTE]
-> The **Indonesia**, **Malaysia**, and **Chile** local data center regions launched in June 2025. See [Advanced Data Residency](advanced-data-residency.md) if your organization requires the migration of your Microsoft 365 customer data to Indonesia, Malaysia, or Chile and data residency commitments for these countries.
+> The **Indonesia**, **Malaysia**, **Chile**, and **Austria** local data center regions launched in Quarter 2 and Quarter 3 of 2025. See [Advanced Data Residency](advanced-data-residency.md) if your organization requires the migration of your Microsoft 365 customer data to Indonesia, Malaysia, Chile, or Austria and data residency commitments for these regions.
 
 > [!NOTE]
-> For tenants in Australia, Brazil, Canada, Chile, France, Germany, India, Indonesia, Israel, Italy, Japan, Malaysia, Mexico, New Zealand, Norway, Poland, Qatar, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, United Arab Emirates, and United Kingdom, more workloads are available for data residency commitments. For more information, see [Advanced Data Residency](advanced-data-residency.md).
+> For tenants in Australia, Austria, Brazil, Canada, Chile, France, Germany, India, Indonesia, Israel, Italy, Japan, Malaysia, Mexico, New Zealand, Norway, Poland, Qatar, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, United Arab Emirates, and United Kingdom, more workloads are available for data residency commitments. For more information, see [Advanced Data Residency](advanced-data-residency.md).
 
 See the following links to understand how you can determine current data residency and data residency commitments.
 
@@ -51,10 +51,10 @@ See the following links to understand how you can determine current data residen
   - Audit (Premium)
   - Data Lifecycle Management (DLM)
   
-- Microsoft Entra ID [Data Location](m365-dr-workload-other.md#azure-active-directory-aad)
+- Microsoft Entra ID [Data Location](m365-dr-workload-other.md#microsoft-entra-id)
 - Whiteboard [Data Location](m365-dr-workload-other.md#whiteboard)
 - Forms [Data Location](m365-dr-workload-other.md#forms)
-- Intune [Data Location](m365-dr-workload-other.md#intune)
+- Intune [Data Location](/intune/intune-service/protect/privacy-data-store-process#storage-locations)
 - Planner [Data Location](m365-dr-workload-other.md#planner)
 - Viva Glint [Data Location](m365-dr-workload-other.md#viva-glint)
 - Viva Goals [Data Location](m365-dr-workload-other.md#viva-goals)

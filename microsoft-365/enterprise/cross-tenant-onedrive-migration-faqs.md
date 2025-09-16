@@ -2,7 +2,7 @@
 title: OneDrive Cross-tenant OneDrive migration FAQs
 ms.author: heidip
 author: MicrosoftHeidi
-manager: jtremper
+manager: dansimp
 ms.date: 04/30/2025
 recommendations: true
 audience: ITPro

@@ -3,10 +3,11 @@ metadata:
   title: "Microsoft 365 Copilot Early Access Program FAQ"
   f1.keywords:
   - NOCSH
-  ms.author: camillepack
-  author: camillepack
-  manager: scotv
+  ms.author: efrene
+  author: efrene
+  manager: dansimp
   ms.date: 05/01/2025
+  ms.update-cycle: 180-days
   audience: Admin
   ms.topic: faq
   ms.service: microsoft-365-copilot
@@ -16,6 +17,7 @@ metadata:
   - scotvorg
   - m365copilot
   - magic-ai-copilot
+  - operations-pod
   description: "Frequently asked questions about the Microsoft 365 Copilot5 Early Access Program."
 title: Microsoft 365 Copilot Early Access Program Frequently Asked Questions
 summary: The Microsoft 365 Copilot Early Access Program is an invitation-only paid preview. If your organization is interested in the early release program, work with your Microsoft account manager to find out more details about nominations for a potential invite. The program includes licenses for Microsoft 365 Copilot within the Microsoft 365 Apps (Word, Outlook, Excel, PowerPoint, Teams, and more). To learn more, see this blog post announcing the [Microsoft 365 Copilot Early Access Program](https://go.microsoft.com/fwlink/p/?linkid=2240881).

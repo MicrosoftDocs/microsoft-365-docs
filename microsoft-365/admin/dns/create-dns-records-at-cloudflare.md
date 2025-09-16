@@ -2,9 +2,9 @@
 title: "Connect your DNS records at Cloudflare to Microsoft 365"
 f1.keywords:
 - CSH
-ms.author: kvice
-author: kelleyvice-msft
-manager: scotv
+ms.author: kwekua
+author: kwekuako
+manager: dansimp
 ms.date: 04/04/2025
 audience: Admin
 ms.topic: how-to
@@ -19,6 +19,7 @@ ms.collection:
 - Adm_NonTOC
 - Adm_O365_Setup
 - must-keep
+- operations-pod
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160

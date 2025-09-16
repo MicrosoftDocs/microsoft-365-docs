@@ -2,9 +2,9 @@
 title: "Enable developers to use app analytics in the Developer Portal for Teams"
 f1.keywords:
 - CSH
-ms.author: kvice
-author: kelleyvice-msft
-manager: scotv
+ms.author: kwekua
+author: kwekuako
+manager: dansimp
 ms.date: 04/14/2025
 audience: Admin
 ms.topic: how-to
@@ -12,14 +12,15 @@ ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: medium
 ms.reviewer: luywang
-ms.collection: 
+ms.collection:
 - scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_O365_Setup
 - must-keep
-ms.custom: 
+- operations-pod
+ms.custom:
 - admindeeplinkMAC
 search.appverid:
 - MET150
@@ -32,7 +33,7 @@ In the Microsoft 365 admin center, the **App usage for custom app** setting allo
 
 :::image type="content" source="../../media/enable-dev-analytics/enable-dev-analytics.png" alt-text="Image of the UI for enabling dev analytics" lightbox="../../media/enable-dev-analytics/enable-dev-analytics.png":::
 
-To enable the setting, in the Microsoft 365 Admin Center, sign in with the **Teams admin** role, and under **Org settings**, select **Developer Portal for Teams** and then enable the setting in the flyout pane as shown in the following image:
+To enable the setting, in the Microsoft 365 Admin Center, sign in with the **Teams admin** role or **Global admin** role, and under **Org settings**, select **Developer Portal for Teams** and then enable the setting in the flyout pane as shown in the following image:
 
 :::image type="content" source="../../media/enable-dev-analytics/enable-dev-analytics-flyout.png" alt-text="Image of the flyout pane where you can enable the setting":::
 

@@ -4,7 +4,7 @@ f1.keywords:
 - MACBillingBillingAccountsOverview
 author: cmcatee-MSFT
 ms.author: cmcatee
-manager: scotv
+manager: dansimp
 ms.reviewer: jkinma, ramagane
 audience: Admin
 ms.topic: how-to
@@ -14,9 +14,10 @@ ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
-ms.custom: 
+- operations-pod
+ms.custom:
 - commerce_billing
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -25,14 +26,14 @@ ms.custom:
 - campaignIDs-batch2
 search.appverid: MET150
 description: "Learn about Microsoft business billing accounts and how they're used to manage account settings, invoices, payment methods, and purchases."
-ms.date: 05/05/2025
+ms.date: 09/15/2025
 ---
 
 # Understand your Microsoft business billing account
 
 When you sign up to try or buy Microsoft business products, a billing account is automatically created for you. You use your billing account to manage your account settings, invoices, payment methods, and purchases from us.
 
-You might have access to multiple billing accounts. For example, you can have one billing account when you buy directly from Microsoft, and another when you have access to your organization’s billing account.
+You might have access to multiple billing accounts. For example, you can have one billing account when you buy directly from Microsoft, and another when you have access to your organization's billing account.
 
 ## Before you begin
 
@@ -46,7 +47,7 @@ The <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">
 
 - **Microsoft Customer Agreement (MCA)**: This billing account is created when your organization works with a Microsoft representative, an authorized partner, or buys products and services independently. For MCA billing accounts, you have a corresponding billing profile that contains your subscriptions.
 - **Microsoft Partner Agreement (MPA):** This billing account is created for Cloud Solution Provider (CSP) partners to manage their customers.
-- **Microsoft Online Subscription Agreement (MOSA)**: This billing account was created when you signed up for a Microsoft 365 subscription directly. You might have a MOSA billing account if your account hasn’t yet moved to the Microsoft Customer Agreement. For MOSA billing accounts, you receive an invoice for each order, on the account anniversary.
+- **Microsoft Online Subscription Agreement (MOSA)**: This billing account was created when you signed up for a Microsoft 365 subscription directly. You might have a MOSA billing account if your account hasn't yet moved to the Microsoft Customer Agreement. For MOSA billing accounts, you receive an invoice for each order, on the account anniversary.
 
 ## View my billing accounts
 
@@ -81,12 +82,12 @@ The following table lists the terms shown on the billing account details page.
 |Billing account ID                               |The unique identifier for your billing account. |
 |Name                             |The name of your billing account. To change the name, select **Update name**. |
 |Status                   |A read-only field that specifies the status of your commercial account with Microsoft. |
-|My current role|The role you have on this billing account.  See section on billing account roles below.|
+|My current role|The role you have on this billing account. See the [What are billing account roles?](#what-are-billing-account-roles) section later in this article.|
 |Sold-to address                          |The details of the legal entity responsible for payment and identified on the invoice. This section contains the name and address of the individual or organization responsible for the account, together with a contact email address and phone number. The address provided here is used to determine your tax rate unless you opt to provide an alternative shipping address during your purchase. For more information, see [Tax information](billing-and-payments/tax-information.md). |
-|Tax ID                           |This field only applies if you’re in a country or region that requires you to provide a VAT or local equivalent. For more information, see [Tax information](billing-and-payments/tax-information.md). |
+|Tax ID                           |This field only applies if you're in a country/region that requires you to provide a VAT or local equivalent. For more information, see [Tax information](billing-and-payments/tax-information.md). |
 |Registration number (Optional)   |A legal registration number that you provide to us so we can review the details of your account. For more information, see [About registration numbers and under-review notifications](about-registration-numbers.md). To add a registration number, select **Edit**. |
 |Type|The type of billing account.|
-|Agreements|Links to the agreements signed by your organization with Microsoft.  Not all agreements are available to view online.|
+|Agreements|Links to the agreements signed by your organization with Microsoft. Not all agreements are available to view online.|
 
 > [!NOTE]
 > If you need to change the **Sold-to** name, you must [contact support](../admin/get-help-support.md) to change it. Requests to change the **Sold-to** name require a credit check. Complete [this form](https://www.microsoft.com/download/details.aspx?id=102732), and be ready to share one of the following documents with Microsoft when you contact support:
@@ -94,7 +95,7 @@ The following table lists the terms shown on the billing account details page.
 > - Government-issued document or registration letter
 > - Print out of the local company's registry
 >
-> Support can help with name and address changes where only the customer name changes, but the entity remains the same. Any documentation you provide should clearly show that only the entity’s name has changed. If the change is the result of a transaction, including the sale of a business, a change of controls, or a divestiture or “spin-off” of a Customer Affiliate, please contact your Microsoft Seller or Microsoft support.
+> Support can help with name and address changes where only the customer name changes, but the entity remains the same. Any documentation you provide should clearly show that only the entity's name changed. If the change is the result of a transaction, including the sale of a business, a change of controls, or a divestiture or “spin-off” of a Customer Affiliate, contact your Microsoft Seller or Microsoft support.
 
 ## What are billing account roles?
 
@@ -103,7 +104,7 @@ If you have an MCA billing account type, the top of the billing account details 
 > [!IMPORTANT]
 > Billing account roles only apply to billing accounts, and don't apply to other Microsoft 365 admin center scenarios.
 
-If you’re a Global Administrator, you can assign yourself a Billing account role in the Microsoft 365 admin center through the billing account roles and permissions. Elevating your access to manage billing accounts gives you the ability to view and manage cost and billing for your accounts. You can view invoices, charges, products that are purchased, and the users who have access to the billing accounts.
+If you're a Global Administrator, you can assign yourself a Billing account role in the Microsoft 365 admin center through the billing account roles and permissions. Elevating your access to manage billing accounts gives you the ability to view and manage cost and billing for your accounts. You can view invoices, charges, products that are purchased, and the users who have access to the billing accounts.
 
 You can provide others with access to the billing account in the Microsoft 365 admin center through the billing account roles and permissions. For instructions about how to grant billing account access to other users, see [Assign billing account roles](#assign-billing-account-roles).
 
@@ -141,4 +142,5 @@ If you have an MCA billing account type, you can give users from other tenants a
 ## Related content
 
 [Tax information](billing-and-payments/tax-information.md) (article) \
+[Keep your Microsoft business billing account active](keep-billing-accounts-active.md) (article) \
 [Manage your Microsoft business billing profiles](billing-and-payments/manage-billing-profiles.md) (article)

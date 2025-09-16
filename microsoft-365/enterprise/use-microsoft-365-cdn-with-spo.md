@@ -182,7 +182,7 @@ To enable your organization to use public origins, type the following command:
 Set-SPOTenantCdnEnabled -CdnType Public -Enable $true
 ```
 
-For more information about this cmdlet, see [Set-SPOTenantCdnEnabled](/powershell/module/sharepoint-online/Set-SPOTenantCdnEnabled).
+For more information about this cmdlet, see [Set-SPOTenantCdnEnabled](/powershell/module/microsoft.online.sharepoint.powershell/set-spotenantcdnenabled).
 
 <a name="Office365CDNforSPOFileType"> </a>
 
@@ -211,7 +211,7 @@ To see what file types are currently allowed by the CDN, use the **Get-SPOTenant
 Get-SPOTenantCdnPolicies -CdnType <Public>
 ```
 
-For more information about these cmdlets, see [Set-SPOTenantCdnPolicy](/powershell/module/sharepoint-online/) and [Get-SPOTenantCdnPolicies](/powershell/module/sharepoint-online/).
+For more information about these cmdlets, see [Set-SPOTenantCdnPolicy](/powershell/module/microsoft.online.sharepoint.powershell/set-spotenantcdnpolicy) and [Get-SPOTenantCdnPolicies](/powershell/module/microsoft.online.sharepoint.powershell/get-spotenantcdnpolicies).
 
 <a name="Office365CDNforSPOSiteClassification"> </a>
 
@@ -245,7 +245,7 @@ The _ExcludeRestrictedSiteClassifications_ property contains the site classifica
 
 The _ExcludeIfNoScriptDisabled_ property excludes content from the CDN based on the site-level _NoScript_ attribute settings. By default, the _NoScript_ attribute is set to **Enabled** for _Modern_ sites and **Disabled** for _Classic_ sites. This depends on your tenant settings.
 
-For more information about these cmdlets, see [Set-SPOTenantCdnPolicy](/powershell/module/sharepoint-online/) and [Get-SPOTenantCdnPolicies](/powershell/module/sharepoint-online/).
+For more information about these cmdlets, see [Set-SPOTenantCdnPolicy](/powershell/module/microsoft.online.sharepoint.powershell/set-spotenantcdnpolicy) and [Get-SPOTenantCdnPolicies](/powershell/module/microsoft.online.sharepoint.powershell/get-spotenantcdnpolicies).
 
 <a name="Office365CDNforSPOOriginPosh"> </a>
 
@@ -293,7 +293,7 @@ Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl sites/test/siteassets/folder%2
 Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl "sites/test/siteassets/folder 1"
 ```
 
-For more information about this command and its syntax, see [Add-SPOTenantCdnOrigin](/powershell/module/sharepoint-online/Add-SPOTenantCdnOrigin).
+For more information about this command and its syntax, see [Add-SPOTenantCdnOrigin](/powershell/module/microsoft.online.sharepoint.powershell/add-spotenantcdnorigin).
 
 After you run the command, the system synchronizes the configuration across the datacenter. This result can take up to 15 minutes.
 
@@ -315,7 +315,7 @@ Normally, these origins are set up for you by default when you enable the Office
   Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
   ```
 
-For more information about this command and its syntax, see [Add-SPOTenantCdnOrigin](/powershell/module/sharepoint-online/Add-SPOTenantCdnOrigin).
+For more information about this command and its syntax, see [Add-SPOTenantCdnOrigin](/powershell/module/microsoft.online.sharepoint.powershell/add-spotenantcdnorigin).
 
 After you run the command, the system synchronizes the configuration across the datacenter. This result can take up to 15 minutes.
 
@@ -331,7 +331,7 @@ After you set up the CDN, you can make changes to your configuration as you upda
 
 After you complete the setup steps, you can add new assets, and update or remove existing assets whenever you want. Just make your changes to the assets in the folder or SharePoint library that you identified as an origin. If you add a new asset, it's available through the CDN immediately. However, if you update the asset, it takes up to 15 minutes for the new copy to propagate and become available in the CDN.
 
-If you need to retrieve the location of the origin, you can use the **Get-SPOTenantCdnOrigins** cmdlet. For information on how to use this cmdlet, see [Get-SPOTenantCdnOrigins](/powershell/module/sharepoint-online/Get-SPOTenantCdnOrigins).
+If you need to retrieve the location of the origin, you can use the **Get-SPOTenantCdnOrigins** cmdlet. For information on how to use this cmdlet, see [Get-SPOTenantCdnOrigins](/powershell/module/microsoft.online.sharepoint.powershell/get-spotenantcdnorigins).
 
 <a name="Office365CDNforSPORemoveOriginPosh"> </a>
 
@@ -343,7 +343,7 @@ You can remove access to a folder or SharePoint library that you identified as a
 Remove-SPOTenantCdnOrigin -OriginUrl <path> -CdnType <Public | Private | Both>
 ```
 
-For information on how to use this cmdlet, see [Remove-SPOTenantCdnOrigin](/powershell/module/sharepoint-online/Remove-SPOTenantCdnOrigin).
+For information on how to use this cmdlet, see [Remove-SPOTenantCdnOrigin](/powershell/module/microsoft.online.sharepoint.powershell/remove-spotenantcdnorigin).
 
 <a name="Office365CDNforSPOModifyOrigin"> </a>
 
@@ -363,7 +363,7 @@ To disable use of public origins in the CDN, enter the following command:
 Set-SPOTenantCdnEnabled -CdnType Public -Enable $false
 ```
 
-For more information about this cmdlet, see [Set-SPOTenantCdnEnabled](/powershell/module/sharepoint-online/Set-SPOTenantCdnEnabled).
+For more information about this cmdlet, see [Set-SPOTenantCdnEnabled](/powershell/module/microsoft.online.sharepoint.powershell/set-spotenantcdnenabled).
 
 </details>
 

@@ -1,23 +1,22 @@
 ---
 title: "Microsoft 365 admin center Microsoft 365 Copilot usage"
-ms.author: camillepack
-author: camillepack
-manager: scotv
+ms.author: cmcatee
+author: cmcatee-MSFT
+manager: dansimp
 ms.date: 01/14/2025
+ms.update-cycle: 180-days
 audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier2
-- scotvorg
 - M365-subscription-management
 - Adm_O365
-- Adm_NonTOC
 - m365copilot
 - magic-ai-copilot
-ms.custom: 
-- AdminSurgePortfolio
+- operations-pod
+ms.custom:
 - campaignIDs-batch1
 search.appverid:
 - BCS160
@@ -107,12 +106,14 @@ The following table lists the features included for active users of Copilot apps
 |              | Generate an Outlook email draft           | Selecting Copilot icon from the toolbar, selecting **Draft with Copilot**, typing prompt in Copilot box and submitting. (User experience is slightly different among web, Windows, Mac, or mobile.)                                                                        | [Draft an email message with Copilot in Outlook - Microsoft Support](https://support.microsoft.com/office/draft-an-email-message-with-copilot-in-outlook-3eb1d053-89b8-491c-8a6e-746015238d9b#ID0EDBH=New_Outlook)                                            |
 |              | Coach                                     | Selecting Copilot icon in the email message, choosing **Coaching by Copilot** and Copilot will review email and offer suggestions on improving the tone, clarity, and reader sentiment. (User experience is slightly different among web, Windows, Mac, or mobile.)       | [Email coaching with Copilot in Outlook - Microsoft Support](https://support.microsoft.com/office/email-coaching-with-copilot-in-outlook-91a3cd56-1586-4a31-85c7-2eb8cdb02405)                                                                                |
 |              | Copilot Chat (work)                                     | Going to the left side of Outlook web app, selecting Copilot from the apps list, typing a prompt and sending. This feature is included in the Outlook app level and all up Microsoft 365 active usage count effective August 28, 2024.      | [Get started with Microsoft 365 Copilot Chat](https://support.microsoft.com/topic/get-started-with-microsoft-365-copilot-business-chat-5b00a52d-7296-48ee-b938-b95b7209f737)                                                                                |
+|              | Copilot Chat (web)                          | Going to the left navigation of Outlook app, selecting Copilot from the apps list and select “Web” option at the top of the chat pane, typing a prompt into the chat window or selecting a suggested prompt and submitting. This feature is included in the Outlook app level and all up Microsoft 365 active usage count effective July 01, 2025.|  [Get started with Microsoft 365 Copilot Chat](https://support.microsoft.com/topic/get-started-with-microsoft-365-copilot-business-chat-5b00a52d-7296-48ee-b938-b95b7209f737)|
 |              | App Chat                                    | Going to top right corner of Outlook web app, selecting Copilot placed next to settings option, typing a prompt and sending. This feature is included in the Outlook app level and all up Microsoft 365 active usage count effective August 17, 2024.       | [Frequently asked questions about Copilot in Outlook](https://support.microsoft.com/office/frequently-asked-questions-about-copilot-in-outlook-07420c70-099e-4552-8522-7d426712917b)                                                                                |
 | Teams        | Summarizing key points during meetings       | Summarizing key discussion points during meeting using Copilot in Microsoft Teams.                                                                                                                                                                            | [Get started with Copilot in Microsoft Teams meetings - Microsoft Support](https://support.microsoft.com/office/get-started-with-copilot-in-microsoft-teams-meetings-0bf9dd3c-96f7-44e2-8bb8-790bedf066b1)                                                    |
 |              | Summarize chats and channel conversations | Typing a prompt or selecting a prompt from 'More prompts' in Copilot compose box in a chat or channel and submitting.                                                                                                                                                        | [Use Copilot in Microsoft Teams chat and channels - Microsoft Support](https://support.microsoft.com/office/use-copilot-in-microsoft-teams-chat-and-channels-cccccca2-9dc8-49a9-ab76-b1a8ee21486c)                                                            |
 |              | Rewrite and adjust messages               | Writing a message in message box, selecting **Rewrite/Adjust** in Copilot beneath the message box to rewrite/adjust the whole/specific selection of the message.                                                                                                          | [Rewrite and adjust your messages with Copilot in Microsoft Teams - Microsoft Support](https://support.microsoft.com/office/rewrite-and-adjust-your-messages-with-copilot-in-microsoft-teams-53315d9c-93be-45ab-9004-2f8205725cc7)              |
 |              | Intelligent Recap                         | Selecting **Recap** tab in the meeting chat for Teams calendar event and viewing the AI Notes section after the meeting ends (meeting is recorded and transcribed).                                                                   | [Get started with Microsoft 365 Copilot in Teams - Microsoft Support](https://support.microsoft.com/office/get-started-with-copilot-for-microsoft-365-in-teams-60c37fde-6e13-4412-8101-40bbbc711ec9)                                                                                            |
 |              | Copilot Chat (work)                       | Going to Chat on the left side of Teams, selecting Copilot from the top of your Teams chat list, typing a prompt and sending.             | [Get started with Microsoft 365 Copilot in Teams - Microsoft Support](https://support.microsoft.com/office/get-started-with-copilot-for-microsoft-365-in-teams-60c37fde-6e13-4412-8101-40bbbc711ec9)                                                                                            |
+|              | Copilot Chat (web)                        | Going to the left navigation of Teams app, selecting Copilot from the apps list and select “Web” option at the top of the chat pane, typing a prompt into the chat window or selecting a suggested prompt and submitting. This feature is included in the Teams app level and all up Microsoft 365 active usage count effective July 01, 2025.  |[Get started with Microsoft 365 Copilot in Teams - Microsoft Support](https://support.microsoft.com/office/get-started-with-copilot-for-microsoft-365-in-teams-60c37fde-6e13-4412-8101-40bbbc711ec9)  |
 | Word         | All Copilot in Word features are automatically included in the Microsoft 365 Copilot usage report. Usage of any Copilot in Word feature counts towards the Active users metric and is indicated in the per-user Last activity date (UTC).                                             |                                                                                                                                                                                                                                                                   |  To learn more about Copilot in Word features, refer to [Welcome to Copilot in Word - Microsoft Support](https://support.microsoft.com/office/welcome-to-copilot-in-word-2135e85f-a467-463b-b2f0-c51a46d625d1).                                                                                                                                                                                             |
 | Excel        |  All Copilot in Excel features are automatically included in the Microsoft 365 Copilot usage report. Usage of any Copilot in Excel feature counts towards the Active users metric and is indicated in the per-user Last activity date (UTC).                                |                       |   To learn more about Copilot in Excel features, refer to [Get started with Copilot in Excel - Microsoft Support](https://support.microsoft.com/office/get-started-with-copilot-in-excel-d7110502-0334-4b4f-a175-a73abdfc118a).                                                                                                                                                                                                                                                                     |
 | PowerPoint   | All Copilot in PowerPoint features are automatically included in the Microsoft 365 Copilot usage report. Usage of any Copilot in PowerPoint feature counts towards the Active users metric and is indicated in the per-user Last activity date (UTC).                |                                                                                                                                                                                                                                                                   | To learn more about Copilot in PowerPoint features, refer to [Welcome to Copilot in PowerPoint - Microsoft Support](https://support.microsoft.com/office/welcome-to-copilot-in-powerpoint-57133c75-24c0-4519-8096-d0dadf25fb8d).                                                                                                                                                                                               |
@@ -156,7 +157,7 @@ To ensure data quality, we perform daily data validation checks for the past thr
 |------|-------------|
 | User name                                      | The user's principal name.                                                                                                                    |
 | Display name                                   | The full name of the user.                                                                                                                    |
-| Last activity date (UTC (Universal Time Code)) | The latest date the user had activity in Microsoft 365 Copilot among all Microsoft 365 products, including any of the intentional activities, regardless of the selected time period of past 7/30/90/180 days. |
+| Last activity date (UTC (Universal Time Code)) | The most recent date on which the user sent a message to Microsoft 365 Copilot Chat in Teams, Outlook,  m365.cloud.microsoft/chat, Microsoft Edge, the Microsoft 365 Copilot (app), Word, Excel, PowerPoint, or OneNote. This date remains fixed even if the timeframe of the report is changed.  |
 | Last activity date of Teams Copilot (UTC)      | The latest date the user had activity in Microsoft Teams Copilot, including any of the intentional activities, regardless of the selected time period of past 7/30/90/180 days.                                |
 | Last activity date of Word Copilot (UTC)       | The latest date the user had activity in Word Copilot, including any of the intentional activities, regardless of the selected time period of past 7/30/90/180 days.                                            |
 | Last activity date of Excel Copilot (UTC)      | The latest date the user had activity in Excel Copilot, including any of the intentional activities, regardless of the selected time period of past 7/30/90/180 days.                                        |
@@ -170,14 +171,14 @@ To ensure data quality, we perform daily data validation checks for the past thr
 | Last activity date of Microsoft Edge (UTC)     | The latest date the user had activity in Copilot Chat in entry point Microsoft Edge, including any of the intentional activities, regardless of the selected time period of past 7/30/90/180 days.         |
 | Last activity date of any agent (UTC)   | The latest date the user had activity with an agent built by your org, regardless of the selected time period of past 7/30/90/180 days.      |
 
-## Make the user-specific data anonymous
+## Display user-specific data
 
-By default, usernames and display names in Microsoft 365 Copilot usage report are anonymous. And global administrator can update settings to unconceal usernames and display name.
+By default, usernames and display names in Copilot Search usage reports are anonymous. Global administrators can update the settings to reveal usernames and display names.
 
-1. In Microsoft 365 admin center, go to the **Settings** > **Org Settings**, and under the **Services** tab, choose **Reports**.
-
-2. Select **Reports**, and then update the setting “Display Concealed user, group, and site names in all reports”.
-3. Select **Save changes**.
+1. In the admin center, go to the **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Org Settings</a> page.
+2. Select the **Services** tab, then select **Reports**.
+3. In the **Reports** panel, select the checkbox next to **Display Concealed user, group, and site names in all reports**.
+4. Select **Save**.
 
 ## FAQ
 

@@ -1,12 +1,13 @@
 ---
 title: Import or export People Skills
 description: You can import skills for a user from third-party platforms and export a user's confirmed skills using the Microsoft Graph API.
-author: anibajaj 
-ms.author:   anirudhbajaj
+author: kwekuako
+ms.author: kwekua
+ms.collection: operations-pod
 manager: dansimp
 ms.service: microsoft-365-copilot
-ms.topic:  article
-ms.date:  05/29/2025
+ms.topic: article
+ms.date: 05/29/2025
 ---
 
 # Import or export People Skills

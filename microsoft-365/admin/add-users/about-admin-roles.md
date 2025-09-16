@@ -2,21 +2,22 @@
 title: "About admin roles in the Microsoft 365 admin center"
 f1.keywords:
 - CSH
-ms.author: kwekua
-author: kwekuako
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 ms.date: 04/02/2025
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
 ms.localizationpriority: high
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: 
+- trust-pod
+ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet

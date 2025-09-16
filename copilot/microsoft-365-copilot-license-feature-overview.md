@@ -3,23 +3,25 @@ title: Compare Microsoft 365 Copilot features in E3 and E5 licenses
 description: Lists and compares the features available in Microsoft 365 E3 and E5 licenses that can help you get your data ready for Microsoft 365 Copilot.
 f1.keywords:
 - NOCSH
-ms.author: mandia
-author: MandiOhlinger
-manager: laurawi
+ms.author: aaroncz
+author: aczechowski
+manager: dansimp
 ms.date: 01/28/2025
+ms.update-cycle: 180-days
 audience: Admin
 ms.reviewer: emilyblundo, sophieke
 ms.topic: get-started
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - scotvorg
 - m365copilot
 - magic-ai-copilot
 - essentials-overview
+- operations-pod
 ms.custom: [copilot-learning-hub]
 appliesto:
-  - ✅ Microsoft 365 Copilot
+- ✅ Microsoft 365 Copilot
 ---
 
 # Microsoft 365 license feature comparison list to address oversharing for Microsoft 365 Copilot

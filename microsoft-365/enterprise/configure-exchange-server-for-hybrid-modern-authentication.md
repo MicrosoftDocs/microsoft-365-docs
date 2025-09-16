@@ -73,7 +73,7 @@ Your Exchange servers must fulfill the following requirements before Hybrid Mode
 - Make sure that there are no end-of-life Exchange servers in the organization.
 - Exchange Server 2016 must be running CU8 or later.
 - Exchange Server 2019 must be running CU1 or later.
-- Make sure that all servers can connect to the internet. If a proxy is required, [configure Exchange Server to use it](/powershell/module/exchange/set-exchangeserver#-internetwebproxy).
+- Make sure that all servers can connect to the internet. If a proxy is required, [configure Exchange Server to use it](/powershell/module/exchangepowershell/set-exchangeserver#-internetwebproxy).
 - If you already have a hybrid configuration, make sure it's a classic hybrid deployment as modern hybrid doesn't support HMA.
 - Make sure that SSL Offloading is not used (it's unsupported). SSL Bridging, however, can be used and is supported.
 
@@ -169,7 +169,7 @@ InternalAuthenticationMethods : {Ntlm, OAuth, Negotiate}
 ExternalAuthenticationMethods : {Ntlm, OAuth, Negotiate}
 ```
 
-If OAuth is missing from any server and any of the five virtual directories, you need to add it by using the relevant commands before proceeding ([Set-MapiVirtualDirectory](/powershell/module/exchange/set-mapivirtualdirectory), [Set-WebServicesVirtualDirectory](/powershell/module/exchange/set-webservicesvirtualdirectory), [Set-OABVirtualDirectory](/powershell/module/exchange/set-oabvirtualdirectory), [Set-AutodiscoverVirtualDirectory](/powershell/module/exchange/set-autodiscovervirtualdirectory)), and [Set-ActiveSyncVirtualDirectory](/powershell/module/exchange/set-activesyncvirtualdirectory).
+If OAuth is missing from any server and any of the five virtual directories, you need to add it by using the relevant commands before proceeding ([Set-MapiVirtualDirectory](/powershell/module/exchangepowershell/set-mapivirtualdirectory), [Set-WebServicesVirtualDirectory](/powershell/module/exchangepowershell/set-webservicesvirtualdirectory), [Set-OABVirtualDirectory](/powershell/module/exchangepowershell/set-oabvirtualdirectory), [Set-AutodiscoverVirtualDirectory](/powershell/module/exchangepowershell/set-autodiscovervirtualdirectory)), and [Set-ActiveSyncVirtualDirectory](/powershell/module/exchangepowershell/set-activesyncvirtualdirectory).
 
 ## Confirm the EvoSTS Auth Server Object is Present
 

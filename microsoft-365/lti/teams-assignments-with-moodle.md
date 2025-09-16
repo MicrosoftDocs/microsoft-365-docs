@@ -1,8 +1,8 @@
 ---
 title: Integrate Teams Assignments with Moodle
 description: Integrate and use the Microsoft Teams Assignments learning tool interoperability (LTI) app with Moodle.
-author: DaniEASmith
-ms.author: danismith
+author: officedocspr5
+ms.author: odocspr
 manager: mimast
 ms.date: 02/12/2025
 ms.topic: article

@@ -19,7 +19,7 @@ description: "Learn how to configure custom domain support in Shared Bookings."
 
 Microsoft allows organizations to own more than one domain. The default domain is onmicrosoft.com. You can read more about domains and how to create them at [Add a domain to Microsoft 365](/microsoft-365/admin/setup/add-domain).
 
-You can specify which domain will be used from the domain list for Bookings using [OWA mailbox policy](/powershell/module/exchange/set-owamailboxpolicy?view=exchange-ps&preserve-view=true). Once the default domain policy is configured and deployed, any new booking calendars created will have the configured domain in the SMTP address.
+You can specify which domain will be used from the domain list for Bookings using [OWA mailbox policy](/powershell/module/exchangepowershell/set-owamailboxpolicy?view=exchange-ps&preserve-view=true). Once the default domain policy is configured and deployed, any new booking calendars created will have the configured domain in the SMTP address.
 
 For example: Shared Booking pages can be created with a domain “contoso.com” instead of “contoso.onmicrosoft.com”
 
@@ -70,7 +70,7 @@ To configure a custom domain for a specific user, follow the steps below after j
    New-OwaMailboxPolicy -Name “<custom-policy-name>”
    ```
 
-   For more information, see [New-OwaMailboxPolicy](/powershell/module/exchange/new-owamailboxpolicy?view=exchange-ps0&preserve-view=true).
+   For more information, see [New-OwaMailboxPolicy](/powershell/module/exchangepowershell/new-owamailboxpolicy?view=exchange-ps0&preserve-view=true).
 
 2. Configure the policy with a custom domain.
 
@@ -84,6 +84,6 @@ To configure a custom domain for a specific user, follow the steps below after j
    Set-CASMailbox -Identity <User-email-address>-OwaMailboxPolicy “<custom-policy-name>”
    ```
 
-   For more information, see [Set-CASMailbox](/powershell/module/exchange/set-casmailbox?view=exchange-ps&preserve-view=true).
+   For more information, see [Set-CASMailbox](/powershell/module/exchangepowershell/set-casmailbox?view=exchange-ps&preserve-view=true).
 
 When users with the custom OWA policy create a shared booking page, it will be created with the custom domain, and not the default domain.

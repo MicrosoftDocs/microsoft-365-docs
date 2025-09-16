@@ -278,7 +278,7 @@ Microsoft 365 has a [unified audit log](../compliance/search-the-audit-log-in-se
 Examples of Microsoft 365 logs that are accessed through other APIs include the following features:
 
 - [Microsoft Entra ID](/azure/azure-monitor/platform/diagnostic-settings) (activities not related to Microsoft 365)
-- [Exchange Message Tracking](/powershell/module/exchange/get-messagetracev2)
+- [Exchange Message Tracking](/powershell/module/exchangepowershell/get-messagetracev2)
 - Threat/UEBA Systems discussed previously (for example, Microsoft Entra ID Protection, Microsoft Defender for Cloud Apps, Microsoft Defender for Endpoint, and so on)
 - [Microsoft Purview Information Protection](../compliance/data-classification-activity-explorer.md)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/api-power-bi)

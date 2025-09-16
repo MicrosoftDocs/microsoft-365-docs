@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Microsoft 365 pay-as-you-go services documentation # < 60 chars
-summary: Pay-as-you-go services in Microsoft 365 provide organizations with flexible and cost-efficient solutions, allowing them to pay only for the services used.
+summary: Pay-as-you-go services in Microsoft 365 provide organizations with flexible and cost-efficient solutions, allowing you to pay only for the services used.
 metadata:
   title: Microsoft 365 pay-as-you-go services documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: This page contains links to some important information related to pay-as-you-go services in Microsoft 365. # Required; article description that is displayed in search results. < 160 chars.
@@ -12,10 +12,9 @@ metadata:
   ms.custom: intro-hub-or-landing
   author: chuckedmonson #Required; your GitHub user alias, with correct capitalization.
   ms.author: chucked #Required; microsoft alias of author; optional team alias.
-  ms.date: 06/27/2025 #Required; mm/dd/yyyy format
+  ms.date: 08/01/2025 #Required; mm/dd/yyyy format
   ms.localizationpriority: medium
-  titleSuffix: Microsoft 365
-
+ 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
 landingContent:
@@ -54,12 +53,12 @@ landingContent:
         links:
           - text: Microsoft 365 Copilot
             url: /sharepoint/microsoft-365-pay-as-you-go-pricing
-          - text: Microsoft Syntex
-            url: ../syntex/syntex-pay-as-you-go-services.md
+          - text: Document processing
+            url: ../documentprocessing/syntex-pay-as-you-go-services.md
           - text: Microsoft 365 Archive
-            url: ../syntex/syntex-pay-as-you-go-services.md#storage-services
+            url: ../documentprocessing/syntex-pay-as-you-go-services.md#storage-services
           - text: Microsoft 365 Backup
-            url: ../syntex/syntex-pay-as-you-go-services.md#storage-services
+            url: ../documentprocessing/syntex-pay-as-you-go-services.md#storage-services
 
 # Card 4
   - title: Microsoft 365 Copilot services
@@ -80,32 +79,32 @@ landingContent:
             url: ../backup/backup-overview.md
 
 # Card 6
-  - title: Document & image services
+  - title: Document processing services
     linkLists:
       - linkListType: overview
         links:
           - text: Autofill columns
-            url: ../syntex/autofill-overview.md
-          - text: Content assembly
-            url: ../syntex/content-assembly.md
+            url: ../documentprocessing/autofill-overview.md
           - text: Document translation
-            url: ../syntex/translation-overview.md
+            url: ../documentprocessing/translation-overview.md
           - text: eSignature
-            url: ../syntex/esignature-overview.md
-          - text: Image tagging
-            url: ../syntex/image-tagging-overview.md
+            url: ../documentprocessing/esignature-overview.md
           - text: Optical character recognition
-            url: ../syntex/ocr-overview.md
-          - text: Prebuilt document processing
-            url: ../syntex/prebuilt-overview.md
-          - text: Structured and freeform document processing
-            url: ../syntex/form-processing-overview.md
+            url: ../documentprocessing/ocr-overview.md
+          - text: Content assembly
+            url: ../documentprocessing/content-assembly.md
+          - text: Image tagging
+            url: ../documentprocessing/image-tagging-overview.md
           - text: Taxonomy tagging
-            url: ../syntex/taxonomy-tagging-overview.md
+            url: ../documentprocessing/taxonomy-tagging-overview.md
+          - text: Prebuilt document processing
+            url: ../documentprocessing/prebuilt-overview.md
+          - text: Structured and freeform document processing
+            url: ../documentprocessing/form-processing-overview.md
           - text: Unstructured document processing
-            url: ../syntex/document-understanding-overview.md
+            url: ../documentprocessing/document-understanding-overview.md
 
-# Card 8
+# Card 7
   - title: Video services
     linkLists:
       - linkListType: overview

@@ -1,9 +1,9 @@
 ---
 title: "Add-in deployment email alerts"
 f1.keywords: CSH
-ms.author: elizs
-author: ElizabethSamuel-MSFT
-manager: aljerabe
+ms.author: kwekua
+author: kwekuako
+manager: dansimp
 ms.reviewer: akshah
 ms.date: 06/14/2022
 audience: Admin
@@ -13,6 +13,7 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- operations-pod
 ms.custom:
 - AdminSurgePortfolio
 search.appverid: MET150

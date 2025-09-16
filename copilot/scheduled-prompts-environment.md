@@ -1,16 +1,18 @@
 ---
 title: "Microsoft 365 environment for Scheduled Prompts"
-ms.author: camillepack
-author: camillepack
+ms.author: aaroncz
+author: aczechowski
 manager: dansimp
 ms.date: 06/02/2025
+ms.update-cycle: 180-days
 audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - m365copilot
 - magic-ai-copilot
+- operations-pod
 description: "Learn about how the Microsoft 365 environment supports Scheduled Prompts with built-in governance, permissions, and lifecycle management."
 ---
 

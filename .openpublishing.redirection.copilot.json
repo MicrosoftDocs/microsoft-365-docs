@@ -9,6 +9,11 @@
          "source_path": "copilot/microsoft-365-copilot-search-privacy.md",
          "redirect_url": "/copilot/microsoft-365-copilot-search",
          "redirect_document_id": false
+      },
+      {
+         "source_path": "copilot/pin-copilot.md",
+         "redirect_url": "/copilot/microsoft-365/pin-copilot-chat-navbar",
+         "redirect_document_id": false
       }
    ]
 }

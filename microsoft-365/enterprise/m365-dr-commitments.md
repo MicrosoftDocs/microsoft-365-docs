@@ -22,12 +22,9 @@ ms.collection:
 # Advanced Data Residency Commitments
 
 > [!NOTE]
-> If you have purchased a Multi-Geo subscription, then Microsoft will store certain customer data at rest in more than one Geography based on your configuration even if you have purchased the Microsoft 365 Advanced Data Residency add-on ("ADR").
+> If you have purchased a _Multi-Geo_ subscription, then Microsoft will store certain customer data at rest in more than one _Geography_ based on your configuration even if you have purchased the _Microsoft 365 Advanced Data Residency add-on ("ADR")_.
 
-> [!NOTE]
-> Viva Topics has been retired as of February 22, 2025. Therefore, Viva Topics is no longer a supported workload in ADR. For more details, please visit [aka.ms/TopicsFebSupport](https://aka.ms/TopicsFebSupport).
-
-Microsoft makes commitments to store certain customer data at rest in the applicable _Local Region Geography_ for [eligible customers](advanced-data-residency.md#eligibility) that purchase ADR. The commitments are specified as follows.  
+Microsoft makes commitments to store certain customer data at rest in the applicable _Local Region Geography_ for [eligible customers](advanced-data-residency.md#eligibility) that purchase _ADR_. The commitments are specified as follows.
 
 ## Exchange Online
 
@@ -47,24 +44,24 @@ The following customer data is stored at rest in the _Local Region Geography_:
 
 - Microsoft Teams chat messages (including private messages, channel messages, meeting messages and images used in chats), and, for customers using Microsoft Stream (on SharePoint), meeting recordings
 
-## Microsoft 365 Copilot
+## Microsoft 365 Copilot and Microsoft 365 Copilot Chat
 
 The following customer data is stored at rest in the _Local Region Geography_:
 
-- Any stored content of interactions with Microsoft 365 Copilot to the extent not included in the preceding commitments.
+- Any stored content of interactions with Microsoft 365 Copilot and Microsoft 365 Copilot Chat to the extent not included in the preceding commitments.
 
 ## Microsoft Defender for Office P1
 
 The following customer data is stored at rest in the _Local Region Geography_:
 
-- MDO P1 doesn't store any customer data within its service.
-- Exchange Online Protection (EOP). The following customer data is stored at rest in the _Local Region Geography_: Service configuration data and policies, quarantined email and attachments, junk email, grading analysis, blocklists (url, tenant, user), spam domains, reports, and alerts
+- Microsoft Defender for Office 365 P1 doesn't store any customer data within its service.
+- Exchange Online Protection. The following customer data is stored at rest in the _Local Region Geography_: Service configuration data and policies, quarantined email and attachments, junk email, grading analysis, blocklists (url, tenant, user), spam domains, reports, and alerts.
 
-## Office for the Web
+## Microsoft 365 web apps (formerly known as "Office for the Web")
 
 The following customer data is stored at rest in the _Local Region Geography_:
 
-- Office for the Web stores files on a storage host that has its applicable promises to _Local Region Geography_.
+- Microsoft 365 web apps stores files on a storage host that has its applicable promises to _Local Region Geography_.
 
 ## Viva Connections
 

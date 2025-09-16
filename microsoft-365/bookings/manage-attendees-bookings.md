@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
+- operations-pod
 description: "Manage your group attendees in Microsoft. Add or remove customers from a booking."
 ---
 

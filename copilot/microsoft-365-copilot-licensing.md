@@ -2,21 +2,23 @@
 title: "License options for Microsoft 365 Copilot"
 f1.keywords:
 - NOCSH
-ms.author: camillepack
-author: camillepack
-manager: scotv
+ms.author: aaroncz
+author: aczechowski
+manager: dansimp
 ms.date: 05/20/2025
+ms.update-cycle: 180-days
 audience: Admin
 ms.topic: get-started
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - scotvorg
 - m365copilot
 - magic-ai-copilot
+- operations-pod
 description: Enterprise and company IT admins can add Microsoft 365 Copilot to their  Microsoft 365 subscription plans. This article describes the Microsoft 365 Copilot license plans that let you add Copilot and how to add them to your subscription.
 appliesto:
-  - ✅ Microsoft 365 Copilot
+- ✅ Microsoft 365 Copilot
 ---
 
 # License plans for Microsoft 365 Copilot
@@ -100,7 +102,7 @@ To add Microsoft 365 Copilot to your Microsoft 365 subscription, you need one of
   - Visio Plan 2
 
 - **Other plans:**
-  - Microsoft ClipChamp
+  - Microsoft Clipchamp
 
 ### Education Faculty and Higher Education Students Aged 18+ licenses
 
@@ -118,12 +120,12 @@ The following plans are only available using [Enrollment for Education Solutions
 
 ## Microsoft 365 Copilot Chat
 
-[Copilot Chat](/copilot/overview) is an AI prompt and response experience that's automatically included and available to organizations that have a Microsoft 365 subscription. There are two Copilot Chat options available: web-based chat and work-based chat.
+[Copilot Chat](/copilot/overview) is an AI prompt and response experience that's automatically included and available to organizations that have an [eligible Microsoft 365 subscription](/copilot/manage#microsoft-365--chat-eligibility). There are two Copilot Chat options available: web-based chat and work-based chat.
 
 - Web-based chat:
 
   - Shows results from the internet.
-  - Automatically included in your Microsoft 365 subscription with no extra cost.
+  - Automatically included with an [eligible Microsoft 365 subscription](/copilot/manage#microsoft-365--chat-eligibility) with no extra cost.
 
 - Work-based chat:
 
@@ -151,4 +153,4 @@ For more information, see:
 
 - [Microsoft 365 Copilot adoption guide and overview for IT admins](microsoft-365-copilot-reports-for-admins.md)
 - [Which Copilot is right for my organization?](which-copilot-for-your-organization.md)
-- [Start using Copilot in your Microsoft 365 apps](https://copilot.cloud.microsoft/prompts)
+- [Start using Copilot in your Microsoft 365 apps](https://m365.cloud.microsoft/copilot-prompts)

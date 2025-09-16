@@ -2,9 +2,9 @@
 title: "Microsoft 365 admin center activity reports"
 f1.keywords:
 - NOCSH
-ms.author: camillepack
-author: camillepack
-manager: scotv
+ms.author: cmcatee
+author: cmcatee-MSFT
+manager: dansimp
 ms.date: 05/12/2025
 audience: Admin
 ms.topic: overview
@@ -12,13 +12,12 @@ ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
 - Tier2
-- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- operations-pod
 ms.custom:
 - adminvideo
-- AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
 - MET150
@@ -32,10 +31,9 @@ description: "Get a periodic report of how people in your organization are using
 
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
-Microsoft 365 admin center activity reports enables you to get an insight on how people in your business are using Microsoft 365 services. For instance, you can determine who is using the service to the max limit, and who is barely using it and hence might not need Microsoft 365 license. Perpetual license model won't be included in the reports.
+Microsoft 365 admin center activity reports enable you to get an insight on how people in your business are using Microsoft 365 services. For instance, you can determine who is using the service to the maximum limit, and who is barely using it and hence might not need Microsoft 365 license. Perpetual license model aren't included in the reports.
   
-Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data won't exist for all reporting periods right away. The reports typically become available within 48 hours, but might sometimes take several days
-to become available.
+Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data doesn't exist for all reporting periods right away. The reports typically become available within 48 hours, but might sometimes take several days to become available.
 
 ## Watch: Act on a usage report in Microsoft 365
   
@@ -133,7 +131,7 @@ N/A<sup>2</sup>: The service isn't available in the environment; hence, there's 
 
 ## How to view licensing information
 
-- To see how many licenses you have assigned and unassigned, in the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
+- To see how many licenses you assigned and unassigned, in the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
 
 - To see who is licensed, unlicensed, or guest, in the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 
@@ -147,9 +145,9 @@ There are circumstances where new users show up as **unknown**. This is usually 
 
 ## Show user, group, or site details in the reports
 
-By default, user, group, or site details will be hidden for all reports.
+By default, user, group, or site details are hidden for all reports.
 
-Your user list will look like this:
+Your user list looks like this:
 
 ![Reports - anonymized user list.](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
 
@@ -159,7 +157,6 @@ Reports provide information about your organization's usage data. Starting Septe
 
 The org setting applies to:
 
-
 |Property  |Attributes  |
 |---------|---------|
 |Properties for user-level in many reports     | User IDs, Usernames, and User principal names         |
@@ -168,31 +165,30 @@ The org setting applies to:
 |Properties for Viva Engage group activity report     | Group name and Group admin          |
 |Properties for Teams team usage report     | Team names         |
 
-There are additional reports that follow this org setting. For example, some reports in Microsoft Teams admin center follow the same.
+There are other reports that follow this org setting. For example, some reports in Microsoft Teams admin center follow the same.
 
-You can revert this change for their tenant and show identifiable user, group, and site information if their organization's privacy practices allow it. It can be achieved in the Microsoft 365 admin center by following these steps:
+You can revert this change for your tenant and show identifiable user, group, and site information if your organization's privacy practices allow it.
 
-1. In the admin center, go to the **Settings** \> **Org Settings** \> **Services** page.
-
-2. Select **Reports**.
-
-3. Uncheck the statement **Display concealed user, group, and site names in all reports**, and then save your changes.
+1. In the admin center, go to the **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Org Settings</a> page.
+2. Select the **Services** tab, then select **Reports**.
+3. In the **Reports** panel, select the checkbox next to **Display Concealed user, group, and site names in all reports**.
+4. Select **Save**.
 
 Starting June 23, 2022, an API will gradually become available to all environments for admins to change this setting without needing to visit the Microsoft 365 admin center.
 
 For more information, see [adminReportSettings API](/graph/api/resources/adminreportsettings?view=graph-rest-beta&preserve-view=true).
 
-Two methods have been approved for this API:
+Two methods are approved for this API:
 
 :::image type="content" source="../../media/api-show-details.png" alt-text="API Methods.":::
 
-The report will only contain a Privacy Setting property. For more information on Graph API, see [Use the Microsoft Graph API](/graph/use-the-api). You can use the Software Development Kit (SDK) or directly call the API using any program language with network ability. We recommend using [Graph Explorer](/graph/graph-explorer/graph-explorer-overview).
+The report only contains a Privacy Setting property. For more information on Graph API, see [Use the Microsoft Graph API](/graph/use-the-api). You can use the Software Development Kit (SDK) or directly call the API using any program language with network ability. We recommend using [Graph Explorer](/graph/graph-explorer/graph-explorer-overview).
 
-It will take a few minutes for these changes to take effect on the reports in the **Reports** dashboard. This setting also applies to the Microsoft 365 usage reports in [Microsoft Graph](/graph/api/resources/report) and [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics) and to [the usage reports in Microsoft Teams Admin center](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). Showing identifiable user information is a logged event in the Microsoft Purview portal audit log.
+It takes a few minutes for these changes to take effect on the reports in the **Reports** dashboard. This setting also applies to the Microsoft 365 usage reports in [Microsoft Graph](/graph/api/resources/report) and [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics) and to [the usage reports in Microsoft Teams Admin center](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). Showing identifiable user information is a logged event in the Microsoft Purview portal audit log.
 
 ## What happens to usage data when a user account is deleted?
 
-Whenever you delete a user's account, Microsoft will delete that user's usage data within 30 days. Deleted users will still be included in the activity chart totals for the periods they were active in but won't appear in the User Details table.
+Whenever you delete a user's account, Microsoft deletes that user's usage data within 30 days. Deleted users are still included in the activity chart totals for the periods they were active in but don't appear in the User Details table.
 
 However, when you select a particular day, up to 28 days from the current date, the report shows the user's usage for that day in the User Details table.
 

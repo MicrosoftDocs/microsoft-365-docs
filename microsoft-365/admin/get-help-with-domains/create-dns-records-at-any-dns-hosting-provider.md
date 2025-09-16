@@ -2,9 +2,9 @@
 title: "Add DNS records to connect your domain"
 f1.keywords:
 - CSH
-ms.author: kvice
-author: kelleyvice-msft
-manager: scotv
+ms.author: kwekua
+author: kwekuako
+manager: dansimp
 ms.date: 03/18/2025
 audience: Admin
 ms.topic: how-to
@@ -19,6 +19,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
+- operations-pod
 search.appverid:
 - MET150
 description: "Connect a domain at any DNS hosting provider to Microsoft 365 by verifying your domain and updating the DNS records in your registrar’s account."

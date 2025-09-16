@@ -2,8 +2,8 @@
 title: "Prevent guests from being added to a specific group"
 ms.reviewer: rahulnayak
 ms.date: 12/02/2023
-author: DaniEASmith
-ms.author: danismith
+author: officedocspr5
+ms.author: odocspr
 manager: jtremper
 audience: Admin
 ms.topic: how-to

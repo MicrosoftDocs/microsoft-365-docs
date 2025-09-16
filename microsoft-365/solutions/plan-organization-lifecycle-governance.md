@@ -2,8 +2,8 @@
 title: Plan organization and lifecycle governance for Microsoft 365 groups and Microsoft Teams
 ms.reviewer: rahulnayak
 ms.date: 07/28/2023
-author: DaniEASmith
-ms.author: danismith
+author: officedocspr5
+ms.author: odocspr
 manager: jtremper
 audience: Admin
 ms.topic: article

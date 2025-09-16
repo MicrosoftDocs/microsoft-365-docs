@@ -1,10 +1,11 @@
 ---
 title: Responsible AI FAQ for Microsoft 365 Copilot Tuning
 f1.keywords:
-ms.author: emrek
-author: emrekiciman
-manager: calvind
+ms.author: kwekua
+author: kwekuako
+manager: dansimp
 ms.date: 06/17/2025
+ms.update-cycle: 180-days
 audience: Admin
 ms.topic: faq
 ms.service: microsoft-365-copilot
@@ -12,6 +13,8 @@ ms.localizationpriority: medium
 ms.collection:
 - m365copilot
 - magic-ai-copilot
+- trust-pod
+- operations-pod
 description: Get answers to frequently asked questions about responsible AI and Microsoft 365 Copilot Tuning
 ---
 

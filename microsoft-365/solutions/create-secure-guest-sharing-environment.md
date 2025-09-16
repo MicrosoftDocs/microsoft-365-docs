@@ -1,7 +1,7 @@
 ---
 title: Create a more secure guest sharing environment
-author: DaniEASmith
-ms.author: danismith
+author: officedocspr5
+ms.author: odocspr
 manager: jtremper
 ms.date: 05/30/2024
 audience: ITPro

@@ -1,10 +1,12 @@
 ---
-title: Use Microsoft Teams classes with Canvas
-author: DaniEASmith
-ms.author: danismith
-manager: jacktremper
+title: Use Microsoft Teams with Canvas
+author: jennplatt
+ms.author: avering
+manager: michal.gideoni
 ms.reviewer: sovaish
-ms.date: 05/26/2021
+last.review.by: avering
+last.review.date: 07/07/2025
+ms.date: 07/07/2025
 audience: admin
 ms.topic: how-to
 ms.service: msteams
@@ -16,26 +18,26 @@ ms.collection:
 - tier2
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Integrate Microsoft Teams classes with Canvas"
+description: "Integrate Microsoft Teams with Canvas"
 ---
 
-# Use Microsoft Teams classes with Canvas
+# Use Microsoft Teams with Canvas
 
-Microsoft Teams classes is a Learning Tools Interoperability (LTI) app that helps educators and students easily navigate between their Learning Management System (LMS) and Teams. Users can access their class teams associated with their course directly from within their LMS.
+Microsoft Teams is a Learning Tools Interoperability (LTI) app that helps educators and students easily navigate between their Learning Management System (LMS) and Teams. Users can access their class teams associated with their course directly from within their LMS.
 
 ## Prerequisites Before Deployment
 
 > [!NOTE]
-> The current Teams classes LTI only supports syncing Canvas users with Microsoft Entra ID in a limited scope.
+> The current Teams only supports syncing Canvas users with Microsoft Entra ID in a limited scope.
 >
 > - Your tenant must have a Microsoft Education license (A1 or higher).
 > - A single Microsoft tenant only can be used for mapping users between Canvas and Microsoft.
-> - Your tenant must have an exact match between a Canvas field (email, Unique User ID, SIS ID, or Integration ID) and a field in Microsoft Entra ID (User Principal Name (UPN), Primary Email Address (Mail), or Email Alias (mailNickname)).
+> - Your tenant must have an exact match between a Canvas field (email, Unique User ID, SIS ID, or Integration ID) and a field in Microsoft Entra ID (User Principal Name (UPN), Primary Email Address (Mail), or Email Alias (mailNickname).
 > - You must disable the Team Creation Option in School Data Sync (SDS) and perform a [Group Cleanup](/schooldatasync/group-cleanup) to avoid duplication of classes, if you use SDS to create classes and groups. SDS can still be used to sync organization and user data.
 
 ## Enable the Microsoft Teams app in Canvas
 
-To begin the integration, you need to enable the app in Canvas by enabling the developer keys, enabling the Microsoft Teams Sync, and approving the Microsoft-Teams-Sync-for-Canvas app. Note that approving the app can only be performed by a Microsoft tenant admin that can approve apps.
+To begin the integration, you need to enable the app in Canvas by enabling the developer keys, enabling the Microsoft Teams Sync, and approving the Microsoft-Teams-Sync-for-Canvas app. Approving the app can only be performed by a Microsoft tenant admin that can approve apps.
 
 **To enable Microsoft Teams Sync and approve access for the app**:
 
@@ -43,7 +45,7 @@ To begin the integration, you need to enable the app in Canvas by enabling the d
 
 2. Select the **Admin** link in the global navigation, and then select your account.
 3. In the admin navigation, select the **Developer Keys** link, and then select the **Inherited** tab.
-4. Enable the LTI apps you are going to deploy by selecting the **ON** state for each of the appropriate apps.
+4. Enable the LTI apps you're going to deploy by selecting the **ON** state for each of the appropriate apps.
 
 5. In the admin navigation, select the **Settings** link, and then the **Integrations** tab.
 
@@ -72,29 +74,3 @@ To begin the integration, you need to enable the app in Canvas by enabling the d
    > This step must be performed by a Microsoft tenant admin that can approve apps.
 
 10. Select **Accept**.
-
-## Integrate Teams classes LTI in Canvas
-
-After enabling the sync and approving the Azure app, the Canvas admin can now add the Teams classes LTI app to the Canvas environment so it will appear in the navigation of the Canvas user interface.
-
-**To add the Teams classes LTI app to the Canvas environment**:
-
-1. On the **Apps** tab in **Admin settings**, select **+ App** to add the Teams LTI apps.
-
-   ![external-apps.](media/external-apps.png)
-
-2. For **Configuration Type**, select **By Client ID**.
-
-   ![add app.](media/add-app.png)
-
-3. For **Client ID**, enter **170000000000570** for the Microsoft Teams classes LTI, and then select **Submit**.
-
-4. In the confirmation that appears, verify the app name (Microsoft Teams classes), and then select **Install**.
-
-   The Microsoft Teams classes LTI app is now added to the list of external apps.
-
-## Enabling the LTI app for Canvas courses
-
-To use the LTI app within a course, an instructor of the Canvas course must enable integrations sync. Each course must be enabled by an instructor for a corresponding team to be created; there is no global mechanism for teams creation. This is designed as a precautionary measure to prevent unwanted teams from being created.
-
-Refer your instructors to the [educator documentation](https://support.microsoft.com/topic/use-microsoft-teams-classes-in-your-lms-preview-ac6a1e34-32f7-45e6-b83e-094185a1e78a#ID0EBD=Instructure_Canvas) for enabling the LTI app for each course and completing the integration setup.

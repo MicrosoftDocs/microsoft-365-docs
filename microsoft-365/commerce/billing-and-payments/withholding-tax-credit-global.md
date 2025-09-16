@@ -4,21 +4,22 @@ f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
-manager: scotv
+manager: dansimp
 ms.reviewer: jkinma, ramagane
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-management
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
+- operations-pod
 search.appverid: MET150
-description: "Learn how to request a credit on your account for Withholding Tax you paid." 
-ms.custom: 
+description: "Learn how to request a credit on your account for Withholding Tax you paid."
+ms.custom:
 - commerce_billing
 - AdminSurgePortfolio
 ms.date: 05/04/2025

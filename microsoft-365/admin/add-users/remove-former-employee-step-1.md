@@ -2,29 +2,30 @@
 title: "Step 1 - Prevent a former employee from logging in and block access to Microsoft 365 services"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekuako
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 ms.date: 01/06/2025
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
 - SPO_Content
+- trust-pod
 ms.custom:
-  - MSStore_Link
-  - TRN_M365B
-  - OKR_SMB_Videos
-  - AdminSurgePortfolio
-  - m365solution-removeemployee
-  - admindeeplinkEXCHANGE
-  - has-azure-ad-ps-ref, azure-ad-ref-level-one-done
+- MSStore_Link
+- TRN_M365B
+- OKR_SMB_Videos
+- AdminSurgePortfolio
+- m365solution-removeemployee
+- admindeeplinkEXCHANGE
+- has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 description: "Block a former employee from logging in and block their access to Microsoft 365 services."
 ---
 

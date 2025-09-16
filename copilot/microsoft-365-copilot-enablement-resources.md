@@ -3,20 +3,22 @@ title: Microsoft 365 Copilot adoption and onboarding guide for IT admins
 description: Enterprise and company IT admins can use this adoption and onboarding guide to allow Microsoft 365 Copilot in their organization. This guide provides an overview, including getting your data ready, choosing a license, setting up Microsoft 365 apps and network, assigning Copilot licenses, and sending a welcome email to users.
 f1.keywords:
 - NOCSH
-ms.author: camillepack
-author: camillepack
-manager: scotv
+ms.author: efrene
+author: Efrene
+manager: dansimp
 ms.date: 05/20/2025
+ms.update-cycle: 180-days
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - scotvorg
 - m365copilot
 - magic-ai-copilot
+- operations-pod
 appliesto:
-  - ✅ Microsoft 365 Copilot
+- ✅ Microsoft 365 Copilot
 ---
 
 # Microsoft 365 Copilot adoption guide and overview for IT admins

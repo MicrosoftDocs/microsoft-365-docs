@@ -13,6 +13,8 @@ items:
       href: cpcn-loop-requirements.md
     - name: SharePoint Embedded management
       href: cpcn-loop-spe-management.md
+    - name: Purview management
+      href: cpcn-loop-purview-management.md
     - name: Permissions
       href: cpcn-loop-permission.md
 - name: Microsoft Loop

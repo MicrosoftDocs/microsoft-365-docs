@@ -3,7 +3,7 @@ metadata:
   title: "Microsoft Workplace Discount Program FAQ"
   author: cmcatee-MSFT
   ms.author: cmcatee
-  manager: scotv
+  manager: dansimp
   ms.reviewer: mijeffer, nicholak
   audience: Admin
   ms.topic: faq
@@ -15,6 +15,7 @@ metadata:
   - scotvorg
   - M365-subscription-management
   - Adm_O365
+  - operations-pod
   ms.custom: 
   - commerce_subscriptions
   - okr_SMB

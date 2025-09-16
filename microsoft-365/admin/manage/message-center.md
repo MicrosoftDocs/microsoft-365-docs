@@ -4,7 +4,7 @@ f1.keywords:
 - CSH
 ms.author: kwekua
 author: kwekuako
-manager: scotv
+manager: dansimp
 ms.date: 04/10/2025
 audience: Admin
 ms.topic: how-to
@@ -15,6 +15,7 @@ ms.collection:
 - scotvorg
 - M365-subscription-management
 - Adm_O365
+- operations-pod
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb

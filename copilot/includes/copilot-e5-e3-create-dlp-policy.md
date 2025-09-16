@@ -1,7 +1,7 @@
 ---
-author: MandiOhlinger
-ms.author: mandia
-manager: laurawi
+author: maggierui
+ms.author: ruihu
+manager: dansimp
 ms.reviewer: chrfox
 ms.service: microsoft-365-copilot
 ms.topic: include

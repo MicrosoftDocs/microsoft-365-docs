@@ -1,0 +1,115 @@
+### YamlMime:Landing
+
+title: Document processing for Microsoft 365 documentation # < 60 chars
+summary: Document processing for Microsoft 365 is a set of pay-as-you-go services that uses advanced content AI to provide end-to-end intelligent document processing solutions for your organization.
+metadata:
+  title: Document processing for Microsoft 365 documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: This page contains links to some important information related to document processing services for Microsoft 365. Start here to learn about document processing services for Microsoft 365. # Required; article description that is displayed in search results. < 160 chars.
+  services: 
+  ms.service: microsoft-syntex #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page # Required
+  ms.collection: m365initiative-syntex, essentials-navigation
+  ms.custom: intro-hub-or-landing
+  author: chuckedmonson #Required; your GitHub user alias, with correct capitalization.
+  ms.author: chucked #Required; microsoft alias of author; optional team alias.
+  ms.date: 08/01/2025 #Required; mm/dd/yyyy format
+  ms.localizationpriority: medium
+  titleSuffix: Microsoft 365
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+# Card 1
+  - title: Autofill columns
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Overview of autofill columns
+            url: autofill-overview.md
+          - text: Set up autofill columns
+            url: autofill-setup.md
+          - text: Start using autofill columns
+            url: autofill.md
+
+# Card 2
+  - title: Document translation
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Overview of document translation
+            url: translation-overview.md
+          - text: Set up document translation
+            url: translation-setup.md
+          - text: Start using document translation
+            url: translation.md
+
+# Card 3
+  - title: eSignature
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Overview of eSignature
+            url: esignature-overview.md
+          - text: Set up eSignature
+            url: esignature-setup.md
+          - text: Start using eSignature
+            url: esignature-send-requests.md
+
+# Card 4
+  - title: Optical character recognition
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Overview of optical character recognition
+            url: ocr-overview.md
+          - text: Set up optical character recognition
+            url: ocr.md
+
+# Card 5
+  - title: Other document processing services
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Content assembly
+            url: content-assembly.md
+          - text: Image tagging
+            url: image-tagging-overview.md
+          - text: Taxonomy tagging
+            url: taxonomy-tagging-overview.md
+          - text: Prebuilt models
+            url: prebuilt-overview.md
+          - text: Structured & freeform models
+            url: form-processing-overview.md
+          - text: Unstructured models
+            url: document-understanding-overview.md
+
+# Card 6
+  - title: Other features
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Annotations
+            url: annotations.md
+          - text: Content query
+            url: metadata-search.md
+          - text: Processing rules
+            url: content-processing-overview.md
+          - text: Solution accelerators
+            url: site-templates.md
+          - text: Taxonomy tools
+            url: import-term-set-skos.md
+
+# Card 7
+  - title: Get support
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Tech Community blog
+            url: https://techcommunity.microsoft.com/t5/sharepoint-syntex-blog/bg-p/SharePointSyntex
+          - text: FAQ
+            url: https://www.microsoft.com/microsoft-365/enterprise/microsoft-syntex-plan?activetab=pivot:faqtab&rtc=1
+
+
+

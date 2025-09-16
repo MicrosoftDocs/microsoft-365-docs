@@ -4,23 +4,24 @@ f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
-manager: scotv
-ms.reviewer: sinakassaw, nicholak
+manager: dansimp
+ms.reviewer: nicholak
 audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
 - Adm_o365
-ms.custom: 
+- operations-pod
+ms.custom:
 - commerce_licensing
 - original owners paprud, marketing
 search.appverid: MET150
 description: "Learn about Microsoft 365 E3 and E5 Extra Features and how to assign licenses for it to your users."
-ms.date: 04/13/2025
+ms.date: 07/12/2025
 ---
 
 # Understand the Microsoft 365 E3 and E5 Extra Features license

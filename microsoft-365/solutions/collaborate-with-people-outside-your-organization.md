@@ -1,7 +1,7 @@
 ---
 title: "Collaborating with people outside your organization"
-author: DaniEASmith
-ms.author: danismith
+author: officedocspr5
+ms.author: odocspr
 manager: jtremper
 ms.date: 10/28/2024
 audience: ITPro

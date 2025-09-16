@@ -2,15 +2,15 @@
 title: "Reset passwords"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekuako
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 ms.date: 04/02/2025
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
 - highpri
@@ -18,17 +18,18 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - must-keep
+- trust-pod
 ms.custom:
-  - VSBFY23
-  - TopSMBIssues
-  - MSStore_Link
-  - TRN_M365B
-  - OKR_SMB_Videos
-  - AdminSurgePortfolio
-  - AdminTemplateSet
-  - business_assist
-  - adminvideo
-  - has-azure-ad-ps-ref
+- VSBFY23
+- TopSMBIssues
+- MSStore_Link
+- TRN_M365B
+- OKR_SMB_Videos
+- AdminSurgePortfolio
+- AdminTemplateSet
+- business_assist
+- adminvideo
+- has-azure-ad-ps-ref
 description: "Sign in with your Microsoft 365 admin account to reset passwords for users when you have a Microsoft 365 for business subscription."
 ---
 

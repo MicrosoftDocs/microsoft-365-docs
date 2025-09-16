@@ -9,6 +9,7 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
 - scotvorg
+- operations-pod
 ms.custom: QuickDraft  
 ms.reviewer: kwekua  
 search.appverid: MET150  

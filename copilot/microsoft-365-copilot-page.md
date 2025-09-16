@@ -3,21 +3,23 @@ title: Microsoft 365 admin center scenarios that configure Copilot
 description: Learn about some of the Microsoft 365 Copilot scenarios and some settings that IT admins can configure using the Copilot Control System in the Microsoft 365 admin center.
 f1.keywords:
 - NOCSH
-ms.author: camillepack
-author: camillepack
-manager: scotv
+ms.author: aaroncz
+author: aczechowski
+manager: dansimp
 ms.date: 04/09/2025
+ms.update-cycle: 180-days
 ms.reviewer: elvaf
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - scotvorg
 - m365copilot
 - magic-ai-copilot
+- operations-pod
 appliesto:
- - ✅ Microsoft 365 Copilot
+- ✅ Microsoft 365 Copilot
 ---
 
 # Manage Microsoft 365 Copilot scenarios in the Microsoft 365 admin center
@@ -26,15 +28,15 @@ When [Microsoft 365 Copilot](microsoft-365-copilot-overview.md) is available in 
 
 The admin center also gives shortcuts to other services that can affect how Copilot is used in your organization.
 
+The following video is an overview of managing Microsoft 365 Copilot for your organization. It's 1 minute and 45 seconds long.
+
+> [!VIDEO 4ad48e80-9329-41fd-8d63-0b443281ec92]
+
 This article is for IT administrators, and lists some of the Copilot scenarios you can control in the Microsoft 365 admin center.
-
-This article applies to:
-
-- Microsoft 365 Copilot
 
 > [!NOTE]
 >
-> - If you're an end user on a work device, then it's possible your IT admin group turned on Copilot for you. The [Copilot Prompt Gallery](https://copilot.cloud.microsoft/prompts) can help you get started.
+> - If you're an end user on a work device, then it's possible your IT admin group turned on Copilot for you. The [Copilot Prompt Gallery](https://m365.cloud.microsoft/copilot-prompts) can help you get started.
 >
 > - If you're an end user on a personal device, then you might automatically get Microsoft Copilot, which is the free consumer version. To learn more, see [How can Copilot help you?](https://www.microsoft.com/microsoft-copilot/for-individuals) and [Welcome to Copilot on Windows](https://support.microsoft.com/windows/welcome-to-copilot-on-windows-675708af-8c16-4675-afeb-85a5a476ccb0).
 
@@ -324,7 +326,7 @@ When Copilot Chat is pinned, it makes it easier for people in your organization 
 
 To learn more, see:
 
-- [Pin Microsoft 365 Copilot Chat to the navigation bar](pin-copilot.md)
+- [Pin Microsoft 365 Copilot Chat to the navigation bar](pin-copilot-chat-navbar.md)
 - [Pin apps to the taskbar](/windows/configuration/taskbar/pinned-apps)
 
 ### Web search for Microsoft 365 Copilot and Microsoft Copilot

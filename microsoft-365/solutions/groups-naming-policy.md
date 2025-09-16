@@ -3,8 +3,8 @@ title: Microsoft 365 Groups and Microsoft Teams naming policy
 ms.reviewer: rahulnayak
 ms.date: 06/26/2024
 f1.keywords: NOCSH
-author: DaniEASmith
-ms.author: danismith
+author: officedocspr5
+ms.author: odocspr
 manager: jtremper
 audience: Admin
 ms.topic: article

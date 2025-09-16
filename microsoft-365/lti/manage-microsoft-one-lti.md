@@ -1,7 +1,7 @@
 ---
 title: Manage Microsoft LMS Gateway for any LMS
-author: DaniEASmith
-ms.author: danismith
+author: officedocspr5
+ms.author: odocspr
 manager: jacktremper
 ms.reviewer: amitman 
 ms.date: 04/04/2022

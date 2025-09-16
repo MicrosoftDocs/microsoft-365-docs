@@ -79,7 +79,6 @@ Microsoft Entra ID provides a full suite of identity management and security cap
 |[Microsoft Entra ID Protection](/azure/active-directory/identity-protection/overview)|Enables you to detect potential vulnerabilities affecting your organization's identities and configure automated remediation policy to low, medium, and high sign-in risk and user risk. This guidance relies on this risk evaluation to apply Conditional Access policies for multifactor authentication. This guidance also includes a Conditional Access policy that requires users to change their password if high-risk activity is detected for their account.|Microsoft 365 E5, Microsoft 365 E3 with the E5 Security add-on, EMS E5, or Microsoft Entra ID P2 licenses|
 |[Self-service password reset (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks)|Allow your users to reset their passwords securely and without help-desk intervention, by providing verification of multiple authentication methods that the administrator can control.|Microsoft 365 E3 or E5|
 |[Microsoft Entra password protection](/azure/active-directory/authentication/concept-password-ban-bad)|Detect and block known weak passwords and their variants and additional weak terms that are specific to your organization. Default global banned password lists are automatically applied to all users in a Microsoft Entra tenant. You can define additional entries in a custom banned password list. When users change or reset their passwords, these banned password lists are checked to enforce the use of strong passwords.|Microsoft 365 E3 or E5|
-|
 
 ## Next steps
 
@@ -104,14 +103,6 @@ To manage your Microsoft cloud identity deployment, see:
 - [Groups](manage-microsoft-365-groups.md)
 - [Governance](manage-microsoft-365-identity-governance.md)
 - [Directory synchronization](view-directory-synchronization-status.md)
-
-### How Microsoft does identity for Microsoft 365
-
-Learn how IT experts at Microsoft [manage identities and secure access](https://www.microsoft.com/en-us/itshowcase/managing-user-identities-and-secure-access-at-microsoft).
-
->[!Note]
->This IT Showcase resource is available only in English.
->
 
 ### How Contoso did identity for Microsoft 365
 

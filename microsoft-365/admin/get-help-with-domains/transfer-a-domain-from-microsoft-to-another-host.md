@@ -2,9 +2,9 @@
 title: "Transfer a domain from Microsoft to another host"
 f1.keywords:
 - NOCSH
-ms.author: kvice
-author: kelleyvice-msft
-manager: scotv
+ms.author: kwekua
+author: kwekuako
+manager: dansimp
 ms.date: 03/18/2025
 audience: Admin
 ms.topic: how-to
@@ -13,12 +13,13 @@ ms.subservice: m365-domains
 ms.localizationpriority: medium
 ms.collection:
 - Tier2
-- scotvorg 
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
-ms.custom: 
+- operations-pod
+ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - BCS160

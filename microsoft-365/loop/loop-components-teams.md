@@ -1,7 +1,7 @@
 ---
 title: Overview of Loop components in the Microsoft 365 ecosystem
-ms.author: jenz
-author: jenzamora
+ms.author: odocspr
+author: officedocspr5
 manager: jtremper
 audience: Admin
 ms.topic: concept-article

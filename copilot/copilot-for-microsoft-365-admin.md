@@ -2,28 +2,36 @@
 title: "Copilot in Microsoft 365 admin centers"
 f1.keywords:
 - NOCSH
-ms.author: camillepack
-author: camillepack
-manager: scotv
+ms.author: aaroncz
+author: aczechowski
+manager: dansimp
 ms.date: 05/01/2025
+ms.update-cycle: 180-days
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier2
 - scotvorg
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
 - Adm_TOC
 - m365copilot
 - magic-ai-copilot
+- operations-pod
 description: "Learn about Copilot in Microsoft 365 admin centers and how it can help simplify admin tasks."
 ---
 
 # Copilot in Microsoft 365 admin centers
 
 Copilot in Microsoft 365 admin centers harnesses the value of generative AI to boost IT admins' productivity by simplifying administration of Microsoft 365 and Microsoft 365 Copilot, and empowering you to focus on more strategic priorities. Copilot in Microsoft 365 admin centers helps admins perform tasks across different Microsoft 365 services using natural language interactions, contextual guidance, and proactive suggestions. Copilot in Microsoft 365 admin centers also leverages the power of Copilot to provide transferable skills across different admin centers and surfaces, breaking the barriers of switching between multiple admin tools and interfaces.
+
+
+## Microsoft 365 Copilot in the Microsoft 365 admin center
+Watch the following video to see the different Microsoft 365 Copilot settings and configuration options in the Microsoft 365 admin center. 
+ 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=28be8725-2d69-4d93-a07d-8324c5083c46]
 
 ## Before you begin
 
@@ -57,7 +65,7 @@ The following table describes what you can do with Microsoft:
 | Onboard users | Onboard users to your organization with one prompt. Copilot can help with adding a new user by leveraging the information you provide in a prompt in combination with the data it has about the tenant (like domains and licenses). Copilot can seamlessly recommend a configuration for this new user, which saves time. | *"Onboard John Smith as a new user to my organization"* |
 | Admin recap | See Admin recap to get a personalized and concise summary of key insights and trends across admin areas, such as Service Health, Message Center, Experience Insights, and more to save valuable time. Admin recap is personalized based on your role and usage patterns. You can copy the text for easier sharing and also personalize what shows in the recap. | *"Recap the latest admin info for me"* |
 
-Try using the prepopulated prompt options in the Copilot pane for the best results. You can also explore the [Copilot Prompt Gallery](https://copilot.cloud.microsoft/prompts), which provides a library of prompts specifically designed for Copilot in Microsoft 365 admin centers. With Copilot Prompt Gallery, you can experiment with Copilot's capabilities, easily filter prompts by categories, and even save your favorite prompts for later use.
+Try using the prepopulated prompt options in the Copilot pane for the best results. You can also explore the [Copilot Prompt Gallery](https://m365.cloud.microsoft/copilot-prompts), which provides a library of prompts specifically designed for Copilot in Microsoft 365 admin centers. With Copilot Prompt Gallery, you can experiment with Copilot's capabilities, easily filter prompts by categories, and even save your favorite prompts for later use.
 
 To maintain your security and privacy, Copilot doesn't make any configuration changes on your behalf. To learn more about security and privacy with Copilot, see [Data, Privacy, and Security for Microsoft 365 Copilot](microsoft-365-copilot-privacy.md).
 

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
-manager: scotv
+manager: dansimp
 ms.reviewer: enuviadenu, socheng
 audience: Admin
 ms.topic: article
@@ -16,6 +16,7 @@ ms.collection:
 - scotvorg
 - M365-subscription-management
 - Adm_O365
+- operations-pod
 ms.custom:
 - commerce_signup
 - AdminSurgePortfolio

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: kwekua
 author: kwekuako
-manager: scotv
+manager: dansimp
 ms.date: 01/06/2025
 audience: Admin
 ms.topic: how-to
@@ -14,6 +14,7 @@ ms.collection:
 - Tier1
 - scotvorg
 - Adm_TOC
+- operations-pod
 ms.custom:
 - AdminSurgePortfolio
 description: "Accept an email invitation to join a Microsoft 365 Business Standard organization using an Outlook, Yahoo, Gmail or other account."

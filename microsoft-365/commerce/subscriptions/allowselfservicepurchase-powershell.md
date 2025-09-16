@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
-manager: scotv
+manager: dansimp
 ms.reviewer: shegu, nicholak
 audience: Admin
 ms.topic: how-to
@@ -16,7 +16,8 @@ ms.collection:
 - scotvorg
 - M365-subscription-management
 - Adm_O365
-ms.custom: 
+- operations-pod
+ms.custom:
 - commerce_ssp
 - AdminSurgePortfolio
 - campaignIDs-batch1

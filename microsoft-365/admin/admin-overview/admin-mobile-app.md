@@ -4,20 +4,21 @@ f1.keywords:
 - NOCSH
 ms.author: kwekua
 author: kwekuako
-manager: scotv
+manager: dansimp
 ms.date: 04/02/2025
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier2
 - scotvorg
 - highpri
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
 - Adm_TOC
 - must-keep
+- operations-pod
 ms.custom:
 - VSBFY23
 - TRN_M365B
@@ -73,9 +74,6 @@ The admin app has a lot of capabilities that allows you to manage Microsoft 365 
 
 If you're an admin and you're responsible for more than one Microsoft 365 organization, you can sign in to multiple organizations and quickly switch between them. The app supports dark theme and is available in 39 languages.
   
-> [!IMPORTANT]
-> If you're having issues using the Admin mobile app on iOS or Android, email us at [feedback365@microsoft.com](mailto:feedback365@microsoft.com) to let us know.
-
 ## Frequently asked questions
 
 Below are answers to frequently asked questions.
@@ -139,7 +137,7 @@ Email [feedback365@microsoft.com](mailto:feedback365@microsoft.com) to report an
 
 ## Next steps
 
-Once you've downloaded the admin mobile, you can add users to get you started.
+Once you've downloaded the admin mobile app, you can add users to get you started.
   
 ## Related content
 

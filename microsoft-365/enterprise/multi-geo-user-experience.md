@@ -51,7 +51,7 @@ Users have their OneDrive provisioned in their preferred data location. If a use
 
 The OneDrive iOS and Android mobile apps show you your OneDrive files and files shared with you regardless of their _Geography_ location. Searches from the OneDrive mobile apps show relevant results from all _Geography_ locations. Download the latest version of these apps.
 
-For more information, see [Use OneDrive on iOS](https://support.office.com/article/08d5c5b2-ccc6-40eb-a244-fe3597a3c247) and [Use OneDrive for Android](https://support.office.com/article/eee1d31c-792d-41d4-8132-f9621b39eb36) for more information.
+For more information, see [Use OneDrive on iOS](https://support.office.com/article/08d5c5b2-ccc6-40eb-a244-fe3597a3c247) and [Use OneDrive for Android](https://support.office.com/article/eee1d31c-792d-41d4-8132-f9621b39eb36).
 
 ## OneDrive mobile client
 
@@ -103,7 +103,7 @@ The **Microsoft 365 Person** encompasses the complete set of properties, attribu
 
 There are two constituents of the Microsoft 365 Person data:
 
-- Microsoft 365 Profile ([profile resource type](/graph/api/resources/profile?view=graph-rest-beta&preserve-view=true)), which constitutes the information that can be viewed by other users within the tenant about the Microsoft 365 person. This includes the user's Microsoft Entra ID details along with other information like position and photo ([Get profilePhoto](https://aka.ms/profileimage)). The fields and attributes that are exposed can be controlled by the tenant admin ([Add or remove custom attributes on a profile card using the profile card API](/graph/add-properties-profilecard)).
+- Microsoft 365 Profile ([profile resource type](/graph/api/resources/profile?view=graph-rest-beta&preserve-view=true)), which constitutes the information that can be viewed by other users within the tenant about the Microsoft 365 person. This includes the user's Microsoft Entra ID details along with position, photo ([Get profilePhoto](https://aka.ms/profileimage)), and skills. The tenant admin can control which fields and attributes are enabled and exposed on the profile ([Add or remove custom attributes on a profile card using the profile card API](/graph/add-properties-profilecard)). Skills visibility can be managed by both the tenant admin and users ([Manage skills inferencing and visibility](/viva/skills/skills-manage-inferencing-visibility)).
 
 - My Microsoft 365 People dataset ([contact resource type](/graph/api/resources/contact?view=graph-rest-1.0&preserve-view=true)), which represents the list of the user's Microsoft 365 contacts along with the user’s version of their contacts' Microsoft 365 profile. This edited or unedited version of another user’s profile will always remain private in the current user’s mailbox and won't be replicated anywhere.
 

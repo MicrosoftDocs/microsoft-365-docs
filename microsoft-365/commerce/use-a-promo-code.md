@@ -4,25 +4,26 @@ f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
-manager: scotv
+manager: dansimp
 ms.reviewer: drjones, jobailey
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-marketplace
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
-ms.custom: 
+- operations-pod
+ms.custom:
 - commerce_purchase
 - AdminSurgePortfolio
 - okr_SMB
 search.appverid: MET150
 description: "Learn how to apply a promotional code to a new Microsoft 365 for business subscription to reduce the price, and how to troubleshoot promo code errors."
-ms.date: 03/26/2025
+ms.date: 08/04/2025
 ---
 
 # Use a promo code to reduce the price of a new Microsoft 365 for business subscription
@@ -52,7 +53,7 @@ At any time after you complete your purchase, the discount created by your promo
 
 **If you have an MCA billing account type:**
 
-Promo codes are not supported on MCA billing accounts.  Promotional discounts are published directly inside of the product catalog to customers.
+Promo codes are not supported on Modern Customer Agreement (MCA) billing accounts.  Promotional discounts are published directly inside of the product catalog to customers.
 
 ## Promo code terms
 

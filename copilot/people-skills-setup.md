@@ -1,8 +1,9 @@
 ---
 title: Set up People Skills
 description: how you can set up People Skills for the first time in your organization
-author: anibajaj 
-ms.author: anirudhbajaj 
+author: kwekuako
+ms.author: kwekua
+ms.collection: operations-pod
 manager: dansimp
 ms.service: microsoft-365-copilot
 ms.topic: article
@@ -12,6 +13,10 @@ ms.date: 05/29/2025
 # Set up People Skills
 
 This section walks you through setting up People Skills for the first time in your organization. After initial setup is complete, admins can edit their skill library or share settings using the steps in the [Manage your skills library](people-skills-manage-skills-library.md) page.
+
+Here is a video walkthrough of the People Skills setup and various admin options available:
+> [!VIDEO 8f204269-407e-4684-88cd-656d864f3569]
+ 
 
 ## Admin roles required for setup
 

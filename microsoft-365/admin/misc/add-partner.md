@@ -4,20 +4,21 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: scotv
-ms.reviewer: armanv, nicholak
+manager: dansimp
+ms.reviewer: nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: 
+- operations-pod
+ms.custom:
 - commerce_subscriptions
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -28,7 +29,7 @@ search.appverid:
 - MOE150
 - GEA150
 description: "Learn how to add a partner of record when you buy Microsoft 365, change the partner, or delete a partner from a subscription."
-ms.date: 01/07/2025
+ms.date: 07/08/2025
 ---
 
 # Add, change, or delete a subscription advisor partner

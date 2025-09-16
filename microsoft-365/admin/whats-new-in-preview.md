@@ -2,9 +2,9 @@
 title: "What's new in the Microsoft 365 admin center?"
 f1.keywords:
 - CSH
-ms.author: camillepack
-author: camillepack
-manager: scotv
+ms.author: kwekua
+author: kwekuako
+manager: dansimp
 ms.date: 03/04/2025
 audience: Admin
 ms.topic: overview
@@ -17,11 +17,12 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - must-keep
+- operations-pod
 search.appverid:
 - MET150
 - MOE150
 - FRP150
-ms.custom: 
+ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
 - admindeeplinkMAC

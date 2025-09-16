@@ -1,10 +1,10 @@
 ---
 title: "Understand your invoice for your Microsoft MCA billing account"
 f1.keywords:
-- 'MACBillingAccountsAddBillingProfileInvoices'
+- MACBillingAccountsAddBillingProfileInvoices
 author: cmcatee-MSFT
 ms.author: cmcatee
-manager: scotv
+manager: dansimp
 ms.reviewer: jkinma, ramagane
 audience: Admin
 ms.topic: concept-article
@@ -15,10 +15,11 @@ ms.collection:
 - Tier1
 - ContentEngagementFY23
 - scotvorg
-- highpri 
+- highpri
 - M365-subscription-management
 - Adm_O365
-ms.custom: 
+- operations-pod
+ms.custom:
 - commerce_billing
 - VSBFY23
 - AdminSurgePortfolio

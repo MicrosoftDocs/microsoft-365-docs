@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
-manager: scotv
+manager: dansimp
 ms.reviewer: emmasheridan, nicholak
 audience: Admin
 ms.topic: how-to
@@ -14,10 +14,11 @@ ms.localizationpriority: high
 ms.collection:
 - Tier1
 - scotvorg
-- highpri 
+- highpri
 - M365-subscription-management
 - Adm_O365
-ms.custom: 
+- operations-pod
+ms.custom:
 - commerce_subscriptions
 - VSBFY23
 - AdminSurgePortfolio

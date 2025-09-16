@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
-manager: scotv
+manager: dansimp
 ms.reviewer: schyevan, ramagane
 audience: Admin
 ms.topic: how-to
@@ -16,13 +16,14 @@ ms.collection:
 - scotvorg
 - M365-subscription-management
 - Adm_O365
+- operations-pod
 ms.custom:
-  - commerce_ssp
-  - AdminSurgePortfolio
-  - okr_smb
-  - admindeeplinkMAC
-  - GAUpdates
-  - campaignIDs-batch1
+- commerce_ssp
+- AdminSurgePortfolio
+- okr_smb
+- admindeeplinkMAC
+- GAUpdates
+- campaignIDs-batch1
 search.appverid:
 - MET150
 description: "Learn how admins can use the Microsoft 365 admin center to manage self-service purchases and trials made by users in their organization."

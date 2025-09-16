@@ -12,6 +12,7 @@ ms.collection:
 - Tier1
 - scotvorg
 - essentials-manage
+- operations-pod
 description: "Change your language and time zone settings in Microsoft Bookings. If bookings are created at the wrong time, Bookings might be set for the wrong time zone."
 ---
 

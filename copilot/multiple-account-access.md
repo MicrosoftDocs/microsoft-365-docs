@@ -13,14 +13,16 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 - must-keep
+- trust-pod
 hideEdit: true
-ms.date: 06/30/2025
+ms.date: 07/09/2025
+ms.update-cycle: 180-days
 ---
 
 # Multiple account access to Copilot for work and school documents
 
-> [!IMPORTANT]
-> - As of March 19, 2025, multiple account access to Copilot is available for some apps on specific types of devices. For more information, see [Apps where multiple account access to Copilot is available](#apps-where-multiple-account-access-to-copilot-is-available).
+> [!NOTE]
+> - Multiple account access to Copilot is available for some apps on specific types of devices. For more information, see [Apps where multiple account access to Copilot is available](#apps-where-multiple-account-access-to-copilot-is-available).
 > - For information about turning off multiple account access by using a policy setting, see [Manage multiple account access to Copilot using Cloud Policy](#manage-multiple-account-access-to-copilot-using-cloud-policy).
 
 ## What is multiple account access to Copilot?
@@ -72,7 +74,7 @@ The end-user experience for blocked users viewing work and school documents is a
 
 ## Apps where multiple account access to Copilot is available
 
-As of June 30, 2025, multiple account access is rolling out gradually in the following apps, starting with the version listed.
+Multiple account access is available in the following apps, starting with the version listed.
 
 ### On Android devices
 

@@ -1,11 +1,12 @@
 ---
 title: "Overview of Copilot insights in Microsoft 365 Lighthouse"
 f1.keywords: NOCSH
-ms.author: sharik
+ms.author: dansimp
 author: SKjerland
 manager: scotv
 ms.reviewer: viratsingh
 ms.date: 11/08/2024
+ms.update-cycle: 180-days
 audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-lighthouse

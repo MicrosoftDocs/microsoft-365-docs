@@ -30,6 +30,8 @@ items:
           href: subscriptions/manage-self-service-purchases-users.md
         - name: Manage self-service purchases (Admin)
           href: subscriptions/manage-self-service-purchases-admins.md
+        - name: View scheduled changes
+          href: subscriptions/view-scheduled-changes.md
     - name: Manage licenses
       items:
         - name: Buy or remove subscription licenses
@@ -94,6 +96,8 @@ items:
           href: billing-and-payments/manage-billing-notifications.md
         - name: Understand billing accounts
           href: manage-billing-accounts.md
+        - name: Keep your billing account active
+          href: keep-billing-accounts-active.md
         - name: Manage billing profiles
           href: billing-and-payments/manage-billing-profiles.md
         - name: Change your billing addresses

@@ -13,8 +13,10 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 - must-keep
+- trust-pod
 hideEdit: true
-ms.date: 05/02/2025
+ms.update-cycle: 180-days
+ms.date: 09/05/2025
 ms.custom: [copilot-learning-hub]
 ---
 
@@ -29,7 +31,7 @@ Microsoft 365 Copilot is a sophisticated processing and orchestration engine tha
 For an overview of how these three components work together, see [Microsoft 365 Copilot overview](microsoft-365-copilot-overview.md). For links to other content related to Microsoft 365 Copilot, see [Microsoft 365 Copilot documentation](index.yml).
 
 > [!IMPORTANT]
-> - Microsoft 365 Copilot is compliant with our existing privacy, security, and compliance commitments to Microsoft 365 commercial customers, including the General Data Protection Regulation (GDPR) and European Union (EU) Data Boundary.
+> - Microsoft 365 Copilot, including [Microsoft 365 Copilot Search](/copilot/microsoft-365/microsoft-365-copilot-search), is compliant with our existing privacy, security, and compliance commitments to Microsoft 365 commercial customers, including the General Data Protection Regulation (GDPR) and European Union (EU) Data Boundary.
 > - Prompts, responses, and data accessed through Microsoft Graph aren't used to train foundation LLMs, including those used by Microsoft 365 Copilot.
 > - Microsoft 365 Copilot operates with multiple protections, which include, but aren't limited to, [blocking harmful content](#how-does-copilot-block-harmful-content), [detecting protected material](#does-copilot-provide-protected-material-detection), and [blocking prompt injections (jailbreak attacks)](#does-copilot-block-prompt-injections-jailbreak-attacks).
 
@@ -60,8 +62,8 @@ Microsoft 365 Copilot only surfaces organizational data to which individual user
 When you enter prompts using Microsoft 365 Copilot, the information contained within your prompts, the data they retrieve, and the generated responses remain within the Microsoft 365 service boundary, in keeping with our current privacy, security, and compliance commitments. Microsoft 365 Copilot uses Azure OpenAI services for processing, not OpenAI’s publicly available services. Azure OpenAI doesn't cache customer content and Copilot modified prompts for Microsoft 365 Copilot. For more information, see the [Data stored about user interactions with Microsoft 365 Copilot](#data-stored-about-user-interactions-with-microsoft-365-copilot) section later in this article.
 
 > [!NOTE]
-> - When you’re using plugins to help Microsoft 365 Copilot to provide more relevant information, check the privacy statement and terms of use of the plugin to determine how it will handle your organization’s data. For more information, see [Extensibility of Microsoft 365 Copilot](#extensibility-of-microsoft-365-copilot).
-> - When you’re using the web content plugin, Microsoft 365 Copilot parses the user’s prompt and identifies terms where web search would improve the quality of the response. Based on these terms, Copilot generates a search query that it sends to the Bing Search service. For more information, [Data, privacy, and security for web queries in Microsoft 365 Copilot and Microsoft 365 Copilot Chat](/microsoft-365-copilot/manage-public-web-access).
+> - When you’re using agents to help Microsoft 365 Copilot to provide more relevant information, check the privacy statement and terms of use of the agent to determine how it will handle your organization’s data. For more information, see [Extensibility of Microsoft 365 Copilot](#extensibility-of-microsoft-365-copilot).
+> - When you’re using web search, Microsoft 365 Copilot parses the user’s prompt and identifies terms where web search would improve the quality of the response. Based on these terms, Copilot generates a search query that it sends to the Bing Search service. For more information, [Data, privacy, and security for web queries in Microsoft 365 Copilot and Microsoft 365 Copilot Chat](/microsoft-365-copilot/manage-public-web-access).
 
 While abuse monitoring, which includes human review of content, is available in Azure OpenAI, Microsoft 365 Copilot services have opted out of it. For information about content filtering, see the [How does Copilot block harmful content?](#how-does-copilot-block-harmful-content) section later in this article.
 
@@ -98,16 +100,16 @@ Microsoft [Advanced Data Residency (ADR)](/microsoft-365/enterprise/advanced-dat
 
 ## Extensibility of Microsoft 365 Copilot
 
-While Microsoft 365 Copilot is already able to use the apps and data within the Microsoft 365 ecosystem, many organizations still depend on various external tools and services for work management and collaboration. Microsoft 365 Copilot experiences can reference third-party tools and services when responding to a user’s request by using [Microsoft Graph connectors](/graph/connecting-external-content-connectors-overview) or plugins. Data from Graph connectors can be returned in Microsoft 365 Copilot responses if the user has permission to access that information.
+While Microsoft 365 Copilot is already able to use the apps and data within the Microsoft 365 ecosystem, many organizations still depend on various external tools and services for work management and collaboration. Microsoft 365 Copilot experiences can reference third-party tools and services when responding to a user’s request by using [Microsoft Graph connectors](/graph/connecting-external-content-connectors-overview) or agents. Data from Graph connectors can be returned in Microsoft 365 Copilot responses if the user has permission to access that information.
 
-When plugins are enabled, Microsoft 365 Copilot determines whether it needs to use a specific plugin to help provide a relevant response to the user. If a plugin is needed, Microsoft 365 Copilot generates a search query to send to the plugin on the user’s behalf. The query is based on the user’s prompt, Copilot activity history, and data the user has access to in Microsoft 365.
+When agents are enabled, Microsoft 365 Copilot determines whether it needs to use a specific agent to help provide a relevant response to the user. If an agent is needed, Microsoft 365 Copilot generates a search query to send to the agent on the user’s behalf. The query is based on the user’s prompt, Copilot activity history, and data the user has access to in Microsoft 365.
 
-In the **Integrated apps** section of the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview), admins can view the permissions and data access required by a plugin as well as the plugin’s terms of use and privacy statement. Admins have full control to select which plugins are allowed in their organization. A user can only access the plugins that their admin allows and that the user installed or is assigned. Microsoft 365 Copilot only uses plugins that are turned on by the user.
+In the **Integrated apps** section of the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview), admins can view the permissions and data access required by an agent as well as the agent’s terms of use and privacy statement. Admins have full control to select which agents are allowed in their organization. A user can only access the agents that their admin allows and that the user installed or is assigned. Microsoft 365 Copilot only uses agents that are turned on by the user.
 
 For more information, see the following articles:
 
-- [Manage Plugins for Copilot in Integrated Apps](/microsoft-365/admin/manage/manage-plugins-for-copilot-in-integrated-apps)
-- [Extend Microsoft 365 Copilot](/microsoft-365-copilot/extensibility/)
+- [Manage agents for Microsoft 365 Copilot in the Microsoft 365 admin center](/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps)
+- [Microsoft 365 Copilot extensibility overview](/microsoft-365-copilot/extensibility/)
 - [How Microsoft 365 Copilot can work with your external data](https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/how-microsoft-365-copilot-can-work-with-your-external-data/ba-p/3937645)
 
 ## How does Microsoft 365 Copilot protect organizational data?
@@ -126,15 +128,17 @@ We already implement multiple forms of protection to help prevent customers from
 
 - Your control over your data is reinforced by Microsoft's commitment to comply with broadly applicable privacy laws, such as the GDPR, and privacy standards, such as ISO/IEC 27018, the world’s first international code of practice for cloud privacy.
 
-- For content accessed through Microsoft 365 Copilot plugins, encryption can exclude programmatic access, thus limiting the plugin from accessing the content. For more information, see [Configure usage rights for Azure Information Protection](/azure/information-protection/configure-usage-rights).
+- For content accessed through Microsoft 365 Copilot agents, encryption can exclude programmatic access, thus limiting the agent from accessing the content. For more information, see [Configure usage rights for Azure Information Protection](/azure/information-protection/configure-usage-rights).
 
 ## Meeting regulatory compliance requirements
 
-As regulation in the AI space evolves, Microsoft will continue to adapt and respond to fulfill future regulatory requirements.
+Microsoft continues to adapt and respond to fulfill AI regulatory requirements as they evolve, so we earn and keep the trust of customers, partners, and regulators.
 
-Microsoft 365 Copilot is built on top of Microsoft’s current commitments to data security and privacy in the enterprise. There's no change to these commitments. Microsoft 365 Copilot is integrated into Microsoft 365 and adheres to all existing privacy, security, and compliance commitments to Microsoft 365 commercial customers. For more information, see [Microsoft Compliance](/compliance).
+Microsoft 365 Copilot provides broad compliance offerings and certifications, including [GDPR](/compliance/regulatory/gdpr), [ISO 27001](/compliance/regulatory/offering-iso-27001), [HIPAA](/compliance/regulatory/offering-hipaa-hitech), and the [ISO 42001 standard for AI management systems](/compliance/regulatory/offering-iso-42001). These help support our customers on their compliance journeys, complemented by features such as contractual readiness, built-in information and communication technology risk management, and operational resilience tooling.
 
-Beyond adhering to regulations, we prioritize an open dialogue with our customers, partners, and regulatory authorities to better understand and address concerns, thereby fostering an environment of trust and cooperation. We acknowledge that privacy, security, and transparency aren't just features, but prerequisites in the AI-driven landscape at Microsoft.
+Microsoft is committed to complying with all laws and regulations applicable to Microsoft, including the EU AI Act, to enable our AI solutions to meet evolving standards for trustworthy and responsible AI. Microsoft 365 Copilot is built on top of [Microsoft’s existing commitments to data security and privacy](https://www.microsoft.com/trust-center/privacy). There is no change to these commitments. Copilot is integrated into Microsoft 365 and adheres to existing privacy, security, and compliance commitments to Microsoft 365 customers.
+
+Additionally, we prioritize open dialogue with our partners and regulatory authorities. We provide customers with direct access to Microsoft compliance professionals, proactive guidance, and curated solutions to help navigate regulatory compliance, such as the [Microsoft 365 Copilot & Copilot Chat Risk Assessment Quickstart](https://servicetrust.microsoft.com/DocumentPage/4fe5df86-848b-4097-b3fa-4625e2b8e8f2). Our approach in the AI-driven landscape aims to empower organizations to innovate confidently with solutions built with transparency, privacy, and security in mind.
 
 ## Additional information
 
@@ -174,11 +178,11 @@ If a third party sues a commercial customer for copyright infringement for using
 
 ### How does Copilot block harmful content?
 
-Azure OpenAI Service includes a content filtering system that works alongside core models. The content filtering models for the Hate & Fairness, Sexual, Violence, and Self-harm categories have been specifically trained and tested in various languages. This system works by running both the input prompt and the response through classification models that are designed to identify and block the output of harmful content.
+To help block harmful content, Microsoft 365 Copilot makes use of the Azure OpenAI Service, which includes a [content filtering system](/azure/ai-foundry/openai/concepts/content-filter) that works alongside core models. The content filtering models for the Hate & Fairness, Sexual, Violence, and Self-harm categories have been specifically trained and tested in various languages. This system works by running both the input prompt and the response through classification models that are designed to identify and block the output of harmful content.
 
 Hate and fairness-related harms refer to any content that uses pejorative or discriminatory language based on attributes like race, ethnicity, nationality, gender identity and expression, sexual orientation, religion, immigration status, ability status, personal appearance, and body size. Fairness is concerned with making sure that AI systems treat all groups of people equitably without contributing to existing societal inequities. Sexual content involves discussions about human reproductive organs, romantic relationships, acts portrayed in erotic or affectionate terms, pregnancy, physical sexual acts, including those portrayed as an assault or a forced act of sexual violence, prostitution, pornography, and abuse. Violence describes language related to physical actions that are intended to harm or kill, including actions, weapons, and related entities. Self-harm language refers to deliberate actions that are intended to injure or kill oneself.
 
-[Learn more about Azure OpenAI content filtering](/azure/ai-services/openai/concepts/content-filter?tabs=warning%2Cpython#harm-categories).
+In addition to content filtering provided by the Azure OpenAI Service, Microsoft 365 Copilot also applies filters to help prevent workplace harms from happening. Workplace harms refers to a category of harms that can result from generative AI or models making inferences, judgments, or evaluations about an employee based on their workplace communication. Currently, that means inferences, judgments, or evaluations about an employee's performance, attitude, internal or emotional state, or personal characteristics. We restrict the use of generative AI or models from being used for these purposes.
 
 ### Does Copilot provide protected material detection?
 
@@ -188,11 +192,15 @@ Yes, Microsoft 365 Copilot provides detection for protected materials, which inc
 
 Jailbreak attacks are prompts designed to bypass Copilot's safeguards or induce non-compliant behavior. Microsoft 365 Copilot helps mitigate these attacks by using proprietary jailbreak and cross-prompt injection attack (XPIA) classifiers. These classifiers analyze inputs to the Copilot service and help block high-risk prompts prior to model execution.
 
+### What happens when foundation model changes occur?
+
+The AI models that power Microsoft 365 Copilot are regularly updated and enhanced. Model updates bring performance improvements, more advanced reasoning, and expanded capabilities, but they don't change your security, privacy, or compliance settings. For more information, see [Microsoft 365 Blog: Understanding foundation model changes in Microsoft 365 Copilot](https://techcommunity.microsoft.com/blog/microsoft_365blog/understanding-foundation-model-changes-in-microsoft-365-copilot/4440322).
+
 ### Committed to responsible AI
 
 As AI is poised to transform our lives, we must collectively define new rules, norms, and practices for the use and impact of this technology. Microsoft has been on a Responsible AI journey since 2017, when we defined our principles and approach to ensuring this technology is used in a way that is driven by ethical principles that put people first.
 
-At Microsoft, we're guided by our [AI principles](https://www.microsoft.com/ai/our-approach), our [Responsible AI Standard](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE5cmFl), and decades of research on AI, grounding, and privacy-preserving machine learning. A multidisciplinary team of researchers, engineers, and policy experts reviews our AI systems for potential harms and mitigations — refining training data, filtering to limit harmful content, query- and result-blocking sensitive topics, and applying Microsoft technologies like [InterpretML](https://www.microsoft.com/research/uploads/prod/2020/05/InterpretML-Whitepaper.pdf) and [Fairlearn](https://fairlearn.org/) to help detect and correct data bias. We make it clear how the system makes decisions by noting limitations, linking to sources, and prompting users to review, fact-check, and adjust content based on subject-matter expertise. For more information, see [Governing AI: A Blueprint for the Future](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RW14Gtw).
+At Microsoft, we're guided by our [AI principles](https://www.microsoft.com/ai/our-approach), our [Responsible AI Standard](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/final/en-us/microsoft-brand/documents/Microsoft-Responsible-AI-Standard-General-Requirements.pdf), and decades of research on AI, grounding, and privacy-preserving machine learning. A multidisciplinary team of researchers, engineers, and policy experts reviews our AI systems for potential harms and mitigations — refining training data, filtering to limit harmful content, query- and result-blocking sensitive topics, and applying Microsoft technologies like [InterpretML](https://www.microsoft.com/research/uploads/prod/2020/05/InterpretML-Whitepaper.pdf) and [Fairlearn](https://fairlearn.org/) to help detect and correct data bias. We make it clear how the system makes decisions by noting limitations, linking to sources, and prompting users to review, fact-check, and adjust content based on subject-matter expertise. For more information, see [Governing AI: A Blueprint for the Future](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/Governing-AI-A-Blueprint-for-the-Future.pdf).
 
 We aim to help our customers use our AI products responsibly, sharing our learnings, and building trust-based partnerships. For these new services, we want to provide our customers with information about the intended uses, capabilities, and limitations of our AI platform service, so they have the knowledge necessary to make responsible deployment choices. We also share resources and templates with developers inside organizations and with independent software vendors (ISVs), to help them build effective, safe, and transparent AI solutions.
 

@@ -154,7 +154,7 @@ $Credentials = Get-Credential
 New-MigrationEndpoint -ExchangeOutlookAnywhere -Name StagedEndpoint -Autodiscover -EmailAddress administrator@contoso.com -Credentials $Credentials
 ```
 
-For more information about the **New-MigrationEndpoint** cmdlet, see[New-MigrationEndpoint](/powershell/module/exchange/new-migrationendpoint).
+For more information about the **New-MigrationEndpoint** cmdlet, see[New-MigrationEndpoint](/powershell/module/exchangepowershell/new-migrationendpoint).
 
 > [!NOTE]
 > The **New-MigrationEndpoint** cmdlet can be used to specify a database for the service to use by using the **-TargetDatabase** option. Otherwise a database is randomly assigned from the Active Directory Federation Services (AD FS) 2.0 site where the management mailbox is located.
@@ -195,7 +195,7 @@ You can also verify that the batch has started by running the following command:
 Get-MigrationBatch -Identity StagedBatch1 | Format-List Status
 ```
 
-For more information about the **Get-MigrationBatch** cmdlet, see[Get-MigrationBatch](/powershell/module/exchange/get-migrationbatch).
+For more information about the **Get-MigrationBatch** cmdlet, see[Get-MigrationBatch](/powershell/module/exchangepowershell/get-migrationbatch).
 
 ### Step 5: Convert on-premises mailboxes to mail-enabled users
 
@@ -215,7 +215,7 @@ To delete the "StagedBatch1" migration batch in Exchange Online PowerShell, run 
 Remove-MigrationBatch -Identity StagedBatch1
 ```
 
-For more information about the **Remove-MigrationBatch** cmdlet, see[Remove-MigrationBatch](/powershell/module/exchange/remove-migrationbatch).
+For more information about the **Remove-MigrationBatch** cmdlet, see[Remove-MigrationBatch](/powershell/module/exchangepowershell/remove-migrationbatch).
 
 #### Verify it worked
 
@@ -227,7 +227,7 @@ Get-MigrationBatch StagedBatch1
 
 The command will return either the migration batch with a status of **Removing**, or it will return an error stating that migration batch couldn't be found, verifying that the batch was deleted.
 
-For more information about the **Get-MigrationBatch** cmdlet, see[Get-MigrationBatch](/powershell/module/exchange/get-migrationbatch).
+For more information about the **Get-MigrationBatch** cmdlet, see[Get-MigrationBatch](/powershell/module/exchangepowershell/get-migrationbatch).
 
 ### Step7: Assign licenses to Microsoft 365 users
 

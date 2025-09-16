@@ -2,20 +2,21 @@
 title: "Manage Industry news"
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
-manager: scotv
+ms.author: kwekua
+author: kwekuako
+manager: dansimp
 ms.date: 09/24/2020
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier2
 - scotvorg
 - M365-subscription-management
-- Adm_TOC 
-ms.custom: 
+- Adm_TOC
+- operations-pod
+ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 search.appverid:

@@ -2,9 +2,9 @@
 title: "Guests in the Microsoft 365 admin center"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekuako
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 ms.date: 04/02/2025
 audience: Admin
 ms.topic: overview
@@ -12,12 +12,13 @@ ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
 - Tier2
-- scotvorg 
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
 - must-keep
-ms.custom: 
+- trust-pod
+ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC

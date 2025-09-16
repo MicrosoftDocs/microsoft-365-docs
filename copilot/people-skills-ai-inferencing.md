@@ -1,12 +1,13 @@
 ---
 title: People Skills AI Inference engine
 description: The People Skills inference engine uses Microsoft 365 profile and activity signals from the Microsoft Graph to create personalized skill profiles for users in your organization.
-author: anibajaj 
-ms.author:  anirudhbajaj
+author: kwekuako
+ms.author: kwekua
+ms.collection: operations-pod
 manager: dansimp
-ms.service:  microsoft-365-copilot
+ms.service: microsoft-365-copilot
 ms.topic: article
-ms.date:     05/29/2025
+ms.date: 05/29/2025
 ---
 
 # People Skills AI Inference engine

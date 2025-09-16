@@ -1,20 +1,21 @@
 ---
 title: "Microsoft 365 admin center Teams app usage reports"
-ms.author: camillepack
+ms.author: cmcatee
 author: camillepack
-manager: scotv
+manager: dansimp
 ms.date: 1/25/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
-ms.collection: 
+ms.collection:
 - Tier2
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: 
+- operations-pod
+ms.custom:
 - AdminSurgePortfolio
 - campaignIDs-batch1
 search.appverid:

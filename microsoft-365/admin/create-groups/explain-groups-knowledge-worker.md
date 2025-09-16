@@ -3,18 +3,19 @@ title: "Explaining Microsoft 365 Groups to your users"
 ms.reviewer: batre
 ms.date: 05/21/2025
 f1.keywords: NOCSH
-author: DaniEASmith
-ms.author: danismith
-manager: jtremper
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.custom: m365-groups
-ms.collection: 
-- M365-subscription-management 
+ms.collection:
+- M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- trust-pod
 search.appverid:
 - MET150
 description: "Learn about how to explain Microsoft 365 Groups to your users."

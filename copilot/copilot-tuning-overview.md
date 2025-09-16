@@ -5,6 +5,7 @@ ms.author: lauragra
 author: lauragra
 manager: calvind
 ms.date: 05/20/2025
+ms.update-cycle: 180-days
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-copilot

@@ -2,26 +2,27 @@
 title: "Add your Google Workspace domain"
 f1.keywords:
 - NOCSH
-ms.author: twerner
-author: twernermsft
-manager: scotv
+ms.author: kwekua
+author: kwekuako
+manager: dansimp
 ms.date: 08/29/2024
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier2
 - scotvorg
 - highpri
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
-ms.custom: 
+- operations-pod
+ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 - admindeeplinkMAC
-monikerRange: 'o365-worldwide'
+monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150

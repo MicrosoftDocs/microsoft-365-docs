@@ -2,9 +2,9 @@
 title: "Change user profile photo"
 f1.keywords:
 - NOCSH
-ms.author: chrisda
-author: chrisda
-manager: deniseb
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 ms.date: 06/11/2024
 audience: Admin
 ms.topic: how-to
@@ -17,13 +17,14 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- trust-pod
 ms.custom:
-  - VSBFY23
-  - MSStore_Link
-  - AdminSurgePortfolio
-  - AdminTemplateSet
-  - has-azure-ad-ps-ref
-search.appverid:
+- VSBFY23
+- MSStore_Link
+- AdminSurgePortfolio
+- AdminTemplateSet
+- has-azure-ad-ps-ref
+search.appverid: 
 description: "Learn how a Microsoft 365 admin can add, update, and remove the pictures in user account profiles and Microsoft 365 Group profiles."
 ---
 
@@ -205,7 +206,7 @@ If the user has no photo, the commands return the error: `Exception of type 'Mic
   Remove-MgUserPhoto -UserId albertas@contoso.onmicrosoft.com
   ```
 
-  For detailed syntax and parameter information, see [Remove-MgUserPhoto](/powershell/module/exchange/remove-userphoto).
+  For detailed syntax and parameter information, see [Remove-MgUserPhoto](/powershell/module/exchangepowershell/remove-userphoto).
 
 - **Microsoft 365 Groups**:
 
@@ -221,7 +222,7 @@ If the user has no photo, the commands return the error: `Exception of type 'Mic
   Remove-MgGroupPhoto -GroupId 173cd812-5563-439c-9da4-bc2715fa2aee
   ```
 
-  For detailed syntax and parameter information, see [Remove-MgGroupPhoto](/powershell/module/exchange/remove-userphoto).
+  For detailed syntax and parameter information, see [Remove-MgGroupPhoto](/powershell/module/exchangepowershell/remove-userphoto).
 
 ## Configure photo update settings in your Microsoft 365 organization
 

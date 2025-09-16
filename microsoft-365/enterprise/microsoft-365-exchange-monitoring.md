@@ -65,7 +65,7 @@ You'll notice incidents or advisories created for your organization with "Issue 
 
 ## Priority accounts monitoring scenarios
 
-With Exchange Online priority account monitoring, you can view the health for the following scenarios after configuring [priority accounts](/microsoft-365/admin/setup/priority-accounts):
+With Exchange Online priority account monitoring, you can view the health for the following scenarios after configuring [priority accounts](/microsoft-365/admin/security-and-compliance/priority-accounts):
 
 - Exchange licensing
 

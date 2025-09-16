@@ -15,6 +15,7 @@ f1.keywords: NOCSH
 ms.collection:
 - m365-security
 - tier2
+- trust-pod
 ms.custom: intro-get-started
 ---
 
@@ -43,22 +44,22 @@ When you're ready to sign up for Microsoft 365 Business Premium, you have severa
 
 2. Choose to try or buy your subscription. See [Try or buy a Microsoft 365 for business subscription](/microsoft-365/commerce/try-or-buy-microsoft-365). On the [Microsoft 365 Products site](https://www.aka.ms/office365signup), choose **Microsoft 365 Business Premium**.
 
-3. After you have signed up for Microsoft 365 Business Premium, you'll receive an email with a link to sign in and get started. Proceed to [Set up Microsoft 365 Business Premium](#set-up-microsoft-365-business-premium).
+3. After you sign up for Microsoft 365 Business Premium, you receive an email message with a link to sign in and get started. Proceed to [Set up Microsoft 365 Business Premium](#set-up-microsoft-365-business-premium).
 
 ## [Work with a Microsoft partner](#tab/Partner)
 
 Microsoft has a list of solution providers who are authorized to sell offerings, including Microsoft 365 Business Premium. If you're not already working with a solution provider, you can find one by following these steps:
 
-1. Go to the [Browse Partners](https://appsource.microsoft.com/marketplace/partner-dir).
+1. Go to the **Connect with partners** page at <https://appsource.microsoft.com/marketplace/partner-dir>.
 
-2. In the **Filters** pane, specify search criteria, such as:
+2. In the **Filters** pane, specify search criteria. For example:
 
-   - Your location
-   - Your organization's size
-   - **Focus areas**, such as **Security** and/or **Threat Protection**
-   - **Services**, such as **Licensing** or **Managed Services (MSP)**
+   - Your location.
+   - Your organization's size.
+   - **Solution category**: For example,  **Security** and/or **Threat Protection**
+   - **Services**: For example, **Licensing** or **Managed Services (MSP)**.
 
-   As soon as you select one or more criteria, the list of partners updates.
+   After you select one or more criteria, the list of partners updates.
 
 3. Review the list of results. Select a provider to learn more about their expertise and the services they provide.
 
@@ -68,7 +69,7 @@ Microsoft has a list of solution providers who are authorized to sell offerings,
 
 To complete the basic setup process, you can choose from several options available:
 
-- Start with the guided setup experience for basic setup and configuration, and then proceed to [set up your security protection](m365bp-security-overview.md); or
+- Start with the guided setup experience for basic setup and configuration, and then proceed to [set up your security protection](/microsoft-365/admin/security-and-compliance/m365bp-security-benefits); or
 - Work with a Microsoft partner who can help you get everything set up and configured.
 
 ##  [**Guided setup process**](#tab/Guided)
@@ -81,28 +82,28 @@ Microsoft 365 Business Premium includes a guided setup process, as shown in the 
 
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/) and sign in.
 
-2. A Business Advisor screen opens where you can select your top goals for Microsoft 365. Select and save your goals, or select **Skip for new**.
+2. A Business Advisor screen opens where you can select your top goals for Microsoft 365. Select and save your goals, or select **Skip for now**.
 
-3. By default, you're in the simplified view. In the upper left corner, select **Simplified view > Dashboard view**, and then select **Go to guided setup**.
+3. By default, you're in the simplified view. In the upper left corner, select **Simplified view** \> **Dashboard view**, and then select **Go to guided setup**.
 
 4. To install your Microsoft 365 Apps (Word, Excel, PowerPoint, OneNote, and Outlook), select the download button, and then follow the prompts. Or, skip this step for now and install your apps later. Select **Continue**.
 
 5. To add your organization's domain (*recommended*) or to use your default `.onmicrosoft.com` domain, select an option and then follow the prompts. Then select **Use this domain**. To get help with this task, see [Add a domain to Microsoft 365](../admin/setup/add-domain.md).
 
-6. To add a user, fill in the user's first name, last name, and user name, and then select **Add users and assign licenses**. Or, select **View all users** to go to your active users page, where you can view, add, and manage users. To get help with this task, see [Add users and assign licenses at the same time](../admin/add-users/add-users.md). We recommend adding your administrators and members of your security team now.
+6. To add a user, fill in the user's first name, last name, and username, and then select **Add users and assign licenses**. Or, select **View all users** to go to your active users page, where you can view, add, and manage users. To get help with this task, see [Add users and assign licenses at the same time](../admin/add-users/add-users.md). We recommend adding your administrators and members of your security team now.
 
-6. If you added your domain in step 5, connect your domain to Microsoft 365. To get help with this task, see [Change nameservers to set up Microsoft 365 with any domain registrar](../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md).
+7. If you added your domain in step 5, connect your domain to Microsoft 365. To get help with this task, see [Change nameservers to set up Microsoft 365 with any domain registrar](../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md).
 
-7. When you see **Setup is complete**, it means you have completed the basic setup process for your subscription. Use the feedback window to tell us how it went, and then visit your [Microsoft 365 admin center](../admin/admin-overview/admin-center-overview.md).
+8. When you see **Setup is complete**, it means you completed the basic setup process for your subscription. Use the feedback window to tell us how it went, and then visit your [Microsoft 365 admin center](../admin/admin-overview/admin-center-overview.md).
 
 > [!IMPORTANT]
-> Although your basic setup is complete, but you still need to set up and configure your security settings. **Proceed to [set up your security protection](m365bp-security-overview.md)**.
+> Although your basic setup is complete, but you still need to set up and configure your security settings. **Proceed to [set up your security protection](/microsoft-365/admin/security-and-compliance/m365bp-security-benefits)**.
 
 ### Employee quick setup guide
 
 [:::image type="content" source="media/employee-setup-guide.png" alt-text="Screenshot of employee setup guide steps.":::](https://support.microsoft.com/office/employee-quick-setup-in-microsoft-365-for-business-7f34c318-e772-46a5-8c0a-ab86661542d1)
 
-After you have added users to your Microsoft 365 subscription, give them a link to the [Employee quick setup guide](https://support.microsoft.com/office/7f34c318-e772-46a5-8c0a-ab86661542d1). The guide walks them through signing in, getting Microsoft 365 Apps, and saving, copying, and sharing files.
+After you add users to your Microsoft 365 subscription, give them a link to the [Employee quick setup guide](https://support.microsoft.com/office/7f34c318-e772-46a5-8c0a-ab86661542d1). The guide walks them through signing in, getting Microsoft 365 Apps, and saving, copying, and sharing files.
 
 ## [**Work with a Microsoft partner**](#tab/UsePartner)
 
@@ -125,4 +126,4 @@ If you'd prefer to have a Microsoft partner help you get and set up Microsoft 36
 
 ## Next step
 
-Proceed to [Configure your security protection](m365bp-security-overview.md).
+Proceed to [Configure your security protection](/microsoft-365/admin/security-and-compliance/m365bp-security-benefits).

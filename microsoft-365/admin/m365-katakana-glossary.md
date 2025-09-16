@@ -3,7 +3,7 @@ title: "Microsoft 365 admin center katakana glossary"
 f1.keywords: NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: scotv
+manager: dansimp
 ms.reviewer: soranm
 audience: Admin
 ms.topic: reference
@@ -14,10 +14,12 @@ ms.collection:
 - Adm_O365
 - scotvorg
 - must-keep
-ROBOTS: NOINDEX, NOFOLLOW 
+- operations-pod
+ROBOTS: NOINDEX, NOFOLLOW
 description: "Understand the Japanese katakana terms used in the Microsoft 365 admin center."
 ms.date: 03/13/2025
 ---
+
 <!-- DO NOT MAKE CHANGES TO THIS ARTICLE WITHOUT FIRST CONTACTING THE MS.AUTHOR AND MS.REVIEWER -->
 <!-- THIS CONTENT IS MACHINE TRANSLATED FROM THE ORIGINAL JAPANESE AND MUST REMAIN UNTOUCHED -->
 <!-- DO NOT MAKE CHANGES TO THIS ARTICLE WITHOUT FIRST CONTACTING THE MS.AUTHOR AND MS.REVIEWER -->

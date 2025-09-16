@@ -2,7 +2,7 @@
 title: "Download volume licensing products"
 author: cmcatee-MSFT
 ms.author: cmcatee
-manager: scotv
+manager: dansimp
 ms.reviewer: aasthatiwari, atuldubey
 audience: Admin
 ms.topic: concept-article
@@ -11,6 +11,7 @@ ms.subservice: m365-commerce-volume-licensing
 ms.collection:
 - Tier1
 - scotvorg
+- operations-pod
 ms.custom:
 - commerce_vl
 - AdminTemplateSet

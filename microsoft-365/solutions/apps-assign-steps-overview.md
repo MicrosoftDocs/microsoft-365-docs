@@ -32,7 +32,7 @@ Microsoft Entra ID, formerly known as Azure Active Directory (Azure AD), is a cl
 > [!NOTE]
 > Microsoft renamed Azure Active Directory (Azure AD) to Microsoft Entra ID to communicate the multicloud, multiplatform functionality of the products, alleviate confusion with Windows Server Active Directory, and unify the [Microsoft Entra](/entra) product family.  
 
-Every Microsoft tenant, such as a tenant that uses Microsoft 365, Office 365, Azure, or Intune, is automatically a Microsoft Entra tenant. You can continue managing access to your integrated apps, including those that you add and deploy from Intune.
+Every Microsoft tenant, such as a tenant that uses Microsoft 365, Office 365, Azure, or Intune, is automatically a Microsoft Entra tenant. You can continue managing access to your custom apps, including those that you add and deploy from Intune.
 
 > [!NOTE]
 > A tenant is a dedicated instance of Microsoft Entra ID where your subscription to Intune is hosted. You can configure your tenant, add users and groups, and assign licenses to users. When you're ready, using your tenant, you can help users enroll their devices and add apps that they need to begin the modern endpoint management process. As you continue, you can set configuration and protection policies, as well as other endpoint management capabilities.

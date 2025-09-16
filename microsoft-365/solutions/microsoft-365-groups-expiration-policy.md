@@ -3,8 +3,8 @@ title: "Microsoft 365 group expiration policy"
 ms.reviewer: rahulnayak
 ms.date: 06/25/2024
 f1.keywords: NOCSH
-author: DaniEASmith
-ms.author: danismith
+author: officedocspr5
+ms.author: odocspr
 manager: jtremper
 audience: Admin
 ms.topic: article

@@ -57,12 +57,13 @@ You must be a Global Administrator to turn on this setting.
 
     > [!IMPORTANT]
     > It might take several minutes to load the first report of the day. After the report is loaded, it’s available to view for the next 24 hours. Usage data may take up to 72 hours to update.
+1. Under **Aggregation level**, select the operational hierarchy level at which you want to view the aggregated data.
 
 ### Interpret the report
 
 The table shows usage data for your frontline teams during the date range you selected.
 
-:::image type="content" source="media/flw-usage-report.png" alt-text="Screenshot of the usage dashboard showing the frontline usage report and the Deployment task progress card." lightbox="media/flw-usage-report.png":::
+:::image type="content" source="media/flw-usage-report-with-active-channels-and-chats-data.png" alt-text="Screenshot of the usage dashboard showing the frontline usage report and the Deployment task progress card." lightbox="media/flw-usage-report-with-active-channels-and-chats-data.png":::
 
 Each row in the table represents a team.
 
@@ -71,8 +72,13 @@ Each row in the table represents a team.
 |Team name |The name of the team.|
 |Team ID   |The ID of the team.|
 |Total members|The total number of users on each team.|
-|Active users|The number of active users on each team. Users are considered active if they signed in to Teams one time during the selected date range. |
-|Last activity date    |The last date on which the user signed in to Teams.|
+|Active users|The number of active users on each team. Users are considered active if they signed in to Teams at least one time during the selected date range. |
+|Active Walkie Talkie users|The number of Walkie Talkie users on each team. Users are considered active walkie-talkie user if they used walkie talkie at least one time during the selected date range. |
+|Active chat users|The number of active chat users on each team. Users are considered active chat user if they posted at least one message in a private chat during the selected date range. |
+|Chat message count|The number of unique messages that the user posted in a private chat during the selected date range. |
+|Active channels|The number of active channels on each team. Channels are considered active if they have at least one active user during the selected date range. |
+|Channels' posted messages|The number of unique messages that the user posted in a channel during the selected date range. |
+|Last activity date|The last date on which the user signed in to Teams.|
 
 You can:
 

@@ -39,7 +39,7 @@ description: "Explains how to use PowerShell to remove Microsoft 365 licenses th
 
 ## Use the Microsoft Graph PowerShell SDK
 
-First, [connect to your Microsoft 365 tenant](/graph/powershell/get-started#authentication).
+First, [connect to your Microsoft 365 tenant](/powershell/microsoftgraph/get-started?view=graph-powershell-1.0#authentication).
 
 Assigning and removing licenses for a user requires the User.ReadWrite.All permission scope or one of the other permissions listed in the ['Assign license' Graph API reference page](/graph/api/user-assignlicense).
 

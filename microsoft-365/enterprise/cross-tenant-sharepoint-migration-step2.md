@@ -16,24 +16,24 @@ ms.collection:
 search.appverid: MET150
 description: "Step 2 of the SharePoint Cross-tenant migration feature"
 ---
-# Step 2: Establishing trust between the source and target tenants (preview)
+# Step 2: Establishing trust between the source and target tenants (SharePoint)
 
->[!Note]
->Cross-Tenant SharePoint migration is currently in a private preview stage of development. As an unfinished project, any information or availability is subject to change at any time. Support for private-preview customers will be handled via email. Cross-Tenant SharePoint migration is covered by the preview terms of the [Microsoft Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/all).
+<!-- >[!Note]
+>Cross-Tenant SharePoint migration is currently in a private preview stage of development. As an unfinished project, any information or availability is subject to change at any time. Support for private-preview customers will be handled via email. Cross-Tenant SharePoint migration is covered by the preview terms of the [Microsoft Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/all).-->
 
-This is Step 2 in a solution designed to complete a Cross-tenant SharePoint migration. To learn more, see [Cross-tenant SharePoint migration overview](cross-tenant-SharePoint-migration.md).
+This article is Step 2 in a solution designed to complete a Cross-tenant SharePoint migration. To learn more, see [Cross-tenant SharePoint migration overview](cross-tenant-SharePoint-migration.md).
 
 - Step 1: [Connect to the source and the target tenants](cross-tenant-SharePoint-migration-step1.md)
 - **Step 2: [Establish trust between the source and the target tenant](cross-tenant-SharePoint-migration-step2.md)**
-- Step 3: [Verify trust has been established](cross-tenant-SharePoint-migration-step3.md)
+- Step 3: [Verify trust is established](cross-tenant-SharePoint-migration-step3.md)
 - Step 4: [Precreate users and groups](cross-tenant-SharePoint-migration-step4.md)
 - Step 5: [Prepare identity mapping](cross-tenant-SharePoint-migration-step5.md)
 - Step 6: [Start a Cross-tenant SharePoint migration](cross-tenant-SharePoint-migration-step6.md)
 - Step 7: [Post migration steps](cross-tenant-SharePoint-migration-step7.md)
 
-After connecting to the source and target tenant, the next step in performing a cross-tenant SharePoint migration is establishing trust between the tenants.
+After you connect to the source and target tenant, the next step in performing a cross-tenant SharePoint migration is establishing trust between the tenants.
 
-To establish trust, each SharePoint tenant administrator must run specific commands on both source and target tenants. Once the trust has been requested, the administrator of the target tenant will receive an email informing them that another tenant is trying to establish a trust relationship.
+To establish trust, each SharePoint tenant administrator must run specific commands on both source and target tenants. Once the trust is requested, the administrator of the target tenant receives an email informing them that another tenant is trying to establish a trust relationship.
 
 > [!NOTE]
 > The "trust" command is specific to SharePoint. It only grants permission for the SharePoint administrator on the source tenant to execute SharePoint Migration operations to the identified target tenant.
@@ -41,11 +41,11 @@ To establish trust, each SharePoint tenant administrator must run specific comma
 > Granting trust *doesn't* give the administrator any visibility, permission, or ability to collaborate between the source tenant and the target tenant.
 
 > [!IMPORTANT]
-> If you are Microsoft 365 Multi-Geo customer, you must establish trust between each geography involved in your migration project.
+> If you're a Microsoft 365 Multi-Geo customer, you must establish trust between each geography involved in your migration project.
 
 ## Before you begin
 
-Before running the trust commands, obtain the cross-tenant host URLs for both the source and target tenants. You'll need these URLs when establishing the trust relationship between source-to-target and target-to-source.
+Before running the trust commands, obtain the cross-tenant host URLs for both the source and target tenants. You need these URLs when establishing the trust relationship between source-to-target and target-to-source.
 
 **To obtain the cross-tenant host URLs:**
 
@@ -81,14 +81,14 @@ These commands send a request to the tenant with whom you want to establish trus
 
 ### Parameter definitions
 
-|Parameter|Definition|
-|---|---|
-|PartnerRole|Roles of the partner tenant you're establishing trust with.  Use *source* if partner tenant is the source of the SharePoint migrations, and *target* if the partner tenant is the Destination.
-|PartnerCrossTenantHostURL|The cross-tenant host URL of the partner tenant. The partner tenant can determine this for you by running: *Get-SPOCrossTenantHostURL* on each of the tenants.|
+|Parameter |Definition |
+|----------|-----------|
+|PartnerRole |Roles of the partner tenant you're establishing trust with. Use *source* if the partner tenant is the source of the SharePoint migrations, and *target* if the partner tenant is the destination. |
+|PartnerCrossTenantHostURL |The cross-tenant host URL of the partner tenant. The partner tenant can determine this URL for you by running: *Get-SPOCrossTenantHostURL* on each of the tenants. |
 
 ## Sample trust email
 
-The following in an example of the email that is sent to global admins:
+The following image shows an example of the email sent to a global admin:
 
 :::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-trust-email.png" alt-text="example of trust email":::
 
@@ -97,6 +97,6 @@ The following in an example of the email that is sent to global admins:
 **Message:**  SPO Tenant [https://a830edad9050849mnaus093022-my.sharepoint.com/] [setuporupdate] Organization Relation [Scenario=MnA, Role=Source] with us
 
 > [!IMPORTANT]
-> Microsoft recommends that you use roles with the fewest permissions. This helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
+> Microsoft recommends that you use roles with the fewest permissions. This usage helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
 
-## Step 3: [Verify that trust has been established](cross-tenant-SharePoint-migration-step3.md)
+## Step 3: [Verify that trust is established](cross-tenant-SharePoint-migration-step3.md)

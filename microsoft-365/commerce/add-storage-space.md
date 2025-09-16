@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
-manager: scotv
+manager: dansimp
 ms.reviewer: emmasheridan, nicholak
 audience: Admin
 ms.topic: how-to
@@ -13,10 +13,11 @@ ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
 ms.collection:
 - Tier1
-- scotvorg 
-- M365-subscription-management 
+- scotvorg
+- M365-subscription-management
 - Adm_O365
 - SPO_Content
+- operations-pod
 ms.custom:
 - commerce_subscriptions
 - MAX_CampaignID
@@ -29,7 +30,7 @@ ms.custom:
 - GAUpdates
 search.appverid: MET150
 description: "Learn how to add extra SharePoint file storage in your Microsoft 365 subscription."
-ms.date: 03/27/2025
+ms.date: 07/30/2025
 ---
 
 # Add more SharePoint storage to your subscription

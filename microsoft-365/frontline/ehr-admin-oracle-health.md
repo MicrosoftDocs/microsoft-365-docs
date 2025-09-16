@@ -32,6 +32,9 @@ ms.date: 06/26/2024
 
 # Virtual Appointments with Teams - Integration into Oracle Health EHR
 
+> [!IMPORTANT]
+> This EHR integration is no longer supported.
+
 The Microsoft Teams Electronic Health Record (EHR) connector makes it easy for clinicians to launch a virtual patient appointment or consult with another provider in Microsoft Teams directly from the Oracle Health EHR system. Built on the Microsoft 365 cloud, Teams enables simple, secure collaboration and communication with chat, video, voice, and healthcare tools in a single hub that supports compliance with HIPAA, HITECH certification, and more.
 
 The communication and collaboration platform of Teams makes it easy for clinicians to cut through the clutter of fragmented systems so they can focus on providing the best possible care. With the Teams EHR connector, you can:

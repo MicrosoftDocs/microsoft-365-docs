@@ -2,10 +2,10 @@
 title: "Multifactor authentication for Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekuako
-manager: scotv
-ms.date: 10/02/2024
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
+ms.date: 08/12/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -16,160 +16,97 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- trust-pod
 ms.custom: 
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
 - admindeeplinkMAC
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Multi-factor authentication (MFA) uses both a password, which should be strong, and an additional verification method."
+description: "Learn about the options for multi-factor authentication in Microsoft 365 (also known as MFA, two-factor authentication, or 2FA)."
 ---
 
-# Multifactor authentication for Microsoft 365
+# Multifactor authentication in Microsoft 365
 
-Passwords are the most common method of authenticating a sign-in to a computer or online service, but they're also the most vulnerable. People can choose easy passwords and use the same passwords for multiple sign-ins to different computers and services.
+Passwords are the most common method of authenticating users, but they're also the most vulnerable. People often use weak, easy to guess passwords, and use the same credentials at different services.
 
-To provide an extra level of security for sign-ins, you must use multifactor authentication (MFA), which uses both a password, which should be strong, and an additional verification method based on:
+To provide an extra level of security, multifactor authentication (also known as MFA, two-factor authentication, or 2FA) requires a second verification method for user sign-ins based on:
 
-- Something you have with you that isn't easily duplicated, such as a smart phone.
-- Something you uniquely and biologically have, such as your fingerprints, face, or other biometric attribute.
+- Something a user has that isn't easily duplicated. For example, a smart phone.
+- Something unique to the user. For example, a fingerprint or other biometric attributes.
 
-The additional verification method isn't employed until after the user's password has been verified. With MFA, even if a strong user password is compromised, the attacker doesn't have your smart phone or your fingerprint to complete the sign-in.
+The extra verification method is used only after the password is verified. Even if a strong user password is compromised, the attacker doesn't have the user's smart phone or fingerprints to complete the sign-in.
 
-## MFA support in Microsoft 365
+The available methods to enable MFA in Microsoft 365 organizations, including Microsoft 365 for business organizations, are described in the following sections.
 
-By default, both Microsoft 365 and Office 365 support MFA for user accounts using:
+For configuration instructions, see [Set up MFA for Microsoft 365](set-up-multi-factor-authentication.md).
 
-- A text message sent to a phone that requires the user to type a verification code.
-- A phone call.
-- The Microsoft Authenticator smart phone app.
+## Security defaults
 
-In both cases, the MFA sign-in is using the "something you have with you that isn't easily duplicated" method for the additional verification. There are multiple ways in which you can enable MFA for Microsoft 365 and Office 365:
+Security defaults is a set of unmodifiable policies in all Microsoft 365 organizations via Microsoft Entra ID Free.
 
-- With security defaults
-- With Conditional Access policies
-- For each individual user account (not recommended)
+Security defaults include the following security features:
 
-These ways are based on your Microsoft 365 plan.
+- Require all users and admins to register for Microsoft Entra multifactor authentication (MFA) using the [Microsoft Authenticator app](/entra/identity/authentication/concept-authentication-authenticator-app) or any non-Microsoft authentication app that supports [OATH TOTP](/entra/identity/authentication/concept-authentication-oath-tokens#oath-software-tokens).
+- Require MFA for admin accounts at every sign in.
+- Require MFA for users when necessary (for example, on new devices).
+- Block legacy authentication protocols (for example, POP3 and IMAP4 in old email clients).
+- Require MFA for users and admins accessing Azure Resource Manager services (for example, the Microsoft Azure portal).
 
-|Plan|Recommendation|Type of customer|
-|---|---|---|
-|All Microsoft 365 plans|Use security defaults, which require MFA for all user accounts. <p> You can also configure per-user MFA on individual user accounts, but this isn't recommended.|Small business|
-|Microsoft 365 Business Premium <p> Microsoft 365 E3 <p> Microsoft Entra ID P1 licenses|Use [security defaults or Conditional Access policies](/microsoft-365/business-premium/m365bp-turn-on-mfa) to require MFA for user accounts based on group membership, apps, or other criteria.|Small business to enterprise|
-|Microsoft 365 E5 <p> Microsoft Entra ID P2 licenses|Use Microsoft Entra ID Protection to require MFA based on sign-in risk criteria.|Enterprise|
-||||
+Security defaults is either on or off in an organization. Microsoft 365 organizations created after October 2019 have security defaults (hence, MFA) turned on by default, **so you don't need to do anything to enable security defaults or MFA in a new organization**. For many organizations, security defaults offer a good, baseline level of sign-in security.
 
-### Security defaults
+For more information about security defaults and the policies enforced, see [Enforced security policies in security defaults](/entra/fundamentals/security-defaults#enforced-security-policies).
 
-Security defaults is a new feature for Microsoft 365 and Office 365 paid or trial subscriptions created after October 21, 2019. These subscriptions have security defaults turned on, which:
+To configure security defaults, see [Manage security defaults](set-up-multi-factor-authentication.md#manage-security-defaults).
 
-- Requires all of your users to use MFA with the Microsoft Authenticator app.
-- Blocks legacy authentication.
+## Conditional Access policies
 
-Users have 14 days to register for MFA with the Microsoft Authenticator app from their smart phones, which begins from the first time they sign in after security defaults has been enabled. After 14 days have passed, the user won't be able to sign in until MFA registration is completed.
+In addition to security defaults, Conditional Access policies are available in organizations with Microsoft Entra ID P1 or P2. For example:
 
-Security defaults ensure that all organizations have a basic level of security for user sign-in that is enabled by default. You can disable security defaults in favor of MFA with Conditional Access policies.
+- Microsoft 365 Business Premium (Microsoft Entra ID P1)
+- Microsoft 365 E3 (Microsoft Entra ID P1)
+- Microsoft 365 E5 (Microsoft Entra ID P2)
+- An add-on subscription
 
-You enable or disable security defaults from the **Properties** pane for Microsoft Entra ID in the Azure portal.
+  > [!TIP]
+  > Organizations with Microsoft Entra ID P2 also have access to Microsoft Entra ID Protection. You can create a Conditional Access policy to [require multifactor authentication for elevated sign-in risk](/entra/identity/conditional-access/policy-risk-based-sign-in). For more information, see [What is Microsoft Entra ID Protection?](/entra/id-protection/overview-identity-protection).
 
-![Picture of the Directory properties page.](../../media/multi-factor-authentication-microsoft-365/security-defaults-mfa.png)
+You create Conditional Access policies that react to sign-in events before a user is granted access to an application or service. If your organization has complex security requirements or you need granular control over security policies, you can use Conditional Access policies instead of security defaults.
 
-You can use security defaults with any Microsoft 365 plan.
+> [!TIP]
+> Organizations can use security defaults or Conditional Access policies, but not both at the same time. Conditional Access policies require security defaults to be turned off, so it's important to recreate the policies from security defaults in Conditional Access policies as a baseline for all users.
 
-For more information, see this [overview of security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults).
+For more information about Conditional Access policies, see [What is Conditional Access?](/entra/identity/conditional-access/overview).
 
-### Conditional Access policies
-
-Conditional Access policies are a set of rules that specify the conditions under which sign-ins are evaluated and allowed. For example, you can create a Conditional Access policy that states:
-
-- If the user account name is a member of a group for users that are assigned the Exchange, user, password, security, SharePoint, or global administrator roles, require MFA before allowing access.
-
-This policy allows you to require MFA based on group membership, rather than trying to configure individual user accounts for MFA when they're assigned or unassigned from these administrator roles.
-
-You can also use Conditional Access policies for more advanced capabilities, such as requiring MFA for specific apps or that the sign-in is done from a compliant device, such as your laptop running Windows 10.
-
-You configure Conditional Access policies from the **Security** pane for Microsoft Entra ID in the Azure portal.
-
-![Picture of menu option for Conditional Access.](../../media/multi-factor-authentication-microsoft-365/conditional-access-mfa.png)
-
-You can use Conditional Access policies with:
-
-- Microsoft 365 Business Premium
-- Microsoft 365 E3 and E5
-- Microsoft Entra ID P1 and Microsoft Entra ID P2 licenses
-
-For small businesses with Microsoft 365 Business Premium, you can easily use Conditional Access policies with the following steps:
-
-1. Create a group to contain the user accounts that require MFA.
-2. Enable the **Require MFA for global admins** policy.
-3. Create a group-based Conditional Access policy with these settings:
-    - Assignments > Users and groups: The name of your group from Step 1 above.
-    - Assignments > Cloud apps or actions: All cloud apps.
-    - Access controls > Grant > Grant access > Require multi-factor authentication.
-4. Enable the policy.
-5. Add a user account to the group created in Step 1 above and test.
-6. To require MFA for additional user accounts, add them to the group created in Step 1.
-
-This Conditional Access policy allows you to roll out the MFA requirement to your users at your own pace.
-
-Enterprises should use [Common Conditional Access policies](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) to configure the following policies:
-
-- [Require MFA for administrators](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
-- [Require MFA for all users](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
-- [Block legacy authentication](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
-
-For more information, see this [overview of Conditional Access](/azure/active-directory/conditional-access/overview).
+To configure Conditional Access policies, see [Manage Conditional Access policies](set-up-multi-factor-authentication.md#manage-conditional-access-policies).
 
 <a name='azure-ad-identity-protection'></a>
 
-### Microsoft Entra ID Protection
+## Legacy per-user MFA (not recommended)
 
-With Microsoft Entra ID Protection, you can create an additional Conditional Access policy to [require MFA when sign-in risk is medium or high](../../security/office-365-security/zero-trust-identity-device-access-policies-common.md#require-mfa-based-on-sign-in-risk).
+If you can't use security defaults or Conditional Access for business reasons, last option is legacy MFA for individual Microsoft Entra ID accounts in all Microsoft 365 organizations via Microsoft Entra ID Free. We strongly recommend MFA for accounts with administrator roles, especially the Global Administrator role.
 
-You can use Microsoft Entra ID Protection and risk-based Conditional Access policies with:
+For configuration instructions, see [Enable per-user Microsoft Entra multifactor authentication to secure sign-in events](/entra/identity/authentication/howto-mfa-userstates).
 
-- Microsoft 365 E5
-- Microsoft Entra ID P2 licenses
+## Comparing MFA methods
 
-For more information, see this [overview of Microsoft Entra ID Protection](/azure/active-directory/identity-protection/overview-identity-protection).
+The following table shows the results of enabling MFA with security defaults, Conditional Access policies, or per-user account settings.
 
-### Legacy per-user MFA (not recommended)
-
-You should be using either security defaults or Conditional Access policies to require MFA for your user account sign-ins. However, if either of these can’t be used, Microsoft strongly recommends MFA for user accounts that have administrator roles, especially the global administrator role, for any size subscription.
-
-You enable MFA for individual user accounts from the <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a> pane of the Microsoft 365 admin center.
-
-![Picture of Multi factor authentication option on Active users page.](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
-
-After being enabled, the next time the user signs in, they'll be prompted to register for MFA and to choose and test the additional verification method.
-
-### Using these methods together
-
-This table shows the results of enabling MFA with security defaults, Conditional Access policies, and per-user account settings.
-
-|*Item*|Enabled|Disabled|Secondary authentication method|
+|Method|Method enabled|Method disabled|Available authentication methods|
 |---|---|---|---|
-|**Security defaults**|Can't use Conditional Access policies|Can use Conditional Access policies|Microsoft Authenticator app|
-|**Conditional Access policies**|If any are enabled, you can't enable security defaults|If all are disabled, you can enable security defaults|User-specified during MFA registration|
-|**Legacy per-user MFA (not recommended)**|Overrides security defaults and Conditional Access policies requiring MFA at each sign-in|Overridden by security defaults and Conditional Access policies|User-specified during MFA registration|
-||||
-
-If security defaults are enabled, all new users are prompted for MFA registration and the use of the Microsoft Authenticator app at their next sign-in.
-
-## Ways to manage MFA settings
-
-There are two ways to manage MFA settings.
-
-In the Azure portal, you can:
-
-- Enable and disable security defaults
-- Configure Conditional Access policies
-
-In the Microsoft 365 admin center, you can configure per-user and service <a href="https://go.microsoft.com/fwlink/?LinkId=279980" target="_blank">MFA settings</a>.
+|**Security defaults**|If security defaults is turned on, you can create new Conditional Access policies, but you can't turn them on.|After you turn off security defaults, you can turn on Conditional Access policies.|[Microsoft Authenticator app](/entra/identity/authentication/concept-authentication-authenticator-app) or any non-Microsoft authentication app that supports [OATH TOTP](/entra/identity/authentication/concept-authentication-oath-tokens#oath-software-tokens).|
+|**Conditional Access policies**|If one or more Conditional Access policies exist in any state (**Off**, **On**, or **Report only**), you can't turn on security defaults.|If there are no Conditional Access policies, you can enable security defaults.|[Microsoft Authenticator app](/entra/identity/authentication/concept-authentication-authenticator-app) or any non-Microsoft authentication app that supports [OATH TOTP](/entra/identity/authentication/concept-authentication-oath-tokens#oath-software-tokens). <br/><br/>Other authentication methods might also be available, depending on the configured [authentication strength](/compliance/anz/e8-mfa-configure-authentication-strengths).|
+|**Legacy per-user MFA (not recommended)**|Overrides security defaults and Conditional Access policies requiring MFA at each sign-in.|Overridden by security defaults or Conditional Access policies|User-specified during MFA registration|
 
 ## Next steps
 
-[Set up MFA for Microsoft 365](set-up-multi-factor-authentication.md)
+- **Admins**:
+  - [Set up MFA for Microsoft 365](set-up-multi-factor-authentication.md)
+  - [Admin account security in Microsoft 365 for business](m365b-account-security-admins.md)
+
+- **Users**: [Set up your Microsoft 365 sign-in for multifactor authentication](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14) and the following video:
+
+  > [!VIDEO https://learn-video.azurefd.net/vod/player?id=eb0acd2a-edf5-4c1d-8e72-e3254bc7dc12]
 
 ## Related content
 

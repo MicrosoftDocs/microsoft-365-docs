@@ -4,18 +4,19 @@ f1.keywords:
 - CSH
 author: cmcatee-MSFT
 ms.author: cmcatee
-manager: scotv
+manager: dansimp
 ms.reviewer: lishepar, jobailey
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-management
 ms.localizationpriority: high
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
+- operations-pod
 ms.custom:
 - commerce_billing
 - TopSMBIssues
@@ -30,7 +31,7 @@ ms.custom:
 - campaignIDs-batch1
 search.appverid: MET150
 description: "Learn how to manage your payment methods for Microsoft business products or services in the Microsoft 365 admin center."
-ms.date: 06/17/2025
+ms.date: 08/14/2025
 ---
 
 # Manage payment methods for Microsoft business accounts
@@ -55,11 +56,20 @@ When you buy Microsoft business products or services, you can use an existing pa
 > [!NOTE]
 > If you're the person who signed up for the subscription, you're automatically a Billing account owner.
 
-## Watch: Update your payment method
+## View your payment methods
 
-Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198016).
+The **Payment methods** page lists the payment methods associated with your account. If you have an MCA billing account, you also see a section that shows the payment methods associated with the current billing account.
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=ad949d04-8b23-425c-93f1-264ebed05738]
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
+
+   - If you're using the **Simplified view**, select **Products**, then select **View payment methods**.
+   - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page, and select the **Payment methods** tab.
+
+2. If you have more than one billing account, under **Billing account view**, select **Change billing account** to view payment methods associated with each billing account.
+
+The following screenshot shows an example of the **Payment methods** page that includes the first table that contains the payment methods you own, and have added. The second table lists the payment methods associated with a billing profile for the selected billing account.
+
+:::image type="content" source="../../media/m365-billing-payment-methods.png" alt-text="Screenshot of the Payment methods page that shows payment methods and billing profiles for the selected billing account." lightbox="../../media/m365-billing-payment-methods.png":::
 
 ## Add a payment method
 
@@ -90,7 +100,7 @@ When you replace an existing payment method, you can add a new one or use a paym
 If you have an MCA billing account type, you can replace the payment method currently linked with a billing profile. If you have an MOSA billing account type, you can replace the payment method associated with one or more subscriptions.
 
 > [!IMPORTANT]
-> Replacing a payment method doesn't delete the existing payment method. The old payment method is still available for you to select and use for other subscriptions and billing profiles. Learn how to delete a payment method.
+> Replacing a payment method doesn't delete the existing payment method. The old payment method is still available for you to select and use for other subscriptions and billing profiles. [Learn how to delete a payment method](#delete-a-payment-method).
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
 
@@ -126,6 +136,9 @@ You can change the name, billing address, or expiration date for an existing cre
 ## Delete a payment method
 
 You can only delete a payment method that isn't attached to a subscription or billing profile. This applies to all subscriptions, regardless of their status.
+
+> [!NOTE]
+> If you have an [Entra Free subscription](/azure/cost-management-billing/manage/microsoft-entra-id-free) inside your billing account you cannot delete or detach the last payment method on file. To remove the last payment method, you must delete the tenant. For more information about deleting a tenant, see [Delete the organization](/entra/identity/users/directory-delete-howto#delete-the-organization).
 
 ### Delete a payment method with no subscriptions or billing profiles attached
 

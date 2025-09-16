@@ -1,9 +1,10 @@
 ---
 ms.date: 06/10/2025
+ms.update-cycle: 180-days
 title: "Manage Copilot Pages and Copilot Notebooks in your organization"
 ms.reviewer: dancost, tonchan
-ms.author: jenz
-author: jenzamora
+ms.author: odocspr
+author: officedocspr5
 manager: jtremper
 recommendations: true
 audience: Admin
@@ -92,6 +93,7 @@ In case you create a new policy configuration or change the configuration for an
 
 ## Related topics
 
+- [Data Integrations Admin Settings](loop-data-integrations-configuration.md)
 - [Summary of Compliance, Lifecycle, Governance](cpcn-compliance-summary.md)
 - [Requirements](cpcn-loop-requirements.md)
 - [Storage](cpcn-storage.md)

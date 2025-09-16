@@ -2,21 +2,22 @@
 title: "Step 3 - Wipe and block a former employee's mobile device"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekuako
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 ms.date: 01/06/2025
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
 - SPO_Content
+- trust-pod
 ms.custom:
 - MSStore_Link
 - TRN_M365B
@@ -29,7 +30,7 @@ description: "Use the Exchange admin center to wipe and block a former employee'
 
 # Step 3 - Wipe and block a former employee's mobile device
 
-If your former employee had an organization phone, you can use the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a> to wipe and block that device so that all organization data is removed from the device and it can no longer connect to Microsoft 365. If your organization uses Basic Mobility and Security to manage mobile devices, you can wipe and block those devices [using Basic Mobility and Security](../basic-mobility-security/wipe-mobile-device.md).
+If your former employee had an organization phone, you can use the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a> to wipe and block that device so that all organization data is removed from the device and it can no longer connect to Microsoft 365. If your organization uses Basic Mobility and Security to manage mobile devices, you can wipe and block those devices [using Basic Mobility and Security](/microsoft-365/admin/security-and-compliance/m365b-devices-basic-mobility-security-wipe-devices).
 
 ## Wipe mobile device using the Exchange admin center
 

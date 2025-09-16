@@ -1,8 +1,8 @@
 ---
 title: Configure teams with protection for highly sensitive data
 f1.keywords: NOCSH
-author: DaniEASmith
-ms.author: danismith
+author: officedocspr5
+ms.author: odocspr
 manager: jtremper
 ms.date: 12/08/2023
 audience: ITPro

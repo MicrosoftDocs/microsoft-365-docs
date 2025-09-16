@@ -7,6 +7,7 @@ metadata:
   keywords: copilot, microsoft 365, copilot chat, agents, microsoft copilot documentation
   ms.topic: marketing-hub
   ms.author: dansimp
+  manager: debrajoh
   ms.audience: ITPro
   author: dansimp
   ms.date: 05/20/2025
@@ -146,4 +147,4 @@ sections:
       - componentType: summary-card
         title: Copilot Prompt Gallery
         summary: Explore examples of how to interact with Copilot across apps using natural language prompts.
-        url: https://copilot.cloud.microsoft/prompts
+        url: https://m365.cloud.microsoft/copilot-prompts

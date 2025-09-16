@@ -2,9 +2,9 @@
 title: "Perform an internal admin takeover"
 f1.keywords:
 - CSH
-ms.author: efrene
-author: efrene
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 ms.date: 11/27/2023
 audience: Admin
 ms.topic: how-to
@@ -12,11 +12,11 @@ ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
 - Tier2
-- scotvorg 
-- M365-subscription-management 
+- scotvorg
+- M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: 
+ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:

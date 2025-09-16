@@ -1,7 +1,7 @@
 ---
 title: "Configure Microsoft 365 Lighthouse portal security"
 f1.keywords: CSH
-ms.author: sharik
+ms.author: dansimp
 author: SKjerland
 manager: scotv
 ms.reviewer: taylorau

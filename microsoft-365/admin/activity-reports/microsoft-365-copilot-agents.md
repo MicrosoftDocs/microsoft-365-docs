@@ -1,14 +1,15 @@
 ---
 title: "Agent usage in Microsoft 365 Copilot"
-ms.author: camillepack
+ms.author: cmcatee
 author: camillepack
-manager: scotv
+manager: dansimp
 ms.date: 10/02/2024
+ms.update-cycle: 180-days
 audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier2
 - scotvorg
 - M365-subscription-management
@@ -16,6 +17,7 @@ ms.collection:
 - Adm_NonTOC
 - m365copilot
 - magic-ai-copilot
+- operations-pod
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -30,7 +32,7 @@ description: "Learn about agent usage in Microsoft 365 Copilot and gain insights
 In the Microsoft 365 Copilot agent usage report, you can view the adoption of agents in Microsoft 365 Copilot in your org. For agent activity on a given day, the report becomes available within 72 hours of the end of that day (in UTC).
 
 > [!NOTE]
-> The report is currently limited to agents built by your org through Microsoft Copilot Studio or Teams Toolkit (including admin-approved agents and agents created by users through agent builder). The report captures usage of agents in Microsoft 365 Copilot and Copilot in Word and PowerPoint. SharePoint agents and agents built by Microsoft and Microsoft partners are not yet included but will be added at a later date.
+> The report is currently limited to agents built by your org through Microsoft Copilot Studio or Teams Toolkit (including admin-approved agents and agents created by users through agent builder). The report captures usage of agents in Microsoft 365 Copilot and Copilot in Word and PowerPoint. SharePoint agents and agents built by Microsoft and Microsoft partners are not yet included but will be added at a later date.<br><br>A [new agent report](/microsoft-365/admin/activity-reports/microsoft-365-copilot-agents-new) is now available in the Microsoft 365 admin center. 
 
 ## How do I get to the agent usage in Microsoft 365 Copilot report?
 

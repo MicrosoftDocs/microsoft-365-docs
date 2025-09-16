@@ -98,9 +98,6 @@ conceptualContent:
             - url: /purview/
               itemType: overview
               text: Microsoft Purview
-            - url: /microsoft-365/contentunderstanding/
-              itemType: overview
-              text: Microsoft Syntex
             - url: /viva/
               itemType: overview
               text: Microsoft Viva
@@ -150,9 +147,9 @@ conceptualContent:
             - url: solutions/data-privacy-protection.md
               itemType: how-to-guide
               text: Manage data privacy and data protection
-            - url: business-premium/m365bp-overview.md
+            - url: /microsoft-365/admin/security-and-compliance/m365b-security-overview
               itemType: how-to-guide
-              text: Microsoft 365 for smaller businesses and campaigns
+              text: Microsoft 365 security for smaller businesses and campaigns
             - url: solutions/productivity-illustrations.md
               itemType: download
               text: Microsoft 365 productivity illustrations

@@ -34,7 +34,9 @@ description: Learn about Azure ExpressRoute with Microsoft 365 and plan the netw
 Learn how Azure ExpressRoute is used with Microsoft 365 and how to plan the network implementation project that will be required if you meet specific requirements for deploying Azure ExpressRoute for use with Microsoft 365.
 
 > [!NOTE]
-> We **do not recommend** ExpressRoute for Microsoft 365 because it doesn't provide the best connectivity model for the service in most circumstances. As such, Microsoft authorization is required to use this connectivity model. We review every customer request and authorize ExpressRoute for Microsoft 365 only in the rare scenarios where it's necessary. Read the [ExpressRoute for Microsoft 365 guide](https://aka.ms/erguide) for more information and following a comprehensive review of the document with your productivity, network, and security teams, work with your Microsoft account team to submit an exception if needed. Unauthorized subscriptions trying to create route filters for Microsoft 365 will receive an [error message](https://support.microsoft.com/kb/3181709).
+> We **do not recommend** ExpressRoute for Microsoft 365 because it doesn't provide the best connectivity model for the service in most circumstances. As such, Microsoft authorization is required to use this connectivity model. We review every customer request and authorize ExpressRoute for Microsoft 365 only in the rare scenarios where it's necessary. Read the [ExpressRoute for Microsoft 365 guide](https://aka.ms/erguide) for more information and following a comprehensive review of the document with your productivity, network, and security teams, work with your Microsoft account team to submit an exception if needed. Unauthorized subscriptions trying to create route filters for Microsoft 365 will receive an error message:
+>
+> The customer subscription ID \<Azure subscription ID\> is not authorized for creating route filters for Office 365.
 
 ## Planning Azure ExpressRoute for Microsoft 365
 

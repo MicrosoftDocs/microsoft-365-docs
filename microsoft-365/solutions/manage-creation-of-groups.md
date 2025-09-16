@@ -3,8 +3,8 @@ title: Manage who can create Microsoft 365 Groups
 f1.keywords: NOCSH
 ms.reviewer: rahulnayak
 ms.date: 03/13/2025
-author: DaniEASmith
-ms.author: danismith
+author: officedocspr5
+ms.author: odocspr
 manager: jtremper
 audience: Admin
 ms.topic: solution-overview
@@ -185,7 +185,7 @@ Changes can take 30 minutes or more to take effect. You can verify the new setti
 Try the same procedure again with a member of the group.
 
 > [!NOTE]
-> If members of the group aren't able to create groups, check that they aren't being blocked through their [OWA mailbox policy](/powershell/module/exchange/set-owamailboxpolicy).
+> If members of the group aren't able to create groups, check that they aren't being blocked through their [OWA mailbox policy](/powershell/module/exchangepowershell/set-owamailboxpolicy).
 
 ## Related articles
 

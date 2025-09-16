@@ -1,7 +1,7 @@
 ---
 title: "Overview of the Quarantined messages page in Microsoft 365 Lighthouse"
 f1.keywords: CSH
-ms.author: sharik
+ms.author: dansimp
 author: SKjerland
 manager: scotv
 ms.reviewer: prpath
@@ -23,7 +23,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 ---
 # Overview of the Quarantined messages page in Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse lets you see insights and information about quarantined email messages across all your customer tenants. From a single view, you can triage quarantined email messages and take the appropriate actions. The data is available if the tenant has implemented Exchange Online Protection (EOP) and Microsoft Defender for Office365 Plan 1 (MDO).
+Microsoft 365 Lighthouse lets you see insights and information about quarantined email messages across all your customer tenants. From a single view, you can triage quarantined email messages and take the appropriate actions. The data is available if the tenant is using the default email protections for cloud mailboxes and/or Microsoft Defender for Office 365 Plan 1.
 
 You can access the information in Lighthouse by selecting **Home** in the left navigation pane, or by selecting **Quarantined messages** in the left navigation pane to open the **Quarantined messages** page.
 
@@ -44,7 +44,7 @@ The **Status of messages** section provides a consolidated view across eligible 
 
 The data reflects the last 30 days; however, you can use the **Time range** filter to modify the view.
 
-The **Quarantine reason** section contains a breakdown of quarantine counts by Exchange Online Protection (EOP) and Microsoft Defender for Office365 Plan 1 (MDO) policy type. These types include
+The **Quarantine reason** section contains a breakdown of quarantine counts by threat policy type. These types include
 
 - Malware
 - Phishing
@@ -66,7 +66,7 @@ The **Copy Link to Messages in Microsoft** **365 Defender** option provides a li
 
 ## Related content
 
-[Quarantined email messages](../security/office-365-security/quarantine-about.md) (article)\
-[Microsoft recommendations for EOP and Defender for Office 365 security settings](../security/office-365-security/recommended-settings-for-eop-and-office365.md) (article)\
-[Exchange Online Protection (EOP) overview](../security/office-365-security/eop-about.md) (article)\
+[Quarantined email messages in cloud organizations](/defender-office-365/quarantine-about) (article)\
+[Recommended email and collaboration threat policy settings for cloud organizations](/defender-office-365/recommended-settings-for-eop-and-office365) (article)\
+[Default email protections for cloud mailboxes](/defender-office-365/eop-about) (article)\
 [Overview of the Threat management page](m365-lighthouse-threat-management-page-overview.md) (article)

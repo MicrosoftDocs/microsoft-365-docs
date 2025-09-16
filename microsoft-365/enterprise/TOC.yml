@@ -129,7 +129,7 @@ items:
           href: setup-guides-for-microsoft-365.md
         - name: Integration
           items: 
-            - name: Integrated Apps and Microsoft Entra ID
+            - name: Custom Apps and Microsoft Entra ID
               href: integrated-apps-and-azure-ads.md
             - name: Integration with on-premises
               href: microsoft-365-integration.md
@@ -188,8 +188,8 @@ items:
                   href: microsoft-365-oab-size-limit-service-advisory.md
             - name: Microsoft 365 Apps monitoring
               href: microsoft-365-apps-monitoring.md
-            - name: Microsoft 365 Entra monitoring
-              href: microsoft-365-entra-monitoring.md
+            - name: Microsoft Entra monitoring
+              href: microsoft-entra-monitoring.md
             - name: Microsoft 365 Teams monitoring
               href: microsoft-365-teams-monitoring.md
             - name: Microsoft 365 for the web monitoring
@@ -318,7 +318,7 @@ items:
               href: m365-dr-workload-spo.md
             - name: Microsoft Teams
               href: m365-dr-workload-teams.md
-            - name: Microsoft 365 Copilot
+            - name: Microsoft 365 Copilot and Copilot Chat
               href: m365-dr-workload-copilot.md
             - name: Microsoft Defender for Office P1
               href: m365-dr-workload-mdo-p1.md
@@ -326,16 +326,16 @@ items:
               href: m365-dr-workload-office-for-web.md
             - name: Viva Connections
               href: m365-dr-workload-viva-connections.md
-            - name: Viva Topics
-              href: m365-dr-workload-viva-topics.md
             - name: Microsoft Purview
               href: m365-dr-workload-purview.md
             - name: Other Services
               href: m365-dr-workload-other.md
-        - name: Legacy Move Program
-          href: m365-dr-legacy-move-program.md
-        - name: Where is my data stored? 
-          href: o365-data-locations.md
+        - name: Data Location
+          items:
+            - name: Data Location Card
+              href: m365-dr-data-location.md
+            - name: Where is my data stored? 
+              href: o365-data-locations.md
 
 - name: Identity
   items: 

@@ -1,19 +1,21 @@
----  
-title: "Copilot Search admin experience"  
-author: kwekuako
-ms.author: kwekua  
+---
+title: "Copilot Search admin experience"
+author: Efrene
+ms.author: efrene
 manager: dansimp
-ms.date: 06/05/2025  
+ms.date: 06/05/2025
 ms.topic: overview
-ms.service: microsoft-365-admin
+ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
-ms.collection: CopilotSearch
+ms.collection:
+- CopilotSearch
+- operations-pod
 ms.custom: QuickDraft
 ms.reviewer: kwekua
 audience: admin
 ai-usage: ai-assisted
 description: Information on the admin experience in Microsoft 365 Copilot Search.
----  
+---
 
 # Microsoft 365 Copilot Search admin experience
 
@@ -176,3 +178,9 @@ To prevent errors, make sure your import file is properly formatted and:
 
 - Don't use the same URL in different bookmarks. You'll get an error if you try to import a bookmark with a URL used in an existing one. This also applies to duplicate URLs in other types of answers.
 - When updating existing bookmarks, use the bookmark ID column. You can update any other property of an existing bookmark, such as keyword or description, but you should make sure the bookmark ID is in the appropriate column of the import file. If the bookmark ID is present, it won't be treated as a new addition and won't be processed as an error.
+
+## Video: Acronyms and bookmarks
+
+The following video is an overview of creating and managing acronyms and bookmarks in Microsoft 365 Copilot search. It's 1 minute and 54 seconds long.
+
+> [!VIDEO 3b7215a4-14c4-49e9-bfa4-f87985ef77b7]

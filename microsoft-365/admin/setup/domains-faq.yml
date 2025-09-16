@@ -4,9 +4,9 @@ metadata:
   title: Domains Frequently Asked Questions
   f1.keywords:
   - NOCSH
-  ms.author: kvice
-  author: kelleyvice-msft
-  manager: scotv
+  ms.author: kwekua
+  author: kwekuako
+  manager: dansimp
   audience: Admin
   ms.topic: faq
   ms.service: microsoft-365-business
@@ -17,6 +17,7 @@ metadata:
   - M365-subscription-management
   - Adm_O365
   - Adm_TOC
+  - operations-pod  
   ms.custom: 
   - AdminSurgePortfolio
   - okr_smb

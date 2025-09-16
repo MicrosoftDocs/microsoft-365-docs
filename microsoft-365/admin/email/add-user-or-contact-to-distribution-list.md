@@ -4,21 +4,22 @@ f1.keywords:
 - NOCSH
 ms.author: kwekua
 author: kwekuako
-manager: scotv
+manager: dansimp
 ms.date: 11/14/2024
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier3
 - scotvorg
 - highpri
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- operations-pod
 ms.custom:
-- VSBFY23 
+- VSBFY23
 - AdminSurgePortfolio
 - AdminTemplateSet
 description: "Learn how to add a Microsoft 365 user or contact such as an employee, partner, or vendor to an email distribution group."

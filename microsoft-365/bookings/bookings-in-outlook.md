@@ -15,6 +15,7 @@ ms.collection:
 - essentials-get-started
 - essentials-manage
 - must-keep
+- operations-pod
 description: "Steps to turn off Personal Bookings."
 ---
 
@@ -22,7 +23,7 @@ description: "Steps to turn off Personal Bookings."
 
 Personal Bookings and Bookings share the same licensing model. However, Bookings doesn't have to be turned on for the organization using tenant settings for users to access Personal Bookings. The Bookings app must be enabled for users to have access to Personal Bookings.
 
-To turn on Personal Bookings without access to Bookings, block access to Microsoft Bookings using the [OWA Mailbox policy PowerShell command](/powershell/module/exchange/set-owamailboxpolicy) or follow the instructions here: [Turn Microsoft Bookings on or off](turn-bookings-on-or-off.md).
+To turn on Personal Bookings without access to Bookings, block access to Microsoft Bookings using the [OWA Mailbox policy PowerShell command](/powershell/module/exchangepowershell/set-owamailboxpolicy) or follow the instructions here: [Turn Microsoft Bookings on or off](turn-bookings-on-or-off.md).
 
 ## Turn Personal Bookings on or off
 
@@ -30,7 +31,7 @@ Personal Bookings can be turned on or off for your entire organization or specif
 
 ### Turn Personal Bookings on or off for your organization using PowerShell
 
-You'll need to run the following commands using Exchange Online PowerShell. For more information on running Exchange Online cmdlets, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To turn Personal Bookings on or off for your organization using the PowerShell cmdlet [Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig), [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) and run the following commands.
+You'll need to run the following commands using Exchange Online PowerShell. For more information on running Exchange Online cmdlets, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To turn Personal Bookings on or off for your organization using the PowerShell cmdlet [Set-OrganizationConfig](/powershell/module/exchangepowershell/set-organizationconfig), [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) and run the following commands.
 
 Use the **Get-OrganizationConfig** and **Set-OrganizationConfig** commands to find out the status and turn Bookings with me on or off for your organization.
 

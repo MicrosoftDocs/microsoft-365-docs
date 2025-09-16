@@ -2,19 +2,20 @@
 title: "Domain registrars with setup limitations"
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
-manager: scotv
+ms.author: kwekua
+author: kwekuako
+manager: dansimp
 ms.date: 08/10/2021
 audience: Admin
 ms.topic: install-set-up-deploy
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - scotvorg
 - M365-subscription-management
 - Adm_O365
-ms.custom: 
+- operations-pod
+ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet

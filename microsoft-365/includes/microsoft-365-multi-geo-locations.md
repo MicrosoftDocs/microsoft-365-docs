@@ -5,8 +5,10 @@ ms.date: 04/01/2024
 |:------------------------------------------------------------------------------------|:-------|
 |South Korea, Japan, Singapore, Malaysia, Hong Kong Special Administrative Region     |APC
 |Australia                                                                            |AUS
+|Austria                                                                              |AUT
 |Brazil                                                                               |BRA
 |Canada                                                                               |CAN
+|Chile                                                                                |CHL
 |France, Netherlands, Ireland, Norway, Switzerland, Austria, Finland, Sweden, Germany |EUR
 |France                                                                               |FRA
 |Germany                                                                              |DEU
@@ -16,6 +18,7 @@ ms.date: 04/01/2024
 |Italy                                                                                |ITA
 |Japan                                                                                |JPN
 |Korea                                                                                |KOR
+|Malaysia                                                                             |MYS
 |Mexico                                                                               |MEX
 |New Zealand                                                                          |NZL
 |Norway                                                                               |NOR

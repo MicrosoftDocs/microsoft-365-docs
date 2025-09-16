@@ -2,9 +2,9 @@
 title: "Manage Office Scripts settings"
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: SKjerland
-manager: scotv
+ms.author: kwekua
+author: kwekuako
+manager: dansimp
 ms.date: 01/09/2025
 audience: Admin
 ms.topic: how-to
@@ -16,6 +16,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- operations-pod
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet

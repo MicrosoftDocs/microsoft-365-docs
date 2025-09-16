@@ -36,7 +36,7 @@ Global administrators and SharePoint administrators continue to have access to s
 
 Configuring _Geography_ admins requires the SharePoint PowerShell module.
 
-Use [Connect-SPOService](/powershell/module/sharepoint-online/Connect-SPOService) to connect to the admin center of the _Geography_ location where you want to add the _Geography_ admin. (For example, Connect-SPOService  https://ContosoEUR-admin.sharepoint.com.)
+Use [Connect-SPOService](/powershell/module/microsoft.online.sharepoint.powershell/connect-sposervice) to connect to the admin center of the _Geography_ location where you want to add the _Geography_ admin. (For example, Connect-SPOService  https://ContosoEUR-admin.sharepoint.com.)
 
 To view the existing _Geography_ admins of a location, run `Get-SPOGeoAdministrator`
 
@@ -62,10 +62,10 @@ To remove a group by using the ObjectID, run `Remove-SPOGeoAdministrator -Object
 
 ## Related articles
 
-[Add-SPOGeoAdministrator](/powershell/module/sharepoint-online/add-spogeoadministrator)
+[Add-SPOGeoAdministrator](/powershell/module/microsoft.online.sharepoint.powershell/add-spogeoadministrator)
 
-[Get-SPOGeoAdministrator](/powershell/module/sharepoint-online/get-spogeoadministrator)
+[Get-SPOGeoAdministrator](/powershell/module/microsoft.online.sharepoint.powershell/get-spogeoadministrator)
 
-[Remove-SPOGeoAdministrator](/powershell/module/sharepoint-online/remove-spogeoadministrator)
+[Remove-SPOGeoAdministrator](/powershell/module/microsoft.online.sharepoint.powershell/remove-spogeoadministrator)
 
 [Set an alias (MailNickName) for a security group](/powershell/module/microsoft.graph.groups/update-mggroup)

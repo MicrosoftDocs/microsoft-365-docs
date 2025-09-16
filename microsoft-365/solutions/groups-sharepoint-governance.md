@@ -2,8 +2,8 @@
 title: SharePoint and Microsoft 365 Groups integration (IT Admins)
 ms.reviewer: rahulnayak
 ms.date: 07/27/2023
-author: DaniEASmith
-ms.author: danismith
+author: officedocspr5
+ms.author: odocspr
 manager: jtremper
 audience: Admin
 ms.topic: integration

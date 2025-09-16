@@ -1,7 +1,7 @@
 ---
 title: Use Microsoft Teams meetings with Canvas
-author: DaniEASmith
-ms.author: danismith
+author: officedocspr5
+ms.author: odocspr
 manager: jacktremper
 ms.reviewer: sovaish
 ms.date: 05/26/2021

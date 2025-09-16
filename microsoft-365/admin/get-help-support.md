@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: scotv
+manager: dansimp
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -16,7 +16,8 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - ContentEnagagementFY25
-ms.custom: 
+- operations-pod
+ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 - adminvideo

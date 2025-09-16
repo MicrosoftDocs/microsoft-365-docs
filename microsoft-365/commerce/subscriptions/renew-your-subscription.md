@@ -4,19 +4,20 @@ f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
-manager: scotv
+manager: dansimp
 ms.reviewer: emmasheridan, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
-- highpri 
+- highpri
 - M365-subscription-management
 - Adm_O365
+- operations-pod
 ms.custom:
 - commerce_subscriptions
 - VSBFY23
@@ -26,9 +27,9 @@ ms.custom:
 - admindeeplinkMAC
 - GAUpdates
 - campaignIDs-batch1
-search.appverid: MET150 
+search.appverid: MET150
 description: "Learn how to manage your subscription renewal for a Microsoft business subscription by turning recurring billing off or on."
-ms.date: 03/27/2025
+ms.date: 07/30/2025
 ---
 
 # Manage recurring billing in the Microsoft 365 admin center

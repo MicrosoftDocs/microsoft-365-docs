@@ -1,7 +1,7 @@
 ---
 title: Collaborate with external participants in a shared channel (IT Admins)
-author: DaniEASmith
-ms.author: danismith
+author: officedocspr5
+ms.author: odocspr
 manager: jtremper
 ms.date: 05/30/2024
 audience: ITPro

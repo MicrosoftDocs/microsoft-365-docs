@@ -5,6 +5,7 @@ author: cmcatee-MSFT
 ms.author: cmcatee
 manager: dansimp
 ms.date: 06/16/2025
+ms.update-cycle: 180-days
 ms.reviewer: nishanair
 audience: Admin
 ms.topic: get-started
@@ -14,9 +15,10 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 - essentials-overview
+- operations-pod
 ms.custom: [copilot-learning-hub]
 appliesto:
-  - ✅ Microsoft 365 Copilot
+- ✅ Microsoft 365 Copilot
 ---
 
 # View costs and billing for Microsoft 365 Copilot pay-as-you-go

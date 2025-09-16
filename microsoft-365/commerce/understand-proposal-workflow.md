@@ -4,25 +4,26 @@ f1.keywords:
 - CSH
 author: cmcatee-MSFT
 ms.author: cmcatee
-manager: scotv
-ms.reviewer: titung, jihobert
+manager: dansimp
+ms.reviewer: titung, jasoni
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-volume-licensing
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
-ms.custom: 
+- operations-pod
+ms.custom:
 - commerce_purchase
 - AdminSurgePortfolio
 - admindeeplinkMAC
 - GAUpdates
 - campaignIDs-batch2
-search.appverid: MET150 
+search.appverid: MET150
 description: "Learn about the proposal workflow used when you buy Microsoft business products and services. Discover how to review and approve proposals."
 ROBOTS: NOINDEX
 ms.date: 05/01/2025
@@ -148,6 +149,14 @@ After you sign any necessary agreements or supplemental terms, select **Go to ch
 ### Understand invoicing for future start dates
 
 Sales proposals might include subscriptions that start on a future date. A future start date aligns the start date of a new subscription with the end date of a previous subscription. If your proposal contains subscriptions that start on a future date, you receive an invoice for those subscriptions only when the future start date arrives. Using a future start date ensures that you aren't billed for items that you don't own yet. New subscriptions start on the future start date specified in the proposal. On the start date of the new subscription, we send you an email to let you know that your new subscription is now active and your billing for this subscription begins immediately. Your next invoice reflects the new charges plus applicable taxes for the new subscription.
+
+### Understand renewal options
+
+When a subscription term ends, you have three renewal paths:
+
+1. **Cancel**: The subscription ends at expiration without renewal.
+2. **Standard renewal**: The subscription renews for the same duration and terms as the original subscription.
+3. **Extended service term**: The subscription renews for a shorter duration, like monthly, and a price increase might apply.
 
 ## Step 3: Checkout
 

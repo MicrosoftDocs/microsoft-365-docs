@@ -3,23 +3,28 @@ title: Get your data ready for Microsoft 365 Copilot with E3 + SAM licenses
 description: Get started with M365 Copilot. The E3 deployment for Microsoft 365 Copilot uses a E3 license, SharePoint Advanced Management, and Microsoft Purview. These services help your organization get ready for Copilot. This IT admin guide helps you prevent oversharing, declutter data sources, and monitor site changes. Get your organization and data ready for Copilot by following the steps in this article.
 f1.keywords:
 - NOCSH
-ms.author: mandia
-author: MandiOhlinger
-manager: laurawi
-ms.date: 03/18/2025
+manager: dansimp
+ms.author: ruihu
+author: maggierui
+
+ms.date: 9/9/2025
+
+ms.update-cycle: 180-days
 ms.reviewer: cabailey, ruihu
 audience: Admin
+customer-intent: As an IT admin, I want to prepare my organization with E3 license for Microsoft 365 Copilot.
 ms.topic: get-started
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - scotvorg
 - m365copilot
 - magic-ai-copilot
 - essentials-overview
+- trust-pod
 ms.custom: [copilot-learning-hub]
 appliesto:
-  - ✅ Microsoft 365 Copilot
+- ✅ Microsoft 365 Copilot
 ---
 
 # Microsoft 365 Copilot admin guide for E3 + SAM licenses
@@ -42,7 +47,9 @@ This article applies to:
 - Microsoft Purview
 
 > [!NOTE]
-> If you have an E5 license, then see [Microsoft 365 Copilot admin guide for E5 licenses](microsoft-365-copilot-e5-guide.md). For a comparison of the features in the licenses, see [Compare Microsoft 365 Copilot license feature overview](microsoft-365-copilot-license-feature-overview.md).
+> - If you have an E5 license, then see [Microsoft 365 Copilot admin guide for E5 licenses](microsoft-365-copilot-e5-guide.md). For a comparison of the features in the licenses, see [Compare Microsoft 365 Copilot license feature overview](microsoft-365-copilot-license-feature-overview.md).
+>
+> - Beginning in early 2025, Microsoft SharePoint Premium - SharePoint Advanced Management (SAM) is included with your Microsoft 365 Copilot license. To learn more about SAM licensing, see [Microsoft SharePoint Premium - SharePoint Advanced Management](/sharepoint/advanced-management#licensing).
 
 ## Before you begin
 
@@ -58,11 +65,11 @@ This article applies to:
 
   - **[Microsoft SharePoint Premium - SharePoint Advanced Management](/sharepoint/advanced-management#licensing)**
 
-    Beginning in early 2025, Microsoft SharePoint Premium - SharePoint Advanced Management (SAM) will be included with your Microsoft 365 Copilot license. To learn more about SAM licensing, see [Microsoft SharePoint Premium - SharePoint Advanced Management](/sharepoint/advanced-management#licensing) license.
+
 
   - **[Microsoft 365 Copilot](microsoft-365-copilot-licensing.md)**
 
-    Depending on your subscription plan, you might be able purchase Microsoft 365 Copilot licenses through the [Microsoft 365 admin center](https://admin.microsoft.com) (**Billing** > **Purchase services**), Microsoft partners, or your Microsoft account team.
+    Depending on your subscription plan, you might be able to purchase Microsoft 365 Copilot licenses through the [Microsoft 365 admin center](https://admin.microsoft.com) (**Billing** > **Purchase services**), Microsoft partners, or your Microsoft account team.
 
     Microsoft 365 Copilot licenses are also available as an add-on to other licensing plans. To learn more, see [Understand licensing for Microsoft 365 Copilot](microsoft-365-copilot-licensing.md).
 
@@ -266,7 +273,7 @@ When users enter a prompt and get a response from Copilot, you can view and sear
 - Find sensitive information or inappropriate content included in Copilot activities.
 - Respond to a data spillage incident when confidential or malicious information is released through Copilot-related activity.
 
-[eDiscovery](/purview/edisc) uses cases to identify, hold, export, and analyze content found in mailboxes and sites. You can this feature to analyze Copilot prompts and responses.
+[eDiscovery](/purview/edisc) uses cases to identify, hold, export, and analyze content found in mailboxes and sites. You can use this feature to analyze Copilot prompts and responses.
 
 1. Sign into the [Microsoft Purview portal](https://purview.microsoft.com/) as an admin in one of the groups [eDiscovery - Permissions](/purview/ediscovery-assign-permissions).
 2. Select **Solutions** > **eDiscovery** > **Cases**.

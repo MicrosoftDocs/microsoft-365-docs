@@ -1,7 +1,7 @@
 ---
 title: Collaborate with guests from other Microsoft 365 cloud environments
-author: DaniEASmith
-ms.author: danismith
+author: officedocspr5
+ms.author: odocspr
 manager: jtremper
 ms.date: 09/29/2023
 audience: ITPro

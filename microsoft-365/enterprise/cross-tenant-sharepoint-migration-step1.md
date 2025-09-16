@@ -2,8 +2,8 @@
 title: SharePoint Cross-tenant SharePoint migration Step 1 (preview)
 ms.author: heidip
 author: MicrosoftHeidi
-manager: jtremper
-ms.date: 10/13/2023
+manager: dansimp
+ms.date: 08/15/2025
 recommendations: true
 audience: ITPro
 ms.topic: how-to
@@ -16,16 +16,16 @@ ms.collection:
 search.appverid: MET150
 description: "Step 1 of the SharePoint Cross-tenant migration feature"
 ---
-# Step 1: Connect to the source and target tenants (preview)
+# Step 1: Connect to the source and target tenants (SharePoint)
 
-> [!NOTE]
-> Cross-Tenant SharePoint migration is currently in a private preview stage of development. As an unfinished project, any information or availability is subject to change at any time. Support for private-preview customers will be handled via email. Cross-Tenant SharePoint migration is covered by the preview terms of the [Microsoft Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/all).
+<!-- >[!Note]
+>Cross-Tenant SharePoint migration is currently in a private preview stage of development. As an unfinished project, any information or availability is subject to change at any time. Support for private-preview customers will be handled via email. Cross-Tenant SharePoint migration is covered by //the preview terms of the [Microsoft Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/all).-->
 
-This is Step 1 in a solution designed to complete a **Cross-tenant SharePoint migration**. To learn more, see [Cross-tenant SharePoint migration overview](cross-tenant-SharePoint-migration.md).
+This article is Step 1 in a solution designed to complete a **Cross-tenant SharePoint migration**. To learn more, see [Cross-tenant SharePoint migration overview](cross-tenant-SharePoint-migration.md).
 
 - **Step 1: [Connect to the source and the target tenants](cross-tenant-SharePoint-migration-step1.md)**
 - Step 2: [Establish trust between the source and the target tenant](cross-tenant-SharePoint-migration-step2.md) 
-- Step 3: [Verify trust has been established](cross-tenant-SharePoint-migration-step3.md) 
+- Step 3: [Verify trust is established](cross-tenant-SharePoint-migration-step3.md) 
 - Step 4: [Precreate users and groups](cross-tenant-SharePoint-migration-step4.md)  
 - Step 5: [Prepare identity mapping](cross-tenant-SharePoint-migration-step5.md)
 - Step 6: [Start a Cross-tenant SharePoint migration](cross-tenant-SharePoint-migration-step6.md)
@@ -34,11 +34,10 @@ This is Step 1 in a solution designed to complete a **Cross-tenant SharePoint mi
 ## Before you begin
 
 - **Microsoft SharePoint Powershell**. Confirm you have the most recent version installed. If not, [Download SharePoint Management Shell from Official Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=35588).
-- Be a SharePoint admin or Microsoft 365 Global admin on both the source and target tenants
+- Be a SharePoint admin or Microsoft 365 Global admin on both the source and target tenants.
 
 > [!IMPORTANT]
-> Microsoft recommends that you use roles with the fewest permissions. This helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
-
+> Microsoft recommends that you use roles with the fewest permissions. This usage helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
 
 ### Connect to both tenants
 

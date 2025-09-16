@@ -3,23 +3,25 @@ title: Decide which Copilot is right for you
 description: Microsoft has several Copilot AI virtual assistants, including Microsoft 365 Copilot Chat, Microsoft 365 Copilot, Microsoft Copilot, Microsoft Security Copilot, GitHub Copilot, and Copilot Studio. Decide which Copilot is right for you and your organization. Which Copilot is right for me?
 f1.keywords:
 - NOCSH
-ms.author: mandia
-author: MandiOhlinger
-manager: laurawi
+ms.author: efrene
+author: Efrene
+manager: dansimp
 ms.date: 05/01/2025
+ms.update-cycle: 180-days
 ms.reviewer: 
 audience: Admin
 ms.topic: get-started
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - scotvorg
 - m365copilot
 - magic-ai-copilot
 - essentials-overview
+- operations-pod
 ms.custom: [copilot-learning-hub]
 appliesto:
-  - ✅ Microsoft 365 Copilot
+- ✅ Microsoft 365 Copilot
 ---
 
 # Which Copilot is right for me or my organization?
@@ -49,7 +51,7 @@ Copilot Chat is automatically included and available to organizations that have 
 Microsoft 365 Copilot Chat is available on the web at [https://m365copilot.com](https://m365copilot.com), in the [Microsoft 365 Copilot app](https://apps.microsoft.com/detail/9wzdncrd29v9), and in Teams, Outlook, & Microsoft Edge.
 
 > [!TIP]
-> If you [pin Copilot Chat](pin-copilot.md) in the Microsoft 365 Copilot app, when users go to `https://m365copilot.com`, then they're automatically redirected to `https://m365.cloud.microsoft/chat`.
+> If you [pin Copilot Chat](pin-copilot-chat-navbar.md) in the Microsoft 365 Copilot app, when users go to `https://m365copilot.com`, then they're automatically redirected to `https://m365.cloud.microsoft/chat`.
 
 If you want users in your organization to have prompt and response interchanges with information on the internet and [enterprise data protection](enterprise-data-protection.md), then use Microsoft 365 Copilot Chat.
 
@@ -112,7 +114,7 @@ To learn more, see:
 
 - [Microsoft 365 Copilot overview](microsoft-365-copilot-overview.md)
 - [Microsoft 365 Copilot architecture and how it works](microsoft-365-copilot-architecture.md)
-- [Copilot Prompt Gallery](https://copilot.cloud.microsoft/prompts)
+- [Copilot Prompt Gallery](https://m365.cloud.microsoft/copilot-prompts)
 - [Microsoft 365 Copilot plans](https://www.microsoft.com/microsoft-365/copilot)
 - [Add apps to Microsoft Intune](/mem/intune/apps/apps-add) and [assign apps to groups](/mem/intune/apps/apps-deploy)
 

@@ -1,12 +1,15 @@
 ---
 title: Our commitment to responsible AI
 description: Learn more about the data privacy control resources and information.
-author: anibajaj 
-ms.author:   anirudhbajaj
+author: kwekuako
+ms.author: kwekua
 manager: dansimp
 ms.topic: article
-ms.date:  05/29/2025
+ms.date: 05/29/2025
 ms.service: microsoft-365-copilot
+ms.collection: 
+- trust-pod
+- operations-pod
 ---
 
 # Our commitment to responsible AI
@@ -26,6 +29,6 @@ You can find the actual location of your data in Microsoft 365 Admin Center. As 
 ### Related articles
 
 - [AI transparency in People Skills](https://go.microsoft.com/fwlink/?linkid=2321446)
-- [Microsoft’s commitment to Responsible AI](https://www.microsoft.com/ai/responsible-ai?msockid=154ce9bde0236a9e239afb72e4236c97) 
+- [Microsoft's commitment to Responsible AI](https://www.microsoft.com/ai/responsible-ai?msockid=154ce9bde0236a9e239afb72e4236c97) 
 - [Microsoft Responsible AI standard](https://www.microsoft.com/ai/principles-and-approach)
 

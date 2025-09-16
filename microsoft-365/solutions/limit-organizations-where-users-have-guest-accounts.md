@@ -1,7 +1,7 @@
 ---
 title: "Limit organizations where users can have guest accounts"
-author: DaniEASmith
-ms.author: danismith
+author: officedocspr5
+ms.author: odocspr
 manager: jtremper
 ms.date: 12/11/2023
 audience: ITPro

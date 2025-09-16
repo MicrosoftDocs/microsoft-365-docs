@@ -13,12 +13,13 @@ metadata:
   - highpri 
   - commerce
   - Adm_TOC
+  - operations-pod
   ms.custom: 
   - VSBFY23
   - commerce_landingpage
   author: cmcatee-MSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: cmcatee #Required; microsoft alias of author; optional team alias.
-  manager: scotv
+  manager: dansimp
   audience: Admin
   ms.localizationpriority: medium
   search.appverid: MET150

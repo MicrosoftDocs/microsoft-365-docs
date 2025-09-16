@@ -59,7 +59,7 @@ To set an expiration date for Anyone links on a specific site
 
 Note that once an *Anyone* link expires, the file or folder can be reshared with a new *Anyone* link.
 
-You can set *Anyone* link expiration for a specific site by using [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite). 
+You can set *Anyone* link expiration for a specific site by using [Set-SPOSite](/powershell/module/microsoft.online.sharepoint.powershell/set-sposite). 
 
 ```powershell
 Set-SPOSite -Identity https://contoso.sharepoint.com/sites/marketing -OverrideTenantAnonymousLinkExpirationPolicy $true -AnonymousLinkExpirationInDays 15

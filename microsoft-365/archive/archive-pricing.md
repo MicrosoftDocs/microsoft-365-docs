@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 02/26/2025
+ms.date: 08/01/2025
 ms.topic: article
 ms.service: microsoft-365-archive
 ms.custom: archive
@@ -27,7 +27,7 @@ Storage consumption is charged at a per-GB monthly rate. This meter is charged o
 
 Monthly archive usage is calculated as the sum of the usage of all currently archived sites. Each site’s usage is equal to the site storage usage of that site, which can be seen on the site itself or from the Active sites page in the SharePoint admin center. The size of an archived site, and therefore the storage for which it’s billed, changes only if the content in the site changes. For example, content naturally expiring in the recycle bin or a retention policy deleting content within the site directly from archive to the recycle bin.
 
-To see the pricing for Microsoft 365 Archive, see [Pay-as-you-go services and pricing for Microsoft Syntex](/microsoft-365/syntex/syntex-pay-as-you-go-services#storage-services).
+To see the pricing for Microsoft 365 Archive, see [Pay-as-you-go services and pricing](/microsoft-365/documentprocessing/syntex-pay-as-you-go-services#storage-services).
 
 ## Pricing calculator
 
@@ -87,7 +87,7 @@ Your charges for Microsoft 365 Archive depend on your tenant’s standard storag
 
 ## Pricing for unlicensed OneDrives
 
- Archive storage for unlicensed OneDrives is billed per GB of archived data per month. Reactivation of archived OneDrives is billed per GB of reactivated data per reactivation. For more information, see [Pay-as-you-go services and pricing for Microsoft Syntex](/microsoft-365/syntex/syntex-pay-as-you-go-services#storage-services).
+ Archive storage for unlicensed OneDrives is billed per GB of archived data per month. Reactivation of archived OneDrives is billed per GB of reactivated data per reactivation. For more information, see [Pay-as-you-go services and pricing](/microsoft-365/documentprocessing/syntex-pay-as-you-go-services#storage-services).
 
  > [!NOTE]
 > Unlicensed archived OneDrive sites can't use additional SharePoint storage to bypass archive costs. For more information, see [Manage unlicensed OneDrive user accounts](/SharePoint/unlicensed-onedrive-accounts#frequently-asked-questions).

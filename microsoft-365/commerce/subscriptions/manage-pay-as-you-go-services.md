@@ -1,11 +1,11 @@
 ---
 title: Enable pay-as-you-go for your subscription
-f1.keywords: 
+f1.keywords:
 - MACBillingPurchasePDPPayG
 - MACBillingPurchaseIDPPayG
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: scotv
+manager: dansimp
 ms.reviewer: emmasheridan, nicholak
 audience: Admin
 ms.topic: how-to
@@ -17,6 +17,7 @@ ms.collection:
 - scotvorg
 - M365-subscription-management
 - Adm_O365
+- operations-pod
 ms.custom:
 - commerce_subscriptions
 - AdminSurgePortfolio
@@ -25,7 +26,7 @@ ms.custom:
 search.appverid: MET150
 ROBOTS: noindex, nofollow
 description: "Learn how to buy a subscription with a calling plan and enable overage for Microsoft Teams calls."
-ms.date: 03/27/2025
+ms.date: 07/30/2025
 ---
 
 # Enable pay-as-you-go for your subscription

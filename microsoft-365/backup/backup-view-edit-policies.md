@@ -320,7 +320,7 @@ Follow these steps to view and edit backup policies for OneDrive.
 
 ## Dynamic rules
 
-Dynamic rules in Microsoft 365 Archive allow administrators to define backup policies based on distribution lists and security group memberships—eliminating the need for manual updates when group memberships change.
+Dynamic rules in Microsoft 365 Backup allow administrators to define backup policies based on distribution lists and security group memberships—eliminating the need for manual updates when group memberships change.
 
 </br>
 

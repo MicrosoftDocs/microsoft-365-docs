@@ -1,9 +1,9 @@
----  
-title: "Defederation Process for Microsoft 365 Admins Using GoDaddy"  
+---
+title: "Defederation Process for Microsoft 365 Admins Using GoDaddy"
 description: "Learn how to defederate Microsoft 365 email from Godaddy."
-author: kelleyvice-msft
-ms.author: kvice
-manager: scotv
+author: kwekuako
+ms.author: kwekua
+manager: dansimp
 ms.date: 03/18/2025
 ms.topic: article
 ms.service: microsoft-365-business
@@ -16,12 +16,13 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_O365_Setup
-ms.custom: QuickDraft  
-ms.reviewer: amtro  
-search.appverid: MET150  
-f1.keywords: 
+- operations-pod
+ms.custom: QuickDraft
+ms.reviewer: amtro
+search.appverid: MET150
+f1.keywords:
 audience: admin
-ai-usage: ai-assisted  
+ai-usage: ai-assisted
 ---
 
 # Defederation Process for Microsoft 365 Admins Using GoDaddy

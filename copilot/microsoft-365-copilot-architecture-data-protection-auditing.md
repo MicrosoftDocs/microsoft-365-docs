@@ -2,27 +2,30 @@
 title: Microsoft 365 Copilot data protection architecture
 f1.keywords:
 - NOCSH
-ms.author: mandia
-author: MandiOhlinger
-manager: laurawi
-ms.date: 05/27/2025
+ms.author: ruihu
+author: maggierui
+manager: dansimp
+ms.date: 09/09/2025
+ms.update-cycle: 180-days
 audience: Admin
+customer-intent: As an IT professional, I want to understand how Microsoft 365 Copilot works with data protection, oversharing controls, and auditing features in Microsoft 365.
 ms.reviewer: mandia, bcarter, ruihu, cabailey
 ms.topic: overview
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - scotvorg
 - m365copilot
 - magic-ai-copilot
 - essentials-overview
+- trust-pod
 description: Get descriptions and see diagrams that describe how Microsoft Purview data protection, SharePoint oversharing controls, and auditing work with Microsoft 365 Copilot. This article also shows how Microsoft Purview sensitivity labels, SharePoint oversharing controls, and Purview tools like eDiscovery and retention policies affect Microsoft 365 Copilot.
 ms.custom: [copilot-learning-hub]
 appliesto:
-  - ✅ Microsoft 365 Copilot
+- ✅ Microsoft 365 Copilot
 ---
 
-# Architecture diagrams of Microsoft 365 data protection features that affect Microsoft 365 Copilot
+# How data is protected and audited in Microsoft 365 and Microsoft 365 Copilot
 
 Your Microsoft 365 subscription includes features that help you protect your data, including Microsoft Purview sensitivity labels & encryption, and SharePoint oversharing controls. These features affect [Microsoft 365 Copilot](microsoft-365-copilot-overview.md) and how Copilot interacts with your data.
 
@@ -75,7 +78,7 @@ To learn more, see:
 - [Get started with sensitivity labels](/purview/get-started-with-sensitivity-labels)
 - [Microsoft Purview strengthens information protection for Copilot](/purview/ai-microsoft-purview#microsoft-purview-strengthens-information-protection-for-copilot)
 
-## Oversharing controls you can use with Microsoft 365 Copilot
+## How you can control oversharing with Microsoft 365 Copilot
 
 Microsoft 365 includes controls to help you prevent oversharing data through Copilot.
 
@@ -97,7 +100,7 @@ Let's take a look:
 
 4. With **[Restricted Content Discovery](/sharepoint/restricted-content-discovery)**, organizations can put a flag on sites so that users can't find them through Copilot or Org-wide search. Restricted content discovery doesn't change users' existing permissions. Users with access can still visit sites and open files.
 
-5. In SharePoint Advanced Management, create an **[inactive site policy](/sharepoint/site-lifecycle-management#create-an-inactive-site-policy)** to automatically manage and reduce inactive sites.
+5. In SharePoint Advanced Management, create an **[inactive site policy](/sharepoint/site-lifecycle-management#what-do-you-need-to-create-an-inactive-site-policy)** to automatically manage and reduce inactive sites.
 
 6. In SharePoint Advanced Management, you can restrict access to SharePoint and OneDrive sites to users in a specific group by using the **[restricted access control policy](/sharepoint/restricted-access-control)**.     Users that aren't members of the specified group can't access the site or content, even if they had prior permissions or a shared link. This policy can be used with Microsoft 365 Group-connected, Teams-connected, and non-group connected sites.
 

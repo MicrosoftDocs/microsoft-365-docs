@@ -4,20 +4,21 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: scotv
-ms.reviewer: armanv, nicholak
+manager: dansimp
+ms.reviewer: nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
 - highpri
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- operations-pod
 ms.custom:
 - commerce_subscriptions
 - VSBFY23
@@ -31,7 +32,7 @@ search.appverid:
 - MOE150
 - BEA160
 description: "Learn how to find a new Microsoft 365 partner, or get contact information for a partner you worked with previously."
-ms.date: 01/07/2025
+ms.date: 07/08/2025
 ---
 
 # Find your Microsoft 365 subscriptions partner or reseller

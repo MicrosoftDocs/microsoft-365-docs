@@ -39,7 +39,7 @@ Required Conditions:
 
 **Commitment:**
 
-Refer to the [ADR Commitment page](m365-dr-commitments.md#office-for-the-web) for the specific customer data at rest commitment for Office for the Web.
+Refer to the [ADR Commitment page](m365-dr-commitments.md#microsoft-365-web-apps-formerly-known-as-office-for-the-web) for the specific customer data at rest commitment for Office for the Web.
 
 ### Migration
 

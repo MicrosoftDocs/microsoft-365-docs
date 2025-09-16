@@ -1,7 +1,7 @@
 ---
 title: Plan external collaboration with channel conversations, file collaboration, and shared apps
-author: DaniEASmith
-ms.author: danismith
+author: officedocspr5
+ms.author: odocspr
 manager: jtremper
 ms.reviewer: jasonlewis
 ms.date: 12/13/2023

@@ -4,20 +4,21 @@ f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
-manager: scotv
+manager: dansimp
 ms.reviewer: nalinkla, jobailey
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-marketplace
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
+- operations-pod
 search.appverid: MET150
-ms.custom: 
+ms.custom:
 - commerce_purchase
 - okr_SMB
 - AdminSurgePortfolio
@@ -26,21 +27,21 @@ ms.custom:
 - GAUpdates
 - campaignIDs-batch2
 description: "Learn how to buy and manage add-ons for your Microsoft 365 for business subscription."
-ms.date: 04/06/2025
+ms.date: 09/02/2025
 ---
 
 # Buy and manage add-ons in the Microsoft 365 admin center
 
 Many Microsoft business plans have add-ons that you can buy for your subscriptions. Add-ons provide more features to enhance your subscription's capabilities. You buy and manage add-ons in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
-This article only applies to customers with a Microsoft Online Subscription Agreement (MOSA) billing account type. If you have a Microsoft Customer Agreement (MCA) billing account type, you can buy add-ons the same as any other product on the **Products and services** page. To learn how to do this, see [Buy a different subscription](try-or-buy-microsoft-365.md#buy-a-different-subscription).  [Find out what type of billing account you have](manage-billing-accounts.md#view-my-billing-accounts).
+This article only applies to customers with a Microsoft Online Subscription Agreement (MOSA) billing account type. If you have a Microsoft Customer Agreement (MCA) billing account type, you can buy add-ons the same as any other product on the **Purchase Services** or **Marketplace** page. To learn how to do this, see [Buy a different subscription](try-or-buy-microsoft-365.md#buy-a-different-subscription).  [Find out what type of billing account you have](manage-billing-accounts.md#view-my-billing-accounts).
 
 ## Before you begin
 
 You must be at least a Billing Administrator to do the steps described in this article. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).
 
 > [!NOTE]
-> If you're the person who signed up for the subscription, you're automatically a Billing Administrator.
+> If you're the person who signed up for the subscription, you're automatically at least a Billing Administrator.
 
 ## Types of add-ons
 

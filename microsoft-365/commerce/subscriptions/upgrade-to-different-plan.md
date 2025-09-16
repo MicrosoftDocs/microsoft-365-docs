@@ -4,18 +4,19 @@ f1.keywords:
 - CSH
 author: cmcatee-MSFT
 ms.author: cmcatee
-manager: scotv
+manager: dansimp
 ms.reviewer: mijeffer, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
+- operations-pod
 ms.custom:
 - commerce_subscriptions
 - SaRA
@@ -23,7 +24,7 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkMAC
 - GAUpdates
-search.appverid: MET150 
+search.appverid: MET150
 description: "Learn how to upgrade or change to a different plan in the Microsoft 365 admin center."
 ms.date: 05/02/2025
 ---

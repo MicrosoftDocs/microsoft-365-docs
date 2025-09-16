@@ -3,8 +3,8 @@ ms.date: 03/06/2025
 title: "Manage Loop app preview"
 ROBOTS: NOINDEX, NOFOLLOW
 ms.reviewer: dancost, rekeys
-ms.author: jenz
-author: jenzamora
+ms.author: odocspr
+author: officedocspr5
 manager: jtremper
 recommendations: true
 audience: Admin

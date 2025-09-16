@@ -81,7 +81,7 @@ Get-OrganizationConfig | ft OAuth*
 
 If the value of the _OAuth2ClientProfileEnabled_ property is **False**, then modern authentication is disabled.
 
-For more information about the `Get-OrganizationConfig` cmdlet, see [Get-OrganizationConfig](/powershell/module/exchange/get-organizationconfig).
+For more information about the `Get-OrganizationConfig` cmdlet, see [Get-OrganizationConfig](/powershell/module/exchangepowershell/get-organizationconfig).
 
 You can check your Skype for Business servers by running the following PowerShell command:
 
@@ -137,7 +137,7 @@ Verify and check these items off your list before you continue:
   - You're using either Exchange server 2013 CU19 and up, Exchange server 2016 CU8 and up, or Exchange Server 2019 CU1 and up.
   - There's no Exchange server 2010 in the environment.
   - SSL Offloading is not configured. SSL termination and re-encryption are supported.
-  - In the event your environment utilizes a proxy server infrastructure to allow servers to connect to the Internet, be sure all Exchange servers have the proxy server defined in the [InternetWebProxy](/powershell/module/exchange/set-exchangeserver) property.
+  - In the event your environment utilizes a proxy server infrastructure to allow servers to connect to the Internet, be sure all Exchange servers have the proxy server defined in the [InternetWebProxy](/powershell/module/exchangepowershell/set-exchangeserver) property.
 
 - **Exchange Server on-premises in a hybrid Office 365 environment**
 

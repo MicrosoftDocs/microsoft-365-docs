@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
-manager: scotv
+manager: dansimp
 ms.reviewer: mijeffer, nicholak
 audience: Admin
 ms.topic: article
@@ -12,18 +12,19 @@ ms.service: microsoft-365-business
 ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
 ms.collection:
-- Tier1 
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
-ms.custom: 
+- operations-pod
+ms.custom:
 - commerce_subscriptions
 - AdminSurgePortfolio
 - AdminTemplateSet
 - campaignIDs-batch1
 search.appverid: MET150
 description: "Learn what happens to your data when your Microsoft 365 for business subscription expires, is disabled, or if you cancel."
-ms.date: 02/06/2025
+ms.date: 08/04/2025
 ---
 
 # What happens to my data and access when my Microsoft 365 for business subscription ends?
@@ -55,7 +56,7 @@ The subscription only enters the **Expired** status after all the licenses are r
 > If a subscription is deleted, adding a new subscription of the same type doesn't restore the data that was associated with the deleted subscription.
 
 > [!NOTE]
-> **What is "customer data"?** Customer data, as defined in the [Microsoft Online Service Terms](https://www.microsoft.com/en-us/licensing/product-licensing/products), refers to all data, including all text, sound, or image files that are provided to Microsoft by, or on behalf of, the customer through the customer's use of Microsoft 365 services. To learn more about the protection of customer data, see [Get started with the Microsoft Service Trust Portal](../../compliance/get-started-with-service-trust-portal.md).
+> **What is "customer data"?** Customer data, as defined in the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement), refers to all data, including all text, sound, or image files that are provided to Microsoft by, or on behalf of, the customer through the customer's use of Microsoft 365 services. To learn more about the protection of customer data, see [Get started with the Microsoft Service Trust Portal](../../compliance/get-started-with-service-trust-portal.md).
 
  The number of days a subscription stays in each lifecycle status is different, depending on whether you bought the subscription directly from Microsoft, or through an Enterprise agreement, a Cloud Solution Provider (CSP), or Volume Licensing (VL). For more information, see [Lengths of time a subscription spends in each lifecycle status](#lengths-of-time-a-subscription-spends-in-each-lifecycle-status), later in this article. The following table explains what you can expect for each lifecycle status when a paid Microsoft 365 for business subscription ends.
 

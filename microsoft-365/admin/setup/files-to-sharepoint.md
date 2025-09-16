@@ -2,21 +2,22 @@
 title: "Move company files to SharePoint"
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
-manager: scotv
+ms.author: kwekua
+author: kwekuako
+manager: dansimp
 ms.date: 06/25/2024
 audience: Admin
 ms.topic: upgrade-and-migration-article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
-- Tier2 
+- Tier2
 - scotvorg
 - highpri
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
-ms.custom: 
+- operations-pod
+ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 - adminvideo
@@ -26,6 +27,7 @@ search.appverid:
 - MOE150
 description: "Learn how to move company files to SharePoint."
 ---
+
 # Move files to SharePoint
 
 Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).

@@ -134,7 +134,7 @@ Select the link at the bottom to indicate if the article was helpful or not and 
   
 ### Am I peering appropriately with Microsoft?
 
- **Peering locations** are described in more detail in [peering with Microsoft](https://www.microsoft.com/peering).
+ **Peering locations** are described in more detail in [peering with Microsoft](/azure/internet-peering/).
   
 With over 2500 ISP peering relationships globally and 70 points of presence, getting from your network to ours should be seamless. It can't hurt to spend a few minutes making sure your ISP's peering relationship is the most optimal, [here's a few examples](/archive/blogs/onthewire/__guidance) of good and not so good peering hand-offs to our network.
 

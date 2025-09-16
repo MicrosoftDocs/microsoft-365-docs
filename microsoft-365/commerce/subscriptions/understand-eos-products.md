@@ -4,7 +4,7 @@ f1.keywords:
 - CSH
 author: cmcatee-MSFT
 ms.author: cmcatee
-manager: scotv
+manager: dansimp
 ms.reviewer: mijeffer, nicholak
 audience: Admin
 ms.topic: concept-article
@@ -16,7 +16,8 @@ ms.collection:
 - scotvorg
 - M365-subscription-management
 - Adm_O365
-ms.custom: 
+- operations-pod
+ms.custom:
 - commerce_subscriptions
 - AdminTemplateSet
 - campaignIDs-batch2

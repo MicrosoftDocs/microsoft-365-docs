@@ -48,7 +48,7 @@ These articles describe how to use PowerShell for Microsoft 365 to get informati
 
   - [Get started with SharePoint Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
-  - [Get-SPOSiteGroup - Gets all the groups on a specified site collection](/powershell/module/sharepoint-online/get-spositegroup)
+  - [Get-SPOSiteGroup - Gets all the groups on a specified site collection](/powershell/module/microsoft.online.sharepoint.powershell/get-spositegroup)
 
 - Reports for Exchange Online:
 

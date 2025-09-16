@@ -1,9 +1,9 @@
 ---
 title: Cross-Tenant Identity Mapping (preview)
 description: How to map identities across Microsoft 365 organizations when preparing for cross-tenant migrations. 
-author: briandaymsft
-ms.author: brianday
-manager: rolowe
+author: MicrosoftHeidi
+ms.author: heidip
+manager: dansimp
 ms.topic: overview
 ms.date: 07/18/2022
 ms.service: microsoft-365-enterprise
@@ -27,11 +27,11 @@ Using Cross-Tenant Identity Mapping reduces mistakes when configuring target obj
 
 Some other benefits of using Cross-Tenant Identity Mapping:
 
-- Reduces the number of manual processes where a mistake could result in failed migrations
-- Automates identification of objects within scope to migrate from the source organization to the target organization
-- Establishes a 1:1 map of a Mailbox User object in the source organization to a preexisting Mail Enabled User object in the target organization
-- Automates population of required attributes from the source organization Mailbox User to the target organization Mail Enabled User
-- Provides a list of objects prepared and ready for [cross-tenant mailbox migration](cross-tenant-mailbox-migration.md) based on the source organization users' primarySMTPAddress value
+- Reduces the number of manual processes where a mistake could result in failed migrations.
+- Automates identification of objects within scope to migrate from the source organization to the target organization.
+- Establishes a 1:1 map of a Mailbox User object in the source organization to a preexisting Mail Enabled User object in the target organization.
+- Automates population of required attributes from the source organization Mailbox User to the target organization Mail Enabled User.
+- Provides a list of objects ready for [cross-tenant mailbox migration](cross-tenant-mailbox-migration.md), based on the source organization users' primarySMTPAddress value.
 
 ## FAQ about Cross-Tenant Identity Mapping
 
@@ -46,14 +46,14 @@ We would like to provide information commonly asked so that you can decide wheth
 - The feature communicates over an encrypted connection to a REST endpoint.
 - The feature currently requires the Global Administrator role for initial setup. This behavior might change in a future update.
    > [!IMPORTANT]
-   > Microsoft recommends that you use roles with the fewest permissions. This helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
-- Organizational Relationships are used as a dual handshake approach to ensure both organizations have authorized this transaction type to take place.
+   > Microsoft recommends that you use roles with the fewest permissions. This usage helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
+- Organizational Relationships are used as a dual handshake approach to ensure both organizations authorized this transaction type to take place.
 - It works with cloud-only or hybrid organizations.
 - Target organizations in a hybrid configuration require Microsoft supported on-premises object management tools to modify any Mail Enabled User objects synchronized from the on-premises directory.
 
 ## What does participating in the private preview entail?
 
-We're looking for customers willing to both try Cross-Tenant Identity Mapping and to provide feedback based on their experience. Did it make the migration easier for you compared to earlier migrations you've performed? Are there features you feel are missing? All constructive feedback is welcomed.
+We're looking for customers willing to both try Cross-Tenant Identity Mapping and to provide feedback based on their experience. Did it make the migration easier for you compared to earlier migrations you performed? Are there features you feel are missing? All constructive feedback is welcomed.
 
 ## How to participate
 
@@ -61,6 +61,6 @@ The Cross-Tenant User Content Migration feature and licenses are currently only 
 
 ## Next steps
 
-We recommend reviewing the current Cross-Tenant Mailbox Migration steps related to preparing target user objects for migration as this preparation is what Cross-Tenant Identity Mapping will automate.
+We recommend reviewing the current Cross-Tenant Mailbox Migration steps related to preparing target user objects for migration as this preparation is what Cross-Tenant Identity Mapping automates.
 
 - [Review Cross-Tenant Mailbox Migration](cross-tenant-mailbox-migration.md#prepare-target-user-objects-for-migration)

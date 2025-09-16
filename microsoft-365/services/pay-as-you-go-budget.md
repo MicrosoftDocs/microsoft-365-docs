@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ivchenya
-ms.date: 06/27/2025
+ms.date: 08/07/2025
 audience: admin
 ms.topic: install-set-up-deploy
 ms.service: microsoft-365-business
@@ -17,10 +17,9 @@ description: Learn how to set up a billing budget for pay-as-you-go services in 
 
 # Set up a budget for pay-as-you-go billing in Microsoft 365
 
-This article explains how to set spending limits for pay-as-you-go billing—currently available for Microsoft 365 Copilot services (other services available in a future release). This feature helps you monitor usage, receive alerts as costs approach budget thresholds, and plan more effectively.
+This article explains how to set spending limits for pay-as-you-go billing. This feature helps you monitor usage, receive alerts as costs approach budget thresholds, and plan more effectively.
 
 Budgets are set at the billing policy level, not for individual users, agents, or sites. This means any limits or alerts apply to all services and users under that policy.
-
 
 ## Prerequisites
 
@@ -32,28 +31,6 @@ To access the Microsoft 365 admin center, users must be assigned one of the foll
 
     > [!NOTE]
     > Users with the [Global Reader](/entra/identity/role-based-access-control/permissions-reference#global-reader) role can view billing policies and budgets, but they can't view spending data.
-
-
-<!---
-
-
-- Users with the [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator), [AI Administrator](/entra/identity/role-based-access-control/permissions-reference?#ai-administrator), or [Global Reader](/entra/identity/role-based-access-control/permissions-reference#global-reader) role can access the Microsoft 365 admin center.
-
-- Users with the [Global Reader](/entra/identity/role-based-access-control/permissions-reference#global-reader) role can view billing policies and budgets, but can't see spending data.
-
-
-
-## Prerequisites
-
-Before you begin, ensure you meet the following requirements:
-
-- **Admin role**:
-    - You must have either the [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) role to access the Microsoft 365 admin center.
-
-- **Permission levels**:
-    - Users with contributor access can view and edit budget settings.
-    - Users with reader access can view billing policies, but can't see spending data or budget details.
---->
 
 ## Set up a budget
 
@@ -96,60 +73,3 @@ Before you begin, ensure you meet the following requirements:
 
     > [!IMPORTANT]
     > The only way to stop billing is to [disconnect the payment method](pay-as-you-go-setup-copilot.md#disconnect-pay-as-you-go-billing). Reaching 100% of your budget doesn't stop the service or billing.
-
-
-
-<!---
-    > [!NOTE]
-    > You can currently select only mail-enabled security groups to receive alerts. [Learn how to create a mail-enabled security group](/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups).
-    > 
-    > There can be up to a 24-hour delay before email alerts are sent after a budget threshold is reached.
-    > 
-    > Budget email alerts are currently sent from Azure. However, you can still view and manage your budget in the Microsoft 365 admin center. This behavior will be updated in a future release so that alerts are sent directly from the admin center.
-
-    d. Under **Send email alerts**, you can add recipients to receive budget notifications and set the budget percentage that will trigger an alert.
-
-    > [!NOTE]
-    > You can currently select only mail-enabled security groups to receive alerts. [Learn how to create a mail-enabled security group](/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups).
-    > 
-    > There can be up to a 24-hour delay before email alerts are sent after a budget threshold is reached.
-    > 
-    > Budget email alerts are currently sent from Azure. However, you can still view and manage your budget in the Microsoft 365 admin center. This behavior will be updated in a future release so that alerts are sent directly from the admin center.
---->
-
-
-<!---
-
-    > [!NOTE]
-    > You can currently select only mail-enabled security groups to receive alerts. [Learn how to create a mail-enabled security group](/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups).
-
-    > [!NOTE]
-    > There can be up to a 24-hour delay before email alerts are sent after a budget threshold is reached.
-
-    > [!NOTE]
-    > Budget email alerts are currently sent from Azure. However, you can still view and manage your budget in the Microsoft admin center. This behavior will be updated in a future release so that alerts are sent directly from the admin center.
-
-
-    - Add recipients to receive budget notifications.
-
-        - You can currently select only mail-enabled security groups to receive alerts. [Learn how to create a mail-enabled security group](/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups).
-
-        - There can be up to a 24-hour delay before email alerts are sent after a budget threshold is reached.
-
-        - Budget email alerts are currently sent from Azure. However, you can still view and manage your budget in the Microsoft 365 admin center. This behavior will be updated in a future release so that alerts are sent directly from the admin center.
-
-
-
-Before you begin, ensure you have:
-
-- [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) role to access the Microsoft 365 admin center.
-
-- Contributor access to view and edit budget settings. Users with reader access can view billing policies but not spending data or budget details. [Learn more about admin roles](/microsoft-365/admin/add-users/about-admin-roles).
-
-
-
-
-> [!NOTE]
-> This feature is currently available only for Microsoft 365 Copilot services. Other services will be added in future releases.
-
---->

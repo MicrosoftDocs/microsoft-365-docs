@@ -1,7 +1,7 @@
 ---
 title: "Overview of using Microsoft 365 Lighthouse baselines to deploy standard tenant configurations"
 f1.keywords: CSH
-ms.author: sharik
+ms.author: dansimp
 author: SKjerland
 manager: scotv
 ms.reviewer: jatingupta

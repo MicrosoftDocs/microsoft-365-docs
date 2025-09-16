@@ -6,6 +6,7 @@ ms.author: lauragra
 manager: calvind
 ms.date: 06/17/2025
 ms.topic: article
+ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
 ms.reviewer: calvind
 ---

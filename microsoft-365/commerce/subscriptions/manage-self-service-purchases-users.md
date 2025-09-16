@@ -4,18 +4,19 @@ f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
-manager: scotv
+manager: dansimp
 ms.reviewer: schyevan, ramagane
 audience: Admin
 ms.topic: end-user-help
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
 - M365-subscription-management
-ms.custom: 
+- operations-pod
+ms.custom:
 - commerce_ssp
 - AdminSurgePortfolio
 - admindeeplinkMAC

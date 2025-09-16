@@ -4,7 +4,7 @@ f1.keywords:
 - CSH
 ms.author: kwekua
 author: kwekuako
-manager: scotv
+manager: dansimp
 ms.date: 04/02/2025
 audience: Admin
 ms.topic: article
@@ -16,7 +16,8 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: 
+- operations-pod
+ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 description: "Learn about user consent to apps, and how to turn them on to allow third-party apps to access users' Microsoft 365 information."

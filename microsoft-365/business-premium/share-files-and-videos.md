@@ -14,6 +14,7 @@ ms.collection:
 - M365-Campaigns
 - m365solution-smb
 - tier2
+- trust-pod
 ms.custom:
 search.appverid:
 - BCS160

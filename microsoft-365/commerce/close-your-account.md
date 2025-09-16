@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
-manager: scotv
+manager: dansimp
 ms.reviewer: emmasheridan, nicholak
 audience: Admin
 ms.topic: how-to
@@ -16,6 +16,7 @@ ms.collection:
 - scotvorg
 - M365-subscription-management
 - Adm_O365
+- operations-pod
 ms.custom:
 - commerce_subscriptions
 - AdminSurgePortfolio
@@ -27,7 +28,7 @@ ms.custom:
 - campaignIDs-batch1
 search.appverid: MET150
 description: "Learn how to close your business account with Microsoft. All information related to your account is deleted including licenses, users, and user data."
-ms.date: 03/27/2025
+ms.date: 07/30/2025
 ---
 
 # Close your Microsoft business account

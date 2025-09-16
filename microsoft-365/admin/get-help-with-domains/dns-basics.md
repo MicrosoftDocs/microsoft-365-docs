@@ -2,22 +2,23 @@
 title: "DNS basics"
 f1.keywords:
 - NOCSH
-ms.author: kvice
-author: kelleyvice-msft
-manager: scotv
+ms.author: kwekua
+author: kwekuako
+manager: dansimp
 ms.date: 03/18/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.subservice: m365-domains
 ms.localizationpriority: high
-ms.collection: 
+ms.collection:
 - Tier2
 - scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
-ms.custom: 
+- operations-pod
+ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 - okr_smb

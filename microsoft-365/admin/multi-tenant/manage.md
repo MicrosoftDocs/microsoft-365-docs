@@ -2,22 +2,22 @@
 title: "Manage multiple tenants"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekuako
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 ms.date: 01/06/2025
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier3
 - scotvorg
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
 - Adm_TOC
-ms.custom: 
+ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 description: "Learn how to use the tenant switcher and multi-tenant views that give you the ability to manage tenants from a single location."

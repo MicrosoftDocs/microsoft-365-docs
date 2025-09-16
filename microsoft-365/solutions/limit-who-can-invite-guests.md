@@ -1,7 +1,7 @@
 ---
 title: "Limit who can invite guests"
-author: DaniEASmith
-ms.author: danismith
+author: officedocspr5
+ms.author: odocspr
 manager: jtremper
 ms.date: 06/19/2024
 audience: ITPro

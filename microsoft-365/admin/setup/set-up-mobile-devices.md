@@ -2,9 +2,9 @@
 title: "Set up mobile devices for Microsoft 365 for business users"
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: skjerland
-manager: scotv
+ms.author: kwekua
+author: kwekuako
+manager: dansimp
 ms.date: 10/08/2018
 audience: Admin
 ms.topic: install-set-up-deploy
@@ -13,10 +13,11 @@ ms.localizationpriority: medium
 ms.collection:
 - Tier2
 - scotvorg
-- highpri 
+- highpri
 - M365-subscription-management
 - M365-identity-device-management
-- Adm_TOC 
+- Adm_TOC
+- operations-pod
 ms.custom:
 - VSBFY23
 - Core_O365Admin_Migration

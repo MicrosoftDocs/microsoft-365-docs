@@ -1,11 +1,11 @@
 ---
-title: "Deploy and manage Office Add-ins through Integrated Apps"
+title: "Deploy and manage Office Add-ins through the integrated apps portal"
 f1.keywords:
 - NOCSH
 ms.author: efrene
 author: efrene
-manager: scotv
-ms.date: 05/11/2023
+manager: dansimp
+ms.date: 08/26/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -14,27 +14,28 @@ ms.collection:
 - Tier2
 - scotvorg
 - Adm_TOC
+- operations-pod
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: "An overview of how to deploy and manage Office Add-ins."
 ---
 
-# Deploy and manage Office Add-ins through Integrated Apps
+# Deploy and manage Office Add-ins through the integrated apps portal
 
 ## What are Office add-ins?
 
-Microsoft partnered with leading companies to build programs that help you get things done right from your Microsoft applications. These programs are called Office Add-ins and they bring powerful web services directly into Office. For more information, see [Start using your Office Add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862).
+Office Add-ins help users get things done right from their Office applications. They are made by Microsoft or non-Microsoft developers either for use within their own organizations or made available to the public in [AppSource](https://appsource.microsoft.com). For more information, see [Start using your Office Add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862).
 
 ## Before you begin
 
-Management and deployment via Integrated Apps require that the users are using Microsoft 365 Business licenses (Business Basic, Business Standard, Business Premium), Office 365 Enterprise licenses (E1/E3/E5/F3), or Microsoft 365 Enterprise licenses (E3/E5/F3). The users also need to be signed into Office using their organizational ID and have Exchange Online and active Exchange Online mailboxes. Your subscription directory must either be in or federated to Microsoft Entra ID.
+Management and deployment via integrated apps portal in the Microsoft 365 admin center require that the users are using Microsoft 365 Business licenses (Business Basic, Business Standard, Business Premium), Office 365 Enterprise licenses (E1/E3/E5/F3), or Microsoft 365 Enterprise licenses (E3/E5/F3). The users also need to be signed into Office using their organizational ID and have Exchange Online and active Exchange Online mailboxes. Your subscription directory must either be in or federated to Microsoft Entra ID.
 
 ### Office Requirements
 
-Deployment via Integrated Apps is supported for Outlook, Excel, Word, and PowerPoint add-ins. They run across multiple platforms, including Windows, Mac, iPad, and in a browser. Outlook add-ins are also supported on mobile (iOS and Android).
+Deployment via the integrated apps portal is supported for Outlook, Excel, Word, and PowerPoint add-ins. They run across multiple platforms, including Windows, Mac, iPad, and in a browser. Outlook add-ins are also supported on mobile (iOS and Android).
 
-For Word, Excel, and PowerPoint add-ins, Integrated Apps deployment is only supported on Windows, Mac, and the web (not iPad). Additionally, your users must meet these version requirements.
+For Word, Excel, and PowerPoint add-ins, deployment through the integrated apps portal is supported only on Windows, Mac, and the web (not iPad). Additionally, your users must meet the following version requirements.
 
 - On a Windows device, Version 1704 or later of Microsoft 365 Business licenses (Business Basic, Business Standard, Business Premium), Office 365 Enterprise licenses (E1/E3/E5/F3), or Microsoft 365 Enterprise licenses (E3/E5/F3).
 - On a Mac, Version 15.34 or later.
@@ -56,7 +57,7 @@ For Outlook, your users must meet these version requirements.
 
 Microsoft Exchange stores the add-in manifests within your organization's tenant. The admin deploying add-ins and the users receiving those add-ins must be on a version of Exchange Online that supports OAuth authentication. OAuth connectivity per user is verified by using the *Test-OAuthConnectivity* PowerShell cmdlet.
 
-Deployment doesn't support the following scenarios.
+Deployment through the integrated apps portal doesn't support the following scenarios.
 
 - Add-ins that target Word, Excel, or PowerPoint in Office 2013.
 - An on-premises directory service.
@@ -72,25 +73,27 @@ As an admin, you can manage Office add-ins in your organization as follows.
 - Manage how users can install and use Office Add-ins.
 - Upload custom Office add-ins for your organization.
 
-### Prepare to deploy and manage Office Add-ins via Integrated Apps
+### Prepare to deploy and manage Office Add-ins via the integrated apps portal
 
-When the relevant Office application starts, the add-in automatically downloads. If the add-in supports add-in commands, the add-in automatically appears in the ribbon within the Office application.
-
-Add-ins no longer appear for users if the admin turns off or deletes the add-in. They'll also stop appearing if the user is removed from Microsoft Entra ID or from a group that the add-in is assigned to. Learn how to perform these actions in the following section, [Deploy your Office Add-ins](#deploy-your-office-add-ins).
+Currently, Exchange admins and Global admins can deploy add-ins from the integrated apps portal.
 
 Add-in deployment is supported on three platforms: Windows, Mac, and on the web. It's also supported on iOS and Android for Outlook add-ins.
 
-Currently, Exchange admins and Global admins can deploy add-ins from Integrated apps.
+### User experience with admin-deployed add-ins
+
+After an add-in has been deployed from the portal, the next time a user opens the relevant Office application, the add-in automatically downloads. If the add-in supports add-in commands, the add-in's custom buttons automatically appear in the ribbon within the Office application.
+
+Add-ins no longer appear for users if the admin turns off or deletes the add-in. They'll also stop appearing if the user is removed from Microsoft Entra ID or from a group that the add-in is assigned to. Learn how to perform these actions in the following section, [Deploy your Office Add-ins](#deploy-your-office-add-ins).
 
 ## Deploy your Office Add-ins
 
 Deploying an add-in means you're preinstalling the add-in for a specific set of users in your organization. The admin fully controls all management actions taken on a deployed add-in. You can find, test, and fully deploy apps published by Microsoft and other partners. By purchasing and licensing the apps from the admin center, you add Microsoft and Microsoft partner apps to your list from a single location.
 
-1. In the admin center, in the left nav, choose **Settings**, and then choose **Integrated apps**.
+1. In the admin center, in the left navigation, choose **Settings**, and then choose **Integrated apps**.
 2. In the Deployed Apps list, select **Get apps** to get a view of the apps.
 3. On the **Microsoft 365 Apps published apps** page, select the app you want to deploy by choosing **Get it now**. Accept the permissions and select **Continue**.
 4. Select **Deploy** at the top of the page next to the message that refers to waiting to be deployed. If the app selected is linked to a SaaS offer by an independent software vendor (ISV), all the other apps that are part of this linked offer appear on the Configuration page. If you choose to deploy all of the apps, select **Next**. Otherwise, select **Edit**, and choose which apps you want to deploy. Some apps require you to add users before you can select **Deploy**.
-5. Select **Add users**, choose **Is this a test deployment**, and then select either **Entire organization**, **Specific users/groups**, or **Just me**. Specific users/groups can be a Microsoft 365 group, a security group, or a distributed group. You can also choose **Test deployment** if you prefer to wait to deploy the app to the entire organization.
+5. Select **Add users**, and then select either **Entire organization**, **Specific users/groups**, or **Just me**. Specific users/groups can be a Microsoft 365 group, a security group, or a distribution group. 
 6. Select **Next** to get to the **Accept permission request** page. The app capabilities and permissions of each of the apps are listed. If the app needs consent, select **Accept permissions**. Only a global administrator can give consent.
 7. Select **Next** to review the deployment and choose **Finish deployment**. You can view the deployment from the **Overview** tab by choosing **View this deployment**. In the Microsoft 365 admin center, you can see the status of each deployed app and the date you deployed the app.
 
@@ -101,11 +104,11 @@ It can take up to 24 hours for an add-in to show up for client for all users.
 Admins can deploy an add-in to everyone or to specific users and groups. Each option has implications.
 
 - **Everyone**: This option assigns the add-in to every user in the organization. Use this option sparingly and only for add-ins that are truly universal to your organization.
-- **Users**: If you assign an add-in to an individual user, and then deploy the add-in to a new user, you must first add the new user.
+- **Users**: If you assign an add-in to an individual user, and then deploy the add-in to a new user, you must first add the new user. 
 - **Groups**: If you assign an add-in to a group, users who are added to the group are automatically assigned the add-in. When a user is removed from a group, the user loses access to the add-in. In either case, no other action is required from the admin.
 - **Just me**: If you assign an add-in to just yourself, the add-in is assigned to only your account, which is ideal for testing the add-in.
 
-The right option for your organization depends on your configuration. However, we recommend making assignments by using groups. As an admin, you might find it easier to manage add-ins by using groups and controlling the membership of those groups rather than assigning individual users each time. In some situations, you might want to restrict access to a small set of users by making assignments to specific users by assigning users manually.
+The right option for your organization depends on your configuration. However, we recommend making assignments by using groups. As an admin, you might find it easier to manage add-ins by using groups and controlling the membership of those groups rather than assigning individual users each time. In some situations, you might want to restrict access to a small set of users by making assignments to specific users by assigning users manually. For example, consider assigning the add-in to a small set of users first for purposes of testing it.
 
 ### Recommended approach for deploying Office Add-ins
 
@@ -208,38 +211,53 @@ The user's license information is used to define whether a user is a faculty, st
 8. Deactivating these checkboxes turns off access to Outlook add-ins for users assigned to the policy.
 
 > [!NOTE]
-> This setting doesn't affect any deployed Office add-ins on Outlook. You can continue to deploy Office add-ins on Outlook to users in your organization, even if the setting is turned off.
+> This setting doesn't affect any deployed Outlook add-ins. You can continue to deploy Outlook add-ins to users in your organization, even if the setting is turned off.
 
-Microsoft is now partnering with leading developers to create unified apps that work across Outlook, Word, Excel, PowerPoint, Teams, and the Microsoft 365 App (formerly known as Office.com). Any settings made for Office Add-ins continue to be honored as long as they stay as add-ins. When Office add-ins upgrade to work across different Microsoft applications, you can learn to manage them from here. For more information, see [Controls for managing Teams apps that work on Outlook and Microsoft 365](/microsoft-365/admin/manage/teams-apps-work-on-outlook-and-m365#controls-for-managing-teams-apps-that-work-on-outlook-and-the-microsoft-365-app).
+Microsoft is now partnering with leading developers to create unified apps that work across Outlook, Word, Excel, PowerPoint, Teams, and the Microsoft 365 App (formerly known as Office.com). Any settings made for Office Add-ins continue to be honored as long as they stay as add-ins. When Office add-ins are upgraded to work across different Microsoft applications, you can learn to manage them from here. For more information, see [Controls for managing Teams apps that work on Outlook and Microsoft 365](/microsoft-365/admin/manage/teams-apps-work-on-outlook-and-m365#controls-for-managing-teams-apps-that-work-on-outlook-and-the-microsoft-365-app).
 
 ## Upload Custom Office Add-ins in your organization  
 
-You can also upload custom line-of-business add-ins and deploy it to users in your organization.
+You can also upload custom line-of-business add-ins and deploy them to users in your organization.
 
-1. In the admin center, in the left nav, choose **Settings** and then **Integrated apps**.
-2. Select **Upload custom apps**. Custom line-of-business add-ins for Word, PowerPoint, Excel, and Outlook are supported.
-3. Upload the manifest file from your device or add a URL link. Some apps require you to add users before you can select **Deploy**.
-4. Select **Add users**, choose **Is this a test Deployment**, and choose either **Entire organization**, **Specific users/groups**, or **Just me.** Specific users/groups can be a Microsoft 365 group, a security group, or a distributed group. You can also choose **Test deployment** if you want to wait to deploy the app to the entire organization.
-5. Select **Next** to view the **Accept permission request** page. The app capabilities and permissions of the apps are listed. If the app needs consent, select **Accept permissions**. Only a global administrator can give consent.
-6. Select **Next** to review the deployment and choose **Finish deployment**. You can view the deployment from the Overview tab by choosing **View this deployment**.
+1. In the admin center, in the left navigation, choose **Settings** and then **Integrated apps**.
+1. Select **Upload custom apps**. The **Upload Apps to deploy** wizard opens. Custom line-of-business add-ins for Word, PowerPoint, Excel, and Outlook are supported.
+1. The next steps depend on whether the add-in uses the XML-formatted add-in only manifest or the unified manifest for Microsoft 365. See [Office Add-ins manifest](/office/dev/add-ins/develop/add-in-manifests) for information about the difference.
 
-> [!NOTE]
-> The uploaded manifest size can't exceed 512 KB.
+    - **Add-in only manifest**:
+
+        1. Select **Office Add-in** on the **App type** dropdown.
+        1. In the **Choose how to upload app** section, do one of the following:
+
+           - Select the option to upload the manifest, and then select the **Choose File** button. Navigate to the add-in's manifest and complete the upload.
+           - Select the option to provide a URL for the manifest, fill in the URL, and then select **Validate**.
+
+         > [!NOTE]
+         > The uploaded manifest size can't exceed 512 KB.
+
+    - **Unified manifest for Microsoft 365**:
+
+         1. Select **Teams app** on the **App type** dropdown (*not* **Office Add-in**).
+         1. Select the **Choose File** button. Navigate to the add-in's zip-formatted app package file (which contains the manifest) and complete the upload.
+
+1. Select **Next**.
+1. Select **Add users**, and then choose either **Entire organization**, **Specific users/groups**, or **Just me.** Specific users/groups can be a Microsoft 365 group, a security group, or a distribution group.
+1. Select **Next** to view the **Accept permission request** page. The app capabilities and permissions of the apps are listed. If the app needs consent, select **Accept permissions**. Only a global administrator can give consent.
+1. Select **Next** to review the deployment and choose **Finish deployment**. You can view the deployment from the Overview tab by choosing **View this deployment**.
 
 ## More about Office Add-ins security
 
-Office Add-ins combine an XML manifest file that contains some metadata about the add-in, but most importantly points to a web application that contains all the code and logic. Add-ins can range in their capabilities, but usually read and write data to and from the user's documents.
+Office Add-ins combine a manifest file that contains some metadata about the add-in, but most importantly points to a web application that contains all the code and logic. Add-ins can range in their capabilities, but usually read and write data to and from the user's documents.
 
 For more information about the types and capabilities of Office Add-ins, see [Office Add-ins platform overview](/office/dev/add-ins/overview/office-add-ins), especially the section *Components of an Office Add-in*.
 
-To interact with the user's document, the add-in needs to declare what permission it needs in the manifest. A five-level JavaScript API access-permissions model provides the basis for privacy and security for users of task pane add-ins. Most of the add-ins in the Office Store are level ReadWriteDocument with almost all add-ins supporting at least the ReadDocument level. For more information about the permission levels, see [Requesting permissions for API use in content and task pane add-ins](/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins).
+To interact with the user's document, the add-in needs to declare what permission it needs in the manifest. A five-level JavaScript API access-permissions model provides the basis for privacy and security for users of task pane add-ins. Most of the add-ins in the Office Store are level **read/write document** with almost all add-ins supporting at least the **read document** level. For more information about the permission levels, see [Requesting permissions for API use in content and task pane add-ins](/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins).
 
 When a manifest is updated, the typical changes are to an add-in's icon and text. Occasionally, add-in commands change. However, the permissions of the add-in don't change. The web application where all the code and logic for the add-in runs can change at any time, which is the nature of web applications.
 
 Updates for add-ins happen as follows.
 
-- **Line-of-business add-in**: In this case, where an admin explicitly uploaded a manifest, the add-in requires that the admin upload a new manifest file to support metadata changes. The next time the relevant Microsoft 365 productivity apps start, the add-in will update. The web application can change at any time.
-- **Office Store add-in**: When an admin selected an add-in from the Office Store, if an add-in updates in the Office Store, the next time the relevant Microsoft 365 productivity apps start, the add-in will update. The web application can change at any time.
+- **Line-of-business add-in**: In this case, where an admin uploaded a manifest, the admin must upload the new manifest file to support metadata changes. The next time a user starts the relevant Microsoft 365 productivity application, the add-in will update.
+- **AppSource add-in**: When an admin selected an add-in from AppSource and then the developer updated the manifest in AppSource, the admin doesn't have to take any action. The next time a user starts the relevant Microsoft 365 productivity application, the add-in will update.
 
 > [!NOTE]
-> For Word, Excel, and PowerPoint use a [SharePoint App Catalog](/sharepoint/dev/sp-add-ins/publish-sharepoint-add-ins) to deploy add-ins to users in an on-premises environment with no connection to Microsoft 365 and/or support for SharePoint add-ins required. For Outlook, use the Exchange control panel to deploy in an on-premises environment without a connection to Microsoft 365.
+> There are other ways for deploying Office Add-ins in certain scenarios. For more information, see [Deploy and publish Office Add-ins](/office/dev/add-ins/publish/publish).

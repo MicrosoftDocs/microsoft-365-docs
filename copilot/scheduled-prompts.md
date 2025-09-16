@@ -2,17 +2,19 @@
 title: "Manage scheduled prompts for Microsoft 365 Copilot"
 f1.keywords:
 - NOCSH
-ms.author: camillepack
-author: camillepack
-manager: scotv
+ms.author: aaroncz
+author: aczechowski
+manager: dansimp
 ms.date: 06/02/2025
+ms.update-cycle: 180-days
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - m365copilot
 - magic-ai-copilot
+- operations-pod
 description: "Learn about managing scheduled prompts for Microsoft 365 Copilot, admin controls, data policies, and user management steps."
 ---
 

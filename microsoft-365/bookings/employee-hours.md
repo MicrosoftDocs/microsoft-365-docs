@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 ms.collection: 
 - Tier1
 - scotvorg
+- operations-pod
 description: "Set employee working hours and availability in Microsoft Bookings."
 ---
 

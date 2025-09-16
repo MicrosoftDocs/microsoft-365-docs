@@ -2,15 +2,15 @@
 title: "Sign up for Microsoft 365 Business Basic"
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
-manager: scotv
+ms.author: kwekua
+author: kwekuako
+manager: dansimp
 ms.date: 06/04/2024
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier2
 - scotvorg
 - M365-subscription-management
@@ -19,6 +19,7 @@ ms.collection:
 - Adm_O365_Setup
 - TRN_SMB
 - must-keep
+- operations-pod
 ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos

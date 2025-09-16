@@ -2,9 +2,9 @@
 title: "Password policy recommendations"
 f1.keywords:
 - CSH
-ms.author: kwekua
-author: kwekuako
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 ms.date: 04/02/2025
 audience: Admin
 ms.topic: article
@@ -18,7 +18,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - must-keep
-ms.custom: 
+ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 - okr_smb

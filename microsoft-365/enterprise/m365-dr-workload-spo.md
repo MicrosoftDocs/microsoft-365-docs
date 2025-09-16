@@ -109,8 +109,8 @@ Each user, Group mailbox, and SharePoint site have a Preferred Data Location (PD
 
 Users get a seamless experience when using Microsoft 365 services, including Office applications, OneDrive, and Search. See User experience in a Multi-Geo environment for details.
 
->[!NOTE]
->Once your tenant has enabled the Multi-Geo add-on, changing the default location for the tenant is not supported. This applies even for the [Data Residency Legacy Move Program](/microsoft-365/enterprise/m365-dr-legacy-move-program) and the Advanced Data Residency add-on.
+> [!NOTE]
+> Once your tenant has enabled the Multi-Geo add-on, changing the default location for the tenant is not supported. This applies even for the Advanced Data Residency add-on.
 
 ### **OneDrive**
 
@@ -479,8 +479,8 @@ You can stop a SharePoint site _Geography_ move, provided the move isn't in prog
 
 You can determine the status of a site move in our out of the _Geography_ that you're connected to by using the following cmdlets:
 
-- [Get-SPOSiteContentMoveState](/powershell/module/sharepoint-online/get-spositecontentmovestate) (non-Group-connected sites and SharePoint Embedded container sites)
-- [Get-SPOUnifiedGroupMoveState](/powershell/module/sharepoint-online/get-spounifiedgroupmovestate) (Group-connected sites)
+- [Get-SPOSiteContentMoveState](/powershell/module/microsoft.online.sharepoint.powershell/get-spositecontentmovestate) (non-Group-connected sites and SharePoint Embedded container sites)
+- [Get-SPOUnifiedGroupMoveState](/powershell/module/microsoft.online.sharepoint.powershell/get-spounifiedgroupmovestate) (Group-connected sites)
 
 Use the `-SourceSiteUrl` parameter to specify the site for which you want to see move status.
 

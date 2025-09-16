@@ -112,7 +112,7 @@ Run the following commands in Exchange Online PowerShell:
 $Credentials = Get-Credential
 ```
 
-The example uses the [Test-MigrationServerAvailability](/powershell/module/exchange/test-migrationserveravailability) cmdlet to obtain and test the connection settings to the on-premises Exchange server, and then uses those connection settings to create the migration endpoint called "CutoverEndpoint".
+The example uses the [Test-MigrationServerAvailability](/powershell/module/exchangepowershell/test-migrationserveravailability) cmdlet to obtain and test the connection settings to the on-premises Exchange server, and then uses those connection settings to create the migration endpoint called "CutoverEndpoint".
 
 ```powershell
 $TSMA = Test-MigrationServerAvailability -ExchangeOutlookAnywhere -Autodiscover -EmailAddress administrator@contoso.com -Credentials $credentials

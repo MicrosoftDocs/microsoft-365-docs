@@ -4,17 +4,18 @@ f1.keywords:
 - NOCSH
 ms.author: kwekua
 author: kwekuako
-manager: scotv
+manager: dansimp
 ms.date: 01/06/2025
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
-- Tier1 
+- Tier1
 - scotvorg
 - highpri
 - Adm_TOC
+- operations-pod
 ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
