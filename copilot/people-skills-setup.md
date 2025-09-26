@@ -31,7 +31,7 @@ For more information, see [assigning roles](/entra/identity/role-based-access-c
 
 Most organizations can quickly set up skills using our out-of-the-box People Skills library of over 16,000+ skills. If you prefer to curate your own library by importing custom skills, refer to the next section [Advanced setup](#advanced-setup-using-custom-skills-library).
 
-1. Go to the Copilot page in the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/copilot/overview) select **Settings** > **Data access**. and then **People Skills in Microsoft 365 Copilot**. Alternatively, you can find People Skills page under **Settings** > **Viva** > **Data Management**.
+1. Go to the Copilot page in the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/copilot/overview) and select **Settings** > **Data access** and then **People Skills in Microsoft 365 Copilot**. Alternatively, you can find People Skills page under **Settings** > **Viva** > **Data Management**.
 
    :::image type="content" source="media/people-skills-inferencing/quick-setup-with-out-of-the-box-library.png" alt-text="Screenshot displaying the People Skills in Microsoft 365 Copilot option in the Copilot page." lightbox="media/people-skills-inferencing/quick-setup-with-out-of-the-box-library.png":::
 
