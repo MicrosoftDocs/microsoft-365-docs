@@ -4,20 +4,21 @@ f1.keywords:
 - NOCSH
 ms.author: kwekua
 author: kwekuako
-manager: scotv
-ms.date: 05/30/2024
+manager: dansimp
+ms.date: 04/02/2025
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier2
 - scotvorg
 - highpri
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
 - Adm_TOC
 - must-keep
+- operations-pod
 ms.custom:
 - VSBFY23
 - TRN_M365B
@@ -46,20 +47,20 @@ You can also get a link from the <a href="https://go.microsoft.com/fwlink/p/?lin
 
 ## Before you begin
 
-You must be an administrator in a Microsoft 365 organization to use the admin mobile app.
+You must be an [administrator](../add-users/about-admin-roles.md) in a Microsoft 365 organization to use the admin mobile app.
 
 ## Watch: Install and use the admin mobile app
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198017).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c]
+> [!VIDEO 1dcd3486-a40f-4b7e-aa25-ab371de00a6b]
 
 ## Steps: Install and use the admin mobile app
 
 1. To get the Microsoft 365 Admin mobile app, search for  **Microsoft 365 Admin**  in the app store for your device and install it.
-2. Sign in with your global admin email address, and view the dashboard to see service health, monitor user licenses, and see messages and service requests.
+2. Sign in with your administrator email address, and view the dashboard to see service health, monitor user licenses, and see messages and service requests. For more information on administrator roles, see [About administrator roles](../add-users/about-admin-roles.md).
 
-Admin mobile app capabilities
+### Admin mobile app capabilities
 
 The admin app has a lot of capabilities that allows you to manage Microsoft 365 from your mobile or tablet device when you can’t get to a computer. Here's a list of some of the tasks you can do from the app:
 
@@ -73,16 +74,13 @@ The admin app has a lot of capabilities that allows you to manage Microsoft 365 
 
 If you're an admin and you're responsible for more than one Microsoft 365 organization, you can sign in to multiple organizations and quickly switch between them. The app supports dark theme and is available in 39 languages.
   
-> [!IMPORTANT]
-> If you're having issues using the Admin mobile app on iOS or Android, email us at [feedback365@microsoft.com](mailto:feedback365@microsoft.com) to let us know.
-
 ## Frequently asked questions
 
 Below are answers to frequently asked questions.
 
-### Does the admin app support multitenant billing features?
+### Does the admin app support multi-tenant billing features?
 
-The admin mobile app is missing a few multitenant features where the authorized admin can see the products and licenses of the tenant in question along with the products and licenses of associated tenants in a single view.
+The admin mobile app is missing a few multi-tenant features where the authorized admin can see the products and licenses of the tenant in question along with the products and licenses of associated tenants in a single view.
 
 This feature isn't yet part of the Microsoft 365 Admin mobile app, but will be coming soon. For more information, admins can go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.  
   
@@ -118,7 +116,7 @@ If you select a specific service incident or a message, the share option will be
   
 ### Can I use this app with multiple accounts or tenants?
 
-Yes, you can setup multiple accounts or organizations.
+Yes, you can set up multiple accounts or organizations.
 
 ### I’m unable to sign in or my app is acting funny. What can I do to troubleshoot or fix the issue?
 
@@ -139,7 +137,7 @@ Email [feedback365@microsoft.com](mailto:feedback365@microsoft.com) to report an
 
 ## Next steps
 
-Once you've downloaded the admin mobile, you can add users to get you started.
+Once you've downloaded the admin mobile app, you can add users to get you started.
   
 ## Related content
 

@@ -1,9 +1,9 @@
 ---
-ms.date: 02/22/2024
+ms.date: 06/11/2025
 title: "Configuring external data integrations for Loop experiences"
 ms.reviewer: dancost, dimple
-ms.author: jenz
-author: jenzamora
+ms.author: odocspr
+author: officedocspr5
 manager: jtremper
 recommendations: true
 audience: Admin
@@ -69,10 +69,10 @@ The Loop experiences check the following [Cloud Policy](/deployoffice/admincente
 1. Select **Customization** from the left pane.
 1. Select **Policy Management**.
 1. Create a new policy configuration or edit an existing one.
-1. From the **Choose the scope** dropdown list, choose either **All users**, or select the group for which you want to apply the policy. For more information, See [Microsoft 365 Groups for Cloud Policy](/microsoft-365/loop/loop-components-configuration#microsoft-365-groups-for-cloud-policy).
+1. From the **Choose the scope** dropdown list, choose either **All users**, or select the group for which you want to apply the policy. For more information, see [Microsoft 365 Groups for Cloud Policy](loop-admin-configuration.md#scoping-cloud-policy-with-microsoft-365-groups).
 1. In **Configure Settings**, choose one of the following settings:
     - For **Import, view, and edit, items from apps integrated with Loop**:
-        - first, recall:
+        - First, recall:
             - This is the primary policy to control all specific data integration policies. To configure a specific data integration differently than the primary setting, use one of the specific policies.
         - **Enabled**: All external data integrations in Loop are available to the users.
         - **Disabled**: All external data integrations in Loop aren't available to the users.
@@ -92,9 +92,9 @@ The Loop experiences check the following [Cloud Policy](/deployoffice/admincente
 1. Save the policy configuration.
 1. Reassign priority for any security group, if necessary. (If two or more policy configurations are applicable to the same set of users, the one with the higher priority is applied.)
 
-In case you create a new policy configuration or change the configuration for an existing policy, there's a delay in the change being reflected:
-- If there were existing policy configurations before the change, then it will take 90 mins for the change to be reflected.
-- If there were no policy configurations before to the change, then it will take 24 hours for the change to be reflected.
+    In case you create a new policy configuration or change the configuration for an existing policy, there's a delay in the change being reflected:
+    - If there were existing policy configurations before the change, then it will take 90 mins for the change to be reflected.
+    - If there were no policy configurations before to the change, then it will take 24 hours for the change to be reflected.
 
 
 ## Related topics

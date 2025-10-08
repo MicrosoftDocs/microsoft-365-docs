@@ -2,18 +2,19 @@
 title: "Microsoft 365 admin center accessibility overview"
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: scotv
+manager: dansimp
 audience: Admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
 - Adm_O365
 - Adm_TOC
 - must-keep
-ms.custom:
+- operations-pod
+ms.custom: 
 description: "Learn about the accessibility conformance and features of the Microsoft 365 admin center."
 ms.date: 10/20/2023
 ---

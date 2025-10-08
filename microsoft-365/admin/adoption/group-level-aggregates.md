@@ -2,22 +2,23 @@
 title: "Group Level Aggregates in Adoption Score"
 f1.keywords:
 - NOCSH
-ms.author: camillepack
+ms.author: cmcatee
 author: camillepack
-manager: scotv
+manager: dansimp
 ms.date: 11/11/2022
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-monikerRange: 'o365-worldwide'
-ms.collection: 
+monikerRange: o365-worldwide
+ms.collection:
 - Tier2
 - scotvorg
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: 
+- operations-pod
+ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
@@ -25,6 +26,7 @@ search.appverid:
 - MOE150
 description: "Use Group Level Aggregates in Microsoft Adoption score to get group-level insights for your organization in Microsoft 365."
 ---
+
 # Group Level Aggregates in Adoption Score
 
 Group Level Aggregates help admins and adoption strategists understand how different groups are performing on the people experiencing insights. Group Level Aggregates provide a higher level of insights and actions for your organization based on data from Microsoft Entra ID. You can get group-level insights for your organization in Microsoft 365 and use them to:
@@ -38,11 +40,11 @@ Group Level Aggregates help admins and adoption strategists understand how diffe
 Group Level Aggregates isn't enabled by default.
 
 > [!NOTE]
-> Group Level Aggregates can only be enabled by the Global Administrator role.  
+> Group Level Aggregates can only be enabled by the Global administrator role.  
   
 To enable Group Level Aggregates:
 
-1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> as a Global Administrator.
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
 2. Go to **Settings** \> **Org settings** \> **Adoption Score**.
 

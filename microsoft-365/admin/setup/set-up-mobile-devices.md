@@ -2,21 +2,22 @@
 title: "Set up mobile devices for Microsoft 365 for business users"
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: skjerland
-manager: scotv
+ms.author: kwekua
+author: kwekuako
+manager: dansimp
 ms.date: 10/08/2018
 audience: Admin
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
 - Tier2
 - scotvorg
-- highpri 
+- highpri
 - M365-subscription-management
 - M365-identity-device-management
-- Adm_TOC 
+- Adm_TOC
+- operations-pod
 ms.custom:
 - VSBFY23
 - Core_O365Admin_Migration
@@ -48,7 +49,7 @@ The example is for Outlook, but applies for any other apps you also want to inst
   
 Watch a short video on how to set up Microsoft 365 productivity apps on iOS devices with Microsoft 365 for business.<br><br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWee2n] 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e18c34a7-f392-458d-a062-3e1b53588796] 
 
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
 
@@ -80,7 +81,7 @@ Locate Outlook on the iPhone, and restart it. When prompted, enter a PIN and ver
   
 Watch a video about installing Outlook and Microsoft 365 on Android devices.<br><br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/ecc2e9c0-bc7e-4f26-8b14-91d84dbcfef0] 
+> [!VIDEO adae8df1-fd83-4bcc-8635-a0ade8ffbdca] 
 
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
 

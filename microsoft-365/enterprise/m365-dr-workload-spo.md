@@ -1,15 +1,15 @@
 ---
 title: Data Residency for SharePoint and OneDrive
 description: Data Residency for SharePoint and OneDrive
-ms.author: kvice
-author: kelleyvice-msft
-manager: scotv
+ms.author: v-fahasen
+author: fhasen-msft
+manager: v-nihmi
 ms.service: microsoft-365-enterprise
 ms.subservice: advanced-data-residency
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 02/29/2024
+ms.date: 02/11/2025
 ms.reviewer: deanw, anfra, robnichols
 ms.custom:
 - it-pro
@@ -100,14 +100,17 @@ Refer to the link above for more information about the retirement plan and the a
 
 ## **Multi-Geo Capabilities in SharePoint / OneDrive**
 
+> [!IMPORTANT]
+> There is currently a known issue caused by the retirement of BCS that is affecting site moves. The fix is currently being worked on. Currently, if you are facing issues, please try using the PowerShell cmdlet while using the -SuppressBcsCheck parameter.
+
 Multi-Geo capabilities in OneDrive and SharePoint enable control of shared resources like SharePoint team sites and Microsoft 365 group mailboxes stored at rest in a specified _Macro Region Geography_ or _Local Region Geography_.
 
 Each user, Group mailbox, and SharePoint site have a Preferred Data Location (PDL) which denotes the _Macro Region Geography_ or _Local Region Geography_ (location where related data is to be stored). Users' personal data (Exchange mailbox and OneDrive) along with any Microsoft 365 Groups or SharePoint sites that they create can be stored in the specified _Macro Region Geography_ or _Local Region Geographies_ location to meet data residency requirements. You can specify different administrators for each _Macro Region Geography_ or _Local Region Geographies_ location.
 
 Users get a seamless experience when using Microsoft 365 services, including Office applications, OneDrive, and Search. See User experience in a Multi-Geo environment for details.
 
->[!NOTE]
->Once your tenant has enabled the Multi-Geo add-on, changing the default location for the tenant is not supported. This applies even for the [Data Residency Legacy Move Program](/microsoft-365/enterprise/m365-dr-legacy-move-program) and the Advanced Data Residency add-on.
+> [!NOTE]
+> Once your tenant has enabled the Multi-Geo add-on, changing the default location for the tenant is not supported. This applies even for the Advanced Data Residency add-on.
 
 ### **OneDrive**
 
@@ -228,7 +231,9 @@ If a OneDrive contains a subsite, for example, it can't be moved. You can use th
 Start-SPOUserAndContentMove -UserPrincipalName <UPN> -DestinationDataLocation <DestinationDataLocation> -ValidationOnly
 ```
 
-This will return Success if the OneDrive is ready to be moved or Fail if there's a legal hold or subsite that would prevent the move. Once you have validated that the OneDrive is ready to move, you can start the move.
+This will return Success if the OneDrive is ready to be moved or Fail if there's any reason that would prevent the move. Once you have validated that the OneDrive is ready to move, you can start the move.
+
+If the OneDrive has a legal hold on it, the move would proceed and the Preservation Hold Library would continue to exist in the site. Once the move completes, apply a hold on the new URL and later remove the existing hold on the earlier URL.
 
 #### **Start a OneDrive geo move**
 
@@ -259,7 +264,7 @@ To schedule a _Geography_ move for a later time, use one of the following parame
 You can stop the _Geography_ move of a user's OneDrive, provided the move isn't in progress or completed by using the cmdlet:
 
 ```powershell
-Stop-SPOUserAndContentMove – UserPrincipalName <UserPrincipalName>
+Stop-SPOUserAndContentMove –UserPrincipalName <UserPrincipalName>
 ```
 
 Where _UserPrincipalName_ is the UPN of the user whose OneDrive move you want to stop.
@@ -474,8 +479,8 @@ You can stop a SharePoint site _Geography_ move, provided the move isn't in prog
 
 You can determine the status of a site move in our out of the _Geography_ that you're connected to by using the following cmdlets:
 
-- [Get-SPOSiteContentMoveState](/powershell/module/sharepoint-online/get-spositecontentmovestate) (non-Group-connected sites and SharePoint Embedded container sites)
-- [Get-SPOUnifiedGroupMoveState](/powershell/module/sharepoint-online/get-spounifiedgroupmovestate) (Group-connected sites)
+- [Get-SPOSiteContentMoveState](/powershell/module/microsoft.online.sharepoint.powershell/get-spositecontentmovestate) (non-Group-connected sites and SharePoint Embedded container sites)
+- [Get-SPOUnifiedGroupMoveState](/powershell/module/microsoft.online.sharepoint.powershell/get-spounifiedgroupmovestate) (Group-connected sites)
 
 Use the `-SourceSiteUrl` parameter to specify the site for which you want to see move status.
 
@@ -485,11 +490,14 @@ The move statuses are described in the following table.
 
 |Status|Description|
 |---|---|
-|Ready to Trigger|The move hasn't started.|
+|Ready to Trigger|The move hasn't started. You must run the relevant PowerShell cmdlet to start the move.|
 |Scheduled|The move is in queue but hasn't yet started.|
 |InProgress (n/4)|The move is in progress in one of the following states: Validation (1/4), Back up (2/4), Restore (3/4), Cleanup (4/4).|
 |Success|The move completed successfully.|
 |Failed|The move failed.|
+|Stopped|The move was canceled by an admin while it was still queued.|
+|NotSupported|The move could not be processed because the PDL was invalid.|
+|Rescheduled|The move did not succeed and is being scheduled again for another attempt.|
 
 You can also apply the `-Verbose` option to see additional information about the move.
 

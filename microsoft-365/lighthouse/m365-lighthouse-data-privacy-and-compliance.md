@@ -1,11 +1,11 @@
 ---
 title: "Data privacy and compliance in Microsoft 365 Lighthouse"
 f1.keywords: CSH
-ms.author: sharik
+ms.author: dansimp
 author: SKjerland
 manager: scotv
 ms.reviewer: iswillia
-ms.date: 04/16/2024
+ms.date: 10/11/2024
 audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-lighthouse
@@ -16,6 +16,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - essentials-privacy
+- essentials-compliance
 ms.custom:
 - AdminSurgePortfolib
 - M365-Lighthouse                         
@@ -59,7 +60,7 @@ These principles guide Microsoft's approach to data access. They emphasize respo
 In Lighthouse, data access relationships play a pivotal role in governing how MSPs interact with customer data. These relationships define the foundation for ethical and transparent data handling. The two key data access relationship types in Lighthouse include:
 
 - **Delegated admin relationship**
-    - **Role:** Delegated admins perform administrative tasks on behalf of customers.
+    - **Role:** Delegated admins perform administrative tasks on behalf of customers to support customer success.
     - **Purpose:** This type of relationship streamlines routine actions like user management and service monitoring.
     - **Value added:** Fine-grained permissions ensure controlled access.
 
@@ -80,7 +81,7 @@ Data access relationships intersect with the following data feature areas:
 
 - **Customer success insights**<br>
     These features include opportunities and subscription renewals and enable MSPs to offer proactive guidance and recommendations to their customers.
-    - **Data source:** Lighthouse uses anonymized tenant-level usage data, which combines subscription information with aggregated insights. This approach ensures valuable analytics while safeguarding individual privacy.
+    - **Data source:** Lighthouse uses anonymized tenant-level usage data, which combines subscription information with aggregated insights. This approach ensures valuable analytics while safeguarding individual privacy. Lighthouse surfaces customer success insights from customers who have an active reseller relationship or delegated admin relationship with the MSP.
     - **Example:** By using the subscription renewals feature, an MSP can proactively connect with their customer to discuss their needs and take the appropriate actions to prevent a service interruption.
 
 - **Customer management**<br>
@@ -94,7 +95,7 @@ By understanding these feature areas and their connection to data access relatio
 
 Data residency refers to the physical location where data is stored and processed. Data privacy, protection laws, and regulations might vary by region and country, and some customers might prefer or require their data to reside in certain locations. MSPs should understand how Lighthouse handles data residency and which options are available for them and their customers.
 
-Lighthouse processes and stores data in compliance with regional data protection laws and regulations. However, it's important to note that Lighthouse has different data residency commitments than other Microsoft 365 services. For example, some Microsoft 365 services allow customers to choose a specific country for their data processing and storage, whereas Lighthouse doesn't offer this option. MSPs and customers should be aware that Lighthouse processes and stores data in the region associated with the customer tenant.
+Lighthouse processes and stores data in compliance with regional data protection laws and regulations. However, it's important to note that Lighthouse has different data residency commitments than other Microsoft 365 services. For example, some Microsoft 365 services allow customers to choose a specific country/region for their data processing and storage, whereas Lighthouse doesn't offer this option. MSPs and customers should be aware that Lighthouse processes and stores data in the region associated with the customer tenant.
 
 This approach is designed to provide a consistent and unified experience for MSPs who manage customers in different regions. By processing and storing data in the customer tenant's region, Lighthouse can optimize performance, reliability, and scalability for these MSPs.
 

@@ -1,8 +1,8 @@
 ---
 title: "Microsoft 365 admin center Viva Goals activity reports"
-ms.author: rasanders
-author: rasanders
-manager: liz.pierce
+ms.author: cmcatee
+author: cmcatee-MSFT
+manager: scotv
 ms.date: 06/09/2023
 audience: Admin
 ms.topic: article
@@ -14,6 +14,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+- operations-pod
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160

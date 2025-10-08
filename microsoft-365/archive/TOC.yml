@@ -1,3 +1,4 @@
+items:
     - name: Microsoft 365 Archive
       href: index.yml
  
@@ -5,8 +6,12 @@
       href: archive-overview.md
     - name: Admin setup 
       href: archive-setup.md
+    - name: Privacy, security, & compliance 
+      href: archive-privacy-security.md
     - name: Pricing model 
       href: archive-pricing.md
+    - name: Education offering 
+      href: archive-education-offering.md  
     - name: Archive states 
       href: archive-states.md
     - name: Manage 

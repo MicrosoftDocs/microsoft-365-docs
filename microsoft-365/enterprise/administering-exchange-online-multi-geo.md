@@ -32,7 +32,7 @@ Typically, Exchange Online PowerShell connects to the central geo location. But,
 
 The requirements for installing and using the Exchange Online PowerShell module are described in [Install and maintain the Exchange Online PowerShell module](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-module).
 
-To connect Exchange Online PowerShell to a specific geo location, the _ConnectionUri_ parameter is different than the regular connection instructions. The rest of the commands and values are the same.
+To connect Exchange Online PowerShell to a specific geo location, the _ConnectionUri_ parameter is different than the [regular connection instructions](/powershell/exchange/connect-to-exchange-online-powershell). The rest of the commands and values are the same.
 
 Specifically, you need to add the `?email=<emailaddress>` value to end of the _ConnectionUri_ value. `<emailaddress>` is the email address of **any** mailbox in the target geo location. Your permissions to that mailbox or the relationship to your credentials aren't a factor; the email address simply tells Exchange Online PowerShell where to connect.
 
@@ -48,13 +48,13 @@ The following connection instructions work for accounts that are or aren't confi
    Import-Module ExchangeOnlineManagement
    ```
 
-2. In the following example, admin@contoso.onmicrosoft.com is the admin account, and the target geo location is where the mailbox olga@contoso.onmicrosoft.com resides.
+2. In the following example, `admin@contoso.onmicrosoft.com` is the admin account, and the target geo location is where the mailbox `olga@contoso.onmicrosoft`.com resides.
 
    ```powershell
    Connect-ExchangeOnline -UserPrincipalName admin@contoso.onmicrosoft.com -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com
    ```
 
-3. Enter the password for the admin@contoso.onmicrosoft.com in the prompt that appears. If the account is configured for MFA, you also need to enter the security code.
+3. Enter the password for the `admin@contoso.onmicrosoft.com` in the prompt that appears. If the account is configured for MFA, you also need to enter the security code.
 
 ## View the available geo locations that are configured in your Exchange Online organization
 
@@ -203,11 +203,11 @@ For detailed syntax and parameter information, see [New-MgUser](/powershell/modu
 
 ## Onboard existing on-premises mailboxes in a specific geo location
 
-You can use the standard onboarding tools and processes to migrate a mailbox from an on-premises Exchange organization to Exchange Online, including the [Migration dashboard in the EAC](https://support.office.com/article/d164b35c-f624-4f83-ac58-b7cae96ab331), and the [New-MigrationBatch](/powershell/module/exchange/new-migrationbatch) cmdlet in Exchange Online PowerShell.
+You can use the standard onboarding tools and processes to migrate a mailbox from an on-premises Exchange organization to Exchange Online, including the [Migration dashboard in the EAC](https://support.office.com/article/d164b35c-f624-4f83-ac58-b7cae96ab331), and the [New-MigrationBatch](/powershell/module/exchangepowershell/new-migrationbatch) cmdlet in Exchange Online PowerShell.
 
 The first step is to verify a user object exists for each mailbox to be onboarded, and verify the correct **PreferredDataLocation** value is configured in Microsoft Entra ID. The onboarding tools respect the **PreferredDataLocation** value and migrate the mailboxes directly to the specified geo location.
 
-Or, you can use the following steps to onboard mailboxes directly in a specific geo location using the [New-MoveRequest](/powershell/module/exchange/new-moverequest) cmdlet in Exchange Online PowerShell.
+Or, you can use the following steps to onboard mailboxes directly in a specific geo location using the [New-MoveRequest](/powershell/module/exchangepowershell/new-moverequest) cmdlet in Exchange Online PowerShell.
 
 1. Verify the user object exists for each mailbox to be onboarded and that **PreferredDataLocation** is set to the desired value in Microsoft Entra ID. The value of **PreferredDataLocation** is synchronized to the **MailboxRegion** attribute of the corresponding mail user object in Exchange Online.
 

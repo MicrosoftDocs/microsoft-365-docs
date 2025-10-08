@@ -11,7 +11,9 @@ metadata:
   services: office-365-security-compliance
   ms.service: microsoft-365-security
   ms.topic: hub-page # Required
-  ms.collection: m365-security-compliance
+  ms.collection: 
+  - m365-security-compliance
+  - trust-pod
   author: dansimp #Required; your GitHub user alias, with correct capitalization.
   ms.author: dansimp #Required; microsoft alias of author; optional team alias.
   ms.date: 04/24/2024 #Required; mm/dd/yyyy format.
@@ -62,7 +64,7 @@ conceptualContent:
         links:
          - url: /copilot/microsoft-365/microsoft-365-copilot-privacy
            itemType: overview
-           text: Data, Privacy, and Security for Microsoft Copilot for Microsoft 365     
+           text: Data, Privacy, and Security for Microsoft 365 Copilot     
  
    # Card
       - title: Microsoft Teams

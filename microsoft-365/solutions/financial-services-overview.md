@@ -5,13 +5,13 @@ ms.author: samanro
 author: samanro
 manager: bcarter
 ms.audience: ITPro
-ms.topic: article
+ms.topic: solution-overview
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: 
 - highpri
 - M365-subscription-management
-- M365solutions
+- M365solution-overview
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
 ms.date: 09/29/2022
@@ -44,5 +44,4 @@ Learn about Microsoft Cloud for Financial Services:
 
 <br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWMlmS]
-
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f83cc8e1-b036-42d9-85b1-3bbc9e4fef68]

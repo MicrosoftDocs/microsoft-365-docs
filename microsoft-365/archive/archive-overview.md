@@ -5,21 +5,18 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 04/30/2024
-ms.topic: conceptual
+ms.date: 06/26/2025
+ms.topic: overview
 ms.service: microsoft-365-archive
 ms.custom: archive
 search.appverid:
 ms.collection:
     - essentials-overview
 ms.localizationpriority:  medium
-description: Learn about how Microsoft 365 Archive can provide your with organization cost-effective storage solutions.
+description: Learn about how Microsoft 365 Archive can provide your organization with cost-effective storage solutions.
 ---
 
 # Overview of Microsoft 365 Archive
-
-> [!NOTE]
-> This feature is now generally available. It is currently rolling out and might not yet be fully available to all organizations.
 
 Microsoft 365 Archive offers cost-effective storage for inactive SharePoint sites.
 
@@ -33,7 +30,7 @@ Some additional advantages of using Microsoft 365 Archive are:
 
 - **Cost savings** – A lower list price on storage consumption beyond your license-allocated Microsoft 365 storage quota.
 
-- **Lossless metadata** – A site will retain all of its metadata and permissions upon reactivation.
+- **Lossless metadata** – A site retains all of its metadata and permissions upon reactivation.
 
 - **Decluttering** – Explicit separation between active and inactive content to help you manage your site's lifecycle.
 
@@ -52,7 +49,16 @@ Administrators should notify the site owners and end users before a site is arch
 
 ## Limitations
 
-Document Center templates are not available to archive with Microsoft 365 Archive.
+- Publishing sites, channel sites, and a handful of legacy site template types are not available to archive with Microsoft 365 Archive. For more information, see [Site templates supported](./archive-manage.md#site-templates-supported).
+- While sites associated with Teams with exclusively standard channels are supported for archiving, sites associated with Teams that include private or shared channels are only partially supported:
+    - SharePoint admin center: Archiving a site with channel sites is not possible. (Message: "The group connected site with channel sites associated can't be archived.")
+    - PowerShell and Graph API: Archiving a site with channel sites is not blocked.
+    Only the main site associated to the Team (and its standard channels) is archived. The private and shared channel sites remain active. Archiving the channel sites directly is not possible, as these sites use unsupported site templates.
+
+## Related articles
+
+[Education offering](archive-education-offering.md)
+
 
 <!---
 ## Preview limitations

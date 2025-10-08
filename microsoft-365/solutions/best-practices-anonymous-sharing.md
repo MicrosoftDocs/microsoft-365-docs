@@ -5,7 +5,7 @@ author: jacktremper
 manager: pamgreen
 ms.date: 01/03/2024
 audience: ITPro
-ms.topic: article
+ms.topic: best-practice
 ms.service: o365-solutions
 ms.collection: 
 - highpri
@@ -59,7 +59,7 @@ To set an expiration date for Anyone links on a specific site
 
 Note that once an *Anyone* link expires, the file or folder can be reshared with a new *Anyone* link.
 
-You can set *Anyone* link expiration for a specific site by using [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite). 
+You can set *Anyone* link expiration for a specific site by using [Set-SPOSite](/powershell/module/microsoft.online.sharepoint.powershell/set-sposite). 
 
 ```powershell
 Set-SPOSite -Identity https://contoso.sharepoint.com/sites/marketing -OverrideTenantAnonymousLinkExpirationPolicy $true -AnonymousLinkExpirationInDays 15
@@ -69,7 +69,7 @@ Set-SPOSite -Identity https://contoso.sharepoint.com/sites/marketing -OverrideTe
 
 By default, *Anyone* links for a file allow people to edit the file, and *Anyone* links for a folder allow people to edit and view files, and upload new files to the folder. You can change these permissions for files and for folders, independently, to view-only.
 
-If you want to allow unauthenticated sharing, but are concerned about unauthenticated people modifying your organization's content, consider setting the file and folder permissions to **View**.
+If you want to allow unauthenticated sharing, but are concerned about unauthenticated people modifying your organization's content, consider setting the file permissions to **View** and folder permissions to **View** or **View and upload** (which restricts *Anyone* links to **View** while enabling the *Request Files* feature).
 
 To set permissions for Anyone links across the organization
 
@@ -77,7 +77,7 @@ To set permissions for Anyone links across the organization
 1. Under **Choose expiration and permissions options for Anyone links**, select the file and folder permissions that you want to use.</br>
    ![Screenshot of SharePoint organization-level Anyone link permissions settings.](../media/sharepoint-organization-anyone-link-permissions.png)
 
-With *Anyone* links set to **View**, users can still share files and folders with guests and give them edit permissions by using *Specific people* links. *Specific people* links require people outside your organization to authenticate as guests, and you can track and audit guest activity on files and folders shared with these links.
+With *Anyone* links set to **View** or **View and Upload**, users can still share files and folders with guests and give them edit permissions by using *Specific people* links. *Specific people* links require people outside your organization to authenticate as guests, and you can track and audit guest activity on files and folders shared with these links.
 
 ## Set default link type to a link that only work for people in your organization
 
@@ -110,7 +110,7 @@ You can use [Microsoft Purview Data Loss Prevention (DLP)](/purview/dlp-learn-ab
 
 To create a DLP rule:
 
-1. In the [Microsoft Purview admin center](https://compliance.microsoft.com/), expand **Data loss prevention**, and select **Policies**.
+1. In the [Microsoft Purview portal](https://purview.microsoft.com/), expand **Data loss prevention**, and select **Policies**.
 1. Select **Create policy**.
 1. Choose **Custom**, select **Custom policy,** and then select **Next**.
 1. Type a name for the policy and select **Next**.
@@ -133,15 +133,15 @@ To create a DLP rule:
 
 When you allow anonymous users to upload files, you're at an increased risk of someone uploading a malicious file. You can use the *Safe Attachments* feature to check email attachments in a virtual environment before they're delivered to recipients and quarantine files that are found to be unsafe. For more information, see [Safe Attachments in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/safe-attachments-about).
 
-You can also use the *Safe Documents* feature to scan opened Office documents in [Protected View](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653) or [Application Guard for Office](https://support.microsoft.com/topic/9e0fb9c2-ffad-43bf-8ba3-78f785fdba46). For more information, see [Safe Documents in Microsoft 365 A5 or E5 Security](../security/office-365-security/safe-documents-in-e5-plus-security-about.md).
+You can also use the *Safe Documents* feature to scan opened Office documents in [Protected View](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653). For more information, see [Safe Documents in Microsoft 365 A5 or E5 Security](../security/office-365-security/safe-documents-in-e5-plus-security-about.md).
 
 ## Add copyright information to your files
 
-If you use sensitivity labels in the Microsoft Purview admin center, you can configure *content marking* in your labels to add a watermark or a header or footer automatically to your organization's Office documents. In this way, you can make sure that shared files contain copyright or other ownership information.
+If you use sensitivity labels in the Microsoft Purview portal, you can configure *content marking* in your labels to add a watermark or a header or footer automatically to your organization's Office documents. In this way, you can make sure that shared files contain copyright or other ownership information.
 
 To add a footer to a labeled file
 
-1. Open the [Microsoft Purview admin center](https://compliance.microsoft.com).
+1. Open the [Microsoft Purview portal](https://purview.microsoft.com).
 1. In the left navigation, under **Solutions**, expand **Information protection** and select **Labels**.
 1. Select the label where you want to add content marking, and then select **Edit label**.
 1. Select **Next** to reach the **Choose protection settings for labeled items** page, and then select **Apply content marking**. Select **Next**

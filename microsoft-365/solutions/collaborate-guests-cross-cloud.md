@@ -1,11 +1,11 @@
 ---
 title: Collaborate with guests from other Microsoft 365 cloud environments
-ms.author: jtremper
-author: jacktremper
-manager: pamgreen
+author: officedocspr5
+ms.author: odocspr
+manager: jtremper
 ms.date: 09/29/2023
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-solutions
 ms.collection:
 - highpri
@@ -15,6 +15,7 @@ ms.collection:
 - m365solution-3tiersprotection
 - m365solution-securecollab
 - m365initiative-externalcollab
+- guest-access-external-collab
 ms.custom: 
 ms.localizationpriority: medium
 f1.keywords: NOCSH
@@ -40,8 +41,9 @@ In order to invite guests from an organization in a different Microsoft Azure cl
 Note that tenants in Microsoft Azure Government (Microsoft 365 GCC High and DoD) can't create a cross-tenant connection with tenants in Microsoft Azure China.
 
 > [!NOTE]
-> VDI clients aren't supported for cross-cloud guests.
-> 
+> VDI clients using the new [SlimCore-based optimization](/microsoftteams/vdi-2#cross-cloud-collaboration) are supported for cross-cloud meetings. WebRTC-based optimization doesn't support cross-cloud meetings.
+
+> [!NOTE]
 > B2B Member accounts aren't supported for cross cloud guests.  All cross cloud users must be of type B2B guest.
 
 > [!IMPORTANT]

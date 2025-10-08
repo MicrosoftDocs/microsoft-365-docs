@@ -3,9 +3,9 @@ title: "Microsoft 365 IP Address and URL web service"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 01/19/2024
+ms.date: 01/08/2025
 audience: ITPro
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.subservice: network
 ms.localizationpriority: high
@@ -50,7 +50,7 @@ As a network perimeter device vendor, you can use this web service to:
 - Get the current changes.
 
 > [!NOTE]
-> If you are using Azure ExpressRoute to connect to Microsoft 365, please review [Azure ExpressRoute for Microsoft 365](azure-expressroute.md) to familiarize yourself with the Microsoft 365 services supported over Azure ExpressRoute. Also review the article [Microsoft 365 URLs and IP address ranges](urls-and-ip-address-ranges.md) to understand which network requests for Microsoft 365 applications require Internet connectivity. This will help to better configure your perimeter security devices.
+> If you're using Azure ExpressRoute to connect to Microsoft 365, review [Azure ExpressRoute for Microsoft 365](azure-expressroute.md) to familiarize yourself with the Microsoft 365 services supported over Azure ExpressRoute. Also review the article [Microsoft 365 URLs and IP address ranges](urls-and-ip-address-ranges.md) to understand which network requests for Microsoft 365 applications require Internet connectivity. This will help to better configure your perimeter security devices.
 
 For more information, see:
 
@@ -112,7 +112,7 @@ This URI returns the latest version of each Microsoft 365 service instance. Exam
 ```
 
 > [!IMPORTANT]
-> The GUID for the ClientRequestID parameter in these URIs are only an example. To try the web service URIs out, generate your own GUID. The GUIDs shown in these examples may be blocked by the web service in the future.
+> The GUID for the ClientRequestID parameter in these URIs are only an example. To try out the web service URIs, generate your own GUID. The GUIDs shown in these examples might be blocked by the web service in the future.
 
 Example 2 request URI: <https://endpoints.office.com/version/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
@@ -254,14 +254,15 @@ The result from the changes web method is an array of records in which each reco
 - endpointSetId—The ID of the endpoint set record that is changed.
 - disposition—Describes what the change did to the endpoint set record. Values are _change_, _add_, or _remove_.
 - impact—Not all changes will be equally important to every environment. This element describes the expected impact to an enterprise network perimeter environment as a result of this change. This element is included only in change records of version **2018112800** and later. Options for the impact are:
-  — AddedIp – An IP address was added to Microsoft 365 and will be live on the service soon. This represents a change you need to take on a firewall or other layer 3 network perimeter device. If you don't add this before we start using it, you may experience an outage.
-  — AddedUrl – A URL was added to Microsoft 365 and will be live on the service soon. This represents a change you need to take on a proxy server or URL parsing network perimeter device. If you don't add this URL before we start using it, you may experience an outage.
-  — AddedIpAndUrl—Both an IP address and a URL were added. This represents a change you need to take on either a firewall layer 3 device or a proxy server or URL parsing device. If you don't add this IP/URL pair before we start using it, you may experience an outage.
-  — RemovedIpOrUrl – At least one IP address or URL was removed from Microsoft 365. Remove the network endpoints from your perimeter devices, but there's no deadline for you to do this.
-  — ChangedIsExpressRoute – The ExpressRoute support attribute was changed. If you use ExpressRoute, you might need to take action depending on your configuration.
-  — MovedIpOrUrl – We moved an IP address or Url between this endpoint set and another one. Generally no action is required.
-  — RemovedDuplicateIpOrUrl – We removed a duplicate IP address or Url but it's still published for Microsoft 365. Generally no action is required.
-  — OtherNonPriorityChanges – We changed something less critical than all of the other options, such as the contents of a note field.
+   - AddedIp – An IP address was added to Microsoft 365 and will be live on the service soon. This represents a change you need to take on a firewall or other layer 3 network perimeter device. If you don't add this before we start using it, you might experience an outage.
+   - AddedUrl – A URL was added to Microsoft 365 and will be live on the service soon. This represents a change you need to take on a proxy server or URL parsing network perimeter device. If you don't add this URL before we start using it, you might experience an outage.
+   - AddedIpAndUrl—Both an IP address and a URL were added. This represents a change you need to take on either a firewall layer 3 device or a proxy server or URL parsing device. If you don't add this IP/URL pair before we start using it, you might experience an outage.
+   - AddedSubstituteUrl – An FQDN previously unpublished due to a wildcard is now published because the wildcard URL was removed. This change is effective immediately.  
+   - RemovedIpOrUrl – At least one IP address or URL was removed from Microsoft 365. Remove the network endpoints from your perimeter devices, but there's no deadline for you to do this.
+   - ChangedIsExpressRoute – The ExpressRoute support attribute was changed. If you use ExpressRoute, you might need to take action depending on your configuration.
+   - MovedIpOrUrl – We moved an IP address or Url between this endpoint set and another one. Generally no action is required.
+   - RemovedDuplicateIpOrUrl – We removed a duplicate IP address or Url but it's still published for Microsoft 365. Generally no action is required.
+   - OtherNonPriorityChanges – We changed something less critical than all of the other options, such as the contents of a note field.
 - version—The version of the published endpoint set in which the change was introduced. Version numbers are of the format _YYYYMMDDNN_, where _NN_ is a natural number incremented if there are multiple versions required to be published on a single day.
 - previous—A substructure detailing previous values of changed elements on the endpoint set. This won't be included for newly added endpoint sets. Includes  _ExpressRoute_, _serviceArea_, _category_, _required_, _tcpPorts_, _udpPorts_, and _notes_.
 - current—A substructure detailing updated values of changes elements on the endpoint set. Includes _ExpressRoute_, _serviceArea_, _category_, _required_, _tcpPorts_, _udpPorts_, and _notes_.
@@ -272,7 +273,7 @@ The result from the changes web method is an array of records in which each reco
 - remove—A substructure detailing items to be removed from the endpoint set. Omitted if there are no removals.
   — ips—Items to be removed from the _ips_ array.
   — urls- Items to be removed from the _urls_ array.
-
+  
 ### Changes web method examples
 
 Example 1 request URI: <https://endpoints.office.com/changes/worldwide/0000000000?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
@@ -590,7 +591,7 @@ else:
 
 ## Web Service interface versioning
 
-Updates to the parameters or results for these web service methods may be required in the future. After the general availability version of these web services is published, Microsoft will make reasonable efforts to provide advance notice of material updates to the web service. When Microsoft believes that an update will require changes to clients using the web service, Microsoft will keep the previous version (one version back) of the web service available for at least 12 months after the release of the new version. Customers who don't upgrade during that time may be unable to access the web service and its methods. Customers must ensure that clients of the web service continue working without error if the following changes are made to the web service interface signature:
+Updates to the parameters or results for these web service methods might be required in the future. After the general availability version of these web services is published, Microsoft will make reasonable efforts to provide advance notice of material updates to the web service. When Microsoft believes that an update will require changes to clients using the web service, Microsoft will keep the previous version (one version back) of the web service available for at least 12 months after the release of the new version. Customers who don't upgrade during that time might be unable to access the web service and its methods. Customers must ensure that clients of the web service continue working without error if the following changes are made to the web service interface signature:
 
 - Adding a new optional parameter to an existing web method that doesn't have to be provided by older clients and doesn't impact the result an older client receives.
 - Adding a new named attribute in one of the response REST items or other columns to the response CSV.
@@ -608,7 +609,7 @@ You can use a few different methods to get email notifications when changes to t
 
 [Get-PacFile](https://www.powershellgallery.com/packages/Get-PacFile) is a PowerShell script that reads the latest network endpoints from the Microsoft 365 IP Address and URL web service and creates a sample PAC file. For information on using Get-PacFile, see [Use a PAC file for direct routing of vital Microsoft 365 traffic](managing-office-365-endpoints.md#use-a-pac-file-for-direct-routing-of-vital-microsoft-365-traffic).
 
-## Related Topics
+## Related articles
   
 [Microsoft 365 URLs and IP address ranges](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
 

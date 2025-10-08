@@ -1,7 +1,7 @@
 ---
 title: "Requirements for Microsoft 365 Lighthouse"
 f1.keywords: CSH
-ms.author: sharik
+ms.author: dansimp
 author: SKjerland
 manager: scotv
 ms.reviewer: crimora
@@ -36,9 +36,9 @@ In addition, each customer tenant must meet the following requirements to be act
 
 - Must have delegated access set up for the partner to be able to manage the customer tenant
     > [!NOTE]
-    > Either granular delegated admin privileges (GDAP) or a delegated admin privileges (DAP) relationship is required to onboard customers to Lighthouse. An indirect reseller relationship is no longer required to onboard to Lighthouse. If DAP and GDAP coexist in a customer tenant, GDAP permissions take precedence for MSP technicians in GDAP-enabled security groups.
+    > Either granular delegated administrative privileges (GDAP) or a delegated administrative privileges (DAP) relationship is required to onboard customers to Lighthouse. An indirect reseller relationship is no longer required to onboard to Lighthouse. If DAP and GDAP coexist in a customer tenant, GDAP permissions take precedence for MSP technicians in GDAP-enabled security groups.
     > [!NOTE]
-    > To use Lighthouse to view opportunities in Sales Advisor, you don't need additional delegated access permissions from the customer.
+    > To use Lighthouse to view opportunities, you don't need additional delegated access permissions from the customer.
 - Must have at least one Enterprise, Business, Frontline, or Education subscription of Microsoft 365, Office 365, Exchange Online, Windows 365 Business, or Microsoft Defender for Business
 - Must have no more than 2500 licensed users
 - Must reside in the same geographic region (Americas, European Union, or Asia plus Australia) as the partner organization that manages them
@@ -67,14 +67,11 @@ Microsoft Defender Antivirus is part of the Windows operating system and is enab
 > [!NOTE]
 > If you're using a non-Microsoft antivirus solution and not Microsoft Defender Antivirus, Microsoft Defender Antivirus is disabled automatically. When you uninstall the non-Microsoft antivirus solution, Microsoft Defender Antivirus is activated automatically to protect your Windows devices from threats.
 
-## Requirements for enabling Sales Advisor
+## Requirements for enabling opportunities
 
-To use Sales Advisor to view customer opportunities, you must hold either the Executive report viewer or Report viewer role in Partner Center.
+To view opportunities, you must hold the Account Manager role in Lighthouse. If you don't hold the Account Manager role, reach out to someone who holds the Administrator role in Lighthouse and ask them to assign the role to you.
 
-> [!NOTE]
-> Only a Global admin in Partner Center can assign the Executive report viewer or Report viewer roles.
-
-For more information, see [Get access to Sales advisor](m365-lighthouse-get-access-to-sales-advisor.md).
+For more information, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md).
 
 ## Related content
 

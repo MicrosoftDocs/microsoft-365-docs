@@ -2,26 +2,27 @@
 title: "Connect your domain to Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: twerner
-author: twernermsft
-manager: scotv
+ms.author: kwekua
+author: kwekuako
+manager: dansimp
 ms.date: 01/07/2021
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier2
 - scotvorg
 - highpri
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
-ms.custom: 
+- operations-pod
+ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 - admindeeplinkMAC
-monikerRange: 'o365-worldwide'
+monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
@@ -39,7 +40,7 @@ Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?l
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198216).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LFpy?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b9007f8d-dd2b-4ceb-bf40-6529c45ad321]
 
 Once you’ve set up Microsoft 365 and moved your email data from Google Workspace, you can connect your domain to Microsoft 365. 
 

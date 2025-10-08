@@ -5,30 +5,33 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: drjones, jobailey
+ms.reviewer: padeshmukh
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-marketplace
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
-- highpri 
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
 - ContentEnagagementFY23
-ms.custom: 
+- operations-pod
+ms.custom:
 - commerce_purchase
 - VSBFY23
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
 - adminvideo
-search.appverid: GEA150 
+- GAUpdates
+- campaignIDs-batch1
+search.appverid: GEA150
 description: "Learn how to sign up for a free 30-day trial or buy a subscription for Microsoft 365 for business products and services."
-ms.date: 08/07/2023
+ms.date: 06/02/2025
 ---
 
 # Try or buy a Microsoft 365 for business subscription
@@ -38,7 +41,7 @@ Check out all of our small business content on [Small business help & learning](
 Microsoft 365 for business is a subscription service that lets you run your organization in the cloud while Microsoft takes care of the IT for you. We manage your devices, protect against real-world threats, and provide your organization with the latest in business software. You can sign up for a free trial subscription for Microsoft 365 Business Basic, Microsoft 365 Business Standard, Microsoft 365 Business Premium, Microsoft Defender for Business, or Microsoft 365 Apps for business and try it out for 30 days.
 
 > [!NOTE]
-> You must use a credit or debit card when you sign up for a free trial. At the end of your free trial period, your trial subscription is automatically converted to a paid subscription. Your card isn't billed until the trial period ends.
+> You must use a credit or debit card when you sign up for a free trial. At the end of your free trial period, your trial subscription is automatically converted to a paid subscription. Your card isn't billed until the trial period ends. Microsoft reserves the right to suspend access to its products and services if payment is not received after your one-month free trial ends. Storage for trials will be limited.
 
 ## Need help with choosing a plan?
 
@@ -50,9 +53,12 @@ You don't need an existing Microsoft account to sign up for a free trial.
 
 For all other procedures in this article, the following items are required:
 
-- You must have a Microsoft account, and you must be a Global or Billing admin for your organization. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).
+- You must have a Microsoft account, and you must be at least a Billing Administrator for your organization. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).
 - [Find out what type of billing account you have](manage-billing-accounts.md#view-my-billing-accounts).
-- If you have a Microsoft Customer Agreement (MCA) billing account type, you must also be a billing account owner or contributor to do the tasks described in this article. For more information, see [Understand billing accounts](manage-billing-accounts.md) and [Manage your Microsoft business billing profiles](billing-and-payments/manage-billing-profiles.md).
+- If you have a Microsoft Customer Agreement (MCA) billing account type, you must also be a Billing account owner or contributor to do the tasks described in this article. For more information, see [Understand billing accounts](manage-billing-accounts.md) and [Manage your Microsoft business billing profiles](billing-and-payments/manage-billing-profiles.md).
+
+> [!NOTE]
+> If you have a Microsoft Customer Agreement (MCA) billing account type with Microsoft, you automatically receive a product called Microsoft Entra ID Free. This product improves your tenant management and security by tracking new tenants created with the same billing account. There's no charge for this product, and there's no other action you need to take. To learn more about this product, see [Microsoft Entra ID Free](/azure/cost-management-billing/manage/microsoft-entra-id-free). [Find out what type of billing account you have](manage-billing-accounts.md#view-my-billing-accounts).
 
 ::: moniker range="o365-21vianet"
 
@@ -78,6 +84,8 @@ To create an account and sign up for a free trial subscription of Microsoft 365 
 The sign-up process might take several minutes to complete. After it's complete, you're ready to start the setup wizard for your subscription. For more information about setting up your subscription, see [Next steps](#next-steps).
 
 When you start a free trial, we automatically create a billing account for you. You use your billing account to manage your account settings, invoices, payment methods, and purchases. For more information about billing accounts, see [Understand billing accounts](manage-billing-accounts.md).
+
+At the end of your trial period, your subscription will be renewed to an annual term subscription by default, unless you turn off **recurring billing** from inside of **Billing** > **Your products**.
 
 ## Extend your trial
 
@@ -144,8 +152,8 @@ When you add a subscription through the <a href="https://go.microsoft.com/fwlink
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
    - If you're using the **Simplified view**, select **Billing**, then select **Add more products**.
-   - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
-2. On the **Purchase services** page, find the plan that you want to try, and select **Details**.
+   - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page. For some customers, the page is named **Marketplace**.
+2. Find the plan that you want to try, and select **Details**.
 3. In the **Select a plan** drop-down list, select the trial plan.
 4. Enter the number of licenses that you want to buy when the trial ends.
     > [!NOTE]
@@ -160,9 +168,9 @@ When you add a subscription through the <a href="https://go.microsoft.com/fwlink
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
    - If you're using the **Simplified view**, select **Billing**, then select **Add more products**.
-   - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
-2. On the **Purchase services** page, find the plan that you want to try, and select **Details**.
-3. On the next page, enter the number of licenses that you want to buy when the trail ends, then select **Start free trial**.
+   - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page. For some customers, the page is named **Marketplace**.
+2. Find the plan that you want to try, and select **Details**.
+3. On the next page, enter the number of licenses that you want to buy when the trial ends, then select **Start free trial**.
     > [!NOTE]
     > All trial subscriptions include 25 free licenses for the duration of the trial period.
 4. Choose to receive a text or a call, enter your phone number, then choose **Text me** or **Call me**.
@@ -179,22 +187,21 @@ When you buy another subscription through the Microsoft 365 admin center, the ne
 If you want to move all of your users to a different subscription, see [Upgrade or change to a different Microsoft 365 for business plan](subscriptions/upgrade-to-different-plan.md).
 
 > [!NOTE]
-> You must move users from your free trial subscription to the new subscription before your 90-day grace period ends after your trial subscription expires. By doing this, you keep your data, accounts, and configuration. Otherwise, that information is deleted at the end of 90 days.
-
+> You must move or reassign users from your free trial subscription to the new subscription before your 90-day grace period ends after your trial subscription expires. By doing this, you keep your data, accounts, and configuration. Otherwise, that information is deleted at the end of 90 days.
 [Find out what type of billing account you have](manage-billing-accounts.md).
 
 **If you have an MCA billing account type:**
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198013).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SBE2?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=ac7fc5ca-3e7c-41aa-84e7-4cd2300e82d2]
 
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
    - If you're using the **Simplified view**, select **Billing**, then select **Add more products**.
-   - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
-2. On the **Purchase services** page, select the plan that you want to buy, then select **Details**.
+   - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page. For some customers, the page is named **Marketplace**.
+2. Select the plan that you want to buy, then select **Details**.
 3. On the product details page, in the **Select a plan** drop-down list, select the plan, and enter the number of licenses that you want to buy. Select a subscription length and billing frequency, then select **Buy**.
 4. In the **Checkout** pane, choose the billing profile that you want to use, or add a new one.
 5. The **Product name** section lists the cost, subscription term, number of licenses, and renewal date for the subscription. To match the renewal date with another subscription paid by the billing profile, select **Select a different renewal date**.
@@ -204,8 +211,8 @@ If you found this video helpful, check out the [complete training series for sma
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
    - If you're using the **Simplified view**, select **Billing**, then select **Add more products**.
-   - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
-2. On the **Purchase services** page, select the plan that you want to buy, then select **Details**.
+   - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page. For some customers, the page is named **Marketplace**.
+2. Select the plan that you want to buy, then select **Details**.
 3. On the product details page, enter the number of licenses that you need, select a billing frequency, then select **Buy**.
 4. On the **Checkout** page, verify the **Sold to** information. Select a payment method or add a new one. Verify the number of licenses that you need, then select **Place order**.
 
@@ -215,7 +222,6 @@ If you have a new account and are setting up your first subscription, you can us
 
 - [Set up Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md)
 - [Set up Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)
-- [Set up Microsoft 365 Business Premium](../business-premium/m365bp-overview.md)
 - [Set up Microsoft Defender for Business](../security/defender-business/mdb-setup-configuration.md)
 - [Set up Microsoft 365 Apps for business](../admin/setup/setup-apps-for-business.md)
 

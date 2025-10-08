@@ -5,10 +5,11 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 03/18/2024
+ms.date: 03/12/2025
 audience: ITPro
 ms.topic: concept-article
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: high
 ms.collection: 
 - scotvorg
@@ -126,4 +127,4 @@ If your business requires information barriers, see [Learn about information bar
 
 [Windows Privacy Compliance Guide](/windows/privacy/windows-10-and-privacy-compliance)
 
-[Microsoft Purview Compliance Portal](/purview/purview-compliance-portal)
+[Microsoft Purview portal](/purview/purview-compliance-portal)

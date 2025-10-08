@@ -1,11 +1,11 @@
 ---
 title: Microsoft 365 Groups and Microsoft Teams naming policy
 ms.reviewer: rahulnayak
-ms.date: 06/26/2024
+ms.date: 09/30/2025
 f1.keywords: NOCSH
-ms.author: jtremper
-author: jacktremper
-manager: pamgreen
+author: officedocspr5
+ms.author: odocspr
+manager: jtremper
 audience: Admin
 ms.topic: article
 ms.service: o365-solutions
@@ -114,15 +114,23 @@ Some administrators are exempted from these policies, across all group workloads
 
 - User account admin
 
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role. To learn more, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
+
 ## How to set up the naming policy
 
 To set up a naming policy:
 
 1. In [Microsoft Entra ID](https://aad.portal.azure.com), under **Manage**, click **Groups**.
+
 2. Under **Settings**, click **Naming policy**.
+
 3. Choose the **Group naming policy** tab.
+
 4. Under **Current policy**, choose if you want to require a prefix or suffix or both, and select the appropriate check boxes.
+
 5. Choose between **Attribute** and **String** for each line and then specify the attribute or string.
+
 6. When you have added the prefixes and suffixes that you need, click **Save**.
 
 ![Screenshot of the groups naming policy settings in Microsoft Entra ID.](../media/groups-naming-policy-azure.png)

@@ -1,13 +1,13 @@
 ---
-title: "Stay on track with data privacy regulations – Microsoft Priva and Purview"
+title: "Stay on track with data privacy regulations – Microsoft Priva and Microsoft Purview"
 ms.author: chvukosw
 author: chvukosw
 f1.keywords:
 - NOCSH
 manager: laurawi
-ms.date: 01/03/2024
+ms.date: 01/15/2025
 audience: ITPro
-ms.topic: article
+ms.topic: solution-overview
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:

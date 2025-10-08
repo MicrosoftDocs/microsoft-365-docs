@@ -15,6 +15,7 @@ ms.collection:
 - m365-security
 - remotework
 - tier2
+- trust-pod
 ms.custom: admindeeplinkDEFENDER
 description: "Protect your business email and data from cyber threats, including ransomware, phishing, and malicious attachments."
 ms.date: 9/18/2023
@@ -26,11 +27,10 @@ If you are like [Microsoft](https://www.microsoft.com/microsoft-365/blog/2020/03
 
 :::image type="content" source="../media/security/security-support-remote-work.png" alt-text="The top tasks to perform to support working from home" lightbox="../media/security/security-support-remote-work.png":::
 
-
 If you're a small or medium-size organization using one of Microsoft's business plans, see these resources instead:
 
-- [Best practices for securing Microsoft 365 for business plans](../business-premium/secure-your-business-data.md)
-- [Microsoft 365 for Campaigns](../business-premium/m365bp-overview.md) (includes a recommended security configuration for Microsoft 365 Business)
+- [Best practices for securing Microsoft 365 for business plans](/microsoft-365/admin/security-and-compliance/m365b-security-best-practices)
+- [Microsoft 365 for Campaigns](/microsoft-365/admin/security-and-compliance/m365bp-security-benefits) (includes a recommended security configuration for Microsoft 365 for business)
 
 For customers using our enterprise plans, Microsoft recommends you complete the tasks listed in the following table that apply to your service plan. Instead of purchasing a Microsoft 365 enterprise plan, if you're combining subscriptions, note the following items:
 
@@ -74,17 +74,17 @@ Applying these policies takes only a few minutes, but be prepared to support you
 
 ## 2: Protect against threats
 
-All Microsoft 365 plans with cloud mailboxes include Exchange Online Protection (EOP) features, including:
+All Microsoft 365 plans with cloud mailboxes include the following default email protection features:
 
-- [Anti-malware](office-365-security/anti-malware-protection-about.md).
-- [Anti-spam](office-365-security/anti-spam-protection-about.md).
-- [Anti-spoofing](office-365-security/anti-phishing-policies-about.md#spoof-settings) in anti-phishing policies.
+- [Anti-malware](/defender-office-365/anti-malware-protection-about).
+- [Anti-spam](/defender-office-365/anti-spam-protection-about).
+- [Anti-spoofing](/defender-office-365/anti-phishing-policies-about#spoof-settings) in anti-phishing policies.
 
-Default settings for these EOP features are automatically assigned to all recipients via default policies. But, **to bump up the EOP protection level to Microsoft's recommended Standard or Strict security settings based on observations in the datacenters, turn on and assign the Standard preset security policy (for most users) and/or the Strict preset security policy (for admins and other high-risk users)**. As new protection capabilities are added and as the security landscape changes, the EOP settings in preset security policies are automatically updated to our recommended settings.
+Default settings for these protection features are automatically assigned to all recipients via default policies. But, **to bump up the protection level to Microsoft's recommended Standard or Strict security settings based on observations in the datacenters, turn on and assign the Standard preset security policy (for most users) and/or the Strict preset security policy (for admins and other high-risk users)**. As new protection capabilities are added and as the security landscape changes, the settings in preset security policies are automatically updated to our recommended settings.
 
 For instructions, see [Use the Microsoft Defender portal to assign Standard and Strict preset security policies to users](office-365-security/preset-security-policies.md#use-the-microsoft-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users).
 
-The differences between Standard and Strict are summarized in the table [here](office-365-security/preset-security-policies.md#policy-settings-in-preset-security-policies). The comprehensive settings for Standard and Strict **EOP settings** are described in the tables [here](office-365-security/recommended-settings-for-eop-and-office365.md#anti-spam-anti-malware-and-anti-phishing-protection-in-eop). 
+The differences between Standard and Strict are summarized in the table [here](office-365-security/preset-security-policies.md#policy-settings-in-preset-security-policies). The comprehensive settings for Standard and Strict settings are described in the tables [here](office-365-security/recommended-settings-for-eop-and-office365.md#anti-spam-anti-malware-and-anti-phishing-protection-in-eop).
 
 ## 3: Configure Microsoft Defender for Office 365
 
@@ -93,7 +93,7 @@ Microsoft Defender for Office 365 (included with Microsoft 365 E5 and Office 365
 - [Safe Attachments](office-365-security/safe-attachments-about.md) and [Safe Links protection](office-365-security/safe-links-about.md): Protects your organization from unknown threats in real time by using intelligent systems that inspect files, attachments, and links for malicious content. These automated systems include a robust detonation platform, heuristics, and machine learning models.
 - [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](office-365-security/safe-attachments-for-spo-odfb-teams-about.md): Protects your organization when users collaborate and share files, by identifying and blocking malicious files in team sites and document libraries.
 - [Impersonation protection in anti-phishing policies](office-365-security/anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365): Applies machine learning models and advanced impersonation-detection algorithms to avert phishing attacks.
-- [Priority account protection](office-365-security/priority-accounts-turn-on-priority-account-protection.md): [Priority accounts](../admin/setup/priority-accounts.md) is a tag that you apply to a select number of high-value user accounts. Then, you can use the **Priority** tag as a filter in alerts, reports, and investigations. In Defender for Office 365 Plan 2 (included in Microsoft 365 E5), *priority account protection* offers additional heuristics for priority accounts that are tailored to company executives (regular employees don't benefit from this specialized protection).
+- [Priority account protection](office-365-security/priority-accounts-turn-on-priority-account-protection.md): [Priority accounts](/microsoft-365/admin/security-and-compliance/priority-accounts) is a tag that you apply to a select number of high-value user accounts. Then, you can use the **Priority** tag as a filter in alerts, reports, and investigations. In Defender for Office 365 Plan 2 (included in Microsoft 365 E5), *priority account protection* offers additional heuristics for priority accounts that are tailored to company executives (regular employees don't benefit from this specialized protection).
 
 For an overview of Defender for Office 365, including a summary of plans, see [Defender for Office 365](./office-365-security/defender-for-office-365.md).
 
@@ -109,7 +109,7 @@ The differences between **Defender for Office 365 protection** settings in Stand
 
 You can turn on and turn off Safe Attachments for SharePoint, OneDrive, and Microsoft Teams independently of preset security policies (it's on by default). To verify, see [Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](office-365-security/safe-attachments-for-spo-odfb-teams-configure.md).
 
-After you [identify users as priority accounts](../admin/setup/priority-accounts.md), they get priority account protection if it's turned on (it's on by default). To verify, see [Configure and review priority account protection in Microsoft Defender for Office 365](office-365-security/priority-accounts-turn-on-priority-account-protection.md).
+After you [identify users as priority accounts](/microsoft-365/admin/security-and-compliance/priority-accounts), they get priority account protection if it's turned on (it's on by default). To verify, see [Configure and review priority account protection in Microsoft Defender for Office 365](office-365-security/priority-accounts-turn-on-priority-account-protection.md).
 
 ## 4: Configure Microsoft Defender for Identity
 
@@ -213,7 +213,7 @@ Recent blog articles on this topic:
 
 Training users can save your users and security operations team a lot of time and frustration. Savvy users are less likely to open attachments or click links in questionable email messages, and they're more likely to avoid suspicious websites.
 
-The Harvard Kennedy School [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/?linkid=2015598&amp;clcid=0x409) provides excellent guidance on establishing a strong culture of security awareness within your organization, including training users to identify phishing attacks.
+The Harvard Kennedy School [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/p/?linkid=2015598) provides excellent guidance on establishing a strong culture of security awareness within your organization, including training users to identify phishing attacks.
 
 Microsoft 365 provides the following resources to help inform users in your organization:
 
@@ -223,7 +223,7 @@ Microsoft 365 provides the following resources to help inform users in your orga
 |Microsoft 365 security|[Learning module: Secure your organization with built-in, intelligent security from Microsoft 365](/training/modules/security-with-microsoft-365) <p>This module enables you to describe how Microsoft 365 security features work together and to articulate the benefits of these security features.|
 |Multifactor authentication|[Two-step verification: What is the additional verification page?](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>This article helps end users understand what multifactor authentication is and why it's being used at your organization.|
 
-In addition to this guidance, Microsoft recommends that your users take the actions described in this article: [Protect your account and devices from hackers and malware](https://support.office.com/article/066d6216-a56b-4f90-9af3-b3a1e9a327d6.aspx). These actions include:
+In addition to this guidance, Microsoft recommends that your users take the actions described in this article: [The keys to the kingdom - securing your devices and accounts](https://support.microsoft.com/office/a925f8ad-af7e-40d8-9ce4-60ea1cac2ba4). These actions include:
 
 - Using strong passwords
 - Protecting devices

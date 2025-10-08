@@ -2,10 +2,10 @@
 title: "ICANN verification of contact information"
 f1.keywords:
 - NOCSH
-ms.author: nkagole
-author: nataliekagole
-manager: scotv
-ms.date: 02/18/2020
+ms.author: kwekua
+author: kwekuako
+manager: dansimp
+ms.date: 08/28/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -16,6 +16,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+- operations-pod
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150

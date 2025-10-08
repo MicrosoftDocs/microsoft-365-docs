@@ -1,9 +1,9 @@
 ---
 title: Provide initial and ongoing training to help onboard your frontline workers
 description: Get an overview of how to plan, build, and launch your frontline worker onboarding experience.
-ms.topic: conceptual
+ms.topic: article
 author: lana-chin
-ms.author: v-chinlana
+ms.author: jtremper
 manager: jtremper
 audience: admin
 f1.keywords:
@@ -22,7 +22,7 @@ searchScope:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 01/25/2024
+ms.date: 10/06/2025
 ---
 
 # Provide initial and ongoing training to help onboard your frontline workers

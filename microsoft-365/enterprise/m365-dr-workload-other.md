@@ -1,16 +1,16 @@
 ---
 title: Data Residency for Other Microsoft 365 Services
 description: Learn about Data Residency for Other Microsoft 365 Services
-ms.author: kvice
-author: kelleyvice-msft
-manager: scotv
+ms.author: v-fahasen
+author: fhasen-msft
+manager: v-nihmi
 ms.service: microsoft-365-enterprise
 ms.subservice: advanced-data-residency
 ms.topic: article
 f1.keywords:
 - NOCSH
 ms.reviewer: deanw
-ms.date: 02/29/2024
+ms.date: 02/20/2025
 ms.custom:
 - it-pro
 ms.localizationpriority: medium
@@ -21,12 +21,8 @@ ms.collection:
 
 # Data Residency for Other Microsoft 365 Services
 
->[!NOTE]
->Unless otherwise stated in the [Microsoft Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all), the following Microsoft 365 services do not have specific commitments for data residency. You can use the following guidance to determine where your data may be provisioned at this time. 
-
-Use the following guidance to determine where your data is located. Reference your _tenant Default Geography_.
-
-<a name='azure-active-directory-aad'></a>
+> [!NOTE]
+> Unless otherwise stated in the [Microsoft Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all), the following Microsoft 365 services don't have specific commitments for data residency. You can use the following guidance to determine where your data may be provisioned at this time. Reference your _Tenant's Default Geography_.
 
 ## Microsoft Entra ID
 
@@ -34,23 +30,15 @@ Refer to [Microsoft Entra Data Locations](https://aka.ms/aaddatamap).
 
 ## Forms
 
-Tenants in EU member Countries/regions maintain data in Macro Region Geography 1 – EMEA. All other tenants have customer data stored in the United States, except Australia. For customers in Australia, Microsoft Forms customer data is stored at rest in Australia for all new tenants using Forms and existing tenants that haven't previously used Forms.
+_Tenants_ in EU member Countries/regions maintain data in Macro Region Geography 4 – European Union/EFTA. All other _Tenants_ have customer data stored in the United States, except Australia. For customers in Australia, Microsoft Forms customer data is stored at rest in Australia for all new _Tenants_ using Forms and existing _Tenants_ that haven't previously used Forms.
 
 ## Intune
 
-Refer to endpoint.microsoft.com, Tenant Administration | Tenant Status for existing tenants. If you don't have an existing tenant, create a trial tenant and provision Intune. Microsoft won't store Intune customer data at rest outside the stated geo, except if:
-
-- It's necessary for Microsoft to provide customer support, troubleshoot the service, or comply with legal requirements.
-- The customer configures an account to enable such storage of customer data, including by using the following:
-  - Features that are designed to operate globally, such as Content Delivery Network (CDN), which provides a global caching service and stores customer data at edge locations around the world.
-  - If you're using the Remote Help feature, the Helper and Sharer's information might be sent outside of the stated Geo for 48 hours.
-  - If you are using Intune's enrollment and compliance notification features to send emails to end-users, the emails will be processed within the respective country for sovereign cloud customers, in EMEA for customers located in EMEA, and in North America for all other customers.
-- For Microsoft Entra ID: Refer to [Microsoft Entra Data Locations](https://aka.ms/aaddatamap).
-- Preview, beta, or other prerelease services, which typically store customer data in the United States but might store it globally. Regardless, Microsoft doesn't control or limit the Geo from which customers or their end users might access customer data. Similarly, where customer data in other services is subsequently integrated into Intune, the originating customer data will continue to be stored subject to the other service's own Geo commitments (if any); only the copy of the customer data integrated into Intune will be stored in the stated Geo for Intune.
+Refer to [Data storage and processing in Intune](/intune/intune-service/protect/privacy-data-store-process#storage-locations).
 
 ## Office for Mobile
 
-Customer data for this service comes from other services, like Exchange Online and SharePoint Online. There's no customer data stored outside of those services with the exception of the mobile device.
+Customer data for this service comes from other services, like Exchange Online and SharePoint Online. There's no customer data stored outside of those services except for the mobile device.
 
 ## OneNote Services
 
@@ -58,7 +46,14 @@ OneNote stores customer data in OneDrive. It does however have an API that can c
 
 ## Planner
 
-See the [Static data location information for select workloads](#static-data-location-information-for-select-workloads) section.
+See the [Static data location information for select services](#static-data-location-information-for-select-services) section.
+
+> [!NOTE]
+> Premium plans are stored as described in Project for the Web.
+
+## Project for the web
+
+See [Power Apps for Data Residency](#power-apps-for-microsoft-365).
 
 ## Power Apps for Microsoft 365
 
@@ -66,11 +61,11 @@ Refer to [Dynamics 365 availability and data locations | Microsoft Learn](/dynam
 
 ## Stream
 
-You can find this information from the "?" option in the Stream UI, if you have it running and then click on "About Microsoft Stream" and see where your data is stored. If needed, create a trial tenant.
+You can find this information from the "?" option in the Stream UI, if you have it running and then click on "About Microsoft Stream" and see where your data is stored. If needed, create a trial _Tenant_.
 
 ## Viva Glint
 
-The data region for Viva Glint is determined by the default geography of the tenant, not individual users, and is stored in US or EU data centers based on central tenant location. If the central tenant location is *outside* the US or EU, the data for Viva Glint is stored in the US data center.
+The data region for Viva Glint is determined by the default geography of the _Tenant_, not individual users, and is stored in US or EU/EFTA data centers based on central _Tenant_ location. If the central _Tenant_ location is *outside* the US or EU/EFTA, the data for Viva Glint is stored in the US data center.
 
 ## Viva Goals
 
@@ -82,22 +77,20 @@ Capability summary: Microsoft Viva Goals is a goal-alignment solution that conne
 
 ### Data Residency Available
 
-Starting December 5, 2022, Viva Goals [Customer Data](/privacy/eudb/eu-data-boundary-learn) for new tenants in the [European Union Data Boundary (EUDB)](/privacy/eudb/eu-data-boundary-learn#eu-data-boundary-countries-and-datacenter-locations) and in the United Kingdom will be stored in data centers located in the EU. All other tenants will have their Viva Goals Customer Data stored in data centers located in the United States. Tenants aren't provided with a choice for the specific deployment region for data storage. 
+Starting December 5, 2022, Viva Goals [Customer Data](/privacy/eudb/eu-data-boundary-learn) for new _Tenants_ in the [European Union Data Boundary (EUDB)](/privacy/eudb/eu-data-boundary-learn#eu-data-boundary-countries-and-datacenter-locations) and in the United Kingdom will be stored in data centers located in the EU. All other _Tenants_ will have their Viva Goals Customer Data stored in data centers located in the United States. _Tenants_ aren't provided with a choice for the specific deployment region for data storage.
 
-To be considered a tenant in the EUDB:
+To be considered a _Tenant_ in the EUDB:
 
-1. The tenant must have a _default geography_ in a EUDB country or select a country in EUDB country as their residence during free trial sign-up; and
-1. The tenant must not purchase a Multi-Geo offering
+1. The _Tenant_ must have a _default geography_ in a EUDB country or select a country in EUDB country as their residence during free trial sign-up; and
+1. The _Tenant_ must not purchase a Multi-Geo offering
 
 ### Migration
 
-Customers based in EU and UK who signed up for Viva Goals prior to December 5, 2022, have now been migrated to EU data centers. 
+Customers based in EU and UK who signed up for Viva Goals prior to December 5, 2022, have now been migrated to EU data centers.
 
 ## Viva Insights – Advanced, Mgr, Leader
 
-See the [Static data location information for select workloads](#static-data-location-information-for-select-workloads) section. The data region for Manager/Leader and Advanced is determined by the _Default Geography_ of the _tenant_, not individual users.
-
-Starting June 2024, Viva Insights (Advanced, Manager, Leader) customer data for new tenants in Australia will be provisioned in data centers located in Australia.
+Refer to [Viva Insights data residency for advanced insights, managers, and leaders](/viva/insights/advanced/setup-maint/data-residency).
 
 ## Viva Insights – Personal
 
@@ -105,7 +98,7 @@ Customer data is processed and stored in the employee's Exchange Online mailbox.
 
 ## Viva Learning
 
-See the [Static data location information for select workloads](#static-data-location-information-for-select-workloads) section.
+See the [Static data location information for select services](#static-data-location-information-for-select-services) section.
 
 ## Whiteboard
 
@@ -115,11 +108,12 @@ Refer to [Manage data for Microsoft Whiteboard | Microsoft Learn](/microsoft-365
 
 Refer to [Data Residency - Viva Engage | Microsoft Learn](/viva/engage/manage-security-and-compliance/data-residency).
 
-## Static data location information for select workloads
+## Static data location information for select services
 
-1. Macro Region Geography 1 – EMEA / European Union
-1. Macro Region Geography 2 - Asia Pacific
+1. Macro Region Geography 1 & 4 – Europe/EU/EFTA
+1. Macro Region Geography 2 – Asia Pacific
 1. Macro Region Geography 3 – Americas
+1. Macro Region Geography 4 – European Union/EFTA
 1. Australia
 1. Canada
 1. Japan

@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 audience: Admin
-ms.date: 12/28/2023
+ms.date: 09/25/2024
 ms.topic: overview
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
@@ -42,7 +42,7 @@ Before you begin, watch this video for an overview of identity models and authen
 
 <p> </p>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=38a0c805-da7b-432c-aa86-747fc3dc2ccb]
 
 Your first planning choice is your cloud identity model.
 
@@ -58,7 +58,6 @@ Here are the two types of identity and their best fit and benefits.
 | **How Microsoft 365 authenticates user credentials** | The Microsoft Entra tenant for your Microsoft 365 subscription performs the authentication with the cloud identity account. | The Microsoft Entra tenant for your Microsoft 365 subscription either handles the authentication process or redirects the user to another identity provider. |
 | **Best for** | Organizations that do not have or need an on-premises AD DS. | Organizations using AD DS or another identity provider. |
 | **Greatest benefit** | Simple to use. No extra directory tools or servers required. | Users can use the same credentials when accessing on-premises or cloud-based resources. |
-||||
 
 ## Cloud-only identity
 

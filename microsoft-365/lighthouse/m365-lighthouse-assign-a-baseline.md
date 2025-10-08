@@ -1,11 +1,11 @@
 ---
 title: "Assign a baseline in Microsoft 365 Lighthouse"
 f1.keywords: CSH
-ms.author: sharik
+ms.author: dansimp
 author: SKjerland
 manager: scotv
 ms.reviewer: jatingupta
-ms.date: 08/16/2023
+ms.date: 10/21/2024
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-lighthouse
@@ -26,26 +26,20 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 By default, Microsoft 365 Lighthouse assigns the default baseline to all tenants. You can create and assign a baseline to accommodate varying customer requirements.
 
-> [!NOTE]
-> Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, you should see it soon.
->
-> To see which new features are currently available in your partner tenant, go to the **Home** page of Microsoft 365 Lighthouse, and then either select the **What's new** link in the upper-right corner of the page or select **What's new** on the **What's new & learning resources** card.
-
 ## Before you begin
 
 Make sure you and your customer tenants meet the requirements listed in [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
-Additionally, each partner tenant user must be a Microsoft 365 Lighthouse admin.
+Additionally, each partner tenant user must hold the Administrator role in Lighthouse.
 
-## Assign a baseline to a tenant
+## Assign a baseline to one or more tenants
 
 1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Tenants**.
-2. Select a tenant to which you want to assign a new baseline.
-3. Select **Assign baseline**.
-4. Select the baseline you want to assign to the selected tenants.
+2. Select the checkbox next to the tenants to which you want to assign a new baseline, and then select **Assign baseline** at the top of the table.
+3. Select the baseline you want to assign to the selected tenants.
 
 > [!NOTE]
-> Baselines don't include tenant-specific attributes, and the assignment of a new baseline will overwrite any pre-existing customization to the configuration of a tenant's deployment plan, such as deployment task dismissals, user and user group exclusions, and deployment statuses of manual deployment tasks. These values will need to be re-entered for each tenant, as needed.
+> Baselines don't include tenant-specific attributes, and the assignment of a new baseline overwrites any pre-existing customization to the configuration of a tenant's deployment plan, such as deployment task dismissals, user and user group exclusions, and deployment statuses of manual deployment tasks. These values need to be re-entered for each tenant, as needed.
 
 ## Next steps
 

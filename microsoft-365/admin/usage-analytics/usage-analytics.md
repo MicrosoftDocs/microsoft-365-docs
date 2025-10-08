@@ -2,22 +2,21 @@
 title: "About Microsoft 365 usage analytics"
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
-manager: scotv
-ms.date: 03/05/2024
+ms.author: cmcatee
+author: cmcatee-MSFT
+manager: dansimp
+ms.date: 09/16/2024
 audience: Admin
-ms.topic: article
+ms.topic: concept-article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier2
-- scotvorg
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: 
-- AdminSurgePortfolio
+- operations-pod
+ms.custom:
 - AdminTemplateSet
 search.appverid:
 - MET150
@@ -32,17 +31,17 @@ Use Microsoft 365 usage analytics within Power BI to gain insights on how your o
   
 Microsoft 365 usage analytics gives you access to a prebuilt dashboard that provides a cross-product view of the last 12 months and contains many prebuilt reports. Each report provides you with specific usage insights. User-specific information is available for the last full calendar month.
   
-The [data model](usage-analytics-data-model.md) that powers the template app includes user attributes from Active Directory, enabling the ability to pivot in certain reports. The following Active Directory attributes are included: location, department, and organization. 
+The [data model](usage-analytics-data-model.md) that powers the template app includes user attributes from Active Directory, enabling the ability to pivot in certain reports. The following Active Directory attributes are included: location, department, and organization.
   
-See [Enable Microsoft 365 usage analytics](enable-usage-analytics.md) to start collecting data. 
+See [Enable Microsoft 365 usage analytics](enable-usage-analytics.md) to start collecting data.
   
-Microsoft 365 usage analytics contains many reports detailed in the following sections. 
+Microsoft 365 usage analytics contains many reports detailed in the following sections.
 
 You can access detailed reports for each area by selecting the data tables. You can view all pre-built reports by selecting the tabs at the bottom of the site. For more detailed instructions, read [Navigating and utilizing the reports](navigate-and-utilize-reports.md) and [Customizing the reports](customize-reports.md).
 
 ## Executive summary
 
-The executive summary is a high-level, at-a-glance view of Microsoft 365 for Business adoption, usage, mobility, communication, collaboration, and storage reports. It is meant for business decision makers. It provides a view into how some individual services are being used, based on all the users who are enabled and those users who are active. All values of the month shown on the report refer to the latest complete month. 
+The executive summary is a high-level, at-a-glance view of Microsoft 365 for Business adoption, usage, mobility, communication, collaboration, and storage reports. It is meant for business decision makers. It provides a view into how some individual services are being used, based on all the users who are enabled and those users who are active. All values of the month shown on the report refer to the latest complete month.
 
 This summary lets you quickly understand usage patterns in Microsoft 365 and how and where your employees are collaborating.
 
@@ -56,7 +55,7 @@ The Microsoft 365 overview report contains the following reports. You can view t
 
 - **Usage** &ndash; Offers a drill-down view into the volume of active users and the key activities for each product for the last 12 months. Use the reports in this section to learn how people in your organization are using Microsoft 365.
 
-- **Communication** &ndash; You can see at a glance whether people in your organization prefer to stay in touch by using Teams, Viva Engage, email, or Skype calls. You can observe if there are shifts in patterns in the use of communication tools among your employees. 
+- **Communication** &ndash; You can see at a glance whether people in your organization prefer to stay in touch by using Teams, Viva Engage, email, or Skype calls. You can observe if there are shifts in patterns in the use of communication tools among your employees.
 
 - **Collaboration** &ndash; See how people in your organization use OneDrive and SharePoint to store documents and collaborate with each other, and how these trends evolve month over month. You can also see how many users shared documents internally or externally and how many users used SharePoint sites or OneDrive accounts, broken out by owners and other collaborators.
 
@@ -81,7 +80,7 @@ This report contains a separate report for each Microsoft 365 service, including
 User activity reports are available for certain individual services. These reports provide user-level detail usage data joined with Active Directory attributes. In addition, the Department Adoption report lets you slice by Active Directory attributes so that you can see active users across all individual services. All metrics are aggregated for the latest complete month. To view the content date, navigate to the table page and select UserActivity table where the value under TimeFrame provides the reporting period. 
 
 > [!NOTE]
-> Global Reader and Usage Summary Reports Reader don't have the permission to view the user activity reports. 
+> Global Reader and Usage Summary Reports Reader don't have the permission to view the user activity reports.
 
 ## FAQ
 
@@ -93,7 +92,7 @@ To share the dashboards with others, see more at [Share dashboards and reports](
 
 ### Who can connect to Microsoft 365 usage analytics?
 
-You have to be either a **Global admin**, **Exchange admin**, **Skype for Business admin**, **SharePoint admin**, **Global reader**, **Report reader**, **Usage Summary Reports Reader** in order to establish the connection to the template app. See [About admin roles](../add-users/about-admin-roles.md) for more information. **Note:** **Global Reader** and **Usage Summary Reports Reader** only allow access to tenant level aggregates in Microsoft 365 usage analytics and they don't have the permission to view the user activity reports. 
+You have to be either an **Exchange admin**, **Skype for Business admin**, **SharePoint admin**, **Global reader**, **Report reader**, **Usage Summary Reports Reader** in order to establish the connection to the template app. See [About admin roles](../add-users/about-admin-roles.md) for more information. **Note:** **Global Reader** and **Usage Summary Reports Reader** only allow access to tenant level aggregates in Microsoft 365 usage analytics and they don't have the permission to view the user activity reports.
 
 ### Who can customize the usage analytics reports?
 
@@ -105,7 +104,7 @@ In addition to customizing the reports from the Power BI web interface, users ca
 
 ### How can I get the pbit file that this dashboard is associated with?
 
-You can access to the pbit file from the [Microsoft Download center](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit). 
+You can access to the pbit file from the [Microsoft Download center](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit).
 
 ### Who can view the dashboards and reports?
 
@@ -135,9 +134,9 @@ In addition, user level details in the template app are only available for the l
 
 ### When should I use the template app and when the usage reports?
 
-The [Activity Reports](../activity-reports/activity-reports.md)  are a good starting point to understand usage and adoption of Microsoft 365. The template app combines the Microsoft 365 usage data and your organization’s Active Directory information and enables admins to analyze the data set using the visual analytics capabilities of Power BI. This enables admins to not just visualize and analyze Microsoft 365 usage data, but also slice it by Active Directory properties such as departments, location etc. They can also create custom reports and share the insights within their organization. 
+The [Activity Reports](../activity-reports/activity-reports.md)  are a good starting point to understand usage and adoption of Microsoft 365. The template app combines the Microsoft 365 usage data and your organization’s Active Directory information and enables admins to analyze the data set using the visual analytics capabilities of Power BI. This enables admins to not just visualize and analyze Microsoft 365 usage data, but also slice it by Active Directory properties such as departments, location etc. They can also create custom reports and share the insights within their organization.
 
-### How often is the data refreshed? 
+### How often is the data refreshed?
 
 When you connect to the template app for the first time, it automatically populates with your data for the previous 12 months. After that, the template app data refreshes weekly. Customers can choose to modify the refresh schedule if their use of this data demands a different update rhythm.
 
@@ -161,9 +160,9 @@ The current version of the template app includes usage from Outlook groups, Viva
 
 Major changes to the template app are released twice a year, which may include new reports or new data. Minor changes to the reports may be released on a more frequent basis.
 
-### Is it possible to integrate the data from the template app into existing solutions? 
+### Is it possible to integrate the data from the template app into existing solutions?
 
-The data in the template app can be retrieved through the Microsoft 365 APIs (in preview). When they ship to production, they are merged within the [Microsoft Graph reporting APIs](https://go.microsoft.com/fwlink/p/?linkid=848843). 
+The data in the template app can be retrieved through the Microsoft 365 APIs (in preview). When they ship to production, they are merged within the [Microsoft Graph reporting APIs](https://go.microsoft.com/fwlink/p/?linkid=848843).
 
 ### Are there plans to expand the template app to show usage data from other Microsoft products?
 
@@ -175,7 +174,7 @@ Company information is included one of the Active Directory fields in the templa
 
 ### Is it possible to bring in more fields from Active Directory?
 
-More customization on this data is possible by connecting to the [Microsoft Graph reporting APIs](https://go.microsoft.com/fwlink/p/?linkid=848843) to pull additional fields from Microsoft Entra ID and join to the dataset. 
+More customization on this data is possible by connecting to the [Microsoft Graph reporting APIs](https://go.microsoft.com/fwlink/p/?linkid=848843) to pull additional fields from Microsoft Entra ID and join to the dataset.
 
 ### Is it possible to aggregate the information in the template app across multiple subscriptions?
 
@@ -195,7 +194,7 @@ See the [Customize document](customize-reports.md).
 
 All user level reports present aggregated data for the previous month.
 
-### Will the template app be localized? 
+### Will the template app be localized?
 
 This is currently not on the roadmap.
 
@@ -209,7 +208,7 @@ If a partner delegates admin rights, they can connect to the template app on beh
 
 ### Can I hide identifiable information such as user, group, and site names in reports?
 
-Yes, see [Make the collected data anonymous](enable-usage-analytics.md#make-the-collected-data-anonymous).
+By default, user-specific data is hidden in the reports. To change the setting, see [Display user-specific data](enable-usage-analytics.md#display-user-specific-data).
 
 ## Related content
 

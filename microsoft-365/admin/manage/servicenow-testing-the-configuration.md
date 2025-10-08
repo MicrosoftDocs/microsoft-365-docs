@@ -2,10 +2,10 @@
 title: "Testing the ServiceNow configuration"
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
-manager: scotv
-ms.date: 10/28/2021
+ms.author: kwekua
+author: kwekuako
+manager: dansimp
+ms.date: 04/28/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -15,6 +15,7 @@ ms.collection:
 - scotvorg
 - M365-subscription-management
 - Adm_TOC
+- operations-pod
 ms.custom: AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
@@ -23,6 +24,9 @@ description: "Scoped Certified application installation and configuration guide 
 ---
 
 # Testing the ServiceNow configuration
+
+> [!IMPORTANT]
+> Microsoft 365 support integration with ServiceNow is retired, and the service will be completely shut down on May 30, 2025. If you installed the integration, take necessary steps to remove it before May 30, 2025.
 
 If your application requires successful communication with external systems, outline how to test the connection to ensure a successful configuration.
 

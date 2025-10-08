@@ -1,11 +1,11 @@
 ---
 title: "Manage Microsoft 365 Groups with PowerShell"
-ms.author: jtremper
-author: jacktremper
-manager: pamgreen
+author: officedocspr5
+ms.author: odocspr
+manager: jtremper
 ms.date: 9/29/2023
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: medium
@@ -37,7 +37,7 @@ This article provides the steps for doing common management tasks for Groups in 
 
 ## Link to your Microsoft 365 Groups usage guidelines
 
-When users [create or edit a group in Outlook](https://support.office.com/article/04d0c9cf-6864-423c-a380-4fa858f27102.aspx), you can show them a link to your organization's usage guidelines. For example, if you require a specific prefix or suffix to be added to a group name.
+When users [create or edit a group in Outlook](https://support.microsoft.com/office/create-a-group-in-outlook-04d0c9cf-6864-423c-a380-4fa858f27102), you can show them a link to your organization's usage guidelines. For example, if you require a specific prefix or suffix to be added to a group name.
 
 Use the [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview) to point your users to your organization's usage guidelines for Microsoft 365 groups. Check out [Microsoft Entra cmdlets for configuring group settings](/azure/active-directory/enterprise-users/groups-settings-cmdlets) and follow the steps in the **Create settings at the directory level** to define the usage guideline hyperlink. After you run the Microsoft Entra cmdlet, users see the link to your guidelines when they create or edit a group in Outlook.
 
@@ -47,7 +47,7 @@ Use the [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview) to poi
 
 ## Allow users to Send as the Microsoft 365 Group
 
-If you want to enable your Microsoft 365 groups with Send As permissions, use the [Add-RecipientPermission](/powershell/module/exchange/add-recipientpermission) and [Get-RecipientPermission](/powershell/module/exchange/get-recipientpermission) cmdlets. After you configure the permissions, Microsoft 365 group users can use Outlook or Outlook on the web to send and reply to email as the Microsoft 365 group. Users can go to the group, create a new email, and change the **Send As** field to the group's email address.
+If you want to enable your Microsoft 365 groups with Send As permissions, use the [Add-RecipientPermission](/powershell/module/exchangepowershell/add-recipientpermission) and [Get-RecipientPermission](/powershell/module/exchangepowershell/get-recipientpermission) cmdlets. After you configure the permissions, Microsoft 365 group users can use Outlook or Outlook on the web to send and reply to email as the Microsoft 365 group. Users can go to the group, create a new email, and change the **Send As** field to the group's email address.
 
 ([You can also configure Send As permissions in the Exchange Admin Center](/office365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group).)
 
@@ -94,7 +94,7 @@ Example:
 $setting["ClassificationDescriptions"] = "Low Impact: General communication, Medium Impact: Company internal data , High Impact: Data that has regulatory requirements"
 ```
 
-After you run the previous Microsoft Graph PowerShell command to set your classification, run the [Set-UnifiedGroup](/powershell/module/exchange/Set-UnifiedGroup) cmdlet if you want to set the classification for a specific group.
+After you run the previous Microsoft Graph PowerShell command to set your classification, run the [Set-UnifiedGroup](/powershell/module/exchangepowershell/Set-UnifiedGroup) cmdlet if you want to set the classification for a specific group.
 
 ```powershell
 Set-UnifiedGroup LowImpactGroup@constoso.com -Classification LowImpact
@@ -174,7 +174,7 @@ To verify the setting:
  Get-OrganizationConfig | ft DefaultGroupAccessType
  ```
 
-To learn more, see [Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig) and [Get-OrganizationConfig](/powershell/module/exchange/get-organizationconfig).
+To learn more, see [Set-OrganizationConfig](/powershell/module/exchangepowershell/set-organizationconfig) and [Get-OrganizationConfig](/powershell/module/exchangepowershell/get-organizationconfig).
 
 ## Microsoft 365 Groups cmdlets
 
@@ -185,13 +185,13 @@ The following cmdlets can be used with Microsoft 365 Groups.
 
 |Cmdlet name|Description|
 |---|---|
-|[Get-UnifiedGroup](/powershell/module/exchange/get-unifiedgroup)|Use this cmdlet to look up existing Microsoft 365 Groups, and to view properties of the group object|
-|[Set-UnifiedGroup](/powershell/module/exchange/set-unifiedgroup)|Update the properties of a specific Microsoft 365 Group|
-|[New-UnifiedGroup](/powershell/module/exchange/new-unifiedgroup)|Create a new Microsoft 365 Group. This cmdlet provides a minimal set of parameters. To set values for extended properties, use Set-UnifiedGroup after creating the new group|
-|[Remove-UnifiedGroup](/powershell/module/exchange/remove-unifiedgroup)|Delete an existing Microsoft 365 Group|
-|[Get-UnifiedGroupLinks](/powershell/module/exchange/get-unifiedgrouplinks)|Retrieve membership and owner information for a Microsoft 365 Group|
-|[Add-UnifiedGroupLinks](/powershell/module/exchange/add-unifiedgrouplinks)|Add members, owners, and subscribers to an existing Microsoft 365 Group|
-|[Remove-UnifiedGroupLinks](/powershell/module/exchange/remove-unifiedgrouplinks)|Remove owners and members from an existing Microsoft 365 Group|
+|[Get-UnifiedGroup](/powershell/module/exchangepowershell/get-unifiedgroup)|Use this cmdlet to look up existing Microsoft 365 Groups, and to view properties of the group object|
+|[Set-UnifiedGroup](/powershell/module/exchangepowershell/set-unifiedgroup)|Update the properties of a specific Microsoft 365 Group|
+|[New-UnifiedGroup](/powershell/module/exchangepowershell/new-unifiedgroup)|Create a new Microsoft 365 Group. This cmdlet provides a minimal set of parameters. To set values for extended properties, use Set-UnifiedGroup after creating the new group|
+|[Remove-UnifiedGroup](/powershell/module/exchangepowershell/remove-unifiedgroup)|Delete an existing Microsoft 365 Group|
+|[Get-UnifiedGroupLinks](/powershell/module/exchangepowershell/get-unifiedgrouplinks)|Retrieve membership and owner information for a Microsoft 365 Group|
+|[Add-UnifiedGroupLinks](/powershell/module/exchangepowershell/add-unifiedgrouplinks)|Add members, owners, and subscribers to an existing Microsoft 365 Group|
+|[Remove-UnifiedGroupLinks](/powershell/module/exchangepowershell/remove-unifiedgrouplinks)|Remove owners and members from an existing Microsoft 365 Group|
 |[Get-MgGroupPhoto](/powershell/module/microsoft.graph.groups/get-mggroupphoto)|Used to view information about the user photo that's associated with a Microsoft 365 Group.|
 |[Get-MgGroupPhotoContent](/powershell/module/microsoft.graph.groups/get-mggroupphotocontent)|Used to download the user photo that's associated with a Microsoft 365 Group.|
 |[Set-MgUserPhotoContent](/powershell/module/microsoft.graph.users/set-mguserphotocontent)|Used to add a user photo to a Microsoft 365 Group.|

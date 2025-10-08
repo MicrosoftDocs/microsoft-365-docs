@@ -3,9 +3,9 @@ title: Step 1. Your Microsoft 365 for enterprise tenants
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 03/21/2024
+ms.date: 08/15/2024
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: 
@@ -107,13 +107,12 @@ For more information, see [Moving core data to new Microsoft 365 datacenter geos
 
 ## Products and licenses for a tenant
 
-Your Microsoft 365 tenant gets created when you purchase your first product, such as Microsoft 365 E3. Along with the product are licenses, which are charged a monthly or annual fee. An administrator then assigns an available license from one of your products to a user account, either directly or through group membership. Depending on your organization's business needs, you might have a set of products, each with their own pool of licenses. 
+Your Microsoft 365 tenant gets created when you purchase your first product, such as Microsoft 365 E3. Along with the product are licenses, which are charged a monthly or annual fee. An administrator then assigns an available license from one of your products to a user account, either directly or through group membership. Depending on your organization's business needs, you might have a set of products, each with their own pool of licenses.
 
 Determining the set of products and the number of licenses for each requires some planning to:
 
 - Ensure you have enough licenses for the user accounts that need advanced features.
 - Prevent you from running out of licenses or having too many unassigned licenses, based on changes in staffing at your organization.
-
 
 ## Results of Step 1
 
@@ -145,7 +144,7 @@ On an ongoing basis, you might need to:
 
 - Add a new tenant.
 - Add new products to a tenant with an initial number of licenses.
-- Change the set of licenses for a product in a tenant to adjust for changing staff requirements.
+- Change the set of licenses for a product in a tenant to adjust for changing staff requirements. For more information, see [Buy or remove Microsoft 365 licenses for a subscription](/microsoft-365/commerce/licenses/buy-licenses).
 - Move your core data from a tenant to a new datacenter geo location.
 - Add Multi-Geo for data residency requirements.
 - Set up inter-tenant collaboration.

@@ -14,6 +14,7 @@ ms.collection:
 - M365-Campaigns
 - m365solution-smb
 - tier2
+- trust-pod
 ms.custom:
 - MiniMaven
 search.appverid:
@@ -77,6 +78,8 @@ After you have subscribed to Microsoft 365 for Campaigns, your next step is to g
 
 ## Before you begin your setup process
 
+[Sign in and set up Microsoft 365 Business Premium](m365-business-premium-setup.md)
+
 Make sure that you meet the following requirements before you begin your setup process:
 
 |Requirement|Description|
@@ -85,7 +88,7 @@ Make sure that you meet the following requirements before you begin your setup p
 |Permissions|To complete the initial setup process, you must have an appropriate role assigned. [Learn more about admin roles](../admin/add-users/about-admin-roles.md).|
 |Browser requirements|Microsoft Edge, Safari, Chrome or Firefox. [Learn more about browser requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy).|
 |Operating systems (client)|**Windows**:  Windows 10 or 11 Pro <br/> **macOS**: One of the three most recent versions of macOS|
-|Operating systems (servers)|Windows Server or Linux Server <br/> (Requires an additional license, such as [Microsoft Defender for Business servers](../security/defender-business/get-defender-business.md#how-to-get-microsoft-defender-for-business-servers).)|
+|Operating systems (servers)|Windows Server or Linux Server <br/> (Requires an additional license, such as [Microsoft Defender for Business servers](/defender-business/get-defender-business#how-to-get-microsoft-defender-for-business-servers).)|
 
 > [!TIP]
 > For more detailed information about Microsoft 365, Office, and system requirements, see [Microsoft 365 and Office Resources](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
@@ -98,13 +101,13 @@ Make sure that you meet the following requirements before you begin your setup p
 
 3. Type your username and password. Select **Sign in**.
 
-4. In the top right of the page, find the **Preview on** control. Select **Preview on** so you can use all the controls described in [Configure your security protection for your campaign](m365bp-security-overview.md).
+4. In the top right of the page, find the **Preview on** control. Select **Preview on** so you can use all the controls described in [Configure your security protection for your campaign](/microsoft-365/admin/security-and-compliance/m365bp-security-benefits).
 
 ## How your staff will sign in
 
 Users who have been added to your Microsoft 365 for Campaigns (or Microsoft 365 Business Premium) subscription can sign in using the following steps:
 
-1. Go to <https://office.com>.
+1. Go to <https://m365.cloud.microsoft/>.
 
 2. Sign in using the username and password for the account. Users will have this information in the email they receive when they are added as users. If they can't find the email, see [user didn't receive invite email](../admin/simplified-signup/admin-invite-business-standard.md#i-shared-an-email-invite-but-the-user-didnt-receive-the-email).
 
@@ -140,4 +143,4 @@ To help your staff learn about steps to protect your campaign from cyber threats
 
 ## Next objective
 
-Proceed to [set up your security protection](m365bp-security-overview.md).
+Proceed to [set up your security protection](/microsoft-365/admin/security-and-compliance/m365bp-security-benefits).

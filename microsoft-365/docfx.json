@@ -73,18 +73,21 @@
       "breadcrumb_path": "/microsoft-365/breadcrumb/toc.json",
       "recommendations": true,
       "uhfHeaderId": "MSDocsHeader-M365-IT",
-      "searchScope": ["Microsoft Bookings", "Microsoft 365 Lighthouse", "Microsoft 365 for frontline workers", "Microsoft Syntex", "Microsoft 365 Archive", "Microsoft 365"],
+      "searchScope": ["Microsoft Bookings", "Microsoft 365 Lighthouse", "Microsoft 365 for frontline workers", "Microsoft 365", "Microsoft 365 Archive", "Microsoft 365"],
       "contributors_to_exclude": [ 
         "rjagiewich", 
-        "claydetels19", 
+        "claydetels19",
         "jborsecnik",
-        "shdyas",
+        "shdyas", 
         "garycentric",
         "alexbuckgit", 
         "beccarobins",
         "dstrome",
         "Stacyrch140",
-        "American-Dipper,"
+        "American-Dipper",
+        "padmagit77",
+        "aditisrivastava07",
+        "Ruchika-mittal01"
       ]
     },
     "fileMetadata": {
@@ -104,7 +107,7 @@
         "business/**/*.md": "Microsoft 365 Business",
         "admin/**/*.md": "Microsoft 365 admin",
         "lighthouse/**/*.md": "Microsoft 365 Lighthouse",
-        "syntex/**/*.md": "Microsoft Syntex",
+        "syntex/**/*.md": "Microsoft 365",
         "frontline/**/*.md": "Microsoft 365 for frontline workers",
         "whiteboard/**/*.md": "Microsoft Whiteboard",
         "topics/**/*.md": "Microsoft Topics",
@@ -152,8 +155,8 @@
         "security/**/*.yml": ["Microsoft 365"],
         "solutions/**/*.md": ["Microsoft 365"],
         "solutions/**/*.yml": ["Microsoft 365"],
-        "syntex/**/*.md": ["Microsoft Syntex"],
-        "syntex/**/*.yml": ["Microsoft Syntex"],
+        "documentprocessing/**/*.md": ["Microsoft 365"],
+        "documentprocessing/**/*.yml": ["Microsoft 365"],
         "topics/**/*.md": ["Microsoft Topics"],
         "topics/**/*.yml": ["Microsoft Topics"],
         "archive/**/*.md": ["Microsoft 365 Archive"],
@@ -162,6 +165,31 @@
     },
     "template": [],
     "dest": "microsoft-365-docs",
-    "markdownEngineName": "markdig"
+    "markdownEngineName": "markdig",
+    "rules": {
+      "docs-link-absolute": {
+        "exclude": [
+        ]
+      },
+      "sensitive-language-ma": {
+        "exclude": [
+        ]
+      },
+      "sensitive-language-sl": {
+        "exclude": [
+        ]
+      },
+      "sensitive-language-wl": {
+        "exclude": [
+          "frontline/shifts-connector-ukg-prerequisites.md"
+
+        ]
+      },
+      "sensitive-language-bl": {
+        "exclude": [
+
+        ]
+      }
+    }
   }
 }

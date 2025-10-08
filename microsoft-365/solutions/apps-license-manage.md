@@ -5,7 +5,7 @@ author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
-ms.date: 07/15/2024
+ms.date: 04/21/2025
 description: Manage app licenses used in Intune.
 ms.service: o365-solutions
 ms.localizationpriority: high

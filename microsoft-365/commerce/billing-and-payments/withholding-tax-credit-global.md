@@ -4,31 +4,28 @@ f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
-manager: scotv
+manager: dansimp
 ms.reviewer: jkinma, ramagane
 audience: Admin
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-management
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
+- operations-pod
 search.appverid: MET150
-description: "Learn how to request a credit on your account for Withholding Tax you paid." 
-ms.custom: 
+description: "Learn how to request a credit on your account for Withholding Tax you paid."
+ms.custom:
 - commerce_billing
 - AdminSurgePortfolio
-ms.date: 11/29/2023
+ms.date: 05/04/2025
 ---
 
 # Request a credit for Withholding Tax on your account (Global customers)
-
-> [!NOTE]
->
-> If your organization is based in India, some of the information in this article is slightly different.
 
 Some customers receive Web Direct (Azure and Microsoft 365) invoices billed by a Microsoft entity located in a foreign country/region. If your organization makes cross-border payments to that entity, the Tax Authority in your country/region might require you to withhold part of the cross-border payment as withholding tax (WHT). If you withheld taxes as required by your Tax Authority when remitting  payments to Microsoft, this article explains the process for claiming a credit for the tax withheld.
 

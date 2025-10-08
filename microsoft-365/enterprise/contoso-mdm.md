@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: kvice
 manager: scotv
-ms.date: 09/13/2018
+ms.date: 09/06/2024
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -15,6 +15,7 @@ ms.collection:
 - scotvorg
 - M365-identity-device-management
 - Strat_O365_Enterprise
+- must-keep
 ms.custom:
 
 description: Understand how Contoso uses Microsoft Intune in Microsoft 365 for enterprise to manage its devices and the apps that run on them.
@@ -56,8 +57,8 @@ This is how Contoso set up their mobile device management infrastructure:
   - Device encryption to help prevent unauthorized access.
   - A six-digit PIN or password.
   - An inactivity-timeout period.
-  - Antivirus and malware protection, and signature updates with Windows Defender on Windows 10 devices.
-  - Automatic updates on Windows 10 devices that include the latest security updates.
+  - Antivirus and malware protection, and signature updates with Windows Defender on Windows 11 devices.
+  - Automatic updates on Windows 11 devices that include the latest security updates.
   - Pushing certificates to managed devices.
   - A clear separation of business and personal data. Users or admins can selectively wipe corporate data from the device, while leaving personal data such as pictures, personal email accounts, and personal files untouched.
 
@@ -76,5 +77,3 @@ Learn how Contoso uses the [information protection capabilities](contoso-info-pr
 [Device management for Microsoft 365](device-management-roadmap-microsoft-365.md)
 
 [Microsoft 365 for enterprise overview](microsoft-365-overview.md)
-
-[Test lab guides](m365-enterprise-test-lab-guides.md)

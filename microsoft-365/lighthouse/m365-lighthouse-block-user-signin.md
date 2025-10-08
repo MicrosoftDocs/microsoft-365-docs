@@ -1,10 +1,10 @@
 ---
 title: "Block user sign-in in Microsoft 365 Lighthouse"
 f1.keywords: NOCSH
-ms.author: sharik
+ms.author: dansimp
 author: SKjerland
 manager: scotv
-ms.reviewer: katmartin
+ms.reviewer: aakash
 ms.date: 04/09/2024
 audience: Admin
 ms.topic: how-to

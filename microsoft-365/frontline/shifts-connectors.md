@@ -1,11 +1,11 @@
 ---
 title: Shifts connectors
 author: lana-chin
-ms.author: v-chinlana
+ms.author: jtremper
 manager: jtremper
-ms.topic: conceptual
+ms.topic: article
 audience: admin
-ms.reviewer: imarquesgil
+ms.reviewer: harrywong
 ms.service: microsoft-365-frontline
 search.appverid: MET150
 description: Learn about Shifts connectors and how to use them to connect Shifts to your workforce management system. 
@@ -18,7 +18,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 10/02/2023
+ms.date: 12/20/2024
 ---
 
 # Shifts connectors
@@ -31,6 +31,9 @@ Connecting your WFM system to Teams empowers your frontline workforce to manage 
 
 This article gives you an overview of Shifts connectors and how they work.
 
+> [!NOTE]
+> You can also create your own custom solution to integrate Shifts with your WFM system using the Microsoft Graph API. To learn more, see [Create a custom integration to sync your workforce management system with Shifts](shifts-custom-wfm-integration.md).
+
 ## How Shifts connectors work
 
 Connectors sync schedule data between your WFM system and Shifts, bringing your organization’s schedules into Teams. Shifts is where your frontline workers engage for their scheduling needs. Your WFM system is the system of record for business rules, compliance, and intelligence.
@@ -41,12 +44,15 @@ Data flows via the connector both ways to ensure schedules are always up to date
 <a name="schedules"> </a>
 ## Managed Shifts connectors
 
+> [!WARNING]
+> **Limited Support Notice**: The Shifts connector feature is currently in limited support mode. Existing customers can continue using the connector and will be informed of next steps through their account teams. New deployments are not recommended at this time. Please check back here for future updates.
+
 Managed Shifts connectors are connectors developed in collaboration with our partners. Managed connectors are hosted and managed either by us or our partners. With managed connectors, only minimal setup is needed.
 
 |Connector|Description|Requirements|
 |---------|---------|---------|
 |[Microsoft Teams Shifts connector for Blue Yonder](#microsoft-teams-shifts-connector-for-blue-yonder)|Use this connector to integrate Shifts with Blue Yonder Workforce Management. This connector is hosted and managed by Microsoft.|Prerequisites for setting up a connection: <ul><li>Using the [Shifts connector wizard](shifts-connector-wizard.md#prerequisites) in the Microsoft 365 admin center<br>Before you run the wizard, [remove schedules from existing teams that you want to map](shifts-connector-wizard.md#remove-schedule-entities-from-teams-you-want-to-map).</li><li>Using [PowerShell](shifts-connector-blue-yonder-powershell-setup.md#prerequisites)</li></ul>|
-|[Microsoft Teams Shifts connector for UKG Pro Workforce Management](#microsoft-teams-shifts-connector-for-ukg-pro-workforce-management)|Use this connector to integrate Shifts with UKG Pro Workforce Management (UKG Pro WFM). This connector is hosted and managed by Microsoft.|See [Prerequisites and requirements for the Teams Shifts connector for UKG Pro Workforce Management](shifts-connector-ukg-prerequisites.md).|
+|[Microsoft Teams Shifts connector for UKG Pro Workforce Management](#microsoft-teams-shifts-connector-for-ukg-pro-workforce-management)|Use this connector to integrate Shifts with UKG Pro Workforce Management (UKG Pro WFM). This connector is hosted and managed by Microsoft. There are no additional licensing fees for using the connector.|See [Prerequisites and requirements for the Teams Shifts connector for UKG Pro Workforce Management](shifts-connector-ukg-prerequisites.md).|
 |[Reflexis Shifts connector for Microsoft Teams](#reflexis-shifts-connector-for-microsoft-teams)|Use this connector to integrate Shifts with Reflexis Workforce Management. This connector is hosted and managed by Zebra. |To learn more, go to <https://connect.zebra.com/microsoft-connectors>.|
 
 <a name="blue_yonder"> </a>
@@ -112,13 +118,13 @@ The Teams Shifts connector for UKG Pro Workforce Management is a first-party off
 
 :::image type="content" source="media/shifts-connector-ukg-dimensions.png" alt-text="Screenshot showing Shifts on a mobile device, a time off request, and a schedule in UKG Pro WFM." lightbox="media/shifts-connector-ukg-dimensions.png":::
 
-Frontline managers can:
+Frontline managers can do the following in UKG Pro WFM and Shifts:
 
-- Publish shifts and schedules in UKG Pro WFM and view them in Shifts.
-- Create, view, manage, and assign open shifts in UKG Pro WFM and Shifts on Teams desktop and Teams web app. (Currently, managers can't view or assign open shifts in Shifts on Teams mobile.)
-- Create, edit, and delete time off in UKG Pro WFM and view in Shifts.
-- View and approve schedule requests from workers in both UKG Pro WFM and Shifts.
-- Set and update worker availability in UKG Pro WFM and view in Shifts.
+- Publish shifts and schedules.
+- Create, view, manage, and assign open shifts.
+- Create, edit, and delete time off.
+- View and approve schedule requests from workers.
+- Set and update worker availability.
 
 Frontline workers can:
 
@@ -127,14 +133,6 @@ Frontline workers can:
 - View and post timecard entries in Shifts.
 - Request open shifts, swap shifts, and offer a shift to a specific teammate in Shifts.
 - Set their availability in Shifts on Teams mobile.
-
-The following actions are currently not supported:
-
-- Add, edit, delete, save, or publish shifts in Shifts.
-- Add, edit, delete, save, or publish time off in Shifts.
-- Add, edit, delete, save, or publish open shifts in Shifts.
-
-When a frontline manager or worker tries to do any of these actions in Shifts, they'll receive a message to let them know the action isn't supported.
 
 ### Example scenario
 
@@ -229,4 +227,4 @@ Here's an overview of the connection setup process.
 
 ## Related articles
 
-- [Manage the Shifts app](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
+- [Shifts for your frontline organization](shifts-for-teams-landing-page.md)

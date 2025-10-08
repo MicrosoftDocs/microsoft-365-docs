@@ -1,0 +1,176 @@
+### YamlMime:FAQ
+metadata:
+  title: Microsoft 365 Copilot Tuning FAQ
+  description: Find answers to questions related to Copilot Tuning.
+  author: lauragra
+  ms.author: lauragra
+  manager: calvind
+  ms.service: microsoft-365-copilot
+  ms.topic: faq
+  ms.date: 06/17/2025
+
+title: Microsoft 365 Copilot Tuning FAQ
+summary: |
+  Microsoft 365 Copilot Tuning allows organizations to fine-tune large language models (LLMs) for specific tasks by using their own tenant data. This article provides answers to frequently asked questions(FAQs) related to Copilot Tuning.
+
+  [!INCLUDE [copilot-tuning-preview](includes/copilot-tuning-preview.md)]
+
+sections:
+- name: Copilot Tuning features and capabilities
+  questions:
+  - question: |
+      What are the key features of Copilot Tuning?
+    answer: |
+      Copilot Tuning allows organizations to create task-specific custom AI models based on their tenant data by enabling model makers to tune large language models (like GPT-4) with the organization's documents and knowledge bases in Copilot Studio. This produces a model that understands the organization's terminology, style, and processes. Agent builders can then build agents based on the fine-tuned model that perform tasks like Q&A, document generation, and summarization.
+  - question: |
+      Does Copilot Tuning help customize Microsoft 365 Copilot?
+    answer: |
+      Copilot Tuning is designed to help customers customize Microsoft 365 Copilot for specific tasks. The following tasks are currently supported:
+
+      - Document generation
+      - Expert Q&A
+      - Summarization
+
+      For more information, see [Key capabilities and scenarios](/copilot/microsoft-365/copilot-tuning-overview#key-capabilities-and-scenarios). To request support for more tasks, send mail to [CopilotTuningFeedback@service.microsoft.com](mailto:CopilotTuningFeedback@service.microsoft.com).
+
+      After the model is fine-tuned, organizations can create domain-specific declarative agents that respond to user queries using organizational knowledge.
+
+  - question: |
+      What's the difference between Azure AI Foundry and Copilot Tuning?
+    answer: |
+      Azure AI Foundry is a developer-first, code-centric platform designed to support full lifecycle AI development—from model selection and customization to deployment and monitoring. Azure AI Foundry is ideal for engineering teams who build scalable, production-grade AI systems in Azure.
+
+      Copilot Tuning is a maker-first, low-code feature tailored for enterprise customers who want to fine-tune models for specific business scenarios without deep machine learning expertise. It runs in the Microsoft 365 tenant boundary.
+
+- name: Security, privacy, and data governance
+  questions:
+  - question: |
+      Does my data stay safe and secure during training?
+    answer: |
+      Copilot Tuning uses a secure process during data ingestion and training. Data ingestion takes place within your Microsoft 365 tenant, which preserves privacy and security. Copilot Tuning provides a self-serve, turnkey fine-tuning pipeline that doesn't require any engineers to see your data. Your content is used to train the model in a tenant-isolated environment.
+  - question: |
+      Do my data governance policies persist through the ingestion and training process?
+    answer: |
+      Yes. Copilot Tuning automatically excludes from training any files that the security groups configured for the tuned model can't access. It automatically suggests other security groups to maximize the breadth of knowledge that can be securely incorporated into the model. Although this provides an extra layer of security for the model, we recommend that you treat each model as a copy of the trained data. If the original data is deleted or changed, the model remains the same unless the admin adjusted the permission on the model.
+
+      For more information about model governance, see the [Admin guide](copilot-tuning-admin-guide.md).
+  - question: |
+      Where is the data stored and processed?
+    answer: |
+      Copilot Tuning adheres to the data residency commitments of Microsoft 365. The model training and inference occur in the geography tied to your tenant. For example, for a tenant in Europe, the fine-tuning jobs and storage take place in EU datacenters.
+  - question: |
+      How does Copilot Tuning manage data governance?
+    answer: |
+      Copilot Tuning is integrated into Microsoft 365. It automatically inherits all your company's valuable security, compliance, and privacy policies and processes. Data permissions are consistent, and users can only search the information that they have access to. For more information, see [Data, Privacy, and Security for Microsoft 365 Copilot](/copilot/microsoft-365/microsoft-365-copilot-privacy).
+
+- name: Prerequisites and getting started
+  questions:
+  - question: |
+      What are the prerequisites for using Copilot Tuning?
+    answer: |
+      Your organization must enable Microsoft 365 Copilot and purchase a minimum of 5,000 Microsoft 365 Copilot add-on license. Copilot Tuning is an advanced capability and is currently offered to customers in the Copilot Early Access Program (EAP). Your tenant must also have an active Copilot Studio subscription. Contact your Microsoft account team to help confirm your eligibility.
+  - question: |
+      What are the system requirements for using Copilot Tuning?
+    answer: |
+      Copilot Tuning doesn't require any on-premises hardware - it runs entirely as a cloud service within Microsoft 365. However, there are licensing and data prerequisites.
+  - question: |
+      How do I know if my organization qualifies for Copilot Tuning?
+    answer: |
+      During EAP, your organization must have 5,000 or more Microsoft 365 Copilot licenses enabled for your tenant. In addition to the Copilot licenses, you must have active Copilot Studio licenses at the tenant and user level. You must also undergo extra screening as part of the onboarding process to ensure that your scenario is a good fit for Copilot Tuning's current capabilities.
+  - question: |
+      How do admins enable Copilot Tuning?
+    answer: |
+      An AI Admin (or designated Copilot admin role) enables Copilot Tuning via the Microsoft 365 admin center. Microsoft provides a setting in the **Copilot settings** section of the admin portal to activate Copilot Studio and task-specific fine-tuning features. When a tenant admin enables Copilot Tuning, the Copilot Studio interface is available to model makers to allow them to tune models for a specific task.
+  - question: |
+      How should organizations use Copilot Tuning?
+    answer: |
+      Use Copilot Tuning to handle repetitive, information-heavy tasks and to generate initial drafts. Let your experts focus on strategic thinking, decision-making, and final reviews. When you understand the feature's strengths (speed, scale, consistency) and weaknesses (contextual nuance, up-to-date knowledge), you can better take advantage of it.
+
+- name: Training data and tuning process
+  questions:
+  - question: |
+      Who in my organization can make models using Copilot Tuning?
+    answer: |
+      You decide who in your organization can create and manage models. Model makers might be business analysts or IT specialists who are familiar with the content. We recommend that you assign one or two model makers to start; you're limited to a total of 10 model makers in the organization. Assign the model makers a Copilot Studio user license (a $0 license that grants access to Copilot Studio authoring tools) that they can use to build agents. Admins can assign Copilot Studio user licenses to user accounts in the Microsoft 365 admin center or by adding users to a security group that has Copilot Studio access.
+  - question: |
+      What tools do I use to create fine-tuned models?
+    answer: |
+      Use [Copilot Studio](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio) to create fine-tuned models. Copilot Studio provides a user-friendly interface for model makers to select training data, configure model parameters, and run the training job. It abstracts the complexity of AI tuning into a guided, turnkey process.
+  - question: |
+      What are the data requirements for using Copilot Tuning?
+    answer: |
+      Copilot Tuning can train on text-based content (documents, knowledge articles, transcripts, and so on) in your Microsoft 365 tenant, including files in SharePoint Online (such as Word, PDF, or text documents). Nontextual data (images, videos) and other file formats aren't currently supported.
+  - question: |
+      How long does it take to fine-tune a model?
+    answer: |
+      The time it takes to fine-tune a model depends on several factors, including the size of the training data and the complexity of the model. Generally, fine-tuning can take anywhere from a few hours to several days.
+  - question: |
+      How can I customize the knowledge domain for Copilot Tuning?
+    answer: |
+      You select the specific content to use for training and grounding. This includes choosing data sources like SharePoint sites, folders, or uploaded files. By curating the training data, you define the scope and expertise of the model.
+  - question: |
+      How do I know if the tuning process was successful?
+    answer: |
+      When the training process is complete, Copilot Studio presents examples for evaluation; for example, Q&A or summary results from your new model. You can test your model in a chat interface in Copilot Studio. Ask it a few questions related to your data to gauge its responses, and refine as needed. If you're not satisfied with the results, update the data or add more instructions and run the training again. When you're happy with the model, publish it.
+  - question: |
+      Can I create more than one fine-tuned model?
+    answer: |
+      Yes, you can train multiple models and build multiple agents, each tailored to different purposes and datasets. For example, one agent can generate responses to RFPs, while another agent handles HR-related queries. Each agent can have its own persona and training data.
+  - question: |
+      Can I retrain models with new data?
+    answer: |
+      Yes, you can retrain models with new data or data sources as your business needs evolve.
+
+- name: Building and managing agents
+  questions:
+  - question: |
+      What tools do I use to build agents?
+    answer: |
+      Use [Copilot Studio agent builder](/microsoft-365-copilot/extensibility/copilot-studio-agent-builder) to create agents that work with task-specific fine-tuned models.
+  - question: |
+      How do I build agents powered by fine-tuned models?
+    answer: |
+      Copilot Tuning integrates with [Copilot Studio agent builder](/microsoft-365-copilot/extensibility/copilot-studio-agent-builder), which allows you to package your custom model into an agent with specific instructions and connected data sources. These agents can perform domain-specific tasks like advanced document generation, expert Q&A, or summarization of long content.
+  - question: |
+      Do I need to know how to code to successfully build agents based on fine-tuned models?
+    answer: |
+      No. You can build agents based on fine-tuned models with no code. A business user or analyst can use Copilot Studio to select training data, tune the model, and publish an agent. You don't need to train models from scratch or be a data scientist. Copilot Tuning abstracts the complexity of AI tuning into a guided, turnkey process.
+  - question: |
+      Do agents built with fine-tuned models work with Microsoft 365 apps?
+    answer: |
+      Agents built with fine-tuned models work in the Microsoft 365 Copilot app and other apps where agents are available, like Teams. Users can chat with task-specific agents in Teams or Microsoft 365 Copilot just as they do with Copilot and other agents. The agent responds with knowledge tailored to the organization.
+  - question: |
+      How do I roll out an agent that used a fine-tuned model to users?
+    answer: |
+      We recommend that you pilot the agent with few users first and iterate. Roll the agent out to a set of test users or the relevant department. Gather feedback as to whether the answers meet expectations. You can continue to improve the model by adding more training data or adjusting the agent's instructions. After that, plan a wider deployment. Integrate the agent into workflows - for example, pin it in a Teams channel or advertise it internally. Because the agent integrates with Microsoft 365 Copilot, users invoke it by calling Copilot in the relevant context and selecting the agent.
+
+- name: Support and feedback
+  questions:
+  - question: |
+      Can I get help through my Microsoft account team?
+    answer: |
+      Yes. During the EAP, if you're qualified to participate, your account team can help coordinate support with internal Microsoft resources.
+  - question: |
+      How can I provide feedback or request features for Copilot Tuning?
+    answer: |
+      Microsoft values your feedback. You can submit feedback through Copilot Studio or via your Microsoft account team.
+  - question: |
+      How can agent users get support?
+    answer: Users should contact the organization's help desk for support with agents. Make sure that the help desk is aware of the agent's capabilities. If the help desk can't assist, they can escalate the issue to IT, who can then engage Microsoft support.
+  - question: |
+      How can agent users provide feedback?
+    answer: |
+      In Copilot Chat, users can select the thumbs-up or thumbs-down icon on responses and provide verbatim feedback. This feedback is sent to Microsoft and helps the product team identify common issues and improve model performance over time.
+  - question: |
+      Can admins or creators submit feedback through Copilot Studio?
+    answer: |
+      Yes. Copilot Studio and admin interfaces include a feedback link. Admins can use the feedback link to submit suggestions or report issues. The feedback is sent to Microsoft and considered for future planning.
+  - question: |
+      Can I share feedback through my Microsoft account team?
+    answer: |
+      Absolutely. Your Customer Success Manager or Microsoft customer engineers can collect feedback and schedule dedicated calls to hear your input. These sessions sometimes include product managers or engineers and provide opportunities to share feature requests or pain points.
+
+additionalContent: |
+  ## Related content
+
+  - [Copilot Tuning overview](copilot-tuning-overview.md)

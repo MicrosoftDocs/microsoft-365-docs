@@ -10,9 +10,10 @@ metadata:
   description: Set up and manage Microsoft 365 in the Microsoft 365 admin center. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: microsoft-365-business #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
-  author: kwekua #Required; your GitHub user alias, with correct capitalization.
+  author: kwekuako #Required; your GitHub user alias, with correct capitalization.
   ms.author: kwekua #Required; microsoft alias of author; optional team alias.
-  ms.date: 11/03/2023
+  manager: dansimp
+  ms.date: 01/07/2025
   ms.localizationpriority: high
   ms.custom: 
   - VSBFY23
@@ -23,6 +24,7 @@ metadata:
   - scotvorg
   - highpri
   - Adm_TOC
+  - operations-pod
 
 # highlightedContent section (optional)
 # Maximum of 8 items

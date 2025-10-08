@@ -4,8 +4,8 @@ ms.author: erikre
 author: erikre
 manager: dougeby
 audience: ITPro
-ms.topic: article
-ms.date: 07/10/2024
+ms.topic: concept-article
+ms.date: 04/21/2025
 description: Understand app data protection using Microsoft Intune.
 ms.service: o365-solutions
 ms.localizationpriority: high

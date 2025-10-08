@@ -1,7 +1,7 @@
 ### YamlMime:FAQ
 metadata:
-  ms.date: 03/25/2024
-  title: "Microsoft Bookings Frequently Asked Questions"
+  ms.date: 07/30/2024
+  title: "Shared Bookings Frequently Asked Questions"
   ms.author: kwekua
   author: kwekuako
   manager: scotv
@@ -14,8 +14,9 @@ metadata:
   - scotvorg
   - essentials-compliance
   - essentials-privacy
-  description: "Microsoft Bookings frequently asked questions."
-title: Microsoft Bookings Frequently Asked Questions
+  - operations-pod
+  description: "Shared Bookings frequently asked questions."
+title: Shared Bookings Frequently Asked Questions (FAQ)
 summary: |
 
 sections:
@@ -201,7 +202,7 @@ sections:
       - question: |
           Can email notifications be sent as the tenant domain name?
         answer: |
-          The email addresses are controlled and managed at the Microsoft 365 settings level and depend on the domain configuration settings there. More information can be found [here](/powershell/module/exchange/get-accepteddomain).
+          The email addresses are controlled and managed at the Microsoft 365 settings level and depend on the domain configuration settings there. More information can be found [here](/powershell/module/exchangepowershell/get-accepteddomain).
           
       - question: |
           Is the ability to send SMS messages dependent on a different service or specific configuration?
@@ -360,7 +361,7 @@ sections:
              > [!NOTE]
              > This setting shares your free/busy information with Bookings and with other users in your organization. It doesn't include any other information.
           
-             :::image type="content" alt-text="Image of calendar-sharing screen with Can view when I'm busy enabled." source="../media/bookings-view-busy.png" lightbox="../media/bookings-view-busy.png":::
+             :::image type="content" alt-text="Image of calendar-sharing screen with Can view when I'm busy enabled." source="../media/bookings-view-busy.png":::
           
           1. Select **Done**.
           
@@ -432,7 +433,7 @@ additionalContent: |
 
   - [Customize and publish your booking page](customize-booking-page.md)
 
-  - [Tenant Mailbox configuration](/powershell/module/exchange/get-accepteddomain)
+  - [Tenant Mailbox configuration](/powershell/module/exchangepowershell/get-accepteddomain)
 
   - [Group Bookings](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-now-supports-online-meetings-and-group/ba-p/1214120)
 

@@ -3,7 +3,7 @@ title: "Minification and bundling in SharePoint"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 1/18/2022
+ms.date: 08/09/2024
 audience: Admin
 ms.topic: troubleshooting
 ms.service: microsoft-365-enterprise
@@ -13,6 +13,7 @@ ms.collection:
 - scotvorg
 - Ent_O365
 - SPO_Content
+- must-keep
 f1.keywords:
 - CSH
 ms.custom: 

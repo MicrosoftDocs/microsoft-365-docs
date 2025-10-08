@@ -1,10 +1,10 @@
 ---
 title: Understand frontline worker user types and licensing
 author: lana-chin
-ms.author: v-chinlana
+ms.author: jtremper
 manager: jtremper
 ms.reviewer: arnavgupta
-ms.topic: conceptual
+ms.topic: concept-article
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
@@ -16,7 +16,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 03/22/2024
+ms.date: 10/06/2025
 ---
 
 # Understand frontline worker user types and licensing
@@ -28,7 +28,7 @@ Organizations in many industries, such as retail, manufacturing, hospitality, an
 
 Microsoft 365 and Microsoft Teams have features and a licensing model to support both types of users for your organization. [Microsoft 365 for frontline workers](https://www.microsoft.com/microsoft-365/enterprise/frontline) is optimized for a frequently mobile workforce that primarily interacts with customers, but also needs to stay connected to the rest of your organization.
 
-<!-- > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRoBo] -->
+<!-- > [!VIDEO https://learn-video.azurefd.net/vod/player?id=d552631d-8ad4-46bd-b920-4f219f732593] -->
 
 ## Assign appropriate licenses to support frontline worker and information worker user types
 

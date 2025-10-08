@@ -4,8 +4,8 @@ ms.author: erikre
 author: erikre
 manager: dougeby
 audience: ITPro
-ms.topic: article
-ms.date: 03/29/2024
+ms.topic: how-to
+ms.date: 04/21/2025
 description: Purchase apps in-volume for Intune.
 ms.service: o365-solutions
 ms.localizationpriority: high
@@ -85,7 +85,7 @@ Follow the Intune guidelines to assign iOS/iPadOS apps:
 
 ## Microsoft Store<!-- What is it? -->
 
-[Microsoft Store](https://www.microsoft.com/business-store) is a web-based portal that allows you to find apps that can be managed by Intune. Admins can browse, deploy, and monitor Microsoft Store applications inside Intune. Upon deployment, Intune automatically keeps the apps up to date when a new version becomes available. The Microsoft Store supports UWP apps, desktop apps packaged in *.msix*, and now Win32 apps packaged in *.exe* or *.msi* installers.
+[Microsoft Store](https://apps.microsoft.com/apps) is a web-based portal that allows you to find apps that can be managed by Intune. Admins can browse, deploy, and monitor Microsoft Store applications inside Intune. Upon deployment, Intune automatically keeps the apps up to date when a new version becomes available. The Microsoft Store supports UWP apps, desktop apps packaged in *.msix*, and now Win32 apps packaged in *.exe* or *.msi* installers.
 
 ### Access Microsoft Store<!-- How to set up? -->
 

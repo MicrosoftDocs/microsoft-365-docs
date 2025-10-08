@@ -1,10 +1,10 @@
 ---
 title: Microsoft Teams Virtual Appointments Call Quality Dashboard
 author: lana-chin
-ms.author: v-chinlana
+ms.author: jtremper
 manager: jtremper
 audience: Admin
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-365-frontline
 ms.reviewer: ansantam
 f1.keywords:

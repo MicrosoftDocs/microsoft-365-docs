@@ -1,0 +1,27 @@
+name: (Scheduled) Publish to live
+
+permissions:
+  contents: write
+  pull-requests: write
+  checks: read
+
+on:
+  schedule:
+    - cron: "25 2,5,8,11,14,17,20,22 * * *" # Times are UTC based on Daylight Saving Time. Need to be adjusted for Standard Time. Scheduling at :25 to account for queuing lag.
+
+  workflow_dispatch:
+
+jobs:
+
+  auto-publish:
+    if: github.repository_owner == 'MicrosoftDocs' && contains(github.event.repository.topics, 'build')
+    uses: MicrosoftDocs/microsoft-365-docs/.github/workflows/Shared-AutoPublishV2.yml@workflows-prod
+    with:
+        PayloadJson: ${{ toJSON(github) }}
+        EnableAutoPublish: true
+        EnableAutoMerge: true
+
+    secrets:
+        AccessToken: ${{ secrets.GITHUB_TOKEN }}
+        PrivateKey: ${{ secrets.M365_APP_PRIVATE_KEY }}
+        ClientId: ${{ secrets.M365_APP_CLIENT_ID }}

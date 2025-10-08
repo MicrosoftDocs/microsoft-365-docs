@@ -4,13 +4,13 @@ f1.keywords:
 - CSH
 ms.author: kwekua
 author: kwekuako
-manager: scotv
+manager: dansimp
 ms.date: 05/29/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: high
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
 - highpri
@@ -18,15 +18,16 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - must-keep
+- operations-pod
 ms.custom:
-  - VSBFY23
-  - AdminSurgePortfolio
-  - okr_smb
-  - AdminTemplateSet
-  - admindeeplinkMAC
-  - business_assist
-  - has-azure-ad-ps-ref
-  - azure-ad-ref-level-one-done
+- VSBFY23
+- AdminSurgePortfolio
+- okr_smb
+- AdminTemplateSet
+- admindeeplinkMAC
+- business_assist
+- has-azure-ad-ps-ref
+- azure-ad-ref-level-one-done
 description: "Learn how an admin can set a password expiration policy for your business, school, or nonprofit in Microsoft 365 admin center."
 ---
 
@@ -42,10 +43,7 @@ Current research strongly indicates that mandated password changes do more harm 
 
 ## Before you begin
 
-You must be a [global admin](../add-users/about-admin-roles.md) to perform these steps.
-
-> [!TIP]
-> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
+You must be a [user administrator](../add-users/about-admin-roles.md) to perform these steps.
 
 ## Set password expiration policy
 

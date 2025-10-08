@@ -1,17 +1,19 @@
 ---
 title: Integrate Microsoft Reflect LTI with Blackboard Learn
-author: MicrosoftHeidi
-ms.author: heidip
-manager: jacktremper
+author: jennplatt
+ms.author: eladgr
+manager: dsitton
 ms.reviewer: eladgr
-ms.date: 11/28/2023
+ms.date: 08/01/2025
 audience: admin
-ms.topic: article
-ms.service: o365-administration
+ms.topic: integration
+ms.service: microsoft-365-education
 ms.collection: 
 - M365-modern-desktop
 - m365initiative-edu
 - tier2
+- m365-education
+- all-education
 ms.localizationpriority: medium
 description: Create impactful check-ins to gain wellbeing insights and build a happier, healthier learning community with the Microsoft Reflect Learning Tools Interoperability App for Blackboard Learn.
 ---
@@ -19,14 +21,14 @@ description: Create impactful check-ins to gain wellbeing insights and build a h
 # Integrate Microsoft Reflect LTI with Blackboard Learn
 
 [Microsoft Reflect](https://reflect.microsoft.com) is a wellbeing app designed to foster connection, expression, and learning by promoting self-awareness, empathy, and emotional growth.
-    
+
 Reflect LTI integration with Blackboard Learn is designed in compliance with the latest Learning Tools Interoperability (LTI) standards, ensuring strong security and straightforward installation within your Blackboard Learn environment.
 
 Integrate Reflect into Blackboard Learn to create impactful check-ins, gain wellbeing insights, and build a happier, healthier learning community.
 
 > [!NOTE]
 > This guide provides IT admins steps for registering the Reflect LTI app for Blackboard Learn by Anthology.
-> 
+>
 > The person who performs this integration should be an administrator of Blackboard Learn.
 
 ## One-time setup by administrator

@@ -4,19 +4,21 @@ f1.keywords:
 - NOCSH
 ms.author: kwekua
 author: kwekuako
-manager: scotv
-ms.date: 11/22/2023
+manager: dansimp
+ms.date: 01/06/2025
 audience: Admin
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - scotvorg
 - highpri
 - Adm_TOC
-ms.custom: 
+- operations-pod
+ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
+- campaignIDs-batch1
 description: "Migrate your Outlook, OneDrive and Teams data to Microsoft 365 Business Standard"
 ---
 
@@ -31,11 +33,11 @@ Follow the steps in this article to move your OneDrive, Outlook and Teams data t
 
 ## Move files to OneDrive for work
 
-Learn how to move the files stored in your Microsoft 365 personal account to your Microsoft 365 business account. With both OneDrive accounts synced to your device, you can easily drag and drop the files between two OneDrive folders. For the steps, check out [Migrate your OneDrive files](https://support.microsoft.com/office/7fb28cad-7e25-451f-8b4b-2d1a71e5c0e9).
+Learn how to move the files stored in your Microsoft 365 Personal account to your Microsoft 365 business account. With both OneDrive accounts synced to your device, you can easily drag and drop the files between two OneDrive folders. For the steps, check out [Migrate your OneDrive files](https://support.microsoft.com/office/7fb28cad-7e25-451f-8b4b-2d1a71e5c0e9).
 
 ## Set up Outlook for email
 
-Learn how to set up Outlook for the first time or migrate your email, contacts and calendar items. Check out the following topics:
+Learn how to set up Outlook for the first time or migrate your email, contacts, and calendar items. Check out the following articles:
 
 - [Set up Outlook for Microsoft 365 for business email](../setup/setup-outlook.md)
 
@@ -51,11 +53,11 @@ Learn how to set up Outlook for the first time or migrate your email, contacts a
 
 ### Access Teams chats
 
-When you start using Teams with your new work account your data won’t be migrated over. The best way to see your old chats is to open your old Teams account and new work account side by side. You can do this by selecting the ME icon on the top right of Teams and choosing the account’s you’d like to open. You can start using Teams with your new work account  with your colleagues. Make sure to tell other users you chat with to start contacting you using your new Teams for work account.
+When you start using Teams with your new work account your data will not be migrated over. The best way to see your old chats is to open your old Teams account and new work account side by side. You can do this by selecting the ME icon on the top right of Teams and choosing the account’s you’d like to open. You can start using Teams with your new work account  with your colleagues. Make sure to tell other users you chat with to start contacting you using your new Teams for work account.
 
 ### Microsoft Teams meetings
 
-Once you have your new Microsoft Teams account for work set up, you can recreate your meetings in the Teams calendar. Remember to delete the original meetings in your old Teams account. This will allow you to access richer functionality - for example, calendar availability when scheduling, and the ability to record meetings. You can only delete meetings from your own Teams calendar, so make sure you let people who you have meetings with know that you’ll be recreating your meetings. As you transition to use your new Teams account for your meetings, if people who should be in your meetings are missing, contact them to make sure they haven’t joined old meeting link.
+Once you have your new Microsoft Teams account for work setup, you can recreate your meetings in the Teams calendar. Remember to delete the original meetings in your old Teams account. This allows you to access richer functionality - for example, calendar availability when scheduling, and the ability to record meetings. You can only delete meetings from your own Teams calendar, so make sure you let people who you have meetings with know that you are recreating your meetings. As you transition to use your new Teams account for your meetings, if people who should be in your meetings are missing, contact them to make sure they haven’t joined old meeting link.
 
 ### Migrating contacts
 

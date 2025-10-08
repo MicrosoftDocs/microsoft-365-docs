@@ -1,11 +1,11 @@
 ---
 title: "Limit sharing in Microsoft 365"
-ms.author: jtremper
-author: jacktremper
-manager: pamgreen
+ms.author: ruihu
+author: maggierui
+manager: jtremper
 ms.date: 12/15/2023
 audience: ITPro
-ms.topic: article
+ms.topic: solution-overview
 ms.service: o365-solutions
 ms.collection: 
 - highpri
@@ -15,6 +15,7 @@ ms.collection:
 - m365solution-3tiersprotection
 - m365solution-securecollab
 - m365initiative-externalcollab
+- m365solution-overview
 search.appverid:
 - SPO160
 - MET150

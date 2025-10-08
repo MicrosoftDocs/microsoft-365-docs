@@ -3,9 +3,9 @@ title: "Microsoft 365 Network Insights"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 04/05/2024
+ms.date: 03/24/2025
 audience: Admin
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.subservice: network
 ms.localizationpriority: medium
@@ -21,177 +21,92 @@ description: "Microsoft 365 Network Insights"
 
 # Microsoft 365 Network Insights
 
-**Network insights** are performance metrics collected from your Microsoft 365 tenant, and available to view only by administrative users in your tenant. Insights are displayed in the Microsoft 365 Admin Center at <https://portal.microsoft.com/adminportal/home#/networkperformance>.
+Network insights are actionable issues that might affect user experience, performance or interoperability when using Microsoft 365 services, we detect insights based on network optics received from Microsoft 365 apps for your tenant users. Insights are available to view only by administrative users in your tenant. Insights can be viewed from [Network Connectivity](https://admin.cloud.microsoft/#/networkperformance) in Microsoft 365 Admin Center. 
 
-Insights are intended to help in designing network perimeters for your office locations. Each insight provides live details about the performance characteristics for a specific common issue for each geographic location where users are accessing your tenant.
+These insights are designed to help identify and resolve network infrastructure issues that are managed either by your organization or your network provider. This infrastructure includes the network services your tenant users rely on to connect to Microsoft 365 services from various office locations. Each insight highlights a specific connectivity issue tied to the geographic location from which users are accessing Microsoft 365.
 
-These are network insights that might be shown for each office location:
+> [!TIP]
+> Admins can now view Service health notifications in Microsoft 365 admin center for Network insights detected for their tenant. You may also receive an email if you opted to receive email notifications. The service health notification has a deep link that takes you directly to the detected network insight for your tenant. You receive one notification per insight detected. 
 
-- [Backhauled network egress](#backhauled-network-egress)
-- [Network intermediary device](#network-intermediary-device)
-- [Better performance detected for customers near you](#better-performance-detected-for-customers-near-you)
-- [Use of a nonoptimal Exchange Online service front door](#use-of-a-nonoptimal-exchange-online-service-front-door)
-- [Use of a nonoptimal SharePoint service front door](#use-of-a-nonoptimal-sharepoint-service-front-door)
-- [Low download speed from SharePoint front door](#low-download-speed-from-sharepoint-front-door)
-- [China user optimal network egress](#china-user-optimal-network-egress)
+The following are the network insights that might be shown for each office location:
 
-These are tenant-level network insights that might be shown for the tenant:
+|#|Network Insight                                                                                             | Description                                                                                                                                                                                                            | Impact                                                                                                                                                                                                             | Protocol  |Services or Scenarios impacted                                                | What action should I take?                                                                                                                                                                                                        |
+| --- | ----------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------- | -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Your connectivity to critical Microsoft 365 domains is failing                                              | We are detecting connectivity (HTTPS) failures to the following domains: `*.cloud.microsoft`, `*.static.microsoft`, `*.usercontent.microsoft`.                                                                         | Some or all users are unable to connect using HTTPS to subdomains or hosts within the specified wildcard domains due to network issues in infrastructure managed by your organization or your network provider.    | HTTPS     | All or any service part of Microsoft 365                                               | Check your network devices or web proxy infrastructure to ensure HTTPS connectivity is allowed to hosts in the wildcard domains `*.cloud.microsoft`, `*.static.microsoft`, `*.usercontent.microsoft` or any of their subdomains.  |
+| 2   | WebSocket connection to critical Microsoft 365 domains is failing                                           | We are detecting WebSocket (WSS) connection failures to the domain: `*.cloud.microsoft`, which his cause Copilot to not work correctly for your users.                                                                 | Some or all users are unable to connect using WebSocket to subdomains or hosts within the specified wildcard domain due to network issues in infrastructure managed by your organization or your network provider. | WebSocket | All or any Microsoft 365 Copilot scenario, Real-time collaboration using Office apps.  | Check your network devices or web proxy infrastructure to ensure WebSocket protocol is allowed for connections to hosts in the wildcard domain `*.cloud.microsoft` or its subdomains.                                             |
+| 3   | User connections to Microsoft 365 domains are being TLS intercepted and decrypted by a network intermediary | We detected the use of non-Microsoft 365 issued certificates for connections to Microsoft 365 services, indicating decryption and potential alteration of data connections between clients and Microsoft 365 services. | Some or all users maybe experiencing TLS break and inspect for connections to Microsoft 365 domains or hosts due to network configuration in infrastructure managed by your organization or your network provider. | HTTPS     | All or any service part of Microsoft 365                                               | We recommend working with your network team or solution provider to update network configurations and ensure that traffic to Microsoft 365 domains is exempt from TLS interception and decryption at the network layer.           |
 
-- [Exchange sampled connections affected by connectivity issues](#exchange-sampled-connections-affected-by-connectivity-issues)
-- [SharePoint sampled connections affected by connectivity issues](#sharepoint-sampled-connections-affected-by-connectivity-issues)
+## FAQs: Microsoft 365 Unified domains and Network Connectivity Insights
 
-These insights also appear in the productivity score pages.
+### 1. What is the unified domain for Microsoft 365 apps and services?
 
-## Backhauled network egress
+Microsoft announced the transition to a unified domain—**`cloud.microsoft`**—for Microsoft 365 apps and services over two years ago. This change simplifies domain management and improves connectivity across Microsoft 365. Unified domain consolidates authenticated user-facing Microsoft 365 experiences onto a single domain (cloud.microsoft) benefiting customers in several ways. For end users, it will streamline the overall experience by reducing sign-in prompts, redirects, and delays when navigating across apps. For admins, it will drastically reduce the complexity of the allow-lists required to help your tenant stay secure while enabling users to access the apps and services they need to do their work.
 
-This insight displays if the network insights service detects that the distance from a given user location to the network egress is greater than 500 miles (800 kilometers). This might indicate that Microsoft 365 traffic is being backhauled to a common Internet edge device or proxy.
+References for cloud.microsoft announcements:
+[https://techcommunity.microsoft.com/t5/microsoft-365-blog/introducing-cloud-microsoft-a-unified-domain-for-microsoft-365/ba-p/3826287](https://techcommunity.microsoft.com/t5/microsoft-365-blog/introducing-cloud-microsoft-a-unified-domain-for-microsoft-365/ba-p/3826287)
 
-This insight is abbreviated as "Egress" in some summary views.
+  
+---
 
-:::image type="content" alt-text="Screenshot shows the insight for backhauled network egress." source="../media/m365-mac-perf/m365-mac-perf-insights-detail-backhauled.png":::
+### 2. What happens if connections to unified domains are blocked?
+Blocking connectivity to unified domains such as:
+- `*.cloud.microsoft`
+- `*.static.microsoft`
+- `*.usercontent.microsoft`
 
-### What does this mean?
+...can impact **any or all Microsoft 365 applications and services**. These domains are essential for proper functionality, including features like Microsoft Copilot.
 
-This identifies that the distance between the office location and the network egress is more than 500 miles (800 kilometers). The office location is identified by an obfuscated client machine location and the network egress location is identified by using reverse IP Address to location databases. The office location might be inaccurate if Windows Location Services is disabled on machines. The network egress location might be inaccurate if the reverse IP address database information is inaccurate.
+---
 
-Details for this insight include:
+### 3. What does the term "location" mean in the Connectivity report or network Insight?
+The location label (e.g., “Singapore” or "Redmond, WA") typically refers to either:
 
-- Office location
-- Estimated percentage of total tenant user at the location
-- Current network egress location
-- Relevance of the egress location
-- Distance between the location and the current egress point
-- The date the condition was first detected
-- The date the condition was resolved
+- The **office location** of the user, or
+- The **network egress point** (i.e., where traffic exits your network onto Internet to reach Microsoft services)
 
-### What should I do?
+This information helps identify where connectivity issues are occurring.
 
-We recommend network egress as close as possible to the office location. Microsoft 365 traffic should route optimally to Microsoft's global network and to the nearest Microsoft 365 service front door. Having close network egress to users office locations also allows for improved performance as Microsoft expands both network points of presence and Microsoft 365 service front doors in the future.
+---
 
-For more information about how to resolve this issue, see [Egress network connections locally](microsoft-365-network-connectivity-principles.md#egress-network-connections-locally) in [Microsoft 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md).
+### 4. Where can I find more details about network connectivity issues?
+Visit the **[Network Connectivity page in the Microsoft 365 Admin Center](https://admin.cloud.microsoft/#/networkperformance)**. It provides:
+- List of office locations discovered for your tenant users
+- Egress IP address ranges per office location
+- network Insights detected per location
 
-## Network intermediary device
+---
 
-This insight displays if we detected devices between your users and Microsoft's network. We recommend that latency-sensitive Microsoft 365 network traffic bypass such devices. This recommendation is additionally described in [Microsoft 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md).
+### 5. What does “egress IP address ranges” mean?
 
-One network intermediary insight we show is SSL break and inspection when network intermediary devices intercept and decrypt critical Microsoft 365 network endpoints for Exchange, SharePoint, and Teams.
+These are the **public IP addresses** from which Microsoft 365 sees your network traffic. They help you understand:
+- How your network connections to Microsoft 365 are NATed (Network Address Translated)
 
-### What does this mean?
+- The path your traffic takes to reach Microsoft 365 services
 
-Network intermediary devices such as proxy servers, VPNs, and data loss prevention devices can affect performance and stability of Microsoft 365 clients where traffic is intermediated.
+---
 
-### What should I do?
+### 6. What does Microsoft test for in connectivity checks?
+We test for the following:
+- **TCP 443 and HTTPS** connectivity to key Microsoft 365 domains
+- **WebSocket protocol** connectivity (required for Microsoft Copilot)
+- **The use of non-Microsoft 365-issued certificates on connections to Microsoft 365 services** which may indicate TLS interception, decryption, inspection, and potential alteration of data traffic between clients and Microsoft 365 services within your tenant environment.
 
-Configure the network intermediary device that was detected to bypass processing for Microsoft 365 network traffic.
+Based on these test results, issues are flagged as network Insights along with Service Health notifications.
 
-## Better performance detected for customers near you
+---
 
-This insight displays if the network insights service detects that a significant number of customers in your metro area have better performance than users at this office location.
+### 7. Does Microsoft’s connectivity insight include user or device context?
+No. The insights are **network-focused only**. Our network tests do not collect or include:
+- User identities
+- Device details
+- Licensing information
 
-This insight is abbreviated as "Peers" in some summary views.
+---
 
-> [!div class="mx-imgBorder"]
-> ![Relative network performance.](../media/m365-mac-perf/m365-mac-perf-insights-detail-cust-near-you.png)
+### 8. Does Microsoft’s connectivity insight apply only to licensed users? For example, does Microsoft test for WebSocket connection only for licensed Copilot users?
+No. Our network tests apply to all users irrespective of their licensing status for Microsoft 365 services. 
 
-### What does this mean?
-
-This insight examines the aggregate performance of Microsoft 365 customers in the same city as this office location. This insight displays if the average latency of your users is 10% greater than the average latency of neighboring tenants.
-
-### What should I do?
-
-There could be many reasons for this condition, including latency in your corporate network or ISP, bottlenecks, or architecture design issues. Examine the latency between each hop in the route between your office network and the current Microsoft 365 front door. For more information, see [Microsoft 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md).
-
-## Use of a nonoptimal Exchange Online service front door
-
-This insight displays if the network insights service detects that users in a specific location aren't connecting to an optimal Exchange Online service front door.
-
-This insight is abbreviated as "Routing" in some summary views.
-
-> [!div class="mx-imgBorder"]
-> ![Non-optimal EXO front door.](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-exo.png)
-
-### What does this mean?
-
-We list Exchange Online service front doors that are suitable for use from the office location city. If the current test shows use of an Exchange Online service front door not on this list, then we make this recommendation.
-
-### What should I do?
-
-Network backhaul might cause use of a nonoptimal Exchange Online service front door, in which case we recommend local and direct network egress. If you have implemented a remote DNS Recursive Resolver server, we recommend aligning the server configuration with the network egress.
-
-## Use of a nonoptimal SharePoint service front door
-
-This insight displays if the network insights service detects that users in a specific location aren't connecting to the closest SharePoint service front door.
-
-This insight is abbreviated as "Afd" in some summary views.
-
-:::image type="content" alt-text="Screenshot of a summary view for a nonoptimal SPO front door usage." source="../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-spo.png":::
-
-### What does this mean?
-
-We identify the SharePoint service front door that the test client is connecting to, and then we compare the office location city to the expected SharePoint service front door for that city. If the test client service front door and the expected service front door match, we recommend connecting to a SharePoint service front door closer to the office location.
-
-### What should I do?
-
-Network backhaul before the corporate network egress could cause nonoptimal SharePoint service front door use. If so, try local and direct network egress. Nonoptimal SharePoint service front door use could also be caused by a remote DNS Recursive Resolver server, in which case we recommend aligning the DNS Recursive Resolver server with the network egress.
-
-## Low download speed from SharePoint front door
-
-This insight displays if the network insights service detects that bandwidth between the specific office location and SharePoint is less than 1 MBps.
-
-This insight is abbreviated as "Throughput" in some summary views.
-
-### What does this mean?
-
-The download speed that a user can get from SharePoint and OneDrive service front doors is measured in megabytes per second (MBps). If this value is less than 1 MBps, then we provide this insight.
-
-### What should I do?
-
-To improve download speeds, your organization might need to increase bandwidth. Alternatively, network congestion might exist between computers at the office location and the SharePoint service front door. This condition restricts the download speed available to users even if sufficient bandwidth is available.
-
-## China user optimal network egress
-
-This insight displays if your organization has users in China connecting to your Microsoft 365 tenant in other geographic locations.
-
-### What does this mean?
-
-If your organization has private WAN connectivity, we recommend configuring a network WAN circuit from your office locations in China that have network egress to the Internet in any of the following locations:
-
-- Hong Kong Special Administrative Region
-- Japan
-- Taiwan
-- South Korea
-- Singapore
-- Malaysia
-
-Internet egress farther away from users than these locations reduces performance, and egress in China might cause high latency and connectivity issues due to cross-border congestion.
-
-### What should I do?
-
-For more information about how to mitigate performance issues related to this insight, see [Microsoft 365 global tenant performance optimization for China users](microsoft-365-networking-china.md).
-
-## Exchange sampled connections affected by connectivity issues
-
-This insight shows when 50% or more of the sampled connections are affected. The impact is defined by the Exchange assessment being below 60% for each sample.
-
-### What does this mean?
-
-This insight indicates that most of your users likely experience issues with Outlook connecting to Exchange Online. The percentage of samples represents the percentage of users below 60 points.
-
-### What should I do?
-
-Enable office location network connectivity visibility if you haven't already done so. Identify which offices are affected by poor network connectivity and find ways to improve the network perimeter at each that connects the users to Microsoft's network.
-
-## SharePoint sampled connections affected by connectivity issues
-
-This insight shows when 50% or more of the sampled connections are affected. The impact is defined by the SharePoint assessment being below 40% for each sample.
-
-### What does this mean?
-
-This insight indicates that most of your users are likely experiencing issues with SharePoint and OneDrive. The percentage of samples represents the percentage of users who show below 40 points.
-
-### What should I do?
-
-Enable office location network connectivity visibility if you haven't already done so. Identify which offices are affected by poor network connectivity and find ways to improve the network perimeter at each that connects the users to Microsoft's network.
+---
 
 ## Related articles
 

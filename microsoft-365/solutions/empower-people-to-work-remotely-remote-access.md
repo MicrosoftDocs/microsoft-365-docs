@@ -7,7 +7,7 @@ ms.author: bcarter
 manager: dansimp
 ms.date: 05/01/2020
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:

@@ -3,9 +3,9 @@ title: "View Microsoft 365 account license and service details with PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 01/24/2024
+ms.date: 10/17/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: medium
@@ -38,7 +38,7 @@ For more information about licensing plans, license, and services, see [View lic
 
 ## View account license and service details using Microsoft Graph PowerShell
 
-First, [connect to your Microsoft 365 tenant](/graph/powershell/get-started#authentication).
+First, [connect to your Microsoft 365 tenant](/powershell/microsoftgraph/get-started?view=graph-powershell-1.0#authentication).
 
 Reading user properties including license details requires the **User.Read.All** permission scope or one of the other permissions listed in the ['Get a user' Graph API reference page](/graph/api/user-get).
 

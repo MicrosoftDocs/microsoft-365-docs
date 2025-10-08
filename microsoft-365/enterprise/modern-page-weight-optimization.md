@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 ms.date: 06/28/2024
 audience: ITPro
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: medium
@@ -78,8 +78,6 @@ Before you make page revisions to remediate performance issues, make a note of t
 ## Related topics
 
 [Tune SharePoint performance](tune-sharepoint-online-performance.md)
-
-[Tune Office 365 performance](tune-microsoft-365-performance.md)
 
 [Performance in the modern SharePoint experience](/sharepoint/modern-experience-performance)
 

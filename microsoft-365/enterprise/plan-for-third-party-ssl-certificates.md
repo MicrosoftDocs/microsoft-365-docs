@@ -4,8 +4,8 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 audience: ITPro
-ms.date: 03/21/2024
-ms.topic: conceptual
+ms.date: 02/12/2025
+ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: medium
@@ -77,4 +77,5 @@ This article describes the certificates you might need to install on your infras
   
 ## See also
 
-[Microsoft 365 Enterprise overview](microsoft-365-overview.md)
+- [Microsoft 365 Enterprise overview](microsoft-365-overview.md)
+- [Network planning and performance tuning for Microsoft 365](./network-planning-and-performance.md)

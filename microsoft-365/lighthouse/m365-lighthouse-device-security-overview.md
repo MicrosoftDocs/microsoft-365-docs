@@ -1,13 +1,13 @@
 ---
 title: "Overview of the Device security page in Microsoft 365 Lighthouse"
 f1.keywords: NOCSH
-ms.author: sharik
+ms.author: dansimp
 author: SKjerland
 manager: scotv
-ms.reviewer: ragovind
+ms.reviewer: prpath
 ms.date: 10/27/2023
 audience: Admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:

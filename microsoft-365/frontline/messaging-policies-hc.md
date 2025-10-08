@@ -1,10 +1,10 @@
 ---
 title: Messaging policy settings for healthcare organizations using Microsoft Teams
 author: lana-chin
-ms.author: v-chinlana
+ms.author: jtremper
 manager: jtremper
 audience: ITPro
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-365-frontline
 search.appverid: MET150
 searchScope:

@@ -3,7 +3,7 @@ title: "Manage Microsoft 365 user account passwords"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 01/24/2024
+ms.date: 12/06/2024
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-enterprise

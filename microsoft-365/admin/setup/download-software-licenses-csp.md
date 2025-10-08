@@ -5,25 +5,27 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: sinakassaw, nicholak
+ms.reviewer: rabhange
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- operations-pod
 search.appverid: MET150
 ms.custom:
 - commerce_licensing
 - AdminSurgePortfolio
 - admindeeplinkMAC
+- GAUpdates
 description: Learn how to download the software and product license keys for perpetual software bought through the Cloud Solution Provider (CSP) program.
-ms.date: 01/09/2024
+ms.date: 07/08/2025
 ---
 
 # Download perpetual software and product license keys in Microsoft 365
@@ -32,10 +34,13 @@ This article explains how to download software and product license keys for perp
 
 ## Before you begin
 
-You must be a Global admin to do the steps in this article. For more information, see [About admin roles](../add-users/about-admin-roles.md).
+- You must be a Global Administrator to do the steps in this article. For more information, see [About admin roles](../add-users/about-admin-roles.md).
+- If you're a partner who's an admin on behalf of (AOBO) a customer, you must sign in to the customer's organization with an admin account created in the organization.
+- If there are multiple billing accounts, you must select the account that the product was purchased on.
+  For more information, see [Select a default billing account](../../commerce/manage-billing-accounts.md).
+- If you don't have access to the billing account, you must self elevate. For more information, see [No billing account found for buying products](../../commerce/no-billing-account-found.md).
 
-> [!NOTE]
-> If you're a partner who's an admin on behalf of (AOBO) a customer, you must sign in to the customer's organization with an admin account created in the organization.
+[!INCLUDE [ga-roles-limitation](../../includes/ga-roles-limitation.md)]
 
 ## Download software and product license keys
 

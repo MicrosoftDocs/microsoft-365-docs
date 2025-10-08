@@ -3,7 +3,7 @@ title: "Manage Microsoft 365 groups"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 02/20/2024
+ms.date: 12/09/2024
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-enterprise
@@ -45,7 +45,6 @@ You create and manage groups with:
 - [The Microsoft 365 admin center](/admin)
 - PowerShell
   - [Manage Microsoft 365 groups with PowerShell](manage-microsoft-365-groups-with-powershell.md)
-  - [Maintain security group membership with PowerShell](maintain-group-membership-with-microsoft-365-powershell.md)
 - [Microsoft Entra admin center](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
 
 ### Hybrid

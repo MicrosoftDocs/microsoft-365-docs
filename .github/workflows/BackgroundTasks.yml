@@ -6,9 +6,11 @@ permissions:
   
 on:
   pull_request_target:
+    types: [opened, synchronize, reopened, ready_for_review]
 
 jobs:
   upload:
+    if: github.repository_owner == 'MicrosoftDocs'
     runs-on: ubuntu-latest
 
     steps:

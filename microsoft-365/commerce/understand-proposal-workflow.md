@@ -4,26 +4,29 @@ f1.keywords:
 - CSH
 author: cmcatee-MSFT
 ms.author: cmcatee
-manager: scotv
-ms.reviewer: mijeffer, nicholak
+manager: dansimp
+ms.reviewer: titung, jasoni
 audience: Admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-365-business
-ms.subservice: m365-commerce-acquisition
+ms.subservice: m365-commerce-volume-licensing
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
-ms.custom: 
-- commerce_subscriptions
+- operations-pod
+ms.custom:
+- commerce_purchase
 - AdminSurgePortfolio
 - admindeeplinkMAC
-search.appverid: MET150 
+- GAUpdates
+- campaignIDs-batch2
+search.appverid: MET150
 description: "Learn about the proposal workflow used when you buy Microsoft business products and services. Discover how to review and approve proposals."
 ROBOTS: NOINDEX
-ms.date: 11/29/2023
+ms.date: 05/01/2025
 ---
 
 # Understand the Microsoft proposal workflow
@@ -42,7 +45,9 @@ Before you can buy items for a proposal, you must have a billing account and an 
 
 You use a billing account to manage your account settings, invoices, billing profiles, and products and services. If you don't already have a billing account, your Microsoft representative creates one for you. Otherwise, they use an existing billing account for your organization, so long as you have permission to use that billing account.
 
-Billing account permissions are managed by the billing account owner. Global admins can assign themselves to the billing account owner role, and then make other people billing account owners.
+Billing account permissions are managed by the Billing account owner. Global Administrators can assign themselves to the Billing account owner role, and then make other people Billing account owners.
+
+[!INCLUDE [ga-roles-limitation](../includes/ga-roles-limitation.md)]
 
 For more information about billing accounts, see [Understand your Microsoft business billing account](manage-billing-accounts.md).
 
@@ -52,9 +57,9 @@ The Microsoft Customer Agreement (MCA) lets an organization buy Microsoft produc
 
 ## Permissions needed to sign an agreement or pay for items
 
-You must be a billing account owner or billing account contributor to successfully sign an agreement or buy products and services. If you're a Global admin but don't have one of those roles, you can assign the roles to yourself. If you're not a Global admin, ask your Global admin, or billing account owner to assign one of the roles to you.
+You must be a billing account owner or billing account contributor to successfully sign an agreement or buy products and services. If you're a Global Administrator but don't have one of those roles, you can assign the roles to yourself. If you're not a Global Administrator, ask your Global Administrator or Billing account owner to assign one of the roles to you.
 
-The billing account owner and billing account contributor roles are assigned by using either of the following methods.
+The Billing account owner and Billing account contributor roles are assigned by using either of the following methods.
 
 ### Assign roles in the Microsoft 365 admin center
 
@@ -96,6 +101,7 @@ The following table contains terms and definitions that appear in your proposal 
 
 | Term | Definition |
 |---|---|
+| Accounts Payable Contact | The contact to which Microsoft sends invoices, statements and payment reminders. |
 | Billing account | An account used to manage your account settings, invoices, payment methods, and products. |
 | Billing profile | Information about your organization that lets you customize what items are included on your invoice, and how you pay for your invoices. The billing profile includes the billing account name, the payment methods used for the specific billing profile, contact information, invoice settings, and permissions that let you change the billing profile, pay bills, and buy products and services. |
 | Existing agreements | Any agreement that your organization already has in place with Microsoft. The agreements can include, but aren't limited to, an Enterprise Agreement, Microsoft Product & Services Agreement, or Microsoft Customer Agreement. |
@@ -114,13 +120,6 @@ After you sign in, the first thing you do is review your organization's informat
 The **Your organization** section displays the billing account associated with it. The billing account information is either pulled from an existing billing account or created for you by the Microsoft representative. If your organization is an affiliate of another organization, you also see a **Lead organization** section with the name and address of that organization.
 
 If this order is the first time your organization is establishing a commercial relationship with Microsoft, and you haven't signed an MCA, if the information under **Your organization** or **Lead organization** is incorrect, contact the representative to make changes for you. After you accept an MCA, you can review and change your organization's address and contact information on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing accounts</a> page in the Microsoft 365 admin center. If your organization name changes, open a support request to update it. [Learn how to open a support request](../admin/get-help-support.md).
-
-### Your information
-
-If you're a new customer, enter your name, email address, and phone number under **Your information**, then select **Save**. If you're an existing customer, verify that your information is correct. To make any corrections, select **Edit**, make the necessary changes, then select
-**Save**.
-
-When you're ready, select **Continue** to move to the next step.
 
 ## Step 2: Review proposal
 
@@ -150,6 +149,14 @@ After you sign any necessary agreements or supplemental terms, select **Go to ch
 ### Understand invoicing for future start dates
 
 Sales proposals might include subscriptions that start on a future date. A future start date aligns the start date of a new subscription with the end date of a previous subscription. If your proposal contains subscriptions that start on a future date, you receive an invoice for those subscriptions only when the future start date arrives. Using a future start date ensures that you aren't billed for items that you don't own yet. New subscriptions start on the future start date specified in the proposal. On the start date of the new subscription, we send you an email to let you know that your new subscription is now active and your billing for this subscription begins immediately. Your next invoice reflects the new charges plus applicable taxes for the new subscription.
+
+### Understand renewal options
+
+When a subscription term ends, you have three renewal paths:
+
+1. **Cancel**: The subscription ends at expiration without renewal.
+2. **Standard renewal**: The subscription renews for the same duration and terms as the original subscription.
+3. **Extended service term**: The subscription renews for a shorter duration, like monthly, and a price increase might apply.
 
 ## Step 3: Checkout
 

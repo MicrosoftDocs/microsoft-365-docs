@@ -4,19 +4,20 @@ f1.keywords:
 - NOCSH
 ms.author: kwekua
 author: kwekuako
-manager: scotv
-ms.date: 08/21/2023
+manager: dansimp
+ms.date: 10/02/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: 
+- operations-pod
+ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
@@ -33,9 +34,9 @@ For more information about changing user contact information or removing former 
   
 ## Update your phone number
   
-1. Browse to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
-2.Go to **Users** > **Active users**.
+2. Go to **Users** > **Active users**.
 
 3. Select your admin account and choose **Manage contact information** under **Contact information**.
 
@@ -45,7 +46,7 @@ For more information about changing user contact information or removing former 
   
 1. Browse to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
-2.Go to **Users** > **Active users**.
+2. Go to **Users** > **Active users**.
 
 3. Select your admin account and choose **Manage username and email** under **Username and email**.
 
@@ -60,6 +61,5 @@ For answers to billing questions, see:
 ## Related content
 
 [Change a user name and email address](../add-users/change-a-user-name-and-email-address.md) (video)\
-[Add a new employee](../add-users/add-new-employee.md) (video)\
 [Remove a former employee](../add-users/remove-former-employee.md) (video)\
 [Access and back up a former user's data](../add-users/get-access-to-and-back-up-a-former-user-s-data.md) (article)

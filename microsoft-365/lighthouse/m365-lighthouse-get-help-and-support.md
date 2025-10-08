@@ -1,11 +1,11 @@
 ---
 title: "Get help and support for Microsoft 365 Lighthouse"
 f1.keywords: CSH
-ms.author: sharik
+ms.author: dansimp
 author: SKjerland
 manager: scotv
 ms.reviewer: crimora
-ms.date: 12/13/2023
+ms.date: 02/24/2025
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-lighthouse
@@ -65,7 +65,7 @@ If you're experiencing an issue that isn't listed in any of these resources, the
 2. In the **Help** pane, select the **Help + support** button. This opens the **How can we help?** pane.
 
     > [!NOTE]
-    > If the **How can we help?** pane doesn't open, you'll need to reach out to someone in your partner tenant who has appropriate permissions and ask them to help.
+    > If the **How can we help?** pane doesn't open, you'll need to reach out to an admin in your partner tenant and ask them to help.
 
 3. In the **How can we help?** pane, enter a description of your issue, and then press **Enter**. We recommend including the full product name *Microsoft 365 Lighthouse* in your description to ensure the search results include relevant help articles.
 

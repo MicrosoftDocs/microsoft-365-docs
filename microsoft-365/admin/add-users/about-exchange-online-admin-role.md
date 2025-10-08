@@ -2,21 +2,22 @@
 title: "About the Exchange Administrator role"
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 ms.date: 06/03/2024
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier2
 - scotvorg
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
 - must-keep
-ms.custom: 
+- trust-pod
+ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkEXCHANGE
 search.appverid:

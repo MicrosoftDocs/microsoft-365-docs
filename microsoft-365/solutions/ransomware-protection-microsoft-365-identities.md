@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 ms.date: 07/16/2021
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
@@ -39,7 +39,7 @@ Next, implement the [Common identity and device access policies](/microsoft-365/
 
 For user sign-ins, these policies include:
 
-- Requiring multi-factor authentication (MFA) for [priority accounts](/microsoft-365/admin/setup/priority-accounts) (immediately) and eventually all user accounts.
+- Requiring multi-factor authentication (MFA) for [priority accounts](/microsoft-365/admin/security-and-compliance/priority-accounts) (immediately) and eventually all user accounts.
 - Requiring high-risk sign-ins to use MFA.
 - Requiring high-risk users with high-risk sign-ins to change their passwords.
 

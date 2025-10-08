@@ -5,7 +5,7 @@ ms.date: 08/12/2020
 ms.service: microsoft-365-enterprise
 ms.reviewer: "serdars"
 ms.custom: ""
-ms.topic: conceptual
+ms.topic: article
 author: "samanro"
 ms.author: "samanro"
 manager: pamgreen

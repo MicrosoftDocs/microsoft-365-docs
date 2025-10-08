@@ -2,26 +2,26 @@
 title: "Migrate Google files to Microsoft 365 for business"
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
-manager: scotv
+ms.author: heidip
+author: MicrosoftHeidi
+manager: dansimp
 ms.date: 05/31/2024
 audience: Admin
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
 - highpri
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
 - must-keep
-ms.custom: 
+ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 - adminvideo
-monikerRange: 'o365-worldwide'
+monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
@@ -38,7 +38,7 @@ description: "Learn how to migrate Google files to Microsoft 365 for business by
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198217).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWSx43?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=521941e5-33c4-402c-85c2-1abee2d3854b]
 
 > [!NOTE]
 > Migration Manager will make a copy of the files and move the copies to Microsoft 365 for business. The original files will stay in Google Drives also.

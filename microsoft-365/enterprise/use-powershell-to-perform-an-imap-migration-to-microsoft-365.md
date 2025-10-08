@@ -3,9 +3,9 @@ title: "Use PowerShell to perform an IMAP migration to Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 04/12/2024
+ms.date: 03/12/2025
 audience: Admin
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: medium
@@ -169,7 +169,7 @@ New-MigrationEndpoint -IMAP -Name IMAPEndpoint -RemoteServer imap.contoso.com -P
 50 -MaxConcurrentIncrementalSyncs 25
 ```
 
-For more information about the **New-MigrationEndpoint** cmdlet, see[New-MigrationEndpoint](/powershell/module/exchange/new-migrationendpoint).
+For more information about the **New-MigrationEndpoint** cmdlet, see[New-MigrationEndpoint](/powershell/module/exchangepowershell/new-migrationendpoint).
 
 #### Verify it worked
 
@@ -181,7 +181,7 @@ Get-MigrationEndpoint IMAPEndpoint | Format-List EndpointType,RemoteServer,Port,
 
 ### Step 4: Create and start an IMAP migration batch
 
-You can use the [New-MigrationBatch](/powershell/module/exchange/new-migrationbatch) cmdlet to create a migration batch for an IMAP migration. You can create a migration batch and start it automatically by including the _AutoStart_ parameter. Alternatively, you can create the migration batch and then start it afterwards by using the[Start-MigrationBatch](/powershell/module/exchange/start-migrationbatch) cmdlet.
+You can use the [New-MigrationBatch](/powershell/module/exchangepowershell/new-migrationbatch) cmdlet to create a migration batch for an IMAP migration. You can create a migration batch and start it automatically by including the _AutoStart_ parameter. Alternatively, you can create the migration batch and then start it afterwards by using the[Start-MigrationBatch](/powershell/module/exchangepowershell/start-migrationbatch) cmdlet.
 
 The following Exchange Online PowerShell command will automatically start the migration batch called "IMAPBatch1" using the IMAP endpoint called "IMAPEndpoint":
 
@@ -191,7 +191,7 @@ New-MigrationBatch -Name IMAPBatch1 -SourceEndpoint IMAPEndpoint -CSVData ([Syst
 
 #### Verify it worked
 
-Run the [Get-MigrationBatch](/powershell/module/exchange/get-migrationbatch) cmdlet to display information about the "IMAPBatch1":
+Run the [Get-MigrationBatch](/powershell/module/exchangepowershell/get-migrationbatch) cmdlet to display information about the "IMAPBatch1":
 
 ```powershell
 Get-MigrationBatch -Identity IMAPBatch1 | Format-List
@@ -225,7 +225,7 @@ To delete the "IMAPBatch1" migration batch from Exchange Online PowerShell, run 
 Remove-MigrationBatch -Identity IMAPBatch1
 ```
 
-For more information about the **Remove-MigrationBatch** cmdlet, see[Remove-MigrationBatch](/powershell/module/exchange/remove-migrationbatch).
+For more information about the **Remove-MigrationBatch** cmdlet, see[Remove-MigrationBatch](/powershell/module/exchangepowershell/remove-migrationbatch).
 
 #### Verify it worked
 
@@ -237,7 +237,7 @@ Get-MigrationBatch IMAPBatch1"
 
 The command will return either the migration batch with a status of **Removing**, or it will return an error stating that migration batch couldn't be found, verifying that the batch was deleted.
 
-For more information about the **Get-MigrationBatch** cmdlet, see[Get-MigrationBatch](/powershell/module/exchange/get-migrationbatch).
+For more information about the **Get-MigrationBatch** cmdlet, see[Get-MigrationBatch](/powershell/module/exchangepowershell/get-migrationbatch).
 
 ## See also
 

@@ -2,22 +2,23 @@
 title: "Microsoft Adoption Score"
 f1.keywords:
 - NOCSH
-ms.author: camillepack
+ms.author: cmcatee
 author: camillepack
-manager: scotv
+manager: dansimp
 ms.date: 12/14/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: high
-monikerRange: 'o365-worldwide'
-ms.collection: 
+monikerRange: o365-worldwide
+ms.collection:
 - Tier2
 - scotvorg
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: 
+- operations-pod
+ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
@@ -32,7 +33,7 @@ Adoption Score supports the journey to digital transformation with insights abou
 
 ## Watch: Adoption Score overview
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE53oqt?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=0c5dfe1d-cba4-4bee-91d1-f58730d0c68a]
 
 It provides:
 

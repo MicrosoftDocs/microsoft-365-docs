@@ -2,26 +2,28 @@
 title: "Move your files to OneDrive"
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
-manager: scotv
+ms.author: kwekua
+author: kwekuako
+manager: dansimp
 ms.date: 12/15/2023
 audience: Admin
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier2
 - scotvorg
 - highpri
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
-ms.custom: 
+- operations-pod
+ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 description: "Learn how to move your files to OneDrive."
 ---
+
 # Move files to OneDrive for Business
 
 Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
@@ -38,7 +40,7 @@ After you sign up for a Microsoft 365 for business subscription, you'll want to 
 
 In this video, we'll show you how to move your OneDrive files from Microsoft 365 Family folder to your Microsoft 365 for business OneDrive folder.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSH]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=2908d3b4-bf17-4bd9-bedf-342d90bd3f66]
 
 ## Steps
 

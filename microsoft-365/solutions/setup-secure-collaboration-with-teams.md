@@ -5,7 +5,7 @@ author: jacktremper
 manager: pamgreen
 ms.date: 12/04/2023
 ms.audience: ITPro
-ms.topic: article
+ms.topic: solution-overview
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
@@ -31,7 +31,7 @@ This guidance includes components to help you:
 - Deploy Teams with the right level of protection for each project
 - Configure external sharing with appropriate security settings for each project
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxMmL?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=22bcbb04-69a4-4dac-8f48-a0511cbcb384]
 
 If versatile and easy-to-use file collaboration tools aren't available, users will often collaborate by emailing documents. This is a tedious and error-prone method of collaboration, and can increase the risk of inappropriate sharing of information. If people find sharing files too difficult, they could revert to using consumer products that aren't governed by IT. This can pose an even greater risk.
 

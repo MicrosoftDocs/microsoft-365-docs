@@ -4,27 +4,30 @@ f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
-manager: scotv
+manager: dansimp
 ms.reviewer: jkinma, ramagane
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-management
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
-ms.custom: 
+- operations-pod
+ms.custom:
 - commerce_billing
 - okr_SMB
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
+- GAUpdates
+- campaignIDs-batch2
 search.appverid: MET150
 description: "Learn how to change your billing address for Microsoft 365 for business."
-ms.date: 02/16/2024
+ms.date: 09/29/2025
 ---
 
 # Change the billing addresses for your Microsoft business subscription
@@ -40,11 +43,11 @@ In most cases, these addresses are the same. If you need to change one or more o
 ## Before you begin
 
 - [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
-- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a billing account owner or contributor, or a billing profile owner or contributor to do the tasks in this article. For more information about billing account and billing profile roles, see [Understand your Microsoft business billing account](../manage-billing-accounts.md) and [Manage your Microsoft business billing profiles](manage-billing-profiles.md).
-- If you have a Microsoft Online Services Agreement (MOSA) billing account type, you must be a global or billing admin to do the tasks in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a Billing account owner or contributor, or a Billing profile owner or contributor to do the tasks in this article. For more information about billing account and billing profile roles, see [Understand your Microsoft business billing account](../manage-billing-accounts.md) and [Manage your Microsoft business billing profiles](manage-billing-profiles.md).
+- If you have a Microsoft Online Services Agreement (MOSA) billing account type, you must be at least a Billing Administrator to do the tasks in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
 > [!NOTE]
-> If you're the person who signed up for the subscription, you're automatically a billing account owner or global admin.
+> If you're the person who signed up for the subscription, you're automatically a Billing account owner.
 
 > [!IMPORTANT]
 > You can't change the country/region for your subscription. That's because the country/region where your organization is headquartered determines which services are available to you, the taxes and billing currency, and the location of the data center. To change your organization's country/region, sign up for a new account, choose the desired country/region, and buy a new subscription.
@@ -81,11 +84,22 @@ You can change your **Bill to** address in the Microsoft 365 admin center. Howev
 
 ## Change your service usage address
 
-If you have an MOSA billing account type, you can change the service usage address for a subscription. What type of billing account do I have?
+You can change the service usage address for a subscription. [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
+
+**If you have an MCA billing account type:**
+
+1. In the [admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339""), go to the **Billing** > [Billing accounts](https://go.microsoft.com/fwlink/p/?linkid=2102895"") page.
+1. On the **Overview** tab, select a billing account.
+1. On the billing account details page, select the **Billing profiles** tab. The tab lists all billing profiles associated with the selected billing account.
+1. Select a billing profile name to view its details page.
+1. On the billing profile details page, under **Ship-to address** select **Edit**.
+1. In the **Edit ship-to address** pane, update your organization information, then select **Save**.
+
+**If you have an MOSA billing account type:**
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
-   - If you’re using the **Simplified view**, select **Billing**.
-   - If you’re using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+   - If you're using the **Simplified view**, select **Billing**.
+   - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. Select the subscription to change.
 3. On the subscription details page, in the **Service usage address** section, select **Edit service usage address**.
 4. In the **Edit service usage address** pane, update your address, then select **Save**.
@@ -95,4 +109,4 @@ If you have an MOSA billing account type, you can change the service usage addre
 [View your invoice in the Microsoft 365 admin center](view-your-bill-or-invoice.md) (article)\
 [Understand your invoice for your Microsoft MCA billing account](understand-your-invoice.md) (article)\
 [Understand your invoice for your Microsoft MOSA billing account](understand-your-invoice2.md) (article)\
-[Payment options for your Microsoft business subscription](pay-for-your-subscription.md) (article)\
+[Payment options for your Microsoft business subscription](pay-for-your-subscription.md) (article)

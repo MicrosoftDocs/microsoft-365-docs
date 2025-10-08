@@ -3,9 +3,10 @@ title: "Configure Exchange Server to use Hybrid Modern Auth"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 02/01/2024
+ms.reviewer: ninob
+ms.date: 12/05/2024
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: medium
@@ -67,12 +68,12 @@ In this section, we provide information and steps that need to be done to succes
 
 ### Exchange Server specific prerequisites
 
-Your Exchange servers must fulfill the following requirements before Hybrid Modern Authentication can be configured and enabled. In case you have a hybrid configuration, you must run the latest Cumulative Update (CU) to be in a supported state. You can find the supported Exchange Server versions and build in the [Exchange Server supportability matrix](/exchange/plan-and-deploy/supportability-matrix#supported-versions-and-builds).
+Your Exchange servers must fulfill the following requirements before Hybrid Modern Authentication can be configured and enabled. In case you have a hybrid configuration, you must run the latest Cumulative Update (CU) to be in a supported state. You can find the supported Exchange Server versions and build in the [Exchange Server supportability matrix](/exchange/plan-and-deploy/supportability-matrix#supported-versions-and-builds). Hybrid Modern Authentication must be configured uniformly across all Exchange servers within your organization. Partial implementation, where HMA is enabled on only a subset of servers, is not supported.
 
 - Make sure that there are no end-of-life Exchange servers in the organization.
 - Exchange Server 2016 must be running CU8 or later.
 - Exchange Server 2019 must be running CU1 or later.
-- Make sure that all servers can connect to the internet. If a proxy is required, [configure Exchange Server to use it](/powershell/module/exchange/set-exchangeserver#-internetwebproxy).
+- Make sure that all servers can connect to the internet. If a proxy is required, [configure Exchange Server to use it](/powershell/module/exchangepowershell/set-exchangeserver#-internetwebproxy).
 - If you already have a hybrid configuration, make sure it's a classic hybrid deployment as modern hybrid doesn't support HMA.
 - Make sure that SSL Offloading is not used (it's unsupported). SSL Bridging, however, can be used and is supported.
 
@@ -129,16 +130,17 @@ Run the commands that assign your on-premises web service URLs as Microsoft Entr
    Get-MgServicePrincipal -Filter "AppId eq '00000002-0000-0ff1-ce00-000000000000'" | select -ExpandProperty ServicePrincipalNames
    ```
 
-   Note down the output of this command, which should include an `https://*autodiscover.yourdomain.com*` and `https://*mail.yourdomain.com*` URL, but mostly consist of SPNs that begin with `00000002-0000-0ff1-ce00-000000000000/`. If there are `https://` URLs from your on-premises that are missing, those specific records should be added to this list.
+   Take note of (and screenshot for later comparison) the output of this command, which should include an `https://*autodiscover.yourdomain.com*` and `https://*mail.yourdomain.com*` URL, but mostly consist of SPNs that begin with `00000002-0000-0ff1-ce00-000000000000/`. If there are `https://` URLs from your on-premises Exchange Server organization that are missing, those specific records should be added to this list.
 
-5. If you don't see your internal and external `MAPI/HTTP`, `EWS`, `ActiveSync`, `OAB`, and `AutoDiscover` records in this list, you must add them. Use the following command to add all URLs that are missing. In our example, the URLs that are added are `mail.corp.contoso.com` and `owa.contoso.com`. Make sure that they're replaced by the URLs that are configured in your environment.
+5. If you don't see your internal and external MAPI/HTTP, EWS, ActiveSync, OAB, and Autodiscover records in this list, you must add them using the command below (the example URLs are `mail.corp.contoso.com` and `owa.contoso.com`, but you'd **replace the example URLs with your own**). Ensure that the generic AutoDiscover record for your domain (for example `autodiscover.contoso.com`) is included as well:
 
    ```powershell
    $x = Get-MgServicePrincipal -Filter "AppId eq '00000002-0000-0ff1-ce00-000000000000'"
    $x.ServicePrincipalNames += "https://mail.corp.contoso.com/"
    $x.ServicePrincipalNames += "https://owa.contoso.com/"
+   $x.ServicePrincipalNames += "https://autodiscover.contoso.com/"
    Update-MgServicePrincipal -ServicePrincipalId $x.Id -ServicePrincipalNames $x.ServicePrincipalNames
-   ```
+   ``` 
 
 6. Verify that your new records were added by running the `Get-MgServicePrincipal` command from step 4 again, and validate the output. Compare the list from before to the new list of SPNs. You might also note down the new list for your records. If you're successful, you should see the two new URLs in the list. Going by our example, the list of SPNs now includes the specific URLs `https://mail.corp.contoso.com` and `https://owa.contoso.com`.
 
@@ -167,7 +169,7 @@ InternalAuthenticationMethods : {Ntlm, OAuth, Negotiate}
 ExternalAuthenticationMethods : {Ntlm, OAuth, Negotiate}
 ```
 
-If OAuth is missing from any server and any of the five virtual directories, you need to add it by using the relevant commands before proceeding ([Set-MapiVirtualDirectory](/powershell/module/exchange/set-mapivirtualdirectory), [Set-WebServicesVirtualDirectory](/powershell/module/exchange/set-webservicesvirtualdirectory), [Set-OABVirtualDirectory](/powershell/module/exchange/set-oabvirtualdirectory), [Set-AutodiscoverVirtualDirectory](/powershell/module/exchange/set-autodiscovervirtualdirectory)), and [Set-ActiveSyncVirtualDirectory](/powershell/module/exchange/set-activesyncvirtualdirectory).
+If OAuth is missing from any server and any of the five virtual directories, you need to add it by using the relevant commands before proceeding ([Set-MapiVirtualDirectory](/powershell/module/exchangepowershell/set-mapivirtualdirectory), [Set-WebServicesVirtualDirectory](/powershell/module/exchangepowershell/set-webservicesvirtualdirectory), [Set-OABVirtualDirectory](/powershell/module/exchangepowershell/set-oabvirtualdirectory), [Set-AutodiscoverVirtualDirectory](/powershell/module/exchangepowershell/set-autodiscovervirtualdirectory)), and [Set-ActiveSyncVirtualDirectory](/powershell/module/exchangepowershell/set-activesyncvirtualdirectory).
 
 ## Confirm the EvoSTS Auth Server Object is Present
 

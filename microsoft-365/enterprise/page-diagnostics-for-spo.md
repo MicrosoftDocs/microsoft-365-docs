@@ -3,9 +3,9 @@ title: Use the Page Diagnostics tool for SharePoint in Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 01/08/2024
+ms.date: 10/18/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: medium
@@ -175,8 +175,6 @@ No change is visible except that you'll be notified that you have enabled it and
 ## Related articles
 
 [Tune SharePoint performance](tune-sharepoint-online-performance.md)
-
-[Tune Office 365 performance](tune-microsoft-365-performance.md)
 
 [Performance in the modern SharePoint experience](/sharepoint/modern-experience-performance)
 

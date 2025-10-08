@@ -2,20 +2,21 @@
 title: "Troubleshooting Microsoft 365 usage analytics"
 f1.keywords:
 - NOCSH
-ms.author: efrene
+ms.author: cmcatee
 author: efrene
-manager: scotv
-ms.date: 02/19/2020
+manager: dansimp
+ms.date: 09/24/2024
 audience: Admin
-ms.topic: article
+ms.topic: troubleshooting-general
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier2
 - scotvorg
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- operations-pod
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -96,7 +97,7 @@ Error Code: 302
   
  **Cause:** The authorization code failed because the user who tried connecting to the template app doesn't have the right level of authorization to access this data. 
   
- **To fix this error:** Provide the credentials of a user who is either a **Global admin**, **Exchange admin**, **Skype for Business admin**, **SharePoint admin**, **Global reader**, or **Report reader** to connect to the template app. See [About admin roles](../add-users/about-admin-roles.md) for more information. 
+ **To fix this error:** Provide the credentials of a user who is either an **Exchange admin**, **Skype for Business admin**, **SharePoint admin**, **Global reader**, or **Report reader** to connect to the template app. See [About admin roles](../add-users/about-admin-roles.md) for more information. 
   
 ## Refresh failed
 

@@ -4,30 +4,31 @@ f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
-manager: scotv
-ms.reviewer: sijoshi, socheng
+manager: dansimp
+ms.reviewer: schyevan, ramagane
 audience: Admin
 ms.topic: end-user-help
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
 - M365-subscription-management
-ms.custom: 
+- operations-pod
+ms.custom:
 - commerce_ssp
 - AdminSurgePortfolio
 - admindeeplinkMAC
 search.appverid:
 - MET150
 description: "Users can learn how to manage their self-service purchases in the Microsoft 365 admin center."
-ms.date: 03/27/2024
+ms.date: 04/15/2025
 ---
 
 # Manage self-service purchases and trials (for users)
 
-As a user, you can buy subscriptions to certain products and assign licenses for those subscriptions to people in your team. You're responsible for paying for any self-service purchases you make. You can manage your subscriptions in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
+As a user, you can acquire free trials or buy subscriptions to certain products and assign licenses for those subscriptions to people in your team. You're responsible for paying for any self-service purchases you make. You can manage your subscriptions in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
 [!INCLUDE [O365 21Vianet admin center link](../../includes/office-365-operated-by-21vianet-admin-center-link.md)]
 
@@ -35,7 +36,7 @@ Your admin has a read-only view into any subscriptions that you buy. They can se
 
 ## View your subscriptions
 
-You can view a list of all self-service purchased subscriptions that you bought.
+You can view a list of all self-service acquired subscriptions.
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, then go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. On the **Products** tab, select the filter icon, then select **Self-service**.

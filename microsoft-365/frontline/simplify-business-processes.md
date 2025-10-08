@@ -1,9 +1,9 @@
 ---
 title: Simplify business processes for frontline teams
 description: Learn how your frontline workforce can simplify their business processes with Microsoft Teams.
-ms.topic: conceptual
+ms.topic: solution-overview
 author: lana-chin
-ms.author: v-chinlana
+ms.author: jtremper
 manager: jtremper
 audience: admin
 f1.keywords:
@@ -23,14 +23,14 @@ searchScope:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 01/17/2024
+ms.date: 10/06/2025
 ---
 
 # Simplify business processes for frontline teams
 
 You can use Teams apps, Power Apps, and Power BI to simplify business processes for your frontline teams.
 
-<!-- > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRzfc]-->
+<!-- > [!VIDEO https://learn-video.azurefd.net/vod/player?id=229ffc24-44f6-4bfd-bac2-f1ac0df88dec]-->
 
 > [!NOTE]
 > Additional capabilities for [financial services](/industry/financial-services), [healthcare](/industry/healthcare), [nonprofit](/industry/nonprofit), and [retail](/industry/retail) environments are available with the Microsoft industry clouds, which include capabilities from Dynamics 365 and Microsoft Azure as well as the Microsoft 365 features.

@@ -1,6 +1,11 @@
 {
    "redirections": [
-     {
+    {
+       "source_path": "microsoft-365/security/defender/advanced-hunting-IdentityEvents-table.md",
+       "redirect_url": "/defender-xdr/advanced-hunting-identityevents-table",
+       "redirect_document_id": false
+    },
+    {
        "source_path": "microsoft-365/security/defender-identity/directory-service-accounts.md",
        "redirect_url": "/defender-for-identity/deploy/directory-service-accounts?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json",
        "redirect_document_id": false
@@ -3782,7 +3787,7 @@
      },
      {
        "source_path": "microsoft-365/security-and-compliance/index.md",
-       "redirect_url": "/microsoft-365/business-premium/secure-your-business-data",
+       "redirect_url": "/microsoft-365/admin/security-and-compliance/m365b-security-best-practices",
        "redirect_document_id": false
      },
      {
@@ -9348,6 +9353,11 @@
         {
           "source_path": "Microsoft-365/security/defender/zero-trust-with-microsoft-365-defender.md",
           "redirect_url": "/defender-xdr/zero-trust-with-microsoft-365-defender",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "Microsoft-365/security/microsoft-365-zero-trust.md",
+          "redirect_url": "/security/zero-trust/microsoft-365-zero-trust",
           "redirect_document_id": false
         }
    ]

@@ -1,11 +1,11 @@
 ---
-title: "Performance troubleshooting plan for Office 365"
+title: "Performance troubleshooting plan for Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 04/12/2024
+ms.date: 03/12/2025
 audience: Admin
-ms.topic: conceptual
+ms.topic: troubleshooting-general
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: medium
@@ -24,16 +24,16 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 - must-keep
-description: This article can help you troubleshoot Office 365 performance issues and even fix some of the most common issues.
+description: This article can help you troubleshoot Microsoft 365 performance issues and even fix some of the most common issues.
 ---
 
-# Performance troubleshooting plan for Office 365
+# Performance troubleshooting plan for Microsoft 365
 
-Do you need to know the steps to take to identify and fix lags, hangs, and slow performance between SharePoint, OneDrive, Exchange Online, or Skype for Business Online, and your client computer? Before you call support, this article can help you troubleshoot Office 365 performance issues and even fix some of the most common issues.
+Do you need to know the steps to take to identify and fix lags, hangs, and slow performance between SharePoint, OneDrive, Exchange Online, or Skype for Business Online, and your client computer? Before you call support, this article can help you troubleshoot Microsoft 365 performance issues and even fix some of the most common issues.
 
 This article is actually a sample action plan that you can use to capture valuable data about your performance issue as it's happening. Some top issues are also included in this article.
 
-If you're new to network performance and want to make a long term plan to monitor performance between your client machines and Office 365, take a look at [Office 365 performance tuning and troubleshooting - Admin and IT Pro](performance-tuning-using-baselines-and-history.md).
+If you're new to network performance and want to make a long term plan to monitor performance between your client machines and Microsoft 365, take a look at [Microsoft 365 performance tuning and troubleshooting - Admin and IT Pro](performance-tuning-using-baselines-and-history.md).
 
 ## Sample performance troubleshooting action plan
 
@@ -55,10 +55,10 @@ This action plan contains two parts; a preparation phase, and a logging phase. I
 - Start your Netmon capture (or network tracing tool).
 - Clear your DNS cache on the client computer from the command line by typing ipconfig /flushdns.
 - Start a new browser session and turn on HTTPWatch.
-- Optional: If you're testing Exchange Online, run the Exchange Client Performance Analyzer tool from the Office 365 admin console.
+- Optional: If you're testing Exchange Online, run the Exchange Client Performance Analyzer tool from the Microsoft 365 admin console.
 - Reproduce the exact steps that cause the performance issue.
 - Stop your Netmon or other tool's trace.
-- At the command line, run a trace route to your Office 365 subscription by typing the following command and then pressing ENTER:
+- At the command line, run a trace route to your Microsoft 365 subscription by typing the following command and then pressing ENTER:
 
   ``` cmd
   tracert <subscriptionname>.onmicrosoft.com
@@ -84,7 +84,7 @@ Why? By flushing out the DNS cache, you're starting your tests with a clean slat
 
 ## Netmon
 
-Microsoft's Network Monitoring tool ([Netmon](https://www.microsoft.com/download/details.aspx?id=4865)) analyzes packets (network traffic) that passes between computers on networks. By using Netmon to trace traffic with Office 365 you can capture, view, and read packet headers, identify intervening devices, check important settings on network hardware, look for dropped packets, and follow the flow of traffic between computers on your corporate network and Office 365. Because the actual body of the traffic is encrypted, that is, it travels on port 443 via SSL/TLS, you can't read the files being sent. Instead, you get an unfiltered trace of the path that the packet takes which can help you track down the problem behavior.
+Microsoft's Network Monitoring tool ([Netmon](https://www.microsoft.com/download/details.aspx?id=4865)) analyzes packets (network traffic) that passes between computers on networks. By using Netmon to trace traffic with Microsoft 365 you can capture, view, and read packet headers, identify intervening devices, check important settings on network hardware, look for dropped packets, and follow the flow of traffic between computers on your corporate network and Microsoft 365. Because the actual body of the traffic is encrypted, that is, it travels on port 443 via SSL/TLS, you can't read the files being sent. Instead, you get an unfiltered trace of the path that the packet takes which can help you track down the problem behavior.
 
 Be sure you don't apply a filter at this time. Instead, run through the steps and demonstrate the problem before stopping the trace and saving.
 
@@ -123,7 +123,7 @@ In the past, HTTPWatch has been associated with both the Commands and the Explor
 
 3. **Save** the HTTPWatch or **Send by Email**. Remember to name the file so that it includes date and time information and an indication of whether your Watch contains a demonstration of good or bad performance.
 
-![HTTPWatch showing the Network tab for a page load of the Office 365 homepage.](../media/021a2c64-d581-49fd-adf4-4c364f589d75.PNG)
+![HTTPWatch showing the Network tab for a page load of the Microsoft 365 homepage.](../media/021a2c64-d581-49fd-adf4-4c364f589d75.PNG)
 
 This screenshot is from the Professional version of HTTPWatch. You can open traces taken in the Basic Version on a computer with a Professional version and read it there. Extra information might be available from the trace through that method.
 
@@ -149,15 +149,15 @@ The date and time is recorded for you. This links your PSR to your Netmon trace 
 
 It isn't possible to teach everything about network and performance troubleshooting that someone would need to know via an article. Getting good at performance takes experience, and knowledge of how your network works and usually performs. But it's possible to round up a list of top issues and show how tools can make it easier for you to eliminate the most common problems.
 
-If you want to pick up skills reading network traces for your Office 365 sites, there's no better teacher than creating traces of page loads regularly and gaining experience reading them. For example, when you have a chance, load an Office 365 service and trace the process. Filter the trace for DNS traffic, or search the FrameData for the name of the service you browsed. Scan the trace to get an idea of the steps that occur when the service loads. This helps you learn what normal page load should look like, and in the case of troubleshooting, particularly around performance, comparing good to bad traces can teach you a lot.
+If you want to pick up skills reading network traces for your Microsoft 365 sites, there's no better teacher than creating traces of page loads regularly and gaining experience reading them. For example, when you have a chance, load an Microsoft 365 service and trace the process. Filter the trace for DNS traffic, or search the FrameData for the name of the service you browsed. Scan the trace to get an idea of the steps that occur when the service loads. This helps you learn what normal page load should look like, and in the case of troubleshooting, particularly around performance, comparing good to bad traces can teach you a lot.
 
 Netmon uses Microsoft Intellisense in the Display filter field. Intellisense, or intelligent code completion, is that trick where you type in a period and all available options are displayed in a drop-down selection box. For example, you're worried about TCP window scaling, you can find your way to a filter (such as  `.protocol.tcp.window < 100`) by this means.
 
 ![Screenshot of Netmon showing that the Display Filter field uses intellisense.](../media/75a56c11-9a60-47ee-a100-aabdfb1ba10f.PNG)
 
-Netmon traces can have a lot of traffic in them. If you aren't experienced with reading them, it's likely you'll be overwhelmed opening the trace the first time. The first thing to do is separate the signal from the background noise in the trace. You tested against Office 365, and that's the traffic you want to see. If you're used to navigating through traces, you might not need this list.
+Netmon traces can have a lot of traffic in them. If you aren't experienced with reading them, it's likely you'll be overwhelmed opening the trace the first time. The first thing to do is separate the signal from the background noise in the trace. You tested against Microsoft 365, and that's the traffic you want to see. If you're used to navigating through traces, you might not need this list.
 
-Traffic between your client and Office 365 travels via TLS, which means that the body of the traffic will be encrypted and not readable in a generic Netmon trace. Your performance analysis doesn't need to know the specifics of the information in the packet. It is, however, very interested in packet headers and the information that they contain.
+Traffic between your client and Microsoft 365 travels via TLS, which means that the body of the traffic will be encrypted and not readable in a generic Netmon trace. Your performance analysis doesn't need to know the specifics of the information in the packet. It is, however, very interested in packet headers and the information that they contain.
 
 ### Tips to get a good trace
 
@@ -165,7 +165,7 @@ Traffic between your client and Office 365 travels via TLS, which means that the
 
 - Flush your DNS resolver cache and, if possible, close all browsers except the one in which you're running your tests. If you aren't able to do this, for instance, if support is using some browser-based tool to see your client computer's desktop, be prepared to filter your trace.
 
-- In a busy trace, locate the Office 365 service that you're using. If you have never or seldom seen your traffic before, this is a helpful step in separating the performance issue from other network noise. There are a few ways to do this. Directly before your test, you can use _ping_ or _PsPing_ against the URL of the specific service (`ping outlook.office365.com` or `psping -4 microsoft-my.sharepoint.com:443`, for example). You can also easily find that ping or PsPing in a Netmon trace (by its process name). That will give you a place to start looking.
+- In a busy trace, locate the Microsoft 365 service that you're using. If you have never or seldom seen your traffic before, this is a helpful step in separating the performance issue from other network noise. There are a few ways to do this. Directly before your test, you can use _ping_ or _PsPing_ against the URL of the specific service (`ping outlook.office365.com` or `psping -4 microsoft-my.sharepoint.com:443`, for example). You can also easily find that ping or PsPing in a Netmon trace (by its process name). That will give you a place to start looking.
 
 If you're only using Netmon tracing at the time of the problem, that's okay too. To orient yourself, use a filter like `ContainsBin(FrameData, ASCII, "office")` or `ContainsBin(FrameData, ASCII, "outlook")`. You can record your frame number from the trace file. You might also want to scroll the _Frame Summary_ pane all the way to the right and look for the Conversation ID column. There's a number indicated there for the ID of this specific conversation that you can also record and look at in isolation later. Remember to remove this filter before applying any other filtering.
 
@@ -176,11 +176,11 @@ If you're only using Netmon tracing at the time of the problem, that's okay too.
 
 ![Netmon trace from the client showing the same PSPing command through the filter TCP.Flags.Syn == 1.](../media/0ae7ef7d-e003-4d01-a006-dc49bd1fcef2.PNG)
 
-Get familiar with your traffic, and learn to locate the information you need. For example, learn to determine which packet in the trace has the first reference to the Office 365 service you're using (like "Outlook").
+Get familiar with your traffic, and learn to locate the information you need. For example, learn to determine which packet in the trace has the first reference to the Microsoft 365 service you're using (like "Outlook").
 
-Taking Office 365 Outlook Online as an example, the traffic begins something like this:
+Taking Microsoft 365 Outlook Online as an example, the traffic begins something like this:
 
-- DNS Standard Query and DNS Response for outlook.office365.com with matching QueryIDs. It's important to note the time offset for this turn-around, and where in the world the Office 365 Global DNS sends the request for name resolution. Ideally, as locally as possible, rather than halfway across the world.
+- DNS Standard Query and DNS Response for outlook.office365.com with matching QueryIDs. It's important to note the time offset for this turn-around, and where in the world the Microsoft 365 Global DNS sends the request for name resolution. Ideally, as locally as possible, rather than halfway across the world.
 
 - An HTTP GET Request whose status report Moved Permanently (301)
 
@@ -190,7 +190,7 @@ Taking Office 365 Outlook Online as an example, the traffic begins something lik
 
 - Then a series of TLS:TLS traffic, which is where the TLS handshake and TLS certificate conversations take place. (Remember the data is encrypted via SSL/TLS.)
 
-All parts of the traffic are important and connected, but small portions of the trace contain information important in terms of performance troubleshooting, so we'll focus on those areas. Also, since we've done enough Office 365 performance troubleshooting at Microsoft to compile a Top 10 list of common problems, we'll focus on those issues and how to use the tools we have to root them out next.
+All parts of the traffic are important and connected, but small portions of the trace contain information important in terms of performance troubleshooting, so we'll focus on those areas. Also, since we've done enough Microsoft 365 performance troubleshooting at Microsoft to compile a Top 10 list of common problems, we'll focus on those issues and how to use the tools we have to root them out next.
 
 If you haven't installed them already, the matrix below makes use of several tools where ever possible. Links are provided to the installation points. The list includes common network tracing tools like [Netmon](https://www.microsoft.com/download/details.aspx?id=4865) and [Wireshark](https://www.wireshark.org/), but use any tracing tool you're comfortable with, and in which you're accustomed to filtering network traffic. When you're testing, remember:
 
@@ -235,12 +235,12 @@ When connections are terminated by proxy or firewall devices, the client isn't i
 
 #### What to look for
 
-In Netmon, look at the Time Offset field for a round-trip. A round-trip is the time between client sending a request to the server and receiving a response back. Check between the Client and the egress point (ex. Client --\> Proxy), or the Client to Office 365 (Client --\> Office 365). You can see this in many types of packets.
+In Netmon, look at the Time Offset field for a round-trip. A round-trip is the time between client sending a request to the server and receiving a response back. Check between the Client and the egress point (ex. Client --\> Proxy), or the Client to Microsoft 365 (Client --\> Microsoft 365). You can see this in many types of packets.
 
 As an example, the filter in Netmon may look like  `.Protocol.IPv4.Address == 10.102.14.112 AND .Protocol.IPv4.Address == 10.201.114.12`, or, in Wireshark,  `ip.addr == 10.102.14.112 &amp;&amp; ip.addr == 10.201.114.12`.
 
 > [!TIP]
-> Don't know if the IP address in your trace belongs to your DNS server? Try looking it up at the command line. Click **Start** \> **Run** \> and type **cmd**, or press **Windows Key** \> and type **cmd**. At the prompt, type  `nslookup <the IP address from the network trace>`. To test, use nslookup against your own computer's IP address. > To see a list of Microsoft's IP ranges, see [Office 365 URLs and IP address ranges](./urls-and-ip-address-ranges.md).
+> Don't know if the IP address in your trace belongs to your DNS server? Try looking it up at the command line. Click **Start** \> **Run** \> and type **cmd**, or press **Windows Key** \> and type **cmd**. At the prompt, type  `nslookup <the IP address from the network trace>`. To test, use nslookup against your own computer's IP address. > To see a list of Microsoft's IP ranges, see [Microsoft 365 URLs and IP address ranges](./urls-and-ip-address-ranges.md).
 
 If there's a problem, expect long Time Offsets to appear, in this case (Outlook Online), particularly in TLS:TLS packets that show the passage of Application Data (for example, in Netmon you can find application data packets via  `.Protocol.TLS AND Description == "TLS:TLS Rec Layer-1 SSL Application Data"`). You should see a smooth progression in the time across the session. If you see long delays when refreshing your Outlook Online, this could be caused by a high degree of resets being sent.
 
@@ -248,7 +248,7 @@ If there's a problem, expect long Time Offsets to appear, in this case (Outlook 
 
 Latency is a measure that can change a lot depending on many variables, such upgrading aging devices, adding a large number of users to a network, and the percentage of overall bandwidth consumed by other tasks on a network connection.
 
-There are bandwidth calculators for Office 365 available from this [Network planning and performance tuning for Office 365](network-planning-and-performance.md) page.
+There are bandwidth calculators for Microsoft 365 available from this [Network planning and performance tuning for Microsoft 365](network-planning-and-performance.md) page.
 
 Need to measure the speed of your connection, or your ISP connection's bandwidth? Try this site (or sites like it): [Speedtest Official Site](https://www.speedtest.net/), or query your favorite search engine for the phrase **speed test**.
 
@@ -261,32 +261,32 @@ Need to measure the speed of your connection, or your ISP connection's bandwidth
 
 #### What to look for
 
-To track latency in a trace, you'll benefit from having recorded the client computer IP address and the IP address of the DNS server in Office 365. This is for easier trace filtering. If you connect through a proxy, you'll need your client computer IP address, the proxy/egress IP address, and the Office 365 DNS IP address, to make the work easier.
+To track latency in a trace, you'll benefit from having recorded the client computer IP address and the IP address of the DNS server in Microsoft 365. This is for easier trace filtering. If you connect through a proxy, you'll need your client computer IP address, the proxy/egress IP address, and the Microsoft 365 DNS IP address, to make the work easier.
 
-A ping request sent to outlook.office365.com will tell you the name of the datacenter receiving the request, even if ping  *might*  not be able to connect to send the trademark consecutive ICMP packets. If you use PsPing (a free tool for download), and specific the port (443) and perhaps to use IPv4 (-4) you'll get an average round-trip-time for packets sent. This will work this for other URLs in the Office 365 services, like `psping -4 yourSite.sharepoint.com:443`. In fact, you can specify a number of pings to get a larger sample for your average, try something like `psping -4 -n 20 yourSite-my.sharepoint.com:443`.
+A ping request sent to outlook.office365.com will tell you the name of the datacenter receiving the request, even if ping  *might*  not be able to connect to send the trademark consecutive ICMP packets. If you use PsPing (a free tool for download), and specific the port (443) and perhaps to use IPv4 (-4) you'll get an average round-trip-time for packets sent. This will work this for other URLs in the Microsoft 365 services, like `psping -4 yourSite.sharepoint.com:443`. In fact, you can specify a number of pings to get a larger sample for your average, try something like `psping -4 -n 20 yourSite-my.sharepoint.com:443`.
 
 > [!NOTE]
-> PsPing doesn't send ICMP packets. It pings with TCP packets over a specific port, so you can use any one you know to be open. In Office 365, which uses SSL/TLS, try attaching port :443 to your PsPing.
+> PsPing doesn't send ICMP packets. It pings with TCP packets over a specific port, so you can use any one you know to be open. In Microsoft 365, which uses SSL/TLS, try attaching port :443 to your PsPing.
 
 ![Screen shot that shows a ping resolving outlook.office365.com, and a PSPing with the 443 doing the same, but also reporting a 6.5ms average RTT.](../media/c64339f2-2c96-45b8-b168-c2a060430266.PNG)
 
-If you loaded the slow performing Office 365 page while doing a network trace, you should filter a Netmon or Wireshark trace for `DNS`. This is one of the IPs we're looking for.
+If you loaded the slow performing Microsoft 365 page while doing a network trace, you should filter a Netmon or Wireshark trace for `DNS`. This is one of the IPs we're looking for.
 
 Here are the steps to take to filter your Netmon to get the IP address (and take a look at DNS Latency). This example uses outlook.office365.com, but may also use the URL of a SharePoint tenant (hithere.sharepoint.com for example).
 
 1. Ping the URL `ping outlook.office365.com` and, in the results, record the name and IP address of the DNS server the ping request was sent to.
 2. Network trace opening the page, or doing the action that gives you the performance problem, or, if you see a high latency on the ping, itself, network trace it.
-3. Open the trace in Netmon and filter for DNS (this filter also works in Wireshark, but is sensitive to case `-- dns`). Since you know the name of the DNS server from your ping you may also filter more speedily in Netmon like this: `DNS AND ContainsBin(FrameData, ASCII, "namnorthwest")`, which looks like this in Wireshark dns and frame contains "namnorthwest".<br/>Open the response packet and, in the Netmon **Frame Details** window, click **DNS** to expand for more information. In the DNS information, you'll find the IP address of the DNS server the request went to in Office 365. You'll need this IP address for the next step (the PsPing tool). Remove the filter, right-click on the DNS Response in Netmon (**Frame Summary** \> **Find Conversations** \> **DNS**) to see the DNS Query and Response side-by-side.
+3. Open the trace in Netmon and filter for DNS (this filter also works in Wireshark, but is sensitive to case `-- dns`). Since you know the name of the DNS server from your ping you may also filter more speedily in Netmon like this: `DNS AND ContainsBin(FrameData, ASCII, "namnorthwest")`, which looks like this in Wireshark dns and frame contains "namnorthwest".<br/>Open the response packet and, in the Netmon **Frame Details** window, click **DNS** to expand for more information. In the DNS information, you'll find the IP address of the DNS server the request went to in Microsoft 365. You'll need this IP address for the next step (the PsPing tool). Remove the filter, right-click on the DNS Response in Netmon (**Frame Summary** \> **Find Conversations** \> **DNS**) to see the DNS Query and Response side-by-side.
 4. In Netmon, also note the Time Offset  column between the DNS Request and Response. In the next step, the easy-to-install and use [PsPing](/sysinternals/downloads/psping) tool comes in very handy, both because ICMP is often blocked on Firewalls, and because PsPing elegantly tracks latency in milliseconds. PsPing completes a TCP connection to an address and port (in our case open port 443).
 5. Install PsPing.
 6. Open a command prompt (Start \> Run \> type cmd, or Windows Key \> type cmd) and change directory to the directory where you installed PsPing to run the PsPing command. In my examples you can see I made a 'Perf' folder on the root of C. You can do the same for quick access.
-7. Type the command so that you're making your PsPing against the IP address of the Office 365 DNS server from your earlier Netmon trace, including the port number, like `psping -n 20 132.245.24.82:445`. This will give you a sampling of 20 pings and average the latency when PsPing stops.
+7. Type the command so that you're making your PsPing against the IP address of the Microsoft 365 DNS server from your earlier Netmon trace, including the port number, like `psping -n 20 132.245.24.82:445`. This will give you a sampling of 20 pings and average the latency when PsPing stops.
 
-If you're going to Office 365 through a proxy server, the steps are a little different. First, PsPing to your proxy server to get an average latency value in milliseconds to proxy/egress and back, and then either run PsPing on the proxy, or on a computer with a direct Internet connection to get the missing value (the one to Office 365 and back).
+If you're going to Microsoft 365 through a proxy server, the steps are a little different. First, PsPing to your proxy server to get an average latency value in milliseconds to proxy/egress and back, and then either run PsPing on the proxy, or on a computer with a direct Internet connection to get the missing value (the one to Microsoft 365 and back).
 
-If you choose to run PsPing from the proxy, you'll have two millisecond values: Client computer to proxy server or egress point, and proxy server to Office 365. And you're done! Well, recording values, anyway.
+If you choose to run PsPing from the proxy, you'll have two millisecond values: Client computer to proxy server or egress point, and proxy server to Microsoft 365. And you're done! Well, recording values, anyway.
 
-If you run PsPing on another client computer that has a direct connection to the Internet, that is, without a proxy, you'll have two millisecond values: Client computer to proxy server or egress point, and client computer to Office 365. In this case, subtract the value of client computer to proxy server or egress point from the value of client computer to Office 365, and you'll have the RTT numbers from your client computer to the proxy server or egress point, and from proxy server or egress point to Office 365.
+If you run PsPing on another client computer that has a direct connection to the Internet, that is, without a proxy, you'll have two millisecond values: Client computer to proxy server or egress point, and client computer to Microsoft 365. In this case, subtract the value of client computer to proxy server or egress point from the value of client computer to Microsoft 365, and you'll have the RTT numbers from your client computer to the proxy server or egress point, and from proxy server or egress point to Microsoft 365.
 
 However, if you can find a client computer in the impacted location that is directly connected, or bypasses the proxy, you may choose to see if the issue reproduces there to begin with, and test using it thereafter.
 
@@ -295,7 +295,7 @@ Latency, as seen in a Netmon trace, those extra milliseconds can add up, if ther
 ![General latency in Netmon, with the Netmon default Time Delta column added to the Frame Summary.](../media/7ad17380-8527-4bc2-9b9b-6310cf19ba6b.PNG)
 
 > [!NOTE]
-> Your IP address may be different than the IPs shown here, for example, your ping may return something more like 157.56.0.0/16 or a similar range. For a list of ranges used by Office 365, check out [Office 365 URLs and IP address ranges](./urls-and-ip-address-ranges.md).
+> Your IP address may be different than the IPs shown here, for example, your ping may return something more like 157.56.0.0/16 or a similar range. For a list of ranges used by Microsoft 365, check out [Microsoft 365 URLs and IP address ranges](./urls-and-ip-address-ranges.md).
 
 Remember to expand all the nodes (there's a button at the top for this) if you want to search for, for example, 132.245.
 
@@ -303,11 +303,11 @@ Remember to expand all the nodes (there's a button at the top for this) if you w
 
 This only applies to you if you're going through a proxy server. If not, you can skip these steps. When working properly, proxy authentication should take place in milliseconds, consistently. You shouldn't see intermittent bad performance during peak usage periods (for example).
 
-If Proxy authentication is on, each time you make a new TCP connection to Office 365 to get information, you need to pass through an authentication process behind the scenes. So, for example, when switching from Calendar to Mail in Outlook Online, you'll authenticate. And in SharePoint, if a page displays media or data from multiple sites or locations, you'll authenticate for each different TCP connection that is needed in order to render the data.
+If Proxy authentication is on, each time you make a new TCP connection to Microsoft 365 to get information, you need to pass through an authentication process behind the scenes. So, for example, when switching from Calendar to Mail in Outlook Online, you'll authenticate. And in SharePoint, if a page displays media or data from multiple sites or locations, you'll authenticate for each different TCP connection that is needed in order to render the data.
 
 In Outlook Online, you might experience slow load times whenever you switch between Calendar and your mailbox, or slow page loads in SharePoint. However, there are other symptoms not listed here.
 
-Proxy authentication is a setting on your egress proxy server. If it's causing a performance issue with Office 365, you must consult your networking team.
+Proxy authentication is a setting on your egress proxy server. If it's causing a performance issue with Microsoft 365, you must consult your networking team.
 
 #### Tools
 
@@ -341,7 +341,7 @@ Name resolution works best and most quickly when it takes place as close to the 
 If DNS name resolution is taking place overseas, it can add seconds to page loads. Ideally, name resolution happens in under 100 ms. If not, you should do further investigation.
 
 > [!TIP]
-> Not sure how Client Connectivity works in Office 365? Take a look at the Client Connectivity Reference document [here](/previous-versions//dn741250(v=technet.10)).
+> Not sure how Client Connectivity works in Microsoft 365? Take a look at the Client Connectivity Reference document [here](/previous-versions//dn741250(v=technet.10)).
 
 #### Tools
 
@@ -381,7 +381,7 @@ If the issue looks to be DNS specific, it may be necessary to contact your IT de
 
 ### Proxy Scalability
 
-Services like Outlook Online in Office 365 grant clients multiple long-term connections. Therefore, each user might use more connections that require a longer life.
+Services like Outlook Online in Microsoft 365 grant clients multiple long-term connections. Therefore, each user might use more connections that require a longer life.
 
 #### Tools
 
@@ -395,7 +395,7 @@ There's no network trace or troubleshooting tool specific to this. Instead, it's
 
 Found in the SYN - SYN/ACK.  Do this check in any performance network trace you've taken to ensure that TCP packets are configured to carry the maximum amount of data possible.
 
-The goal is to see an MSS of 1,460 bytes for transmission of data. If you're behind a proxy, or you're using a NAT, remember to run this test from client to proxy/egress/NAT, and from proxy/egress/NAT to Office 365 for best results! These are different TCP sessions.
+The goal is to see an MSS of 1,460 bytes for transmission of data. If you're behind a proxy, or you're using a NAT, remember to run this test from client to proxy/egress/NAT, and from proxy/egress/NAT to Microsoft 365 for best results! These are different TCP sessions.
 
 #### Tools
 
@@ -408,7 +408,7 @@ TCP Max Segment Size (MSS) is another parameter of the three-way handshake in yo
 Open any performance network trace you have and find the connection you're curious about, or that demonstrates the performance problem.
 
 > [!NOTE]
-> If you are looking at a trace and need to find the traffic relevant to your conversation, filter by the IP of the Client, or the IP of the proxy server or egress point, or both. Going directly, you will need to ping the URL that you're testing for the IP address of Office 365 in the trace, and filter by it.
+> If you are looking at a trace and need to find the traffic relevant to your conversation, filter by the IP of the Client, or the IP of the proxy server or egress point, or both. Going directly, you will need to ping the URL that you're testing for the IP address of Microsoft 365 in the trace, and filter by it.
 
 Looking at the trace second-hand? Try using filters to orient yourself. In Netmon, run a search based on the URL, such as `Containsbin(framedata, ascii, "sphybridExample")`, take note of the frame number.
 
@@ -436,7 +436,7 @@ If you need to check **Selective Acknowledgment** (next topic in this matrix), d
 
 Found in the SYN - SYN/ACK. Must be reported as Permitted in both SYN and SYN/ACK. Selective Acknowledgment (SACK) allows for smoother retransmission of data when a packet or packets go missing. Devices can disable this feature, which can lead to performance problems.
 
-If you're behind a proxy, or you're using a NAT, remember to run this test from client to proxy/egress/NAT, and from proxy/egress/NAT to Office 365 for best results! These are different TCP sessions.
+If you're behind a proxy, or you're using a NAT, remember to run this test from client to proxy/egress/NAT, and from proxy/egress/NAT to Microsoft 365 for best results! These are different TCP sessions.
 
 #### Tools
 
@@ -454,7 +454,7 @@ Locate the connection in the trace that you're interested in seeing either by sc
 
 ### DNS Geolocation
 
-Where in the world Office 365 tries to resolve your DNS call affects your connection speed.
+Where in the world Microsoft 365 tries to resolve your DNS call affects your connection speed.
 
 In Outlook Online, after the first DNS lookup is completed, the location of that DNS will be used to connect to your nearest datacenter. You'll be connected to an Outlook Online CAS server, which will use the backbone network to connect to the datacenter (dC) where your data is stored. This is faster.
 
@@ -463,7 +463,7 @@ When accessing SharePoint, a user traveling abroad will be directed to their act
 Lync online has active nodes in more than one dC at a time. When requests are sent for Lync online instances, Microsoft's DNS will determine where in the world the request came from, and return IP addresses from the nearest regional dC where Lync online is active.
 
 > [!TIP]
-> Need to know more about how clients connect to Office 365? Take a look at the [Client Connectivity](/previous-versions//dn741250(v=technet.10)) reference article (and its helpful graphics).
+> Need to know more about how clients connect to Microsoft 365? Take a look at the [Client Connectivity](/previous-versions//dn741250(v=technet.10)) reference article (and its helpful graphics).
 
 #### Tools
 
@@ -484,7 +484,7 @@ Open the command prompt on the client computer (via Start \> Run \> cmd or Windo
 
 ![PSPing to the IP address returned by the ping to outlook.office365.com showing average 28 millisecond latency.](../media/f2b25a75-1a87-4479-b8a7-fa4375683507.PNG)
 
-### Office 365 Application Troubleshooting
+### Microsoft 365 Application Troubleshooting
 
 #### Tools
 
@@ -496,6 +496,6 @@ We don't cover tools used in application-specific troubleshooting in this networ
 
 ## Related articles
 
-[Managing Office 365 endpoints](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
+[Managing Microsoft 365 endpoints](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
 
-[Office 365 endpoints FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
+[Microsoft 365 endpoints FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)

@@ -1,7 +1,7 @@
 ---
 title: "SharePoint storage quotas in multi-geo environments"
 ms.reviewer: adwood
-ms.date: 08/10/2020
+ms.date: 07/31/2024
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -15,6 +15,7 @@ ms.custom: seo-marvel-apr2020
 ms.collection: 
 - Strat_SP_gtc
 - SPO_Content
+- must-keep
 ms.localizationpriority: medium
 description: Learn about SharePoint storage quotas in multi-geo environments and how quotas can be managed by the SharePoint admin.
 ---
@@ -30,6 +31,9 @@ The SharePoint storage quota for any geo location is allocated by the SharePoint
 ## Configure a storage quota for a geo location
 
 Use the [Microsoft SharePoint Module](https://www.microsoft.com/download/details.aspx?id=35588) and connect to the central location to allocate the storage quota for a geo location.
+
+> [!NOTE]
+> You can find a list of Microsoft 365 geo location codes [here](multi-geo-add-group-with-pdl.md#geo-location-codes).
 
 To allocate Storage Quota for a location, run cmdlet:
 

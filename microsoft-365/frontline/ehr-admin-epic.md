@@ -1,10 +1,10 @@
 ---
 title: Virtual Appointments with Teams - Integration into Epic EHR
 author: lana-chin
-ms.author: v-chinlana
+ms.author: jtremper
 manager: jtremper
 audience: ITPro
-ms.topic: conceptual
+ms.topic: integration
 ms.service: microsoft-365-frontline
 search.appverid: MET150
 searchScope:
@@ -27,7 +27,7 @@ appliesto:
   - Microsoft 365 for frontline workers
 ms.reviewer: beolson 
 description: Learn how to integrate the Teams EHR connector to enable healthcare providers in your organization to conduct virtual appointments with patients or other providers in Teams directly from the Epic EHR system. 
-ms.date: 06/26/2024
+ms.date: 10/06/2025
 ---
 
 # Virtual Appointments with Teams - Integration into Epic EHR
@@ -44,7 +44,7 @@ The communication and collaboration platform of Teams makes it easy for clinicia
 
 This article describes how to set up and configure the Teams EHR connector to integrate with the Epic platform in your healthcare organization. It also gives you an overview of the Teams Virtual Appointments experience from the Epic EHR system.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5d3h4]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=51442f11-3e9f-4699-896a-edad4f54fc3f]
 
 ## Before you begin
 
@@ -67,7 +67,9 @@ Review the following information to get an understanding of the overall integrat
 You'll need to request access to the Teams app.
 
 1. Request to download the Teams app in the [Epic Connection Hub](https://appmarket.epic.com/). Doing this triggers a request from Epic to the Microsoft EHR connector team.
-1. After you make your request, send an email to [TeamsForHealthcare@service.microsoft.com](mailto:teamsforhealthcare@service.microsoft.com) with your organization name, tenant ID, and the email address of your Epic technical contact.
+1. Sign in to [EHR connector portal](https://ehrconnector.teams.microsoft.com/) and add your FHIR URL.
+
+1. After you make your request and added FHIR URL, send an email to [TeamsForHealthcare@service.microsoft.com](mailto:teamsforhealthcare@service.microsoft.com) with your organization name, tenant ID, and the email address of your Epic technical contact.
 1. The Microsoft EHR connector team will respond to your email with confirmation of enablement.
 
 ### Review the Epic-Microsoft Teams Telehealth Integration guide
@@ -80,7 +82,7 @@ Review the [Epic-Microsoft Teams Telehealth Integration Guide](https://galaxy.ep
 - Epic version November 2018 or later.
 - Users have an appropriate Microsoft 365 or Office 365 license that includes Teams meetings.
 - Teams is adopted and used in your healthcare organization.
-- Identified a person in your organization who is a Microsoft 365 global admin with access to the [Teams admin center](https://admin.teams.microsoft.com).
+- Identified a person in your organization who is a Microsoft 365 Global Administrator with access to the [Teams admin center](https://admin.teams.microsoft.com).
 - Your systems meet all [software and browser requirements](/microsoftteams/hardware-requirements-for-the-teams-app) for Teams.
 
 > [!IMPORTANT]
@@ -88,7 +90,7 @@ Review the [Epic-Microsoft Teams Telehealth Integration Guide](https://galaxy.ep
 
 The integration steps are performed by the following people in your organization:
 
-- **Microsoft 365 global admin**: The main person who is responsible for the integration. The admin configures the connector, enables SMS (if needed), and adds the Epic customer analyst who will be approving the configuration.
+- **Microsoft 365 Global Administrator**: The main person who is responsible for the integration. The admin configures the connector, enables SMS (if needed), and adds the Epic customer analyst who will be approving the configuration.
 - **Epic customer analyst**: A person in your organization who has login credentials to Epic. They approve the configuration settings entered by the admin and provide the configuration records to Epic.
 
 The Microsoft 365 admin and Epic customer analyst can be the same person.
@@ -152,7 +154,7 @@ To enable SMS notifications, your Microsoft 365 admin completes the following st
 
 3. Some telephone carriers now [require unverified toll numbers to be verified](/azure/communication-services/concepts/sms/sms-faq#sms-to-us-phone-numbers). This requirement became effective October 1, 2022. Some carriers are following this more strictly than others.
 
-You'll need to [register your generated phone number in this form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR0NW3g8C-tRNlyVpwWkCiS1UOEFCVTRHSFMwRk9BVTg3MVdZQlVCNEI4SS4u). This ensures none of your SMS messages will be blocked when sent to US phone numbers.
+    You'll need to [register your generated phone number in this form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR0NW3g8C-tRNlyVpwWkCiS1UOEFCVTRHSFMwRk9BVTg3MVdZQlVCNEI4SS4u). This ensures none of your SMS messages will be blocked when sent to US phone numbers.
 
 4. To link the phone number to a FHIR base URL, under **Phone number** in the **SMS configuration** section, select the number. Do this for each FHIR base URL for which you want to enable SMS notifications.
 

@@ -1,10 +1,10 @@
 ---
 title: "Manage self-service password reset in Microsoft 365 Lighthouse"
 f1.keywords: NOCSH
-ms.author: sharik
+ms.author: dansimp
 author: SKjerland
 manager: scotv
-ms.reviewer: katmartin
+ms.reviewer: aakash
 ms.date: 10/27/2023
 audience: Admin
 ms.topic: how-to

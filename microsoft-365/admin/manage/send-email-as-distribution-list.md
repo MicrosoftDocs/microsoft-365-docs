@@ -4,16 +4,17 @@ f1.keywords:
 - NOCSH
 ms.author: kwekua
 author: kwekuako
-manager: scotv
-ms.date: 09/14/2023
+manager: dansimp
+ms.date: 10/02/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
 - Tier3
-- scotvorg 
+- scotvorg
 - Adm_O365
+- operations-pod
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -57,7 +58,7 @@ Before you perform these steps, make sure you've been added to a Microsoft 365 d
 
 2. Select **New Email**. Click the **From** field and select **Other email address**. If you do not see the From field, navigate to **Options** and select **From** in the Show fields section.
 
-3. Select the **Distribution List** address from the Global Address List.
+3. Select the **Distribution List** address.
 
 4. Send the email.
 

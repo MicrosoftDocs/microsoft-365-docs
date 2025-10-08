@@ -2,19 +2,19 @@
 title: "Microsoft product NPS feedback and insights for your organization"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekuako
-manager: scotv
-ms.date: 11/18/2023
+ms.author: danbrown
+author: DHB-MSFT
+manager: dansimp
+ms.date: 01/06/2025
 audience: Admin
-ms.topic: article
+ms.topic: concept-article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
-- Tier2
-- scotvorg
+ms.collection:
 - Adm_O365
-ms.custom: AdminSurgePortfolio
+- trust-pod
+- feedback-content
+hideEdit: true
 description: "Use Net promoter scores (NPS) from your end users to see how they feel about Microsoft products and services."
 ---
 
@@ -36,7 +36,7 @@ We use NPS surveys and feedback from your end-users to provide you with insights
 
 ## Watch: NPS feedback and insights
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWWSNo]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=a755fdb6-078b-4244-9478-a8cbd3c22f65]
 
 ## Before you begin
 

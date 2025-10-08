@@ -2,21 +2,22 @@
 title: "Let users reset their own passwords"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekuako
-manager: scotv
-ms.date: 07/06/2023
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
+ms.date: 10/01/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- trust-pod
 ms.custom:
 - VSBFY23
 - MSStore_Link
@@ -40,9 +41,6 @@ This article is for people who set password expiration policy for a business, sc
 
 To complete these steps, you must be a [password administrator](about-admin-roles.md).
 
-> [!TIP]
-> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
-
 ## Before you begin
   
 - You get self-service password reset for cloud users **free** with any Microsoft 365 business, education, or nonprofit paid plan. It doesn't work with Microsoft 365 trial.
@@ -55,11 +53,11 @@ To complete these steps, you must be a [password administrator](about-admin-role
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198214).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=97a8f9fb-6e3c-4432-beca-3f8233c3d6dc]
 
 ## Steps: Let people reset their own passwords
 
-1. In the Microsoft 365 admin center, in the left navigation pane, select **Settings** > **Org settings**, and then <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**Security & privacy**</a>.
+1. In the Microsoft 365 admin center, in the left navigation pane, select **Settings** > **Org settings**, and then select <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**Security & privacy**</a> tab.
 1. Select **Self-service password reset**, and then choose **Go to the Azure portal to turn on self-service password reset**.
 1. In the left navigation pane, select **Users**, and then **Users - all users**
 1. Select **Password reset**.

@@ -3,9 +3,9 @@ title: "Configure Microsoft 365 user account properties with PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 02/28/2024
+ms.date: 04/28/2025
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: medium
@@ -141,16 +141,16 @@ This command instructs PowerShell to:
 To change properties for a specific set of user accounts, you can use a combination of the **Get-MgUser**, **Where**, and **Update-MgUser** cmdlets. The following example changes the usage location for all the users in the Accounting department to *France*:
   
 ```powershell
-Get-MgUser -All | Where-Object {$_.Department -eq "Accounting"} | ForEach-Object {Update-MgUser -UserId $_.Id -UsageLocation "FR"}
+Get-MgUser -Filter "department eq 'Accounting'" -All | ForEach-Object { Update-MgUser -UserId $_.Id -UsageLocation "FR" }
 ```
 
 This command instructs PowerShell to:
   
-1. Get all the information on the user accounts (**Get-MgUser**), and send it to the next command (**|**).
+1. Get all the information on the user accounts (**Get-MgUser**).
 
-1. Find all the user accounts that have their *Department* property set to "Accounting" (**Where {$_.Department -eq "Accounting"}**), and send the resulting information to the next command (**|**).
+1. Filter the results to find all the user accounts that have their *Department* property set to "Accounting" (**-Filter "department eq 'Accounting'" -All**), and send the resulting information to the next command (**|**).
 
-1. Set the user location to France (**Update-MgUser -UsageLocation FR**).
+1. For each user, set the user location to France (**ForEach-Object { Update-MgUser -UserId $_.Id -UsageLocation "FR" }**).
 
 ## See also
 

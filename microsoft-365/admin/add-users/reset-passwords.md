@@ -2,15 +2,15 @@
 title: "Reset passwords"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekuako
-manager: scotv
-ms.date: 05/30/2024
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
+ms.date: 09/17/2025
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
 - highpri
@@ -18,17 +18,18 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - must-keep
+- trust-pod
 ms.custom:
-  - VSBFY23
-  - TopSMBIssues
-  - MSStore_Link
-  - TRN_M365B
-  - OKR_SMB_Videos
-  - AdminSurgePortfolio
-  - AdminTemplateSet
-  - business_assist
-  - adminvideo
-  - has-azure-ad-ps-ref
+- VSBFY23
+- TopSMBIssues
+- MSStore_Link
+- TRN_M365B
+- OKR_SMB_Videos
+- AdminSurgePortfolio
+- AdminTemplateSet
+- business_assist
+- adminvideo
+- has-azure-ad-ps-ref
 description: "Sign in with your Microsoft 365 admin account to reset passwords for users when you have a Microsoft 365 for business subscription."
 ---
 
@@ -43,29 +44,29 @@ This article explains how to reset passwords for yourself and for your users whe
 > [!IMPORTANT]
 > To support increased security, as of August 30, 2024, Microsoft will remove the ability to send user account details and passwords in email from within the Microsoft 365 admin center. We recommend that you print the account information to a PDF file, then share it with your users in a secure manner.
 
-> [!TIP]
-> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
-
 ## Before you begin
 
 This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. [Overview in the Microsoft 365 admin center](../admin-overview/admin-center-overview.md).
 
 You must be a [password administrator](about-admin-roles.md) to perform these steps.
 
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. To learn more, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
+
 ## Watch: Reset a business password for a user
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198204).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=6abab91d-a375-496c-8a7e-f10bded3b389]
 ## Steps: Reset a business password for a user
 
-When a user requests a new password, you'll receive a password reset request in email. Follow these steps to reset the password.
+When a user requests a new password, you receive a password reset request in email. Follow these steps to reset the password.
 
 1. In the Microsoft 365 admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 
 2. On the **Active users** page, select the user and then select **Reset password**.
 
-3. Follow the instructions on the **Reset password** page to auto-generate a new password for the user or create one for them, and then select **Reset password**.  
+3. Follow the instructions on the **Reset password** page to autogenerate a new password for the user or create one for them, and then select **Reset password**.  
 
 4. Print the account details to a PDF file, store it in a secure location, then share the information with your users in a secure manner.
 
@@ -81,7 +82,7 @@ We strongly recommend that you set up self-service password reset. This way you 
 
 2. On the **Active users** page, select the user and then select **Reset password**.
 
-3. Follow the instructions on the **Reset password** page to auto-generate a new password for the user or create one for them, and then select **Reset password**.  
+3. Follow the instructions on the **Reset password** page to autogenerate a new password for the user or create one for them, and then select **Reset password**.  
 
 4. Print the account details to a PDF file, store it in a secure location, then share the information with your users in a secure manner.
 
@@ -115,9 +116,9 @@ These steps work for a business with tens of users. If you have hundreds or thou
 
 2. Select the option next to **Display name** to select everyone in your business. Then unselect yourself. You can't reset your own password at the same time you reset everyone else's password.
 
-3. Select **Reset password**.
+3. Select **Reset password** from the top row.
 
-4. Follow the instructions on the **Reset password** page, and select **Reset password**.  If you opted for auto-generating the passwords, the new temporary passwords will be displayed.
+4. Follow the instructions on the **Reset password** page, and select **Reset password**.  If you opted for autogenerating the passwords, the new temporary passwords are displayed.
 
 5. Print the account details to a PDF file, store it in a secure location, then share the information with your users in a secure manner.
   
@@ -153,12 +154,5 @@ Check out this great blog post by Vasil Michev, Microsoft MVP: [Force password c
     ```
 
 > [!NOTE]
-> The userPrincipalName must be in the Internet-style sign-in format where the user name is followed by the at sign (@) and a domain name. For example: user@contoso.com.
+> The userPrincipalName must be in the Internet-style sign-in format where the user name is followed by the at sign (@) and a domain name. For example: `user@contoso.com`.
 
-## Related content
-  
-[Let users reset their own passwords](../add-users/let-users-reset-passwords.md) (article)\
-[Reset passwords](../add-users/reset-passwords.md) (article)\
-[Set an individual user's password to never expire](set-password-to-never-expire.md) (article)\
-[Set the password expiration policy for your organization](../manage/set-password-expiration-policy.md) (article)\
-[Microsoft 365 for business training videos](../../business-video/index.yml) (link page)

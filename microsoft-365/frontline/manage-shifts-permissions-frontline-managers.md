@@ -1,11 +1,11 @@
 ---
 title: Manage Shifts permissions for frontline managers
 author: lana-chin
-ms.author: v-chinlana
+ms.author: jtremper
 manager: jtremper
-ms.topic: conceptual
+ms.topic: how-to
 audience: admin
-ms.reviewer: imarquesgil
+ms.reviewer: harrywong
 ms.service: microsoft-365-frontline
 search.appverid: MET150
 searchScope:

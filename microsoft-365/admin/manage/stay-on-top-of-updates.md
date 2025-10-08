@@ -4,8 +4,8 @@ f1.keywords:
 - NOCSH
 ms.author: kwekua
 author: kwekuako
-manager: scotv
-ms.date: 11/16/2023
+manager: dansimp
+ms.date: 01/06/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -16,6 +16,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- operations-pod
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -37,8 +38,9 @@ With Microsoft 365, you receive new product updates and features as they become 
 |**Roadmap** <br/> |Visit the Microsoft 365 Roadmap to learn about features that have been launched, are rolling out, are in development, have been canceled, or previously released. The roadmap is the official site for Microsoft 365 updates and changes.  <br/> |Visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap) frequently and learn about planned updates and releases.  <br/> |
 |**Blogs** and **Community** <br/> |Visit Microsoft 365 Blogs, Microsoft Community, and Microsoft Tech Community to learn more details about changes in Microsoft 365 and share experiences with other users.  <br/> |Visit [Office Blogs](https://www.microsoft.com/en-us/microsoft-365/blog/). Visit [Microsoft Community](https://answers.microsoft.com). Visit [Microsoft Tech Community](https://techcommunity.microsoft.com).  <br/> |
 
-> [!NOTE]
-> You need to be a global administrator to make changes to release preferences.
+You need to be a global administrator to make changes to release preferences.
+
+[!INCLUDE [global-administrator-note](../../includes/global-administrator-note.md)]
 
 ## Learn about Microsoft 365 previews
 
@@ -47,4 +49,3 @@ Microsoft 365 releases some features in public preview or private preview to cus
 During the ‘Private preview’ phase,  a controlled testing environment is provided that is limited to a small group of customers. Features in private preview are typically more restricted and evaluated by a select set of users. Access to private preview features is usually by invitation only, directly from the product team responsible for the feature or service. Private preview allows for more confidential testing due to the smaller group size. Microsoft provides support for private preview features. It can be seen as a focused, exclusive testing phase before broader public preview.
 
 During the ‘Public preview’ phase, Microsoft releases certain features to a broader audience for testing and feedback. These features are made available to a wider group of customers and can be tested and used in production environments. However, they may have restricted or limited functionality and may only apply to specific platforms. Public preview features are actively being developed and may not be complete. Microsoft encourages users to provide feedback during this phase, and public preview features are fully supported by Microsoft. Some features may be available only in selected geographic regions or specific cloud environments.
-

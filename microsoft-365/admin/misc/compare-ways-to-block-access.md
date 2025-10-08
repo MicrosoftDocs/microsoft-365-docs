@@ -2,15 +2,15 @@
 title: "Compare ways to block access"
 f1.keywords:
 - NOCSH
-ms.author: twerner
-author: twernermsft
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 ms.date: 02/18/2020
 audience: Admin
-ms.topic: article
+ms.topic: product-comparison
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - scotvorg
 - Adm_O365
 - Adm_NonTOC

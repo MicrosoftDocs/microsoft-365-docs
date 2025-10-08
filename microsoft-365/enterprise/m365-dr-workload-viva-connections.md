@@ -1,15 +1,15 @@
 ---
 title: Data Residency for Viva Connections
 description: Data Residency for Viva Connections
-ms.author: kvice
-author: kelleyvice-msft
-manager: scotv
+ms.author: v-fahasen
+author: fhasen-msft
+manager: v-nihmi
 ms.service: microsoft-365-enterprise
 ms.subservice: advanced-data-residency
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 02/29/2024
+ms.date: 02/11/2025
 ms.reviewer: deanw
 ms.custom:
 - it-pro
@@ -47,4 +47,4 @@ Data is stored within Exchange Online, SharePoint and Microsoft Teams. Migration
 
 ### How can I determine customer data location?
 
-You can find the actual data location in Tenant Admin Center. As a tenant administrator you can find the actual data location, for committed data, by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location.
+You can find the actual data location in Tenant Admin Center. As a tenant administrator you can find the actual data location, for committed data, by navigating to **Admin -> Settings -> Org Settings -> Organization Profile -> Data Location**.

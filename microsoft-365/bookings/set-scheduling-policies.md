@@ -3,7 +3,7 @@ title: "Set Bookings scheduling policies"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 06/18/2020
+ms.date: 04/02/2025
 audience: Admin
 ms.topic: how-to
 ms.service: bookings
@@ -12,6 +12,7 @@ ms.collection:
 - Tier1
 - scotvorg
 - essentials-manage
+- operations-pod
 description: "Learn how to set scheduling policies for your business. Scheduling policies include the length of appointments, as well as acceptable lead and cancellation times."
 ---
 

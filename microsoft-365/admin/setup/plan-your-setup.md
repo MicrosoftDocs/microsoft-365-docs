@@ -2,15 +2,15 @@
 title: "Plan your setup of Microsoft 365 for business"
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
-manager: scotv
+ms.author: kwekua
+author: kwekuako
+manager: dansimp
 ms.date: 06/04/2024
 audience: Admin
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier2
 - scotvorg
 - highpri
@@ -19,7 +19,8 @@ ms.collection:
 - Adm_O365_Setup
 - Adm_TOC
 - must-keep
-ms.custom: 
+- operations-pod
+ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 - okr_smb
@@ -71,7 +72,7 @@ Use these three factors to determine which of the two options is best for your b
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2197910).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Vjso?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=853fd01e-cdaa-4a43-90e6-750215fdbc69]
 
 Congratulations on your decision to move your business to the cloud with Microsoft 365! Whether you have one person in your business or 20, doing a little planning will help you get the most out of Microsoft 365 for business.
 
@@ -183,4 +184,4 @@ For larger organizations or if you're starting from Skype for Business, on-premi
 
 ## See also
 
-[Secure your business data with Microsoft 365 for business](../../business-premium/secure-your-business-data.md)
+[Microsoft 365 for business security best practices](../security-and-compliance/m365b-security-best-practices.md)

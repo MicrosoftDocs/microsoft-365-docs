@@ -1,10 +1,10 @@
 ---
 title: Microsoft Teams EHR connector Virtual Appointments report
 author: lana-chin
-ms.author: v-chinlana
+ms.author: jtremper
 manager: jtremper
 audience: ITPro
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-365-frontline
 search.appverid: MET150
 searchScope:
@@ -34,7 +34,7 @@ ms.date: 06/26/2024
 
 The Microsoft Teams Electronic Health Record (EHR) connector Virtual Appointments report in the Microsoft Teams admin center gives you a quick and easy way to view Teams EHR-integrated virtual appointments usage in your organization.
 
-To view the report, you must be a Teams admin, Global reader, Report reader, or Global admin.
+To view the report, you must be a Teams Administrator, Global Reader, Reports Reader, or Global Administrator.
 
 > [!IMPORTANT]
 > Microsoft recommends that you use roles with the fewest permissions. This helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use a less-privileged role.

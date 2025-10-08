@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 ms.date: 07/16/2021
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
@@ -37,7 +37,7 @@ For additional information, see these resources.
 | [Microsoft Defender for Cloud Apps](/cloud-app-security) | A cloud access security broker for discovery, investigation, and governance across all your Microsoft and third-party cloud services. | [Overview](/cloud-app-security/what-is-cloud-app-security) | [Investigate](/cloud-app-security/investigate) |
 
 > [!NOTE]
-> All of these services require Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on.
+> All of these services require Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft Defender Suite add-on.
 
 Use these services to detect and respond to the following common threats from ransomware attackers:
 

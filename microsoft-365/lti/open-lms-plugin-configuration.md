@@ -1,18 +1,20 @@
 ---
 title: Set up and configure the Moodle LMS plugins for Open LMS
-author: MicrosoftHeidi
-ms.author: heidip
-manager: jacktremper
-ms.reviewer: amitman 
-ms.date: 04/06/2022
+author: jennplatt
+ms.author: avering
+manager: michal.gideoni
+ms.reviewer: avering 
+ms.date: 09/18/2025
 audience: admin
-ms.topic: article
-ms.service: microsoft-365-business
+ms.topic: install-set-up-deploy
+ms.service: microsoft-365-education
 f1.keywords:
 - CSH
 ms.collection: 
 - M365-modern-desktop
 - tier2
+- m365-education
+- all-education
 ms.localizationpriority: medium
 description: Get ready to integrate Open LMS and Microsoft Teams by setting up and configuring the Moodle LMS plugins.
 ---
@@ -113,6 +115,10 @@ Register Open LMS as an application in your Microsoft Entra ID using the PowerSh
 1. In **Choose connection method**, select **Application access**, and then select **Save changes** again.
 1. After the page refreshes, you can see another new section **Admin consent & additional information**.
     1. Select **Provide Admin Consent** link, enter your Microsoft 365 Global Administrator credentials, then **Accept** to grant the permissions.
+
+        > [!IMPORTANT]
+        > Global Administrator is a highly privileged role. Limit its use to emergency scenarios when you can't use an existing role. For more information, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
+
     1. Next to the **Microsoft Entra tenant** field, select the **Detect** button.
     1. Next to the **OneDrive for Business URL**, select the **Detect** button.
     1. After the fields populate, select the **Save changes** button again.
@@ -124,8 +130,10 @@ Register Open LMS as an application in your Microsoft Entra ID using the PowerSh
 
     1. From the Microsoft 365 Integration configuration page, select the **Sync Settings** tab.
 
-    1. In the **Sync users with Microsoft Entra ID** setting, select the checkboxes that apply to your environment. You must select the following options:  
+    1. In the **Sync users with Microsoft Entra ID** setting, select the checkboxes that apply to your environment. You must select the following options:
+       
         ✔ Create accounts in Open LMS for users in Microsoft Entra ID.
+       
         ✔ Update all accounts in Open LMS for users in Microsoft Entra ID.
 
     1. In the **User Creation Restriction** section, you can set up a filter to limit the Microsoft Entra users that are synced to Open LMS.

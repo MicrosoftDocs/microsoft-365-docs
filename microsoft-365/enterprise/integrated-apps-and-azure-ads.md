@@ -1,11 +1,11 @@
 ---
-title: "Integrated apps and Microsoft Entra ID for Microsoft 365 administrators"
-ms.author: kvice
+title: "Custom apps and Microsoft Entra ID for Microsoft 365 administrators"
+ms.author: rickki
 author: kelleyvice-msft
 manager: scotv
-ms.date: 02/14/2024
+ms.date: 08/26/2025
 audience: Admin
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: medium
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: cb2250e3-451e-416f-bf4e-363549652c2a
-description: Learn how to register and administer Office 365 integrated Apps in Microsoft Entra ID, allowing for app authorizations at the **Microsoft Entra DC admin**, or **Global admin** level.
+description: Learn how to register and administer custom extensions to Microsoft 365 in Microsoft Entra ID, allowing for app authorizations at the **Microsoft Entra DC admin**, or **Global admin** level.
 ---
 
-# Integrated apps and Microsoft Entra ID for Microsoft 365 administrators
+# Custom apps and Microsoft Entra ID for Microsoft 365 administrators
 
-There's more to managing integrated apps than just [managing user consent to apps](../admin/misc/user-consent.md). With the advent of the Microsoft 365 REST APIs, users can grant apps access to their Microsoft 365 data, such as mail, calendars, contacts, users, groups, files, and folders. By default, users need to individually grant permissions to each app.
+There's more to managing apps than just [managing user consent to apps](../admin/misc/user-consent.md). With the advent of the Microsoft 365 REST APIs, users can grant apps access to their Microsoft 365 data, such as mail, calendars, contacts, users, groups, files, and folders. By default, users need to individually grant permissions to each app.
 
 But this doesn't scale well if you want to authorize an app once at the **Microsoft Entra DC admin**, or **Global admin** level and roll it out to your whole organization through the app launcher. To do this, you must register the app in Microsoft Entra ID. There are some steps you need to take before you can register an app in Microsoft Entra ID and some background information you should know that can help you manage apps in your Microsoft 365 organization.
   

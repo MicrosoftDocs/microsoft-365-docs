@@ -4,10 +4,10 @@ f1.keywords:
 - CSH
 ms.author: kwekua
 author: kwekuako
-manager: scotv
-ms.date: 03/14/2024
+manager: dansimp
+ms.date: 04/10/2025
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
@@ -15,6 +15,7 @@ ms.collection:
 - scotvorg
 - M365-subscription-management
 - Adm_O365
+- operations-pod
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
@@ -71,9 +72,7 @@ These three release statuses are updated on each applicable message over the lif
 
 - **Launched**: The feature is generally available to all the applicable users in your organization.
 
-Updates to feature release status are provided on the original Message center post. Filtering capability on **“Status for your org.”** allows easier visibility on the updated release status.
-
-:::image type="content" source="../../media/message-center-rolloutstatus-listanddetailsview.png" alt-text="Image displaying ‘status for your org.’ updated release choices.":::
+Updates to feature release status are provided on the original Message center post. Filtering capability on **“Status for your org”** allows easier visibility on the updated release status.
 
 The release status is **ONLY** available for new and updated features that are also announced on Microsoft 365 Public Roadmap and have reached general availability status (production ready). If you do not see release status on a message, it means the release status is not available for that feature.
 
@@ -115,8 +114,6 @@ Use the **Service**, **Tag**, and **Message state**  drop-down menus to select a
 
 You can select any column heading, except **Service** and **Tag**,  to sort messages in ascending or descending order.
 
-:::image type="content" source="../../media/message-center-admin-impact1.png" alt-text="Message center view sorted by Admin impact.":::
-
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
@@ -133,16 +130,12 @@ Major updates can be reviewed by selecting the **Major update** from the **Tags*
 
 Major updates are communicated at least 30 days in advance when an action is required and might include:
 
-- Changes to daily productivity such as inbox, meetings, delegations, sharing, and access
-- Changes to themes, web parts, and other components that may affect customized features
-- Increases or decreases to visible capacity such as storage, number of rules, items, or durations
-- Changes to product branding that may:
-  - Cause end user confusion,
-  - Result in changes to help desk processes and reference material, or
-  - Change a URL
-- A new service or application
-- Changes requiring an admin action (exclusive of prevent or fix issues)
-- Changes to where your data is stored
+- User impacting changes to daily productivity such as changing a user’s inbox, meetings, delegations, sharing and access that may result in help desk calls, or organizational conformance concerns.
+- Changes to the themes, web parts, deployed Copilot agents and other components that may impact customer customizations.
+- Increases or decreases to visible capacity such as storage, number of rules, Copilot agents and prompts, items, or durations.
+- Rebranding that may cause end-user confusion or result in help desk changes, collateral changes, or URL changes if the new URL is not *.cloud.microsoft
+- A new service or application deployed with default settings turned on.
+- Changes to where data is stored or accessed.
 
 ### Preferences
 
@@ -215,7 +208,7 @@ Here's a quick overview of the information in each column.
 |Check mark|Selecting the check mark in the column heading row selects all messages currently displayed. Selecting the check mark next to one or more messages lets you take action on those messages.|
 |Message title|Message titles are brief descriptions of upcoming changes. If the full title doesn't display, hover your cursor over it and the entire title will appear in a pop-up box.|
 |Service|Icons indicate the application to which the message applies.|
-|More options|More options lets you dismiss a message, mark it as read or unread, or share it with another admin. To restore an archived message, select the **Archive** tab, select the check mark next to the message, and select **Restore**.|
+|More options|More options let you dismiss a message, mark it as read or unread, or share it with another admin. To restore an archived message, select the **Archive** tab, select the check mark next to the message, and select **Restore**.|
 |Tags| You can choose tags from the Tag drop-down to filter messages. <br> <p> **Data Privacy**: Data privacy notification (limited to global administrator and Message center Privacy reader roles). <p> **Major update**: Changes communicated at least 30 days in advance ([Major updates](#major-updates)). <p> **Retirement**: Retirement of a service or feature. <p> **New feature**: New feature or service. <p> **Feature update**: Update to an existing feature. <p> **Admin impact**: When the change clearly impacts the admin in the following ways - UI change, workflow change, control available and Specific/Potential Action. <p> **User impact**: When the change to the service clearly impacts the user - UI Change and workflow change. <p> **Updated message**: When a message is updated.|
 |Category| This is not shown by default, but can be specified in the **Choose columns** panel. Messages are identified by one of the following three categories: <p> **Prevent or fix issues**: Informs you of known issues affecting your organization and may require that you take action to avoid disruptions in service. Prevent or fix issues are different than Service health messages because they prompt you to be proactive to avoid issues. <p> **Plan for change**: Informs you of changes to Microsoft 365 that may require you to act to avoid disruptions in service. For example, we let you know about changes to system requirements or about features that are being removed. We try to provide at least 30 days' notice of any change that requires an admin to act to keep the service running normally. <p> **Stay informed**: Tells you about new or updated features we are turning on in your organization. announced first in the [Microsoft 365 Roadmap](https://go.microsoft.com/fwlink/?linkid=2070821). <p> May also let you know about planned maintenance in accordance with our Service Level Agreement. Planned maintenance may result in down time, where you or your users can't access Microsoft 365, a specific feature, or a service such as email or OneDrive for Business.|
 |Act by|We'll only have dates here if we're making a change that requires you to take an action by a certain deadline. Since we rarely use the **Act by** column, if you see something here, you should pay extra attention to it.|
@@ -239,9 +232,7 @@ Here's a quick overview of the information in each column.
 
 In the Message center, you can select a message to see details.
 
-If a Message Center post is not relevant for your organization, please provide us feedback using the options demonstrated in the image below. After you click thumbs up/down on the MC post, select "this change isn't relevant to my org."
-
-:::image type="content" source="../../media/message-center-feedbacksection.jpg" alt-text="Message center view of feedback section.":::
+If a Message Center post is not relevant for your organization, please provide us with feedback. Select thumbs up or thumbs down on the MC post and select **This change isn't relevant to my org**.
 
 > [!NOTE]
 > If you're using Microsoft 365 for Government - GCC High and Office 365 Government - DoD, you won't be able to provide feedback on a post.
@@ -299,7 +290,13 @@ When you open a message in a reading pane, you can use the **Up** and **Down** :
 
 A lot of actionable information about changes to Microsoft 365 services arrives in the Microsoft 365 message center. It can be difficult to keep track of which changes require tasks to be done, when, and by whom, and to track each task to completion. You also might want to make a note of something and tag it to check on later. You can do all this and more when you sync your messages from the Microsoft 365 admin center to Microsoft Planner. For more information, see [Track your message center tasks in Planner](/office365/planner/track-message-center-tasks-planner).
 
-For an overview of Message center, see [Message center in Microsoft 365](message-center.md). Or, to learn how to set your language preferences to enable machine translation for Message center posts, see [Language translation for Message center posts](language-translation-for-message-center-posts.md). If you'd like to program an alternative way to get real-time service health information and Message center communications, see [Working with service communications API in Microsoft Graph](/graph/api/resources/service-communications-api-overview).
+## Set language translation for Message center posts
+
+To learn how to set your language preferences to enable machine translation for Message center posts, see [Language translation for Message center posts](language-translation-for-message-center-posts.md).
+
+## Work with service communications API in Microsoft Graph
+
+If you'd like to program an alternative way to get real-time service health information and Message center communications, see [Working with service communications API in Microsoft Graph](/graph/api/resources/service-communications-api-overview).
 
 ## Unsubscribe from Message center emails
 

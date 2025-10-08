@@ -4,20 +4,21 @@ f1.keywords:
 - CSH
 ms.author: twerner
 author: twernermsft
-manager: scotv
+manager: dansimp
 ms.date: 06/20/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier2
 - scotvorg
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
 - Adm_TOC
 - must-keep
-ms.custom: 
+- operations-pod
+ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
@@ -32,7 +33,10 @@ description: "Create quick links to your email, documents, apps, SharePoint site
 
 # Add custom tiles to the app launcher
 
-You can add your own custom tiles to Apps that point to SharePoint sites, external sites, legacy apps, and more. The custom tile appears under the Apps section in Microsoft 365. Once your users launch the app, it's added automatically to the list of app launcher apps for access. This makes it easy to find the relevant sites, apps, and resources to do your job.  
+You can add your own custom tiles to Apps that point to SharePoint sites, external sites, legacy apps, and more. The custom tile appears under the Apps section in Microsoft 365. Once your users launch the app, it's added automatically to the list of app launcher apps for access. This makes it easy to find the relevant sites, apps, and resources to do your job. 
+
+> [!NOTE]
+> This capability is currently unavailable in the Microsoft 365 Copilot App. We will provide updated guidance in the future.
 
 ## Add a custom tile for Apps
 

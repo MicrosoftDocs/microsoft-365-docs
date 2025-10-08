@@ -1,11 +1,11 @@
 ---
 title: Collaborate with guests in a team (IT Admins)
-ms.author: jtremper
-author: jacktremper
-manager: pamgreen
+author: officedocspr5
+ms.author: odocspr
+manager: jtremper
 ms.date: 05/31/2024
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-solutions
 ms.collection: 
 - highpri
@@ -33,6 +33,9 @@ If you need to collaborate with guests across documents, tasks, and conversation
 
 In this article, we'll walk through the Microsoft 365 configuration steps necessary to set up a team for collaboration with guests. Once you have configured guest access, you can invite guests to teams by following the steps in [Add guests to a team in Teams](https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f).
 
+>[!IMPORTANT]
+> All Guests must be added to at least one Team before guest access features and functionality will be available to the guest account. [Learn more](https://support.microsoft.com/office/add-guests-to-a-team-in-microsoft-teams-fccb4fa6-f864-4508-bdde-256e7384a14f).
+
 > [!NOTE]
 > [Shared channels](collaborate-teams-direct-connect.md) offers a more seamless experience than guest accounts when collaborating with other Microsoft 365 organizations. Shared channels allow you to collaborate with people outside your organization using Teams channels without the need for external participants to sign in to your organization. We recommend you review [Plan external collaboration](plan-external-collaboration.md) to see if shared channels is a better options than collaborating with guests for any given scenario.
 
@@ -40,7 +43,7 @@ In this article, we'll walk through the Microsoft 365 configuration steps necess
 
 This video shows the configuration steps described in this document.</br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE44NTr?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=2c86e860-00d7-415d-b0ee-52a4b8ade515]
 
 ## Microsoft Entra External ID external collaboration settings
 

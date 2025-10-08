@@ -2,21 +2,24 @@
 title: "Microsoft Adoption Score - Privacy"
 f1.keywords:
 - NOCSH
-ms.author: camillepack
-author: camillepack
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 ms.date: 09/18/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-monikerRange: 'o365-worldwide'
-ms.collection: 
+monikerRange: o365-worldwide
+ms.collection:
 - Tier2
 - scotvorg
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
-ms.custom: AdminSurgePortfolio
+- trust-pod
+- operations-pod
+ms.custom:
+- GAUpdates
 search.appverid:
 - MET150
 - MOE150
@@ -25,7 +28,7 @@ description: "How privacy is protected with the Adoption Score."
 
 # Privacy controls for Adoption Score
 
-Adoption Score provides insights into your organization’s digital transformation journey through its use of Microsoft 365 and the technology experiences that support it.  Your organization’s score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar to yours. For more details, view the [Adoption Score overview](adoption-score.md).
+Adoption Score provides insights into your organization's digital transformation journey through its use of Microsoft 365 and the technology experiences that support it.  Your organization's score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar to yours. For more details, view the [Adoption Score overview](adoption-score.md).
 
 Your privacy is important to Microsoft. To learn how we protect your privacy, see [Microsoft's privacy statement](https://privacy.microsoft.com/privacystatement). Adoption Score gives you, as your organization's IT administrator, access to privacy settings to help make sure any Adoption Score information you view is actionable, while not compromising the trust your organization places in Microsoft.
 
@@ -60,7 +63,7 @@ Users with the Reports Reader role can view usage reporting data and the reports
 
 ## Capability to choose specific users or certain groups
 
-You can choose the users and groups whose data will be used to determine your org's people experiences insights. Omitting some groups will affect the insights calculations. You have to be a Global admin to opt your organization out of the people experiences reports. You must be a Global admin to change this setting. It can take up to 24 hours for change to apply.
+You can choose the users and groups whose data will be used to determine your org's people experiences insights. Omitting some groups will affect the insights calculations. You have to be a Global admin to opt your organization out of the people experiences reports and to change this setting. It can take up to 24 hours for change to apply.
 
 To omit certain groups:
 
@@ -103,7 +106,7 @@ To turn on group-level insights:
 
 ## Capabilities to allow admins to send in-product recommendations to specific users
 
-Organizational Messages is a new feature added to Adoption Score that will increase the actionability of admins to reach employees and drive adoption awareness. For example, to improve the content collaboration score, admins can send notifications to encourage employees who weren’t actively using cloud attachments before to use the feature when they're about to attach a physical attachment in Outlook. Currently, we enable admins to send messages to drive the adoption scenarios for OneDrive SharePoint, Teams Chat, using @mention in Outlook, and cloud attachments in Outlook. [Learn more about Adoption Score Organizational Messages](organizational-messages.md).
+Organizational Messages is a new feature added to Adoption Score that will increase the actionability of admins to reach employees and drive adoption awareness. For example, to improve the content collaboration score, admins can send notifications to encourage employees who weren't actively using cloud attachments before to use the feature when they're about to attach a physical attachment in Outlook. Currently, we enable admins to send messages to drive the adoption scenarios for OneDrive SharePoint, Teams Chat, using @mention in Outlook, and cloud attachments in Outlook. [Learn more about Adoption Score Organizational Messages](organizational-messages.md).
 
 To schedule, send, and manage an organizational message on Adoption Score, you need be one of the following admin roles:
 

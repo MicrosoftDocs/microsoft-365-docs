@@ -4,16 +4,17 @@ f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
-manager: scotv
-ms.reviewer: sahilkhurana, ronarg
+manager: dansimp
+ms.reviewer: aasthatiwari, atuldubey
 audience: Admin
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-volume-licensing
 ms.localizationpriority: medium
-ms.collection: 
-- Tier2
+ms.collection:
+- Tier1
 - scotvorg
+- operations-pod
 ms.custom:
 - commerce_vl
 - AdminTemplateSet
@@ -21,41 +22,40 @@ ms.custom:
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to access your non-Azure volume licensing invoices in the Microsoft 365 admin center."
-ms.date: 02/21/2024
+ms.date: 05/30/2025
 ---
 
 # Microsoft volume licensing invoices
 
 > [!IMPORTANT]
-> This article applies only to non-Azure volume licensing (VL) invoices and explains the format of the invoice PDF and invoice recon file that are available to VL customers.
+> This article applies only to volume licensing (VL) invoices for non-Azure products bought under a direct VL agreement type, except for Microsoft Products & Services Agreements (MPSA), Federal Government, Special agreements, and Select Plus agreements.
 
-Volume licensing (VL) customers with non-Azure products bought under a direct VL agreement can access their invoice in the Microsoft 365 admin center. This invoice applies to all types of VL programs except Microsoft Products & Services Agreements (MPSA), Federal Government, Special agreements, and Select Plus agreements.
+The invoice for your VL subscription provides a summary of charges and instructions for how to pay your invoice. You can view the invoice online in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. You can also download a copy of your invoice in the Portable Document Format (PDF) to send via email.
 
 ## Before you begin
 
-To access VL invoices in the Microsoft 365 admin center, you must satisfy the following conditions:
+To access VL invoices in the admin center, you must satisfy both of the following conditions:
 
 1. You must be the **Bill To contact** for the corresponding contracts.
-2. You must be a Volume Licensing Service Center (VLSC) user.
+2. You must have signed in to the admin center and become an Invoice Reader.
 
-## View or download your bill
+## View or download your invoice
 
-1. In the Microsoft 365 admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"> **Your products**</a> page.
-2. Select the **Volume licensing** tab, then select **Contracts**.
-3. Find the contract you want to see invoices for, select the three dots (more actions), then select **View Invoices**.
-4. On the **Invoices** page, you see the list of invoices generated for that contract, and you can download the invoice PDF and invoice recon file. For information about the invoice recon file, see [Overview of the invoice recon file](#overview-of-the-invoice-recon-file) later in this article.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">**Your products**</a> page, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144" target="_blank">Volume licensing</a> tab.
+2. In the **Contracts** section, select **View contracts**.
+3. Find the contract you want to see invoices for, select the three dots (**More actions** button), then select **View Invoices**.
+4. On the **Invoices** page, you see the list of invoices generated for that contract. You can download the invoice PDF and invoice recon file. For information about the invoice recon file, see [Overview of the invoice recon file](#overview-of-the-invoice-recon-file) later in this article.
 
 ## Overview of the invoice PDF
 
-Your invoice is a PDF that contains at least two pages.
+Your invoice is a PDF that contains at least two pages:
 
-Page one is the billing summary, and contains general information about the invoice, amount due, and payment instructions, if applicable. It also contains address information for your organization and high-level details about your order.
-
-Page two and beyond lists the individual products in your order. The last page contains the **Net Amount**, **Sales Tax**, and **Total**, which correspond with the amounts shown in the **Summary** section on page 1.
+- Page one is the billing **Summary**, and contains general information about the invoice, amount due, and payment instructions, if applicable. It also contains address information for your organization and high-level details about your order.
+- Page two and beyond lists the individual products in your order. The last page contains the **Net Amount**, **Sales Tax**, and **Total**, which correspond with the amounts shown in the **Summary** section on page one.
 
 ### Understanding your invoice
 
-At the top of page one of your invoice is the **Summary** section.
+At the top of page one of your invoice, is the **Summary** section.
 
 :::image type="content" source="../../media/volume-licensing-invoices/vlinvoices-invoicesummary.png" alt-text="The Summary section on page one of the invoice.":::
 
@@ -97,11 +97,11 @@ Total=Charges\-Commitment Usage (if applicable)+Sales Tax
 
 ### Payment Instructions
 
-The **PAYMENT INSTRUCTIONS** section contains the account information you need to send your wire transfer payment.
+The **PAYMENT INSTRUCTIONS** section contains the account information you need to send your wire transfer payment. This account information varies by country/region.
 
 :::image type="content" source="../../media/volume-licensing-invoices/vlinvoices-paymentinstructions.png" alt-text="The Payment Instructions section of the invoice that contains account information for where to send your wire transfer payment.":::
 
-### Billing Details By Product
+### Billing details by product
 
 Page two lists billing details by product, including unit price, quantity, commitment usage (if applicable), net charge, tax rate, tax amount, and total corresponding to each usage charge.
 
@@ -113,7 +113,7 @@ The invoice recon file is a CSV file that includes the same information as the I
 
 |Line item|Definition|
 |---|---|
-|Invoice Number|A unique number generated by Microsoft generated that identifies your spending for the corresponding billing period.|
+|Invoice Number|A unique number generated by Microsoft that identifies your spending for the corresponding billing period.|
 |Invoice Date|The date Microsoft created the invoice.|
 |Document Type|Determines whether it's an invoice or credit note.|
 |Agreement Number|The contract number.|
@@ -148,56 +148,63 @@ The invoice recon file is a CSV file that includes the same information as the I
 |Total|The sum of the net amount and tax amount.|
 |Is Third Party|Indicates whether the product or service is a third-party product.|
 
-## What type of invoices can I see?
+## Invoice FAQ
 
-You can see two types of invoices: debit invoice and credit memo.
+In this section:
 
-## Who receives VL invoices by email?
+[What type of invoices can I see?](#what-type-of-invoices-can-i-see)<br/>
+[Who receives volume licensing invoices by email?](#who-receives-volume-licensing-invoices-by-email)<br/>
+[What is the difference between invoice PDF and invoice recon file?](#what-is-the-difference-between-invoice-pdf-and-invoice-recon-file)<br/>
+[Why can't I see volume licensing invoices in the Microsoft 365 admin center?](#why-cant-i-see-volume-licensing-invoices-in-the-microsoft-365-admin-center)<br/>
+[How do I request permission to view volume licensing invoices?](#how-do-i-request-permission-to-view-volume-licensing-invoices)<br/>
+[How often and when am I billed?](#how-often-and-when-am-i-billed)<br/>
+[Why is my total due different from last billing period?](#why-is-my-total-due-different-from-last-billing-period)<br/>
+[What is the tax rate applied to my invoice?](#what-is-the-tax-rate-applied-to-my-invoice)<br/>
 
-The **Bill To contact** for the contract receives invoices by email from `microsoft-noreply@microsoft.com`.
+### What type of invoices can I see?
+
+You can see two types of invoice documents issued by Microsoft: debit invoices and credit memos.
+
+The admin center doesn't display invoices for volume licenses purchased via Microsoft License Solution Partners or for orders relating to Microsoft Product and Services Agreement (MPSA), Federal Government, Special Agreements, and Select Plus agreement types.
+
+### Who receives volume licensing invoices by email?
+
+The Bill To contact or participant named on the licensing contract receives invoices by email from `microsoft-noreply@microsoft.com`.
+
+You can confirm who the **Bill to contact** is by going to **Contracts** > **View contract details** > **Contacts**.
 
 Be sure to add `microsoft-noreply@microsoft.com` to your safe senders list or modify any existing email rules to avoid emails landing in your junk folder.
 
-## How do I become a Volume Licensing Service Center (VLSC) user?
+### What is the difference between invoice PDF and invoice recon file?
 
-To register on VLSC, follow the steps in  [Frequently Asked Questions for sign-in](/licensing/sign-in-faq?source=recommendations).
+The invoice PDF is a tax compliant document that provides a detailed bill for the selected billing period.
 
-## What is the difference between invoice PDF and the invoice recon file?
+The invoice recon file provides line-item level details for better reconciliation and analysis for the selected billing period.
 
-The invoice PDF is a tax compliant document that provides a detailed bill for the selected billing period. The invoice recon file provides line-item level details for better reconciliation and analysis for the selected billing period.
+> [!NOTE]
+> Currently there's no functionality to send the invoice recon file by mail.
 
-## What type of programs can I see invoices for?
-
-For now, we support all types of VL programs except MPSA, Federal Government, Special agreements, and Select Plus agreements.
-
-## Why can't I see VL invoices in the Microsoft 365 admin center?
+### Why can't I see volume licensing invoices in the Microsoft 365 admin center?
 
 There are several reasons that you might not see an invoice:
 
-- The invoice isn't ready yet.
-- You don\'t have the correct role permissions to view invoices for the account you used to sign in to the admin center.
+- The invoice isn't ready yet. Go to **View Order Details** to check the billing period.
+- You don't have the correct Invoice Reader role for the account you signed in with.
+- You only have access to invoices for licensing IDs / contracts for which you're the **Bill To contact**.  
 - The **Invoice created** date must be November 18, 2022, or later.
-- Invoices created before November 18, 2022 aren't displayed.
-- The invoice you're looking for relates to licenses purchased via a License Solution Partner, not directly from Microsoft.
-- Only invoices where you're the **Bill To contact** are visible.
+- The invoice you're looking for relates to licenses purchased via a License Solution Partner, not to purchases made directly from Microsoft. You won't see invoices for parent agreements. Purchase orders and invoices are issued at License ID level under the parent program agreement.
 
-## Why can I only see invoices for a few agreements?
+### How do I request permission to view volume licensing invoices?
 
-You only have access to invoices for which you have the **Bill To contact** role on the corresponding contract.
+The Invoice Reader VL role is automatically assigned in the admin center to the **Bill To Contact** named in the agreement contract submitted by your Microsoft partner or seller at the time of contract creation.
 
-## Why can't I see old invoices?
+The Invoice Reader role can't be assigned or removed by another VL Administrator. To change the contact Bill To requires your Microsoft partner or seller to complete a Change of Contact Information Request to update the legal participants, or contacts. Contact your Microsoft partner or seller for more information.
 
-You can only see invoices posted in the Microsoft 365 admin center starting on November 18, 2022.
+### How often and when am I billed?
 
-## How do I request permission to view the invoices?
+Depending on the billing frequency you choose when you buy your subscription, you receive an invoice either upfront, monthly, every three months, every six months, or yearly. The amount of time since the last invoice date is the **Billing Period** and is on page one of the invoice. This time represents the date range during which charges accrue for the current invoice. If you made a change to your subscription outside of this date range, like adding or removing licenses, the associated charges appear on the invoice for the next billing period.
 
-Only the **Bill To contact** participant on the agreement can view the corresponding invoices. If you want to change anything, it must be changed at the agreement participant level. Contact your Microsoft partner for further information.
-
-## How often and when am I billed?
-
-Depending on the billing frequency you choose when you bought your subscription, you receive an invoice either upfront, monthly, every three months, every six months, or yearly. The amount of time since the last invoice date is the **Billing Period** and is on page one of the invoice. This time represents the date range during which charges accrue for the current invoice. If you made a change to your subscription outside of this date range, like adding or removing licenses, the associated charges appear on the invoice for the next billing period.
-
-## Why is my total due different from last billing period?
+### Why is my total due different from last billing period?
 
 If the amount billed is different than expected, that can happen for a few reasons:
 
@@ -205,27 +212,27 @@ If the amount billed is different than expected, that can happen for a few reaso
 - You opted for a ramped pricing model.
 - Your subscription renewed for a new term and the license price changed.
 
-## What is the tax rate applied to my invoice?
+### What is the tax rate applied to my invoice?
 
-The tax rate applied to the invoice depends on the country/region of billing. You can check the invoice recon file for the tax rate applied to each
-item. For more information, contact your Microsoft partner.
+The tax rate applied to the invoice depends on the country/region of billing. You can check the invoice recon file for the tax rate applied to each item.
 
-## Who can I contact for questions related to pricing and the coverage period?
+For more information, contact your Microsoft partner or seller.
 
-Contact your Microsoft partner for invoice support.
+## Contact volume licensing support
 
-## How do I report an error in the invoice data?
+> [!IMPORTANT]
+> Microsoft Volume Licensing Support teams don't make changes to volume licensing orders or invoices.
 
-Contact your Microsoft partner for invoice support.
+For help finding VL invoices, Bill to Contacts and Invoice Readers, submit a case in the admin center > <a href=
+"https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Help & Support</a>. If you can't access the admin center, see [Contact volume licensing support](contact-vl-support.md).
 
-## How can I make a request for the invoice PDF and recon file to be sent by mail?
+Customers should contact their Microsoft partner or seller for questions relating to the following issues:
 
-This functionality isn't currently available.
+- The accuracy of invoice or pricing applied to products
+- The billing frequency or billing coverage periods
+- The application of tax rates on invoices
+- Changing the legal participant Bill to Contact on a License ID
+- Submitting or canceling a new order or a renewal order
 
-## How can I get help for reconciling credit for multiple invoices?
-
-Contact your Microsoft partner for invoice support.
-
-## How do I contact support?
-
-In the left navigation pane in the Microsoft 365 admin center, customers can create a support request by selecting **Support** \> **New Service request**.
+> [!TIP]
+> To identify the partner or seller for a licensing ID, go to the **Billing** > **Your Products** page, select the **Volume Licensing** tab, select **Contracts**, then select **View contract details**.

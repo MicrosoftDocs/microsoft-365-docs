@@ -2,22 +2,24 @@
 title: "Update your MX records to transition to the global Exchange Online service"
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
-manager: scotv
+ms.author: kwekua
+author: kwekuako
+manager: dansimp
 ms.date: 05/01/2020
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.custom: 
+ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 ms.collection:
 - scotvorg
+- operations-pod
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to transition from Microsoft Cloud Germany Exchange Online to the global Exchange Online service"
 ---
+
 # Update your MX records to transition to the global Exchange Online service
 
 1. Sign in to Microsoft 365 admin center, and go to **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>

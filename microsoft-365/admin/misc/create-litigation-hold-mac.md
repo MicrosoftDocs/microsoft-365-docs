@@ -3,12 +3,12 @@ title: "Place a mailbox on Litigation Hold"
 description: "Learn how to place a mailbox on Litigation hold, retaining all the mailbox content during an investigation."
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekuako
-manager: scotv
-ms.date: 06/27/2024
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
+ms.date: 04/10/2025
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: purview-ediscovery
 ms.localizationpriority: medium
 ms.custom:
@@ -78,7 +78,7 @@ Get-Mailbox <username> | FL LitigationHoldEnabled
 
 A value of *True* indicates that the mailbox is on litigation hold.
 
-For more information, see [Set-Mailbox](/powershell/module/exchange/set-mailbox).
+For more information, see [Set-Mailbox](/powershell/module/exchangepowershell/set-mailbox).
 
 ## How does Litigation hold work?
 

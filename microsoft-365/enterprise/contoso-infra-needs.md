@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: kvice
 manager: scotv
-ms.date: 05/17/2024
+ms.date: 06/19/2025
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -67,47 +67,29 @@ Contoso business needs fall into five main categories:
 
 ### Security
 
-- Identity and access management
+- Identity and access management: Enforce multifactor and other forms of authentication and protect user and administrator account credentials.
 
-  Enforce multifactor and other forms of authentication and protect user and administrator account credentials.
+- Threat protection: Protect against external security threats, including email and operating system-based malware.
 
-- Threat protection
+- Information protection: Lock down access to and encrypt high-value digital assets, such as customer data, design and manufacturing specifications, and employee information.
 
-  Protect against external security threats, including email and operating system-based malware.
-
-- Information protection
-
-  Lock down access to and encrypt high-value digital assets, such as customer data, design and manufacturing specifications, and employee information.
-
-- Security management
-
-  Monitor security posture and detect and respond to threats in real time.
+- Security management: Monitor security posture and detect and respond to threats in real time.
 
 ### Remote and mobile access and business partners
 
-- Improve security for remote and mobile workers
+- Improve security for remote and mobile workers: Implement bring your own device (BYOD) and company-owned device management to ensure secured access, correct application behavior, and company data protection.
 
-  Implement bring your own device (BYOD) and company-owned device management to ensure secured access, correct application behavior, and company data protection.
+- Reduce remote access infrastructure for employees: Reduce maintenance and support costs and improve performance for remote access solution by moving commonly accessed resources to the cloud.
 
-- Reduce remote access infrastructure for employees
-
-  Reduce maintenance and support costs and improve performance for remote access solution by moving commonly accessed resources to the cloud.
-
-- Provide better connectivity and lower overhead for business-to-business (B2B) transactions
-
-  Replace an aging and expensive partner extranet with a cloud-based solution that uses federated authentication.
+- Provide better connectivity and lower overhead for business-to-business (B2B) transactions: Replace an aging and expensive partner extranet with a cloud-based solution that uses federated authentication.
 
 ### Compliance
 
-- Adhere to regional regulatory requirements
-
-  Ensure compliance with industry and regional regulations for data storage, encryption, data privacy, and personal data regulations, such as the General Data Protection Regulation (GDPR) for the Europe Union.
+- Adhere to regional regulatory requirements: Ensure compliance with industry and regional regulations for data storage, encryption, data privacy, and personal data regulations, such as the General Data Protection Regulation (GDPR) for the Europe Union.
 
 ### Management
 
-- Lower IT overhead for managing software running on client PCs and devices
-
-  Automate installation of updates to the Windows operating system and Microsoft 365 Apps for enterprise across the organization.
+- Lower IT overhead for managing software running on client PCs and devices: Automate installation of updates to the Windows operating system and Microsoft 365 Apps for enterprise across the organization.
 
 ## Mapping Contoso business needs to Microsoft 365 for enterprise
 
@@ -131,8 +113,10 @@ The Contoso IT department determined the following mapping of business needs to 
 | Compliance |  |  |
 |  | Adhere to regional regulatory requirements | GDPR features in Microsoft 365 |
 | Management |  |  |
-|  | Lower IT overhead for installing client updates | Windows 10 Enterprise updates <br> Microsoft 365 Apps for enterprise updates |
-||||
+|  | Lower IT overhead for installing client updates | Windows 11 Enterprise updates <br> Microsoft 365 Apps for enterprise updates |
+
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. This helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
 
 ## Next step
 
@@ -141,5 +125,3 @@ Learn about the Contoso Corporation [on-premises network](contoso-networking.md)
 ## See also
 
 [Microsoft 365 for enterprise overview](microsoft-365-overview.md)
-
-[Test lab guides](m365-enterprise-test-lab-guides.md)

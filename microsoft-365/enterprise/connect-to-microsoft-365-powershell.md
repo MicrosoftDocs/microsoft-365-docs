@@ -3,9 +3,9 @@ title: "Connect to Microsoft 365 with Microsoft Graph PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 02/01/2024
+ms.date: 12/03/2024
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: high
@@ -64,7 +64,7 @@ You must use a 64-bit version of Windows. You can use the following versions of 
 
 - Windows 11, Windows 10, Windows 8.1, Windows 8, or Windows 7 Service Pack 1 (SP1)
 
-- Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, or Windows Server 2008 R2 SP1
+- Windows Server 2022, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, or Windows Server 2008 R2 SP1
 
 > [!NOTE]
 > For Windows 8.1, Windows 8, Windows 7 Service Pack 1 (SP1), Windows Server 2012 R2, Windows Server 2012, and Windows Server 2008 R2 SP1, download and install the [Windows Management Framework 5.1](https://www.microsoft.com/download/details.aspx?id=54616).
@@ -106,7 +106,7 @@ The Microsoft Graph PowerShell SDK comes in two modules, Microsoft.Graph and Mic
 
 After the installation is completed, you can verify the installed version with the following command:
 
-```azurepowershell
+```powershell
 Get-InstalledModule Microsoft.Graph
 ```
 

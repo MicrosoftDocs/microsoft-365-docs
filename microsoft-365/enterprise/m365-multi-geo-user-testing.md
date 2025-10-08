@@ -10,7 +10,7 @@ ms.subservice: multi-tenant
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 03/05/2024
+ms.date: 02/12/2025
 ms.custom:
   - it-pro
   - has-azure-ad-ps-ref
@@ -35,7 +35,7 @@ If your company's users are synchronized from an on-premises Active Directory sy
 
 Follow the process in <a href="/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation" target="_blank">Azure Active Directory Connect sync: Configure preferred data location for Microsoft 365 resources</a> to configure Preferred Data Location sync from your on-premises Active Directory Domain Services (AD DS) to Microsoft Entra ID.
 
-We recommend that you include setting the user's Preferred Data Location as a part of your standard user creation workflow.
+We recommend that you include setting the user's Preferred Data Location (PDL) as a part of your standard user creation workflow.
 
 >[!IMPORTANT]
 >For new users with no OneDrive provisioned, license the account and wait at least 48 hours after a user's PDL is synchronized to Microsoft Entra ID for the changes to propagate before the user logs in to OneDrive. (Setting the preferred data location before the user logs in to provision their OneDrive ensures that the user's new OneDrive will be provisioned in the correct location.)

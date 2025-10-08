@@ -1,10 +1,10 @@
 ---
 title: Deploy Shifts to your frontline teams at scale
 author: lana-chin
-ms.author: v-chinlana
+ms.author: jtremper
 manager: jtremper
-ms.reviewer: arnavgupta, imarquesgil
-ms.topic: conceptual
+ms.reviewer: arnavgupta
+ms.topic: install-set-up-deploy
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150

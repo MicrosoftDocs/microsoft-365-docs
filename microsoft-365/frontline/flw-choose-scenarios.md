@@ -3,10 +3,10 @@ title: Choose your scenarios for Microsoft 365 for frontline workers
 description: Learn about scenarios you can easily implement for the frontline workers in your organization.
 search.appverid: MET150
 author: lana-chin
-ms.author: v-chinlana
+ms.author: jtremper
 manager: jtremper
 audience: admin
-ms.topic: conceptual
+ms.topic: solution-overview
 ms.service: microsoft-365-frontline
 ms.localizationpriority: high
 ms.collection: 
@@ -17,7 +17,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 03/06/2024
+ms.date: 10/06/2025
 ---
 
 # Choose your scenarios for Microsoft 365 for frontline workers
@@ -44,7 +44,7 @@ Communications solutions connect your frontline workers and allow them to collab
 
 <!-- Watch the following video to see an example of how you can help your frontline workers connect and collaborate in retail organizations:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRJVw]-->
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f6689716-5481-4414-b003-ad5c3a47ea0b]-->
 
 | Scenario | Description | Services | Teams apps |
 | --- | --- | --- |--- |
@@ -90,23 +90,19 @@ Drive operational efficiency by digitizing paper-based processes and automating 
 
 <!--Watch the following video to see an example of how you can simplify business processes in retail environments:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRzfc]-->
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=229ffc24-44f6-4bfd-bac2-f1ac0df88dec]-->
 
 | Scenario | Description | Services | Teams apps |
 | --- | --- | --- | --- |
 | [Simplify business processes](simplify-business-processes.md) | Use [task publishing](/microsoftteams/manage-planner-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json#task-publishing) to create standard processes across sites, Lists to manage information and track ongoing processes, and streamline requests with Approvals. Automated workflows can speed up and automate actions, like collecting data or routing notifications. | Teams<br>Power Platform | Planner, Lists, Approvals |
 
-## Virtual Appointments
+## Appointments
 
 :::image type="icon" source="media/virtual-appointment-teams.png":::
 
-Use the Virtual Appointments app and Microsoft Teams to schedule, manage, and host virtual appointments with clients and customers. You can integrate Forms with your virtual appointments to get the right information about your customers, or as part of your customer support experience to learn what your customers need.
+Use Microsoft Bookings to schedule, manage, and host appointments with clients and customers. You can integrate Forms with your appointments to get the right information about your customers, or as part of your customer support experience to learn what your customers need.
 
-Watch the following video for an overview of the virtual appointments experience in Teams:
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4TQop]
-
-More information: [Virtual Appointments with Microsoft Teams](virtual-appointments.md)
+More information: [Appointments with Microsoft Teams](virtual-appointments.md)
 
 ## More scenarios and solutions with the digital ecosystem
 

@@ -1,7 +1,12 @@
 {
    "redirections": [
      {
-       "source_path": "microsoft-365/admin/manage/servicenow-aad-oauth-token.md",
+       "source_path": "microsoft-365/admin/manage/manage-plugins-for-copilot-in-integrated-apps.md",
+       "redirect_url": "/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps",
+       "redirect_document_id": false
+     },
+     {
+       "source_path": "microsoft-365/admin/manage/servicenow-aad-oauth-token-v1.md",
        "redirect_url": "/microsoft-365/admin/manage/servicenow-authentication",
        "redirect_document_id": false
      },
@@ -1311,6 +1316,11 @@
        "redirect_document_id": false
      },
      {
+       "source_path": "microsoft-365/admin/support-contact-info.md",
+       "redirect_url": "https://support.microsoft.com/topic/customer-service-phone-numbers-c0389ade-5640-e588-8b0e-28de8afeb3f2#ID0EBBD=signinorgid",
+       "redirect_document_id": false
+     },
+     {
        "source_path": "microsoft-365/admin/misc/sign-up-for-online-services.md",
        "redirect_url": "/microsoft-365/admin/misc/remove-a-domain-from-another-account",
        "redirect_document_id": false
@@ -1352,7 +1362,7 @@
      },
      {
        "source_path": "microsoft-365/admin/basic-mobility-security/troubleshoot.md",
-       "redirect_url": "/microsoft-365/admin/basic-mobility-security/frequently-asked-questions",
+       "redirect_url": "/microsoft-365/admin/security-and-compliance/m365b-devices-basic-mobility-security-overview#basic-mobility-and-security-faq",
        "redirect_document_id": false
      },
      {
@@ -1362,7 +1372,7 @@
      },
      {
        "source_path": "microsoft-365/admin/basic-mobility-security/get-details-about-managed-devices.md",
-       "redirect_url": "/microsoft-365/admin/basic-mobility-security/manage-device-access-settings",
+       "redirect_url": "/microsoft-365/admin/security-and-compliance/m365b-devices-basic-mobility-security-view-device-details",
        "redirect_document_id": false
      },
      {
@@ -1392,7 +1402,7 @@
      },
      {
        "source_path": "microsoft-365/admin/devices/choose-device-security.md",
-       "redirect_url": "/microsoft-365/admin/basic-mobility-security/choose-between-basic-mobility-and-security-and-intune",
+       "redirect_url": "/microsoft-365/admin/security-and-compliance/m365b-devices-basic-mobility-security-overview#comparison-of-basic-mobility-and-security-and-microsoft-intune",
        "redirect_document_id": false
      },
      {
@@ -1676,9 +1686,9 @@
        "redirect_document_id": false
      },
      { 
-        "source_path": "microsoft-365/admin/dns/create-dns-records-at-1-1-internet.md",
-        "redirect_url": "/microsoft-365/admin/dns/create-dns-records-at-ionos-com",
-        "redirect_document_id": true
+       "source_path": "microsoft-365/admin/dns/create-dns-records-at-1-1-internet.md",
+       "redirect_url": "/microsoft-365/admin/dns/create-dns-records-at-ionos-com",
+       "redirect_document_id": true
      },
      {
        "source_path": "microsoft-365/admin/dns/change-nameservers-at-aws.md",
@@ -1857,7 +1867,7 @@
      },
      {
        "source_path": "microsoft-365/admin/devices/device-states.md",
-       "redirect_url": "/microsoft-365/business-premium/m365bp-device-states",
+       "redirect_url": "/defender-business/mdb-manage-devices",
        "redirect_document_id": false
      },
      {
@@ -1907,7 +1917,7 @@
      },
      {
        "source_path": "microsoft-365/admin/security-and-compliance/set-up-compliance.md",
-       "redirect_url": "/microsoft-365/business-premium/m365bp-set-up-compliance",
+       "redirect_url": "/microsoft-365/admin/security-and-compliance/m365bp-information-protection",
        "redirect_document_id": false
      },
      {
@@ -1922,17 +1932,17 @@
      },
      {
        "source_path": "microsoft-365/admin/setup/business-set-up.md",
-       "redirect_url": "/microsoft-365/business-premium/m365bp-setup",
+       "redirect_url": "/microsoft-365/business-premium/m365-business-premium-setup",
        "redirect_document_id": false
      },
      {
        "source_path": "microsoft-365/admin/security-and-compliance/threats-detected-defender-av.md",
-       "redirect_url": "/microsoft-365/business-premium/m365bp-review-threats-take-action",
+       "redirect_url": "/defender-endpoint/review-detected-threats",
        "redirect_document_id": false
      },
      {
        "source_path": "microsoft-365/admin/security-and-compliance/review-threats-take-action.md",
-       "redirect_url": "/microsoft-365/business-premium/m365bp-review-threats-take-action",
+       "redirect_url": "/defender-endpoint/review-detected-threats",
        "redirect_document_id": false
      },
      {
@@ -2001,19 +2011,84 @@
        "redirect_document_id": false
      },
      {
-       "source_path": "microsoft-365/admin/security-and-compliance/secure-your-business-data.md",
-       "redirect_url": "/microsoft-365/business-premium/secure-your-business-data",
-       "redirect_document_id": false
-     },
-     {
        "source_path": "microsoft-365/admin/security-and-compliance/enable-modern-authentication.md",
        "redirect_url": "/microsoft-365/admin",
        "redirect_document_id": false
      },
      {
        "source_path": "microsoft-365/admin/basic-mobility-security/privacy-and-security.md",
-       "redirect_url": "/microsoft-365/admin/basic-mobility-security/overview",
+       "redirect_url": "/microsoft-365/admin/security-and-compliance/m365b-devices-basic-mobility-security-overview",
        "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/admin/basic-mobility-security/capabilities.md",
+      "redirect_url": "/microsoft-365/admin/security-and-compliance/m365b-devices-basic-mobility-security-overview",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/admin/basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md",
+      "redirect_url": "/microsoft-365/admin/security-and-compliance/m365b-devices-basic-mobility-security-overview#comparison-of-basic-mobility-and-security-and-microsoft-intune",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/admin/basic-mobility-security/create-an-apns-certificate-for-ios-devices.md",
+      "redirect_url": "/microsoft-365/admin/security-and-compliance/m365b-devices-basic-mobility-security-set-up#step-3-create-an-apple-push-notification-service-certificate-for-apple-devices",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/admin/basic-mobility-security/create-device-security-policies.md",
+      "redirect_url": "/microsoft-365/admin/security-and-compliance/m365b-devices-basic-mobility-security-policies-configure",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/admin/basic-mobility-security/enroll-your-mobile-device.md",
+      "redirect_url": "/microsoft-365/admin/security-and-compliance/m365b-devices-basic-mobility-security-enroll-devices",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/admin/basic-mobility-security/frequently-asked-questions.yml",
+      "redirect_url": "/microsoft-365/admin/security-and-compliance/m365b-devices-basic-mobility-security-overview#basic-mobility-and-security-faq",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/admin/basic-mobility-security/manage-device-access-settings.md",
+      "redirect_url": "/microsoft-365/admin/security-and-compliance/m365b-devices-basic-mobility-security-view-device-details",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/admin/basic-mobility-security/manage-enrolled-devices.md",
+      "redirect_url": "/microsoft-365/admin/security-and-compliance/m365b-devices-basic-mobility-security-overview",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/admin/basic-mobility-security/overview.md",
+      "redirect_url": "/microsoft-365/admin/security-and-compliance/m365b-devices-basic-mobility-security-overview",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/admin/basic-mobility-security/set-up.md",
+      "redirect_url": "/microsoft-365/admin/security-and-compliance/m365b-devices-basic-mobility-security-set-up",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/admin/basic-mobility-security/turn-off.md",
+      "redirect_url": "/microsoft-365/admin/security-and-compliance/m365b-devices-basic-mobility-security-turn-off",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/admin/basic-mobility-security/wipe-mobile-device.md",
+      "redirect_url": "/microsoft-365/admin/security-and-compliance/m365b-devices-basic-mobility-security-wipe-devices",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/admin/admin-overview/what-is-microsoft-365.md",
+      "redirect_url": "/microsoft-365/admin/security-and-compliance/m365bp-security-benefits",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/admin/setup/priority-accounts.md",
+      "redirect_url": "/microsoft-365/admin/security-and-compliance/priority-accounts",
+      "redirect_document_id": false
      },
      {
        "source_path": "microsoft-365/admin/misc/deleted-users-checklist.md",
@@ -2119,46 +2194,131 @@
       "source_path": "microsoft-365/admin/misc/move-email-and-data-to-office-365-business-premium.md",
       "redirect_url": "https://support.microsoft.com/office/move-your-old-email-calendars-and-contacts-to-microsoft-365-2c37f0b7-2915-423c-b35e-9e03267f23dc",
       "redirect_document_id": false
-      },
-      {
+    },
+    {
       "source_path": "microsoft-365/admin/manage/servicenow-testing-the-configuration-v1.md",
       "redirect_url": "/microsoft-365/manage/servicenow-testing-the-configuration",
       "redirect_document_id": false
-      },
-      {
+    },
+    {
       "source_path": "microsoft-365/admin/manage/servicenow-troubleshooting-v1.md",
       "redirect_url": "/microsoft-365/admin/manage/servicenow-troubleshooting",
       "redirect_document_id": false
-      },
-      {   
+    },
+    {
       "source_path": "microsoft-365/admin/manage/servicenow-basic-authentication-v1.md",
       "redirect_url": "/microsoft-365/admin/manage/servicenow-authentication",
       "redirect_document_id": false
-      },
-      {
+    },
+    {
       "source_path": "microsoft-365/admin/manage/servicenow-overview-v1.md",
       "redirect_url": "/microsoft-365/admin/manage/servicenow-overview",
       "redirect_document_id": false
-      },
-      {
+    },
+    {
       "source_path": "microsoft-365/admin/services-in-china/parity-between-azure-information-protection.md",
       "redirect_url": "/azure/information-protection/parity-between-azure-information-protection",
       "redirect_document_id": false
-      },
-      {
+    },
+    {
       "source_path": "microsoft-365/admin/email/access-email-from-a-mobile-device.md",
       "redirect_url": "/microsoft-365/admin/setup/set-up-mobile-devices",
       "redirect_document_id": false
-      },
-      {
+    },
+    {
       "source_path": "microsoft-365/admin/add-users/admin-roles-page.md",
       "redirect_url": "/microsoft-365/admin/add-users/assign-admin-roles",
       "redirect_document_id": false
-      },
-      {
+    },
+    {
       "source_path": "microsoft-365/admin/misc/account-disabled-error.md",
       "redirect_url": "/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app",
       "redirect_document_id": false
-      }      
-   ]
- }
+    },
+    {
+      "source_path": "microsoft-365/enterprise/identity-sync.md",
+      "redirect_url": "/microsoft-365/enterprise/deploy-identity-solution-identity-model",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/google-groups-migration.md",
+      "redirect_url": "/microsoft-365/enterprise/deploy-identity-solution-identity-model",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/misc/experience-insights-help-articles.md",
+      "redirect_url": "/microsoft-365/admin/misc/experience-insights-dashboard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/email/remove-license-from-shared-mailbox.md",
+      "redirect_url": "/microsoft-365/admin/email/create-a-shared-mailbox",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/activity-reports/agent-usage.md",
+      "redirect_url": "/microsoft-365/admin/activity-reports/microsoft-365-copilot-agents",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/misc/places-ios-mobile.md",
+      "redirect_url": "/microsoft-365/admin/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/misc/admin-controls-profile-videos.md",
+      "redirect_url": "/microsoft-365/admin/add-users/change-user-profile-photos.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/manage/change-contact-preferences.md",
+      "redirect_url": "/microsoft-365/admin/manage/change-address-contact-and-more",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/manage/use-qr-code-download-outlook.md",
+      "redirect_url": "https://go.microsoft.com/fwlink/?linkid=2309759",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/adoption/ai-assistance.md",
+      "redirect_url": "/microsoft-365/admin/adoption/ai-adoption-score",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/add-users/add-new-employee.md",
+      "redirect_url": "https://support.microsoft.com/office/7f34c318-e772-46a5-8c0a-ab86661542d1",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/bookings/hide-service-on-booking-page.md",
+      "redirect_url": "/microsoft-365/bookings/define-service-offerings.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/bookings/set-buffer-time.md",
+      "redirect_url": "/microsoft-365/bookings/set-buffer-time.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/m365-feature-descriptions.md",
+      "redirect_url": "/office365/servicedescriptions/office-365-service-descriptions-technet-library",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/misc/welcome-business-assist.md",
+      "redirect_url": "/microsoft-365/admin/get-help-support",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/activity-reports/message-consumption.md",
+      "redirect_url": "/microsoft-365/admin/activity-reports/microsoft-365-copilot-credits",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/misc/azure-ad-setup-guides.md",
+      "redirect_url": "/entra/fundamentals/entra-admin-center#explore-the-microsoft-entra-admin-center",
+      "redirect_document_id": false
+    }
+  ]
+}

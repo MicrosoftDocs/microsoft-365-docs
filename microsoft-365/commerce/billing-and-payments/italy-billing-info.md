@@ -4,25 +4,26 @@ f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
-manager: scotv
+manager: dansimp
 ms.reviewer: jkinma, ramagane
 audience: Admin
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-management
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
+- operations-pod
 search.appverid: MET150
-description: "Learn about information specifically for Microsoft 365 for business in Italy." 
-ms.custom: 
+description: "Learn about information specifically for Microsoft 365 for business in Italy."
+ms.custom:
 - commerce_billing
 - admindeeplinkMAC
-monikerRange: 'o365-worldwide'
-ms.date: 03/27/2024
+monikerRange: o365-worldwide
+ms.date: 09/29/2025
 ---
 
 # Billing information for Microsoft 365 for business in Italy

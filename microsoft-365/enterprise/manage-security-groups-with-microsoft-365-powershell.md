@@ -3,9 +3,9 @@ title: "Manage security groups with PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 02/14/2024
+ms.date: 12/06/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: medium
@@ -39,8 +39,6 @@ When a command block in this article requires that you specify variable values, 
 1. Copy the command block to the clipboard and paste it into Notepad or the PowerShell Integrated Script Environment (ISE).
 2. Fill in the variable values and remove the "<" and ">" characters.
 3. Run the commands in the PowerShell window or the PowerShell ISE.
-
-See [Maintain security group membership](maintain-group-membership-with-microsoft-365-powershell.md) to manage group membership with PowerShell.
 
 ## Manage security groups using Microsoft Graph PowerShell
 

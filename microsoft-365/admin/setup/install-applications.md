@@ -2,23 +2,24 @@
 title: "Install Microsoft 365 apps"
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
-manager: scotv
+ms.author: kwekua
+author: kwekuako
+manager: dansimp
 ms.date: 05/28/2024
 audience: Admin
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier3
 - ContentEngagementFY23
 - scotvorg
 - highpri
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
 - Adm_TOC
 - must-keep
+- operations-pod
 search.appverid:
 - MET150
 - MOE150
@@ -43,7 +44,7 @@ Now that you've set up Microsoft 365, you can install individual apps on your Ma
   
 ## Watch: Install Microsoft 365 apps
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1?autoplay=false]
+> [!VIDEO dc089097-90e3-4e20-a10b-985e58240101]
 
 Microsoft 365 productivity apps can be found on your  **Start** menu. If you don't see them, you can install them yourself.
 

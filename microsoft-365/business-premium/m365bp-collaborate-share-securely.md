@@ -6,7 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: deniseb
 audience: Admin
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-365-business-security
 ms.date: 05/31/2024
 ms.localizationpriority: medium
@@ -15,6 +15,7 @@ ms.collection:
 - m365solution-smb
 - m365-security
 - tier2
+- trust-pod
 ms.custom:
 - MiniMaven
 - MSB365
@@ -37,4 +38,4 @@ Your steps are to:
 - [Share files and videos](share-files-and-videos.md).
 - [Create a communication site](create-communications-site.md).
 
-Once you've achieved these steps, proceed to [Set up and secure managed devices](m365bp-protect-managed-devices.md).
+Once you've achieved these steps, proceed to [Set up and secure managed devices](/microsoft-365/admin/security-and-compliance/m365bp-devices-enrollment).

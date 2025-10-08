@@ -2,10 +2,10 @@
 title: "Microsoft 365 admin center - Overview"
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
-manager: scotv
-ms.date: 10/23/2023
+ms.author: kwekua
+author: kwekuako
+manager: dansimp
+ms.date: 03/19/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -17,12 +17,13 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- operations-pod
 ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 - admindeeplinkMAC
-monikerRange: 'o365-worldwide'
+monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
@@ -34,7 +35,7 @@ description: "Use either simplified view in the Microsoft 365 admin center to ma
 
 Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
-The Microsoft 365 admin center gives users a central location to take care of common admin tasks, such as: 
+The Microsoft 365 admin center gives users a central location to take care of common admin tasks, such as:
 
 - Manage users: [Add users and assign licenses at the same time](../add-users/add-users.md), [Delete or restore users](../add-users/delete-a-user.md), or [Reset a user's password](../add-users/reset-passwords.md).
 
@@ -53,8 +54,10 @@ Here are the features and settings you'll find in the left-hand navigation of th
 |Menu|What it's for|
 |---|---|
 |**Home**|This is the landing page in the admin center. You'll see where to manage users, billing, service health, and reports.|
+|**Copilot**|Manage everything related to Copilot. View insights about how people are using and learning about Copilot, assign licenses, find training, change settings, and more.|
 |**Users**|Create and manage users in your organization, like employees or students. You can also set their permission level or reset their passwords.|
-|**Groups**|Create and manage groups in your organization, such as a Microsoft 365 group, distribution group, security group, or shared mailbox. Learn how to [create](../create-groups/create-groups.md) and [manage](../create-groups/manage-groups.md) groups.|
+|**Teams and groups**|Create and manage groups in your organization, such as a Microsoft 365 group, Microsoft 365 Teams, distribution group, security group, or shared mailbox. Learn how to [create](../create-groups/create-groups.md) and [manage](../create-groups/manage-groups.md) groups.|
+|**Roles**|Assign Microsoft Entra (Microsoft Entra ID) built-in roles to users who need access to other admin centers and resources in Microsoft Entra ID, such as users, groups, and apps that use Microsoft Graph API.|
 |**Resources**|Create and manage resources, like a SharePoint site collection. Learn how to [create site collections](/sharepoint/create-site-collection).|
 |**Billing**|View, purchase, or cancel subscriptions for your organization. View past billing statements or view the number of assigned licenses to individual users. Learn how to [manage billing](../../commerce/index.yml).|
 |**Support**|View existing service requests or create new ones. Learn more in [Contact support for business products - Admin Help](../../business-video/get-help-support.md).|
@@ -77,7 +80,7 @@ Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?l
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2197911).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWD3sq?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=8259f3d5-ecdb-452f-b055-76f6a6b969aa]
 
 With the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, you can reset passwords, view your invoice, add or remove users, and much more all in one place.
 
@@ -91,15 +94,17 @@ Under **Your organization** on the **Users** tab is a list of people who can acc
 
 On the **Teams** tab, create a new team or manage existing teams. You can manage the members of a team or select the three dots (more actions) to change other Teams settings.
 
-On the **Subscriptions** tab, add more products, add licenses, or use the three dots (more actions) menu to modify licenses or payment method.
+On the **Products** tab, add more products, add licenses, or use the three dots (more actions) menu to modify licenses or payment method.
+
+On the **Upcoming changes** tab, view relevant announcements about new and updated features to Microsoft 365 apps.
 
 On the **Learn** tab, browse videos and articles about the admin center and other Microsoft 365 features. To explore more advanced features of the admin center, open the navigation menu and expand the headings to see more. Select **Show all** to see everything in the navigation menu or use the search bar to quickly find what you're looking for.
 
-If you need assistance, select **Help & support**. Search for topic you want help with and view the recommended solution or select the headset to contact support, and then enter your question and contact information.
+If you need assistance, select **Help & support** (the headphones icon). Search for topic you want help with and view the recommended solution or select the headset to contact support, and then enter your question and contact information. 
 
 ## Watch: The admin center in dashboard view
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfvDL?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=1fae0a7d-cee3-454e-b6d7-1376ee858314]
 
 The <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> is where you manage your business in the cloud. You can complete such tasks as adding and removing users, changing licenses, and resetting passwords.
 
@@ -148,7 +153,7 @@ If you have no idea who to contact at your work or school for help, try asking t
 
 1. Sign in at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.cloud.microsoft</a>, go to the navigation pane and select **Settings** > **Org settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">**Organization profile** tab</a>.
 
-2. Go to the **Release preferences** card, and then select **Edit**.
+2. Select **Release preferences**.
 
 3. Select either **Targeted release for everyone** or **Targeted release for selected users**. If you choose Targeted release for selected users, make sure that you add your admin account (and any other admins in your org who want to participate) to the list of selected users.
 

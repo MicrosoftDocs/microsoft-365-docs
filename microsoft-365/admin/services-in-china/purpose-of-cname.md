@@ -2,10 +2,10 @@
 title: "What's the purpose of the Office 365 CNAME record for MSOID?"
 f1.keywords:
 - NOCSH
-ms.author: nkagole
-author: nataliekagole
-manager: scotv
-ms.date: 02/18/2020
+ms.author: kwekua
+author: kwekuako
+manager: dansimp
+ms.date: 08/29/2024
 audience: Admin
 ms.topic: article
 ms.collection:
@@ -13,6 +13,7 @@ ms.collection:
 - scotvorg
 - Adm_O365
 - Adm_NonTOC
+- operations-pod
 ms.custom: AdminSurgePortfolio
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
@@ -22,7 +23,7 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX
 description: "Learn more about the 'MSOID' CNAME record in Office 365 that directs you to the best server for authentication processes, so you'll getter a faster response."
-monikerRange: 'o365-21vianet'
+monikerRange: o365-21vianet
 ---
 
 # What's the purpose of the Office 365 CNAME record for MSOID?

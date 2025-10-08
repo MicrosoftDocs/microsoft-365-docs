@@ -4,19 +4,20 @@ f1.keywords:
 - NOCSH
 ms.author: kwekua
 author: kwekuako
-manager: scotv
-ms.date: 11/16/2023
+manager: dansimp
+ms.date: 01/06/2025
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier3
 - scotvorg
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: 
+- operations-pod
+ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
@@ -59,7 +60,7 @@ The following PowerShell example turns Focused Inbox **Off** in your organizatio
     Set-OrganizationConfig -FocusedInboxOn $false
     ```
 
-6. Run the **Get-OrganizationConfig** cmdlet again and you'll see that FocusedInboxOn is set to $false, which means it's been turned off. 
+6. Run the **Get-OrganizationConfig** cmdlet again and you'll see that FocusedInboxOn is set to $false, which means it's been turned off.
 
 **To turn on Focused Inbox:**
   
@@ -79,7 +80,7 @@ If you're switching from Clutter to Focused Inbox, they can decide to enable it 
   
 ![An image of what Focused Inbox looks like when it's rolled out to your users and Outlook is re-opened.](../../media/c034f969-d650-4333-88f1-dd10ade0a94c.png)
   
-When a user decides to start using Focused Inbox, Clutter gets disabled automatically. The Clutter folder gets converted into a standard folder, that allows the user to rename or delete it.
+When a user decides to start using Focused Inbox, Clutter gets disabled automatically. The Clutter folder gets converted into a standard folder that allows the user to rename or delete it.
   
 ## Turn Focused Inbox On or Off for specific users
 
@@ -134,7 +135,7 @@ This example turns Focused Inbox **Off** for Tim Matthews in the Contoso organiz
 > [!IMPORTANT]
 > In this example, both "X-MS-Exchange-Organization-BypassFocusedInbox" and "true" are case sensitive.
 > Also, Focused Inbox will honor the X-header that bypasses Clutter, so if you use this setting in Clutter, it will be used in Focused Inbox. 
-> For detailed syntax and parameter information, see [New-TransportRule](/powershell/module/exchange/new-transportrule).
+> For detailed syntax and parameter information, see [New-TransportRule](/powershell/module/exchangepowershell/new-transportrule).
 
 ### How do you know this worked?
 

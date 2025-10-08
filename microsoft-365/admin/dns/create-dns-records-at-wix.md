@@ -2,13 +2,14 @@
 title: "Connect your DNS records at Wix to Microsoft 365"
 f1.keywords:
 - CSH
-ms.author: nkagole
-author: nataliekagole
-manager: scotv
-ms.date: 05/30/2024
+ms.author: kwekua
+author: kwekuako
+manager: dansimp
+ms.date: 04/03/2025
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-domains
 ms.localizationpriority: medium
 ms.collection:
 - Tier2
@@ -17,13 +18,14 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+- operations-pod
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 7173c635-58b3-400f-95e0-97abe915565e
-description: "Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at Wix for Microsoft."
+description: "Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at Wix."
 ---
 
 # Connect your DNS records at Wix to Microsoft 365
@@ -37,6 +39,8 @@ After you add these records at Wix, your domain will be set up to work with Micr
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
 
+[!INCLUDE [How to get tech support for SMB](../../includes/smb-how-to-get-tech-support.md)]
+
 ## Add a TXT record for verification
 
 Before you use your domain with Microsoft, we have to make sure you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.
@@ -47,23 +51,27 @@ Before you use your domain with Microsoft, we have to make sure you own it. Your
 > [!NOTE]
 > WIX does not support DNS entries for subdomains.
 
-1. To get started, go to your domains page at Wix by using [this link](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). You're prompted to log in first.
+1. Make sure you have added a domain in the Microsoft 365 Admin Center using the steps in [Add a domain](/admin/setup/add-domain#add-a-domain), and that the domain has not already been verified. You'll need to copy the **TXT value** from the **Add a record to verify ownership** page for use later in this procedure.
 
-2. Select **Domains** \> **...**, and then select **Manage DNS Records** from the dropdown list.
+1. Go to your domains page at Wix by using [this link](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). You're prompted to log in first.
+
+1. From the left-hand navigation bar, select **Domains**.
+
+1. Find the domain you wish to configure, select the three dots **(...)** to the right, and then select **Manage DNS Records** from the dropdown list.
 
    :::image type="content" source="../../media/dns-wix/wix-domains-1.png" alt-text="Select Manage DNS Records from the drop-down list.":::
 
-3. Select **+ Add Record** in the **TXT (Text)** row of the DNS editor.
+1. Select **+ Add Record** in the **TXT (Text)** row of the DNS editor.
 
    :::image type="content" source="../../media/dns-wix/wix-domains-TXT-add-record.png" alt-text="Screenshot of where you select Add record to add a domain verification TXT record.":::
 
-4. In the boxes for the new record, type or copy and paste the values from the following table.
+1. In the boxes for the new record, type or copy and paste the values from the following table. You'll use the TXT value you copied earlier (MS=ms*XXXXXXXX*).
 
    |Host Name|TXT Value|TTL|
    |---|---|---|
    |Automatically populated (leave blank)|MS=ms*XXXXXXXX* <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table. [How do I find this?](../get-help-with-domains/information-for-dns-records.md)|One Hour|
 
-5. Select**Save**.
+1. Select**Save**.
 
    :::image type="content" source="../../media/dns-wix/wix-domains-txt-save.png" alt-text="Screenshot of where you select Save to add domain verification TXT record.":::
 
@@ -91,11 +99,13 @@ To verify the record in Microsoft 365:
 
 1. To get started, go to your domains page at Wix by using [this link](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). You're prompted to log in first.
 
-1. Select **Domains** \> **...**, and then select **Manage DNS Records** from the dropdown list.
+1. From the left-hand navigation bar, select **Domains**.
+
+1. Find the domain you wish to configure, select the three dots **(...)** to the right, and then select **Manage DNS Records** from the dropdown list.
 
    :::image type="content" source="../../media/dns-wix/wix-domains-1.png" alt-text="Select Manage DNS Records from the drop-down list.":::
 
-1. Under **MX (Mail exchange)**, select **Edit MX Records**.
+1. Under **MX (Mail exchange)**, select the link **connect a business email**.
 
    :::image type="content" source="../../media/dns-wix/wix-domains-edit-mx-records.png" alt-text="Select Edit MX Records.":::
 
@@ -119,21 +129,23 @@ To verify the record in Microsoft 365:
 
 1. To get started, go to your domains page at Wix by using [this link](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). You're prompted to log in first.
 
-2. Select **Domains** \> **...**, and then select **Manage DNS Records** from the dropdown list.
+1. From the left-hand navigation bar, select **Domains**.
+
+1. Find the domain you wish to configure, select the three dots **(...)** to the right, and then select **Manage DNS Records** from the dropdown list.
 
    :::image type="content" source="../../media/dns-wix/wix-domains-1.png" alt-text="Select Manage DNS Records from the drop-down list.":::
 
-3. Select **+ Add Record** in the **CNAME (Aliases)** row of the DNS editor for the CNAME record.
+1. Select **+ Add Record** in the **CNAME (Aliases)** row of the DNS editor for the CNAME record.
 
    :::image type="content" source="../../media/dns-wix/wix-domains-cname-add-record.png" alt-text="Screenshot of where you select Add a record to add a CNAME record.":::
 
-4. In the boxes for the new record, type or copy and paste the values from the following table:
+1. In the boxes for the new record, type or copy and paste the values from the following table:
 
    |Host Name|Value|TTL|
    |---|---|---|
    |autodiscover|autodiscover.outlook.com|One Hour|
 
-5. Select **Save**.
+1. Select **Save**.
 
    :::image type="content" source="../../media/dns-wix/wix-domains-cname-save.png" alt-text="Screenshot of where you select Save to add a CNAME record.":::
 
@@ -146,23 +158,25 @@ To verify the record in Microsoft 365:
 
 1. To get started, go to your domains page at Wix by using [this link](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). You're prompted to log in first.
 
-2. Select **Domains** \> **...**, and then select **Manage DNS Records** from the dropdown list.
+1. From the left-hand navigation bar, select **Domains**.
+
+1. Find the domain you wish to configure, select the three dots **(...)** to the right, and then select **Manage DNS Records** from the dropdown list.
 
    :::image type="content" source="../../media/dns-wix/wix-domains-1.png" alt-text="Select Manage DNS Records from the drop-down list.":::
 
-3. Select **+ Add Record** in the **TXT (Text)** row of the DNS editor.
+1. Select **+ Add Record** in the **TXT (Text)** row of the DNS editor.
 
    :::image type="content" source="../../media/dns-wix/wix-domains-TXT-add-record.png" alt-text="Screenshot of where you select Add a record to add an SPF TXT record.":::
 
    **Note**: Wix provides an SPF row in the DNS editor. Ignore that row and use the **TXT (Text)** row to enter the SPF values below.
 
-4. In the boxes for the new record, type or copy and paste the values from the following table:
+1. In the boxes for the new record, type or copy and paste the values from the following table:
 
    |Host Name|Value|TTL|
    |---|---|---|
    |[leave this blank]|v=spf1 include:spf.protection.outlook.com -all <br/> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.|One Hour|
 
-5. Select **Save**.
+1. Select **Save**.
 
    :::image type="content" source="../../media/dns-wix/wix-domains-txt-save.png" alt-text="Screenshot of where you select Save to add an SPF TXT record.":::
 
@@ -176,7 +190,9 @@ Only select this option if your organization uses Skype for Business for online 
 
 1. To get started, go to your domains page at Wix by using [this link](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). You're prompted to log in first.
 
-1. Select **Domains** \> **...**, and then select **Manage DNS Records** from the dropdown list.
+1. From the left-hand navigation bar, select **Domains**.
+
+1. Find the domain you wish to configure, select the three dots **(...)** to the right, and then select **Manage DNS Records** from the dropdown list.
 
    :::image type="content" source="../../media/dns-wix/wix-domains-1.png" alt-text="Select Manage DNS Records from the drop-down list.":::
 
@@ -226,7 +242,9 @@ This service helps you secure and remotely manage mobile devices that connect to
 
 1. To get started, go to your domains page at Wix by using [this link](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). You're prompted to log in first.
 
-1. Select **Domains** \> **...**, and then select **Manage DNS Records** from the dropdown list.
+1. From the left-hand navigation bar, select **Domains**.
+
+1. Find the domain you wish to configure, select the three dots **(...)** to the right, and then select **Manage DNS Records** from the dropdown list.
 
    :::image type="content" source="../../media/dns-wix/wix-domains-1.png" alt-text="Select Manage DNS Records from the drop-down list.":::
 

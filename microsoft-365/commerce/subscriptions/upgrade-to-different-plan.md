@@ -4,27 +4,29 @@ f1.keywords:
 - CSH
 author: cmcatee-MSFT
 ms.author: cmcatee
-manager: scotv
+manager: dansimp
 ms.reviewer: mijeffer, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
+- operations-pod
 ms.custom:
 - commerce_subscriptions
 - SaRA
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
-search.appverid: MET150 
+- GAUpdates
+search.appverid: MET150
 description: "Learn how to upgrade or change to a different plan in the Microsoft 365 admin center."
-ms.date: 02/23/2024
+ms.date: 10/02/2025
 ---
 
 # Upgrade or change to a different Microsoft 365 for business plan
@@ -34,15 +36,18 @@ When your business needs change, or you want more features, you can change to a 
 ## Before you begin
 
 - [Find out what type of billing account you have.](../manage-billing-accounts.md#view-my-billing-accounts)
-- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a billing account owner or contributor, or a billing profile owner or contributor to do the tasks in this article. For information about billing account and billing profile roles, see [Understand your Microsoft business billing account](../manage-billing-accounts.md) and [Manage your Microsoft business billing profiles](../billing-and-payments/manage-billing-profiles.md).
-- If you have a Microsoft Online Services Agreement (MOSA) billing account type, you must be a Global or Billing admin to do the tasks in this article. For more information, see [About admin roles in the Microsoft 365 admin center](../../admin/add-users/about-admin-roles.md).
+- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a Billing account owner or contributor, or a Billing profile owner or contributor to do the tasks in this article. For information about billing account and billing profile roles, see [Understand your Microsoft business billing account](../manage-billing-accounts.md) and [Manage your Microsoft business billing profiles](../billing-and-payments/manage-billing-profiles.md).
+- If you have a Microsoft Online Services Agreement (MOSA) billing account type, you must be at least a Billing Administrator to do the tasks in this article. For more information, see [About admin roles in the Microsoft 365 admin center](../../admin/add-users/about-admin-roles.md).
 
 > [!NOTE]
-> If you’re the person who signed up for the subscription, you’re automatically a billing account owner or global admin.
+> If you’re the person who signed up for the subscription, you’re automatically a Billing account owner.
 
 ## When should I change plans?
 
 Changing plans is the right choice when you want to move all users assigned to a single plan. When you change plans, all users in the current plan are assigned licenses for the new plan at the same time. If you only want to move some users to a new plan, buy a new plan with the number of licenses you need, and assign those licenses to the users that you want to move. For more information, see [Move users to a different subscription](move-users-different-subscription.md).
+
+> [!NOTE]
+> If you have an MCA billing account, you can follow the steps to [Automatically change your subscription to a new plan](/microsoft-365/commerce/subscriptions/upgrade-to-different-plan) and move some users to a new plan by entering the number of licenses that you want. You must assign the new licenses to the users you want to move. 
 
 ## Automatically change your subscription to a new plan
 
@@ -54,11 +59,8 @@ Changing plans is the right choice when you want to move all users assigned to a
    - If you’re using the **Simplified view**, select **Subscriptions**.
    - If you’re using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. Select the subscription that you want to manage.
-3. On the subscription details page, in the **Other subscription options** section, select **Change to a different subscription option**.
-4. On the **Compare products and select another option** page, select a different plan to compare with your current plan. When you find the one that you want to buy, select **Next**.
-5. Choose when to schedule the change, enter the number of licenses that you want, select a subscription length and a billing frequency, then select **Next**.
-6. Review your selections, then select **Save changes**.
-
+1. On the subscription details page, in the **Other subscription options** section, select **Change to a different subscription option**.
+1. Choose when to schedule the change, enter the number of licenses that you want, select a subscription length and a billing frequency, then select **Change plan**.
 ### If you have an MOSA billing account type
 
 [!INCLUDE [office-365-operated-by-21vianet-admin-center-link](../../includes/office-365-operated-by-21vianet-admin-center-link.md)]

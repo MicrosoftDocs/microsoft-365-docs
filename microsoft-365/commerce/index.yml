@@ -13,16 +13,17 @@ metadata:
   - highpri 
   - commerce
   - Adm_TOC
+  - operations-pod
   ms.custom: 
   - VSBFY23
   - commerce_landingpage
   author: cmcatee-MSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: cmcatee #Required; microsoft alias of author; optional team alias.
-  manager: scotv
+  manager: dansimp
   audience: Admin
   ms.localizationpriority: medium
   search.appverid: MET150
-  ms.date: 10/27/2023
+  ms.date: 03/13/2025
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -64,6 +65,8 @@ landingContent:
             url: licenses/buy-licenses.md
           - text: Assign or unassign licenses for users
             url: ../admin/manage/assign-licenses-to-users.md
+          - text: Assign or unassign licenses for groups
+            url: ../admin/manage/manage-group-licenses.md
           - text: Download perpetual software and product license keys
             url: ../admin/setup/download-software-licenses-csp.md
       - linkListType: overview
@@ -74,6 +77,8 @@ landingContent:
         links:
           - text: Buy new licenses
             url: https://www.youtube.com/watch?v=1E3-ozWz0A4
+          - text: Remove existing licenses
+            url: https://www.youtube.com/watch?v=Edtf_uy5fZs
 
   # Card
   - title: Manage subscriptions
@@ -96,3 +101,21 @@ landingContent:
         links:
           - text: Sign up for Microsoft 365 for business
             url: https://www.youtube.com/watch?v=BRN-zfy0ncI
+          - text: Move users to a different subscription
+            url: https://www.youtube.com/watch?v=IgXxC1H1XU0
+
+  # Card
+  - title: Manage volume licensing
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Sign in to the Microsoft 365 admin center (volume licensing)
+            url: licenses/vl-sign-in.md
+          - text: Download volume licensing products
+            url: licenses/download-vl-products.md
+          - text: Find and use product keys for volume licensing
+            url: licenses/product-keys-for-vl.md
+          - text: Manage License Reservations for volume licensing
+            url: licenses/manage-license-reservations-vl.md
+          - text: Contact volume licensing support
+            url: licenses/contact-vl-support.md

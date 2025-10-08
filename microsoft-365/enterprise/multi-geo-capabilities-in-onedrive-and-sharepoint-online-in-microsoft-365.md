@@ -1,7 +1,7 @@
 ---
 title: "Multi-Geo Capabilities in OneDrive and SharePoint"
 ms.reviewer: adwood
-ms.date: 04/10/2024
+ms.date: 04/02/2025
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -42,7 +42,7 @@ Management of the Multi-Geo feature is available through the <a href="https://go
 
 When a user creates a SharePoint group-connected site in a multi-geo environment, their PDL is used to determine the geo location where the site and its associated Group mailbox are created. (If the user's PDL value hasn't been set, or has been set to geo location that hasn't been configured as a satellite location, then the site and mailbox are created in the central location.)
 
-Microsoft 365 services other than Exchange, OneDrive, SharePoint, and Teams aren't Multi-Geo. However, Microsoft 365 Groups that are created by these services will be configured with the PDL of the creator and their Exchange Group mailbox, SharePoint site are provisioned in the corresponding geo.
+Microsoft 365 services other than Exchange, OneDrive, SharePoint, and Teams aren't Multi-Geo. However, Microsoft 365 Groups that are created by these services will be configured with the PDL of the creator and their Exchange Group mailbox, and SharePoint sites are provisioned in the corresponding geo.
 
 ## Managing the multi-geo environment
 
@@ -50,7 +50,7 @@ Setting up and managing your multi-geo environment is done through the <a href="
 
 ![Screenshot of geo locations page in the SharePoint admin center.](../media/sharepoint-multi-geo-admin-center.png)
 
-(Some actions, such as moving a SharePoint site or a OneDrive site require Microsoft PowerShell.)
+Some actions, such as moving a SharePoint site or a OneDrive site require Microsoft PowerShell.
 
 ## See also
 

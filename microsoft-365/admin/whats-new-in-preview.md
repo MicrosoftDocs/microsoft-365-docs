@@ -4,8 +4,8 @@ f1.keywords:
 - CSH
 ms.author: kwekua
 author: kwekuako
-manager: scotv
-ms.date: 06/05/2024
+manager: dansimp
+ms.date: 03/04/2025
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
@@ -17,11 +17,12 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - must-keep
+- operations-pod
 search.appverid:
 - MET150
 - MOE150
 - FRP150
-ms.custom: 
+ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
 - admindeeplinkMAC
@@ -39,17 +40,104 @@ description: "The Microsoft 365 admin center - learn about the features that wer
 
 We're continuously adding new features to [the Microsoft 365 admin center](admin-overview/admin-center-overview.md), fixing issues we learn about, and making changes based on your feedback. Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, [try adding yourself to targeted release](manage/release-options-in-office-365.md).
 
-And if you'd like to know what's new with other Microsoft cloud services:
+And if you'd like to know what's new with other Microsoft cloud services, check out the following:
 
 - [What's new in Microsoft Entra ID](/azure/active-directory/fundamentals/whats-new)
 - [What's new in the Exchange admin center](/Exchange/whats-new)
 - [What's new in Microsoft Intune](/mem/intune/fundamentals/whats-new)
-- [What's new in the Microsoft Purview compliance portal](/microsoft-365/compliance/whats-new)
+- [What's new in the Microsoft Purview portal](/microsoft-365/compliance/whats-new)
 - [What's new in Microsoft Defender XDR](../security/mtp/whats-new.md)
 - [What's new in the SharePoint admin center](/sharepoint/what-s-new-in-admin-center)
 - [What's new for Teams admins](/OfficeUpdates/teams-admin)
 - [Microsoft 365 updates](/OfficeUpdates/)
 - [How to check Windows release health](/windows/deployment/update/check-release-health)
+
+## June 2025
+
+### Copilot Search admin experience
+
+The Microsoft 365 Admin center now includes the **Copilot Search Admin experience**, giving you powerful tools to manage and optimize search across your organization. This release introduces enhanced support for **Acronyms** and **Bookmarks**, enabling you to deliver more relevant and contextual search results to users.
+
+### Key Highlights
+
+- **Acronyms**
+
+    - Define and manage organization-specific acronyms to improve search clarity.
+    - Upload acronyms in bulk via CSV or add them individually.
+    - Acronyms are discoverable across Microsoft Search endpoints like SharePoint.  
+
+- **Bookmarks**
+
+    - Create quick access links to frequently used resources.
+    - Boost visibility of important tools, sites, or documents in search results.
+    - Customize bookmark meta data including title, URL, description, and audience targeting.
+
+These features help ensure that users find the right information faster, especially when navigating internal terminology or frequently accessed content.
+
+To learn more, see [Microsoft 365 Copilot Search](/copilot/microsoft-365/microsoft-365-copilot-search?branch=pr-28653).
+
+## April 2025
+
+### Microsoft 365 Copilot network connectivity test
+
+A new addition to the Microsoft 365 network connectivity test tool enables users to run diagnostics specifically for Microsoft 365 Copilot. The tool helps users evaluate the network performance between their device and Microsoft 365 endpoints, specifically for Microsoft 365 Copilot. It runs a series of tests from the user’s location and generates a detailed report that can be shared with others or Microsoft support to help troubleshoot connectivity issues.
+
+The test includes:
+
+- **Latency** measures the time it takes for data to travel between the device and Microsoft 365 services
+- **Throughput** evaluates the data transfer rate
+- **Service reachability** checks whether required Microsoft 365 services are accessible
+
+Admins and users can go to [Microsoft 365 network connectivity test](https://connectivity.m365.cloud.microsoft/) to run the test.
+
+To learn more, see [Microsoft 365 network connectivity test tool](/microsoft-365//enterprise/office-365-network-mac-perf-onboarding-tool).
+
+## March 2025
+
+### Exchange Web Services usage report
+
+:::image type="content" source="../media/exchange-web-usage-report.png" alt-text="Screenshot showing the line chart for the Exchange web usage report." lightbox="../media/exchange-web-usage-report.png":::
+
+The Microsoft 365 admin center now includes a new Exchange Web Services (EWS) usage report that provides insights into the non-Microsoft (third-party) applications in your tenant that use EWS. The report provides detailed information on the specific actions performed by these applications and their call volumes over a selected period. The report enhances your ability to understand EWS activity prior to EWS deprecation in Microsoft Exchange Online.
+
+The report is available by default in the Microsoft 365 admin center under **Reports** > **Usage** > **Exchange** > **EWS usage**.
+
+To learn more, see [Microsoft 365 Reports in the admin center – EWS usage](/microsoft-365/admin/activity-reports/ews-usage).
+
+## February 2025
+
+### Provide admin-initiated feedback for Microsoft 365 Copilot
+
+> [!VIDEO c67f2b9c-8ba4-44b5-8713-00063e92ba54]
+
+You can provide feedback about Microsoft 365 Copilot on behalf of your users within the Microsoft 365 admin center, supplementing the user-initiated feedback process. This helps Microsoft receive comprehensive diagnostic data to aid in debugging and improving the quality and relevance of Copilot's responses. Recent enhancements to this feature include:
+
+- **Role expansion** The feature now includes the AI Admin role in addition to Global Admin role, ensuring that more administrators can access and manage Copilot diagnostics.
+- **Selecting chat log prompt-response pairs** You can review and select specific chat log prompt-response pairs for feedback, providing more control over the data being shared.
+- **Date range selection** You can select a specific date range for a feedback submission, up to the past 30 days, allowing you to focus on issues within a particular time-frame.
+- **Product selection** You can choose from a list of Copilot products when submitting feedback, ensuring that the feedback is relevant to the specific product.
+- **List of frequently occurring issues** You can select from a predefined list of frequently occurring issues or enter issue details in a text box, streamlining the feedback process.
+
+As an admin, you play a pivotal role in setting the tone for how your organization adopts and benefits from new technologies. Hence, with admin-initiated feedback, we're empowering administrators to harness this capability for Copilot's continual improvement, all while ensuring the security and ownership of your organization’s data. 
+
+These enhancements provide more control and flexibility, ensuring that feedback is accurate and relevant. To learn more, see [Submit admin-initiated Copilot feedback from the Microsoft 365 admin center](/copilot/microsoft-365/provide-feedback).
+
+## January 2025
+
+### AI Administrator role in Microsoft 365 admin center
+
+The AI administrator role is designed to manage all settings related to Copilot within the Microsoft 365 admin center. You can manage Copilot settings by using the Copilot page in the admin center, which serves as the central hub for all Copilot controls. To learn more about the Copilot page, see [Manage Microsoft 365 Copilot settings in the Microsoft 365 admin center](/copilot/microsoft-365/microsoft-365-copilot-page).
+
+With the AI administrator role, you can:
+
+- **Manage AI-related services and extensibility** This includes managing all aspects of Microsoft 365 Copilot, AI-related enterprise services, and agents from the Integrated apps page in the Microsoft 365 admin center.
+- **Oversee app installations and configurations** Users with this role can install apps or install apps for users in the organization and read and configure Azure and Microsoft 365 service health dashboards.
+- **Access insights and support** View usage reports, adoption insights, organizational insights, and create and manage support tickets in Azure and the Microsoft 365 admin center.
+
+This new role is designed to empower your organization by providing specialized administrative capabilities for managing AI-related enterprise services, starting with Microsoft 365 Copilot, and slowly extending to other AI-driven functionalities. For more information about the AI administrator role and other roles in the admin center, see [About admin roles in the Microsoft 365 admin center](/admin/add-users/about-admin-roles).
+
+>[!NOTE]
+> The AI Administrator role is currently limited. For full administrative capabilities, it's recommended to use the Global Admin role until the AI Administrator role is fully functional. We're continuously expanding support for more functionalities to enhance the AI Administrator role.
 
 ## May 2023
 
@@ -90,7 +178,7 @@ There are a couple of ways to get the Experience insights dashboard page:
 
     :::image type="content" source="../media/exp-insights-dashboard2.png" alt-text="Screenshot: How to get to the insights dashboard":::
 
-For more information, check out [Microsoft 365 Experience insights dashboard](misc/experience-insights-dashboard.md).
+For more information, see [Microsoft 365 Experience insights dashboard](misc/experience-insights-dashboard.md).
 
 ## December 2022
 

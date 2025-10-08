@@ -3,9 +3,9 @@ title: "Common VPN split tunneling scenarios for Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/20/2023
+ms.date: 10/03/2024
 audience: Admin
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.subservice: network
 ms.localizationpriority: medium
@@ -61,11 +61,9 @@ Broadens the scope of model 2. Rather than just sending a small group of defined
 
 ![Split Tunnel VPN model 3.](../media/vpn-split-tunneling/vpn-model-3.png)
 
-## 4. VPN selective Tunnel
+## 4. VPN Selective Tunnel
 
 Reverses the third model in that only traffic identified as having a corporate IP address is sent down the VPN tunnel and thus the Internet path is the default route for everything else. This model requires an organization to be well on the path to [Zero Trust](https://www.microsoft.com/security/zero-trust?rtc=1) in able to safely implement this model. It should be noted that this model or some variation thereof will likely become the necessary default over time as more services move away from the corporate network and into the cloud.
-
-Microsoft uses this model internally. You can find more information on Microsoft's implementation of VPN split tunneling at [Running on VPN: How Microsoft is keeping its remote workforce connected](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv).
 
 ![Split Tunnel VPN model 4.](../media/vpn-split-tunneling/vpn-model-4.png)
 
@@ -97,6 +95,5 @@ A more advanced version of model number 2, whereby any internal services are pub
 
 [Enhancing VPN performance at Microsoft: using Windows 10 VPN profiles to allow auto-on connections](https://www.microsoft.com/itshowcase/enhancing-remote-access-in-windows-10-with-an-automatic-vpn-profile)
 
-[Running on VPN: How Microsoft is keeping its remote workforce connected](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)
 
 [Microsoft global network](/azure/networking/microsoft-global-network)

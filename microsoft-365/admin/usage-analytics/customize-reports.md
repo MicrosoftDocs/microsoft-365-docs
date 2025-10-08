@@ -2,12 +2,12 @@
 title: "Customize the reports in Microsoft 365 usage analytics"
 f1.keywords:
 - NOCSH
-ms.author: efrene
+ms.author: cmcatee
 author: efrene
-manager: scotv
+manager: dansimp
 ms.date: 03/05/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
@@ -16,6 +16,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- operations-pod
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -107,7 +108,7 @@ You can start by connecting directly to the ODATA reporting APIs from Microsoft 
 
 1. Go to **get data** \> **Other** \> **ODATA Feed** \> **Connect**.
 
-2. In the URL window enter "https://<i></i>reports.office.com/pbi/v1.0/\<tenantid\>"
+2. In the URL window, enter `https://reports.office.com/pbi/v1.0/<tenantid>`.
 
     **NOTE:**
     The reporting APIs are in preview and are subject to change until they go into production.

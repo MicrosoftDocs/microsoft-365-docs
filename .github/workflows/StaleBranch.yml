@@ -1,0 +1,32 @@
+name: (Scheduled) Stale branch removal
+
+permissions:
+  contents: write
+  pull-requests: read
+
+# This workflow is designed to be run in the days up to, and including, a "deletion day", specified by 'DeleteOnDayOfMonth' in env: in https://github.com/MicrosoftDocs/microsoft-365-docs/blob/workflows-prod/.github/workflows/Shared-StaleBranch.yml.
+# On the days leading up to "deletion day", the workflow will report the branches to be deleted. This lets users see which branches will be deleted. On "deletion day", those branches are deleted.
+# The workflow should not be configured to run after "deletion day" so that users can review the branches were deleted.
+# Recommendation: configure cron to run on days 1,15-31 where 1 is what's configured in 'DeleteOnDayOfMonth'. If 'DeleteOnDayOfMonth' is set to something else, update cron to run the two weeks leading up to it.
+
+on:
+  schedule:
+    - cron: "0 9 1,15-31 * *"
+
+  workflow_dispatch:
+  
+
+jobs:
+
+  stale-branch:
+    if: github.repository_owner == 'MicrosoftDocs'
+    uses: MicrosoftDocs/microsoft-365-docs/.github/workflows/Shared-StaleBranch.yml@workflows-prod
+    with:
+        PayloadJson: ${{ toJSON(github) }}
+        RepoBranchSkipList: '[
+                              "ExampleBranch1",
+                              "ExampleBranch2"
+                             ]'
+        ReportOnly: false
+    secrets:
+        AccessToken: ${{ secrets.GITHUB_TOKEN }}

@@ -1,18 +1,20 @@
 ---
 title: Set up and configure the Moodle LMS plugins
-author: MicrosoftHeidi
-ms.author: heidip
-manager: jacktremper
+author: jennplatt
+ms.author: avering
+manager: michal.gideoni
 ms.reviewer: amitman 
-ms.date: 04/06/2022
+ms.date: 09/15/2025
 audience: admin
-ms.topic: article
-ms.service: microsoft-365-business
+ms.topic: install-set-up-deploy
+ms.service: microsoft-365-education
 f1.keywords:
 - CSH
 ms.collection: 
 - M365-modern-desktop
 - tier2
+- m365-education
+- all-education
 ms.localizationpriority: medium
 description: Get ready to integrate Moodle and Microsoft Teams by setting up and configuring the Moodle LMS plugins.
 ---

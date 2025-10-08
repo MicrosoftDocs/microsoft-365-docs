@@ -1,15 +1,15 @@
 ---
 title: Data Residency for Microsoft Teams
 description: Learn about data residency for Microsoft Teams
-ms.author: kvice
-author: kelleyvice-msft
-manager: scotv
+ms.author: v-fahasen
+author: fhasen-msft
+manager: v-nihmi
 ms.service: microsoft-365-enterprise
 ms.subservice: advanced-data-residency
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 02/29/2024
+ms.date: 02/11/2025
 ms.reviewer: deanw
 ms.custom:
 - it-pro

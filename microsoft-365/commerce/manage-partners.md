@@ -4,25 +4,28 @@ f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
-manager: scotv
-ms.reviewer: souchak, jobailey
+manager: dansimp
+ms.reviewer: jkinma, ramagane
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
-ms.subservice: m365-commerce-marketplace
+ms.subservice: m365-commerce-management
 ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
-ms.custom: 
+- operations-pod
+ms.custom:
 - commerce_purchase
 - AdminSurgePortfolio
 - admindeeplinkMAC
+- GAUpdates
+- campaignIDs-batch2
 search.appverid: MET150
 description: "Learn how to work with Microsoft-certified solution providers (partners) to buy and manage products and services for your organization or school."
-ms.date: 06/03/2024
+ms.date: 09/29/2025
 ---
 
 # Manage Microsoft-certified solution provider partner relationships
@@ -35,7 +38,7 @@ You can work with Microsoft-certified solution providers (partners) to buy and m
 
 ## Before you begin
 
-You must be either a Global or Billing admin to do these steps. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).
+You must be at least a Billing Administrator to do these steps. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).
 
 ## What can a partner do for my organization or school?
 
@@ -96,3 +99,7 @@ You can remove admin roles from a partner at any time. Removing the admin roles 
 4. In the **Remove roles?** dialog box, select **Yes**.
 
 If you don't see the **Remove roles** option, contact the [Partner Center](https://partner.microsoft.com/support).
+## Admin On Behalf Of (AOBO) access to pages in Microsoft 365 admin center
+
+If you're a partner who's an Admin On Behalf Of (AOBO) a customer, the **Purchase services**, **Your products**, and **Bills & payments** pages are no longer available in the **Billing** menu in the Microsoft 365 admin center. To buy and manage subscriptions for your customer, visit the [Partner Center](https://partner.microsoft.com). You can still view the **Licenses** and **Billing notifications** pages in the **Billing** menu. To manage domain subscriptions for your customers, ask them to sign in with an account that has both the Domain Name Administrator and Billing Administrator role. 
+

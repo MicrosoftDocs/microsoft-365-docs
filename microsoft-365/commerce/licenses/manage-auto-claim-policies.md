@@ -5,24 +5,27 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: sinakassaw, nicholak
+ms.reviewer: rabhange
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
-ms.custom: 
+- operations-pod
+ms.custom:
 - commerce_licensing
 - AdminSurgePortfolio
 - admindeeplinkMAC
+- GAUpdates
+- campaignIDs-batch2
 description: "Learn how to create and manage auto-claim policies that automatically assign licenses to users for certain apps."
 search.appverid: MET150
-ms.date: 02/12/2024
+ms.date: 07/30/2025
 ---
 
 # Manage auto-claim policies in the Microsoft 365 admin center
@@ -34,10 +37,9 @@ As an admin, you typically assign licenses to users either manually, or by using
 
 ## Before you begin
 
-You must be a Global admin to create and manage auto-claim policies. For more information, see [About Microsoft 365 admin roles](../../admin/add-users/about-admin-roles.md).
+You must be a Global Administrator to manage Auto-claim policies at the organization level. User, License and Global admins can create and manage auto-claim policies in the **Auto-claim policy** tab under **Licenses**. For more information, see [About Microsoft 365 admin roles](../../admin/add-users/about-admin-roles.md).
 
-> [!NOTE]
-> If you're the person who signed up for the subscription, you're automatically a Global admin.
+[!INCLUDE [ga-roles-limitation](../../includes/ga-roles-limitation.md)]
 
 ## Turn the auto-claim policy feature on or off
 

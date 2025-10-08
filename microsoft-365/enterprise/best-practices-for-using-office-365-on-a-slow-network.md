@@ -87,8 +87,8 @@ Here are some suggestions for browsers in general:
 
 Here are some suggestions for your specific browser:
 
-- **Microsoft Edge**: For more information, see [Learn about performance features in Microsoft Edge](https://support.microsoft.com/en-us/topic/learn-about-performance-features-in-microsoft-edge-7b36f363-2119-448a-8de6-375cfd88ab25).
-- **FireFox**: For more information, see [Firefox is slow or stops working](https://support.mozilla.org/products/firefox/fix-problems/slowness-or-hanging).
+- **Microsoft Edge**: For more information, see [Learn about performance features in Microsoft Edge](https://support.microsoft.com/topic/7b36f363-2119-448a-8de6-375cfd88ab25).
+- **FireFox**: For more information, see [Firefox is slow or stops working](https://support.mozilla.org/kb/firefox-hangs-or-not-responding).
 - **Safari**: For more information, see [Apple - Safari](https://www.apple.com/safari/).
 - **Chrome**: For more information, see [Chrome Help](https://support.google.com/chrome/?hl=en).
 

@@ -1,72 +1,89 @@
 ---
-title: "Step 1 - Prevent a former employee from logging in and block access to Microsoft 365 services"
+title: Step 1 - Prevent user sign-in and block access to Microsoft 365
+description: Learn how to block a user from signing in and restrict their access to Microsoft 365 services with step-by-step instructions for admins.
+#customer intent: As an admin, I want to prevent a user from signing in so that I can secure the organization's Microsoft 365 services.
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekuako
-manager: scotv
-ms.date: 11/21/2023
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
+ms.date: 09/17/2025
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
 - SPO_Content
+- trust-pod
 ms.custom:
-  - MSStore_Link
-  - TRN_M365B
-  - OKR_SMB_Videos
-  - AdminSurgePortfolio
-  - m365solution-removeemployee
-  - admindeeplinkEXCHANGE
-  - has-azure-ad-ps-ref, azure-ad-ref-level-one-done
-description: "Global administrators can block a former employee from logging in and block their access to Microsoft 365 services."
+- MSStore_Link
+- TRN_M365B
+- OKR_SMB_Videos
+- AdminSurgePortfolio
+- m365solution-removeemployee
+- admindeeplinkEXCHANGE
+- has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 ---
 
-# Step 1 - Prevent a former employee from logging in and block access to Microsoft 365 services
+# Step 1 - Prevent user sign-in and block access to Microsoft 365
 
-If you need to immediately prevent a user's sign-in access, reset their password. When you do this, you force a sign out of the user from Microsoft 365.
+When a user leaves your organization and you need to immediately prevent their access, first reset their password. You can also force them to sign out from Microsoft 365 services. If you think the account might be compromised, block sign-in so that no one can use it.
 
-> [!NOTE]
-> You need to be a global administrator to initiate sign-out for other administrators. For non administrator users, you can use a User Administrator or a Helpdesk Administrator user to perform this action. [Learn more about the Admin Roles](about-admin-roles.md)
+## Prerequisites
 
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
-2. Select the box next to the user's name, and then select **Reset password**.
-3. Enter a new password, and then select **Reset**.
-4. On the **Reset password** page, choose whether to automatically create the new password or create one yourself. You can also email the new password to yourself. Make sure you don't email the password to the former employee.
-5. Select **Reset password** and then **Close**.
-6. Select the user's name again, and on the **Account** tab, select **Sign out of all sessions**.
+To complete this action for standard users, you need to have the User Administrator or Helpdesk Administrator role.
 
-Within an hour - or after they leave the current Microsoft 365 page they're on - they're prompted to sign in again. An access token is good for an hour, so the timeline depends on how much time is left on that token, and whether they leave the current webpage.
+To sign out other administrators, you need to be a Global Administrator.
+
+> [!IMPORTANT]
+> Use roles with the fewest permissions. Lower permissioned accounts help improve security for your organization. Global Administrator is a highly privileged role. Limit its use to emergency scenarios when you can't use an existing role. For more information, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
+
+## Reset password and sign out of all sessions
+
+1. In the Microsoft 365 admin center, go to **Users** \> **[Active users](https://admin.cloud.microsoft/?#/users)**.
+
+1. Select the user's name, then select **Reset password**.
+
+1. Choose whether to automatically create a new password or require the user to change their password when they first sign in.
+
+1. Select **Reset password**. You can print the new password if you want. Then select **Close**.
+
+1. Select the user's name again, and on the **Account** tab, select **Sign out of all sessions**.
+
+Within an hour, or after they leave the current Microsoft 365 page they're on, they're prompted to sign in again. An access token is good for an hour, so the timeline depends on how much time is left on that token, and whether they leave the current webpage.
   
 > [!IMPORTANT]
-> If the user is in Outlook on the web, just clicking around in their mailbox, they may not be kicked out immediately. As soon as they select a different tile, such as OneDrive, or refresh their browser, the sign-out is initiated.
+> If the user is using their mailbox in Outlook on the web, they might not be signed out immediately. As soon as they select a different tile, such as OneDrive, or refresh their browser, the service signs them out.
   
 To use PowerShell to sign out a user immediately, see the [Revoke-MgUserSignInSession](/powershell/module/microsoft.graph.users.actions/revoke-mgusersigninsession) cmdlet.
   
-For more information about how long it takes to get someone out of email, see [What you need to know about terminating an employee's email session](remove-former-employee-step-7.md#what-you-need-to-know-about-terminating-an-employees-email-session).
+For more information about how long it takes to get someone out of email, see [What you need to know about ending an user's email session](remove-former-employee-step-7.md#what-you-need-to-know-about-terminating-an-employees-email-session).
 
-## Block a former employee's access to Microsoft 365 services
+## Block a user's access to Microsoft 365 services
 
 > [!IMPORTANT]
- > Blocking an account can take up to 24 hours to take effect. If you need to immediately prevent a user's sign-in access, follow the steps above and reset their password.
+ > Blocking an account can take up to 24 hours to take effect. To immediately prevent a user's sign-in access, follow the previous steps to reset their password.
 
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
-2. Select the name of the employee that you want to block, and under the user's name, select the symbol for **Block this user** and then select **Block sign-in**.
-3. On the Block sign-in page, select Block this user from signing in and then **Save changes**.
+1. In the Microsoft 365 admin center, go to **Users** \> **[Active users](https://admin.cloud.microsoft/?#/users)**.
 
-## Block a former employee's access to email (Exchange Online)
+1. Select the name of the user that you want to block, and select **Block sign-in**.
 
-If you have email as part of your Microsoft 365 subscription, sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a> and follow these steps to block your former employee from accessing their email.
-  
-1. Go to the Exchange admin center > **Recipients** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2183135" target="_blank">Mailboxes</a>.
-2. Select the former employee's mailbox and then under **Email apps & mobile devices**, select **Manage email apps settings**.
-3. On the **Manage email apps settings** page, turn **Off** the slider for all the options:
+1. On the **Block sign-in** page, select **Block this user from signing in** and then **Save changes**.
+
+## Block a user's access to email in Exchange Online
+
+If you have email as part of your Microsoft 365 subscription, sign in to the [Exchange admin center](https://admin.cloud.microsoft/exchange#) and follow these steps to block a user from accessing their email.
+
+1. Go to the Exchange admin center > **Recipients** \> [Mailboxes](https://admin.cloud.microsoft/exchange#/mailboxes).
+
+1. Select the user's mailbox. Under **Email apps & mobile devices**, select **Manage email apps settings**.
+
+1. On the **Manage email apps settings** page, turn **Off** the slider for all the options:
 
      - **Outlook desktop (MAPI)**
      - **Exchange web services**
@@ -74,10 +91,10 @@ If you have email as part of your Microsoft 365 subscription, sign in to the <a 
      - **IMAP**
      - **POP3**
      - **Outlook on the web**
-4. Select **Save**.
+
+1. Select **Save**.
 
 ## Related content
 
-[Exchange admin center in Exchange Online](/exchange/exchange-admin-center) (article)\
-
-[Restore a user](restore-user.md) (article)
+- [Exchange admin center in Exchange Online](/exchange/exchange-admin-center)
+- [Restore a user](restore-user.md)

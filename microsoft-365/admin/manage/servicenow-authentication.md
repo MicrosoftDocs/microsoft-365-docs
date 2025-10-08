@@ -2,12 +2,12 @@
 title: "Configure authentication for Microsoft 365 support integration with ServiceNow"
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
-manager: scotv
-ms.date: 11/08/2022
+ms.author: kwekua
+author: kwekuako
+manager: dansimp
+ms.date: 04/28/2025
 audience: Admin
-ms.topic: article
+ms.topic: integration
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
@@ -15,6 +15,7 @@ ms.collection:
 - scotvorg
 - M365-subscription-management
 - Adm_TOC
+- operations-pod
 ms.custom: AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
@@ -23,6 +24,9 @@ description: "Scoped Certified application installation and configuration guide 
 ---
 
 # Configure authentication for Microsoft 365 support integration with ServiceNow
+
+> [!IMPORTANT]
+> Microsoft 365 support integration with ServiceNow is retired, and the service will be completely shut down on May 30, 2025. If you installed the integration, take necessary steps to remove it before May 30, 2025.
 
 ## Prerequisites
 

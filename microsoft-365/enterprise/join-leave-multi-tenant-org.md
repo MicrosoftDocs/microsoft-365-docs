@@ -3,9 +3,9 @@ title: Join or leave a multitenant organization in Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 06/24/2024
+ms.date: 09/24/2025
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
 ms.subservice: multi-tenant
 ms.localizationpriority: medium
@@ -21,6 +21,9 @@ description: Learn how to join or leave a multitenant organization in Microsoft 
 To join a multitenant organization, a global administrator in the owner organization must first add your organization to the multitenant organization. Once they've done that, you can join the multitenant organization. You'll need the tenant ID of the owner organization in order to join.
 
 Once you've joined, you can leave a multitenant organization at any time.
+
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. This helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
 
 <a name='related-settings-in-azure-ad'></a>
 
@@ -99,7 +102,7 @@ To remove your users from other tenants in a multitenant organization:
 1. Select **Cross-tenant synchronization**.
 1. Select **Configurations**.
 1. Select the link for the configuration you want to update.
-1. Select **Users and groups**
+1. Select **Users and groups**.
 1. Select the check boxes for the security groups that you want to remove, and then select **Remove**.
 1. Select **Overview**.
 1. Select **Restart provisioning**.

@@ -2,12 +2,12 @@
 title: "Pilot Microsoft 365 from my custom domain"
 f1.keywords:
 - CSH
-ms.author: nkagole
-author: nataliekagole
-manager: scotv
-ms.date: 07/10/2020
+ms.author: kwekua
+author: kwekuako
+manager: dansimp
+ms.date: 08/28/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
@@ -15,6 +15,7 @@ ms.collection:
 - scotvorg
 - Adm_O365
 - Adm_TOC
+- operations-pod
 ms.custom:
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
@@ -79,12 +80,12 @@ Follow these steps to set up a Microsoft 365 pilot:
 
 ### Step 4: Unblock the existing email server (optional)
 
-Microsoft 365 uses Exchange Online Protection (EOP) for spam protection. EOP might block your existing mail server if it detects a high volume of spam being forwarded by your current mail server. If you trust the spam protection for your other email provider, you can unblock the server in Microsoft 365.
+All organizations with cloud mailboxes have default email protection for spam. Anti-spam protection might block your existing mail server if it detects a high volume of spam being forwarded by your current mail server. If you trust the spam protection for your other email provider, you can unblock the server in Microsoft 365.
 
 > [!NOTE]
 > Unblocking your existing email server allows any spam that arrives through your original server to come to the Microsoft 365 mailboxes, and you can't evaluate how well Microsoft 365 prevents spam.
 
-1. Sign in to Microsoft Defender XDR(https://security.microsoft.com/antispam), select **Policies & rules**, Click on **Threat policies** and then select **Anti-spam policies**.
+1. Sign in to Microsoft Defender XDR <https://security.microsoft.com/antispam>, select **Policies & rules**, Click on **Threat policies** and then select **Anti-spam policies**.
 
 2. Select **Connection filter policy (Default)**, and click on Edit **Edit connection filter policy** and add the mail server IP address for your current email provider in the **Always allow messages from the following IP addresses or address range** Section.
 
@@ -118,7 +119,7 @@ Make sure you have completed the following in Microsoft 365 or Office 365:
 
 1. To set up connectors, you need permissions assigned before you can begin. To check what permissions you need, see the Microsoft 365 and Office 365 connectors entry in the [Feature permissions in Exchange Online](/exchange/permissions-exo/feature-permissions) topic.
 
-2. If you want EOP or Exchange Online to relay email from your email servers to the Internet, either:
+2. If you want Microsoft 365 to relay email from your email servers to the Internet, either:
 
    - Use a certificate configured with a subject name that matches an accepted domain in Microsoft 365 or Office 365. We recommend that your certificate's common name or subject alternative name matches the primary SMTP domain for your organization. For details, see [Prerequisites for your on-premises email environment](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#prerequisites-for-your-on-premises-email-environment).
 

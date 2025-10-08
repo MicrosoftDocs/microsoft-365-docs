@@ -1,10 +1,10 @@
 ---
 title: Microsoft Teams Advanced Virtual Appointments activity report
 author: lana-chin
-ms.author: v-chinlana
+ms.author: jtremper
 manager: jtremper
 audience: Admin
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-365-frontline
 ms.reviewer: ansantam
 f1.keywords:
@@ -21,7 +21,7 @@ appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ms.custom: seo-marvel-apr2020
-ms.date: 08/23/2023
+ms.date: 10/06/2025
 ---
 # Microsoft Teams Advanced Virtual Appointments activity report
 

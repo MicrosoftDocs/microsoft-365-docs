@@ -6,7 +6,7 @@ author: mansipatel-usl
 ms.author: tinachen
 manager: rshastri
 audience: Software-Vendor
-ms.topic: article
+ms.topic: how-to
 ms.date: 07/27/2023
 ms.service: test-base
 ms.localizationpriority: medium

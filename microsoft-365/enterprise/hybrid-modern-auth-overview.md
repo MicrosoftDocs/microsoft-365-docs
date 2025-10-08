@@ -4,9 +4,9 @@ ms.author: kvice
 ms.reviewer: smithre4
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/19/2023
+ms.date: 09/25/2024
 audience: ITPro
-ms.topic: article
+ms.topic: concept-article
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: medium
@@ -81,7 +81,7 @@ Get-OrganizationConfig | ft OAuth*
 
 If the value of the _OAuth2ClientProfileEnabled_ property is **False**, then modern authentication is disabled.
 
-For more information about the `Get-OrganizationConfig` cmdlet, see [Get-OrganizationConfig](/powershell/module/exchange/get-organizationconfig).
+For more information about the `Get-OrganizationConfig` cmdlet, see [Get-OrganizationConfig](/powershell/module/exchangepowershell/get-organizationconfig).
 
 You can check your Skype for Business servers by running the following PowerShell command:
 
@@ -137,7 +137,7 @@ Verify and check these items off your list before you continue:
   - You're using either Exchange server 2013 CU19 and up, Exchange server 2016 CU8 and up, or Exchange Server 2019 CU1 and up.
   - There's no Exchange server 2010 in the environment.
   - SSL Offloading is not configured. SSL termination and re-encryption are supported.
-  - In the event your environment utilizes a proxy server infrastructure to allow servers to connect to the Internet, be sure all Exchange servers have the proxy server defined in the [InternetWebProxy](/powershell/module/exchange/set-exchangeserver) property.
+  - In the event your environment utilizes a proxy server infrastructure to allow servers to connect to the Internet, be sure all Exchange servers have the proxy server defined in the [InternetWebProxy](/powershell/module/exchangepowershell/set-exchangeserver) property.
 
 - **Exchange Server on-premises in a hybrid Office 365 environment**
 
@@ -188,5 +188,4 @@ Verify and check these items off your list before you continue:
 
 - [How to configure Exchange Server on-premises to use Modern Authentication](configure-exchange-server-for-hybrid-modern-authentication.md)
 - [Skype for Business topologies supported with Modern Authentication](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)
-- [How to configure Skype for Business on-premises to use Modern Authentication](configure-skype-for-business-for-hybrid-modern-authentication.md)
 - [Removing or disabling Hybrid Modern Authentication from Skype for Business and Exchange](remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md)

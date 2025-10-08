@@ -1,7 +1,7 @@
 ### YamlMime:Hub
 
 title: Microsoft 365 Business Premium resources # < 60 chars
-summary: For businesses with up to 300 employees, Microsoft 365 Business Premium enables you to be productive anywhere with Microsoft 365 apps and online meetings. Secure your business with advanced security features, and streamline your IT setup and management with a single solution. # < 160 chars
+summary: For businesses with up to 300 users, Microsoft 365 Business Premium enables you to be productive anywhere with Microsoft 365 apps and online meetings. Secure your business with advanced security features, and streamline your IT setup and management with a single solution. # < 160 chars
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
 brand: m365
 
@@ -12,13 +12,15 @@ metadata:
   ms.topic: hub-page # Required
   ms.collection:
   - tier2
+  - essentials-navigation
+  - trust-pod
   ms.custom:
   - AdminSurgePortfolio
   - intro-hub-or-landing
   author: chrisda #Required; your GitHub user alias, with correct capitalization.
   ms.author: chrisda #Required; microsoft alias of author; optional team alias.
   ms.reviewer: nehabha
-  ms.date: 05/31/2024
+  ms.date: 05/07/2025
 
 # productDirectory section (optional)
 productDirectory:
@@ -28,7 +30,7 @@ productDirectory:
     - title: Watch
       imageSrc: /office/media/icons/video-play.svg
       summary: Top five benefits of Microsoft 365 Business Premium.
-      url: https://aka.ms/M365BPvideo
+      url: https://youtu.be/njXOcmncBcg
     # Card
     - title: What's new?
       # imageSrc should be square in ratio with no whitespace
@@ -53,12 +55,9 @@ conceptualContent:
   # Card
     - title: What is Microsoft 365 Business Premium?
       links:
-        - url: ../business-premium/m365bp-overview.md
+        - url: /microsoft-365/admin/security-and-compliance/m365bp-security-benefits
           itemType: overview
-          text: Microsoft 365 Business Premium overview
-        - url: ../business-premium/why-choose-microsoft-365-business-premium.md
-          itemType: overview
-          text: Why you should consider Microsoft 365 Business Premium
+          text: Microsoft 365 Business Premium security overview
         - url: /office365/servicedescriptions/office-365-service-descriptions-technet-library
           text: Microsoft 365 service descriptions
           itemType: reference
@@ -71,22 +70,22 @@ conceptualContent:
   # Card
     - title: Set up Microsoft 365 Business Premium
       links:
-        - url: ../business-premium/m365bp-setup.md
+        - url: ../business-premium/m365-business-premium-setup.md
           itemType: how-to-guide
           text: 1. Sign in and set up
-        - url: ../business-premium/m365bp-security-overview.md
+        - url: /microsoft-365/admin/security-and-compliance/m365b-security-overview
           itemType: overview
           text: 2. Configure your security protection
-        - url: ../business-premium/m365bp-set-up-unmanaged-devices.md
+        - url: /microsoft-365/admin/security-and-compliance/m365bp-devices-enrollment#mobile-app-management-in-intune-for-data-protection
           itemType: overview
-          text: 3. Protect unmanaged (personally owned) devices
-        - url: ../business-premium/m365bp-use-email-securely.md
+          text: 3. Protect personally owned devices
+        - url: /microsoft-365/admin/security-and-compliance/m365b-users-phishing-spam-malware
           itemType: overview
           text: 4. Use email more securely
         - url: ../business-premium/m365bp-collaborate-share-securely.md
           itemType: overview
           text: 5. Collaborate and share more securely
-        - url: ../business-premium/m365bp-protect-managed-devices.md
+        - url: /microsoft-365/admin/security-and-compliance/m365bp-devices-enrollment
           itemType: how-to-guide
           text: 6. Set up and secure managed devices
         - url: ../business-premium/m365bp-maintain-environment.md
@@ -118,52 +117,50 @@ conceptualContent:
           text: See the Microsoft 365 Business Premium Partner Playbook and Readiness Series
         - url: https://aka.ms/M365MDBseries
           itemType: video
-          text: Join the partner webinar series!
+          text: Join the partner webinar series
         - url: https://partner.microsoft.com
           itemType: overview
           text: Microsoft Partner Network
         - url: /partner-center/overview
           itemType: overview
           text: Get started with Partner Center
-
   # Card
     - title: Protect devices
       links:
         - url: ../security/defender-business/index.yml
           itemType: overview
           text: Get started with Microsoft Defender for Business
-        - url: ../business-premium/m365bp-set-up-unmanaged-devices.md
+        - url: /microsoft-365/admin/security-and-compliance/m365bp-devices-enrollment#mobile-app-management-in-intune-for-data-protection
           itemType: overview
-          text: Set up unmanaged (personally owned) devices
-        - url: ../business-premium/m365bp-mfa-for-users.md
+          text: Set up personally owned devices
+        - url: https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14
           itemType: how-to-guide
           text: Set up multifactor authentication on devices
         - url: ../business-premium/m365bp-users-install-m365-apps.md
           itemType: how-to-guide
           text: Install Microsoft 365 apps on all devices
-        - url: ../business-premium/m365bp-protect-pcs-macs.md
+        - url: /microsoft-365/admin/security-and-compliance/m365bp-devices-enrollment#more-options-for-mam
           itemType: how-to-guide
           text: Protect unmanaged Windows PCs and Macs
-        - url: ../business-premium/m365bp-protect-managed-devices.md
+        - url: /microsoft-365/admin/security-and-compliance/m365bp-devices-enrollment
           itemType: overview
           text: Set up and secure managed devices
-        - url: ../business-premium/m365bp-device-states.md
+        - url: /defender-business/mdb-manage-devices
           itemType: how-to-guide
           text: View device status
-
   # Card
     - title: Protect email content and Microsoft 365 files
       links:
-        - url: ../security/office-365-security/index.yml
+        - url: /defender-office-365/
           itemType: overview
-          text: Get started with Microsoft Defender for Office 365
-        - url: ../business-premium/m365bp-protect-against-malware-cyberthreats.md
+          text: Email and collaboration security
+        - url: /microsoft-365/admin/security-and-compliance/m365b-email-collaboration-security
           itemType: how-to-guide
           text: Protect against phishing, malware, and other threats
-        - url: ../business-premium/m365bp-avoid-phishing-and-attacks.md
+        - url: /microsoft-365/admin/security-and-compliance/m365b-users-phishing-spam-malware
           itemType: how-to-guide
           text: Know what to watch for in email content
-        - url: ../business-premium/m365bp-use-labels-encryption.md
+        - url: /microsoft-365/admin/security-and-compliance/m365bp-information-protection
           itemType: how-to-guide
           text: Encrypt or label sensitive email
         - url: ../business-premium/create-teams-for-collaboration.md
@@ -172,7 +169,6 @@ conceptualContent:
         - url: ../business-premium/share-files-and-videos.md
           itemType: overview
           text: Share files and videos in Microsoft Teams or SharePoint
-
   # Card
     - title: Support and community
       links:
@@ -194,10 +190,10 @@ conceptualContent:
   # Card
     - title: How do I...
       links:
-        - url: ../business-premium/m365bp-mdb-whats-new.md
+        - url: /microsoft-365/admin/security-and-compliance/m365b-security-whats-new
           itemType: overview
-          text: See what's new in Microsoft 365 Business Premium and Defender for Business
-        - url: ../business-premium/secure-your-business-data.md
+          text: See what's new in security in Microsoft 365 for business
+        - url: /microsoft-365/admin/security-and-compliance/m365b-security-best-practices
           itemType: how-to-guide
           text: See top 10 ways to secure my business
         - url: ../business-premium/m365bp-trial-playbook-microsoft-business-premium.md

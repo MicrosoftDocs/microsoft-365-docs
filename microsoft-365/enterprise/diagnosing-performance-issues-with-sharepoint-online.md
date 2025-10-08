@@ -3,7 +3,7 @@ title: "Diagnosing performance issues with SharePoint"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 02/21/2024
+ms.date: 12/09/2024
 audience: Admin
 ms.topic: troubleshooting
 ms.service: microsoft-365-enterprise
@@ -26,7 +26,7 @@ description: "This article shows you how you can diagnose common issues with you
 
 # Diagnosing performance issues with SharePoint
 
-This article shows you how you can diagnose common issues with your SharePoint site using Internet Explorer developer tools.
+This article shows you how you can diagnose common issues with your SharePoint site using Internet Explorer and Microsoft Edge developer tools.
   
 There are four different ways that you can identify that a page on a SharePoint site has a performance problem with the customizations.
 

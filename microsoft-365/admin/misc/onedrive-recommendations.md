@@ -2,17 +2,18 @@
 title: "OneDrive recommendations"
 f1.keywords:
 - NOCSH
-ms.author: camillepack
-author: camillepack
-manager: scotv
+ms.author: kwekua
+author: kwekuako
+manager: dansimp
 ms.date: 05/02/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier2
 - scotvorg
+- operations-pod
 ROBOTS: NOINDEX; NOFOLLOW
 description: "Recommendations for how to use OneDrive to get the most out of your Microsoft 365 subscription."
 ---
@@ -169,9 +170,11 @@ With a Microsoft 365 subscription, you can add expiration dates and passwords to
 
 ## Classify and protect company data
 
-Use the Microsoft Purview compliance portal to enable support for sensitivity labels. For more information, see [Enable sensitivity labels for files in SharePoint and OneDrive](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files).
+[!INCLUDE [global-administrator-note](../../includes/global-administrator-note.md)]
 
-1. Sign in to [the Microsoft Purview compliance portal](https://compliance.microsoft.com/) as a global administrator.
+Use the Microsoft Purview portal to enable support for sensitivity labels. For more information, see [Enable sensitivity labels for files in SharePoint and OneDrive](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files).
+
+1. Sign in to [the Microsoft Purview portal](https://purview.microsoft.com/) as a global administrator.
 
 2. Select **Solutions** and then **Information protection**.
 

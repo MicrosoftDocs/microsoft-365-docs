@@ -5,13 +5,13 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: emmasheridan, nicholak
+ms.reviewer: patyc
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
 - highpri
@@ -19,7 +19,8 @@ ms.collection:
 - Adm_O365
 - Adm_O365_Setup
 - Adm_TOC
-ms.custom: 
+- operations-pod
+ms.custom:
 - commerce_subscriptions
 - VSBFY23
 - okr_smb
@@ -27,7 +28,7 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: "Find out what Microsoft business subscriptions your organization has by using the Your products page in the Microsoft 365 admin center."
-ms.date: 07/22/2024
+ms.date: 07/31/2025
 ---
 
 # What Microsoft business subscriptions do I have?
@@ -47,9 +48,10 @@ You must be a global or billing admin to view the subscriptions for your organiz
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
    - If you’re using the **Simplified view**, select **Subscriptions**.
    - If you’re using the **Dashboard view**, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-2. You see a list of all your subscriptions. Each line includes information about the product name, the number of assigned licenses, the total number of licenses, and the subscription status.
-3. If you’re using the **Dashboard view**, you can change the columns that appear in the list on the **Your products** page. Select **Choose columns**, change the selection of columns, then select **Save**.
-4. To see more details for a single subscription, select that subscription.
+2. The **Your products** page displays a list of all your subscriptions. Each line includes information about the product name, the number of assigned licenses, the total number of licenses, and the subscription status.
+3. If you're using the **Dashboard view** and you have multiple billing accounts, select **Change billing account** to select a different billing account to see the subscriptions associated with it. 
+4. If you’re using the **Dashboard view**, you can change the columns that appear in the list on the **Your products** page. Select the **List options** icon next to the search box, change the column selections, then select **Save**.
+5. To see more details for a single subscription, select that subscription.
 
 ## Related content
   

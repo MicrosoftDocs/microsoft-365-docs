@@ -6,7 +6,7 @@ ms.author: jtremper
 author: jacktremper
 manager: pamgreen
 audience: Admin
-ms.topic: article
+ms.topic: solution-overview
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: 
@@ -197,10 +197,10 @@ This set of illustrations uses one of the most regulated industries, financial s
 |:-----|:-----|
 |[![Model poster: Microsoft Purview information protection and compliance capabilities.](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> English: [Download as a PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Download as a Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Japanese: [Download as a PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)  \| [Download as a Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx) <br/> Updated November 2020|Includes: <ul><li>  Microsoft Purview Information Protection and Microsoft Purview Data Loss Prevention</li><li>Retention policies and retention labels </li><li>Information barriers</li><li>Communication compliance</li><li>Insider risk</li><li>Third-party data ingestion</li>|
 
-## Related topics
+## Related resources
 
 [Microsoft 365 security documentation](../security/index.yml)
 
 [Microsoft Purview documentation](../compliance/index.yml)
 
-[Governance & Security Practices for Microsoft 365 - Microsoft Ignite](https://ignite.microsoft.com/sessions/bd7aa4f7-f9a6-4dc0-a900-bd06254e1281)
+[Video Governance & Security Practices for Microsoft 365 - Microsoft Ignite | OD13](https://www.youtube.com/watch?v=zdSkL8a_7Kw)

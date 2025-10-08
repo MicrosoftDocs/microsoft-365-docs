@@ -2,15 +2,16 @@
 title: "Find and fix issues after adding your domain or DNS records"
 f1.keywords:
 - NOCSH
-ms.author: nkagole
-author: nataliekagole
-manager: scotv
-ms.date: 06/14/2024
+ms.author: kwekua
+author: kwekuako
+manager: dansimp
+ms.date: 04/02/2025
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-domains
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier2
 - scotvorg
 - highpri
@@ -19,7 +20,8 @@ ms.collection:
 - Adm_TOC
 - Adm_O365_Setup
 - must-keep
-ms.custom: 
+- operations-pod
+ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 - okr_smb
@@ -43,6 +45,8 @@ Getting your domain set up to work with Microsoft 365 can be challenging. The DN
 
 > [!NOTE]
 > You can check for problems with your domain by checking its status. Go to **Setup** > **Domains** and view the notifications in the **Status** column. If you see an issue, select the three dots (more actions), and then choose **Check health**. The pane that opens will describe any issues occurring with your domain.
+
+[!INCLUDE [How to get tech support for SMB](../../includes/smb-how-to-get-tech-support.md)]
   
 ## What's going on?
 
@@ -90,8 +94,13 @@ Check out the guidance in [Verify your Microsoft 365 domain to prove ownership, 
 
 We can help you track down issues with your domain's DNS setup. The domains troubleshooter in Microsoft 365 will show you any records that you need to fix, and exactly what the records need to be set to.
 
+1. Go to **Setup > Domains**.
+1. View the notifications in the **Status** column.
+1. If you see an issue, select the three dots (more actions), and then select **Check health**.
+1. The pane that opens will describe any issues occurring with your domain.
+
 > [!TIP]
-> Got your DNS set up correctly, but mail doesn't work in Outlook on your desktop? Check out the [different mail flow scenarios you can have with Microsoft 365](/exchange/mail-flow-best-practices/mail-flow-best-practices) to make sure you've got things set up correctly for your business. Or get more troubleshooting help with email here: [Fix Outlook problems](/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues).
+> Got your DNS set up correctly, but mail doesn't work in Outlook on your desktop? Check out the [different mail flow scenarios you can have with Microsoft 365](/exchange/mail-flow-best-practices/mail-flow-best-practices) to make sure you've got things set up correctly for your business. Or get more troubleshooting help with email at [Fix Outlook problems](/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues).
   
 ## Accessing your website isn't working?
 

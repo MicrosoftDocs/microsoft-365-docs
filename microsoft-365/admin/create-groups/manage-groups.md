@@ -1,24 +1,26 @@
 ---
 title: "Manage a group in the admin center"
-ms.reviewer: rahulnayak
-ms.date: 06/17/2024
+ms.reviewer: batre
+ms.date: 05/23/2025
 f1.keywords: NOCSH
-ms.author: jtremper
-author: jacktremper
-manager: pamgreen
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier2
 - scotvorg
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- trust-pod
 ms.custom:
-  - admindeeplinkMAC
-  - has-azure-ad-ps-ref, azure-ad-ref-level-one-done
+- admindeeplinkMAC
+- has-azure-ad-ps-ref, azure-ad-ref-level-one-done
+- m365-groups
 search.appverid:
 - BCS160
 - MET150
@@ -40,6 +42,22 @@ Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink
 2. Select the group that you want to edit, and then click **Edit name and description**.
 
 3. Update the name and description, and then select **Save**.
+
+## Change the email address or email domain of the group
+
+You can change the email address of a Microsoft 365 group or Microsoft Teams by using the Microsoft 365 admin center. Just select the group and select @edit email address.
+
+You can also use the following EXO PowerShell command to change the primary SMTP address of a Microsoft 365 group/Teams:
+
+```powershell
+Set-UnifiedGroup <Group Name> -PrimarySmtpAddress <new SMTP Address>
+```
+
+Example:
+
+```powershell
+Set-UnifiedGroup Marketing -PrimarySmtpAddress marketing@contoso.com
+```
 
 ## Manage group owners and members
 
@@ -87,20 +105,25 @@ This option is great if you want to have a company email address such as info@co
 ## Permanently delete a Microsoft 365 group
 
 Sometimes you may want to permanently purge a group without waiting for the 30 day soft-deletion period to expire. To do that, start PowerShell and run this command to get the object ID of the group:
- 
- ```powershell
-Get-MgDirectoryDeletedItem
-```
 
-Take note of the object ID of the group, or groups, that you want to permanently delete.
-  
-> [!CAUTION]
-> Purging the group removes the group and its data forever. 
-  
-To purge the group run this command in PowerShell:
+First, install Microsoft Graph PowerShell.
+
+Then run the following command:
 
 ```powershell
-Remove-MgDirectoryObject -DirectoryObjectId <objectId>
+Connect-MgGraph -Scopes "Group.ReadWrite.All"
+```
+
+Then use this command to list deleted groups:
+
+```powershell
+Get-MgDirectoryDeletedGroup
+```
+
+Note down the ID of group you are looking to permenantly delete and then run the following command:
+
+```powershell
+Remove-MgDirectoryDeletedItem -DirectoryObjectId <ID of the group to be permenantly deleted>
 ```
 
 To confirm that the group has been successfully purged, run the  *Get-MgDirectoryDeletedItem*  cmdlet again to confirm that the group no longer appears on the list of soft-deleted groups. In some cases it may take as long as 24 hours for the group and all of its data to be permanently deleted. 

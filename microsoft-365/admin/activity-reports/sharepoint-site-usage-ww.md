@@ -2,21 +2,22 @@
 title: "Microsoft 365 admin center SharePoint site usage reports"
 f1.keywords:
 - NOCSH
-ms.author: camillepack
-author: camillepack
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
-ms.date: 01/30/2024
+ms.date: 04/01/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: 
+- operations-pod
+ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
@@ -44,13 +45,13 @@ Your user list will look like this:
   
 ![Reports - anonymized user list.](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
   
-Global administrators can revert this change for their tenant and show identifiable user information if their organization's privacy practices allow it. It can be achieved in the Microsoft 365 admin center by following these steps:
+Administrators can revert this change for their tenant and show identifiable user information if their organization's privacy practices allow it. It can be achieved in the Microsoft 365 admin center by following these steps:
   
 1. In the admin center, go to the **Settings** \> **Org Settings** \> **Services** page.
 
-2. Select **Reports**. 
+2. Select **Reports**.
   
-3. Uncheck the statement **In all reports, display de-identified names for users, groups, and sites**, and then save your changes. 
+3. Uncheck the statement **In all reports, display de-identified names for users, groups, and sites**, and then save your changes.
   
 ## Interpret the SharePoint site usage report
 
@@ -68,7 +69,7 @@ The **SharePoint site usage** report can be viewed for trends over the last 7 da
   
 |Metric|Description|
 |:-----|:-----|
-|Site URL  |The full URL of the site. Note: The URL will be empty temporarily. |
+|Site URL  |The full URL of the site. |
 |Deleted  |The deletion status of the site. It takes at least 7 days for sites to be marked as deleted.  |
 |Site owner  |The username of the primary owner of the site.   |
 |Site owner principal name  |The email address of the owner of the site. |
@@ -91,6 +92,6 @@ The **SharePoint site usage** report can be viewed for trends over the last 7 da
 | Site ID | The site ID of the site. |
 
 >[!NOTE]
-> The SharePoint site URL may not be displayed in related usage reports. To display the site URL, you can use PowerShell. To follow the steps, see [Use PowerShell to resolve site URLs](resolve-site-urls.md).
+>The SharePoint site URL will not be displayed if [BYOK](/azure/information-protection/byok-price-restrictions) or [Customer Lockbox](/azure/security/fundamentals/customer-lockbox-overview) is enabled. If you meet the requirement, submit a request via [ODSP Site URLs Displaying Request](https://forms.office.com/r/16hLY6na5W). The site URL will be visible within one week. If the requirement is not met, you can use PowerShell. To follow the steps, see [Use PowerShell to resolve site URLs](resolve-site-urls.md).
 
 Note that you may see differences between the sites listed above and those listed on the [Active sites page](https://go.microsoft.com/fwlink/?linkid=2185220) in the [SharePoint admin center](https://go.microsoft.com/fwlink/?linkid=2185219), from Sites > Active sites because the certain site templates and URLs are not included as Active Sites. See [Manage sites in the SharePoint admin center](/sharepoint/manage-sites-in-new-admin-center) for more information.

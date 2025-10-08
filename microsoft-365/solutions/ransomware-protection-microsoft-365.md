@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 ms.date: 07/16/2021
 audience: ITPro
-ms.topic: article
+ms.topic: solution-overview
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
@@ -24,15 +24,14 @@ description: Step through protecting your Microsoft 365 resources from ransomwar
 
 # Deploy ransomware protection for your Microsoft 365 tenant
 
-Ransomware is a type of extortion attack that destroys or encrypts files and folders, preventing access to critical data. Commodity ransomware typically spreads like a virus that infects devices and only requires malware remediation. Human-operated ransomware is the result of an active attack by cybercriminals that infiltrate an organization’s on-premises or cloud IT infrastructure, elevate their privileges, and deploy ransomware to critical data.
+Ransomware is a type of extortion attack that destroys or encrypts files and folders, preventing access to critical data. Commodity ransomware typically spreads like a virus that infects devices and only requires malware remediation. Human-operated ransomware is the result of an active attack by cybercriminals that infiltrate an organization's on-premises or cloud IT infrastructure, elevate their privileges, and deploy ransomware to critical data.
 
 Once the attack is complete, an attacker demands money from victims in exchange for the deleted files, decryption keys for encrypted files, or a promise not to release sensitive data to the dark web or the public internet. Human-operated ransomware can also be used to shut down critical machines or processes, such as those needed for industrial production, bringing normal business operations to a halt until the ransom is paid and the damage is corrected, or the organization remediates the damage themselves.
 
 A human-operated ransomware attack can be catastrophic to businesses of all sizes and is difficult to clean up, requiring complete adversary eviction to protect against future attacks. Unlike commodity ransomware, human-operated ransomware can continue to threaten businesses operations after the initial ransom request.
 
->[!Note]
->A ransomware attack on a Microsoft 365 tenant assumes that the attacker has valid user account credentials for a tenant and has access to all of the files and resources that are permitted to the user account. An attacker without any valid user account credentials would have to decrypt the data at rest that has been encrypted by Microsoft 365 default and enhanced encryption. For more information, see [Encryption and key management overview](/compliance/assurance/assurance-encryption). 
->
+> [!Note]
+> A ransomware attack on a Microsoft 365 tenant assumes that the attacker has valid user account credentials for a tenant and has access to all of the files and resources that are permitted to the user account. An attacker without any valid user account credentials would have to decrypt the data at rest that has been encrypted by Microsoft 365 default and enhanced encryption. For more information, see [Encryption and key management overview](/compliance/assurance/assurance-encryption). 
 
 For more information about ransomware protection across Microsoft products, see these [additional ransomware resources](#additional-ransomware-resources).
 
@@ -53,42 +52,39 @@ A ransomware attacker that has infiltrated a Microsoft 365 tenant can hold your 
 - Encrypting files in place
 - Copying files outside your tenant (data exfiltration)
 
-However, Microsoft 365 online services have many built in capabilities and controls to protect customer data from ransomware attacks. The following sections provide a summary. For more details about how Microsoft protects customer data, [Malware and ransomware protection in Microsoft 365](/compliance/assurance/assurance-malware-and-ransomware-protection).
+However, Microsoft 365 online services have many built-in capabilities and controls to protect customer data from ransomware attacks. The following sections provide a summary. For more details about how Microsoft protects customer data, [Malware and ransomware protection in Microsoft 365](/compliance/assurance/assurance-malware-and-ransomware-protection).
 
->[!Note]
->A ransomware attack on a Microsoft 365 tenant assumes that the attacker has valid user account credentials for a tenant and has access to all of the files and resources that are permitted to the user account. An attacker without any valid user account credentials would have to decrypt the data at rest that has been encrypted by Microsoft 365 default and enhanced encryption. For more information, see [Encryption and key management overview](/compliance/assurance/assurance-encryption). 
->
+> [!Note]
+> A ransomware attack on a Microsoft 365 tenant assumes that the attacker has valid user account credentials for a tenant and has access to all of the files and resources that are permitted to the user account. An attacker without any valid user account credentials would have to decrypt the data at rest that has been encrypted by Microsoft 365 default and enhanced encryption. For more information, see [Encryption and key management overview](/compliance/assurance/assurance-encryption).
 
 ### Deleting files or email
 
-Files in SharePoint and OneDrive for Business are protected by:
+Files in SharePoint and OneDrive for Business are protected by versioning, the recycle bin, and the ability to restore files.
 
-- Versioning 
-
-   Microsoft 365 retains a minimum of 500 versions of a file by default and can be configured to retain more. 
+- **Versioning**: Microsoft 365 retains a minimum of 500 versions of a file by default and can be configured to retain more. 
 
    To minimize the burden on your security and helpdesk staff, train your users on how to [restore previous versions of files](https://support.microsoft.com/office/restore-a-previous-version-of-an-item-or-file-in-sharepoint-f66dbda0-81f4-4d1e-b08c-793265c58934).
 
-- Recycle bin
-
-   If the ransomware creates a new encrypted copy of the file and deletes the old file, customers have 93 days to restore it from the recycle bin. After 93 days, there is a 14-day window where Microsoft can still recover the data. 
+- **Recycle bin**: If the ransomware creates a new encrypted copy of the file and deletes the old file, customers have 93 days to restore it from the recycle bin. After 93 days, there is a 14-day window where Microsoft can still recover the data. 
   
    To minimize the burden on your security and helpdesk staff, train your users on how to [restore files from the recycle bin](https://support.microsoft.com/office/restore-deleted-items-from-the-site-collection-recycle-bin-5fa924ee-16d7-487b-9a0a-021b9062d14b).
 
-- [Files Restore](https://support.microsoft.com/office/restore-your-onedrive-fa231298-759d-41cf-bcd0-25ac53eb8a15)
-
-   A complete self-service recovery solution for SharePoint and OneDrive that allows administrators and end users to restore files from any point in time during the last 30 days.
+- **File restore**: File restore is a complete self-service recovery solution for SharePoint and OneDrive that allows administrators and end users to restore files from any point in time during the last 30 days.
 
    To minimize the burden on your security and IT helpdesk staff, train your users on [Files Restore](https://support.microsoft.com/office/restore-your-onedrive-fa231298-759d-41cf-bcd0-25ac53eb8a15).
 
 
 For OneDrive and SharePoint files, Microsoft can roll back to a previous point in time for up to 14 days if you are hit by a mass attack.
 
-Email is protected by:
+Email is protected by single-item recovery and retention policies.
 
 - [Single item recovery](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-single-item-recovery) and mailbox retention, in which you can recover items in a mailbox upon inadvertent or malicious premature deletion. You can rollback mail messages deleted within 14 days by default, configurable up to 30 days.
 
 - [Retention policies](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies) allow you to retain immutable copies of email for the configured retention period.
+
+### Enhanced Recovery Solutions
+
+In addition to these native built-in capabilities, Microsoft also recommends evaluating the use of [Microsoft 365 Backup](https://www.microsoft.com/en-us/microsoft-365/microsoft-365-backup) or a recognized partner solution built on top of the [Microsoft 365 Backup Storage](https://adoption.microsoft.com/en-us/microsoft-365-backup-storage/#partners) platform. The Microsoft 365 Backup tool compliments and extends native capabilities with a focus on fast, secure, and efficient self-service bulk recovery to recover your content quickly to a healthy pre-attack prior point in time. The Backup Storage platform is architected and purpose-built to provide enhanced restore capabilities for admins. Be aware that purchasing a partner solution that does not leverage the Microsoft 365 Backup Storage platform. Some partner solutions only copy your data to another location and will likely not provide sufficient performance restoration capabilities to meet your ransomware recovery needs. Learn more about [how to select an appropriate backup and restore solution](https://adoption.microsoft.com/files/microsoft-365-backup/Microsoft-365-Backup_Best-practices-whitepaper.pdf).
 
 ### Encrypting files in place
 
@@ -98,27 +94,23 @@ As previously described, files in SharePoint and OneDrive for Business are prote
 - Recycle bin
 - Preservation Hold library
 
-For additional details, see [Dealing with data corruption in Microsoft 365](/compliance/assurance/assurance-dealing-with-data-corruption).
+For more information, see [Dealing with data corruption in Microsoft 365](/compliance/assurance/assurance-dealing-with-data-corruption).
 
 ### Copying files outside your tenant 
 
-You can prevent a ransomware attacker from copying files outside your tenant with:
+You can prevent a ransomware attacker from copying files outside your tenant with Microsoft Purview Data Loss Prevention (DLP) and Microsoft Defender for Cloud Apps.
 
-- [Microsoft Purview Data Loss Prevention (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) policies
+- [Microsoft Purview Data Loss Prevention (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) policies enable your organization to detect, warn, and block risky, inadvertent, or inappropriate sharing of data containing the following types of information:
 
-    Detect, warn, and block risky, inadvertent, or inappropriate sharing of data containing:
+   - Personal information such as personally identifying information (PII) for compliance with regional privacy regulations
+   
+   - Confidential organization information based on sensitivity labels
 
-    - Personal information such as personally identifying information (PII) for compliance with regional privacy regulations.
+- [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) helps block downloads of sensitive information such as files. 
 
-    - Confidential organization information based on sensitivity labels.
+   You can also use session policies for [Defender for Cloud Apps Conditional Access App Control](/cloud-app-security/tutorial-dlp#how-to-discover-and-protect-sensitive-information-in-your-organization) to monitor the flow of information between a user and an application in real time.
 
-- [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)
-
-    Block downloads of sensitive information such as files. 
-
-    You can also use session policies for [Defender for Cloud Apps Conditional Access App Control](/cloud-app-security/tutorial-dlp#how-to-discover-and-protect-sensitive-information-in-your-organization) to monitor the flow of information between a user and an application in real time.
-
-## What’s in this solution
+## What's in this solution
 
 This solution steps you through the deployment of Microsoft 365 protection and mitigation features, configurations, and ongoing operations to minimize the ability of a ransomware attacker to use the critical data in your Microsoft 365 tenant and hold your organization for ransom.
 
@@ -156,19 +148,17 @@ To protect your Microsoft 365 tenant from a ransomware attack, use these Microso
 | Attack surface reduction rules | Reduces your organization's vulnerability to cyber attacks using a variety of configuration settings. | Block suspicious activity and vulnerable content. | Microsoft 365 E3 or Microsoft 365 E5 |
 | Exchange email settings |  Enables services that reduce your organization's vulnerability to an email-based attack. | Prevent initial access to your tenant through phishing and other email-based attacks.  | Microsoft 365 E3 or Microsoft 365 E5 |
 | Microsoft Windows, Microsoft Edge, and Microsoft 365 Apps for Enterprise settings | Provides industry-standard security configurations that are broadly known and well-tested. | Prevent attacks through Windows, Edge, and Microsoft 365 Apps for Enterprise. | Microsoft 365 E3 or Microsoft 365 E5 |
-|
 
 ### 2. Detection and response
 
 | Capability or feature | Description | Helps detect and respond to... | Licensing |
 |:-------|:-----|:-------|:-------|
-| Microsoft Defender XDR | Combines signals and orchestrates capabilities into a single solution. <br><br> Enables security professionals to stitch together threat signals and determine the full scope and impact of a threat. <br><br> Automates actions to prevent or stop the attack and self-heal affected mailboxes, endpoints, and user identities. | Incidents, which are the combined alerts and data that make up an attack. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
-| Microsoft Defender for Identity |  Identifies, detects, and investigates advanced threats, compromised identities, and malicious insider actions directed at your organization through a cloud-based security interface uses your on-premises Active Directory Domain Services (AD DS) signals. | Credential compromise for AD DS accounts. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
-| Microsoft Defender for Office 365 | Safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. <br><br> Protects against malware, phishing, spoofing, and other attack types. | Phishing attacks. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
-| Microsoft Defender for Endpoint | Enables detection and response to advanced threats across endpoints (devices). | Malware installation and device compromise. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
-| Microsoft Entra ID Protection | Automates detection and remediation of identity-based risks and investigation of those risks. | Credential compromise for Microsoft Entra accounts and privilege escalation. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
-| Defender for Cloud Apps | A cloud access security broker for discovery, investigation, and governance across all your Microsoft and third-party cloud services. | Lateral movement and data exfiltration. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
-|
+| Microsoft Defender XDR | Combines signals and orchestrates capabilities into a single solution. <br><br> Enables security professionals to stitch together threat signals and determine the full scope and impact of a threat. <br><br> Automates actions to prevent or stop the attack and self-heal affected mailboxes, endpoints, and user identities. | Incidents, which are the combined alerts and data that make up an attack. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft Defender Suite add-on |
+| Microsoft Defender for Identity |  Identifies, detects, and investigates advanced threats, compromised identities, and malicious insider actions directed at your organization through a cloud-based security interface uses your on-premises Active Directory Domain Services (AD DS) signals. | Credential compromise for AD DS accounts. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft Defender Suite add-on |
+| Microsoft Defender for Office 365 | Safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. <br><br> Protects against malware, phishing, spoofing, and other attack types. | Phishing attacks. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft Defender Suite add-on |
+| Microsoft Defender for Endpoint | Enables detection and response to advanced threats across endpoints (devices). | Malware installation and device compromise. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft Defender Suite add-on |
+| Microsoft Entra ID Protection | Automates detection and remediation of identity-based risks and investigation of those risks. | Credential compromise for Microsoft Entra accounts and privilege escalation. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft Defender Suite add-on |
+| Defender for Cloud Apps | A cloud access security broker for discovery, investigation, and governance across all your Microsoft and third-party cloud services. | Lateral movement and data exfiltration. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft Defender Suite add-on |
 
 ### 3. Identities
 
@@ -176,17 +166,13 @@ To protect your Microsoft 365 tenant from a ransomware attack, use these Microso
 |:-------|:-----|:-------|:-------|
 |Microsoft Entra Password Protection | Block passwords from a common list and custom entries. | Cloud or on-premises user account password determination. |Microsoft 365 E3 or Microsoft 365 E5|
 |MFA enforced with Conditional Access | Require MFA based on the properties of user sign-ins with Conditional Access policies. | Credential compromise and access. | Microsoft 365 E3 or Microsoft 365 E5|
-|MFA enforced with risk-based Conditional Access | Require MFA based on the risk of user sign-ins with Microsoft Entra ID Protection. |Credential compromise and access. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on|
-|
+|MFA enforced with risk-based Conditional Access | Require MFA based on the risk of user sign-ins with Microsoft Entra ID Protection. |Credential compromise and access. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft Defender Suite add-on|
 
 ### 4. Devices
-
-For device and app management:
 
 | Capability or feature | Description | Helps prevent... | Licensing |
 |:-------|:-----|:-------|:-------|
 | Microsoft Intune | Manage devices and the applications that run on them.  | Device or app compromise and access. | Microsoft 365 E3 or E5 |
-|  |  |  |  |
 
 For Windows 11 or 10 devices:
 
@@ -195,8 +181,7 @@ For Windows 11 or 10 devices:
 | Microsoft Defender Firewall | Provides a host-based firewall.  | Prevent attacks from inbound, unsolicited network traffic. | Microsoft 365 E3 or Microsoft 365 E5 |
 | Microsoft Defender Antivirus | Provides anti-malware protection of devices (endpoints) using machine learning, big-data analysis, in-depth threat resistance research, and the Microsoft cloud infrastructure. | Prevent installation and running of malware. | Microsoft 365 E3 or Microsoft 365 E5 |
 | Microsoft Defender SmartScreen | Protects against phishing or malware websites and applications, and the downloading of potentially malicious files. | Block or warn when checking sites, downloads, apps, and files. | Microsoft 365 E3 or Microsoft 365 E5 |
-| Microsoft Defender for Endpoint | Helps prevent, detect, investigate, and respond to advanced threats across devices (endpoints). | Protect against network tampering. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
-|  |  |  |  |
+| Microsoft Defender for Endpoint | Helps prevent, detect, investigate, and respond to advanced threats across devices (endpoints). | Protect against network tampering. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft Defender Suite add-on |
 
 ### 5. Information
 
@@ -205,7 +190,7 @@ For Windows 11 or 10 devices:
 | Controlled folder access | Protects your data by checking apps against a list of known, trusted apps. | Prevent files from being altered or encrypted by ransomware. | Microsoft 365 E3 or Microsoft 365 E5 |
 | Microsoft Purview Information Protection | Enables sensitivity labels to be applied to information that is ransomable | Prevent use of exfiltrated information. | Microsoft 365 E3 or Microsoft 365 E5 |
 | Data loss prevention (DLP) | Protects sensitive data and reduces risk by preventing users from sharing it inappropriately. | Prevent data exfiltration. | Microsoft 365 E3 or Microsoft 365 E5 |
-| Defender for Cloud Apps | A cloud access security broker for discovery, investigation, and governance. | Detect lateral movement and prevent data exfiltration. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
+| Defender for Cloud Apps | A cloud access security broker for discovery, investigation, and governance. | Detect lateral movement and prevent data exfiltration. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft Defender Suite add-on |
 |
 
 ## Impact on users and change management
@@ -244,7 +229,10 @@ Microsoft 365:
 - [Maximize Ransomware Resiliency with Azure and Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
 - [Ransomware incident response playbooks](/security/ransomware/)
 - [Malware and ransomware protection](/compliance/assurance/assurance-malware-and-ransomware-protection)
-- [Protect your Windows 10 PC from ransomware](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
+- [Protect your Windows 10 PC from ransomware](https://support.microsoft.com/windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
+
+- [Microsoft 365 Backup for enhanced, efficient, and secure recovery](https://aka.ms/m365backup)
+
 - [Handling ransomware in SharePoint Online](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
 - [Threat analytics reports for ransomware](https://security.microsoft.com/threatanalytics3?page_size=30&filters=tags%3DRansomware&ordering=-lastUpdatedOn&fields=displayName,alertsCount,impactedEntities,reportType,createdOn,lastUpdatedOn,tags,flag) in the Microsoft Defender portal
 

@@ -5,7 +5,7 @@ author: dzazzo-msft
 manager: dzazzo
 ms.date: 05/19/2020
 audience: ITPro
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.subservice: network
 ms.localizationpriority: medium

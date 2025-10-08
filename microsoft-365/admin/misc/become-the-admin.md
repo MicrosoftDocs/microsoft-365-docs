@@ -2,21 +2,21 @@
 title: "Perform an internal admin takeover"
 f1.keywords:
 - CSH
-ms.author: efrene
-author: efrene
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 ms.date: 11/27/2023
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
 - Tier2
-- scotvorg 
-- M365-subscription-management 
+- scotvorg
+- M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: 
+ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
@@ -34,7 +34,7 @@ description: "Learn how to verify your email and domain ownership to take over a
 If you're an admin and want to take over an unmanaged account created by a self-service user signup, you can perform an internal admin takeover by following the steps in this article.
 
 > [!NOTE]
-> A self-service sign up for any cloud service that uses Microsoft Entra ID adds the user to an unmanaged or "shadow" Microsoft Entra directory and creates an unmanaged account. An unmanaged account is a directory without a global administrator. To determine whether an account is managed or unmanaged, see [Determining Tenant Type](/power-platform/admin/powerapps-gdpr-dsr-guide-systemlogs#determining-tenant-type). 
+> A self-service sign up for any cloud service that uses Microsoft Entra ID adds the user to an unmanaged or "shadow" Microsoft Entra directory and creates an unmanaged account. An unmanaged account is a directory without a global administrator. To determine whether an account is managed or unmanaged, see [Determining Tenant Type](/power-platform/admin/powerapps-gdpr-dsr-guide-systemlogs#determining-tenant-type).
   
 ## Before you begin
 
@@ -42,8 +42,9 @@ When a user signs up for Microsoft 365 services using an email address, an accou
 
 ## Step 1: Verify your email address
 
-> [!NOTE]
-> If self-service is enabled in your account, users can subscribe to free services such as Power BI, on their own. These services are specifically for use in cases where a self-service user subscription has created the unmanaged account you want to take over as admin. In Step 1 you create a user account for the domain you want to remove by using Power BI to launch the admin takeover wizard so you can become the admin for the unmanaged domain account.
+[!INCLUDE [global-administrator-note](../../includes/global-administrator-note.md)]
+
+If self-service is enabled in your account, users can subscribe to free services such as Power BI, on their own. These services are specifically for use in cases where a self-service user subscription has created the unmanaged account you want to take over as admin. In Step 1 you create a user account for the domain you want to remove by using Power BI to launch the admin takeover wizard so you can become the admin for the unmanaged domain account.
 
 1. To sign up for Power BI, go to the [Power BI site](https://powerbi.com) and select **Start Free** > **Start free trial** (in Share with Power BI Pro box). 
 

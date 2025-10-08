@@ -2,12 +2,12 @@
 title: "Connect to Microsoft 365 Government Community Cloud (GCC) data with Usage Analytics"
 f1.keywords:
 - CSH
-ms.author: efrene
+ms.author: cmcatee
 author: efrene
-manager: scotv
+manager: dansimp
 ms.date: 07/26/2021
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
@@ -16,7 +16,8 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: 
+- operations-pod
+ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:

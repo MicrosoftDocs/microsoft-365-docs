@@ -7,7 +7,7 @@ ms.author: bcarter
 manager: dansimp
 ms.date: 06/10/2020
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
@@ -47,7 +47,7 @@ Protect your applications and data with these security features of Microsoft 365
 |Capability or feature|Why I need it|Licensing|
 |---|---|---|
 |Microsoft Defender for Office 365|Protect your Microsoft 365 apps and data—such as email messages, Office documents, and collaboration tools—from attack. <p> Microsoft Defender for Office 365 collects and analyzes signals from your apps for detection, investigation, and remediation of security risks and safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. It also provides automated tenant configuration assessment and configuration tooling for standard and strict security postures.|Microsoft 365 E3 or E5|
-|Malware protection|Microsoft Defender Antivirus and Device Guard provides device-based malware protection. <p> SharePoint Online automatically scans file uploads for known malware. <p> Exchange Online Protection (EOP) secures cloud mailboxes.|Microsoft 365 E3 or E5|
+|Malware protection|Microsoft Defender Antivirus and Device Guard provides device-based malware protection. <p> SharePoint Online automatically scans file uploads for known malware. <p> The default email protections for all organizations with cloud mailboxes secures email.|Microsoft 365 E3 or E5|
 |Microsoft Defender for Endpoint|Protect your organization’s devices from cyber threats and data breaches and detect, investigate, and respond to advanced threats.|Microsoft 365 E5|
 |Defender for Cloud Apps|Protect your cloud-based services—both Microsoft 365 and other SaaS apps—from attack.|Microsoft 365 E5 or individual Defender for Cloud Apps licenses|
 |Microsoft Entra ID Protection|Automate detection and remediation of identity-based risks. <p>Create risk-based Conditional Access policies to require multi-factor authentication (MFA) for risky sign-ins.|Microsoft 365 E5 or E3 with Microsoft Entra ID P2 licenses|
@@ -71,7 +71,7 @@ Comply with internal policies or regulatory requirements with these compliance f
 |Data retention labels and policies|Implement information governance controls, such as how long to keep data and requirements on the storage of personal data on customers, to comply with your organization's policies or data regulations.|Microsoft 365 E3 or E5|
 |Microsoft Purview Message Encryption|Send and receive encrypted email messages between people inside and outside your organization that contains regulated data, such as personal data on customers.|Microsoft 365 E3 or E5|
 |Compliance Manager|Manage regulatory compliance activities related to Microsoft cloud services with this workflow-based risk assessment tool in the Microsoft Service Trust Portal.|Microsoft 365 E3 or E5|
-|Compliance Manager|See an overall score of your current compliance configuration and recommendations for improving it in the Microsoft Purview compliance portal.|Microsoft 365 E3 or E5|
+|Compliance Manager|See an overall score of your current compliance configuration and recommendations for improving it in the Microsoft Purview portal.|Microsoft 365 E3 or E5|
 |Communication Compliance|Detect, capture, and take remediation actions for inappropriate messages in your organization.|Microsoft 365 E5 or Microsoft 365 E3 with the Compliance or Insider Risk Management add-ons|
 |Insider Risk Management|Detect, investigate, and act on malicious and inadvertent risks in your organization. Microsoft 365 can detect these kinds of risks even when a worker is using an unmanaged device.|Microsoft 365 E5 or Microsoft 365 E3 with the Compliance or Insider Risk Management add-ons|
 ||||

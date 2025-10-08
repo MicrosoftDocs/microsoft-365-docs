@@ -2,15 +2,16 @@
 title: "Update DNS records to keep your website with your current hosting provider"
 f1.keywords:
 - NOCSH
-ms.author: nkagole
-author: nataliekagole
-manager: scotv
-ms.date: 07/10/2024
+ms.author: kwekua
+author: kwekuako
+manager: dansimp
+ms.date: 08/10/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-domains
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier2
 - scotvorg
 - highpri
@@ -18,7 +19,8 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - must-keep
-ms.custom: 
+- operations-pod
+ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 search.appverid:
@@ -33,6 +35,8 @@ description: "Learn how to route traffic to an existing public website hosted ou
 # Update DNS records to keep your website with your current hosting provider
 
 Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
+[!INCLUDE [How to get tech support for SMB](../../includes/smb-how-to-get-tech-support.md)]
 
  **If you manage your domain's Microsoft records at your DNS hosting provider**, you don't have to worry about the steps in this topic. Your website stays where it is and people can still get to it.
   
@@ -52,7 +56,7 @@ Check out all of our small business content on [Small business help & learning](
     
    - For **IP Address**, type the static IP address for your website where it's currently hosted (for example, 172.16.140.1).
     
-   This must be a  *static*  IP address for the website, not a *dynamic* IP address. Check with site where your website is hosted to make sure you can get a static IP address for your public website.
+   This must be a *static* IP address for the website, not a *dynamic* IP address. Check with site where your website is hosted to make sure you can get a static IP address for your public website.
     
 1. Select **Save**.
     

@@ -1,0 +1,19 @@
+name: PR has no warnings or errors
+
+permissions:
+  pull-requests: write
+  statuses: write
+      
+on: 
+  issue_comment:
+    types: [created]
+
+jobs:
+
+  build-status:
+    if: github.repository_owner == 'MicrosoftDocs'
+    uses: MicrosoftDocs/microsoft-365-docs/.github/workflows/Shared-BuildValidation.yml@workflows-prod
+    with:
+      PayloadJson: ${{ toJSON(github) }}
+    secrets:
+      AccessToken: ${{ secrets.GITHUB_TOKEN }}

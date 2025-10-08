@@ -3,9 +3,9 @@ title: "Remove Microsoft 365 licenses from user accounts with PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 01/17/2024
+ms.date: 12/05/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: medium
@@ -39,7 +39,7 @@ description: "Explains how to use PowerShell to remove Microsoft 365 licenses th
 
 ## Use the Microsoft Graph PowerShell SDK
 
-First, [connect to your Microsoft 365 tenant](/graph/powershell/get-started#authentication).
+First, [connect to your Microsoft 365 tenant](/powershell/microsoftgraph/get-started?view=graph-powershell-1.0#authentication).
 
 Assigning and removing licenses for a user requires the User.ReadWrite.All permission scope or one of the other permissions listed in the ['Assign license' Graph API reference page](/graph/api/user-assignlicense).
 
@@ -84,11 +84,12 @@ foreach($user in $licensedUsers)
 }
 ```
 
-To remove a specific license from a list of users in a text file, perform the following steps. This example removes the **SPE_E5** (Microsoft 365 Enterprise E5) license from the user accounts defined in the text file C:\My Documents\Accounts.txt.
+To remove a specific license from a list of users in a `CSV` file, perform the following steps. This example removes the **SPE_E5** (Microsoft 365 Enterprise E5) license from the user accounts defined in the `CSV` file C:\My Documents\Accounts.csv.
 
-  1. Create and save a text file to C:\My Documents\Accounts.txt that contains one account on each line like this:
+  1. Create and save a CSV file to C:\My Documents\Accounts.csv that contains one account on each line under the `UserPrincipalName` header like this:
 
      ```powershell
+     UserPrincipalName
      akol@contoso.com
      tjohnston@contoso.com
      kakers@contoso.com
@@ -97,11 +98,10 @@ To remove a specific license from a list of users in a text file, perform the fo
   2. Use the following command:
 
      ```powershell
-     $x=Get-Content "C:\My Documents\Accounts.txt"
+     $usersList = Import-CSV -Path "C:\My Documents\Accounts.csv"
      $e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'
-     for ($i=0; $i -lt $x.Count; $i++)
-     {
-     Set-MgUserLicense -UserId $x[$i] -RemoveLicenses @($e5Sku.SkuId) -AddLicenses @{}
+     foreach($user in $usersList) {
+       Set-MgUserLicense -UserId $user.UserPrincipalName -RemoveLicenses @($e5Sku.SkuId) -AddLicenses @{}
      }
      ```
 

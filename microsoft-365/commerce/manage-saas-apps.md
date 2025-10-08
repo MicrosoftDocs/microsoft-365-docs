@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: armanv, nicholak
+ms.reviewer: patyc
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -16,13 +16,15 @@ ms.collection:
 - scotvorg
 - M365-subscription-management
 - Adm_O365
-ms.custom: 
+- operations-pod
+ms.custom:
 - commerce_subscriptions
 - AdminSurgePortfolio
 - admindeeplinkMAC
-search.appverid: MET150 
+- GAUpdates
+search.appverid: MET150
 description: "Learn how to activate and manage third-party apps in the Microsoft 365 admin center."
-ms.date: 10/13/2023
+ms.date: 07/08/2025
 ---
 
 # Manage third-party app subscriptions in the Microsoft 365 admin center
@@ -35,11 +37,11 @@ You can manage licenses and billing for third-party apps in the <a href="https:/
 ## Before you begin
 
 - [Find out what type of billing account you have](manage-billing-accounts.md#view-my-billing-accounts).
-- If you have a Microsoft Online Services Agreement (MOSA) billing account type, you must be a Global or Billing admin to do the tasks in this article. For more information, see [About admin roles in the Microsoft 365 admin center](../admin/add-users/about-admin-roles.md).
 - If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a Billing account owner or contributor to do the tasks in this article. For more information about billing account and billing profile roles, see [Understand your Microsoft business billing account](manage-billing-accounts.md) and [Manage your Microsoft business billing profiles](billing-and-payments/manage-billing-profiles.md).
+- If you have a Microsoft Online Services Agreement (MOSA) billing account type, you must be at least a Billing Administrator to do the tasks in this article. For more information, see [About admin roles in the Microsoft 365 admin center](../admin/add-users/about-admin-roles.md).
 
 > [!NOTE]
-> If you're the person who signed up for the subscription, you're automatically a Global admin or Billing account owner.
+> If you're the person who signed up for the subscription, you're automatically a Billing account owner.
 
 ## How to get software-as-a-service apps
 

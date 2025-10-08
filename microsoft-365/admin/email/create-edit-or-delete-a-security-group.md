@@ -4,19 +4,20 @@ f1.keywords:
 - NOCSH
 ms.author: kwekua
 author: kwekuako
-manager: scotv
-ms.date: 09/19/2023
+manager: dansimp
+ms.date: 10/02/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
 - Tier3
-- scotvorg 
-- M365-subscription-management 
+- scotvorg
+- M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: 
+- operations-pod
+ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
@@ -30,13 +31,10 @@ On the Microsoft 365 **Active teams and groups** page, you can create groups of 
 
 ## Before you begin
 
-Only global and user management administrators have permissions to create, edit, or delete security groups; for more information about administrator roles, see [Assigning admin roles](../add-users/assign-admin-roles.md).
+User management administrators have permissions to create, edit, or delete security groups; for more information about administrator roles, see [Assigning admin roles](../add-users/assign-admin-roles.md).
   
 There are also [Groups in Exchange Online and SharePoint Online](#groups-in-exchange-online-and-sharepoint-online) that you can use to send email or assign permissions to a group of users, and [Groups in Exchange Online and SharePoint Online](#groups-in-exchange-online-and-sharepoint-online) that grant users rights and access to sites and site collections.
-  
-> [!IMPORTANT]
-> Planning on using site mailboxes? All the users that are added to a SharePoint site via a security group rather than being added individually can use only the site mailbox from SharePoint. These users won't be able to access the site mailbox from Outlook. For more information, see [Use Microsoft 365 Groups instead of Site Mailboxes](https://support.microsoft.com/office/737d6b1f-67cc-41fe-8db8-f2d09dd1673b).
-  
+
 ## Manage security groups in the admin center
 
 ### Add a security group
@@ -47,15 +45,17 @@ There are also [Groups in Exchange Online and SharePoint Online](#groups-in-exch
 
 3. On the **Set up the basics** page, add your group name and a description and choose **Next**.
 
-4. On the **Edit settings** page, select whether you want Microsoft Entra roles can be assigned to this group and select **Next**.
+4. On the **Edit settings** page, select whether you want to allow Microsoft Entra roles to be assigned to the group and select **Next**.
 
 5. Review your selections and choose **Create group** and **Close**.
 
 ### Add owners or members to a security group
 
-1. Select the security group name on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Active teams and groups</a> page, and on the **Members** tab, select **View all and manage members**.
+1. Select the security group name on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Active teams and groups</a>.
 
-2. On the **General** tab, select **Add group owners** to ad group owners. On the **Members** tab, select **View all and manage members** and choose the person from the list or use the **Search** box. Select **Add** and close.
+2. On the **General** tab, select **Add group owners**, **Add owners** to add group owners.
+
+3. On the **Members** tab, select **View all and manage members** and choose the person from the list or use the **Search** box. Select **Add** and close.
 
 ### Remove members from a security group
 
@@ -73,7 +73,7 @@ There are also [Groups in Exchange Online and SharePoint Online](#groups-in-exch
 
 1. In the Microsoft 365 admin center, go to **Team & groups** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Active teams and groups</a> page.
 
-2. Select the security group and on the **General** tab, select **Delete group** (waste bin icon), and then confirm by selecting **Delete group** and then **Close** once the group is deleted.
+2. Select the security group and on the **General** tab, select **Delete group** and then confirm by selecting **Delete group**. Then **Close** once the group is deleted.
 
 ## Groups in Exchange Online and SharePoint Online
 
@@ -81,7 +81,7 @@ If you want to create groups of users so you can send email to them all at the s
   
 - **Distribution group**: Used to distribute messages to a group of users. It's also called a  *mail-enabled distribution group*, or, a  *distribution list*. For more information, see [Manage distribution groups](/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups).
 
-- **Security group**: Can be used to distribute messages to a group of users, or to grant access permissions to resources. This group is also called a *mail-enabled security group*. For more information, see [Manage mail-enabled security groups](/Exchange/recipients/mail-enabled-security-groups).
+- **Security group**: Can be used to distribute messages to a group of users, or to grant access permissions to resources. This group is also called a *mail-enabled security group*. For more information, see [Manage mail-enabled security groups](/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups).
 
 - **Dynamic distribution group**: A type of distribution group whose list of recipients is recalculated every time you send a message based on filters and conditions that you define. For more information, see [Manage dynamic distribution groups](/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups).
 

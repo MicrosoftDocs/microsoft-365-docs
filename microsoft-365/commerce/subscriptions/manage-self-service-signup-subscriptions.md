@@ -4,28 +4,31 @@ f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
-manager: scotv
+manager: dansimp
 ms.reviewer: mijeffer, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
+- operations-pod
 ms.custom:
-  - commerce_subscriptions
-  - AdminSurgePortfolio
-  - admindeeplinkMAC
-  - has-azure-ad-ps-ref
-  - azure-ad-ref-level-one-done
+- commerce_subscriptions
+- AdminSurgePortfolio
+- admindeeplinkMAC
+- has-azure-ad-ps-ref
+- azure-ad-ref-level-one-done
+- GAUpdates
 search.appverid: MET150
 description: "Learn how to manage free self-service sign-up subscriptions for your organization in the Microsoft 365 admin center."
-ms.date: 01/02/2024
+ms.date: 08/26/2025
 ---
+
 # Manage self-service sign-up subscriptions in the Microsoft 365 admin center
 
 ## What are self-service sign-up subscriptions?
@@ -34,10 +37,7 @@ There are a limited number of free self-service sign-up subscriptions available 
 
 ## Before you begin
 
-You must be a global or billing admin to perform the tasks in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
-
-> [!NOTE]
-> If you're the person who signed up for the subscription, you're automatically a global admin.
+You must be at least a Billing Administrator to perform the tasks in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
 ## View a list of self-service sign-up subscriptions
 

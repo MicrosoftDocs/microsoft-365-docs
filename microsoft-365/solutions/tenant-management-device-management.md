@@ -3,9 +3,9 @@ title: Step 5. Device and app management for your Microsoft 365 for enterprise t
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/01/2020
+ms.date: 08/15/2024
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: 
@@ -15,6 +15,7 @@ ms.collection:
 - m365solution-tenantmanagement
 - tenant-management
 - m365solution-scenario
+- must-keep
 ms.custom:
 - Ent_Solutions
 description: "Deploy the correct option for device and app management for your Microsoft 365 tenants."
@@ -31,7 +32,7 @@ Here is an example of the validation and management of users, their devices, and
 To help you secure and protect your organization's resources, Microsoft 365 for enterprise includes features to help manage devices and their access to apps. There are two options for device management:
 
 - Microsoft Intune, which is a comprehensive device and app management solution for enterprises.
-- Basic Mobility and Security, which is a subset of Intune services included with all Microsoft 365 products for managing devices in your organization. For more information, see [Capabilities of Basic Mobility and Security](../admin/basic-mobility-security/capabilities.md).
+- Basic Mobility and Security, which is a subset of Intune services included with all Microsoft 365 products for managing devices in your organization. For more information, see [Overview of Basic Mobility and Security](/microsoft-365/admin/security-and-compliance/m365b-devices-basic-mobility-security-overview).
 
 If you have Microsoft 365 E3 or E5, you should use Intune.
 
@@ -76,7 +77,7 @@ In this illustration, the tenant has:
 
 ## Ongoing maintenance for device and app management
 
-On an ongoing basis, you might need to: 
+On an ongoing basis, you might need to:
 
 - Manage device enrollment.
 - Revise your settings and policies for additional apps, devices, and security requirements.

@@ -45,7 +45,7 @@ The following table outlines the services associated with groups and teams and k
 
 When deleting a group or team, most of the associated resources are also deleted. Exceptions include:
 
-- Videos in Stream remain and are owned by the person who uploaded/recorded them
+- Videos in Stream remain and are owned by the person who uploaded/recorded them.
 - Flows in Power Automate remain and are owned by the person who created them.
 - Project and roadmap data in Project on the web remains in the CDS and can be restored separately.
 
@@ -71,7 +71,7 @@ These questions must be asked before the underlying group is deleted because exp
 
 When guests are invited to a team, a guest account is created in the host organization’s Microsoft Entra ID before adding them to the team. When a team is deleted, guests aren't removed from Microsoft Entra ID. While guests can't access groups, sites, teams, or content which hasn't been shared with them, they can still potentially use features within Microsoft Teams such as starting chats, voice and video calls, and using apps.
 
-A team or group owner can invite someone from outside the organization to become a guest in Microsoft Entra ID by adding them to a team. A team owner can't, however, remove the guest from Microsoft Entra ID. Deleting accounts can only be performed by a global admin or user admin.
+A team or group owner can invite someone from outside the organization to become a guest in Microsoft Entra ID by adding them to a team. A team owner can't, however, remove the guest from Microsoft Entra ID. Deleting accounts can only be performed by the user admin.
 
 It's important to perform guest reviews and to understand whether guests need to be removed from Microsoft Entra ID upon team deletion. There may be a valid case for guests to remain in the directory, such as being a member of other teams or using other Microsoft 365 or Azure services.
 

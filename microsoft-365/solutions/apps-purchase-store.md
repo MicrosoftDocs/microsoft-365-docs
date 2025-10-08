@@ -5,7 +5,7 @@ author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
-ms.date: 03/29/2024
+ms.date: 04/21/2025
 description: Purchase store apps in Intune.
 ms.service: o365-solutions
 ms.localizationpriority: high

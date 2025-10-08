@@ -3,7 +3,7 @@ title: "Turn on or off Shared Bookings for organization"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 05/23/2024
+ms.date: 07/30/2024
 audience: Admin
 ms.topic: how-to
 ms.service: bookings
@@ -13,6 +13,7 @@ ms.collection:
 - Tier1
 - scotvorg
 - essentials-manage
+- operations-pod
 description: "Turn on or off Shared Bookings for organization"
 ---
 
@@ -38,10 +39,10 @@ Shared Bookings can be turned on or off for your entire organization or for spec
 
 ### Turn Shared Bookings on or off for your organization using PowerShell
 
-To turn Shared Bookings on or off for your organization using the PowerShell cmdlet [Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig), [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) and run the following command:
+To turn Shared Bookings on or off for your organization using the PowerShell cmdlet [Set-OrganizationConfig](/powershell/module/exchangepowershell/set-organizationconfig), [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) and run the following command:
 
 ```PowerShell
-   Set-OrganizationConfig -BookingsEnabled $false
+Set-OrganizationConfig -BookingsEnabled $false
 ```
 
 ### Turn Shared Bookings on or off for individual users
@@ -71,7 +72,7 @@ You'll need to run the following commands using Exchange Online PowerShell. For 
    New-OwaMailboxPolicy -Name "BookingsCreators"
    ```
 
-   For more information, see [New-OwaMailboxPolicy](/powershell/module/exchange/new-owamailboxpolicy).
+   For more information, see [New-OwaMailboxPolicy](/powershell/module/exchangepowershell/new-owamailboxpolicy).
 
 2. Assign this policy to the relevant users by running this command for each user you want to grant permission to create Bookings calendars.
 
@@ -79,7 +80,7 @@ You'll need to run the following commands using Exchange Online PowerShell. For 
    Set-CASMailbox -Identity <someCreator@emailaddress> -OwaMailboxPolicy "BookingsCreators"
    ```
 
-   For more information, see [Set-CASMailbox](/powershell/module/exchange/set-casmailbox).
+   For more information, see [Set-CASMailbox](/powershell/module/exchangepowershell/set-casmailbox).
 
 3. Optional: Run this command if you want to disable creation of shared booking pages for all other users in your organization.
 
@@ -87,7 +88,7 @@ You'll need to run the following commands using Exchange Online PowerShell. For 
    Set-OwaMailboxPolicy "OwaMailboxPolicy-Default" -BookingsMailboxCreationEnabled:$false
    ```
 
-For more information, see [Set-OwaMailboxPolicy](/powershell/module/exchange/set-owamailboxpolicy).
+   For more information, see [Set-OwaMailboxPolicy](/powershell/module/exchangepowershell/set-owamailboxpolicy).
 
 For more information on OWA mailbox policies, check out the following articles:
 

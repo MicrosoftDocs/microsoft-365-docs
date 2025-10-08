@@ -2,21 +2,22 @@
 title: "Remove a domain from another account"
 f1.keywords:
 - CSH
-ms.author: nkagole
-author: nataliekagole
-manager: scotv
-ms.date: 01/18/2022
+ms.author: kwekua
+author: kwekuako
+manager: dansimp
+ms.date: 08/28/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier2
 - scotvorg
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: 
+- operations-pod
+ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:

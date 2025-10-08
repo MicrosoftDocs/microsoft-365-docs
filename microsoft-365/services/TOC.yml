@@ -1,0 +1,87 @@
+items:
+    - name: Microsoft 365 pay-as-you-go
+      href: index.yml
+ 
+    - name: Get started with pay-as-you-go
+      items:
+            - name: Overview
+              href: pay-as-you-go-overview.md 
+            - name: Available services
+              href: pay-as-you-go-services.md
+            - name: What's new
+              href: pay-as-you-go-whats-new.md
+            - name: Set up pay-as-you-go billing
+              items:
+                - name: Microsoft 365 Copilot 
+                  href: pay-as-you-go-setup-copilot.md
+                - name: Document processing & storage services 
+                  href: pay-as-you-go-setup.md
+            - name: Set up a budget
+              href: pay-as-you-go-budget.md
+
+    - name: Pay-as-you-go pricing
+      items:
+            - name: Microsoft 365 Copilot
+              href: /sharepoint/microsoft-365-pay-as-you-go-pricing
+            - name: Document processing
+              href: ../documentprocessing/syntex-pay-as-you-go-services.md
+            - name: Microsoft 365 Archive
+              href: ../documentprocessing/syntex-pay-as-you-go-services.md#storage-services
+            - name: Microsoft 365 Backup
+              href: ../documentprocessing/syntex-pay-as-you-go-services.md#storage-services
+ 
+    - name: Start using pay-as-you-go services
+      items:
+            - name: Microsoft 365 Copilot
+              items:
+                - name: SharePoint agents
+                  href: /sharepoint/get-started-sharepoint-agents
+
+            - name: Document processing
+              items:
+                - name: Try document processing services
+                  href: ../documentprocessing/promo-syntex.md
+
+                - name: Autofill columns
+                  href: ../documentprocessing/autofill-overview.md
+
+                - name: Document translation
+                  href: ../documentprocessing/translation-overview.md
+
+                - name: eSignature 
+                  href: ../documentprocessing/esignature-overview.md
+
+                - name: Optical character recognition 
+                  href: ../documentprocessing/ocr-overview.md
+
+                - name: Content assembly
+                  href: ../documentprocessing/content-assembly.md
+
+                - name: Image tagging
+                  href: ../documentprocessing/image-tagging-overview.md
+
+                - name: Taxonomy tagging 
+                  href: ../documentprocessing/taxonomy-tagging-overview.md
+
+                - name: Prebuilt document processing
+                  href: ../documentprocessing/prebuilt-overview.md
+
+                - name: Structured & freeform document processing
+                  href: ../documentprocessing/form-processing-overview.md
+
+                - name: Unstructured document processing
+                  href: ../documentprocessing/document-understanding-overview.md
+
+                - name: Video translation
+                  href: https://support.microsoft.com/office/2e34ad1b-e213-47ed-a806-5cc0d88751de
+
+            - name: Microsoft 365 Archive
+              href: ../archive/archive-overview.md
+
+            - name: Microsoft 365 Backup
+              href: ../backup/backup-overview.md
+
+    - name: Troubleshooting
+      items:
+            - name: RequestDisallowedByPolicy
+              href: error-request-disallowed-by-policy.md

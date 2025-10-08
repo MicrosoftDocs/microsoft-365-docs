@@ -1,3 +1,4 @@
+items:
 - name: Microsoft 365 Lighthouse
   items:
     - name: What's new in Microsoft 365 Lighthouse
@@ -16,16 +17,18 @@
       href: m365-lighthouse-overview-of-permissions.md
     - name: Manage Lighthouse RBAC permissions
       href: m365-lighthouse-manage-lighthouse-rbac-permissions.md
+    - name: View your assigned roles
+      href: m365-lighthouse-view-your-roles.md
     - name: Configure portal security
       href: m365-lighthouse-configure-portal-security.md 
     - name: Review audit logs
       href: m365-lighthouse-review-audit-logs.md
     - name: Set up and manage GDAP
       items: 
-      - name: Set up GDAP for your customers
-        href: m365-lighthouse-setup-gdap.md
-      - name: Overview of Delegated Access
+      - name: Overview of the Delegated access page
         href: m365-lighthouse-delegated-access-overview.md
+      - name: Set up GDAP
+        href: m365-lighthouse-setup-gdap.md
 - name: Protect customers with baselines
   items: 
     - name: Overview of using baselines to deploy standard tenant configurations
@@ -36,7 +39,7 @@
       href: m365-lighthouse-review-deployment-plan.md
     - name: Understand deployment statuses
       href: m365-lighthouse-understand-deployment-statuses.md
-    - name: Understanding deployment insights
+    - name: Understand deployment insights
       href: m365-lighthouse-deployment-insights-overview.md
     - name: View task details
       href: m365-lighthouse-view-task-details.md
@@ -60,18 +63,32 @@
       href: m365-lighthouse-alerts-overview.md
     - name: Create and manage alert rules
       href: m365-lighthouse-create-manage-alert-rules.md
+- name: Get Copilot insights
+  items: 
+    - name: Overview of Copilot insights
+      href: m365-lighthouse-copilot-insights-overview.md
 - name: Manage tenants
   items: 
     - name: Overview of the Tenants page
       href: m365-lighthouse-tenants-page-overview.md
-    - name: View your Microsoft Entra roles across tenants
-      href: m365-lighthouse-view-your-roles.md
+    - name: Create a customer report
+      href: m365-lighthouse-create-customer-report.md
     - name: Manage your tenant list
       href: m365-lighthouse-manage-tenant-list.md
     - name: View tenant service health
       href: m365-lighthouse-view-service-health.md
     - name: Deploy a PowerShell script
       href: m365-lighthouse-deploy-powershell-script.md      
+- name: Manage opportunities
+  items:
+    - name: Understand opportunities and data
+      href: m365-lighthouse-understanding-opportunities-and-data.md
+    - name: View opportunities
+      href: m365-lighthouse-view-opportunities.md
+- name: View upcoming subscriptions
+  items:
+    - name: Overview of subscription renewals
+      href: m365-lighthouse-subscription-renewals-overview.md
 - name: Manage users within tenants
   items:
     - name: Overview of the Users page
@@ -124,16 +141,6 @@
       href: m365-lighthouse-quarantine-messages-overview.md
     - name: Overview of the Apps page
       href: m365-lighthouse-apps-page-overview.md
-- name: Manage opportunities with Sales Advisor
-  items:
-    - name: Overview of Sales Advisor
-      href: m365-lighthouse-sales-advisor-overview.md
-    - name: Get access to Sales Advisor
-      href: m365-lighthouse-get-access-to-sales-advisor.md
-    - name: Understanding opportunities and data
-      href: m365-lighthouse-understanding-opportunities-and-data.md
-    - name: View opportunities in Sales Advisor
-      href: m365-lighthouse-view-opportunities.md
 - name: Get help and support
   items: 
     - name: Get help and support

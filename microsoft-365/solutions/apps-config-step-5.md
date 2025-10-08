@@ -4,8 +4,8 @@ ms.author: erikre
 author: erikre
 manager: dougeby
 audience: ITPro
-ms.topic: article
-ms.date: 03/29/2024
+ms.topic: how-to
+ms.date: 04/21/2025
 description: Step 5. Configure Microsoft Teams in Intune.
 ms.service: o365-solutions
 ms.localizationpriority: high

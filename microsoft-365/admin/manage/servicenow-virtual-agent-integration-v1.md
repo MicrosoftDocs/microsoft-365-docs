@@ -2,12 +2,12 @@
 title: "Integrate Microsoft 365 with ServiceNow Virtual Agent"
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
-manager: scotv
+ms.author: kwekua
+author: kwekuako
+manager: dansimp
 ms.date: 10/21/2022
 audience: Admin
-ms.topic: article
+ms.topic: integration
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
@@ -15,6 +15,7 @@ ms.collection:
 - scotvorg
 - M365-subscription-management
 - Adm_TOC
+- operations-pod
 ms.custom: AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:

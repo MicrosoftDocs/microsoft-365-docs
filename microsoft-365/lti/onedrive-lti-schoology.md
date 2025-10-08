@@ -1,17 +1,18 @@
 ---
 title: Integrate Microsoft OneDrive LTI with Schoology Learning
-author: MicrosoftHeidi
-ms.author: heidip
-manager: jacktremper
-ms.reviewer: amitman 
-ms.date: 08/08/2022
+author: jennplatt
+ms.author: avering
+manager: michal.gideoni
+ms.date: 09/15/2025
 audience: admin
-ms.topic: article
-ms.service: o365-administration
+ms.topic: integration
+ms.service: microsoft-365-education
 ms.collection: 
 - M365-modern-desktop
 - m365initiative-edu
 - tier2
+- m365-education
+- all-education
 ms.localizationpriority: medium
 description: Create and grade assignments, build and curate course content, and collaborate on files in real time with the new Microsoft OneDrive Learning Tools Interoperability App for PowerSchool Unified Classroom® Schoology Learning.
 ---
@@ -39,6 +40,10 @@ The person who performs this integration should be an administrator of Schoology
 1. Sign into the [Microsoft OneDrive LTI Registration Portal](https://onedrivelti.microsoft.com/admin) using an Office 365 Global Admin credential.
 1. Select the **Admin Consent** button and accept the permissions.
     1. If this step isn't completed successfully, the following step will give you an error, and you may not be able to take this step for an hour once you've gotten the error. If the consent fails, ensure you're signed in as a Global Admin and repeat this step.
+
+    > [!IMPORTANT]
+    > Global Administrator is a highly privileged role. Limit its use to emergency scenarios when you can't use an existing role. For more information, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
+
 1. Select the **Create new LTI Tenant** button.
 1. In the **LTI Consumer Platform** list, select **Schoology**.
 1. In the **Schoology Base URL** field, enter your Schoology Learning base URL, like `https://testschool.schoology.com`.

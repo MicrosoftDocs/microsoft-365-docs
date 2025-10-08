@@ -3,7 +3,7 @@ title: "Assign Microsoft 365 licenses to user accounts"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 04/15/2024
+ms.date: 03/12/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -55,9 +55,8 @@ You can configure security groups in Microsoft Entra ID to automatically assign 
 
 Make sure you have enough licenses for all the group members. If you run out of licenses, new users won't be assigned licenses until licenses become available.
 
->[!Note]
->You should not configure group-based licensing for groups that contain Azure business to business (B2B) accounts.
->
+> [!NOTE]
+> You should not configure group-based licensing for groups that contain Azure business to business (B2B) accounts.
 
 For more information, see [group-based licensing in Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
 

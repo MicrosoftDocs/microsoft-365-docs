@@ -1,9 +1,9 @@
 ---
-title: "Define your services in shared bookings"
+title: "Define your services in Shared Bookings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 06/05/2024
+ms.date: 08/08/2024
 audience: Admin
 ms.topic: how-to
 ms.service: bookings
@@ -13,10 +13,11 @@ ms.collection:
 - scotvorg
 - essentials-manage
 - must-keep
+- operations-pod
 description: "Instructions for entering service offerings information, including service name, description, location, duration, and pricing. You can also tag the employees who are qualified to provide the service."
 ---
 
-# Define your services in shared bookings
+# Define your services in Shared Bookings
 
 When you define your service offerings in Microsoft Bookings, you set a service name, description, location (choose whether you want to meet in person or have an online meeting), duration, default reminders to customers and staff, internal notes about the service, and pricing. You can also tag the employees who are qualified to provide the service. Then, when customers come to your business website to book an appointment, they can see exactly what types of appointments are available, choose the person they want to provide the service, and see how much their service will cost.
 
@@ -24,7 +25,7 @@ You can also add customized information and URLs to the email confirmation and r
 
 ## Watch: Create a new service
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuKXH]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=2377d886-60b1-4d37-a857-541de7737f40]
 
 ## Steps
 
@@ -73,7 +74,7 @@ The number of services should be limited to 50.
 
    **Maximum attendees per event**: This setting allows you to create services that require the ability for multiple people to book the same appointment time and the same staff (such as a fitness class). The appointment time slot for the selected service, staff, and time will be available to book until the maximum number of attendees, specified by you, has been reached. Current appointment capacity and attendees can be viewed in the Calendar tab in the Bookings Web app. We refer to this as a 1:N booking service.
 
-   :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Example of setting maximum attendees in Bookings":::
+   :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Example of setting maximum attendees in Bookings." lightbox="media/bookings-maximum-attendees.jpg":::
 
    **Language**: Select the default language for the booking from the drop-down list.
 
@@ -84,8 +85,8 @@ The number of services should be limited to 50.
     - **Assign any of your selected staff for an appointment**: When this option is selected, the booking will be scheduled with a single staff member.
     - **Multiple staff**: This feature allows you to create a service with multiple staff members. The booking will be scheduled with all of the assigned staff members of the service. You can refer to this service as N:1 booking service.
 
-    > [!NOTE]
-    > For Multiple staff, you can only create a booking when all assigned staff members are available to attend.
+      > [!NOTE]
+      > For Multiple staff, you can only create a booking when all assigned staff members are available to attend.
 
     - **Allow customers to choose a particular staff for booking**: This setting enables customers to view and choose from among specific staff members for the booking.
     - **Select staff**: You can choose specific staff members for bookings created using this service.
@@ -111,7 +112,7 @@ The number of services should be limited to 50.
   
     Opt-in box on the manual booking and Self-service Page:
 
-    :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="The opt-in box in Bookings.":::
+    :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="The opt-in box in Bookings." lightbox="media/bookings-opt-In-boc.jpg":::
 
     Text message notifications will look like the following (note that SMS notifications are currently only available in North America):
 
@@ -122,3 +123,20 @@ The number of services should be limited to 50.
     - **Publishing options** Choose whether to have this service appear as bookable on the Self-service page, or to make the service bookable only on the Calendar tab within the Bookings Web app.
 
 1. Select **Save changes** to create the new service.
+
+## How to hide a service on your booking page
+
+There could be situations when you want to hide a service from your booking page so customers can't book appointments for that service. This can be helpful in situations such as:
+
+- You are still configuring the service details and settings, and you're not ready for customers to book.
+- The service is temporarily unavailable due to staff shortage, maintenance, or date of the service.
+- The service is only offered to specific customers or groups, and you don't want to make it public.
+
+To hide a service from your booking page link, follow these steps:
+
+1. Open the **Microsoft Bookings** app and go to the **Services** tab.
+2. Choose the service that you want to hide and toggle the switch under **Publishing options** to **Off**. The switch should turn from blue to gray, indicating that the service is hidden.
+3. To confirm that the service is hidden, go to the **Booking page** tab and copy the booking page link. Open the link in a new browser window and check if the service is listed. If it's not showing, then the service is successfully hidden.
+4. To unhide the service, repeat steps 1 and 2, but turn the toggle switch to **On** instead of **Off**. The switch should turn from gray to blue, indicating that the service is visible. You can verify this by checking the booking page link again.
+
+Hiding a service from your booking page link doesn't delete the service or affect the existing bookings for that service. You can still manage the service details, settings, and bookings in the Microsoft Bookings app.

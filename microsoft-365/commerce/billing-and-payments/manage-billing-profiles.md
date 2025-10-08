@@ -1,30 +1,28 @@
 ---
 title: "Manage your Microsoft business billing profiles"
 f1.keywords:
-- 'MACBillingBillsPaymentsBillingProfiles'
+- MACBillingBillsPaymentsBillingProfiles
 author: cmcatee-MSFT
 ms.author: cmcatee
-manager: scotv
+manager: dansimp
 ms.reviewer: jkinma, ramagane
 audience: Admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-management
 ms.localizationpriority: medium
 ms.collection:
 - Tier1
-- scotvorg
 - M365-subscription-management
 - Adm_O365
-ms.custom: 
+- operations-pod
+ms.custom:
 - commerce_billing
 - admindeeplinkMAC
-- AdminSurgePortfolio
 - AdminTemplateSet
-- admindeeplinkMAC
 search.appverid: MET150
 description: "Learn about billing profiles and how they're used to pay invoices for Microsoft business accounts."
-ms.date: 02/16/2024 
+ms.date: 08/15/2025
 ---
 
 # Manage your Microsoft business billing profiles
@@ -32,7 +30,6 @@ ms.date: 02/16/2024
 A billing profile contains payment method and invoice information associated with your Microsoft business billing account. You use a billing profile to pay for business products and services that you buy from Microsoft. A billing profile is automatically created when a billing account is created, and you can add new billing profiles at any time. For information about billing accounts, see [Understand your Microsoft billing account](../manage-billing-accounts.md).
 
 > [!IMPORTANT]
->
 > This article only applies to customers with a Microsoft Customer Agreement billing account type.
 
 ## Before you begin
@@ -64,10 +61,11 @@ The following table lists the terms shown on the billing profile details page.
 |Billing account       |The billing account associated with the billing profile. To view details about the billing account, select the link. For more information about billing accounts, see [Understand billing accounts](../manage-billing-accounts.md). |
 |My role               |A read-only field that shows your billing profile role. |
 |Bill-to address       |Contains the contact name, address, email address, and phone number for the billing profile. To make changes to the address details, select **Edit**. |
+|Ship-to address       |Contains the contact name, address, email address, and phone number for the ship-to address. To make changes to the address details, select **Edit**.|
 |Get invoices in email statements   |A setting you can turn on to receive the invoice as an email attachment. The default setting is **On**. To turn this setting on or off, select **Edit settings**. |
 |Additional recipients | The list of people who also receive a copy of the invoice by email. |
 |Billing notification settings |A link to the **Billing notifications** page where you can edit notification settings, edit the organization email address, and manage the list of admins who receive billing notifications. To make changes, select **Edit settings**. |
-|Invoice currency      |The currency used for your invoice, based on the **Sold-to** country/region of the billing account. |
+|Invoice currency      |The currency used for your invoice, based on the **Sold-to** country/region of the billing account. Currency can't be changed on a billing profile.|
 |Payment method        |The payment method used by the billing profile. To make changes to the payment method, select **Edit** or **Replace**. |
 |PO number (optional)  |A purchase order (PO) number that you create to track changes for the billing profile. If you add a PO number in this field, it appears on your invoice. To add a PO number, select **Edit**. |
 
@@ -100,7 +98,6 @@ Billing profile roles have permissions to control purchases, and view and manage
 | Invoice manager              | Can view and pay bills and has a read-only view of everything in a billing profile. |
 
 > [!IMPORTANT]
->
 > Billing profile roles only apply to billing profiles, and don't apply to other Microsoft 365 admin center scenarios.
 
 ## View users and their billing profile roles
@@ -114,7 +111,6 @@ Billing profile roles have permissions to control purchases, and view and manage
 ## Assign billing profile roles
 
 > [!NOTE]
->
 > You can only assign billing profile roles to users in your organization.
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Billing accounts</a> page.
@@ -137,8 +133,40 @@ You can view the roles assigned to users for a billing account and related billi
 
 To export the information shown in the **Related billing role assignments** pane, select **Export to CSV**.
 
+## Manage payment methods for billing profiles
+
+You can manage the payment method used to pay for all purchases and transactions under a billing profile. You can use the following options to add or replace a payment method.
+
+- **Edit.** Use this option to change the name, billing address, or expiration date for an existing payment method..
+- **Replace.** Use this option to change to an existing payment method, or add a new one. If you're approved to pay by using a wire transfer, you can use this option to add account information for the wire transfer.
+
+### Edit a payment method
+
+If you're the owner of the payment method on the billing profile, you can update the payment method details.
+
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Billing accounts</a> page.
+2. On the **Overview** tab, select a billing account.
+3. On the billing account details page, select the **Billing profiles** tab.
+4. Select a billing profile name to view its details page.
+5. In the **Invoice and billing notifications** section, under **Payment method**, select **Edit**. This opens the **Edit payment method** panel.
+6. Enter the updated card details, then select **Save**.
+
+### Replace a payment method
+
+Use this option to change the payment method used to pay for subscriptions and services purchased with this billing profile
+
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Billing accounts</a> page.
+2. On the **Overview** tab, select a billing account.
+3. On the billing account details page, select the **Billing profiles** tab.
+4. Select a billing profile name to view its details page.
+5. In the **Invoice and billing notifications** section, under **Payment method**, select **Replace**. This opens the **Replace payment method** panel.
+6. The **Use an existing payment method** drop-down list contains the payment methods that you own. Select an alternate payment method to use for the billing profile. If the account is approved to pay with a wire transfer, you can select the wire transfer account from the drop-down list and use it as the default payment method. For information about the wire transfer approval process, see [Paying by Wire Transfer](/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription#paying-by-wire-transfer).
+7. Select **Save**.
+
+You can also add a new payment method by using the **Add payment method** link under the **New payment method** drop down.
+
 ## Related content
 
 [Understand billing accounts](../manage-billing-accounts.md) (article) \
-[Paying with a billing profile](pay-for-your-subscription.md#paying-with-a-billing-profile) (article)\
+[Payment options for Microsoft business subscriptions](pay-for-your-subscription.md) (article)\
 [Manage payment methods](manage-payment-methods.md) (article)
