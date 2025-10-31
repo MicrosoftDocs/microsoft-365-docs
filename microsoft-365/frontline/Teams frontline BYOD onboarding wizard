@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Set up Teams for frontline workers on personal devices (BYOD)</title>
+  <style>
+    body { font-family: Segoe UI, Arial, sans-serif; margin: 2em; }
+    h1, h2, h3 { color: #2b579a; }
+    .note, .important { border-left: 4px solid #0078d4; background: #f3f9fd; padding: 1em; margin: 1.5em 0; }
+    .important { border-color: #e81123; background: #fff4f4; }
+    .step img, .screenshot { display: block; margin: 1em 0; max-width: 480px; border: 1px solid #ccc; }
+    ul, ol { margin-left: 1.5em; }
+    .faq { background: #f9f9f9; border-radius: 6px; padding: 1em; }
+    .caption { font-size: 0.95em; color: #666; margin-bottom: 1.5em; }
+  </style>
+</head>
+<body>
+  <h1>Set up Teams for frontline workers on personal devices (BYOD)</h1>
+
+  <div class="note">
+    <strong>Note</strong>: This feature is currently in public preview. For updates, refer to the roadmap.
+  </div>
+
+  <h2>Overview</h2>
+  <p>
+    The Teams onboarding wizard helps frontline workers set up Teams on their personal devices. This experience is available on the web, designed for use on a desktop kiosk or shared PC at your work site. The wizard dynamically updates steps based on your organization’s security policies.
+  </p>
+
+  <h2>Scenarios supported</h2>
+  <ul>
+    <li>Set up Microsoft Teams on a personal Android or iOS device.</li>
+    <li>Complete multi-factor authentication (MFA) if required. The wizard optimizes for Authenticator push notifications as the primary MFA method.</li>
+    <li>Comply with app protection or configuration policies enforced by your organization.</li>
+  </ul>
+
+  <h2>Before you begin</h2>
+  <ul>
+    <li>Your work username and password</li>
+    <li>Access to a desktop kiosk or shared PC</li>
+    <li>Your mobile phone</li>
+  </ul>
+
+  <h2>Step 1: Start onboarding</h2>
+  <ol>
+    <li>
+      On the desktop kiosk or back office PC, open a web browser and go to <a href="https://aka.ms/getfrontlineteams" target="_blank">aka.ms/getfrontlineteams</a>.
+      <div class="caption">Teams onboarding wizard welcome page</div>
+      <img src="IMAGE_1_URL" alt="Screenshot of Teams onboarding wizard welcome page" class="screenshot">
+    </li>
+    <li>
+      Choose your device (Android or iPhone).
+      <div class="caption">Device selection screen</div>
+      <img src="IMAGE_2_URL" alt="Screenshot of device selection screen" class="screenshot">
+    </li>
+    <li>Sign in with your work credentials.</li>
+    <li>If prompted, reset your default password.</li>
+  </ol>
+
+  <h2>Step 2: Download required apps</h2>
+  <p>
+    Depending on your company’s security policies, you may need to download additional apps such as Microsoft Authenticator and/or Company Portal. The wizard guides you through the following scenarios:
+  </p>
+
+  <h3>Multi-factor authentication (MFA)</h3>
+  <ul>
+    <li>If MFA is not required, this step is skipped.</li>
+    <li>If you already have an MFA method set up, this step is skipped.</li>
+    <li>
+      If you require MFA and are accessing the wizard from a device that doesn’t require MFA:
+      <ol>
+        <li>Scan the QR code with your mobile phone to download the Authenticator app.</li>
+        <li>Open the app and allow notifications.</li>
+        <li>Sign in with your work account and complete setup.</li>
+        <li>Return to the wizard and select <strong>Next</strong>.
+          <div class="caption">Download and set up Microsoft Authenticator</div>
+          <img src="IMAGE_3_URL" alt="Screenshot of Authenticator QR code step" class="screenshot">
+        </li>
+      </ol>
+    </li>
+    <li>
+      If you require MFA and are accessing the wizard on a device that requires MFA:
+      <ol>
+        <li>Follow the on-screen instructions to set up MFA with the Authenticator app.</li>
+        <li>
+          <div class="caption">MFA setup screens</div>
+          <img src="IMAGE_4_URL" alt="Screenshot of MFA setup screen 1" class="screenshot">
+          <img src="IMAGE_5_URL" alt="Screenshot of MFA setup screen 2" class="screenshot">
+          <img src="IMAGE_6_URL" alt="Screenshot of MFA setup screen 3" class="screenshot">
+          <img src="IMAGE_7_URL" alt="Screenshot of MFA setup screen 4" class="screenshot">
+          <img src="IMAGE_8_URL" alt="Screenshot of MFA setup screen 5" class="screenshot">
+          <img src="IMAGE_9_URL" alt="Screenshot of MFA setup screen 6" class="screenshot">
+        </li>
+      </ol>
+    </li>
+  </ul>
+
+  <h3>App protection and configuration policies</h3>
+  <ul>
+    <li>If your company uses app protection or configuration policies, you may need the Company Portal app on your device.</li>
+    <li>iOS users will not see this step.</li>
+    <li>
+      Android users will see a prompt to download Company Portal.
+      <div class="caption">Download Company Portal app</div>
+      <img src="IMAGE_10_URL" alt="Screenshot of Company Portal QR code" class="screenshot">
+    </li>
+    <li>
+      Next, you’ll see a prompt to download Microsoft Teams. Scan the QR code with your mobile phone, download Teams, and sign in.
+      <div class="caption">Download Teams mobile app</div>
+      <img src="IMAGE_11_URL" alt="Screenshot of Teams mobile app QR code" class="screenshot">
+    </li>
+  </ul>
+
+  <h2>Troubleshooting</h2>
+  <ul>
+    <li>If the QR code doesn’t work, manually search for each app in your phone’s app store.</li>
+  </ul>
+
+  <h2>FAQ</h2>
+  <div class="faq">
+    <strong>Q:</strong> What if I’m required to enroll my device to access Teams?<br>
+    <strong>A:</strong> The wizard will not guide you through device enrollment. Please follow the steps on your mobile phone.
+  </div>
+</body>
+</html>
+``
