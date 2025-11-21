@@ -2344,6 +2344,11 @@
       "source_path": "microsoft-365/admin/manage/manage-embedded-knowledge-agents.md",
       "redirect_url": "/microsoft-365/admin/manage/agent-registry#manage-agents-with-embedded-file-content-as-a-knowledge-source",
       "redirect_document_id": false
-    }
+    },
+    {
+     "source_path": "microsoft-365/frontline/flw-pilot.md",
+     "redirect_url": "microsoft-365/frontline/startafrontlinepilot",
+     "redirect_document_id": true
+    }  
   ]
 }
