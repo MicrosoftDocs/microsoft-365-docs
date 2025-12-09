@@ -26,10 +26,31 @@ ms.custom: seo-marvel-apr2020
 
 The _Microsoft 365 Advanced Data Residency add-on_ (_ADR_) provides eligible customers with expanded coverage of Microsoft 365 services and Customer Data, committed data residency for local country/region datacenter regions, and prioritized _Tenant_ migration services. With _Advanced Data Residency_, enterprise customers can best address their data residency compliance and _Tenant_ location requirements.
 
-The following services are included in _ADR_. For more information, see:
+### LRDR Framework and Two-Tier Commitment Model
 
+_Advanced Data Residency_ is part of Microsoft's **Local Region Data Residency (LRDR)** framework, which provides two types of commitments:
+
+- **Tier 1: Data at Rest** - Guarantees where customer data is stored. All ADR services include Tier 1 commitments.
+- **Tier 2: Data Processing** - Guarantees where customer data is processed during normal operations. Available for eligible services in specific geographies.
+
+For customers with _Advanced Data Residency_ in eligible geographies who also have a paid Microsoft 365 Copilot subscription, **Microsoft 365 Copilot and Microsoft 365 Copilot Chat** automatically includes both Tier 1 and Tier 2 commitments. This means Copilot interactions are both stored and processed within the customer's _Local Region Geography_ under normal operations. 
+
+**Requirements for Tier 2 Processing Commitments:**
+1. Active _Advanced Data Residency_ subscription with sufficient license coverage
+2. At least one (1) paid eligible Microsoft 365 Copilot license
+3. _Tenant Default Geography_ within an eligible _LRDR Processing Eligible Geography_
+
+For more information, see [Microsoft 365 Copilot and Microsoft 365 Copilot Chat](m365-dr-workload-copilot.md).
+
+All other ADR services listed below currently provide Tier 1 (data at rest) commitments only.
+
+The following services are included in _ADR_:
+
+**Services with Tier 1 + Tier 2 Commitments (in eligible geographies):**
+- [Microsoft 365 Copilot and Microsoft 365 Copilot Chat](m365-dr-workload-copilot.md) - Includes both storage and processing commitments
+
+**Services with Tier 1 Commitments:**
 - [Exchange Online](m365-dr-workload-exo.md)
-- [Microsoft 365 Copilot and Microsoft 365 Copilot Chat](m365-dr-workload-copilot.md)
 - [Microsoft 365 web apps (formerly "Office for the Web")](m365-dr-workload-office-for-web.md)
 - [Microsoft Defender for Office P1 and Exchange Online Protection](m365-dr-workload-mdo-p1.md)
 - [Microsoft Purview](m365-dr-workload-purview.md)*

@@ -23,13 +23,15 @@ ms.collection:
 
 ## **Data Residency Commitments Available**
 
+SharePoint and OneDrive provide **Tier 1 (Data at Rest)** commitments as part of Microsoft's Local Region Data Residency (LRDR) framework. These commitments guarantee where customer data is stored. For more information about the LRDR framework and commitment tiers, see [Overview and Definitions](m365-dr-overview.md).
+
 ### Product Terms
 
 Required Conditions:
 
 - _Tenant_ has a sign-up country/region included in _Local Region Geography_, the European Union or the United States.
 
-**Commitment:**
+**Tier 1 Commitment (Data at Rest):**
 
 _For current language, refer to the [Privacy and Security Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all) and view the section titled "Location of Customer Data at Rest for Core Online Services."_
 
@@ -41,9 +43,9 @@ Required Conditions:
 1. _Tenant_ has a valid Advanced Data Residency subscription for all users in the _Tenant_.
 1. The SharePoint subscription customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
 
-**Commitment:**
+**Tier 1 Commitment (Data at Rest):**
 
-Refer to the [ADR Commitment page](m365-dr-commitments.md#sharepointonedrive) for the specific customer data at rest commitment for SharePoint and OneDrive.
+Refer to the [ADR Commitment page](m365-dr-commitments.md#sharepointonedrive) for the specific Tier 1 customer data at rest commitments for SharePoint and OneDrive.
 
 ### Multi-Geo add-on
 
@@ -53,9 +55,9 @@ Required Conditions:
 1. Customer must have an active Enterprise Agreement.
 1. Total purchased Multi-Geo units must be greater than 5% of the total eligible licenses in the _Tenant_.
 
-**Commitment:**
+**Tier 1 Commitment (Data at Rest):**
 
-Customers can assign users of SharePoint/OneDrive to any _Satellite Geography_ supported by Multi-Geo (see Section 4.1.3). The following customer data will be stored in the relevant _Satellite Geography_:
+Customers can assign users of SharePoint/OneDrive to any _Satellite Geography_ supported by Multi-Geo (see Section 4.1.3). The following customer data will be stored at rest in the relevant _Satellite Geography_:
 
 - SharePoint site content and the files stored within that site, and files uploaded to OneDrive. 
 

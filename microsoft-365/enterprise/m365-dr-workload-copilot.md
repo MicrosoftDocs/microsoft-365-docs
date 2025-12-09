@@ -37,6 +37,10 @@ The content of interactions and the related semantic index with Microsoft 365 Co
 
 ## Data Residency Commitments Available for Microsoft 365 Copilot and Copilot Chat
 
+Microsoft 365 Copilot offers two types of data residency commitments through Local Region Data Residency (LRDR):
+- **Tier 1: Data at Rest** - Where customer data is stored
+- **Tier 2: Data Processing** - Where customer data is processed (available in eligible geographies)
+
 ### Product Terms
 
 Required Conditions:
@@ -44,6 +48,8 @@ Required Conditions:
 1. _Tenant_ has a sign-up country/region included in Australia, Brazil, Canada, the European Union, France, Germany, India, Japan, Norway, Qatar, South Africa, South Korea, Sweden, Switzerland, the United Kingdom, the United Arab Emirates, or the United States.
 
 **Commitment:**
+
+**Tier 1 (Data at Rest)**: Content of interactions with Microsoft 365 Copilot and Copilot Chat are stored at rest in the relevant geography.
 
 _For current language, refer to the [Privacy and Security Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all) and view the section titled "Location of Customer Data at Rest for Core Online Services."_
 
@@ -61,9 +67,46 @@ Required Conditions:
 
 **Commitment:**
 
-Refer to the [ADR Commitment page](m365-dr-commitments.md#microsoft-365-copilot-and-microsoft-365-copilot-chat) to understand the specific data at rest commitments for Microsoft 365 Copilot. Examples of the committed data include:
+**Tier 1 (Data at Rest)**: Refer to the [ADR Commitment page](m365-dr-commitments.md#microsoft-365-copilot-and-microsoft-365-copilot-chat) to understand the specific data at rest commitments for Microsoft 365 Copilot. Examples of the committed data include:
 
 - "Content of Interactions" such as the user's prompt and the response from Microsoft 365 Copilot or Microsoft 365 Copilot Chat, including citations to any information used to ground Microsoft 365 Copilot's response.
+
+**Tier 2 (Data Processing)**: For tenants in _LRDR Processing Eligible Geographies_, ADR extends to include in-country processing commitments. Microsoft 365 Copilot interactions (sending user prompts and receiving responses from Azure OpenAI service) are processed in the customer's _Local Region Geography_ under _Normal Operations_.
+
+#### LRDR Processing Eligible Geographies and Phase-in Schedule
+
+Tier 2 processing commitments are being phased in across eligible geographies:
+
+**Phase 1 (CY25-Q4)**:
+- Australia
+- India  
+- Japan
+- United Kingdom
+
+**Phase 2 (CY26-Q1)**:
+- Singapore (Government tenants only)
+
+**Phase 3 (CY26-H1)**:
+- United Arab Emirates
+
+**Phase 4 (CY26-H2)**:
+- Canada
+- Germany
+- Italy
+- Malaysia
+- Poland
+- South Africa
+- Spain
+- Sweden
+- Switzerland
+- United States
+
+> [!NOTE]
+> Tier 2 processing commitments apply to eligible tenants with Advanced Data Residency during _Normal Operations_. Certain exclusions apply, including Microsoft 365 Copilot Chat (Web Query functionality), Multi-Geo tenants, Educational (EDU) tenants, and preview features. For the complete exclusion list, see [Advanced Data Residency](m365-dr-commitments.md).
+
+#### Automatic Tier 2 Upgrade for Existing ADR Customers
+
+Existing ADR customers in Phase 1 geographies automatically receive Tier 2 processing commitments when their geography becomes available. No tenant admin action is required. New ADR customers must use the existing ADR commitment confirmation workflow in the Microsoft 365 admin center.
 
 ### Multi-Geo add-on
 

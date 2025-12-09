@@ -27,6 +27,8 @@ Service documentation: [Overview: Viva Connections](/viva/connections/viva-conne
 
 Capability Summary: Microsoft Viva Connections is your gateway to a modern employee experience designed to keep everyone engaged and informed. Viva Connections is a customizable app in Microsoft Teams that gives everyone a personalized destination to discover relevant news, conversations, and the tools they need to succeed. Data storage is related to the following Viva Connections Components: Dashboard and feed.
 
+Viva Connections provides **Tier 1 (Data at Rest)** commitments as part of Microsoft's Local Region Data Residency (LRDR) framework. These commitments guarantee where customer data is stored. For more information about the LRDR framework and commitment tiers, see [Overview and Definitions](m365-dr-overview.md).
+
 ## Data Residency Commitments Available
 
 ### Advanced Data Residency add-on
@@ -37,9 +39,9 @@ Required Conditions:
 1. _Tenant_ has a valid Advanced Data Residency subscription for all users in the _Tenant_.
 1. The Viva Connections subscription customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
 
-**Commitment:**
+**Tier 1 Commitment (Data at Rest):**
 
-Refer to the [ADR Commitment page](m365-dr-commitments.md#viva-connections) for the specific customer data at rest commitment for Viva Connections.
+Refer to the [ADR Commitment page](m365-dr-commitments.md#viva-connections) for the specific Tier 1 customer data at rest commitment for Viva Connections.
 
 ### Migration
 

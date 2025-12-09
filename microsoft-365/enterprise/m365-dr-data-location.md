@@ -23,6 +23,8 @@ ms.collection:
 
 This article is designed to help customers and Tenant Global Admins understand how they can determine where their in-scope customer data for Microsoft 365 services is currently stored at rest, and if their Tenant has a [_Durable Commitment on Data Location_](m365-dr-overview.md#table-1-definitions-and-terms).
 
+The _Data Location Card_ displays **Tier 1 (Data at Rest)** commitment information, showing where customer data is stored. Microsoft 365 Copilot and Microsoft 365 Copilot Chat also includes **Tier 2 (Data Processing)** commitments in eligible geographies. For more information about the Local Region Data Residency (LRDR) framework and commitment tiers, see [Overview and Definitions](m365-dr-overview.md).
+
 > [!NOTE]
 > A new _Data Location Card (DLC)_ experience is rolling out now to Microsoft 365 customer _Tenants_. During the phased rollout, _Tenants_ might see a different _Data Location Card_ view within the Microsoft 365 admin center than the latest enhancements shown in this article. Global Tenant Admins can refer to the following data location details in anticipation of the rollout.
 
@@ -34,7 +36,10 @@ The _Data Location Card (DLC)_ in the Microsoft 365 admin center allows Tenant G
 
 The _Data Location Card_ displays three columns outlining the covered _Services_, the _Current Geography_, and the _Committed Geography_.
 
-The _Current Geography_ refers to the location where the in-scope customer data is currently stored, while the _Committed Geography_ refers to the location where Microsoft stores in-scope customer data based on the [data residency commitments applicable to the _Tenant_](m365-dr-overview.md#overview-of-data-residency).
+The _Current Geography_ refers to the location where the in-scope customer data is currently stored (Tier 1), while the _Committed Geography_ refers to the location where Microsoft stores in-scope customer data based on the [Tier 1 data residency commitments applicable to the _Tenant_](m365-dr-overview.md#overview-of-data-residency).
+
+> [!NOTE]
+> The _Data Location Card_ shows Tier 1 (Data at Rest) commitment locations. Microsoft 365 Copilot also includes Tier 2 (Data Processing) commitments in [eligible geographies](m365-dr-workload-copilot.md).
 
 ## Finding The Commitments Applicable to a Microsoft 365 Service
 

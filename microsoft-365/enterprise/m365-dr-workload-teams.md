@@ -23,13 +23,15 @@ ms.collection:
 
 ## Data Residency Commitments Available
 
+Microsoft Teams provides **Tier 1 (Data at Rest)** commitments as part of Microsoft's Local Region Data Residency (LRDR) framework. These commitments guarantee where customer data is stored. For more information about the LRDR framework and commitment tiers, see [Overview and Definitions](m365-dr-overview.md).
+
 ### Product Terms
 
 Required Conditions:
 
 1. _Tenant_ has a sign-up country/region included in _Local Region Geography_, the European Union, or the United States.
 
-**Commitment:**
+**Tier 1 Commitment (Data at Rest):**
 
 _For current language, please refer to the [Privacy and Security Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all) and view the section titled "Location of Customer Data at Rest for Core Online Services."_
 
@@ -41,9 +43,9 @@ Required Conditions:
 1. _Tenant_ has a valid Advanced Data Residency subscription for all users in the _Tenant_
 1. The Microsoft Teams subscription customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
 
-**Commitment:**
+**Tier 1 Commitment (Data at Rest):**
 
-Refer to the [ADR Commitment page](m365-dr-commitments.md#microsoft-teams) to understand the specific commitments provided via Product Terms. Examples of the committed data include:
+Refer to the [ADR Commitment page](m365-dr-commitments.md#microsoft-teams) for the specific Tier 1 customer data at rest commitments for Microsoft Teams. Examples of the committed data include:
 
 - Chat/ channel messages and team structure: Every team in Microsoft Teams is backed by a Microsoft 365 Modern Group and its SharePoint site and Exchange mailbox. Private chats (including group chats), messages sent as part of a conversation in a channel, and the structure of teams and channels are stored in an Azure powered chat service. The data is also stored in a hidden folder in the user and group mailboxes to enable information protection features. 
 - Images and Media: Media used in chats (except for Giphy GIFs which aren't stored but are a reference link to the original Giphy URL) are stored in an Azure based Media Service deployed to the same locations as the chat service.
@@ -57,8 +59,9 @@ Required Conditions:
 1. Customer must have an active Enterprise Agreement.
 1. Total purchased Multi-Geo units must be greater than 5% of the total eligible seats in the _Tenant_.
 
-**Commitment:**
-Customers can assign users of Microsoft Teams to any _Satellite Geography_ supported by Multi-Geo. The following customer data will be stored in the relevant _Satellite Geography_: Teams chat data that consists of chat messages, including private messages, channel messages, and images used in chats.
+**Tier 1 Commitment (Data at Rest):**
+
+Customers can assign users of Microsoft Teams to any _Satellite Geography_ supported by Multi-Geo. The following customer data will be stored at rest in the relevant _Satellite Geography_: Teams chat data that consists of chat messages, including private messages, channel messages, and images used in chats.
 
 ## Multi-Geo Capabilities in Microsoft Teams
 

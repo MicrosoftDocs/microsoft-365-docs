@@ -25,6 +25,8 @@ ms.collection:
 
 ## Data Residency Commitments Available
 
+Exchange Online provides **Tier 1 (Data at Rest)** commitments as part of Microsoft's Local Region Data Residency (LRDR) framework. These commitments guarantee where customer data is stored. For more information about the LRDR framework and commitment tiers, see [Overview and Definitions](m365-dr-overview.md).
+
 ### Product Terms
 
 Required Conditions:
@@ -33,7 +35,7 @@ Tenant has a sign-up country/region included in Local Region Geography, the Euro
 
 _For current language, please refer to the Privacy and Security Product Terms <a href="https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all" target="_blank">**webpage**</a> and view the section titled "Location of Customer Data at Rest for Core Online Services"._
 
-**Commitment:**
+**Tier 1 Commitment (Data at Rest):**
 
 > [!NOTE]
 > If Customer provisions its tenant in Australia, Brazil, Canada, the European Union, France, Germany, India, Japan, Norway, Qatar, South Africa, South Korea, Sweden, Switzerland, United Arab Emirates, United Kingdom, or United States, Microsoft will store the following Customer Data at rest only within that Geo: Exchange Online mailbox content (e-mail body, calendar entries, and the content of e-mail attachments)
@@ -46,9 +48,9 @@ Required Conditions:
 1. Tenant has a valid Advanced Data Residency subscription for all users in the tenant
 1. The Exchange Online subscription customer data is provisioned in Local Geography or Expanded Local Geography
 
-**Commitment:**
+**Tier 1 Commitment (Data at Rest):**
 
-Please refer to the [ADR commitment page](m365-dr-commitments.md#exchange-online) to understand the specific commitments provided via Product Terms. Examples of the committed data include: all types of mailboxes, including user mailboxes, resource mailboxes, and archive mailboxes.
+Refer to the [ADR commitment page](m365-dr-commitments.md#exchange-online) for the specific Tier 1 customer data at rest commitments for Exchange Online. Examples of the committed data include: all types of mailboxes, including user mailboxes, resource mailboxes, and archive mailboxes.
 
 ### Multi-Geo add-on
 
@@ -58,13 +60,13 @@ Required Conditions:
 1. Customer must have an active Enterprise Agreement.
 1. Total purchased Multi-Geo units must be greater than 5% of the total eligible users in the tenant.
 
-**Commitment:**
+**Tier 1 Commitment (Data at Rest):**
 
-Customers can assign a Satellite Geography supported by Multi-Geo to a supported mailbox type. See the [Microsoft 365 Multi-Geo availability section](microsoft-365-multi-geo.md#microsoft-365-multi-geo-availability) of the Microsoft 365 Multi-Geo page for details. The Data at Rest for Office 365 Services for the mailbox as defined by the product terms shall be stored in the assigned Satellite Geography. Supported mailbox types include Exchange Online user primary and archive mailboxes, resource mailboxes, Microsoft 365 Group mailboxes, and shared mailboxes.
+Customers can assign a Satellite Geography supported by Multi-Geo to a supported mailbox type. See the [Microsoft 365 Multi-Geo availability section](microsoft-365-multi-geo.md#microsoft-365-multi-geo-availability) of the Microsoft 365 Multi-Geo page for details. Customer Data at rest for Exchange Online Services for the mailbox as defined by the product terms shall be stored in the assigned Satellite Geography. Supported mailbox types include Exchange Online user primary and archive mailboxes, resource mailboxes, Microsoft 365 Group mailboxes, and shared mailboxes.
 
 ## Multi-Geo Capabilities in Exchange Online
 
-Customers may assign a _Satellite Geography_ supported by Multi-Geo to a user. See the [Microsoft 365 Multi-Geo availability section](microsoft-365-multi-geo.md#microsoft-365-multi-geo-availability) of the Microsoft 365 Multi-Geo page for details. The user's Data at Rest for Office 365 Services as defined by the product terms shall be stored in the assigned _Satellite Geography_. This includes all types of Exchange Online mailboxes, including user mailboxes, resource mailboxes, Microsoft 365 Group mailboxes, shared mailboxes, and archive mailboxes.
+Customers may assign a _Satellite Geography_ supported by Multi-Geo to a user. See the [Microsoft 365 Multi-Geo availability section](microsoft-365-multi-geo.md#microsoft-365-multi-geo-availability) of the Microsoft 365 Multi-Geo page for details. The user's Customer Data at rest for Exchange Online Services as defined by the product terms shall be stored in the assigned _Satellite Geography_. This includes all types of Exchange Online mailboxes, including user mailboxes, resource mailboxes, Microsoft 365 Group mailboxes, shared mailboxes, and archive mailboxes.
 
 You can place mailboxes in _Satellite Geography_ locations by:
 

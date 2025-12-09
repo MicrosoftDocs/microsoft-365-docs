@@ -24,6 +24,10 @@ ms.collection:
 > [!NOTE]
 > This document is intended to provide a general overview of the _Microsoft Privacy and Security Product Terms_ ("_Product Terms_") in relation to Microsoft 365 data residency commitments. In the event of a discrepancy, the official terms listed on the [Privacy and Security Product Terms webpage](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all) shall prevail.
 
+## Tier 1: Data at Rest Commitments
+
+_Microsoft Privacy and Security Product Terms_ provides **Tier 1 data residency commitments** - guaranteeing where customer data is stored at rest. These commitments do not extend to data processing locations. For data processing commitments (Tier 2), see [Advanced Data Residency](advanced-data-residency.md).
+
 _Microsoft Privacy and Security Product Terms_ included with Microsoft's Cloud Product Terms provides data residency commitment under the following conditions:
 
 **Terms apply to**: _Tenants_ with a _Default Geography_, regardless of date of initial provisioning, of Australia, Brazil, Canada, France, Germany, India, Japan, Norway, Qatar, South Africa, South Korea, Sweden, Switzerland, the United Kingdom, the United Arab Emirates, United States, and the European Union.

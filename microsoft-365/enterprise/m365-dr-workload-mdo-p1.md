@@ -27,6 +27,8 @@ Service documentation: [Office 365 Security including Microsoft Defender for Off
 
 Capability Summary: Protects email and collaboration from zero-day malware, phish, and business email compromise. MDO P1 builds on Exchange Online Protection (EOP).
 
+Microsoft Defender for Office P1 and Exchange Online Protection (EOP) provide **Tier 1 (Data at Rest)** commitments as part of Microsoft's Local Region Data Residency (LRDR) framework. These commitments guarantee where customer data is stored. For more information about the LRDR framework and commitment tiers, see [Overview and Definitions](m365-dr-overview.md).
+
 ## Data Residency commitments available
 
 ### Advanced Data Residency add-on
@@ -37,13 +39,13 @@ Required Conditions:
 1. _Tenant_ has a valid Advanced Data Residency subscription for all users in the _Tenant_
 1. The MDO P1 subscription customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
 
-**Commitment:**
+**Tier 1 Commitment (Data at Rest):**
 
-Refer to the [ADR Commitment page](m365-dr-commitments.md#microsoft-defender-for-office-p1) for the specific customer data at rest commitment for Microsoft Defender for Office P1.
+Refer to the [ADR Commitment page](m365-dr-commitments.md#microsoft-defender-for-office-p1) for the specific Tier 1 customer data at rest commitment for Microsoft Defender for Office P1.
 
 Other Information
 
-In addition, processing of data that is required to analyze threats and inspect suspicious emails, documents, messages, and links is done in a sandbox environment and performed within the _Local Region Geography_ or _Expanded Local Region_.
+In addition, processing of data that is required to analyze threats and inspect suspicious emails, documents, messages, and links is done in a sandbox environment and performed within the _Local Region Geography_ or _Expanded Local Region Geography_.
 
 ## Exchange Online Protection
 
@@ -63,9 +65,9 @@ Required Conditions:
 1. _Tenant_ has a valid Advanced Data Residency subscription for all users in the _Tenant_
 1. The EOP subscription customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_
 
-**Commitment:**
+**Tier 1 Commitment (Data at Rest):**
 
-Refer to the [Advanced Data Residency Commitment](m365-dr-commitments.md) page for the specific customer data at rest commitment for Exchange Online Protection.
+Refer to the [Advanced Data Residency Commitment](m365-dr-commitments.md) page for the specific Tier 1 customer data at rest commitment for Exchange Online Protection.
 
 ## Migration
 

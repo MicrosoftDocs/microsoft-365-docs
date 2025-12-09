@@ -24,7 +24,15 @@ ms.collection:
 > [!NOTE]
 > If you have purchased a _Multi-Geo_ subscription, then Microsoft will store certain customer data at rest in more than one _Geography_ based on your configuration even if you have purchased the _Microsoft 365 Advanced Data Residency add-on ("ADR")_.
 
-Microsoft makes commitments to store certain customer data at rest in the applicable _Local Region Geography_ for [eligible customers](advanced-data-residency.md#eligibility) that purchase _ADR_. The commitments are specified as follows.
+Microsoft makes commitments to store certain customer data at rest in the applicable _Local Region Geography_ for [eligible customers](advanced-data-residency.md#eligibility) that purchase _ADR_. These commitments are part of the Local Region Data Residency (LRDR) framework.
+
+**Tier 1 (Data at Rest) commitments** guarantee where customer data is stored. All ADR services include Tier 1 commitments.
+
+**Tier 2 (Data Processing) commitments** guarantee where customer data is processed during normal operations. Currently, only Microsoft 365 Copilot and Microsoft 365 Copilot Chat include Tier 2 commitments in eligible geographies. For more information, see [Microsoft 365 Copilot and Microsoft 365 Copilot Chat](m365-dr-workload-copilot.md).
+
+For more information about the LRDR framework and commitment tiers, see [Overview and Definitions](m365-dr-overview.md).
+
+The Tier 1 commitments are specified as follows.
 
 ## Exchange Online
 
@@ -46,9 +54,15 @@ The following customer data is stored at rest in the _Local Region Geography_:
 
 ## Microsoft 365 Copilot and Microsoft 365 Copilot Chat
 
+**Tier 1 Commitment (Data at Rest):**
+
 The following customer data is stored at rest in the _Local Region Geography_:
 
 - Any stored content of interactions with Microsoft 365 Copilot and Microsoft 365 Copilot Chat to the extent not included in the preceding commitments.
+
+**Tier 2 Commitment (Data Processing):**
+
+For tenants in _LRDR Processing Eligible Geographies_, Microsoft 365 Copilot interactions (sending user prompts and receiving responses from Azure OpenAI service) are processed in the customer's _Local Region Geography_ under _Normal Operations_. For details, see [Microsoft 365 Copilot and Microsoft 365 Copilot Chat](m365-dr-workload-copilot.md).
 
 ## Microsoft Defender for Office P1
 

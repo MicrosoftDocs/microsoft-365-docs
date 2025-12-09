@@ -27,6 +27,8 @@ Service documentation: [Office for the web service description - Service Descrip
 
 Capability summary: Office for the web (formerly Office Web Apps) opens Word, Excel, and PowerPoint documents in your web browser. Office for the web makes it easier to work and share Office files from anywhere with an internet connection, from almost any device. Microsoft 365 customers with Word, Excel, or PowerPoint can view, create, and edit files on the go.
 
+Office for the Web provides **Tier 1 (Data at Rest)** commitments as part of Microsoft's Local Region Data Residency (LRDR) framework. These commitments guarantee where customer data is stored. For more information about the LRDR framework and commitment tiers, see [Overview and Definitions](m365-dr-overview.md).
+
 ## Data Residency commitments available
 
 ### Advanced Data Residency add-on
@@ -37,9 +39,9 @@ Required Conditions:
 1. _Tenant_ has a valid _Advanced Data Residency_ subscription for all users in the _Tenant_.
 1. The Office for the Web subscription customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
 
-**Commitment:**
+**Tier 1 Commitment (Data at Rest):**
 
-Refer to the [ADR Commitment page](m365-dr-commitments.md#microsoft-365-web-apps-formerly-known-as-office-for-the-web) for the specific customer data at rest commitment for Office for the Web.
+Refer to the [ADR Commitment page](m365-dr-commitments.md#microsoft-365-web-apps-formerly-known-as-office-for-the-web) for the specific Tier 1 customer data at rest commitment for Office for the Web.
 
 ### Migration
 

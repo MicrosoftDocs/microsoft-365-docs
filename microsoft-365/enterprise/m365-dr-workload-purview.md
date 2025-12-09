@@ -23,7 +23,9 @@ ms.collection:
 
 This article lists the Data Residency commitments (available with the _Advanced Data Residency_ add-on) for supported Microsoft Purview services and solutions.
 
-The required conditions for the related commitments for the following services are:
+Microsoft Purview services provide **Tier 1 (Data at Rest)** commitments as part of Microsoft's Local Region Data Residency (LRDR) framework. These commitments guarantee where customer data is stored. For more information about the LRDR framework and commitment tiers, see [Overview and Definitions](m365-dr-overview.md).
+
+The required conditions for the Tier 1 commitments for the following services are:
 
 1. _Tenant_ has a sign-up country/region included in _Local Region Geography_ or _Future Local Region Geography_.
 1. _Tenant_ has a valid _Advanced Data Residency_ subscription for all users in the _Tenant_.
@@ -63,9 +65,9 @@ Capability summary: Microsoft Purview Audit (Standard) provides you with the abi
 
 #### Data Residency commitments available
 
-Commitment:
+**Tier 1 Commitment (Data at Rest):**
 
-Refer to the [ADR Commitments page](m365-dr-commitments.md#audit-standard) for the specific Customer Data at rest commitment for Audit (Standard).
+Refer to the [ADR Commitments page](m365-dr-commitments.md#audit-standard) for the specific Tier 1 Customer Data at rest commitment for Audit (Standard).
 
 ### Risk & Compliance - Audit (Premium)
 
