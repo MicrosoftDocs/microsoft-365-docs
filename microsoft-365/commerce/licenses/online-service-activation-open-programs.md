@@ -19,7 +19,7 @@ service.tree.id: e6e1ea2a-04a0-4f78-bc75-7d45c90eee39
 search.appverid: MET150
 ms.localizationpriority: medium
 description: "Learn how to activate online services for Open and Open Value Subscription programs for volume licensing."
-ms.date: 07/22/2025
+ms.date: 12/29/2025
 ---
 
 # Online service activation for Open programs (volume licensing)
