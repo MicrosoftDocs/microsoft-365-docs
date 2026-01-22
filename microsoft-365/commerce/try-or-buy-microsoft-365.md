@@ -87,6 +87,10 @@ When you start a free trial, we automatically create a billing account for you. 
 
 At the end of your trial period, your subscription will be renewed to an annual term subscription by default, unless you turn off **recurring billing** from inside of **Billing** > **Your products**.
 
+## What is pooled storage?
+
+Pooled Storage provides a single pool of storage for each tenant which spans OneDrive, SharePoint Online, and Exchange Online. The storage pool represents the maximum amount of storage collectively for these 3 services and is shared across and consumed by all users within the tenant. All SharePoint Sites contribute towards pooled storage. All OneDrives contribute towards pooled storage. In Exchange Online, pooled storage contributions include User Mailboxes, Shared Mailboxes, and Group Mailboxes. All other mailbox types, including Archive mailboxes, don't count towards pooled storage.
+
 ## Extend your trial
 
 Do you need more time to try out the features of Microsoft 365 for business before buying? If your trial subscription is within 15 days of expiring and hasn't been extended yet, you can extend your trial for another 30-day period. You can only do this one time.
