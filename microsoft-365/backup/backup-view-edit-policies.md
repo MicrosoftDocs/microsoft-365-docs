@@ -141,7 +141,7 @@ Follow these steps to set up a backup policy for Exchange mailboxes sites using 
     d. Under **Select mailboxes individually**, you can search and select mailboxes you want to add to a backup policy.
 
     > [!NOTE]
-    > Hybrid deployments, where a user's primary mailbox resides on premises while their archive is migrated to Exchange Online, aren't supported.
+    > Hybrid deployments are not supported. Only mailboxes fully hosted in Exchange Online can be protected.
 
 7. Select **Next** to move to the **Backup Settings** page, where you can provide a name for your policy.
 

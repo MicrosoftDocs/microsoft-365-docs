@@ -7,7 +7,7 @@ audience: Admin
 ms.topic: concept-article
 ms.service: loop
 ms.reviewer: michalbr, brmeersm, derekliddell, dancost
-ms.date: 10/21/2025
+ms.date: 01/26/2026
 ms.update-cycle: 180-days
 ms.localizationpriority: medium
 search.appverid: MET150
@@ -66,9 +66,9 @@ When a guest accesses the Loop workspace, page, or component from the link from 
 
 ### More sharing controls
 
-If you would like to disable guest sharing of Loop workspaces independently of your organization-level OneDrive and SharePoint sharing setting, see [application external sharing override](/sharepoint/dev/embedded/concepts/app-concepts/sharing-and-perm#application-external-sharing-override) and use the Loop OwningApplicationID `a187e399-0c36-4b98-8f04-1edc167a0996`, as this will enable you to control external sharing settings for all SharePoint Embedded containers of type = Loop.
+To disable guest sharing of Loop workspaces independently of your organization-level OneDrive and SharePoint sharing settings, see [application external sharing override](/sharepoint/dev/embedded/concepts/app-concepts/sharing-and-perm#application-external-sharing-override) and use the Loop OwningApplicationID `a187e399-0c36-4b98-8f04-1edc167a0996`. This setting controls external sharing for all SharePoint Embedded containers of type = Loop.
 
-Unlike SharePoint sites, there's no admin setting to configure guest sharing of specific Loop workspaces. Direct users toward [sensitivity labeling](/purview/sensitivity-labels-loop) for per-workspace external sharing configuration. Admin's can also [configure sensitivity labels](/sharepoint/dev/embedded/concepts/security-and-compliance#security-features) on containers.
+Unlike SharePoint sites, there's no admin setting to configure guest sharing of specific Loop workspaces. Direct users to [sensitivity labeling](/purview/sensitivity-labels-loop) for per-workspace external sharing configuration. Admins can also [configure sensitivity labels](/sharepoint/dev/embedded/concepts/security-and-compliance#security-features) on containers.
 
 ## Workspace membership and Microsoft 365 Groups
 
@@ -76,7 +76,7 @@ This section applies to shared workspaces. It doesn't apply to Copilot Pages, Co
 
 ### Tenant-owned workspaces
 
-Shared Loop workspaces, which are created within the Loop app, are managed within the Loop app by the workspace owners.
+Shared Loop workspaces, which are created within the Loop application, are managed within the Loop application by the workspace owners.
 
 Owners can assign more members as owners. If all the owners leave the company, the workspace becomes ownerless, remains in the tenant, and isn't automatically deleted. Administrators can assign new owners to ownerless workspaces.
 
@@ -84,13 +84,14 @@ Owners can assign more members as owners. If all the owners leave the company, t
 
 Microsoft 365 group-owned Loop workspaces, which are [created within a Teams channel](https://techcommunity.microsoft.com/blog/microsoft365insiderblog/collaborate-in-real-time-with-workspaces-in-teams/4414334), are access controlled by the Microsoft 365 group.
 
-## Related topics
+## Related articles
 
 - [Copilot Pages and Copilot Notebooks permissions](cpcn-permission.md)
+- [Summary of compliance, lifecycle, governance](loop-compliance-summary.md)
+- [Requirements](loop-requirements.md)
+- [Storage](loop-storage.md)
+- [Admin policies](loop-admin-configuration.md)
+- [UX examples for admin policy states](loop-ux-examples.md)
 - [Managing SharePoint Embedded containers](cpcn-loop-spe-management.md)
-- [Purview and SharePoint Embedded containers](cpcn-loop-purview-management.md)
-- [Loop, Summary of Compliance, Lifecycle, Governance](cpcn-compliance-summary.md)
-- [Loop Storage](loop-storage.md)
-- [Loop Admin toggles](loop-admin-configuration.md)
-- [UX examples for admin toggle states](loop-ux-examples.md)
+- [Purview management](cpcn-loop-purview-management.md)
 - [Overview of Loop components in Microsoft 365](loop-components-teams.md)

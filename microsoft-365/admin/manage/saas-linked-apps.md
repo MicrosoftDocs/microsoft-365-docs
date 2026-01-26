@@ -23,7 +23,7 @@ description: "Gives an overview of software as a service (SaaS) linked apps."
 
 # SaaS linked apps
 
-The Microsoft 365 admin center gives you the flexibility to deploy single store apps, custom business line of apps, and bundled apps - also called **SaaS linked apps** - from a single location. We invited our independent software vendor (ISV) partners to link their SaaS offer with related free apps, such as Teams apps, Office add-ins, and SharePoint Framework solutions. For more information on how partners create these apps, see [How to plan a SaaS offer for the commercial marketplace](https://go.microsoft.com/fwlink/?linkid=2158277).
+The Microsoft 365 admin center gives you the flexibility to deploy single store apps, custom business line of apps, and bundled apps - also called **SaaS linked apps** - from a single location. We invited our independent software vendor (ISV) partners to link their SaaS offer with related free apps, such as apps for Microsoft 365, Teams apps, Office add-ins, and SharePoint Framework solutions. For more information on how partners create these apps, see [How to plan a SaaS offer for the commercial marketplace](https://go.microsoft.com/fwlink/?linkid=2158277).
 
 We help our admins discover these linked apps with the SaaS offer and manage them all at once from the integrated apps portal. The UX on the integrated apps portal allows the admin to apply the same gesture across all the apps at once.
 

@@ -1,5 +1,5 @@
 ---
-ms.date: 07/02/2025
+ms.date: 01/26/2026
 ms.update-cycle: 180-days
 title: "Summary of governance, lifecycle, and compliance capabilities for Copilot Pages and Copilot Notebooks"
 ms.reviewer: dancost, tonchan
@@ -29,69 +29,71 @@ description: "Learn about the governance, data lifecycle management, and complia
 
 As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on the latest governance, data lifecycle, and compliance posture for the software solutions being used in your organization. This article details the capabilities available and not available yet for Copilot Pages and Copilot Notebooks.
 
+## At a glance
+
+| Capability | Status |
+| --- | --- |
+| **Admin policy** | ✅ Available - [Cloud Policy](cpcn-admin-configuration.md) |
+| **GDPR / EUDB** | ✅ Supported |
+| **Conditional Access** | ◐ App-level only (entire Microsoft 365 Copilot app) |
+| **Information Barriers** | ❌ Not supported |
+| **Customer Lockbox** | ✅ Supported |
+| **eDiscovery** | ✅ Supported (full-text search in review sets not available) |
+| **Legal Hold** | ◐ Manual - container must be added per user |
+| **Retention policies** | ✅ Supported via "All SharePoint Sites" |
+| **Retention labels** | ◐ Limited manual application |
+| **Sensitivity labels** | ✅ Copilot Pages only |
+| **DLP** | ✅ Supported with policy tips |
+| **Recycle bin** | ❌ No end-user recycle bin for Copilot Notebooks |
+
 ## SharePoint Embedded
 
 Copilot Pages and Copilot Notebooks content are stored in SharePoint Embedded. Content stored in SharePoint Embedded containers follows the [SharePoint Embedded security and compliance documentation](/sharepoint/dev/embedded/compliance/security-and-compliance). The sections below outline governance, lifecycle, and compliance capabilities applicable to all Copilot Pages and Copilot Notebooks storage types.
 
 ## Foundations
 
-- An **[Admin Toggle](cpcn-admin-configuration.md)** exists to turn on or off creation of both Copilot Pages and Copilot Notebooks. Additionally, Copilot Pages can be shared and used like a Loop component in all the applications that support Loop components. For more information, refer to [relation to Loop components](cpcn-admin-configuration.md#relation-to-loop-components)
-
-- **GDPR** data subject requests can be serviced as part of the [Microsoft Purview portal](/compliance/regulatory/gdpr-data-subject-requests#data-subject-request-admin-tools) and [Purview eDiscovery workflows](/purview/ediscovery).
-
-- **EUDB** compliance is supported. [What is the EU Data Boundary?](/privacy/eudb/eu-data-boundary-learn)
+- **Admin policy**: Use [Cloud Policy](cpcn-admin-configuration.md) to turn on or off creation of Copilot Pages and Copilot Notebooks. Copilot Pages can also be shared as Loop components in supporting apps. See [relationship to Loop components](cpcn-admin-configuration.md#relationship-to-loop-components).
+- **GDPR**: Data subject requests can be serviced through the [Microsoft Purview portal](/compliance/regulatory/gdpr-data-subject-requests#data-subject-request-admin-tools) and [Purview eDiscovery workflows](/purview/ediscovery).
+- **EUDB**: Compliance is supported. See [What is the EU Data Boundary?](/privacy/eudb/eu-data-boundary-learn)
 
 ## Data Security, Devices
 
-- **Intune** [Device Management Support](/mem/intune/remote-actions/device-management) exists for Microsoft 365 app, Teams app on iOS and Android.
+- **Intune**: [Device Management Support](/mem/intune/remote-actions/device-management) is available for the Microsoft 365 app and Teams app on iOS and Android.
+- **Conditional Access**: Only applies at the app level. Because Copilot Pages and Copilot Notebooks are features of the Microsoft 365 Copilot app, [Conditional Access](/sharepoint/control-access-from-unmanaged-devices) applies to the entire app at m365.cloud.microsoft. Use [admin policies](cpcn-admin-configuration.md) to block creation of new content.
+- **Information Barriers**: [Not supported](/purview/information-barriers-sharepoint). See [admin policies](cpcn-admin-configuration.md) for available controls.
 
-    > [!IMPORTANT]
-    > **[Conditional Access](/sharepoint/control-access-from-unmanaged-devices)** only applies to an entire app. Because Copilot Pages and Copilot Notebooks are features of the Microsoft 365 Copilot app, conditional access cannot be used on just those features, it would need to apply to the entire app at m365.cloud.microsoft. Administrators can still block the creation of new Copilot Pages and Copilot Notebooks using the **[Admin Toggle](cpcn-admin-configuration.md)**.
+> [!IMPORTANT]
+> Information Barriers are **not supported** for content stored in SharePoint Embedded containers. Copilot Pages and Copilot Notebooks use SharePoint Embedded for storage. If your organization requires Information Barriers, consider using [admin policies](cpcn-admin-configuration.md) to disable Copilot Pages and Copilot Notebooks.
 
-    > [!IMPORTANT]
-    > **[Information Barriers](/purview/information-barriers-sharepoint)** are not supported. See [admin settings](cpcn-admin-configuration.md) to configure these integrations.
-
-- **[Customer Lockbox](/purview/customer-lockbox-requests)** is supported.
-
-- **Guest app access** to Copilot Pages and Copilot Notebooks containers is available. Guest app access enables third party export and eDiscovery tools, migration tools, tools used to evaluate compliance requirements, and developer APIs. Use PowerShell to [Get](/powershell/module/microsoft.online.sharepoint.powershell/get-spoapplication) and [Set](/powershell/module/microsoft.online.sharepoint.powershell/set-spoapplicationpermission) guest app permissions.
+- **Customer Lockbox**: [Supported](/purview/customer-lockbox-requests).
+- **Guest app access**: Available for Copilot Pages and Copilot Notebooks containers. Enables third-party export/eDiscovery tools, migration tools, and developer APIs. Use PowerShell to [Get](/powershell/module/microsoft.online.sharepoint.powershell/get-spoapplication) and [Set](/powershell/module/microsoft.online.sharepoint.powershell/set-spoapplicationpermission) guest app permissions.
 
 ## Data Lifecycle
 
-- Copilot Pages and Copilot Notebooks are stored together in a single, user-owned SharePoint Embedded container, identified and owned by the Application Name: Loop. These containers do not have individual storage limits; instead, their storage usage counts toward your organization's overall SharePoint storage quota. Currently, there is no admin control to set storage limits for individual SharePoint Embedded containers.
+> [!TIP]
+> **Scenario: User leaves the organization**
+>
+> - Copilot Pages and Copilot Notebooks container follows OneDrive cleanup schedule (30 days active → 93 days to permanent deletion)
+> - Unlike OneDrive, there's no manager workflow to retain content
+> - To preserve content before departure, export using Purview or Graph API or add the container to a retention policy
 
-- See [Managing SharePoint Embedded containers](cpcn-loop-spe-management.md) for information and workflows within SharePoint Admin center or PowerShell.
-
-    > [!IMPORTANT]
-    > Unlike OneDrive, for Copilot Pages and Copilot Notebooks, there is no user workflow for content stored in the user-owned SharePoint Embedded container after user departure. The container is deleted on the same schedule as the default OneDrive settings. See [Storage management after user departure](cpcn-storage.md#storage-management-after-user-departure) for detailed information.
-
-- **[Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)** capabilities for Copilot Pages and Copilot Notebooks are supported. Copilot Pages and Copilot Notebooks are both stored in the same user-owned SharePoint Embedded container. This container is created in the geo that matches the user's [preferred data location](/microsoft-365/enterprise/plan-for-multi-geo#best-practices). Like OneDrive, admins have the ability to manually move the user's Copilot Pages and Copilot Notebooks container to a new geo when their preferred data location changes.
-
-    > [!IMPORTANT]
-    > There is no end user recycle bin for Copilot Pages or Copilot Notebooks. Neither Administrators nor end users can recover individually deleted Copilot Notebooks.
-
-- **Version History** [export in Purview](/purview/ediscovery-export-search-results#step-1-prepare-search-results-for-export) or via [Graph API](/graph/api/driveitem-get-content-format) is available. Copilot Pages and Copilot Notebooks version history is configured to save 50 versions per file and no admin setting is available to change this configuration.
-
-- **Audit** logs exist for all events. They are retained, can be exported, and can be streamed to third party tools. To search and export Microsoft 365 service events for security and compliance investigations:
-
-    1. Use the [Microsoft Purview portal](https://purview.microsoft.com/auditlogsearch)
-    1. Search audit logs for "page"
-    1. Further filter exported results by "SourceFileExtension":"page"
-
-- Copilot Notebooks create and update .pod files to manage content in the notebook.
+- **Storage**: Copilot Pages and Copilot Notebooks are stored together in a single, user-owned SharePoint Embedded container (Application Name: Loop). Storage counts against your organization's SharePoint quota. See [Managing SharePoint Embedded containers](cpcn-loop-spe-management.md).
+  - **Limitation**: There's no admin control to set limits on individual containers.
+  - **Limitation**: Unlike OneDrive, there's no user workflow for content after departure. The container is deleted on the same schedule as OneDrive defaults. See [Storage management after user departure](cpcn-storage.md#storage-management-after-user-departure).
+- **Multi-Geo**: [Supported](/microsoft-365/enterprise/microsoft-365-multi-geo). The container is created in the geo matching the user's [preferred data location](/microsoft-365/enterprise/plan-for-multi-geo#best-practices).
+  - **Known issue**: Some operations may not work correctly after moving containers across geos. Microsoft is working on a fix.
+- **Recycle bin**: No end-user recycle bin exists.
+  - **Limitation**: Neither administrators nor end users can recover individually deleted Copilot Notebooks.
+- **Version History**: [Export in Purview](/purview/ediscovery-export-search-results#step-1-prepare-search-results-for-export) or via [Graph API](/graph/api/driveitem-get-content-format). 50 versions per file (not configurable).
+- **Audit logs**: Available for all events. Retained, exportable, and streamable to third-party tools. Search in [Purview](https://purview.microsoft.com/auditlogsearch) for "page" and filter by `"SourceFileExtension":"page"`. Copilot Notebooks create and update `.pod` files to manage content.
 
 ## eDiscovery
 
-- Microsoft **[Purview eDiscovery](/purview/ediscovery-premium-get-started)** supports search and collection, review (premium license required for admin), and export as HTML (premium license required for admin) or original. You can also download and reupload the files to any OneDrive to view them in their native format.
-
-    > [!IMPORTANT]
-    > Full text search of content within .page files in Purview review sets isn't available. All other Purview search and collection capabilities are supported.
-
-- Microsoft **[Graph API](/graph/api/driveitem-get-content-format)** export for third party tools is supported. Use PowerShell to [Get](/powershell/module/microsoft.online.sharepoint.powershell/get-spoapplication) and [Set](/powershell/module/microsoft.online.sharepoint.powershell/set-spoapplicationpermission) guest application permissions.
-
-- **Legal Hold** support to ensure content isn't deleted (as related to litigation and security investigations) and stored in the [Preservation Hold Library](/sharepoint/governance/ediscovery-and-in-place-holds-in-sharepoint-server).
-
-    > [!IMPORTANT]
-    > Unlike OneDrive, Copilot Pages and Copilot Notebooks are not automatically included when a user is placed on Litigation Hold, the Copilot Pages and Copilot Notebooks container must be manually added for that user.
+- **Purview eDiscovery**: [Supported](/purview/ediscovery-premium-get-started) for search/collection, review (Premium license required), and export as HTML (Premium license required) or original format. Download and reupload files to OneDrive to view in native format.
+  - **Limitation**: Full-text search within `.page` files in Purview review sets isn't available.
+- **Graph API export**: [Supported](/graph/api/driveitem-get-content-format) for third-party tools. Use PowerShell to [Get](/powershell/module/microsoft.online.sharepoint.powershell/get-spoapplication) and [Set](/powershell/module/microsoft.online.sharepoint.powershell/set-spoapplicationpermission) guest application permissions.
+- **Legal Hold**: Supported. Content is stored in the [Preservation Hold Library](/sharepoint/governance/ediscovery-and-in-place-holds-in-sharepoint-server).
+  - **Limitation**: Unlike OneDrive, Copilot Pages and Copilot Notebooks aren't automatically included when a user is placed on Litigation Hold. You must manually add the container for each user.
 
 ## Microsoft 365 retention and deletion
 
@@ -104,17 +106,14 @@ Copilot Pages and Copilot Notebooks content are stored in SharePoint Embedded. C
 
 ## Information Protection
 
-- **[Sensitivity labeling](/purview/sensitivity-labels-loop)** is available for Copilot Pages.
-
-- Because Copilot Notebooks are stored in the same container as all Copilot Pages, not one Copilot Notebook per unique container, Copilot Notebooks do not have container sensitivity labels.
-
-- **[Data Loss Prevention](/purview/dlp-learn-about-dlp)** (DLP) rules are enforced on content with end-user policy tip support.
+- **Sensitivity labels**: [Available](/purview/sensitivity-labels-loop) for Copilot Pages. Copilot Notebooks don't have container sensitivity labels because they share a container with all Copilot Pages.
+- **Data Loss Prevention (DLP)**: [Rules enforced](/purview/dlp-learn-about-dlp) with end-user policy tip support.
 
 ## Related articles
 
+- [Requirements](cpcn-requirements.md)
 - [Storage](cpcn-storage.md)
 - [Permissions](cpcn-permission.md)
-- [Admin toggles](cpcn-admin-configuration.md)
+- [Admin policies](cpcn-admin-configuration.md)
 - [Managing SharePoint Embedded containers](cpcn-loop-spe-management.md)
-- [Purview and SharePoint Embedded containers](cpcn-loop-purview-management.md)
-- [Overview of Loop components in Microsoft 365](loop-components-teams.md)
+- [Purview management](cpcn-loop-purview-management.md)

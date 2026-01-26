@@ -30,7 +30,7 @@ The integrated apps portal in the Microsoft 365 admin center gives you the flexi
 The integrated apps portal displays a list of apps that can be accessed by users in your organization. The following apps can be managed via the integrated apps portal:
 
 - Office Add-ins, including those that are registered as a web application in Microsoft Entra.
-- Teams apps that work on Outlook and the Microsoft 365 app (formerly known as Office.com).
+- Cross application apps for Microsoft 365.
 - Teams Apps that only work on Teams.
 - SPFx apps
 - SaaS apps that are available in [Microsoft Marketplace](https://marketplace.microsoft.com) and can be deployed by admins giving consent on behalf of the organization.
@@ -106,7 +106,7 @@ You can continue to manage access to Office add-ins and Teams apps via the follo
 - Exchange admin center for Outlook Add-ins
 - Teams admin center for Teams Apps
 
-You can continue to deploy [Deploy and manage Office Add-ins](/microsoft-365/admin/manage/office-addins) and [Teams Apps via Teams admin center](/microsoftteams/manage-apps).
+You can continue to [deploy and manage Office Add-ins](/microsoft-365/admin/manage/office-addins) and [Teams Apps via Teams admin center](/microsoftteams/manage-apps).
 
 ## Find support information for apps, agents, and add-ins
 
@@ -129,7 +129,7 @@ You can access this information in the following ways:
 Only Global Admins, AI admins, Azure Application Admins, and Exchange admins can access the portal.
 
 - Global admins can edit all controls for all apps and add-ins in the portal
-- Azure Application admins can edit controls for Teams apps that work on Outlook and the Microsoft 365 app, and fpr Office Add-ins
+- Azure Application admins can edit controls for [cross application apps for Microsoft 365](teams-apps-work-on-outlook-and-m365.md)
 - Exchange Admins can edit any controls for Outlook add-ins deployed by them.
 
 The **Integrated apps** page link won't show up in the left navigation page of the Microsoft 365 admin center for other administrators.

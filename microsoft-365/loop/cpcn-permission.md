@@ -7,7 +7,7 @@ audience: Admin
 ms.topic: concept-article
 ms.service: loop
 ms.reviewer: michalbr, brmeersm, derekliddell, dancost
-ms.date: 10/21/2025
+ms.date: 01/26/2026
 ms.update-cycle: 180-days
 ms.localizationpriority: medium
 search.appverid: MET150
@@ -55,12 +55,15 @@ External users (guests) can't access shared Copilot Pages directly via link. Cop
 
 **Workaround for external access:** If an external user manually adds a Copilot Page sharing link to their Loop workspace and cross-tenant guest access is configured, they can access the page within the Loop workspace experience.
 
-To disable guest sharing for Loop, see [Loop Permissions](loop-permission.md).
+### Disabling guest sharing
+
+To disable guest sharing for Copilot Pages and Copilot Notebooks containers, see [application external sharing override](/sharepoint/dev/embedded/concepts/app-concepts/sharing-and-perm#application-external-sharing-override) and use application ID `a187e399-0c36-4b98-8f04-1edc167a0996`. This setting controls external sharing for all SharePoint Embedded containers of this type.
 
 ## Related articles
 
-- [Loop workspaces and Loop components permissions](loop-permission.md)
-- [Copilot Pages and Notebooks Storage](cpcn-storage.md)
-- [Copilot Pages and Notebooks Admin toggles](cpcn-admin-configuration.md)
+- [Summary of compliance, lifecycle, governance](cpcn-compliance-summary.md)
+- [Requirements](cpcn-requirements.md)
+- [Storage](cpcn-storage.md)
+- [Admin policies](cpcn-admin-configuration.md)
 - [Managing SharePoint Embedded containers](cpcn-loop-spe-management.md)
-- [Purview and SharePoint Embedded containers](cpcn-loop-purview-management.md)
+- [Purview management](cpcn-loop-purview-management.md)

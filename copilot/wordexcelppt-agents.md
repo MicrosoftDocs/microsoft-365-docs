@@ -58,7 +58,7 @@ For steps on how to disable the connection to Anthropic's AI models, see [Disabl
 > Starting on January 7, 2026, Anthropic will operate as a Microsoft subprocessor for these Microsoft 365 Copilot capabilities under Microsoft’s direction and contractual safeguards.
 > This includes coverage under the [Microsoft Product Terms](https://www.microsoft.com/licensing/terms?msockid=344e0e6ad66c6b3e19441848d7416abd) and the [Microsoft Data Protection Addendum (DPA)](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA?lang=18&msockid=344e0e6ad66c6b3e19441848d7416abd) with Microsoft remaining accountable for Anthropic’s compliance under our contractual commitments. In addition, use of Anthropic models in Microsoft 365 Copilot will fall under our [Enterprise Data Protection](enterprise-data-protection.md) and will be covered by the Customer Copyright Commitment. Note that Anthropic models are currently excluded from EU Data Boundary and when applicable, in-country processing commitments.
 >
->Anthropic as a subprocessor is being introduced gradually and is not yet available to all organizations. During this phased rollout, some features may be limited for your organization. Full availability is expected by the end of January 2026.
+>Anthropic as a subprocessor is being introduced gradually and is not yet available to all organizations. During this phased rollout, some features may be limited for your organization. Full availability is expected by the end of February 2026.
 >
 > For more information, see [Anthropic as a subprocessor](connect-to-ai-subprocessor.md).
 

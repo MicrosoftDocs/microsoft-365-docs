@@ -24,6 +24,11 @@
         "source_path": "microsoft-365/loop/cpcn-loop-permission.md",
         "redirect_url": "/microsoft-365/loop/loop-permission",
         "redirect_document_id": true 
+       },
+       {
+        "source_path": "microsoft-365/loop/cpcn-loop-requirements.md",
+        "redirect_url": "/microsoft-365/loop/cpcn-requirements",
+        "redirect_document_id": true 
        }
     ]
  }

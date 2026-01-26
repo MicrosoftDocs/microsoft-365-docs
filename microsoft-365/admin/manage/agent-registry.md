@@ -7,7 +7,7 @@ f1.keywords:
 ms.author: frankroj
 author: frankroj
 manager: scotv
-ms.date: 12/18/2025
+ms.date: 01/23/2026
 ms.update-cycle: 180-days
 audience: Admin
 ms.topic: concept-article
@@ -51,7 +51,7 @@ Agent Registry lists all agents integrated with Microsoft 365 Copilot, including
 Agent creators can use [Agent Builder in Microsoft 365 Copilot](/microsoft-365-copilot/extensibility/agent-builder-build-agents) to upload files for the agent to use as knowledge. Copilot stores the uploaded files in tenant-owned [SharePoint Embedded](/sharepoint/dev/embedded/overview) containers. It then embeds the file content as knowledge for the agent to use in responses. For more information, see [Embedded file content](/microsoft-365-copilot/extensibility/agent-builder-add-knowledge#embedded-file-content).
 
 > [!IMPORTANT]
-> [Microsoft Purview Information Barriers (IB)](/purview/information-barriers) isn't supported on embedded files. Any user who can access the agent can see responses grounded in the embedded file content. 
+> [Microsoft Purview Information Barriers (IB)](/purview/information-barriers) isn't supported on embedded files. Any user who can access the agent can see responses grounded in the embedded file content.
 
 This article explains how to handle embedded files, how you can manage agents and containers, and what to expect with sensitivity labels and deletion workflows.
 
@@ -354,7 +354,6 @@ The default template automatically assigns the Agent 365 license during activati
 - **Faster Onboarding** - No need for administrators to manually allocate licenses for each instance.
 - **Compliance Assurance** - Prevents unlicensed usage and maintains entitlement integrity.
 - **Scalable Management** - Supports large-scale deployments without increasing administrative overhead.
-
 
 ### Deploy agents
 
@@ -691,3 +690,37 @@ Inventory data is also available programmatically through Graph APIs enabling sc
   - Properties from manifest for declarative agent or custom engine agent.
 
     This metadata makes it easier to audit, manage, and optimize agent management.
+
+## Risks column in the Microsoft 365 admin center Inventory page
+
+The **Risks** column in the Microsoft 365 admin center **Inventory** page provides a clear and consolidated view of an agent's security posture by displaying the total number of active high severity alerts associated with each agent and its underlying instances. It closes a critical visibility gap for IT administrators responsible for governing AI agents.
+
+The count reflects alerts sourced from Microsoft Entra, aggregated into a single, easy to interpret indicator per agent. This experience will expand to include alerts from Microsoft Purview and Microsoft Defender, strengthening cross-Microsoft visibility and enabling more comprehensive governance.
+
+Agents with no active alerts displays a blank value, while agents with one or more active alerts show an aggregated count. These counts allow administrators to quickly identify which agents require attention so that remediation efforts can be prioritized.
+
+:::image type="content" source="../../media/agents/risks-column.png" alt-text="Screenshot showing the Risks column in the Microsoft 365 admin center." lightbox="../../media/agents/risks-column.png":::
+
+When an administrator selects the number shown in the **Risks** column in the Microsoft 365 admin center **Inventory** page, they're taken directly into a detailed flyout panel under the **Security & Compliance** tab. This flyout provides a focused, actionable view of all risks associated with that specific agent.
+
+The flyout panel displays all relevant instances under an agent's blueprint, along with clear breakdown of the number of risks per instance. Admins can drill into individual instances and view the detailed risk types associated with them.
+
+:::image type="content" source="../../media/agents/communication-agent-risks.png" alt-text="Screenshot showing the Communication Agent page with risks in the Microsoft 365 admin center." lightbox="../../media/agents/communication-agent-risks.png":::
+
+:::image type="content" source="../../media/agents/communication-agent.png" alt-text="Screenshot showing the Communication Agent page in the Microsoft 365 admin center." lightbox="../../media/agents/communication-agent.png":::
+
+To support investigation and remediation of alerts, use the **Review in Entra** link. This link redirects administrators to the Microsoft Entra admin center for additional context and review and if necessary, take further action.
+
+Access is permission based. Global Admins can take corrective actions directly in Microsoft Entra, while Global Readers can view but can't take corrective actions. Other roles aren't able to access the Microsoft Entra page.
+
+### Role-Based Access for the Review in Entra link
+
+| Role | View | Take Action |
+| --- | --- | --- |
+| Global Admin | ✅ | ✅ |
+| Global Reader | ✅ | ❌ |
+| All other roles | ❌ | ❌ |
+
+> [!NOTE]
+>
+> The **Risks** column reflects Microsoft Entra alerts from the past 90 days, consistent with Microsoft Entra's retention policy. Agents that no longer return active alerts because the underlying alerts are aged beyond the 90 day window appear as blank in the column. As a result, some agents might continue to be marked **at risk** within Microsoft Entra even if no corresponding alert appears in Microsoft 365 admin center's **Risks** column. All blueprint IDs and their associated instances are supported. Any other agent types will appear as blank in the risks column.

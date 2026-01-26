@@ -23,7 +23,7 @@ description: "How to block and unblock apps Teams apps that only work on Teams t
 
 # Teams apps that only work on Teams
 
-Teams apps that use a manifest version less than 1.13 cannot be extended to Outlook or the Microsoft 365 Copilot application. These apps can be identified in the integrated apps portal by the availability status **Some or all users in the organization can install** in the **Available Apps** list. Admins cannot preinstall or remove these apps, but they can block or unblock them.
+Some Teams apps cannot be surfaced in Outlook or the Microsoft 365 Copilot application, either because the app wouldn't make sense in those hosts or because they use a manifest version less than 1.13. These apps, which are sometimes called "pure Teams apps" or "Teams only apps" to distinguish them from [cross application apps](teams-apps-work-on-outlook-and-m365.md), can be identified in the integrated apps portal by the availability status **Some or all users in the organization can install** in the **Available Apps** list. Admins cannot preinstall or remove these apps, but they can block or unblock them.
 
 ## Before you begin
 

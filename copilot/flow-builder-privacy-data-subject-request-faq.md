@@ -2,12 +2,11 @@
 title: Workflows agent privacy and data subject request (DSR) FAQ
 description: Frequently asked questions about Workflows agent's privacy and data subject request (DSR) processes.
 author: sbasi19
-ms.author: ralinga
-manager: dansimp
-ms.date: 09/19/2025
+ms.author: kisubedi
+ms.date: 01/23/2026
 ms.topic: concept-article
 ms.service: microsoft-365-copilot
-ms.reviewer: cyanderson
+ms.reviewer: v-aangie
 ms.update-cycle: 180-days
 ---
 
@@ -21,23 +20,26 @@ Workflows agent is a Copilot agent that enables users to automate tasks by descr
 
 ## How are flows stored, exported, or deleted?
 
-Flows created with Workflows agent are stored in the user's Power Platform environment. These flows are visible within the Workflows agent agent interface in Microsoft 365 Copilot but aren't surfaced in Power Automate.
+Flows created with Workflows agent are stored in the user's Power Platform environment. These flows are visible within the Workflows agent interface in Microsoft 365 Copilot, but aren't surfaced in Power Automate.
 
 Users can export or delete flows using standard Power Platform tools. Flows are subject to Microsoft’s Data Subject Request (DSR) processes.
+
+**Export**: Admins can export all data pertaining to a user's usage on Workflows agents. Learn more here:
+[List flows for a user](/connectors/flowmanagement/#list-flows-as-admin-(v2)), 
+[Get flow definition](/connectors/flowmanagement/#get-flow-as-admin) 
+
+**Delete/Reassign**: Admins can delete/reassign Workflows agents created by a user. [Learn More](/power-automate/privacy-dsr-delete#reassign-and-copy-the-users-flows)
 
 Here are some resources about DSR requests:
 
 - [Responding to DSR delete requests for Microsoft Dataverse customer data](/power-platform/admin/dataverse-privacy-dsr-guide)
 - [Responding to DSR delete requests to delete Power Apps customer data](/power-platform/admin/powerapps-privacy-delete-dsr)
-- [Export process data](/power-automate/minit/export)
 
 ## Is conversation history stored or exportable?
 
-No. Workflows agent doesn't retain conversation history. All interactions are processed in real time and aren't stored in Microsoft 365 Copilot conversation history or backend services.
+Yes. Conversations with _Workflows agent_ are retained in the Microsoft 365 conversation history.
 
-Because no chat history is stored, there's no conversational data to export or delete under DSR.
-
-To learn more about how Microsoft 365 Copilot handles data, see [Data, Privacy, and Security for Microsoft 365 Copilot](microsoft-365-copilot-privacy.md).
+Learn more about how Microsoft 365 Copilot handles data in [Data, Privacy, and Security for Microsoft 365 Copilot](microsoft-365-copilot-privacy.md).
 
 ## How is Workflows agent managed by administrators?
 
@@ -54,7 +56,7 @@ Workflows agent respects tenant-level settings configured in the Microsoft 365 a
 - Whether analytics and telemetry are collected
 - Which Copilot features are available to users
 
-To learn more about managing Copilot agents and tenant settings, see [Manage Copilot Agents](/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps?view=o365-worldwide&preserve-view=true)
+Learn more about managing Copilot agents and tenant settings in [Manage Copilot Agents](/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps?view=o365-worldwide&preserve-view=true).
 
 ## What connectors are supported?
 
@@ -84,7 +86,7 @@ Feedback collection settings apply consistently across all Workflows agent surfa
 
 Here's some additional information about feedback collection:
 
-- [Providing feedback about Microsoft Copilot with Microsoft 365 apps](https://support.microsoft.com/en-us/topic/providing-feedback-about-microsoft-copilot-with-microsoft-365-apps-c481c26a-e01a-4be3-bdd0-aee0b0b2a423)
+- [Providing feedback about Microsoft Copilot with Microsoft 365 apps](https://support.microsoft.com/topic/providing-feedback-about-microsoft-copilot-with-microsoft-365-apps-c481c26a-e01a-4be3-bdd0-aee0b0b2a423)
 - [Manage feedback for Microsoft 365 apps](/microsoft-365/admin/manage/manage-feedback-ms-org?view=o365-worldwide&preserve-view=true)
 
 ## Can usage be audited?

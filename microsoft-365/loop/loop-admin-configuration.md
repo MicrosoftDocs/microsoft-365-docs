@@ -1,5 +1,5 @@
 ---
-ms.date: 07/02/2025
+ms.date: 01/26/2026
 ms.update-cycle: 180-days
 title: "Manage Loop in your organization"
 ms.reviewer: dancost, tonchan
@@ -30,7 +30,22 @@ description: "Manage Loop in your organization"
 > [!NOTE]
 > The Copilot Pages and Copilot Notebooks content has moved to a [dedicated article](cpcn-admin-configuration.md).
 
-Loop components and their integrations are powered by `.loop` files (earlier releases of Loop created these as `.fluid` files), which are stored in OneDrive, SharePoint, or [SharePoint Embedded](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/cta). Storage for these files counts toward your organization's overall SharePoint quota. For details about where the content is stored, see [storage and lifecycle](loop-storage.md#storage). IT administrators can control the creation and use of Loop content through settings discussed in this article.
+## At a glance
+
+| What you want to control | Policy tool | Key setting |
+|--------------------------|-------------|-------------|
+| **Loop workspaces** (including Teams channel workspaces) | Cloud Policy | *Create Loop workspaces in Loop* |
+| **Loop components in Outlook, OneNote, Whiteboard, Teams New Calendar** | Cloud Policy | *Create and view Loop files in Microsoft apps that support Loop* |
+| **Loop components in Outlook specifically** | Cloud Policy | *Create and view Loop files in Outlook* |
+| **Loop components in Teams chats and channels** | SharePoint PowerShell | `Set-SPOTenant -IsLoopEnabled` |
+| **Collaborative meeting notes in Teams** | SharePoint PowerShell | `Set-SPOTenant -IsCollabMeetingNotesFluidEnabled` |
+
+> [!IMPORTANT]
+> You must configure **BOTH** Cloud Policy and SharePoint PowerShell to fully control Loop in your organization. Cloud Policy alone doesn't control Teams experiences.
+
+## Overview
+
+Loop components and their integrations are powered by `.loop` files (earlier releases created `.fluid` files), stored in OneDrive, SharePoint, or [SharePoint Embedded](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/cta). Storage counts against your organization's SharePoint quota. For storage locations, see [storage](loop-storage.md#storage).
 
 ## Two Admin Policy Tools
 
@@ -41,7 +56,7 @@ IT administrators must manage the creation of Loop components in the Microsoft 3
 
 ## Requirements
 
-Loop components and Loop workspaces are a core service integrated into SharePoint and Microsoft 365. See [requirements](cpcn-loop-requirements.md) to learn more about configuration requirements, service connections, and license requirements.
+Loop components and Loop workspaces are a core service integrated into SharePoint and Microsoft 365. See [requirements](loop-requirements.md) to learn more about configuration requirements, service connections, and license requirements.
 
 ### Scoping Cloud Policy with Microsoft 365 Groups
 
@@ -54,7 +69,20 @@ You can also use security or dynamic groups. For details, see [Create, edit, or 
 
 ## Available policy settings
 
-There are several IT Admin policy settings provided to enable creation of Loop content across Microsoft 365:
+There are several IT Admin policy settings provided to enable creation of Loop content across Microsoft 365.
+
+### Quick decision guide
+
+Use this guide to identify which policy tool you need:
+
+| What do you want to control? | Use this tool |
+|------------------------------|---------------|
+| Loop workspaces (in Loop app or Teams channels) | Cloud Policy: **Create Loop workspaces in Loop** |
+| Loop in Outlook, OneNote, Whiteboard, or New Calendar | Cloud Policy: **Create and view Loop files in Microsoft apps that support Loop** |
+| Loop in Outlook only (granular control) | Cloud Policy: **Create and view Loop files in Outlook** |
+| Loop in Teams chat, channels, and classic meetings | SharePoint PowerShell: `Set-SPOTenant` commands |
+
+### Full policy reference
 
 |Configure  |Setting Type  |Specific Policy  |Notes  |
 |---------|---------|---------|---------|
@@ -69,8 +97,8 @@ Configure the creation of content in these locations by using the appropriate po
 
 |Loop content originally created in|️️️Manage with this policy|Loop content storage|
 |-----|-----|-----|
-|Loop app, My workspace|Cloud Policy: **Create Loop workspaces in Loop**|SharePoint Embedded: ✔️in user-owned container|
-|Loop app, shared workspace|Cloud Policy: **Create Loop workspaces in Loop**|SharePoint Embedded: ✔️in shared container|
+|Loop application, My workspace|Cloud Policy: **Create Loop workspaces in Loop**|SharePoint Embedded: ✔️in user-owned container|
+|Loop application, shared workspace|Cloud Policy: **Create Loop workspaces in Loop**|SharePoint Embedded: ✔️in shared container|
 |[Teams channel, shared workspace](https://techcommunity.microsoft.com/blog/microsoft365insiderblog/collaborate-in-real-time-with-workspaces-in-teams/4414334)|Cloud Policy:  **Create Loop workspaces in Loop**|SharePoint Embedded: ✔️in shared container|
 |Teams channel meeting (Teams Classic Calendar)|SharePoint property `Set-SPOTenant -IsCollabMeetingNotesFluidEnabled $true`|SharePoint Site: 📁`Meetings`|
 |Teams channel meeting ([Teams New Calendar](https://support.microsoft.com/office/get-started-with-the-new-calendar-in-microsoft-teams-98f3b637-5da2-43e2-91b3-f312ab3e4dc5))|Cloud Policy: **Create and view Loop files in Microsoft apps that support Loop** -or- **Create and view Loop files in Outlook**|SharePoint Site: 📁`Meetings`|
@@ -92,10 +120,10 @@ Configure the creation of content in these locations by using the appropriate po
 
 ## User experience expectations when admin settings are configured
 
-IT administrators can control whether users in their organization can create new Loop content. **However, these admin controls do not restrict access to existing Loop files or workspaces.** Admin controls can be applied to specific groups or the entire tenant, except for Teams-related settings, which always apply tenant-wide.
+IT administrators can control whether users in their organization can create new Loop content. **However, these admin controls don't restrict access to existing Loop files or workspaces.** Admin controls can be applied to specific groups or the entire tenant, except for Teams-related settings, which always apply tenant-wide.
 
 - To restrict collaboration between specific groups, use [Information Barriers](/purview/information-barriers-sharepoint) where supported.
-- To block access to existing Loop content or the Loop app, use [Conditional Access policies](/sharepoint/control-access-from-unmanaged-devices).
+- To block access to existing Loop content or the Loop application, use [Conditional Access policies](/sharepoint/control-access-from-unmanaged-devices).
 
 ### Expected user experience when Loop creation is disabled
 
@@ -134,19 +162,19 @@ Copilot Pages, Copilot Notebooks, and the Loop experiences (except for Microsoft
         - **Disabled**: Creation of Loop workspaces isn't available to the users.
         - Loop app will open Loop components when workspaces is disabled.
         - **Enabled**: Creation of Loop workspaces is available to the users.
+        - **Disabled**: Creation of Loop workspaces isn't available to the users. The Loop app is still used to open Loop components.
         - **Not configured**: Creation of Loop workspaces is available to the users.
     - For **Create and view Loop files in Microsoft apps that support Loop**:
-        - recall:
-            - this setting applies to:
-                - Outlook integration
-                - [Teams New Calendar](https://support.microsoft.com/office/get-started-with-the-new-calendar-in-microsoft-teams-98f3b637-5da2-43e2-91b3-f312ab3e4dc5) integration
-                - OneNote integration
-                - Whiteboard integration
-            - this setting does **NOT** apply to:
-                - Loop workspaces
-                - Teams integration (see [Settings management for Loop components in Teams](#settings-management-for-loop-functionality-in-teams))
-                - Copilot Pages
-                - Copilot Notebooks
+        - This setting applies to: 
+            - Outlook
+            - [Teams New Calendar](https://support.microsoft.com/office/get-started-with-the-new-calendar-in-microsoft-teams-98f3b637-5da2-43e2-91b3-f312ab3e4dc5)
+            - OneNote
+            - Whiteboard
+        - This setting does **NOT** apply to: 
+            - Loop workspaces
+            - Teams integration (see [Settings management for Loop components in Teams](#settings-management-for-loop-functionality-in-teams))
+            - Copilot Pages
+            - Copilot Notebooks
         - **Enabled**: Creation of Loop components and integration is available to the users.
         - **Disabled**: Creation of Loop components and integration isn't available to the users.
         - **Not configured**: Creation of Loop components and integration is available to the users.
@@ -159,8 +187,8 @@ Copilot Pages, Copilot Notebooks, and the Loop experiences (except for Microsoft
 
 In case you create a new policy configuration or change the configuration for an existing policy, there can be a delay in the change being reflected as described below:
 
-- If there were existing policy configurations prior to the change, then it will take 90 mins for the change to be reflected.
-- If there were no policy configurations prior to the change, then it will take 24 hours for the change to be reflected.
+- If there were existing policy configurations prior to the change, the change takes up to 90 minutes to be reflected.
+- If there were no policy configurations prior to the change, the change takes up to 24 hours to be reflected.
 
 > [!NOTE]
 > To enable a Cloud Policy for only a specific subset of users:
@@ -210,16 +238,16 @@ To enable Loop components on **Public** defined sessions, the following policies
 
 You should also review the configuration of your [ConditionalAccessPolicy](/powershell/module/exchangepowershell/set-owamailboxpolicy). By design, user sessions that meet the criteria for conditional access will have limited functionality and will not be able to use Loop components.
 
-## Related topics
+## Related articles
 
 ### Admin
 
-- [UX examples for admin toggle states](loop-ux-examples.md)
+- [UX examples for admin policy states](loop-ux-examples.md)
 - [Storage](loop-storage.md)
 - [Permissions](loop-permission.md)
 - [Managing SharePoint Embedded containers](cpcn-loop-spe-management.md)
-- [Purview and SharePoint Embedded containers](cpcn-loop-purview-management.md)
-- [Data Integrations Admin Settings](loop-data-integrations-configuration.md)
+- [Purview management](cpcn-loop-purview-management.md)
+- [Data integrations](loop-data-integrations-configuration.md)
 
 ### End-User Experience
 

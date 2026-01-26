@@ -5,7 +5,7 @@ f1.keywords:
 author: efrene
 ms.author: efrene
 manager: scotv
-ms.date: 02/13/2024
+ms.date: 01/23/2026
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -22,12 +22,12 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-description: "Details of the Content collaboration - people experiences Adoption Score."
+description: "Details of Content collaboration in the Adoption Score report."
 ---
 
-# Content collaboration – People experiences
+# Content collaboration 
 
-Adoption Score provides insights into your organization's digital transformation journey through its use of Microsoft 365 and the technology experiences that support it. Your organization's score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar to yours. The content collaboration category is part of the people experiences measurements. To learn more, check out the [Adoption Score overview](adoption-score.md) and read [Microsoft's Privacy Statement](https://privacy.microsoft.com/privacystatement).
+Adoption Score provides insights into your organization's digital transformation journey through its use of Microsoft 365 and the technology experiences that support it. Your organization's score reflects technology experience measurements and can be compared to benchmarks from organizations similar to yours. To learn more, check out the [Adoption Score overview](adoption-score.md) and read [Microsoft's Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
 ## Prerequisites
 

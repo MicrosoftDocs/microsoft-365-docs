@@ -213,7 +213,7 @@ The user's license information is used to define whether a user is a faculty, st
 > [!NOTE]
 > This setting doesn't affect any deployed Outlook add-ins. You can continue to deploy Outlook add-ins to users in your organization, even if the setting is turned off.
 
-Microsoft is now partnering with leading developers to create unified apps that work across Outlook, Word, Excel, PowerPoint, Teams, and the Microsoft 365 App (formerly known as Office.com). Any settings made for Office Add-ins continue to be honored as long as they stay as add-ins. When Office add-ins are upgraded to work across different Microsoft applications, you can learn to manage them from here. For more information, see [Controls for managing Teams apps that work on Outlook and Microsoft 365](/microsoft-365/admin/manage/teams-apps-work-on-outlook-and-m365#controls-for-managing-teams-apps-that-work-on-outlook-and-the-microsoft-365-app).
+Microsoft is now partnering with leading developers to create unified apps that work across Outlook, Word, Excel, PowerPoint, Teams, and the Microsoft 365 App (formerly known as Office.com). Any settings made for Office Add-ins continue to be honored as long as they stay as add-ins. When Office add-ins are upgraded to work across different Microsoft applications, you can learn to manage them from here. For more information, see [Apps for Microsoft 365 that work across application hosts](/microsoft-365/admin/manage/teams-apps-work-on-outlook-and-m365#controls-for-managing-cross-application-apps).
 
 ## Upload Custom Office Add-ins in your organization  
 

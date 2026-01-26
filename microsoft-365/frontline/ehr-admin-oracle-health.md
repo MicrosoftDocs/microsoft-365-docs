@@ -159,7 +159,7 @@ From there, the provider can view appointment information, join appointments, an
 
 Key features of the provider experience:
 
-- Providers can join appointments using supported browsers or the Teams app.
+- Providers can join appointments using supported browsers or the Teams application.
 - Providers can use all supported Teams meeting features, including screen sharing, custom background, and recording.
 - Providers can see real-time updates of patients connecting to an appointment for a given appointment in PowerChart.
 - Provider information isn’t visible to patients during the appointment.
@@ -173,7 +173,7 @@ The connector supports patients joining appointments through a link in the SMS t
 
 Key features of the patient experience
 
-- Patients can join appointments from [modern web browsers on desktop and mobile without having to install the Teams app](browser-join.md).
+- Patients can join appointments from [modern web browsers on desktop and mobile without having to install the Teams application](browser-join.md).
 - Patients can join appointments with a single click and no other account or sign-in is required.
 - Patients aren't required to create a Microsoft account or sign in to launch a visit.
 - Patients are placed in a lobby until the provider joins and admits them.

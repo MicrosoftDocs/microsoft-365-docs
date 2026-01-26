@@ -73,6 +73,10 @@ items:
 
 - name: Implement
   items:
+  - name: Minimum requirements to deploy Microsoft 365 Copilot
+    href: microsoft-365-copilot-minimum-requirements.md
+  - name: Minimum requirements and consideration for Microsoft 365 Copilot Chat
+    href: microsoft-365-copilot-chat-requirements.md  
   - name: Usage Based Billing
     items:
     - name: Set up pay-as-you-go

@@ -7,7 +7,7 @@ audience: Admin
 ms.topic: article
 ms.service: loop
 ms.reviewer: michalbr, dancost
-ms.date: 07/02/2025
+ms.date: 01/26/2026
 ms.update-cycle: 180-days
 ms.localizationpriority: medium
 search.appverid: MET150
@@ -27,9 +27,20 @@ appliesto:
 
 # Overview of Copilot Pages and Copilot Notebooks storage
 
+## At a glance
+
+| Key fact | Details |
+| --- | --- |
+| **Storage location** | SharePoint Embedded (user-owned container) |
+| **Container name** | "Pages" or "My workspace" (depends on which app creates it first) |
+| **Quota** | Counts against your organization's SharePoint storage quota |
+| **Container limit** | 25 TB maximum |
+| **User departure** | Follows OneDrive cleanup schedule (30 days active → soft delete → 93 days to permanent deletion) |
+| **Recycle bin** | No end-user recycle bin for Copilot Notebooks |
+
 ## Storage
 
-Copilot Pages and Copilot Notebooks are stored within your organization in SharePoint Embedded. Copilot Pages, Copilot Notebooks and the Loop My workspace all use the same container. The container is lifetime managed with the user account and can be [managed using SharePoint Embedded admin tools](cpcn-loop-spe-management.md).
+Copilot Pages and Copilot Notebooks are stored within your organization in SharePoint Embedded. Each user has a single user-owned container that stores their Copilot Pages and Copilot Notebooks. The container is lifetime managed with the user account and can be [managed using SharePoint Embedded admin tools](cpcn-loop-spe-management.md).
 
 ## Container name
 
@@ -47,39 +58,29 @@ Copilot Pages + Copilot Notebooks container has a maximum size of 25 TB. This li
 
 ## Storage management after user departure
 
-- [Copilot Pages](#copilot-pages) and [Copilot Notebooks](#copilot-notebooks) store content within the same user-owned SharePoint Embedded container.
-- This personal content is private by default, allowing users to work without forced sharing or coauthoring, similar to OneDrive.
+Copilot Pages and Copilot Notebooks are stored together in the same user-owned SharePoint Embedded container. This personal content is private by default, allowing users to work without forced sharing or coauthoring, similar to OneDrive.
 
-### Copilot Pages
+### Container lifecycle
 
-- Copilot Pages are stored in a user-owned SharePoint Embedded container, created by Copilot. The container is lifecycle managed with the user account, deleted when the user account is deleted from the organization.
-- Copilot Pages can't be permanently reassigned to a new owner. It follows the same cleanup schedule as OneDrive: 30 days active, then soft deleted, and permanently purged 93 days after soft deletion.
-- Admins can recover content during the soft delete period using the SharePoint Admin Center or PowerShell.
+- The container is lifecycle managed with the user account and is deleted when the user account is deleted from the organization.
+- You can't permanently reassign content to a new owner.
+- The container follows the same cleanup schedule as OneDrive: 30 days active, then soft deleted, and permanently purged 93 days after soft deletion.
+- Admins can recover the entire container (including all Copilot Pages and Copilot Notebooks) during the soft delete period using the SharePoint Admin Center or PowerShell.
 
 > [!NOTE]
-> When a user selects the Copilot Pages module in the Microsoft 365 Copilot app, a SharePoint Embedded container is currently created automatically—even if the user doesn't go on to create a Copilot Page. If no files are added to the container, the system will later delete it automatically. *This behavior is temporary.* An update is in progress to ensure that a Copilot Pages container is only created when a user actually creates a Copilot Page. Until that update is deployed, IT administrators and compliance officers can safely disregard these system-initiated deletions. These containers don't contain any user-generated content when they're removed.
+> When a user selects the Copilot Pages module in the Microsoft 365 Copilot app, a SharePoint Embedded container is currently created automatically—even if the user doesn't create a Copilot Page. If no files are added, the system deletes it automatically. *This behavior is temporary.* An update is in progress to ensure containers are only created when users actually create content. Until then, IT administrators can safely disregard these system-initiated deletions.
 
 > [!IMPORTANT]
-> A workflow for IT admins to assign temporary custodians during the cleanup period of user-owned workspaces isn't yet available. This capability for Copilot Pages and Copilot Notebooks is planned (Microsoft Roadmap ID 421612).
-
-### Copilot Notebooks
-
-- Copilot Notebooks are stored in a user-owned SharePoint Embedded container, created by Copilot. The container is lifecycle managed with the user account, deleted when the user account is deleted from the organization.
-- Copilot Notebooks can't be permanently reassigned to a new owner. It follows the same cleanup schedule as OneDrive: 30 days active, then soft deleted, and permanently purged 93 days after soft deletion.
-- Admins can recover the entire container with all Copilot Notebooks and Copilot Pages during the soft delete period using the SharePoint Admin Center or PowerShell.
+> A workflow for IT admins to assign temporary custodians during the cleanup period isn't yet available. This capability is planned (Microsoft Roadmap ID 421612).
 
 > [!IMPORTANT]
-> A workflow for IT admins to assign temporary custodians during the cleanup period of user-owned workspaces isn't yet available. This capability for Copilot Pages and Copilot Notebooks is planned (Microsoft Roadmap ID 421612).
+> There's no end-user recycle bin for Copilot Notebooks. Neither administrators nor end users can recover individually deleted Copilot Notebooks.
 
-> [!IMPORTANT]
-> There is no end user recycle bin for Copilot Notebooks. Neither Administrators nor end users can recover individually deleted Copilot Notebooks.
+## Related articles
 
-## Related topics
-
-- [Summary of Compliance, Lifecycle, Governance](cpcn-compliance-summary.md)
-- [Requirements](cpcn-loop-requirements.md)
+- [Summary of compliance, lifecycle, governance](cpcn-compliance-summary.md)
+- [Requirements](cpcn-requirements.md)
 - [Permissions](cpcn-permission.md)
-- [Admin toggles](cpcn-admin-configuration.md)
+- [Admin policies](cpcn-admin-configuration.md)
 - [Managing SharePoint Embedded containers](cpcn-loop-spe-management.md)
-- [Purview and SharePoint Embedded containers](cpcn-loop-purview-management.md)
-- [Overview of Loop components in Microsoft 365](loop-components-teams.md)
+- [Purview management](cpcn-loop-purview-management.md)

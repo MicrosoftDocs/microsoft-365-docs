@@ -6,7 +6,7 @@ author: efrene
 ms.author: efrene
 ms.reviewer: cmcatee
 manager: scotv
-ms.date: 01/22/2026
+ms.date: 01/23/2026
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -32,7 +32,7 @@ description: "Learn how to use the Microsoft Adoption Score report to track prod
 
 > [!NOTE]
 > Technology experiences retirement (January 2026)
-> Starting January 22, 2026, the Microsoft 365 admin center will retire the **Technology experiences** score and its three categories, **Network connectivity**, **Microsoft 365 Apps health**, and **Endpoint analytics** from the **Adoption Score** report. This change rolls out and completes by January 30, 2026.
+> Starting January 22, 2026, the Microsoft 365 admin center will retire the **Technology experiences** score and its three categories, **Network connectivity**, **Microsoft 365 Apps health**, and **Endpoint analytics** from the **Adoption Score** report. This change rolls out and completes in February 2026.
 >
 > After this change, the overall **Adoption Score** is equal to the People experiences score. The **People experiences** score measures end user progress toward embedding Microsoft 365 and Copilot into day-to-day productivity workflows.
 >

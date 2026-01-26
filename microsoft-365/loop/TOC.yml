@@ -3,16 +3,14 @@ items:
   items:
     - name: Summary compliance capabilities
       href: cpcn-compliance-summary.md
+    - name: Requirements
+      href: cpcn-requirements.md
     - name: Admin policies
       href: cpcn-admin-configuration.md
     - name: Storage
       href: cpcn-storage.md
     - name: Permissions
       href: cpcn-permission.md
-- name: Common References
-  items:
-    - name: Requirements
-      href: cpcn-loop-requirements.md
     - name: SharePoint Embedded management
       href: cpcn-loop-spe-management.md
     - name: Purview management
@@ -21,6 +19,8 @@ items:
   items:
     - name: Summary compliance capabilities
       href: loop-compliance-summary.md
+    - name: Requirements
+      href: loop-requirements.md
     - name: Admin policies
       href: loop-admin-configuration.md
     - name: Example user experiences
@@ -29,6 +29,10 @@ items:
       href: loop-storage.md
     - name: Permissions
       href: loop-permission.md
+    - name: SharePoint Embedded management
+      href: cpcn-loop-spe-management.md
+    - name: Purview management
+      href: cpcn-loop-purview-management.md
     - name: Data integrations
       href: loop-data-integrations-configuration.md
     - name: Overview Loop components in Microsoft 365

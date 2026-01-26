@@ -67,7 +67,8 @@ These settings allow you to customize agent behavior, control access, and mainta
 
 > [!TIP]
 >
-> If you disable an option, agents of that type don't appear for users in the Agent store.
+> - If you disable an option, agents of that type don't appear for users in the Agent store.
+> - Agents built by Microsoft are visible to users even if the setting is disabled. Users aren't able to install those agents.
 
 ### Sharing
 

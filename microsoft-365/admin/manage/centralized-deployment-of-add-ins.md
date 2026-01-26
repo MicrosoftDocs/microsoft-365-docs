@@ -68,7 +68,7 @@ Centralized deployment doesn't support the following:
 - An on-premises directory service
 - Add-in deployment to an Exchange On-Prem Mailbox
 - Add-in deployment to SharePoint
-- Teams apps
+- [Apps for Microsoft 365](apps-for-microsoft-365-overview.md) that include more than an add-in (For example, an app for Microsoft 365 that includes a Teams app.)
 - Deployment of Component Object Model (COM) or Visual Studio Tools for Office (VSTO) add-ins.
 - Deployments of Microsoft 365 that do not include Exchange Online such as SKUs: Microsoft 365 Apps for Business and Microsoft 365 Apps for Enterprise.
 

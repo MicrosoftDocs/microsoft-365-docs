@@ -36,7 +36,7 @@ Microsoft will enable Anthropic models on by default for most customers in comme
 > [!IMPORTANT]
 > Anthropic models deployed in Microsoft offerings (including Microsoft 365 Copilot, Researcher, Copilot Studio, Agent Mode in Excel, and Word, Excel, and PowerPoint agents) are currently excluded from the EU Data Boundary, and when applicable, in-country processing commitments. Customers within the EU Data Boundary and customers in the UK will have Anthropic models disabled by default. Anthropic models aren't currently available for use in government clouds (GCC, GCC High, DoD) or sovereign clouds.
 
-Anthropic as a subprocessor is being introduced gradually and isn't yet available to all organizations. During this phased rollout, some features may be limited for your organization. Full availability is expected by the end of January 2026.
+Anthropic as a subprocessor is being introduced gradually and isn't yet available to all organizations. During this phased rollout, some features may be limited for your organization. Full availability is expected by the end of February 2026.
 
 ## Manage Anthropic's model settings in the Microsoft 365 admin center
 

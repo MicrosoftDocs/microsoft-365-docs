@@ -1,5 +1,5 @@
 ---
-ms.date: 07/02/2025
+ms.date: 01/26/2026
 ms.update-cycle: 180-days
 title: "Summary of governance, lifecycle, and compliance capabilities for Loop experiences"
 ms.reviewer: dancost, tonchan
@@ -30,7 +30,24 @@ description: "Learn about the governance, data lifecycle management, and complia
 > [!NOTE]
 > The Copilot Pages and Copilot Notebooks content can now be found in a [dedicated article](cpcn-compliance-summary.md).
 
-As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on the latest governance, data lifecycle, and compliance posture for the software solutions being used in your organization. This article details the capabilities available and not available yet for [Microsoft Loop](https://www.microsoft.com/en-us/microsoft-loop).
+As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on the latest governance, data lifecycle, and compliance posture for the software solutions being used in your organization. This article details the capabilities available and not available yet for [Microsoft Loop](https://www.microsoft.com/microsoft-loop).
+
+## At a glance
+
+| Capability | Status |
+| --- | --- |
+| **Admin policies** | ✅ Available - [Cloud Policy + SharePoint PowerShell](loop-admin-configuration.md) |
+| **GDPR / EUDB** | ✅ Supported |
+| **Conditional Access** | ✅ Supported |
+| **Information Barriers** | ◐ OneDrive/SharePoint only (not SharePoint Embedded) |
+| **Customer Lockbox** | ✅ Supported |
+| **eDiscovery** | ✅ Supported (full-text search in review sets not available) |
+| **Legal Hold** | ◐ SharePoint Embedded content is Manual - My workspace container must be added per user |
+| **Retention policies** | ✅ Supported |
+| **Retention labels** | ◐ Limited manual application |
+| **Sensitivity labels** | ✅ Pages, components, and workspaces |
+| **DLP** | ✅ Supported with policy tips |
+| **Recycle bin** | ✅ Components and pages; ❌ Workspaces |
 
 ## SharePoint Embedded
 
@@ -40,12 +57,10 @@ The sections below outline governance, lifecycle, and compliance capabilities ap
 
 ## Foundations
 
-- **[Admin Toggle](loop-admin-configuration.md)** exist to turn on or off creation of Loop components, pages, and workspaces. When an IT admin switches Loop component creation on or off in the Microsoft 365 ecosystem, this switch also controls rendering as a hyperlink vs. a live and interactive experience.
-  - If you enable Loop components in the Microsoft 365 ecosystem via the primary toggle, there are secondary toggles to turn on or off Loop components in Outlook or Teams chats and channels. There's also a secondary toggle to turn on or off Loop components for collaborative meeting notes.
-
-- **GDPR** data subject requests can be serviced as part of the [Microsoft Purview portal](/compliance/regulatory/gdpr-data-subject-requests#data-subject-request-admin-tools) and [Purview eDiscovery workflows](/purview/ediscovery).
-
-- **EUDB** compliance is supported. [What is the EU Data Boundary?](/privacy/eudb/eu-data-boundary-learn)
+- **Admin policies**: Use [Cloud Policy and SharePoint PowerShell](loop-admin-configuration.md) to control creation of Loop components, pages, and workspaces. When creation is disabled, existing content renders as hyperlinks instead of interactive components.
+  - Primary policy controls most apps (excluding Teams); secondary policies control Outlook, Teams, and collaborative meeting notes separately.
+- **GDPR**: Data subject requests can be serviced through the [Microsoft Purview portal](/compliance/regulatory/gdpr-data-subject-requests#data-subject-request-admin-tools) and [Purview eDiscovery workflows](/purview/ediscovery).
+- **EUDB**: Compliance is supported. See [What is the EU Data Boundary?](/privacy/eudb/eu-data-boundary-learn)
 
 ## Data Security, Devices
 
@@ -55,12 +70,11 @@ The sections below outline governance, lifecycle, and compliance capabilities ap
 
 - **[Information Barriers](/purview/information-barriers-sharepoint)** are enforced for content stored in SharePoint sites or OneDrive.
 
-  > [!IMPORTANT]
-  > **[Information Barriers](/purview/information-barriers-sharepoint)** aren't supported on content stored in SharePoint Embedded containers. To learn what's stored in SharePoint Embedded, see [storage](loop-storage.md#storage). To configure these integrations, see [admin settings](loop-admin-configuration.md#storage-based-view-of-the-admin-policy-settings).
+> [!IMPORTANT]
+> Information Barriers are **not supported** for content stored in SharePoint Embedded containers (Loop workspaces and My workspace). If your organization requires Information Barriers, consider using [admin policies](loop-admin-configuration.md) to restrict Loop workspace creation.
 
-- **[Customer Lockbox](/purview/customer-lockbox-requests)** is supported.
-
-- **Guest app access** to Loop workspace containers is available. Guest app access enables third party export and eDiscovery tools, migration tools, tools used to evaluate compliance requirements, and developer APIs. Use PowerShell to [Get](/powershell/module/microsoft.online.sharepoint.powershell/get-spoapplication) and [Set](/powershell/module/microsoft.online.sharepoint.powershell/set-spoapplicationpermission) guest app permissions.
+- **Customer Lockbox**: [Supported](/purview/customer-lockbox-requests).
+- **Guest app access**: Available for Loop workspace containers. Enables third-party export/eDiscovery tools, migration tools, and developer APIs. Use PowerShell to [Get](/powershell/module/microsoft.online.sharepoint.powershell/get-spoapplication) and [Set](/powershell/module/microsoft.online.sharepoint.powershell/set-spoapplicationpermission) guest app permissions.
 
 ## Data Lifecycle
 
@@ -90,17 +104,11 @@ The sections below outline governance, lifecycle, and compliance capabilities ap
 
 ## eDiscovery
 
-- Microsoft **[Purview eDiscovery](/purview/ediscovery-premium-get-started)** supports search and collection, review (premium license required for admin), and export as HTML (premium license required for admin) or original. You can also download and reupload the files to any OneDrive to view them in their native format.
-
-  > [!IMPORTANT]
-  > Full text search of content within .loop files in Purview review sets isn't available. All other Purview search and collection capabilities are supported.
-
-- Microsoft **[Graph API](/graph/api/driveitem-get-content-format)** export for third party tools is supported. Use PowerShell to [Get](/powershell/module/microsoft.online.sharepoint.powershell/get-spoapplication) and [Set](/powershell/module/microsoft.online.sharepoint.powershell/set-spoapplicationpermission) guest application permissions.
-
-- **Legal Hold** support to ensure content isn't deleted (as related to litigation and security investigations) and stored in the [Preservation Hold Library](/sharepoint/governance/ediscovery-and-in-place-holds-in-sharepoint-server).
-
-  > [!IMPORTANT]
-  > Unlike OneDrive, Loop's My workspace isn't automatically included when a user is placed on Litigation Hold, the My workspace container must be manually added for that user.
+- **Purview eDiscovery**: [Supported](/purview/ediscovery-premium-get-started) for search/collection, review (Premium license required), and export as HTML (Premium license required) or original format. Download and reupload files to OneDrive to view in native format.
+  - **Limitation**: Full-text search within `.loop` files in Purview review sets isn't available.
+- **Graph API export**: [Supported](/graph/api/driveitem-get-content-format) for third-party tools. Use PowerShell to [Get](/powershell/module/microsoft.online.sharepoint.powershell/get-spoapplication) and [Set](/powershell/module/microsoft.online.sharepoint.powershell/set-spoapplicationpermission) guest application permissions.
+- **Legal Hold**: Supported. Content is stored in the [Preservation Hold Library](/sharepoint/governance/ediscovery-and-in-place-holds-in-sharepoint-server).
+  - **Known Issue**: Unlike OneDrive, Loop's My workspace isn't automatically included when a user is placed on Litigation Hold. You must manually add the My workspace container for each user when placing the user on Litigation Hold.
 
 ## Microsoft 365 retention and deletion
 
@@ -114,18 +122,17 @@ The sections below outline governance, lifecycle, and compliance capabilities ap
 
 ## Information Protection
 
-- **[Sensitivity labeling](/purview/sensitivity-labels-loop)** is available for Loop pages and components. Workspace sensitivity labels are available for Loop workspaces. They're configurable per Loop workspaces (at the container level) via SharePoint Admin Center and PowerShell.
-  - **Individual controls for guest or external sharing** of a specific Loop workspace isn't available. Use container Sensitivity labeling instead.
-
-- **[Data Loss Prevention](/purview/dlp-learn-about-dlp)** (DLP) rules are enforced on content with end-user policy tip support.
+- **Sensitivity labels**: [Available](/purview/sensitivity-labels-loop) for Loop pages and components. Workspace sensitivity labels are configurable per workspace (at container level) via SharePoint Admin Center and PowerShell. See [configuring sensitivity labels](/sharepoint/dev/embedded/concepts/security-and-compliance#security-features).
+  - **Note**: There's no admin setting to configure guest sharing of specific Loop workspaces. Use container sensitivity labeling for per-workspace external sharing configuration.
+- **Data Loss Prevention (DLP)**: [Rules enforced](/purview/dlp-learn-about-dlp) with end-user policy tip support.
 
 ## Related articles
 
-- [Requirements](cpcn-loop-requirements.md)
+- [Requirements](loop-requirements.md)
 - [Storage](loop-storage.md)
 - [Permissions](loop-permission.md)
-- [Admin toggles](loop-admin-configuration.md)
-- [UX examples for admin toggle states](loop-ux-examples.md)
+- [Admin policies](loop-admin-configuration.md)
+- [UX examples for admin policy states](loop-ux-examples.md)
 - [Managing SharePoint Embedded containers](cpcn-loop-spe-management.md)
-- [Purview and SharePoint Embedded containers](cpcn-loop-purview-management.md)
+- [Purview management](cpcn-loop-purview-management.md)
 - [Overview of Loop components in Microsoft 365](loop-components-teams.md)

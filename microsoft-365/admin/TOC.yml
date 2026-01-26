@@ -412,9 +412,9 @@ items:
               href: manage/test-and-deploy-microsoft-365-apps.md
             - name: Manage Office add-ins
               href: manage/office-addins.md
-            - name: Teams apps that work on Outlook & Microsoft 365 Copilot
+            - name: Apps for Microsoft 365 that work across application hosts
               href: manage/teams-apps-work-on-outlook-and-m365.md
-            - name: Teams apps that only work on Teams
+            - name: Apps for Microsoft 365 that only work on Teams
               href: manage/teams-apps-work-only-on-teams.md
             - name: SaaS Linked Apps
               href: manage/saas-linked-apps.md

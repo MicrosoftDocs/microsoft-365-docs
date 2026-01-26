@@ -32,7 +32,7 @@ Bookings is also available as an app in Teams and Outlook, which allows you to c
 
 ## Microsoft Bookings lets you conduct virtual meetings
 
-Use Bookings to make your organization’s meetings virtual with online meetings via [Microsoft Teams](https://support.microsoft.com/office/overview-of-the-bookings-app-in-teams-7b8569e1-0c8a-444e-b712-d9968b05110b) Each appointment booked as an online meeting creates a unique meeting link that is sent to attendees so they can join via a web browser, phone dial-in, or the Skype or Teams app.
+Use Bookings to make your organization’s meetings virtual with online meetings via [Microsoft Teams](https://support.microsoft.com/office/overview-of-the-bookings-app-in-teams-7b8569e1-0c8a-444e-b712-d9968b05110b) Each appointment booked as an online meeting creates a unique meeting link that is sent to attendees so they can join via a web browser, phone dial-in, or the Skype or Teams application.
 
 :::image type="content" source="../media/preview-booking-page.png" alt-text="Screenshot showing the homepage for Microsoft Bookings." lightbox="../media/preview-booking-page.png":::
 

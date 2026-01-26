@@ -326,7 +326,7 @@ OneNote Win32 client and UWP (Universal) App automatically detects and seamlessl
 
 #### **Teams app**
 
-Upon OneDrive _Geography_ move completion, users have access to their OneDrive files on the Teams app. Additionally, files shared via Teams chat from their OneDrive before the _Geography_ move continue to work after move is complete.
+Upon OneDrive _Geography_ move completion, users have access to their OneDrive files on the Teams application. Additionally, files shared via Teams chat from their OneDrive before the _Geography_ move continue to work after move is complete.
 
 #### **OneDrive Mobile App (iOS)**
 
@@ -536,7 +536,7 @@ OneNote Win32 client and UWP (Universal) App automatically detects and seamlessl
 
 #### **Teams (applicable to Microsoft 365 group connected sites)**
 
-When the SharePoint site _Geography_ move completes, users will have access to their Microsoft 365 group site files on the Teams app. Additionally, files shared via Teams chat from their site prior to _Geography_ move will continue to work after move is complete.
+When the SharePoint site _Geography_ move completes, users will have access to their Microsoft 365 group site files on the Teams application. Additionally, files shared via Teams chat from their site prior to _Geography_ move will continue to work after move is complete.
 SharePoint site _Geography_ move doesn't support moving sites backing Private and Shared Channels from one _Geography_ to another, when using the `Start-SPOUnifiedGroupMove` command. Sites backing Private and Shared Channels remain in the original _Geography_. To move those sites individually, admins can initiate direct moves using the `Start-SPOSiteContentMove` command.
 
 #### **SharePoint Mobile App (iOS/Android)**
