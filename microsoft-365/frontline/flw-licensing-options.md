@@ -16,7 +16,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 03/22/2024
+ms.date: 10/06/2025
 ---
 
 # Understand frontline worker user types and licensing

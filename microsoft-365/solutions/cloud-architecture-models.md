@@ -1,20 +1,22 @@
 ---
 title: Microsoft cloud architecture models - enterprise resource planning
 description: "Learn about Microsoft cloud services like Azure and Office 365 with these architecture diagrams and illustrations."
-ms.author: samanro
-author: samanro
-manager: bcarter
+ms.author: dansimp
+author: dansimp
+manager: dansimp
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: m365-planning
 ms.localizationpriority: medium
 ms.collection: 
 - highpri
 - M365-subscription-management
 - M365solutions
-ms.custom: seo-marvel-jun2020
+ms.custom:
+- seo-marvel-jun2020
+- m365-solutions-doc-set
 f1.keywords: NOCSH
-ms.date: 04/18/2024
+ms.date: 05/01/2025
 ---
 
 # Microsoft cloud for IT architects illustrations
@@ -30,7 +32,7 @@ This illustration provides a deployment plan for building Zero Trust security wi
 
 | Item | Description |
 |:-----|:-----|
-|[![Illustration of the Microsoft 365 Zero Trust deployment plan.](../media/solutions-architecture-center/m365-zero-trust-deployment-plan-thumb.png)](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) <br/> [PDF](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) \| [Visio](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.vsdx) <br/> Updated March 2024 | Use this illustration together with this article: [Microsoft 365 Zero Trust deployment plan](../security/Microsoft-365-zero-trust.md) <br/><br/>**Related solution guides** <br/> <ul><li>[Deploy your identity infrastructure for Microsoft 365](/microsoft-365/enterprise/deploy-identity-solution-overview)</li><li>[Recommended identity and device access configurations](../security/office-365-security/zero-trust-identity-device-access-policies-overview.md)</li><li>[Manage devices with Intune](manage-devices-with-intune-overview.md)</li><li>[Evaluate and pilot Microsoft Defender XDR](../security/defender/eval-overview.md)</li><li>[Deploy an information protection solution with Microsoft Purview](../compliance/information-protection-solution.md)</li><li>[Deploy information protection for data privacy regulations with Microsoft 365](information-protection-deploy.md)</li></ul>|
+|[![Illustration of the Microsoft 365 Zero Trust deployment plan.](../media/solutions-architecture-center/m365-zero-trust-deployment-plan-thumb.png)](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) <br/> [PDF](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) \| [Visio](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.vsdx) <br/> Updated May 2025 | Use this illustration together with this article: [Microsoft 365 Zero Trust deployment plan](../security/Microsoft-365-zero-trust.md) <br/><br/>**Related solution guides** <br/> <ul><li>[Deploy your identity infrastructure for Microsoft 365](/microsoft-365/enterprise/deploy-identity-solution-overview)</li><li>[Recommended identity and device access configurations](../security/office-365-security/zero-trust-identity-device-access-policies-overview.md)</li><li>[Manage devices with Intune](manage-devices-with-intune-overview.md)</li><li>[Evaluate and pilot Microsoft Defender XDR](../security/defender/eval-overview.md)</li><li>[Deploy an information protection solution with Microsoft Purview](../compliance/information-protection-solution.md)</li><li>[Deploy information protection for data privacy regulations with Microsoft 365](information-protection-deploy.md)</li></ul>|
 
 <a name="intune-enrollment"></a>
 ### Intune enrollment options
@@ -44,7 +46,7 @@ This guidance helps you decide which enrollment option is best for your endpoint
 
 | Item | Description |
 |:-----|:-----|
-|[![A visual representation of Intune enrollment options by platform](../media/devices/msft-intune-enrollment-options-thumb-landscape.png) ](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.pdf) <br/> [PDF](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.pdf) \| [Visio](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.vsdx) <br/> Updated June 2022 | **Related solution guides** <br/> <ul><li>[Manage devices with Intune](manage-devices-with-intune-overview.md)</li><li>[Microsoft Intune planning guide](/mem/intune/fundamentals/intune-planning-guide)</ul>|
+|[![A visual representation of Intune enrollment options by platform](../media/devices/msft-intune-enrollment-options-thumb-landscape.png) ](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.pdf) <br/> [PDF](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.pdf) \| [Visio](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.vsdx) <br/> Updated March 2025 | **Related solution guides** <br/> <ul><li>[Manage devices with Intune](manage-devices-with-intune-overview.md)</li><li>[Microsoft Intune planning guide](/mem/intune/fundamentals/intune-planning-guide)</ul>|
 
 <a name="attacks"></a>
 ### Common attacks and how Microsoft capabilities for Zero Trust can protect your organization

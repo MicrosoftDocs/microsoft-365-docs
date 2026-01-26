@@ -11,6 +11,7 @@ ms.collection:
 - Tier1
 - scotvorg
 - essentials-manage
+- operations-pod
 ms.custom: QuickDraft
 AI_Usage:  
 - AI-Assisted

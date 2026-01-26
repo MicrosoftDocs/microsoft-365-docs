@@ -2,23 +2,22 @@
 title: "Manage Microsoft feedback for your organization"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekuako
-manager: scotv
-ms.date: 11/19/2024
+ms.author: danbrown
+author: DHB-MSFT
+manager: dansimp
+ms.date: 10/02/2025
 audience: Admin
-ms.topic: article
+ms.topic: concept-article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
-- Tier2
-- scotvorg
-- M365-subscription-management 
+ms.collection:
+- M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: 
-- AdminSurgePortfolio
-- admindeeplinkMAC
+- trust-pod
+- feedback-content
+ms.custom: admindeeplinkMAC
+hideEdit: true
 description: "Manage feedback your users can send to Microsoft about Microsoft products."
 ---
 
@@ -26,7 +25,7 @@ description: "Manage feedback your users can send to Microsoft about Microsoft p
 
 As the admin of a Microsoft 365 organization, there are several policies to help you manage the feedback collection and the customer engagement experience of your users when using Microsoft 365 applications. You can create and use existing Microsoft Entra groups in your organization for each of these policies. With these policies, you can control how different departments in your organization can send feedback to Microsoft.
 
-Microsoft reviews all feedback submitted by customers and uses this feedback to improve the product experiences for users, including by improving the quality of AI-generated responses and troubleshooting product issues. Keeping the feedback experiences enabled allows you to see what your users are saying about the Microsoft products they're using. The feedback we collect from your users is available in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339).
+Microsoft reviews all feedback submitted by customers. Microsoft uses this feedback to improve the product experiences for users, including by improving the quality of AI-generated responses and troubleshooting product issues. Keeping the feedback experiences enabled allows you to see what your users are saying about the Microsoft products they're using. The feedback we collect from your users is available in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339).
 
 > [!NOTE]
 > Microsoft acts as a data processor for your tenant's feedback. As the tenant administrator, you can manage your tenant's feedback in the Microsoft 365 admin center. For more information, see [How can I see my user's feedback?](../misc/feedback-user-control.md#how-can-i-see-my-users-feedback)
@@ -46,7 +45,7 @@ The following table represents which apps and services are currently connected t
 |**Microsoft Whiteboard**|Yes|Yes|Yes|Yes|
 |**Microsoft365.com**|Yes|Yes|Yes|Yes|
 |**OneNote**|Yes|Yes|Yes|Yes|
-|**OneDrive**|Some settings are managed by other controls. For more information, see [Prevent users from contacting Microsoft directly](/onedrive/disable-contact-support-send-feedback).||||
+|**OneDrive**|Some settings are managed by other controls. For more information, see [Prevent users from contacting Microsoft directly](/sharepoint/disable-contact-support-send-feedback).||||
 |**Outlook**|Yes|Yes|Yes|Yes|
 |**PowerPoint**|Yes|Yes|Yes|Yes|
 |**Project**|Yes|Yes|Yes|Yes|
@@ -74,7 +73,7 @@ When the following policies are set to **Not Configured**, it has the same effec
 |:-----|:-----|:-----|
 |Allow users to access feedback portal|Manage user access to the feedback portal where users can follow up on their feedback and participate in community feedback.|
 |Allow users to submit feedback to Microsoft|Controls feedback entry points across applications.|
-|Allow users to receive and respond to in-product surveys from Microsoft|Controls survey prompts within product.|
+|Allow users to receive and respond to in-product surveys from Microsoft|Controls whether surveys appear within product.|
 |Allow users to include screenshots and attachments when they submit feedback to Microsoft|Allows users to choose relevant files, screen recordings, and screenshots to help Microsoft better understand and troubleshoot their feedback.|
 |Allow Microsoft to follow up on feedback submitted by users|Determines if user can share contact info with feedback/survey for follow-up by Microsoft. Also allows users to get notified of feedback status changes. Users can manage communications settings in the feedback portal.|
 |Allow users to include log files and content samples when feedback is submitted to Microsoft|Allows users to include Microsoft generated files such as additional log files and content samples when relevant to feedback they're submitting. Examples may include Microsoft 365 Copilot prompt and response interactions.|
@@ -97,10 +96,9 @@ The following information only applies to United States government customers usi
 
 ### GCC environment
 
-- Cloud Policy service for Microsoft 365 is available in this environment as of September 24, 2024.
-- Not all products currently support feedback collection in this environment, but we're working to implement that support. To prepare for feedback collection, we recommend you review and configure the policy settings in the way that is appropriate for your organization.
+- Not all products currently support feedback collection in this environment, but we're working to implement that support. To prepare for feedback collection, we recommend you review and configure the policy settings in the way that's appropriate for your organization.
 - When the **Allow users to submit feedback to Microsoft** policy is set to **Not Configured** in this environment, it has the same effect as if you set the policy to **Disabled**.
-- The Feedback portal and in-product surveys aren’t available in this environment, so setting these policies won’t have any effect at this time.
+- The Feedback portal and in-product surveys aren’t available in this environment, so setting these policies don’t have any effect at this time.
 - The following policies are always treated as **Disabled** in this environment regardless of how you set the policies:
   - Allow users to include screenshots and attachments when they submit feedback to Microsoft
   - Allow Microsoft to follow up on feedback submitted by users
@@ -108,5 +106,4 @@ The following information only applies to United States government customers usi
 
 ### GCC High or DoD environment
 
-- Feedback collection isn’t enabled in these environments, so setting these feedback policies with Group Policy has no effect.
-- Cloud Policy service for Microsoft 365 isn’t available in these environments.
+Feedback collection isn’t enabled in these environments, so setting these feedback policies with Group Policy or Cloud Policy has no effect.

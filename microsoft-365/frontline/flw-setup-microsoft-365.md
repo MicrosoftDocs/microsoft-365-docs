@@ -130,12 +130,12 @@ Managing the devices that frontline workers use is a key fundamental. It's impor
 
 ## Step 5: Deploy your frontline teams
 
-Frontline teams are a collection of people, content, and tools within an organization for different frontline worker locations. When deploying Teams to your frontline workforce, you have different options for how you can manage team membership. You can choose between dynamic team membership, static team membership, or a combination of both.
+Frontline teams are a collection of people, content, and tools within an organization for different frontline worker locations. When deploying Teams to your frontline workforce, you have different options for how you can manage team membership. You can choose between flexible team membership, static team membership, or a combination of both.
 
 To learn more, see the following guidance:
 
-- [Learn where to start with a frontline deployment](flw-deploy-overview.md)
-- [Deploy frontline dynamic teams at scale](deploy-dynamic-teams-at-scale.md)
+- [Deploy frontline pilot](/microsoft-365/frontline/startafrontlinepilot)
+- [Deploy frontline flexible teams at scale](/microsoft-365/frontline/deploy-flexible-membership-teams-at-scale)
 - [Deploy frontline static teams at scale with PowerShell for frontline workers](deploy-teams-at-scale.md)
 
 ## Step 6: Set up other services
@@ -188,8 +188,9 @@ Follow the guidance for your [scenarios](#step-1-identify-your-scenarios) to fur
 
 Users with an F license get the [tailored frontline app experience](pin-teams-apps-based-on-license.md), which pins the following apps to Teams out of the box.
 
-- Teams mobile: Viva Connections, Planner, Walkie Talkie, Shifts, Approvals
-- Teams desktop: Viva Connections, Planner, Shifts, Approvals
+- Teams mobile: Connections, Chat, Engage, Walkie Talkie, Planner, Shifts, Approvals
+
+- Teams desktop: Connections, Chat, Engage, Planner, Shifts, Approvals
 
 ## Related articles
 

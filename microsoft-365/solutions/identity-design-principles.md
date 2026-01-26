@@ -1,20 +1,22 @@
 ---
 title: To identity and beyond—One architect's viewpoint
 description: Learn about top design strategies for Microsoft Enterprise architecture from Alex Shteynberg, Technical Principal Architect at Microsoft.
-ms.author: bcarter
-author: brendacarter
-manager: bcarter
+author: dansimp
+ms.author: dansimp
+manager: dansimp
 ms.date: 1/24/2024
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: m365-planning
 ms.localizationpriority: medium
 ms.collection:
 - highpri
 - M365-identity-device-management
 - M365-security-compliance
 - M365solutions
-ms.custom: seo-marvel-jun2020
+ms.custom:
+- seo-marvel-jun2020
+- m365-solutions-doc-set
 f1.keywords: NOCSH
 ---
 
@@ -278,7 +280,7 @@ Microsoft 365 has a [unified audit log](../compliance/search-the-audit-log-in-se
 Examples of Microsoft 365 logs that are accessed through other APIs include the following features:
 
 - [Microsoft Entra ID](/azure/azure-monitor/platform/diagnostic-settings) (activities not related to Microsoft 365)
-- [Exchange Message Tracking](/powershell/module/exchange/get-messagetrace)
+- [Exchange Message Tracking](/powershell/module/exchangepowershell/get-messagetracev2)
 - Threat/UEBA Systems discussed previously (for example, Microsoft Entra ID Protection, Microsoft Defender for Cloud Apps, Microsoft Defender for Endpoint, and so on)
 - [Microsoft Purview Information Protection](../compliance/data-classification-activity-explorer.md)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/api-power-bi)

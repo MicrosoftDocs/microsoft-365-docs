@@ -2,7 +2,7 @@
 title: Tenant roadmap for Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 12/09/2024

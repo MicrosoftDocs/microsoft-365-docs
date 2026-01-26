@@ -1,19 +1,20 @@
 ---
 title: Manage Microsoft LMS Gateway for any LMS
-author: DaniEASmith
-ms.author: danismith
-manager: jacktremper
+author: jennplatt
+ms.author: avering
+manager: michal.gideoni
 ms.reviewer: amitman 
-ms.date: 04/04/2022
+ms.date: 09/15/2025
 audience: admin
 ms.topic: how-to
-ms.service: msteams
-ms.subservice: teams-education
+ms.service: microsoft-365-education
 f1.keywords:
 - CSH
 ms.collection: 
 - M365-modern-desktop
 - tier2
+- m365-education
+- all-education
 ms.localizationpriority: medium
 description: Learn how to conduct key Microsoft LMS Gateway management tasks including viewing, deleting, editing, and troubleshooting.
 ---

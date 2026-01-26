@@ -1,6 +1,6 @@
 ---
 title: "Disable access to Microsoft 365 services with PowerShell"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 12/09/2024

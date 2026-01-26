@@ -5,25 +5,26 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: shegu, nicholak
+ms.reviewer: rabhange
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
+- operations-pod
 ms.custom:
 - commerce_subscriptions
 - AdminSurgePortfolio
 - manage_licenses
 - admindeeplinkMAC
-search.appverid: MET150 
+search.appverid: MET150
 description: "Learn how to move users between subscriptions."
-ms.date: 07/10/2024
+ms.date: 05/02/2025
 ---
 
 # Move users to a different subscription

@@ -2,9 +2,9 @@
 title: "Create, edit, or delete a security group in the Microsoft 365 admin center"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekuako
-manager: scotv
+ms.author: dansimp
+author: dansimp
+manager: dansimp
 ms.date: 10/02/2024
 audience: Admin
 ms.topic: article
@@ -12,11 +12,12 @@ ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
 - Tier3
-- scotvorg 
-- M365-subscription-management 
+- scotvorg
+- M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: 
+- operations-pod
+ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
@@ -33,10 +34,7 @@ On the Microsoft 365 **Active teams and groups** page, you can create groups of 
 User management administrators have permissions to create, edit, or delete security groups; for more information about administrator roles, see [Assigning admin roles](../add-users/assign-admin-roles.md).
   
 There are also [Groups in Exchange Online and SharePoint Online](#groups-in-exchange-online-and-sharepoint-online) that you can use to send email or assign permissions to a group of users, and [Groups in Exchange Online and SharePoint Online](#groups-in-exchange-online-and-sharepoint-online) that grant users rights and access to sites and site collections.
-  
-> [!IMPORTANT]
-> Planning on using site mailboxes? All the users that are added to a SharePoint site via a security group rather than being added individually can use only the site mailbox from SharePoint. These users won't be able to access the site mailbox from Outlook. For more information, see [Use Microsoft 365 Groups instead of Site Mailboxes](https://support.microsoft.com/office/737d6b1f-67cc-41fe-8db8-f2d09dd1673b).
-  
+
 ## Manage security groups in the admin center
 
 ### Add a security group
@@ -83,7 +81,7 @@ If you want to create groups of users so you can send email to them all at the s
   
 - **Distribution group**: Used to distribute messages to a group of users. It's also called a  *mail-enabled distribution group*, or, a  *distribution list*. For more information, see [Manage distribution groups](/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups).
 
-- **Security group**: Can be used to distribute messages to a group of users, or to grant access permissions to resources. This group is also called a *mail-enabled security group*. For more information, see [Manage mail-enabled security groups](/Exchange/recipients/mail-enabled-security-groups).
+- **Security group**: Can be used to distribute messages to a group of users, or to grant access permissions to resources. This group is also called a *mail-enabled security group*. For more information, see [Manage mail-enabled security groups](/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups).
 
 - **Dynamic distribution group**: A type of distribution group whose list of recipients is recalculated every time you send a message based on filters and conditions that you define. For more information, see [Manage dynamic distribution groups](/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups).
 

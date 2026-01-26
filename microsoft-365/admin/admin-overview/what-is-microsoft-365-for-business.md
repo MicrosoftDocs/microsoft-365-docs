@@ -2,8 +2,8 @@
 title: "What is Microsoft 365 for business"
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: overview
@@ -15,6 +15,7 @@ ms.collection:
 - highpri
 - M365-subscription-management
 - Adm_O365
+- operations-pod
 ms.custom:
 - VSBFY23
 - AdminSurgePortfolio

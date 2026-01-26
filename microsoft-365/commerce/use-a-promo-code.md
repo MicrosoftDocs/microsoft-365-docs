@@ -5,24 +5,25 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: drjones, jobailey
+ms.reviewer: padeshmukh
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-marketplace
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
-ms.custom: 
+- operations-pod
+ms.custom:
 - commerce_purchase
 - AdminSurgePortfolio
 - okr_SMB
 search.appverid: MET150
 description: "Learn how to apply a promotional code to a new Microsoft 365 for business subscription to reduce the price, and how to troubleshoot promo code errors."
-ms.date: 03/26/2025
+ms.date: 08/04/2025
 ---
 
 # Use a promo code to reduce the price of a new Microsoft 365 for business subscription
@@ -41,8 +42,8 @@ You must be at least a Billing Administrator to do the task described in this ar
 
 1. Log into the [Microsoft 365 Admin Center](https://go.microsoft.com/fwlink/p/?linkid=2024339).
    - If you're using the **Simplified view**, select **Billing**, then select **Add more products**. 
-   - If you're using the **Dashboard view**, go to the **Billing** > [Purchase services](https://go.microsoft.com/fwlink/p/?linkid=868433) page.
-2. On the **Purchase services** page, find the plan that you want to Buy, and select **Details**.
+   - If you're using the **Dashboard view**, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Marketplace</a> page.
+2. Find the plan that you want to buy, and select **Details**.
 3. On the next page, enter the number of licenses that you want to buy and select **Buy now**.
 4. When you check out, scroll to the bottom and select **Have a promo or discount code?**, then enter your promo code in the box.
 5. Select **Apply promo code**. You should see a confirmation that the promo code was successfully applied. If you see a different message, see [Troubleshooting promo codes](#troubleshooting-promo-codes).
@@ -52,7 +53,7 @@ At any time after you complete your purchase, the discount created by your promo
 
 **If you have an MCA billing account type:**
 
-Promo codes are not supported on MCA billing accounts.  Promotional discounts are published directly inside of the product catalog to customers.
+Promo codes are not supported on Modern Customer Agreement (MCA) billing accounts.  Promotional discounts are published directly inside of the product catalog to customers.
 
 ## Promo code terms
 

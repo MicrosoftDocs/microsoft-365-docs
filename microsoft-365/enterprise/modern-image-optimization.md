@@ -1,6 +1,6 @@
 ---
 title: "Optimize images in SharePoint in Microsoft 365 modern site pages"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 05/17/2024

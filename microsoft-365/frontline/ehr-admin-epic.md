@@ -27,7 +27,7 @@ appliesto:
   - Microsoft 365 for frontline workers
 ms.reviewer: beolson 
 description: Learn how to integrate the Teams EHR connector to enable healthcare providers in your organization to conduct virtual appointments with patients or other providers in Teams directly from the Epic EHR system. 
-ms.date: 06/26/2024
+ms.date: 10/24/2025
 ---
 
 # Virtual Appointments with Teams - Integration into Epic EHR
@@ -59,15 +59,17 @@ Review the following information to get an understanding of the overall integrat
 | &nbsp; |Request app access|App enablement|Connector configuration|Epic configuration|Testing|
 |--------|---------|---------|---------|---------|---------|
 | **Duration** | Approximately 7 business days| Approximately 7 business days | Approximately 7 business days | Approximately 7 business days | &nbsp; |
-| **Action**| You [request access to the Teams app](#request-access-to-the-teams-app).  | We create a public and private key certificate and upload them to Epic. | You complete configuration steps in the EHR connector configuration portal.  | You work with your Epic technical specialist to configure FDI records in Epic.| You complete testing in your test environment. |
+| **Action**| You [request access to the Teams application](#request-access-to-the-teams-app).  | We create a public and private key certificate and upload them to Epic. | You complete configuration steps in the EHR connector configuration portal.  | You work with your Epic technical specialist to configure FDI records in Epic.| You complete testing in your test environment. |
 | **Outcome**| We authorize your organization for testing. | Epic syncs the public key certificate. | You receive FDI records for Epic configuration. | Configuration completed. Ready to test. | Full validation of flows and decision to move to production. |
 
 ### Request access to the Teams app
 
-You'll need to request access to the Teams app.
+You'll need to request access to the Teams application.
 
-1. Request to download the Teams app in the [Epic Connection Hub](https://appmarket.epic.com/). Doing this triggers a request from Epic to the Microsoft EHR connector team.
-1. After you make your request, send an email to [TeamsForHealthcare@service.microsoft.com](mailto:teamsforhealthcare@service.microsoft.com) with your organization name, tenant ID, and the email address of your Epic technical contact.
+1. Request to download the Teams application in the [Epic Connection Hub](https://appmarket.epic.com/). Doing this triggers a request from Epic to the Microsoft EHR connector team.
+1. Sign in to [EHR connector portal](https://ehrconnector.teams.microsoft.com/) and add your FHIR URL.
+
+1. After you make your request and added FHIR URL, send an email to [TeamsForHealthcare@service.microsoft.com](mailto:teamsforhealthcare@service.microsoft.com) with your organization name, tenant ID, and the email address of your Epic technical contact.
 1. The Microsoft EHR connector team will respond to your email with confirmation of enablement.
 
 ### Review the Epic-Microsoft Teams Telehealth Integration guide
@@ -92,6 +94,9 @@ The integration steps are performed by the following people in your organization
 - **Epic customer analyst**: A person in your organization who has login credentials to Epic. They approve the configuration settings entered by the admin and provide the configuration records to Epic.
 
 The Microsoft 365 admin and Epic customer analyst can be the same person.
+
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role. To learn more, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
 
 ## Set up the Teams EHR connector
 
@@ -230,7 +235,7 @@ Healthcare providers from your organization can join appointments using Teams fr
 
 Key features of the provider experience:
 
-- Providers can join appointments using supported browsers or the Teams app.
+- Providers can join appointments using supported browsers or the Teams application.
 
 - Providers must do a one-time sign-in with their Microsoft 365 account when joining an appointment for the first time.
 
@@ -249,7 +254,7 @@ The connector supports patients joining appointments through a link in the SMS t
 
 Key features of the patient experience:
 
-- Patients can join appointments from [modern web browsers on desktop and mobile without having to install the Teams app](browser-join.md).
+- Patients can join appointments from [modern web browsers on desktop and mobile without having to install the Teams application](browser-join.md).
 - Patients can test their device hardware and connection before joining an appointment.
 
     :::image type="content" source="media/ehr-admin-epic-device-test.png" alt-text="Images of a mobile device, showing device test capabilities." lightbox="media/ehr-admin-epic-device-test.png":::

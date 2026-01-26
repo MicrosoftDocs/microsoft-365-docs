@@ -1,6 +1,6 @@
 ---
 title: "Microsoft 365 service health status"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 06/28/2024

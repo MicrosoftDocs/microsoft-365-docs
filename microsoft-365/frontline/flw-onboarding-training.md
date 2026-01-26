@@ -10,19 +10,19 @@ f1.keywords:
 - NOCSH
 ms.service: microsoft-365-frontline
 ms.collection: 
-  - M365-collaboration
-  - m365-frontline
-  - highpri
-  - m365solution-frontline
-  - m365solution-scenario
+- M365-collaboration
+- m365-frontline
+- highpri
+- m365solution-frontline
+- m365solution-scenario
 ms.localizationpriority: high
 search.appverid: MET150
 searchScope:
-  - Microsoft Teams
+- Microsoft Teams
 appliesto: 
-  - Microsoft Teams
-  - Microsoft 365 for frontline workers
-ms.date: 01/25/2024
+- Microsoft Teams
+- Microsoft 365 for frontline workers
+ms.date: 08/14/2025
 ---
 
 # Provide initial and ongoing training to help onboard your frontline workers

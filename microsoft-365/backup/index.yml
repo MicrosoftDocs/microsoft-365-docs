@@ -12,7 +12,7 @@ metadata:
   ms.custom: intro-hub-or-landing
   author: chuckedmonson #Required; your GitHub user alias, with correct capitalization.
   ms.author: chucked #Required; microsoft alias of author; optional team alias.
-  ms.date: 04/08/2025 #Required; mm/dd/yyyy format
+  ms.date: 06/16/2025 #Required; mm/dd/yyyy format
   ms.localizationpriority: medium
   titleSuffix: Microsoft 365 Backup
 
@@ -30,6 +30,10 @@ landingContent:
             url: backup-overview.md
           - text: FAQs
             url: backup-faq.md
+      - linkListType: whats-new
+        links:
+          - text: Video library
+            url: backup-video-library.md
 
 # Card 2
   - title: Get started
@@ -76,6 +80,6 @@ landingContent:
             url: /sharepoint/advanced-management
           - text: SharePoint Embedded
             url: /sharepoint/dev/embedded/overview
-          - text: Microsoft Syntex
-            url: /microsoft-365/syntex/
+          - text: Document processing for Microsoft 365
+            url: /microsoft-365/documentprocessing/
 

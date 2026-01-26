@@ -1,0 +1,95 @@
+### YamlMime:FAQ
+metadata:
+  title: Microsoft 365 Copilot Business FAQ
+  description: Find answers to questions related to Microsoft 365 Copilot Business.
+  author: cmcatee-MSFT
+  ms.author: cmcatee
+  manager: scotv
+  ms.service: microsoft-365-copilot
+  ms.topic: faq
+  ms.date: 12/01/2025
+
+title: Microsoft 365 Copilot Business FAQ
+summary: |
+  Microsoft 365 Copilot Business is an add-on that makes AI-powered productivity more accessible to small and medium-sized (SMB) businesses. By offering a more cost-effective entry point to our premium AI experience, this add-on helps SMBs overcome price barriers and confidently begin their AI journey while staying competitive in the market.
+
+sections:
+- name: General
+  questions:
+  - question: |
+     How does Microsoft define a small and medium-sized business customer?
+    answer: |
+     In the context of Copilot Business, SMB customers are defined as organizations with 300 or fewer users who hold a license for a Microsoft 365 Business Basic, Business Standard, or Business Premium plan.
+  - question: |
+     What are the product differences between Copilot Business and Microsoft 365 Copilot?
+    answer: |
+     The Copilot Business add-on delivers the same capabilities as the Microsoft 365 Copilot offering. Copilot Business is an affordable, competitively priced product for customers who have a Microsoft 365 for business plan. [Learn more about Microsoft 365 for business product plans and pricing](https://www.microsoft.com/microsoft-365/business/microsoft-365-plans-and-pricing?rtc=1).
+  - question: |
+      What data and compliance standards does Copilot Business meet?
+    answer: |
+      Copilot Business follows the same data policies that your organization sets for your Microsoft 365 for business tenants.
+- name: Licensing and eligibility
+  questions:
+  - question: |
+      Who is eligible to buy Copilot Business? 
+    answer: |
+      If you have a Microsoft 365 Business Basic, Business Standard, or Business Premium plan, you can buy Microsoft 365 Copilot Business as an add-on.
+  - question: |
+      What is the seat limit for Copilot Business?
+    answer: |
+      Copilot Business supports up to 300 seats per tenant. 
+  - question: |
+      What if my organization has more than 300 users? 
+    answer: |
+      Organizations with more than 300 users should consider moving to Microsoft 365 Copilot. Find out more about [Microsoft 365 Copilot Plans and Pricing—AI for Business | Microsoft 365](https://www.microsoft.com/microsoft-365-copilot/pricing).
+  - question: |
+      Who should consider adopting Copilot Business?
+    answer: |
+      Small business customers who have a Microsoft 365 for business plan and who want premium Copilot features to effectively run their business should consider buying Copilot Business.
+  - question: |
+      Can I mix Copilot Business add-on licenses with other Microsoft 365 for business add-on licenses?
+    answer: |
+      Yes. Copilot Business is another optional add-on that you can buy alongside your Microsoft 365 for business plan licenses.
+  - question: |
+      How can I buy Copilot Business?
+    answer: |
+      You can buy Copilot Business via the <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Microsoft 365 admin center</a>, through an authorized <a href="https://partner.microsoft.com/partnership/find-a-partner" target="_blank">Customer Solution Partner (CSP)</a>, or <a href="https://www.microsoft.com/microsoft-365/business/with-copilot-plans-and-pricing#copilot" target="_blank">directly from Microsoft</a>.
+  - question: |
+      If I already bought the Microsoft 365 Copilot add-on, can I switch those licenses to Copilot Business?
+    answer: |
+      If you're an existing customer, you must wait until your annual purchase commitment ends to change plans. However, you can buy more Copilot Business licenses at any time.
+  - question: |
+      If I qualify for Copilot Business, will my existing Microsoft 365 Copilot licenses automatically convert to Copilot Business licenses at renewal? 
+    answer: |
+      No. If you're an existing customer, you won't be automatically switched over and you must fulfill your current Microsoft 365 Copilot commitment.  
+  - question: |
+      What commitment terms and billing options are available for Copilot Business?
+    answer: |
+      Copilot Business plans are available as an annual commitment with either monthly or annual billing; there's no month-to-month purchasing agreement for the Copilot Business plans.
+  - question: |
+      If I have a Microsoft 365 for business plan without Teams, can I buy the new Copilot Business add-on? 
+    answer: |
+      Yes. Copilot Business can be added to any Microsoft 365 for business plan, including those plans without Teams. 
+  - question: |
+      If I have a Microsoft 365 Business Standard or Business Premium plan and the Copilot Business add-on, can I upgrade to an Enterprise plan? 
+    answer: |
+      No. You can't upgrade to an Enterprise plan from a Microsoft 365 Business Standard or Business Premium plan with Copilot Business. You must wait until your commitment end date to move to an Enterprise plan.
+- name: Support and resources
+  questions:
+  - question: |
+      How can I connect with a partner?
+    answer: |
+      Small businesses looking to connect with a partner to acquire new Microsoft 365 for business licenses or change from Business Basic or Business Standard to Business Premium can find a partner on the <a href="https://partner.microsoft.com/partnership/find-a-partner" target="_blank">Partner web site</a>.
+  - question: |
+      What resources are available for SMB customers?
+    answer: |
+      You can use the following resources to help equip you on your Copilot journey. 
+
+      - [Microsoft 365 Copilot Business Announcement](https://aka.ms/CopilotBusinessBlog)
+      - [Introducing Microsoft 365 Copilot Business: Empowering Small and Medium Businesses with AI | Microsoft Community Hub](https://techcommunity.microsoft.com/blog/microsoft365copilotblog/introducing-microsoft-365-copilot-business-empowering-small-and-medium-businesse/4469700)
+      - [Microsoft 365 Business Products | Microsoft 365](https://www.microsoft.com/microsoft-365/microsoft-365-business)
+      - [Microsoft 365 Copilot help and learning](https://support.microsoft.com/microsoft-365-copilot)
+      - [Microsoft 365 for Business plans and pricing](https://www.microsoft.com/microsoft-365/business/microsoft-365-plans-and-pricing?rtc=1)
+      - [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap)
+      - [Microsoft Partner Center](https://partner.microsoft.com/)
+      - [Microsoft 365 Copilot - Microsoft Adoption](https://adoption.microsoft.com/copilot/)

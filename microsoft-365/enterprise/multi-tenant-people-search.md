@@ -1,9 +1,9 @@
 ---
 title: "Microsoft 365 multitenant Organization People Search"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
-ms.date: 04/09/2024
+ms.date: 09/30/2025
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise

@@ -5,16 +5,16 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: mijeffer, nicholak
+ms.reviewer: mijeffer, jobailey
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
 ms.custom:
 - commerce_subscriptions
@@ -23,10 +23,12 @@ ms.custom:
 - has-azure-ad-ps-ref
 - azure-ad-ref-level-one-done
 - GAUpdates
+service.tree.id: 84a24b9c-ce0c-4b4b-b837-45bc5ee4bef0
 search.appverid: MET150
 description: "Learn how to manage free self-service sign-up subscriptions for your organization in the Microsoft 365 admin center."
-ms.date: 01/06/2025
+ms.date: 08/26/2025
 ---
+
 # Manage self-service sign-up subscriptions in the Microsoft 365 admin center
 
 ## What are self-service sign-up subscriptions?

@@ -1,6 +1,6 @@
 ---
 title: "Network provider details and connectivity attribution in the Microsoft 365 Admin Center"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.reviewer: pandrew

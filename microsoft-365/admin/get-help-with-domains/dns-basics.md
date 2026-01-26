@@ -2,22 +2,23 @@
 title: "DNS basics"
 f1.keywords:
 - NOCSH
-ms.author: kvice
-author: kelleyvice-msft
-manager: scotv
+ms.author: dansimp
+author: dansimp
+manager: dansimp
 ms.date: 03/18/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.subservice: m365-domains
 ms.localizationpriority: high
-ms.collection: 
+ms.collection:
 - Tier2
 - scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
-ms.custom: 
+- operations-pod
+ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 - okr_smb
@@ -67,7 +68,7 @@ Domain names are used in URLs and email addresses, and they have different level
     
 Why use a third-level domain? You might want to have different domain names for marketing or a blog. For example, blog.contoso.com. You typically add a second-level domain, like contoso.com, to use with Microsoft but you can also use third-level domains if you like.
   
-Learn more about what you can do with domains for each type of offering in the [Microsoft 365 feature descriptions](/microsoft-365/admin/m365-feature-descriptions?tabs=Domains).
+Learn more about what you can do with domains for each type of offering in the [Microsoft 365 and Office 365 platform service description](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description#features-available-across-all-plans).
   
 ## Understand DNS record types
 

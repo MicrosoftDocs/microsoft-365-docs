@@ -19,6 +19,7 @@ ms.custom:
 ms.collection: 
 - Tier1
 - scotvorg
+- operations-pod
 search.appverid:
 - MET150
 - MOP150

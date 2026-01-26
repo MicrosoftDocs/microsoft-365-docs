@@ -2,7 +2,7 @@
 title: "Reviewing network connection failures for your tenant users when they connect to Microsoft 365 services"  
 description: Understanding Connection Error Rate and WSS Error Rate in Microsoft 365 Network Connectivity
 author: kelleyvice-msft
-ms.author: kvice  
+ms.author: scotv 
 manager: scotv
 ms.date: 12/04/2024  
 ms.topic: article

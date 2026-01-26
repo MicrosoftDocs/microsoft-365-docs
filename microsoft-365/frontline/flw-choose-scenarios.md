@@ -17,7 +17,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 03/06/2024
+ms.date: 10/06/2025
 ---
 
 # Choose your scenarios for Microsoft 365 for frontline workers
@@ -96,21 +96,17 @@ Drive operational efficiency by digitizing paper-based processes and automating 
 | --- | --- | --- | --- |
 | [Simplify business processes](simplify-business-processes.md) | Use [task publishing](/microsoftteams/manage-planner-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json#task-publishing) to create standard processes across sites, Lists to manage information and track ongoing processes, and streamline requests with Approvals. Automated workflows can speed up and automate actions, like collecting data or routing notifications. | Teams<br>Power Platform | Planner, Lists, Approvals |
 
-## Virtual Appointments
+## Appointments
 
 :::image type="icon" source="media/virtual-appointment-teams.png":::
 
-Use the Virtual Appointments app and Microsoft Teams to schedule, manage, and host virtual appointments with clients and customers. You can integrate Forms with your virtual appointments to get the right information about your customers, or as part of your customer support experience to learn what your customers need.
+Use Microsoft Bookings to schedule, manage, and host appointments with clients and customers. You can integrate Forms with your appointments to get the right information about your customers, or as part of your customer support experience to learn what your customers need.
 
-Watch the following video for an overview of the virtual appointments experience in Teams:
-
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=fde6e589-e329-4737-8c2b-67dfe1315e35]
-
-More information: [Virtual Appointments with Microsoft Teams](virtual-appointments.md)
+More information: [Appointments with Microsoft Teams](virtual-appointments.md)
 
 ## More scenarios and solutions with the digital ecosystem
 
-The scenarios described earlier in this article can be achieved with out-of-the-box capabilities from Microsoft. You can extend even further with third-party apps in [AppSource](https://appsource.microsoft.com) and custom apps that you or our partners build for you with Power Platform, Teams, and Viva extensibility.
+The scenarios described earlier in this article can be achieved with out-of-the-box capabilities from Microsoft. You can extend even further with third-party apps in [Microsoft Marketplace](https://marketplace.microsoft.com) and custom apps that you or our partners build for you with Power Platform, Teams, and Viva extensibility.
 
 Learn more about third-party apps in Teams at [Overview of third-party apps in Microsoft Teams](/microsoftteams/overview-third-party-apps).
 

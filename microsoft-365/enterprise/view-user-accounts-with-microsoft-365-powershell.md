@@ -1,6 +1,6 @@
 ---
 title: "View Microsoft 365 user accounts with PowerShell"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 01/08/2025

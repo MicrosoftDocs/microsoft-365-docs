@@ -13,9 +13,10 @@ ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
-- highpri 
+- highpri
 - Adm_TOC
-ms.custom: 
+- operations-pod
+ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 description: "Accept invite to join a Microsoft 365 for business organization"

@@ -1,6 +1,6 @@
 ---
 title: "Fixing problems with directory synchronization for Microsoft 365"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 07/22/2024

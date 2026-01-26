@@ -1,6 +1,6 @@
 ---
 title: "Address space calculator for Azure gateway subnets"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 06/27/2024

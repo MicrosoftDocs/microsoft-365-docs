@@ -1,6 +1,6 @@
 ---
 title: No billing account found for buying products
-f1.keywords: CSH   
+f1.keywords: CSH
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
@@ -13,22 +13,23 @@ ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
-ms.custom: 
+ms.custom:
 - commerce_billing
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
 - GAUpdates
+service.tree.id: 95459a4b-434c-4f83-879b-aa5f509fc7fa
 search.appverid: MET150
 description: "Learn how to assign yourself or others the billing account roles needed to buy and edit products in the Microsoft 365 admin center."
-ms.date: 10/10/2024
+ms.date: 11/04/2025
 ---
 
 # No billing account found for buying products
 
-If you recently became a Global Administrator for your organization but aren't able to buy or edit anything in the Billing pages of the Microsoft 365 admin center, you might be missing the Billing account owner role needed to do those tasks. For example, if you try to buy a new subscription on the **Purchase services** page (for some customers, the page is named **Marketplace**), you might see a notification that says, "You don't have any billing accounts for buying products." If you're missing the Billing account owner role, you can give yourself the role needed to buy and edit products.
+If you recently became a Global Administrator for your organization but aren't able to buy or edit anything in the Billing pages of the Microsoft 365 admin center, you might be missing the Billing account owner role needed to do those tasks. For example, if you try to buy a new subscription on the **Marketplace** page, you might see a notification that says, "You don't have any billing accounts for buying products." If you're missing the Billing account owner role, you can give yourself the role needed to buy and edit products.
 
 If you're a Billing Administrator and can't buy or edit products, or if you're a Global Reader who can't view the billing account, ask your Global Administrator to assign you the role that you need.
 

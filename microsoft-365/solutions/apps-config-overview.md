@@ -1,18 +1,18 @@
 ---
 title: "Configure apps using Microsoft Intune"
-ms.author: erikre
-author: erikre
-manager: dougeby
+ms.author: nwhite
+author: nicholasswhite
+manager: laurawi
 audience: ITPro
 ms.topic: how-to
 ms.date: 04/21/2025
 description: Configure apps using Microsoft Intune.
-ms.service: o365-solutions
+ms.service: m365-planning
 ms.localizationpriority: high
 ms.collection:
 - highpri
 - m365solution-overview
-ms.custom:
+ms.custom: m365-solutions-doc-set
 keywords:
 ---
 
@@ -138,7 +138,7 @@ To support app configuration for apps deployed through Intune on enrolled device
 | Configuration   scenario | Description |
 |---|---|
 | Only allow organization accounts | Some companies have a requirement to capture all communications information within their corporate  environment, as well as, ensure the devices are only used for corporate   communications. To support these requirements, multiple Microsoft apps for   iOS and Android on enrolled devices can be configured to only allow a single organization account to be provisioned within the app.<p>For more   information, see the following setting:<ul><li>[Android setting](/mem/intune/apps/app-configuration-policies-use-android#allow-only-configured-organization-accounts-in-apps)</li><li>[iOS   setting](/mem/intune/apps/app-configuration-policies-use-ios#allow-only-configured-organization-accounts-in-apps)</li></ul> |
-| Account   setup configuration settings | Used with managed devices   that   have been enrolled in a unified   endpoint management (UEM) solution. Any UEM     provider is supported. For certain M365 apps for iOS/iPadOS and Android,   such Microsoft Outlook,  you have   the  ability to "push"   account configurations to users leveraging hybrid Modern Authentication   users. For more   information on   account setup configuration, see [Account setup with modern authentication in   Exchange     Online](/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/setup-with-modern-authentication#account-setup-configuration-via-enterprise-mobility-management). |
+| Account   setup configuration settings | Used with managed devices   that   have been enrolled in a unified   endpoint management (UEM) solution. Any UEM     provider is supported. For certain Microsoft 365 apps for iOS/iPadOS and Android,   such Microsoft Outlook,  you have   the  ability to "push"   account configurations to users leveraging hybrid Modern Authentication   users. For more   information on   account setup configuration, see [Account setup with modern authentication in   Exchange     Online](/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/setup-with-modern-authentication#account-setup-configuration-via-enterprise-mobility-management). |
 | General   app configuration settings | An app configuration policy   contains a **General configuration settings** section in the **Settings**   pane. In this section you can type the **Name** and **Value** to configure   the setting for the app. The **Name** is also known as the **Key**. |
 | App   specific configuration settings | Several apps also contain a   unique app configuration section in the **Settings** pane of an app   configuration policy. To learn which apps support configuration, see the   [Microsoft and third-party apps   list](/mem/intune/apps/apps-supported-intune-apps). For third-party apps, you   may need to see the app developer's documentation or contact them directly to   learn about their app's configuration keys and values.  |
 
@@ -233,7 +233,7 @@ For recommended app configuration steps, see [Configure Microsoft Outlook](apps-
 
 ### Configure Microsoft 365 Apps
 
-Microsoft 365 (M365), formerly known as Microsoft Office, is a suite of productivity apps that include Microsoft Word, Excel, PowerPoint, Teams, and more. Microsoft Intune is the recommended way to install M365 Apps to the devices and users at your organization.
+Microsoft 365, formerly known as Microsoft Office, is a suite of productivity apps that include Microsoft Word, Excel, PowerPoint, Teams, and more. Microsoft Intune is the recommended way to install Microsoft 365 Apps to the devices and users at your organization.
 
 Windows, iOS, and Android delivers several key benefits including:
 

@@ -24,7 +24,7 @@ searchScope:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 02/29/2024
+ms.date: 10/06/2025
 ---
 
 # Get started with Microsoft 365 for Manufacturing

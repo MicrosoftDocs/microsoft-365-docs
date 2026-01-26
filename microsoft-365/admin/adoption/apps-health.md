@@ -2,22 +2,25 @@
 title: "Microsoft Adoption Score - Microsoft 365 apps health"
 f1.keywords:
 - NOCSH
-ms.author: camillepack
-author: camillepack
+author: efrene
+ms.author: efrene
 manager: scotv
-ms.date: 08/10/2020
+ms.date: 01/23/2026
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier2
 - scotvorg
-- Microsoft 365-subscription-management 
+- Microsoft 365-subscription-management
 - Adm_O365
 - Adm_TOC
+- Microsoft
+- 365-subscription-management
+- operations-pod
 ms.custom: AdminSurgePortfolio
-monikerRange: 'o365-worldwide'
+monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
@@ -26,7 +29,7 @@ description: "Details of the Microsoft 365 Apps health - technology experiences 
 
 # Microsoft 365 Apps health – technology experiences
 
-Adoption Score provides insights into your organization's digital transformation journey through its use of Microsoft 365 and the technology experiences that support it. Your organization's score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar to yours. The apps health category is part of the measurements that falls under technology experiences. To learn more, check out the [Adoption Score overview](adoption-score.md) and read [Microsoft's Privacy Statement](https://privacy.microsoft.com/privacystatement).
+Adoption Score provides insights into your organization's digital transformation journey through its use of Microsoft 365 and the technology experiences that support it. Your organization's score reflects technology experience measurements and can be compared to benchmarks from organizations similar to yours. The apps health category is part of the measurements that falls under technology experiences. To learn more, check out the [Adoption Score overview](adoption-score.md) and read [Microsoft's Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
 ## Why your organization's Microsoft 365 productivity apps health score matters
 

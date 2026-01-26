@@ -1,6 +1,6 @@
 ---
 title: "Use PowerShell to migrate email to Microsoft 365"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 07/29/2024

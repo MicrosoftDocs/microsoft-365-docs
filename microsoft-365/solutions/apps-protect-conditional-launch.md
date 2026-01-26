@@ -1,17 +1,17 @@
 ---
 title: "Understand app protection conditional launch using Microsoft Intune"
-ms.author: erikre
-author: erikre
-manager: dougeby
+ms.author: nwhite
+author: nicholasswhite
+manager: laurawi
 audience: ITPro
 ms.topic: concept-article
 ms.date: 04/21/2025
 description: Understand app protection conditional launch using Microsoft Intune.
-ms.service: o365-solutions
+ms.service: m365-planning
 ms.localizationpriority: high
 ms.collection:
 - highpri
-ms.custom:
+ms.custom: m365-solutions-doc-set
 keywords:
 ---
 
@@ -30,7 +30,7 @@ iOS/iPadOS app conditional settings allow the similar settings configuration as 
 | App   condition setting | iOS/iPadOS | Android |
 |:---:|:---:|:---:|
 | Max PIN attempts | ✔ | ✔ |
-| Office grace period | ✔ | ✔ |
+| Offline grace period | ✔ | ✔ |
 | Min app version | ✔ | ✔ |
 | Max SDK version | ✔ | ✖ |
 | Disabled account | ✔ | ✔ |

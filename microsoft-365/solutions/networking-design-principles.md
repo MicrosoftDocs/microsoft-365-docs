@@ -1,19 +1,20 @@
 ---
 title: Networking up (to the cloud)—One architect's viewpoint
 description: Learn how to optimize your network for cloud connectivity by avoiding the most common pitfalls.
-ms.author: bcarter
-author: brendacarter
-manager: bcarter
+author: dansimp
+ms.author: dansimp
+manager: dansimp
 ms.date: 06/03/2020
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: m365-planning
 ms.localizationpriority: medium
 ms.collection:
 - highpri
 - M365-identity-device-management
 - M365-security-compliance
 ms.custom:
+- m365-solutions-doc-set
 f1.keywords: NOCSH
 ---
 

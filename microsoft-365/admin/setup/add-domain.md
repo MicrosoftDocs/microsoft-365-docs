@@ -2,16 +2,16 @@
 title: "Add a domain to Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: kvice
-author: kelleyvice-msft
-manager: scotv
+ms.author: dansimp
+author: dansimp
+manager: dansimp
 ms.date: 08/11/2024
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.subservice: m365-domains
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier2
 - scotvorg
 - highpri
@@ -19,6 +19,7 @@ ms.collection:
 - Adm_O365_Setup
 - Adm_O365
 - Adm_TOC
+- operations-pod
 ms.custom:
 - VSBFY23
 - adminvideo
@@ -50,9 +51,6 @@ Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?l
 ## Before you begin
 
 To add, modify, or remove domains, you **must** be a **Domain Name Administrator** of a [business or enterprise plan](https://products.office.com/business/office). These changes affect the whole tenant; *Customized administrators* or *regular users* can't make these changes.
-
-> [!TIP]
-> If you need help with the steps in this article, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
 ## Watch: Add a domain
 

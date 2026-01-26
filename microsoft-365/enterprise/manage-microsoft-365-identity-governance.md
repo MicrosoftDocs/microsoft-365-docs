@@ -1,6 +1,6 @@
 ---
 title: "Manage Microsoft 365 identity governance"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 07/26/2024

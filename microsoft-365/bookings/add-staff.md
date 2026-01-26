@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 ms.collection:
 - scotvorg
 - essentials-manage
+- operations-pod
 description: "Use this page to create your staff list and to manage staff member details such as name, phone number, and email address."
 ---
 

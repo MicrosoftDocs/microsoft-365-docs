@@ -12,12 +12,12 @@ items:
     items:
     - name: Overview
       href: flw-deploy-overview.md
-    - name: Start with a pilot deployment
-      href: flw-pilot.md
     - name: Set up and manage frontline devices
       items:
       - name: Frontline device management overview
         href: flw-devices.md
+      - name: Set up frontline Teams on personal devices
+        href: flw-setup-frontline-personal-devices.md
       - name: Manage shared devices
         href: flw-shared-devices.md
       - name: Limit access to Teams when workers are off shift
@@ -30,10 +30,16 @@ items:
       items: 
       - name: Set up Microsoft 365 and related services
         href: flw-setup-microsoft-365.md
-      - name: Choosing between dynamic and static frontline teams
+      - name: Set up Frontline Agent
+        href: setupfrontlineagent.md
+      - name: Start a pilot for your frontline workers
+        href: startafrontlinepilot.md
+      - name: Choosing between flexible and static frontline teams
         href: frontline-team-options.md
       - name: Deploy frontline teams with flexible membership
         href: deploy-flexible-membership-teams-at-scale.md
+      - name: Link your existing frontline teams
+        href: link-your-existing-frontline-teams-to-be-managed-with-flexible-membership.md
       - name: Deploy frontline static teams at scale with PowerShell
         href: deploy-teams-at-scale.md
       - name: Frontline usage reporting
@@ -44,8 +50,6 @@ items:
       items: 
       - name: Set up targeted communications
         href: set-up-targeted-communications.md 
-      - name: Deploy Shifts at scale
-        href: deploy-shifts-at-scale.md
     - name: Configure Teams settings for frontline workers
       items: 
       - name: Tailor Teams apps for your frontline workers
@@ -82,8 +86,6 @@ items:
       href: shifts-frontline-manager-worker-roles.md
     - name: Manage Shifts permissions for frontline managers
       href: manage-shifts-permissions-frontline-managers.md
-    - name: Set up open shifts across locations
-      href: set-up-open-shifts-across-locations.md 
     - name: Shifts data FAQ
       href: /microsoftteams/expand-teams-across-your-org/shifts/shifts-data-faq?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
     - name: Workforce management integrations
@@ -124,7 +126,7 @@ items:
     items: 
     - name: Simplify business processes
       href: simplify-business-processes.md
-  - name: Virtual Appointments
+  - name: Appointments
     items: 
     - name: Overview
       href: virtual-appointments.md

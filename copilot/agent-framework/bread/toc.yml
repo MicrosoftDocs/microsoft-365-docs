@@ -1,0 +1,109 @@
+### 
+### STOP! This file is a breadcrumb used for contextual TOCs and should only be modified by members of the m365-team team. 
+### 
+items:
+- name: Microsoft 365
+  tocHref: /microsoft-365/
+  topicHref: /microsoft-365/index
+  items:
+  - name: Microsoft 365 Copilot
+    tocHref: /microsoftteams/
+    topicHref: /copilot/microsoft-365/index
+- name: Microsoft 365
+  tocHref:  /microsoft-365/
+  topicHref: /microsoft-365/index
+  items:
+  - name: Microsoft 365 Copilot
+    tocHref:  /viva/copilot/
+    topicHref: /copilot/microsoft-365/index
+- name: Microsoft 365
+  tocHref:  /microsoft-365/
+  topicHref: /microsoft-365/index
+  items:
+  - name: Microsoft 365 Copilot
+    tocHref:  /security/zero-trust/copilots/
+    topicHref: /copilot/microsoft-365/index
+- name: Microsoft 365
+  tocHref:  /microsoft-365-copilot/
+  topicHref: /microsoft-365/index
+  items:
+  - name: Microsoft 365 Copilot
+    tocHref:  /microsoft-365-copilot/extensibility/
+    topicHref: /copilot/microsoft-365/index
+- name: Microsoft 365
+  tocHref:  /microsoft-365/
+  topicHref: /microsoft-365/index
+  items:
+  - name: Microsoft 365 Copilot
+    tocHref:  /microsoft-365/admin/manage/
+    topicHref: /copilot/microsoft-365/index
+- name: Microsoft 365
+  tocHref:  /microsoft-365/
+  topicHref: /microsoft-365/index
+  items:
+  - name: Microsoft 365 Copilot
+    tocHref:  /microsoft-copilot-studio/
+    topicHref: /copilot/microsoft-365/index
+- name: Microsoft 365
+  tocHref:  /microsoft-365/
+  topicHref: /microsoft-365/index
+  items:
+  - name: Microsoft 365 Copilot
+    tocHref:  /power-platform/
+    topicHref: /copilot/microsoft-365/index
+- name: Microsoft 365
+  tocHref:  /microsoft-365/
+  topicHref: /microsoft-365/index
+  items:
+  - name: Microsoft 365 Copilot
+    tocHref:  /microsoft-365/developer/
+    topicHref: /copilot/microsoft-365/index
+- name: Microsoft 365
+  tocHref:  /microsoft-365/
+  topicHref: /microsoft-365/index
+  items:
+  - name: Microsoft 365 Copilot
+    tocHref:  /microsoftsearch/
+    topicHref: /copilot/microsoft-365/index
+- name: Microsoft 365
+  tocHref:  /microsoft-365/
+  topicHref: /microsoft-365/index
+  items:
+  - name: Microsoft 365 Copilot
+    tocHref:  /connectors/
+    topicHref: /copilot/microsoft-365/index
+- name: Microsoft 365
+  tocHref:  /microsoft-365/
+  topicHref: /microsoft-365/index
+  items:
+  - name: Microsoft 365 Copilot
+    tocHref:  /sharepoint/
+    topicHref: /copilot/microsoft-365/index  
+- name: Microsoft 365
+  tocHref:  /microsoft-365/
+  topicHref: /microsoft-365/index
+  items:
+  - name: Microsoft 365 Copilot
+    tocHref:  /purview/
+    topicHref: /copilot/microsoft-365/index  
+- name: Microsoft 365
+  tocHref:  /microsoft-365/
+  topicHref: /microsoft-365/index
+  items:
+  - name: Microsoft 365 Copilot
+    tocHref:  /azure/sentinel/
+    topicHref: /copilot/microsoft-365/index
+- name: Microsoft 365
+  tocHref:  /microsoft-365/
+  topicHref: /microsoft-365/index
+  items:
+  - name: Microsoft 365 Copilot
+    tocHref:  /office365/servicedescriptions/
+    topicHref: /copilot/microsoft-365/index      
+- name: Microsoft 365
+  tocHref:  /microsoft-365/
+  topicHref: /microsoft-365/index
+  items:
+  - name: Microsoft 365 Copilot
+    tocHref:  /copilot/
+    topicHref: /copilot/microsoft-365/index

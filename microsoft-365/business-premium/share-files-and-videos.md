@@ -14,6 +14,7 @@ ms.collection:
 - M365-Campaigns
 - m365solution-smb
 - tier2
+- trust-pod
 ms.custom:
 search.appverid:
 - BCS160
@@ -40,7 +41,7 @@ Ensure your users use these methods to share files and videos securely:
 
 3. To share a file externally, add the user as a guest to your team, or use SharePoint to get a secure link to share just that file.
 
-4. Use Microsoft Stream to host videos you want your campaign to see.
+4. Use Microsoft OneDrive to host videos you want your campaign to see.
 
 5. Use Microsoft Teams or SharePoint to store video files you need your team to collaborate on or share.
 

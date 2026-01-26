@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: emmasheridan, nicholak
+ms.reviewer: patyc
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -13,10 +13,11 @@ ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
 ms.collection:
 - Tier1
-- scotvorg 
-- M365-subscription-management 
+- scotvorg
+- M365-subscription-management
 - Adm_O365
 - SPO_Content
+- operations-pod
 ms.custom:
 - commerce_subscriptions
 - MAX_CampaignID
@@ -29,7 +30,7 @@ ms.custom:
 - GAUpdates
 search.appverid: MET150
 description: "Learn how to add extra SharePoint file storage in your Microsoft 365 subscription."
-ms.date: 03/27/2025
+ms.date: 07/30/2025
 ---
 
 # Add more SharePoint storage to your subscription
@@ -39,9 +40,6 @@ If you start to run out of storage for your SharePoint sites, you can use the Of
 > [!NOTE]
 > If you bought your subscription through Volume Licensing or a Cloud Solution Provider (CSP), you can't buy **Office 365 Extra File Storage** directly from Microsoft. Contact your representative or partner for help.
 > For information about OneDrive storage, see [Set the default storage space for OneDrive users](/onedrive/set-default-storage-space).
-
-> [!TIP]
-> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
 ## Before you begin
 
@@ -73,7 +71,7 @@ You can buy the Office 365 Extra File Storage add-on in the Microsoft 365 admin 
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center.</a>
     - If you’re using the **Simplified view**, select **Billing**, then select **Add more products**.
-    - If you’re using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page. For some customers, the page is named **Marketplace**.
+    - If you’re using the **Dashboard view**, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Marketplace</a> page.
 2. Under **View by category**, select **Office 365**.
 3. Find **Office 365 Extra File Storage**, and then select **Details**.
 4. Enter the number of gigabytes of storage that you want; select a subscription length and billing frequency; and then select **Buy**.
@@ -87,7 +85,7 @@ You can buy the Office 365 Extra File Storage add-on in the Microsoft 365 admin 
     - If you’re using the **Simplified view**, select **Billing**.
     - If you’re using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. Select the subscription that you want to buy an add-on for.
-3. On the subscription details page, in the **Add-ons** section, select **Find more add-ons in Purchase services**.
+3. On the subscription details page, in the **Add-ons** section, select **Find more add-ons in Marketplace**.
 4. Find the Office 365 Extra File Storage add-on, and then select **Details**.
 5. From the drop-down list; select the subscription to connect with the add-on; and then select **Connect to subscription**.
 6. On the **Checkout** page, enter the quantity that you want to buy and then select **Place order**.

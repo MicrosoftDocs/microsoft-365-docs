@@ -1,16 +1,16 @@
 ---
 title: Data Residency for Exchange Online
 description: Learn about Data Residency for Exchange Online
-ms.author: kvice
-author: kelleyvice-msft
-manager: scotv
+ms.author: v-fahasen
+author: fhasen-msft
+manager: Justin.Giammona
 ms.service: microsoft-365-enterprise
 ms.subservice: advanced-data-residency
 ms.topic: article
 f1.keywords:
 - NOCSH
 ms.date: 12/10/2024
-ms.reviewer: deanw, brianday
+ms.reviewer: jugiammo
 ms.custom:
  - it-pro
  - has-azure-ad-ps-ref
@@ -311,7 +311,7 @@ Set-MgUserLicense -UserId $user.Id -AddLicenses @{SkuId = $EmsSku.SkuId} -Remove
 ```
 
 > [!TIP]
-> The `usageLocation` is A two-letter country code (ISO standard 3166). Required for users that are assigned licenses due to legal requirements to check for availability of services in countries. Examples include: US, JP, and GB.
+> The `usageLocation` is A two-letter country code (ISO standard 3166). Required for users that are assigned licenses due to legal requirements to check for availability of services in countries/regions. Examples include: US, JP, and GB.
 
 This example creates a new user account for Elizabeth Brunner with the following values:
 
@@ -353,11 +353,11 @@ For more information about creating new user accounts and finding LicenseAssignm
 
 #### Onboard existing on-premises mailboxes in a specific _Geography_ location
 
-You can use the standard onboarding tools and processes to migrate a mailbox from an on-premises Exchange organization to Exchange Online, including the [Migration dashboard in the EAC](https://support.office.com/article/d164b35c-f624-4f83-ac58-b7cae96ab331), and the [New-MigrationBatch](/powershell/module/exchange/new-migrationbatch) cmdlet in Exchange Online PowerShell.
+You can use the standard onboarding tools and processes to migrate a mailbox from an on-premises Exchange organization to Exchange Online, including the [Migration dashboard in the EAC](https://support.office.com/article/d164b35c-f624-4f83-ac58-b7cae96ab331), and the [New-MigrationBatch](/powershell/module/exchangepowershell/new-migrationbatch) cmdlet in Exchange Online PowerShell.
 
 The first step is to verify a user object exists for each mailbox to be onboarded, and verify the correct **PreferredDataLocation** value is configured in Microsoft Entra ID. The onboarding tools respect the **PreferredDataLocation** value and migrate the mailboxes directly to the specified geo location.
 
-Or, you can use the following steps to onboard mailboxes directly in a specific _Geographic_ location using the [New-MoveRequest](/powershell/module/exchange/new-moverequest) cmdlet in Exchange Online PowerShell.
+Or, you can use the following steps to onboard mailboxes directly in a specific _Geographic_ location using the [New-MoveRequest](/powershell/module/exchangepowershell/new-moverequest) cmdlet in Exchange Online PowerShell.
 
 1. Verify the user object exists for each mailbox to be onboarded and that **PreferredDataLocation** is set to the desired value in Microsoft Entra ID. The value of **PreferredDataLocation** will be synchronized to the **MailboxRegion** attribute of the corresponding mail user object in Exchange Online.
 

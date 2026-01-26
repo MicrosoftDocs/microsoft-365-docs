@@ -1,12 +1,12 @@
 ---
 title: Step 4. Migration for your Microsoft 365 for enterprise tenants
-ms.author: kvice
-author: kelleyvice-msft
-manager: scotv
+ms.author: dansimp
+author: dansimp
+manager: dansimp
 ms.date: 08/15/2024
 audience: ITPro
 ms.topic: upgrade-and-migration-article
-ms.service: o365-solutions
+ms.service: m365-planning
 ms.localizationpriority: medium
 ms.collection: 
 - highpri
@@ -18,6 +18,7 @@ ms.collection:
 - must-keep
 ms.custom:
 - Ent_Solutions
+- m365-solutions-doc-set
 description: "Migrate your Windows devices, Office client apps, and Office servers for your Microsoft 365 tenants."
 ---
 

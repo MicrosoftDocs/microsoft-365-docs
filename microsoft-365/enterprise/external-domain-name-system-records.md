@@ -1,6 +1,6 @@
 ---
 title: "External Domain Name System records for Microsoft 365"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 10/24/2024
@@ -129,7 +129,7 @@ For scenarios where you're not just using Exchange Online email for Microsoft 36
 |1|All email systems (required)|All SPF records start with this value|v=spf1|
 |2|Exchange Online (common)|Use with just Exchange Online|include:spf.protection.outlook.com|
 |3|Third-party email system (less common)||include:\<email system like mail.contoso.com\>|
-|4|On-premises mail system (less common)|Use if you're using Exchange Online Protection or Exchange Online plus another mail system|`ip4:<0.0.0.0>` <br/> `ip6:< : : >` <br/> include:\<mail.contoso.com\> <br/> The value in brackets (\<\>) should be other mail systems that send email for your domain.|
+|4|On-premises mail system (less common)|You're using [the Built-in security add-on for on-premises mailboxes](/exchange/standalone-eop/standalone-eop) or Exchange Online plus another email system|`ip4:<0.0.0.0>` <br/> `ip6:< : : >` <br/> include:\<mail.contoso.com\> <br/> The value in brackets (\<\>) should be other mail systems that send email for your domain.|
 |5|All email systems (required)||-all|
 
 ### Example: Adding to an existing SPF record

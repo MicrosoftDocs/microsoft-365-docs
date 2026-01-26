@@ -2,9 +2,9 @@
 title: "Convert a user mailbox to a shared mailbox"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekuako
-manager: scotv
+ms.author: dansimp
+author: dansimp
+manager: dansimp
 ms.date: 09/30/2024
 audience: Admin
 ms.topic: how-to
@@ -16,6 +16,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- operations-pod
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -27,9 +28,6 @@ description: "Learn to convert a private mailbox to a shared mailbox that can be
 # Convert a user mailbox to a shared mailbox
 
 When you convert a user's mailbox to a shared mailbox, all of the existing email and calendar information is retained. Only now it's in a shared mailbox where several people will be able to access it instead of one person. At a later date, you can convert a shared mailbox back to a user (private) mailbox.
-
-> [!TIP]
-> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
 ## Before you begin
 
@@ -51,7 +49,7 @@ When you convert a user's mailbox to a shared mailbox, all of the existing email
 
 - To put an In-Place Hold or a Litigation Hold on a shared mailbox, you must assign an Exchange Online Plan 2 license *or* an Exchange Online Plan 1 license and an Exchange Online Archiving add-on license to the shared mailbox.
 
-## Convert a private mailbox to a shared maailbox
+## Convert a private mailbox to a shared mailbox
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 
@@ -105,4 +103,4 @@ For more info about converting a user mailbox to a shared mailbox in an Exchange
 
 [About shared mailboxes](about-shared-mailboxes.md) (article)\
 [Create a shared mailbox](create-a-shared-mailbox.md) (article)\
-[Configure a shared mailbox](configure-a-shared-mailbox.md) (article)\
+[Configure a shared mailbox](configure-a-shared-mailbox.md) (article)

@@ -2,7 +2,7 @@
 title: Security for Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 03/17/2025

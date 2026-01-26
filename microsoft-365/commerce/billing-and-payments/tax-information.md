@@ -11,11 +11,12 @@ ms.topic: how-to
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-management
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
+service.tree.id: 95459a4b-434c-4f83-879b-aa5f509fc7fa
 search.appverid: MET150
 ms.custom:
 - commerce_billing
@@ -26,7 +27,7 @@ ms.custom:
 - GAUpdates
 - campaignIDs-batch2
 description: "Learn about tax information for Microsoft 365 billing and payments, including how to update your address and tax status."
-ms.date: 03/30/2025
+ms.date: 09/29/2025
 ---
 
 # Tax information for Microsoft 365 for business products and services
@@ -122,7 +123,7 @@ You can add your VAT ID in the Microsoft 365 admin center. However, the steps to
 1. Enter your Tax id, then select **Save**.
 
 > [!NOTE]
-> Not all regions support self-serve tax id management. For these countries, **Add tax id** isn't available on the billing account details page.
+> Not all regions support self-serve tax id management. For these countries/regions, **Add tax id** isn't available on the billing account details page.
 
 ### Add your VAT ID, GSTIN, or PAN for your MOSA billing account
 

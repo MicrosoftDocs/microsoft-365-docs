@@ -2,21 +2,22 @@
 title: "Set up the Standard or Targeted release options"
 f1.keywords:
 - CSH
-ms.author: kvice
-author: kelleyvice-msft
-manager: scotv
+ms.author: dansimp
+author: dansimp
+manager: dansimp
 ms.date: 04/09/2025
 audience: Admin
 ms.topic: install-set-up-deploy
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier2
 - scotvorg
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: 
+- operations-pod
+ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
@@ -93,9 +94,10 @@ Targeted release allows admins, change managers, or anyone else responsible for 
 ## Set up the release option in the admin center
 
 You can change how your organization receives Microsoft 365 updates by following these steps. You have to be a global admin in Microsoft 365 to opt in.
+
+[!INCLUDE [global-administrator-note](../../includes/global-administrator-note.md)]
   
-> [!IMPORTANT]
-> It can take up to 24 hours for the following changes to take effect in Microsoft 365. If you opt out of targeted release after enabling it, your users might lose access to features that haven't reached the scheduled release yet.
+It can take up to 24 hours for the following changes to take effect in Microsoft 365. If you opt out of targeted release after enabling it, your users might lose access to features that haven't reached the scheduled release yet.
   
 1. In the admin center, go to the **Settings** > **Org Setting**, and under the <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">**Organization profile** tab</a>, choose **Release preferences**.
 

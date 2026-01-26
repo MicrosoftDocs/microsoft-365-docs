@@ -1,6 +1,6 @@
 ---
 title: "Optimize iFrames in SharePoint modern and classic publishing site pages"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 07/31/2024

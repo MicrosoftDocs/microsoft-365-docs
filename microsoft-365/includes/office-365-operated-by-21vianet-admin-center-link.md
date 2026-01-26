@@ -2,6 +2,7 @@
 title: "Microsoft 365 operated by 21Vianet in China admin center link"
 author: cmcatee-MSFT
 ms.author: cmcatee
+ms.collection: operations-pod
 manager: scotv
 ms.topic: how-to
 ms.service: microsoft-365-business

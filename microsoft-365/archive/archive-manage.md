@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 04/14/2025
+ms.date: 06/14/2025
 ms.topic: how-to
 ms.service: microsoft-365-archive
 ms.custom: archive
@@ -42,7 +42,17 @@ When a site is archived, compliance features such as eDiscovery and retention la
     ![Screenshot of the Archived sites page in the SharePoint admin center.](../media/m365-archive/archived-sites-page.png)
 
     > [!NOTE]
-    > To archive a hub site, you first need to unregister it as a hub site. Archiving Microsoft Teams-connected sites with private or shared channel sites isn't supported. Teams sites with standard channels are supported.
+    > To archive a hub site, you first need to unregister it as a hub site. Archiving Microsoft Teams-connected sites is only partially supported. For more information, see [Archive a site connected to Teams](archive-manage.md#archive-a-site-connected-to-teams).
+
+### Archive a site connected to Teams
+
+Sites associated with Teams with exclusively standard channels are supported for archiving.
+
+Sites associated with Teams that include private or shared channels are only partially supported:
+
+- SharePoint admin center: Archiving a site with channel sites is not possible. (Message: "The group connected site with channel sites associated can't be archived.")
+
+- PowerShell and Graph API: Archiving a site with channel sites is not blocked. Only the main site associated to the Team (and its standard channels) is archived. The private and shared channel sites remain active. Archiving the channel sites directly is not possible, as these sites use unsupported site templates.
 
 ## Manage archived sites
 
@@ -52,7 +62,7 @@ Admins can view details of the site, such as the URL, Archive Status, or Storage
 
 ## Reactivate a site
 
-If there's a need to access the site content again, the sites need to be reactivated. After a site is archived, it stays in the "Recently Archived" state for seven days. All reactivations from this state are free of cost and instantaneous. After seven days, the site enters the “Archived” state. Reactivations might take up to 24 hours, and have an associated reactivation cost. To learn more about the costs and how pricing works, see [Pricing model](archive-pricing.md).
+If there's a need to access the site content again, the sites need to be reactivated. The activation time depends on the archive state of the site ("Recently archived" or "Archived"). For more information, see the [Archive states in Microsoft 365 Archive](archive-states.md).
 
 After reactivation, the site moves back to the **Active sites** page. The site resumes its normal function, and the users have the same access rights to the site and its content as they did before the site was archived. After reactivation is complete, the storage consumed by the site will accrue to your storage quota consumption.
 
@@ -69,7 +79,11 @@ After reactivation, the site moves back to the **Active sites** page. The site r
 
 5. If you're trying to reactivate a site from "Archived" state, you see a confirmation pop-up that shows an estimated price for reactivation. Select **Confirm** to reactivate. The site enters the "Reactivating" state. It moves to active sites once reactivation is complete.
 
-    ![Screenshot of an example site that you are reactivating in the SharePoint admin center.](../media/m365-archive/reactivate-site-example.png)
+<!---
+    Update needed: Screenshot still mentions reactivation cost and does not match current message in SPO Admin Center 
+--->
+
+![Screenshot of an example site that you are reactivating in the SharePoint admin center.](../media/m365-archive/reactivate-site-example.png)
 
 When you reactivate a site, its permissions, lists, pages, files, folder-structure, site-level policies, and other metadata will revert to the prearchival state, except if files are deleted from archived sites. The only two exceptions are when files are deleted while the site is archived:
 
@@ -78,9 +92,13 @@ When you reactivate a site, its permissions, lists, pages, files, folder-structu
 
 Other than these two exceptions, you can expect the site to be unchanged.  
 
-## Change the archive status of site via PowerShell
+## Change the archive status of a site via PowerShell
 
-You can also change the status of an archived site by using the PowerShell cmdlet [**Set-SPOSiteArchiveState**](/powershell/module/sharepoint-online/set-spositearchivestate?view=sharepoint-ps&preserve-view=true).
+You can archive and reactivate sites by using the PowerShell cmdlet [**Set-SPOSiteArchiveState**](/powershell/module/microsoft.online.sharepoint.powershell/set-spositearchivestate).
+
+## Change the archive status of a site via Graph API
+
+You can archive a site by using the Graph API **beta** endpoint [**site: archive**](/graph/api/site-archive) or reactivate it by using the Graph API **beta** endpoint [**site: unarchive**](/graph/api/site-unarchive).
 
 ## Site templates supported
 

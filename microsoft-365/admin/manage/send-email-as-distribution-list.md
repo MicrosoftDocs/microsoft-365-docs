@@ -12,8 +12,9 @@ ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
 - Tier3
-- scotvorg 
+- scotvorg
 - Adm_O365
+- operations-pod
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio

@@ -1,22 +1,27 @@
 ---
 title: Integrate Microsoft OneDrive LTI with Desire2Learn Brightspace
-author: DaniEASmith
-ms.author: danismith
-manager: jacktremper
+author: jennplatt
+ms.author: avering
+manager: michal.gideoni
 ms.reviewer: amitman
-ms.date: 08/03/2022
+ms.date: 01/14/2026
+last.review.date: 01/14/2026
 audience: admin
 ms.topic: integration
-ms.service: msteams
-ms.subservice: teams-education
+ms.service: microsoft-365-education
 ms.collection: 
 - m365initiative-edu
 - tier2
+- m365-education
+- all-education
 ms.localizationpriority: medium
 description: Create and grade assignments, build and curate course content, and collaborate on files in real time with the new Microsoft OneDrive Learning Tools Interoperability for Desire2Learn Brightspace.
 ---
 
 # Integrate Microsoft OneDrive LTI with Desire2Learn Brightspace
+
+>[!NOTE]
+>The classic Microsoft OneDrive, OneNote, Teams Assignments, and Reflect LTI apps have been replaced by the [new Microsoft 365 LTI](https://aka.ms/LMSAdminDocs). The classic apps will be sunset on September 17, 2026. After that date, the classic apps and any content links in courses will stop working. However, the files, notebooks, teams, meetings, and check-ins created by the classic app will continue to be accessible through Microsoft 365. For further guidance on moving your users and courses to the new Microsoft 365 LTI experiences and migrating content links, review the [migration guidance for the classic LTI apps](/microsoft-365/lti/microsoft-365-lti-first-time-configuration#migration-guidance).
 
 This guide provides IT admins steps for registering the OneDrive LTI app for the Desire2Learn (D2L) Brightspace LMS.
 

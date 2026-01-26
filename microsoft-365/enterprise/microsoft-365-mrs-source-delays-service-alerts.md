@@ -1,6 +1,6 @@
 ---
 title: "MRS service alerts"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 08/09/2024

@@ -1,13 +1,13 @@
 ---
 title: Configure Teams with three tiers of file sharing security
 f1.keywords: NOCSH
-author: DaniEASmith
-ms.author: danismith
+author: officedocspr5
+ms.author: odocspr
 manager: jtremper
 ms.date: 12/04/2023
 audience: ITPro
 ms.topic: solution-overview
-ms.service: o365-solutions
+ms.service: m365-planning
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -22,6 +22,7 @@ ms.collection:
 ms.custom:
 - Ent_Architecture
 - seo-marvel-jun2020
+- m365-solutions-doc-set
 recommendations: false
 description: Learn how to configure Teams for better file sharing security using three tiers of protection, balancing security with ease of collaboration.
 ---

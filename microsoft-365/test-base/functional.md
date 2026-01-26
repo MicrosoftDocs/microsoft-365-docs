@@ -36,7 +36,7 @@ Detailed descriptions of the above steps are highlighted below:
 
 **Upload a functional test package**
 
-To get started, navigate to the Upload page, select Upload new application under Application catalog on the left-side navigation menu of the Test Base for M365 portal in Azure. From there:
+To get started, navigate to the Upload page, select Upload new application under Application catalog on the left-side navigation menu of the Test Base for Microsoft 365 portal in Azure. From there:
 
 Tab 1 - Enter basic information. Provide the name and version of your application. In the Type of test option, select ```Functional tests```. 
 

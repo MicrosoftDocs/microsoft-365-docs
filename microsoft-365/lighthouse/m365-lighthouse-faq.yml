@@ -3,7 +3,7 @@ metadata:
   ms.date: 07/17/2023
   title: "Microsoft 365 Lighthouse frequently asked questions (FAQs)"
   f1.keywords: NOCSH
-  ms.author: sharik
+  ms.author: dansimp
   author: SKjerland
   manager: scotv
   ms.reviewer: crimora
@@ -23,7 +23,7 @@ metadata:
   description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, get answers to frequently asked questions (FAQs) about Microsoft 365 Lighthouse."
 title: Microsoft 365 Lighthouse frequently asked questions (FAQs)
 summary: |
-  Last updated August 27, 2024. This article contains answers to frequently asked questions (FAQs) about Microsoft 365 Lighthouse.
+  Last updated May 6, 2025. This article contains answers to frequently asked questions (FAQs) about Microsoft 365 Lighthouse.
   
   If you can't find an answer to your question, let us know by providing feedback and we'll add it to this article.
   
@@ -37,9 +37,9 @@ sections:
           
           For MSP service technicians with delegated access, Lighthouse helps you secure and manage devices, data, and users at scale for small and medium business (SMB) customers. Lighthouse simplifies onboarding of tenants by recommending security configuration baselines tailored to SMBs and providing multi-tenant views across all customer environments.
           
-          For account managers, sales professionals, and customer success users, the Sales Advisor capability within Lighthouse uses artificial intelligence (AI) to analyze your customer base and apply data models—built by Microsoft data scientists—to identify opportunities where you can engage, nurture, and grow your customer's Microsoft 365 usage through actionable recommendations and prescriptive guidance. 
+          For account managers, sales professionals, and customer success users, Lighthouse uses machine learning (ML) models to analyze your customer base and identify opportunities where you can engage, nurture, and grow your customer's Microsoft 365 usage through actionable recommendations and prescriptive guidance. 
           
-          For more information, see [Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md).
+          For more information, see [Understand opportunities and data in Microsoft 365 Lighthouse](m365-lighthouse-understanding-opportunities-and-data.md).
           
 
       - question: How much does Microsoft 365 Lighthouse cost?
@@ -273,35 +273,37 @@ sections:
         answer: |
           You can purchase Windows 365 licenses through all available Microsoft commercial sales channels. One license purchased is equivalent to the purchase of one Cloud PC. Currently, each user can be assigned only one Cloud PC of the same SKU type, but they can be assigned multiple Cloud PCs if they are of different SKU types. To compare Windows 365 plans and pricing, see [Get the Windows 365 Cloud PC that's right for you](https://www.microsoft.com/windows-365/business/compare-plans-pricing).
 
-  - name: Managing opportunities with Sales Advisor
+  - name: Managing opportunities
     questions:          
-      - question: What is the Sales Advisor capability in Microsoft 365 Lighthouse, and what is the business value proposition for partners? 
+      - question: What are "opportunities" in Microsoft 365 Lighthouse, and what is the business value for MSPs? 
         answer: |
-          Understanding how customers interact with a product or solution through data can help partners anticipate customer needs and improve overall performance throughout the various stages of the customer lifecycle.  Microsoft is investing in its partners by creating a tool that supports a customer lifecycle management (CLM) experience and continuous customer engagement across the customer lifecycle. This experience was available during a public preview phase and was referred to as “Project Orland for Microsoft 365.” The public preview phase has concluded, and this same experience is now generally available as a capability within Microsoft 365 Lighthouse.
+          Understanding how customers interact with a product or solution through data can help MSPs anticipate customer needs and improve overall performance throughout the various phases of the customer lifecycle.
 
-          Leveraging the same data models and insights Microsoft sellers use for account management, partners can: 
+          Leveraging the same data models and insights Microsoft sellers use for account management, MSPs can: 
           1.	Target customer engagement at the right time with the right actions. 
-          2.	Engage with customers when they are ready for the next step in their digital transformation based on their usage patterns.  
-          3.	Get early warning of customers where direct engagement can avoid future Microsoft 365 churn.  
-          4.	Access personalized marketing content (such as pitch decks), usage information, and more specific to each customer opportunity surfaced within the experience. 
+          2.	Engage with customers when they're ready for the next step in their digital transformation based on their usage patterns.  
+          3.	Engage with customers to avoid future Microsoft 365 churn.  
+          4.	Access usage information and opportunities specific to each customer. 
           5.	Take advantage of best-practice recommendations from Microsoft.
 
-      - question: What customer segments does the Sales Advisor capability in Microsoft 365 Lighthouse support? Is it only to be used with SMBs? 
+      - question: What customer segments do opportunities support? Do they only support SMBs? 
         answer: |
-          Sales Advisor surfaces opportunities across all segments. The opportunities and the models are not exclusive to SMB customers. CSP partners who support medium-sized customers will find that Sales Advisor serves them well with all the customers they engage with.  
-      - question: Is the Sales Advisor capability in Microsoft 365 Lighthouse only for Microsoft 365, or is it also available for Azure and BizApps? 
+          Lighthouse surfaces opportunities across all customer segments. The opportunities and the models are not exclusive to SMB customers.  
+      - question: Are opportunities specific to Microsoft 365, or are they also available for Azure and BizApps? 
         answer: |
-          The Microsoft 365 Lighthouse Sales Advisor capability only supports Modern Work Microsoft 365 services and solutions.  
-      - question: How do I get started with Sales Advisor? 
+          Opportunities are specific to Microsoft 365 services and solutions.  
+      - question: How do I view opportunities? 
         answer: |
-          Sales Advisor is integrated into Lighthouse. You must hold the Account Manager role in Lighthouse. If you don't hold the Account Manager role, reach out to someone who holds the Administrator role in Lighthouse and ask them to assign the role to you. For more information, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). To learn more about using Sales Advisor to view customer opportunities, see [Overview of Sales Advisor in Microsoft 365 Lighthouse](m365-lighthouse-sales-advisor-overview.md).
-      - question: What is the difference between Sales Advisor and Cloud Ascent? Are they complimentary? 
-        answer: |
-          The two offerings serve different purposes and use different signals to generate information shared with partners. 
+          To view opportunities, you must hold the Account Manager role in Lighthouse. If you don't hold the Account Manager role, reach out to someone who holds the Administrator role in Lighthouse and ask them to assign the role to you. To view opportunities in Lighthouse, in the left navigation pane, select **Opportunities**.
           
-          Cloud Ascent is a targeting tool focusing on potential cloud customers that partners can move to the cloud. Partners should use Cloud Ascent to support lead generation and new customer marketing.  
+          For more information about permissions, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). To learn more about opportunities, see [Understand opportunities and data in Microsoft 365 Lighthouse](m365-lighthouse-understanding-opportunities-and-data.md) and [View opportunities in Microsoft 365 Lighthouse](m365-lighthouse-view-opportunities.md).
+      - question: What is the difference between opportunities in Lighthouse and Cloud Ascent? Are they complimentary? 
+        answer: |
+          The two offerings serve different purposes and use different signals to generate information shared with MSPs. 
           
-          For customers with a Microsoft 365 trial or paid subscription, the sales advisor capability in Microsoft 365 Lighthouse will help partners nurture that customer by converting trials to paid, increasing product adoption, or moving paid customers to more advanced workloads. It is a lifecycle management tool that supports continuous customer engagement. Sales advisor leverages the same data models, insights, and signals that Microsoft sellers use for account management, tapping into the best practices we see across the market to help partners grow their business.  
+          Cloud Ascent is a targeting tool focusing on potential cloud customers that partners can move to the cloud. MSPs should use Cloud Ascent to support lead generation and new customer marketing.  
+          
+          For customers with a Microsoft 365 trial or paid subscription, opportunities in Microsoft 365 Lighthouse help MSPs nurture that customer by converting trials to paid, increasing product adoption, or moving paid customers to more advanced workloads. It's essentially a customer lifecycle management tool that supports continuous customer engagement. Opportunities leverage the same data models, insights, and signals that Microsoft sellers use for account management, tapping into the best practices we see across the market to help MSPs grow their business.  
 
   - name: Other multitenant management solutions
     questions:          
@@ -340,7 +342,7 @@ sections:
           |**Identity**|Users flagged by Microsoft Entra ID Protection for risky behavior across tenants, including the ability to remediate risks in bulk<br><br>Inactive user accounts and unprotected shared mailbox accounts, including the ability to block them<br><br>Multifactor authentication enablement and registration completion across tenants<br><br>Self-service password reset enablement and registration completion across tenants  |Not available |
           |**Management**|List of all devices enrolled in Intune and their device compliance status<br><br>Device and app health insights for devices enrolled in Intune from Endpoint analytics<br><br>List of Windows 365 Cloud PC devices and basic management actions  |Not available |
           |**Other security capabilities**|List of devices enrolled in Intune that are overdue for scans or that don't have Microsoft Defender Antivirus or the latest Microsoft Defender Antivirus updates<br><br>Insights on quarantined emails across tenants<br><br>Aggregated view of service health incidents and advisories across tenants  |Not available |
-          |**Sales Advisor**|AI-driven insights, recommendations, and guidance to help MSPs acquire, retain, and grow customers  |Not available |
+          |**Opportunities**|Insights, recommendations, and guidance generated by machine learing (ML) models to help MSPs acquire, retain, and grow customers  |Not available |
      
   - name: Getting help and providing feedback
     questions:          

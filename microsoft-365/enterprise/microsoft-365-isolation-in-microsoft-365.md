@@ -1,6 +1,6 @@
 ---
 title: "Isolation and Access Control in Microsoft 365"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 05/17/2024
@@ -30,7 +30,7 @@ Microsoft Entra ID and Microsoft 365 use a highly complex data model that includ
 
 Within this model, there’s no single source of directory data. Specific systems own individual pieces of data, but no single system holds all the data. Microsoft 365 services cooperate with Microsoft Entra ID in this data model. Microsoft Entra ID is the "system of truth" for shared data, which is typically small and static data used by every service. The federated model used within Microsoft 365 and Microsoft Entra ID provides the shared view of the data.
 
-Microsoft 365 uses both physical storage and Azure cloud storage. Exchange Online (including Exchange Online Protection) and Skype for Business use their own storage for customer data. SharePoint uses both SQL Server storage and Azure Storage, hence the need for extra isolation of customer data at the storage level.
+Microsoft 365 uses both physical storage and Azure cloud storage. Exchange Online (including [the built-in security features for all cloud mailboxes](/defender-office-365/eop-about)) and Skype for Business use their own storage for customer data. SharePoint uses both SQL Server storage and Azure Storage, hence the need for extra isolation of customer data at the storage level.
 
 ## Exchange Online
 

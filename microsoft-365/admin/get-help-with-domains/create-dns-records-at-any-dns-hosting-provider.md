@@ -2,9 +2,9 @@
 title: "Add DNS records to connect your domain"
 f1.keywords:
 - CSH
-ms.author: kvice
-author: kelleyvice-msft
-manager: scotv
+ms.author: dansimp
+author: dansimp
+manager: dansimp
 ms.date: 03/18/2025
 audience: Admin
 ms.topic: how-to
@@ -19,6 +19,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
+- operations-pod
 search.appverid:
 - MET150
 description: "Connect a domain at any DNS hosting provider to Microsoft 365 by verifying your domain and updating the DNS records in your registrar’s account."
@@ -46,9 +47,6 @@ If you want to change the email domain of existing user accounts, follow the ste
 [Check the Domains FAQ](../setup/domains-faq.yml) if you don't find what you're looking for in this article.
 
 [!INCLUDE [How to get tech support for SMB](../../includes/smb-how-to-get-tech-support.md)]
-
-> [!TIP]
-> If you need help with the steps in this article, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, admins and users get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
 > [!NOTE]
 > To find your DNS hosting provider, see [Find your domain registrar - Microsoft 365 admin | Microsoft Learn.](find-your-domain-registrar.md) 

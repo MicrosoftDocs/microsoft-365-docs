@@ -9,6 +9,7 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
 - scotvorg
+- operations-pod
 description: "Learn how to notify staff when an appointment or booking is created or updated." 
 ---
 

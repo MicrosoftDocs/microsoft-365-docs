@@ -2,11 +2,11 @@
 title: Multitenant orgs FAQ
 description: Frequently asked questions regarding multitenant organizations
 author: kelleyvice-msft
-ms.author: kvice
+ms.author: scotv
 manager: scotv
 ms.service: microsoft-365-enterprise
 ms.topic: faq
-ms.date: 11/01/2024
+ms.date: 10/15/2025
 ms.subservice: multi-tenant
 ---
 
@@ -86,13 +86,13 @@ The guiding principle is that one human only needs one license. So, if you're li
 
 ### Is cross-tenant sync setup sufficient to leverage MTO functionality on Teams?
 
-MTO-specific Teams functionality requires an MTO to be set up. [External access](/microsoft-365/enterprise/plan-multi-tenant-org-overview#trusted-organizations-in-external-access) policy setup and [B2B direct connect](/microsoft-365/enterprise/plan-multi-tenant-org-overview#shared-channels-in-multitenant-organizations) policy setup that is part of the MTO setup is essential to leverage MTO functionality on Teams. Learn more about Teams multitenant capabilities [here](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/announcing-more-seamless-collaboration-in-microsoft-teams-for/ba-p/3901092). It's important to keep in mind that these capabilities are only available on the mobile (iOS and Android) and new Teams desktop client. The customers using web client wouldn't see any benefits or optimized experience for MTO. 
+MTO-specific Teams functionality requires an MTO to be set up. [External access](/microsoft-365/enterprise/plan-multi-tenant-org-overview#trusted-organizations-in-external-access) policy setup and [B2B direct connect](/microsoft-365/enterprise/plan-multi-tenant-org-overview#shared-channels-in-multitenant-organizations) policy setup that is part of the MTO setup is essential to leverage MTO functionality on Teams. Learn more about Teams multitenant capabilities [here](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/announcing-more-seamless-collaboration-in-microsoft-teams-for/ba-p/3901092). It's important to keep in mind that these capabilities are now supported on VDI, Teams desktop, and mobile (iOS and Android) clients. However, the experience on web clients remains limited compared to these other clients, meaning customers using the web client will not see the same optimized experience.
 
 ### Do old chats get merged when a user is converted from a B2B guest to a member? 
 
 Old chats aren't merged when a user is converted from a guest to a member. The user still sees the chat thread with B2B members, however, sending new chat messages in that thread is blocked. All search entry points will redirect the user to chat with home tenant ID of the user from broader MTO group and chats going forward won't fragment.
 
-### Can MTO users create Teams and invite guests on other tenants? 
+### Can MTO users create teams and invite guests on other tenants?
 
 MTO users can create teams and invite guests from other tenants. 
 
@@ -102,7 +102,7 @@ This is a known issue that might impact a small set of users. Microsoft is worki
 
 ### Does MTO work when using Teams on the web? 
 
-Microsoft Teams on the web isn't currently supported in an MTO. However, a version of the Teams web app is being optimized for MTO features in the future.
+Microsoft Teams on the web is supported in an MTO. However, the most optimized experience is available on Teams desktop, VDI, and mobile clients. We recommend customers use these clients for the best experience.
 
 ### A few users are unable to see all MTO tenants in the drop-down. Is this expected?
 

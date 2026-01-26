@@ -2,7 +2,7 @@
 title: Request FastTrack assistance for Microsoft 365
 description: Describes how to create FastTrack requests for assistance in Microsoft 365 admin center.
 author: rededwin
-ms.author: edwinder
+ms.author: scotv
 ms.service: microsoft-365-enterprise
 ms.topic: how-to
 manager: scotv

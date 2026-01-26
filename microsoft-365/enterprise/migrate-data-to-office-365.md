@@ -1,6 +1,6 @@
 ---
 title: "Migrate your organization data to Microsoft 365 Enterprise"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 07/30/2024

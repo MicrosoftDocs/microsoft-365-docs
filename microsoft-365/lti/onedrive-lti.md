@@ -1,24 +1,28 @@
 ---
 title: Integrate Microsoft OneDrive LTI with Canvas
-author: DaniEASmith
-ms.author: danismith
-manager: jacktremper
-ms.reviewer: amitman 
-ms.date: 06/21/2021
+author: jennplatt
+ms.author: avering
+manager: michal.gideoni
+ms.date: 01/14/2026
+last.review.date: 01/14/2026
 audience: admin
 ms.topic: integration
-ms.service: msteams
-ms.subservice: teams-education
+ms.service: microsoft-365-education
 f1.keywords:
 - CSH
 ms.collection: 
 - M365-modern-desktop
 - tier2
+- m365-education
+- all-education
 ms.localizationpriority: medium
 description: Create and grade assignments, build and curate course content, and collaborate on files in real time with the Microsoft OneDrive LTI for Canvas.
 ---
 
 # Integrate Microsoft OneDrive LTI with Canvas
+
+>[!NOTE]
+>The classic Microsoft OneDrive, OneNote, Teams Assignments, and Reflect LTI apps have been replaced by the [new Microsoft 365 LTI](https://aka.ms/LMSAdminDocs). The classic apps will be sunset on September 17, 2026. After that date, the classic apps and any content links in courses will stop working. However, the files, notebooks, teams, meetings, and check-ins created by the classic app will continue to be accessible through Microsoft 365. For further guidance on moving your users and courses to the new Microsoft 365 LTI experiences and migrating content links, review the [migration guidance for the classic LTI apps](/microsoft-365/lti/microsoft-365-lti-first-time-configuration#migration-guidance).
 
 This article is for education IT admins who need to set up the Microsoft OneDrive LTI for Canvas.
 
@@ -69,7 +73,7 @@ Integrating Microsoft OneDrive LTI with Canvas is a two-step process. The first 
     >
     > For more information on how educators can modify their course navigation links, see [How do I manage Course Navigation links?](https://community.canvaslms.com/t5/Instructor-Guide/How-do-I-manage-Course-Navigation-links/ta-p/1020)
 
-7. Next, expand the **Additional settings** dropdown and set the **Privacy Level** to **Public**. 
+7. Next, expand the **Additional settings** dropdown and set the **Privacy Level** to **Public**.
   
    Setting the **Privacy Level** to **Public** allows course members' names to appear to other members for collaboration.
 

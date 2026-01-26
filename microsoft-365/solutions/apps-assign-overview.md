@@ -1,17 +1,17 @@
 ---
 title: "Assign and deploy apps using Microsoft Intune"
-ms.author: erikre
-author: erikre
-manager: dougeby
+ms.author: nwhite
+author: nicholasswhite
+manager: laurawi
 audience: ITPro
 ms.topic: install-set-up-deploy
 ms.date: 04/21/2025
 description: Assign and deploy apps using Microsoft Intune.
-ms.service: o365-solutions
+ms.service: m365-planning
 ms.localizationpriority: high
 ms.collection:
 - highpri
-ms.custom:
+ms.custom: m365-solutions-doc-set
 keywords:
 ---
 

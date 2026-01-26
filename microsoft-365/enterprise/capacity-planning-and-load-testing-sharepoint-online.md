@@ -1,6 +1,6 @@
 ---
 title: "Capacity planning and load testing SharePoint in Microsoft 365"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 06/28/2024

@@ -1,17 +1,17 @@
 ---
 title: "Step 2. Configure Microsoft Outlook"
-ms.author: erikre
-author: erikre
-manager: dougeby
+ms.author: nwhite
+author: nicholasswhite
+manager: laurawi
 audience: ITPro
 ms.topic: how-to
 ms.date: 04/21/2025
 description: Step 2. Configure Microsoft Outlook.
-ms.service: o365-solutions
+ms.service: m365-planning
 ms.localizationpriority: high
 ms.collection:
 - highpri
-ms.custom:
+ms.custom: m365-solutions-doc-set
 keywords:
 ---
 
@@ -24,7 +24,7 @@ Microsoft Intune makes it easy to provide Microsoft Outlook to your end users at
 >
 > If your organization uses a native email app or a different email service, you don't need to configure Microsoft Outlook.
 >
-> App configuration policies are targeted to the iOS/iPadOS and Android platforms. However some apps, such as M365 apps for Windows and later devices, have configuration options available when you add the app to Intune.
+> App configuration policies are targeted to the iOS/iPadOS and Android platforms. However some apps, such as Microsoft 365 apps for Windows and later devices, have configuration options available when you add the app to Intune.
 
 Outlook app configuration can be delivered by selecting either of the following methods:
 

@@ -17,8 +17,8 @@ metadata:
   - Adm_TOC
   - essentials-navigation
   author: kelleyvice-msft #Required; your GitHub user alias, with correct capitalization.
-  ms.author: kvice #Required; microsoft alias of author; optional team alias.
-  ms.date: 04/01/2025 #Required; mm/dd/yyyy format.
+  ms.author: scotv #Required; microsoft alias of author; optional team alias.
+  ms.date: 10/20/2025 #Required; mm/dd/yyyy format.
 
 # highlightedContent section (optional)
 # Maximum of 8 items

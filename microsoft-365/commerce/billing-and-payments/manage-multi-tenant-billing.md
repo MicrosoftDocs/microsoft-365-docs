@@ -20,9 +20,10 @@ ms.custom:
 - admindeeplinkMAC
 - GAUpdates
 - campaignIDs-batch2
+service.tree.id: 95459a4b-434c-4f83-879b-aa5f509fc7fa
 search.appverid: MET150
 description: "Learn how to use multi-tenant billing relationships to share billing accounts across tenants in the Microsoft 365 admin center."
-ms.date: 09/12/2024
+ms.date: 11/04/2025
 ---
 
 # Manage billing across multiple tenants in the Microsoft 365 admin center

@@ -1,6 +1,6 @@
 ---
 title: "View directory synchronization status in Microsoft 365"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 09/24/2024

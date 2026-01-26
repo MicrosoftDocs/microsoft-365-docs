@@ -1,6 +1,6 @@
 ---
 title: "Manage Microsoft 365 with Windows PowerShell for DAP partners"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 07/31/2024

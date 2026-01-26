@@ -1,7 +1,7 @@
 ---
 title: "Optimize search requests in SharePoint in Microsoft 365 modern site pages"
 ms.reviewer: andreye
-ms.author: evanatkin
+ms.author: pamgreen
 author: AtkinE
 manager: pamgreen
 ms.date: 01/20/2023

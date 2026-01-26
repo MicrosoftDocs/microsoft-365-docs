@@ -2,13 +2,13 @@
 title: "Step 6: Train your workers and address usage feedback"
 f1.keywords:
 - NOCSH
-author: brendacarter
-ms.author: bcarter
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 ms.date: 05/01/2020
 audience: ITPro
 ms.topic: how-to
-ms.service: o365-solutions
+ms.service: m365-planning
 ms.localizationpriority: high
 ms.collection: 
 - highpri
@@ -17,7 +17,7 @@ ms.collection:
 - remotework
 - m365solution-remotework
 - m365solution-scenario
-ms.custom: 
+ms.custom: m365-solutions-doc-set
 description: Train your users and ensure that issues are dealt with quickly.
 ---
 

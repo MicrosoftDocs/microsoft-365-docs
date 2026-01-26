@@ -2,15 +2,15 @@
 title: "Step 4 - Forward a former employee's email to another employee or convert to a shared mailbox"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekuako
-manager: scotv
-ms.date: 11/14/2024
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
+ms.date: 10/28/2025
 audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-business
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
 - M365-subscription-management
@@ -23,37 +23,43 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - m365solution-removeemployee
-description: "Forward a former employee's email to another employee or convert it to a shared mailbox where several people will be able to access it instead of one person."
+description: "Forward a former employee's email to another employee or convert it to a shared mailbox where several people are able to access it instead of one person."
 ---
 
 # Step 4 - Forward a former employee's email to another employee or convert to a shared mailbox
 
-In this step, you assign the former employee's email address to another employee, or convert the user's mailbox to a shared mailbox.
+If an employee leaves your organization, and you don't want to lose existing email or calendar information, you can either assign the former employee's email address to another employee, or convert the former employee's mailbox to a shared mailbox.
+
+> [!NOTE]
+> You must have appropriate permissions through a role, such as [Microsoft 365 Backup Administrator](/entra/identity/role-based-access-control/permissions-reference#microsoft-365-backup-administrator) or [User Administrator](/entra/identity/role-based-access-control/permissions-reference#user-administrator) to perform the tasks in this article. 
 
 ## Convert former employee's mailbox to a shared mailbox
 
-When you convert a user's mailbox to a shared mailbox, all of the existing email and calendar are retained. Only now it's in a shared mailbox where several people will be able to access it instead of one person. You can convert a shared mailbox back to a user (private) mailbox at a later date if you want.
+When you convert a user's mailbox to a shared mailbox, all of the existing email and calendar are retained in a shared mailbox that several people can acess. You can convert a shared mailbox back to an individual user's private mailbox later if needed.
 
-- Creating a shared mailbox is the less expensive way to go because you won't have to pay for a license **as long as the mailbox is smaller than 50 GB**. If it is over 50 GB, you'll need to assign a license to it.
-- If you convert the mailbox to a shared mailbox, all the old email will be available, too. This can take up a lot of space.
-- If you set up email forwarding, only *new* emails sent to the former employee will be sent to the current employee.
+- Creating a shared mailbox can be a less expensive way to go because you don't have to pay for a license **as long as the mailbox is smaller than 50 GB**. If it is over 50 GB, you need to assign a license to it.
+- If you convert the mailbox to a shared mailbox, all the old email is available, too. This configuration can take up a lot of space.
+- If you set up email forwarding, only *new* emails sent to the former employee's email address are sent to the current employee.
 
 Follow these steps to [convert the user's mailbox to a shared mailbox](../email/convert-user-mailbox-to-shared-mailbox.md).
 
 ## Forward a former employee's email to another employee
 
  > [!IMPORTANT]
- > If you're setting up email forwarding or a shared mailbox, in the end, don't delete the former employee's account. The account needs to be there to anchor the email forwarding or shared mailbox.
+ > If you're setting up email forwarding or a shared mailbox, don't delete the former employee's account. The account needs to be there to anchor the email forwarding or shared mailbox.
 
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
-2. Select the name of the employee that you want to block, and then select the **Mail** tab.
+1. In the [Microsoft 365 admin center](https://admin.cloud.microsoft/), go to **Users** > **Active users**. (Or, go directly to the [Active users page](https://go.microsoft.com/fwlink/p/?linkid=834822).)
+
+2. Select the name of the former employee, and then select the **Mail** tab.
+
 3. Under **Email Forwarding**, select **Manage email forwarding**.
-4. Turn on **Forward all email sent to this mailbox**. In the **Forwarding address** box, type the email address of the current employee who's going to get the email.
-5. Select **Save**.
-6. Remember, don't delete the former employee's account.
+
+4. Select **Forward all emails sent to this mailbox**. In the **Forwarding email address** box, type the email address of the current employee who's going to get the email. Choose whether to keep a copy of the forwarded email in the former employee's mailbox.
+
+5. Select **Save changes**. Remember not to delete the former employee's account.
 
 > [!IMPORTANT]
-> In scenarios where the mailbox is inactive due to compliance reasons, mail forwarding or converting the mailbox to a shared mailbox would not work.
+> In scenarios where the mailbox is inactive due to compliance reasons, mail forwarding or converting the mailbox to a shared mailbox doesn't work.
 
 ### Cancel Outlook meetings
 
@@ -63,10 +69,10 @@ If the person had meetings that booked equipment or rooms, they won't be availab
 
 ## Related content
 
-[Open and use a shared mailbox in Outlook](https://support.microsoft.com/office/open-and-use-a-shared-mailbox-in-outlook-d94a8e9e-21f1-4240-808b-de9c9c088afd)
+- [Open and use a shared mailbox in Outlook](https://support.microsoft.com/office/open-and-use-a-shared-mailbox-in-outlook-d94a8e9e-21f1-4240-808b-de9c9c088afd)
 
-[Access another person's mailbox](https://support.microsoft.com/office/access-another-person-s-mailbox-a909ad30-e413-40b5-a487-0ea70b763081)
+- [Access another person's mailbox](https://support.microsoft.com/office/access-another-person-s-mailbox-a909ad30-e413-40b5-a487-0ea70b763081)
 
-[Exchange admin center in Exchange Online](/exchange/exchange-admin-center)
+- [Exchange admin center in Exchange Online](/exchange/exchange-admin-center)
 
-[Manager another person's mail and calendar items](https://support.microsoft.com/office/manage-another-person-s-mail-and-calendar-items-afb79d6b-2967-43b9-a944-a6b953190af5)
+- [Manage another person's mail and calendar items](https://support.microsoft.com/office/manage-another-person-s-mail-and-calendar-items-afb79d6b-2967-43b9-a944-a6b953190af5)

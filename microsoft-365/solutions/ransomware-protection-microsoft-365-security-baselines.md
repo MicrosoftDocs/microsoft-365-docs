@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: 07/16/2021
 audience: ITPro
 ms.topic: how-to
-ms.service: o365-solutions
+ms.service: m365-planning
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -16,7 +16,9 @@ ms.collection:
 - Strat_O365_Enterprise
 - ransomware
 - m365solution-ransomware
-ms.custom: seo-marvel-jun2020
+ms.custom:
+- seo-marvel-jun2020
+- m365-solutions-doc-set
 keywords: ransomware, human-operated ransomware, human operated ransomware, HumOR, extortion attack, ransomware attack, encryption, cryptovirology, zero trust
 description: Use security baselines to protect your Microsoft 365 resources from ransomware attacks.
 ---
@@ -57,7 +59,7 @@ Help prevent initial access to your tenant from an email-based attack with these
 - Enable [Microsoft Defender Antivirus email scanning](/microsoft-365/security/defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus).
 - Use Microsoft Defender for Office 365 for [enhanced phishing protection](/microsoft-365/security/office-365-security/anti-phishing-protection-about) and coverage against new threats and polymorphic variants.
 - Check your Office 365 email filtering settings to ensure you block spoofed emails, spam, and emails with malware. Use Defender for Office 365 for enhanced phishing protection and coverage against new threats and polymorphic variants. Configure Defender for Office 365 to [recheck links on click](/microsoft-365/security/office-365-security/safe-links-about) and [delete delivered mails](/microsoft-365/security/office-365-security/zero-hour-auto-purge) in response to newly acquired threat intelligence.
-- Review and update to the latest [recommended settings for EOP and Defender for Office 365 security](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365).
+- Review and update to the latest [recommended email and collaboration threat policy settings for cloud organizations](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365).
 - Configure Defender for Office 365 to [recheck links on click](/microsoft-365/security/office-365-security/safe-links-policies-configure) and delete delivered mails in response to newly acquired threat intelligence.
 
 ## Additional baselines

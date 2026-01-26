@@ -16,6 +16,10 @@ items:
           href: microsoft-365-network-connectivity-principles.md
         - name: Assessing Microsoft 365 network connectivity
           href: assessing-network-connectivity.md
+        - name: Implications when using network intermediation to decrypt or manipulate
+            Microsoft 365 traffic
+          href: network-intermediation.md
+          displayName: TLS, SSL, inspection, break and inspect, decrypt, inspect, network inspection
         - name: Plan for network devices that connect to Microsoft 365 services
           href: plan-for-network-devices.md
         - name: Network and migration planning for Microsoft 365
@@ -125,7 +129,7 @@ items:
           href: setup-guides-for-microsoft-365.md
         - name: Integration
           items: 
-            - name: Integrated Apps and Microsoft Entra ID
+            - name: Custom Apps and Microsoft Entra ID
               href: integrated-apps-and-azure-ads.md
             - name: Integration with on-premises
               href: microsoft-365-integration.md
@@ -182,8 +186,8 @@ items:
                   href: microsoft-365-mrs-source-delays-service-alerts.md
                 - name: Service advisories for OAB size limits
                   href: microsoft-365-oab-size-limit-service-advisory.md
-            - name: Microsoft 365 Apps monitoring
-              href: microsoft-365-apps-monitoring.md
+            - name: Microsoft Entra monitoring
+              href: microsoft-entra-monitoring.md
             - name: Microsoft 365 Teams monitoring
               href: microsoft-365-teams-monitoring.md
             - name: Microsoft 365 for the web monitoring
@@ -196,6 +200,8 @@ items:
           href: microsoft-365-inter-tenant-collaboration.md
         - name: Cross-tenant mailbox migration
           href: cross-tenant-mailbox-migration.md
+        - name: Cross-tenant multitenant migration
+          href: cross-tenant-multitenant-migration.md
         - name: Cross-tenant identity mapping
           href: cross-tenant-identity-mapping.md
 
@@ -216,6 +222,24 @@ items:
             - name: Multitenant org FAQ
               href: multitenant-org-faq.md
 
+        - name: Cross-tenant migration with orchestrator
+          items:
+            - name: Overview
+              href: migration-orchestrator-1-overview.md
+            - name: Planning and prerequisites
+              href: migration-orchestrator-2-planning-prerequisites.md
+            - name: Tenant configuration
+              href: migration-orchestrator-3-tenant-config.md
+            - name: User preparation
+              href: migration-orchestrator-4-user-prep.md
+            - name: Running the migration
+              href: migration-orchestrator-5-running-migration.md
+            - name: Post-migration
+              href: migration-orchestrator-6-post-migration.md
+            - name: End-user experience
+              href: migration-orchestrator-7-end-user-exp.md
+            - name: FAQ
+              href: migration-orchestrator-8-faq.md
         - name: Cross-tenant OneDrive migration
           items:
             - name: Cross-tenant OneDrive migration overview
@@ -274,6 +298,8 @@ items:
           items: 
             - name: Microsoft 365 Multi-Geo
               href: microsoft-365-multi-geo.md
+            - name: Microsoft 365 Multi-Geo Commitments
+              href: microsoft-365-multi-geo-commitments.md
             - name: Plan
               items: 
                 - name: Plan for multi-geo
@@ -286,6 +312,9 @@ items:
               items: 
                 - name: Configure multi-geo
                   href: multi-geo-tenant-configuration.md
+                - name: Configure Multi-Geo In-Region Routing
+                  href: configure-multi-geo-in-region-routing.md
+                  displayName: Configure Multi-Geo In-Region Routing
                 - name: Configure preferred data location
                   href: /azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation?toc=/microsoft-365/Enterprise/toc.json&bc=/microsoft-365/enterprise/breadcrumb/toc.json
                 - name: Configure search
@@ -312,7 +341,7 @@ items:
               href: m365-dr-workload-spo.md
             - name: Microsoft Teams
               href: m365-dr-workload-teams.md
-            - name: Microsoft 365 Copilot
+            - name: Microsoft 365 Copilot and Copilot Chat
               href: m365-dr-workload-copilot.md
             - name: Microsoft Defender for Office P1
               href: m365-dr-workload-mdo-p1.md
@@ -320,16 +349,16 @@ items:
               href: m365-dr-workload-office-for-web.md
             - name: Viva Connections
               href: m365-dr-workload-viva-connections.md
-            - name: Viva Topics
-              href: m365-dr-workload-viva-topics.md
             - name: Microsoft Purview
               href: m365-dr-workload-purview.md
             - name: Other Services
               href: m365-dr-workload-other.md
-        - name: Legacy Move Program
-          href: m365-dr-legacy-move-program.md
-        - name: Where is my data stored? 
-          href: o365-data-locations.md
+        - name: Data Location
+          items:
+            - name: Data Location Card
+              href: m365-dr-data-location.md
+            - name: Where is my data stored? 
+              href: o365-data-locations.md
 
 - name: Identity
   items: 

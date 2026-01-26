@@ -1,6 +1,6 @@
 ---
 title: "Microsoft 365 Isolation and Access Control in Microsoft Entra ID"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 06/28/2024

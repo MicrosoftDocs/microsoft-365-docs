@@ -2,13 +2,13 @@
 title: "Step 3: Deploy security and compliance for hybrid workers"
 f1.keywords:
 - NOCSH
-author: brendacarter
-ms.author: bcarter
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 ms.date: 06/10/2020
 audience: ITPro
 ms.topic: how-to
-ms.service: o365-solutions
+ms.service: m365-planning
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -17,7 +17,7 @@ ms.collection:
 - remotework
 - m365solution-remotework
 - m365solution-scenario
-ms.custom:
+ms.custom: m365-solutions-doc-set
 description: Use Microsoft 365 security and compliance services to protect your apps, data, and devices for hybrid workers.
 ---
 
@@ -47,11 +47,10 @@ Protect your applications and data with these security features of Microsoft 365
 |Capability or feature|Why I need it|Licensing|
 |---|---|---|
 |Microsoft Defender for Office 365|Protect your Microsoft 365 apps and data—such as email messages, Office documents, and collaboration tools—from attack. <p> Microsoft Defender for Office 365 collects and analyzes signals from your apps for detection, investigation, and remediation of security risks and safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. It also provides automated tenant configuration assessment and configuration tooling for standard and strict security postures.|Microsoft 365 E3 or E5|
-|Malware protection|Microsoft Defender Antivirus and Device Guard provides device-based malware protection. <p> SharePoint Online automatically scans file uploads for known malware. <p> Exchange Online Protection (EOP) secures cloud mailboxes.|Microsoft 365 E3 or E5|
-|Microsoft Defender for Endpoint|Protect your organization’s devices from cyber threats and data breaches and detect, investigate, and respond to advanced threats.|Microsoft 365 E5|
+|Malware protection|Microsoft Defender Antivirus and Device Guard provides device-based malware protection. <p> SharePoint Online automatically scans file uploads for known malware. <p> The built-in security features for all cloud mailboxes secures email.|Microsoft 365 E3 or E5|
+|Microsoft Defender for Endpoint|Protect your organization's devices from cyber threats and data breaches and detect, investigate, and respond to advanced threats.|Microsoft 365 E5|
 |Defender for Cloud Apps|Protect your cloud-based services—both Microsoft 365 and other SaaS apps—from attack.|Microsoft 365 E5 or individual Defender for Cloud Apps licenses|
 |Microsoft Entra ID Protection|Automate detection and remediation of identity-based risks. <p>Create risk-based Conditional Access policies to require multi-factor authentication (MFA) for risky sign-ins.|Microsoft 365 E5 or E3 with Microsoft Entra ID P2 licenses|
-||||
 
 You first step should be to learn about and use [Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score).
 
@@ -74,7 +73,7 @@ Comply with internal policies or regulatory requirements with these compliance f
 |Compliance Manager|See an overall score of your current compliance configuration and recommendations for improving it in the Microsoft Purview portal.|Microsoft 365 E3 or E5|
 |Communication Compliance|Detect, capture, and take remediation actions for inappropriate messages in your organization.|Microsoft 365 E5 or Microsoft 365 E3 with the Compliance or Insider Risk Management add-ons|
 |Insider Risk Management|Detect, investigate, and act on malicious and inadvertent risks in your organization. Microsoft 365 can detect these kinds of risks even when a worker is using an unmanaged device.|Microsoft 365 E5 or Microsoft 365 E3 with the Compliance or Insider Risk Management add-ons|
-||||
+
 
 See [Quick tasks for getting started with Microsoft Purview](../compliance/compliance-quick-tasks.md) for more information.
 

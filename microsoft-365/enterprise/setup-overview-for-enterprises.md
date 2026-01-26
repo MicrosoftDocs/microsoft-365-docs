@@ -1,6 +1,6 @@
 ---
 title: "Deploy Microsoft 365 Enterprise for your organization"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 09/05/2024

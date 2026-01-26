@@ -1,6 +1,6 @@
 ---
 title: "Cmdlet references for Microsoft 365 services"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 06/27/2024
@@ -50,7 +50,7 @@ For connection instructions for Exchange Online PowerShell, see [Connect to Exch
 
 ## SharePoint Online PowerShell cmdlets
 
-For SharePoint Online cmdlets, see [Index of Windows PowerShell for SharePoint Online cmdlets](/powershell/module/sharepoint-online/).
+For SharePoint Online cmdlets, see [Microsoft.Online.SharePoint.PowerShell Module](/powershell/module/microsoft.online.sharepoint.powershell/).
 
 For connection instructions for SharePoint Online PowerShell, see [Set up the SharePoint Online Management Shell Windows PowerShell environment](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 

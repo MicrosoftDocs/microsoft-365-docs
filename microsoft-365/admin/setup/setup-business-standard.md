@@ -10,7 +10,7 @@ audience: Admin
 ms.topic: install-set-up-deploy
 ms.service: microsoft-365-business
 ms.localizationpriority: high
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
 - highpri
@@ -19,6 +19,7 @@ ms.collection:
 - Adm_TOC
 - Adm_O365_Setup
 - TRN_SMB
+- operations-pod
 ms.custom:
 - VSBFY23
 - TRN_M365B

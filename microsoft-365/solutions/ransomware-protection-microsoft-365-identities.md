@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: 07/16/2021
 audience: ITPro
 ms.topic: how-to
-ms.service: o365-solutions
+ms.service: m365-planning
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -16,7 +16,9 @@ ms.collection:
 - Strat_O365_Enterprise
 - ransomware
 - m365solution-ransomware
-ms.custom: seo-marvel-jun2020
+ms.custom:
+- seo-marvel-jun2020
+- m365-solutions-doc-set
 keywords: ransomware, human-operated ransomware, human operated ransomware, HumOR, extortion attack, ransomware attack, encryption, cryptovirology, zero trust
 description: Use secure sign-ins and Conditional Access to protect your Microsoft 365 resources from ransomware attacks.
 ---
@@ -39,7 +41,7 @@ Next, implement the [Common identity and device access policies](/microsoft-365/
 
 For user sign-ins, these policies include:
 
-- Requiring multi-factor authentication (MFA) for [priority accounts](/microsoft-365/admin/setup/priority-accounts) (immediately) and eventually all user accounts.
+- Requiring multi-factor authentication (MFA) for [priority accounts](/microsoft-365/admin/security-and-compliance/priority-accounts) (immediately) and eventually all user accounts.
 - Requiring high-risk sign-ins to use MFA.
 - Requiring high-risk users with high-risk sign-ins to change their passwords.
 

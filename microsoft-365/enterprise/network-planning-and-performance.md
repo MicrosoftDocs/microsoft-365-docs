@@ -1,6 +1,6 @@
 ---
 title: "Network planning and performance tuning for Microsoft 365"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 04/09/2025

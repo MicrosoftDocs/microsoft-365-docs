@@ -1,6 +1,6 @@
 ---
 title: "Turn off directory synchronization for Microsoft 365"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 09/03/2024

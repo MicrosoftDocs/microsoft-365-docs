@@ -1,7 +1,7 @@
 items:
 - name: Microsoft 365 admin center help
   href: index.yml
-  items: 
+  items:
     - name: Small business help & learning
       href: https://go.microsoft.com/fwlink/?linkid=2224585
     - name: YouTube - Microsoft 365 help for small businesses
@@ -19,7 +19,7 @@ items:
         - name: Sign up for Microsoft 365 Business Premium
           href: ../business-premium/get-microsoft-365-business-premium.md
         - name: Sign up for Microsoft 365 Business Standard
-          items: 
+          items:
            - name: Sign up for Microsoft 365 Business Standard
              href: ../admin/simplified-signup/signup-business-standard.md
            - name: Set up Microsoft 365 Business Standard
@@ -73,7 +73,7 @@ items:
         - name: Customize Sign-in page
           href: setup/customize-sign-in-page.md
         - name: Customize your organization theme
-          href: setup/customize-your-organization-theme.md  
+          href: setup/customize-your-organization-theme.md
         - name: Access on-premises users and resources
           items:
             - name: Synchronize domain users to Microsoft 365
@@ -97,15 +97,15 @@ items:
         - name: Stay on top of changes
           href: manage/stay-on-top-of-updates.md
         - name: Manage multiple tenants
-          href: multi-tenant/manage.md   
+          href: multi-tenant/manage.md
     - name: Manage users, groups, and passwords
-      items: 
+      items:
         - name: Users
           items:
            - name: Add users
              href: add-users/add-users.md
            - name: Assign or unassign licenses for users
-             href: manage/assign-licenses-to-users.md  
+             href: manage/assign-licenses-to-users.md
            - name: Assign admin roles
              href: add-users/assign-admin-roles.md
            - name: Turn pronouns on or off
@@ -118,11 +118,13 @@ items:
              href: add-users/change-a-user-name-and-email-address.md
            - name: Change user profile photos
              href: add-users/change-user-profile-photos.md
+           - name: Delete a user account
+             href: add-users/delete-a-user.md
            - name: Restore a user
              href: add-users/restore-user.md
            - name: Create template to add users
              href: add-users/create-and-use-a-template-to-add-users.md
-           - name: Upgrade users to the latest apps 
+           - name: Upgrade users to the latest apps
              href: setup/upgrade-users-to-latest-office-client.md
         - name: Remove a former employee
           items:
@@ -141,8 +143,8 @@ items:
            - name: Step 6. Remove the Microsoft 365 license from a former employee
              href: add-users/remove-former-employee-step-6.md
            - name: Step 7. Delete a former employee's user account
-             href: add-users/remove-former-employee-step-7.md             
-        - name: Groups 
+             href: add-users/remove-former-employee-step-7.md
+        - name: Groups
           items:
            - name: Groups overview
              href: create-groups/office-365-groups.md
@@ -157,7 +159,7 @@ items:
            - name: Assign or unassign licenses for groups
              href: manage/manage-group-licenses.md
            - name: Microsoft 365 group mailbox size management
-             href: create-groups/group-mailbox-size-management.md 
+             href: create-groups/group-mailbox-size-management.md
            - name: Add or remove group members
              href: create-groups/add-or-remove-members-from-groups.md
            - name: Restore a deleted group
@@ -166,22 +168,18 @@ items:
              href: create-groups/manage-guest-access-in-groups.md
            - name: Manage ownerless groups and teams
              href: create-groups/ownerless-groups-teams.md
-        - name: Passwords 
+        - name: Passwords
           items:
            - name: Reset passwords
              href: add-users/reset-passwords.md
            - name: Let users reset passwords
              href: add-users/let-users-reset-passwords.md
-           - name: Set passwords to never expire
-             href: add-users/set-password-to-never-expire.md
            - name: Password policy recommendations
              href: misc/password-policy-recommendations.md
-           - name: Turn off strong passwords
-             href: add-users/strong-password.md
            - name: Set the password expiration policy
              href: manage/set-password-expiration-policy.md
     - name: Manage email and calendars
-      items: 
+      items:
         - name: About user email settings
           href: email/office-365-user-email-settings.md
         - name: Add another email alias for a user
@@ -189,7 +187,7 @@ items:
         - name: Use your custom domain
           href: email/change-email-address.md
         - name: Select the domain to use for email from Microsoft 365 products
-          href: email/select-domain-to-use-for-email-from-microsoft-365-products.md          
+          href: email/select-domain-to-use-for-email-from-microsoft-365-products.md
         - name: Migrate email and contacts to Microsoft 365
           href: setup/migrate-email-and-contacts-admin.md
         - name: Create signatures and disclaimers
@@ -199,7 +197,7 @@ items:
         - name: Set up email forwarding
           href: email/configure-email-forwarding.md
         - name: Shared mailboxes
-          items: 
+          items:
             - name: About shared mailboxes
               href: email/about-shared-mailboxes.md
             - name: Create a shared mailbox
@@ -239,7 +237,7 @@ items:
             - name: Create DNS records at any DNS host
               href: get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md
             - name: Connect your DNS records at IONOS
-              href: dns/create-dns-records-at-ionos-com.md 
+              href: dns/create-dns-records-at-ionos-com.md
             - name: Connect your DNS records at 123-reg.co.uk
               href: dns/create-dns-records-at-123-reg-co-uk.md
             - name: Connect your DNS records at Amazon Web Services (AWS)
@@ -266,14 +264,28 @@ items:
           href: get-help-with-domains/find-and-fix-issues.md
     - name: Manage your data and services
       items:
-         - name: Copilot in Microsoft 365 admin centers
+         - name: Copilot in Microsoft 365 admin center
            href: /copilot/microsoft-365/copilot-for-microsoft-365-admin
          - name: Microsoft 365 Copilot extensibility
            items:
-            - name: Manage agents for Copilot
+            - name: Manage Copilot agents in the Microsoft 365 admin center
               href: manage/manage-copilot-agents-integrated-apps.md
-            - name: Manage shared agents
-              href: manage/manage-shared-agents.md
+            - name: Agent 365 Overview page
+              href: manage/agent-365-overview.md
+            - name: Agent Registry
+              items:
+              - name: Agent Registry
+                href: manage/agent-registry.md
+              - name: Manage agent instances
+                href: manage/manage-agent-instances.md
+              - name: Manage Connected Agents for researcher
+                href: manage/manage-connected-agents-for-researcher.md
+            - name: Agent Map
+              href: manage/agent-map.md
+            - name: Manage Tools for Agent 365
+              href: manage/manage-tools-for-agent.md
+            - name: Agent Settings
+              href: manage/agent-settings.md
             - name: Microsoft Graph connectors for Microsoft Search
               href: /microsoftsearch/connectors-overview
          - name: Monitor Microsoft 365 activity by using reports
@@ -282,16 +294,20 @@ items:
               href: activity-reports/activity-reports.md
             - name: Active Users
               href: activity-reports/active-users-ww.md
-            - name: Agent usage in Microsoft 365 Copilot
-              href: activity-reports/agent-usage.md
             - name: Microsoft browser usage
               href: activity-reports/browser-usage-report.md
             - name: Microsoft 365 Copilot readiness
               href: activity-reports/microsoft-365-copilot-readiness.md
             - name: Microsoft 365 Copilot usage
               href: activity-reports/microsoft-365-copilot-usage.md
+            - name: Microsoft 365 Copilot Agent usage
+              href: activity-reports/microsoft-365-copilot-agents-new.md
             - name: Microsoft 365 Copilot Chat usage
               href: activity-reports/microsoft-copilot-usage.md
+            - name: Microsoft 365 Copilot Search usage
+              href: activity-reports/microsoft-365-copilot-search-usage.md
+            - name: Microsoft 365 Copilot credits
+              href: activity-reports/microsoft-365-copilot-credits.md
             - name: Dynamics 365 Customer Voice activity
               href: activity-reports/forms-pro-activity-ww.md
             - name: Email activity
@@ -309,7 +325,7 @@ items:
             - name: Microsoft Office activations
               href: activity-reports/microsoft-office-activations-ww.md
             - name: Microsoft 365 Teams apps usage reports
-              href: activity-reports/microsoft-teams-apps-usage.md  
+              href: activity-reports/microsoft-teams-apps-usage.md
             - name: Microsoft Teams device usage
               href: activity-reports/microsoft-teams-device-usage-preview.md
             - name: Microsoft Teams usage activity
@@ -330,6 +346,8 @@ items:
               href: activity-reports/sharepoint-activity-ww.md
             - name: SharePoint site usage
               href: activity-reports/sharepoint-site-usage-ww.md
+            - name: SharePoint storage
+              href: activity-reports/sharepoint-storage-reports.md
             - name: Visio activity
               href: activity-reports/visio-activity.md
             - name: Viva Goals activity
@@ -350,7 +368,7 @@ items:
               href: adoption/adoption-score.md
             - name: Content collaboration
               href: adoption/content-collaboration.md
-            - name: Communication 
+            - name: Communication
               href: adoption/communication.md
             - name: Mobility
               href: adoption/mobility.md
@@ -372,6 +390,10 @@ items:
            href: misc/experience-insights-dashboard.md
          - name: Change your organization contact info
            href: manage/change-address-contact-and-more.md
+         - name: Manager people data and experiences
+           href: ./manage/people-settings-in-microsoft-365-admin-center.md
+         - name: Customize your organization profile cards
+           href: ./manage/customize-profile-cards.md
          - name: Update your admin contact info
            href: manage/update-phone-number-and-email-address.md
          - name: Customize the app launcher
@@ -383,16 +405,16 @@ items:
          - name: Organizational messages
            href: misc/organizational-messages-microsoft-365.md
          - name: Place a mailbox on Litigation Hold
-           href: misc/create-litigation-hold-mac.md           
-         - name: Integrated apps
+           href: misc/create-litigation-hold-mac.md
+         - name: Integrated apps portal
            items:
-            - name: What is Integrated Apps
+            - name: What is the integrated apps portal
               href: manage/test-and-deploy-microsoft-365-apps.md
             - name: Manage Office add-ins
-              href: manage/office-addins.md 
-            - name: Teams apps that work on Outlook & Microsoft 365
+              href: manage/office-addins.md
+            - name: Apps for Microsoft 365 that work across application hosts
               href: manage/teams-apps-work-on-outlook-and-m365.md
-            - name: Teams apps that only work on Teams
+            - name: Apps for Microsoft 365 that only work on Teams
               href: manage/teams-apps-work-only-on-teams.md
             - name: SaaS Linked Apps
               href: manage/saas-linked-apps.md
@@ -402,26 +424,26 @@ items:
            items:
             - name: Requirements for centralized deployment of add-ins
               href: manage/centralized-deployment-of-add-ins.md
-            - name: Deploy add-ins in the admin center 
+            - name: Deploy add-ins in the admin center
               href: manage/manage-deployment-of-add-ins.md
-            - name: Manage add-ins in the admin center 
-              href: manage/manage-addins-in-the-admin-center.md      
-            - name: Centralized Deployment FAQ
+            - name: Manage add-ins in the admin center
+              href: manage/manage-addins-in-the-admin-center.md
+            - name: Centralized deployment FAQ
               href: manage/centralized-deployment-faq.yml
             - name: Deploy add-ins in GCC High environments
               href: manage/deploy-addins-for-gcch.md
          - name: Manage industry news
            href: manage/manage-industry-news.md
-         - name: Manage Office Scripts settings 
-           href: manage/manage-office-scripts-settings.md  
+         - name: Manage Office Scripts settings
+           href: manage/manage-office-scripts-settings.md
          - name: Find a partner or a re-seller
            href: manage/find-your-partner-or-reseller.md
          - name: Manage Microsoft feedback for your organization
-           href: /admin/manage/manage-feedback-ms-org.md
+           href: manage/manage-feedback-ms-org.md
          - name: Set up release options
            href: manage/release-options-in-office-365.md
          - name: Power BI usage analytics
-           items: 
+           items:
            - name: About usage analytics
              href: usage-analytics/usage-analytics.md
            - name: Enable usage analytics
@@ -434,7 +456,7 @@ items:
              href: usage-analytics/active-user-in-usage-reports.md
            - name: Customize reports
              href: usage-analytics/customize-reports.md
-           - name: Usage analytics with Microsoft 365 GCC 
+           - name: Usage analytics with Microsoft 365 GCC
              href: usage-analytics/connect-to-gcc-data-with-usage-analytics.md
            - name: About the usage analytics data model
              href: usage-analytics/usage-analytics-data-model.md
@@ -454,68 +476,82 @@ items:
              href: manage/servicenow-troubleshooting.md
            - name: Integrate Microsoft 365 with ServiceNow Virtual Agent
              href: manage/servicenow-virtual-agent-integration.md
-           - name: Microsoft 365 support integration guide for version 1.0.11 and earlier 
-             items:
-              - name: Configuration overview
-                href: manage/servicenow-overview-v1.md
-              - name: Configure basic authentication
-                href: manage/servicenow-basic-authentication-v1.md
-              - name: Configure Microsoft 365 support integration with Microsoft Entra auth Token
-                href: manage/servicenow-aad-oauth-token-v1.md
-              - name: Testing the configuration
-                href: manage/servicenow-testing-the-configuration-v1.md
-              - name: Troubleshooting
-                href: manage/servicenow-troubleshooting-v1.md
-              - name: Integrate Microsoft 365 with ServiceNow Virtual Agent
-                href: manage/servicenow-virtual-agent-integration-v1.md
     - name: Manage subscriptions and billing
       href: ../commerce/index.yml
     - name: Secure your organization
-      items: 
-        - name: Multi-factor authentication for Microsoft 365
-          href: security-and-compliance/multi-factor-authentication-microsoft-365.md
-        - name: Set up multi-factor authentication
-          href: security-and-compliance/set-up-multi-factor-authentication.md
-        - name: Manage and monitor priority accounts
-          href: setup/priority-accounts.md
-        - name: Increase threat protection for Microsoft 365 for business
-          href: security-and-compliance/increase-threat-protection.md
-        - name: Turn on Idle session timeout
-          href: manage/idle-session-timeout-web-apps.md
-        - name: A guide to GDPR compliance
-          href: security-and-compliance/gdpr-compliance.md
-    - name: Manage devices and app data
       items:
-        - name: Device and app data protection methods
-          href: basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
-        - name: Manage user consent to apps
-          href: misc/user-consent.md
-        - name: Basic Mobility and Security
+        - name: Microsoft 365 for business security overview
+          href: security-and-compliance/m365b-security-overview.md
+        - name: What's new in security in Microsoft 365 for business
+          href: security-and-compliance/m365b-security-whats-new.md
+        - name: Microsoft 365 Business Premium security - frequently asked questions
+          href: security-and-compliance/m365bp-security-faq.yml
+        - name: Get started
           items:
+          - name: Microsoft 365 for business security best practices
+            href: security-and-compliance/m365b-security-best-practices.md
+          - name: Set up information protection in Microsoft 365 Business Premium
+            href: security-and-compliance/m365bp-information-protection.md
+          - name: Why should I choose Microsoft 365 Business Premium?
+            href: security-and-compliance/m365bp-security-benefits.md
+          - name: Monitor Microsoft 365 Business Premium and Defender for Business
+            href: security-and-compliance/m365bp-security-monitor.md
+          - name: Add Microsoft Defender Suite for Business Premium to your subscription
+            href: security-and-compliance/add-defender-suite-business-premium.md
+          - name: Secure Microsoft 365 Copilot for small businesses
+            href: security-and-compliance/m365b-copilot-security.md
+          - name: GDPR simplified - A guide for your small business
+            href: security-and-compliance/gdpr-compliance.md
+        - name: Account security
+          items:
+            - name: Multi-factor authentication in Microsoft 365
+              href: security-and-compliance/multi-factor-authentication-microsoft-365.md
+            - name: Set up multi-factor authentication
+              href: security-and-compliance/set-up-multi-factor-authentication.md
+            - name: Admin account security in Microsoft 365 for business
+              href: security-and-compliance/m365b-account-security-admins.md
+            - name: Manage and monitor priority accounts
+              href: security-and-compliance/priority-accounts.md
+        - name: Email & Collaboration security
+          items:
+            - name: Email and collaboration security in Microsoft 365 for business
+              href: security-and-compliance/m365b-email-collaboration-security.md
+            - name: Protect users against phishing and other attacks in Microsoft 365 for business
+              href: security-and-compliance/m365b-users-phishing-spam-malware.md
+        - name: Device security
+          items:
+          - name: Device protection in Microsoft 365 Business Premium
+            items:
+            - name: Microsoft Intune and Microsoft Defender for Business
+              href: security-and-compliance/m365bp-devices-protection.md
+            - name: Device management and application management in Microsoft 365 Business Premium
+              href: security-and-compliance/m365bp-devices-enrollment.md
+            - name: Device groups and Microsoft Intune categories in Microsoft 365 Business Premium
+              href: security-and-compliance/m365bp-devices-groups-categories.md
+          - name: Basic Mobility and Security
+            items:
             - name: Overview of Basic Mobility and Security
-              href: basic-mobility-security/overview.md
-            - name: Compare Basic Mobility and Security and Intune
-              href: basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
-            - name: Capabilities of Basic Mobility and Security
-              href: basic-mobility-security/capabilities.md  
+              href: security-and-compliance/m365b-devices-basic-mobility-security-overview.md
             - name: Set up Basic Mobility and Security
-              href: basic-mobility-security/set-up.md
-            - name: Create device security policies
-              href: basic-mobility-security/create-device-security-policies.md
-            - name: Create an APNs certificate for iOS devices
-              href: basic-mobility-security/create-an-apns-certificate-for-ios-devices.md
-            - name: Manage device access settings
-              href: basic-mobility-security/manage-device-access-settings.md
-            - name: Manage enrolled devices
-              href: basic-mobility-security/manage-enrolled-devices.md
-            - name: Enroll your mobile device
-              href: basic-mobility-security/enroll-your-mobile-device.md
-            - name: Frequently asked questions
-              href: basic-mobility-security/frequently-asked-questions.yml
-            - name: Wipe mobile devices
-              href: basic-mobility-security/wipe-mobile-device.md
-            - name: Turn off Basic Mobility and Security
-              href: basic-mobility-security/turn-off.md
+              href: security-and-compliance/m365b-devices-basic-mobility-security-set-up.md
+            - name: Configure policies in Basic Mobility and Security
+              href: security-and-compliance/m365b-devices-basic-mobility-security-policies-configure.md
+            - name: Enroll devices in Basic Mobility and Security
+              href: security-and-compliance/m365b-devices-basic-mobility-security-enroll-devices.md
+            - name: View device details in Basic Mobility and Security
+              href: security-and-compliance/m365b-devices-basic-mobility-security-view-device-details.md
+            - name: Wipe devices in Basic Mobility and Security
+              href: security-and-compliance/m365b-devices-basic-mobility-security-wipe-devices.md
+            - name: Turn off Basic Mobility and Security enforcement
+              href: security-and-compliance/m365b-devices-basic-mobility-security-turn-off.md
+          - name: Use Windows Autopilot to set up or reset devices
+            href: /autopilot/overview?toc=/microsoft-365/admin/security-and-compliance/toc.json&bc=/microsoft-365/admin/security-and-compliance/breadcrumb/toc.json
+          - name: Manage Microsoft 365 installation options for devices
+            href: /DeployOffice/manage-software-download-settings-office-365?toc=/microsoft-365/admin/security-and-compliance/toc.json&bc=/microsoft-365/admin/security-and-compliance/breadcrumb/toc.json
+          - name: Manage user consent to apps
+            href: misc/user-consent.md
+          - name: Turn on Idle session timeout
+            href: manage/idle-session-timeout-web-apps.md
     - name: Switch from Google Workspace to M365
       items:
         - name: Overview
@@ -526,7 +562,7 @@ items:
           href: moveto-microsoft-365/set-up-microsoft-365-forgoogle.md
         - name: Set up security policies for Windows devices
           href: ../business-premium/m365bp-secure-windows-devices.md?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
-        - name: Add Google Workspace Domain 
+        - name: Add Google Workspace Domain
           href: moveto-microsoft-365/add-google-domain.md
         - name: Install Office apps and Microsoft Teams
           href: setup/install-applications.md?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
@@ -539,7 +575,7 @@ items:
         - name: Cancel Google Workspace
           href: moveto-microsoft-365/cancel-google.md
     - name: Work with customers
-      items: 
+      items:
         - name: Share sites and files with guest users
           href: manage/share-sites-with-external-users.md
         - name: Share calendars with guest users
@@ -550,20 +586,42 @@ items:
           href: https://support.microsoft.com/office/943507a9-8583-4c58-b5d2-8ec8265e04e5
         - name: Join a Teams meeting with guest users
           href: https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508
-    - name: Microsoft 365 feature descriptions
-      href: m365-feature-descriptions.md
-    - name: Engineering Direct Portal
-      href: ../enterprise/engineering-direct-portal.md?toc=/microsoft-365/admin/toc.json&bc=/microsoft-365/admin/breadcrumb/toc.json
+    - name: Enhanced Engagements
+      items:
+        - name: Office Engineering Direct (OED)
+          items:
+          - name: What is Engineering Direct?
+            href: ../enterprise/office-engineering-direct.md
+          - name: Overview
+            href: ../enterprise/engineering-direct-overview.md
+          - name: Engagements
+            href: ../enterprise/engineering-direct-engagements.md
+          - name: Diagnostics
+            href: ../enterprise/engineering-direct-diagnostics.md
+          - name: Design Change Requests (DCR)
+            href: ../enterprise/engineering-direct-design-change-requests.md
+        - name: Mission Critical Services (MCS)
+          items:
+          - name: What is Enhanced Engagements?
+            href: ../enterprise/microsoft-365-admin-enhanced-engagements.md
+          - name: Overview
+            href: ../enterprise/microsoft-365-admin-overview-enhanced-engagements.md
+          - name: Engagements
+            href: ../enterprise/microsoft-365-admin-engagements.md
+          - name: Diagnostics
+            href: ../enterprise/microsoft-365-admin-diagnostics.md
+          - name: Design Change Requests (DCR)
+            href: ../enterprise/microsoft-365-admin-design-change-requests.md
     - name: Troubleshoot
-      href: /office/troubleshoot/  
+      href: /office/troubleshoot/
     - name: Contact support
       items:
         - name: Get support for Microsoft 365 for business
           href: get-help-support.md
-        - name: Case creation and diagnostic data
+        - name: Case creation and data access
           href: support-diagnostic-information-collection.md
     - name: Find support phone numbers
       href: https://support.microsoft.com/topic/customer-service-phone-numbers-c0389ade-5640-e588-8b0e-28de8afeb3f2#ID0EBBD=signinorgid
     - name: Navigation guide
       href: ../microsoft-365-docs-navigation-guide.md?bc=%2foffice365%2fadmin%2fbreadcrumb%2ftoc.json&toc=%2foffice365%2fadmin%2ftoc.json
-      
+

@@ -27,7 +27,7 @@ ms.date: 04/24/2025
 Create and manage frontline teams in bulk to drive collaboration for every location in your frontline workforce. Team membership of your frontline teams is automatically synced with your frontline workers’ Microsoft Entra attributes. As team owners, frontline managers at each of your locations, like department heads, store leads, and warehouse managers, can manually add or remove members. 
 
 > [!NOTE]
-> If you would like to provide feedback and help improve this feature, fill out this [form](https://forms.office.com/r/MPfxrGG9h4).
+> If you would like the opportunity to participate in upcoming private preivew features, fill out this [form](https://forms.office.com/r/Q0xhM3KUBG).
 
 ## How it works
 

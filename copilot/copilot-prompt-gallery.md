@@ -2,15 +2,16 @@
 title: "Understand Copilot Prompt Gallery"
 f1.keywords:
 - NOCSH
-ms.author: camillepack
-author: camillepack
-manager: scotv
+ms.author: mabond
+author: mkbond007
+manager: dansimp
 ms.date: 12/03/2024
+ms.update-cycle: 180-days
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - scotvorg
 - m365copilot
 - magic-ai-copilot
@@ -19,7 +20,7 @@ description: "Learn about the Copilot Prompt Gallery and how it works with your 
 
 # Understand Copilot Prompt Gallery - admin guide
 
-Copilot Prompt Gallery is a resource of Microsoft-created prompts, videos, and articles that help users understand and use Microsoft Copilot effectively. Copilot Prompt Gallery is available within Microsoft Copilot and online at [Copilot Prompt Gallery](https://copilot.cloud.microsoft/prompts).
+Copilot Prompt Gallery is a resource of Microsoft-created prompts, videos, and articles that help users understand and use Microsoft Copilot effectively. Copilot Prompt Gallery is available within Microsoft Copilot and online at [Copilot Prompt Gallery](https://m365.cloud.microsoft/copilot-prompts).
 
 As an admin, you can support Copilot Prompt Gallery adoption and success within your organization. This article covers Copilot Prompt Gallery architecture, data flows, security, and privacy.
 
@@ -49,6 +50,6 @@ The prompts are stored in collections within the Substrate Data Store, which is 
 
 ## Related content
 
-- [Copilot Prompt Gallery](https://copilot.cloud.microsoft/prompts)
+- [Copilot Prompt Gallery](https://m365.cloud.microsoft/copilot-prompts)
 - [Microsoft Copilot help & learning](https://support.microsoft.com/copilot-skilling)
 - [Data, Privacy, and Security for Microsoft 365 Copilot](microsoft-365-copilot-privacy.md)

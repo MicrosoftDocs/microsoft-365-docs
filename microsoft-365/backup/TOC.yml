@@ -20,6 +20,8 @@ items:
       href: backup-privacy-security.md
     - name: FAQs
       href: backup-faq.md
+    - name: Video library
+      href: backup-video-library.md
     - name: Microsoft 365 Backup Storage
       items:
             - name: Overview

@@ -1,16 +1,22 @@
 ---
 title: Use Microsoft Teams Assignments LTI app with Blackboard by Anthology
 description: Integrate and use the Microsoft Teams Assignments learning tool interoperability (LTI) app with Blackboard by Anthology.
-author: DaniEASmith
-ms.author: danismith
+author: jennplatt
+ms.author: avering
 manager: mimast
-ms.date: 02/05/2025
+ms.date: 01/14/2026
+last.review.date: 01/14/2026
 ms.topic: how-to
-ms.service: msteams
-ms.subservice: teams-education
+ms.service: microsoft-365-education
+ms.collection:
+- m365-education
+- all-education
 ---
 
 # Use Microsoft Teams Assignments LTI® with Blackboard by Anthology
+
+>[!NOTE]
+>The classic Microsoft OneDrive, OneNote, Teams Assignments, and Reflect LTI apps have been replaced by the [new Microsoft 365 LTI](https://aka.ms/LMSAdminDocs). The classic apps will be sunset on September 17, 2026. After that date, the classic apps and any content links in courses will stop working. However, the files, notebooks, teams, meetings, and check-ins created by the classic app will continue to be accessible through Microsoft 365. For further guidance on moving your users and courses to the new Microsoft 365 LTI experiences and migrating content links, review the [migration guidance for the classic LTI apps](/microsoft-365/lti/microsoft-365-lti-first-time-configuration#migration-guidance).
 
 This guide provides steps for deploying the Microsoft Teams Assignments learning tool interoperability® (LTI®) app in Blackboard.
 
@@ -22,7 +28,7 @@ For an overview of all of the Microsoft integrations for learning management sys
 >The user who performs this integration should have a System Administrator system role in Blackboard.
 
 > [!IMPORTANT]
-> If you previously deployed the preview version of the integration, you need to re-deploy the tool in Blackboard following the new deployment steps included in this article. Our URLs changed and cannot currently be syncronized into your current preview deployment. The preview deployment should be deleted or hidden as the old URLs will not be supported in the near future and the old deployment will stop working.
+> If you previously deployed the preview version of the integration, you need to re-deploy the tool in Blackboard following the new deployment steps included in this article. Our URLs changed and cannot currently be synchronized into your current preview deployment. The preview deployment should be deleted or hidden as the old URLs will not be supported in the near future and the old deployment will stop working.
 
 > [!IMPORTANT]
 >By installing and using the Teams Assignments LTI app, educators and students can transmit grades to the LMS where the terms of use and privacy policy of that application apply.

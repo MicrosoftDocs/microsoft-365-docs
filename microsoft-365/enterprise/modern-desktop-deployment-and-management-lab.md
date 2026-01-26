@@ -3,11 +3,11 @@ title: Windows and Microsoft 365 deployment lab kit
 description: Learn about where to access the Windows and Office deployment lab kit.
 f1.keywords:
 - NOCSH
-ms.author: aaroncz
+ms.author: frankroj
 author: cdmm12
-manager: aaroncz
-ms.reviewer: hdhaliwal
-ms.date: 04/10/2025
+manager: scotv
+ms.reviewer: mherron
+ms.date: 09/26/2025
 ms.audience: ITPro
 ms.topic: install-set-up-deploy
 ms.service: microsoft-365-enterprise
@@ -30,8 +30,9 @@ The lab provides you with an automatically provisioned virtual lab environment. 
 
 The labs include evaluation versions of the following products:
 
-- NEW! Windows 11 Enterprise, version 24H2
-- NEW! Microsoft Configuration Manager, version 2409
+- NEW! Windows 11 Enterprise, version 25H2
+
+- Microsoft Configuration Manager, version 2409
 - Windows Assessment and Deployment Kit for Windows 11
 - Windows Server 2022
 
@@ -104,7 +105,7 @@ The following sections describe the scenarios supported by the lab guides.
 - Microsoft Defender for Endpoint
 
 > [!NOTE]
-> Please use a broadband internet connection to download this content and allow approximately 30 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory and 300 GB of free space is recommended. The Windows client virtual machines expire 90 days after activation of the lab. New versions of the labs will be published on or before May 26, 2025. For support with this lab, email the lab support alias `winlab_help@microsoft.com`.
+> Use a broadband internet connection to download this content and allow approximately 30 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory and 300 GB of free space is recommended. The Windows client virtual machines expire 90 days after activation of the lab. New versions of the labs will be published on or before February 26, 2026. For support with this lab, email the lab support alias `winlab_help@microsoft.com`.
 
 ## More guidance
 
@@ -116,7 +117,6 @@ The following sections describe the scenarios supported by the lab guides.
 
 ## Related resources
 
-- [Introducing Microsoft 365](https://www.microsoft.com/microsoft-365/default.aspx)
 - [Microsoft 365 for business](https://products.office.com/business/office)
 - [Introducing Enterprise Mobility + Security](https://www.microsoft.com/licensing/product-licensing/enterprise-mobility-security)
 - [Windows for business](https://www.microsoft.com/windows/business)

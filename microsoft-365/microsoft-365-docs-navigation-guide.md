@@ -7,7 +7,7 @@ ms.reviewer: "serdars"
 ms.custom: ""
 ms.topic: article
 author: "samanro"
-ms.author: "samanro"
+ms.author: pamgreen
 manager: pamgreen
 ms.collection: Adm_TOC
 ---

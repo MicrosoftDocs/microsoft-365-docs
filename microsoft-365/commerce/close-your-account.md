@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: emmasheridan, nicholak
+ms.reviewer: patyc
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -16,6 +16,7 @@ ms.collection:
 - scotvorg
 - M365-subscription-management
 - Adm_O365
+- operations-pod
 ms.custom:
 - commerce_subscriptions
 - AdminSurgePortfolio
@@ -27,7 +28,7 @@ ms.custom:
 - campaignIDs-batch1
 search.appverid: MET150
 description: "Learn how to close your business account with Microsoft. All information related to your account is deleted including licenses, users, and user data."
-ms.date: 03/27/2025
+ms.date: 07/30/2025
 ---
 
 # Close your Microsoft business account
@@ -75,13 +76,16 @@ If you have an MCA billing account, you can’t delete a disabled subscription. 
 If you have an MOSA billing account type, use the following steps to delete your disabled subscriptions.
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
-    - If you’re using the **Simplified view**, select **Billing**.
-    - If you’re using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-2. Select the disabled subscription that you want to delete.
-3. On the subscription details page, in the **Subscription and payment settings** section, select **Delete subscription**.
-4. In the **Delete subscription** pane, select **Delete subscription**.
-5. In the **Delete subscription** dialog box, select **Yes**.
-6. For each disabled subscription, repeat steps 1 through 5 until all subscriptions are deleted.
+   - If you’re using the **Simplified view**, select **Billing**.
+   - If you’re using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+1. Select the disabled subscription that you want to delete.
+1. On the subscription details page, in the **Subscription and payment settings** section, select **Delete subscription**.
+1. In the **Delete subscription** pane, select **Delete subscription**.
+1. In the **Delete subscription** dialog box, select **Yes**.
+1. For each disabled subscription, repeat steps 1 through 5 until all subscriptions are deleted.
+
+> [!IMPORTANT]
+> If you have an MCA billing account type, you automatically receive a product called Microsoft Entra ID Free. Because this product helps manage your billing account, you can't cancel it. To learn more, see [Microsoft Entra ID Free](/azure/cost-management-billing/manage/microsoft-entra-id-free).
 
 > [!NOTE]
 > If you're unable to immediately delete a disabled subscription, [contact support](../admin/get-help-support.md).

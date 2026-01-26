@@ -1,7 +1,7 @@
 ---
 title: "Unified cloud.microsoft domain for Microsoft 365 apps"
 description: Describes the new cloud.microsoft domain for Microsoft 365 apps
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 04/09/2025

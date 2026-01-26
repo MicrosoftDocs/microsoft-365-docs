@@ -1,12 +1,11 @@
 ---
-
 title: "Microsoft Adoption Score - Meetings"
 f1.keywords: NOCSH
-ms.author: camillepack
-author: camillepack
+author: efrene
+ms.author: efrene
 manager: scotv
-ms.reviewer:
-ms.date: 10/12/2022
+ms.reviewer: 
+ms.date: 01/23/2026
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -15,16 +14,17 @@ ms.collection:
 - M365-subscription-management
 - scotvorg
 - highpri
-ms.custom:
+- operations-pod
+ms.custom: 
 search.appverid: MET150
-description: "Learn more about Meetings insights score - people experiences Adoption Score." 
+description: "Learn more about Meetings insights score in the Adoption Score report."
 ---
 
-# Meetings insights score – People experiences
+# Meetings insights score
 
 Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
-Adoption Score provides insights into your organization's digital transformation journey through its use of Microsoft 365 and the technology experiences that support it. Your organization's score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar to yours. The meetings category is part of the people experiences measures. To learn more, check out the [Adoption Score overview](adoption-score.md) and read [Microsoft's Privacy Statement](https://privacy.microsoft.com/privacystatement).
+Adoption Score provides insights into your organization's digital transformation journey through its use of Microsoft 365 and the technology experiences that support it. Your organization's score reflects technology experience measurements and can be compared to benchmarks from organizations similar to yours. To learn more, check out the [Adoption Score overview](adoption-score.md) and read [Microsoft's Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
 > [!NOTE]
 > This documentation is for the newest version of Meetings insights. If you're still using the previous version of Meetings insights, see the article for [Meetings insights (Previous Version)](meetings.md).

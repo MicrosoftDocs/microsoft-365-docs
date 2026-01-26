@@ -1,7 +1,7 @@
 ---
 title: "Change a Windows 365 Business Cloud PC account type in Microsoft 365 Lighthouse"
 f1.keywords: NOCSH
-ms.author: sharik
+ms.author: dansimp
 author: SKjerland
 manager: scotv
 ms.reviewer: ebamoh

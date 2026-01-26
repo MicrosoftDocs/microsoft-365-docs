@@ -1,6 +1,6 @@
 ---
 title: "Microsoft 365 Network Provider Program"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 12/13/2024

@@ -1,6 +1,6 @@
 ---
 title: "Microsoft 365 Network Connectivity Overview"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 11/18/2024

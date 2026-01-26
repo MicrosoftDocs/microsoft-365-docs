@@ -6,7 +6,7 @@ manager: jtremper
 ms.date: 12/15/2023
 audience: ITPro
 ms.topic: solution-overview
-ms.service: o365-solutions
+ms.service: m365-planning
 ms.collection: 
 - highpri
 - Tier1
@@ -20,8 +20,9 @@ search.appverid:
 - SPO160
 - MET150
 f1.keywords: NOCSH
-ms.custom: 
+ms.custom:
 - admindeeplinkMAC
+- m365-solutions-doc-set
 - admindeeplinkTEAMS
 - admindeeplinkSPO
 ms.localizationpriority: medium

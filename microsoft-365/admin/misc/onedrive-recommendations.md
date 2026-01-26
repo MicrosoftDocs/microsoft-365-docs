@@ -2,17 +2,18 @@
 title: "OneDrive recommendations"
 f1.keywords:
 - NOCSH
-ms.author: camillepack
-author: camillepack
-manager: scotv
+ms.author: dansimp
+author: dansimp
+manager: dansimp
 ms.date: 05/02/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier2
 - scotvorg
+- operations-pod
 ROBOTS: NOINDEX; NOFOLLOW
 description: "Recommendations for how to use OneDrive to get the most out of your Microsoft 365 subscription."
 ---
@@ -168,6 +169,8 @@ With a Microsoft 365 subscription, you can add expiration dates and passwords to
 7. Send the password in a separate message so recipients can open the file.
 
 ## Classify and protect company data
+
+[!INCLUDE [global-administrator-note](../../includes/global-administrator-note.md)]
 
 Use the Microsoft Purview portal to enable support for sensitivity labels. For more information, see [Enable sensitivity labels for files in SharePoint and OneDrive](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files).
 

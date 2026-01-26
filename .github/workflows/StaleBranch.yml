@@ -2,6 +2,7 @@ name: (Scheduled) Stale branch removal
 
 permissions:
   contents: write
+  pull-requests: read
 
 # This workflow is designed to be run in the days up to, and including, a "deletion day", specified by 'DeleteOnDayOfMonth' in env: in https://github.com/MicrosoftDocs/microsoft-365-docs/blob/workflows-prod/.github/workflows/Shared-StaleBranch.yml.
 # On the days leading up to "deletion day", the workflow will report the branches to be deleted. This lets users see which branches will be deleted. On "deletion day", those branches are deleted.

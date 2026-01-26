@@ -1,12 +1,12 @@
 ---
 title: Onboard trusted vendors to collaborate in Microsoft 365
-author: DaniEASmith
-ms.author: danismith
+author: officedocspr5
+ms.author: odocspr
 manager: jtremper
 ms.date: 08/14/2023
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: m365-planning
 ms.collection:
 - highpri
 - Tier1
@@ -15,7 +15,8 @@ ms.collection:
 - m365solution-3tiersprotection
 - m365solution-securecollab
 - m365initiative-externalcollab
-ms.custom: 
+ms.custom:
+- m365-solutions-doc-set
 ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false

@@ -1,12 +1,12 @@
 ---
 title: Collaborate with external participants in a shared channel (IT Admins)
-author: DaniEASmith
-ms.author: danismith
+author: officedocspr5
+ms.author: odocspr
 manager: jtremper
 ms.date: 05/30/2024
 audience: ITPro
 ms.topic: how-to
-ms.service: o365-solutions
+ms.service: m365-planning
 ms.collection:
 - highpri
 - Tier1
@@ -15,7 +15,7 @@ ms.collection:
 - m365solution-3tiersprotection
 - m365solution-securecollab
 - m365initiative-externalcollab
-ms.custom: 
+ms.custom: m365-solutions-doc-set
 ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false

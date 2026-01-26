@@ -1,6 +1,6 @@
 ---
 title: "Deploy Microsoft 365 Directory Synchronization in Microsoft Azure"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 02/12/2025

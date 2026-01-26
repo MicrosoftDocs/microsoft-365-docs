@@ -1,12 +1,12 @@
 ---
 title: Tenant management for Microsoft 365 for enterprise
-ms.author: kvice
-author: kelleyvice-msft
-manager: scotv
+ms.author: dansimp
+author: dansimp
+manager: dansimp
 ms.date: 08/15/2024
 audience: ITPro
 ms.topic: solution-overview
-ms.service: o365-solutions
+ms.service: m365-planning
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -18,6 +18,7 @@ ms.collection:
 - must-keep
 ms.custom:
 - Ent_Solutions
+- m365-solutions-doc-set
 description: "An overview of the planning, deployment, and ongoing operation of your Microsoft 365 tenants."
 ---
 
@@ -96,7 +97,7 @@ The following sections and table list the key capabilities and licensing for the
 |Cross-tenant mailbox migration|Tenant administrators can move mailboxes between tenants with minimal infrastructure dependencies in their on-premises systems. This removes the need to off-board and onboard mailboxes.|Microsoft 365 E3 or E5|
 |Multi-Geo|Your tenant can store data at rest in the other datacenter geo locations that you've chosen to meet data residency requirements.|Microsoft 365 E3 or E5|
 |Move core data to a new datacenter geo|As Microsoft adds new datacenter geos for additional capacity and compute resources, you can request a datacenter geo move for in-geo data residency for your core customer data.|Microsoft 365 E3 or E5|
-||||
+
 
 ### Networking
 
@@ -104,7 +105,7 @@ The following sections and table list the key capabilities and licensing for the
 |---|---|---|
 |Network Insights|Network performance metrics collected from your Microsoft 365 tenant to help you design network perimeters for your office locations.|Microsoft 365 E3 or E5|
 |Automate endpoint updates|Automate the configuration and ongoing updates for Microsoft 365 endpoints in your client PAC files and network devices and services.|Microsoft 365 E3 or E5|
-||||
+
 
 ### Identity
 
@@ -115,7 +116,7 @@ The following sections and table list the key capabilities and licensing for the
 |MFA enforced with Conditional Access|Require MFA based on the attributes of the sign-in with Conditional Access policies.|Microsoft 365 E3 or E5|
 |MFA enforced with risk-based Conditional Access|Require MFA based on the risk of the user sign-in with Microsoft Defender for Identity.|Microsoft 365 E5 or E3 with Microsoft Entra ID P2 licenses|
 |Self-Service Password Reset (SSPR)|Allow your users to reset or unlock their passwords or accounts.|Microsoft 365 E3 or E5|
-||||
+
 
 ### Migration
 
@@ -124,7 +125,7 @@ The following sections and table list the key capabilities and licensing for the
 |Migrate to Windows 11|Migrate your devices that run Windows 7, Windows 8.1, or Windows 10 to Windows 11 Enterprise.|Windows 11 Enterprise licenses included with Microsoft 365 E3 or E5|
 |Migrate to Microsoft 365 Apps for enterprise|Migrate your Office client apps such as Word and PowerPoint to the versions installed from the cloud that are updated with new features.|Microsoft 365 E3 or E5|
 |Migrate on-premises servers and data to Microsoft 365|Migrate your Exchange mailboxes, SharePoint sites, and Skype for Business Online to Microsoft 365 cloud services.|Microsoft 365 E3 or E5|
-||||
+
 
 ### Device and app management
 
@@ -132,7 +133,7 @@ The following sections and table list the key capabilities and licensing for the
 |---|---|---|
 |Microsoft Intune|A cloud-based service that provides mobile device management (MDM) and mobile application management (MAM) to control how your organization's application and the devices are used, including mobile phones, tablets, and laptops.|Microsoft 365 E3 or E5|
 |Basic Mobility and Security|Secure and manage your users' mobile devices like iPhones, iPads, Androids, and Windows phones with this built-in service.|Microsoft 365 E3 or E5|
-||||
+
 
 ## Next steps
 

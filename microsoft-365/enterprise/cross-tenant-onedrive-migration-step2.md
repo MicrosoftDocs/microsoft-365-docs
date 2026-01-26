@@ -2,7 +2,7 @@
 title: OneDrive Cross-tenant OneDrive migration Step 2
 ms.author: heidip
 author: MicrosoftHeidi
-manager: jtremper
+manager: dansimp
 ms.date: 10/13/2023
 recommendations: true
 audience: ITPro
@@ -92,5 +92,8 @@ The following screenshot is an example of the email sent to global admins:
 **Subject:**  SPO Tenant [https://a830edad9050849mnaus093022-my.sharepoint.com/] [setuporupdate] Organization Relation [Scenario=MnA, Role=Source] with us
 
 **Message:**  SPO Tenant [https://a830edad9050849mnaus093022-my.sharepoint.com/] [setuporupdate] Organization Relation [Scenario=MnA, Role=Source] with us
+
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. This helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
 
 ## Step 3: [Verify that trust is established](cross-tenant-onedrive-migration-step3.md)

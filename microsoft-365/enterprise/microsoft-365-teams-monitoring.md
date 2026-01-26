@@ -1,6 +1,6 @@
 ---
 title: "Microsoft 365 Teams monitoring"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 05/17/2024

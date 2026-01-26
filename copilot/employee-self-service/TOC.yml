@@ -1,0 +1,79 @@
+items:
+- name: Introduction to Employee Self-Service agent
+  href: overview.md
+- name: Deploy the Employee Self-Service agent
+  items:
+    - name: Deployment overview
+      href: deploy-overview-alm.md
+    - name: Prerequisites
+      href: prerequisites.md
+    - name: Deployment checklist
+      href: deployment-checklist.md
+    - name: Prepare for deployment
+      href: prepare.md
+    - name: Install Employee Self-Service agent
+      href: install.md
+    - name: Customization
+      items:
+        - name: Customize Employee Self-Service agent
+          href: customize.md
+        - name: Craft agent instructions
+          href: design-best-practices.md
+        - name: Sharepoint advanced filtering
+          href: sharepoint-filtering.md
+        - name: Emotional intelligence and ambiguity
+          href: emotional-quotient-ambiguity.md
+        - name: Optimize SharePoint knowledge sources
+          href: optimization-sharepoint.md
+    - name: Publish Employee Self-Service agent
+      href: publish.md
+    - name: Agent handoff
+      href: agent-handoff.md
+- name: Integrate external systems
+  items:
+    - name: SAP SuccessFactors
+      href: sapsuccessfactors.md
+    - name: SAP SuccessFactors Read and Write scenarios  
+      items:
+      - name: Employee read and write scenarios
+        href: sap-employee-read-write-scenarios.md
+      - name: Manager read and write scenarios 
+        href: sap-manager-read-write-scenarios.md
+    - name: Workday
+      items:
+        - name: Integrating Workday
+          href: workday.md
+        - name: Extensibility
+          href: workday-extensibility.md
+        - name: Workday reports
+          href: workday-reports.md
+          items:
+            - name: Columns
+              href: workday-columns-support-config.md
+            - name: Sort
+              href: workday-sort-support-config.md
+            - name: Filter
+              href: workday-filter-support-config.md
+            - name: Sub-filter
+              href: workday-sub-filter-support-config.md
+            - name: Prompts
+              href: workday-prompts-support-config.md
+            - name: Output
+              href: workday-output-support-config.md
+            - name: Share
+              href: workday-share-support-config.md
+            - name: Advanced
+              href: workday-advanced-support-config.md
+    - name: Integrating ServiceNow
+      href: servicenow.md
+      items:
+        - name: ServiceNow HRSD and ITSM
+          href: servicenow-hrsd-itsm.md
+        - name: ServiceNow Live agent
+          href: servicenow-live-agent.md
+- name: Usage analytics, feedback, audits, logging
+  href: usage-analytics.md
+- name: Known issues and limitations
+  href: known-issues-limitations.md
+- name: Responsible AI FAQ
+  href: rai-faq.md

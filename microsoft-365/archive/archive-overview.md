@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 04/26/2025
+ms.date: 06/26/2025
 ms.topic: overview
 ms.service: microsoft-365-archive
 ms.custom: archive
@@ -49,7 +49,11 @@ Administrators should notify the site owners and end users before a site is arch
 
 ## Limitations
 
-Publishing sites and a handful of legacy site template types are not available to archive with Microsoft 365 Archive. Teams channel sites are available for Archive only via PowerShell. 
+- Publishing sites, channel sites, and a handful of legacy site template types are not available to archive with Microsoft 365 Archive. For more information, see [Site templates supported](./archive-manage.md#site-templates-supported).
+- While sites associated with Teams with exclusively standard channels are supported for archiving, sites associated with Teams that include private or shared channels are only partially supported:
+    - SharePoint admin center: Archiving a site with channel sites is not possible. (Message: "The group connected site with channel sites associated can't be archived.")
+    - PowerShell and Graph API: Archiving a site with channel sites is not blocked.
+    Only the main site associated to the Team (and its standard channels) is archived. The private and shared channel sites remain active. Archiving the channel sites directly is not possible, as these sites use unsupported site templates.
 
 ## Related articles
 

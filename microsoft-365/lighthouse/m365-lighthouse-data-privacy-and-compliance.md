@@ -1,7 +1,7 @@
 ---
 title: "Data privacy and compliance in Microsoft 365 Lighthouse"
 f1.keywords: CSH
-ms.author: sharik
+ms.author: dansimp
 author: SKjerland
 manager: scotv
 ms.reviewer: iswillia
@@ -95,7 +95,7 @@ By understanding these feature areas and their connection to data access relatio
 
 Data residency refers to the physical location where data is stored and processed. Data privacy, protection laws, and regulations might vary by region and country, and some customers might prefer or require their data to reside in certain locations. MSPs should understand how Lighthouse handles data residency and which options are available for them and their customers.
 
-Lighthouse processes and stores data in compliance with regional data protection laws and regulations. However, it's important to note that Lighthouse has different data residency commitments than other Microsoft 365 services. For example, some Microsoft 365 services allow customers to choose a specific country for their data processing and storage, whereas Lighthouse doesn't offer this option. MSPs and customers should be aware that Lighthouse processes and stores data in the region associated with the customer tenant.
+Lighthouse processes and stores data in compliance with regional data protection laws and regulations. However, it's important to note that Lighthouse has different data residency commitments than other Microsoft 365 services. For example, some Microsoft 365 services allow customers to choose a specific country/region for their data processing and storage, whereas Lighthouse doesn't offer this option. MSPs and customers should be aware that Lighthouse processes and stores data in the region associated with the customer tenant.
 
 This approach is designed to provide a consistent and unified experience for MSPs who manage customers in different regions. By processing and storing data in the customer tenant's region, Lighthouse can optimize performance, reliability, and scalability for these MSPs.
 

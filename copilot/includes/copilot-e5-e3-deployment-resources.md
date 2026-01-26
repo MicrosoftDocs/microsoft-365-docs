@@ -1,7 +1,7 @@
 ---
-author: MandiOhlinger
-ms.author: mandia
-manager: laurawi
+author: maggierui
+ms.author: ruihu
+manager: dansimp
 ms.service: microsoft-365-copilot
 ms.topic: include
 description: Technical and deployment resources to help customers with Microsoft 365 Copilot deployment and adoption.

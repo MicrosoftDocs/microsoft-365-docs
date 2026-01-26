@@ -1,23 +1,27 @@
 ---
 title: Integrate Microsoft Reflect LTI with Schoology Learning
-author: DaniEASmith
-ms.author: danismith
-manager: jacktremper
+author: jennplatt
+ms.author: eladgr
+manager: dsitton
 ms.reviewer: eladgr
-ms.date: 11/28/2023
+ms.date: 01/14/2026
 audience: admin
 ms.topic: integration
-ms.service: msteams
-ms.subservice: teams-education
+ms.service: microsoft-365-education
 ms.collection: 
 - M365-modern-desktop
 - m365initiative-edu
 - tier2
+- m365-education
+- all-education
 ms.localizationpriority: medium
 description: Create impactful check-ins to gain wellbeing insights and build a happier, healthier learning community with the Microsoft Reflect Learning Tools Interoperability App for PowerSchool Unified Classroom® Schoology Learning.
 ---
 
 # Integrate Microsoft Reflect LTI with Schoology Learning
+
+>[!NOTE]
+>The classic Microsoft OneDrive, OneNote, Teams Assignments, and Reflect LTI apps have been replaced by the [new Microsoft 365 LTI](https://aka.ms/LMSAdminDocs). The classic apps will be sunset on September 17, 2026. After that date, the classic apps and any content links in courses will stop working. However, the files, notebooks, teams, meetings, and check-ins created by the classic app will continue to be accessible through Microsoft 365. For further guidance on moving your users and courses to the new Microsoft 365 LTI experiences and migrating content links, review the [migration guidance for the classic LTI apps](/microsoft-365/lti/microsoft-365-lti-first-time-configuration#migration-guidance).
 
 [Microsoft Reflect](https://reflect.microsoft.com) is a wellbeing app designed to foster connection, expression, and learning by promoting self-awareness, empathy, and emotional growth.
     

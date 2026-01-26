@@ -3,7 +3,7 @@ title: "Microsoft 365 Apps for enterprise deployment for Contoso"
 author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: kvice
+ms.author: scotv
 manager: scotv
 ms.date: 09/06/2024
 audience: ITPro

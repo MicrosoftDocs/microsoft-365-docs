@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 04/04/2025
+ms.date: 07/27/2025
 ms.topic: faq
 ms.service: microsoft-365-archive
 ms.custom: archive
@@ -48,7 +48,7 @@ Admin-level search and Purview-based search operate like normal. End-user search
 
 #### Can I archive at the site-level and file-level?
 
-Currently, only full-site archiving and reactivating is possible in this offering. File-level granular archiving support will be released in 2025.
+Currently, only full-site archiving and reactivating is possible in this offering. File-level granular archiving support will be released in 2026. For more information, see the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?id=477371).
 
 #### What’s the availability timing of Microsoft 365 Archive for Microsoft Government Community Cloud (GCC) customers?
 
@@ -60,15 +60,21 @@ No, if you purchase additional storage packs you won't get reimbursed for any un
 
 #### If I am under my tenant storage quota for Archive and Standard storage combined, will I be charged?
 
-You won't be charged for monthly storage costs, but you'll still pay applicable reactivation fees.
+You won't be charged for archive storage as long as your combined storage (standard storage plus archive storage) doesn't exceed your standard storage quota. For more information, see [Pricing model for Microsoft 365 Archive](archive-pricing.md).
 
-#### Does archived content get returned in Copilot for Microsoft 365 queries?
+In eligible EDU tenants, the pooled storage quota is applied. For more information, see [Education offering for Microsoft 365 Archive](archive-education-offering.md#pooled-storage-eligibility).
 
-No, archived content isn't used by Copilot for Microsoft 365. 
+#### Does archived content get returned in Microsoft 365 Copilot queries?
+
+No, archived content isn't used by Microsoft 365 Copilot. 
 
 #### Can you delete an archived site, should you no longer need it?  
 
-Yes, you can directly delete an archived site without the need to reactivate. 
+You can directly delete an archived site without the need to reactivate.
+
+- In SharePoint admin center: Delete the site, and any associated Microsoft 365 Group is automatically deleted as well.
+
+- Using PowerShell and Graph API: If the site is connected to a Microsoft 365 Group then you should delete the Microsoft 365 Group, and the associated sites are automatically deleted as well. Deleting only the site (but not the group) isn't possible. If the site is not connected to a Microsoft 365 Group, then you can delete the site directly. 
 
 #### Can archived content in legal hold be deleted?
 

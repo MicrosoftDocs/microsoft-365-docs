@@ -1,5 +1,5 @@
 ---
-title: "Stay on track with data privacy regulations – Microsoft Priva and Purview"
+title: "Stay on track with data privacy regulations – Microsoft Priva and Microsoft Purview"
 ms.author: chvukosw
 author: chvukosw
 f1.keywords:
@@ -8,7 +8,7 @@ manager: laurawi
 ms.date: 01/15/2025
 audience: ITPro
 ms.topic: solution-overview
-ms.service: o365-solutions
+ms.service: m365-planning
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -17,7 +17,9 @@ ms.collection:
 - m365solution-infoprotection
 - m365solution-overview
 - zerotrust-solution
-ms.custom: admindeeplinkCOMPLIANCE
+ms.custom:
+- admindeeplinkCOMPLIANCE
+- m365-solutions-doc-set
 description: Learn how Microsoft Purview Compliance Manager helps you keep up with data privacy regulations through continuous control assessments and regulatory updates.
 ---
 

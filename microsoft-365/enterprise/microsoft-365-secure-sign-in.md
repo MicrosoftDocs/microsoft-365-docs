@@ -3,7 +3,7 @@ title: "Step 3: Protect your Microsoft 365 user accounts"
 f1.keywords:
 - NOCSH
 author: kelleyvice-msft
-ms.author: kvice
+ms.author: scotv
 manager: scotv
 ms.date: 10/22/2024
 audience: ITPro
@@ -59,6 +59,9 @@ MFA requires that user sign-ins be subject to an additional verification beyond 
 
 Your first step in using MFA is to [require it for all administrator accounts](protect-your-global-administrator-accounts.md), also known as privileged accounts. Beyond this first step, Microsoft recommends MFA For all users.
 
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. This helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
+
 There are three ways to require your users to use MFA based on your Microsoft 365 plan.
 
 | Plan | Recommendation |
@@ -107,8 +110,8 @@ This table shows the results of enabling MFA with security defaults and Conditio
 
 | Method | Enabled | Disabled | Additional authentication method |
 |:-------|:-----|:-------|:-------|
-| **Security defaults**  | Can’t use Conditional Access policies | Can use Conditional Access policies | Microsoft Authenticator app |
-| **Conditional Access policies** | If any are enabled, you can’t enable security defaults | If all are disabled, you can enable security defaults  | User specifies during MFA registration  |
+| **Security defaults**  | Can't use Conditional Access policies | Can use Conditional Access policies | Microsoft Authenticator app |
+| **Conditional Access policies** | If any are enabled, you can't enable security defaults | If all are disabled, you can enable security defaults  | User specifies during MFA registration  |
 ||||
 
 ## Zero Trust identity and device access configurations
@@ -133,14 +136,14 @@ Microsoft highly recommends configuring and rolling out Zero Trust identity and 
 
 ## Microsoft Entra ID Protection
 
-In this section, you'll learn how to configure policies that protect against credential compromise, where an attacker determines a user’s account name and password to gain access to an organization’s cloud services and data. Microsoft Entra ID Protection provides a number of ways to help prevent an attacker from compromising a user account's credentials.
+In this section, you'll learn how to configure policies that protect against credential compromise, where an attacker determines a user's account name and password to gain access to an organization's cloud services and data. Microsoft Entra ID Protection provides a number of ways to help prevent an attacker from compromising a user account's credentials.
 
 With Microsoft Entra ID Protection, you can:
 
 |Capability|Description|
 |:---------|:---------|
-| Determine and address potential vulnerabilities in your organization’s identities | Microsoft Entra ID uses machine learning to detect anomalies and suspicious activity, such as sign-ins and post-sign-in activities. Using this data, Microsoft Entra ID Protection generates reports and alerts that help you evaluate the issues and take action.|
-|Detect suspicious actions that are related to your organization’s identities and respond to them automatically|You can configure risk-based policies that automatically respond to detected issues when a specified risk level has been reached. These policies, in addition to other Conditional Access controls provided by Microsoft Entra ID and Microsoft Intune, can either automatically block access or take corrective actions, including password resets and requiring Microsoft Entra multifactor authentication for subsequent sign-ins. |
+| Determine and address potential vulnerabilities in your organization's identities | Microsoft Entra ID uses machine learning to detect anomalies and suspicious activity, such as sign-ins and post-sign-in activities. Using this data, Microsoft Entra ID Protection generates reports and alerts that help you evaluate the issues and take action.|
+|Detect suspicious actions that are related to your organization's identities and respond to them automatically|You can configure risk-based policies that automatically respond to detected issues when a specified risk level has been reached. These policies, in addition to other Conditional Access controls provided by Microsoft Entra ID and Microsoft Intune, can either automatically block access or take corrective actions, including password resets and requiring Microsoft Entra multifactor authentication for subsequent sign-ins. |
 | Investigate suspicious incidents and resolve them with administrative actions | You can investigate risk events using information about the security incident. Basic workflows are available to track investigations and initiate remediation actions, such as password resets. |
 |||
 

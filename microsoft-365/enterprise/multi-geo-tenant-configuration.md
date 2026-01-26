@@ -1,14 +1,14 @@
 ---
 title: Microsoft 365 Multi-Geo tenant configuration
-ms.reviewer:
+ms.reviewer: jugiammo
 ms.date: 10/02/2024
-ms.author: kvice
-author: kelleyvice-msft
-manager: scotv
+ms.author: v-fahasen
+author: fhasen-msft
+manager: Justin.Giammona
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
-ms.subservice: multi-tenant
+ms.subservice: multi-geo-capabilities
 ms.collection:
 - SPO_Content
 - Strat_SP_gtc

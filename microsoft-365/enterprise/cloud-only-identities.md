@@ -1,6 +1,6 @@
 ---
 title: "Microsoft 365 cloud-only identity"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 09/26/2024

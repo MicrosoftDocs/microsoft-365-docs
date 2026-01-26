@@ -1,6 +1,6 @@
 ---
 title: "View licensed and unlicensed Microsoft 365 users with PowerShell"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 12/05/2024

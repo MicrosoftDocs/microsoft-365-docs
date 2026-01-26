@@ -1,6 +1,6 @@
 ---
 title: "Service advisories for auto-expanding archive utilization in Exchange Online monitoring"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 08/08/2024

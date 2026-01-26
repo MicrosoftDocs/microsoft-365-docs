@@ -3,21 +3,23 @@ title: Manage ownerless Microsoft 365 groups and teams
 ms.reviewer: rahulnayak
 ms.date: 01/16/2025
 f1.keywords: NOCSH
-author: DaniEASmith
-ms.author: danismith
-manager: jtremper
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
-- M365-subscription-management 
+ms.collection:
+- M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: 
+- trust-pod
+ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
+- m365-groups
 search.appverid:
 - MET150
 - MOE150
@@ -108,6 +110,28 @@ Admins can see which Microsoft 365 groups remain ownerless by searching the [a
     1. If the **Audit** solution card isn't displayed, select **View all solutions**, and then select **Audit** in the **Core** section.
 1. On the **Search** page, in the **Activities - friendly names** field, select **Unattended ownerless group** from the dropdown list.
 1. Select the **Search** button.
+
+## Auditing changes made to ownerless group policy
+
+Use the following steps to search for the **Updated the ownerless group policy** activity to find out details about changes made to the ownerless group policy. 
+
+1. Login to [Purview](https://sip.purview.microsoft.com/audit/auditsearch) portal and start a new Audit log search.
+
+      > [!NOTE]
+      > For help with Purview login, see [Purview Portal](/purview/purview-portal).
+
+1. Under **Activities – friendly names**, type **ownerless group**, and select the **Updated the ownerless group policy** activity. 
+1. Specify the start and end dates for which the audit log needs to be searched.
+
+    :::image type="content" source="../../media/audit-ownerless-group1.png" alt-text="Screenshot of audit log." lightbox="../../media/audit-ownerless-group1.png":::
+
+    Once the search is complete, you can see the following result. 
+    
+    :::image type="content" source="../../media/result-audit-ownerless-group1.png" alt-text="Screenshot of result of audit log search." lightbox="../../media/result-audit-ownerless-group1.png":::
+    
+    The following is an example of an audit log entry showing changes made:
+    
+    :::image type="content" source="../../media/audit-log1.png" alt-text="Screenshot of an audit log." lightbox="../../media/audit-log1.png":::
 
 ## Common issues with the ownerless group policy
 

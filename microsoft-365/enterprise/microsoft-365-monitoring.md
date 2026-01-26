@@ -1,6 +1,6 @@
 ---
 title: "Microsoft 365 monitoring"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 03/12/2025
@@ -68,9 +68,11 @@ Service-specific monitoring is also enable for the following Microsoft services.
 
 - [Exchange Online](microsoft-365-exchange-monitoring.md)
 
-- [Microsoft 365 Apps](microsoft-365-apps-monitoring.md)
+- [Microsoft Entra](microsoft-entra-monitoring.md)
 
 - [Microsoft Teams](microsoft-365-teams-monitoring.md)
+
+- [Microsoft 365 for the web](microsoft-365-for-the-web-monitoring.md)
 
 ## Send us feedback
 

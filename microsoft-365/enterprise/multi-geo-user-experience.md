@@ -1,14 +1,14 @@
 ---
 title: "User experience in a multi-geo environment"
-ms.reviewer:
+ms.reviewer: jugiammo
 ms.date: 02/14/2025
-ms.author: kvice
-author: kelleyvice-msft
-manager: scotv
+ms.author: v-fahasen
+author: fhasen-msft
+manager: Justin.Giammona
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
-ms.subservice: multi-tenant
+ms.subservice: multi-geo-capabilities
 ms.collection:
 - SPO_Content
 - Strat_SP_gtc
@@ -25,7 +25,7 @@ Here's what your users see in a OneDrive Multi-Geo configuration:
 
 ## Exchange Online mailbox
 
-A user's Exchange Online mailbox is provisioned to their preferred data location, and is automatically relocated if their PDL changes. Users can use Outlook and Outlook on the web normally with no change in user experience in a Multi-Geo environment.
+A user's Exchange Online mailbox is provisioned to their _Preferred Data Location (PDL)_, and is automatically relocated if their _PDL_ changes. Users can use Outlook and Outlook on the web normally with no change in user experience in a _Multi-Geo_ environment. All active and inactive mailboxes placed on litigation hold will continue to adhere to the configured _PDL_ for the duration of the litigation hold period. For more information, see [Place a mailbox on Litigation Hold](/microsoft-365/admin/misc/create-litigation-hold-mac) and [Delete an inactive mailbox](/purview/delete-an-inactive-mailbox).
 
 ## Hub sites
 
@@ -51,7 +51,7 @@ Users have their OneDrive provisioned in their preferred data location. If a use
 
 The OneDrive iOS and Android mobile apps show you your OneDrive files and files shared with you regardless of their _Geography_ location. Searches from the OneDrive mobile apps show relevant results from all _Geography_ locations. Download the latest version of these apps.
 
-For more information, see [Use OneDrive on iOS](https://support.office.com/article/08d5c5b2-ccc6-40eb-a244-fe3597a3c247) and [Use OneDrive for Android](https://support.office.com/article/eee1d31c-792d-41d4-8132-f9621b39eb36) for more information.
+For more information, see [Use OneDrive on iOS](https://support.office.com/article/08d5c5b2-ccc6-40eb-a244-fe3597a3c247) and [Use OneDrive for Android](https://support.office.com/article/eee1d31c-792d-41d4-8132-f9621b39eb36).
 
 ## OneDrive mobile client
 
@@ -103,7 +103,7 @@ The **Microsoft 365 Person** encompasses the complete set of properties, attribu
 
 There are two constituents of the Microsoft 365 Person data:
 
-- Microsoft 365 Profile ([profile resource type](/graph/api/resources/profile?view=graph-rest-beta&preserve-view=true)), which constitutes the information that can be viewed by other users within the tenant about the Microsoft 365 person. This includes the user's Microsoft Entra ID details along with other information like position and photo ([Get profilePhoto](https://aka.ms/profileimage)). The fields and attributes that are exposed can be controlled by the tenant admin ([Add or remove custom attributes on a profile card using the profile card API](/graph/add-properties-profilecard)).
+- Microsoft 365 Profile ([profile resource type](/graph/api/resources/profile?view=graph-rest-beta&preserve-view=true)), which constitutes the information that can be viewed by other users within the tenant about the Microsoft 365 person. This includes the user's Microsoft Entra ID details along with position, photo ([Get profilePhoto](https://aka.ms/profileimage)), and skills. The tenant admin can control which fields and attributes are enabled and exposed on the profile ([Add or remove custom attributes on a profile card using the profile card API](/graph/add-properties-profilecard)). Skills visibility can be managed by both the tenant admin and users ([Manage skills inferencing and visibility](/viva/skills/skills-manage-inferencing-visibility)).
 
 - My Microsoft 365 People dataset ([contact resource type](/graph/api/resources/contact?view=graph-rest-1.0&preserve-view=true)), which represents the list of the user's Microsoft 365 contacts along with the user’s version of their contacts' Microsoft 365 profile. This edited or unedited version of another user’s profile will always remain private in the current user’s mailbox and won't be replicated anywhere.
 
@@ -120,6 +120,6 @@ When users interact directly or indirectly with content they have access to, the
 - User-owned and Shared documents  
 - Tenant owned content like company-wide SharePoint site and company published files.  
 
-The seamless synchronization of the file content and associated updates of the content and access modifications allows users to collaborate on the latest version across geographies. It ensures that search and other M365 experiences like My Content in M365, Recently Opened or Shared in various applications, always reflect the latest version of the file and associated user activities. Access to the file is guarded by the source file content access controls. 
+The seamless synchronization of the file content and associated updates of the content and access modifications allows users to collaborate on the latest version across geographies. It ensures that search and other Microsoft 365 experiences like My Content in M365, Recently Opened or Shared in various applications, always reflect the latest version of the file and associated user activities. Access to the file is guarded by the source file content access controls. 
 
 An individual user’s personal interactions which include pinning documents, marking as favorites, following sites and Copilot prompts and responses with an item are not shared with others and remain private. Both admins and users can configure their search capabilities by using the article [Configure Search for OneDrive Multi-Geo](configure-search-for-multi-geo.md).

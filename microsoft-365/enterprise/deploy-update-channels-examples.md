@@ -3,7 +3,7 @@ title: "Deployment and update channel example configurations"
 author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: kvice
+ms.author: scotv
 manager: scotv
 ms.date: 08/23/2024
 audience: ITPro

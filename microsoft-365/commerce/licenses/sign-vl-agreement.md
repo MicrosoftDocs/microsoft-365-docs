@@ -15,10 +15,11 @@ ms.collection:
 ms.custom:
 - commerce_vl
 - AdminTemplateSet
+service.tree.id: e6e1ea2a-04a0-4f78-bc75-7d45c90eee39
 search.appverid: MET150
 ms.localizationpriority: medium
 description: "Learn how to sign your volume licensing agreement."
-ms.date: 04/03/2025
+ms.date: 12/02/2025
 ---
 
 # Sign your volume licensing agreement
@@ -26,13 +27,12 @@ ms.date: 04/03/2025
 When you sign a volume licensing (VL) agreement with Microsoft, there are three signature options available: Adobe Sign Electronic (Simple), Adobe Sign Digital, Adobe Sign Physical Signature, and Adobe Sign Digital.
 
 > [!NOTE]
-> The person who signs the contract doesn't have to be the same person who administers the VL agreement in the Microsoft 365 admin center volume licensing section.
+> The person who signs the contract doesn't have to be the same person who administers the VL agreement in the VL section of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
 ## Before you begin
 
-You must have the authority to sign a VL agreement on behalf of your organization.
-
-Signing an agreement doesn't automatically result in access to the agreement in the Microsoft 365 admin center, unless you're assigned a VL role.
+- You must have the authority to sign a VL agreement on behalf of your organization.
+- Signing an agreement doesn't automatically result in access to the agreement in the Microsoft 365 admin center, unless you're assigned a VL role.
 
 ## Ensure you can receive the Agreement Signature email
 
@@ -175,7 +175,7 @@ Microsoft strongly encourages the use of Adobe Sign to provide electronic signat
 5. To return to the Adobe Sign portal, select the **Upload to submit** button in the Adobe Sign email.
 6. To continue processing, upload the signed document back into Adobe Sign.
 
-## Server error when uploading a document with another e-signature tool
+## Troubleshoot server errors when uploading a document with another e-signature tool
 
 Customers who sign with an e-signature tool other than Adobe, such as DocuSign, might get the following error message:
 
@@ -191,7 +191,7 @@ You can resolve the Unprocessed Error without contacting support by completing t
 
 When this process is finished, Adobe Sign retains the DocuSign signature while previewing and after all parties sign the final document.
 
-## View volume licesnging agreements submitted for your signature
+## View volume licensing agreements submitted for your signature
 
 An assigned signature contact who signed the VL agreement can sign in to the Adobe Sign portal to view a previously signed agreement up to 13 months after the signature takes place.
 
@@ -220,18 +220,18 @@ To find your agreements, use the following steps:
 
 ## Next steps
 
-After you electronically sign a VL agreement, you must wait for it to become active. Next, your reseller must submit an order to Microsoft for licenses under that agreement. After these two steps are finished, those licenses are available to view or manage in the volume licensing section of the Microsoft 365 admin center.
+After you electronically sign a VL agreement, you must wait for it to become active. Next, your reseller must submit an order to Microsoft for licenses under that agreement. After these two steps are finished, those licenses are available to view or manage in the VL pages of the Microsoft 365 admin center.
 
 > [!NOTE]
 > Resellers typically place orders soon after a VL agreement becomes active, but this isn't always the case.
 
-After the agreement is activated, the people named on the agreement receive a welcome email from Microsoft inviting them to register the agreement in the Microsoft 365 admin center to access and manage the agreements. For more information, see [Sign in to the Microsoft 365 admin center (volume licensing)](vl-sign-in.md).
+After the agreement is activated, the people named on the agreement receive a welcome email from Microsoft inviting them to register the agreement in the admin center to access and manage the agreements. For more information, see [Sign in to the Microsoft 365 admin center (volume licensing)](vl-sign-in.md).
 
 Remember, the person named on the agreement by the reseller to manage licenses in the admin center might, or might not be the same person who signed the agreement.
 
-## Contact support
+## Contact volume licensing support
 
-For support with volume licensing e-signature process customers can work with their Microsoft partner or seller, or by [Contacting Volume Licensing Support](/licensing/contact-us).
+For support with volume licensing e-signature process work with your Microsoft partner or seller, or [Contact volume licensing support](contact-vl-support.md).
 
 ## Related content
 

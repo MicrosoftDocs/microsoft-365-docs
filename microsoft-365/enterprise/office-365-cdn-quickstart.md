@@ -1,6 +1,6 @@
 ---
 title: "Office 365 Content Delivery Network (CDN) Quickstart"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 02/28/2025

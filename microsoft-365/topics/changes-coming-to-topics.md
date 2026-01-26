@@ -1,10 +1,10 @@
 ---
 ms.date: 04/18/2025
 title: Changes coming to Topics
-ms.author: daisyfeller
-author: daisyfell
+ms.author: odocspr
+author: officedocspr5
 manager: elizapo
-ms.reviewer: daisyfeller
+ms.reviewer: odocspr
 audience: admin
 ms.topic: article
 ms.collection:

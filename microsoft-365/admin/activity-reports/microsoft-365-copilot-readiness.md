@@ -1,14 +1,15 @@
 ---
 title: "Microsoft 365 admin center Microsoft 365 Copilot readiness"
-ms.author: camillepack
-author: camillepack
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
-ms.date: 12/13/2024
+ms.date: 01/12/2026
+ms.update-cycle: 180-days
 audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier2
 - scotvorg
 - M365-subscription-management
@@ -16,7 +17,9 @@ ms.collection:
 - Adm_NonTOC
 - m365copilot
 - magic-ai-copilot
-ms.custom: AdminSurgePortfolio
+- operations-pod
+ms.custom:
+- GAUpdates
 search.appverid:
 - BCS160
 - MST160
@@ -35,7 +38,7 @@ In the Microsoft 365 Copilot readiness report, which is in continuous enhancemen
 
 1. In the admin center, go to **Reports** > **Usage**.
 1. Select the **Microsoft 365 Copilot** page.
-1. You can view Readiness on the first tab. Switch to the Usage tab to view adoption and usage metrics.
+1. You can view **Readiness** on the first tab. Switch to the **Usage** tab to view adoption and usage metrics.
 
 ## Interpret the Readiness section in the Microsoft 365 Copilot report
 
@@ -100,6 +103,8 @@ The "Suggested candidate for Copilot" column in the Microsoft 365 Copilot Readin
 ## Make the user-specific data anonymous
 
 To make the data in the Microsoft 365 Copilot report anonymous, you must be a global administrator. This will hide identifiable information (using MD5 hashes) such as display name, email, and Microsoft Entra Object ID in report and their export.
+
+[!INCLUDE [global-administrator-note](../../includes/global-administrator-note.md)]
 
 1. In Microsoft 365 admin center, go to the **Settings** \> **Org Settings**, and under **Services** tab, choose **Reports**.
 

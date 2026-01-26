@@ -2,27 +2,28 @@
 title: "Add your company branding to the Microsoft 365 sign-in page"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekuako
-manager: scotv
+ms.author: dansimp
+author: dansimp
+manager: dansimp
 ms.date: 09/30/2024
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier3
 - scotvorg
 - highpri
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: 
+- operations-pod
+ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
-search.appverid:
+search.appverid: 
 description: "Customize the Microsoft 365 sign-in page by using the Microsoft Entra ID. You can add an illustration, a logo, and text to the sign-in page."
 ---
 

@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: 07/16/2021
 audience: ITPro
 ms.topic: how-to
-ms.service: o365-solutions
+ms.service: m365-planning
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -16,7 +16,9 @@ ms.collection:
 - Strat_O365_Enterprise
 - ransomware
 - m365solution-ransomware
-ms.custom: seo-marvel-jun2020
+ms.custom:
+- seo-marvel-jun2020
+- m365-solutions-doc-set
 keywords: ransomware, human-operated ransomware, human operated ransomware, HumOR, extortion attack, ransomware attack, encryption, cryptovirology, zero trust
 description: Use Microsoft Defender XDR and its security signal sources to protect your Microsoft 365 resources from ransomware attacks.
 ---
@@ -37,7 +39,7 @@ For additional information, see these resources.
 | [Microsoft Defender for Cloud Apps](/cloud-app-security) | A cloud access security broker for discovery, investigation, and governance across all your Microsoft and third-party cloud services. | [Overview](/cloud-app-security/what-is-cloud-app-security) | [Investigate](/cloud-app-security/investigate) |
 
 > [!NOTE]
-> All of these services require Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on.
+> All of these services require Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft Defender Suite add-on.
 
 Use these services to detect and respond to the following common threats from ransomware attackers:
 

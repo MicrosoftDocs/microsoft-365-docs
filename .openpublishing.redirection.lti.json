@@ -7,12 +7,41 @@
         },
         {
             "source_path": "microsoft-365/lti/use-onedrive-with-lms.md",
-            "redirect_url": "/lti/onedrive-lti",
+            "redirect_url": "/microsoft-365/lti/onedrive-lti",
             "redirect_document_id": false
         },
         {
             "source_path": "microsoft-365/lti/assignments-lti-license-terms.md",
-            "redirect_url": "/lti/index",
+            "redirect_url": "/microsoft-365/lti/index",
+            "redirect_document_id": false
+        },
+       {
+            "source_path": "microsoft-365/lti/teams-meetings-with-canvas.md",
+            "redirect_url": "/microsoft-365/lti/teams-classes-with-canvas",
+            "redirect_document_id": false
+        },        {
+            "source_path": "microsoft-365/lti/teams-meetings-with-blackboard-learn.md",
+            "redirect_url": "/microsoft-365/lti/teams-classes-with-blackboard",
+            "redirect_document_id": false
+        },        {
+            "source_path": "microsoft-365/lti/teams-classes-and-meetings-with-schoology.md",
+            "redirect_url": "/microsoft-365/lti/microsoft-365-lti-schoology",
+            "redirect_document_id": false
+        },        {
+            "source_path": "microsoft-365/lti/integrate-with-other-lms.md",
+            "redirect_url": "/microsoft-365/lti/microsoft-365-lti-other",
+            "redirect_document_id": false
+        },        {
+            "source_path": "microsoft-365/lti/teams-classes-meetings-with-brightspace.md",
+            "redirect_url": "/microsoft-365/lti/microsoft-365-lti-brightspace",
+            "redirect_document_id": false
+        },        {
+            "source_path": "microsoft-365/lti/open-lms-teams-classes-and-meetings.md",
+            "redirect_url": "/microsoft-365/lti/index",
+            "redirect_document_id": false
+        },        {
+            "source_path": "microsoft-365/lti/teams-classes-meetings-with-moodle.md",
+            "redirect_url": "/microsoft-365/lti/microsoft-365-lti-moodle",
             "redirect_document_id": false
         }
     ]

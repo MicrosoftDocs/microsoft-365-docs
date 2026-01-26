@@ -6,42 +6,43 @@ author: cmcatee-MSFT
 manager: scotv
 ms.reviewer: aasthatiwari, atuldubey
 audience: Admin
-ms.topic: how-to 
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-volume-licensing
 ms.collection:
 - Tier1
 - scotvorg
-ms.custom: 
+ms.custom:
 - commerce_vl
-- AdminTemplateSet                                          
+- AdminTemplateSet
+service.tree.id: e6e1ea2a-04a0-4f78-bc75-7d45c90eee39
 search.appverid: MET150
 ms.localizationpriority: medium
 description: "Learn how to find and use product keys for volume licensing products in the Microsoft 365 admin center."
-ms.date: 03/28/2025
+ms.date: 12/02/2025
 ---
 
 # Find and use product keys for volume licensing
 
-A product key lets you use a software product that you licensed under a specific volume licensing program. The volume licensing product keys listed in the Microsoft 365 admin center are only for use with volume license products and are intended only for use by your organization. This article describes the different types of product keys, where to find them, and how to use them.
+A product key lets you use a software product that you licensed under a specific volume licensing (VL) program. The VL product keys listed in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> are only for use with VL products and are intended only for use by your organization. This article describes the different types of product keys, where to find them, and how to use them.
 
 ## Before you begin
 
-You must have one of the following volume licensing roles to view volume licensing product keys for a specific licensing ID:
+To view VL product keys for a specific License ID, you must have one of the following VL roles:
 
-- Administrator
+- VL Administrator
 - Product keys reader
 
 ## Find your volume licensing product keys
 
-This section describes the steps to find volume licensing product keys in the admin center. You can copy individual keys to the clipboard and download a CSV file that contains one or more keys in a tab-delimited format. To view and sort keys, open the product key file in Excel or a text editor.
+This section describes the steps to find VL product keys in the admin center. You can copy individual keys to the clipboard and download a CSV file that contains one or more keys in a tab-delimited format. To view and sort keys, open the product key file in Excel or a text editor.
 
 > [!NOTE]
 > Some products don't require a product key. You can verify whether a specific product requires a product key in the product description provided for each product listed on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2297371" target="_blank">Products and services</a> page.
 
 ### Find and export product keys in the Microsoft 365 admin center
 
-1. In the Microsoft 365 admin center, go to the **Billing** > **Your products** page, and select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144" target="_blank">Volume licensing</a> tab.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">**Your products**</a> page, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144" target="_blank">Volume licensing</a> tab.
 2. In the **Products and services** section, select **View downloads and keys**.
 3. On the <a href="https://go.microsoft.com/fwlink/p/?linkid=2297371" target="_blank">Products and services</a> page, adjust the category filters or search by product name to find a particular product, then select a product name.
 4. In the side panel, select the **Keys** tab to see the list of **License IDs** that you manage. Each key detail includes the **License ID**, **Organization name**, key **Type**, the number of key **Activations or Seats** available, and the **OSA Status**.
@@ -54,47 +55,54 @@ To download all volume license product keys for every product that you have acce
 
 #### Export volume license product keys for specific License IDs
 
-To download volume license product keys for specific **License IDs**, use the following steps:
+To download VL product keys for specific License IDs, use the following steps:
 
-1. In the admin center, go to the **Billing** > **Your products** page, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144" target="_blank">Volume licensing</a> tab.
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">**Your products**</a> page, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144" target="_blank">Volume licensing</a> tab.
 2. In the **Contracts** section, select **View contracts**.
 3. On the <a href="https://go.microsoft.com/fwlink/p/?linkid=2297440" target="_blank">Contracts</a> page, select the check box for one or more **License IDs**, then select **Export to CSV**.
 
 ### Find product keys for activating Extended Security Update (ESU) licenses
 
-If you bought Extended Security Update (ESU) licenses, you can activate them with Multiple Activation Keys (MAK) that you provision in the admin center. To find the ESU license MAKs, use the following steps:
+If you bought Extended Security Update (ESU) licenses, you can activate them with Multiple Activation Keys (MAK) made available to VL admins in the admin center. To find the ESU license MAKs, use the following steps:
 
-1. In the admin center, go to the **Billing** > **Your Products** page, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144" target="_blank">Volume licensing</a> tab.
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">**Your products**</a> page, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144" target="_blank">Volume licensing</a> tab.
 2. In the **Contracts** section, select **View contracts**.  
 3. On the <a href="https://go.microsoft.com/fwlink/p/?linkid=2297440" target="_blank">Contracts</a> page, find the **License ID** that the ESU licenses were purchased under, select the three dots (**More actions**), then select **View product keys**. The **Product keys** details page includes contract details and a list of all keys for that contract.
 
 > [!NOTE]
 > You can order ESU licenses before the start of the ESU coverage period. However, the ESU MAKs displayed in the Product keys details panel aren’t usable until the defined ESU coverage period begins. For more information, see [Product Lifecycle FAQ - Extended Security Updates](/lifecycle/faq/extended-security-updates).
 
-To verify that you have ESU licenses, go to the **Billing** > **Your products** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144" target="_blank">Volume licensing</a> page. In the **Transactions** section, select **View orders**. If the order appears in the list, it means the order was submitted.
+To verify that you have ESU licenses, use the following steps:
 
-To buy new ESU licenses, contact your Microsoft Seller or Licensing Solution Partner.
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">**Your products**</a> page, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144" target="_blank">Volume licensing</a> tab.
+2. In the **Transactions** section, select **View orders**. If the order appears in the list, it means the order was submitted.
+
+To buy new ESU licenses, contact your Microsoft seller or Licensing Solution Partner.
 
 ### Find a SQL Server license product key for volume licensing
 
 The SQL Server license product key is embedded in the software's activation wizard and is automatically detected during installation. For more information, see [The SQL Server Installation Guide](/sql/database-engine/install-windows/install-sql-server).
 
-For SQL Server 2022, the embedded license product key is also displayed in the product details panel on the **Keys** tab. Earlier versions of SQL Server display a message that says, "This product does not require a product key."  
+For SQL Server 2025 and SQL Server 2022, the embedded license product key is also displayed in the product details panel on the **Keys** tab. Earlier versions of SQL Server display a message that says, "This product does not require a product key."  
 
 Because the product key is automatically detected, you don’t need to identify a volume licensing product key to install any versions of SQL Server. To find the key manually, use the following steps:
 
-1. In the admin center, go to the **Billing** > **Your Products** page, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144" target="_blank">Volume licensing</a> tab.
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">**Your products**</a> page, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144" target="_blank">Volume licensing</a> tab.
 2. In the **Product and services** section, select **View downloads and keys**.
 3. On the <a href="https://go.microsoft.com/fwlink/p/?linkid=2297371" target="_blank">Products and services</a> page, find the **Product Name** for SQL Server, then select the **View downloads** icon (down arrow).
 4. In the product details panel, select one or more **Components**, then select **Download**.
 5. On your computer, open the downloaded file, then open the folder named **x64**.
 6. Open the _DefaultSetup.ini_ file. The SQL license product key is displayed inside the file.
 
+**Power BI Report Server (PBIRS)**
+
+Starting with SQL Server 2025, there is no separate installation key for PBIRS. As the only reporting services offering, both Enterprise and Standard Edition customers can use the SQL Server product key to install Power BI Reports Server. 
+
 If you need help with troubleshooting technical issues during product installation or online service activation, contact Microsoft Technical Support by submitting a [Technical Support request](https://support.microsoft.com/oas).
 
 ### Activate Windows Terminal Server and Remote Desktop Service (RDS) without a product key
 
-You don't need a volume license product key or product setup key from the volume licensing product keys page to activate Windows Terminal Server and Remote Desktop Service (RDS).
+You don't need a VL product key or product setup key from the VL product keys page to activate Windows Terminal Server and Remote Desktop Service (RDS).
 
 After you download the server media, you activate the product by completing the product activation wizard. The wizard walks you through the steps to connect the server with the Microsoft Clearing House via the internet to validate the data. Alternatively, for offline servers, the activation wizard offers phone or web activation. For more information, see [Activate the Remote Desktop Services license server](/windows-server/remote/remote-desktop-services/rds-activate-license-server).
 
@@ -115,7 +123,7 @@ If a parent organization has an individual agreement, it can use the same key to
 
 ## Use volume licensing product keys to activate products
 
-We provide two types of volume licensing product keys to automate and manage the activation of Windows operating systems, Microsoft Office, and other Microsoft products. This automation and management process is called volume activation.
+We provide two types of VL product keys to automate and manage the activation of Windows operating systems, Microsoft Office, and other Microsoft products. This automation and management process is called *volume activation*.
 
 You can use either or both key types to activate systems in your organization:
 
@@ -142,7 +150,7 @@ There are minimum activation thresholds that must be met. The activation thresho
 A Multiple Activation Key (MAK) is the recommended activation method for licenses bought under the Open Value or Open Value Subscription volume licensing agreement.
 However, in some limited exceptions, KMS keys might be assigned to Open Value or Open Value Subscription licenses for customers who meet the minimum KMS activation threshold for Windows Server, Windows Operating System, and Microsoft 365.
 
-To request an exception, you must have the Administrator or Product Key Reader volume license role. To submit the request, provide the following information on [this web form](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=2afa6f15-b710-db46-909a-8346017c802f):
+To request an exception, you must have the VL Administrator or Product keys reader role. To submit the request, provide the following information on [this web form](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=2afa6f15-b710-db46-909a-8346017c802f):
 
 - Agreement / Enrollment Number or License ID
 - Product Name (including version and edition)
@@ -154,7 +162,7 @@ To request an exception, you must have the Administrator or Product Key Reader v
 
 ### Request more KMS host keys
 
-To request more KMS activations to activate more than six KMS hosts, you must have the Administrator or Product Key Reader volume license role. To submit the request, provide the following information on [this web form](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=2afa6f15-b710-db46-909a-8346017c802f):
+To request more KMS activations to activate more than six KMS hosts, you must have the VL Administrator or Product keys reader role. To submit the request, provide the following information on [this web form](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=2afa6f15-b710-db46-909a-8346017c802f):
 
 - Agreement / Enrollment Number or License ID
 - Product Name (including version and edition)
@@ -169,7 +177,7 @@ Each MAK has a preset number of activations based on a percentage of the number 
 
 To see the number of times a MAK is used, use the following steps:
 
-1. In the admin center, go to the **Billing** > **Your products** page, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144" target="_blank">Volume licensing</a> tab.
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">**Your products**</a> page, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144" target="_blank">Volume licensing</a> tab.
 2. In the **Products and services** section, select **View downloads and keys**.
 3. On the <a href="https://go.microsoft.com/fwlink/p/?linkid=2297371" target="_blank">Products and services</a> page, select a **Product name**.
 4. In the product details panel, select the **Keys** tab. The **Activations** or **Seats** column indicates how many activations or seats are used out of the total number of activations or seats.
@@ -177,11 +185,11 @@ To see the number of times a MAK is used, use the following steps:
 The number of activations is also displayed in the Volume Activation Management Tool (VAMT) which is part of the Windows Assessment and Deployment Kit (ADK) for Windows. For more information, see [Volume Activation Management Tool (VAMT) technical reference](/windows/deployment/volume-activation/volume-activation-management-tool).
 
 > [!IMPORTANT]
-> Volume activation only applies to systems covered under a volume licensing program and is used strictly as a tool for activation. Volume activation isn’t tied to license invoicing or billing.
+> Volume activation only applies to systems covered under a VL program and is used strictly as a tool for activation. Volume activation isn't tied to license invoicing or billing.
 
 ### Request an increase to MAK activation limits
 
-Increases to MAK activation quantity are granted by exception. To request a MAK activation limit, you must have the Administrator, Key Administrator, or Key Viewer volume licensing role. To submit the request, you must provide the following information on [this web form](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=2afa6f15-b710-db46-909a-8346017c802f):
+Increases to MAK activation quantity are granted by exception. To request a MAK activation limit, you must have the VL Administrator, Key Administrator, or Key Viewer role. To submit the request, you must provide the following information on [this web form](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=2afa6f15-b710-db46-909a-8346017c802f):
 
 - Agreement/Enrollment Number or License ID and Authorization
 - Product Name (including version and edition)
@@ -217,21 +225,21 @@ If you deploy Microsoft 365 using KMS as the activation method:
 
 ## Use volume licensing product keys to activate earlier versions
 
-All volume licensing customers have the right to use product keys for reimaging and downgrade purposes. Select Plus, Enterprise Agreement (EA), and Select customers have limited evaluation rights for training and back-up. For more information about reimaging rights, see [Product licensing briefs](https://www.microsoft.com/licensing/docs/view/Licensing-Briefs).
+All VL customers have the right to use product keys for reimaging and downgrade purposes. Select Plus, Enterprise Agreement (EA), and Select customers have limited evaluation rights for training and back-up. For more information about reimaging rights, see [Product licensing briefs](https://www.microsoft.com/licensing/docs/view/Licensing-Briefs).
 
-Reimaging rights are granted to all Microsoft Volume Licensing customers. Under these rights, customers can reimage Original Equipment Manufacturer (OEM) or Full Packaged Product (FPP) licensed copies by using media provided under their agreement if the copies made from the volume licensing media are identical to the original licensed product. You can find the volume license keys in the admin center in the product details panel on the **Keys** tab or request your keys through Microsoft Assisted Support. To find support phone numbers, see [Volume License Key Phone Numbers | Microsoft Volume Licensing](https://www.microsoft.com/licensing/existing-customer/activation-centers?rtc=1?rtc=1).
+Reimaging rights are granted to all Microsoft VL customers. Under these rights, customers can reimage Original Equipment Manufacturer (OEM) or Full Packaged Product (FPP) licensed copies by using media provided under their agreement if the copies made from the VL media are identical to the original licensed product. You can find the VL keys in the admin center in the product details panel on the **Keys** tab or request your keys through Microsoft Assisted Support. To find support phone numbers, see [Volume License Key Phone Numbers | Microsoft Volume Licensing](https://www.microsoft.com/licensing/existing-customer/activation-centers?rtc=1?rtc=1).
 
 > [!NOTE]
 > If you're an Open License customer, you must buy at least one unit of the product that you want to reimage to get access to the product media and receive a product key.
 
-## Contact support
+## Contact volume licensing support
 
-Submit a case in the admin center > <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Help & Support</a>. If you’re unable to access the admin center, see [Contacting volume licensing support](/licensing/contact-us).
+Submit a case in the admin center > <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Help & Support</a>. If you can't access the admin center, see [Contact volume licensing support](contact-vl-support.md).
 
 ## Related content
 
-[Download volume licensing products](download-vl-products.md) (article)  
-[Online service activation for Open programs FAQ](online-service-activation-faq.yml) (article)  
-[Volume Activation Management Tool (VAMT) Technical Reference](/windows/deployment/volume-activation/volume-activation-management-tool) (article)  
-[Tools to manage volume activation of Office](/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office) (article)  
+[Download volume licensing products](download-vl-products.md) (article)<br/>
+[Online service activation for Open programs FAQ](online-service-activation-faq.yml) (article)<br/>
+[Volume Activation Management Tool (VAMT) Technical Reference](/windows/deployment/volume-activation/volume-activation-management-tool) (article)<br/>
+[Tools to manage volume activation of Office](/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office) (article)<br/>
 [Volume Activation for Windows](/windows/deployment/volume-activation/volume-activation-windows-10) (article)

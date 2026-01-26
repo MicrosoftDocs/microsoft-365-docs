@@ -69,6 +69,21 @@
          "source_path":"microsoft-365/frontline/deploy-dynamic-teams-at-scale.md",
          "redirect_url":"/microsoft-365/frontline/deploy-flexible-membership-teams-at-scale", 
          "redirect_document_id":true
-      }
+      },
+      {
+         "source_path":"microsoft-365/frontline/set-up-open-shifts-across-locations.md",
+         "redirect_url":"/microsoft-365/frontline/shifts-for-teams-landing-page", 
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/frontline/deploy-shifts-at-scale.md",
+         "redirect_url":"/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams", 
+         "redirect_document_id":false
+      },
+      {
+        "source_path": "microsoft-365/frontline/flw-pilot.md",
+        "redirect_url": "/microsoft-365/frontline/startafrontlinepilot",
+        "redirect_document_id": true
+       } 
    ]
 }

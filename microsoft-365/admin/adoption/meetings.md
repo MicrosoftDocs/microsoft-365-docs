@@ -2,21 +2,22 @@
 title: "Microsoft Adoption Score - Meetings (Previous Version)"
 f1.keywords:
 - NOCSH
-ms.author: camillepack
-author: camillepack
+author: efrene
+ms.author: efrene
 manager: scotv
 ms.date: 08/10/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - scotvorg
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- operations-pod
 ms.custom: AdminSurgePortfolio
-monikerRange: 'o365-worldwide'
+monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150

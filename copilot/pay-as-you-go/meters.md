@@ -1,34 +1,36 @@
 ---
 title: Meters for Microsoft 365 Copilot pay-as-you-go for IT admins
-description: Enterprise and company IT administrators can learn about the meters for the pay-as-you-go service for Microsoft 365 Copilot, including Copilot Chat.
-ms.author: camillepack
-author: camillepack
+author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
-ms.date: 04/22/2025
 ms.reviewer: nishanair
+ms.update-cycle: 180-days
 audience: Admin
 ms.topic: get-started
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
 ms.collection: 
-- scotvorg
 - m365copilot
 - magic-ai-copilot
 - essentials-overview
+- operations-pod
 ms.custom: [copilot-learning-hub]
 appliesto:
-  - ✅ Microsoft 365 Copilot
+- ✅ Microsoft 365 Copilot
+description: Enterprise and company IT administrators can learn about the meters for the pay-as-you-go service for Microsoft 365 Copilot, including Copilot Chat.
+ms.date: 10/09/2025
 ---
 
 # Meters for Microsoft 365 Copilot pay-as-you-go for IT admins
 
-The Microsoft 365 Copilot pay-as-you-go service offers a consumption-based option for organizations to access Copilot services, like Microsoft 365 Copilot Chat. To learn more about the pay-as-you-go service, see [Microsoft 365 Copilot pay-as-you-go overview](overview.md).
+The Microsoft 365 Copilot pay-as-you-go service offers a consumption-based option for organizations to access Copilot services, like Microsoft 365 Copilot Chat and SharePoint agents. To learn more about the pay-as-you-go service, see [Microsoft 365 Copilot pay-as-you-go overview](overview.md).
 
-When you choose to use pay-as-you-go, usage of Microsoft 365 Copilot Chat agents is billed to your Azure subscription using Azure meters. This article provides information about the meters used for billing Microsoft 365 Copilot pay-as-you-go services.
+When you choose to use pay-as-you-go, usage of Microsoft 365 Copilot Chat agents or SharePoint agents is billed to your Azure subscription using Azure meters. This article provides information about the meters used for billing Microsoft 365 Copilot pay-as-you-go services.
 
 This article applies to:
 
 - Microsoft 365 Copilot
+- SharePoint agents
 
 ## Meter details table
 

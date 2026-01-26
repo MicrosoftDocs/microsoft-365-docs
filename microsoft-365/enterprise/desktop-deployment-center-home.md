@@ -2,7 +2,7 @@
 title: Desktop Deployment Center
 f1.keywords:
 - NOCSH
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 03/12/2025

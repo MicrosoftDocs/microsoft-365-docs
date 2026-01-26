@@ -1,12 +1,12 @@
 ---
 title: "Limit who can invite guests"
-author: DaniEASmith
-ms.author: danismith
+author: officedocspr5
+ms.author: odocspr
 manager: jtremper
 ms.date: 06/19/2024
 audience: ITPro
 ms.topic: how-to
-ms.service: o365-solutions
+ms.service: m365-planning
 ms.collection:
 - highpri
 - Tier1
@@ -15,6 +15,7 @@ ms.collection:
 - m365solution-securecollab
 - m365solution-scenario
 - m365initiative-externalcollab
+ms.custom: m365-solutions-doc-set
 ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false

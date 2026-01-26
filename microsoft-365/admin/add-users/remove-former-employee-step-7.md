@@ -2,15 +2,15 @@
 title: "Step 7 - Delete a former employee's user account"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekuako
-manager: scotv
-ms.date: 01/06/2025
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
+ms.date: 10/28/2025
 audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-business
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
 - M365-subscription-management
@@ -28,16 +28,20 @@ description: "After you've saved and accessed all of a former employee's user da
 
 # Step 7 - Delete a former employee's user account
 
-After you've saved and accessed all the former employee's user data, you can delete the former employee's account.
+After an employee has left your organization, and you've saved and accessed their user data, you can delete the former employee's account.
 
 > [!IMPORTANT]
 > Don't delete the account if you've set up email forwarding or converted it to a shared mailbox. Both need the account to anchor the forwarding or shared mailbox.
+> 
+> You must have appropriate permissions through a role, such as [User Administrator](/entra/identity/role-based-access-control/permissions-reference#user-administrator) to perform the tasks in this article. 
 
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
-2. Select the name of the employee that you want to delete.
+1. In the [Microsoft 365 admin center](https://admin.cloud.microsoft/), go to **Users** > **Active users**. (Or, go directly to the [Active users page](https://go.microsoft.com/fwlink/p/?linkid=834822).)
+
+2. Select the name of the former employee's account that you want to delete.
+
 3. Under the user's name, select **Delete user**. Choose the options you want for this user, and then select **Delete user**. If you've already given another user access to this user's email and OneDrive, you don't have to do it again here.
 
-When you delete a user, the account becomes inactive for approximately 30 days. You've until then to restore the account before it's permanently deleted.
+When you delete a user, the account becomes inactive for approximately 30 days. You have until then to restore the account before it's permanently deleted.
 
 ## Watch: Delete a former employee's user account
 
@@ -58,12 +62,12 @@ If you're using Microsoft Entra ID, see the [Remove-MgUser](/powershell/module/m
 Here's information about how to get an employee out of email (Exchange).
 
 |What you can do|How you do it|
-|:-----|:-----|
+|-----|-----|
 |Terminate a session (such as Outlook on the web, Outlook, Exchange active sync, etc.) and force to open a new session|Reset password|
 |Terminate a session and block access to future sessions (for all protocols)|Disable the account. For example, in the Exchange admin center or using PowerShell: <br/>  `Set-Mailbox user@contoso.com -AccountDisabled:$true`|
 |Terminate the session for a particular protocol (such as ActiveSync)|Disable the protocol. For example, in the Exchange admin center or using PowerShell: <br/>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false`|
 
-The above operations can be done in three places:
+The preceding operations can be done in three places:
 
 |If you terminate the session here|How long it takes|
 |---|---|
@@ -75,10 +79,17 @@ The above operations can be done in three places:
 
 **Fastest**: Use the Exchange admin center (use PowerShell) or Microsoft Entra admin center. In an on-premises environment, it can take several hours to sync the change through Microsoft Entra Connect.
   
-**Fastest for a user with presence on-premises and in the Exchange Datacenter**: Terminate the session using Microsoft Entra admin center/Exchange admin center AND make the change in the on-premises environment as well. Otherwise, the change in Microsoft Entra admin center/Exchange admin center will be overwritten by Microsoft Entra Connect.
+**Fastest for a user with presence on-premises and in the Exchange Datacenter**: Terminate the session using Microsoft Entra admin center/Exchange admin center AND make the change in the on-premises environment as well. Otherwise, the change in Microsoft Entra admin center/Exchange admin center is overwritten by Microsoft Entra Connect.
   
 ## Related content
 
-[Restore a user](restore-user.md) (article)
+- [Restore a user](restore-user.md)
 
-[Reset passwords](reset-passwords.md) (article)
+- [Reset passwords](reset-passwords.md)
+
+- [Microsoft Entra admin center](/entra/fundamentals/entra-admin-center)
+
+- [Exchange admin center](/exchange/exchange-admin-center)
+
+- [Exchange PowerShell](/powershell/module/exchangepowershell)
+

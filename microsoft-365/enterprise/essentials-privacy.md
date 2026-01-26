@@ -2,9 +2,9 @@
 title: Privacy for Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: kvice
-author: kelleyvice-msft
-manager: scotv
+ms.author: danbrown
+author: DHB-MSFT
+manager: dansimp
 ms.date: 03/17/2025
 audience: ITPro
 ms.topic: concept-article
@@ -12,7 +12,6 @@ ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: high
 ms.collection: 
-- scotvorg
 - must-keep
 - essentials-privacy
 ms.custom: 

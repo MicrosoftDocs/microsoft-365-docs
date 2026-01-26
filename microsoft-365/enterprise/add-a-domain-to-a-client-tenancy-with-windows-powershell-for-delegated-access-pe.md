@@ -1,6 +1,6 @@
 ---
 title: "Add a domain to a client tenancy with Windows PowerShell for DAP partners"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 02/12/2025

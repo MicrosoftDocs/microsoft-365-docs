@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: drjones, jobailey
+ms.reviewer: padeshmukh
 audience: Admin
 ms.topic: troubleshooting
 ms.service: microsoft-365-business
@@ -22,9 +22,9 @@ ms.custom:
 - AdminSurgePortfolio
 - GAUpdates
 search.appverid: MET150
-ROBOTS: NOINDEX
+ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to resolve the issues that you face when you enter your product key for Microsoft 365 for business."
-ms.date: 03/26/2025
+ms.date: 08/04/2025
 ---
 
 # Problems with your Microsoft 365 for business product key?

@@ -2,31 +2,32 @@
 title: "Microsoft Adoption Score - Mobility"
 f1.keywords:
 - NOCSH
-ms.author: camillepack
-author: camillepack
+author: efrene
+ms.author: efrene
 manager: scotv
-ms.date: 08/10/2020
+ms.date: 01/26/2026
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier2
 - scotvorg
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- operations-pod
 ms.custom: AdminSurgePortfolio
-monikerRange: 'o365-worldwide'
+monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-description: "Details of the Mobility - people experiences Adoption Score."
+description: "Details of Mobility in the Adoption Score report."
 ---
 
-# Mobility insights score – People experiences
+# Mobility insights score
 
-Adoption Score provides insights into your organization's digital transformation journey through its use of Microsoft 365 and the technology experiences that support it. Your organization's score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar to yours. The mobility category is part of the people experiences measures. To learn more, check out the [Adoption Score overview](adoption-score.md) and read [Microsoft's Privacy Statement](https://privacy.microsoft.com/privacystatement).
+Adoption Score provides insights into your organization's digital transformation journey through its use of Microsoft 365 and the technology experiences that support it. Your organization's score reflects technology experience measurements and can be compared to benchmarks from organizations similar to yours. To learn more, check out the [Adoption Score overview](adoption-score.md) and read [Microsoft's Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
 ## Prerequisites
 

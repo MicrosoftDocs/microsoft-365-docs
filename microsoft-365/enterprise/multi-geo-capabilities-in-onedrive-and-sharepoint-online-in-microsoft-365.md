@@ -2,7 +2,7 @@
 title: "Multi-Geo Capabilities in OneDrive and SharePoint"
 ms.reviewer: adwood
 ms.date: 04/02/2025
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 audience: ITPro

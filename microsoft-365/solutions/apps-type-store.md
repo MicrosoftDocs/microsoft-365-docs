@@ -1,17 +1,17 @@
 ---
 title: "Understand store apps for your managed environment"
-ms.author: erikre
-author: erikre
-manager: dougeby
+ms.author: nwhite
+author: nicholasswhite
+manager: laurawi
 audience: ITPro
 ms.topic: concept-article
 ms.date: 04/21/2025
 description: Understand store apps as they apply to a managed environment.
-ms.service: o365-solutions
+ms.service: m365-planning
 ms.localizationpriority: high
 ms.collection:
 - highpri
-ms.custom:
+ms.custom: m365-solutions-doc-set
 keywords:
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Removing or disabling Hybrid Modern Authentication from Skype for Business and Exchange"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 08/13/2024

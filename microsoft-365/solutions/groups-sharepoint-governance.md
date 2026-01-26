@@ -2,19 +2,20 @@
 title: SharePoint and Microsoft 365 Groups integration (IT Admins)
 ms.reviewer: rahulnayak
 ms.date: 07/27/2023
-author: DaniEASmith
-ms.author: danismith
+author: officedocspr5
+ms.author: odocspr
 manager: jtremper
 audience: Admin
 ms.topic: integration
-ms.service: o365-solutions
+ms.service: m365-planning
 ms.localizationpriority: medium
 ms.collection: 
 - highpri
 - M365-collaboration
 - m365solution-collabgovernance
-ms.custom: 
+ms.custom:
 - M365solutions
+- m365-solutions-doc-set
 f1.keywords: NOCSH
 recommendations: false
 description: Learn how admin settings for Microsoft 365 Groups and SharePoint can affect each other and the user experience.

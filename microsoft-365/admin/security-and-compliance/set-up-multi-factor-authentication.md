@@ -2,13 +2,13 @@
 title: "Set up multifactor authentication for users"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekuako
-manager: scotv
-ms.date: 10/02/2024
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
+ms.date: 12/10/2025
 audience: Admin
 ms.topic: install-set-up-deploy
-ms.service: microsoft-365-business
+ms.service: microsoft-365-security
 ms.localizationpriority: high
 ms.collection: 
 - Tier1
@@ -17,6 +17,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- trust-pod
 ms.custom: 
 - VSBFY23
 - AdminSurgePortfolio
@@ -24,89 +25,237 @@ ms.custom:
 - admindeeplinkMAC
 - adminvideo
 - business_assist
-description: "Learn how to set up multifactor authentication for your organization."
-monikerRange: 'o365-worldwide'
+description: "Learn how to set up multifactor authentication (also known as MFA, two-factor authentication, or 2FA) in your Microsoft 365 organization."
+customer-intent: As an administrator, I want to know about MFA and how to set it up.
+monikerRange: o365-worldwide
 ---
 
 # Set up multifactor authentication for Microsoft 365
 
-Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+Multifactor authentication (also known as MFA, two-factor authentication, or 2FA) requires a second verification method for user sign-ins and improves account security.
 
-Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+This article contains instructions to set up MFA using the available options:
 
-Multifactor authentication means you and your employees must provide more than one way to sign in to Microsoft 365 is one of the easiest ways to secure your business. Based on your understanding of [multifactor authentication (MFA) and its support in Microsoft 365](multi-factor-authentication-microsoft-365.md), it's time to set it up and roll it out to your organization.
+- [Security defaults](#manage-security-defaults): Available in all Microsoft 365 organizations via Microsoft Entra ID Free.
+- [Conditional Access policies](#manage-conditional-access-policies): Available in Microsoft 365 organizations with Microsoft Entra ID P1 or P2.
+- [Legacy per-user MFA (not recommended)](#manage-legacy-per-user-mfa): Available in all Microsoft 365 organizations via Microsoft Entra ID Free.
 
-Multifactor authentication (MFA) is an important first step in securing your organization. Microsoft 365 for business gives you the option to use security defaults or Conditional Access policies to turn on MFA for your admins and user accounts. For most organizations, **Security defaults** offer a good level of sign-in security. But if your organization must meet more stringent requirements, you can use [Conditional Access policies](https://go.microsoft.com/fwlink/?linkid=2261708).
+For information about the different options for MFA in Microsoft 365, see [Multifactor authentication in Microsoft 365](multi-factor-authentication-microsoft-365.md)
+
+## What do you need to know before you begin?
+
+- You must have appropriate permissions assigned before you can complete the procedures in this article. Here are some options:
+
+   - [Microsoft Entra permissions](/entra/identity/role-based-access-control/manage-roles-portal):
+
+      - Turn on or turn off security defaults: Membership in the **Global Administrator** or **Security Administrator** roles.
+      - Create and manage Conditional Access policies: Membership in the **Global Administrator** or **Conditional Access Administrator** roles.
+
+      > [!IMPORTANT]
+      > Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
+
+- To use security defaults or Conditional Access, you need to turn off legacy per-user MFA for users in your organization. If your organization's subscription was started after 2019, legacy per-user MFA is most likely not turned on. For more information, see [Enable per-user Microsoft Entra multifactor authentication to secure sign-in events](/entra/identity/authentication/howto-mfa-userstates).
+
+> [!NOTE]
+> If you have non-Microsoft directory services with Active Directory Federation Services (AD FS) configured before July 2019, set up the Azure MFA Server. For more information, see [Advanced scenarios with Microsoft Entra multifactor authentication and non-Microsoft VPN solutions](/previous-versions/entra/identity/authentication/howto-mfaserver-nps-vpn).
+
+<a name='steps-turn-on-multifactor-authentication'></a>
+
+<a name='turn-security-default-mfa-off'></a>
+
+## Manage security defaults
+
+Microsoft 365 tenants created after October 2019 have security defaults turned on by default. To view or change the current status of security defaults in your organization, follow these steps:
+
+1. In the [Microsoft Entra admin center](https://entra.microsoft.com), go to **Identity** \> **Overview**. Or, to go directly to the [Microsoft Entra overview page](https://entra.microsoft.com/#view/Microsoft_AAD_IAM/TenantOverview.ReactView).
+
+2. On the overview page, select the **Properties** tab, and the go to the **Security defaults** section at the bottom of the tab.
+
+   Depending on the current status of security defaults, one of the following experiences is available:
+
+   - **Security defaults is on**: The following text is shown and **Manage security defaults** is available:
+
+      > Your organization is protected by security defaults.
+
+   - **One or more Conditional Access policies exist in Microsoft Entra ID P1 or P2**: The following text is shown and **Manage security defaults** isn't available:
+
+      > Your organization is currently using Conditional Access policies which prevents you from enabling security defaults. You can use Conditional Access to configure custom policies that enable the same behavior provided by security defaults.
+
+      **Manage Conditional Access** takes you to the [Policies page](https://entra.microsoft.com/#view/Microsoft_AAD_ConditionalAccess/PoliciesList.ReactView) where you can manage Conditional Access policies. To switch between security defaults and Conditional Access policies, see the [Revert to security defaults from Conditional Access policies](#revert-to-security-defaults-from-conditional-access-policies) section in this article.
+
+   - **Security defaults is off**: The following text is shown and **Manage security defaults** is available:
+
+      > Your organization is not protected by security defaults.
+
+3. If **Manage security defaults** is available, select it to turn on or turn off security defaults.
+
+   In the **Security defaults** flyout that opens, do one of the following:
+
+   - **Turn on security defaults**: In the **Security defaults** dropdown list, select **Enabled**, and then select **Save**.
+   - **Turn off security defaults**: In the **Security defaults** dropdown list, select **Disabled**. In the **Reason for disabling** section, select **My organization is planning to use Conditional Access**.
+
+   When you're finished in the **Security defaults** flyout, select **Save**
+
+   > [!CAUTION]
+   > Don't turn off security defaults unless you're switching to Conditional Access policies in Microsoft Entra ID P1 or P2.
+
+<a name='use-conditional-access-policies'></a>
+
+## Manage Conditional Access policies
+
+If your Microsoft 365 organization includes Microsoft Entra ID P1 or later, you can use Conditional Access instead of security defaults for a higher security posture and more granular control. For example:
+
+- Microsoft 365 Business Premium (Microsoft Entra ID P1)
+- Microsoft 365 E3 (Microsoft Entra ID P1)
+- Microsoft 365 E5 (Microsoft Entra ID P2)
+- An add-on subscription
+
+For more information, see [Plan a Conditional Access deployment](/entra/identity/conditional-access/plan-conditional-access).
+
+Switching from security defaults to Conditional Access policies requires the following basic steps:
+
+1. Turn off security defaults.
+
+2. Create baseline Conditional Access policies to recreate the security policies in security defaults.
+
+3. Adjust MFA exclusions.
+
+4. Create new Conditional Access policies.
 
 > [!TIP]
-> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
+> If security defaults are turned on, you can create new Conditional Access policies, but you can't turn them on. After you turn off security defaults, you can turn on Conditional Access policies.
 
-## Before you begin
+### Step 1: Turn off security defaults
 
-- You must be a Global admin to manage MFA. For more information, see [About admin roles](../add-users/about-admin-roles.md).
-- If you have legacy per-user MFA turned on, [Turn off legacy per-user MFA](#turn-off-per-user-mfa).
-- Advanced: If you have third-party directory services with Active Directory Federation Services (AD FS), set up the Azure MFA Server. See [advanced scenarios with Microsoft Entra multifactor authentication and third-party VPN solutions](/azure/active-directory/authentication/howto-mfaserver-nps-vpn) for more information.
+Security defaults and Conditional Access policies can't be turned on at the same time, so the first thing you need to do is turn off security defaults.
 
-## Watch: Turn on multifactor authentication
+For instructions, see the previous [Manage security defaults](#manage-security-defaults) section in this article.
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=eb0acd2a-edf5-4c1d-8e72-e3254bc7dc12]
+### Step 2: Create baseline Conditional Access policies to recreate the policies in security defaults
 
-## Steps: Turn on multifactor authentication
+The policies in security defaults are the Microsoft-recommended baseline for all organizations, so it's important to recreate these policies in Conditional Access before you create other Conditional Access policies.
 
-If you purchased your subscription or trial after October 21, 2019, and you're prompted for MFA when you sign in, [security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) have been automatically enabled for your subscription. If you purchased your subscription before October 2019, follow these steps to turn on **security default MFA**.
+The following templates in Conditional Access recreate the policies in security defaults:
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as least a [Security Administrator](/entra/identity/role-based-access-control/permissions-reference#security-administrator).
-1. Browse to **Identity** > **Overview** > **Properties**.
-1. Select **Manage security defaults**.
-1. Set **Security defaults** to **Enabled**.
-1. Select **Save**.
+- [Require MFA for all users](/entra/identity/conditional-access/howto-conditional-access-policy-all-users-mfa)
+- [Require MFA for administrators](/entra/identity/conditional-access/policy-old-require-mfa-admin) (To improve your security posture, see [Require phishing-resistant MFA for administrators](/entra/identity/conditional-access/policy-admin-phish-resistant-mfa))
+- [Block legacy authentication](/entra/identity/conditional-access/howto-conditional-access-policy-block-legacy)
+- [Require MFA for Azure management](/entra/identity/conditional-access/howto-conditional-access-policy-azure-management)
 
-For more information, see [What are security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)?
+To create Conditional Access policies using these templates, follow these steps:
 
-## Turn off per-user MFA
+1. In the Microsoft Entra admin center, go to the [Conditional Access | Policies page](https://entra.microsoft.com/#view/Microsoft_AAD_ConditionalAccess/ConditionalAccessBlade/~/Policies).
 
-If you've previously turned on per-user MFA, you must turn it off before enabling Security defaults.  You should also turn off per-user MFA after you've configure your policies and settings in Conditional Access.
+2. On the **Conditional Access | Policies** page, select :::image type="icon"source="../../media/m365-cc-sc-create-icon.png" border="false"::: **New policy from template**.
 
-1. In the Microsoft 365 admin center, in the left nav choose **Users** \> **Active users**.
-1. On the **Active users** page, choose **multifactor authentication**.
-1. On the multifactor authentication page, select each user and set their multifactor authentication status to **Disabled**.
+3. On the **New policy from template** page, verify the **Select a template** tab is selected. On the **Select a template** tab, verify the **Secure foundation** tab is selected.
 
-## Turn Security default MFA off
+4. On the **Secure foundation** tab, select one of the required templates (for example, **Require multifactor authentication for all users**), and then select **Review + Create**.
 
-> [!IMPORTANT]
-> It's not recommended to turn off MFA.
+   > [!TIP]
+   > To find and select the **Require phishing-resistant multifactor authentication for admins** template, use the :::image type="icon"source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box.
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as at least a [security administrator](/entra/identity/role-based-access-control/permissions-reference#security-administrator) or [conditional access administrator](/entra/identity/role-based-access-control/permissions-reference#conditional-access-administrator).
+5. On the **Review + Create** tab, view or configure the following settings:
+   
+   - **Basics** section:
+   
+      - **Policy name**: Accept the default name or customize it.
+      - **Policy state**: Select **On**
+   
+   - **Assignments** section: In the **Users and groups** section, notice the **Excluded users** value is **Current user** and you can't change it. Only [emergency access accounts](/entra/identity/role-based-access-control/security-emergency-access) should be excluded from MFA requirements. For more information, see the next step.
 
-1. Browse to **Identity** > **Overview** > **Properties**.
-1. Select **Manage security defaults**.
-1. Set **Security defaults** to **Disabled (not recommended)**.
-1. Select **Save**.
+   When you're finished on the **Review + Create** tab, select **Create**.
 
-## Use Conditional Access policies
+   The policy you created is shown on the **Conditional Access | Policies** page.
 
-If your organization has more granular sign-in security needs, [Conditional Access policies](https://go.microsoft.com/fwlink/?linkid=2261708) can offer you more control. Conditional Access lets you create and define policies that react to sign in events and request additional actions before a user is granted access to an application or service. You can also get started by using [conditional access templates](/entra/identity/conditional-access/concept-conditional-access-policy-common?tabs=secure-foundation).
+6. Repeat the previous steps for the remaining templates.
 
-> [!IMPORTANT]
-> Do not forget to disable per-user MFA after you have enabled Conditional Access policies. This is important as it will result in inconsistent user experience.
+#### Step 3: Adjust MFA exclusions
 
-Conditional Access is available for customers who bought Microsoft Entra ID P1, or licenses that include this, such as Microsoft 365 Business Premium, and Microsoft 365 E3. For more information, see [create a Conditional Access policy](/azure/active-directory/authentication/tutorial-enable-azure-mfa).
+By default, the Conditional Access policies you created in the previous step contains exclusions for the account you were signed in as, and you can't modify exclusions during policy creation.
 
-Risk-based conditional access is available through Microsoft Entra ID P2 license, or licenses that include risk based conditional access, like Microsoft 365 E5. For more information, see [risk-based Conditional Access](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk).
+We recommend at least two [emergency access admin accounts](/entra/identity/role-based-access-control/security-emergency-access) in every organization that aren't assigned to specific individuals and are only used in emergencies. These accounts need to be excluded from MFA requirements.
 
-For more information about the Microsoft Entra ID P1 and P2, see [Microsoft Entra pricing](https://azure.microsoft.com/pricing/details/active-directory/).
+You might need to remove the current account exclusions and/or add emergency access account exclusions to the following policies:
 
-## Next steps - Send to your users
+- [Require MFA for all users](/entra/identity/conditional-access/policy-all-users-mfa-strength#create-a-conditional-access-policy)
+- [Require MFA for administrators](/entra/identity/conditional-access/policy-old-require-mfa-admin) or [Require phishing-resistant MFA for administrators](/entra/identity/conditional-access/policy-admin-phish-resistant-mfa#create-a-conditional-access-policy)
+- [Require MFA for Azure management](/entra/identity/conditional-access/policy-old-require-mfa-azure-mgmt#create-a-conditional-access-policy)
 
-- [What is multifactor authentication](https://support.microsoft.com/help/4577374/what-is-multifactor-authentication)
-- [Sign-in after registration](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
-- [Change additional verification method](https://support.microsoft.com/office/956ec8d0-7081-4518-a701-f8414cc20831)
-- [Register for additional verification method](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
+Before you create custom Conditional Access policies, create your emergency access accounts and then use the following steps to adjust the exclusions for MFA-related policies:
+
+1. On the [Conditional Access | Policies page](https://entra.microsoft.com/#view/Microsoft_AAD_ConditionalAccess/ConditionalAccessBlade/~/Policies), select one of the MFA-related policies that you created in the previous step (for example, **Require multifactor authentication for Azure management**).
+
+2. On the policy details page that opens, select **All users included and specific users excluded** in the **Assignments** \> **Users** section.
+
+3. In the information that appears, select the **Exclude** tab.
+
+4. On the **Exclude** tab, the following settings are configured:
+
+   - **Select the users and groups to exempt from the policy**: The value **Users and groups** is selected.
+   
+   - **Select excluded users and groups**: The value **1 user** is shown, and the user account that was used to create the policy is shown.
+   
+      - To remove the current account from the excluded users list, select :::image type="icon"source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: \> :::image type="icon"source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Remove**.
+
+      The value changes to **0 users and groups selected** and the warning text **Select at least one user or group** appears.
+
+      - To add emergency access accounts to the excluded users list, select **0 users and groups selected**. In the **Select excluded users and groups** flyout that opens, find and select the emergency access accounts to exclude. The selected users are shown in the **Selected** pane. When you're finished, select **Select**.
+
+      Back on the policy details page, select **Save**.
+
+5. Repeat the previous steps for the remaining MFA-related policies.
+
+> [!TIP]
+> The [Block legacy authentication](/entra/identity/conditional-access/howto-conditional-access-policy-block-legacy) policy probably needs no exclusions, so you can use the previous steps to remove the existing exclusion. Just uncheck **Users and groups** in Step 4.
+>
+> For more information about user exclusions in Conditional Access policies, see [User exclusions](/entra/identity/conditional-access/plan-conditional-access#user-exclusions).
+
+### Step 4: Create new Conditional Access policies
+
+Now you can create Conditional Access policies that meet your business needs. For more information, see [Plan a Conditional Access deployment](/entra/identity/conditional-access/plan-conditional-access).
+
+### Revert to security defaults from Conditional Access policies
+
+Security defaults are turned off when you're using Conditional Access policies. If one or more Conditional Access policies exist in any state (**Off**, **On**, or **Report only**), you can't turn on security defaults. You need to delete all existing Conditional Access policies before you can turn on security defaults.
+
+> [!CAUTION]
+> Before you delete any Conditional Access policies, be sure to record their settings.
+
+To delete Conditional Access policies, use the following steps:
+
+1. On the [Conditional Access | Policies page](https://entra.microsoft.com/#view/Microsoft_AAD_ConditionalAccess/ConditionalAccessBlade/~/Policies), select the policy that you want to delete.
+
+2. In the details page that opens, select :::image type="icon"source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete** at the top of the page.
+
+3. In the **Are you sure?** dialog that opens, select **Yes**.
+
+After you delete all Conditional Access policies, you can turn on security defaults as described in [Manage security defaults](#manage-security-defaults).
+
+## Manage legacy per-user MFA
+
+We strongly recommend using security defaults or Conditional Access for MFA in Microsoft 365. If you can't, your last option is MFA for individual Microsoft Entra ID accounts via Microsoft Entra ID Free.
+
+For instructions, see [Enable per-user Microsoft Entra multifactor authentication to secure sign-in events](/entra/identity/authentication/howto-mfa-userstates).
+
+## Next steps
+
+- **Admins**: [Admin account security in Microsoft 365 for business](m365b-account-security-admins.md)
+
+- **Users**:
+
+  - [What is multifactor authentication](https://support.microsoft.com/topic/what-is-multifactor-authentication-e5e39437-121c-be60-d123-eda06bddf661)
+  - [Sign-in after registration](https://support.microsoft.com/account-billing/sign-in-to-your-work-or-school-account-using-two-step-verification-c7293464-ef5e-4705-a24b-c4a3ec0d6cf9)
+  - If you can't sign in, see [How end users can perform account recovery in Microsoft Entra ID](/entra/identity/authentication/how-to-account-recovery-for-users)
+  - [Change how you do additional verification](https://support.microsoft.com/topic/change-how-you-do-additional-verification-956ec8d0-7081-4518-a701-f8414cc20831)
+  - [Set up your Microsoft 365 sign-in for multifactor authentication](https://support.microsoft.com/office/set-up-your-microsoft-365-sign-in-for-multi-factor-authentication-ace1d096-61e5-449b-a875-58eb3d74de14) and the following video:
+
+     > [!VIDEO https://learn-video.azurefd.net/vod/player?id=eb0acd2a-edf5-4c1d-8e72-e3254bc7dc12]
 
 ## Related content
 
-[Set up multifactor authentication](set-up-multi-factor-authentication.md) (video)
-
-[Turn on multifactor authentication for your phone](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14) (article)
-
-[Security defaults and multifactor authentication](/microsoft-365/business-premium/m365bp-turn-on-mfa) (article)
+- [Small business help & learning](https://go.microsoft.com/fwlink/p/?linkid=2224585)
+- [YouTube: Microsoft 365 small business help](https://go.microsoft.com/fwlink/p/?linkid=2197659)
+- [Set up multifactor authentication](set-up-multi-factor-authentication.md)
+- [Turn on multifactor authentication for your phone](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
+- [Multifactor authentication for Microsoft 365](multi-factor-authentication-microsoft-365.md)

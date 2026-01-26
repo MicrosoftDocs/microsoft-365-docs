@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: 08/20/2021
 audience: ITPro
 ms.topic: how-to
-ms.service: o365-solutions
+ms.service: m365-planning
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -16,7 +16,9 @@ ms.collection:
 - Strat_O365_Enterprise
 - ransomware
 - m365solution-ransomware
-ms.custom: seo-marvel-jun2020
+ms.custom:
+- seo-marvel-jun2020
+- m365-solutions-doc-set
 keywords: ransomware, human-operated ransomware, human operated ransomware, HumOR, extortion attack, ransomware attack, encryption, cryptovirology, zero trust
 description: Use controlled folder access, Microsoft Purview Information Protection, DLP, and Microsoft Defender for Cloud Apps to protect your Microsoft 365 sensitive data.
 ---

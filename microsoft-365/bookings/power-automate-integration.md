@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
+- operations-pod
 description: "Use Power Automate Bookings Connectors to create custom workflows with appointment triggers."
 ---
 

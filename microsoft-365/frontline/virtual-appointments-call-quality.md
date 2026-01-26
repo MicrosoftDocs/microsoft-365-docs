@@ -20,7 +20,7 @@ description: Learn how to use the Call Quality Dashboard for Virtual Appointment
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 02/20/2024
+ms.date: 11/13/2025
 ---
 # Microsoft Teams Virtual Appointments in Call Quality Dashboard
 

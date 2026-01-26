@@ -1,7 +1,7 @@
 ---
 title: "Assign a baseline in Microsoft 365 Lighthouse"
 f1.keywords: CSH
-ms.author: sharik
+ms.author: dansimp
 author: SKjerland
 manager: scotv
 ms.reviewer: jatingupta
@@ -30,17 +30,16 @@ By default, Microsoft 365 Lighthouse assigns the default baseline to all tenants
 
 Make sure you and your customer tenants meet the requirements listed in [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
-Additionally, each partner tenant user must be a Microsoft 365 Lighthouse admin.
+Additionally, each partner tenant user must hold the Administrator role in Lighthouse.
 
-## Assign a baseline to a tenant
+## Assign a baseline to one or more tenants
 
 1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Tenants**.
-2. Select a tenant to which you want to assign a new baseline.
-3. Select **Assign baseline**.
-4. Select the baseline you want to assign to the selected tenants.
+2. Select the checkbox next to the tenants to which you want to assign a new baseline, and then select **Assign baseline** at the top of the table.
+3. Select the baseline you want to assign to the selected tenants.
 
 > [!NOTE]
-> Baselines don't include tenant-specific attributes, and the assignment of a new baseline will overwrite any pre-existing customization to the configuration of a tenant's deployment plan, such as deployment task dismissals, user and user group exclusions, and deployment statuses of manual deployment tasks. These values will need to be re-entered for each tenant, as needed.
+> Baselines don't include tenant-specific attributes, and the assignment of a new baseline overwrites any pre-existing customization to the configuration of a tenant's deployment plan, such as deployment task dismissals, user and user group exclusions, and deployment statuses of manual deployment tasks. These values need to be re-entered for each tenant, as needed.
 
 ## Next steps
 

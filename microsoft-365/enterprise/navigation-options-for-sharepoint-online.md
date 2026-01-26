@@ -1,6 +1,6 @@
 ---
 title: Navigation options for SharePoint
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 03/19/2025

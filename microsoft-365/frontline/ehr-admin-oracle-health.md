@@ -27,10 +27,13 @@ appliesto:
   - Microsoft 365 for frontline workers
 ms.reviewer: beolson 
 description: Learn how to integrate the Teams EHR connector to enable healthcare providers in your organization to conduct virtual appointments with patients or other providers in Teams directly from the Oracle Health EHR system.
-ms.date: 06/26/2024
+ms.date: 10/06/2025
 ---
 
 # Virtual Appointments with Teams - Integration into Oracle Health EHR
+
+> [!IMPORTANT]
+> This EHR integration is no longer supported.
 
 The Microsoft Teams Electronic Health Record (EHR) connector makes it easy for clinicians to launch a virtual patient appointment or consult with another provider in Microsoft Teams directly from the Oracle Health EHR system. Built on the Microsoft 365 cloud, Teams enables simple, secure collaboration and communication with chat, video, voice, and healthcare tools in a single hub that supports compliance with HIPAA, HITECH certification, and more.
 
@@ -156,7 +159,7 @@ From there, the provider can view appointment information, join appointments, an
 
 Key features of the provider experience:
 
-- Providers can join appointments using supported browsers or the Teams app.
+- Providers can join appointments using supported browsers or the Teams application.
 - Providers can use all supported Teams meeting features, including screen sharing, custom background, and recording.
 - Providers can see real-time updates of patients connecting to an appointment for a given appointment in PowerChart.
 - Provider information isn’t visible to patients during the appointment.
@@ -170,7 +173,7 @@ The connector supports patients joining appointments through a link in the SMS t
 
 Key features of the patient experience
 
-- Patients can join appointments from [modern web browsers on desktop and mobile without having to install the Teams app](browser-join.md).
+- Patients can join appointments from [modern web browsers on desktop and mobile without having to install the Teams application](browser-join.md).
 - Patients can join appointments with a single click and no other account or sign-in is required.
 - Patients aren't required to create a Microsoft account or sign in to launch a visit.
 - Patients are placed in a lobby until the provider joins and admits them.

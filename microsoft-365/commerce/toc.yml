@@ -10,8 +10,6 @@ items:
           href: try-or-buy-microsoft-365.md
         - name: Buy or manage add-ons
           href: buy-or-edit-an-add-on.md
-        - name: Business Assist for Microsoft 365
-          href: ../admin/misc/business-assist.md
         - name: Add storage space
           href: add-storage-space.md
     - name: Manage subscriptions
@@ -32,6 +30,8 @@ items:
           href: subscriptions/manage-self-service-purchases-users.md
         - name: Manage self-service purchases (Admin)
           href: subscriptions/manage-self-service-purchases-admins.md
+        - name: View scheduled changes
+          href: subscriptions/view-scheduled-changes.md
     - name: Manage licenses
       items:
         - name: Buy or remove subscription licenses
@@ -52,6 +52,8 @@ items:
           href: licenses/subscriptions-and-licenses.md
     - name: Manage volume licensing
       items:
+        - name: Manage volume licensing agreements
+          href: licenses/manage-volume-licensing.md
         - name: Sign in to the Microsoft 365 admin center
           href: licenses/vl-sign-in.md
         - name: Sign your volume licensing agreement
@@ -69,9 +71,13 @@ items:
         - name: Activate online services
           href: licenses/online-service-activation-vl.md
         - name: Online service activation for Open programs
-          href: licenses/online-service-activation-faq.yml
+          href: licenses/online-service-activation-open-programs.md
         - name: Volume licensing invoices
           href: licenses/volume-licensing-invoices.md
+        - name: Initiate a Change of Channel Partner request
+          href: licenses/change-of-vl-partner-request.md
+        - name: Contact volume licensing support
+          href: licenses/contact-vl-support.md
     - name: Bills and payments
       items:
         - name: View your invoice
@@ -80,8 +86,14 @@ items:
           href: billing-and-payments/understand-your-invoice2.md
         - name: Understand your invoice (MCA)
           href: billing-and-payments/understand-your-invoice.md
-        - name: Pay for your subscription
+        - name: Pay your invoice with a credit card or billing profile
           href: billing-and-payments/pay-for-your-subscription.md
+        - name: Pay your invoice with a wire transfer
+          href: billing-and-payments/pay-by-wire-transfer.md
+        - name: Understand billing and dunning policies
+          href: billing-and-payments/billing-dunning-policies.md
+        - name: Pay by wire transfer
+          href: billing-and-payments/pay-by-wire-transfer.md
         - name: Manage payment methods
           href: billing-and-payments/manage-payment-methods.md
         - name: Manage billing across multiple tenants
@@ -92,6 +104,8 @@ items:
           href: billing-and-payments/manage-billing-notifications.md
         - name: Understand billing accounts
           href: manage-billing-accounts.md
+        - name: Keep your billing account active
+          href: keep-billing-accounts-active.md
         - name: Manage billing profiles
           href: billing-and-payments/manage-billing-profiles.md
         - name: Change your billing addresses

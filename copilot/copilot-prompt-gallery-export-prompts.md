@@ -1,31 +1,37 @@
 ---
 title: "Export prompts that users saved, liked, or shared in Copilot Prompt Gallery"
-description: "Provides admins the steps to take to export prompts that users saved, liked, or shared in Copilot Prompt Gallery"
-ms.author: danbrown
-author: DHB-MSFT
-manager: laurawi
-ms.topic: concept-article
+description: "Provides admins the steps to export prompts that users saved, liked, or shared in Copilot Prompt Gallery."
+ms.author: mabond
+author: mkbond007
+manager: dansimp
+ms.reviewer: viveksh
+ms.date: 10/31/2025
+audience: Admin
+ms.topic: how-to
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
 ms.collection: 
 - privacy-copilot
 - m365copilot
 - magic-ai-copilot
+- must-keep
 hideEdit: true
-ms.date: 04/16/2025
+ms.update-cycle: 180-days
 ---
 
 # Export prompts that users saved, liked, or shared in Copilot Prompt Gallery
 
-In [Copilot Prompt Gallery](https://copilot.cloud.microsoft/prompts), users can save or share prompts they created, including sharing prompts with a specific team (in Microsoft Teams) that they're a member of. Users can also like prompts created by others. As an admin, you can use Windows PowerShell to export data to a file about either of the following types of prompts in Copilot Prompt Gallery:
+In [Copilot Prompt Gallery](https://m365.cloud.microsoft/copilot-prompts), users can save or share prompts they created, including sharing prompts with a specific team (in Microsoft Teams) that they're a member of. Users can also like prompts created by others. As an admin, you can use Windows PowerShell to export data to a file about either of the following types of prompts in Copilot Prompt Gallery:
 
 - The saved, liked, and shared prompts of a specific user.
 - The prompts shared with a specific team.
 
-> [!NOTE]
-> The user account running the PowerShell script to export the data needs to be assigned the Global Admin role.
-
 ## Configure your Windows PowerShell environment
+
+The user account running the PowerShell script to export the data needs to be assigned to the Global Administrator role.
+
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role. To learn more, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
 
 Before you can export prompts that users saved, liked, or shared in Copilot Prompt Gallery, you need to configure your PowerShell environment by doing the following steps:
 
@@ -45,12 +51,16 @@ Before you can export prompts that users saved, liked, or shared in Copilot Prom
 ### Install the MSAL.PS module
 
 1. Check if the MSAL.PS module is installed by running the following command in PowerShell:
+
    ```PowerShell
    Get-Module -ListAvailable MSAL.PS
    ```
-2. If the module isn't installed, install the module by running the following command in PowerShell:
+
+1. If the module isn't installed, install the module by running the following command in PowerShell:
+
    ```PowerShell
    Install-Module -Name MSAL.PS -Scope CurrentUser 
+   ```
 
 ### Load the CopilotLabDSR module
 
@@ -70,15 +80,15 @@ Before you can export prompts that users saved, liked, or shared in Copilot Prom
 
    ```PowerShell
    Import-module "C:\AdminScripts\CopilotLabDSR.psm1"
-
+   ```
 
 ## Export the saved, liked, and shared prompts of a specific user
 
-1. From Windows PowerShell, use the `Export- PromptsUserContent` cmdlet to export the saved, liked, or shared prompts of a specific user from Copilot Prompt Gallery.
+1. From Windows PowerShell, use the `Export-PromptsUserContent` cmdlet to export the saved, liked, or shared prompts of a specific user from Copilot Prompt Gallery.
 
-```powershell
-Export-PromptsUserContent -UserAadIdOrPrincipalName <Entra ID or UPN of user> -ExportDirectory <output location> -PromptType <type of prompt>
-```
+   ```powershell
+   Export-PromptsUserContent -UserAadIdOrPrincipalName <Entra ID or UPN of user> -ExportDirectory <output location> -PromptType <type of prompt>
+   ```
 
 | Parameter                | Description                                                                                                                                              |
 |--------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -86,13 +96,13 @@ Export-PromptsUserContent -UserAadIdOrPrincipalName <Entra ID or UPN of user> -E
 | ExportDirectory          | Location to store your output files. The folder should already exist. If not specified, the export files are saved to the current folder.                |
 | PromptType               | Specify "saved" to export the prompts saved by the user. Specify "shared" to export the prompts for which a shareable link to the prompt was generated. Specify "liked" to export prompts liked by the user. |
 
-For example, the following exports Reed Smiths's saved prompts in Copilot Prompt Gallery using his UPN and downloads the export files to the location C:\PromptsExportReedSmith.
+For example, the following exports Reed Smiths's saved prompts in Copilot Prompt Gallery using their UPN and downloads the export files to the location C:\PromptsExportReedSmith.
 
 ```powershell
-Export- PromptsUserContent -UserAadIdOrPrincipalName reedsmith@contoso.com -ExportDirectory C:\PromptsExportReedSmith -PromptType saved
+Export-PromptsUserContent -UserAadIdOrPrincipalName reedsmith@contoso.com -ExportDirectory C:\PromptsExportReedSmith -PromptType saved
 ```
 
-2. When prompted to authenticate, sign in with an account that is assigned the Global Admin role, not as the user you want to export.
+2. When prompted to authenticate, sign in with an account assigned to the Global Admin role, not as the user you want to export.
 3. After the PowerShell cmdlet runs successfully, go to your export location to view your exported files.
 
 ## Export prompts shared with a specific team
@@ -111,13 +121,13 @@ Export-PromptsGroupContent -M365TeamsGroupId <team ID> -ExportDirectory <output 
 For example, the following exports the prompts shared in Copilot Prompt Gallery to the team with an ID of "d0efcad2-6744-0de6-0624-ea467d4293af" and downloads the export files to the location C:\PromptsExportReedSmith.
 
 ```powershell
-Export- PromptsGroupContent -M365TeamsGroupId d0efcad2-6744-0de6-0624-ea467d4293af -ExportDirectory C:\PromptsExportReedSmith
+Export-PromptsGroupContent -M365TeamsGroupId d0efcad2-6744-0de6-0624-ea467d4293af -ExportDirectory C:\PromptsExportReedSmith
 ```
 
 > [!TIP]
 > To find the ID of the team, go to **Teams** > **Manage teams** in the [Teams admin center](https://admin.teams.microsoft.com/).
 
-2. When prompted to authenticate, sign in with an account that is assigned the Global Admin role.
+2. When prompted to authenticate, sign in with an account assigned to the Global Admin role.
 3. After the PowerShell cmdlet runs successfully, go to your export location to view your exported files.
 
 ## Properties contained in the export file and their descriptions
@@ -134,8 +144,8 @@ The file name is prefixed with "User" and the Microsoft Entra ID of the user fol
 | Prompt.Title                                        | Title of the prompt given by user while saving or sharing the prompt.        |
 | Prompt.PromptText                                   | Prompt text                                                                  |
 | Prompt.Products                                     | A list containing the product in which user saved or shared the prompt.      |
-| Prompt.IsFavorite                                   | Boolean (true or false) indicating that a user has saved or liked the prompt.|
-| Prompt.UserActivity.Favorite.IsFavorite             | Boolean (true or false) indicating that a user has saved or liked the prompt.|
+| Prompt.IsFavorite                                   | Boolean (true or false) indicating that a user saved or liked the prompt.|
+| Prompt.UserActivity.Favorite.IsFavorite             | Boolean (true or false) indicating that a user saved or liked the prompt.|
 | Prompt.UserActivity.Favorite.ActivityDateTimeInUtc  | Time when user saved or liked the prompt.                                    |
 | Prompt.CreatedTime                                  | Time when the user saved the prompt.                                         |
 | Prompt.SharedTime                                   | Time when the user shared the prompt                                         |
@@ -188,3 +198,11 @@ The file name is prefixed with "Group" and the ID of the team. The file has the 
 | Prompt.HydratedEntities.Entity.OrganizerName        | Organizer Name of event entity.                                         |
 | Prompt.HydratedEntities.Entity.OrganizerAddress     | Organizer Address of event entity.                                      |
 | Prompt.HydratedEntities.Entity.Attendees            | Attendees list of event entity.                                         |
+
+## Related articles
+
+[Understand Prompt Gallery in Copilot](copilot-prompt-gallery.md)
+
+[Manage scheduled prompts for Microsoft 365 Copilot](scheduled-prompts.md)
+
+[Manage Microsoft 365 Copilot scenarios in the Microsoft 365 admin center](microsoft-365-copilot-page.md)

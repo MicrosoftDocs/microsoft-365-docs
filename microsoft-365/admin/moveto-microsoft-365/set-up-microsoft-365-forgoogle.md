@@ -2,23 +2,23 @@
 title: "Set up Microsoft 365 for Google Workspace migration"
 f1.keywords:
 - NOCSH
-ms.author: twerner
-author: twernermsft
-manager: scotv
+ms.author: heidip
+author: MicrosoftHeidi
+manager: dansimp
 ms.date: 08/10/2020
 audience: Admin
 ms.topic: upgrade-and-migration-article
-ms.service: microsoft-365-business
+ms.service: microsoft-365-migration
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier2
 - scotvorg
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
-ms.custom: 
+ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-monikerRange: 'o365-worldwide'
+monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
@@ -42,7 +42,7 @@ To migrate email, calendar, and contacts from Google Workspace, you need to set 
 1. In the Microsoft 365 admin center, choose **Go to guided setup**. 
 1. Optionally, install Microsoft 365 productivity apps, then select **Continue**. 
 1. Since you are migrating from Google Workspace, choose the default domain, and select **Use this domain**. 
-1. Enter your user’s names, and desired usernames, verify your email address so you can receive your user’s passwords, then select **Add users and assign licenses**. 
+1. Enter your user's names, and desired usernames, verify your email address so you can receive your user's passwords, then select **Add users and assign licenses**. 
 1. Enter the email addresses where your users will receive their new credentials, select **Send email and continue**.
 1. Then **Continue** again to connect your temporary domain. 
 1. Optionally choose to inform users in your organization about Teams, then select **Continue**.

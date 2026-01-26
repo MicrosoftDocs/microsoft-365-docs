@@ -5,9 +5,9 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: enuviadenu, socheng
+ms.reviewer: socheng, ramagane
 audience: Admin
-ms.topic: article
+ms.topic: concept-article
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
@@ -22,6 +22,7 @@ ms.custom:
 - okr_SMB
 - has-azure-ad-ps-ref
 - azure-ad-ref-level-one-done
+service.tree.id: 0317a4e2-dc2f-45d7-9daf-cafee8b9db0f
 search.appverid: MET150
 description: "Learn about the Microsoft 365 self-service sign-up and available self-service programs such as Microsoft Power Apps, Microsoft Power Automate, and Dynamics 365 for Finance."
 ms.date: 01/06/2025
@@ -53,7 +54,7 @@ Following are the currently available self-service programs. This list is update
 |**Microsoft Power Apps** <br/> |In Power Apps, you can manage organizational data by running an app that you created or that someone else created and shared with you. Apps run on mobile devices such as phones, or you can run them in a browser by opening Dynamics 365. You can create an infinite variety of apps - all without learning a programming language such as C#.  <br/> |[Self-service sign up for Power Apps](/powerapps/maker/signup-for-powerapps) <br/> |[Microsoft Power Apps](https://go.microsoft.com/fwlink/p/?linkid=841462) <br/> |
 |**Dynamics 365 for Financials** <br/> |Get a complete business and financial management solution for small and medium-sized businesses. Dynamics 365 for Financials makes ordering, selling, invoicing, and reporting easier—starting on day one.  <br/> |[Microsoft Dynamics 365 for Financials](https://go.microsoft.com/fwlink/p/?linkid=841466) <br/> |[Microsoft Dynamics 365 for Financials](https://go.microsoft.com/fwlink/p/?linkid=841466) <br/> |
 |**Microsoft Dynamics 365 for Operations** <br/> |Increase your speed of doing business. The complete ERP tools in Dynamics 365 for Operations provide global scalability and digital intelligence to help you grow at your pace.  <br/> |[Microsoft Dynamics 365 for Operations](https://go.microsoft.com/fwlink/p/?linkid=841467) <br/> |[Microsoft Dynamics 365 for Operations](https://go.microsoft.com/fwlink/p/?linkid=841467) <br/> |
-|**Microsoft AppSource** <br/> |Microsoft AppSource is a destination for software-as-a-service business apps built on the Microsoft cloud platform. AppSource features hundreds of apps, add-ons, and content packs that extend the functionality of Microsoft products like Azure, Dynamics 365, Office 365, and Power BI.  <br/> |[Microsoft AppSource](https://go.microsoft.com/fwlink/p/?linkid=841474) <br/> |[Microsoft AppSource](https://go.microsoft.com/fwlink/p/?linkid=841474) <br/> |
+|**Microsoft Marketplace** <br/> |Microsoft Marketplace is a destination for software-as-a-service business apps built on the Microsoft cloud platform. Microsoft Marketplace features hundreds of apps, add-ons, and content packs that extend the functionality of Microsoft products like Azure, Dynamics 365, Office 365, and Power BI.  <br/> |[Microsoft Marketplace](https://go.microsoft.com/fwlink/p/?linkid=841474) <br/> |[Microsoft Marke](https://go.microsoft.com/fwlink/p/?linkid=841474) <br/> |
 |**Microsoft Partner Incentives** <br/> |The Microsoft Partner Network provides three types of memberships. Each type provides a set of benefits to help your business grow. As you achieve your goals, participate in the program at the level that suits your unique needs to access more benefits and develop your relationship with us and other partners in the network.  <br/> |[Microsoft Partner Incentives](https://go.microsoft.com/fwlink/p/?linkid=841469) <br/> |[Microsoft Partner Incentives](https://go.microsoft.com/fwlink/p/?linkid=841469) <br/> |
 |**Microsoft Business Center** <br/> |The Microsoft Business Center is the portal for customers who make purchases through the Microsoft Products and Services Agreement (MPSA). <br/> |[Quick Start: Register for the Microsoft Business Center](https://go.microsoft.com/fwlink/p/?linkid=841479) <br/> |[Microsoft Business Center](https://go.microsoft.com/fwlink/p/?linkid=841470) <br/> |
 |**Microsoft Volume License Service Center** <br/> |The Microsoft Volume License Service Center displays licenses purchased under Enterprise, Select, Education (Campus or School), Open Value, Open License, and ISV Royalty agreements.  <br/> |[VLSC Training and Resources](https://www.microsoft.com/en-us/Licensing/existing-customer/vlsc-training-and-resources.aspx) <br/> |[Volume License Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx) <br/> |

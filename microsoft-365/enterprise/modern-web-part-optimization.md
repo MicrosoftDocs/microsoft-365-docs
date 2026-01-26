@@ -1,6 +1,6 @@
 ---
 title: "Optimize web part performance in SharePoint modern site pages"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 07/01/2024

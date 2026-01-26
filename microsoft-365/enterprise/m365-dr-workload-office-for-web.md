@@ -1,16 +1,16 @@
 ---
 title: Data Residency for Office for the Web
 description: Data Residency for Office for the Web
-ms.author: kvice
-author: kelleyvice-msft
-manager: scotv
+ms.author: v-fahasen
+author: fhasen-msft
+manager: Justin.Giammona
 ms.service: microsoft-365-enterprise
 ms.subservice: advanced-data-residency
 ms.topic: article
 f1.keywords:
 - NOCSH
 ms.date: 02/11/2025
-ms.reviewer: deanw
+ms.reviewer: jugiammo
 ms.custom:
 - it-pro
 ms.localizationpriority: medium
@@ -39,7 +39,7 @@ Required Conditions:
 
 **Commitment:**
 
-Refer to the [ADR Commitment page](m365-dr-commitments.md#office-for-the-web) for the specific customer data at rest commitment for Office for the Web.
+Refer to the [ADR Commitment page](m365-dr-commitments.md#microsoft-365-web-apps-formerly-known-as-office-for-the-web) for the specific customer data at rest commitment for Office for the Web.
 
 ### Migration
 

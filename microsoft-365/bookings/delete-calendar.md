@@ -12,6 +12,7 @@ ms.collection:
 - Tier1
 - scotvorg
 - must-keep
+- operations-pod
 description: "Use the Microsoft 365 admin center or Windows PowerShell to delete Bookings calendars."
 ---
 

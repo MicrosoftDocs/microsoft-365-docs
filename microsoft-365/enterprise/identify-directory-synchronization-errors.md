@@ -1,6 +1,6 @@
 ---
 title: "View directory synchronization errors in Microsoft 365"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 07/17/2024

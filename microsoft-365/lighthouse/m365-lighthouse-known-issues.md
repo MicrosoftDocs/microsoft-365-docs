@@ -1,7 +1,7 @@
 ---
 title: "Known issues with Microsoft 365 Lighthouse"
 f1.keywords: NOCSH
-ms.author: sharik
+ms.author: dansimp
 author: SKjerland
 manager: scotv
 ms.reviewer: crimora
@@ -70,7 +70,7 @@ Either granular delegated administrative privileges (GDAP) plus an indirect rese
 | ---------------- | ---------------- | ---------------- |
 | **Translation issues** | Users may experience language translation issues when the language of their browser, or their language selection in Lighthouse, is anything other than English. | To minimize translation issues in Lighthouse, make sure that the browser's language selection matches that of the language setting in the Lighthouse portal. To change the language selection in Lighthouse, sign in to Lighthouse and select the gear icon at the top of the page to open the Portal settings page, select **Language + region**, and then select the appropriate language and regional formats. |
 
-## Sales Advisor
+## Opportunities
 
 | Issue | Description | Solution |
 | ---------------- | ---------------- | ---------------- |

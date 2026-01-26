@@ -181,6 +181,9 @@ The SharePoint Portal launch scheduler tool was originally only available via [S
 
 1. Connect to SharePoint as a [global admin or SharePoint admin](/sharepoint/sharepoint-admin-role) in Microsoft 365. To learn how, see [Getting started with SharePoint Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
+   > [!IMPORTANT]
+   > Microsoft recommends that you use roles with the fewest permissions. This helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
+
 ### View any existing portal launch setups
 
 To see if there are existing portal launch configurations:

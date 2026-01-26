@@ -1,6 +1,6 @@
 ---
 title: "Network connectivity in the Microsoft 365 Admin Center"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 04/02/2025

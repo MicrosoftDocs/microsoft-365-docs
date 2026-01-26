@@ -2,20 +2,21 @@
 title: "Microsoft 365 admin center SharePoint activity reports"
 f1.keywords:
 - NOCSH
-ms.author: camillepack
-author: camillepack
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 ms.date: 03/29/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+- operations-pod
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -32,6 +33,8 @@ As a Microsoft 365 admin, the Reports dashboard shows you the activity overview 
 For example, you can understand the activity of every user licensed to use SharePoint by looking at their interaction with files. It also helps you to understand the level of collaboration going on by looking at the number of files shared.
   
 ## How do I get to the SharePoint activity report?
+
+For information about what permissioms are needed to view the report, see [Who can see reports](activity-reports.md#who-can-see-reports).
 
 1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page.
 2. From the dashboard homepage, select **SharePoint** in the left navigation.

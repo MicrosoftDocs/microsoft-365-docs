@@ -2,15 +2,15 @@
 title: "Let users reset their own passwords"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekuako
-manager: scotv
-ms.date: 10/01/2024
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
+ms.date: 01/05/2026
 audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-business
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
 - highpri
@@ -40,16 +40,13 @@ This article is for people who set password expiration policy for a business, sc
 
 To complete these steps, you must be a [password administrator](about-admin-roles.md).
 
-> [!TIP]
-> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
-
 ## Before you begin
   
-- You get self-service password reset for cloud users **free** with any Microsoft 365 business, education, or nonprofit paid plan. It doesn't work with Microsoft 365 trial.
+- Self-service password reset is included with any Microsoft 365 business, education, or nonprofit paid plan. It doesn't work with Microsoft 365 trial.
 
-- It uses Azure. You'll automatically get this feature in Azure for **free** when you do these steps. It won't cost you anything to turn on self-service password reset.
+- Self-service password reset uses Azure. There's no extra charge to turn on self-service password reset.
 
-- **If you're using an on-premises Active Directory**, you can set this up but **it requires a paid subscription to Microsoft Entra ID P1 or P2**.
+- If you're using Active Directory on premises, you can set up self-service password reset, but it requires a paid subscription to Microsoft Entra ID P1 or P2.
 
 ## Watch: Let users reset their own passwords
 
@@ -59,16 +56,29 @@ Check out this video and others on our [YouTube channel](https://go.microsoft.co
 
 ## Steps: Let people reset their own passwords
 
-1. In the Microsoft 365 admin center, in the left navigation pane, select **Settings** > **Org settings**, and then select <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**Security & privacy**</a> tab.
-1. Select **Self-service password reset**, and then choose **Go to the Azure portal to turn on self-service password reset**.
-1. In the left navigation pane, select **Users**, and then **Users - all users**
-1. Select **Password reset**.
-1. Select **All** to enable self-service password reset for all your users, or choose **Selected** to specify **Groups** you want, and then select **Save**.
-1. On the **Password reset | Properties** page, select **Authentication methods** and select the **Number of methods required to reset** and desired **Methods available to users**, and then select **Save**.
-1. When your users sign in, they will be prompted to enter additional contact information that will help them reset their password in the future.
+1. In the [Microsoft 365 admin center](https://admin.cloud.microsoft/), in the left navigation pane, select **Settings** > **Org settings**, and then select the **Security & privacy** tab. (Or, use this link to open that tab: [Security & privacy](https://go.microsoft.com/fwlink/p/?linkid=2072756)).
+
+2. Select **Self-service password reset**, and then select **Go to the Azure portal to turn on self-service password reset**. 
+
+   :::image type="content" source="../../media/let-users-reset-passwords/self-service-password-reset.png" alt-text="Screenshot showing self-service password reset flyout." lightbox="../../media/let-users-reset-passwords/self-service-password-reset.png":::
+
+   This option takes you to the Password reset page in the Microsoft Entra admin center.
+
+3. On the **Password reset | Properties** page, select an option, such as **All** or **Selected**.
+
+   :::image type="content" source="../../media/let-users-reset-passwords/password-reset-properties.png" alt-text="Screenshot showing password reset properties options." lightbox="../../media/let-users-reset-passwords/password-reset-properties.png":::
+
+   If you choose **Selected**, specify groups to enable self-service password reset.
+
+4. Select **Save**.
+
+5. To specify authentication methods for users, see [Manage authentication methods for Microsoft Entra ID](/entra/identity/authentication/concept-authentication-methods-manage).
+
 
 ## Related content
 
-[Set the password expiration policy for your organization](../manage/set-password-expiration-policy.md) (article)\
-[Set an individual user's password to never expire](set-password-to-never-expire.md) (article)\
-[Microsoft 365 Business training videos](../../business-video/index.yml) (link page)
+- [Set the password expiration policy for your organization](../manage/set-password-expiration-policy.md)
+
+- [Microsoft 365 Business training videos](../../business-video/index.yml) (link page)
+
+- [Microsoft Entra authentication documentation](/entra/identity/authentication/)

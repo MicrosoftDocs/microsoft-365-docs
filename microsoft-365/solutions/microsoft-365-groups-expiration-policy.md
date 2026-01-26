@@ -3,18 +3,19 @@ title: "Microsoft 365 group expiration policy"
 ms.reviewer: rahulnayak
 ms.date: 06/25/2024
 f1.keywords: NOCSH
-author: DaniEASmith
-ms.author: danismith
+author: officedocspr5
+ms.author: odocspr
 manager: jtremper
 audience: Admin
 ms.topic: article
-ms.service: o365-solutions
+ms.service: m365-planning
 ms.localizationpriority: medium
 ms.collection: 
 - highpri
 - M365-subscription-management 
 - Adm_O365
 - m365solution-collabgovernance
+ms.custom: m365-solutions-doc-set
 search.appverid:
 - MET150
 recommendations: false

@@ -3,10 +3,11 @@ title: Microsoft 365 Copilot blueprint for oversharing
 description: Use this deployment blueprint to help prevent oversharing when using Microsoft 365 Copilot.
 f1.keywords:
 - NOCSH
-ms.author: mandia
-author: MandiOhlinger
-manager: laurawi
-ms.date: 01/15/2025
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
+ms.date: 10/24/2025
+ms.update-cycle: 180-days
 ms.reviewer: 
 audience: Admin
 ms.topic: get-started
@@ -17,22 +18,20 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 - essentials-overview
+- trust-pod
 ms.custom: [copilot-learning-hub]
+customer-intent: As an admin, I want to use a blueprint to help prevent oversharing when using Microsoft 365 Copilot.
 appliesto:
-  - ✅ Microsoft 365 Copilot
+- ✅ Microsoft 365 Copilot
 ---
 
 # Address oversharing concerns in Microsoft 365 Copilot deployment blueprint
 
 [Microsoft 365 Copilot](microsoft-365-copilot-overview.md) works with different Microsoft services to help you get your data ready for Copilot.
 
-For Copilot administrators, it can be overwhelming to know where to start. Existing administrators can also be unfamiliar with how some features can enhance their data security.
+For Copilot administrators, it can be overwhelming to know where to start. Existing administrators can also be unfamiliar with how some features can enhance their data security. To address the need for shorter, actionable, and prescriptive guidance, you can use this deployment blueprint.
 
-To address the need for shorter, actionable, and prescriptive guidance, you can use this deployment blueprint.
-
-In this deployment blueprint, we provide a recommended approach to address oversharing concerns throughout a Microsoft 365 Copilot deployment.
-
-The blueprint breaks the deployment into three phases:
+In this deployment blueprint, we provide a recommended approach to address oversharing concerns throughout a Microsoft 365 Copilot deployment. The blueprint breaks the deployment into three phases:
 
 - Pilot (optional)
 - Deploy
@@ -55,13 +54,13 @@ The blueprint provides:
 
 ### Documentation resources
 
-- [E3 customers – prepare your data for Copilot](microsoft-365-copilot-e3-guide.md)
+- [Microsoft 365 E3 customers – prepare your data for Copilot](microsoft-365-copilot-e3-guide.md)
 
-  Learn how to use the features included in your E3 license to prepare your data for Microsoft 365 Copilot.
+  Learn how to use the features included in your Microsoft 365 E3 subscription to prepare your data for Microsoft 365 Copilot.
 
-- [E5 customers – prepare your data for Copilot](microsoft-365-copilot-e5-guide.md)
+- [Microsoft 365 E5 customers – prepare your data for Copilot](microsoft-365-copilot-e5-guide.md)
 
-  Learn how to use the features included in your E5 license to prepare your data for Microsoft 365 Copilot.
+  Learn how to use the features included in your Microsoft 365 E5 subscription to prepare your data for Microsoft 365 Copilot.
 
 ## Related content
 

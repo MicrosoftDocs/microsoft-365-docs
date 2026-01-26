@@ -3,30 +3,34 @@ title: Decide which Copilot is right for you
 description: Microsoft has several Copilot AI virtual assistants, including Microsoft 365 Copilot Chat, Microsoft 365 Copilot, Microsoft Copilot, Microsoft Security Copilot, GitHub Copilot, and Copilot Studio. Decide which Copilot is right for you and your organization. Which Copilot is right for me?
 f1.keywords:
 - NOCSH
-ms.author: mandia
-author: MandiOhlinger
-manager: laurawi
-ms.date: 04/03/2025
+ms.author: efrene
+author: Efrene
+manager: scotv
+ms.date: 10/29/2025
+ms.update-cycle: 180-days
 ms.reviewer: 
 audience: Admin
 ms.topic: get-started
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - scotvorg
 - m365copilot
 - magic-ai-copilot
 - essentials-overview
+- operations-pod
 ms.custom: [copilot-learning-hub]
 appliesto:
-  - ✅ Microsoft 365 Copilot
+- ✅ Microsoft 365 Copilot
 ---
 
 # Which Copilot is right for me or my organization?
 
 Copilot is Microsoft's AI-powered virtual assistant. It uses large language models (LLMs) to answer your questions using a prompt and response interaction.
 
-There are different Copilots available.
+Microsoft 365 offers two variants based on licensing. The following image highlights their key differences:
+
+:::image type="content" source="media/microsoft-365-copilot-license-comparison.png" alt-text="A graphic that illustrates key capability differences between Copilot offered in Microsoft 365 licensing and the dedicated Microsoft 365 Copilot add on license." lightbox="media/microsoft-365-copilot-license-comparison.png":::
 
 **If you're an admin**, this article describes the different Copilots and can help you decide the Copilots that are right for your organization.
 
@@ -36,11 +40,11 @@ There are different Copilots available.
 
 ✅ Secure with [enterprise data protection](enterprise-data-protection.md)  
 ✅ Scalable with [pay-as-you-go](./pay-as-you-go/overview.md)  
-✅ Free to organizations with a Microsoft 365 license
+✅ Included with a Microsoft 365 subscription
 
 **Microsoft 365 Copilot Chat** is an AI prompt and response experience that's [grounded in the web](/copilot/privacy-and-protections#privacy-and-security-of-generated-search-queries) and powered by [large language models (LLMs)](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-are-large-language-models-llms).
 
-It's free to organizations that have a Microsoft 365 license. With Copilot Chat:
+Copilot Chat is automatically included and available to organizations that have a Microsoft 365 subscription. With Copilot Chat:
 
 - You can also create images and use [Copilot Pages](https://support.microsoft.com/topic/introducing-microsoft-365-copilot-pages-6674bd51-9ff5-42c4-9256-44d9428a726f) to save, edit, and share AI-generated content.
 - You can use for work and education, and know that you're protected with [enterprise data protection](enterprise-data-protection.md).
@@ -49,7 +53,7 @@ It's free to organizations that have a Microsoft 365 license. With Copilot Chat:
 Microsoft 365 Copilot Chat is available on the web at [https://m365copilot.com](https://m365copilot.com), in the [Microsoft 365 Copilot app](https://apps.microsoft.com/detail/9wzdncrd29v9), and in Teams, Outlook, & Microsoft Edge.
 
 > [!TIP]
-> If you [pin Copilot Chat](pin-copilot.md) in the Microsoft 365 Copilot app, when users go to `https://m365copilot.com`, then they're automatically redirected to `https://m365.cloud.microsoft/chat`.
+> If you [pin Copilot Chat](pin-copilot-chat-navbar.md) in the Microsoft 365 Copilot app, when users go to `https://m365copilot.com`, then they're automatically redirected to `https://m365.cloud.microsoft/chat`.
 
 If you want users in your organization to have prompt and response interchanges with information on the internet and [enterprise data protection](enterprise-data-protection.md), then use Microsoft 365 Copilot Chat.
 
@@ -112,7 +116,7 @@ To learn more, see:
 
 - [Microsoft 365 Copilot overview](microsoft-365-copilot-overview.md)
 - [Microsoft 365 Copilot architecture and how it works](microsoft-365-copilot-architecture.md)
-- [Copilot Prompt Gallery](https://copilot.cloud.microsoft/prompts)
+- [Copilot Prompt Gallery](https://m365.cloud.microsoft/copilot-prompts)
 - [Microsoft 365 Copilot plans](https://www.microsoft.com/microsoft-365/copilot)
 - [Add apps to Microsoft Intune](/mem/intune/apps/apps-add) and [assign apps to groups](/mem/intune/apps/apps-deploy)
 

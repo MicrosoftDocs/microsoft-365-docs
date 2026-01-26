@@ -5,24 +5,24 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: schyevan, ramagane
+ms.reviewer: smithk, ramagane
 audience: Admin
 ms.topic: end-user-help
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
 - M365-subscription-management
-ms.custom: 
+ms.custom:
 - commerce_ssp
 - AdminSurgePortfolio
 - admindeeplinkMAC
-search.appverid:
-- MET150
+service.tree.id: 89d497da-847a-4f93-b7cd-1eb2bdc1d8a3
+search.appverid: MET150
 description: "Users can learn how to manage their self-service purchases in the Microsoft 365 admin center."
-ms.date: 04/15/2025
+ms.date: 11/09/2025
 ---
 
 # Manage self-service purchases and trials (for users)
@@ -35,7 +35,7 @@ Your admin has a read-only view into any subscriptions that you buy. They can se
 
 ## View your subscriptions
 
-You can view a list of all your self-service free trials and purchased subscriptions.
+You can view a list of all self-service acquired subscriptions.
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, then go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. On the **Products** tab, select the filter icon, then select **Self-service**.

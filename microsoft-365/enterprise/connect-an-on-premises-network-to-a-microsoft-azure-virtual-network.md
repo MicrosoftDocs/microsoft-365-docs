@@ -1,6 +1,6 @@
 ---
 title: "Connect an on-premises network to a Microsoft Azure virtual network"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 12/18/2023

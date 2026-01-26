@@ -1,28 +1,29 @@
 ---
 title: "Resolve subscriptions detached from CSP partners in the Microsoft 365 admin center"
-f1.keywords: 
+f1.keywords:
 - CSH
 - MACGlobalDetachedSubscriptions
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: anderssv, aliceapp
+ms.reviewer: patyc
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
+- operations-pod
 ms.custom:
 - commerce_subscriptions
 - QuickDraft
 - AdminTemplateSet
 - campaignIDs-batch1
-search.appverid: MET150 
+search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to use the Microsoft 365 admin center to resolve a detached subscription that you bought from a CSP partner."
 ms.date: 01/13/2025
@@ -34,7 +35,7 @@ When you buy a subscription from a Microsoft Cloud Solution Provider (CSP), and 
 
 ## Find a new partner
 
-If you choose to find a new partner, you can explore available partners through the [Partner Directory on AppSource](https://appsource.microsoft.com/marketplace/partner-dir?filter=services%3DLicensing). This site lets you search for partners based on your specific products and requirements. When you contact a new partner, make sure to ask if they're a CSP. To learn more about working with a partner, see [Manage Microsoft-certified solution provider partner relationships](../manage-partners.md).
+If you choose to find a new partner, you can explore available partners through the [Partner Directory on Microsoft Marketplace](https://marketplace.microsoft.com/marketplace/partner-dir?filter=services%3DLicensing). This site lets you search for partners based on your specific products and requirements. When you contact a new partner, make sure to ask if they're a CSP. To learn more about working with a partner, see [Manage Microsoft-certified solution provider partner relationships](../manage-partners.md).
 
 ## Buy a subscription directly from Microsoft
 

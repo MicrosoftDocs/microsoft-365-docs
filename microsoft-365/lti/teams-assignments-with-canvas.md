@@ -1,17 +1,23 @@
 ---
 title: Use Microsoft Teams Assignments LTI app with Canvas
 description: Integrate and use the Microsoft Teams Assignments learning tool interoperability (LTI) app with Canvas
-author: DaniEASmith
-ms.author: danismith
+author: jennplatt
+ms.author: avering
 manager: mimast
-ms.date: 09/12/2024
+ms.date: 01/14/2026
+last.review.date: 01/14/2026
 audience: admin
 ms.topic: how-to
-ms.service: msteams
-ms.subservice: teams-education
+ms.service: microsoft-365-education
+ms.collection:
+- m365-education
+- all-education
 ---
 
 # Use Microsoft Teams Assignments LTI® app with Canvas
+
+>[!NOTE]
+>The classic Microsoft OneDrive, OneNote, Teams Assignments, and Reflect LTI apps have been replaced by the [new Microsoft 365 LTI](https://aka.ms/LMSAdminDocs). The classic apps will be sunset on September 17, 2026. After that date, the classic apps and any content links in courses will stop working. However, the files, notebooks, teams, meetings, and check-ins created by the classic app will continue to be accessible through Microsoft 365. For further guidance on moving your users and courses to the new Microsoft 365 LTI experiences and migrating content links, review the [migration guidance for the classic LTI apps](/microsoft-365/lti/microsoft-365-lti-first-time-configuration#migration-guidance).
 
 The Microsoft Teams Assignments LTI® app brings the Learning Accelerators, Microsoft Forms, Whiteboard, OneNote pages, and all of the new generative AI features of Teams Assignments to your LTI® v1.3 Advantage compliant learning management system (LMS).
 
@@ -37,22 +43,22 @@ This method requires a one-time setup by the administrator.
 1. Sign into your Canvas instance as an administrator.
 1. Select the **Admin** link in the global navigation, and then select the Sub-Account to which you wish to deploy the app.
 1. In the Admin navigation, select the **Developer Keys** link, and then choose the **Inherited** tab.
-1. In the apps list, search for **Microsoft Teams Assignments**, and click the **Show All Keys** button to see additional pages of results in the view.
-1. Enable the inherited dev key for the **Microsoft Teams Assignments** app in the list.  There will be two versions of the Microsoft Teams Assignments app listed: 
+1. In the apps list, search for **Microsoft Teams Assignments**, and select the **Show All Keys** button to see additional pages of results in the view.
+1. Enable the inherited dev key for the **Microsoft Teams Assignments** app in the list. There are two versions of the Microsoft Teams Assignments app listed:
      - To deploy the app visible in the Course Navigation for all courses by default, enable the **"Microsoft Teams Assignments"** app with ID **170000000001876**
      - To deploy the app with the Course Navigation placement hidden by default, enable the **"Microsoft Teams Assignments (Course Nav Disabled)"** app with ID **170000000001877**
 1. Toggle the **State** switch to **On** for the app version you wish to deploy.
-1. Copy the ID you've enabled to the clipboard: You will need this app ID in step 12 below (or Option 2 step 4).
+1. Copy the ID you enabled to the clipboard: You need this app ID in step 12 below (or Option 2 step 4).
 1. Select the **OK** button to confirm your choice.
 1. In the **Admin** navigation, select the **Settings** link, and then choose the **Apps** tab.
 1. Select the **View App Configurations** button, and then select the **+ App** button.
 1. In the **Add App** screen, change the **Configuration Type** dropdown to **By Client ID**.
-1. In the **Client ID** textbox, enter the app ID you enabled in step 6 above and then Click **Submit**
+1. In the **Client ID** textbox, enter the app ID you enabled in step 6 above and then select **Submit**
 1. Select **Install** to complete the installation.
 
 ### Option 2:  Single course installation
 
-If you choose not to install the app for all courses in an Sub-Account as described in steps 9 to 13, then you or each course teacher must install the app for individual courses.
+If you choose not to install the app for all courses in a Sub-Account as described in steps 9 to 13, then you or each course teacher must install the app for individual courses.
 
 1. To install the app for an individual course, select the **Settings** link in the course navigation, and then choose the **Apps** tab.
 1. Select the **View App Configurations** button, and then select the **+ App** button.
@@ -73,7 +79,7 @@ On their first access of any Teams Assignments flow, users must sign in using th
 
 > [!NOTE]
 >
-> - Cookies aren't allowed by default in the Chrome browser incognito mode and will need to be allowed.
+> - Cookies aren't allowed by default in the Chrome browser incognito mode and need to be allowed.
 > - The Microsoft Assignments LTI app also works in the InPrivate mode in Microsoft Edge browser. Ensure that you haven't blocked cookies, which are allowed by default.
 
 ## Getting help for admins and educators
@@ -84,6 +90,5 @@ On their first access of any Teams Assignments flow, users must sign in using th
 - Educators and Learners can contact support, or give feedback directly from the app through the help and feedback menu.
 
 ![image](https://github.com/user-attachments/assets/157dcee7-141b-47e3-879b-60efa2fb0621)
-
 
 Learning Tools Interoperability® (LTI®) is a trademark of the 1EdTech Consortium, Inc. ([www.imsglobal.org](https://www.imsglobal.org/))

@@ -1,6 +1,6 @@
 ---
 title: "Subscriptions, licenses, accounts, and tenants for Microsoft's cloud offerings"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 07/22/2024
@@ -141,9 +141,9 @@ An easy way to add subscriptions to your organization for Microsoft SaaS-based s
   
 1. Sign in to the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) with your **User Admin** account.
 
-2. From the left navigation of the **Admin center** home page, click **Billing**, and then **Purchase services**.
+2. From the left navigation of the **Admin center** home page, select **Marketplace**.
 
-3. On the **Purchase services** page, purchase your new subscriptions.
+3. On the **Marketplace** page, purchase your new subscriptions.
 
 The admin center assigns the organization and Microsoft Entra tenant of your Microsoft 365 subscription to the new subscriptions for SaaS-based cloud offerings.
   

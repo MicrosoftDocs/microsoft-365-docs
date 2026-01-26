@@ -1,6 +1,6 @@
 ---
 title: "Optimize page calls in SharePoint in Microsoft 365 modern and classic publishing site pages"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 08/01/2024

@@ -2,7 +2,7 @@
 title: "Multi-Geo Capabilities in Microsoft Teams"
 ms.reviewer: daro
 ms.date: 04/15/2024
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 audience: ITPro

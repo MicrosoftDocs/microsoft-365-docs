@@ -3,7 +3,7 @@ title: Data, privacy, and security for web search in Microsoft 365 Copilot and M
 description: "Learn how to manage Microsoft 365 Copilot and Microsoft 365 access to web content for your organization."
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dansimp
 ms.topic: concept-article
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
@@ -12,17 +12,24 @@ ms.collection:
 - privacy-copilot 
 - m365copilot
 - magic-ai-copilot
+- must-keep
+- trust-pod
 hideEdit: true
-ms.date: 03/13/2025
+ms.date: 11/05/2025
+ms.update-cycle: 180-days
 ---
 
 # Data, privacy, and security for web search in Microsoft 365 Copilot and Microsoft 365 Copilot Chat
 
 Microsoft 365 Copilot and [Microsoft 365 Copilot Chat](/copilot/overview) have an optional feature that allows Copilot to reference web content when responding to user prompts. Allowing Microsoft 365 Copilot and Microsoft 365 Copilot Chat to reference web content improves the quality of Copilot responses by grounding them in the latest information from the web.
 
+> [!NOTE]
+> - This article concerns the web search functionality in Microsoft 365 Copilot and Microsoft 365 Copilot Chat. Microsoft 365 **Copilot Search** is an additional, universal search experience that allows users with a Microsoft 365 Copilot license to search across all their Microsoft 365 and third-party data sources. Learn more about [Microsoft 365 Copilot Search]( /copilot/microsoft-365/microsoft-365-copilot-search).
+> - The information about web search in this article also applies to [Researcher](https://support.microsoft.com/topic/e63ab760-f3de-4c47-ae87-dad601b0e9c4) and [Analyst](https://support.microsoft.com/topic/ff505b9c-a06c-4be9-b855-69d89b1d25d2) in Microsoft 365 Copilot. While web search isn't a prerequisite for using Researcher and Analyst, enabling web search is recommended to get the most value out of using them. The only difference is that Researcher and Analyst don’t have a **Web content** toggle for users.
+
 ## Web search
 
-When web search is enabled, Microsoft 365 Copilot and Microsoft 365 Copilot Chat may fetch information from the Bing search service when information from the web will help provide a better, more grounded response. Admin controls and a user-level **Web content** toggle (only for Microsoft 365 Copilot) are available to [manage whether web search is enabled](#controls-available-to-manage-web-search) in your environment.
+When web search is enabled, Microsoft 365 Copilot and Microsoft 365 Copilot Chat may fetch information from the Bing search service when information from the web helps to provide a better, more grounded response. Admin controls and a user-level **Web content** toggle (only for Microsoft 365 Copilot) are available to [manage whether web search is enabled](#controls-available-to-manage-web-search) in your environment.
 
 ### How web search works
 
@@ -48,25 +55,19 @@ The user's prompts and Copilot's responses are stored within Microsoft 365 and n
 
 After Microsoft 365 Copilot and Microsoft 365 Copilot Chat receive additional information from the Bing search service, this information is used to compose the response returned to the user.
 
-When a Microsoft 365 Copilot user submits their prompt with the **Web content** toggle (that is, web search) turned on, they may receive two separate responses:
-
-1. If resources are found within Microsoft 365, the user sees:
-    - **From your company's resources, emails, Teams messages, etc.**
-
-2. If resources are found outside of Microsoft 365, the user sees:
-    - **From the web:**
-
-The user can see results from both. Additionally, if the results are from the web only, the user sees the same **From the web:** heading.
-
 ### Web search query citations
 
 To provide greater visibility into the generated search queries, web search query citations are shown to users in the linked citation section of the Copilot response. The section shows the exact web search queries (derived from the user’s prompt) that were sent to the Bing search service. Showing the exact web search queries helps users understand what search queries, along with the sites searched, were used to enhance Copilot’s response to their prompt. This information can help users improve their prompts and use Copilot more effectively.
+
+ :::image type="content" source="media/copilot-web-search-citations-raw.png" alt-text="Screenshot of web search query citations in Microsoft 365 Copilot.":::
 
 Web search query citations are available only in Microsoft 365 Copilot Chat (previously named Business Chat). Citations aren’t available in the Copilot pane within a Microsoft 365 app, such as Word or PowerPoint. Also, the web search queries are only available in the chat thread for 24 hours.
 
 ### Web search query logging
 
-Web search query logging is available so that admins can perform search, audit, and eDiscovery on the exact web search queries Copilot derived from the user's prompt. Admins can already perform these actions for prompts and responses and will be able to use their familiar tools to extend those actions to search queries. For more information, see [Audit log activities](/purview/audit-log-activities#copilot-activities), [Copilot interaction events overview](/office/office-365-management-api/copilot-schema), and [Search for and delete Copilot data in eDiscovery (preview)](/purview/edisc-search-copilot-data#identifying-web-queries-in-microsoft-365-copilot-usage).
+Web search query logging is available so that admins can perform search, audit, and eDiscovery on the exact web search queries Copilot derived from the user's prompt. Admins can already perform these actions for prompts and responses and are able to use their familiar tools to extend those actions to search queries. For more information, see [Audit log activities](/purview/audit-log-activities#copilot-activities), [Copilot interaction events overview](/office/office-365-management-api/copilot-schema), and [Search for and delete Copilot data in eDiscovery (preview)](/purview/edisc-search-copilot-data#identifying-web-queries-in-microsoft-365-copilot-usage).
+
+Administrators can also view the actual web search terms Copilot used, right alongside the original prompt, the response, and any supporting resources by using activity explorer in Microsoft Purview Data Security Posture Management (DSPM) for AI. For more information, see [Learn about Data Security Posture Management (DSPM) for AI](/purview/dspm-for-ai).
 
 ### Examples of generated search queries
 
@@ -93,14 +94,14 @@ Generated search queries are sent to the Bing search service with user and tenan
 - Answers or features like Rich Captions
 - Social features like Auto Suggest, Trending, and Zero Input
 
-The [Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all) provide the following additional commitments about the generated search queries sent to the Bing search service:
+The "Microsoft 365 Copilot and Microsoft 365 Copilot Chat" section of the [Product Terms](https://aka.ms/copilot/web-query-terms) provides the following additional commitments about the generated search queries sent to the Bing search service:
 
 - Microsoft has no rights to them other than as needed to provide the service.
 - They aren’t used to improve Bing.
 - They aren’t used to create advertising profiles or to track user behavior.
 - They aren't shared with advertisers.
 - They aren’t used to train generative AI foundation models.
-- They are treated as customer confidential information and protected by appropriate technical and organizational measures.
+- They're treated as customer confidential information and protected by appropriate technical and organizational measures.
 
 The Bing search service operates separately from Microsoft 365 and has different data-handling practices. The web search queries generated by Copilot and sent to Bing are subject to the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) between each user and Microsoft, together with the [Microsoft Privacy Statement](https://www.microsoft.com/privacy/privacystatement).
 
@@ -127,15 +128,15 @@ If the IT admin enables the **Allow web search in Copilot** policy, they have th
 
 If the IT admin turns on web search for Microsoft 365 Copilot users, those users still have the option to turn off web search by using the [Web content toggle](#web-content-toggle-for-users-only-for-microsoft-365-copilot). The **Web content** toggle isn’t available as part of the Microsoft 365 Copilot Chat experience.
 
-If the IT admin turns off web search, the **Web content** toggle can longer be used and there isn’t a way for users to turn web search back on. For example, even if a Microsoft 365 Copilot user has turned on the **Web content** toggle, they still won’t be able to use web search.
+If the IT admin turns off web search, the **Web content** toggle isn’t available to users. The toggle is turned off and appears dimmed. Users can’t turn on the toggle to use web search.
 
 If the IT admin doesn’t configure the **Allow web search in Copilot** policy, web search will be available to users in both Microsoft 365 Copilot and Microsoft 365 Copilot Chat, unless the IT admin has set the **Allow the use of additional optional connected experiences in Office** policy to **Disabled**. But turning off optional connected experiences restricts Microsoft 365 Copilot Chat, Microsoft 365 Copilot, and multiple experiences across Microsoft 365.
 
 > [!NOTE]
-> For Government Community Cloud (GCC) customers:
-> - Web search is available in GCC.
-> - The **Allow web search in Copilot** policy is available in GCC in Cloud Policy service for Microsoft 365.
-> - If the IT admin doesn’t configure the **Allow web search in Copilot** policy, web search will be turned off in GCC, regardless of how the **Allow the use of additional optional connected experiences in Office** policy is configured.
+> For United States government customers using Microsoft 365 (or Office 365) Government Community Cloud (GCC) or DoD offerings:
+> - Web search is available, but is turned off by default.
+> - To enable web search, use the **Allow web search in Copilot** policy in Cloud Policy service for Microsoft 365. For information about this policy, refer to the information earlier in this section.
+> - If you don't configure the **Allow web search in Copilot** policy, web search remains turned off, regardless of how the **Allow the use of additional optional connected experiences in Office** policy is configured.
 
 ### Web content toggle for users (only for Microsoft 365 Copilot)
 

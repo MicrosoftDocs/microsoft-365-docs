@@ -62,7 +62,7 @@ jobs:
             TargetOrganization: "MicrosoftDocs"
             TargetRepository: "microsoft-365-docs-pr"
             TargetPath: "microsoft-365/includes"
-            EndpointsContentOwner: "kelleyvice-msft"
+            EndpointsContentOwner: "VargheseSivi"
             PrivateKey: ${{ secrets.M365_APP_PRIVATE_KEY }}
             ClientId: ${{ secrets.M365_APP_CLIENT_ID }}
           run: |
@@ -72,6 +72,7 @@ jobs:
             # Script updated for Azure Torus 2-September-2020 by David Strome dstrome@microsoft.com
             # Script updated for GitHub workflows 10-September-2024 by David Strome dstrome@microsoft.com
             # Script updated to use M365 Skilling Repo Management app for auth 6-March-2025 by David Strome dstrome@microsoft.com
+            # Script updated to add France as an available instance 21-August-2025 by David Strome dstrome@microsoft.com
 
             <#
             This script retreives Office 365 endpoint sets for each service instance
@@ -256,6 +257,7 @@ jobs:
                 $script:siHash = @{}
                 $siHash.China = "Office 365 operated by 21Vianet"
                 $siHash.Germany = "Office 365 Germany"
+                $siHash.France = "Office 365 France"
                 $siHash.USGovDoD = "Office 365 U.S. Government DoD"
                 $siHash.USGovGCCHigh = "Office 365 U.S. Government GCC High"
                 $siHash.Worldwide = "Office 365 Worldwide"
@@ -563,10 +565,15 @@ jobs:
             function Write-ServiceAreaHeader {
                 param($saName, $path, $file)
 
-                Write-Host "Write service header for $saName"
+                    If (($saName -ne "") -and ($saName -ne $Null)) {
 
-                # Add a header with the service area name to the output file
-                "`n## " + $saName + "`n" | Out-File -Append -FilePath ($path + $file)
+                        Write-Host "Write service header for $saName"
+
+                        # Add a header with the service area name to the output file
+                        "`n## " + $saName + "`n" | Out-File -Append -FilePath ($path + $file)
+                        
+                    }
+                  
             } # end function Write-ServiceAreaHeader
 
             function ConvertTo-EndpointObject {
@@ -902,3 +909,7 @@ jobs:
           with:
             name: RunData
             path: "${{ github.workspace }}/run-data/endpoints*"
+
+
+
+

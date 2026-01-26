@@ -1,6 +1,6 @@
 ---
 title: "Hybrid solutions"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 11/14/2024

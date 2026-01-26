@@ -8,10 +8,11 @@ audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier2
 - scotvorg
-ms.custom: 
+- operations-pod
+ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet

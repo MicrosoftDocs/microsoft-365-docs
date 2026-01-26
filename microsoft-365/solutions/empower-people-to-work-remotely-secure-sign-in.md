@@ -2,13 +2,13 @@
 title: "Step 1. Increase sign-in security for hybrid workers with MFA"
 f1.keywords:
 - NOCSH
-author: brendacarter
-ms.author: bcarter
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 ms.date: 05/01/2020
 audience: ITPro
 ms.topic: how-to
-ms.service: o365-solutions
+ms.service: m365-planning
 ms.localizationpriority: high
 ms.collection: 
 - highpri
@@ -17,7 +17,7 @@ ms.collection:
 - remotework
 - m365solution-remotework
 - m365solution-scenario
-ms.custom: 
+ms.custom: m365-solutions-doc-set
 description: Require that your hybrid workers sign in with multifactor authentication (MFA).
 ---
 
@@ -89,9 +89,9 @@ This table shows the results of enabling MFA with security defaults and Conditio
 
 | Method | Enabled | Disabled | Additional authentication method |
 |:-------|:-----|:-------|:-------|
-| **Security defaults**  | Can’t use Conditional Access policies | Can use Conditional Access policies | Microsoft Authenticator app |
-| **Conditional Access policies** | If any are enabled, you can’t enable security defaults | If all are disabled, you can enable security defaults  | User specifies during MFA registration  |
-||||
+| **Security defaults**  | Can't use Conditional Access policies | Can use Conditional Access policies | Microsoft Authenticator app |
+| **Conditional Access policies** | If any are enabled, you can't enable security defaults | If all are disabled, you can enable security defaults  | User specifies during MFA registration  |
+
 
 ## Let your users reset their own passwords
 
@@ -101,7 +101,7 @@ Self-Service Password Reset (SSPR) enables users to reset their own passwords wi
 
 ## Sign in to SaaS apps with Microsoft Entra ID
 
-In addition to providing cloud authentication for users, Microsoft Entra ID can also be your central way to secure all your apps, whether they’re on-premises, in Microsoft’s cloud, or in another cloud. By [integrating your apps into Microsoft Entra ID](/azure/active-directory/manage-apps/plan-an-application-integration), you can make it easy for hybrid workers to discover the applications they need and sign into them securely.
+In addition to providing cloud authentication for users, Microsoft Entra ID can also be your central way to secure all your apps, whether they're on-premises, in Microsoft's cloud, or in another cloud. By [integrating your apps into Microsoft Entra ID](/azure/active-directory/manage-apps/plan-an-application-integration), you can make it easy for hybrid workers to discover the applications they need and sign into them securely.
 
 ## Admin technical resources for MFA and identity
 

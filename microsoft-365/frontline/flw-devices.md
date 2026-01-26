@@ -17,7 +17,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 09/16/2024
+ms.date: 10/24/2025
 ---
 
 # Overview of device management for frontline workers
@@ -65,7 +65,7 @@ The deployment model you choose partly determines the device operating systems y
 
 |Device OS|Considerations|
 |---------|--------------|
-|Android |[Limited native capabilities](https://source.android.com/docs/devices/admin/multi-user) for storing multiple user profiles on devices. <br> Android devices can be enrolled in shared device mode to automate single sign-on and sign out, and targeting Conditional Access policies. <br>Robust management of controls and APIs. <br>Existing ecosystem of devices built for frontline use. |
+|Android |[Limited native capabilities](https://source.android.com/docs/devices/admin/multi-user) for storing multiple user profiles on devices. <br> Android devices can be enrolled in <a href="/entra/identity-platform/msal-shared-devices">shared device mode</a> to automate single sign-on and sign out, and targeting Conditional Access policies. <br>Robust management of controls and APIs. <br>Existing ecosystem of devices built for frontline use. |
 |iOS and iPadOS |iOS devices can be enrolled in shared device mode to automate single sign-on and sign out. <br> Storing multiple user profiles on iPadOS devices is possible with Shared iPad for Business.|
 |Windows |Native support for storing multiple user profiles on the device. <br>Supports Windows Hello for passwordless authentication.<br> Simplified deployment and management capabilities when used with Microsoft Intune. |
 
@@ -77,8 +77,7 @@ When you're planning your device deployment, there are considerations across mul
 
 Mobile device management (MDM) solutions, such as Microsoft Intune, simplify deployment, management, and monitoring of devices.
 
-A device can only be enrolled in one MDM solution, but you can use multiple MDM solutions to manage separate pools of devices. For example, you could use Omnissa Workspace ONE or SOTI MobiControl for shared devices and Intune for BYOD. If you use multiple MDM solutions, keep in mind that some users might not be able to access shared devices because of a mismatch in 
-Conditional Access policies or mobile application management (MAM) policies.
+A device can only be enrolled in one MDM solution, but you can use multiple MDM solutions to manage separate pools of devices. For example, you could use Omnissa Workspace ONE or SOTI MobiControl for shared devices and Intune for BYOD. If you use multiple MDM solutions, keep in mind that some users might not be able to access shared devices because of a mismatch in Conditional Access policies or mobile application management (MAM) policies.
 
 If you're using a third-party MDM solution, you can integrate with [Intune partner compliance](/mem/intune/protect/device-compliance-partners) to take advantage of Conditional Access for devices managed by third-party MDM solutions.
 
@@ -86,7 +85,7 @@ If you're using a third-party MDM solution, you can integrate with [Intune partn
 
 An app launcher is an app that lets you provide a focused experience for your frontline with a customized launch screen, such as apps, wallpaper, and icon positions. You can show only the relevant apps that your frontline workers need to use and widgets that highlight key information.
 
-Most MDM solutions provide their own app launcher. For example, Microsoft Intune provides the Microsoft Managed Home Screen app. You can also build your own custom launcher.
+Most MDM solutions provide their own app launcher. For example, Microsoft Intune provides the <a href="/intune/intune-service/apps/app-configuration-managed-home-screen-app">Managed home screen</a> app. You can also build your own custom launcher.
 
 The following table lists some of the most common app launchers available today for Android devices by Microsoft and third-party developers.
 
@@ -157,15 +156,7 @@ If MFA isn't feasible for your organization or deployment model, you should plan
 
 #### Using the Authenticator App for MFA
 <p>
-  If you're planning to use the Microsoft Authenticator app for multi-factor authentication (MFA), we recommend setting it up with a desktop companion device (such as a laptop or PC). This makes onboarding easier by allowing you to scan QR codes and follow setup instructions more efficiently.
-</p>
-<p>
-  For step-by-step guidance, refer to this Microsoft support article:<br>
-  <a href="https://support.microsoft.com/account-billing/set-up-an-authenticator-app-as-a-two-step-verification-method-2db39828-15e1-4614-b825-6e2b524e7c95" target="_blank">
-    Set up an Authenticator app as a two-step verification method
-  </a>
-</p>
-
+  If you're planning to use the Microsoft Authenticator app for multi-factor authentication (MFA), we recommend setting it up with a desktop companion device (such as a laptop or PC). Microsoft offers a <a href="/microsoft-365/frontline/flw-setup-frontline-personal-devices">BYOD onboarding guide</a> to help facilitate this companion onboarding. This makes onboarding easier by allowing you to scan QR codes and follow setup instructions more efficiently.
 
 #### Passwordless authentication
 
@@ -182,12 +173,15 @@ See the following table to assess passwordless authentication methods for your f
 
 |Method|OS support|Requires personal device|Supports MFA|
 |------|----------|----------|----------|
-|Microsoft Authenticator |All |Yes |Yes |
-|SMS sign in |Android and iOS |Yes |No |
+|<a href="/entra/identity/authentication/concept-authentication-authenticator-app">Microsoft Authenticator</a> |All |Yes |Yes |
+|<a href="/entra/identity/authentication/how-to-enable-passkey-fido2">Device-bound passkeys</a> |Windows, Android, iOS |Yes |Yes |
+|<a href="/entra/identity/authentication/how-to-authentication-synced-passkeys">Sync passkeys</a> (preview) |Android, iOS |Yes |Yes |
+|<a href="/entra/identity/authentication/howto-authentication-sms-signin">SMS signin</a> |Android and iOS |Yes |No |
+|<a href="/entra/identity/authentication/how-to-authentication-qr-code">QR code authentication</a> |Android and iOS |No |No |
 |Windows Hello |Windows |No |Yes |
 |FIDO2 key |Windows |No |Yes |
 
-To learn more, see [Passwordless authentication options for Microsoft Entra ID](/entra/identity/authentication/concept-authentication-passwordless) and [Configure and enable users for SMS-based authentication using Microsoft Entra ID](/entra/identity/authentication/howto-authentication-sms-signin).
+To learn more, see [Passwordless authentication options for Microsoft Entra ID](/entra/identity/authentication/concept-authentication-passwordless). 
 
 ### Authorization
 
@@ -225,7 +219,7 @@ In a shared devices deployment, you can use app protection policies to ensure th
 
 #### Limit access to Teams when frontline workers are off shift
 
-With the working time feature, you can use app protection policies to limit access to Teams for shift workers on BYOD or company-owned dedicated devices. This feature lets you can block access or show a warning message when frontline workers access Teams during nonworking time.
+With the working time feature, you can use app protection policies to limit access to Teams for shift workers on BYOD or company-owned dedicated devices. This feature lets you block access or show a warning message when frontline workers access Teams during nonworking time.
 
 To learn more, see [Limit access to Teams when frontline workers are off shift](flw-working-time.md).
 

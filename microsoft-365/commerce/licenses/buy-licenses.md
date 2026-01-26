@@ -5,17 +5,18 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: sinakassaw, nicholak
+ms.reviewer: rabhange
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_o365
+- operations-pod
 ms.custom:
 - commerce_licensing
 - okr_SMB
@@ -28,12 +29,15 @@ ms.custom:
 - campaignIDs-batch1
 search.appverid: MET150
 description: "Learn how to buy more licenses or reduce the number of licenses for your business subscription in the Microsoft 365 admin center."
-ms.date: 04/09/2025
+ms.date: 07/08/2025
 ---
 
 # Buy or remove licenses for a Microsoft business subscription
 
 As an admin, you can buy or remove licenses for your business subscriptions in the Microsoft 365 admin center.
+
+> [!NOTE]
+> When you buy or upgrade a subscription, or add more licenses to a subscription, you might see a message about license caps. License caps enforce limits on the number of licenses you can have in a subscription and are used to provide specific promotions or special pricing to customers.
 
 ## Before you begin
 
@@ -73,7 +77,8 @@ If you buy licenses in the middle of your billing period, you have seven days fr
 4. Choose when to schedule the license change to happen.
    - If recurring billing is turned on, you can choose to make the change now, or when the subscription renews.
    - If recurring billing is turned off, you can only make the change now.
-5. To change the number of licenses, under **New quantity** in the **Total licenses** box, enter the total number of licenses that you want for this subscription. For example, if you have 100 licenses and you want to add five more, enter 105.
+1. To change the number of licenses, under **New quantity** in the **Total licenses** box, enter the total number of licenses that you want for this subscription. For example, if you have 100 licenses and you want to add five more, enter 105. You will receive a bill for these additional licenses within one or two days.
+
 6. Select **Save**.
 
 ### Watch: Remove existing licenses
@@ -96,7 +101,8 @@ You can only remove licenses from your subscription during a limited time window
    - If you’re using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. Select the subscription that you want to change.
 3. On the subscription details page, select **Remove licenses**. [What if I can't select the Buy licenses or Remove licenses buttons?](#what-if-i-cant-select-the-buy-licenses-or-remove-licenses-buttons)
-4. Under **New quantity** in the **Total licenses** box, enter the total number of licenses that you want for this subscription. For example, if you have 100 licenses and you want to remove 25 licenses, enter 75.
+1. Under **New quantity** in the **Total licenses** box, enter the total number of licenses that you want for this subscription. For example, if you have 100 licenses and you want to remove 25 licenses, enter 75. You will receive a bill that includes any credits that might be due within one to two days.
+
 5. Select **Save**.
 
 ## Buy or remove licenses if you have an MOSA billing account type

@@ -1,18 +1,19 @@
 ---
 title: Microsoft 365 productivity illustrations
 description: "Learn how to implement Microsoft 365 and Microsoft Teams productivity solutions with these architecture diagrams."
-ms.author: samanro
-author: samanro
-manager: bcarter
+ms.author: dansimp
+author: dansimp
+manager: dansimp
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: m365-planning
 ms.localizationpriority: medium
 ms.collection:
 - highpri
 - M365-collaboration
 - M365-security-compliance
 ms.custom:
+- m365-solutions-doc-set
 f1.keywords: NOCSH
 ms.date: 04/30/2024
 
@@ -73,7 +74,7 @@ Microsoft provides tools to migrate your on-premises network file shares and Sha
 
 ## Microsoft 365 information protection and compliance capabilities
 
-Microsoft 365 includes a broad set of information protection and compliance capabilities. Together with Microsoft’s productivity tools, these capabilities are designed to help organizations collaborate in real time while adhering to stringent regulatory compliance frameworks.
+Microsoft 365 includes a broad set of information protection and compliance capabilities. Together with Microsoft's productivity tools, these capabilities are designed to help organizations collaborate in real time while adhering to stringent regulatory compliance frameworks.
 
 This set of illustrations uses one of the most regulated industries, financial services, to demonstrate how these capabilities can be applied to address common regulatory requirements. Feel free to adapt these illustrations for your own use.
 

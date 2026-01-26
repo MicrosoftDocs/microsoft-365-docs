@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
+- operations-pod
 ms.custom: QuickDraft
 AI_Usage:  
 - AI-Assisted

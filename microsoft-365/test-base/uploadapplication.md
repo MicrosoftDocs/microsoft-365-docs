@@ -3,7 +3,7 @@ title: 'Uploading a pre-built zip package'
 description: How to edit, upload, and test a pre-built .zip file on Test Base
 search.appverid: MET150
 author: mansipatel-usl
-ms.author: rshastri
+ms.author: scotv
 manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting

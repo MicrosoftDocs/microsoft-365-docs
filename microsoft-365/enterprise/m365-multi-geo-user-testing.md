@@ -1,12 +1,12 @@
 ---
 title: User Testing in Multi-Geo
 description: Learn about user testing in Multi-Geo
-ms.author: kvice
-author: kelleyvice-msft
-manager: scotv
-ms.reviewer: deanw, anfra
+ms.author: v-fahasen
+author: fhasen-msft
+manager: Justin.Giammona
+ms.reviewer: jugiammo, anfra
 ms.service: microsoft-365-enterprise
-ms.subservice: multi-tenant
+ms.subservice: multi-geo-capabilities
 ms.topic: article
 f1.keywords:
 - NOCSH

@@ -1,84 +1,100 @@
 ---
-title: "Copilot in Microsoft 365 admin centers"
+title: "Copilot in Microsoft 365 Admin Centers"
+description: "Learn how to use Copilot in Microsoft 365 admin centers to automate tasks, navigate features, and gain actionable insights with natural language queries."
+#customer intent: As an admin, I want to understand how to use Copilot in Microsoft 365 admin centers so that I can simplify and streamline admin tasks.
 f1.keywords:
 - NOCSH
-ms.author: camillepack
-author: camillepack
+author: kwekuako
+ms.author: kwekua
 manager: scotv
-ms.date: 09/19/2024
+ms.date: 10/23/2025
+ms.update-cycle: 180-days
 audience: Admin
-ms.topic: overview
+ms.topic: how-to
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
-ms.collection: 
-- Tier2
-- scotvorg
-- M365-subscription-management 
-- Adm_O365
-- Adm_TOC
-- m365copilot
-- magic-ai-copilot
-description: "Learn about Copilot in Microsoft 365 admin centers and how it can help simplify admin tasks."
+ms.collection:
+  - scotvorg
+  - M365-subscription-management
+  - Adm_O365
+  - Adm_TOC
+  - m365copilot
+  - magic-ai-copilot
+  - operations-pod
+appliesto:
+- ✅ Microsoft 365 Copilot
 ---
 
-# Copilot in Microsoft 365 admin centers
+# Copilot for admins in Microsoft 365 admin centers
 
-Copilot in Microsoft 365 admin centers harnesses the value of generative AI to boost IT admins' productivity by simplifying administration of Microsoft 365 and Microsoft 365 Copilot, and empowering you to focus on more strategic priorities. Copilot in Microsoft 365 admin centers helps admins perform tasks across different Microsoft 365 services using natural language interactions, contextual guidance, and proactive suggestions. Copilot in Microsoft 365 admin centers also leverages the power of Copilot to provide transferable skills across different admin centers and surfaces, breaking the barriers of switching between multiple admin tools and interfaces.
+Copilot for admins uses generative AI to make you more productive by simplifying administration of Microsoft 365, Microsoft 365 Copilot and agents. It helps you focus on more strategic priorities and helps you perform administrative tasks across different Microsoft 365 services.
+
+It helps admins perform tasks across different Microsoft 365 services via a single unified surface, using natural language interactions, contextual guidance, and proactive suggestions.
 
 ## Before you begin
 
-You must have a Microsoft 365 Copilot license enabled for your tenant. To learn more about Copilot licensing, see [Set up Microsoft 365 Copilot](microsoft-365-copilot-setup.md).
+All users with an admin role can use Copilot for Admins in the M365 admin centers, if the tenant has at least one paid Copilot license. For more information about admin roles, see [About administrator roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles) and [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference)
 
-### Get started
+To use it in Copilot Chat, users need to be a member of an admin role and also have a Copilot license assigned to that account or have PayGo setup. For more information about Copilot licensing, see [License options for Microsoft 365 Copilot](microsoft-365-copilot-licensing.md).
+
+## Get started
 
 To use Copilot in Microsoft 365 admin centers, follow these steps:
 
-1. Sign in to the Microsoft 365 admin center, or one of the specialized admin centers like Teams, SharePoint, or Exchange.
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/), or one of the specialized admin centers like [Teams](https://admin.teams.microsoft.com/Teams/), SharePoint, or [Exchange](https://admin.cloud.microsoft/exchange#/homepage/).
 
 2. Select the Copilot button in the upper right shell to launch Copilot in Microsoft 365 admin centers.
 
-## How can I use Copilot in Microsoft 365 admin centers?
+    :::image type="content" source="media/admin-center-copilot.png" alt-text="Screenshot of the Copilot control system dashboard page showing a selection of the Copilot button in the top right.":::
 
-You can use Copilot to help manage your organization and focus on what's important.
+## Use Copilot for admins in Microsoft 365 Copilot Chat
 
-The following table describes what you can do with Microsoft:
+1. Sign in to [Microsoft 365 Copilot Chat](https://m365.cloud.microsoft/chat/) and select **Microsoft 365 Admin** agent in the left navigation pane.
 
-| Functionality | Description | Example prompts |
-|---------------|-------------|----------------|
-| Search users and groups | Search your users and groups based on natural language queries. Copilot returns a list where you can view the results in active users or group lists, and export them to a CSV file for further analysis. | *"Show me users in Australia with Teams license assigned"*  <br> *"Identify all groups in my organization without an owner"*  <br> *"Identify all users who are unlicensed"* |
-| Mailbox search | Find insights about your users' mailboxes through natural language queries. | *"Find all the mailboxes which are hidden from address lists"*  <br> *"Show me all mailboxes put on litigation hold date before 13th August 2017"* |
-| Navigate admin center | Navigate to different pages, features, and experiences within the admin center. Copilot provides a breadcrumb trail and direct link to your desired page, and you can use a wayfinding query to be brought directly to that page with the Copilot chat pane still open. | *"Where do I manage role assignments?"*  <br> *"Where can I see my meeting policies?"* |
-| Get support | Get support for any challenges or questions that you have related to administering Microsoft 365 for your tenant. Copilot can also give you an alert for a service incident ongoing for your organization if your question is relevant to that incident, along with a self-help insight. For certain issues, Copilot can give you diagnostic solutions that will leverage the information and details you provide to help diagnose and solve your problems. | *"How do I view my bill?"*  <br> *"How do I set up Multi-factor Authentication?"*  <br> *"How do I restore a deleted user?"* |
-| Discover products | Discover products to help take advantage of value from Microsoft 365. Copilot can help you find the right product to suit your needs. When applicable, you can initiate trials and purchases directly from the Copilot response. | *"What is included in Business Premium?"*  <br> *"What is the price of Viva Goals?"*  <br> *"How do I get email?"* |
-| Identity management | Use Copilot to guide you in managing various aspects of identity and security within your organization's ecosystem. | *"How many hybrid users am I syncing?"*  <br> *"Which authentication methods do I have on?"*  <br> *"Perform a guest access review"* |
-| Device management | Copilot can help you locate resources to provision mobile app protections policies. Get deployment guidance for setting up and managing various aspects of identity and security within the tenant. | *"What is the status of my security defaults?"*  <br> *"What is the identity user status in my org?"* |
-| Service health | Surface general status of Microsoft services, tenant health status, health advice, and recommendations. | *"Are there any service issues right now?"*  <br> *"Show me health of teams"* |
-| Copilot guidance | Get Microsoft 365 Copilot guidance to help you with your Copilot onboarding and deployment journey with the help of guidance and insights. | *"How do I give access to Copilot?"*  <br> *"See Copilot requirements for my organization"*  <br> *"How many Copilot licenses have I assigned?"*  <br> *"Review Copilot user readiness"* |
-| Onboard users | Onboard users to your organization with one prompt. Copilot can help with adding a new user by leveraging the information you provide in a prompt in combination with the data it has about the tenant (like domains and licenses). Copilot can seamlessly recommend a configuration for this new user, which saves time. | *"Onboard John Smith as a new user to my organization"* |
-| Admin recap | See Admin recap to get a personalized and concise summary of key insights and trends across admin areas, such as Service Health, Message Center, Experience Insights, and more to save valuable time. Admin recap is personalized based on your role and usage patterns. You can copy the text for easier sharing and also personalize what shows in the recap. | *"Recap the latest admin info for me"* |
+    :::image type="content" source="media/microsoft-365-admin-agent.png" alt-text="Screenshot of the Microsoft 365 admin agent page showing a selection of the Microsoft 365 admin agent.":::
 
-Try using the prepopulated prompt options in the Copilot pane for the best results. You can also explore the [Copilot Prompt Gallery](https://copilot.cloud.microsoft/prompts), which provides a library of prompts specifically designed for Copilot in Microsoft 365 admin centers. With Copilot Prompt Gallery, you can experiment with Copilot's capabilities, easily filter prompts by categories, and even save your favorite prompts for later use.
+1. If you don't find the agent in the left navigation pane, select **All agents**, search for **Microsoft 365 Admin**, and select **Add**.
+1. You can also use the agent in any apps you use such as Word, Excel, and PowerPoint.
 
-To maintain your security and privacy, Copilot doesn't make any configuration changes on your behalf. To learn more about security and privacy with Copilot, see [Data, Privacy, and Security for Microsoft 365 Copilot](microsoft-365-copilot-privacy.md).
+## Capabilities in Copilot for admins
+
+You can use Copilot to help manage your organization and focus on what's important. Following section provides an overview of the capabilities available in Copilot for Admins.
+
+|Capability|Description|
+|---|---|
+|Admin recap|Use admin recap to get a personalized and concise summary of key insights and trends across admin areas, such as Service Health, Message Center, Groups and more to save valuable time. <br/><br/> Example prompts: <br/><br/> - Recap relevant info from across the admin center <br/><br/> :::image type="content" source="media/quick-recap.png" alt-text="Screenshot of the Copilot prompt and response page showing the question: Recap relevant info from Microsoft 365 admin center."::: |
+|Get admin help and support|Get support for any challenges or questions related to administering Microsoft 365 for your tenant. <br/><br/> Example prompts: <br/><br/> - How do I view Copilot usage across my organization? <br/><br/> - How do I restore a deleted user? <br/><br/> - How do I set up multifactor authentication? <br/><br/> :::image type="content" source="media/setup-mfa.png" alt-text="Screenshot: Copilot prompt and response page showing the question: How do I set up multifactor authentication?"::: |
+|Message Center and Service health|Surfaces general status of Microsoft services, tenant health status, health advice, and recommendations. <br/><br/> Example prompts: <br/><br/> - Show me the health of Teams? <br/><br/> - Are there any service issues right now? <br/><br/> :::image type="content" source="media/service-issues.png" alt-text="Screenshot of the Copilot prompt and response page showing the question: Are there any service issues right now?" ::: |
+|Search for users and groups|Search your users and groups based on natural language queries. Copilot returns a list where you can view the results in active users or group lists and export them to a CSV file for further analysis. <br/><br/> Example prompts: <br/><br/> - Show me users in Australia with an assigned Teams license? <br/><br/> - Identify all groups in my organization with an owner. <br/><br/> - Show me all the users who are not using Copilot in the last 30 days. |
+|Get relevant licensing information and assign licenses|Search for specific license details such as assigned licenses, pending license requests, available licenses etc. and get detailed answers. <br/><br/> **Coming soon**: You can also assign licenses to users within Copilot for admins. You’ll be asked for confirmation before executing the action on your behalf. <br/><br/> Example prompts: <br/><br/> - Show me users without a Copilot license? <br/><br/> - How many Copilot licenses are available? |
+|Search and analyze Teams insights|Search and analyze Teams data using natural language queries. Copilot lets you quickly find users, groups, and policies without complex filters. Results are displayed in familiar admin views, such as active users or policy lists, and can be exported to a CSV file for deeper analysis or reporting. <br/><br/> Example prompts: <br/><br/> - Find all users with a Calling Plan license but no phone number assigned. <br/><br/> - Find all users whose name starts with *A*, who have the Global Messaging Policy assigned. <br/><br/> - Search and return a list of all policies where the meeting recording is turned **Off**. <br/><br/> - Search for all users with no custom meeting policy assigned. |
+|Manage and troubleshoot Teams policies|Manage and troubleshoot Teams policies effortlessly. Copilot helps you diagnose policy-related issues that impact messaging, meetings, or external collaboration in Teams. Common scenarios include users unable to record meetings, blocked features, or conflicting policy settings. <br/><br/> Example prompts: <br/><br/> - Why is an external user unable to join a meeting organized by **user email or user principal name**? <br/><br/> - Why can’t **user principal name or Id** record meetings? |
+|Troubleshoot Teams meetings|Quickly identify and resolve meeting quality issues in Teams. Copilot helps you investigate poor meeting or call quality by analyzing telemetry and surfacing likely causes such as network issues, device problems, or bandwidth constraints. <br/><br/> Example prompts: <br/><br/> - Analyze the call quality of for their meeting with Meeting ID. Were there any quality issues? <br/><br/> - List the most common quality issues in meetings for the last 30 days. <br/><br/> - List all users who experienced quality issues in meeting for last 30 days. |
+|**Coming soon**: Agents management|View and manage your Copilot agents within Copilot for admins. You can drill down into various details of the agents such as security and compliance and deploy agents to users in your organization. <br/><br/> Example prompts: <br/><br/> - Show me a list of all available agents and its availability? <br/><br/> - Tell me more about Researcher agent and if there is any risk in enabling it. |
+|**Coming soon**: Prompt scheduling for your frequent tasks|For your administrative tasks such as generating usage reports on a weekly basis, viewing pending license requests & available licenses etc. you can schedule prompts to run at a specific cadence so that the prompt automatically runs, curates the data that you are looking for & notifies you about it. |
+|Policy troubleshooting|Troubleshoot scenarios such as a user being able or unable to join or start a meeting, or bypass the lobby. Address queries related to the functionality of Teams features, including, Chats, webinars, messages, presenting.  |
 
 ## Frequently asked questions
 
-### How can IT admins enable the feature?
+### How do I enable Copilot for admins in Microsoft 365 admin centers?
 
-Copilot is automatically enabled for select customers who have purchased Microsoft 365 Copilot.
+Copilot in admin centers is automatically enabled for all admin users if the tenant has at least one Copilot license. To use Copilot for admins in Copilot Chat, the user must have a Copilot license assigned.
 
-### How can IT admins disable the feature?
+### How do I disable Copilot for admins?
 
-If you would like to exclude certain admins from this functionality, you can do so via a security group. Start by creating a security group with the following name: "**CopilotForM365AdminExclude**", no description or additional settings are required. The Copilot in Microsoft 365 admin centers experience will then be disabled for any admins added to this group.
+If you would like to exclude certain admins from this feature, add them to a custom security group. Create a security group with the following name: `CopilotForM365AdminExclude`. You don't need to specify a description or configure other settings. Microsoft 365 admin centers disable the Copilot experience for any admin users in this group.
 
-### Which admin roles can use Copilot in Microsoft 365 admin centers?
+If you would like to exclude certain admins from this feature, add them to a custom security group. Create a security group with the following name: `CopilotForM365AdminExclude`. You don't need to specify a description or configure other settings. Microsoft 365 admin centers disable the Copilot experience for any admin users in this group. [Visit this page](https://admin.cloud.microsoft/?#/copilot/settings/UserAccess/:/CopilotSettings/AdminCopilotSetting) to enable or disable Copilot for Admins in admin centers.
 
-It will be available to all admins, and respect role-based access controls (RBAC) within the admin center, only surfacing information and controls that the particular admin has access to. Copilot doesn't make any configuration changes on behalf of an admin, keeping security integrity intact.
+### Which admin roles can use Copilot for admins?
 
-### Does Copilot in Microsoft 365 admin centers support audit logging?
+The feature is available to all admin users. It respects role-based access controls in the admin center and only shows information and controls that the user has access to. Copilot doesn't make any configuration changes on your behalf.
 
-Copilot in Microsoft 365 admin centers is aligned with our commitment to providing enterprise-grade compliance capabilities for all Copilot products. These capabilities include auditing, eDiscovery & legal hold, data retention controls, and more.
+### Does Copilot for admins support audit logging?
 
-### How much does Copilot in Microsoft 365 admin centers cost?
+Yes. Copilot in Microsoft 365 admin centers aligns with Microsoft's commitment to providing enterprise-grade compliance capabilities for all Copilot products. These capabilities include features such as auditing, eDiscovery, legal hold, and data retention controls.
 
-Microsoft 365 Copilot is rolling out to the Microsoft 365 admin center now. Organizations that have purchased and assigned any number of Microsoft 365 Copilot licenses for their tenant can take advantage of these new Microsoft 365 Copilot-powered administration capabilities to streamline and enhance the Microsoft 365 management experience.
+Yes. It aligns with Microsoft's commitment to providing enterprise-grade compliance capabilities for all Copilot products. These capabilities include features such as auditing, eDiscovery, legal hold, and data retention controls.
+
+> [!IMPORTANT]
+> To maintain your security and privacy, Copilot doesn't make any configuration changes on your behalf unless you explicitly provide consent for it. For more information, see [Data, privacy, and security for Microsoft 365 Copilot](microsoft-365-copilot-privacy.md).

@@ -1,5 +1,5 @@
 ---
-title: "Respond to privacy incidents and subject requests – Microsoft Priva and Purview"
+title: "Respond to privacy incidents and subject requests – Microsoft Priva and Microsoft Purview"
 ms.author: chvukosw
 author: chvukosw
 f1.keywords:
@@ -8,7 +8,7 @@ manager: laurawi
 ms.date: 01/15/2025
 audience: ITPro
 ms.topic: solution-overview
-ms.service: o365-solutions
+ms.service: m365-planning
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -17,7 +17,9 @@ ms.collection:
 - m365solution-infoprotection
 - m365solution-overview
 - zerotrust-solution
-ms.custom: admindeeplinkCOMPLIANCE
+ms.custom:
+- admindeeplinkCOMPLIANCE
+- m365-solutions-doc-set
 description: Use Microsoft Priva and Microsoft Purview to monitor and investigate data privacy incidents in your organization, including automation of data subject requests.
 ---
 
@@ -27,7 +29,7 @@ Welcome to **Step 4** of managing data privacy and data protection with Microsof
 
 ![The steps to manage data privacy and data protection with Microsoft Priva and Microsoft Purview](../media/data-privacy-protection/manage-data-privacy-protection-steps-four.png)
 
-Features in both Purview and Priva can help you monitor, investigate, and respond to data privacy incidents in your organization as you operationalize related capabilities. Having processes, procedures, and other documentation for each incident may also be important to demonstrate compliance to regulatory bodies. These features include:
+Features in both Micrsoft Purview and Priva can help you monitor, investigate, and respond to data privacy incidents in your organization as you operationalize related capabilities. Having processes, procedures, and other documentation for each incident may also be important to demonstrate compliance to regulatory bodies. These features include:
 
 - Auditing and alert policies
 - Subject rights requests, sometimes referred to as data subject requests
@@ -50,7 +52,7 @@ Most data privacy regulations generally require the type of monitoring and respo
 
 Your organization may also wish to perform monitoring and response activities for other purposes, such as other compliance needs or for business reasons. Establishing your monitoring and response scheme for data privacy should be done as part of overall monitoring and response planning, implementation, and management.
 
-Use the links above to explore how Purview capabilities can help you develop a monitoring and response scheme, and answer questions such as:
+Use the links above to explore how Microsoft Purview capabilities can help you develop a monitoring and response scheme, and answer questions such as:
 
 - What sort of day-to-day monitoring and investigative and reporting techniques are available for the different data types and sources?
 - What mechanisms will be needed to handle subject rights requests and any remedial actions, such as anonymization, redaction, and deletion?

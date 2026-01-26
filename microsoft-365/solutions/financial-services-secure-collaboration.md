@@ -1,7 +1,7 @@
 ---
 title: "Key compliance and security considerations for US banking and capital markets"
-ms.author: bcarter
-author: brendacarter
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: 11/13/2023
 audience: ITPro
@@ -9,8 +9,10 @@ ms.topic: article
 ms.collection: 
 - highpri
 - M365-security-compliance
-ms.service: o365-solutions
-ms.custom: seo-marvel-jun2020
+ms.service: m365-planning
+ms.custom:
+- seo-marvel-jun2020
+- m365-solutions-doc-set
 ms.localizationpriority: high
 description: Learn how financial services institutions can maintain financial security compliance and effectively collaborate using Microsoft 365 and Teams.
 f1.keywords: NOCSH

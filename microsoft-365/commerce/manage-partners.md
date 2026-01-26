@@ -5,33 +5,34 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: souchak, jobailey
+ms.reviewer: jkinma, ramagane
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
-ms.subservice: m365-commerce-marketplace
+ms.subservice: m365-commerce-management
 ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
-ms.custom: 
+ms.custom:
 - commerce_purchase
 - AdminSurgePortfolio
 - admindeeplinkMAC
 - GAUpdates
 - campaignIDs-batch2
+service.tree.id: 95459a4b-434c-4f83-879b-aa5f509fc7fa
 search.appverid: MET150
 description: "Learn how to work with Microsoft-certified solution providers (partners) to buy and manage products and services for your organization or school."
-ms.date: 01/08/2025
+ms.date: 09/29/2025
 ---
 
 # Manage Microsoft-certified solution provider partner relationships
 
 You can work with Microsoft-certified solution providers (partners) to buy and manage products and services for your organization or school. There are a few steps involved in getting things set up.
 
-1. Admins find and contact a partner at <a href="https://appsource.microsoft.com/marketplace/partner-dir" target="_blank">https://appsource.microsoft.com/marketplace/partner-dir</a>.
+1. Admins find and contact a partner at <a href="https://marketplace.microsoft.com/marketplace/partner-dir" target="_blank">https://marketplace.microsoft.com/marketplace/partner-dir</a>.
 2. Partners send an email request to customers to establish a partner relationship.
 3. Customers accept the invitation in Microsoft 365 admin center and start working with the partner.
 
@@ -57,7 +58,7 @@ There are several ways that a partner can work with you. Based on your stated bu
 
 ## Find a partner
 
-1. Go to <a href="https://appsource.microsoft.com/marketplace/partner-dir" target="_blank">https://appsource.microsoft.com/marketplace/partner-dir</a>.
+1. Go to <a href="https://marketplace.microsoft.com/marketplace/partner-dir" target="_blank">https://marketplace.microsoft.com/marketplace/partner-dir</a>.
 2. Use the filters to narrow your search. When you find a partner that you want to work with, select **Contact me**.
 3. Enter your location and contact information. Select your organization size, include your organization name, select your industry focus, and then describe your business needs.
 4. When you're finished, select **Contact me**.
@@ -100,5 +101,4 @@ You can remove admin roles from a partner at any time. Removing the admin roles 
 If you don't see the **Remove roles** option, contact the [Partner Center](https://partner.microsoft.com/support).
 ## Admin On Behalf Of (AOBO) access to pages in Microsoft 365 admin center
 
-If you're a partner who's an Admin On Behalf Of (AOBO) a customer, the **Purchase services**, **Your products**, and **Bills & payments** pages are no longer available in the **Billing** menu in the Microsoft 365 admin center. To buy and manage subscriptions for your customer, visit the [Partner Center](https://partner.microsoft.com). You can still view the **Licenses** and **Billing notifications** pages in the **Billing** menu. To manage domain subscriptions for your customers, ask them to sign in with an account that has both the Domain Name Administrator and Billing Administrator role. 
-
+If you're a partner who's an Admin On Behalf Of (AOBO) a customer, the **Marketplace** page, **Billing** > **Your products** page, and **Billing** > **Bills & payments** page are no longer available in the Microsoft 365 admin center. To buy and manage subscriptions for your customer, visit the [Partner Center](https://partner.microsoft.com). You can still view the **Licenses** and **Billing notifications** pages in the **Billing** menu. To manage domain subscriptions for your customers, ask them to sign in with an account that has both the Domain Name Administrator and Billing Administrator role.

@@ -2,10 +2,10 @@
 title: "Manage Office Scripts settings"
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: SKjerland
+ms.author: kwekua
+author: kwekuako
 manager: scotv
-ms.date: 01/09/2025
+ms.date: 10/10/2025
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -16,6 +16,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- operations-pod
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -27,6 +28,9 @@ description: "Learn how to manage Office Scripts settings for users in your orga
 # Manage Office Scripts settings
 
 [Office Scripts](/office/dev/scripts) allows users to automate tasks by recording, editing, and running scripts in Excel. Office Scripts works with Power Automate, and users run scripts on workbooks by using the Excel Online (Business) connector. Microsoft 365 admins can manage Office Scripts settings from the Microsoft 365 admin center.
+
+> [!IMPORTANT]
+> We’re moving the management of Office Scripts admin controls from the Microsoft 365 admin center to the Microsoft 365 Cloud Policy service. For more information, see [Office Scripts admin controls transition](#office-scripts-admin-controls-transition).
 
 > [!NOTE]
 > To manage Office Scripts settings, you must be at least an Office Apps admin. For more information, see [About admin roles](../add-users/about-admin-roles.md).
@@ -95,6 +99,17 @@ If you enable this policy setting, Office Scripts won't be available for use in 
 After applying this policy setting, users will still see the **Automate** tab, but the **Office Scripts** and **Automate** options will be greyed out. They can select the **Record Actions** button, but if they do, they'll see the following message: "You don't have access to Office Scripts. Your organization's admin may have turned off this feature, or you don't meet the requirements."
 
 To learn more, see [Use Group Policy to configure update settings for Microsoft 365 Apps](/deployoffice/configure-update-settings-microsoft-365-apps#use-group-policy-to-configure-update-settings-for-microsoft-365-apps).
+
+## Office Scripts admin controls transition
+
+The management of Office Scripts admin controls is moving from the Microsoft 365 admin center to the Microsoft 365 Cloud Policy service. After October 27, 2025, admins will no longer be able to make changes to their old settings in the Microsoft 365 admin center. Any existing settings need to be moved to the Cloud Policy service by this date to ensure that they are honored. If you don't configure the settings by then, then all three will be set to the default value of enabled.
+
+The three settings moving to the Cloud Policy service are:
+- Let users automate their tasks in Excel
+- Let users with access to Office Scripts share their scripts with others in the organization
+- Let users with access to Office Scripts run their scripts with Power Automate
+
+You only need to take action if you've changed these settings from their default value of enabled. If you haven't changed the settings, then no action is required. If you've customized any of the settings, then you need to configure their equivalent in the Microsoft 365 Cloud Policy service before October 20, 2025. For an overview of how to manage policies using the Cloud Policy service, see [Overview of Cloud Policy service for Microsoft 365](/microsoft-365-apps/admin-center/overview-cloud-policy).
 
 ## Next steps
 

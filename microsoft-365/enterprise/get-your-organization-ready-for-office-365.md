@@ -1,6 +1,6 @@
 ---
 title: "Plan for Microsoft 365 Enterprise"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 08/12/2024

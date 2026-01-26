@@ -1,6 +1,6 @@
 ---
 title: "Planning your portal launch roll-out plan in SharePoint in Microsoft 365"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 06/27/2024

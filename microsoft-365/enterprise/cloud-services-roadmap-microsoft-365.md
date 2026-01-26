@@ -2,7 +2,7 @@
 title: Cloud services roadmap for Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 05/20/2024

@@ -14,6 +14,7 @@ ms.collection:
 - M365-Campaigns
 - m365solution-smb
 - tier2
+- trust-pod
 ms.custom:
 - MiniMaven
 search.appverid:
@@ -30,7 +31,7 @@ Microsoft 365 Business Premium includes Microsoft 365 Apps, such as Word, PowerP
 > [!TIP]
 > This article applies primarily to unmanaged (or BYOD) devices. Microsoft 365 admins can manage Microsoft 365 installation options instead. To learn more, see the following articles:
 >
-> - [Managed and unmanaged devices](m365bp-managed-unmanaged-devices.md).
+> - [Managed and unmanaged devices](/microsoft-365/admin/security-and-compliance/m365bp-devices-enrollment).
 > - [Manage Microsoft 365 installation options in the Microsoft 365 admin center](/DeployOffice/manage-software-download-settings-office-365).
 
 ## Watch: Install Microsoft 365 Apps
@@ -52,4 +53,4 @@ Here's how users can install their apps:
 
 ## Next step
 
-Set up protection for [unmanaged devices](m365bp-users-protect-unmanaged-devices.md).
+Set up protection for [unmanaged devices](/microsoft-365/admin/security-and-compliance/m365bp-devices-enrollment#more-options-for-mam).

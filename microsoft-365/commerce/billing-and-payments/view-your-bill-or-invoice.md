@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
-- highpri  
+- highpri
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -29,9 +29,10 @@ ms.custom:
 - adminvideo
 - admindeeplinkMAC
 - GAUpdates
+service.tree.id: 95459a4b-434c-4f83-879b-aa5f509fc7fa
 search.appverid: MET150, GEA150
 description: "Learn how to find your invoice or billing statement for a Microsoft business subscription in the Microsoft 365 admin center."
-ms.date: 04/08/2025
+ms.date: 10/07/2025
 ---
 
 # View your invoice in the Microsoft 365 admin center
@@ -118,16 +119,14 @@ You can download your tax receipt in certain jurisdictions from the **Billing** 
 ## Related tasks
 
 - Need to contact support? See [Get support for Microsoft 365 for business](../../admin/get-help-support.md)
-- Need to pay your invoice? See [Payment options for Microsoft business subscriptions](pay-for-your-subscription.md)
+- Need to pay your invoice? See [Pay your Microsoft business invoice by using a credit or debit card](pay-for-your-subscription.md) or [Pay your invoice by using a wire transfer](pay-by-wire-transfer.md).
 - Need to change who your invoice is sent to? See [Manage billing notifications and invoice attachment settings in the Microsoft 365 admin center](manage-billing-notifications.md).
 - Need to add or update a credit card? See [Manage payment methods for Microsoft business accounts](manage-payment-methods.md).
 - Need to cancel your subscription? See [Cancel your subscription in the Microsoft 365 admin center](../subscriptions/cancel-your-subscription.md).
 
 ## Related content
 
-[Understand your invoice for your Microsoft MCA billing account](understand-your-invoice.md) (article)\
-[Understand your invoice for your Microsoft MOSA billing account](understand-your-invoice2.md) (article)\
-[Payment options for your Microsoft business subscription](pay-for-your-subscription.md) (article)\
-[Manage payment methods](manage-payment-methods.md) (article)\
-[Billing information for Microsoft 365 for business in Mexico](mexico-billing-info.md) (article)\
+[Understand your invoice for your Microsoft MCA billing account](understand-your-invoice.md) (article)<br/>
+[Understand your invoice for your Microsoft MOSA billing account](understand-your-invoice2.md) (article)<br/>
+[Billing information for Microsoft 365 for business in Mexico](mexico-billing-info.md) (article)<br/>
 [Minecraft: Education Edition payment options](/education/windows/school-get-minecraft) (article)

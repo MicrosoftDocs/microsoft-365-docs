@@ -3,26 +3,27 @@ title: "Use Cost management in the Microsoft 365 admin center"
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: shrshett, vikdesai
+ms.reviewer: jkinma, ramagane
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-management
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: 
+ms.custom:
 - commerce_billing
 - AdminTemplateSet
 - admindeeplinkMAC
 - GAUpdates
-search.appverid: MET150 
+service.tree.id: 95459a4b-434c-4f83-879b-aa5f509fc7fa
+search.appverid: MET150
 description: "Learn how to use the cost management feature in the Microsoft 365 admin center to view, analyze, and manage costs for your organization."
-ms.date: 07/16/2024
+ms.date: 11/04/2025
 ---
 
 # Use Cost management in the Microsoft 365 admin center

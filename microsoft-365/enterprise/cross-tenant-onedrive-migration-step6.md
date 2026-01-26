@@ -29,8 +29,8 @@ This article is Step 6 in a solution designed to complete a Cross-tenant OneDriv
 - **Step 6: [Start a Cross-tenant OneDrive migration](cross-tenant-onedrive-migration-step6.md)**
 - Step 7: [Post migration steps](cross-tenant-onedrive-migration-step7.md)
 
->[!IMPORTANT]
->Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
 
 Now you're ready to start your OneDrive migration. Before starting any cross-tenant migration, do the following steps.
 
@@ -127,7 +127,7 @@ Example:
 Get-SPOUserAndContentMoveState -PartnerCrossTenantHostURL https://m365x946316-my.sharepoint.com -SourceUserPrincipalName DiegoS@M365x016651.OnMicrosoft.com
 ```
 
-To get the status of the move based on a particular user’s UPN but with more information, use the *-Verbose* parameter.
+To get the status of the move based on a particular user's UPN but with more information, use the *-Verbose* parameter.
 
 Example:
 

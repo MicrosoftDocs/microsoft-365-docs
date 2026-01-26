@@ -17,6 +17,7 @@ ms.collection:
 ms.custom: 
 - M365solutions
 - seo-marvel-jun2020
+- m365-solutions-doc-set
 f1.keywords: NOCSH
 description: Learn how to choose and deploy the right Teams voice solution for your organization.
 ---

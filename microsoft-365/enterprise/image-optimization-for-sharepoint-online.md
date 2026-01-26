@@ -1,6 +1,6 @@
 ---
 title: "Image optimization for SharePoint classic publishing sites"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 07/29/2024

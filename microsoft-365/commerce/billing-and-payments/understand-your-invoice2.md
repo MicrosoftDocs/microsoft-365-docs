@@ -1,7 +1,7 @@
 ---
 title: "Understand your invoice for your Microsoft MOSA billing account"
 f1.keywords:
-- 'UnderstandBillInvoiceM365'
+- UnderstandBillInvoiceM365
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
@@ -11,10 +11,10 @@ ms.topic: how-to
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-management
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
-- highpri 
+- highpri
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -27,9 +27,10 @@ ms.custom:
 - admindeeplinkMAC
 - GAUpdates
 - campaignIDs-batch1
+service.tree.id: 95459a4b-434c-4f83-879b-aa5f509fc7fa
 search.appverid: MET150
 description: "Learn how to interpret the charges on your invoice for your Microsoft business subscription with an MOSA billing account."
-ms.date: 03/13/2025
+ms.date: 10/28/2025
 ---
 
 # Understand your invoice for your Microsoft MOSA billing account
@@ -39,9 +40,6 @@ Check out all of our small business content on [Small business help & learning](
 This article only applies to customers with a Microsoft Online Services Agreement (MOSA) billing account type. If you have a Microsoft Customer Agreement (MCA) billing account type, see [Understand your invoice for your MCA account](understand-your-invoice.md). [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
 
 The invoice for your Microsoft business subscription provides a summary of the charges and instructions for how to pay your bill. You can [view your online invoice](view-your-bill-or-invoice.md) in the Microsoft 365 admin center. You can also download a copy of your invoice in the Portable Document Format (.PDF) to send via email. If you want to receive the invoice .PDF as an attachment in the email notification, see [Receive your organization's invoices as email attachments](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments).
-
-> [!IMPORTANT]
-> As of April 1, 2023, we no longer accept checks as a payment method for subscriptions paid by invoice. Pay by check is no longer available as a payment option, and check payment instructions have been removed from invoices. You can still pay for your invoice by wire transfer. See your invoice for wire transfer payment information. If you're an existing customer who currently pays by check, you have until September 30, 2023 to change to paying by wire transfer, and avoid possible service disruption.
 
 ## Before you begin
 
@@ -182,9 +180,10 @@ If you pay by invoice, you can add or change the purchase order (PO) number for 
 
 ## Related content
 
-[View your invoice in the Microsoft 365 admin center](view-your-bill-or-invoice.md) (article)\
-[Understand your invoice for your Microsoft MCA billing account](understand-your-invoice.md) (article) \
-[Payment options for your Microsoft business subscription](pay-for-your-subscription.md) (article) \
-[Manage payment methods for Microsoft business accounts](manage-payment-methods.md) (article) \
-[Billing information for Microsoft 365 for business in Mexico](mexico-billing-info.md) (article) \
+[View your invoice in the Microsoft 365 admin center](view-your-bill-or-invoice.md) (article)<br/>
+[Understand your invoice for your Microsoft MCA billing account](understand-your-invoice.md) (article)<br/>
+[Pay your Microsoft business invoice by using a credit or debit card](pay-for-your-subscription.md) (article)<br/>
+[Pay your invoice by using a wire transfer](pay-by-wire-transfer.md) (article)<br/>
+[Manage payment methods for Microsoft business accounts](manage-payment-methods.md) (article)<br/>
+[Billing information for Microsoft 365 for business in Mexico](mexico-billing-info.md) (article)<br/>
 [Minecraft: Education Edition payment options](/education/windows/school-get-minecraft) (article)

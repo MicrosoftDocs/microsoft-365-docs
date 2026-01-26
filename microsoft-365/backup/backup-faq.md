@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 04/01/2025
+ms.date: 07/01/2025
 ms.topic: faq
 ms.service: microsoft-365-backup
 ms.custom: backup
@@ -72,9 +72,9 @@ The recovery point objective (RPO) is the maximum amount of time between the mos
 
 - For OneDrive and SharePoint, the RPO for the trailing two weeks is 10 minutes. This means if it's Monday at 8:00 AM, you can go back in time to any 10-minute period up to two weeks in the past. Beyond that, you can go to any one week period of time in past from 2 to 52 weeks in the past.
 
-- For Exchange Online, the RPO is 10 minutes, meaning the most amount of data that can be lost due to a data destruction event is roughly 10 minutes’s worth of data.
+- For Exchange Online, the RPO is 10 minutes, meaning the most amount of data that can be lost due to a data destruction event is roughly 10 minutes’ worth of data.
 
-Let's start with what it doesn't mean: We are *not* taking snapshots every 10 minutes.
+Let's start with what it doesn't mean: We're *not* taking snapshots every 10 minutes.
 
 A backup frequency of 10 minutes (if the item is modified) means that any changes made to the item will be saved as a new version every 10 minutes, regardless of how many changes occur within that 10-minute period. For example, if a ransomware attack encrypts the email item every minute, we'll take six copies in an hour.
 
@@ -92,12 +92,27 @@ If the user has been deleted within the past 30 days, the best option is to rest
 
 For OneDrive, you can restore the OneDrive to the original URL or a new URL. At that time, the OneDrive is in an "orphaned" state. To connect the OneDrive to a user, see [Fix site user ID mismatch in SharePoint or OneDrive](/sharepoint/troubleshoot/sharing-and-permissions/fix-site-user-id-mismatch).
 
-For Exchange, if the user account is permanently deleted, Microsoft 365 Backup retains the inactive mailbox for the duration of the backup policy. To recover the inactive mailbox, follow the guidance at [Recover an inactive mailbox](/purview/recover-an-inactive-mailbox) to convert the inactive mailbox to a new, active mailbox. Once the inactive mailbox is recovered, remove the deleted user from the backup policy and then add the new user to the backup policy to access backups from the recovered mailbox.
+For Exchange, if the user account is permanently deleted, Microsoft 365 Backup retains the inactive mailbox for the duration of the backup policy. To recover the inactive mailbox, follow the guidance at [Recover an inactive mailbox](/purview/recover-an-inactive-mailbox) to convert the inactive mailbox to a new, active mailbox. Once the inactive mailbox is recovered, add the new user to the backup policy to access backups from the recovered mailbox.  The original, now deleted user can then be removed from the backup policy.  Note that only the [Recover an inactive mailbox](/purview/recover-an-inactive-mailbox) process is supported. The [Restore an inactive mailbox](/purview/restore-an-inactive-mailbox) process won't preserve the backup data from the old mailbox. 
 
 #### If I transfer control of the Backup tool from the native first-party Microsoft 365 application to a third-party application built on the Microsoft 365 Backup Storage platform, will I be able to revert control back to the first-party application at a later date?
 
-Currently, you can only transfer control from the first-party Microsoft 365 application to a third-party application. We are actively working on an enhancement to allow transfers from third-party applications back to the first-party application. If you urgently need to transfer control from a third-party application to the first-party application, please file a support ticket.
+Currently, you can only transfer control from the first-party Microsoft 365 application to a third-party application. We're actively working on an enhancement to allow transfers from third-party applications back to the first-party application. If you urgently need to transfer control from a third-party application to the first-party application, please file a support ticket.
 
 <!---
 - For Exchange, a user account will be in a soft-deleted state for 30 days after it's deleted. To restore the user, see [Restore a user in the Microsoft 365 admin center](/microsoft-365/admin/add-users/restore-user). Once you restore the user, you can use the restore feature in Microsoft 365 Backup to restore as usual.
 --->
+#### Can I use PowerShell cmdlets to manage my backups and restore using Microsoft 365 Backup?
+
+Yes, you can. Microsoft 365 Backup supports PowerShell cmdlets. You can find the associated PowerShell cmdlets in the [Microsoft 365 Backup Storage Graph APIs](/graph/api/resources/backuprestoreroot) reference guide.
+#### Can I backup every type of SharePoint site?
+
+No, there are some SharePoint sites which are unsupported.  While most SharePoint templates are supported by Microsoft 365 Backup, there're a handful of legacy template types which aren't supported.  These unsupported templates are:
+
+|Template ID|Template|Template Name|
+| -------- | -------- | -------- |
+| 70|SharePoint Embedded container|CSPCONTAINER#0|
+|6000|Review Center|REVIEWCTR#0|
+|3500|Policy Center|POLICYCTR#0|
+|16|Tenant admin site|TENANTADMIN#0|
+|54|MySite Host|SPSMSITEHOST#0|
+

@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: siruvanti
-ms.date: 02/26/2025
+ms.date: 07/18/2025
 audience: admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -17,7 +17,7 @@ description: Learn about the pay-as-you-go services that are currently available
 
 # Pay-as-you-go services available in Microsoft 365
 
-Microsoft 365 pay-as-you-go services provide a wide range of solutions that let your organization scale usage based on actual needs. This article describes the Microsoft 365 pay-as-you-go services that are currently available.
+Microsoft 365 offers a flexible pay-as-you-go model that allows your organization to use powerful services without committing to full licenses. You only pay for what you use, making it easier to scale services based on actual needs. This article outlines the Microsoft 365 services currently available under the pay-as-you-go model.
 
 ## Microsoft 365 Copilot
 <!---
@@ -27,75 +27,73 @@ Microsoft 365 Copilot is an AI-powered assistant that integrates seamlessly with
 --->
 ### SharePoint agents
 
-SharePoint Agents are AI-powered assistants that help users navigate and interact with SharePoint sites and document libraries. These agents can answer questions, summarize content, and perform specific tasks based on user permissions. Organizations can set up pay-as-you-go billing for SharePoint agents, allowing users to utilize these features without needing a full Copilot license.
+AI-powered SharePoint agents help users interact with SharePoint sites and document libraries. They can answer questions, summarize content, and perform tasks based on user permissions. With pay-as-you-go billing, organizations can enable these features without purchasing full Copilot licenses.
 
 <!---
 ### Agents in Microsoft 365 Copilot Chat
 
-Agents in Microsoft 365 Copilot Chat provide a conversational interface for users to interact with their work data. These agents can answer questions, perform actions, and provide insights based on the data available in the organization's Microsoft Graph and third-party data sources. Pay-as-you-go billing allows organizations to enable these agents and pay based on the number of messages used.
+These AI-powered agents provide a conversational interface that helps users interact with their work data. They can answer questions, perform tasks, and deliver insights using information from Microsoft Graph and third-party data sources. With pay-as-you-go billing, organizations only pay for the number of messages used.
 
 ### Copilot Actions
 
-Copilot Actions are predefined tasks that Copilot can perform on behalf of the user. These actions can include sending emails, updating records, creating support tickets, and more. With pay-as-you-go, organizations can enable Copilot Actions and only pay for the actions performed.
+Copilot Actions are predefined tasks that Copilot can carry out on behalf of users—such as sending emails, updating records, or creating support tickets. This feature helps automate routine work, and with pay-as-you-go billing, you’re only charged for the actions performed.
 --->
-## Microsoft Syntex
-<!---
-Microsoft Syntex uses AI to automate content processing and management. Syntex can classify documents, extract metadata, and apply labels to improve content organization and compliance. Organizations can set up pay-as-you-go billing for Syntex services, allowing them to pay based on actual usage.
---->
+## Document processing
 
 ### Autofill columns
 
-Autofill columns is a feature that automatically populates metadata fields in documents based on their content. This feature helps improve document organization and searchability. Organizations can enable autofill columns on a pay-as-you-go basis.
-
-### Content assembly
-
-Content assembly allows users to create standardized documents from templates by automatically populating fields with relevant data. This feature streamlines document creation and ensures consistency. Pay-as-you-go billing enables organizations to use content assembly and pay based on usage.
+Automatically populate metadata fields in documents based on their content. This improves organization and searchability. Pay only for the documents processed.
 
 ### Document translation
 
-Document translation provides AI-powered translation services for documents. This feature supports multiple languages and helps organizations manage multilingual content more effectively. With pay-as-you-go, organizations can enable document translation and only pay for the translations performed.
+Translate documents into multiple languages using AI. Ideal for managing multilingual content. Charges apply per translation.
 
 ### eSignature
 
-SharePoint eSignature allows users to electronically sign documents, streamlining approval processes and reducing the need for physical signatures. Organizations can set up pay-as-you-go billing for eSignature services, paying only for the signatures used.
-
-### Image tagging
-
-Image tagging uses AI to automatically tag images with relevant keywords, making it easier to organize and search for visual content. Organizations can enable image tagging on a pay-as-you-go basis.
+Enable electronic signatures directly in SharePoint to streamline approvals and reduce paperwork. Pay only for the signatures used.
 
 ### Optical character recognition
 
-Optical character recognition (OCR) converts scanned documents and images into editable and searchable text. This feature helps organizations manage and utilize their document content more effectively. Pay-as-you-go billing allows organizations to use OCR and pay based on the number of documents processed.
+Convert scanned documents and images into searchable, editable text. Charges are based on the number of documents processed.
 
-### Prebuilt document processing
+### Content assembly
 
-Prebuilt document processing provides AI models for processing common document types, such as invoices and receipts. These models extract relevant data and automate workflows. Organizations can set up pay-as-you-go billing for prebuilt document processing and pay based on usage.
+Create standardized documents from templates by autofilling fields with relevant data. This ensures consistency and saves time. Billed per use.
 
-### Structured and freeform document processing
+### Image tagging
 
-Structured and freeform document processing allows users to create custom AI models for processing specific document types. These models can handle both structured forms and unstructured documents. Pay-as-you-go billing enables organizations to use these models and pay based on the number of documents processed.
+Automatically tag images with relevant keywords using AI, making them easier to organize and find. Billed based on usage.
 
 ### Taxonomy tagging
 
-Taxonomy tagging uses AI to apply standardized tags to documents based on a predefined taxonomy. This feature helps improve content organization and compliance. Organizations can use taxonomy tagging on a pay-as-you-go basis.
+Apply standardized tags to documents using AI and a predefined taxonomy. Helps with content organization and compliance. Billed per use.
+
+### Prebuilt document processing
+
+Use ready-made AI models to extract data from common document types like invoices and receipts. Pay-as-you-go billing applies per document.
+
+### Structured and freeform document processing
+
+Create custom AI models to process both structured forms and unstructured documents. Charges are based on the number of documents processed.
 
 ### Unstructured document processing
 
-Unstructured document processing allows users to create AI models for processing unstructured documents, such as contracts and reports. These models extract relevant data and automate workflows. Pay-as-you-go billing enables organizations to use these models and pay based on the number of documents processed.
+Build AI models to extract data from unstructured documents like contracts and reports. Pay only for the documents processed.
 
 ### Video translation
 
-Video translation enables video editors to create translated versions of a video's transcript. Once the transcript has been translated, it becomes accessible to all viewers. The pay-as-you-go billing model allows organizations to use video translation services and pay based on the number of transcripts translated.
+Translate video transcripts to make content accessible in multiple languages. Charges apply per transcript translated.
 
 ## Microsoft 365 Archive
 
-Microsoft 365 Archive offers long-time storage solutions for Microsoft 365 data, helping organizations manage their data retention and compliance requirements. Pay-as-you-go billing allows your organization to use Microsoft 365 Archive and pay based on the amount of data archived.
+Store Microsoft 365 data for long-term retention and compliance. Pay-as-you-go billing is based on the amount of data archived.
 
 ## Microsoft 365 Backup
 
-Microsoft 365 Backup provides comprehensive backup solutions for Microsoft 365 data, including email, documents, and other content. Organizations can set up pay-as-you-go billing for Microsoft 365 Backup and pay based on the amount of data backed up.
+Back up Microsoft 365 data—including emails, documents, and other content—for protection and recovery. Charges are based on the volume of data backed up.
+
 <!---
 ## SharePoint Embedded
 
-SharePoint Embedded is a cloud-based file and document management system that allows app developers to integrate advanced Microsoft 365 features, such as collaboration, compliance, and generative AI, into their applications.
+SharePoint Embedded is a cloud-based file and document management platform designed for app developers. It allows you to integrate Microsoft 365 capabilities—like collaboration, compliance, and generative AI—directly into your applications. Pay-as-you-go billing means you only pay for the storage and services your app consumes.
 --->

@@ -2,20 +2,21 @@
 title: "Create a shared mailbox"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekuako
-manager: scotv
+ms.author: dansimp
+author: dansimp
+manager: dansimp
 ms.date: 09/30/2024
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: high
-ms.collection: 
+ms.collection:
 - Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- operations-pod
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -40,9 +41,6 @@ Create shared mailboxes so a group of people can monitor and send email from a c
 Shared mailboxes include a shared calendar. Your team can use the shared calendar as a place for everyone to enter their appointments. For example, if you have 3 people who do customer visits, all can use the shared calendar to enter the customer visit information.
 
 Before creating a shared mailbox, be sure to read [About shared mailboxes](about-shared-mailboxes.md) for more information.
-
-> [!TIP]
-> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
 ## Create a shared mailbox and add members
   

@@ -2,21 +2,24 @@
 title: "Submit admin-initiated Copilot feedback from the Microsoft 365 admin center"
 f1.keywords:
 - NOCSH
-ms.author: camillepack
-author: camillepack
+ms.author: danbrown
+author: DHB-MSFT
 manager: scotv
 ms.date: 11/01/2024
+ms.update-cycle: 180-days
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
-ms.collection: 
-- scotvorg
+ms.collection:
+- feedback-content
 - m365copilot
 - magic-ai-copilot
+- trust-pod
 description: "Learn how to provide Microsoft 365 Copilot feedback to Microsoft on behalf of your users who encounter issues"
+hideEdit: true
 appliesto:
-  - ✅ Microsoft 365 Copilot
+- ✅ Microsoft 365 Copilot
 ---
 
 # Submit admin-initiated Copilot feedback from the Microsoft 365 admin center
@@ -35,9 +38,12 @@ Before you begin, you must have the following:
 
 - A Microsoft 365 subscription with a Microsoft 365 Copilot license
 
-- Global administrator or AI administrator role to complete the task in this article. For more information, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
+- Global administrator or AI administrator role to complete the task in this article.
 
 - An email address of the user who experienced an issue with Microsoft 365 Copilot.
+
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. This helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role. For more information, see [About administrator roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
 
 ## Steps to provide feedback to Microsoft
 

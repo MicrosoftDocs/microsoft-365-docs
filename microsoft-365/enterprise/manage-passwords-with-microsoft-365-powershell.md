@@ -1,6 +1,6 @@
 ---
 title: "Manage passwords with Microsoft Graph PowerShell"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 03/11/2025

@@ -2,7 +2,7 @@
 title: "Networking roadmap for Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 06/26/2024

@@ -1,17 +1,17 @@
 ---
 title: "Step 1. Configure the Company Portal"
-ms.author: erikre
-author: erikre
-manager: dougeby
+ms.author: nwhite
+author: nicholasswhite
+manager: laurawi
 audience: ITPro
 ms.topic: how-to
 ms.date: 04/21/2025
 description: Step 1. Configure the Company Portal
-ms.service: o365-solutions
+ms.service: m365-planning
 ms.localizationpriority: high
 ms.collection:
 - highpri
-ms.custom:
+ms.custom: m365-solutions-doc-set
 keywords:
 ---
 
@@ -112,7 +112,7 @@ You can allow or block the device category prompt in Intune Company Portal. For 
 
 ### App sources
 
-You can choose which additional app sources will be shown in Company Portal to end users at your organization. You can choose to hide or show Microsoft Entra Enterprise Applications, Office Online Applications, or Configuration Manager Applications. You can find these settings in [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) by selecting **Tenant administration** > **Customization**. For more information, see [App source setting options](/mem/intune/apps/company-portal-app#app-source-setting-options).
+You can choose which additional app sources will be shown in Company Portal to end users at your organization. You can choose to hide or show Microsoft Entra Enterprise Applications, Microsoft 365 Applications, or Configuration Manager Applications. You can find these settings in [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) by selecting **Tenant administration** > **Customization** (where Microsoft 365 is referred to as "Office Online"). For more information, see [App source setting options](/mem/intune/apps/company-portal-app#app-source-setting-options).
 
 ### Remove and reset device actions
 

@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 network connectivity principles
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 04/02/2025
@@ -44,7 +44,7 @@ In this article, you'll learn about:
 ## Microsoft 365 architecture
 <a name="BKMK_Architecture"> </a>
 
-Microsoft 365 is a distributed Software-as-a-Service (SaaS) cloud that provides productivity and collaboration scenarios through a diverse set of micro-services and applications. Examples include Exchange Online, SharePoint Online, Microsoft Teams, Exchange Online Protection, Office in a browser, and many others. While specific Microsoft 365 applications might have their unique features as it applies to customer network and connectivity to the cloud, they all share some key principals, goals, and architecture patterns. These principles and architecture patterns for connectivity are typical for many other SaaS clouds. At the same time, they're different from the typical deployment models of Platform-as-a-Service and Infrastructure-as-a-Service clouds, such as Microsoft Azure.
+Microsoft 365 is a distributed Software-as-a-Service (SaaS) cloud that provides productivity and collaboration scenarios through a diverse set of micro-services and applications. Examples include Exchange Online, SharePoint Online, Microsoft Teams, Office in a browser, and many others. While specific Microsoft 365 applications might have their unique features as it applies to customer network and connectivity to the cloud, they all share some key principals, goals, and architecture patterns. These principles and architecture patterns for connectivity are typical for many other SaaS clouds. At the same time, they're different from the typical deployment models of Platform-as-a-Service and Infrastructure-as-a-Service clouds, such as Microsoft Azure.
 
 One of the most significant architectural features of Microsoft 365 (that is often missed or misinterpreted by network architects) is that it's a truly global distributed service, in the context of how users connect to it. The location of the target Microsoft 365 tenant is important to understand the locality of where customer data is stored within the cloud. However, the user experience with Microsoft 365 doesn't involve connecting directly to disks containing the data. The user experience with Microsoft 365 (including performance, reliability, and other important quality characteristics) involves connectivity through highly distributed service front doors that are scaled out across hundreds of Microsoft locations worldwide. In most cases, the best user experience is achieved by allowing the customer network to route user requests to the closest Microsoft 365 service entry point. This is preferable rather than connecting to Microsoft 365 through an egress point in a central location or region.
   
@@ -140,7 +140,7 @@ For more information on using PAC files to optimize network connectivity on clie
 #### Microsoft 365 security features
 <a name="BKMK_WebSvc"> </a>
 
-Microsoft is transparent about datacenter security, operational security, and risk reduction around Microsoft 365 servers and the network endpoints that they represent. Microsoft 365 built-in security features are available for reducing network security risk, such as Microsoft Purview Data Loss Prevention, antivirus, Multifactor Authentication, Customer Lockbox, Defender for Microsoft 365, Microsoft 365 Threat Intelligence, Microsoft 365 Secure Score, Exchange Online Protection, and Network DDOS Security.
+Microsoft is transparent about datacenter security, operational security, and risk reduction around Microsoft 365 servers and the network endpoints that they represent. Microsoft 365 built-in security features are available for reducing network security risk, such as Microsoft Purview Data Loss Prevention, antivirus, Multifactor Authentication, Customer Lockbox, Defender for Microsoft 365, Microsoft 365 Threat Intelligence, Microsoft 365 Secure Score, [the built-in security features for all cloud mailboxes](/defender-office-365/eop-about), and Network DDOS Security.
 
 For more information on Microsoft datacenter and Global Network security, see the [Microsoft Trust Center](https://www.microsoft.com/trustcenter/security).
   
@@ -169,14 +169,14 @@ Customers with complex network topologies, implementing network optimizations li
 
 When optimizing connectivity to Microsoft 365, certain network configurations may have a negative impact on Microsoft 365 availability, interoperability, performance, and user experience. Microsoft has not tested the following network scenarios with our services, and they are known to cause connectivity issues.
 
-- TLS termination or deep packet inspection of any M365 domains with customer proxies or other types of network devices or services.
+- TLS termination or deep packet inspection of any Microsoft 365 domains with customer proxies or other types of network devices or services.
 - Blocking specific protocols or protocol versions such as QUIC, WebSocket’s, etc. by intermediate network infrastructure or service. 
 - Forcing downgrade or failover of protocols (such as UDP --> TCP, TLS1.3 --> TLS1.2 --> TLS1.1) used between client applications and Microsoft 365 services.
 - Routing connections through network infrastructure applying its own authentication such as proxy authentication.
 
 We recommend that customers avoid using these network techniques to traffic destined to Microsoft 365 domains and bypass these for Microsoft 365 connections.
 
-Microsoft recommends setting up an automated system to download and apply the M365 network endpoint list regularly. Refer to [Change management for Microsoft 365 IP addresses and URLs](managing-office-365-endpoints.md#change-management-for-microsoft-365-ip-addresses-and-urls) for more information. 
+Microsoft recommends setting up an automated system to download and apply the Microsoft 365 network endpoint list regularly. Refer to [Change management for Microsoft 365 IP addresses and URLs](managing-office-365-endpoints.md#change-management-for-microsoft-365-ip-addresses-and-urls) for more information. 
 
 ## Comparing network perimeter security with endpoint security
 <a name="BKMK_SecurityComparison"> </a>

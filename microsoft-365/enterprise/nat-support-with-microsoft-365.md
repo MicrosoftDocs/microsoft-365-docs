@@ -1,6 +1,6 @@
 ---
 title: "NAT support with Office 365"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 06/26/2024

@@ -15,10 +15,11 @@ ms.collection:
 ms.custom:
 - commerce_vl
 - AdminTemplateSet
+service.tree.id: e6e1ea2a-04a0-4f78-bc75-7d45c90eee39
 search.appverid: MET150
 ms.localizationpriority: medium
 description: "Learn how to activate online services obtained via volume licensing."
-ms.date: 04/10/2025
+ms.date: 12/02/2025
 ---
 
 # Activate online services in volume licensing
@@ -27,7 +28,7 @@ This article describes how to activate non-Azure Microsoft online services obtai
 
 ## Before you begin
 
-To view or activate Microsoft online services obtained via volume licensing, you must have one of the following VL roles:
+To view or activate Microsoft online services obtained via VL you must have one of the following VL roles:
 
 - VL Administrator, also known as online admin (OLA)
 - Online Services Manager (OSM)
@@ -46,7 +47,7 @@ Each signed VL agreement has a unique License ID associated with it. Microsoft u
 
 Every organization that subscribes to Microsoft online services must have a Microsoft Entra tenant. For more information, see [Quickstart - Access and create new tenant - Microsoft Entra | Microsoft Learn](/entra/fundamentals/create-new-tenant).
 
-### Global administrator
+### Global Administrator
 
 By default, the person who sets up the Microsoft Entra tenant becomes the Global Administrator and can add other Global Administrators. The Global Administrator assigns subscription licenses to users and administers Microsoft online services in the tenant.
 
@@ -57,7 +58,7 @@ By default, the person who sets up the Microsoft Entra tenant becomes the Global
 
 The Online Services Manager (OSM) is a VL user with permission to view orders for online services. The OSM is the person invited to assign those services to a Microsoft Entra tenant.
 
-When you assign the OSM role to someone who also has the Global Administrator role, you enable them to see what online services were ordered. This view is in addition to their Global Admin view of end user subscription assignment.
+When you assign the OSM role to someone who also has the Global Administrator role, you enable them to see what online services were ordered. This view is in addition to their Global Administrator view of end user subscription assignment.
 
 > [!IMPORTANT]
 > Microsoft Entra tenant roles are separate from VL roles in the Microsoft 365 admin center. By default, Global Administrators don't have VL access or roles. For more information, see [Assign roles to volume licensing users](manage-user-roles-vl.md#understand-volume-licensing-roles).
@@ -82,12 +83,17 @@ Online services ordered via VL are automatically provisioned to an organization'
 - Online services previously ordered on the License ID are already activated.
 - The PCN provided on a renewal contract previously had online services assigned.
 
-## Find the Microsoft Entra tenant your services are activated on
+## Find the Microsoft Entra tenant your services are activated
 
-VL users can see what tenant their License ID contains activated online services by going to the Microsoft 365 admin center > **Billing** > **Your products** > **Volume licensing** > **Contracts** > **View contract details** page.
+VL users can see what tenant their License ID contains activated online services for by going to the admin center.
 
-- If the License ID is activated on a tenant, the tenant domain is displayed.
-- If the License ID isn't activated on a tenant, a message indicates that online services aren't activated.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144" target="_blank">Volume licensing</a> tab.
+2. In the **Contracts** section, select **View contracts**.
+3. On the **Contracts** page, find a License ID, select the three dots (**More actions** button), then select **View contract details**.
+4. On the **Contract details** page, select the **Tenants** tab.
+
+   - If the License ID is activated on a tenant, the tenant domain is displayed.
+   - If the License ID isn't activated on a tenant, a message indicates that online services aren't activated.
 
 ## Invitation to activate an online service profile
 
@@ -149,9 +155,9 @@ This section contains information about why you might not receive an activation 
 
 - The OSM contact information isn't configured to receive emails. For example, user\@contoso.onmicrosoft.com has no email subscription.  
 - The OSM email address is in a public domain like outlook.com or gmail.com, not an organization's email domain.  
-- It's more than 48 hours before the licensed usage period start date. To see the usage date, in the Microsoft 365 admin center, go to the **Billing** > **Your products** > **Volume licensing** > **Contracts** > **View order details** page.
-- Your Microsoft partner or seller hasn't yet placed an order. To check the order status, in the Microsoft 365 admin center, go to **Billing** > **Your products** > **Volume licensing** > **Contracts** > **View Orders** or **View license summary**.
-- Your OSM hasn't yet placed a License Reservation. To check reservations, in the Microsoft 365 admin center, go to **Billing** > **Your products** > **Volume licensing** > **View reservations**.
+- It's more than 48 hours before the licensed usage period start date. To see the usage date, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2297440" target="_blank">Contracts</a> > **View order details** page.
+- Your Microsoft partner or seller hasn't yet placed an order. To check the order status, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2297440" target="_blank">Contracts</a> page. From the three dots (**More actions** button), select either **View Orders** or **View license summary**.
+- Your OSM hasn't yet placed a License Reservation. To check reservations, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2297441" target="_blank">View reservations</a> page.
 
 ### Online services were automatically assigned
 
@@ -163,10 +169,10 @@ This section contains information about why you might not receive an activation 
 After online services obtained via VL are activated on your organization's Microsoft Entra tenant, the Global Administrator must assign the newly purchased licenses to individual users. OSMs without Global Administrator permission must inform the Global Administrator that newly purchased services are now available and can be assigned.  
 
 > [!NOTE]
-> License assignment permissions are separate from VL permissions and are managed on different pages in the Microsoft 365 admin center.
+> License assignment permissions are separate from VL permissions and are managed on different pages in the admin center.
 
 - VL users can view VL orders or license reservations in the **Billing** > **Your products** > **Volume licensing** area.
-- Licenses are assigned to individual users by Global Administrators or Billing Administrators on the  **Billing** > **Licenses** page. For more information, see [Assign or unassign licenses for users in the Microsoft 365 admin center](../../admin/manage/assign-licenses-to-users.md).
+- Licenses are assigned to individual users by Global Administrators or Billing Administrators on the  **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page. For more information, see [Assign or unassign licenses for users in the Microsoft 365 admin center](../../admin/manage/assign-licenses-to-users.md).
 
 ### Subscription licenses aren't available to Global Administrators to assign
 
@@ -174,21 +180,25 @@ The following list contains some common reasons why you might not see licenses a
 
 - It can take up to 24 hours from the start of the licensed usage date on the order or license reservation for services to become available.
 - Add-on subscriptions don't display if they aren't ordered on the same License ID as the base subscription. To resolve this scenario, contact your Microsoft partner or seller.
-- There are subscriptions on the existing account which aren't compatible with the subscriptions you now want to activate. For assistance, [contact volume licensing support](/licensing/contact-us).
-- The licenses were activated on the wrong Microsoft Entra tenant account. For assistance, [contact volume licensing support](/licensing/contact-us).
+- There are subscriptions on the existing account which aren't compatible with the subscriptions you now want to activate. For assistance, [contact volume licensing support](contact-vl-support.md).
+- The licenses were activated on the wrong Microsoft Entra tenant account. For assistance, [contact volume licensing support](contact-vl-support.md).
 - The service isn't available in the location where the Microsoft Entra ID account is set up. To resolve this scenario, contact your Microsoft partner or seller.
 
 ## Renew online services via volume licensing
 
 This section contains information about what happens when you renew online services.
 
-### Activating services after volume licensing renewal
+### Activate services after volume licensing renewal
 
 For most renewals, online services are automatically assigned to the Microsoft Entra tenant, and no service activation email is sent.  
 
 Auto assignments happen when your Microsoft partner or seller uses the same Public Customer Number (PCN) on your renewal contracts. If a different PCN was used, auto assignment isn't possible, and a service activation email is sent to the OSM.
 
-VL admins can verify the PCN on a particular licensing ID by going to Microsoft 365 admin center > **Your products** > **Volume licensing** > **Contracts** > **View contract details**.
+VL Administrators can verify the PCN on a particular License ID by using the following steps:
+
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">**Your products**</a> page, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144" target="_blank">Volume licensing</a> tab.
+2. In the **Contracts** section, select **View contracts**.
+3. On the <a href="https://go.microsoft.com/fwlink/p/?linkid=2297440" target="_blank">Contracts</a> page, find a License ID, select the three dots (**More actions**), then select **View contract details**.
 
 ### Assign services to users when licenses are renewed
 
@@ -201,7 +211,7 @@ After a VL contract is renewed, the Global Administrator must sign in to the adm
 
 The renewal process can cause temporary discrepancies between the number of licenses ordered and the number of licenses available to assign in the Microsoft 365 admin center.
 
-When online subscriptions ordered under one License ID are renewed on another License ID, subscriptions ordered on the original License ID display with a status of **In Grace**, while the subscriptions ordered under the new license ID display with a status of **Active**. Only licenses with the **Active** status are relevant to your licensed quantity.
+When online subscriptions ordered under one License ID are renewed on another License ID, subscriptions ordered on the original License ID display with a status of **In Grace**, while the subscriptions ordered under the new License ID display with a status of **Active**. Only licenses with the **Active** status are relevant to your licensed quantity.
 
 After a certain period, subscriptions with the **In Grace** status are automatically removed from the account and the data is deleted. For detailed information about status durations, see "Lifecycle status durations for volume licensing customers" in [Lifecycle status durations for volume licensing customers](../subscriptions/what-if-my-subscription-expires.md#lifecycle-status-durations-for-volume-licensing-customers).
 
@@ -223,7 +233,7 @@ To determine if the necessary VL agreement structure is in place, contact your M
 
 If you clicked an activation link in the service activation email while signed in to an existing Microsoft service, the licenses might be activated on the wrong tenant. This activation can also happen if you didn't realize the licenses would meet the criteria for automatic licenses assignment.
 
-Global Administrators can't move licenses from one Microsoft Entra tenant to another. [Contact support](/licensing/contact-us) to get help with a *tenant remap*. A tenant remap involves moving all subscriptions and License IDs associated with a PCN to a new organizational account that you provide. When a tenant remap occurs, no user data is migrated. Global Administrators might have to complete subscription management tasks after the licenses become available on the correct tenant.
+Global Administrators can't move licenses from one Microsoft Entra tenant to another. [Contact volume licensing support](contact-vl-support.md) to get help with a *tenant remap*. A tenant remap involves moving all subscriptions and License IDs associated with a PCN to a new organizational account that you provide. When a tenant remap occurs, no user data is migrated. Global Administrators might have to complete subscription management tasks after the licenses become available on the correct tenant.
 
 To ensure that support can quickly solve the incorrect activation issue, when you open the case, you must provide the following information:
 
@@ -234,7 +244,7 @@ To ensure that support can quickly solve the incorrect activation issue, when yo
 
 ## Contact volume licensing support
 
-Submit a case in the admin center > <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Help & Support</a>. If you can't access the admin center, see [Contacting volume licensing support](/licensing/contact-us).
+Submit a case in the admin center > <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Help & Support</a>. If you can't access the admin center, see [Contact volume licensing support](contact-vl-support.md).
 
 ## Other resources
 

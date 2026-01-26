@@ -1,6 +1,6 @@
 ---
 title: "Delay loading images and JavaScript in SharePoint"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 08/01/2024

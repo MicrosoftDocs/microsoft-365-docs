@@ -14,6 +14,7 @@ ms.collection:
 - scotvorg
 - Adm_O365
 - Adm_TOC
+- operations-pod
 search.appverid:
 - BCS160
 - MET150

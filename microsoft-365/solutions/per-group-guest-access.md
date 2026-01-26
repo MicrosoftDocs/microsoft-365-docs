@@ -1,22 +1,23 @@
 ---
 title: "Prevent guests from being added to a specific group"
 ms.reviewer: rahulnayak
-ms.date: 12/02/2023
-author: DaniEASmith
-ms.author: danismith
+ms.date: 09/17/2025
+author: officedocspr5
+ms.author: odocspr
 manager: jtremper
 audience: Admin
 ms.topic: how-to
-ms.service: o365-solutions
+ms.service: m365-planning
 ms.localizationpriority: medium
 ms.collection: 
 - highpri
 - M365-collaboration
 - m365solution-collabgovernance
 ms.custom:
-  - M365solutions
-  - has-azure-ad-ps-ref
-  - azure-ad-ref-level-one-done
+- M365solutions
+- m365-solutions-doc-set
+- has-azure-ad-ps-ref
+- azure-ad-ref-level-one-done
 f1.keywords: NOCSH
 recommendations: false
 description: "Learn how to prevent guests from being added to a specific group"
@@ -39,7 +40,8 @@ You must use the `beta` version of [Microsoft Graph PowerShell](/powershell/micr
 - If you've already installed the `beta` version, run `Update-Module Microsoft.Graph.Beta` to ensure it's the latest version of this module.
 
 > [!NOTE]
-> You must have global admin rights to run these commands.
+> You must have the Global Administrator role assigned in order to run these commands.
+> Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role. To learn more, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
 
 Run the following script, changing *\<GroupName\>* to the name of the group where you want to block guest access.
 
@@ -51,13 +53,13 @@ $templateId = (Get-MgBetaDirectorySettingTemplate | ? {$_.displayname -eq "group
 $groupID = (Get-MgBetaGroup -Filter "DisplayName eq '$GroupName'").Id
 
 $params = @{
-	templateId = "$templateId"
-	values = @(
-		@{
-			name = "AllowToAddGuests"
-			value = "$false"
-		}
-	)
+    templateId = "$templateId"
+    values = @(
+        @{
+            name = "AllowToAddGuests"
+            value = "$false"
+        }
+    )
 }
 
 New-MgBetaGroupSetting -GroupId $groupID -BodyParameter $params
@@ -82,13 +84,13 @@ $templateId = (Get-MgBetaDirectorySettingTemplate | ? {$_.displayname -eq "group
 $groupID = (Get-MgBetaGroup -Filter "DisplayName eq '$GroupName'").Id
 
 $params = @{
-	templateId = "$templateId"
-	values = @(
-		@{
-			name = "AllowToAddGuests"
-			value = $true
-		}
-	)
+    templateId = "$templateId"
+    values = @(
+        @{
+            name = "AllowToAddGuests"
+            value = $true
+        }
+    )
 }
 
 $DirectorySettingId = (Invoke-GraphRequest -Uri https://graph.microsoft.com/beta/Groups/$groupId/settings -Method GET).value.id
@@ -118,7 +120,7 @@ By default, guests aren't visible in the Exchange Global Address List. Use the s
    Update-MgBetaUser -UserId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressList -GivenName 'Megan' -Surname 'Bowen' -DisplayName 'Megan Bowen' -mobilePhone '555-555-5555'
    ```
 
-## Related topics
+## Related articles
 
 [Collaboration governance planning recommendations](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 

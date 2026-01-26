@@ -7,15 +7,15 @@ metadata:
   title: Microsoft 365 solution and architecture center # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: This help center will enable you to learn about IT training and how to design the solution and architecture that is right for your organization. # Required; article description that is displayed in search results. < 160 chars.
   ms.date: 07/25/2023
-  ms.service: o365-solutions
+  ms.service: m365-planning
  #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
   ms.collection: 
   - highpri
   - m365-security-compliance
-  author: samanro #Required; your GitHub user alias, with correct capitalization.
-  ms.author: samanro #Required; microsoft alias of author; optional team alias.
-  manager: bcarter
+  author: dansimp #Required; your GitHub user alias, with correct capitalization.
+  ms.author: dansimp #Required; microsoft alias of author; optional team alias.
+  manager: dansimp
   audience: ITPro
   ms.localizationpriority: high
 
@@ -38,8 +38,8 @@ landingContent:
             url: ransomware-protection-microsoft-365.md
           - text: Manage data privacy and data protection
             url: data-privacy-protection.md
-          - text: Microsoft 365 for smaller businesses and campaigns
-            url: ../business-premium/m365bp-overview.md
+          - text: Security in Microsoft 365 for smaller businesses and campaigns
+            url: /microsoft-365/admin/security-and-compliance/m365bp-security-benefits
 
   # Card
   - title: Architecture illustrations and design principles

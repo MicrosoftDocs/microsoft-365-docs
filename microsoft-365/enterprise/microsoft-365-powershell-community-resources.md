@@ -1,6 +1,6 @@
 ---
 title: "Microsoft 365 community resources for PowerShell"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 07/31/2024

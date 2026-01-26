@@ -1,6 +1,6 @@
 ---
 title: Implementing VPN split tunneling for Microsoft 365
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 03/21/2025
@@ -163,6 +163,5 @@ This section provides links to detailed guides for implementing split tunneling 
 
 [Enhancing VPN performance at Microsoft: using Windows 10 VPN profiles to allow auto-on connections](https://www.microsoft.com/itshowcase/enhancing-remote-access-in-windows-10-with-an-automatic-vpn-profile)
 
-[Running on VPN: How Microsoft is keeping its remote workforce connected](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)
 
 [Microsoft global network](/azure/networking/microsoft-global-network)

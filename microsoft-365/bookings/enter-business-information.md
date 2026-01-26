@@ -12,6 +12,7 @@ ms.collection:
 - Tier1
 - scotvorg
 - essentials-manage
+- operations-pod
 description: "Follow these instructions to create your About Us page with business name, address, phone number, website URL, logo, and business hours in Microsoft Bookings."
 ---
 

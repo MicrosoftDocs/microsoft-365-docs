@@ -1,6 +1,6 @@
 ---
 title: "Prepare a nonroutable domain for directory synchronization"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 10/07/2024

@@ -1,17 +1,17 @@
 ---
 title: "Step 3. Configure Microsoft 365"
-ms.author: erikre
-author: erikre
-manager: dougeby
+ms.author: nwhite
+author: nicholasswhite
+manager: laurawi
 audience: ITPro
 ms.topic: how-to
 ms.date: 04/21/2025
 description: Step 3. Configure Microsoft 365.
-ms.service: o365-solutions
+ms.service: m365-planning
 ms.localizationpriority: high
 ms.collection:
 - highpri
-ms.custom:
+ms.custom: m365-solutions-doc-set
 keywords:
 ---
 <!--
@@ -21,7 +21,7 @@ https://learn.microsoft.com/deployoffice/deploy-microsoft-365-apps-cloud
 
 # Step 3. Configure Microsoft 365 Apps
 
-[Microsoft 365 Apps in the enterprise](/deployoffice/about-microsoft-365-apps) is a suite of Microsoft Office apps that include Microsoft Word, Excel, PowerPoint, Teams, and more. Microsoft Intune supports adding Microsoft 365 Apps on Windows, iOS/iPadOS, macOS, and Android platforms. Microsoft Intune is the recommended way to assign M365 Apps to the devices and users at your organization. You commonly add M365 Apps to Intune as a group, but you can also add individual Microsoft 365 (M365) store apps for Windows, iOS/iPadOS, and Android.
+[Microsoft 365 Apps in the enterprise](/deployoffice/about-microsoft-365-apps) is a suite of Microsoft Office apps that include Microsoft Word, Excel, PowerPoint, Teams, and more. Microsoft Intune supports adding Microsoft 365 Apps on Windows, iOS/iPadOS, macOS, and Android platforms. Microsoft Intune is the recommended way to assign Microsoft 365 Apps to the devices and users at your organization. You commonly add Microsoft 365 Apps to Intune as a group, but you can also add individual Microsoft 365 store apps for Windows, iOS/iPadOS, and Android.
 
 > [!NOTE]
 > App configuration policies apply to iOS/iPadOS and Android platforms. However certain apps, such as Microsoft 365 apps, have configuration options available when adding the apps to Intune.
@@ -88,7 +88,7 @@ Microsoft 365 (Office) for iOS/iPadOS supports the following configuration setti
 | Configuration   action | Description | Keys |
 |---|---|---|
 | [Manage   the creation of Sticky   Notes](/mem/intune/apps/manage-microsoft-office#manage-the-creation-of-sticky-notes) | Enable or disable the creation   of Stick Notes for work or school accounts. | com.microsoft.office.NotesCreationEnabled |
-| [Set   add-ins   preference](/mem/intune/apps/manage-microsoft-office#set-add-ins-preference) | Enable or disable office add-in   platform and/or the Office store portion of the platform. | com.microsoft.office.OfficeWebAddinDisableAllCatalogs<br>com.microsoft.office.OfficeWebAddinDisableOMEXCatalog |
+| [Set   add-ins   preference](/mem/intune/apps/manage-microsoft-office#set-add-ins-preference) | Enable or disable office add-in   platform and/or the Microsoft Marketplace portion of the platform. | com.microsoft.office.OfficeWebAddinDisableAllCatalogs<br>com.microsoft.office.OfficeWebAddinDisableOMEXCatalog |
 | [Manage   Teams apps running on   Office](/mem/intune/apps/manage-microsoft-office#manage-teams-apps-running-on-office-for-ios-and-android) | Enable or disable Teams apps on   Office. | com.microsoft.office.officemobile.TeamsApps.IsAllowed |
 | [Microsoft   365 Feed for iOS and   Android](/mem/intune/apps/manage-microsoft-office#enable-or-disable-microsoft-365-feed-for-ios-and-android) | Enable or disable the Microsoft   365 Feed. | com.microsoft.office.officemobile.Feed.IsAllowed |
 | [Copilot with commercial data protection](/mem/intune/apps/manage-microsoft-office#copilot-with-commercial-data-protection) | Enable or disable Copilot in Microsoft 365 app by configuring the following setting in the Intune admin center. | com.microsoft.office.officemobile.BingChatEnterprise.IsAllowed |
@@ -113,10 +113,10 @@ Microsoft 365 (Office) for Android supports the following configuration settings
 | Configuration   action | Description | Keys |
 |---|---|---|
 | [Manage   the creation of Sticky   Notes](/mem/intune/apps/manage-microsoft-office#manage-the-creation-of-sticky-notes) | Enable or disable the creation   of Stick Notes for work or school accounts. | com.microsoft.office.NotesCreationEnabled |
-| [Set   add-ins   preference](/mem/intune/apps/manage-microsoft-office#set-add-ins-preference) | Enable or disable office add-in   platform and/or the Office store portion of the platform. | com.microsoft.office.OfficeWebAddinDisableAllCatalogs<br>com.microsoft.office.OfficeWebAddinDisableOMEXCatalog |
+| [Set   add-ins   preference](/mem/intune/apps/manage-microsoft-office#set-add-ins-preference) | Enable or disable office add-in   platform and/or the Microsoft Marketplace portion of the platform. | com.microsoft.office.OfficeWebAddinDisableAllCatalogs<br>com.microsoft.office.OfficeWebAddinDisableOMEXCatalog |
 | [Manage   Teams apps running on   Office](/mem/intune/apps/manage-microsoft-office#manage-teams-apps-running-on-office-for-ios-and-android) | Enable or disable Teams apps on   Office. | com.microsoft.office.officemobile.TeamsApps.IsAllowed |
 | [Microsoft   365 Feed for iOS and   Android](/mem/intune/apps/manage-microsoft-office#enable-or-disable-microsoft-365-feed-for-ios-and-android) | Enable or disable the Microsoft   365 Feed. | com.microsoft.office.officemobile.Feed.IsAllowed |
-| [Data protection settings in M365 for Android](/mem/intune/apps/manage-microsoft-office#data-protection-settings-in-microsoft-365-office) | Enable or disable offline caching when **Save As to Local Storage** is blocked by the app protection policy. | com.microsoft.intune.mam.IntuneMAMOnly.AllowOfflineCachingWhenSaveAsBlocked |
+| [Data protection settings in Microsoft 365 for Android](/mem/intune/apps/manage-microsoft-office#data-protection-settings-in-microsoft-365-office) | Enable or disable offline caching when **Save As to Local Storage** is blocked by the app protection policy. | com.microsoft.intune.mam.IntuneMAMOnly.AllowOfflineCachingWhenSaveAsBlocked |
 | [Copilot with commercial data protection](/mem/intune/apps/manage-microsoft-office#copilot-with-commercial-data-protection) | Enable or disable Copilot in Microsoft 365 app by configuring the following setting in the Intune admin center. | com.microsoft.office.officemobile.BingChatEnterprise.IsAllowed |
 
 You can use the [configuration designer](/mem/intune/apps/app-configuration-policies-use-ios#use-configuration-designer) to add configuration settings for iOS app configuration policies.

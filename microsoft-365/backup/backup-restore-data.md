@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 03/11/2025
+ms.date: 07/16/2025
 ms.topic: how-to
 ms.service: microsoft-365-backup
 ms.custom: backup
@@ -24,6 +24,15 @@ As part of restoring data from backup, admin needs to choose a *restore point* m
 
 Currently, you can restore OneDrive accounts, SharePoint sites, and Exchange mailbox content from specific prior points in time from the backups.
 
+> [!IMPORTANT]
+> Granular restore is available in preview for SharePoint sites and OneDrive accounts. In addition to being able to restore the entire site or account, Microsoft 365 Backup admins can now restore files and folders by browsing and searching a restore point within protected sites and accounts. 
+
+</br>
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=c9a4ced2-7ce3-4bc9-b42f-876b05497e1b]
+
+</br>
+
 ## Restore point frequency
 
 The restore point frequency, also known as the [recovery point objective](backup-faq.md#what-is-the-service-recovery-point-objective) (RPO), defines the maximum amount of time during which data is lost after an attack. Stated differently, it’s the time between the most recent backup of the healthy state of data and the time of the attack. The RPOs for each of the protected services are summarized in the following table.
@@ -33,14 +42,27 @@ The restore point frequency, also known as the [recovery point objective](backup
 |Full OneDrive account and full SharePoint site restore    |10 minutes     |One week     |
 |Exchange Online   |10 minutes         |10 minutes         |
 
+> [!NOTE]
+> You can also use PowerShell cmdlets to perform these operations by following these steps:
+> 1. Go to the [Microsoft 365 Backup Storage Graph APIs](/graph/api/backuprestoreroot-post-onedriveforbusinessrestoresessions) documentation for the specific action you want to perform—for example, restoring data for Onedrive.
+> 2. Scroll to the **Example request** section and select the **PowerShell** tab.
+> 3. Install the Microsoft.Graph.BackupRestore module as shown in the example.
+> 4. Run the provided PowerShell command in an Admin PowerShell session to execute the desired action.
+
 ## Restore data from backup for OneDrive, SharePoint, and Exchange
 
 Select the **OneDrive**, **SharePoint**, or **Exchange** tab for steps to restore data from backup for that product.
 
 # [OneDrive](#tab/onedrive)
 
+### Option 1: Full OneDrive account restore
+
 > [!NOTE]
 > We recommend choosing an express restore point for full account or site restores, as it provides the fastest restore experience. Express restore is currently only relevant for SharePoint and OneDrive.
+
+> [!NOTE]
+> For granular file and folder restore, go to **Option 2: Selected content only** below
+
 
 Follow these steps to restore data backed up for OneDrive.
 
@@ -88,57 +110,112 @@ Follow these steps to restore data backed up for OneDrive.
 
     ![Screenshot showing the Review and finish page for OneDrive.](../media/m365-backup/backup-onedrive-review-finish.png)
 
+### Option 2: Selected content only (preview)
+
+
+Use this option to perform a restore of only selected files and folders from a protected OneDrive account's restore point. In the Microsoft 365 admin center, on the **Microsoft 365 Backup** page, in the **OneDrive** section, select **Restore**.  In this flow, the **Restore specific files or folders** option gives Microsoft 365 Backup admins the capability to restore a subset of the account's files and folders from a specific restore point. 
+
+![Screenshot that shows the granular restore step selection.](media/backup-restore-data/granular-restore-step-selection.png)
+
+1. Start by selecting the protected OneDrive account you wish to restore from the list of backed up OneDrive accounts and then select **Next**.
+
+2. On the next page, select the date from which you want to restore files and folders. If no restore point is available for the selected date, you will be prompted to confirm selection of the nearest restore point. 
+
+3. In the **Content** section, you may be prompted to select the subsite and document library you wish to browse. If there are multiple document libraries to choose from, then you can utilize the **Search** box to identify the desired document library.
+
+4. In the **Select files & folders** section, you will be able to traverse the folder hierarchy until you reach the folder from which you wish to restore. Clicking on the folder's title will enter that folder, while checking the checkbox will select it for restore.  
+
+   ![Screenshot that shows the GR selection step.](media/backup-restore-data/gr-selection-step.png)
+   
+   The search bar, which is visible only when you are at the root of the document library, can be used to find any matching files or folders within that document library.
+   
+   ![Screenshot that shows the GR search step.](media/backup-restore-data/gr-search.png)
+   
+   > [!NOTE]
+   > You can only restore files and folders selected from a single folder in the hierarchy. Browsing to other folders will clear your selected items.
+   
+5. Once you have selected your desired files and folders, click **Next** to move to the review step before restoring.
+6. On the **Review and Finish** page, review and finish all your choices. If everything looks as you want it, select **Start restoration**.
+
 # [SharePoint](#tab/sharepoint)
 
+### Option 1: Full SharePoint site restore
 > [!NOTE]
 > We recommend choosing an express restore point for full account or site restores, as it provides the fastest restore experience. Express restore is currently only relevant for SharePoint and OneDrive.
+
+> [!NOTE]
+> For granular file and folder restore, go to **Option 2: Selected content only** below
 
 Follow these steps to restore data backed up for SharePoint.
 
 1. In the Microsoft 365 admin center, on the **Microsoft 365 Backup** page, in the **SharePoint** section, select **Restore**.
 
-2. On the **Select type of content** page, you see **SharePoint site content** preselected. Select **Next**.
+1. On the **Select type of content** page, you see **SharePoint site content** preselected. Select **Next**.
 
     ![Screenshot showing the Select type of content page with SharePoint site content selected.](../media/m365-backup/backup-sharepoint-select-type.png)
+   
+1. From the list of backed up SharePoint sites, select the sites to restore, and then select **Next**.
 
-3. From the list of backed up SharePoint sites, select the sites to restore, and then select **Next**.
-
-4. On the **Select the date and time** page, select the date and time from which you want to restore the content.
+1. On the **Select the date and time** page, select the date and time from which you want to restore the content.
 
     ![Screenshot showing the Select the date and time page for SharePoint.](../media/m365-backup/backup-sharepoint-select-date-time.png)
-
+   
     Choose a recommended restore point from **Select a faster restore point**, which provides a faster restore compared to standard restore points. We recommend choosing a fast restore point because it can restore faster for single site restores, especially smaller ones (on the order of 10 to 120 minutes on average).
-
+   
     ![Screenshot showing the Select a faster restore point option for SharePoint.](../media/m365-backup/backup-sharepoint-select-faster-restore.png)
-
+   
     Backup restores the closest backed up content *before* the specified date and time. Select **Next**.
-
+   
     For example, assume backup is taken October 2, 2024, 8:00 AM and October 2, 2024, 10:00 AM PST. If you select date and time as October 2, 2024, 9:00 AM PST, Microsoft 365 Backup will restore the site and its content to the state present on October 2, 2024, 8:00 AM PST.
-
-5. On the **Confirm restore points** page, you see a list of available express restore points that restore with better performance than nonexpress restore points. We highly recommend that you choose an express restore point all else equal.
+   
+1. On the **Confirm restore points** page, you see a list of available express restore points that restore with better performance than nonexpress restore points. We highly recommend that you choose an express restore point all else equal.
 
     ![Screenshot showing the Confirm restore points page for SharePoint.](../media/m365-backup/backup-sharepoint-confirm-restore.png)
-
-6. Confirm the restore point in time to which the data will be restored from backup. If the restore point is correct, select **Next**.
+   
+1. Confirm the restore point in time to which the data will be restored from backup. If the restore point is correct, select **Next**.
 
     Restoring a SharePoint site to a prior point in time, if restored to the same URL, overwrites the SharePoint-scoped metadata and the content of the SharePoint site to match the exact state at the prior point in time. If restored to a new URL, the content and SharePoint-scoped metadata will be restored to that prior point in time in the new URL.
-
-7. On the **Select another backup** panel, choose another backup for the site selected, if needed.
+   
+1. On the **Select another backup** panel, choose another backup for the site selected, if needed.
 
     ![Screenshot showing the Select another backup panel for SharePoint.](../media/m365-backup/backup-sharepoint-select-another-backup.png)
-
-8. On the **Choose destination** page, selected SharePoint sites can be restored by choosing  either the **Replace sites with backups** or **Create new sites from backups** option.
+   
+1. On the **Choose destination** page, selected SharePoint sites can be restored by choosing  either the **Replace sites with backups** or **Create new sites from backups** option.
 
     ![Screenshot showing the Select destination page and options for SharePoint.](../media/m365-backup/backup-sharepoint-set-destination.png)
-
+   
     a. **Replace sites with backups**. The entire original site is replaced by the backed-up version chosen based on the restore point. File and folder permissions and all metadata states are also reverted to the selected date and time.
-
+   
     b. **Create new sites from backups**. The entire site is restored to a new SharePoint site. You can then copy or move data into the original site or a different site to create a roll-forward type of restore and avoid overwriting currently healthy data.<br><br>When you restore using this option, the new site URL has an "R" followed by a number concatenated to the end. For example, if the original URL was `https://contoso.sharepoint.com/sites/originalSite` the restored site could be `https://contoso.sharepoint.com/sites/originalSiteR0`. The number at the end increments to avoid URL name conflicts up to 1,000 total restores. After that you should delete some of those new URLs to clear namespace for future new-URL restores.
-
-9. On the **Review and Finish** page, review and finish your choices. If everything looks as you want it, select **Restore sites**.
+   
+1. On the **Review and Finish** page, review and finish your choices. If everything looks as you want it, select **Restore sites**.
 
     ![Screenshot showing the Review and finish page for SharePoint.](../media/m365-backup/backup-sharepoint-review-finish.png)
-  
+   
+### Option 2: Selected content only (preview)
+
+Use this option to perform a restore of only selected files and folders from a protected SharePoint site's restore point. In the Microsoft 365 admin center, on the **Microsoft 365 Backup** page, in the **SharePoint** section, select **Restore**. In this flow, the **Restore specific files or folders** option gives Microsoft 365 Backup admins the capability to restore a subset of the site's files and folders from a specific restore point.
+
+![Screenshot that shows the granular restore step selection.](media/backup-restore-data/granular-restore-step-selection.png)
+
+1. Start by selecting the protected SharePoint site you wish to restore from the list of backed up SharePoint sites and then select **Next**.
+
+2. On the next page, select the date from which you want to restore files and folders. If no restore point is available for the selected date, you will be prompted to confirm selection of the nearest restore point.
+
+3. In the **Content** section, you may be prompted to select the subsite and document library you wish to browse. If there are multiple document libraries to choose from, then you can utilize the **Search** box to identify the desired document library.
+
+4. In the **Select files & folders** section, you will be able to traverse the folder hierarchy until you reach the folder from which you wish to restore. Clicking on the folder's title will enter that folder, while checking the checkbox will select it for restore.
+
+   ![Screenshot that shows the GR selection step.](media/backup-restore-data/gr-selection-step.png)
+   
+   The search bar, which is visible only when you are at the root of the document library, can be used to find any matching files or folders within that document library.
+   ![Screenshot that shows the GR search step.](media/backup-restore-data/gr-search.png)
+
+
+
+5. Once you have selected your desired files and folders, click **Next** to move to the review step before restoring.
+6. On the **Review and Finish** page, review and finish all your choices. If everything looks as you want it, select **Start restoration**.
+
 # [Exchange](#tab/exchange)
 
 > [!NOTE]
@@ -239,7 +316,6 @@ Microsoft 365 Backup supports the backup and restoration of any site and user ac
 > After a multi-geo move, a OneDrive account and SharePoint site will only be able to restore to the weekly restore points until an enhancement is deployed (enhancement coming soon).
 
 ## Considerations when using restore
-
 - OneDrive and Sharepoint
 
     - Site search is case-sensitive and is a prefix-type search.
@@ -250,8 +326,10 @@ Microsoft 365 Backup supports the backup and restoration of any site and user ac
 
     - A OneDrive account or SharePoint site that is under the strict SEC 17a-4(f) hold policy will fail any in-place restores so as to honor that immutability promise. For sites under that type of hold, you have to restore to a new URL or remove the hold. Any other type of preservation hold that doesn't have a strict admin lockout allows an in-place restore. Restoring these types of sites as the preservation hold library will be reverted to the prior point in time. A new URL restore is recommended for that type of site as the cleanest option.
  
-    - OneDrive accounts and SharePoint sites that undergo the following types of changes won't be undoable via restore: tenant rename, tenant move, and site URL change.
- 
+  - OneDrive accounts and SharePoint sites that undergo the following types of changes won't be undoable via restore: tenant rename, tenant move, and site URL change.
+    
+  - SharePoint sites that utilize Term Store term sets will restore, but the terms will not restore to their previous states.  Terms will retain their current state when the site itself is restored by Microsoft 365 Backup if the site is restored to the same URL.  If the site is restored to a new URL, the term store will not be copied to the new location. 
+  
     - OneDrive accounts and SharePoint sites being restored to a new URL have a read-only lock on that new URL. The [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) can download documents or remove the read-only lock manually.
 
         [!INCLUDE [global-administrator-note](../includes/global-administrator-note.md)]
@@ -269,9 +347,11 @@ Microsoft 365 Backup supports the backup and restoration of any site and user ac
     - When choosing to "Replace mailbox items with backups," items are restored to the original location in the user's Inbox.  The only exception to this is if an item was edited while in the Deleted Items folder, as this creates a new version of an item where its original location is the Deleted Items folder.
       
     - If the parent folder of an item has been deleted, the item will be restored to a newly created folder named *Recovered Items YYYY-MM-DD, HH:MM*.
+      
+    - Mailbox items can only be restored to the current mailbox.  They cannot be restored to another mailbox.
  
 - All
-
+    - Restore session history is retained for 366 days.
     - Abusive restore actions aren't permitted. You should limit restores for testing purposes to no more than twice a month per protection unit. Restores for real recovery purposes aren't limited.
 
     - The restore point frequency dictates the points in time from which you can recover a prior state of your data. Restore points start being generated when you create the backup policy for a given OneDrive account, SharePoint Site, or Exchange Online mailbox. For Exchange Online, restore points are available for 10 minutes for the entire year. For OneDrive and SharePoint, the available restore points are available for 10 minutes for up to 2 weeks prior, and weekly for 2 to 52 weeks prior. Based on the defined and currently invariable backup frequency setting previously described, the following example highlights what is possible.
@@ -293,6 +373,6 @@ Microsoft 365 Backup supports the backup and restoration of any site and user ac
     
         For OneDrive, you can restore the OneDrive to the original URL or a new URL. At that time, the OneDrive is in an "orphaned" state. To connect the OneDrive to a user, see [Fix site user ID mismatch in SharePoint or OneDrive](/sharepoint/troubleshoot/sharing-and-permissions/fix-site-user-id-mismatch).
 
-        For Exchange, if the user account is permanently deleted, Microsoft 365 Backup retains the inactive mailbox for the duration of the backup policy. To recover the inactive mailbox, follow the guidance at [Recover an inactive mailbox](/purview/recover-an-inactive-mailbox) to convert the inactive mailbox to a new, active mailbox. Once the inactive mailbox is recovered, remove the deleted user from the backup policy and then add the new user to the backup policy to access backups from the recovered mailbox.
+        For Exchange, if the user account is permanently deleted, Microsoft 365 Backup retains the inactive mailbox for the duration of the backup policy. To recover the inactive mailbox, follow the guidance at [Recover an inactive mailbox](/purview/recover-an-inactive-mailbox) to convert the inactive mailbox to a new, active mailbox. Once the inactive mailbox is recovered, add the new user to the backup policy to access backups from the recovered mailbox.  The original, now deleted user can then be removed from the backup policy.
       
     

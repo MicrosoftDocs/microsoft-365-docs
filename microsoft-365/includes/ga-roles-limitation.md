@@ -1,6 +1,7 @@
 ---
 author: cmcatee-MSFT
 ms.author: cmcatee
+ms.collection: operations-pod
 manager: scotv
 ms.service: microsoft-365-business
 ms.topic: include

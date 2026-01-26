@@ -2,10 +2,10 @@
 title: "Microsoft Adoption Score - Communication"
 f1.keywords:
 - NOCSH
-ms.author: camillepack
-author: camillepack
+author: efrene
+ms.author: efrene
 manager: scotv
-ms.date: 09/18/2020
+ms.date: 01/23/2026
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -16,17 +16,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- operations-pod
 ms.custom: AdminSurgePortfolio
-monikerRange: 'o365-worldwide'
+monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-description: "Details of the Communication - People experience Adoption Score."
+description: "Details of the Communication in the Adoption Score report."
 ---
 
-# Communication insights score – People experiences
+# Communication insights score 
 
-Adoption Score supports the journey to digital transformation with insights about how your organization uses Microsoft 365 and the technology experiences that support it. Your organization’s score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar in size to yours. The communication category is part of the people experiences measures. To learn more, check out the [Adoption Score overview](adoption-score.md) and read [Microsoft's Privacy Statement](https://privacy.microsoft.com/privacystatement).
+Adoption Score supports the journey to digital transformation with insights about how your organization uses Microsoft 365 and the technology experiences that support it. Your organization’s score reflects technology experience measurements and can be compared to benchmarks from organizations similar in size to yours. To learn more, check out the [Adoption Score overview](adoption-score.md) and read [Microsoft's Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
 ## Prerequisites
 

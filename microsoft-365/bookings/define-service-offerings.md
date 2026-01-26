@@ -13,6 +13,7 @@ ms.collection:
 - scotvorg
 - essentials-manage
 - must-keep
+- operations-pod
 description: "Instructions for entering service offerings information, including service name, description, location, duration, and pricing. You can also tag the employees who are qualified to provide the service."
 ---
 

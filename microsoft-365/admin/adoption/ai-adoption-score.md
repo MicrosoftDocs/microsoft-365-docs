@@ -1,22 +1,26 @@
 ---
 title: "AI adoption category in Adoption Score"
-ms.author: camillepack
-author: camillepack
+author: efrene
+ms.author: efrene
 manager: scotv
-ms.date: 04/16/2025
+ms.date: 05/30/2025
+ms.update-cycle: 180-days
 audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-monikerRange: 'o365-worldwide'
-ms.collection: 
+monikerRange: o365-worldwide
+ms.collection:
 - Tier2
 - scotvorg
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
 - Adm_TOC
 - m365copilot
 - magic-ai-copilot
+- operations-pod
+ms.custom:
+- GAUpdates
 search.appverid:
 - MET150
 - MOE150
@@ -84,8 +88,9 @@ Organizational messages in AI adoption score enable you to drive awareness of Mi
 
 To use organizational messages in AI adoption score, you must be assigned one of the following admin roles:
 
-- Global administrator
 - Organizational message writer
+
+[!INCLUDE [global-administrator-note](../../includes/global-administrator-note.md)]
 
 After selecting **Take action**, the following message configuration panel appears:
 

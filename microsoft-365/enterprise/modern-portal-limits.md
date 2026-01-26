@@ -1,6 +1,6 @@
 ---
 title: "SharePoint modern portal site limits"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 06/27/2024

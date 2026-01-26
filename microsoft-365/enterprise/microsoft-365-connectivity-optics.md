@@ -1,6 +1,6 @@
 ---
 title: "Microsoft 365 Connectivity Optics"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 08/02/2024

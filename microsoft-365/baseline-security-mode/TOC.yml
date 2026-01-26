@@ -1,0 +1,47 @@
+items:
+- name: Baseline security mode settings
+  href: baseline-security-mode-settings.md
+  items:
+  - name: Authentication
+    items:
+    - name: Require phishing-resistant multifactor authentication for administrators
+      href: /entra/identity/conditional-access/policy-admin-phish-resistant-mfa
+    - name: Block legacy authentication with Conditional Access
+      href: /entra/identity/conditional-access/policy-block-legacy-authentication
+    - name: Restrict end-user consent
+      href: /entra/identity/enterprise-apps/configure-user-consent?pivots=portal
+    - name: Disable access to Exchange Web Services (EWS)
+      href: /exchange/client-developer/exchange-web-services/how-to-control-access-to-ews-in-exchange
+    - name: Block basic authentication
+      href: block-basic-authentication.md
+    - name: Block insecure protocols for file opens
+      href: block-insecure-protocols-file-opens.md
+    - name: Block FrontPage Remote Procedure Call protocol for file opens
+      href: block-server-extensions-protocol-file-opens.md
+    - name: Allow or prevent custom script
+      href: /sharepoint/allow-or-prevent-custom-script
+    - name: Disable Access to Microsoft Store
+      href: /sharepoint/configure-sharepoint-store-settings
+  - name: Files
+    items:
+    - name: Open ancient legacy formats in Protected View
+      href: open-ancient-legacy-formats-protected-view-disallow-editing.md
+    - name: Open old legacy formats in Protected View
+      href: open-old-legacy-formats-protected-view-disallow-editing.md
+    - name: Block ActiveX controls
+      href: block-active-x-controls.md
+    - name: Block OLE graph and OrgChart objects
+      href: block-ole-graph-org-chart-objects.md
+    - name: Block DDE server launches in Excel
+      href: block-dynamic-data-exchange-server-launches-excel.md
+    - name: Block Microsoft Publisher
+      href: block-microsoft-publisher.md
+    - name: Minimum versions for Baseline security mode settings in Office
+      href: minimum-version-numbers-office.md
+  - name: Room devices
+    items:
+    - name: Only allow compliant devices to sign in
+      href: /MicrosoftTeams/rooms/block-non-compliant-teams-rooms-devices
+    - name: Block resource account sign in
+      href: /MicrosoftTeams/rooms/block-non-compliant-teams-rooms-devices
+ 

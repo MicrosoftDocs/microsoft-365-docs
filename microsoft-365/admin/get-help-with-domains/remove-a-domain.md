@@ -2,9 +2,9 @@
 title: "Remove a domain"
 f1.keywords:
 - NOCSH
-ms.author: kvice
-author: kelleyvice-msft
-manager: scotv
+ms.author: dansimp
+author: dansimp
+manager: dansimp
 ms.date: 11/18/2024
 audience: Admin
 ms.topic: how-to
@@ -18,12 +18,13 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
+- operations-pod
 ms.custom:
-  - AdminSurgePortfolio
-  - AdminTemplateSet
-  - business_assist
-  - has-azure-ad-ps-ref
-  - azure-ad-ref-level-one-done
+- AdminSurgePortfolio
+- AdminTemplateSet
+- business_assist
+- has-azure-ad-ps-ref
+- azure-ad-ref-level-one-done
 search.appverid:
 - BCS160
 - MET150
@@ -40,9 +41,6 @@ description: "Learn how to remove an old domain from Microsoft 365 and move user
 Are you removing your domain because you want to add it to a different Microsoft 365 subscription plan? Or do you just want to cancel your subscription? You can [change your plan or subscription](../../commerce/subscriptions/switch-to-a-different-plan.md) or [cancel your subscription](../../commerce/subscriptions/cancel-your-subscription.md).
 
 [!INCLUDE [How to get tech support for SMB](../../includes/smb-how-to-get-tech-support.md)]
-
-> [!TIP]
-> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
 ### Step 1: Move users to another domain
 

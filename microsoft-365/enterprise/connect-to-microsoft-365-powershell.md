@@ -1,6 +1,6 @@
 ---
 title: "Connect to Microsoft 365 with Microsoft Graph PowerShell"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 12/03/2024

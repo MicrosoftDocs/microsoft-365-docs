@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 04/16/2025
+ms.date: 06/16/2025
 ms.topic: how-to
 ms.service: microsoft-365-backup
 ms.custom: backup
@@ -19,6 +19,12 @@ description: Learn how to set up and manage usage and invoices in the Azure port
 # Manage consumption and invoices for Microsoft 365 Backup
 
 You can view actual and accumulated cost breakdown by tenants and service type for OneDrive, SharePoint, and Exchange in Microsoft Cost Management in the Azure portal or access the information by using the [Cost Management public APIs](/rest/api/cost-management/operation-groups). Cost breakdown by application ID is coming soon.
+
+</br>
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=a87d77a7-2c88-43fc-ae8c-5ba42765f956]
+
+</br>
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 

@@ -1,6 +1,6 @@
 ---
 title: "Microsoft 365 network connectivity test tool"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 04/02/2025
@@ -31,15 +31,15 @@ The Microsoft 365 network connectivity test tool is located at <https://connecti
 |:--|:--|:--|:--|
 |Anonymous test|✅|✅|✅|
 |Print report | ✅|✅|✅|
-|Login| ✅|✖️|✅|
-|Save report |  ✅|✖️|✅|
-|View report |  ✅|✖️|✅|
-|Share report in tenant | ✅|✖️|✅|
-|Share report to public |  ✅|✖️|✅|
+|Login| ✅|✅|✅|
+|Save report |  ✅|✅|✅|
+|View report |  ✅|✅|✅|
+|Share report in tenant | ✅|✅|✅|
+|Share report to public |  ✅|✖ (GCC is government cloud, we disable public sharing to ensure privacy)|✅|
 |Network health status | ✅|✅|✅|
-|Tests for Microsoft 365 Copilot | ✅|✖️|✖️|
+|Tests for Microsoft 365 Copilot | ✅|✅|✖️|
 |Multi-languages support: English, Chinese Simplified, Chinese Traditional, Japanese| ✅|✅|✅|
-|Testing from the command line|  ✅|✖️|✅|
+|Testing from the command line|  ✅|✅|✅|
 |FAQ|  ✅|✅|✅|
 |Community forum|  ✅|✅|✅|
 

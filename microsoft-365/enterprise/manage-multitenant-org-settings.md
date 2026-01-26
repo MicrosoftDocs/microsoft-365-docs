@@ -2,12 +2,12 @@
 title: Manage multitenant org settings
 description: Details regarding multitenant org settings found in the Microsoft Admin Center
 author: kelleyvice-msft
-ms.author: kvice
+ms.author: scotv
 manager: scotv
 ms.reviewer: jakeost
 ms.service: microsoft-365-enterprise
 ms.topic: how-to
-ms.date: 11/01/2024
+ms.date: 12/23/2025
 ms.subservice: multi-tenant
 ms.collection:
 - must-keep
@@ -79,16 +79,42 @@ There are a couple of reasons that calendar sharing enablement might not work as
 
 1. "Failed to edit or create an organization relationship with [tenant]. Please try again later"
 
-   1. This error typically only requires a refresh after some time. If error persists, review the setting in [Exchange Online](https://admin.exchange.microsoft.com/#/organizationsharing) to see if there is an existing organization relationship with this tenant.
-      
+   1. This error typically only requires a refresh after some time. If error persists, review the setting in [Exchange Online](https://admin.exchange.microsoft.com/#/organizationsharing) to see if there's an existing organization relationship with this tenant.
+   
 1. "Failed to get all domain names for [tenant]. This is an issue with how [tenant] has their primary domain name configured."
 
    1. This error typically requires the partner [tenant] to manage the status of their default domain here: [https://admin.microsoft.com/#/Domains](https://admin.microsoft.com/#/Domains). Additional details regarding domain troubleshooting can be found here: [Manage domains ](/microsoft-365/admin/get-help-with-domains/find-and-fix-issues)
-      
+   
 1. "Failed to create a new organization relationship with [tenant]. This could be due to a duplicate organization relationship." 
 
-   1. Review existing organization relationships in [Exchange Online](https://admin.exchange.microsoft.com/#/organizationsharing) to see if one already exists with this tenant. If organization relationship already exists with [tenant], review settings to ensure it is set up as desired.
+   1. Review existing organization relationships in [Exchange Online](https://admin.exchange.microsoft.com/#/organizationsharing) to see if one already exists with this tenant. If organization relationship already exists with [tenant], review settings to ensure it's set up as desired.
    
+## Manage Teams collaboration setting (Preview)
+
+The Teams collaboration setting allows users to communicate with synced users from other multitenant organization (MTO) member tenants in Microsoft Teams. When enabled, users can collaborate across tenants through scenarios such as Teams search, calling, chat, and meeting scheduling.
+
+> [!NOTE]
+> Teams collaboration setting is in a private preview stage of development. As an unfinished project, any information or availability is subject to change at any time. Teams collaboration setting is covered by the **preview terms** of the [Microsoft Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/all).
+
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. Using least-privileged accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
+
+To manage Teams collaboration for tenants in your MTO:
+
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/) as a global administrator.
+
+1. Expand **Settings** and select **Org settings**.
+
+1. On the **Organization profile** tab, select **Multitenant collaboration**.
+
+1. Select **Manage settings**.
+
+1. Select **Edit** under **Teams collaboration**.
+
+1. Select **Edit in Microsoft Teams admin center** to make update.
+
+This is a mutual configuration, meaning that all participating tenants must enable this setting for cross-tenant Teams collaboration to function.
+
 ## Set up MTO user labels in Teams for tenants in your MTO
 
 MTO group admins can now configure an optional label for each tenant that will be displayed alongside MTO synced user's display name in Teams. This allows MTO synced users to be distinguishable within the MTO in Teams interactions. 
@@ -117,16 +143,13 @@ To manage MTO user labels for tenants in your MTO:
 
    1. No label.
    1. Use the multitenant organization name for all tenants.
-   1. Custom (assign a label for each tenant, which cannot be blank).
-      
+   1. Custom (assign a label for each tenant, which can't be blank).
+   
 1. Select **Save changes**.
 
-## Manage multitenant org notifications (private preview)
+## Manage multitenant org notifications
 
-> [!NOTE]
-> This is currently only available for private preview.
-
-Admins can opt-in for MTO notifications to ensure they don’t miss any updates or changes to their MTO. Receive email notifications regarding any updates to the MTO such as: a new tenant joined the MTO, a tenant left the MTO, an MTO setting changed (user labels, owner/member role, MTO name), or user sync status changed (Must have full-mesh sync set up via M365 admin center). Email notifications are sent daily, as long as any updates were made to the MTO. No notification is sent if nothing has changed.
+Admins can opt-in for MTO notifications to ensure they don’t miss any updates or changes to their MTO. Receive email notifications regarding any updates to the MTO such as: a new tenant joined the MTO, a tenant left the MTO, an MTO setting changed (user labels, owner/member role, MTO name), or user sync status changed (Must have full-mesh sync set up via Microsoft 365 admin center). Email notifications are sent daily, as long as any updates were made to the MTO. No notification is sent if nothing has changed.
 
 Additionally, in the MAC MTO portal you can review the updates and see any Microsoft recommended actions. Opt-in and select the user(s) in your org who you would like to receive the notifications.
 
@@ -159,8 +182,31 @@ These permissions are required to fetch cross-tenant synchronization details and
   
   - [Synchronization.Read.All](/graph/permissions-reference#synchronizationreadall)
   
+
 This permission is required to gather details regarding the multitenant organization.
 
 - Reading MTO details 
 
   - [MultiTenantOrganization.Read.All](/graph/permissions-reference#multitenantorganizationreadall)
+
+## Manage Outlook external tag removal for MTO members
+
+If a tenant has enabled external tags in Outlook to help users identify content from external tenants, MTO group admins can now choose to suppress these tags for members of the multitenant organization. This setting allows for a more seamless collaboration experience and admins can enable this setting in the MAC MTO portal. 
+
+![Screenshot that shows suppression of Outlook external tag for MTO members.](media/manage-multitenant-org-settings/edit-external-tag-setting.png)
+
+If the tenant hasn't enabled external tags in Outlook, checking the **External tag suppression** option will automatically create a remote domain for the partner tenant and mark it as internal (i.e., IsInternal = true), but it won't have effect in end user experience.  In this case, external tags aren't displayed to members in MTO. 
+
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. Using least-privileged accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
+
+To suppress Outlook external tag for tenants in your MTO:
+
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/) as a global administrator.
+1. Expand **Settings** and select **Org settings**.
+1. On the **Organization profile** tab, select **Multitenant collaboration**.
+1. Select **Manage settings**.
+1. Select **Edit external tag settings** under **External tag**.
+1. Select **Suppress Outlook external tag for MTO members**.
+1. Select **Save changes**.
+

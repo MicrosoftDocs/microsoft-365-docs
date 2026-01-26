@@ -1,6 +1,6 @@
 ---
 title: "Manage SharePoint site groups with PowerShell"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 08/13/2024

@@ -1,9 +1,9 @@
 ---
 title: "Microsoft 365 admin center Viva Insights activity reports"
-ms.author: camillepack
-author: camillepack
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
-ms.date: 02/29/2024
+ms.date: 12/18/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -14,6 +14,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+- operations-pod
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -31,7 +32,7 @@ For example, you can understand the adoption of Viva Insights by looking at the 
 
 ## How do I get to the Viva Insights activity report?
 
-1. In the admin center, go to the **Reports**, and then select **Usage**. 
+1. In the admin center, go to the **Reports**, select **Usage**, and then select **Overview**. 
 2. Find **Viva Insights activity**.
 
 ## Interpret the Microsoft 365 Apps usage report

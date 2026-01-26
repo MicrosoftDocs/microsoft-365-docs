@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: armanv, nicholak
+ms.reviewer: patyc
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -16,22 +16,20 @@ ms.collection:
 - scotvorg
 - M365-subscription-management
 - Adm_O365
-ms.custom: 
+- operations-pod
+ms.custom:
 - commerce_subscriptions
 - AdminSurgePortfolio
 - admindeeplinkMAC
 - GAUpdates
-search.appverid: MET150 
+search.appverid: MET150
 description: "Learn how to activate and manage third-party apps in the Microsoft 365 admin center."
-ms.date: 01/07/2025
+ms.date: 10/28/2025
 ---
 
 # Manage third-party app subscriptions in the Microsoft 365 admin center
 
 You can manage licenses and billing for third-party apps in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
-
-> [!IMPORTANT]
-> As of April 1, 2023, we no longer accept checks as a payment method for subscriptions paid by invoice.
 
 ## Before you begin
 
@@ -46,7 +44,7 @@ You can manage licenses and billing for third-party apps in the <a href="https:/
 
 There are a few ways to buy third-party apps.
 
-- **Direct purchase** – Customers can directly buy subscriptions from [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/), or [AppSource](https://appsource.microsoft.com/).
+- **Direct purchase** – Customers can directly buy subscriptions from [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/), or [Microsoft Marketplace](https://marketplace.microsoft.com/).
 - **Partner purchase** –  Work with a partner through Partner Center to buy subscriptions.
 - **Microsoft proposal** – Respond to a proposal from Microsoft Sales that includes third-party apps.
 
@@ -96,7 +94,7 @@ You must activate third-party apps before you can assign them to users. The apps
 You can change the number of licenses owned by your organization.
 
 > [!NOTE]
-> Changing the number of licenses that you own only applies to apps bought with seat-based pricing.
+> Changing the number of licenses that you own only applies to apps bought with user-based pricing.
 
 1. In the admin center, go to the **Billing** > **Your products** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> page.
 2. Find and select the app you want to manage.
@@ -132,7 +130,7 @@ You can cancel a software-as-a-service app from the app page.
 
 Customers can buy commercial marketplace offerings in 141 geographies as defined by the customer's billing address. Transactions can be completed in 17 currencies. The following table lists each supported geographic location, its [ISO 3166 two-digit alpha code](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes), and the assigned currency.
 
-A CSP can buy an offer in the Partner Center in their customer's currency so that they can bill them in that same currency. For additional information on this, refer to [these FAQs](https://partner.microsoft.com/resources/detail/eu-efta-change-of-partner-billing-currency-faq-pdf).
+A CSP can buy an offer in the Partner Center in their customer's currency so that they can bill them in that same currency. For more information, see [these FAQs](https://partner.microsoft.com/resources/detail/eu-efta-change-of-partner-billing-currency-faq-pdf).
 
 |   Country/Region Name               |   ISO-2   |   Currency</br>(All offer types)  |    Currency</br>(Consulting service offers only)    |
 |-------------------------------------|-----------|--------------|---------------------------------------------|
@@ -285,4 +283,4 @@ A CSP can buy an offer in the Partner Center in their customer's currency so tha
 
 ## Related content
 
-[Manage your Microsoft business billing profiles](billing-and-payments/manage-billing-profiles.md) (article)\
+[Manage your Microsoft business billing profiles](billing-and-payments/manage-billing-profiles.md) (article)

@@ -1,10 +1,10 @@
 ---
-ms.date: 03/06/2025
+ms.date: 01/26/2026
 title: "Manage Loop app preview"
 ROBOTS: NOINDEX, NOFOLLOW
 ms.reviewer: dancost, rekeys
-ms.author: jenz
-author: jenzamora
+ms.author: odocspr
+author: officedocspr5
 manager: jtremper
 recommendations: true
 audience: Admin
@@ -21,16 +21,16 @@ ms.collection:
 search.appverid:
 - SPO160
 - MET150
-description: "Learn how to manage access to the Loop app preview."
+description: "Learn how to manage access to the Loop application preview."
 ---
 
-# Manage Loop app preview access
+# Manage Loop application preview access
 
-This article details the Cloud Policy setting used to gate access to the Loop app preview experiences within your organization.
+This article details the Cloud Policy setting used to gate access to the Loop application preview experiences within your organization.
 
 ## User experience expectations when admin settings are configured
 
-When a user account in your organization is provided access to the Loop app preview experience, they can choose between the standard or the preview experience. These users default to preview for each Loop app session and are able to manually switch to standard if needed.
+When a user account in your organization is provided access to the Loop application preview experience, they can choose between the standard or the preview experience. These users default to preview for each Loop application session and are able to manually switch to standard if needed.
 
 ## Microsoft 365 Groups for Cloud Policy
 
@@ -45,7 +45,7 @@ If you prefer, you can also create other types of groups to use with Cloud Polic
 
 ## Configuring preview user accounts in Cloud Policy
 
-The Loop app preview gate checks the following [Cloud Policy](/deployoffice/admincenter/overview-cloud-policy) setting:
+The Loop application preview gate checks the following [Cloud Policy](/deployoffice/admincenter/overview-cloud-policy) setting:
 
 - **Enable preview features for Loop**
 
@@ -56,18 +56,18 @@ The Loop app preview gate checks the following [Cloud Policy](/deployoffice/admi
 1. From the **Choose the scope** dropdown list, choose either **All users** or select the group for which you want to apply the policy. For more information, See [Microsoft 365 Groups for Cloud Policy](#microsoft-365-groups-for-cloud-policy).
 1. In **Configure Settings**, choose one of the following settings:
     - For **Enable preview features for Loop**:
-        - **Enabled**: Loop app preview experience is available to the users.
-        - **Disabled**: Loop app preview experience isn't available to the users.
-        - **Not configured**: Loop app preview experience isn't available to the users.
+        - **Enabled**: Loop application preview experience is available to the users.
+        - **Disabled**: Loop application preview experience isn't available to the users.
+        - **Not configured**: Loop application preview experience isn't available to the users.
 1. Save the policy configuration.
 1. Reassign priority for any security group, if necessary. (If two or more policy configurations are applicable to the same set of users, the one with the higher priority is applied.)
 
 In case you create a new policy configuration or change the configuration for an existing policy, there can be a delay in the change being reflected as described:
 
-- If there were existing policy configurations before the change, then it takes 90 mins for the change to be reflected.
-- If there were no policy configurations before the change, then it takes 24 hours for the change to be reflected.
+- If there were existing policy configurations before the change, the change takes up to 90 minutes to be reflected.
+- If there were no policy configurations before the change, the change takes up to 24 hours to be reflected.
 
-## Related topics
+## Related articles
 
 - [Get started with Microsoft Loop - Microsoft Support](https://support.microsoft.com/office/get-started-with-microsoft-loop-9f4d8d4f-dfc6-4518-9ef6-069408c21f0c)
-- [Loop admin policies for Loop components and Loop workspaces](/microsoft-365/loop/loop-components-configuration)
+- [Admin policies](loop-admin-configuration.md)

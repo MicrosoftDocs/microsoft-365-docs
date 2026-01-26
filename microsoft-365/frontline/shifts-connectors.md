@@ -44,6 +44,9 @@ Data flows via the connector both ways to ensure schedules are always up to date
 <a name="schedules"> </a>
 ## Managed Shifts connectors
 
+> [!WARNING]
+> **Limited Support Notice**: The Shifts connector feature is currently in limited support mode. Existing customers can continue using the connector and will be informed of next steps through their account teams. New deployments are not recommended at this time. Please check back here for future updates.
+
 Managed Shifts connectors are connectors developed in collaboration with our partners. Managed connectors are hosted and managed either by us or our partners. With managed connectors, only minimal setup is needed.
 
 |Connector|Description|Requirements|

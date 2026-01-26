@@ -7,22 +7,23 @@ ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, ramagane
 audience: Admin
-ms.topic: article
+ms.topic: concept-article
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-management
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
+service.tree.id: 95459a4b-434c-4f83-879b-aa5f509fc7fa
 search.appverid: MET150
-description: "Learn about information specifically for Microsoft 365 for business in Italy." 
-ms.custom: 
+description: "Learn about information specifically for Microsoft 365 for business in Italy."
+ms.custom:
 - commerce_billing
 - admindeeplinkMAC
-monikerRange: 'o365-worldwide'
-ms.date: 03/30/2025
+monikerRange: o365-worldwide
+ms.date: 09/29/2025
 ---
 
 # Billing information for Microsoft 365 for business in Italy
@@ -71,7 +72,7 @@ For details about making a payment, see [Payment information for Italy](/legal/p
 
 ## Tax FAQ
 
-###  Why is there a 22% tax rate on my invoice now from Microsoft Srl Italy compared to last month’s invoice from Microsoft Ireland?
+### Why is there a 22% tax rate on my invoice now from Microsoft Srl Italy compared to last month’s invoice from Microsoft Ireland?
 
 This is a result of the Billing entity change from Microsoft Ireland to Microsoft Srl. Prior to the change, purchases were considered cross-border and the presence of a VAT ID resulted in Reverse Charge (0% tax). With local invoicing, transactions are not cross-border and the tax rate of 22% applies.  Partners in Italy were invoiced from Microsoft Srl Italy on September 1, 2023. Customer Led and Field Led migrated to Microsoft Srl Italy on March 1, 2024.
 

@@ -2,9 +2,9 @@
 title: "Change your email address to use your custom domain"
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
-manager: scotv
+ms.author: dansimp
+author: dansimp
+manager: dansimp
 ms.date: 04/23/2025
 audience: Admin
 ms.topic: how-to
@@ -12,11 +12,12 @@ ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
 - Tier2
-- scotvorg 
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
+- operations-pod
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -77,6 +78,8 @@ Use a domain name you already own whether you're using it for a website address 
 ## Change your email address to use your custom domain using the Microsoft 365 admin center
 
 You must be a global admin to perform these steps.
+
+[!INCLUDE [global-administrator-note](../../includes/global-administrator-note.md)]
 
 ::: moniker range="o365-worldwide"
 

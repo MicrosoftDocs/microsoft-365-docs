@@ -79,6 +79,16 @@ items:
       href: m365-lighthouse-view-service-health.md
     - name: Deploy a PowerShell script
       href: m365-lighthouse-deploy-powershell-script.md      
+- name: Manage opportunities
+  items:
+    - name: Understand opportunities and data
+      href: m365-lighthouse-understanding-opportunities-and-data.md
+    - name: View opportunities
+      href: m365-lighthouse-view-opportunities.md
+- name: View upcoming subscriptions
+  items:
+    - name: Overview of subscription renewals
+      href: m365-lighthouse-subscription-renewals-overview.md
 - name: Manage users within tenants
   items:
     - name: Overview of the Users page
@@ -131,14 +141,6 @@ items:
       href: m365-lighthouse-quarantine-messages-overview.md
     - name: Overview of the Apps page
       href: m365-lighthouse-apps-page-overview.md
-- name: Manage opportunities with Sales Advisor
-  items:
-    - name: Overview of Sales Advisor
-      href: m365-lighthouse-sales-advisor-overview.md
-    - name: Understand opportunities and data
-      href: m365-lighthouse-understanding-opportunities-and-data.md
-    - name: View opportunities in Sales Advisor
-      href: m365-lighthouse-view-opportunities.md
 - name: Get help and support
   items: 
     - name: Get help and support

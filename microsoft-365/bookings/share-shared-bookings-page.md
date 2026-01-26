@@ -12,6 +12,7 @@ ms.collection:
 - Tier1
 - scotvorg
 - essentials-manage
+- operations-pod
 description: "Learn how to share the Microsoft Bookings shared booking page with clients or customers."
 ---
 

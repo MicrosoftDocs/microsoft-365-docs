@@ -1,6 +1,6 @@
 ---
 title: "Plan for third-party SSL certificates for Microsoft 365"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 audience: ITPro

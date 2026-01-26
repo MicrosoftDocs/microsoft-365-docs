@@ -1,6 +1,6 @@
 ---
 title: "Service advisory for non-compliant shared mailboxes in Exchange Online"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 02/20/2025

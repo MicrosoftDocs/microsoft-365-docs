@@ -13,9 +13,10 @@ ms.localizationpriority: medium
 ms.reviewer: nehabha
 f1.keywords: NOCSH
 ms.collection:
- - essentials-security
- - essentials-privacy
- - essentials-compliance
+- essentials-security
+- essentials-privacy
+- essentials-compliance
+- trust-pod
 ms.custom:
 ---
 
@@ -36,8 +37,8 @@ For information, see the [Microsoft Trust Center - Security](https://www.microso
 
 For related configuration information, see the following articles:
 
-- [Configure your security protection in Microsoft 365 Business Premium](m365bp-security-overview.md)
-- [Microsoft 365 for business security best practices](secure-your-business-data.md)
+- [Configure your security protection in Microsoft 365 Business Premium](/microsoft-365/admin/security-and-compliance/m365bp-security-benefits)
+- [Microsoft 365 for business security best practices](/microsoft-365/admin/security-and-compliance/m365b-security-best-practices)
 
 ## Privacy
 
@@ -50,7 +51,7 @@ For information about privacy in Microsoft 365 Business Premium, see:
 
 For information about compliance in Microsoft 365 Business Premium, see the [Microsoft Trust Center - Compliance](https://www.microsoft.com/trust-center/compliance/compliance-overview).
 
-For related configuration information, see [Set up information protection capabilities](m365bp-set-up-compliance.md).
+For related configuration information, see [Set up information protection capabilities](/microsoft-365/admin/security-and-compliance/m365bp-information-protection).
 
 ## Related resources
 

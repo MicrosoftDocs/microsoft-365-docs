@@ -2,11 +2,14 @@ name: Tier management
 
 permissions:
   pull-requests: write
-  contents: read
+  contents: write
       
 on: 
   issue_comment:
     types: [created, edited]
+
+  pull_request_target:
+    types: [opened, reopened]
 
 jobs:
 

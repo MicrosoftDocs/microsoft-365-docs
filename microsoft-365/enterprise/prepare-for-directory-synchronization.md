@@ -1,6 +1,6 @@
 ---
 title: "Prepare for directory synchronization to Microsoft 365"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 09/25/2024
@@ -155,7 +155,7 @@ The attributes that you need to prepare are listed here:
   - The attribute value must be unique within the directory.
 
     > [!NOTE]
-    > Underscores ("_") in the synchronized name indicates that the original value of this attribute contains invalid characters. For more information on this attribute, see [Exchange alias attribute](/powershell/module/exchange/set-mailbox).
+    > Underscores ("_") in the synchronized name indicates that the original value of this attribute contains invalid characters. For more information on this attribute, see [Exchange alias attribute](/powershell/module/exchangepowershell/set-mailbox).
     >
 
 - **proxyAddresses**

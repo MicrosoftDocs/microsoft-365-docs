@@ -1,6 +1,6 @@
 ---
 title: "Microsoft 365 network provider assessments."
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 04/05/2024

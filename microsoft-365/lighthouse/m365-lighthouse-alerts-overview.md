@@ -1,7 +1,7 @@
 ---
 title: "Overview of the Alerts page in Microsoft 365 Lighthouse"
 f1.keywords: NOCSH
-ms.author: sharik
+ms.author: dansimp
 author: SKjerland
 manager: scotv
 ms.reviewer: prpath
@@ -73,7 +73,6 @@ The following table provides details about the different alert types that Lighth
 | Devices without antivirus protection | **Alert severity:** Low, Medium, High, Informational<br>**Threat protection:** Enabled, Disabled<br>**Antivirus updates:** Needs updates |
 | Variance detection | **Alert severity:** Low, Medium, High, Informational<br>**Deployment status:** Incomplete, Ineligible, Failed |
 | Risky user | **Alert severity:** Low, Medium, High, Informational<br>**Risk state:** At risk, Confirmed compromised |
-| Windows logs | **Alert severity:** Low, Medium, High, Informational<br>**Entry type:** Error, Warning, Information, Success audit, Failure audit<br>**Log name:** All logs, Application, Security, Setup, System |
 | Security incident | **Alert severity:** Low, Medium, High, Informational<br>**Classification:** Not specified, False positive, True positive, Benign positive<br>**Determination:** Not specified, Apt, Malware, Security personnel, Security testing, Unwanted software, Other, Multi-staged attack, Compromised user, Phishing, Malicious user activity, Clean, Insufficient data, Confirmed user activity, Line of business application<br>**Service source:** Not specified, Microsoft Defender for Endpoint, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, Microsoft Defender for Office 365, Microsoft 365 Defender, Microsoft Entra Identity Protection, Microsoft App Governance, Data Loss Prevention, Microsoft Defender for Cloud<br>**Status:** All, Unknown, New, In progress, Resolved |
 | Lighthouse communications | **Alert severity:** Low, Medium, High, Informational<br>**Lighthouse system events:** All events, Initial data availability |
 | Active threat on device | **Alert severity:** Low, Medium, High, Informational<br>**Threat type:** All threats, Miscellaneous, Virus, Malware, Spyware<br>**Severity:** Unknown, Low, Moderate, High, Severe |

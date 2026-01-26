@@ -2,18 +2,19 @@
 title: Manage who can create Microsoft 365 Groups
 f1.keywords: NOCSH
 ms.reviewer: rahulnayak
-ms.date: 03/13/2025
-author: DaniEASmith
-ms.author: danismith
+ms.date: 09/30/2025
+author: officedocspr5
+ms.author: odocspr
 manager: jtremper
 audience: Admin
 ms.topic: solution-overview
-ms.service: o365-solutions
+ms.service: m365-planning
 ms.localizationpriority: medium
 ms.custom:
   - has-azure-ad-ps-ref
   - azure-ad-ref-level-one-done
   - admindeeplinkMAC
+  - m365-solutions-doc-set
 ms.collection: 
 - highpri
 - M365-subscription-management
@@ -45,18 +46,23 @@ When you limit who can create a group, it affects all services that rely on grou
 - Power BI (classic)
 - Project for the web / Roadmap
 
-The steps in this article can't prevent members of certain roles from creating Groups. Microsoft 365 global admins can create groups via the Microsoft 365 admin center, Planner, Exchange, and SharePoint, but not other locations such as Teams. Other roles can create Microsoft 365 Groups via limited means:
+The steps in this article can't prevent members of certain roles from creating Groups. Microsoft 365 global admins can create groups via the Microsoft 365 admin center, Planner, Exchange, and SharePoint, but not other locations such as Teams. Other roles can create Microsoft 365 Groups via limited means, as summarized in the following table:
 
-- Exchange Administrator: Exchange admin center, Microsoft Entra ID
-- Partner Tier 1 Support: Microsoft 365 admin center, Exchange admin center, Microsoft Entra ID
-- Partner Tier 2 Support: Microsoft 365 admin center, Exchange admin center, Microsoft Entra ID
-- Directory Writers: Microsoft Entra ID
-- Groups Administrator: Microsoft Entra ID
-- SharePoint Administrator: SharePoint admin center, Microsoft Entra ID
-- Teams Service Administrator: Teams admin center, Microsoft Entra ID
-- User Administrator: Microsoft 365 admin center, Microsoft Entra ID
+| Role | Locations where they can create groups |
+|--|--|
+| Exchange Administrator | Exchange admin center<br/>Microsoft Entra ID |
+| Partner Tier 1 Support | Microsoft 365 admin center<br/>Exchange admin center<br/>Microsoft Entra ID |
+| Partner Tier 2 Support | Microsoft 365 admin center<br/>Exchange admin center<br/>Microsoft Entra ID |
+| Directory Writers | Microsoft Entra ID |
+| Groups Administrator | Microsoft Entra ID |
+| SharePoint Administrator | SharePoint admin center<br/>Microsoft Entra ID |
+| Teams Service Administrator | Teams admin center<br/>Microsoft Entra ID |
+| User Administrator | Microsoft 365 admin center<br/> Microsoft Entra ID |
 
 If you're a member of one of these roles, you can create Microsoft 365 Groups for restricted users, and then assign the user as the owner of the group.
+
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role. To learn more, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
 
 ## Licensing requirements
 
@@ -79,8 +85,11 @@ Only one group in your organization can be used to control who is able to create
 Admins in the roles listed previously don't need to be members of this group; they retain their ability to create groups.
 
 1. In the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339), go to the [Groups page](https://admin.microsoft.com/adminportal/home#/groups).
+
 2. Select **Add a Group**.
+
 3. Choose the group type you want. Remember the name of the group. You need it later.
+
 4. Finish setting up the group, adding people or other groups who you want to be able to create groups as members (not owners).
 
 For detailed instructions, see [Create, edit, or delete a security group in the Microsoft 365 admin center](../admin/email/create-edit-or-delete-a-security-group.md).
@@ -121,35 +130,35 @@ $settingsObjectID = (Get-MgBetaDirectorySetting | Where-object -Property Display
 if(!$settingsObjectID)
 {
     $params = @{
-	  templateId = "62375ab9-6b52-47ed-826b-58e47e0e304b"
-	  values = @(
-		    @{
-			       name = "EnableMSStandardBlockedWords"
-			       value = $true
-		     }
-	 	     )
-	     }
-	
+      templateId = "62375ab9-6b52-47ed-826b-58e47e0e304b"
+      values = @(
+            @{
+                   name = "EnableMSStandardBlockedWords"
+                   value = $true
+             }
+              )
+         }
+    
     New-MgBetaDirectorySetting -BodyParameter $params
-	
+    
     $settingsObjectID = (Get-MgBetaDirectorySetting | Where-object -Property Displayname -Value "Group.Unified" -EQ).Id
 }
 
  
-$groupId = (Get-MgBetaGroup | Where-object {$_.displayname -eq $GroupName}).Id
+$groupId = (Get-MgBetaGroup -all | Where-object {$_.displayname -eq $GroupName}).Id
 
 $params = @{
-	templateId = "62375ab9-6b52-47ed-826b-58e47e0e304b"
-	values = @(
-		@{
-			name = "EnableGroupCreation"
-			value = $AllowGroupCreation
-		}
-		@{
-			name = "GroupCreationAllowedGroupId"
-			value = $groupId
-		}
-	)
+    templateId = "62375ab9-6b52-47ed-826b-58e47e0e304b"
+    values = @(
+        @{
+            name = "EnableGroupCreation"
+            value = $AllowGroupCreation
+        }
+        @{
+            name = "GroupCreationAllowedGroupId"
+            value = $groupId
+        }
+    )
 }
 
 Update-MgBetaDirectorySetting -DirectorySettingId $settingsObjectID -BodyParameter $params
@@ -171,14 +180,17 @@ If you want to turn off the group creation restriction and again allow all users
 Changes can take 30 minutes or more to take effect. You can verify the new settings by completing the following steps:
 
 1. Sign in to Microsoft 365 with a user account of someone who shouldn't have the ability to create groups. That is, they aren't a member of the group you created or an administrator.
+
 2. Select the **Planner** tile.
+
 3. In Planner, select **New Plan** in the left navigation to create a plan.
+
 4. You should get a message that plan and group creation is disabled.
 
 Try the same procedure again with a member of the group.
 
 > [!NOTE]
-> If members of the group aren't able to create groups, check that they aren't being blocked through their [OWA mailbox policy](/powershell/module/exchange/set-owamailboxpolicy).
+> If members of the group aren't able to create groups, check that they aren't being blocked through their [OWA mailbox policy](/powershell/module/exchangepowershell/set-owamailboxpolicy).
 
 ## Related articles
 

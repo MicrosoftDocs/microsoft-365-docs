@@ -1,7 +1,7 @@
 ---
-author: MandiOhlinger
-ms.author: mandia
-manager: laurawi
+author: maggierui
+ms.author: ruihu
+manager: dansimp
 ms.reviewer: cabailey
 ms.service: microsoft-365-copilot
 ms.topic: include
@@ -19,6 +19,6 @@ You have two options:
 
   :::image type="content" source="../media/microsoft-365-copilot-e5-guide/purview-sensitivity-labels-prompt.png" alt-text="In Microsoft Purview Information Protection, turn on sensitivity labels for SharePoint and OneDrive." lightbox="../media/microsoft-365-copilot-e5-guide/purview-sensitivity-labels-prompt.png":::
 
-- **Option 2**: Use the `[Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant)` Windows PowerShell cmdlet.
+- **Option 2**: Use the `[Set-SPOTenant](/powershell/module/microsoft.online.sharepoint.powershell/set-spotenant)` Windows PowerShell cmdlet.
 
 To learn more about this configuration, see [Enable sensitivity labels for files in SharePoint and OneDrive](/purview/sensitivity-labels-sharepoint-onedrive-files).

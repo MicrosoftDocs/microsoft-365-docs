@@ -1,14 +1,14 @@
 ---
 title: "Restrict SharePoint site content to a geo location"
-ms.reviewer: anfra
+ms.reviewer: anfra, jugiammo
 ms.date: 09/26/2024
-ms.author: kvice
-author: kelleyvice-msft
-manager: scotv
+ms.author: v-fahasen
+author: fhasen-msft
+manager: Justin.Giammona
 audience: ITPro
 ms.topic: how-to
 ms.service: microsoft-365-enterprise
-ms.subservice: administration
+ms.subservice: multi-geo-capabilities
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
@@ -21,7 +21,7 @@ description: In this article, learn how to restrict SharePoint sites to a specif
 
 Under certain circumstances you may choose to enforce a site and its file content to remain in the _Geography_ location where the site was created, either by preventing the site from being moved or by preventing the caching of the site's file content in another _Geography_ location.
 
-You can do this task by using the [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) cmdlet with the **RestrictedToGeo** parameter. This parameter has a default value of NULL, but you can change it to one of the following restrictions:
+You can do this task by using the [Set-SPOSite](/powershell/module/microsoft.online.sharepoint.powershell/set-sposite) cmdlet with the **RestrictedToGeo** parameter. This parameter has a default value of NULL, but you can change it to one of the following restrictions:
 
 |Restriction|Description|
 |:----------|:----------|

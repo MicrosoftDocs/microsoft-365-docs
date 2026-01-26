@@ -1,6 +1,6 @@
 ---
 title: "Tune Exchange Online performance"
-ms.author: krowley
+ms.author: laurawi
 author: MSFTTracyP
 manager: laurawi
 ms.date: 12/14/2017

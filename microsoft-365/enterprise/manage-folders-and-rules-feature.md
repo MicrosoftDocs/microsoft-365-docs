@@ -1,7 +1,7 @@
 ---
 title: "Manage Folders and Rules feature in Microsoft 365 Groups"
-author: DaniEASmith
-ms.author: danismith
+author: officedocspr5
+ms.author: odocspr
 manager: jtremper
 ms.date: 09/04/2024
 audience: Admin

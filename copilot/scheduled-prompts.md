@@ -1,84 +1,71 @@
 ---
-title: "Manage Scheduled prompts for Microsoft 365 Copilot"
+title: Manage Scheduled Prompts for Microsoft 365 Copilot
+description: "Learn how to manage scheduled prompts in Microsoft 365 Copilot. Configure admin controls, maintain compliance, and automate workflows effectively."
+#customer intent: As an admin, I want to manage scheduled prompts for Microsoft 365 Copilot so that I can control their availability and ensure compliance with organizational policies.
 f1.keywords:
 - NOCSH
-ms.author: camillepack
-author: camillepack
+ms.author: scotv
+author: scotv
 manager: scotv
-ms.date: 04/17/2025
+ms.date: 10/23/2025
+ms.update-cycle: 180-days
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
-ms.collection: 
-- scotvorg
+ms.collection:
 - m365copilot
 - magic-ai-copilot
-description: "Learn about managing Scheduled prompts for Microsoft 365 Copilot, admin controls, data policies, and user management steps."
+- operations-pod
 ---
 
 # Manage scheduled prompts for Microsoft 365 Copilot
 
-Scheduled prompts in Microsoft 365 Copilot allow users to automate Copilot prompts to run at set times and frequencies in Microsoft Teams, Office.com/chat, and Microsoft Outlook for the web and Desktop. As an admin, you can manage this feature for your organization.
+Microsoft 365 Copilot scheduled prompts let users automate Copilot interactions at specified times and frequencies across Microsoft Teams, Office.com chat, and Microsoft Outlook. As an admin, you can manage these scheduled prompts to control availability and ensure organizational compliance.
 
 ## Before you begin
 
-You must have both of the following licenses to manage scheduled prompts:
+To manage scheduled prompts, you need the Microsoft 365 Copilot license in the Copilot subscription.
 
-- Microsoft 365 Copilot license (in the Copilot subscription)
-- Standard Microsoft Power Automate license
+Also make sure to enable optional connected experiences for your users. This feature is enabled by default, but some organizations disable it. To confirm, review your cloud policy settings for the following setting: **Allow the use of additional optional connected experiences in Office**. For more information, see [Cloud Policy service for Microsoft 365](/microsoft-365-apps/admin-center/overview-cloud-policy).
 
-Before you start using the scheduled prompts feature, ensure that the Optional connected experiences setting is on in your tenant admin portal. This setting should be on by default, but you can double-check by accessing the Optional connected experiences setting at [config.office.com](https://config.office.com/).
+## Admin controls for scheduled prompts
 
-Additionally, if you block all new connectors by default using Power Platform Data Loss Prevention (DLP) policies, you need to run the following command to explicitly reclassify the connector:
+If you don't want this feature available to your organization, use [Cloud Policy](https://config.office.com/officeSettings/officePolicies) to set the **Allow the use of additional optional connected experiences in Office** policy setting to **Disabled**. For more information, see [Admin controls for optional connected experiences](/microsoft-365-apps/privacy/optional-connected-experiences#admin-controls-for-optional-connected-experiences).
 
-```powershell
-$connectorsToReclassify = @([pscustomobject]@{
- id = "/providers/Microsoft.PowerApps/apis/shared_bizchat"
- name = "Copilot for Microsoft 365"
- type = "providers/Microsoft.PowerApps/apis"
-})
-Add-ConnectorsToPolicy -PolicyName {TENANT_DLP_POLICY_GUID} -Connectors $connectorsToReclassify -Classification {'Confidential'|'General'}
-```
+If you disable optional connected experiences, no one in your organization can see scheduled prompts in Copilot. This action also turns off other features in Microsoft 365 apps that your organization uses. For a list of those features, see [Overview of optional connected experiences in Office](/microsoft-365-apps/privacy/optional-connected-experiences).
 
-To learn more about adding connectors to policies, see [Add-ConnectorsToPolicy](/powershell/module/microsoft.powerapps.administration.powershell/add-connectorstopolicy).
+> [!NOTE]
+> Even if you enable optional connected experiences, users can individually turn off optional connected experiences. Users control these experiences by changing their account privacy settings. For more information, see [Your privacy settings](/microsoft-365-apps/privacy/optional-connected-experiences#your-privacy-settings).
 
-## Admin controls
+The Microsoft 365 environment in Power Platform supports scheduled prompts. This environment is automatically created when a user creates a scheduled prompt for the first time. To learn more, see [Microsoft 365 environment for scheduled prompts](scheduled-prompts-environment.md).
 
-To use the scheduled prompts feature as an admin, no action is required if no DLP policies are in place and if the Optional connected experiences setting is already enabled. This feature is automatically included as part of the Optional Connected Experiences admin setting. However, if you have DLP policies in place that block new connectors, you might need to run the command script mentioned previously. You can check if you have such policies in the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+### Behaviors after you disable scheduled prompts
 
-If you prefer to not have this feature available to your organization, you can disable the Optional connected experiences setting at [config.office.com](https://config.office.com/). For more information, see [Admin controls for optional connected experiences](/microsoft-365-apps/privacy/optional-connected-experiences).
+If someone in your organization uses scheduled prompts, and then you disable optional connected experiences, the following behaviors apply:
 
-If you turn off the Optional connected experiences setting, this action prevents anyone in your organization from seeing scheduled prompts in Copilot.
-
-### Data policies
-
-To prevent exposing organizational data, you should also create a data policy in the [Power Platform admin center](https://admin.powerplatform.microsoft.com). Creating a data policy in the center allows you to control access to these connectors in various ways to help reduce risk in your organization. To learn more, see [Data policies - Power Platform](/microsoft-365-apps/privacy/optional-connected-experiences).
-
-## Disabling scheduled prompts
-
-:::image type="content" source="media/prompts-org-policy.png" alt-text="Screenshot showing the pop-up that informs users of their organization's data policy." lightbox="media/prompts-org-policy.png":::
-
-If you disable this feature after someone in your organization has already used it:
-
-- Users will no longer be able to manage previously scheduled prompts.
+- Users can't see the scheduled prompts icon or the prompt management menu.
+- Users can't manage previously scheduled prompts.
 - Sessions for previously run scheduled prompts continue to exist.
-- Users will no longer see the Scheduled prompts feature or the prompt management pane if the Optional Connected Experiences setting is disabled.
+- Previously scheduled prompts continue to run until their schedule finishes.
 
-Users will still see the feature if the Optional Connected Experiences setting is enabled and DLP policies are in place, but they won't be able to successfully create a scheduled prompt, and will be made aware that this failure is a result of their organization’s data policy.
+## Inventory scheduled prompts
 
-## User controls
+With the **Power Platform Administrator** role, you can use a PowerShell script to inventory the scheduled prompts that users in your organization create. For more information, see [Inventory for scheduled prompts](scheduled-prompts-inventory.md).
 
-:::image type="content" source="media/prompt-set-up.png" alt-text="Screenshot showing the setup text for a new scheduled prompt in Copilot." lightbox="media/prompt-set-up.png":::
+> [!IMPORTANT]
+> Use roles with the fewest permissions. Lower permissioned accounts help improve security for your organization. Global Administrator is a highly privileged role. Limit its use to emergency scenarios when you can't use an existing role. For more information, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
 
-Your users can find the scheduled prompts feature by hovering over a prompt they have submitted to Copilot. When a user selects the Save and activate button to confirm the scheduled prompt, a user's prompt information will be sent to the Power Automate and Power Platform system, and the [Power Automate terms of service and privacy policy](/power-platform/admin/wp-compliance-data-privacy) apply.
+## What's the user experience for scheduled prompts?
 
-To manage their scheduled prompts, users can follow these steps:
+For more information about the user experience in Microsoft 365 Copilot, see [Schedule Copilot prompts](https://support.microsoft.com/topic/29dfd5fb-211a-4515-88a6-730b8074e489).
 
-1. Hover over the prompt they have submitted to Copilot.
-2. Select the prompt management pane.
-3. From there, users can view and delete their scheduled prompts.
+## Legacy prompts
 
-Users can schedule up to 10 prompts to run at specific times, with responses delivered to the right rail of their Microsoft 365 Copilot Chat experience. These prompts can be set to run on a recurring basis, ensuring users receive necessary information aligned with their workflow. Responses from scheduled prompts are bolded and have a recurring icon to help users identify them easily.
+The scheduled prompts feature no longer relies on Power Automate flows. If you scheduled a prompt during the public preview, it continues to run in Power Automate until it expires. You don't see these prompts in the Microsoft 365 Copilot scheduled prompts page. To view or manage these legacy prompts, use [Power Automate](https://make.powerautomate.com/).
 
-To learn more about prompts for your users, see [Learn about Copilot prompts](https://support.microsoft.com/topic/learn-about-copilot-prompts-f6c3b467-f07c-4db1-ae54-ffac96184dd5).
+## Related content
+
+- [Microsoft 365 environment for scheduled prompts](scheduled-prompts-environment.md)
+
+- [Inventory for scheduled prompts](scheduled-prompts-inventory.md)

@@ -1,16 +1,16 @@
 ---
 title: Data Residency for SharePoint and OneDrive
 description: Data Residency for SharePoint and OneDrive
-ms.author: kvice
-author: kelleyvice-msft
-manager: scotv
+ms.author: v-fahasen
+author: fhasen-msft
+manager: Justin.Giammona
 ms.service: microsoft-365-enterprise
 ms.subservice: advanced-data-residency
 ms.topic: article
 f1.keywords:
 - NOCSH
 ms.date: 02/11/2025
-ms.reviewer: deanw, anfra, robnichols
+ms.reviewer: jugiammo, anfra, robnichols
 ms.custom:
 - it-pro
 ms.localizationpriority: medium
@@ -109,8 +109,8 @@ Each user, Group mailbox, and SharePoint site have a Preferred Data Location (PD
 
 Users get a seamless experience when using Microsoft 365 services, including Office applications, OneDrive, and Search. See User experience in a Multi-Geo environment for details.
 
->[!NOTE]
->Once your tenant has enabled the Multi-Geo add-on, changing the default location for the tenant is not supported. This applies even for the [Data Residency Legacy Move Program](/microsoft-365/enterprise/m365-dr-legacy-move-program) and the Advanced Data Residency add-on.
+> [!NOTE]
+> Once your tenant has enabled the Multi-Geo add-on, changing the default location for the tenant is not supported. This applies even for the Advanced Data Residency add-on.
 
 ### **OneDrive**
 
@@ -326,7 +326,7 @@ OneNote Win32 client and UWP (Universal) App automatically detects and seamlessl
 
 #### **Teams app**
 
-Upon OneDrive _Geography_ move completion, users have access to their OneDrive files on the Teams app. Additionally, files shared via Teams chat from their OneDrive before the _Geography_ move continue to work after move is complete.
+Upon OneDrive _Geography_ move completion, users have access to their OneDrive files on the Teams application. Additionally, files shared via Teams chat from their OneDrive before the _Geography_ move continue to work after move is complete.
 
 #### **OneDrive Mobile App (iOS)**
 
@@ -479,8 +479,8 @@ You can stop a SharePoint site _Geography_ move, provided the move isn't in prog
 
 You can determine the status of a site move in our out of the _Geography_ that you're connected to by using the following cmdlets:
 
-- [Get-SPOSiteContentMoveState](/powershell/module/sharepoint-online/get-spositecontentmovestate) (non-Group-connected sites and SharePoint Embedded container sites)
-- [Get-SPOUnifiedGroupMoveState](/powershell/module/sharepoint-online/get-spounifiedgroupmovestate) (Group-connected sites)
+- [Get-SPOSiteContentMoveState](/powershell/module/microsoft.online.sharepoint.powershell/get-spositecontentmovestate) (non-Group-connected sites and SharePoint Embedded container sites)
+- [Get-SPOUnifiedGroupMoveState](/powershell/module/microsoft.online.sharepoint.powershell/get-spounifiedgroupmovestate) (Group-connected sites)
 
 Use the `-SourceSiteUrl` parameter to specify the site for which you want to see move status.
 
@@ -536,7 +536,7 @@ OneNote Win32 client and UWP (Universal) App automatically detects and seamlessl
 
 #### **Teams (applicable to Microsoft 365 group connected sites)**
 
-When the SharePoint site _Geography_ move completes, users will have access to their Microsoft 365 group site files on the Teams app. Additionally, files shared via Teams chat from their site prior to _Geography_ move will continue to work after move is complete.
+When the SharePoint site _Geography_ move completes, users will have access to their Microsoft 365 group site files on the Teams application. Additionally, files shared via Teams chat from their site prior to _Geography_ move will continue to work after move is complete.
 SharePoint site _Geography_ move doesn't support moving sites backing Private and Shared Channels from one _Geography_ to another, when using the `Start-SPOUnifiedGroupMove` command. Sites backing Private and Shared Channels remain in the original _Geography_. To move those sites individually, admins can initiate direct moves using the `Start-SPOSiteContentMove` command.
 
 #### **SharePoint Mobile App (iOS/Android)**

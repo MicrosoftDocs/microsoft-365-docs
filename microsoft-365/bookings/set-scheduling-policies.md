@@ -12,6 +12,7 @@ ms.collection:
 - Tier1
 - scotvorg
 - essentials-manage
+- operations-pod
 description: "Learn how to set scheduling policies for your business. Scheduling policies include the length of appointments, as well as acceptable lead and cancellation times."
 ---
 

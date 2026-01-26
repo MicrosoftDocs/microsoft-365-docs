@@ -1,7 +1,7 @@
 ---
 title: "Overview of the Tenants page in Microsoft 365 Lighthouse"
 f1.keywords: NOCSH
-ms.author: sharik
+ms.author: dansimp
 author: SKjerland
 manager: scotv
 ms.reviewer: ebamoh
@@ -133,7 +133,7 @@ The **Action items** tab displays a summary of key issues in the customer tenant
 
 #### Devices
 
-The **Devices** section provides a summary of the number of customer device issues that require attention across the tenant, including compliance, threat protection, device health, Windows 365 issues, and Windows event logs. This section also provides links to the associated pages where you can view details about the issues.
+The **Devices** section provides a summary of the number of customer device issues that require attention across the tenant, including compliance, threat protection, device health, and Windows 365 issues. This section also provides links to the associated pages where you can view details about the issues.
 
 #### Users and email
 

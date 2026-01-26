@@ -1,6 +1,6 @@
 ---
 title: Plan for multitenant organizations in Microsoft 365
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 04/02/2025
@@ -90,11 +90,12 @@ Use of the multitenant organization feature requires Microsoft Entra ID P1 licen
 The following are limitations of the multitenant organizations in Microsoft 365:
 
 - A maximum of 100 tenants in the multitenant organization is supported.
-- Teams on the web, Microsoft Teams Rooms (MTR), and VDI/AVD aren't supported.
+- Microsoft Teams Rooms (MTR) aren't supported.
+
 - The ability to grant or revoke permission to receive notifications from other tenants and to switch between tenants isn't supported on mobile.
 - *People in your organization* links may not work for users from another tenant if their account had originally been a guest and they had previously accessed SharePoint resources.
 - It might take up to seven days for a user to appear in search once they've been synchronized. Contact Microsoft support if users aren't searchable after seven days.
-- Support for a guest UserType of member in Power BI is currently in preview. For more information, see [Distribute Power BI content to external guest users with Microsoft Entra B2B](/power-bi/enterprise/service-admin-azure-ad-b2b#who-can-you-invite).
+- Support for a guest UserType of member in Power BI is currently in preview. For more information, see [Distribute Power BI content to external guest users with Microsoft Entra B2B](/fabric/enterprise/powerbi/service-admin-entra-b2b#who-can-you-invite).
 
 If you want to add more than 100 tenants, contact Microsoft support.
 

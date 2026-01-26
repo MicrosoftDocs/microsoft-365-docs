@@ -1,11 +1,11 @@
 ---
 title: "Overview of permissions in Microsoft 365 Lighthouse"
 f1.keywords: CSH
-ms.author: sharik
+ms.author: dansimp
 author: SKjerland
 manager: scotv
 ms.reviewer: taylorau
-ms.date: 11/19/2024
+ms.date: 05/06/2025
 audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-lighthouse
@@ -47,7 +47,7 @@ The following table provides an overview of each Lighthouse RBAC role. For a lis
 
 | Lighthouse&nbsp;RBAC&nbsp;role | Overview |
 |---|---|
-| Account Manager | Account Managers have full access to Sales Advisor pages and data across the entire partner tenant.<br><br>Account Managers can export Sales Advisor data. |
+| Account Manager | Account Managers have full access to opportunities and data across the entire partner tenant.<br><br>Account Managers can export opportunities data. |
 | Administrator | Administrators have full administrative permissions in Lighthouse. <br><br>Administrators can manage RBAC and GDAP permissions, view audit logs, and create baselines, tags, and alerts.<br><br>Administrators are automatically assigned the Privileged Role Administrator, User Administrator, and Group Administrator roles in Microsoft Entra ID and the Admin Agent role in Partner Center. |
 | Author | Authors can manage tenants, tags, alert rules, and baselines to deploy tenant configurations. |
 | Operator | Operators manage customer tenants in Lighthouse based on the GDAP permissions assigned to them for each customer tenant that they manage.<br><br>Operators can view high-level customer tenant status and manage alerts.<br><br>Lighthouse users who hold at least one Microsoft Entra role are automatically assigned the Operator role.<br><br>**Note:** Lighthouse Administrators can use templates on the **Delegated access** page to assign GDAP permissions to Lighthouse users. |
@@ -96,7 +96,6 @@ The following table describes the actions that each Lighthouse RBAC role can per
 |  | View threat management data | | | | | | Yes |
 |  | View device health data | | | | | | Yes |
 |  | View Windows 365 data | | | | | | Yes |
-|  | View Windows event logs | | | | | | Yes |
 | **Apps** | View app performance and app management data | | | | | | Yes |
 | **Quarantined messages** | View and manage quarantined messages | | | | | | Yes | 
 | **Baselines** | View baselines (default, custom) and task details |  | &check; |  &check; | &check; | &check; | No |
@@ -109,7 +108,7 @@ The following table describes the actions that each Lighthouse RBAC role can per
 | **Permissions** | View the **Lighthouse Permissions** page | |  &check; |  |  |  | No |
 |  | Set up and manage Lighthouse permissions |  | &check; |  |  |  | No |
 |  | View, set up, and manage GDAP on the **Delegated access** page |  | &check; |  |  |  | No |
-| **Sales Advisor** | View opportunities | &check; | &check; |  |  |  | No |
+| **Opportunities** | View opportunities | &check; | &check; |  |  |  | No |
 |  | View subscription renewals | &check; | &check; |  |  |  | No |
 |  | View license requests | &check; | &check; |  |  |  | No |
 

@@ -2,29 +2,28 @@
 title: "Learn about Microsoft feedback for your organization"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekuako
-manager: scotv
+ms.author: danbrown
+author: DHB-MSFT
+manager: dansimp
 ms.date: 03/05/2025
 audience: Admin
-ms.topic: article
+ms.topic: concept-article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
-- Tier2 
-- scotvorg
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
 - must-keep
-ms.custom: 
-- AdminSurgePortfolio
-- campaignIDs-batch1
+- trust-pod
+- feedback-content
+ms.custom: campaignIDs-batch1
+hideEdit: true
 description: "Learn about feedback your users can send to Microsoft about Microsoft products."
 ---
 
 # Learn about Microsoft feedback for your organization
 
-User feedback is a critical signal for Microsoft to understand user experiences with Microsoft products. Microsoft values our users’ opinions. User feedback goes directly to our engineers and helps us shape the future of Microsoft products and services for all our users. In this article, you'll find information on what types of feedback exist, how we collect it, what we collect and how we handle the data.
+User feedback is a critical signal for Microsoft to understand user experiences with Microsoft products. Microsoft values our users’ opinions. User feedback goes directly to our engineers and helps us shape the future of Microsoft products and services for all our users. In this article, you can find information on what types of feedback exist, how we collect it, what we collect and how we handle the data.
 
 As an admin, you can manage the feedback signal for your organization. We provide you with policy settings to help you manage user feedback collection within the Microsoft 365 applications for your organization. These policy settings help you target Microsoft Entra groups and configure the feedback collection experience for your organization. User feedback goes directly to our engineers and helps us shape the future of Microsoft products and services for all our users. You can learn more about these policy settings, which applications they apply to, and best practices at [Manage Microsoft feedback for your organization](../manage/manage-feedback-ms-org.md).
 
@@ -92,7 +91,7 @@ If you've enabled the corresponding policies, we might allow users to submit scr
 - Screenshots: Captures of the user’s screen at the time they submitted feedback. Example: the screen including the dialog box from which the user is submitting feedback.
 - Attachments: Files the user can choose to attach to their feedback. Example: the file they were working on when they encountered a problem.
 - Content samples: Portions of content from the customer’s document or interactions with Microsoft services. Example: the prompt the user sent to an AI service and the response the user received back from that AI service.
-- Log files: Additional log files that aren't included in [diagnostic log files for Office](https://support.microsoft.com/office/fba86aac-70dc-4858-ae1f-ec2034346cdf) and that might include the user’s name or contents of the user’s files. Examples: logs that include the element of the customer’s file that is preventing the file from saving.
+- Log files: Additional log files that aren't included in [diagnostic log files for Office](https://support.microsoft.com/office/fba86aac-70dc-4858-ae1f-ec2034346cdf) and that might include the user’s name or contents of the user’s files. Examples: logs that include the element of the customer’s file that's preventing the file from saving.
 
 > [!NOTE]
 > - For information about what feedback data is collected about Microsoft Copilot with Microsoft 365 apps, see [Providing feedback about Microsoft Copilot with Microsoft 365 apps](https://support.microsoft.com/topic/c481c26a-e01a-4be3-bdd0-aee0b0b2a423).
@@ -100,7 +99,10 @@ If you've enabled the corresponding policies, we might allow users to submit scr
 
 ## How can I see my user's feedback?
 
-Administrators can view, delete, and export the feedback data for their organizations in the Microsoft 365 admin center. This functionality assists administrators to provide direct transparency into their users’ experiences with Microsoft 365 products and enables user feedback data to be provided as part of any Data Subject Request. The Compliance Administrator role (and the Global Administrator role) has the ability to view, export, and delete user feedback. All other administrators, as well as readers, are able to view and export feedback data but can't perform compliance related tasks or see information about who posted the feedback (such as user name, email, or device name). 
+Administrators can view, delete, and export the feedback data for their organizations in the Microsoft 365 admin center. This functionality assists administrators to provide direct transparency into their users’ experiences with Microsoft 365 products and enables user feedback data to be provided as part of any Data Subject Request. The Compliance Administrator role (and the Global Administrator role) has the ability to view, export, and delete user feedback. All other administrators, as well as readers, are able to view and export feedback data but can't perform compliance related tasks or see information about who posted the feedback (such as user name, email, or device name).
+
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. This helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role. For more information, see [About administrator roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
 
 To access your organization's feedback data, sign in to the Microsoft 365 admin center and customize navigation to show the health node. Access this experience by selecting **Product Feedback** under the Health node.
 
@@ -110,4 +112,4 @@ To access your organization's feedback data, sign in to the Microsoft 365 admin 
 
 We understand that when you use our cloud services, you're entrusting us with one of your most valuable assets: your data. We make sure the feedback we receive is stored and handled under Microsoft governance rules, and that it can only be accessed for approved uses. We don't use your email, chat, files, or other personal content to target ads to you. When we collect data, we use it to make your experiences better.
 
-To learn more about how we protect the privacy and confidentiality of your data, and how we ensure that it will be used only in a way that is consistent with your expectations, review our privacy principles at the [Microsoft Trust Center](https://www.microsoft.com/trust-center/privacy).
+To learn more about how we protect the privacy and confidentiality of your data, and how we ensure that it will be used only in a way that's consistent with your expectations, review our privacy principles at the [Microsoft Trust Center](https://www.microsoft.com/trust-center/privacy).

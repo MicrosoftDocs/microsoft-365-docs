@@ -2,8 +2,8 @@
 title: "Microsoft 365 admin center - Overview"
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
+ms.author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 03/19/2025
 audience: Admin
@@ -17,12 +17,13 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- operations-pod
 ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 - admindeeplinkMAC
-monikerRange: 'o365-worldwide'
+monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150

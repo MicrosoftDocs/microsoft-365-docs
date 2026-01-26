@@ -1,12 +1,12 @@
 ---
 title: Collaborate with guests from other Microsoft 365 cloud environments
-author: DaniEASmith
-ms.author: danismith
+author: officedocspr5
+ms.author: odocspr
 manager: jtremper
 ms.date: 09/29/2023
 audience: ITPro
 ms.topic: how-to
-ms.service: o365-solutions
+ms.service: m365-planning
 ms.collection:
 - highpri
 - Tier1
@@ -15,7 +15,8 @@ ms.collection:
 - m365solution-3tiersprotection
 - m365solution-securecollab
 - m365initiative-externalcollab
-ms.custom: 
+- guest-access-external-collab
+ms.custom: m365-solutions-doc-set
 ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
@@ -40,8 +41,9 @@ In order to invite guests from an organization in a different Microsoft Azure cl
 Note that tenants in Microsoft Azure Government (Microsoft 365 GCC High and DoD) can't create a cross-tenant connection with tenants in Microsoft Azure China.
 
 > [!NOTE]
-> VDI clients aren't supported for cross-cloud guests.
-> 
+> VDI clients using the new [SlimCore-based optimization](/microsoftteams/vdi-2#cross-cloud-collaboration) are supported for cross-cloud meetings. WebRTC-based optimization doesn't support cross-cloud meetings.
+
+> [!NOTE]
 > B2B Member accounts aren't supported for cross cloud guests.  All cross cloud users must be of type B2B guest.
 
 > [!IMPORTANT]
@@ -57,7 +59,7 @@ Inviting guests from organizations in other Microsoft 365 cloud environments req
 
 Additionally, to enable B2B collaboration with an organization in a different Microsoft 365 cloud environment, you need the organization's tenant ID. If you know the fully qualified domain name of the other organization, you can look up the tenantID in the Teams admin center. Open [meeting settings](https://admin.teams.microsoft.com/meetings/settings), select **Lookup** under **Cross-cloud meetings**, type in the fully qualified domain name, and select **Show tenant ID**.
 
-For the best meeting experiences across Microsoft clouds, make sure your network is ready for Microsoft Teams.  [Prepare your organization's network for Microsoft Teams](/microsoftteams/prepare-network#network-requirements) contains guidance on how to optimize your network for Teams.  Also ensure that the necessary DNS, IPs and Ports are enabled for each of the M365 clouds where your users are collaborating.  The following table links to the endpoint definitions for each of the M365 cloud environments:
+For the best meeting experiences across Microsoft clouds, make sure your network is ready for Microsoft Teams.  [Prepare your organization's network for Microsoft Teams](/microsoftteams/prepare-network#network-requirements) contains guidance on how to optimize your network for Teams.  Also ensure that the necessary DNS, IPs and Ports are enabled for each of the Microsoft 365 clouds where your users are collaborating.  The following table links to the endpoint definitions for each of the Microsoft 365 cloud environments:
 
 |Microsoft 365 Cloud Environment|Endpoints|
 |:--------------------------------|:------------------------------|

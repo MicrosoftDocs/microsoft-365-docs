@@ -27,7 +27,7 @@ appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ms.custom: seo-marvel-mar2020
-ms.date: 02/20/2024
+ms.date: 10/24/2025
 ---
 
 # Use roles to define your frontline managers and workers in Shifts

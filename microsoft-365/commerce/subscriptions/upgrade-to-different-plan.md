@@ -5,13 +5,13 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: mijeffer, nicholak
+ms.reviewer: mijeffer, jobailey
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
 - M365-subscription-management
@@ -23,9 +23,10 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkMAC
 - GAUpdates
-search.appverid: MET150 
+service.tree.id: 84a24b9c-ce0c-4b4b-b837-45bc5ee4bef0
+search.appverid: MET150
 description: "Learn how to upgrade or change to a different plan in the Microsoft 365 admin center."
-ms.date: 12/05/2024
+ms.date: 10/28/2025
 ---
 
 # Upgrade or change to a different Microsoft 365 for business plan
@@ -59,7 +60,8 @@ Changing plans is the right choice when you want to move all users assigned to a
    - If you’re using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. Select the subscription that you want to manage.
 1. On the subscription details page, in the **Other subscription options** section, select **Change to a different subscription option**.
-1. Choose when to schedule the change, enter the number of licenses that you want, select a subscription length and a billing frequency, then select **Change plan**.
+1. Choose when to schedule the change, enter the number of licenses that you want, select a subscription length and a billing frequency, then select **Change plan**. 
+
 ### If you have an MOSA billing account type
 
 [!INCLUDE [office-365-operated-by-21vianet-admin-center-link](../../includes/office-365-operated-by-21vianet-admin-center-link.md)]
@@ -93,7 +95,7 @@ If you can't select the **View upgrades recommended for your org** link, it mean
 |You have a government or non-profit plan. |If you have a government or non-profit plan, you can [change plans manually](#change-plans-manually). |
 |The plan that you want to change to isn't a supported option. |The plans that are available to change to are displayed based on the services in your current plan. You can only automatically change to a plan that has the same data-related services, or to a higher version. This ensures that users don't lose data related to those services during the change.</br></br>If you want to change to a plan with fewer services, you can [change plans manually](#change-plans-manually). |
 |Your subscription has an add-on. |If you start to change plans and your subscription has an add-on that prevents you from continuing, remove the add-on. You can add it back later if you still need it. You can also [change plans manually](#change-plans-manually).  |
-|Your invoice has an unpaid balance.  |This only applies if you pay for your subscription by invoice. To resolve this issue, find the subscription on the **Your products** page, and select the **Pay now** or **Settle balance** link in the **Billing** section. After the payment is made, try changing plans again.  |
+|Your invoice has an unpaid balance.  |This only applies if you pay for your subscription by wire transfer. To resolve this issue, find the subscription on the **Your products** page, and select the **Pay now** or **Settle balance** link in the **Billing** section. After the payment is made, try changing plans again.  |
 |I have a different problem than what's listed here.  |You can [change plans manually](#change-plans-manually) or [contact support](../../admin/get-help-support.md).  |
 
 ## What does automatically changing plans do to my service and billing?
@@ -114,7 +116,7 @@ When you change plans automatically, your services and billing are affected in t
 
 ### Billing
 
-The day your plan change is complete, the billing on your old subscription is turned off and the billing on your new subscription is turned on. Depending on the new plan you selected, you might receive a prorated credit. You receive a new invoice that includes the credit for your old subscription within 30 days of changing to the new subscription.
+The day your plan change is complete, the billing on your old subscription is turned off and the billing on your new subscription is turned on. Depending on the new plan you selected, you might receive a prorated credit. If you have an MCA billing account, you receive a new invoice that includes the credit for your old subscription within one to two days of changing to the new subscription. If you have an MOSA billing account, you receive a new invoice that includes the credit for your old subscription within 30 days of changing to the new subscription.
 
 > [!NOTE]
 > The length of time it takes to receive your prorated credit depends on the payment method used for the old subscription.

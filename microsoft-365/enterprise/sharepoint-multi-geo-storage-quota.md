@@ -2,7 +2,7 @@
 title: "SharePoint storage quotas in multi-geo environments"
 ms.reviewer: adwood
 ms.date: 07/31/2024
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 audience: ITPro

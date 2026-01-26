@@ -7,7 +7,7 @@ ms.author: tinachen
 manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting
-ms.date: 07/06/2021
+ms.date: 10/08/2025
 ms.service: test-base
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
@@ -33,11 +33,11 @@ Check out the step-by-step outline below to find out how to access this new capa
 
 ## A step-by-step example of Test Base account creation by using Python SDK
 
-1. Pre-requisites:
+1. Prerequisites:
 
    - Install below required components:
 
-     - [Azure account with an active subscription](https://azure.microsoft.com/free/?utm_source=campaign&utm_campaign=python-dev-center&mktingSource=environment-setup) if you don't have a subscription
+     - [Azure account with an active subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) if you don't have a subscription
      - [Python 2.7+ or 3.6+](https://www.python.org/downloads)
      - [Azure Command-Line Interface (CLI)](/cli/azure/install-azure-cli)
 
@@ -50,7 +50,7 @@ Check out the step-by-step outline below to find out how to access this new capa
 
    - Authenticating in dev environment
 
-     When debugging and executing code locally it is typical for developers to use their own accounts for authenticating calls to Azure services. The azure-identity package supports authenticating through Azure CLI to simplify local development. To sign in to Azure CLI, run `az login`. On a system with a default web browser, the Azure CLI will launch the browser to authenticate a user.
+     When debugging and executing code locally it's typical for developers to use their own accounts for authenticating calls to Azure services. The azure-identity package supports authenticating through Azure CLI to simplify local development. To sign in to Azure CLI, run `az login`. On a system with a default web browser, the Azure CLI will launch the browser to authenticate a user.
 
      Check [How to authenticate Python applications with Azure services| Microsoft Docs](/azure/developer/python/azure-sdk-authenticate) and <https://pypi.org/project/azure-identity/> for other supported authentication methods.
 
@@ -99,7 +99,7 @@ Check below links to learn more details about the SDK & API.
 
 **Azure Subscription**:
 
-- [Azure account with an active subscription](https://azure.microsoft.com/free/?utm_source=campaign&utm_campaign=python-dev-center&mktingSource=environment-setup)
+- [Azure account with an active subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn)
 
 **Python SDK**:
 

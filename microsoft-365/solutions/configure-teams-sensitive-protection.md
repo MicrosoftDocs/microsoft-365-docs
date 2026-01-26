@@ -7,7 +7,7 @@ manager: pamgreen
 ms.date: 12/08/2023
 audience: ITPro
 ms.topic: how-to
-ms.service: o365-solutions
+ms.service: m365-planning
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -21,6 +21,7 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 - admindeeplinkSPO
+- m365-solutions-doc-set
 recommendations: false
 description: Learn how to deploy teams with protection for sensitive data.
 ---
@@ -135,7 +136,7 @@ To update the site default sharing link type
 1. Under Default sharing link type, clear the **Same as organization-level setting** check box, and select **Specific people (only the people the user specifies)**.
 1. Select **Save**.
 
-If you want to script this as part of your team creation process, you can use [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) with the `-DefaultSharingLinkType Direct` parameter to change the default sharing link to *Specific people*.
+If you want to script this as part of your team creation process, you can use [Set-SPOSite](/powershell/module/microsoft.online.sharepoint.powershell/set-sposite) with the `-DefaultSharingLinkType Direct` parameter to change the default sharing link to *Specific people*.
 
 Note that if you add private or shared channels to the team, each creates a new SharePoint site with the default sharing settings. You can update them in the SharePoint admin center by selecting the sites associated with the team.
 

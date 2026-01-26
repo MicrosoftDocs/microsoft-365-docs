@@ -2,15 +2,15 @@
 title: "Set up Microsoft 365 Business Basic"
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
+ms.author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 05/31/2024
 audience: Admin
 ms.topic: install-set-up-deploy
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier2
 - scotvorg
 - highpri
@@ -20,6 +20,7 @@ ms.collection:
 - Adm_O365_Setup
 - TRN_SMB
 - must-keep
+- operations-pod
 ms.custom:
 - VSBFY23
 - TRN_M365B

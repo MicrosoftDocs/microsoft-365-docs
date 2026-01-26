@@ -1,6 +1,6 @@
 ---
 title: "Best practices for using Office 365 on a slow network"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 04/09/2024

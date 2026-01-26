@@ -1,23 +1,27 @@
 ---
 title: Integrate Microsoft OneDrive LTI with Schoology Learning
-author: DaniEASmith
-ms.author: danismith
-manager: jacktremper
-ms.reviewer: amitman 
-ms.date: 08/08/2022
+author: jennplatt
+ms.author: avering
+manager: michal.gideoni
+ms.date: 01/14/2026
+last.review.date: 01/14/2026
 audience: admin
 ms.topic: integration
-ms.service: msteams
-ms.subservice: teams-education
+ms.service: microsoft-365-education
 ms.collection: 
 - M365-modern-desktop
 - m365initiative-edu
 - tier2
+- m365-education
+- all-education
 ms.localizationpriority: medium
 description: Create and grade assignments, build and curate course content, and collaborate on files in real time with the new Microsoft OneDrive Learning Tools Interoperability App for PowerSchool Unified Classroom® Schoology Learning.
 ---
 
 # Integrate Microsoft OneDrive LTI with Schoology Learning
+
+>[!NOTE]
+>The classic Microsoft OneDrive, OneNote, Teams Assignments, and Reflect LTI apps have been replaced by the [new Microsoft 365 LTI](https://aka.ms/LMSAdminDocs). The classic apps will be sunset on September 17, 2026. After that date, the classic apps and any content links in courses will stop working. However, the files, notebooks, teams, meetings, and check-ins created by the classic app will continue to be accessible through Microsoft 365. For further guidance on moving your users and courses to the new Microsoft 365 LTI experiences and migrating content links, review the [migration guidance for the classic LTI apps](/microsoft-365/lti/microsoft-365-lti-first-time-configuration#migration-guidance).
 
 This guide provides IT admins steps for registering the OneDrive LTI app for PowerSchool Unified Classroom® Schoology Learning.
 
@@ -40,6 +44,10 @@ The person who performs this integration should be an administrator of Schoology
 1. Sign into the [Microsoft OneDrive LTI Registration Portal](https://onedrivelti.microsoft.com/admin) using an Office 365 Global Admin credential.
 1. Select the **Admin Consent** button and accept the permissions.
     1. If this step isn't completed successfully, the following step will give you an error, and you may not be able to take this step for an hour once you've gotten the error. If the consent fails, ensure you're signed in as a Global Admin and repeat this step.
+
+    > [!IMPORTANT]
+    > Global Administrator is a highly privileged role. Limit its use to emergency scenarios when you can't use an existing role. For more information, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
+
 1. Select the **Create new LTI Tenant** button.
 1. In the **LTI Consumer Platform** list, select **Schoology**.
 1. In the **Schoology Base URL** field, enter your Schoology Learning base URL, like `https://testschool.schoology.com`.

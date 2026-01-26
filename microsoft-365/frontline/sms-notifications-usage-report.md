@@ -21,13 +21,13 @@ appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ms.custom: seo-marvel-apr2020
-ms.date: 10/26/2023
+ms.date: 10/06/2025
 ---
 # Microsoft Teams SMS notifications usage report
 
 ![Information icon](media/info.png) **This feature requires [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).**
 
-The SMS notifications usage report in the Microsoft Teams admin center gives you an overview of SMS notifications usage for virtual appointments in your organization. It provides usage data for SMS notifications sent in the Virtual Appointments app, in meetings scheduled using the Virtual appointment meeting template, and in Teams Electronic Health Record (EHR)-integrated appointments.
+The SMS notifications usage report in the Microsoft Teams admin center gives you an overview of SMS notifications usage for virtual appointments in your organization. It provides usage data for SMS notifications sent in meetings scheduled using the Virtual appointment meeting template and in Teams Electronic Health Record (EHR)-integrated appointments.
 
 You can track key data for confirmation and reminder text messages sent to external attendees in virtual appointments scheduled by your staff. The report provides information such as date and time sent, notification type, distribution details, and delivery status.
 

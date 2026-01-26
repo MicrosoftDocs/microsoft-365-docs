@@ -1,7 +1,7 @@
 ---
 title: "Troubleshoot error messages and problems in Microsoft 365 Lighthouse"
 f1.keywords: NOCSH
-ms.author: sharik
+ms.author: dansimp
 author: SKjerland
 manager: scotv
 ms.reviewer: crimora
@@ -160,17 +160,17 @@ You should also make sure Conditional Access policies configured in the customer
 
 If data is still not appearing on the Device compliance and Threat management pages after following the resolution instructions, contact Support. For more information, see [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
 
-## Sales Advisor
+## Opportunities
 
-### Message when viewing the Sales Advisor Opportunities page in Lighthouse: "You don't have permission to view the information on this page"
+### Message when viewing the Opportunities page in Lighthouse: "You don't have permission to view the information on this page"
 
-**Cause:** You don't have the correct permissions in Partner Center to view the Sales Advisor pages in Lighthouse.
+**Cause:** You don't have the correct permissions to view the Opportunities page in Lighthouse.
 
 **Resolution:** Verify that you hold the Account Manager role in Lighthouse. If you don't hold the Account Manager role, reach out to someone who holds the Administrator role in Lighthouse and ask them to assign the role to you. For more information, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md).
 
-### Message when viewing the Sales Advisor Opportunities page in Lighthouse: "There are no opportunities"
+### Message when viewing the Opportunities page in Lighthouse: "There are no opportunities"
 
-**Cause 1:** Sales Advisor's propensity model may not be generating new recommendations for your customers. This means that there are currently no opportunities for you to view or act on.
+**Cause 1:** The machine learning (ML) model may not be generating new recommendations. This means there are currently no opportunities for you to view or act on.
 
 **Resolution:** Check back in two weeks to see if any new recommendations have been generated.
 
@@ -178,21 +178,7 @@ If data is still not appearing on the Device compliance and Threat management pa
 
 **Resolution:** Open a service request by following the instructions in [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md). To create a Lighthouse service request, make sure you have a partner tenant role and at least one Microsoft Entra role assigned to you with the following property set: **microsoft.office365.supportTickets/allEntities/allTasks**. For a complete list of Microsoft Entra roles, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference).
 
-### Message when trying to access Lighthouse from the Partner Insights tab of Sales advisor: "You must be an indirect reseller or direct-bill partner to use this service" or I'm redirected to the Lighthouse Home page but can't sign in
-
-**Cause 1:** Microsoft 365 Lighthouse hasn't been deployed in your partner tenant yet.
-
-**Resolution:** Work with someone who holds the Administrator role in Lighthouse to deploy Lighthouse in your partner tenant. For more information, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
-
-**Cause 2:** Your organization has multiple partner tenants and you attempted to access Lighthouse using credentials for a partner tenant that hasn't yet deployed Lighthouse.
-
-**Resolution:** Use the same Microsoft Entra credentials that you used to sign in to Partner Center to access Lighthouse. If you're unsure, reach out to someone in your partner tenant who has the appropriate permissions to confirm which partner tenants have deployed Lighthouse. If needed, have them deploy Lighthouse to the partner tenant that you're trying to use. For more information, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md). 
-
-**Cause 3:** You attempted to access Lighthouse from a partner tenant that isn't qualified to use Lighthouse. At this time, Lighthouse supports only indirect resellers and direct-bill partners.
-
-**Resolution:** For a complete list of qualifications and requirements, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md). If you're not an indirect provider and believe you received this message in error, contact Support. For more information, see [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
-
-### Data or opportunities displayed on Sales Advisor pages seem inaccurate
+### Data or opportunities displayed on the Opportunities page seem inaccurate
 
 **Cause:** If you see an opportunity with a customer that you don't recognize, you may have incomplete or incorrect information regarding the partner relationship that your organization has with that customer.
 

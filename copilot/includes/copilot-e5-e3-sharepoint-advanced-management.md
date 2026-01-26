@@ -1,7 +1,7 @@
 ---
-author: MandiOhlinger
-ms.author: mandia
-manager: laurawi
+author: maggierui
+ms.author: ruihu
+manager: dansimp
 ms.reviewer: ruihu
 ms.service: microsoft-365-copilot
 ms.topic: include
@@ -39,9 +39,9 @@ To learn more about this policy and report, see [Site ownership policy](/sharepo
 
 ### Find and cleanup inactive sites
 
-✅ **Create a [site lifecycle management policy](/sharepoint/site-lifecycle-management#create-an-inactive-site-policy) that finds inactive sites**
+✅ **Create a [site lifecycle management policy](/sharepoint/site-lifecycle-management#how-to-create-an-inactive-site-policy) that finds inactive sites**
 
-A [site lifecycle management policy](/sharepoint/site-lifecycle-management#create-an-inactive-site-policy) automatically detects inactive sites and sends a notification email to the site owners. When you use the email, the site owners can confirm that the site is still active.
+A [site lifecycle management policy](/sharepoint/site-lifecycle-management#how-to-create-an-inactive-site-policy) automatically detects inactive sites and sends a notification email to the site owners. When you use the email, the site owners can confirm that the site is still active.
 
 Copilot can show data from these inactive sites in user prompts, which can lead to inaccurate and cluttered Copilot results.
 
@@ -53,13 +53,13 @@ The policy also creates a report that you can download and review. The report sh
 4. When the policy runs and finds inactive sites, the policy automatically emails the site owners. The site owners should confirm if the site is still active.
 5. If the site owners confirm the sites aren't needed, then put inactive sites in [read-only mode with SAM](/sharepoint/site-lifecycle-management#read-only-mode), or move the sites to [Microsoft 365 Archive with SAM](/microsoft-365/archive/archive-setup).
 
-To learn more about this policy and report, see [site lifecycle management policy](/sharepoint/site-lifecycle-management#create-an-inactive-site-policy).
+To learn more about this policy and report, see [site lifecycle management policy](/sharepoint/site-lifecycle-management#how-to-create-an-inactive-site-policy).
 
 #### Best practices for managing inactive SharePoint sites
 
 - [**Use the policy execution report**](/sharepoint/site-lifecycle-management) to keep track on site owner action status in response to the notifications.
 - Select the Get AI insights button to [**get AI insights**](/sharepoint/advanced-management#ai-insights) generated for the report to help you identify issues with the sites and possible actions to address these issues.
-- **Give the site owners a timeline** to complete these tasks. If they don't complete the task within the timeframe, you can move the sites to [Microsoft 365 Archive](/microsoft-365/archive/archive-overview) using [SAM Inactive Sites - Archive capability](/sharepoint/site-lifecycle-management#create-an-inactive-site-policy) so that you can reactive them later if needed.
+- **Give the site owners a timeline** to complete these tasks. If they don't complete the task within the timeframe, you can move the sites to [Microsoft 365 Archive](/microsoft-365/archive/archive-overview) using [SAM Inactive Sites - Archive capability](/sharepoint/site-lifecycle-management#how-to-create-an-inactive-site-policy) so that you can reactive them later if needed.
 
 This action helps reduce outdated content that clutters Copilot's data source, which improves the accuracy of Copilot responses.
 

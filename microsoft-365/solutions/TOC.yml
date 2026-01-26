@@ -15,40 +15,14 @@ items:
 
 - name: Microsoft 365 foundation solutions 
   items: 
-    - name: Set up your infrastructure for hybrid work
+    - name: Set up zero trust
       items:
-      - name: Overview   
-        href: empower-people-to-work-remotely.md
-      - name: Step 1. Increase sign-in security
-        href: empower-people-to-work-remotely-secure-sign-in.md
-      - name: Step 2. Provide remote access
-        href: empower-people-to-work-remotely-remote-access.md
-      - name: Step 3. Deploy security and compliance
-        href: empower-people-to-work-remotely-security-compliance.md
-      - name: Step 4. Deploy endpoint management
-        href: empower-people-to-work-remotely-manage-endpoints.md
-      - name: Step 5. Deploy productivity apps and services
-        href: empower-people-to-work-remotely-teams-productivity-apps.md
-      - name: Step 6. Train your workers
-        href: empower-people-to-work-remotely-train-monitor-usage.md
+      - name: Overview
+        href: /security/zero-trust/microsoft-365-zero-trust
     - name: Manage endpoints with Intune and Microsoft 365
       items:
       - name: Overview
-        href: manage-devices-with-intune-overview.md
-      - name: Step 1. Implement app protection policies
-        href: manage-devices-with-intune-app-protection.md
-      - name: Step 2. Enroll devices into management
-        href: manage-devices-with-intune-enroll.md
-      - name: Step 3. Set up compliance policies
-        href: manage-devices-with-intune-compliance-policies.md
-      - name: Step 4. Require healthy and compliant devices
-        href: manage-devices-with-intune-require-compliance.md
-      - name: Step 5. Deploy device profiles
-        href: manage-devices-with-intune-configuration-profiles.md
-      - name: Step 6. Monitor device risk and compliance to security baselines
-        href: manage-devices-with-intune-monitor-risk.md 
-      - name: Step 7. Implement data loss prevention (DLP) with information protection capabilities
-        href: manage-devices-with-intune-dlp-mip.md             
+        href: manage-devices-with-intune-overview.md          
     - name: Set up secure collaboration with Microsoft 365
       items:
       - name: Overview   

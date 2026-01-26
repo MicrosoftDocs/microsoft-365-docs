@@ -6,7 +6,7 @@ manager: jtremper
 ms.date: 12/11/2023
 audience: ITPro
 ms.topic: how-to
-ms.service: o365-solutions
+ms.service: m365-planning
 ms.collection: 
 - highpri
 - Tier1
@@ -15,7 +15,9 @@ ms.collection:
 - m365solution-3tiersprotection
 - m365solution-securecollab
 - m365initiative-externalcollab
-ms.custom: admindeeplinkSPO
+ms.custom:
+- admindeeplinkSPO
+- m365-solutions-doc-set
 ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false

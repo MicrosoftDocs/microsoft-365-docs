@@ -1,16 +1,16 @@
 ---
 title: Data Residency for Viva Connections
 description: Data Residency for Viva Connections
-ms.author: kvice
-author: kelleyvice-msft
-manager: scotv
+ms.author: v-fahasen
+author: fhasen-msft
+manager: Justin.Giammona
 ms.service: microsoft-365-enterprise
 ms.subservice: advanced-data-residency
 ms.topic: article
 f1.keywords:
 - NOCSH
 ms.date: 02/11/2025
-ms.reviewer: deanw
+ms.reviewer: jugiammo
 ms.custom:
 - it-pro
 ms.localizationpriority: medium

@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 03/05/2025
+ms.date: 06/05/2025
 ms.topic: article
 ms.service: microsoft-365-backup
 search.appverid: 
@@ -62,6 +62,10 @@ Restoration of any data (such as sites or mailbox items) reverts the data's sens
 Data residency refers to the geographic location where data is stored at rest. The way that data is transferred and stored in Microsoft 365 Backup is defined in the [Microsoft Products and Services Data Protection Addendum](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA) (DPA).
 
 All data within Microsoft 365 Backup is stored within the customer tenant for any given service and follows the standard Microsoft 365 data storage guidelines by available geography. The metadata used for billing purposes is sent to Azure and includes: entitlement_id, event_id, usage_date_time, metered_resource_id, quantity, resourceUri, location, tags.isinternaltenant, tags.protectionunitid, tags.servicetype, tags.tenants, tags.applications, and azure_cloud.
+
+## Audit logs
+
+[Microsoft Purview auditing solutions](/purview/audit-get-started) provide an integrated solution to help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations. You can [search for audit events](/purview/audit-search) for [Backup activities](/purview/audit-log-activities) such as create policy or restore using PowerShell or Microsoft Purview Audit.
 
 ## Security
 

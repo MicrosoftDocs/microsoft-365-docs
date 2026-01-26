@@ -20,6 +20,8 @@ items:
       href: archive-compliance.md
     - name: End user experience 
       href: archive-end-user.md
+    - name: End-user search
+      href: search/m365-archive-search-overview.md
     - name: FAQs
       href: archive-faq.md
 

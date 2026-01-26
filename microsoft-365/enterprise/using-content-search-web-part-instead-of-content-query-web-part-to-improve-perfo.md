@@ -1,6 +1,6 @@
 ---
 title: "Using Content Search Web Part instead of Content Query Web Part to improve performance in SharePoint in Microsoft 365"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 08/01/2024

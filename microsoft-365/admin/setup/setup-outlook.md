@@ -10,18 +10,20 @@ audience: Admin
 ms.topic: install-set-up-deploy
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier2
 - scotvorg
 - highpri
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
-ms.custom: 
+- operations-pod
+ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 description: "Learn how to set up Outlook for your Microsoft 365 email."
 ---
+
 # Set up Outlook for Microsoft 365 for business email
 
 Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).

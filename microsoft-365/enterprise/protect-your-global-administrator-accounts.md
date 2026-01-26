@@ -1,6 +1,6 @@
 ---
 title: "Step 2. Protect your Microsoft 365 privileged accounts"
-ms.author: kvice
+ms.author: scotv
 author: kelleyvice-msft
 manager: scotv
 ms.date: 09/26/2024

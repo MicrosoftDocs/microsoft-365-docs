@@ -1,13 +1,13 @@
 ---
 title: Plan external collaboration with channel conversations, file collaboration, and shared apps
-author: DaniEASmith
-ms.author: danismith
+author: officedocspr5
+ms.author: odocspr
 manager: jtremper
 ms.reviewer: jasonlewis
 ms.date: 12/13/2023
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: m365-planning
 ms.collection:
 - highpri
 - Tier1
@@ -17,6 +17,7 @@ ms.collection:
 - m365initiative-externalcollab
 ms.custom:
 - seo-marvel-apr2020
+- m365-solutions-doc-set
 - seo-marvel-jun2020
 ms.localizationpriority: medium
 f1.keywords: NOCSH

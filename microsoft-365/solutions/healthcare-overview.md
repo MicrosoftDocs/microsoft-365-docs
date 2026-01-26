@@ -1,18 +1,20 @@
 ---
 title: Microsoft 365 solutions for the healthcare industry
 description: Learn about solution and architecture resources for the healthcare industry using Microsoft 365
-ms.author: samanro
-author: samanro
-manager: bcarter
+author: dansimp
+ms.author: dansimp
+manager: dansimp
 ms.audience: ITPro
 ms.topic: solution-overview
-ms.service: o365-solutions
+ms.service: m365-planning
 ms.localizationpriority: medium
 ms.collection:
 - highpri 
 - M365-subscription-management
 - M365solution-overview
-ms.custom: seo-marvel-jun2020
+ms.custom:
+- seo-marvel-jun2020
+- m365-solutions-doc-set
 f1.keywords: NOCSH
 ms.date: 12/05/2022
 
@@ -34,7 +36,7 @@ Learn how you can use Microsoft 365, Dynamics 365, and Azure to digitize, modern
 
 |Resource |Description  |
 |---------|---------|
-|[Virtual Appointments with Microsoft Teams](../frontline/virtual-appointments.md) | Use the Virtual Appointments app or the Bookings app in Microsoft Teams to schedule and manage appointments for your care team members to meet with patients or other healthcare providers to discuss medical care.    |
+|[Appointments with Microsoft Teams](../frontline/virtual-appointments.md) | Use Bookings in Microsoft Teams to schedule and manage appointments for your care team members to meet with patients or other healthcare providers to discuss medical care.    |
 |[Microsoft 365 for Healthcare](/microsoft-365/frontline/teams-in-hc)    |  Microsoft Teams offers a number of telemedicine features useful for hospitals and other Healthcare organizations. <br>- Virtual visits and Electronic Healthcare Record (EHR) integration<br>- Teams policy packages<br>- Secure messaging<br>- Teams templates<br>- Care coordination and collaboration      |
 |[Microsoft Cloud for Healthcare](/industry/healthcare/overview)  | Learn about Microsoft Cloud for Healthcare and how it brings together trusted capabilities to customers and partners that enhance patient engagement, empowers health team collaboration, and improves clinical and operational data insights to improve decision-making and operational efficiencies.     |
 |[Microsoft Cloud for Healthcare reference architectures](/industry/healthcare/architecture/overview) | Find reference architectures to help healthcare organizations project managers, enterprise architects, and IT managers collaborate and communicate effectively about implementing Microsoft Cloud for Healthcare. |
@@ -42,7 +44,7 @@ Learn how you can use Microsoft 365, Dynamics 365, and Azure to digitize, modern
 
 ## Videos you can share with your team
 
-**St. Luke’s Hospital uses Microsoft 365 to reimagine care for patients**
+**St. Luke's Hospital uses Microsoft 365 to reimagine care for patients**
 <br>
 
 > [!VIDEO https://www.youtube.com/embed/-jcBjy88n4s]

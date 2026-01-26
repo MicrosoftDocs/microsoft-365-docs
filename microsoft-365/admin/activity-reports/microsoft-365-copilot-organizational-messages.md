@@ -1,14 +1,15 @@
 ---
 title: "Microsoft 365 Copilot features adoption using organizational messages"
-ms.author: camillepack
-author: camillepack
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 ms.date: 03/18/2025
+ms.update-cycle: 180-days
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier2
 - scotvorg
 - M365-subscription-management
@@ -16,7 +17,9 @@ ms.collection:
 - Adm_NonTOC
 - m365copilot
 - magic-ai-copilot
-ms.custom: AdminSurgePortfolio
+- operations-pod
+ms.custom:
+- GAUpdates
 search.appverid:
 - BCS160
 - MST160
@@ -41,6 +44,8 @@ To preview organizational messages in the Microsoft 365 Copilot usage report, yo
 - Organizational Message Writer
 
 The Organizational Message Writer role is a built-in role that allows assigned admins to view and configure organizational messages for their tenant. This role doesn't grant access to user-level details in usage reports or the ability to modify permission settings. To learn more about the Organizational Message Writer role, see [About admin roles](../add-users/about-admin-roles.md).
+
+[!INCLUDE [global-administrator-note](../../includes/global-administrator-note.md)]
 
 The global administrator can assign the Organizational Messages Writer role to an admin user by following these steps:
 

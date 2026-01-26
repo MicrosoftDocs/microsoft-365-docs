@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: emmasheridan, nicholak
+ms.reviewer: patyc
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -14,10 +14,10 @@ ms.localizationpriority: high
 ms.collection:
 - Tier1
 - scotvorg
-- highpri 
+- highpri
 - M365-subscription-management
 - Adm_O365
-ms.custom: 
+ms.custom:
 - commerce_subscriptions
 - VSBFY23
 - AdminSurgePortfolio
@@ -28,7 +28,7 @@ ms.custom:
 - campaignIDs-batch2
 search.appverid: MET150
 description: "Learn how to cancel your trial or paid subscriptions in the Microsoft 365 admin center."
-ms.date: 03/27/2025
+ms.date: 05/19/2025
 ---
 
 # Cancel your subscription in the Microsoft 365 admin center
@@ -54,7 +54,7 @@ If you have **Microsoft 365 Family** or **Microsoft 365 Personal**, see [Cancel 
 > If you're the person who signed up for the subscription, you're automatically a Billing account owner.
 
 > [!IMPORTANT]
-> If you have an MCA billing account type, you automatically receive a product called Microsoft Entra ID Free. Because this product helps manage your billing account, you can't cancel it. However, if you want to close your billing account, call Support and they can help cancel the subscription and close the account. To learn more, see [Microsoft Entra ID Free](/azure/cost-management-billing/manage/microsoft-entra-id-free).
+> If you have an MCA billing account type, you automatically receive a product called Microsoft Entra ID Free. Because this product helps manage your billing account, you can't cancel it. If you want to delete your tenant, follow the steps to [Delete a Microsoft Entra Tenant](/entra/identity/users/directory-delete-howto), or contact Support for help. To learn more, see [Microsoft Entra ID Free](/azure/cost-management-billing/manage/microsoft-entra-id-free).
 
 ## How do I cancel my free trial?
 
@@ -72,7 +72,7 @@ Your cancellation option depends on the type of billing account that you have. [
 
 ### If you have an MCA billing account type
 
-You can only cancel and receive a prorated credit or refund if you cancel within seven days after the start or renewal of your subscription. If you cancel during this limited time window, the prorated amount is either credited or returned on the monthly invoice around the beginning of the following month.
+You can only cancel and receive a prorated credit or refund if you cancel within seven days after the start or renewal of your subscription. If you cancel during this limited time window, the prorated amount is either credited or returned within one to two days.
 
 If you need to cancel within seven days after the start or renewal of your subscription, go to [Steps to cancel your subscription](#steps-to-cancel-your-subscription) later in this article.
 

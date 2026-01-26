@@ -1,16 +1,22 @@
 ---
 title: Use Microsoft Teams Assignments with Powerschool Schoology
 description: Integrate and use the Microsoft Teams Assignments learning tool interoperability (LTI) app with Powerschool Schoology
-author: DaniEASmith
-ms.author: danismith
-manager: mimast
-ms.date: 09/12/2024
+author: jennplatt
+ms.author: avering
+manager: michal.gideoni
+ms.date: 01/14/2026
+last.review.date: 01/14/2026
 audience: admin
 ms.topic: how-to
-ms.service: msteams
-ms.subservice: teams-education
+ms.service: microsoft-365-education
+ms.collection:
+- m365-education
+- all-education
 ---
 # Use Microsoft Teams Assignments with PowerSchool Schoology Learning
+
+>[!NOTE]
+>The classic Microsoft OneDrive, OneNote, Teams Assignments, and Reflect LTI apps have been replaced by the [new Microsoft 365 LTI](https://aka.ms/LMSAdminDocs). The classic apps will be sunset on September 17, 2026. After that date, the classic apps and any content links in courses will stop working. However, the files, notebooks, teams, meetings, and check-ins created by the classic app will continue to be accessible through Microsoft 365. For further guidance on moving your users and courses to the new Microsoft 365 LTI experiences and migrating content links, review the [migration guidance for the classic LTI apps](/microsoft-365/lti/microsoft-365-lti-first-time-configuration#migration-guidance).
 
 This guide provides the IT admin steps for deploying the Microsoft Teams Assignments learning tool interoperability (LTI) app in PowerSchool Schoology Learning.
 
@@ -44,8 +50,9 @@ By installing and using the Teams Assignments LTI, educators and students can tr
 > - Going to the [**Organization Apps list**](https://app.schoology.com/apps/school_apps), selecting the **Install/Remove** button, and choosing the courses in which to install the app.
 
 ## Use Teams Assignments in Schoology Learning
+
 - On their first access of any Teams Assignments flow, users must sign in using their Microsoft 365 account.
-- Users in Schoology Learning should have their email address populated with the UPN or primary email address from Microsoft 365/Microsoft Entra. This is required for grades to sync from Teams Assignments to the students in the Schoology Learning gradebook.
+- Users in Schoology Learning should have their email address populated with the UPN or primary email address from Microsoft 365 / Microsoft Entra. This is required for grades to sync from Teams Assignments to the students in the Schoology Learning gradebook.
 - A Microsoft class team needs to be connected to the Schoology Learning course section that uses Teams Assignments. The class team should have the same users and roles as the course section, with teachers as owners of the team and students as members in the team.
 
 > [!IMPORTANT]
@@ -61,7 +68,7 @@ By installing and using the Teams Assignments LTI, educators and students can tr
 
 > [!NOTE]
 >
-> - Cookies aren't allowed by default in the Chrome browser incognito mode and will need to be allowed.
+> - Cookies aren't allowed by default in the Chrome browser incognito mode and need to be allowed.
 > - The Microsoft Assignments LTI app also works in the InPrivate mode in Microsoft Edge browser. Ensure that you haven't blocked cookies, which are allowed by default.
 
 ## Getting help for admins and educators
@@ -72,6 +79,5 @@ By installing and using the Teams Assignments LTI, educators and students can tr
 - Educators and Learners can contact support, or give feedback directly from the app through the help and feedback menu
 
 ![image](https://github.com/user-attachments/assets/157dcee7-141b-47e3-879b-60efa2fb0621)
-
 
 Learning Tools Interoperability® (LTI®) is a trademark of the 1EdTech Consortium, Inc. ([www.imsglobal.org](https://www.imsglobal.org/))
