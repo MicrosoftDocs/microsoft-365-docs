@@ -72,8 +72,10 @@ Detailed insights into how agents are distributed and used, helping administrato
 
 - **Agents by Platforms** - Shows which creation platforms are most used for building agents. For example:
 
-  - Copilot Studio (Full/Lite).
-  - Azure AI Foundry.
+  - M365 Copilot Agent Builder.
+  - M365 Agents Toolkit.
+  - Copilot Studio.
+  - Microsoft Foundry.
   - Any external partner platforms.
 
 - **Active Users Over Time** - A trend chart showing daily active user engagement with agents over the past 30 days. Reveals adoption momentum and helps spot usage spikes or declines.
