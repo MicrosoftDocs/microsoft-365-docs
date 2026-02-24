@@ -383,11 +383,19 @@ Explanation for the four different principles:
     
     1. A retention label (however it was applied) provides explicit retention in comparison with retention policies, because the retention settings are applied to an individual item rather than implicitly assigned from a container. This means that a delete action from a retention label always takes precedence over a delete action from any retention policy.
         
-        **Example for this third principle (label)**: A document is subject to two retention policies that have a delete action of five years and ten years respectively, and also a retention label that has a delete action of seven years.
+        **Example 1 for this third principle (label)**: A document is subject to two retention policies that have a delete action of five years and ten years respectively, and also a retention label that has a delete action of seven years.
         
         The document is permanently deleted after seven years because the delete action from the retention label takes precedence.
-    
-    2. When you have retention policies only: If a retention policy for a location uses an adaptive scope or a static scope that includes specific instances (such as specific users for Exchange email) that retention policy takes precedence over a static scope that is configured for all instances for the same location.
+
+        **Example 2 for this third principle (label)**: A document in the Marketing SharePoint site is subject to one retention policy and a retention label. The retention policy is configured for all SharePoint sites to retain items for ten years after they are created, and the retention label has a delete action of seven years.
+
+       The document is retained for ten years in the SharePoint site (it won't be moved to the PHL) because that's the longest retention period for the item and after that the document is permanently deleted.
+        
+        **Example 3 for this third principle (label)**: An email message is subject to one retention policy and a retention label. The retention policy is configured for all Exchange mailboxes to retain items for ten years after they are created, and the retention label has a delete action of seven years.
+
+       The email message is retained for ten years because that's the longest retention period for the item, however after the seven years the item is moved to the Recoverable Items folder, due to the label action, where it remains for the rest of the time until the ten years are reached and after that the document is permanently deleted.
+       
+    3. When you have retention policies only: If a retention policy for a location uses an adaptive scope or a static scope that includes specific instances (such as specific users for Exchange email) that retention policy takes precedence over a static scope that is configured for all instances for the same location.
         
         A static scope that is configured for all instances for a location is sometimes referred to as an "org-wide policy". For example, **Exchange email** and the default setting of **All recipients**. Or, **SharePoint sites** and the default setting of **All sites**. When retention policies aren't org-wide but have been configured with an adaptive scope or a static scope that includes specific instances, they have equal precedence at this level.
         
