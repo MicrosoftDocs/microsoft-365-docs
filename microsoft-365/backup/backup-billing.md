@@ -16,6 +16,49 @@ ms.localizationpriority:  medium
 description: Learn how to set up and manage usage and invoices in the Azure portal for Microsoft 365 Backup.
 ---
 
+# Departmental Billing for Microsoft 365 Backup 
+
+If you are a large organization with multiple departments and want to manage Microsoft 365 Backup within departments or groups, departmental billing may be the right fit for you. Departmental billing will help you achieve the following: 
+
+1. Breakdown backup costs by different azure subscriptions
+2. Limit Backup management (creation and update) to certain admins within departments with Role-based-access-control(RBAC)
+3. Prevent admins from another department using your azure susbcritpion to cause unapproved backup charges
+
+
+**Role-Based-Access-Control within departments**: To limit admins who can manage Backup within a department or group, every backup admin should also have an Owner or Contributor role on the subscription. This way only an approved admin who is given spending power on a subscription can create and edit backups and cause consumption to the department's azure subscription. If you are an owner for the department's subscription, we recommed giving the lower privileged 'Contributor' role to backup admins in your department if they do not need privileges to add additional admins to the subscription. 
+
+### Set up departmental billing
+
+To set up departmental billing for your tenant, follow these steps. 
+
+1. Create billing policies and connect them to Microsoft 365 Backup following the instructions in <a href="/microsoft-365/commerce/services/pay-as-you-go-setup-billing-node" target="_blank">**Pay-as-you-go Setup**</a> for Microsoft 365 Backup.
+2. In the **Services** tab of **Pay-as-you-go** page, select **Microsoft 365 Backup**.
+3. To enable departmental billing, in the **Settings** tab of Microsoft 365 Backup page, select the checkbox for limiting management of Backup within departments
+   
+   <img width="1148" height="665" alt="image" src="https://github.com/user-attachments/assets/31bdf6c3-966f-40ce-8abf-f144ed2fe893" />
+
+    Now that departmental billing with Backup is enabled for your tenant, Admins who have been assigned Owner / Contributor Azure roles to the billing policies connected to Backup can only create and edit backup policies.
+   
+5. You can create backup for your department by creating <a href="https://learn.microsoft.com/microsoft-365/backup/backup-setup?view=o365-worldwide#2-create-backup-policies-to-protect-your-data" target="_blank">**backup policies as outlined here**</a>.
+   In Create / Edit policy wizard, admins will need to associate a Billing Policy with a Backup Policy. In the billing policy list, admins will only be able to see billing policies that they Owner/Contributor access.  
+    <img width="907" height="431" alt="image" src="https://github.com/user-attachments/assets/91221de4-63e8-41a2-a2c4-528faa38b296" />
+
+> [!NOTE]
+> **Once you have enabled departmental billing, admins who have been assigned Owner / Contributor Azure roles to the billing policies connected to Backup can only create and edit backup policies.**
+
+Admins who do not have RBAC rights to your backup policies will not be able to use your billing policy to create backup policies or edit backup polciies created by admins in your department. Billing policies will show as **Confidential** for admins who do not have access. 
+
+<img width="559" height="352" alt="image" src="https://github.com/user-attachments/assets/07ba1426-fe4a-4023-8ebd-ab4904f2d789" />
+
+### Change Billing policies associated with Backup policies 
+Once a Billing Policy is associated with a Backup Policy, it can be updated from the Backup Dashboard  
+
+  1. Select the Backup policy you want to update the Billing Policy, click on the 3-dots next to backup policy name and select **Update Billing policy**
+        <img width="944" height="448" alt="image" src="https://github.com/user-attachments/assets/510a8756-113d-4403-941a-8366366d1800" />
+
+### Disable departmental billing
+If you wish to manage Backup without the RBAC control of restricting Backup management to Owner or Contributor of subscriptions, you can simply uncheck the box in Settings tab Microsoft 365 Backup page.  
+
 # Manage consumption and invoices for Microsoft 365 Backup
 
 You can view actual and accumulated cost breakdown by tenants and service type for OneDrive, SharePoint, and Exchange in Microsoft Cost Management in the Azure portal or access the information by using the [Cost Management public APIs](/rest/api/cost-management/operation-groups). Cost breakdown by application ID is coming soon.
