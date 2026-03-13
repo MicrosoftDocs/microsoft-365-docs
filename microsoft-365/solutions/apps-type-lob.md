@@ -36,6 +36,12 @@ You can create LOB apps that are supported by Intune for each Android, iOS/iPadO
 
 LOB apps can be added to Intune by first selecting either **Line-of-business app** or specifically **macOS app (DMG)**.
 
+macOS LOB apps are typically developed in-house. This app type requires you to upload a PKG file to Intune. Intune installs the LOB app on the user's device. It is highly recommended only uploading flat packages, which must not have nested folders within the archive. 
+
+Recommended usage scenario: You need to manage app removal on Intune MDM unenrollment and manage whether the app data is backed up to iCloud. The apps must be marked as “install as managed”. Your PKG app is signed using an Apple Developer ID installer certificate. 
+
+PKGs for LOB apps must be signed using an Apple Developer ID installer certificate. If you need to distribute a PKG that is unsigned, please use the macOS (PKG) option instead.  
+
 :::image type="content" source="../media/purchase-add-managed-apps/purchase-add-managed-apps-09.png" alt-text="Intune app types" border="true" :::
  
 When you select **Line-of-business app**, you can add your specific installation package file. Also, you can choose to use [Test Base](https://go.microsoft.com/fwlink/?linkid=2165798) to help you manage the performance of your LOB app.
