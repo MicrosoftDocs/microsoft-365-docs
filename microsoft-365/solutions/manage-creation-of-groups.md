@@ -102,9 +102,9 @@ Use the [Microsoft Graph PowerShell](/powershell/microsoftgraph/installation) **
 
 Copy the following script into a text editor, such as Notepad, or the [Windows PowerShell ISE](/powershell/scripting/components/ise/introducing-the-windows-powershell-ise).
 
-Replace *\<GroupName\>* with the name of the group that you created. For example:
+Replace *\<GroupId\>* with the name of the group that you created. For example:
 
-`$GroupName = "Group Creators"`
+`$GroupId = "22c74eb7-e0d4-439a-998d-002e2ff7c874"`
 
 Save the file as GroupCreators.ps1.
 
@@ -122,7 +122,7 @@ Import-Module Microsoft.Graph.Beta.Groups
 
 Connect-MgGraph -Scopes "Directory.ReadWrite.All", "Group.Read.All"
 
-$GroupName = ""
+$GroupId = ""
 $AllowGroupCreation = "False"
 
 $settingsObjectID = (Get-MgBetaDirectorySetting | Where-object -Property Displayname -Value "Group.Unified" -EQ).id
@@ -144,9 +144,6 @@ if(!$settingsObjectID)
     $settingsObjectID = (Get-MgBetaDirectorySetting | Where-object -Property Displayname -Value "Group.Unified" -EQ).Id
 }
 
- 
-$groupId = (Get-MgBetaGroup -all | Where-object {$_.displayname -eq $GroupName}).Id
-
 $params = @{
     templateId = "62375ab9-6b52-47ed-826b-58e47e0e304b"
     values = @(
@@ -156,7 +153,7 @@ $params = @{
         }
         @{
             name = "GroupCreationAllowedGroupId"
-            value = $groupId
+            value = $GroupId
         }
     )
 }
