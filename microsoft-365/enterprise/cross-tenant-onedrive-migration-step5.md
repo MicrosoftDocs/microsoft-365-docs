@@ -161,7 +161,8 @@ get-spoTenantIdentityMappingUser -Field SourceUserKey -Value usera@Contoso.onmic
 
 Before starting any cross-tenant migrations, make sure that both SharePoint database schemas are up to date and compatible between source and target.
 
-To perform this check, run the following cmdlet on your Source tenant:
+> [!NOTE]
+>  To perform this check, run the below cmdlet only on your Source tenant, not the Target tenant.
 
 ```powershell
 Get-SPOCrossTenantCompatibilityStatus -PartnerCrossTenantHostURL [Target tenant hostname]
