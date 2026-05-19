@@ -67,6 +67,15 @@ To Schedule a migration for a later time, you can use and append the previous co
 
 These commands can be useful when planning bulk batches of OneDrive migrations. You can queue/migrate up to 4,000 OneDrive migrations per batch. If your user count exceeds 4,000, create separate batches, and schedule them to run once the current batch is close to completion.
 
+To run our pre-checks on the site without actually migrating, you can use and append the command with the -ValidationOnly parameter as seen below:
+
+```Powershell
+Start-SPOCrossTenantUserContentMove -SourceUserPrincipalName DiegoS@M365x016651.OnMicrosoft.com -TargetUserPrincipalName Test-Diego@M365x946316.OnMicrosoft.com -TargetCrossTenantHostUrl https://m365x946316-my.sharepoint.com/ -ValidationOnly
+```
+
+> [!NOTE]
+> We strongly recommend running the -ValidationOnly parameter as a last step before actually migrating.
+
 ## OneDrive status premigration
 
 Before you start the migration, the users' current source OneDrive status is similar to the following screenshot. This example is from the users' source tenant, showing their current files and folders.
