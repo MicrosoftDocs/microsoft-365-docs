@@ -22,7 +22,7 @@ jobs:
           mkdir -p ./pr
           echo $PayloadJson > ./pr/PayloadJson.json
           sed -i -e "s/$AccessToken/XYZ/g" ./pr/PayloadJson.json
-      - uses: actions/upload-artifact@v6
+      - uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6.0.0
         with:
           name: PayloadJson
           path: pr/
